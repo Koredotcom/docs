@@ -1,7 +1,7 @@
 
 # Best Practices for Training Your AI Chatbot
 
-You can train your AI Chatbot to provide exact answers to specific questions from customers. There are two ways to train your Chatbot to do so:
+You can train your AI Chatbot to provide exact answers to specific questions from customers. Consider the following best practices for training your Chatbot:
 
 1. **FAQs** (Frequently Asked Questions)
     * FAQs are the most frequently asked questions by customers and visitors. Add the most common questions and their brief answers.
@@ -25,13 +25,10 @@ You can train your AI Chatbot to provide exact answers to specific questions fro
         * Use single-column format and clear section headings.
         * Do not include scanned PDFs, encrypted files, or compressed PDFs.
 
-## FAQs vs. Generative AI Answers from Documents
-    
-To ensure your Chatbot generates answers from documents, avoid adding questions on the same topic to your FAQs. If a question exists in the FAQs, the Chatbot will always prioritize the FAQ answer over searching the documents. (For example, if you have a detailed document about your return policies, don't add a question like "What is your return policy?" to the FAQs. This allows the Chatbot to use the comprehensive document to answer customer questions instead of relying on a potentially incomplete FAQ answer.)
+3. **FAQs vs. Generative AI Answers from Documents**
+    * How FAQs and Generative AI Answers from Documents Work Together?  
+    First, your  Chatbot will generate AI Answers from Documents—it will look for answers in the uploaded/added documents using Generative AI. If the documents don’t have an answer, it will use Automation AI (Dialog Tasks/FAQs) to answer customer questions. So, the default order is - Generative AI Answers from Documents first and Automation (FAQs) second. You can change the default order from the App Settings. [Learn more](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration).
 
-### How FAQs and Generative AI Answers from Documents Work Together?
-First, your  Chatbot will generate AI Answers from Documents—it will look for answers in the uploaded/added documents using Generative AI. If the documents don’t have an answer, it will use Automation AI (Dialog Tasks/FAQs) to answer customer questions. So, the default order is - Generative AI Answers from Documents first and Automation (FAQs) second. You can change the default order from the App Settings. [Learn more](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration).
-
-### How to Avoid Conflict Between FAQs and Generative AI Answers from Documents?                             
-To ensure your Chatbot generates answers from documents, avoid adding questions on the same topic to your FAQs. If a question exists in the FAQs, the  Chatbot will always prioritize the FAQ response over searching the documents. For example, if you have a detailed document about your return policies, don't add a question like "What is your return policy?" to the FAQs. This allows the  Chatbot to use the comprehensive document to answer customer questions instead of relying on a potentially incomplete FAQ answer.
+    * How to Avoid Conflict Between FAQs and Generative AI Answers from Documents?  
+    To ensure your Chatbot generates answers from documents, avoid adding questions on the same topic to your FAQs. If a question exists in the FAQs, the  Chatbot will always prioritize the FAQ response over searching the documents. For example, if you have a detailed document about your return policies, don't add a question like "What is your return policy?" to the FAQs. This allows the  Chatbot to use the comprehensive document to answer customer questions instead of relying on a potentially incomplete FAQ answer.
  

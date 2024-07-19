@@ -18,7 +18,6 @@ The Evaluation Metrics has the following options:
 ## Add New Evaluation Metrics
 
 The users can access the Evaluation Metrics by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
-<img src="../images/add-new-eva-metrics.png" alt="Add NEw Evaluation Metrics" title="Add New Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 Steps to create New Evaluation Metrics:
 
@@ -53,10 +52,7 @@ The following table describes the Evaluation Metrics Measurement Types:
    </td>
   </tr>
   <tr>
-   <td><strong>Adherence Type</strong>  
-   <img src="../images/adherence-type.png" alt="Metrics" title="Metrics" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/trigger.png" alt="Metrics" title="Metrics" style="border: 1px solid gray; zoom:80%;">
+   <td><strong>Adherence Type</strong>
    </td>
    <td>Provides the following two types of adherences:
 
@@ -64,89 +60,53 @@ The following table describes the Evaluation Metrics Measurement Types:
 
 <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
 
-    To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances. 
-<ul>
+To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.</li>
 
 <li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
 
-    This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
+This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
 
-    For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
-<ul>
+For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
 
-<li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.  
-<ul>
+<ul><li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>  
 
-<li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.
-      
-<ul>
+<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</li>
 
-<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning.
-
-You can add multiple utterances for the Customer and Agent and delete them.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</li></ul>
 </ul>
    </td>
   </tr>
   <tr>
    <td><strong>Answer</strong>
-   <img src="../images/answers.png" alt="Answer" title="Answer" style="border: 1px solid gray; zoom:80%;">
-   </td>
    <td>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the set up time.
 In this, you can enter or select more than one expected answer using generative AI having different utterances matching your question. In addition, you have the option to delete the added answers.
 If it is Static, then you need to define a similar percentage for the metric based on the defined use case and attribute.
 <ul>
 
 <li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. <em>Whether it is Static or Dynamic, you can configure the expected Similarity threshold.</em>
-
-    For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+   For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
 </li>
 </ul>
    </td>
   </tr>
   <tr>
    <td><strong>Count Type </strong>
-   <img src="../images/time-bound.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/voice.png" alt="Voice" title="Voice" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Provides the following two options based on the Adherence Type is selected:
 <ul>
-
 <li><strong>Entire Conversation</strong>: This allows you to check for adherence at different points of conversation. It does not matter where the agent wants to check adherence throughout the conversation.
-<ul>
-
+</li>
 <li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.
-<ul>
-
-<li><strong>Parameter:  </strong>In this field, select the section of the interaction that has to be evaluated for this metric.
-
-        If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
-<ul>
-  
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.  
-<ul>
-  
-<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.
-</li>  
+</li>
+<ul><li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
+   If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
+</li>
+ 
+<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.</li>  
+<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.</li>
+</ul>  
 </ul>
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
-   </td>
+  </td>
   </tr>
   <tr>
    <td><strong>Agent Attribute (Optional)</strong>
@@ -175,33 +135,19 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Speech Type</strong>
-   <img src="../images/speech-type.png" alt="Speech Type" title="Speech Type" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/avg-speaking-rate.png" alt="Avg Speaking Rate" title="Avg Speaking Rate" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Provides the following Speech Type options to select:
 <ul>
 
 <li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail.
-<ul>
 
-<li><strong>Dead Air</strong>: Defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. For example, the minimum dead air time is 1 second, with a maximum limit of 300 seconds.
+<li><strong>Dead Air</strong>: Defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. For example, the minimum dead air time is 1 second, with a maximum limit of 300 seconds. 
 
-    In the <strong>No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.
-<ul>
+In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.
 
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
-<ul>
  
-<li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</li></ul>
    </td>
   </tr>
 </table>
@@ -231,7 +177,6 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Count Type</strong>
-   <img src="../images/entire-conv.png" alt="Count Type" title="Count Type" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Provides the following two options based on the Count Type selected.
 <ul>
@@ -241,22 +186,13 @@ If it is Static, then you need to define a similar percentage for the metric bas
 <li><strong>Time Bound</strong>: Allows you to check adherence within a certain time range of the interaction.
 <ul>
 
-<li><strong>Parameter: </strong>In this field, select the section of the interaction that has to be evaluated for this metric.
-<p>
+<li><strong>Parameter: </strong>In this field, select the section of the interaction that has to be evaluated for this metric. 
 
-        If you select the <strong>First Part of Conversation</strong> or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
-<ul>
+If you select the <strong>First Part of Conversation</strong> or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:
   
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should get evaluated.  
-<ul>
+<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should get evaluated.
   
 <li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should get evaluated.
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
 </li>  
 </ul>
    </td>
@@ -294,41 +230,21 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Adherence Type</strong>
-   <img src="../images/name.png" alt="Adherence Type" title="Adherence Type" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/entire-playbook.png" alt="Entire Playbook" title="Entire Playbook" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/steps.png" alt="Steps" title="Steps" style="border: 1px solid gray; zoom:80%;">
-   </td>
-   <td>Provides the following two options to choose the Adherence Type:
-<ul>
+   </td><td>
+   
+<p>From the <strong> Adherence Type</strong>, you can choose either <strong> Entire Playbook</strong> or <strong> Steps</strong> to do the following:</p>
 
-<li>Select<strong> Entire Playbook</strong> if you want to evaluate adherence across the entire playbook. 
-<ul>
+<ul><li><strong> Entire Playbook</strong>: To evaluate adherence across the entire playbook.</li>
 
-<li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
-<ul>
- 
-<li>In the <strong>Adherence Percentage</strong> field, enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.
-<ul>
+<li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.</li>
+<br>
+<p>From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:</p>
 
-<li>Select<strong> Steps</strong> if you want to evaluate adherence to specific steps of the playbook.  
-<ul>
+<li><strong> Steps</strong>: To evaluate adherence to specific steps of the playbook.
 
-<li>In the <strong>Stage</strong> field, select the stage under which the desired step for evaluation is configured.
-<ul>
+<li><strong>Stage</strong>: To select the stage under which the desired step for evaluation is configured.
 
-<li>In the <strong>Step </strong>field, select the desired step for adherence evaluation.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<li><strong>Step </strong>: To select the desired step for adherence evaluation.
 </li>
 </ul>
    </td>

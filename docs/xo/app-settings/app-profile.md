@@ -40,13 +40,17 @@ Modify one or more of the settings described in the following table.
   </tr>
   <td>Answers</td>
   <td>
-  You can have the app use the capabilities of the Answers module by enabling this setting.
-
-  <ul>
-
-  <li>When the conversation is at Intent Identification level (i.e. not within a dialog’s context), the user can choose whether to route the utterances to SearchAI or Automation AI first for identifying Automation AI intents or SearchAI answers.
-
-  <li>When the user is within a Dialog Task, they can decide whether to route the call to Search AI as well to find an answer or to stick with Automation AI only, by means of the <strong>Use Search AI for Unrecognized Inputs During Dialogs</strong> checkbox.
+  Use the following options to configure the use of Search AI Answers.
+  
+  <b>Intent Identification Priority</b>: This priority is used when the bot needs to identify the intent from the initial user utterances. This can take the following values:
+  
+   <ul> 
+    <li> Automation first, Search AI as Fallback: The assistant prioritizes the automation framework for identifying the intent and answering the user input. If intent identification or action fails, the assistant uses the Search AI to generate a response.</li>
+    <li> Search AI first, Automation as Fallback: The assistant uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the assistant uses the automation framework to handle the user inputs.</li>
+  </ul>
+  
+  <b>Use Search AI for Unrecognized Inputs During Dialogs</b>: This option enhances the assistant's ability to handle diverse user inputs during Automation AI Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog. 
+  
   </td>
   <tr>
    <td>Target Audience (Available only for enterprise accounts)

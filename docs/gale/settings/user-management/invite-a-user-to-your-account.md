@@ -2,10 +2,9 @@
 
 As the owner of the account in GALE, you have the authority to invite any user and grant them access to your account for viewing and working in GALE. When you send an invitation to a user, they receive an invitation email through which they can access the product.
 
-To invite a user to your account, follow the steps below:
+**To invite a user to your account, follow these steps**:
 
-
-1. Click the **Profile** icon from the top navigation bar of the product. A pop up with a list of options is displayed.
+1. Click the **Profile** icon from the top navigation bar of the product. A pop-up with a list of options is displayed.
 
     <img src="../images/profile-icon.png" alt="Profile Icon" title="Profile Icon" style="border: 1px solid gray; zoom:80%;">
 
