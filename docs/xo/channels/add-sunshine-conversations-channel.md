@@ -98,7 +98,7 @@ Sunshine Conversations templates are pre-defined structures you can use to send 
 
 To trigger various message templates, you must use a specific JavaScript format in the **Bot Responses** section of the **Message Node** in a Dialog Task. Below are the supported templates along with their sample code formats:
 
-* [Compound Message](https://docs.smooch.io/guide/template-messages/#compound-message){:target="_blank"}: Combines multiple elements like text, images, buttons, and quick replies to create an engaging and informative message. [See example](https://docs.smooch.io/guide/template-messages/#compound-message){:target="_blank"}. 
+* **Compound Message**: Combines multiple elements like text, images, buttons, and quick replies to create an engaging and informative message. [See example](https://docs.smooch.io/guide/template-messages/#compound-message){:target="_blank"}. 
 
     ```js
     var message = {
@@ -124,7 +124,7 @@ To trigger various message templates, you must use a specific JavaScript format 
     
     ```
 
-* [Carousel Message](https://docs.smooch.io/guide/template-messages/#carousel-message){:target="_blank"}: Allows you to send a series of cards that users can swipe through. Each card can contain an image, title, subtitle, and buttons for further actions. [See example](https://docs.smooch.io/guide/template-messages/#carousel-message){:target="_blank"}. 
+* **Carousel Message**: Allows you to send a series of cards that users can swipe through. Each card can contain an image, title, subtitle, and buttons for further actions. [See example](https://docs.smooch.io/guide/template-messages/#carousel-message){:target="_blank"}. 
 
     ```js
     var message = {
@@ -171,7 +171,7 @@ To trigger various message templates, you must use a specific JavaScript format 
     print(JSON.stringify(message));
     ```
 
-* [File Message](https://docs.smooch.io/guide/template-messages/#file-message){:target="_blank"}: Allows you to send a file to the user. This can be useful for sharing documents, PDFs, images, or other types of files. [See example](https://docs.smooch.io/guide/template-messages/#file-message){:target="_blank"}. 
+* **File Message**: Allows you to send a file to the user. This can be useful for sharing documents, PDFs, images, or other types of files. [See example](https://docs.smooch.io/guide/template-messages/#file-message){:target="_blank"}. 
 
     ```js
     var message = 
@@ -185,7 +185,7 @@ To trigger various message templates, you must use a specific JavaScript format 
     print(JSON.stringify(message))
     ```
 
-* [Form Message](https://docs.smooch.io/guide/template-messages/#form-message){:target="_blank"}: Allows you to collect information from users through a structured form. This can include text fields, dropdown menus, radio buttons, and more. [See example](https://docs.smooch.io/guide/template-messages/#form-message){:target="_blank"}. 
+* **Form Message**: Allows you to collect information from users through a structured form. This can include text fields, dropdown menus, radio buttons, and more. [See example](https://docs.smooch.io/guide/template-messages/#form-message){:target="_blank"}. 
 
     ```js
     var message = 
@@ -199,7 +199,7 @@ To trigger various message templates, you must use a specific JavaScript format 
     print(JSON.stringify(message))
     ```
 
-* [Quick Reply](https://docs.smooch.io/guide/template-messages/#quick-reply){:target="_blank"}: Provides users with predefined response options that they can select with a single tap. This can streamline interactions and guide users towards specific actions. [See example](https://docs.smooch.io/guide/template-messages/#quick-reply){:target="_blank"}. 
+* **Quick Reply**: Provides users with predefined response options that they can select with a single tap. This can streamline interactions and guide users towards specific actions. [See example](https://docs.smooch.io/guide/template-messages/#quick-reply){:target="_blank"}. 
 
     ```js
     var message = 
@@ -226,7 +226,7 @@ To trigger various message templates, you must use a specific JavaScript format 
     print(JSON.stringify(message))
     ```
 
-* [Location Request](https://docs.smooch.io/guide/template-messages/#location-request){:target="_blank"}: Allows you to request the user’s location. This can be useful for services that require location information, such as finding the nearest store or providing location-based services. [See example](https://docs.smooch.io/guide/template-messages/#location-request){:target="_blank"}. 
+* **Location Request**: Allows you to request the user’s location. This can be useful for services that require location information, such as finding the nearest store or providing location-based services. [See example](https://docs.smooch.io/guide/template-messages/#location-request){:target="_blank"}. 
 
     ```js
     var message = 
