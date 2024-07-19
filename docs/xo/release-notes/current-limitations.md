@@ -2,11 +2,10 @@
 
 XO11 currently has a few notable limitations, which are listed below. We’re working on gradually removing these limitations and will update this list accordingly. 
 
-* Universal Bots are not supported.
-* Solutions like BankAssist, HRAssist, and ITAssist cannot be upgraded to XO11.
+* Universal Bots support is coming soon; likely by end of September 2024.
+* Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to XO11.
 * Agent AI is available only for chat on third-party desktop systems, not voice.  
-* The App language (display language) is available only in English, Japanese, and Korean.
-* API Scopes have not yet been updated to the APP level; they still apply to specific products/modules. 
+* The App language (display language) is available only in English, Japanese, and Korean. 
 
 <hr>
 
