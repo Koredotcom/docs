@@ -514,10 +514,10 @@ Color codes help in easy identification and better readability of conversations 
 <img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:80%;">
 
 * The red dot represents an overdue conversation.
-<img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:60%;">
 
 * New email conversations in the conversations tray.
-<img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:60%;">
 
 ## Add Notes to Interactions
 

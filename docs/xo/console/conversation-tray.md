@@ -52,5 +52,5 @@ To view the Outbound Call History, follow these steps:
     * Day (_Today, Yesterday, Monday, etc._)
     * Date
     * Time of call and duration
-    * Type of call (Incoming, Outgoing, or Transferred)
-    <img src="../images/call_history.png" alt="Call History" title="Call History" style="border: 1px solid gray; zoom:80%;">
+    * Type of call (Incoming, Outgoing, or Transferred)  
+    <img src="../images/call-history.png" alt="Call History" title="Call History" style="border: 1px solid gray; zoom:80%;">
