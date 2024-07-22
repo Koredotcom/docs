@@ -7063,6 +7063,39 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#agentless-dialer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agentless Dialer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-dialers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto Dialers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Auto Dialers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#progressive-dialer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progressive Dialer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-voice-campaigns" class="md-nav__link">
     <span class="md-ellipsis">
       Create Voice Campaigns
@@ -7086,21 +7119,6 @@
       Stop a Scheduled Campaign
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Stop a Scheduled Campaign">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#agentless-dialer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Agentless Dialer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -7146,30 +7164,6 @@
       Run Voice Campaigns
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auto-dialers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Auto Dialers
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Auto Dialers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#progressive-dialer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Progressive Dialer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -13958,6 +13952,39 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#agentless-dialer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agentless Dialer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-dialers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto Dialers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Auto Dialers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#progressive-dialer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progressive Dialer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-voice-campaigns" class="md-nav__link">
     <span class="md-ellipsis">
       Create Voice Campaigns
@@ -13981,21 +14008,6 @@
       Stop a Scheduled Campaign
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Stop a Scheduled Campaign">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#agentless-dialer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Agentless Dialer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -14041,30 +14053,6 @@
       Run Voice Campaigns
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auto-dialers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Auto Dialers
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Auto Dialers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#progressive-dialer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Progressive Dialer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -14123,12 +14111,67 @@
 </div>
 </li>
 </ul>
+<h4 id="agentless-dialer">Agentless Dialer<a class="headerlink" href="#agentless-dialer" title="Permanent link">&para;</a></h4>
+<p>Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.</p>
+<p>Metrics and call statistics, such as the number of calls made, call duration, and call outcomes are generated for monitoring and reporting purposes.</p>
+<p>Campaign managers can customize the dialing pace, allowing them to set the number of simultaneous calls dialed at any time.</p>
+<p>To create a campaign when Agentless Dialing Mode is selected:</p>
+<ul>
+<li>
+<p>Select the <strong>Start Flow</strong> associated with the campaign. <a href="../../../../flows/create-flows/#the-start-flows">Learn more</a>.
+<a class="glightbox" href="../images/start-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>
+<p>You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.</p>
+</li>
+<li>
+<p>Using the agentless dialer, you can configure the <a href="../../../../flows/node-types/automation/">Automation Node</a> making this dialer a differentiator from our competitors. </p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<h3 id="auto-dialers">Auto Dialers<a class="headerlink" href="#auto-dialers" title="Permanent link">&para;</a></h3>
+<h4 id="progressive-dialer">Progressive Dialer<a class="headerlink" href="#progressive-dialer" title="Permanent link">&para;</a></h4>
+<p>A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.</p>
+<p>A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.</p>
+<p>The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.</p>
+<p>To create a campaign when Progressive Dialing Mode is selected:</p>
+<ul>
+<li>
+<p>Select the <strong>Queue</strong> to which the calls will be routed. <a href="../../../routing/queues/queue-management/">Learn more</a><br />
+<a class="glightbox" href="../images/select-queue.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:100%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.</p>
+</div>
+</li>
+</ul>
+<p>Progressive Dialer Call Handling</p>
+<p>Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the <a href="../../../../console/conversation-tray/">Conversation Tray</a> along with the campaign name.<br />
+<a class="glightbox" href="../images/dialing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;"></a></p>
+<p>During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction.<br />
+<a class="glightbox" href="../images/call-connected.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;"></a></p>
+<p>Dispositions are displayed to the agent when the call ends.<br />
+<a class="glightbox" href="../images/dispositions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dispositions.png" alt="Dispositions" title="Dispositions" style="border: 1px solid gray; zoom:60%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Below is the dialing logic when the same agents are assigned multiple campaigns.</p>
+<div class="language-text highlight"><pre><span></span><code>* If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
+
+* If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
+
+* Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
+</code></pre></div>
+</div>
 <h3 id="create-voice-campaigns">Create Voice Campaigns<a class="headerlink" href="#create-voice-campaigns" title="Permanent link">&para;</a></h3>
 <p>Steps to create Voice campaigns:</p>
 <ol>
 <li>
-<p>On the <strong>Voice</strong> tab, click <strong>+ New Campaign</strong>.
-<a class="glightbox" href="../images/new-campaign-button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/new-campaign-button.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:100%;"></a></p>
+<p>On the <strong>Voice</strong> tab, click <strong>+ New Campaign</strong>.<br />
+<a class="glightbox" href="../images/new-campaign-button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/new-campaign-button.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>The <strong>New Voice Campaign</strong> dialog box is displayed. Under the <strong>General</strong> tab, enter the following details:</p>
@@ -14152,7 +14195,7 @@
 </li>
 <li>
 <p>Select the <strong>Priority</strong> from the drop-down list.
-<a class="glightbox" href="../images/priority-list.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;"></a></p>
+<a class="glightbox" href="../priority-list.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;"></a></p>
 </li>
 <li>Select the <strong>Dialing Mode</strong> from the drop-down list.
 <a class="glightbox" href="../images/dialing-mode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:100%;"></a></li>
@@ -14247,28 +14290,6 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 <a class="glightbox" href="../images/stop-scheduled-campaign.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:100%;"></a></p>
 <p>A confirmation message is displayed. Click <strong>Stop</strong>.
 <a class="glightbox" href="../images/stop-scheduled-campaign-confirmation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:100%;"></a></p>
-<h4 id="agentless-dialer">Agentless Dialer<a class="headerlink" href="#agentless-dialer" title="Permanent link">&para;</a></h4>
-<p>Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.</p>
-<p>Metrics and call statistics, such as the number of calls made, call duration, and call outcomes are generated for monitoring and reporting purposes.</p>
-<p>Campaign managers can customize the dialing pace, allowing them to set the number of simultaneous calls dialed at any time.</p>
-<p>To create a campaign when Agentless Dialing Mode is selected:</p>
-<ul>
-<li>
-<p>Select the <strong>Start Flow</strong> associated with the campaign. <a href="../../../../flows/create-flows/#the-start-flows">Learn more</a>.
-<a class="glightbox" href="../images/start-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>
-<p>You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.</p>
-</li>
-<li>
-<p>Using the agentless dialer, you can configure the <a href="../../../../flows/node-types/automation/">Automation Node</a> making this dialer a differentiator from our competitors. </p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
 <h3 id="edit-a-voice-campaign">Edit a Voice Campaign<a class="headerlink" href="#edit-a-voice-campaign" title="Permanent link">&para;</a></h3>
 <p>Editing a voice campaign allows you to make changes to the campaign as per your needs.</p>
 <p>Steps to edit a campaign:</p>
@@ -14332,26 +14353,6 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 <p>You can run a voice campaign by clicking the <strong>Play</strong> button.
 <a class="glightbox" href="../images/run-campaign-button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:100%;"></a></p>
 <p>When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.</p>
-<h3 id="auto-dialers">Auto Dialers<a class="headerlink" href="#auto-dialers" title="Permanent link">&para;</a></h3>
-<h4 id="progressive-dialer">Progressive Dialer<a class="headerlink" href="#progressive-dialer" title="Permanent link">&para;</a></h4>
-<p>A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.</p>
-<p>A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.</p>
-<p>The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.</p>
-<p>Progressive Dialer Call Handling</p>
-<p>Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the <a href="../../../../console/conversation-tray/">Conversation Tray</a> along with the campaign name.<br />
-<a class="glightbox" href="../images/dialing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;"></a></p>
-<p>During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction.<br />
-<a class="glightbox" href="../images/call-connected.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;"></a></p>
-<p>Dispositions are displayed to the agent when the call ends.<br />
-<a class="glightbox" href="../images/dispositions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dispositions.png" alt="Dispositions" title="Dispositions" style="border: 1px solid gray; zoom:60%;"></a></p>
-<p>!!! Note</p>
-<div class="language-text highlight"><pre><span></span><code>Below is the dialing logic when the same agents are assigned multiple campaigns:
-</code></pre></div>
-<ul>
-<li>If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.</li>
-<li>If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.</li>
-<li>Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.</li>
-</ul>
 
 
 
