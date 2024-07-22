@@ -60,7 +60,7 @@ You can assign a system or custom role to a user in your account. This user can 
 
 1. Navigate to **Settings** > **Users Management** > **Role Management**.
 2. Click **View** for the role you have assigned to the user.
-<img src="../images/click-view-role.png" alt="click view role" title="click view role" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-view-role-option.png" alt="click view role" title="click view role" style="border: 1px solid gray; zoom:75%;">
 
 3. In the resulting window, go to **Settings** > **User Management** and select **Invite User**.
 <img src="../images/enable-invite-users.png" alt="enable invite users" title="enable invite users" style="border: 1px solid gray; zoom:75%;">
@@ -301,7 +301,7 @@ To invite a user, follow the steps below:
 
 1. Click **Settings** on the top menu.
 2. Click **Users Management** > **Users** > **Add New User**.
-<img src="../images/add-new-user.png" alt="add new user" title="add new user" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-new-user-click.png" alt="add new user" title="add new user" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter the email address of the user you want to invite. To invite multiple users, type the first email address, press the **Enter** key, and enter the next email address.
 <img src="../images/send-invite.png" alt="send invite" title="send invite" style="border: 1px solid gray; zoom:75%;">
@@ -319,6 +319,11 @@ To invite a user, follow the steps below:
 <ol start="4"><li>Click <b>Send invite</b>.</li></ol>
 
 A success message appears to indicate that your invitation has been sent.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An email invite to join your account is valid for 14 days. You must resend the invite to the user once it expires.</p>
+</div>
 
 ## Make an Account your Default
 
