@@ -82,8 +82,8 @@ Dispositions are displayed to the agent when the call ends.
 
 Steps to create Voice campaigns:
 
-1. On the **Voice** tab, click **+ New Campaign**.
-<img src="../images/new-campaign-button.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:100%;">
+1. On the **Voice** tab, click **+ New Campaign**.  
+<img src="../images/new-campaign-button.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
     * **Campaign Name**: Enter a name for the campaign.
