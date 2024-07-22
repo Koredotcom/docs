@@ -231,8 +231,8 @@ Dispositions are displayed to the agent when the call ends.
 <img src="../images/dispositions.png" alt="Dispositions" title="Dispositions" style="border: 1px solid gray; zoom:60%;">
 
  !!! Note
- 
-    Below is the dialing logic when the same agents are assigned multiple campaigns:
-* If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
-* If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
-* Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
+
+    Below is the dialing logic when the same agents are assigned multiple campaigns
+    * If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
+    * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
+    * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
