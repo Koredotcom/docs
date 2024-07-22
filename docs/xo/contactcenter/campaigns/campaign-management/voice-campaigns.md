@@ -28,6 +28,53 @@ The following details of the voice campaigns are shown in a table:
 
         The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable.
 
+#### Agentless Dialer
+
+Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.
+
+Metrics and call statistics, such as the number of calls made, call duration, and call outcomes are generated for monitoring and reporting purposes.
+
+Campaign managers can customize the dialing pace, allowing them to set the number of simultaneous calls dialed at any time.
+
+To create a campaign when Agentless Dialing Mode is selected:
+
+* Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/create-flows.md#the-start-flows).
+<img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
+
+    !!! Note
+
+        * You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
+
+        * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
+
+### Auto Dialers
+
+#### Progressive Dialer
+
+A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
+
+A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.
+
+The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.
+
+Progressive Dialer Call Handling
+
+Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name.  
+<img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;">
+
+During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction.  
+<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;">
+
+Dispositions are displayed to the agent when the call ends.  
+<img src="../images/dispositions.png" alt="Dispositions" title="Dispositions" style="border: 1px solid gray; zoom:60%;">
+
+ !!! Note
+
+    Below is the dialing logic when the same agents are assigned multiple campaigns
+    * If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
+    * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
+    * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
+
 ### Create Voice Campaigns
 
 Steps to create Voice campaigns:
@@ -127,25 +174,6 @@ Click the **Stop** button under actions. Stopping a scheduled campaign will end 
 A confirmation message is displayed. Click **Stop**.
 <img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
 
-#### Agentless Dialer
-
-Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.
-
-Metrics and call statistics, such as the number of calls made, call duration, and call outcomes are generated for monitoring and reporting purposes.
-
-Campaign managers can customize the dialing pace, allowing them to set the number of simultaneous calls dialed at any time.
-
-To create a campaign when Agentless Dialing Mode is selected:
-
-* Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/create-flows.md#the-start-flows).
-<img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
-
-    !!! Note
-
-        * You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
-
-        * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
-
 ### Edit a Voice Campaign
 
 Editing a voice campaign allows you to make changes to the campaign as per your needs.
@@ -208,31 +236,3 @@ You can run a voice campaign by clicking the **Play** button.
 <img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:100%;">
 
 When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
-
-### Auto Dialers
-
-#### Progressive Dialer
-
-A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
-
-A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.
-
-The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.
-
-Progressive Dialer Call Handling
-
-Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name.  
-<img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;">
-
-During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction.  
-<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;">
-
-Dispositions are displayed to the agent when the call ends.  
-<img src="../images/dispositions.png" alt="Dispositions" title="Dispositions" style="border: 1px solid gray; zoom:60%;">
-
- !!! Note
-
-    Below is the dialing logic when the same agents are assigned multiple campaigns
-    * If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
-    * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
-    * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
