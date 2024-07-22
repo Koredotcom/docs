@@ -43,7 +43,7 @@ To create a campaign when Agentless Dialing Mode is selected:
 
     !!! Note
 
-        * You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
+        * You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
@@ -56,6 +56,15 @@ A progressive dialer is an outbound calling system that enhances the efficiency 
 A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.
 
 The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.
+
+To create a campaign when Progressive Dialing Mode is selected:
+
+* Select the **Queue** to which the calls will be routed. [Learn more](../../routing/queues/queue-management.md)  
+<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:100%;">
+
+    !!! Note
+
+        You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
 Progressive Dialer Call Handling
 
@@ -101,7 +110,7 @@ Steps to create Voice campaigns:
             * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
 
     * Select the **Priority** from the drop-down list.
-    <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
+    <img src="../priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
     * Select the **Dialing Mode** from the drop-down list.
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:100%;">
 
