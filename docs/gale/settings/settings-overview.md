@@ -7,12 +7,14 @@ GALE’s **Settings** console is a centralized management interface that provide
 * [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 * Integrations
 * Manage Guardrails 
+* Monitoring 
+  * Audit Logs
 
 ## Levels of Users Management 
 
 The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.
 
-* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire GALE account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including agent creation, model management (including access, deployment, and export), integrations, user management, security controls, model guardrails, and others.
+* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire GALE account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including agent creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
 * **Agent level**: User management within the GALE platform is focused on agent management, emphasizing individual agent deployments and configurations. Each agent's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting agents, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
 
@@ -73,7 +75,7 @@ To access the **Settings Console** on GALE, follow the steps below:
 1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials.
 
 2. Click **Settings** on the top menu.
-<img src="../images/Settings-console-access.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/settings-menu.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
 
 The system redirects to the **Users** page under **Users Management** on the **Settings** console.
 
@@ -156,6 +158,13 @@ The following modules and features are supported on the Settings Console:
 </li>
 </ul>
  </td>
+  </tr>
+  <tr>
+   <td><b>Monitoring - Audit Logs</b></td>
+   <td>View the log of all the changes made across the account by the linked users for log in and log out activities, and role management changes made by you for the specified time range.</td>
+   <td><ul><li>Select the date range and view periodic, event-based logs related to <b>Login/Log out</b> or <b>Roles</b> categories.</li>
+   <li>Set one or more levels of custom filters to view only specific audit logs.</li>
+   <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
 </table>
 
