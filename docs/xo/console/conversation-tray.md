@@ -18,7 +18,7 @@ The conversation tray divides conversations into different statuses, which are d
 Color codes help in easy identification and better readability of conversations on digital channels.
 
 * The blue dot represents a conversation in which an agent is engaged.
-<img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:70%;">
 
 * The red dot represents an overdue conversation.
 <img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:50%;">
