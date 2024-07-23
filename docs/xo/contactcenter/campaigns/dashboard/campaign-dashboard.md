@@ -43,7 +43,7 @@ This section displays the following information:
 * **Failed**: If the call was dialed but not connected or the call couldn’t be dialed as the number is invalid.
 * **Canceled**: If the call was canceled by the customer.
 * **Completed**: If the call is answered, then disconnected by the agent, and a disposition is included.
-* **Agent Disposition (Top 5)**- Top 5 dispositions selected by agents.
+* **Agent Disposition (Top 5)**: Top 5 dispositions selected by agents.
 
 Related Link
 
