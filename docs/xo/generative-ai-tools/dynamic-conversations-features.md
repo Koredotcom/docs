@@ -302,7 +302,7 @@ Agents will be able to choose the LLM to rephrase their responses in the followi
 
 ### Answer Generation
 
-This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../../searchai/answer-configuration.md#answers-generation).
+This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
 ### GenAI Node
 
@@ -317,9 +317,9 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 
 **Usage**
 
-When creating or editing a Dialog Task that’s created manually or[ auto-generated](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
+When creating or editing a Dialog Task that’s created manually or[ auto-generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
 
-When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-node.md).
+When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../automation/use-cases/dialogs/node-types/genai-node.md).
 
 
 ### GenAI Prompt
@@ -348,7 +348,7 @@ This feature lets you define custom user prompts based on the conversation conte
 2. When you add custom tags to the **current message**, **user profile**, and **session** under **Instance Properties**, you can build custom profiles for the bot conversation. .
 3. Configuring node connections on an instance lets you define the connection rules for the conversation using transition conditions. This lets the conversation follow specific paths based on the user’s input.
 
-If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-prompt.md).
+If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../automation/use-cases/dialogs/node-types/genai-prompt.md).
 
 
 ### Repeat Responses
@@ -453,7 +453,7 @@ Before performing utterance testing, the user selects the **Zero-shot Model with
 
 The identified intent is then displayed as the matched intent.
 
-If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
+If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
 
 
 
@@ -486,6 +486,6 @@ During utterance testing, the user provides a more descriptive intent name with 
 * User utterance input
 * Intent names
 
-If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings).
+If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings).
 
 		
