@@ -1,8 +1,10 @@
-# Dashboard Overview
+# Dashboard
 
-The Dashboard Overview provides a 360-degree view of Audit details, Fail Statistics, and Performance Monitoring of the Agent Evaluation Forms on a Daily, Weekly, and Monthly basis. It holds the last seven months of a year's data. By default, the Dashboard shows the Daily report for all three categories. This provides a quick glance through to monitor the quality standard at a given point of time.
+## Overview
 
-By selecting the date range and Evaluation Form, you can view performance metrics for Voice, Chat, or both (Voice and Chat) conversations. This includes Trends view and Distribution view on a Daily, Weekly, or Monthly basis across the Dashboard.
+The Overview of the Dashboard provides a 360-degree view of Audit details, Fail Statistics, and Performance Monitoring of the Agent Evaluation Forms on a Daily, Weekly, and Monthly basis. It holds the last seven months of a year's data. By default, the Dashboard shows the Daily report for all three categories. This provides a quick glance through to monitor the quality standard at a given point of time.
+
+By selecting the date range and Evaluation Form, you can view performance metrics for Voice, Chat, or both conversations. This includes Trends and Distribution view on a Daily, Weekly, or Monthly basis across the Dashboard.
 
 You can view the Dashboard by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
 <img src="../images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
