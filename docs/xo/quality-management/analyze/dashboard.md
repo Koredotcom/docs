@@ -24,8 +24,8 @@ The key sections of this Dashboard include:
 <img src="../images/fail-statistics.png" alt="Fail Statistics" title="Fail Statistics" style="border: 1px solid gray; zoom:60%;">
 
 * **Performance Monitor**: It shows the total score of the Performance Monitor in a Gauge chart, based on the Date Range and Evaluation Form selected.
-    * **Trends**: You can visualize agent performance by viewing Trends of the average Kore Evaluation Score on a Daily, Weekly, and Monthly basis.  
+    * **Trends**: Monitor the agent performance by viewing Trends of the average Kore Evaluation Score on a Daily, Weekly, and Monthly basis.  
     <img src="../images/performance-monitor-trends.png" alt="Performance Monitor Trends" title="Performance Monitor Trends" style="border: 1px solid gray; zoom:60%;">
 
-    * **Distribution**: You can visualize the  percentage Distribution of agents across different score ranges over the past 7 days, last 30 days, and 90 days.  
+    * **Distribution**: Monitor the  percentage Distribution of agents across different score ranges over the past 7 days, 30 days, and 90 days.  
     <img src="../images/performance-monitor-distribution.png" alt="Performance Monitor Distribution" title="Performance Monitor Distribution" style="border: 1px solid gray; zoom:60%;">
