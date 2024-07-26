@@ -17,7 +17,7 @@ Follow these steps:
 
 3. Enable features:
 
-    1. Enable Conversation Intelligence, Auto QA, and Bookmarks in QM Settings. See [Conversation Intelligence Dashboard](../quality-management/analyze/conversation-intelligence.md).
+    1. Enable Conversation Intelligence, Auto QA, and Bookmarks in QM Settings. See [Conversation Intelligence](../quality-management/analyze/conversation-intelligence.md).
 
     2. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling Gen AI Co-pilot Features](../generative-ai-tools/co-pilot-features.md).
 
