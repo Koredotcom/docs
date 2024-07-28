@@ -213,6 +213,28 @@ The following table displays the Co-Pilot features and the supported models.
     <td>✅</td>
     <td>✅</td>
   </tr>
+   <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+   <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
   <tr>
     <td>Anthropic – Claude Instant</td>
     <td>✅</td>

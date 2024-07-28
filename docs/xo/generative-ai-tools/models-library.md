@@ -28,8 +28,9 @@ Steps to configure a pre-built LLM:
         2. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter **Deployment ID**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     2. Steps to configure OpenAI:
-        1. Click **Configure Now** for OpenAI. 
-            ![alt_text](images/llm-integration(5).png  )
+        1. Click **Configure Now** for OpenAI.
+            <img src="../images/llm-integration(5).png" alt="Instagram" title="" style="border: 1px solid gray; zoom:70%;">
+          
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     3. Steps to configure Anthropic:

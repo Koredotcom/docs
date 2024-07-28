@@ -206,6 +206,7 @@ The following table displays the Dynamic Conversation features and the supported
     <td>❌</td>
     <td>✅*</td>
   </tr>
+  
   <tr>
     <td>OpenAI – GPT 3.5 Turbo</td>
     <td>✅</td>
@@ -229,6 +230,30 @@ The following table displays the Dynamic Conversation features and the supported
     <td>❌</td>
     <td>❌</td>
     <td>✅*</td>
+  </tr>
+    <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
+    <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
   </tr>
   <tr>
     <td>Anthropic – Claude Instant</td>
