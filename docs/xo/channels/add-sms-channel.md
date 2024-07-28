@@ -49,7 +49,7 @@ To set up a Twilio Voice Channel, see [Adding the Twilio Voice Channel](./add-tw
         2. Select **Inbound & Outbound** to send and receive text messages.
 
             !!! Note
-        
+
                 You should add at least one phone number to save the configurations. There should not be any duplicate numbers. The configuration would differ based on the selection.
 
 6. Click **Save**. The SMS channel is configured.  
