@@ -93,11 +93,10 @@ The app's configuration settings from the Meta for Developers portal are used in
 
  
 3. Select the I Understand checkbox. The token appears.
-    
+
     !!! note
 
        Copy the token as required while configuring the Messenger channel in the Kore.ai Platform.
-
 4. Click **Done**.
 5. Copy the following configuration settings from the Meta for Developers portal, as these are required in the Kore.ai Platform. 
 * **App Id**: Go to your **App** > **App Settings** > **Basic** > **App Id** 
