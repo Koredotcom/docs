@@ -59,7 +59,7 @@ Key updates:
     ```
 
 * New “Conversation History” setting: Indicates the conversation history length - the number of previous messages sent as context to LLM:
-Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings > Conversation History Length`
+Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings > Conversation History Length.
 
 [Learn more :octicons-arrow-right-24:](../../automation/intelligence/context-object/).
 
