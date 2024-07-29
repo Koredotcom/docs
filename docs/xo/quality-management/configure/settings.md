@@ -11,14 +11,14 @@ The Settings has the following two sections:
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-The users can access the Evaluation Forms by going to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.  
+You can access the Evaluation Forms by going to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.  
 <img src="../images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Intelligence Dashboard
 
 The Conversation Intelligence Dashboard displays post-interaction analytics and is a powerful tool designed to provide insights and actionable information following customer interactions. 
 
-For more information about the Conversation Intelligence Dashboard, refer to [Conversation Intelligence - Overview](../analyze/conversation-intelligence.md).
+For more information about the Conversation Intelligence Dashboard, see [Conversation Intelligence - Overview](../analyze/conversation-intelligence.md).
 
 !!! Note
 
@@ -29,7 +29,7 @@ Steps to enable the Conversation Intelligence:
 1. Expand the **Conversation Intelligence** collapse icon to view the **Conversation Intelligence Dashboard**.  
 <img src="../images/converse-intelligence.png" alt="Conversation Intelligence Dashboard" title="Conversation Intelligence Dashboard" style="border: 1px solid gray; zoom:80%;">
 
-2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details as shown below.  
+2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details.  
 <img src="../images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
 Steps to disable the Conversation Intelligence Dashboard:
 
@@ -51,7 +51,7 @@ This allows you to add and define a set of dynamic messages or scripts for the u
 
 Steps to enable the Script Adherence Configuration:
 
-1. Expand the **Conversation Intelligence** collapse icon, and enable the toggle button of **Conversation Intelligence Dashboard** and **Script adherence configuration** to view the attributes of as shown below.  
+1. Expand the **Conversation Intelligence** collapse icon, and enable the toggle button of **Conversation Intelligence Dashboard** and **Script adherence configuration** to view the following attributes.  
 <img src="../images/script-adherence.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
 2. Define the scripts for the below attributes to check the agent adherence.
@@ -69,7 +69,7 @@ Steps to enable the Script Adherence Configuration:
 
 ## Quality Management Settings
 
-The Quality Management Settings allows users to create and configure evaluation forms to generate automated scores and enable interactions to get bookmarked under the different sections for reference later.
+The Quality Management Settings allows you to create and configure evaluation forms to generate automated scores and enable interactions to get bookmarked under the different sections for reference later.
 
 Users can access Quality Management (QM) Settings by going to **Contact Center AI** > **Quality Management** > **Settings** > **Quality Management**.  
 <img src="../images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
@@ -81,22 +81,22 @@ The QA has the following two sections:
 
 ### Auto QA
 
-This feature allows users to set up Evaluation Forms for automated scoring. If the Auto QA toggle is off, users cannot see automated QA scores across the entire application and its queues. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
+This feature allows you to set up Evaluation Forms for automated scoring. If the Auto QA toggle is off, users cannot see automated QA scores across the entire application and its queues. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
 
 Steps to enable the Auto QA:
 
-1. Expand the **Quality Management** collapse icon to view the **Auto QA** option as shown below.  
+1. Expand the **Quality Management** collapse icon to view the following **Auto QA** option.  
 <img src="../images/auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
 2. Enable the **Auto QA** option.
 3. Click **Save** to save the settings.
 
-    By Enabling the Auto QA toggle option, users can create and configure evaluation forms to generate automated scores.  
+    By Enabling the Auto QA toggle option, you can create and configure evaluation forms to generate automated scores.  
     <img src="../images/bookmarks.png" alt="Bookmark Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
 ### Bookmarks
 
-This feature lets users bookmark interactions into various collections for future reference. Once created, these collections are added to Conversation Mining.
+This feature lets you bookmark interactions into various collections for future reference. Once created, these collections are added to Conversation Mining.
 
 Steps to Add Bookmarks:
 
@@ -104,7 +104,7 @@ Steps to Add Bookmarks:
 <img src="../images/bookmarks-(2).png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
 
 2. Enable the **Bookmarks** toggle option to add a new bookmark.
-3. Click the **Add Bookmark**. A new **Bookmarks** row appears, as shown below.  
+3. Click the **Add Bookmark**. The following new **Bookmarks** row appears.  
 <img src="../images/bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:60%;">
 
 4. Enter the **Bookmarks** name for the assigned interactions.

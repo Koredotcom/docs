@@ -1,7 +1,7 @@
 
 # Best Practices for Auto QA Configuration
 
-The following table describes the best practices that are based on - By Question metrics.
+The following table describes the best practices that are based on by Question metrics.
 
 <table>
   <tr>
