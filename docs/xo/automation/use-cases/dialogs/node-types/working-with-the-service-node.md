@@ -74,7 +74,6 @@ To configure the Component Properties tab, please follow the steps below:
 
     Post v11.3 release:  
     1. **Service Call Timeout** and **Timeout Error Handling Behavior** settings have been moved from Component Properties to Instance Properties within the Service Node.  
-
     2. The modifications made are exclusive to the particular dialog task and will not impact any other dialog tasks utilizing the same Service Node.
 
 
