@@ -38,7 +38,7 @@ Steps to create a filter:
 
    !!! Note
 
-        Clicking the **Apply** button does not save the filter.
+       Clicking the **Apply** button does not save the filter.
 
 6. Enter the **Filter Name,** and click **Save & Apply**.  
 
