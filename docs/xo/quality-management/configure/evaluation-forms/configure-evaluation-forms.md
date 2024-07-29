@@ -13,7 +13,7 @@ The Evaluation Forms are designed to check adherence to individual questions. Th
 
 The Evaluation Form includes chosen metrics with customizable weights totaling 100%. The Evaluation Forms are configured and assigned to respective Channels and Queues for audit. Each queue in the Chat and Voice channels can host only one evaluation form.
 
-The users can access the Evaluation Forms by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms**, as shown below.  
+You can access the Evaluation Forms by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms**.  
 <img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
 
 The Evaluation Forms has the following options:
@@ -26,11 +26,10 @@ The Evaluation Forms has the following options:
 * **Pass Score**: Shows the set pass score percentage for the specified assigned forms and the Channel selected.
 * **Status**: Allows you to enable or disable the scoring for the individual Evaluation Form.  
 * **Search**: Provides a quick search option to view and update the Evaluation Forms by name only.
-* **Ascend**/**Descend Order**: Provides a quick ascending and descending arrow mark view option for all the edited and newly added Channels and Queues of Evaluation Forms (Configure and Assign).
 
 ### Add New Evaluation Form
 
-The users can access the Evaluation Metrics by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**, as shown below.  
+You can access the Evaluation Metrics by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
 
 Steps to create a new Evaluation Form:
 <img src="../images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
