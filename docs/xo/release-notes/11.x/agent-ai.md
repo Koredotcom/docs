@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
-## v11.4.0 July 27, 2024
+## v11.4 July 27, 2024
 <u> Patch Release </u>
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
@@ -43,6 +43,8 @@ The Agent AI widget now offers channel-specific layout customization in beta. Us
 ## Entry/Exit Event Support in Third-Party Integration
 
 Integration with third-party applications lets Agent AI capture and process events like entry, exit, and internalTransfer between agents to ensure smooth transition and improved user experience. Currently, these events are only supported by Genesys. 
+
+<hr>
 
 ## v11.3.1 July 13, 2024
 
