@@ -1,8 +1,8 @@
 # Conversation Mining
 
-The mining feature allows you to drill down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
+The Conversation Mining feature allows you to drill down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
 
-Users can access Conversation Mining by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
+You can access Conversation Mining by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
 <img src="../images/conversation-mining-interaction-default.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining has the following two sections:
@@ -12,7 +12,7 @@ The Conversation Mining has the following two sections:
 
 ## Interactions
 
-Users can see scored interactions or evaluation information at a glance from Conversation Mining. Users can apply filters to focus on specific interactions or with high potential for improvement, and save the filters for auditing purposes. Interactions visible on the conversation mining screen are limited to the user's assigned queues.  
+You can see scored interactions or evaluation information at a glance from Conversation Mining. Even you can apply filters to focus on specific interactions or with high potential for improvement, and save the filters for auditing purposes. Interactions visible on the conversation mining screen are limited to the user's assigned queues.  
 <img src="../images/conversation-mining-interaction.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining Interactions has the following key Items:
@@ -22,7 +22,7 @@ The Conversation Mining Interactions has the following key Items:
 
     !!! Note
 
-        Bookmarks have to be created first from settings. For more information, refer to [Settings](../configure/settings.md).
+        Bookmarks have to be created first from settings. For more information, see [Settings](../configure/settings.md).
 
 * **Queues**: Shows the queue in which the interaction was terminated.
 
@@ -42,7 +42,7 @@ The Conversation Mining provides the following Interactions of interest with fil
 Allows users to assign the interaction to a bookmark and displays all the bookmarks that a given interaction has been assigned to.  
 <img src="../images/conversation-mining-interaction-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
 
-#### Date Range Selection
+### Date Range Selection
 
 Provides the option to select the date range to the conversation interactions. Default date range selected is always the last 7 days.  
 <img src="../images/conversation-mining-interaction-date-range.png" alt="Date Range Selection" title="Date Range Selection" style="border: 1px solid gray; zoom:80%;">
@@ -204,10 +204,10 @@ The Audit Allocations has the following options:
 * **Assigned Date**: Shows the assigned date to start the audit.
 * **Name**: Shows the audit name.
 * **Created By**: Shows the auditor name who has initiated.
-* **Evaluation Form**: 
+* **Evaluation Form**: Shows the forms list that are assigned to the QM auditors as assessments for review compliance.
 * **Kore Evaluation Score**: Shows the Kore Evaluation score.
 * **Filters**: Provides the Filter options to search and add the filters.
-* **New Audit Allocation**:
+* **New Audit Allocation**: Allows to create and assign the interactions for a new audit allocation. 
 
 ## Add New Audit Allocation
 

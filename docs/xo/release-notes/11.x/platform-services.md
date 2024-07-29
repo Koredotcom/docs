@@ -2,6 +2,18 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.4.0 July 27, 2024
+
+<u> Patch Release </u>
+
+### Channels
+
+#### SMS Channel Configuration
+
+The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md).
+
+<hr>
+
 ## v11.3.1 July 13, 2024
 
 <u> Patch Release </u>

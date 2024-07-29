@@ -13,6 +13,19 @@ The conversation tray divides conversations into different statuses, which are d
 * **After Call Work (ACW)**: ACW refers to the post-call tasks or activities that agents perform immediately after ending a conversation with a customer.  
 <img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:80%;">
 
+## Color Codes
+
+Color codes help in easy identification and better readability of conversations on digital channels.
+
+* The blue dot represents a conversation in which an agent is engaged.
+<img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:70%;">
+
+* The red dot represents an overdue conversation.
+<img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:50%;">
+
+* New email conversations in the conversations tray.
+<img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:50%;">
+
 ## Conversation Information
 
 This section displays data about the conversations you are handling.
@@ -52,5 +65,5 @@ To view the Outbound Call History, follow these steps:
     * Day (_Today, Yesterday, Monday, etc._)
     * Date
     * Time of call and duration
-    * Type of call (Incoming, Outgoing, or Transferred)
-    <img src="../images/call_history.png" alt="Call History" title="Call History" style="border: 1px solid gray; zoom:80%;">
+    * Type of call (Incoming, Outgoing, or Transferred)  
+    <img src="../images/call-history.png" alt="Call History" title="Call History" style="border: 1px solid gray; zoom:80%;">
