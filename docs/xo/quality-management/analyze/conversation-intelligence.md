@@ -113,6 +113,16 @@ Steps to edit a filter:
 In this section, you can filter data by time range. By default, data is displayed for the current day (Today). Select a time range, and click **Apply**.  
 <img src="../images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
+## Compare Functionality
+
+The Conversation Intelligence dashboard's compare functionality allows you to view a comparison of metrics between a selected date range and the previous date range. The compare toggle is enabled by default.
+
+The spike or dip indicators for playbook adherence are linked to this toggle and only display across stages and steps if enabled. These indicators are included for all fields. They can have different meanings based on an increase or decrease; an increase can be positive or negative depending on the metrics, resulting in either red badges (negative) or green badges (positive). 
+
+For example, if the selected date range is the last 7 days, all metrics, such as the Average Speed to Answer, will show a spike or dip indicating the percentage change for a selected period (June 5 - June 12) compared to the same duration in the previous period (May 29 - June 5).
+  
+<img src="../images/key-performance-indicators.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
+
 ## Channels
 
 You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
