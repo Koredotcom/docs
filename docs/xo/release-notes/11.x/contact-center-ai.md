@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
-## v11.4.0 July 27, 2024
+## v11.4 July 27, 2024
 
 <u> Patch Release </u>
 
@@ -21,7 +21,7 @@ A loading indicator is displayed for summaries that take time to generate. Addit
 
 Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabled functionality that improves task distribution among agents. It enhances operational efficiency by ensuring optimal utilization of available agents while preserving task quality and agent expertise.
 
-**Key aspects**:
+Key aspects:
 
 * Fair workload distribution: Tasks are matched based on skills, language proficiency, and last assignment time.  
 
@@ -29,7 +29,7 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 
 * Skill-based allocation: Load balancing occurs within the pool of qualified agents, maintaining service quality.
 
-**Key benefits**:  
+Key benefits:  
 
 * Reduced wait times for tasks.  
 
@@ -44,10 +44,11 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 #### Phone Number Label Display Enhancement
 
 Contact Center AI now shows labels for SIP-configured phone numbers in two places:
+
 * Inbound flow attachment section: Labels appear next to phone numbers
 * Phone number configuration page: New "Label" column in the table
 
-**Key benefits**:
+Key benefits:
 
 * Improved organization: Easier to manage multiple phone numbers.  
 * Enhanced clarity: Easier identification of number purposes.  
@@ -67,13 +68,13 @@ Kore Voice Gateway can now be integrated with ID R&D.
 
 The Campaigns module now supports SMS campaigns, enabling businesses to engage audiences through text messages. SMS allows businesses to leverage impactful, concise communication, enhancing marketing, informational, and transactional messaging strategies.
 
-**Key capabilities**:
+Key capabilities:
 
 * Campaign Management: Create, edit, clone, and delete campaigns. Also, run, pause, stop, and re-run campaigns.
 * Templates: Pre-define message structure and content to ensure consistency and efficiency in messaging.
 * Dashboard: Track campaign progress and monitor essential metrics.
 
-**Key benefits**:
+Key benefits:
 
 * Direct audience engagement via mobile phones.
 * Versatile use for promotions, alerts, reminders, and more.
@@ -88,7 +89,7 @@ The Campaigns module now supports SMS campaigns, enabling businesses to engage a
 Agent Console now includes a Preview Dialer for outbound calling campaigns.  
 <img src="../images/preview-call.png" alt="Preview Dialer" title="Preview Dialer" style="border: 1px solid gray; zoom:70%;">
 
-**Key aspects**:
+Key aspects:
 
 * Call Information Preview: Agents see recipient details before calling, including name, account history, and other relevant data.
 * Agent-Controlled Calls: Agents decide when to initiate each call. It allows preparation for more personalized interactions.
@@ -108,7 +109,7 @@ By default, a “JavaScript Message” label in displayed in the chat/interactio
 
 The search functionality has been enhanced to work seamlessly with applied filters.
 
-**Key improvements**:
+Key improvements:
 
 * Integrated search and filter: Search now considers active filter criteria. Results are limited to conversations matching both search and filter.
 * Increased result relevance: Conversations matching search but not filter are excluded. Ensures consistent results with current filter settings.
