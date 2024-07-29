@@ -1,6 +1,30 @@
 # Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
+## v11.4.0 July 27, 2024
+
+<u> Patch Release </u>
+Key features and enhancements included in this release are summarized below.
+
+#### Source Ingestion Logs
+Search AI now maintains comprehensive logs for the content ingested through web crawling. These logs include status codes, sizes, and other necessary details for each page ingested or skipped during the crawling process. Detailed logs help the administrators monitor the ingestion process and promptly identify and resolve issues. 
+
+
+#### Detailed Error Messages for Web Crawl Failures
+Search AI now provides detailed error messages for web crawl failures, along with recommended actions to take. This enhancement aids in quick troubleshooting and rectification of issues.
+
+
+#### Answer Generation API Enhancement
+The Answer Generation API now allows for more details about the answer in the response. You can get detailed information about the qualified chunks for the query in response, along with the answer to the query. This can be particularly useful to orchestrate complex use cases.
+
+
+#### Answer Generation Errors
+Search AI now displays error messages to users when the answer generation process fails. These errors may occur for various reasons, such as an invalid OpenAI key or the absence of relevant chunks. This feature ensures users are promptly informed of any issues, facilitating quicker resolution.
+
+
+#### Layout Aware Content Extraction Strategy (Beta)
+Search AI introduces an advanced way of extracting content from documents (PDF and DOCX) by detecting the objects in the document using a combination of OCR technology, layout detection models, and layout awareness rules. This advanced strategy can accurately extract content from tables, graphs, and charts in the documents. 
+
 
 ## v11.4 July 27, 2024
 

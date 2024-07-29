@@ -1,6 +1,67 @@
 # Automation AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
+## v11.4.0 July 27, 2024
+
+<u> Patch Release </u>
+
+Key features and enhancements included in this release are summarized below.
+
+### Virtual Assistant
+
+
+#### Timeout Settings Moved to Instance Properties for Service Node
+The timeout settings for the Service Node have been moved from Component Properties to Instance Properties. 
+
+Key benefits:
+
+* Increased flexibility: Customize timeout settings for each dialog individually without affecting other tasks using the same Service Node.
+* Improved error handling: The "Jump to Specific Node" option now works more reliably within the current dialog.
+
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#instance-properties).
+
+
+
+
+#### Enhanced Debug Logs
+The platform now groups debug logs by user utterance and bot response in a chat-like structure to improve clarity and efficiency in tracing conversation flow for platform users.
+
+Key updates:
+* Chat-like interface for intuitive log viewing.
+* Detailed logs displayed on group expansion.
+* Truncated display for lengthy responses with the "Show more" option.
+
+Key benefits:
+* Improved readability: Easily follow the conversation flow.
+* Enhanced context: Quickly understand the sequence of events in a conversation.
+* Efficient navigation: Collapsible groups and smooth scrolling for a better overview.
+* Flexible viewing: Filter option for targeted log analysis.
+* Optimized performance: Lazy loading for efficient log rendering.
+
+
+### Rephrased User Query Details in the Context Object
+
+The platform now includes the Rephrased User Query in the context object, making it available for downstream tasks. This enhancement improves intent detection, entity extraction, and search accuracy by providing enriched user input by incorporating contextual signals. Platform users can now leverage rephrased queries for dialog execution and API calls to Search AI.
+
+Key updates:
+
+* New “UserQuery” context object: 
+    ``` json
+    context.UserQuery : {
+
+        originalUserQuery : <original user input>,
+        rephrasedUserQuery : <rephrase user query>
+        }
+        
+    ```
+
+* New “Conversation History” setting: Indicates the conversation history length - the number of previous messages sent as context to LLM:
+Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings > Conversation History Length`
+
+[Learn more :octicons-arrow-right-24:](../../automation/intelligence/context-object/).
+
+
 
 ## v11.3.1 July 13, 2024
 
