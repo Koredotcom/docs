@@ -68,15 +68,14 @@ To configure the Component Properties tab, please follow the steps below:
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
     5. [Defining Data Service](#define-a-data-service)
   
-10. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:
-    1. **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **20 Seconds** for *Standard* accounts, and between **1 Second** to **30 Seconds** for *Enterprise accounts*. The default value is 5 Seconds.
-    2. **Timeout error handling**: Choose how the bot should respond when the timeout occurs.
-        * **Close the Task and trigger Task Execution Failure Event**, or
-        * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
+10. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-        <img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
+!!! note
 
-11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+    Post v11.3 release:
+    * **Service Call Timeout** and **Timeout Error Handling Behavior** settings have been moved from Component Properties to Instance Properties within the Service Node.
+    * The modifications made are exclusive to the particular dialog task and will not impact any other dialog tasks utilizing the same Service Node.
+
 
 #### Pre-processor Script
 
@@ -121,7 +120,15 @@ The steps to configure a Post-processor Script are the same as the Pre-processor
 Use the Instance Properties to define any user tags that you want to set.
 
 1. On the Service node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:
+    1. **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **20 Seconds** for *Standard* accounts, and between **1 Second** to **30 Seconds** for *Enterprise accounts*. The default value is 5 Seconds.
+    2. **Timeout error handling**: Choose how the bot should respond when the timeout occurs.
+        * **Close the Task and trigger Task Execution Failure Event**, or
+        * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
+
+        <img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
+
+3. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
     <img src="../images/service-node-img8-instance-properties.png" alt="Service node - Instance properties" title="Service node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
