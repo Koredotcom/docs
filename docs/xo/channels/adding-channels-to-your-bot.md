@@ -79,6 +79,6 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Other Channels
 
-|[Email](./add-email-channel.md)<br>[![](./images/logo37-email.png)](./add-email-channel.md)|[SMS](./add-sms-channel.md)<br>[![](./images/sms-channel-logo.png)](./add-email-channel.md)|[Twilio SMS](./add-twilio-sms-channel.md)<br> [![](./images/logo35-twilio.png)](./add-twilio-sms-channel.md)|[Web/MobileClient](./add-web-mobile-client.md)<br> [![](./images/logo39-webmobile.png)](./add-web-mobile-client.md)|[Webhook](./add-webhook-channel.md)<br> [![](./images/logo40-webhook.png)](./add-webhook-channel.md)|
+|[Email](./add-email-channel.md)<br>[![](./images/logo37-email.png)](./add-email-channel.md)|[SMS](./add-sms-channel.md)<br>[![](./images/sms-channel-logo.png)](./add-sms-channel.md)|[Twilio SMS](./add-twilio-sms-channel.md)<br> [![](./images/logo35-twilio.png)](./add-twilio-sms-channel.md)|[Web/MobileClient](./add-web-mobile-client.md)<br> [![](./images/logo39-webmobile.png)](./add-web-mobile-client.md)|[Webhook](./add-webhook-channel.md)<br> [![](./images/logo40-webhook.png)](./add-webhook-channel.md)|
 |:---:|:---:|:---:|:---:|:---:|
 |[**Widget SDK**](./add-widget-sdk-channel.md)<br> [![](./images/logo39-webmobile.png)](./add-widget-sdk-channel.md)|
