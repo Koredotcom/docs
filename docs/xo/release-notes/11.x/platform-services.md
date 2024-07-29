@@ -14,7 +14,8 @@ Key updates:
 
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
-* Detailed usage trends are accessible via the Manage button.  [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console--plan-and-usage)
+* Detailed usage trends are accessible via the Manage button.  
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console-plan-and-usage)
 
 
 ### Deploy Management
