@@ -124,10 +124,9 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 <li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail. By default, the Cross Talk duration is two seconds. But you can customize the configuration instances limit and the Cross Talk duration combination. 
 
 <p>In the <strong>No of Instances</strong> field, enter the minimum allowed Cross Talk instances per second.</p>
+   <li><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration). 
 
-<p><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration).</p>   
-
-<p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized. </p></li> 
+  <p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized. </p></li> 
 
 
 <li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
