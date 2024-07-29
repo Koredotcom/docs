@@ -71,21 +71,30 @@ The right panel of this section, displays the By Question metrics configured for
 Key features include:
 
 * **Audit Progress Bar**
+
   * Located at the top right.
   * Shows percentage completion based on answered questions.
   * Reflects total number of By Question metrics in the form.
+
 * **Metric Cards**
+
   * Display configurations for each question metric.
   * Show configured similarity percentage (top right).
   * Indicate assigned weightage (bottom left).
   * Present Kore Evaluation result.
+
 * **Kore Evaluation**
+
   * **Yes**: Badge appears next to 'Yes' response with observed similarity percentage.
   * **No**: Badge appears next to 'No', indicating non-adherence.
   * **NA**: Badge placement varies based on trigger detection and agent adherence.
+
 * **Navigation**
+
   * Clicking 'Yes' evaluation cards navigates to the transcript and recording where adherence was detected.
+
 * **Submission**
+
   * Submit button is enabled only for interactions assigned to the user.
   * All By Question metrics must be answered before submission.
 
