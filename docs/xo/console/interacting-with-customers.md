@@ -671,8 +671,15 @@ This section displays the live interaction summary with the following details:
 * **Queue**: Indicates the queue in which the conversation is placed.
 * **Wait Time**: This shows the time that the chat has been waiting for an agent to respond.
 * **Intent**: Shows the customer’s primary purpose for initiating the live interaction.
-* **Avg. Sentiment**: Captures the customer sentiments based on their responses.
-<img src="../images/arrival-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:80%;">
+* **Sentiment**: Captures the customer sentiments based on their responses.
+<img src="../images/arrival-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
+
+After accepting the conversation, all interactions by the agent are displayed below the arrival summary. If generating the arrival summary takes time, a loading indicator appears until the summary is ready. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
+
+### Refreshing Bot-Customer Interactions
+
+A reload button appears at the top of the conversation transcript when the bot-customer conversation transcript is missing. Clicking Reload displays the missing information.  
+<img src="../images/reload-button.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:60%;">
 
 ## Typing Chat Indicator
 

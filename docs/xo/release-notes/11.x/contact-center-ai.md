@@ -13,7 +13,7 @@ Key features and enhancements included in this release are summarized below.
 #### Improved Arrival Summary Placement
 
 When an agent accepts a conversation, the system now automatically generates an arrival summary and inserts it at the bottom of the Bot-User transcript. It helps agents quickly grasp the context of each interaction, thus improving their ability to assist users effectively.
-A loading indicator is displayed for summaries that take time to generate. Additionally, a refresh button is available to retrieve any missing bot/user conversation data, ensuring agents have complete information. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
+A loading indicator is displayed for summaries that take time to generate. Additionally, a refresh button is available to retrieve any missing bot/user conversation data, ensuring agents have complete information. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#arrival-summary).
 
 ### Configuration
 
@@ -29,7 +29,7 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 
 * Skill-based allocation: Load balancing occurs within the pool of qualified agents, maintaining service quality.
 
-**Key benefits**:
+**Key benefits**:  
 
 * Reduced wait times for tasks.  
 
@@ -38,6 +38,8 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 * Balanced workload across qualified agents.
 
 * Maintained service quality through skill-based assignments.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#load-balanced-agent-routing).
 
 #### Phone Number Label Display Enhancement
 
