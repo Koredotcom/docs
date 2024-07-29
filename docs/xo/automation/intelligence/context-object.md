@@ -335,7 +335,7 @@ For example, <code>context.customerId</code>
    </td>
    <td>Dialog
    </td>
-   <td>Repharsing the user query.
+   <td>Repharse user query.
    </td>
    <td><strong>Syntax:</strong> <code>context.UserQuery : {
       	originalUserQuery : < original user input >,
@@ -343,7 +343,7 @@ For example, <code>context.customerId</code>
 }
 </code>
 <p>
-For example, <code>userQuery{
+For example, <code>context.UserQuery{
 "originalUserQuery": "How about Orlando?",
 "rephrasedUserQuery": "How about the weather in Orlando?"
 }</code>
