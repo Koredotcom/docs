@@ -17,15 +17,18 @@ The Platform now supports two new OpenAI models for various [Co-Pilot](../../gen
 * GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
 
 ###  Admin Console
+
 #### Usage Information for Enterprise Accounts
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
+
 Key updates:
   
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
 * Detailed usage trends are accessible via the Manage button.
-[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#upgrading-a-standard-plan-to-an-enterprise-custom-plan).
+
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#upgrading-a-standard-plan-to-an-enterprise-custom-plan)
 
 ### Deploy Management
 
@@ -72,11 +75,11 @@ These changes aim to streamline the deployment and management of GenAI and LLM f
 
 #### SMS Channel Configuration
 
-The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md).
+The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md)
 
 #### Instagram Channel Support
 
-The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md).
+The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md)
 
 ### APIs
 
