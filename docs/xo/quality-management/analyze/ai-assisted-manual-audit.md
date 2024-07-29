@@ -72,9 +72,9 @@ Key features include:
 
 * **Audit Progress Bar**
 
-  * Located at the top right.
-  * Shows percentage completion based on answered questions.
-  * Reflects total number of By Question metrics in the form.
+   * Located at the top right.
+   * Shows percentage completion based on answered questions.
+   * Reflects total number of By Question metrics in the form.
 
 * **Metric Cards**
 
