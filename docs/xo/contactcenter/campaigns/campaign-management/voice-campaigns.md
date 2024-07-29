@@ -38,6 +38,7 @@ Campaign managers can customize the dialing pace, allowing them to set the numbe
 
 To create a campaign when Agentless Dialing Mode is selected:
 
+
 * Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/create-flows.md#the-start-flows).  
 <img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:70%;">
 
@@ -47,9 +48,8 @@ To create a campaign when Agentless Dialing Mode is selected:
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
-## Auto Dialers
 
-### Progressive Dialer
+#### Progressive Dialer
 
 A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
 
@@ -60,11 +60,14 @@ The dialer efficiently manages lead allocation based on agent availability. It t
 To create a campaign when Progressive Dialing Mode is selected:
 
 * Select the **Queue** to which the calls will be routed. [Learn more](../../routing/queues/queue-management.md)  
+
 <img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
+
 
     !!! Note
 
         You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
+
 
 #### Progressive Dialer Call Handling
 
@@ -72,6 +75,7 @@ Once the dialer selects a contact from the list, it dials the number and upon su
 <img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;">
 
 During the call the agent can Mute, place the call on Hold, or end the interaction.  
+
 <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;">
 
 Dispositions are displayed to the agent when the call ends.  
@@ -86,6 +90,7 @@ Dispositions are displayed to the agent when the call ends.
         * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
 
         * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
+
 
 ### Preview Dialer
 
@@ -114,12 +119,15 @@ Dispositions are displayed to the agent when the call ends.
 
 A campaign automatically ends once all numbers are connected. If a call is not connected, the dialing rules, such as retry waiting periods are checked. The number is redialed after all other records have been attempted. The maximum number of attempts for each contact is set. For example, If a contact's max attempt is 1, it won't be retried. If it's 2, the contact is marked as Retry = yes and will be retried as per the configured logic.
 
+
 ### Create Voice Campaigns
 
 Steps to create Voice campaigns:
 
 1. On the **Voice** tab, click **+ New Campaign**.  
+
 <img src="../images/new-campaign-button-voice.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;">
+
 
 2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
     * **Campaign Name**: Enter a name for the campaign.  
@@ -140,6 +148,7 @@ Steps to create Voice campaigns:
     <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:80%;">
     * Select the **Dialing Mode** from the drop-down list.  
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:80%;">
+
 
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.  
@@ -210,8 +219,10 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.  
 <img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
+
 A confirmation message is displayed. Click **Stop**.  
 <img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
+
 
 ### Edit a Voice Campaign
 
