@@ -49,6 +49,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Conversation Test Suite Execution](./execute-test-suite.md) | To execute a Conversation Test Suite. | Conversation Tests Execution | Conversation Tests Execution |
 | [Conversation Test Suite Execution Status](./get-test-suite-execution-status.md) | To get the execution status and summary of a Conversation Test Suite. | Conversation Tests Execution | Conversation Tests Execution |
 | [Delete Conversation Test Suite](./delete-test-suite.md) | To delete a Conversation Test Suite. | Conversation Tests Management | Conversation Tests Management |
+| [Manage SDK Push Notifications](./manage-sdk-push-notifications.md) | To subscribe and unsubscribe a user’s device(s) to SDK push notifications, and list all the subscribed devices. | SDK Push Notifications | NA |
 
 
 ## NLP Training APIs
