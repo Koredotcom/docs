@@ -23,14 +23,19 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 
 **Key aspects**:
 
-* Fair workload distribution: Tasks are matched based on skills, language proficiency, and last assignment time.
+* Fair workload distribution: Tasks are matched based on skills, language proficiency, and last assignment time.  
+
 * Prioritization of less busy agents: Agents who haven't received recent tasks are given priority for new assignments.
+
 * Skill-based allocation: Load balancing occurs within the pool of qualified agents, maintaining service quality.
 
 **Key benefits**:
-* Reduced wait times for tasks.
+* Reduced wait times for tasks.  
+
 * Improved overall system performance.
+
 * Balanced workload across qualified agents.
+
 * Maintained service quality through skill-based assignments.
 
 #### Phone Number Label Display Enhancement
@@ -41,9 +46,10 @@ Contact Center AI now shows labels for SIP-configured phone numbers in two place
 
 **Key benefits**:
 
-* Improved organization: Easier to manage multiple phone numbers.
-* Enhanced clarity: Easier identification of number purposes.
-* Better readability: Improved readability in configuration tables.
+* Improved organization: Easier to manage multiple phone numbers.  
+* Enhanced clarity: Easier identification of number purposes.  
+* Better readability: Improved readability in configuration tables.  
+
 This update streamlines phone number management, making it more efficient for agents and administrators to work with multiple SIP-configured numbers.
 
 ### Kore Voice Gateway
