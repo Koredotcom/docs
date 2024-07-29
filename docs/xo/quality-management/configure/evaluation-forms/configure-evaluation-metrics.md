@@ -16,6 +16,7 @@ The Evaluation Metrics has the following options:
 
 ## Add New Evaluation Metrics
 
+
 You can access the Evaluation Metrics by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
 
 Steps to create New Evaluation Metrics:
@@ -67,6 +68,7 @@ This allows the conditional check-in. It is a trigger-based detection, in which 
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
 
+
 <li><strong>Trigger:</strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>
 
 <ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</ul></li>
@@ -86,6 +88,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 <li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. <em>Whether it is Static or Dynamic, you can configure the expected Similarity threshold.</em>
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+
 </li>
 </ul>
    </td>
@@ -139,6 +142,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.</li>
  
 <ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</ul></li>
+
    </td>
   </tr>
 </table>

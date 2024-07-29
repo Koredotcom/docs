@@ -11,16 +11,15 @@ This document provides information on the feature updates and enhancements intro
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
 Key updates:
+
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
-* Detailed usage trends are accessible via the Manage button.  [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console--plan-and-usage)
+* Detailed usage trends are accessible via the Manage button.  [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#navigating-to-plan-and-usage-1)
 
 
 ### Deploy Management
 
 #### Import, Export, and Publish GenAI and LLM Settings
-
-(Applicable for v10.5.0 and v11.4.0)
 
 A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
 
