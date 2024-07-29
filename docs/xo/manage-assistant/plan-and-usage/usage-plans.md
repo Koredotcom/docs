@@ -1178,7 +1178,8 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
 
 1. On the Bot Builder, click the **profile** icon in the top right corner.
 2. Click **Go to Admin Console**.
-    ![alt_text](images/up(36).png "image_tooltip")
+    <img src="../plan-and-usage/images/up(36).png" alt="Plan and Usage - Admin Console" title="Plan and Usage - Admin Console" style="border:1px solid gray;zoom:70%;">
+
 3. Login and navigate to **BILLING** > **PLAN & USAGE** on the left menu.
 
 
@@ -1190,11 +1191,6 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
 
       The **Billing** > **Plan and Usage** option does not appear on the Admin Console (left menu) for a shared account user.
 
-	
-
-		
-
-			
 
 
 ### Deployment Flow
