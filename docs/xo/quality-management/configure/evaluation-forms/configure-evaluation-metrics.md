@@ -67,11 +67,11 @@ This allows the conditional check-in. It is a trigger-based detection, in which 
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
 
-<ul><li><strong>Trigger:</strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>
+<li><strong>Trigger:</strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>
 
-<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</li></ul>
+<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</ul></li>
 
-<ul><li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</li></ul></ul>
+<ul><li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</ul></li>
 </td>
   </tr>
   <tr>
@@ -127,7 +127,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 
 <p><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration).</p>
 
-<p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized. </p>
+<p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized.</p>
 
 
 <li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
@@ -140,7 +140,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.</li>
  
-<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</p></li></ul>
+<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</ul></li>
    </td>
   </tr>
 </table>
