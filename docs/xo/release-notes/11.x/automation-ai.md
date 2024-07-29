@@ -1,14 +1,14 @@
 # Automation AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
-## v11.4.0 July 27, 2024
+
+## v11.4 July 27, 2024
 
 <u> Patch Release </u>
 
-Key features and enhancements included in this release are summarized below.
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
 ### Virtual Assistant
-
 
 #### Timeout Settings Moved to Instance Properties for Service Node
 The timeout settings for the Service Node have been moved from Component Properties to Instance Properties. 
@@ -18,11 +18,7 @@ Key benefits:
 * Increased flexibility: Customize timeout settings for each dialog individually without affecting other tasks using the same Service Node.
 * Improved error handling: The "Jump to Specific Node" option now works more reliably within the current dialog.
 
-
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#instance-properties).
-
-
-
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#instance-properties)
 
 #### Enhanced Debug Logs
 The platform now groups debug logs by user utterance and bot response in a chat-like structure to improve clarity and efficiency in tracing conversation flow for platform users.
@@ -40,7 +36,6 @@ Key benefits:
 * Efficient navigation: Collapsible groups and smooth scrolling for a better overview.
 * Flexible viewing: Filter option for targeted log analysis.
 * Optimized performance: Lazy loading for efficient log rendering.
-
 
 ### Rephrased User Query Details in the Context Object
 
@@ -60,8 +55,7 @@ Key updates:
 
 * New “Conversation History” setting: Indicates the conversation history length - the number of previous messages sent as context to LLM:
 Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings > Conversation History Length`
-
-[Learn more :octicons-arrow-right-24:](../../automation/intelligence/context-object/).
+[Learn more :octicons-arrow-right-24:](../../automation/intelligence/context-object/)
 
 <hr>
 
