@@ -34,14 +34,16 @@ Steps to create a filter:
 <img src="../images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
 4. Select the list of options pertaining to **Queues** or **Agents**, as required.
-5. Click **Save & Apply**.  
-    !!! Note
-    
+5. Click **Save & Apply**.
+
+   !!! Note
+
         Clicking the **Apply** button does not save the filter.
 
 6. Enter the **Filter Name,** and click **Save & Apply**.  
+
     !!! Note
-    
+
         You can turn on the toggle to Make this the default view filter.
 
     <img src="../images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
