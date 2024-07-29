@@ -134,7 +134,7 @@ Similarly, if the number of Cross Talk instances exceeds the no. of instances li
 
 In the <strong>No of Instances</strong> field, enter the maximum allowed Dead Air instances per interaction. 
 
-<strong>Dead Air Metric Qualification</strong>: If the number of dead air instances is lesser than the number of acceptable instances in the metric configuration, the interaction will qualify the metric and will fail against the dead air metric if the no.of instances exceeds the configured limit (an instance will only be accounted as instance of dead air if it exceeds the configured dead air duration) 
+<strong>Dead Air Metric Qualification</strong>: If the number of dead air instances is lesser than the number of acceptable instances in the metric configuration, the interaction will qualify the metric and will fail against the dead air metric if the no.of instances exceeds the configured limit (an instance will only be accounted as instance of dead air if it exceeds the configured dead air duration).
 
 In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction. 
 
@@ -229,7 +229,7 @@ If you select the <strong>First Part of Conversation</strong> or the <strong>Las
 <ul><li><strong> Entire Playbook</strong>: To evaluate adherence across the entire playbook.</li>
 
 <li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.</li>
-<br>
+
 <p>From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:</p>
 
 <li><strong> Steps</strong>: To evaluate adherence to specific steps of the playbook.
