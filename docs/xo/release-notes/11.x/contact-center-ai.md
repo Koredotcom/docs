@@ -13,7 +13,7 @@ Key features and enhancements included in this release are summarized below.
 #### Improved Arrival Summary Placement
 
 When an agent accepts a conversation, the system now automatically generates an arrival summary and inserts it at the bottom of the Bot-User transcript. It helps agents quickly grasp the context of each interaction, thus improving their ability to assist users effectively.
-A loading indicator is displayed for summaries that take time to generate. Additionally, a refresh button is available to retrieve any missing bot/user conversation data, ensuring agents have complete information. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#arrival-summary).
+A loading indicator is displayed for summaries that take time to generate. Additionally, a refresh button is available to retrieve any missing bot/user conversation data, ensuring agents have complete information. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#arrival-summary)
 
 ### Configuration
 
@@ -39,7 +39,7 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 
 * Maintained service quality through skill-based assignments.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#load-balanced-agent-routing).
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#load-balanced-agent-routing)
 
 #### Phone Number Label Display Enhancement
 
@@ -81,7 +81,7 @@ The Campaigns module now supports SMS campaigns, enabling businesses to engage a
 * Improved efficiency through standardized templates.
 * Real-time performance tracking.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md).
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md)
 
 #### Preview Dialer
 
@@ -94,7 +94,7 @@ Agent Console now includes a Preview Dialer for outbound calling campaigns.
 * Agent-Controlled Calls: Agents decide when to initiate each call. It allows preparation for more personalized interactions.
 * Efficient Campaign Management: Assigns call records to available agents, helps optimize agent utilization, and adheres to dialing rules and compliance standards.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#preview-dialer).
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#preview-dialer)
 
 ### Analytics
 
