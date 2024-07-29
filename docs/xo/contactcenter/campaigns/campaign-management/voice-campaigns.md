@@ -137,7 +137,7 @@ Steps to create Voice campaigns:
             * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
 
     * Select the **Priority** from the drop-down list.  
-    <img src="../priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:80%;">
     * Select the **Dialing Mode** from the drop-down list.  
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:80%;">
 
@@ -210,7 +210,7 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.  
 <img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
-A confirmation message is displayed. Click **Stop**.
+A confirmation message is displayed. Click **Stop**.  
 <img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Voice Campaign
