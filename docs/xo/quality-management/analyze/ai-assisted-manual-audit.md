@@ -25,7 +25,7 @@ Each violation is displayed with a timestamp, allowing you to navigate directly 
 
     Violations are applicable only for voice channel interactions, not chat.
 
-<img src="../images/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:50%;">
 
 ## Omission
 
