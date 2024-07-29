@@ -479,6 +479,14 @@ Access to Proactive Web campaigns under Campaigns module
    </td>
 </tr>
 <tr>
+   <td><strong>SMS Campaigns</strong>
+   <br>
+Access to SMS campaigns under the Campaigns module
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
    <td><strong>Direct Outward Dialing</strong>
    <br>
 Users can make direct outward calls
@@ -1015,6 +1023,13 @@ Access to Proactive Web campaigns under Campaigns module
    <td>Full Access</td>
 </tr>
 <tr>
+   <td><strong>SMS Campaigns</strong>
+   <br>
+Access to SMS campaigns under the Campaigns module
+   </td>
+   <td>Full Access</td>
+</tr>
+<tr>
    <td><strong>Direct Outward Dialing</strong>
    <br>
 Users can make direct outward calls
@@ -1539,6 +1554,13 @@ Access to Voice campaigns under Campaigns module
    <td><strong>Proactive Web Campaigns</strong>
    <br>
 Access to Proactive Web campaigns under Campaigns module
+   </td>
+   <td>None</td>
+</tr>
+<tr>
+   <td><strong>SMS Campaigns</strong>
+   <br>
+Access to SMS campaigns under the Campaigns module
    </td>
    <td>None</td>
 </tr>
@@ -2072,6 +2094,13 @@ Access to Proactive Web campaigns under Campaigns module
    <td>Full Access</td>
 </tr>
 <tr>
+   <td><strong>SMS Campaigns</strong>
+   <br>
+Access to SMS campaigns under the Campaigns module
+   </td>
+   <td>Full Access</td>
+</tr>
+<tr>
    <td><strong>Direct Outward Dialing</strong>
    <br>
 Users can make direct outward calls
@@ -2592,6 +2621,13 @@ Access to Voice campaigns under Campaigns module
    <td><strong>Proactive Web Campaigns</strong>
    <br>
 Access to Proactive Web campaigns under Campaigns module
+   </td>
+   <td>None</td>
+</tr>
+<tr>
+   <td><strong>SMS Campaigns</strong>
+   <br>
+Access to SMS campaigns under the Campaigns module
    </td>
    <td>None</td>
 </tr>
@@ -3284,6 +3320,17 @@ Full Access</td>
    <td><strong>Proactive Web Campaigns</strong>
    <br>
 Access to Proactive Web campaigns under Campaigns module
+   </td>
+   <td>View
+   <br>
+None
+<br>
+Full Access</td>
+</tr>
+<tr>
+   <td><strong>SMS Campaigns</strong>
+   <br>
+Access to SMS campaigns under the Campaigns module
    </td>
    <td>View
    <br>

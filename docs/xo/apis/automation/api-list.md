@@ -2,11 +2,7 @@
 
 Following is the list of APIs available from the Kore.ai XO Platform. For details on the API functioning and usage instructions [refer here](https://developer.kore.ai/docs/bots/api-guide/apis/).
 
-These APIs are available for testing in your Postman setup, for configuration details [see here](https://developer.kore.ai/docs/bots/api-guide/api-collection/).
-
 Based on the functionality addressed, the APIs can be categorized as:
-
-
 
 1. APIs related to the Bot Definition functionality, [more](#bot-definition-apis)
 2. APIs related to NLP training, [more](#nlp-training-apis)

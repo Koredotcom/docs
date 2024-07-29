@@ -11,14 +11,14 @@ The key sections of this dashboard include:
 * **Agent Efficacy** – Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
 * **Customer Experience** – Avg. Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
 * **Insights Mining** –  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
-* **Interaction Details** – Date/Time of the session, Call ID, Agent name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
+* **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
 Admins and Supervisors can access the Conversation Intelligence dashboard from **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Intelligence**.  
 <img src="../images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters
 
-You can use the filters to customize the intelligence tab.
+You can use the filters to customize the Intelligence tab.
 
 ### Create a Filter
 
@@ -30,17 +30,20 @@ Steps to create a filter:
 2. Click **+ Add New Filter**.  
 <img src="../images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, select **Queues** or **Agents**. \
+3. On the **New Filter** window, select **Queues** or **Agents**. 
 <img src="../images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
-4. Select the list of options pertaining to **Queues **or** Agents**, as required.
-5. Click **Save & Apply**.  
+4. Select the list of options pertaining to **Queues** or **Agents**, as required.
+5. Click **Save & Apply**.
+   
     !!! Note
-    
+
         Clicking the **Apply** button does not save the filter.
-6. Enter the **Filter Name,** and click **Save & Apply**.  
+
+6. Enter the **Filter Name**, and click **Save & Apply**.  
+
     !!! Note
-    
+
         You can turn on the toggle to Make this the default view filter.
 
     <img src="../images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
@@ -113,7 +116,7 @@ In this section, you can filter data by time range. By default, data is displaye
 ## Channels
 
 You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
-<img src="../analyze/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Center Efficiency
 

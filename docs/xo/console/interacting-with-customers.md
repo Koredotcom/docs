@@ -506,19 +506,6 @@ Click the **Delete** (bin) icon on the bottom left corner of the editor.
 A confirmation message is displayed. Click **Delete**. The email is deleted.
 <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-## Color Codes
-
-Color codes help in easy identification and better readability of conversations on digital channels.
-
-* The blue dot represents a conversation in which an agent is engaged.
-<img src="../images/blue-dot.png" alt="Blue Dot" title="Blue Dot" style="border: 1px solid gray; zoom:80%;">
-
-* The red dot represents an overdue conversation.
-<img src="../images/red-dot.png" alt="Red Dot" title="Red Dot" style="border: 1px solid gray; zoom:80%;">
-
-* New email conversations in the conversations tray.
-<img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:80%;">
-
 ## Add Notes to Interactions
 
 You can add notes on the interaction (customer feedback, key points, next action, suggestions). This section includes any previous notes added by agents while interacting with the same customer.
