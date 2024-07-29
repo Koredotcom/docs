@@ -28,11 +28,13 @@ Key benefits:
 The platform now groups debug logs by user utterance and bot response in a chat-like structure to improve clarity and efficiency in tracing conversation flow for platform users.
 
 Key updates:
+
 * Chat-like interface for intuitive log viewing.
 * Detailed logs displayed on group expansion.
 * Truncated display for lengthy responses with the "Show more" option.
 
 Key benefits:
+
 * Improved readability: Easily follow the conversation flow.
 * Enhanced context: Quickly understand the sequence of events in a conversation.
 * Efficient navigation: Collapsible groups and smooth scrolling for a better overview.

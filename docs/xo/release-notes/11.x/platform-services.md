@@ -12,6 +12,7 @@ Key features and enhancements included in this release are summarized below.
 
 #### OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
 The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix).
+
 * GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
 
@@ -24,17 +25,10 @@ Key updates:
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
 * Detailed usage trends are accessible via the Manage button.
-
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#upgrading-a-standard-plan-to-an-enterprise-custom-plan).
 
-
-
-
 ### Deploy Management
-
-
 #### Import, Export, and Publish GenAI and LLM Settings
-
 
 A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
 
@@ -53,8 +47,6 @@ Key benefits:
 * Ensure seamless operation of runtime features for end-users.
 
 Full vs. Incremental Import:
-
-
 
 * Full Import
     * Deletes existing models and prompts in the target app.
@@ -76,11 +68,6 @@ Backward compatibility:
 
 These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
 
-
-
-
-
-
 ### Channels
 #### SMS Channel Configuration
 
@@ -89,8 +76,6 @@ The Platform now offers SMS channel configuration for various service providers.
 #### Instagram Channel Support
 
 The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md).
-
-
 
 
 ### APIs
@@ -112,18 +97,11 @@ Key benefits:
 * Improved user control: Manage users’ push notification preferences more effectively.
 * Enhanced flexibility: Manage device subscriptions programmatically.
 
-[Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md).
-
-
-
-
 #### Public API for SSO Configuration Management 
 
 The platform has introduced public APIs for managing Single Sign-On (SSO) configurations. This new API complements existing bot creation and publishing APIs, allowing for a more comprehensive automation of account setup processes. It significantly enhances the platform's capabilities for enterprise customers who require frequent audits or automated deployments.
 
 Key updates:
-
-
 
 * Public API for SSO configuration management:
     * Fetch the SSO Meta API: Returns the existing SSO configuration along with the URLs.
@@ -134,14 +112,10 @@ Key updates:
 
 Key benefits: 
 
-
 * Streamlined automation: Customers can now fully integrate SSO configuration into their CI/CD workflows.
 * Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
 * Increased flexibility: Account administrators can programmatically manage SSO settings.
 * Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
-
-[Learn more](https://developer.kore.ai/docs/bots/api-guide/enable-and-manage-sso-configuration-apis/).
-
 
 
 
