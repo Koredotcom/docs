@@ -215,10 +215,8 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.  
 <img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
-
 A confirmation message is displayed. Click **Stop**.  
 <img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
-
 
 ### Edit a Voice Campaign
 
