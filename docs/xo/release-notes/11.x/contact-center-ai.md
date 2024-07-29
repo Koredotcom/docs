@@ -2,6 +2,118 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.4.0 July 27, 2024
+
+<u> Patch Release </u>
+
+Key features and enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Improved Arrival Summary Placement
+
+When an agent accepts a conversation, the system now automatically generates an arrival summary and inserts it at the bottom of the Bot-User transcript. It helps agents quickly grasp the context of each interaction, thus improving their ability to assist users effectively.
+A loading indicator is displayed for summaries that take time to generate. Additionally, a refresh button is available to retrieve any missing bot/user conversation data, ensuring agents have complete information. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
+
+### Configuration
+
+#### Load-Balanced Agent Routing
+
+Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabled functionality that improves task distribution among agents. It enhances operational efficiency by ensuring optimal utilization of available agents while preserving task quality and agent expertise.
+
+**Key aspects**:
+
+* Fair workload distribution: Tasks are matched based on skills, language proficiency, and last assignment time.  
+
+* Prioritization of less busy agents: Agents who haven't received recent tasks are given priority for new assignments.
+
+* Skill-based allocation: Load balancing occurs within the pool of qualified agents, maintaining service quality.
+
+**Key benefits**:
+
+* Reduced wait times for tasks.  
+
+* Improved overall system performance.
+
+* Balanced workload across qualified agents.
+
+* Maintained service quality through skill-based assignments.
+
+#### Phone Number Label Display Enhancement
+
+Contact Center AI now shows labels for SIP-configured phone numbers in two places:
+* Inbound flow attachment section: Labels appear next to phone numbers
+* Phone number configuration page: New "Label" column in the table
+
+**Key benefits**:
+
+* Improved organization: Easier to manage multiple phone numbers.  
+* Enhanced clarity: Easier identification of number purposes.  
+* Better readability: Improved readability in configuration tables.  
+
+This update streamlines phone number management, making it more efficient for agents and administrators to work with multiple SIP-configured numbers.
+
+### Kore Voice Gateway
+
+#### ID R&D integration with Kore Voice Gateway
+
+Kore Voice Gateway can now be integrated with ID R&D.
+
+### Campaigns
+
+#### SMS Campaigns
+
+The Campaigns module now supports SMS campaigns, enabling businesses to engage audiences through text messages. SMS allows businesses to leverage impactful, concise communication, enhancing marketing, informational, and transactional messaging strategies.
+
+**Key capabilities**:
+
+* Campaign Management: Create, edit, clone, and delete campaigns. Also, run, pause, stop, and re-run campaigns.
+* Templates: Pre-define message structure and content to ensure consistency and efficiency in messaging.
+* Dashboard: Track campaign progress and monitor essential metrics.
+
+**Key benefits**:
+
+* Direct audience engagement via mobile phones.
+* Versatile use for promotions, alerts, reminders, and more.
+* Streamlined campaign creation and management.
+* Improved efficiency through standardized templates.
+* Real-time performance tracking.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md).
+
+#### Preview Dialer
+
+Agent Console now includes a Preview Dialer for outbound calling campaigns.  
+<img src="../images/preview-call.png" alt="Preview Dialer" title="Preview Dialer" style="border: 1px solid gray; zoom:70%;">
+
+**Key aspects**:
+
+* Call Information Preview: Agents see recipient details before calling, including name, account history, and other relevant data.
+* Agent-Controlled Calls: Agents decide when to initiate each call. It allows preparation for more personalized interactions.
+* Efficient Campaign Management: Assigns call records to available agents, helps optimize agent utilization, and adheres to dialing rules and compliance standards.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#preview-dialer).
+
+### Analytics
+
+#### Add Alternate Text for JavaScript Messages
+
+By default, a “JavaScript Message” label in displayed in the chat/interactions history for messages written using JavaScript. Now, an Alternate Text can be added to these messages to explain their purpose more clearly. This Alternate Text will be shown in place of the JavaScript label in the interaction history across the application. The “Alternate text” for a JavaScript message can be added using the function `tags.addAlternateText(“value”)`.
+
+#### Interactions Dashboard
+
+##### Improved Search Functionality with Filter Integration
+
+The search functionality has been enhanced to work seamlessly with applied filters.
+
+**Key improvements**:
+
+* Integrated search and filter: Search now considers active filter criteria. Results are limited to conversations matching both search and filter.
+* Increased result relevance: Conversations matching search but not filter are excluded. Ensures consistent results with current filter settings.
+The improvements result in a streamlined user experience, faster access to desired conversations, and reduced time spent on manual filtering of search results.
+
+<hr>
+
 ## v11.3.1 July 13, 2024
 
 <u> Patch Release </u>
