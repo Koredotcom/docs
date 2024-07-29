@@ -6,6 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
+Key features and enhancements included in this release are summarized below.
+
 ### LLM & Generative AI Framework
 
 #### OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
