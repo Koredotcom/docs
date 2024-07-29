@@ -451,7 +451,10 @@ User: What about the interest rates of both loans?
 
 The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
 
-
+#### Conversation History Length
+This setting allows you to specify the number of recent messages sent to the Kore.ai XO GPT model as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. You can set any value greater than 1. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. The default value is 10.
+You can access the Conversation History Length from **Repharse User Query** > **Advanced Settings**.
+<img src="../images/ruq-ad.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
 
 ### Vector Generation
 
