@@ -6999,6 +6999,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../contactcenter/campaigns/campaign-management/sms-campaigns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMS Campaigns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../contactcenter/campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
         
   
@@ -7033,6 +7054,27 @@
   
   <span class="md-ellipsis">
     List Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/campaigns/templates/sms-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
   </span>
   
 
@@ -8431,6 +8473,21 @@
       Rephrase User Query
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Rephrase User Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversation-history-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversation History Length
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -14106,6 +14163,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rephrase User Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conversation-history-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversation History Length
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -14337,6 +14409,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
     <td>❌</td>
     <td>✅*</td>
   </tr>
+
   <tr>
     <td>OpenAI – GPT 3.5 Turbo</td>
     <td>✅</td>
@@ -14360,6 +14433,30 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
     <td>❌</td>
     <td>❌</td>
     <td>✅*</td>
+  </tr>
+    <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
+    <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
   </tr>
   <tr>
     <td>Anthropic – Claude Instant</td>
@@ -14426,13 +14523,13 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 <li><strong>Rephrase</strong>: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.</li>
 </ul>
 <h3 id="answer-generation">Answer Generation<a class="headerlink" href="#answer-generation" title="Permanent link">&para;</a></h3>
-<p>This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. <a href="../../searchai/answer-configuration.md#answers-generation">Learn more</a>.</p>
+<p>This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. <a href="../../searchai/answer-configuration/#answers-generation">Learn more</a>.</p>
 <h3 id="genai-node">GenAI Node<a class="headerlink" href="#genai-node" title="Permanent link">&para;</a></h3>
 <p>When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node allows you to collect Entities from end-users in a free-flowing conversation (in the selected English/Non-English Bot Language) using LLM and Generative AI in the background. You can define the entities to be collected as well as rules &amp; scenarios in English and Non-English Bot languages. You can configure node properties just like any other node. You can also use the GenAI Node across Dialog Tasks.</p>
 <p><a class="glightbox" href="../images/genai-node1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/genai-node1.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"></a> </p>
 <p><strong>Usage</strong></p>
-<p>When creating or editing a Dialog Task that’s created manually or<a href="../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks"> auto-generated</a>, you can find a node called GenAI Node within your nodes list. </p>
-<p>When this feature is disabled, the node is unavailable within the Dialog Builder.<a href="../../automation/use-cases/dialogs/node-types/genai-node.md"> Learn more</a>.</p>
+<p>When creating or editing a Dialog Task that’s created manually or<a href="../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#auto-generated-dialog-tasks"> auto-generated</a>, you can find a node called GenAI Node within your nodes list. </p>
+<p>When this feature is disabled, the node is unavailable within the Dialog Builder.<a href="../../automation/use-cases/dialogs/node-types/genai-node/"> Learn more</a>.</p>
 <h3 id="genai-prompt">GenAI Prompt<a class="headerlink" href="#genai-prompt" title="Permanent link">&para;</a></h3>
 <p>This feature lets you define custom user prompts based on the conversation context and the response from the LLMs. You can define the subsequent conversation flow by selecting a specific AI model, tweaking its settings, and previewing the response for the prompt.</p>
 <p><strong>Usage</strong></p>
@@ -14458,7 +14555,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 <li>When you add custom tags to the <strong>current message</strong>, <strong>user profile</strong>, and <strong>session</strong> under <strong>Instance Properties</strong>, you can build custom profiles for the bot conversation. .</li>
 <li>Configuring node connections on an instance lets you define the connection rules for the conversation using transition conditions. This lets the conversation follow specific paths based on the user’s input.</li>
 </ol>
-<p>If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.<a href="../../automation/use-cases/dialogs/node-types/genai-prompt.md"> Learn more</a>.</p>
+<p>If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.<a href="../../automation/use-cases/dialogs/node-types/genai-prompt/"> Learn more</a>.</p>
 <h3 id="repeat-responses">Repeat Responses<a class="headerlink" href="#repeat-responses" title="Permanent link">&para;</a></h3>
 <p>This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.<a href="../../automation/intelligence/event-handling/#repeat-bot-response-event"> Learn more</a>.</p>
 <h3 id="rephrase-dialog-responses">Rephrase Dialog Responses<a class="headerlink" href="#rephrase-dialog-responses" title="Permanent link">&para;</a></h3>
@@ -14497,6 +14594,10 @@ User: I want to apply for a personal loan.</p>
 Bot: You’re eligible to apply for a home loan as well. You can avail up to 100,000$. 
 User: What about the interest rates of both loans?</p>
 <p>The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?</p>
+<h4 id="conversation-history-length">Conversation History Length<a class="headerlink" href="#conversation-history-length" title="Permanent link">&para;</a></h4>
+<p>This setting allows you to specify the number of recent messages sent to the Kore.ai XO GPT model as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. You can set any value greater than 1. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. The default value is 10.
+You can access the Conversation History Length from <strong>Repharse User Query</strong> &gt; <strong>Advanced Settings</strong>.
+<a class="glightbox" href="../images/ruq-ad.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ruq-ad.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h3 id="vector-generation">Vector Generation<a class="headerlink" href="#vector-generation" title="Permanent link">&para;</a></h3>
 <p>This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.</p>
 <h3 id="zero-shot-ml-model">Zero-shot ML Model<a class="headerlink" href="#zero-shot-ml-model" title="Permanent link">&para;</a></h3>
@@ -14512,7 +14613,7 @@ User: What about the interest rates of both loans?</p>
 <li>Intent names</li>
 </ul>
 <p>The identified intent is then displayed as the matched intent.</p>
-<p>If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.<a href="../../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai"> Learn more</a>.</p>
+<p>If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.<a href="../../automation/natural-language/training/machine-learning-engine/#zero-shot-learning-model-with-openai"> Learn more</a>.</p>
 <h3 id="few-shot-ml-model">Few-shot ML Model<a class="headerlink" href="#few-shot-ml-model" title="Permanent link">&para;</a></h3>
 <p>The Few-shot model uses Kore Ai’s hosted embeddings to train virtual assistants based on intent names and training utterances. The model identifies the intents based on semantic similarity between user and training utterances.</p>
 <div class="admonition note">
@@ -14527,7 +14628,7 @@ User: What about the interest rates of both loans?</p>
 <li>User utterance input</li>
 <li>Intent names</li>
 </ul>
-<p>If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.<a href="../../automation/natural-language/training/machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings"> Learn more</a>.</p>
+<p>If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.<a href="../../automation/natural-language/training/machine-learning-engine/#few-shot-model-koreai-hosted-embeddings"> Learn more</a>.</p>
 
 
 

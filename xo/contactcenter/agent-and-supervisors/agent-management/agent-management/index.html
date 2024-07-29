@@ -6482,6 +6482,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#load-balanced-agent-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load-Balanced Agent Routing
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7408,6 +7417,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../campaigns/campaign-management/sms-campaigns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMS Campaigns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
         
   
@@ -7442,6 +7472,27 @@
   
   <span class="md-ellipsis">
     List Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../campaigns/templates/sms-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
   </span>
   
 
@@ -14503,6 +14554,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#load-balanced-agent-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load-Balanced Agent Routing
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -14586,7 +14646,7 @@
 <li>In the <strong>Edit Group</strong> window, click the <strong>Delete Agent Group</strong> icon at the bottom left.
 <a class="glightbox" href="../images/delete-button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ol>
-<h2 id="agent-status-management"><strong>Agent Status Management</strong><a class="headerlink" href="#agent-status-management" title="Permanent link">&para;</a></h2>
+<h2 id="agent-status-management">Agent Status Management<a class="headerlink" href="#agent-status-management" title="Permanent link">&para;</a></h2>
 <p>This feature lets you display various statuses of an Agent – such as available, offline, busy, or away – along with a brief description for each status. You can add new statuses and edit or delete the existing ones.</p>
 <h3 id="the-agent-status-live-board">The Agent Status Live Board<a class="headerlink" href="#the-agent-status-live-board" title="Permanent link">&para;</a></h3>
 <p>You can find the <em>Agent Status</em> section by going to <strong>Contact Center &gt; Agent Management &gt; AGENT &amp; SUPERVISORS</strong>.</p>
@@ -14685,19 +14745,27 @@ A confirmation message is displayed.<br />
 Once enabled, the Login Prep becomes the default status for every new login for the agent. <a href="../../../console/interacting-with-customers/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled">Learn more</a>.</p>
 </li>
 </ol>
-<h2 id="agent-settings"><strong>Agent Settings</strong><a class="headerlink" href="#agent-settings" title="Permanent link">&para;</a></h2>
+<h2 id="agent-settings">Agent Settings<a class="headerlink" href="#agent-settings" title="Permanent link">&para;</a></h2>
 <p>Agent Settings let you configure the settings that apply to all agents across Contact Center.</p>
-<p>Go to <strong>Contact Center &gt; AGENT &amp; SUPERVISORS &gt; Agent Management &gt; Agent Settings</strong> to view and edit the following:</p>
+<p>Go to <strong>Contact Center AI</strong> &gt; <strong>AGENT &amp; SUPERVISORS</strong> &gt; <strong>Agent Management</strong> &gt; <strong>Agent Settings</strong> to view and edit the following:</p>
 <ol>
 <li><strong>Answer Mode</strong>: These settings let you define how conversations get answered on each channel (Digital – Chats, and Emails, as well as Voice).</li>
 <li><strong>Conversation Status Control</strong>: These options let you define how conversation status behaves and the messages triggered by status changes.</li>
 <li><strong>Call Recording Control</strong>: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Agents and Virtual Assistants to Pause/Resume call recording.</li>
 <li><strong>Transfers</strong>: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.</li>
 <li><strong>Skill Modification</strong>: You can decide if the agents can modify skills attached to a conversation.</li>
-<li><strong>Auto Logout</strong>: Administrators can configure this setting to specify a period of inactivity that automatically logs out agents.</li>
+<li>
+<p><strong>Auto Logout</strong>: Administrators can configure this setting to specify a period of inactivity that automatically logs out agents.</p>
+</li>
+<li>
+<p><strong>Snooze</strong>: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.</p>
+</li>
+<li>
+<p><strong>Load Balanced Agent Routing</strong>: This setting ensures a fair distribution of tasks among available agents with the necessary skills and language proficiency.</p>
+</li>
 </ol>
-<p>These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options. 
-<a class="glightbox" href="../images/agent-settings-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.<br />
+<a class="glightbox" href="../images/agent-settings-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h2 id="answer-mode">Answer Mode<a class="headerlink" href="#answer-mode" title="Permanent link">&para;</a></h2>
 <h3 id="voice">Voice<a class="headerlink" href="#voice" title="Permanent link">&para;</a></h3>
 <ul>
@@ -14987,6 +15055,9 @@ See the tables in <a href="#conversation-statuses-by-channel-live-chat-messaging
 <p>This feature allows agents to temporarily pause conversations that are awaiting a response from the customer or require any necessary action from the agent.</p>
 <p>By default, the snooze functionality is disabled. Administrators can turn on the <strong>Snooze</strong> toggle to enable the functionality.<br />
 <a class="glightbox" href="../images/enable-snooze.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;"></a></p>
+<h2 id="load-balanced-agent-routing">Load-Balanced Agent Routing<a class="headerlink" href="#load-balanced-agent-routing" title="Permanent link">&para;</a></h2>
+<p>By default, the load-balanced agent routing functionality is disabled. Administrators can turn on the toggle to enable the functionality allowing the distribution of tasks more evenly and reducing the chances of agent overload, leading to better focus and potentially faster task completion times, decreasing wait times for tasks. and improve overall system performance.<br />
+<a class="glightbox" href="../images/load-balanced-agent-routing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/load-balanced-agent-routing.png" alt="Load-Balanced Agent Routing" title="Load-Balanced Agent Routing" style="border: 1px solid gray; zoom:80%;"></a></p>
 
 
 

@@ -7022,6 +7022,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../contactcenter/campaigns/campaign-management/sms-campaigns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMS Campaigns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../contactcenter/campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
         
   
@@ -7056,6 +7077,27 @@
   
   <span class="md-ellipsis">
     List Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contactcenter/campaigns/templates/sms-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
   </span>
   
 
@@ -13878,8 +13920,8 @@
 
 
 <h1 id="evaluation-metrics">Evaluation Metrics<a class="headerlink" href="#evaluation-metrics" title="Permanent link">&para;</a></h1>
-<p>This phase is entirely based on individual questions. Based on the required criteria for evaluation, users can create Evaluation Metrics from the Evaluation Forms section of the Quality Management using different measurement types.</p>
-<p>The users can access the Evaluation Metrics by going to <strong>Contact Center AI</strong> &gt; <strong>Quality Management</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Forms</strong> &gt; <strong>Evaluation Metrics</strong>.<br />
+<p>This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.</p>
+<p>You can access the Evaluation Metrics by going to <strong>Contact Center AI</strong> &gt; <strong>Quality Management</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Forms</strong> &gt; <strong>Evaluation Metrics</strong>.<br />
 <a class="glightbox" href="../images/eva-metrics.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;"></a></p>
 <p>The Evaluation Metrics has the following options:</p>
 <ul>
@@ -13888,11 +13930,10 @@
 <li><strong>Evaluation Forms</strong>: Shows the Evaluation Forms used for configuring and assigning the evaluation metrics to different channels and queues.</li>
 <li><strong>Edit</strong>: Allows you to edit or update the existing Evaluation Metrics.</li>
 <li><strong>Delete</strong>: Allows you to select and delete any Evaluation Metrics shown on the Evaluation Forms page.</li>
-<li><strong>Ascend</strong>/<strong>Descend Order</strong>: Provides a quick ascending and descending arrow mark view option for all the existing and newly added Channels and Queues of Evaluation Metrics (Configure and Assign).</li>
 <li><strong>Search</strong>: Provides a quick search option to view and update the Evaluation Metrics by name only.</li>
 </ul>
 <h2 id="add-new-evaluation-metrics">Add New Evaluation Metrics<a class="headerlink" href="#add-new-evaluation-metrics" title="Permanent link">&para;</a></h2>
-<p>The users can access the Evaluation Metrics by going to <strong>Contact Center AI</strong> &gt; <strong>Quality Management</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Metrics</strong> &gt; <strong>New Evaluation Metrics</strong>.  </p>
+<p>You can access the Evaluation Metrics by going to <strong>Contact Center AI</strong> &gt; <strong>Quality Management</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Metrics</strong> &gt; <strong>New Evaluation Metrics</strong>.  </p>
 <p>Steps to create New Evaluation Metrics:</p>
 <ol>
 <li>
@@ -13944,48 +13985,33 @@ This allows the conditional check-in. It is a trigger-based detection, in which 
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
 
-<ul><li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>  
 
-<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</li>
+<li><strong>Trigger:</strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>
 
-<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</li></ul>
-</ul>
-   </td>
+<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</ul></li>
+
+<ul><li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</ul></li>
+</td>
   </tr>
   <tr>
    <td><strong>Answer</strong>
-   <td>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the set up time.
-In this, you can enter or select more than one expected answer using generative AI having different utterances matching your question. In addition, you have the option to delete the added answers.
-If it is Static, then you need to define a similar percentage for the metric based on the defined use case and attribute.
+   <td><p>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the set up time. </p>
+
+   In this, you can enter or select more than one expected answer using generative AI having different utterances matching your question. In addition, you have the option to delete the added answers. 
+
+   If it is Static, then you need to define a similar percentage for the metric based on the defined use case and attribute.
 <ul>
 
 <li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. <em>Whether it is Static or Dynamic, you can configure the expected Similarity threshold.</em>
-   For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Count Type </strong>
-   </td>
-   <td>Provides the following two options based on the Adherence Type is selected:
-<ul>
-<li><strong>Entire Conversation</strong>: This allows you to check for adherence at different points of conversation. It does not matter where the agent wants to check adherence throughout the conversation.
-</li>
-<li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.
-</li>
-<ul><li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
-   If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
-</li>
 
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.</li>  
-<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.</li>
-</ul>  
+For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+
+</li>
 </ul>
-  </td>
+   </td>
   </tr>
   <tr>
-   <td><strong>Agent Attribute (Optional)</strong>
+  <td><strong>Agent Attribute (Optional)</strong>
    </td>
    <td>Provides an evaluation metric, which you can assign to only one agent attribute.
    </td>
@@ -14000,7 +14026,7 @@ If it is Static, then you need to define a similar percentage for the metric bas
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>By Speech: </strong><strong>Configures a metric based on speech attributes like dead air and speaking rate. </strong>
+   <td colspan="2" ><strong>By Speech</strong>: Configures a metric based on speech attributes like dead air and speaking rate. 
    </td>
   </tr>
   <tr>
@@ -14015,15 +14041,25 @@ If it is Static, then you need to define a similar percentage for the metric bas
    <td>Provides the following Speech Type options to select:
 <ul>
 
-<li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail.
+<li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail. By default, the Cross Talk duration is two seconds. But you can customize the configuration instances limit and the Cross Talk duration combination. 
 
-<li><strong>Dead Air</strong>: Defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. For example, the minimum dead air time is 1 second, with a maximum limit of 300 seconds. 
+<li><p>In the <strong>No of Instances</strong> field, enter the minimum allowed Cross Talk instances per second.</p></li>
 
-In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.
+<p><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration).</p>
 
-<li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
+<p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized.</p>
 
-<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</li></ul>
+
+<li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
+
+<p><strong>Dead Air Metric Qualification</strong>: If the number of dead air instances is lesser than the number of acceptable instances in the metric configuration, the interaction will qualify the metric and will fail against the dead air metric if the no.of instances exceeds the configured limit (an instance will only be accounted as instance of dead air if it exceeds the configured dead air duration).</p>
+
+<ul><li>In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.</ul></li>
+
+<li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.</li>
+
+<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</ul></li>
+
    </td>
   </tr>
 </table>
@@ -14103,7 +14139,6 @@ If you select the <strong>First Part of Conversation</strong> or the <strong>Las
    </td>
    <td>Select a Playbook Name from the drop-down list, from which the metric should evaluate adherence.
    </td>
-  </tr>
   <tr>
    <td><strong>Adherence Type</strong>
    </td><td>
@@ -14113,7 +14148,7 @@ If you select the <strong>First Part of Conversation</strong> or the <strong>Las
 <ul><li><strong> Entire Playbook</strong>: To evaluate adherence across the entire playbook.</li>
 
 <li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.</li>
-<br>
+
 <p>From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:</p>
 
 <li><strong> Steps</strong>: To evaluate adherence to specific steps of the playbook.

@@ -7235,6 +7235,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../contactcenter/campaigns/campaign-management/sms-campaigns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMS Campaigns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../contactcenter/campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
         
   
@@ -7269,6 +7290,27 @@
   
   <span class="md-ellipsis">
     List Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contactcenter/campaigns/templates/sms-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
   </span>
   
 
@@ -14237,23 +14279,15 @@
 </ol>
 </li>
 <li>
-<p>Under <strong>Advanced Controls</strong>, select the maximum wait time for the <strong>Timeout</strong> for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:</p>
-<ol>
-<li><strong>Timeout(Seconds)</strong>: Select the maximum wait time from the dropdown list. The timeout range can be any value between <strong>1 Second</strong> to <strong>20 Seconds</strong> for <em>Standard</em> accounts, and between <strong>1 Second</strong> to <strong>30 Seconds</strong> for <em>Enterprise accounts</em>. The default value is 5 Seconds.</li>
-<li>
-<p><strong>Timeout error handling</strong>: Choose how the bot should respond when the timeout occurs.</p>
-<ul>
-<li><strong>Close the Task and trigger Task Execution Failure Event</strong>, or</li>
-<li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.</li>
-</ul>
-<p><a class="glightbox" href="../images/service-node-img5-timeout-error-handling.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;"></a></p>
-</li>
-</ol>
-</li>
-<li>
 <p>In the <strong>Variable Namespaces</strong> section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to <a href="../../../../../app-settings/managing-namespace" target="_blank">Managing Namespace</a>.</p>
 </li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Post v11.3 release:<br />
+ 1.  <strong>Service Call Timeout</strong> and <strong>Timeout Error Handling Behavior</strong> settings have been moved from Component Properties to Instance Properties within the Service Node.<br />
+ 2.  The modifications made are exclusive to the particular dialog task and will not impact any other dialog tasks utilizing the same Service Node.</p>
+</div>
 <h4 id="pre-processor-script">Pre-processor Script<a class="headerlink" href="#pre-processor-script" title="Permanent link">&para;</a></h4>
 <p>The Pre-processor Script helps execute a custom JavaScript code within the Service Node to manipulate existing values or set new ones within the context and pass the input parameters dynamically for executing an API call using the Service Node. It works similarly to the Script Node. <a href="#configure-the-node">Learn more</a>.</p>
 <p>With the Pre-processor Script, the Platform does not have to process additional Script nodes to execute a single service node.</p>
@@ -14290,6 +14324,20 @@
 <p>Use the Instance Properties to define any user tags that you want to set.</p>
 <ol>
 <li>On the Service node properties panel, click the <strong>Instance Properties</strong> tab.</li>
+<li>
+<p>Under <strong>Advanced Controls</strong>, select the maximum wait time for the <strong>Timeout</strong> for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:</p>
+<ol>
+<li><strong>Timeout(Seconds)</strong>: Select the maximum wait time from the dropdown list. The timeout range can be any value between <strong>1 Second</strong> to <strong>20 Seconds</strong> for <em>Standard</em> accounts, and between <strong>1 Second</strong> to <strong>30 Seconds</strong> for <em>Enterprise accounts</em>. The default value is 5 Seconds.</li>
+<li>
+<p><strong>Timeout error handling</strong>: Choose how the bot should respond when the timeout occurs.</p>
+<ul>
+<li><strong>Close the Task and trigger Task Execution Failure Event</strong>, or</li>
+<li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.</li>
+</ul>
+<p><a class="glightbox" href="../images/service-node-img5-timeout-error-handling.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;"></a></p>
+</li>
+</ol>
+</li>
 <li>
 <p>Under the <strong>Custom Tags</strong> section, add tags to build custom profiles of your VA’s conversations. <a href="../../../../../analytics/automation/custom-dashboard/custom-meta-tags" target="_blank">Click here for more</a>.</p>
 <p><a class="glightbox" href="../images/service-node-img8-instance-properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img8-instance-properties.png" alt="Service node - Instance properties" title="Service node - Instance properties" style="border:1px solid gray;zoom:70%;"></a></p>

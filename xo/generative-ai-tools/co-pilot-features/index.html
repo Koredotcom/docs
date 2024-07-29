@@ -6999,6 +6999,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../contactcenter/campaigns/campaign-management/sms-campaigns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMS Campaigns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../contactcenter/campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
         
   
@@ -7033,6 +7054,27 @@
   
   <span class="md-ellipsis">
     List Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/campaigns/templates/sms-templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
   </span>
   
 
@@ -14331,6 +14373,28 @@
     <td>✅</td>
     <td>✅</td>
   </tr>
+   <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+   <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
   <tr>
     <td>Anthropic – Claude Instant</td>
     <td>✅</td>
@@ -14442,7 +14506,7 @@
 </ul>
 </li>
 </ol>
-<p>If the feature is disabled, the Platform doesn’t display the Generative AI suggestions icon and the suggestions themselves.<a href="../../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#generated-user-response-suggestions"> Learn more.</a></p>
+<p>If the feature is disabled, the Platform doesn’t display the Generative AI suggestions icon and the suggestions themselves.<a href="../../automation/testing/regression-testing/conversation-testing/create-a-test-suite/#generated-user-response-suggestions"> Learn more.</a></p>
 <h3 id="conversation-summarization">Conversation Summarization<a class="headerlink" href="#conversation-summarization" title="Permanent link">&para;</a></h3>
 <p>This feature generates concise, natural language summaries of interactions between the virtual assistant, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Companies can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations – without having to read lengthy transaction histories. It is pre-integrated with Kore.ai’s Contact Center platform. It is also extensible to third-party applications via API integration.</p>
 <div class="admonition note">
@@ -14455,11 +14519,11 @@
 <p>An example of the usage: When Conversation Summary is enabled and the conversation is transferred to an agent in SmartAssist, the Conversation Summary is displayed on the Agent Console, as shown in the screenshot below.</p>
 <p><a class="glightbox" href="../images/conversation-summary.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/conversation-summary.png" alt="Conversation Summary" title="Conversation Summary" style="border: 1px solid gray; zoom:70%;"></a></p>
 <p><strong>Usage</strong></p>
-<p>The<a href="../../apis/automation/conversation-summary.md"> Conversation Summary</a> public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.</p>
+<p>The<a href="../../apis/automation/conversation-summary/"> Conversation Summary</a> public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.</p>
 <p><strong>Scenario 2</strong></p>
 <p>When closing a conversation request, contact centers require an agent to summarize the customer interaction and context in their closing notes to confirm that the issue has been resolved effectively. Closing notes help document the interactions, provide context for future interactions, support quality assurance efforts, and serve as references to deliver effective customer service.</p>
 <p><strong>Usage</strong> </p>
-<p>The system uses the<a href="../../apis/automation/conversation-summary.md."> Conversation Summary</a> public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.</p>
+<p>The system uses the<a href="../../apis/automation/conversation-summary/"> Conversation Summary</a> public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.</p>
 <h3 id="generating-opposite-utterance-suggestions">Generating Opposite Utterance Suggestions<a class="headerlink" href="#generating-opposite-utterance-suggestions" title="Permanent link">&para;</a></h3>
 <p>Use LLM models for generating opposite utterances during design time.</p>
 <h3 id="generating-similar-answer-suggestions">Generating Similar Answer Suggestions<a class="headerlink" href="#generating-similar-answer-suggestions" title="Permanent link">&para;</a></h3>
@@ -14485,7 +14549,7 @@
 </ul>
 </li>
 </ol>
-<p>If this feature is disabled, you will not have the option to generate test cases during batch testing.<a href="../../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically"> Learn more.</a></p>
+<p>If this feature is disabled, you will not have the option to generate test cases during batch testing.<a href="../../automation/testing/regression-testing/batch-testing/#generating-test-cases-automatically"> Learn more.</a></p>
 <h3 id="training-utterance-suggestions">Training Utterance Suggestions<a class="headerlink" href="#training-utterance-suggestions" title="Permanent link">&para;</a></h3>
 <p>This feature generates a list of suggested training utterances and NER annotations based on the selected NLU language for each intent description and Dialog Flow, eliminating the need for manual creation.</p>
 <p><a class="glightbox" href="../images/cpf(3).gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/cpf(3).gif" alt="Training Utterance Suggestions" title="Training Utterance Suggestions" style="border: 1px solid gray; zoom:70%;"></a></p>
@@ -14499,14 +14563,14 @@
 <li>Different scenarios for training utterances based on entities, a combination of entities, structurally different utterances, etc.</li>
 </ol>
 <p>You can add/delete the suggested training utterances from the list or generate more suggestions.</p>
-<p>If this feature is disabled, you won’t see the Suggestions tab on the training page.<a href="../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#Automatically_Generate_Utterance_Suggestions"> Learn more.</a></p>
+<p>If this feature is disabled, you won’t see the Suggestions tab on the training page.<a href="../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#Automatically_Generate_Utterance_Suggestions"> Learn more.</a></p>
 <h3 id="use-case-suggestions">Use Case Suggestions<a class="headerlink" href="#use-case-suggestions" title="Permanent link">&para;</a></h3>
 <p>In the standard Virtual Assistant creation journey, use case suggestions help link the standard bot to a business scenario. Based on the selected use case, the system identifies and creates specific dialog tasks or interactions that the virtual assistant should be able to handle.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This feature is only available if <strong>Default Language</strong> is set to English.</p>
 </div>
-<p>Generating Use Cases automatically creates up to 30 customizable<a href="../../automation/use-cases/dialogs/dialog-tasks-overview.md"> Dialog Tasks</a> tailored to specific use cases. This streamlines the development process, as developers won’t need to manually create each interaction from scratch.</p>
+<p>Generating Use Cases automatically creates up to 30 customizable<a href="../../automation/use-cases/dialogs/dialog-tasks-overview/"> Dialog Tasks</a> tailored to specific use cases. This streamlines the development process, as developers won’t need to manually create each interaction from scratch.</p>
 <p>LLM and Generative AI help generate accurate suggestions automatically without configuring any LLM settings for this feature. Providing a detailed bot description is crucial for the effective functioning of this feature. The more information you provide about the virtual assistant’s intended purpose and capabilities, the better the generated use case suggestions will be.</p>
 <p><strong>Usage</strong></p>
 <ol>
@@ -14527,7 +14591,7 @@
 <p>The user selects the relevant use cases from the suggestions to create and configure the VA accordingly.</p>
 </li>
 </ol>
-<p>If you select Create without use cases when creating a bot, the system won’t provide use case suggestions for VA creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.<a href="../../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant"> Learn more</a>.</p>
+<p>If you select Create without use cases when creating a bot, the system won’t provide use case suggestions for VA creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.<a href="../../getting-started/building-a-virtual-assistant/"> Learn more</a>.</p>
 
 
 
