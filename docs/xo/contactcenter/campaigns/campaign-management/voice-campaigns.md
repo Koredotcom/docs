@@ -119,7 +119,7 @@ A campaign automatically ends once all numbers are connected. If a call is not c
 Steps to create Voice campaigns:
 
 1. On the **Voice** tab, click **+ New Campaign**.  
-<img src="../images/new-campaign-button.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new-campaign-button-voice.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
     * **Campaign Name**: Enter a name for the campaign.  
