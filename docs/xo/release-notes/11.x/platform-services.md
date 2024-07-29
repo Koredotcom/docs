@@ -6,6 +6,56 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
+### Admin Console
+
+#### Usage Information for Enterprise Accounts
+Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
+Key updates:
+* The new Billing menu in the Admin Console left navigation.
+* Combined XO10 and XO11 usage statistics on a single page.
+* Detailed usage trends are accessible via the Manage button.  [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#navigating-to-plan-and-usage-1).
+
+### Deploy Management
+
+#### Import, Export, and Publish GenAI and LLM Settings
+
+A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
+
+The setting includes:
+
+* Integrations
+* Prompts and Requests Library
+* Feature Mappings
+* Guardrails (for v11 only)
+
+Key benefits:
+
+* Deploy GenAI and LLM features across multiple bots.
+* Enhance flexibility in managing GenAI-related settings.
+* Ensure seamless operation of runtime features for end-users.
+
+Full vs. Incremental Import:
+
+* Full Import
+    * Deletes existing models and prompts in the target app.
+    * Overwrites with models, prompts, and GenAI features from the import file.
+    * Retains model configurations if a model exists in both source and target
+    * Replaces all feature mappings, custom instructions, and guardrails.
+* Incremental Import 
+    * Keeps existing prompts, only adds new ones.
+    * Replaces all feature mappings, custom instructions, and guardrails.
+* Both import types:
+    * Preserve existing integrations.
+    * Import XO-GPT integration as-is.
+    * Enable imported features with warnings.
+    * Handle "Azure Open AI by Kore.ai" integration based on token status.
+
+Backward compatibility:
+
+* Existing bots in the Configured state are copied to the Published state.
+
+These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
+
 ### Channels
 
 #### SMS Channel Configuration
