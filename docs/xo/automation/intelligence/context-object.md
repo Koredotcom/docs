@@ -330,6 +330,25 @@ In the following code example, the response from a Service node is displayed to 
 For example, <code>context.customerId</code>
    </td>
   </tr>
+  <tr>
+   <td>UserQuery
+   </td>
+   <td>Dialog
+   </td>
+   <td>Repharse user query.
+   </td>
+   <td><strong>Syntax:</strong> <code>context.UserQuery : {
+      	originalUserQuery : < original user input >,
+         rephrasedUserQuery : < rephrase user query >
+}
+</code>
+<p>
+For example, <code>context.UserQuery{
+"originalUserQuery": "How about Orlando?",
+"rephrasedUserQuery": "How about the weather in Orlando?"
+}</code>
+   </td>
+  </tr>
 </table>
 
 **Sample Context Object**

@@ -2,6 +2,115 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.4 July 27, 2024
+
+<u> Patch Release </u>
+
+### Admin Console
+#### Usage Information for Enterprise Accounts
+
+Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
+Key updates:
+
+* The new Billing menu in the Admin Console left navigation.
+* Combined XO10 and XO11 usage statistics on a single page.
+* Detailed usage trends are accessible via the Manage button.  
+
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#navigating-to-plan-and-usage-1)
+
+
+### Deploy Management
+
+#### Import, Export, and Publish GenAI and LLM Settings
+
+A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
+
+The setting includes:
+
+* Integrations
+* Prompts and Requests Library
+* Feature Mappings
+* Guardrails (for v11 only)
+
+Key benefits:
+
+* Deploy GenAI and LLM features across multiple bots.
+* Enhance flexibility in managing GenAI-related settings.
+* Ensure seamless operation of runtime features for end-users.
+
+Full vs. Incremental Import:
+
+* Full Import
+    * Deletes existing models and prompts in the target app.
+    * Overwrites with models, prompts, and GenAI features from the import file.
+    * Retains model configurations if a model exists in both source and target
+    * Replaces all feature mappings, custom instructions, and guardrails.
+* Incremental Import 
+    * Keeps existing prompts, only adds new ones.
+    * Replaces all feature mappings, custom instructions, and guardrails.
+* Both import types:
+    * Preserve existing integrations.
+    * Import XO-GPT integration as-is.
+    * Enable imported features with warnings.
+    * Handle "Azure Open AI by Kore.ai" integration based on token status.
+
+Backward compatibility:
+
+* Existing bots in the Configured state are copied to the Published state.
+
+These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
+
+### Channels
+
+#### SMS Channel Configuration
+
+The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md)
+
+#### Instagram Channel Support
+
+The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md)
+
+### APIs
+
+#### SDK Push Notifications Management APIs
+
+The platform has introduced a new set of SDK Notifications APIs to enhance control over push notifications for mobile devices using the Web/Mobile SDK channel.
+
+Key updates:
+
+* A new API scope is added to the Bot builder - "SDKPushNotification”.
+* Three new APIs have been introduced:
+    * DeviceSubscription API: Subscribe the device to SDK push messages and receive subscription status and device details.
+    * Subscribed User Devices API: Lists all the mobile devices subscribed to SDK push notifications and their OS types.
+    * DeviceUnsubscription API: Unsubscribes SDK push messages for specific or all devices of a user.
+
+Key benefits:
+
+* Improved user control: Manage users’ push notification preferences more effectively.
+* Enhanced flexibility: Manage device subscriptions programmatically.
+
+#### Public API for SSO Configuration Management 
+
+The platform has introduced public APIs for managing Single Sign-On (SSO) configurations. This new API complements existing bot creation and publishing APIs, allowing for a more comprehensive automation of account setup processes. It significantly enhances the platform's capabilities for enterprise customers who require frequent audits or automated deployments.
+
+Key updates:
+
+* Public API for SSO configuration management:
+    * Fetch the SSO Meta API: Returns the existing SSO configuration along with the URLs.
+    * Enable SSO API: Enables the SSO configuration for an account.
+    * Disable SSO API: Dsables the SSO configuration for an account.
+    * Update the SSO Configuration API: Updates the SSO configuration for an account.
+* Support for SAML protocol.
+
+Key benefits: 
+
+* Streamlined automation: Customers can now fully integrate SSO configuration into their CI/CD workflows.
+* Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
+* Increased flexibility: Account administrators can programmatically manage SSO settings.
+* Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
+
+<hr>
+
 ## v11.3.1 July 13, 2024
 
 <u> Patch Release </u>
