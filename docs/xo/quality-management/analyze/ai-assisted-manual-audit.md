@@ -47,7 +47,7 @@ The Playbook section of the interaction audit screen enables evaluators to asses
 * Missing steps (Playbook steps not completed during the interaction)
 This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
   
-<img src="../analyze/images/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
 
 ## Comments
 
