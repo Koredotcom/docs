@@ -30,6 +30,7 @@ Contact Center AI now offers Load-Balanced Agent Routing, an administrator-enabl
 * Skill-based allocation: Load balancing occurs within the pool of qualified agents, maintaining service quality.
 
 **Key benefits**:
+
 * Reduced wait times for tasks.  
 
 * Improved overall system performance.
