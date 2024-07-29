@@ -2,32 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
-## v11.4.0 July 27, 2024
+## v11.4 July 27, 2024
 
 <u> Patch Release </u>
 
-Key features and enhancements included in this release are summarized below.
-
-### LLM & Generative AI Framework
-
-#### OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
-The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix).
-
-* GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
-* GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
-
-###  Admin Console
+### Admin Console
 #### Usage Information for Enterprise Accounts
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
 Key updates:
-  
+
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
-* Detailed usage trends are accessible via the Manage button.
-[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#upgrading-a-standard-plan-to-an-enterprise-custom-plan).
+* Detailed usage trends are accessible via the Manage button.  
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console-plan-and-usage)
+
 
 ### Deploy Management
+
 #### Import, Export, and Publish GenAI and LLM Settings
 
 A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
@@ -40,7 +32,6 @@ The setting includes:
 * Guardrails (for v11 only)
 
 Key benefits:
-
 
 * Deploy GenAI and LLM features across multiple bots.
 * Enhance flexibility in managing GenAI-related settings.
@@ -69,14 +60,14 @@ Backward compatibility:
 These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
 
 ### Channels
+
 #### SMS Channel Configuration
 
-The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md).
+The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md)
 
 #### Instagram Channel Support
 
-The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md).
-
+The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md)
 
 ### APIs
 
@@ -116,8 +107,6 @@ Key benefits:
 * Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
 * Increased flexibility: Account administrators can programmatically manage SSO settings.
 * Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
-
-
 
 <hr>
 

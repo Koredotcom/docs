@@ -31,6 +31,7 @@ Steps to enable the Conversation Intelligence:
 
 2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details.  
 <img src="../images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
+
 Steps to disable the Conversation Intelligence Dashboard:
 
 1. Disable the **Conversation Intelligence Dashboard** toggle. The following dialog box appears.  

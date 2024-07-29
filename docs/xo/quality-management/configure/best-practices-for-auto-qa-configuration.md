@@ -46,16 +46,14 @@ The following table describes the best practices that are based on by Question m
 
 <li>Include when necessary, but be aware they can impact semantic adherence.
 
-<li>Implement moderate thresholds (for example, 50-60% match) to accommodate variations
+<li>Implement moderate thresholds (for example, 50-60% match) to accommodate variations <strong>Agent Names</strong>.
 
-<strong>Agent Names</strong>
 <ul>
 
 <li>Minimize the use of specific agent names in configurations.
 
-<li>Use [Agent Name] as a placeholder where the agent references themself or any other agents.
+<li>Use [Agent Name] as a placeholder where the agent references themself or any other agents <strong>Product Names and Model IDs</strong>.
 
-<strong>Product Names and Model IDs</strong>
 <ul>
 
 <li>Avoid including specific model identifiers unless necessary.
@@ -83,7 +81,11 @@ The following table describes the best practices that are based on by Question m
 
 <li>Configurations with product specifics: 50-60% match.
 <br>
-<strong>Note</strong>: Adjust these thresholds based on your specific use case and requirements.
+
+!!! Note
+
+        Adjust these thresholds based on your specific use case and requirements.
+
 </li>
 </ul>
    </td>
