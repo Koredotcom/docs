@@ -39,7 +39,7 @@ Steps to create a filter:
     !!! Note
 
         Clicking the **Apply** button does not save the filter.
-        
+
 6. Enter the **Filter Name**, and click **Save & Apply**.  
 
     !!! Note
@@ -116,7 +116,7 @@ In this section, you can filter data by time range. By default, data is displaye
 ## Channels
 
 You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
-<img src="../analyze/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Center Efficiency
 
