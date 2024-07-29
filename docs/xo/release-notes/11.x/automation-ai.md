@@ -18,6 +18,11 @@ Key benefits:
 * Increased flexibility: Customize timeout settings for each dialog individually without affecting other tasks using the same Service Node.
 * Improved error handling: The "Jump to Specific Node" option now works more reliably within the current dialog.
 
+Backward compatibility:
+
+* Existing service nodes retain their current timeout behavior while the timeout settings are moved to the Instance Properties. 
+
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#instance-properties)
 
 #### Enhanced Debug Logs
@@ -54,7 +59,8 @@ Key updates:
     ```
 
 * New “Conversation History” setting: Indicates the conversation history length - the number of previous messages sent as context to LLM:
-Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings > Conversation History Length`
+Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings > Conversation History Length.
+
 [Learn more :octicons-arrow-right-24:](../../automation/intelligence/context-object/)
 
 <hr>
