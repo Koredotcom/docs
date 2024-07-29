@@ -2,11 +2,11 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
-## v11.4.0 July 27, 2024
+## v11.4 July 27, 2024
 
 <u> Patch Release </u>
 
-Key features and enhancements included in this release are summarized below.
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
 ### LLM & Generative AI Framework
 
@@ -28,6 +28,7 @@ Key updates:
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#upgrading-a-standard-plan-to-an-enterprise-custom-plan).
 
 ### Deploy Management
+
 #### Import, Export, and Publish GenAI and LLM Settings
 
 A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
@@ -40,7 +41,6 @@ The setting includes:
 * Guardrails (for v11 only)
 
 Key benefits:
-
 
 * Deploy GenAI and LLM features across multiple bots.
 * Enhance flexibility in managing GenAI-related settings.
@@ -69,6 +69,7 @@ Backward compatibility:
 These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
 
 ### Channels
+
 #### SMS Channel Configuration
 
 The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md).
@@ -76,7 +77,6 @@ The Platform now offers SMS channel configuration for various service providers.
 #### Instagram Channel Support
 
 The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md).
-
 
 ### APIs
 
@@ -116,8 +116,6 @@ Key benefits:
 * Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
 * Increased flexibility: Account administrators can programmatically manage SSO settings.
 * Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
-
-
 
 <hr>
 
