@@ -35,11 +35,6 @@ Steps to create a filter:
 
 4. Select the list of options pertaining to **Queues** or **Agents**, as required.
 5. Click **Save & Apply**.
-
-    !!! Note
-
-       Clicking the **Apply** button does not save the filter.
-
 6. Enter the **Filter Name**, and click **Save & Apply**.  
 
     !!! Note
