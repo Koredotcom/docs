@@ -8,7 +8,7 @@ You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **P
 ## Voice Campaigns
 
 The following details of the voice campaigns are shown in a table:
-<img src="../images/campaigns-top-panel.png" alt="Campaigns Table Top Panel" title="Campaigns Table Top Panel" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/campaigns-top-panel.png" alt="Campaigns Table Top Panel" title="Campaigns Table Top Panel" style="border: 1px solid gray; zoom:80%;">
 
 * **Campaign** - Campaign name and Type.
 * **Actions** - Play/Pause/Replay, Stop, Edit, Clone campaign.
@@ -39,13 +39,15 @@ Campaign managers can customize the dialing pace, allowing them to set the numbe
 To create a campaign when Agentless Dialing Mode is selected:
 
 * Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/create-flows.md#the-start-flows).
-<img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
         * You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
+
+## Auto Dialers
 
 ### Progressive Dialer
 
@@ -58,18 +60,18 @@ The dialer efficiently manages lead allocation based on agent availability. It t
 To create a campaign when Progressive Dialing Mode is selected:
 
 * Select the **Queue** to which the calls will be routed. [Learn more](../../routing/queues/queue-management.md)  
-<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
         You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
-Progressive Dialer Call Handling
+#### Progressive Dialer Call Handling
 
 Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name.  
 <img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;">
 
-During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction.  
+During the call the agent can Mute, place the call on Hold, or end the interaction.  
 <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;">
 
 Dispositions are displayed to the agent when the call ends.  
@@ -104,7 +106,7 @@ To create a campaign when Preview Dialing Mode is selected:
 The agent is presented with one contact with an option for the Agent to Dial the number or Skip. Agents have a default 30-second timer to either dial or skip the call. If the agent dials within 30 seconds, the call is dialed to the contact. If the agent skips within 30 seconds, the interaction is removed from the agent and reassigned. Skipped contacts follow the retry logic based on the maximum attempts configured. The maximum number of skips allowed per agent can be configured for each campaign. Once the skip limit is reached, the skip button will no longer be available for that campaign instance. If the agent neither dials nor skips within the 30-second window, the call will be automatically dialed. The CUSTOMER INFO widget displays the customer's information. The interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name from which the call or contact is generated.  
 <img src="../images/preview-call.png" alt="Preview Call" title="Preview Call" style="border: 1px solid gray; zoom:70%;">
 
-Once an agent dials a number, that number becomes unavailable to other agents. When a call is connected, the number is not dialed again for the duration of the campaign. During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction. All outbound calls are recorded in the same way as inbound calls to ensure quality and compliance.  
+Once an agent dials a number, that number becomes unavailable to other agents. When a call is connected, the number is not dialed again for the duration of the campaign. During the call the agent can Mute, place the call on Hold, or end the interaction. All outbound calls are recorded in the same way as inbound calls to ensure quality and compliance.  
 <img src="../images/call-options.png" alt="Call Options" title="Call Options" style="border: 1px solid gray; zoom:70%;">
 
 Dispositions are displayed to the agent when the call ends.  
@@ -121,13 +123,13 @@ Steps to create Voice campaigns:
 
 2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
     * **Campaign Name**: Enter a name for the campaign.
-    <img src="../images/campaign-name.png" alt="Campaign Name" title="Campaign Name" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/campaign-name.png" alt="Campaign Name" title="Campaign Name" style="border: 1px solid gray; zoom:80%;">
     * **Description**: A description of the campaign.
-    <img src="../images/description.png" alt="Campaign Description" title="Campaign Description" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/description.png" alt="Campaign Description" title="Campaign Description" style="border: 1px solid gray; zoom:80%;">
     * **Contact Lists**: Select the **Contact Lists** that will be dialed, for the campaign from the drop-down list and then click **Done**.
     <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:100%;">
     * Select the **DNC List** from the drop-down.
-    <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:80%;">
 
         !!! Notes
 
@@ -135,23 +137,23 @@ Steps to create Voice campaigns:
             * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
 
     * Select the **Priority** from the drop-down list.
-    <img src="../priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
+    <img src="../priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:80%;">
     * Select the **Dialing Mode** from the drop-down list.
-    <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:80%;">
 
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.
     <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:100%;">
     * **Dialing Order**: Choose the order of dialing the phone numbers.
-    <img src="../images/dialing-order.png" alt="Dialing Order" title="Dialing Order" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/dialing-order.png" alt="Dialing Order" title="Dialing Order" style="border: 1px solid gray; zoom:80%;">
     * **Max Attempts Per Contact**: Enter the count for the maximum number of attempts by the dialer to call each phone number in the campaign.
-    <img src="../images/max-attempts-per-contact.png" alt="Max Attempts Per Contact" title="Max Attempts Per Contact" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/max-attempts-per-contact.png" alt="Max Attempts Per Contact" title="Max Attempts Per Contact" style="border: 1px solid gray; zoom:80%;">
     * **Default Retry Period**: Select the retry duration (in minutes) in case of an unsuccessful connection with a contact.
-    <img src="../images/default-retry-period.png" alt="Default Retry Period" title="Defult Retry Period" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/default-retry-period.png" alt="Default Retry Period" title="Defult Retry Period" style="border: 1px solid gray; zoom:80%;">
     * **Max Ring Time**: Select the duration (in seconds) that a call will ring until it is disconnected.
-    <img src="../images/max-ring-time.png" alt="Max Ring Time" title="Max Ring Time" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/max-ring-time.png" alt="Max Ring Time" title="Max Ring Time" style="border: 1px solid gray; zoom:80%;">
     * **Contactable Timings**: Add the contactable timings (day of the week/time) when the dialer will dial the calls.
-    <img src="../images/contactable-timings.png" alt="Contactable Timings" title="Contactable Timings" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/contactable-timings.png" alt="Contactable Timings" title="Contactable Timings" style="border: 1px solid gray; zoom:80%;">
 
         !!! Note
 
@@ -166,13 +168,13 @@ Scheduling allows precise control over when your messages will be delivered. You
 Steps to schedule a Campaign:
 
 1. Click the **Schedule** tab and turn on the **Schedule Campaign** toggle.
-<img src="../images/schedule-campaign-toggle.png" alt="Schedule campaign Toggle" title="Schedule Campaign Toggle" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/schedule-campaign-toggle.png" alt="Schedule campaign Toggle" title="Schedule Campaign Toggle" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the campaign **Start Date & Time**. **End Date & Time** is optional.
-<img src="../images/start-and-end-time.png" alt="Start & End time" title="Start & End Time" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/start-and-end-time.png" alt="Start & End time" title="Start & End Time" style="border: 1px solid gray; zoom:80%;">
 
 3. Select the **Time Zone** in which the campaign will be dialed.
-<img src="../images/timezone-dropdown.png" alt="Timezone" title="Timezone" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/timezone-dropdown.png" alt="Timezone" title="Timezone" style="border: 1px solid gray; zoom:80%;">
 
 4. Turn on the Recurrence toggle if you want the campaign to recur at defined intervals. You can select from the following options:
     1. Daily,
@@ -189,7 +191,7 @@ Steps to schedule a Campaign:
 
 5. Turning on the Allow Recurrence Precedence toggle will give the recurrence start and end time precedence over Contactable timings.
 For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects Recurrence Start Time as 8:00 AM, the campaign will start contacting from 8:00 AM.
-<img src="../images/allow-recurrence-precedence.png" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/allow-recurrence-precedence.png" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Save**. A campaign is created as per the configured schedule.
 
@@ -206,10 +208,10 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 ### Stop a Scheduled Campaign
 
 Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.
-<img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
 A confirmation message is displayed. Click **Stop**.
-<img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Voice Campaign
 
@@ -218,10 +220,10 @@ Editing a voice campaign allows you to make changes to the campaign as per your 
 Steps to edit a campaign:
 
 1. Click the **Ellipsis** (**⋮**) icon beside the campaign name and click **Edit**.
-<img src="../images/edit-campaign-button.png" alt="Edit Campaign Button" title="Edit Campaign Button" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/edit-campaign-button.png" alt="Edit Campaign Button" title="Edit Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A pop-up window is displayed. Do the required changes and click **Save**.
-<img src="../images/edit-campaign-window.png" alt="Edit and Save Campaign" title="Edit and save Campaign" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/edit-campaign-window.png" alt="Edit and Save Campaign" title="Edit and save Campaign" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -249,10 +251,10 @@ Stopping a voice campaign resets the data, and a new instance of the campaign is
 Steps to stop a campaign:
 
 1. Click the **Stop** button under **ACTIONS** for the campaign you want to stop.
-<img src="../images/stop-campaign-button.png" alt="Stop Campaign Button" title="Stop Campaign Button" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/stop-campaign-button.png" alt="Stop Campaign Button" title="Stop Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A **Stop Campaign** confirmation pop-up window is displayed. Click **Stop**.
-<img src="../images/stop-campaign-confirmation.png" alt="Stop Campaign Confirmation" title="Stop Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/stop-campaign-confirmation.png" alt="Stop Campaign Confirmation" title="Stop Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 ### Delete a Voice Campaign
 
@@ -261,15 +263,15 @@ You can delete a voice campaign if the campaign has served its purpose or is no 
 Steps to delete a campaign:
 
 1. Click the **Ellipsis**(**⋮**) icon beside the campaign name and click **Delete**.
-<img src="../images/delete-campaign-button.png" alt="Delete Campaign Button" title="Delete Campaign Button" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/delete-campaign-button.png" alt="Delete Campaign Button" title="Delete Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A **Delete Campaign** confirmation pop-up window is displayed. Click **Delete**.
-<img src="../images/delete-campaign-confirmation.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/delete-campaign-confirmation.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
 3. The campaign is deleted.
 
 ### Run Voice Campaigns
 
 You can run a voice campaign by clicking the **Play** button.
-<img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:80%;">
 
 When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.

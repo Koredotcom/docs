@@ -67,3 +67,7 @@
     **Execution in this case**: 50% of calls will be picked from campaign 1 and 50% of calls will be picked from campaign 2.
 
     Dialer will randomly dial from the 50% of calls from campaign 1 and 50% of calls from campaign 2.
+
+* **Can agents transfer a call to another agent or to a queue during outbound campaigns with auto-dialers (Progressive and Preview)?**
+
+    No, agents cannot transfer a call either to another agent or to a queue during outbound campaigns with auto-dialers.
