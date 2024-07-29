@@ -28,7 +28,7 @@ The Agent AI widget's Summary feature now offers enhanced feedback capabilities 
 
 ## Language-specific Summarization
 
-The Agent AI widget now supports language-specific summarization. Agents can customize the language of automatically generated conversation summaries by selecting the **Custom Dialog Task** option in the **Auto Summarization Model** section. After choosing a preferred language, the system displays a configured dialog task for that language. The summary is then generated based on this language-specific task, allowing for more accurate and culturally appropriate summaries across different languages. 
+The Agent AI widget now supports language-specific summarization. Agents can customize the language of automatically generated conversation summaries by selecting the **Custom Dialog Task** option in the **Auto Summarization Model** section. After choosing a preferred language, the system displays a configured dialog task for that language. The summary is then generated based on this language-specific task, allowing for more accurate and culturally appropriate summaries across different languages.  
 <img src="../images/language-specific-summarization-4.png" alt="language-specific-summarization" title="language-specific-summarization" style="border: 1px solid gray; zoom:80%;">
 
 ## View Summary from Any Active Tab
