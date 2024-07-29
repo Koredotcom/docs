@@ -61,7 +61,7 @@ Generative AI > Dynamic Conversation > Rephrase User Query > Advanced Settings >
 
 [Learn more :octicons-arrow-right-24:](../../automation/intelligence/context-object/).
 
-
+<hr>
 
 ## v11.3.1 July 13, 2024
 
