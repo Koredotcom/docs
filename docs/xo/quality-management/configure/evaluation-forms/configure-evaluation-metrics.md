@@ -121,7 +121,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
    <td>Provides the following Speech Type options to select:
 <ul>
 
-<li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail. By default, the Cross Talk duration is two seconds. But you can customize the configuration instances limit and the Cross Talk duration combination. 
+<li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail. By default, the Cross Talk duration is two seconds. But you can customize the configuration instances limit and the Cross Talk duration combination.  
 
 In the <strong>No of Instances</strong> field, enter the minimum allowed Cross Talk instances per second.
 
