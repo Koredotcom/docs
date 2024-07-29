@@ -89,19 +89,18 @@ The app's configuration settings from the Meta for Developers portal are used in
 2. Click on the **Generate Token**. The Token Generated pop-up is displayed. 
 <img src="../images/insta1.png" alt="Instagram" title="" style="border: 1px solid gray; zoom:70%;">
 
-
-
  
 3. Select the I Understand checkbox. The token appears.
 
     !!! note
 
-       Copy the token as required while configuring the Messenger channel in the Kore.ai Platform.
+        Copy the token as required while configuring the Messenger channel in the Kore.ai Platform.
+
 4. Click **Done**.
 5. Copy the following configuration settings from the Meta for Developers portal, as these are required in the Kore.ai Platform. 
-* **App Id**: Go to your **App** > **App Settings** > **Basic** > **App Id** 
-* **App Secret**: Go to your **App** > **App Settings** > **Basic** > **App Secret**. Click **Show** next to view the app secret and the secret code.
-* **Page ID**: Open the created Facebook page. Go to **About** > **Page Transparency** > **Page Id**.
+    * **App Id**: Go to your **App** > **App Settings** > **Basic** > **App Id** 
+    * **App Secret**: Go to your **App** > **App Settings** > **Basic** > **App Secret**. Click **Show** next to view the app secret and the secret code.
+    * **Page ID**: Open the created Facebook page. Go to **About** > **Page Transparency** > **Page Id**.
 
 
 ## Step 5: Setup Webhook
