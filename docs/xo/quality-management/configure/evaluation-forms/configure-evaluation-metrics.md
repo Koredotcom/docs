@@ -124,10 +124,9 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 <li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail. By default, the Cross Talk duration is two seconds. But you can customize the configuration instances limit and the Cross Talk duration combination. 
 
 <p>In the <strong>No of Instances</strong> field, enter the minimum allowed Cross Talk instances per second.</p>
+   <li><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration). <li>
 
-<p><strong>Cross Talk Metric Qualification</strong>: If the no. of Cross Talk instances, based on the configured Cross Talk duration is less than the configured no. of instances for that Evaluation Form, the metric is qualified (an occurrence is evaluated as Cross Talk, which must be equal to or exceed the configured Cross Talk duration).</p>   
-
-<p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized. </p></li> 
+  <p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized. </p></li> 
 
 
 <li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
@@ -136,11 +135,11 @@ In the <strong>No of Instances</strong> field, enter the maximum allowed Dead Ai
 
 <strong>Dead Air Metric Qualification</strong>: If the number of dead air instances is lesser than the number of acceptable instances in the metric configuration, the interaction will qualify the metric and will fail against the dead air metric if the no.of instances exceeds the configured limit (an instance will only be accounted as instance of dead air if it exceeds the configured dead air duration).
 
-In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction. 
+<p>In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.</p>
 
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
  
-<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</li></ul>
+<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</p></li></ul>
    </td>
   </tr>
 </table>

@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-Key features and enhancements included in this release are summarized below.
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
 ### Agent Console
 
