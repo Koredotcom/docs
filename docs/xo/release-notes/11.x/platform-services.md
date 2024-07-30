@@ -20,6 +20,7 @@ The Platform now supports two new OpenAI models for various [Co-Pilot](../../gen
 #### Usage Information for Enterprise Accounts
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
+
 Key updates:
 
 * The new Billing menu in the Admin Console left navigation.
@@ -98,6 +99,9 @@ Key benefits:
 * Improved user control: Manage users’ push notification preferences more effectively.
 * Enhanced flexibility: Manage device subscriptions programmatically.
 
+[Learn more :octicons-arrow-right-24:](./../../apis/automation/manage-sdk-push-notifications.md)
+
+
 #### Public API for SSO Configuration Management 
 
 The platform has introduced public APIs for managing Single Sign-On (SSO) configurations. This new API complements existing bot creation and publishing APIs, allowing for a more comprehensive automation of account setup processes. It significantly enhances the platform's capabilities for enterprise customers who require frequent audits or automated deployments.
@@ -107,7 +111,7 @@ Key updates:
 * Public API for SSO configuration management:
     * Fetch the SSO Meta API: Returns the existing SSO configuration along with the URLs.
     * Enable SSO API: Enables the SSO configuration for an account.
-    * Disable SSO API: Dsables the SSO configuration for an account.
+    * Disable SSO API: Disables the SSO configuration for an account.
     * Update the SSO Configuration API: Updates the SSO configuration for an account.
 * Support for SAML protocol.
 
@@ -117,6 +121,8 @@ Key benefits:
 * Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
 * Increased flexibility: Account administrators can programmatically manage SSO settings.
 * Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/enable-and-manage-sso-configuration.md)
 
 <hr>
 
