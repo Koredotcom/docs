@@ -1,15 +1,15 @@
 # Configure your Open-Source Model
 
-You can modify the general details of the open-source model if required.
 
-Steps to modify the settings of the model:
+On the Configurations page, you can view the model name, edit the description, and add tags, adjust the model endpoint timeout duration, undeploy, or delete the model.
 
-1. Go to **Models** > **Open-source models** and click the required model from the list. The model's Overview page is displayed. 
-
-2. Click **Configurations** in the left navigation. The **Configurations** page is displayed.  
 <img src="../images/configure-open-source-model.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;">
 
-3. Make any required changes in model's configurations. The changes are auto-saved.
+## Model Endpoint Timeout
+
+The model endpoint timeout defines the maximum time allowed for a request to complete before terminating the connection. If a request exceeds this time, it fails and triggers a timeout error for the endpoint. You can set the timeout duration between 30 to 180 seconds, with a default of 60 seconds.
+
+
 
 ## Undeploy the Model 
 

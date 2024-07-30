@@ -1,15 +1,13 @@
 # Configure your Fine-Tuned Model
 
-You can modify the general details of your fine-tuned model if required.
+On the Configurations page, you can edit the model name and description, add tags, adjust the model endpoint timeout duration, undeploy, or delete the model.
 
-Steps to modify the settings of your fine-tuned model:
-
-1. Go to **Models** > **Fine-tuned models** and click the required model from the list. The model's Overview page is displayed. 
-
-2. Click **Configurations** in the left navigation. The **Configurations** page is displayed.  
 <img src="../images/configure-fine-tuned-model.png" alt="Configure Fine-Tuned Model" title="Configure Fine-Tuned Model" style="border: 1px solid gray; zoom:80%;">
 
-3. Make any required changes in the configurations. The changes are auto-saved.
+## Model Endpoint Timeout
+
+The model endpoint timeout defines the maximum time allowed for a request to complete before terminating the connection. If a request exceeds this time, it fails and triggers a timeout error for the endpoint. You can set the timeout duration between 30 to 180 seconds, with a default of 60 seconds.
+
 
 ## Undeploy the Model 
 
