@@ -94,7 +94,7 @@ Steps to delete an SMS campaign:
 <img src="../images/delete-button-sms.png" alt="Delete Campaign Button" title="Delete Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation pop-up window appears. Click **Delete**.  
-<img src="../images/delete-campaign-confirmation-sms.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/delete-campaign-confirmation-sms.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:60%;">  
 
 ## Run SMS Campaigns
 
