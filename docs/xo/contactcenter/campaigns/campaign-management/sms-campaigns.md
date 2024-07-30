@@ -51,14 +51,17 @@ Steps to create an SMS campaign:
 4. Click **Save** after entering the message.  
 <img src="../images/save-message-sms.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:80%;">
 
-5. On the **Outreach Strategy** tab, select the **Timezone** from the drop-down and add the Contactable Timings (day of the week/time) when the dialer will dial the calls.  
+5. On the **Outreach Strategy** tab, first select the Caller ID. Caller ID is the number that is used to send SMS and the same number will be displayed on recipient phone.
+For Simple message format, Caller ID will only show the numbers that are configured as Outbound only and are not already associated with any flows.
+
+6. select the **Timezone** from the drop-down and add the Contactable Timings (day of the week/time) when the dialer will dial the calls.  
 <img src="../images/outreach-strategy-tab.png" alt="Outreach Strategy Tab" title="Outreach Strategy Tab" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
 
-6. Click **Save**. The campaign is created.
+7. Click **Save**. The campaign is created.
 
 ## Edit an SMS Campaign
 
