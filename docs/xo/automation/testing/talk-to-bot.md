@@ -43,7 +43,7 @@ The Debug window lets you explore the following:
 * _process completed_: indicates execution process for the script, service and webhook node is completed.  
 
 
-* _expand_: You can expand the node and click the **Show More** to view node debug log details.  
+* _expand_: You can expand the node and click the **JSON** to view node debug log details.  
 <img src="../images/expand-option.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
 
 * _node details_: shows the node details in the script format. You can copy, open the script in a full screen view or close the script view.  
