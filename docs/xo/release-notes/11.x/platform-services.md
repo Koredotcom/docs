@@ -6,6 +6,16 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
+Key features and enhancements included in this release are summarized below.
+
+### LLM & Generative AI Framework
+
+#### OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
+The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix).
+
+* GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
+* GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
+
 ### Admin Console
 #### Usage Information for Enterprise Accounts
 
