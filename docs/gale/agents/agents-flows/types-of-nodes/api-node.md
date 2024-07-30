@@ -15,7 +15,7 @@ Steps to add and configure the node:
 3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, you can drag the **API** node from the Assets panel onto the canvas.)
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
 
 5. Enter or select the following information:
 

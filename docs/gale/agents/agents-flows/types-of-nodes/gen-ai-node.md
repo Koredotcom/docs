@@ -36,7 +36,7 @@ Steps to add and configure the node:
         `{{context.conversation}}`
 
     * **Few shot examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.  
-    <img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:60%;"> 
 
     * **Timeout**: Select the timeout duration from the allowed range.
     The allowed Range is 30 to 180 seconds (3 minutes). The
