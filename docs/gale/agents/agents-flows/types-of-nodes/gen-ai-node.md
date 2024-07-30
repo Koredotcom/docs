@@ -21,7 +21,7 @@ Steps to add and configure the node:
 
     * **Custom Name**: Enter an appropriate name for the node.
 
-    * **Select Model**: Select a model from the list of configured models. (For more information on models, see Model Studio.)
+    * **Select Model**: Select a model from the list of configured models (For more information on models, see Model Studio).
 
     * **System Prompt**: Enter the System Prompt for your use case. 
     For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters.”
