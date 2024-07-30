@@ -26,7 +26,8 @@ Key updates:
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
 * Detailed usage trends are accessible via the Manage button.  
-[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console-plan-and-usage)
+
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#navigating-to-plan-and-usage-1)
 
 
 ### Deploy Management
@@ -111,7 +112,7 @@ Key updates:
 * Public API for SSO configuration management:
     * Fetch the SSO Meta API: Returns the existing SSO configuration along with the URLs.
     * Enable SSO API: Enables the SSO configuration for an account.
-    * Disable SSO API: Disables the SSO configuration for an account.
+    * Disable SSO API: Dsables the SSO configuration for an account.
     * Update the SSO Configuration API: Updates the SSO configuration for an account.
 * Support for SAML protocol.
 
