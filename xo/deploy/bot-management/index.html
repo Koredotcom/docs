@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#va-management" class="md-skip">
+        <a href="#app-management" class="md-skip">
           Skip to content
         </a>
       
@@ -14154,7 +14154,7 @@
   
 
 
-<h1 id="va-management">VA Management<a class="headerlink" href="#va-management" title="Permanent link">&para;</a></h1>
+<h1 id="app-management">App Management<a class="headerlink" href="#app-management" title="Permanent link">&para;</a></h1>
 <p>This article discusses the main features that allow you to manage your Virtual Assistant (VA) at a high level. These include Importing, Exporting, and Deleting assistants, as well as viewing change logs.</p>
 <p>To learn more about Variables and how to use them, see <a href="../../app-settings/variables/using-bot-variables/"> Using Bot Variables</a>.</p>
 <h2 id="importing-and-exporting-assistants">Importing and Exporting Assistants<a class="headerlink" href="#importing-and-exporting-assistants" title="Permanent link">&para;</a></h2>
@@ -14186,7 +14186,7 @@
 <li>Open the assistant you want to export.</li>
 <li>Select the <strong>Deploy</strong> tab from the left menu.</li>
 <li>Select <strong>Import &amp; Export</strong> under <strong>DEPLOY MANAGEMENT</strong>.</li>
-<li>On the Import &amp; Export page select the <strong>Import</strong> tab.</li>
+<li>On the Import &amp; Export page, select the <strong>Import</strong> tab.</li>
 <li>
 <p>You can choose one of the below import options:</p>
 <ul>
@@ -14194,59 +14194,80 @@
 <p>Import by uploading <strong>individual JSON files</strong>:</p>
 <ol>
 <li>Choose the <strong>JSON Files</strong> radio button.</li>
-<li>Click the <strong>Choose File</strong> buttons next to the <strong>Bot Definition File</strong> field and <strong>Bot Config File</strong> field, and upload the <em>appDefinition.json</em> and <em>config.json</em> files respectively.</li>
-<li>Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.</li>
+<li>Click the <strong>Choose File</strong> buttons next to the <strong>Bot Definition File</strong> field and <strong>Bot Config File</strong> fields, and upload the <em>appDefinition.json</em> and <em>config.json</em> files, respectively.</li>
+<li>Optionally, upload the custom script file from the imported assistant, if any. The file size is limited to 500kb.</li>
 </ol>
 <p><a class="glightbox" href="../images/bot-import-custom-script-file1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>Import by uploading <strong>ZIP file</strong>:</p>
+<p>Import by uploading a <strong>ZIP file</strong>:</p>
 <ol>
 <li>Choose the <strong>Zip File</strong> radio button.</li>
-<li>Through the <strong>Choose File</strong> button, browse and import the Zip file. Using this option you can import an app by directly importing the zip file created at the time of Export, without having to unzip.</li>
+<li>Through the <strong>Choose File</strong> button, browse and import the Zip file. This option allows you to import an app by directly importing the zip file created at the time of Export without having to unzip it.</li>
 </ol>
 <p><a class="glightbox" href="../images/bot-import-zip-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bot-import-zip-file.png" alt="App import - ZIP file" title="App import - ZIP file" style="border:1px solid gray; zoom:70%;"></a></p>
 </li>
 </ul>
 </li>
 <li>
-<p>Select one of these import options: <strong>Full Import</strong> or <strong>Incremental Import</strong>. You will get a warning to backup your assistant before performing the import.</p>
+<p>Select one of these import options: <strong>Full Import</strong> or <strong>Incremental Import</strong>. You will get a warning to back up your assistant before performing the import.</p>
 </li>
 <li>
-<p>If you select <strong>Full import</strong>, the VA definition in the in-development copy will be overwritten with the definition present in the import file.</p>
+<p>If you select <strong>Full import</strong>, the VA definition in the in-development copy will be overwritten with the definition in the import file.</p>
 <ul>
-<li>If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the VA is published.</li>
+<li>If the assistant contains one or more additional tasks or languages that are not present in the import definition, these tasks will be marked as deleted and removed when the VA is published.</li>
+<li>
+<p>For Generative AI and LLM features, <strong>Full import</strong>:  </p>
+<ul>
+<li>Deletes existing models and prompts in the target app.</li>
+<li>Overwrites with models, prompts, and GenAI features from the import file.</li>
+<li>Retains model configurations if a model exists in both source and target</li>
+<li>Replaces all feature mappings, custom instructions, and guardrails.</li>
+<li>Preserve existing integrations.</li>
+<li>Import XO-GPT integration as-is.</li>
+<li>Enable imported features with warnings.</li>
+<li>Handle <strong>Azure Open AI by Kore.ai</strong> integration based on token status.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>If you select <strong>Incremental import</strong>, you can also choose which components to import.</p>
+<p>If you select <strong>Incremental import</strong>, you can choose which components to import.</p>
 <p><a class="glightbox" href="../images/bm(4).png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bm(4).png" alt="Incremental import" title="Incremental import" style="border:1px solid gray; zoom:60%;"></a></p>
 <ul>
 <li>
-<p><strong>Bot Tasks</strong>: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.</p>
+<p><strong>Bot Tasks</strong>: Here, you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk, or Digital Forms.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you want to import one or more Bot Tasks, also select the <strong>NLP Data</strong> settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.</p>
 </div>
 </li>
 <li>
-<p><strong>NLP Data</strong>: This is where you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.</p>
+<p><strong>NLP Data</strong>: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.</p>
 <ol>
-<li><strong>Append</strong> can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the VA should be retained (this is the default behavior).</li>
+<li><strong>Append</strong> can be used when the utterances in the file should be imported into the assistant, and any additional utterances in the VA should be retained (this is the default behavior).</li>
 <li>
-<p><strong>Replace</strong> can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.</p>
-<p>In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. </p>
+<p><strong>Replace</strong> can be used when the utterances in the file should be imported into the assistant. Any additional utterances will be removed.</p>
+<p>If you are also importing Tasks, the additional utterances related to tasks being imported will be removed. </p>
 <p><a class="glightbox" href="../images/bm(1).png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bm(1).png" alt="App import" title="App import" style="border:1px solid gray; zoom:60%;"></a></p>
 </li>
 <li>
-<p>The imported Traits, Synonyms and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.</p>
+<p>The imported Traits, Synonyms, and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.</p>
 </li>
 </ol>
 </li>
 <li>
-<p><strong>Settings</strong>: Bot Settings, Bot Variables and Voice Call Properties.</p>
+<p><strong>Settings</strong>: Bot Settings, Bot Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:  </p>
+<ul>
+<li>Integrations</li>
+<li>Prompts and Requests Library</li>
+<li>Feature Mappings</li>
+<li>Guardrails </li>
+</ul>
 </li>
-<li><strong>Custom Dashboards</strong> – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. </li>
+<li>
+<p><strong>Custom Dashboards</strong>: This is useful in case you have created custom dashboards under the Analyze section and want to import them to the new VA as well. </p>
+</li>
 <li>
 <p>On the confirmation dialog that opens, click <strong>Backup</strong> to download the existing assistant configuration.</p>
 <p><a class="glightbox" href="../images/bm(8).png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;"></a></p>
@@ -14318,7 +14339,7 @@
   <tr>
    <td>Tasks with the same Reference ID
    </td>
-   <td>Imported tasks replace the tasks in the target assistant and their status changes to Configured, regardless of their current status (including Suspended and Rejected tasks).
+   <td>Imported tasks replace the tasks in the target assistant, and their status changes to Configured, regardless of their current status (including Suspended and Rejected tasks).
    </td>
   </tr>
   <tr>
@@ -14348,7 +14369,7 @@
   <tr>
    <td>Synonyms, Concepts, and Traits
    </td>
-   <td>They are imported from the source VA along with all their underlying terms, and replace the ones in the target VA.
+   <td>They are imported from the source VA along with all their underlying terms and replace the ones in the target VA.
    </td>
   </tr>
   <tr>
@@ -14356,6 +14377,24 @@
    </td>
    <td>Rules will be imported only if their tagged dialog tasks are imported.<br><br>
     <strong>Note</strong>: On-Prem customers can import the NLP components (Synonyms, Concepts, Rules, Traits) from a source VA of a higher version to a target VA of a lower version by checking the <strong>NLP Settings</strong> checkbox. However, Rules won’t import unless the tagged dialog tasks are also imported.
+   </td>
+  </tr>
+  <tr>
+   <td>Generative AI and LLM    
+   </td>
+   <td>
+   <br>
+    – Keeps existing prompts, only adds new ones.
+    <br>
+    – Replaces all feature mappings, custom instructions, and guardrails.
+    <br>
+    – Preserve existing integrations.
+    <br>
+    – Import XO-GPT integration as-is.
+    <br>
+    – Enable imported features with warnings.
+    <br>
+    – Handle "Azure Open AI by Kore.ai" integration based on token status.
    </td>
   </tr>
 </table>
@@ -14589,7 +14628,7 @@
   <tr>
    <td>Bot Settings
    </td>
-   <td>The following information from Bot Settings page:
+   <td>The following information from the Bot Settings page:
 <ul>
 
 <li>General Settings
@@ -14616,7 +14655,7 @@
   <tr>
    <td>Bot Variables
    </td>
-   <td>All the global and content variables present in the assistant along with their values.
+   <td>All the global and content variables present in the assistant, along with their values.
    </td>
   </tr>
   <tr>
@@ -14625,6 +14664,26 @@
    <td>All the IVR settings for the assistant (Bot Settings > IVR settings).
    </td>
   </tr>
+  <tr>
+   <td>Generative AI      
+ and LLM
+</td>
+   <td>
+<ul>
+
+<li>Integrations
+
+<li>Prompts and Requests Library
+
+<li>Feature Mappings
+
+<li>Guardrails
+
+</li>
+</ul>
+   </td>
+  </tr>
+
 </table>
 
 <h2 id="deleting-an-assistant">Deleting an Assistant<a class="headerlink" href="#deleting-an-assistant" title="Permanent link">&para;</a></h2>
