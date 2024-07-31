@@ -56,8 +56,17 @@ To import a Virtual Assistant, follow these steps:
 
 6. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to back up your assistant before performing the import.
 7. If you select **Full import**, the VA definition in the in-development copy will be overwritten with the definition in the import file.
-    
-    * If the assistant contains or more additional tasks or languages that not present in the import definition, these tasks will be marked as deleted and removed when the VA is published.
+
+    * If the assistant contains one or more additional tasks or languages that are not present in the import definition, these tasks will be marked as deleted and removed when the VA is published.
+    * For Generative AI and LLM features, **Full import**:
+            * Deletes existing models and prompts in the target app.
+            * Overwrites with models, prompts, and GenAI features from the import file.
+            * Retains model configurations if a model exists in both source and target
+            * Replaces all feature mappings, custom instructions, and guardrails.
+            * Preserve existing integrations.
+            * Import XO-GPT integration as-is.
+            * Enable imported features with warnings.
+            * Handle **Azure Open AI by Kore.ai** integration based on token status.
 
 8. If you select **Incremental import**, you can choose which components to import.
 
@@ -65,7 +74,7 @@ To import a Virtual Assistant, follow these steps:
 
     * **Bot Tasks**: Here, you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk, or Digital Forms.
 
-        !!! note:
+        !!! Note
 
             If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
@@ -81,20 +90,24 @@ To import a Virtual Assistant, follow these steps:
 
         3. The imported Traits, Synonyms, and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.
 
-    * **Settings**: Bot Settings, Bot Variables and Voice Call Properties.
+    * **Settings**: Bot Settings, Bot Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:
+            * Integrations
+            * Prompts and Requests Library
+            * Feature Mappings
+            * Guardrails 
     * **Custom Dashboards**: This is useful in case you have created custom dashboards under the Analyze section and want to import them to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
         <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;">
     
-        !!! note:
+        !!! Note
 
             While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
 9. Click **Proceed** to start the import.
 10. After the import is completed, the following success message appears. Click **Done**.
     
-    !!! note
+    !!! Note
 
         Bot import would fail if the assistant has been restored but not published after the restore. 
 
@@ -179,6 +192,24 @@ To import a VA while creating it, follow these steps:
     <strong>Note</strong>: On-Prem customers can import the NLP components (Synonyms, Concepts, Rules, Traits) from a source VA of a higher version to a target VA of a lower version by checking the <strong>NLP Settings</strong> checkbox. However, Rules won’t import unless the tagged dialog tasks are also imported.
    </td>
   </tr>
+  <tr>
+   <td>Generative AI and LLM    
+   </td>
+   <td>
+   <br>
+    – Keeps existing prompts, only adds new ones.
+    <br>
+    – Replaces all feature mappings, custom instructions, and guardrails.
+    <br>
+    – Preserve existing integrations.
+    <br>
+    – Import XO-GPT integration as-is.
+    <br>
+    – Enable imported features with warnings.
+    <br>
+    – Handle "Azure Open AI by Kore.ai" integration based on token status.
+   </td>
+  </tr>
 </table>
 
 ## Exporting an Assistant
@@ -196,7 +227,7 @@ When you export a assistant, it downloads a zipped file with the following param
 * **Icon.png**: Includes the assistant icon.
 * **&lt;_Custom ScriptFile Name_.js> (if available)**: Includes a script file with JavaScript functions. When you upload this file, you can access the functions in the file from anywhere in the assistant.
 
-!!! note:
+!!! Note
 
     The assistant and its components are given unique Reference IDs during export. These IDs help the platform to identify matching tasks in the target VA and update them.
 
@@ -449,6 +480,26 @@ When you export a VA, the following components get exported, depending on your L
    <td>All the IVR settings for the assistant (Bot Settings > IVR settings).
    </td>
   </tr>
+  <tr>
+   <td>Generative AI	  
+ and LLM
+</td>
+   <td>
+<ul>
+
+<li>Integrations
+
+<li>Prompts and Requests Library
+
+<li>Feature Mappings
+
+<li>Guardrails
+
+</li>
+</ul>
+   </td>
+  </tr>
+
 </table>
 
 ## Deleting an Assistant
