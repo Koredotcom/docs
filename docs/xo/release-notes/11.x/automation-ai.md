@@ -23,7 +23,7 @@ Backward compatibility:
 * Existing service nodes retain their current timeout behavior while the timeout settings are moved to the Instance Properties. 
 
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node/#instance-properties)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#instance-properties)
 
 #### Enhanced Debug Logs
 The platform now groups debug logs by user utterance and bot response in a chat-like structure to improve clarity and efficiency in tracing conversation flow for platform users.

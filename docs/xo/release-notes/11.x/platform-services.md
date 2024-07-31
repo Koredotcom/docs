@@ -27,7 +27,7 @@ Key updates:
 * Combined XO10 and XO11 usage statistics on a single page.
 * Detailed usage trends are accessible via the Manage button.  
 
-[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#navigating-to-plan-and-usage-1)
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md)
 
 
 ### Deploy Management
@@ -69,7 +69,8 @@ Backward compatibility:
 
 * Existing bots in the Configured state are copied to the Published state.
 
-These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
+These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users. [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
 
 ### Channels
 
