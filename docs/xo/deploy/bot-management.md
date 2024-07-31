@@ -91,7 +91,8 @@ To import a Virtual Assistant, follow these steps:
 
         3. The imported Traits, Synonyms, and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.
 
-    * **Settings**: Bot Settings, Bot Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:
+    * **Settings**: Bot Settings, Bot Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:  
+    
         * Integrations
         * Prompts and Requests Library
         * Feature Mappings
