@@ -58,15 +58,16 @@ To import a Virtual Assistant, follow these steps:
 7. If you select **Full import**, the VA definition in the in-development copy will be overwritten with the definition in the import file.
 
     * If the assistant contains one or more additional tasks or languages that are not present in the import definition, these tasks will be marked as deleted and removed when the VA is published.
-    * For Generative AI and LLM features, **Full import**:
-            * Deletes existing models and prompts in the target app.
-            * Overwrites with models, prompts, and GenAI features from the import file.
-            * Retains model configurations if a model exists in both source and target
-            * Replaces all feature mappings, custom instructions, and guardrails.
-            * Preserve existing integrations.
-            * Import XO-GPT integration as-is.
-            * Enable imported features with warnings.
-            * Handle **Azure Open AI by Kore.ai** integration based on token status.
+    * For Generative AI and LLM features, **Full import**:  
+
+        * Deletes existing models and prompts in the target app.
+        * Overwrites with models, prompts, and GenAI features from the import file.
+        * Retains model configurations if a model exists in both source and target
+        * Replaces all feature mappings, custom instructions, and guardrails.
+        * Preserve existing integrations.
+        * Import XO-GPT integration as-is.
+        * Enable imported features with warnings.
+        * Handle **Azure Open AI by Kore.ai** integration based on token status.
 
 8. If you select **Incremental import**, you can choose which components to import.
 
