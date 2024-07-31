@@ -6,16 +6,28 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
+Key features and enhancements included in this release are summarized below.
+
+### LLM & Generative AI Framework
+
+#### OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
+The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix).
+
+* GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
+* GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
+
 ### Admin Console
 #### Usage Information for Enterprise Accounts
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
+
 Key updates:
 
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
 * Detailed usage trends are accessible via the Manage button.  
-[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console-plan-and-usage)
+
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#navigating-to-plan-and-usage-1)
 
 
 ### Deploy Management
@@ -88,6 +100,9 @@ Key benefits:
 * Improved user control: Manage users’ push notification preferences more effectively.
 * Enhanced flexibility: Manage device subscriptions programmatically.
 
+[Learn more :octicons-arrow-right-24:](./../../apis/automation/manage-sdk-push-notifications.md)
+
+
 #### Public API for SSO Configuration Management 
 
 The platform has introduced public APIs for managing Single Sign-On (SSO) configurations. This new API complements existing bot creation and publishing APIs, allowing for a more comprehensive automation of account setup processes. It significantly enhances the platform's capabilities for enterprise customers who require frequent audits or automated deployments.
@@ -107,6 +122,8 @@ Key benefits:
 * Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
 * Increased flexibility: Account administrators can programmatically manage SSO settings.
 * Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/enable-and-manage-sso-configuration.md)
 
 <hr>
 

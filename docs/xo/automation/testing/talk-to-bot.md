@@ -35,19 +35,19 @@ The Debug window lets you explore the following:
 
 ### Debug Log
 
-**Debug Log** provides the sequential progression of a dialog task and context and session variables captured at every node. The Debug log supports the following statuses:
+**Debug Log** provides the sequential progression of a dialog task and context and session variables captured at every node. It is a chat-like interface, grouped by user inputs and bot responses for easier conversation flow tracing. It offers improved navigation and contextual information at a glance. This significantly enhances log readability and streamlines the debugging process. The Debug log supports the following statuses:
 
 * _initiated_: The XO Platform initiates the various nodes in a dialog task. For example, script, service, and webhook execution is initiated.
 * _execution_: indicates execution of nodes has started. For example, script, service, and webhook execution has started.
 * _execution successful_: indicates execution of nodes is successful.For example, script, service, and webhook execution is successful.
 * _process completed_: indicates execution process for the script, service and webhook node is completed.  
-<img src="../images/process-completed.png" alt="Debug log - Statuses" title="Debug log - Statuses" style="border: 1px solid gray; zoom:80%;"/>
 
-* _expand_: You can expand the node and click the **Show More** to view node debug log details.  
+
+* _expand_: You can expand the node and click the **JSON** to view node debug log details.  
 <img src="../images/expand-option.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
 
 * _node details_: shows the node details in the script format. You can copy, open the script in a full screen view or close the script view.  
-<img src="../images/talk-to-bot-img7.png" alt="Node details" title="Node details" style="border: 1px solid gray; zoom:80%;"/>
+
 
 * _parsing_: The XO Platform begins to parse the user prompt.
 * _parsing successful_:  the user prompt is parsed successfully.
@@ -57,7 +57,7 @@ The Debug window lets you explore the following:
 * _waitingForServerResponse_: The server request is pending an asynchronous response.
 * _error_: An error occurred, for example, the loop limit is reached, a server or script node execution fails.
 * _end_: The dialog reached the end of the dialog flow.  
-<img src="../images/talk-to-bot-img8.png" alt="End of the dialog flow" title="End of the dialog flow" style="border: 1px solid gray; zoom:80%;"/>
+
 
 
 ### NL Analysis
