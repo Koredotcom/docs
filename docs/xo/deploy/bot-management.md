@@ -92,10 +92,10 @@ To import a Virtual Assistant, follow these steps:
         3. The imported Traits, Synonyms, and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.
 
     * **Settings**: Bot Settings, Bot Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:
-            * Integrations
-            * Prompts and Requests Library
-            * Feature Mappings
-            * Guardrails 
+        * Integrations
+        * Prompts and Requests Library
+        * Feature Mappings
+        * Guardrails 
     * **Custom Dashboards**: This is useful in case you have created custom dashboards under the Analyze section and want to import them to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
