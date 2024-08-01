@@ -3,9 +3,9 @@
 Outbound campaigns are reshaping how businesses connect with their audience. These campaigns proactively reach out to a curated list of individuals, following predefined rules. At the core of this process, calls are orchestrated based on the information available in a contact list. Outbound campaigns infuse a personalized touch by crafting scripts that shape the agent's interaction.
 
 You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **Proactive Outreach** > **Campaign Management**.  
-<img src="../images/campaigns-page-main.png" alt="Campaigns Main Page" title="Campaigns Main Page" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/campaigns-page-main.png" alt="Campaigns Main Page" title="Campaigns Main Page" style="border: 1px solid gray; zoom:80%;">
 
-Enable Outbound voice campaigns permission in the [User Permissions](../../../user-management/role-management.md#agent) for Agents that need to handle campaign calls in the queue.
+Enable the "Outbound Voice Campaigns" permission in the [User Permissions](../../../user-management/role-management.md#agent) for agents who will handle campaign calls in the queue.
 
 !!! Note
 
