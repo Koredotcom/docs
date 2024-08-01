@@ -5,6 +5,12 @@ Outbound campaigns are reshaping how businesses connect with their audience. The
 You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **Proactive Outreach** > **Campaign Management**.  
 <img src="../images/campaigns-page-main.png" alt="Campaigns Main Page" title="Campaigns Main Page" style="border: 1px solid gray; zoom:100%;">
 
+Enable Outbound voice campaigns permission in the [User Permissions](../../../user-management/role-management.md#agent) for Agents that need to handle campaign calls in the queue.
+
+!!! Note
+
+    Agents need to be configured to either inbound or outbound, as agent blending is not currently available.
+
 ## Voice Campaigns
 
 The following details of the voice campaigns are shown in a table:  
@@ -46,7 +52,6 @@ To create a campaign when Agentless Dialing Mode is selected:
         * You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
-
 
 ### Progressive Dialer
 
@@ -123,7 +128,6 @@ Steps to create Voice campaigns:
 
 <img src="../images/new-campaign-button-voice.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
-
 2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
     * **Campaign Name**: Enter a name for the campaign.  
     <img src="../images/campaign-name.png" alt="Campaign Name" title="Campaign Name" style="border: 1px solid gray; zoom:80%;">
@@ -143,7 +147,6 @@ Steps to create Voice campaigns:
     <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:80%;">
     * Select the **Dialing Mode** from the drop-down list.  
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:80%;">
-
 
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.  
