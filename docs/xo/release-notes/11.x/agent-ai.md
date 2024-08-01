@@ -60,15 +60,15 @@ This update includes bug fixes.
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-## Summarization Service Optimization
+### Summarization Service Optimization
 
 The Conversation Summary generation process has been updated to handle short, long, and abrupt endings of conversations. For long conversations, the maximum limit is set to 8000 tokens (approximately 6000 words).
 
-## Improved Widget Search Experience
+### Improved Widget Search Experience
 
 The widget search bar has been improved for a better user experience. It now shows "Ask a question" as placeholder text with a search icon on the right. As users type in the bar, the placeholder disappears, and the search icon changes to a close (X) icon, which makes it easy to clear the text.
 
-## Dashboard Updates
+### Dashboard Updates
 
 Agent AI dashboard is enhanced with new suggestion relevance metrics and reorganized customer inquiry insights.
 
@@ -79,17 +79,17 @@ Agent AI dashboard is enhanced with new suggestion relevance metrics and reorgan
 
 <img src="../images/updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
 
-## Attachment Support in Widget
+### Attachment Support in Widget
 
 Agent AI now accepts file or image attachments during live conversations. 
 
 If the file or image is not automatically detected, you can override and manually attach the file. To maintain system efficiency, attachments are limited to one file at a time and must not exceed 25 MB in size.
 
-## Dark Theme for Agent AI Widget
+### Dark Theme for Agent AI Widget
 
 Agents can now customize the widget appearance by selecting a theme. To select it, go to the widget’s **Settings** section and select **Dark** or **Light**.
 
-## In-line Digital Form
+### In-line Digital Form
 
 Agent AI has introduced in-line digital forms in the **Assist** tab, making it easier to collect customer information during live conversations. Configure the forms with dialog tasks to use this feature and select "Open inline form" in the **Web/Mobile SDK Form Behavior** setting.
 
@@ -99,7 +99,7 @@ Agent AI has introduced in-line digital forms in the **Assist** tab, making it e
 
 <img src="../images/inline-form.png" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
 
-## Streamlined Conversation Summary Management
+### Streamlined Conversation Summary Management
 
 Conversation Summary management has been improved to enhance usability and tracking.
 
@@ -113,7 +113,7 @@ Conversation Summary management has been improved to enhance usability and track
 * If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".  
 <img src="../images/summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
 
-## Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
+### Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
 
 Agent AI lets you configure channel-specific dialog tasks across all communication channels - Chat, Voice, and Email. You can also specify whether these dialog tasks appear in the list or only when searched in the widget’s library (**Search** tab). These preferences can be set while creating or editing a dialog task and are available under the **Triggers & Permissions** tab.
 <img src="../images/triggers-and-permissions.png" alt="triggers-and-permissions" title="free text" style="border: 1px solid gray; zoom:80%;">
@@ -126,7 +126,7 @@ Agent AI lets you configure channel-specific dialog tasks across all communicati
 
 **Disabled**: The dialog task doesn’t appear on the list but remains searchable via the “Ask a question” search bar in the **Search** tab.
 
-## Agent AI Raw Data API v2
+### Agent AI Raw Data API v2
 
 This updated version of the Raw Data API offers the following additional conversation data for deeper insights into Agent AI interactions and conversation flows:
 
@@ -159,7 +159,7 @@ The **Auto-Scroll Assist Tab Content toggle** lets you manage the scrolling func
 
 <img src="../images/autoscroll-enabled-disabled-1.png" alt="autoscroll-enabled-disabled" title="autoscroll-enabled-disabled" style="border: 1px solid gray; zoom:80%;">
 
-## Entity-Based Summarization
+### Entity-Based Summarization
 
 Dialog tasks having “message nodes” didn’t let users customize the Conversation Summary. Hence, to let users customize the Conversation Summary, “message nodes” are replaced with “entity nodes”. To utilize this capability, admins must create dialog tasks with entity nodes and select these dialog tasks in the **Agent AI** > **Configuration** > **Widget Settings** > **AgentAssist Channel Specific Settings** > **Auto Summarization** > **Auto Summarization Model** > **Custom Dialog Task** section.
 
