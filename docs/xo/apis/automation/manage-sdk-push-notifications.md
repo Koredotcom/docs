@@ -2,9 +2,9 @@
 
 For managing the SDK push notifications, the platform provides the following APIs:
 
-* [Device Subscription](../automation/manage-sdk-push-notifications.md/#device-subscription-api){target="_blank"} API
-* [Subscribed User Devices](../automation/manage-sdk-push-notifications.md/#subscribed-user-devices-api){target="_blank"} API
-* [Device Unsubscription](../automation/manage-sdk-push-notifications.md/#device-unsubscription-api){target="_blank"} API
+* [Device Subscription](../automation/manage-sdk-push-notifications.md/#device-subscription-api) API
+* [Subscribed User Devices](../automation/manage-sdk-push-notifications.md/#subscribed-user-devices-api) API
+* [Device Unsubscription](../automation/manage-sdk-push-notifications.md/#device-unsubscription-api) API
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -504,4 +504,3 @@ curl --location
     "success": true,
     "message": "All Devices are unsubscribed"
 }
-```
