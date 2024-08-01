@@ -190,7 +190,7 @@ These settings are grouped and presented as closed groups when first opening the
 
 ### Chats
 
-* **Manual**: Agents must click **_Accept _** to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
+* **Manual**: Agents must click ‘Accept’ to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
 <img src="../images/chat-configuration.png" alt="Chat Configuration Manual" title="Chat Configuration Manual" style="border: 1px solid gray; zoom:80%;">
 
 * **Auto**: Chats are auto-answered, and the agent does not need to click ‘Accept’. Set the first response timeout for agents to respond to new chats.
