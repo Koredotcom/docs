@@ -10,7 +10,7 @@ _I am interested in traveling tomorrow from LA to NYC, first class, and I want a
 
 In this query, the Virtual Assistant needs to process information such as: travel date, departure city, arrival city, flight class and seat preference, in order to respond to this enquiry.
 
-Each of these multiple values or details come from different independent entities. Composite Entities enable you to combine these independent entities or sub-entities.
+Each of these multiple values or details come from different independent entities. Composite Entities enable you to combine these independent entities or sub-entities. The sub-entities are identified based on the type of input given by the user. (For example, there can be a composite entity that has two sub-entities *phoneNumber* and *emailAddress*. When the user provides the input, the NLP engine understands the input and map it to the right sub-entity.)
 
 ## How it Works?
 
@@ -142,6 +142,7 @@ You can also define the _Synonyms_ and _Patterns_ as with any other entity.
 * The Sub-entity with Description cannot be part of a composite entity.
 * Make sure that the sub-entities are not part of the dialog flow in the task using the composite entity.
 * If the sub-entity allows multi-items, the parent composite entity accepts only one value for the sub-entity and not a list.
+* Normally, the NLP engine can identify and map user input to the correct sub-entity. However, when PII (Personal Identifiable Information) masking is applied to sensitive data, the NLP engine cannot interpret the masked input, making it impossible to determine which sub-entity (e.g., phone number or email address) the data corresponds to.
 
 ## Passing Values
 
