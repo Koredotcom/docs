@@ -75,7 +75,7 @@ For help, refer to the [Field Description](#field-description-general-settings) 
         2. Select the utterances from the list, as required.
         3. Click **Add**.
     2. If you select **By Dialog Execution**:
-        4. Select an option from the **Automation** list. This list includes all available Dialog tasks.
+        4. Select an option from the **Automation** list. This list includes Dialog tasks specific to the selected channel in the playbook.
         5. Select an option under the **Wait for Dialog Execution** section:
             1. **Initiated**: Select **Initiated** to indicate the playbook should trigger once the Dialog task is initiated.
             2. **Completed**: Select **Completed** to indicate the playbook should trigger once the Dialog task is completed.
@@ -218,7 +218,7 @@ The system dynamically determines an agent’s step adherence through one of the
         3. Select the utterances from the list, as required.
         4. Click **Apply**.
     2. If you select **By Dialog Execution**:
-        5. Select an option from the **Automation** list.
+        5. Select an option from the **Automation** list. This list displays Dialog tasks specific to the selected channel in the playbook.
         6. Select an option under the **Wait for Dialog Execution for…** section.
             1. **Initiated**: Select **Initiated** to indicate step completion once the Dialog task is initiated.
             2. **Completed**: Select **Completed** to indicate step completion once the Dialog task is completed.
