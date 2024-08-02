@@ -2921,12 +2921,14 @@
 <li><a href="../user-management/settings/active-directory/#step-4-schedule-automatic-ad-sync" target="_blank">Automated synchronization</a> of user data from Enterprise AD, plus configuration of user profile fields and email notifications.</li>
 <li>Integrations</li>
 <li>Manage Guardrails </li>
+<li>Monitoring </li>
+<li>Audit Logs</li>
 </ul>
 <h2 id="levels-of-users-management">Levels of Users Management<a class="headerlink" href="#levels-of-users-management" title="Permanent link">&para;</a></h2>
 <p>The <strong>Settings</strong> Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.</p>
 <ul>
 <li>
-<p><strong>Account level</strong>: At the account level, administrators can manage users, their roles, and permissions throughout the entire GALE account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including agent creation, model management (including access, deployment, and export), integrations, user management, security controls, model guardrails, and others.</p>
+<p><strong>Account level</strong>: At the account level, administrators can manage users, their roles, and permissions throughout the entire GALE account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including agent creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.</p>
 </li>
 <li>
 <p><strong>Agent level</strong>: User management within the GALE platform is focused on agent management, emphasizing individual agent deployments and configurations. Each agent's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting agents, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.</p>
@@ -2982,7 +2984,7 @@
 </li>
 <li>
 <p>Click <strong>Settings</strong> on the top menu.
-<a class="glightbox" href="../images/Settings-console-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Settings-console-access.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;"></a></p>
+<a class="glightbox" href="../images/settings-menu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/settings-menu.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 </ol>
 <p>The system redirects to the <strong>Users</strong> page under <strong>Users Management</strong> on the <strong>Settings</strong> console.</p>
@@ -3063,6 +3065,13 @@
 </li>
 </ul>
  </td>
+  </tr>
+  <tr>
+   <td><b>Monitoring - Audit Logs</b></td>
+   <td>View the log of all the changes made across the account by the linked users for log in and log out activities, and role management changes made by you for the specified time range.</td>
+   <td><ul><li>Select the date range and view periodic, event-based logs related to <b>Login/Log out</b> or <b>Roles</b> categories.</li>
+   <li>Set one or more levels of custom filters to view only specific audit logs.</li>
+   <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
 </table>
 

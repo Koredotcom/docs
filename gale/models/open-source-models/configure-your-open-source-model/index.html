@@ -2108,6 +2108,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configurations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2117,6 +2128,54 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#model-endpoint-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Endpoint Timeout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undeploy-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undeploy the Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2792,6 +2851,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#model-endpoint-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Endpoint Timeout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undeploy-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undeploy the Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2809,22 +2903,14 @@
 
 
 <h1 id="configure-your-open-source-model">Configure your Open-Source Model<a class="headerlink" href="#configure-your-open-source-model" title="Permanent link">&para;</a></h1>
-<p>You can modify the general details of the open-source model if required.</p>
-<p><strong>To modify the settings of the open-source model, follow the steps</strong>:</p>
-<ol>
-<li>
-<p>Click the <strong>Configurations</strong> tab from the left panel on the <strong>Models</strong> page. The <strong>Configurations</strong> page is displayed.</p>
-<p><a class="glightbox" href="../images/configure-open-source-model.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-open-source-model.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Make any required changes in the <strong>Description</strong>, or <strong>Tags</strong> fields, and the changes are auto-saved.</p>
-</li>
-<li>You also have the option to suspend your deployed custom model using the <strong>Proceed to undeploy</strong> button. It immediately un-deploys the model and is not available for any inferencing requests. Then the status of the model changes to “<strong>Ready to deploy</strong>”. You can deploy the model again from the Deploy section to use it.</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To delete an open-source model, you must undeploy it and then only you can delete it.</p>
-</div>
+<p>On the Configurations page, you can view the model name, edit the description, and add tags, adjust the model endpoint timeout duration, undeploy, or delete the model.</p>
+<p><a class="glightbox" href="../images/configure-open-source-model-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-open-source-model-1.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;"></a></p>
+<h2 id="model-endpoint-timeout">Model Endpoint Timeout<a class="headerlink" href="#model-endpoint-timeout" title="Permanent link">&para;</a></h2>
+<p>The model endpoint timeout defines the maximum time allowed for a request to complete before terminating the connection. If a request exceeds this time, it fails and triggers a timeout error for the endpoint. You can set the timeout duration between 30 to 180 seconds, with a default of 60 seconds.</p>
+<h2 id="undeploy-the-model">Undeploy the Model<a class="headerlink" href="#undeploy-the-model" title="Permanent link">&para;</a></h2>
+<p>You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click <strong>Proceed to undeploy</strong> on the Configurations page and follow the on-screen instructions.</p>
+<h2 id="delete-the-model">Delete the Model<a class="headerlink" href="#delete-the-model" title="Permanent link">&para;</a></h2>
+<p>You can delete an undeployed model. Deleting the model will remove all the associated data. Click <strong>Proceed to delete</strong> on the Configurations page and follow the on-screen instructions.</p>
 
 
 

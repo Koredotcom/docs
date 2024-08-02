@@ -2910,25 +2910,39 @@
 </li>
 <li>
 <p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
-<a class="glightbox" href="../images/api-node-general-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
+<a class="glightbox" href="../images/api-node-general-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 <li>
 <p>Enter or select the following information:</p>
 <ul>
 <li><strong>Custom Name</strong>: Enter an appropriate name for the node.</li>
 <li><strong>Type</strong>: Select the API type from the drop-down list - REST or SOAP.</li>
-<li><strong>Request Definition</strong>: Define the details of the service request to make the call and fetch the data. Click <strong>Define Request</strong> and enter or select the following details in the Edit Request dialog box:<br />
-<a class="glightbox" href="../images/api-node-edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a><ol>
+<li>
+<p><strong>Integration Type</strong>: Select the integration type for the connection—synchronous or Asynchronous—and choose the timeout duration for the integration.</p>
+<ul>
+<li><strong>Synchronous</strong>: The allowed range is 5 to 180 seconds (3 minutes). The default is 60 seconds.</li>
+<li><strong>Asynchronous</strong>: The allowed range is 60 seconds to 24 hours (86,400 seconds). The default is 60 seconds.</li>
+</ul>
+<p>The node will trigger a timeout error if the request is not completed within the selected time frame.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.</p>
+</div>
+</li>
+<li>
+<p><strong>Request Definition</strong>: Define the details of the service request to make the call and fetch the data. Click <strong>Define Request</strong> and enter or select the following details in the Edit Request dialog box:<br />
+<a class="glightbox" href="../images/api-node-edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
+<ol>
 <li>Select the request type from the list - GET, PUT, POST, PATCH, or DELETE.</li>
 <li>Paste your API Endpoint URL or cURL in the text field.</li>
-<li>In the <strong>Headers</strong> tab, specify the details of the Key and Value pair. For example, 
+<li>In the <strong>Headers</strong> tab, specify the details of the Key and Value pair. For example,
 Key: Content-Type
 Value: application/json</li>
 <li>The <strong>Body</strong> tab is displayed for all request types except GET. Select the body content type from the drop-down list:<ul>
 <li>application/x-www-form-urlencoded: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.</li>
 <li>application/json: Transmits data between servers and web applications using JSON format without processing.</li>
 <li>application/xml: Sends XML payload for SOAP services via POST methods, with the option to include node values.</li>
-<li>Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables. </li>
+<li>Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables.</li>
 </ul>
 </li>
 <li>Click the <strong>Test</strong> button at the top-right corner of the dialog. The API response will appear on the <strong>Response</strong> tab.</li>

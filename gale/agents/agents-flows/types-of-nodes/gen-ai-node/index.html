@@ -2919,7 +2919,7 @@
 <p><strong>Custom Name</strong>: Enter an appropriate name for the node.</p>
 </li>
 <li>
-<p><strong>Select Model</strong>: Select a model from the list of configured models. (For more information on models, see Model Studio.)</p>
+<p><strong>Select Model</strong>: Select a model from the list of configured models (For more information on models, see Model Studio).</p>
 </li>
 <li>
 <p><strong>System Prompt</strong>: Enter the System Prompt for your use case. 
@@ -2927,16 +2927,20 @@ For example, “Generate a summary of the transcription of a conversation in a m
 </li>
 <li>
 <p><strong>Prompt</strong>: It allows you to pass a variable to the System Prompt. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the Prompt.<br />
-Format: 
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.variable_name}}
-</span></code></pre></div>
-     Example:   <br />
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{context.conversation}}
-</span></code></pre></div></p>
+Format:</p>
+<p><code>{{context.variable_name}}</code></p>
+<p>Example:</p>
+<p><code>{{context.conversation}}</code></p>
 </li>
 <li>
-<p><strong>Examples</strong>: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.<br />
-<a class="glightbox" href="../images/gen-ai-node-summarization.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:70%;"></a> </p>
+<p><strong>Few shot examples</strong>: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.<br />
+<a class="glightbox" href="../images/gen-ai-node-summarization.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:60%;"></a> </p>
+</li>
+<li>
+<p><strong>Timeout</strong>: Select the timeout duration from the allowed range.
+The allowed Range is 30 to 180 seconds (3 minutes). The
+default is 60 Seconds (1 minute).
+The node will trigger a timeout error if the request is not completed within the selected time frame.</p>
 </li>
 <li>
 <p><strong>Hyperparameters</strong>: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.</p>
@@ -2981,9 +2985,8 @@ Format:
 <p>When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.</p>
 </div>
 <h2 id="access-the-output-of-the-gen-ai-node">Access the Output of the Gen AI Node<a class="headerlink" href="#access-the-output-of-the-gen-ai-node" title="Permanent link">&para;</a></h2>
-<p>The output of the Gen AI node is stored in a context variable and can be accessed via 
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{{context.steps.GenAINodeName.output}}
-</span></code></pre></div></p>
+<p>The output of the Gen AI node is stored in a context variable and can be accessed via</p>
+<p><code>{{context.steps.GenAINodeName.output}}</code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>GALE can automatically recognize variables/outputs. To do this, just type "context.steps." and you will see available context variables/nodes, including the nodes' outputs.</p>

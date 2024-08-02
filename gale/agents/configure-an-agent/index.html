@@ -1632,9 +1632,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#manage-asynchronous-configuration" class="md-nav__link">
+  <a href="#syncasync-mode-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Manage Asynchronous Configuration
+      Sync/Async Mode Setup
     </span>
   </a>
   
@@ -2898,9 +2898,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#manage-asynchronous-configuration" class="md-nav__link">
+  <a href="#syncasync-mode-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Manage Asynchronous Configuration
+      Sync/Async Mode Setup
     </span>
   </a>
   
@@ -2976,24 +2976,32 @@
 
 
 <h1 id="configure-an-agent">Configure an Agent<a class="headerlink" href="#configure-an-agent" title="Permanent link">&para;</a></h1>
-<p>You can modify the general details of your agent, such as agent's name and description, asynchronous configuration, and environment variables. You can also undeploy as well as delete the agent, if it's not in use. </p>
-<h2 id="manage-asynchronous-configuration">Manage Asynchronous Configuration<a class="headerlink" href="#manage-asynchronous-configuration" title="Permanent link">&para;</a></h2>
-<p>You can set the async mode configuration for the agent endpoint. If you change the mode, you must redeploy the agent.</p>
+<p>You can modify your agent's general details, such as its name and description, asynchronous configuration, and environment variables. You can also undeploy, and delete the agent if it's not in use.</p>
+<h2 id="syncasync-mode-setup">Sync/Async Mode Setup<a class="headerlink" href="#syncasync-mode-setup" title="Permanent link">&para;</a></h2>
+<p>You can set the sync/async mode configuration for the agent endpoint. If you change the mode, you must redeploy the agent.
+The key difference is that synchronous mode blocks the client until the response is received, while asynchronous mode allows the client to continue working while the integration processes the request.</p>
 <p>Steps to enable and configure the asynchronous mode:</p>
 <ol>
 <li>
-<p>On the <strong>Agents</strong> tab, click the the <strong>Agents</strong> for which you want to modify the configuration. The Agent Flow page is displayed. </p>
+<p>On the <strong>Agents</strong> tab, click the the <strong>Agents</strong> for which you want to modify the configuration. The Agent Flow page is displayed.</p>
 </li>
 <li>
-<p>Click <strong>Configurations</strong> in the left navigation and then click <strong>Manage async</strong>.<br />
-<a class="glightbox" href="../images/manage-async.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-async.png" alt="Manage Async Mode" title="Manage Async Mode" style="border: 1px solid gray; zoom:25%;"></a></p>
+<p>Click <strong>Configurations</strong> in the left navigation and then click <strong>Setup sync/async</strong>.<br />
+<a class="glightbox" href="../images/setup-sync-async.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/setup-sync-async.png" alt="Setup sync/async" title="Setup sync/async" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 <li>
-<p>In the Configure asynchronous mode dialog, choose the option to enable or disable the mode as required. If you are enabling the asynchronous mode, provide a URL and an access token in the fields and click <strong>Save</strong>.<br />
-<a class="glightbox" href="../images/enable-async-mode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-async-mode.png" alt="Enable Async Mode" title="Enable Async Mode" style="border: 1px solid gray; zoom:50%;"></a></p>
+<p>The Sync/Async mode setup pop-up displays with async mode disabled by default. Enter the Synchronous mode timeout duration: The allowed range is 60 to 300 seconds (5 minutes). The default is 180 Seconds (3 minutes).<br />
+<a class="glightbox" href="../images/sync-mode-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sync-mode-timeout.png" alt="Sync Mode Timeout" title="Sync Mode Timeout" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>If you have changed the mode, you must redeploy the agent - go to <strong>Agent endpoint</strong> in the left navigation and click the <strong>Deploy</strong> button on the top-right corner of the page.  </p>
+<p>Turn on the <strong>Enable async</strong> toggle to configure the asynchronous mode if required and click <strong>Save</strong>.</p>
+<ul>
+<li>If you enable the asynchronous mode, provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes).<br />
+<a class="glightbox" href="../images/async-mode-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/async-mode-configuration.png" alt="Async Mode Configuration" title="Async Mode Configuration" style="border: 1px solid gray; zoom:80%;"></a></li>
+</ul>
+</li>
+<li>
+<p>If you have changed the mode, you must redeploy the agent - go to <strong>Agent endpoint</strong> in the left navigation and click the <strong>Deploy</strong> button on the top-right corner of the page.</p>
 </li>
 </ol>
 <h2 id="manage-environment-variables">Manage Environment Variables<a class="headerlink" href="#manage-environment-variables" title="Permanent link">&para;</a></h2>
@@ -3003,11 +3011,11 @@ can be used by different nodes in the agent flow.</p>
 <p>Steps to add an environment variable:</p>
 <ol>
 <li>
-<p>On the <strong>Agents</strong> tab, click the the <strong>Agents</strong> for which you want to modify the details. The Agent Flow page is displayed. </p>
+<p>On the <strong>Agents</strong> tab, click the the <strong>Agents</strong> for which you want to modify the details. The Agent Flow page is displayed.</p>
 </li>
 <li>
 <p>Click <strong>Configurations</strong> in the left navigation and then click <strong>Manage environment variables</strong>.<br />
-<a class="glightbox" href="../images/manage-environment-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-environment-variables.png" alt="Manage Environment Variables" title="Manage Environment Variables" style="border: 1px solid gray; zoom:25%;"></a></p>
+<a class="glightbox" href="../images/manage-environment-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-environment-variables.png" alt="Manage Environment Variables" title="Manage Environment Variables" style="border: 1px solid gray; zoom:50%;"></a></p>
 </li>
 <li>
 <p>The <strong>Create environment variable</strong> dialog box is displayed. Click <strong>Add</strong> or <strong>Add variable</strong>.</p>
