@@ -26,13 +26,17 @@ You can use the deployed fine-tuned model in GALE for the following use cases:
 
 ## Deployment History
 
-After deploying a model, you can modify its parameters and redeploy the updated version. The deployment history table tracks the complete life cycle of the model, offering detailed information for each version. This includes the deployment name, the timestamp when it was deployed, the deployment duration, the individual who performed the deployment, and other relevant details. 
 
-Additionally, the system automatically appends a version number to the deployment name and increments it with each subsequent redeployment, ensuring a clear and organized record of all model versions and their respective changes.
+The deployment history table tracks the complete lifecycle of the model, offering detailed information for each version, such as the deployment name, timestamp, deployment duration, the individual who performed the deployment, and other relevant details. This table provides a comprehensive view of the model’s evolution, helping users understand changes and updates over time.
 
-For example, if a model named "Flan T5" is deployed for the first time, it will be named as "Flan T5_v1". Subsequent deployments will be named as "Flan T5_v2", "Flan T5_v3", and so on, incrementing the version number with each redeployment.
+After deploying a model, you can modify its parameters and redeploy the updated version. You can also edit the deployment name, but on redeployment, the system will retain the original name. This ensures a clear and organized record of all model versions and their respective changes.
 
-The most recent deployment is marked with a green ticket next to the model name. Click on any deployment version to view the details.  
+The system automatically appends a version number to the original deployment name and increments it with each subsequent redeployment.
+For example, if a model named "Flan T5" is deployed for the first time, it will be named "Flan T5_v1." Even if you edit the deployment name, subsequent redeployments will continue with the original name, resulting in "Flan T5_v2," "Flan T5_v3," and so on.
+
+The most recent deployment is marked with a green tick next to the model name. You can click on any deployment version to view its details.
+
+  
 <img src="../images/deployment-history.png" alt="Deployment History" title="Deployment History" style="border: 1px solid gray; zoom:80%;">
 
 **General details**: This section displays the model's basic information, such as its name, description, tags, optimization technique, parameters, the hardware used, and deployment duration.
