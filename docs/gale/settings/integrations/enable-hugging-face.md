@@ -51,7 +51,7 @@ You can test your connection after you provide the details to verify the accurac
 
     !!! note
 
-        * Once the Hugging Face connection is completed, you can see your connection name in the drop-down box while selecting and deploying an Open-source model.  For more information about selecting and deploying, see [Select and Deploy an Open-Source Model](../models/open-source-models/select-and-deploy-an-open-source-model.md)
+        * Once the Hugging Face connection is completed, you can see your connection name in the drop-down box while selecting and deploying an Open-source model.  For more information about selecting and deploying, see [Select and Deploy an Open-Source Model](../models/open-source-models/select-and-deploy-an-open-source-model.md).
 
         * If you delete the Hugging Face connection used for the model's deployment, the system will ask you to select a new connection on redeployment. 
 
