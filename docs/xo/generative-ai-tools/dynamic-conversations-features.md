@@ -206,6 +206,7 @@ The following table displays the Dynamic Conversation features and the supported
     <td>❌</td>
     <td>✅*</td>
   </tr>
+  
   <tr>
     <td>OpenAI – GPT 3.5 Turbo</td>
     <td>✅</td>
@@ -229,6 +230,30 @@ The following table displays the Dynamic Conversation features and the supported
     <td>❌</td>
     <td>❌</td>
     <td>✅*</td>
+  </tr>
+    <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
+    <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
   </tr>
   <tr>
     <td>Anthropic – Claude Instant</td>
@@ -302,7 +327,7 @@ Agents will be able to choose the LLM to rephrase their responses in the followi
 
 ### Answer Generation
 
-This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../../searchai/answer-configuration.md#answers-generation).
+This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
 ### GenAI Node
 
@@ -317,9 +342,9 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 
 **Usage**
 
-When creating or editing a Dialog Task that’s created manually or[ auto-generated](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
+When creating or editing a Dialog Task that’s created manually or[ auto-generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
 
-When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-node.md).
+When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../automation/use-cases/dialogs/node-types/genai-node.md).
 
 
 ### GenAI Prompt
@@ -348,7 +373,7 @@ This feature lets you define custom user prompts based on the conversation conte
 2. When you add custom tags to the **current message**, **user profile**, and **session** under **Instance Properties**, you can build custom profiles for the bot conversation. .
 3. Configuring node connections on an instance lets you define the connection rules for the conversation using transition conditions. This lets the conversation follow specific paths based on the user’s input.
 
-If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-prompt.md).
+If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../automation/use-cases/dialogs/node-types/genai-prompt.md).
 
 
 ### Repeat Responses
@@ -426,7 +451,10 @@ User: What about the interest rates of both loans?
 
 The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
 
-
+#### Conversation History Length
+This setting allows you to specify the number of recent messages sent to the Kore.ai XO GPT model as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. You can set any value greater than 1. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. The default value is 10.
+You can access the Conversation History Length from **Repharse User Query** > **Advanced Settings**.
+<img src="../images/ruq-ad.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
 
 ### Vector Generation
 
@@ -453,7 +481,7 @@ Before performing utterance testing, the user selects the **Zero-shot Model with
 
 The identified intent is then displayed as the matched intent.
 
-If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
+If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
 
 
 
@@ -486,6 +514,6 @@ During utterance testing, the user provides a more descriptive intent name with 
 * User utterance input
 * Intent names
 
-If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings).
+If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings).
 
 		

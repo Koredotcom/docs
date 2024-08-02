@@ -4,9 +4,8 @@ To execute Conversation Test Suites and get results. This API only initiates the
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Users invited as testers are not allowed to execute this API via the UI or a backend function (API).</p>
+<p>Testers can't run conversation test suites through the interface or API.</p>
 </div>
-
 
 <table>
   <tr>
@@ -100,7 +99,7 @@ curl --location
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-         "version": "published", "userEmailId": "{{john.stevens@kore.com}}" 
+         "version": "published", "userEmailId": "email-id-of-the-bot-owner-or-developer" 
          }'
 ```
 

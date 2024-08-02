@@ -213,6 +213,28 @@ The following table displays the Co-Pilot features and the supported models.
     <td>✅</td>
     <td>✅</td>
   </tr>
+   <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+   <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
   <tr>
     <td>Anthropic – Claude Instant</td>
     <td>✅</td>
@@ -356,7 +378,7 @@ This feature also helps you predict and simulate the end user’s behavior and c
     * You can accept the suggestions shown or type custom input at every step.
     * Create a Test Suite after stopping the recording and validating the model.
 
-If the feature is disabled, the Platform doesn’t display the Generative AI suggestions icon and the suggestions themselves.[ Learn more.](../../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#generated-user-response-suggestions)
+If the feature is disabled, the Platform doesn’t display the Generative AI suggestions icon and the suggestions themselves.[ Learn more.](../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#generated-user-response-suggestions)
 
 
 ### Conversation Summarization
@@ -380,7 +402,7 @@ An example of the usage: When Conversation Summary is enabled and the conversati
 
 **Usage**
 
-The[ Conversation Summary](../../apis/automation/conversation-summary.md) public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.
+The[ Conversation Summary](../apis/automation/conversation-summary.md) public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.
 
 **Scenario 2**
 
@@ -388,7 +410,7 @@ When closing a conversation request, contact centers require an agent to summari
 
 **Usage** 
 
-The system uses the[ Conversation Summary](../../apis/automation/conversation-summary.md.) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.
+The system uses the[ Conversation Summary](../apis/automation/conversation-summary.md) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.
 
 ### Generating Opposite Utterance Suggestions
 Use LLM models for generating opposite utterances during design time.
@@ -423,7 +445,7 @@ This feature lets you generate test cases based on the NLU Language selected, an
     * Different scenarios to simulate end-user utterances,
     * Random training utterances and test cases that are generated to avoid duplicate test cases from Generative AI.
 
-If this feature is disabled, you will not have the option to generate test cases during batch testing.[ Learn more.](../../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically)
+If this feature is disabled, you will not have the option to generate test cases during batch testing.[ Learn more.](../automation/testing/regression-testing/batch-testing.md#generating-test-cases-automatically)
 
 
 
@@ -456,7 +478,7 @@ Once you request to generate utterances for a given intent, the Platform provide
 
 You can add/delete the suggested training utterances from the list or generate more suggestions.
 
-If this feature is disabled, you won’t see the Suggestions tab on the training page.[ Learn more.](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#Automatically_Generate_Utterance_Suggestions)
+If this feature is disabled, you won’t see the Suggestions tab on the training page.[ Learn more.](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#Automatically_Generate_Utterance_Suggestions)
 
 
 
@@ -477,7 +499,7 @@ In the standard Virtual Assistant creation journey, use case suggestions help li
 
 			
 
-Generating Use Cases automatically creates up to 30 customizable[ Dialog Tasks](../../automation/use-cases/dialogs/dialog-tasks-overview.md) tailored to specific use cases. This streamlines the development process, as developers won’t need to manually create each interaction from scratch.
+Generating Use Cases automatically creates up to 30 customizable[ Dialog Tasks](../automation/use-cases/dialogs/dialog-tasks-overview.md) tailored to specific use cases. This streamlines the development process, as developers won’t need to manually create each interaction from scratch.
 
 LLM and Generative AI help generate accurate suggestions automatically without configuring any LLM settings for this feature. Providing a detailed bot description is crucial for the effective functioning of this feature. The more information you provide about the virtual assistant’s intended purpose and capabilities, the better the generated use case suggestions will be.
 
@@ -506,6 +528,5 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 
 1. The user selects the relevant use cases from the suggestions to create and configure the VA accordingly.
 
-If you select Create without use cases when creating a bot, the system won’t provide use case suggestions for VA creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.[ Learn more](../../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant).
-
+If you select Create without use cases when creating a bot, the system won’t provide use case suggestions for VA creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.[ Learn more](../getting-started/building-a-virtual-assistant.md).
 
