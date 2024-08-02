@@ -2,9 +2,8 @@
 
 The model overview page displays real-time progress of the Fine-tuned models. 
 
-To access the model’s overview page,  go to  **Models** > **Fine-tuned models** and click **Model**.  
+To access the model’s overview page,  go to  **Models** > **Fine-tuned models** and click the **Model**.  
 <img src="../images/model-overview.png" alt="Model Overview" title="Model Overview" style="border: 1px solid gray; zoom:60%;">
-
 
 * **General Information**: This section displays the model's **progress status**, **Total time**, and **Author details**.  
 
