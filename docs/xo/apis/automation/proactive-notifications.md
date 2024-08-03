@@ -84,30 +84,22 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
 
-
 ```json
-curl --location --request 
-POST \' https://{{host}}/api/public/bot/{{BotID}}/notify' \
---header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
+curl --location 'https://{{host}}/api/public/bot/{{BotId}}/notify' \
 --header 'Content-Type: application/json' \
+--header 'auth: {{jwt-token}}' \
 --data-raw '{
-    "channel": "msteams",
-    "userIdentityType": "resolve",
-    "message": {
-        "type": "text",
-        "val": "hello"
-    },
-    "identities": [
-        "john@kore.com",
-        "jane@outlook.com",
-        "sam@slack.com"
-    ]
+"channel": "msteams",
+"userIdentityType": "resolve",
+"message": {
+"type": "text",
+"val": "PROD proactive bot1 notification"
+},
+"identities": [
+"pxxxxxxn@koredxtai.onmicrosoft.com"
+]
 }'
 ```
 
