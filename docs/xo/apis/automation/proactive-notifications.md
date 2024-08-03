@@ -95,7 +95,7 @@ curl --location 'https://{{host}}/api/public/bot/{{BotId}}/notify' \
 "userIdentityType": "resolve",
 "message": {
 "type": "text",
-"val": "PROD proactive bot1 notification"
+"val": "Please reset your password."
 },
 "identities": [
 "pxxxxxxn@koredxtai.onmicrosoft.com"
