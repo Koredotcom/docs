@@ -11,6 +11,10 @@ There are two types of Flows:
 1. **Start Flows**: Most flows are classified as start flows, applicable to both voice and chat channels.
 2. **Exit Flows**: Used when a call disconnects, applicable to both voice and chat channels.
 
+    !!! Note
+
+        Only flows that have been published will be available for selection in the **Flow Type** dropdown.
+
 ### The Start Flows
 
 Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
