@@ -7783,6 +7783,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../agentai/configuration/feedback-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../agentai/configuration/widget-theming-layout-customization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Widget Theming Layout Customization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -13887,7 +13929,7 @@
 <p>A travel agency receives a typical request, which can be of the form:</p>
 <p><em>I am interested in traveling tomorrow from LA to NYC, first class, and I want a window seat.</em></p>
 <p>In this query, the Virtual Assistant needs to process information such as: travel date, departure city, arrival city, flight class and seat preference, in order to respond to this enquiry.</p>
-<p>Each of these multiple values or details come from different independent entities. Composite Entities enable you to combine these independent entities or sub-entities.</p>
+<p>Each of these multiple values or details comes from different independent entities. Composite Entities enable you to combine these independent entities or sub-entities. The sub-entities are identified based on the type of input given by the user. (For example, a composite entity can have two sub-entities: <em>phoneNumber</em> and <em>emailAddress</em>. When the user provides the input, the NLP engine understands it and maps it to the right sub-entity.)</p>
 <h2 id="how-it-works">How it Works?<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
 <p>When a composite entity reaches the dialog flow:</p>
 <ul>
@@ -14004,6 +14046,7 @@
 <li>The Sub-entity with Description cannot be part of a composite entity.</li>
 <li>Make sure that the sub-entities are not part of the dialog flow in the task using the composite entity.</li>
 <li>If the sub-entity allows multi-items, the parent composite entity accepts only one value for the sub-entity and not a list.</li>
+<li>Normally, the NLP engine can identify and map user input to the correct sub-entity. However, when PII (Personal Identifiable Information) masking is applied to sensitive data, the NLP engine cannot interpret the masked input, making it impossible to determine which sub-entity (e.g., phone number or email address) the data corresponds to.</li>
 </ul>
 <h2 id="passing-values">Passing Values<a class="headerlink" href="#passing-values" title="Permanent link">&para;</a></h2>
 <p>You can pass values to composite entities using the entity pre-assignment from source Dialog tasks, Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/?h=dialog+no#instance-properties" target="_blank">here</a> for more information on entity pre-assignment.</p>
