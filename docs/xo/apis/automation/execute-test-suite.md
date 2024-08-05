@@ -7,7 +7,6 @@ To execute Conversation Test Suites and get results. This API only initiates the
 <p>Testers can't run conversation test suites through the interface or API.</p>
 </div>
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
