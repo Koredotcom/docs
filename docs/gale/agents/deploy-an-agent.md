@@ -50,10 +50,7 @@ Steps to deploy an agent:
     4. Click **Save**. The async push endpoint is created.  
     <img src="../images/async-push-endpoint.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;">
 
-        !!! Note
 
-            * Turning off the async toggle and clicking Save after entering the callback URL and access token saves and hides the async push endpoint. This does not affect the deployed version of the agent or impact the sync and async poll endpoints.
-            * Clicking Cancel after entering the callback URL and access token does not save or hide the async push endpoint. This does not affect the deployed version of the agent or impact the sync and async poll endpoints.
 
 ## Redeploy an Agent for the Changes in the Flow
 
