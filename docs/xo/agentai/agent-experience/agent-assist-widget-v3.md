@@ -4,8 +4,6 @@ The Agent AI is an AI powered virtual assistant to optimize contact center agent
 
 The following features are available in the Agent AI widget:
 
-
-
 * **Dialog Tasks**: Configured Use Cases that trigger when a customer’s utterance matches the content of a Dialog Task. Designed to help agents minimize manual typing by copy-pasting the relevant answers from the Dialog Tasks.
 * **Playbooks**: Contact center agents are expected to provide the best customer experience despite high call volumes and complex interactions. To empower agents in this endeavor, Agent AI introduces the Playbook feature—a standard tool offering structured guidance for handling customer interactions.
 * **Real-time Agent Coaching**: Real-time coaching for the agents based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur.
@@ -59,7 +57,7 @@ My bot functionality can be used in multiple circumstances (but not limited to):
 
 ### Assist Tab
 
-The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, and a “bulb” icon (if there is a Dynamic Playbook match). For these features to be available, they should be configured on your device. This tab also accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file.
+The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, and a “bulb” icon (if there is a Dynamic Playbook match). For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
 
 <img src="../widget-images/assist-tab.png" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">  
 
@@ -72,6 +70,7 @@ The Assist tab facilitates the following:
 * Provide a historical view to look at the previously executed automation.
 * View Conversation History for chat conversations– The **History** tab shows the record of user-bot interaction.
 * Send/Copy button.
+* Quickly scroll up and down to the first and last messages with the help of the **up**/**down** arrows.
 * Feedback for Dialog Task and Knowledge AI.
 * Attach files or images up to the size of 25 MB.
 * Lets you collect customer information during live conversations through the In-line digital forms.
@@ -81,7 +80,8 @@ The Assist tab features the following:
  * **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
  * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
 * **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
-* **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click * * **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
+* **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
+* **Up/down arrow buttons**: These buttons appear only after the messages in the Assist tab are large enough to require a scroll bar. Click the **up** and **down** arrows to go to the first and last messages respectivly.
 * **Resume button**: This button applies to the Playbooks and appears while switching to another playbook while one is already running.
 * **List View**: This is an entity list button. When clicked, a pop-up displays a list of all entity entries present in the conversation.
 * **Restart button**: When clicked, this button provides agents with two options: "Start over" and "Restart with Captured Inputs." These options allow agents to either restart the Dialog Task or continue it by providing input for each entity before restarting.
