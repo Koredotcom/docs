@@ -34,7 +34,7 @@ The following details of the voice campaigns are shown in a table:
 
         The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable.
 
-#### Agentless Dialer
+### Agentless Dialer
 
 Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.
 
@@ -134,7 +134,7 @@ Steps to create Voice campaigns:
     * **Description**: A description of the campaign.  
     <img src="../images/description.png" alt="Campaign Description" title="Campaign Description" style="border: 1px solid gray; zoom:80%;">
     * **Contact Lists**: Select the **Contact Lists** that will be dialed, for the campaign from the drop-down list and then click **Done**.  
-    <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:80%;">
     * Select the **DNC List** from the drop-down.  
     <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:80%;">
 
@@ -150,7 +150,7 @@ Steps to create Voice campaigns:
 
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.  
-    <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:80%;">
     * **Dialing Order**: Choose the order of dialing the phone numbers.  
     <img src="../images/dialing-order.png" alt="Dialing Order" title="Dialing Order" style="border: 1px solid gray; zoom:80%;">
     * **Max Attempts Per Contact**: Enter the count for the maximum number of attempts by the dialer to call each phone number in the campaign.  
@@ -217,10 +217,8 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.  
 <img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
-
 A confirmation message is displayed. Click **Stop**.  
 <img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
-
 
 ### Edit a Voice Campaign
 
