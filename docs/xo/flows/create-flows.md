@@ -11,10 +11,6 @@ There are two types of Flows:
 1. **Start Flows**: Most flows are classified as start flows, applicable to both voice and chat channels.
 2. **Exit Flows**: Used when a call disconnects, applicable to both voice and chat channels.
 
-    !!! Note
-
-        Only flows that have been published will be available for selection in the **Flow Type** dropdown.
-
 ### The Start Flows
 
 Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
@@ -100,6 +96,11 @@ Steps to create a Start Flow:
 11. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours. You can either select the default _Out-of-Hours Flow_ or one that you have created yourself.
 <img src="../images/out-of-hours-flow.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:100%;">
 
+
+    !!! Note
+
+        Only flows that have been published will be available for selection in the dropdowns.
+
 #### Chat
 
 Selecting chat will display all the chat channels configured in the channels section. The displayed values include:
@@ -116,6 +117,11 @@ Selecting chat will display all the chat channels configured in the channels sec
 
 5. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours.
 <img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:100%;">
+
+
+    !!! Note
+
+        Only flows that have been published will be available for selection in the dropdowns.
 
 6. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the Flow itself.
 
