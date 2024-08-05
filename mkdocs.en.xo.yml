@@ -371,6 +371,7 @@ nav:
         - Answers Configuration: agentai/configuration/answers-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
+        - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
