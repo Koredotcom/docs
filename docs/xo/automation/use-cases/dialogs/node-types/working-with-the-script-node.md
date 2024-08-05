@@ -140,4 +140,4 @@ context.canProceed = valid;
 
 **Related Link**
 
-* [**koreUtil libraries**](../../../../../apis/koreutil-libraries){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
+* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.md){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
