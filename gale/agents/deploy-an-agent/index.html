@@ -1353,6 +1353,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#synchronous-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synchronous Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asynchronous-push-and-poll-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous Push and Poll Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asynchronous Push and Poll Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asynchronous-push-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous Push Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asynchronous-poll-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous Poll Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-an-agent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy an Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#redeploy-an-agent-for-the-changes-in-the-flow" class="md-nav__link">
     <span class="md-ellipsis">
       Redeploy an Agent for the Changes in the Flow
@@ -2847,6 +2898,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#synchronous-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synchronous Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asynchronous-push-and-poll-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous Push and Poll Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asynchronous Push and Poll Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asynchronous-push-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous Push Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asynchronous-poll-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous Poll Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-an-agent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy an Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#redeploy-an-agent-for-the-changes-in-the-flow" class="md-nav__link">
     <span class="md-ellipsis">
       Redeploy an Agent for the Changes in the Flow
@@ -2874,41 +2976,60 @@
 
 
 <h1 id="deploy-an-agent">Deploy an Agent<a class="headerlink" href="#deploy-an-agent" title="Permanent link">&para;</a></h1>
-<p>GALE supports both synchronous and asynchronous modes of agent deployment.</p>
+<p>GALE supports both synchronous and asynchronous agent deployment modes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Before deploying the agent, you must fix any errors or warnings in the Agent Flow.</p>
 </div>
-<p>Steps to deploy an agent and get its endpoint in synchronous mode:</p>
+<h2 id="synchronous-endpoint">Synchronous Endpoint<a class="headerlink" href="#synchronous-endpoint" title="Permanent link">&para;</a></h2>
+<p>A synchronous endpoint handles requests and responses immediately and sequentially. The client waits for the server to process the request and return a response before proceeding. This approach is suitable for real-time operations requiring immediate response.</p>
+<h2 id="asynchronous-push-and-poll-endpoints">Asynchronous Push and Poll Endpoints<a class="headerlink" href="#asynchronous-push-and-poll-endpoints" title="Permanent link">&para;</a></h2>
+<p>Push endpoints actively send data to the client, while poll endpoints require the client to retrieve the data on their own. The key difference between asynchronous push and poll endpoints is how the response data is delivered to the client.</p>
+<h3 id="asynchronous-push-endpoints">Asynchronous Push Endpoints<a class="headerlink" href="#asynchronous-push-endpoints" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The integration "pushes" the response data to the client as soon as it becomes available.</li>
+<li>This allows the client to receive updates in real-time or near real-time.</li>
+<li>The client sets up a webhook or other mechanism to receive the pushed data.</li>
+<li>Useful for integrations where the client needs to be notified of changes immediately.</li>
+</ul>
+<h3 id="asynchronous-poll-endpoints">Asynchronous Poll Endpoints<a class="headerlink" href="#asynchronous-poll-endpoints" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The client "polls" or periodically checks the integration to fetch the response data.</li>
+<li>The client initiates the requests to retrieve the data on their schedule.</li>
+<li>The client is responsible for checking for new data rather than waiting for it to be pushed.</li>
+<li>Useful for integrations where the client only needs to check for updates at specific intervals.</li>
+</ul>
+<h2 id="deploy-an-agent_1">Deploy an Agent<a class="headerlink" href="#deploy-an-agent_1" title="Permanent link">&para;</a></h2>
+<p>Steps to deploy an agent:</p>
+<ol>
+<li>On the <strong>Agents</strong> tab, click the name of the agent that you want to deploy and then click <strong>Agent endpoint</strong> in the left navigation.</li>
+<li>
+<p>The Agent endpoint page is displayed. Click <strong>Deploy</strong>.<br />
+<a class="glightbox" href="../images/deploy-enpoint-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deploy-enpoint-page.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
+<li>
+<p>The agent is deployed and the <strong>Sync</strong> and <strong>Async poll</strong> endpoints are generated.<br />
+<a class="glightbox" href="../images/sync-async-poll.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sync-async-poll.gif" alt="Sync Async Poll" title="Sync Async Poll" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
+<li>
+<p>If you want to generate an Async push endpoint for the agent, do the following:</p>
 <ol>
 <li>
-<p>Click <strong>Agent endpoint</strong> in the left navigation.<br />
-<a class="glightbox" href="../images/agents-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agents-endpoint.png" alt="Deployed Version" title="Deployed Version" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the <strong>Async push</strong> tab and click <strong>Enable</strong>/<strong>Settings</strong>.<br />
+<a class="glightbox" href="../images/enable-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-settings.png" alt="Enable/Settings" title="Enable/Settings" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Deploy</strong>. By default, the agent is deployed in Sync (Synchronous) mode. After the deployment, you can see the dedicated API endpoint created for your agent. The API endpoint is available in the following formats: <strong>curl</strong>, <strong>Python</strong>, and <strong>Node.js</strong>. You can copy the code and use it as needed.<br />
-<a class="glightbox" href="../images/sync-agent-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sync-agent-endpoint.png" alt="Sync" title="Sync" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>The <strong>Sync/Async mode setup</strong> pop-up displays with sync mode disabled by default. Enter the Synchronous mode timeout duration: The allowed range is 60 to 300 seconds (5 minutes). The default is 180 Seconds (3 minutes).</p>
 </li>
 <li>
-<p>If you want to change the deployment mode to Async (Asynchronous), click the <strong>Async</strong> option on the page and then click <strong>Configure</strong>.<br />
-<a class="glightbox" href="../images/configure-button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-button.png" alt="Configure Button" title="Configure Button" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Turn on the <strong>Enable async</strong> toggle to configure the asynchronous mode. Provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes).<br />
+<a class="glightbox" href="../images/async-mode-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/async-mode-configuration.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 <li>
-<p>In the Configure asynchronous mode dialog, enter the URL of the external application and the access token generated by the application and click <strong>Save</strong>.<br />
-<a class="glightbox" href="../images/configure-asynchronous-mode-popup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-asynchronous-mode-popup.png" alt="Configure Asynchronous Mode" title="Configure Asynchronous Mode" style="border: 1px solid gray; zoom:60%;"></a></p>
+<p>Click <strong>Save</strong>. The async push endpoint is created.<br />
+<a class="glightbox" href="../images/async-push-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/async-push-endpoint.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
-<li>
-<p>If you have changed the mode, you must redeploy the agents. Click <strong>Deploy</strong> to do so.<br />
-<a class="glightbox" href="../images/deploy-button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deploy-button.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.<br />
-<a class="glightbox" href="../images/deploy-confirmation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deploy-confirmation.png" alt="Deploy Confirmation" title="Deploy Confirmation" style="border: 1px solid gray; zoom:60%;"></a></p>
-</li>
-<li>
-<p>The <strong>Async push</strong> and <strong>Async poll</strong> endpoints are generated.<br />
-<a class="glightbox" href="../images/async-push-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/async-push-endpoint.png" alt="Async Push Endpoint" title="Existing Push Endpoint" style="border: 1px solid gray; zoom:80%;"></a><br />
-<a class="glightbox" href="../images/async-poll-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/async-poll-endpoint.png" alt="Async Poll Endpoint" title="Async Poll Endpoint" style="border: 1px solid gray; zoom:80%;"></a></p>
+</ol>
 </li>
 </ol>
 <h2 id="redeploy-an-agent-for-the-changes-in-the-flow">Redeploy an Agent for the Changes in the Flow<a class="headerlink" href="#redeploy-an-agent-for-the-changes-in-the-flow" title="Permanent link">&para;</a></h2>

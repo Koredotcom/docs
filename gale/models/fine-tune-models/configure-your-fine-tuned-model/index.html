@@ -2906,7 +2906,11 @@
 <p>On the Configurations page, you can edit the model name and description, add tags, adjust the model endpoint timeout duration, undeploy, or delete the model.</p>
 <p><a class="glightbox" href="../images/configure-fine-tuned-model-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-fine-tuned-model-1.png" alt="Configure Fine-Tuned Model" title="Configure Fine-Tuned Model" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h2 id="model-endpoint-timeout">Model Endpoint Timeout<a class="headerlink" href="#model-endpoint-timeout" title="Permanent link">&para;</a></h2>
-<p>The model endpoint timeout defines the maximum time allowed for a request to complete before terminating the connection. If a request exceeds this time, it fails and triggers a timeout error for the endpoint. You can set the timeout duration between 30 to 180 seconds, with a default of 60 seconds.</p>
+<p>You can configure a specific timeout for your model's endpoint. Enter the timeout duration from the allowed range - 30 to 180 seconds (3 minutes). The default is 60 Seconds (1 minute). If the request is not completed within the specified time frame, a timeout error will be triggered for the endpoint.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Timeout precedence: Agent timeout &gt; Node timeout &gt; Model timeout.</p>
+</div>
 <h2 id="undeploy-the-model">Undeploy the Model<a class="headerlink" href="#undeploy-the-model" title="Permanent link">&para;</a></h2>
 <p>You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click <strong>Proceed to undeploy</strong> on the Configurations page and follow the on-screen instructions.</p>
 <h2 id="delete-the-model">Delete the Model<a class="headerlink" href="#delete-the-model" title="Permanent link">&para;</a></h2>

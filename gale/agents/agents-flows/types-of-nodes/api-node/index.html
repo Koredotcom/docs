@@ -2925,8 +2925,15 @@
 </ul>
 <p>The node will trigger a timeout error if the request is not completed within the selected time frame.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Notes</p>
+<ul>
+<li>
 <p>The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.</p>
+</li>
+<li>
+<p>Timeout precedence: Agent timeout &gt; Node timeout &gt; Third-party API endpoint timeout.</p>
+</li>
+</ul>
 </div>
 </li>
 <li>
