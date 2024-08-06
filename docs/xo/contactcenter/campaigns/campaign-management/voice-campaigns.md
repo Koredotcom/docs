@@ -5,6 +5,12 @@ Outbound campaigns are reshaping how businesses connect with their audience. The
 You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **Proactive Outreach** > **Campaign Management**.  
 <img src="../images/campaigns-page-main.png" alt="Campaigns Main Page" title="Campaigns Main Page" style="border: 1px solid gray; zoom:80%;">
 
+Enable the "Outbound Voice Campaigns" permission in the [User Permissions](../../../user-management/role-management.md#agent) for agents who will handle campaign calls in the queue.
+
+!!! Note
+
+    Agents need to be configured to either inbound or outbound, as agent blending is not currently available.
+
 ## Voice Campaigns
 
 The following details of the voice campaigns are shown in a table:  
@@ -28,7 +34,7 @@ The following details of the voice campaigns are shown in a table:
 
         The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable.
 
-#### Agentless Dialer
+### Agentless Dialer
 
 Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.
 
@@ -47,7 +53,6 @@ To create a campaign when Agentless Dialing Mode is selected:
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
-## Auto Dialers
 
 ### Progressive Dialer
 
@@ -124,14 +129,13 @@ Steps to create Voice campaigns:
 
 <img src="../images/new-campaign-button-voice.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
-
 2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
     * **Campaign Name**: Enter a name for the campaign.  
     <img src="../images/campaign-name.png" alt="Campaign Name" title="Campaign Name" style="border: 1px solid gray; zoom:80%;">
     * **Description**: A description of the campaign.  
     <img src="../images/description.png" alt="Campaign Description" title="Campaign Description" style="border: 1px solid gray; zoom:80%;">
     * **Contact Lists**: Select the **Contact Lists** that will be dialed, for the campaign from the drop-down list and then click **Done**.  
-    <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:80%;">
     * Select the **DNC List** from the drop-down.  
     <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:80%;">
 
@@ -145,10 +149,9 @@ Steps to create Voice campaigns:
     * Select the **Dialing Mode** from the drop-down list.  
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:80%;">
 
-
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.  
-    <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:80%;">
     * **Dialing Order**: Choose the order of dialing the phone numbers.  
     <img src="../images/dialing-order.png" alt="Dialing Order" title="Dialing Order" style="border: 1px solid gray; zoom:80%;">
     * **Max Attempts Per Contact**: Enter the count for the maximum number of attempts by the dialer to call each phone number in the campaign.  

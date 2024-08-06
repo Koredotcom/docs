@@ -20,12 +20,14 @@ The Platform now supports two new OpenAI models for various [Co-Pilot](../../gen
 #### Usage Information for Enterprise Accounts
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
+
 Key updates:
 
 * The new Billing menu in the Admin Console left navigation.
 * Combined XO10 and XO11 usage statistics on a single page.
 * Detailed usage trends are accessible via the Manage button.  
-[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#admin-console-plan-and-usage)
+
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md)
 
 
 ### Deploy Management
@@ -67,7 +69,8 @@ Backward compatibility:
 
 * Existing bots in the Configured state are copied to the Published state.
 
-These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users.
+These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users. [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
 
 ### Channels
 
@@ -98,6 +101,9 @@ Key benefits:
 * Improved user control: Manage users’ push notification preferences more effectively.
 * Enhanced flexibility: Manage device subscriptions programmatically.
 
+[Learn more :octicons-arrow-right-24:](./../../apis/automation/manage-sdk-push-notifications.md)
+
+
 #### Public API for SSO Configuration Management 
 
 The platform has introduced public APIs for managing Single Sign-On (SSO) configurations. This new API complements existing bot creation and publishing APIs, allowing for a more comprehensive automation of account setup processes. It significantly enhances the platform's capabilities for enterprise customers who require frequent audits or automated deployments.
@@ -117,6 +123,8 @@ Key benefits:
 * Reduced manual effort: Simplifies the audit process by allowing automated SSO setup.
 * Increased flexibility: Account administrators can programmatically manage SSO settings.
 * Improved efficiency: Facilitates faster and more consistent SSO deployment across accounts.
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/enable-and-manage-sso-configuration.md)
 
 <hr>
 

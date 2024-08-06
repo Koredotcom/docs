@@ -20,7 +20,7 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 1. Navigate to **Users Management** > **Settings** on the **Settings** console.
 2. Click the **Configure Directory** button in the **Configure sync with directory** section.
-<img src="../images/configure-directory.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
 
 3. Complete the setup by following the steps below in the **Configure Directory** window:
 

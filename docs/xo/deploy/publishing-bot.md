@@ -1,4 +1,4 @@
-# Publishing your VA
+# Publishing your App
 
 End users can interact with a VA only when it is published. The Kore.ai Experience Optimization Platform provides a publishing flow to allow administrators to review new VAs and updates before they are made available to end users. The publishing workflow applies to any component that impacts the end user.
 
@@ -296,6 +296,22 @@ Every component that impacts end-user interactions or experience goes through th
    <td>Custom Script
    </td>
    <td>Replaces the Custom Script file in the Published version with the ones in the In Development version.
+   </td>
+  </tr>
+
+  <tr>
+   <td>Generative AI and LLM
+   </td>
+   <td>Replaces the Generative AI and LLM related features in the Published version with the ones in the In Development version.The setting includes:
+
+   <br>
+    – Integration
+    <br>
+    – Prompts and Requests Library
+    <br>
+    – Feature Mappings
+    <br>
+    – Guardrails
    </td>
   </tr>
   
