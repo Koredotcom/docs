@@ -7,7 +7,7 @@ Follow these steps:
 
 1. Configure QM permissions:
 
-    1. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**.
+    1. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**. 
        (Only the app owner has access to Role Management).
 
     2. Assign relevant roles (Supervisor role) or create custom roles with QM permissions.
