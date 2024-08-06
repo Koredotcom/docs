@@ -6,7 +6,7 @@ On the Configurations page, you can edit the model name and description, add tag
 
 ## Model Endpoint Timeout
 
-The model endpoint timeout defines the maximum time allowed for a request to complete before terminating the connection. If a request exceeds this time, it fails and triggers a timeout error for the endpoint. You can set the timeout duration between 30 to 180 seconds, with a default of 60 seconds.
+You can configure a specific timeout for your model's endpoint. Enter the timeout duration from the allowed range — 30 to 180 seconds (3 minutes). The default is 60 Seconds (1 minute). If the request is not completed within the specified time frame, a timeout error will be triggered for the endpoint.
 
 
 ## Undeploy the Model 
