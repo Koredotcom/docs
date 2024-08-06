@@ -45,8 +45,7 @@ Steps to add and configure the node:
 
         !!! note 
 
-            Priority order when multiple timeouts are set:  Agent timeout > Node timeout > Model timeout.
-
+            Timeout precedence: Agent timeout > Node timeout > Model timeout.
 
     * **Hyperparameters**: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 

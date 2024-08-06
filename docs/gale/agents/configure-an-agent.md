@@ -19,7 +19,7 @@ Steps to enable and configure the asynchronous mode:
 
     !!! note 
 
-        Priority order when multiple timeouts are set:  Agent timeout > Node timeout > Model timeout.
+        Timeout precedence: Agent timeout > Node timeout > Model timeout.
 
 4. Turn on the **Enable async** toggle to configure the asynchronous mode if required and click **Save**.
 

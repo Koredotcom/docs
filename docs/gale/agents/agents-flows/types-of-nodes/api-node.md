@@ -31,7 +31,7 @@ Steps to add and configure the node:
 
             * The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
             
-            * Priority order when multiple timeouts are set:  Agent timeout > Node timeout > Third-party API endpoint timeout.
+            * Timeout precedence: Agent timeout > Node timeout > Third-party API endpoint timeout.
 
 
     * **Request Definition**: Define the details of the service request to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
