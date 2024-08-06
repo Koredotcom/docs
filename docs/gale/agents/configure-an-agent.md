@@ -17,6 +17,10 @@ Steps to enable and configure the asynchronous mode:
 3. The Sync/Async mode setup pop-up displays with async mode disabled by default. Enter the Synchronous mode timeout duration: The allowed range is 60 to 300 seconds (5 minutes). The default is 180 Seconds (3 minutes).  
 <img src="../images/sync-mode-timeout.png" alt="Sync Mode Timeout" title="Sync Mode Timeout" style="border: 1px solid gray; zoom:70%;">
 
+    !!! note 
+
+        Priority order when multiple timeouts are set:  Agent timeout > Node timeout > Model timeout.
+
 4. Turn on the **Enable async** toggle to configure the asynchronous mode if required and click **Save**.
 
     * If you enable the asynchronous mode, provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes).  
