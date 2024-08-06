@@ -11,7 +11,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <img src="../images/sa-unified-dataflow.svg" style="zoom:200%;"></img>
         <kr-grid-title>Flows & Routing</kr-grid-title>
         <kr-grid-desc>Define the end-to-end customer experience at a contact center for each communication channel. Configure routing and related properties - create skill groups, add skills, and set up queues and assignments.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./configurations/default-flows/configure-default-flows.md)
+        [Learn more :octicons-arrow-right-24:](../flows/introduction-to-flows.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/sa-unified-users.svg" style="zoom:200%;"></img>
@@ -29,7 +29,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <img src="../images/sa-agent-console.svg" style="zoom:200%;"></img>
         <kr-grid-title>Agent Console</kr-grid-title>
         <kr-grid-desc>Boost agent efficiency with AI tools, secure communication, and collaborative features. Empower managers and supervisors to monitor and join calls, and allocate tasks to designated agents or queues.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./console/conversation-tray/conversation-tray.md)
+        [Learn more :octicons-arrow-right-24:](../console/conversation-tray.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/campaigns.svg" style="zoom:200%;"></img>

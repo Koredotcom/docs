@@ -15,24 +15,34 @@ Steps to add and configure the node:
 3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, you can drag the **API** node from the Assets panel onto the canvas.)
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
 
 5. Enter or select the following information:
 
     * **Custom Name**: Enter an appropriate name for the node.
     * **Type**: Select the API type from the drop-down list - REST or SOAP.
+    * **Integration Type**: Select the integration type for the connection—synchronous or Asynchronous—and choose the timeout duration for the integration.
+        * **Synchronous**: The allowed range is 5 to 180 seconds (3 minutes). The default is 60 seconds.
+        * **Asynchronous**: The allowed range is 60 seconds to 24 hours (86,400 seconds). The default is 60 seconds.
+
+        The node will trigger a timeout error if the request is not completed within the selected time frame.
+
+        !!! Note
+
+            The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
+
     * **Request Definition**: Define the details of the service request to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
     <img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
         1. Select the request type from the list - GET, PUT, POST, PATCH, or DELETE.
         2. Paste your API Endpoint URL or cURL in the text field.
-        3. In the **Headers** tab, specify the details of the Key and Value pair. For example, 
+        3. In the **Headers** tab, specify the details of the Key and Value pair. For example,
         Key: Content-Type
         Value: application/json
         4. The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
             * application/x-www-form-urlencoded: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.
             * application/json: Transmits data between servers and web applications using JSON format without processing.
             * application/xml: Sends XML payload for SOAP services via POST methods, with the option to include node values.
-            * Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables. 
+            * Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables.
         5. Click the **Test** button at the top-right corner of the dialog. The API response will appear on the **Response** tab.
         6. Click **Save** at the top-right corner of the dialog.
 
