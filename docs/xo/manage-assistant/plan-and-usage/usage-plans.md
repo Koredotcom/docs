@@ -1142,17 +1142,6 @@ To upgrade your standard plan, follow the below steps:
 
 The system redirects to the Kore.ai XO Platform[ contact page](https://kore.ai/contact-us/), where you can fill in the contact form for further assistance.
 
-		
-
-	
-
-	
-
-		
-
-			
-
-
 ## Admin Console – Plan and Usage
 
 An **Admin** user can view and manage all the plan subscriptions for their own account and publish Virtual Assistants on the **Admin Console** like any end user. Additionally, the Admin user can approve VA publish requests from account owners based on their Usage Plan, and manage usage from a single dashboard under the **Billing** section.[ Learn more](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Admin_Account).
@@ -1178,7 +1167,9 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
 
 1. On the Bot Builder, click the **profile** icon in the top right corner.
 2. Click **Go to Admin Console**.
-    ![alt_text](images/up(36).png "image_tooltip")
+    <img src="../images/up(36).png" alt="Plan and Usage - Admin Console" title="Plan and Usage - Admin Console" style="border:1px solid gray;zoom:70%;">
+    
+
 3. Login and navigate to **BILLING** > **PLAN & USAGE** on the left menu.
 
 
@@ -1190,11 +1181,6 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
 
       The **Billing** > **Plan and Usage** option does not appear on the Admin Console (left menu) for a shared account user.
 
-	
-
-		
-
-			
 
 
 ### Deployment Flow

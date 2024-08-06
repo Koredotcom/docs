@@ -66,7 +66,7 @@ To delete an agent group, follow these steps:
 2. In the **Edit Group** window, click the **Delete Agent Group** icon at the bottom left.
 <img src="../images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:80%;">
 
-## **Agent Status Management**
+## Agent Status Management
 
 This feature lets you display various statuses of an Agent – such as available, offline, busy, or away – along with a brief description for each status. You can add new statuses and edit or delete the existing ones.
 
@@ -158,11 +158,11 @@ A confirmation message is displayed.
 <img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;">  
 Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
 
-## **Agent Settings**
+## Agent Settings
 
 Agent Settings let you configure the settings that apply to all agents across Contact Center.
 
-Go to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agent Settings** to view and edit the following:
+Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > **Agent Settings** to view and edit the following:
 
 1. **Answer Mode**: These settings let you define how conversations get answered on each channel (Digital – Chats, and Emails, as well as Voice).
 2. **Conversation Status Control**: These options let you define how conversation status behaves and the messages triggered by status changes.
@@ -171,8 +171,12 @@ Go to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agent Settings
 5. **Skill Modification**: You can decide if the agents can modify skills attached to a conversation.
 6. **Auto Logout**: Administrators can configure this setting to specify a period of inactivity that automatically logs out agents.
 
-These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options. 
-<img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:80%;">
+7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
+
+8. **Load Balanced Agent Routing**: This setting ensures a fair distribution of tasks among available agents with the necessary skills and language proficiency.
+
+These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
+<img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -186,7 +190,7 @@ These settings are grouped and presented as closed groups when first opening the
 
 ### Chats
 
-* **Manual**: Agents must click **_Accept _** to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
+* **Manual**: Agents must click ‘Accept’ to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
 <img src="../images/chat-configuration.png" alt="Chat Configuration Manual" title="Chat Configuration Manual" style="border: 1px solid gray; zoom:80%;">
 
 * **Auto**: Chats are auto-answered, and the agent does not need to click ‘Accept’. Set the first response timeout for agents to respond to new chats.
@@ -341,3 +345,8 @@ This feature allows agents to temporarily pause conversations that are awaiting 
 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/enable-snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
+
+## Load-Balanced Agent Routing
+
+By default, the load-balanced agent routing functionality is disabled. Administrators can turn on the toggle to enable the functionality allowing the distribution of tasks more evenly and reducing the chances of agent overload, leading to better focus and potentially faster task completion times, decreasing wait times for tasks. and improve overall system performance.  
+<img src="../images/load-balanced-agent-routing.png" alt="Load-Balanced Agent Routing" title="Load-Balanced Agent Routing" style="border: 1px solid gray; zoom:80%;">

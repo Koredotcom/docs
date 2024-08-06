@@ -341,8 +341,10 @@ nav:
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
       - Campaign Management:
         - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
+        - SMS Campaigns: contactcenter/campaigns/campaign-management/sms-campaigns.md
         - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
+      - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
@@ -354,10 +356,10 @@ nav:
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
       - Configure:
-        - Best Practices for Auditors: quality-management/configure/best-practices-for-auditors.md
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+        - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
         - Settings: quality-management/configure/settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
@@ -368,6 +370,8 @@ nav:
         - Welcome Events: agentai/configuration/welcome-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
+        - Feedback Settings: agentai/configuration/feedback-settings.md
+        - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md

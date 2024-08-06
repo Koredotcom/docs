@@ -73,7 +73,7 @@ To set up node connection conditions, please follow the steps outlined in [Addin
 
 ## JavaScript Examples
 
-Using JavaScript, you can customize your dialog task by processing data before or after an API call. For example, directing the dialog task flow. You can use the `Context` object type-ahead feature to identify and select dynamic variables as shown in the following illustration. For more information, refer to [Context Object](../../../context-object/){:target="_blank"}.
+Using JavaScript, you can customize your dialog task by processing data before or after an API call. For example, directing the dialog task flow. You can use the `Context` object type-ahead feature to identify and select dynamic variables as shown in the following illustration. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
 
 <img src="../images/script-node-js-example.png" alt="Script node - Javascript Example" title="Script node - Javascript Example" style="border:1px solid gray;zoom:70%;">
 
@@ -140,4 +140,4 @@ context.canProceed = valid;
 
 **Related Link**
 
-* [**koreUtil libraries**](../../../../../apis/koreutil-libraries){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)
+* [**koreUtil libraries**](../../../../apis/automation/koreutil-libraries.md){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)

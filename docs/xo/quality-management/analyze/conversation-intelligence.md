@@ -11,14 +11,14 @@ The key sections of this dashboard include:
 * **Agent Efficacy** – Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
 * **Customer Experience** – Avg. Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
 * **Insights Mining** –  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
-* **Interaction Details** – Date/Time of the session, Call ID, Agent name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
+* **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
 Admins and Supervisors can access the Conversation Intelligence dashboard from **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Intelligence**.  
 <img src="../images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters
 
-You can use the filters to customize the intelligence tab.
+You can use the filters to customize the Intelligence tab.
 
 ### Create a Filter
 
@@ -30,17 +30,20 @@ Steps to create a filter:
 2. Click **+ Add New Filter**.  
 <img src="../images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, select **Queues** or **Agents**. \
+3. On the **New Filter** window, select **Queues** or **Agents**. 
 <img src="../images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
-4. Select the list of options pertaining to **Queues **or** Agents**, as required.
-5. Click **Save & Apply**.  
+4. Select the list of options pertaining to **Queues** or **Agents**, as required.
+5. Click **Save & Apply**.
+   
     !!! Note
-    
+
         Clicking the **Apply** button does not save the filter.
-6. Enter the **Filter Name,** and click **Save & Apply**.  
+
+6. Enter the **Filter Name**, and click **Save & Apply**.  
+
     !!! Note
-    
+
         You can turn on the toggle to Make this the default view filter.
 
     <img src="../images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
@@ -110,10 +113,20 @@ Steps to edit a filter:
 In this section, you can filter data by time range. By default, data is displayed for the current day (Today). Select a time range, and click **Apply**.  
 <img src="../images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
+## Compare Functionality
+
+The Conversation Intelligence dashboard's compare functionality allows you to view a comparison of metrics between a selected date range and the previous date range. The compare toggle is enabled by default.
+
+The spike or dip indicators for playbook adherence are linked to this toggle and only display across stages and steps if enabled. These indicators are included for all fields. They can have different meanings based on an increase or decrease; an increase can be positive or negative depending on the metrics, resulting in either red badges (negative) or green badges (positive). 
+
+For example, if the selected date range is the last 7 days, all metrics, such as the Average Speed to Answer, will show a spike or dip indicating the percentage change for a selected period (June 5 - June 12) compared to the same duration in the previous period (May 29 - June 5).
+  
+<img src="../images/key-performance-indicators.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
+
 ## Channels
 
 You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
-<img src="../analyze/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Center Efficiency
 

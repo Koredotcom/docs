@@ -20,24 +20,28 @@ Steps to add and configure the node:
 5. Enter or select the following **General Settings**:
 
     * **Custom Name**: Enter an appropriate name for the node.
-    
-    * **Select Model**: Select a model from the list of configured models. (For more information on models, see Model Studio.)
+
+    * **Select Model**: Select a model from the list of configured models (For more information on models, see Model Studio).
 
     * **System Prompt**: Enter the System Prompt for your use case. 
     For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters.”
 
     * **Prompt**: It allows you to pass a variable to the System Prompt. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the Prompt.  
-    Format: 
-        ~~~
-        {{context.variable_name}}
-        ~~~
-         Example:     
-        ~~~
-        {{context.conversation}}
-        ~~~  
-   
-    * **Examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.  
-    <img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:70%;"> 
+    Format:
+
+        `{{context.variable_name}}`
+
+         Example:
+
+        `{{context.conversation}}`
+
+    * **Few shot examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.  
+    <img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:60%;"> 
+
+    * **Timeout**: Select the timeout duration from the allowed range.
+    The allowed Range is 30 to 180 seconds (3 minutes). The
+    default is 60 Seconds (1 minute).
+    The node will trigger a timeout error if the request is not completed within the selected time frame.
 
     * **Hyperparameters**: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
@@ -60,19 +64,16 @@ Steps to add and configure the node:
 
 7. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
-!!! failure "Standard Error"
+!!! Failure "Standard Error"
 
     When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.
 
-
 ## Access the Output of the Gen AI Node
 
-The output of the Gen AI node is stored in a context variable and can be accessed via 
-~~~
-{{context.steps.GenAINodeName.output}}
-~~~
+The output of the Gen AI node is stored in a context variable and can be accessed via
 
-!!! note 
-    
+`{{context.steps.GenAINodeName.output}}`
+
+!!! Note
+
     GALE can automatically recognize variables/outputs. To do this, just type "context.steps." and you will see available context variables/nodes, including the nodes' outputs.
-

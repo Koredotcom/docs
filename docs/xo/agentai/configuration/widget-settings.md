@@ -46,7 +46,7 @@ This section lets you set your preferences based on the channels. It has three c
 
 * **Auto Summarization**: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the **Notes** or **Remark** field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the **Submit** button.
 
-    Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a “dialog task with an entity node” enabling them to customize the Conversation Summary.
+    Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a language-specific dialog task, enabling them to customize the Conversation Summary.
 
 * **Widget Landing Tab**: This widget allows you to select the default landing page for your selected channel and is available for all three channels. Note that the **Transcription** option appears here for selection only when the **Transcript Tab** widget is enabled.
 
@@ -66,7 +66,7 @@ This section lets you set your preferences based on the channels. It has three c
 
     * **OOTB Kore Summarization**: For Kore’s default auto summarization.
 
-    * **Custom Dialog Task**: To select a dialog task with an entity node. These message nodes call APIs. The Custom Dialog Task field displays a list of dialog tasks or child bots based on bot selection at the app level. At the app level, if you have selected:
+    * **Custom Dialog Task**: To select a language-specific dialog task that is displayed based on the selected language. The Custom Dialog Task field displays a list of dialog tasks or child bots based on bot selection at the app level. At the app level, if you have selected:
 
         * **Universal Bot**: The backend logic detects it and populates its associated Child Bots. You can expand each Child Bot to view and select its dialog task.
 

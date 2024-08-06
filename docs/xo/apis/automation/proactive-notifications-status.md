@@ -6,7 +6,7 @@ To fetch the status of Proactive Notifications API.
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>POST
+   <td>GET
    </td>
   </tr>
   <tr>
@@ -85,10 +85,8 @@ To fetch the status of Proactive Notifications API.
 ## Sample Request
 
 ```json
-curl --
-GET \ 'https://{{host}}/api/public/bot/{{BotID}}/notify/status/{{requestId}}' \
---header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
---header 'Content-Type: application/json'
+curl --location 'https://{{host}}/api/public/bot/{{BotId}}/notify/status/{{requestId}}' \
+--header 'auth: {{jwt-token}}' \
 ```
 
 ## Body Parameters

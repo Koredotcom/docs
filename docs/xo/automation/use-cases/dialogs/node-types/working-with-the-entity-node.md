@@ -40,7 +40,7 @@ The Entity window allows you to configure the General Settings, User, and Error 
 1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the entity node. Entity names cannot include spaces.
 2. From the **Type** drop-down list, select an entity type depending on the expected user input. For example, if you want the user to type the departure date, select **Date** from the drop-down. The platform does the basic validation based upon the Type selected.  
 The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance. For more information, refer to [Entity Types](../../entity-types/){:target="_blank"}.
-3. Based on the Type selected, you have an option to set the Entity as **Multi-item** thereby allowing the user multiple selections. If enabled, the VA should expect multiple items for this entity from the user.
+3. Based on the Type selected, you can set the Entity as **Multi-item**, allowing the user multiple selections. If enabled, the VA should expect multiple items from the user for this entity separated by a comma (,), semicolon (;), or ‘and’.
 4. Under the **User Prompt** section, enter the prompt message that you want the user to see for this entity. For example, _Enter the Departure Date_.
     1. You can enter channel-specific messages for user prompts using the **Manage** link. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
     2. You can override the user prompt for this particular instance. To override,

@@ -2,6 +2,50 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.4 July 27, 2024
+<u> Patch Release </u>
+
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+
+### Search AI Configuration Moved from Account to Bot Level
+
+The Search AI Configuration data is now saved at the bot level instead of the account level.
+
+### Enhanced Scroll Functionality in the Widget
+
+In the Agent AI widget, the **Assist** and the **My Bot** tabs now contain “up” and “down” arrow buttons at the top and the bottom to let you scroll to the first and last messages. These buttons appear after the messages in the **Assist** tab are large enough to require a scroll bar.  
+<img src="../images/enhanced-scroll-functionality-1.png" alt="enhanced-scroll-functionality" title="enhanced-scroll-functionality" style="border: 1px solid gray; zoom:80%;">
+
+### Agent AI Enabled Dialog Tasks for Playbook Step Adherence and Triggers
+
+To improve the usability and relevance of the Playbooks module, Agent AI now restricts the selection of dialog tasks specified only for the Playbook’s designated channel. This dialog task selection applies during trigger point creation for Dynamic Playbooks and Step Adherence within Primary Playbooks.  
+<img src="../images/agent-ai-enabled-dialog-tasks-2.png" alt="agent-ai-enabled-dialog-tasks" title="agent-ai-enabled-dialog-tasks" style="border: 1px solid gray; zoom:80%;">
+
+### Feedback Reason and Comment on Summarization
+
+The Agent AI widget's Summary feature now offers enhanced feedback capabilities for auto-generated summaries. Agents can provide more specific and actionable feedback by selecting a reason from up to five customizable messages and adding optional comments. Administrators can edit these messages, turn the comment box on or off, and choose the feedback language. This improved feedback system allows agents to pinpoint issues with summaries more accurately, contributing to the continuous improvement of the auto-summarization feature's accuracy and relevance over time.  
+<img src="../images/feedback-reason-3.png" alt="feedback-reason" title="feedback-reason" style="border: 1px solid gray; zoom:80%;">
+
+### Language-specific Summarization
+
+The Agent AI widget now supports language-specific summarization for third-party agent desktops. Admins can customize the language of automatically generated conversation summaries by selecting the **Custom Dialog Task** option in the **Auto Summarization Model** section. After choosing a preferred language, the system displays a configured dialog task for that language. The summary is then generated based on this language-specific task, allowing for more accurate and culturally appropriate summaries across different languages.  
+<img src="../images/language-specific-summarization-4.png" alt="language-specific-summarization" title="language-specific-summarization" style="border: 1px solid gray; zoom:80%;">
+
+### View Summary from Any Active Tab
+
+The Agent AI widget now displays summaries more flexibly across all active tabs. When an agent closes a conversation, the summary appears on whichever tab they're currently viewing, not just the Assist tab. This change supports the widget's customizable layout feature, allowing agents to see summaries even if they've rearranged or removed certain tabs. For example, a summary can now pop up on the Search tab, enhancing the widget's versatility and ensuring agents always have access to important conversation summaries regardless of their current view.
+
+### Widget Layout Customization (Beta)
+
+The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options.  
+<img src="../images/widget-layout-customization-5.png" alt="widget-layout-customization" title="widget-layout-customization" style="border: 1px solid gray; zoom:80%;">
+
+### Entry/Exit Event Support in Third-Party Integration
+
+Integration with third-party applications lets Agent AI capture and process events like entry, exit, and internalTransfer between agents to ensure smooth transition and improved user experience. Currently, these events are only supported by Genesys. 
+
+<hr>
+
 ## v11.3.1 July 13, 2024
 
 <u> Patch Release </u>
@@ -16,15 +60,15 @@ This update includes bug fixes.
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-## Summarization Service Optimization
+### Summarization Service Optimization
 
 The Conversation Summary generation process has been updated to handle short, long, and abrupt endings of conversations. For long conversations, the maximum limit is set to 8000 tokens (approximately 6000 words).
 
-## Improved Widget Search Experience
+### Improved Widget Search Experience
 
 The widget search bar has been improved for a better user experience. It now shows "Ask a question" as placeholder text with a search icon on the right. As users type in the bar, the placeholder disappears, and the search icon changes to a close (X) icon, which makes it easy to clear the text.
 
-## Dashboard Updates
+### Dashboard Updates
 
 Agent AI dashboard is enhanced with new suggestion relevance metrics and reorganized customer inquiry insights.
 
@@ -35,17 +79,17 @@ Agent AI dashboard is enhanced with new suggestion relevance metrics and reorgan
 
 <img src="../images/updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
 
-## Attachment Support in Widget
+### Attachment Support in Widget
 
 Agent AI now accepts file or image attachments during live conversations. 
 
 If the file or image is not automatically detected, you can override and manually attach the file. To maintain system efficiency, attachments are limited to one file at a time and must not exceed 25 MB in size.
 
-## Dark Theme for Agent AI Widget
+### Dark Theme for Agent AI Widget
 
 Agents can now customize the widget appearance by selecting a theme. To select it, go to the widget’s **Settings** section and select **Dark** or **Light**.
 
-## In-line Digital Form
+### In-line Digital Form
 
 Agent AI has introduced in-line digital forms in the **Assist** tab, making it easier to collect customer information during live conversations. Configure the forms with dialog tasks to use this feature and select "Open inline form" in the **Web/Mobile SDK Form Behavior** setting.
 
@@ -55,7 +99,7 @@ Agent AI has introduced in-line digital forms in the **Assist** tab, making it e
 
 <img src="../images/inline-form.png" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
 
-## Streamlined Conversation Summary Management
+### Streamlined Conversation Summary Management
 
 Conversation Summary management has been improved to enhance usability and tracking.
 
@@ -69,7 +113,7 @@ Conversation Summary management has been improved to enhance usability and track
 * If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".  
 <img src="../images/summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
 
-## Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
+### Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
 
 Agent AI lets you configure channel-specific dialog tasks across all communication channels - Chat, Voice, and Email. You can also specify whether these dialog tasks appear in the list or only when searched in the widget’s library (**Search** tab). These preferences can be set while creating or editing a dialog task and are available under the **Triggers & Permissions** tab.
 <img src="../images/triggers-and-permissions.png" alt="triggers-and-permissions" title="free text" style="border: 1px solid gray; zoom:80%;">
@@ -82,7 +126,7 @@ Agent AI lets you configure channel-specific dialog tasks across all communicati
 
 **Disabled**: The dialog task doesn’t appear on the list but remains searchable via the “Ask a question” search bar in the **Search** tab.
 
-## Agent AI Raw Data API v2
+### Agent AI Raw Data API v2
 
 This updated version of the Raw Data API offers the following additional conversation data for deeper insights into Agent AI interactions and conversation flows:
 
@@ -115,7 +159,7 @@ The **Auto-Scroll Assist Tab Content toggle** lets you manage the scrolling func
 
 <img src="../images/autoscroll-enabled-disabled-1.png" alt="autoscroll-enabled-disabled" title="autoscroll-enabled-disabled" style="border: 1px solid gray; zoom:80%;">
 
-## Entity-Based Summarization
+### Entity-Based Summarization
 
 Dialog tasks having “message nodes” didn’t let users customize the Conversation Summary. Hence, to let users customize the Conversation Summary, “message nodes” are replaced with “entity nodes”. To utilize this capability, admins must create dialog tasks with entity nodes and select these dialog tasks in the **Agent AI** > **Configuration** > **Widget Settings** > **AgentAssist Channel Specific Settings** > **Auto Summarization** > **Auto Summarization Model** > **Custom Dialog Task** section.
 

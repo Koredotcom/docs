@@ -91,6 +91,171 @@ The options listed include the default mapped integrations and others available 
 8. Select **_Yes_** for **Enable Channel**.
     ![alt_text](images/sunshine-(6).png )
 9. Click **Save**.
+
+## Templates Support
+
+Sunshine Conversations templates are pre-defined structures you can use to send rich messages to users for consistent and engaging interactions on the XO Platform. Templates help create a set of “canned messages” or “agent saved replies,” which is especially useful for messages that are difficult to craft on the fly because they require external resources.
+
+To trigger various message templates, you must use a specific JavaScript format in the **Bot Responses** section of the **Message Node** in a Dialog Task. Below are the supported templates along with their sample code formats:
+
+* **Compound Message**: Combines multiple elements like text, images, buttons, and quick replies to create an engaging and informative message. [See example](https://docs.smooch.io/guide/template-messages/#compound-message){:target="_blank"}. 
+
+    ```js
+    var message = {
+        "content":{
+            type: 'image',
+            text: 'I strongly recommend our Family Basket. It's made just for people like you.'
+            "actions": [
+                {
+                    type: 'postback',
+                    text: 'Subscribe',
+                    payload: 'NOOP'
+                },
+                {
+                    type: 'postback',
+                    text: 'Learn more',
+                    payload: 'NOOP'
+                }
+            ],
+            mediaUrl: 'https://media.smooch.io/templates/template-family-basket.jpg'
+        }
+    }   
+    print(JSON.stringify(message))
+    
+    ```
+
+* **Carousel Message**: Allows you to send a series of cards that users can swipe through. Each card can contain an image, title, subtitle, and buttons for further actions. [See example](https://docs.smooch.io/guide/template-messages/#carousel-message){:target="_blank"}. 
+
+    ```js
+    var message = {
+    "content": {
+    "type": "carousel",
+    "items": [
+    {
+    "title": "Tacos",
+    "description": "Description",
+    "mediaUrl": "https://som.iitkgp.ac.in/images/71stFoundationDay.jpg",
+    "actions": [
+    {
+    "text": "Select",
+    "type": "postback",
+    "payload": "TACOS"
+    },
+    {
+    "text": "More info",
+    "type": "link",
+    "uri": "https://som.iitkgp.ac.in/images/71stFoundationDay.jpg"
+    }
+    ]
+    },
+    {
+    "title": "Ramen",
+    "description": "Description",
+    "mediaUrl": "https://som.iitkgp.ac.in/images/71stFoundationDay.jpg",
+    "actions": [
+    {
+    "text": "TemplateVisible",
+    "type": "postback",
+    "payload": "RAMEN"
+    },
+    {
+    "text": "More info",
+    "type": "link",
+    "uri": "https://som.iitkgp.ac.in/images/71stFoundationDay.jpg"
+    }
+    ]
+    }
+    ]
+    }
+    };
+    print(JSON.stringify(message));
+    ```
+
+* **File Message**: Allows you to send a file to the user. This can be useful for sharing documents, PDFs, images, or other types of files. [See example](https://docs.smooch.io/guide/template-messages/#file-message){:target="_blank"}. 
+
+    ```js
+    var message = 
+    {
+        "content":{
+            type: 'file',
+            role: 'appMaker',
+            mediaUrl: 'https://media.smooch.io/templates/template-warranty.pdf'
+    }
+    }
+    print(JSON.stringify(message))
+    ```
+
+* **Form Message**: Allows you to collect information from users through a structured form. This can include text fields, dropdown menus, radio buttons, and more. [See example](https://docs.smooch.io/guide/template-messages/#form-message){:target="_blank"}. 
+
+    ```js
+    var message = 
+    {
+        "content":{
+            type: 'file',
+            role: 'appMaker',
+            mediaUrl: 'https://media.smooch.io/templates/template-warranty.pdf'
+        }
+    }
+    print(JSON.stringify(message))
+    ```
+
+* **Quick Reply**: Provides users with predefined response options that they can select with a single tap. This can streamline interactions and guide users towards specific actions. [See example](https://docs.smooch.io/guide/template-messages/#quick-reply){:target="_blank"}. 
+
+    ```js
+    var message = 
+    {
+    "content": {
+        type: 'text',
+        text: 'Which language do you prefer?',
+        actions: [
+            {
+                type: 'reply',
+                text: 'English',
+                iconUrl: 'http://imgur.com/taco.png',
+                payload: 'Hollywood'
+            },
+            {
+                type: 'reply',
+                text: 'Hindi',
+                iconUrl: 'http://imgur.com/burrito.png',
+                payload: 'Bollywood'
+            }
+        ]
+    }
+    }
+    print(JSON.stringify(message))
+    ```
+
+* **Location Request**: Allows you to request the user’s location. This can be useful for services that require location information, such as finding the nearest store or providing location-based services. [See example](https://docs.smooch.io/guide/template-messages/#location-request){:target="_blank"}. 
+
+    ```js
+    var message = 
+    {
+        "content":{
+            type: 'text',
+            role: 'appMaker',
+            text: 'Let us know where you are.',
+            actions: [
+                {
+                    type: 'locationRequest',
+                    text: 'Send location'
+                }
+            ]
+        }
+    }
+    print(JSON.stringify(message))
+
+    ```
+
+### Create a Template
+
+To learn how to create a template, click [here](https://docs.smooch.io/guide/template-messages/#creating-a-template){:target="_blank"}.
+
+
+### Send a Template
+
+Once you create a template, you can send it to a user. [Learn more](https://docs.smooch.io/guide/template-messages/#sending-a-template-message){:target="_blank"}.
+
     
 
 
