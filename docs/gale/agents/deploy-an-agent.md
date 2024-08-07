@@ -50,7 +50,7 @@ Steps to deploy an agent:
 
         !!! note 
 
-        Timeout precedence: Agent timeout > Node timeout > Model timeout.
+            Timeout precedence: Agent timeout > Node timeout > Model timeout.
 
 
     4. Click **Save**. The async push endpoint is created.  
