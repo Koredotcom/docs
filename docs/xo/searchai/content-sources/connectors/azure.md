@@ -83,7 +83,6 @@ On successful authentication, this will set up a connection with Azure storage a
 !!!note
   This does not trigger content syncing automatically.
 
-
 ### Content Synchronization 
 
 To synchronize the content, go to the **Configurations** tab. The synchronization allows ingestion of the intended content from the Azure Storage account to the SearchAI application. You can either set up automatic synchronization or trigger a manual sync.  To initiate a sync manually, click on the **Sync Now** button at the end of the page.
