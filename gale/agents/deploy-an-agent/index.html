@@ -3022,8 +3022,12 @@
 <p>The <strong>Sync/Async mode setup</strong> pop-up displays with sync mode disabled by default. Enter the Synchronous mode timeout duration: The allowed range is 60 to 300 seconds (5 minutes). The default is 180 Seconds (3 minutes).</p>
 </li>
 <li>
-<p>Turn on the <strong>Enable async</strong> toggle to configure the asynchronous mode. Provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes).<br />
+<p>Turn on the <strong>Enable async</strong> toggle to configure the asynchronous mode. Provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes). The endpoint will trigger a timeout error if the request is not completed within the selected time frame.<br />
 <a class="glightbox" href="../images/async-mode-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/async-mode-configuration.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:60%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Timeout precedence: Agent timeout &gt; Node timeout &gt; Model timeout.</p>
+</div>
 </li>
 <li>
 <p>Click <strong>Save</strong>. The async push endpoint is created.<br />
