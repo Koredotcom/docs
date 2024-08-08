@@ -11,10 +11,6 @@ There are two types of Flows:
 1. **Start Flows**: Most flows are classified as start flows, applicable to both voice and chat channels.
 2. **Exit Flows**: Used when a call disconnects, applicable to both voice and chat channels.
 
-    !!! Note
-
-        Only flows that have been published will be available for selection in the **Flow Type** dropdown.
-
 ### The Start Flows
 
 Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
@@ -45,47 +41,47 @@ Steps to create a Start Flow:
 1. Selecting this option displays the list of phone numbers available within your account. Select a number to map to the start flow.
 <img src="../images/voice-channel-phone-number.png" alt="Phone Number" title="Phone Number" style="border: 1px solid gray; zoom:100%;">
 
-2. If you have not added any number to your account, click **Purchase a phone number**.
+2. If you have not added any number to your account, click **Purchase a phone number**.  
 <img src="../images/purchase-phone-number.png" alt="Purchase a Phone Number" title="Purchase a Phone Number" style="border: 1px solid gray; zoom:100%;">
 
-* The _Phone Number_ window is displayed as shown below. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:
-<img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
+    * The _Phone Number_ window is displayed as shown below. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:  
+    <img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
 
-* Select the **Country**.
-* Select either the **Local** or **Toll-Free Number** option.
-* Select the **State**.
-* Enter the **Area Code**.
-* Once the above fields are configured, the monthly fee and the operational charge per minute are displayed.  
-<img src="../images/area-code.png" alt="Pricing" title="Pricing" style="border: 1px solid gray; zoom:100%;">
+    * Select the **Country**.
+    * Select either the **Local** or **Toll-Free Number** option.
+    * Select the **State**.
+    * Enter the **Area Code**.
+    * Once the above fields are configured, the monthly fee and the operational charge per minute are displayed.  
+    <img src="../images/area-code.png" alt="Pricing" title="Pricing" style="border: 1px solid gray; zoom:100%;">
 
 3. Configure an available number with the following steps:
-* Click the **Get Number** button.
-* Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and click **Done**. A success confirmation message is displayed, and the phone number is added.
-<img src="../images/forward-to-phone-number.png" alt="Reserve Phone Number" title="Reserve Phone Number" style="border: 1px solid gray; zoom:100%;">
+    * Click the **Get Number** button.
+    * Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and click **Done**. A success confirmation message is displayed, and the phone number is added.
+    <img src="../images/forward-to-phone-number.png" alt="Reserve Phone Number" title="Reserve Phone Number" style="border: 1px solid gray; zoom:100%;">
 
-* You can now use this number for your Start Flow.
+    * You can now use this number for your Start Flow.
 
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
-* Google Cloud Speech-to-Text,
-* Microsoft Azure Speech Services,
-* Nuance,
-* AmiVoice,
-* NVIDIA Riva,
-* Deepgram, or
-* Gnani Speech-to-Text.
-<img src="../images/speech-recognition-engine.png" alt="Speech Recognition Engine" title="Speech Recognition Engine" style="border: 1px solid gray; zoom:100%;">
+    * Google Cloud Speech-to-Text,
+    * Microsoft Azure Speech Services,
+    * Nuance,
+    * AmiVoice,
+    * NVIDIA Riva,
+    * Deepgram, or
+    * Gnani Speech-to-Text.
+    <img src="../images/speech-recognition-engine.png" alt="Speech Recognition Engine" title="Speech Recognition Engine" style="border: 1px solid gray; zoom:100%;">
 
 5. Select an English Dialect. This option is not available for _AmiVoice_.
 
 6. Select a **TTS Speech Recognition**. You can choose from the following:
-* Microsoft Azure Speech Services,
-* Google Cloud Text-to-Speech,
-* AWS Amazon Polly,
-* Nuance,
-* ElevenLabs,
-* Whisper, or
-* NVIDIA RIVA Text-to-Speech  
-<img src="../images/text-to-speech-engine.png" alt="Text to Speech Engine" title="Text to Speech Engine" style="border: 1px solid gray; zoom:100%;">
+    * Microsoft Azure Speech Services,
+    * Google Cloud Text-to-Speech,
+    * AWS Amazon Polly,
+    * Nuance,
+    * ElevenLabs,
+    * Whisper, or
+    * NVIDIA RIVA Text-to-Speech  
+    <img src="../images/text-to-speech-engine.png" alt="Text to Speech Engine" title="Text to Speech Engine" style="border: 1px solid gray; zoom:100%;">
 
 7. Select a **Language** for text-to-speech, then select a **Voice**.
 
@@ -98,7 +94,11 @@ Steps to create a Start Flow:
 <img src="../images/no-agents-available-flow.png" alt="No Agents Available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:100%;">
 
 11. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours. You can either select the default _Out-of-Hours Flow_ or one that you have created yourself.
-<img src="../images/out-of-hours-flow.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/out-of-hours-flow.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
+
+    !!! Note
+
+        Only flows that have been published will be available for selection in the dropdowns.
 
 #### Chat
 
@@ -116,6 +116,10 @@ Selecting chat will display all the chat channels configured in the channels sec
 
 5. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours.
 <img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:100%;">
+
+    !!! Note
+
+        Only flows that have been published will be available for selection in the dropdowns.
 
 6. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the Flow itself.
 

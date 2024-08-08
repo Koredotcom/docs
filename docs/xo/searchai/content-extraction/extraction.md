@@ -28,6 +28,10 @@ Enter the following details of the strategy.
 * **Source Name**: This field allows you to select the data on which the strategy is to be applied. It lists all the data sources configured in the application and the content corresponding to each of them. 
 * **Content Type**: This field allows you to specify the content type within each data source. 
 
+You can also use the logical **AND operator** to apply multiple rules to filter the data on which a particular extraction strategy is to be applied. For instance, to select all the SearchAI marketing material (assuming, available as PDF files in a given directory), you can define the source as shown below.
+
+![Source filters](../images/source-filters.png "Source Filters")
+
 **Define Chunk Strategy**: Use this field to specify the chunk strategy and its configuration for the selected source. 	
 
 **Extraction Model**: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. At present, we support the Text Extraction Model, with plans to extend support for multiple models soon. 
@@ -44,6 +48,17 @@ Configuration: Use the **chunk size** field to define the size of a single chunk
     *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. A smaller chunk will result in a larger number of chunks and similarly, a larger chunk will result in a lesser number of chunks. An optimal  
     * **Chunk Overlap**: Number of tokens that should overlap between two consecutive chunks.
 
+**Layout Aware Extraction**
+Layout-aware chunk extraction is a strategy used to extract data by taking into account the layout and structure of the content. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. By configuring the strategy according to specific layout requirements, it becomes possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes.
+
+The layout-aware extraction method identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach improves SearchAssist's ability to comprehend tables, graphs, and charts in documents and generate answers using this information.
+
+!!!note
+    Currently, Layout aware extraction is only supported for PDF or docx file formats.  
+
+Configuration: Choose the appropriate **template** for the content extraction. Use the provided examples to customize the document to the template for optimum extraction results.
+
+![Layout Aware](../images/layout-aware-templates.png "Layout Aware Templates")
 Configure the strategy as per your needs and click the **Save** button. By default, as soon as a strategy is created, it is automatically enabled. 
 
 

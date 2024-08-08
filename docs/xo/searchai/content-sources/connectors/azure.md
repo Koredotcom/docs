@@ -80,9 +80,8 @@ On the **Authorization** tab, enter the following fields and click **Connect**.
 
 On successful authentication, this will set up a connection with Azure storage and display the connector as **Connected**.
 
-!!!note
+!!!Note
   This does not trigger content syncing automatically.
-
 
 ### Content Synchronization 
 
