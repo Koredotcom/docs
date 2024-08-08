@@ -44,13 +44,16 @@ Steps to deploy an agent:
     <img src="../images/enable-settings.png" alt="Enable/Settings" title="Enable/Settings" style="border: 1px solid gray; zoom:70%;">
 
     2. The **Sync/Async mode setup** pop-up displays with sync mode disabled by default. Enter the Synchronous mode timeout duration: The allowed range is 60 to 300 seconds (5 minutes). The default is 180 Seconds (3 minutes).
-    3. Turn on the **Enable async** toggle to configure the asynchronous mode. Provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes).  
+
+    3. Turn on the **Enable async** toggle to configure the asynchronous mode. Provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes). The endpoint will trigger a timeout error if the request is not completed within the selected time frame.  
     <img src="../images/async-mode-configuration.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:60%;">
+
+        !!! note
+
+            Timeout precedence: Agent timeout > Node timeout > Model timeout.
 
     4. Click **Save**. The async push endpoint is created.  
     <img src="../images/async-push-endpoint.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;">
-
-
 
 ## Redeploy an Agent for the Changes in the Flow
 
