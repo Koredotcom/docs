@@ -10,6 +10,7 @@ This update includes feature enhancements and bug fixes. Key features and enhanc
 ### Widget Landing Tab
 
 The location of the Widget Landing Tab settings is changed in this update:
+
 * Old location: Widget Settings > Agent AI Channel Specific Settings. 
 * New location: Widget Theming > Layout Customization > Widget Menu Layout.
 
@@ -18,8 +19,11 @@ This change consolidates widget customization options, making it easier for user
 ### OAuth Credential Update for Genesys
 
 The **Authorized Redirect URI** in the Genesys **Middleman App** is updated to ensure seamless integration of Agent AI with XO v11:
-* Previous URI: https://agentassist[.kore.ai/koreaiaa-genesys/](http://.kore.ai/koreaiaa-genesys/)
-* New URI: [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/) 
+
+* Previous URI: https://agentassist.kore.ai/koreaiaa-genesys/
+* New URI: https://platform.kore.ai/koreaiaa-genesys/
+
+<hr>
 
 ## v11.4 July 27, 2024
 <u> Patch Release </u>
