@@ -100,6 +100,11 @@ Steps to create a Start Flow:
 
         Only flows that have been published will be available for selection in the dropdowns.
 
+
+    !!! Note
+
+        Only flows that have been published will be available for selection in the dropdowns.
+
 #### Chat
 
 Selecting chat will display all the chat channels configured in the channels section. The displayed values include:
