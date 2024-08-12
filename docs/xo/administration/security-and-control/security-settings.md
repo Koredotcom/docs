@@ -57,20 +57,36 @@ However, you might not want the Platform to store this information due to the pr
 
 ## IP Address Restriction
 
-By default, users can access the XO Platform, and the Admin Console from any IP address as long as they have valid credentials.
+By default, users can access the XO Platform, and the Admin Console from any IP address, as long as they have valid credentials.
 
-You can, additionally, restrict the access from a specified range of IP addresses. This restriction applies to developers from your account alone, i.e if a developer belongs to another account also their access to the Platform using that account will not be restricted.
+Additionally, you can restrict access to a specified range of IP addresses. When you specify a list of IP addresses in the IP Address Restriction section, users within your account attempting to access the Platform from any other IP addresses will be restricted. 
 
-**Steps**:
+The XO Platform enables you to use a **Regular Expression (Regex)** pattern to define the list of IP addresses, eliminating errors, and the need to add each IP address individually. [Learn more](https://www.regextutorial.org/regex-for-ip-address-match.php){target="_blank"} about IP address Regex patterns.
 
-1. Go to **Security & Control -> Settings**.
-2. Under **IP Address Restriction**, you have two options:
-    1. _No restriction_ – this is the default setting and access is not restricted to any IP address.
-    2. _Restrict_ – Here you can specify a range of IP Addresses to which the access is restricted. All other addresses would be blocked from accessing the XO Platform and the Admin Console Platform.
+**Examples of IP address patterns**
 
-    !!! Note
+* `157.47.6[0-9].5[0-4]`
+* `115.114.88.(1[0-9][0-9]|200|222)`
+* `1[3-5]7.47.6[0-9]`
+* `1\d7.4[1-7].6[0-9]`
 
-        The IP Address of your (current) system should be part of the allowed IP Addresses list.
+During runtime, the system evaluates the regex to determine if an IP address is included in the defined list and takes the appropriate action, allowing access to IP addresses in the list and denying access to others.
+
+If a developer belongs to another account, their access to the Platform using that account are not restricted.
+
+### Steps to Configure IP Restriction
+
+1. Go to **Security & Control** > **Settings** on the left menu.
+2. Under **IP Address Restriction**, select one of the following options:
+    * **No restriction** – This is the default selection that does not restrict access to any IP address.
+    * **Restrict** – This selection allows you to define the list of allowed IP addresses. You must add a Regex to automatically determine the allowed IP Addresses.
+
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <ul><li>Your current IP Address should be part of the allowed IP Addresses list.</li>
+    <li>Even if the IP address of your current system is a part of the Regex pattern, it should be added separately after the regex pattern in the <b>Restrict</b> text field following a comma separator. For example: <i>115.114.88.(1[0-9][0-9]|200|222), 115.114</i>.88.222.</li></ul></div>
 
 
-    <img src="../images/bac-security-settings-img3.png" alt="Security Settings - IP Address Restriction" title="Security Settings - IP Address Restriction" style="border: 1px solid gray;zoom:70%;"/>
+<ol start="3"><li>Click <b>Save</b>.</li>
+
+<img src="../images/IP-address-restriction.png" alt="IP Address Restriction" title="IP Address Restriction" style="border: 1px solid gray;zoom:80%;"/></ol>
