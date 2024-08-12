@@ -337,23 +337,19 @@ To add a GenAI Node v2 prompt using JavaScript, follow the steps:
 12. The **Response Path** is displayed. Click **Lookup Path**.
 10. The **Actual Response** and **Expected Response** are displayed. 
     1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
-
-        **Note**: Both Actual Response and Expected Response are not editable.
-        ![alt_text](images/prl(2).png  )
+        !!! note
+            Both Actual Response and Expected Response are not editable.
+  
     
     2. If the response structure does not match, the responses will be in red. Click **Configure** to modify the Actual Response. The Post Processor Script is displayed. 
-    ![alt_text](images/prl(12).png  )
-        
         1. Enter the **Post Processor Script**. Click **Save & Test**. 
-            ![alt_text](images/prl(11).png  )
         2. The response is displayed. 
-                ![alt_text](images/prl(4).png  )
         3. Click **Save**. The actual response and expected response turn green.
 
-11. (Only for GenAI Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
-    ![alt_text](images/image1-8.png  )
+11. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.
+    <img src="../images/key-value.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
-<img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
 
 ## Dynamic Variables
 
