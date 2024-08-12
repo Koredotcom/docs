@@ -75,7 +75,7 @@ LLMs can now generate responses in bot languages that LLMs also support. To lear
 
 ### Data Sharing
 
-LLM and Generative AI features involve data sharing with third parties LLM providers, such as  OpenAI, Azure OpenAI, Claude, and others.
+LLM and Generative AI features involve data sharing with third-party LLM providers, such as OpenAI, Azure OpenAI, Claude, and others.
 
 
 ## Next Steps

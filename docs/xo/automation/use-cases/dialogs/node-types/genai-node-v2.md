@@ -265,6 +265,7 @@ This node captures entities in the following structure:
 ## Add Custom Prompt for GenAI Node
 
 This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
+
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
 To add a GenAI node prompt using JavaScript, follow the steps:

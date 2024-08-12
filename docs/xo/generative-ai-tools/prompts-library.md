@@ -7,7 +7,7 @@ Effective prompts play a crucial role in enhancing response accuracy when intera
 
 The post processor for prompts allows designers to align LLM responses perfectly with Platform expectations. Designers can modify the LLM response to guarantee the correct behavior and high-quality interactions during runtime.
 
-For more information on adding prompt for GenAI node, see [GenAI Node](../automation/use-cases/dialogs/node-types/genai-node-v2.md#add-custom-prompt-for-genai-node)
+For more information on adding prompt for GenAI node, see [GenAI Node](../automation/use-cases/dialogs/node-types/genai-node-v2.md#add-custom-prompt-for-genai-node).
 
 !!! note
 
