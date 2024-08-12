@@ -11,6 +11,7 @@ This update includes bug fixes and minor enhancements.
 ### Entity Node
 
 #### Transient Entity Feature for Enhanced Data Privacy
+
 The platform has introduced a "Transient Entity" feature for the Entity node. It allows platform users to ensure that sensitive user inputs do not persist after a conversation session ends.
 
 Key updates:
@@ -25,13 +26,81 @@ Key updates:
 Key benefits:
 
 * Enhanced Data Privacy: Sensitive information does not persist after conversations end.
-* Regulatory Compliance: Helps businesses meet GDPR, CCPA, and other data protection regulations.
-* Customizable: Works with existing Sensitive Entity settings for tailored data masking.
-* Audit-Friendly: Improves audit trails with a clear indication of purged data.
-* Industry-Specific Value: Particularly beneficial for the BFSI sector with strict data regulations.  
+* Audit-Friendly: Improves audit trails with a clear indication of purged data. 
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node)
 
+### Dialog Builder
+
+#### Real-time Collaboration in Dialog Builder
+
+The platform now enables real-time collaboration in the dialog builder. It allows team members to work together seamlessly, enhancing efficiency and productivity in dialog development.
+
+Key updates:
+
+* Live presence awareness: See who's currently working on the canvas. Cursor displays and avatar icons show active team members. Each member gets a unique color for easy identification.
+* Color-coded cursor: This helps team members easily identify their actions. They can see each other's cursor locations in real-time.  
+* Instant cursor chat: It enables instant communication through comments tied to cursor positions, allowing users to communicate ideas and feedback in real time.
+* Simultaneous editing and viewing: It allows team members to work together seamlessly.
+
+Key benefits:
+
+* Improved team efficiency.
+* Decreased risk of conflicting changes.
+* Faster decision-making and problem-solving.
+* Immediate feedback and idea sharing.
+* Streamlined dialog development process.
+
+<img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool)
+
+#### Redesigned Property Panel for Dialog Builder Nodes
+
+The redesigned property panel for Dialog Builder nodes provides a fluid experience with better organization of the elements, easier discoverability of the options, and a new theme.
+
+Key updates:
+
+* Clean, intuitive layout: Logical organization of properties and minimized clutter for easier navigation.
+* Compact and responsive design: Streamlined interface for quicker access to properties. Adapts to various screen sizes and orientations.
+* Consistent updating: Applied to all nodes for uniform experience. 
+
+Key benefits:
+
+* Improved property accessibility.
+* Enhanced user efficiency in modifying element properties.
+* Easier navigation and reduced cognitive load for users.
+* Consistent experience across different devices.
+
+### Digital Forms
+
+#### Field Validations using Regex
+
+The platform now supports Regex-based field validations in Digital Forms, enhancing data collection capabilities.
+
+Key updates:
+
+* Regex Option: Added alongside the existing predefined conditions in Field Validation.
+* Flexible Validation: Fields are validated based on the provided regex patterns.
+* Error Handling: Displays a custom error for a regex pattern mismatch.
+
+Key benefits:
+
+* Provides greater control over input formats.
+* Enables precise data validation for complex scenarios.
+
+### Agent Transfer
+
+#### Enhanced Agent Chat History Link
+
+The platform has improved the functionality of chat history links provided to agents during conversation transfers. The access limit for these links has been increased from 5 to 10 times, allowing supervisors to better audit them. Additionally, the links now display the specific conversation that prompted the transfer, providing more relevant context to agents.
+
+Backward compatibility:
+
+* The existing agent transfer chat history links remain unchanged. These changes apply only to the links generated after this release.
+
+
+<hr>
 
 ## v11.4 July 27, 2024
 
