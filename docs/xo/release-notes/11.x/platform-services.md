@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.4.1 August 11, 2024
+
+<u> Patch Release </u>
+
+This update includes bug fixes and minor enhancements.
+
+### App Settings
+
+#### Flexible App Naming Post-Publication
+
+Administrators or workspace owners can now modify the app’s name even after publishing. It helps keep app names current and relevant without disrupting system operations or user experiences.
+
+Key updates:
+
+* New edit icon for the App Name on the App Settings page.
+* The app's unique identifier (UUID) remains unchanged, so there will be no impact on the existing integrations and functionalities.
+* Change logs entry: "App Name is updated from _Old_Name_ to _New_Name_”.
+
 ## v11.4 July 27, 2024
 
 <u> Patch Release </u>
