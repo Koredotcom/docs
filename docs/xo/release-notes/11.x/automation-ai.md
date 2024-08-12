@@ -30,7 +30,7 @@ Key benefits:
 * Audit-Friendly: Improves audit trails with a clear indication of purged data.
 * Industry-Specific Value: Particularly beneficial for the BFSI sector with strict data regulations.  
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node)
 
 
 ## v11.4 July 27, 2024

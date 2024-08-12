@@ -20,7 +20,7 @@ Key updates:
 * The app's unique identifier (UUID) remains unchanged, so there will be no impact on the existing integrations and functionalities.
 * Change logs entry: "App Name is updated from _Old_Name_ to _New_Name_”.  
 
-[Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md)
+[Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md#app-profile)
 
 ### Dialog Builder
 
@@ -41,9 +41,9 @@ Key benefits:
 * Decreased risk of conflicting changes.
 * Faster decision-making and problem-solving.
 * Immediate feedback and idea sharing.
-* Streamlined dialog development process.  
+* Streamlined dialog development process.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool)
 
 <img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border:1px solid gray;zoom:60%;">
 
