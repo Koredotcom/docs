@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This update includes feature enhancements and bug fixes.
+This update includes bug fixes.
 
 <hr>
 
