@@ -18,7 +18,7 @@ This change consolidates widget customization options, making it easier for user
 
 ### OAuth Credential Update for Genesys
 
-The **Authorized Redirect URI** in the Genesys **Middleman App** is updated to ensure seamless integration of Agent AI with XO v11:
+The **Authorized Redirect URI** in the Genesys Middleman App is updated to ensure seamless integration of Agent AI with XO v11:
 
 * Previous URI: https://agentassist.kore.ai/koreaiaa-genesys/
 * New URI: https://platform.kore.ai/koreaiaa-genesys/
