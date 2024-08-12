@@ -1,6 +1,6 @@
 # Customizing the AgentAssist Widget
 
-The AgentAssist Settings page allows users to set the AgentAssist widget’s appearance. On this page, users can decide what features they want on the widget, how the widget’s search functionality should work, channel specific settings, the landing page, and the URL opening behavior.
+The AgentAssist Settings page allows users to set the AgentAssist widget’s appearance. On this page, users can decide what features they want on the widget, how the widget’s search functionality should work, channel specific settings, and the URL opening behavior.
 
 The AgentAssist Settings page has the following sections:
 
@@ -48,8 +48,6 @@ This section lets you set your preferences based on the channels. It has three c
 
     Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a language-specific dialog task, enabling them to customize the Conversation Summary.
 
-* **Widget Landing Tab**: This widget allows you to select the default landing page for your selected channel and is available for all three channels. Note that the **Transcription** option appears here for selection only when the **Transcript Tab** widget is enabled.
-
 ### Steps to set channel specific preferences
 
 1. Sign in to XO Platform.
@@ -71,8 +69,6 @@ This section lets you set your preferences based on the channels. It has three c
         * **Universal Bot**: The backend logic detects it and populates its associated Child Bots. You can expand each Child Bot to view and select its dialog task.
 
         * **Child Bot/Normal/Singular Bot**: The Dialog Tasks list displays dialogs linked to the selected bot, and you can select any from the displayed list.
-
-9. Select an option from the list against the **Widget Landing Tab** section.
 
 10. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
