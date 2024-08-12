@@ -2579,6 +2579,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
@@ -12813,9 +12834,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general-va-settings" class="md-nav__link">
+  <a href="#general-app-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      General VA Settings
+      General App Settings
     </span>
   </a>
   
@@ -13930,9 +13951,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general-va-settings" class="md-nav__link">
+  <a href="#general-app-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      General VA Settings
+      General App Settings
     </span>
   </a>
   
@@ -13981,13 +14002,13 @@
 
 
 <h1 id="app-profile">App Profile<a class="headerlink" href="#app-profile" title="Permanent link">&para;</a></h1>
-<p>To modify the general settings of a app:</p>
+<p>To modify the general settings of an app:</p>
 <ol>
 <li>Open the app.</li>
 <li>Navigate to <strong>App Settings &gt; App Profile</strong>.<br />
 <a class="glightbox" href="../images/app-prof-img1-build-configurations-general-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/app-prof-img1-build-configurations-general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/></a></li>
 </ol>
-<h2 id="general-va-settings">General VA Settings<a class="headerlink" href="#general-va-settings" title="Permanent link">&para;</a></h2>
+<h2 id="general-app-settings">General App Settings<a class="headerlink" href="#general-app-settings" title="Permanent link">&para;</a></h2>
 <p>Modify one or more of the settings described in the following table.</p>
 <table border="1">
   <tr>
@@ -13997,21 +14018,22 @@
    </td>
   </tr>
   <tr>
-   <td>VA Name
+   <td>App Name
    </td>
-   <td>The name of the VA. When a VA is published, the <strong>Name</strong> cannot be changed. This field is required.
+   <td>The name of the App. Click the <strong>Edit</strong> <a class="glightbox" href="../images/app-prof-editicon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"></a> icon to change the App name. This field is required.
+
    </td>
   </tr>
   <tr>
    <td>Description
    </td>
-   <td>The description of the VA. This field is required.
+   <td>The description of the App. This field is required.
    </td>
   </tr>
   <tr>
    <td>Icon
    </td>
-   <td>The icon image for the VA displayed in the VA Builder, VAs Marketplace, and the end-user interface, as shown in the previous illustration. The image format must be <strong>.png </strong>and the best results can be obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
+   <td>The icon image for the VA is displayed in the VA Builder, VAs Marketplace, and the end-user interface, as shown in the previous illustration. The image format must be <strong>.png </strong>and the best results can be obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
    </td>
   </tr>
   <tr>
@@ -14040,7 +14062,7 @@
 
 
 <li>Select <strong>Enterprise Users</strong> if the VA is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
-Once <strong>Target Audience</strong> is defined and saved, you cannot change them.
+Once the <strong>Target Audience</strong> is defined and saved, you cannot change them.
 </li>
 </ul>
    </td>
@@ -14054,7 +14076,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>VA Id
    </td>
-   <td>Non-editable, assigned by the platform. Can be copied for use in API calls etc..
+   <td>Non-editable, assigned by the platform. It can be copied for use in API calls etc..
    </td>
   </tr>
   <tr>
@@ -14099,7 +14121,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   </tr>
 </table>
 
-<p>To save the VA settings, click <strong>Save</strong>. The <em>&lt; <strong>VA Name</strong> &gt; updated successfully</em> message is displayed.</p>
+<p>To save the App settings, click <strong>Save</strong>. The <em>&lt; <strong>App Name</strong> &gt; updated successfully</em> message is displayed.</p>
 <h2 id="customizing-error-messages">Customizing Error Messages<a class="headerlink" href="#customizing-error-messages" title="Permanent link">&para;</a></h2>
 <p>In the Builder, each VA and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai VAs and tasks. When you create a VA or a task, you can add or customize error messages for HTTP Status codes in the <strong>Error Messages</strong> section of the VA or task settings. </p>
 <p><a class="glightbox" href="../images/app-prof-img2-general-settings-error-messages.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/app-prof-img2-general-settings-error-messages.png" alt="Error Messages" title="Error Messages" style="border: 1px solid gray;zoom:50%;"/></a></p>

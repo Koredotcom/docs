@@ -2577,6 +2577,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
@@ -14136,11 +14157,15 @@
 <a class="glightbox" href="../images/dotcms/example1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Content Filters" src="../images/dotcms/example1.png" title="Content Filters" /></a></p>
 <p>Similarly, to selectively ingest only the live pages in a certain language, you can configure the rule as shown below.</p>
 <p><a class="glightbox" href="../images/dotcms/example2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Content Filters" src="../images/dotcms/example2.png" title="Content Filters" /></a></p>
-<p>!!!note:
-* You can define more than one condition to choose different types of content from the connector using the OR operator. 
-* Every rule can have one or more conditions to select a subset of content using the AND operator. 
-* You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. 
-* Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to <a href="https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties">this</a> for details.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<ul>
+<li>You can define more than one condition to choose different types of content from the connector using the OR operator. </li>
+<li>Every rule can have one or more conditions to select a subset of content using the AND operator. </li>
+<li>You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. </li>
+<li>Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to <a href="https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties">this</a> for details.</li>
+</ul>
 <h4 id="content-sync-schedule">Content Sync Schedule<a class="headerlink" href="#content-sync-schedule" title="Permanent link">&para;</a></h4>
 <p>You can trigger a <strong>manual sync</strong> or <strong>schedule an automatic sync</strong> operation for the connector to ingest content from the dotCMS account. </p>
 <p>To perform a manual sync operation at any time, click the Sync Now button. This ingests all the updates from the dotCMS account available at that time. </p>

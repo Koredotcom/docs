@@ -2579,6 +2579,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
@@ -13800,6 +13821,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="IP Address Restriction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-configure-ip-restriction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Configure IP Restriction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -13950,6 +13986,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="IP Address Restriction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-configure-ip-restriction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Configure IP Restriction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -13982,7 +14033,7 @@
 <p>The end-user interaction data for <strong>Enterprise</strong> accounts is retained for 7 years. Enterprises can customize the retention period to suit their policies using the Data Retention Period option.</p>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>Go to <strong>Security &amp; Control -&gt; Settings</strong>.</li>
+<li>Go to <strong>Security &amp; Control</strong> &gt; <strong>Settings</strong> on the left menu.</li>
 <li>
 <p>Under <strong>Data Retention Period</strong>, you have two options:</p>
 <ol>
@@ -14010,7 +14061,7 @@
 <p>However, you might not want the Platform to store this information due to the presence of sensitive data about customers or other security-related reasons. You can opt not to store the same using the <strong>Context Persistence</strong> option.</p>
 <p><strong>Steps</strong>:</p>
 <ol>
-<li>Go to <strong>Security &amp; Control -&gt; Settings</strong>.</li>
+<li>Go to <strong>Security &amp; Control</strong> &gt; <strong>Settings</strong> on the left menu.</li>
 <li>
 <p>Under <strong>Context Persistence</strong>, you have two options:</p>
 <ol>
@@ -14025,24 +14076,36 @@
 </li>
 </ol>
 <h2 id="ip-address-restriction">IP Address Restriction<a class="headerlink" href="#ip-address-restriction" title="Permanent link">&para;</a></h2>
-<p>By default, users can access the XO Platform, and the Admin Console from any IP address as long as they have valid credentials.</p>
-<p>You can, additionally, restrict the access from a specified range of IP addresses. This restriction applies to developers from your account alone, i.e if a developer belongs to another account also their access to the Platform using that account will not be restricted.</p>
-<p><strong>Steps</strong>:</p>
+<p>By default, users can access the XO Platform, and the Admin Console from any IP address, as long as they have valid credentials.</p>
+<p>Additionally, you can restrict access to a specified range of IP addresses. When you specify a list of IP addresses in the IP Address Restriction section, users within your account attempting to access the Platform from any other IP addresses will be restricted. </p>
+<p>The XO Platform enables you to use a <strong>Regular Expression (Regex)</strong> pattern to define the list of IP addresses, eliminating errors, and the need to add each IP address individually. <a href="https://www.regextutorial.org/regex-for-ip-address-match.php" target="_blank">Learn more</a> about IP address Regex patterns.</p>
+<p><strong>Examples of IP address patterns</strong></p>
+<ul>
+<li><code>157.47.6[0-9].5[0-4]</code></li>
+<li><code>115.114.88.(1[0-9][0-9]|200|222)</code></li>
+<li><code>1[3-5]7.47.6[0-9]</code></li>
+<li><code>1\d7.4[1-7].6[0-9]</code></li>
+</ul>
+<p>During runtime, the system evaluates the regex to determine if an IP address is included in the defined list and takes the appropriate action, allowing access to IP addresses in the list and denying access to others.</p>
+<p>If a developer belongs to another account, their access to the Platform using that account are not restricted.</p>
+<h3 id="steps-to-configure-ip-restriction">Steps to Configure IP Restriction<a class="headerlink" href="#steps-to-configure-ip-restriction" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Go to <strong>Security &amp; Control -&gt; Settings</strong>.</li>
+<li>Go to <strong>Security &amp; Control</strong> &gt; <strong>Settings</strong> on the left menu.</li>
 <li>
-<p>Under <strong>IP Address Restriction</strong>, you have two options:</p>
-<ol>
-<li><em>No restriction</em> – this is the default setting and access is not restricted to any IP address.</li>
-<li><em>Restrict</em> – Here you can specify a range of IP Addresses to which the access is restricted. All other addresses would be blocked from accessing the XO Platform and the Admin Console Platform.</li>
-</ol>
-<div class="admonition note">
+<p>Under <strong>IP Address Restriction</strong>, select one of the following options:</p>
+<ul>
+<li><strong>No restriction</strong> – This is the default selection that does not restrict access to any IP address.</li>
+<li><strong>Restrict</strong> – This selection allows you to define the list of allowed IP addresses. You must add a Regex to automatically determine the allowed IP Addresses.</li>
+</ul>
+<p><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The IP Address of your (current) system should be part of the allowed IP Addresses list.</p>
-</div>
-<p><a class="glightbox" href="../images/bac-security-settings-img3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bac-security-settings-img3.png" alt="Security Settings - IP Address Restriction" title="Security Settings - IP Address Restriction" style="border: 1px solid gray;zoom:70%;"/></a></p>
+<ul><li>Your current IP Address should be part of the allowed IP Addresses list.</li>
+<li>Even if the IP address of your current system is a part of the Regex pattern, it should be added separately after the regex pattern in the <b>Restrict</b> text field following a comma separator. For example: <i>115.114.88.(1[0-9][0-9]|200|222), 115.114</i>.88.222.</li></ul></div></p>
 </li>
 </ol>
+<ol start="3"><li>Click <b>Save</b>.</li>
+
+<a class="glightbox" href="../images/IP-address-restriction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/IP-address-restriction.png" alt="IP Address Restriction" title="IP Address Restriction" style="border: 1px solid gray;zoom:80%;"/></a></ol>
 
 
 

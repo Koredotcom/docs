@@ -2571,6 +2571,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
@@ -13990,13 +14011,30 @@
 <p>Configure the MS Teams credentials on the Kore.ai XO Platform to establish communication between both.</p>
 <ol>
 <li>On the platform, select the assistant, and then go to the <strong>Channels &amp; Flows</strong> &gt; <strong>Channels</strong> &gt; <strong>Digital</strong> &gt; <strong>All</strong> menu.</li>
-<li>Select the <strong>Microsoft Teams</strong> channel, click the <strong>Configuration</strong> tab, and then enter the following details: <strong>Multi-Tenant Apps Configuration</strong><ul>
+<li>
+<p>Select the <strong>Microsoft Teams</strong> channel, click the <strong>Configuration</strong> tab, and then enter the following details: <strong>Multi-Tenant Apps Configuration</strong></p>
+<ul>
 <li><strong>Microsoft App ID</strong> – The app ID of your Azure Bot resource.</li>
 <li><strong>App Password</strong> – The App password value that you find in the Certificates &amp; Secrets page of the Azure bot.</li>
-<li><strong>Enable Proactive Notifications (optional)</strong> – Drag the slider to enable proactive notifications.</li>
-<li><strong>Application (Client) ID</strong> – The app ID of your Azure Bot resource.</li>
+<li><strong>Enable Proactive Notifications (optional)</strong> – Toggle to enable the Proactive Notification.</li>
+<li>
+<p><strong>Enable Modal Dialogs (optional)</strong> - Toggle to enable the Modal Dialogs. <a href="https://learn.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/action-commands/create-task-module?tabs=dotnet">Learn more</a>.</p>
+<ul>
+<li>
+<p>Enter the Custom URL to which the platform forwards Modal Dialog messages for processing.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The platform maintains the conversation context when handling Modal Dialog messages. It forwards these messages with pre-context to the Custom URL for processing, then relays responses back to the user, maintaining a seamless interaction.</p>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Application (Client) ID</strong> – The app ID of your Azure Bot resource.</p>
+</li>
 <li><strong>Client Secret</strong> – The client secret value that you find on the Certificates &amp; Secrets page of the Azure bot.</li>
-<li><strong>Delivery (tenant) ID</strong> – The subscription ID that you can find on the Overview page of the Azure bot.
+<li><strong>Delivery (tenant) ID</strong> – The subscription ID that you can find on the Overview page of the Azure bot.</li>
+<li>Select <strong>Yes</strong> for the <strong>Enable Channel</strong> option.
 <a class="glightbox" href="../images/MS_Team8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/MS_Team8.png" alt="Multi tenant app" title="Multi tenant app" style="border: 1px solid gray; zoom:70%;"></a></li>
 </ul>
 </li>

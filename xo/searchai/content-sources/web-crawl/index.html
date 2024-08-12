@@ -2577,6 +2577,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
@@ -14275,10 +14296,14 @@
 <p>Any changes made to the configuration come into effect either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  </p>
 <p>To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the <strong>Configuration</strong> tab. <a class="glightbox" href="../images/update-websource.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Update a web source" src="../images/update-websource.png" title="Updating a web source" /></a></p>
 <h2 id="view-execution-status-and-crawled-pages">View execution status and crawled pages<a class="headerlink" href="#view-execution-status-and-crawled-pages" title="Permanent link">&para;</a></h2>
-<p>Crawling a web domain takes time depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2 and the max URLs are set to 10. When a new web source is added, you can choose to execute the crawling process in the background. Also, the scheduled recrawls which run at specific times are automatically run in the background. To view the pages crawled in a web source, go to its <strong>Pages</strong> tab.
-<a class="glightbox" href="../images/crawled-pages.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Crawled pages" src="../images/crawled-pages.png" title="crawled pages" /></a></p>
+<p>Crawling a web domain takes time, depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2, and the max URLs are set to 10. When a new web source is added, you can execute the crawling process in the background. Also, the scheduled recrawls, which run at specific times are automatically run in the background. To view the pages that have been crawled in a web source, go to its <strong>Pages</strong> tab. This tab lists the pages that were crawled in the last update, along with the user who initiated the crawl and the URL of the crawled pages in three different categories:
+1. <strong>Successful</strong>: Pages that were successfully crawled
+2. <strong>Failed</strong>: Pages that failed to crawl
+3. <strong>Skipped</strong>: Pages that were skipped during crawling</p>
+<p>This information can be very useful for understanding the data retrieved from the web source.</p>
+<p><a class="glightbox" href="../images/crawled-pages-logs.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Crawled pages" src="../images/crawled-pages-logs.png" title="crawled pages" /></a></p>
 <p>It lists the pages crawled in the last update, the user who initiated the crawl, and the URL of the crawled page. You can also recrawl a given page or delete it using the actions for the page. 
-<a class="glightbox" href="../images/page-actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Page actions" src="../images/page-actions.png" title="page actions" /></a></p>
+<a class="glightbox" href="../images/pages-actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Page actions" src="../images/pages-actions.png" title="page actions" /></a></p>
 <p>You can also go to the detailed view of a given page and take these actions as shown below. 
 <a class="glightbox" href="../images/page-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Page Details" src="../images/page-details.png" title="page details" /></a></p>
 <p>Additionally, to view how the page is stored in the application, click on the <strong>View JSON</strong> button. 
@@ -14307,7 +14332,7 @@
 <p>If the web crawl fails while running in the background, you can see the crawl errors in the status field as shown below. Hovering over the info icon gives you more details about the error.
 <a class="glightbox" href="../images/webcrawl-list-error-status.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Error Reporting" src="../images/webcrawl-list-error-status.PNG" title="Error Reporting" /></a></p>
 <p>Hovering over the info icon gives you more details about the error. </p>
-<p>Some of the most common error scenarios are listed below.  For an exact list of errors, potential causes, and the next steps to take, refer to <a href="../web-crawl-errors">this list</a>. For any specific queries or issues, please <a href="https://kore.ai/">contact us</a>.</p>
+<p>Below are some of the most common error scenarios. Refer to <a href="../web-crawl-errors">this list</a> for an exact list of errors, potential causes, and the next steps to take. For any specific queries or issues, please <a href="https://kore.ai/">contact us</a>.</p>
 <p>1.<strong>Web Crawl Failure:</strong></p>
 <ul>
 <li>Ensure you have permission to log in to the web pages you are trying to crawl and have provided the correct credentials in the web crawl configuration.</li>

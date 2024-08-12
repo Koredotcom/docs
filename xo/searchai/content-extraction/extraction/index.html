@@ -2577,6 +2577,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
@@ -13998,6 +14019,8 @@ Enter the following details of the strategy.</p>
 <li><strong>Source Name</strong>: This field allows you to select the data on which the strategy is to be applied. It lists all the data sources configured in the application and the content corresponding to each of them. </li>
 <li><strong>Content Type</strong>: This field allows you to specify the content type within each data source. </li>
 </ul>
+<p>You can also use the logical <strong>AND operator</strong> to apply multiple rules to filter the data on which a particular extraction strategy is to be applied. For instance, to select all the SearchAI marketing material (assuming, available as PDF files in a given directory), you can define the source as shown below.</p>
+<p><a class="glightbox" href="../images/source-filters.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Source filters" src="../images/source-filters.png" title="Source Filters" /></a></p>
 <p><strong>Define Chunk Strategy</strong>: Use this field to specify the chunk strategy and its configuration for the selected source.  </p>
 <p><strong>Extraction Model</strong>: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. At present, we support the Text Extraction Model, with plans to extend support for multiple models soon. </p>
 <p><strong>Text Extraction Model</strong></p>
@@ -14011,7 +14034,16 @@ Enter the following details of the strategy.</p>
 </ul>
 </li>
 </ul>
-<p>Configure the strategy as per your needs and click the <strong>Save</strong> button. By default, as soon as a strategy is created, it is automatically enabled. </p>
+<p><strong>Layout Aware Extraction</strong>
+Layout-aware chunk extraction is a strategy used to extract data by taking into account the layout and structure of the content. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. By configuring the strategy according to specific layout requirements, it becomes possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes.</p>
+<p>The layout-aware extraction method identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach improves SearchAssist's ability to comprehend tables, graphs, and charts in documents and generate answers using this information.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, Layout aware extraction is only supported for PDF or docx file formats.  </p>
+</div>
+<p>Configuration: Choose the appropriate <strong>template</strong> for the content extraction. Use the provided examples to customize the document to the template for optimum extraction results.</p>
+<p><a class="glightbox" href="../images/layout-aware-templates.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Layout Aware" src="../images/layout-aware-templates.png" title="Layout Aware Templates" /></a>
+Configure the strategy as per your needs and click the <strong>Save</strong> button. By default, as soon as a strategy is created, it is automatically enabled. </p>
 <h2 id="deleting-a-strategy">Deleting a Strategy<a class="headerlink" href="#deleting-a-strategy" title="Permanent link">&para;</a></h2>
 <p>To delete an existing strategy, go to the corresponding strategy page and click on the <strong>Delete</strong> button. This will not affect the existing chunks.</p>
 <p><a class="glightbox" href="../images/delete-strategy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Deleting a strategy" src="../images/delete-strategy.png" title="Deleting a strategy" /></a></p>

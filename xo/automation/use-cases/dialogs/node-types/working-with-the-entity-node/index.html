@@ -2594,6 +2594,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../genai-node-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GenAI Node v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../genai-prompt/" class="md-nav__link">
         
   
@@ -14191,10 +14212,15 @@ The <strong>Entity Type</strong> provides the NLP Interpreter with the expected 
 </ol>
 </li>
 <li>
-<p>You can enable the <strong>Sensitive Entity</strong> option to redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.</p>
+<p>You can enable the <strong>Sensitive Entity</strong> option to  transient an entity, and redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.</p>
 <p><a class="glightbox" href="../images/entity-node-img3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;"></a></p>
 <p>By default, this setting is disabled. Once you <strong>Enable</strong> the <strong>Sensitive Entity</strong> setting, you can do the following:</p>
 <ol>
+<li>
+<p>Select the Transient Entity checkbox to clear redacted data upon session closure and avoid persisting it in the platform. 
+In the conversation history, <strong>data_purge</strong> is displayed instead of the non-persistent data.<br />
+    <a class="glightbox" href="../images/transient-entity.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/transient-entity.png" alt="transient-entity" title="transient-entity" style="border:1px solid gray;zoom:70%;"></a></p>
+</li>
 <li>
 <p>Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click <strong>+Add Pattern</strong>. For example, add the regex <code>[a-zA-Z]{3}[-]\d{4}</code> pattern to validate user input and return a sample response as: <code>{"regex":"NLP-1234"}</code>. For more information, see <a href="https://www.geeksforgeeks.org/write-regular-expressions/" target="_blank">write regular expressions</a> and <a href="../../entity-types/#custom" target="_blank">custom entity type</a> articles.</p>
 <p><a class="glightbox" href="../images/entity-node-img4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/entity-node-img4.png" alt="Entity node - Add Regex pattern" title="Entity node - Add Regex pattern" style="border:1px solid gray;zoom:70%;"></a></p>
