@@ -20,8 +20,8 @@ This change consolidates widget customization options, making it easier for user
 
 The **Authorized Redirect URI** in the Genesys **Middleman App** is updated to ensure seamless integration of Agent AI with XO v11:
 
-* Previous URI: https://agentassist[.kore.ai/koreaiaa-genesys/](http://.kore.ai/koreaiaa-genesys/)
-* New URI: [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/) 
+* Previous URI: https://agentassist.kore.ai/koreaiaa-genesys/
+* New URI: https://platform.kore.ai/koreaiaa-genesys/
 
 <hr>
 
