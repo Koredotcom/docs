@@ -73,9 +73,9 @@ All these features benefit VA developers, NLP developers, and testers as follows
 
 ## Important Considerations
 
-Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+LLMs can now generate responses in bot languages that LLMs also support To learn more about managing languages for VAs, click[ here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
 
-LLM and Generative AI also require sharing data with third parties: OpenAI (when using the OpenAI integration) or OpenAI and Microsoft (when using the Azure integration).
+LLM and Generative AI also require sharing data with third parties: OpenAI (when using the OpenAI integration) or OpenAI and Microsoft (when using the Azure integration) etc,
 
 
 ## Next Steps
