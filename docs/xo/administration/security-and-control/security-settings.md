@@ -15,7 +15,7 @@ The end-user interaction data for **Enterprise** accounts is retained for 7 year
 
 **Steps**:
 
-1. Go to **Security & Control -> Settings**.
+1. Go to **Security & Control** > **Settings** on the left menu.
 2. Under **Data Retention Period**, you have two options:
     1. _Use the default retention period – 7 years._
     2. _Use the custom data retention period and set the duration between 1 month to 7 years._
@@ -45,7 +45,7 @@ However, you might not want the Platform to store this information due to the pr
 
 **Steps**:
 
-1. Go to **Security & Control -> Settings**.
+1. Go to **Security & Control** > **Settings** on the left menu.
 2. Under **Context Persistence**, you have two options:
     1. _Store end users’ conversation context information and allow authorized developers to view this information_ – this is the default setting.
     2. _Do not store end users’ conversation context information_ – this will ensure that:
