@@ -55,7 +55,7 @@ By default, the feature/node is disabled. To enable the feature, [Dynamic Conver
 
 ### Add to a Task
 
-To add the GenAI Node v2 to a Dialog Task, follow these steps:
+Steps to add a GenAI node to a Dialog Task:
 
 
 
@@ -68,14 +68,11 @@ To add the GenAI Node v2 to a Dialog Task, follow these steps:
 
 
 
-
-
-## Whats New in GenAI Node v2 from v1
+## Whats New in GenAI Node v2
 
 Node Level Enhancements
 
 * **Conversation History Length**: Specify the number of recent messages (both user and VA) to send to the language model as context.
-
 
 Custom Prompt Enhancements
 
@@ -85,14 +82,12 @@ Custom Prompt Enhancements
 
 Support for Variables
 
-
-
 * **Support for Dynamic Variables**: Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
 
 [Learn more](../../../../app-settings/variables/using-bot-variables.md).
 
 
-## Configure GenAI Node v2
+## Configure GenAI Node
 
 
 ### Component Properties
@@ -100,7 +95,6 @@ Support for Variables
 The component properties empower you to configure the following settings. The changes made within this section affect this node across all instances and dialog tasks.
 
 It allows you to provide a **Name** and **Display Name** for the node. The node name cannot contain spaces.
-
 
 
 <img src="../images/componentproperties.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
@@ -112,7 +106,6 @@ It allows you to provide a **Name** and **Display Name** for the node. The node 
 #### Model Configuration
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
-
 
 
 * **Model**: The selected model for which the settings are displayed.
@@ -144,8 +137,6 @@ Specify the entities to be collected by LLM during runtime. In the Entities sect
 Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types){:target="_blank"} for more information.
 
 
-
-
 <img src="../images/entitiesv2.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -154,16 +145,10 @@ Most entity types are supported. Here are the exceptions: custom, composite, lis
 
 Add the business rules that the collected entities should respect. In the rules section, click **+ Add**, then enter a short and to-the-point sentence, such as:
 
-
-
 * _The airport name should include the IATA Airport Code;_
 * _The passenger’s name should include the last name._
 
 There is a 250-character limit to the Rules field, and you can add a maximum of 5 rules.
-
-
-
-
 
 <img src="../images/rulesv2.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:70%;">
 
@@ -176,8 +161,6 @@ Specify the scenarios that should terminate entity collection and return to the 
 Click **Add Scenario**, then enter short, clear, and to-the-point phrases that specifically tell the generative AI model when to exit and return to the dialog flow. For example, Exit when the user wants to book more than 5 tickets in a single booking and return `"max limit reached"`.
 
 There is a 250-character limit to the Scenarios field, and you can add a maximum of 5 scenarios.
-
-
 
 <img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;">
 
@@ -198,17 +181,12 @@ To define a post-processor script, click **Define Script** and add the script yo
 
 Configure the instance-specific fields for this node. These apply only for this instance and will not affect this adaptive dialog node when used in other tasks. You must configure Instance Properties for each task where this node is used.
 
-
-
 <img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
-
 
 
 #### User Input
 
 Define how user input validation occurs for this node:
-
-
 
 * **Mandatory**: This entity is required and must be provided before proceeding.
 * **Allowed Retries**: Configure the maximum number of times a user is prompted for a valid input. You can choose between 5-25 retries in 5-retries increments. The default value is 10 retries. 
@@ -228,8 +206,6 @@ Configure advanced controls for this node instance as follows:
 
 This applies only to String and Description entities: Select one of these options to determine the course of action if the VA encounters an entity as a part of the user utterance:
 
-
-
 * **Accept input as entity value and discard the detected intent**: The VA captures the user entry as a string or description and ignores the intent.
 * **Prefer user input as intent and proceed with Hold & Resume settings**: The user input is considered for intent detection, and the VA proceeds according to the Hold & Resume settings.
 * **Ask the user how to proceed**: Allow the user to specify if they meant intent or entity.
@@ -238,8 +214,6 @@ This applies only to String and Description entities: Select one of these option
 
 To define the interruption handling at this node. You can select from the below options:
 
-
-
 * **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
 * **Customize for this node**: You can customize the **Interruptions Behavior** settings by selecting this option and configuring it. You can choose whether to allow interruptions or not, or to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
 
@@ -247,10 +221,7 @@ To define the interruption handling at this node. You can select from the below 
 
 Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
 
-
-
 <img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
-
 
 
 ### Connections Properties
@@ -260,9 +231,6 @@ Add Custom Meta Tags to the conversation flow to profile VA-user conversations a
     If the node is at the bottom of the sequence, then only the connection property is visible.
 
 Define the transition conditions from this node. These conditions apply only to this instance and will not affect this node’s use in any other dialog. For a detailed setup guide, See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
-
-
-
 
 
 <img src="../images/connectionsv2.png" alt="Connections Properties" title="Connections Properties" style="border: 1px solid gray; zoom:70%;">
@@ -294,14 +262,11 @@ This node captures entities in the following structure:
 ```
 
 
-
 ## Add Custom Prompt for GenAI Node
 
 This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
 
-To add a GenAI Node v2 prompt using JavaScript, follow the steps:
-
-
+To add a GenAI node prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library**.
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
@@ -429,16 +394,4 @@ Keys
   </tr>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- watermark --><div style="background-color:#FFFFFF"><p style="color:#FFFFFF; font-size: 1px">gd2md-html: xyzzy Mon Aug 12 2024</p></div>
 
