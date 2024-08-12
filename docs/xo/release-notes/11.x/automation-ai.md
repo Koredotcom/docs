@@ -29,6 +29,7 @@ Key benefits:
 * Customizable: Works with existing Sensitive Entity settings for tailored data masking.
 * Audit-Friendly: Improves audit trails with a clear indication of purged data.
 * Industry-Specific Value: Particularly beneficial for the BFSI sector with strict data regulations.  
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)
 
 
