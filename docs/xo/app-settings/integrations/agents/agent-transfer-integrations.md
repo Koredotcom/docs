@@ -146,7 +146,7 @@ When the platform transfers a user conversation to a live agent, the agent recei
 
 !!! note
 
-    Links generated after the v11.4.1 release only can be accessed 10 times.
+    Links generated after the v11.4.1 release can be accessed 10 times.
 
 
 

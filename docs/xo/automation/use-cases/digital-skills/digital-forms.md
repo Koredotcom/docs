@@ -2591,8 +2591,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    </td>
   </tr>
   <tr>
-   <td><strong>Contains</strong>
-   </td>
+   <td><strong>Contains</strong></td>
    <td>Yes
    </td>
    <td>Yes
