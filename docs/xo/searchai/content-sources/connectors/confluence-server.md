@@ -61,7 +61,7 @@ For detailed information and step-by-step instructions, refer to [this](https://
 
 To complete the integration, do the following configuration in the connector. 
 
-1. Go to **_Connectors _**under the **_Sources _**tab. 
+1. Go to **Connectors** under the **Sources** tab. 
 2. On the authorization tab, provide the config parameters. 
     * Authorization Type: Basic or OAuth 2.0
     * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Server, Search AI supports two types: **Authorization Code grant type** and **Client Credentials** grant type. For more details, refer to [this](../../connectors.md). 

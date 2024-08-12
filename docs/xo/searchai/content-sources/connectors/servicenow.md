@@ -36,8 +36,7 @@ If you are using **Basic authentication**, you can skip this step. To use OAuth 
 
 * **Name**: Give a unique name to the connector
 * **Authorization Type**: Search AI supports two types of authentication: **Basic** and **OAuth 2.0**.
-* **Grant Type**: For OAuth 2.0, [Search AI supports the following two Grant Types for Service Now](../../connectors.md):
-
+* **Grant Type**: For OAuth 2.0, Search AI supports the following two Grant Types for Service Now:
   * **Authorization Code**: If you are using this grant type, enter the client ID and client secret, generated in the above step.
   * **Password Grant Type**: If you are using this grant type, enter user credentials along with the client ID and client secret, generated in the above step.
 

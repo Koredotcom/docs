@@ -1,16 +1,20 @@
 # Configure your Open-Source Model
 
-You can modify the general details of the open-source model if required.
 
-**To modify the settings of the open-source model, follow the steps**:
+On the Configurations page, you can view the model name, edit the description, and add tags, adjust the model endpoint timeout duration, undeploy, or delete the model.
 
-1. Click the **Configurations** tab from the left panel on the **Models** page. The **Configurations** page is displayed.
+<img src="../images/configure-open-source-model-1.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/configure-open-source-model.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;">
+## Model Endpoint Timeout
 
-1. Make any required changes in the **Description**, or **Tags** fields, and the changes are auto-saved.
-2. You also have the option to suspend your deployed custom model using the **Proceed to undeploy** button. It immediately un-deploys the model and is not available for any inferencing requests. Then the status of the model changes to “**Ready to deploy**”. You can deploy the model again from the Deploy section to use it.
+The model endpoint timeout defines the maximum time allowed for a request to complete before terminating the connection. If a request exceeds this time, it fails and triggers a timeout error for the endpoint. You can set the timeout duration between 30 to 180 seconds, with a default of 60 seconds.
 
-!!! note
 
-    To delete an open-source model, you must undeploy it and then only you can delete it.
+
+## Undeploy the Model 
+
+You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
+
+## Delete the Model
+
+You can delete an undeployed model. Deleting the model will remove all the associated data. Click **Proceed to delete** on the Configurations page and follow the on-screen instructions.

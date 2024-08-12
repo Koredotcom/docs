@@ -144,4 +144,17 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
     </code>
    </td>
   </tr>
+   <tr>
+   <td>answerSearch
+   </td>
+   <td>No
+   </td>
+   <td>This can be set to true or false. When set to ‘true’, the response will include answers. Conversely, when set to ‘false’, the response will omit the answer to the query. However, you can still use the includeChunksInResponse field to see the qualified chunks in the response. By default, it is set to true.
+   </td>
+  </tr>
+    <tr>
+   <td>includeChunksInResponse</td>
+   <td>No</td>
+   <td>This can be set to true or false. When set to true, the response will also include a list of qualified chunks along with other parameters. The chunk information is stored in the response's chunk_result field.</td>
+  </tr>
 </table>
