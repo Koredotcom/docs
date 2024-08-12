@@ -416,6 +416,19 @@ Below action can be performed:
 
 It is a miniature representation of the visual appearance of the dialog design.
 
+### Collaboration Tool
+
+Real-time collaboration in the Dialog Builder allows team members to work together, seeing each other's actions and communicating instantly. This fosters better coordination, speeds up the dialog creation process, and improves overall quality through better coordination.
+
+Real-time collaboration features: 
+
+
+* Live presence awareness: As an app developer enters the dialog builder, the cursor display and the avatars in the header reveal the presence of other active team members.
+* Color-coded cursors: Each team member's cursor is assigned a distinctive color that matches the header's avatar icon. This allows users to be easily identified as their cursors move fluidly through the canvas.
+* Instant cursor chat: The team communicates seamlessly, leveraging cursor chat, enabling real-time commenting features.
+* Collaborative viewing: While one user edits the dialog, other users are allowed to view it. Cursor display ensures that each team member can see where others are working. The first user to open the app is granted edit rights, while others join as viewers.  
+<img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border:1px solid gray;zoom:60%;">
+
 ## Add node to dialog
 
 There are two ways to add a node:

@@ -2,6 +2,37 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.4.1 August 11, 2024
+
+<u> Patch Release </u>
+
+This update includes bug fixes and minor enhancements.
+
+### Entity Node
+
+#### Transient Entity Feature for Enhanced Data Privacy
+The platform has introduced a "Transient Entity" feature for the Entity node. It allows platform users to ensure that sensitive user inputs do not persist after a conversation session ends.
+
+Key updates:
+
+* The new “Transient Entity” toggle in Entity Node > Component Settings. It’s visible when Sensitive Entity is enabled.
+* It’s a component-level property, ensuring consistent application across all instances and flows using the Entity node.
+* Applies to all channels, including IVR.
+* Masks data during conversation based on existing Sensitive Entity settings.
+* Removes specified data from conversation history once the session ends.
+* Displays a placeholder "[data_purged]" in conversation history where data has been removed.
+
+Key benefits:
+
+* Enhanced Data Privacy: Sensitive information does not persist after conversations end.
+* Regulatory Compliance: Helps businesses meet GDPR, CCPA, and other data protection regulations.
+* Customizable: Works with existing Sensitive Entity settings for tailored data masking.
+* Audit-Friendly: Improves audit trails with a clear indication of purged data.
+* Industry-Specific Value: Particularly beneficial for the BFSI sector with strict data regulations.  
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node)
+
+
 ## v11.4 July 27, 2024
 
 <u> Patch Release </u>

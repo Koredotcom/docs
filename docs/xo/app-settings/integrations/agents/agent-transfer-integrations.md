@@ -139,10 +139,14 @@ Steps to delete a configured agent transfer integration:
     <img src="../images/agent-transfer-integrations-img2-delete-agent-confirmation.png" alt="Delete agent" title="Delete agent" style="border: 1px solid gray;zoom:80%;">
 
 
+## User-Bot Chat Transcript Link to Live Agents
 
 
+When the platform transfers a user conversation to a live agent, the agent receives a link to view the conversation the user had with the bot before the transfer. This provides context for what the user might expect from the live agent. This link can be accessed 10 times.
 
+!!! note
 
+    Links generated after the v11.4.1 release only can be accessed 10 times.
 
 
 

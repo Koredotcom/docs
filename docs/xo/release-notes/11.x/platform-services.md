@@ -2,6 +2,69 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.4.1 August 11, 2024
+
+<u> Patch Release </u>
+
+This update includes bug fixes and minor enhancements.
+
+### App Settings
+
+#### Flexible App Naming Post-Publication
+
+Administrators or workspace owners can now modify the app’s name even after publishing. It helps keep app names current and relevant without disrupting system operations or user experiences.
+
+Key updates:
+
+* New edit icon for the App Name on the App Settings page.
+* The app's unique identifier (UUID) remains unchanged, so there will be no impact on the existing integrations and functionalities.
+* Change logs entry: "App Name is updated from _Old_Name_ to _New_Name_”.  
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md#app-profile)
+
+### Dialog Builder
+
+#### Real-time Collaboration in Dialog Builder
+
+The platform now enables real-time collaboration in the dialog builder. It allows team members to work together seamlessly, enhancing efficiency and productivity in dialog development.
+
+Key updates:
+
+* Live presence awareness: See who's currently working on the canvas. Cursor displays and avatar icons show active team members. Each member gets a unique color for easy identification.
+* Color-coded cursor: This helps team members easily identify their actions. They can see each other's cursor locations in real-time.  
+* Instant cursor chat: It enables instant communication through comments tied to cursor positions, allowing users to communicate ideas and feedback in real time.
+* Simultaneous editing and viewing: It allows team members to work together seamlessly.
+
+Key benefits:
+
+* Improved team efficiency.
+* Decreased risk of conflicting changes.
+* Faster decision-making and problem-solving.
+* Immediate feedback and idea sharing.
+* Streamlined dialog development process.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool)
+
+
+#### Redesigned Node’s Property Panel 
+
+The redesigned node’s property panel is aligned with the new builder theme. It enhances usability and efficiency while maintaining familiar workflows, allowing platform users to work more effectively within the new UI theme.
+
+Key updates:
+
+* Clean, intuitive layout: Logical organization of properties and minimized clutter for easier navigation.
+* Compact and responsive design: Streamlined interface for quicker access to properties. Adapts to various screen sizes and orientations.
+* Consistent updating: Applied to all nodes for uniform experience.
+* Workflow compatibility: Maintains existing functionality for smooth user transition.
+
+Key benefits:
+
+* Improved property accessibility.
+* Enhanced user efficiency in modifying element properties.
+* Easier navigation and reduced cognitive load for users.
+* Consistent experience across different devices.
+
+
 ## v11.4 July 27, 2024
 
 <u> Patch Release </u>
