@@ -103,7 +103,7 @@ It allows you to provide a **Name** and **Display Name** for the node. The node 
 
 
 
-<img src="./images/componentproperties.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/componentproperties.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -165,7 +165,7 @@ There is a 250-character limit to the Rules field, and you can add a maximum of 
 
 
 
-<img src="../images/genai-node(9).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/rulesv2.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -179,7 +179,7 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
 
 
 
-<img src="../images/genai-node(9).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -268,7 +268,8 @@ Define the transition conditions from this node. These conditions apply only to 
 <img src="../images/connectionsv2.png" alt="Connections Properties" title="Connections Properties" style="border: 1px solid gray; zoom:70%;">
 
 
-All the entity values collected are stored in context variables. For example, `{{context.genai_node.bookflight_genainode.entities.entity_1}}`. You can define transitions using the context variables.
+All the entity values collected are stored in context variables. For example, `{{context.genai_node.bookflight_genainode.entities.entity_1}}`.
+You can define transitions using the context variables.
 
 This node captures entities in the following structure:
 
@@ -294,8 +295,6 @@ This node captures entities in the following structure:
 
 
 
-
-
 ## Add Custom Prompt for GenAI Node
 
 This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
@@ -308,72 +307,59 @@ To add a GenAI Node v2 prompt using JavaScript, follow the steps:
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
 3. Enter the **prompt name**. In the **feature** dropdown, select **GenAI Node** and select the **model**. 
 4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
-5. In the Request section, click **Start from Scratch**. Learn more. 
+5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables). 
 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
+    <img src="../images/javas.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 6. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**. 
 
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
+    <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
 7. Once you enter the JavaScript, click **Preview**. 
 
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+    <img src="../images/preview2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
 8. On the Preview pop-up, enter the Variable **Value** and click **Test**. This will conver the JavaScript to JSON object and this will be send to the LLM. You cam view the JSON object in the JSON Preview section.The success message is displayed. Click **Close**. 
 
+    <img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+9. The JSON object in the JSON Preview section.Click **Close**.
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
+    <img src="../images/jsonpreview.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 9. In the request section, click **Test**. This will make a call to the LLM.
 10. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
 11. In the Actual Response section, double-click the **Key** that should be used to generate the response path. For example, double-click the **Content** key and click **Save**. 
 
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
+    <img src="../images/content-key.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
  
 12. The **Response Path** is displayed. Click **Lookup Path**.
 13. The **Actual Response** and **Expected Response** are displayed. 
-    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 14. 
- 
- **Note**: Both Actual Response and Expected Response are not editable.[ ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%282%29.png)
+    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 14.
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+        !!! note
+
+            Both Actual Response and Expected Response are not editable.
+
+        <img src="../images/content-key.png" alt="Actual Response" title="Actual Response" style="border: 1px solid gray; zoom:70%;">
 
 
-![alt_text](images/image15.png "image_tooltip")
-[ 
-](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%282%29.png)
+
+
+
+
     2. If the response structure does not match, the responses will be in red. Click **Configure** to modify the Actual Response. The Post Processor Script is displayed.[ 
 ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%2812%29.png)
         1. Enter the **Post Processor Script**. Click **Save & Test**.[ ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%2811%29.png)
 
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 
 ![alt_text](images/image16.png "image_tooltip")
 
         2. The response is displayed.[ ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%284%29.png)
 
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 
 ![alt_text](images/image17.png "image_tooltip")
@@ -388,6 +374,8 @@ To add a GenAI Node v2 prompt using JavaScript, follow the steps:
 ![alt_text](images/image18.png "image_tooltip")
 
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
+
+## Dynamic Variables
 
 <table>
   <tr>

@@ -177,6 +177,7 @@ nav:
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
           - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
+          - GenAI Node V2: automation/use-cases/dialogs/node-types/genai-node-v2.md
           - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
