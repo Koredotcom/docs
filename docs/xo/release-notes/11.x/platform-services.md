@@ -45,6 +45,7 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool)
 
+<img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">
 
 #### Redesigned Node’s Property Panel 
 
