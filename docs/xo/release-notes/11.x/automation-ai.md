@@ -99,7 +99,7 @@ Backward compatibility:
 
 * The existing agent transfer chat history links remain unchanged. These changes apply only to the links generated after this release.
 
-
+[Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#user-bot-chat-transcript-link-to-live-agents)
 <hr>
 
 ## v11.4 July 27, 2024
