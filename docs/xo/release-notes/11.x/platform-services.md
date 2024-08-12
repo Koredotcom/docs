@@ -2,6 +2,101 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.4.1 August 11, 2024
+
+<u> Patch Release </u>
+
+This update includes bug fixes and minor enhancements.
+
+### LLM and Generative AI
+
+#### Multi-language Support for System and Custom LLMs
+
+The platform now supports all bot languages for both system and custom LLMs.
+
+Key updates:
+
+* Language-specific responses: LLMs can now generate responses in bot languages that LLMs also support.
+* Preserved sentiment: Responses maintain original sentiment.
+* Expanded language options: Available for all LLM features and prompts.
+
+Key benefits:
+
+* Improved accuracy in non-English interactions.
+* Enhanced user experience for global audiences.
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/introduction.md)
+
+#### Custom LLM Framework Update for GenAI Node
+
+The platform has significantly enhanced the GenAI Node’s custom prompt creation flow. It now supports dynamic variables in the prompt definition, gives full control over the prompt structure, and dynamically defines prompt definitions using JavaScript. These updates provide greater flexibility, better conversation context control, and more sophisticated prompt engineering capabilities, allowing platform users to create more advanced and tailored GenAI applications with improved custom LLM integrations.
+
+Key updates:
+
+* Dynamic variables improvements: Conversation history is redefined as an array of objects. New variables are introduced for Required Entities, Collected Entities, and Conversation History Length.
+* Variable support: Context, Environment, and Content variables are now supported in prompts and scripts.
+* JavaScript mode: Ability to create prompts using JavaScript and preview option for script validation.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md)
+
+### App Settings
+
+#### Update App Name Post-Publication
+
+Administrators or workspace owners can now modify an app’s name even after publishing it. This helps keep app names current and relevant without disrupting system operations or user experiences.
+
+Key updates:
+
+* There is a new Edit icon for the app name on the App Settings page.
+* The app's unique identifier (UUID) remains unchanged, so there will be no impact on the existing integrations and functionalities.
+* A new log is added to the Change Logs to highlight the change. For e.g., "App Name is updated from *Old_Name* to *New_Name*”.
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md#app-profile)
+
+### Channels
+
+#### MS Teams Modal Dialog Support
+
+The platform now supports Microsoft Teams Modal Dialogs, enhancing the interactive capabilities of virtual assistants deployed on the MS Teams channel. This support allows platform users to handle the 'Invoke' action-type messages used by MS Teams for Modal Dialogs.
+
+Key updates:
+
+* New “Modal Dialogs” toggle: The new toggle is introduced in the channel configuration and is off by default.
+* Custom URL configuration: When enabled, platform users can set a Custom URL to which the platform forwards Modal Dialog messages for processing.
+* Message handling: The platform maintains the conversation context when handling Modal Dialog messages. It forwards these messages with pre-context to the Custom URL for processing, then relays responses back to the user, maintaining a seamless interaction.
+
+Key benefits:
+
+* Enhanced interactivity: Enables form-based experiences in Teams.
+* Seamless integration: Preserves conversation context throughout.
+* Improved user experience: Supports more complex interactions.
+
+Backward compatibility:
+
+* This update is available to all existing apps, and it’s disabled by default. If enabled, the app needs to be republished to make these changes take effect.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md)
+
+### Admin Console
+
+#### IP Address Restriction Enhancement
+
+The Admin Console now supports Regex patterns for IP address restrictions. The regex support makes it easier for administrators to manage access across extensive IP ranges.
+
+Key updates:
+
+* Administrators can enter IP ranges using regex patterns when IP Address restriction is enabled. 
+* Account access is limited to IP addresses matching the provided regex patterns.
+
+Key benefits:
+
+* Reduced manual entry.
+* Greater precision in identifying IP addresses through pattern matching.
+* Streamlined administration for large IP ranges.
+
+
+<hr>
+
 ## v11.4 July 27, 2024
 
 <u> Patch Release </u>

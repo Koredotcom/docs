@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.4.1 August 11, 2024
+
+<u> Patch Release </u>
+
+This update includes bug fixes and minor enhancements.
+
+### Search AI Menu Update
+
+The "Answers" menu is renamed "Search Configurations" across the product, aligning with the revised product naming convention. 
+
+Key updates:
+
+* “Search AI > Answers” is now "Search AI > Search Configurations".
+* The header in the side navigation for this section now reads "Search Configurations".
+* In Automation AI, "Answers" is replaced with "Search Configurations".
+
+<hr>
+
 ## v11.4 July 27, 2024
 
 <u> Patch Release </u>

@@ -222,11 +222,17 @@ To make any changes in the source configuration, click the source title from the
 
 ## View execution status and crawled pages
 
-Crawling a web domain takes time depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2 and the max URLs are set to 10. When a new web source is added, you can choose to execute the crawling process in the background. Also, the scheduled recrawls which run at specific times are automatically run in the background. To view the pages crawled in a web source, go to its **Pages** tab.
-![Crawled pages](../images/crawled-pages.png "crawled pages")
+Crawling a web domain takes time, depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2, and the max URLs are set to 10. When a new web source is added, you can execute the crawling process in the background. Also, the scheduled recrawls, which run at specific times are automatically run in the background. To view the pages that have been crawled in a web source, go to its **Pages** tab. This tab lists the pages that were crawled in the last update, along with the user who initiated the crawl and the URL of the crawled pages in three different categories:
+1. **Successful**: Pages that were successfully crawled
+2. **Failed**: Pages that failed to crawl
+3. **Skipped**: Pages that were skipped during crawling
+ 
+This information can be very useful for understanding the data retrieved from the web source.
+
+![Crawled pages](../images/crawled-pages-logs.png "crawled pages")
 
 It lists the pages crawled in the last update, the user who initiated the crawl, and the URL of the crawled page. You can also recrawl a given page or delete it using the actions for the page. 
-![Page actions](../images/page-actions.png "page actions")
+![Page actions](../images/pages-actions.png "page actions")
 
 You can also go to the detailed view of a given page and take these actions as shown below. 
 ![Page Details](../images/page-details.png "page details")
@@ -272,7 +278,7 @@ If the web crawl fails while running in the background, you can see the crawl er
 
 Hovering over the info icon gives you more details about the error. 
 
-Some of the most common error scenarios are listed below.  For an exact list of errors, potential causes, and the next steps to take, refer to [this list](../web-crawl-errors). For any specific queries or issues, please [contact us](https://kore.ai/).
+Below are some of the most common error scenarios. Refer to [this list](../web-crawl-errors) for an exact list of errors, potential causes, and the next steps to take. For any specific queries or issues, please [contact us](https://kore.ai/).
 
 1.**Web Crawl Failure:**
 

@@ -1608,14 +1608,17 @@ Available only when Secure Field Data is enabled
    <td>Rules in the following format can be added
 <ul>
 
-<li>Operator – choose from the list
+<li><b>Operator</b> – Choose the required option based on the validation condition you want to set for the input field. Each component type supports specific operators that enable the validation.
 
-<li>Comparison Type – set to either value or field/component or value type
-
-<li>Comparison  With – the value or component name or type, as per the above selection
-
-<br>
-Multiple rules added to an existing rule would be taken as an AND condition, whereas a new rule would be an OR condition. You can add multiple Simple rules or a single Advanced rule by toggling between Simple and Advanced Modes
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul><li>The XO Platform now supports <b>Regular Expression (Regex)</b> for more complex validations. It provides a powerful and flexible pattern-matching capability, allowing for precise validation of input formats.</li>
+<li>Regex checks the input field against the specified pattern, which includes the format and conditions that the input must meet. For example, if the age limit should be 18 and above for vaccination, the regular expression is <code>/^(1[89]|[2-9]\d)$/gm</code>.</li><ul>
+</div></li>
+<li><b>Comparison Type</b> – Set to either value or field/component or value type.</li>
+<li><b>Comparison With</b> – The value or component name or type, as per the above selection.</li></ul>
+<p>
+Multiple rules added to an existing rule would be taken as an AND condition, whereas a new rule would be an OR condition. You can add multiple Simple rules or a single Advanced rule by toggling between Simple and Advanced Modes.</p>
 </li>
 </ul>
    </td>
@@ -2588,8 +2591,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    </td>
   </tr>
   <tr>
-   <td><strong>Contains</strong>
-   </td>
+   <td><strong>Contains</strong></td>
    <td>Yes
    </td>
    <td>Yes
@@ -2650,31 +2652,31 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
   <tr>
    <td><strong>Regex</strong>
    </td>
-   <td>No
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
    </td>
    <td>No
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
-   <td>
+   <td>Yes
    </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
+   <td>Yes
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
