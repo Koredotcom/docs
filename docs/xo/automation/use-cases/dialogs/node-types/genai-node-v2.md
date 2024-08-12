@@ -320,60 +320,40 @@ To add a GenAI Node v2 prompt using JavaScript, follow the steps:
 
     <img src="../images/preview2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
-8. On the Preview pop-up, enter the Variable **Value** and click **Test**. This will conver the JavaScript to JSON object and this will be send to the LLM. You cam view the JSON object in the JSON Preview section.The success message is displayed. Click **Close**. 
+8. On the Preview pop-up, enter the Variable **Value** and click **Test**. This will convert the JavaScript to a JSON object and this will be sent to the LLM. 
 
     <img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
-9. The JSON object in the JSON Preview section.Click **Close**.
+
+9. You cam view the JSON object in the JSON Preview section. Click **Close**.
 
     <img src="../images/jsonpreview.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+
 9. In the request section, click **Test**. This will make a call to the LLM.
+
 10. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
+
 11. In the Actual Response section, double-click the **Key** that should be used to generate the response path. For example, double-click the **Content** key and click **Save**. 
 
-
-    <img src="../images/content-key.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
- 
 12. The **Response Path** is displayed. Click **Lookup Path**.
-13. The **Actual Response** and **Expected Response** are displayed. 
-    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 14.
+10. The **Actual Response** and **Expected Response** are displayed. 
+    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
 
-        !!! note
-
-            Both Actual Response and Expected Response are not editable.
-
-        <img src="../images/content-key.png" alt="Actual Response" title="Actual Response" style="border: 1px solid gray; zoom:70%;">
-
-
-
-
-
-
-    2. If the response structure does not match, the responses will be in red. Click **Configure** to modify the Actual Response. The Post Processor Script is displayed.[ 
-](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%2812%29.png)
-        1. Enter the **Post Processor Script**. Click **Save & Test**.[ ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%2811%29.png)
-
-
-
-
-![alt_text](images/image16.png "image_tooltip")
-
-        2. The response is displayed.[ ](https://docsinternal-kore.github.io/docs/xo/generative-ai-tools/images/prl%284%29.png)
-
-
-
-
-![alt_text](images/image17.png "image_tooltip")
-
+        **Note**: Both Actual Response and Expected Response are not editable.
+        ![alt_text](images/prl(2).png  )
+    
+    2. If the response structure does not match, the responses will be in red. Click **Configure** to modify the Actual Response. The Post Processor Script is displayed. 
+    ![alt_text](images/prl(12).png  )
+        
+        1. Enter the **Post Processor Script**. Click **Save & Test**. 
+            ![alt_text](images/prl(11).png  )
+        2. The response is displayed. 
+                ![alt_text](images/prl(4).png  )
         3. Click **Save**. The actual response and expected response turn green.
-14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured. 
 
-
-
-
-
-![alt_text](images/image18.png "image_tooltip")
-
-15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
+11. (Only for GenAI Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
+    ![alt_text](images/image1-8.png  )
+12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
+<img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 ## Dynamic Variables
 
