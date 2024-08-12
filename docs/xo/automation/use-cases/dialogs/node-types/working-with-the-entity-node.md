@@ -64,8 +64,10 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
     <img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">
  
     By default, this setting is disabled. Once you **Enable** the **Sensitive Entity** setting, you can do the following:
+
     1. Select the Transient Entity checkbox to clear redacted data upon session closure and avoid persisting it in the platform. 
-    In the conversation history, **data_purge** is displayed instead of the non-persistent data.
+    In the conversation history, **data_purge** is displayed instead of the non-persistent data.  
+        <img src="../images/transient-entity.png" alt="transient-entity" title="transient-entity" style="border:1px solid gray;zoom:70%;">
 
     2. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
         
