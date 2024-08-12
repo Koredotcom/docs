@@ -19,9 +19,9 @@ Modify one or more of the settings described in the following table.
    </td>
   </tr>
   <tr>
-   <td>VA Name
+   <td>App Name
    </td>
-   <td>The name of the App. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon to change the App name. This field is required.
+   <td>The name of the App. Click the <strong>Edit</strong> <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon to change the App name. This field is required.
 
    </td>
   </tr>

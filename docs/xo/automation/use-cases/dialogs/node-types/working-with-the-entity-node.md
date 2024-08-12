@@ -59,17 +59,19 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
             
             <img src="../images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
-6. You can enable the **Sensitive Entity** option to redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
+6. You can enable the **Sensitive Entity** option to  transient an entity, and redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
     
     <img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">
  
     By default, this setting is disabled. Once you **Enable** the **Sensitive Entity** setting, you can do the following:
-    
-    1. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
+    1. Select the Transient Entity checkbox to clear redacted data upon session closure and avoid persisting it in the platform. 
+    In the conversation history, **data_purge** is displayed instead of the non-persistent data.
+
+    2. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
         
         <img src="../images/entity-node-img4.png" alt="Entity node - Add Regex pattern" title="Entity node - Add Regex pattern" style="border:1px solid gray;zoom:70%;">
 
-    2. Select one of the following options about how you want to display the sensitive data to unauthorized users:
+    3. Select one of the following options about how you want to display the sensitive data to unauthorized users:
         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
