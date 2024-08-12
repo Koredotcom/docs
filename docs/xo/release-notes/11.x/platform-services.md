@@ -25,6 +25,8 @@ Key benefits:
 * Improved accuracy in non-English interactions.
 * Enhanced user experience for global audiences.
 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/introduction.md)
+
 #### Custom LLM Framework Update for GenAI Node
 
 The platform has significantly enhanced the GenAI Node’s custom prompt creation flow. It now supports dynamic variables in the prompt definition, gives full control over the prompt structure, and dynamically defines prompt definitions using JavaScript. These updates provide greater flexibility, better conversation context control, and more sophisticated prompt engineering capabilities, allowing platform users to create more advanced and tailored GenAI applications with improved custom LLM integrations.
@@ -34,6 +36,8 @@ Key updates:
 * Dynamic variables improvements: Conversation history is redefined as an array of objects. New variables are introduced for Required Entities, Collected Entities, and Conversation History Length.
 * Variable support: Context, Environment, and Content variables are now supported in prompts and scripts.
 * JavaScript mode: Ability to create prompts using JavaScript and preview option for script validation.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md)
 
 ### App Settings
 
@@ -70,6 +74,8 @@ Key benefits:
 Backward compatibility:
 
 * This update is available to all existing apps, and it’s disabled by default. If enabled, the app needs to be republished to make these changes take effect.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md)
 
 ### Admin Console
 

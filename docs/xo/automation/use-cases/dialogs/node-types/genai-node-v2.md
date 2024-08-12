@@ -265,6 +265,7 @@ This node captures entities in the following structure:
 ## Add Custom Prompt for GenAI Node
 
 This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
+For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
 To add a GenAI node prompt using JavaScript, follow the steps:
 
@@ -280,7 +281,7 @@ To add a GenAI node prompt using JavaScript, follow the steps:
 
     <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
-7. Once you enter the JavaScript, click **Preview**. 
+7. Enter the JavaScript, click **Preview**. 
 
 
     <img src="../images/preview2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
@@ -289,7 +290,7 @@ To add a GenAI node prompt using JavaScript, follow the steps:
 
     <img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
-9. You cam view the JSON object in the JSON Preview section. Click **Close**.
+9. You can view the JSON object in the JSON Preview section. Click **Close**.
 
     <img src="../images/jsonpreview.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
@@ -298,17 +299,25 @@ To add a GenAI node prompt using JavaScript, follow the steps:
 10. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
 
 11. In the Actual Response section, double-click the **Key** that should be used to generate the response path. For example, double-click the **Content** key and click **Save**. 
+    <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
 
 12. The **Response Path** is displayed. Click **Lookup Path**.
 10. The **Actual Response** and **Expected Response** are displayed. 
     1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
+
         !!! note
+
             Both Actual Response and Expected Response are not editable.
+
+
+        <img src="../images/responsev2.png" alt=" Compare Response" title="Compare Response" style="border: 1px solid gray; zoom:70%;">     
   
     
     2. If the response structure does not match, the responses will be in red. Click **Configure** to modify the Actual Response. The Post Processor Script is displayed. 
-        1. Enter the **Post Processor Script**. Click **Save & Test**. 
-        2. The response is displayed. 
+        1. Enter the **Post Processor Script**. Click **Save & Test**.
+                <img src="../images/pps2.png" alt="  Post Processor Script" title=" Post Processor Script" style="border: 1px solid gray; zoom:70%;">
+        2. The response is displayed.
+                <img src="../images/pps2response.png" alt=" response" title="response" style="border: 1px solid gray; zoom:70%;"> 
         3. Click **Save**. The actual response and expected response turn green.
 
 11. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.
