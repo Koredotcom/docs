@@ -71,11 +71,11 @@ All these features benefit VA developers, NLP developers, and testers as follows
 
 ### Language Support
 
-LLMs can now generate responses in bot languages that LLMs also support To learn more about managing languages for VAs, click [here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+LLMs can now generate responses in bot languages that LLMs also support. To learn more about managing languages for VAs, click [here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
 
 ### Data Sharing
 
-LLM and Generative AI features involve data sharing with third parties LLM providers, such as  OpenAI, Azure OpenAI, Claude, etc.
+LLM and Generative AI features involve data sharing with third parties LLM providers, such as  OpenAI, Azure OpenAI, Claude, and others.
 
 
 ## Next Steps

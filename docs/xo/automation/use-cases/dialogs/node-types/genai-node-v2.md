@@ -275,7 +275,7 @@ To add a GenAI node prompt using JavaScript, follow the steps:
 4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
 5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables). 
 
-    <img src="../images/javas.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/javasv2.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 6. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**. 
 
