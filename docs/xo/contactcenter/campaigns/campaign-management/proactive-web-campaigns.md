@@ -7,38 +7,12 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 
 ## Proactive Web Campaign Types
 
-<table>
-  <tr>
-   <td><strong>TYPE</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Chat
-   </td>
-   <td>A message is displayed on the web page. This action pushes the configured messages to the chat widget message channel.
-   </td>
-  </tr>
-  <tr>
-   <td>Banner
-   </td>
-   <td>A banner is displayed to the customer at the top or bottom of a web page.
-   </td>
-  </tr>
-  <tr>
-   <td>Post
-   </td>
-   <td>A post is displayed as a pop-up at the center of the web page.
-   </td>
-  </tr>
-  <tr>
-   <td>Button
-   </td>
-   <td>A button is displayed to the customer on the web page. This button can be static or triggered by an action from the customer and can be placed on the right or left side of the web page.
-   </td>
-  </tr>
-</table>
+| **TYPE** | **DESCRIPTION**                                                                                                            |
+|----------|----------------------------------------------------------------------------------------------------------------------------|
+| Chat     | A message is displayed on the web page. This action pushes the configured messages to the chat widget message channel.     |
+| Banner   | A banner is displayed to the customer at the top or bottom of a web page.                                                   |
+| Post     | A post is displayed as a pop-up at the center of the web page.                                                               |
+| Button   | A button is displayed to the customer on the web page. This button can be static or triggered by an action from the customer and can be placed on the right or left side of the web page. |
 
 On this page, the following details of the web campaigns are shown in a table:  
 <img src="../images/campaign-management-page-details.png" alt="Campaign Details" title="Campaign Details" style="border: 1px solid gray; zoom:80%;">
