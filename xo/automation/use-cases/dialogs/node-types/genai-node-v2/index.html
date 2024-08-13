@@ -2648,10 +2648,18 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Why a GenAI Node?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new-in-version-2-of-the-genai-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      What’s New in Version 2 of the GenAI Node
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#node-behavior" class="md-nav__link">
     <span class="md-ellipsis">
       Node Behavior
@@ -2668,7 +2676,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Runtime">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
@@ -2704,15 +2713,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-new-in-genai-node-v2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Whats New in GenAI Node v2
-    </span>
-  </a>
   
 </li>
       
@@ -14166,10 +14166,18 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Why a GenAI Node?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new-in-version-2-of-the-genai-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      What’s New in Version 2 of the GenAI Node
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#node-behavior" class="md-nav__link">
     <span class="md-ellipsis">
       Node Behavior
@@ -14186,7 +14194,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Runtime">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
@@ -14222,15 +14231,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-new-in-genai-node-v2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Whats New in GenAI Node v2
-    </span>
-  </a>
   
 </li>
       
@@ -14418,9 +14418,25 @@
 <li>Managing complex flows without extensive scripting: Complex flows like the above increase dialog task complexity, requiring multiple paths and nodes. Even then, it is humanly impossible to predict all such scenarios. Scripting all these possibilities might also result in a sub-par end-user experience.</li>
 </ol>
 <p>Leveraging a generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.</p>
-<h3 id="node-behavior">Node Behavior<a class="headerlink" href="#node-behavior" title="Permanent link">&para;</a></h3>
-<h4 id="runtime">Runtime<a class="headerlink" href="#runtime" title="Permanent link">&para;</a></h4>
-<p>You can work with this node like with any other node within Dialog Tasks and can invoke it within multiple tasks. During runtime, the node behaves as follows:</p>
+<h2 id="whats-new-in-version-2-of-the-genai-node">What’s New in Version 2 of the GenAI Node<a class="headerlink" href="#whats-new-in-version-2-of-the-genai-node" title="Permanent link">&para;</a></h2>
+<p><strong>Node Level Enhancements</strong></p>
+<ul>
+<li>Conversation History Length: Specify the number of recent messages (both user and VA) to send to the language model as context.</li>
+</ul>
+<p><strong>Custom Prompt Enhancements</strong></p>
+<ul>
+<li>Required Entities: A new dynamic variable holding a comma-separated list of entity names to be captured by the LLM. This allows platform users to specify which entities need to be collected or included in the output. </li>
+<li>Collected Entities: An object containing the entities and their values collected by the language model.</li>
+<li>Custom Prompt Creation using JavaScript: The Platform introduces a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.</li>
+</ul>
+<p><strong>Support for Variables</strong></p>
+<ul>
+<li>Support for Dynamic Variables: Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.</li>
+</ul>
+<p><a href="../../../../../app-settings/variables/using-bot-variables/">Learn more</a>.</p>
+<h2 id="node-behavior">Node Behavior<a class="headerlink" href="#node-behavior" title="Permanent link">&para;</a></h2>
+<h3 id="runtime">Runtime<a class="headerlink" href="#runtime" title="Permanent link">&para;</a></h3>
+<p>You can work with this node like any other node within Dialog Tasks and invoke it within multiple tasks. During runtime, the node behaves as follows:</p>
 <ol>
 <li>Entities Collection:<ol>
 <li>On reaching the GenAI Node, the platform invokes the Generative AI model to understand the user input.</li>
@@ -14431,7 +14447,7 @@
 </li>
 <li>Contextual Intents:<ol>
 <li>Contextual intents (Dialog or FAQs) recognized from the user input continue to be honored as per the Interruption Settings defined in the bot definition.</li>
-<li>Post completion of the contextual intents, the flows can return back to the GenAI Node.</li>
+<li>Post completion of the contextual intents, the flows can return to the GenAI Node.</li>
 </ol>
 </li>
 <li>Exit Conditions:<ol>
@@ -14453,26 +14469,10 @@
 <p>Go to <strong>Automation</strong> &gt; <strong>Dialogs</strong> and select the task that you are working with. </p>
 </li>
 <li>
-<p>You can add the GenAI Node just like any other node. You can find it in the main list of nodes, as it does not depend on the Bot Action node. </p>
+<p>You can add the GenAI Node just like any other node. You can find it in the main list of nodes. </p>
 <p><a class="glightbox" href="../images/canvas-GenAI Node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/canvas-GenAI Node.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 </ol>
-<h2 id="whats-new-in-genai-node-v2">Whats New in GenAI Node v2<a class="headerlink" href="#whats-new-in-genai-node-v2" title="Permanent link">&para;</a></h2>
-<p>Node Level Enhancements</p>
-<ul>
-<li><strong>Conversation History Length</strong>: Specify the number of recent messages (both user and VA) to send to the language model as context.</li>
-</ul>
-<p>Custom Prompt Enhancements</p>
-<ul>
-<li><strong>Required Entities</strong>: A new dynamic variable holding a comma-separated list of entity names to be captured by the LLM. This allows platform users to specify which entities need to be collected or included in the output. </li>
-<li><strong>Collected Entities</strong>: An object containing the entities and their values collected by the language model.</li>
-<li><strong>Custom Prompt Creation using JavaScript</strong>: The Platform introduces a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. As Platform user you can preview and validate your scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.</li>
-</ul>
-<p>Support for Variables</p>
-<ul>
-<li><strong>Support for Dynamic Variables</strong>: Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.</li>
-</ul>
-<p><a href="../../../../../app-settings/variables/using-bot-variables/">Learn more</a>.</p>
 <h2 id="configure-genai-node">Configure GenAI Node<a class="headerlink" href="#configure-genai-node" title="Permanent link">&para;</a></h2>
 <h3 id="component-properties">Component Properties<a class="headerlink" href="#component-properties" title="Permanent link">&para;</a></h3>
 <p>The component properties empower you to configure the following settings. The changes made within this section affect this node across all instances and dialog tasks.</p>
@@ -14495,6 +14495,10 @@
 </li>
 </ul>
 <h4 id="pre-processor-script">Pre-Processor Script<a class="headerlink" href="#pre-processor-script" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pre-processor script does not apply to the custom prompt.</p>
+</div>
 <p>This property helps execute a script as the first step when the GenAI Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. <a href="../working-with-the-script-node/#configure-the-node" target="_blank">Learn more</a>.</p>
 <p>To define a pre-processor script, click <strong>Define Script</strong>, add the script you want to execute, and click <strong>Save</strong>.</p>
 <p><a class="glightbox" href="../images/pre_prosessor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/pre_prosessor.png" alt="Pre prosessor Script" title="Pre prosessor Script" style="border: 1px solid gray; zoom:70%;"></a></p>
@@ -14516,6 +14520,10 @@
 <p>There is a 250-character limit to the Scenarios field, and you can add a maximum of 5 scenarios.</p>
 <p><a class="glightbox" href="../images/exitv2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h4 id="post-processor-script">Post-Processor Script<a class="headerlink" href="#post-processor-script" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The post-processor script does not apply to the custom prompt.</p>
+</div>
 <p>This property initiates the post-processor script after processing every user input as part of the GenAI Node. Use the script to manipulate the response captured in the context variables just before exiting the GenAI Node for both the success and exit scenarios. The Pre-processor Script has the same properties as the Script Node. <a href="../working-with-the-script-node/#configure-the-node" target="_blank">Learn more</a>.</p>
 <p><strong>Important Considerations</strong></p>
 <p>If the GenAI Node requires multiple user inputs, the post-processor is executed for every user input received.</p>
@@ -14577,8 +14585,8 @@ You can define transitions using the context variables.</p>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>}
 </span></code></pre></div>
 <h2 id="add-custom-prompt-for-genai-node">Add Custom Prompt for GenAI Node<a class="headerlink" href="#add-custom-prompt-for-genai-node" title="Permanent link">&para;</a></h2>
-<p>This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
-For more information on Custom Prompt, see <a href="../../../../../generative-ai-tools/prompts-library/">Prompts and Requests Library</a>.</p>
+<p>This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.</p>
+<p>For more information on Custom Prompt, see <a href="../../../../../generative-ai-tools/prompts-library/">Prompts and Requests Library</a>.</p>
 <p>To add a GenAI node prompt using JavaScript, follow the steps:</p>
 <ol>
 <li>Go to <strong>Generative AI Tools</strong> &gt; <strong>Prompts Library</strong>.</li>
@@ -14587,7 +14595,7 @@ For more information on Custom Prompt, see <a href="../../../../../generative-ai
 <li>The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. </li>
 <li>
 <p>In the Request section, click <strong>Start from Scratch</strong>. <a href="#dynamic-variables">Learn more</a>. </p>
-<p><a class="glightbox" href="../images/javas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/javas.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;"></a></p>
+<p><a class="glightbox" href="../images/javasv2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/javasv2.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
 <p>Click <strong>JavaScript</strong>. The Switch Mode pop-up is displayed. Click <strong>Continue</strong>. </p>
@@ -14598,8 +14606,8 @@ For more information on Custom Prompt, see <a href="../../../../../generative-ai
 <p><a class="glightbox" href="../images/preview2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/preview2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>On the Preview pop-up, enter the Variable <strong>Value</strong> and click <strong>Test</strong>. This will convert the JavaScript to a JSON object and this will be sent to the LLM. </p>
-<p><a class="glightbox" href="../images/preview1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;"></a></p>
+<p>On the Preview pop-up, enter the Variable <strong>Value</strong> and click <strong>Test</strong>. This will convert the JavaScript to a JSON object and send it to the LLM. You can view the JSON object in the JSON Preview section. The success message is displayed. Click <strong>Close</strong>.
+    <a class="glightbox" href="../images/preview1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
 <p>You can view the JSON object in the JSON Preview section. Click <strong>Close</strong>.</p>
@@ -14622,7 +14630,7 @@ For more information on Custom Prompt, see <a href="../../../../../generative-ai
 <p>The <strong>Actual Response</strong> and <strong>Expected Response</strong> are displayed. </p>
 <ol>
 <li>
-<p>If the response structure matches, the responses will be in green. Click <strong>Save</strong>. Skip to Step 11.</p>
+<p>If the response structure matches, the responses will be in green. Click <strong>Save</strong>. Skip to Step 15.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Both Actual Response and Expected Response are not editable.</p>
