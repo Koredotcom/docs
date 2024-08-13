@@ -48,6 +48,8 @@ This section lets you set your preferences based on the channels. It has three c
 
     Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a language-specific dialog task, enabling them to customize the Conversation Summary.
 
+* **Widget Landing Tab**: This widget allows you to select the default landing page for your selected channel and is available for all three channels. Note that the **Transcription** option appears here for selection only when the **Transcript Tab** widget is enabled.
+
 ### Steps to set channel specific preferences
 
 1. Sign in to XO Platform.

@@ -27,9 +27,13 @@ Steps to add and configure the node:
 
         The node will trigger a timeout error if the request is not completed within the selected time frame.
 
-        !!! Note
 
-            The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
+        !!! Note "Notes"
+
+            * The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
+            
+            * Timeout precedence: Agent timeout > Node timeout > Third-party API endpoint timeout.
+
 
     * **Request Definition**: Define the details of the service request to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
     <img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">

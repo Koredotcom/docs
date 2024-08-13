@@ -37,7 +37,7 @@ Once you place your node on the canvas, the dialog window is displayed with the 
 
 The configurations you set up or edit in the **Component Properties** tab reflect in all the dialog tasks that use this node.
 
-On the **Component Properties** tab, under the **General Settings**, you can modify
+On the **Component Properties** tab, you can modify:
     
 1. The **Name,**
 2. The **Display Name**,

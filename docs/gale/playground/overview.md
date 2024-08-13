@@ -8,7 +8,7 @@ GALE's prompt Playground allows you to experiment and refine prompts to get the 
 
 * **Simple vs. Advanced Mode**: Simple mode allows quickly generating output by adding a prompt and model. Advanced mode provides more control, enabling the addition of a prompt, system prompt, and examples, linking a dataset, and adding multiple models to generate and compare outputs. [Learn more](./generate-output-using-advanced-mode.md).  
 
-* **Resue the Prompt Experiment**: Copy the prompt as a Gen AI node directly in the Agent Flow builder or copy it for use elsewhere. You can also export/download the prompt and related data in CSV format. [Learn more](./explore-other-actions-to-perform-in-the-prompt-playground.md#copy-a-prompt).
+* **Reuse the Prompt Experiment**: Copy the prompt as a Gen AI node directly in the Agent Flow builder or copy it for use elsewhere. You can also export/download the prompt and related data in CSV format. [Learn more](./explore-other-actions-to-perform-in-the-prompt-playground.md#copy-a-prompt).
 
 * **Restore a Prompt Experiment from History**: Review the timeline of prompts and their corresponding generated outputs, and restore a prompt version if needed. [Learn more](./explore-other-actions-to-perform-in-the-prompt-playground.md#restore-a-prompt-version-using-the-history).
 

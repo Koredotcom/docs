@@ -10,6 +10,7 @@ This update includes feature enhancements and bug fixes. Key features and enhanc
 ### Widget Landing Tab
 
 The location of the Widget Landing Tab settings is changed in this update:
+
 * Old location: Widget Settings > Agent AI Channel Specific Settings. 
 * New location: Widget Theming > Layout Customization > Widget Menu Layout.
 
@@ -17,9 +18,12 @@ This change consolidates widget customization options, making it easier for user
 
 ### OAuth Credential Update for Genesys
 
-The **Authorized Redirect URI** in the Genesys **Middleman App** is updated to ensure seamless integration of Agent AI with XO v11:
-* Previous URI: https://agentassist[.kore.ai/koreaiaa-genesys/](http://.kore.ai/koreaiaa-genesys/)
-* New URI: [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/) 
+The **Authorized Redirect URI** in the Genesys Middleman App is updated to ensure seamless integration of Agent AI with XO v11:
+
+* Previous URI: https://agentassist.kore.ai/koreaiaa-genesys/
+* New URI: https://platform.kore.ai/koreaiaa-genesys/
+
+<hr>
 
 ## v11.4 July 27, 2024
 <u> Patch Release </u>
@@ -54,7 +58,7 @@ The Agent AI widget now supports language-specific summarization for third-party
 
 The Agent AI widget now displays summaries more flexibly across all active tabs. When an agent closes a conversation, the summary appears on whichever tab they're currently viewing, not just the Assist tab. This change supports the widget's customizable layout feature, allowing agents to see summaries even if they've rearranged or removed certain tabs. For example, a summary can now pop up on the Search tab, enhancing the widget's versatility and ensuring agents always have access to important conversation summaries regardless of their current view.
 
-### Widget Layout Customization
+### Widget Layout Customization (Beta)
 
 The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options. [Learn More](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/widget-theming-layout-customization/){:target="_blank"}  
 <img src="../images/widget-layout-customization-5.png" alt="widget-layout-customization" title="widget-layout-customization" style="border: 1px solid gray; zoom:80%;">
