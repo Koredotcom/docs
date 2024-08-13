@@ -289,7 +289,7 @@ The Comments feature now includes comment and thread actions, user mentions and 
 
 ### Digital Forms
 
-* Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs. [Learn more :octicons-arrow-right-24:](/docs/xo/automation/use-cases/digital-skills/digital-forms#component-properties){:target="_blank"}
+* Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs. [Learn more :octicons-arrow-right-24:](/docs/xo/automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
 * Digital Forms Date Picker Supports Japanese: The digital form’s Date Picker now supports the Japanese language if the bot language is Japanese.
 
 ### Export/Import
