@@ -40,7 +40,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 
     The configurations you set up or edit in the Component Properties tab reflects in all the dialog tasks that use this node. These settings are the same for Intent and Sub-intent nodes.
 
-On the **Component Properties** tab, under the **General Settings**, you can modify:  
+On the **Component Properties** tab, you can modify:  
 
 1. The **Name**,
 2. The **Display Name**,
