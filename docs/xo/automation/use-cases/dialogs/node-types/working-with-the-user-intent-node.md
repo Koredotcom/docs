@@ -88,7 +88,7 @@ Click the **Connections** tab and set the transition properties to determine the
 
 Primary Intent nodes only allow you to select the next node to trigger.
 
-If the Intent node you are working with does not represent the primary intent within the dialog task (if it follows another node), you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/){:target="_blank"}
+If the Intent node you are working with does not represent the primary intent within the dialog task (if it follows another node), you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/)
 
 !!! Note
 
