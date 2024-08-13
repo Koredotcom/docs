@@ -37,8 +37,8 @@ We are working to fix these issues in tne next release:
 * Service Node: The usage of the transient entity in the service node request is in plain text in the response.
 * Debug Logs (Analytics): When a transient entity is printed as part of debugger statements, the data is in redacted form in the Debug Logs (Analytics) and is not purged.
 
-
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node){:target="_blank"}
+
 
 ### Dialog Builder
 
@@ -64,6 +64,7 @@ Key benefits:
 <img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
+
 
 #### Redesigned Property Panel for Dialog Builder Nodes
 
@@ -101,6 +102,7 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
 
+
 ### Agent Transfer
 
 #### Enhanced Agent Chat History Link
@@ -111,7 +113,9 @@ Backward compatibility:
 
 * The existing agent transfer chat history links remain unchanged. These changes apply only to the links generated after this release.
 
+
 [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#user-bot-chat-transcript-link-to-live-agents){:target="_blank"}
+
 <hr>
 
 ## v11.4 July 27, 2024
