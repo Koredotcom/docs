@@ -89,7 +89,7 @@ Key benefits:
 * Provides greater control over input formats.
 * Enables precise data validation for complex scenarios.
 
-[Learn more :octicons-arrow-right-24:](../../Automation/use-cases/digital-skills/digital-forms.md/#component-properties){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
 
 ### Agent Transfer
 
