@@ -53,7 +53,6 @@ To create a campaign when Agentless Dialing Mode is selected:
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
-
 ### Progressive Dialer
 
 A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
@@ -110,7 +109,7 @@ To create a campaign when Preview Dialing Mode is selected:
 
 #### Preview Dialer Call Handling
 
-The agent is presented with one contact with an option for the Agent to Dial the number or Skip. Agents have a default 30-second timer to either dial or skip the call. If the agent dials within 30 seconds, the call is dialed to the contact. If the agent skips within 30 seconds, the interaction is removed from the agent and reassigned. Skipped contacts follow the retry logic based on the maximum attempts configured. The maximum number of skips allowed per agent can be configured for each campaign. Once the skip limit is reached, the skip button will no longer be available for that campaign instance. If the agent neither dials nor skips within the 30-second window, the call will be automatically dialed. The CUSTOMER INFO widget displays the customer's information. The interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name from which the call or contact is generated.    
+The agent is presented with one contact with an option for the Agent to Dial the number or Skip. Agents have a default 30-second timer to either dial or skip the call. If the agent dials within 30 seconds, the call is dialed to the contact. If the agent skips within 30 seconds, the interaction is removed from the agent and reassigned. Skipped contacts follow the retry logic based on the maximum attempts configured. The maximum number of skips allowed per agent can be configured for each campaign. Once the skip limit is reached, the skip button will no longer be available for that campaign instance. If the agent neither dials nor skips within the 30-second window, the call will be automatically dialed. The CUSTOMER INFO widget displays the customer's information. The interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name from which the call or contact is generated.  
 <img src="../images/preview-call.png" alt="Preview Call" title="Preview Call" style="border: 1px solid gray; zoom:70%;">
 
 Once an agent dials a number, that number becomes unavailable to other agents. When a call is connected, the number is not dialed again for the duration of the campaign. During the call the agent can Mute, place the call on Hold, or end the interaction. All outbound calls are recorded in the same way as inbound calls to ensure quality and compliance.  

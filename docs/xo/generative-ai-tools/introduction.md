@@ -6,14 +6,10 @@ In addition to the out-of-box integration with pre-built models, the Platform su
 
 The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. For more information, see [Kore.ai XO GPT](xo-gpt-module.md).
 
-
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
 
-
 To configure Generative AI and LLM, go to **Product Switcher** > **Generative AI Tools** or click the Generative AI Tools icon in the left-side menu.
-
-
 
 <img src="../images/models-library.png" alt="Models-Library" title="Models-Library" style="border: 1px solid gray; zoom:70%;">
 
@@ -73,9 +69,13 @@ All these features benefit VA developers, NLP developers, and testers as follows
 
 ## Important Considerations
 
-LLMs can now generate responses in bot languages that LLMs also support To learn more about managing languages for VAs, click[ here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+### Language Support
 
-LLM and Generative AI also require sharing data with third parties: OpenAI (when using the OpenAI integration) or OpenAI and Microsoft (when using the Azure integration) etc,
+LLMs can now generate responses in bot languages that LLMs also support. To learn more about managing languages for VAs, click [here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+
+### Data Sharing
+
+LLM and Generative AI features involve data sharing with third-party LLM providers, such as OpenAI, Azure OpenAI, Claude, and others.
 
 
 ## Next Steps
