@@ -28,6 +28,16 @@ Key benefits:
 * Enhanced Data Privacy: Sensitive information does not persist after conversations end.
 * Audit-Friendly: Improves audit trails with a clear indication of purged data. 
 
+Known Issues
+
+We are working to fix these issues in tne next release:
+
+* Task Execution Logs (script execution): Entity values in the Context Object are redacted and not purged.
+* In Analytics > Conversation History: When a Transient Entity is printed in the message/confirmation node, the data is redacted but not purged.
+* Service Node: The usage of the transient entity in the service node request is in plain text in the response.
+* Debug Logs (Analytics): When a transient entity is printed as part of debugger statements, the data is in redacted form in the Debug Logs (Analytics) and is not purged.
+
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node){:target="_blank"}
 
 ### Dialog Builder
