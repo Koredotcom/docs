@@ -2,9 +2,6 @@
 
 Agent AI now enables channel-specific widget customization, letting users modify the widget's layout as required. As you customize the widget, you can preview the changes on the right half of the page.
 
-!!! note "Note"
-    The preview functionality is in the beta stage and will improve over the course of releases to portray a real widget experience. Currently, it should be viewed as a close reference.
-
 Steps to customize the widget’s layout
 
 1. Sign in to **Agent AI**.
@@ -58,7 +55,8 @@ This slider lets you control the opacity (visibility) of the **Sent** and **Copi
 
 ## Widget Menu Layout
 
-This section lets you enable or disable the Agent AI widget menus - **Assist Home**, **Search**, **My Bot**, and **Transcript** (for the Voice channel). You can position the menus at the bottom or the side by clicking the **Bottom** or **Side** options at the top or shuffle the menus with the drag-and-drop action. To automatically position the menus based on the pixel level, select the **Responsive** option. If the pixel size is less than 600, the menus move to the bottom, and for more than 600, the menus move to the left. The following screenshot shows a disabled **Search** menu, **Side** positioning of the enabled menus, and the shuffled **Assist Home** menu with the **My Bot** menu:  
+This section lets you enable or disable the Agent AI widget menus – **Assist Home**, **Search**, **My Bot**, and **Transcript** (for the Voice channel) – and select a landing tab. You can position the menus at the bottom or the side by clicking the **Bottom** or **Side** options at the top or shuffle the menus with the drag-and-drop action. To automatically position the menus based on the pixel level, select the **Responsive** option; If the pixel size is less than 600, the menus move to the bottom, and for more than 600, the menus move to the left. The following screenshot shows a disabled **Search** menu, **Side** positioning of the enabled menus, My Bot tab marked as the landing tab, and the shuffled **Assist Home** menu with the **My Bot** menu:
+  
 <img src="../widget-theming-layout-customization/widget-menu-layout-7.png" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
 
 The disabled menus do not appear on the widget unless you enable them back.
