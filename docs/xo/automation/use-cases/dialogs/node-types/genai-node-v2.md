@@ -304,7 +304,7 @@ To add a GenAI node prompt using JavaScript, follow the steps:
 
 12. The **Response Path** is displayed. Click **Lookup Path**.
 10. The **Actual Response** and **Expected Response** are displayed. 
-    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
+    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 15.
 
         !!! note
 
