@@ -131,7 +131,7 @@ Use  the **IVR properties** tab on the Confirmation Node to define the initial p
 
     The Confirmation Node supports all voice call properties for the  IVR, Audio Codes, Twilio Voice, and Voice Gateway channels. Except the IVR Data Extraction Key property is not supported.
 
-<img src="../images/confirmation-ivr-properties.gif" alt="Confirmation node - Voice call properties" title="Confirmation node - Voice call properties" style="border:1px solid gray;zoom:50%;">
+<img src="../node-types/images/confirmation-node-img8-1-voice-call-properties.png" alt="Confirmation node - Voice call properties" title="Confirmation node - Voice call properties" style="border:1px solid gray;zoom:50%;">
 
 
 ### Connections Properties
