@@ -28,7 +28,7 @@ The setup of a Service node in a dialog task involves the following steps:
 
 To configure the Component Properties tab, please follow the steps below:
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter the **Name** and **Display Name** of your Service node. 
+1. On the **Component Properties** tab, enter the **Name** and **Display Name** of your Service node. 
 2. Choose a **Service Type** from the drop-down list:
     1. **Custom Service** – Define an API request to a third-party web service. This is the default setting.
     2. **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
