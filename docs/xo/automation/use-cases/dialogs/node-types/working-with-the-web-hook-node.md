@@ -55,7 +55,7 @@ Use the Instance Properties to define any user tags that you want to set for the
 
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
-1.  On the Webhook node properties panel, click the **Instance Properties** tab.
+1. On the Webhook node properties panel, click the **Instance Properties** tab.
 2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags/){:target="_blank"}.
 
 <img src="../images/webhook-node-img4-instance-properties.png" alt="Webhook node - Instance properties" title="Webhook node - Instance properties" style="border:1px solid gray;zoom:70%;">
