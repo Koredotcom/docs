@@ -39,6 +39,7 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md){:target="_blank"}
 
+
 ### App Settings
 
 #### Update App Name Post-Publication
@@ -77,6 +78,7 @@ Backward compatibility:
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md){:target="_blank"}
 
+
 ### Admin Console
 
 #### IP Address Restriction Enhancement
@@ -95,6 +97,7 @@ Key benefits:
 * Streamlined administration for large IP ranges.
 
 [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/security-settings.md/#ip-address-restriction){:target="_blank"}
+
 <hr>
 
 ## v11.4 July 27, 2024
