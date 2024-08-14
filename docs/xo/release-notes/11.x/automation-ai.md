@@ -30,7 +30,7 @@ Key benefits:
 
 Known Issues
 
-We are working to fix these issues in tne next release:
+We are working to fix these issues in the next release:
 
 * Task Execution Logs (script execution): Entity values in the Context Object are redacted and not purged.
 * In Analytics > Conversation History: When a Transient Entity is printed in the message/confirmation node, the data is redacted but not purged.
