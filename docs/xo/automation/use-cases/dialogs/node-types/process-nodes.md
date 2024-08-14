@@ -28,7 +28,7 @@ To add a Process node, please follow the steps below:
 
 The Component Properties tab lets you modify configurations of this process across all instances in all dialogs. as follows:
 
-1. Under the **General Settings** section, enter a **Name and Display Name** for the Process node. Node names cannot have spaces.
+1. Enter a **Name and Display Name** for the Process node. Node names cannot have spaces.
 2. **Select a Type**. You can choose one of the following: 
     1. **Trigger**: The node will trigger the Process App.
     2. **Send Bot Response to Process App**: The node sends the Bot Response to the Process App, which can then use it to complete other configured tasks. 
