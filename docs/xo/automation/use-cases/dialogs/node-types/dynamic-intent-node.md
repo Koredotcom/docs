@@ -37,7 +37,8 @@ The settings made within this section affect this node across all instances in a
 1. Enter **Name**, **Display Name**, and **Description** for the node. The node name cannot contain spaces.
 
 
-2. **Target Intent Name**
+2. **Target Intent Name**  
+    
     In this section, you can define the display name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the display name as follows:
 
     * Context Variable – `{{context.targetTaskName}}`

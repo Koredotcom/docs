@@ -35,11 +35,11 @@ The setup of a logic node in a dialog task involves the following steps:
 
 To configure the Component Properties tab, please follow the steps below:
 
-1. On the **Component Properties** tab, under the **General Settings** section, you can modify the **Name** and **Display Name**.
-2. In the **Variable Namespaces** section (v8.0), associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the assistant. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
-3. Use the **Manage Context Variables** section to set the context variables by entering a key-value pair. Use the full path of the variable in the _key_ field i.e. ```context.BotUserSession.<variable_name>.```
+1. On the **Component Properties** tab, you can modify the **Name** and **Display Name**.
+2. Use the **Manage Context Variables** section to set the context variables by entering a key-value pair. Use the full path of the variable in the _key_ field i.e. ```context.BotUserSession.<variable_name>.```
+3. In the **Variable Namespaces** section (v8.0), associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the assistant. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-    <img src="../images/logic-node-img2-component-properties.png" alt="Logic node - Component Properties" title="Logic node - Component Properties" style="border:1px solid gray;zoom:70%;">
+<img src="../images/logic-node-img2-component-properties.png" alt="Logic node - Component Properties" title="Logic node - Component Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Instance Properties
