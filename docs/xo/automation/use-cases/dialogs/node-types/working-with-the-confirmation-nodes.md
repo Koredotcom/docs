@@ -34,7 +34,7 @@ Setting up a confirmation node in a dialog task involves the following steps:
 
 To configure the component properties, follow the below steps:
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and a **Display Name**.
+1. On the **Component Properties** tab, enter a **Name** and a **Display Name**.
 2. Under the **User Prompts** section, you can compose the confirmation request either as plain text or as a JavaScript message.center channel-specific messages for User Prompts using the **Manage** link. For more information, refer to the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
     1. To add more prompts , click **Add a Prompt** and repeat the above steps.
     2. Enable the channel-specific standard formatting to **Display Confirmation Options.**  
