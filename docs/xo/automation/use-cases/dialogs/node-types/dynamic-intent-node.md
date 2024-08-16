@@ -34,31 +34,28 @@ The settings made within this section affect this node across all instances in a
 <img src="../images/dynamic-intent-node-img2.png" alt="Dynamic intent node - Component properties" title="Dynamic intent node - Component properties" style="border:1px solid gray;zoom:70%;">
 
 
-#### General Settings
-
 1. Enter **Name**, **Display Name**, and **Description** for the node. The node name cannot contain spaces.
 
 
 2. **Target Intent Name**
+    In this section, you can define the display name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the display name as follows:
 
-In this section, you can define the display name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the display name as follows:
+    * Context Variable – `{{context.targetTaskName}}`
+    * Environment Variable – `{{env.targetTaskName}}  
+    `Where `targetTaskName` is a variable that contains the target intent's display name as the value.
 
-* Context Variable – `{{context.targetTaskName}}`
-* Environment Variable – `{{env.targetTaskName}}  
-`Where `targetTaskName` is a variable that contains the target intent's display name as the value.
+    Example Scenarios:
 
-Example Scenarios:
-
-* **If the target intent is present within the same bot**: The variable must use a valid display name of an intent within the bot. The target intent can be associated with a Dialog Task or FAQ. Consider the following intent display names – `reset_password`, `apply_paid_leave`, or `how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `reset_password` as the value.
-* **If the target intent is present in a different linked bot** (the target bot and the current bot are linked to a common Universal Bot): The variable must refer to the target linked bot name and the display name of the intent within the target bot, separated by a ‘dot’. Consider the following intent names – `HRBot.apply_paid_leave`, `ITBot.reset_password`, or `ITBot.how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `ITBot.reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `ITBot.reset_password` as the value.
+    * **If the target intent is present within the same bot**: The variable must use a valid display name of an intent within the bot. The target intent can be associated with a Dialog Task or FAQ. Consider the following intent display names – `reset_password`, `apply_paid_leave`, or `how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `reset_password` as the value.
+    * **If the target intent is present in a different linked bot** (the target bot and the current bot are linked to a common Universal Bot): The variable must refer to the target linked bot name and the display name of the intent within the target bot, separated by a ‘dot’. Consider the following intent names – `HRBot.apply_paid_leave`, `ITBot.reset_password`, or `ITBot.how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `ITBot.reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `ITBot.reset_password` as the value.
 
 
 3. **Target Intent Error Transition**
 
-In this section, you can select the flow of execution to be followed in case the Platform fails to resolve the defined target intent:
+    In this section, you can select the flow of execution to be followed in case the Platform fails to resolve the defined target intent:
 
-* Ignore this node and continue with the execution of the following node in the transition; this option is selected by default.
-* Trigger Task failure event
+    * Ignore this node and continue with the execution of the following node in the transition; this option is selected by default.
+    * Trigger Task failure event
 
 
 ### Instance Properties
