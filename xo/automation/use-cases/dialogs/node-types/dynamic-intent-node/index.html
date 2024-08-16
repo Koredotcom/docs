@@ -2634,39 +2634,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Component Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#general-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      General Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#target-intent-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Target Intent Name
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#target-intent-error-transition" class="md-nav__link">
-    <span class="md-ellipsis">
-      Target Intent Error Transition
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -14101,39 +14068,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Component Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#general-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      General Settings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#target-intent-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Target Intent Name
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#target-intent-error-transition" class="md-nav__link">
-    <span class="md-ellipsis">
-      Target Intent Error Transition
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -14241,9 +14175,12 @@
 <h3 id="component-properties">Component Properties<a class="headerlink" href="#component-properties" title="Permanent link">&para;</a></h3>
 <p>The settings made within this section affect this node across all instances in all dialog tasks.  </p>
 <p><a class="glightbox" href="../images/dynamic-intent-node-img2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dynamic-intent-node-img2.png" alt="Dynamic intent node - Component properties" title="Dynamic intent node - Component properties" style="border:1px solid gray;zoom:70%;"></a></p>
-<h4 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">&para;</a></h4>
-<p>In this section, you can provide <strong>Name</strong>, <strong>Display Name</strong>, and <strong>Description</strong> for the node. The node name cannot contain spaces.</p>
-<h4 id="target-intent-name">Target Intent Name<a class="headerlink" href="#target-intent-name" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Enter <strong>Name</strong>, <strong>Display Name</strong>, and <strong>Description</strong> for the node. The node name cannot contain spaces.</p>
+</li>
+<li>
+<p><strong>Target Intent Name</strong>  </p>
 <p>In this section, you can define the display name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the display name as follows:</p>
 <ul>
 <li>Context Variable – <code>{{context.targetTaskName}}</code></li>
@@ -14254,12 +14191,16 @@
 <li><strong>If the target intent is present within the same bot</strong>: The variable must use a valid display name of an intent within the bot. The target intent can be associated with a Dialog Task or FAQ. Consider the following intent display names – <code>reset_password</code>, <code>apply_paid_leave</code>, or <code>how often should I reset my password</code>. In the <strong>Target Intent Name</strong> field, you can use either the display name <code>reset_password</code> as static text or the context variable <code>{{context.targetTaskName}}</code> where the variable <code>targetTaskName</code> contains the display name <code>reset_password</code> as the value.</li>
 <li><strong>If the target intent is present in a different linked bot</strong> (the target bot and the current bot are linked to a common Universal Bot): The variable must refer to the target linked bot name and the display name of the intent within the target bot, separated by a ‘dot’. Consider the following intent names – <code>HRBot.apply_paid_leave</code>, <code>ITBot.reset_password</code>, or <code>ITBot.how often should I reset my password</code>. In the <strong>Target Intent Name</strong> field, you can use either the display name <code>ITBot.reset_password</code> as static text or the context variable <code>{{context.targetTaskName}}</code> where the variable <code>targetTaskName</code> contains the display name <code>ITBot.reset_password</code> as the value.</li>
 </ul>
-<h4 id="target-intent-error-transition">Target Intent Error Transition<a class="headerlink" href="#target-intent-error-transition" title="Permanent link">&para;</a></h4>
+</li>
+<li>
+<p><strong>Target Intent Error Transition</strong></p>
 <p>In this section, you can select the flow of execution to be followed in case the Platform fails to resolve the defined target intent:</p>
 <ul>
 <li>Ignore this node and continue with the execution of the following node in the transition; this option is selected by default.</li>
 <li>Trigger Task failure event</li>
 </ul>
+</li>
+</ol>
 <h3 id="instance-properties">Instance Properties<a class="headerlink" href="#instance-properties" title="Permanent link">&para;</a></h3>
 <p>Under the Instance Properties tab, you can configure the instance-specific fields for this Dynamic Intent intent node. These settings are applicable only for this instance and will not affect any other instances of this node.  </p>
 <p><a class="glightbox" href="../images/dynamic-intent-node-img3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dynamic-intent-node-img3.png" alt="Dynamic intent node - Instance properties" title="Dynamic intent node - Instance properties" style="border:1px solid gray;zoom:70%;"></a></p>

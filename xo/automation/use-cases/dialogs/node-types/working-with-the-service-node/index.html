@@ -14293,7 +14293,7 @@
 </div>
 <p>To configure the Component Properties tab, please follow the steps below:</p>
 <ol>
-<li>On the <strong>Component Properties</strong> tab, under the <strong>General Settings</strong> section, enter the <strong>Name</strong> and <strong>Display Name</strong> of your Service node. </li>
+<li>On the <strong>Component Properties</strong> tab, enter the <strong>Name</strong> and <strong>Display Name</strong> of your Service node. </li>
 <li>
 <p>Choose a <strong>Service Type</strong> from the drop-down list:</p>
 <ol>
@@ -14391,21 +14391,18 @@
 <p>Under <strong>Advanced Controls</strong>, select the maximum wait time for the <strong>Timeout</strong> for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:</p>
 <ol>
 <li><strong>Timeout(Seconds)</strong>: Select the maximum wait time from the dropdown list. The timeout range can be any value between <strong>1 Second</strong> to <strong>20 Seconds</strong> for <em>Standard</em> accounts, and between <strong>1 Second</strong> to <strong>30 Seconds</strong> for <em>Enterprise accounts</em>. The default value is 5 Seconds.</li>
-<li>
-<p><strong>Timeout error handling</strong>: Choose how the bot should respond when the timeout occurs.</p>
-<ul>
+<li><strong>Timeout error handling</strong>: Choose how the bot should respond when the timeout occurs.<ul>
 <li><strong>Close the Task and trigger Task Execution Failure Event</strong>, or</li>
 <li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.</li>
 </ul>
-<p><a class="glightbox" href="../images/service-node-img5-timeout-error-handling.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;"></a></p>
 </li>
 </ol>
 </li>
 <li>
 <p>Under the <strong>Custom Tags</strong> section, add tags to build custom profiles of your VA’s conversations. <a href="../../../../../analytics/automation/custom-dashboard/custom-meta-tags" target="_blank">Click here for more</a>.</p>
-<p><a class="glightbox" href="../images/service-node-img8-instance-properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img8-instance-properties.png" alt="Service node - Instance properties" title="Service node - Instance properties" style="border:1px solid gray;zoom:70%;"></a></p>
 </li>
 </ol>
+<p><a class="glightbox" href="../images/service-node-img5-timeout-error-handling.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;"></a></p>
 <h3 id="connections-properties">Connections Properties<a class="headerlink" href="#connections-properties" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -14450,7 +14447,7 @@
 </ol>
 </li>
 <li>
-<p>In the second field of the <strong>Request URL</strong>, specify the URL for the dialog task response to process at Kore.ai. For example, <a href="http://koremessenger.com/postURL">http://koremessenger.com/postURL</a>. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the <code>Context</code> object: <a href="https://myDomain.com/{{context.entities.topic">https://myDomain.com/{{context.entities.topic</a>}} for the <code>context.entities.topic</code>. You must use the double brackets <code>{{ context.object }}</code>. For more information, refer to <a href="../../../context-object" target="_blank">Context Object</a>.</p>
+<p>In the second field of the <strong>Request URL</strong>, specify the URL for the dialog task response to process at Kore.ai. For example, <a href="http://koremessenger.com/postURL">http://koremessenger.com/postURL</a>. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the <code>Context</code> object: <a href="https://myDomain.com/{{context.entities.topic">https://myDomain.com/{{context.entities.topic</a>}} for the <code>context.entities.topic</code>. You must use the double brackets <code>{{ context.object }}</code>. For more information, refer to <a href="../../../../intelligence/context-object/" target="_blank">Context Object</a>.</p>
 <ol>
 <li>
 <p>Optionally, click <strong>Show Advanced</strong>, and select  </p>
@@ -14468,7 +14465,7 @@
 <ul>
 <li><strong>application/x-www-form-urlencoded</strong> – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.</li>
 <li><strong>application/json</strong> – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.</li>
-<li><strong>application/xml</strong> – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the <code>Context</code> object: <a href="https://myDomain.com/{{context.entities.topic">https://myDomain.com/{{context.entities.topic</a>}} for the <code>context.entities.topic</code>. You must use the double brackets <code>{{ context.object }}</code>. For more information, refer to <a href="../../../context-object/" target="_blank">Context Object</a>.</li>
+<li><strong>application/xml</strong> – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the <code>Context</code> object: <a href="https://myDomain.com/{{context.entities.topic">https://myDomain.com/{{context.entities.topic</a>}} for the <code>context.entities.topic</code>. You must use the double brackets <code>{{ context.object }}</code>. For more information, refer to <a href="../../../../intelligence/context-object/" target="_blank">Context Object</a>.</li>
 </ul>
 </li>
 <li>
@@ -14503,7 +14500,7 @@
 <ol>
 <li>When you select <strong>URL to Image</strong> in the <strong>Service Type</strong>, the <strong>Type</strong> setting is read-only.</li>
 <li>In the <strong>Request Definition</strong> section, click <strong>Define Request</strong> to specify the settings when the <strong>URL to Image</strong> is selected for <strong>Service Type</strong>. The <strong>Define Request for &lt; <em>Service Node Name</em> &gt;</strong> dialog is displayed as shown in the following illustration.</li>
-<li>In the <strong>URL to Convert</strong> field, enter the URL for the image. The syntax when using a <code>Context</code> object key in a URL is to enclose the object name in double brackets, for example, <a href="https://myURLimage.com/">https://myURLimage.com/</a><strong>{{context.entities.imageName}}</strong>.</li>
+<li>In the <strong>URL to Convert</strong> field, enter the URL for the image. The syntax when using a <code>Context</code> object key in a URL is to enclose the object name in double brackets, for example, <a href="https://myURLimage.com/{{context.entities.imageName">https://myURLimage.com/{{context.entities.imageName</a>}}.</li>
 <li>In the <strong>Render Sizes</strong> section, specify a name for the image size. For example, for an iPhone or tablet, enter the <strong>Width</strong> and <strong>Height</strong> in pixels; then click <strong>+Add</strong> to add additional sizes, or click <strong>Add</strong> to save and close the dialog.</li>
 <li>Click <strong>Save</strong> to save the request for the service node and close the <strong>Define Request for &lt; <em>Service Node Name</em> &gt;</strong> dialog.</li>
 </ol>
