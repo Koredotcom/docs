@@ -69,7 +69,7 @@ Select the prompt to show on successful form submission. The options are:
         a. Use Submit Prompts –  The custom message added in the prompt is shown.  
         b. Use default system response –  The following confirmation is shown – {{FormName}} Form is successfully submitted.
             
-<img src="../images/form-node-img8-submit-prompt-selection.png" alt="Select Submit prompt for Web/Mobile SDK" title="Select Submit prompt for Web/Mobile SDK" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/form-node-img8-submit-prompt-selection.png" alt="Select Submit prompt for Web/Mobile SDK" title="Select Submit prompt for Web/Mobile SDK" style="border:1px solid gray;zoom:70%;">
 
     !!! Note
     
@@ -87,16 +87,17 @@ To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
 2. In the **Form Cancellation Behavior** section, select how the VA handles the conversation when the user cancels the form:  
- a. Discard the task and trigger End of Task Event – This is the default option.  
+    a. Discard the task and trigger End of Task Event – This is the default option.  
             
-<img src="../images/form-node-img9-form-cancellation-behavior.png" alt="Form cancellation behavior - End of task" title="Form cancellation behavior - End of task" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/form-node-img9-form-cancellation-behavior.png" alt="Form cancellation behavior - End of task" title="Form cancellation behavior - End of task" style="border:1px solid gray;zoom:70%;">
  
-b. Continue with this task and transition to this node – In the **Unit Type** drop-down list, you can select any node present in the current dialog task.
+    b. Continue with this task and transition to this node – In the **Unit Type** drop-down list, you can select any node present in the current dialog task.
             
- <img src="../images/form-node-img10-form-cancellation-behavior-continue-task.png" alt="Form cancellation behavior - Continue task" title="Form cancellation behavior - Continue task" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/form-node-img10-form-cancellation-behavior-continue-task.png" alt="Form cancellation behavior - Continue task" title="Form cancellation behavior - Continue task" style="border:1px solid gray;zoom:70%;">
+
  3. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
-<img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 ### Connections Properties
 
