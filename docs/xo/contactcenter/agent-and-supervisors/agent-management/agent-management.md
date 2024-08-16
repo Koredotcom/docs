@@ -301,7 +301,7 @@ Changes to the Call Recording Control settings are logged on the [Kore.ai Bots A
 
 ### Transfer to External Contacts
 
-If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers/interacting-with-customers.md#transfer-interactions) to learn more.  
+If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions) to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers
