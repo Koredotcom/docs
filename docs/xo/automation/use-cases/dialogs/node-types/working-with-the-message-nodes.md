@@ -46,7 +46,7 @@ Setting up a Message node in a dialog task involves the following steps:
 
     The configurations you set up or edit in this section reflect in all other dialog tasks that use this node.
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the message node.
+1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the message node.
 2. Under the **Bot Responses** section, compose and format the bot response either as plain text or as a JavaScript message. A default message is set by the platform, you can customize it.
 3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
 4. To add more bot responses, click **Add Bot Response** and repeat the above steps.
