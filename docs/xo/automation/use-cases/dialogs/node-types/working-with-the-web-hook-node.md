@@ -32,7 +32,7 @@ The Webhook window is displayed with the **Component Properties** tab selected b
 
 To configure the Component Properties tab, please follow the steps below:
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter the **Name** and **Display Name** of your Webhook node. 
+1. On the **Component Properties** tab, enter the **Name** and **Display Name** of your Webhook node. 
 2. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can use the task-level settings or customize them for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
 
@@ -55,8 +55,8 @@ Use the Instance Properties to define any user tags that you want to set for the
 
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
-1.  On the Webhook node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom** **Tags **section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags/){:target="_blank"}.
+1. On the Webhook node properties panel, click the **Instance Properties** tab.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags/){:target="_blank"}.
 
 <img src="../images/webhook-node-img4-instance-properties.png" alt="Webhook node - Instance properties" title="Webhook node - Instance properties" style="border:1px solid gray;zoom:70%;">
 

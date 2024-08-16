@@ -34,9 +34,9 @@ The setup a Script node in a dialog task involves the following steps:
 
 To configure the Component Properties section, please follow the steps below:
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the script node. Node names cannot have spaces.
+1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the script node. Node names cannot have spaces.
 2. Under the **Script Definition** section, click **Define Script** to add JavaScript.
-3. On the **Add Script** dialog box, enter your JavaScript; then click **Save**. [See below for JavaScript code examples](#javascript-examples).
+3. On the **Add Script** dialog box, enter your JavaScript and then click **Save**. [See below for JavaScript code examples](#javascript-examples).
 4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the bot. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
     <img src="../images/script-node-component-properties.png" alt="Script node - Component properties" title="Script node - Component properties" style="border:1px solid gray;zoom:70%;">
