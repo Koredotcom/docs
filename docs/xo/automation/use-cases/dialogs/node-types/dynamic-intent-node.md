@@ -36,10 +36,10 @@ The settings made within this section affect this node across all instances in a
 
 #### General Settings
 
-In this section, you can provide **Name**, **Display Name**, and **Description** for the node. The node name cannot contain spaces.
+1. Enter **Name**, **Display Name**, and **Description** for the node. The node name cannot contain spaces.
 
 
-#### Target Intent Name
+2. **Target Intent Name**
 
 In this section, you can define the display name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the display name as follows:
 
@@ -53,7 +53,7 @@ Example Scenarios:
 * **If the target intent is present in a different linked bot** (the target bot and the current bot are linked to a common Universal Bot): The variable must refer to the target linked bot name and the display name of the intent within the target bot, separated by a ‘dot’. Consider the following intent names – `HRBot.apply_paid_leave`, `ITBot.reset_password`, or `ITBot.how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `ITBot.reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `ITBot.reset_password` as the value.
 
 
-#### Target Intent Error Transition
+3. **Target Intent Error Transition**
 
 In this section, you can select the flow of execution to be followed in case the Platform fails to resolve the defined target intent:
 
