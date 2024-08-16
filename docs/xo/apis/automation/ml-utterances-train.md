@@ -80,8 +80,15 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 ```json
 curl -X POST \
   https://{{host}}/api/public/bot/{{BotId}}/ml/train \
-  -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+  --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+  --header 'bot-language: de'
 ```
+
+!!! note 
+
+    If the bot language is not included in the header, the default English language is considered for the training. Find the list of supported bot languages [here](../../app-settings/language-management/building-multi-language-bots.md#supported-va-languages).
+
+
 ## Body Parameters
 
 No Body Parameters are passed.
