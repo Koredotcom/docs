@@ -77,6 +77,7 @@ After the customer interacts with Kore’s IVA, you can perform agent transfer f
 <img src="../images/adding-configuration-agent-transfer-node-6.png" alt="adding-configuration-agent-transfer-node" title="adding-configuration-agent-transfer-node" style="border: 1px solid gray; zoom:80%;">
 
 3. 1. 3. After configuring the Agent Transfer node in Experience Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
+
 3. 1. 4. For ZCC, we are using **SIP BYE** for Agent Transfer.  
 <img src="../images/sip-transfer-7.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">
 
@@ -106,19 +107,19 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 !!! note
     The following scenarios can be considered upon Agent Transfer:
 
-### **Scenario 1: Question Resolved, Customer Hangs Up**
+### Scenario 1: Question Resolved, Customer Hangs Up
 
 * **Given** that a customer’s query has been resolved by the voice bot,
 * **When** the customer chooses to hang up directly,
 * **Then** Zoom triggers a **SIP BYE**, Kore sends **ACK**, and no **SIP headers** are passed.
 
-### **Scenario 2: Question Resolved, Voice Bot Ends the Call**
+### Scenario 2: Question Resolved, Voice Bot Ends the Call
 
 * **Given** that a customer’s query has been resolved by the voice bot,
 * **When** the voice bot ends the call,
 * **Then** Kore should send the **kore-session_id** and **kore-bot_id** in the **INVITE’s 200 OK** response, **kore-reason(HangUp)** in the **SIP BYE** message, and any custom header configured in Voice Gateway.
 
-### **Scenario 3: Question Unresolved, Customer Needs Transfer to ZCC Agent**
+### Scenario 3: Question Unresolved, Customer Needs Transfer to ZCC Agent
 
 * **Given** that the customer’s query cannot be resolved by the voice bot,
 * **When** the customer requests to speak with a live agent,
@@ -127,6 +128,7 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 ## Step 4: Create a Connection from ZCC to Kore IVA - Transfer from IVR (SIP Transfer)
 
 1. Sign in to [Zoom App Marketplace](https://marketplace.zoom.us/apps) as an Admin.
+
 2. Select **App Types** > **Connectors** from the left navigation filter menu, and navigate to the **Connectors** page, or simply type “kore.ai” in the **Search** field.  
 <img src="../images/koreai-virtual-assistant-8.png" alt="koreai-virtual-assistant" title="koreai-virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/koreai-virtual-assistant2-9.png" alt="koreai-virtual-assistant2" title="koreai-virtual-assistant2" style="border: 1px solid gray; zoom:80%;">
@@ -138,7 +140,9 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 <img src="../images/create-koreai-virtual-assistant-connector-11.png" alt="create-koreai-virtual-assistant-connector" title="create-koreai-virtual-assistant-connector" style="border: 1px solid gray; zoom:80%;">
 
 5. Enter a name in the **Connector Name** field, select “Voicebot” from the “Choose Bot Type” dropdown list, and then click **Next**.
+
 6. Select the desired region for the voice bot from the dropdown list to automatically populate the Base URL of the regional Kore.ai platform.
+
 7. Copy the **Bot ID**, **Client ID**, and **Client Secret** of your respective app on kore.ai. (Go to **Flows & Channel** > **Digital**. Under **Configured**, click **Configured Channels** > **Web/Mobile Client** > **JWT App Details.**)  
 <img src="../images/web-mobile-client-screen-12.png" alt="web-mobile-client-screen" title="web-mobile-client-screen" style="border: 1px solid gray; zoom:80%;">
 
@@ -149,6 +153,7 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 <img src="../images/domain-name-did-number-14.png" alt="domain-name-did-number" title="domain-name-did-number" style="border: 1px solid gray; zoom:80%;">
 
 10. Paste them into the **Virtual Assistant Connector** on **ZCC**.
+
 11. Click **Next** to authorize the **Kore.ai Chatbot Connector** with the Kore.ai platform.
 
 After creating an Experience Flow, you must attach a DID Number to this flow. (Since Zoom integration is based on DID Number, you don’t need to purchase any number from Kore.)
@@ -157,23 +162,28 @@ After creating an Experience Flow, you must attach a DID Number to this flow. (S
 
 This section explains the process of fetching the details and summary of the conversation between the bot and the customer.
 
-**Steps**
+Steps to fetch Conversation Details and Summary:
 
 1. Sign in to **SmartAssist**.
+
 2. Go to **Dashboard** > **Interactions** and ensure there are call records.  
 <img src="../images/dashboard-interactions-15.png" alt="dashboard-interactions" title="dashboard-interactions" style="border: 1px solid gray; zoom:80%;">
 
 3. Sign in to **[SmartAssist botbuilder](https://smartassist.kore.ai/botbuilder)** using the same credentials.
+
 4. Click the **Instance Bot**.  
+
 !!! note
     You can identify the instance bot by its unique symbol and matching name with the organization. In the above screenshot, Koreai bot is the instance bot as it matches with the organization name and has a unique symbol.
+
 5. Go to **API Scopes**. To do so:
-    5.1. Click the **search** button and enter **API Scopes** in it:  
+
+    - 5.1. Click the **search** button and enter **API Scopes** in it:  
     <img src="../images/api-scopes-16.png" alt="api-scopes" title="api-scopes" style="border: 1px solid gray; zoom:80%;">
 
     **Or**
 
-    5.2. Click **Deploy **>** APIs & Extensions **>** API Scopes**.  
+    - 5.2. Click **Deploy **>** APIs & Extensions **>** API Scopes**.  
     <img src="../images/apis-and-extensions-api-scopes-17.png" alt="apis-and-extensions-api-scopes" title="apis-and-extensions-api-scopes" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Create API Scope**.  
@@ -183,16 +193,17 @@ This section explains the process of fetching the details and summary of the con
 <img src="../images/new-api-scope-mapping-19.png" alt="new-api-scope-mapping" title="new-api-scope-mapping" style="border: 1px solid gray; zoom:80%;">
 
 8. Click **Save**.
+
 9. Go to **Build** > **Natural Language** > **Generative AI & LLM**, locate **Kore.ai XO GPT**, and click **Enable Now.**  
 <img src="../images/generative-ai-and-llm-20.png" alt="generative-ai-and-llm" title="generative-ai-and-llm" style="border: 1px solid gray; zoom:80%;">
 
 10. On the **Kore.ai XO GPT** page, select:  
+    
+    - 10.1. Models.
 
-    10.1. Models.
-
-    10.2. Fine-tuned model for Summarizing Conversation.
-
-    10.3. Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
+    - 10.2. Fine-tuned model for Summarizing Conversation.
+    
+    - 10.3. Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
     <img src="../images/koreai-xo-gpt-21.png" alt="koreai-xo-gpt" title="koreai-xo-gpt" style="border: 1px solid gray; zoom:80%;">
 
 11. Click **Save**.
@@ -209,48 +220,45 @@ This section explains the process of fetching the details and summary of the con
 
 15. Enter a comment in the **Comment** box, and click **Confirm**.  
 <img src="../images/comment-and-confirm-26.png" alt="comment-and-confirm" title="comment-and-confirm" style="border: 1px solid gray; zoom:80%;">
-
-    15.1. Close the message that confirms publishing of your Virtual Assistant.  
+    - 15.1. Close the message that confirms publishing of your Virtual Assistant.  
     <img src="../images/publish-confirmation-27.png" alt="publish-confirmation" title="publish-confirmation" style="border: 1px solid gray; zoom:80%;">
 
 16. Copy the **curl** from the [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/).
 
 17. Go to **Postman**, paste the **curl** copied from the API, and then:
 
-    **17.1.** Replace the **botID** with the **Bot ID** value copied from **SmartAssist**.  
+    17.1. Replace the **botID** with the **Bot ID** value copied from **SmartAssist**. 
     
     Follow these steps to get the **botID**:
 
-    **17.1.1.** Sign in to **SmartAssist**.
+     - 17.1.1. Sign in to **SmartAssist**.
 
-    **17.1.2.** Go to **Configuration** > **System Setup** > **Channels**.
+     - 17.1.2. Go to **Configuration** > **System Setup** > **Channels**.
 
-    **17.1.3.** Click **Chat** > **Web/Mobile Client**.  
+     - 17.1.3. Click **Chat** > **Web/Mobile Client**.  
         <img src="../images/chat-web-mobile-client-28.png" alt="chat-web-mobile-client" title="chat-web-mobile-client" style="border: 1px solid gray; zoom:80%;">
 
-    **17.1.4.** On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
+     - 17.1.4. On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
         <img src="../images/api-details-29.png" alt="api-details" title="api-details" style="border: 1px solid gray; zoom:80%;">
 
-    **17.1.5.** Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
+     - 17.1.5. Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
         <img src="../images/copy-botid-value-30.png" alt="
         " title="
         " style="border: 1px solid gray; zoom:80%;">
 
-    **17.2.** Copy the **sessionID** from **SmartAssist. 
+    17.2. Copy the **sessionID** from **SmartAssist**. 
      Follow these steps to get the **sessionID**:
 
-    **17. 2. 1.** Sign in to **SmartAssist**.
+     - 17.2.1. Sign in to **SmartAssist**.
 
-    **17. 2. 2.** Go to **Dashboard** > **Interactions**.
+     - 17.2.2. Go to **Dashboard** > **Interactions**.
 
-    **17. 2. 3.** Click the log for which you want to get the details.  
+     - 17.2.3. Click the log for which you want to get the details.  
         <img src="../images/get-conversation-details-31.png" alt="get-conversation-details" title="get-conversation-details" style="border: 1px solid gray; zoom:80%;">
  
-    **17. 2. 4.** On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
+     - 17.2.4. On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
         <img src="../images/sessionid-details-32.png" alt="sessionid-details" title="sessionid-details" style="border: 1px solid gray; zoom:80%;">
 
-    **17.3.** Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
+    17.3. Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
+
 18. Run the modified **curl** to get the conversation details and summary of a session.
-
-
-
