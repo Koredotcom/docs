@@ -1116,7 +1116,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
-9. Follow the steps provided [here](../../../sdk/tutorials/web-sdk/){:target="_blank"} to publish and host the panels.
+9. Follow the steps provided [here](../../../app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} to publish and host the panels.
 
     !!! Note
 
