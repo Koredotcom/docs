@@ -1084,7 +1084,7 @@ To invoke a form from a dialog task, follow the below steps:
       
                 We urge you not to make changes to the connection settings as this affects the VA's performance.
 
-    * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/"){:target="_blank"} as follows:
+    * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/){:target="_blank"} as follows:
 
         * Use the **Entity Post-assignment** to capture the user input.
         * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
@@ -1116,7 +1116,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
-9. Follow the steps provided [here](../../../app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} to publish and host the panels.
+9. Follow the steps provided [here](../../../sdk/tutorials/web-sdk/){:target="_blank"} to publish and host the panels.
 
     !!! Note
 
