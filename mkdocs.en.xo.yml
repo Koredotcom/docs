@@ -473,8 +473,8 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
-        - Kore Voice Automation (IVA):
-          - Zoom Contact Center (CC): contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center/?h=kore+voice
+        - Kore Voice Automation:
+          - Zoom Contact Center: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
