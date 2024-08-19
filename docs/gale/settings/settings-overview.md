@@ -137,10 +137,10 @@ The following modules and features are supported on the Settings Console:
    <td>
 <ul>
 <li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. 
-<a href="./integrations/integrate-with-wandb.md">Learn more</a>.
+[Learn more](./integrations/integrate-with-wandb.md).
 </li>
-<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="./integrations/integrate-with-s3-bucket.md">Learn more</a>.</li>
-<li><strong>Hugging Face</strong>: Import exclusive and private models into GALE from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="./integrations/enable-hugging-face.md"> Learn more</a>.</li></ul>
+<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. [Learn more](./integrations/integrate-with-s3-bucket.md).</li>
+<li><strong>Hugging Face</strong>: Import exclusive and private models into GALE from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more. [Learn more] (./integrations/enable-hugging-face.md).</li></ul>
    </td>
   </tr>
   <tr>
