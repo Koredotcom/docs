@@ -59,24 +59,28 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
             
             <img src="../images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
-6. You can enable the **Sensitive Entity** option to redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
+6. You can enable the **Sensitive Entity** option to  transient an entity, and redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
     
     <img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">
  
     By default, this setting is disabled. Once you **Enable** the **Sensitive Entity** setting, you can do the following:
-    
-    1. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
+
+    1. Select the Transient Entity checkbox to clear redacted data upon session closure and avoid persisting it in the platform. 
+    In the conversation history, **data_purge** is displayed instead of the non-persistent data.  
+        <img src="../images/transient-entity.png" alt="transient-entity" title="transient-entity" style="border:1px solid gray;zoom:70%;">
+
+    2. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
         
         <img src="../images/entity-node-img4.png" alt="Entity node - Add Regex pattern" title="Entity node - Add Regex pattern" style="border:1px solid gray;zoom:70%;">
 
-    2. Select one of the following options about how you want to display the sensitive data to unauthorized users:
+    3. Select one of the following options about how you want to display the sensitive data to unauthorized users:
         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
 
     For more information, see the [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"} article.
 
-7. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Entity nodes, this feature helps rephrase the responses entered under _User Prompts_ and _Error Prompts_. To see this feature in your node’s Component Properties, please first enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#feature-details){:target="_blank"}. This feature is disabled by default for each node. Turn on the toggle to enable Rephrase Responses. You can configure the **number of previous user inputs** to determine how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
+7. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Entity nodes, this feature helps rephrase the responses entered under _User Prompts_ and _Error Prompts_. To see this feature in your node’s Component Properties, please first enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../generative-ai-tools/dynamic-conversations-features.md#feature-details){:target="_blank"}. This feature is disabled by default for each node. Turn on the toggle to enable Rephrase Responses. You can configure the **number of previous user inputs** to determine how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
     
     <img src="../images/entity-node-img5.png" alt="Entity node - Rephrase responses" title="Entity node - Rephrase responses" style="border:1px solid gray;zoom:70%;">
 

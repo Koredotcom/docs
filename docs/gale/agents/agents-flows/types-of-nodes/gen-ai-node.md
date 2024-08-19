@@ -43,6 +43,10 @@ Steps to add and configure the node:
     default is 60 Seconds (1 minute).
     The node will trigger a timeout error if the request is not completed within the selected time frame.
 
+        !!! note 
+
+            Timeout precedence: Agent timeout > Node timeout > Model timeout.
+
     * **Hyperparameters**: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
         * **Temperature**: Controls the randomness of the model's responses. Higher values lead to more random outputs, while lower values result in more focused outputs.

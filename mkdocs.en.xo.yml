@@ -177,6 +177,7 @@ nav:
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
           - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
+          - GenAI Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
           - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
@@ -310,7 +311,6 @@ nav:
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassist-settings.md
-      - Email Inbox Config: contactcenter/configurations/email-inbox-config/configure-emails.md
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
       - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md

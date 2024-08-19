@@ -66,7 +66,7 @@ Training the Ontology Knowledge Graph Model involves the following steps:
 
 ## The Few-Shot Knowledge Graph
 
-This Knowledge Graph type uses Kore.ai’s Large Language Model (LLM) to identify the appropriate FAQ for a query based on semantic similarity and [Pattern Recognition](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md). This model only uses Mandatory and Organizer terms and does not perform path qualification, so you are not required to build an ontology. All you need to do is add all FAQs to the root node/term. It significantly reduces the complexity of building and maintaining an ontology structure.
+This Knowledge Graph type uses Kore.ai’s Large Language Model (LLM) to identify the appropriate FAQ for a query based on semantic similarity. This model only uses Mandatory and Organizer terms and does not perform path qualification, so you are not required to build an ontology. All you need to do is add all FAQs to the root node/term. It significantly reduces the complexity of building and maintaining an ontology structure.
 
 ### Enable the Few-Shot Knowledge Graph
 
@@ -80,9 +80,9 @@ Before enabling the Few-Shot Knowledge Graph, please consider the following:
 
 ### How It Works
 
-When a new utterance reaches the Few-Shot Knowledge Graph, the Large Language Model determines possible and definitive intent matches. The model uses semantic similarity, and when similarity crosses the threshold, then [Pattern Recognition](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md) is used. The identified intents are sent to Ranking and Resolver, where the winning intent is identified. Once this process completes, the assistant responds to the query.
+When a new utterance reaches the Few-Shot Knowledge Graph, the Large Language Model determines possible and definitive intent matches. The model uses semantic similarity to identify the relevant FAQs. The model returns a similarity score used to determine the match type (definite, probable, etc.) based on set thresholds. Identified intents are then sent to Ranking and Resolver to select the winning intent, after which the assistant responds to the query.
 
-Training this model mainly involves adding tags and alternative questions to FAQs. Other training features, such as term synonyms, traits, context, etc., are optional but still recommended to improve performance for specific use cases where the LLM cannot identify the intent.
+Training this model involves adding tags and alternative questions to FAQs. Other training features, such as term synonyms, traits, context, etc., are optional but still recommended to improve performance for specific use cases where the LLM cannot identify the intent.
 
 ## Compare Knowledge Graph Types
 

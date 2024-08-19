@@ -28,7 +28,7 @@ The setup of a Service node in a dialog task involves the following steps:
 
 To configure the Component Properties tab, please follow the steps below:
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter the **Name** and **Display Name** of your Service node. 
+1. On the **Component Properties** tab, enter the **Name** and **Display Name** of your Service node. 
 2. Choose a **Service Type** from the drop-down list:
     1. **Custom Service** – Define an API request to a third-party web service. This is the default setting.
     2. **HTML to Image** – Define HTML to render as an image using JavaScript. For example, to compose HTML or the value of a key in a web service response that contains HTML markup as a string that you want to convert to an image.
@@ -126,11 +126,11 @@ Use the Instance Properties to define any user tags that you want to set.
         * **Close the Task and trigger Task Execution Failure Event**, or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
 
-        <img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
+      
 
 3. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
-    <img src="../images/service-node-img8-instance-properties.png" alt="Service node - Instance properties" title="Service node - Instance properties" style="border:1px solid gray;zoom:70%;">
+<img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
 
 
 ### Connections Properties
@@ -172,7 +172,7 @@ You can define the Service Type as:
     4. **DELETE** – Deletes the content of an existing target resource.
     5. **GET** – Returns the content of an existing target resource
 
-5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../context-object){:target="_blank"}.
+5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
         1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../administration/kore-ai-connector){:target="_blank"}.  
@@ -183,7 +183,7 @@ You can define the Service Type as:
     4. In the **Body** tab, select the body content type. You can select:
         * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
         * **application/json** – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.
-        * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../context-object/){:target="_blank"}.
+        * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     
     5. In the **Test Request** tab, click **Test** to optionally send your API request URL using the specified Auth type, HTTP headers, and body parameters, if defined. The response is displayed in the text area. Click **Save as Sample Response** to save the test response as the sample response for this node.
     6. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.
@@ -204,7 +204,7 @@ You can define the Service Type as:
 
 1. When you select **URL to Image** in the **Service Type**, the **Type** setting is read-only.
 2. In the **Request Definition** section, click **Define Request** to specify the settings when the **URL to Image** is selected for **Service Type**. The **Define Request for &lt; _Service Node Name_ >** dialog is displayed as shown in the following illustration.
-3. In the **URL to Convert** field, enter the URL for the image. The syntax when using a `Context` object key in a URL is to enclose the object name in double brackets, for example, https://myURLimage.com/**{{context.entities.imageName}}**.
+3. In the **URL to Convert** field, enter the URL for the image. The syntax when using a `Context` object key in a URL is to enclose the object name in double brackets, for example, https://myURLimage.com/{{context.entities.imageName}}.
 4. In the **Render Sizes** section, specify a name for the image size. For example, for an iPhone or tablet, enter the **Width** and **Height** in pixels; then click **+Add** to add additional sizes, or click **Add** to save and close the dialog.
 5. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.
 

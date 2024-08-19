@@ -40,7 +40,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 
     The configurations you set up or edit in the Component Properties tab reflects in all the dialog tasks that use this node. These settings are the same for Intent and Sub-intent nodes.
 
-On the **Component Properties** tab, under the **General Settings**, you can modify:  
+On the **Component Properties** tab, you can modify:  
 
 1. The **Name**,
 2. The **Display Name**,
@@ -88,7 +88,7 @@ Click the **Connections** tab and set the transition properties to determine the
 
 Primary Intent nodes only allow you to select the next node to trigger.
 
-If the Intent node you are working with does not represent the primary intent within the dialog task (if it follows another node), you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/){:target="_blank"}
+If the Intent node you are working with does not represent the primary intent within the dialog task (if it follows another node), you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/)
 
 !!! Note
 
