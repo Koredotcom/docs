@@ -117,11 +117,10 @@ Similarly, to selectively ingest only the live pages in a certain language, you 
 ![Content Filters](../images/dotcms/example2.png "Content Filters")
 
 !!! Note
-  
-* You can define more than one condition to choose different types of content from the connector using the OR operator. 
-* Every rule can have one or more conditions to select a subset of content using the AND operator. 
-* You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. 
-* Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties) for details.
+    * You can define more than one condition to choose different types of content from the connector using the OR operator. 
+    * Every rule can have one or more conditions to select a subset of content using the AND operator. 
+    * You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. 
+    * Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties) for details.
 
 
 #### Content Sync Schedule 
