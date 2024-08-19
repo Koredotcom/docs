@@ -197,7 +197,7 @@ Steps to initiate a Call Transfer:
 <img src="../images/transfer-options.png" alt="Agent Transfer Options" title="Agent Transfer Options" style="border: 1px solid gray; zoom:30%;">
 
 * Click **Transfer** to directly transfer the call to another agent.  
-<img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:30%;">
+<img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:50%;">
 
 ### Consult Call
 
@@ -613,11 +613,11 @@ external transfer of ongoing customer calls. To transfer a conversation to an ex
 4. Click **Transfer**. The conversation gets transferred to the selected contact.  
 <img src="../images/transfer-to-external-contact.png" alt="Transfer to External Contact" title="Transfer to Extrenal Contact" style="border: 1px solid gray; zoom:80%;">
 
-!!! Note
+    !!! Note
 
-    * The outbound transferred call by the agent will be a blind transfer. 
-    * For the agent, the call ends like other interactions. 
-    * The agent must add a disposition and perform After Call Work (ACW).
+        * The outbound transferred call by the agent will be a blind transfer.
+        * For the agent, the call ends like other interactions. 
+        * The agent must add a disposition and perform After Call Work (ACW).
 
 ## End Interactions
 
