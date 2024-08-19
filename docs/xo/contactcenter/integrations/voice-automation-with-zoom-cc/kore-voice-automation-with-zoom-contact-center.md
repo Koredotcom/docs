@@ -1,4 +1,4 @@
-# Kore Voice Automation (IVA) Integration with Zoom Contact Center (CC)
+# Kore Voice Automation Integration with Zoom Contact Center
 
 **Zoom Contact Center (ZCC)** is an automation solution for enterprises to manage customer interactions across voice and chat channels. This Integration will  enable Voice automation through SIP Integration. **Kore.ai** now supports the Zoom Contact Center voice channel to integrate voice virtual assistants.
 
@@ -24,7 +24,7 @@ Please ensure you have the following before enabling this channel:
 
 The important steps to set up the ZCC channel are summarized below:
 
-1. Associate an App within an experience flow. [Know more](https://docs.kore.ai/smartassist/experience-flows/flow-designer/)<span style="text-decoration:underline;">.</span>
+1. Associate an App within an experience flow. [Know more](https://docs.kore.ai/smartassist/experience-flows/flow-designer/).
 2. Configure “Transfer from IVR.”
 3. Configure “Agent Transfer.”
 4. Create a Bot Connector instance on Zoom App Marketplace to associate a virtual assistant. 
@@ -37,7 +37,8 @@ The important steps to set up the ZCC channel are summarized below:
 
 If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore IVA. Read more [here](https://docs.kore.ai/xo/flows/node-types/automation/).
 
-**Note**: If you are using the older version “Smart Assist” then use this [link](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/)<span style="text-decoration:underline;">.</span>
+!!! note
+    If you are using the older version “Smart Assist” then use this [link](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/).
 
 ## Step 2: Configure “Transfer from IVR”
 
@@ -54,7 +55,7 @@ Go to Kore.ai **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway,** a
 <img src="../images/forward-to-phone-number-3.png" alt="forward-to-phone-number" title="forward-to-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Save**.  
-!!! "**Note**"
+!!! note
     Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
 7. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/#attach-flow).  
@@ -69,17 +70,17 @@ After the customer interacts with Kore’s IVA, you can perform agent transfer f
 
 ### 3. 1 Agent Transfer Node in Experience Flow
 
-1. Select **Agent Transfer** node from **Action**.  
+3. 1. 1. Select **Agent Transfer** node from **Action**.  
 <img src="../images/agent-transfer-node-5.png" alt="agent-transfer-node" title="agent-transfer-node" style="border: 1px solid gray; zoom:80%;">
 
-2. Add configuration for **Agent Transfer** node.  
+3. 1. 2. Add configuration for **Agent Transfer** node.  
 <img src="../images/adding-configuration-agent-transfer-node-6.png" alt="adding-configuration-agent-transfer-node" title="adding-configuration-agent-transfer-node" style="border: 1px solid gray; zoom:80%;">
 
-* After configuring the Agent Transfer node in Experience Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
-* For ZCC, we are using **SIP BYE** for Agent Transfer.  
+3. 1. 3. After configuring the Agent Transfer node in Experience Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
+3. 1. 4. For ZCC, we are using **SIP BYE** for Agent Transfer.  
 <img src="../images/sip-transfer-7.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">
 
-* Configure SIP headers to be transferred to ZCC on Agent Transfer via SIP BYE.
+3. 1. 5. Configure SIP headers to be transferred to ZCC on Agent Transfer via SIP BYE.
 
 ### 3. 2 Agent Transfer Node in a Dialog Task
 
@@ -87,7 +88,7 @@ Zoom users can also invoke agent transfer from the Dialog Task using a message n
 
 Add the following code on the message node for agent transfer:
 
-!!! "**Note**"
+!!! note
     Agent transfer can be to a number or any SIP URI.
 
 var message = "Transferring Call to xxxx number";
@@ -102,7 +103,7 @@ var headers = {
 
 print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 
-!!! "**Note**"
+!!! note
     The following scenarios can be considered upon Agent Transfer:
 
 ### **Scenario 1: Question Resolved, Customer Hangs Up**
@@ -164,15 +165,15 @@ This section explains the process of fetching the details and summary of the con
 
 3. Sign in to **[SmartAssist botbuilder](https://smartassist.kore.ai/botbuilder)** using the same credentials.
 4. Click the **Instance Bot**.  
-!!! "**Note**"
+!!! note
     You can identify the instance bot by its unique symbol and matching name with the organization. In the above screenshot, Koreai bot is the instance bot as it matches with the organization name and has a unique symbol.
-5. Go to **API Scopes**. To do so,
-    5. 1. Click the **search** button and enter **API Scopes** in it:  
+5. Go to **API Scopes**. To do so:
+    5.1. Click the **search** button and enter **API Scopes** in it:  
     <img src="../images/api-scopes-16.png" alt="api-scopes" title="api-scopes" style="border: 1px solid gray; zoom:80%;">
 
     **Or**
 
-    5. 2. Click **Deploy **>** APIs & Extensions **>** API Scopes**.  
+    5.2. Click **Deploy **>** APIs & Extensions **>** API Scopes**.  
     <img src="../images/apis-and-extensions-api-scopes-17.png" alt="apis-and-extensions-api-scopes" title="apis-and-extensions-api-scopes" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Create API Scope**.  
@@ -185,10 +186,13 @@ This section explains the process of fetching the details and summary of the con
 9. Go to **Build** > **Natural Language** > **Generative AI & LLM**, locate **Kore.ai XO GPT**, and click **Enable Now.**  
 <img src="../images/generative-ai-and-llm-20.png" alt="generative-ai-and-llm" title="generative-ai-and-llm" style="border: 1px solid gray; zoom:80%;">
 
-10. On the **Kore.ai XO GPT** page, select:
-    10. 1. Models.
-    10. 2. Fine-tuned model for Summarizing Conversation.
-    10. 3. Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
+10. On the **Kore.ai XO GPT** page, select:  
+
+    10.1. Models.
+
+    10.2. Fine-tuned model for Summarizing Conversation.
+
+    10.3. Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
     <img src="../images/koreai-xo-gpt-21.png" alt="koreai-xo-gpt" title="koreai-xo-gpt" style="border: 1px solid gray; zoom:80%;">
 
 11. Click **Save**.
@@ -205,23 +209,27 @@ This section explains the process of fetching the details and summary of the con
 15. Enter a comment in the **Comment** box, and click **Confirm**.  
 <img src="../images/comment-and-confirm-26.png" alt="comment-and-confirm" title="comment-and-confirm" style="border: 1px solid gray; zoom:80%;">
 
-    15. 1. Close the message that confirms publishing of your Virtual Assistant.  
+    15.1. Close the message that confirms publishing of your Virtual Assistant.  
     <img src="../images/publish-confirmation-27.png" alt="publish-confirmation" title="publish-confirmation" style="border: 1px solid gray; zoom:80%;">
 
 16. Copy the **curl** from the [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/).
 17. Go to **Postman**, paste the **curl** copied from the API, and then:
-    17. 1. Replace the **botID** with the **Bot ID** value copied from **SmartAssist**.  
+
+    17.1. Replace the **botID** with the **Bot ID** value copied from **SmartAssist**.  
     
     Follow these steps to get the **botID**:
-        17. 1. 1. Sign in to **SmartAssist**.
-        17. 1. 2. Go to **Configuration **>** System Setup **>** Channels**.
-        17. 1. 3. Click **Chat** > **Web/Mobile Client**.  
+
+        17.1.1. Sign in to **SmartAssist**.
+
+        17.1.2. Go to **Configuration** > **System Setup **> **Channels**.
+
+        17.1.3. Click **Chat** > **Web/Mobile Client**.  
         <img src="../images/chat-web-mobile-client-28.png" alt="chat-web-mobile-client" title="chat-web-mobile-client" style="border: 1px solid gray; zoom:80%;">
 
-        17. 1. 4. On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
+        17.1.4. On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
         <img src="../images/api-details-29.png" alt="api-details" title="api-details" style="border: 1px solid gray; zoom:80%;">
 
-        17. 1. 5. Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
+        17.1.5. Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
         <img src="../images/copy-botid-value-30.png" alt="
         " title="
         " style="border: 1px solid gray; zoom:80%;">
