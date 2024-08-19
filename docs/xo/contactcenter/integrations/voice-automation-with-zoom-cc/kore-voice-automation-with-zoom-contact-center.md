@@ -55,8 +55,9 @@ Go to Kore.ai **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway,** a
 <img src="../images/forward-to-phone-number-3.png" alt="forward-to-phone-number" title="forward-to-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Save**.  
-!!! note
-    Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
+
+    !!! note
+        Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
 7. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/#attach-flow).  
 <img src="../images/koreai-voice-gateway-4.png" alt="koreai-voice-gateway" title="koreai-voice-gateway" style="border: 1px solid gray; zoom:80%;">
@@ -68,22 +69,22 @@ After the customer interacts with Kore’s IVA, you can perform agent transfer f
 * Agent Transfer Node in Flow. [Read here ](https://docs.kore.ai/xo/flows/node-types/agent-transfer/)
 * Agent Transfer Node in a Dialog Task
 
-### 3. 1 Agent Transfer Node in Experience Flow
+### 3.1 Agent Transfer Node in Experience Flow
 
-3. 1. 1. Select **Agent Transfer** node from **Action**.  
+3.1.1. Select **Agent Transfer** node from **Action**.  
 <img src="../images/agent-transfer-node-5.png" alt="agent-transfer-node" title="agent-transfer-node" style="border: 1px solid gray; zoom:80%;">
 
-3. 1. 2. Add configuration for **Agent Transfer** node.  
+3.1.2. Add configuration for **Agent Transfer** node.  
 <img src="../images/adding-configuration-agent-transfer-node-6.png" alt="adding-configuration-agent-transfer-node" title="adding-configuration-agent-transfer-node" style="border: 1px solid gray; zoom:80%;">
 
-3. 1. 3. After configuring the Agent Transfer node in Experience Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
+3.1.3. After configuring the Agent Transfer node in Experience Flow, head to **App Settings** > **Integration** > **Agent transfer** > **Voice** and create a new SIP transfer here. 
 
-3. 1. 4. For ZCC, we are using **SIP BYE** for Agent Transfer.  
+3.1.4. For ZCC, we are using **SIP BYE** for Agent Transfer.  
 <img src="../images/sip-transfer-7.png" alt="sip-transfer" title="sip-transfer" style="border: 1px solid gray; zoom:80%;">
 
-3. 1. 5. Configure SIP headers to be transferred to ZCC on Agent Transfer via SIP BYE.
+3.1.5. Configure SIP headers to be transferred to ZCC on Agent Transfer via SIP BYE.
 
-### 3. 2 Agent Transfer Node in a Dialog Task
+### 3.2 Agent Transfer Node in a Dialog Task
 
 Zoom users can also invoke agent transfer from the Dialog Task using a message node. Read more [here](https://developer.kore.ai/virtual-assistants/) on Kore Automation / Dialog task.
 
@@ -173,8 +174,8 @@ Steps to fetch Conversation Details and Summary:
 
 4. Click the **Instance Bot**.  
 
-!!! note
-    You can identify the instance bot by its unique symbol and matching name with the organization. In the above screenshot, Koreai bot is the instance bot as it matches with the organization name and has a unique symbol.
+    !!! note
+        You can identify the instance bot by its unique symbol and matching name with the organization. In the above screenshot, Kore.ai bot is the instance bot as it matches with the organization name and has a unique symbol.
 
 5. Go to **API Scopes**. To do so:
 
@@ -194,7 +195,7 @@ Steps to fetch Conversation Details and Summary:
 
 8. Click **Save**.
 
-9. Go to **Build** > **Natural Language** > **Generative AI & LLM**, locate **Kore.ai XO GPT**, and click **Enable Now.**  
+9. Go to **Build** > **Natural Language** > **Generative AI & LLM**, locate **Kore.ai XO GPT**, and click **Enable Now**.  
 <img src="../images/generative-ai-and-llm-20.png" alt="generative-ai-and-llm" title="generative-ai-and-llm" style="border: 1px solid gray; zoom:80%;">
 
 10. On the **Kore.ai XO GPT** page, select:  
