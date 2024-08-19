@@ -574,25 +574,25 @@ To transfer a conversation to another queue when the [Skill Modification](../../
 <img src="../images/transfer-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for a queue in the search bar on the **Transfer to** window. All matching queues are displayed.
-3. Select the queue and click Next.
+3. Select the queue and click Next.  
 <img src="../images/transfer-to-queue.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
-4. You can add or delete skills to the interaction before transferring it to another queue.
+4. You can add or delete skills to the interaction before transferring it to another queue.  
 <img src="../images/add-skills.png" alt="Add or Delete Skills" title="Add or Delete Skills" style="border: 1px solid gray; zoom:80%;">
 
-5. Click **Transfer**. The conversation is transferred to the selected queue.
+5. Click **Transfer**. The conversation is transferred to the selected queue.  
 <img src="../images/conversation-transferred-confirmation.png" alt="Conversation Transferred Confirmation" title="Conversation Transferred Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 **Transfer to Another Agent**
 
 To transfer a conversation to another agent:
 
-1. Click **Transfer** at the top of the Live Interaction pane.
+1. Click **Transfer** at the top of the Live Interaction pane.  
 <img src="../images/transfer-live-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an agent in the search bar on the **Transfer to** window.
 3. Select an available agent.
-4. Click **Transfer**. The conversation gets transferred to the selected agent.
+4. Click **Transfer**. The conversation gets transferred to the selected agent.  
 <img src="../images/transfer-to-agent.png" alt="Transfer to Window" title="Transfer to Window" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -605,12 +605,12 @@ An agent can transfer the call to an external contact during a voice interaction
 
 external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
-1. Click **Transfer** at the top of the Conversation space.
+1. Click **Transfer** at the top of the Conversation space.  
 <img src="../images/transfer-live-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an external contact in the search bar on the **Transfer to** window.
 3. Select an available contact.
-4. Click **Transfer**. The conversation gets transferred to the selected contact.
+4. Click **Transfer**. The conversation gets transferred to the selected contact.  
 <img src="../images/transfer-to-external-contact.png" alt="Transfer to External Contact" title="Transfer to Extrenal Contact" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
@@ -621,10 +621,10 @@ external transfer of ongoing customer calls. To transfer a conversation to an ex
 
 ## End Interactions
 
-1. To end an interaction session, click the **End** button at the top right of the _Live Interaction_ pane.
+1. To end an interaction session, click the **End** button at the top right of the _Live Interaction_ pane.  
 <img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Once clicking _End_, you must **confirm** that you want to end the interaction. Click **Yes** to do so, or otherwise, click **No**.
+2. Once clicking _End_, you must **confirm** that you want to end the interaction. Click **Yes** to do so, or otherwise, click **No**.  
 <img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:80%;">
 
 Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
@@ -637,17 +637,17 @@ If ACW is enabled, then the conversations are managed based on the ACW configura
 
 * Slots are freed up, allowing other conversations to be accepted.
 * The close button is enabled when all the required disposition codes are selected.
-* There is no time restriction for selecting the disposition codes and they are available until the agent manually closes them.
+* There is no time restriction for selecting the disposition codes and they are available until the agent manually closes them.  
 <img src="../images/immediate-slot-release.png" alt="Immediate Slot Release" title="Immediate Slot Release" style="border: 1px solid gray; zoom:80%;">
 
 **Timed Slot Release**
 
 * Agents can see a countdown timer when the conversation ends, indicating the time left to provide a disposition.
 * The slot becomes available if the agent submits a disposition or when the timer elapses.
-* Empty disposition fields are filled with a ‘system-generated disposition code’ if no disposition is provided within the allotted time.
+* Empty disposition fields are filled with a ‘system-generated disposition code’ if no disposition is provided within the allotted time.  
 <img src="../images/timed-slot-release.png" alt="Timed Slot Release" title="Timed Slot Release" style="border: 1px solid gray; zoom:80%;">
 
-* When the disposition timer expires, the system displays a message to the agent.
+* When the disposition timer expires, the system displays a message to the agent.  
 <img src="../images/time-expired-message.png" alt="Time Expired Message" title="Time Expired Message" style="border: 1px solid gray; zoom:80%;">
 
 * For conversations transferred to another queue, the final queue’s disposition mode is applied to determine the required dispositions.
@@ -669,7 +669,7 @@ To set the disposition and close the conversation, follow these steps:
 
 # Information Provided to Agents and Customers During Live Interactions
 
-You can interact with customers within the **Live Interaction** area of the Agent Console.  
+You can interact with customers within the **Live Interaction** area of the Agent Console.    
 <img src="../images/information-during-live-interaction.png" alt="Information Provided to Agents during Live Interactions" title="Information Provided to Agents during Live Interactions" style="border: 1px solid gray; zoom:80%;">
 
 The **Live Interaction** area provides access to features and information that can be used during live conversations, as follows:
@@ -685,14 +685,14 @@ This section displays the live interaction summary with the following details:
 * **Queue**: Indicates the queue in which the conversation is placed.
 * **Wait Time**: This shows the time that the chat has been waiting for an agent to respond.
 * **Intent**: Shows the customer’s primary purpose for initiating the live interaction.
-* **Sentiment**: Captures the customer sentiments based on their responses.
+* **Sentiment**: Captures the customer sentiments based on their responses.  
 <img src="../images/arrival-summary.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:70%;">
 
 After accepting the conversation, all interactions by the agent are displayed below the arrival summary. If generating the arrival summary takes time, a loading indicator appears until the summary is ready. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
 
 ### Refreshing Bot-Customer Interactions
 
-A reload button appears at the top of the conversation transcript when the bot-customer conversation transcript is missing. Clicking Reload displays the missing information.  
+A reload button appears at the top of the conversation transcript when the bot-customer conversation transcript is missing. Clicking Reload displays the missing information.    
 <img src="../images/reload-button.png" alt="Arrival Summary" title="Arrival Summary" style="border: 1px solid gray; zoom:60%;">
 
 ## Typing Chat Indicator
@@ -715,17 +715,17 @@ Refer to the[ installation instructions](https://github.com/Koredotcom/web-kore-
 * Any message sent by an agent will display along with a date and timestamp.
 * If the customer does not respond to the first message sent by an agent, the message displays a timestamp, and the following messages  will not show a timestamp until the clock minute changes. For example, If an agent sends a message at 11:30:24, the second message at 11:30:36, the third message at 11:30:45, and the fourth message at 11:31:08, then the first three messages will be stacked under one timestamp, and the fourth message will have a different timestamp.
 * If the customer responds in the same minute, the response will display with the date and timestamp. The responses from the customer will only show a timestamp once the clock minute changes.
-* Agents can see the read status on the last message sent. If the messages are stacked, the read status will appear only against the most recent one.
+* Agents can see the read status on the last message sent. If the messages are stacked, the read status will appear only against the most recent one.  
 <img src="../images/stacked-messages.png" alt="Stacked Messages, Timestamp, and Read Status" title="Stacked Messages, Timestamp, and Read Status" style="border: 1px solid gray; zoom:80%;">
 
 # Behavior When Login Prep Status is Enabled
 
-A message appears on the console for the duration configured on the [Agent Status](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) page. This status allows an agent to prepare themselves before they start receiving interactions.
+A message appears on the console for the duration configured on the [Agent Status](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) page. This status allows an agent to prepare themselves before they start receiving interactions.  
 <img src="../images/login-prep-status.png" alt="Login Prep Status Enabled" title="Login Prep Status Enabled" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/login-prep.png" alt="Login Prep Status" title="Login Prep Status" style="border: 1px solid gray; zoom:80%;">
 
-At the end of the Login Preparation time slot, the system automatically marks the agent as ‘Away,’ and a pop-up message appears with the following content:
+At the end of the Login Preparation time slot, the system automatically marks the agent as ‘Away,’ and a pop-up message appears with the following content:  
 <img src="../images/marked-as-away.png" alt="Marked as Away" title="Marked as Away" style="border: 1px solid gray; zoom:80%;">
 
 Agents can choose the following options:
@@ -740,15 +740,15 @@ Agents can choose the following options:
 
 If the Auto Answer mode is enabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#voice), the Transfer/End buttons do not display on the Live Interaction pane until the assigned agent sends the first message.
 
-Below is what the Agent Console looks like **before the first message** from the agent:
+Below is what the Agent Console looks like **before the first message** from the agent:  
 <img src="../images/before-first-message-from-agent.png" alt="Before First Message From Agent" title="Marked as Away" style="border: 1px solid gray; zoom:80%;">
 
-Below is what the Agent Console looks like **after the first message** from the agent:
+Below is what the Agent Console looks like **after the first message** from the agent:  
 <img src="../images/after-first-message-from-agent.png" alt="After First Message From Agent" title="After First Message From Agent" style="border: 1px solid gray; zoom:80%;">
 
 ## Behavior When an Agent Changes Their Status
 
-A warning message displays if an agent changes their status to **_Away_** or a custom status tagged to _Away_ during an active interaction.
+A warning message displays if an agent changes their status to **_Away_** or a custom status tagged to _Away_ during an active interaction.  
 <img src="../images/set-status-to-away.png" alt="Set Status to Away" title="Set Status to Away" style="border: 1px solid gray; zoom:80%;">
 
 ## Behavior When an Agent Tries Logging Out
@@ -757,13 +757,13 @@ Contact Center AI does not permit agents to log out during an ongoing conversati
 
 If an agent tries to log out during an ongoing conversation, Contact Center AI prevents the agent from logging out without transferring or closing the conversation. A pop-up window is displayed along with the following message:
 
-If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.
+If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.  
 <img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:80%;">
 
 ## Behavior When an Agent Does Not Accept/Send a Response Within a Specified Time
 
 If an agent does not accept/send a response within a specified time, the system automatically changes the status to **Away (Idle)**.
-This status is not available for selection by an agent.
+This status is not available for selection by an agent.  
 <img src="../images/away-idle.png" alt="Away (Idle)" title="Away (Idle)" style="border: 1px solid gray; zoom:80%;">
 
 ## Behavior When No Agents are Available
@@ -781,7 +781,7 @@ CSAT surveys can be triggered based on the scenarios configured by administrator
 * **Show to Everyone**: If the “Show to Everyone” scenario is configured while creating the survey, the survey is triggered automatically for every interaction that concludes between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: If the “Show to nth User” scenario is configured while creating the survey, the survey is triggered automatically for the nth interaction that concludes between an agent and a customer on digital or voice channels. For example: If the frequency is set to 2, then the survey is triggered for every second customer.
 * **Agents can trigger**: If the “Agents can trigger” scenario is configured while creating the survey, the survey can be triggered by agents at any point during the interaction as follows:
-    * Click the **Send Survey** button on the right corner above the compose bar. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.
+    * Click the **Send Survey** button on the right corner above the compose bar. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.  
     <img src="../images/csat-button.png" alt="CSAT Button" title="CSAT Button" style="border: 1px solid gray; zoom:70%;">
 
     * The survey is triggered to the customer when the agent clicks the End button with the survey selected.
