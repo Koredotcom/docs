@@ -601,7 +601,7 @@ To transfer a conversation to another agent:
 
 **Transfer to External Contacts**
 
-An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow
+An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow
 
 external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
