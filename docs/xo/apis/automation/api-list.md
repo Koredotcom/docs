@@ -20,7 +20,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
 | --- | --- | --- | --- |
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
-| [Upload File](./upload-file.md) | To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.<br><br>To upload utterances in [ML Utterances Import API](./import-ml-utterances.md), bot roles, admin roles for [Import Roles API](./import-roles.md), [Import Batch Test Suite](./import-batch-test-suite.md) details and [Extraction from file or URL](../extract-kg-from-file-url.md) to extract FAQs. | NA  | Bot Definition > Bot Import |
+| [Upload File](./upload-file.md) | To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.<br><br>To upload utterances in [ML Utterances Import API](./import-ml-utterances.md), bot roles, admin roles for [Import Roles API](./import-roles.md), [Import Batch Test Suite](./import-batch-test-suite.md) details and [Extraction from file or URL](./extract-kg-from-file-url.md) to extract FAQs. | NA  | Bot Definition > Bot Import |
 | [Import Bot as a New Bot](./import-bot-as-new-bot.md) | To create a new assistant in the account owner’s XO Platform using the File IDs generated when uploading the files. | NA  | Bot Definition > Bot Import |
 | [Import Bot into an Existing Bot](./import-bot-into-an-existing-bot.md) | To import the bot definition file into an existing assistant for upgrading to a new version or restoring to an earlier version. | NA  | Bot Definition > Bot Import |
 | [Bot Import Status](./bot-import-status.md) | To get the status of the bot import request. | NA  | Bot Definition > Bot Import |
@@ -82,7 +82,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Find Intent](./find-intent.md) | To obtain the intent recognition result and the scoring from NLP and ML engines. | Intent and Entity Detection | Intent Identification > Intent and Entity Detection |
 | [Conversation History](./conversation-history.md) | To fetch the conversational messages between the assistant and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
 | [Conversation Summary](./conversation-summary.md) | To summarizes the conversation between a user and an agent. | Conversation Summary | NA  |
-| [Feedback Analytics](./fetch-feedback-survey-scores) | To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard. | Feedback Survey | Bot Analytics > Feedback Analytics |
+| [Feedback Analytics](./fetch-feedback-survey-scores.md) | To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard. | Feedback Survey | Bot Analytics > Feedback Analytics |
 | [Debug Logs](./fetch-debug-logs.md) | To get debug logs of a specific conversation. | Debug Logs | NA  |
 | [Get ChangeLogs](./get-change-logs.md) | To get the list of changes made to the assistant definition for a given date period. | Logs History | Logs > Bot Audit Logs |
 | [Sessions History](./get-sessions-history.md) | To retrieve the conversation sessions created. | Bot Sessions | Bot Analytics > Bot Sessions |
@@ -124,12 +124,3 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Delete Data](./data-delete.md) | To delete data from Data Table. | Read and Delete access to the Data Table |
 | [Get Table Data](./query-table-data.md) | To get data from Data Table. | Read access to the Data Table |
 | [Get View Data](./query-data-table-view.md) | To get data from Data View. | Read access to the Table View |
-
-
-## Answer Generation API
-
-
-| API            | Description                                 | App Scope         |
-|----------------|---------------------------------------------|-------------------|
-| [Answer Generation](../answer-generation.md) | To fetch answers for a query using SearchAI | Answer Generation |
-
