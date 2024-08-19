@@ -156,7 +156,7 @@ You can customize the following fields:
 <img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;">   
 A confirmation message is displayed.  
 <img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;">  
-Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
+Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
 
 ## Agent Settings
 
