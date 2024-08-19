@@ -196,6 +196,7 @@ This section explains the process of fetching the details and summary of the con
     <img src="../images/koreai-xo-gpt-21.png" alt="koreai-xo-gpt" title="koreai-xo-gpt" style="border: 1px solid gray; zoom:80%;">
 
 11. Click **Save**.
+
 12. Go to the **Co-Pilot** section and enable **Conversation Summary**. To enable, select a model from the **Select Model** list and then click the **enable** toggle.  
 <img src="../images/llm-integration-22.png" alt="llm-integration" title="llm-integration" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/conversation-summary-23.png" alt="conversation-summary" title="conversation-summary" style="border: 1px solid gray; zoom:80%;">
@@ -213,38 +214,42 @@ This section explains the process of fetching the details and summary of the con
     <img src="../images/publish-confirmation-27.png" alt="publish-confirmation" title="publish-confirmation" style="border: 1px solid gray; zoom:80%;">
 
 16. Copy the **curl** from the [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/).
+
 17. Go to **Postman**, paste the **curl** copied from the API, and then:
 
-    17.1. Replace the **botID** with the **Bot ID** value copied from **SmartAssist**.  
+    **17.1.** Replace the **botID** with the **Bot ID** value copied from **SmartAssist**.  
     
     Follow these steps to get the **botID**:
 
-        17.1.1. Sign in to **SmartAssist**.
+    **17.1.1.** Sign in to **SmartAssist**.
 
-        17.1.2. Go to **Configuration** > **System Setup **> **Channels**.
+    **17.1.2.** Go to **Configuration** > **System Setup** > **Channels**.
 
-        17.1.3. Click **Chat** > **Web/Mobile Client**.  
+    **17.1.3.** Click **Chat** > **Web/Mobile Client**.  
         <img src="../images/chat-web-mobile-client-28.png" alt="chat-web-mobile-client" title="chat-web-mobile-client" style="border: 1px solid gray; zoom:80%;">
 
-        17.1.4. On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
+    **17.1.4.** On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
         <img src="../images/api-details-29.png" alt="api-details" title="api-details" style="border: 1px solid gray; zoom:80%;">
 
-        17.1.5. Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
+    **17.1.5.** Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
         <img src="../images/copy-botid-value-30.png" alt="
         " title="
         " style="border: 1px solid gray; zoom:80%;">
 
-    17. 2. Copy the **sessionID** from **SmartAssist. 
+    **17.2.** Copy the **sessionID** from **SmartAssist. 
      Follow these steps to get the **sessionID**:
-        17. 2. 1. Sign in to **SmartAssist**.
-        17. 2. 2. Go to **Dashboard** > **Interactions**.
-        17. 2. 3. Click the log for which you want to get the details.  
+
+    **17. 2. 1.** Sign in to **SmartAssist**.
+
+    **17. 2. 2.** Go to **Dashboard** > **Interactions**.
+
+    **17. 2. 3.** Click the log for which you want to get the details.  
         <img src="../images/get-conversation-details-31.png" alt="get-conversation-details" title="get-conversation-details" style="border: 1px solid gray; zoom:80%;">
  
-        17. 2. 4. On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
+    **17. 2. 4.** On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
         <img src="../images/sessionid-details-32.png" alt="sessionid-details" title="sessionid-details" style="border: 1px solid gray; zoom:80%;">
 
-    17. 3. Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
+    **17.3.** Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
 18. Run the modified **curl** to get the conversation details and summary of a session.
 
 
