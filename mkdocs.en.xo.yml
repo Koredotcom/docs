@@ -311,7 +311,6 @@ nav:
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassist-settings.md
-      - Email Inbox Config: contactcenter/configurations/email-inbox-config/configure-emails.md
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
       - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
