@@ -136,10 +136,12 @@ The following modules and features are supported on the Settings Console:
    <td>Manage the configured easy and custom integrations and connections in one place.</td>
    <td>
 <ul>
-<li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. <a href="https://galeadmin-kore.github.io/docs/gale/integrations/how-to-integrate-with-wandb/">Learn more</a>.
+<li><strong>Hugging Face</strong>: Import exclusive and private models into GALE from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="https://docs.kore.ai/gale/settings/integrations/enable-hugging-face/"> Learn more</a>.</li>
+<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="https://docs.kore.ai/gale/settings/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
+<li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. 
+<a href="https://docs.kore.ai/gale/settings/integrations/integrate-with-wandb/">Learn more</a>.
 </li>
-<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="https://galeadmin-kore.github.io/docs/gale/integrations/how-to-integrate-with-s3-bucket/">Learn more</a>.</li>
-<li><strong>Hugging Face</strong>: Import exclusive and private models into GALE from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="https://galeadmin-kore.github.io/docs/gale/integrations/how-to-enable-hugging-face/"> Learn more</a>.</li></ul>
+</ul>
    </td>
   </tr>
   <tr>
