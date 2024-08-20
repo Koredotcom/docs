@@ -130,7 +130,7 @@ The new encrypted secure variable value is updated in the list as shown below:
 
 ### Using Content Variables
 
-You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}`. Ensure that the environment variable name does not contain any hyphen. If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
+You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}`. Ensure that the content variable name does not contain any hyphen. If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
 
 <img src="../images/env-and-content-variables-img13.png" alt="Entity node containing content variable" title="Entity node containing content variable" style="border: 1px solid gray;zoom:50%;"/>
 
