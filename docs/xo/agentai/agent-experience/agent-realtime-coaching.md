@@ -1,4 +1,4 @@
-# Agent Real-time Coaching (Beta)
+# Agent Real-time Coaching
 
 ## Introduction
 Contact center agents are often under pressure to provide better customer experiences. Dealing with high call volumes and complex conversations can make it challenging for agents to meet or exceed customer expectations without sufficient support, guidance, and tools.
