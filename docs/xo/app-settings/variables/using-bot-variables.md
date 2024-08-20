@@ -17,6 +17,8 @@ Environment Variables are global, reusable components which can be used in multi
 
 Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](../collections){:target="_blank"}.
 
+    !!! Note
+        Ensure that the environment variable name does not contain any hyphen.
 
 ### Restricting Sensitive Data with Environment Variables
 
@@ -62,6 +64,9 @@ The availability of the environment variables has been extended to the **Field K
 
 Bot building essentially requires extensive content management efforts. When it comes to multi-language VAs, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting VA flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the VA content, such as prompts, messages, or any data presented to the user, into VA components, and instead point to specific variables in centrally managed Content Variables files for each app language. You can export the language-specific content variable files to content editors, without exposing any app configurations. The writers can author the content in the exported file, which you can import back into the app.
 
+    !!! Note
+        Ensure that the environment variable name does not contain any hyphen.
+
 
 ### Defining Bot Variables and Securing Them
 
@@ -101,7 +106,7 @@ After switching the language, go to **App Settings > Variables > Content Variabl
 
 ### Using Environment Variables
 
-You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}`. Ensure that the environment variable name does not contain any hyphen. If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from an app that uses two environment variables called _botType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
+You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}`. If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from an app that uses two environment variables called _botType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
 
 <img src="../images/env-and-content-variables-img8.png" alt="Script to capture Base URL of app" title="Script to capture Base URL of app" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -130,7 +135,7 @@ The new encrypted secure variable value is updated in the list as shown below:
 
 ### Using Content Variables
 
-You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}`. Ensure that the content variable name does not contain any hyphen. If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
+You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}`. If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
 
 <img src="../images/env-and-content-variables-img13.png" alt="Entity node containing content variable" title="Entity node containing content variable" style="border: 1px solid gray;zoom:50%;"/>
 
