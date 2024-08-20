@@ -4,9 +4,7 @@ The Kore.ai XO Platform provides various dashboards to analyze the real-time dat
 
 These dashboards are available within the **Analytics** section of the Platform and are as follows:
 
-
-
-* Overview Dashboard: This page summarizes the Conversations Dashboard, Users Dashboard, and Performance Dashboard.
+* Summary Dashboard: This page summarizes the Conversations Dashboard, Users Dashboard, and Performance Dashboard.
 * Conversations Dashboard: This page provides insights into the usage and containment of conversation sessions. It focuses on whether requests were successfully answered by the virtual assistant (VA), landed with agents, or were incomplete. You can view many metrics like the conversation session trend, conversation path analysis, session distribution by channel, VA’s engagement, and so on with the breakup of self-service, drop-off, and agent transfer sessions.
 * Users Dashboard: This page is a central place for information on new and returning user trends. It also provides insights like total unique users count, returning users count, new users count, and weekly or daily user retention cohort.
 * Performance Dashboard: This page helps you understand the performance of a virtual assistant. A VA designer needs insights into how many intents were identified, how many tasks were successfully completed using the virtual assistant, how many services or scripts failed during the interactions, and so on. The performance dashboard provides this essential information.
