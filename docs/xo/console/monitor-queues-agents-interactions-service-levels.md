@@ -6,12 +6,12 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
 
 1. The **Queues** section displays the conversation summary between agents and customers per queue. You only have access to the queues you are assigned to; and to the agents assigned to the same queues as you.
 2. The **Agents** section lets you view agent performance metrics and monitor agent-specific live conversations. Listed agents belong to the same queues you are also assigned to.
-3. The **Interactions** section displays all interactions currently live in Contact Center AI and assigned to agents on the CONSOLE.
+3. The **Interactions** section displays all interactions currently live in Contact Center AI and assigned to agents on the console.
 4. The **Service Levels** section displays all service levels configured for voice and chat channels.
 
-!!! Note
+    !!! Note
 
-    Your Monitor access is restricted to the Queues that you are assigned to.
+        Your Monitor access is restricted to the Queues that you are assigned to.
 
 ## Queues
 
@@ -31,7 +31,7 @@ To monitor the agents:
 * Click the agent name. The detailed screen of the agent conversation opens up on the right.  
 
     **Chat**:  
-    <img src="../images/agent-details.png" alt="Agent Conversation Details" title="Agent Conversation Details" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/agent-details.png" alt="Agent Conversation Details" title="Agent Conversation Details" style="border: 1px solid gray; zoom:70%;">  
 
     **Email**:  
     <img src="../images/email-details.png" alt="Email Details" title="Email Details" style="border: 1px solid gray; zoom:80%;"> 
@@ -49,8 +49,8 @@ To monitor the agents:
 3. Select the **Queues**, **Channels**, and **Language**.
 
     !!! Note
-    
-        You can select from agent groups (list of agents), search for agents, and select from dynamic sub-filters.  
+
+        You can select from agent groups (list of agents), search for agents, and select from dynamic sub-filters.    
     <img src="../images/filter-by.png" alt="Filter By" title="Filter By" style="border: 1px solid gray; zoom:80%;">  
 
     Select from the below available options:  
@@ -118,10 +118,10 @@ Steps to assign a conversation from the queue to an agent (including themselves)
 <img src="../images/assign-button.png" alt="Assign Button" title="Assign Button" style="border: 1px solid gray; zoom:80%;"> 
 
 2. A pop-up appears. Select the agent and assign the conversation to that agent.  
-<img src="../images/manual-assignment.png" alt="Manual Assignment" title="Manual Assignment" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/manual-assignment.png" alt="Manual Assignment" title="Manual Assignment" style="border: 1px solid gray; zoom:60%;">
 
 3. Select Mark as priority (optional) and click **Assign**.  
-<img src="../images/assign-to-agent.png" alt="Assign to Agent" title="Assign to Agent" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/assign-to-agent.png" alt="Assign to Agent" title="Assign to Agent" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
 
@@ -143,7 +143,7 @@ Steps to change the queue for a conversation:
 <img src="../images/change-queue-button.png" alt="Change Queue" title="Change Queue" style="border: 1px solid gray; zoom:80%;">
 
 4. On the Change Queue pop-up window, click the **Change Queue from** drop-down, select a queue, and then click Change Queue. Select Mark as priority to place the conversation at the top of the list in the destination queue.  
-<img src="../images/change-queue-from.png" alt="Change Queue Window" title="Change Queue Window" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/change-queue-from.png" alt="Change Queue Window" title="Change Queue Window" style="border: 1px solid gray; zoom:70%;">
 
     !!! Notes
 
@@ -182,7 +182,7 @@ The following metrics and their total counts are displayed:
 
     **Email**:  
 
-    <img src="../images/email-metrics.png" alt="Email Metrics" title="Email Metrics" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/email-metrics.png" alt="Email Metrics" title="Email Metrics" style="border: 1px solid gray; zoom:70%;">
 
 * For a selected agent, the manager can check the agent profile, chat with the agent, change the queue, and assign the conversation to other agents as shown below:  
 <img src="../images/assign-change-queue.png" alt="Assign, Change Queue" title="Assign, Change Queue" style="border: 1px solid gray; zoom:80%;">
@@ -297,12 +297,12 @@ On the Queues & Skills tab, you can configure the Queues and Skills settings.
 ### Queues
 
 You can select the default queue and the preferred queue.  
-<img src="../images/select-preferred.png" alt="Select Preferred" title="Select Preferred" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/select-preferred.png" alt="Select Preferred" title="Select Preferred" style="border: 1px solid gray; zoom:70%;">
 
 ### Skills
 
 You can select the Proficiency level of the skill.  
-<img src="../images/skill-proficiency.png" alt="Skills" title="Skills" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/skill-proficiency.png" alt="Skills" title="Skills" style="border: 1px solid gray; zoom:70%;">
 
 ### Chat with an Agent
 
@@ -314,12 +314,12 @@ To chat with an Agent:
 ### Mark Agent Offline
 
 You can mark an agent as offline to prevent the agent from being assigned to any other customers.  
-<img src="../images/mark-agent-offline.png" alt="Mark Agent Offline" title="Mark Agent Offline" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/mark-agent-offline.png" alt="Mark Agent Offline" title="Mark Agent Offline" style="border: 1px solid gray; zoom:60%;">
 
 ### Force Logout Agent
 
 Force Logout is a feature that allows the agent to be freed up and the ongoing customer engagements can be re-assigned to other agents.  
-<img src="../images/force-logout.png" alt="Force Logout Agent" title="Force Logout Agent" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/force-logout.png" alt="Force Logout Agent" title="Force Logout Agent" style="border: 1px solid gray; zoom:50%;">
 
 ### Join a Conversation
 
@@ -519,7 +519,7 @@ Steps to edit a service level name:
 2. Click the **Settings** icon.  
 <img src="../images/settings-icon.png" alt="Settings Icon" title="Settings Icon" style="border: 1px solid gray; zoom:80%;">
 
-3. Make the changes on the Edit Sevice Level Name pop-up and click **Apply**.  
+3. Make the changes on the Edit Service Level Name pop-up and click **Apply**.  
 <img src="../images/apply-edit.png" alt="Edit Service Level" title="Edit Service Level" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Save**.  
@@ -561,20 +561,20 @@ Steps to delete a service level:
     **Chat**:  
     <img src="../images/interactivity-score-chat.png" alt="Interactivity Score - Chat" title="Interactivity Score - Chat" style="border: 1px solid gray; zoom:80%;">
 
-5. Turn on Script adherence configuration toggle and define the scripts for agent adherence attributes.  
+6. Turn on Script adherence configuration toggle and define the scripts for agent adherence attributes.  
 <img src="../images/script-adherence-configuration.png" alt="Script Adherence Configuration" title="Script Adherence Configuration" style="border: 1px solid gray; zoom:80%;">
 
-6. Turn on the STATUS toggle to enable it. A message is displayed to enter a message for the attribute. Click the **Edit** icon to add a message.  
+7. Turn on the STATUS toggle to enable it. A message is displayed to enter a message for the attribute. Click the **Edit** icon to add a message.  
 <img src="../images/status-toggle.png" alt="Status Toggle" title="Status Toggle" style="border: 1px solid gray; zoom:80%;">
 
-7. Click **Add Message** to enter the message.  
+8. Click **Add Message** to enter the message.  
 <img src="../images/add-message-button.png" alt="Add Message Button" title="Add Message Button" style="border: 1px solid gray; zoom:60%;">
 
-8. Enter the message in the message field. You can add multiple messages by clicking the Add Message button. Click the (**-**) icon to delete a message.  
+9. Enter the message in the message field. You can add multiple messages by clicking the Add Message button. Click the (**-**) icon to delete a message.  
 <img src="../images/multiple-message.png" alt="Add Multiple Messages" title="Add Multiple Messages" style="border: 1px solid gray; zoom:60%;">
 
-9. Click **Save** to update the message.  
-    <img src="../images/save-message.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:80%;">
+10. Click **Save** to update the message.  
+    <img src="../images/save-message.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:60%;">
 
     The configured message is displayed under MESSAGE.
     <img src="../images/message-configured.png" alt="Message Configured" title="Message Configured" style="border: 1px solid gray; zoom:80%;">
@@ -583,4 +583,3 @@ Steps to delete a service level:
     <img src="../images/save-supervisor-dashboard.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
 
     A confirmation message is displayed.
-

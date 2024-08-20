@@ -11,7 +11,7 @@ The conversation tray divides conversations into different statuses, which are d
 * **Ongoing**: These are conversations where the last sent or received message was within the system-specified time.
 * **Idle**: These are conversations where the last message was sent or received more than the system-specified time ago.
 * **After Call Work (ACW)**: ACW refers to the post-call tasks or activities that agents perform immediately after ending a conversation with a customer.  
-<img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:60%;">
 
 ## Color Codes
 
@@ -45,14 +45,14 @@ Each entry in this tray includes the following information:
 You can use the Dialer to call external contacts, as follows:
 
 1. Click the **+** icon on the Conversation Tray and click **Outbound Call**.  
-<img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/initiate-outbound-call.png" alt="Outbound call" title="Outbound Call" style="border: 1px solid gray; zoom:70%;">
 
 2. To initiate an outbound call using the **Dialer** tab, select the country, dial any phone number, and click the **Call** button.  
-<img src="../images/outbound-call-dialer.png" alt="Outbound Call Dialer" title="Outbound Call Dialer" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/outbound-call-dialer.png" alt="Outbound Call Dialer" title="Outbound Call Dialer" style="border: 1px solid gray; zoom:70%;">
 
 3. The **Contacts** tab is a public directory (published by Administrators using [Public APIs](../apis/contact-center/create-a-contact-by-giving-details.md)) where you can view saved contacts – **Name** and **Phone Number**.
 4. You can search for a specific name and click the **Call** button to initiate an Outbound Call with the selected contact.  
-<img src="../images/contacts.png" alt="Contacts" title="Contacts" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/contacts.png" alt="Contacts" title="Contacts" style="border: 1px solid gray; zoom:70%;">
 
 ## Call History
 
