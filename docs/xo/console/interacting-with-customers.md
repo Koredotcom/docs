@@ -272,7 +272,7 @@ While interacting with a customer, if an agent needs to seek external consultati
         <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
 
         2. The search results are displayed. Click the **🕻** button to initiate an external outbound call.  
-        <img src="../images/call-button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/call-button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
 
 3. The external consult call is connected and the customer is placed on hold. The following options are available with agents during the external consult call:
     1. **Mute** – Mute the conversation.
@@ -296,7 +296,7 @@ During chat interactions, agents can use Co-Browse, a collaboration tool that al
 Agents can initiate a co-browsing session during voice calls.
 
 * Clicking the Co-browser icon initiates a session directly if the agent and customer desktops are connected.  
-<img src="../images/voice-cobrowse.png" alt="Voice Co-Browse" title="Voice Co-Browse" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/voice-cobrowse.png" alt="Voice Co-Browse" title="Voice Co-Browse" style="border: 1px solid gray; zoom:70%;">
 
     <img src="../images/voice-cobrowse-window.png" alt="Voice Co-Browse Window" title="Voice Co-Browse Window" style="border: 1px solid gray; zoom:80%;">
 
@@ -747,7 +747,7 @@ Below is what the Agent Console looks like **after the first message** from the 
 ## Behavior When an Agent Changes Their Status
 
 A warning message displays if an agent changes their status to **_Away_** or a custom status tagged to _Away_ during an active interaction.  
-<img src="../images/set-status-to-away.png" alt="Set Status to Away" title="Set Status to Away" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/set-status-to-away.png" alt="Set Status to Away" title="Set Status to Away" style="border: 1px solid gray; zoom:50%;">
 
 ## Behavior When an Agent Tries Logging Out
 
@@ -756,7 +756,7 @@ Contact Center AI does not permit agents to log out during an ongoing conversati
 If an agent tries to log out during an ongoing conversation, Contact Center AI prevents the agent from logging out without transferring or closing the conversation. A pop-up window is displayed along with the following message:
 
 If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.  
-<img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:50%;">
 
 ## Behavior When an Agent Does Not Accept/Send a Response Within a Specified Time
 
