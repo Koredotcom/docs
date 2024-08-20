@@ -173,7 +173,7 @@ To publish the Bot first enable channels:
 
 ## Hosting
 
-We will be hosting the Panels in the web/mobile client. Click [here](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/){:target="_blank"} for more details on the Widget SDK usage.
+We will be hosting the Panels in the web/mobile client. Click [here](/docs/xo/app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} for more details on the Widget SDK usage.
 
 1. Download the Kore.ai Widget SDK, go to this [link](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}, and then click **Download**.
 2. Extract all files to the _…/SDKApp/sdk_ folder.

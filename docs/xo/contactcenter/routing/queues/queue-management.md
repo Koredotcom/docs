@@ -2,7 +2,7 @@
 
 **Queues** are virtual, temporary waiting rooms that hold and process incoming requests for conversations between agents and customers. These are the holding areas for digital and audio conversations waiting for an agent to be assigned.
 
-All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, SmartAssist assigns them to agents. The agent assignment works based on pre-established rules and criteria, as shown in the illustration below:
+All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, Contact Center AI assigns them to agents. The agent assignment works based on pre-established rules and criteria, as shown in the illustration below:
 <img src="../images/agent-assignment-criteria.png" alt="Agent_Assignment_Criteria" title="Agent_Assignment_Criteria" style="border: 1px solid gray; zoom:80%;">
 
 Once a conversation comes in, it gets assigned to a queue. Afterward, the next step is to check the routing mode.
@@ -13,7 +13,7 @@ The **Advanced Routing** mode checks for preferred agents. If a queue has prefer
 
 For the agent to answer the conversation, they must have a required skill attached to their profile. The conversation cannot be assigned to the agent if the skill does not match.
 
-It is possible, however, to define a skill and its expiry period. SmartAssist will search for an agent with this skill for the configured time. If no agent with this skill is available before the skill expiration period ends, the skill is no longer considered a requirement.
+It is possible, however, to define a skill and its expiry period. Contact Center AI will search for an agent with this skill for the configured time. If no agent with this skill is available before the skill expiration period ends, the skill is no longer considered a requirement.
 
 ## Queue Routing Modes
 
@@ -27,7 +27,7 @@ All conversations will get assigned to queues as they come in. This process is b
 **Advanced Routing**
 
 * In this case, the conversation first routes to a preferred agent.
-* For each new conversation, SmartAssist checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).
+* For each new conversation, Contact Center AI checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).
 
 ## The Queues Live Board
 
@@ -58,7 +58,7 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 
 1. The **Name** by which to identify the queue;
 2. A short **Description** of the queue (optional);
-3. **Hours of Operation**: Select from the available [Hours of Operation](../../configurations/hours-of-operation/).
+3. **Hours of Operation**: Select from the available [Hours of Operation](../../configurations/hours-of-operation/manage-hours-of-operation.md).
 <img src="../images/queue-settings.png" alt="Queue Settings" title="Queue Settings" style="border: 1px solid gray; zoom:70%;">
 
 4. **Transfer Rules:** This feature lets you limit the agents’ ability to transfer from one queue to another. If this feature is enabled, you can select the specific queues to which agents can transfer customers. If disabled, agents can transfer to any queue from the current one. Turn on the Transfer Rules toggle, select a Queue and click **Done**.  
