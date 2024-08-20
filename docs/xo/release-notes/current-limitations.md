@@ -3,8 +3,8 @@
 XO11 currently has a few notable limitations, which are listed below. We’re working on gradually removing these limitations and will update this list accordingly. 
 
 * Universal Bots support is coming soon, likely by the end of September 2024.
-* Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to XO11 yet. 
-* SmartAssist instance bot cannot be upgraded to XO11 yet.
+* SmartAssist instance bot upgrade support is coming soon, likely by the end of September 2024.
+* Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to XO11.
 * The App language (display language) is available only in English, Japanese, and Korean. 
 
 <hr>
