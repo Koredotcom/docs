@@ -17,8 +17,9 @@ Environment Variables are global, reusable components which can be used in multi
 
 Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](../collections){:target="_blank"}.
 
-    !!! Note
-        Ensure that the environment variable name does not contain any hyphen.
+!!! Note
+
+    Ensure that the environment variable name does not contain any hyphen.
 
 ### Restricting Sensitive Data with Environment Variables
 
@@ -27,7 +28,6 @@ During the virtual assistant definition, developers may create **environment var
 The latest Kore.ai XO Platform release introduces the **Secure Variable** feature for environment variables, which encrypts the added variable when enabled. This makes only the encrypted variable value visible to others and not the original value.
 
 **Important Considerations**
-
 
 
 * The **secure variable** is encrypted in the database and does not require any encryption key.
@@ -64,8 +64,9 @@ The availability of the environment variables has been extended to the **Field K
 
 Bot building essentially requires extensive content management efforts. When it comes to multi-language VAs, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting VA flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the VA content, such as prompts, messages, or any data presented to the user, into VA components, and instead point to specific variables in centrally managed Content Variables files for each app language. You can export the language-specific content variable files to content editors, without exposing any app configurations. The writers can author the content in the exported file, which you can import back into the app.
 
-    !!! Note
-        Ensure that the environment variable name does not contain any hyphen.
+!!! Note
+
+    Ensure that the environment variable name does not contain any hyphen.
 
 
 ### Defining Bot Variables and Securing Them
