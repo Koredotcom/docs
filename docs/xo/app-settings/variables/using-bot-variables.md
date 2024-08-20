@@ -8,10 +8,9 @@
 Environment Variables are global, reusable components which can be used in multiple places to define the VA configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the VA configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
 
 
-
 * To manage the app across environments having different endpoint URLs. The app can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.
 * To manage **Conditions** in the **Dialog Node** Transitions. Only the left-hand side of the transition condition uses Environment Variables. The right-hand side of the transition conditions does not use Environment Variables
-* To define and manage theapp response that is repeated within the app configuration as variables.
+* To define and manage the app response that is repeated within the app configuration as variables.
 * Authorization Token
 * Channel-related tokens and URLs
 
@@ -19,7 +18,7 @@ Post the release of v8.1 of the platform, for <span style="text-decoration:under
 
 !!! Note
 
-    Ensure that the environment variable name does not contain any hyphen.
+    Ensure that the Environment or Content variable name does not contain any hyphen.
 
 ### Restricting Sensitive Data with Environment Variables
 
@@ -66,7 +65,7 @@ Bot building essentially requires extensive content management efforts. When it 
 
 !!! Note
 
-    Ensure that the environment variable name does not contain any hyphen.
+    Ensure that the Environment or Content variable name does not contain any hyphen.
 
 
 ### Defining Bot Variables and Securing Them
