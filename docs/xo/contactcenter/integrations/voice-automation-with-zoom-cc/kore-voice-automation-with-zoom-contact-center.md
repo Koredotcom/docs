@@ -10,7 +10,7 @@ Here’s a general overview of how voice virtual assistant interactions work on 
 
 * **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.
 * **Channel Integration**: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”. This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.
-* **Routing and Distribution**: When a customer initiates contact through ZCC, Kore.ai’s routing system directs the interaction to an available agent based on predefined rules and criteria.
+* **Routing and Distribution**: When a customer initiates contact through ZCC and the call is received by Kore. Admins can use the Agent Transfer Node within the Kore platform to transfer the call back to ZCC if a human agent is required. Admins can also define appropriate SIP headers to provide the necessary information that can be used within ZCC to direct the interaction to the appropriate agents.
 * **Agent Interaction**: The agent receives the customer interaction and responds to the customer using ZCC’s communication features, such as answering voice calls.
 
 ## Prerequisites
@@ -38,7 +38,7 @@ The important steps to set up the ZCC channel are summarized below:
 If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore IVA. Read more [here](https://docs.kore.ai/xo/flows/node-types/automation/).
 
 !!! note
-    If you are using the older version “Smart Assist” then use this [link](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/).
+    If you are using the older version “SmartAssist,” then use this [link](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/).
 
 ## Step 2: Configure “Transfer from IVR”
 
@@ -184,7 +184,7 @@ Steps to fetch Conversation Details and Summary:
 
     **Or**
 
-    - 5.2. Click **Deploy **>** APIs & Extensions **>** API Scopes**.  
+    - 5.2. Click **Deploy** > **APIs & Extensions** > **API Scopes**.  
     <img src="../images/apis-and-extensions-api-scopes-17.png" alt="apis-and-extensions-api-scopes" title="apis-and-extensions-api-scopes" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Create API Scope**.  
