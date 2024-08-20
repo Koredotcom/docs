@@ -65,7 +65,7 @@ There are two ways to edit form settings (Name, Description, Form Data Security 
 
 ### Publish an Agent Form
 
-Publishing a form means making it available for agents to select within the Agent Console and send to customers, as shown below. See [Agent Forms for Handling Sensitive Information](../../../console/interacting-with-customers/interacting-with-customers.md#agent-forms-for-handling-sensitive-information) for detail.
+Publishing a form means making it available for agents to select within the Agent Console and send to customers, as shown below. See [Agent Forms for Handling Sensitive Information](../../../console/interacting-with-customers.md#agent-forms-for-handling-sensitive-information) for detail.
 
 <img src="../images/agent-form-console.png" alt="Send Agent Form" title="Send Agent Form" style="border: 1px solid gray; zoom:80%;">
 

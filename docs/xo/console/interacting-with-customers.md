@@ -601,9 +601,7 @@ To transfer a conversation to another agent:
 
 **Transfer to External Contacts**
 
-An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow
-
-external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
+An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
 1. Click **Transfer** at the top of the Conversation space.  
 <img src="../images/transfer-live-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
@@ -625,9 +623,9 @@ external transfer of ongoing customer calls. To transfer a conversation to an ex
 <img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Once clicking _End_, you must **confirm** that you want to end the interaction. Click **Yes** to do so, or otherwise, click **No**.  
-<img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
 
-Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
+    Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
 
 ### After Call Work (ACW)
 
@@ -726,7 +724,7 @@ A message appears on the console for the duration configured on the [Agent Statu
 <img src="../images/login-prep.png" alt="Login Prep Status" title="Login Prep Status" style="border: 1px solid gray; zoom:80%;">
 
 At the end of the Login Preparation time slot, the system automatically marks the agent as ‘Away,’ and a pop-up message appears with the following content:  
-<img src="../images/marked-as-away.png" alt="Marked as Away" title="Marked as Away" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/marked-as-away.png" alt="Marked as Away" title="Marked as Away" style="border: 1px solid gray; zoom:60%;">
 
 Agents can choose the following options:
 
@@ -749,7 +747,7 @@ Below is what the Agent Console looks like **after the first message** from the 
 ## Behavior When an Agent Changes Their Status
 
 A warning message displays if an agent changes their status to **_Away_** or a custom status tagged to _Away_ during an active interaction.  
-<img src="../images/set-status-to-away.png" alt="Set Status to Away" title="Set Status to Away" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/set-status-to-away.png" alt="Set Status to Away" title="Set Status to Away" style="border: 1px solid gray; zoom:60%;">
 
 ## Behavior When an Agent Tries Logging Out
 
@@ -758,7 +756,7 @@ Contact Center AI does not permit agents to log out during an ongoing conversati
 If an agent tries to log out during an ongoing conversation, Contact Center AI prevents the agent from logging out without transferring or closing the conversation. A pop-up window is displayed along with the following message:
 
 If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.  
-<img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:60%;">
 
 ## Behavior When an Agent Does Not Accept/Send a Response Within a Specified Time
 

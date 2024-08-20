@@ -2,7 +2,7 @@
 
 The **Hours of Operation** feature helps set the standard hours when agents are available for customers based on business operating hours, non-operating hours, and holidays.
 
-In **Contact Center,** you can define the standard working hours for each day of the week and set the non-working hours for weekends and public holidays in different time zones.  [Default Flows](../default-flows/configure-default-flows.md) are handled by SmartAssist based on your configuration for **Hours of Operation**,
+In **Contact Center,** you can define the standard working hours for each day of the week and set the non-working hours for weekends and public holidays in different time zones.  [Default Flows](../../flows-and-routing/conditional-flows.md) are handled by Contact Center AI based on your configuration for **Hours of Operation**,
 
 You can reach the Hours of Operation feature by going to **Contact Center AI** > **CONFIGURATIONS** > **Hours of Operation**.
 <img src="../images/hours-of-operation-page.png" alt="
