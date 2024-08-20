@@ -101,7 +101,7 @@ After switching the language, go to **App Settings > Variables > Content Variabl
 
 ### Using Environment Variables
 
-You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}` If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from a app that uses two environment variables called _botType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
+You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}`Ensure that the environment variable name does not contain any hyphen. If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from an app that uses two environment variables called _botType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
 
 <img src="../images/env-and-content-variables-img8.png" alt="Script to capture Base URL of app" title="Script to capture Base URL of app" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -130,7 +130,7 @@ The new encrypted secure variable value is updated in the list as shown below:
 
 ### Using Content Variables
 
-You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}` If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
+You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}` Ensure that the environment variable name does not contain any hyphen. If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
 
 <img src="../images/env-and-content-variables-img13.png" alt="Entity node containing content variable" title="Entity node containing content variable" style="border: 1px solid gray;zoom:50%;"/>
 
