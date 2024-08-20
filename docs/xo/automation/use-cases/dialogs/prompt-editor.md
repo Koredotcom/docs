@@ -217,9 +217,6 @@ Creating a text prompt
 
 <img src="../images/prompt-editor-user-prompt-text.png" alt="Plain text user prompt - creation" title="Plain text user prompt - creation" style="border:1px solid gray;zoom:70%;">
 
-Creating a text prompt
-<br><br>
-
 The above created prompt looks like:
 
 <img src="../images/prompt-editor-text-prompt-runtime.png" alt="Plain text user prompt - Runtime" title="Plain text user prompt - Runtime" style="border:1px solid gray;zoom:70%;">
