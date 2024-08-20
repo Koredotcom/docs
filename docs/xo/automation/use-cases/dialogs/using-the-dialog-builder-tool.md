@@ -589,7 +589,7 @@ Using **Amend Entity,** you can allow the users to amend entity values and contr
 
 <img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
 
-Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
+Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level)
 
 
 ### Manage Groups
