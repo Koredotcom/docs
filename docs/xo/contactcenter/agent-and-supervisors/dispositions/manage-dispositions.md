@@ -1,6 +1,6 @@
 # Dispositions
 
-**Dispositions** represent a label that agents assign to the outcome of a conversation. In SmartAssist, you can create **disposition sets** to organize **disposition codes** according to your business requirements.
+**Dispositions** represent a label that agents assign to the outcome of a conversation. In Contact Center AI, you can create **disposition sets** to organize **disposition codes** according to your business requirements.
 
 To reach this feature, go to **Contact Center AI > AGENT & SUPERVISORS > Dispositions**.
 <img src="../images/dispositions-page.png" alt="
@@ -53,7 +53,7 @@ In the General tab, you can configure the main settings for the Disposition Set.
 3. **Display**: This field lets you specify how to display the disposition code selection options. Choose between _Dropdown_ and _Button_, both allowing single selection.
 4. **Is Required**: Choose whether the Disposition Set is required at the end of a conversation. You can select _Yes_ or _No_. If you select _Yes_, agents must select a disposition code within this set when ending interactions that are part of the queues assigned to the set or if the agent is part of a group assigned to the set.
 5. Under the **Assignment** section, you can assign the Disposition Set to either queues or agent groups, as follows:
-    1. Select **Assign to Queues** and the disposition set will display to all agents who are in the assigned queues. You can assign the set to all queues or selected queues. Click **Add Queue** to search and select one or multiple queues from a list. Queues must have been previously created before becoming available to select here. See [Queues](https://docs.kore.ai/smartassist/routing/queues/) to learn more about creating them. You can delete a queue assignment using the **Delete** (bin) icon on the right of the entry.
+    1. Select **Assign to Queues** and the disposition set will display to all agents who are in the assigned queues. You can assign the set to all queues or selected queues. Click **Add Queue** to search and select one or multiple queues from a list. Queues must have been previously created before becoming available to select here. See [Queues](../../routing/queues/queue-management.md) to learn more about creating them. You can delete a queue assignment using the **Delete** (bin) icon on the right of the entry.
     <img src="../images/assign-to-queues.gif" alt="Assign to Queues" title="Assign to Queues" style="border: 1px solid gray; zoom:70%;">
 
     2. Select **Assign to Agent Groups** and the Disposition Set will display to all agents in the selected agent groups. The selection process is similar to the Queue selection above.
@@ -156,9 +156,9 @@ To delete a custom Disposition Code, follow these steps:
 !!! Notes
 
     1. You cannot restore deleted disposition codes.
-    2. Deleted Disposition Codes are not displayed to agents in the [Agent Console](https://docs.kore.ai/smartassist/console/interacting-with-customers/#End_Interactions).
+    2. Deleted Disposition Codes are not displayed to agents in the [Agent Console](../../../console/interacting-with-customers.md#end-interactions).
 
 ## The Agent Experience with Dispositions
 
-Dispositions are displayed once agents end a conversation within the [Agent Console](https://docs.kore.ai/smartassist/console/interacting-with-customers/#End_Interactions). No disposition code is selected by default when choosing a Disposition Set at the end of an interaction. Agents must choose a disposition code. If you have assigned more than one Disposition Set to a specific Queue or Agent Group, then corresponding agents see all sets and must select codes for all required sets.
+Dispositions are displayed once agents end a conversation within the [Agent Console](../../../console/interacting-with-customers.md#end-interactions). No disposition code is selected by default when choosing a Disposition Set at the end of an interaction. Agents must choose a disposition code. If you have assigned more than one Disposition Set to a specific Queue or Agent Group, then corresponding agents see all sets and must select codes for all required sets.
 <img src="../images/console-disposition-and-notes.png" alt="Agent Console Disposition Selection" title="Agent Console Disposition Selection" style="border: 1px solid gray; zoom:80%;">
