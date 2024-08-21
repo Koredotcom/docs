@@ -14347,7 +14347,7 @@
 <ul>
 <li><strong>Setup and Configuration</strong>: Kore.ai sets up and configures the integration between their virtual assistant and ZCC. This involves installing specific connectors provided by Zoom and configuring the settings to establish a connection.</li>
 <li><strong>Channel Integration</strong>: Once the integration is set up, the virtual assistants on Kore.ai can be configured to use ZCC as one of its communication channels (setting includes “Transfer form IVR” and “Agent Transfer”. This means that incoming customer inquiries can be handled through Zoom’s communication platform, which may include voice calls and then routed to Kore’s IVR for running voice automation.</li>
-<li><strong>Routing and Distribution</strong>: When a customer initiates contact through ZCC, Kore.ai’s routing system directs the interaction to an available agent based on predefined rules and criteria.</li>
+<li><strong>Routing and Distribution</strong>: When a customer initiates contact through ZCC and the call is received by Kore. Admins can use the Agent Transfer Node within the Kore platform to transfer the call back to ZCC if a human agent is required. Admins can also define appropriate SIP headers to provide the necessary information that can be used within ZCC to direct the interaction to the appropriate agents.</li>
 <li><strong>Agent Interaction</strong>: The agent receives the customer interaction and responds to the customer using ZCC’s communication features, such as answering voice calls.</li>
 </ul>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
@@ -14371,7 +14371,7 @@
 <p>If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore IVA. Read more <a href="https://docs.kore.ai/xo/flows/node-types/automation/">here</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are using the older version “Smart Assist” then use this <a href="https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/">link</a>.</p>
+<p>If you are using the older version “SmartAssist,” then use this <a href="https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/">link</a>.</p>
 </div>
 <h2 id="step-2-configure-transfer-from-ivr">Step 2: Configure “Transfer from IVR”<a class="headerlink" href="#step-2-configure-transfer-from-ivr" title="Permanent link">&para;</a></h2>
 <p>You must configure <strong>Transfer from IVR</strong> to transfer a call from ZCC to Kore. Follow the steps below to make this configuration:</p>
@@ -14521,7 +14521,7 @@
 </ul>
 <p><strong>Or</strong></p>
 <ul>
-<li>5.2. Click <strong>Deploy **&gt;</strong> APIs &amp; Extensions <strong>&gt;</strong> API Scopes**.<br />
+<li>5.2. Click <strong>Deploy</strong> &gt; <strong>APIs &amp; Extensions</strong> &gt; <strong>API Scopes</strong>.<br />
 <a class="glightbox" href="../images/apis-and-extensions-api-scopes-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/apis-and-extensions-api-scopes-17.png" alt="apis-and-extensions-api-scopes" title="apis-and-extensions-api-scopes" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ul>
 </li>

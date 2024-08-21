@@ -14328,13 +14328,13 @@
 
 <h1 id="queues">Queues<a class="headerlink" href="#queues" title="Permanent link">&para;</a></h1>
 <p><strong>Queues</strong> are virtual, temporary waiting rooms that hold and process incoming requests for conversations between agents and customers. These are the holding areas for digital and audio conversations waiting for an agent to be assigned.</p>
-<p>All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, SmartAssist assigns them to agents. The agent assignment works based on pre-established rules and criteria, as shown in the illustration below:
+<p>All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, Contact Center AI assigns them to agents. The agent assignment works based on pre-established rules and criteria, as shown in the illustration below:
 <a class="glightbox" href="../images/agent-assignment-criteria.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent-assignment-criteria.png" alt="Agent_Assignment_Criteria" title="Agent_Assignment_Criteria" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>Once a conversation comes in, it gets assigned to a queue. Afterward, the next step is to check the routing mode.</p>
 <p>The <strong>Simple Routing</strong> mode checks for agent skills and agent availability. After the skill and availability match, an agent gets assigned to the conversation.</p>
 <p>The <strong>Advanced Routing</strong> mode checks for preferred agents. If a queue has preferred agents configured, admins can specify a time, after which the routing extends to skill match. If a preferred agent becomes available before the configured time expires, they will have priority over agents selected via skill match.</p>
 <p>For the agent to answer the conversation, they must have a required skill attached to their profile. The conversation cannot be assigned to the agent if the skill does not match.</p>
-<p>It is possible, however, to define a skill and its expiry period. SmartAssist will search for an agent with this skill for the configured time. If no agent with this skill is available before the skill expiration period ends, the skill is no longer considered a requirement.</p>
+<p>It is possible, however, to define a skill and its expiry period. Contact Center AI will search for an agent with this skill for the configured time. If no agent with this skill is available before the skill expiration period ends, the skill is no longer considered a requirement.</p>
 <h2 id="queue-routing-modes">Queue Routing Modes<a class="headerlink" href="#queue-routing-modes" title="Permanent link">&para;</a></h2>
 <p>All conversations will get assigned to queues as they come in. This process is based on two Routing modes, as described below.</p>
 <p><strong>Standard Routing</strong></p>
@@ -14345,7 +14345,7 @@
 <p><strong>Advanced Routing</strong></p>
 <ul>
 <li>In this case, the conversation first routes to a preferred agent.</li>
-<li>For each new conversation, SmartAssist checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).</li>
+<li>For each new conversation, Contact Center AI checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).</li>
 </ul>
 <h2 id="the-queues-live-board">The Queues Live Board<a class="headerlink" href="#the-queues-live-board" title="Permanent link">&para;</a></h2>
 <p>To access <em>Queues</em>, go to <strong>Contact Center AI</strong> &gt; <strong>ROUTING</strong> &gt; <strong>Queues</strong>.
@@ -14376,7 +14376,7 @@
 <li>The <strong>Name</strong> by which to identify the queue;</li>
 <li>A short <strong>Description</strong> of the queue (optional);</li>
 <li>
-<p><strong>Hours of Operation</strong>: Select from the available <a href="../../configurations/hours-of-operation/">Hours of Operation</a>.
+<p><strong>Hours of Operation</strong>: Select from the available <a href="../../../configurations/hours-of-operation/manage-hours-of-operation/">Hours of Operation</a>.
 <a class="glightbox" href="../images/queue-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/queue-settings.png" alt="Queue Settings" title="Queue Settings" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>

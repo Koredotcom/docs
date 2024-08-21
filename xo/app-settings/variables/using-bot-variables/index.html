@@ -14248,11 +14248,15 @@
 <ul>
 <li>To manage the app across environments having different endpoint URLs. The app can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.</li>
 <li>To manage <strong>Conditions</strong> in the <strong>Dialog Node</strong> Transitions. Only the left-hand side of the transition condition uses Environment Variables. The right-hand side of the transition conditions does not use Environment Variables</li>
-<li>To define and manage theapp response that is repeated within the app configuration as variables.</li>
+<li>To define and manage the app response that is repeated within the app configuration as variables.</li>
 <li>Authorization Token</li>
 <li>Channel-related tokens and URLs</li>
 </ul>
 <p>Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, <a href="../collections" target="_blank">refer here for more</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure that the Environment or Content variable name does not contain any hyphen.</p>
+</div>
 <h3 id="restricting-sensitive-data-with-environment-variables">Restricting Sensitive Data with Environment Variables<a class="headerlink" href="#restricting-sensitive-data-with-environment-variables" title="Permanent link">&para;</a></h3>
 <p>During the virtual assistant definition, developers may create <strong>environment variables</strong> for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the virtual assistant, especially when its definition is exported.</p>
 <p>The latest Kore.ai XO Platform release introduces the <strong>Secure Variable</strong> feature for environment variables, which encrypts the added variable when enabled. This makes only the encrypted variable value visible to others and not the original value.</p>
@@ -14295,6 +14299,10 @@
 <a class="glightbox" href="../images/env-and-content-variables-img3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/env-and-content-variables-img3.png" alt="Field Key and Field Value" title="Field Key and Field Value" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <h3 id="content-variables">Content Variables<a class="headerlink" href="#content-variables" title="Permanent link">&para;</a></h3>
 <p>Bot building essentially requires extensive content management efforts. When it comes to multi-language VAs, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting VA flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the VA content, such as prompts, messages, or any data presented to the user, into VA components, and instead point to specific variables in centrally managed Content Variables files for each app language. You can export the language-specific content variable files to content editors, without exposing any app configurations. The writers can author the content in the exported file, which you can import back into the app.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure that the Environment or Content variable name does not contain any hyphen.</p>
+</div>
 <h3 id="defining-bot-variables-and-securing-them">Defining Bot Variables and Securing Them<a class="headerlink" href="#defining-bot-variables-and-securing-them" title="Permanent link">&para;</a></h3>
 <p>Enabling the <strong>secure variable</strong> setting after defining an Environment (Bot) Variable, encrypts and securely stores credentials set as environment variables. To add a Bot variable, follow the steps below:</p>
 <ol>
@@ -14326,7 +14334,7 @@
 <p><a class="glightbox" href="../images/env-and-content-variables-img7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/env-and-content-variables-img7.png" alt="Select language" title="Select language" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <p>After switching the language, go to <strong>App Settings &gt; Variables &gt; Content Variables</strong> page and click the <strong>edit</strong> icon next to the relevant variable. Replace the text in the <strong>Value</strong> field in the enabled language.</p>
 <h3 id="using-environment-variables">Using Environment Variables<a class="headerlink" href="#using-environment-variables" title="Permanent link">&para;</a></h3>
-<p>You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: <code>{{env.variableName}}</code> If you are using it in JavaScript mode, it is <em>env.variableName</em> Here’s an example from a app that uses two environment variables called <em>botType</em> and <em>parameters</em> to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the <em>base URL</em> of the app, depending on the current app environment.</p>
+<p>You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: <code>{{env.variableName}}</code>. If you are using it in JavaScript mode, it is <em>env.variableName</em> Here’s an example from an app that uses two environment variables called <em>botType</em> and <em>parameters</em> to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the <em>base URL</em> of the app, depending on the current app environment.</p>
 <p><a class="glightbox" href="../images/env-and-content-variables-img8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/env-and-content-variables-img8.png" alt="Script to capture Base URL of app" title="Script to capture Base URL of app" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <p>The URL in the following service node changes based on the captured URL</p>
 <p><a class="glightbox" href="../images/env-and-content-variables-img9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/env-and-content-variables-img9.png" alt="URL changes based on the captured URL" title="URL changes based on the captured URL" style="border: 1px solid gray;zoom:50%;"/></a></p>
@@ -14349,7 +14357,7 @@
 <p>The new encrypted secure variable value is updated in the list as shown below:
 <a class="glightbox" href="../images/env-and-content-variables-img12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/env-and-content-variables-img12.png" alt="secure variable value is updated" title="secure variable value is updated" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <h3 id="using-content-variables">Using Content Variables<a class="headerlink" href="#using-content-variables" title="Permanent link">&para;</a></h3>
-<p>You can invoke a content variable in plain text mode (Standard editor) using the following syntax. <code>{{content.variableName}}</code> If you are using it in JavaScript mode, it is <em>content.variableName</em> Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.</p>
+<p>You can invoke a content variable in plain text mode (Standard editor) using the following syntax. <code>{{content.variableName}}</code>. If you are using it in JavaScript mode, it is <em>content.variableName</em> Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.</p>
 <p><a class="glightbox" href="../images/env-and-content-variables-img13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/env-and-content-variables-img13.png" alt="Entity node containing content variable" title="Entity node containing content variable" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <p>When the app reaches this node as a part of the user interaction, the user prompt changes depending on the language of the interaction (provided you entered the respective variable values for all the enabled languages).</p>
 <h3 id="importing-and-exporting">Importing and Exporting<a class="headerlink" href="#importing-and-exporting" title="Permanent link">&para;</a></h3>
