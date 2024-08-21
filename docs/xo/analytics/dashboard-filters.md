@@ -1,7 +1,8 @@
 # Dashboard Filters
 
 The dashboard filters are used to filter and view the analytics data for virtual assistants (VAs) on the following dashboards in the **ANALYTICS** section based on the user’s selection(s):
-* Overview Dashboard
+
+* Summary Dashboard
 * Conversations Dashboard
 * Users Dashboard
 * Performance Dashboard
@@ -11,9 +12,6 @@ The dashboard filters are used to filter and view the analytics data for virtual
 * Conversation Flows
 * Task Execution Logs
 * Feedback Dashboard
-
-<img src="../images/list-of-filters.png" alt="List of Filters" title="List of Filters" style="border: 1px solid gray; zoom:80%;">
-
 
 To understand the filter criteria availability on different dashboards, see the Filter Criteria Matrix.
 

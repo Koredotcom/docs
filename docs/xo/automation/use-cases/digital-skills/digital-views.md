@@ -171,4 +171,4 @@ When you publish your Virtual Assistant,  please ensure that the panels and widg
 
 ## Host
 
-The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. [Learn more](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial){:target="_blank"}.
+The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. [Learn more](/docs/xo/channels/add-widget-sdk-channel/){:target="_blank"}.

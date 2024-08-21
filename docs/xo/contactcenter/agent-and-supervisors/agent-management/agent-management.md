@@ -156,7 +156,7 @@ You can customize the following fields:
 <img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;">   
 A confirmation message is displayed.  
 <img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;">  
-Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
+Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
 
 ## Agent Settings
 
@@ -213,7 +213,7 @@ Turn on the toggle to add an explicit reject button for incoming conversations. 
 
 The Conversation Status Control settings are available for the following channels: Live Chat, Messaging, Voice, and Emails.
 
-Different statuses apply to each channel. Watch the short demo below to see what these look like in SmartAssist, and read the following sections for details on available statuses and their configuration.
+Different statuses apply to each channel. Watch the short demo below to see what these look like in Contact Center AI, and read the following sections for details on available statuses and their configuration.
 <img src="../images/conversation-status-control-channels.gif" alt="Conversation Status Control" title="Conversation Status Control" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Statuses by Channel (Live Chat, Messaging, and Voice)
@@ -280,7 +280,7 @@ Once you configure your Conversation Statuses and Messaging, click **Save** at t
 
 ## Call Recording Control
 
-By default, SmartAssist records all voice interactions. SmartAssist admins can disable call recording for all voice interactions.  
+By default, Contact Center AI records all voice interactions. Contact Center AI admins can disable call recording for all voice interactions.  
 <img src="../images/call-recording-control.png" alt="Call Recording Control" title="Call Recording Control" style="border: 1px solid gray; zoom:80%;">
 
 ### Allow Agent to Pause/Resume

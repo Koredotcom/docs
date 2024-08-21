@@ -16,7 +16,7 @@ The Response Templates section provides the following high-level features:
 
 ## Response Groups
 
-Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](../../../console/introduction-to-the-console/agent-console-introduction.md).
+Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](../../../console/agent-console-introduction.md).
 
 ### View an Existing Response Group
 

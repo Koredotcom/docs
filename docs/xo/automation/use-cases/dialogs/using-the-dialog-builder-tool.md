@@ -5,7 +5,7 @@ The Dialog Builder is where you can create your Dialog Tasks, from end-to-end. T
 
 ## Create a Dialog Task
 
-To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../building-a-virtual-assistant){:target="_blank"} for more information.
+To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../building-a-virtual-assistant)for more information.
 
 To add a dialog task, follow the steps below:
 
@@ -589,7 +589,7 @@ Using **Amend Entity,** you can allow the users to amend entity values and contr
 
 <img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
 
-Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
+Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level)
 
 
 ### Manage Groups

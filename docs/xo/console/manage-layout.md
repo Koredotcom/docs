@@ -169,7 +169,7 @@ Steps to choose the app language:
 3. Click **Save**.  
 <img src="../images/save.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
 
-The app language is updated and a confirmation is displayed.
+    The app language is updated and a confirmation is displayed.
 
 ## Add Users to Multiple Accounts
 
