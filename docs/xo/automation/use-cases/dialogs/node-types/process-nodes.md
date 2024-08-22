@@ -26,7 +26,7 @@ To add a Process node, please follow the steps below:
 
     Any changes in this tab will affect all instances of this process. Proceed with caution.
 
-The Component Properties tab lets you modify configurations of this process across all instances in all dialogs. as follows:
+The Component Properties tab lets you modify configurations of this process across all instances in all dialogs as follows:
 
 1. Enter a **Name and Display Name** for the Process node. Node names cannot have spaces.
 2. **Select a Type**. You can choose one of the following: 
