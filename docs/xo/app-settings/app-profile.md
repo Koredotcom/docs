@@ -59,23 +59,23 @@ Modify one or more of the settings described in the following table.
    <td>
 <ul>
 
-<li>Select <strong>General Public</strong> if the VA is for public use for both managed and unmanaged users in your domain. VA assignments are not required and when the Bots Admin deploys the VA, it is available for use by all domain users. Use this option to make a VA widely available for all user types.
+<li>Select <strong>General Public</strong> if the App is for public use for both managed and unmanaged users in your domain. VA assignments are not required and when the Bots Admin deploys the VA, it is available for use by all domain users. Use this option to make a VA widely available for all user types.
 
 
-<li>Select <strong>Enterprise Users</strong> if the VA is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
+<li>Select <strong>Enterprise Users</strong> if the App is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
 Once the <strong>Target Audience</strong> is defined and saved, you cannot change them.
 </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td>Default VA Language
+   <td>Default Language
    </td>
-   <td>This is uneditable and is set at the time of VA creation.
+   <td>This is uneditable and is set at the time of App creation.
    </td>
   </tr>
   <tr>
-   <td>VA Id
+   <td>App Id
    </td>
    <td>Non-editable, assigned by the platform. It can be copied for use in API calls etc..
    </td>
