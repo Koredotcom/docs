@@ -31,8 +31,6 @@ Setting up an entity node in a dialog task involves the following steps:
 
 ### Component Properties
 
-The Entity window allows you to configure the General Settings, User, and Error Prompts.
-
 !!! Note
 
     The configurations you set up or modify in this section are reflected in all other dialog tasks that use this node.
