@@ -87,7 +87,7 @@ An account owner or master admin can perform the following functions:
 * Set up which users will receive email notifications when they are added to the admin’s account.
 * Manage guardrail scanners and configured integrations for the account.
 
-## New Account Sign-up and Activation
+## New Account Sign Up and Activation
 
 If you do not have an account on GALE, visit this home page [link](https://gale.kore.ai/){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
 
@@ -112,7 +112,7 @@ Alternatively, enter your email address and click **Continue** to sign up via em
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can sign in and enter the password if the email address is registered.</p>
+<p>You can sign in by entering the password if the email address is registered.</p>
 </div>
 
 <div class="admonition warning">
@@ -126,11 +126,19 @@ Once the admin accepts your request via an invitation, you can complete the sign
 
 <ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Ensure you set a strong password that follows all the requirements.</p>
-</div>
+<p>Ensure you set a strong password that should include the following:</p>
+<ul><li>A minimum of 12 characters.
+<img src="../images/password-12-characters-long.png" alt="12 characters" title="12 characters" style="border: 1px solid gray; zoom:75%;"></li>
+<li>At least one special character.
+<img src="../images/password-special-character.png" alt="special character" title="special character" style="border: 1px solid gray; zoom:75%;"></li>
+<li>At least one number.
+<img src="../images/password-number-character.png" alt="number required" title="number required" style="border: 1px solid gray; zoom:75%;"></li>
+<li>At least one lower case character.
+<img src="../images/password-lowercase-character.png" alt="lower case" title="lower case" style="border: 1px solid gray; zoom:75%;"></li>
+<li>At least one upper case character.
+<img src="../images/password-uppercase-character.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
+<p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> button is enabled.</p>
 <img src="../images/strong-password.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
 
 ### **Account Activation**
