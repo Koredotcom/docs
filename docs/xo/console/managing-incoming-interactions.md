@@ -40,7 +40,7 @@ If an agent does not send the first response to the auto-assigned interaction in
 ## Handling Interactions When Conversation Filters Are Applied
 
 When conversation state filters are applied (for example, ongoing, idle), accepted conversations are displayed on the conversation tray with a **View** option on the conversation. This will be displayed till the agent clicks the conversation and sends the first message.  
-<img src="../images/filter-on-view-conversation.png" alt="Filter on View Interaction" title="Filter on View Interaction" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/filter-on-view-conversation.png" alt="Filter on View Interaction" title="Filter on View Interaction" style="border: 1px solid gray; zoom:90%;">
 
 ## Sort Incoming Interactions
 

@@ -1,12 +1,12 @@
 # App Profile
 
-To modify the general settings of a app:
+To modify the general settings of an app:
 
 1. Open the app.
 2.  Navigate to **App Settings > App Profile**.  
 <img src="../images/app-prof-img1-build-configurations-general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
 
-## General VA Settings
+## General App Settings
 
 Modify one or more of the settings described in the following table.
 
@@ -19,21 +19,22 @@ Modify one or more of the settings described in the following table.
    </td>
   </tr>
   <tr>
-   <td>VA Name
+   <td>App Name
    </td>
-   <td>The name of the VA. When a VA is published, the <strong>Name</strong> cannot be changed. This field is required.
+   <td>The name of the App. Click the <strong>Edit</strong> <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon to change the App name. This field is required.
+
    </td>
   </tr>
   <tr>
    <td>Description
    </td>
-   <td>The description of the VA. This field is required.
+   <td>The description of the App. This field is required.
    </td>
   </tr>
   <tr>
    <td>Icon
    </td>
-   <td>The icon image for the VA displayed in the VA Builder, VAs Marketplace, and the end-user interface, as shown in the previous illustration. The image format must be <strong>.png </strong>and the best results can be obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
+   <td>The icon image for the VA is displayed in the VA Builder, VAs Marketplace, and the end-user interface, as shown in the previous illustration. The image format must be <strong>.png </strong>and the best results can be obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
    </td>
   </tr>
   <tr>
@@ -62,7 +63,7 @@ Modify one or more of the settings described in the following table.
 
 
 <li>Select <strong>Enterprise Users</strong> if the VA is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
-Once <strong>Target Audience</strong> is defined and saved, you cannot change them.
+Once the <strong>Target Audience</strong> is defined and saved, you cannot change them.
 </li>
 </ul>
    </td>
@@ -76,7 +77,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>VA Id
    </td>
-   <td>Non-editable, assigned by the platform. Can be copied for use in API calls etc..
+   <td>Non-editable, assigned by the platform. It can be copied for use in API calls etc..
    </td>
   </tr>
   <tr>
@@ -122,7 +123,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
 </table>
 
 
-To save the VA settings, click **Save**. The _&lt; **VA Name** > updated successfully_ message is displayed.
+To save the App settings, click **Save**. The _&lt; **App Name** > updated successfully_ message is displayed.
 
 
 ## Customizing Error Messages

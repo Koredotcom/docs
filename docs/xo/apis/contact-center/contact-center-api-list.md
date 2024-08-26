@@ -1,6 +1,6 @@
 # Contact Center API List
 
-Several APIs are available from the SmartAssist Platform. Based on the functionality addressed, the APIs can be categorized as:
+Several APIs are available from Contact Center AI. Based on the functionality addressed, the APIs can be categorized as:
 
 * [Analytics and Reporting APIs](#analytics-and-reporting-apis)
 * [Agent Creation APIs](#agent-creation-apis)

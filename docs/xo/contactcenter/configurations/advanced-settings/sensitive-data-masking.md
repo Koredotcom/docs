@@ -28,8 +28,8 @@ Administrators can configure sensitive data masking as follows:
 5. Choose the queues from the dropdown list and click **Done**.  
 <img src="../images/select-queues.png" alt="Select Queues" title="Select Queues" style="border: 1px solid gray; zoom:80%;">  
 
-The selected queues are displayed. You can delete a queue by clicking the **Bin** icon.  
-<img src="../images/delete-icon.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+    The selected queues are displayed. You can delete a queue by clicking the **Bin** icon.  
+    <img src="../images/delete-icon.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Save**. A confirmation message is displayed.  
 <img src="../images/delete-icon.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
