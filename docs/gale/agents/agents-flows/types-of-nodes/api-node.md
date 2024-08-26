@@ -27,7 +27,7 @@ Steps to add and configure the node:
 
         The node will trigger a timeout error if the request is not completed within the selected time frame.
 
-        !!! "Notes"
+        !!! Notes
 
             * The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
             
