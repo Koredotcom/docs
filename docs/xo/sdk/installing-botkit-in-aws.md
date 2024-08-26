@@ -57,13 +57,15 @@ Follow these steps for an automated BotKit deployment in AWS:
     4. Data Disk (50 GB)
     
     We suggest the instance type m5.xlarge on AWS, which would satisfy the above requirements.
+   
 2. Update all the OS-level packages using the command “yum update”.
 3. Install NodeJS.
-    * Refer to the below link to download & install the NodeJS for the support versions: \
-[ https://nodejs.org/en/download](https://nodejs.org/en/download)
+    * Refer to the below link to download & install the NodeJS for the support versions:[ https://nodejs.org/en/download](https://nodejs.org/en/download)
+
 4. Install Nginx’s latest version.
-    * Refer to the below link for the installation: \
+    * Refer to the below link for the installation:
 [ https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
+
 5. Ensure both the package installations are successful with the following commands:
     * node -v
     * nginx –version
@@ -89,7 +91,7 @@ Follow these steps for an automated BotKit deployment in AWS:
 1. Create an “A/CNAME Record” under your external facing domain & map it to the Load Balancer.
 
 
-#### Step 4: Set Up Elasticache (Optional)
+### Step 4: Set Up Elasticache (Optional)
 
 
 
