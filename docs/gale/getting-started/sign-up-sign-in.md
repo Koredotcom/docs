@@ -254,7 +254,7 @@ To change the password, enter the expired password in the **Old Password** textb
 
 <img src="../images/old-new-password-match.png" alt="passwords match" title="passwords match" style="border: 1px solid gray; zoom:75%;">
 
-A mismatch in the **New password** and **Confirm password** fields, displays the following error message:
+A mismatch in the **New password** and **Confirm password** fields displays an <b>Alert</b> icon against the mismatched field, while disabling the <b>Reset Password</b> button, as shown below:
 
 <img src="../images/old-new-password-mismatch.png" alt="passwords mismatch" title="passwords mismatch" style="border: 1px solid gray; zoom:75%;">
 
