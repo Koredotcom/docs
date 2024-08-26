@@ -23,17 +23,15 @@ Steps to add and configure the node:
     * **Type**: Select the API type from the drop-down list - REST or SOAP.
     * **Integration Type**: Select the integration type for the connection—synchronous or Asynchronous—and choose the timeout duration for the integration.
         * **Synchronous**: The allowed range is 5 to 180 seconds (3 minutes). The default is 60 seconds.
-        * **Asynchronous**: The allowed range is 60 seconds to 24 hours (86,400 seconds). The default is 60 seconds.
+        * **Asynchronous**: The allowed range is 30 seconds to 300 seconds (5 minutes). The default is 60 seconds.
 
         The node will trigger a timeout error if the request is not completed within the selected time frame.
 
-
-        !!! Note "Notes"
+        !!! "Notes"
 
             * The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
             
             * Timeout precedence: Agent timeout > Node timeout > Third-party API endpoint timeout.
-
 
     * **Request Definition**: Define the details of the service request to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
     <img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
