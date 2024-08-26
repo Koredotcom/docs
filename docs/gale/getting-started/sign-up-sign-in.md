@@ -139,7 +139,7 @@ Once the admin accepts your request via an invitation, you can complete the sign
 <img src="../images/password-uppercase-character.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;"></ul>
 
 <p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> button is enabled.</p>
-<img src="../images/strong-password.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/strong-password-set.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
 
 ### **Account Activation**
 
