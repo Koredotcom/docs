@@ -23,7 +23,7 @@ Steps to enable and configure the asynchronous mode:
 
 4. Turn on the **Enable async** toggle to configure the asynchronous mode if required and click **Save**.
 
-    * If you enable the asynchronous mode, provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 24 hours (86,400 seconds). The default is 180 Seconds (3 minutes).  
+    * If you enable the asynchronous mode, provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 600 seconds (10 minutes). The default is 180 Seconds (3 minutes).  
     <img src="../images/async-mode-configuration.png" alt="Async Mode Configuration" title="Async Mode Configuration" style="border: 1px solid gray; zoom:80%;">
 
 5. If you have changed the mode, you must redeploy the agent - go to **Agent endpoint** in the left navigation and click the **Deploy** button on the top-right corner of the page.
