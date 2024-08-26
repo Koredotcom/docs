@@ -250,11 +250,13 @@ When your password expires, the system redirects to the following page where you
 
 <img src="../images/change-password-screen.png" alt="change password" title="change password" style="border: 1px solid gray; zoom:75%;">
 
-To change the password, enter the expired password in the **Old Password** textbox and follow Steps 4 and 5 in the previous section. Please ensure the password value matches the **New password** and **Confirm password** fields.
+To change the password, enter the expired password in the **Old Password** textbox and follow Steps 4 and 5 in the previous section. Please ensure the password values in the **New password** and **Confirm password** fields match. It's only then that the <b>Reset Password</b> button is enabled.
 
-A mismatch displays the following error message:
+<img src="../images/old-new-password-match.png" alt="passwords match" title="passwords match" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/password-mismatch.png" alt="password mismatch" title="password mismatch" style="border: 1px solid gray; zoom:75%;">
+A mismatch in the **New password** and **Confirm password** fields, displays the following error message:
+
+<img src="../images/old-new-password-mismatch.png" alt="passwords mismatch" title="passwords mismatch" style="border: 1px solid gray; zoom:75%;">
 
 ## GALE Landing Page
 
