@@ -230,5 +230,5 @@ Steps to change the fallback behavior:
 
 ### Fallback Behavior for Rephrase Dialog Response
 
-By default, when the guardrail is violated, the system uses the "Send the original prompt" option.  <img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">>
+By default, when the guardrail is violated, the system uses the "Send the original prompt" option.  <img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
 
