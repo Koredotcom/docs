@@ -1,6 +1,6 @@
 # Widgets
 
-SmartAssist allows you to integrate external systems and pages into the Agent Console. Agents can use widgets from within custom [Agent Console Layouts](../../../console/manage-layout/manage-layout.md).
+Contact Center AI allows you to integrate external systems and pages into the Agent Console. Agents can use widgets from within custom [Agent Console Layouts](../../../console/manage-layout.md).
 
 !!! Note
 
@@ -54,7 +54,7 @@ To delete an existing widget, find it in the list of _External Widgets_, then cl
 
 ## Add a Widget to an Agent Console Layout
 
-Once you save an external widget, you can add it to the Agent Console using the [Manage Layout](../../../console/manage-layout/manage-layout.md) feature.
+Once you save an external widget, you can add it to the Agent Console using the [Manage Layout](../../../console/manage-layout.md) feature.
 
 To add a widget to an _Agent Console Layout_, follow these steps:
 

@@ -2,6 +2,29 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.4.1 August 11, 2024
+<u> Patch Release </u>
+
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+
+### Widget Landing Tab
+
+The location of the Widget Landing Tab settings is changed in this update:
+
+* Old location: Widget Settings > Agent AI Channel Specific Settings. 
+* New location: Widget Theming > Layout Customization > Widget Menu Layout.
+
+This change consolidates widget customization options, making it easier for users to configure the landing tab along with other layout settings.
+
+### OAuth Credential Update for Genesys
+
+The **Authorized Redirect URI** in the Genesys Middleman App is updated to ensure seamless integration of Agent AI with XO v11:
+
+* Previous URI: https://agentassist.kore.ai/koreaiaa-genesys/
+* New URI: https://platform.kore.ai/koreaiaa-genesys/
+
+<hr>
+
 ## v11.4 July 27, 2024
 <u> Patch Release </u>
 
@@ -23,7 +46,7 @@ To improve the usability and relevance of the Playbooks module, Agent AI now res
 
 ### Feedback Reason and Comment on Summarization
 
-The Agent AI widget's Summary feature now offers enhanced feedback capabilities for auto-generated summaries. Agents can provide more specific and actionable feedback by selecting a reason from up to five customizable messages and adding optional comments. Administrators can edit these messages, turn the comment box on or off, and choose the feedback language. This improved feedback system allows agents to pinpoint issues with summaries more accurately, contributing to the continuous improvement of the auto-summarization feature's accuracy and relevance over time.  
+The Agent AI widget's Summary feature now offers enhanced feedback capabilities for auto-generated summaries. Agents can provide more specific and actionable feedback by selecting a reason from up to five customizable messages and adding optional comments. Administrators can edit these messages, turn the comment box on or off, and choose the feedback language. This improved feedback system allows agents to pinpoint issues with summaries more accurately, contributing to the continuous improvement of the auto-summarization feature's accuracy and relevance over time. [Learn More](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/feedback-settings/){:target="_blank"} 
 <img src="../images/feedback-reason-3.png" alt="feedback-reason" title="feedback-reason" style="border: 1px solid gray; zoom:80%;">
 
 ### Language-specific Summarization
@@ -37,7 +60,7 @@ The Agent AI widget now displays summaries more flexibly across all active tabs.
 
 ### Widget Layout Customization (Beta)
 
-The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options.  
+The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options. [Learn More](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/widget-theming-layout-customization/){:target="_blank"}  
 <img src="../images/widget-layout-customization-5.png" alt="widget-layout-customization" title="widget-layout-customization" style="border: 1px solid gray; zoom:80%;">
 
 ### Entry/Exit Event Support in Third-Party Integration

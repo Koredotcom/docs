@@ -46,7 +46,7 @@ Setting up a Message node in a dialog task involves the following steps:
 
     The configurations you set up or edit in this section reflect in all other dialog tasks that use this node.
 
-1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the message node.
+1. On the **Component Properties** tab, enter a **Name** and **Display Name** for the message node.
 2. Under the **Bot Responses** section, compose and format the bot response either as plain text or as a JavaScript message. A default message is set by the platform, you can customize it.
 3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
 4. To add more bot responses, click **Add Bot Response** and repeat the above steps.
@@ -116,7 +116,7 @@ Use the IVR properties tab on the Message Node to define the initial prompts, ti
 
     The Message Node supports all voice call properties for the IVR, Audio Codes, Twilio Voice, and Voice Gateway channels provided the **On User Input Transition** setting is enabled for the node.
     
-<img src="../images/message-ivr-properties.gif" alt="Message node - Voice call properties" title="Message node - Voice call properties" style="border:1px solid gray;zoom:50%;">
+<img src="../images/message-node-ivr-properties.png" alt="Message node - Voice call properties" title="Message node - Voice call properties" style="border:1px solid gray;zoom:50%;">
 
 ### Connections Properties
 

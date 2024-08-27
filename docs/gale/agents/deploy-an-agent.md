@@ -48,6 +48,7 @@ Steps to deploy an agent:
     3. Turn on the **Enable async** toggle to configure the asynchronous mode. Provide a URL, an access token, and the asynchronous mode timeout duration. The allowed timeout range is 60 seconds to 600 seconds (10 minutes). The default is 180 Seconds (3 minutes). The endpoint will trigger a timeout error if the request is not completed within the selected time frame.  
     <img src="../images/async-mode-configuration.png" alt="Async Mode Configuration" title="Async Mode Configuration" style="border: 1px solid gray; zoom:60%;">
 
+
         !!! note
 
             Timeout precedence: Agent timeout > Node timeout > Model timeout.

@@ -65,10 +65,18 @@ Configure the MS Teams credentials on the Kore.ai XO Platform to establish commu
 2. Select the **Microsoft Teams** channel, click the **Configuration** tab, and then enter the following details: **Multi-Tenant Apps Configuration**
     * **Microsoft App ID** – The app ID of your Azure Bot resource.
     * **App Password** – The App password value that you find in the Certificates & Secrets page of the Azure bot.
-    * **Enable Proactive Notifications (optional)** – Drag the slider to enable proactive notifications.
+    * **Enable Proactive Notifications (optional)** – Toggle to enable the Proactive Notification.
+    * **Enable Modal Dialogs (optional)** - Toggle to enable the Modal Dialogs. [Learn more](https://learn.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/action-commands/create-task-module?tabs=dotnet).
+        * Enter the Custom URL to which the platform forwards Modal Dialog messages for processing.
+
+            !!! note
+
+                The platform maintains the conversation context when handling Modal Dialog messages. It forwards these messages with pre-context to the Custom URL for processing, then relays responses back to the user, maintaining a seamless interaction.
+
     * **Application (Client) ID** – The app ID of your Azure Bot resource.
     * **Client Secret** – The client secret value that you find on the Certificates & Secrets page of the Azure bot.
     * **Delivery (tenant) ID** – The subscription ID that you can find on the Overview page of the Azure bot.
+    * Select **Yes** for the **Enable Channel** option.
     <img src="../images/MS_Team8.png" alt="Multi tenant app" title="Multi tenant app" style="border: 1px solid gray; zoom:70%;">
 
 
