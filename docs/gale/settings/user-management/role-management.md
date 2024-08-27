@@ -984,7 +984,7 @@ The **Role Management Dashboard** on the Settings console displays key informati
 
 To access the dashboard, follow the steps below:
 
-1. Log in to GALE and click **Settings** on the top menu.
+1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE and click **Settings** on the top menu.
 2. Click **Users Management** > **Role Management** on the left menu.
 <img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
 
@@ -1092,15 +1092,15 @@ To add a custom role, follow the steps below:
         * Enable/select the access level for module-wise permissions in the **Enable/Disable agent access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
         * Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
-         * Create Agents
-         * Models 
-         * Playground and Experiments
-         * Integrations
-         * User Management
-         * Security and Control Settings
-         * Manage Guardrail Models
-         * Billing
-         <img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;">       
+          * Create Agents
+          * Models 
+          * Playground and Experiments
+          * Integrations
+          * User Management
+          * Security and Control Settings
+          * Manage Guardrail Models
+          * Billing
+          <img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;">       
 
        * Select the access level for **Models**, **Settings**, **Integrations**, and **User Management** from the following options:
         * **Full**: The users can access all the module permissions (view & edit).
