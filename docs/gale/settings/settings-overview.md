@@ -121,7 +121,7 @@ The following modules and features are supported on the Settings Console:
 <li>Create a copy or duplicate of a system role as a custom role and manage its permissions and access levels.</li>
 <li>Add, delete, edit permissions’ access for, and duplicate custom roles.</li>
 <li>For agent and account role types, assign/unassign permissions and set access levels for various module aspects like agents, models, playgrounds and experiments, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
-<a href="" target="_blank">Learn more</a>.</ul>
+</ul>
 
 <p><strong>Settings</strong></p>
 <ul>
