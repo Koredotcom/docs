@@ -54,8 +54,7 @@ Steps to deploy an agent:
                 * **Set timeout**: The allowed timeout range is 60 seconds to 600 seconds (10 minutes). The default is 180 Seconds (3 minutes). 
                 * **No timeout**: This allows the agent to process the request without a time limit.  
                 <img src="../images/async-mode-configuration.png" alt="Async Mode Configuration" title="Async Mode Configuration" style="border: 1px solid gray; zoom:60%;">
-            4. Click **Save**.
-
+           
         !!! note
 
             Timeout precedence: Agent timeout > Node timeout > Model timeout.

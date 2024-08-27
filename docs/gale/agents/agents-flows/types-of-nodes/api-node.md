@@ -25,7 +25,7 @@ Steps to add and configure the node:
         * **Synchronous**: The allowed range is 5 to 180 seconds (3 minutes). The default is 60 seconds.
         * **Asynchronous**: 
             * **Set timeout**: The allowed range is 30 seconds to 300 seconds (5 minutes). The default is 60 seconds.
-            * **No timeout**: The flow will pause and wait indefinitely for the response from the callback URL. This gives users the flexibility to automate their own processes, like approvals and checks, within their custom workflows before sending the response back. (Ensure to select the same "No timeout" setting for both the API node and the agent to prevent any timeouts.)
+            * **No timeout**: This allows the integration to wait indefinitely for the response without triggering a timeout error. This gives users the flexibility to automate their own processes, like approvals and checks, within their custom workflows before sending the response back. (Ensure to select the same "No timeout" setting for both the API node and the agent to prevent any timeouts.)
 
         The node will trigger a timeout error if the request is not completed within the selected time frame.
 
