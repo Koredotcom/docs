@@ -94,7 +94,8 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
         "settings": [
             "botSettings",
             "botVariables",
-            "ivrSettings"
+            "ivrSettings",
+            "genAIandLLMSettings"
         ],
         "tasks": [
             "botTask",
@@ -102,10 +103,14 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
             "smallTalk"
         ],
         "nlpData": [
-            "nlpSettings",
             "utterances",
             "patterns",
-            "standardResponses"
+            "traits",
+            "rules",
+            "concepts",
+            "synonyms",
+            "standardResponses",
+            "nlpSettings"
         ]
     },
     "subTasks": {
@@ -119,10 +124,7 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
 }'
 ```
 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -182,6 +184,8 @@ Usage:
 <code>             "botVariables",</code>
 <p>
 <code>             "ivrSettings"</code>
+<p>
+<code>             "genAIandLLMSettings"</code>
 <p>
 <code>           ]</code>
 <p>
