@@ -1024,7 +1024,7 @@ You can perform the following actions on the [system-generated roles](./role-man
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>System roles cannot be created, modified, or deleted since the role and its permissions are predefined in the system. However, they can be duplicated as <a href="https://www.w3schools.com" target="_blank">Custom Roles</a> and modified.</p>
+<p>System roles cannot be created, modified, or deleted since the role and its permissions are predefined in the system. However, they can be duplicated as <b>Custom Roles</b> and modified.</p>
 </div>
 
 #### View Role Information
