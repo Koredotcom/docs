@@ -48,7 +48,7 @@ The Filter Responses guardrail allows developers to specify banned words and phr
 
 For example: \b(yep|nah|ugh|meh|huh|dude|bro|yo|lol|rofl|lmao|lmfao)\b
 
-We should another section explaining how do we do it?
+
 
 
 ## Guardrails and Features Support Matrix
