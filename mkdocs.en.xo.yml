@@ -502,6 +502,7 @@ nav:
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Tutorials:
             - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
             - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md

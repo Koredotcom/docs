@@ -65,7 +65,7 @@ Voice Call Properties apply only for the following nodes and message types:
 <img src="../images/timeout_prompts.png" alt="Timeout Prompts" title="Timeout Prompts" style="border: 1px solid gray; zoom:70%;">
 
 
-**Voice Call Settings Field Reference**
+### Voice Call Settings Field Reference
 
 The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
 
