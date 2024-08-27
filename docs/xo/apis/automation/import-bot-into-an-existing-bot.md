@@ -81,7 +81,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 
-## Sample Request for Universal Bot
+## Sample Request for the Universal Bot
 
 ```json
 curl -X POST \
@@ -104,7 +104,7 @@ curl -X POST \
 		"ivrSettings",
 		"botVariables",
 		"ivrSettings",
-    "genAIandLLMSettings"
+        "genAIandLLMSettings"
 	],
 	"options": {
 		"utterances": {
@@ -131,9 +131,6 @@ curl -X POST \
 ```
 
 ## Body Parameters
-
-## Body Parameters
-
 
 <table>
   <tr>
@@ -177,7 +174,7 @@ curl -X POST \
 <p>
 Usage:
 <p>
-<code>"importOptions": {
+<pre>"importOptions": {
 "tasks": [
 "botTask",
 "knowledgeGraph"
@@ -193,7 +190,7 @@ Usage:
 "ivrSettings",
 "genAIandLLMSettings"
 ]
-},</code></td>
+},</pre></td>
 </tr>
   <tr>
    <td><strong>options</strong>
@@ -204,50 +201,17 @@ Usage:
 <p>
 Usage:
 <p>
-<code>"options": 
+<pre>"options": 
 {
 "utterances": {
 "replace": true
 "append":false
  },
-}</code>
+}</pre>
    </td>
   </tr>
 </table>
 
-
-**Universal Bot**
-
-For the Universal bot, the _import_ and the _importOptions_ may differ as shown below:
-
-```json
-"importOptions": {
-	"nlpData": [
-		"training_data",
-		"bot_synonyms",
-		"nlpSettings",
-		"defaultDialog",
-		"standardResponses"
-	],
-	"settings": [
-		"botSettings",
-		"ivrSettings",
-		"botVariables",
-		"ivrSettings"
-	],
-	"options": {
-		"utterances": {
-		"append": true,
-		"replace": false
-		}
-	},
-	"botComponents": [
-		"linkedBots",
-		"smallTalk"
-	],
-	"customDashboard": true
-}
-```
 
 ## Sample Response
 

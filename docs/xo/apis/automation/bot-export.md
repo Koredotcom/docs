@@ -156,42 +156,24 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
    <td>All the bot components are exported by default. If required, you may specify the components to be included for the export.
 <p>
 Usage:
-<p>
-<code>"exportOptions": {</code>
-<p>
-<code>      "tasks": [</code>
-<p>
-<code>             "botTask",</code>
-<p>
-<code>             "knowledgeGraph"</code>
-<p>
-<code>           ],</code>
-<p>
-<code>      "nlpData": [</code>
-<p>
-<code>             "nlpSettings",</code>
-<p>
-<code>             "utterances",</code>
-<p>
-<code>             "standardResponses"</code>
-<p>
-<code>           ],</code>
-<p>
-<code>      "settings": [</code>
-<p>
-<code>             "botSettings",</code>
-<p>
-<code>             "botVariables",</code>
-<p>
-<code>             "ivrSettings"</code>
-<p>
-<code>             "genAIandLLMSettings"</code>
-<p>
-<code>           ]</code>
-<p>
-<code>   },</code>
-   </td>
-   <td>Optional
+<pre>"exportOptions": {
+"tasks": [
+"botTask",
+"knowledgeGraph"
+],
+"nlpData": [
+"nlpSettings",
+"utterances",
+"standardResponses"
+],
+"settings": [
+"botSettings",
+"botVariables",
+"ivrSettings"
+"genAIandLLMSettings"
+]
+},</pre></td>
+<td>Optional
    </td>
   </tr>
   <tr>
@@ -200,18 +182,12 @@ Usage:
    <td>For partial export mention the tasks to be exported.
 <p>
 Usage:
-<p>
-<code>   "subTasks": {</code>
-<p>
-<code>        "dialogs": ["&lt;dialog Name 1>","&lt;dialog Name 2>"],</code>
-<p>
-<code>        "alerts": ["&lt;alert name 1>","&lt;alert name 2>"],</code>
-<p>
-<code>        "actions": ["&lt;action name 1>","&lt;action name 2>"]</code>
-<p>
-<code>    }</code>
-   </td>
-   <td>Optional
+<pre>"subTasks": {
+"dialogs": ["&lt;dialog Name 1>","&lt;dialog Name 2>"],
+"alerts": ["&lt;alert name 1>","&lt;alert name 2>"],
+"actions": ["&lt;action name 1>","&lt;action name 2>"]
+ }</pre></td>
+<td>Optional
    </td>
   </tr>
   <tr>
@@ -221,7 +197,7 @@ Usage:
 <p>
 Usage:
 <p>
-<code>"IncludeDependentTasks": true</code>
+<pre>"IncludeDependentTasks": true</pre>
    </td>
    <td>Optional
    </td>
@@ -233,7 +209,7 @@ Usage:
 <p>
 Usage:
 <p>
-<code>"customDashboards": true</code>
+<pre>"customDashboards": true</pre>
    </td>
    <td>Optional
    </td>
@@ -245,7 +221,7 @@ Usage:
 <p>
 Usage:
 <p>
-<code>"allTasks": true</code>
+<pre>"allTasks": true</pre>
    </td>
    <td>Optional
    </td>
