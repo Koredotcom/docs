@@ -29,14 +29,14 @@ The Search AI Node allows users to create meta filters with specific rules, enha
 
 To configure the component properties, follow the below steps:
 
-1. On the **Component Properties** tab, enter a **Name** and a **Display Name** for Search AI  node. Node names cannot have spaces.
-2. Under **Search Configuration** section, users have the option to determine how their search query is formulated. They can choose one of the following:
+1. On the **Component Properties** tab, enter a **Name** and a **Display Name** for the Search AI  node. Node names cannot have spaces.
+2. Under the **Search Configuration** section, users have the option to determine how their search query is formulated. They can choose one of the following:
     1. **Last User Input**: This option is set to the user's most recent response and is used as the search query by default.
     2. **Custom**: Users can provide either static or dynamic values, allowing them to set custom data or variables as the search query.
 
     <img src="../images/search_ai_search_configuration.png" alt="search_configuration" title="search_configuration" style="border:1px solid gray;zoom:70%;">
 
-3. Under **Filters** section, users can define meta filters within the node to refine the search scope based on specific criteria such as topics, document categories, or custom-defined tags. Click **+ Add Filter** to add a new filter.
+3. Under the **Filters** section, users can define meta filters within the node to refine the search scope based on specific criteria such as topics, document categories, or custom-defined tags. Click **+ Add Filter** to add a new filter.
 
     <img src="../images/search_ai_add_filter.png" alt="add filter" title="add_filter" style="border:1px solid gray;zoom:70%;">
  
@@ -54,9 +54,9 @@ To configure the component properties, follow the below steps:
         <img src="../images/search_ai_filters.png" alt="filters" title="filters" style="border:1px solid gray;zoom:70%;">
  
 
-4. Under **Results Configuration** section, user can configure how the results should be rendered:
+4. Underthe **Results Configuration** section, the user can configure how the results should be rendered:
     7. **Generate Answer**:
-        1. **Present Response to User :** This option is selected by default. It displays the response directly to the user. Users can manage the response by clicking **Manage Responses** . When selected, the user is shown the standard response template used for search responses.
+        1. **Present Response to User:** This option is selected by default. It displays the response directly to the user. Users can manage the response by clicking **Manage Responses**. When selected, the user is shown the standard response template used for search responses.
         2. **Store Response in Context Object**: If selected, the user can access the entire payload in the context object  “context.nodename” and modify it later in subsequent nodes.
     8. **Return Qualified Chunks**: This option allows user to receive only the segments of data that meet the specified criteria. 
 
@@ -76,7 +76,7 @@ To configure the component properties, follow the below steps:
 Use the Instance Properties to define any user tags that you want to set.
 
 1. On the Search AI node properties panel, click the **Instance Properties** tab.
-2. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service calls and decide how the  app can respond or choose an alternate path when timeout occurs. You can configure the following settings:
+2. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service calls and decide how the app can respond or choose an alternate path when the timeout occurs. You can configure the following settings:
     1. **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **60 Seconds.** The default value is 20 Seconds.
     2. **Timeout error handling**: Choose how the app should respond when the timeout occurs.
         * **Close the Task and trigger Task Execution Failure Event**, or
