@@ -15,7 +15,7 @@ The Search AI Node allows users to create meta filters with specific rules, enha
 2. Click **Gen AI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
 3. The **Search AI Node** window is displayed with the **Component Properties** tab selected by default.
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/search_ai_adding_node.png" alt="adding_node" title="adding_node" style="border:1px solid gray;zoom:70%;">
 
 
 ## Configure the Node
@@ -30,35 +30,42 @@ The Search AI Node allows users to create meta filters with specific rules, enha
 To configure the component properties, follow the below steps:
 
 1. On the **Component Properties** tab, enter a **Name** and a **Display Name** for Search AI  node. Node names cannot have spaces.
-2. Under **Search Configuration **section, users have the option to determine how their search query is formulated. They can choose one of the following:
+2. Under **Search Configuration** section, users have the option to determine how their search query is formulated. They can choose one of the following:
     1. **Last User Input**: This option is set to the user's most recent response and is used as the search query by default.
     2. **Custom**: Users can provide either static or dynamic values, allowing them to set custom data or variables as the search query.
 
-![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/search_ai_search_configuration.png" alt="search_configuration" title="search_configuration" style="border:1px solid gray;zoom:70%;">
 
-3. Under **Filters** section, users can define meta filters within the node to refine the search scope based on specific criteria such as topics, document categories, or custom-defined tags. Click **+ Add Filter **to add a new filter.
+3. Under **Filters** section, users can define meta filters within the node to refine the search scope based on specific criteria such as topics, document categories, or custom-defined tags. Click **+ Add Filter** to add a new filter.
 
-![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/search_ai_add_filter.png" alt="add filter" title="add_filter" style="border:1px solid gray;zoom:70%;">
  
 Filters consist of the following components:
-    3. **Field Name**: A text box where users can specify the field name.
-    4. **Condition**: A dropdown menu with supported operators, including "contains," "doesNotContain," "equals," "doesNotEqual," "exists," and "doesNotExist."
-    5. **Field Value**: Supports both static and dynamic values for filtering.
-    6. **“AND” or “OR”**: Users can add multiple filters with logical conditions, which will be sent as an array.
 
-![alt_text](images/image4.png "image_tooltip")
+    1. **Field Name**: A text box where users can specify the field name.
 
-4. Under** Results Configuration **section, user can configure how the results should be rendered:
+    2. **Condition**: A dropdown menu with supported operators, including "contains," "doesNotContain," "equals," "doesNotEqual," "exists," and "doesNotExist."
+
+    3. **Field Value**: Supports both static and dynamic values for filtering.
+
+    4. **“AND” or “OR”**: Users can add multiple filters with logical conditions, which will be sent as an array.
+
+
+<img src="../images/search_ai_filters.png" alt="filters" title="filters" style="border:1px solid gray;zoom:70%;">
+ 
+
+4. Under **Results Configuration** section, user can configure how the results should be rendered:
     7. **Generate Answer**:
-        1. ** Present Response to User : **This option is selected by default. It displays the response directly to the user. Users can manage the response by clicking **Manage Responses** . When selected, the user is shown the standard response template used for search responses.
+        1. **Present Response to User :** This option is selected by default. It displays the response directly to the user. Users can manage the response by clicking **Manage Responses** . When selected, the user is shown the standard response template used for search responses.
         2. **Store Response in Context Object**: If selected, the user can access the entire payload in the context object  “context.nodename” and modify it later in subsequent nodes.
     8. **Return Qualified Chunks**: This option allows user to receive only the segments of data that meet the specified criteria. 
 
-![alt_text](images/image5.png "image_tooltip")
+    <img src="../images/search_ai_result_configuration.png" alt="result_configuration" title="Result_configuration" style="border:1px solid gray;zoom:70%;">
 
 5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the app. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespaces](../../../../app-settings/managing-namespace.md)
 
-![alt_text](images/image6.png "image_tooltip")
+ <img src="../images/search_ai_component_properties.png" alt="component_properties" title="component properties" style="border:1px solid gray;zoom:70%;">
+ 
 
 ### Instance Properties
 
@@ -76,7 +83,8 @@ Use the Instance Properties to define any user tags that you want to set.
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
 3. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags).
 
-![alt_text](images/image7.png "image_tooltip")
+ <img src="../images/search_ai_instance_properties.png" alt="instance_properties" title="instance_properties" style="border:1px solid gray;zoom:70%;">
+ 
 
 ### Connections Properties
 
@@ -87,4 +95,4 @@ Use the Instance Properties to define any user tags that you want to set.
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions)
 
-![alt_text](images/image8.png "image_tooltip")
+ <img src="../images/search_ai_connections_properties.png" alt="connections_properties" title="connections_properties" style="border:1px solid gray;zoom:70%;">
