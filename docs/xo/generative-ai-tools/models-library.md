@@ -4,7 +4,7 @@
 
 You must configure the integration with a pre-built or custom LLM or Kore.ai XO GPT Module to use LLM and Generative AI features.
 
-Before starting the integration, view the model and feature support matrix for the [Co-Pilot](co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversation features](./dynamic-conversations-features.md#model-and-feature-support-matrix).
+Review the model and feature support matrix for the [Co-Pilot features](co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversation features](./dynamic-conversations-features.md#model-and-feature-support-matrix).
 
 ## Pre-built LLM Integration
 
