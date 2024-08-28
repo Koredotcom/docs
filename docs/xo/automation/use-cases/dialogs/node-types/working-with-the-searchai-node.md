@@ -40,7 +40,7 @@ To configure the component properties, follow the below steps:
 
     <img src="../images/search_ai_add_filter.png" alt="add filter" title="add_filter" style="border:1px solid gray;zoom:70%;">
  
-Filters consist of the following components:
+    Filters consist of the following components:
 
     1. **Field Name**: A text box where users can specify the field name.
 
@@ -51,7 +51,7 @@ Filters consist of the following components:
     4. **“AND” or “OR”**: Users can add multiple filters with logical conditions, which will be sent as an array.
 
 
-<img src="../images/search_ai_filters.png" alt="filters" title="filters" style="border:1px solid gray;zoom:70%;">
+        <img src="../images/search_ai_filters.png" alt="filters" title="filters" style="border:1px solid gray;zoom:70%;">
  
 
 4. Under **Results Configuration** section, user can configure how the results should be rendered:
@@ -60,7 +60,7 @@ Filters consist of the following components:
         2. **Store Response in Context Object**: If selected, the user can access the entire payload in the context object  “context.nodename” and modify it later in subsequent nodes.
     8. **Return Qualified Chunks**: This option allows user to receive only the segments of data that meet the specified criteria. 
 
-    <img src="../images/search_ai_result_configuration.png" alt="result_configuration" title="Result_configuration" style="border:1px solid gray;zoom:70%;">
+     <img src="../images/search_ai_result_configuration.png" alt="result_configuration" title="Result_configuration" style="border:1px solid gray;zoom:70%;">
 
 5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the app. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespaces](../../../../app-settings/managing-namespace.md)
 
