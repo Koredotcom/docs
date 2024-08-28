@@ -246,7 +246,7 @@ The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-
 
 #### Change Expired Password
 
-When your password expires, the system redirects to the following page where you can change the expired password.
+When your password expires after 90 days, the system redirects to the following page where you can change the expired password.
 
 <img src="../images/change-password-screen.png" alt="change password" title="change password" style="border: 1px solid gray; zoom:75%;">
 
