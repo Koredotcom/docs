@@ -148,6 +148,22 @@ The following table displays the Co-Pilot features and the supported products.
 | NLP Batch Test Case Suggestions         | ✅            |     ❌     |      ❌   |
 | Training Utterance Suggestions          | ✅            |     ❌     |    ❌     |
 
+=== "Automation AI"
+
+    * Automatic Dialog Generation
+    * Conversation Test Case Suggestions
+    * Conversation Summary
+    * NLP Batch Test Case Suggestions
+    * Training Utterance Suggestions
+
+=== "Search AI"
+
+    * Generating Similar Answer Suggestions
+
+=== "Agent AI"
+
+    * Generating Opposite Utterance Suggestions
+    * Generating Similar Utterance Suggestions
 
 
 ## Model and Feature Support Matrix
