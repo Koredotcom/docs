@@ -44,7 +44,7 @@ To configure the component properties, follow the below steps:
 
     1. **Field Name**: A text box where users can specify the field name.
 
-    2. **Condition**: A dropdown menu with supported operators, including "contains," "doesNotContain," "equals," "doesNotEqual," "exists," and "doesNotExist."
+    2. **Condition**: A dropdown menu with supported operators, including **contains,** **equals to,** and **Exist.**
 
     3. **Field Value**: Supports both static and dynamic values for filtering.
 
