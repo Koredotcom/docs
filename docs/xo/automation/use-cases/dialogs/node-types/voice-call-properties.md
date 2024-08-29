@@ -44,9 +44,6 @@ This document details the voice call properties and how they vary across various
 
 
 
-
-
-
 ## Dialog Node Settings
 
 On the Voice Call Properties panel for a node, you can enter node-specific prompts, grammar, as well as parameters for call-flow behavior such as time-out and retries.
@@ -68,7 +65,7 @@ Voice Call Properties apply only for the following nodes and message types:
 <img src="../images/timeout_prompts.png" alt="Timeout Prompts" title="Timeout Prompts" style="border: 1px solid gray; zoom:70%;">
 
 
-**Voice Call Settings Field Reference**
+### Voice Call Settings Field Reference
 
 The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
 
@@ -101,7 +98,7 @@ The following sections provide detailed descriptions of each IVR setting, includ
 | Recording | Define the state of recording to be initiated. The default value is **Stop**. | Entity,<br>Confirmation,<br> Message,<br>and GenAI nodes | IVR |
 
 
-Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
+Below is a demo of the IVR Properties section of a Dialog Task node.
 
 <img src="../images/ivr-properties.gif" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
 

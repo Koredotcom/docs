@@ -31,8 +31,6 @@ Setting up an entity node in a dialog task involves the following steps:
 
 ### Component Properties
 
-The Entity window allows you to configure the General Settings, User, and Error Prompts.
-
 !!! Note
 
     The configurations you set up or modify in this section are reflected in all other dialog tasks that use this node.
@@ -100,8 +98,8 @@ Use the Instance Properties to determine whether to make the entity value mandat
 1. On the Entity window, click the **Instance Properties** tab.
 2. Under the **User Input** section, select one of the following options:
     * **Mandatory**: This entity is required, and users must provide a valid entry before proceeding with the dialog flow. A prompt is displayed for the user to resolve in case ambiguous values for the entity are detected in the user utterance.
-        * You can configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 10, the default being 5.
-        * Allowed Retries indicates that the Platform re-prompts the user for the correct input if the input provided does not match the configured entity type. For example, if the user inputs an email ID for the zip code entity type, the system prompts the user up to 10 times until the user provides the zip code. Once the 10 retries are exhausted, the **Behavior on Exceeding Retries** flow is initiated.
+        * You can configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 5, the default being 5.
+        * Allowed Retries indicates that the Platform re-prompts the user for the correct input if the input provided does not match the configured entity type. For example, if the user inputs an email ID for the zip code entity type, the system prompts the user up to 5 times until the user provides the zip code. Once the 5 retries are exhausted, the **Behavior on Exceeding Retries** flow is initiated.
         * For voice channels, when a user input does not match the entity type, and a Node Grammar is defined, the Platform applies the retry count set for “**No Match**” under **Voice Call Properties**. Otherwise, the Platform follows the retry count set for “**Allowed Retries**” under Instance Properties.
         * Further, you can define the VA’s **Behavior on Exceeding Retries**, this can be set to trigger _End of Dialog_ or _Transition to a Node_. This would result in the creation of a **Connection Rule** called _Behavior on Exceeding Retries_. The message displayed to the user on exceeding retries can be customized from the Standard Responses. [Read more here](../../../../intelligence/conversation-management/standard-responses/){:target="_blank"}.
 

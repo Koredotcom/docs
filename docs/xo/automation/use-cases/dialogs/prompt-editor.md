@@ -61,10 +61,6 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
             * Button and Quick Reply templates are not available for every channel.
             * You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
 
-    5. You can format the prompt message using the formatting options for **Text** messages.
-
-        <img src="../images/prompt-editor-text-prompt-formatting.png" alt="Formatting options for Text prompt" title="Formatting options for Text prompt" style="border:1px solid gray;zoom:70%;">
-
 5. Click **Save** after composing the message.
 
 To add any more VA responses, repeat from step 4b.
@@ -304,7 +300,7 @@ print("Visibility: " + context.humidity+"\n");
 print("Humidity: " + context.visibility+"\n");
 ```
 
-For more information, see [Using Session and Context Variables in Tasks](../../using-session-and-context-variables){:target="_blank"}.
+For more information, see [Using Session and Context Variables in Tasks](../../using-session-and-context-variables).
 
 ## Channel-Specific User Prompts
 

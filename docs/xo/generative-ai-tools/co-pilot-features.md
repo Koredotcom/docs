@@ -133,21 +133,25 @@ Follow these steps:
 
 ## Product and Feature Support Matrix
 
-The following table displays the Co-Pilot features and the supported products.
+Select the product to view the supported features.
 
-(✅ Supported | ❌ Not supported)
 
-| Feature                                 | Automation AI | Search AI | Agent AI |
-|:-----------------------------------|:------------:|:------------:|:------------:|
-| Automatic Dialog Generation             | ✅            |    ❌      |     ❌    |
-| Conversation Test Case Suggestions      | ✅            |      ❌    |      ❌   |
-| Conversation Summary                    | ✅            |      ❌    |      ❌   |
-| Generating Opposite Utterance Suggestions |      ❌      |    ❌    |     ✅     |
-| Generating Similar Answer Suggestions   |        ❌      |     ✅  |      ❌      |
-| Generating Similar Utterance Suggestions|      ❌        |    ❌   |       ✅    |
-| NLP Batch Test Case Suggestions         | ✅            |     ❌     |      ❌   |
-| Training Utterance Suggestions          | ✅            |     ❌     |    ❌     |
+=== "Automation AI"
 
+    * Automatic Dialog Generation
+    * Conversation Test Case Suggestions
+    * Conversation Summary
+    * NLP Batch Test Case Suggestions
+    * Training Utterance Suggestions
+
+=== "Search AI"
+
+    * Generating Similar Answer Suggestions
+
+=== "Agent AI"
+
+    * Generating Opposite Utterance Suggestions
+    * Generating Similar Utterance Suggestions
 
 
 ## Model and Feature Support Matrix

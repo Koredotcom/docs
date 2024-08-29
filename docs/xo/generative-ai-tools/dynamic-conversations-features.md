@@ -144,21 +144,25 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 ## Product and Feature Support Matrix
 
-The following table displays the Dynamic Conversation features and the supported products. 
+Select the product to view the supported features.
 
-(✅ Supported | ❌ Not supported)
+=== "Automation AI"
 
-| Feature                     | Automation AI | Search AI | Agent AI |
-|:-------------------------|:------------:|:------------:|:------------:|
-| Agent Response Rephrasing   |      ❌       |   ❌      |    ✅      |
-| Answer Generation           |       ❌     | ✅        |    ❌     |
-| GenAI Node                  | ✅            |      ❌    |  ❌       |
-| GenAI Prompt                | ✅            |        ❌  |    ❌     |
-| Repeat Responses            | ✅            |    ❌      |    ❌     |
-| Rephrase Dialog Responses   | ✅            |    ❌      |      ❌   |
-| Rephrase User Query         | ✅            |    ❌      |   ❌      |
-| Vector Generation           |        ❌      | ✅        |   ❌      |
-| Zero-shot ML Model          | ✅            |     ❌     |    ❌     |
+    * GenAI Node
+    * GenAI Prompt
+    * Repeat Responses
+    * Rephrase Dialog Responses
+    * Rephrase User Query
+    * Zero-shot ML Model
+
+=== "Search AI"
+
+    * Answer Generation
+    * Vector Generation
+
+=== "Agent AI"
+
+    * Agent Response Rephrasing
 
 
 

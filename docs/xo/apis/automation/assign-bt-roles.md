@@ -1,4 +1,4 @@
-# Assign BT Roles API
+# Assign Bot Roles API
 
 To assign a bot role to a set of users in a specific bot.
 
@@ -78,8 +78,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 
 ```json
-curl -X POST \
-https://{{host}}/api/public/btroles/assignments/ \
+curl -X POST 'https://{{host}}/api/public/btroles/assignments/' \
 -H 'Content-Type: application/json' \
 -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 -d '[{
