@@ -163,103 +163,76 @@ After creating an Experience Flow, you must attach a DID Number to this flow. (S
 
 This section explains the process of fetching the details and summary of the conversation between the bot and the customer.
 
-Steps to fetch Conversation Details and Summary:
+**Steps**
 
-1. Sign in to **SmartAssist**.
+1. Sign in to **UXO**.
+2. Go to **Contact Center AI** > **Analytics** > **Contact Center** > **Interactions** and ensure there are call records.  
+<img src="../images/contact-center-interactions-15.png" alt="contact-center-interactions" title="contact-center-interactions" style="border: 1px solid gray; zoom:80%;">
 
-2. Go to **Dashboard** > **Interactions** and ensure there are call records.  
-<img src="../images/dashboard-interactions-15.png" alt="dashboard-interactions" title="dashboard-interactions" style="border: 1px solid gray; zoom:80%;">
+3. Go to **Settings** > **App Settings** > **Dev Tools**, and click **API Scopes**.  
+<img src="../images/api-scopes-16.png" alt="api-scopes" title="api-scopes" style="border: 1px solid gray; zoom:80%;">
 
-3. Sign in to **[SmartAssist botbuilder](https://smartassist.kore.ai/botbuilder)** using the same credentials.
+4. Click **+ New Mapping**.
+5. Select an **app name** under the **JWT App** list.  
+<img src="../images/jwt-app-app-name-17.png" alt="jwt-app-app-name" title="jwt-app-app-name" style="border: 1px solid gray; zoom:80%;">
 
-4. Click the **Instance Bot**.  
+6. Enable the **Chat History** option under **Automation**.
+7. Click **Save**.
+8. Go to **Generative AI** > **Models Library**, locate **Kore.ai XO GPT**, and click **Enable Now.**  
+<img src="../images/enable-koreai-xo-gpt-18.png" alt="enable-koreai-xo-gpt" title="enable-koreai-xo-gpt" style="border: 1px solid gray; zoom:80%;">
 
-    !!! note
-        You can identify the instance bot by its unique symbol and matching name with the organization. In the above screenshot, Kore.ai bot is the instance bot as it matches with the organization name and has a unique symbol.
-
-5. Go to **API Scopes**. To do so:
-
-    - 5.1. Click the **search** button and enter **API Scopes** in it:  
-    <img src="../images/api-scopes-16.png" alt="api-scopes" title="api-scopes" style="border: 1px solid gray; zoom:80%;">
-
-    **Or**
-
-    - 5.2. Click **Deploy** > **APIs & Extensions** > **API Scopes**.  
-    <img src="../images/apis-and-extensions-api-scopes-17.png" alt="apis-and-extensions-api-scopes" title="apis-and-extensions-api-scopes" style="border: 1px solid gray; zoom:80%;">
-
-6. Click **Create API Scope**.  
-<img src="../images/create-api-scopes-18.png" alt="create-api-scopes" title="create-api-scopes" style="border: 1px solid gray; zoom:80%;">
-
-7. Enter the **Instance Bot** name in the **App** field and select the **Chat History** option.  
-<img src="../images/new-api-scope-mapping-19.png" alt="new-api-scope-mapping" title="new-api-scope-mapping" style="border: 1px solid gray; zoom:80%;">
-
-8. Click **Save**.
-
-9. Go to **Build** > **Natural Language** > **Generative AI & LLM**, locate **Kore.ai XO GPT**, and click **Enable Now**.  
-<img src="../images/generative-ai-and-llm-20.png" alt="generative-ai-and-llm" title="generative-ai-and-llm" style="border: 1px solid gray; zoom:80%;">
-
-10. On the **Kore.ai XO GPT** page, select:  
+9. On the **Kore.ai XO GPT** page, select:
     
-    - 10.1. Models.
+    9.1 Models.
 
-    - 10.2. Fine-tuned model for Summarizing Conversation.
+    9.2 Fine-tuned model for Summarizing Conversation.
+
+    9.3 Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
+    <img src="../images/llm-genai-policy-guidelines-19.png" alt="llm-gen-policy-guidelines" title="llm-gen-policy-guidelines" style="border: 1px solid gray; zoom:80%;">
+
+10. Click **Save**.
+11. Go to **Generative AI** > **GenAI Features**, and click the **Co-Pilot** section.
+12. Enable **Conversation Summary**. To enable, select a model from the **Select Model** list, and then click the **enable** toggle.
+13. Go to **Deploy** > **Publish** and click **Proceed** to publish your bot.  
+<img src="../images/publish-your-bot-20.png" alt="publish-your-bot" title="publish-your-bot" style="border: 1px solid gray; zoom:80%;">
+
+14. Enter a comment in the **Comments** box, and click **Confirm**.  
+<img src="../images/confirm-publishing-your-bot-21.png" alt="confirm-publishing-your-bot" title="confirm-publishing-your-bot" style="border: 1px solid gray; zoom:80%;">
+
+    14.1 Close the message that confirms publishing of your Virtual Assistant.  
+    <img src="../images/closing-va-publishing-confirmation-message-22.png" alt="closing-va-publishing-confirmation-message" title="closing-va-publishing-confirmation-message" style="border: 1px solid gray; zoom:80%;">
+
+15. Copy the **curl** from the [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/).
+16. Go to **Postman**, paste the **curl** copied from the API, and then:
+
+    16.1 Replace the **botID** with the **Bot ID** value copied from **UXO**. \
+Follow these steps to get the **botID**:
+        
+    16.1.1 Sign in to **UXO**.
     
-    - 10.3. Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
-    <img src="../images/koreai-xo-gpt-21.png" alt="koreai-xo-gpt" title="koreai-xo-gpt" style="border: 1px solid gray; zoom:80%;">
+    16.1.2 Go to **Contact Center AI** > **Flows & Channels** > **Digital**.  
+        <img src="../images/contact-center-flowsandchannels-digital-23.png" alt="contact-center-flowsandchannels-digital" title="contact-center-flowsandchannels-digital" style="border: 1px solid gray; zoom:80%;">
 
-11. Click **Save**.
-
-12. Go to the **Co-Pilot** section and enable **Conversation Summary**. To enable, select a model from the **Select Model** list and then click the **enable** toggle.  
-<img src="../images/llm-integration-22.png" alt="llm-integration" title="llm-integration" style="border: 1px solid gray; zoom:80%;">  
-<img src="../images/conversation-summary-23.png" alt="conversation-summary" title="conversation-summary" style="border: 1px solid gray; zoom:80%;">
-
-13. Go to **Deploy** and click **Publish** to publish your bot.  
-<img src="../images/publish-bot-24.png" alt="publish-bot" title="publish-bot" style="border: 1px solid gray; zoom:80%;">
-
-14. Click **Proceed**.  
-<img src="../images/proceed-with-publish-25.png" alt="proceed-with-publish" title="proceed-with-publish" style="border: 1px solid gray; zoom:80%;">
-
-15. Enter a comment in the **Comment** box, and click **Confirm**.  
-<img src="../images/comment-and-confirm-26.png" alt="comment-and-confirm" title="comment-and-confirm" style="border: 1px solid gray; zoom:80%;">
-    - 15.1. Close the message that confirms publishing of your Virtual Assistant.  
-    <img src="../images/publish-confirmation-27.png" alt="publish-confirmation" title="publish-confirmation" style="border: 1px solid gray; zoom:80%;">
-
-16. Copy the **curl** from the [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/).
-
-17. Go to **Postman**, paste the **curl** copied from the API, and then:
-
-    17.1. Replace the **botID** with the **Bot ID** value copied from **SmartAssist**. 
+    16.1.3 Click **Web/Mobile Client** under **Configured**.
     
-    Follow these steps to get the **botID**:
+    16.1.4 On the **Web/Mobile Client** configuration page, click to expand the **JWT** **App Details** section.  
+        <img src="../images/expand-jwt-app-details-24.png" alt="expand-jwt-app-details" title="expand-jwt-app-details" style="border: 1px solid gray; zoom:80%;">
 
-     - 17.1.1. Sign in to **SmartAssist**.
-
-     - 17.1.2. Go to **Configuration** > **System Setup** > **Channels**.
-
-     - 17.1.3. Click **Chat** > **Web/Mobile Client**.  
-        <img src="../images/chat-web-mobile-client-28.png" alt="chat-web-mobile-client" title="chat-web-mobile-client" style="border: 1px solid gray; zoom:80%;">
-
-     - 17.1.4. On the **Web/Mobile Client** configuration page, click to expand the **App Details** section.  
-        <img src="../images/api-details-29.png" alt="api-details" title="api-details" style="border: 1px solid gray; zoom:80%;">
-
-     - 17.1.5. Scroll down to the **Bot ID** section, and click the **Copy** button to copy the botID value.  
-        <img src="../images/copy-botid-value-30.png" alt="
-        " title="
-        " style="border: 1px solid gray; zoom:80%;">
-
-    17.2. Copy the **sessionID** from **SmartAssist**. 
-     Follow these steps to get the **sessionID**:
-
-     - 17.2.1. Sign in to **SmartAssist**.
-
-     - 17.2.2. Go to **Dashboard** > **Interactions**.
-
-     - 17.2.3. Click the log for which you want to get the details.  
-        <img src="../images/get-conversation-details-31.png" alt="get-conversation-details" title="get-conversation-details" style="border: 1px solid gray; zoom:80%;">
+    16.1.5 Scroll down to the **Bot ID** section, and click the **Copy** button to copy the **botID** value.
+  
+   16.2 Copy the **sessionID** from **UXO**.  
+   **Follow these steps** to get the **sessionID**:
+    
+16.2.1 Sign in to **UXO**.
+    
+16.2.2 Go to **Contact Center AI** > **Analytics** > **Contact Center** > **Interactions**.
+    
+   16.2.3 Click the log for which you want to get the details.  
+        <img src="../images/interaction-log-details-25.png" alt="interaction-log-details" title="interaction-log-details" style="border: 1px solid gray; zoom:80%;">
  
-     - 17.2.4. On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
-        <img src="../images/sessionid-details-32.png" alt="sessionid-details" title="sessionid-details" style="border: 1px solid gray; zoom:80%;">
+   16.2.4 On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
+        <img src="../images/insights-to-logs-sessionid-26.png" alt="insights-to-logs-sessionid" title="insights-to-logs-sessionid" style="border: 1px solid gray; zoom:80%;">
 
-    17.3. Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
+   16.3 Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
 
-18. Run the modified **curl** to get the conversation details and summary of a session.
+17. Run the modified **curl** to get the conversation details and summary of a session.
