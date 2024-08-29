@@ -183,11 +183,11 @@ This section explains the process of fetching the details and summary of the con
 
 9. On the **Kore.ai XO GPT** page, select:
     
-    9.1 Models.
+    9.1. Models.
 
-    9.2 Fine-tuned model for Summarizing Conversation.
+    9.2. Fine-tuned model for Summarizing Conversation.
 
-    9.3 Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
+    9.3. Please read through the LLM & Generative Policy guidelines and provide your consent to enable the Integration.  
     <img src="../images/llm-genai-policy-guidelines-19.png" alt="llm-gen-policy-guidelines" title="llm-gen-policy-guidelines" style="border: 1px solid gray; zoom:80%;">
 
 10. Click **Save**.
@@ -208,31 +208,31 @@ This section explains the process of fetching the details and summary of the con
     16.1 Replace the **botID** with the **Bot ID** value copied from **UXO**. \
 Follow these steps to get the **botID**:
         
-    16.1.1 Sign in to **UXO**.
+     16.1.1 Sign in to **UXO**.
     
-    16.1.2 Go to **Contact Center AI** > **Flows & Channels** > **Digital**.  
+     16.1.2 Go to **Contact Center AI** > **Flows & Channels** > **Digital**.  
         <img src="../images/contact-center-flowsandchannels-digital-23.png" alt="contact-center-flowsandchannels-digital" title="contact-center-flowsandchannels-digital" style="border: 1px solid gray; zoom:80%;">
 
-    16.1.3 Click **Web/Mobile Client** under **Configured**.
+     16.1.3 Click **Web/Mobile Client** under **Configured**.
     
-    16.1.4 On the **Web/Mobile Client** configuration page, click to expand the **JWT** **App Details** section.  
+     16.1.4 On the **Web/Mobile Client** configuration page, click to expand the **JWT** **App Details** section.  
         <img src="../images/expand-jwt-app-details-24.png" alt="expand-jwt-app-details" title="expand-jwt-app-details" style="border: 1px solid gray; zoom:80%;">
 
-    16.1.5 Scroll down to the **Bot ID** section, and click the **Copy** button to copy the **botID** value.
+     16.1.5 Scroll down to the **Bot ID** section, and click the **Copy** button to copy the **botID** value.
   
-   16.2 Copy the **sessionID** from **UXO**.  
-   **Follow these steps** to get the **sessionID**:
+    16.2 Copy the **sessionID** from **UXO**.  
+   Follow these steps to get the **sessionID**:
     
-16.2.1 Sign in to **UXO**.
+     16.2.1 Sign in to **UXO**.
     
-16.2.2 Go to **Contact Center AI** > **Analytics** > **Contact Center** > **Interactions**.
+     16.2.2 Go to **Contact Center AI** > **Analytics** > **Contact Center** > **Interactions**.
     
-   16.2.3 Click the log for which you want to get the details.  
+     16.2.3 Click the log for which you want to get the details.  
         <img src="../images/interaction-log-details-25.png" alt="interaction-log-details" title="interaction-log-details" style="border: 1px solid gray; zoom:80%;">
  
-   16.2.4 On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
+     16.2.4 On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
         <img src="../images/insights-to-logs-sessionid-26.png" alt="insights-to-logs-sessionid" title="insights-to-logs-sessionid" style="border: 1px solid gray; zoom:80%;">
 
-   16.3 Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
+    16.3 Generate and copy the **JWT token** by following [this document](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
 
 17. Run the modified **curl** to get the conversation details and summary of a session.
