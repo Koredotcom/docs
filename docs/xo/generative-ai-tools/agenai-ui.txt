@@ -42,5 +42,35 @@
         
         
        
-         
+         The following table displays the Co-Pilot features and the supported products.
+
+(✅ Supported | ❌ Not supported)
+
+| Feature                                 | Automation AI | Search AI | Agent AI |
+|:-----------------------------------|:------------:|:------------:|:------------:|
+| Automatic Dialog Generation             | ✅            |    ❌      |     ❌    |
+| Conversation Test Case Suggestions      | ✅            |      ❌    |      ❌   |
+| Conversation Summary                    | ✅            |      ❌    |      ❌   |
+| Generating Opposite Utterance Suggestions |      ❌      |    ❌    |     ✅     |
+| Generating Similar Answer Suggestions   |        ❌      |     ✅  |      ❌      |
+| Generating Similar Utterance Suggestions|      ❌        |    ❌   |       ✅    |
+| NLP Batch Test Case Suggestions         | ✅            |     ❌     |      ❌   |
+| Training Utterance Suggestions          | ✅            |     ❌     |    ❌     |
+
+The following table displays the Dynamic Conversation features and the supported products. 
+
+(✅ Supported | ❌ Not supported)
+
+| Feature                     | Automation AI | Search AI | Agent AI |
+|:-------------------------|:------------:|:------------:|:------------:|
+| Agent Response Rephrasing   |      ❌       |   ❌      |    ✅      |
+| Answer Generation           |       ❌     | ✅        |    ❌     |
+| GenAI Node                  | ✅            |      ❌    |  ❌       |
+| GenAI Prompt                | ✅            |        ❌  |    ❌     |
+| Repeat Responses            | ✅            |    ❌      |    ❌     |
+| Rephrase Dialog Responses   | ✅            |    ❌      |      ❌   |
+| Rephrase User Query         | ✅            |    ❌      |   ❌      |
+| Vector Generation           |        ❌      | ✅        |   ❌      |
+| Zero-shot ML Model          | ✅            |     ❌     |    ❌     |
+
          
