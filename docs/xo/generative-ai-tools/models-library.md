@@ -20,7 +20,9 @@ Steps to configure a pre-built LLM:
 1. Go to **Generative AI Tools** > **Models Library**.
 <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../images/azure11.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;">   
+<img src="./images/azure11.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;">   
+    
+
 
 2. Choose the LLM you want to configure.
     1. Steps to configure Azure OpenAI:
