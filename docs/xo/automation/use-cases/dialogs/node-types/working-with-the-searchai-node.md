@@ -57,7 +57,7 @@ To configure the component properties, follow the below steps:
 4. Underthe **Results Configuration** section, the user can configure how the results should be rendered:
     7. **Generate Answer**:
         1. **Present Response to User:** This option is selected by default. It displays the response directly to the user. Users can manage the response by clicking **Manage Responses**. When selected, the user is shown the standard response template used for search responses.
-        2. **Store Response in Context Object**: If selected, the user can access the entire payload in the context object  “context.nodename” and modify it later in subsequent nodes.
+        2. **Store Response in Context Object**: If selected, the user can access the entire payload in the context object  “context.SearchAINode.nodename” and modify it later in subsequent nodes.
     8. **Return Qualified Chunks**: This option allows user to receive only the segments of data that meet the specified criteria. 
 
      <img src="../images/search_ai_result_configuration.png" alt="result_configuration" title="Result_configuration" style="border:1px solid gray;zoom:70%;">
