@@ -25,8 +25,7 @@ Steps to configure a pre-built LLM:
 2. Choose the LLM you want to configure.
     1. Steps to configure Azure OpenAI:
         1. Click **Configure Now** for Azure OpenAI.
-            <img src="../images/llm-integration(12.1).png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
-         
+            <img src="../images/llm-integration-azure.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
         2. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter **Deployment ID**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     2. Steps to configure OpenAI:
