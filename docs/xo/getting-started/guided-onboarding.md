@@ -13,7 +13,10 @@ After signing up, users are guided through the onboarding process as follows:
     * Build your AI-native Contact Center  
     <img src="../images/accplatform(19).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-4. Select your onboarding experience - **Guided Onboarding** is recommended and pre-selected.  
+4. Select one of the following options to choose your onboarding experience.
+    * Guided Onboarding 
+    * Custom Setup
+    **Guided Onboarding** is recommended and pre-selected. 
 <img src="../images/accplatform(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 5. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.
