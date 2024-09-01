@@ -196,6 +196,28 @@ The following table displays the Co-Pilot features and the supported models.
     <td>✅</td>
   </tr>
   <tr>
+    <td>Azure OpenAI – GPT 4 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+   <tr>
+    <td>Azure OpenAI – GPT 4o</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+  <tr>
     <td>OpenAI – GPT 3.5 Turbo</td>
     <td>✅</td>
     <td>✅</td>
