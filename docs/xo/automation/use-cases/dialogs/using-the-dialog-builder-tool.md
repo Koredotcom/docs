@@ -425,9 +425,9 @@ Real-time collaboration features:
 
 * Live presence awareness: As an app developer enters the dialog builder, the cursor display and the avatars in the header reveal the presence of other active team members.
 * Color-coded cursors: Each team member's cursor is assigned a distinctive color that matches the header's avatar icon. This allows users to be easily identified as their cursors move fluidly through the canvas.
-* Instant cursor chat: The team communicates seamlessly, leveraging cursor chat, enabling real-time commenting features. To initiate a chat use "Cmd+/" for mac and "Ctrl+/" for windows 
-to initiate cursor chat.
+* Instant cursor chat: The team communicates seamlessly, leveraging cursor chat, enabling real-time commenting features. To initiate a cursor chat, use **Cmd+/** on Mac or **Ctrl+/** on Windows, or right-click on the dialog builder and select **Cursor Chat**.
 * Collaborative viewing: While one user edits the dialog, other users are allowed to view it. Cursor display ensures that each team member can see where others are working. The first user to open the app is granted edit rights, while others join as viewers.  
+* Dialog Access Claim: When the user currently editing exits the dialog, a notification alerts other users to claim the edit access. The first user to click and claim this access can edit the dialog.  
 <img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border:1px solid gray;zoom:60%;">
 
 ## Add node to dialog
