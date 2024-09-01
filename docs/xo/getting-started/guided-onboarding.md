@@ -15,7 +15,7 @@ After signing up, users are guided through the onboarding process as follows:
 
 4. Select one of the following options to choose your onboarding experience.
     * Guided Onboarding 
-    * Custom Setup
+    * Custom Setup  
     **Guided Onboarding** is recommended and pre-selected. 
 <img src="../images/accplatform(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 

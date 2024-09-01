@@ -1,4 +1,4 @@
-# Search AI Node Beta
+# Search AI Node
 
 The Search AI Node allows users to create meta filters with specific rules, enhancing the precision, relevance, and overall effectiveness of the Answers/Search functionality. This leads to improved user satisfaction and better performance of our conversational AI platform.
 
