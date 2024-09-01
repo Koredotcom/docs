@@ -2,6 +2,199 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.5.0 September 01, 2024
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
+
+### Agent Console
+
+#### Outbound Calling - Revised Dialpad Behavior
+
+Agents now have more flexibility and validation options when dialing outbound calls. It streamlines the outbound calling process, giving agents more control and reducing potential mistakes when dialing international numbers.
+
+**Key updates**:
+
+* Automatic country code recognition:
+    * Displays country flag when number includes country code.
+* Enhanced number entry options:
+    * Direct dialing without country code.
+    * Option to change country code to "unknown".
+    * Automatic country selection for pasted numbers with codes.
+* Improved validation:
+    * Error messages for invalid number formats.
+    * The call button is disabled for non-compliant numbers.
+* Flexible country code handling:
+    * It supports dialing with or without country codes.
+    * Allows manual country code changes.
+
+#### Enhanced Supervisor Capabilities: Listen and Whisper for Voice Calls
+
+This update introduces real-time monitoring and intervention features for supervisors during voice calls. The features significantly enhance supervisory capabilities, allowing agents to provide more effective and immediate assistance during customer interactions.
+
+**Key updates**:
+
+* Listen Functionality:
+    * Real-time monitoring of live agent-customer conversations.
+* Whisper Functionality:
+    * Private voice communication from supervisor to agent.
+    * The customer cannot hear the supervisor's input.
+* User Interface Integration:
+    * New "Listen" and "Whisper" options on the Monitor tab
+    * Easy-to-access controls for quick intervention.
+* Chat Transcript:
+    * Whisper inputs are recorded in a different color.
+    * Labeled with supervisor name and timestamp.
+
+### Configuration
+
+#### New Permission for Sentiment Visibility Control
+
+The new permission to manage the visibility of captured customer sentiment in the Agent Console. It allows administrators to fine-tune sentiment visibility, balancing between providing agents with valuable customer insights and maintaining data privacy standards.
+
+**Key updates**:
+
+* Permission Details:
+    * Name: Visibility of Captured Sentiment
+    * Subtext: Manage the visibility of customer's sentiment in the agent console
+    * Access Level: Yes/No
+* Default Settings:
+    * Administrator, Supervisor, Agent: Set to "Yes"
+    * Custom Role: Default "Yes"
+* Functionality:
+    * When enabled, it displays real-time sentiment changes in the header pane.
+    * Ensures agents have current information on customer sentiment.
+
+#### Email Address Blacklisting
+
+This update introduces an Email Address Blacklisting functionality for contact center administrators. It helps contact centers maintain a clean communication channel, improve efficiency, and protect their email reputation by proactively managing potentially problematic email addresses.
+
+**Key updates**:
+
+* Blacklist Management:
+    * Administrators can specify blacklisted email addresses.
+    * It prevents sending emails to potentially problematic domains.
+* Verification Process:
+    * The system checks incoming email addresses against the blacklist.
+    * Linked to specific receiving email addresses.
+* Automated Response:
+    * Disables pre-configured automations for blacklisted addresses.
+    * Prevents automated agent transfers for blacklisted interactions.
+* Normal Processing:
+    * Non-blacklisted emails proceed through the usual automation and transfer processes.
+
+#### Enhanced Conferencing Functionality
+
+This update significantly enhances the conferencing capabilities, enabling more effective team collaboration and improved customer service in complex call scenarios.
+
+**Key updates**:
+
+* Expanded Participation:
+    * Up to 5 contact center participants (1 agent + 4 supervisors).
+* Improved Network Resilience:
+    * Isolated disconnections for affected participants.
+    * Rejoin option for disconnected users.
+* Comprehensive Recording:
+    * The recording status is updated in the database for compliance.
+* Advanced Conference Management:
+    * Transfer and exit options for all participants.
+    * 5-second window to rejoin or close conversation after exit.
+* Enhanced Accountability:
+    * CSAT linked to the last handling agent.
+    * The primary agent is responsible for After-Call Work (ACW).
+* Improved Visibility:
+    * Joined participants are highlighted in the chat transcript.
+    * Clear conference indicators on the Monitor tab and Agent Console.
+
+#### Custom Email Domain Configuration for Contact Center AI
+
+The enhanced email configuration options allow users to set up and manage Kore and custom domain email addresses. The options significantly expand email capabilities, allowing businesses to maintain brand consistency in their communications while leveraging the full features of Contact Center AI.
+
+**Key updates**:
+
+* Kore Domain Email Management:
+    * Configure multiple Kore domain email addresses.
+    * Easy addition of new addresses via the "Add Email Address" button.
+    * Attach experience flows to specific email addresses.
+* Custom Domain Setup:
+    * "Add Domain" button for custom email domain configuration.
+    * Domain ownership verification through email login test.
+    * Tabular display of custom domains with associated email addresses.
+* Improved User Interface:
+* A dedicated "Email" tab is used for all email configurations.
+* Clear organization of Kore and custom domain settings.
+
+### Analytics
+
+#### “Yesterday” Filter Added to Reports
+
+The "Yesterday" date filter is now available in all reports that previously did not have this option. Users can quickly view and analyze data from the previous day without manually setting the date range.
+
+When the "Yesterday" filter is selected in any report, it automatically includes all data from the previous day, from 12:00.00 AM to 11:59:59.999 PM.
+
+#### "Week to Date" and "Month to Date" Filters Added to Reports**
+
+This update has introduced two new date filters for reports. The filters provide more flexible and standardized options for viewing recent data, facilitating easier trend analysis and performance tracking.
+
+* "Week to Date" Filter (All Reports):
+    * Covers from most recent Sunday 12:00 AM to Yesterday 11:59:59.999 PM
+    * Available in all reports.
+    * No data is returned if it runs on a Sunday.
+* "Month to Date" Filter (Specific Reports):
+    * Added to 11 key reports, including Agent Activity, Queue Metrics, and IVR Containment.
+    * Covers from the first day of the current month 12:00 AM to Yesterday 11:59:59.999 PM.
+    * No data will be returned if run on the first day of the month.
+
+#### Improved Analytics for Joining Agents
+
+The update has enhanced the system’s tracking and reporting capabilities for user involvement in conversations and interactions. The capabilities provide a more detailed and accurate picture of user participation in interactions, supporting better resource management and performance analysis.
+
+**Key updates**:
+
+* Interactions Dashboard:
+    * The new "Joined Users" field is in the Insights to Logs > Details tab.
+    * Displays a comma-separated list of users who joined the conversation.
+* Interactions Details Report:
+    * The "Joined Users" column has been added to the CSV version.
+    * Shows a pipe-separated list of joined users.
+* Call Details API v2:
+    * A new mandatory "JoinedUsers" array is added.
+* Agent Activity Summary Report:
+    * Now includes interaction duration for all involved agents and supervisors.
+    * The "Interacting" field counts time for primary agents, consultants, and joined users.
+
+### API
+
+#### Enhanced Conversation Transfer Functionality
+
+This update enhances the conversation transfer functionality through API, allowing for more flexible and efficient chat transfers.
+
+**Key updates**:
+
+* Flexible Transfer Options:
+    * Transfer to specific agents using agent ID (aId).
+    * Transfer to waiting queues using queue ID (queueID).
+* API Alignment with Agent Console:
+    * API now mirrors the transfer capabilities of the agent console.
+* Improved Response Handling:
+    * Clear success or error messages for transfer requests.
+
+**Key benefits**:
+
+* More versatile conversation routing.
+* Consistent transfer capabilities across API and Agent Console.
+* Enhanced chat management efficiency.
+* Improved clarity in transfer status communication.
+
+#### Extended Debug Logs API to SmartAssist Channel
+
+The debug logs API is updated to collect the debug logs of the SmartAssist channel.
+
+<hr>
+
 ## v11.4.1 August 11, 2024
 
 <u> Patch Release </u>
