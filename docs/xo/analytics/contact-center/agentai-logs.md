@@ -15,7 +15,9 @@ The Conversation Logs feature provides access to the records of past agent-custo
     2. **TIME**: The date and time when a conversation took place.
     3. **CHANNEL**: The communication mode of the conversation – Voice or Chat. This information helps differentiate between different types of interactions.
     4. **DURATION**: The length of time a conversation lasted. It indicates the time taken to resolve customer queries.
+
 4. Click a **CONVERSATION ID** to view the corresponding agent-customer conversation summary, edited summary (if any), and the conversation record.
+
     1. The following image shows an unedited conversation summary along with the conversation record:  
     <img src="../conversation_logs/unedited-conversation-record-3.png" alt="unedited-conversation-record" title="unedited-conversation-record" style="border: 1px solid gray; zoom:80%;">
 
