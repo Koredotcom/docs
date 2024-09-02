@@ -3,7 +3,7 @@
 
 The Platform enforces rolling rate limits to restrict the number of API requests a user, application, or service can make within a dynamic timeframe. It helps prevent a single user or service from consuming disproportionate resources that could degrade the service for others.
 
-Requests are monitored against both 60-second and 1-hour limits. As long as neither limit is exceeded, the application can continue making requests. However, if the one-hour limit is breached, all further requests are blocked, even if the sixty-second limit is still within bounds.
+Requests are monitored against both sixty-second and one-hour limits. As long as neither limit is exceeded, the application can continue making requests. However, if the one-hour limit is breached, all further requests are blocked, even if the sixty-second limit is still within bounds.
 
 When a rate limit is exceeded, subsequent requests will fail, with an error message displayed for the specific limit that was violated as follows:
 
