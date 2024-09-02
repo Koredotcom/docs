@@ -28,11 +28,11 @@ Key updates:
 * **Expand/Collapse Functionality**: Icons added to toggle table view.
 * **Default View**: Tables appear expanded by default.
 * **User Control**: Agents can adjust table visibility as needed.  
-<img src="../expandable-collapsible-content.png" alt="expandable-collapsible-content" title="expandable-collapsible-content" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/expandable-collapsible-content.png" alt="expandable-collapsible-content" title="expandable-collapsible-content" style="border: 1px solid gray; zoom:80%;">
 
 ### Enabling Server-Side Triggering of Conversation Summary in Agent AI
 
-Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API.
+Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API. [Learn more.](https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+tri)
 
 ### Introduction of Additional languages for Agent AI
 
