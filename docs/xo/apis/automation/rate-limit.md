@@ -5,14 +5,11 @@ The Platform enforces rolling rate limits to restrict the number of API requests
 
 Requests are monitored against both sixty-second and one-hour limits. As long as neither limit is exceeded, the application can continue making requests. However, if the one-hour limit is breached, all further requests are blocked, even if the sixty-second limit is still within bounds.
 
-When a rate limit is exceeded, subsequent requests will fail, with an error message displayed for the specific limit that was violated as follows:
+When a rate limit is exceeded, subsequent requests will fail with one of the following error messages:
 
-* **Minute-based Limit**: “_You've exceeded the per-minute rate limit. Please wait for sometime before retrying_.”
+* Minute-based Limit: “_You've exceeded the per-minute rate limit. Please wait for sometime before retrying_.”
 
-* **Hour-based Limit**: “_You've exceeded the hourly rate limit. Please wait for sometime before retrying_.”
-
-Limit-specific error messages provide Analytics API users with clear and precise information about which exact rate limit was exceeded. This clarity helps users better understand the restrictions and adjust their API request strategies accordingly.
-
+* Hour-based Limit: “_You've exceeded the hourly rate limit. Please wait for sometime before retrying_.”
 
 ## API Rate Limit Matrix
 
