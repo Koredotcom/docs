@@ -13,7 +13,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 ### LLM and Generative AI
 #### Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
-The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
+The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
 
 * GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
@@ -28,6 +28,7 @@ The platform now includes GenAI and LLM settings in app versioning, including Mo
 This update helps API users understand which specific rate limit they've hit, allowing them to plan their request strategies more effectively and reduce errors in API usage.
 
 Specific error messages:
+
 * Per-minute limit: "You've exceeded the per-minute rate limit. Please wait for some time before retrying."
 * Hourly limit: "You've exceeded the hourly rate limit. Please wait for some time before retrying."
 
