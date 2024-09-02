@@ -12,8 +12,11 @@ This update includes feature enhancements and bug fixes. Key features and enhanc
 This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time.
 
 Key updates:
+
 * **Detailed Interaction Records**: Date and time of conversations, Channel used, and Duration of interaction.
+
 * **Conversation Content**: Auto-generated summaries, Edited summaries (if any), and Original conversation transcripts.
+
 * **Flexible Filtering Options**: Today, Yesterday, Past 7 days, Past 28 days, Past 90 days, and Custom date range.
 
 ### Expandable and Collapsible Table Templates in the Widget

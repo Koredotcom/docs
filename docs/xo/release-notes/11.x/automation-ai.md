@@ -68,6 +68,7 @@ Key updates:
 * Case-insensitive search.
 * Matches from the beginning of field names.
 * Real-time results update.  
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/managing-dialogs.md#dialog-components){:target="_blank"}
 
 ## v11.4.1 August 11, 2024
