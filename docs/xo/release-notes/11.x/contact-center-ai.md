@@ -174,7 +174,7 @@ This update enhances the conversation transfer functionality through API, allowi
 * More versatile conversation routing.
 * Consistent transfer capabilities across API and Agent Console.
 * Enhanced chat management efficiency.
-* Improved clarity in transfer status communication. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+* Improved clarity in transfer status communication. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/transfer-conversation-to-a-specific-agent-or-queue.md)
 
 #### Extended Debug Logs API to SmartAssist Channel
 
