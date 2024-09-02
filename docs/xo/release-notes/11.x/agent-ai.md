@@ -9,7 +9,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 ### Agent AI Conversation Logs
 
-This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time. [Learn more](https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-conversation-logs/?h=conversation+logs)
+This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time. [Learn more](https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-conversation-logs)
 
 Key updates:
 
