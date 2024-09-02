@@ -187,25 +187,25 @@ To enable Proactive Notifications, follow these steps:
 
 ## MS Teams Chat Features
 
-### MS Teams: Ability to Update or Delete Delivered Bot Messages
+### Ability to Update or Delete Delivered Bot Messages
 
 Developers now can update or delete bot messages in Microsoft Teams even after they have been delivered to users. This feature provides greater flexibility and control, allowing developers to disable or remove template messages after a user has taken action on them.
 
-New Channel Metadata Object: **<code>channelActionMetadata</code>**
+New Channel Metadata Object: <code>channelActionMetadata</code>
 
 The platform has introduced a new metadata object called `channelActionMetadata`, which captures the necessary metadata for bot messages on the MS Teams channel. This metadata is essential for performing update or deletion actions on the messages.
 
 Captured Meta Fields in <code>channelActionMetadata</code>:
 
-* **MsTeams ActivityID**
-* **MsTeams ConversationID**
-* **KoreMessageID**
+* MsTeams ActivityID
+* MsTeams ConversationID
+* KoreMessageID
 
 !!! note
 
     The above fields are captured exclusively for bot messages. These values are refreshed with each new bot message, and it is the developer’s responsibility to capture and manage the metadata for any bot messages that need to be updated or deleted.
 
-**Why Only the Latest Bot Message Metadata is Tracked**
+Why Only the Latest Bot Message Metadata is Tracked
 
 To prevent an increase in the size of the context object, only the metadata for the most recent bot message is retained. This approach ensures efficiency, even in sessions with a large number of exchanged messages.
 
@@ -217,7 +217,7 @@ We have introduced two new channel utility functions: one for retrieving metadat
 
 This function allows you to retrieve the metadata stored in the channelActionMetadata object.
 
-**Example Script: Fetching and Saving Metadata for Future Actions**
+Example Script: Fetching and Saving Metadata for Future Actions
 ```
 let channelActionMetadata = channelUtil.getActionMetadata();
 
@@ -240,7 +240,7 @@ if(channelActionMetadata){
 
 This function enables you to execute actions on bot messages that have been delivered in the MS Teams channel. With this function, developers can update or delete messages that have already been sent to the MS Teams channel.
 
-**Example Script: Updating the bot message**
+Example Script: Updating the bot message
 ```
 let channelActionMetadata = channelUtil.getActionMetadata();
 
@@ -263,7 +263,7 @@ if(channelActionMetadata){
 }
 ```
 
-**Example Script: Deleting the bot message**
+Example Script: Deleting the bot message
 ```
 let channelActionMetadata = channelUtil.getActionMetadata();
 
@@ -289,43 +289,38 @@ if(channelActionMetadata){
     * When an existing bot message is updated using this function, the platform will automatically update the message in the chat history.
     * By default, the platform will emit message tags for any messages that are updated or deleted using this function.
 
-**Tag Values**:
+**Tag Values**
 
 
-
-* For updated messages: \<Key>:\<Value>
-
+* For updated messages: `<Key>`:`<Value>`
+    
     channel_action: update_message
-* For deleted messages: \<Key>:\<Value>
+
+* For deleted messages: `<Key>`:`<Value>`
 
     channel_action: delete_message
 
 
 
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/update-delete5.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+
+
+<img src="../images/update-delete6.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+
+
+<img src="../images/update-delete2.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
 <img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/update-delete3.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
-
-
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
-
-
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/update-delete4.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
 
-# Release Notes
-
-MS Teams: Ability to Update or Delete Delivered Bot Messages
-
-The XO Platform now empowers you to update or delete bot messages in Microsoft Teams even after they've been delivered. With the new Channel Utility function, you can take bot interaction management to the next level—making real-time corrections, updating content, and preventing repetitive user actions. It provides greater flexibility and control, ensuring that every bot conversation in Teams is as precise and effective as possible.
 
 
 
