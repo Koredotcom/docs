@@ -51,7 +51,7 @@ Currently, SearchAI supports the following grant types:
 
 ### Adding a content source using Connector
 
-To configure a new connector, go to the **Connectors** tab under the **Sources** page. For a new connector, click on the **+Connect** button.
+To configure a new connector, go to the **Connectors** page under **Content**. For a new connector, click on the **+Connect** button.
 ![Connector Home](../images/connectors/connector-home.png "connector home")
 
 The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.

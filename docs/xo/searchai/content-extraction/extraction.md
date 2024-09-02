@@ -1,12 +1,12 @@
 # Content Extraction
 
-To generate answers using the source data, the ingested data is segmented into smaller segments or chunks to understand better, organize, and efficiently retrieve the most relevant set of data when required. Selecting the most appropriate strategy requires considering several factors, like the type of content, the embedding model to store chunks, the expected length and complexity of user queries and answers, etc.
+To generate answers using the source data, the ingested data is segmented into smaller segments or chunks to organize and efficiently retrieve the most relevant data set when required. Selecting an appropriate extraction strategy requires considering several factors, like the type of content, the embedding model to store chunks, the expected length and complexity of user queries and answers, etc.
 
-The application supports various chunk-generation strategies. You have the flexibility to select and customize the strategies based on the format and structure of the ingested data or as per the answers required. You can configure multiple strategies to apply to different types of content. This improves the precision of answers by aligning the strategy to the document characteristics and gives you flexibility and granular control over the answers generated.  
+The application supports various chunk-generation strategies. You can select and customize the strategies based on the format and structure of the ingested data or as per the answers required. You can configure multiple strategies to apply to different types of content. Aligning the strategy to the document characteristics improves the precision of answers and gives you flexibility and granular control over the answers generated.  
 
-To view the strategies defined in an application or to make any changes, go to the **Extraction** page. 
+To view the strategies defined in an application or to make any changes, go to the **Extract** page under the **Index** tab. 
 
-![Extraction Strategy](../images/extraction-home.png "Extraction Strategy")
+![Extraction Strategy](../images/extract-home.png "Extraction Strategy")
 
 By default, every application has a **Default Strategy** configured to perform Text-based Extraction on all types of data ingested from different sources. 
 
@@ -23,8 +23,6 @@ Enter the following details of the strategy.
 
 **Define Source**: Use the fields here to define the source data on which this strategy is applicable. 
 
-
-
 * **Source Name**: This field allows you to select the data on which the strategy is to be applied. It lists all the data sources configured in the application and the content corresponding to each of them. 
 * **Content Type**: This field allows you to specify the content type within each data source. 
 
@@ -32,51 +30,56 @@ You can also use the logical **AND operator** to apply multiple rules to filter 
 
 ![Source filters](../images/source-filters.png "Source Filters")
 
-**Define Chunk Strategy**: Use this field to specify the chunk strategy and its configuration for the selected source. 	
+**Define Chunk Strategy**: This field specifies the chunk strategy and its configuration for the selected source.
 
-**Extraction Model**: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. At present, we support the Text Extraction Model, with plans to extend support for multiple models soon. 
+**Extraction Model**: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. We currently support the following extraction models.
 
 **Text Extraction Model**
 
-The Text Extraction Model incorporates a fusion of techniques from natural language processing (NLP) and machine learning. It is based on the concept of tokenization, where the text is segmented into smaller units. The model undergoes training to identify and extract most suitable chunks relevant to the search queries.
+The Text Extraction Model combines natural language processing (NLP) and machine learning techniques. It is based on the concept of tokenization, where the text is segmented into smaller units. The model undergoes training to identify and extract the most suitable chunks relevant to the search queries.
 
-Configuration: Use the **chunk size** field to define the size of a single chunk. This field can help optimize the relevance of the content retrieved for answer generation. Choose the value of this field depending on various factors, like the structure and type of content, type of expected user queries, type of embedding models used, etc. 
-
+**Configuration**: Use the **chunk size** field to define the size of a single chunk. This field can help optimize the relevance of the content retrieved for answer generation. Choose the value of this field depending on various factors, like the structure and type of content, type of expected user queries, type of embedding models used, etc.
 
 * When **Chunk Size** is set to **pages**, every page is treated as a single chunk. 
 * When **Chunk Size** is set to **Chunk Tokens**, chunks are prepared using the following two parameters:
     *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. A smaller chunk will result in a larger number of chunks and similarly, a larger chunk will result in a lesser number of chunks. An optimal  
     * **Chunk Overlap**: Number of tokens that should overlap between two consecutive chunks.
 
-**Layout Aware Extraction**
-Layout-aware chunk extraction is a strategy used to extract data by taking into account the layout and structure of the content. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. By configuring the strategy according to specific layout requirements, it becomes possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes.
+**Layout Aware Extraction (BETA)**
+Layout-aware chunk extraction is a strategy used to extract data by considering the content's layout and structure. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. Configuring the strategy according to specific layout requirements makes it possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes. 
 
 The layout-aware extraction method identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach improves SearchAssist's ability to comprehend tables, graphs, and charts in documents and generate answers using this information.
 
-!!!note
-    Currently, Layout aware extraction is only supported for PDF or docx file formats.  
-
-Configuration: Choose the appropriate **template** for the content extraction. Use the provided examples to customize the document to the template for optimum extraction results.
+**Configuration**: Choose the appropriate **template** for content extraction. Use examples to customize the content format according to the template for optimum extraction results.
+* **General:** Use the **General** template to extract content from **complex PDFs and docx** files, including tables and images. 
+* **Table**: Use the **Table** template to extract content and tables from HTML pages.
 
 ![Layout Aware](../images/layout-aware-templates.png "Layout Aware Templates")
 Configure the strategy as per your needs and click the **Save** button. By default, as soon as a strategy is created, it is automatically enabled. 
 
+Configure the strategy according to your needs and click the Save button. As soon as a strategy is created, it is automatically enabled by default.
+
+!!! note
+    Creating a strategy enables it but does not automatically initiate the extraction process. Use the Train option to initiate the extraction process.  
 
 ## Deleting a Strategy
 
-To delete an existing strategy, go to the corresponding strategy page and click on the **Delete** button. This will not affect the existing chunks.
+To delete an existing strategy, go to the corresponding strategy page and click on the **Delete** button. 
 
-![Deleting a strategy](../images/delete-strategy.png "Deleting a strategy")
+!!! note
+    Deleting a strategy does not affect the existing chunks.
+
+![Deleting a strategy](../images/delete-a-strategy.png "Deleting a strategy")
 
 ## Enabling/ Disabling a Strategy
 
-By default, as soon as a strategy is created, it is enabled. You can also temporarily enable or disable a strategy for testing purposes to evaluate alternative extraction strategies or when it is no longer needed. You can do so from the strategy page. 
+By default, as soon as a strategy is created, it is enabled. You can also temporarily disable a strategy for testing purposes to evaluate alternative extraction strategies or when it is no longer needed. You can do so from the strategy page. 
 
-![Disable a strategy](../images/disable-strategy.png "Disable a strategy")
+![Disable a strategy](../images/disable-a-strategy.png "Disable a strategy")
 
 ## Using Multiple Extraction Strategies
 
-When there is more than one strategy defined in a given application, the strategies are applied to the data based on their priority or sequence in the list. For example, if there are two strategies defined - one for the web pages and the other one is the default one that applies to all types of content, the sequence decides the strategy to be used for a given content type. If the default strategy is on the top, it will extract chunks from all the sources and the other strategy will not be used at all. If, on the other hand, the strategy for web pages is on top, it will be applied first and will extract the chunks from the web pages followed by the extraction of chunks from all other sources using the default extraction strategy.  
+When more than one strategy is defined in a given application, the strategies are applied to the data based on their priority or sequence in the list. For example, if two strategies are defined - one for the web pages and the other one (default strategy) that applies to all types of content, the sequence decides the strategy to be used for a given content type. If the default strategy is at the top, it will extract chunks from all the sources, and the other strategy will not be used. If, on the other hand, the strategy for web pages is on top, it will be applied first and extract the chunks from the web pages, followed by the extraction of chunks from all other sources using the default extraction strategy.  
 
 ![Multiple Strategies](../images/multiple-strategies.png "Multiple Strategies")
 
