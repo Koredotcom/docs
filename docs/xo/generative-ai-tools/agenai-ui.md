@@ -428,57 +428,94 @@ The following table displays the Dynamic Conversation features and the supported
 
 === "Agent AI"
 
-  <table>
-      <tr>
-        <td><strong>Model</strong></td>
-        <td>Agent Response Rephrasing</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 3.5 Turbo</td>
-        <td>✅</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 4</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 4 Turbo</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 4o</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 3.5 Turbo</td>
-        <td>✅</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 4</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 4 Turbo</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 4o</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Anthropic – Claude Instant</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Anthropic – Claude</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Custom LLM</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Kore.ai XO GPT</td>
-        <td>❌</td>
-      </tr>
-    </table>
+<table>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Agent Response Rephrasing</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4o</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Anthropic – Claude Instant</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Anthropic – Claude</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Custom LLM</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Kore.ai XO GPT</td>
+    <td>❌</td>
+  </tr>
+</table>
+
+
+--------------------------------------
+=== "Agent AI"
+
+    | Model                       | Agent Response Rephrasing |
+    |-----------------------------|---------------------------|
+    | Azure OpenAI – GPT 3.5 Turbo | ✅                        |
+    | Azure OpenAI – GPT 4         | ❌                        |
+    | Azure OpenAI – GPT 4 Turbo   | ❌                        |
+    | Azure OpenAI – GPT 4o        | ❌                        |
+    | OpenAI – GPT 3.5 Turbo       | ✅                        |
+    | OpenAI – GPT 4               | ❌                        |
+    | OpenAI – GPT 4 Turbo         | ❌                        |
+    | OpenAI – GPT 4o              | ❌                        |
+    | Anthropic – Claude Instant   | ❌                        |
+    | Anthropic – Claude           | ❌                        |
+    | Custom LLM                   | ❌                        |
+    | Kore.ai XO GPT               | ❌                        |
+
+=== "Agent AI MD "
+
+  | Model                       | Agent Response Rephrasing |
+  |-----------------------------|---------------------------|
+  | Azure OpenAI – GPT 3.5 Turbo | ✅                        |
+  | Azure OpenAI – GPT 4         | ❌                        |
+  | Azure OpenAI – GPT 4 Turbo   | ❌                        |
+  | Azure OpenAI – GPT 4o        | ❌                        |
+  | OpenAI – GPT 3.5 Turbo       | ✅                        |
+  | OpenAI – GPT 4               | ❌                        |
+  | OpenAI – GPT 4 Turbo         | ❌                        |
+  | OpenAI – GPT 4o              | ❌                        |
+  | Anthropic – Claude Instant   | ❌                        |
+  | Anthropic – Claude           | ❌                        |
+  | Custom LLM                   | ❌                        |
+  | Kore.ai XO GPT               | ❌                        |
+
