@@ -82,6 +82,7 @@ Key updates:
 This update removes the restriction of having a fixed VXML Error Threshold at the environment level that applies to all bots, with no option for customization. Platform users now have the flexibility to set the number of retries at the bot level, tailoring it to the specific needs of their system.
 
 Key updates:
+
 * Customizable Error Threshold: Set retry limits based on the system that is being used. 
 * Default and Custom Options: Choose the default setting or customize the number of retries.
 * Retry Range: Customizable range from 1 to 3, 3 being the default.
@@ -112,16 +113,16 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#ms-teams-chat-features){:target="_blank"}
 
-### Getting Started
+## Getting Started
 
-#### Enhanced Workspace Switcher Experience 
+### Enhanced Workspace Switcher Experience 
 
 The enhanced Workspace Switcher has a more cohesive, modern experience, making workspace switching more intuitive and efficient for platform users.  
 <img src="../images/workspace_switcher.png" alt="workspace_switcher" title="workspace_switcher" style="border: 1px solid gray; zoom:100%;">
 
 [Learn more :octicons-arrow-right-24:](../../getting-started/accessing-the-platform.md#using-workspace){:target="_blank"}
 
-#### New Signup Journey Update for Custom Setup
+### New Signup Journey Update for Custom Setup
 
 This update helps bridge the gap in the new user Signing up using the Custom Onboarding journey for both Automation AI and Contact Center AI. This Custom Onboarding Journey now automatically triggers a new App creation process, improving the overall onboarding experience.
 
