@@ -42,9 +42,9 @@ Specific error messages:
 
 
 
-#### App Management
+### App Management
 
-##### App Deletion Feature Update 
+#### App Deletion Feature Update 
 
 The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycles while maintaining data security and user accountability.
 
