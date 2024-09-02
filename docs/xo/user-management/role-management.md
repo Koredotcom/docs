@@ -299,6 +299,14 @@ Create and manage agent skills & skill groups
    </td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -865,6 +873,13 @@ Create and manage agent skills & skill groups
    <td>Full Access</td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -1398,6 +1413,13 @@ Modify global agent settings
 Create and manage agent skills & skill groups
    </td>
    <td>Full Access</td>
+</tr>
+<tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
 </tr>
 <tr>
    <td><strong>Agent Group Management</strong>
@@ -1936,6 +1958,13 @@ Create and manage agent skills & skill groups
    <td>Full Access</td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -2465,6 +2494,13 @@ Modify global agent settings
 Create and manage agent skills & skill groups
    </td>
    <td>None</td>
+</tr>
+<tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
 </tr>
 <tr>
    <td><strong>Agent Group Management</strong>
@@ -3106,6 +3142,15 @@ Create and manage agent skills & skill groups
 None
 <br>
 Full Access</td>
+</tr>
+<tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes
+   <br>
+   No</td>
 </tr>
 <tr>
    <td><strong>Agent Group Management</strong>
