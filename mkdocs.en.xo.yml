@@ -188,7 +188,8 @@ nav:
           - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
           - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
           - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
-          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
+          - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Node Connections:
           - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
           - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
@@ -480,7 +481,9 @@ nav:
         - Getting Started: apis/automation/api-introduction.md
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
-          - Agent AI APIs: apis/agent-ai/raw-data-api.md
+          - Agent AI APIs:
+            - Raw Data API: apis/agent-ai/raw-data-api.md
+            - Agent AI Conversation Summary Trigger API: https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+trigger
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
           - Search AI APIs: apis/searchai/api-list.md
@@ -502,6 +505,7 @@ nav:
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Tutorials:
             - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
             - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
@@ -529,7 +533,8 @@ nav:
         - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
-      - Agent AI: analytics/contact-center/agentai-dashboard.md
+      - Agent AI Dashboard: analytics/contact-center/agentai-dashboard.md
+      - Agent AI Conversation Logs: https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-conversation-logs
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:

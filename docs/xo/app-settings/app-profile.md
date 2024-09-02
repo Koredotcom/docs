@@ -10,7 +10,6 @@ To modify the general settings of an app:
 
 Modify one or more of the settings described in the following table.
 
-
 <table border="1">
   <tr>
    <td><strong>FIELD</strong>
@@ -50,7 +49,7 @@ Modify one or more of the settings described in the following table.
     <li> Search AI first, Automation as Fallback: The assistant uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the assistant uses the automation framework to handle the user inputs.</li>
   </ul>
   
-  <b>Use Search AI for Unrecognized Inputs During Dialogs</b>: This option enhances the assistant's ability to handle diverse user inputs during Automation AI Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog. 
+  <b>Use Search AI for Unrecognized Inputs During Dialogs</b>: This option enhances the assistant's ability to handle diverse user inputs during Automation AI Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog.
   
   </td>
   <tr>
@@ -59,23 +58,22 @@ Modify one or more of the settings described in the following table.
    <td>
 <ul>
 
-<li>Select <strong>General Public</strong> if the VA is for public use for both managed and unmanaged users in your domain. VA assignments are not required and when the Bots Admin deploys the VA, it is available for use by all domain users. Use this option to make a VA widely available for all user types.
+<li>Select <strong>General Public</strong> if the App is for public use for both managed and unmanaged users in your domain. VA assignments are not required and when the Bots Admin deploys the VA, it is available for use by all domain users. Use this option to make a VA widely available for all user types.
 
-
-<li>Select <strong>Enterprise Users</strong> if the VA is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
+<li>Select <strong>Enterprise Users</strong> if the App is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
 Once the <strong>Target Audience</strong> is defined and saved, you cannot change them.
 </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td>Default VA Language
+   <td>Default Language
    </td>
-   <td>This is uneditable and is set at the time of VA creation.
+   <td>This is uneditable and is set at the time of App creation.
    </td>
   </tr>
   <tr>
-   <td>VA Id
+   <td>App Id
    </td>
    <td>Non-editable, assigned by the platform. It can be copied for use in API calls etc..
    </td>
@@ -94,8 +92,7 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
 
 <li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the VA.
 
-
-<li><strong>Base URL</strong> – The base URL for the VA that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name. 
+<li><strong>Base URL</strong> – The base URL for the VA that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name.
 </li>
 </ul>
    </td>
@@ -107,7 +104,6 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
 <ul>
 
 <li>Select <strong>Yes</strong> to display a link to enable the choice for a user to input information used to execute a task in a user interface form or input the data directly into the message input field, for example, <em>Enter the title for new Asana task. To make edits, click here. </em>where <em>here</em> is a link to a form with fields.
-
 
 <li>When <strong>No</strong> is selected, the user can only input information for the task in the message input field. For example, <em>Enter the title for a new Asana task</em>.
 </li>
@@ -122,9 +118,7 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   </tr>
 </table>
 
-
 To save the App settings, click **Save**. The _&lt; **App Name** > updated successfully_ message is displayed.
-
 
 ## Customizing Error Messages
 
@@ -140,10 +134,9 @@ There are approximately 25 HTTP Status codes defined by default for a VA or task
   2. Navigate to **Settings**.
   3. On the **App Profile** screen, scroll down to locate the **Error Messages** section.
   4. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon for the code that you want to customize to open the **Setup Error Message** dialog.  
-    
+
       <img src="../images/app-prof-img3-general-settings-error-messages-setup.png" alt="Setup Error Message" title="Setup Error Message" style="border: 1px solid gray;zoom:50%;"/>  
-      
-    
+
   5. In the **Message Type** field, select one of:
     1. **Custom** – Displays a **Custom Message** field to define an error-specific message for the end-user.
     2. **Source** – Displays the **Error Paths** field where you can define the JSON path from the JSON response payload for HTTP Status codes other than those in the 2XX range (success messages).
@@ -154,7 +147,7 @@ There are approximately 25 HTTP Status codes defined by default for a VA or task
     3. **Disable Auth** – When the error occurs, the authorization mechanism defined for the task is disabled. Any other task that uses the same authorization mechanism is also disabled.
     4. **Notify** – Displays the error message in the end-user interface.  
   <img src="../images/app-prof-img4-general-settings-error-messages-setup-actions.png" alt="Action on Error" title="Action on Error" style="border: 1px solid gray;zoom:50%;"/>   
-    
+
   7. In the **Message** field (available only for the default messages), enter the text message displayed to the end-user.
   8. In the **Error Recurrence** field, specify the number of consecutive error codes must be returned before the action is executed. By default, the **Error Recurrence** field is set to ” 1 “.
   9. Click **Add** to save and close the **Setup Error Message** dialog for your custom error message.

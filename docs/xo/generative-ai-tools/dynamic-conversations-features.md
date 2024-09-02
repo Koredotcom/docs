@@ -142,23 +142,27 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 		
 
-## Product and Feature Support Matrix
+## Product and Supported Feature
 
-The following table displays the Dynamic Conversation features and the supported products. 
+Select the product to view the supported features.
 
-(✅ Supported | ❌ Not supported)
+=== "Automation AI"
 
-| Feature                     | Automation AI | Search AI | Agent AI |
-|:-------------------------|:------------:|:------------:|:------------:|
-| Agent Response Rephrasing   |      ❌       |   ❌      |    ✅      |
-| Answer Generation           |       ❌     | ✅        |    ❌     |
-| GenAI Node                  | ✅            |      ❌    |  ❌       |
-| GenAI Prompt                | ✅            |        ❌  |    ❌     |
-| Repeat Responses            | ✅            |    ❌      |    ❌     |
-| Rephrase Dialog Responses   | ✅            |    ❌      |      ❌   |
-| Rephrase User Query         | ✅            |    ❌      |   ❌      |
-| Vector Generation           |        ❌      | ✅        |   ❌      |
-| Zero-shot ML Model          | ✅            |     ❌     |    ❌     |
+    * GenAI Node
+    * GenAI Prompt
+    * Repeat Responses
+    * Rephrase Dialog Responses
+    * Rephrase User Query
+    * Zero-shot ML Model
+
+=== "Search AI"
+
+    * Answer Generation
+    * Vector Generation
+
+=== "Agent AI"
+
+    * Agent Response Rephrasing
 
 
 
@@ -206,7 +210,30 @@ The following table displays the Dynamic Conversation features and the supported
     <td>❌</td>
     <td>✅*</td>
   </tr>
-  
+   <tr>
+    <td>Azure OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
+    <tr>
+    <td>Azure OpenAI – GPT 4o</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
   <tr>
     <td>OpenAI – GPT 3.5 Turbo</td>
     <td>✅</td>

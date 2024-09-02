@@ -2,6 +2,146 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+
+
+## v11.5.0 September 01, 2024
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+
+### LLM and Generative AI
+#### Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
+The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
+
+* GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
+* GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
+
+#### Apps Versioning for GenAI & LLM
+The platform now includes GenAI and LLM settings in app versioning, including Model Integrations, Custom Prompts, Feature & Model Prompt mapping, and Safeguards. It allows platform users to manage and track GenAI & LLM configuration changes across different bot/app versions, enhancing control and customization of GenAI features. 
+
+
+
+### Analytics
+#### Enhanced Rate Limit API Response 
+This update helps API users understand which specific rate limit they've hit, allowing them to plan their request strategies more effectively and reduce errors in API usage.
+
+Specific error messages:
+
+* Per-minute limit: "You've exceeded the per-minute rate limit. Please wait for some time before retrying."
+* Hourly limit: "You've exceeded the hourly rate limit. Please wait for some time before retrying."
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/rate-limit.md){:target="_blank"}
+
+
+
+
+
+
+
+
+
+### App Management
+
+#### App Deletion Feature Update 
+
+The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycles while maintaining data security and user accountability.
+
+Key updates:
+
+* Soft Deletion:
+    * Initiated by app/bot owners from App Settings.
+    * Requires email verification.
+    * 30-day restoration window.
+* Post-Deletion:
+    * The App is invisible in the main interface.
+    * Runtime features cease.
+    * Configurations are retained for 30 days.
+* Restoration:
+    * Available in the admin console for 30 days.
+    * Restores all pre-deletion configurations.
+* Notifications:
+    * Emails to all admin role users.
+    * Reminders before permanent deletion.
+* Data Management:
+    * Secure storage during soft deletion.
+    * Permanent deletion after 30 days.
+* Subscribed App:
+    * Deletion is not allowed during an active subscription.
+    * Restoration after the billing date requires a re-subscription.
+* Admin Features:
+    * New BAC section for deleted apps.
+    * Audit logs for app restoration.
+    * New role permission for deleted apps view.  
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/delete-app.md){:target="_blank"}
+
+
+### Channels
+#### Customizable VXML Error Threshold in IVR Voice Call Properties
+This update removes the restriction of having a fixed VXML Error Threshold at the environment level that applies to all bots, with no option for customization. Platform users now have the flexibility to set the number of retries at the bot level, tailoring it to the specific needs of their system.
+
+Key updates:
+
+* Customizable Error Threshold: Set retry limits based on the system that is being used. 
+* Default and Custom Options: Choose the default setting or customize the number of retries.
+* Retry Range: Customizable range from 1 to 3, 3 being the default.
+
+Backward Compatibility:
+
+* Existing bots default to the Use Default option, which is also included in the bot export/import processes.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#voice-call-settings-field-reference){:target="_blank"}
+    
+
+
+#### Update or Delete Delivered Bot Messages in MS Teams
+
+Bot messages in Microsoft Teams can now be updated or deleted even after they have been delivered to users. This feature provides greater flexibility and control, allowing platform users to disable or remove template messages after a user has taken action on them.
+
+Key updates:
+
+* New ‘channelActionMetadata’ object:
+    * Captures MsTeams ActivityID, ConversationID, and KoreMessageID.
+    * Only stores metadata for the latest bot message.
+* New channel utility functions:
+    * channelUtil.getActionMetadata(): Retrieves metadata.
+    * channelUtil.executeAction(): Updates or deletes messages.
+* Automatic updates:
+    * Chat history updates for modified messages
+    * Message tags emitted for updated/deleted messages
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#ms-teams-chat-features){:target="_blank"}
+
+### Getting Started
+
+#### Enhanced Workspace Switcher Experience 
+
+The enhanced Workspace Switcher has a more cohesive, modern experience, making workspace switching more intuitive and efficient for platform users.  
+<img src="../images/workspace_switcher.png" alt="workspace_switcher" title="workspace_switcher" style="border: 1px solid gray; zoom:100%;">
+
+[Learn more :octicons-arrow-right-24:](../../getting-started/accessing-the-platform.md#using-workspace){:target="_blank"}
+
+#### New Signup Journey Update for Custom Setup
+
+This update helps bridge the gap in the new user Signing up using the Custom Onboarding journey for both Automation AI and Contact Center AI. This Custom Onboarding Journey now automatically triggers a new App creation process, improving the overall onboarding experience.
+
+Key updates:
+
+* Data Persistence:
+    * Product selection (Automation AI or CCAI) is now saved.
+    * The onboarding type ("Custom") is recorded.
+* Streamlined App Creation:
+    * The new App creation journey skips product type and journey type selection.
+    * Uses data from initial onboarding steps.
+* Continuous Journey:
+    * The process now continues directly to the "Naming the App" screen.  
+
+[Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md){:target="_blank"}
+
+<hr>
+
 ## v11.4.1 August 11, 2024
 
 <u> Patch Release </u>

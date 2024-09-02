@@ -1,10 +1,15 @@
 
 # Rate Limits
 
-The Platform enforces rolling rate limits to restrict the number of API requests a user, application, or service can make within a dynamic timeframe. It helps to prevent any single user or service from consuming disproportionate resources that could degrade the service for others. 
+The Platform enforces rolling rate limits to restrict the number of API requests a user, application, or service can make within a dynamic timeframe. It helps prevent a single user or service from consuming disproportionate resources that could degrade the service for others.
 
-The requests are checked against both the 60-second and 1-hour limits. An application can continue to send requests as long as it doesn't exceed either limit. Once the 1-hour limit is breached, further requests are denied, regardless of whether it complies with the 60-second limit. Once the rate limit is reached, subsequent requests fail with the following error message: “_Rate limit for this API has been reached. Please try again after some time._”
+Requests are monitored against both sixty-second and one-hour limits. As long as neither limit is exceeded, the application can continue making requests. However, if the one-hour limit is breached, all further requests are blocked, even if the sixty-second limit is still within bounds.
 
+When a rate limit is exceeded, subsequent requests will fail with one of the following error messages:
+
+* Minute-based Limit: “_You've exceeded the per-minute rate limit. Please wait for sometime before retrying_.”
+
+* Hour-based Limit: “_You've exceeded the hourly rate limit. Please wait for sometime before retrying_.”
 
 ## API Rate Limit Matrix
 

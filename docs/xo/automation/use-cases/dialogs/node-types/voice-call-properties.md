@@ -44,9 +44,6 @@ This document details the voice call properties and how they vary across various
 
 
 
-
-
-
 ## Dialog Node Settings
 
 On the Voice Call Properties panel for a node, you can enter node-specific prompts, grammar, as well as parameters for call-flow behavior such as time-out and retries.
@@ -68,7 +65,7 @@ Voice Call Properties apply only for the following nodes and message types:
 <img src="../images/timeout_prompts.png" alt="Timeout Prompts" title="Timeout Prompts" style="border: 1px solid gray; zoom:70%;">
 
 
-**Voice Call Settings Field Reference**
+### Voice Call Settings Field Reference
 
 The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
 
@@ -97,11 +94,12 @@ The following sections provide detailed descriptions of each IVR setting, includ
 | Locale Definition | Enable the **Locale Definition** property to define the **_(xml:lang = “&lt;value&gt;”)_** attribute in the VXML file by enabling the **Locale Definition** property. Automatic Speech Recognition engines use the language attribute to enhance speech recognition.<br><br>Once the property is enabled, you can see one or more language codes corresponding to the bot languages. Enter the locale code for a specific bot language in the **Locale Value** field. For example, enter ‘**US**‘ or ‘**UK**‘ as the Locale Value for the English (EN) bot language.**Note**: By default, the **Locale Definition** property is disabled for all virtual assistants. | N/A | IVR |
 | Document Type Definitions | The Document Type Definition (DTD) typically refers to a specific syntax used to define the structure and constraints of a Voice Extensible Markup Language (VXML) document. The DTD settings help the VXML to understand the response.<br><br>You can use the **Default** DTD settings defined in the Status, Public ID, and System ID fields for the VXML. If you want to modify settings, click **Customize** to change the values.<br><br>**Note**: If the **Status** field is set to _Include_, you can enter the Public and System ID. If it is set to _Exclude_, you cannot view those fields. | N/A | IVR |
 | Fallback Redirection | A Fallback Redirection is an alternative path that the IVR system uses to handoff the conversation whenever the call hangs up<br><br>You can add an URL to redirect the conversation whenever the call hangs up.<br><br>By default, the **Fallback Redirection** is disabled. If you want to enable the Fallback Redirection, click **Customize**.<br><br>**Note**: The Fallback Redirection is supported by both standard and universal bots. | N/A | IVR |
+| VXML Error Threshold | The **VXML (VoiceXML) Error Threshold** is the maximum number of errors or failures that can occur during a VXML session before the system takes corrective action, such as ending the session, or initiating an alternative flow by re-establishing the VXML connection. The **Use Default** option is the default selection where the Platform enforces the environment-level retry limit (internally set to 3). The **Customize** option helps customize the number of retries to 1,2, or 3 by selecting the limit from the **No. of Retries** dropdown. | N/A | IVR |
 | Propagate Values to Link Bots | Enable this option to propagate the Voice Call Properties from the Universal Bot to all its linked bots. It helps you to leverage the UB properties when a linked bot’s execution is in progress. The Voice Call Properties of the linked bot are used when the conversation is happening directly with the bot as a Standard bot.<br><br>By default this option is disabled. | N/A | IVR |
 | Recording | Define the state of recording to be initiated. The default value is **Stop**. | Entity,<br>Confirmation,<br> Message,<br>and GenAI nodes | IVR |
 
 
-Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
+Below is a demo of the IVR Properties section of a Dialog Task node.
 
 <img src="../images/ivr-properties.gif" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
 

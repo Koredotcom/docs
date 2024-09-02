@@ -2,6 +2,50 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.5.0 September 01, 2024
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Agent AI Conversation Logs
+
+This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time. [Learn more](https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-conversation-logs)
+
+Key updates:
+
+* **Detailed Interaction Records**: Date and time of conversations, Channel used, and Duration of interaction.
+
+* **Conversation Content**: Auto-generated summaries, Edited summaries (if any), and Original conversation transcripts.
+
+* **Flexible Filtering Options**: Today, Yesterday, Past 7 days, Past 28 days, Past 90 days, and Custom date range.
+
+### Expandable and Collapsible Table Templates in the Widget
+
+This update allows agents to manage their workspace more efficiently by controlling the display of table templates, leading to a more organized and personalized view of information.
+
+Key updates:
+
+* **Expand/Collapse Functionality**: Icons added to toggle table view.
+* **Default View**: Tables appear expanded by default.
+* **User Control**: Agents can adjust table visibility as needed.  
+<img src="../images/expandable-collapsible-content.png" alt="expandable-collapsible-content" title="expandable-collapsible-content" style="border: 1px solid gray; zoom:80%;">
+
+### Enabling Server-Side Triggering of Conversation Summary in Agent AI
+
+Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API. [Learn more.](https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+tri)
+
+### Introduction of Additional languages for Agent AI
+
+For localization, feedback, and greetings, Agent AI now supports 33 languages, including Indian, Dutch, and other major languages. It significantly broadens Agent AI’s accessibility and user-friendliness across different linguistic markets, enabling more effective communication and interaction with a global user base.
+
+Key updates:
+
+* **Expanded Language Options**: Added Indian, Dutch, and other major languages, a total of 33 supported languages.
+* **Comprehensive Integration**: Widget Settings, Feedback Settings, and Widget Theming.
+* **Specific Application Areas**: Auto Summarization, Default Widget Language, Various Feedback Types (Dialog Task, Answers, FAQ, Summary), and Widget Personalization Settings.
+
+<hr>
+
 ## v11.4.1 August 11, 2024
 <u> Patch Release </u>
 

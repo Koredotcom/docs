@@ -11,7 +11,7 @@ Several APIs are available from Contact Center AI. Based on the functionality ad
 * [Import/Export Data APIs](#importexport-data-apis)
 * [Call Recording API](#call-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
-* [Transfer Conversation to a Specific Agent API](#transfer-conversation-to-a-specific-agent-api)
+* [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
 * [Queue Management APIs](#queue-management-apis)
 
 ### Analytics and Reporting APIs
@@ -93,11 +93,11 @@ Several APIs are available from Contact Center AI. Based on the functionality ad
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------|
 | [Outbound Calling (Kore.ai VG)](./outbound-calling-kore-ai-vg.md)                                               | To trigger an outbound call and receive call status notifications.                                           | SmartAssist Dialout  |
 
-### Transfer Conversation to a Specific Agent API
+### Transfer Conversation to a Specific Agent or Queue API
 
 | API                                                                                               | DESCRIPTION                                                                                                                      | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Transfer Conversation to a Specific Agent](../contact-center/transfer-conversation-to-a-specific-agent.md)         | To transfer a conversation to a specific agent using the provided botSessionId and aId. It posts specific messages to the provided callbackUrl to indicate the success or failure of the conversation transfer. | Routing              |
+| [Transfer Conversation to a Specific Agent](./transfer-conversation-to-a-specific-agent-or-queue.md)         | To transfer a conversation to a specific agent using the provided botSessionId and aId. It posts specific messages to the provided callbackUrl to indicate the success or failure of the conversation transfer. | Routing              |
 
 ### Queue Management APIs
 

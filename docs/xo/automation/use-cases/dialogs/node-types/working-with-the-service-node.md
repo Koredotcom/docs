@@ -121,7 +121,7 @@ Use the Instance Properties to define any user tags that you want to set.
 
 1. On the Service node properties panel, click the **Instance Properties** tab.
 2. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:
-    1. **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **20 Seconds** for *Standard* accounts, and between **1 Second** to **30 Seconds** for *Enterprise accounts*. The default value is 5 Seconds.
+    1. **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **60 Seconds**. The default value is 20 Seconds.
     2. **Timeout error handling**: Choose how the bot should respond when the timeout occurs.
         * **Close the Task and trigger Task Execution Failure Event**, or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
