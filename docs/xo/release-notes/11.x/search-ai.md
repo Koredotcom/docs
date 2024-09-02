@@ -2,6 +2,38 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.5.0 September 01, 2024
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Content Browser
+
+Search AI chunk browser is now enhanced to make it more user-friendly, providing a detailed view of the extracted content and making it easier to edit. Additionally, you can now view tables directly in the browser. 
+
+### Extraction of Complex Tables from HTML
+
+Search AI can now extract content from complex HTML tables using the Layout-Aware Extraction Strategy, enhancing its ability to accurately capture and process data from table structures. This improvement ensures more reliable data extraction and accurate information retrieval from tabular content.
+
+### Support for New Connectors (Beta)
+
+SearchAI now extends support for data ingestion from a broader range of knowledge bases and enterprise applications through connectors, including Airtable, HubSpot, GitLab, GitHub, Jira, Monday, Notion, and Slack. This expansion allows users to seamlessly integrate and ingest content from these platforms, enhancing the versatility of the data sources.
+
+### Sharepoint Site Support Enhancement
+
+SearchAI now supports ingesting content from up to 6,000 sites from Sharepoint using the connector. This enhancement allows users to seamlessly access and search through a large volume of data, ensuring better search capabilities and improving the information retrieval process across the organization.
+
+### Support for Re-Rankers 
+
+Search AI now offers advanced re-ranking capabilities to improve the quality and relevance of retrieved content significantly. Re-ranking is a crucial second step in the search process that refines initial results for greater accuracy. Enable and configure re-ranking models, like Cross Encoder, BGE, or MixedBread re-rankers, to reorder the chunks provided by the first-stage retriever, ensuring more relevant and accurate answers. 
+
+### Enhanced Search AI Navigation 
+
+The latest version of Search AI offers a simplified interface that is easy to use and intuitive to navigate. The newer design enhances usability and productivity. 
+
+<hr>
+
 ## v11.4.1 August 11, 2024
 
 <u> Patch Release </u>

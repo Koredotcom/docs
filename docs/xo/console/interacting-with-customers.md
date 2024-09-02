@@ -121,7 +121,7 @@ When an agent initiates an outbound call, the system automatically changes the a
 The outbound dialer has the following functionalities:
 
 * Search Bar: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.  
-    <img src="../images/search-bar.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/dialer-search-bar.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:60%;">
 
 * International Subscriber Dialing (ISD) Code Update: The dialer automatically adjusts the outbound phone number’s ISD code based on the last used country code. This streamlines the process for agents making calls to different regions. For example, if an agent selects India as the country but enters a phone number from the USA, the dialer automatically changes the country to the USA.
 
@@ -135,11 +135,39 @@ Agents can make outbound calls to the customers as follows:
 1. Click the **+** button on the conversation tray and click Outbound Call. The dial pad is displayed.  
 <img src="../images/outbound-call-button.png" alt="Outbound Call Button" title="Outbound call Button" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the Calling from button on the Dialer tab, and select the number for placing the outbound call.  
-<img src="../images/calling-from-number.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:70%;">
+2. Click the Calling from button on the Dialer tab, and select the number for placing the outbound call. Agents can use phone numbers or configured SIP trunks while making outbound calls.  
+<img src="../images/sip-and-phone-numbers.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:60%;">
 
-3. Select the country, enter the number, and click the Call button to place the outbound call.  
-<img src="../images/call-button-(3).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:70%;">
+3. Agents can dial the outbound calls in two ways:
+
+    1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the Call button to place the outbound call.  
+        <img src="../images/dialer-country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+
+    2. Enter the phone number without the country code and click the Call button to place the outbound call. The following scenarios are possible:
+
+        1. A user enters “123124”:
+
+            1. By default, no country code is selected, and no country code validation is made. A call is directly placed to this number.
+
+            2. If the user has already dialed a call with a US number, they should be able to change the country code to unknown.
+
+        2. A user pastes “123121”:
+
+            1. Initially, a validation error is displayed if the number does not match the defined format for the default country.
+
+            2. The user can change the country code to unknown and a call is directly dialed to this number.
+
+        3. User pastes/enters “+91987654321”:
+
+            1. The country code is selected as India and the call is dialed.
+
+        4. User pastes “+919876543”:
+
+            1. A validation error is displayed and the call button is disabled.
+
+    !!! Note
+
+        The country code defaults to the last dialed country. If no calls are dialed, the default country code is the US.
 
 ## Voicemail
 

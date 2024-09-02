@@ -5,7 +5,7 @@ This document provides information on the feature updates and enhancements intro
 ## v11.5.0 September 01, 2024
 <u> Patch Release </u>
 
-This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Agent AI Conversation Logs
 
@@ -28,11 +28,11 @@ Key updates:
 * **Expand/Collapse Functionality**: Icons added to toggle table view.
 * **Default View**: Tables appear expanded by default.
 * **User Control**: Agents can adjust table visibility as needed.  
-<img src="../expandable-collapsible-content.png" alt="expandable-collapsible-content" title="expandable-collapsible-content" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/expandable-collapsible-content.png" alt="expandable-collapsible-content" title="expandable-collapsible-content" style="border: 1px solid gray; zoom:80%;">
 
 ### Enabling Server-Side Triggering of Conversation Summary in Agent AI
 
-Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API.
+Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API. [Learn more.](https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+tri)
 
 ### Introduction of Additional languages for Agent AI
 
@@ -43,6 +43,8 @@ Key updates:
 * **Expanded Language Options**: Added Indian, Dutch, and other major languages, a total of 33 supported languages.
 * **Comprehensive Integration**: Widget Settings, Feedback Settings, and Widget Theming.
 * **Specific Application Areas**: Auto Summarization, Default Widget Language, Various Feedback Types (Dialog Task, Answers, FAQ, Summary), and Widget Personalization Settings.
+
+<hr>
 
 ## v11.4.1 August 11, 2024
 <u> Patch Release </u>
