@@ -42,7 +42,6 @@ Key updates:
 
 ### Getting Started
 
-
 #### Enhanced Workspace Switcher Experience 
 
 The enhanced Workspace Switcher has a more cohesive, modern experience, making workspace switching more intuitive and efficient for platform users.
@@ -63,6 +62,7 @@ Key updates:
     * Uses data from initial onboarding steps.
 * Continuous Journey:
     * The process now continues directly to the "Naming the App" screen.  
+
 [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md){:target="_blank"}
 
 
