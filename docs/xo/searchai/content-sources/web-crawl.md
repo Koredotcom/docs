@@ -9,19 +9,19 @@ Websites usually provide detailed information about an organization's products a
 * You can define crawl rules to enable or disable specific pages to be crawled. 
 * There is authentication support to allow a crawler to access restricted content. 
 
-To manage the data ingested through web pages or to add new web sources, go to the **Web Crawl tab** under the **Sources** page.
+To manage the data ingested through web pages or to add new web sources, go to the **Websites** page under the **Content** section.
 
-![Web Crawl](./images/webcrawlhome.png "Web Crawl")
+![Web Crawl](./images/web-crawl-home.png "Web Crawl")
 
 ## Adding a new web crawler for a web source
 
 To add a new web source, click **+Web Crawl**.
 
-![Adding Web Source](../images/add-new-web-source.png "Add Web Source")
+![Adding Web Source](../images/add-web-crawl.png "Add Web Source")
 
 Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click **+Web Crawl** on the top right to add a new web domain for crawling.
 
-![Add new web source](../images/add-web-source.png "add a new web source")
+![Add new web source](../images/existing-webcrawls.png "add a new web source")
 
 Provide details of the crawl configuration on the **Configuration** tab and click **Save & Crawl**.
 
@@ -59,16 +59,16 @@ You can choose to run the crawl in the background which allows you to perform ot
 
 When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay field** that specifies the time that a crawler waits before considering a web page as fully rendered and starting indexing of the page.
 
-* **Crawl Beyond Sitemap** – Sitemap is a file that provides information about the important pages and files on the website. Check this field if you want to crawl URLs beyond those listed in the sitemap. If this is unchecked, only the URLs defined in the sitemap are crawled.  
+* **Crawl Beyond Sitemap** – Sitemap is a file that provides information about the important pages and files on the website. Check this field to crawl URLs beyond those listed in the sitemap. If this is unchecked, only the URLs defined in the sitemap are crawled.  
 
 * **Respect robots.txt directives** – Robots.txt file contains information about the URLs that the crawler can access on the website. This field, when checked, forces the crawler to honor any directives in the robots.txt file for the web domain.  
 
 * **Processing Options** - This enables you to choose the content for ingestion from a given web page. 
 
     * **Automatic Cleaning**- This option is useful for web pages where the header and footer may not contain information useful to the end users. When automatic cleaning is selected, the content in the header, footer, and head tags from the web page are removed before ingestion into the Search AI application. This helps exclude irrelevant sections and unnecessary content to be indexed from the web pages.
-    * **Retain Original** - When this option is selected, all the content from a web page is ingested into the application (including all HTML tags and their content).  For any specific transformation of the content on this page, use Workbench. 
+    * **Retain Original** - When this option is selected, all the content from a web page (including all HTML tags and their content) is ingested into the application. Use **Workbench** to transform the content on this page specifically.
 
-* **Crawl Options**– This field can be used to further filter the web pages to crawl from the list of URLs defined using the crawl source. You can choose to crawl and index all the URLs in the crawl source, or you can allow or block specific URLs from being crawled. This configuration can be used to avoid crawling unnecessary web pages from the source, thereby, optimizing indexing for efficient searches. The field can take one of the following values:
+* **Crawl Options**– This field can be used to further filter the web pages to crawl from the list of URLs defined using the crawl source. You can choose to crawl and index all the URLs in the crawl source or allow or block specific URLs from being crawled. This configuration can be used to avoid crawling unnecessary web pages from the source, thereby, optimizing indexing for efficient searches. The field can take one of the following values:
     * **Crawl everything** – Use this option when all the URLs in the domain specified by the Crawl Source are to be crawled. By default, when a new domain is added, this option is used, and all the URLs in the domain are used.
     * **Crawl everything except specific URLs** – Use this option when all the URLs except the blocked URLs are to be crawled. You can add rules to identify the blocked URLs, like _block if URL_ _contains or doesn’t contain _a specific term or if the_ URL is equal to_ a specific URL, as shown below. Select the condition from the drop-down list and specify its values in the text box on the right. 
         
@@ -95,9 +95,9 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
 To set a schedule, enter the following:    
    * **Date**: The date you want to schedule the first crawl of the web source.
    * **Time**: When you want to schedule the first crawling of the web source. Specify the hours and minutes in a 12-hour format along with the timezone.
-   * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the frequency at which you want to recrawl the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
+   * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the  the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
 
-* **Is this an Authenticated website?** - Enable this field if the source website is protected by a type of authentication mechanism. If the website requires authentication, provide relevant information to access the website depending on the authentication method. 
+* **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. 
 
 Search AI web crawling supports the two types of authentication - **Basic Authentication** and **Form-based Authentication**. Both are simple authentication schemes built into the HTTP protocol that are used to protect web resources. Although both mechanisms use a username and password to authenticate the client, the difference is in the way both are implemented. Basic Authentication uses an HTTP header to provide the username and password when making a request to the server. Whereas Form-based authentication uses standard HTML form fields to pass the username and password values to the server via a POST request. Depending on the authentication mechanism supported by the web domain, choose the authentication method from the drop-down menu. 
 
@@ -211,18 +211,18 @@ Search AI web crawling supports the two types of authentication - **Basic Authen
 
 ## Updating an existing web crawler
 
-You can edit the configuration for any crawl source at any time. This can be useful in case the authentication methods have changed, the crawl rules need to be updated, the crawling schedule is to be modified, etc. 
+You can edit the configuration for any crawl source at any time. This can be useful if the authentication methods have changed, the crawl rules need to be updated, the crawling schedule needs to be modified, etc. 
 
 !!!Note
-    We can all the properties of the web crawler except the crawl source. 
+    We can use all the properties of the web crawler except the crawl source. 
 
-Any changes made to the configuration come into effect either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  
+Any changes made to the configuration become effective either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  
 
 To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the **Configuration** tab. ![Update a web source](../images/update-websource.png "Updating a web source")
 
 ## View execution status and crawled pages
 
-Crawling a web domain takes time, depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2, and the max URLs are set to 10. When a new web source is added, you can execute the crawling process in the background. Also, the scheduled recrawls, which run at specific times are automatically run in the background. To view the pages that have been crawled in a web source, go to its **Pages** tab. This tab lists the pages that were crawled in the last update, along with the user who initiated the crawl and the URL of the crawled pages in three different categories:
+Crawling a web domain takes time, depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2, and the max URLs are set to 10. When a new web source is added, you can execute the crawling process in the background. Also, the scheduled recrawls, which run at specific times, are automatically run in the background. To view the pages that have been crawled in a web source, go to its **Pages** tab. This tab lists the pages that were crawled in the last update, along with the user who initiated the crawl and the URL of the crawled pages in three different categories:
 1. **Successful**: Pages that were successfully crawled
 2. **Failed**: Pages that failed to crawl
 3. **Skipped**: Pages that were skipped during crawling
@@ -248,7 +248,7 @@ It shows the current status of the web crawl, the timestamp of the most recent c
 ## Recrawling a web source
 
 Recrawling is required to keep up with the changes in the source. You can either schedule recrawling of the website at regular intervals using the scheduler or you can manually perform a recrawl operation as and when required. To manually recrawl a web source, click the **recrawl** action against the name of the source.
-![Recrawl Web Source](../images/recrawl-websource.png "recrawl web source")
+![Recrawl Web Source](../images/recrawl-webpage.png "recrawl web source")
 
 You can also use the Re-Crawl on the configuration page of the web source. ![Recrawl](../images/recrawl-websource-via-config-page.png "recrawl")
 
@@ -258,7 +258,7 @@ You can also recrawl selected pages of the source when you know the specific pag
 ## Deleting an existing web crawler
 
 When a resource is no longer required and you do not want the information to appear in the answers, delete the source from the application. To do so, go to the **Web Crawl page** that lists all the existing sources and click the delete link for the source you want to delete.
-![Delete Web Source](../images/delete-websource.png "delete web source")
+![Delete Web Source](../images/delete-webpage.png "delete web source")
 
 You can also delete one or more of the crawled pages individually from the source without deleting the source. To do so, go to the **Pages** tab for the selected source and click the **Delete** link under **Actions** for the page to be removed.
 ![Delete a page](../images/delete-pages.png "delete page")

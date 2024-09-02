@@ -17,8 +17,6 @@ Workbench offers stages to perform different types of operations sequentially. E
 
 Currently, Workbench supports three stages. 
 
-
-
 * **Field Mapping**: This stage can map fields in a document to a target field. The mapping is performed on the fields that satisfy the conditions defined for the mapping.
 * **Custom Script**: This stage can run a custom script on the input data. 
 * **Exclude Document**: This stage can be used to exclude some documents from being indexed. The documents/pages that satisfy the conditions defined in this stage are ignored. 
@@ -28,7 +26,7 @@ Currently, Workbench supports three stages.
 
 Adding a new stage requires defining the type of stage, the condition that selects the data on which the processing is to be done, and the outcome of the stage. 
 
- To add a new stage, go to the **Workbench** page under **Content** and click **+New Stage**. 
+ To add a new stage, go to the **Enrich** page under **Index** and click **+New Stage**. 
 
 
 ![Add a new stage](../images/workbench-home.png "add a new stage")
