@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This update includes enhancements and bug fixes.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Dialog Builder
 
@@ -33,6 +33,7 @@ Key benefits:
 * Improved accuracy: Reduces irrelevant responses and intent confusion.
 * Customization: Enables defining meta filters and search rules.
 * Seamless integration: Incorporates advanced search directly into conversation flows.  
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md){:target="_blank"}
 
 #### Real-time Collaboration in Dialog Builder 
@@ -44,9 +45,12 @@ Key updates:
 * Instant Cursor Chat: To initiate a cursor chat, use "Cmd+/" on Mac or "Ctrl+/" on Windows, or right-click on the dialog builder and select "Cursor Chat."
 * Dialog Access Claim:
     * A new notification system is in place for users when the current editor exits the dialog. This allows other users to claim edit access seamlessly.
-    * The first user to click on the edit access notification will immediately be granted editing rights, enabling them to continue working on the dialog in edit mode. 		
+
+    * The first user to click on the edit access notification will immediately be granted editing rights, enabling them to continue working on the dialog in edit mode. 	
+    <img src="../images/edit-access-granted.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">	
 
 * Collaborative viewing: The first user to open the app is automatically granted editing rights, while subsequent users join as viewers. This ensures clear control over who can make changes, reducing the potential for conflicts or errors.  
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
 
 #### Redesigned Property Panel for Dialog Builder Nodes
@@ -68,7 +72,35 @@ Key updates:
 * Case-insensitive search.
 * Matches from the beginning of field names.
 * Real-time results update.  
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/managing-dialogs.md#dialog-components){:target="_blank"}
+
+### Digital Forms
+
+#### Field Validations using Post Processor Script
+
+The platform now supports custom field validations in Digital Forms using a post-processor script. It allows platform users to create complex, custom validation rules using JavaScript, improving data collection accuracy and user experience.
+
+Key updates:
+
+* Custom Validation:
+    * JavaScript-based post-processor script.
+    * Supports dynamic variables, multi-field validations, and regex.
+* Design Time:
+    * An expandable text box for script input.
+    * Retry limit (20) with an error message on exceeding.
+* Run Time:
+    * Script processed on form submission.
+    * Error handling with task failure events and debug logs.
+* Validation Types:
+    * Field-level: Highlights field with the error message below
+    * Form-level: Displays error message above submit button
+
+Backward Compatibility:
+
+* Existing forms treat the post-processor as an empty script.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-forms.md#component-properties){:target="_blank"}
 
 ## v11.4.1 August 11, 2024
 
