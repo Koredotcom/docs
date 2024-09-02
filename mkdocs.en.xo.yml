@@ -482,8 +482,8 @@ nav:
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
           - Agent AI APIs:
-           - Raw Data API: apis/agent-ai/raw-data-api.md
-           - Agent AI Conversation Summary Trigger API: https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+trigger
+            - Raw Data API: apis/agent-ai/raw-data-api.md
+            - Agent AI Conversation Summary Trigger API: https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+trigger
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
           - Search AI APIs: apis/searchai/api-list.md
