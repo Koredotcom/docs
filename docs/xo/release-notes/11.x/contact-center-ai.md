@@ -49,7 +49,7 @@ This update introduces real-time monitoring and intervention features for superv
     * Whisper inputs are recorded in a different color.
     * Labeled with supervisor name and timestamp.
 
-[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen--whisper-voice-calls)
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen-and-whisper-voice-calls)
 
 ### Configuration
 
@@ -122,7 +122,7 @@ The "Yesterday" date filter is now available in all reports that previously did 
 
 When the "Yesterday" filter is selected in any report, it automatically includes all data from the previous day, from 12:00.00 AM to 11:59:59.999 PM.
 
-#### "Week to Date" and "Month to Date" Filters Added to Reports**
+#### "Week to Date" and "Month to Date" Filters Added to Reports
 
 This update has introduced two new date filters for reports. The filters provide more flexible and standardized options for viewing recent data, facilitating easier trend analysis and performance tracking.
 

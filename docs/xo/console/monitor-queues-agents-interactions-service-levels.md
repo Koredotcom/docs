@@ -332,7 +332,7 @@ Steps to Join a conversation:
 
 2. A confirmation pop-up appears. Click **Confirm** to join.
 
-### Listen & Whisper [Voice Calls]
+### Listen and Whisper [Voice Calls]
 Listen and Whisper functionalities enhance supervisors’ oversight and support capabilities in real-time voice conversations.
 
 Listen: This allows supervisors to discreetly monitor live voice conversations between agents and customers. By enabling this feature, supervisors can stay informed about ongoing interactions without participating directly, ensuring they are always aware of the dialogue and can step in if necessary.
