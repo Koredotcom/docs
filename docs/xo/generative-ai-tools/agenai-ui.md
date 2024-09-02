@@ -236,197 +236,249 @@ The following table displays the Dynamic Conversation features and the supported
 
 === "Automation AI"
 
-<table>
-  <tr>
-    <td><strong>Model</strong></td>
-    <td>GenAI Node</td>
-    <td>GenAI Prompt</td>
-    <td>Repeat Responses</td>
-    <td>Rephrase Dialog Responses</td>
-    <td>Rephrase User Query</td>
-    <td>Zero-shot ML Model</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅*</td>
-  </tr>
-   <tr>
-    <td>Azure OpenAI – GPT 4 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-    <tr>
-    <td>Azure OpenAI – GPT 4o</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅*</td>
-  </tr>
-    <tr>
-    <td>OpenAI – GPT 4 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-    <tr>
-    <td>OpenAI – GPT 4o</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude Instant</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Custom LLM</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Kore.ai XO GPT</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-</table>
-
-
+  <table>
+      <tr>
+        <td><strong>Model</strong></td>
+        <td>GenAI Node</td>
+        <td>GenAI Prompt</td>
+        <td>Repeat Responses</td>
+        <td>Rephrase Dialog Responses</td>
+        <td>Rephrase User Query</td>
+        <td>Zero-shot ML Model</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 3.5 Turbo</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅*</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4 Turbo</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+        <tr>
+        <td>Azure OpenAI – GPT 4o</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 3.5 Turbo</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅*</td>
+      </tr>
+        <tr>
+        <td>OpenAI – GPT 4 Turbo</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+        <tr>
+        <td>OpenAI – GPT 4o</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Anthropic – Claude Instant</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Anthropic – Claude</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Custom LLM</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Kore.ai XO GPT</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+    </table>
 
 === "Search AI"
 
-<table>
-  <tr>
-    <td><strong>Model</strong></td>
-    <td>Answer Generation</td>
-    <td>Vector Generation</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4 Turbo</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4o</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4 Turbo</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4o</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude Instant</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Custom LLM</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Kore.ai XO GPT</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-</table>
-
+  <table>
+      <tr>
+        <td><strong>Model</strong></td>
+        <td>Answer Generation</td>
+        <td>Vector Generation</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 3.5 Turbo</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4 Turbo</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4o</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 3.5 Turbo</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4 Turbo</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4o</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Anthropic – Claude Instant</td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Anthropic – Claude</td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Custom LLM</td>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Kore.ai XO GPT</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+    </table>
 
 === "Agent AI"
+
+  <table>
+      <tr>
+        <td><strong>Model</strong></td>
+        <td>Agent Response Rephrasing</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 3.5 Turbo</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4 Turbo</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Azure OpenAI – GPT 4o</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 3.5 Turbo</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4 Turbo</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>OpenAI – GPT 4o</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Anthropic – Claude Instant</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Anthropic – Claude</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Custom LLM</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Kore.ai XO GPT</td>
+        <td>❌</td>
+      </tr>
+    </table>
