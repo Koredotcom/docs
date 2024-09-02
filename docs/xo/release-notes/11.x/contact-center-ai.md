@@ -8,8 +8,6 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes only bug fixes.
 
-<hr>
-
 ### Agent Console
 
 #### Outbound Calling - Revised Dialpad Behavior
@@ -38,9 +36,9 @@ This update introduces real-time monitoring and intervention features for superv
 **Key updates**:
 
 * Listen Functionality:
-    * Real-time monitoring of live agent-customer conversations.
+    * A silent listening functionality, allowing supervisors to monitor agents' voice calls without causing disruptions on the agents' end.
 * Whisper Functionality:
-    * Private voice communication from supervisor to agent.
+    * Private voice instruction/guidance from supervisor to agent.
     * The customer cannot hear the supervisor's input.
 * User Interface Integration:
     * New "Listen" and "Whisper" options on the Monitor tab
@@ -96,7 +94,7 @@ This update significantly enhances the conferencing capabilities, enabling more 
 * Expanded Participation:
     * Up to 5 contact center participants (1 agent + 4 supervisors).
 * Improved Network Resilience:
-    * Isolated disconnections for affected participants.
+    * In case of network disruption, only the affected participants are disconnected.
     * Rejoin option for disconnected users.
 * Comprehensive Recording:
     * The recording status is updated in the database for compliance.
@@ -109,24 +107,6 @@ This update significantly enhances the conferencing capabilities, enabling more 
 * Improved Visibility:
     * Joined participants are highlighted in the chat transcript.
     * Clear conference indicators on the Monitor tab and Agent Console.
-
-#### Custom Email Domain Configuration for Contact Center AI
-
-The enhanced email configuration options allow users to set up and manage Kore and custom domain email addresses. The options significantly expand email capabilities, allowing businesses to maintain brand consistency in their communications while leveraging the full features of Contact Center AI.
-
-**Key updates**:
-
-* Kore Domain Email Management:
-    * Configure multiple Kore domain email addresses.
-    * Easy addition of new addresses via the "Add Email Address" button.
-    * Attach experience flows to specific email addresses.
-* Custom Domain Setup:
-    * "Add Domain" button for custom email domain configuration.
-    * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses.
-* Improved User Interface:
-* A dedicated "Email" tab is used for all email configurations.
-* Clear organization of Kore and custom domain settings.
 
 ### Analytics
 
@@ -167,7 +147,7 @@ The update has enhanced the system’s tracking and reporting capabilities for u
     * Now includes interaction duration for all involved agents and supervisors.
     * The "Interacting" field counts time for primary agents, consultants, and joined users.
 
-### API
+### Public API
 
 #### Enhanced Conversation Transfer Functionality
 
