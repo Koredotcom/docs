@@ -29,6 +29,8 @@ Agents now have more flexibility and validation options when dialing outbound ca
     * It supports dialing with or without country codes.
     * Allows manual country code changes.
 
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
 #### Enhanced Supervisor Capabilities: Listen and Whisper for Voice Calls
 
 This update introduces real-time monitoring and intervention features for supervisors during voice calls. The features significantly enhance supervisory capabilities, allowing agents to provide more effective and immediate assistance during customer interactions.
@@ -46,6 +48,8 @@ This update introduces real-time monitoring and intervention features for superv
 * Chat Transcript:
     * Whisper inputs are recorded in a different color.
     * Labeled with supervisor name and timestamp.
+
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen--whisper-voice-calls)
 
 ### Configuration
 
@@ -65,6 +69,8 @@ The new permission to manage the visibility of captured customer sentiment in th
 * Functionality:
     * When enabled, it displays real-time sentiment changes in the header pane.
     * Ensures agents have current information on customer sentiment.
+
+[Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 #### Email Address Blacklisting
 
@@ -106,7 +112,7 @@ This update significantly enhances the conferencing capabilities, enabling more 
     * The primary agent is responsible for After-Call Work (ACW).
 * Improved Visibility:
     * Joined participants are highlighted in the chat transcript.
-    * Clear conference indicators on the Monitor tab and Agent Console.
+    * Clear conference indicators on the Monitor tab and Agent Console. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#consult-call-conference-call-and-warm-transfer-for-voice-calls)
 
 ### Analytics
 
@@ -136,16 +142,16 @@ The update has enhanced the system’s tracking and reporting capabilities for u
 **Key updates**:
 
 * Interactions Dashboard:
-    * The new "Joined Users" field is in the Insights to Logs > Details tab.
+    * The new "Joined Users" field is in the **Insights to Logs** > **Details** tab. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
     * Displays a comma-separated list of users who joined the conversation.
 * Interactions Details Report:
     * The "Joined Users" column has been added to the CSV version.
     * Shows a pipe-separated list of joined users.
 * Call Details API v2:
-    * A new mandatory "JoinedUsers" array is added.
+    * A new mandatory "JoinedUsers" array is added. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
 * Agent Activity Summary Report:
     * Now includes interaction duration for all involved agents and supervisors.
-    * The "Interacting" field counts time for primary agents, consultants, and joined users.
+    * The "Interacting" field counts time for primary agents, consultants, and joined users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/agent-activity-summary-report.md)
 
 ### Public API
 
@@ -168,11 +174,11 @@ This update enhances the conversation transfer functionality through API, allowi
 * More versatile conversation routing.
 * Consistent transfer capabilities across API and Agent Console.
 * Enhanced chat management efficiency.
-* Improved clarity in transfer status communication.
+* Improved clarity in transfer status communication. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
 
 #### Extended Debug Logs API to SmartAssist Channel
 
-The debug logs API is updated to collect the debug logs of the SmartAssist channel.
+The debug logs API is updated to collect the debug logs of the SmartAssist channel. [Learn more :octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
 
 <hr>
 

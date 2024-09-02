@@ -142,7 +142,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 		
 
-## Product and Feature Support Matrix
+## Product and Supported Feature
 
 Select the product to view the supported features.
 
