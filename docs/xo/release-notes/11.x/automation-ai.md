@@ -45,7 +45,9 @@ Key updates:
 * Instant Cursor Chat: To initiate a cursor chat, use "Cmd+/" on Mac or "Ctrl+/" on Windows, or right-click on the dialog builder and select "Cursor Chat."
 * Dialog Access Claim:
     * A new notification system is in place for users when the current editor exits the dialog. This allows other users to claim edit access seamlessly.
-    * The first user to click on the edit access notification will immediately be granted editing rights, enabling them to continue working on the dialog in edit mode. 		
+
+    * The first user to click on the edit access notification will immediately be granted editing rights, enabling them to continue working on the dialog in edit mode. 	
+    <img src="../images/edit-access-granted.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">	
 
 * Collaborative viewing: The first user to open the app is automatically granted editing rights, while subsequent users join as viewers. This ensures clear control over who can make changes, reducing the potential for conflicts or errors.  
 
