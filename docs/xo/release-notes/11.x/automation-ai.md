@@ -2,6 +2,73 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.5.0 September 01, 2024
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes.
+
+### Dialog Builder
+
+#### Introducing Search AI Node
+
+The platform has introduced a new Search AI node in the dialog builder. The node empowers platform users to integrate advanced search capabilities directly into dialog flows, improving the accuracy and relevance of AI responses in complex, multi-topic environments.
+
+Key features:
+
+* Customizable Search Configuration:
+    * Query selection: Last user input or custom.
+    * Search Filters: Define meta filters to scope searches.
+* Flexible Results Configuration:
+    * Return Qualified Chunks: Access chunks via context variable.
+    * Generate Answer: Present standard response or store in context object.
+* Enhanced Control:
+    * Custom tags: Allow categorization and organization of search queries.
+    * Timeout configuration: Set limits on search duration to prevent delays.
+    * Error handling options: Define how the bot responds to search failures or timeouts.
+
+Key benefits:
+
+* Targeted searches: Allows scoping searches to specific topics or contexts.
+* Improved accuracy: Reduces irrelevant responses and intent confusion.
+* Customization: Enables defining meta filters and search rules.
+* Seamless integration: Incorporates advanced search directly into conversation flows.  
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md){:target="_blank"}
+
+#### Real-time Collaboration in Dialog Builder 
+
+This update transforms the Dialog Builder into a collaborative workspace, allowing multiple users to view, discuss, and seamlessly transition between editing roles. 
+
+Key updates:
+
+* Instant Cursor Chat: To initiate a cursor chat, use "Cmd+/" on Mac or "Ctrl+/" on Windows, or right-click on the dialog builder and select "Cursor Chat."
+* Dialog Access Claim:
+    * A new notification system is in place for users when the current editor exits the dialog. This allows other users to claim edit access seamlessly.
+    * The first user to click on the edit access notification will immediately be granted editing rights, enabling them to continue working on the dialog in edit mode. 		
+
+* Collaborative viewing: The first user to open the app is automatically granted editing rights, while subsequent users join as viewers. This ensures clear control over who can make changes, reducing the potential for conflicts or errors.  
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
+
+#### Redesigned Property Panel for Dialog Builder Nodes
+
+The redesigned property panel for Dialog Builder nodes was introduced in the previous release. It provides a fluid experience with better organization of the elements, easier discoverability of the options, and a new theme. The remaining second-level UI elements have also been updated to match the new theme.
+
+
+### Dialogs
+
+#### Manage Components Search Enhancement 
+
+The improved search functionality in the Manage Components page allows platform users to find components more easily, regardless of whether they remember a component's technical name or display name.
+
+Key updates:
+
+* A new "Display Name" field is added for all nodes.
+* Search now supports both Name and Display Name for all nodes.
+* Dynamic filtering as user types.
+* Case-insensitive search.
+* Matches from the beginning of field names.
+* Real-time results update.
+
 ## v11.4.1 August 11, 2024
 
 <u> Patch Release </u>
@@ -137,7 +204,6 @@ Key benefits:
 Backward compatibility:
 
 * Existing service nodes retain their current timeout behavior while the timeout settings are moved to the Instance Properties. 
-
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#instance-properties){:target="_blank"}
 
