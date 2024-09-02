@@ -5,7 +5,7 @@ This document provides information on the feature updates and enhancements intro
 ## v11.5.0 September 01, 2024
 <u> Patch Release </u>
 
-This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Agent AI Conversation Logs
 
@@ -43,6 +43,8 @@ Key updates:
 * **Expanded Language Options**: Added Indian, Dutch, and other major languages, a total of 33 supported languages.
 * **Comprehensive Integration**: Widget Settings, Feedback Settings, and Widget Theming.
 * **Specific Application Areas**: Auto Summarization, Default Widget Language, Various Feedback Types (Dialog Task, Answers, FAQ, Summary), and Widget Personalization Settings.
+
+<hr>
 
 ## v11.4.1 August 11, 2024
 <u> Patch Release </u>

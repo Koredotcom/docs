@@ -15,7 +15,7 @@ The **Delete App** option allows you to delete your App. To delete your app, fol
 
 5. A verification code is sent to the app owner's registered email. Enter this code to confirm deletion.
 
-    <img src="../images/delete-app-img3.png" alt="Delete app - confirm" title="Delete app - confirm" style="border:1px solid gray; zoom:70%;">
+<img src="../images/delete-app-img3.png" alt="Delete app - confirm" title="Delete app - confirm" style="border:1px solid gray; zoom:70%;">
 
 6. After successful verification, the app is soft-deleted. A published app with active dialog tasks can be restored within 30 days from the admin console.  
 <img src="../images/archived_app.jpg" alt="archived" title="archived" style="border:1px solid gray; zoom:70%;">

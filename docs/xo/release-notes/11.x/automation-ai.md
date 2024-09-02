@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This update includes enhancements and bug fixes.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Dialog Builder
 
@@ -101,6 +101,8 @@ Backward Compatibility:
 * Existing forms treat the post-processor as an empty script.
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-forms.md#component-properties){:target="_blank"}
+
+<hr>
 
 ## v11.4.1 August 11, 2024
 

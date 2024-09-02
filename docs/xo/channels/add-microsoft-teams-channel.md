@@ -187,7 +187,7 @@ To enable Proactive Notifications, follow these steps:
 
 ## MS Teams Chat Features
 
-### MS Teams: Ability to Update or Delete Delivered Bot Messages
+### Ability to Update or Delete Delivered Bot Messages
 
 Developers now can update or delete bot messages in Microsoft Teams even after they have been delivered to users. This feature provides greater flexibility and control, allowing developers to disable or remove template messages after a user has taken action on them.
 
@@ -289,35 +289,35 @@ if(channelActionMetadata){
     * When an existing bot message is updated using this function, the platform will automatically update the message in the chat history.
     * By default, the platform will emit message tags for any messages that are updated or deleted using this function.
 
-**Tag Values**:
+**Tag Values**
 
 
-
-* For updated messages: \<Key>:\<Value>
-
+* For updated messages: `<Key>`:`<Value>`
+    
     channel_action: update_message
-* For deleted messages: \<Key>:\<Value>
+
+* For deleted messages: `<Key>`:`<Value>`
 
     channel_action: delete_message
 
 
 
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/update-delete5.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+
+
+<img src="../images/update-delete6.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+
+
+<img src="../images/update-delete2.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
 <img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/update-delete3.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
-
-
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
-
-
-<img src="../images/update-delete1.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/update-delete4.png" alt="Update or Delete Message" title="Update or Delete Message" style="border: 1px solid gray; zoom:70%;">
 
 
 
