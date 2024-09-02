@@ -39,6 +39,8 @@ The following table lists the details included in the window for each component 
 
 <li>Name
 
+<li>Display Name
+
 <li>Description
 
 <li>Dialog Tasks used in
@@ -53,6 +55,8 @@ The following table lists the details included in the window for each component 
 <ul>
 
 <li>Name
+
+<li>Display Name
 
 <li>Entity Type
 
@@ -69,6 +73,8 @@ The following table lists the details included in the window for each component 
 
 <li>Name
 
+<li>Display Name
+
 <li>Service Type
 
 <li>Dialog Tasks used in
@@ -84,6 +90,8 @@ The following table lists the details included in the window for each component 
 
 <li>Name
 
+<li>Display Name
+
 <li>Dialog Tasks used in
 </li>
 </ul>
@@ -96,6 +104,8 @@ The following table lists the details included in the window for each component 
 <ul>
 
 <li>Name
+
+<li>Display Name
 
 <li>Dialog Tasks used in
 </li>
@@ -110,6 +120,38 @@ The following table lists the details included in the window for each component 
 
 <li>Name
 
+<li>Display Name
+
+<li>Dialog Tasks used in
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>GenAI Node</strong>
+   </td>
+   <td>
+<ul>
+
+<li>Name
+
+<li>Display Name
+
+<li>Dialog Tasks used in
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>GenAI Prompt</strong>
+   </td>
+   <td>
+<ul>
+
+<li>Name
+
+<li>Display Name
+
 <li>Dialog Tasks used in
 </li>
 </ul>
@@ -122,6 +164,10 @@ The following table lists the details included in the window for each component 
 <ul>
 
 <li>Name
+
+<li>Display Name
+
+<li>Dialog Tasks used in
 </li>
 </ul>
    </td>
@@ -133,6 +179,10 @@ The following table lists the details included in the window for each component 
 <ul>
 
 <li>Name
+
+<li>Display Name
+
+<li>Dialog Tasks used in
 </li>
 </ul>
    </td>
@@ -144,6 +194,8 @@ The following table lists the details included in the window for each component 
 <ul>
 
 <li>Name
+
+<li>Display Name
 
 <li>Dialog Tasks used in
 </li>
@@ -158,6 +210,8 @@ The following table lists the details included in the window for each component 
 
 <li>Name
 
+<li>Display Name
+
 <li>Dialog Tasks used in
 </li>
 </ul>
@@ -171,6 +225,8 @@ The following table lists the details included in the window for each component 
 
 <li>Name
 
+<li>Display Name
+
 <li>Dialog Tasks used in
 </li>
 </ul>
@@ -183,20 +239,19 @@ The following table lists the details included in the window for each component 
 <ul>
 
 <li>Name
+
+<li>Display Name
+
+<li>Dialog Tasks used in
 </li>
 </ul>
    </td>
   </tr>
 </table>
 
-
-
 ## Upgrade Tasks
 
 After you publish a task, the Bots Admin approves and deploys the task to make changes in the published bot. You must upgrade the bot; then publish the upgrade for Bots Admin approval and deploy it to users.
-
-The bot **Name** can only be changed if the bot is not published. To change the name of a published bot, the Bots Admin must suspend the bot by removing all assigned users and marking the bot task inactive.
-
 
 ### Upgrade Tasks
 
