@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This update includes enhancements and bug fixes.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### App Management
 
@@ -66,6 +66,7 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md){:target="_blank"}
 
+<hr>
 
 ## v11.4.1 August 11, 2024
 

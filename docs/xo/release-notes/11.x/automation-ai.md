@@ -102,6 +102,8 @@ Backward Compatibility:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/digital-skills/digital-forms.md#component-properties){:target="_blank"}
 
+<hr>
+
 ## v11.4.1 August 11, 2024
 
 <u> Patch Release </u>
