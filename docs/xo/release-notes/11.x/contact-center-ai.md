@@ -71,7 +71,7 @@ The new permission to manage the visibility of captured customer sentiment in th
 #### Email Address Blacklisting
 
 This update introduces an Email Address Blacklisting functionality for contact center administrators. It helps contact centers maintain a clean communication channel, improve efficiency, and protect their email reputation by proactively managing potentially problematic email addresses.  
-<img src="../images/blacklist-toggle.png" alt="Email Blacklist" title="Email Blacklist" style="border: 1px solid gray; zoom:55%;">
+<img src="../images/blacklist-toggle.png" alt="Email Blacklist" title="Email Blacklist" style="border: 1px solid gray; zoom:60%;">
 
 **Key updates**:
 
