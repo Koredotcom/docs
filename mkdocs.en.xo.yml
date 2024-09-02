@@ -188,7 +188,8 @@ nav:
           - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
           - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
           - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
-          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
+          - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Node Connections:
           - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
           - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 

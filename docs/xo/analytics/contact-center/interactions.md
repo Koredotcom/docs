@@ -203,9 +203,16 @@ A confirmation message is displayed and the filter is deleted.
 
 ## Insights to Logs
 
-The Insights to Logs section provides details of the conversation between the contact and the agent and is detailed under the CHAT HISTORY tab.
+The Insights to Logs panel provides details of the conversation between the contact and the agent.
 
-Click the interaction to view the Insights to Logs panel. CHAT HISTORY details are displayed.  
+Click the interaction to view the Insights to Logs panel. The following tabs are displayed:
+
+TRANSCRIPT – (formerly CHAT HISTORY)
+DETAILS
+USER
+IDENTIFIERS
+
+Icons beside the Insights to Logs header show the Direction (inbound or outbound), Language, and Channel.  
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/insights-to-logs-1.png" alt="Insights to Log 1" title="Insights to Log 1" style="border: 1px solid gray; zoom:80%;">

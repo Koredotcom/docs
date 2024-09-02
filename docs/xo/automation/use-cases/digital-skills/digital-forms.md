@@ -148,9 +148,9 @@ The below sections contain the keys that you may need to manipulate:
 
 !!! Tip
 
-    The entire JSON is usually large, and it may be a challenge to find out the keys that need to be manipulated. You may consider copying the entire JSON, pasting it in any JSON Viewer application wherein you can collapse and expand the sections. You can expand only the **components** and **formMsgMeta** sections for convenience.
+    The entire JSON is usually large, and it may be a challenge to find out the keys that need to be manipulated. You may consider copying the entire JSON, pasting it in any JSON Viewer application wherein you can collapse and expand the sections. You can expand only the components and formMsgMeta sections for convenience.
 
-    <img src="../../images/xop-8553-json-sections-collapsed.png" alt="Components and Metadata sections in the JSON viewer" title="Components and Metadata sections in the JSON viewer" style="border:1px solid gray; zoom:60%;">
+<img src="../../images/xop-8553-json-sections-collapsed.png" alt="Components and Metadata sections in the JSON viewer" title="Components and Metadata sections in the JSON viewer" style="border:1px solid gray; zoom:60%;">
 
 #### Components
 
@@ -1681,12 +1681,26 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    </td>
    <td>
 <ul>
-
 <li>Field or Value from which to auto-populate
 
 <li>Field name or the actual value based on the above selection
 </li>
 </ul>
+   </td>
+  </tr>
+  <tr bgcolor="#ECECEC">
+   <td colspan="2" ><strong>Custom Validation</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Custom Validation</strong>
+   </td>
+   <td><p>Perform complex field and form level validations on dynamic variables by defining a JavaScript code for the Post Processor script. When the <b>Submit</b> button is clicked, the script runs to perform custom validations on multiple form fields before the form submission.</p>
+   
+   <p>For example, create a script that ensures the phone number field accepts only 10-digit numbers and rejects any alphabets or special characters.</p>   
+   <p><b>Failure Scenario</b></p>
+   <ul><li>If the defined Post-Processor script fails, a task failure event is triggered, and the reason for the failure is logged under <b>Task Execution Logs</b> > <b>Debug Log</b> for the <b>Form</b> node.</li>
+   <li><p>When a field-level validation error occurs, the specific error field is highlighted, and the error message defined in the script is displayed below the field and above the <b>Submit</b> button.</p></li></ul>   
    </td>
   </tr>
 </table>
