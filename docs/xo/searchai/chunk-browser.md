@@ -1,23 +1,21 @@
-# Introduction
+# Content Browser
 
-The Chunk Browser provides a tool to observe the extracted chunks from the source data. It gives you insight into the output from the extraction process and enables you to take subsequent actions like editing and rectifying the chunks. This not only allows you to view and verify the extracted chunks but also allows you to edit them, enabling you to work with answers that best serve your specific goals and requirements.
-
+The Content Browser provides a tool to observe the extracted chunks from the source data. It gives insights into the output from the extraction process and enables you to take subsequent actions like editing and rectifying the chunks. This not only allows you to view and verify the extracted chunks but also allows you to edit them, enabling you to work with answers that best serve your specific goals and requirements.
 
 ## Key capabilities
 
-* **_Observation and Verification:_** You can use the Chunk Browser to inspect and verify the extracted chunks. This step is crucial for ensuring the correctness of the extraction process, the accuracy of the chunks generated, and to ensure that no data is lost during extraction. 
-* **_Editing of Chunks_**: You can edit the chunk information directly within the browser interface. This capability can help you add any missed information, edit inaccurate information, or simply enrich the extracted information.
+* **Observation and Verification:** You can use the Browser to inspect and verify the extracted chunks. This step is crucial for ensuring the correctness of the extraction process, the accuracy of the chunks generated, and to ensure that no data is lost during extraction.
+* **Editing of Chunks**: You can edit the chunk information directly within the browser interface. This capability can help you add any missed information, edit inaccurate information, or enrich the extracted information.
 
-To view the chunks, go to the **Chunk Browser** under the **Content** tab. The chunks browser displays chunks from all the data ingested into the application. 
+Go to the **Browse** section under the **Index** tab to view the chunks. The chunks browser displays chunks from all the data ingested into the application. 
 
-
-![View Chunks](../images/chunk-browser.png "View Chunks")
+![View Chunks](../images/browser-home.png "View Chunks")
 
 ## View Chunk Details
 
-To view the details of any chunk, click the chunk record. The Chunk Viewer displays the summary of the selected chunk.
+Click the **Details** icon to view the details of a chunk. 
 
-![Chunk Viewer](../images/summary-view.png "Chunk Viewer")
+![Chunk Viewer](../images/chunk-details.png "Chunk Viewer")
 
 * **Document Title**: Title of the document/page in the source from where the chunk is extracted.
 * **Chunk Title**: Title given to the chunk 
@@ -33,8 +31,6 @@ To view the details of any chunk, click the chunk record. The Chunk Viewer displ
 
 The Chunk Viewer also provides the following options:
 
-**View All from Document**: This can be used to see all the chunks from the same source document as the chunk displayed. 
-
 **View JSON**: This can be used to view the contents of the chunk in JSON format. It lists all the properties that store information about the chunk.  
 
 ![Chunk Viewer](../images/json-view.png "Chunk Viewer")
@@ -45,11 +41,20 @@ The Chunk Viewer also allows you to edit and update the title and text of the ch
 
 ![Update Chunks](../images/update-chunk.png "Update Chunks")
 
+You can also edit the chunk text from the browser home page using the Edit option. 
+
+![Update Chunks](../images/edit-chunk.png "Update Chunks")
+
+Make changes to the text as required and click **Save**. 
+
+![Update Chunks](../images/save-edited-chunk.png "Update Chunks")
+
+
 ## Search and Filter Chunks
 
 You can also use the chunk browser to search for specific chunks using any of the properties of the chunks like chunkTitle, chunkText, source, etc. Use the **search bar** at the top to search for chunks.
 
-![Search Chunks](../images/search-bar.png "Search Chunks")
+![Search Chunks](../images/search-chunk.png "Search Chunks")
 
 The **Filter option** offers you an advanced search capability that can be used to find chunks based on various chunk properties like source types, extraction strategy, content, etc. You can use one or more of these fields to find the corresponding chunks. For example, to search for all the chunks from a particular content source, “Kore blogs”, containing the words “virtual assistant”, you can set up a filter as shown below. 
 
