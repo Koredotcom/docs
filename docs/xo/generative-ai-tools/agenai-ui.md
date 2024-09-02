@@ -1,48 +1,89 @@
 
 
+=== "Automation AI"
 
-      - Generative AI Tools:
-        - Introduction: app-settings/generative-ai-tools/introduction.md
-        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
-        - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
-        - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
-        - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md 
-        - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
-        - Guardrails: app-settings/generative-ai-tools/guardrails.md    
+    * GenAI Node
+    * GenAI Prompt
+    * Repeat Responses
+    * Rephrase Dialog Responses
+    * Rephrase User Query
+    * Zero-shot ML Model
 
+=== "Search AI"
 
+    <table>
+    <tr>
+      <td><strong>Model</strong></td>
+      <td>Agent Response Rephrasing</td>
+    </tr>
+    <tr>
+      <td>Azure OpenAI – GPT 3.5 Turbo</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Azure OpenAI – GPT 4</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Azure OpenAI – GPT 4 Turbo</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Azure OpenAI – GPT 4o</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>OpenAI – GPT 3.5 Turbo</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>OpenAI – GPT 4</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>OpenAI – GPT 4 Turbo</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>OpenAI – GPT 4o</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Anthropic – Claude Instant</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Anthropic – Claude</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Custom LLM</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Kore.ai XO GPT</td>
+      <td>❌</td>
+    </tr>
+  </table>
 
-      - Generative AI Tools:
-        - Overview: app-settings/generative-ai-tools/introduction.md
-        - Models Library:
-          - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
-          - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
-        - Prompts Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
-        - GenAI Features:
-          - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
-          - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
-        - Safeguards:
-          - Data Anonymization: app-settings/generative-ai-tools/pii-and-sensitive-data.md
-          - Guardrails: app-settings/generative-ai-tools/guardrails.md
+=== "Agent AI"
 
+    | Model                       | Agent Response Rephrasing |
+    |-----------------------------|---------------------------|
+    | Azure OpenAI – GPT 3.5 Turbo | ✅                        |
+    | Azure OpenAI – GPT 4         | ❌                        |
+    | Azure OpenAI – GPT 4 Turbo   | ❌                        |
+    | Azure OpenAI – GPT 4o        | ❌                        |
+    | OpenAI – GPT 3.5 Turbo       | ✅                        |
+    | OpenAI – GPT 4               | ❌                        |
+    | OpenAI – GPT 4 Turbo         | ❌                        |
+    | OpenAI – GPT 4o              | ❌                        |
+    | Anthropic – Claude Instant   | ❌                        |
+    | Anthropic – Claude           | ❌                        |
+    | Custom LLM                   | ❌                        |
+    | Kore.ai XO GPT               | ❌                        |
 
-      - Generative AI Tools:
-        - Overview: generative-ai-tools/introduction.md
-        - Models Library:
-          - LLM Integration: generative-ai-tools/models-library.md
-          - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
-        - Prompts Library: generative-ai-tools/prompts-library.md
-        - GenAI Features:
-          - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
-          - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
-        - Safeguards:
-          - Data Anonymization: generative-ai-tools/data-anonymization.md
-          - Guardrails: generative-ai-tools/guardrails.md 
-        
-        
-       
-         The following table displays the Co-Pilot features and the supported products.
+<hr>
 
 (✅ Supported | ❌ Not supported)
 
@@ -428,57 +469,95 @@ The following table displays the Dynamic Conversation features and the supported
 
 === "Agent AI"
 
-  <table>
-      <tr>
-        <td><strong>Model</strong></td>
-        <td>Agent Response Rephrasing</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 3.5 Turbo</td>
-        <td>✅</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 4</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 4 Turbo</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Azure OpenAI – GPT 4o</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 3.5 Turbo</td>
-        <td>✅</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 4</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 4 Turbo</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>OpenAI – GPT 4o</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Anthropic – Claude Instant</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Anthropic – Claude</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Custom LLM</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Kore.ai XO GPT</td>
-        <td>❌</td>
-      </tr>
-    </table>
+<table>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td>Agent Response Rephrasing</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4o</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4 Turbo</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4o</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Anthropic – Claude Instant</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Anthropic – Claude</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Custom LLM</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Kore.ai XO GPT</td>
+    <td>❌</td>
+  </tr>
+</table>
+<hr>
+
+--------------------------------------
+=== "Agent AI"
+
+    | Model                       | Agent Response Rephrasing |
+    |-----------------------------|---------------------------|
+    | Azure OpenAI – GPT 3.5 Turbo | ✅                        |
+    | Azure OpenAI – GPT 4         | ❌                        |
+    | Azure OpenAI – GPT 4 Turbo   | ❌                        |
+    | Azure OpenAI – GPT 4o        | ❌                        |
+    | OpenAI – GPT 3.5 Turbo       | ✅                        |
+    | OpenAI – GPT 4               | ❌                        |
+    | OpenAI – GPT 4 Turbo         | ❌                        |
+    | OpenAI – GPT 4o              | ❌                        |
+    | Anthropic – Claude Instant   | ❌                        |
+    | Anthropic – Claude           | ❌                        |
+    | Custom LLM                   | ❌                        |
+    | Kore.ai XO GPT               | ❌                        |
+
+=== "Agent AI MD "
+
+  | Model                       | Agent Response Rephrasing |
+  |-----------------------------|---------------------------|
+  | Azure OpenAI – GPT 3.5 Turbo | ✅                        |
+  | Azure OpenAI – GPT 4         | ❌                        |
+  | Azure OpenAI – GPT 4 Turbo   | ❌                        |
+  | Azure OpenAI – GPT 4o        | ❌                        |
+  | OpenAI – GPT 3.5 Turbo       | ✅                        |
+  | OpenAI – GPT 4               | ❌                        |
+  | OpenAI – GPT 4 Turbo         | ❌                        |
+  | OpenAI – GPT 4o              | ❌                        |
+  | Anthropic – Claude Instant   | ❌                        |
+  | Anthropic – Claude           | ❌                        |
+  | Custom LLM                   | ❌                        |
+  | Kore.ai XO GPT               | ❌                        |
+
+<hr>
