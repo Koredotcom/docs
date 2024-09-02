@@ -292,11 +292,11 @@ if(channelActionMetadata){
 **Tag Values**
 
 
-* For updated messages: <Key>:<Value>
+* For updated messages: `<Key>`:`<Value>`
     
     channel_action: update_message
 
-* For deleted messages: \<Key>:\<Value>
+* For deleted messages: `<Key>`:`<Value>`
 
     channel_action: delete_message
 
