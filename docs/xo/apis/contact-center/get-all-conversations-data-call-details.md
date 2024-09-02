@@ -26,31 +26,20 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 ## Sample Requests
 
 ```
-curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/655c4bb112e26942040bxxxx/v2/interactionDetails?offset=0&limit=100' \
---header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
---header 'accountid: 6371bd516c3784060222xxxx' \
---header 'Accept: application/json, text/plain, /' \
---header 'Content-Type: application/json' \
+curl --location --request POST 'https://staging-smartassist.kore.ai/agentassist/api/public/analytics/account/65269fe0dd9c622245c1xxxx/v2/calldetails?offset=0&limit=100' \
+--header 'authority: staging-smartassist.kore.ai' \
+--header 'accept: application/json, text/plain, /' \
+--header 'accept-language: en-US,en;q=0.9' \
+--header 'accountid: 65269fe0dd9c622245c1xxxx' \
+--header 'app-language: en' \
+--header 'content-type: application/json;charset=UTF-8' \
+--header 'referer:
+SmartAssist ' \
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUxZWE1ZGYyLTY3NDItNTlmNi1iNjg1LWUyNTJmNDE5ZjBlMyJ9.DAPhx_h32KPSoylUfGWpjQS2tITBcBxNYAEwPJWxxxx' \
 --data-raw '{
-
-"startDate":"2023-11-18",
-
-"endDate":"2023-11-21",
-"timeZoneOffset":300
-}'
-```
-```
-curl --location --request POST 'http://{{host}}/agentassist/api/public/analytics/account/655c4bb112e26942040bxxxx/v2/calldetails?offset=0&limit=100' \
---header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
---header 'accountid: 6371bd516c3784060222xxxx' \
---header 'Accept: application/json, text/plain, /' \
---header 'Content-Type: application/json' \
---data-raw '{
-
-"startDate":"2023-11-18",
-
-"endDate":"2023-11-21",
-"timeZoneOffset":300
+"startDate":"2024-08-24",
+"endDate":"2024-08-24",
+"timeZoneOffset":-330
 }'
 ```
 
@@ -76,55 +65,115 @@ curl --location --request POST 'http://{{host}}/agentassist/api/public/analytics
 
 ```
 {
-    "numResults": 1,
+    "numResults": 13,
     "data": [
         {
-            "conversationId": "c-ed526c9-6099-4b44-b35a-3c253981xxxx",
-            "sessionId": "655c7c04637e80158be1xxxx",
-            "channel": "campaign",
-            "isVoicemail": false,
-            "Direction": "Outbound",
+            "sessionId": "66c97ba342aad0ced15fxxxx",
+            "channel": "AgentAssistV2",
+            "sessionStartTime": "2024-08-24T11:50:19",
+            "sessionEndTime": "2024-08-24T11:50:19",
+            "botId": "st-24ccdea9-de4e-5139-923f-883c53ffxxxx",
+            "userId": "u-1a94ad5b-741f-5f58-bf94-74065b30xxxx",
+            "channelSpecificUserId": "65269fe0dd9c622245c1xxxx/agentassist/c-221bca2-cbe8-4996-8216-187e1a69xxxx",
+            "orgId": "o-2d494e9d-b8f6-55d2-844e-a5bc4ca3xxxx",
+            "finalStatus": "BotResolved"
+        },
+        {
+            "conversationId": "c-4c93422-e5d3-4e99-9d3c-e1e30238xxxx",
+            "sessionId": "66c9a55754638e543c37xxxx",
+            "channel": "voice",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
             "finalStatus": "CLOSED",
-            "botId": "st-84321a8b-08cd-56c8-8aef-681a850bxxxx",
-            "dispositions": [],
+            "botId": "st-24ccdea9-de4e-5139-923f-883c53ffxxxx",
+            "dispositions": [
+                "Resolved"
+            ],
             "dispositionRemarks": [
-                "Consumer and Agent are talking to each other."
+                "The customer had an issue with their internet service. They were unable to connect to the internet and were experiencing slow speeds. The customer also mentioned that they had been experiencing this issue for a while. The customer was frustrated with the situation and expressed their dissatisfaction with the service. The bot acknowledged the issue and informed the customer that an agent would be required to assist them further. The conversation ended with the customer being asked to hold while an available agent was found."
             ],
             "metaInfo": {
-                "userId": "u-c0a2b67a-70de-50ef-8cec-ad01bd29xxxx",
+                "caller": "+18448735673",
+                "callee": "+16095344861",
+                "callerHost": "50.19.121.248",
+                "userId": "u-df4d1529-ae2d-58e2-8759-f748e232xxxx",
+                "dialedNumber": "+16095344861",
+                "agentTransferConfig": {
+                    "skillsIds": [],
+                    "overrideAgents": false,
+                    "overrideValues": [],
+                    "assistEvents": {
+                        "startEvent": {
+                            "isEnabled": false
+                        }
+                    },
+                    "lastIntentName": "ConnectToAgent",
+                    "automationBotId": "st-06e05f6e-5fd0-58fa-8e16-7e7c33acxxxx",
+                    "accountId": "65269fe0dd9c622245c1xxxx"
+                },
+                "workinghours": {
+                    "workdays": "mon,tue,wed,thu,fri",
+                    "workstart": "8:00 AM",
+                    "workend": "5:00 PM"
+                },
+                "profImage": "no-avatar",
+                "profColour": "#00ff7f",
+                "jTitle": "",
+                "dept": "",
+                "activationStatus": "active",
                 "firstName": "",
                 "lastName": "",
-                "callee": "+123456789",
-                "caller": "+91987654321",
-                "countryCode": "+91",
-                "dialedNumber": "+123456789",
-                "agentTransferConfig": {
-                    "overrideAgents": false
-                }
+                "orgId": "o-33749baa-f662-5ae8-b506-4b3bf787xxxx",
+                "_id": "u-df4d1529-ae2d-58e2-8759-f748e232xxxx",
+                "identities": [
+                    {
+                        "val": "cs-ab30569a-ee38-5408-a0ea-43398a16xxxx/259034b7-0d08-487d-a451-aaf5de2dxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "65269fe0dd9c622245c1xxxx/korevg/259034b7-0d08-487d-a451-aaf5de2dxxxx",
+                        "type": "mapped"
+                    }
+                ]
             },
-            "userId": "u-53592241-7a9f-52d5-b764-62d707b4xxxx",
+            "sessionStartTime": "2024-08-24T14:48:15",
+            "sessionEndTime": "2024-08-24T14:50:48",
+            "channelSpecificUserId": "65269fe0dd9c622245c1xxxx/korevg/259034b7-0d08-487d-a451-aaf5de2dxxxx",
+            "userId": "u-df4d1529-ae2d-58e2-8759-f748e232xxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
-                    "queueId": "qu-cea1d08-94dc-4825-97da-1d335774xxxx",
+                    "queueId": "qu-77506d0-c529-4a71-a007-cc718742xxxx",
                     "queueName": "Default Queue",
-                    "EnterTime": "2023-11-20T13:48:13",
+                    "EnterTime": "2024-08-24T14:48:16",
                     "respondingAgent": {
-                        "agentId": "u-53592241-7a9f-52d5-b764-62d707b4xxxx",
-                        "name": "john doe",
+                        "agentId": "u-f2f39007-4c2c-54dc-9233-86a63c82xxxx",
                         "agentNotes": [],
-                        "email": "john doe@domain.com",
-                        "assignedAt": "2023-11-20T13:48:13",
                         "destinationType": "AgentSegment",
                         "status": "Answered",
-                        "acceptedTime": "2023-11-20T13:48:14",
-                        "interactionEndTime": "2023-11-20T13:48:45",
-                        "interactionDuration": 32
+                        "firstResponseTime": "2024-08-24T14:48:33",
+                        "firstResponseDuration": 0,
+                        "interactionEndTime": "2024-08-24T14:48:53",
+                        "interactionDuration": 20,
+                        "ConsultingAgents": [],
+                        "JoinedUsers": [
+                            {
+                                "agentId": "u-85041b83-16bd-55ca-a95d-24968945xxxx",
+                                "email": "agent.user1@getnada.com",
+                                "name": "detective agent1",
+                                "joinedAt": "2024-08-24T14:48:47",
+                                "end": "2024-08-24T14:48:56"
+                            }
+                        ],
+                        "email": "newaccount@mailinator.com",
+                        "name": "new account",
+                        "acceptedTime": "2024-08-24T14:48:33",
+                        "assignedAt": "2024-08-24T14:48:30"
                     }
                 }
             ]
-        }
-    ]
+        },
+    ] 
 }
 ```
 
