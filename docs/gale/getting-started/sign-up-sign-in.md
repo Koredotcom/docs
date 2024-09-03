@@ -87,7 +87,7 @@ An account owner or master admin can perform the following functions:
 * Set up which users will receive email notifications when they are added to the admin’s account.
 * Manage guardrail scanners and configured integrations for the account.
 
-## New Account Sign-up and Activation
+## New Account Sign Up and Activation
 
 If you do not have an account on GALE, visit this home page [link](https://gale.kore.ai/){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
 
@@ -112,7 +112,7 @@ Alternatively, enter your email address and click **Continue** to sign up via em
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can sign in and enter the password if the email address is registered.</p>
+<p>You can sign in by entering the password if the email address is registered.</p>
 </div>
 
 <div class="admonition warning">
@@ -126,12 +126,20 @@ Once the admin accepts your request via an invitation, you can complete the sign
 
 <ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Ensure you set a strong password that follows all the requirements.</p>
-</div>
+<p>Ensure you set a strong password that includes the following:</p>
+<ul><li>A minimum of 12 characters.</li>
+<img src="../images/password-12-characters-long.png" alt="12 characters" title="12 characters" style="border: 1px solid gray; zoom:75%;"></ul>
+<ul><li>At least one special character.</li>
+<img src="../images/password-special-character.png" alt="special character" title="special character" style="border: 1px solid gray; zoom:75%;"></ul>
+<ul><li>At least one number.</li>
+<img src="../images/password-number-character.png" alt="number required" title="number required" style="border: 1px solid gray; zoom:75%;"></ul>
+<ul><li>At least one lower case character.</li>
+<img src="../images/password-lowercase-character.png" alt="lower case" title="lower case" style="border: 1px solid gray; zoom:75%;"></ul>
+<ul><li>At least one upper case character.</li>
+<img src="../images/password-uppercase-character.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;"></ul>
 
-<img src="../images/strong-password.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
+<p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> button is enabled.</p>
+<img src="../images/strong-password-set.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
 
 ### **Account Activation**
 
@@ -238,15 +246,17 @@ The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-
 
 #### Change Expired Password
 
-When your password expires, the system redirects to the following page where you can change the expired password.
+When your password expires after 90 days, the system redirects to the following page where you can change the expired password.
 
-<img src="../images/change-password.png" alt="change password" title="change password" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/change-password-screen.png" alt="change password" title="change password" style="border: 1px solid gray; zoom:75%;">
 
-To change the password, enter the expired password in the **Old Password** textbox and follow Steps 4 and 5 in the previous section. Please ensure the password value matches the **New password** and **Confirm password** fields.
+To change the password, enter the expired password in the **Old Password** textbox and follow Steps 4 and 5 in the previous section. Please ensure the password values in the **New password** and **Confirm password** fields match to enable the <b>Reset Password</b> button.
 
-A mismatch displays the following error message:
+<img src="../images/old-new-password-match.png" alt="passwords match" title="passwords match" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/password-mismatch.png" alt="password mismatch" title="password mismatch" style="border: 1px solid gray; zoom:75%;">
+A mismatch in the **New password** and **Confirm password** fields displays an <b>Alert</b> icon against the mismatched field, while disabling the <b>Reset Password</b> button, as shown below:
+
+<img src="../images/old-new-password-mismatch.png" alt="passwords mismatch" title="passwords mismatch" style="border: 1px solid gray; zoom:75%;">
 
 ## GALE Landing Page
 

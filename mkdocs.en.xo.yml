@@ -534,7 +534,7 @@ nav:
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
       - Agent AI Dashboard: analytics/contact-center/agentai-dashboard.md
-      - Agent AI Conversation Logs: https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-logs/?h=agentai+logs
+      - Agent AI Conversation Logs: https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-conversation-logs
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:

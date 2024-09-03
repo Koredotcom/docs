@@ -3,7 +3,7 @@
 GALE’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage GALE’s system configurations to manage the following:
 
 * Users
-* Roles and permissions
+* [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
 * [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 * Integrations
 * Manage Guardrails 
@@ -42,7 +42,9 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * View system-generated roles for <b>account</b> and <b>agent</b> role types.
 * Duplicate the roles and make custom changes.
 * View the enabled/disabled access controls for various modules and permissions for system roles.
-* Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles.
+* Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
+
+[Learn more](../settings/user-management/role-management.md)
 
 **Settings**
 
@@ -118,7 +120,8 @@ The following modules and features are supported on the Settings Console:
 <li>View, assign, and reassign system/ default or custom roles. <strong>You cannot edit or delete system roles.</strong></li>
 <li>Create a copy or duplicate of a system role as a custom role and manage its permissions and access levels.</li>
 <li>Add, delete, edit permissions’ access for, and duplicate custom roles.</li>
-<li>For agent and account role types, assign/unassign permissions and set access levels for various module aspects like agents, models, playgrounds and experiments, billing, integrations, guardrails, security and control settings, and user management tasks.</li></ul>
+<li>For agent and account role types, assign/unassign permissions and set access levels for various module aspects like agents, models, playgrounds and experiments, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
+</ul>
 
 <p><strong>Settings</strong></p>
 <ul>
