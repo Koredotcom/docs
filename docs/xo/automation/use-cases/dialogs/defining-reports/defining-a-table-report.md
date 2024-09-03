@@ -3,18 +3,13 @@
 With some tasks, you may want to add a link to a message sent to a user that contains data too large for a message, for example, a message with a picture, abstract, and a link to a full article or report. This topic describes how to define a table report with variable width columns.
 The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](../../../alert-tasks-message-definition/#report-keys){:target="_blank"} article.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image1.png "image_tooltip")
 
 When the user clicks the link in the message, a table report with variable width columns shows the data for the columns defined with a table header, optional table description, and a header row as shown in the following illustration for the _Your list of tasks_ report.
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.png "image_tooltip")
-
 
 
 ## To define a table report
@@ -38,11 +33,7 @@ To complete the following procedure, you must have already defined a task, such 
 8. Click **Edit Template**. The **Table Configuration** dialog is displayed.
 9. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.
 
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
     ![alt_text](images/image5.png "image_tooltip")
-
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     ![alt_text](images/image6.png "image_tooltip")
 
@@ -61,8 +52,6 @@ To complete the following procedure, you must have already defined a task, such 
 15. In the **Display it as HTML** section, select **Yes** if the column value contains HTML content.
 16. In the **Is this column Sortable** section, select Yes if the end-user should be able to sort the column.
 17. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.
-
-    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     ![alt_text](images/image7.png "image_tooltip")
 
