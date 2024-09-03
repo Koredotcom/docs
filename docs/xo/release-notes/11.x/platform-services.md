@@ -3,16 +3,10 @@
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
 
-
 ## v11.5.0 September 01, 2024
 
 <u> Patch Release </u>
 
-This update includes enhancements and bug fixes.
-
-### App Management
-
-#### App Deletion Feature Update
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 
@@ -26,8 +20,6 @@ The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../
 #### Apps Versioning for GenAI & LLM
 The platform now includes GenAI and LLM settings in app versioning, including Model Integrations, Custom Prompts, Feature & Model Prompt mapping, and Safeguards. It allows platform users to manage and track GenAI & LLM configuration changes across different bot/app versions, enhancing control and customization of GenAI features. 
 
-
-
 ### Analytics
 #### Enhanced Rate Limit API Response 
 This update helps API users understand which specific rate limit they've hit, allowing them to plan their request strategies more effectively and reduce errors in API usage.
@@ -38,14 +30,6 @@ Specific error messages:
 * Hourly limit: "You've exceeded the hourly rate limit. Please wait for some time before retrying."
 
 [Learn more :octicons-arrow-right-24:](../../apis/automation/rate-limit.md){:target="_blank"}
-
-
-
-
-
-
-
-
 
 ### App Management
 
