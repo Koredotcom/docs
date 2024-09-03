@@ -2,6 +2,132 @@
 
 === "Automation AI"
 
+    |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
+    |------|---------------------------|----------------------------------|--------------------|-------------------------------|-----------------------------|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|✅|❌|✅|✅|
+    |Azure OpenAI – GPT 4|✅|✅|❌|✅|✅|
+    |Azure OpenAI – GPT 4 Turbo|✅|✅|❌|✅|✅|
+    |Azure OpenAI – GPT 4o|✅|✅|❌|✅|✅|
+    |OpenAI – GPT 3.5 Turbo|✅|✅|❌|✅|✅|
+    |OpenAI – GPT 4|✅|✅|❌|✅|✅|
+    |OpenAI – GPT 4 Turbo|✅|✅|❌|✅|✅|
+    |OpenAI – GPT 4o|✅|✅|❌|✅|✅|
+    |Anthropic – Claude Instant|✅|✅|❌|✅|✅|
+    |Anthropic – Claude|✅|✅|❌|✅|✅|
+    |Custom LLM|✅|✅|✅|✅|✅|
+    |Kore.ai XO GPT|❌|❌|✅|❌|❌|
+
+=== "Search AI"
+
+    | Models                        | Generating Similar Answer Suggestions |
+    |-------------------------------|---------------------------------------|
+    | Azure OpenAI – GPT 3.5 Turbo   | ✅                                     |
+    | Azure OpenAI – GPT 4           | ✅                                     |
+    | Azure OpenAI – GPT 4 Turbo     | ❌                                     |
+    | Azure OpenAI – GPT 4o          | ❌                                     |
+    | OpenAI – GPT 3.5 Turbo         | ✅                                     |
+    | OpenAI – GPT 4                 | ✅                                     |
+    | OpenAI – GPT 4 Turbo           | ❌                                     |
+    | OpenAI – GPT 4o                | ❌                                     |
+    | Anthropic – Claude Instant     | ❌                                     |
+    | Anthropic – Claude             | ❌                                     |
+    | Custom LLM                     | ❌                                     |
+    | Kore.ai XO GPT                 | ❌                                     |
+
+=== "Agent AI"
+
+    | Models                        | Generating Opposite Utterance Suggestions | Generating Similar Utterance Suggestions |
+    |-------------------------------|------------------------------------------|------------------------------------------|
+    | Azure OpenAI – GPT 3.5 Turbo   | ✅  | ✅ 
+    | Azure OpenAI – GPT 4           | ✅  | ✅                 |
+    | Azure OpenAI – GPT 4 Turbo     | ❌  | ❌                                        |
+    | Azure OpenAI – GPT 4o          | ❌  | ❌                                        |
+    | OpenAI – GPT 3.5 Turbo         | ✅  | ✅                                        |
+    | OpenAI – GPT 4                 | ✅  | ✅                                        |
+    | OpenAI – GPT 4 Turbo           | ❌  | ✅                                        |
+    | OpenAI – GPT 4o                | ❌  | ✅                                        |
+    | Anthropic – Claude Instant     | ❌  | ❌                                        |
+    | Anthropic – Claude             | ❌  | ❌                                        |
+    | Custom LLM                     | ❌  | ❌                                        |
+    | Kore.ai XO GPT                 | ❌  | ❌                                        |
+
+
+
+## title
+
+
+
+
+Sure! Here are the three tables in Markdown format:
+
+### Table 1
+| Models                        | Automatic Dialog Generation | Conversation Test Case Suggestions | Conversation Summary | NLP Batch Test Case Suggestions | Training Utterance Suggestions |
+|-------------------------------|-----------------------------|------------------------------------|----------------------|---------------------------------|-------------------------------|
+| Azure OpenAI – GPT 3.5 Turbo   | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| Azure OpenAI – GPT 4           | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| Azure OpenAI – GPT 4 Turbo     | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| Azure OpenAI – GPT 4o          | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| OpenAI – GPT 3.5 Turbo         | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| OpenAI – GPT 4                 | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| OpenAI – GPT 4 Turbo           | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| OpenAI – GPT 4o                | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| Anthropic – Claude Instant     | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| Anthropic – Claude             | ✅                           | ✅                                  | ❌                    | ✅                               | ✅                             |
+| Custom LLM                     | ✅                           | ✅                                  | ✅                    | ✅                               | ✅                             |
+| Kore.ai XO GPT                 | ❌                           | ❌                                  | ✅                    | ❌                               | ❌                             |
+
+### Table 2
+| Models                        | Generating Similar Answer Suggestions |
+|-------------------------------|---------------------------------------|
+| Azure OpenAI – GPT 3.5 Turbo   | ✅                                     |
+| Azure OpenAI – GPT 4           | ✅                                     |
+| Azure OpenAI – GPT 4 Turbo     | ❌                                     |
+| Azure OpenAI – GPT 4o          | ❌                                     |
+| OpenAI – GPT 3.5 Turbo         | ✅                                     |
+| OpenAI – GPT 4                 | ✅                                     |
+| OpenAI – GPT 4 Turbo           | ❌                                     |
+| OpenAI – GPT 4o                | ❌                                     |
+| Anthropic – Claude Instant     | ❌                                     |
+| Anthropic – Claude             | ❌                                     |
+| Custom LLM                     | ❌                                     |
+| Kore.ai XO GPT                 | ❌                                     |
+
+### Table 3
+| Models                        | Generating Opposite Utterance Suggestions | Generating Similar Utterance Suggestions |
+|-------------------------------|------------------------------------------|------------------------------------------|
+| Azure OpenAI – GPT 3.5 Turbo   | ✅                                        | ✅                                        |
+| Azure OpenAI – GPT 4           | ✅                                        | ✅                                        |
+| Azure OpenAI – GPT 4 Turbo     | ❌                                        | ❌                                        |
+| Azure OpenAI – GPT 4o          | ❌                                        | ❌                                        |
+| OpenAI – GPT 3.5 Turbo         | ✅                                        | ✅                                        |
+| OpenAI – GPT 4                 | ✅                                        | ✅                                        |
+| OpenAI – GPT 4 Turbo           | ❌                                        | ✅                                        |
+| OpenAI – GPT 4o                | ❌                                        | ✅                                        |
+| Anthropic – Claude Instant     | ❌                                        | ❌                                        |
+| Anthropic – Claude             | ❌                                        | ❌                                        |
+| Custom LLM                     | ❌                                        | ❌                                        |
+| Kore.ai XO GPT                 | ❌                                        | ❌                                        |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## title
+
+-------------------------------------------------------------------
+=== "Automation AI"
+
     | Model                       | Agent Response Rephrasing |
     |-----------------------------|---------------------------|
     | Azure OpenAI – GPT 3.5 Turbo | ✅                        |
