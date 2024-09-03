@@ -49,7 +49,7 @@ This update introduces real-time monitoring and intervention features for superv
     * Whisper inputs are recorded in a different color.
     * Labeled with supervisor name and timestamp.
 
-[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen--whisper-voice-calls)
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen-and-whisper-voice-calls)
 
 ### Configuration
 
@@ -71,25 +71,6 @@ The new permission to manage the visibility of captured customer sentiment in th
     * Ensures agents have current information on customer sentiment.
 
 [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
-
-#### Email Address Blacklisting
-
-This update introduces an Email Address Blacklisting functionality for contact center administrators. It helps contact centers maintain a clean communication channel, improve efficiency, and protect their email reputation by proactively managing potentially problematic email addresses.  
-<img src="../images/blacklist-toggle.png" alt="Email Blacklist" title="Email Blacklist" style="border: 1px solid gray; zoom:55%;">
-
-**Key updates**:
-
-* Blacklist Management:
-    * Administrators can specify blacklisted email addresses.
-    * It prevents sending emails to potentially problematic domains.
-* Verification Process:
-    * The system checks incoming email addresses against the blacklist.
-    * Linked to specific receiving email addresses.
-* Automated Response:
-    * Disables pre-configured automations for blacklisted addresses.
-    * Prevents automated agent transfers for blacklisted interactions.
-* Normal Processing:
-    * Non-blacklisted emails proceed through the usual automation and transfer processes.
 
 #### Enhanced Conferencing Functionality
 
@@ -122,7 +103,7 @@ The "Yesterday" date filter is now available in all reports that previously did 
 
 When the "Yesterday" filter is selected in any report, it automatically includes all data from the previous day, from 12:00.00 AM to 11:59:59.999 PM.
 
-#### "Week to Date" and "Month to Date" Filters Added to Reports**
+#### "Week to Date" and "Month to Date" Filters Added to Reports
 
 This update has introduced two new date filters for reports. The filters provide more flexible and standardized options for viewing recent data, facilitating easier trend analysis and performance tracking.
 
@@ -174,7 +155,7 @@ This update enhances the conversation transfer functionality through API, allowi
 * More versatile conversation routing.
 * Consistent transfer capabilities across API and Agent Console.
 * Enhanced chat management efficiency.
-* Improved clarity in transfer status communication. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+* Improved clarity in transfer status communication. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/transfer-conversation-to-a-specific-agent-or-queue.md)
 
 #### Extended Debug Logs API to SmartAssist Channel
 
