@@ -54,7 +54,7 @@ To complete the following procedure, you must have already defined a task, such 
 16. In the **Is this column Sortable** section, select Yes if the end-user should be able to sort the column.
 17. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.
 
-   <img src="../images/table_configuration.png" alt="table_configuration" title="table_configuration" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/table_configuration.png" alt="table_configuration" title="table_configuration" style="border: 1px solid gray; zoom:100%;">
 
 18. Repeat Steps 9 – 17 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 19. In the **Report Template Definition** section, click **Save** to save the table report
