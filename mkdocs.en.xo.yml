@@ -487,7 +487,7 @@ nav:
         - API List:
           - Agent AI APIs:
             - Raw Data API: apis/agent-ai/raw-data-api.md
-            - Agent AI Conversation Summary Trigger API: apis/agent-ai/conversation-summary-trigger-api
+            - Agent AI Conversation Summary Trigger API: apis/agent-ai/conversation-summary-trigger-api.md
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
           - Search AI APIs: apis/searchai/api-list.md
@@ -538,7 +538,7 @@ nav:
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
       - Agent AI Dashboard: analytics/contact-center/agentai-dashboard.md
-      - Agent AI Conversation Logs: analytics/contact-center/agentai-conversation-logs
+      - Agent AI Conversation Logs: analytics/contact-center/agentai-conversation-logs.md
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:
