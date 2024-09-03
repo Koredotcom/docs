@@ -1,9 +1,11 @@
 # Test Page
 
+## Co-Pilot features and the supported models
+
 === "Automation AI"
 
     |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
-    |------|---------------------------|----------------------------------|--------------------|-------------------------------|-----------------------------|
+    |:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI – GPT 3.5 Turbo|✅|✅|❌|✅|✅|
     |Azure OpenAI – GPT 4|✅|✅|❌|✅|✅|
     |Azure OpenAI – GPT 4 Turbo|✅|✅|❌|✅|✅|
@@ -20,7 +22,7 @@
 === "Search AI"
 
     | Models                        | Generating Similar Answer Suggestions |
-    |-------------------------------|---------------------------------------|
+    |-------------------------------|:----:|
     | Azure OpenAI – GPT 3.5 Turbo   | ✅                                     |
     | Azure OpenAI – GPT 4           | ✅                                     |
     | Azure OpenAI – GPT 4 Turbo     | ❌                                     |
@@ -36,27 +38,108 @@
 
 === "Agent AI"
 
-    | Models                        | Generating Opposite Utterance Suggestions | Generating Similar Utterance Suggestions |
-    |-------------------------------|------------------------------------------|------------------------------------------|
-    | Azure OpenAI – GPT 3.5 Turbo   | ✅  | ✅ 
-    | Azure OpenAI – GPT 4           | ✅  | ✅                 |
-    | Azure OpenAI – GPT 4 Turbo     | ❌  | ❌                                        |
-    | Azure OpenAI – GPT 4o          | ❌  | ❌                                        |
-    | OpenAI – GPT 3.5 Turbo         | ✅  | ✅                                        |
-    | OpenAI – GPT 4                 | ✅  | ✅                                        |
-    | OpenAI – GPT 4 Turbo           | ❌  | ✅                                        |
-    | OpenAI – GPT 4o                | ❌  | ✅                                        |
-    | Anthropic – Claude Instant     | ❌  | ❌                                        |
-    | Anthropic – Claude             | ❌  | ❌                                        |
-    | Custom LLM                     | ❌  | ❌                                        |
-    | Kore.ai XO GPT                 | ❌  | ❌                                        |
+    |Models|Generating Opposite Utterance Suggestions|Generating Similar Utterance Suggestions|
+    |------|:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|✅|
+    |Azure OpenAI – GPT 4|✅|✅|
+    |Azure OpenAI – GPT 4 Turbo|❌|❌|
+    |Azure OpenAI – GPT 4o|❌|❌|
+    |OpenAI – GPT 3.5 Turbo|✅|✅|
+    |OpenAI – GPT 4|✅|✅|
+    |OpenAI – GPT 4 Turbo|✅|✅|
+    |OpenAI – GPT 4o|✅|✅|
+    |Anthropic – Claude Instant|❌|❌|
+    |Anthropic – Claude|❌|❌|
+    |Custom LLM|❌|❌|
+    |Kore.ai XO GPT|❌|❌|
+
+
+<hr>
+
+
+## Dynamic Conversation features and the supported models
+
+
+=== "Automation AI"
+
+    |Model|GenAI Node|GenAI Prompt|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
+    |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|✅|✅|✅|❌|✅|
+    |Azure OpenAI – GPT 4|✅|✅|✅|✅|❌|✅*|
+    |Azure OpenAI – GPT 4 Turbo|✅|✅|❌|✅|❌|✅|
+    |Azure OpenAI – GPT 4o|✅|✅|❌|✅|❌|✅|
+    |OpenAI – GPT 3.5 Turbo|✅|✅|✅|✅|❌|✅|
+    |OpenAI – GPT 4|✅|✅|✅|✅|❌|✅*|
+    |OpenAI – GPT 4 Turbo|✅|✅|✅|✅|❌|✅|
+    |OpenAI – GPT 4o|✅|✅|✅|✅|❌|✅|
+    |Anthropic – Claude Instant|✅|✅|✅|✅|❌|❌|
+    |Anthropic – Claude|✅|✅|✅|✅|❌|❌|
+    |Custom LLM|✅|✅|❌|✅|❌|❌|
+    |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
+
+=== "Search AI"
+
+    |Model|Answer Generation|Vector Generation|
+    |:----:|:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|❌|
+    |Azure OpenAI – GPT 4|✅|❌|
+    |Azure OpenAI – GPT 4 Turbo|✅|❌|
+    |Azure OpenAI – GPT 4o|✅|❌|
+    |OpenAI – GPT 3.5 Turbo|✅|❌|
+    |OpenAI – GPT 4|✅|❌|
+    |OpenAI – GPT 4 Turbo|✅|❌|
+    |OpenAI – GPT 4o|✅|❌|
+    |Anthropic – Claude Instant|❌|❌|
+    |Anthropic – Claude|❌|❌|
+    |Custom LLM|✅|❌|
+    |Kore.ai XO GPT|✅|✅| 
+
+=== "Agent AI"
+
+    |Model|Agent Response Rephrasing|
+    |:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|
+    |Azure OpenAI – GPT 4|❌|
+    |Azure OpenAI – GPT 4 Turbo|❌|
+    |Azure OpenAI – GPT 4o|❌|
+    |OpenAI – GPT 3.5 Turbo|✅|
+    |OpenAI – GPT 4|❌|
+    |OpenAI – GPT 4 Turbo|❌|
+    |OpenAI – GPT 4o|❌|
+    |Anthropic – Claude Instant|❌|
+    |Anthropic – Claude|❌|
+    |Custom LLM|❌|
+    |Kore.ai XO GPT|❌|
+
+<hr>
 
 
 
-## title
+
+
+Here's the information from the table you provided, split into three markdown tables:
+
+### Table 1: GenAI Node, Prompt, Responses, and Rephrasing Capabilities
+
+
+### Table 2: Answer Generation and Vector Generation
+
+
+### Table 3: Agent Response Rephrasing
 
 
 
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------
 
 Sure! Here are the three tables in Markdown format:
 
