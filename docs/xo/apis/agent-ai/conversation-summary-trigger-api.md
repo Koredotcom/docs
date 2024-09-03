@@ -1,7 +1,6 @@
 
 This API triggers a conversation summary event in the Agent AI system. It is used to send event data related to a conversation to the specified bot.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
