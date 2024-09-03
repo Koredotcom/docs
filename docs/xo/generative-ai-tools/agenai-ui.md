@@ -6,9 +6,8 @@
 
     |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
     |:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI
-    (GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o  )|✅|✅|❌|✅|✅|
-    |OpenAI   (GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o  )|✅|✅|❌|✅|✅|
+    |Azure OpenAI <br> (GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o)|✅|✅|❌|✅|✅|
+    |OpenAI - (GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o  )|✅|✅|❌|✅|✅|
     |Anthropic – Claude Instant|✅|✅|❌|✅|✅|
     |Anthropic – Claude|✅|✅|❌|✅|✅|
     |Custom LLM|✅|✅|✅|✅|✅|
@@ -16,23 +15,18 @@
 
 === "Search AI"
 
-    | Models                        | Generating Similar Answer Suggestions |
+    | Models  | Generating Similar Answer Suggestions |
     |-------------------------------|:----:|
-    | Azure OpenAI – GPT 3.5 Turbo   | ✅                                     |
-    | Azure OpenAI – GPT 4           | ✅                                     |
-    | OpenAI – GPT 3.5 Turbo         | ✅                                     |
-    | OpenAI – GPT 4                 | ✅                                     |
+    | Azure OpenAI – GPT 3.5 Turbo and GPT 4| ✅|
+    | OpenAI – GPT 3.5 Turbo and GPT 4| ✅|
+
 
 === "Agent AI"
 
     |Models|Generating Opposite Utterance Suggestions|Generating Similar Utterance Suggestions|
     |------|:----:|:----:|
-    |Azure OpenAI – GPT 3.5 Turbo|✅|✅|
-    |Azure OpenAI – GPT 4|✅|✅|
-    |OpenAI – GPT 3.5 Turbo|✅|✅|
-    |OpenAI – GPT 4|✅|✅|
-    |OpenAI – GPT 4 Turbo|✅|✅|
-    |OpenAI – GPT 4o|✅|✅|
+    |Azure OpenAI – GPT 3.5 Turbo and GPT 4|✅|✅|
+    |OpenAI – <br> GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|
 
 <hr>
 
