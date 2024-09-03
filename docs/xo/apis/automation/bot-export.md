@@ -83,7 +83,6 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 ## Sample Request
 
-
 ```json
 curl --location 'https://{host}/api/public/bot/{BotID}/export' \
 --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
@@ -156,24 +155,42 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
    <td>All the bot components are exported by default. If required, you may specify the components to be included for the export.
 <p>
 Usage:
-<pre>"exportOptions": {
-"tasks": [
-"botTask",
-"knowledgeGraph"
-],
-"nlpData": [
-"nlpSettings",
-"utterances",
-"standardResponses"
-],
-"settings": [
-"botSettings",
-"botVariables",
-"ivrSettings"
-"genAIandLLMSettings"
-]
-},</pre></td>
-<td>Optional
+<p>
+<code>"exportOptions": {</code>
+<p>
+<code>      "tasks": [</code>
+<p>
+<code>             "botTask",</code>
+<p>
+<code>             "knowledgeGraph"</code>
+<p>
+<code>           ],</code>
+<p>
+<code>      "nlpData": [</code>
+<p>
+<code>             "nlpSettings",</code>
+<p>
+<code>             "utterances",</code>
+<p>
+<code>             "standardResponses"</code>
+<p>
+<code>           ],</code>
+<p>
+<code>      "settings": [</code>
+<p>
+<code>             "botSettings",</code>
+<p>
+<code>             "botVariables",</code>
+<p>
+<code>             "ivrSettings"</code>
+<p>
+<code>             "genAIandLLMSettings"</code>
+<p>
+<code>           ]</code>
+<p>
+<code>   },</code>
+   </td>
+   <td>Optional
    </td>
   </tr>
   <tr>

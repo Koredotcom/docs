@@ -121,7 +121,7 @@ When an agent initiates an outbound call, the system automatically changes the a
 The outbound dialer has the following functionalities:
 
 * Search Bar: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.  
-    <img src="../images/search-bar.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/dialer-search-bar.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:60%;">
 
 * International Subscriber Dialing (ISD) Code Update: The dialer automatically adjusts the outbound phone number’s ISD code based on the last used country code. This streamlines the process for agents making calls to different regions. For example, if an agent selects India as the country but enters a phone number from the USA, the dialer automatically changes the country to the USA.
 
@@ -135,11 +135,39 @@ Agents can make outbound calls to the customers as follows:
 1. Click the **+** button on the conversation tray and click Outbound Call. The dial pad is displayed.  
 <img src="../images/outbound-call-button.png" alt="Outbound Call Button" title="Outbound call Button" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the Calling from button on the Dialer tab, and select the number for placing the outbound call.  
-<img src="../images/calling-from-number.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:70%;">
+2. Click the Calling from button on the Dialer tab, and select the number for placing the outbound call. Agents can use phone numbers or configured SIP trunks while making outbound calls.  
+<img src="../images/sip-and-phone-numbers.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:60%;">
 
-3. Select the country, enter the number, and click the Call button to place the outbound call.  
-<img src="../images/call-button-(3).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:70%;">
+3. Agents can dial the outbound calls in two ways:
+
+    1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the Call button to place the outbound call.  
+        <img src="../images/dialer-country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+
+    2. Enter the phone number without the country code and click the Call button to place the outbound call. The following scenarios are possible:
+
+        1. A user enters “123124”:
+
+            1. By default, no country code is selected, and no country code validation is made. A call is directly placed to this number.
+
+            2. If the user has already dialed a call with a US number, they should be able to change the country code to unknown.
+
+        2. A user pastes “123121”:
+
+            1. Initially, a validation error is displayed if the number does not match the defined format for the default country.
+
+            2. The user can change the country code to unknown and a call is directly dialed to this number.
+
+        3. User pastes/enters “+91987654321”:
+
+            1. The country code is selected as India and the call is dialed.
+
+        4. User pastes “+919876543”:
+
+            1. A validation error is displayed and the call button is disabled.
+
+    !!! Note
+
+        The country code defaults to the last dialed country. If no calls are dialed, the default country code is the US.
 
 ## Voicemail
 
@@ -168,6 +196,8 @@ You can call the customer as follows:
 
 Agents can initiate Consult calls, Conference calls, and Warm Transfer voice calls while interacting with customers. It increases agent efficiency by allowing the initiating agent to share relevant context with the receiving agent before transferring the call. To ensure effective call handling, the receiving agent provides the necessary information, leading to smoother transitions and improved customer outcomes. Additionally, this feature enables seeking expert opinions during customer calls.
 
+#### Consult Call
+
 Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call. Consult functionality will not be available if the conversation is being transferred to a queue.
 
 The agent chosen for consultation must be available and have zero load occupation. If an agent is brought in for consultation, their slots remain occupied throughout the consultation and conference call.
@@ -176,7 +206,104 @@ During the consult call, the system automatically places the customer on hold, a
 
 The initiating agent can switch to the original customer call if needed, and vice versa, using the Swap functionality. The initiating agent can merge the two calls, converting them into a conference call.
 
+#### Conference Call
+
+Up to 4 supervisors, and the primary agent, can join the same conference call from the contact center side.  
+<img src="../images/conference-participants.png" alt="Conference Participants" title="Conference Participants" style="border: 1px solid gray; zoom:70%;">
+
+If a network disruption occurs, only the affected participant will be disconnected. They can rejoin the conversation seamlessly. Agents and supervisors can manage only one call at a time.  
+<img src="../images/rejoin-button.png" alt="Rejoin Button" title="Rejoin Button" style="border: 1px solid gray; zoom:60%;">
+
+When a supervisor joins a call, their slot will be consumed, and their status will change to "system busy" for both chat and voice interactions. All chat transcripts from supervisors will appear in yellow.  
+<img src="../images/supervisor conversation.png" alt="Supervisor Conversation" title="Supervisor Conversation" style="border: 1px solid gray; zoom:60%;">
+
+If an agent leaves the call, the supervisor will have complete control of the conversation.
+
+Each participant in the conference call can transfer the conversation or exit the call. Clicking the transfer button will push the conversation to a queue or a target agent, who will receive an incoming request.
+
+The CSAT will be linked to the last agent who handled the conversation. If a user drops off, the primary agent (the longest participant) will complete After Call Work (ACW).
+
+#### Warm Transfer
+
 Following the consult or conference call, the initiating agent can proceed with a warm transfer by clicking the “**Forward**” button.
+
+##### Limitations
+
+<table>
+  <tr>
+   <td><strong>Category</strong>
+   </td>
+   <td><strong>Sub-category</strong>
+   </td>
+   <td><strong>Detail</strong>
+   </td>
+   <td><strong>Scenario</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Consult Calls
+   </td>
+   <td>Ongoing consult call
+   </td>
+   <td>A conference call cannot be initiated during an ongoing consult call.
+   </td>
+   <td>-
+   </td>
+  </tr>
+  <tr>
+   <td>Consult Calls
+   </td>
+   <td>Post Consult call is merged
+   </td>
+   <td>A conference call cannot be initiated during an ongoing consult call.
+   </td>
+   <td>When the agent and user are on call and the agent initiates a consult with the Supervisor:
+    a) If the consult is merged, then a conference is not allowed.
+<br>
+    b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
+   </td>
+  </tr>
+  <tr>
+   <td>Consult Calls
+   </td>
+   <td>Ongoing conference call
+   </td>
+   <td>Consult calls are restricted during an ongoing conference call.
+   </td>
+   <td>-
+   </td>
+  </tr>
+  <tr>
+   <td>Consult Calls
+   </td>
+   <td>Post-conference call ends
+   </td>
+   <td>Consult calls are restricted even if the ongoing conference call ends and the call is only between the user and the agent.<strong> </strong>
+   </td>
+   <td>When the agent and user are on a call and the supervisor joins from the monitor tab, it gets converted to a conference call. Even if the Supervisor exits, the call will still be considered a Conference.
+   </td>
+  </tr>
+  <tr>
+   <td>Call Transfers/Consult
+   </td>
+   <td>Outbound calls
+   </td>
+   <td>Call transfers and Consult calls are restricted to Outbound calls.
+   </td>
+   <td>-
+   </td>
+  </tr>
+  <tr>
+   <td>AgentAssist Widget
+   </td>
+   <td>Ongoing conference/consult
+   </td>
+   <td>AgentAssist Widget should be hidden during ongoing conference/consult calls.
+   </td>
+   <td>-
+   </td>
+  </tr>
+</table>
 
 ### Call Transfer
 

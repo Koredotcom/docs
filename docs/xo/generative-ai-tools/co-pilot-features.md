@@ -131,7 +131,7 @@ Follow these steps:
 
 	
 
-## Product and Feature Support Matrix
+## Product and Supported Features
 
 Select the product to view the supported features.
 
