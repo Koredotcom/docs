@@ -72,25 +72,6 @@ The new permission to manage the visibility of captured customer sentiment in th
 
 [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
-#### Email Address Blacklisting
-
-This update introduces an Email Address Blacklisting functionality for contact center administrators. It helps contact centers maintain a clean communication channel, improve efficiency, and protect their email reputation by proactively managing potentially problematic email addresses.  
-<img src="../images/blacklist-toggle.png" alt="Email Blacklist" title="Email Blacklist" style="border: 1px solid gray; zoom:55%;">
-
-**Key updates**:
-
-* Blacklist Management:
-    * Administrators can specify blacklisted email addresses.
-    * It prevents sending emails to potentially problematic domains.
-* Verification Process:
-    * The system checks incoming email addresses against the blacklist.
-    * Linked to specific receiving email addresses.
-* Automated Response:
-    * Disables pre-configured automations for blacklisted addresses.
-    * Prevents automated agent transfers for blacklisted interactions.
-* Normal Processing:
-    * Non-blacklisted emails proceed through the usual automation and transfer processes.
-
 #### Enhanced Conferencing Functionality
 
 This update significantly enhances the conferencing capabilities, enabling more effective team collaboration and improved customer service in complex call scenarios.
