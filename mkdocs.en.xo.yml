@@ -307,7 +307,7 @@ nav:
         - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
-     - Dev Tools:
+    - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
