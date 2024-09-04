@@ -16,7 +16,7 @@ To get all agents if you have `queuesIds` and all the queues if you have `agentI
 | host | Environment URL, for example, https://platform.kore.ai | string, required |
 | botId | botId or streamId. You can access it from the General Settings page of the bot. | string, required |
 
-## Sample Requests
+## Sample Request
 
 When `queueIds` are passed:
 ```
@@ -41,7 +41,7 @@ curl --location 'http://localhost/agentassist/api/v1/public/st-0aae83f7-49c7-58c
 }'
 ```
 
-## Sample Responses
+## Sample Response
 
 When `queueIds` are passed:
 
