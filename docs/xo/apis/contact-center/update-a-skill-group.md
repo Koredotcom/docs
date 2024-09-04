@@ -19,8 +19,7 @@ To update the particular skill group with the given Stream Id and Skill Group Id
 ## Sample Request
 
 ```
-curl --location --request POST \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{id}}'
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{id}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{

@@ -19,8 +19,7 @@ To retrieve the list of skills groups with the given Stream Id.
 ## Sample Request
 
 ```
-curl --location --request GET\
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups'
+curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

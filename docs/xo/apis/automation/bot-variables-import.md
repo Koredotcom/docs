@@ -164,8 +164,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 ## Sample Request
 
 ```json
-curl -X POST \
-  https://{{host}}/api/1.1/public/builder/bot/{{BotId}}/variables/import \
+curl -X POST 'https://{{host}}/api/1.1/public/builder/bot/{{BotId}}/variables/import' \
   -H 'Content-Type: application/json' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -d '[

@@ -21,8 +21,7 @@ To create a contact with the given stream Id.
 ## Sample Request
 
 ```
-curl --location --request POST \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/contacts'
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/contacts' \
       --header 'auth: {jwt-code}' \
       --header 'accountId:123456789'
       --header 'Content-Type: application/json' \
