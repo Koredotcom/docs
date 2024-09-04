@@ -3,14 +3,19 @@
 The **Delete App** option allows you to delete your App. To delete your app, follow the below steps:
 
 1. Click **App Settings** on the left-side menu.    
+1. Click **App Settings** on the left-side menu.    
 2. Under **Configurations**, click **Delete App** at the bottom.  
 
     <img src="../images/delete-app-img1.png" alt="Delete app" title="Delete app" style="border:1px solid gray; zoom:70%;">
 
 3. You can export the app prior to deletion. To do so, click **Export** in the Delete App dialog box.
+3. You can export the app prior to deletion. To do so, click **Export** in the Delete App dialog box.
 
     <img src="../images/delete-app-img2.png" alt="Delete app - export before deleting" title="Delete app - export before deleting" style="border:1px solid gray; zoom:70%;">
 
+4. To proceed with the deletion, click **Confirm**.  
+
+5. A verification code is sent to the app owner's registered email. Enter this code to confirm deletion.
 4. To proceed with the deletion, click **Confirm**.  
 
 5. A verification code is sent to the app owner's registered email. Enter this code to confirm deletion.

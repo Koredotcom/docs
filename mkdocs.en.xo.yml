@@ -190,6 +190,8 @@ nav:
           - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
           - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
           - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
+          - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Node Connections:
           - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
           - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
@@ -507,6 +509,7 @@ nav:
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
           - Tutorials:
             - BotKit - Blue Prism: sdk/tutorials/blue-prism.md

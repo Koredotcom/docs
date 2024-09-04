@@ -332,6 +332,30 @@ Steps to Join a conversation:
 
 2. A confirmation pop-up appears. Click **Confirm** to join.
 
+### Listen and Whisper [Voice Calls]
+Listen and Whisper functionalities enhance supervisors’ oversight and support capabilities in real-time voice conversations.
+
+Listen: This allows supervisors to discreetly monitor live voice conversations between agents and customers. By enabling this feature, supervisors can stay informed about ongoing interactions without participating directly, ensuring they are always aware of the dialogue and can step in if necessary.
+
+Whisper: This functionality provides a means for supervisors to give real-time guidance to agents without the customer hearing the communication. Supervisors can use the whisper functionality to offer immediate support or corrective instructions, enhancing the agent’s performance and the overall quality of customer interaction.
+
+Steps to Listen and Whisper Voice Conversations:
+
+1. Go to **MONITOR** > **AGENTS** > Click the conversation that you want to Listen to & Whisper.  
+<img src="../images/listen-and-whisper-button.png" alt="Voice Conversation" title="Voice Conversation" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Listen & Whisper**.  
+<img src="../images/voice-conversation-agents-tab.png" alt="Listen & Whisper Button" title="Listen & Whisper Button" style="border: 1px solid gray; zoom:70%;">
+
+3. You can listen to the conversation between the customer and the agent. Press and hold the spacebar to whisper to the agent.  
+<img src="../images/listen-conversation.png" alt="Listen Conversation" title="Listen Conversation" style="border: 1px solid gray; zoom:70%;">
+
+4. Release the spacebar to stop whispering to the agent.  
+<img src="../images/release-spacebar.png" alt="Release Spacebar" title="Release Spacebar" style="border: 1px solid gray; zoom:70%;">
+
+    When a supervisor whispers, an indication appears at the top of the live interaction, and the transcript is displayed in yellow.  
+    <img src="../images/console-whisper-input.png" alt="Console Whisper Input" title="Console Whisper Input" style="border: 1px solid gray; zoom:70%;">
+
 ## Interactions
 
 You can view all live interactions on the Contact Center AI console. This view includes only interactions that involve agent transfers. A summary of the interactions view is shown below:  
