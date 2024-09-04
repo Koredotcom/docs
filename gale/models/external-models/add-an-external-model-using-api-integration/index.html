@@ -2207,6 +2207,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Add a Model using API Integration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2216,6 +2227,45 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-external-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an External Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-custom-api-integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Custom API Integrations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2811,6 +2861,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-external-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an External Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-custom-api-integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Custom API Integrations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2828,55 +2904,56 @@
 
 
 <h1 id="add-an-external-model-using-api-integration">Add an External Model using API Integration<a class="headerlink" href="#add-an-external-model-using-api-integration" title="Permanent link">&para;</a></h1>
-<p>Custom API Integration in GALE enables extensibility of use, where it allows you to bring in your models from an external ecosystem via API integration.</p>
-<p><strong>To add an external model using API integration, follow these steps</strong>:</p>
+<p>You can connect an external model to GALE using API integration. This feature extends GALE's functionality by allowing you to bring in models from external sources.</p>
+<h2 id="add-an-external-model">Add an External Model<a class="headerlink" href="#add-an-external-model" title="Permanent link">&para;</a></h2>
+<p>Steps to add an external model using API integration:</p>
 <ol>
 <li>
-<p>Click <strong>Models</strong> on the top navigation bar of the application. The <strong>Models</strong> page is displayed.</p>
+<p>Click <strong>Models</strong> on the top navigation bar. The <strong>Models</strong> page is displayed.</p>
 </li>
 <li>
-<p>Click the <strong>External models</strong> tab on the <strong>Models</strong> page.<br />
-<a class="glightbox" href="../images/navigating-to-external-models.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigating-to-external-models.png" alt="Navigating to External Models" title="Navigating to External Models" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the <strong>External models</strong> tab.<br />
+<a class="glightbox" href="../images/navigating-to-external-models1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigating-to-external-models1.png" alt="Navigating to External Models" title="Navigating to External Models" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Add a model</strong> under the <strong>External models</strong> tab. The <strong>Add an external model</strong> dialog is displayed.<br />
-<a class="glightbox" href="../images/add-external-model-api-integration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-external-model-api-integration.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:60%;"></a></p>
+<p>Click <strong>Add a model</strong>. The <strong>Add an external model</strong> dialog is displayed.<br />
+<a class="glightbox" href="../images/add-external-model-api-integration1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-external-model-api-integration1.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 <li>
-<p>Select the <strong>Custom integration</strong> option to connect models via API integration, and click <strong>Next</strong>.
-   The <strong>Custom API integration</strong> dialog is displayed.</p>
+<p>Select the <strong>Custom integration</strong> option to connect models via API integration, and click <strong>Next</strong>. The <strong>Custom API integration</strong> dialog is displayed.</p>
 </li>
 <li>
 <p>Enter a <strong>Model name</strong> and <strong>Model endpoint URL</strong> in the respective fields.<br />
 <a class="glightbox" href="../images/custom-api-integration-general-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-general-details.png" alt="Custom API Integration General Details" title="Custom API Integration General Details" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>In the <strong>Headers</strong> section, specify the headers that need to be sent along with the request payload such as <strong>Key</strong> and <strong>Value</strong>.<br />
+<p>In the <strong>Headers</strong> section, specify the headers such as <strong>Key</strong> and <strong>Value</strong> that need to be sent along with the request payload. 
 <a class="glightbox" href="../images/custom-api-integration-headers.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-headers.png" alt="Custom API Integration Headers" title="Custom API Integration Headers" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>In the <strong>Variables</strong> section, you have 2 types:</p>
+<p>Configure <strong>Variables</strong>:</p>
 <ul>
-<li><strong>Prompt variable</strong>: The Prompt variable is by default set to mandatory. You can Turn ON the toggle for the System prompt and examples if required.
+<li><strong>Prompt variable</strong>: The Prompt variable is set to mandatory by default. You can Turn ON the toggle for the System prompt and examples if required.
     <a class="glightbox" href="../images/custom-api-integration-prompt-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-prompt-variable.png" alt="Custom API Integration Prompt Variable" title="Custom API Integration Prompt Variable" style="border: 1px solid gray; zoom:80%;"></a></li>
 <li>
-<p><strong>Custom variables</strong>: Click the <strong>Custom variables</strong> tab under the <strong>Variables</strong> section and click the <strong>+Custom variables</strong>.  </p>
+<p><strong>Custom variables</strong>: Add, if necessary. To add, click the <strong>Custom variables</strong> tab under the <strong>Variables</strong> section and click the <strong>+Custom variables</strong>.
+    <a class="glightbox" href="../images/custom-api-integration-custom-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-custom-variable.png" alt="Custom API Integration Prompt Variable" title="Custom API Integration Prompt Variable" style="border: 1px solid gray; zoom:80%;"></a>  </p>
 <ul>
-<li>The Add custom variable dialog is displayed. Enter the <strong>Variable name</strong>, and <strong>Display name</strong> and select the <strong>Data type</strong>.<br />
+<li>The Add custom variable dialog is displayed. Enter the <strong>Variable name</strong> and <strong>Display name</strong>, and select the <strong>Data type</strong>.<br />
     <a class="glightbox" href="../images/add-custom-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-custom-variable.png" alt="Add Custom Variable" title="Add Custom Variable" style="border: 1px solid gray; zoom:60%;"></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>In the <strong>Body</strong> section, add request body of the model you are trying to connect with in GALE. Ensure that the body is in the format as shown in the screenshot below, otherwise the API testing won't work.<br />
+<p>In the <strong>Body</strong> section, add the request body of the model you are trying to connect with. Ensure the body is in the correct format, as shown in the screenshot below; otherwise, the API testing won't work.<br />
 <a class="glightbox" href="../images/custom-api-integration-body.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-body.png" alt="Custom API Integration Body" title="Custom API Integration Body" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>In the <strong>Test response</strong> section, you need to provide a test response from the model:</p>
+<p>In the <strong>Test response</strong> section, provide a test response from the model:</p>
 <ul>
 <li>
-<p>Click the <strong>Test</strong> under the <strong>Test</strong> section on the <strong>Custom API Integration</strong> dialog.
+<p>Click <strong>Test</strong> under the <strong>Test</strong> section on the <strong>Custom API Integration</strong> dialog.
    The <strong>Sample Input</strong> dialog is displayed.<br />
    <a class="glightbox" href="../images/test-sample.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-sample.png" alt="Test Sample" title="Test Sample" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
@@ -2887,20 +2964,41 @@
 </li>
 <li>
 <p>Once the response is generated after the Test, you can configure the <strong>JSON path</strong> to capture the Output path, Input tokens, and Output tokens.</p>
+<ul>
+<li>
+<p><strong>Output Path</strong>: The output path refers to the location or key within an LLM response (often a JSON object) where the model's main output or answer is stored. This path helps you identify and extract the relevant information from the response, especially when working with complex data structures.</p>
+<p>For example, “choices[0].message.content” indicates the output path in the sample response displayed in the following screenshot:
+    <a class="glightbox" href="../images/output-path.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/output-path.png" alt="Output Path" title="Output Path" style="border: 1px solid gray; zoom:60%;"></a></p>
+</li>
+<li>
+<p><strong>Input Tokens</strong>: The amount of text data or prompt provided to the LLM is measured in tokens. These input tokens are fed into the LLM for processing. Depending on the tokenization method used, a token can be as short as a single character or as long as an entire word.</p>
+<p>For example, “usage.prompt_tokens” indicates the Input tokens in the sample response displayed in the following screenshot:
+    <a class="glightbox" href="../images/input-tokens.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/input-tokens.png" alt="Input Tokens" title="Input Tokens" style="border: 1px solid gray; zoom:60%;"></a></p>
+</li>
+<li>
+<p><strong>Output Tokens</strong>: The amount of text data or the response generated by the LLM after processing the prompt is measured in tokens. These output tokens are the building blocks of the generated text, and, like input tokens, they can vary in length from a single character to an entire word, depending on the tokenization method.</p>
+<p>For example, “usage.completion_tokens” indicates the Output tokens in the sample response displayed in the following screenshot:
+    <a class="glightbox" href="../images/output-tokens.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/output-tokens.png" alt="Output Tokens" title="Output Tokens" style="border: 1px solid gray; zoom:60%;"></a></p>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Click the <strong>Save as draft</strong> to save the model and the status is saved as Draft.</p>
 </div>
 </li>
 <li>
-<p>Click <strong>Confirm</strong> to save the details and your external model is listed in the External model's list. The model can now be used in the playground and the Gen AI node of the agent flow builder.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.</p>
-</div>
-<p><a class="glightbox" href="../images/three-dots-icon-options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/three-dots-icon-options.png" alt="Three Dots Icon Options" title="Three Dots Icon Options" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click <strong>Confirm</strong> to save the details. Your external model is now listed in the External model list. It can be used in the playground and the Gen AI node of the agent flow builder.</p>
 </li>
 </ol>
+<h2 id="manage-custom-api-integrations">Manage Custom API Integrations<a class="headerlink" href="#manage-custom-api-integrations" title="Permanent link">&para;</a></h2>
+<p>Once the integration is successful and the inference toggle is ON, you can use the model across GALE. You can also turn the inferencing OFF if needed.</p>
+<p>To manage an integration, click the three-dot icon corresponding to its name and choose from the following options:  </p>
+<ul>
+<li><strong>View</strong>: View the integration details.</li>
+<li><strong>Copy</strong>: Make an editable copy of the integration details.</li>
+<li><strong>Delete</strong>: Remove the integration.</li>
+</ul>
+<p><a class="glightbox" href="../images/three-dots-icon-options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/three-dots-icon-options.png" alt="Three Dots Icon Options" title="Three Dots Icon Options" style="border: 1px solid gray; zoom:80%;"></a></p>
 
 
 

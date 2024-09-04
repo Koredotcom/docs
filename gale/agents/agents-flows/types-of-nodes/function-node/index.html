@@ -2931,11 +2931,11 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>context.&lt;variable-name&gt; = context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;
 </span></code></pre></div>
 To call a function:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>context.&lt;UserDefined-Variable-Name&gt;= UserDefined-Function-Name(context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>context.&lt;UserDefined-Variable-Name&gt;= UserDefined-Function-Name(context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;)
 </span></code></pre></div></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.</p>
+<p>You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  numpy. <a href="../script-libraries/">Learn more</a>.</p>
 </div>
 </li>
 <li>
@@ -2958,7 +2958,7 @@ To call a function:
 <p>Click the <strong>Connections</strong> icon in the left navigation and select the <strong>Go to Node</strong> for both success and failure conditions.<br />
 <a class="glightbox" href="../images/function-node-connections.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ol>
-<li><strong>On Success</strong> &gt; <strong>Go to Node</strong>: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node. </li>
+<li><strong>On Success</strong> &gt; <strong>Go to Node</strong>: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node.</li>
 <li><strong>On Failure</strong> &gt; <strong>Go to Node</strong>: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.</li>
 </ol>
 </li>

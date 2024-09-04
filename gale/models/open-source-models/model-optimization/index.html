@@ -3017,7 +3017,7 @@
 <p>Key advantages of using CTranslate2:</p>
 <ul>
 <li><strong>Optimized Computation</strong>: Supports CPU and GPU inference, making it flexible for various deployment environments. Utilizes optimized kernels and quantization techniques to speed up inference without significant loss in accuracy.</li>
-<li><strong>Quantization</strong>: Offers 8-bit and 16-bit integer quantization, reducing the model size and enhancing inference speed while maintaining accuracy through post-training quantization. (Supported Quantization: int8, int8_float32, int8_float16, int8_bfloat16, int16, float16 (default), bfloat16, and Float32)</li>
+<li><strong>Quantization</strong>: Offers int8_float16 quantization, reducing the model size and enhancing inference speed while maintaining accuracy through post-training quantization. </li>
 <li><strong>Multi-threading</strong>:  Efficiently uses multi-threading for multi-core CPUs, handling batch processing to improve throughput for large-scale applications.</li>
 <li><strong>Compatibility</strong>: Supports models from PyTorch and TensorFlow, facilitating easy integration into existing workflows.</li>
 </ul>
@@ -3030,12 +3030,8 @@
 <li><strong>Parallelism</strong>: Supports model and data parallelism to distribute computational load across multiple GPUs or nodes, managing communication overhead efficiently. Efficiently manages communication overhead between different parts of the model.</li>
 <li><strong>Layer-wise Adaptive Precision</strong>: Adjusts computation precision layer by layer, using mixed-precision training and inference to enhance performance while maintaining accuracy.</li>
 <li><strong>Advanced Caching Mechanisms</strong>: Adjusts computation precision layer by layer, using mixed-precision training and inference to enhance performance while maintaining accuracy.</li>
+<li><strong>Quantization</strong>: Supports AWQ (Activation-Weighted Quantization) which lowers the precision of most weights and activations but preserves a small percentage of important weights. This approach minimizes performance loss, enabling models to run in 4-bit precision without accuracy degradation.</li>
 </ul>
-<p>Supported Quantization: float16 (default), bfloat16, and Float32.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The T4 machine does not support bfloat16.</p>
-</div>
 <p><a href="https://docs.vllm.ai/en/stable/index.html">Learn more</a>.</p>
 <h2 id="ctranslate2-vs-vllm">CTranslate2 vs. vLLM<a class="headerlink" href="#ctranslate2-vs-vllm" title="Permanent link">&para;</a></h2>
 <p>Choosing between CTranslate2 and vLLM depends on your model's needs and deployment environment. CTranslate2 suits small to medium-sized models and low-latency scenarios. The vLLM excels with large models needing extensive computational resources and advanced parallel processing capabilities.</p>
