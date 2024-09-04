@@ -31,26 +31,6 @@ Agents now have more flexibility and validation options when dialing outbound ca
 
 [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
 
-#### Enhanced Supervisor Capabilities: Listen and Whisper for Voice Calls
-
-This update introduces real-time monitoring and intervention features for supervisors during voice calls. The features significantly enhance supervisory capabilities, allowing agents to provide more effective and immediate assistance during customer interactions.
-
-**Key updates**:
-
-* Listen Functionality:
-    * A silent listening functionality, allowing supervisors to monitor agents' voice calls without causing disruptions on the agents' end.
-* Whisper Functionality:
-    * Private voice instruction/guidance from supervisor to agent.
-    * The customer cannot hear the supervisor's input.
-* User Interface Integration:
-    * New "Listen" and "Whisper" options on the Monitor tab
-    * Easy-to-access controls for quick intervention.
-* Chat Transcript:
-    * Whisper inputs are recorded in a different color.
-    * Labeled with supervisor name and timestamp.
-
-[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen-and-whisper-voice-calls)
-
 ### Configuration
 
 #### New Permission for Sentiment Visibility Control
