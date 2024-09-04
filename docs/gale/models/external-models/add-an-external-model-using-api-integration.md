@@ -66,7 +66,12 @@ Steps to add an external model using API integration:
 
 11. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the Gen AI node of the agent flow builder.
 
-## Edit or Delete an External Model
+## Manager Custom API Integration
 
-You can edit or delete a model by clicking the three-dot icon corresponding to its name in the list of external models.
+Once the integration is successful and the inference toggle is ON, you can use the model across GALE. You can also turn the inferencing OFF if needed.
+Hover over the custom integration and click the more icon (three dots). A pop-up with a list of options is displayed.
+* View: Look at the integration details.
+* Copy: Make an editable draft copy.
+* Delete: Remove the integration.
+
 <img src="../images/three-dots-icon-options.png" alt="Three Dots Icon Options" title="Three Dots Icon Options" style="border: 1px solid gray; zoom:80%;">
