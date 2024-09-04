@@ -18,37 +18,37 @@ Steps to add and configure the node:
 <img src="../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
 5. Enter or select the following information:
-    
+
     * **Custom Name**: Enter an appropriate name for the node.
-    
+
     * **Define a Script**: You can define a script using Javascript or Python to process/parse the given input or the output of the previous node. Click anywhere in the **Define a Script** field to open the **Script Editor** dialog box.  
     <img src="../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
         1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. You can use variables or context variables in the Script Editor. For example:
-            
+
             To read an input variable:
             ~~~
             context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
             ~~~
             To call a function:
             ~~~
-            context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>
+            context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>)
             ~~~
 
             !!! note
-                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.
+                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  numpy. [Learn more](../types-of-nodes/script-libraries.md).
 
-        2.  You can use the Context input/output feature to use a variable from the previous node or when testing a function.
+        2. You can use the Context input/output feature to use a variable from the previous node or when testing a function.
             * **Context Input**: Add the required variable; also, dummy input values can be given to test the defined function.
             * **Context Output**: Shows the results of the function from the given input.
             * **Log**: Monitor the state of the function and view the values.
-        
+
         3. Click the **Run** button to test the script. Once the script is resolved successfully, the results are displayed in the Log section.
         4. Close the Script Editor.
 
 6. Click the **Connections** icon in the left navigation and select the **Go to Node** for both success and failure conditions.  
 <img src="../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;">
-    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node. 
+    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node.
     2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
 7. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
@@ -56,4 +56,3 @@ Steps to add and configure the node:
 !!! failure "Standard Errors"
 
     You can see compilation and runtime errors, if any, during the execution of the script/node.
-
