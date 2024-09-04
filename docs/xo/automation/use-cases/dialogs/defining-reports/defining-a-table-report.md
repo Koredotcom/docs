@@ -4,12 +4,13 @@ With some tasks, you may want to add a link to a message sent to a user that con
 The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](../../../alert-tasks-message-definition/#report-keys){:target="_blank"} article.
 
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/google_task.png" alt="Google_task" title="Google_task" style="border: 1px solid gray; zoom:100%;">
+
 
 When the user clicks the link in the message, a table report with variable width columns shows the data for the columns defined with a table header, optional table description, and a header row as shown in the following illustration for the _Your list of tasks_ report.
 
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/list_of_task.png" alt="list_of_task" title="list_of_task" style="border: 1px solid gray; zoom:100%;">
 
 
 ## To define a table report
@@ -33,9 +34,9 @@ To complete the following procedure, you must have already defined a task, such 
 8. Click **Edit Template**. The **Table Configuration** dialog is displayed.
 9. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.
 
-    ![alt_text](images/image5.png "image_tooltip")
+    <img src="../images/column_configuration.png" alt="column_configuration" title="column_configuration" style="border: 1px solid gray; zoom:100%;">
 
-    ![alt_text](images/image6.png "image_tooltip")
+    <img src="../images/column_configuration_2.png" alt="column_configuration_2" title="column_configuration_2" style="border: 1px solid gray; zoom:100%;">
 
 10. In the **Column Name** field, enter the first column title, for example, _Task_.
 11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  
@@ -53,7 +54,7 @@ To complete the following procedure, you must have already defined a task, such 
 16. In the **Is this column Sortable** section, select Yes if the end-user should be able to sort the column.
 17. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.
 
-    ![alt_text](images/image7.png "image_tooltip")
+    <img src="../images/table_configuration.png" alt="table_configuration" title="table_configuration" style="border: 1px solid gray; zoom:100%;">
 
 18. Repeat Steps 9 – 17 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
 19. In the **Report Template Definition** section, click **Save** to save the table report
