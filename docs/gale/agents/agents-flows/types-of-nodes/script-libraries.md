@@ -948,10 +948,8 @@ import itertools
     "timezone",
     "tzinfo"
   ]
-  ```
-
+```
 ### time
-
 ```
  "time": [
     "asctime",
@@ -983,9 +981,7 @@ import itertools
     "tzset"
   ]
 ```
-
 ### calendar
-
 ```
  "calendar": [
     "Calendar",
@@ -1022,7 +1018,7 @@ import itertools
     "weekday",
     "weekheader"
   ]
-  ```
+```
 ## Itertools
 ```
 "itertools": [
