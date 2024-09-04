@@ -70,7 +70,7 @@ To configure the Component Properties tab, please follow the steps below:
   
 10. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-!!! note
+!!! Note
 
     Post v11.3 release:  
      1.  **Service Call Timeout** and **Timeout Error Handling Behavior** settings have been moved from Component Properties to Instance Properties within the Service Node.  
