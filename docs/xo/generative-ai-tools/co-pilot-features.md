@@ -158,6 +158,7 @@ Select the product to view the supported features.
 
 The following table displays the Co-Pilot features and the supported models.
 
+
 (✅ Supported | ❌ Not supported)
 
 

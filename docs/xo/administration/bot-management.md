@@ -350,6 +350,14 @@ The _Bot status changed successfully_ message is displayed at the top of the pag
 
 You can view and if needed change the subscribed plan. [See here for details](../billing){:target="_blank"}.
 
+### Restore
+A published bot with active dialog tasks can be restored within 30 days following the deletion date.
+On the **Consumer Bots** page in the **Bots Management** module, click the **Ellipses** icon for the Bot that you want to restore, and then click **Restore**.  
+
+<img src="../images/restore.png" alt="restore" title="restore" style="border:1px solid gray; zoom:70%;">
+
+Restoration will reinstate the app with all its pre-deletion configurations.
+
 
 ## Managing Smart Bots
 
@@ -511,10 +519,56 @@ When deployment requests and Bot assignments are automatic, managed users are as
 
 Steps to approve bots manually:
 
-
-
 1. In the **Enterprise Bots Assignments** section, click **Hold all deployment requests for manual admin approval. Bot cannot be used outside the developer environment until approved**.
 2. Click **Save**.  
 <img src="../images/bot-management-img25.png" alt="Hold all deployment requests for manual admin approval" title="Hold all deployment requests for manual admin approval" style="border: 1px solid gray;zoom:50%;"/>
 
 When deployment requests and Bot assignments are manual, the admin has to approve the bot for users whenever the enterprise developer publishes the Bot or Bot task.
+
+## Deleted Bots
+
+The permanently deleted bots are displayed on this page.  
+<img src="../images/permanently_deleted.png" alt="permanently_deleted" title="permanently_deleted" style="border:1px solid gray; zoom:70%;">
+
+
+The following list describes the columns displayed for each deleted bot.
+
+
+<table>
+  <tr>
+   <td><strong>COLUMN</strong>
+   </td>
+   <td><strong>DESCRIPTION</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Bot Name
+   </td>
+   <td>Displays the name of the bot, created by the user.
+   </td>
+  </tr>
+  <tr>
+   <td>Deletion requested by
+   </td>
+   <td>Displays the name of the user who deleted the Bot.
+   </td>
+  </tr>
+  <tr>
+   <td>Deletion Request
+   </td>
+   <td>Displays the date when the user deleted the bot.
+   </td>
+  </tr>
+  <tr>
+   <td>App Creation Date
+   </td>
+   <td>Displays the date when the user created the app.
+   </td>
+  </tr>
+  <tr>
+   <td>Deletion Date
+   </td>
+   <td>Displays the date of actual deletion.
+   </td>
+  </tr>
+</table>

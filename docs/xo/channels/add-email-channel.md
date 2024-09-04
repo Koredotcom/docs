@@ -39,6 +39,7 @@ When **Display Name** is not provided, the email profiles appear with the sender
     <img src="../images/add-display-name.png" alt="add display name" title="add display name" style="border: 1px solid gray;zoom:50%;"/>
 
 <ol start="4"><li>Choose whether you want to send a contact card to all users as a part of the introduction message under <b>Send contact card (.VCF)</b>.  
+
 <img src="../images/send-contact-card.png" alt="send contact card" title="send contact card" style="border: 1px solid gray;zoom:50%;"/></li>
 
 <li>Under the <b>Enable Channel</b> section, select <b>Yes</b> to enable the channel.  
