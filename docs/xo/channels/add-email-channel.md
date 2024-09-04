@@ -16,48 +16,46 @@ Developers can now define custom display names for configured email addresses wi
 
 Providing the display name ensures that the name linked to the sender’s email address is visible to the end user in the sender’s email profile. 
 
-An example of how a display name, when provided, appears to the end user is given below:
-
+An example of how a display name, when provided, appears to the end user is given below:  
 <img src="../images/email-display-name-configure.png" alt="email display name sample configuration" title="email display name sample configuration" style="border: 1px solid gray;zoom:50%;"/>
 
 For more details, please refer to **Step 3** in the next section.
 
-When **Display Name** is not provided, the email profiles appear with the sender’s name linked to the email address and the text “_Bot (via Kore)_” to the end user.
-
+When **Display Name** is not provided, the email profiles appear with the sender’s name linked to the email address and the text “_Bot (via Kore)_” to the end user.  
 <img src="../images/banking-support-display-name.png" alt="banking support sample display name" title="banking support sample display name" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Steps to Add the Email Channel
 
 1. On the UX Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Email** on the left navigation menu. 
 
-2. In the **Email** window, change the first portion of the address set to the VA name (default value) for **Email to this bot can be sent to the below email address**.
+2. In the **Email** window, change the first portion of the address set to the VA name (default value) for **Email to this bot can be sent to the below email address**.  
 <img src="../images/email-field-entry.png" alt="email field" title="email field" style="border: 1px solid gray;zoom:50%;"/>
 
 3. **(Optional)** Enter the value for **Display Name** to customize how the configured email address will appear to the end user.
 
     !!!note
 
-        A maximum of 30 characters are allowed for the display name, including special characters, numbers, and spaces.
-
+        A maximum of 30 characters are allowed for the display name, including special characters, numbers, and spaces.  
     <img src="../images/add-display-name.png" alt="add display name" title="add display name" style="border: 1px solid gray;zoom:50%;"/>
 
-<ol start="4"><li>Choose whether you want to send a contact card to all users as a part of the introduction message under <b>Send contact card (.VCF)</b>.
+<ol start="4"><li>Choose whether you want to send a contact card to all users as a part of the introduction message under <b>Send contact card (.VCF)</b>.  
+
 <img src="../images/send-contact-card.png" alt="send contact card" title="send contact card" style="border: 1px solid gray;zoom:50%;"/></li>
 
-<li>Under the <b>Enable Channel</b> section, select <b>Yes</b> to enable the channel.
+<li>Under the <b>Enable Channel</b> section, select <b>Yes</b> to enable the channel.  
 <img src="../images/enable-email-channel.png" alt="enable email channel" title="enable email channel" style="border: 1px solid gray;zoom:50%;"/></li>
 
 <li><b>(Optional)</b> Turn on the <b>Email Template Design (Optional)</b> toggle to configure the header and footer of the emails that are sent via the configured email address, and do the following:</li></ol>
-<ul><li>Click <b>Edit Header</b> and <b>Edit Footer</b> to configure the header and footer details.
+<ul><li>Click <b>Edit Header</b> and <b>Edit Footer</b> to configure the header and footer details.  
 <img src="../images/optional-selection-email-template.png" alt="email template design enable" title="email template design enable" style="border: 1px solid gray;zoom:50%;"/></li>
 
-<li>In the <b>Edit</b> window, change the header and footer details, and click <b>Preview</b> to see the changes.
+<li>In the <b>Edit</b> window, change the header and footer details, and click <b>Preview</b> to see the changes.  
 <img src="../images/edit-window-change-header-footer.png" alt="change header and footer" title="change header and footer" style="border: 1px solid gray;zoom:50%;"/></li>
 
-<li>Click <b>Save</b>.
+<li>Click <b>Save</b>.  
 <img src="../images/edit-window-click save.png" alt="Click Save" title="Click Save" style="border: 1px solid gray;zoom:50%;"/></li></ul>
 
-<ol start="7"><li>In the <b>Email</b> window, click <b>Save</b>. The <i>Channel added successfully</i> message is displayed.
+<ol start="7"><li>In the <b>Email</b> window, click <b>Save</b>. The <i>Channel added successfully</i> message is displayed.  
 <img src="../images/email-template-design-header-footer.png" alt="email template design header and footer" title="email template design header and footer" style="border: 1px solid gray;zoom:50%;"/></li></ol>
 
 After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).

@@ -82,8 +82,7 @@ For more information, see <a href="../../../administration/data/data-table">app 
 
 
 ```json
-curl -X POST \
-  'https://{{host}}/api/public/views/{{viewName}}/query?sys_limit=4&sys_offset=0' \
+curl -X POST 'https://{{host}}/api/public/views/{{viewName}}/query?sys_limit=4&sys_offset=0' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -H 'content-type: application/json' \
   -d '{

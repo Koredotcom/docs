@@ -41,9 +41,6 @@ For more information, see <a href="../../../administration/data/data-table">app 
 </table>
 
 
- 
-
-
 ## Path Parameters
 
 
@@ -90,8 +87,7 @@ By default this is set to 10 and the maximum allowed is 100.
 
 
 ```json
-curl -X POST \
-  'https://{{host}}/api/public/tables/{{tableName}}/query?sys_limit=4&sys_offset=0' \
+curl -X POST 'https://{{host}}/api/public/tables/{{tableName}}/query?sys_limit=4&sys_offset=0' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -H 'content-type: application/json' \
   -d '{

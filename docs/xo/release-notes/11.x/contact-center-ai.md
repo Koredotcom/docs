@@ -31,26 +31,6 @@ Agents now have more flexibility and validation options when dialing outbound ca
 
 [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
 
-#### Enhanced Supervisor Capabilities: Listen and Whisper for Voice Calls
-
-This update introduces real-time monitoring and intervention features for supervisors during voice calls. The features significantly enhance supervisory capabilities, allowing agents to provide more effective and immediate assistance during customer interactions.
-
-**Key updates**:
-
-* Listen Functionality:
-    * A silent listening functionality, allowing supervisors to monitor agents' voice calls without causing disruptions on the agents' end.
-* Whisper Functionality:
-    * Private voice instruction/guidance from supervisor to agent.
-    * The customer cannot hear the supervisor's input.
-* User Interface Integration:
-    * New "Listen" and "Whisper" options on the Monitor tab
-    * Easy-to-access controls for quick intervention.
-* Chat Transcript:
-    * Whisper inputs are recorded in a different color.
-    * Labeled with supervisor name and timestamp.
-
-[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen-and-whisper-voice-calls)
-
 ### Configuration
 
 #### New Permission for Sentiment Visibility Control
@@ -71,25 +51,6 @@ The new permission to manage the visibility of captured customer sentiment in th
     * Ensures agents have current information on customer sentiment.
 
 [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
-
-#### Email Address Blacklisting
-
-This update introduces an Email Address Blacklisting functionality for contact center administrators. It helps contact centers maintain a clean communication channel, improve efficiency, and protect their email reputation by proactively managing potentially problematic email addresses.  
-<img src="../images/blacklist-toggle.png" alt="Email Blacklist" title="Email Blacklist" style="border: 1px solid gray; zoom:55%;">
-
-**Key updates**:
-
-* Blacklist Management:
-    * Administrators can specify blacklisted email addresses.
-    * It prevents sending emails to potentially problematic domains.
-* Verification Process:
-    * The system checks incoming email addresses against the blacklist.
-    * Linked to specific receiving email addresses.
-* Automated Response:
-    * Disables pre-configured automations for blacklisted addresses.
-    * Prevents automated agent transfers for blacklisted interactions.
-* Normal Processing:
-    * Non-blacklisted emails proceed through the usual automation and transfer processes.
 
 #### Enhanced Conferencing Functionality
 
@@ -178,7 +139,7 @@ This update enhances the conversation transfer functionality through API, allowi
 
 #### Extended Debug Logs API to SmartAssist Channel
 
-The debug logs API is updated to collect the debug logs of the SmartAssist channel. [Learn more :octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
+The Debug Logs API has been updated to collect logs for Voice/DTMF barge-in events within the SmartAssist channel. [Learn more :octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
 
 <hr>
 

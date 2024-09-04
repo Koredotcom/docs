@@ -83,8 +83,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 ## Sample Request
 
 ```json
-curl -X POST \
-  'https://{{host}}/api/public/samplebots/{{bot_id}}/add' \
+curl -X POST 'https://{{host}}/api/public/samplebots/{{bot_id}}/add' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -H 'content-type: application/json' \
   -H 'AccountId: xexxbaxxxbxbxxxxxxxxcxfb' \

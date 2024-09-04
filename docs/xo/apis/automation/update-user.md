@@ -75,8 +75,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 
 ```json
-curl -X PUT \
-  https://{{host}}/api/public/users \
+curl -X PUT 'https://{{host}}/api/public/users' \
   -H 'Content-Type: application/json' \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
   -d '{

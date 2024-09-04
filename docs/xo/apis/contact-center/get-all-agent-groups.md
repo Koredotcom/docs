@@ -20,7 +20,7 @@ To retrieve the list of agent groups with the given Stream Id.
 
 ```
 curl --location --request GET \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups'
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

@@ -21,8 +21,8 @@ To retrieve the details of a particular skill with the given Stream Id, Skill Gr
 ## Sample Request
 
 ```
-curl --location --request GET\
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}'
+curl --location --request GET \
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

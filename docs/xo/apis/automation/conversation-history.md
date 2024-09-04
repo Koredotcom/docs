@@ -464,10 +464,6 @@ Default direction is forward.
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Response
 
 **Sample response for the GET method**

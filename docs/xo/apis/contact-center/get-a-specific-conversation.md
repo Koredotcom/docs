@@ -19,7 +19,7 @@ Get a particular conversation by providing the Conversation Id.
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversationId}}
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversationId}}' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'accountId: {{YOUR_accountId}}'
 ```

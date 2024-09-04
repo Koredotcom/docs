@@ -9,7 +9,9 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 ### Agent AI Conversation Logs
 
-This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time. [Learn more](https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-conversation-logs)
+This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-conversation-logs.md){:target="_blank"}
 
 Key updates:
 
@@ -32,7 +34,9 @@ Key updates:
 
 ### Enabling Server-Side Triggering of Conversation Summary in Agent AI
 
-Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API. [Learn more.](https://docsinternal-kore.github.io/docs/xo/apis/agent-ai/conversation-summary-trigger-api/?h=conversation+summary+tri)
+Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API.
+
+[Learn more :octicons-arrow-right-24:](../../apis/agent-ai/conversation-summary-trigger-api.md){:target="_blank"}
 
 ### Introduction of Additional languages for Agent AI
 

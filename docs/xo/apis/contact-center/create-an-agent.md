@@ -20,8 +20,7 @@ To add an agent with the given Stream Id.
 ## Sample Request
 
 ```
-curl --location --request POST \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents'
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{

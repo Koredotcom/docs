@@ -20,7 +20,7 @@ To update a specific queue with the given`streamId` and `queuesId`.
 ## Sample Request
 
 ```
-curl -X 'PUT' \ 'https://{{host}}/agentassist/api/v1/public/{streamId}/queues/qu-57e6188-bd69-41d8-b200-d92e17c4xxxx' \
+curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{streamId}/queues/qu-57e6188-bd69-41d8-b200-d92e17c4xxxx' \
   -H 'accept: application/json' \
   -H 'accountId: 62cd37c6f35860734283xxxx' \
   -H 'Content-Type: application/json' \

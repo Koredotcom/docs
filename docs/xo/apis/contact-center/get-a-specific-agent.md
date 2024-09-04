@@ -19,8 +19,7 @@ To retrieve the details of a particular agent with the given stream Id and agent
 ## Sample Request
 
 ```
-curl --location --request GET\
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}'
+curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```
