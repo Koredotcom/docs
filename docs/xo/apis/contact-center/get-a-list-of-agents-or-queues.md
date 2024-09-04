@@ -43,7 +43,7 @@ curl --location 'http://localhost/agentassist/api/v1/public/st-0aae83f7-49c7-58c
 
 ## Sample Responses
 
-When `agentIds` are passed:
+When `queueIds` are passed:
 
 ```
 [
@@ -68,7 +68,7 @@ When `agentIds` are passed:
 ]
 ```
 
-When `queueIds` are passed:
+When `agentIds` are passed:
 
 ```
 [
