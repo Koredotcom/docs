@@ -1,6 +1,6 @@
 # List of Supported Libraries
 
-The following pre-existing libraries can be selected for use in the script editor of the function node.
+The following pre-existing libraries can be selected for use in the script editor of the function node. [Learn more](../types-of-nodes/function-node.md).
 
 * [json](#json)
 * [enum](#enum)
