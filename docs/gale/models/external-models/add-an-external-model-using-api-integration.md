@@ -69,9 +69,11 @@ Steps to add an external model using API integration:
 ## Manager Custom API Integration
 
 Once the integration is successful and the inference toggle is ON, you can use the model across GALE. You can also turn the inferencing OFF if needed.
-Hover over the custom integration and click the more icon (three dots). A pop-up with a list of options is displayed.
-* View: Look at the integration details.
-* Copy: Make an editable draft copy.
-* Delete: Remove the integration.
+Hover over the custom integration and click the more icon (three dots). A p op-up with a list of options is displayed.
+
+
+ * View: Look at the integration details.
+ * Copy: Make an editable draft copy.
+ * Delete: Remove the integration.
 
 <img src="../images/three-dots-icon-options.png" alt="Three Dots Icon Options" title="Three Dots Icon Options" style="border: 1px solid gray; zoom:80%;">
