@@ -70,7 +70,7 @@ Steps to add an external model using API integration:
 
 Once the integration is successful and the inference toggle is ON, you can use the model across GALE. You can also turn the inferencing OFF if needed.
 
-Hover over the custom integration and click the more icon (three dots). A p op-up with a list of options is displayed.
+Hover over the custom integration and click the more icon (three dots). A pop-up with a list of options is displayed.
 
 
  * View: Look at the integration details.
