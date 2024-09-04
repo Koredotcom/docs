@@ -80,8 +80,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 
 ```json
-curl -X GET \
-  https://{{host}}/api/public/bot/import/status/bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx \
+curl -X GET 'https://{{host}}/api/public/bot/import/status/bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
 

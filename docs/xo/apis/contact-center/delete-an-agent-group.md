@@ -21,7 +21,7 @@ To delete the particular agent group with the given Stream Id and Agent Group Id
 
 ```
 curl --location --request DELETE \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{id}}'
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{id}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

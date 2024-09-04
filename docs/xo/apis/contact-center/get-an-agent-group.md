@@ -20,8 +20,7 @@ To get the details of a particular agent group with the given Stream Id and Agen
 ## Sample Request
 
 ```
-curl --location --request GET \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{id}}'
+curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{id}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
 ```

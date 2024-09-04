@@ -20,8 +20,7 @@ To update a particular agent group with the given Stream Id and Agent Group Id.
 ## Sample Request
 
 ```
-curl --location --request POST \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{id}}'
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups/{{id}}' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '

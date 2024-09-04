@@ -21,8 +21,7 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 ## Sample Request
 
 ```
-curl --location --request POST \
-'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}//userstatus'
+curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}//userstatus' \
 --header 'auth: {jwt-code}' \
 --header 'Content-Type: application/json' \
 --data-raw '{

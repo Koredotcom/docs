@@ -80,8 +80,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 ## Sample Request
 
 ```json
-curl -X POST \
-  https://{{host}}/api/public/uploadfile \
+curl -X POST 'https://{{host}}/api/public/uploadfile' \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
   -H 'content-type: multipart/form-data' \
   -F file=@botDefinition.json \

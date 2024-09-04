@@ -24,7 +24,7 @@ To get exported data which is one of (skillsGroups, Queues, StandardResponses, W
 ```
 curl --location --request GET 'https://{{host}}/agentassist/api/v1/public/analytics/st-ef2ab28a-0d16-5
 cbf-bf31-a395bdb1xxxx/importSmartAssistFunctionalities?accountId=6297011e24f30b5ab18e6e4c&orgId=o-18f401c2-f1a6-5a97-
-8b5c-4511863cxxxx&type=skillGroups' 
+8b5c-4511863cxxxx&type=skillGroups' \
 --header 'Accept: application/json, text/plain, */*' 
 --header 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' 
 --header 'AccountId: 63e0f303560867d78313xxxx' 

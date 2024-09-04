@@ -40,10 +40,6 @@ For more information, see <a href="../../../administration/data/data-table">app 
   </tr>
 </table>
 
-
- 
-
-
 ## Path Parameters
 
 
@@ -76,8 +72,7 @@ For more information, see <a href="../../../administration/data/data-table">app 
 
 
 ```json
-curl -X POST \
-  https://{{host}}/api/public/tables/{{tableName}}/bulk \
+curl -X POST 'https://{{host}}/api/public/tables/{{tableName}}/bulk' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -H 'content-type: application/json' \
   -d '{

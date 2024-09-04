@@ -79,8 +79,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 
 ```json
-curl -X POST \
-  https://{{host}}/api/public/bot/{{bot ID}}/mlimport \
+curl -X POST 'https://{{host}}/api/public/bot/{{bot ID}}/mlimport' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -H 'content-type: application/json' \
   -d '{

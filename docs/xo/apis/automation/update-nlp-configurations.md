@@ -97,8 +97,7 @@ for Multiple ML Model
 
 
 ```json
-curl --location -g --request POST \
-  'https://{{host}}/api/public/bot/{{bot-id}}/configurations?language={{languageCode}}' \
+curl --location -g --request POST 'https://{{host}}/api/public/bot/{{bot-id}}/configurations?language={{languageCode}}' \
   --header 'auth: YOUR_JWT_ACCESS_TOKEN' \
   --header 'content-type: application/json' \
   --data-raw '{

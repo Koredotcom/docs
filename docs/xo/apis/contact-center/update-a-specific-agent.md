@@ -20,8 +20,7 @@ To update the details of a particular agent with the given Stream Id and Agent I
 ## Sample Request
 
 ```
-curl --location --request PUT\
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}'
+curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}' \
      --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
