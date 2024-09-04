@@ -41,7 +41,7 @@ import time
 import calendar
 import itertools
 ```
-## Functions of All Supported Libraries
+## Functions of Supported Libraries
 
 ### json
 ```
