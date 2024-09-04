@@ -139,7 +139,7 @@ This update enhances the conversation transfer functionality through API, allowi
 
 #### Extended Debug Logs API to SmartAssist Channel
 
-The debug logs API is updated to collect the debug logs of the SmartAssist channel. [Learn more :octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
+The Debug Logs API has been updated to collect logs for Voice/DTMF interactions and barge-in events within the SmartAssist channel. [Learn more :octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
 
 <hr>
 
