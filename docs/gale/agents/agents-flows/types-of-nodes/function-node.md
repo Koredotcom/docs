@@ -32,11 +32,11 @@ Steps to add and configure the node:
             ~~~
             To call a function:
             ~~~
-            context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>
+            context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>)
             ~~~
 
             !!! note
-                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.
+                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy. [Learn more](../types-of-nodes/script-libraries.md).
 
         2.  You can use the Context input/output feature to use a variable from the previous node or when testing a function.
             * **Context Input**: Add the required variable; also, dummy input values can be given to test the defined function.
