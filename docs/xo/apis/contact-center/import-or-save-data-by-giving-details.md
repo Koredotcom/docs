@@ -13,7 +13,7 @@ To save/import data which is one of (skillsGroups, Queues, StandardResponses, Wa
 ## Sample Request
 
 ```
-curl --location 'http://{{host}}/agentassist/api/v1/public/st-d2aa65cc-a2d2-5b6d-84d7-861509e28c25/queues' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/st-d2aa65cc-a2d2-5b6d-84d7-861509e2xxxx/queues' \
 --header 'accept: application/json' \
 --header 'accountId: 649bdcaf5037ed113942xxxx' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy0zOWNkNmJhMC1mNmVlLTViYWUtOWI3ZC03M2I0YmE5N2FjOGIifQ.LAiNcKfUNeDaAtPei1nD6JZJbnEGsv1BKo1pQUexxxx' \
