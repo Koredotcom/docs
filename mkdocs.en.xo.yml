@@ -486,11 +486,11 @@ nav:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
         - Rate Limits: apis/automation/rate-limit.md
-        - API List:
-          - Agent AI APIs: apis/agent-ai/apis-list.md
+        - API List:          
           - Automation APIs: apis/automation/api-list.md
-          - Contact Center APIs: apis/contact-center/contact-center-api-list.md
           - Search AI APIs: apis/searchai/api-list.md
+          - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+          - Agent AI APIs: apis/agent-ai/apis-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
