@@ -111,8 +111,8 @@ copyright: |
   © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home : home.md
-  - Platform:
-    - Overview: getting-started/about-xo-platform.md    
+  - プラットフォーム:
+    - 概要: getting-started/about-xo-platform.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md  
