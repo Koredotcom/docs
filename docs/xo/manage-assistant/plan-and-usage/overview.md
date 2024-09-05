@@ -5,8 +5,7 @@ This article provides information on how virtual assistants are billed, how to t
 
 ## Accounts or Workspaces
 
-A Workspace or Account refers to a group of users who typically belong to an organization or work on projects. When you sign up, the platform automatically creates a Workspace and a User identity for you. In some scenarios, the platform creates only a user identity and associates you with an existing Workspace. To learn how workspaces are created for different usage scenarios, see[ Accessing the Platform](https://developer.kore.ai/docs/bots/chatbot-overview/how-to-access-bot-builder/).
-
+A Workspace or Account refers to a group of users who typically belong to an organization or work on projects. When you sign up, the platform automatically creates a Workspace and a User identity for you. In some scenarios, the platform creates only a user identity and associates you with an existing Workspace. To learn how workspaces are created for different usage scenarios, see[ Accessing the Platform](../../getting-started/accessing-the-platform.md)
 
 ## Workspace Owner
 
