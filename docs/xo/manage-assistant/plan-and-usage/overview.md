@@ -27,7 +27,6 @@ Every workspace of the Kore.ai XO Platform is categorized as a Standard or Enter
 
 Every workspace gets classified as a Standard Workspace when created. All the virtual assistants published in the Standard Workspace are auto-assigned with the Standard Usage Plan.
 
-
 * Standard Workspaces get free credits worth $500. The free credits are valid for a period of 90 days from the date of workspace creation.
     * The free credits can be used to publish and test the virtual assistants on any of the 35+ chat and voice channels.
     * You can continue to build your virtual assistants even after the free credits are expired or been exhausted. However, the virtual assistants will stop responding on the channels after the free credits are exhausted or expired.
@@ -43,7 +42,6 @@ Enterprise workspaces offer access to premium features, higher usage limits, and
 * The features, usage limits, and rate limits for the Enterprise workspaces are governed by the terms and conditions of the license agreement.
 * All the virtual assistants in the Enterprise Workspace are assigned to the Enterprise Usage Plan. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
 
-
 ## Plan Types
 
 The Kore.ai XO Platform offers Usage Plans and Support Plans for deploying and managing your assistants.
@@ -53,22 +51,16 @@ The Kore.ai XO Platform offers Usage Plans and Support Plans for deploying and m
 
 The Usage Plan enables virtual assistants to interact with your end users from any available channels. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
 
-
-
 * All the virtual assistants in the Standard Workspace are assigned to the Standard Usage Plan.
 * All the virtual assistants in the Enterprise Workspace are assigned to the Enterprise Usage Plan.
-
 
 ### Support Plans
 
 The Support Plan is required to get premium support from Kore.ai’s team of experts. Access to help and support resources like [Kore.ai Documentation](https://docs.kore.ai/xo/home/), [Community](https://community.kore.ai/), and [Academy](https://academy.kore.ai/)<span style="text-decoration:underline;"></span> is available for all users. For more information, see [Support Plans](./support-plans.md/).		
 
-
 ## Workspace Linked to Multiple Bots
 
 A workspcae owner can explicitly manage the Plan and Usage for a workspace linked to multiple bot accounts and do the following:
-
-
 
 * Manage the free and paid credits for individual bots listed for a standard account.
 * View the number of paid and inactive bots.
@@ -84,7 +76,6 @@ A workspcae owner can explicitly manage the Plan and Usage for a workspace linke
 ## Shared Accounts
 
 The Platform allows owners to manage the Plan and Usage for multiple shared Virtual Assistants in their workspace, one at a time. The owners can do the following for shared accounts:
-
 
 
 * Upgrade the current standard and support plans.
