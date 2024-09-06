@@ -183,11 +183,11 @@ Please complete the email OTP verification to sign in successfully.</div>
 
 2. Enter your registered email ID and click **Continue with Email**.
 
-    <img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
 
-   Then, enter your password and click **Login**.
+Then, enter your password and click **Login**.
 
-    <img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
