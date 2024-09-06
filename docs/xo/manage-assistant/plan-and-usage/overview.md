@@ -1,11 +1,11 @@
 
 # Plan and Usage Overview
-
+  
 This article provides information on how virtual assistants are billed, how to track their usage, and the usage limits or quotas applied for various features. Before we go into the details, let us quickly understand the following key terms and concepts.
 
 ## Accounts or Workspaces
 
-A Workspace or Account refers to a group of users who typically belong to an organization or work on projects. When you sign up, the platform automatically creates a Workspace and a User identity for you. In some scenarios, the platform creates only a user identity and associates you with an existing Workspace. To learn how workspaces are created for different usage scenarios, see[ Accessing the Platform](../../getting-started/accessing-the-platform.md)
+A Workspace or Account refers to a group of users who typically belong to an organization or work on projects. When you sign up, the platform automatically creates a Workspace and a User identity for you. In some scenarios, the platform creates only a user identity and associates you with an existing Workspace. To learn how workspaces are created for different usage scenarios, see [Accessing the Platform](../../getting-started/accessing-the-platform.md)
 
 ## Workspace Owner
 
@@ -32,7 +32,7 @@ Every workspace gets classified as a Standard Workspace when created. All the vi
     * The free credits can be used to publish and test the virtual assistants on any of the 35+ chat and voice channels.
     * You can continue to build your virtual assistants even after the free credits are expired or been exhausted. However, the virtual assistants will stop responding on the channels after the free credits are exhausted or expired.
 * Standard Workspaces provide a pay-as-you-go model for deploying the virtual assistant for production purposes.
-* All the virtual assistants in the Standard Workspace are assigned to the Standard Usage Plan. You can add paid credits to your virtual assistants anytime for uninterrupted services. For more information, see[ Usage Plans](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/).
+* All the virtual assistants in the Standard Workspace are assigned to the Standard Usage Plan. You can add paid credits to your virtual assistants anytime for uninterrupted services. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
 * Workspace Owners or Bot Owners can request to get upgraded to Enterprise Workspace. Kore.ai’s Customer Support team will contact the users to process the request.
 
 
@@ -41,7 +41,7 @@ Every workspace gets classified as a Standard Workspace when created. All the vi
 Enterprise workspaces offer access to premium features, higher usage limits, and rate limits. The workspaces of business accounts that have custom contracts with Kore.ai are auto-upgraded to Enterprise Workspaces.
 
 * The features, usage limits, and rate limits for the Enterprise workspaces are governed by the terms and conditions of the license agreement.
-* All the virtual assistants in the Enterprise Workspace are assigned to the Enterprise Usage Plan. For more information, see [Usage Plans](./usage-plans.md).
+* All the virtual assistants in the Enterprise Workspace are assigned to the Enterprise Usage Plan. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
 
 
 ## Plan Types
@@ -51,7 +51,7 @@ The Kore.ai XO Platform offers Usage Plans and Support Plans for deploying and m
 
 ### Usage Plans
 
-The Usage Plan enables virtual assistants to interact with your end users from any available channels. For more information, see [Usage Plans](./usage-plans.md).
+The Usage Plan enables virtual assistants to interact with your end users from any available channels. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
 
 
 
@@ -61,17 +61,7 @@ The Usage Plan enables virtual assistants to interact with your end users from a
 
 ### Support Plans
 
-The Support Plan is required to get premium support from Kore.ai’s team of experts. Access to help and support resources like [Kore.ai Documentation](https://docs.kore.ai/xo/home/), [Community](https://community.kore.ai/), and [Academy](https://academy.kore.ai/)<span style="text-decoration:underline;"></span> is available for all users. For more information, see [Support Plans](./support-plans.md/).
-
-		
-
-	
-
-	
-
-		
-
-			
+The Support Plan is required to get premium support from Kore.ai’s team of experts. Access to help and support resources like [Kore.ai Documentation](https://docs.kore.ai/xo/home/), [Community](https://community.kore.ai/), and [Academy](https://academy.kore.ai/)<span style="text-decoration:underline;"></span> is available for all users. For more information, see [Support Plans](./support-plans.md/).		
 
 
 ## Workspace Linked to Multiple Bots
