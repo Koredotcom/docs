@@ -7,17 +7,21 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
+  favicon: images/kore_favicon.svg
   name: material
   custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.path
+    - navigation.footer    
     - search.suggest
-    - search.highlight
+    - search.highlight    
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - header.autohide
   language: en
   palette:
     - scheme: default
@@ -25,40 +29,38 @@ theme:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: indigo
-      accent: purple 
+      accent: indigo
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: indigo
       accent: lime
-    
 plugins:
   - search:
       lang: tr
-  - glightbox     
+  - glightbox   
 extra:
   version:
     provider: mike
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/Koredotcom
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Koredotcom
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/Koredotcom
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/Koredotcom
-  alternate:
-    - name: en - English 
-      link: https://docsinternal-kore.github.io/docs/en
-      lang: en
-    - name: ja - 日本語 
-      link: https://docsinternal-kore.github.io/docs/ja
-      lang: ja  
-    - name: ko - 한국어 
-      link: https://docsinternal-kore.github.io/docs/ko
-      lang: jako   
+  generator: false
+  analytics:
+    provider: google
+    property: G-560BYJFH0P
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-                       
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+{url}" target="_blank" rel="noopener">feedback form<a>.
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -71,6 +73,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      title: On this Page
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -102,87 +105,493 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets
 
 copyright: |
-  © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
-  - Home: index.md
-  - Getting started:
-    - Installation: getting-started.md
-    - Creating your site: creating-your-site.md
-    - Publishing your site: publishing-your-site.md
-    - Customization: customization.md
-    - Browser support: browser-support.md
-    - Philosophy: philosophy.md
-    - Alternatives: alternatives.md
-    - License: license.md
-    - Changelog:
-      - changelog/index.md
-      - How to upgrade: upgrade.md
-    - Contributing:
-      - contributing/index.md
-      - Reporting a bug: contributing/reporting-a-bug.md
-      - Reporting a docs issue: contributing/reporting-a-docs-issue.md
-      - Requesting a change: contributing/requesting-a-change.md
-      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
-    - Guides:
-      - Creating a reproduction: guides/creating-a-reproduction.md
-    - FAQ:
-      - Sponsoring: faq/sponsoring.md
-  - Setup:
-    - setup/index.md
-    - Changing the colors: setup/changing-the-colors.md
-    - Changing the fonts: setup/changing-the-fonts.md
-    - Changing the language: setup/changing-the-language.md
-    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-    - Ensuring data privacy: setup/ensuring-data-privacy.md
-    - Setting up navigation: setup/setting-up-navigation.md
-    - Setting up site search: setup/setting-up-site-search.md
-    - Setting up site analytics: setup/setting-up-site-analytics.md
-    - Setting up social cards: setup/setting-up-social-cards.md
-    - Setting up a blog: setup/setting-up-a-blog.md
-    - Setting up tags: setup/setting-up-tags.md
-    - Setting up versioning: setup/setting-up-versioning.md
-    - Setting up the header: setup/setting-up-the-header.md
-    - Setting up the footer: setup/setting-up-the-footer.md
-    - Adding a git repository: setup/adding-a-git-repository.md
-    - Adding a comment system: setup/adding-a-comment-system.md
-    - Building an optimized site: setup/building-an-optimized-site.md
-    - Building for offline usage: setup/building-for-offline-usage.md
-    - Extensions:
-      - setup/extensions/index.md
-      - Python Markdown: setup/extensions/python-markdown.md
-      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-    - Dependencies:
-      - setup/dependencies/image-processing.md
-  - Reference:
-    - reference/index.md
-    - Admonitions: reference/admonitions.md
-    - Annotations: reference/annotations.md
-    - Buttons: reference/buttons.md
-    - Code blocks: reference/code-blocks.md
-    - Content tabs: reference/content-tabs.md
-    - Data tables: reference/data-tables.md
-    - Diagrams: reference/diagrams.md
-    - Footnotes: reference/footnotes.md
-    - Formatting: reference/formatting.md
-    - Grids: reference/grids.md
-    - Icons, Emojis: reference/icons-emojis.md
-    - Images: reference/images.md
-    - Lists: reference/lists.md
-    - Math: reference/math.md
-    - Tooltips: reference/tooltips.md
-  - Insiders:
-    - insiders/index.md
-    - Getting started:
-      - Installation: insiders/getting-started.md
-      - Changelog: insiders/changelog.md
-  - Blog:
-    - blog/index.md
-    - 2022:
-      - blog/posts/blog-support-just-landed.md
-      - blog/posts/chinese-search-support.md
-    - 2021:
-      - blog/posts/the-past-present-and-future.md
-      - blog/posts/excluding-content-from-search.md
-      - blog/posts/search-better-faster-smaller.md
+  - Home : home.md
+  - プラットフォーム:
+    - 概要: getting-started/about-xo-platform.md    
+    - Getting Started:
+      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Navigating the Platform: getting-started/navigating-the-platform.md  
+      - Onboarding:
+        - Guided Onboarding: getting-started/guided-onboarding.md
+        - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
+      - Flows and Channels:
+        - Flows: 
+          - Introduction: flows/introduction-to-flows.md
+          - Create Flows: flows/create-flows.md
+          - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
+          - Node Types:
+            - Introduction to Flow Nodes: flows/node-types/introduction-to-flow-nodes.md
+            - Agent Transfer: flows/node-types/agent-transfer.md
+            - Automation: flows/node-types/automation.md
+            - Check Agent Availability: flows/node-types/check-agent-availability.md
+            - Check Business Hours: flows/node-types/check-business-hours.md
+            - Connect to API: flows/node-types/connect-to-api.md
+            - End Flow: flows/node-types/end-flow.md
+            - Go to Flow: flows/node-types/go-to-flow.md
+            - IVR Digit Input: flows/node-types/ivr-digit-input.md
+            - IVR Menu: flows/node-types/ivr-menu.md
+            - Message Prompt: flows/node-types/message-prompt.md
+            - Script Task: flows/node-types/script-task.md
+            - Set Queue: flows/node-types/set-queue.md
+            - Split: flows/node-types/split.md
+        - Channels:
+          - Digital: channels/adding-channels-to-your-bot.md
+          - Voice:
+            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
+            - Third-Party Voice:
+              - Amazon Alexa: channels/amazon-alexa.md
+              - Twilio Voice: channels/add-twilio-voice-channel.md
+              - AudioCodes: channels/ivr-audio-codes.md
+              - IVR: channels/IVR-integration.md            
+    - Glossary:
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
+    - Release Notes:
+      - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
+      - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
+      - Current Limitations: release-notes/current-limitations.md
+      - XO v11.x Updates:
+        - Automation AI: release-notes/11.x/automation-ai.md
+        - Search AI: release-notes/11.x/search-ai.md
+        - Contact Center AI: release-notes/11.x/contact-center-ai.md
+        - Agent AI: release-notes/11.x/agent-ai.md
+        - Platform Services: release-notes/11.x/platform-services.md    
+  - Automation AI: 
+    - Overview: automation/about-automation-ai.md
+    - Getting Started:
+        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
+        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+        - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
+    - Use Cases: 
+      - Dialog Tasks:
+        - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
+        - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
+        - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
+        - Node Types:
+          - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md
+          - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
+          - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
+          - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
+          - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
+          - GenAI Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
+          - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
+          - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
+          - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
+          - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
+          - Message Node: automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md
+          - Logic Node: automation/use-cases/dialogs/node-types/working-with-the-logic-node.md
+          - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
+          - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
+          - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
+          - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
+          - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
+          - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
+        - Node Connections:
+          - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
+          - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
+        - Entity Types: automation/use-cases/dialogs/entity-types.md
+        - Entity Rules: automation/use-cases/dialogs/entity-rules.md
+        - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md 
+        - Custom Authentication via Service Nodes: automation/use-cases/dialogs/implementing-custom-authentication.md
+        - 2-way SSL for Service Nodes: automation/use-cases/dialogs/enabling-2-way-ssl-for-service-nodes.md       
+      - Alert Tasks: automation/use-cases/alert-tasks.md
+      - Small Talk: automation/use-cases/small-talk.md
+      - Digital Skills: 
+        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+        - Digital Views: automation/use-cases/digital-skills/digital-views.md
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+    - Knowledge AI:
+        - Overview: automation/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: automation/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: automation/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: automation/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: automation/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: automation/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: automation/knowledge-ai/knowledge-graph-analysis.md    
+    - Natural Language:
+      - Overview: automation/natural-language/nlp-introduction.md
+      - NLP Optimization: automation/natural-language/training/optimizing-bots.md
+      - NLP Guidelines: automation/natural-language/nlp-guidelines.md   
+      - Training:
+        - Overview: automation/natural-language/training/nlp-training-overview.md
+        - ML Engine:
+          - Overview: automation/natural-language/training/machine-learning-engine.md
+          - Model Validation: automation/natural-language/training/model-validation.md
+        - FM Engine: automation/natural-language/training/fundamental-meaning.md
+        - KG Engine: automation/knowledge-ai/knowledge-graph-training.md
+        - Traits Engine: automation/natural-language/training/traits.md
+        - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
+        - Training Validations: automation/natural-language/training/training-validations.md      
+      - NLU Configuration:
+        - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
+        - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
+        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
+    - Intelligence:
+      - Overview: automation/intelligence/intelligence-overview.md
+      - Events: 
+        - Intent Events: automation/intelligence/event-handling.md
+        - Context Management: automation/intelligence/context-management.md
+        - Context Object: automation/intelligence/context-object.md
+        - Conversation Events: 
+          - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
+        - Sentiment Events: 
+          - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
+          - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
+      - Conversation Management: 
+        - Standard Responses: automation/intelligence/conversation-management/standard-responses.md 
+        - Manage Interruptions: automation/intelligence/conversation-management/manage-interruptions.md
+        - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
+    - Testing:
+      - Overview: automation/testing/test-and-debug-overview.md
+      - Test (Talk to Bot): automation/testing/talk-to-bot.md
+      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
+      - Regression Testing: 
+        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
+        - Batch Testing: automation/testing/regression-testing/batch-testing.md
+        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
+    - Advanced Topics:
+      - Intent Discovery: automation/tools/intent-discovery.md
+      - Manage Assistant:
+        - Team Collaboration: manage-assistant/collaborative-development.md
+        - Feedback Survey: manage-assistant/feedbacksurvey.md   
+    - How To:
+      - Marketplace Integration:
+        - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
+        - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
+        - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
+  - Search AI:
+    - Overview: searchai/about-search-ai.md
+    - Getting Started:
+      - About Answers in Search AI: searchai/introduction-to-answers.md
+      - Setup Search AI: searchai/setup-search-ai.md
+    - Content:
+        - Sources:
+            - Overview: searchai/content-sources/introduction.md
+            - Web Crawl: searchai/content-sources/web-crawl.md
+            - Directory: searchai/content-sources/directory.md
+            - Connectors:
+                - Introduction: searchai/content-sources/connectors.md
+                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
+                - Dropbox: searchai/content-sources/connectors/dropbox.md
+                - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - ServiceNow: searchai/content-sources/connectors/servicenow.md              
+                - Zendesk: searchai/content-sources/connectors/zendesk.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Azure Storage: searchai/content-sources/connectors/azure.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md 
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+    - Index:               
+        - Extraction Strategy: searchai/content-extraction/extraction.md
+        - Content Browser: searchai/chunk-browser.md
+        - Workbench:
+            - Introduction: searchai/workbench/introduction.md
+            - Field Mapping Stage: searchai/workbench/field-mapping.md
+            - Custom Script: searchai/workbench/custom-script.md
+            - Exclude Document: searchai/workbench/exclude-document.md
+            - Workbench Simulator: searchai/workbench/simulation.md
+        - Vector Configuration: searchai/index-configuration.md
+    - Configuration:
+        - Business Rules: searchai/business-rules.md
+        - Answer Configuration: searchai/answer-configuration.md
+        - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
+    - Dev Tools:
+        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+  - Contact Center AI:
+    - Overview: contactcenter/about-contact-center-ai.md    
+    - Agent and Supervisors: 
+      - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
+      - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
+    - Configurations:
+      - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassist-settings.md
+      - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
+      - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
+      - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
+      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
+      - Surveys: contactcenter/configurations/surveys/configure-surveys.md
+      - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+      - Advanced Settings:
+        - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
+        - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
+        - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
+        - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
+    - Flows and Routing:
+      - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
+      - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+    - Routing:
+      - Queues: contactcenter/routing/queues/queue-management.md
+      - Skills: contactcenter/routing/skills/skill-management.md
+    - Agent Console:
+      - Introduction to the Console: console/agent-console-introduction.md
+      - Conversation Tray: console/conversation-tray.md
+      - Incoming Interactions: console/managing-incoming-interactions.md
+      - Interacting With Customers: console/interacting-with-customers.md
+      - Additional Tools: console/additional-tools.md
+      - Manage Layout: console/manage-layout.md
+      - Monitor: console/monitor-queues-agents-interactions-service-levels.md
+    - Campaigns:  
+      - Overview: contactcenter/campaigns/about-campaigns.md
+      - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
+      - Campaign Management:
+        - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
+        - SMS Campaigns: contactcenter/campaigns/campaign-management/sms-campaigns.md
+        - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
+      - List Management: contactcenter/campaigns/list-management/list-management.md
+      - Templates: contactcenter/campaigns/templates/sms-templates.md
+      - Settings: contactcenter/campaigns/settings/global-settings.md
+      - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
+    - Quality Management:
+      - Overview: quality-management/about-quality-management.md
+      - Setup Guide: quality-management/setup-guide.md 
+      - Analyze:
+        - Dashboard: quality-management/analyze/dashboard.md
+        - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
+        - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+      - Configure:
+        - Evaluation Criteria:
+          - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
+          - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+        - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
+        - Settings: quality-management/configure/settings.md
+  - Agent AI:
+    - Overview: agentai/about-agent-ai.md           
+    - Set up Agent AI:
+      - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
+      - Agent Playbook: agentai/agent-experience/playbook.md
+      - Configurations:
+        - Welcome Events: agentai/configuration/welcome-events.md
+        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
+        - Feedback Settings: agentai/configuration/feedback-settings.md
+        - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
+    - Agent Experience:
+      - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
+      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
+    - Integrations:
+      - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
+  - GenAI Tools:
+    - Overview: generative-ai-tools/introduction.md
+    - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
+    - Models Library:
+      - LLM Integration: generative-ai-tools/models-library.md
+      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
+    - Prompts Library: 
+      - Add Custom Prompts: generative-ai-tools/prompts-library.md
+    - GenAI Features:
+      - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
+      - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - Safeguards:
+      - Data Anonymization: generative-ai-tools/data-anonymization.md
+      - Guardrails: generative-ai-tools/guardrails.md       
+  - Integrations & APIs:
+    - Overview: app-settings/integrations/about-integration.md
+    - Integrations:
+      - Automation: 
+        - Actions:
+          - Actions Overview: app-settings/integrations/actions/actions.md
+          - Asana:
+            - Configure: app-settings/integrations/actions/asana/configuring-the-asana-action.md
+            - Templates: app-settings/integrations/actions/asana/using-the-asana-action-templates.md
+          - Azure OpenAI:
+            - Configure: app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action.md
+            - Templates: app-settings/integrations/actions/azure-open-ai/using-the-azure-openai-action-templates.md
+          - BambooHR:
+            - Configure: app-settings/integrations/actions/bamboo-hr/configuring-the-bamboohr-action.md
+            - Templates: app-settings/integrations/actions/bamboo-hr/using-the-bamboohr-templates.md
+          - Bitly:
+            - Configure: app-settings/integrations/actions/bitly/configuring-the-bitly-action.md
+            - Templates: app-settings/integrations/actions/bitly/using-the-bitly-action-template.md
+          - Confluence:
+            - Configure: app-settings/integrations/actions/confluence/configuring-the-confluence-action.md
+            - Templates: app-settings/integrations/actions/confluence/using-the-confluence-action-templates.md
+          - DHL:
+            - Configure: app-settings/integrations/actions/dhl/configuring-the-dhl-action.md
+            - Templates: app-settings/integrations/actions/dhl/using-the-dhl-action-templates.md
+          - Freshdesk:
+            - Configure: app-settings/integrations/actions/freshdesk/configuring-the-freshdesk-action.md
+            - Templates: app-settings/integrations/actions/freshdesk/using-the-freshdesk-action-templates.md
+          - Freshservice:
+            - Configure: app-settings/integrations/actions/freshservice/configuring-the-freshservice-action.md
+            - Templates: app-settings/integrations/actions/freshservice/using-the-freshservice-itsm-action-templates.md
+          - Google Maps:
+            - Configure: app-settings/integrations/actions/google-maps/configuring-the-google-maps-action.md
+            - Templates: app-settings/integrations/actions/google-maps/using-the-google-maps-action-templates.md
+          - Here:
+            - Configure: app-settings/integrations/actions/here/configuring-the-here-action.md
+            - Templates: app-settings/integrations/actions/here/using-here-action-templates.md
+          - Hubspot:
+            - Configure: app-settings/integrations/actions/hubspot/configuring-the-hubspot-action.md
+            - Templates: app-settings/integrations/actions/hubspot/using-the-hubspot-action-templates.md
+          - JIRA:
+            - Configure: app-settings/integrations/actions/jira/configuring-the-jira-action.md
+            - Templates: app-settings/integrations/actions/jira/using-the-jira-action-templates.md
+          - Microsoft Graph:
+            - Configure: app-settings/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action.md
+            - Templates: app-settings/integrations/actions/microsoft-graph/using-the-microsoft-graph-action-templates.md
+          - OpenAI:
+            - Configure: app-settings/integrations/actions/open-ai/configuring-the-openai-action.md
+            - Templates: app-settings/integrations/actions/open-ai/using-the-openai-actions-templates.md
+          - Salesforce:
+            - Configure: app-settings/integrations/actions/salesforce/configuring-the-salesforce-crm-action.md
+            - Templates: app-settings/integrations/actions/salesforce/using-the-salesforce-crm-action-templates.md
+          - Servicenow:
+            - Configure: app-settings/integrations/actions/servicenow/configuring-the-servicenow-action.md
+            - Templates: app-settings/integrations/actions/servicenow/using-the-servicenow-action-templates.md
+          - Stripe:
+            - Configure: app-settings/integrations/actions/stripe/configuring-the-stripe-action.md
+            - Templates: app-settings/integrations/actions/stripe/using-the-stripe-action-templates.md
+          - Shopify:
+            - Configure: app-settings/integrations/actions/shopify/configuring-the-shopify-action.md
+            - Templates: app-settings/integrations/actions/shopify/using-the-shopify-action-templates.md
+          - Twilio:
+            - Configure: app-settings/integrations/actions/twilio/configuring-the-twilio-action.md
+            - Templates: app-settings/integrations/actions/twilio/using-the-twilio-action-templates.md
+          - Zendesk:
+            - Configure: app-settings/integrations/actions/zendesk/configuring-the-zendesk-action.md
+            - Templates: app-settings/integrations/actions/zendesk/using-the-zendesk-action-templates.md
+        - Agent Transfer: 
+          - Agent Transfer Integrations: app-settings/integrations/agents/agent-transfer-integrations.md
+          - Configuring Custom Agent Integration: app-settings/integrations/agents/how-to-configure-agent-transfer.md
+          - Configuring the Drift Agent: app-settings/integrations/agents/configuring-the-drift-agent.md
+          - Configuring the Genesys Agent: app-settings/integrations/agents/configuring-the-genesys-agent.md
+          - Configuring the Intercom Agent: app-settings/integrations/agents/configuring-the-intercom-agent.md
+          - Configuring the NiceInContact: app-settings/integrations/agents/configuring-the-niceincontact.md
+          - Configuring the Salesforce Agent: app-settings/integrations/agents/configuring-the-salesforce-agent.md
+          - Configuring the ServiceNow Agent (Tokyo and Lower versions): app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent.md
+          - Configuring the ServiceNow Agent (Utah and Higher versions): app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md
+          - Adding the Unblu Channel: app-settings/integrations/agents/adding-the-unblu-channel.md
+        - External NLU Adapters:
+          - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
+          - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
+          - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
+      - Contact Center:
+        - Kore Voice Automation:
+          - Zoom Contact Center: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
+    - APIs and SDKs:
+      - API Reference:
+        - Getting Started: apis/automation/api-introduction.md
+        - Rate Limits: apis/automation/rate-limit.md
+        - API List:
+          - Agent AI APIs: apis/agent-ai/apis-list.md
+          - Automation APIs: apis/automation/api-list.md
+          - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+          - Search AI APIs: apis/searchai/api-list.md
+        - koreUtil Libraries: apis/automation/koreutil-libraries.md
+      - SDK Reference:
+        - SDK Introduction: sdk/bot-sdk-introduction.md
+        - Web SDK:
+          - How the Web SDK Works: sdk/how-web-sdk-works.md
+          - SDK Security: sdk/sdk-security.md
+          - SDK Registration: sdk/app-registration.md
+          - SDK Configurations: sdk/sdk-configuration.md
+          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
+          - Tutorials:
+            - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
+            - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+        - BotKit SDK:
+          - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
+          - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
+          - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
+          - SDK Events: sdk/sdk-events.md
+          - SDK Functions: sdk/sdk-functions.md
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
+          - Tutorials:
+            - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
+            - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
+            - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md          
+  - Analytics:
+    - Introduction: analytics/introduction.md
+    - Dashboard Filters: analytics/dashboard-filters.md
+    - Overview:
+      - Summary Dashboard: analytics/overview/summary-dashboard.md
+      - Conversations Dashboard: analytics/overview/conversations-dashboard.md
+      - Conversations History: analytics/overview/conversations-history.md
+      - Users Dashboard: analytics/overview/users-dashboard.md
+      - Feedback Dashboard: analytics/overview/feedback-dashboard.md
+    - GenAI Analytics:
+      - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
+    - Automation:
+      - Performance Dashboard: analytics/automation/performance-dashboard.md
+      - Conversation Insights: analytics/automation/conversation-insights.md
+      - NLP Insights: analytics/automation/nlp-insights.md
+      - Task Execution Logs: analytics/automation/task-execution-logs.md
+      - Custom Dashboard:
+        - Introduction: analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md
+        - Custom Meta Tags: analytics/automation/custom-dashboard/custom-meta-tags.md
+        - Create Custom Dashboard: analytics/automation/custom-dashboard/create-custom-dashboard.md
+        - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
+      - Conversation Flows: analytics/automation/conversation-flows.md            
+    - Contact Center:  
+      - Agent AI Dashboard: analytics/contact-center/agentai-dashboard.md
+      - Agent AI Conversation Logs: analytics/contact-center/agentai-conversation-logs.md
+      - Queues & Agents: analytics/contact-center/queues-and-agents.md
+      - Interactions: analytics/contact-center/interactions.md  
+      - Reports:
+        - Introduction: analytics/contact-center/reports/introduction-to-reports.md
+        - Reports List: analytics/contact-center/reports/reports-list.md
+  - Administration:
+    - Users:
+      - Manage Users: user-management/manage-users.md
+      - Manage Role and Permissions: user-management/role-management.md
+    - Deployment:
+      - App Versioning: deploy/bot-versioning.md
+      - Publishing your App: deploy/publishing-bot.md
+      - Import & Export App: deploy/bot-management.md      
+    - App Settings:
+      - App Profile: app-settings/app-profile.md
+      - Language Management:
+        - Get Started: app-settings/language-management/building-multi-language-bots.md
+        - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
+        - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
+        - Manage Translation Services: app-settings/language-management/managing-translation-services.md
+        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
+      - Dev Tools:
+        - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+        - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
+        - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk.md
+        - API Scopes: apis/automation/api-introduction.md
+        - Mock Scenes: app-settings/mock-scenes.md
+      - Using Variables: app-settings/variables/using-bot-variables.md
+      - Managing Namespaces: app-settings/managing-namespace.md
+      - Advanced Settings:
+        - PII Settings: app-settings/advanced-settings/pii-data-masking.md
+        - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
+      - Change Logs: app-settings/change-logs.md
+      - Delete App: app-settings/delete-app.md
+    - Admin Console:
+      - Introduction to Admin Console: administration/adminconsole.md
+      - Administration Dashboard: administration/dashboard-bac.md
+      - User Management:
+        - Add Users: administration/user-management/managing-your-users.md
+        - Manage Groups: administration/user-management/managing-your-groups.md
+        - Manage Roles: administration/user-management/role-management.md
+      - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
+      - Assistant Management: administration/bot-management.md
+      - Enrollment:
+        - Invite Users: administration/enrollment/enrolling-a-new-user.md
+        - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
+        - Import User Data: administration/enrollment/importing-users-and-user-data.md
+        - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
+      - Security and Control:
+        - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
+        - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
+        - Security Settings: administration/security-and-control/security-settings.md
+      - Cloud Connector: administration/kore-ai-connector.md
+      - Analytics for Bots Admin: administration/analytics.md
+      - Billing: administration/billing.md
