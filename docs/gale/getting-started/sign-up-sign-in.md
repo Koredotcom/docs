@@ -335,6 +335,30 @@ A success message appears to indicate that your invitation has been sent.
 <p>An email invite to join your account is valid for 14 days. You must resend the invite to the user once it expires.</p>
 </div>
 
+## Resend Email Invitation
+
+An email invitation link remains valid for **15 days** from the date it is sent. After this period, the link expires, and the user will no longer be able to join your account using it. In this case, you'll need to send a new email invitation with a fresh link.
+
+On the **Users** dashboard of the **Settings** Console, an **Alert** icon appears in the **Status** column for the recipient, if their invitation link has expired. Hovering over the icon displays the message "_Invitation link has expired_."
+
+<img src="../images/invitation-link-expired.png" alt="invitation link expired" title="invitation link expired" style="border: 1px solid gray; zoom:75%;">
+
+To resend the invitation, click the **Resend invite** button.
+
+<img src="../images/resend-invite.png" alt="resend invite" title="resend invite" style="border: 1px solid gray; zoom:75%;">
+
+This action automatically sends an invitation email with a new link to the user, causing the **Alert** icon and the **Resend invite** button to disappear for the user. The status remains set as **_Inactive_** until the user joins the account when it changes to **_Active_**.
+
+A success message appears to indicate that your invitation has been sent.
+
+<img src="../images/success-message-invitaton.png" alt="success message invitation sent" title="success message invitation sent" style="border: 1px solid gray; zoom:75%;">
+
+The recipient receives the following invitation email.
+
+<img src="../images/recipient-email-invitation.png" alt="recipient email invitation" title="recipient email invitation" style="border: 1px solid gray; zoom:75%;">
+
+Once the end user clicks the **Open Invite** button, the system redirects to the sign-in page. After signing in, the user can access your account, in addition to their account.
+
 ## Make an Account your Default
 
 When you make an account default, the system automatically redirects you to its UI where you can access the modules you work on regularly. To make an account default, follow the steps below based on the relevant scenario:
