@@ -15,15 +15,18 @@ Right-click the node you want to rename and select Rename from the list of optio
 
 ### Rearrange nodes
 
-To rearrange nodes on your canvas, drag and drop them to the desired location, as shown in the demo below.  
-<img src="../images/rearrange-a-node.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;">
+Steps to rearrange the nodes on the canvas: 
 
-!!! note
 
-    * Only the node that you are dragging will change position. Any connecting nodes will remain in place, regardless of the direction of their connection.
 
-    * You can right-click anywhere on the canvas and perform some other actions on the canvas such as Changing the background color of the canvas, Show/Hide UI, and Show/Hide Grid by.
+1. Drag and drop the nodes to the desired location on the canvas, as shown in the demo below.
 
+    Only the node that you are dragging will change position. Any connecting nodes will remain in place, regardless of the direction of their connection.
+
+2. (Optional) You can right-click anywhere on the canvas and select **Auto arrange** to automatically arrange the nodes on the canvas.
+
+    You can also perform other actions on the canvas such as Show/Hide UI and Show/Hide Grid by.  
+    <img src="../images/rearrange-a-node.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;">
 
 ### Connect nodes
 
