@@ -5,21 +5,20 @@ Agent flows in GALE allow you to define input and output variables, which become
 * Input Variables: The input variables provide initial data to the agent flow. 
 * Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the agent.
 
-**Using Variables in the Agent Flow**:
+## Using Variables in the Agent Flow
 
 Once the input and output variables are defined, you can access these variables using the context object syntax, and use them throughout the flow:
 
 * Input variables are available immediately after the Start node. These variables can be accessed using the context object syntax: `context.steps.Start.inputVariable`
-* Output variables can be set in any node and are collected at the End node. For example, you can select a defined output variable in the End node and assign it the output of a GenAI node {{context.steps.GenAInode.output}} as a value.
+* Output variables can be set in any node and are collected at the End node. For example, you can select a defined output variable in the End node and assign it the output of a GenAI node using the following context variable: `{{context.steps.GenAInode.output}}`
 
+## Adding Input/Output Variables 
 
 **Steps to add input variables**:
 
-1. On the top of the Agents page canvas, click the **Manage I/O** button.
-
-    The **Manage Input & Output** dialog is displayed.
-
-    <img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
+1. On the top of the Agents flow canvas, click the **Manage I/O** button. 
+Alternatively, you can click the **Start** node. The **Manage Input & Output** dialog is displayed.  
+<img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
 
 1. On the **Input** tab, click the **+ Add input variable** button.
 
@@ -31,40 +30,31 @@ Once the input and output variables are defined, you can access these variables 
 2. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
 If you want to make the data type mandatory, then enable the **Mandatory** toggle.
 
-    *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears. You can enable the **Default value** field to set a default value for the input variable. For example, 9393JAS.
+    *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears. You can enable the **Default value** field to set a default value for the input variable.
     
-    *  If you select the **Remote file** data type, the **File url timeout** field appears. Enter the File URL timeout duration in minutes.
+    *  If you select the **Remote file** data type, the **File url timeout** field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
                           
          <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
+ 
+3. Click **Save**. The input variable is displayed on the Input tab of the **Manage Input & Output** dialog.
 
-!!! note
-
-     The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
-
-3. Click **Save**.
-
-    The input variable is displayed on the Input tab of the **Manage Input & Output** dialog.
 
 **Steps to add output variables**:
 
-1. On the top of the canvas of the Agents page, click the **Manage I/O** button.
+1. On the top of the canvas of the Agents page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
-    The **Manage Input & Output** dialog is displayed.
+2. On the **Output** tab, click the **+ Add output variable** button. The **Enter output variable** dialog is displayed.  
+<img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;">
 
-1. On the **Output** tab, click the **+ Add output variable** button.
+3. In the **Name(key)** field, provide a name for the output variable.
 
-    The **Enter output variable** dialog is displayed.
+4. In the **Type** field, select a data type from the drop-down list - String, Number, or Boolean.
 
-    <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;">
-
-1. In the **Name(key)** field, provide a name for the output variable.
-2. In the **Type** field, select a data type from the drop-down list - String, Number, or Boolean.
-3. Click **Save**. 
+5. Click **Save**. 
 
     The output variable is displayed on the Output tab of the **Manage Input & Output** dialog. 
 
 !!! note
 
     You can also add an output variable in the End node using the **Add a Key** option on the node's interface.
-
 
