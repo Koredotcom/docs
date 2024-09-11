@@ -142,33 +142,12 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 		
 
-## Product and Supported Feature
-
-Select the product to view the supported features.
-
-=== "Automation AI"
-
-    * GenAI Node
-    * GenAI Prompt
-    * Repeat Responses
-    * Rephrase Dialog Responses
-    * Rephrase User Query
-    * Zero-shot ML Model
-
-=== "Search AI"
-
-    * Answer Generation
-    * Vector Generation
-
-=== "Agent AI"
-
-    * Agent Response Rephrasing
 
 
 
-## Model and Feature Support Matrix
+## Model and Supported Features
 
-The following table displays the Dynamic Conversation features and the supported models. 
+The following table displays the features and the supported models. 
 
 (✅ Supported | ❌ Not supported)
 
@@ -177,14 +156,9 @@ The following table displays the Dynamic Conversation features and the supported
 
     |Model|GenAI Node|GenAI Prompt|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – GPT 3.5 Turbo|✅|✅|✅|✅|❌|✅|
-    |Azure OpenAI – GPT 4|✅|✅|✅|✅|❌|✅*|
-    |Azure OpenAI – GPT 4 Turbo|✅|✅|❌|✅|❌|✅|
-    |Azure OpenAI – GPT 4o|✅|✅|❌|✅|❌|✅|
-    |OpenAI – GPT 3.5 Turbo|✅|✅|✅|✅|❌|✅|
-    |OpenAI – GPT 4|✅|✅|✅|✅|❌|✅*|
-    |OpenAI – GPT 4 Turbo|✅|✅|✅|✅|❌|✅|
-    |OpenAI – GPT 4o|✅|✅|✅|✅|❌|✅|
+    |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
+    |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
     |Anthropic – Claude Instant|✅|✅|✅|✅|❌|❌|
     |Anthropic – Claude|✅|✅|✅|✅|❌|❌|
     |Custom LLM|✅|✅|❌|✅|❌|❌|
@@ -194,16 +168,8 @@ The following table displays the Dynamic Conversation features and the supported
 
     |Model|Answer Generation|Vector Generation|
     |:----:|:----:|:----:|
-    |Azure OpenAI – GPT 3.5 Turbo|✅|❌|
-    |Azure OpenAI – GPT 4|✅|❌|
-    |Azure OpenAI – GPT 4 Turbo|✅|❌|
-    |Azure OpenAI – GPT 4o|✅|❌|
-    |OpenAI – GPT 3.5 Turbo|✅|❌|
-    |OpenAI – GPT 4|✅|❌|
-    |OpenAI – GPT 4 Turbo|✅|❌|
-    |OpenAI – GPT 4o|✅|❌|
-    |Anthropic – Claude Instant|❌|❌|
-    |Anthropic – Claude|❌|❌|
+    |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
     |Custom LLM|✅|❌|
     |Kore.ai XO GPT|✅|✅| 
 
@@ -212,179 +178,10 @@ The following table displays the Dynamic Conversation features and the supported
     |Model|Agent Response Rephrasing|
     |:----:|:----:|
     |Azure OpenAI – GPT 3.5 Turbo|✅|
-    |Azure OpenAI – GPT 4|❌|
-    |Azure OpenAI – GPT 4 Turbo|❌|
-    |Azure OpenAI – GPT 4o|❌|
     |OpenAI – GPT 3.5 Turbo|✅|
-    |OpenAI – GPT 4|❌|
-    |OpenAI – GPT 4 Turbo|❌|
-    |OpenAI – GPT 4o|❌|
-    |Anthropic – Claude Instant|❌|
-    |Anthropic – Claude|❌|
-    |Custom LLM|❌|
-    |Kore.ai XO GPT|❌|
 
 <hr>
 
-
-<table>
-  <tr>
-    <td><strong>Model</strong></td>
-    <td>Agent Response Rephrasing</td>
-    <td>Answer Generation</td>
-    <td>GenAI Node</td>
-    <td>GenAI Prompt</td>
-    <td>Repeat Responses</td>
-    <td>Rephrase Dialog Responses</td>
-    <td>Rephrase User Query</td>
-    <td>Vector Generation</td>
-    <td>Zero-shot ML Model</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅*</td>
-  </tr>
-   <tr>
-    <td>Azure OpenAI – GPT 4 Turbo</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-    <tr>
-    <td>Azure OpenAI – GPT 4o</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅*</td>
-  </tr>
-    <tr>
-    <td>OpenAI – GPT 4 Turbo</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-    <tr>
-    <td>OpenAI – GPT 4o</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude Instant</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Custom LLM</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Kore.ai XO GPT</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-</table>
 
 
 
