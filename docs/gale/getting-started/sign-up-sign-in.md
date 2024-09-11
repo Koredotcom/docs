@@ -204,7 +204,7 @@ You are allowed up to 5 attempts to retry the correct password and log in.
 
 <img src="../images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;">
 
-Exceeding the fifth failed login attempt locks your account for 15 minutes, after which the account is unlocked automatically, and you can retry signing in.
+Exceeding the fifth failed login attempt locks your account for 30 minutes, after which the account is unlocked automatically, and you can retry signing in.
 
 <img src="../images/account-locked.png" alt="account locked" title="account locked" style="border: 1px solid gray; zoom:75%;">
 
@@ -214,9 +214,7 @@ When your account is locked, the status for you shows as "<b><i>Locked</i></b>" 
 
 <img src="../images/locked-on-admin-console.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;">
 
-While your account is locked, you can try an alternative login method by clicking **Login using another account**. You are redirected to the following page to sign in with SSO or your third-party accounts.
-
-<img src="../images/login-using-another-account.png" alt="login using another account" title="login using another account" style="border: 1px solid gray; zoom:75%;">
+When your account is locked, you can attempt to log in using an alternative method by clicking **Login using another account**. This action redirects you to a page where you can sign in via your default SSO service, such as Google, Windows, or LinkedIn.
 
 ### Reset Password
 
