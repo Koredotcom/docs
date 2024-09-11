@@ -173,6 +173,60 @@ The following table displays the Dynamic Conversation features and the supported
 (✅ Supported | ❌ Not supported)
 
 
+=== "Automation AI"
+
+    |Model|GenAI Node|GenAI Prompt|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
+    |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|✅|✅|✅|❌|✅|
+    |Azure OpenAI – GPT 4|✅|✅|✅|✅|❌|✅*|
+    |Azure OpenAI – GPT 4 Turbo|✅|✅|❌|✅|❌|✅|
+    |Azure OpenAI – GPT 4o|✅|✅|❌|✅|❌|✅|
+    |OpenAI – GPT 3.5 Turbo|✅|✅|✅|✅|❌|✅|
+    |OpenAI – GPT 4|✅|✅|✅|✅|❌|✅*|
+    |OpenAI – GPT 4 Turbo|✅|✅|✅|✅|❌|✅|
+    |OpenAI – GPT 4o|✅|✅|✅|✅|❌|✅|
+    |Anthropic – Claude Instant|✅|✅|✅|✅|❌|❌|
+    |Anthropic – Claude|✅|✅|✅|✅|❌|❌|
+    |Custom LLM|✅|✅|❌|✅|❌|❌|
+    |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
+
+=== "Search AI"
+
+    |Model|Answer Generation|Vector Generation|
+    |:----:|:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|❌|
+    |Azure OpenAI – GPT 4|✅|❌|
+    |Azure OpenAI – GPT 4 Turbo|✅|❌|
+    |Azure OpenAI – GPT 4o|✅|❌|
+    |OpenAI – GPT 3.5 Turbo|✅|❌|
+    |OpenAI – GPT 4|✅|❌|
+    |OpenAI – GPT 4 Turbo|✅|❌|
+    |OpenAI – GPT 4o|✅|❌|
+    |Anthropic – Claude Instant|❌|❌|
+    |Anthropic – Claude|❌|❌|
+    |Custom LLM|✅|❌|
+    |Kore.ai XO GPT|✅|✅| 
+
+=== "Agent AI"
+
+    |Model|Agent Response Rephrasing|
+    |:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|
+    |Azure OpenAI – GPT 4|❌|
+    |Azure OpenAI – GPT 4 Turbo|❌|
+    |Azure OpenAI – GPT 4o|❌|
+    |OpenAI – GPT 3.5 Turbo|✅|
+    |OpenAI – GPT 4|❌|
+    |OpenAI – GPT 4 Turbo|❌|
+    |OpenAI – GPT 4o|❌|
+    |Anthropic – Claude Instant|❌|
+    |Anthropic – Claude|❌|
+    |Custom LLM|❌|
+    |Kore.ai XO GPT|❌|
+
+<hr>
+
+
 <table>
   <tr>
     <td><strong>Model</strong></td>
