@@ -194,19 +194,25 @@ Then, enter your password and click **Login**.
 <p>Once you create an account, you need to add credits for computation hours to start using GALE's features.</p>
 </div>
 
-### Failed Login Attempt
+### Failed Login and Account Locking
 
-If you enter the wrong password when using email sign-in, the system displays an **Invalid Credential** message and disables login.
+If you enter the wrong password when using email sign-in, the system displays an **Invalid Credential** message, preventing you from signing in to your account (of which you are the admin).
 
 <img src="../images/invalid-credentials.png" alt="invalid credentials" title="invalid credentials" style="border: 1px solid gray; zoom:75%;">
 
-You are allowed up to 5 attempts to enter the correct password and log in.
+You are allowed up to 5 attempts to retry the correct password and log in.
 
 <img src="../images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;">
 
-Exceeding the fifth failed login attempt locks your account for 30 minutes, after which you can retry signing in.
+Exceeding the fifth failed login attempt locks your account for 15 minutes, after which the account is unlocked automatically, and you can retry signing in.
 
 <img src="../images/account-locked.png" alt="account locked" title="account locked" style="border: 1px solid gray; zoom:75%;">
+
+An alternative way is to request the <b>master admin</b> to unlock your account.
+
+When your account is locked, the status for you shows as "<b><i>Locked</i></b>" to all the admins who have added you to their account. This status update ensures that admins are aware of your restricted access and can unlock your account.
+
+<img src="../images/locked-on-admin-console.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;">
 
 While your account is locked, you can try an alternative login method by clicking **Login using another account**. You are redirected to the following page to sign in with SSO or your third-party accounts.
 
