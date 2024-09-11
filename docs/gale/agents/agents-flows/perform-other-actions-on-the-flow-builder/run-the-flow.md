@@ -1,4 +1,4 @@
-# Run the Flow
+# Run Agent Flows
 
 You can run a flow and test it to see how it works. Once you run the flow, a debug log opens and a context object is generated. Every node in the flow has a context temporary storage where you can view the context object at each node level.
 

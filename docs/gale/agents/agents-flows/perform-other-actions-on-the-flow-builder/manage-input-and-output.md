@@ -5,7 +5,7 @@ Agent flows in GALE allow you to define input and output variables, which become
 * Input Variables: The input variables provide initial data to the agent flow. 
 * Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture results you want to return from the agent.
 
-Once the input and output variables are defined, you can access these variables using the context object syntax, and can be utilized throughout the flow:
+Once the input and output variables are defined, you can access these variables using the context object syntax, and use them throughout the flow:
 
 * Input variables are available immediately after the Start node.
 * Output variables can be set in any node and are collected at the End node.
@@ -41,12 +41,12 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 
                 The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
                           
-         <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;">
+         <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
 
 
 3. Click **Save**.
 
-The input variable is displayed under the Input tab of the **Manage Input & Output** dialog.
+    The input variable is displayed under the Input tab of the **Manage Input & Output** dialog.
 
 **Steps to manage output variables**:
 
@@ -64,7 +64,8 @@ The input variable is displayed under the Input tab of the **Manage Input & Outp
 2. In the **Type** field, select a data type from the drop-down list.
 The options are String, Number, and Boolean.
 3. Click **Save**. 
-The output variable is displayed under the Output tab of the **Manage Input & Output** dialog.
+
+    The output variable is displayed under the Output tab of the **Manage Input & Output** dialog.
 
 !!! note
 

@@ -12,7 +12,7 @@ You can also drag a node from the Assets panel onto the canvas.
 
 ### Rename nodes
 
-To rename a node, right-click the node, and select Rename from the list of options.  
+To rename a node, right-click the node, and select **Rename** from the list of options.  
 <img src="../images/rename-a-node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;">
 
 ### Rearrange nodes
@@ -33,7 +33,7 @@ Steps to rearrange the nodes on the canvas:
 
 Node connections are either made from within each node's configuration or by dragging and dropping the nodes on the canvas. You can also automatically connect nodes from the property panel of the node while defining the settings for success and failure.
 
-Steps to manage node connections on the canvas:
+Steps to manage connections between the nodes:
 
 1. To connect the nodes, go to the node you want to make a connection from, and hover over the grey dot on the node. Click the blue plus sign, and drag your cursor to point towards the destination node. 
 A line is drawn between the nodes, with an arrow indicating the direction of the node connection.
