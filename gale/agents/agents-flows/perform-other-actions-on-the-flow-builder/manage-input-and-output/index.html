@@ -969,6 +969,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Manage Input and Output
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -978,6 +989,45 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-variables-in-the-agent-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Variables in the Agent Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-inputoutput-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Input/Output Variables
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2822,6 +2872,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-variables-in-the-agent-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Variables in the Agent Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-inputoutput-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Input/Output Variables
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2839,71 +2915,73 @@
 
 
 <h1 id="manage-input-and-output">Manage Input and Output<a class="headerlink" href="#manage-input-and-output" title="Permanent link">&para;</a></h1>
-<p>You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the starting node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the end node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.</p>
-<p>Once the input and output variables have been defined, they become accessible within the context objects and can be utilized throughout the flow's progression.</p>
-<p><strong>To manage input variables, follow these steps</strong>:</p>
+<p>Agent flows in GALE allow you to define input and output variables, which become accessible as context objects throughout the execution of the flow.</p>
+<ul>
+<li>Input Variables: The input variables provide initial data to the agent flow. </li>
+<li>Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the agent.</li>
+</ul>
+<h2 id="using-variables-in-the-agent-flow">Using Variables in the Agent Flow<a class="headerlink" href="#using-variables-in-the-agent-flow" title="Permanent link">&para;</a></h2>
+<p>Once the input and output variables are defined, you can access these variables using the context object syntax, and use them throughout the flow:</p>
+<ul>
+<li>Input variables are available immediately after the Start node. These variables can be accessed using the context object syntax: <code>context.steps.Start.inputVariable</code></li>
+<li>Output variables can be set in any node and are collected at the End node. For example, you can select a defined output variable in the End node and assign it the output of a GenAI node using the following context variable: <code>{{context.steps.GenAInode.output}}</code></li>
+</ul>
+<h2 id="adding-inputoutput-variables">Adding Input/Output Variables<a class="headerlink" href="#adding-inputoutput-variables" title="Permanent link">&para;</a></h2>
+<p><strong>Steps to add input variables</strong>:</p>
 <ol>
 <li>
-<p>Click the <strong>Manage I/O</strong> button on the top of the canvas of the Agents page.</p>
-<p>The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
-<p><a class="glightbox" href="../images/manage-input-output-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>On the top of the Agents flow canvas, click the <strong>Manage I/O</strong> button. 
+Alternatively, you can click the <strong>Start</strong> node. The <strong>Manage Input &amp; Output</strong> dialog is displayed.<br />
+<a class="glightbox" href="../images/manage-input-output-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click the <strong>+ Add input variable</strong> button under the <strong>Input</strong> tab.</p>
-<p>The <strong>Enter input variable</strong> dialog is displayed. </p>
+<p>On the <strong>Input</strong> tab, click the <strong>+ Add input variable</strong> button.</p>
+<p>The <strong>Enter input variable</strong> dialog is displayed.</p>
 <p><a class="glightbox" href="../images/enter-input-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;"></a></p>
 </li>
 <li>
-<p>Enter a <strong>Name(key)</strong> to the input variable. For example, Product_ID.</p>
+<p>In the <strong>Name(key)</strong> field, provide a name for the input variable. For example, Product_ID.</p>
 </li>
 <li>
-<p>Select a data type from the <strong>Type</strong> drop-down list. If you want to make the data type mandatory, then move the <strong>Mandatory</strong> toggle button.</p>
+<p>In the <strong>Type</strong> field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
+If you want to make the data type mandatory, then enable the <strong>Mandatory</strong> toggle.</p>
 <ul>
 <li>
-<p>If you select data <strong>Type</strong> as <strong>Text</strong> or <strong>Number</strong> or <strong>Boolean</strong>, the <strong>Default value</strong> field appears.</p>
-<ul>
-<li>You can Enable the <strong>Default value</strong> toggle to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value. For example, Default Value - 9393JAS.</li>
-</ul>
+<p>If you select the <strong>Text</strong>, <strong>Number</strong>, or <strong>Boolean</strong> data types, the <strong>Default value</strong> field appears. You can enable the <strong>Default value</strong> field to set a default value for the input variable.</p>
 </li>
 <li>
-<p>If you select data <strong>Type</strong> as <strong>Remote file</strong>, the <strong>File URL timeout</strong> field appears.
-    <a class="glightbox" href="../images/url-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;"></a></p>
-<ul>
-<li>
-<p>Enter the File URL timeout duration in minutes.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</p>
-</div>
-</li>
-</ul>
+<p>If you select the <strong>Remote file</strong> data type, the <strong>File url timeout</strong> field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</p>
+<p><a class="glightbox" href="../images/url-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;"></a></p>
 </li>
 </ul>
 </li>
 <li>
-<p>Click <strong>Save</strong>. The Input variable is displayed in the list on the <strong>Manage Input &amp; Output</strong> dialog.</p>
+<p>Click <strong>Save</strong>. The input variable is displayed on the Input tab of the <strong>Manage Input &amp; Output</strong> dialog.</p>
 </li>
 </ol>
-<p><strong>To manage output variables, follow these steps</strong>:</p>
+<p><strong>Steps to add output variables</strong>:</p>
 <ol>
 <li>
-<p>Click the <strong>Manage I/O</strong> button on the top of the canvas of the Agents page.</p>
-<p>The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
+<p>On the top of the canvas of the Agents page, click the <strong>Manage I/O</strong> button. The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
 </li>
 <li>
-<p>Click the <strong>+ Add output variable</strong> button under the <strong>Output</strong> tab.</p>
-<p>The <strong>Enter output variable</strong> dialog is displayed.</p>
-<p><a class="glightbox" href="../images/enter-output-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>On the <strong>Output</strong> tab, click the <strong>+ Add output variable</strong> button. The <strong>Enter output variable</strong> dialog is displayed.<br />
+<a class="glightbox" href="../images/enter-output-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Enter a <strong>Name(key)</strong> to the input variable.</p>
+<p>In the <strong>Name(key)</strong> field, provide a name for the output variable.</p>
 </li>
-<li>Select a data type from the <strong>Type</strong> drop-down list.</li>
-<li>Click <strong>Save</strong>. The Output variable is displayed in the list on the <strong>Manage Input &amp; Output</strong> dialog.</li>
+<li>
+<p>In the <strong>Type</strong> field, select a data type from the drop-down list - String, Number, or Boolean.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>. </p>
+<p>The output variable is displayed on the Output tab of the <strong>Manage Input &amp; Output</strong> dialog. </p>
+</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can create multiple input as well as output variables based on your use case.</p>
+<p>You can also add an output variable in the End node using the <strong>Add a Key</strong> option on the node's interface.</p>
 </div>
 
 

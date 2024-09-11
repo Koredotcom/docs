@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#run-the-flow" class="md-skip">
+        <a href="#run-agent-flows" class="md-skip">
           Skip to content
         </a>
       
@@ -2838,47 +2838,48 @@
   
 
 
-<h1 id="run-the-flow">Run the Flow<a class="headerlink" href="#run-the-flow" title="Permanent link">&para;</a></h1>
-<p>You can run a flow and test it to see how it works. Once you click the Run, a debug log opens and a context object is generated. Every node in the flow has a context temporary storage where you can view what is the context object at each node level.</p>
-<p>The output shows the start, end, elapsed time taken to run the flow, and if any unresolved issues are displayed.</p>
-<p><strong>To run the flow, follow these steps</strong>:</p>
+<h1 id="run-agent-flows">Run Agent Flows<a class="headerlink" href="#run-agent-flows" title="Permanent link">&para;</a></h1>
+<p>You can run a flow and test it to see how it works. Once you run the flow, a debug log opens and a context object is generated. Every node in the flow has a context temporary storage where you can view the context object at each node level.</p>
+<p>The output shows the start, end, and elapsed time taken to run the flow, and if there are any unresolved issues.</p>
+<p><strong>Steps to run the flow</strong>:</p>
 <ol>
 <li>
-<p>Click the <strong>Run</strong> icon on the right side of the top navigation bar of your agents page.</p>
+<p>On the top right corner of the navigation bar, click the <strong>Run flow</strong> icon.</p>
 <p><a class="glightbox" href="../images/run-the-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/run-the-flow.png" alt="Run the Flow" title="Run the Flow" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The debug log is opened and output results are started.</p>
+<p>The Run dialog opens with the Input, Flow log, and Output sections displayed.</p>
 </li>
 <li>
-<p>Click the <strong>Debug</strong> icon on the top of the output dialog to open the <strong>Debug</strong> log as shown in the following image.</p>
+<p>On the top of the Run dialog, click the <strong>Debug</strong> icon to open the <strong>Debug</strong> log as shown in the following image.</p>
 <p><a class="glightbox" href="../images/debug-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/debug-icon.png" alt="Debug Icon" title="Debug Icon" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The following are the details you can view:</p>
+<p>The debug log is opened and output results are started.</p>
+<p>You can view the following details in the debug log:</p>
 <ul>
 <li>
-<p>All the values that you provided in the flow are displayed in this section.</p>
+<p>The values that you provided in the flow.</p>
 </li>
 <li>
-<p>The flow level log details are displayed.</p>
+<p>The flow level log details.</p>
 </li>
 <li>
-<p>For each flow initiation, end, and node level details will be displayed.</p>
+<p>The node level details for each flow initiation.</p>
 </li>
 <li>
-<p>For each node’s success or failure, an info link is displayed. If you click the Info the details are displayed for your reference.</p>
+<p>The info link for each node’s success or failure.</p>
 </li>
 <li>
-<p>If you expand the node, metrics at each node such as Initiated on, Executed on, Total time taken, and Tokens (available only for AI node) are displayed.</p>
+<p>The metrics at each node such as Initiated on, Executed on, Total time taken, and Tokens (available only for AI node).</p>
 </li>
 <li>
-<p>In case a flow is successful, the copy icon is available to copy the output, and the overall run-time flow is displayed.</p>
+<p>If the flow is successful, the copy icon is available to copy the output, and the overall run-time flow is displayed.</p>
 </li>
 <li>
-<p>In case of any errors in the flow, an error message is displayed and the output key in the JSON format displayed is empty as shown in the image.</p>
+<p>If there are any errors in the flow, an error message is displayed and the output key in the JSON format displayed will be empty, as shown in the image.</p>
 <p><a class="glightbox" href="../images/error-in-the-debug-report.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/error-in-the-debug-report.png" alt="Error in the Debug Report" title="Error in the Debug Report" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can stop the flow in the middle of a flow and restart the execution by clicking the <strong>Run</strong> icon again.</p>
+<p>You can stop the flow at any point during the execution and restart it by clicking the <strong>Run flow</strong> icon again.</p>
 </div>
 </li>
 </ol>
