@@ -30,16 +30,16 @@ Once the input and output variables are defined, you can access these variables 
 1. In the **Name(key)** field, provide a name for the input variable. For example, Product_ID.
 2. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
 If you want to make the data type mandatory, then enable the **Mandatory** toggle.
+
     *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears. You can enable the **Default value** field to set a default value for the input variable. For example, 9393JAS.
     
     *  If you select the **Remote file** data type, the **File url timeout** field appears. Enter the File URL timeout duration in minutes.
-            
-            !!! note
-
-                The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
                           
          <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
 
+!!! note
+
+     The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
 
 3. Click **Save**.
 
