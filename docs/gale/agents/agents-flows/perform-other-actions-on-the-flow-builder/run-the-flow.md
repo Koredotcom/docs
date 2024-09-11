@@ -18,7 +18,7 @@ The output shows the start, end, and elapsed time taken to run the flow, and if 
 
     The debug log is opened and output results are started.
     
-    You can view the following details:
+    You can view the following details in the debug log:
 
 
     * The values that you provided in the flow.
