@@ -1,18 +1,18 @@
 # Create a New Version of the Flow
 
-You can save versions of your flows, restore the older versions, and delete a version if required. Once you have deployed a flow it will be shown as the Deployed version.
+You can save versions of your flows, restore older versions, and delete versions if required. After you have deployed a flow, it will appear on the Agents page with the status 'Deployed'.
 
-**To create a new version, follow these steps**:
+**Steps to create a new version**:
 
-1. Click the down arrow corresponding to the agents on the header of the canvas.
+1. Click the down arrow on the canvas header.
 
     The **Flow versions** dialog is displayed.
 
-1. Click the **+ icon** to save a version of the flow.
+1. To save a version of the flow, click the **+ icon**.
 
     <img src="../images/create-a-new-version.png" alt="Create a New Version" title="Create a New Version" style="border: 1px solid gray; zoom:80%;">
 
-    The **Name the Version** dialog is displayed.
+    The **Name the version** dialog is displayed.
 
 1. Enter a **Name** and **Description** for the flow and click **Save**.
 
@@ -22,4 +22,4 @@ You can save versions of your flows, restore the older versions, and delete a ve
 
     !!! note
 
-        You can click the 3 dots icon corresponding to the version name to Restore or Delete a version. When you restore a version, the current version goes down to the bottom of the list and the restored version becomes the current version and is moved to the top of the list. If you want to edit a restored version, a new current version is created, and you can save this version with a new name. A deployed version can only be restored but cannot be deleted.
+        In the **Flow versions** dialog, you can click the 3 dots icon beside the version name to restore or delete a version. When you restore a version, the current version goes down to the bottom of the list, and the restored version becomes the current version and is moved to the top of the list. If you want to edit a restored version, a new current version is created, and you can save this version with a new name. A deployed version can only be restored but cannot be deleted.

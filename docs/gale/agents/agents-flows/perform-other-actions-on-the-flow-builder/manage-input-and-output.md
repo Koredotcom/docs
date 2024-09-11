@@ -1,56 +1,74 @@
 # Manage Input and Output
 
-You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the starting node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the end node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.
+Agent flows in GALE allow you to define input and output variables, which become accessible as context objects throughout the execution of the flow.
+
+* Input Variables: The input variables provide initial data to the agent flow. 
+* Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture results you want to return from the agent.
+
+Using variables in the Agent flow
+
+Once defined, both input and output variables can be utilized throughout the flow:
+
+* Input variables are available immediately after the Start node.
+* Output variables can be set in any node and are collected at the End node.
+* Access these variables using the context object syntax.
+
+You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the Start node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the End node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.
 
  Once the input and output variables have been defined, they become accessible within the context objects and can be utilized throughout the flow's progression.
 
-**To manage input variables, follow these steps**:
+**Steps to manage input variables**:
 
-1. Click the **Manage I/O** button on the top of the canvas of the Agents page.
+1. On the top of the canvas of the Agents page, click the **Manage I/O** button.
 
     The **Manage Input & Output** dialog is displayed.
 
     <img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **+ Add input variable** button under the **Input** tab.
+1. On the **Input** tab, click the **+ Add input variable** button.
 
-    The **Enter input variable** dialog is displayed. 
+    The **Enter input variable** dialog is displayed.
 
     <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;">
 
-1. Enter a **Name(key)** to the input variable. For example, Product_ID.
-2. Select a data type from the **Type** drop-down list. If you want to make the data type mandatory, then move the **Mandatory** toggle button.
-    *  If you select data **Type** as **Text** or **Number** or **Boolean**, the **Default value** field appears.
-        * You can Enable the **Default value** toggle to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value. For example, Default Value - 9393JAS.
+1. In the **Name(key)** field, provide a name for the input variable. For example, Product_ID.
+2. In the **Type** field, select a data type from the drop-down list. 
+The options are Text, Number, Boolean, and Remote file.
+If you want to make the data type mandatory, then enable the **Mandatory** toggle.
+    *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears.
+        * You can enable the **Default value** field to set a default value for the input variable. For example, Default Value - 9393JAS.
     
-    *  If you select data **Type** as **Remote file**, the **File URL timeout** field appears.
-        <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;">
+    *  If you select the **Remote file** data type, the **File url timeout** field appears.
         *  Enter the File URL timeout duration in minutes.
             
             !!! note
 
                 The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
-                   
- 
-3. Click **Save**. The Input variable is displayed in the list on the **Manage Input & Output** dialog.
+                          
+         <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;">
 
-**To manage output variables, follow these steps**:
+3. Click **Save**. 
+The input variable is displayed under the Input tab of the **Manage Input & Output** dialog.
 
-1. Click the **Manage I/O** button on the top of the canvas of the Agents page.
+**Steps to manage output variables**:
+
+1. On the top of the canvas of the Agents page, click the **Manage I/O** button.
 
     The **Manage Input & Output** dialog is displayed.
 
-1. Click the **+ Add output variable** button under the **Output** tab.
+1. On the **Output** tab, click the **+ Add output variable** button.
 
     The **Enter output variable** dialog is displayed.
 
     <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;">
 
-1. Enter a **Name(key)** to the input variable.
-2. Select a data type from the **Type** drop-down list.
-3. Click **Save**. The Output variable is displayed in the list on the **Manage Input & Output** dialog.
+1. In the **Name(key)** field, provide a name for the output variable.
+2. In the **Type** field, select a data type from the drop-down list.
+The options are String, Number, and Boolean.
+3. Click **Save**. 
+The output variable is displayed under the Output tab of the **Manage Input & Output** dialog.
 
 !!! note
 
-    You can create multiple input as well as output variables based on your use case.
+    You can create multiple input and output variables based on your use case.
 
