@@ -1,6 +1,6 @@
 # Create a New Version of the Flow
 
-You can save versions of your flows, restore older versions, and delete versions if required. After you have deployed a flow, it will appear on the Agents page with the status 'Deployed'.
+You can save versions of your flows, restore older versions, and delete versions if needed. After you have deployed a flow, it will appear on the Agents page with the status 'Deployed'.
 
 **Steps to create a new version**:
 
@@ -14,7 +14,7 @@ You can save versions of your flows, restore older versions, and delete versions
 
     The **Name the version** dialog is displayed.
 
-1. Enter a **Name** and **Description** for the flow and click **Save**.
+1. Enter a **Version name** and **Description** for the flow and click **Save**.
 
     <img src="../images/name-a-new-version-for-flow.png" alt="Name a New Version for Flow" title="Name a New Version for Flow" style="border: 1px solid gray; zoom:60%;">
 

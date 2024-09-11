@@ -27,19 +27,19 @@ Steps to rearrange the nodes on the canvas:
 
     You can also perform other actions on the canvas such as Show/Hide UI and Show/Hide Grid.
 
-### Connect nodes
+### Manage node connections
 
 Node connections are either made from within each node's configuration or by dragging and dropping the nodes on the canvas. You can also automatically connect nodes from the property panel of the node while defining the settings for success and failure.
 
-Steps to manage node connections on the nodes:
+Steps to manage node connections on the canvas:
 
 1. To connect the nodes, go to the node you want to make a connection from, and hover over the grey dot on the node. Click the blue plus sign, and drag your cursor to point towards the destination node. 
 A line is drawn between the nodes, with an arrow indicating the direction of the node connection.
-2. To delete the connection between the nodes, click the line connecting the two nodes, and click the **Delete** icon.
-The nodes remain on the canvas but are not connected anymore. To ensure a working flow, you must create another connection between the nodes. 
 <img src="../images/connect-nodes.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
 
+2. To delete the connection between the nodes, click the line connecting the two nodes, and click the **Delete** icon.
+The nodes remain on the canvas but are not connected anymore. To ensure a working flow, you must create another connection between the nodes. 
 
-### Delete a node
+### Delete nodes
 
 To delete a node on the canvas, right-click the node and select **Delete** from the list of options.

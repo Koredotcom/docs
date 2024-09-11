@@ -5,13 +5,12 @@ Agent flows in GALE allow you to define input and output variables, which become
 * Input Variables: The input variables provide initial data to the agent flow. 
 * Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture results you want to return from the agent.
 
-Using variables in the Agent flow
-
-Once defined, both input and output variables can be utilized throughout the flow:
+Once the input and output variables are defined, they can be utilized throughout the flow:
 
 * Input variables are available immediately after the Start node.
 * Output variables can be set in any node and are collected at the End node.
-* Access these variables using the context object syntax.
+
+You can access these variables using the context object syntax.
 
 You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the Start node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the End node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.
 
@@ -34,9 +33,10 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 1. In the **Name(key)** field, provide a name for the input variable. For example, Product_ID.
 2. In the **Type** field, select a data type from the drop-down list. 
 The options are Text, Number, Boolean, and Remote file.
+
 If you want to make the data type mandatory, then enable the **Mandatory** toggle.
     *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears.
-        * You can enable the **Default value** field to set a default value for the input variable. For example, Default Value - 9393JAS.
+        * You can enable the **Default value** field to set a default value for the input variable. For example, 9393JAS.
     
     *  If you select the **Remote file** data type, the **File url timeout** field appears.
         *  Enter the File URL timeout duration in minutes.
@@ -47,7 +47,10 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
                           
          <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;">
 
-3. Click **Save**. 
+         For integrations, you can select the **Remote file** data type. This allows access to external data sources.
+
+3. Click **Save**.
+
 The input variable is displayed under the Input tab of the **Manage Input & Output** dialog.
 
 **Steps to manage output variables**:

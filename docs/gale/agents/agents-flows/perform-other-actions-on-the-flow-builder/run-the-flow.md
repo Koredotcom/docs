@@ -1,8 +1,8 @@
 # Run the Flow
 
-You can run a flow and test it to see how it works. Once you click the Run, a debug log opens and a context object is generated. Every node in the flow has a context temporary storage where you can view the context object at each node level.
+You can run a flow and test it to see how it works. Once you run the flow, a debug log opens and a context object is generated. Every node in the flow has a context temporary storage where you can view the context object at each node level.
 
-The output shows the start, end, and elapsed time taken to run the flow, and if any unresolved issues are displayed.
+The output shows the start, end, and elapsed time taken to run the flow, and if there are any unresolved issues.
 
 **Steps to run the flow**:
 
@@ -14,10 +14,10 @@ The output shows the start, end, and elapsed time taken to run the flow, and if 
 
 1. On the top of the Run dialog, click the **Debug** icon to open the **Debug** log as shown in the following image.
 
-    The debug log is opened and output results are started.
-
     <img src="../images/debug-icon.png" alt="Debug Icon" title="Debug Icon" style="border: 1px solid gray; zoom:80%;">
 
+    The debug log is opened and output results are started.
+    
     You can view the following details:
 
 
@@ -45,4 +45,4 @@ The output shows the start, end, and elapsed time taken to run the flow, and if 
 
     !!! note
 
-        You can stop the flow at any point during the execution and restart it by clicking the **Run** icon again.
+        You can stop the flow at any point during the execution and restart it by clicking the **Run flow** icon again.
