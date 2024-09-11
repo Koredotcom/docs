@@ -6,7 +6,9 @@ A flow consists of a sequence of nodes connected on the flow builder canvas. You
 
 The Start node is the starting point of any flow and is available by default. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
 
-To add a node, click the “+” icon, and select a node from the pop-up menu, or drag a node from the Assets panel onto the canvas.  <img src="../images/add-a-new-node.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;">
+To add a node, click the “+” icon, and select a node from the pop-up menu.
+You can also drag a node from the Assets panel onto the canvas.
+  <img src="../images/add-a-new-node.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;">
 
 ### Rename nodes
 
