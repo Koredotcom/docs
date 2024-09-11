@@ -299,6 +299,14 @@ Create and manage agent skills & skill groups
    </td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -865,6 +873,13 @@ Create and manage agent skills & skill groups
    <td>Full Access</td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -1161,9 +1176,7 @@ Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>No
    </td>
-   <td>Yes
-
-   </td>
+   
 </tr>
 </table>
 
@@ -1398,6 +1411,13 @@ Modify global agent settings
 Create and manage agent skills & skill groups
    </td>
    <td>Full Access</td>
+</tr>
+<tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
 </tr>
 <tr>
    <td><strong>Agent Group Management</strong>
@@ -1936,6 +1956,13 @@ Create and manage agent skills & skill groups
    <td>Full Access</td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -2467,6 +2494,13 @@ Create and manage agent skills & skill groups
    <td>None</td>
 </tr>
 <tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes</td>
+</tr>
+<tr>
    <td><strong>Agent Group Management</strong>
    <br>
 Create and manage agent groups
@@ -2761,10 +2795,6 @@ Access to create and assign interactions for audit to other users
 Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>No
-
-   <br>
-Allow user to Access and Manage AgentAI Module
-
    </td>
 </tr>
 </table>
@@ -3106,6 +3136,15 @@ Create and manage agent skills & skill groups
 None
 <br>
 Full Access</td>
+</tr>
+<tr>
+   <td><strong>Visibility of Captured Sentiment</strong>
+   <br>
+Manage the visibility of the customer's sentiment captured in the agent console
+   </td>
+   <td>Yes
+   <br>
+   No</td>
 </tr>
 <tr>
    <td><strong>Agent Group Management</strong>

@@ -19,53 +19,53 @@ To create a queue with the given `streamId`.
 ## Sample Request
 
 ```
-{
- "isActive": true,
- "isDefault": false,
- "name": "Queue2",
- "isAdvancedRoutingEnabled": true,
- "description": "queue2",
- "orgId": "o-cd624de7-b90d-5ebc-8dab-54605d65xxxx",
- "hoursOfOperation": {
-   "id": "64dc9966fcb1cad3c010xxxx",
-   "name": "Default Hours of Operation(Auto Created)"
- },
- "agents": [
-   {
-     "userId": "u-950c89ba-0526-5876-8394-af02bb34xxxx",
-     "isPreferredAgent": true,
-     "aId":"a-1c9955e-b65a-4217-b1ae-345c3104xxxx",
-     "name":"kjhdkjhsddjk kjadksddjk",
-     "id":"a-1c9955e-b65a-4217-b1ae-345c3104xxxx"
-   }
- ],
- "skills": [
-   {
-     "id": "64dc9967fcb1cad3c016xxxx",
-     "name": "Default Skill",
-     "isExpireEnabled": true,
-     "expireTime": {
-       "min": 10,
-       "sec": 20
-     }
-   }
- ],
- "agentGroups": [
-   "ag-410b641-16ae-4c02-9355-8a47c2b9xxxx"
- ],
- "advancedSettings": {
-   "preferredAgentTimeout": {
-     "min": 10,
-     "sec": 20
-   },
-   "isSkillMatchEnabled": true,
-   "isAffinityMatchEnabled": true
- },
- "maxTimeout": {
-     "min":10,
-     "sec":0
- }
+curl --location 'http://{{host}}/agentassist/api/v1/public/st-d2aa65cc-a2d2-5b6d-84d7-861509e2xxxx/queues' \
+--header 'accept: application/json' \
+--header 'accountId: 649bdcaf5037ed113942xxxx' \
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy0zOWNkNmJhMC1mNmVlLTViYWUtOWI3ZC03M2I0YmE5N2FjOGIifQ.LAiNcKfUNeDaAtPei1nD6JZJbnEGsv1BKo1pQUexxxx' \
+--header 'Content-Type: application/json' \
+--data '{
+    "isActive": true,
+    "isDefault": false,
+    "name": "11111122",
+    "isAdvancedRoutingEnabled": true,
+    "description": "queue2",
+    "orgId": "o-a5f1f5a9-2244-5bc7-adf8-bd5e6519xxxx",
+    "hoursOfOperation": {
+        "id": "649bdd219d557c241ad0xxxx",
+        "name": ""
+    },
+    "agents": [
+        {
+            "userId": "u-be1f62a6-1ea6-59eb-8cae-831edd2xxxx",
+            "isPreferredAgent": true,
+            "aId": "a-ee9919b-9343-48eb-a951-1085e06xxxx",
+            "name": "kjhdkjhsddjk kjadksddjk",
+            "id": ""
+        }
+    ],
+    "skills": [{
+"id": "123",
+"name": "",
+"isExpireEnabled": true,
+"expireTime": {
+"min": "1",
+"sec": "0"
 }
+}],
+    "agentGroups": [],
+    "advancedSettings": {
+        "preferredAgentTimeout": {
+        
+        },
+        "isSkillMatchEnabled": true,
+        "isAffinityMatchEnabled": true
+    },
+    "maxTimeout": {
+        "min": 10,
+        "sec": 0
+    }
+}'
 ```
 
 ## Sample Response
