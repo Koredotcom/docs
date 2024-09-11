@@ -159,8 +159,7 @@ The following table displays the features and the supported models.
     |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
     |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
-    |Anthropic – Claude Instant|✅|✅|✅|✅|❌|❌|
-    |Anthropic – Claude|✅|✅|✅|✅|❌|❌|
+    |Anthropic – <br>Claude and Claude Instant|✅|✅|✅|✅|❌|❌|
     |Custom LLM|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
@@ -179,10 +178,7 @@ The following table displays the features and the supported models.
     |:----:|:----:|
     |Azure OpenAI – GPT 3.5 Turbo|✅|
     |OpenAI – GPT 3.5 Turbo|✅|
-
 <hr>
-
-
 
 
 \*  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.

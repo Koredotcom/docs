@@ -135,7 +135,7 @@ To add synonyms for a term, follow the below steps:
 
 ### Traits
 
-You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click [here](#traits){:target="_blank"}.
+You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click [here](../natural-language/training/traits.md){:target="_blank"}.
 
 Traits are common across the XO Platform. If you have created Traits from the Natural Language section, they are available for use here as well.
 
