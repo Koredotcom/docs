@@ -241,6 +241,7 @@ You will receive instructions via email on how to reset your password. Check you
 <img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
 <img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;"></li></ol>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 If both the entries do not match, you cannot proceed.</div>
