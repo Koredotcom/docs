@@ -1,16 +1,19 @@
 # Audit Logs
 
-On the **Settings** console, you can monitor activities related to your account's modules **and those of the users linked to your account**. The dashboard offers a unified location to track module events for the selected time period.
+On the **Settings** console, you can monitor events related to your account's modules **and actions taken by the users linked to your account**. 
 
-The **Audit Logs** Dashboard comprehensively logs all the events of your account, covering categories and events as detailed in the table below. When you click the **>** (expand arrow), each event entry displays the following:
+**Audit Logs** offer a comprehensive and time-based view of all the account events. Each log entry includes:
 
-* A message about the action taken/event.
-* The associated metadata including the **User ID**, **Email ID**, and **IP address** of the user who executed the event.
+- Event name and category.
+- The user who performed the action.
+- Date and time of the event.
+- Detailed description of the action.
+
 <img src="../images/audit-logs-metadata.png" alt="audit logs metadata" title="audit logs metadata" style="border: 1px solid gray; zoom:75%;">
 
-The event metadata provides business users with actionable insights, helping them identify patterns in user activity within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.
+The event metadata provides business users with actionable insights, helping them in efficiently identifying patterns in user activities within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.
 
-You can specify a **current** or **past period** to view the logs and have full visibility into the activities and modifications in your account. [Learn more](./audit-logs.md/#steps-to-set-time-range-for-audit-logs){:target="_blank"}.
+You can specify a **current** or **past period** to view the logs and have complete visibility into the activities and modifications in your account. [Learn more](./audit-logs.md/#steps-to-set-time-range-for-audit-logs){:target="_blank"}.
 
 Additionally, you can set **custom filters** based on a specific category, event, or user value to view only the required audit logs. [Learn more](./audit-logs.md/#steps-to-add-a-custom-filter){:target="_blank"}.
 
@@ -49,7 +52,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Logout
    </td>
-   <td>Tracks the account log out activity.
+   <td>Tracks the account logout activity.
    </td>
    <td>
 <ul>
@@ -657,6 +660,7 @@ All the log entries relevant to the applied filter(s) are displayed, as shown be
 <img src="../images/log-entries.png" alt="log entries" title="log entries" style="border: 1px solid gray; zoom:75%;">
 
 To clear the filter settings, click **Clear All**.
+
 <img src="../images/clear-all-filters.png" alt="clear all fllters" title="clear all fllters" style="border: 1px solid gray; zoom:75%;">
 
 The number of filters you have applied is displayed on the **Filter** icon.

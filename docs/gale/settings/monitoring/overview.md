@@ -1,10 +1,13 @@
 # Monitoring
 
-The **Monitoring** module in GALE helps track logs of events, actions, and changes across your account for the linked users based on the permissions provided to them for different modules. 
+The **Monitoring** module in GALE tracks events, actions, and changes across your account and linked users. It provides visibility into activities for modules such as roles, integrations, models, agents, users, datasets, guardrails, and playground. The monitoring system helps maintain your GALE account's security, compliance, and operational efficiency.
 
-It provides visibility into activities and modifications for modules such as roles, integrations, models, agents, users, datasets, guardrails, and playground, ensuring that you can maintain oversight and respond to any issues promptly. 
+<p><b>Best Practices</b></p>
 
-Monitoring is crucial for maintaining security, compliance, and operational efficiency within your GALE account.
+- Regularly review audit logs for security and compliance.
+- Use filters to focus on specific events or users.
+- Utilize time-based filtering for targeted analysis.
+
 
 Monitoring supports the following features:
 
