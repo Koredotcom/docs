@@ -58,7 +58,7 @@ wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxG
 * **Host**: Domain name (for example, korevg-np.kore.ai) of the server you are connecting to. savg-webserver.kore.ai
 * **Path**: Specifies the specific resource or endpoint on the server you are connecting to. Here, it’s an audiosocket service for talkdesk, “/audiosocket/talkdesk/”
 * **Query Parameters**:  Used to pass additional information to the server in the form of key-value pairs separated by “&” and are part of the URL after the “?.”
-    * **sipuri** : The encoded phone number associated with the bot (for example, %2B1234456xxxx). ([https://www.urlencoder.org/](https://www.urlencoder.org/)){:target="_blank"}. Paste phone number here and copy the encoded value.
+    * **sipuri** : The encoded phone number associated with the bot (for example, %2B1234456xxxx). [https://www.urlencoder.org/](https://www.urlencoder.org/){:target="_blank"}. Paste phone number here and copy the encoded value.
     * **token**: [JSON Web Token](https://jwt.io){:target="_blank"} encrypted with the client secret of the bot with the following payload:
       * {“appId”:”&lt;Client ID>”}
       * Client ID: From the Bot details
