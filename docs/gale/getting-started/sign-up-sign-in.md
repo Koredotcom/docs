@@ -212,7 +212,9 @@ An alternative way is to request the <b>master admin</b> to unlock your account.
 
 When your account is locked, the status for you shows as "<b><i>Locked</i></b>" to all the admins who have added you to their account. This status update ensures that admins are aware of your restricted access and can unlock your account.
 
-<img src="../images/locked-on-admin-console.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;">
+If you are the admin and want to unlock a user linked to your account, click the <b><i>Unlock</i></b> button for the user on your <b>Settings</b> Console's <b>Users</b> page, as shown below.
+
+<img src="../getting-started/images/user-unlock.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;">
 
 When your account is locked, you can attempt to log in using an alternative method by clicking **Login using another account**. This action redirects you to a page where you can sign in via your default SSO service, such as Google, Windows, or LinkedIn.
 
