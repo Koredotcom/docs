@@ -60,8 +60,8 @@ wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxG
 * **Query Parameters**:  Used to pass additional information to the server in the form of key-value pairs separated by “&” and are part of the URL after the “?.”
     * **sipuri** : The encoded phone number associated with the bot (for example, %2B1234456xxxx). [https://www.urlencoder.org/](https://www.urlencoder.org/){:target="_blank"}. Paste phone number here and copy the encoded value.
     * **token**: [JSON Web Token](https://jwt.io){:target="_blank"} encrypted with the client secret of the bot with the following payload:
-      * {“appId”:”&lt;Client ID>”}
-      * Client ID: From the Bot details
+        * {“appId”:”&lt;Client ID>”}
+        * Client ID: From the Bot details
     * **botId**: Bot ID of the bot you want to use – for example, st-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx.
     * **accountId**: Account ID of the bot owner. Unique identifier for an account.
 
