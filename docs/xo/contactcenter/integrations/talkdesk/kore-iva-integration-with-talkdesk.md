@@ -4,7 +4,7 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 
 ## Architecture Diagram
 
-<img src="../architecture-diagram-1.png" alt="architecture-diagram" title="architecture-diagram" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/architecture-diagram-1.png" alt="architecture-diagram" title="architecture-diagram" style="border: 1px solid gray; zoom:80%;">
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ An _experience flow _is a step-by-step process that helps you define the end-to-
 ### Step 2: Attach that Experience Flow with a Phone Number
 
 A _flow_ is a step-by-step process that helps you define the end-to-end customer experience for each communication channel. You can create experience flows using the Flow Designer. [Know more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
-<img src="../flows-and-channels-phone-number-2.png" alt="flows-and-channels-phone-number" title="flows-and-channels-phone-number" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/flows-and-channels-phone-number-2.png" alt="flows-and-channels-phone-number" title="flows-and-channels-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 **Note**: This phone number is encrypted and used in WSS URL in Audio streaming.
 
@@ -68,7 +68,7 @@ wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxG
 ### Step 4: Configure Audio Streaming Node in Talkdesk
 
 Audio streaming is the primary component for enabling voice automation. It involves streaming Talkdesk audio to the Voice Stream URL (created in [Step-3](#step-3-create-a-wss-url)) over WSS using Conversation Orchestrator. Here’s a basic flow within the Talkdesk Studio:  
-<img src="../talkdesk-studio-basic-flow-3.png" alt="talkdesk-studio-basic-flow" title="talkdesk-studio-basic-flow" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/talkdesk-studio-basic-flow-3.png" alt="talkdesk-studio-basic-flow" title="talkdesk-studio-basic-flow" style="border: 1px solid gray; zoom:80%;">
 
 1. Download the [Studio Flow](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/TalkDesk/SmartAssist/VoiceAutomation.json){:target="_blank"}, and then import it into the Talkdesk Studio. [Learn more](https://studio.talkdesk.com/docs/importing-and-exporting-flows#importing-a-flow){:target="_blank"}.
 2. Click the **“Connect to Autopilot Voice**” block within the flow.
@@ -80,11 +80,11 @@ Audio streaming is the primary component for enabling voice automation. It invol
 For Voice Automation, Kore.ai uses the "Connect to Autopilot Voice" node of Talkdesk. Check the Exits and Preferences of this node in the screenshot below.
 
 On Agent Escalation, Kore.ai creates variables that are populated to **Ring Groups** > **Variables** in the flow context. This allows you to use information collected from an external source. [Learn more](https://studio.talkdesk.com/docs/preferences-assignment-dial#:~:text=the%20latter%20allows%20you%20to%20use%20information%20collected%20from%20an%20external%20source%20such%20as%20a%20Customer%20Relationship%20Manager){:target="_blank"}.  
-<img src="../agent-escalation-node-exits-tab-4.png" alt="agent-escalation-node-exits-tab" title="agent-escalation-node-exits-tab" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/agent-escalation-node-exits-tab-4.png" alt="agent-escalation-node-exits-tab" title="agent-escalation-node-exits-tab" style="border: 1px solid gray; zoom:80%;">  
 
-<img src="../agent-escalation-node-preferences-tab-5.png" alt="agent-escalation-node-preferences-tab" title="agent-escalation-node-preferences-tab" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/agent-escalation-node-preferences-tab-5.png" alt="agent-escalation-node-preferences-tab" title="agent-escalation-node-preferences-tab" style="border: 1px solid gray; zoom:80%;">  
 
-<img src="../agent-escalation-node-preferences-ring-group-6.png" alt="agent-escalation-node-preferences-ring-group" title="agent-escalation-node-preferences-ring-group" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent-escalation-node-preferences-ring-group-6.png" alt="agent-escalation-node-preferences-ring-group" title="agent-escalation-node-preferences-ring-group" style="border: 1px solid gray; zoom:80%;">
 
 **Note**: Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
 
