@@ -40,8 +40,8 @@ To select and deploy a model, follow these steps:
 
 3. Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click **Next**. [Learn more](model-optimization.md).
     * **Skip optimization**: It skips the model optimization.
-    * **CTranslate2**: Select Quantization from the dropdown menu. [Learn more](model-optimization.md#ctranslate2). 
-    * **vLLM**: Select Quantization from the dropdown menu. [Learn more](model-optimization.md#vllm).  
+    * **CTranslate2**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#ctranslate2). 
+    * **vLLM**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#vllm).  
 
 
         <img src="../images/image1.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
