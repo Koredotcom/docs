@@ -184,6 +184,7 @@ nav:
       - Enable Hugging Face: settings/integrations/enable-hugging-face.md
       - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
-    - Monitoring:
-      - Audit Logs: settings/monitoring/audit-logs.md    
+    - Monitoring: settings/monitoring/overview.md 
+      - Audit Logs: settings/monitoring/audit-logs.md
+        
    
