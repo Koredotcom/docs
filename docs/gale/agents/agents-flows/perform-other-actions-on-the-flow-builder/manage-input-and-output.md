@@ -26,7 +26,7 @@ Alternatively, you can click the **Start** node. The **Manage Input & Output** d
 
     <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;">
 
-1. In the **Name(key)** field, provide a name for the input variable. For example, Product_ID.
+1. In the **Name (key)** field, provide a name for the input variable. For example, Product_ID.
 2. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
 If you want to make the data type mandatory, then enable the **Mandatory** toggle.
 
@@ -43,8 +43,10 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 
 1. On the top of the canvas of the Agents page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
+2. On the **Output** tab, click the **+ Add output variable** button. The **Enter output variable** dialog is displayed.
 <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;">
 
+3. In the **Name (key)** field, provide a name for the output variable.
 
 4. In the **Type** field, select a data type from the drop-down list - String, Number, or Boolean.
 
