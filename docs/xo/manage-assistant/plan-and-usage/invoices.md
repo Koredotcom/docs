@@ -8,8 +8,7 @@ The Invoice module provides access to all the invoices associated with the virtu
 To view the invoices, follow these steps:
 
 1. Log in to the XO Platform and select the assistance for which you need the invoice.
-2. Navigate to **Product Switcher > Manage> Billing > My invoices.**
-3. From the left menu click **Invoices**.  
+2. Navigate to **Product Switcher > Billing > Manage > My Invoices.**
     <img src="../images/invoices.gif" alt="invoices" title="invoices" style="border:1px solid gray; zoom:70%;">
 3. All invoices are displayed in chronological order and include the following fields:
     * Order Id
