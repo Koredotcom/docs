@@ -142,196 +142,43 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 		
 
-## Product and Supported Feature
-
-Select the product to view the supported features.
-
-=== "Automation AI"
-
-    * GenAI Node
-    * GenAI Prompt
-    * Repeat Responses
-    * Rephrase Dialog Responses
-    * Rephrase User Query
-    * Zero-shot ML Model
-
-=== "Search AI"
-
-    * Answer Generation
-    * Vector Generation
-
-=== "Agent AI"
-
-    * Agent Response Rephrasing
 
 
 
-## Model and Feature Support Matrix
+## Model and Supported Features
 
-The following table displays the Dynamic Conversation features and the supported models. 
+The following table displays the features and the supported models. 
 
 (✅ Supported | ❌ Not supported)
 
 
-<table>
-  <tr>
-    <td><strong>Model</strong></td>
-    <td>Agent Response Rephrasing</td>
-    <td>Answer Generation</td>
-    <td>GenAI Node</td>
-    <td>GenAI Prompt</td>
-    <td>Repeat Responses</td>
-    <td>Rephrase Dialog Responses</td>
-    <td>Rephrase User Query</td>
-    <td>Vector Generation</td>
-    <td>Zero-shot ML Model</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅*</td>
-  </tr>
-   <tr>
-    <td>Azure OpenAI – GPT 4 Turbo</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-    <tr>
-    <td>Azure OpenAI – GPT 4o</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅*</td>
-  </tr>
-    <tr>
-    <td>OpenAI – GPT 4 Turbo</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-    <tr>
-    <td>OpenAI – GPT 4o</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude Instant</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Custom LLM</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-  <tr>
-    <td>Kore.ai XO GPT</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-  </tr>
-</table>
+=== "Automation AI"
 
+    |Model|GenAI Node|GenAI Prompt|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
+    |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+    |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
+    |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
+    |Anthropic – <br>Claude and Claude Instant|✅|✅|✅|✅|❌|❌|
+    |Custom LLM|✅|✅|❌|✅|❌|❌|
+    |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
+
+=== "Search AI"
+
+    |Model|Answer Generation|Vector Generation|
+    |:----:|:----:|:----:|
+    |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
+    |Custom LLM|✅|❌|
+    |Kore.ai XO GPT|✅|✅| 
+
+=== "Agent AI"
+
+    |Model|Agent Response Rephrasing|
+    |:----:|:----:|
+    |Azure OpenAI – GPT 3.5 Turbo|✅|
+    |OpenAI – GPT 3.5 Turbo|✅|
+<hr>
 
 
 \*  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.

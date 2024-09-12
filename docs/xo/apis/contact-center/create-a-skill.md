@@ -26,8 +26,6 @@ curl --location --request POST \
       --header 'Content-Type: application/json' \
       --data-raw '
     {
-
-
     "name": "test",
     "description": "test",
     "agents": [

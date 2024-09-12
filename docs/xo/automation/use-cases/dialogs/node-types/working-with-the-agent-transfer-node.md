@@ -77,9 +77,6 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
     <img src="../images/agent-transfer-node-chat-settings.png" alt="Agent Transfer node-Chat settings" title="Agent Transfer node-Chat settings" style="border:1px solid gray; zoom:60%;">
 
 4. In the **View Config** page, you can view the agent configuration details.
-
-    <img src="../images/agent-transfer-node-chat-settings-view-config.png" alt="Agent Transfer node-Chat settings-View Config" title="Agent Transfer node-Chat settings-View Config" style="border:1px solid gray; zoom:60%;">
-
 5. Click **Close** to return to the Agent Transfer Node settings page.
 6. In the **Voice Settings** section, click the **Configure** link to configure the IVR Channel Voice Call Properties. [Learn more](../../../../../channels/call-properties){:target="_blank"}.
 
