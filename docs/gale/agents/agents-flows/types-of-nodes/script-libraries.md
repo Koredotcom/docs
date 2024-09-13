@@ -4,21 +4,9 @@ The following pre-existing libraries can be selected for use in the script edito
 
 * [json](#json)
 * [enum](#enum)
-* [Numerical Libraries](#numerical-libraries)
-    * [numpy](#numpy)
-    * [pandas](#pandas)
-    * [collections](#collections)
-    * [math](#math)
-    * [cmath](#cmath)
-    * [statistics](#statistics)
-    * [random](#statistics)
-* [String Manipulation Libraries](#string-manipulation-libraries)
-    * [re](#re)
-    * [textwrap](#textwrap)
-* [Date-time Libraries](#date-time-libraries)
-    * [datetime](#datetime)
-    * [time](#time)
-    * [calendar](#calendar)
+* **Numerical Libraries**: [numpy](#numpy), [pandas](#pandas), [collections](#collections), [math](#math), [cmath](#cmath), [statistics](#statistics), and [random](#statistics).
+* **String Manipulation Libraries**: [re](#re) and [textwrap](#textwrap).
+* **Date-time Libraries**: [datetime](#datetime), [time](#time), and [calendar](#calendar).
 * [Itertools](#itertools)
 
 The libraries mentioned above are imported and made available in the function node in the following formats:
@@ -574,6 +562,8 @@ import itertools
     "zeros_like"
   ]
 ```
+<a href="https://numpy.org/doc/stable/reference/index.html#reference" target="_blank">Learn more</a>.
+
 ### pandas
 ```
 "pandas": [
@@ -681,6 +671,8 @@ import itertools
     "wide_to_long"
   ]
 ```
+<a href="https://pandas.pydata.org/docs/reference/index.html" target="_blank">Learn more</a>.
+
 ### collections
 ```
 "collections": [
@@ -709,6 +701,8 @@ import itertools
     "namedtuple"
   ]
 ```
+<a href="https://docs.python.org/3/library/collections.html" target="_blank">Learn more</a>.
+
 ### math
 ```
 "math": [
@@ -767,6 +761,8 @@ import itertools
     "ulp"
   ]
 ```
+<a href="https://docs.python.org/3/library/math.html" target="_blank">Learn more</a>.
+
 ### cmath
 ```
   "cmath": [
@@ -795,6 +791,8 @@ import itertools
     "tanh"
   ]
 ```
+<a href="https://docs.python.org/3/library/cmath.html" target="_blank">Learn more</a>.
+
 ### statistics
 ```
 "statistics": [
@@ -847,6 +845,8 @@ import itertools
     "variance"
   ]
 ```
+<a href="https://docs.python.org/3/library/statistics.html" target="_blank">Learn more</a>.
+
 ### random
 ```
 "random": [
@@ -897,6 +897,8 @@ import itertools
     "weibullvariate"
   ]
 ```
+<a href="https://docs.python.org/3/library/random.html" target="_blank">Learn more</a>.
+
 ## String Manipulation Libraries
 ### re
 ```
@@ -925,6 +927,8 @@ import itertools
     "template"
   ]
 ```
+<a href="https://docs.python.org/3/library/re.html" target="_blank">Learn more</a>.
+
 ### textwrap
 ```
  "textwrap": [
@@ -936,6 +940,8 @@ import itertools
     "wrap"
   ]
 ```
+<a href="https://docs.python.org/3/library/textwrap.html" target="_blank">Learn more</a>.
+
 ## Date-time Libraries
 
 ### datetime
@@ -949,6 +955,8 @@ import itertools
     "tzinfo"
   ]
 ```
+<a href="https://docs.python.org/3/library/datetime.html" target="_blank">Learn more</a>.
+
 ### time
 ```
  "time": [
@@ -981,6 +989,8 @@ import itertools
     "tzset"
   ]
 ```
+<a href="https://docs.python.org/3/library/time.html" target="_blank">Learn more</a>.
+
 ### calendar
 ```
  "calendar": [
@@ -1019,6 +1029,8 @@ import itertools
     "weekheader"
   ]
 ```
+<a href="https://docs.python.org/3/library/calendar.html" target="_blank">Learn more</a>.
+
 ## Itertools
 ```
 "itertools": [
@@ -1046,3 +1058,4 @@ import itertools
     "zip_longest"
   ]
 ```
+<a href="https://docs.python.org/3/library/itertools.html" target="_blank">Learn more</a>.
