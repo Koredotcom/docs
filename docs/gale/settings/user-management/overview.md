@@ -29,6 +29,6 @@ For example, a *Master Admin* role is assigned by default to the account owner. 
 
     The owner of each respective application holds the authority to extend invitations to any number of individual users, customizing their capabilities in alignment with the unique requirements of each application. For more information about setting app-level permissions, see [Roles Management](./role-management.md/#account-and-agent-level-features){:target="_blank"}.
 
-Once you invite a user or import users data, you can change their roles, assign/unassign permissions, delete users. and do more using the[Roles Management](./role-management.md){:target="_blank"} and [Users](./users.md){:target="_blank"} features on the **Settings** console.
+Once you invite a user or import users data, you can change their roles, assign/unassign permissions, delete users. and do more using the [Roles Management](./role-management.md){:target="_blank"} and [Users](./users.md){:target="_blank"} features on the **Settings** console.
 
 [Learn more](../settings-overview.md){:target="_blank"} about other features on the **Settings** console.
