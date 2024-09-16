@@ -124,7 +124,7 @@ Use the Instance Properties to set user tags, timeout duration, and bot behavior
 2. In the **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
     * **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **60 Seconds**. The default value is 20 Seconds.
     * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs.
-        * **Close the Task and trigger Task Execution Failure Event**, or
+        * **Close the Task and trigger Task Execution Failure Event** (default), or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
     *  **Service Call Failure Handling**: Choose how the bot should respond when the service call failure occurs. 
         * **Close the Task and trigger Task Execution Failure Event** (default), or
@@ -198,9 +198,9 @@ You can define the Service Type as:
     2. **RAW** – A list of key/value pairs that are used in other nodes as variables.
 
 8. In the **Instance Properties** section under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
-    * **Timeout(Seconds)**: Select the maximum wait time from the drop-down list. The timeout range can be any value between _1 Second_ to _20 Seconds_. The default value is **20 Seconds**.
+    * **Timeout(Seconds)**: Select the maximum wait time from the drop-down list. The timeout range can be any value between _1 Second_ to _60 Seconds_. The default value is **20 Seconds**.
     * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs.
-        * **Close the Task and trigger Task Execution Failure Event**, or
+        * **Close the Task and trigger Task Execution Failure Event** (default), or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
     *  **Service Call Failure Handling**: Choose how the bot should respond when the service call failure occurs. 
         * **Close the Task and trigger Task Execution Failure Event** (default), or
