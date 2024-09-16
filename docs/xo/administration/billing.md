@@ -1,6 +1,6 @@
 # Billing
 
-The billing section lets the Bot Admins view and track their Invoices and plan details.
+The **Billing** section lets the Bot Admins view and track their Invoices and plan details.
 
 ### Billing Sessions
 
