@@ -11366,9 +11366,51 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talkdesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multibot Agent AI Integration with Genesys
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -14792,25 +14834,30 @@
 <p class="admonition-title">Note</p>
 <p>The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.</p>
 </div>
-<p>Use the Instance Properties to define any user tags that you want to set.</p>
+<p>Use the Instance Properties to set user tags, timeout duration, and bot behavior for timeouts and service call failures.</p>
 <ol>
-<li>On the Service node properties panel, click the <strong>Instance Properties</strong> tab.</li>
+<li>On the Service node properties panel, click the <strong>Instance Properties</strong> tab.
+    <a class="glightbox" href="../images/service-node-img5-timeout-error-handling2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img5-timeout-error-handling2.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;"></a></li>
 <li>
-<p>Under <strong>Advanced Controls</strong>, select the maximum wait time for the <strong>Timeout</strong> for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:</p>
-<ol>
+<p>In the <strong>Advanced Controls</strong>, select the maximum wait time for the <strong>Timeout</strong> for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:</p>
+<ul>
 <li><strong>Timeout(Seconds)</strong>: Select the maximum wait time from the dropdown list. The timeout range can be any value between <strong>1 Second</strong> to <strong>60 Seconds</strong>. The default value is 20 Seconds.</li>
-<li><strong>Timeout error handling</strong>: Choose how the bot should respond when the timeout occurs.<ul>
-<li><strong>Close the Task and trigger Task Execution Failure Event</strong>, or</li>
+<li><strong>Timeout Error Handling</strong>: Choose how the bot should respond when the timeout occurs.<ul>
+<li><strong>Close the Task and trigger Task Execution Failure Event</strong> (default), or</li>
 <li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.</li>
 </ul>
 </li>
-</ol>
+<li><strong>Service Call Failure Handling</strong>: Choose how the bot should respond when the service call failure occurs. <ul>
+<li><strong>Close the Task and trigger Task Execution Failure Event</strong> (default), or</li>
+<li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.   </li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
 <p>Under the <strong>Custom Tags</strong> section, add tags to build custom profiles of your VA’s conversations. <a href="../../../../../analytics/automation/custom-dashboard/custom-meta-tags" target="_blank">Click here for more</a>.</p>
 </li>
 </ol>
-<p><a class="glightbox" href="../images/service-node-img5-timeout-error-handling.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;"></a></p>
 <h3 id="connections-properties">Connections Properties<a class="headerlink" href="#connections-properties" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -14893,15 +14940,20 @@
 </ol>
 </li>
 <li>
-<p>In the <strong>Component Properties</strong> section, select the maximum wait time for the <strong>Timeout</strong> for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings.</p>
-<ol>
-<li><strong>Timeout(Seconds)</strong>: Select the maximum wait time from the drop-down list. The timeout range can be any value between <em>1 Second</em> to <em>20 Seconds</em>. The default value is <strong>5 Seconds</strong>.</li>
-<li><strong>Timeout error handling</strong>: Choose how the bot should respond when the timeout occurs.<ul>
-<li><strong>Close the Task and trigger Task Execution Failure Event</strong>, or</li>
+<p>In the <strong>Instance Properties</strong> section under <strong>Advanced Controls</strong>, select the maximum wait time for the <strong>Timeout</strong> for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:</p>
+<ul>
+<li><strong>Timeout(Seconds)</strong>: Select the maximum wait time from the drop-down list. The timeout range can be any value between <em>1 Second</em> to <em>60 Seconds</em>. The default value is <strong>20 Seconds</strong>.</li>
+<li><strong>Timeout Error Handling</strong>: Choose how the bot should respond when the timeout occurs.<ul>
+<li><strong>Close the Task and trigger Task Execution Failure Event</strong> (default), or</li>
 <li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.</li>
 </ul>
 </li>
-</ol>
+<li><strong>Service Call Failure Handling</strong>: Choose how the bot should respond when the service call failure occurs. <ul>
+<li><strong>Close the Task and trigger Task Execution Failure Event</strong> (default), or</li>
+<li><strong>Continue with the task and transition to this node</strong>; select the node to which the service call can transition in the flow.   </li>
+</ul>
+</li>
+</ul>
 </li>
 </ol>
 <h3 id="define-a-url-to-convert-to-image">Define a URL to Convert to Image<a class="headerlink" href="#define-a-url-to-convert-to-image" title="Permanent link">&para;</a></h3>

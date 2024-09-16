@@ -11370,9 +11370,51 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talkdesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multibot Agent AI Integration with Genesys
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -14686,9 +14728,9 @@
 
 
 <h1 id="knowledge-graph-training">Knowledge Graph Training<a class="headerlink" href="#knowledge-graph-training" title="Permanent link">&para;</a></h1>
-<p><a href="/docs/xo/automation/natural-language/training/nlp-training-overview/" target="_blank">Training your Assistant</a> is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.</p>
+<p><a href="../../natural-language/training/nlp-training-overview/" target="_blank">Training your Assistant</a> is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.</p>
 <p>The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.</p>
-<p>The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. <a href="/docs/xo/automation/knowledge-ai/knowledge-graph-overview/#knowledge-graph-types" target="_blank">Learn more</a> about Knowledge Graph Types.</p>
+<p>The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. <a href="../knowledge-graph-overview/" target="_blank">Learn more</a> about Knowledge Graph Types.</p>
 <p>The Knowledge Graph engine thus responds to users’ intents by identifying the appropriate questions within the Knowledge Graph, and then presenting the user with the appropriate response.</p>
 <p>You can find the Knowledge Graph by selecting your desired VA, then going to <strong>Conversation Skills</strong> &gt; <strong>Knowledge Graph</strong>.</p>
 <div class="admonition note">
@@ -14710,15 +14752,15 @@
 </li>
 </ol>
 </div>
-<p>See the <a href="/docs/xo/automation/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-types" target="_blank">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
-<p>Also, <a href="/docs/xo/automation/knowledge-ai/knowledge-graph-training/#training-configuration" target="_blank">Training Configurations</a> for training setup details.</p>
+<p>See the <a href="../knowledge-graph-overview/#compare-knowledge-graph-types" target="_blank">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
+<p>Also, <a href="./#training-configuration" target="_blank">Training Configurations</a> for training setup details.</p>
 <h2 id="knowledge-graph-engine-capabilities">Knowledge Graph Engine Capabilities<a class="headerlink" href="#knowledge-graph-engine-capabilities" title="Permanent link">&para;</a></h2>
 <p>The following are the overall capabilities of the Knowledge Graph Engine:</p>
 <ul>
 <li><strong>Ease of Training using Synonyms</strong>: Kore.ai’s Knowledge Graph has a provision to associate synonyms against a graph node. This helps capture the variation in a question. For example, <em>flight</em> can be used as a synonym for <em>plane</em> in an FAQ such as <em>How can I buy a plane ticket</em>?</li>
 <li><strong>Better Coverage with Alternate Questions</strong>: The Knowledge Graph has a provision to add alternate questions. This helps us to capture the various ways a user might ask the same question. For example, in <em>How do I change my flight?</em> we can add an alternate question as <em>Can I change my flight?</em></li>
 <li><strong>Improved Accuracy</strong>: Ontology-driven question-answers reduce the possibility of false positives.</li>
-<li><strong>Weighing Phrases using Traits</strong>: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/#traits" target="_blank">Learn more</a>.</li>
+<li><strong>Weighing Phrases using Traits</strong>: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="../knowledge-graph-terminology/#traits" target="_blank">Learn more</a>.</li>
 <li><strong>Ability to Mark Term Importance</strong>: The Knowledge Graph has a provision to mark that an ontology term is important. For example, in the question, <em>How to book a flight?</em>, the word <em>flight</em> is an important term. If the <em>flight</em> keyword is not present in the user utterance, then it makes little sense.</li>
 <li><strong>Ability to Group Relevant Nodes</strong>: As the graph grows in size, managing graph nodes can become a challenging task. Using the <em>organizer node</em> construct of the ontology engine, developers can group relevant child nodes under a parent node.</li>
 </ul>
@@ -14754,7 +14796,7 @@
 <li>Use Stop Words to filter unwanted utterances.</li>
 </ol>
 <h2 id="training-configuration">Training Configuration<a class="headerlink" href="#training-configuration" title="Permanent link">&para;</a></h2>
-<p>This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read <a href="docs/xo/automation/knowledge-ai/knowledge-graph-overview/#the-ontology-knowledge-graph" target="_blank">this</a> article.</p>
+<p>This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read <a href="../knowledge-graph-overview/#the-ontology-knowledge-graph" target="_blank">this</a> article.</p>
 <p>In order to configure the training of your Knowledge Graph for improved VA performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:</p>
 <ul>
 <li>Adjusting the Term Type to your VA’s needs when adding terms to your graph,</li>
@@ -14800,15 +14842,12 @@
 </ul>
 </li>
 </ol>
-</ul>
-<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/#thresholds-configurations" target="_blank">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
-<p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine.</p>
-<p>The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
-<li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
-<a class="glightbox" href="../images/child-synonyms-terms.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></a></li></ol>
-
+<p></ul>
+4. You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <strong>Threshold and Configurations</strong> or from <b>More Options</b> &gt; <b>Manage Synonyms</b>. Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
+5. To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
+<a class="glightbox" href="../images/child-synonyms-terms.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></a></li></ol></p>
 <h3 id="traits">Traits<a class="headerlink" href="#traits" title="Permanent link">&para;</a></h3>
-<p>You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click <a href="docs/xo/automation/knowledge-ai/knowledge-graph-training/#traits" target="_blank">here</a>.</p>
+<p>You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click <a href="../../natural-language/training/traits/" target="_blank">here</a>.</p>
 <p>Traits are common across the XO Platform. If you have created Traits from the Natural Language section, they are available for use here as well.</p>
 <p>To create a trait, follow the steps below:</p>
 <ol><li>On the top-right of the <b>Knowledge Graph</b> window, click the <b>More Options</b> icon and then select <b>Manage Traits</b>.
@@ -14826,7 +14865,7 @@
 <li><strong>Intent Precondition</strong> – the context that should be present as a qualifier for this node or tag.</li>
 <li><strong>Context Output</strong> – the context that should be populated to signify the execution of this task.</li>
 </ul>
-<p>Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the <strong>Manage Context</strong> option allows you to set the context precondition and context output mentioned above. Click <a href="docs/xo/automation/intelligence/context-management/" target="_blank">here</a> for more information on Context Management.</p>
+<p>Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the <strong>Manage Context</strong> option allows you to set the context precondition and context output mentioned above. Click <a href="../../intelligence/context-management/" target="_blank">here</a> for more information on Context Management.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Enabling the <b>Manage Context</b> option will not show the term/node name by default.</p>
@@ -14848,7 +14887,7 @@
 </div>
 <p>The training fails if any single node has more than 100 questions. This limit was introduced in v7.3 to make the Knowledge Graph more efficient by improving the response times. In such failure cases, you can <strong>Download Errors</strong> CSV file which lists the path with more than 100 questions. You can use this file to rectify your Knowledge Graph.</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
-<p>When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. <a href="/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn more about utterance testing</a>.</p>
+<p>When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. <a href="../../testing/testing-your-bot-with-nlp/" target="_blank">Learn more about utterance testing</a>.</p>
 <h2 id="nlu-config-engine-tuning">NLU Config (Engine Tuning)<a class="headerlink" href="#nlu-config-engine-tuning" title="Permanent link">&para;</a></h2>
 <p>To train and improve the performance, Thresholds and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings by clicking on <strong>Natural Language</strong> &gt; <strong>NLU Config</strong>.</p>
 <div class="admonition note">
@@ -14884,7 +14923,7 @@
 <li><strong>Search in Answer</strong> for the qualifying FAQs.</li>
 <li><strong>Qualify Contextual Paths</strong> in the Knowledge Graph using the context tags available in the context. Enabling this option will ensure that the paths are shortlisted using terms or tags from the context. These tags can come from previous matched paths or intent or custom-defined tags.</li>
 </ul>
-<p>The Platform also offers some advanced configurations. <a href="/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.</p>
+<p>The Platform also offers some advanced configurations. <a href="../../natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.</p>
 <h3 id="search-in-answer">Search in Answer<a class="headerlink" href="#search-in-answer" title="Permanent link">&para;</a></h3>
 <p>This feature enables identifying FAQs by searching the user input against the answer section, instead of only matching with questions. This is a fallback mechanism only i.e. search in the answer section will be done only if no FAQs are identified from questions.</p>
 <div class="admonition note">
@@ -14892,7 +14931,7 @@
 <p>This feature is not supported in all languages, refer here for details.</p>
 </div>
 <p>When the <strong>Search in Answer</strong> flag is enabled, the Knowledge Graph engine considers the answer text for identifying the intents also.</p>
-<p>Once this option is enabled, you can specify whether to <strong>Inform the end-user that the answer is a probable answer</strong>. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="/docs/xo/automation/intelligence/conversation-management/standard-responses/" target="_blank">Learn more</a>.</p>
+<p>Once this option is enabled, you can specify whether to <strong>Inform the end-user that the answer is a probable answer</strong>. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="../../intelligence/conversation-management/standard-responses/" target="_blank">Learn more</a>.</p>
 <p>There are three ways in which you can render the response:</p>
 <ol>
 <li><strong>Show Complete Response</strong>: Full response is sent as the answer to the user.</li>

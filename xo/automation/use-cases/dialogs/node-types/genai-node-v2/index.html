@@ -11435,9 +11435,51 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talkdesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multibot Agent AI Integration with Genesys
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -14843,6 +14885,29 @@
 </div>
 </li>
 </ul>
+<p>Sample JavaScript</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>const jsonRepresentation = {
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  messages: [
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    {
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      role: &quot;system&quot;,
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {&quot;bot&quot;: &quot;prompt to collect unfulfilled entities&quot;, &quot;conv_status&quot;: &quot;ongoing&quot; or &quot;ended&quot;, &quot;entities&quot;: [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as &#39;ended&#39; when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as &#39;ongoing&#39;.`
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    },
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    ...Conversation_History,
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    {
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        &quot;role&quot;: &quot;user&quot;,
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        &quot;content&quot;: `${User_Input}`
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    }
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  ],
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  model: &quot;gpt-4&quot;,
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  temperature: 0.73,
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  max_tokens: 300,
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  top_p: 1,
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>  frequency_penalty: 0,
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>  presence_penalty: 0
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>};
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>context.payloadFields = jsonRepresentation;
+</span></code></pre></div>
 <p><strong>Support for Variables</strong></p>
 <ul>
 <li>Support for Dynamic Variables: Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.</li>
@@ -14982,21 +15047,21 @@
 <p>All the entity values collected are stored in context variables. For example, <code>{{context.genai_node.bookflight_genainode.entities.entity_1}}</code>.
 You can define transitions using the context variables.</p>
 <p>This node captures entities in the following structure:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    &quot;bookflight_genainode&quot;: {
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        &quot;entities&quot;: {
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            &quot;entity_1&quot;: &quot;value 1&quot;,
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            &quot;entity_2&quot;: &quot;value 2&quot;,
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>            &quot;entity_3&quot;: &quot;value 3&quot;
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        },
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;exit_scenario&quot;: {
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            &quot;conv_status&quot;: &quot;ended&quot;
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        },
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        &quot;bot_response&quot;: {
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            &quot;bot&quot;: &quot;Thank you for choosing us, your flight ticket details will be shared over email.&quot;
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        }
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    }
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>}
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;bookflight_genainode&quot;: {
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        &quot;entities&quot;: {
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>            &quot;entity_1&quot;: &quot;value 1&quot;,
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>            &quot;entity_2&quot;: &quot;value 2&quot;,
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>            &quot;entity_3&quot;: &quot;value 3&quot;
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        },
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        &quot;exit_scenario&quot;: {
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>            &quot;conv_status&quot;: &quot;ended&quot;
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        },
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        &quot;bot_response&quot;: {
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>            &quot;bot&quot;: &quot;Thank you for choosing us, your flight ticket details will be shared over email.&quot;
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        }
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    }
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>}
 </span></code></pre></div>
 <h2 id="add-custom-prompt-for-genai-node">Add Custom Prompt for GenAI Node<a class="headerlink" href="#add-custom-prompt-for-genai-node" title="Permanent link">&para;</a></h2>
 <p>This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.</p>
