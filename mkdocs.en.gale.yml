@@ -176,7 +176,7 @@ nav:
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 
-      - About User Management: settings/user-management/overview.md
+      - Overview: settings/user-management/overview.md
       - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-a-user-to-your-account
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
