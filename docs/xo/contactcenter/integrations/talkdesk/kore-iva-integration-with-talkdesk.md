@@ -53,7 +53,8 @@ When a customer calls the Talkdesk phone number, the audio stream is directed to
 
 Create a WSS URL with botID, token ID, and phone number used in the Experience Flow:
 
-wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-JgCsxnCCXlpGfUjw&botId=st-92bbcxxx-f5c3-5ea6-ab5e-d7ebea8xxxxx&accountId=xxxxxbef6ed51db7e930d75c&agentassist=false
+wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzL
+TFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-JgCsxnCCXlpGfUjw&botId=st-92bbcxxx-f5c3-5ea6-ab5e-d7ebea8xxxxx&accountId=xxxxxbef6ed51db7e930d75c&agentassist=false
 
 * **Host**: Domain name (for example, korevg-np.kore.ai) of the server you are connecting to. savg-webserver.kore.ai
 * **Path**: Specifies the specific resource or endpoint on the server you are connecting to. Here, it’s an audiosocket service for talkdesk, “/audiosocket/talkdesk/”
