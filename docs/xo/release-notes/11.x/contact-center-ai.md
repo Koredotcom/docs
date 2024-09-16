@@ -14,10 +14,6 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 The Agent Console now offers Call Forwarding Source Selection, allowing agents to choose the call source when forwarding calls. This feature integrates call history into the dialer tab, improving compatibility with outgoing targets and streamlining the call management workflow.
 
-**Key benefit**:
-
-Improved Compatibility: Different call sources may have varying levels of compatibility with outgoing targets. This feature ensures users can select a compatible source for successful call forwarding.
-
 [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#external-consult-and-conference-during-an-ongoing-interaction)
 
 <hr>
