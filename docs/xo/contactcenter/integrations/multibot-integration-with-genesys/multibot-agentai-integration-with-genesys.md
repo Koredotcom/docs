@@ -180,18 +180,19 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 5. Open the **Interaction Widget** by clicking the name.  
 <img src="../images/open-interaction-widget-15.png" alt="open-interaction-widget" title="open-interaction-widget" style="border: 1px solid gray; zoom:80%;">
 
-6. Go to the **Configuration** tab of the Interaction Widget.
+6. Go to the **Configuration** tab of the Interaction Widget.  
 <img src="../images/interaction-widget-configuration-tab-16.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;">
 
 7. In the **Application URL** field, enter the following structure:  
-
 <code>https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=<strong>&lt;genesys-oauth-Id>&multibot=true&x_metadata=&lt;?x=%7B%22datatable%22%xxxxx></strong></code>.  
-
 Replace “agentassist.kore.ai” with the domain where your AgentAssist is hosted. The “<code>x_metadata</code>” value equals the url<code>-encoded string</code> of JSON object.  
 
     7.1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#step-2-get-genesys-oauth-id).
+
     7.2. For the <strong>x_metadata</strong> value:
+
     7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login).
+    
     7.2.2. Click <strong>Data</strong> > <strong>Data Tables,</strong> and copy the <strong>Data Table</strong> name:  
         <img src="../images/copying-data-table-name-17.png" alt="copying-data-table-name" title="copying-data-table-name" style="border: 1px solid gray; zoom:80%;">
 
@@ -200,6 +201,7 @@ Replace “agentassist.kore.ai” with the domain where your AgentAssist is host
 
     7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
         <img src="../images/copying-client-id-and-secret-values-19.png" alt="copying-client-id-and-secret-values" title="copying-client-id-and-secret-values" style="border: 1px solid gray; zoom:80%;">
+    
     7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
 
     7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
@@ -208,18 +210,19 @@ Replace “agentassist.kore.ai” with the domain where your AgentAssist is host
 
             “datatable”:{
 
-            “name”: &lt;paste the datatable name>
+            “name”: <paste the datatable name>
 
-            “token”: &lt;paste token created in the previous step>
+            “token”: <paste token created in the previous step>
 
-            “qDelimiter”: [&lt;Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name>](#bookmark=id.mt0drm3mzp3a)
-
-            }
+            “qDelimiter”: <Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name>
 
             }
 
-            Reference:  
-            <img src="../images/java-script-mode-20.png" alt="java-script-mode" title="java-script-mode" style="border: 1px solid gray; zoom:80%;">
+            }
+
+    Reference:  
+    <img src="../images/java-script-mode-20.png" alt="java-script-mode" title="java-script-mode" style="border: 1px solid gray; zoom:80%;">
+
     7.2.7. Copy the url-encoded string and paste it against the **x_metadata** value.
 
 8. Allow all permissions in **iFrame Sandbox Options** **and iFrame Feature/Permission Policy**.  
@@ -256,9 +259,11 @@ In addition to the basic agent role, add a new role as given below:
 3. Click **Add Role** to create a new role.
 4. Give a distinctive name to the role; for example, KoreaiAA Agent.
 5. On the **Permission** tab, search for **Conversation** > **Transcription** > **View**, and add (select the box): 
+   
    !!! note
 
        The Conversation permission is available only in the CX3 license.
+
 6. Once finished, the **Assigned Permissions** view should look like this:  
 <img src="../images/assigned-permissions-22.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
 
