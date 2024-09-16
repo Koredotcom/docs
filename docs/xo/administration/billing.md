@@ -2,11 +2,6 @@
 
 The billing section lets the Bot Admins view and track their Invoices and plan details.
 
-!!! Note
-
-    This page is not available for customers under the Enterprise plan.
-
-
 ### Billing Sessions
 
 The Billing sessions are calculated based on
@@ -37,6 +32,9 @@ You have the option to download the Invoice from the invoice field.
 
 <img src="../images/billing-img1.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
 
+!!! Note
+
+    This section is not available for customers under the Enterprise plan.
 
 ### Plan & Usage
 
@@ -50,9 +48,3 @@ Hover over a line item to view the **Manage** option.
 The **Manage** option displays the current plan based on eligibility and usage details. You can change the plan, add funds, and request for extension of your plan from here.
 
 <img src="../images/billing-img3.png" alt="Plan based eligibility and usage details" title="Plan based eligibility and usage details" style="border: 1px solid gray;zoom:70%;"/>
-
-The **Cancel Subscription** option allows you to cancel the current subscription for the selected bot.
-
-**Change Plan** option gives you a list of all plans with the plan offerings with the current plan indicated. From here you can choose to **Select Plan**. [Refer here](../manage-assistant/plan-and-usage/overview.md) for plan details.
-
-Once you select to change a plan order details will be displayed and you will be prompted to enter the address details. **Confirm Payment** will redirect to the payment gateway to capture the billing details.
