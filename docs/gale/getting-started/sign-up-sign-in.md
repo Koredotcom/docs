@@ -349,7 +349,7 @@ A success message appears to indicate that your invitation has been sent.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>An email invite to join your account is valid for 14 days. You must resend the invite to the user once it expires.</li>
+<p><ul><li>An email invite to join your account is valid for 15 days. You must resend the invite to the user once it expires, as discussed in the next section.</li>
 <li>Until the recipient accepts your invitation to join, the user status is set to <b><i>Inactive</i></b>. Once the invitation is accepted, the status changes to <b><i>Active</i></b>.</li></ul></p>
 </div>
 
