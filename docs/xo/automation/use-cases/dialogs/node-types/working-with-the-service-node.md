@@ -120,7 +120,7 @@ The steps to configure a Post-processor Script are the same as the Pre-processor
 Use the Instance Properties to set user tags, timeout duration, and bot behavior for timeouts and service call failures.
 
 1. On the Service node properties panel, click the **Instance Properties** tab.
-    <img src="./images/service-node-img5-timeout-error-handling2.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/service-node-img5-timeout-error-handling2.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
 2. In the **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls. Also, decide how the bot can respond or choose an alternate path when a timeout or service call failure happens. You can configure the following settings:
     * **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **60 Seconds**. The default value is 20 Seconds.
     * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs.
