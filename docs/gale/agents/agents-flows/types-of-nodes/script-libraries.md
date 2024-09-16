@@ -9,6 +9,8 @@ The following pre-existing libraries can be selected for use in the script edito
 * **Date-time Libraries**: [datetime](#datetime), [time](#time), and [calendar](#calendar).
 * [Itertools](#itertools)
 
+<hr>
+
 The libraries mentioned above are imported and made available in the function node in the following formats:
 
 ```
@@ -29,6 +31,8 @@ import time
 import calendar
 import itertools
 ```
+<hr>
+
 ## Functions of Supported Libraries
 
 ### json
@@ -67,6 +71,8 @@ import itertools
     "unique"
   ]
 ```
+<hr>
+
 ## Numerical Libraries
 
 ### numPy
@@ -899,6 +905,8 @@ import itertools
 ```
 <a href="https://docs.python.org/3/library/random.html" target="_blank">Learn more</a>.
 
+<hr>
+
 ## String Manipulation Libraries
 ### re
 ```
@@ -941,6 +949,8 @@ import itertools
   ]
 ```
 <a href="https://docs.python.org/3/library/textwrap.html" target="_blank">Learn more</a>.
+
+<hr>
 
 ## Date-time Libraries
 
@@ -1030,6 +1040,8 @@ import itertools
   ]
 ```
 <a href="https://docs.python.org/3/library/calendar.html" target="_blank">Learn more</a>.
+
+<hr>
 
 ## Itertools
 ```
