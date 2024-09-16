@@ -386,20 +386,32 @@ While interacting with a customer, if an agent needs to seek external consultati
 1. Click the **Dialpad** icon.  
 <img src="../images/dialpad.png" alt="Dialpad" title="Dialpad" style="border: 1px solid gray; zoom:60%;">
 
-2. The **External Consultation Call** window appears. The external call can be dialed in two ways:
+2. The **External Consultation Call** window appears. The external call can be dialed in three ways:
     1. **Manual Dialer**:
-        1. Click the **Dialer** tab and select the country code from the dropdown.  
-        <img src="../images/outbound-dialer.png" alt="Outbound Dialer" title="Outbound Dialer" style="border: 1px solid gray; zoom:50%;">
 
-        2. Enter the phone number using the keypad and click the 🕻 button to initiate an external outbound call.    
-        <img src="../images/dial-number.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:80%;">
+        1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the **🕻** button to initiate an external outbound call.  
+        <img src="../images/dialer.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:80%;">
 
     2. **Contacts Tab**:
         1. Click the **Contacts** tab, enter the name of the contact in the search bar, and press **enter**.  
         <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
 
-        2. The search results are displayed. Click the **🕻** button to initiate an external outbound call.  
+        2. The search results are displayed. Click the **🕻** button.  
         <img src="../images/call-button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+
+        3. The phone number appears on the dialer tab. Click the **🕻** button to dial the call.  
+        <img src="../images/contact-call.png" alt="Call Button Dialer" title="Call Button Dialer" style="border: 1px solid gray; zoom:60%;">
+
+    3. **Call History Tab**:
+
+        1. Click the **Call History** tab.  
+        <img src="../images/call-history (2).png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
+
+        2. Click the **🕻** button for the number to which you want to forward the call.  
+        <img src="../images/call-button (3).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+
+        3. The phone number appears on the dialer tab. Click the **🕻** button to dial the call.  
+        <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:60%;">
 
 3. The external consult call is connected and the customer is placed on hold. The following options are available with agents during the external consult call:
     1. **Mute** – Mute the conversation.
