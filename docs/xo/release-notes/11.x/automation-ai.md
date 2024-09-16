@@ -19,7 +19,7 @@ Key updates:
 * Ability to transition to a specific node upon encountering an error.
 * Detailed error information is available in the service node response object.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md#instance-properties){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#instance-properties){:target="_blank"}
 
 <hr>
 
