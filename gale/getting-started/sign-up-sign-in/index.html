@@ -854,9 +854,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#failed-login-attempt" class="md-nav__link">
+  <a href="#failed-login-and-account-locking" class="md-nav__link">
     <span class="md-ellipsis">
-      Failed Login Attempt
+      Failed Login and Account Locking
     </span>
   </a>
   
@@ -2980,6 +2980,96 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Monitoring
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Monitoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/monitoring/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/monitoring/audit-logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audit Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3101,9 +3191,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#failed-login-attempt" class="md-nav__link">
+  <a href="#failed-login-and-account-locking" class="md-nav__link">
     <span class="md-ellipsis">
-      Failed Login Attempt
+      Failed Login and Account Locking
     </span>
   </a>
   
@@ -3381,15 +3471,18 @@ Please complete the email OTP verification to sign in successfully.</div>
 <p>Once you create an account, you need to add credits for computation hours to start using GALE's features.</p>
 </div>
 
-<h3 id="failed-login-attempt">Failed Login Attempt<a class="headerlink" href="#failed-login-attempt" title="Permanent link">&para;</a></h3>
-<p>If you enter the wrong password when using email sign-in, the system displays an <strong>Invalid Credential</strong> message and disables login.</p>
+<h3 id="failed-login-and-account-locking">Failed Login and Account Locking<a class="headerlink" href="#failed-login-and-account-locking" title="Permanent link">&para;</a></h3>
+<p>If you enter the wrong password when using email sign-in, the system displays an <strong>Invalid Credential</strong> message, preventing you from signing in to your account (of which you are the admin).</p>
 <p><a class="glightbox" href="../images/invalid-credentials.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/invalid-credentials.png" alt="invalid credentials" title="invalid credentials" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>You are allowed up to 5 attempts to enter the correct password and log in.</p>
+<p>You are allowed up to 5 attempts to retry the correct password and log in.</p>
 <p><a class="glightbox" href="../images/five-attempts.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>Exceeding the fifth failed login attempt locks your account for 30 minutes, after which you can retry signing in.</p>
+<p>Exceeding the fifth failed login attempt locks your account for 30 minutes, after which the account is unlocked automatically, and you can retry signing in.</p>
 <p><a class="glightbox" href="../images/account-locked.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/account-locked.png" alt="account locked" title="account locked" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>While your account is locked, you can try an alternative login method by clicking <strong>Login using another account</strong>. You are redirected to the following page to sign in with SSO or your third-party accounts.</p>
-<p><a class="glightbox" href="../images/login-using-another-account.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/login-using-another-account.png" alt="login using another account" title="login using another account" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>An alternative way is to request the <b>master admin</b> to unlock your account.</p>
+<p>When your account is locked, the status for you shows as "<b><i>Locked</i></b>" to all the admins who have added you to their account. This status update ensures that admins are aware of your restricted access and can unlock your account.</p>
+<p>If you are the admin and want to unlock a user linked to your account, click the <b><i>Unlock</i></b> button for the user on your <b>Settings</b> Console's <b>Users</b> page, as shown below.</p>
+<p><a class="glightbox" href="../getting-started/images/user-unlock.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../getting-started/images/user-unlock.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>When your account is locked, you can attempt to log in using an alternative method by clicking <strong>Login using another account</strong>. This action redirects you to a page where you can sign in via your default SSO service, such as Google, Windows, or LinkedIn.</p>
 <h3 id="reset-password">Reset Password<a class="headerlink" href="#reset-password" title="Permanent link">&para;</a></h3>
 <p>You can reset your password in the following scenarios:</p>
 <ul>
@@ -3413,6 +3506,7 @@ Please complete the email OTP verification to sign in successfully.</div>
 <a class="glightbox" href="../images/click-password-link-in-email.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;"></a></li>
 <li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
 <a class="glightbox" href="../images/enter-new-passsword.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;"></a></li></ol>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 If both the entries do not match, you cannot proceed.</div>

@@ -2843,6 +2843,96 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Monitoring
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Monitoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../settings/monitoring/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../settings/monitoring/audit-logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audit Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2921,10 +3011,10 @@
 <li>Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the agent.</li>
 </ul>
 <h2 id="using-variables-in-the-agent-flow">Using Variables in the Agent Flow<a class="headerlink" href="#using-variables-in-the-agent-flow" title="Permanent link">&para;</a></h2>
-<p>Once the input and output variables are defined, you can access these variables using the context object syntax, and use them throughout the flow:</p>
+<p>Once the input and output variables are defined, you can access these variables using the context object syntax and use them throughout the flow:</p>
 <ul>
-<li>Input variables are available immediately after the Start node. These variables can be accessed using the context object syntax: <code>context.steps.Start.inputVariable</code></li>
-<li>Output variables can be set in any node and are collected at the End node. For example, you can select a defined output variable in the End node and assign it the output of a GenAI node using the following context variable: <code>{{context.steps.GenAInode.output}}</code></li>
+<li>Input variables are available immediately after the Start node. These variables can be accessed using the following syntax: <code>context.steps.Start.inputVariable</code></li>
+<li>Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of a GenAI node using the following syntax: <code>{{context.steps.GenAInode.output}}</code></li>
 </ul>
 <h2 id="adding-inputoutput-variables">Adding Input/Output Variables<a class="headerlink" href="#adding-inputoutput-variables" title="Permanent link">&para;</a></h2>
 <p><strong>Steps to add input variables</strong>:</p>
@@ -2940,7 +3030,7 @@ Alternatively, you can click the <strong>Start</strong> node. The <strong>Manage
 <p><a class="glightbox" href="../images/enter-input-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;"></a></p>
 </li>
 <li>
-<p>In the <strong>Name(key)</strong> field, provide a name for the input variable. For example, Product_ID.</p>
+<p>In the <strong>Name (key)</strong> field, provide a name for the input variable. For example, Product_ID.</p>
 </li>
 <li>
 <p>In the <strong>Type</strong> field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
@@ -2965,17 +3055,17 @@ If you want to make the data type mandatory, then enable the <strong>Mandatory</
 <p>On the top of the canvas of the Agents page, click the <strong>Manage I/O</strong> button. The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
 </li>
 <li>
-<p>On the <strong>Output</strong> tab, click the <strong>+ Add output variable</strong> button. The <strong>Enter output variable</strong> dialog is displayed.<br />
+<p>On the <strong>Output</strong> tab, click the <strong>+ Add output variable</strong> button. The <strong>Enter output variable</strong> dialog is displayed.
 <a class="glightbox" href="../images/enter-output-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>In the <strong>Name(key)</strong> field, provide a name for the output variable.</p>
+<p>In the <strong>Name (key)</strong> field, provide a name for the output variable.</p>
 </li>
 <li>
 <p>In the <strong>Type</strong> field, select a data type from the drop-down list - String, Number, or Boolean.</p>
 </li>
 <li>
-<p>Click <strong>Save</strong>. </p>
+<p>Click <strong>Save</strong>.</p>
 <p>The output variable is displayed on the Output tab of the <strong>Manage Input &amp; Output</strong> dialog. </p>
 </li>
 </ol>
