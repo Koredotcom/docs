@@ -258,11 +258,11 @@ In addition to the basic agent role, add a new role as given below:
 2. Go to **Admin** > **People & Permissions** > **Roles / Permissions**.
 3. Click **Add Role** to create a new role.
 4. Give a distinctive name to the role; for example, KoreaiAA Agent.
-5. On the **Permission** tab, search for **Conversation** > **Transcription** > **View**, and add (select the box): 
-   
-   !!! note
+5. On the **Permission** tab, search for **Conversation** > **Transcription** > **View**, and add (select the box):  
 
-       The Conversation permission is available only in the CX3 license.
+    !!! note
+
+        The Conversation permission is available only in the CX3 license.
 
 6. Once finished, the **Assigned Permissions** view should look like this:  
 <img src="../images/assigned-permissions-22.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
@@ -289,12 +289,11 @@ Audiohook integration requires specific configuration values to support AgentAss
     5.1. **Channel** value should be both.
 
     5.2. The **Connection URI** format should be similar to  
+    wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it. 
 
-        wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it. 
+    !!! note
 
-        !!! note
-
-            This configuration can be done for a single bot present in Kore.ai Data Table.
+        This configuration can be done for a single bot present in Kore.ai Data Table.
 
 6. Get **sipuri=sip:&lt;sip-string>** from **AgentAssist** > **Voice** channel.  
 <img src="../images/sip-identifier-27.png" alt="sip-identifier" title="sip-identifier" style="border: 1px solid gray; zoom:80%;">
