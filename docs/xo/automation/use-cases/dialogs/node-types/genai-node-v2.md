@@ -35,6 +35,31 @@ Leveraging a generative AI model mitigates these scenarios by eliminating the ne
 
         The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
 
+Sample JavaScript
+
+```
+const jsonRepresentation = {
+  messages: [
+    {
+      role: "system",
+      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {"bot": "prompt to collect unfulfilled entities", "conv_status": "ongoing" or "ended", "entities": [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as 'ended' when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as 'ongoing'.`
+    },
+    ...Conversation_History,
+    {
+        "role": "user",
+        "content": `${User_Input}`
+    }
+  ],
+  model: "gpt-4",
+  temperature: 0.73,
+  max_tokens: 300,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0
+};
+
+context.payloadFields = jsonRepresentation;
+```
 
 **Support for Variables**
 
