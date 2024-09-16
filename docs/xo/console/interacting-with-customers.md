@@ -390,14 +390,14 @@ While interacting with a customer, if an agent needs to seek external consultati
     1. **Manual Dialer**:
 
         1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the **🕻** button to initiate an external outbound call.  
-        <img src="../images/dialer.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/dialer.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:50%;">
 
     2. **Contacts Tab**:
         1. Click the **Contacts** tab, enter the name of the contact in the search bar, and press **enter**.  
         <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
 
         2. The search results are displayed. Click the **🕻** button.  
-        <img src="../images/call-button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/call-button (2).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
 
         3. The phone number appears on the dialer tab. Click the **🕻** button to dial the call.  
         <img src="../images/contact-call.png" alt="Call Button Dialer" title="Call Button Dialer" style="border: 1px solid gray; zoom:60%;">
