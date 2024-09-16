@@ -189,22 +189,20 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 
 Replace “agentassist.kore.ai” with the domain where your AgentAssist is hosted. The “<code>x_metadata</code>” value equals the url<code>-encoded string</code> of JSON object.  
 
- 7.1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#step-2-get-genesys-oauth-id).
- 7.2. For the <strong>x_metadata</strong> value:
- 7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login).
-
-  7.2.2. Click <strong>Data</strong> > <strong>Data Tables,</strong> and copy the <strong>Data Table</strong> name:  
+    7.1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#step-2-get-genesys-oauth-id).
+    7.2. For the <strong>x_metadata</strong> value:
+    7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login).
+    7.2.2. Click <strong>Data</strong> > <strong>Data Tables,</strong> and copy the <strong>Data Table</strong> name:  
         <img src="../images/copying-data-table-name-17.png" alt="copying-data-table-name" title="copying-data-table-name" style="border: 1px solid gray; zoom:80%;">
 
-  7.2.3. Click <strong>Apps,</strong> and click one of the app names that has “read” access:  
+    7.2.3. Click <strong>Apps,</strong> and click one of the app names that has “read” access:  
         <img src="../images/click-an-app-name-18.png" alt="click-an-app-name" title="click-an-app-name" style="border: 1px solid gray; zoom:80%;">
 
-  7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
+    7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
         <img src="../images/copying-client-id-and-secret-values-19.png" alt="copying-client-id-and-secret-values" title="copying-client-id-and-secret-values" style="border: 1px solid gray; zoom:80%;">
+    7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
 
-  7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
-
-  7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
+    7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
 
             {
 
@@ -222,8 +220,7 @@ Replace “agentassist.kore.ai” with the domain where your AgentAssist is host
 
             Reference:  
             <img src="../images/java-script-mode-20.png" alt="java-script-mode" title="java-script-mode" style="border: 1px solid gray; zoom:80%;">
-
-  7.2.7. Copy the url-encoded string and paste it against the **x_metadata** value.
+    7.2.7. Copy the url-encoded string and paste it against the **x_metadata** value.
 
 8. Allow all permissions in **iFrame Sandbox Options** **and iFrame Feature/Permission Policy**.  
 
@@ -259,9 +256,9 @@ In addition to the basic agent role, add a new role as given below:
 3. Click **Add Role** to create a new role.
 4. Give a distinctive name to the role; for example, KoreaiAA Agent.
 5. On the **Permission** tab, search for **Conversation** > **Transcription** > **View**, and add (select the box): 
-!!! note
+   !!! note
 
-    The Conversation permission is available only in the CX3 license.
+       The Conversation permission is available only in the CX3 license.
 6. Once finished, the **Assigned Permissions** view should look like this:  
 <img src="../images/assigned-permissions-22.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
 
@@ -284,15 +281,15 @@ Audiohook integration requires specific configuration values to support AgentAss
 5. Open the **Audiohook,** and go to the **Configuration** tab.  
 <img src="../images/audiohook-configuration-26.png" alt="audiohook-configuration" title="audiohook-configuration" style="border: 1px solid gray; zoom:80%;">
 
- 5.1. **Channel** value should be both.
+    5.1. **Channel** value should be both.
 
- 5.2. The **Connection URI** format should be similar to  
+    5.2. The **Connection URI** format should be similar to  
 
-wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it. 
+        wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it. 
 
-!!! note
+        !!! note
 
-    This configuration can be done for a single bot present in Kore.ai Data Table.
+            This configuration can be done for a single bot present in Kore.ai Data Table.
 
 6. Get **sipuri=sip:&lt;sip-string>** from **AgentAssist** > **Voice** channel.  
 <img src="../images/sip-identifier-27.png" alt="sip-identifier" title="sip-identifier" style="border: 1px solid gray; zoom:80%;">
@@ -300,7 +297,7 @@ wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xx
 7. Use the following reference from **AgentAssist.kore.ai**, **Bot Channel** configuration page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
 <img src="../images/for-token-generation-28.png" alt="for-token-generation" title="for-token-generation" style="border: 1px solid gray; zoom:80%;">
 
- 7.1. Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token) to generate the token (token= &lt;token>.)
+    7.1. Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token) to generate the token (token= &lt;token>.)
 
 8. Add credentials in the **Credentials** tab. Use the **ClientID** and **ClientSecret** of the bot you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
 <img src="../images/credential-tab-29.png" alt="credential-tab" title="credential-tab" style="border: 1px solid gray; zoom:80%;">
@@ -324,8 +321,8 @@ When a call comes to a Genesys number, it passes through an architect flow. If y
 4. Click **Create Flow**. The final architect flow looks like the following screenshot:  
 <img src="../images/create-flow-33.png" alt="create-flow" title="create-flow" style="border: 1px solid gray; zoom:80%;">
 
-!!! notes
+    !!! notes
 
-    * Inside the **Transfer to ACD** node, select the **queue name** where you want to transfer the call.
-    * The **Transcription node** is optional, if you have already enabled Voice Transcription and Audio Monitoring in the queue level voice configuration.
-    * Architect flow is required as a mandatory step, as it directs the incoming call to the Genesys agent desktop.
+        * Inside the **Transfer to ACD** node, select the **queue name** where you want to transfer the call.
+        * The **Transcription node** is optional, if you have already enabled Voice Transcription and Audio Monitoring in the queue level voice configuration.
+        * Architect flow is required as a mandatory step, as it directs the incoming call to the Genesys agent desktop.
