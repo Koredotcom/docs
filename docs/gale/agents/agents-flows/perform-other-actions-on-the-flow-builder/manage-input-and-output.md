@@ -7,10 +7,10 @@ Agent flows in GALE allow you to define input and output variables, which become
 
 ## Using Variables in the Agent Flow
 
-Once the input and output variables are defined, you can access these variables using the context object syntax, and use them throughout the flow:
+Once the input and output variables are defined, you can access these variables using the context object syntax and use them throughout the flow:
 
-* Input variables are available immediately after the Start node. These variables can be accessed using the context object syntax: `context.steps.Start.inputVariable`
-* Output variables can be set in any node and are collected at the End node. For example, you can select a defined output variable in the End node and assign it the output of a GenAI node using the following context variable: `{{context.steps.GenAInode.output}}`
+* Input variables are available immediately after the Start node. These variables can be accessed using the following syntax: `context.steps.Start.inputVariable`
+* Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of a GenAI node using the following syntax: `{{context.steps.GenAInode.output}}`
 
 ## Adding Input/Output Variables 
 
@@ -50,7 +50,7 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 
 4. In the **Type** field, select a data type from the drop-down list - String, Number, or Boolean.
 
-5. Click **Save**. 
+5. Click **Save**.
 
     The output variable is displayed on the Output tab of the **Manage Input & Output** dialog. 
 
