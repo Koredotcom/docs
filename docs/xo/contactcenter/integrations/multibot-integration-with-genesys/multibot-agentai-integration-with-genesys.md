@@ -57,7 +57,7 @@ Create a Data Table to store bot credentials on the XO Platform.
     4.2. **Description** of the Data Table.
 
     4.3. **Columns** to be included in the data table. Click the “tick” mark to add multiple columns.  
-    <img src="../" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/adding-columns-2.png" alt="adding-columns" title="adding-columns" style="border: 1px solid gray; zoom:80%;">
 
     Add the following **case-sensitive** columns:
 
@@ -83,8 +83,10 @@ Create a Data Table to store bot credentials on the XO Platform.
      <img src="../images/create-new-app-3.png" alt="create-new-app" title="create-new-app" style="border: 1px solid gray; zoom:80%;">
 
      4.6.2. Select the **Read**, **Write**, and **Delete** permissions, as required.  
-!!! "Note"
-     You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:  
+
+    !!! note
+        
+        You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:  
      <img src="../images/new-app-4.png" alt="new-app" title="new-app" style="border: 1px solid gray; zoom:80%;">
 
     4.7. **Process Assignments** to let a process app access data in this table.
@@ -117,9 +119,8 @@ Set up necessary permissions and app assignments and insert bot-specific data in
             "AgentAssistWidgetURL": <Kore AgentAssist Widget URL>
         }
     }
-    ```
-
-<img src="../images/api-body-payload-structure-7.png" alt="api-body-payload-structure" title="api-body-payload-structure" style="border: 1px solid gray; zoom:80%;">
+    ```  
+    <img src="../images/api-body-payload-structure-7.png" alt="api-body-payload-structure" title="api-body-payload-structure" style="border: 1px solid gray; zoom:80%;">
 
 ## **Step 2: Get Genesys Oauth ID**
 
@@ -142,20 +143,21 @@ A Genesys OAuth ID is required to complete the URL formation for the Genesys int
 
 6. Add [https://agentassist.kore.ai/koreaiaa-genesys/](https://agentassist.kore.ai/koreaiaa-genesys/) in the _Authorized redirect URIs (one per line)_ section. Replace “agentassist.kore.ai” with the domain where your AgentAssist is hosted.
 7. Add the following list of scopes in the **Scope** section:
-* conversations
-* conversations:readonly
-* integrations
-* integrations:readonly
-* messaging
-* messaging-platform
-* messaging-platform:readonly
-* messaging:readonly
-* notifications
-* user-basic-info
-* web-chat
-* web-chat:readonly
 
-<img src="../images/redirect-uri-and-scope-11.png" alt="redirect-uri-and-scope" title="redirect-uri-and-scope" style="border: 1px solid gray; zoom:80%;">
+    * conversations
+    * conversations:readonly
+    * integrations
+    * integrations:readonly
+    * messaging
+    * messaging-platform
+    * messaging-platform:readonly
+    * messaging:readonly
+    * notifications
+    * user-basic-info
+    * web-chat
+    * web-chat:readonly
+
+    <img src="../images/redirect-uri-and-scope-11.png" alt="redirect-uri-and-scope" title="redirect-uri-and-scope" style="border: 1px solid gray; zoom:80%;">
 
 After saving the configuration, you will get the **Client Id** of the created OAuth client. Copy the ID and have it available for [Step 3](#step-3-create-an-interaction-widget-in-genesys-for-agentassist).
 
@@ -170,8 +172,7 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 <img src="../images/genesys-admin-integrations-12.png" alt="genesys-admin-integrations" title="genesys-admin-integrations" style="border: 1px solid gray; zoom:80%;">
 
 3. If you have not created an Interaction Widget for AgentAssist, install a new Interaction Widget by clicking the **Integrations** tab on the right side of the page.  
-<img src="../images/install-an-interaction-widget-13.png" alt="install-an-interaction-widget" title="install-an-interaction-widget" style="border: 1px solid gray; zoom:80%;">
-
+<img src="../images/install-an-interaction-widget-13.png" alt="install-an-interaction-widget" title="install-an-interaction-widget" style="border: 1px solid gray; zoom:80%;">   
 <img src="../images/new-interaction-widget-14.png" alt="new-interaction-widget" title="new-interaction-widget" style="border: 1px solid gray; zoom:80%;">
  
 4. Name the **Interaction Widget** with a meaningful name, such as KoreaiAA Interaction Widget.
@@ -188,22 +189,22 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 
 Replace “agentassist.kore.ai” with the domain where your AgentAssist is hosted. The “<code>x_metadata</code>” value equals the url<code>-encoded string</code> of JSON object.  
 
-    7.1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#step-2-get-genesys-oauth-id).
-    7.2. For the <strong>x_metadata</strong> value:
-        7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login).
+ 7.1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#step-2-get-genesys-oauth-id).
+ 7.2. For the <strong>x_metadata</strong> value:
+ 7.2.1. Sign in to [Kore botbuilder](https://bots.kore.ai/botbuilder/login).
 
-        7.2.2. Click <strong>Data</strong> > <strong>Data Tables,</strong> and copy the <strong>Data Table</strong> name:  
+  7.2.2. Click <strong>Data</strong> > <strong>Data Tables,</strong> and copy the <strong>Data Table</strong> name:  
         <img src="../images/copying-data-table-name-17.png" alt="copying-data-table-name" title="copying-data-table-name" style="border: 1px solid gray; zoom:80%;">
 
-        7.2.3. Click <strong>Apps,</strong> and click one of the app names that has “read” access:  
+  7.2.3. Click <strong>Apps,</strong> and click one of the app names that has “read” access:  
         <img src="../images/click-an-app-name-18.png" alt="click-an-app-name" title="click-an-app-name" style="border: 1px solid gray; zoom:80%;">
 
-        7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
+  7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
         <img src="../images/copying-client-id-and-secret-values-19.png" alt="copying-client-id-and-secret-values" title="copying-client-id-and-secret-values" style="border: 1px solid gray; zoom:80%;">
 
-        7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
+  7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token).
 
-        7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
+  7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
 
             {
 
@@ -222,7 +223,7 @@ Replace “agentassist.kore.ai” with the domain where your AgentAssist is host
             Reference:  
             <img src="../images/java-script-mode-20.png" alt="java-script-mode" title="java-script-mode" style="border: 1px solid gray; zoom:80%;">
 
-        7.2.7. Copy the url-encoded string and paste it against the **x_metadata** value.
+  7.2.7. Copy the url-encoded string and paste it against the **x_metadata** value.
 
 8. Allow all permissions in **iFrame Sandbox Options** **and iFrame Feature/Permission Policy**.  
 
@@ -258,8 +259,9 @@ In addition to the basic agent role, add a new role as given below:
 3. Click **Add Role** to create a new role.
 4. Give a distinctive name to the role; for example, KoreaiAA Agent.
 5. On the **Permission** tab, search for **Conversation** > **Transcription** > **View**, and add (select the box): 
-!!! "Note"
-     The Conversation permission is available only in the CX3 license.
+!!! note
+
+    The Conversation permission is available only in the CX3 license.
 6. Once finished, the **Assigned Permissions** view should look like this:  
 <img src="../images/assigned-permissions-22.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
 
@@ -270,14 +272,13 @@ In addition to the basic agent role, add a new role as given below:
 The final step is to install Audiohook for voice streaming, if using Kore-managed Transcriptions.
 
 1. Sign in to **Genesys Cloud**.
-2. Go to **Admin **>** Integrations **>** Integrations**.
+2. Go to **Admin** > **Integrations** > **Integrations**.
 3. Enter “audiohook” in the search bar.  
 <img src="../images/search-audiohook-23.png" alt="search-audiohook" title="search-audiohook" style="border: 1px solid gray; zoom:80%;">  
 Audiohook integration requires specific configuration values to support AgentAssist configuration.
 
 4. Install a new audiohook app by clicking the **Integrations** button on the top-right corner.  
 <img src="../images/install-new-audiohook-24.png" alt="install-new-audiohook" title="install-new-audiohook" style="border: 1px solid gray; zoom:80%;">  
-
 <img src="../images/new-audiohook-25.png" alt="new-audiohook" title="new-audiohook" style="border: 1px solid gray; zoom:80%;">
 
 5. Open the **Audiohook,** and go to the **Configuration** tab.  
@@ -289,7 +290,8 @@ Audiohook integration requires specific configuration values to support AgentAss
 
 wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true), but add “multiBot=true” parameter to it. 
 
-!!! "Note"
+!!! note
+
     This configuration can be done for a single bot present in Kore.ai Data Table.
 
 6. Get **sipuri=sip:&lt;sip-string>** from **AgentAssist** > **Voice** channel.  
@@ -299,7 +301,7 @@ wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xx
 <img src="../images/for-token-generation-28.png" alt="for-token-generation" title="for-token-generation" style="border: 1px solid gray; zoom:80%;">
 
  7.1. Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token) to generate the token (token= &lt;token>.)
- 
+
 8. Add credentials in the **Credentials** tab. Use the **ClientID** and **ClientSecret** of the bot you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
 <img src="../images/credential-tab-29.png" alt="credential-tab" title="credential-tab" style="border: 1px solid gray; zoom:80%;">
 
@@ -313,8 +315,7 @@ When a call comes to a Genesys number, it passes through an architect flow. If y
 
 1. Sign in to **Genesys Cloud**.
 2. Go to **Admin** > **Architect** > **Architect**.  
-<img src="../images/genesys-architect-30.png" alt="genesys-architect" title="genesys-architect" style="border: 1px solid gray; zoom:80%;">
-
+<img src="../images/genesys-architect-30.png" alt="genesys-architect" title="genesys-architect" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/genesys-architect-31.png" alt="genesys-architect" title="genesys-architect" style="border: 1px solid gray; zoom:80%;">
 
 3. Click the **+Add** button to create an **Inbound Call** **Flow**.  
@@ -323,8 +324,8 @@ When a call comes to a Genesys number, it passes through an architect flow. If y
 4. Click **Create Flow**. The final architect flow looks like the following screenshot:  
 <img src="../images/create-flow-33.png" alt="create-flow" title="create-flow" style="border: 1px solid gray; zoom:80%;">
 
-!!! "Notes"
+!!! notes
 
-* Inside the **Transfer to ACD** node, select the **queue name** where you want to transfer the call.
-* The **Transcription node** is optional, if you have already enabled Voice Transcription and Audio Monitoring in the queue level voice configuration.
-* Architect flow is required as a mandatory step, as it directs the incoming call to the Genesys agent desktop.
+    * Inside the **Transfer to ACD** node, select the **queue name** where you want to transfer the call.
+    * The **Transcription node** is optional, if you have already enabled Voice Transcription and Audio Monitoring in the queue level voice configuration.
+    * Architect flow is required as a mandatory step, as it directs the incoming call to the Genesys agent desktop.
