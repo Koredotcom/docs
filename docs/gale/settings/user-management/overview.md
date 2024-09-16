@@ -21,13 +21,7 @@ It also supports various administrative features influenced by the roles and per
 
 For example, a *Master Admin* role is assigned by default to the account owner. Similarly, an *Agent Admin* role is assigned to a user who creates an agent and has complete control over it.
 
-**Users Management** operates on two distinct levels discussed below:
-
-* **Account level**: At the account level, administrators can manage users with a broader scope, encompassing the entire GALE account. This includes responsibilities such as user registration, access control, and permissions applicable across various applications within the GALE platform. [Roles Management](./role-management.md/#account-and-agent-level-features){:target="_blank"}.
-
-* **Agent level**: User management becomes more detailed and specific at the application level, concentrating on individual applications within the GALE platform. 
-
-    The owner of each respective application holds the authority to extend invitations to any number of individual users, customizing their capabilities in alignment with the unique requirements of each application. For more information about setting app-level permissions, see [Roles Management](./role-management.md/#account-and-agent-level-features){:target="_blank"}.
+**Users Management** operates on two distinct levels discussed [here](../settings-overview.md/#levels-of-users-management){:target="_blank"}.
 
 Once you invite a user or import users data, you can change their roles, assign/unassign permissions, delete users. and do more using the [Roles Management](./role-management.md){:target="_blank"} and [Users](./users.md){:target="_blank"} features on the **Settings** console.
 
