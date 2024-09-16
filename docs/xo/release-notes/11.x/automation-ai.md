@@ -2,6 +2,27 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.5.1 September 14, 2024
+
+<u> Patch Release </u>
+
+This update include minor enhancement and bug fixes. THe key enhancement included in this release is summarized below.
+
+### Dialog Builder
+#### Error Handling for Service Nodes
+
+Service Node’s error handling capability is enhanced to provide greater control over non-timeout error scenarios. It allows platform users to customize dialog execution when API calls fail for reasons other than timeouts.
+
+Key updates:
+
+* A new option to continue dialog execution after a service call failure.
+* Ability to transition to a specific node upon encountering an error.
+* Detailed error information is available in the service node response object.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#instance-properties){:target="_blank"}
+
+<hr>
+
 ## v11.5.0 September 01, 2024
 
 <u> Patch Release </u>

@@ -20,14 +20,15 @@ Once the input and output variables are defined, you can access these variables 
 Alternatively, you can click the **Start** node. The **Manage Input & Output** dialog is displayed.  
 <img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
 
-1. On the **Input** tab, click the **+ Add input variable** button.
+2. On the **Input** tab, click the **+ Add input variable** button.
 
     The **Enter input variable** dialog is displayed.
 
     <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;">
 
-1. In the **Name (key)** field, provide a name for the input variable. For example, Product_ID.
-2. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
+3. In the **Name (key)** field, provide a name for the input variable. For example, Product_ID.
+
+4. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
 If you want to make the data type mandatory, then enable the **Mandatory** toggle.
 
     *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears. You can enable the **Default value** field to set a default value for the input variable.
@@ -36,7 +37,7 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
                           
          <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
  
-3. Click **Save**. The input variable is displayed on the Input tab of the **Manage Input & Output** dialog.
+5. Click **Save**. The input variable is displayed on the Input tab of the **Manage Input & Output** dialog.
 
 
 **Steps to add output variables**:

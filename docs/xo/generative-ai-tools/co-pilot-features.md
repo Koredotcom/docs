@@ -131,182 +131,41 @@ Follow these steps:
 
 	
 
-## Product and Supported Features
-
-Select the product to view the supported features.
 
 
-=== "Automation AI"
 
-    * Automatic Dialog Generation
-    * Conversation Test Case Suggestions
-    * Conversation Summary
-    * NLP Batch Test Case Suggestions
-    * Training Utterance Suggestions
+## Model and Supported Features
 
-=== "Search AI"
-
-    * Generating Similar Answer Suggestions
-
-=== "Agent AI"
-
-    * Generating Opposite Utterance Suggestions
-    * Generating Similar Utterance Suggestions
-
-
-## Model and Feature Support Matrix
-
-The following table displays the Co-Pilot features and the supported models.
+The following table displays the features and the supported models.
 
 
 (✅ Supported | ❌ Not supported)
 
+=== "Automation AI"
 
-<table>
-  <tr>
-    <td><strong>Model</strong></td>
-    <td>Automatic Dialog Generation</td>
-    <td>Conversation Test Case Suggestions</td>
-    <td>Conversation Summary</td>
-    <td>Generating Opposite Utterance Suggestions</td>
-    <td>Generating Similar Answer Suggestions</td>
-    <td>Generating Similar Utterance Suggestions</td>
-    <td>NLP Batch Test Case Suggestions</td>
-    <td>Training Utterance Suggestions</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Azure OpenAI – GPT 4 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-   <tr>
-    <td>Azure OpenAI – GPT 4o</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 3.5 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>OpenAI – GPT 4</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-   <tr>
-    <td>OpenAI – GPT 4 Turbo</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-   <tr>
-    <td>OpenAI – GPT 4o</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude Instant</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Anthropic – Claude</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Custom LLM</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
-  </tr>
-  <tr>
-    <td>Kore.ai XO GPT</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✅</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-  </tr>
-</table>
+    |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
+    |:----:|:----:|:----:|:----:|:----:|:----:|
+    |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|❌|✅|✅|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|❌|✅|✅|
+    |Anthropic – <br>Claude and Claude Instant|✅|✅|❌|✅|✅|
+    |Custom LLM|✅|✅|✅|✅|✅|
+    |Kore.ai XO GPT|❌|❌|✅|❌|❌|
+
+=== "Search AI"
+
+    | Models  | Generating Similar Answer Suggestions |
+    |-------------------------------|:----:|
+    | Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4| ✅|
+    | OpenAI – <br>GPT 3.5 Turbo and GPT 4| ✅|
+
+
+=== "Agent AI"
+
+    |Models|Generating Opposite Utterance Suggestions|Generating Similar Utterance Suggestions|
+    |------|:----:|:----:|
+    |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|
+<hr>
 
 
 
