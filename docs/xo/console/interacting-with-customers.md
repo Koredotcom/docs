@@ -503,7 +503,6 @@ Administrators can configure the snooze functionality from the [Agent Settings](
 Steps to snooze a conversation:
 
 1. Click the **Snooze** button at the top of the live interaction window.  
-
     <img src="../images/snooze-button.png" alt="Snooze Button" title="Snooze Button" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
