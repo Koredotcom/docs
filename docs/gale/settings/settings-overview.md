@@ -5,10 +5,10 @@ GALE’s **Settings** console is a centralized management interface that provide
 * Users
 * [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
 * [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
-* Integrations
-* Manage Guardrails 
+* [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
+* [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
 * Monitoring 
-  * Audit Logs
+  * [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 
 ## Levels of Users Management 
 
