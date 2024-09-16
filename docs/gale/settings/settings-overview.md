@@ -8,7 +8,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 * [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 * [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
 * Monitoring 
-  * [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
+   * [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 
 ## Levels of Users Management 
 
