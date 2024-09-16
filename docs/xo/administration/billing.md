@@ -1,6 +1,6 @@
 # Billing
 
-The billing section has been added to the Bot Admin Console from ver 7.0, to enable the Bot Admins to view and track their Invoices and plan details.
+The billing section lets the Bot Admins view and track their Invoices and plan details.
 
 !!! Note
 
@@ -19,25 +19,35 @@ The Billing sessions are calculated based on
     * Every alert delivered to a user will be counted as an Alert session. For example – If the user has set up to receive a sales report every 8 hours. In a day this user would consume 3 alert sessions.
 
 
-### Invoices
+### Orders & Invoices
 
-The Invoice section displays the Invoice history listing the Id, validity period and amount paid.
+This section displays the history of Orders and Invoices and includes the following fields:
 
-You have the option to download the Invoice. Hover over the Invoice you want to download to see the download icon.
+* Order ID
+* Order Date
+* Plan Name
+* Order Type
+* Order Status
+* Amount
+* Comments
+* Payment Method
+* Invoice
+
+You have the option to download the Invoice from the invoice field.
 
 <img src="../images/billing-img1.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ### Plan & Usage
 
-The Plan & Usage section lists all the published Bots in your account along with the Plan under which they were published, the validity period, and the usage details.
-
-Information icons to indicate any plan changes like downgrade messages and expiring plans are also displayed.
+The Plan & Usage section displays all the Bots in your account, along with their status and balance.
+An **information** icon highlights plan changes, such as downgrade notifications and expiring plans.
+Click the **Ellipses** icon to change the Bot Owner.
 
 <img src="../images/billing-img2.png" alt="Plan and Usage information" title="Plan and Usage information" style="border: 1px solid gray;zoom:70%;"/>
 
-
-**Manage** option displays the current plan based eligibility and the usage details. Note that there is no renewal date for free bots.
+Hover over a line item to view the **Manage** option.
+The **Manage** option displays the current plan based on eligibility and usage details. You can change the plan, add funds, and request for extension of your plan from here.
 
 <img src="../images/billing-img3.png" alt="Plan based eligibility and usage details" title="Plan based eligibility and usage details" style="border: 1px solid gray;zoom:70%;"/>
 
