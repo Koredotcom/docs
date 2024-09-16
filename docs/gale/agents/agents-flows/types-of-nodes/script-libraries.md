@@ -4,7 +4,7 @@ The following pre-existing libraries can be selected for use in the script edito
 
 * [json](#json)
 * [enum](#enum)
-* **Numerical Libraries**: [numpy](#numpy), [pandas](#pandas), [collections](#collections), [math](#math), [cmath](#cmath), [statistics](#statistics), and [random](#statistics).
+* **Numerical Libraries**: [numPy](#numpy), [pandas](#pandas), [collections](#collections), [math](#math), [cmath](#cmath), [statistics](#statistics), and [random](#statistics).
 * **String Manipulation Libraries**: [re](#re) and [textwrap](#textwrap).
 * **Date-time Libraries**: [datetime](#datetime), [time](#time), and [calendar](#calendar).
 * [Itertools](#itertools)
@@ -69,7 +69,7 @@ import itertools
 ```
 ## Numerical Libraries
 
-### numpy
+### numPy
 ```
 "numpy": [
     "DataSource",
