@@ -85,7 +85,6 @@ Use the Instance Properties to define any user tags that you want to set.
 
  <img src="../images/search_ai_instance_properties.png" alt="instance_properties" title="instance_properties" style="border:1px solid gray;zoom:70%;">
  
-
 ### Connections Properties
 
 !!! Note

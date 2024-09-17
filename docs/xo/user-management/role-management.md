@@ -1176,9 +1176,7 @@ Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>No
    </td>
-   <td>Yes
-
-   </td>
+   
 </tr>
 </table>
 
@@ -2797,10 +2795,6 @@ Access to create and assign interactions for audit to other users
 Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>No
-
-   <br>
-Allow user to Access and Manage AgentAI Module
-
    </td>
 </tr>
 </table>

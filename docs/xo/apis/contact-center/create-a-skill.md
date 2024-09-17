@@ -21,13 +21,11 @@ To add a skill with the given Stream Id and Skill Group ID.
 
 ```
 curl --location --request POST \
-     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills'
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills' \
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '
     {
-
-
     "name": "test",
     "description": "test",
     "agents": [

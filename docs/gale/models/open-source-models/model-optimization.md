@@ -22,7 +22,7 @@ Key advantages of using CTranslate2:
 
 
 * **Optimized Computation**: Supports CPU and GPU inference, making it flexible for various deployment environments. Utilizes optimized kernels and quantization techniques to speed up inference without significant loss in accuracy.
-* **Quantization**: Offers 8-bit and 16-bit integer quantization, reducing the model size and enhancing inference speed while maintaining accuracy through post-training quantization. (Supported Quantization: int8, int8_float32, int8_float16, int8_bfloat16, int16, float16 (default), bfloat16, and Float32)
+* **Quantization**: Offers int8_float16 quantization, reducing the model size and enhancing inference speed while maintaining accuracy through post-training quantization. 
 * **Multi-threading**:  Efficiently uses multi-threading for multi-core CPUs, handling batch processing to improve throughput for large-scale applications.
 * **Compatibility**: Supports models from PyTorch and TensorFlow, facilitating easy integration into existing workflows.
 
@@ -41,12 +41,8 @@ Key advantages of using vLLM:
 * **Parallelism**: Supports model and data parallelism to distribute computational load across multiple GPUs or nodes, managing communication overhead efficiently. Efficiently manages communication overhead between different parts of the model.
 * **Layer-wise Adaptive Precision**: Adjusts computation precision layer by layer, using mixed-precision training and inference to enhance performance while maintaining accuracy.
 * **Advanced Caching Mechanisms**: Adjusts computation precision layer by layer, using mixed-precision training and inference to enhance performance while maintaining accuracy.
+* **Quantization**: Supports AWQ (Activation-Weighted Quantization) which lowers the precision of most weights and activations but preserves a small percentage of important weights. This approach minimizes performance loss, enabling models to run in 4-bit precision without accuracy degradation.
 
-Supported Quantization: float16 (default), bfloat16, and Float32.
-
-!!! note
-
-    The T4 machine does not support bfloat16.
 
 [Learn more](https://docs.vllm.ai/en/stable/index.html).
 
