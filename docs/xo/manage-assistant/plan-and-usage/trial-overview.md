@@ -1,6 +1,6 @@
 
 # Trial Overview
-
+Our trial program allows users to experience the full capabilities of our enterprise software solutions before committing to a subscription. We offer trials for Automation AI and Contact Center AI, with options to explore Agent AI and Search AI features. This document outlines the available trials, their durations, features, and important considerations to help users make an informed decision.
 
 ## Product Options
 
