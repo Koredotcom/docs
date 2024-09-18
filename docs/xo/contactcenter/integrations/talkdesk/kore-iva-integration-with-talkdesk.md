@@ -38,7 +38,7 @@ This section explains the configuration steps needed to integrate Kore IVA integ
 
 ### Step 1: Create and attach a Flow with a Phone Number
 
-A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Know more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
+A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Learn more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
 <img src="../images/flows-and-channels-phone-number-2.png" alt="flows-and-channels-phone-number" title="flows-and-channels-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 **Note**: This phone number is encrypted and used in WSS URL in Audio streaming.
