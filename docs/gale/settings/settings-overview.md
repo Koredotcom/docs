@@ -9,7 +9,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
 6. Monitoring
 
-   - [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
+- [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 
 ## Levels of Users Management 
 
