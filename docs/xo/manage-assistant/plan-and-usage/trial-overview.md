@@ -5,14 +5,8 @@
 ## Product Options
 
 * Automation AI and Contact Center AI: Click **Try Now** to start a trial.
-* Agent AI and Search AI: Click **Contact Us** to express interest.
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
+* Agent AI and Search AI: Click **Contact Us** to express interest.  
+<img src="../images/trial-overview.png" alt="trial" title="trial" style="border:1px solid gray; zoom:70%;">
 
 ## Trial Details
 
@@ -46,7 +40,6 @@
         Automation AI subscription (trial or paid) includes basic SearchAI features. Full functionality requires the Advanced RAG Add-on.
 
   
-
 
 ## Trial Expiration
 
