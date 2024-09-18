@@ -6,7 +6,9 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This update includes bug fixes.
+### Advanced Content Extraction from Web Pages
+
+With this release, Search AI introduces advanced support for extracting content from images and tables embedded in web pages. Using advanced extraction technologies, Search AI can now analyze and extract text from image files and complex, structured tables, providing a more comprehensive approach to processing web-based content. This enhancement significantly enhances the application’s ability to index and search diverse content formats.
 
 <hr>
 
