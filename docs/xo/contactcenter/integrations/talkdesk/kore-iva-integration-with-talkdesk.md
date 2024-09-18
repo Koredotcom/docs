@@ -92,7 +92,9 @@ On Agent Escalation, Kore.ai creates variables that are populated to **Ring Grou
 
 <img src="../images/agent-escalation-node-preferences-ring-group-6.png" alt="agent-escalation-node-preferences-ring-group" title="agent-escalation-node-preferences-ring-group" style="border: 1px solid gray; zoom:80%;">
 
-**Note**: Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
+!!! note
+
+    Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
 
 ### Step 5: Testing the Studio Flow
 
