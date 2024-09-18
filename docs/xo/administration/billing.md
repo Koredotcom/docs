@@ -15,21 +15,12 @@ The Billing sessions are calculated based on
 
 ### Orders & Invoices
 
-This section displays the history of Orders and Invoices and includes the following fields:
+This section displays the history of Orders and Invoices and includes the fields as shown in the image:
 
-* Order ID
-* Order Date
-* Plan Name
-* Order Type
-* Order Status
-* Amount
-* Comments
-* Payment Method
-* Invoice
+<img src="../images/billing-img1.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
 
 You have the option to download the Invoice from the invoice field.
 
-<img src="../images/billing-img1.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
 
 !!! Note
 
