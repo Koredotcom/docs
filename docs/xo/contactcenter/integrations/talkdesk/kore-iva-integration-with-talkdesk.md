@@ -47,7 +47,7 @@ A Flow is a sequential process to help you define the end-to-end customer experi
 
 When a customer calls the Talkdesk phone number, the audio stream is directed to audiosocket and a call is initiated to SmartAssist bot based on the number retrieved from the URL. The audio is streamed bidirectionally between the Kore bot and the Talkdesk end user.
 
-Create a WSS URL with botID, token ID, and phone number used in the Experience Flow:
+Create a WSS URL with botID, token ID, and phone number used in the Flow:
 
 wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzL
 TFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-JgCsxnCCXlpGfUjw&botId=st-92bbcxxx-f5c3-5ea6-ab5e-d7ebea8xxxxx&accountId=xxxxxbef6ed51db7e930d75c&agentassist=false
