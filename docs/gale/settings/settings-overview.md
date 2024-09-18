@@ -7,7 +7,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
-6. Monitoring
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}
 
 - [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 
@@ -108,7 +108,7 @@ The following modules and features are supported on the Settings Console:
   <tr>
    <td><b>Users Management</b></td>
    <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, agents, and models.</p>
-<p>Manage user settings for AD sync, profile visibility and configuration, self-signup for enterprise users, and email notifications to users.</p></td>
+<p>Manage user settings for AD sync, profile visibility and configuration, and email notifications to users.</p></td>
 <td><p><strong>Users</strong></p>
 <ul>
 <li>All users across your enterprise network accounts are listed here.</li> 
@@ -139,7 +139,6 @@ The following modules and features are supported on the Settings Console:
 <li><strong>Active Directory</strong>: Configure and connect your organization's AD to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across GALE. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Self sign up for enterprise users</strong>: Configure if new users from your domain can request to join this account.</li>
 <li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
 </li>
 </ul>
