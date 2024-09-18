@@ -33,22 +33,22 @@ The dashboard displays user counts by status:
 
 It also shows detailed user information, including name, email, role, and status. For information on default system roles, click [here](../user-management/role-management.md/#system-defined-roles){:target="_blank"}.
 
-### Add a New User
+## Add a New User
 
 The  **Settings** Console provides two ways to add a new user to the system:
 
 * Email invitation
 * Import _.txt_ or _.csv_ file with user information in the predefined format.
 
-#### Invite (Email Invitation)
+### Invite (Email Invitation)
 
 Click [here](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"} to see the step-by-step instructions on how to add a user via email invitation.
 
-#### Resend Invite
+### Resend Invite
 
 Invitations expire after 15 days. You can send a new email invitation to the user. [Learn more](../../getting-started/sign-up-sign-in.md/#resend-email-invitation){:target="_blank"}.
 
-#### Import (Bulk Import)
+### Import (Bulk Import)
 
 The import feature allows administrators to add multiple users at once using .txt or .csv files. To ensure compatibility, download the sample CSV file, add your user details to this file, and upload the file.
 
@@ -65,7 +65,7 @@ The import feature allows administrators to add multiple users at once using .tx
 * Once an entry in the file is validated, an email request is sent out to the user to activate their account.
 * If a user is already active (joined admin’s account), the email invitation is not sent.
 
-##### Import User Data File
+#### Import User Data File
 
 The steps mentioned below, allow you to import users' data from a designated file into GALE.
 
@@ -135,7 +135,7 @@ Once you know the cause, you can retry importing the corrected user data.
 The system cancels the import for data that fails due to validation errors, such as an incorrect email address. A window is displayed showing the import status and reason after the import is canceled.
 <img src="../images/import-canceled.png" alt="import canceled" title="import canceled" style="border: 1px solid gray; zoom:75%;">
 
-##### Import History
+#### Import History
 
 Click **Import History** in the **Import Users** window to view and analyze the import history of users in your account.
 <img src="../images/click-import-history.png" alt="click import history" title="click import history" style="border: 1px solid gray; zoom:75%;">
@@ -143,7 +143,7 @@ Click **Import History** in the **Import Users** window to view and analyze the 
 The following window is displayed with the import date and time, the importing user, and the summary of successful and failed imports.
 <img src="../images/import-history.png" alt="import history" title="import history" style="border: 1px solid gray; zoom:75%;">
 
-### Delete a User/Bulk Delete
+## Delete a User/Bulk Delete
 
 The **Delete** feature removes a user you’re managing from your GALE account.
 
@@ -184,7 +184,7 @@ When a user's account and role assignments are permanently deleted, the user is 
 <p>Using <b>Delete</b> removes the user permanently.</p>
 </div>
 
-### Search User 
+## Search User 
 
 Use the search field to find users by name:
 
@@ -199,7 +199,7 @@ All the matching results are displayed.
 The following message is displayed if the user does not exist.
 <img src="../images/user-does-not-exist.png" alt="user does not exist" title="user does not exist" style="border: 1px solid gray; zoom:75%;">
 
-### Unlock a Locked User
+## Unlock a Locked User
 
 Locked users cannot access their accounts without unlocking them on the **Settings** console. 
 
@@ -214,7 +214,7 @@ Locked users cannot access their accounts without unlocking them on the **Settin
 
 The user’s account is unlocked successfully, and the status changes to _Active_.
 
-### Change User Role
+## Change User Role
 
 On the **Users** dashboard, you can change the account-level role for one or more users. Only the role allowed for the user type (admin or account) can be assigned. 
 
@@ -222,7 +222,7 @@ Changing the user role automatically assigns the designated permissions and acce
 
 To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
-#### Bulk Role Change
+### Bulk Role Change
 
 You can change and assign the same role to multiple users. However, to assign different roles, individual role changes must be made, as discussed in the previous section.
 
