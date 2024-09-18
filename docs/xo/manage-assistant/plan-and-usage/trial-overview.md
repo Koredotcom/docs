@@ -1,18 +1,12 @@
 
 # Trial Overview
-
+Our trial program allows users to experience the full capabilities of our enterprise software solutions before committing to a subscription. We offer trials for Automation AI and Contact Center AI, with options to explore Agent AI and Search AI features. This document outlines the available trials, their durations, features, and important considerations to help users make an informed decision.
 
 ## Product Options
 
 * Automation AI and Contact Center AI: Click **Try Now** to start a trial.
-* Agent AI and Search AI: Click **Contact Us** to express interest.
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
+* Agent AI and Search AI: Click **Contact Us** to express interest.  
+<img src="../images/trial-overview.png" alt="trial" title="trial" style="border:1px solid gray; zoom:70%;">
 
 ## Trial Details
 
@@ -46,7 +40,6 @@
         Automation AI subscription (trial or paid) includes basic SearchAI features. Full functionality requires the Advanced RAG Add-on.
 
   
-
 
 ## Trial Expiration
 
