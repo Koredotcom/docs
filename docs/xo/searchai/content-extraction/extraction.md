@@ -34,33 +34,45 @@ You can also use the logical **AND operator** to apply multiple rules to filter 
 
 **Extraction Model**: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. We currently support the following extraction models.
 
-**Text Extraction Model**
+### **Text Extraction Model**
 
 The Text Extraction Model combines natural language processing (NLP) and machine learning techniques. It is based on the concept of tokenization, where the text is segmented into smaller units. The model undergoes training to identify and extract the most suitable chunks relevant to the search queries.
 
-**Configuration**: Use the **chunk size** field to define the size of a single chunk. This field can help optimize the relevance of the content retrieved for answer generation. Choose the value of this field depending on various factors, like the structure and type of content, type of expected user queries, type of embedding models used, etc.
+**Configuration**: Use the **chunk size** field  to define the size of a single chunk. This field can help optimize the relevance of the content retrieved for answer generation. Choose the value of this field depending on various factors, like the structure and type of content, type of expected user queries, type of embedding models used, etc. 
 
 * When **Chunk Size** is set to **pages**, every page is treated as a single chunk. 
 * When **Chunk Size** is set to **Chunk Tokens**, chunks are prepared using the following two parameters:
-    *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. A smaller chunk will result in a larger number of chunks and similarly, a larger chunk will result in a lesser number of chunks. An optimal  
+    *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. The optimal number depends on the nature of the content. Smaller chunks might be used for detailed, granular tasks, whereas larger chunks might be necessary for understanding context​​.
     * **Chunk Overlap**: Number of tokens that should overlap between two consecutive chunks.
 
-**Layout Aware Extraction (BETA)**
+### **Layout Aware Extraction (BETA)**
+
 Layout-aware chunk extraction is a strategy used to extract data by considering the content's layout and structure. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. Configuring the strategy according to specific layout requirements makes it possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes. 
 
 The layout-aware extraction method identifies objects in documents by combining OCR technology, layout detection models, and layout awareness rules. This approach improves SearchAssist's ability to comprehend tables, graphs, and charts in documents and generate answers using this information.
 
-**Configuration**: Choose the appropriate **template** for content extraction. Use examples to customize the content format according to the template for optimum extraction results.
+**Configuration**: Choose the appropriate **template** for content extraction. Use examples to customize the content format according to the template for optimum extraction results. 
+
 * **General:** Use the **General** template to extract content from **complex PDFs and docx** files, including tables and images. 
-* **Table**: Use the **Table** template to extract content and tables from HTML pages.
 
 ![Layout Aware](../images/layout-aware-templates.png "Layout Aware Templates")
-Configure the strategy as per your needs and click the **Save** button. By default, as soon as a strategy is created, it is automatically enabled. 
+Configure the strategy as per your needs and click the **Save** button. 
 
-Configure the strategy according to your needs and click the Save button. As soon as a strategy is created, it is automatically enabled by default.
+### **Advanced HTML Extraction**
+
+This strategy is specially designed to extract data from tables and images in HTML files along with textual content. 
+
+**Configuration**: 
+
+**Chunk Method Template**: Choose the appropriate template for content extraction.
+
+* **General**: This template identifies different components and classes within an HTML document and generates chunks based on them. Tables and images present between the content are also extracted and stored as chunks, which are then used to present answers to users.
+* **Token-Based:** This template generates chunks based on the token size configuration. Any images present between the content are also extracted and stored in the chunk.
+* **Tokens**:  The number of tokens to be present in each chunk. This value can vary between 100 and 1000 and the default value is 300. 
+* **Chunk Overlap**: The number of tokens that can overlap between adjacent chunks. This field can take values between 10 and 100. 
 
 !!! note
-    Creating a strategy enables it but does not automatically initiate the extraction process. Use the Train option to initiate the extraction process.  
+    A strategy is automatically enabled as soon as it is created. However, creating a strategy does not automatically initiate the extraction process. Use the **Train** option to initiate the extraction process.   
 
 ## Deleting a Strategy
 
