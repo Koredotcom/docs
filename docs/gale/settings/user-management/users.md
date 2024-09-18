@@ -84,7 +84,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
 
 * Click and download the sample ._csv_ file for reference.
 
-<img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
 
 * The fields are predefined in the sample file, and the data requirements are shown below:
 <img src="../images/prefefined-fields.png" alt="predefined fields" title="predefined fields" style="border: 1px solid gray; zoom:75%;">
@@ -171,7 +171,7 @@ The **Delete** feature removes a user you’re managing from your GALE account.
 
 2. Click **Remove** in the **Remove users** window.
 
-<img src="../images/click-remove.png" alt="click remove" title="click remove" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/click-remove.png" alt="click remove" title="click remove" style="border: 1px solid gray; zoom:75%;">
 
 When a user's account and role assignments are permanently deleted, the user is removed from the list, and the **Total Users** and **Active Users** counts on the dashboard are updated accordingly.
 
