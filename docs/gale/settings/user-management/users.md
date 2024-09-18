@@ -28,6 +28,7 @@ The dashboard displays user counts by status:
 * **Active**: Users with active accounts who can interact with other GALE users.
 * **Inactive**: Users invited by the admin but who have yet to join or accept the invitation.
 * **Locked**: Users who have exceeded 5 failed login attempts and their accounts have been locked.
+
 <img src="../images/users-count.png" alt="users count" title="users count" style="border: 1px solid gray; zoom:75%;">
 
 It also shows detailed user information, including name, email, role, and status. For information on default system roles, click [here](../user-management/role-management.md/#system-defined-roles){:target="_blank"}.
@@ -82,6 +83,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
 **Key Suggestions**
 
 * Click and download the sample ._csv_ file for reference.
+
 <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
 
 * The fields are predefined in the sample file, and the data requirements are shown below:
@@ -168,6 +170,7 @@ The **Delete** feature removes a user you’re managing from your GALE account.
 <img src="../images/click-delete-icon.png" alt="click delete icon" title="click delete icon" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Remove** in the **Remove users** window.
+
 <img src="../images/click-remove.png" alt="click remove" title="click remove" style="border: 1px solid gray; zoom:75%;">
 
 When a user's account and role assignments are permanently deleted, the user is removed from the list, and the **Total Users** and **Active Users** counts on the dashboard are updated accordingly.
