@@ -134,7 +134,7 @@ The following modules and features are supported on the **Settings** Console:
 
 <p><strong>Settings</strong></p>
 <ul>
-<li><strong>Active Directory</strong>: Configure and connect your organization's AD to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.</li>
+<li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across GALE. Select profile fields and allow edits by the end user.
 </li>
 <li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
