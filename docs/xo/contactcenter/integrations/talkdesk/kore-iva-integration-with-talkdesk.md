@@ -74,6 +74,15 @@ Audio streaming is the primary component for enabling voice automation. It invol
 
 ### Step 4: Configure Agent Escalation Node on Talkdesk
 
+This section explains both the Kore and Talkdesk side configurations for Agent Escalation.
+
+#### Kore Side Configuration
+
+For Agent Transfer and subsequent AgentAssist functionalities, configure **SIP BYE** in SmartAssist:  
+<img src="../images/sip-bye-settings.png" alt="sip-bye-settings" title="sip-bye-settings" style="border: 1px solid gray; zoom:80%;">
+
+#### Talkdesk Side Configuration
+
 For Voice Automation, Kore.ai uses the "Connect to Autopilot Voice" node of Talkdesk. Check the Exits and Preferences of this node in the screenshot below.
 
 On Agent Escalation, Kore.ai creates variables that are populated to **Ring Groups** > **Variables** in the flow context. This allows you to use information collected from an external source. [Learn more](https://studio.talkdesk.com/docs/preferences-assignment-dial#:~:text=the%20latter%20allows%20you%20to%20use%20information%20collected%20from%20an%20external%20source%20such%20as%20a%20Customer%20Relationship%20Manager){:target="_blank"}.  
