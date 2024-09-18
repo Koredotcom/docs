@@ -2,12 +2,12 @@
 
 GALE’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage GALE’s system configurations to manage the following:
 
-* Users
-* [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
-* [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
-* [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
-* [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
-* Monitoring
+1. [Users](../settings/user-management/users.md){:target="_blank"}
+2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
+3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
+4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
+5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
+6. Monitoring
 
    - [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 
@@ -32,11 +32,14 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Users**
 
-* Add a new user to your account via email invitation or user information file import.
-* View the summary of counts for total, active, inactive, and locked users.
-* View the list of all the users in your account and their details like Name, Email ID, Account Role, and Status.
-* Select and delete one or multiple users from your account.
-* Unlock locked users.
+* Add a new user to your account and assign a system role to them via email invitation or user information file import.
+* View and track the summary of counts for total, active, inactive, and locked users.
+* View the details of all the users linked to your account like Name, Email ID, Account Role, and Status.
+* Select and delete one or more users from your account.
+* Unlock the locked users.
+* Reassign a default or custom role to a user.
+
+[Learn more](../settings/user-management/users.md){:target="_blank"}
 
 **Roles and Permissions**
 
@@ -45,7 +48,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * View the enabled/disabled access controls for various modules and permissions for system roles.
 * Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
 
-[Learn more](../settings/user-management/role-management.md)
+[Learn more](../settings/user-management/role-management.md){:target="_blank"}
 
 **Settings**
 
@@ -63,13 +66,20 @@ Additionally, you can do the following:
 * Configure how joining requests from new users are handled, including automatic approval options.
 * Choose whether users should receive email notifications upon being added to your account via email invitation or AD sync.
 
+[Learn more](../settings/user-management/settings/active-directory.md){:target="_blank"}
+
 **Integrations**
 
-Integrate connections for Weights & Biases, AWS S3 Bucket, and Hugging Face using API or App credentials.
+Integrate connections for [Weights & Biases](../settings/integrations/integrate-with-wandb.md){:target="_blank"}, [AWS S3 Bucket](../settings/integrations/integrate-with-s3-bucket.md){:target="_blank"}, and [Hugging Face](../settings/integrations/enable-hugging-face.md){:target="_blank"} using API or App credentials. 
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all agents.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all agents. [Learn more](../agents/guardrails/manage-guardrails.md){:target="_blank"}.
+
+**Monitoring**
+
+- Track the audit logs of user actions within your account to gain insights into their activities. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
+- Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard.
 
 ## Access Settings Console
 
