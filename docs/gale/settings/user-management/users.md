@@ -19,7 +19,7 @@ The **Users** feature simplifies account administration through centralized tool
 * Regularly review and update user roles.
 * Use bulk import to add multiple users efficiently.
 * Monitor the locked users and inactive invitations.
-* Maintain accurate user information for effective account management.
+* Maintain users for effective account management.
 
 ## Users Dashboard
 
