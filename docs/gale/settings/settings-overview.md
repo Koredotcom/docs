@@ -37,7 +37,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * Unlock the locked users.
 * Reassign a default or custom role to a user.
 
-[Learn more](../settings/user-management/users.md){:target="_blank"}
+[Learn more](../settings/user-management/users.md){:target="_blank"} about this feature.
 
 **Roles and Permissions**
 
@@ -46,7 +46,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * View the enabled/disabled access controls for various modules and permissions for system roles.
 * Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
 
-[Learn more](../settings/user-management/role-management.md){:target="_blank"}
+[Learn more](../settings/user-management/role-management.md){:target="_blank"} about this feature.
 
 **Settings**
 
@@ -64,7 +64,7 @@ Additionally, you can do the following:
 * Configure how joining requests from new users are handled, including automatic approval options.
 * Choose whether users should receive email notifications upon being added to your account via email invitation or AD sync.
 
-[Learn more](../settings/user-management/settings/active-directory.md){:target="_blank"}
+[Learn more](../settings/user-management/settings/active-directory.md){:target="_blank"} about this feature.
 
 **Integrations**
 
