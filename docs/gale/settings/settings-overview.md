@@ -17,11 +17,11 @@ The **Settings** Console provides administrators comprehensive control and visib
 
 * **Agent level**: User management within the GALE platform is focused on agent management, emphasizing individual agent deployments and configurations. Each agent's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting agents, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
 
-This post describes how to access the **Settings Console** and summarizes the modules and features available.
+This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only users included as Admin in the system with the required permissions can access the Settings Console.</p>
+<p>Only users included as <b>Admin</b> in the system with the required permissions can access the <b>Settings</b> Console.</p>
 </div>
 
 ## Actions You Can Perform on the Settings Console
@@ -81,7 +81,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 ## Access Settings Console
 
-To access the **Settings Console** on GALE, follow the steps below:
+To access the **Settings** Console on GALE, follow the steps below:
 
 1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials.
 
@@ -92,7 +92,7 @@ The system redirects to the **Users** page under **Users Management** on the **S
 
 ## Modules and Features
 
-The following modules and features are supported on the Settings Console:
+The following modules and features are supported on the **Settings** Console:
 
 <table>
   <tr>
