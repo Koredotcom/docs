@@ -658,7 +658,7 @@ To add a custom label in addition to the default label for a conversation, follo
 
     !!! note
 
-    You can select a different label color by clicking the color icon and using the color palette.
+        You can select a different label color by clicking the color icon and using the color palette.
 
     <img src="../images/add-a-custom-label-2.png" alt="Add a Custom Label-2" title="Add a Custom Label-2" style="border: 1px solid gray; zoom:80%;">
 4. Click **Save**.
@@ -905,15 +905,15 @@ The Enriched Chat Transcript is visible on the Chat History panel.
         * Language (of interaction)
         * Event labels tagged to the conversation history.
        
-        <img src="../images/chat-history-2.png" alt="Chat History 2" title="Chat History 2" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/chat-history-2.png" alt="Chat History 2" title="Chat History 2" style="border: 1px solid gray; zoom:80%;">
 
         * Trace ID – A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform. When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message ID** associated with the message.
         
-        <img src="../images/chat-history-3.png" alt="Chat History 3" title="Chat History 3" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/chat-history-3.png" alt="Chat History 3" title="Chat History 3" style="border: 1px solid gray; zoom:80%;">
 
         * Click the **Message Id** to view the **Trace ID** associated with a message in the Chat History.
         
-        <img src="../images/chat-history-4.png" alt="Chat History 4" title="Chat History 4" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/chat-history-4.png" alt="Chat History 4" title="Chat History 4" style="border: 1px solid gray; zoom:80%;">
 
 
 !!! note
@@ -956,8 +956,8 @@ After the end user selects an account type, the Alternate message appears in the
 
 !!! IMPORTANT
 
-* You cannot add the same key to a message again.
-* A custom message tag can only be added and detached from a message and not edited.
+    * You cannot add the same key to a message again.
+    * A custom message tag can only be added and detached from a message and not edited.
 
 
 **To add a custom message tag, follow the steps**:
@@ -1004,7 +1004,7 @@ The **Conversation Summary** displays the following information on the Feedback 
     5. Tasks Completed
     6. Failed Tasks
 
-    <img src="../images/conversation-summary-1.png" alt="Conversation Summary 1" title="Conversation Summary 1" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/conversation-summary-1.png" alt="Conversation Summary 1" title="Conversation Summary 1" style="border: 1px solid gray; zoom:80%;">
 
 2. The Feedback Event is based on the event timeline with **Key** and **Value**.
 3. The **total number of feedback responses** collected for the session and the following:
