@@ -38,7 +38,7 @@ This section explains the configuration steps needed to integrate Kore IVA integ
 
 ### Step 1: Create and attach a Flow with a Phone Number
 
-A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Know more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
+A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Learn more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
 <img src="../images/flows-and-channels-phone-number-2.png" alt="flows-and-channels-phone-number" title="flows-and-channels-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 **Note**: This phone number is encrypted and used in WSS URL in Audio streaming.
@@ -92,7 +92,9 @@ On Agent Escalation, Kore.ai creates variables that are populated to **Ring Grou
 
 <img src="../images/agent-escalation-node-preferences-ring-group-6.png" alt="agent-escalation-node-preferences-ring-group" title="agent-escalation-node-preferences-ring-group" style="border: 1px solid gray; zoom:80%;">
 
-**Note**: Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
+!!! note
+
+    Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
 
 ### Step 5: Testing the Studio Flow
 

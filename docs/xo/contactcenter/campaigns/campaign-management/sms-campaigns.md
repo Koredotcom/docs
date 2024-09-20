@@ -21,7 +21,7 @@ On this page, the following details of the SMS campaigns are shown in a table:
 * **Contact List** - The call lists that will be dialed.
 * **Schedule** - Start and End date when the campaign is scheduled to run.
 
-To run SMS campaigns, you must configure the SMS channel first. Learn more.
+To run SMS campaigns, you must configure the SMS channel first. [Learn more](../../../channels/add-sms-channel.md).
 
 ## Create SMS Campaigns
 

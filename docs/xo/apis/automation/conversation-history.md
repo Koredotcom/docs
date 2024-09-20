@@ -346,8 +346,9 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
 </table>
 
 
-!!!note
-  The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
+!!! note
+
+    The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
 
 
 ## Request Body Parameters
