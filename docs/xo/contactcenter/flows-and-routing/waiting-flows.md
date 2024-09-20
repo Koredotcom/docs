@@ -223,8 +223,7 @@ Steps to delete a Waiting Experience entry:
 2. At the bottom left of the Edit Waiting Experience window, click the **Delete (bin)** icon;  
 <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-3. You will be asked to confirm your choice. click **Yes**.
+3. You will be asked to confirm your choice. Click **Yes**.  
+!!! Note
 
-    !!! Note
-
-            Deleted Waiting Flows cannot be restored. Please proceed with caution.
+    Deleted Waiting Flows cannot be restored. Please proceed with caution.
