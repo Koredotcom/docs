@@ -227,4 +227,4 @@ Steps to delete a Waiting Experience entry:
 
     !!! Note
 
-        Deleted Waiting Flows cannot be restored. Please proceed with caution.
+            Deleted Waiting Flows cannot be restored. Please proceed with caution.
