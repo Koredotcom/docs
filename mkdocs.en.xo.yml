@@ -147,7 +147,14 @@ nav:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
               - AudioCodes: channels/ivr-audio-codes.md
-              - IVR: channels/IVR-integration.md            
+              - IVR: channels/IVR-integration.md
+        - Data:
+          - Overview: administration/data/data-tables-and-views.md
+          - Guideines: administration/data/using-data-table.md
+          - Data Table: administration/data/data-table.md
+          - Table view: administration/data/table-views.md
+          - App Definition: administration/data/app-definition.md
+          - Data as Service: administration/data/data-as-service.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
