@@ -16,7 +16,7 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 The Kore IVA integration with Talkdesk operates as follows:
 
 * **Setup**: Kore.ai configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
-* **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore's "Conversation Orchestrator." Kore handles automation and sends bot responses back to Talkdesk.
+* **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
 * **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
 
 This streamlined process enhances Talkdesk's contact center capabilities with Kore's voice automation technology.
