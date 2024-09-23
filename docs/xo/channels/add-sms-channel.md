@@ -28,9 +28,9 @@ Steps for SMS Channel Configuration:
     <img src="../images/sms-window.png" alt="Instructions Tab" title="Instructions Tab" style="border: 1px solid gray; zoom:60%;">  
 
 3. The Instructions tab provides instructions to configure the selected SMS service provider. Select a **Provider Name** from the dropdown list.  
-<img src="../images/twilio-instructions.png" alt="Twilio Instructions" title="Twilio Instructions" style="border: 1px solid gray; zoom:60%;"> 
- \
-To set up a Twilio Voice Channel, see [Adding the Twilio Voice Channel](./add-twilio-sms-channel.md).
+<img src="../images/twilio-instructions.png" alt="Twilio Instructions" title="Twilio Instructions" style="border: 1px solid gray; zoom:60%;">  
+
+    To set up a Twilio Voice Channel, see [Adding the Twilio Voice Channel](./add-twilio-sms-channel.md).
 
 4. Once all the Instructions are completed, click **Next** to move to the **Configurations** tab. You can also click the **Configurations** tab.  
 <img src="../images/next-button.png" alt="Next/Configurations" title="Next/Configurations" style="border: 1px solid gray; zoom:60%;">
