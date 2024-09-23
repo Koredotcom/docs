@@ -14,7 +14,7 @@ Kore.ai Bot Builder tool provides a few default text responses, Natural Language
   <tr>
    <td>When the user confirms to close the conversation in a language and switch to another language
    </td>
-   <td>You are now conversing with the bot in the  &lt;language-name> language.
+   <td>Shown when the user switches languages after confirming the end of a conversation in one language and begins the next interaction in a different language.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -553,19 +553,19 @@ This response is displayed when the bot identifies a dialog task for which no co
   <tr>
    <td>Ask if the user would like to switch to the new language detected during a conversation
    </td>
-   <td>Your current conversation is in &lt;current language> language but I have detected &lt;list of new languages> languages from your current input. Please provide your preferred language to proceed.
+   <td>This message is displayed when multiple new languages are detected from the user's input during an ongoing conversation. It informs the user of the languages identified and prompts them to select their preferred language to continue the interaction.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Ask if the user would like to switch to the new language detected during a conversation
    </td>
-   <td>I have detected that your input is in &lt;new language> language. Please say <em>Yes</em> to close the current conversation and switch to . You may say <em>No</em> to continue on the current conversation.
+   <td>This message is displayed when the system detects that the user is communicating in a different language than the current one being used. It offers the user the option to either switch to the newly detected language or continue in the current language.
    </td>
   </tr>
   <tr>
    <td>Follow up sentence post Task execution or discard of task
    </td>
-   <td>Ok, I am discarding the task for now. We can start over whenever you are ready.
+   <td>This message is displayed after a task is either completed or discarded. The message confirms that the task has been canceled and reassures the user that they can restart the task at any time.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -773,7 +773,7 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
   <tr>
    <td>User exceeds the maximum allowed retries for an entity when another task is on hold
    </td>
-   <td>You have exceeded the number of allowed attempts. I am discarding the current task.
+   <td>This response is displayed when the user exceeds the maximum allowed retries for an entity when another task is on hold.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1504,58 +1504,4 @@ This message will be displayed if the user’s input matches with intent and the
   </tr>
 </table>
 
-## Greeting
-
-(These will be moved to Small Talk post ver7.1 release)
-
-<table border="1.5">
-  <tr bgcolor="#ECECEC">
-   <td><strong>MESSAGE</strong>
-   </td>
-   <td><strong>DEFINITION</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Response when User says Hi
-   </td>
-   <td>Shown when the user says hi, hello, hey, etc, or just enters the bot’s name.
-   </td>
-  </tr>
-  <tr bgcolor="#FAFAFA">
-   <td>Response to <em>how are you</em>?
-   </td>
-   <td>User asks <em>how are you?</em>
-<p>
-NL interprets the following ways in which the user can say that:
-<p>
-&lt;how are you>, &lt;how are u doing> &lt;how are u how are u>
-<p>
-&lt;how have u been doing> &lt;how have`u`been> &lt;how`do`u`do> &lt;how`are`u`doing> &lt;how`are`u>
-<p>
-whazzupp whatcha`upto watsup wassup howzit
-<p>
-comment`est`vous comment`ca`va ca`va
-<p>
-&lt;what`up &lt;what`is`up`today
-<p>
-&lt;what`is`up &lt;what`is`the`word> &lt;what`is`the`latest`word> &lt;what`is`new> &lt;what`is`happening>
-<p>
-&lt;what`is`going`on> &lt;what’up &lt;is`everything`OK &lt;is`everything`alright &lt;how`you`feeling
-<p>
-&lt;how`you`doing &lt;how`is`tricks &lt;how`is`life &lt;how`is`it`going &lt;how`is`everything
-<p>
-&lt;how`is`by`you &lt;how`have`you`been`doing> &lt;how`have`you`been> &lt;how`goes> &lt;how`goes`things
-<p>
-&lt;how`goes`it &lt;how`is`your`day &lt;how`do`you`do> &lt;how`are`you> &lt;how`are`things>
-<p>
-&lt;heya>
-   </td>
-  </tr>
-  <tr>
-   <td>Response to <em>who are you?</em>
-   </td>
-   <td>Shown when the user says <em>who are you</em>
-   </td>
-  </tr>
-</table>
 

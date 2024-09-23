@@ -183,9 +183,9 @@ Please complete the email OTP verification to sign in successfully.</div>
 
 2. Enter your registered email ID and click **Continue with Email**.
 
-    <img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
 
-3. Enter your password and click **Login**.
+Then, enter your password and click **Login**.
 
 <img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
 
@@ -194,23 +194,29 @@ Please complete the email OTP verification to sign in successfully.</div>
 <p>Once you create an account, you need to add credits for computation hours to start using GALE's features.</p>
 </div>
 
-### Failed Login Attempt
+### Failed Login and Account Locking
 
-If you enter the wrong password when using email sign-in, the system displays an **Invalid Credential** message and disables login.
+If you enter the wrong password when using email sign-in, the system displays an **Invalid Credential** message, preventing you from signing in to your account (of which you are the admin).
 
 <img src="../images/invalid-credentials.png" alt="invalid credentials" title="invalid credentials" style="border: 1px solid gray; zoom:75%;">
 
-You are allowed up to 5 attempts to enter the correct password and log in.
+You are allowed up to 5 attempts to retry the correct password and log in.
 
 <img src="../images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;">
 
-Exceeding the fifth failed login attempt locks your account for 30 minutes, after which you can retry signing in.
+Exceeding the fifth failed login attempt locks your account for 30 minutes, after which the account is unlocked automatically, and you can retry signing in.
 
 <img src="../images/account-locked.png" alt="account locked" title="account locked" style="border: 1px solid gray; zoom:75%;">
 
-While your account is locked, you can try an alternative login method by clicking **Login using another account**. You are redirected to the following page to sign in with SSO or your third-party accounts.
+An alternative way is to request the <b>master admin</b> to unlock your account.
 
-<img src="../images/login-using-another-account.png" alt="login using another account" title="login using another account" style="border: 1px solid gray; zoom:75%;">
+When your account is locked, the status for you shows as "<b><i>Locked</i></b>" to all the admins who have added you to their account. This status update ensures that admins are aware of your restricted access and can unlock your account.
+
+If you are the admin and want to unlock a user linked to your account, click the <b><i>Unlock</i></b> button for the user on your <b>Settings</b> Console's <b>Users</b> page, as shown below.
+
+<img src="../getting-started/images/user-unlock.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;">
+
+When your account is locked, you can attempt to log in using an alternative method by clicking **Login using another account**. This action redirects you to a page where you can sign in via your default SSO service, such as Google, Windows, or LinkedIn.
 
 ### Reset Password
 
@@ -235,6 +241,7 @@ You will receive instructions via email on how to reset your password. Check you
 <img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
 <img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;"></li></ol>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 If both the entries do not match, you cannot proceed.</div>

@@ -47,11 +47,11 @@ From here you can:
 
 APIs can be used to access the data in the data tables and data views are as follows:
 
-* Data Insert API – [See here for more](../../../apis/data-insert){:target="_blank"}
-* Data Update API – [See here for more](../../../apis/data-update){:target="_blank"}
-* Data Delete API – [See here for more](../../../apis/data-delete){:target="_blank"}
-* Query Data from Table – [See here for more](../../../apis/query-table-data){:target="_blank"}
-* Query Data from View – [See here for more](../../../apis/query-data-table-view){:target="_blank"}
+* Data Insert API – [See here for more](../../apis/automation/data-insert.md){:target="_blank"}
+* Data Update API – [See here for more](../../apis/automation/data-update.md){:target="_blank"}
+* Data Delete API – [See here for more](../../apis/automation/data-delete.md){:target="_blank"}
+* Query Data from Table – [See here for more](../../apis/automation/query-table-data.md){:target="_blank"}
+* Query Data from View – [See here for more](../../apis/automation/query-data-table-view.md){:target="_blank"}
 
 
 ## Glossary

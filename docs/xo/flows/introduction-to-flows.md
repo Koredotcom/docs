@@ -50,8 +50,10 @@ You can access the following features on the Flows Live Board:
 <img src="../images/functions.png" alt="Functionalities" title="Functionalities" style="border: 1px solid gray; zoom:80%;">
 
 * To delete a flow, click **Delete**.  
-<img src="../images/delete-flow.png" alt="Delete Flow" title="Delete Flow" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/delete-flow.png" alt="Delete Flow" title="Delete Flow" style="border: 1px solid gray; zoom:80%;">  
+!!! Note
 
-  !!!Note
+     You cannot restore deleted flow entries. Please proceed with caution.
 
-      You cannot restore deleted flow entries. Please proceed with caution.
+
+   
