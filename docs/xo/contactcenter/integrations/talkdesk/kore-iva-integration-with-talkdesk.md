@@ -13,11 +13,13 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 
 ## How it Works
 
-Here’s a general overview of how voice virtual assistant interactions work on Talkdesk:
+The Kore IVA integration with Talkdesk operates as follows:
 
-1. **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and Talkdesk. This involves modifying the **AgentAssist_URL** and **bot details**, and **Voice stream URL*** field modification in **Connect to autopilot - voice** flow in Talkdesk. The user audio is sent to the “Conversation Orchestrator” through the “Connect to Virtual Agent Voice” block within the studio flow.
-2. **Routing and Distribution**: When a customer initiates contact through Talkdesk, Kore receives the audio streams and handles the automation process. Kore sends its bot’s responses to Talkdesk. It’s a bidirectional stream. Once automation is complete, and the customer asks for agent transfer, the control goes back to Talkdesk.
-3. **Agent Interaction**: The agent receives the customer interaction and responds to the customer using Talkdesk communication features, such as answering voice calls.
+* **Setup**: Kore.ai configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
+* **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore's "Conversation Orchestrator." Kore handles automation and sends bot responses back to Talkdesk.
+* **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
+
+This streamlined process enhances Talkdesk's contact center capabilities with Kore's voice automation technology.
 
 ## Voice Automation Process
 
