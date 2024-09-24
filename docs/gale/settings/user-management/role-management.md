@@ -1,6 +1,10 @@
 # Role Management 
 
-GALE’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. Thus, the roles can be classified based on role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+GALE’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. 
+
+Thus, the roles can be classified based on role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+
+When you [invite](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}/add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
 **Key Points**
 
