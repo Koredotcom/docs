@@ -28,7 +28,7 @@ This flow type runs when a call gets disconnected and is useful in gathering cus
 Steps to create a Start Flow:
 
 1. In the left navigation, go to **Flows & Channels** > **FLOWS**.
-2. Click **+ New Start Flow**.
+2. Click **+ New Start Flow**.  
 <img src="../images/new-start-flow.png" alt="New Start Flow" title="New Start Flow" style="border: 1px solid gray; zoom:100%;">
 
 3. In the New Start Flow window, provide inputs for the following fields:
@@ -95,11 +95,6 @@ Steps to create a Start Flow:
 
 11. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours. You can either select the default _Out-of-Hours Flow_ or one that you have created yourself.
 <img src="../images/out-of-hours-flow.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
-
-    !!! Note
-
-        Only flows that have been published will be available for selection in the dropdowns.
-
 
     !!! Note
 
