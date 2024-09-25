@@ -7,7 +7,7 @@ The SMS Channel enables customer communication via text messages. It supports in
 SMS channel capabilities:
 
 * **Outbound SMS**: It enables one-way communication, allowing you to send notifications or messages to users without expecting replies. It uses numbers specifically configured for outbound messaging and is ideal for simple text communications, such as alerts or reminders.
-* **Inbound and Outbound SMS**: It facilitates two-way communication, enabling you to send notifications or messages and receive responses from users. This method links to an experience flow, allowing for more interactive engagement. It's suitable for simple text messages that require user input or ongoing conversations, such as customer support inquiries or appointment confirmations.
+* **Inbound and Outbound SMS**: It facilitates two-way communication, enabling you to send notifications or messages and receive responses from users. This method links to an [Experience Flow](../flows/create-flows.md#sms), allowing for more interactive engagement. It's suitable for simple text messages that require user input or ongoing conversations, such as customer support inquiries or appointment confirmations.
 
 To run SMS campaigns, you must configure the SMS Channel. Currently, the channel is compatible only with Twilio.
 
