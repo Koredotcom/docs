@@ -32,13 +32,15 @@ The Evaluation Forms has the following options:
 
 ### Add New Evaluation Form
 
-You can access the Evaluation Metrics by going to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
+You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
 
 Steps to create a new Evaluation Form:
 <img src="../images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.  
 <img src="../images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
+
+<strong>Note:</strong> It is mandatory for the agents to attain the minimum pass score set by the Supervisor. If the pass score is not met for a given interaction, it will be evaluated as Fail.
 
 The following table describes the Evaluation Forms details:
 
