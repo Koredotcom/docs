@@ -28,7 +28,7 @@ Steps to get Genesys OAuth ID:
 <img src="../images/integ-oauth-add-client-2.png" alt="integ-oauth-add-client" title="integ-oauth-add-client" style="border: 1px solid gray; zoom:80%;">
 4. Enter the app name, description, and token duration in the **App Name**, **Description**, and **Token Duration** fields.
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** fields.
-6. Add [https://agentassist.kore.ai/koreaiaa-genesys/](https://agentassist.kore.ai/koreaiaa-genesys/) in the **_Authorized redirect URIs (one per line)_** section.
+6. Add [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/) in the **_Authorized redirect URIs (one per line)_** section.
 7. Add the following list of scopes in the **Scope** section:
     *  architect
     *  conversations
@@ -64,13 +64,7 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 <img src="../images/open-interaction-widget-7.png" alt="open-interaction-widget" title="open-interaction-widget" style="border: 1px solid gray; zoom:80%;"> 
 6. Go to the **Configuration** tab of the Interaction Widget.
 <img src="../images/interaction-widget-configuration-tab-8.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;"> 
-7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential).
-
-[https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>
-
-Or
-
-[https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/)
+7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential): [https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>
 8. Allow all permissions in **iFrame Sandbox Options** and **iFrame Feature/Permission Policy**.
 
 **iFrame Sandbox Options**:
@@ -105,13 +99,15 @@ By default, most agents don’t have access to read from a Data Table. You must 
 2. Go to **Admin** > **People & Permissions** > **Roles / Permissions**.
 3. Click **Add Role** to create a new Role.
 4. Give a distinctive name to the Role; for example, **KoreaiAA Agent**.
-5. On the **Permission** tab, search for the following and add (select the box):
+5. On the **Permission** tab, search for the following and add (select the box): 
 
-**Architect** > **DataTable** > **View**
+    **Architect** > **DataTable** > **View** 
+        
+    **Conversation** > **Transcription** > **View**  
 
-**Conversation** > **Transcription** > **View**
+    !!! note
 
-**Note**: The Conversation permission is available only in CX3 license.
+        The Conversation permission is available only in CX3 license.
 
 6. Once finished, the **Assigned Permissions** view should look like this:
 <img src="../images/assigned-permissions-10.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
@@ -123,7 +119,9 @@ By default, most agents don’t have access to read from a Data Table. You must 
 
 This step includes creation of a Data Table with Agent AI bot details.
 
-**Note**: The configuration data is stored directly in the Custom Fields of the Data Table, not in a Data Table row. A single Data Table represents a configuration of Agent AI. In other words, the default values of the Custom Fields contain the necessary configuration data to load the Agent AI widget.
+!!! note
+
+    The configuration data is stored directly in the Custom Fields of the Data Table, not in a Data Table row. A single Data Table represents a configuration of Agent AI. In other words, the default values of the Custom Fields contain the necessary configuration data to load the Agent AI widget.
 
 1. Sign in to **Genesys Cloud**.
 2. Go to **Admin** > **Architect** > **Data Tables**.  
@@ -132,7 +130,11 @@ This step includes creation of a Data Table with Agent AI bot details.
 <img src="../images/new-data-table-13.png" alt="new-data-table" title="new-data-table" style="border: 1px solid gray; zoom:80%;">
 4. Click the “three dots,” and select **Edit Table Fields** from the list.
 <img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;">
-**Note**: Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
+
+    !!! note
+
+        Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
+
 5. Click **Add Field** to create five custom fields to provide the Agent AI configuration.
 <img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;">
 6. Click the **Add Field** button under **Custom Fields**.
@@ -155,7 +157,7 @@ These values are found in the **Flow & Channels** > **Channels** > **Digital** >
   <tr>
    <td>AgentAssist URL
    </td>
-   <td><a href="https://agentassist.kore.ai/">https://agentassist.kore.ai</a>
+   <td><a href="https://platform.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html">https://platform.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html</a>
    </td>
   </tr>
   <tr>
@@ -184,10 +186,10 @@ These values are found in the **Flow & Channels** > **Channels** > **Digital** >
   </tr>
 </table>
 
-**Note**:
+!!! note
 
-* All the custom fields should be of the string type.
-* If the “is Audiohook Enabled” option is false, the application tries to utilize the Genesys native transcriptions using the Transcriptions API.
+    * All the custom fields should be of the string type.
+    * If the “is Audiohook Enabled” option is false, the application tries to utilize the Genesys native transcriptions using the Transcriptions API.
 
 To change the values, you must click the gray box surrounding each Custom Field, not directly on the textbox.
 
