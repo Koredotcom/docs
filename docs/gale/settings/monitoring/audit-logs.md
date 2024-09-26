@@ -623,5 +623,7 @@ By default, the current day will be set as the end date. This feature allows you
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
 
+For more help or information on <b>Audit Logs</b>, [contact](https://kore.ai/support/){:target="_blank"} our technical support team.
+
 [Learn more](../settings-overview.md){:target="_blank"} about other features on the <b>Settings</b> Console.
 
