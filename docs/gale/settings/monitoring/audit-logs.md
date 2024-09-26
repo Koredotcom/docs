@@ -623,3 +623,5 @@ By default, the current day will be set as the end date. This feature allows you
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
 
+[Learn more](../settings-overview.md){:target="_blank"} about other features on the <b>Settings</b> Console.
+
