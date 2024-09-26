@@ -101,13 +101,13 @@ By default, most agents don’t have access to read from a Data Table. You must 
 4. Give a distinctive name to the Role; for example, **KoreaiAA Agent**.
 5. On the **Permission** tab, search for the following and add (select the box): 
 
-**Architect** > **DataTable** > **View** 
-    
-**Conversation** > **Transcription** > **View**  
+    **Architect** > **DataTable** > **View** 
+        
+    **Conversation** > **Transcription** > **View**  
 
-!!! note
+    !!! note
 
-    The Conversation permission is available only in CX3 license.
+        The Conversation permission is available only in CX3 license.
 
 6. Once finished, the **Assigned Permissions** view should look like this:
 <img src="../images/assigned-permissions-10.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
@@ -131,9 +131,9 @@ This step includes creation of a Data Table with Agent AI bot details.
 4. Click the “three dots,” and select **Edit Table Fields** from the list.
 <img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
-    Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
+        Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
 
 5. Click **Add Field** to create five custom fields to provide the Agent AI configuration.
 <img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;">
