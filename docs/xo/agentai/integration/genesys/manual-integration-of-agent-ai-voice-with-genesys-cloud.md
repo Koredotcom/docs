@@ -28,7 +28,7 @@ Steps to get Genesys OAuth ID:
 <img src="../images/integ-oauth-add-client-2.png" alt="integ-oauth-add-client" title="integ-oauth-add-client" style="border: 1px solid gray; zoom:80%;">
 4. Enter the app name, description, and token duration in the **App Name**, **Description**, and **Token Duration** fields.
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** fields.
-6. Add [https://agentassist.kore.ai/koreaiaa-genesys/](https://agentassist.kore.ai/koreaiaa-genesys/) in the **_Authorized redirect URIs (one per line)_** section.
+6. Add [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/) in the **_Authorized redirect URIs (one per line)_** section.
 7. Add the following list of scopes in the **Scope** section:
     *  architect
     *  conversations
@@ -71,6 +71,7 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 Or
 
 [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/)
+
 8. Allow all permissions in **iFrame Sandbox Options** and **iFrame Feature/Permission Policy**.
 
 **iFrame Sandbox Options**:
@@ -155,7 +156,7 @@ These values are found in the **Flow & Channels** > **Channels** > **Digital** >
   <tr>
    <td>AgentAssist URL
    </td>
-   <td><a href="https://agentassist.kore.ai/">https://agentassist.kore.ai</a>
+   <td><a href="https://platform.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html">https://platform.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html</a>
    </td>
   </tr>
   <tr>
