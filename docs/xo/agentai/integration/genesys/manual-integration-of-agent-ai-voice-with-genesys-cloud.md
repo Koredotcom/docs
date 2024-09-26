@@ -112,7 +112,9 @@ By default, most agents don’t have access to read from a Data Table. You must 
 
 **Conversation** > **Transcription** > **View**
 
-**Note**: The Conversation permission is available only in CX3 license.
+!!! note
+
+    The Conversation permission is available only in CX3 license.
 
 6. Once finished, the **Assigned Permissions** view should look like this:
 <img src="../images/assigned-permissions-10.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
@@ -124,7 +126,9 @@ By default, most agents don’t have access to read from a Data Table. You must 
 
 This step includes creation of a Data Table with Agent AI bot details.
 
-**Note**: The configuration data is stored directly in the Custom Fields of the Data Table, not in a Data Table row. A single Data Table represents a configuration of Agent AI. In other words, the default values of the Custom Fields contain the necessary configuration data to load the Agent AI widget.
+!!! note
+
+    The configuration data is stored directly in the Custom Fields of the Data Table, not in a Data Table row. A single Data Table represents a configuration of Agent AI. In other words, the default values of the Custom Fields contain the necessary configuration data to load the Agent AI widget.
 
 1. Sign in to **Genesys Cloud**.
 2. Go to **Admin** > **Architect** > **Data Tables**.  
@@ -133,7 +137,9 @@ This step includes creation of a Data Table with Agent AI bot details.
 <img src="../images/new-data-table-13.png" alt="new-data-table" title="new-data-table" style="border: 1px solid gray; zoom:80%;">
 4. Click the “three dots,” and select **Edit Table Fields** from the list.
 <img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;">
-**Note**: Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
+!!! note
+
+    Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
 5. Click **Add Field** to create five custom fields to provide the Agent AI configuration.
 <img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;">
 6. Click the **Add Field** button under **Custom Fields**.
@@ -185,10 +191,10 @@ These values are found in the **Flow & Channels** > **Channels** > **Digital** >
   </tr>
 </table>
 
-**Note**:
+!!! note
 
-* All the custom fields should be of the string type.
-* If the “is Audiohook Enabled” option is false, the application tries to utilize the Genesys native transcriptions using the Transcriptions API.
+    * All the custom fields should be of the string type.
+    * If the “is Audiohook Enabled” option is false, the application tries to utilize the Genesys native transcriptions using the Transcriptions API.
 
 To change the values, you must click the gray box surrounding each Custom Field, not directly on the textbox.
 
