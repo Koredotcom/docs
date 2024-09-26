@@ -5,7 +5,7 @@ hide:
 ---
 # About Quality Management
 
-The Quality Management module leverages AI to automated QA scoring for 100% customer interactions. It offers customizable scoring configurations, comprehensive interaction analysis, and identification of critical issues to meet your business needs. 
+The Quality AI module leverages AI to automated QA scoring for 100% customer interactions. It offers customizable scoring configurations, comprehensive interaction analysis, and identification of critical issues to meet your business needs. 
 
 The system optimizes manual review efforts and enhances agent performance feedback. Organizations can measure key metrics to focus on problematic interactions, streamlining agent development, and improving customer service quality.
 

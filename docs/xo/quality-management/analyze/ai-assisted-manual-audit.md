@@ -2,7 +2,7 @@
 
 The AI-Assisted Manual Audit feature streamlines interaction evaluation by automatically categorizing conversations into three key areas: moments of adherence, moments of violation, and omissions. By highlighting these critical elements, evaluators can quickly assess the quality of interactions, significantly reducing review time and improving efficiency in the quality assurance process.
 
-You can access AI-Assisted Manual Audit by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
+You can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Details
@@ -41,10 +41,12 @@ If no playbook or task-type metrics are configured for the interaction and evalu
 ## Playbook
 
 The Playbook section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
+
 * Each playbook metric with entire Playbook configuration
 * Configured minimum adherence for each metric
 * Observed adherence within the interaction
 * Missing steps (Playbook steps not completed during the interaction)
+
 This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
   
 <img src="../images/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
@@ -61,7 +63,8 @@ Clicking a comment also navigates the user directly to the relevant part of the 
 
 ## Search
 
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.
+This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.  
+
 <img src="../images/ai-assist-search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
 
 ## Audit
@@ -104,7 +107,8 @@ This comprehensive audit panel facilitates efficient evaluation and ensures thor
 
 ## Bookmarks
 
-This section allows you to tag the agent interaction with different bookmarks. Bookmarks help to tag or group similar interactions together. Bookmarks are user-specific (a bookmark created by one user cannot be accessed by another) and must be enabled and created in the Settings section. Users can bookmark interactions from various places, including Interactions, Audit Allocations, and Settings, making it easy to add an interaction to a configured bookmark.
+This section allows you to tag the agent interaction with different bookmarks. Bookmarks help to tag or group similar interactions together. Bookmarks are user-specific (a bookmark created by one user cannot be accessed by another) and must be enabled and created in the Settings section. Users can bookmark interactions from various places, including Interactions, Audit Allocations, and Settings, making it easy to add an interaction to a configured bookmark.  
+
 <img src="../images/ai-assist-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
 
 ## Submit

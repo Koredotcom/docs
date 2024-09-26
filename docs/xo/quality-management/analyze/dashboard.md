@@ -6,7 +6,7 @@ The Overview of the Dashboard provides a 360-degree view of Audit details, Fail 
 
 By selecting the date range and Evaluation Form, you can view performance metrics for Voice, Chat, or both conversations. This includes Trends and Distribution view on a Daily, Weekly, or Monthly basis across the Dashboard.
 
-You can view the Dashboard by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
+You can view the Dashboard by going to **Contact Center AI** > **Quality AI** > **Analyze** > **Dashboard**.  
 <img src="../images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 The key sections of this Dashboard include:
