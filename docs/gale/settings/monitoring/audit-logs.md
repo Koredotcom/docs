@@ -110,6 +110,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
+  <td colspan="4"><b>Integration Name</b>, <b>Integration ID</b>, and <b>Integration Type</b> are displayed for all the category events below.</td>
+  <tr>
    <td rowspan="2" ><strong>Integrations</strong>
    </td>
    <td>Integration added
@@ -148,7 +150,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td rowspan="8" ><strong>Models</strong>
+   <td rowspan="7" ><strong>Models</strong>
    </td>
    <td>Model added(external models only)
    </td>
