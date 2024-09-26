@@ -64,14 +64,7 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 <img src="../images/open-interaction-widget-7.png" alt="open-interaction-widget" title="open-interaction-widget" style="border: 1px solid gray; zoom:80%;"> 
 6. Go to the **Configuration** tab of the Interaction Widget.
 <img src="../images/interaction-widget-configuration-tab-8.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;"> 
-7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential).  
-
-[https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>  
-
-Or  
-
-[https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/)
-
+7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential): [https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>
 8. Allow all permissions in **iFrame Sandbox Options** and **iFrame Feature/Permission Policy**.
 
 **iFrame Sandbox Options**:
@@ -106,11 +99,11 @@ By default, most agents don’t have access to read from a Data Table. You must 
 2. Go to **Admin** > **People & Permissions** > **Roles / Permissions**.
 3. Click **Add Role** to create a new Role.
 4. Give a distinctive name to the Role; for example, **KoreaiAA Agent**.
-5. On the **Permission** tab, search for the following and add (select the box):
+5. On the **Permission** tab, search for the following and add (select the box):  
 
-**Architect** > **DataTable** > **View**
+**Architect** > **DataTable** > **View**  
 
-**Conversation** > **Transcription** > **View**
+**Conversation** > **Transcription** > **View**  
 
 !!! note
 
@@ -136,10 +129,12 @@ This step includes creation of a Data Table with Agent AI bot details.
 3. Create a new Data Table by clicking the plus icon, and provide a relevant name such as **KoreaiAA-configuration**.
 <img src="../images/new-data-table-13.png" alt="new-data-table" title="new-data-table" style="border: 1px solid gray; zoom:80%;">
 4. Click the “three dots,” and select **Edit Table Fields** from the list.
-<img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;">  
+
 !!! note
 
     Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.
+    
 5. Click **Add Field** to create five custom fields to provide the Agent AI configuration.
 <img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;">
 6. Click the **Add Field** button under **Custom Fields**.
