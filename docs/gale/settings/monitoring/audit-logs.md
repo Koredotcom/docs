@@ -118,18 +118,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks integrations added by the user to the account.
    </td>
-   <td rowspan="2" >
-<ul>
-
-<li>Integration Name
-
-<li>Integration ID
-
-<li>Integration Type
-</li>
-</ul>
+   <td rowspan="2" >No additional parameters.
    </td>
-  </tr>
+   </tr>
   <tr>
    <td>Integration deleted
    </td>
