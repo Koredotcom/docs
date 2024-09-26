@@ -13,7 +13,7 @@ The key sections of this dashboard include:
 * **Insights Mining** –  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
 * **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
-Admins and Supervisors can access the Conversation Intelligence dashboard from **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Intelligence**.  
+Admins and Supervisors can access the Conversation Intelligence dashboard from **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Intelligence**.  
 <img src="../images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters

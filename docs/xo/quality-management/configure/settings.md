@@ -5,13 +5,13 @@ This phase lets you set up task utterances at the agent account level that ident
 The Settings has the following two sections:
 
 * Conversation Intelligence
-* Quality Management
+* Quality AI
 
 ## Conversation Intelligence
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the Evaluation Forms by going to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.  
+You can access the Evaluation Forms by going to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.  
 <img src="../images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Intelligence Dashboard
@@ -68,11 +68,11 @@ Steps to enable the Script Adherence Configuration:
 
 * Click **Save** to save the defined messages.
 
-## Quality Management Settings
+## Quality AI Settings
 
-The Quality Management Settings allows you to create and configure evaluation forms to generate automated scores and enable interactions to get bookmarked under the different sections for reference later.
+The Quality AI Settings allows you to create and configure evaluation forms to generate automated scores and enable interactions to get bookmarked under the different sections for reference later.
 
-Users can access Quality Management (QM) Settings by going to **Contact Center AI** > **Quality Management** > **Settings** > **Quality Management**.  
+Users can access Quality AI Settings by going to **Contact Center AI** > **Quality AI** > **Settings** > **Quality AI**.  
 <img src="../images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
 The QA has the following two sections:
@@ -86,7 +86,7 @@ This feature allows you to set up Evaluation Forms for automated scoring. If the
 
 Steps to enable the Auto QA:
 
-1. Expand the **Quality Management** collapse icon to view the following **Auto QA** option.  
+1. Expand the **Quality AI** collapse icon to view the following **Auto QA** option.  
 <img src="../images/auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
 2. Enable the **Auto QA** option.
@@ -101,7 +101,7 @@ This feature lets you bookmark interactions into various collections for future 
 
 Steps to Add Bookmarks:
 
-1. Expand the **Quality Management** collapse icon to view the following **Bookmarks** option.  
+1. Expand the **Quality AI** collapse icon to view the following **Bookmarks** option.  
 <img src="../images/bookmarks-(2).png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
 
 2. Enable the **Bookmarks** toggle option to add a new bookmark.

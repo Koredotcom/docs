@@ -2,7 +2,7 @@
 
 The Conversation Mining feature allows you to drill down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
 
-You can access Conversation Mining by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
+You can access Conversation Mining by going to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining**.  
 <img src="../images/conversation-mining-interaction-default.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining has the following two sections:
@@ -194,7 +194,7 @@ Once you Save Filter, you will get the following filters options to:
 
 This helps users to create and assign allocations to auditors for manual quality scoring.
 
-The users can access the Audit Allocation by going to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Audit Allocation**.  
+The users can access the Audit Allocation by going to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocation**.  
 <img src="../images/conversation-mining-new-audit-allocations.png" alt="New Audit Allocations" title="New Audit Allocations" style="border: 1px solid gray; zoom:80%;">
 
 The Audit Allocations has the following options:
