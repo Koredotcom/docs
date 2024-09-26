@@ -17,12 +17,12 @@ You can specify a **current** or **past period** to view the logs and have compl
 
 Additionally, you can set **custom filters** based on a specific category, event, or user value to view only the required audit logs. [Learn more](./audit-logs.md/#steps-to-add-a-custom-filter){:target="_blank"}.
 
-<div class="admonition warning">
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
 <li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
-<div class="admonition note">
+<div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module-specific event and category metadata parameters listed in the table below.</p></div>
 
