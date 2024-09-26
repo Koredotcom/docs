@@ -33,8 +33,6 @@ You can modify the default response, and if needed, add additional responses sel
 
 In the **Standard Response** section, the standard bot responses are categorized in the following tabs:
 
-Kore.ai Bot Builder tool provides a few default text responses, Natural Language Processing, or NLP interpreter responses to user inputs or events. This section lists them and gives an explanation as to when these responses are triggered. 
-
 ### Statements
 
 Responses are displayed to the user as the result of an action by the bot or user. For example, a user cancels a task, or a user gives an invalid response to your bot request.
