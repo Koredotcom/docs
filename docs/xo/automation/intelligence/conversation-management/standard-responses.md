@@ -1550,7 +1550,7 @@ To add a new standard response, follow the steps below:
 3. When the **Add Channel Overrides** dialog is displayed, follow the steps below:
     * In the **Choose a channel** drop-down list, select a channel to create a channel-specific response. You can go with the Any Channel option to enable the response for all channels.
     * In the case of channel-specific response, from the **Choose a Task** drop-down list, select **Any Task** to apply this channel-specific response to all tasks or select a specific task.
-    * When a specific task is selected, the **Choose a Field **drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response. 
+    * When a specific task is selected, the **Choose a Field** drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response. 
 
       <img src="../images/add-channel-override.png" alt="add-channel-override" title="add-channel-override" style="border:1px solid gray; zoom:70%;">
 
