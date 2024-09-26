@@ -64,11 +64,11 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 <img src="../images/open-interaction-widget-7.png" alt="open-interaction-widget" title="open-interaction-widget" style="border: 1px solid gray; zoom:80%;"> 
 6. Go to the **Configuration** tab of the Interaction Widget.
 <img src="../images/interaction-widget-configuration-tab-8.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;"> 
-7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential).
+7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential).  
 
-[https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>
+[https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>  
 
-Or
+Or  
 
 [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/)
 
