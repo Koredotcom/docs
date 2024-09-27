@@ -44,9 +44,9 @@ To create an access key, follow the steps below:
 
 <img src="../images/copy-project-id.png" alt="copy project id" title="copy project id" style="border: 1px solid gray; zoom:75%;">
 
-<p>You can also copy the Project ID by clicking <b>Conversation API</b> > <b>Overview</b> on the left menu.</p>
+<p>You can also copy the Project ID by clicking <b>Conversation API</b> > <b>Overview</b> on the left menu.</p></li>
 
-<img src="../images/conersation-api-overview.png" alt="conversation api" title="conversation api" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/conersation-api-overview.png" alt="conversation api" title="conversation api" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title"><b>Note</b></p>
@@ -104,8 +104,8 @@ Follow the steps below to create an app. Alternatively, you can use [API calls](
 The newly created APP is displayed in the <b>Apps</b> section.
 <img src="../images/new-app-id.png" alt="new app id" title="new app id" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click the <b>App Name</b> and go to the <b>App Details</b> screen.</li>
-<li>Copy and save the <b>App ID</b> displayed in the <b>Configuration</b> section. Paste it into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.
-<img src="../images/copy-and-save-app-id.png" alt="copy and save app id" title="copy and save app id" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<li>Copy and save the <b>App ID</b> displayed in the <b>Configuration</b> section. Paste it into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
+<img src="../images/copy-and-save-app-id.png" alt="copy and save app id" title="copy and save app id" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ## Step 3: Configure the Webhook URL
 
@@ -121,11 +121,11 @@ The **New webhook** form is displayed.
 
 <ol start="3"><li>In the <b>Target type</b> dropdown, select <i>HTTP</i>.</li>
 <li>In the <b>Target URL</b> field, copy and paste the <b>WebHook URL</b> value from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
-<li>In the <b>Secret token</b> field, copy and paste the value for <b>Verify Token</b> from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. This token enables the webhook to validate against your chosen endpoint.
-<img src="../images/paste-in-sinch-configurations.png" alt="configure on xo" title="configure on xo" style="border: 1px solid gray; zoom:75%;"></li>
-<li>In the <b>Triggers</b> drop-down, select all the triggers you want to add to the webhook.</li>
-<li>Click <b>Create</b>.
-<img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;"></li>
+<li>In the <b>Secret token</b> field, copy and paste the value for <b>Verify Token</b> from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. This token enables the webhook to validate against your chosen endpoint.</li>
+<img src="../images/paste-in-sinch-configurations.png" alt="configure on xo" title="configure on xo" style="border: 1px solid gray; zoom:75%;"></ol>
+<ol start="6"><li>In the <b>Triggers</b> dropdown, select all the triggers you want to add to the webhook.</li>
+<li>Click <b>Create</b>.</li>
+<img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;">
 
 The webhook is created and displayed in the <b>Webhooks</b> section of the app page.
 
@@ -160,8 +160,8 @@ To enable the channel on the XO Platform, follow the steps below:
 * **App ID**: Copied in Step 6 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
 
 <ol start="4"><li>Select '<b>Yes</b>’ for <b>Enable Channel</b>.</li>
-<li>Click <b>Save</b>.
-<img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<li>Click <b>Save</b>.</li>
+<img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;"></ol>
 
 After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
 
