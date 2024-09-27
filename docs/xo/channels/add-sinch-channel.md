@@ -150,7 +150,7 @@ To enable the channel on the UXO Platform, follow the steps below:
 <ol><li>Go to <b>Automation AI</b> > <b>Flows & Channels</b> on the left navigation menu.</li>
 <li> Select <b>Digital</b> under <b>Channels</b>.</li>
 <li> Click the <b>All</b> tab, and select <b>Sinch</b> in the <b>Enterprise Channels</b> section.</li>
- <img src="../images/set-up-channels.png" alt="set up channels" title="set up channels" style="border: 1px solid gray; zoom:75%;"></ol>
+ <img src="../images/select-sinch.png" alt="select Sinch" title="select Sinch" style="border: 1px solid gray; zoom:75%;"></ol>
 
 <ol start="4"><li>Click the <b>Configurations</b> tab.</li>
 <li>Copy the relevant field values from your <b>Sinch Conversation API</b> app and paste them into the relevant fields as follows:</li></ol>
@@ -194,5 +194,7 @@ These templates ensure compliance with the channel’s messaging policies, espec
 * [Interactive (Quick Reply and Call-to-action)](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#interactive-template){:target="_blank"}
 * [Authentication](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#authentication-template){:target="_blank"}
 * [Carousel](https://developers.sinch.com/docs/conversation/channel-support/whatsapp/template-support/#carousel-template){:target="_blank"}
+
+For additional assistance with using Message Templates and Types for your Sinch channel on the UXO Platform, please [contact](https://kore.ai/support/){:target="_blank"} our developer support team.
 
 To learn more about working with messaging channels within the XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}
