@@ -71,7 +71,7 @@ The <b>Key</b> is created, and the <i>Key ID</i> & <i>Key Secret</i> are generat
 
 <ol start="9"><li>Click <b>Confirm</b>.</li></ol>
 
-You are returned to the **Access Keys** page, where your new key is displayed in the **Access key list** section:
+You are returned to the **Access Keys** page, where your new key is displayed in the **Access key list** section.
 
 <div class="admonition note">
 <p class="admonition-title"><b>Note</b></p>
