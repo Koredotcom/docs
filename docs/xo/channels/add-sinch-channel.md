@@ -58,7 +58,7 @@ To create an access key, follow the steps below:
 <li>Provide a display name for your access key in the <b>New Access Key</b> window, and click <b>Confirm</b>.
 <img src="../images/new-sinch-access-key.png" alt="new access key" title="new access key" style="border: 1px solid gray; zoom:75%;"></li>
 
-The **Key** is created, and the *Key ID* & *Key Secret* are generated as shown in the form below.
+The <b>Key</b> is created, and the <i>Key ID</i> & <i>Key Secret</i> are generated as shown in the form below.
 
 <img src="../images/key-id-and-secret.png" alt="key id and secret" title="key id and secret" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -75,7 +75,7 @@ You are returned to the **Access Keys** page, where your new key is displayed in
 
 <div class="admonition note">
 <p class="admonition-title"><b>Note</b></p>
-<p>The <b>KEY SECRET</b> is only displayed when a new *Access key* is created.</p>
+<p>The <b>KEY SECRET</b> is only displayed when a new <i>Access key</i> is created.</p>
 </div>
 
 ## Step 2: Create An App
@@ -99,9 +99,9 @@ Follow the steps below to create an app. Alternatively, you can use [API calls](
 
 <img src="../images/new-app.png" alt="new app" title="new app" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="4"><li>>Click <b>Create</b>.
+<ol start="4"><li>Click <b>Create</b>.
 
-The newly created APP is displayed in the **Apps** section.
+The newly created APP is displayed in the <b>Apps</b> section.
 <img src="../images/new-app-id.png" alt="new app id" title="new app id" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click the <b>App Name</b> and go to the <b>App Details</b> screen.</li>
 <li>Copy and save the <b>App ID</b> displayed in the <b>Configuration</b> section. Paste it into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.
@@ -127,7 +127,7 @@ The **New webhook** form is displayed.
 <li>Click <b>Create</b>.
 <img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;"></li>
 
-The webhook is created and displayed in the **Webhooks** section of the app page.
+The webhook is created and displayed in the <b>Webhooks</b> section of the app page.
 
 <img src="../images/webhooks-section.png" alt="webhook listing" title="webhook listing" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -147,9 +147,9 @@ Next, you must configure the delivery channel for the conversations with the ste
 
 To enable the channel on the XO Platform, follow the steps below:
 
-1. Go to **Deploy** > **Channels** page and select ***Sinch*** in the **Enterprise Channels** section.
-2. Click the **Configurations** tab.
-3. Copy the relevant field values from your **Sinch Conversation API** app and paste them into the relevant fields as follows:
+<ol><li>Go to <b>Deploy</b> > <b>Channels</b> page and select <b>Sinch</b> in the <b>Enterprise Channels</b> section.</li>
+<li>Click the <b>Configurations</b> tab.</li>
+<li>Copy the relevant field values from your <b>Sinch Conversation API</b> app and paste them into the relevant fields as follows:</li></ol>
 
 * **Sinch Region Base URL**: Copied in Step 3 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
 
