@@ -145,10 +145,14 @@ Next, you must configure the delivery channel for the conversations with the ste
 
 ## Step 5: Enable the Channel on the XO Platform
 
-To enable the channel on the XO Platform, follow the steps below:
+To enable the channel on the UXO Platform, follow the steps below:
 
-<ol><li>Go to <b>Deploy</b> > <b>Channels</b> page and select <b>Sinch</b> in the <b>Enterprise Channels</b> section.</li>
-<li>Click the <b>Configurations</b> tab.</li>
+<ol><li>Go to <b>Automation AI</b> > <b>Flows & Channels</b> on the left navigation menu.</li>
+<li> Select <b>Digital</b> under <b>Channels</b>.</li>
+<li> Click the <b>All</b> tab, and select <b>Sinch</b> in the <b>Enterprise Channels</b> section.</li>
+ <img src="../images/set-up-channels.png" alt="set up channels" title="set up channels" style="border: 1px solid gray; zoom:75%;"></ol>
+
+<ol start="4"><li>Click the <b>Configurations</b> tab.</li>
 <li>Copy the relevant field values from your <b>Sinch Conversation API</b> app and paste them into the relevant fields as follows:</li></ol>
 
 * **Sinch Region Base URL**: Copied in Step 3 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
@@ -159,12 +163,11 @@ To enable the channel on the XO Platform, follow the steps below:
 
 * **App ID**: Copied in Step 6 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
 
-<ol start="4"><li>Select '<b>Yes</b>’ for <b>Enable Channel</b>.</li>
+<ol start="5"><li>Select '<b>Yes</b>’ for <b>Enable Channel</b>.</li>
 <li>Click <b>Save</b>.</li>
 <img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;"></ol>
 
 After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
-
 
 ## Message Types
 
