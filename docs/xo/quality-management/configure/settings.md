@@ -34,7 +34,7 @@ Steps to enable the Conversation Intelligence:
 
 Steps to disable the Conversation Intelligence Dashboard:
 
-1. Disable the **Conversation Intelligence Dashboard** toggle. The following dialog box appears.  
+1. Disable the **Conversation Intelligence Dashboard** toggle button. The following dialog box appears.  
 <img src="../images/disable-conversation-intelligence.png" alt="Disable Converstion Intelligence" title="Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
