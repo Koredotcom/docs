@@ -40,11 +40,11 @@ To create an access key, follow the steps below:
     This page shows your project(s) and corresponding Project ID(s) and a list of your Access keys and the corresponding KEY IDs.
 
 <ol start="4"><li>In the top left corner of your screen, next to the <i>Sinch</i> logo, select the desired project from the <b>Project</b> dropdown.</li>
-<li>Copy and save the <b>Project ID</b> of your project. Paste it into the relevant field on the XO Platform’s Sinch <b>Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.
+<li>Copy and save the <b>Project ID</b> of your project. Paste it into the relevant field on the XO Platform’s Sinch <b>Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
 
-<img src="../images/copy-project-id.png" alt="copy project id" title="copy project id" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/copy-project-id.png" alt="copy project id" title="copy project id" style="border: 1px solid gray; zoom:75%;"></ol>
 
-<p>You can also copy the Project ID by clicking <b>Conversation API</b> > <b>Overview</b> on the left menu.</p></li>
+<p>You can also copy the <b>Project ID</b> by clicking <b>Conversation API</b> > <b>Overview</b> on the left menu.</p>
 
 <img src="../images/conersation-api-overview.png" alt="conversation api" title="conversation api" style="border: 1px solid gray; zoom:75%;">
 
@@ -53,7 +53,7 @@ To create an access key, follow the steps below:
 <p>When you sign up for a Sinch account, a default project is created for you. Conversation API uses this project to group contacts and apps together. To create additional projects, contact your Sinch account manager for assistance.</p>
 </div>
 
-<li>Click the <b>New Key</b> or <b>Create Access Key</b> button in the <b>Access Keys List</b> section.</li>
+<ol start="6"><li>Click the <b>New Key</b> or <b>Create Access Key</b> button in the <b>Access Keys List</b> section.</li>
 
 <li>Provide a display name for your access key in the <b>New Access Key</b> window, and click <b>Confirm</b>.
 <img src="../images/new-sinch-access-key.png" alt="new access key" title="new access key" style="border: 1px solid gray; zoom:75%;"></li>
@@ -125,11 +125,11 @@ The **New webhook** form is displayed.
 <img src="../images/paste-in-sinch-configurations.png" alt="configure on xo" title="configure on xo" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="6"><li>In the <b>Triggers</b> dropdown, select all the triggers you want to add to the webhook.</li>
 <li>Click <b>Create</b>.</li>
-<img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;"></ol>
 
 The webhook is created and displayed in the <b>Webhooks</b> section of the app page.
 
-<img src="../images/webhooks-section.png" alt="webhook listing" title="webhook listing" style="border: 1px solid gray; zoom:75%;"></ol>
+<img src="../images/webhooks-section.png" alt="webhook listing" title="webhook listing" style="border: 1px solid gray; zoom:75%;">
 
 ## Step 4: Configure the Delivery Channel
 
