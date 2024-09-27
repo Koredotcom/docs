@@ -48,7 +48,7 @@ Steps to disable the Conversation Intelligence Dashboard:
 
 ### Script Adherence Configuration
 
-This allows you to add and define a set of dynamic messages or scripts for the user or agent. The Script adherence configuration caters to specific messages that a user wants to visualize the adherence in the Conversation Intelligence Dashboard.
+This allows you to add and define a set of dynamic messages or scripts for the user or agent. By default, the script adherence widget uses a default generic script to check for adherence, using this app level configuration, the user can set custom messages for each step of the script to visualize adherence to the custom message instead of the default script message.
 
 Steps to enable the Script Adherence Configuration:
 
