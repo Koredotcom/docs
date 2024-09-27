@@ -53,10 +53,10 @@ To create an access key, follow the steps below:
 <p>When you sign up for a Sinch account, a default project is created for you. Conversation API uses this project to group contacts and apps together. To create additional projects, contact your Sinch account manager for assistance.</p>
 </div>
 
-<li>Click the <b>New Key</b> or <b>Create Access Key</b> button in the <b>Access Keys List</b> section.
-<img src="../images/new-sinch-access-key.png" alt="new access key" title="new access key" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Click the <b>New Key</b> or <b>Create Access Key</b> button in the <b>Access Keys List</b> section.</li>
 
-<li>Provide a display name for your access key and click <b>Confirm</b>.</li>
+<li>Provide a display name for your access key in the <b>New Access Key</b> window, and click <b>Confirm</b>.
+<img src="../images/new-sinch-access-key.png" alt="new access key" title="new access key" style="border: 1px solid gray; zoom:75%;"></li>
 
 The **Key** is created, and the *Key ID* & *Key Secret* are generated as shown in the form below.
 
