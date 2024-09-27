@@ -32,43 +32,44 @@ The Conversation API uses OAuth2 tokens for authentication, which can be obtaine
 
 To create an access key, follow the steps below:
 
-1. [Log in ](https://dashboard.sinch.com/login){:target="_blank"} to your Sinch account and navigate to the developer dashboard.
+1. [Log in](https://dashboard.sinch.com/login){:target="_blank"} to your Sinch account and navigate to the developer dashboard.
 2. Select **Settings** in the left menu and navigate to the **General Settings** screen.
 3. Select **Access Keys** under **Settings** and navigate to the **Access Keys** screen.
 <img src="../images/sinch-settings-access-keys.png" alt="access keys" title="access keys" style="border: 1px solid gray; zoom:75%;">
  
-This page shows your project(s) and corresponding Project ID(s) and a list of your Access keys and the corresponding KEY IDs.
+    This page shows your project(s) and corresponding Project ID(s) and a list of your Access keys and the corresponding KEY IDs.
 
-4. In the top left corner of your screen, next to the *Sinch* logo, select the desired project from the **Project** dropdown.
-5. Copy and save the ***Project ID*** of your project. Paste it into the relevant field on the XO Platform’s Sinch **Configurations** page. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_5_Enable_the_Channel_on_the_XO_Platform){:target="_blank"}.
+<ol start="4"><li>In the top left corner of your screen, next to the <i>Sinch</i> logo, select the desired project from the <b>Project</b> dropdown.</li>
+<li>Copy and save the <b>Project ID</b> of your project. Paste it into the relevant field on the XO Platform’s Sinch <b>Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.
+
 <img src="../images/copy-project-id.png" alt="copy project id" title="copy project id" style="border: 1px solid gray; zoom:75%;">
 
-You can also copy the Project ID by clicking **Conversation API** > **Overview** on the left menu.
+<p>You can also copy the Project ID by clicking <b>Conversation API</b> > <b>Overview</b> on the left menu.</p>
 
-<img src="../images/conersation-api-overview.png" alt="conversation api" title="conversation api" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/conersation-api-overview.png" alt="conversation api" title="conversation api" style="border: 1px solid gray; zoom:75%;"></li>
 
 <div class="admonition note">
 <p class="admonition-title"><b>Note</b></p>
 <p>When you sign up for a Sinch account, a default project is created for you. Conversation API uses this project to group contacts and apps together. To create additional projects, contact your Sinch account manager for assistance.</p>
 </div>
 
-6. Click the **New Key** or **Create Access Key** button in the **Access Keys List** section.
-<img src="../images/new-sinch-access-key.png" alt="new access key" title="new access key" style="border: 1px solid gray; zoom:75%;">
+<li>Click the <b>New Key</b> or <b>Create Access Key</b> button in the <b>Access Keys List</b> section.
+<img src="../images/new-sinch-access-key.png" alt="new access key" title="new access key" style="border: 1px solid gray; zoom:75%;"></li>
 
-7. Provide a display name for your access key and click **Confirm**.
+<li>Provide a display name for your access key and click <b>Confirm</b>.</li>
 
 The **Key** is created, and the *Key ID* & *Key Secret* are generated as shown in the form below.
 
-<img src="../images/key-id-and-secret.png" alt="key id and secret" title="key id and secret" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/key-id-and-secret.png" alt="key id and secret" title="key id and secret" style="border: 1px solid gray; zoom:75%;"></ol>
 
-8. Copy the **Key ID** and **Key Secret** and paste them into the relevant field on the XO Platform’s **Sinch Configurations** page. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_5_Enable_the_Channel_on_the_XO_Platform){:target="_blank"}.
+<ol start ="8"><li>Copy the <b>Key ID</b> and <b>Key Secret</b> and paste them into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li></ol>
 
 <div class="admonition warning">
 <p class="admonition-title"><b>Important</b></p>
 <p>You must copy and store the generated <b>Key Secret</b>. You cannot retrieve it again once you’ve created the key.</p>
 </div>
 
-9. Click **Confirm**. 
+<ol start="9"><li>Click <b>Confirm</b>.</li></ol>
 
 You are returned to the **Access Keys** page, where your new key is displayed in the **Access key list** section:
 
@@ -98,14 +99,13 @@ Follow the steps below to create an app. Alternatively, you can use [API calls](
 
 <img src="../images/new-app.png" alt="new app" title="new app" style="border: 1px solid gray; zoom:75%;">
 
-4. Click **Create**.
+<ol start="4"><li>>Click <b>Create</b>.
 
 The newly created APP is displayed in the **Apps** section.
-<img src="../images/new-app-id.png" alt="new app id" title="new app id" style="border: 1px solid gray; zoom:75%;">
-
-5. Click the **App Name** and go to the **App Details** screen.
-6. Copy and save the **App ID** displayed in the **Configuration** section. Paste it into the relevant field on the XO Platform’s **Sinch Configurations** page. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_5_Enable_the_Channel_on_the_XO_Platform){:target="_blank"}.
-<img src="../images/copy-and-save-app-id.png" alt="copy and save app id" title="copy and save app id" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/new-app-id.png" alt="new app id" title="new app id" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Click the <b>App Name</b> and go to the <b>App Details</b> screen.</li>
+<li>Copy and save the <b>App ID</b> displayed in the <b>Configuration</b> section. Paste it into the relevant field on the XO Platform’s <b>Sinch Configurations</b> page. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.
+<img src="../images/copy-and-save-app-id.png" alt="copy and save app id" title="copy and save app id" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ## Step 3: Configure the Webhook URL
 
@@ -119,19 +119,17 @@ The **New webhook** form is displayed.
 
 <img src="../images/new-webhook-form.png" alt="new webhook form" title="new webhook form" style="border: 1px solid gray; zoom:75%;">
 
-3. In the **Target type** dropdown, select *HTTP*.
-4. In the **Target URL** field, copy and paste the **WebHook URL** value from the XO Platform’s **Channels** > **Sinch** > **Configurations**  section. [Learn more](../channels/add-sinch-channel.md/#step-5-enable-the-channel-on-the-xo-platform){:target="_blank"}.
-5. In the **Secret token** field, copy and paste the value for **Verify Token** from the XO Platform’s **Channels** > **Sinch** > **Configurations** section. This token enables the webhook to validate against your chosen endpoint.
-<img src="../images/paste-in-sinch-configurations.png" alt="configure on xo" title="configure on xo" style="border: 1px solid gray; zoom:75%;">
-
-6. In the **Triggers** drop-down, select all the triggers you want to add to the webhook.
-7. Click **Create**.
-
-    <img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;">
+<ol start="3"><li>In the <b>Target type</b> dropdown, select <i>HTTP</i>.</li>
+<li>In the <b>Target URL</b> field, copy and paste the <b>WebHook URL</b> value from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. <a href="https://docs.kore.ai/xo/channels/add-sinch-channel/#step-5-enable-the-channel-on-the-xo-platform" target="_blank">Learn more</a>.</li>
+<li>In the <b>Secret token</b> field, copy and paste the value for <b>Verify Token</b> from the XO Platform’s <b>Channels</b> > <b>Sinch</b> > <b>Configurations</b> section. This token enables the webhook to validate against your chosen endpoint.
+<img src="../images/paste-in-sinch-configurations.png" alt="configure on xo" title="configure on xo" style="border: 1px solid gray; zoom:75%;"></li>
+<li>In the <b>Triggers</b> drop-down, select all the triggers you want to add to the webhook.</li>
+<li>Click <b>Create</b>.
+<img src="../images/click-create-webhook.png" alt="click create webhook" title="click create webhook" style="border: 1px solid gray; zoom:75%;"></li>
 
 The webhook is created and displayed in the **Webhooks** section of the app page.
 
-<img src="../channels//images/webhooks-section.png" alt="webhook listing" title="webhook listing" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/webhooks-section.png" alt="webhook listing" title="webhook listing" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ## Step 4: Configure the Delivery Channel
 
@@ -152,13 +150,18 @@ To enable the channel on the XO Platform, follow the steps below:
 1. Go to **Deploy** > **Channels** page and select ***Sinch*** in the **Enterprise Channels** section.
 2. Click the **Configurations** tab.
 3. Copy the relevant field values from your **Sinch Conversation API** app and paste them into the relevant fields as follows:
+
 * **Sinch Region Base URL**: Copied in Step 3 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
+
 * **Project ID**: Copied in Step 5 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_1_Capture_the_Sinch_Project_Access_keys_for_Authentication){:target="_blank"}.
+
 * **Access Key Id** and **Access Key Secret**: Copied in Step 8 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_1_Capture_the_Sinch_Project_Access_keys_for_Authentication){:target="_blank"}.
+
 * **App ID**: Copied in Step 6 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sinch-conversation-api-channel/#Step_2_Create_An_App){:target="_blank"}.
-1. Select ‘**Yes**’ for **Enable Channel**.
-2. Click **Save**.
-<img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;">
+
+<ol start="4"><li>Select '<b>Yes</b>’ for <b>Enable Channel</b>.</li>
+<li>Click <b>Save</b>.
+<img src="../images/xo-platform-sinch.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
 
