@@ -197,4 +197,4 @@ These templates ensure compliance with the channel’s messaging policies, espec
 
 For additional assistance with using Message Templates and Types for your Sinch channel on the UXO Platform, please [contact](https://kore.ai/support/){:target="_blank"} our developer support team.
 
-To learn more about working with messaging channels within the XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}
+To learn more about working with messaging channels within the UXO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}
