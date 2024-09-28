@@ -32,7 +32,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td colspan="3" ><strong>Email ID</strong> is displayed for all the category events below.
+   <td colspan="3" ><b>Metadata</b>: <strong><i>Email ID</i></strong> is displayed for all the category events below.
    </td>
   </tr>
     <tr>
@@ -69,7 +69,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    </tr>
   <tr>
-   <td colspan="3" ><strong>Role ID</strong> is displayed for all the category events below, except <em>Role Changed</em>.
+   <td colspan="3"><b>Metadata</b>: <strong><i>Role ID</i></strong> is displayed for all the category events below, except <em>Role Changed</em>.
    </td>
   </tr>
       <tr>
@@ -121,7 +121,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    </tr>
   <tr>
-  <td colspan="3"><b>Integration Name</b>, <b>Integration ID</b>, and <b>Integration Type</b> are displayed for all the category events below.</td></tr>
+  <td colspan="3"><b>Metadata</b>: <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, and <b><i>Integration Type</i></b> are displayed for all the category events below.</td></tr>
         <tr>
    <td><strong>Event</strong>
    </td>
@@ -149,10 +149,11 @@ Additionally, you can set **custom filters** based on a specific category, event
    </tr>
   <tr>
    <td colspan="3">
+   <p><b>Metadata</b>:</p>
 <ul>
-<li><strong>Model ID </strong>and <strong>Model Name</strong> are displayed for all the<em> Model</em> category events.
-<li><strong>Model Type</strong> is displayed for <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
-<li><strong>Hardware Type</strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
+<li><strong><i>Model ID</i></strong> and <strong><i>Model Name</i></strong> are displayed for all the <em>Model</em> category events.
+<li><strong><i>Model Type</i></strong> is displayed for <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
+<li><strong><i>Hardware Type</i></strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
 </li>
 </ul>
    </td>
@@ -286,7 +287,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    </tr>
   <tr>
-   <td colspan="3"><strong>Agent ID </strong>and<strong> Agent Name </strong> are displayed for all the category events below.
+   <td colspan="3"><b>Metadata</b>: <strong><i>Agent ID</i></strong> and <strong><i>Agent Name</i></strong> are displayed for all the category events below.
    </td>
   </tr>
      <tr>
@@ -368,9 +369,10 @@ Additionally, you can set **custom filters** based on a specific category, event
    </tr>
   <tr>
    <td colspan="3">
+   <p><b>Metadata</b>:</p>
 <ul>
-<li><strong>Prompt ID </strong>is displayed for all the <em>Prompts </em>category events.
-<li><strong>Prompt Name</strong> is displayed for <em>Prompt created</em>, <em>Versions Committed</em>, <em>Versions Restored</em>, <em>Prompt Shared</em>, <em>Endpoint Copied</em>, and <em>API Key Created </em>category events.
+<li><strong><i>Prompt ID</i></strong> is displayed for all the <em>Prompts </em>category events.
+<li><strong><i>Prompt Name</i></strong> is displayed for <em>Prompt created</em>, <em>Versions Committed</em>, <em>Versions Restored</em>, <em>Prompt Shared</em>, <em>Endpoint Copied</em>, and <em>API Key Created </em>category events.
 </li>
 </ul>
    </td>
@@ -489,7 +491,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    </tr>
    <tr>
-   <td colspan="3"><strong>Guardrail Name</strong>, <strong>Guardrail ID</strong>, and <strong>Hardware Type </strong>are displayed for all the category events below.
+   <td colspan="3">
+   <b>Metadata</b>: <strong><i>Guardrail Name</i></strong>, <strong><i>Guardrail ID</i></strong>, and <strong><i>Hardware Type</i></strong> are displayed for all the category events below.
    </td>
   </tr>
   <tr>
