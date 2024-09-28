@@ -78,7 +78,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
   </tr>
   <tr>
    <td><strong>Answer</strong>
-   <td><p>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the set up time. </p>
+   <td><p>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the setup time. </p>
    
    In this, you can enter or select more than one expected answer using generative AI having different utterances matching your question. In addition, you have the option to delete the added answers. 
    
@@ -89,7 +89,19 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
 
-</li>
+  <tr>
+   <td><strong>Count Type</strong>
+   <td><p>Provides the following two options based on the Adherence Type is selected: </p><ul>
+
+<li><strong>Entire Conversation</strong>: This allows you to check for adherence at different points of conversation. It does not matter where the agent wants to check adherence throughout the conversation. 
+
+<li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.</li>
+<ul><li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
+
+If you select the <strong>First Part of Conversation </strong> or the <strong> Last  Part of Conversation</strong>, then enter the following subsection details provided:</ul></li>
+
+<ul><ul><li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.
+<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.
 </ul>
    </td>
   </tr>
@@ -135,9 +147,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 
 <li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
 
-<p><strong>Dead Air Metric Qualification</strong>: If the number of dead air instances is lesser than the number of acceptable instances in the metric configuration, the interaction will qualify the metric and will fail against the dead air metric if the no.of instances exceeds the configured limit (an instance will only be accounted as instance of dead air if it exceeds the configured dead air duration).</p>
-
-<ul><li>In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.</ul></li>
+<li><strong>Dead Air Metric Qualification</strong>: The interaction will qualify for the metric if the number of dead air instances is less than the acceptable limit set in the metric configuration. Conversely, if the number of instances exceeds the configured limit, the interaction will fail the dead air metric. An instance will only be counted as dead air if it exceeds the specified dead air duration.</li>
 
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.</li>
  

@@ -45,21 +45,18 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Enterprise Channels
 
-
 | [Cisco Jabber](./add-cisco-jabber-channel.md) <br><br> [![](./images/logo1-jabber.png)](./add-cisco-jabber-channel.md) | [Cisco Webex Teams<br>(formerly  Cisco Spark)](./add-cisco-channel.md)  <br>[![](./images/logo2-cisco-webex-teams.png)](./add-cisco-channel.md) | [Google Assistant](./add-google-assistant-channel.md) <br><br> [![](./images/logo4-google-assistant.png)](./add-google-assistant-channel.md)| [Genesys Cloud  <br>CX Messaging](./add-genesys-chat-channel.md)   <br> [![](./images/logo5-genesys-chat-new-logo.png)](./add-genesys-chat-channel.md)|
 |:---:|:---:|:---:|:---:|
-[**Google Business Messaging**](./add-google-business-messaging-channel.md)  <br>[![](./images/logo6-gbm.png)](./add-google-business-messaging-channel.md) | [**Google Chat**](./add-google-chat.md) <br> <br>[![](./images/logo7-google-chat.png)](./add-google-chat.md) | [**Kore.ai**](./add-kore-channel.md)  <br>  <br>[![](./images/logo8-kore-ai.png)](./add-kore-channel.md) | [**Live Person**](./add-live-person-channel.md) <br>  <br>[![](./images/logo9-live-person.png)](./add-live-person-channel.md)
-
-
-
+[Google Business Messaging](./add-google-business-messaging-channel.md)  <br>[![](./images/logo6-gbm.png)](./add-google-business-messaging-channel.md) | [Google Chat](./add-google-chat.md) <br> <br>[![](./images/logo7-google-chat.png)](./add-google-chat.md) | [Kore.ai](./add-kore-channel.md)  <br>  <br>[![](./images/logo8-kore-ai.png)](./add-kore-channel.md) | [Live Person](./add-live-person-channel.md) <br>  <br>[![](./images/logo9-live-person.png)](./add-live-person-channel.md)|
+|:---:|:---:|:---:|:---:|
 |[Mattermost](./add-mattermost-channel.md)  <br>   <br>[![](./images/logo10-mattermost.png)](./add-mattermost-channel.md) | [Microsoft Teams](./add-microsoft-teams-channel.md)  <br>  <br>[![](./images/logo11-ms-teams.png)](./add-microsoft-teams-channel.md) | [Naver Works](./add-naver-works-channel.md)    <br>[![](./images/logo12-naver.png)](./add-naver-works-channel.md) | [Nice inContact](./add-nice-incontact-channel.md)   <br>  <br>[![](./images/logo13-nice.png)](./add-nice-incontact-channel.md) |
+|[RCS Business Messaging](./add-google-rcs-channel.md)<br>  <br>[![](./images/logo14-rcs.png)](./add-google-rcs-channel.md)| [Glip by RingCentral](./add-ringcentral-glip-channel.md)  <br><br>[![](./images/logo15-glip.png)](./add-ringcentral-glip-channel.md) | [RingCentral  Engage](./add-ringcentral-engage-channel.md)   <br><br>[![](./images/logo16-ring-central.png)](./add-ringcentral-engage-channel.md) | [Sinch](./add-sinch-channel.md)  <br> <br>[![](./images/sinch-logo.png)](./add-sinch-channel.md)|
 |:---:|:---:|:---:|:---:|
-|[**RCS Business Messaging**](./add-google-rcs-channel.md)<br>  <br>[![](./images/logo14-rcs.png)](./add-google-rcs-channel.md)| [**Glip by RingCentral**](./add-ringcentral-glip-channel.md)  <br><br>[![](./images/logo15-glip.png)](./add-ringcentral-glip-channel.md) | [**RingCentral  Engage**](./add-ringcentral-engage-channel.md)   <br><br>[![](./images/logo16-ring-central.png)](./add-ringcentral-engage-channel.md) | [**Skype for Business**](./add-skype-business-channel.md)  <br> <br>[![](./images/logo17-skype-business.png)](./add-skype-business-channel.md) |
-
-
-| [Slack](./add-slack-channel.md) <br>  <br>[![](./images/logo18-slack.png)](./add-slack-channel.md) | [Sunshine Conversations](./add-sunshine-conversations-channel.md)   <br><br>[![](./images/logo19-sunshine-conversations.png)](./add-sunshine-conversations-channel.md) | [Syniverse](./add-syniverse-channel.md)  <br>  <br>[![](./images/logo20-syniverse.png)](./add-syniverse-channel.md) | [Unblu](./add-unblu-channel.md)  <br>  <br>[![](./images/logo21-unblu.png)](./add-unblu-channel.md) |
+| [Skype for Business](./add-skype-business-channel.md)  <br> <br>[![](./images/logo17-skype-business.png)](./add-skype-business-channel.md) | [Slack](./add-slack-channel.md) <br>  <br>[![](./images/logo18-slack.png)](./add-slack-channel.md) | [Sunshine Conversations](./add-sunshine-conversations-channel.md)   <br><br>[![](./images/logo19-sunshine-conversations.png)](./add-sunshine-conversations-channel.md) | [Syniverse](./add-syniverse-channel.md)  <br>  <br>[![](./images/logo20-syniverse.png)](./add-syniverse-channel.md)|
 |:---:|:---:|:---:|:---:|
-| [**WhatsApp Business<br>Messaging**](./add-whatsapp-business-channel.md)  <br><br>[![](./images/logo22-whatsapp-business.png)](./add-whatsapp-business-channel.md) | [**Workplace By Facebook**](./add-workplace-by-facebook-channel.md) <br> <br>[![](./images/logo23-wp-facebook.png)](./add-workplace-by-facebook-channel.md) | [**Yammer**](./add-microsoft-yammer-channel.md) <br>  <br>[![](./images/logo24-yammer.png)](./add-microsoft-yammer-channel.md) | [**Zoom Contact Center**](./add-zoom-contact-center-channel.md) <br> <br>[![](./images/logo25-zoom.png)](./add-zoom-contact-center-channel.md) | 
+| [Unblu](./add-unblu-channel.md)  <br>  <br>[![](./images/logo21-unblu.png)](./add-unblu-channel.md) | [WhatsApp Business<br>Messaging](./add-whatsapp-business-channel.md)  <br><br>[![](./images/logo22-whatsapp-business.png)](./add-whatsapp-business-channel.md) | [Workplace By Facebook](./add-workplace-by-facebook-channel.md) <br> <br>[![](./images/logo23-wp-facebook.png)](./add-workplace-by-facebook-channel.md) | [Yammer](./add-microsoft-yammer-channel.md) <br>  <br>[![](./images/logo24-yammer.png)](./add-microsoft-yammer-channel.md)|
+|:---:|:---:|:---:|:---:|
+| [Zoom Contact Center](./add-zoom-contact-center-channel.md) <br> <br>[![](./images/logo25-zoom.png)](./add-zoom-contact-center-channel.md)|
 
 
 
