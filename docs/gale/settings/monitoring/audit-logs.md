@@ -24,7 +24,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
-<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module and category specific metadata listed in the table below.</p></div>
+<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module and category specific metadata listed in the tables below.</p></div>
 
 <table>
     <tr>
@@ -64,6 +64,9 @@ Additionally, you can set **custom filters** based on a specific category, event
     -
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Roles
    </td>
@@ -116,6 +119,9 @@ Additionally, you can set **custom filters** based on a specific category, event
     -
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Integrations
    </td>
@@ -143,6 +149,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    <td>Tracks integration deletions in the account.
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Models
    </td>
@@ -200,7 +209,6 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>
 <ul>
-
 <li>Training method
 
 <li>No. of epochs
@@ -282,6 +290,9 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Agents
    </td>
@@ -324,6 +335,9 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
     <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Users Management
    </td>
@@ -363,6 +377,9 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
       <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Prompts
    </td>
@@ -462,6 +479,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    <td>Tracks the prompt generation done by the accout user.
    </td>
   </tr>
+  </table>
+
+  <table>
       <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Dataset
    </td>
@@ -486,6 +506,9 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
      <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Guardrails
    </td>
