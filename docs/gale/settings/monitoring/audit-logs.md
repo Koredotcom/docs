@@ -32,7 +32,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td colspan="3" ><strong>Email ID</strong> is <strong> </strong>is displayed for all the category events below.
+   <td colspan="3" ><strong>Email ID</strong> is displayed for all the category events below.
    </td>
   </tr>
     <tr>
@@ -40,7 +40,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -60,8 +60,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the account logout activity.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
@@ -77,7 +77,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -85,8 +85,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the edits done to a custom role.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
@@ -112,8 +112,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the role changes made for member users. This also includes role  changes for multiple users (bulk change).
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
@@ -127,7 +127,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -135,8 +135,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks integrations added by the user to the account.
    </td>
-   <td rowspan="2" >No additional parameters.
-   </td>
+   <td rowspan="2" align="center">-</td>
    </tr>
   <tr>
    <td>Integration deleted
@@ -163,7 +162,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -171,8 +170,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the addition of external models to the account.
    </td>
-   <td rowspan="4" >
-    No additional parameters.
+   <td rowspan="4" align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -295,7 +294,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -303,8 +302,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the creation of an agent in the account.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -333,7 +332,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -381,7 +380,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -389,8 +388,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the creation of a prompt by the account user.
    </td>
-   <td rowspan="2" >
-    No additional parameters.
+   <td rowspan="2" align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -422,8 +421,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the prompts shared by the account user with other users.
    </td>
-   <td rowspan="3" >
-    No additional parameters
+   <td rowspan="3" align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -470,7 +469,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -498,7 +497,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
@@ -506,8 +505,8 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the guardrails deployment in the account.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
