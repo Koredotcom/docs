@@ -38,7 +38,7 @@ To configure the Component Properties tab, please follow the steps below:
     6. **Data Service** – Define CRUD operations to query and manipulate the data for any given data table/table view.
 
 3. Based on the service type selected, select the **Type/Sub Type** from the respective drop-down lists or Auth URL.
-4. Define the **Pre-processor Script** to pass the input parameters dynamically for executing an Service Node’s API call. [Learn more](#pre-processor-script).
+4. Define the **Pre-processor Script** to pass the input parameters dynamically for executing a Service Node’s API call. [Learn more](#pre-processor-script).
 
 5. Under the **Request Definition** section, click **Define Request**.
 
