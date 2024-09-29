@@ -77,7 +77,7 @@ To configure the Component Properties tab, please follow the steps below:
         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
     * Under **Redaction of PII Data**, you can configure how the value of this entity should be presented if it is identified as PII data and is used in defining any messages or responses. You can choose to de-identify PII Data or use the original values while presenting this data to the user.
     For more information, see the [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"} article.  
-    <img src="../images/service-node-img4-add-sample-response.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;">
 
 11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
