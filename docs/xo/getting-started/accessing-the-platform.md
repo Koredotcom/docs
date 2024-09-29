@@ -183,13 +183,11 @@ After creating the Workspace, Administrators can invite new members to their wor
 
 Steps to invite users:
 
-1. Click the **Invite** option from the top navigation menu on the Platform Landing Page.
+1. Click the **Invite** option from the top navigation menu on the Platform Landing Page.  
+    <img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
-
-2. Provide the user's email address you want to invite and press enter. You can either invite individual users or multiple users.
-
-<img src="../getting-started/images/" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+2. Provide the user's email address you want to invite and press enter. You can either invite individual users or multiple users.  
+    <img src="../images/accplatform_invite_users.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Invite**. An invitation email is sent to the invited users.
 4. When the invited user accepts the invitation, they can access the workspace.
