@@ -69,7 +69,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
    </td>
    <td>Yes
    </td>
-   <td>Bot ID or Stream ID. You can access it from the General Settings page of the bot.
+   <td>Bot ID or Stream ID. You can access it from the APP Settings page of the APP.
    </td>
   </tr>
 </table>
@@ -207,12 +207,16 @@ language before setting it as the default
 Error message: Please provide the valid language code
 ```
 
+    !!! note
 
-!!!Note: 
+        * There is no rollback once the API execution is complete.
+        * No publishing is required to display the default language in published mode.
+        * Once the API is executed, the default language will be reflected immediately.
 
-    * There is no rollback once the API execution is complete.
-    * No publishing is required to display the default language in published mode.
-    * Once the API is executed, the default language will be reflected immediately.
+
+
+
+    
 
 
 
