@@ -63,7 +63,7 @@ XO Platform now protects sensitive data in LLM calls by adding placeholders. For
 This update includes an important terminology change on the platform:
 
 * Zero-shot Model Naming Consistency: Standardized the name to 'Zero-shot Model' across the platform, eliminating confusion caused by inconsistent naming; for example, ‘Zero-shot Model with OpenAI’ was used under ML > Network Type.
-* The Guardrail previously named "Blacklist Topics" has been renamed to "Restrict Topics" for improved clarity and inclusivity.
+* The Guardrail previously named "Blacklist Topics" has been renamed to "Restrict Topics".
 
 ### Getting Started
 
