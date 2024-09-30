@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.6.0 September 28, 2024
 
-<u> Patch Release </u>
+<u> Minor Release </u>
 
 This update includes enhancements and bug fixes.
 
