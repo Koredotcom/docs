@@ -20,11 +20,11 @@ This guardrail analyzes and prevents the dissemination of potentially harmful co
 
 For example, you can detect scenarios where the LLM has generated toxic content that your customers may find inappropriate. 
 
-### Blacklist Topics
+### Restrict Topics
 
-Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be blacklisted in the guardrails and ensure the LLM is not responding to requests related to that topic.  
+Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be restricted in the guardrails and ensure the LLM is not responding to requests related to that topic.  
 
-For example, you can blacklist the topics like politics, violence, religion, etc.
+For example, you can Restrict the topics like politics, violence, religion, etc.
 
 !!! note
 
@@ -64,7 +64,7 @@ The Guardrails are currently available for the following features: **GenAI Node*
   <tr>
     <td>Guardrail</td>
     <td colspan="2">Restrict Toxicity</td>
-    <td colspan="2">Blacklist Topics</td>
+    <td colspan="2">Restrict Topics</td>
     <td colspan="2">Detect Prompt Injections</td>
     <td colspan="2">Filter Responses</td>
   </tr>
