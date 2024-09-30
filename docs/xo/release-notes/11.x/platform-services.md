@@ -10,7 +10,6 @@ This update includes enhancements and bug fixes.
 
 ### LLM & Generative AI
 
-
 #### **Dynamic Variables for LLM Integration** 
 
 XO Platform now supports dynamic variables for integration with Language Models. It allows platform users to use content, context, and environment variables when configuring system and custom LLMs. It helps create more adaptable and secure virtual assistants that can easily adjust to different needs and settings.
@@ -99,6 +98,7 @@ Key benefits:
 * Simplify development and deployment with a unified API for multiple messaging platforms.
 * Create seamless and engaging user experiences across various channels.
 * Enhance security and user authentication in messaging interactions.  
+
 [Learn more :octicons-arrow-right-24:](../../channels/add-sinch-channel.md)
 
 ### Web SDK
@@ -120,6 +120,7 @@ Key benefits:
 * Flexibility to switch between UI and SDK configurations.
 
 Backward compatibility:
+
 * Existing SDK configurations remain intact until the override option is enabled in the UI.
 
 ### App Settings
@@ -149,7 +150,7 @@ Key benefits:
 ### Marketplace
 
 #### **Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**
-The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
+The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node-v2.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
 
 <hr>
 ## v11.5.1 September 14, 2024
