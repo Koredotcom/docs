@@ -1,6 +1,26 @@
 # Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
+## v11.6.0 September 28, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes.
+
+### Structured Data as a Source Type
+
+SearchAI now enables the ingestion and indexing of structured data in JSON format using the JSON connector, providing greater flexibility in handling complex data. This feature allows users to seamlessly process and search through structured datasets for more efficient and accurate results.
+
+### Retrieve Chunk Metadata through Full and Advanced Search APIs
+
+This enhancement to the Advanced Search API allows users to specify and include custom metadata fields in the generated answers. The API response can now be customized to fetch user-defined metadata fields for each chunk in addition to the default fields, providing a more customized and detailed output.
+
+### RACL Support for Connectors
+
+Search AI now supports access control on content ingested from selected connectors, including ServiceNow, Confluence Cloud, Jira, SharePoint, and Google Drive. This ensures that users only access content they are authorized to view, enhancing data security and compliance. To enforce access control, user identity information is required during content retrieval. Additional connectors will be supported in future releases.
+
+
+<hr>
 
 ## v11.5.1 September 14, 2024
 
