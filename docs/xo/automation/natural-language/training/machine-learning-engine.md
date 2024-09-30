@@ -289,7 +289,7 @@ Thus, the intents have to be defined very well. This approach is well-suited for
 
     If required, the user can add dialogs for the intents.
 
-2. The user should enable the **Zero-Shot Network Type** under **Training**
+2. The user should enable the **Zero-Shot Network Type** under **Training**.
 3. The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the **Zero-Shot** model are considered definitive matches.
 
 **Rescoring of Intents for Definitive Matches**
