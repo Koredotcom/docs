@@ -359,7 +359,7 @@ Steps to Listen and Whisper Voice Conversations:
 ## Interactions
 
 You can view all live interactions on the Contact Center AI console. This view includes only interactions that involve agent transfers. A summary of the interactions view is shown below:  
-<img src="../images/interactions-tab.png" alt="Join Conversation" title="Join Conversation" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/interactions-tab.png" alt="Interactions Tab" title="Interactions Tab" style="border: 1px solid gray; zoom:80%;">
 
 ### Manually Assign Conversations to an Agent and Change Queue
 
