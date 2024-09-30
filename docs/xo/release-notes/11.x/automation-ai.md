@@ -4,14 +4,9 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.6.0 September 28, 2024
 
-<u> Patch Release </u>
+<u> Minor Release </u>
 
 This update includes enhancements and bug fixes.
-
-## Deprecation of Answer from Documents
-
-The Search AI module introduced in the XO v11 version provides an advanced RAG framework for answer generation use cases. The 'Answer from Documents' feature provides very basic RAG functionality. The feature will no longer receive updates and will be discontinued in an upcoming release. We strongly recommend that customers use the [Search AI](../../searchai/about-search-ai.md) module.
-
 
 ### Dialog Builder
 

@@ -4,9 +4,62 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.6.0 September 28, 2024
 
-<u> Patch Release </u>
+<u> Minor Release </u>
 
 This update includes enhancements and bug fixes.
+
+### LLM & Generative AI
+
+
+#### **Dynamic Variables for LLM Integration** 
+
+XO Platform now supports dynamic variables for integration with Language Models. It allows platform users to use content, context, and environment variables when configuring system and custom LLMs. It helps create more adaptable and secure virtual assistants that can easily adjust to different needs and settings.
+
+Key features:
+
+* Use content and environment variables for Co-pilot features and all variable types for Dynamic Conversation features.
+* Configure API keys, endpoints, authentication settings, etc., using variables.
+* Test LLM configurations using sample values.
+
+Key benefits:
+
+* Adapt LLM settings across different environments.
+* Enhance security by storing sensitive information as environment variables.
+* Simplify configuration management and updates.
+* Improve testing and development processes.
+* Enable flexible deployment for multi-tenant applications.
+
+#### **Enhanced Guardrails Framework for GenAI**
+
+This update significantly improves the Guardrails framework, enhancing safety and reliability in GenAI deployments. With optimized screening, better reporting, and broader LLM support, platform users can create more secure and effective AI solutions while improving overall system performance.
+
+Key updates:
+
+* Optimized screening process for faster responses.
+* Detailed fallback reporting with specific breach information.
+* Improved logging for better visibility into guardrail activities.
+* Extended support for custom LLMs.
+
+Key benefits:
+
+* Increased safety and reliability in GenAI deployments.
+* Improved developer experience with clearer logging and debugging.
+* Faster response times due to optimized screening processes.
+* Consistent guardrail enforcement across all LLM types.
+
+Backward compatibility:
+
+* This update applies to all existing bots, ensuring a seamless transition to the improved framework.
+
+#### **Enhanced PII Protection in LLM Interactions**
+
+XO Platform now protects sensitive data in LLM calls by adding placeholders. For example, phone numbers are replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
+
+#### **Terminology Updates for Improved Clarity and Inclusivity**
+
+This update includes an important terminology change on the platform:
+
+* Zero-shot Model Naming Consistency: Standardized the name to 'Zero-shot Model' across the platform, eliminating confusion caused by inconsistent naming; for example, ‘Zero-shot Model with OpenAI’ was used under ML > Network Type.
 
 ### Getting Started
 
@@ -28,6 +81,46 @@ Workspace Invite UI:
 
 * Redesigned for a more intuitive and efficient experience.
 * Modern, cohesive look aligned with overall platform design.
+
+### Channels
+
+#### **Sinch Conversational API Integration**
+
+XO Platform now supports **Sinch** as a new channel. Sinch offers a new omnichannel integration that allows developers to enable virtual assistant interactions across multiple channels, eliminating the need to set up and manage each channel individually.
+
+Key features:
+
+* **Omnichannel Support**: Manage conversations seamlessly through a single API and deploy virtual assistants across multiple channels, including WhatsApp, Facebook Messenger, Instagram, Viber Bot, Viber Business Messages, Telegram Bot, KakaoTalk, LINE, WeChat, RCS, SMS, MMS, and Sinch Chat.
+* **Rich Messaging Capabilities**: Send text messages, media, and rich content across various channels. Maintain consistent user interactions with conversation management.
+* **Template Compatibility**: Ensure compatibility between selected templates and the configured delivery channel in Sinch.
+
+Key benefits:
+
+* Simplify development and deployment with a unified API for multiple messaging platforms.
+* Create seamless and engaging user experiences across various channels.
+* Enhance security and user authentication in messaging interactions.  
+[Learn more :octicons-arrow-right-24:](../../channels/add-sinch-channel.md)
+
+### Web SDK
+
+#### **Enhanced Webchat Configuration - From SDK to UI**
+
+Previously, configuring certain Webchat features required SDK modifications. This update brings key SDK Webchat functionalities into the user interface, allowing for a more unified and user-friendly approach to bot customization.
+
+Key updates:
+
+* Manage Webchat settings directly from the UI without using SDK.
+* New UI-configurable parameters include location sharing, Google Maps API integration, Chat history management, Paginated scrolling, Typing indicator customization, Emoji shortcut controls, and Speaker and Send button toggles.
+* SDK Override Option to prioritize UI configurations over SDK settings. This option is disabled by default to render the existing customizations and can be enabled for seamless transitions.
+
+Key benefits:
+
+* Faster and simpler Webchat setup and modification process.
+* Greater control over Webchat features without SDK knowledge.
+* Flexibility to switch between UI and SDK configurations.
+
+Backward compatibility:
+* Existing SDK configurations remain intact until the override option is enabled in the UI.
 
 ### App Settings
 
