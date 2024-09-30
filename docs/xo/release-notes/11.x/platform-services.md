@@ -28,6 +28,8 @@ Key benefits:
 * Improve testing and development processes.
 * Enable flexible deployment for multi-tenant applications.
 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#llm-integration-using-dynamic-variables)
+
 #### **Enhanced Guardrails Framework for GenAI**
 
 This update significantly improves the Guardrails framework, enhancing safety and reliability in GenAI deployments. With optimized screening, better reporting, and broader LLM support, platform users can create more secure and effective AI solutions while improving overall system performance.
@@ -50,6 +52,8 @@ Backward compatibility:
 
 * This update applies to all existing bots, ensuring a seamless transition to the improved framework.
 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
+
 #### **Enhanced PII Protection in LLM Interactions**
 
 XO Platform now protects sensitive data in LLM calls by adding placeholders. For example, phone numbers are replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
@@ -59,6 +63,7 @@ XO Platform now protects sensitive data in LLM calls by adding placeholders. For
 This update includes an important terminology change on the platform:
 
 * Zero-shot Model Naming Consistency: Standardized the name to 'Zero-shot Model' across the platform, eliminating confusion caused by inconsistent naming; for example, ‘Zero-shot Model with OpenAI’ was used under ML > Network Type.
+* The Guardrail previously named "Blacklist Topics" has been renamed to "Restrict Topics" for improved clarity and inclusivity.
 
 ### Getting Started
 
@@ -123,9 +128,11 @@ Backward compatibility:
 
 * Existing SDK configurations remain intact until the override option is enabled in the UI.
 
+[Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#virtual-assistant-theme--design)
+
 ### App Settings
 
-#### **Change Default Bot/App Language via API**
+#### **Change Default App Language via API**
 
 The XO platform now allows users to update the default language of their existing apps using a public API, providing greater flexibility and control over their chatbot configurations.
 
