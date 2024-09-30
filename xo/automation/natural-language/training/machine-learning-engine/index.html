@@ -4155,9 +4155,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#zero-shot-learning-model-with-openai" class="md-nav__link">
+  <a href="#zero-shot-learning-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Zero-Shot Learning Model with OpenAI
+      Zero-Shot Learning Model
     </span>
   </a>
   
@@ -9149,27 +9149,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/data-anonymization/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Anonymization
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
@@ -11673,7 +11652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center/" class="md-nav__link">
+      <a href="../../../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -15214,9 +15193,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#zero-shot-learning-model-with-openai" class="md-nav__link">
+  <a href="#zero-shot-learning-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Zero-Shot Learning Model with OpenAI
+      Zero-Shot Learning Model
     </span>
   </a>
   
@@ -15722,10 +15701,10 @@
 <li>
 <p><strong>KAEN</strong> (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, <a href="https://arxiv.org/pdf/1505.00853.pdf" target="_blank">Learn more</a>).</p>
 </li>
-<li><strong>Zero-Shot Model with OpenAI</strong>: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.</li>
+<li><strong>Zero-Shot Model</strong>: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.</li>
 <li><strong>Few-shot Model (Kore.ai Hosted Embeddings)</strong>: Helps define more number of granular intents that describe the user’s intention in the utterance more accurately with limited training requirement.</li>
 </ul>
-<h3 id="zero-shot-learning-model-with-openai">Zero-Shot Learning Model with OpenAI<a class="headerlink" href="#zero-shot-learning-model-with-openai" title="Permanent link">&para;</a></h3>
+<h3 id="zero-shot-learning-model">Zero-Shot Learning Model<a class="headerlink" href="#zero-shot-learning-model" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Before using this feature, enable the <a href="../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action/" target="_blank">OpenAI Integration</a></p>
@@ -15756,7 +15735,7 @@
 <li>Bot Synonyms and stop words are not used for intent detection.</li>
 <li>When ZSL is enabled, all the matches from the ML engine are definite.</li>
 <li>The <strong>Definite Score</strong> is changed to 80% by default for ZSL based on the NLP performance and accuracy.</li>
-<li>Only the <strong><em>Incorrect Patterns</em></strong> and <strong><em>Wrong Entity Annotation</em></strong> goal-driven validations are enabled when <strong><em>Zero-Shot Learning Model with OpenAI</em></strong> is enabled.</li>
+<li>Only the <strong><em>Incorrect Patterns</em></strong> and <strong><em>Wrong Entity Annotation</em></strong> goal-driven validations are enabled when <strong><em>Zero-Shot Model</em></strong> is enabled.</li>
 </ul>
 </div>
 <p><strong>How it works</strong></p>
@@ -15767,7 +15746,7 @@
 <p>If required, the user can add dialogs for the intents.</p>
 </li>
 <li>
-<p>The user should enable the <strong>Zero-Shot Network Type</strong> under <strong>Training</strong></p>
+<p>The user should enable the <strong>Zero-Shot Network Type</strong> under <strong>Training</strong>.</p>
 </li>
 <li>The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the <strong>Zero-Shot</strong> model are considered definitive matches.</li>
 </ol>
@@ -15793,12 +15772,12 @@
 <ol>
 <li>Navigate to <strong>Natural Language &gt; NLU Config &gt; Machine Learning</strong>.</li>
 <li>
-<p>Select <strong><em>Zero-Shot Model with OpenAI</em></strong> in the dropdown list for <strong>Network Type</strong>, and click <strong>Save</strong>.</p>
+<p>Select <strong><em>Zero-Shot Model</em></strong> in the dropdown list for <strong>Network Type</strong>, and click <strong>Save</strong>.</p>
 <p><a class="glightbox" href="../images/zero-shot-model-selection-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 </ol>
 <p><strong>Testing the Utterance</strong></p>
-<p>To test the utterance for the <strong>Zero-Shot Learning Model with OpenAI</strong> Network Type, follow the steps below:</p>
+<p>To test the utterance for the <strong>Zero-Shot Model</strong> Network Type, follow the steps below:</p>
 <ol>
 <li>Navigate to <strong>Testing</strong> &gt; <strong>Utterance Testing</strong>.</li>
 <li>
@@ -15949,7 +15928,7 @@ ii. The <strong>Feature Extraction</strong> and <strong>Sequence Length</strong>
 <li>The modified sentence is used for intent identification (generation of embedding as well as similarity checks).</li>
 </ul>
 <h3 id="nlu-language-selection">NLU Language Selection<a class="headerlink" href="#nlu-language-selection" title="Permanent link">&para;</a></h3>
-<p>When you select the <strong>Zero-shot Model with OpenAI</strong> or <strong>Few-shot Model</strong> Network Types to train the intent models (on the <strong><em>Engine Tuning &gt; Machine Learning</em></strong> page), you must ensure that the NLU Language enabled is <strong><em>English</em></strong> (default) under <strong>Configurations</strong> &gt; <strong>Languages</strong>.</p>
+<p>When you select the <strong>Zero-shot Model</strong> or <strong>Few-shot Model</strong> Network Types to train the intent models (on the <strong><em>Engine Tuning &gt; Machine Learning</em></strong> page), you must ensure that the NLU Language enabled is <strong><em>English</em></strong> (default) under <strong>Configurations</strong> &gt; <strong>Languages</strong>.</p>
 <p>If you enable another language, the system does not allow selecting these two network types, and displays an error message as shown below:</p>
 <p><a class="glightbox" href="../images/nlu-non-english-language-selection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/nlu-non-english-language-selection.png" alt="nlu non-english language selection" title="nlu non-english language selection" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="ml-threshold">ML Threshold<a class="headerlink" href="#ml-threshold" title="Permanent link">&para;</a></h3>

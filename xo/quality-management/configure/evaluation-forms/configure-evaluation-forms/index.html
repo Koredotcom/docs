@@ -8699,27 +8699,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/data-anonymization/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Anonymization
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
@@ -11223,7 +11202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center/" class="md-nav__link">
+      <a href="../../../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -14616,7 +14595,7 @@
 
 
 <h1 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h1>
-<p>This evaluation phase streamlines the Quality Management (QM) evaluation process to drive better customer experience where the QA manager sets up the evaluation criteria for users or agents. Each QA and contact center has different operation procedures based on logical or functional groupings.</p>
+<p>This evaluation phase streamlines the Quality AI evaluation process to drive better customer experience where the QA manager sets up the evaluation criteria for users or agents. Each QA and contact center has different operation procedures based on logical or functional groupings.</p>
 <p>For better handling of the evaluation criteria, this evaluation stage is divided into the following two sections:</p>
 <ul>
 <li>Evaluation Forms</li>
@@ -14625,8 +14604,9 @@
 <h2 id="evaluation-forms">Evaluation Forms<a class="headerlink" href="#evaluation-forms" title="Permanent link">&para;</a></h2>
 <p>The Evaluation Forms are designed to check adherence to individual questions. They are a collection of metrics that let you score, audit, and interact (for Conversation Intelligence and Auto QA Scoring). Once these forms are created, you can assign them to the QM auditors as assessments for review compliance.</p>
 <p>The Evaluation Form includes chosen metrics with customizable weights totaling 100%. The Evaluation Forms are configured and assigned to respective Channels and Queues for audit. Each queue in the Chat and Voice channels can host only one evaluation form.</p>
-<p>You can access the Evaluation Forms by going to <strong>Contact Center AI</strong> &gt; <strong>Quality Management</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Forms</strong>.<br />
-<a class="glightbox" href="../images/add-new-evaluation-forms.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>You can access the Evaluation Forms by navigating to <strong>Contact Center AI</strong> &gt; <strong>Quality AI</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Forms</strong>.  </p>
+<p><a class="glightbox" href="../images/add-new-evaluation-forms.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><strong>Note</strong>: To create and configure evaluation forms, the Auto QA setting must be enabled first.</p>
 <p>The Evaluation Forms has the following options:</p>
 <ul>
 <li><strong>Name</strong>: Shows the name of the Evaluation Form.</li>
@@ -14639,13 +14619,14 @@
 <li><strong>Search</strong>: Provides a quick search option to view and update the Evaluation Forms by name only.</li>
 </ul>
 <h3 id="add-new-evaluation-form">Add New Evaluation Form<a class="headerlink" href="#add-new-evaluation-form" title="Permanent link">&para;</a></h3>
-<p>You can access the Evaluation Metrics by going to <strong>Contact Center AI</strong> &gt; <strong>Quality Management</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Forms</strong> &gt; <strong>New Evaluation Forms</strong>.  </p>
+<p>You can access the Evaluation Metrics by navigating to <strong>Contact Center AI</strong> &gt; <strong>Quality AI</strong> &gt; <strong>Configure</strong> &gt; <strong>Evaluation Forms</strong> &gt; <strong>New Evaluation Forms</strong>.  </p>
 <p>Steps to create a new Evaluation Form:
 <a class="glightbox" href="../images/add-new-evaluation-form.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ol>
-<li>Click the <strong>New Evaluation Form</strong> button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.<br />
+<li>Click the <strong>+New Evaluation Form</strong> button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.<br />
 <a class="glightbox" href="../images/add-new-evaluation-forms-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ol>
+<p><strong>Note:</strong> It is mandatory for the agents to attain the minimum pass score set by the Supervisor. If the pass score is not met for a given interaction, it will be evaluated as Fail.</p>
 <p>The following table describes the Evaluation Forms details:</p>
 <table>
   <tr>
@@ -14710,7 +14691,7 @@ For example, if there is more than one Evaluation Metric, the total percentage m
 </table>
 
 <ol>
-<li>Click Create to <strong>Add New Evaluation Form</strong> to the queue for review.</li>
+<li>Click <strong>Create</strong> to <strong>Add New Evaluation Form</strong> to the queue for review.</li>
 <li>
 <p>In case, if you are changing the existing channel mode from Voice to Chat or vice-versa which is already added, then the following dialog box appears.<br />
 <a class="glightbox" href="../images/channel-update.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/channel-update.png" alt="Channel Update Confirmation" title="Channel Update Confirmation" style="border: 1px solid gray; zoom:70%;"></a></p>

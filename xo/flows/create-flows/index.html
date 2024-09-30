@@ -1221,6 +1221,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#sms" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -8783,27 +8792,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/data-anonymization/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Anonymization
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
@@ -11307,7 +11295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center/" class="md-nav__link">
+      <a href="../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -14709,6 +14697,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#sms" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -14817,7 +14814,7 @@
 <ol>
 <li>In the left navigation, go to <strong>Flows &amp; Channels</strong> &gt; <strong>FLOWS</strong>.</li>
 <li>
-<p>Click <strong>+ New Start Flow</strong>.
+<p>Click <strong>+ New Start Flow</strong>.<br />
 <a class="glightbox" href="../images/new-start-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/new-start-flow.png" alt="New Start Flow" title="New Start Flow" style="border: 1px solid gray; zoom:100%;"></a></p>
 </li>
 <li>
@@ -14916,10 +14913,6 @@
 <p class="admonition-title">Note</p>
 <p>Only flows that have been published will be available for selection in the dropdowns.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only flows that have been published will be available for selection in the dropdowns.</p>
-</div>
 </li>
 </ol>
 <h4 id="chat">Chat<a class="headerlink" href="#chat" title="Permanent link">&para;</a></h4>
@@ -14928,11 +14921,34 @@
 <li><strong>All</strong>: Selecting it selects the Web/Mobile Client and any other services available within your account for the chat flow.</li>
 <li>
 <p><strong>Web/Mobile Client</strong>: The web client is the front-end component of any conversational AI system or application that communicates with a server and is accessed by the end-user on a desktop or mobile device.<br />
-<a class="glightbox" href="../images/chat-channels.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/chat-channels.png" alt="Chat Channels" title="Chat Channels" style="border: 1px solid gray; zoom:100%;"></a></p>
+<a class="glightbox" href="../images/chat-channels.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/chat-channels.png" alt="Chat Channels" title="Chat Channels" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Under Advanced Settings, you can enable <strong>Prompt Overrides at Input Nodes</strong>. When this feature is enabled, unprocessed user inputs will be passed to the first input node encountered in the flow without returning the actual prompt stored against the input node. This is useful for scenarios where a conversation ends and is then restarted by the user. For example, the user will not see the first “Welcome Message” again, as they would when starting a new conversation. Instead, they will receive a relevant reply to the utterance.
-<a class="glightbox" href="../images/prompt-overrides-at-input-nodes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/prompt-overrides-at-input-nodes.png" alt="Prompt Overrides at Input Nodes" title="Prompt Overrides at Input Nodes" style="border: 1px solid gray; zoom:100%;"></a></p>
+<a class="glightbox" href="../images/prompt-overrides-at-input-nodes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/prompt-overrides-at-input-nodes.png" alt="Prompt Overrides at Input Nodes" title="Prompt Overrides at Input Nodes" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Select a <strong>No Agents Available Flow</strong> (Optional): The published version of the selected flow will be executed when an agent transfer is triggered, but no agents are available, or the conversation exceeds the maximum waiting time in the queue.
+<a class="glightbox" href="../images/no-agents-available-flow-chat.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/no-agents-available-flow-chat.png" alt="No Agents available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Select an <strong>Out-of-Hours Flow</strong> (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours.
+<a class="glightbox" href="../images/out-of-hours-flow-chat.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only flows that have been published will be available for selection in the dropdowns.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Update &amp; Continue to Flow Design</strong>, you are taken to the Flow Designer, where you can work on the Flow itself.</p>
+</li>
+</ol>
+<h4 id="sms">SMS<a class="headerlink" href="#sms" title="Permanent link">&para;</a></h4>
+<p>Selecting SMS will display all the phone numbers configured in the channels section.</p>
+<ol>
+<li>
+<p>Select a phone number to map to the start flow.<br />
+<a class="glightbox" href="../images/select-number.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-number.png" alt="Select Number" title="Select Number" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Select a <strong>No Agents Available Flow</strong> (Optional): The published version of the selected flow will be executed when an agent transfer is triggered, but no agents are available, or the conversation exceeds the maximum waiting time in the queue.
@@ -14945,9 +14961,6 @@
 <p class="admonition-title">Note</p>
 <p>Only flows that have been published will be available for selection in the dropdowns.</p>
 </div>
-</li>
-<li>
-<p>Click <strong>Update &amp; Continue to Flow Design</strong>, you are taken to the Flow Designer, where you can work on the Flow itself.</p>
 </li>
 </ol>
 <h2 id="edit-a-start-flow">Edit a Start Flow<a class="headerlink" href="#edit-a-start-flow" title="Permanent link">&para;</a></h2>

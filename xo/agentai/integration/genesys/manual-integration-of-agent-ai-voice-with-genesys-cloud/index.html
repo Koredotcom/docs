@@ -8724,27 +8724,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/data-anonymization/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Anonymization
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
@@ -11248,7 +11227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center/" class="md-nav__link">
+      <a href="../../../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -14711,7 +14690,7 @@
 <a class="glightbox" href="../images/integ-oauth-add-client-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/integ-oauth-add-client-2.png" alt="integ-oauth-add-client" title="integ-oauth-add-client" style="border: 1px solid gray; zoom:80%;"></a></li>
 <li>Enter the app name, description, and token duration in the <strong>App Name</strong>, <strong>Description</strong>, and <strong>Token Duration</strong> fields.</li>
 <li>Select <strong>Token Implicit Grant (Browser)</strong> in the <strong>Grant Types</strong> fields.</li>
-<li>Add <a href="https://agentassist.kore.ai/koreaiaa-genesys/">https://agentassist.kore.ai/koreaiaa-genesys/</a> in the <strong><em>Authorized redirect URIs (one per line)</em></strong> section.</li>
+<li>Add <a href="https://platform.kore.ai/koreaiaa-genesys/">https://platform.kore.ai/koreaiaa-genesys/</a> in the <strong><em>Authorized redirect URIs (one per line)</em></strong> section.</li>
 <li>Add the following list of scopes in the <strong>Scope</strong> section:<ul>
 <li>architect</li>
 <li>conversations</li>
@@ -14745,12 +14724,9 @@
 <a class="glightbox" href="../images/open-interaction-widget-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/open-interaction-widget-7.png" alt="open-interaction-widget" title="open-interaction-widget" style="border: 1px solid gray; zoom:80%;"></a> </li>
 <li>Go to the <strong>Configuration</strong> tab of the Interaction Widget.
 <a class="glightbox" href="../images/interaction-widget-configuration-tab-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/interaction-widget-configuration-tab-8.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;"></a> </li>
-<li>In the <strong>Application URL</strong> field, enter the following structure; use the <strong>OAuth ID</strong> from <a href="#step-1-oauth-credential">Step 1</a>.</li>
+<li>In the <strong>Application URL</strong> field, enter the following structure; use the <strong>OAuth ID</strong> from <a href="#step-1-oauth-credential">Step 1</a>: <a href="https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&amp;lang=%7B%7BgcLangTag%7D%7D&amp;environment=%7B%7BgcHostOrigin%7D%7D&amp;genesysid=">https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&amp;lang={{gcLangTag}}&amp;environment={{gcHostOrigin}}&amp;genesysid=</a>&lt;genesys-oauth-Id&gt;</li>
+<li>Allow all permissions in <strong>iFrame Sandbox Options</strong> and <strong>iFrame Feature/Permission Policy</strong>.</li>
 </ol>
-<p><a href="https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&amp;lang=%7B%7BgcLangTag%7D%7D&amp;environment=%7B%7BgcHostOrigin%7D%7D&amp;genesysid=">https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&amp;lang={{gcLangTag}}&amp;environment={{gcHostOrigin}}&amp;genesysid=</a>&lt;genesys-oauth-Id&gt;</p>
-<p>Or</p>
-<p><a href="https://platform.kore.ai/koreaiaa-genesys/">https://platform.kore.ai/koreaiaa-genesys/</a>
-8. Allow all permissions in <strong>iFrame Sandbox Options</strong> and <strong>iFrame Feature/Permission Policy</strong>.</p>
 <p><strong>iFrame Sandbox Options</strong>:
 allow-forms,allow-modals,allow-popups,allow-presentation,allow-same-origin,allow-scripts,allow-downloads.</p>
 <p><strong>iFrame Feature/Permission Policy</strong>: camera,microphone,geolocation,clipboard-write,display-capture,fullscreen.</p>
@@ -14775,32 +14751,47 @@ allow-forms,allow-modals,allow-popups,allow-presentation,allow-same-origin,allow
 <li>Go to <strong>Admin</strong> &gt; <strong>People &amp; Permissions</strong> &gt; <strong>Roles / Permissions</strong>.</li>
 <li>Click <strong>Add Role</strong> to create a new Role.</li>
 <li>Give a distinctive name to the Role; for example, <strong>KoreaiAA Agent</strong>.</li>
-<li>On the <strong>Permission</strong> tab, search for the following and add (select the box):</li>
-</ol>
-<p><strong>Architect</strong> &gt; <strong>DataTable</strong> &gt; <strong>View</strong></p>
-<p><strong>Conversation</strong> &gt; <strong>Transcription</strong> &gt; <strong>View</strong></p>
-<p><strong>Note</strong>: The Conversation permission is available only in CX3 license.</p>
-<ol>
-<li>Once finished, the <strong>Assigned Permissions</strong> view should look like this:
-<a class="glightbox" href="../images/assigned-permissions-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/assigned-permissions-10.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li>
+<p>On the <strong>Permission</strong> tab, search for the following and add (select the box): </p>
+<p><strong>Architect</strong> &gt; <strong>DataTable</strong> &gt; <strong>View</strong> </p>
+<p><strong>Conversation</strong> &gt; <strong>Transcription</strong> &gt; <strong>View</strong>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Conversation permission is available only in CX3 license.</p>
+</div>
+</li>
+<li>
+<p>Once finished, the <strong>Assigned Permissions</strong> view should look like this:
+<a class="glightbox" href="../images/assigned-permissions-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/assigned-permissions-10.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
 <li>Once the role is created, click the three dots at the right end of the <strong>Permission role</strong> and select <strong>Change Membership</strong>.
 <a class="glightbox" href="../images/change-membership-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/change-membership-11.png" alt="change-membership" title="change-membership" style="border: 1px solid gray; zoom:80%;"></a></li>
 <li>Add appropriate agents to the role.</li>
 </ol>
 <h3 id="step-4-data-table-configuration"><strong>Step 4: Data Table Configuration</strong><a class="headerlink" href="#step-4-data-table-configuration" title="Permanent link">&para;</a></h3>
 <p>This step includes creation of a Data Table with Agent AI bot details.</p>
-<p><strong>Note</strong>: The configuration data is stored directly in the Custom Fields of the Data Table, not in a Data Table row. A single Data Table represents a configuration of Agent AI. In other words, the default values of the Custom Fields contain the necessary configuration data to load the Agent AI widget.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The configuration data is stored directly in the Custom Fields of the Data Table, not in a Data Table row. A single Data Table represents a configuration of Agent AI. In other words, the default values of the Custom Fields contain the necessary configuration data to load the Agent AI widget.</p>
+</div>
 <ol>
 <li>Sign in to <strong>Genesys Cloud</strong>.</li>
 <li>Go to <strong>Admin</strong> &gt; <strong>Architect</strong> &gt; <strong>Data Tables</strong>.<br />
 <a class="glightbox" href="../images/genesys-architect-data-tables-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/genesys-architect-data-tables-12.png" alt="genesys-architect-data-tables" title="genesys-architect-data-tables" style="border: 1px solid gray; zoom:80%;"></a></li>
 <li>Create a new Data Table by clicking the plus icon, and provide a relevant name such as <strong>KoreaiAA-configuration</strong>.
 <a class="glightbox" href="../images/new-data-table-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/new-data-table-13.png" alt="new-data-table" title="new-data-table" style="border: 1px solid gray; zoom:80%;"></a></li>
-<li>Click the “three dots,” and select <strong>Edit Table Fields</strong> from the list.
-<a class="glightbox" href="../images/edit-table-fields-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;"></a>
-<strong>Note</strong>: Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.</li>
-<li>Click <strong>Add Field</strong> to create five custom fields to provide the Agent AI configuration.
-<a class="glightbox" href="../images/add-field-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li>
+<p>Click the “three dots,” and select <strong>Edit Table Fields</strong> from the list.
+<a class="glightbox" href="../images/edit-table-fields-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/edit-table-fields-14.png" alt="edit-table-fields" title="edit-table-fields" style="border: 1px solid gray; zoom:80%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Reference Key label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Add Field</strong> to create five custom fields to provide the Agent AI configuration.
+<a class="glightbox" href="../images/add-field-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
 <li>Click the <strong>Add Field</strong> button under <strong>Custom Fields</strong>.
 Set the data type for all custom fields as <strong>String</strong> while adding.<br />
 <a class="glightbox" href="../images/custom-field-string-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-field-string-16.png" alt="custom-field-string" title="custom-field-string" style="border: 1px solid gray; zoom:80%;"></a></li>
@@ -14820,7 +14811,7 @@ Set the data type for all custom fields as <strong>String</strong> while adding.
   <tr>
    <td>AgentAssist URL
    </td>
-   <td><a href="https://agentassist.kore.ai/">https://agentassist.kore.ai</a>
+   <td><a href="https://platform.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html">https://platform.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html</a>
    </td>
   </tr>
   <tr>
@@ -14849,11 +14840,13 @@ Set the data type for all custom fields as <strong>String</strong> while adding.
   </tr>
 </table>
 
-<p><strong>Note</strong>:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul>
 <li>All the custom fields should be of the string type.</li>
 <li>If the “is Audiohook Enabled” option is false, the application tries to utilize the Genesys native transcriptions using the Transcriptions API.</li>
 </ul>
+</div>
 <p>To change the values, you must click the gray box surrounding each Custom Field, not directly on the textbox.</p>
 <h3 id="step-5-optional-audiohook-integration"><strong>Step 5 (Optional): Audiohook Integration</strong><a class="headerlink" href="#step-5-optional-audiohook-integration" title="Permanent link">&para;</a></h3>
 <p>The final step is to install Audiohook for voice streaming, if using Kore-managed Transcriptions.</p>

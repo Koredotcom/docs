@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../data-anonymization/">
+        <link rel="prev" href="../dynamic-conversations-features/">
       
       
         <link rel="next" href="../../app-settings/integrations/about-integration/">
@@ -8608,27 +8608,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../data-anonymization/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Anonymization
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -8699,9 +8678,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#blacklist-topics" class="md-nav__link">
+  <a href="#restrict-topics" class="md-nav__link">
     <span class="md-ellipsis">
-      Blacklist Topics
+      Restrict Topics
     </span>
   </a>
   
@@ -11336,7 +11315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center/" class="md-nav__link">
+      <a href="../../contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -14697,9 +14676,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#blacklist-topics" class="md-nav__link">
+  <a href="#restrict-topics" class="md-nav__link">
     <span class="md-ellipsis">
-      Blacklist Topics
+      Restrict Topics
     </span>
   </a>
   
@@ -14863,9 +14842,9 @@
 <h3 id="restrict-toxicity">Restrict Toxicity<a class="headerlink" href="#restrict-toxicity" title="Permanent link">&para;</a></h3>
 <p>This guardrail analyzes and prevents the dissemination of potentially harmful content in both prompts sent to the LLM and responses received from it. The LLM-generated content that contains toxic words will be automatically discarded, and an appropriate fallback action will be triggered. This ensures that only safe and non-toxic content reaches the end-user, thereby protecting both the user and the integrity of the platform.</p>
 <p>For example, you can detect scenarios where the LLM has generated toxic content that your customers may find inappropriate. </p>
-<h3 id="blacklist-topics">Blacklist Topics<a class="headerlink" href="#blacklist-topics" title="Permanent link">&para;</a></h3>
-<p>Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be blacklisted in the guardrails and ensure the LLM is not responding to requests related to that topic.  </p>
-<p>For example, you can blacklist the topics like politics, violence, religion, etc.</p>
+<h3 id="restrict-topics">Restrict Topics<a class="headerlink" href="#restrict-topics" title="Permanent link">&para;</a></h3>
+<p>Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be restricted in the guardrails and ensure the LLM is not responding to requests related to that topic.  </p>
+<p>For example, you can Restrict the topics like politics, violence, religion, etc.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We recommend adding between one and ten topics to the list for optimal performance.</p>
@@ -14885,7 +14864,7 @@
   <tr>
     <td>Guardrail</td>
     <td colspan="2">Restrict Toxicity</td>
-    <td colspan="2">Blacklist Topics</td>
+    <td colspan="2">Restrict Topics</td>
     <td colspan="2">Detect Prompt Injections</td>
     <td colspan="2">Filter Responses</td>
   </tr>
@@ -14973,29 +14952,30 @@
 </li>
 </ol>
 <h2 id="guardrails-runtime-behavior">Guardrails Runtime Behavior<a class="headerlink" href="#guardrails-runtime-behavior" title="Permanent link">&para;</a></h2>
-<p>This runtime guardrail validation ensures that only safe, appropriate, and conformant content flows through the LLM interactions, upholding responsible AI standards. When guardrails are enabled for a feature, they act as safety checks on both the requests sent to the LLM and the responses received from it. </p>
+<p>This runtime guardrail validation ensures that only safe, appropriate, and conformant content flows through the LLM interactions, upholding responsible AI standards. When guardrails are enabled for a feature, they act as safety checks on the requests sent to the LLM and the responses received. </p>
 <p>The typical flow is as follows:</p>
 <ol>
 <li>The XO Platform generates a prompt based on the user input.</li>
 <li>Enabled guardrails validate this prompt against defined safety and appropriateness rules.</li>
 <li>If the prompt passes all guardrails, it is sent to the LLM.</li>
 <li>The LLM's response is received by the XO Platform.</li>
-<li>Enabled guardrails validate the response content.</li>
+<li>Enabled guardrails to validate the response content.</li>
 <li>If the response passes all guardrails, it is displayed to the user.</li>
 </ol>
-<p>However, if any guardrail is violated at the prompt or response stage, the regular flow is interrupted, and a pre-configured fallback behavior is triggered for that feature, such as displaying a default message or skipping to the next step.</p>
+<p>However, if any guardrail is violated at the input or response stage, the regular flow is interrupted, and a pre-configured fallback behavior is triggered for that feature, such as displaying a default message or skipping to the next step. </p>
+<p>When the fallback mechanism is triggered, the system stores the details in the context object, including the reason for the breach (e.g., a breached guardrail), the cause ID, the stage of the breach (either LLM Input or LLM Output), and all breached guardrails.</p>
 <p>Also, the platform users can inspect the entire message flow in the debug logs.</p>
 <h3 id="guardrails-in-debug-logs">Guardrails in Debug Logs<a class="headerlink" href="#guardrails-in-debug-logs" title="Permanent link">&para;</a></h3>
-<p>The XO Platform provides detailed debug logs to help test, monitor, and debug the behavior of enabled guardrails. </p>
+<p>The XO Platform provides detailed debug logs to help test, monitor, and debug the behavior of enabled guardrails.</p>
 <p>These logs show:</p>
 <ul>
 <li>Whether guardrails successfully validated the prompts sent to the LLM.</li>
 <li>Whether guardrails successfully validated the responses received from the LLM.</li>
-<li>If any guardrail was violated, what’s the triggered fallback behavior for that feature?</li>
+<li>If a guardrail is breached, it shows the stage of the breach (either LLM Input or LLM Output), the Feature Name, the breached guardrails, and the guardrail request and response details.</li>
 </ul>
-<p>All LLM requests and responses, as well as guardrail validation results, are recorded in the debug logs and separate LLM and GenAI usage logs. These comprehensive logs allow platform users to verify that guardrails are working as intended, identify any issues, and audit LLM interactions across the platform's different runtime features.</p>
+<p>All LLM requests, responses, and guardrail validation results are recorded in the debug logs, <a href="../../analytics/automation/task-execution-logs/">failed task logs</a>, and <a href="../../analytics/genai-analytics/llm-usage-logs/">LLM and GenAI usage logs</a>. These comprehensive logs allow platform users to verify that guardrails are working as intended, identify issues, and audit LLM interactions across the platform's different runtime features.</p>
 <p>For example, the debug logs show five entries if a specific node has two input and three output guardrails enabled, as shown in the screenshot below.</p>
-<p><a class="glightbox" href="../images/guardrails7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/guardrails7.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;"></a></p>
+<p><a class="glightbox" href="../images/guardrails7.1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/guardrails7.1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h2 id="fallback-behavior">Fallback Behavior<a class="headerlink" href="#fallback-behavior" title="Permanent link">&para;</a></h2>
 <p>Fallback behavior lets the system determine the optimal course of action when the Guardrails are violated. Each feature has a different fallback behavior, which can be selected in the feature's advanced settings.</p>
 <h3 id="fallback-behavior-for-genai-node">Fallback Behavior for GenAI Node<a class="headerlink" href="#fallback-behavior-for-genai-node" title="Permanent link">&para;</a></h3>
@@ -15096,7 +15076,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../data-anonymization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Anonymization">
+          <a href="../dynamic-conversations-features/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dynamic Conversations Features">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -15106,7 +15086,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Data Anonymization
+                Dynamic Conversations Features
               </div>
             </div>
           </a>
