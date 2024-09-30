@@ -4,7 +4,7 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 
 | **Method** | POST |
 |--------|------|
-| **Endpoin**t** | `https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/interactionDetails`<br>`https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/calldetails` |
+| **Endpoint** | `https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/interactionDetails`<br>`https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/calldetails` |
 | **Content Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | SmartAssist Analytics |

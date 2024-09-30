@@ -2,6 +2,37 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.6.0 September 28, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes.
+
+### Dialog Builder
+
+#### **PII Redaction in API Responses (Service Node)**
+
+
+The platform now supports the redaction of sensitive/PII information in responses from external services. Users can select specific parts of API responses for PII scanning and apply suitable redaction patterns.  
+
+Key updates:
+
+* A new "PII Redaction for API responses" setting in Service Node Component Properties.
+* Customizable redaction for specific keys in API responses.
+* Multiple redaction methods, including original value, de-identification, random value, static text, or masking.
+* Supports various API response structures, including key-value pairs, arrays, and nested objects.
+* Enhanced logging with options for original or redacted data display.
+
+Key benefits:
+
+* Improved compliance with data privacy regulations
+* Reduced risk of accidental sensitive data exposure
+* Flexible configuration to balance usability and privacy.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#component-properties)
+
+<hr>
+
 ## v11.5.1 September 14, 2024
 
 <u> Patch Release </u>

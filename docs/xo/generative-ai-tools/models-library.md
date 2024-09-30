@@ -111,19 +111,109 @@ Steps to integrate a Custom LLM:
 
 9. The next step is to add[ Prompts](prompts-library.md).
 
+
+
+
+
+
+
+## LLM Integration using Dynamic Variables
+
+The Platform now enables seamless configuration of both pre-built and custom LLMs by allowing you to use content, context, and environment variables, including the secured ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
+
+Before configuring the LLM, ensure all necessary variables are set up. For more details, see [Bot Variables](../app-settings/variables/using-bot-variables.md).
+
+!!! note
+
+    Co-Pilot features can use content and environment variables. Dynamic Conversations features can use content, context, and environment variables.
+
+
+### Key Advantages
+
+**Avoid Misuse of API Keys**: By utilizing secure environment variables for API keys, the system minimizes the risk of unauthorized access. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
+
+**Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
+
+**Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
+
+
+### Configure Pre-built LLM Integration using Dynamic Variables
+
+!!! note
+
+    * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
+    * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
+
+Steps to configure a pre-built LLM using Dynamic Variables:
+
+
+
+1. Go to **Generative AI Tools** > **Models Library**.
+2. Choose the LLM you want to configure. For example, Azure OpenAI.
+3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter the variable for **Deployment ID**.
+
+    <img src="../images/azurellmdv.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+
+
+
+4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+5. On the **Testing** tab, enter the sample values for the API Key, User Sub Domain, and Model key. 
+
+
+    <img src="../images/llmsampletestingdv.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+
+
+6. Click **Save**. The configuration successful message is displayed.
+
+
+### Configure Custom LLM Integration using Dynamic Variables
+
+!!! note
+
+    For Custom LLM, you can configure Endpoint, Authorization, and Headers fields as dynamic variables.
+
+Steps to integrate a Custom LLM using Dynamic Variables:
+
+
+
+1. Go to **Generative AI Tools** > **Models Library**.
+2. Click **Custom LLM**.
+3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for **Endpoint** and **Headers**. 
+
+
+    <img src="../images/dvcustomllm.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+
+4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+5. On the Testing **tab**, enter the sample endpoint and header values. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message. 
+
+    <img src="../images/dvcustomllm1.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+
+6. On a successful connection, the save option is enabled. 
+
+
+    <img src="../images/dvcustomllm2.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+
+7. Click **Save**. The configuration successful message is displayed.
+
+
+
+
+
+
+
+
 ## Kore.ai XO GPT Integration
 
 The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation and Answer Generation.
 
-!!! note
 
-    The Kore.ai XO GPT Module is currently available only for English language interactions. The respective models are available only in our global deployment (US Cloud – https://bots.kore.ai).
+
 
 
 ### Enable Kore.ai XO GPT Integration
 Steps to enable Kore.ai XO GPT Models.
 
-1. Go to **Generative AI Tools** > **Models Library**..
+1. Go to **Generative AI Tools** > **Models Library**.
 
 2. Click **Enable Now** for Kore.ai XO GPT.
 <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
