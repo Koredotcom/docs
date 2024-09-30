@@ -29,7 +29,7 @@ Key benefits:
 * Reduced risk of accidental sensitive data exposure
 * Flexible configuration to balance usability and privacy.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#component-properties)
 
 <hr>
 
