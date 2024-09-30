@@ -117,7 +117,7 @@ Steps to integrate a Custom LLM:
 
 
 
-## Configure LLM Integration using Dynamic Variables
+## LLM Integration using Dynamic Variables
 
 The Platform now enables seamless configuration of both pre-built and custom LLMs by allowing you to use content, context, and environment variables, including the secured ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
 
@@ -125,7 +125,7 @@ Before configuring the LLM, ensure all necessary variables are set up. For more 
 
 !!! note
 
-    Co-Pilot features can use content and environment variables. Dynamic Conversations features can use content, context, and environment variables.tive-ai-tools/models-library.
+    Co-Pilot features can use content and environment variables. Dynamic Conversations features can use content, context, and environment variables.
 
 
 ### Key Advantages
@@ -215,7 +215,7 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 ### Enable Kore.ai XO GPT Integration
 Steps to enable Kore.ai XO GPT Models.
 
-1. Go to **Generative AI Tools** > **Models Library**..
+1. Go to **Generative AI Tools** > **Models Library**.
 
 2. Click **Enable Now** for Kore.ai XO GPT.
 <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
