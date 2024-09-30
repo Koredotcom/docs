@@ -207,11 +207,11 @@ language before setting it as the default
 Error message: Please provide the valid language code
 ```
 
-    !!! note
+!!! note
 
-        * There is no rollback once the API execution is complete.
-        * No publishing is required to display the default language in published mode.
-        * Once the API is executed, the default language will be reflected immediately.
+     * There is no rollback once the API execution is complete.
+     * No publishing is required to display the default language in published mode.
+     * Once the API is executed, the default language will be reflected immediately.
 
 
 
