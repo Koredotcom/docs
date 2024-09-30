@@ -241,10 +241,10 @@ You can choose between the following types. Based on the selection additional co
     The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering, and other natural language tasks. The model is trained and optimized for greater-than-word length text, such as sentences, phrases, or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is the variable-length English text and the output is a 512-dimensional vector.
 
 * **KAEN** (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, [Learn more](https://arxiv.org/pdf/1505.00853.pdf){:target="_blank"}).
-* **Zero-Shot Model with OpenAI**: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.
+* **Zero-Shot Model**: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.
 * **Few-shot Model (Kore.ai Hosted Embeddings)**: Helps define more number of granular intents that describe the user’s intention in the utterance more accurately with limited training requirement.
 
-### Zero-Shot Learning Model with OpenAI
+### Zero-Shot Learning Model
 
 !!! Important
 
@@ -279,7 +279,7 @@ Thus, the intents have to be defined very well. This approach is well-suited for
     * Bot Synonyms and stop words are not used for intent detection.
     * When ZSL is enabled, all the matches from the ML engine are definite.
     * The **Definite Score** is changed to 80% by default for ZSL based on the NLP performance and accuracy.
-    * Only the **_Incorrect Patterns_** and **_Wrong Entity Annotation_** goal-driven validations are enabled when **_Zero-Shot Learning Model with OpenAI_** is enabled.
+    * Only the **_Incorrect Patterns_** and **_Wrong Entity Annotation_** goal-driven validations are enabled when **_Zero-Shot Model_** is enabled.
 
 **How it works**
 
@@ -289,7 +289,7 @@ Thus, the intents have to be defined very well. This approach is well-suited for
 
     If required, the user can add dialogs for the intents.
 
-2. The user should enable the **Zero-Shot Network Type** under **Training**
+2. The user should enable the **Zero-Shot Network Type** under **Training**.
 3. The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the **Zero-Shot** model are considered definitive matches.
 
 **Rescoring of Intents for Definitive Matches**
@@ -323,13 +323,13 @@ When you enable **ZSL network type** for an existing bot, the system does not id
 To enable the **ZSL** model, follow the steps below:
 
 1. Navigate to **Natural Language > NLU Config > Machine Learning**.
-2. Select **_Zero-Shot Model with OpenAI_** in the dropdown list for **Network Type**, and click **Save**.
+2. Select **_Zero-Shot Model_** in the dropdown list for **Network Type**, and click **Save**.
 
     <img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
 
 **Testing the Utterance**
 
-To test the utterance for the **Zero-Shot Learning Model with OpenAI** Network Type, follow the steps below:
+To test the utterance for the **Zero-Shot Model** Network Type, follow the steps below:
 
 1. Navigate to **Testing** > **Utterance Testing**.
 2. Type the utterance.
@@ -499,7 +499,7 @@ When the **Bot Synonyms** option is enabled, the following happens:
 
 ### NLU Language Selection
 
-When you select the **Zero-shot Model with OpenAI** or **Few-shot Model** Network Types to train the intent models (on the **_Engine Tuning > Machine Learning_** page), you must ensure that the NLU Language enabled is **_English_** (default) under **Configurations** > **Languages**.
+When you select the **Zero-shot Model** or **Few-shot Model** Network Types to train the intent models (on the **_Engine Tuning > Machine Learning_** page), you must ensure that the NLU Language enabled is **_English_** (default) under **Configurations** > **Languages**.
 
 If you enable another language, the system does not allow selecting these two network types, and displays an error message as shown below:
 

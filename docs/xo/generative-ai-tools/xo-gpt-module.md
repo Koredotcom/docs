@@ -5,7 +5,7 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 
 !!! note
 
-    The Kore.ai XO GPT Module is currently available only for English language interactions. The respective models are available only in our global deployment (US Cloud – https://platform.kore.ai/builder/home).
+    The Kore.ai XO GPT Module is currently available only for English language interactions. The respective models are available in global deployment (US Cloud – https://platform.kore.ai and DE Cloud – https://de-platform.kore.ai).
 
 
 ## Advantages of Using Kore.ai XO GPT
