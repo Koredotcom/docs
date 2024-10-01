@@ -58,7 +58,7 @@ Backward compatibility:
 
 XO Platform now protects sensitive data in LLM calls by adding placeholders. For example, phone numbers are replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
 
-#### **Terminology Updates for Improved Clarity and Inclusivity**
+#### **Terminology Updates for Improved Clarity**
 
 This update includes an important terminology change on the platform:
 
