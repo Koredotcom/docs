@@ -9,7 +9,7 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 ## Prerequisites
 
 * Talkdesk account with voice automation studio flow.
-* A Kore voice bot (SmartAssist bot) trained with few use cases.
+* A Kore voice bot trained with few use cases.
 
 ## How it Works
 
@@ -80,7 +80,7 @@ This section explains both the Kore and Talkdesk side configurations for Agent E
 
 #### Kore Side Configuration
 
-For Agent Transfer and subsequent AgentAssist functionalities, configure **SIP BYE** in SmartAssist:  
+For Agent Transfer, configure **SIP BYE** in UXO by going to **Settings > Integrations > Agent Transfer > Voice > SIP Transfer > Configuration**:  
 <img src="../images/sip-bye-settings.png" alt="sip-bye-settings" title="sip-bye-settings" style="border: 1px solid gray; zoom:80%;">
 
 #### Talkdesk Side Configuration

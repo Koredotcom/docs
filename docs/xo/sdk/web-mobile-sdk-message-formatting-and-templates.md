@@ -20,8 +20,8 @@ Shows one of the following button choices for the end user for each option:
 
 **Required Parameters**
 
-* **text**: Enter the text consisting of up to 640 characters
-* **buttons**: Enter a maximum of 3 array items
+* **text**: Enter the text consisting of up to 640 characters.
+* **buttons**: Enter the array of buttons.
 
 **Example**
 
