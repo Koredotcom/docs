@@ -80,7 +80,7 @@ This section explains both the Kore and Talkdesk side configurations for Agent E
 
 #### Kore Side Configuration
 
-For Agent Transfer and subsequent AgentAssist functionalities, configure **SIP BYE** in SmartAssist:  
+For Agent Transfer and subsequent Agent AI functionalities, configure **SIP BYE** in UXO by going to **Settings > Integrations > Agent Transfer > Voice > SIP Transfer > Configuration**:  
 <img src="../images/sip-bye-settings.png" alt="sip-bye-settings" title="sip-bye-settings" style="border: 1px solid gray; zoom:80%;">
 
 #### Talkdesk Side Configuration
