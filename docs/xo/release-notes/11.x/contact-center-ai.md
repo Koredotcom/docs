@@ -29,6 +29,8 @@ The notification includes the following key information:
 * Time of submission
 * View Form link
 
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#agent-forms-for-handling-sensitive-information)
+
 ### Analytics
 
 ### Interactions Dashboard

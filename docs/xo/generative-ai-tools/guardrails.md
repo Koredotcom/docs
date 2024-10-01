@@ -201,7 +201,7 @@ All LLM requests, responses, and guardrail validation results are recorded in th
 
 For example, the debug logs show five entries if a specific node has two input and three output guardrails enabled, as shown in the screenshot below.
 
-<img src="../images/guardrails7.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/guardrails7.1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 

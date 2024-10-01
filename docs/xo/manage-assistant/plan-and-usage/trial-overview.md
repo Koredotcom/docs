@@ -39,7 +39,6 @@ Our trial program allows users to experience the full capabilities of our enterp
 
     Automation AI subscription (trial or paid) includes basic Search AI features. Full functionality requires the Advanced RAG Add-on.
 
-  
 
 ## Trial Expiration
 
