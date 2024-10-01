@@ -36,6 +36,8 @@ When multiple (different) error messages are triggered, they are all displayed i
 
 The [Raw Data API](https://docs.kore.ai/agentassist/api/raw-data-api-v2/){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
 
+<hr>
+
 ## v11.5.1 September 14, 2024
 <u> Patch Release </u>
 
