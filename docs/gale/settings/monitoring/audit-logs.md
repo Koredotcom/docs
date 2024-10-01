@@ -23,35 +23,33 @@ Additionally, you can set **custom filters** based on a specific category, event
 <li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
 <div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module-specific event and category metadata parameters listed in the table below.</p></div>
+<p class="admonition-title">Universal Metadata</p>
+<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module and category specific metadata listed in the tables below.</p></div>
 
 <table>
-  <tr>
-   <td>
-<strong>Category</strong>
+    <tr>
+   <td colspan="3" align="center"><strong>Category</strong>: Login/Logout
    </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><b>Metadata</b>: <strong><i>Email ID</i></strong> is displayed for all the category events below.
+   </td>
+  </tr>
+    <tr>
    <td><strong>Event</strong>
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td colspan="4" ><strong>Email ID</strong> is <strong> </strong>is displayed for all the category events below.
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" ><strong>Login/Logout</strong>
-   </td>
    <td>Login
    </td>
    <td>Tracks the account login activity.
    </td>
    <td>
 <ul>
-
 <li>Login method
 </li>
 </ul>
@@ -62,23 +60,36 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the account logout activity.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
+   </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Roles
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <strong><i>Role ID</i></strong> is displayed for all the category events below, except <em>Role Changed</em>.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td colspan="4" ><strong>Role ID</strong> is displayed for all the category events below, except <em>Role Changed</em>.
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="4" ><strong>Roles</strong>
-   </td>
-   <td>Role edited
+          <td>Role edited
    </td>
    <td>Tracks the edits done to a custom role.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
@@ -88,7 +99,6 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td rowspan="2" >
 <ul>
-
 <li>Role Type
 </li>
 </ul>
@@ -105,21 +115,33 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the role changes made for member users. This also includes role  changes for multiple users (bulk change).
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
+   </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Integrations
+   </td>
+   </tr>
+  <tr>
+  <td colspan="3"><b>Metadata</b>: <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, and <b><i>Integration Type</i></b> are displayed for all the category events below.</td></tr>
+        <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-  <td colspan="4"><b>Integration Name</b>, <b>Integration ID</b>, and <b>Integration Type</b> are displayed for all the category events below.</td>
-  <tr>
-   <td rowspan="2" ><strong>Integrations</strong>
-   </td>
    <td>Integration added
    </td>
    <td>Tracks integrations added by the user to the account.
    </td>
-   <td rowspan="2" >No additional parameters.
-   </td>
+   <td rowspan="2" align="center">-</td>
    </tr>
   <tr>
    <td>Integration deleted
@@ -127,28 +149,39 @@ Additionally, you can set **custom filters** based on a specific category, event
    <td>Tracks integration deletions in the account.
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
-   <td colspan="4" >
+     <td colspan="3" align="center"><strong>Category</strong>: Models
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3">
+   <p><b>Metadata</b>:</p>
 <ul>
-
-<li><strong>Model ID </strong>and <strong>Model Name</strong> are displayed for all the<em> Model</em> category events.
-
-<li><strong>Model Type</strong> is displayed for <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
-
-<li><strong>Hardware Type</strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
+<li><strong><i>Model ID</i></strong> and <strong><i>Model Name</i></strong> are displayed for all the <em>Model</em> category events.
+<li><strong><i>Model Type</i></strong> is displayed for <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
+<li><strong><i>Hardware Type</i></strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
 </li>
 </ul>
    </td>
   </tr>
-  <tr>
-   <td rowspan="7" ><strong>Models</strong>
+   <tr>
+   <td><strong>Event</strong>
    </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Model added(external models only)
    </td>
    <td>Tracks the addition of external models to the account.
    </td>
-   <td rowspan="4" >
-    No additional parameters.
+   <td rowspan="4" align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -176,7 +209,6 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>
 <ul>
-
 <li>Training method
 
 <li>No. of epochs
@@ -258,19 +290,32 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
-   <td colspan="4" ><strong>Agent ID </strong>and<strong> Agent Name </strong> are displayed for all the category events below.
+     <td colspan="3" align="center"><strong>Category</strong>: Agents
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <strong><i>Agent ID</i></strong> and <strong><i>Agent Name</i></strong> are displayed for all the category events below.
+   </td>
+  </tr>
+     <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td rowspan="2" ><strong>Agents</strong>
-   </td>
    <td>Agent created
    </td>
    <td>Tracks the creation of an agent in the account.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -290,18 +335,29 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
-  <tr>
-   <td rowspan="2" ><strong>User Management</strong>
+  </table>
+
+  <table>
+    <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Users Management
    </td>
+   </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>User invited
    </td>
    <td>Tracks the invitation of new users to the account.
    </td>
    <td>
 <ul>
-
 <li>Added User IDs
-
 <li>Role Name
 
 <li>Role ID
@@ -316,32 +372,43 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>
 <ul>
-
 <li>Removed User IDs
 </li>
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
+      <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Prompts
+   </td>
+   </tr>
   <tr>
-   <td colspan="4" >
+   <td colspan="3">
+   <p><b>Metadata</b>:</p>
 <ul>
-
-<li><strong>Prompt ID </strong>is displayed for all the <em>Prompts </em>category events.
-
-<li><strong>Prompt Name</strong> is displayed for <em>Prompt created</em>, <em>Versions Committed</em>, <em>Versions Restored</em>, <em>Prompt Shared</em>, <em>Endpoint Copied</em>, and <em>API Key Created </em>category events.
+<li><strong><i>Prompt ID</i></strong> is displayed for all the <em>Prompts </em>category events.
+<li><strong><i>Prompt Name</i></strong> is displayed for <em>Prompt created</em>, <em>Versions Committed</em>, <em>Versions Restored</em>, <em>Prompt Shared</em>, <em>Endpoint Copied</em>, and <em>API Key Created </em>category events.
 </li>
 </ul>
    </td>
   </tr>
-  <tr>
-   <td rowspan="2" ><strong>Prompts</strong>
+   <tr>
+   <td><strong>Event</strong>
    </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Prompt created
    </td>
    <td>Tracks the creation of a prompt by the account user.
    </td>
-   <td rowspan="2" >
-    No additional parameters.
+   <td rowspan="2" align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -351,58 +418,45 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>Versions committed
    </td>
    <td>Tracks the prompt versions committed by the account user.
    </td>
    <td rowspan="2" >
 <ul>
-
 <li>Version Name
 </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>Version Restored
    </td>
    <td>Tracks the prompt version restored by the account user.
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>Prompt Shared
    </td>
    <td>Tracks the prompts shared by the account user with other users.
    </td>
-   <td rowspan="3" >
-    No additional parameters
+   <td rowspan="3" align="center">
+   -
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>Endpoint Copied
    </td>
    <td>Tracks the prompt endpoint copy done by the account user.
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>API Key Created
    </td>
    <td>Tracks the API key creation for the prompt endpoint by the account user.
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>Generated Test Data
    </td>
    <td>Tracks the generation of test data by the account user.
@@ -420,41 +474,65 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>Generated Prompt
    </td>
    <td>Tracks the prompt generation done by the accout user.
    </td>
   </tr>
-  <tr>
-   <td><strong>Dataset</strong>
+  </table>
+
+  <table>
+      <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Dataset
    </td>
+   </tr>
+   <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Dataset uploaded
    </td>
    <td>Tracks the dataset uploads in the account.
    </td>
    <td>
 <ul>
-
 <li>File type(extension)
 </li>
 </ul>
    </td>
   </tr>
-  <tr>
-   <td colspan="4" ><strong>Guardrail Name</strong>, <strong>Guardrail ID</strong>, and <strong>Hardware Type </strong>are displayed for all the category events below.
+  </table>
+
+  <table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Guardrails
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: <strong><i>Guardrail Name</i></strong>, <strong><i>Guardrail ID</i></strong>, and <strong><i>Hardware Type</i></strong> are displayed for all the category events below.
    </td>
   </tr>
   <tr>
-   <td rowspan="2" ><strong>Guardrails</strong>
+   <td><strong>Event</strong>
    </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Guardrails deployed
    </td>
    <td>Tracks the guardrails deployment in the account.
    </td>
-   <td>
-    No additional parameters.
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
