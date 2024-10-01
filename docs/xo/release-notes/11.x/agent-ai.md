@@ -9,7 +9,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 ### **“Thumbs-down”/Negative Feedback Reasons Comment Box Updated**
 
-The comment box for explaining “thumbs down (dislike)” on auto-suggested dialog tasks, answers, FAQs, or summaries is now labeled “Tell us more…” instead of “Add additional comments here.”  
+The placeholder text in the comment box is now labeled “Tell us more…” instead of “Add additional comments here.”  
 <img src="../images/negative-feedback-reason-comment-box.png" alt="negative-feedback-reason-comment-box" title="negative-feedback-reason-comment-box" style="border: 1px solid gray; zoom:80%;">
 
 ### **Summarization in Spanish**
