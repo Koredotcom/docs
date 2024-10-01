@@ -74,8 +74,6 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
   </tr>
 </table>
 
-
-
 ## Sample Request
 
 ```
@@ -88,7 +86,6 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-5ac72231-5a37-5b71-bb1e-
 ```
 
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -108,8 +105,6 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-5ac72231-5a37-5b71-bb1e-
    </td>
   </tr>
 </table>
-
-
 
 ## Sample Response
 
