@@ -74,7 +74,7 @@ This section lets you set your preferences based on the channels. It has three c
         * **Child Bot/Normal/Singular Bot**: The Dialog Tasks list displays dialogs linked to the selected bot, and you can select any from the displayed list.
 
         !!! note
-        The summary customization through "Custom Dialog Task" feature works only for third-party Agent AI desktops.
+            The summary customization through "Custom Dialog Task" feature works only for third-party Agent AI desktops.
 
 10. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
