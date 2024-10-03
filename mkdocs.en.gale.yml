@@ -135,6 +135,11 @@ nav:
       - Deploy an Agent: agents/deploy-an-agent.md
     - Agent Monitor: 
       - About Agent Monitor: agents/agent-monitor/about-agent-monitor.md
+      - Accessing Agent Monitor: agents/agent-monitor/accessing-agent-monitor.md
+      - Understanding the Agent Monitor interface: agents/agent-monitor/understanding-the-agent-monitor-interface.md
+      - Viewing detailed run information: agents/agent-monitor/viewing-detailed-run-information.md
+      - Searching and Filtering information: agents/agent-monitor/searching-and-filtering-information.md
+      - Best Practices: agents/agent-monitor/best-practices.md
     - API Keys: 
       - Create an API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
