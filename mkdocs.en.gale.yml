@@ -133,6 +133,8 @@ nav:
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Agent Endpoint: 
       - Deploy an Agent: agents/deploy-an-agent.md
+    - Agent Monitor: 
+      - About Agent Monitor: agents/agent-monitor/about-agent-monitor.md
     - API Keys: 
       - Create an API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
