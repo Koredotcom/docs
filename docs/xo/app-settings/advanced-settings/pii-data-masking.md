@@ -134,3 +134,12 @@ The **Sensitive Entity** option provides flexibility in managing the handling of
 Both the PII and Sensitive Entity complement each other in providing comprehensive protection for sensitive data. While the PII feature offers broad coverage for common PII patterns, sensitive nodes enable you to handle sensitive data in a more granular and contextually aware manner, addressing specific challenges and custom use cases.
 
 It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/#configure-the-node){:target="_blank"} article.
+
+
+### Protecting Sensitive Data in LLM Interactions
+
+In LLM interactions, the platform maintains the conversation context by anonymizing data instead of redacting it. Sensitive data is replaced with descriptive placeholders in LLM calls. For example, if the Phone Number is configured for redaction in the global PII Settings, it will be replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
+
+!!! note
+
+    Data anonymization is automatically applied to all the Dynamic Conversation features except the GenAI node.
