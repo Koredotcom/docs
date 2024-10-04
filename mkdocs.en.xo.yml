@@ -147,14 +147,14 @@ nav:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
               - AudioCodes: channels/ivr-audio-codes.md
-              - IVR: channels/IVR-integration.md            
+              - IVR: channels/IVR-integration.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
       - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
       - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - XO v11.x Updates:
+      - v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -396,7 +396,6 @@ nav:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
     - Safeguards:
-      - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
@@ -553,7 +552,14 @@ nav:
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export App: deploy/bot-management.md      
+      - Import & Export App: deploy/bot-management.md
+    - Data:
+      - Overview: administration/data/data-tables-and-views.md
+      - Guideines: administration/data/using-data-table.md
+      - Data Table: administration/data/data-table.md
+      - Table view: administration/data/table-views.md
+      - App Definition: administration/data/app-definition.md
+      - Data as Service: administration/data/data-as-service.md            
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:

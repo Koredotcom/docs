@@ -9,15 +9,17 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 ## Prerequisites
 
 * Talkdesk account with voice automation studio flow.
-* A Kore voice bot (SmartAssist bot) trained with few use cases.
+* A Kore voice bot trained with few use cases.
 
 ## How it Works
 
-Here’s a general overview of how voice virtual assistant interactions work on Talkdesk:
+The Kore IVA integration with Talkdesk operates as follows:
 
-1. **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and Talkdesk. This involves modifying the **AgentAssist_URL** and **bot details**, and **Voice stream URL*** field modification in **Connect to autopilot - voice** flow in Talkdesk. The user audio is sent to the “Conversation Orchestrator” through the “Connect to Virtual Agent Voice” block within the studio flow.
-2. **Routing and Distribution**: When a customer initiates contact through Talkdesk, Kore receives the audio streams and handles the automation process. Kore sends its bot’s responses to Talkdesk. It’s a bidirectional stream. Once automation is complete, and the customer asks for agent transfer, the control goes back to Talkdesk.
-3. **Agent Interaction**: The agent receives the customer interaction and responds to the customer using Talkdesk communication features, such as answering voice calls.
+* **Setup**: Kore.ai configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
+* **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
+* **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
+
+This streamlined process enhances Talkdesk's contact center capabilities with Kore's voice automation technology.
 
 ## Voice Automation Process
 
@@ -38,7 +40,7 @@ This section explains the configuration steps needed to integrate Kore IVA integ
 
 ### Step 1: Create and attach a Flow with a Phone Number
 
-A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Know more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
+A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Learn more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
 <img src="../images/flows-and-channels-phone-number-2.png" alt="flows-and-channels-phone-number" title="flows-and-channels-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 **Note**: This phone number is encrypted and used in WSS URL in Audio streaming.
@@ -78,7 +80,7 @@ This section explains both the Kore and Talkdesk side configurations for Agent E
 
 #### Kore Side Configuration
 
-For Agent Transfer and subsequent AgentAssist functionalities, configure **SIP BYE** in SmartAssist:  
+For Agent Transfer, configure **SIP BYE** in UXO by going to **Settings > Integrations > Agent Transfer > Voice > SIP Transfer > Configuration**:  
 <img src="../images/sip-bye-settings.png" alt="sip-bye-settings" title="sip-bye-settings" style="border: 1px solid gray; zoom:80%;">
 
 #### Talkdesk Side Configuration

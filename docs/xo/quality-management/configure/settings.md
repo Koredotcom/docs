@@ -1,17 +1,17 @@
 # Settings
 
-This phase lets you set up task utterances at the agent account level that identify the intent behind each utterance. These can be simple sentences, brand tags, greetings, questions, emotions, interactions, and so on.
+These settings allow you to make app-level changes to conversation intelligence.
 
 The Settings has the following two sections:
 
 * Conversation Intelligence
-* Quality Management
+* Quality AI
 
 ## Conversation Intelligence
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the Evaluation Forms by going to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.  
+You can access the Evaluation Forms by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.  
 <img src="../images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Intelligence Dashboard
@@ -34,7 +34,7 @@ Steps to enable the Conversation Intelligence:
 
 Steps to disable the Conversation Intelligence Dashboard:
 
-1. Disable the **Conversation Intelligence Dashboard** toggle. The following dialog box appears.  
+1. Disable the **Conversation Intelligence Dashboard** toggle button. The following dialog box appears.  
 <img src="../images/disable-conversation-intelligence.png" alt="Disable Converstion Intelligence" title="Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
@@ -48,11 +48,11 @@ Steps to disable the Conversation Intelligence Dashboard:
 
 ### Script Adherence Configuration
 
-This allows you to add and define a set of dynamic messages or scripts for the user or agent. The Script adherence configuration caters to specific messages that a user wants to visualize the adherence in the Conversation Intelligence Dashboard.
+This allows you to add and define a set of dynamic messages or scripts for the user or agent. By default, the script adherence widget uses a default generic script to check for adherence, using this app level configuration, the user can set custom messages for each step of the script to visualize adherence to the custom message instead of the default script message.
 
 Steps to enable the Script Adherence Configuration:
 
-1. Expand the **Conversation Intelligence** collapse icon, and enable the toggle button of **Conversation Intelligence Dashboard** and **Script adherence configuration** to view the following attributes.  
+1. Expand the **Conversation Intelligence** collapse icon, and enable the toggle button of **Conversation Intelligence Dashboard** and **Script adherence configuration**.  
 <img src="../images/script-adherence.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
 2. Define the scripts for the below attributes to check the agent adherence.
@@ -68,28 +68,38 @@ Steps to enable the Script Adherence Configuration:
 
 * Click **Save** to save the defined messages.
 
-## Quality Management Settings
+At the agent account level, the agent can only check the following options defined by the supervisor or app owner or administrator in the Settings.
 
-The Quality Management Settings allows you to create and configure evaluation forms to generate automated scores and enable interactions to get bookmarked under the different sections for reference later.
+* In the Conversation Intelligence Dashboard, the agent can check the post-interaction analytics, such as brand tags, greetings, questions, emotions, interactions, and so on. 
 
-Users can access Quality Management (QM) Settings by going to **Contact Center AI** > **Quality Management** > **Settings** > **Quality Management**.  
+* In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
+<img src="../images/agent-level-admin-settings.png" alt="agent-level-admin-settings" title="Admin-settings" style="border: 1px solid gray; zoom:60%;">
+
+## Quality AI Settings
+
+The App owners can use the Settings option under QM to enable or disable auto QA scoring of interactions and at an app level. Users with relevant permissions can enable and create bookmarks to collect interactions in different bookmarks for easy future reference.
+
+Users can access Quality AI Settings by navigating to **Contact Center AI** > **Quality AI** > **Settings** > **Quality AI**.  
 <img src="../images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
 The QA has the following two sections:
 
 * Auto QA
+* Agent Score Card
 * Bookmarks
 
 ### Auto QA
 
-This feature allows you to set up Evaluation Forms for automated scoring. If the Auto QA toggle is off, users cannot see automated QA scores across the entire application and its queues. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
+The Auto QA feature lets you set up Evaluation Forms for automated scoring. When the feature is turned off, automated QA scores are hidden across the entire application and its queues, regardless of whether the user has access to Agent Scorecard and QA functionalities. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
+
+#### Enable Auto QA
 
 Steps to enable the Auto QA:
 
-1. Expand the **Quality Management** collapse icon to view the following **Auto QA** option.  
+1. Expand the **Quality AI** collapse icon to view the following **Auto QA**.  
 <img src="../images/auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
-2. Enable the **Auto QA** option.
+2. Enable the **Auto QA**.
 3. Click **Save** to save the settings.
 
     By Enabling the Auto QA toggle option, you can create and configure evaluation forms to generate automated scores.  
@@ -101,7 +111,7 @@ This feature lets you bookmark interactions into various collections for future 
 
 Steps to Add Bookmarks:
 
-1. Expand the **Quality Management** collapse icon to view the following **Bookmarks** option.  
+1. Expand the **Quality AI** collapse icon to view the following **Bookmarks** option.  
 <img src="../images/bookmarks-(2).png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
 
 2. Enable the **Bookmarks** toggle option to add a new bookmark.

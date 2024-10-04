@@ -39,11 +39,11 @@ You can sign up for Kore.ai XO Platform in any of the following two ways:
 To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 1. Visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}.
-2. On the Sign-up page, enter the email ID in the **Email ID** field.
+2. On the Sign-up page, enter your work email ID in the **Email ID** field.
 
     !!! note
 
-        If the email address is already registered, the platform prompts you to sign-in  and to enter the password.
+        If the email address is already registered, the platform prompts you to sign-in and to enter the password.
   
 
 3. Enter all the other details to create the account.
@@ -179,13 +179,23 @@ To create your Workspace, you will need to provide a **Name**, and invite the fi
 
 ### Invite Members to your Workspace
 
-After the Workspace has been created, Administrators can invite new members using the **Invite** option on the main landing page, in the top navigation menu.
+After creating the Workspace, Administrators can invite new members to their workspace.
+
+Steps to invite users:
+
+1. Click the **Invite** option from the top navigation menu on the Platform Landing Page.  
+    <img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+
+2. Provide the user's email address you want to invite and press enter. You can either invite individual users or multiple users.  
+    <img src="../images/accplatform_invite_users.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+
+3. Click **Invite**. An invitation email is sent to the invited users.
+4. When the invited user accepts the invitation, they can access the workspace.
 
 !!! note
 
     By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission should be enabled in the role management.
  
-<img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Switch Workspaces
 

@@ -48,6 +48,9 @@ This section lets you set your preferences based on the channels. It has three c
 
     Third-party agent desktops can use the **Auto Summarization Model** widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a language-specific dialog task, enabling them to customize the Conversation Summary.
 
+    !!! note
+        The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
+
 ### Steps to set channel specific preferences
 
 1. Sign in to XO Platform.
@@ -69,6 +72,9 @@ This section lets you set your preferences based on the channels. It has three c
         * **Universal Bot**: The backend logic detects it and populates its associated Child Bots. You can expand each Child Bot to view and select its dialog task.
 
         * **Child Bot/Normal/Singular Bot**: The Dialog Tasks list displays dialogs linked to the selected bot, and you can select any from the displayed list.
+
+        !!! note
+            The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
 
 10. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">

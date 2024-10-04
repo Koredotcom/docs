@@ -2,6 +2,42 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.6.0 September 28, 2024
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### **“Thumbs-down”/Negative Feedback Reasons Comment Box Updated**
+
+The placeholder text in the comment box is now labeled “Tell us more…” instead of “Add additional comments here.”  
+<img src="../images/negative-feedback-reason-comment-box.png" alt="negative-feedback-reason-comment-box" title="negative-feedback-reason-comment-box" style="border: 1px solid gray; zoom:80%;">
+
+### **Summarization in Spanish**
+
+For Spanish conversations, auto-summarization is now available in the Spanish language.
+
+### **Error Message Configuration**
+
+The error message display pattern in the Agent AI widget has been updated to help agents view and understand issues without unnecessary redundancy.
+
+You can configure error messages during [Use Case creation](https://docs.kore.ai/agentassist/use-cases/dialogues-creation/){:target="_blank"} at the bot level. These messages are displayed in the Agent AI widget for invalid user input. The runtime display varies based on whether a single or multiple error messages are triggered.
+
+**Single Error Message**
+
+When a single error message is triggered during dialog task execution, the **Assist** tab displays the error message and the number of occurrences. If the same error message is triggered again, the message does not repeat, but the number of occurrences increases.  
+<img src="../images/single-error-message.png" alt="single-error-message" title="single-error-message" style="border: 1px solid gray; zoom:80%;">
+
+**Multiple Error Message**
+
+When multiple (different) error messages are triggered, they are all displayed in the **Assist** tab, with a count indicating the total number of error messages.  
+<img src="../images/multiple-error-messages.png" alt="multiple-error-messages" title="multiple-error-messages" style="border: 1px solid gray; zoom:80%;">
+
+### **Enhanced Raw Data API**
+
+The [Raw Data API](https://docs.kore.ai/agentassist/api/raw-data-api-v2/){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
+
+<hr>
+
 ## v11.5.1 September 14, 2024
 <u> Patch Release </u>
 

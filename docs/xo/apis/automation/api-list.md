@@ -32,6 +32,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Enable an existing Language](./enable-existing-language.md) | To enable an [existing language](../../app-settings/language-management/building-multi-language-bots.md) for a virtual assistant. | Languages Configuration. | API Scopes > Language Settings |
 | [Disable an existing Language](./disable-existing-language.md) | To disable an existing language for a virtual assistant that is currently enabled. | Languages Configuration. | API Scopes > Language Settings |
 | [Update a Language Configuration](./language-updation.md) | To update the configuration of an existing language for a virtual assistant. | Languages Configuration. | API Scopes > Language Settings |
+| [Change the Default language ](../automation/change-default-language.md) | To change the default language of the app.| Languages Configuration. | API Scopes > Language Settings |
 | [Proactive Notification](./proactive-notifications.md) | To send proactive notifications to the configured channel. | NA  | Channel Management > Proactive Messages |
 | [Proactive Notification Status](./proactive-notifications-status.md) | To send proactive notifications to the configured channel. | NA  | Channel Management > Proactive Messages |
 | [Publish Bot](./publish-bot.md) | To initiate a bot publish request. | NA  | Bot Publish > Publish |

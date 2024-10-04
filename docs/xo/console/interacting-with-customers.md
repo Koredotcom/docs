@@ -494,6 +494,29 @@ All headers are visible, and only submitted data is masked.
 2. Only specific fields are masked, retaining the redaction as per the configuration for that field. The data is unmasked when the agent clicks the unmask button.  
 <img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
 
+Steps to share an Agent Form:
+
+1. Click the **Agent Form** icon.  
+<img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
+
+2. Select the form and click **Send Form**.  
+<img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
+
+3. The form is sent to the customer and the status of the form on the live interaction pane shows **Sent**.  
+<img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
+
+4. A message is displayed on the console once the customer submits the form and the status of the form shows Filled. Clicking the form/View Form on the confirmation message displays the form.  
+<img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
+
+5. Click the **Unmask** icon to view the fields (applicable if mask is enabled during form creation).  
+<img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
+
+    The agent form fields are displayed.  
+    <img src="../images/unmasked-details.png" alt="Unmasked Form" title="Unmasked Form" style="border: 1px solid gray; zoom:70%;">
+
+    The demonstration below shows how you can share an agent form with a customer and view the filled form.  
+    <img src="../images/agent-forms-demo.gif" alt="Agent Forms Demo" title="Agent Forms Demo" style="border: 1px solid gray; zoom:70%;">
+
 ## Snooze
 
 Waiting for customer responses or time spent on information retrieval can result in prolonged conversations and negatively impact agents’ performance metrics like Average Handle Time (AHT). Snooze allows agents to pause the conversation timer and resume it when the agent responds while freeing up slots for additional conversations.
