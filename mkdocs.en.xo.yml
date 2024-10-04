@@ -240,14 +240,14 @@ nav:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
-    - Intelligence:
+    -  Conversation Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
-      - Events: 
-        - Intent Events: automation/intelligence/event-handling.md
+      - Events:
+        - Overview: automation/intelligence/event-overview.md
         - Context Management: automation/intelligence/context-management.md
         - Context Object: automation/intelligence/context-object.md
-        - Conversation Events: 
-          - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
+        - Intent Events: automation/intelligence/event-handling.md
+        - Conversation Events: automation/intelligence/conversation-events.md
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
