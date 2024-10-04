@@ -58,12 +58,11 @@ Backward compatibility:
 
 XO Platform now protects sensitive data in LLM calls by adding placeholders. For example, phone numbers are replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
 
-#### **Terminology Updates for Improved Clarity and Inclusivity**
+#### **Terminology Updates for Improved Clarity**
 
 This update includes an important terminology change on the platform:
 
 * Zero-shot Model Naming Consistency: Standardized the name to 'Zero-shot Model' across the platform, eliminating confusion caused by inconsistent naming; for example, ‘Zero-shot Model with OpenAI’ was used under ML > Network Type.
-* The Guardrail previously named "Blacklist Topics" has been renamed to "Restrict Topics".
 
 ### Getting Started
 
@@ -95,7 +94,9 @@ XO Platform now supports **Sinch** as a new channel. Sinch offers a new omnichan
 Key features:
 
 * **Omnichannel Support**: Manage conversations seamlessly through a single API and deploy virtual assistants across multiple channels, including WhatsApp, Facebook Messenger, Instagram, Viber Bot, Viber Business Messages, Telegram Bot, KakaoTalk, LINE, WeChat, RCS, SMS, MMS, and Sinch Chat.
+
 * **Rich Messaging Capabilities**: Send text messages, media, and rich content across various channels. Maintain consistent user interactions with conversation management.
+
 * **Template Compatibility**: Ensure compatibility between selected templates and the configured delivery channel in Sinch.
 
 Key benefits:
@@ -160,6 +161,7 @@ Key benefits:
 The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node-v2.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
 
 <hr>
+
 ## v11.5.1 September 14, 2024
 
 <u> Patch Release </u>

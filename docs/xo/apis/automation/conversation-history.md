@@ -2,6 +2,9 @@
 
 To fetch the conversational messages between the bot and user in reverse chronological order. This API supports pagination. You can provide offset/skip and limit to get a certain number of messages at a time.
 
+!!! note
+
+    The Conversation History API provides the time in UTC format.
 
 <table>
   <tr>

@@ -11,14 +11,9 @@ This update includes enhancements and bug fixes.
 
 SearchAI now enables the ingestion and indexing of structured data in JSON format using the JSON connector, providing greater flexibility in handling complex data. This feature allows users to seamlessly process and search through structured datasets for more efficient and accurate results.
 
-### Retrieve Chunk Metadata through Full and Advanced Search APIs
+### Retrieve Chunk Metadata through Advanced Search API
 
 This enhancement to the Advanced Search API allows users to specify and include custom metadata fields in the generated answers. The API response can now be customized to fetch user-defined metadata fields for each chunk in addition to the default fields, providing a more customized and detailed output.
-
-### RACL Support for Connectors
-
-Search AI now supports access control on content ingested from selected connectors, including ServiceNow, Confluence Cloud, Jira, SharePoint, and Google Drive. This ensures that users only access content they are authorized to view, enhancing data security and compliance. To enforce access control, user identity information is required during content retrieval. Additional connectors will be supported in future releases.
-
 
 <hr>
 

@@ -199,7 +199,7 @@ These logs show:
 
 All LLM requests, responses, and guardrail validation results are recorded in the debug logs, [failed task logs](../analytics/automation/task-execution-logs.md), and [LLM and GenAI usage logs](../analytics/genai-analytics/llm-usage-logs.md). These comprehensive logs allow platform users to verify that guardrails are working as intended, identify issues, and audit LLM interactions across the platform's different runtime features.
 
-For example, the debug logs show five entries if a specific node has two input and three output guardrails enabled, as shown in the screenshot below.
+For example, the debug logs display two entries: one for the LLM input and another for the LLM output guardrail, as shown in the screenshot below.
 
 <img src="../images/guardrails7.1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 

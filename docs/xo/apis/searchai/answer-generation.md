@@ -157,4 +157,17 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    <td>No</td>
    <td>This can be set to true or false. When set to true, the response will also include a list of qualified chunks along with other parameters. The chunk information is stored in the response's chunk_result field.</td>
   </tr>
+  <tr>
+   <td>IncludeMetaDataAnswers</td>
+   <td>No </td>
+   <td>This field can fetch specific chunk metadata fields in the response along with the default fields.The requested fields are returned as part of the **graph_answer **field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value.
+   
+   For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
+   
+   "IncludeMetaDataAnswers": ["chunkMeta.author", “subtitle”]. 
+   
+   Note that for metadata fields, use the field name along with the root name, such as chunkMeta.&lt;x>, as shown in the above example. 
+
+   </td>
+  </tr>
 </table>
