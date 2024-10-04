@@ -154,7 +154,7 @@ nav:
       - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
       - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - v11.x Updates:
+      - XO v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -240,14 +240,14 @@ nav:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
-    -  Conversation Intelligence:
+    - Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
-      - Events:
-        - Overview: automation/intelligence/event-overview.md
+      - Events: 
+        - Intent Events: automation/intelligence/event-handling.md
         - Context Management: automation/intelligence/context-management.md
         - Context Object: automation/intelligence/context-object.md
-        - Intent Events: automation/intelligence/event-handling.md
-        - Conversation Events: automation/intelligence/conversation-events.md
+        - Conversation Events: 
+          - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
