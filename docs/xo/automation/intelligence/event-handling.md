@@ -1,6 +1,8 @@
 
 # Intent Events
 
+Define the behavior of the Virtual Assistant during intent identification from user utterances to customize the user experience.
+
 ## Intent not Identified 
 
 When the VA cannot understand the user’s intent, this event determines the subsequent behavior. You can choose one of the following options:

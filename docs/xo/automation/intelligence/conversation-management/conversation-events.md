@@ -1,5 +1,7 @@
 # Conversation Events
 
+Define the behavior of the Virtual Assistant during conversations with user to optimize user interactions
+
 ## End of Task
 
 *End of Task* is triggered when the VA is not expected to send any message to the user or receive any message from the user.
