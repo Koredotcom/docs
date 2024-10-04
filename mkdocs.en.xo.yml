@@ -243,6 +243,7 @@ nav:
     - Conversation Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
+        - Overview: automation/intelligence/event-overview.md
         - Context Management: automation/intelligence/context-management.md
         - Context Object: automation/intelligence/context-object.md
         - Intent Events: automation/intelligence/event-handling.md
