@@ -209,7 +209,7 @@ nav:
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md     
-      - Session and Context Variables: automation/use-cases/using-session-and-context-variable.md 
+      - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
       - Context Object: automation/intelligence/context-object.md  
     - Knowledge AI:
         - Overview: automation/knowledge-ai/knowledge-ai-introduction.md
