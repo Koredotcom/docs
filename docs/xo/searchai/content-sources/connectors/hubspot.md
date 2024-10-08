@@ -31,7 +31,7 @@ HubSpot offers a knowledge base that can be used for content management. SearchA
 
 ## Authorization Support
 
-You can set up communication between Search AI and HubSpot using a** private app** or set up **OAuth Authorization Code Grant Type** for communication. 
+You can set up communication between Search AI and HubSpot using a **private app** or set up **OAuth Authorization Code Grant Type** for communication. 
 
 * **Private App**: If you are authenticating via a Private App, you must use your Access Token to set up the connector. Refer to the [official HubSpot documentation](https://developers.hubspot.com/docs/api/private-apps) to learn how to obtain the access token. This access token is used while configuring the connector in Search AI. 
 * **OAuth setup**: If you use OAuth to authenticate, Refer to [Hubspot's official documentation on Setting Up the OAuth app.](https://developers.hubspot.com/docs/api/working-with-oauth) After the setup, a client ID, client secret will be generated. Use the client credentials to generate an access token and a refresh token for SearchAI to use for communication.

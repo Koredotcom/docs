@@ -11,12 +11,6 @@ Airtable combines the functionality of a spreadsheet and a database, making it a
    </td>
   </tr>
   <tr>
-   <td>Supported API version
-   </td>
-   <td>v0
-   </td>
-  </tr>
-  <tr>
    <td>Extractive Model for Answer Generation
    </td>
    <td>Yes

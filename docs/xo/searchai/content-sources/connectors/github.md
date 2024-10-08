@@ -32,14 +32,14 @@ SearchAI allows ingestion of content from GitHub Repositories and makes it Searc
 
 ## Authorization Support
 
-You can use **Personal Access Token **or **OAuth 2.0 authentication** for communication between Search AI and GitHub. 
+You can use **Personal Access Token** or **OAuth 2.0 authentication** for communication between Search AI and GitHub. 
 
 
 ## GitHub Configuration 
 
 To use Personal Access Token for authentication, go to the [Developer Settings](https://github.com/settings/tokens) in your GitHub account and generate a token. 
 
-To use OAuth authentication, r[egister a new OAuth application](https://github.com/settings/developers). 
+To use OAuth authentication, [register a new OAuth application](https://github.com/settings/developers). 
 
 ## GitHub Connector Configuration in Search AI
 

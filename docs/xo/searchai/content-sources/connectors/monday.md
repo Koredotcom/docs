@@ -34,7 +34,7 @@ SearchAI allows ingestion of content from Monday and makes it searchable. You ca
 
 ## Authorization Support 
 
-Search AI supports interaction with Monday using both the **Monday API token** and the **OAuth 2.0 **authentication mechanism. 
+Search AI supports interaction with Monday using both the **Monday API token** and the **OAuth 2.0** authentication mechanism. 
 
 
 ## Monday Configuration
