@@ -92,6 +92,76 @@ Selecting multiple intents lets you delete them in bulk.
 
 The FAQ Conditional Responses feature allows you to provide dynamic responses to FAQs so that you can provide personalized, context-aware responses to your users.
 
+### How Do Conditional Responses Work?
+
+When the conditional responses are present, it works as follows:
+
+1. The platform identifies the appropriate FAQ using the regular process based on the selected model, training, and alternate questions.
+2. Once the FAQ is identified, the conditions are evaluated in the order they're defined.
+3. If a condition is met, its corresponding response is selected.
+4. If no conditions are met, the default response is used.
+5. The platform prioritizes channel-specific responses for both conditional and default responses.
+* Channel-Specific Priority
+    * If a condition is met and has a response for the user's channel, that response is used. For example, if the user interacts via MS Teams and the first condition is passed Which has two responses, one for “MS Teams” and one for "All Channels", the MS Teams response will be delivered.
+* "All Channels" Fallback
+    * If conditional responses are available for Slack and All Channels, the "All Channels" response will be delivered on MS Teams.
+* Condition Skipping
+    * If the conditional responses are for Slack and Twitter only, the platform skips the conditional response and checks the next condition. If no conditions match, the default response is delivered.
+* Default Response Selection
+    * For default responses, the platform first attempts to select a channel-specific response. If none is available, the default "All Channels" response will be presented.
+
+
+#### **Example Scenarios**
+
+Let's consider an FAQ about shipping options for an e-commerce platform. The condition will be based on the customer's location, a simple variable that can be easily compared using the "Equals To" operator.
+
+**Conditions and Responses**
+
+Condition: Customer Location Equals To "United States"
+
+* Web: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
+* Mobile: "Free shipping on $50+ orders in the US. Express: $15. Tap for details."
+
+Condition: Customer Location Equals To "Canada"
+
+* Web: "We offer flat-rate shipping to Canada for $10. Free shipping is available on orders over $100."
+* Mobile: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
+
+Condition: Customer Location Equals To "United Kingdom"
+
+* Web: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
+* Mobile: "UK shipping: £5 standard. Free on £75+ orders. Tap for options."
+
+Default (No condition met):
+
+* Web: "International shipping rates vary. Please check our shipping page for detailed information on rates and delivery times."
+* Mobile: "Int'l shipping rates vary. Tap here for your location's rates and times."
+* All Channels: "Shipping options depend on your location. Please contact our customer service for specific shipping information."
+
+**Scenarios**
+
+Let's see how the answers/responses are selected in different scenarios:
+
+Scenario 1: Customer from the United States accessing via Web
+
+* Condition "Customer Location Equals To United States" is satisfied for the Web.
+* Selected Response: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
+
+Scenario 2: Customer from Canada accessing via Mobile
+
+* Condition "Customer Location Equals To Canada" is satisfied for Mobile.
+* Selected Response: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
+
+Scenario 3: Customer from the United Kingdom accessing via Web
+
+* Condition "Customer Location Equals To United Kingdom" is satisfied for the Web.
+* Selected Response: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
+
+Scenario 4: Customer from France accessing via Mobile
+
+* Channel-specific as well as "All Channels" conditions are not satisfied.
+* Selected Response (default): "Int'l shipping rates vary. Tap here for your location's rates and times."
+
 ### Best Practices 
 
 When creating your conditional responses:
