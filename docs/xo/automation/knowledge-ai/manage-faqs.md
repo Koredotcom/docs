@@ -32,7 +32,7 @@ To add an FAQ, follow the below steps:
 12. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
 13. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are disabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 
-<img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-faq-form.gif" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
 
 As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. [Learn more](knowledge-graph-terminology.md).
 
@@ -115,7 +115,7 @@ When creating your conditional responses:
 2. Select the FAQ you want to enhance with conditional responses. 
 3. Toggle to enable the **Conditional Response** switch. 
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/conditional-response.png" alt="conditional-response" title="conditional-response" style="border: 1px solid gray; zoom:75%;">
 
 4. Define conditions based on content, context, and environmental variables. The condition must be defined properly without any discontinuation.
 For example: `context.session.Usercontext.emailID Equals To xxx@xmail.com`
