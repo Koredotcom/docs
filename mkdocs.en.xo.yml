@@ -296,6 +296,8 @@ nav:
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md 
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+                - Jira: searchai/content-sources/connectors/jira.md
+                - JSON Connector: searchai/content-sources/connectors/json.md
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Content Browser: searchai/chunk-browser.md
