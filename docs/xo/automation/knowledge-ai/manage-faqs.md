@@ -27,8 +27,8 @@ To add an FAQ, follow the below steps:
 7. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
 8. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 9. In the **Bot Response** field, add the bot's default responses when the user asks the FAQ.
-10. (Optional) If there are alternate responses, add them in the **+ Alternate Response **field. Repeat the step for all the alternative responses you want to add.
-11. If you want to add condition-based responses for the FAQ, enable the **Conditional Response** toggle and provide the details.Learn more about [how to set up conditional responses](../knowledge-ai/manage-faqs.md#setting-up-conditional-responses). 
+10. (Optional) If there are alternate responses, add them in the **+ Alternate Response** field. Repeat the step for all the alternative responses you want to add.
+11. If you want to add condition-based responses for the FAQ, enable the **Conditional Response** toggle and provide the details. Learn more about [how to set up conditional responses](../knowledge-ai/manage-faqs.md#setting-up-conditional-responses). 
 12. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
 13. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are disabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 
@@ -113,8 +113,7 @@ When creating your conditional responses:
 
 1. Navigate to the FAQ management section in your dashboard. 
 2. Select the FAQ you want to enhance with conditional responses. 
-3. Toggle to enable the **Conditional Response** switch. 
-
+3. Toggle to enable the **Conditional Response** switch.  
 <img src="../images/conditional-response.png" alt="conditional-response" title="conditional-response" style="border: 1px solid gray; zoom:75%;">
 
 4. Define conditions based on content, context, and environmental variables. The condition must be defined properly without any discontinuation.
