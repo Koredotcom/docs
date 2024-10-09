@@ -101,14 +101,14 @@ When the conditional responses are present, it works as follows:
 3. If a condition is met, its corresponding response is selected.
 4. If no conditions are met, the default response is used.
 5. The platform prioritizes channel-specific responses for both conditional and default responses.
-* Channel-Specific Priority
-    * If a condition is met and has a response for the user's channel, that response is used. For example, if the user interacts via MS Teams and the first condition is passed Which has two responses, one for “MS Teams” and one for "All Channels", the MS Teams response will be delivered.
-* "All Channels" Fallback
-    * If conditional responses are available for Slack and All Channels, the "All Channels" response will be delivered on MS Teams.
-* Condition Skipping
-    * If the conditional responses are for Slack and Twitter only, the platform skips the conditional response and checks the next condition. If no conditions match, the default response is delivered.
-* Default Response Selection
-    * For default responses, the platform first attempts to select a channel-specific response. If none is available, the default "All Channels" response will be presented.
+    * Channel-Specific Priority
+        * If a condition is met and has a response for the user's channel, that response is used. For example, if the user interacts via MS Teams and the first condition is passed Which has two responses, one for “MS Teams” and one for "All Channels", the MS Teams response will be delivered.
+    * "All Channels" Fallback
+        * If conditional responses are available for Slack and All Channels, the "All Channels" response will be delivered on MS Teams.
+    * Condition Skipping
+        * If the conditional responses are for Slack and Twitter only, the platform skips the conditional response and checks the next condition. If no conditions match, the default response is delivered.
+    * Default Response Selection
+        * For default responses, the platform first attempts to select a channel-specific response. If none is available, the default "All Channels" response will be presented.
 
 
 #### **Example Scenarios**
