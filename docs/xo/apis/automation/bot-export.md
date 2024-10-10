@@ -110,6 +110,12 @@ curl --location 'https://{host}/api/public/bot/{BotID}/export' \
             "synonyms",
             "standardResponses",
             "nlpSettings"
+        ],
+        "AgentAI": [
+            "rules",
+            "playbooks",
+            "widgetSettings",
+            "layoutSettings"
         ]
     },
     "subTasks": {
@@ -173,6 +179,18 @@ Usage:
 <code>             "utterances",</code>
 <p>
 <code>             "standardResponses"</code>
+<p>
+<code>           ],</code>
+<p> 
+<code>        "AgentAI": [</code>
+<p>
+<code>                    "rules",</code>
+<p>
+<code>                    "playbooks",</code>
+<p>
+<code>                    "widgetSettings",</code>
+<p>
+<code>                    "layoutSettings"</code>
 <p>
 <code>           ],</code>
 <p>
@@ -254,13 +272,13 @@ To learn more about the optional parameters for partial import and dependent tas
 
 ```json
 {
+    "_id": "ber-a59b2599-9209-57f8-a3ad-3109e08e427a",
+    "streamId": "st-6fa10d24-9091-5c38-b457-1e33a82b115e",
     "status": "pending",
-    "streamId": "st-57af1576-bbdc-5ded-a608-5cfbc00c6415",
-    "createdBy": "u-f8708c55-de2c-5690-8821-ac90624779b5",
-    "exportType": "published",
+    "createdBy": "u-ccdc35ab-3541-5642-bd74-df7ae1afcfe6",
+    "exportType": "latest",
     "requestType": "Botexport",
-    "_id": "ber-dd746d3c-1631-53af-81ca-03a1d01f0487",
-    "createdOn": "2023-03-31T13:06:16.309Z",
+    "createdOn": "2024-09-30T08:12:03.442Z",
     "__v": 0
 }
 ```

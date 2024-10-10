@@ -154,7 +154,7 @@ nav:
       - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
       - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - v11.x Updates:
+      - XO v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -208,7 +208,9 @@ nav:
         - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md     
+      - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
+      - Context Object: automation/intelligence/context-object.md  
     - Knowledge AI:
         - Overview: automation/knowledge-ai/knowledge-ai-introduction.md
         - Knowledge Graph (KG):
@@ -240,14 +242,13 @@ nav:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
-    - Intelligence:
+    - Conversation Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
+      - Context Management: automation/intelligence/context-management.md
       - Events: 
+        - Overview: automation/intelligence/event-overview.md
         - Intent Events: automation/intelligence/event-handling.md
-        - Context Management: automation/intelligence/context-management.md
-        - Context Object: automation/intelligence/context-object.md
-        - Conversation Events: 
-          - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
+        - Conversation Events: automation/intelligence/conversation-management/conversation-events.md 
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
@@ -295,6 +296,8 @@ nav:
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md 
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+                - Jira: searchai/content-sources/connectors/jira.md
+                - JSON Connector: searchai/content-sources/connectors/json.md
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Content Browser: searchai/chunk-browser.md
