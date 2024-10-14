@@ -162,16 +162,17 @@ When the conditional responses are present, it works as follows:
       * Channel-specific as well as "All Channels" conditions are not satisfied.
       * Selected Response (default): "Int'l shipping rates vary. Tap here for your location's rates and times."
 
-   ### Best Practices 
 
-   When creating your conditional responses:
+### Best Practices 
 
-   * Identify the most important factors for your FAQ (e.g., location, time, user metadata like customer type, products/services, etc).
-   * Create specific conditions for these factors.
-   * Order your conditions from most to least specific 
-   * Use AND logic for more specific scenarios OR logic for wider coverage.
-   * Always provide a default response for cases where no conditions are met. 
-   * When using variables from the context object to define the conditional responses, it is recommended to have these variables as part of the ‘BotUserSession’ (context.session.BotUserSession) as they will be available across the session between the user and the bot.  
+When creating your conditional responses:
+
+* Identify the most important factors for your FAQ (e.g., location, time, user metadata like customer type, products/services, etc).
+* Create specific conditions for these factors.
+* Order your conditions from most to least specific 
+* Use AND logic for more specific scenarios OR logic for wider coverage.
+* Always provide a default response for cases where no conditions are met. 
+* When using variables from the context object to define the conditional responses, it is recommended to have these variables as part of the ‘BotUserSession’ (context.session.BotUserSession) as they will be available across the session between the user and the bot.  
 
 ### Limitations 
 
