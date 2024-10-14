@@ -175,7 +175,7 @@ For example, a custom role, “_Banking Agent Conversation Moderator_,” can be
 <img src="../images/custom-role-listing.png" alt="custom role listing" title="custom role listing" style="border: 1px solid gray; zoom:80%;">
 
 * You cannot delete a custom role if it is currently assigned to active users or included in an email invitation. The system displays an error message, as shown in the screenshot below.
-<img src="../images/error-custom-role.png" alt="error custom role deletion" title="error custom role deletion" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/error-custom-role.png" alt="error custom role deletion" title="error custom role deletion" style="border: 1px solid gray; zoom:50%;">
 
 To proceed, you must first unassign the role or assign an alternative role to these users, and then you can delete the custom role.
 
