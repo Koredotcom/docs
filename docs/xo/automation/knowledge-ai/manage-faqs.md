@@ -111,67 +111,67 @@ When the conditional responses are present, it works as follows:
         * For default responses, the platform first attempts to select a channel-specific response. If none is available, the default "All Channels" response will be presented.
 
 
-#### **Example Scenarios**
+!!! example "Example Scenarios"
 
-Let's consider an FAQ about shipping options for an e-commerce platform. The condition will be based on the customer's location, a simple variable that can be easily compared using the "Equals To" operator.
+      Let's consider an FAQ about shipping options for an e-commerce platform. The condition will be based on the customer's location, a simple variable that can be easily compared using the "Equals To" operator.
 
-**Conditions and Responses**
+      **Conditions and Responses**
 
-Condition: Customer Location Equals To "United States"
+      Condition: Customer Location Equals To "United States"
 
-* Web: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
-* Mobile: "Free shipping on $50+ orders in the US. Express: $15. Tap for details."
+      * Web: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
+      *   Mobile: "Free shipping on $50+ orders in the US. Express: $15. Tap for details."
 
-Condition: Customer Location Equals To "Canada"
+      Condition: Customer Location Equals To "Canada"
 
-* Web: "We offer flat-rate shipping to Canada for $10. Free shipping is available on orders over $100."
-* Mobile: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
+      * Web: "We offer flat-rate shipping to Canada for $10. Free shipping is available on orders over $100."
+      * Mobile: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
 
-Condition: Customer Location Equals To "United Kingdom"
+      Condition: Customer Location Equals To "United Kingdom"
 
-* Web: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
-* Mobile: "UK shipping: £5 standard. Free on £75+ orders. Tap for options."
+      * Web: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
+      * Mobile: "UK shipping: £5 standard. Free on £75+ orders. Tap for options."
 
-Default (No condition met):
+      Default (No condition met):
 
-* Web: "International shipping rates vary. Please check our shipping page for detailed information on rates and delivery times."
-* Mobile: "Int'l shipping rates vary. Tap here for your location's rates and times."
-* All Channels: "Shipping options depend on your location. Please contact our customer service for specific shipping information."
+      * Web: "International shipping rates vary. Please check our shipping page for detailed information on rates and delivery times."
+      * Mobile: "Int'l shipping rates vary. Tap here for your location's rates and times."
+      * All Channels: "Shipping options depend on your location. Please contact our customer service for specific shipping information."
 
-**Scenarios**
+      **Scenarios**
 
-Let's see how the answers/responses are selected in different scenarios:
+      Let's see how the answers/responses are selected in different scenarios:
 
-Scenario 1: Customer from the United States accessing via Web
+      Scenario 1: Customer from the United States accessing via Web
 
-* Condition "Customer Location Equals To United States" is satisfied for the Web.
-* Selected Response: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
+      * Condition "Customer Location Equals To United States" is satisfied for the Web.
+      * Selected Response: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
 
-Scenario 2: Customer from Canada accessing via Mobile
+      Scenario 2: Customer from Canada accessing via Mobile
 
-* Condition "Customer Location Equals To Canada" is satisfied for Mobile.
-* Selected Response: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
+      * Condition "Customer Location Equals To Canada" is satisfied for Mobile.
+      * Selected Response: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
 
-Scenario 3: Customer from the United Kingdom accessing via Web
+      Scenario 3: Customer from the United Kingdom accessing via Web
 
-* Condition "Customer Location Equals To United Kingdom" is satisfied for the Web.
-* Selected Response: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
+      * Condition "Customer Location Equals To United Kingdom" is satisfied for the Web.
+      * Selected Response: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
 
-Scenario 4: Customer from France accessing via Mobile
+      Scenario 4: Customer from France accessing via Mobile
 
-* Channel-specific as well as "All Channels" conditions are not satisfied.
-* Selected Response (default): "Int'l shipping rates vary. Tap here for your location's rates and times."
+      * Channel-specific as well as "All Channels" conditions are not satisfied.
+      * Selected Response (default): "Int'l shipping rates vary. Tap here for your location's rates and times."
 
-### Best Practices 
+   ### Best Practices 
 
-When creating your conditional responses:
+   When creating your conditional responses:
 
-* Identify the most important factors for your FAQ (e.g., location, time, user metadata like customer type, products/services, etc).
-* Create specific conditions for these factors.
-* Order your conditions from most to least specific 
-* Use AND logic for more specific scenarios OR logic for wider coverage.
-* Always provide a default response for cases where no conditions are met. 
-* When using variables from the context object to define the conditional responses, it is recommended to have these variables as part of the ‘BotUserSession’ (context.session.BotUserSession) as they will be available across the session between the user and the bot.  
+   * Identify the most important factors for your FAQ (e.g., location, time, user metadata like customer type, products/services, etc).
+   * Create specific conditions for these factors.
+   * Order your conditions from most to least specific 
+   * Use AND logic for more specific scenarios OR logic for wider coverage.
+   * Always provide a default response for cases where no conditions are met. 
+   * When using variables from the context object to define the conditional responses, it is recommended to have these variables as part of the ‘BotUserSession’ (context.session.BotUserSession) as they will be available across the session between the user and the bot.  
 
 ### Limitations 
 
