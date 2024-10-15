@@ -34,20 +34,25 @@ Search AI enables easy integration with Jira to ingest, index, and search throug
 
    </td>
   </tr>
+   <tr>
+   <td>Access Control Support </td>
+   <td>Yes
+   </td>
+  </tr>
 </table>
 
-# Setup Guide
+## Setup Guide
 
 
-## Prerequisites
+### Prerequisites
 
 Create an Atlassian account with access to all the content to be indexed. 
 
-## Set up Jira
+### Set up Jira
 
 Search AI interacts with Jira through the APIs. Hence, to set up integration, create an **API token** with the Atlassian account. Follow the instructions in this [documentation](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) for step-by-step instructions. 
 
-## Configure Jira Connector in SearchAI 
+### Configure Jira Connector in SearchAI 
 
 Go to the **Connectors** page and add **Jira Connector**. Provide the following details to configure the connector. 
 
@@ -125,3 +130,13 @@ The following fields are used to **map the content(issues)** in the Jira account
    </td>
   </tr>
 </table>
+<!-----
+
+### Access Control
+
+SearchAI supports access control for content ingested from Jira accounts using the **Project ID** for issues.
+
+* In Jira, each issue is linked to a specific project through a unique **Project ID**.
+* This **Project ID** is stored in the **RACL field** of the chunks related to the content ingested from Jira.
+* For Search AI to determine which users can access a specific issue, use the **Permission Entity APIs** and associate users with the project ID.
+* Users added to the corresponding Permission Entities gain access to the issues associated with those projects.

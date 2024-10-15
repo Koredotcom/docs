@@ -27,6 +27,11 @@
    <td>Knowledge Articles
    </td>
   </tr>
+    <tr>
+   <td>Access Control Support </td>
+   <td>Yes
+   </td>
+  </tr>
   <tr>
    <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  docs, and images is not supported.
    </td>
@@ -238,3 +243,43 @@ To perform a manual sync operation at any time, click the **Sync Now** button. T
 You can also set up automatic sync in the background at a specific time or at regular intervals. Regular sync ensures that the content in the Search AI application is always up to date and also saves time for an admin to perform manual sync. To enable automatic sync, enable the **Schedule Sync** option and select the date, time, and frequency of sync. 
 
 ![Scheduled Sync ](../images/confluencecloud/manual-sync.png "Scheduled Sync")
+
+### Access Control 
+
+SearchAI supports access control for content ingested using Confluence Cloud Connector. To enable access control on the content, go to the Permissions and Security tab and select Permission Aware access.  
+
+* **Permission Aware** honors the permissions of a user in the Confluence Cloud. The user will view search results from a file only if the user has access to the file in the enterprise application. 
+* **Public Access** overrides the permissions of the user in the Confluence Cloud. It allows every user to access the ingested content irrespective of the permissions in the enterprise system. 
+
+#### Prerequisites
+
+Access control in SearchAI relies on fetching user’s email address as their unique identity. To ensure proper user identity management in SearchAssist, it is mandatory that the account used for configuring SearchAI must be able to view user email addresses. This typically requires using an admin account or ensuring users have enabled the following necessary settings in their Confluence profiles. 
+
+![Prerequisite](./images/confluencecloud/racl/prerequisite.png "image_tooltip")
+
+#### Permission Sets in Confluence Cloud
+
+Two levels of permissions control the user’s access to a page in Confluence Cloud. 
+
+**Space Permissions**
+
+Every space has an independent set of permissions managed by the space administrators, which determine the access settings for different users and groups. SearchAI application requires a minimum permission of **view permission **to allow a user to access the content. 
+
+![Space Permissions](./images/confluencecloud/racl/space-permissions.png "Space Permissions")
+
+
+**Page Restrictions**
+
+Pages inherit the space permissions. However, a page can define its own restrictions. It can allow access to all the members of the space or restrict access to selected members. If the page restrictions are marked as “Only specific people can view & edit,” then the space permissions are not considered. 
+
+![Page Restrictions](./images/confluencecloud/racl/page-restrictions.png "Page Restrictions")
+
+#### Handling Confluence Cloud Permissions in SearchAI
+
+* **Individual Access**: Users who are added to a space or a specific page within that space are listed in the racl (user identity – email address) field of the indexed content in SearchAssist. Based on their permissions, these users can directly access the content.
+* **Group Access**: If access permissions are granted to user groups, SearchAI creates a corresponding permission entity for the group. In this case, the racl fields in the indexed content will have the permission entity IDs for the groups. To enable access for all users within a group, add the users to the respective permission entity using the Permission Entity APIs. 
+
+
+#### Limitation
+
+* Anonymous Access: SearchAssist does not support anonymous access to content. If a page is publicly accessible or allows anonymous access in Confluence Cloud, SearchAssist will not currently permit viewing of the file content.
