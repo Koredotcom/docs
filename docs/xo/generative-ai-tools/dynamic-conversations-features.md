@@ -232,7 +232,7 @@ This feature lets you define custom user prompts based on the conversation conte
 
 
 1. When building the Dialog Flow, click the **“Gen AI”**, and select the **GenAI Prompt** node. 
-<img src="./images/genaiprompt.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genaiprompt.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Configuring the Component Properties in the following sections helps set up the node:
     * **General Settings**: Provide **Name** and **Display Name** for the node and write your own OpenAI Prompt.

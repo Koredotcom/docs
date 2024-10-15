@@ -1,4 +1,4 @@
-# **Installing the BotKit SDK**
+# Installing the BotKit SDK
 
 The Kore.ai BotKit SDK runs as a Node.js application. You can add your own reverse proxy, firewall, and load balancer to meet your functional requirements for availability, scalability, and performance.
 
@@ -36,46 +36,7 @@ The Kore.ai BotKit SDK libraries can be downloaded from the Github repository at
 
 To configure your SDK, you must define the following keys in your config.json file to get your BotKit up and running.
 
-<table>
-  <tr>
-   <td><strong>KEY</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>“server”: {
-<p>
-“port”:
-<p>
-}
-   </td>
-   <td>Specifies the port to run the BotKit NodeJS app .
-   </td>
-  </tr>
-  <tr>
-   <td>app”: {
-<p>
-“apiPrefix” :
-<p>
-}
-   </td>
-   <td>Specifies the API path prefix to the NodeJS express route.
-   </td>
-  </tr>
-  <tr>
-   <td>“credentials”: {
-<p>
-“appId”:
-<p>
-}
-   </td>
-   <td>The Client ID value generated in Kore XO Platform when registering your SDK app.
-   </td>
-  </tr>
-</table>
 
-----------------------------------------
 
 <table border="1">
   <tr>
@@ -156,6 +117,8 @@ To configure your SDK, you must define the following keys in your config.json fi
 
     }
    ```
+
+## Run BotKit SDK
 
 To run BotKit SDK, in a **Terminal** window, enter:
 ```
