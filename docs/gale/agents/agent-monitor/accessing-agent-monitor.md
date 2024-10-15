@@ -9,7 +9,7 @@ Ensure that the status of the selected agent is ‘Deployed’. Agent monitoring
 <img src="../images/Agent_monitor_Allagents.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
 
 4. In the left navigation pane, click **Agent monitor**. The Agent monitor page is displayed.  
-<img src="../images/agent_monitor_dashboard.png" alt="Agent monitor dashboard" title="Agent monitor dashboard" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_dashboard_new.png" alt="Agent monitor dashboard" title="Agent monitor dashboard" style="border: 1px solid gray; zoom:80%;">
 
 5. Click one of the following tabs to see the data for the deployed agents:
     1. **All runs**
