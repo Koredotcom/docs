@@ -1,0 +1,25 @@
+# Accessing Agent Monitor
+
+Steps to access the Agent monitor page:
+
+1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your GALE account.
+2. On the top navigation bar, click **Agents**.
+3. On the **All agents** page, click the desired agent.  
+Ensure that the status of the selected agent is ‘Deployed’. Agent monitoring is available only when agents are deployed in production. Agents that are in debugging or design phases are not tracked here.  
+
+<img src="../images/Agent_monitor_Allagents.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
+
+4. In the left navigation pane, click **Agent monitor**. The Agent monitor page is displayed.
+
+![alt_text](images/image2.png "image_tooltip")
+ 
+5. Click one of the following tabs to see the data for the deployed agents:
+    1. **All runs**
+    2. **LLM calls**
+
+ For more information, see [Understanding the Agent Monitor interface](../agent-monitor/understanding-the-agent-monitor-interface.md).
+
+6. Click each row for detailed information on each agent run or LLM call.   
+A detailed view panel opens on the right. For more information, see [Viewing detailed run information].
+
+7. (Optional) To filter or search the list of runs or calls on the Agent monitor page, see &lt;*<span style="text-decoration:underline;">Searching and filtering></span>*.
