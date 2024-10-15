@@ -18,7 +18,13 @@ You can connect to the ServiceNow application to enable users to fetch query res
    <td>knowledge articles managed by ServiceNow.
    </td>
   </tr>
-</table>
+   <tr>
+   <td>RACL Support
+   </td>
+   <td>Yes.
+   </td>
+  </tr>
+  </table>
 
 To configure the ServiceNow connector, follow the steps listed below.
 
@@ -44,3 +50,49 @@ If you are using **Basic authentication**, you can skip this step. To use OAuth 
 
 Click the **Connect** button to initiate authorization with the application. After the connection is established, go to the **Configurations** tab and click **Sync Now** to ingest content to the application.
 
+### RACL Support
+
+SearchAI offers access control for content ingested from ServiceNow Knowledgebases. Currently, **SearchAI enforces access control at the knowledge base level.**
+
+To learn the basics of RACL in SearchAI, refer to this. 
+
+
+#### **Understanding User Permissions in ServiceNow**
+
+In ServiceNow, user access to knowledge base articles can be defined in three ways:
+
+1. Owners of the Knowledgebase
+2. Managers of the Knowledgebase
+3. User Criteria with specific access permissions (Can Read and Can Contribute) \
+
+![User criteria](./images/connectors/servicenow/racl/user-criteria.png "User criteria")
+ \
+ \
+User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc. \
+![Individual Users](./images/connectors/servicenow/racl/users-in-user-criteria.png "Individual Users")
+
+#### **Handling User Permissions in SearchAI**
+
+By default, SearchAI grants access to the following:
+
+    * **Owners **of the Knowledgebase – This list of owners will be added directly in racl field(sourceACL) in the indexed content.
+    * **Managers **of the Knowledgebase – This list of managers will be added directly in racl field of the indexed content.
+    * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
+
+![Individual Users](./images/connectors/servicenow/racl/individual-users.png "Individual Users")
+ \
+Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default.  Users associated with other conditions (e.g., department or role) are not automatically included. Therefore, these users cannot access articles unless they are explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledgebase is John@example.com and the knowledgebase can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. `"sourceAcl": [`
+
+    ```
+     "25431493ff4221009b20ffffffffffe0",
+     "John@example.com"
+    ],
+    ```
+
+
+
+        The alphanumeric field “25431493ff4221009b20ffffffffffe0” in the indexed content refers to the Permission Entity corresponding to the user criteria for the article. 
+
+
+        ` \
+`If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to associate them with the permission entity.

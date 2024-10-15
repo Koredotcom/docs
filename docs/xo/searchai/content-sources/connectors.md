@@ -56,6 +56,17 @@ To configure a new connector, go to the **Connectors** page under **Content**. F
 
 The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
 
+### Enabling RACL 
+
+To enable RACL in supported connectors, go to the **Permissions and Security** tab and select Permission Aware.
+
+* Permission Aware: Automatically syncs the permission information for the ingested content from the third-party application.
+* Public Access: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
+
+You can verify the permissions imported in the ingested content in the <code>sourceACL</code></strong> field in the JSON view of the corresponding content.
+
+For more information on RACL implementation in Search AI, refer to [this](https://docs.google.com/document/d/18YNXSj5wr8wR4aNjvU6VePxNnab8sukFWPDTSMVdSvg/edit?usp=sharing). 
+
 ### Ingesting Content
 
 By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
