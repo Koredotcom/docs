@@ -8,17 +8,16 @@ Steps to access the Agent monitor page:
 Ensure that the status of the selected agent is ‘Deployed’. Agent monitoring is available only when agents are deployed in production. Agents that are in debugging or design phases are not tracked here.  
 <img src="../images/Agent_monitor_Allagents.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
 
-4. In the left navigation pane, click **Agent monitor**. The Agent monitor page is displayed.
+4. In the left navigation pane, click **Agent monitor**. The Agent monitor page is displayed.  
+<img src="../images/agent_monitor_dashboard.png" alt="agent monitor dashboard" title="Agent monitor dashboard" style="border: 1px solid gray; zoom:80%;">
 
-![alt_text](images/image2.png "image_tooltip")
- 
 5. Click one of the following tabs to see the data for the deployed agents:
     1. **All runs**
     2. **LLM calls**
 
- For more information, see [Understanding the Agent Monitor interface](../agent-monitor/understanding-the-agent-monitor-interface.md).
+    For more information, see [Understanding the Agent Monitor interface](../agent-monitor/understanding-the-agent-monitor-interface.md).
 
-6. Click each row for detailed information on each agent run or LLM call.   
+6. Click each row for detailed information on each agent run or LLM call.  
 A detailed view panel opens on the right. For more information, see [Viewing detailed run information].
 
-7. (Optional) To filter or search the list of runs or calls on the Agent monitor page, see &lt;*<span style="text-decoration:underline;">Searching and filtering></span>*.
+7. (Optional) To filter or search the list of runs or calls on the Agent monitor page, see [Searching and filtering](../agent-monitor/searching-and-filtering-information.md).
