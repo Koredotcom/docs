@@ -116,6 +116,7 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md  
+      - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Guided Onboarding: getting-started/guided-onboarding.md
         - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
