@@ -12,7 +12,7 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## Access the XO Platform
 
-To access the Kore.ai XO Platform, visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
+To access the Platform, visit [XO Platform Homepage](https://platform.kore.ai/){ .md-button .md-button--primary }. You will be directed to the login page.
 
 You can sign up for Kore.ai XO Platform in any of the following two ways:
 
