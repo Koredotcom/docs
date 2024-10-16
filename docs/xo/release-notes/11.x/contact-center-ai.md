@@ -2,6 +2,50 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.6.0 September 28, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Enhanced Live Interaction Pane
+
+This update improves clarity and efficiency by visually distinguishing different types of incoming conversations and system messages, allowing agents to identify the nature of the request quickly.
+
+* New conversations, agent transfers, and supervisor transfers are differentiated on the conversation tray.
+* System messages sent to the user are visually differentiated using a different color from those sent to an agent.
+
+    [Learn more :octicons-arrow-right-24:](../../console/managing-incoming-interactions.md#manual-answer-mode)
+
+#### Notification for Completed Agent Forms
+
+Agents will receive an alert on the console whenever a customer submits an agent form. This enhancement improves agent responsiveness by providing real-time alerts, ensuring faster follow-up and more efficient customer service.
+
+The notification includes the following key information:
+
+* Customer’s Name
+* Time of submission
+* View Form link
+
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#agent-forms-for-handling-sensitive-information)
+
+### Analytics
+
+### Interactions Dashboard
+
+#### Display Active Callback Requests on the Interactions Tab
+
+The Interactions tab now displays active call-back requests and ongoing interactions, ensuring supervisors can track and monitor these requests in real time.
+
+**Supervisor Actions**:
+
+* **Assigning Call-Backs to Agents**: Supervisors can manually assign call-back requests to available agents, streamlining the process and reducing wait times.
+* **Queue Management**: Supervisors can change the queue for a call-back request, optimizing resource allocation and prioritizing customer interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#interactions)
+
+<hr>
+
 ## v11.5.1 September 14, 2024
 
 <u> Patch Release </u>

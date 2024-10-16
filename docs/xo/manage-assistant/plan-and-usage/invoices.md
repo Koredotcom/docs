@@ -16,7 +16,7 @@ To view the invoices, follow these steps:
     * Cost
     * Payment Method
     * Payment Status
-4. You can download any invoice as a PDF format by clicking  <img src="../images/download.png" alt="download" title="download" style="border:1px solid gray; zoom:70%;">.   
+4. You can download any invoice as a PDF format by clicking  <img src="../images/download.png" alt="download" title="download" style="border:1px solid gray; zoom:70%;">. You can also export the  billing report as a .csv file.  
 
  <img src="../images/invoices1.png" alt="invoices" title="invoices" style="border:1px solid gray; zoom:70%;">
 

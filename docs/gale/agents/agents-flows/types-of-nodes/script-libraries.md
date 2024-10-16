@@ -831,6 +831,7 @@ import itertools
 ## Itertools
 ```
 "itertools": [
+
         "accumulate",
         "chain",
         "combinations",

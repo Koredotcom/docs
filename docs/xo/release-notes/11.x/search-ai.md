@@ -1,12 +1,29 @@
 # Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
+## v11.6.0 September 28, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes.
+
+### Structured Data as a Source Type
+
+SearchAI now enables the ingestion and indexing of structured data in JSON format using the JSON connector, providing greater flexibility in handling complex data. This feature allows users to seamlessly process and search through structured datasets for more efficient and accurate results.
+
+### Retrieve Chunk Metadata through Advanced Search API
+
+This enhancement to the Advanced Search API allows users to specify and include custom metadata fields in the generated answers. The API response can now be customized to fetch user-defined metadata fields for each chunk in addition to the default fields, providing a more customized and detailed output.
+
+<hr>
 
 ## v11.5.1 September 14, 2024
 
 <u> Patch Release </u>
 
-This update includes bug fixes.
+### Advanced Content Extraction from Web Pages
+
+With this release, Search AI introduces advanced support for extracting content from images and tables embedded in web pages. Using advanced extraction technologies, Search AI can now analyze and extract text from image files and complex, structured tables, providing a more comprehensive approach to processing web-based content. This enhancement significantly enhances the application’s ability to index and search diverse content formats.
 
 <hr>
 

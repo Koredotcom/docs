@@ -147,14 +147,14 @@ nav:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
               - AudioCodes: channels/ivr-audio-codes.md
-              - IVR: channels/IVR-integration.md            
+              - IVR: channels/IVR-integration.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
       - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
       - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - XO v11.x Updates:
+      - v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -208,7 +208,9 @@ nav:
         - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md     
+      - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
+      - Context Object: automation/intelligence/context-object.md  
     - Knowledge AI:
         - Overview: automation/knowledge-ai/knowledge-ai-introduction.md
         - Knowledge Graph (KG):
@@ -240,14 +242,13 @@ nav:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
-    - Intelligence:
+    - Conversation Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
+      - Context Management: automation/intelligence/context-management.md
       - Events: 
+        - Overview: automation/intelligence/event-overview.md
         - Intent Events: automation/intelligence/event-handling.md
-        - Context Management: automation/intelligence/context-management.md
-        - Context Object: automation/intelligence/context-object.md
-        - Conversation Events: 
-          - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
+        - Conversation Events: automation/intelligence/conversation-management/conversation-events.md 
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
@@ -285,16 +286,24 @@ nav:
             - Directory: searchai/content-sources/directory.md
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
-                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
-                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Dropbox: searchai/content-sources/connectors/dropbox.md
-                - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - ServiceNow: searchai/content-sources/connectors/servicenow.md              
-                - Zendesk: searchai/content-sources/connectors/zendesk.md
-                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Airtable: searchai/content-sources/connectors/airtable.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
-                - DotCMS: searchai/content-sources/connectors/dotcms.md 
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
+                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md
+                - Dropbox: searchai/content-sources/connectors/dropbox.md
+                - GitHub: searchai/content-sources/connectors/github.md
+                - GitLab: searchai/content-sources/connectors/gitlab.md
+                - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - HubSpot: searchai/content-sources/connectors/hubspot.md
+                - Jira: searchai/content-sources/connectors/jira.md
+                - JSON Connector: searchai/content-sources/connectors/json.md
+                - Monday: searchai/content-sources/connectors/monday.md
+                - Notion: searchai/content-sources/connectors/notion.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+                - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Content Browser: searchai/chunk-browser.md
@@ -396,7 +405,6 @@ nav:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
     - Safeguards:
-      - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
@@ -481,9 +489,7 @@ nav:
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
         - Kore Voice Automation:
-          - Zoom Contact Center: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
           - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
-        - Multibot Agent AI Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
@@ -554,7 +560,14 @@ nav:
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export App: deploy/bot-management.md      
+      - Import & Export App: deploy/bot-management.md
+    - Data:
+      - Overview: administration/data/data-tables-and-views.md
+      - Guideines: administration/data/using-data-table.md
+      - Data Table: administration/data/data-table.md
+      - Table view: administration/data/table-views.md
+      - App Definition: administration/data/app-definition.md
+      - Data as Service: administration/data/data-as-service.md            
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:

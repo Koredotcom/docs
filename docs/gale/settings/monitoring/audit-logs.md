@@ -221,7 +221,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 <li>Test dataset
 
-<li>Weights and Biases
+<li>Weights and Biases.
 </li>
 </ul>
    </td>
@@ -286,6 +286,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <li>Scale up delay
 
 <li>Scale down delay
+
 </li>
 </ul>
    </td>
@@ -695,4 +696,3 @@ By default, the current day will be set as the end date. This feature allows you
 For more help or information on <b>Audit Logs</b>, [contact](https://kore.ai/support/){:target="_blank"} our technical support team.
 
 [Learn more](../settings-overview.md){:target="_blank"} about other features on the <b>Settings</b> Console.
-

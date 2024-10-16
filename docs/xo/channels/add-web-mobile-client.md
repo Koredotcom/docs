@@ -135,9 +135,10 @@ Steps to change the theme and design:
         ![alt_text](images/sdke4.png  )
 
     2. Select the theme, click **Make Copy** to create a copy, and apply customization. The copy of the selected theme opens in the edit mode.
-        1. Make the required changes in the **Components** and the **Chat Screen** sections. 
+        1. Make the required changes in the **Components** and the **Chat Screen** sections.
+        <img src="../images/sdke2.png" alt="Configuration" title="Configuration Saved" style="border: 1px solid gray; zoom:70%;">
 
-        ![alt_text](images/sdke2.png  )
+        
 
         2. Click **Save**. The custom theme is created and selected as the current theme.
 

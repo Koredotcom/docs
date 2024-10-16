@@ -9,15 +9,17 @@ Talkdesk is a cloud-based contact center platform that helps businesses deliver 
 ## Prerequisites
 
 * Talkdesk account with voice automation studio flow.
-* A Kore voice bot (SmartAssist bot) trained with few use cases.
+* A Kore voice bot trained with few use cases.
 
 ## How it Works
 
-Here’s a general overview of how voice virtual assistant interactions work on Talkdesk:
+The Kore IVA integration with Talkdesk operates as follows:
 
-1. **Setup and Configuration**: Kore.ai sets up and configures the integration between their virtual assistant and Talkdesk. This involves modifying the **AgentAssist_URL** and **bot details**, and **Voice stream URL*** field modification in **Connect to autopilot - voice** flow in Talkdesk. The user audio is sent to the “Conversation Orchestrator” through the “Connect to Virtual Agent Voice” block within the studio flow.
-2. **Routing and Distribution**: When a customer initiates contact through Talkdesk, Kore receives the audio streams and handles the automation process. Kore sends its bot’s responses to Talkdesk. It’s a bidirectional stream. Once automation is complete, and the customer asks for agent transfer, the control goes back to Talkdesk.
-3. **Agent Interaction**: The agent receives the customer interaction and responds to the customer using Talkdesk communication features, such as answering voice calls.
+* **Setup**: Kore.ai configures the integration by modifying bot details and voice stream URLs in Talkdesk's "Connect to autopilot - voice" flow.
+* **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
+* **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
+
+This streamlined process enhances Talkdesk's contact center capabilities with Kore's voice automation technology.
 
 ## Voice Automation Process
 
@@ -36,22 +38,18 @@ The following steps are initiated after a call is established between a user and
 
 This section explains the configuration steps needed to integrate Kore IVA integration with Talkdesk.
 
-### Step 1: Associate an App within an Experience Flow
+### Step 1: Create and attach a Flow with a Phone Number
 
-An _experience flow _is a step-by-step process that helps you define the end-to-end customer experience at a contact center for each communication channel. Experience Flows can be built using the Experience Flow Designer. [Know more](https://docs.kore.ai/smartassist/experience-flows/flow-designer/){:target="_blank"}.
-
-### Step 2: Attach that Experience Flow with a Phone Number
-
-A _flow_ is a step-by-step process that helps you define the end-to-end customer experience for each communication channel. You can create experience flows using the Flow Designer. [Know more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
+A Flow is a sequential process to help you define the end-to-end customer experience at a contact center. A well-designed flow aims to enhance customer satisfaction by ensuring efficiency, clarity, and personalized service throughout the entire journey. You can build flows using the Flow Designer. [Learn more.](https://docs.kore.ai/xo/flows/create-flows/#:~:text=a%20Start%20Flow-,Voice,-Chat){:target="_blank"}  
 <img src="../images/flows-and-channels-phone-number-2.png" alt="flows-and-channels-phone-number" title="flows-and-channels-phone-number" style="border: 1px solid gray; zoom:80%;">
 
 **Note**: This phone number is encrypted and used in WSS URL in Audio streaming.
 
-### Step 3: Create a WSS URL
+### Step 2: Create a WSS URL
 
 When a customer calls the Talkdesk phone number, the audio stream is directed to audiosocket and a call is initiated to SmartAssist bot based on the number retrieved from the URL. The audio is streamed bidirectionally between the Kore bot and the Talkdesk end user.
 
-Create a WSS URL with botID, token ID, and phone number used in the Experience Flow:
+Create a WSS URL with botID, token ID, and phone number used in the Flow:
 
 wss://korevg-np.kore.ai/audiosocket/talkdesk/?sipuri=%2B173443xxxxx&token=xxxxxGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzL
 TFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-JgCsxnCCXlpGfUjw&botId=st-92bbcxxx-f5c3-5ea6-ab5e-d7ebea8xxxxx&accountId=xxxxxbef6ed51db7e930d75c&agentassist=false
@@ -66,7 +64,7 @@ TFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-Jg
     * **botId**: Bot ID of the bot you want to use – for example, st-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx.
     * **accountId**: Account ID of the bot owner. Unique identifier for an account.
 
-### Step 4: Configure Audio Streaming Node in Talkdesk
+### Step 3: Configure Audio Streaming Node in Talkdesk
 
 Audio streaming is the primary component for enabling voice automation. It involves streaming Talkdesk audio to the Voice Stream URL (created in [Step-3](#step-3-create-a-wss-url)) over WSS using Conversation Orchestrator. Here’s a basic flow within the Talkdesk Studio:  
 <img src="../images/talkdesk-studio-basic-flow-3.png" alt="talkdesk-studio-basic-flow" title="talkdesk-studio-basic-flow" style="border: 1px solid gray; zoom:80%;">
@@ -76,7 +74,16 @@ Audio streaming is the primary component for enabling voice automation. It invol
 3. Enter the “Voice Stream URL” in the input field created in [Step-3](#step-3-create-a-wss-url).
 4. Save and Publish the flow.
 
-### Step 5: Configure Agent Escalation Node on Talkdesk
+### Step 4: Configure Agent Escalation Node on Talkdesk
+
+This section explains both the Kore and Talkdesk side configurations for Agent Escalation.
+
+#### Kore Side Configuration
+
+For Agent Transfer, configure **SIP BYE** in UXO by going to **Settings > Integrations > Agent Transfer > Voice > SIP Transfer > Configuration**:  
+<img src="../images/sip-bye-settings.png" alt="sip-bye-settings" title="sip-bye-settings" style="border: 1px solid gray; zoom:80%;">
+
+#### Talkdesk Side Configuration
 
 For Voice Automation, Kore.ai uses the "Connect to Autopilot Voice" node of Talkdesk. Check the Exits and Preferences of this node in the screenshot below.
 
@@ -87,8 +94,10 @@ On Agent Escalation, Kore.ai creates variables that are populated to **Ring Grou
 
 <img src="../images/agent-escalation-node-preferences-ring-group-6.png" alt="agent-escalation-node-preferences-ring-group" title="agent-escalation-node-preferences-ring-group" style="border: 1px solid gray; zoom:80%;">
 
-**Note**: Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
+!!! note
 
-### Step 6: Testing the Studio Flow
+    Kore.ai doesn’t pass any header information on Voice Automation Agent transfer. Talkdesk has a bidirectional streaming protocol. For requests of interactions to be escalated to human agents, Kore.ai uses the "Agent Escalation" node of Talkdesk. [Learn more](https://support.talkdesk.com/hc/en-us/articles/9484798498587-Conversation-Orchestrator-Streaming-Bidirectional-Audio#:~:text=If%20you%20need%20the%20call%20to%20be%20escalated%20to%20a%20live%20agent%2C%20then%20configure%20the%20%E2%80%9CEscalation%E2%80%9D%20exit%20and%20add%20an%20Assignment%20and%20Dial%20component%20step){:target="_blank"}.
+
+### Step 5: Testing the Studio Flow
 
 Once your “Incoming call” flow is published, you can assign it to one or several phone numbers. A phone number, on the other hand, can only be assigned to one “Incoming call” flow. In this step, you can assign a phone number to the Talkdesk flow and test the automation. [Learn more](https://studio.talkdesk.com/docs/assigning-a-flow-to-a-number){:target="_blank"}.

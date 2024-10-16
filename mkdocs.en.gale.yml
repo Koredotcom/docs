@@ -191,7 +191,5 @@ nav:
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
-      - Audit Logs: settings/monitoring/audit-logs.md
-      
-        
+      - Audit Logs: settings/monitoring/audit-logs.md      
    

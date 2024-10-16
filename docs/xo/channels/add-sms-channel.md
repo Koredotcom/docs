@@ -7,7 +7,7 @@ The SMS Channel enables customer communication via text messages. It supports in
 SMS channel capabilities:
 
 * **Outbound SMS**: It enables one-way communication, allowing you to send notifications or messages to users without expecting replies. It uses numbers specifically configured for outbound messaging and is ideal for simple text communications, such as alerts or reminders.
-* **Inbound and Outbound SMS**: It facilitates two-way communication, enabling you to send notifications or messages and receive responses from users. This method links to an experience flow, allowing for more interactive engagement. It's suitable for simple text messages that require user input or ongoing conversations, such as customer support inquiries or appointment confirmations.
+* **Inbound and Outbound SMS**: It facilitates two-way communication, enabling you to send notifications or messages and receive responses from users. This method links to an [Experience Flow](../flows/create-flows.md#sms), allowing for more interactive engagement. It's suitable for simple text messages that require user input or ongoing conversations, such as customer support inquiries or appointment confirmations.
 
 To run SMS campaigns, you must configure the SMS Channel. Currently, the channel is compatible only with Twilio.
 
@@ -28,9 +28,9 @@ Steps for SMS Channel Configuration:
     <img src="../images/sms-window.png" alt="Instructions Tab" title="Instructions Tab" style="border: 1px solid gray; zoom:60%;">  
 
 3. The Instructions tab provides instructions to configure the selected SMS service provider. Select a **Provider Name** from the dropdown list.  
-<img src="../images/twilio-instructions.png" alt="Twilio Instructions" title="Twilio Instructions" style="border: 1px solid gray; zoom:60%;"> 
- \
-To set up a Twilio Voice Channel, see [Adding the Twilio Voice Channel](./add-twilio-sms-channel.md).
+<img src="../images/twilio-instructions.png" alt="Twilio Instructions" title="Twilio Instructions" style="border: 1px solid gray; zoom:60%;">  
+
+    To set up a Twilio Voice Channel, see [Adding the Twilio Voice Channel](./add-twilio-sms-channel.md).
 
 4. Once all the Instructions are completed, click **Next** to move to the **Configurations** tab. You can also click the **Configurations** tab.  
 <img src="../images/next-button.png" alt="Next/Configurations" title="Next/Configurations" style="border: 1px solid gray; zoom:60%;">

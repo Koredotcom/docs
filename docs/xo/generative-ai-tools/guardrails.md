@@ -20,11 +20,11 @@ This guardrail analyzes and prevents the dissemination of potentially harmful co
 
 For example, you can detect scenarios where the LLM has generated toxic content that your customers may find inappropriate. 
 
-### Blacklist Topics
+### Restrict Topics
 
-Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be blacklisted in the guardrails and ensure the LLM is not responding to requests related to that topic.  
+Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be restricted in the guardrails and ensure the LLM is not responding to requests related to that topic.  
 
-For example, you can blacklist the topics like politics, violence, religion, etc.
+For example, you can Restrict the topics like politics, violence, religion, etc.
 
 !!! note
 
@@ -64,7 +64,7 @@ The Guardrails are currently available for the following features: **GenAI Node*
   <tr>
     <td>Guardrail</td>
     <td colspan="2">Restrict Toxicity</td>
-    <td colspan="2">Blacklist Topics</td>
+    <td colspan="2">Restrict Topics</td>
     <td colspan="2">Detect Prompt Injections</td>
     <td colspan="2">Filter Responses</td>
   </tr>
@@ -164,7 +164,7 @@ Steps to edit a Guardrail:
 
 ## Guardrails Runtime Behavior
 
-This runtime guardrail validation ensures that only safe, appropriate, and conformant content flows through the LLM interactions, upholding responsible AI standards. When guardrails are enabled for a feature, they act as safety checks on both the requests sent to the LLM and the responses received from it. 
+This runtime guardrail validation ensures that only safe, appropriate, and conformant content flows through the LLM interactions, upholding responsible AI standards. When guardrails are enabled for a feature, they act as safety checks on the requests sent to the LLM and the responses received. 
 
 The typical flow is as follows:
 
@@ -174,17 +174,19 @@ The typical flow is as follows:
 2. Enabled guardrails validate this prompt against defined safety and appropriateness rules.
 3. If the prompt passes all guardrails, it is sent to the LLM.
 4. The LLM's response is received by the XO Platform.
-5. Enabled guardrails validate the response content.
+5. Enabled guardrails to validate the response content.
 6. If the response passes all guardrails, it is displayed to the user.
 
-However, if any guardrail is violated at the prompt or response stage, the regular flow is interrupted, and a pre-configured fallback behavior is triggered for that feature, such as displaying a default message or skipping to the next step.
+However, if any guardrail is violated at the input or response stage, the regular flow is interrupted, and a pre-configured fallback behavior is triggered for that feature, such as displaying a default message or skipping to the next step. 
+
+When the fallback mechanism is triggered, the system stores the details in the context object, including the reason for the breach (e.g., a breached guardrail), the cause ID, the stage of the breach (either LLM Input or LLM Output), and all breached guardrails.
 
 Also, the platform users can inspect the entire message flow in the debug logs.
 
 
 ### Guardrails in Debug Logs
 
-The XO Platform provides detailed debug logs to help test, monitor, and debug the behavior of enabled guardrails. 
+The XO Platform provides detailed debug logs to help test, monitor, and debug the behavior of enabled guardrails.
 
 These logs show:
 
@@ -192,13 +194,14 @@ These logs show:
 
 * Whether guardrails successfully validated the prompts sent to the LLM.
 * Whether guardrails successfully validated the responses received from the LLM.
-* If any guardrail was violated, what’s the triggered fallback behavior for that feature?
+* If a guardrail is breached, it shows the stage of the breach (either LLM Input or LLM Output), the Feature Name, the breached guardrails, and the guardrail request and response details.
 
-All LLM requests and responses, as well as guardrail validation results, are recorded in the debug logs and separate LLM and GenAI usage logs. These comprehensive logs allow platform users to verify that guardrails are working as intended, identify any issues, and audit LLM interactions across the platform's different runtime features.
 
-For example, the debug logs show five entries if a specific node has two input and three output guardrails enabled, as shown in the screenshot below.
+All LLM requests, responses, and guardrail validation results are recorded in the debug logs, [failed task logs](../analytics/automation/task-execution-logs.md), and [LLM and GenAI usage logs](../analytics/genai-analytics/llm-usage-logs.md). These comprehensive logs allow platform users to verify that guardrails are working as intended, identify issues, and audit LLM interactions across the platform's different runtime features.
 
-<img src="../images/guardrails7.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+For example, the debug logs display two entries: one for the LLM input and another for the LLM output guardrail, as shown in the screenshot below.
+
+<img src="../images/guardrails7.1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 

@@ -9,14 +9,14 @@ After signing up, users are guided through the onboarding process as follows:
 <img src="../images/accplatform(18).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 3. To initiate the onboarding journey, select one of the following options and then click **Next**:
-    * Create an Intelligent Virtual Assistant (IVA)
-    * Build your AI-native Contact Center  
+    * Automation AI
+    * Contact Center AI  
     <img src="../images/accplatform(19).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 4. Select one of the following options to choose your onboarding experience.
-    * Guided Onboarding 
+    * Express 
     * Custom Setup  
-    **Guided Onboarding** is recommended and pre-selected. 
+    **Express** is recommended and pre-selected. 
 <img src="../images/accplatform(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 5. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.

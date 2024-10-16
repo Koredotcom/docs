@@ -5,7 +5,7 @@ The Dialog Builder is where you can create your Dialog Tasks, from end-to-end. T
 
 ## Create a Dialog Task
 
-To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../building-a-virtual-assistant)for more information.
+To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../getting-started/building-a-virtual-assistant.md) for more information.
 
 To add a dialog task, follow the steps below:
 

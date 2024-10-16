@@ -28,6 +28,9 @@ If Explicit Reject is enabled in the Answer Mode:
 * **Reject**: Removes conversation from agent's queue, and returns it to the queue for reassignment.  
 <img src="../images/accept-reject-button.png" alt="Accept Reject Button" title="Accept Reject Button" style="border: 1px solid gray; zoom:80%;">
 
+    In the case of an agent or supervisor transfer, or queue timeout, the transferred conversation appears with a message indicating the transfer source.  
+    <img src="../images/transferred-by.png" alt="Transfered conversation" Transfered Conversation" style="border: 1px solid gray; zoom:80%;">
+
 ### Auto-Answer Mode
 
 If auto-answer mode is enabled, the accepted conversations appear at the top or bottom of the conversation tray list, depending on the selected sorting order, and are marked with a **New** indicator. This will be displayed till the agent clicks the conversation and sends the first message.

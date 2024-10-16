@@ -11,8 +11,10 @@ Once you change the Data Table owner, the new user can modify and manage the ass
 
 To learn how to use the Data Tables and Views, read these posts:
 
+* [Guidelines for Using Data Tables in Virtual Assistants](using-data-table.md){:target="_blank"}
 * [Data Tables](../data-table/){:target="_blank"}
 * [Table Views](../table-views/){:target="_blank"}
+8 [App Definition](app-definition.md){:target="_blank"}
 * [Data as a Service](../data-as-service/){:target="_blank"}
 * [Manage tables and views in the Admin Console](../manage-data-tables-and-views-in-admin-console/){:target="_blank"}
 * [Update data in the Service Node](../data-as-service/){:target="_blank"}

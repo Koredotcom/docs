@@ -1,5 +1,7 @@
 # Test Page
 
+Data Anonymization: generative-ai-tools/data-anonymization.md
+
 === "Automation AI"
 
     | Model                       | Agent Response Rephrasing |

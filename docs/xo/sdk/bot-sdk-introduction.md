@@ -10,9 +10,17 @@ Using our BotKit SDK that resides on your servers and enables interaction betwee
 
 Bot SDKs are available for the following platforms:
 
-* **Bots Web SDK** – The Bots Web SDK contains HTML5 and JavaScript libraries that you can integrate with web applications and hybrid mobile apps. The SDK is available in our GitHub repository at [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk).
-* **Bots Native iOS SDK** – The Bots Native iOS SDK contains native iOS libraries that you can integrate with native iOS mobile applications. The SDK is available in our GitHub repository at [https://github.com/Koredotcom/iOS-kore-sdk](https://github.com/Koredotcom/iOS-kore-sdk)
-* **Bots Native Android SDK –** The Bots Native Android SDK contains native Android libraries that you can integrate with native Android mobile applications. The SDK is available in our GitHub repository at [https://github.com/Koredotcom/android-kore-sdk](https://github.com/Koredotcom/android-kore-sdk)
+* **Bots Web SDK** – The Bots Web SDK contains HTML5 and JavaScript libraries that you can integrate with web applications and hybrid mobile apps. The SDK is available in our GitHub repository at [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk). For more information, check the [Readme file](https://github.com/Koredotcom/web-kore-sdk/blob/master/README.md#koreai-web-sdk-for-developers) in the repository.
+
+* **Bots Native iOS SDK** – The Bots Native iOS SDK contains native iOS libraries that you can integrate with native iOS mobile applications. The SDK is available in our GitHub repository at [https://github.com/Koredotcom/iOS-kore-sdk](https://github.com/Koredotcom/iOS-kore-sdk). For more information, check the [Readme file](https://github.com/Koredotcom/iOS-kore-sdk/blob/master/README.md#kore-bot-sdk-for-ios-developers) in the repository. 
+
+* **Bots Native Android SDK –** The Bots Native Android SDK contains native Android libraries that you can integrate with native Android mobile applications. The SDK is available in our GitHub repository at [https://github.com/Koredotcom/android-kore-sdk](https://github.com/Koredotcom/android-kore-sdk). For more information, check the [Readme file](https://github.com/Koredotcom/android-kore-sdk/blob/master/README.md#koreai-android-sdk-for-developers) in the repository. 
+
+
+!!! note
+
+    In Github, you can select a version-specific branch from the top-left corner.
+
 
 To get started with Kore.ai Bot SDKs, you must have an application to embed the SDK into, host a JWT generation web service, and register your app in the XO Platform. For more information, see [SDK Security](../sdk-security).
 
