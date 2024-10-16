@@ -2,9 +2,9 @@
 
 The Agent Monitor capabilities are shown on the following tabs:
 
-* **All runs**: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
+* **All runs**: It shows comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
 
-* **LLM calls**: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
+* **LLM calls**: It shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
