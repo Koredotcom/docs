@@ -17,7 +17,7 @@ Steps to access the Agent monitor page:
     * **All runs**
     * **LLM calls**
 
-    For more information, see [Understanding the Agent Monitor interface](../agent-monitor/understanding-the-agent-monitor-interface.md).
+    For more information, see [Understanding Agent Monitor](../agent-monitor/understanding-the-agent-monitor-interface.md).
 
 6. Click each row for detailed information on each agent run or LLM call. A detailed view panel opens on the right.  
 
