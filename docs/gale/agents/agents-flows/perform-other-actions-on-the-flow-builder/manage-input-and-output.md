@@ -45,7 +45,7 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 1. On the top of the canvas of the Agents page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
 2. On the **Output** tab, click the **+ Add output variable** button. The **Enter output variable** dialog is displayed.
-<img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:50%;">
 
 3. In the **Name (key)** field, provide a name for the output variable.
 
