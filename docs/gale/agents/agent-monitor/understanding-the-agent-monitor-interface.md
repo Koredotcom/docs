@@ -7,9 +7,9 @@ The Agent Monitor page consists of two main tabs:
 
 Both tabs display summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
-## All runs
+## All Runs
 
-<img src="../images/agent_monitor_allruns.png" alt="Agent monitor All runs" title="Agent monitor All runs" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_allruns.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The All runs tab provides the following information for each agent run:
 
@@ -31,13 +31,13 @@ You can also see the following metrics on the top of the page:
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. 
 
-## 	LLM calls
+## 	LLM Calls
 
 Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
 
 If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
 
-<img src="..images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls tab" style="border: 1px solid gray; zoom:80%;">
 
 The LLM calls tab provides the following information for each Gen AI node call:
 
@@ -59,7 +59,7 @@ You can also see the following metrics on the top of the page:
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.
 
-# 	Viewing detailed run information
+## 	Viewing Detailed Run Information
 
 Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
 
@@ -67,17 +67,17 @@ Clicking each row in either the All runs tab or the LLM calls tab opens a detail
 
 The panel displays the following details:
 
-1. **Run ID/Request ID**: The unique identifier for the flow.
-2. **Response Time**: The duration the agent takes to complete a request and provide an output.
-3. **Debug icon**: Clicking this icon displays the debug log details.
-4. **Input**: The Input section displays the input sent to the agent.
-5. **Flow log**: The flow log section displays the information of each node.
+*  **Run ID/Request ID**: The unique identifier for the flow.
+* **Response Time**: The duration the agent takes to complete a request and provide an output.
+*  **Debug icon**: Clicking this icon displays the debug log details.
+*  **Input**: The Input section displays the input sent to the agent.
+*  **Flow log**: The flow log section displays the information of each node.
     * **Success**: Displays the log as in the debug panel.
     * **Failure**: Displays failure details as in the debug panel.
 
         For GenAI nodes, when you expand the node you can see the information related to each node along with the scanner information.
 
-6. **Output section**: The Output section displays the agent's output (for successful runs). You can copy the output and view tokens.
+*  **Output section**: The Output section displays the agent's output (for successful runs). You can copy the output and view tokens.
 
     <img src="../images/agent_monitor_viewing_run_information_detailed.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
@@ -101,7 +101,7 @@ Steps to use the time-based search:
 
 2. Select a predefined time range or set custom dates.
 
-    <img src="../images/agent_monitor_calendar.png" alt="calendar" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_calendar.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply** to update the results.
 
@@ -117,10 +117,10 @@ Steps to use the filters:
 1. Click the Filter icon.
 2. Click + Add Filter.
 
-    <img src="../agent-monitor/images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
 
 3. Select options for Column, Operator, and Value.
 
-    <img src="../agent-monitor/images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Apply**.    
+4. Click **Apply**.
