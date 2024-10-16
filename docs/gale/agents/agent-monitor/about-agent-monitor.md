@@ -14,3 +14,12 @@
 *  **Gen AI Node Analysis**: Gain specific insights into the performance of individual Gen AI nodes within your agents.
 *  **Advanced Filtering and Search**: Use time-based searches and custom filters to drill down into specific scenarios or periods.
 *  **Detailed Run Information**: Access comprehensive logs and debug information for each agent run, facilitating efficient troubleshooting and optimization.
+
+## Best Practices
+
+* Regularly monitor the Agent Monitor dashboard to track performance trends.
+* Use time-based searches to analyze specific periods of interest.
+* Combine multiple filters to further analyze particular scenarios.
+* Review detailed run information to understand the flow of data through your agent and identify any potential issues.
+
+By effectively leveraging Agent Monitor, you can ensure the optimal performance of your agents and make data-driven decisions to improve your operations.
