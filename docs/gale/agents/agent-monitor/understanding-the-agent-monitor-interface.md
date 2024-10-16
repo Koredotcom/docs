@@ -1,11 +1,12 @@
-# Understanding the Agent Monitor Interface
+# Understanding Agent Monitor
 
-The Agent Monitor page consists of two main tabs:
+The Agent Monitor capabilities are shown on the following tabs:
 
-1. **All runs**: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
-2. **LLM calls**: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
+* **All runs**: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
 
-Both tabs display summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
+* **LLM calls**: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
+
+Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
 ## All Runs
 
@@ -31,7 +32,7 @@ You can also see the following metrics on the top of the page:
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. 
 
-## 	LLM Calls
+## LLM Calls
 
 Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
 
@@ -59,7 +60,7 @@ You can also see the following metrics on the top of the page:
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.
 
-## 	Viewing Detailed Run Information
+## Viewing Detailed Run Information
 
 Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
 
@@ -83,7 +84,6 @@ The panel displays the following details:
 
 
 ## Searching and Filtering Information
-
 
 ### Manual Search
 
