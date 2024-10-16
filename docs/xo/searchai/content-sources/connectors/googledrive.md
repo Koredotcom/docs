@@ -25,6 +25,10 @@ By setting up the Google Drive connector in Search AI, you can extend the search
 Note: Password-protected files in any format are not supported
    </td>
   </tr>
+    <tr>
+   <td>RACL Support </td>
+   <td>Yes </td>
+  </tr>
 </table>
 
 
@@ -138,3 +142,56 @@ You can define conditions based on the following parameters or add your paramete
 * You can define more than one condition to a rule to filter specific content. For example, to ingest only PDF files from a given folder, you can set up a filter as:
 
 ![Example](../images/googledrive/example3.png "Example")
+
+## **Access Control**
+
+RACL is a method of controlling access to specific resources or information based on the roles of individual users within the organization. Refer to this to learn more about how SearchAI handles access control. 
+
+Google Drive Connector allows you to import user permissions and access lists from the GDrive repository along with the content and other metadata for the content and present the answers according to the users’ access rights. For instance, you will only see answers generated from a Google Drive file if you can access that file.
+
+
+### **Handling Google Drive File Permissions**
+
+SearchAI application supports **file-level** permissions through Google Drive Connector. SearchAssist supports the following access types in GDrive. 
+
+* **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers. \
+ \
+For instance, if two users have read access to a file, corresponding indexed content will have the user information as shown below. \
+
+![People With Access](./images/connectors/googledrive/example1.png "Example")
+ \
+ \
+Similarly, if the files are accessible to a user and a user group in Google Drive, the corresponding content will have the information as shown below, where [hr-team@example.com](mailto:hr-team@example.com) is the permission entity created corresponding to the group.  \
+ \
+
+![User Groups](./images/connectors/googledrive/example2.png "User Groups")
+
+* **Anyone with Link**: This is treated as public access. All the users can access a file with this type of access permission.  
+
+![Anyone with Link](./images/connectors/googledrive/example3.png "Anyone with Link")
+
+* **Domain Specific Access**: SearchAI supports this type of access and verifies the user identity against the specified domain name.
+
+![Domain level Access](./images/connectors/googledrive/example4.png "Domain Level Access")
+ \
+
+### **Handling User Groups or Domain level access in Google Drive**
+
+When a file access is given to a user group or a domain, the group name or domain name is stored as a Permission Entity in SearchAssist. In this case, SearchAssist requires additional information to identify and resolve user identities. You need to associate individual users within the group or the domain to the Permission Entity to enable those users access to the file. 
+
+To correctly associate users with the relevant permission entity, use the Permission Entity APIs.
+
+Example: Suppose a file is shared with a user group, hr-kore@example.com. This group is stored as a permission entity within SearchAssist. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to add the user IDs of these five team members to the corresponding permission entity.
+
+
+### **Enabling RACL**
+
+You can enable or disable RACL for any content ingested from Google Drive using the following options under the **Permissions and Security** tab. 
+
+* **Permission Aware**: This option maintains the default permissions for users associated with the content in Google Drive. 
+* **Public Access**: This option overrides the permissions associated with the content in Google Drive and allows all users to access the content. 
+
+You can configure this while connecting to Google Drive for the first time. To update the permissions at any time, go to the Permissions & Security tab and modify them. The updated permissions apply to the content ingested during the next sync activity. 
+
+![Permissions Config](./images/connectors/googledrive/permissions.png "RACL Enable")
+

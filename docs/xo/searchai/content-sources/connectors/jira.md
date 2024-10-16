@@ -125,3 +125,14 @@ The following fields are used to **map the content(issues)** in the Jira account
    </td>
   </tr>
 </table>
+
+
+### Access Control
+
+SearchAI supports access control for content ingested from Jira accounts using the **Project ID** for issues.
+
+* In Jira, each issue is linked to a specific project through a unique **Project ID**.
+* This **Project ID** is stored in the **RACL field** of the chunks related to the content ingested from Jira.
+* For Search AI to determine which users can access a specific issue, use the **Permission Entity APIs** and associate users with the project ID.
+* Users added to the corresponding Permission Entities gain access to the issues associated with those projects.
+
