@@ -1,0 +1,3697 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Rajasekhar Balla">
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../settings/active-directory/">
+      
+      
+      <link rel="icon" href="../../../images/gale_favicon.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Users - Kore ai Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra_kore.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-560BYJFH0P"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-560BYJFH0P",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-560BYJFH0P",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#users" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      <!-- Determine base classes -->
+
+
+<style>
+  .md-header__option{
+    margin-bottom: 0px;
+  }
+  .nav-links{
+    display: flex;
+  }
+  .m-0{
+    margin: 0px;
+  }
+  .md-cstm-sele{
+    z-index: 30;
+  }
+  .md-cstm-sele .nav-item{
+    display: flex;
+    align-items: center;
+  }
+
+  .md-cstm-sele .nav-item span{
+    transform: rotate(90deg);
+  }
+  .md-select__list__cstm{
+    width: 160px;
+    padding: 8px;
+  }
+  .md-select__list__cstm .md-select__link{
+    font-size: 13px;
+  }
+  .md-more-links{
+    background-color: var(--md-primary-fg-color);
+    display: none;
+    text-align: center;
+  }
+  .md-more-links .nav-links{
+    justify-content: center;
+  }
+  .md-more-links .nav-item{
+    color: var(--md-primary-bg-color) !important;
+  }
+  .md-more-links .nav-item span{
+    border-radius: 100%;
+    height: 0.9rem;
+    transition: background-color .25s;
+    width: 0.9rem;
+    }
+    .md-more-links .nav-item span::after{
+      background-color: currentcolor;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    -webkit-mask-image: var(--md-nav-icon--next);
+    mask-image: var(--md-nav-icon--next);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: transform .25s;
+    vertical-align: -0.1rem;
+    width: 100%;
+    }
+  @media only screen and (max-device-width: 767px){
+   .md-d-none{
+    display: none;
+   }
+   .md-more-links{
+    display: block !important;
+   }
+  }
+  @media only screen and (max-device-width: 550px){
+   .md-header__button{
+     margin: 0px !important;
+   }
+   .logo .logo-img img{
+    width: 70px !important;
+   }
+   .md-header__title{
+    margin-left: 10px !important;
+   }
+   .logo-title{
+    font-size: 13px !important;
+   }
+  }
+</style>
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <!-- <a
+      href="../../.."
+      title="Kore ai Docs"
+      class="md-header__button md-logo"
+      aria-label="Kore ai Docs"
+      data-md-component="logo"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a> -->
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <!-- <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kore ai Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Users
+            
+          </span>
+        </div>
+      </div> -->
+      <!-- <h1>Kore ai test</h1> -->
+      <div class="logo">
+        <div class="logo-img">
+          <img width="228" height="58" src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20210813113826/kore.ai_logo.svg" class="attachment-large size-large" alt="kore ai">
+          <span class="logo-title">DOCUMENTATION</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-links md-d-none">
+      <a class="nav-item" 
+        href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
+
+      <!-- <a class="nav-item"
+          target="_blank" 
+          href="https://support.kore.ai/"
+      > -->
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Get Support
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  
+
+ 
+      
+    </div>
+
+    <!-- Color palette -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input
+              class="md-option"
+              data-md-color-media=""
+              data-md-color-scheme="default"
+              data-md-color-primary="indigo"
+              data-md-color-accent="indigo"
+              
+                aria-label="Switch to dark mode"
+              
+              type="radio"
+              name="__palette"
+              id="__palette_1"
+            />
+            
+              <label
+                class="md-header__button md-icon"
+                title="Switch to dark mode"
+                for="__palette_2"
+                hidden
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input
+              class="md-option"
+              data-md-color-media=""
+              data-md-color-scheme="slate"
+              data-md-color-primary="indigo"
+              data-md-color-accent="lime"
+              
+                aria-label="Switch to light mode"
+              
+              type="radio"
+              name="__palette"
+              id="__palette_2"
+            />
+            
+              <label
+                class="md-header__button md-icon"
+                title="Switch to light mode"
+                for="__palette_1"
+                hidden
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+  
+  </nav>
+   <nav class="md-more-links">
+    <div class="nav-links">
+      <a class="nav-item" 
+          href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
+
+      <!-- <a class="nav-item"
+          target="_blank" 
+          href="https://support.kore.ai/"
+      > -->
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Get Support
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div> 
+      
+    </div>
+   </nav>
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../home/" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../getting-started/introduction/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../agents/overview/" class="md-tabs__link">
+          
+  
+  Agents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../models/overview/" class="md-tabs__link">
+          
+  
+  Models
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../playground/overview/" class="md-tabs__link">
+          
+  
+  Playground
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../data/manage-datasets/" class="md-tabs__link">
+          
+  
+  Data
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../settings-overview/" class="md-tabs__link">
+          
+  
+  Settings
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Kore ai Docs" class="md-nav__button md-logo" aria-label="Kore ai Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Kore ai Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Koredotcom/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Koredotcom/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../home/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GALE Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/sign-up-sign-in/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessing GALE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agents
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Agents
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Agents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/create-a-new-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create an Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agent Flows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Agent Flows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/flows-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Flows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manage Flows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Manage Flows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/manage-flow-nodes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage Nodes in Flows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage Input and Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run the Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a Version of the Flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Types of Nodes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Types of Nodes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/types-of-nodes/gen-ai-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gen AI Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/types-of-nodes/api-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/types-of-nodes/function-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/types-of-nodes/condition-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Condition Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agents-flows/types-of-nodes/end-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    End Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sharing & Permissions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Sharing & Permissions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/manage-user-roles-and-permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage User Roles and Permissions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agent Endpoint
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Agent Endpoint
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/deploy-an-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy an Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agent Monitor
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Agent Monitor
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agent-monitor/about-agent-monitor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Agent Monitor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agent-monitor/accessing-agent-monitor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessing Agent Monitor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/agent-monitor/understanding-the-agent-monitor-interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Understanding Agent Monitor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Keys
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            API Keys
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/create-a-new-api-key/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create an API Key
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guardrails
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Guardrails
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/guardrails/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Guardrails
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/guardrails/add-a-scanner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a Scanner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/guardrails/test-guardrail/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Guardrail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/guardrails/manage-guardrails/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage Guardrails
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Configurations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Configurations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agents/configure-an-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure an Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fine-Tuned Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fine-Tuned Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/create-a-fine-tuned-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/deploy-a-fine-tuned-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Model Settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model Settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/model-settings-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/view-the-generated-api-endpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Endpoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/generate-an-api-key/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Keys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/configure-your-fine-tuned-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/fine-tune-models/export-your-fine-tuned-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Open-Source Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Open-Source Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/open-source-models/model-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Optimization Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/open-source-models/select-and-deploy-an-open-source-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy an Open-Source Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/open-source-models/deploy-an-imported-model-from-hugging-face/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy a Hugging Face Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_4" id="__nav_4_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Model Settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Model Settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/open-source-models/view-the-generated-api-endpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Endpoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/open-source-models/generate-an-api-key-open-source/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Keys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/open-source-models/configure-your-open-source-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    External Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            External Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/external-models/add-an-external-model-using-easy-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a Model using Easy Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../models/external-models/add-an-external-model-using-api-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a Model using API Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Playground
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Playground
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Playground
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/create-a-new-prompt-experiment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a New Prompt Experiment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/add-a-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/select-a-template-for-a-prompt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Select a Template for a Prompt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/generate-output-using-advanced-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate Output using Advanced Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playground/explore-other-actions-to-perform-in-the-prompt-playground/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Explore Other Actions to Perform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data/manage-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    User Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            User Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Users
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Users
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#users-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a New User
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Add a New User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invite-email-invitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invite (Email Invitation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resend-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resend Invite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-bulk-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import (Bulk Import)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import (Bulk Import)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-user-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import User Data File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-userbulk-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete a User/Bulk Delete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlock-a-locked-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlock a Locked User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change User Role
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change User Role">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-role-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bulk Role Change
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/sign-up-sign-in/#invite-a-user-to-your-account" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invite a User to your Account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/active-directory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add Users from Active Directory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../role-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Role Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/enable-hugging-face/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enable Hugging Face
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/integrate-with-s3-bucket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrate with S3 Bucket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/integrate-with-wandb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrate with Weights & Biases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Monitoring
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Monitoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monitoring/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monitoring/audit-logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audit Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#users-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a New User
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Add a New User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invite-email-invitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invite (Email Invitation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resend-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resend Invite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-bulk-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import (Bulk Import)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import (Bulk Import)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-user-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import User Data File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-userbulk-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete a User/Bulk Delete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlock-a-locked-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlock a Locked User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change User Role
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change User Role">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-role-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bulk Role Change
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h1>
+<p>The <strong>Users</strong> feature simplifies account administration through centralized tools for inviting, importing, and managing users. The tools work together to streamline user administration and ensure efficient collaboration, access control, and status monitoring.</p>
+<p><strong>Key Features</strong></p>
+<ul>
+<li><strong>User Invitation</strong>: Easily invite individual users or groups via email.</li>
+<li><strong>Invitation Management</strong>: Resend invitations for users who haven't yet joined.</li>
+<li><strong>Bulk Import</strong>: Add multiple users efficiently by uploading CSV or TXT files.</li>
+<li><strong>Active Directory Sync</strong>: Synchronize user data directly from your organization's Active Directory.</li>
+<li><strong>Role Management</strong>: Assign and reassign user roles to control access and permissions.</li>
+<li><strong>Status Tracking</strong>: Monitor user statuses (active, inactive, locked) from a centralized dashboard.</li>
+<li><strong>Account Unlocking</strong>: Quickly unlock user accounts that have been locked due to failed login attempts.</li>
+<li><strong>User Search</strong>: Easily find specific users using the search functionality.</li>
+<li><strong>User Deletion</strong>: Remove individual or multiple users from your GALE account as needed.</li>
+</ul>
+<p><strong>Best Practices</strong></p>
+<ul>
+<li>Regularly review and update user roles.</li>
+<li>Use bulk import to add multiple users efficiently.</li>
+<li>Monitor the locked users and inactive invitations.</li>
+<li>Maintain users for effective account management.</li>
+</ul>
+<h2 id="users-dashboard">Users Dashboard<a class="headerlink" href="#users-dashboard" title="Permanent link">&para;</a></h2>
+<p>The dashboard displays user counts by status:</p>
+<ul>
+<li><strong>Active</strong>: Users with active accounts who can interact with other GALE users.</li>
+<li><strong>Inactive</strong>: Users invited by the admin but who have yet to join or accept the invitation.</li>
+<li><strong>Locked</strong>: Users who have exceeded 5 failed login attempts and their accounts have been locked.</li>
+</ul>
+<p><a class="glightbox" href="../images/users-count.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/users-count.png" alt="users count" title="users count" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>It also shows detailed user information, including name, email, role, and status. For information on default system roles, click <a href="../role-management/#system-defined-roles" target="_blank">here</a>.</p>
+<h2 id="add-a-new-user">Add a New User<a class="headerlink" href="#add-a-new-user" title="Permanent link">&para;</a></h2>
+<p>The  <strong>Settings</strong> Console provides two ways to add a new user to the system:</p>
+<ul>
+<li>Email invitation</li>
+<li>Import <em>.txt</em> or <em>.csv</em> file with user information in the predefined format.</li>
+</ul>
+<h3 id="invite-email-invitation">Invite (Email Invitation)<a class="headerlink" href="#invite-email-invitation" title="Permanent link">&para;</a></h3>
+<p>Click <a href="../../../getting-started/sign-up-sign-in/#invite-a-user-to-your-account" target="_blank">here</a> to see the step-by-step instructions on how to add a user via email invitation.</p>
+<h3 id="resend-invite">Resend Invite<a class="headerlink" href="#resend-invite" title="Permanent link">&para;</a></h3>
+<p>Invitations expire after 15 days. You can send a new email invitation to the user. <a href="../../../getting-started/sign-up-sign-in/#resend-email-invitation" target="_blank">Learn more</a>.</p>
+<h3 id="import-bulk-import">Import (Bulk Import)<a class="headerlink" href="#import-bulk-import" title="Permanent link">&para;</a></h3>
+<p>The import feature allows administrators to add multiple users at once using .txt or .csv files. To ensure compatibility, download the sample CSV file, add your user details to this file, and upload the file.</p>
+<p><strong>Key Considerations</strong></p>
+<ul>
+<li>Valid file types are <em>.txt</em> or <em>.csv</em>. No other file types are allowed.</li>
+<li>The file must contain the required user information, such as name, email ID, and status, to create a user profile in your GALE account.</li>
+<li>Each row should contain information for ONE user.</li>
+<li>You can use accepted delimiters like Comma (","), Pipe ("|"), Semi-Colon (";"), and Tab in the file.</li>
+<li>The first row in the file should be the field name used to identify the user data.</li>
+<li>"*" indicates mandatory fields in the sample file. Please ensure mandatory fields are provided.</li>
+<li>The <strong>User Status</strong> indicates the user’s status after import, and the corresponding actions are taken for <em>New</em>, <em>Update</em>, and <em>Delete</em> statuses.</li>
+<li>Entries with invalid email formats, missing domain name, or wrong email IDs are ignored during import.</li>
+<li>Once an entry in the file is validated, an email request is sent out to the user to activate their account.</li>
+<li>If a user is already active (joined admin’s account), the email invitation is not sent.</li>
+</ul>
+<h4 id="import-user-data-file">Import User Data File<a class="headerlink" href="#import-user-data-file" title="Permanent link">&para;</a></h4>
+<p>The steps mentioned below, allow you to import users' data from a designated file into GALE.</p>
+<ol>
+<li>Navigate to <strong>Users Management</strong> &gt; <strong>Users</strong> on the left menu.</li>
+<li>
+<p>Click <strong>Add New User</strong>, and select <strong>Import</strong>.
+<a class="glightbox" href="../images/import-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Perform one of the following actions on the <strong>Import Users</strong> page:</p>
+</li>
+<li>
+<p>Click <strong>Upload File</strong>, then select and upload the user info file from your system.
+<a class="glightbox" href="../images/click-upload-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-upload-file.png" alt="click upload file" title="click upload file" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Drag and drop the file from your system into the <strong>Upload File</strong> window.</p>
+</li>
+</ol>
+<p><strong>Key Suggestions</strong></p>
+<ul>
+<li>
+<p>Click and download the sample .<em>csv</em> file for reference.</p>
+<p><a class="glightbox" href="../images/click-download-sample-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>The fields are predefined in the sample file, and the data requirements are shown below:
+<a class="glightbox" href="../images/prefefined-fields.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/prefefined-fields.png" alt="predefined fields" title="predefined fields" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
+<a class="glightbox" href="../images/mismatch-error.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>A preview window displays the file’s data with a file uploaded success message. Click <strong>Continue</strong> to import the file.
+<a class="glightbox" href="../images/success-import.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/success-import.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Continue</strong> once the import is complete, and the following message appears.
+<a class="glightbox" href="../images/import-completed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-completed.png" alt="import completed" title="import completed" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>The system validates the file for errors. If the user data contains errors, a window is displayed showing the import status and the reason for the errors.
+<a class="glightbox" href="../images/failed-import-entries.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/failed-import-entries.png" alt="failed import entries" title="failed import entries" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ul>
+<p>Correct the highlighted values based on the reason, and upload the file again. Then, follow <strong>Steps 4 and 5</strong> above.</p>
+<p>The file takes a few minutes to import. You can see the progress in the dialog window. When completed, the following message is displayed.</p>
+<p><a class="glightbox" href="../images/file-imported-successfully.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/file-imported-successfully.png" alt="file imported successfully" title="file imported successfully" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>Click <strong>OK</strong> to see the imported users on the dashboard. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The imported users are assigned the <b>Viewer</b> system role by default, which you can change. <a href="https://docs.kore.ai/gale/settings/user-management/role-management/#system-defined-roles" target="_blank">Learn more</a>.</p>
+</div>
+
+<p><a class="glightbox" href="../images/imported-entries.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/imported-entries.png" alt="imported entries" title="imported entries" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>You can see the success/failed import status on the dashboard as highlighted below:</p>
+<p><a class="glightbox" href="../images/success-failed-import-status.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/success-failed-import-status.png" alt="success and failed import status" title="success and failed import status" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><strong>Failed Import</strong> </p>
+<p>The following message is displayed if the user data in the uploaded file fails to import:</p>
+<p><a class="glightbox" href="../images/failed-import-message.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/failed-import-message.png" alt="failed import message" title="failed import message" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>You can identify which user data failed to import, review the actions completed by the user, and understand the reason for the failure. </p>
+<p>Once you know the cause, you can retry importing the corrected user data.</p>
+<p><strong>Cancel Import</strong></p>
+<p>The system cancels the import for data that fails due to validation errors, such as an incorrect email address. A window is displayed showing the import status and reason after the import is canceled.
+<a class="glightbox" href="../images/import-canceled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-canceled.png" alt="import canceled" title="import canceled" style="border: 1px solid gray; zoom:75%;"></a></p>
+<h4 id="import-history">Import History<a class="headerlink" href="#import-history" title="Permanent link">&para;</a></h4>
+<p>Click <strong>Import History</strong> in the <strong>Import Users</strong> window to view and analyze the import history of users in your account.
+<a class="glightbox" href="../images/click-import-history.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-import-history.png" alt="click import history" title="click import history" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>The following window is displayed with the import date and time, the importing user, and the summary of successful and failed imports.
+<a class="glightbox" href="../images/import-history.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-history.png" alt="import history" title="import history" style="border: 1px solid gray; zoom:75%;"></a></p>
+<h2 id="delete-a-userbulk-delete">Delete a User/Bulk Delete<a class="headerlink" href="#delete-a-userbulk-delete" title="Permanent link">&para;</a></h2>
+<p>The <strong>Delete</strong> feature removes a user you’re managing from your GALE account.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Only users included as Admin in the system with the required permissions can access the <b>Settings</b> Console.</p>
+<p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on GALE. To rejoin your account, you must invite them again via email.</li>
+<li>You cannot delete users if they have created and manage agents in your account. The user must first remove all active agents before they can be deleted.</li></ul></p></div>
+
+<p><strong>Steps to delete a user</strong></p>
+<ol>
+<li>Click <strong>Users Management</strong> &gt; <strong>Users</strong> on the left menu to access the <strong>Users</strong> dashboard.</li>
+<li>Hover over the user entry you want to delete.</li>
+<li>Click the <strong>Delete</strong> icon.
+<a class="glightbox" href="../images/single-delete.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/single-delete.png" alt="single delete" title="single delete" style="border: 1px solid gray; zoom:75%;"></a></li>
+</ol>
+<p><strong>Updated Screen</strong></p>
+<p><a class="glightbox" href="../images/single-delete-result.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/single-delete-result.png" alt="single delete result" title="single delete result" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><strong>Bulk Delete</strong></p>
+<ol>
+<li>
+<p>Select the required users, and click the <strong>Delete</strong> icon at the bottom of the screen to delete multiple users in the list.
+<a class="glightbox" href="../images/click-delete-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-delete-icon.png" alt="click delete icon" title="click delete icon" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Remove</strong> in the <strong>Remove users</strong> window.</p>
+<p><a class="glightbox" href="../images/click-remove.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-remove.png" alt="click remove" title="click remove" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ol>
+<p>When a user's account and role assignments are permanently deleted, the user is removed from the list, and the <strong>Total Users</strong> and <strong>Active Users</strong> counts on the dashboard are updated accordingly.</p>
+<p><strong>Updated Screen</strong></p>
+<p><a class="glightbox" href="../images/bulk-delete-result.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bulk-delete-result.png" alt="bulk delete result" title="bulk delete result" style="border: 1px solid gray; zoom:75%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using <b>Delete</b> removes the user permanently.</p>
+</div>
+
+<h2 id="search-user">Search User<a class="headerlink" href="#search-user" title="Permanent link">&para;</a></h2>
+<p>Use the search field to find users by name:</p>
+<ol>
+<li>Navigate to the <strong>Users</strong> dashboard.</li>
+<li>Click the <strong>Search</strong> text field.</li>
+<li>Enter the user’s <strong>name</strong> you want to search.</li>
+</ol>
+<p>All the matching results are displayed. </p>
+<p><a class="glightbox" href="../images/all-matching-results.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/all-matching-results.png" alt="matching results" title="matching results" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>The following message is displayed if the user does not exist.
+<a class="glightbox" href="../images/user-does-not-exist.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/user-does-not-exist.png" alt="user does not exist" title="user does not exist" style="border: 1px solid gray; zoom:75%;"></a></p>
+<h2 id="unlock-a-locked-user">Unlock a Locked User<a class="headerlink" href="#unlock-a-locked-user" title="Permanent link">&para;</a></h2>
+<p>Locked users cannot access their accounts without unlocking them on the <strong>Settings</strong> console. </p>
+<p><strong>Steps to unlock a locked user</strong></p>
+<ol>
+<li>Navigate to <strong>Settings</strong> &gt; <strong>Users Management</strong> &gt; <strong>Users</strong> page.</li>
+<li>Hover over the user entry with the status highlighted as “<strong><em>Locked</em></strong>.” </li>
+<li>
+<p>Click the <strong>Unlock</strong> button.
+<a class="glightbox" href="../images/click-unlock.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-unlock.png" alt="click unlock" title="click unlock" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong> in the confirmation dialog.</p>
+</li>
+</ol>
+<p>The user’s account is unlocked successfully, and the status changes to <em>Active</em>.</p>
+<h2 id="change-user-role">Change User Role<a class="headerlink" href="#change-user-role" title="Permanent link">&para;</a></h2>
+<p>On the <strong>Users</strong> dashboard, you can change the account-level role for one or more users. Only the role allowed for the user type (admin or account) can be assigned. </p>
+<p>Changing the user role automatically assigns the designated permissions and access levels defined in the system.</p>
+<p>To change a user’s role, follow the steps mentioned <a href="../role-management/#reassign-an-alternative-role-to-active-users" target="_blank">here</a>.</p>
+<h3 id="bulk-role-change">Bulk Role Change<a class="headerlink" href="#bulk-role-change" title="Permanent link">&para;</a></h3>
+<p>You can change and assign the same role to multiple users. However, to assign different roles, individual role changes must be made, as discussed in the previous section.</p>
+<p>To perform bulk role change, follow the steps below:</p>
+<ol>
+<li>Select the required users on the <strong>Users</strong> dashboard.</li>
+<li>Click the <strong>Role</strong> dropdown and select the required option in the bottom pane.
+<a class="glightbox" href="../images/select-for-role-change.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-for-role-change.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;"></a></li>
+</ol>
+<p>The role is updated for the selected users.
+<a class="glightbox" href="../images/bulk-role-changed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bulk-role-changed.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><a href="../role-management/" target="_blank">Learn more</a> about other Role Management features and capabilities to efficiently manage your account users.</p>
+<p>To know how to leverage other features on the <strong>Settings</strong> Console, click <a href="../../settings-overview/" target="_blank">here</a>.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../settings/active-directory/" class="md-footer__link md-footer__link--next" aria-label="Next: Add Users from Active Directory">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Add Users from Active Directory
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
