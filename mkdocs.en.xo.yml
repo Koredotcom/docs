@@ -484,6 +484,7 @@ nav:
       - Contact Center:
         - Kore Voice Automation:
           - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
+          - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
