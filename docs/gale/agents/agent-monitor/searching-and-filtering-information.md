@@ -1,4 +1,5 @@
-# Searching and filtering information
+# Searching and Filtering Information
+
 
 ## Manual Search
 
@@ -12,11 +13,11 @@ Steps to use the time-based search:
 
 1. Click the calendar button in the top right corner of the Agent monitor page.
 
-<img src="../images/agent_monitor_calendar_selection.png" alt="calendar" title="Calendar" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_calendar_selection.png" alt="calendar" title="Calendar" style="border: 1px solid gray; zoom:80%;">
 
 2. Select a predefined time range or set custom dates.
 
-<img src="../images/agent_monitor_calendar.png" alt="calendar" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_calendar.png" alt="calendar" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply** to update the results.
 
@@ -32,10 +33,10 @@ Steps to use the filters:
 1. Click the Filter icon.
 2. Click + Add Filter.
 
-<img src="../agent-monitor/images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-monitor/images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
 
 3. Select options for Column, Operator, and Value.
 
-<img src="../agent-monitor/images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-monitor/images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Apply**.

@@ -1,4 +1,4 @@
-# Understanding the Agent Monitor interface
+# Understanding the Agent Monitor Interface
 
 The Agent Monitor page consists of two main tabs:
 
@@ -23,11 +23,11 @@ The All runs tab provides the following information for each agent run:
 
 You can also see the following metrics on the top of the page: 
 
-* **Total Runs**: The total number of agent runs. 
-* **Response Time**: The average response time of all the agent runs. It is measured by the following two metrics:
+* **TOTAL RUNS**: The total number of agent runs. 
+* **RESPONSE TIME**: The average response time of all the agent runs. It is measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
-* **Failure Rate**: The percentage of failed runs.
+* **FAILURE RATE**: The percentage of failed runs.
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. 
 
@@ -35,7 +35,7 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
 
-    **Note:** If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
+If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
 
 <img src="..images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls" style="border: 1px solid gray; zoom:80%;">
 
@@ -52,7 +52,7 @@ The LLM calls tab provides the following information for each Gen AI node call:
 You can also see the following metrics on the top of the page:
 
 * **TOTAL REQUESTS**: The total number of Gen AI node requests.
-* **Response Time**: The average response time of all the GenAI node requests. It is measured by the following two metrics:
+* **RESPONSE TIME**: The average response time of all the GenAI node requests. It is measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
 * **FAILURE RATE**: The percentage of instances in which the Gen AI node has failed in execution.

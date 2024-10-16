@@ -3,6 +3,14 @@
 
  Agent Monitor allows you to track and analyze your agents' performance across multiple runs. It provides a comprehensive, time-based view of agent activities, helping you optimize your AI operations.
 
-* Gain insights into agent performance.
-* Optimize response times and efficiency.
-* Track usage of API keys and Gen AI model.
+## Key Capabilities
+
+* **Performance Tracking**: Monitor your agents across multiple runs, gaining valuable insights into response times, execution patterns, and overall efficiency.
+* **Dual-View Analytics**:
+    *  **All Runs**: Comprehensive data on all agent instances, offering a holistic view of endpoint interactions.
+    *  **LLM Calls**: Focused analytics on Gen AI node executions, providing deeper insights into language model performance.
+*  **Detailed Metrics**: Access critical performance indicators, including total runs, average response times (P90 and P99), and failure rates, allowing for precise performance tuning.
+*  **API Key Usage Monitoring**: Track and manage the utilization of API keys across your agent ecosystem.
+*  **Gen AI Node Analysis**: Gain specific insights into the performance of individual Gen AI nodes within your agents.
+*  **Advanced Filtering and Search**: Use time-based searches and custom filters to drill down into specific scenarios or periods.
+*  **Detailed Run Information**: Access comprehensive logs and debug information for each agent run, facilitating efficient troubleshooting and optimization.
