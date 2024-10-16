@@ -17,7 +17,8 @@ Ensure that the status of the selected agent is ‘Deployed’. Agent monitoring
 
     For more information, see [Understanding the Agent Monitor interface](../agent-monitor/understanding-the-agent-monitor-interface.md).
 
-6. Click each row for detailed information on each agent run or LLM call.  
-A detailed view panel opens on the right. For more information, see [Viewing detailed run information](../agent-monitor/understanding-the-agent-monitor-interface.md#viewing-detailed-run-information).
+6. Click each row for detailed information on each agent run or LLM call. A detailed view panel opens on the right.  
+
+    For more information, see [Viewing detailed run information](../agent-monitor/understanding-the-agent-monitor-interface.md#viewing-detailed-run-information).
 
 7. (Optional) To filter or search the list of runs or calls on the Agent monitor page, see [Searching and filtering](../agent-monitor/searching-and-filtering-information.md).

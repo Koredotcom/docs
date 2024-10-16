@@ -9,7 +9,7 @@ Both tabs display summary metrics at the top of the page, including total runs/r
 
 ## All runs
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/agent_monitor_allruns.png" alt="Agent monitor All runs" title="Agent monitor All runs" style="border: 1px solid gray; zoom:80%;">
 
 The All runs tab provides the following information for each agent run:
 
@@ -37,7 +37,7 @@ Each GenAI node in the agent is recorded as a separate request in the LLM calls 
 
     **Note:** If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="..images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls" style="border: 1px solid gray; zoom:80%;">
 
 The LLM calls tab provides the following information for each Gen AI node call:
 
@@ -63,7 +63,7 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
 
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
 The panel displays the following details:
 
@@ -79,4 +79,4 @@ The panel displays the following details:
 
 6. **Output section**: The Output section displays the agent's output (for successful runs). You can copy the output and view tokens.
 
-![alt_text](images/image4.png "image_tooltip")
+    <img src="../images/agent_monitor_viewing_run_information_detailed.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
