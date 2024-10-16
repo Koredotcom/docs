@@ -9,7 +9,7 @@ Both tabs display summary metrics at the top of the page, including total runs/r
 
 ## All Runs
 
-<img src="../images/agent_monitor_allruns.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_allruns_new.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The All runs tab provides the following information for each agent run:
 
@@ -101,7 +101,7 @@ Steps to use the time-based search:
 
 2. Select a predefined time range or set custom dates.
 
-    <img src="../images/agent_monitor_calendar.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_calendar_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply** to update the results.
 
@@ -117,7 +117,7 @@ Steps to use the filters:
 1. Click the Filter icon.
 2. Click + Add Filter.
 
-    <img src="../images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_filtericon_new.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
 
 3. Select options for Column, Operator, and Value.
 
