@@ -5,7 +5,7 @@ When Access Control is enabled for content ingested from a specific connector, S
 
 ## Get RACL Resolver
 
-This API fetches the fields that are used for passing the identity information in the Search API (advancedSearch). 
+This API returns the fields that are used for mapping the identity information in the Search API (advancedSearch). 
 
 
 <table>
