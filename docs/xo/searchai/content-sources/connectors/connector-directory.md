@@ -1,0 +1,25 @@
+# Connector Directory
+
+SearchAI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
+
+| **Connector**     | **Type of Repository** | **Supported Content for  Extractive and Generative Answers**                                                          | **Content Filtering** | **RACL Support** |
+|-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------|------------------|
+| [Airtable](./airtable.md)          | Cloud                  |                                                                                                                       | No                    | No               |
+| [Azure Storage](./azure.md)     | Cloud                  | .txt, .pdf, .rtf, .msword, .doc, .docx, .ppt, .pptx  Extractive Answers are supported only for content in .pdf files. | No                    | No               |
+| [Confluence Cloud](./confluence-cloud.md)  | Cloud                  | Knowledge Articles                                                                                                    | Yes                   | Yes              |
+| [Confluence Server](./confluence-server.md) | On-prem                | .doc, .docx, .ppt, .pptx, .pdf, .txt, .html                                                                           | Yes                   | No               |
+| [DotCMS](./dotcms.md)            | Cloud                  |                                                                                                                       | Yes                   | No               |
+| [Dropbox](./dropbox.md)           | Cloud                  | .doc, .docx, .ppt, .pptx, .pdf, .txt, .html                                                                           | No                    | No               |
+| [GitHub](./github.md)            | Cloud                  | Issues                                                                                                                | No                    | No               |
+| [GitLab](./gitlab.md)            | Cloud                  | Issues                                                                                                                | No                    | No               |
+| [Google Drive](./googledrive.md)      | Cloud                  | .doc, .docx, .ppt, .pptx, .pdf, .txt, .html                                                                           | Yes                   | Yes              |
+| [HubSpot](./hubspot.md)           | Cloud                  | Tickets                                                                                                               | No                    | No               |
+| [Jira](./jira.md)              | Cloud                  | Issues                                                                                                                | No                    | Yes              |
+| [JSON Connector](./json.md)    |                        | Structured Data in JSON format                                                                                        | No                    | No               |
+| [Monday](./monday.md)            | Cloud                  | Items on a board                                                                                                      | No                    | No               |
+| [Notion](./notion.md)            | Cloud                  | Pages                                                                                                                 | No                    | No               |
+| Oracle Knowledge  | Cloud                  | Knowledge articles                                                                                                    | No                    | No               |
+| [Salesforce](./salesforce.md)        | Cloud                  | Knowledge articles managed by Salesforce.  Extractive Answers are not supported for this type of content.             | Yes                   | No               |
+| [ServiceNow](./servicenow.md)        | Cloud                  | knowledge articles managed by ServiceNow.                                                                             | No                    | Yes              |
+| [SharePoint](./sharepoint.md)        | Cloud                  | pages/articles (.aspx), .doc, .docx, .ppt, .pptx, .html, .xhtml, .txt, .pdf                                           | Yes                   | Yes              |
+| [Zendesk](./zendesk.md)           | Cloud                  | Zendesk knowledge base articles                                                                                       | No                    | No               |
