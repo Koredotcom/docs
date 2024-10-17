@@ -154,26 +154,24 @@ Google Drive Connector allows you to import user permissions and access lists fr
 
 SearchAI application supports **file-level** permissions through Google Drive Connector. SearchAssist supports the following access types in GDrive. 
 
-* **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers. \
- \
+* **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers.
+
 For instance, if two users have read access to a file, corresponding indexed content will have the user information as shown below. \
 
-![People With Access](./images/connectors/googledrive/example1.png "Example")
- \
- \
-Similarly, if the files are accessible to a user and a user group in Google Drive, the corresponding content will have the information as shown below, where [hr-team@example.com](mailto:hr-team@example.com) is the permission entity created corresponding to the group.  \
- \
+![People With Access](./images/googledrive/racl/example1.png "Example")
 
-![User Groups](./images/connectors/googledrive/example2.png "User Groups")
+Similarly, if the files are accessible to a user and a user group in Google Drive, the corresponding content will have the information as shown below, where [hr-team@example.com](mailto:hr-team@example.com) is the permission entity created corresponding to the group.  
+
+![User Groups](./images/googledrive/racl/example2.png "User Groups")
 
 * **Anyone with Link**: This is treated as public access. All the users can access a file with this type of access permission.  
 
-![Anyone with Link](./images/connectors/googledrive/example3.png "Anyone with Link")
+![Anyone with Link](./images/googledrive/racl/example3.png "Anyone with Link")
 
 * **Domain Specific Access**: SearchAI supports this type of access and verifies the user identity against the specified domain name.
 
-![Domain level Access](./images/connectors/googledrive/example4.png "Domain Level Access")
- \
+![Domain level Access](./images/googledrive/racl/example4.png "Domain Level Access")
+
 
 ### **Handling User Groups or Domain level access in Google Drive**
 
@@ -193,5 +191,5 @@ You can enable or disable RACL for any content ingested from Google Drive using 
 
 You can configure this while connecting to Google Drive for the first time. To update the permissions at any time, go to the Permissions & Security tab and modify them. The updated permissions apply to the content ingested during the next sync activity. 
 
-![Permissions Config](./images/connectors/googledrive/permissions.png "RACL Enable")
+![Permissions Config](./images/googledrive/racl/permissions.png "RACL Enable")
 

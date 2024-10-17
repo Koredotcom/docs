@@ -36,9 +36,6 @@ Search AI enables easy integration with Jira to ingest, index, and search throug
   </tr>
 </table>
 
-# Setup Guide
-
-
 ## Prerequisites
 
 Create an Atlassian account with access to all the content to be indexed. 
@@ -127,7 +124,7 @@ The following fields are used to **map the content(issues)** in the Jira account
 </table>
 
 
-### Access Control
+## Access Control
 
 SearchAI supports access control for content ingested from Jira accounts using the **Project ID** for issues.
 

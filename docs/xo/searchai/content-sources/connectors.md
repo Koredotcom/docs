@@ -65,7 +65,7 @@ To enable RACL in supported connectors, go to the **Permissions and Security** t
 
 You can verify the permissions imported in the ingested content in the <code>sourceACL</code></strong> field in the JSON view of the corresponding content.
 
-For more information on RACL implementation in Search AI, refer to [this](https://docs.google.com/document/d/18YNXSj5wr8wR4aNjvU6VePxNnab8sukFWPDTSMVdSvg/edit?usp=sharing). 
+For more information on RACL implementation in Search AI, refer to [this](./racl-support.md). 
 
 ### Ingesting Content
 

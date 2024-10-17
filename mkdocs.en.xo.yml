@@ -288,6 +288,7 @@ nav:
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
                 - Connector Directory: searchai/content-sources/connectors/connector-directory.md
+                - RACL Support in SearchAI: searchai/content-sources/connectors/racl-support.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
