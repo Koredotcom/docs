@@ -116,6 +116,7 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md  
+      - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Guided Onboarding: getting-started/guided-onboarding.md
         - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
@@ -154,7 +155,7 @@ nav:
       - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
       - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - XO v11.x Updates:
+      - v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -490,6 +491,7 @@ nav:
       - Contact Center:
         - Kore Voice Automation:
           - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
+          - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
