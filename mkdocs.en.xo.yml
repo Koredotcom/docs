@@ -303,6 +303,7 @@ nav:
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - Monday: searchai/content-sources/connectors/monday.md
                 - Notion: searchai/content-sources/connectors/notion.md
+                - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md     
