@@ -2,7 +2,7 @@
 
 SearchAI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
 
-| **Connector**     | **Type of Repository** | **Supported Content for  Extractive and Generative Answers**                                                          | **Content Filtering** | **RACL Support** |
+| **Connector**     | **Type of Repository** | **Supported Content for  Extractive and Generative Answers**                                                          | **Content Filtering Support** | **RACL Support** |
 |-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------|------------------|
 | [Airtable](./airtable.md)          | Cloud                  |                                                                                                                       | No                    | No               |
 | [Azure Storage](./azure.md)     | Cloud                  | .txt, .pdf, .rtf, .msword, .doc, .docx, .ppt, .pptx  Extractive Answers are supported only for content in .pdf files. | No                    | No               |

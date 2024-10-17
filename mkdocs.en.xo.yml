@@ -287,6 +287,7 @@ nav:
             - Directory: searchai/content-sources/directory.md
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
+                - Connector Directory: searchai/content-sources/connectors/connector-directory.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md

@@ -3,7 +3,7 @@
 When Access Control is enabled for content ingested from a specific connector, SearchAI requires user identity information to be included in the Search API request. This identity data is used to determine the user's access rights and ensure the appropriate content is returned. The RACL Resolver APIs manage the fields that handle the transmission of identity information within the Search API, ensuring secure and accurate access resolution.
 
 
-## Get Racl Resolver
+## Get RACL Resolver
 
 This API fetches the fields that are used for passing the identity information in the Search API (advancedSearch). 
 
@@ -47,7 +47,7 @@ This API fetches the fields that are used for passing the identity information i
 
 * Bot ID: Provide your application ID here. 
 
-## Update Racl Resolver
+## Update RACL Resolver
 
 This API is used to update the field used to pass user identity information in the Search API. 
 
@@ -110,7 +110,7 @@ Below is a sample request object that indicates that the user identity is passed
 }
 ```
 
-## Delete Racl Resolver
+## Delete RACL Resolver
 
 This API is used to delete the racl resolver fields. 
 
