@@ -18,7 +18,7 @@ This API returns the fields that are used for mapping the identity information i
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/racl-resolver
+   <td>&lt;host_url>/api/public/bot/:botId/racl-resolver
    </td>
   </tr>
   <tr>
@@ -61,7 +61,7 @@ This API is used to update the field used to pass user identity information in t
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/racl-resolver
+   <td>&lt;host_url>/api/public/bot/:botId/racl-resolver
    </td>
   </tr>
   <tr>
@@ -125,7 +125,7 @@ This API is used to delete the racl resolver fields.
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/racl-resolver
+   <td>&lt;host_url>/api/public/bot/:botId/racl-resolver
    </td>
   </tr>
   <tr>
