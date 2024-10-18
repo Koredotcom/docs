@@ -28,7 +28,7 @@ The user can filter all agent interaction by selecting the following date ranges
 ### Total Audits
 Displays the count of total manual audits done based on the date range selected.  
 
-<img src="../dashboard/images/total-audits.png" alt="Total Audits" title="Total Audits" style="border: 1px solid gray; zoom:70%;">
+<img src="../dashboard/images/total-audits.png" alt="Total Audits" title="Total Audits" style="border: 1px solid gray; zoom:100%;">
 
 ### Avg. Audits per Agent
 Displays the average number of manual audits per agent or evaluations done belonging to the queues of a user.
@@ -116,7 +116,7 @@ This widget allows users to view a condensed version of the agent leaderboard to
 !!! Note
 
     To view this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
-    
+
 The Agent Leaderboard includes the following items:
 
 * **Agents**: This shows the agent group name and queue that the agent is tagged.

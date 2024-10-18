@@ -123,42 +123,38 @@ The date range selection is done based on the following criteria:
 
 This allows supervisors to drill down and view specific agents' interactions and the details of evaluations performed in the last selected time period. Supervisors can use these interactions as reference points for coaching to help agents enhance their performance. Based on the reviewed interactions and created bookmarks, supervisors can then assign targeted coaching assignments to the agents. This displays the list of interactions terminated or completed by the agent, with the most recent ones appearing first. This page serves as the starting page for coaching assignment creation.
 
-<img src="../agent-leaderboard/images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
+<img src="../agent-leaderboard/images/evaluation.png" alt="Evaluation" title="Evaluation" style="border: 1px solid gray; zoom:60%;">
 
 This Evaluation section has the following interactions listing items:
 
 * **Date**: Shows the date and time that an interaction has started.
+
 * **Actions**: Shows the list of bookmarks assigned to an interaction, which you can filter and assign coaching for later reference.
+
 * **Queues**: Shows the completed queue interaction and its origin.
+
 * **Kore Evaluation Score**: This shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
+
 * **Supervisor Audit Score**: Shows the Supervisor Audited score if the interaction has already been audited or manually evaluated.
+
 * **Sentiment Score**: This shows the system-generated sentiment score for the interaction based on the context of what the customer said in the interaction (keywords and emotions about that topic).
+
 * **Date Range Selection**: This allows you to filter the date range options for agent conversation interactions, with the default setting always showing the last 7 days.
+
 * **Bookmarks**: Allows you to filter the saved bookmark interactions that an agent has handled. This filters only the specific agent's interactions that have been bookmarked for coaching by the supervisor and need to be audited properly. This populates only the bookmarks that are audited in the agent dashboard.
+
 * **Filters**: Allows you to filter the interactions that have been audited based on specific agents for a selected date range.
 
     The following filtered categories are:
 
-    * **Queues**: Allows you to filter and apply interactions in the queue to assign coaching tasks.
+    * **Queues**: Allows you to filter and apply interactions in the queue to assign coaching tasks.  
+    
+       <img src="../agent-leaderboard/images/filter-queue.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:60%;">
 
-        
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
-
-    * **Audit Status**: This allows you to filter and apply audited and unaudited interactions separately before applying them for coaching assignments.
-
-        
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
-
+    * **Audit Status**: This allows you to filter and apply audited and unaudited interactions separately before applying them for coaching assignments. 
+    
+       <img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
     * **Filter Interactions**: Shows the total number of filtered interactions.
 
-For more information about how to create coaching Assignments, see .
+For more information, see [Coaching Assignments](./coaching-assignments.md).
