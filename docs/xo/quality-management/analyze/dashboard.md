@@ -120,9 +120,13 @@ To view this feature, enable the **Agent Scorecard** toggle option in the Qualit
 The Agent Leaderboard includes the following items:
 
 * **Agents**: This shows the agent group name and queue that the agent is tagged.
+
 * **Audits Done**: This shows the count of total manual audits done by agents.
+
 * **Audit Score**: This shows the average manual audit score.
+
 * **Kore Evaluation Score**: This shows the average Kore evaluation score against each interaction audited.
+
 * **Fail Percentage**: Shows the failure percentage across all interactions.
 
 #### View Leaderboard or Agent Leaderboard
