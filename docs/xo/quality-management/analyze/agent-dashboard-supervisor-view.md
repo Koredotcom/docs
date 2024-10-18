@@ -83,8 +83,10 @@ The Coaching Assignments include the following items:
 
     * **Start Now**: No interactions clicked through for that assignment. 
 
-        **Note**: This option is only visible to the supervisors.
+    !!! Note
 
+    This option is only visible to the supervisors.
+       
     * **Yet to start**: Interactions for an assignment are yet to start.
 
     * **In Progress**: Shows the total number of interactions that have been clicked through for that coaching assignment.
@@ -99,7 +101,9 @@ This feature displays an agent's assigned scorecards and allows supervisors to t
 
 <img src="../agent-leaderboard/images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
-**Note**: If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the Settings.
+!!! Note
+
+If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the Settings.
 
 #### **Avg. Scorecard Score**
 
