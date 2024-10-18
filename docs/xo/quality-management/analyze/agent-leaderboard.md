@@ -36,4 +36,6 @@ The Agent Leaderboard shows all the agents across queues and channels which incl
 
 ## **Supervisor Dashboard**
 
-Upon clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. See [Agent Dashboard - Supervisor View](https://docs.google.com/document/d/14fy5q7jKjzfdt9UZBlDvvpr3XYYM2Au03zKMVyCM9L4/edit) for more information.
+Upon clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. 
+
+For more information, See [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).
