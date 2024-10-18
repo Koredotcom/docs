@@ -139,5 +139,5 @@ Upon clicking the View Leaderbaord button displayed in the Dashboard - Agent Lea
 
 #### Supervisor Dashboard
 
-Upon clicking any of the agents from the **Dashboard - Agent Leaderboard** widget, this navigates the user to the [Agent Dashboard - Supervisor View](./agent).  
+Upon clicking any of the agents from the **Dashboard - Agent Leaderboard** widget, this navigates the user to the [Agent Dashboard - Supervisor View].  
 
