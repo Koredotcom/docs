@@ -109,15 +109,16 @@ Supervisors can view and monitor agent performance based on the evaluation form 
 
 ### Agent Leaderboard
 
-This widget allows users to view a condensed version of the agent leaderboard to have a snapshot version of agent performance and navigate to the full agent leaderboard using the view leaderboard button.
+This widget allows users to view a condensed version of the agent leaderboard to have a snapshot version of agent performance and navigate to the full agent leaderboard using the view leaderboard button.  
 
 !!! Note
 
-   To view this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
+To view this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
 
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 The Agent Leaderboard includes the following items:
+
 * **Agents**: This shows the agent group name and queue that the agent is tagged.
 * **Audits Done**: This shows the count of total manual audits done by agents.
 * **Audit Score**: This shows the average manual audit score.
