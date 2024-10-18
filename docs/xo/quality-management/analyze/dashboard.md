@@ -23,6 +23,7 @@ The user can filter all agent interaction by selecting the following date ranges
 
 ## Overview
 The key sections of this Dashboard include:
+
 ### Filters
 The user can filter and view the performance metrics by channel, such as Voice, Chat, or both (All, Voice and Chat) conversations. The trends and graphs are displayed with daily, Weekly, or Monthly Trends view and Distribution view across the Dashboard.
 

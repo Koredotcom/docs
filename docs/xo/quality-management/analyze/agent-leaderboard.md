@@ -4,12 +4,7 @@ The Agent Leaderboard feature allows auditors and managers to view both top and 
 
 You can view Agent Leaderboard by navigating to **Contact Center AI **>** Quality Management **>** Analyze **>** Agent Leaderboard**.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 
 **Note**: If the Agent Scorecard toggle option is disabled in the **Settings **of Quality Management by the administrator for a particular agent, then the agent will not be able to start the automated agent scoring.
