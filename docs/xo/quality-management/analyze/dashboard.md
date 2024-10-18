@@ -33,17 +33,17 @@ Displays the count of total manual audits done based on the date range selected.
 ### Avg. Audits per Agent
 Displays the average number of manual audits per agent or evaluations done belonging to the queues of a user.
 
-<img src="../dashboard/images/avg-audits-per-agent.png" alt="Average Audits per Agent" title="Average Audits per Agent" style="border: 1px solid gray; zoom:70%;">
+<img src="../dashboard/images/avg-audits-per-agent.png" alt="Average Audits per Agent" title="Average Audits per Agent" style="border: 1px solid gray; zoom:100%;">
 
 ### Coaching Sessions Assigned
 Displays the number of coaching sessions the user (supervisor) has assigned across agents within a specific time period.
 
-<img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:70%;">
+<img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
 
 ### Agents in Coaching
 Displays the number of agents with an active coaching assignment in the queues that the user belongs to.  
 
-<img src="../dashboard/images/agents-in-coaching.png" alt="Agents in Coaching" title="Agents in Coaching" style="border: 1px solid gray; zoom:70%;">
+<img src="../dashboard/images/agents-in-coaching.png" alt="Agents in Coaching" title="Agents in Coaching" style="border: 1px solid gray; zoom:100%;">
 
 ### Audit Progress
 Displays the total number of audits (progress score) pending and completed.
