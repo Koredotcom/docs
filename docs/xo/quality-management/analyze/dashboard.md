@@ -69,6 +69,7 @@ Displays the total number of audits (progress score) pending and completed.
 It shows the trend of the average **Kore Evaluation Score** (Auto QA Score) and the average **Audit Score** (manual), allowing you to see if there is any consistency between system evaluations and manual audits. 
 
 You can view both automated scored interactions and manual audits of the following three date ranges:  
+
 * **Daily**: Displays score for the last 7 days.
 * **Weekly**: Displays score for the last 7 weeks.
 * **Monthly**: Displays score for the last 7 months.
