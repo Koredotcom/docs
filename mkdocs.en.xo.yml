@@ -116,6 +116,7 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md  
+      - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Guided Onboarding: getting-started/guided-onboarding.md
         - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
@@ -154,7 +155,7 @@ nav:
       - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
       - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - XO v11.x Updates:
+      - v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -286,18 +287,27 @@ nav:
             - Directory: searchai/content-sources/directory.md
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
-                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
-                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Dropbox: searchai/content-sources/connectors/dropbox.md
-                - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - ServiceNow: searchai/content-sources/connectors/servicenow.md              
-                - Zendesk: searchai/content-sources/connectors/zendesk.md
-                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Connector Directory: searchai/content-sources/connectors/connector-directory.md
+                - RACL Overview: searchai/content-sources/racl-support.md
+                - Airtable: searchai/content-sources/connectors/airtable.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
-                - DotCMS: searchai/content-sources/connectors/dotcms.md 
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
+                - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md
+                - Dropbox: searchai/content-sources/connectors/dropbox.md
+                - GitHub: searchai/content-sources/connectors/github.md
+                - GitLab: searchai/content-sources/connectors/gitlab.md
+                - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
+                - Monday: searchai/content-sources/connectors/monday.md
+                - Notion: searchai/content-sources/connectors/notion.md
+                - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - ServiceNow: searchai/content-sources/connectors/servicenow.md     
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+                - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Content Browser: searchai/chunk-browser.md
@@ -484,6 +494,7 @@ nav:
       - Contact Center:
         - Kore Voice Automation:
           - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
+          - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
