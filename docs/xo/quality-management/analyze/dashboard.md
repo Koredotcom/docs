@@ -10,17 +10,6 @@ You can view the Dashboard by navigating to **Contact Center AI** > **Quality AI
 
     To view this **Dashboard** feature, you must first enable Auto QA setting and configure an evaluation form to generate Auto QA scores. Only users having the QA functionality permission can access this.
 
-The user can filter and view the performance metrics by channel, such as Voice, Chat, or both (All, Voice and Chat) conversations. The trends and graphs are displayed with daily, Weekly, or Monthly Trends view and Distribution view across the Dashboard.
-
-The user can filter all agent interaction by selecting the following date ranges:
-
-* **Today**: All interaction data for this day, in the agent’s time zone.
-* **Yesterday**: All interaction data of the previous day, in the agent’s time zone.
-* **Last 7 Days**: All interaction data for the previous 7 days (not including today), in the agent’s time zone.
-* **Last 28 Days**: All interaction data for the previous 28 days, (not including today), in the agent’s time zone.
-* **Last 90 Days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
-* **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
-
 ## Overview
 The key sections of this Dashboard include:
 
@@ -34,7 +23,7 @@ The user can filter all agent interaction by selecting the following date ranges
 * **Last 7 Days**: All interaction data for the previous 7 days (not including today), in the agent’s time zone.
 * **Last 28 Days**: All interaction data for the previous 28 days, (not including today), in the agent’s time zone.
 * **Last 90 Days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
-* **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to 31 days.
+* **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
 
 ### Total Audits
 Displays the count of total manual audits done based on the date range selected.  
