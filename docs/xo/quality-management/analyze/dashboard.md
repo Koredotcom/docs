@@ -4,7 +4,7 @@ The Dashboard provides a 360-degree view of Audit details, Fail Statistics, and 
 
 You can view the Dashboard by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Dashboard**.  
 
-<img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
+<img src="./dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
