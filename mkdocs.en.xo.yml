@@ -374,6 +374,8 @@ nav:
         - Dashboard: quality-management/analyze/dashboard.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md
+        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
       - Configure:
         - Evaluation Criteria:
