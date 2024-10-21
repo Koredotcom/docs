@@ -14,6 +14,7 @@ The key sections of this dashboard include:
 * **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
 Admins and Supervisors can access the Conversation Intelligence dashboard from **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Intelligence**.  
+
 <img src="../conversation-intelligence/images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters
@@ -113,6 +114,7 @@ Steps to edit a filter:
 ## Time Selection
 
 In this section, you can filter data by time range. By default, data is displayed for the current day (Today). Select a time range, and click **Apply**.  
+
 <img src="../conversation-intelligence/images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
 ## Compare Functionality
@@ -128,6 +130,7 @@ For example, if the selected date range is the last 7 days, all metrics, such as
 ## Channels
 
 You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
+
 <img src="../conversation-intelligence/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Center Efficiency
@@ -228,6 +231,7 @@ When no Agent AI playbooks are configured, adherence is displayed for the follow
     <img src="../conversation-intelligence/images/script-adherence.png" alt="Script Adherence" title="Script Adherernce" style="border: 1px solid gray; zoom:90%;">
 
     Supervisors can choose specific playbooks from the dropdown menu other than the default options. In that case, adherence to the specific parameters/steps in that playbook is displayed.  
+
     <img src="../conversation-intelligence/images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
 
     Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-interactions-service-levels.md#configure-conversation-intelligence-dashboard).
@@ -246,6 +250,7 @@ The following parameters can be monitored:
 * **NPS Score**: The Net Promoter Score (NPS) measures customer loyalty and satisfaction. It is determined through a survey question that asks customers to rate, on a scale from 0 to 10, how likely they are to recommend the products or services to others.
 * **Churn Risk**: Churn risk refers to the rate at which customers stop using the services or products provided by the contact center and switch to a competitor or discontinue their engagement altogether. It indicates the loss of customers over a specific period.
 * **Sentiment Score**: The sentiment of each customer utterance is assessed in real-time at the keyword/phrase/sub-topic level and stored. Once the call concludes, all the customer sentiments recorded are averaged to compute a sentiment score for the entire call, which is then normalized within the range of 1 to 10. It is a numerical representation of the sentiment or emotion expressed during the interaction, such as a comment. The goal is to determine the overall sentiment or attitude conveyed in the interaction.  
+
 <img src="../conversation-intelligence/images/custom-experience.png" alt="Custom Experience" title="Custom Experience" style="border: 1px solid gray; zoom:100%;">
 
 ## Sentiment Monitor
@@ -259,6 +264,7 @@ The sentiment monitor graph is a bar chart where each bar represents an intent o
 * Positive sentiment – Green color
 * Neutral sentiment – Yellow color
 * Negative sentiment – Red color  
+
 <img src="../conversation-intelligence/images/sentiment-monitor.png" alt="Sentiment Monitor" title="Sentiment Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ## Customer Churn Monitor
@@ -310,6 +316,7 @@ When searching for a keyword, only that specific keyword appears in the keyword 
 The interaction details refer to the main keyword searched, and if any semantic variations are present, the interaction details are shown after the complete set of interactions for the specific keyword is searched.
 
 When a specific semantic variation keyword is selected in the keyword cloud, the interactions related to that keyword are displayed in the interaction details.  
+
 <img src="../conversation-intelligence/images/keyword-search.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
 
 ## Interaction Details
@@ -325,4 +332,5 @@ This section includes the following fields:
 * Call Reason/Intent
 * Sentiment Score (configurable from high to low)
 * Dispositions  
+
 <img src="../conversation-intelligence/images/interaction-details.png" alt="Interaction Details" title="Interaction Details" style="border: 1px solid gray; zoom:90%;">
