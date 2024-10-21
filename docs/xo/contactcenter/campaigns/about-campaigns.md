@@ -8,7 +8,7 @@ The Campaigns module simplifies and enhances outbound efforts across voice, SMS,
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/campaigns.svg" style="zoom:200%;"></img>
+        <img src="../images/Campaigns.svg" style="zoom:200%;"></img>
         <kr-grid-title>Voice Campaigns</kr-grid-title>
         <kr-grid-desc>Harness the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./campaign-management/voice-campaigns.md)
@@ -26,7 +26,7 @@ The Campaigns module simplifies and enhances outbound efforts across voice, SMS,
         [Learn more :octicons-arrow-right-24:](./campaign-management/proactive-web-campaigns.md)
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/analytics.svg" style="zoom:200%;"></img>
+        <img src="../images/Analytics.svg" style="zoom:200%;"></img>
         <kr-grid-title>Dashboard and Reports</kr-grid-title>
         <kr-grid-desc>Get a snapshot of all your campaigns—whether they're active, inactive, or completed. This centralized overview allows for easy monitoring and management. Dive into detailed insights with comprehensive analytics and reporting. </kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./dashboard/campaign-dashboard.md)
