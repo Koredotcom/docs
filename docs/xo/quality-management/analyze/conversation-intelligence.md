@@ -156,7 +156,7 @@ Efficient contact centers are the backbone of excellent support. Managers use ke
 The average of the KPIs for a time interval is shown beside the line bar, along with a percentage increase or decrease in comparison with the period selected.
 
 Hovering over the color zones shows the percentage of calls and the actual number of calls for the represented percentage (volume).  
-<img src="../conversation-intelligence/images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
+<img src="./conversation-intelligence/images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Efficacy
 
@@ -215,10 +215,10 @@ When no Agent AI playbooks are configured, adherence is displayed for the follow
 * Hold Etiquette (Voice calls). For example, May I place you on hold for a few minutes while I pull up some information?
 * Customer Verification. For example: Can I know your date of birth?
 * Proper Sign Off. For example, Thank you for calling XYZ today. It was a pleasure to assist you. Have a great day!  
-    <img src="../images/script-adherence.png" alt="Script Adherence" title="Script Adherernce" style="border: 1px solid gray; zoom:90%;">
+    <img src="../conversation-intelligence/images/script-adherence.png" alt="Script Adherence" title="Script Adherernce" style="border: 1px solid gray; zoom:90%;">
 
     Supervisors can choose specific playbooks from the dropdown menu other than the default options. In that case, adherence to the specific parameters/steps in that playbook is displayed.  
-    <img src="../images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
+    <img src="./conversation-intelligence/images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
 
     Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-interactions-service-levels.md#configure-conversation-intelligence-dashboard).
 
@@ -232,7 +232,7 @@ The following parameters can be monitored:
 * **NPS Score**: The Net Promoter Score (NPS) measures customer loyalty and satisfaction. It is determined through a survey question that asks customers to rate, on a scale from 0 to 10, how likely they are to recommend the products or services to others.
 * **Churn Risk**: Churn risk refers to the rate at which customers stop using the services or products provided by the contact center and switch to a competitor or discontinue their engagement altogether. It indicates the loss of customers over a specific period.
 * **Sentiment Score**: The sentiment of each customer utterance is assessed in real-time at the keyword/phrase/sub-topic level and stored. Once the call concludes, all the customer sentiments recorded are averaged to compute a sentiment score for the entire call, which is then normalized within the range of 1 to 10. It is a numerical representation of the sentiment or emotion expressed during the interaction, such as a comment. The goal is to determine the overall sentiment or attitude conveyed in the interaction.  
-<img src="../images/custom-experience.png" alt="Custom Experience" title="Custom Experience" style="border: 1px solid gray; zoom:90%;">
+<img src="./conversation-intelligence/images/custom-experience.png" alt="Custom Experience" title="Custom Experience" style="border: 1px solid gray; zoom:100%;">
 
 ## Sentiment Monitor
 
@@ -245,7 +245,7 @@ The sentiment monitor graph is a bar chart where each bar represents an intent o
 * Positive sentiment – Green color
 * Neutral sentiment – Yellow color
 * Negative sentiment – Red color  
-<img src="../images/sentiment-monitor.png" alt="Sentiment Monitor" title="Sentiment Monitor" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-intelligence/images/sentiment-monitor.png" alt="Sentiment Monitor" title="Sentiment Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ## Customer Churn Monitor
 
@@ -254,7 +254,7 @@ The Customer Churn Monitor is a pie chart representation of the customer churn r
 * **No Customer Churn/Escalation** – Number of interactions with no customer churn/escalation.
 * **Customer Churn** – Count of interactions where there has been a customer churn.
 * **Escalation** – Number of interactions where the customer has requested assistance from a supervisor or a senior.  
-<img src="../images/customer-churn-monitor.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
+<img src="./conversation-intelligence/images/customer-churn-monitor.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ## Insights Mining
 
@@ -273,7 +273,7 @@ For example: The “Network issues” bubble indicates sentiment distribution as
 ## Keyword Cloud & Emotions
 
 This widget shows relevant keywords for a selected topic from the previous widget. It excludes general stop words and common words.  
-<img src="../images/insights-mining.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/insights-mining.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
 
 ### Keyword Search
 
@@ -294,7 +294,7 @@ When searching for a keyword, only that specific keyword appears in the keyword 
 The interaction details refer to the main keyword searched, and if any semantic variations are present, the interaction details are shown after the complete set of interactions for the specific keyword is searched.
 
 When a specific semantic variation keyword is selected in the keyword cloud, the interactions related to that keyword are displayed in the interaction details.  
-<img src="../images/keyword-search.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/keyword-search.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
 
 ## Interaction Details
 
@@ -309,4 +309,4 @@ This section includes the following fields:
 * Call Reason/Intent
 * Sentiment Score (configurable from high to low)
 * Dispositions  
-<img src="../images/interaction-details.png" alt="Interaction Details" title="Interaction Details" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/interaction-details.png" alt="Interaction Details" title="Interaction Details" style="border: 1px solid gray; zoom:90%;">
