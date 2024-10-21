@@ -1,6 +1,19 @@
 # Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
+
+## v11.6.1 October 21, 2024
+
+<u> Patch Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Public APIs for Ingesting Structured Data
+
+Search AI introduces public APIs to automate the ingestion and indexing of structured data within the application. Structured data, organized in predefined formats, enables more accurate and relevant search outcomes. This enhancement provides seamless integration for structured data, improving search accuracy and content accessibility.
+
+<hr>
+
 ## v11.6.0 September 28, 2024
 
 <u> Minor Release </u>

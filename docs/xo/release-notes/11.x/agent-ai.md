@@ -3,7 +3,10 @@
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
 ## v11.6.1 October 21, 2024
+
 <u> Patch Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
 ### Enhanced NICE MAX Desktop Integration
 
