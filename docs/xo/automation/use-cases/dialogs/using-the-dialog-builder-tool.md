@@ -5,9 +5,13 @@ The Dialog Builder is where you can create your Dialog Tasks, from end-to-end. T
 
 ## Create a Dialog Task
 
-To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../getting-started/building-a-virtual-assistant.md) for more information.
+To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../getting-started/building-a-virtual-assistant.md) for more information.  
 
-To add a dialog task, follow the steps below:
+!!! Note
+
+     For optimal performance, limit the number of dialog tasks to 50 or fewer. Exceeding this number may lead to sluggish UI response and increased latency.
+
+Steps to add a dialog task:
 
 1. Open the app for which you want to create the dialog task.
 2. Navigate to **Automation AI > Virtual Assistant** icon on the left menu.
@@ -30,7 +34,7 @@ To add a dialog task, follow the steps below:
 
     <img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray;zoom:60%;">
 
-The Dialog Builder is displayed with the canvas containing the root intent, which shows the Dialog Name and Description. Now, you are ready to add nodes and establish transitions between these nodes for your workflow.
+The Dialog Builder is displayed with the canvas containing the root intent, which shows the Dialog Name and Description. Now, you can add nodes and establish transitions between these nodes for your workflow.
 
 
 <img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray;zoom:60%;">

@@ -14,7 +14,7 @@ The key sections of this dashboard include:
 * **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
 Admins and Supervisors can access the Conversation Intelligence dashboard from **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Intelligence**.  
-<img src="../images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters
 
@@ -25,13 +25,13 @@ You can use the filters to customize the Intelligence tab.
 Steps to create a filter:
 
 1. Click the **Filters** button on the upper-right corner.  
-<img src="../images/dashboard-filter.png" alt="Filters Button" title="Filters Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/dashboard-filter.png" alt="Filters Button" title="Filters Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **+ Add New Filter**.  
-<img src="../images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **New Filter** window, select **Queues** or **Agents**. 
-<img src="../images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
+<img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
 4. Select the list of options pertaining to **Queues** or **Agents**, as required.
 5. Click **Save & Apply**.
@@ -46,14 +46,14 @@ Steps to create a filter:
 
         You can turn on the toggle to Make this the default view filter.
 
-    <img src="../images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
+    <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
 
     A confirmation message is displayed.
 
 ### Saved Filters
 
 You can view the saved filters by clicking the **Filters** tab.  
-<img src="../images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:90%;">
 
 Hovering over a saved filter displays the following options:
 
@@ -61,38 +61,38 @@ Hovering over a saved filter displays the following options:
 * Mark as Default
 * Delete
 * Edit  
-<img src="../images/filter-options.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/filter-options.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:90%;">
 
 ### Duplicate Filter
 
 Steps to duplicate a filter:
 
 1. Click the **Duplicate** button on the filter that you want to copy.  
-<img src="../images/duplicate-filter.png" alt="Duplicate Filter" title="Duplicate Filter" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/duplicate-filter.png" alt="Duplicate Filter" title="Duplicate Filter" style="border: 1px solid gray; zoom:90%;">
 
 2. Enter a name in the **Filter Name** field for the new filter, and click **SAVE**.  
-<img src="../images/rename-filter.png" alt="Save Renamed Filter" title="Save Renamed Filter" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/rename-filter.png" alt="Save Renamed Filter" title="Save Renamed Filter" style="border: 1px solid gray; zoom:90%;">
 
 3. A confirmation message is displayed, and a copy of the filter is created.  
-<img src="../images/filter-cloned-success.png" alt="Filter Cloned Success" title="Filter Cloned success" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/filter-cloned-success.png" alt="Filter Cloned Success" title="Filter Cloned success" style="border: 1px solid gray; zoom:90%;">
 
 ### Mark as Default
 
 Click the **Mark as Default** button to set the filter as the default filter.  
-<img src="../images/mark-as-default.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/mark-as-default.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:90%;">
 
 A confirmation message is displayed, and the filter is set as the default filter.  
-<img src="../images/filter-marked-default.png" alt="Filter Marked Default" title="Filter Marked Default" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/filter-marked-default.png" alt="Filter Marked Default" title="Filter Marked Default" style="border: 1px solid gray; zoom:90%;">
 
 ### Delete Filter
 
 Steps to delete a filter:
 
 1. Click the **Delete** button.  
-<img src="../images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:90%;">
 
 2. On the delete confirmation pop-up window, click **Delete**.  
-    <img src="../images/confirm-delete.png" alt="Confirm Delete Filter" title="Confirm Delete Filter" style="border: 1px solid gray; zoom:90%;">
+    <img src="../conversation-intelligence/images/confirm-delete.png" alt="Confirm Delete Filter" title="Confirm Delete Filter" style="border: 1px solid gray; zoom:90%;">
 
     A confirmation message is displayed, and the filter is deleted.
 
@@ -101,17 +101,17 @@ Steps to delete a filter:
 Steps to edit a filter:
 
 1. Click the **Edit** button.  
-    <img src="../images/edit-filter.png" alt="Edit Filter" title="Edit Filter" style="border: 1px solid gray; zoom:90%;">
+    <img src="../conversation-intelligence/images/edit-filter.png" alt="Edit Filter" title="Edit Filter" style="border: 1px solid gray; zoom:90%;">
 
 2. Make the necessary changes, and click **Save & Apply**.  
-    <img src="../images/save-edit-filter.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:90%;">
+    <img src="../conversation-intelligence/images/save-edit-filter.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:90%;">
 
     A confirmation is displayed.
 
 ## Time Selection
 
 In this section, you can filter data by time range. By default, data is displayed for the current day (Today). Select a time range, and click **Apply**.  
-<img src="../images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-intelligence/images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
 ## Compare Functionality
 
@@ -121,12 +121,12 @@ The spike or dip indicators for playbook adherence are linked to this toggle and
 
 For example, if the selected date range is the last 7 days, all metrics, such as the Average Speed to Answer, will show a spike or dip indicating the percentage change for a selected period (June 5 - June 12) compared to the same duration in the previous period (May 29 - June 5).
   
-<img src="../images/key-performance-indicators.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
+<img src="../conversation-intelligence/images/key-performance-indicators.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
 
 ## Channels
 
 You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
-<img src="../images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
+<img src="../conversation-intelligence/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Center Efficiency
 
@@ -156,7 +156,7 @@ Efficient contact centers are the backbone of excellent support. Managers use ke
 The average of the KPIs for a time interval is shown beside the line bar, along with a percentage increase or decrease in comparison with the period selected.
 
 Hovering over the color zones shows the percentage of calls and the actual number of calls for the represented percentage (volume).  
-<img src="../images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Efficacy
 
@@ -179,7 +179,8 @@ This measures how frequently an agent uses crutch words during their speech. Cru
 The admins and supervisors must completely understand customer interactions and their influence on customer satisfaction. Agent Performance Monitor provides a visual representation of the relationship among different metrics, including empathy score, crutch word score, CSAT score, and sentiment score. You can make informed, data-driven decisions by identifying the patterns to enhance the overall customer experience.
 
 The agent performance metrics are on the Y-axis. You can select individual or multiple metrics to view and analyze. CSAT and sentiment score are the customer experience-based metrics on the X-axis.  
-<img src="../images/agent-performance-monitor.png" alt="Agent Performance Monitor" title="Agent Performance Monitor" style="border: 1px solid gray; zoom:70%;">
+
+<img src="../conversation-intelligence/images/agent-performance-monitor.png" alt="Agent Performance Monitor" title="Agent Performance Monitor" style="border: 1px solid gray; zoom:70%;">
 
 ### Agent Occupancy and Agent Status
 
@@ -194,7 +195,7 @@ Agent occupancy refers to the time agents actively handle customer interactions 
 **Total logged-in time**: The total duration agents remain logged in to SmartAssist, available to handle customer interactions.
 
 Agent statuses include available, busy, away, “break”, and other custom codes the administrator configures. This information is represented in a pie chart, enabling admins and supervisors to assess agents' distribution across various statuses quickly. This section also helps understand agent occupancy and optimize agent utilization.  
-<img src="../images/agent-occupancy.png" alt="Agent Occupancy" title="Delete Filter" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/agent-occupancy.png" alt="Agent Occupancy" title="Delete Filter" style="border: 1px solid gray; zoom:70%;">
 
 ### Script and Playbook Adherence
 
