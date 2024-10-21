@@ -1,16 +1,19 @@
 # Agent AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
-## v11.6.1 October 21, 2024
-<u> Minor Release </u>
 
-## **Enhanced NICE MAX Desktop Integration \
+## v11.6.1 October 21, 2024
+<u> Patch Release </u>
+
+### **Enhanced NICE MAX Desktop Integration**
 
 The Agent AI integration with NICE CX MAX Desktop now supports passing custom data to the Agent AI Widget and is compatible with XO v11.
 
-## **Enhanced Salesforce-NICE CTI Integration \
+### **Enhanced Salesforce-NICE CTI Integration**
 
 The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI features, including automation, transcription, intent identification, Agent Coaching, Agent Playbooks, Sentiment Analysis, and end-of-call summaries. This results in improved personalization and operational efficiency.
+
+<hr>
 
 ## v11.6.0 September 28, 2024
 <u> Minor Release </u>
