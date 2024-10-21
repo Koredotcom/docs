@@ -50,6 +50,8 @@ Steps to create a filter:
 
     A confirmation message is displayed.
 
+    <img src="../conversation-intelligence/images/filter-deleted-successfully.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:80%;">
+
 ### Saved Filters
 
 You can view the saved filters by clicking the **Filters** tab.  
@@ -156,6 +158,7 @@ Efficient contact centers are the backbone of excellent support. Managers use ke
 The average of the KPIs for a time interval is shown beside the line bar, along with a percentage increase or decrease in comparison with the period selected.
 
 Hovering over the color zones shows the percentage of calls and the actual number of calls for the represented percentage (volume).  
+
 <img src="../conversation-intelligence/images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Efficacy
@@ -195,6 +198,7 @@ Agent occupancy refers to the time agents actively handle customer interactions 
 **Total logged-in time**: The total duration agents remain logged in to SmartAssist, available to handle customer interactions.
 
 Agent statuses include available, busy, away, “break”, and other custom codes the administrator configures. This information is represented in a pie chart, enabling admins and supervisors to assess agents' distribution across various statuses quickly. This section also helps understand agent occupancy and optimize agent utilization.  
+
 <img src="../conversation-intelligence/images/agent-occupancy.png" alt="Agent Occupancy" title="Delete Filter" style="border: 1px solid gray; zoom:70%;">
 
 ### Script and Playbook Adherence
@@ -209,18 +213,28 @@ When the playbook steps are the same across all the different playbook configura
 
 When no Agent AI playbooks are configured, adherence is displayed for the following scripts (Conversation Etiquettes) by default:
 
-* Greeting. For example: Hello, My name is John Doe, and I am your customer support executive. How may I help you today?
-* Branding. For example: Thank you for contacting XYZ.
-* Privacy Policy. For example, This call is being recorded for quality and training purposes.
-* Hold Etiquette (Voice calls). For example, May I place you on hold for a few minutes while I pull up some information?
-* Customer Verification. For example: Can I know your date of birth?
-* Proper Sign Off. For example, Thank you for calling XYZ today. It was a pleasure to assist you. Have a great day!  
+* **Greeting**: For example, Hello, My name is John Doe, and I am your customer support executive. How may I help you today?
+
+* **Branding**: For example, Thank you for contacting XYZ.
+
+* **Privacy Policy**: For example, This call is being recorded for quality and training purposes.
+
+* **Hold Etiquette (Voice calls)**: For example, May I place you on hold for a few minutes while I pull up some information?
+
+* **Customer Verification**: For example, Can I know your date of birth?
+
+* **Proper Sign Off**: For example, Thank you for calling XYZ today. It was a pleasure to assist you. Have a great day!  
+
     <img src="../conversation-intelligence/images/script-adherence.png" alt="Script Adherence" title="Script Adherernce" style="border: 1px solid gray; zoom:90%;">
 
     Supervisors can choose specific playbooks from the dropdown menu other than the default options. In that case, adherence to the specific parameters/steps in that playbook is displayed.  
     <img src="../conversation-intelligence/images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
 
     Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-interactions-service-levels.md#configure-conversation-intelligence-dashboard).
+
+    !!! Note
+
+        The **Playbook Adherence** tab in Conversation Intelligence is available only when Playbooks are configured in Agent AI.
 
 ## Customer Experience
 
@@ -251,9 +265,10 @@ The sentiment monitor graph is a bar chart where each bar represents an intent o
 
 The Customer Churn Monitor is a pie chart representation of the customer churn risk. This chart indicates customer churn percentage compared with total calls and any observed escalations in the same period. It functions as an interactive graph, where hovering over the graph reveals the weightage of each section based on the hover placement, and clicking a specific section directs to the calls associated with either escalation or customer churn. The following details are displayed:
 
-* **No Customer Churn/Escalation** – Number of interactions with no customer churn/escalation.
-* **Customer Churn** – Count of interactions where there has been a customer churn.
-* **Escalation** – Number of interactions where the customer has requested assistance from a supervisor or a senior.  
+* **No Customer Churn/Escalation**: Number of interactions with no customer churn/escalation.
+* **Customer Churn**: Count of interactions where there has been a customer churn.
+* **Escalation**: Number of interactions where the customer has requested assistance from a supervisor or a senior.  
+
 <img src="../conversation-intelligence/images/customer-churn-monitor.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ## Insights Mining
@@ -272,7 +287,8 @@ For example: The “Network issues” bubble indicates sentiment distribution as
 
 ## Keyword Cloud & Emotions
 
-This widget shows relevant keywords for a selected topic from the previous widget. It excludes general stop words and common words.  
+This widget shows relevant keywords for a selected topic from the previous widget. It excludes general stop words and common words. 
+ 
 <img src="../conversation-intelligence/images/insights-mining.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
 
 ### Keyword Search
