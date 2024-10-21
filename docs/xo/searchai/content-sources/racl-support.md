@@ -8,7 +8,7 @@ Each file or knowledge base article has associated user access permissions. Duri
 
 Access control in SearchAI can be summarized with the following flowchart. 
 
-![Overview](../images/connectors/racl/racl-overview.png "racl overview")
+![Overview](../images/connectors/racl/overview1.png "RACL overview")
 
 
 The response to a query can vary depending on the end user’s identity.  Consider two users, where one can access the company’s policy documents and the other can only access the FAQs. If a policy description is requested, the first user will see the response generated from the policy document (assuming the best match to the query). On the other hand, since the second user cannot access the policy document, he will see the response generated from the FAQs (assuming the next best match). The response will differ in this case depending on the content of the two documents. 

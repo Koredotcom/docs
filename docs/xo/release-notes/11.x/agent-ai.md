@@ -2,21 +2,37 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.6.1 October 21, 2024
+
+<u> Patch Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Enhanced NICE MAX Desktop Integration
+
+The Agent AI integration with NICE CX MAX Desktop now supports passing custom data to the Agent AI Widget and is compatible with XO v11.
+
+### Enhanced Salesforce-NICE CTI Integration
+
+The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI features, including automation, transcription, intent identification, Agent Coaching, Agent Playbooks, Sentiment Analysis, and end-of-call summaries. This results in improved personalization and operational efficiency.
+
+<hr>
+
 ## v11.6.0 September 28, 2024
 <u> Minor Release </u>
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### **“Thumbs-down”/Negative Feedback Reasons Comment Box Updated**
+### “Thumbs-down”/Negative Feedback Reasons Comment Box Updated
 
 The placeholder text in the comment box is now labeled “Tell us more…” instead of “Add additional comments here.”  
 <img src="../images/negative-feedback-reason-comment-box.png" alt="negative-feedback-reason-comment-box" title="negative-feedback-reason-comment-box" style="border: 1px solid gray; zoom:80%;">
 
-### **Summarization in Spanish**
+### Summarization in Spanish
 
 For Spanish conversations, auto-summarization is now available in the Spanish language.
 
-### **Error Message Configuration**
+### Error Message Configuration
 
 The error message display pattern in the Agent AI widget has been updated to help agents view and understand issues without unnecessary redundancy.
 
@@ -32,7 +48,7 @@ When a single error message is triggered during dialog task execution, the **Ass
 When multiple (different) error messages are triggered, they are all displayed in the **Assist** tab, with a count indicating the total number of error messages.  
 <img src="../images/multiple-error-messages.png" alt="multiple-error-messages" title="multiple-error-messages" style="border: 1px solid gray; zoom:80%;">
 
-### **Enhanced Raw Data API**
+### Enhanced Raw Data API
 
 The [Raw Data API](https://docs.kore.ai/agentassist/api/raw-data-api-v2/){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
 

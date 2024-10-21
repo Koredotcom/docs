@@ -116,6 +116,7 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md  
+      - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Guided Onboarding: getting-started/guided-onboarding.md
         - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
@@ -274,6 +275,10 @@ nav:
         - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
         - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
         - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
+    - Knowledgebase:
+      - New vs. Returning Users: kb/new-and-returning-users.md
+      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
+      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -286,6 +291,8 @@ nav:
             - Directory: searchai/content-sources/directory.md
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
+                - Connector Directory: searchai/content-sources/connectors/connector-directory.md
+                - RACL Overview: searchai/content-sources/racl-support.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
@@ -300,6 +307,7 @@ nav:
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - Monday: searchai/content-sources/connectors/monday.md
                 - Notion: searchai/content-sources/connectors/notion.md
+                - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md     
@@ -370,13 +378,17 @@ nav:
         - Dashboard: quality-management/analyze/dashboard.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md
+        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
-        - Settings: quality-management/configure/settings.md
+      - Settings: 
+        - quality-management/configure/settings.md
+        - quality-management/configure/settings-conversation-intelligence.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -490,6 +502,7 @@ nav:
       - Contact Center:
         - Kore Voice Automation:
           - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
+          - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
