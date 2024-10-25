@@ -238,8 +238,8 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/66050
 | dispositions                          | Disposition codes. For example, [ “ESCALATED” ]                                                                     | array of strings         |
 | dispositionRemarks                    | Final remarks from the agent. For example, [” CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent.”] | array of strings |
 | metaInfo                              | Custom information, set by the automation.                                                                          | object                   |
-| sessionStartTime                      | Start time of the session. For example, 2023/01/10 2:25:54                                                         | YYYY-MM-DDTHH:mm:SS      |
-| sessionEndTime                        | End time of the session. For example, 2023/01/10 2:25:54                                                           | YYYY-MM-DDTHH:mm:SS      |
+| sessionStartTime                      | Start time of the session. For example, 2023/01/10 2:25:54                                                         | YYYY-MM-DDTHH: mm:SS      |
+| sessionEndTime                        | End time of the session. For example, 2023/01/10 2:25:54                                                           | YYYY-MM-DDTHH: mm:SS      |
 | channelSpecificUserId                 | user ID passed by the channel.                                                                                      | no specific format       |
 | userId                                | Contact Center AI's own generated user ID. For example, u-8413fd99-4ded-5f6d-8c1a-176dc66x987                             | type-prefixed-guid       |
 | destinations                          | One object for each Queue or Agent that the call was transferred to.                                                | array of objects         |
