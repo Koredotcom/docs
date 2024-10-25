@@ -48,12 +48,10 @@ The **Manage** option displays the current plan based on eligibility and usage d
 
 To access the **Plan and Usage** feature on the **Admin Console**, follow the steps below:
 
-
 1. On the Bot Builder, click the **profile** icon in the top right corner.
-2. Click **Go to Admin Console**.
+2. Click **Go to Admin Console**.  
     <img src="../images/up(36).png" alt="Admin Console" title="Admin Console" style="border:1px solid gray;zoom:70%;"> 
     
-
 3. Login and navigate to **BILLING** > **PLAN & USAGE** on the left menu.
 
 
