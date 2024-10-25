@@ -566,6 +566,7 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
       - Manage Users: user-management/manage-users.md
       - Manage Role and Permissions: user-management/role-management.md
@@ -602,9 +603,8 @@ nav:
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
     - Billing & Payments:
-      - Overview: manage-assistant/plan-and-usage/overview.md
       - Plan & Usage: manage-assistant/plan-and-usage/usage-plans.md
-      - Billing: manage-assistant/plan-and-usage/invoices.md
+      - Invoices: manage-assistant/plan-and-usage/invoices.md
     - Admin Console:
       - Introduction to Admin Console: administration/adminconsole.md
       - Administration Dashboard: administration/dashboard-bac.md
