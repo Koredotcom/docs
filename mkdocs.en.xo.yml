@@ -375,9 +375,11 @@ nav:
       - Overview: quality-management/about-quality-management.md
       - Setup Guide: quality-management/setup-guide.md 
       - Analyze:
-        - Dashboard: quality-management/analyze/dashboard.md
+        - Dashboard: 
+        - Supervisor View: quality-management/analyze/dashboard.md
+        - Agent View: quality-management/analyze/dashboard.md
+          - Coaching Assignments Agent View: quality-management/analyze/coaching-assignments-agent-view.md
         - Coaching Assignments: quality-management/analyze/coaching-assignments.md
-        - Coaching Assignments Agent View: quality-management/analyze/coaching-assignments-agent-view.md
         - Agent Dashboard: quality-management/analyze/dashboard/agent-dashboard-supervisor-view.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
