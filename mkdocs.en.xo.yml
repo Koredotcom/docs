@@ -604,7 +604,7 @@ nav:
     - Billing & Payments:
       - Overview: manage-assistant/plan-and-usage/overview.md
       - Plan & Usage: manage-assistant/plan-and-usage/usage-plans.md
-      - Billing: manage-assistant/plan-and-usage/invoice.md
+      - Billing: manage-assistant/plan-and-usage/invoices.md
     - Admin Console:
       - Introduction to Admin Console: administration/adminconsole.md
       - Administration Dashboard: administration/dashboard-bac.md
