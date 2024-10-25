@@ -238,8 +238,8 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/66050
 | dispositions                          | Disposition codes. For example, [ “ESCALATED” ]                                                                     | array of strings         |
 | dispositionRemarks                    | Final remarks from the agent. For example, [” CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent.”] | array of strings |
 | metaInfo                              | Custom information, set by the automation.                                                                          | object                   |
-| sessionStartTime                      | Start time of the session. For example, 2023/01/10 2:25:54                                                         | YYYY-MM-DDTHH:mm:SS      |
-| sessionEndTime                        | End time of the session. For example, 2023/01/10 2:25:54                                                           | YYYY-MM-DDTHH:mm:SS      |
+| sessionStartTime                      | Start time of the session. For example, 2023/01/10 2:25:54                                                         | YYYY-MM-DDTHH: mm:SS      |
+| sessionEndTime                        | End time of the session. For example, 2023/01/10 2:25:54                                                           | YYYY-MM-DDTHH: mm:SS      |
 | channelSpecificUserId                 | user ID passed by the channel.                                                                                      | no specific format       |
 | userId                                | Contact Center AI's own generated user ID. For example, u-8413fd99-4ded-5f6d-8c1a-176dc66x987                             | type-prefixed-guid       |
 | destinations                          | One object for each Queue or Agent that the call was transferred to.                                                | array of objects         |
@@ -248,16 +248,16 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/66050
 | csatFeedback                          | Survey comment entered by the customer.                                                                            | string                   |
 | QueueEntry.queueId                    | Contact Center AI's internal ID for the Queue. For example, qu-123dbe9-c752-464d-a9be-1d0e43b669a4                        | type-prefixed-guid       |
 | QueueEntry.queueName                  | Name of the queue. For example, Residential – Sales                                                                | character string         |
-| QueueEntry.EnterTime                  | The time at which this conversation entered this queue. For example, 2023/01/10 2:25:54                           | YYYY-MM-DDTHH:mm:SS      |
+| QueueEntry.EnterTime                  | The time at which this conversation entered this queue. For example, 2023/01/10 2:25:54                           | YYYY-MM-DDTHH: mm:SS      |
 | QueueEntry.respondingAgent            | Details of the responding agent.                                                                                   | an AgentSegment object   |
 | QueueEntry.respondingAgent.agentId    | Contact Center AI's internal ID for the agent. For example, u-f3a11f62-57d7-5a9f-a071-787650b14b11                       | type-prefixed-guid       |
 | QueueEntry.respondingAgent.name       | The agent’s name. For example, Jared Smith                                                                         | character string         |
 | QueueEntry.respondingAgent.agentNotes | Notes from each agent. For example, [“CUSTOMER has a problem with Products and Sales. She needs an agent to help her.”] | array of strings |
 | QueueEntry.respondingAgent.destinationType | A constant value.                                                                                              | AgentSegment             |
 | QueueEntry.respondingAgent.email      | The agent’s email address. For example, jared.smith@example.com                                                    | full-email-id@employer.com |
-| QueueEntry.respondingAgent.assignedAt | The time at which the Queue assigned this contact to this Agent. For example, 2023/01/10 2:25:54                   | YYYY-MM-DDTHH:mm:ss      |
-| QueueEntry.respondingAgent.acceptedTime | The time at which this Agent accepted this contact. For example, 2023/01/10 2:25:54                             | YYYY-MM-DDTHH:<span>mm</span>:SS      |
+| QueueEntry.respondingAgent.assignedAt | The time at which the Queue assigned this contact to this Agent. For example, 2023/01/10 2:25:54                   | YYYY-MM-DDTHH: mm:SS      |
+| QueueEntry.respondingAgent.acceptedTime | The time at which this Agent accepted this contact. For example, 2023/01/10 2:25:54                             | YYYY-MM-DDTHH: mm:SS      |
 | QueueEntry.respondingAgent.status    | Status of the conversation with this respondingAgent.                                                              | Answered                 |
-| QueueEntry.respondingAgent.firstResponseTime | The time at which this Agent first responded. For example, 2023/01/10 2:25:54                                | YYYY-MM-DDTHH:mm:SS      |
+| QueueEntry.respondingAgent.firstResponseTime | The time at which this Agent first responded. For example, 2023/01/10 2:25:54                                | YYYY-MM-DDTHH: mm:SS      |
 | QueueEntry.respondingAgent.firstResponseDuration | Duration in seconds, from the time of Agent’s acceptance to the time of his first response. For example, 20 | integer                  |
-| QueueEntry.respondingAgent.interactionEndTime | The time at which the interaction with this respondingAgent ended. For example, 2023/01/10 2:25:54          | YYYY-MM-DDTHH:mm:SS
+| QueueEntry.respondingAgent.interactionEndTime | The time at which the interaction with this respondingAgent ended. For example, 2023/01/10 2:25:54          | YYYY-MM-DDTHH: mm:SS
