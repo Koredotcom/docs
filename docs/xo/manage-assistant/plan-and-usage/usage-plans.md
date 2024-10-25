@@ -79,12 +79,10 @@ Select the wire transfer payment mode while adding funds. A wire transfer is a f
 
 
 ### Subscribe and Modify the Plan
-To subscribe a new plan or modify and existing plan, follow the steps below:
-
-
+To subscribe to a new plan or modify an existing plan, follow the steps below:
 
 1. On the Platform, navigate to **Manage** > **Plan & Usage**.
-2. Click **Subscribe** in the **Plan information** section to subscribe to a new plan or click **Modify** to modify your existing plan.  
+2. In the **Plan Information** section, click **Subscribe** to sign up for a new plan, or click **Modify** to adjust your existing plan. 
    <img src="../images/up(3).png" alt="Subscription" title="Subscription" style="border: 1px solid gray;"/>  
    <img src="../images/up(35).png" alt="modify" title="modify" style="border: 1px solid gray;"/>
 

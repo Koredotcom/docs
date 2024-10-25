@@ -52,10 +52,8 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
 2. Click **Go to Admin Console**.  
     <img src="../images/up(36).png" alt="Admin Console" title="Admin Console" style="border:1px solid gray;zoom:70%;"> 
     
-3. Login and navigate to **BILLING** > **PLAN & USAGE** on the left menu.
-
-
-   <img src="../images/up(32).png" alt="Plan and Usage - Admin Console" title="Plan and Usage - Admin Console" style="border:1px solid gray;zoom:70%;">
+3. Login and navigate to **BILLING** > **PLAN & USAGE** on the left menu.  
+    <img src="../images/up(32).png" alt="Plan and Usage - Admin Console" title="Plan and Usage - Admin Console" style="border:1px solid gray;zoom:70%;">
         
 
 !!! note
