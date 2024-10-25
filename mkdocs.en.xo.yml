@@ -376,8 +376,9 @@ nav:
       - Setup Guide: quality-management/setup-guide.md 
       - Analyze:
         - Dashboard: quality-management/analyze/dashboard.md
-        - Dashboard Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
-        - Dashboard Agent View: quality-management/analyze/agent-dashboard-agent-view.md
+        - Agent Dashboard:
+          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
+          - Agent View: quality-management/analyze/agent-dashboard-agent-view.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
         - Coaching Assignments: quality-management/analyze/coaching-assignments.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
