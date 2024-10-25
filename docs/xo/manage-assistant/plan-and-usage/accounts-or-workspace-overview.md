@@ -60,14 +60,6 @@ In the below example, only Automation AI and SearchAI enterprise licenses are of
 
 <img src="../images/get-started.png" alt="Get Started" title="Get Started" style="border:1px solid gray;zoom:60%;">
 
-## Plan Types
-
-The Kore.ai XO Platform offers Usage Plans for deploying and managing your App.
-
-### Usage Plans
-
-The Usage Plan enables apps to interact with your end users from any available channels.  channels. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
-
 ## Workspace Linked to Multiple Apps
 
 A workspcae owner can explicitly manage the Plan and Usage for a workspace linked to multiple bot accounts and do the following:
