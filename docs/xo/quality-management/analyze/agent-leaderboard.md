@@ -13,7 +13,7 @@ You can view Agent Leaderboard by navigating to **Contact Center AI** > **Qualit
 The Agent Leaderboard shows all the agents across queues and channels which includes the following list of items:
 
 * **Agents**: This shows the agent name and queue that it belongs to.
-* **Agent Score Card**: This shows the number of scorecards assigned to the agent and the agent score (Across all queues).
+* **Agent Score Card**: This shows the number of scorecards assigned to the agent and the agent score (across all queues).
 
 !!! Note
 
