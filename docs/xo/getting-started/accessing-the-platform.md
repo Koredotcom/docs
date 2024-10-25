@@ -227,4 +227,4 @@ Steps to invite users:
 6. When the invited user accepts the invitation, they can access the specific app.
 
 ##### Related Link
-[Accounts or Workspace](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)
+[Accounts or Workspaces](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)
