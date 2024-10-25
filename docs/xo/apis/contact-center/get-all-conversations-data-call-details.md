@@ -255,9 +255,9 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/66050
 | QueueEntry.respondingAgent.agentNotes | Notes from each agent. For example, [“CUSTOMER has a problem with Products and Sales. She needs an agent to help her.”] | array of strings |
 | QueueEntry.respondingAgent.destinationType | A constant value.                                                                                              | AgentSegment             |
 | QueueEntry.respondingAgent.email      | The agent’s email address. For example, jared.smith@example.com                                                    | full-email-id@employer.com |
-| QueueEntry.respondingAgent.assignedAt | The time at which the Queue assigned this contact to this Agent. For example, 2023/01/10 2:25:54                   | YYYY-MM-DDTHH:mm:SS      |
-| QueueEntry.respondingAgent.acceptedTime | The time at which this Agent accepted this contact. For example, 2023/01/10 2:25:54                             | YYYY-MM-DDTHH:mm:SS      |
+| QueueEntry.respondingAgent.assignedAt | The time at which the Queue assigned this contact to this Agent. For example, 2023/01/10 2:25:54                   | YYYY-MM-DDTHH:mm:ss      |
+| QueueEntry.respondingAgent.acceptedTime | The time at which this Agent accepted this contact. For example, 2023/01/10 2:25:54                             | YYYY-MM-DDTHH:<span>mm</span>:SS      |
 | QueueEntry.respondingAgent.status    | Status of the conversation with this respondingAgent.                                                              | Answered                 |
 | QueueEntry.respondingAgent.firstResponseTime | The time at which this Agent first responded. For example, 2023/01/10 2:25:54                                | YYYY-MM-DDTHH:mm:SS      |
 | QueueEntry.respondingAgent.firstResponseDuration | Duration in seconds, from the time of Agent’s acceptance to the time of his first response. For example, 20 | integer                  |
-| QueueEntry.respondingAgent.interactionEndTime | The time at which the interaction with this respondingAgent ended. For example, 2023/01/10 2:25:54          | YYYY-MM-DDTHH:mm:
+| QueueEntry.respondingAgent.interactionEndTime | The time at which the interaction with this respondingAgent ended. For example, 2023/01/10 2:25:54          | YYYY-MM-DDTHH:mm:SS
