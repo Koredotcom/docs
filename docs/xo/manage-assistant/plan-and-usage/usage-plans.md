@@ -79,17 +79,15 @@ Select the wire transfer payment mode while adding funds. A wire transfer is a f
 
 
 ### Subscribe and Modify the Plan
-To subscribe a new plan or modify and existing plan, follow the steps below:
-
-
+To subscribe to a new plan or modify an existing plan, follow the steps below:
 
 1. On the Platform, navigate to **Manage** > **Plan & Usage**.
-2. Click **Subscribe** in the **Plan information** section to subscribe to a new plan or click **Modify** to modify your existing plan.  
+2. In the **Plan Information** section, click **Subscribe** to sign up for a new plan, or click **Modify** to adjust your existing plan. 
    <img src="../images/up(3).png" alt="Subscription" title="Subscription" style="border: 1px solid gray;"/>  
    <img src="../images/up(35).png" alt="modify" title="modify" style="border: 1px solid gray;"/>
 
 
-3. Select the plan and then click **Proceed and Modify**  
+3. Select the plan and then click **Proceed and Modify**.  
    <img src="../images/up(20).png" alt="Proceed and Modify" title="Proceed and Modify" style="border: 1px solid gray;"/>
 
 4. Enter the **Billing Information**, select a **Payment Method**, and enter the payment details.
@@ -118,20 +116,8 @@ If an account has paid credits, then the admin user can approve the deployment f
 
 ## Emails and Notifications
 
-The Platform sends notifications and marketing emails to the bot developers/account owners at various stages of their Bot-building journey. For the **Usage Plans** feature. In a nutshell, these emails are classified as follows:
-
-
-* Signup and Sign-in Flows.
-* Ecommerce Flows (Manual and Auto-approvals).
-* Support Plans, Marketing, and notifications.
-* Invitation emails
-* Publish and Other Update Emails.
-
-
-### System-Triggered Email Templates
-
+The Platform sends notifications and marketing emails to the app developers/account owners at various stages. 
 The following table describes the automatic emails triggered by the system when an event occurs:
-
 
 <table>
   <tr>
@@ -141,387 +127,157 @@ The following table describes the automatic emails triggered by the system when 
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Sign-up and Sign-in Flows</strong>
+   <td colspan="2" ><strong>Emails from the product</strong>
    </td>
   </tr>
   <tr>
-   <td>Sign-up – Email Confirmation
+   <td>Sign-up – OTP and Resend Signup – OTP
    </td>
-   <td>An account verification link is sent to the user to complete the setup.
-   </td>
-  </tr>
-  <tr>
-   <td>Signup – Resend Email Confirmation
-   </td>
-   <td>Account sign-up confirmation email with the verification link triggered on the user’s request.
+   <td>This email provides a One-Time Password (OTP) to complete their self-signup process.
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Ecommerce Flows for the Free Plan- Virtual Assistant</strong>
+   <td>Forget Password 
+   </td>
+   <td> This email provides a verification link to reset the password.
    </td>
   </tr>
   <tr>
-   <td>First Time Publish – Auto Approval – Free Credits
+   <td>Two factor-OTP and resend-OTP
    </td>
-   <td>This email is sent to the VA owner when a VA is published for the first time, and the account has leftover free credits shared by all the VAs and zero paid credits.
-   </td>
-  </tr>
-  <tr>
-   <td>First Time Publish – Admin Approval – Free Credits
-   </td>
-   <td>This email is sent to the VA owner after the administrator approves a VA’s publish request for the first time. In this case, the account has leftover free credits shared by all the VAs and zero paid credits.
+   <td>This email provides an OTP  for Two-Factor Authentication (2FA).
    </td>
   </tr>
   <tr>
-   <td>First Time Publish – Auto Approval – Paid Credits
+   <td>Workspace approval request
    </td>
-   <td>When a VA is published for the first time using auto-approval, this email is sent to the owner, and the account has paid credits.
-   </td>
-  </tr>
-  <tr>
-   <td>First Time Publish – Admin Approval – Paid Credits
-   </td>
-   <td>This email is sent to the owner when a VA is published for the first time after the admin’s approval and the account has paid credits.
+   <td>This email notifies the account owner about an access request for their Kore.ai account, asking for approval or denial of the request, with a prompt to contact for further details or concerns.
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Ecommerce Flows for the Standard Plan- Virtual Assistant</strong>
+   <td>Workspace approval accepted
+   </td>
+   <td>This email confirms the acceptance of an access request to the specified Kore.ai workspace, welcoming the recipient to collaborate with their team and offering assistance for a smooth onboarding experience.
    </td>
   </tr>
   <tr>
-   <td>Standard Plan – Purchases for a Bot
+   <td>Workspace approval rejected
    </td>
-   <td>This email is sent to the VA owner/admin who makes a purchase (first or subsequent) for a Usage plan for a VA that is published. The email contains the following information:
-<ul>
-
-<li>Bot Name
-
-<li>Previous Balance
-
-<li>Order Amount
-
-<li>Purchase Date
-
-<li>Current Balance
-
-<li>Auto-Recharge Status (Activated / Not Activated).
-
-<li>Auto Recharge Amount (shown if auto-reload is enabled).
-
-<li>Minimum Credit to be Maintained (shown only if auto-reload is enabled).
-</li>
-</ul>
+   <td>This email informs the recipient that their request for access to a specific Kore.ai workspace has been declined by the account owner, offering further clarification and support if needed.
    </td>
   </tr>
   <tr>
-   <td>Standard Plan – Auto Reloads
+   <td>Invite new user to account from admin console
    </td>
-   <td>This email is sent to the VA owner when an automatic purchase is successful (auto-reload is enabled for the account).
-<p>
-The email contains the following information:
-<ul>
-
-<li>Bot Name
-
-<li>Previous Balance
-
-<li>Order Amount
-
-<li>Purchase Date
-
-<li>Current Balance
-
-<li>Auto-Recharge Status (Activated / Not Activated).
-
-<li>Auto Recharge Amount (shown if auto-reload is enabled).
-
-<li>Minimum Credit to be Maintained (shown only if auto-reload is enabled).
-</li>
-</ul>
+   <td>This email invites the recipient to join a Kore.ai workspace, providing steps to accept the invitation and start collaborating, along with contact details for any support needed during the process.
    </td>
   </tr>
   <tr>
-   <td><strong>Order Confirmation</strong>
+   <td>Invite existing user to account from admin console
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Order Invoice
-   </td>
-   <td>This email is sent to the VA owner for a PayPal order confirmation along with the following invoice details:
-<ul>
-
-<li>Order Invoice link
-
-<li>Invoice Number
-
-<li>Date
-
-<li>Plan
-
-<li>Plan Price
-
-<li>Invoice Total
-
-<li>Customer Control Panel URL
-</li>
-</ul>
+   <td>This email invites the recipient to join a Kore.ai workspace, providing steps to accept the invitation and offering support for any issues.
    </td>
   </tr>
   <tr>
-   <td><strong>Auto-Recharge</strong>
+   <td>Invite new user from bot
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Auto Recharge is Enabled
-   </td>
-   <td>This email is sent to the VA owner when auto-recharge is enabled for a VA. The email contains the following details:
-<ul>
-
-<li>Bot Name
-
-<li>Auto Reload Status – Activated
-
-<li>Auto Reload Amount
-
-<li>Minimum Credit to be Maintained
-
-<li>Payment (mode)
-
-<p>
-<strong>Note</strong>: Auto-reload can only be enabled if the user has made one or more previous purchases.
-</li>
-</ul>
+   <td>This email invites the recipient to join an app on Kore.ai, providing steps to accept the invitation.
    </td>
   </tr>
   <tr>
-   <td>Auto Recharge is Disabled
+   <td>Invite existing user from bot (user is not part of the account)
    </td>
-   <td>This email is sent to the VA owner when auto-recharge is deactivated for a VA. The email contains the following details along with the reactivation link:
-<ul>
-
-<li>Bot Name
-
-<li>Auto Reload Status – Not Activated
-</li>
-</ul>
+   <td>This email invites the recipient to join an app on Kore.ai, following an administrator's invitation, with steps to access the app's features and support details for assistance if needed.
    </td>
   </tr>
   <tr>
-   <td><strong>Wallet Balance and Credits</strong>
+   <td>Invite existing user from bot(user is part of the account)
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Low Balance Alert
-   </td>
-   <td>This email is sent as a reminder when auto-reload is disabled or fails and the account balance reaches the lower threshold limit. A link to activate auto-reload is available in the email.
-<p>
-<strong>Note</strong>: The low balance limit is set to <strong>$ 50</strong>.
+   <td>This email invites the recipient, via a bot, to join an app on Kore.ai, providing steps to access the app's features, along with support details.
    </td>
   </tr>
   <tr>
-   <td>Paid Wallet Balance 0 and No free credits to backup
+   <td>Bot Publish 
    </td>
-   <td>This email is sent to the owner when the paid and free credits have been exhausted.
-<p>
-When there are no free credits to back up the zero balance for paid credits, this email triggers and displays a <strong>recharge now</strong> link.
+   <td>This email announces the successful publication of a bot.
    </td>
   </tr>
   <tr>
-   <td>Paid Wallet Balance goes below 0 – Free credits available
+   <td>Free Tokens Exhausted  
    </td>
-   <td>The email is sent to the owner when the paid credits have been exhausted but shared free credits are available at the workspace level. This email displays a <strong>recharge now</strong> link.
-   </td>
-  </tr>
-  <tr>
-   <td>Free credits exhausted – Inactive bots
-   </td>
-   <td>The email is sent to the VA owner when the free credits have been exhausted at the workspace level and paid credits have not been added or have been exhausted. This email displays a <strong>recharge now</strong> link.
+   <td>This email informs the recipient that their free tokens for the Generative AI features have been exhausted for the specified app, providing steps to configure their own Language Model (LLM) to continue using the capabilities.
    </td>
   </tr>
   <tr>
-   <td>Free credits exhausted – Workspace Summary
-   </td>
-   <td>The email is sent to the workspace owner when the free credits have been exhausted at the workspace level. The email displays a usage summary for each VA with the Free Credits consumption and current status information.
+   <td colspan="2" ><strong>Pricing Emails</strong>
    </td>
   </tr>
   <tr>
-   <td><strong>WorkSpace Plan Switch</strong>
+   <td>Automation AI Subscription
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Workspace Plan Switch
-   </td>
-   <td>The email is sent to the workspace owner when the workspace plan is switched to a new plan.
+   <td>This email confirms the successful activation of the recipient's subscription to the Automation AI service, indicating that payment has been processed and the account is ready to use.
    </td>
   </tr>
   <tr>
-   <td>Workspace Plan Switch – Impacted VAs
+   <td>Contact Center AI Subscription
    </td>
-   <td>The email is sent to the VA owner (only once, if a user is a VA owner for multiple bots) when the workspace plan is switched to a new plan. An <strong>Explore Benefits</strong> link is displayed in the email.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Auto-reload Failure</strong>
-   </td>
-   <td>
+   <td>This email confirms the successful activation of the recipient's subscription to the Contact Center AI service, indicating that payment has been processed.
    </td>
   </tr>
   <tr>
-   <td>Auto-recharge Failure – Credit Card
+   <td>Automation AI & Contact Center AI Subscription
    </td>
-   <td>This email is triggered to the VA owner if the credit card cannot be authorized for payment. The subscription plan name and the subscription price are displayed in the email.
-   </td>
-  </tr>
-  <tr>
-   <td>Auto-recharge Failure – PayPal
-   </td>
-   <td>This email is triggered to the VA owner if there is an error when charging the card for the payment via PayPal. The following details are displayed in the email:
-<ul>
-
-<li>Previous Charge Attempted On (date).
-
-<li>Invoiced Amount
-
-<li>Payment Method – <em>Payment mode information on the card</em>.
-</li>
-</ul>
+   <td>This email confirms the successful activation of the recipient's subscriptions to the Automation AI and Contact Center AI services, indicating that payment has been processed.
    </td>
   </tr>
   <tr>
-   <td><strong>Payment Method Expiry</strong>
+   <td>Add-on XO Voice Gateway with ASR and TTS
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Reminder – Payment Method Nearing Expiry
-   </td>
-   <td>This email is sent when the payment method (card) is nearing the expiration date. A link to update the payment information is displayed in the email.
+   <td>This email confirms the successful activation of the recipient's subscription for the XO Voice Gateway add-on with ASR and TTS, indicating that payment has been processed.
    </td>
   </tr>
   <tr>
-   <td>The payment method has expired
+   <td>Single add-on subscription (Ex: Advanced RAG)
    </td>
-   <td>This email is sent when the payment method (card) has expired. A link to update the payment information is displayed in the email.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Subscription Cancellation</strong>
-   </td>
-   <td>
+   <td>This email confirms the successful activation of the recipient's subscription for the Advanced RAG add-on, indicating that payment has been processed and the advanced features are now accessible in their account.
    </td>
   </tr>
   <tr>
-   <td>Subscription has been Canceled
+   <td>Multiple Add-ons 
    </td>
-   <td>This email is sent when the VA owner cancels the subscription made via the PayPal payment mode. The following details are displayed:
-<ul>
-
-<li>Plan
-
-<li>Plan price
-
-<li>Plan Cancellation Date
-</li>
-</ul>
+   <td>This email confirms the successful activation of the recipient's subscriptions for the add-ons, indicating that payment has been processed and the advanced features are now accessible in their account.
    </td>
   </tr>
   <tr>
-   <td><strong>Support Plans</strong>
+   <td>Auto-Renewal Successful
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Purchase
-   </td>
-   <td>This email is sent to the VA owner for a paid support plan purchase confirmation. The following details are displayed:
-<ul>
-
-<li>Bot Name
-
-<li>Plan: <em>Enhanced Support/Enterprise Support</em>.
-
-<li>Plan Price: <em>$x charged Annually / Monthly</em>.
-
-<li>Plan Activated on: <em>Date</em>
-
-<li>Next Renewal on: <em>Date</em>
-</li>
-</ul>
+   <td>This email confirms the successful renewal of the recipient's XO11 product subscription, providing details about the subscription plan, billing amount, renewal date, and next billing date.
    </td>
   </tr>
   <tr>
-   <td>Invoice
+   <td>Auto-Renewal Unsuccessful
    </td>
-   <td>This email is sent to the VA owner to share the invoice for a support plan purchase. The following details are displayed in the email:
-<ul>
-
-<li>Order Invoice link
-
-<li>Invoice Number
-
-<li>Date
-
-<li>Plan
-
-<li>Plan Price
-
-<li>Invoice Total
-
-<li>Customer Control Panel URL
-</li>
-</ul>
+   <td>This email informs the recipient of an issue encountered during the renewal of their XO11 product subscription, highlighting that their services will stop in a specified number of days unless immediate action is taken to complete the payment.
    </td>
   </tr>
   <tr>
-   <td>Support Plan Auto-renewal
+   <td>Trial Expired
    </td>
-   <td>This email is sent five days before the renewal to the VA owner. It notifies about the automatic renewal on the specific date along with the following details:
-<ul>
-
-<li>Bot Name
-
-<li>Plan: <em>Enhanced Support/Enterprise Support</em>.
-
-<li>Plan Price: <em>$x charged Annually / Monthly</em>.
-
-<li>Renewal Date: <em>Date</em>
-
-<p>
-<strong>Note</strong>: A URL to update the payment method is provided to help the user update the payment information.
-</li>
-</ul>
+   <td>This email informs the recipient that the trial has expired, and encourages them to upgrade to a paid plan for uninterrupted access. 
    </td>
   </tr>
   <tr>
-   <td>Support Plan Problem with Processing the Renewal Payment
+   <td>Subscription Expired
    </td>
-   <td>This email is sent to the VA owner when the payment for a renewal fails. The following details are displayed:
-<ul>
-
-<li>Bot Name
-
-<li>Plan: <em>Enhanced Support/Enterprise Support</em>.
-
-<li>Plan Price: <em>$x charged Annually / Monthly</em>.
-
-<li>Charge Attempted On: <em>Date</em>
-
-<li>Payment method
-
-<p>
-<strong>Note</strong>: A URL to update the payment method is provided to help the user switch to an alternative payment method.
-</li>
-</ul>
+   <td>This email informs the recipient that their XO11 product subscription has expired and encourages them to renew for uninterrupted access to all features and benefits.
+   </td>
+  </tr>
+  <tr>
+   <td>Subscription Canceled
+   </td>
+   <td>This email confirms the successful processing of the recipient's cancellation request for their XO11 product subscription, stating that it is effective immediately and that they will no longer be billed.
+   </td>
+  </tr>
    </td>
   </tr>
 </table>
