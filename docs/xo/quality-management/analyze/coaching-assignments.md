@@ -1,8 +1,8 @@
-# **Coaching Assignment - Agent View**
+# **Coaching Assignments - Agent View**
 
-The Coaching Assignment feature in the Agent Dashboard enables agents to review and gain value from supervisor-created coaching assignments. To access these assignments, agents must have single permissions for the "agent dashboard" and "coaching assignments". The assignments are listed in reverse chronological order.
+The Coaching Assignments feature in the Agent Dashboard enables agents to review and gain value from supervisor-created coaching assignments. To access these assignments, agents must have single permissions for the "agent dashboard" and "coaching assignments". The assignments are listed in reverse chronological order.
 
-You can view Coaching Assignments by navigating to **Contact Center AI > Quality AI > Dashboard > Coaching Assignments**.  
+You can view Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Coaching Assignments**.  
 
 <img src="../images/coaching-assignments.png" alt="Coaching Assignment Agent View" title="Coaching Assignment Agent View" style="border: 1px solid gray; zoom:80%;">
 
@@ -13,15 +13,15 @@ The Agent Dashboard - Coaching Assignments page shows the following list of item
 * **Assigned Date**: This shows the date when the coaching assignment was given.
 * **Follow-up Date**: This shows the follow-up date for that coaching assignment.
 * **Status**: This shows the following status of the coaching assignments, which is calculated based on the number of interactions and best responses:
-* **Start Now**: This indicates the assigned interactions in coaching that have been reviewed.
-* **In Progress**: This shows the interactions (>1) that have been reviewed.
-* **Completed**: This shows all the interactions are completed
+    * **Start Now**: This indicates the assigned interactions in coaching that have been reviewed.
+    * **In Progress**: This shows the interactions (>1) that have been reviewed.
+    * **Completed**: This shows all the interactions are completed
 
-Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignment.  
+Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignments.  
 
 <img src="../images/coaching-assignments-slide-out-interaction.png" alt="Interactions Slideout" title="Interaction Slideout" style="border: 1px solid gray; zoom:80%;">
 
-### **Interaction Marked for Coaching**
+### Interaction Marked for Coaching
 
 The Interaction marked for coaching includes the following:
 

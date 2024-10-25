@@ -376,6 +376,7 @@ nav:
       - Setup Guide: quality-management/setup-guide.md 
       - Analyze:
         - Dashboard: quality-management/analyze/dashboard.md
+        - Agent Dashboard: quality-management/analyze/dashboard/agent-dashboard-supervisor-view.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md

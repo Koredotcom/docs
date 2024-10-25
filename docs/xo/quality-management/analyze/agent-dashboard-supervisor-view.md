@@ -2,15 +2,16 @@
 
 This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the overview section of the supervisor's Agent Dashboard, and is based on selected periods and channels (voice or chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
 
-You can view the Supervisor dashboard or Agent Leaderboard by navigating to **Contact Center AI** > **Quality AI** > **Dashboard** > **Agent Leaderboard** > **Overview**.
+You can view the Supervisor view of the Agent Dashboard in the following two ways:
+* By navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Overview**.
 
-<img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
+* By navigating to **Contact Center AI** > **Quality Management** > **Agent Leaderboard** > **Overview**.
+
+<img src="./agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 In this, each agent will have a specific dashboard that the agents and their supervisors can access. This dashboard provides high-level metrics to the supervisors.
 
 The supervisor can filter all agent interaction channels (Voice and SMS) by selecting the following date ranges:
-
-
 
 * **Today**: All interaction data for this day in the agent’s time zone.
 
@@ -23,7 +24,6 @@ The supervisor can filter all agent interaction channels (Voice and SMS) by sele
 * **Last 90 days**: All interaction data for the previous 90 days (not including today) in the agent’s time zone.
 
 * **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
-
 
 ## Overview
 
@@ -67,7 +67,7 @@ The overview tab of the supervisor view of the Agent Dashboard which is specific
 
 This feature displays all coaching assignments given to an agent as part of the agent dashboard. Supervisors can track performance trends related to scorecards over various periods to assess progress or declines and take necessary actions with coaching assignments.  
 
-<img src="./agent-leaderboard/images/coaching-assignments.png" alt="Coaching Assignments" title="Coaching Assignments" style="border: 1px solid gray; zoom:60%;">
+<img src="../agent-leaderboard/images/coaching-assignments.png" alt="Coaching Assignments" title="Coaching Assignments" style="border: 1px solid gray; zoom:60%;">
 
 The Coaching Assignments include the following items:
 
@@ -93,9 +93,9 @@ The Coaching Assignments include the following items:
 
     * **Completed**: All interactions clicked through for that assignment.
 
-For more information on Coaching Assignment, see [Supervisor Dashboard - Supervisor View - Coaching Assignment](https://docs.google.com/document/u/0/d/1yI6u2adhnFNbDL5esdYgpi75WidsCoQc7bXOrfYQ_zc/edit).  
+For more information on Coaching Assignments, see [Coaching Assignments](./WidsCoQc7bXOrfYQ_zc/edit).  
 
-### **Scorecard Trend**
+### Scorecard Trend
 
 This feature displays an agent's assigned scorecards and allows supervisors to track performance trends over different periods. The scorecard trend widget shows attributes and scoring trends for each scorecard across Daily, Weekly, and Monthly time frames. Supervisors use this information to identify progress or declines and make informed coaching decisions. The agent dashboard includes a tabular scorecard trend widget to facilitate this analysis and scoring trend at an attribute level across the following time ranges (Daily, Weekly, and Monthly).
 
@@ -105,13 +105,13 @@ This feature displays an agent's assigned scorecards and allows supervisors to t
 
 If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the Settings.
 
-#### **Avg. Scorecard Score**
+#### Avg. Scorecard Score
 
 From the agent side, the scorecard trend widget shows the average scorecard for the selected time range and the scoring trend at an attribute level across the following time ranges in a tabular view.
 
 When a scorecard is selected, the average score for that agent within the chosen global date range is displayed. If no conversations are made after assigning, then the scorecard does not show any score for that agent. If any conversations exist, then the scorecard is displayed in the dropdown for scorecard trends.
 
-#### **Attributes**
+#### Attributes
 
 It displays all agent attributes included in the scorecard and the average score for each attribute within the selected date range filter.
 
@@ -123,7 +123,7 @@ The date range selection is done based on the following criteria:
 
 * **Monthly**: Last 7 months from the current month.
 
-### **Evaluation**
+### Evaluation
 
 This allows supervisors to drill down and view specific agents' interactions and the details of evaluations performed in the last selected time period. Supervisors can use these interactions as reference points for coaching to help agents enhance their performance. Based on the reviewed interactions and created bookmarks, supervisors can then assign targeted coaching assignments to the agents. This displays the list of interactions terminated or completed by the agent, with the most recent ones appearing first. This page serves as the starting page for coaching assignment creation.
 
