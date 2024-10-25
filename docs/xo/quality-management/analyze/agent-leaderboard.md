@@ -4,7 +4,7 @@ The Agent Leaderboard feature allows auditors and managers to view both top and 
 
 You can view Agent Leaderboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Agent Leaderboard**.
 
-<img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+<img src="./agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 !!! Note
 
