@@ -602,9 +602,9 @@ nav:
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
     - Billing & Payments:
-      -Overview: manage-assistant/plan-and-usage/overview.md
-      -Plan & Usage: manage-assistant/plan-and-usage/usage-plans.md
-      -Billing: manage-assistant/plan-and-usage/invoice.md
+      - Overview: manage-assistant/plan-and-usage/overview.md
+      - Plan & Usage: manage-assistant/plan-and-usage/usage-plans.md
+      - Billing: manage-assistant/plan-and-usage/invoice.md
     - Admin Console:
       - Introduction to Admin Console: administration/adminconsole.md
       - Administration Dashboard: administration/dashboard-bac.md
