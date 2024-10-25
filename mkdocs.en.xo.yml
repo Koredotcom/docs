@@ -399,6 +399,7 @@ nav:
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
+        - Configure Auto Summarization with Custom Dialog Tasks: agentai/configuration/configure-auto-summarization-with-custom-dialog-tasks.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
@@ -567,6 +568,7 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
       - Manage Users: user-management/manage-users.md
       - Manage Role and Permissions: user-management/role-management.md
@@ -603,9 +605,8 @@ nav:
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
     - Billing & Payments:
-      - Overview: manage-assistant/plan-and-usage/overview.md
       - Plan & Usage: manage-assistant/plan-and-usage/usage-plans.md
-      - Billing: manage-assistant/plan-and-usage/invoices.md
+      - Invoices: manage-assistant/plan-and-usage/invoices.md
     - Admin Console:
       - Introduction to Admin Console: administration/adminconsole.md
       - Administration Dashboard: administration/dashboard-bac.md

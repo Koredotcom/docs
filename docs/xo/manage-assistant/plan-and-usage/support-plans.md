@@ -1,14 +1,6 @@
-# Support Plans
-
-	
-
-		
-
-			
+# Support Plans	
 
 Here are the available Support Plans for publishing your virtual assistants. Subscription to Support Plans is optional. 
-
-
 
 1. All published virtual assistants get Basic Support by default.
 2. You can choose to subscribe to a paid Standard Support plan for comprehensive support from Kore.ai experts. 

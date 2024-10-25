@@ -1,9 +1,4 @@
-
-# Plan and Usage Overview
-  
-This article provides information on how Apps are billed, how to track their usage and the usage limits or quotas applied for various features. Before we go into the details, let's quickly understand the following key terms and concepts.
-
-## Accounts or Workspaces
+# Accounts or Workspaces
 
 A Workspace or Account refers to a group of users who typically belong to an organization or work on projects. When you sign up, the platform automatically creates a Workspace and a User identity. In some scenarios, the platform creates only a user identity and associates you with an existing Workspace. To learn how workspaces are created for different usage scenarios, see [Accessing the Platform](../../getting-started/accessing-the-platform.md)
 
@@ -64,14 +59,6 @@ Inside an app, users can access all the products for which the enterprise has li
 In the below example, only Automation AI and SearchAI enterprise licenses are offered. Contact Center and Agent licenses are not included.
 
 <img src="../images/get-started.png" alt="Get Started" title="Get Started" style="border:1px solid gray;zoom:60%;">
-
-## Plan Types
-
-The Kore.ai XO Platform offers Usage Plans for deploying and managing your App.
-
-### Usage Plans
-
-The Usage Plan enables apps to interact with your end users from any available channels.  channels. For more information, see [Usage Plans](../plan-and-usage/usage-plans.md).
 
 ## Workspace Linked to Multiple Apps
 
