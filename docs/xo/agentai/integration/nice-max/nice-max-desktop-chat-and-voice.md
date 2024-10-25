@@ -2,20 +2,20 @@
 
 This document provides detailed instructions on the integration process of the Kore.ai Agent AI widget into the NICE MAX Desktop environment. It offers step-by-step guidance to ensure a smooth and efficient setup process, covering all necessary aspects of integration from start to finish. This integration will support all outstanding features of Agent AI such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/){:target="_blank"}, [Agent Coaching](https://docs.kore.ai/agentassist/agent/agent-coaching/){:target="_blank"}, [Agent Playbook](https://docs.kore.ai/agentassist/agent/agentassist-playbook/){:target="_blank"}, [Sentiment Analysis](https://docs.kore.ai/agentassist/agent/agentassist-widget/){:target="_blank"}, [Transcription](https://docs.kore.ai/agentassist/agent/agentassist-widget/#Transcript_Tab){:target="_blank"} along with end of call summary and Custom Data passing such as agent name, ID etc to Agent AI widget.
 
-## **Shared Responsibilities**
+## Shared Responsibilities
 
-### **NICE CXOne Admin**
+### NICE CXOne Admin
 
 * **ACD Configuration:** CXOne customers are responsible for creating and mapping skills within the ACD system to ensure proper routing of interactions.
 * **Campaign Setup:** Customers must set up campaigns, including specifying routing and agent availability, on the CXOne platform.
 * **Signal API Access:** Customers must configure NICE CXOne authentication to allow Kore.ai bots to interact with CXOne’s Signal API.
 * **Agent Assist Hub Configuration:** CXOne customers are responsible for configuring the Agent Assist Hub settings within NICE Studio.
 
-### **Kore.ai Admin**
+### Kore.ai Admin
 
 * **Provide Studio Script for Chat and Voice:** Kore.ai will assist in provisioning the Studio script to ensure seamless integration with the CXOne platform.
 
-## **Prerequisites**
+## Prerequisites
 
 * NiceCX administrator having access to a NICE CX Account and with privileges to set up the below configurations and able to receive calls and chats on agent desktop.
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
@@ -23,7 +23,7 @@ This document provides detailed instructions on the integration process of the K
 * Access to Kore AgentAssist application and familiarity with creating and configuring an AgentAssist Bot.
 * Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Configure Voice Channel](https://docs.kore.ai/agentassist/channels/voice/){:target="_blank"} and [Chat](https://docs.kore.ai/agentassist/channels/chat/){:target="_blank"} for a walkthrough.
 
-## **Definitions**
+## Definitions
 
 <table>
   <tr>
@@ -171,14 +171,14 @@ For on-prem, refer to corresponding host<strong> </strong>
 
 This section explains the configuration steps needed to integrate Kore Agent AI with NICE MAX Desktop.
 
-* [NICE CX Integration Hubs, Add Agent Assist Hub](#nice-cx-integration-hubs-add-agent-assist-hub)
-* [NICE CX Studio, Import Chat and Voice Scripts and Configure Parameters](#nice-cx-studio-import-chat-voice-scripts-and-configure-parameters)
-* [NICE CX Setup, Attach Point of Contact with Chat/Voice Script](#nice-cx-setup-attach-point-of-contact-with-chatvoice-script)
-* [Access Data in Agent AI Bot](#access-custom-data-in-agent-ai-bot)
-* [Chat Simulation](#chat-simulation)
-* [Voice Simulation](#voice-simulation)
+1. [NICE CX Integration Hubs, Add Agent Assist Hub](#nice-cx-integration-hubs-add-agent-assist-hub)
+2. [NICE CX Studio, Import Chat and Voice Scripts and Configure Parameters](#nice-cx-studio-import-chat-voice-scripts-and-configure-parameters)
+3. [NICE CX Setup, Attach Point of Contact with Chat/Voice Script](#nice-cx-setup-attach-point-of-contact-with-chatvoice-script)
+4. [Access Data in Agent AI Bot](#access-custom-data-in-agent-ai-bot)
+5. [Chat Simulation](#chat-simulation)
+6. [Voice Simulation](#voice-simulation)
 
-## **Nice CX Integration Hubs > Add Agent Assist Hub**
+## Nice CX Integration Hubs > Add Agent Assist Hub
 
 1. Sign in to your **NICE** account with the user name and password provided by the NICE customer support.
 2. Click the **Applications Launcher** button.  
@@ -219,7 +219,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
 2. Click **Create**.
 
-## **NICE CX Studio > Import Chat & Voice Scripts and Configure Parameters**
+## NICE CX Studio > Import Chat & Voice Scripts and Configure Parameters
 
 1. Download the [script for chat](https://bitbucket.org/koreteam1/integration_sharedresources/src/main/nicecx/kore.ai%20-%20nice_agentassistchat.xml){:target="_blank"} / [script for voice](https://bitbucket.org/koreteam1/integration_sharedresources/src/main/nicecx/kore.ai%20-%20nice_agentassistvoice.xml){:target="_blank"} from the **Kore.ai Nice integration** repository.
 2. Open the **NICE CX Studio** app from your desktop.
@@ -265,7 +265,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 !!! note
     Do not click the “X” button to close the window as this will not save the changes. 
 
-## **NICE CX Setup > Attach Point of Contact with Chat/Voice Script**
+## NICE CX Setup > Attach Point of Contact with Chat/Voice Script
 
 1. Go to the **NICE** home page.
 2. Click the **Application Launcher** button.
