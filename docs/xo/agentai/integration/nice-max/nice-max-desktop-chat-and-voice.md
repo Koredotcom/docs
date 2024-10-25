@@ -244,7 +244,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
             2. `customdata.agentID="1234"`
 
-    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **https://home-abc.nice-incontact.com**, then the API URL would be **https://api-abc.nice-incontact.com**. Also, it is necessary to use the URLs without the trailing slash.
+    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **ht<span>tps://</span>home-abc.nice-incontact.com**, then the API URL would be **ht<span>tps://</span>api-abc.nice-incontact.com**. Also, it is necessary to use the URLs without the trailing slash.
         1. NICE CX API Access Key
         2. NICE CX API Access Key Secret
         3. NICE CX API URL
