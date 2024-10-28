@@ -4,7 +4,7 @@ The Agent Leaderboard feature allows auditors and managers to view both top and 
 
 You can view Agent Leaderboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Agent Leaderboard**.
 
-<img src="./agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+<img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 !!! Note
 
@@ -30,12 +30,12 @@ The Agent Leaderboard shows all the agents across queues and channels which incl
 
 * **Search**: This allows you to search for agents that are part of the same queues that an agent belongs to.
 
-!!! Note
+    !!! Note
 
     The agent leaderboard is set to display data from the past 7 days by default.
 
 ## **Supervisor Dashboard**
 
-Upon clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. 
+By clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. 
 
 For more information, See [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).

@@ -12,10 +12,6 @@ You can view **My Dashboard** by navigating to **Contact Center AI** > **Quality
 
 <img src="../agent-dashboard/my-dashboard-view.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
-
-If the Supervisor or Admin has not enabled the **Auto QA** and **Agent Scorecard** toggle option in the Quality AI displayed under **Settings**, then you will not be able to view the automated scoring of interactions in the Dashboard.
-
 In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:
 
 * **Today***: All interaction data for this day, in the agent’s time zone.
@@ -24,6 +20,10 @@ In this, you can filter all your interaction channels (Voice and SMS or both) by
 * **Last 28 days**: All interaction data for the previous 28 days, (not including today), in the agent’s time zone.
 * **Last 90 days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
 * **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
+
+!!! Note
+
+If the Supervisor or Admin has not enabled the **Auto QA** and **Agent Scorecard** toggle option in the Quality AI displayed under **Settings**, then you will not be able to view the automated scoring of interactions in the Dashboard.
 
 ## Overview
 
