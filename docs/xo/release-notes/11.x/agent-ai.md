@@ -5,6 +5,7 @@ This document provides information on the feature updates and enhancements intro
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Enhanced NICE MAX Desktop Integration
 

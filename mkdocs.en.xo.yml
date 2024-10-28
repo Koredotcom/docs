@@ -376,12 +376,13 @@ nav:
       - Setup Guide: quality-management/setup-guide.md 
       - Analyze:
         - Dashboard: quality-management/analyze/dashboard.md
-        - Agent Dashboard: quality-management/analyze/dashboard/agent-dashboard-supervisor-view.md
+          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
+          - Agent View: quality-management/analyze/agent-dashboard-agent-view.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
-        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md
-        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
