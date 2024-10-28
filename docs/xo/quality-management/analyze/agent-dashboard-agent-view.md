@@ -6,7 +6,7 @@ Each agent has a personalized dashboard, which is accessible to both the agents.
 
 !!! Note
 
-To log in to your agent dashboard, you must use your login credentials created or received by admin.
+    To log in to your agent dashboard, you must use your login credentials created or received by admin.
 
 You can view **My Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **My Dashboard**.
 
@@ -23,7 +23,7 @@ In this, you can filter all your interaction channels (Voice and SMS or both) by
 
 !!! Note
 
-If the Supervisor or Admin has not enabled the **Auto QA** and **Agent Scorecard** toggle option in the Quality AI displayed under **Settings**, then you will not be able to view the automated scoring of interactions in the Dashboard.
+    If the Supervisor or Admin has not enabled the **Auto QA** and **Agent Scorecard** toggle option in the Quality AI displayed under **Settings**, then you will not be able to view the automated scoring of interactions in the Dashboard.
 
 ## Overview
 

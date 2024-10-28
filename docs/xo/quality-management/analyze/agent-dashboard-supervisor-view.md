@@ -82,7 +82,7 @@ The Coaching Assignments include the following items:
 
 * **Status**: This shows three types of status for the coaching assignment, calculated based on the number of interactions opened out of those assigned (including both interactions marked for coaching and best responses) for that assignment as follows:
 
-    * **Start Now**: No interactions clicked through for that assignment. 
+    * **Start Now**: Number of interactions clicked through for that assignment. 
     
     !!! Note
         
@@ -98,7 +98,7 @@ For more information on Coaching Assignments, see [Coaching Assignments](./WidsC
 
 ### Scorecard Trend
 
-This feature displays an agent's assigned scorecards and allows supervisors to track performance trends over different periods. The scorecard trend widget shows attributes and scoring trends for each scorecard across Daily, Weekly, and Monthly time frames. Supervisors use this information to identify progress or declines and make informed coaching decisions. The agent dashboard includes a tabular scorecard trend widget to facilitate this analysis and scoring trend at an attribute level across the following time ranges (Daily, Weekly, and Monthly).
+This feature displays an agent's assigned scorecards and allows supervisors to track performance trends over different periods..The scorecard trend widget highlights attributes and scoring patterns for each scorecard on Daily, Weekly, and Monthly scales. Supervisors leverage this data to pinpoint progress or declines and to make informed coaching decisions. The agent dashboard incorporates a tabular scorecard trend widget to support this analysis, displaying scoring trends at the attribute level across Daily, Weekly, and Monthly intervals.
 
 <img src="../agent-leaderboard/images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
