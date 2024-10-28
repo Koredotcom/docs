@@ -1,6 +1,8 @@
 # Accounts or Workspaces
 
-A Workspace or Account refers to a group of users who typically belong to an organization or work on projects. When you sign up, the platform automatically creates a Workspace and a User identity. In some scenarios, the platform creates only a user identity and associates you with an existing Workspace. To learn how workspaces are created for different usage scenarios, see [Accessing the Platform](../../getting-started/accessing-the-platform.md)
+The Platform organizes users and resources through Workspaces. Each workspace functions as a container that manages users, applications, and access controls. When you join the platform, you're either joining an existing workspace or given a new one. Workspaces come in two types—Standard and Enterprise—each offering different features, usage limits, and licensing options to match your organization's needs.
+
+To learn how workspaces are created for different usage scenarios, see [Accessing the Platform](../../getting-started/accessing-the-platform.md)
 
 ## Workspace Owner
 
