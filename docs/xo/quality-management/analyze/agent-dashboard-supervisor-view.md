@@ -4,7 +4,7 @@ This feature provides a personalized dashboard for each agent, accessible by bot
 
 You can view the Supervisor view of the Agent Dashboard in the following ways:
 
-* By navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Overview**. 
+* By navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Overview**. Or,
 
 * By navigating to **Contact Center AI** > **Quality Management** > **Agent Leaderboard** > **Overview**.
 
@@ -85,7 +85,6 @@ The Coaching Assignments include the following items:
     * **Start Now**: No interactions clicked through for that assignment. 
     
     !!! Note
-
     This option is only visible to the supervisors.
        
     * **Yet to start**: Interactions for an assignment are yet to start.
