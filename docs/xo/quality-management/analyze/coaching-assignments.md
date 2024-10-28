@@ -2,14 +2,14 @@
 
 This feature assists supervisors in analyzing agent performance and identifying interactions that need targeted coaching. It provides a view of coaching assignments for a specific agent within the agent dashboard. This shows all the assigned coaching tasks of agents.
 
-You can view the Add Coaching Assignment by navigating to **Contact Center AI** > **Quality AI** > **Dashboard** > **Agent Leaderboard** > **Evaluation** > **Add Coaching Assignment**.
+You can view the Add Coaching Assignment by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Evaluation** > **Add Coaching Assignment**.
 
 ## Add Coaching Assignment
 Steps to add coaching assignments:
 
 1. Select the agent interactions to enable and assign coaching for the agent. 
 2. Click **Add Coaching Assignment**, the following screen appears.
-<img src="./agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+<img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
 3. Enter the **Name** of the coaching assignment.
 4. In the **Coaching Area**, enter the agent attributes that are selected for coaching as part of the assignment.
@@ -26,10 +26,10 @@ Steps to add coaching assignments:
 Steps to view agent interactions
 
 1. Select any of the evaluation agent groups to view the agent interactions.
-2. Right-click on the vertical ellipsis button. The following screen appears.
+2. Right-click on the vertical ellipsis button. The following screen appears.  
 <img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
-3. Click **View**. The following screen appears to view the agent **Chat History** and **Details **of the conversation selected.
+3. Click **View**. The following screen appears to view the agent **Chat History** and **Details **of the conversation selected.  
 <img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
-For more information about Agent Dashboard - Supervisor View, see .
+See [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md) for more information.

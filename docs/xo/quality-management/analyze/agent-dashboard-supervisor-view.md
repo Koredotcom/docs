@@ -2,12 +2,12 @@
 
 This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the overview section of the supervisor's Agent Dashboard, and is based on selected periods and channels (voice or chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
 
-You can view the Supervisor view of the Agent Dashboard in the following two ways:
-* By navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Overview**.
+You can view the Supervisor view of the Agent Dashboard in the following ways:
+* Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Overview**.
 
-* By navigating to **Contact Center AI** > **Quality Management** > **Agent Leaderboard** > **Overview**.
+* Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard** > **Overview**.
 
-<img src="./agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 In this, each agent will have a specific dashboard that the agents and their supervisors can access. This dashboard provides high-level metrics to the supervisors.
 
@@ -33,35 +33,35 @@ The overview tab of the supervisor view of the Agent Dashboard which is specific
 
 * **Total Interactions**: This shows the total interactions completed by the agent during the selected time. 
 
-<img src="../agent-leaderboard/images/total-interactions.png" alt="Total Interactions" title="Total Interactions" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/total-interactions.png" alt="Total Interactions" title="Total Interactions" style="border: 1px solid gray; zoom:60%;">
 
 * **Kore Evaluation Score**: This shows the average Kore evaluation score of the agent for the calls they have completed during the selected time.
 
-<img src="../agent-leaderboard/images/kore-evaluation-score.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/kore-evaluation-score.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 * **No. of Supervisor Audits**: This shows the total number of manual audits completed for the interactions completed by that agent for the selected time
 
-<img src="../agent-leaderboard/images/No-of-supervisor-audits.png" alt="No. of Supervisor Audits" title="No. of Supervisor Audits" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/No-of-supervisor-audits.png" alt="No. of Supervisor Audits" title="No. of Supervisor Audits" style="border: 1px solid gray; zoom:60%;">
 
 * **Supervisor Audit Score**: This shows the Average manual audit score for the audited interactions for the selected time.
 
-<img src="../agent-leaderboard/images/supervisor-audit-score.png" alt="Supervisor Audit Score" title="Supervisor Audit Score" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/supervisor-audit-score.png" alt="Supervisor Audit Score" title="Supervisor Audit Score" style="border: 1px solid gray; zoom:60%;">
 
 * **Total Coaching Assignments**: This shows the total number of coaching sessions assigned to the agent over a selected time.
 
-<img src="../agent-leaderboard/images/total-coaching-assignemnts.png" alt="Total Coaching Assignments" title="Total Coaching Assignments" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/total-coaching-assignemnts.png" alt="Total Coaching Assignments" title="Total Coaching Assignments" style="border: 1px solid gray; zoom:60%;">
 
 * **No. of Fails**: This shows the total count of scorecard failures for the agent over a selected time.
 
-<img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:60%;">
 
 * **Strongest Attributes**: Shows the top 5 attributes with the highest scores from the scorecards assigned to the agent during the selected time, with each attribute having a score greater than 80, listed in descending order.
 
-<img src="../agent-leaderboard/images/strongest-attributes.png" alt="Strongest Attributes" title="Strongest Attributes" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/strongest-attributes.png" alt="Strongest Attributes" title="Strongest Attributes" style="border: 1px solid gray; zoom:60%;">
 
 * **Opportunity Areas**: Shows the bottom 5 attributes with the lowest scores from the scorecards assigned to the agent during the selected time (the attribute score must be &lt; 80 to be highlighted as an opportunity area).
 
-<img src="../agent-leaderboard/images/opportunity-areas.png" alt="Opportunity Areas" title="Opportunity Areas" style="border: 1px solid gray; zoom:60%;">
+    <img src="../agent-leaderboard/images/opportunity-areas.png" alt="Opportunity Areas" title="Opportunity Areas" style="border: 1px solid gray; zoom:60%;">
 
 **Coaching Assignments**
 
