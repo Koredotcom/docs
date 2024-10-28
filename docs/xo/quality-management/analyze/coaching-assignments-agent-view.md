@@ -18,7 +18,7 @@ The Coaching Assignments page shows the following list of items:
 
 Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignmentsS.  
 
-<img src="../coaching-assignments/coaching-assignments-slideout-interactions.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+<img src="./coaching-assignments/coaching-assignments-slideout-interactions.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
 ### Interaction Marked for Coaching
 
