@@ -389,6 +389,7 @@ nav:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+        - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
       - Settings: quality-management/configure/settings.md        
   - Agent AI:
