@@ -30,11 +30,11 @@ The Agent Leaderboard shows all the agents across queues and channels which incl
 
 * **Search**: This allows you to search for agents that are part of the same queues that an agent belongs to.
 
-    !!! Note
+        !!! Note 
+    
+        The agent leaderboard is set to display data from the past 7 days by default.
 
-    The agent leaderboard is set to display data from the past 7 days by default.
-
-## **Supervisor Dashboard**
+## Supervisor Dashboard
 
 By clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. 
 
