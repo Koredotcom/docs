@@ -225,3 +225,6 @@ Steps to invite users:
 4. You can either invite individual Users or Groups.
 5. Click **Share Invite**. An invitation email is sent to the invited users.
 6. When the invited user accepts the invitation, they can access the specific app.
+
+##### Related Link
+[Accounts or Workspaces](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)

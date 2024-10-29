@@ -1,7 +1,7 @@
-## Answer Generation API
+## 回答生成 API
 
-Following  is the API provided by Search AI, allowing users to retrieve answers for a given search query.
+以下は Search AI が提供する API で、検索クエリに対する回答を取得することができます。
 
-| API            | Description                                 | App Scope         |
-|----------------|---------------------------------------------|-------------------|
-| [Answer Generation](./answer-generation.md) | To fetch answers for a query using SearchAI | Answer Generation |
+| API            | 説明                                      | アプリケーションスコープ |
+|----------------|------------------------------------------|------------------------|
+| [回答生成](./answer-generation.md) | Search AI を使用してクエリに対する回答を取得する | 回答生成 |

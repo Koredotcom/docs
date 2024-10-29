@@ -17,8 +17,8 @@ For more information on plans, features, and pricing, visit our [Plan Comparison
 
 ### Key Billing Rules
 
-* Automation AI: Billed per 15-minute of activity.
-* CCaaS: Billed per Agent Seats (named or concurrent).
+* Automation AI and Search AI: Billed per 15-minute of activity.
+* Contact Center AI and Agent AI: Billed per Agent Seats (named or concurrent).
 * Add-ons: Billed separately. 
 
 ### Product-Specific Billing Sessions
@@ -30,7 +30,6 @@ For more information on plans, features, and pricing, visit our [Plan Comparison
     * Concurrent Seats: This is based on the maximum number of simultaneously logged-in agents. For example, if a maximum of 50 agents work per shift across 3 shifts (150 total agents), you will be billed only for 50 seats.  
 * Agent AI: It’s billed per the agent seats, similar to Contact Center AI as explained above.
 * Add-ons: They are billed separately from the plan. For details, see the Add-ons and Services section on the [pricing](https://kore.ai/pricing/) page. 
-
 
 ## Navigating to Plan and Usage
 

@@ -13,7 +13,7 @@ You can view Agent Leaderboard by navigating to **Contact Center AI** > **Qualit
 The Agent Leaderboard shows all the agents across queues and channels which includes the following list of items:
 
 * **Agents**: This shows the agent name and queue that it belongs to.
-* **Agent Score Card**: This shows the number of scorecards assigned to the agent and the agent score (Across all queues).
+* **Agent Score Card**: This shows the number of scorecards assigned to the agent and the agent score (across all queues).
 
 !!! Note
 
@@ -30,12 +30,12 @@ The Agent Leaderboard shows all the agents across queues and channels which incl
 
 * **Search**: This allows you to search for agents that are part of the same queues that an agent belongs to.
 
-!!! Note
-
+!!! Note     
+    
     The agent leaderboard is set to display data from the past 7 days by default.
 
-## **Supervisor Dashboard**
+## Supervisor Dashboard
 
-Upon clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. 
+By clicking any of the agents from the **Agent Leaderboard** widget, this navigates to that agent specific dashboard metrics that the user can view. 
 
 For more information, See [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).

@@ -74,9 +74,9 @@ Steps to enable the Script Adherence Configuration:
 
         At the agent account level, the agent can only check the following options defined by the supervisor or app owner or administrator in the Settings.
 
-    * In the Conversation Intelligence Dashboard, the agent can check the post-interaction analytics, such as brand tags, greetings, questions, emotions, interactions, and so on. 
+        * In the Conversation Intelligence Dashboard, the agent can check the post-interaction analytics, such as brand tags, greetings, questions, emotions, interactions, and so on. 
 
-    * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
+        * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
 
 ## Quality Management
 
@@ -85,7 +85,7 @@ The App owners can use the Settings option under QM to enable or disable auto QA
 You can access the **Settings** - **Quality Management** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Quality Management**.  
 <img src="../images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
-The QA has the following two sections:
+The QA has the following sections:
 
 * Auto QA
 * Agent Score Card
@@ -188,4 +188,4 @@ Steps to disable Bookmarks:
 
 !!! Note
     
-    Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.
+        Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.

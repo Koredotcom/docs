@@ -375,16 +375,23 @@ nav:
       - Overview: quality-management/about-quality-management.md
       - Setup Guide: quality-management/setup-guide.md 
       - Analyze:
-        - Dashboard: quality-management/analyze/dashboard.md
+        - Dashboard: 
+          - Overview: quality-management/analyze/dashboard.md
+          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
+          - Agent View: quality-management/analyze/agent-dashboard-agent-view.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
+        - Coaching Assignments - Agent View: quality-management/analyze/coaching-assignments-agent-view.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
-        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md
-        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
+      - Coach:
+        - Coaching Monitor: quality-management/coach/coaching-monitor.md         
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+        - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
       - Settings: quality-management/configure/settings.md        
   - Agent AI:

@@ -13,6 +13,8 @@ The Billing sessions are calculated based on
 * Alerts Delivered (Alert Session)
     * Every alert delivered to a user will be counted as an Alert session. For example – If the user has set up to receive a sales report every 8 hours. In a day this user would consume 3 alert sessions.
 
+For more information, refer to [Product-specific Billing Sessions](../manage-assistant/plan-and-usage/usage-plans.md#billing-session).
+
 ## Orders & Invoices
 
 This section displays the history of Orders and Invoices and includes the fields as shown in the image:
