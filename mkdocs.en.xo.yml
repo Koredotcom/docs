@@ -385,6 +385,8 @@ nav:
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
+      - Coach:
+        - Coaching Monitor: quality-management/coach/coaching-monitor.md         
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md

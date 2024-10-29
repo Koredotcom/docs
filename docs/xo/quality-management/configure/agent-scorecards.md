@@ -188,4 +188,5 @@ Steps to delete the agent scorecard:
 
             !!! Note
 
+            
             The agent cannot delete any of the existing attributes, which is already assigned for an agent scorecard. To delete this attribute, the agent has to remove it from the assigned agent scorecard before deletion. Only the unassigned agent attribute can be deleted. Once you delete the agent attribute, the associated date will be lost.
