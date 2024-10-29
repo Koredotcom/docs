@@ -8,7 +8,7 @@ You can view Coaching Assignments by navigating to **Contact Center AI** > **Qua
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
-        To track score trends for individual attributes in Coaching Monitor across all agents, you must enable Auto QA for automated scoring of interactions.
+    To track score trends for individual attributes in Coaching Monitor across all agents, you must enable Auto QA for automated scoring of interactions.
 
 The Coaching Monitor page shows the following list of items:
 
