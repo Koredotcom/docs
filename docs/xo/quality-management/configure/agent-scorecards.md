@@ -1,6 +1,6 @@
 # Agent Scorecards
 
-Agent Scorecards allow creation of agent level evaluation criteria that relate to configured areas of performance like salesmanship, product knowledge, and so on. Attributes are created by combining relevant evaluation metrics. Furthermore, each agent in each transfer of a call gets evaluated based on all the scorecards assigned to them (One agent can have multiple scorecards assigned to them). To create scorecards, agent attributes must be created first. 
+Agent Scorecards facilitate the development of evaluation criteria at the individual agent level, focusing on configured performance areas such as salesmanship, product knowledge, and so on. Attributes are defined by integrating relevant evaluation metrics. Additionally, each agent is assessed based on all assigned scorecards during each call transfer, allowing for multiple scorecards per agent. Prior to creating scorecards, it is essential to create agent attributes.
 
 A supervisor has the following types of permissions for the agent scorecards:
 
@@ -8,20 +8,18 @@ A supervisor has the following types of permissions for the agent scorecards:
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-    !!! Note 
-
-        To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecard** toggle view option in the **Settings** of Quality Management.
+        !!! Note 
+    
+        To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecard** toggle view in the **Settings** of Quality Management.
 
 You can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.
-
-<img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
+<img src=".//sedashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 ## Create a New Agent Scorecard
 
 Steps to create a new agent scorecard:
 
-1. Click the **+New Agent Scorecard**, following default new agent scorecard screen appears.
-
+1. Click the **+New Agent Scorecard**, following default new agent scorecard screen appears.  
     <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 ### Settings
