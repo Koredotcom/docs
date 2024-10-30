@@ -1,6 +1,6 @@
 # Connector Directory
 
-SearchAI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
+Search AI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
 
 | **Connector**     | **Type of Repository** | **Supported Content for  Extractive and Generative Answers**                                                          | **Content Filtering Support** | **RACL Support** |
 |-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------|------------------|
