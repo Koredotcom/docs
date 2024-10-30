@@ -8,9 +8,9 @@ Users can view the Supervisor view of the Agent Dashboard in the following ways:
 
 * By navigating to **Contact Center AI** > **Quality Management** > **Agent Leaderboard** > **Overview**.
 
-    <img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+    <img src="./agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-In this, each agent will have a specific dashboard that the agents and their supervisors can access. This dashboard provides high-level metrics to the supervisors.
+Each agent is having a dedicated dashboard, which is accessible to both the agents and their supervisors. This dashboard presents high-level metrics for supervisors to review.
 
 The supervisor can filter all agent interaction channels (Voice and SMS) by selecting the following date ranges:
 
@@ -28,13 +28,13 @@ The supervisor can filter all agent interaction channels (Voice and SMS) by sele
 
 ## Overview
 
-This displays the selected agent dashboard metrics, which are calculated for that specific agent for the time selected and for the channel (only voice and chat) selected.  
+This displays the selected agent dashboard metrics, which are calculated for that specific agent for the time selected and for the channel (Voice and Chat) selected.  
 
-The overview tab of the supervisor view of the Agent Dashboard which is specific to each agent includes the following:
+The **Overview** tab of the supervisor view of the Agent Dashboard which is specific to each agent includes the following:
 
 * **Total Interactions**: This shows the total interactions completed by the agent during the selected time. 
 
-    <img src="../agent-leaderboard/images/total-interactions.png" alt="Total Interactions" title="Total Interactions" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-leaderboard/images/total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **Kore Evaluation Score**: This shows the average Kore evaluation score of the agent for the calls they have completed during the selected time.
 
