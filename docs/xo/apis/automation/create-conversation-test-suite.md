@@ -59,17 +59,14 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
   </tr>
   <tr>
-   <td><strong>host</strong>
-   </td>
+   <td>host</td>
    <td>Environment URL. For example,<code>https://bots.kore.ai</code>
    </td>
-   <td>Required
-   </td>
+   <td>Required</td>
   </tr>
   <tr>
-   <td><strong>StreamID</strong>
-   </td>
-   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>StreamID</td>
+   <td>The Stream ID can be accessed under <strong>General Settings</strong> on the Bot Builder.
    </td>
    <td>Required
    </td>
@@ -77,21 +74,19 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 
-
 ## Sample Request
 
-
 ```json
-curl --location --request POST \     
-'https://{{host}}/api/public/stream/:streamId/conversation/testsuite/import' \
-      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
-      --header 'bot-language: {language-code}' \
-      --header 'Content-Type: application/json' \
-      --data-raw '{
-          "fileName": "64dxxxxxxxxxxxxxxxxxxxxc", field(fileId)
-          "name": "newtestcase", 
+curl --location --request POST 'https://{{host}}/api/public/stream/{{streamId}}/conversation/testsuite/import' \
+--header 'auth: {jwt-code}' \
+--header 'bot-language: {language-code}'
+--header 'Content-Type: application/json' \
+--data-raw '{
+          "fileName": "6721ff68208caa4dffe35be4",
+          "name": "platinum",
           "tags" : [],
-          "description" : ""
+          "description" : "NewTesteCase",
+           "userEmailId" : "botowner@domain.com"
 }'
 ```
 ## Body Parameters
@@ -106,41 +101,35 @@ curl --location --request POST \
    </td>
   </tr>
   <tr>
-   <td><strong>fileName</strong>
-   </td>
+   <td>fileName</td>
    <td>File containing the conversation test suite details.
    </td>
    <td>Required
    </td>
   </tr>
   <tr>
-   <td><strong>name</strong>
-   </td>
-   <td>TestSuite Name
-   </td>
-   <td>Required
-   </td>
+   <td>name</td>
+   <td>TestSuite Name</td>
+   <td>Required</td>
   </tr>
   <tr>
-   <td><strong>tags</strong>
-   </td>
-   <td>Conversation test cases tags list.
-   </td>
-   <td>Optional
-   </td>
+   <td>tags</td>
+   <td>Conversation test cases tags list.</td>
+   <td>Optional</td>
   </tr>
   <tr>
-   <td><strong>description</strong>
-   </td>
-   <td>Test suite description
-   </td>
-   <td>Optional
-   </td>
+   <td>description</td>
+   <td>Test suite description</td>
+   <td>Optional</td>
+  </tr>
+  <tr>
+   <td>userEmailId</td>
+   <td>Email Id of the bot or account owner</td>
+   <td>Required</td>
   </tr>
 </table>
 
 ## Sample Response
-
 
 ```json
 {
