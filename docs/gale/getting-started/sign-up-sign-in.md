@@ -212,9 +212,7 @@ An alternative way is to request the <b>master admin</b> to unlock your account.
 
 When your account is locked, the status for you shows as "<b><i>Locked</i></b>" to all the admins who have added you to their account. This status update ensures that admins are aware of your restricted access and can unlock your account.
 
-If you are the admin and want to unlock a user linked to your account, click the <b><i>Unlock</i></b> button for the user on your <b>Settings</b> Console's <b>Users</b> page, as shown below.
-
-<img src="../getting-started/images/user-unlock.png" alt="locked on admin console" title="locked on admin console" style="border: 1px solid gray; zoom:75%;">
+If you are the admin and want to unlock a user linked to your account, follow the instructions given [here](../settings/user-management/users.md/#unlock-a-locked-user){:target="_blank"}.
 
 When your account is locked, you can attempt to log in using an alternative method by clicking **Login using another account**. This action redirects you to a page where you can sign in via your default SSO service, such as Google, Windows, or LinkedIn.
 
@@ -320,7 +318,8 @@ To invite a user, follow the steps below:
 2. Click **Users Management** > **Users** > **Add New User**.
 <img src="../images/add-new-user-click.png" alt="add new user" title="add new user" style="border: 1px solid gray; zoom:75%;">
 
-3. Enter the email address of the user you want to invite. To invite multiple users, type the first email address, press the **Enter** key, and enter the next email address.
+3. Click **Invite**.
+4. Enter the email address of the user you want to invite. To invite multiple users, type the first email address, press the **Enter** key, and enter the next email address.
 <img src="../images/send-invite.png" alt="send invite" title="send invite" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -333,13 +332,23 @@ To invite a user, follow the steps below:
 <li>If there is an error then the email with the issue is highlighted.</li></ul>
 </div>
 
-<ol start="4"><li>Click <b>Send invite</b>.</li></ol>
+<ol start="5">
+<li>Select an account-level system role from the dropdown list with the following options:</li>
+<ul><li><b>Viewer (default)</b>: Users can only view the modules across the platform. This is the default selection. You can select another option from the dropdown list before sending the invite or change the role on the dashboard once the user is added.</li>
+<li><b>Master Admin</b>: Users have complete control over agent and model management, user administration, integrations, security settings, and access to all core features and functionalities across all accounts.</li>
+<li><b>Admin</b>: Users can access all the account permissions except removing other users, models, billing, and agents.</li>
+<li><b>Member</b>: Users can create agents, add external models, and modify only S3 integration.</li>
+<img src="../images/select-role-during-invite.png" alt="select role" title="select role" style="border: 1px solid gray; zoom:75%;"></ul>
+</ol>
+<ol start="6">
+<li>Click <b>Send invite</b>.</li></ol>
 
 A success message appears to indicate that your invitation has been sent.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>An email invite to join your account is valid for 14 days. You must resend the invite to the user once it expires.</p>
+<p><ul><li>An email invite to join your account is valid for 15 days. You must resend the invite to the user once it expires, as discussed in the next section.</li>
+<li>Until the recipient accepts your invitation to join, the user status is set to <b><i>Inactive</i></b>. Once the invitation is accepted, the status changes to <b><i>Active</i></b>.</li></ul></p>
 </div>
 
 ## Resend Email Invitation

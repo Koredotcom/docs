@@ -7,7 +7,10 @@ To deploy your fine-tuned model, follow these steps:
 
 1. Do one of the following:
 
-    * Go to **Models** > **Fine-tuned models** and click the required model from the list. The model's **Overview** page is displayed. Click **Deploy model** at the top-right corner of the page.  
+    * Go to **Models** > **Fine-tuned models** and click the required model from the list.  
+    <img src="../images/deploy-a-fine-tuned-model-new.png" alt="Deploy-Fine-Tuned Model" title="Deploy-Fine-Tuned Model" style="border: 1px solid gray; zoom:80%;"> 
+    
+    The model's **Overview** page is displayed. Click **Deploy model** at the top-right corner of the page.  
     <img src="../images/deploy-fine-tuned-model.png" alt="Deploy-Fine-Tuned Model" title="Deploy-Fine-Tuned Model" style="border: 1px solid gray; zoom:80%;">
 
     Or

@@ -22,30 +22,36 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
 <li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
+<div class="admonition warning">
+<p class="admonition-title">Universal Metadata</p>
+<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module and category specific metadata listed in the tables below.</p></div>
+
 <table>
-  <tr>
-   <td>
-<strong>Category</strong>
+    <tr>
+   <td colspan="3" align="center"><strong>Category</strong>: Login/Logout
    </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><b>Metadata</b>: <strong><i>Email ID</i></strong> is displayed for all the category events below.
+   </td>
+  </tr>
+    <tr>
    <td><strong>Event</strong>
    </td>
    <td><strong>Description</strong>
    </td>
-   <td><strong>Metadata</strong>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td rowspan="2" ><b>Login/Logout</b></td>
    <td>Login
    </td>
    <td>Tracks the account login activity.
    </td>
    <td>
 <ul>
-
-<li>Email ID</li>
-<li>IP Address</li>
-<li>User ID</li>
+<li>Login method
+</li>
 </ul>
    </td>
   </tr>
@@ -54,34 +60,36 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the account logout activity.
    </td>
-   <td>
-<ul>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  </table>
 
-<li>Email ID</li>
-<li>IP Address</li>
-<li>User ID
-</li>
-</ul>
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Roles
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <strong><i>Role ID</i></strong> is displayed for all the category events below, except <em>Role Changed</em>.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td rowspan="5" > 
-<p>
-<b>Roles</b>
-   </td>
-   <td>Role edited
+          <td>Role edited
    </td>
    <td>Tracks the edits done to a custom role.
    </td>
-   <td>
-<ul>
-
-<li>IP Address</li>
-<li>User ID</li>
-
-<li>Role ID
-</li>
-</ul>
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
@@ -89,16 +97,9 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the creation of custom roles.
    </td>
-   <td>
+   <td rowspan="2" >
 <ul>
-
-<li>IP Address
-
-<li>User ID
-
-<li>Role ID
-
-<li>Role Name
+<li>Role Type
 </li>
 </ul>
    </td>
@@ -108,115 +109,79 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the deletion of custom roles.
    </td>
-   <td>
-<ul>
-
-<li>IP Address
-
-<li>User ID
-
-<li>Role Name
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Role assigned
-   </td>
-   <td>Tracks the assignment of custom/system roles to member users.
-   </td>
-   <td>
-<ul>
-
-<li>IP Address
-
-<li>User ID
-
-<li>Role Name
-</li>
-</ul>
-   </td>
   </tr>
   <tr>
    <td>Role changed
    </td>
-   <td>Tracks the role changes made for member users.
+   <td>Tracks the role changes made for member users. This also includes role  changes for multiple users (bulk change).
    </td>
-   <td>
-<ul>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  </table>
 
-<li>IP Address
-
-<li>User ID
-
-<li>Role Name
-</li>
-</ul>
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Integrations
+   </td>
+   </tr>
+  <tr>
+  <td colspan="3"><b>Metadata</b>: <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, and <b><i>Integration Type</i></b> are displayed for all the category events below.</td></tr>
+        <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td rowspan="2" ><b>Integrations</b>
-   </td>
    <td>Integration added
    </td>
-   <td>Tracks integration additions to the account.
+   <td>Tracks integrations added by the user to the account.
    </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Integration Name
-
-<li>Integration ID
-
-<li>Integration Type
-</li>
-</ul>
-   </td>
-  </tr>
+   <td rowspan="2" align="center">-</td>
+   </tr>
   <tr>
    <td>Integration deleted
    </td>
    <td>Tracks integration deletions in the account.
    </td>
-   <td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Models
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3">
+   <p><b>Metadata</b>:</p>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Integration Name
-
-<li>Integration ID
-
-<li>Integration Type
+<li><strong><i>Model ID</i></strong> and <strong><i>Model Name</i></strong> are displayed for all the <em>Model</em> category events.
+<li><strong><i>Model Type</i></strong> is displayed for <em>Model Deleted</em>, <em>API Key created</em>, <em>API Key deleted</em>, <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed </em>events.
+<li><strong><i>Hardware Type</i></strong> is displayed for <em>Model Finetuning</em>, <em>Model Deployed</em>, and <em>Model Undeployed</em> events.
 </li>
 </ul>
    </td>
   </tr>
-  <tr>
-   <td rowspan="7" ><b>Models</b>
+   <tr>
+   <td><strong>Event</strong>
    </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Model added(external models only)
    </td>
    <td>Tracks the addition of external models to the account.
    </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Model ID
-
-<li>Model Name
-</li>
-</ul>
+   <td rowspan="4" align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -224,42 +189,26 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks the deletion of external models from the account.
    </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Model ID
-
-<li>Model Name
-
-<li>Model Type
-</li>
-</ul>
+  </tr>
+  <tr>
+   <td>API Key created
+   </td>
+   <td>Tracks the creation of an API key for a model in the account.
    </td>
   </tr>
   <tr>
-   <td>Started fine-tuning
+   <td>API Key deleted
    </td>
-   <td>Tracks the model fine-tuning start activity in the account.
+   <td>Tracks the deletion of an API key for a model by the account user.
+   </td>
+  </tr>
+  <tr>
+   <td>Model Finetuning
+   </td>
+   <td>Tracks the finetuning process for models done by the account user.
    </td>
    <td>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Model ID
-
-<li>Model Name
-
-<li>Model Type
-
-<li>Hardware type
-
 <li>Training method
 
 <li>No. of epochs
@@ -280,22 +229,10 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Model deployed
    </td>
-   <td>Tracks the open-source model deployments done in the account.
+   <td>Tracks the open-source model deployments in the account.
    </td>
    <td>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Model ID
-
-<li>Model Name
-
-<li>Model Type
-
-<li>Hardware Type
 
 <li>Temperature
 
@@ -323,109 +260,63 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Model undeployed
    </td>
-   <td>Tracks the opensource model undeployments done in the account.
+   <td>Tracks the opensource model undeployments in the account.
    </td>
    <td>
 <ul>
 
-<li>User ID
+<li> Hours of usage
 
-<li>IP Address
+<li> Temperature
 
-<li>Model ID
-
-<li>Model Name
-
-<li>Model Type
-
-<li>Hardware Type
-
-<li>Hours of Usage
-
-<li>Temperature
-
-<li>Max Length
+<li>Max length
 
 <li>Top p
 
 <li>Top k
 
-<li>Stop Sequence
+<li> Stop sequence
 
-<li>Inference Batch Size
+<li>Inference batch size
 
-<li>Min Replicas
+<li>Min replicas
 
-<li>Max Replicas
+<li>Max replicas
 
-<li>Scale up Delay
+<li>Scale up delay
 
-<li>Scale down Delay
+<li>Scale down delay
+
 </li>
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
   <tr>
-   <td>API Key created
+     <td colspan="3" align="center"><strong>Category</strong>: Agents
    </td>
-   <td>Tracks the creation of an API key for a model in the account.
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <strong><i>Agent ID</i></strong> and <strong><i>Agent Name</i></strong> are displayed for all the category events below.
    </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Model ID
-
-<li>Model Name
-
-<li>Model Type
-</li>
-</ul>
+  </tr>
+     <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
    </td>
   </tr>
   <tr>
-   <td>API Key deleted
-   </td>
-   <td>Tracks the deletion of an API key for a model in the account.
-   </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Model ID
-
-<li>Model Name
-
-<li>Model Type
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" ><b>Agents</b>
-   </td>
-   <td> Agent created
+   <td>Agent created
    </td>
    <td>Tracks the creation of an agent in the account.
    </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Agent ID
-
-<li>Agent Name
-</li>
-</ul>
+   <td align="center">
+   -
    </td>
   </tr>
   <tr>
@@ -436,14 +327,6 @@ Additionally, you can set **custom filters** based on a specific category, event
    <td>
 <ul>
 
-<li>User ID
-
-<li>IP Address
-
-<li>Agent ID
-
-<li>Agent Name
-
 <li>Model ID
 
 <li>Model Name
@@ -453,22 +336,29 @@ Additionally, you can set **custom filters** based on a specific category, event
 </ul>
    </td>
   </tr>
-  <tr>
-   <td rowspan="2" ><b>User Management</b>
+  </table>
+
+  <table>
+    <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Users Management
    </td>
+   </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>User invited
    </td>
    <td>Tracks the invitation of new users to the account.
    </td>
    <td>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
 <li>Added User IDs
-
 <li>Role Name
 
 <li>Role ID
@@ -483,100 +373,167 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
 <li>Removed User IDs
 </li>
 </ul>
    </td>
   </tr>
+  </table>
+
+  <table>
+      <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Prompts
+   </td>
+   </tr>
   <tr>
-   <td rowspan="2" ><b>Playground</b>
-   </td>
-   <td>Experiment created
-   </td>
-   <td>Tracks the creation of an experiment in the account.
-   </td>
-   <td>
+   <td colspan="3">
+   <p><b>Metadata</b>:</p>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Experiment ID
-
-<li>Experiment Name
+<li><strong><i>Prompt ID</i></strong> is displayed for all the <em>Prompts </em>category events.
+<li><strong><i>Prompt Name</i></strong> is displayed for <em>Prompt created</em>, <em>Versions Committed</em>, <em>Versions Restored</em>, <em>Prompt Shared</em>, <em>Endpoint Copied</em>, and <em>API Key Created </em>category events.
+</li>
+</ul>
+   </td>
+  </tr>
+   <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Prompt created
+   </td>
+   <td>Tracks the creation of a prompt by the account user.
+   </td>
+   <td rowspan="2" align="center">
+   -
+   </td>
+  </tr>
+  <tr>
+   <td>Prompt deleted
+   </td>
+   <td>Tracks the deletion of a prompt by the account user.
+   </td>
+  </tr>
+  <tr>
+   <td>Versions committed
+   </td>
+   <td>Tracks the prompt versions committed by the account user.
+   </td>
+   <td rowspan="2" >
+<ul>
+<li>Version Name
 </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td>Experiment deleted
+   <td>Version Restored
    </td>
-   <td>Tracks the deletion of an experiment in the account.
+   <td>Tracks the prompt version restored by the account user.
    </td>
-   <td>
+  </tr>
+  <tr>
+   <td>Prompt Shared
+   </td>
+   <td>Tracks the prompts shared by the account user with other users.
+   </td>
+   <td rowspan="3" align="center">
+   -
+   </td>
+  </tr>
+  <tr>
+   <td>Endpoint Copied
+   </td>
+   <td>Tracks the prompt endpoint copy done by the account user.
+   </td>
+  </tr>
+  <tr>
+   <td>API Key Created
+   </td>
+   <td>Tracks the API key creation for the prompt endpoint by the account user.
+   </td>
+  </tr>
+  <tr>
+   <td>Generated Test Data
+   </td>
+   <td>Tracks the generation of test data by the account user.
+   </td>
+   <td rowspan="2" >
 <ul>
 
-<li>User ID
-
-<li>IP Address 
-
-<li>Experiment ID
-
-<li>Model Name
+<li>Model name
 
 <li>Model ID
 
-<li>Model Type
+<li>Tokens Consumed
 </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><b>Dataset</b>
+   <td>Generated Prompt
    </td>
+   <td>Tracks the prompt generation done by the accout user.
+   </td>
+  </tr>
+  </table>
+
+  <table>
+      <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Dataset
+   </td>
+   </tr>
+   <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Dataset uploaded
    </td>
    <td>Tracks the dataset uploads in the account.
    </td>
    <td>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
 <li>File type(extension)
 </li>
 </ul>
    </td>
   </tr>
-  <tr>
-   <td rowspan="2" ><b>Guardrails</b>
+  </table>
+
+  <table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Guardrails
    </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: <strong><i>Guardrail Name</i></strong>, <strong><i>Guardrail ID</i></strong>, and <strong><i>Hardware Type</i></strong> are displayed for all the category events below.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
    <td>Guardrails deployed
    </td>
    <td>Tracks the guardrails deployment in the account.
    </td>
-   <td>
-<ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Guardrail Name
-
-<li>Guardrail ID
-
-<li>Hardware Type
-</li>
-</ul>
+   <td align="center">
+    -
    </td>
   </tr>
   <tr>
@@ -586,16 +543,6 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>
 <ul>
-
-<li>User ID
-
-<li>IP Address
-
-<li>Guardrail Name
-
-<li>Guardrail ID
-
-<li>Hardware Type
 
 <li>Time of Usage
 </li>
@@ -746,3 +693,6 @@ By default, the current day will be set as the end date. This feature allows you
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
 
+For more help or information on <b>Audit Logs</b>, [contact](https://kore.ai/support/){:target="_blank"} our technical support team.
+
+[Learn more](../settings-overview.md){:target="_blank"} about other features on the <b>Settings</b> Console.

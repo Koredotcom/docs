@@ -1,6 +1,10 @@
 # Role Management 
 
-GALE’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. Thus, the roles can be classified based on role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+GALE’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. 
+
+Thus, the roles can be classified based on role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+
+When you [invite](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}/add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
 **Key Points**
 
@@ -171,7 +175,7 @@ For example, a custom role, “_Banking Agent Conversation Moderator_,” can be
 <img src="../images/custom-role-listing.png" alt="custom role listing" title="custom role listing" style="border: 1px solid gray; zoom:80%;">
 
 * You cannot delete a custom role if it is currently assigned to active users or included in an email invitation. The system displays an error message, as shown in the screenshot below.
-<img src="../images/error-custom-role.png" alt="error custom role deletion" title="error custom role deletion" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/error-custom-role.png" alt="error custom role deletion" title="error custom role deletion" style="border: 1px solid gray; zoom:50%;">
 
 To proceed, you must first unassign the role or assign an alternative role to these users, and then you can delete the custom role.
 

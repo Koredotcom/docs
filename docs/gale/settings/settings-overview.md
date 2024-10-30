@@ -2,13 +2,12 @@
 
 GALE’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage GALE’s system configurations to manage the following:
 
-* Users
-* [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
-* [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
-* Integrations
-* Manage Guardrails 
-* Monitoring 
-  * Audit Logs
+1. [Users](../settings/user-management/users.md){:target="_blank"}
+2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
+3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
+4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
+5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 
 ## Levels of Users Management 
 
@@ -18,11 +17,11 @@ The **Settings** Console provides administrators comprehensive control and visib
 
 * **Agent level**: User management within the GALE platform is focused on agent management, emphasizing individual agent deployments and configurations. Each agent's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting agents, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
 
-This post describes how to access the **Settings Console** and summarizes the modules and features available.
+This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only users included as Admin in the system with the required permissions can access the Settings Console.</p>
+<p>Only users included as <b>Admin</b> in the system with the required permissions can access the <b>Settings</b> Console.</p>
 </div>
 
 ## Actions You Can Perform on the Settings Console
@@ -31,11 +30,14 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Users**
 
-* Add a new user to your account via email invitation or user information file import.
-* View the summary of counts for total, active, inactive, and locked users.
-* View the list of all the users in your account and their details like Name, Email ID, Account Role, and Status.
-* Select and delete one or multiple users from your account.
-* Unlock locked users.
+* Add a new user to your account and assign a system role to them via email invitation or user information file import.
+* View and track the summary of counts for total, active, inactive, and locked users.
+* View the details of all the users linked to your account like Name, Email ID, Account Role, and Status.
+* Select and delete one or more users from your account.
+* Unlock the locked users.
+* Reassign a default or custom role to a user.
+
+[Learn more](../settings/user-management/users.md){:target="_blank"} about this feature.
 
 **Roles and Permissions**
 
@@ -44,7 +46,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * View the enabled/disabled access controls for various modules and permissions for system roles.
 * Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
 
-[Learn more](../settings/user-management/role-management.md)
+[Learn more](../settings/user-management/role-management.md){:target="_blank"} about this feature.
 
 **Settings**
 
@@ -62,17 +64,24 @@ Additionally, you can do the following:
 * Configure how joining requests from new users are handled, including automatic approval options.
 * Choose whether users should receive email notifications upon being added to your account via email invitation or AD sync.
 
+[Learn more](../settings/user-management/settings/active-directory.md){:target="_blank"} about this feature.
+
 **Integrations**
 
-Integrate connections for Weights & Biases, AWS S3 Bucket, and Hugging Face using API or App credentials.
+Integrate connections for [Weights & Biases](../settings/integrations/integrate-with-wandb.md){:target="_blank"}, [AWS S3 Bucket](../settings/integrations/integrate-with-s3-bucket.md){:target="_blank"}, and [Hugging Face](../settings/integrations/enable-hugging-face.md){:target="_blank"} using API or App credentials. 
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all agents.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all agents. [Learn more](../agents/guardrails/manage-guardrails.md){:target="_blank"}.
+
+**Monitoring**
+
+- Track the audit logs of user actions within your account to gain insights into their activities. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
+- Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard.
 
 ## Access Settings Console
 
-To access the **Settings Console** on GALE, follow the steps below:
+To access the **Settings** Console on GALE, follow the steps below:
 
 1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials.
 
@@ -83,7 +92,7 @@ The system redirects to the **Users** page under **Users Management** on the **S
 
 ## Modules and Features
 
-The following modules and features are supported on the Settings Console:
+The following modules and features are supported on the **Settings** Console:
 
 <table>
   <tr>
@@ -97,7 +106,7 @@ The following modules and features are supported on the Settings Console:
   <tr>
    <td><b>Users Management</b></td>
    <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, agents, and models.</p>
-<p>Manage user settings for AD sync, profile visibility and configuration, self-signup for enterprise users, and email notifications to users.</p></td>
+<p>Manage user settings for AD sync, profile visibility and configuration, and email notifications to users.</p></td>
 <td><p><strong>Users</strong></p>
 <ul>
 <li>All users across your enterprise network accounts are listed here.</li> 
@@ -125,10 +134,9 @@ The following modules and features are supported on the Settings Console:
 
 <p><strong>Settings</strong></p>
 <ul>
-<li><strong>Active Directory</strong>: Configure and connect your organization's AD to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.</li>
+<li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across GALE. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Self sign up for enterprise users</strong>: Configure if new users from your domain can request to join this account.</li>
 <li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
 </li>
 </ul>
@@ -172,4 +180,6 @@ The following modules and features are supported on the Settings Console:
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
 </table>
+
+
 

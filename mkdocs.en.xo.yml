@@ -218,7 +218,7 @@ nav:
           - Introduction: automation/knowledge-ai/knowledge-graph-overview.md
           - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
           - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: automation/knowledge-ai/manage-faqs.md
+          - Manage KG: automation/knowledge-ai/manage-faqs.md
           - Knowledge Extraction: automation/knowledge-ai/knowledge-extraction.md
           - Import or Export KG:
             - Prepare Data for Import: automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
@@ -275,6 +275,10 @@ nav:
         - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
         - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
         - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
+    - Knowledgebase:
+      - New vs. Returning Users: kb/new-and-returning-users.md
+      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
+      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -371,16 +375,25 @@ nav:
       - Overview: quality-management/about-quality-management.md
       - Setup Guide: quality-management/setup-guide.md 
       - Analyze:
-        - Dashboard: quality-management/analyze/dashboard.md
+        - Dashboard: 
+          - Overview: quality-management/analyze/dashboard.md
+          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
+          - Agent View: quality-management/analyze/agent-dashboard-agent-view.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
+        - Coaching Assignments - Agent View: quality-management/analyze/coaching-assignments-agent-view.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
+      - Coach:
+        - Coaching Monitor: quality-management/coach/coaching-monitor.md         
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+        - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
-        - Settings: quality-management/configure/settings.md
+      - Settings: quality-management/configure/settings.md        
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -392,11 +405,13 @@ nav:
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
+        - Configure Auto Summarization with Custom Dialog Tasks: agentai/configuration/configure-auto-summarization-with-custom-dialog-tasks.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
+      - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
@@ -559,6 +574,7 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
       - Manage Users: user-management/manage-users.md
       - Manage Role and Permissions: user-management/role-management.md
@@ -594,6 +610,9 @@ nav:
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
+    - Billing & Payments:
+      - Plan & Usage: manage-assistant/plan-and-usage/usage-plans.md
+      - Invoices: manage-assistant/plan-and-usage/invoices.md
     - Admin Console:
       - Introduction to Admin Console: administration/adminconsole.md
       - Administration Dashboard: administration/dashboard-bac.md

@@ -2,6 +2,23 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.6.1 October 21, 2024
+
+<u> Patch Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Bot Admin Console
+#### Enhanced Audit Report
+
+The Audit Report is enhanced to provide better user tracking and accountability. A user email column is added to the audit logs table along with the existing user name as a unique identifier and is also included in the exported audit report. Column names are updated for consistency across the UI and exported files. These enhancements allow for more precise identification of users who made changes, improving traceability and simplifying troubleshooting processes.
+
+Backward compatibility: User email will be available only for new audit entries, not for existing data.
+
+[Learn more :octicons-arrow-right-24:](../../administration/analytics.md){:target="_blank"}
+
+<hr>
+
 ## v11.6.0 September 28, 2024
 
 <u> Minor Release </u>

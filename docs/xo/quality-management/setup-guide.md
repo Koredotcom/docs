@@ -7,7 +7,7 @@ Follow these steps:
 
 1. Configure Quality AI permissions:
 
-    1. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**.
+    1. Navigate to **User Management** > **Role Management** > **New Role** > **Other Modules**.
     <br>(Only the app owner has access to Role Management).</br>
 
     2. Assign relevant roles (Supervisor role) or create custom roles with Quality AI permissions.

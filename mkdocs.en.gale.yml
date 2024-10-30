@@ -133,6 +133,10 @@ nav:
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Agent Endpoint: 
       - Deploy an Agent: agents/deploy-an-agent.md
+    - Agent Monitor: 
+      - About Agent Monitor: agents/agent-monitor/about-agent-monitor.md
+      - Accessing Agent Monitor: agents/agent-monitor/accessing-agent-monitor.md
+      - Understanding Agent Monitor: agents/agent-monitor/understanding-the-agent-monitor-interface.md
     - API Keys: 
       - Create an API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
@@ -176,7 +180,8 @@ nav:
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 
-      - About User Management: settings/user-management/overview.md
+      - Overview: settings/user-management/overview.md
+      - Users: settings/user-management/users.md
       - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-a-user-to-your-account
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
@@ -186,6 +191,5 @@ nav:
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
-      - Audit Logs: settings/monitoring/audit-logs.md
-        
+      - Audit Logs: settings/monitoring/audit-logs.md      
    

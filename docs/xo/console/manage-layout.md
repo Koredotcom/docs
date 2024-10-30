@@ -108,15 +108,14 @@ Steps to check your video device:
 
 **Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and hardware access through a loopback connection to our telephony infrastructure.
 
+**Connectivity and Bandwidth Tests**: This test verifies hardware access and establishes a loopback connection to the telephony infrastructure to assess the client's network connectivity.
+
 Steps to perform the connectivity and bandwidth tests:
 
-1. Select the **Edge Location** and **Codec Preferences** from the dropdowns on the **Connectivity** tab. You can choose up to three edge locations for testing.  
-<img src="../images/connectivity-selections.png" alt="Connectivity Selections" title="Connectivity Selections" style="border: 1px solid gray; zoom:90%;">
+1. Click **Start Test**. The progress is displayed.  
+<img src="../images/start-test.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
 
-2. Click **Start Test**. The progress is displayed for each edge location.  
-<img src="../images/start-test-connectivity.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
-
-3. The **Expected Call Quality** for each edge location is displayed along with detailed test results once the tests are completed. You can copy the results by clicking **Copy Results**.  
+2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.
 <img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
 
 ## Features

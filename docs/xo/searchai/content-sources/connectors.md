@@ -67,6 +67,7 @@ You can verify the permissions imported in the ingested content in the <code>sou
 
 For more information on RACL implementation in Search AI, refer to [this](./racl-support.md). 
 
+
 ### Ingesting Content
 
 By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 

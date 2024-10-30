@@ -2,6 +2,33 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.6.1 October 21, 2024
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Kore Voice Gateway
+
+#### Automatic IP Address Resolution for Fully Qualified Domain Names (FQDNs)
+
+Kore Voice Gateway now automatically resolves IP addresses for specific Fully Qualified Domain Names (FQDNs), simplifying network configuration and secure domain access management.
+
+Key benefits:
+
+* Ease of use: Add FQDNs directly without manually entering multiple IP addresses for whitelisting.
+* Efficiency: Reduces the need for ongoing manual updates as IP addresses change or expand for the associated domain.
+
+#### Improved Welcome Event Handling
+
+The “Reject calls with a delayed first response” setting allows admins to configure call handling for smoother user experiences. When enabled, the welcome event triggers only after the Conversation Server successfully sends the first message, eliminating dead air during call connections. This ensures more reliable call handling and improves customer interactions with the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/reject-calls-with-delayed-first-response.md)
+
+#### Nuance ASR and TTS No Longer Supported
+
+Contact Center AI no longer supports Nuance Automatic Speech Recognition (ASR) and Text-to-Speech (TTS).
+
+<hr>
+
 ## v11.6.0 September 28, 2024
 
 <u> Minor Release </u>

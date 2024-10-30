@@ -1,34 +1,31 @@
+# AIチャットボットのトレーニングのベストプラクティス
 
-# Best Practices for Training Your AI Chatbot
+AIチャットボットをトレーニングして、お客様からの特定の質問に対して正確な回答を提供することができます。以下のベストプラクティスを参考にしてください：
 
-You can train your AI Chatbot to provide exact answers to specific questions from customers. Consider the following best practices for training your Chatbot:
+1. **FAQ**（よくある質問）
+    * FAQは、お客様や訪問者から最もよく寄せられる質問です。最も一般的な質問とその簡潔な回答を追加してください。
+    * お客様がセルフサービスで解決できるよう、回答に迅速な解決策を提供してください。
+    * ベストプラクティス：
+        * 様々なチャネルから主要な質問を収集する
+        * お客様の意思決定プロセスに基づいて予想される質問を想定する
+        * サポートチームからの意見を求める
+        * シンプルな言葉で簡潔な回答を心がける
+        * 各主要質問に対して別の表現方法を追加する
+        * 詳細情報へのリンクを含める
+        * FAQを定期的に更新する
 
-1. **FAQs** (Frequently Asked Questions)
-    * FAQs are the most frequently asked questions by customers and visitors. Add the most common questions and their brief answers.
-    * Provide quick solutions in the answers for customers to self-serve
-    * Best practices:
-        * Collect top questions from various channels
-        * Anticipate customer queries based on their decision-making journey
-        * Seek input from your Support team
-        * Keep language simple and answers concise
-        * Add alternate questions for each primary question
-        * Include relevant links for more information
-        * Regularly update FAQs
+2. **ドキュメントからの生成AI回答**
+    * 関連文書（ポリシー、利用規約など）をアップロードする
+    * AIチャットボットは質問を分析し、文書から関連コンテンツを見つけ、生成AIを使用して回答を生成します。文書をアップロードすると、チャットボットは自動的にトレーニングされ、文書からの質問に回答できるようになります。
+    * FAQにない詳細な回答を提供する際に有用です
+    * 文書準備のベストプラクティス：
+        * オンボーディング時は、ファイルサイズを5MBまでに制限してください（オンボーディング後は、プランによってファイルサイズの制限が異なります - Essentialプランは最大100MB、Advancedプランは最大300MB）
+        * シングルカラム形式と明確なセクション見出しを使用する
+        * スキャンしたPDF、暗号化ファイル、圧縮PDFは含めないでください
 
-2. **Generative AI Answers from Documents**
-    * Upload relevant documents (e.g., policies, terms & conditions)
-    * AI Chatbot analyzes the question, finds relevant content from the documents, and generates answers using Generative AI. The Chatbot is automatically trained after uploading the documents to make it capable of answering questions from the documents.
+3. **FAQとドキュメントからの生成AI回答の比較**
+    * FAQとドキュメントからの生成AI回答はどのように連携しますか？  
+    まず、チャットボットはドキュメントからAI回答を生成します—アップロード/追加された文書から生成AIを使用して回答を探します。文書に回答がない場合は、自動化AI（ダイアログタスク/FAQ）を使用してお客様の質問に回答します。つまり、デフォルトの順序は、最初にドキュメントからの生成AI回答、次に自動化（FAQ）となります。このデフォルトの順序はアプリ設定から変更できます。[詳細はこちら](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration)
 
-    * Useful for providing more detailed answers not found in FAQs
-    * Best practices for document preparation:
-        * During onboarding, limit files to 5MB. (After onboarding, the file size limit depends on your plan - 100MB max for Essential, 300MB max for Advanced.)
-        * Use single-column format and clear section headings.
-        * Do not include scanned PDFs, encrypted files, or compressed PDFs.
-
-3. **FAQs vs. Generative AI Answers from Documents**
-    * How FAQs and Generative AI Answers from Documents Work Together?  
-    First, your  Chatbot will generate AI Answers from Documents—it will look for answers in the uploaded/added documents using Generative AI. If the documents don’t have an answer, it will use Automation AI (Dialog Tasks/FAQs) to answer customer questions. So, the default order is - Generative AI Answers from Documents first and Automation (FAQs) second. You can change the default order from the App Settings. [Learn more](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration).
-
-    * How to Avoid Conflict Between FAQs and Generative AI Answers from Documents?  
-    To ensure your Chatbot generates answers from documents, avoid adding questions on the same topic to your FAQs. If a question exists in the FAQs, the  Chatbot will always prioritize the FAQ response over searching the documents. For example, if you have a detailed document about your return policies, don't add a question like "What is your return policy?" to the FAQs. This allows the  Chatbot to use the comprehensive document to answer customer questions instead of relying on a potentially incomplete FAQ answer.
- 
+    * FAQとドキュメントからの生成AI回答の競合を避けるには？  
+    チャットボットが文書から回答を生成できるようにするため、同じトピックに関する質問をFAQに追加することは避けてください。FAQに質問が存在する場合、チャットボットは常に文書の検索よりもFAQの回答を優先します。例えば、返品ポリシーに関する詳細な文書がある場合、「返品ポリシーはどのようなものですか？」といった質問をFAQに追加しないでください。これにより、チャットボットは不完全なFAQ回答に頼るのではなく、包括的な文書を使用してお客様の質問に回答することができます。
