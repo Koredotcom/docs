@@ -1,6 +1,6 @@
-# Agent Dashboard - Agent View
+# Agent Dashboard (My Dashboard) - Agent View
 
-My Dashboard is the Agent Dashboard for agents’ view, which offers detailed insights into your activity and performance as an agent.
+**My Dashboard** is the Agent Dashboard for agents’ view, which offers detailed insights into your activity and performance as an agent.
 
 Each agent has a personalized dashboard, which is accessible to both the agents. In this, the agents can view their performance through scorecards provided by their supervisors. This setup allows agents to take appropriate actions based on their performance metrics.
 
@@ -8,8 +8,7 @@ Each agent has a personalized dashboard, which is accessible to both the agents.
 
     To log in to your agent dashboard, you must use your login credentials created or received by admin.
 
-You can view **My Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **My Dashboard**.
-
+Users can view **My Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **My Dashboard**.
 <img src="../agent-dashboard/my-dashboard-view.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:

@@ -2,7 +2,7 @@
 
 This feature assists supervisors in analyzing agent performance and identifying interactions that need targeted coaching. It provides a view of coaching assignments for a specific agent within the agent dashboard. This shows all the assigned coaching tasks of agents.
 
-You can view the Add Coaching Assignment by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Evaluation**.  
+Users can view and add Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Evaluation**.  
 <img src="../coaching-assignments/add-coaching-assignments.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
 ## Add Coaching Assignment
