@@ -1,8 +1,8 @@
 # Agent Dashboard - Supervisor View
 
-This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the overview section of the supervisor's Agent Dashboard, and is based on selected periods and channels (voice or chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
+This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the overview section of the supervisor's Agent Dashboard, and is based on selected periods and channels (Voice or Chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
 
-You can view the Supervisor view of the Agent Dashboard in the following ways:
+Users can view the Supervisor view of the Agent Dashboard in the following ways:
 
 * By navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Overview**. Or,
 
@@ -85,7 +85,7 @@ The Coaching Assignments include the following items:
     * **Start Now**: Number of interactions clicked through for that assignment. 
     
     !!! Note
-        
+            
         This option is only visible to the supervisors.
        
     * **Yet to start**: Interactions for an assignment are yet to start.
