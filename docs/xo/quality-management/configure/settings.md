@@ -188,4 +188,4 @@ Steps to disable Bookmarks:
 
 !!! Note
     
-        Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.
+    Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.
