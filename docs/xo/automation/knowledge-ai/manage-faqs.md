@@ -1,10 +1,11 @@
-# Manage FAQs
+# Manage Knowledge Graph
 
 FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms. This feature improves intent recognition and increases the performance of your VA.
 
 !!! Warning "Important"
 
-    There is a limit of 50k FAQs over 20k nodes to avoid performance issues.
+    * The **Manage KG** option is available only for enterprise accounts.
+    * There is a limit of 50k FAQs over 20k nodes to avoid performance issues.
 
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
 

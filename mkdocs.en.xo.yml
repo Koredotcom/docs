@@ -218,7 +218,7 @@ nav:
           - Introduction: automation/knowledge-ai/knowledge-graph-overview.md
           - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
           - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: automation/knowledge-ai/manage-faqs.md
+          - Manage KG: automation/knowledge-ai/manage-faqs.md
           - Knowledge Extraction: automation/knowledge-ai/knowledge-extraction.md
           - Import or Export KG:
             - Prepare Data for Import: automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
