@@ -5,7 +5,7 @@
 Each agent has a personalized dashboard, which is accessible to both the agents. In this, the agents can view their performance through scorecards provided by their supervisors. This setup allows agents to take appropriate actions based on their performance metrics.
 
 Users can view **My Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **My Dashboard**.  
-<img src="../agent-dashboard/my-dashboard-view.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
+<img src="../agent-dashboard/coaching-assignments-agent-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:
 
@@ -69,7 +69,7 @@ The widget presents attribute-level scoring trends across daily, weekly, and mon
 
 **Note**: If no interactions scored for an agent are found or for a given scorecard have not been assessed by the supervisor, the widget will be blank.
 
-<img src="../agent-dashboard/my-dashboard-scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
+<img src="./agent-dashboard/my-dashboard-scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 #### Avg. Scorecard Score
 

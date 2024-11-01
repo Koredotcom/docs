@@ -6,8 +6,8 @@ Users can access the Supervisor view of the Agent Dashboard in the following way
 
 **Step 1:**
 
-1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.  
-<img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.   
+<img src="../agent-leaderboard/images/dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.  
 <img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
@@ -15,7 +15,7 @@ Users can access the Supervisor view of the Agent Dashboard in the following way
 **Step 2:**
 
 3. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
-<img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+<img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.   
 <img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
@@ -97,7 +97,7 @@ The Coaching Assignments include the following items:
 
 ### Scorecard Trend
 
-This feature displays an agent's assigned scorecards and allows supervisors to track performance trends over different periods..The scorecard trend widget highlights attributes and scoring patterns for each scorecard on Daily, Weekly, and Monthly scales. Supervisors leverage this data to pinpoint progress or declines and to make informed coaching decisions. The agent dashboard incorporates a tabular scorecard trend widget to support this analysis, displaying scoring trends at the attribute level across Daily, Weekly, and Monthly intervals.   
+This feature displays an agent's assigned scorecards and allows supervisors to track performance trends over different periods. The scorecard trend widget highlights attributes and scoring patterns for each scorecard on Daily, Weekly, and Monthly scales. Supervisors leverage this data to pinpoint progress or declines and to make informed coaching decisions. The agent dashboard incorporates a tabular scorecard trend widget to support this analysis, displaying scoring trends at the attribute level across Daily, Weekly, and Monthly intervals.   
 <img src="../agent-leaderboard/images/scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
