@@ -6,7 +6,7 @@
 The Prompt API enables seamless sharing of prompts outside of GALE by using version-specific API keys. Users can fetch prompts via API calls, eliminating the need for repetitive copy-pasting.
 
 
-### API Endpoints
+**API Endpoints**
 
 
 
@@ -14,7 +14,7 @@ The Prompt API enables seamless sharing of prompts outside of GALE by using vers
 * The endpoint becomes active only after a version is committed. Users can designate a specific version as the default. If no default version is selected, the endpoint will call the latest version.
 * When a request is made to the API endpoint using the correct API key, the API responds with both the system prompt (labeled as “sysPrompt”) and human prompt (labeled as “humPrompt”) from the specified version. 
 
-### Editing or Deleting API Endpoints
+**Editing or Deleting API Endpoints**
 
 
 
@@ -22,7 +22,7 @@ The Prompt API enables seamless sharing of prompts outside of GALE by using vers
 * When a user deletes an API key, any external locations where the API key was used will be affected, rendering the key invalid.
 
 
-### Integration Options
+**Integration Options**
 
 
 
