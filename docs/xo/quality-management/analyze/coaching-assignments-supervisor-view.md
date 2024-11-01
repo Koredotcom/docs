@@ -33,7 +33,7 @@ Steps to add coaching assignments:
     Each agent has a dedicated dashboard, which is accessible to both the agents and their supervisors. This dashboard presents high-level metrics for supervisors to review.
 
 3. Click the **Add Coaching Assignment**, the following screen appears.    
-<img src="../coaching-assignments/new-coaching-assignment.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+<img src="../coaching-assignments/new-coaching-assignment.png" alt="Add Coaching Assignment" title="Add Coaching Assignment" style="border: 1px solid gray; zoom:60%;">
 
 4. Enter the **Name** of the coaching assignment.
 5. In the **Coaching Area**, enter the agent attributes that are selected for coaching as part of the assignment. By default, the interactions marked for coaching details are displayed, which are selected from the **Evaluation** tab.
@@ -52,6 +52,6 @@ Steps to view agent interactions
 <img src="../coaching-assignments/view-agent-interactions.png" alt="View Agent Interactions" title="View Agent Interactions" style="border: 1px solid gray; zoom:60%;">
 
 3. Click **View**. The following screen appears to view the agent **Chat History** and **Details** of the conversation selected.    
-<img src="../coaching-assignments/chat-audit-history-details.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+<img src="../coaching-assignments/chat-audit-history-details.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:60%;">
 
 For more information, see [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).
