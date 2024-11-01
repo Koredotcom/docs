@@ -157,4 +157,4 @@ This Evaluation section has the following interactions listing items:
 
     * **Filter Interactions**: Shows the total number of filtered interactions.
 
-For more information, see [Coaching Assignments](./coaching-assignments.md).
+For more detailed information, see [Coaching Assignments - Supervisor View](./coaching-assignments-supervisor-view.md).

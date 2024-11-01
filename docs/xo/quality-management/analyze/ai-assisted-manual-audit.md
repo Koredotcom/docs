@@ -113,7 +113,7 @@ This section allows you to tag the agent interaction with different bookmarks. B
 
 ## Submit
 
-By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks Submit, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
+By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 
 For more information, see [Audit Allocation](../analyze/conversation-mining.md#audit-allocations).  
 <img src="../images/ai-assist-submit.png" alt="Submit" title="Submit" style="border: 1px solid gray; zoom:80%;">
