@@ -3,7 +3,7 @@
 The AI-Assisted Manual Audit feature streamlines interaction evaluation by automatically categorizing conversations into three key areas: moments of adherence, moments of violation, and omissions. By highlighting these critical elements, evaluators can quickly assess the quality of interactions, significantly reducing review time and improving efficiency in the quality assurance process.
 
 Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
-<img src="./ai-assist-manual-edit/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Details
 
@@ -12,7 +12,7 @@ This section displays key information about the agent and the interaction:
 * Conversation Details, such as Start Time and End Time, Agent name, Queue, and Customer Phone number.
 * Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
 * Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.  
-<img src="./ai-assist-manual-edit/ai-assist-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/ai-assist-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Violations
 
@@ -25,7 +25,7 @@ Each violation is displayed with a timestamp, allowing you to navigate directly 
 
     Violations are applicable only for voice channel interactions, not chat.
 
-<img src="./ai-assist-manual-edit/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
+<img src="../ai-assist-manual-edit/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
 
 ## Omission
 
@@ -36,7 +36,7 @@ This section highlights instances where the agent failed to follow configured pl
 
 If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section will not be displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
 
-<img src="./ai-assist-manual-edit/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
 
 ## Playbook
 
@@ -49,7 +49,7 @@ This section of the interaction audit screen enables evaluators to assess adhere
 
 This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
   
-<img src="./images/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
+<img src="../ai-assist-manual-edit/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
 
 ## Comments
 
@@ -103,7 +103,7 @@ Key features include:
 
 This comprehensive audit panel facilitates efficient evaluation and ensures thorough review of each interaction.
 
-<img src="../images/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
 
 ## Bookmarks
 
