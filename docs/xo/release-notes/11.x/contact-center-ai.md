@@ -31,7 +31,7 @@ A new status indicator at the top of the Agent Console shows the connection stat
 * The connection is restored (online).
     <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
 
-#### **Real-Time Disposition Updates
+#### Real-Time Disposition Updates
 
 The enhanced disposition management allows agents to select dispositions during active conversations, improving categorization and data accuracy.
 
