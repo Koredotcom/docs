@@ -22,7 +22,7 @@ Steps to configure **Infobip**:
 
     !!! note
 
-          The mobile number should have the country code preceded by a plus (+) sign to activate the **Infobip** and **WhatsApp** connections.
+        The mobile number should have the country code preceded by a plus (+) sign to activate the Infobip and WhatsApp connections.
 
 4. Once the number is associated, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.  <img src="../images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
 
@@ -54,7 +54,7 @@ Steps to configure **Infobip**:
 
     !!! note
 
-          If you’re using the development sandbox on **Infobip**, once the channel is enabled and published, you will need to send messages in the format “**_[Keyword on infobip]_** **(User input)**” For example, “Kore Hi”.
+          If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format “[Keyword on infobip](User input)” For example, “Kore Hi”.
 
 
 
@@ -236,7 +236,7 @@ Once you enable **Associate an App**, you must manually select an app and config
 
 !!! note
 
-    This channel configuration is not a part of the Bot Import/Export feature. The user should manually enable the channel for the target Bot. The integration flow remains the same even with the **App Association** feature.
+    This channel configuration is not a part of the Bot Import/Export feature. The user should manually enable the channel for the target Bot. The integration flow remains the same even with the App Association feature.
 
 
 ### Messaging Templates
@@ -357,3 +357,84 @@ On the WhatsApp Business Messaging platform, follow the below steps:
 5. Select **Yes** for **Enable Channel**.
 6. Click **Save**.
 <img src="../images/whatsapp24.png" alt="configure karix" title="configure karix" style="border: 1px solid gray; zoom:70%;">
+
+## Adding the WhatsApp Channel using Netcore Application
+
+Netcore CE uses API endpoints from [CPaaS](https://email.netcorecloud.com/){:target="_blank"} to connect with WhatsApp. To enable, WhatsApp through Netcore on the Kore.ai Platform, you must provide the WhatsApp phone number and API key in the **Channel Configurations** section and the Platform’s Webhook URL for the API callback in the CPaaS portal.
+
+**Prerequisites**
+
+* An active WhatsApp Business account for your enterprise.
+* An active CPaSS account with WhatsApp **enabled**.
+* Selecting **Opt-in** is compulsory for WhatsApp communication, although there is a provision for bypassing Opt-in if necessary. [Learn more](https://cedocs.netcorecloud.com/docs/whatsapp#opt-in-mechanism-for-whatsapp){:target="_blank"}.
+
+
+### Configuration Steps
+
+To configure and enable WhatsApp using Netcore, follow the steps below:
+
+
+### Step 1: Get the API Key
+
+To begin WhatsApp integration via Netcore, copy the API Key from Netcore to the channel’s configuration page on the platform by following the steps below:
+
+1. [Login](https://email.netcorecloud.com/){:target="_blank"} to your Netcore account using CPaaS.
+2. On the left navigation menu, click **Settings** > **General Settings**.
+3. Scroll down to the **Integrate API** section.
+4. On the **Integrations** page, click on the **API** tab.
+5. The API Key is hidden for security purposes. Click **Show**. The system will prompt you to enter your account password. Once you enter the password, the API key is accessible.
+<img src="../images/whatsapp-api-key.png" alt="whatsapp api key" title="whatsapp api key" style="border: 1px solid gray; zoom:75%;">
+
+
+<div class="admonition note">
+<p class="admonition-title"><b>Note</b></p>
+<p><ul><li>To create a new key, click <b>Create API Key</b>, enter a unique name, and click <b>Save</b>.</li>
+<li>Your API key is auto-generated; therefore, you cannot edit it.</li>
+<li>By default, your new API key will be activated (green check) after creation.</li></ul></p>
+</div>
+
+<ol start="6"><li>Copy the <b>API key</b> value and save it for later use.</li></ol>
+
+<div class="admonition warning">
+<p class="admonition-title"><b>Important</b></p>
+<p><ul><li>For security reasons, the key is shown only once; if you do not save it, you won’t be able to view or copy it again. Ensure to store your API key securely.</li>
+<li>An API key is unique for each business number. An <b>Access Denied</b> error occurs while running the API key if used incorrectly.</li></ul></p>
+</div>
+
+### Step 2: Add Incoming Webhook URL
+
+Next, set up the Webhook URL on Netcore for callback from the channel by following the steps below:
+
+1. On the XO Platform, navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations** page. 
+<img src="../images/access-whatsapp-business.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;">
+
+2. Copy the **Webhook URL**.
+<img src="../images/copy-webhook-url-netcore.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:75%;">
+
+3. [Login](https://email.netcorecloud.com/){:target="_blank"} to your Netcore account using CPaaS.
+4. On the left navigation menu, click **Settings**.
+5. Scroll down to the **Webhook Integration** section.
+6. Under **Incoming webhook**, paste the webhook URL copied from the Platform.
+7. Turn on the **Status** switch to enable the webhook.
+<img src="../images/webhook-integration-netcore.png" alt="enable webhook" title="enable webhook" style="border: 1px solid gray; zoom:75%;">
+
+### Step 3: Enable the Channel
+
+Finally, enable the channel on the XO Platform to start receiving WhatsApp messages by following the steps below:
+
+1. Navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations** page.
+2. Select *Netcore* for **Messaging Partner**.
+3. Add the registered WhatsApp Business Messaging phone number(s).
+
+<div class="admonition note">
+<p class="admonition-title"><b>Note</b></p>
+<p>A maximum of 20 numbers are allowed.</p>
+</div>
+
+<ol start="4"><li>Paste the API Key copied in step 6 <a href="../channels/add-whatsapp-business-channel.md/#step-1-get-the-api-key">here</a>.</li>
+<li>Select “<i>Yes</i>” for <b>Enable Channel</b>.</li>
+<li>Click <b>Save</b>.</li>
+<img src="../images/enable-channel-netcore.png" alt="enable netcore" title="enable netcore" style="border: 1px solid gray; zoom:75%;">
+</ol>
+
+The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
