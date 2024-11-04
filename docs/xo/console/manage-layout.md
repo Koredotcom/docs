@@ -118,6 +118,13 @@ Steps to perform the connectivity and bandwidth tests:
 2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.
 <img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
 
+## Connection Handling
+
+If the internet connection is lost, a message appears at the top of the agent console page.  
+<img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
+
+The system automatically attempts to reconnect to the network. If it fails after several tries, a message instructs you to reload the page.
+<img src="../images/error-message.png" alt="Error" title="Error" style="border: 1px solid gray; zoom:80%;">
 ## Features
 
 The three monitoring icons, CSAT, Completed, and Average Response, provide details on the completed tasks, in-progress conversations, response time, and customer feedback.
