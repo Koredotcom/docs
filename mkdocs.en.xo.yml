@@ -218,7 +218,7 @@ nav:
           - Introduction: automation/knowledge-ai/knowledge-graph-overview.md
           - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
           - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: automation/knowledge-ai/manage-faqs.md
+          - Manage KG: automation/knowledge-ai/manage-faqs.md
           - Knowledge Extraction: automation/knowledge-ai/knowledge-extraction.md
           - Import or Export KG:
             - Prepare Data for Import: automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
@@ -291,7 +291,7 @@ nav:
             - Directory: searchai/content-sources/directory.md
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
-                - Connector Directory: searchai/content-sources/connectors/connector-directory.md
+                - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
                 - RACL Overview: searchai/content-sources/racl-support.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
@@ -378,10 +378,11 @@ nav:
         - Dashboard: 
           - Overview: quality-management/analyze/dashboard.md
           - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
-          - Agent View: quality-management/analyze/agent-dashboard-agent-view.md
+          - Agent View (My Dashboard): quality-management/analyze/agent-dashboard-agent-view.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
-        - Coaching Assignments: quality-management/analyze/coaching-assignments.md
-        - Coaching Assignments - Agent View: quality-management/analyze/coaching-assignments-agent-view.md
+        - Coaching Assignments: 
+          - Supervisor View: quality-management/analyze/coaching-assignments-supervisor-view.md
+          - Agent View: quality-management/analyze/coaching-assignments-agent-view.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
