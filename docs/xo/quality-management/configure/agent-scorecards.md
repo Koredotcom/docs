@@ -8,68 +8,68 @@ A Supervisor has the following types of permissions for the agent scorecards:
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-Users can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configur** > **Agent Score Cards**.  
-<img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
+Users can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.  
+<img src="./agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
-  !!! Note     
+!!! Note     
         
-      To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality Management.
+    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality Management.
 
 ## Create a New Agent Scorecard
 
-Steps to create a new agent scorecard:
+Steps to create New Agent Scorecard:
 
 1. Click the **+New Agent Score Card**, following default new agent scorecard screen appears.  
-    <img src="../agent-scorecards/images/new-agent-scorecard.png" alt="New Agent Score Card" title="New Agent Score Card" style="border: 1px solid gray; zoom:70%;">
+    <img src="./agent-scorecards/images/new-agent-scorecard.png" alt="New Agent Score Card" title="New Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
 ### Settings
 
 2. In the **Name** field, enter the name of the agent scorecard.
 3. Enter a short **Description** (optional) for the newly created agent scorecard.
 4. Enable the **Mark as Default** toggle option to assign the default scorecards across all agents. By default, the toggle option is enabled for the first scorecard created.  
-    <img src="../agent-scorecards/images/add-new-agent-score-card-settings.png" alt="Agent Scorecards Settings" title="Agent Scorecards Settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="./agent-scorecards/images/add-new-agent-score-card-settings.png" alt="Agent Scorecards Settings" title="Agent Scorecards Settings" style="border: 1px solid gray; zoom:70%;">
 
 5. The pass score must be configured (40 by default).
 
-        !!! Note
+   !!! Note
 
-        There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. If you try to enable the default scorecard toggle view, then the following warning pop-up window appears stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.     
-    <img src="../agent-scorecards/images/default-scorecard-alert.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:70%;">  
+       There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. If you try to enable the default scorecard toggle view, then the following warning pop-up window appears stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.     
+    <img src="./agent-scorecards/images/default-scorecard-alert.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:70%;">  
 
-        !!! Note
+    !!! Note
 
         When there is an existing default scorecard, and you try to disable the default scorecard toggle status, then you will get the following warning pop-up window stating that the default scorecard cannot be disabled; you must assign another scorecard as default before disabling.  
-    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:70%;">  
+    <img src="./agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:70%;">  
 
 ### Agent Attributes
 
 6. Select **Agent** **Attributes**, the following screen appears.     
-    <img src="../agent-scorecards/images/agent-attributes.png" alt="Add Agent Attributes" title="Add Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="./agent-scorecards/images/agent-attributes.png" alt="Add Agent Attributes" title="Add Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
 
 7. In the **Agent Attributes**, search and add more than one agent attribute.
 8. Click **Add Agent Attributes** to add to an agent scorecard. The following screen appears.  
-    <img src="../agent-scorecards/images/add-agent-attributes-weightage.png" alt="Add Agent Attributes Weightage" title="Add Agent Attributes Weightage" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="./agent-scorecards/images/add-agent-attributes-weightage.png" alt="Add Agent Attributes Weightage" title="Add Agent Attributes Weightage" style="border: 1px solid gray; zoom:70%;"> 
     
 9. Assign a **Weightage** for the agent attribute selected.
 
-        !!! Note
+    !!! Note
 
-         If a scorecard is set as the default, the score displayed will be based on that default scorecard in the agent leaderboard and agent dashboard.
+        If a scorecard is set as the default, the score displayed will be based on that default scorecard in the agent leaderboard and agent dashboard.
 
 ### Assignments
 
 10. Select **Assignments**, the following screen appears.  
-    <img src="../agent-scorecards/images/assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="./agent-scorecards/images/assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:70%;"> 
 
 11. In the **Agents**, assign scorecards across the required agent by searching an **Agents** name and click **Add Agents** to add agent names. 
-    <img src="../agent-scorecards/images/add-agents.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="./agent-scorecards/images/add-agents.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
 
 12. In the Agent Groups,assign scorecards at an agent group level, search for an **Agent Group** name to add the agent group to a queue.
 13. Click **Add Groups** to add the agent groups to a queue.  
-    <img src="../agent-scorecards/images/add-agent-group.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
-14. Click **Create**, the newly created scorecard for the agent and agent group is added as shown below and the status toggle must be enabled to start agent level scoring based on that scorecard.
+    <img src="./agent-scorecards/images/add-agent-group.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
 
-    <img src="../agent-scorecards/images/newly-created-scorecard.png" alt="Newly Added Scorecard" title="Newly Added Scorecard" style="border: 1px solid gray; zoom:70%;"> 
+14. Click **Create**, the newly created scorecard for the agent and agent group is added as shown below and the status toggle must be enabled to start agent level scoring based on that scorecard.  
+    <img src="./agent-scorecards/images/newly-created-scorecard.png" alt="Newly Added Scorecard" title="Newly Added Scorecard" style="border: 1px solid gray; zoom:70%;"> 
 
 The Agent scorecards include the following:
 
@@ -88,32 +88,31 @@ The Agent scorecards include the following:
 
 Steps to edit or update the agent scorecard:
 
-1. Select any of the agent scorecards, and right-click on the **Vertical Ellipse** button. The following screen appears.
-
+1. Select any of the agent scorecards, and right-click on the **Vertical Ellipse** button. The following screen appears.  
     <img src="./agent-scorecards/images/vertical-elipsis-edit-button.png" alt="Vertical Ellipse Edit Button" title="Vertical Ellipse Edit Button" style="border: 1px solid gray; zoom:70%;"> 
 
-2. Click **Edit**. The following screen appears.
+2. Click **Edit** to update the existing agent scorecard details.  
+   <img src="./agent-scorecards/images/edit-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+
+3. Modify the required details in the **Settings**,  **Agent Attributes**, and **Assignments**.  
    <img src="./agent-scorecards/images/update-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
-
-
-3. Modify the required details in the **Settings** and **Agent Attributes**.
 
    !!! Note 
 
-       If you want to assign a different scorecard as default, then the following warning pop-up is displayed stating that the existing default scorecard will be replaced by the new one, and upon confirming, the new scorecard gets applied or replaced as default.
+       If you want to assign a different scorecard as default, then the following warning pop-up window is displayed stating that the existing default scorecard will be replaced by the new one, and upon confirming, the new scorecard gets applied or replaced as default.  
+    <img src="./agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:70%;">  
 
-4. Click **Update** to save the changes in the existing scorecard.
+4. Click **Update** to save the changes.
 
 ## Delete Agent Scorecard
 
 Steps to delete the agent scorecard:
 
-1. Select any of the agent scorecards, and right-click on the vertical ellipse button. The following screen appears.
+1. Select any of the agent scorecards, and right-click on the vertical ellipse button. The following screen appears.  
+    <img src="./agent-scorecards/images/edit and delete-agent-scorecard.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;"> 
 
-    <img src="./agent-scorecards/images/edit and delete-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
-
-2. Click **Delete**. The following warning popup appears.
-    <img src="./agent-scorecards/images/delete-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+2. Click **Delete**. The following warning popup window appears.  
+    <img src="./agent-scorecards/images/delete-agent-scorecard.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:70%;"> 
     
     !!! Note
 
@@ -121,25 +120,30 @@ Steps to delete the agent scorecard:
 
 # Agent Attributes
 
-This feature enables the creation of agent attributes by combining existing evaluation metrics. This calculates the Agent Attribute Score using data from evaluation metric results. Agent attributes are specific areas of performance relevant to an agent's role like Professionalism, Product Knowledge, Problem-solving skills, and Customer service skills.
+This feature enables the creation of agent attributes by combining existing evaluation metrics. This calculates the Agent Attribute Score using data from evaluation metric results. Agent attributes are specific areas of performance relevant to an agent's role like Professionalism, Product Knowledge, Problem-solving skills, and Customer service skills. 
 
-<img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+Users can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Attributes**. 
+<img src="./agent-scorecards/images/agent-attributes-default-screen.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Create a New Agent Attribute
 
-Steps to create new agent attribute:
+Steps to create new Agent Attribute:
+
+1. Click the **+New Agent Score Card**, following default new agent scorecard screen appears.  
+    <img src="./agent-scorecards/images/new-agent-scorecard.png" alt="New Agent Score Card" title="New Agent Score Card" style="border: 1px solid gray; zoom:70%;">
+
+### Settings
 
 1. Click the **+New Agent Attribute**, the new agent attribute screen appears.  
-<img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+<img src="./dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 2. In the **Name** field, enter the name of the agent attribute.
 3. Enter a short **Description** (optional) for the newly created agent attribute.
 4. In the **Add Evaluation Metrics**, search for the required evaluation metrics to add. 
-5. Click the **Add Evaluation Metrics** option. The following screen appears with the selected evaluation metrics.
-
+5. Click the **Add Evaluation Metrics** option. The following screen appears with the selected evaluation metrics.  
     <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
-6. Click **Create**. The following screen appears with all the added agent attribute options.  
+6. Click **Create**. The following screen appears with all the added agent attribute options.   
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 The Agent Attributes include the following:
@@ -153,11 +157,11 @@ The Agent Attributes include the following:
 Steps to edit or update the agent attributes:
 
 1. Select any of the agent attributes, and right-click on the vertical ellipse button. The following screen appears.
-    <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="./dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Click **Edit**. The following screen appears to update existing agent attribute details.
 
-    <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="./dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 3. Modify the required field details in the **Add Evaluation Metrics**.
 4. Click **Update** to assign and update the evaluation metrics that will service this new attribute added.
@@ -169,7 +173,8 @@ Steps to delete the agent scorecard:
 1. Select any of the agent attributes, and right-click on the vertical ellipse button. The following screen appears.  
     <img src="../agent-scorecards/images/delete-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
     
-2. Click **Delete**. The following warning popup appears.
+2. Click **Delete**. The following warning popup window appears.  
+    <img src="../agent-scorecards/images/delete-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
     !!! Note
             
