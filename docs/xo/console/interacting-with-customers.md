@@ -815,8 +815,6 @@ If ACW is disabled the conversation disappears from the agent console at the end
 
 ### Dispositions
 
-## Dispositions
-
 A Disposition Code is a short label assigned to the outcome of an interaction. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes).
 
 Dispositions can be assigned in two ways:
