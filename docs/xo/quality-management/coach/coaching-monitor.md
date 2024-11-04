@@ -27,7 +27,7 @@ The **Coaching Monitor** page shows the following list of items:
 ### Filter Criteria
 
 Upon clicking the **Filter** icon, you will get the following set of parameters to analyze coaching sessions.   
-    <img src="../coaching-monitor/images/coaching-monitor-compare.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:70%;">
+    <img src="../coaching-monitor/images/coaching-monitor-filter.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:70%;">
 
 * **Assigned Date**: This refers to the date when the coaching session or performance review was assigned to an agent. Where you need to select either the **Assigned Date** range or **Follow Up Date** range. By default, the assigned date is selected for the last 7 days. You can change and select the desired date range.  
 <img src="../coaching-monitor/images/coaching-monitor-filter-assign-date.png" alt="Assigned Date" title="Assigned Date" style="border: 1px solid gray; zoom:70%;">
