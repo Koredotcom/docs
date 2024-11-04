@@ -33,6 +33,8 @@ Prevent automated responses to blacklisted addresses.
 Maintain standard processing for verified contacts.
 [Learn more](../../channels/add-email-channel.md).
 
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>
