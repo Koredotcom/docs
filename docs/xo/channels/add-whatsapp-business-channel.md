@@ -428,7 +428,8 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 4. Paste the API Key copied in step 6 [here](../channels/add-whatsapp-business-channel.md/#step-1-get-the-api-key){:target="_blank"}.
 5. Select “*Yes*” for **Enable Channel**.
 6. Click **Save**.
-<img src="../images/enable-channel-netcore.png" alt="enable netcore" title="enable netcore" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/enable-channel-netcore.png" alt="enable netcore" title="enable netcore" style="border: 1px solid gray; zoom:75%;">
 
 
 The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
