@@ -105,6 +105,32 @@ This comprehensive audit panel facilitates efficient evaluation and ensures thor
 
 <img src="../ai-assist-manual-edit/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
 
+In the Chat History - Audit section, the evaluation form items determine performance levels through assigned scores, each with specific weights for the questions. The supervisor or auditor's role is to evaluate each question (using the options available in the evaluation form: **Yes/No/NA**). This process enables clear identification of strengths and areas for improvement, facilitating better coaching. Additionally, auditors can review the conversation for each question.
+
+
+### Scoring Triggers
+
+* **Adherence Detected (Yes)**: If the adherence percentage meets the threshold configured by the supervisor or admin, the evaluation form item is highlighted in green with a “Kore Evaluation” Badge with the configured percentage. This indicates that the agent meets the expected question and answer. If the scores marked as "Yes" are usually associated with positive indicators or compliance with standards to pass. Sometimes if the answer is not met, it leads to negative scoring based on the by question configuration (metric type).
+
+  For example, 
+
+  * **Yes**: if the threshold is 60% and the agent meets 60% or above, it will be marked as YES and the question badge indicates green color.
+* **Adherence Not Detected (No)**: If the adherence percentage falls below the configured threshold, the evaluation form item is highlighted in red “Kore Evaluation” Badge, showing the scored percentage. If the percentage is not met the configured threshold, then it is considered as NO (non-adherence).
+    * In some cases, the percentage may meet similar answers with a configured threshold which shows the percentage.
+    * If it is not adhered to the configured threshold percentage.
+
+  For example, 
+
+  **No**: If the threshold is 60% and the agent meets below 60% or similar, it will be marked as NO, and the question badge indicates red color.
+
+* **Trigger Not Detected (N/A)**: If the adherence percentage is not detected, it is considered as not applicable.
+
+  For example, 
+
+  **N/A**: If the threshold is 60% and the agent has not met the configured threshold, it will be marked as N/A, and the question badge indicates gray color.
+
+  <img src="../ai-assist-manual-edit/ai-assist-score-metrics.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
+
 ## Bookmarks
 
 This section allows you to tag the agent interaction with different bookmarks. Bookmarks help to tag or group similar interactions together. Bookmarks are user-specific (a bookmark created by one user cannot be accessed by another) and must be enabled and created in the Settings section. Users can bookmark interactions from various places, including Interactions, Audit Allocations, and Settings, making it easy to add an interaction to a configured bookmark.  
