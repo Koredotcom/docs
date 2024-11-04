@@ -2,6 +2,39 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.7.0 November 03, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Channels
+#### Email Management Enhancements
+
+**Domain Configuration**
+
+The enhanced email configuration options allow users to configure both Kore and custom domain email addresses to maintain brand consistency:
+
+Key updates:
+
+* Add multiple email addresses for Kore domains.
+* Set up verified custom domains.
+* Attach experience flows to specific addresses.
+
+**Email Blacklisting**
+
+The new Email Blacklist option helps protect your email reputation with administrator controls.  
+<img src="../images/email-blacklist-tab.png" alt="Email Blacklist Tab" title="Email Blacklist Tab" style="border: 1px solid gray; zoom:80%;">
+
+Key features:
+
+Block problematic email addresses.
+Prevent automated responses to blacklisted addresses.
+Maintain standard processing for verified contacts.
+[Learn more](../../channels/add-email-channel.md).
+
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>
