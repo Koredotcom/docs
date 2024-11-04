@@ -23,7 +23,8 @@ Key updates:
 
 **Email Blacklisting**
 
-The new Email Blacklist option helps protect your email reputation with administrator controls.
+The new Email Blacklist option helps protect your email reputation with administrator controls.  
+<img src="../images/email-blacklist-tab.png" alt="Email Blacklist Tab" title="Email Blacklist Tab" style="border: 1px solid gray; zoom:80%;">
 
 Key features:
 
