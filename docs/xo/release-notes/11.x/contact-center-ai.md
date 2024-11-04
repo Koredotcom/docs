@@ -91,10 +91,6 @@ Each call remains independent with the following:
 * Separate call controls.
 * Independent agent sessions.
 
-#### Call Trace Enhancement
-
-This update extends the display of SIP stack traces to all Kore Voice Gateway calls regardless of automation status or agent transfers. This improved visibility helps administrators monitor connections, diagnose issues, and troubleshoot more effectively.
-
 #### Text-to-Speech Customization
 
 New voice controls for PlayHT, Eleven Labs, Google Cloud, Microsoft Azure, and AWS Polly let users customize parameters like speaking speed, pitch, and emotion to improve overall speech output quality.
