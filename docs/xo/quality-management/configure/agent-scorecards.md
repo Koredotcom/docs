@@ -8,9 +8,9 @@ A supervisor has the following types of permissions for the agent scorecards:
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-        !!! Note 
-    
-        To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecard** toggle view in the **Settings** of Quality Management.
+  !!! Note     
+        
+      To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecard** toggle view in the **Settings** of Quality Management.
 
 You can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.
 <img src=".//sedashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
