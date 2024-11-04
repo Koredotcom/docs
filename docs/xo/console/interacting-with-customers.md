@@ -815,7 +815,31 @@ If ACW is disabled the conversation disappears from the agent console at the end
 
 ### Dispositions
 
-To set the disposition and close the conversation, follow these steps:
+A Disposition Code is a short label assigned to the outcome of an interaction. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes).
+
+Dispositions can be assigned in two ways:
+
+1. During the conversation (Dynamic):
+    1. Click **+ Add Disposition**.  
+        <img src="../images/add-disposition.png" alt="+ Add Disposition" title="+ Add Disposition" style="border: 1px solid gray; zoom:80%;">
+
+    2. Select a disposition from the dropdown menu and click **Save**.  
+        <img src="../images/save-disposition.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:80%;">
+
+    3. The disposition is added. You can either **Transfer** or **End** the conversation.  
+        <img src="../images/disposition-added.png" alt="Disposition Added" title="Disposition Added" style="border: 1px solid gray; zoom:80%;">
+
+    4. When you click **End**, a confirmation message is displayed. Click **Yes** to confirm.  
+        <img src="../images/end-interaction.png" alt="End Interaction" title="End Interaction" style="border: 1px solid gray; zoom:80%;">
+
+    5. The **Disposition & Notes** window will appear, and you can make any necessary changes. Click **Close**, and the conversation will close with the disposition attached.  
+        <img src="../images/disposition-and-notes.png" alt="Disposition and Notes" title="Disposition and Notes" style="border: 1px solid gray; zoom:80%;">
+
+    !!! Note
+
+        If the disposition and description are not completed during the After Call Work (ACW) period, the system automatically closes the conversation with a system-generated disposition.
+
+2. At the end of the conversation:
 
 * Select the **Conversation** in your tray.
 * You must select a **Status** from the following available options:
@@ -826,7 +850,7 @@ To set the disposition and close the conversation, follow these steps:
 * Optionally, type a **Description** of your reason for selecting the disposition.
 * Click **_Close_** to close the conversation.
 
-# Information Provided to Agents and Customers During Live Interactions
+## Information Provided to Agents and Customers During Live Interactions
 
 You can interact with customers within the **Live Interaction** area of the Agent Console.  
 <img src="../images/information-during-live-interaction.png" alt="Information Provided to Agents during Live Interactions" title="Information Provided to Agents during Live Interactions" style="border: 1px solid gray; zoom:80%;">
