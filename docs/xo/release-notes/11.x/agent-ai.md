@@ -6,7 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.7.0 November 3, 2024
 
-<u> Patch Release </u>
+<u> Minor Release </u>
+
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Widget Enhancements
@@ -14,6 +15,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 #### Extended Language Support for Localization
 
 The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
+
 * HE - Hebrew
 * ZH_TW - Traditional Chinese
 * PT - Portuguese (Brazil)
