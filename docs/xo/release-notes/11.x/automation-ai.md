@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
-## v11.7 November 03, 2024
+## v11.7.0 November 03, 2024
 
 <u> Minor Release </u>
 
