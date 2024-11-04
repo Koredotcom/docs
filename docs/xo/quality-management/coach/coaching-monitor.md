@@ -6,7 +6,7 @@ The Coaching Monitor feature enables supervisors to track and evaluate the coach
 Users can view **Coaching Monitor** by navigating to **Contact Center AI** > **Quality Management** > **Coach** > **Coaching Monitor**.  
 <img src="../coaching-monitor/images/coaching-monitor-landing-page.png" alt="Coaching Monitor" title="Coaching Monitor" style="border: 1px solid gray; zoom:70%;">
 
-    !!! Note
+    !!! note
 
         To track score trends for individual attributes in Coaching Monitor across all agents, you must enable Auto QA for automated scoring of interactions.
 
