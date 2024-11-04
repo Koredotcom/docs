@@ -31,9 +31,9 @@ Steps to create **New Agent Score Card**:
 3. Enter a short **Description** (optional) for the newly created agent scorecard.
 4. Enable the **Mark as Default** toggle option to assign the default scorecards across all agents. By default, the toggle option is enabled for the first scorecard created.  
 
-   !!! note
+    !!! note
 
-       There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. If you try to enable the default scorecard toggle view, then the following warning pop-up window appears stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.   
+        There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. If you try to enable the default scorecard toggle view, then the following warning pop-up window appears stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.   
 
 5. The pass score must be configured (40 by default).
 
