@@ -594,6 +594,43 @@ You can choose from a library of configured standard responses.
     4. **Drafts**: If you click the **Close** button on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.  
         <img src="../images/draft.png" alt="Drafts" title="Drafts" style="border: 1px solid gray; zoom:80%;">
 
+### Dispositions
+
+A Disposition Code is a short label assigned to the outcome of an interaction. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes).
+
+Dispositions can be assigned in two ways:
+
+1. During the conversation (Dynamic):
+    1. Click **+ Add Disposition**.  
+        <img src="../images/add-disposition.png" alt="+ Add Disposition" title="+ Add Disposition" style="border: 1px solid gray; zoom:80%;">
+
+    2. Select a disposition from the dropdown menu and click **Save**.  
+        <img src="../images/save-disposition.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:80%;">
+
+    3. The disposition is added. You can either **Transfer** or **End** the conversation.  
+        <img src="../images/disposition-added.png" alt="Disposition Added" title="Disposition Added" style="border: 1px solid gray; zoom:80%;">
+
+    4. When you click **End**, a confirmation message is displayed. Click **Yes** to confirm.  
+        <img src="../images/end-interaction.png" alt="End Interaction" title="End Interaction" style="border: 1px solid gray; zoom:80%;">
+
+    5. The **Disposition & Notes** window will appear, and you can make any necessary changes. Click **Close**, and the conversation will close with the disposition attached.  
+        <img src="../images/disposition-and-notes.png" alt="Disposition and Notes" title="Disposition and Notes" style="border: 1px solid gray; zoom:80%;">
+
+2. At the end of the conversation:
+    1. Click **End** after the conversation is completed.  
+        <img src="../images/end-button (2).png" alt="End Button" title="End Button" style="border: 1px solid gray; zoom:80%;">
+
+    2. A confirmation message is displayed. Click **Yes** to confirm.  
+        <img src="../images/end-interaction.png" alt="End Confirmation" title="End Confirmation" style="border: 1px solid gray; zoom:80%;">
+
+    3. The **Disposition & Notes** window will appear, and you can make any necessary changes. Click **Close**, and the conversation will close with the disposition attached.  
+        <img src="../images/close-conversation.png" alt="Close Conversation" title="Close Conversation" style="border: 1px solid gray; zoom:80%;">
+
+    !!! Note
+
+        If the disposition and description are not completed during the After Call Work (ACW) period, the system automatically closes the conversation with a system-generated disposition.
+
+
 ### Outbound Email
 
 Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. It is crucial to reach out to customers proactively and provide personalized interactions based on their needs and preferences. Expanding omnichannel capabilities allows customers to be reached through various channels to address their needs. This allows seamless follow-up after interactions to guarantee satisfaction and provide timely support whenever required.
