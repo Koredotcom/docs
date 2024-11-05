@@ -17,9 +17,9 @@ Users can access the Evaluation Forms by navigating to **Contact Center AI** > *
 
 <img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
 
-  !!! Note     
+!!! Note     
         
-      To create and configure evaluation forms, the Auto QA setting must be enabled first.
+    To create and configure evaluation forms, the Auto QA setting must be enabled first.
 
 The Evaluation Forms has the following options:
 
