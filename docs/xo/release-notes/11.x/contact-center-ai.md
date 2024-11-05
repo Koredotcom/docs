@@ -20,10 +20,6 @@ To improve agent experience and maintain consistent availability, the agent’s 
 
 [Learn more](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
 
-#### Support for German
-
-The Agent Console or Desktop now supports extended localization for German, allowing for full configuration and use in German.
-
 #### Connection Status Alerts
 
 A new status indicator at the top of the Agent Console shows the connection state and automatically updates when:

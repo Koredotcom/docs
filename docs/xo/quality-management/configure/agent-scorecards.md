@@ -11,7 +11,7 @@ A Supervisor has the following types of permissions for the agent scorecards:
 Users can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.  
 <img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
-!!! Note     
+!!! note     
         
     To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality Management.
 
@@ -56,7 +56,7 @@ Steps to create **New Agent Score Card**:
     
 9. Assign a **Weightage** for the agent attribute selected.
 
-    !!! Note
+    !!! note
 
         If a scorecard is set as the default, the score displayed will be based on that default scorecard in the agent leaderboard and agent dashboard.
 
@@ -84,7 +84,7 @@ The Agent scorecards include the following:
 * **Pass Score**: This shows the minimum pass score that the agent has to attain.
 * **Status**: This shows the status of the scorecard whether it is active or inactive.
 
-    !!! Note
+    !!! note
 
         If an agent scorecard has been marked as default, the assignments section of the creation modal should not be shown, and the scorecard must be assigned across all the agents present in the queues of the user.
 
@@ -101,7 +101,7 @@ Steps to edit or update the agent scorecard:
 3. Modify the required details in the **Settings**,  **Agent Attributes**, and **Assignments**.  
    <img src="../agent-scorecards/images/update-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
-   !!! Note 
+   !!! note 
 
        If you want to assign a different scorecard as default, then the following warning pop-up window is displayed stating that the existing default scorecard will be replaced by the new one, and upon confirming, the new scorecard gets applied or replaced as default.  
     <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:70%;">  
@@ -118,7 +118,7 @@ Steps to delete the agent scorecard:
 2. Click **Delete**. The following warning popup window appears.    
     <img src="../agent-scorecards/images/delete-agent-scorecard.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:70%;"> 
     
-    !!! Note
+    !!! note
 
         If the user tries to delete the default scorecard, a warning pop-up dialog box appears stating that the default scorecard cannot be deleted. To do this, you have to assign another scorecard as default before deleting this scorecard. If you delete the scorecard, the associated data will be lost, which is associated with this scorecard.
 
@@ -180,6 +180,6 @@ Steps to delete the agent scorecard:
 2. Click **Delete**. The following warning popup window appears.  
     <img src="../agent-scorecards/images/delete-agent-attribute.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
-    !!! Note
+    !!! note
             
         The agent cannot delete any of the existing attributes, which is already assigned for an agent scorecard. To delete this attribute, the agent has to remove it from the assigned agent scorecard before deletion. Only the unassigned agent attribute can be deleted. Once you delete the agent attribute, the associated date will be lost.

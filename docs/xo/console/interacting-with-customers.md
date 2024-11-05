@@ -841,14 +841,14 @@ Dispositions can be assigned in two ways:
 
 2. At the end of the conversation:
 
-* Select the **Conversation** in your tray.
-* You must select a **Status** from the following available options:
-    * **Resolved**: Select when the customer query is resolved.
-    * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
-    * **Pending**: Select if the query is still pending resolution.
-    * **Custom**: Administrators can [create custom disposition codes ](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
-* Optionally, type a **Description** of your reason for selecting the disposition.
-* Click **_Close_** to close the conversation.
+    * Select the **Conversation** in your tray.
+    * You must select a **Status** from the following available options:
+        * **Resolved**: Select when the customer query is resolved.
+        * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
+        * **Pending**: Select if the query is still pending resolution.
+        * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
+    * Optionally, type a **Description** of your reason for selecting the disposition.
+    * Click **_Close_** to close the conversation.
 
 ## Information Provided to Agents and Customers During Live Interactions
 

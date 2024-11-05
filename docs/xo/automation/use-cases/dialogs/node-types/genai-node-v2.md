@@ -147,10 +147,9 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 
 This property helps execute a script as the first step when the GenAI Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
-To define a pre-processor script, click **Define Script**, add the script you want to execute, and click **Save**.
+To define a pre-processor script, click **Define Script**, add the script you want to execute, and click **Save**. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.
 
 <img src="../images/pre_prosessor.png" alt="Pre prosessor Script" title="Pre prosessor Script" style="border: 1px solid gray; zoom:70%;">
-
 
 
 #### Entities
@@ -159,9 +158,7 @@ Specify the entities to be collected by LLM during runtime. In the Entities sect
 
 Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types){:target="_blank"} for more information.
 
-
 <img src="../images/entitiesv2.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
-
 
 
 #### Rules
@@ -196,7 +193,7 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
     The post-processor script does not apply to the custom prompt.
 
 
-This property initiates the post-processor script after processing every user input as part of the GenAI Node. Use the script to manipulate the response captured in the context variables just before exiting the GenAI Node for both the success and exit scenarios. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property initiates the post-processor script after processing every user input as part of the GenAI Node. Use the script to manipulate the response captured in the context variables just before exiting the GenAI Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
 **Important Considerations**
 

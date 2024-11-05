@@ -6,7 +6,7 @@ You can access Dashboard by navigating to **Contact Center AI** > **Quality Mana
 
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
-!!! Note
+!!! note
 
     To view the **Dashboard** feature, you must enable **Auto QA** and configure an evaluation form in the **Settings** to generate Auto QA scores. Only users with the QA functionality permission can access it.
 
@@ -77,7 +77,7 @@ The users can view failure rates across evaluation forms they choose. This makes
 ### Agent Scorecard
 This shows the Trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard. 
 
-!!! Note
+!!! note
 
     In the Dashboard, the Agent Scorecard widget will appear only when the Agent Scorecard widget option is enabled in the Quality Management Settings.
 
@@ -114,7 +114,7 @@ This widget provides users with a summarized view of the agent leaderboard, offe
 
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+!!! note
 
     To view this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
 
