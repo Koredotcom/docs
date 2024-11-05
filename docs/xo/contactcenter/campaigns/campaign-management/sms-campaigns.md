@@ -28,7 +28,7 @@ To run SMS campaigns, you must configure the SMS channel first. [Learn more](../
 Steps to create an SMS campaign:
 
 1. Click **+ New Campaign**.  
-<img src="../images/new-campaign-button-sms.png" alt="+ New Campaign" title="+ New Campaign" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new-campaign-button-sms.png" alt="+ New Campaign" title="+ New Campaign" style="border: 1px solid gray; zoom:80%;">
 
 2. The **New SMS Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
 
@@ -39,23 +39,31 @@ Steps to create an SMS campaign:
     * **Priority**: Select the priority for the campaign from the drop-down.  
     <img src="../images/general-tab-sms.png" alt="General Tab" title="General Tab" style="border: 1px solid gray; zoom:80%;">
 
-3. On the **Message** tab, by default the format of the campaign is Simple. Select a template for the SMS campaign from the drop-down and click the 🖉 icon to enter the message to be shared.  
-<img src="../images/message-tab-sms.png" alt="Message Tab" title="Message Tab" style="border: 1px solid gray; zoom:80%;">
+3. On the **Message** tab, you can select from two available formats: 
 
-    !!! Note
+    * **Simple**: This format is useful for sending simple outbound messages. Select a template for the SMS campaign from the drop-down. Click the 🖉 icon to enter the message to be shared.  
+        <img src="../images/simple-message.png" alt="Simple Message" title="Simple Message" style="border: 1px solid gray; zoom:80%;">
 
-        * Users can select system or custom templates and edit them for a particular campaign.
-        * Editing a custom or system template modifies it for a specific campaign, and does not alter the original template. 
-        * When a system or custom template is selected and the user chooses to edit it, the template selection drop-down resets to "None."
+        !!! Note
+
+            * Users can select system or custom templates and edit them for a particular campaign.
+            * Editing a custom or system template modifies it for a specific campaign, and does not alter the original template. 
+            * When a system or custom template is selected and the user chooses to edit it, the template selection drop-down resets to "None."
+
+    * **Advanced**: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.  
+        <img src="../images/advanced-message.png" alt="Advanced Message" title="Advanced Message" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Save** after entering the message.  
-<img src="../images/save-message-sms.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/save-message-sms.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:80%;">
 
 5. On the **Outreach Strategy** tab, first select the Caller ID. Caller ID is the number that is used to send SMS and the same number is displayed on recipient's phone.
-For Simple message format, the caller ID shows the numbers that are configured as Outbound only and are not associated with any flows.
+
+    In the Simple message format, the caller ID displays numbers configured for Outbound only, which are not linked to any flows. 
+
+    In the Advanced message format, businesses can establish two-way communication with their end customers. Using the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required.
 
 6. select the **Timezone** from the drop-down and add the Contactable Timings (day of the week/time) when the dialer will dial the calls.  
-<img src="../images/outreach-strategy-tab.png" alt="Outreach Strategy Tab" title="Outreach Strategy Tab" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/outreach-strategy-tab.png" alt="Outreach Strategy Tab" title="Outreach Strategy Tab" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -70,10 +78,10 @@ Editing an SMS campaign allows you to make changes to the campaign as per your n
 Steps to edit an SMS campaign:
 
 1. Click the Ellipsis (**︙**) icon beside the campaign name and click **Edit**.  
-<img src="../images/edit-button-sms.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-button-sms.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A pop-up window is displayed. Do the required changes and click **Save**.  
-<img src="../images/save-edited-campaign-sms.png" alt="Save Edited Campaign" title="Save Edited campaign" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/save-edited-campaign-sms.png" alt="Save Edited Campaign" title="Save Edited campaign" style="border: 1px solid gray; zoom:70%;">
 
 ## Clone an SMS Campaign
 
@@ -82,10 +90,10 @@ Cloning an SMS campaign creates a replica of the original campaign. This is usef
 Steps to clone an SMS campaign:
 
 1. Click the Ellipsis (**⋮**) icon beside the campaign name and click **Clone**.  
-<img src="../images/clone-button-sms.png" alt="Clone Button" title="Clone Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/clone-button-sms.png" alt="Clone Button" title="Clone Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A cloned copy of the original campaign is created.  
-<img src="../images/cloned-campaign-sms.png" alt="Cloned Campaign" title="Cloned Campaign" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/cloned-campaign-sms.png" alt="Cloned Campaign" title="Cloned Campaign" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete an SMS Campaign
 
@@ -94,10 +102,10 @@ You can delete an SMS campaign if it has served its purpose or is no longer requ
 Steps to delete an SMS campaign:
 
 1. Click the Ellipsis (**⋮**) icon beside the campaign name and click **Delete**.  
-<img src="../images/delete-button-sms.png" alt="Delete Campaign Button" title="Delete Campaign Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/delete-button-sms.png" alt="Delete Campaign Button" title="Delete Campaign Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation pop-up window appears. Click **Delete**.  
-<img src="../images/delete-campaign-confirmation-sms.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:60%;">  
+    <img src="../images/delete-campaign-confirmation-sms.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:60%;">  
 
 ## Run SMS Campaigns
 
@@ -106,7 +114,7 @@ Running an SMS campaign changes the campaign status to **Active** and sends the 
 Steps to run an SMS Campaign:
 
 1. You can run a voice campaign by clicking the **Play** button.  
-<img src="../images/play-button.png" alt="Play Button" title="Play Button" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/play-button.png" alt="Play Button" title="Play Button" style="border: 1px solid gray; zoom:80%;">  
 
     When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
 
@@ -117,7 +125,7 @@ Stopping an SMS resets the data, the campaign status changes to **Stopped**, and
 Steps to stop an SMS campaign:
 
 1. Click the **Stop** button under **Actions** for the campaign you want to stop.  
-<img src="../images/stop-button.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/stop-button.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation pop-up window appears. Click **Stop**.  
-<img src="../images/stop-campaign-confirmation-sms.png" alt="Stop Campaign Confirmation" title="Stop Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/stop-campaign-confirmation-sms.png" alt="Stop Campaign Confirmation" title="Stop Campaign Confirmation" style="border: 1px solid gray; zoom:80%;">

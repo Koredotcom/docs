@@ -2,6 +2,60 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.7.0 November 3, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Widget Enhancements
+
+#### Extended Language Support for Localization
+
+The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
+
+* HE - Hebrew
+* ZH_TW - Traditional Chinese
+* PT - Portuguese (Brazil)
+* ID - Indonesian
+* RU - Russian
+* TR - Turkish
+* VI - Vietnamese
+* PL - Polish
+* FA - Persian
+* UR - Urdu
+
+#### Enhanced Access Control for Search AI
+
+Agent AI now allows restricted access for targeted users by configuring up to three Search AI apps: 
+
+* Internal Answers: Access to internal sources only.
+* External Answers: Access to external sources only.
+* Auto-Suggestions: Access to auto-suggestions (prompts) only.
+
+**Configuration rules**:
+
+* Choose either Internal Answers or External Answers with Auto-Suggestions.
+* Internal and External Answers cannot be combined in one app.
+* Auto-Suggestions can be configured for only one Search AI app.
+* Knowledge AI settings are available only when selecting either Internal or External Answers.
+
+#### Decommissioning of Agent AI Widget v2
+
+The widget v2 will be decommissioned by the end of November 2024. A banner has been added in the Voice and Chat channels to notify users that Agent AI widget v2 will be decommissioned. Please upgrade to v3 for continued support.
+
+### Integration Enhancements
+
+#### Summary Support for NICE MAX Desktop
+
+Agents using NICE MAX Desktop now receive a concise summary at the end of a chat or voice session. This summary highlights key points and identifies action items, allowing agents to review important information quickly. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/integration/nice-max/nice-max-desktop-chat-and-voice/){:target="_blank"}.
+
+#### Multibot Support for Agent AI Voice in Genesys
+
+Previously limited to a single bot and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
+
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>
