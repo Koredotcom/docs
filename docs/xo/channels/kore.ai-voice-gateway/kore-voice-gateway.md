@@ -55,8 +55,7 @@ Kore.ai supports the following third-party service providers for ASR/STT. [Learn
    </td>
    <td>microsoft
    </td>
-   <td>On Premise
-<p style="text-align: center">
+   <td>On Premise<br>
 Cloud
    </td>
   </tr>
@@ -67,8 +66,7 @@ Cloud
    </td>
    <td>google
    </td>
-   <td>On-Premise
-<p style="text-align: center">
+   <td>On-Premise<br>
 Cloud
    </td>
   </tr>
@@ -236,7 +234,7 @@ Nvidia
    </td>
    <td>Boolean
    </td>
-   <td>:
+   <td>
  Google
  Microsoft
    </td>
@@ -1346,13 +1344,13 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
 
 Using SSML (Speech Synthesis Markup Language) allows developers to control aspects of speech synthesis such as pronunciation, volume, pitch, and rate of speech. Here's a guide on how to use SSML effectively:
 
-Understanding SSML Basics:
+#### Understanding SSML Basics
 
 * SSML is an XML-based markup language used to control text-to-speech synthesis.
 * It provides tags to control various aspects of speech synthesis, including pronunciation, prosody, volume, and more.
 * SSML is supported by many speech synthesis systems, including Amazon Polly, Google Text-to-Speech, and others.
 
-Basic SSML Tags:
+#### Basic SSML Tags
 
 * `&lt;speak>`: This is the root element of an SSML document and indicates the start and end of the speech content.
 * `&lt;break>`: Inserts a pause into the speech synthesis. You can specify the duration of the pause using the `time` attribute.
@@ -1361,11 +1359,11 @@ Basic SSML Tags:
 * `&lt;say-as>`: Indicates how a particular piece of text should be pronounced, such as numbers, dates, or currency.
 * `&lt;audio>`: Embeds audio files into the speech output.
 
-Using SSML in Code:
+#### Using SSML in Code
 
 * When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags
 
-Example
+Example:
 ````
 &lt;speak>
 
@@ -1381,7 +1379,7 @@ Example
 
 &lt;/speak>
 ````
-**Voice tag support**
+#### Voice tag support
 
 support for voice elements in SSML,
 
@@ -1392,10 +1390,9 @@ In the speak tag, follow below-mentioned steps:
 2. Customised speak tag with attributes **&lt;speak version="1.0" xml:lang="en-US" xmlns="**[W3C Speech Synthesis namespace](http://www.w3.org/2001/10/synthesis) **">**
     2. In this case, Kore Voice Gateway will send the SSML without any modifications to the TTS engine.
 
-In this case, follow option 2 and the voice element should work.
+In this case, follow option 2 and the voice element will work.
 
 Example:
-
 ```
 <speak version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/10/synthesis"><voice name="en-US-AvaNeural">Hi, I'm eBay's automated phone assistant. Let me know in a few words how I can help.</voice></speak>
 ```
@@ -2589,9 +2586,9 @@ To handle this scenario:
    * Configure the Service node.
    * Deliver the message after the Service node.
 
-      !!! Note 
+!!! Note 
 
-            If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+      If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
 
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
