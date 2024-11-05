@@ -140,6 +140,8 @@ For on-prem, refer to corresponding host<strong> </strong>
    </td>
    <td><strong>Agent AI URL</strong>
    </td>
+   <td><strong>UXO URL</strong>
+   </td>
    <td><strong>WSS URL</strong>
    </td>
    <td><strong>DNS</strong>
@@ -150,6 +152,8 @@ For on-prem, refer to corresponding host<strong> </strong>
    </td>
    <td><a href="https://agentassist.kore.ai" target=" blank">https://agentassist.kore.ai</a>
    </td>
+   <td><a href="https://platform.kore.ai" target=" blank">https://platform.kore.ai</a>
+   </td>
    <td>wss://savg-webserver.kore.ai
    </td>
    <td>@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com
@@ -159,6 +163,8 @@ For on-prem, refer to corresponding host<strong> </strong>
    <td>JP
    </td>
    <td><a href="https://agentassist-jp.kore.ai" target=" blank">https://agentassist-jp.kore.ai</a>
+   </td>
+   <td><a href="https://jp-platform.kore.ai" target=" blank">https://jp-platform.kore.ai</a>
    </td>
    <td>wss://jp-savg-audiosocket.kore.ai
    </td>
