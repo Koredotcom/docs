@@ -1130,42 +1130,6 @@ Smart Format capabilities vary between models. When Smart Format is turned on, D
    </td>
   </tr>
   <tr>
-   <td>SSML Tags
-   </td>
-   <td>&lt;speak>
-  Here are &lt;say-as interpret-as="characters">SSML&lt;/say-as> samples.
-  I can pause &lt;break time="3s"/>.
-  I can play a sound
-  &lt;audio src="https://www.example.com/MY_MP3_FILE.mp3">didn't get your MP3 audio file&lt;/audio>.
- 
-&lt;/speak>
-   </td>
-   <td>TTS:
-Google
-AWS
-Microsoft
-*Aws does not support the audio tag
-   </td>
-   <td>It is used for modification in TTS.
-Procedure 
-<ol>
-
-<li>Open Bot builder</li>
-
-<li>Create EntityNode or messageNode </li>
-
-<li>Under user Prompt open  manage  user   prompt, select channel, and paste the  syntax in plain text </li>
-
-<li>The bot will play this prompt instead of the default
-
-For more details refer to:
-https://cloud.google.com/text-to-speech/docs/ssml</li>
-</ol>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
    <td>disableTtsCache
    </td>
    <td>Boolean
@@ -1304,7 +1268,7 @@ ttsOptions = {
 ASR/TTS Fallback functionality can be implemented at various levels within the system, such as the application level, experience flow level, or even the call control parameter level. This mechanism ensures that if there is an error or failure with the primary ASR (Automatic Speech Recognition) or TTS (Text-to-Speech) service, the system will automatically switch to a secondary, or fallback, ASR/TTS configuration. By doing this, the fallback prevents interruptions in the service and ensures a seamless user experience, regardless of issues with the primary configuration.
 * For optimal performance, it’s advised to configure the fallback with the same vendor in a different region/label.
 
-#### Configuring Primary and Fallback ASR/TTS
+#### Configure Primary and Fallback ASR/TTS
 
 **Location 1 - Global Setting**
 
@@ -1338,7 +1302,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
          * The Credential Status of the Speech services configured in SAVG should be verified. If credential status is failed then ASR/TTS conversations will fail.
       * In Call control parameters, 
          * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
-         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters)
+         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters).
 
 ### SSML
 
@@ -2345,7 +2309,7 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
 
  It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code. 
 
-If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Communication Team.
+If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Kore Support Team.
 
 !!! Note
 
@@ -2742,8 +2706,6 @@ For example, if a user speaks in English, the conversation will continue in Engl
 
 These steps will ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
 
-For a demonstration, you can access the [Sample Demo Bot](https://drive.google.com/drive/folders/1NC05qtbK7L2-14DyeDR7cpYFyOrZCy82?usp=drive_link).
-
 ## Transfer a Call to SmartAssist Using SIP Transfer
 
 You can set up a dedicated number or SIP to transfer calls to a voice agent. [Learn more](https://docs.kore.ai/smartassist/settings/agent-setup/#SIP_Transfer_Methods).
@@ -2762,7 +2724,7 @@ When updating settings such as adding, updating, deleting phone numbers, or modi
 Before the bot publishing fails, open the Inspect tab in your browser. In the Network tab, search for the dockstatus API. You will see multiple APIs with the name dockstatus. When the bot publishing failure message appears, open the most recent dockstatus API.  
 <img src="../images/inspect-element.png" alt="Inspect" title="Inspect" style="border: 1px solid gray; zoom:40%;">
 
-In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the XOCCAI-Voice Gateway team. For any other reasons causing the bot publishing failure, the XOCCAI-Voice Gateway team is not responsible.  
+In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the Kore Support team.  
 <img src="../images/dockstatus-api.jpg" alt="Dockstatus" title="Dockstatus" style="border: 1px solid gray; zoom:80%;">
 
 ### Issue: Agent Transfer is Not Working
