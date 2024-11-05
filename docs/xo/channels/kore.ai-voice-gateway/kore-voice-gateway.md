@@ -1331,16 +1331,16 @@ In Smart Assist: **Configurations** > **Experience Flows** > **Update/New Experi
 
    !!! Note
       
-      * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
-      * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
-         * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
-         * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
-         * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
-         * Both Primary and Fallback ASR/TTS configurations should be available in SAVG Speech Services otherwise you will not be able to configure in SmartAssist.
-         * The Credential Status of the Speech services configured in SAVG should be verified. If credential status is failed then ASR/TTS conversations will fail.
-      * In Call control parameters, 
-         * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
-         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters)
+         * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
+         * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
+            * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
+            * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
+            * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
+            * Both Primary and Fallback ASR/TTS configurations should be available in SAVG Speech Services otherwise you will not be able to configure in SmartAssist.
+            * The Credential Status of the Speech services configured in SAVG should be verified. If credential status is failed then ASR/TTS conversations will fail.
+         * In Call control parameters, 
+            * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
+            * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters)
 
 ### Voice Gateway Properties
 
@@ -2534,7 +2534,7 @@ To handle this scenario:
 
       !!! Note 
 
-            If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+         If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
 
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
