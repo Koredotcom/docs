@@ -152,7 +152,7 @@ Cloud
   <tr>
    <td>alternativeLanguages
    </td>
-   <td>Array of Object
+   <td>Array of Objects
    </td>
    <td>Google
 Microsoft
@@ -197,7 +197,7 @@ This is an additional feature present in allowing a boost factor to be specified
 Kore VG
 Key = hints
    </td>
-   <td><code>  Array Of Object</code>
+   <td><code>  Array Of Objects</code>
    </td>
    <td>:
 Google
@@ -686,7 +686,7 @@ v1  or v2
 
 <li><code>"remove"</code>: Completely remove the word from the transcription.</li>
 
-<li><code>"mask"</code>: Mask the word (e.g., replace it with asterisks).</li>
+<li><code>"mask"</code>: Mask the word (for example, replace it with asterisks).</li>
 
 <li><code>"tag"</code>: Add tags to identify the filtered word.</li>
 </ul>
@@ -1260,18 +1260,18 @@ Kore VG now supports a `ttsOptions` parameter that allows bot developers to cust
 
 The `ttsOptions` object contains provider-specific settings in a key-value format. Below are examples of different TTS providers:
 
-#### 1. ElevenLabs
+#### ElevenLabs
 
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
 * `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/speech-synthesis/voice-settings).
 
-#### 2. PlayHT
+#### PlayHT
 
 * `quality`: Sets the quality of the audio output.
 * `speed`: Controls the playback speed.
 * `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Allow further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
 
-#### 3. Deepgram
+#### Deepgram
 
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Deepgram offers a few additional parameters that enhance customization:
 
@@ -1282,7 +1282,7 @@ Apart from generic parameters like `ttsLanguage` and `voiceName`, which are comm
 
 These parameters provide additional flexibility for developers to fine-tune the audio output to meet their specific needs. All these parameters will be set inside ttsOptions. [Learn more](https://developers.deepgram.com/docs/tts-rest).
 
-#### 4. AWS
+#### AWS
 
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Aws offers a few additional parameters that enhance customization, like ttsEnhanceVoice, also known as an engine.
 
@@ -1290,7 +1290,7 @@ Amazon Polly has four voice engines that convert input text into lifelike speech
 
 `ttsEnhancedVoice = “neural”`
 
-#### 5. Open AI (Whisper)
+#### Open AI (Whisper)
 
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Whisper offers a few additional parameters that enhance customization, like a model.
 
@@ -1332,7 +1332,7 @@ ttsOptions = {
 <strong>Language : “en-IN”,</strong>
 <strong>voiceName :”‘en-IN-Wavenet-A” </strong>
 <strong> }</strong>
-<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG / smartAssist application</strong>
+<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG / smartAssist application</strong><br>
 <strong>Note: Provider Properties will be Applied at the Session Level</strong>
    </td>
   </tr>
@@ -1467,7 +1467,7 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
 <strong>   “ttsFallbackVoiceName”: “en-US-AmberNeural”</strong>
 <strong>Note: The NODE at which you use FallBack Call control parameters, at the same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
 <strong>The best practice is to keep the same ASR Engine in Fallback with a different Label.</strong>
-<strong>If the current provider fails, Kore VG will pick a fallback provider. Similarly, we can add a Fallback for the TTS Provider.</strong>
+<strong>If the current provider fails, Kore VG will pick a fallback provider. Similarly, we can add a Fallback for the TTS Provider.</strong><br>
 <strong>Note: Fallback properties will be applied at the session level.</strong>
    </td>
   </tr>
@@ -1583,9 +1583,9 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
    <td colspan="5" >
 <h4><strong>Continuous ASR</strong></h4>
 
-Continuous ASR (automatic speech recognition) is a feature that allows speech-to-text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, often have pauses between utterances. 
+Continuous ASR (automatic speech recognition) is a feature that allows speech-to-text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, often have pauses between utterances.<br> 
 <strong>Note: For Only Microsoft </strong>
-Microsoft Azure Introduces one ASR Property that works the same way as Continuous ASR, <strong>AzureSegmentationSilenceTimeout</strong>. Since Silence is detected by ASR Engine Directly Instead of Voice Gateway, detect and merge the response. AzureSegmentationSilenceTimeout is more accurate than continuous ASR. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-recognize-speech?pivots=programming-language-csharp#change-how-silence-is-handled">Learn more</a>.
+Microsoft Azure Introduces one ASR Property that works the same way as Continuous ASR, <strong>AzureSegmentationSilenceTimeout</strong>. Since Silence is detected by ASR Engine Directly Instead of Voice Gateway, detect and merge the response. AzureSegmentationSilenceTimeout is more accurate than continuous ASR. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-recognize-speech?pivots=programming-language-csharp#change-how-silence-is-handled">Learn more</a>.<br>
 <strong>Note</strong>: Continuous ASR / AzureSegmentationSilenceTimeout is applied at the session level. Throughout the Call, it will be active, and the developer can adjust the value at different nodes based on the requirement.
    </td>
   </tr>
@@ -1617,7 +1617,7 @@ Microsoft Azure Introduces one ASR Property that works the same way as Continuou
    <td colspan="5" >
 <h4><strong>Barge-IN</strong></h4>
 
-The Barge-In feature controls Kore VG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
+The Barge-In feature controls Kore VG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.<br>
 <strong>Note: </strong>Barge-in Will be applied at the Node level. 
    </td>
   </tr>
@@ -1749,12 +1749,12 @@ So Bot will take only a maximum of 5 digits Input 1234567 bot takes only 12345.
 
 ### Agent Utils and Voice Utils
 
-#### 1. agentUtils (SmartAssist Library)
+#### Agent Utils (SmartAssist Library)
 
 The `agentUtils` library in the SmartAssist allows you to dynamically modify call transfer properties through the bot builder (XO) before transferring the call to a human agent. It provides a wide range of options, including:
 
 * **Dynamic SIP Configuration**: Modify the SIP properties before transferring the call.
-* **Transfer Types**: Change the type of transfer (e.g., Skill-based, SIP-based).
+* **Transfer Types**: Change the type of transfer (for example, Skill-based, SIP-based).
 * **User Information**: Update user-specific information before routing the call to the agent.
 
 With `agentUtils`, you can adjust SmartAssist properties directly from the bot, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or SmartAssist agent desktop.
@@ -1771,30 +1771,30 @@ Unlike `voiceUtils`, the `agentUtils + Agent Transfer` `Node` flow **supports** 
 **Example Use Case**:
 If you need to dynamically change the SIP transport type or update the SIP URI based on the user's session, `agentUtils` allows you to modify these properties via a script node in the bot builder. The Agent Transfer node will handle the actual routing to the SmartAssist platform. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
 
-#### 2 Voice Utils (Kore VG Library)
+#### Voice Utils (SmartAssist Library)
 
 The `voiceUtils` library is specifically for the SmartAssist Voice Gateway. It is used for transferring calls to external sources, such as SIP endpoints or phone numbers, **without involving the SmartAssist agent desktop**. This library supports functionalities like:
 
-* **Hangup**
-* **Agent Transfer (via Invite and Refer)**
-* **Abort Prompt**
-* **Play and Pause Audio, etc**
+* Hangup
+* Agent Transfer (via Invite and Refer)
+* Abort Prompt
+* Play and Pause Audio, etc
 
 In the case of agent transfers using `voiceUtils`, the call is directly routed to an external source (such as a SIP endpoint or a phone number), bypassing the SmartAssist platform. There is no interaction with the SmartAssist agent desktop, and it’s best used for scenarios where the call transfer needs to be completed externally.
 
 * **Transfer with Headers**: You can use `voiceUtils.invite()` and `voiceUtils.refer()` to transfer the call with custom headers. However, it is important to note that this does not support header encoding/decoding or user-to-user (UUI) data transfer.
 
-**Example Use Case**: \
+   **Example Use Case**:
 If you are transferring the call to an external SIP provider or a phone number directly, `voiceUtils` is the ideal choice. This quick method bypasses SmartAssist and is tailored for simple SIP or phone number transfers.
 
-#### **When to Use What**
+### **When to Use What**
 
 * **Use <code>agentUtils</code> + Agent Transfer Node</strong>:
 This method should be used when <strong>header</strong> <strong>encoding/decoding</strong> or <strong>user-to-user (UUI) data transfer</strong> is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
 * <strong>Use <code>voiceUtils</code></strong>:
 Use this method when you need to <strong>transfer the call directly to an external source</strong> like a SIP endpoint or phone number, <strong>bypassing the SmartAssist platform</strong>. It is best for simple transfers without the need for header encoding or UUI support.
 
-VoiceUtils Helper Methods
+#### VoiceUtils Helper Methods
 
 These functions can be used in the Channel Override template inside Java script sections. All functions can be executed in the Message Node.
 
@@ -1808,11 +1808,11 @@ a) If you need to forcibly hang up the call from the bot during the flow or call
 
 b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
 
-**Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
+   **Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
 
-The message, headers, and queueCommand are optional parameters.
+   The message, headers, and queueCommand are optional parameters.
 
-**Header syntax**:
+   **Header syntax**:
 
 <table>
   <tr>
@@ -2094,9 +2094,9 @@ The “Message” parameter is Optional.
 
 !!! Note
 
-    It supports .wav files and multiple messages also, but it should send as an array of messages
+    It supports .wav files and multiple messages also, but it should send as an array of messages.
 
-ex - var message = [“[https://example.wav](https://example.wav)” , “welcome message”]
+example - var message = [“[https://example.wav](https://example.wav)” , “welcome message”]
 
 **Example**:
 
@@ -2110,7 +2110,7 @@ print(voiceUtils.abortPrompt())
 ```
 #### Send DTMF
 
-This function is used to send DTMF digits from the bot. The digits are sent as RTP payloads using RFC 2833
+This function is used to send DTMF digits from the bot. The digits are sent as RTP payloads using RFC 2833.
 
 **Use Case**:
 
@@ -2200,8 +2200,8 @@ The default is 3 seconds.
 
 **Example:**
 
-** \
-**`let` `length` `=` `4,`
+`\`
+`let` `length` `=` `4,`
 
 ```
 let message = "After 4 second this message will play"
@@ -2262,11 +2262,11 @@ If the Call Control Parameter or Inbuilt Utility Function does not achieve somet
 
 Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAssist or the XO Platform.
 
-    1. Global level (Channel level)
-    2. Experience Flow level
-    3. Node level
+1. Global level (Channel level)
+2. Experience Flow level
+3. Node level
 
-1. **Setting ASR/TTS at the Global level**  
+   **Setting ASR/TTS at the Global level**  
    
    The ASR/TTS engines configured at this level are applicable for all the experience flows (unless a separate speech engine is configured at the experience flow).
 
@@ -2284,7 +2284,7 @@ Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAss
    8. Click **Done**.  
       <img src="../images/save-voice-preference.png" alt="Save Voice Preference" title="Save Voice Preference" style="border: 1px solid gray; zoom:80%;">
 
-2. **Configure ASR/TTS at the Experience Flow level**
+   **Configure ASR/TTS at the Experience Flow level**
 
     The speech engine configured in an Experience Flow applies to the entire flow and any bot called from within that flow.
 
@@ -2304,7 +2304,7 @@ Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAss
    8. Click **Update & Continue to Flow Design** to save the configurations.  
       <img src="../images/edit-flow-experience.png" alt="Continue to Flow Design" title="Continue to Flow Design" style="border: 1px solid gray; zoom:80%;">
 
-3. **Configure ASR/TTS at a node at the Entity level inside a dialog**  
+   **Configure ASR/TTS at a node at the Entity level inside a dialog**  
 
    Speech engines (ASR/TTS) can be configured at any Entity or Message node inside a dialog. Once a speech engine is set at an Entity or Message node, it will be used until the end of the call unless a different speech engine is assigned at another Entity or Message node.
 
@@ -2472,7 +2472,7 @@ botNoInputSpeech can contain Multiple Messages, including AudioUrl.
 Example:  
 <img src="../images/message-node-paremeters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
 
-   !!!Note
+   !!! Note
 
       `botNoInputSpeech` can contain multiple messages, including audio URLs.
 
@@ -2491,9 +2491,9 @@ To handle this scenario:
    * Configure the Service node.
    * Deliver the message after the Service node.
 
-   !!! Note 
+      !!! Note 
 
-      If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+         If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
 
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
@@ -2682,7 +2682,7 @@ If a request is not being assigned to an available agent and the bot is respondi
     <img src="../images/voice-experience.png" alt="Enable Voice Settings" title="Enable Voice Settings" style="border: 1px solid gray; zoom:80%;">
 
     In **Outgoing Voice Agent Transfer** settings, ensure the transfer type is set to **SmartAssist** (3rd block). This will ensure the request is assigned to the SmartAssist agent desktop.  
-    <img src="../images/agent-status-page.png" alt="Outgoing Voice Agent Transfer" title="Outgoing Voice Agent Transfer" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/outgoing-voice-agent-transfer.png" alt="Outgoing Voice Agent Transfer" title="Outgoing Voice Agent Transfer" style="border: 1px solid gray; zoom:80%;">
 
     If the transfer type is set to **Call Number** or **SIP Transfer**, the call will be routed to a third party instead of the SmartAssist agent console.
 
