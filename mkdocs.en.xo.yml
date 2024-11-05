@@ -143,7 +143,7 @@ nav:
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
-            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
+            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/setup-kore-voice-gateway.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -189,8 +189,6 @@ nav:
           - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
           - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
           - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
-          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
-          - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
           - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md  
           - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Node Connections:
@@ -519,7 +517,11 @@ nav:
           - Automation APIs: apis/automation/api-list.md
           - Search APIs: apis/searchai/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+            - QM APIs: apis/contact-center/qm-apis/apis-list.md
+              - Raw Data API: apis/contact-center/qm-apis/raw-data-api.md
+              - Auto QA Reporting API: apis/contact-center/qm-apis/auto-qa-reporting-api.md
           - Agent APIs: apis/agent-ai/apis-list.md
+
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

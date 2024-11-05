@@ -90,7 +90,9 @@ Here you can see a list of existing statuses, along with the following informati
 
 !!! Note
 
-    System Away and System Busy statuses are enabled by default for new accounts. To enable them for existing accounts, contact Kore Support. 
+    * System Away and System Busy statuses are enabled by default for new accounts. To enable them for existing accounts, contact Kore Support. 
+
+    * The system preserves an agent's last recorded status, such as "available," "away," or "busy," to ensure a seamless workflow. When an agent returns from a break or completes an outbound call, they automatically revert to their previous status without manual intervention. During outbound calls, the system temporarily updates the status but restores it to the prior state once the call ends. Similarly, when the system places an agent in a "busy" state due to high activity or system processes, their last status is preserved and reinstated after the busy period, enhancing efficiency and consistency in agent operations.
 
 ### Create an Agent Status
 

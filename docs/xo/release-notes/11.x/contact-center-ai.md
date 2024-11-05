@@ -18,9 +18,7 @@ To improve agent experience and maintain consistent availability, the agent’s 
 * Complete outbound calls, or
 * Switch from system-assigned states.
 
-#### Support for German
-
-The Agent Console or Desktop now supports extended localization for German, allowing for full configuration and use in German.
+[Learn more](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
 
 #### Connection Status Alerts
 
@@ -31,6 +29,8 @@ A new status indicator at the top of the Agent Console shows the connection stat
 * The connection is restored (online).
     <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
 
+[Learn more](../../console/manage-layout.md#connection-handling).
+
 #### Real-Time Disposition Updates
 
 The enhanced disposition management allows agents to select dispositions during active conversations, improving categorization and data accuracy.
@@ -38,7 +38,7 @@ The enhanced disposition management allows agents to select dispositions during 
 Key benefits:
 
 * Agent Productivity and Data Accuracy: Agents can tag interactions as they happen, reducing the risk of oversight.
-* Enhanced Filtering: Dispositions are integrated in real-time with dashboard filters, allowing users to track conversations with instant dashboard updates. Learn more.
+* Enhanced Filtering: Dispositions are integrated in real-time with dashboard filters, allowing users to track conversations with instant dashboard updates. [Learn more](../../console/interacting-with-customers.md#dispositions).
 
 #### Improved Visibility of Auto-Accepted Conversation
 
@@ -58,7 +58,7 @@ Key benefits:
 
 #### SMS Campaigns - Advanced Message Option
 
-SMS Campaigns now support the Advanced Message format in addition to the Simple message format. With the Advanced message format, businesses can establish two-way communication with their end customers. Within the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required.
+SMS Campaigns now support the Advanced Message format in addition to the Simple message format. With the Advanced message format, businesses can establish two-way communication with their end customers. Within the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required. [Learn more](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
 
 ### Kore Voice Gateway
 

@@ -11,7 +11,7 @@ The Settings has the following two sections:
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the **Settings** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.
+Users can access the **Conversation Intelligence** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.
 
 <img src="../images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
@@ -33,7 +33,7 @@ Steps to enable the Conversation Intelligence:
 2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details.  
 <img src="../images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
 
-Steps to disable the Conversation Intelligence Dashboard:
+Steps to disable the **Conversation Intelligence** Dashboard:
 
 1. Disable the **Conversation Intelligence Dashboard** toggle button. The following dialog box appears.  
 <img src="../images/disable-conversation-intelligence.png" alt="Disable Converstion Intelligence" title="Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
@@ -82,7 +82,7 @@ Steps to enable the Script Adherence Configuration:
 
 The App owners can use the Settings option under QM to enable or disable auto QA scoring of interactions and at an app level. Users with relevant permissions can enable and create bookmarks to collect interactions in different bookmarks for easy future reference.
 
-You can access the **Settings** - **Quality Management** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Quality Management**.  
+Users can access the **Quality Management** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Quality Management**.  
 <img src="../images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
 The QA has the following sections:
@@ -104,12 +104,12 @@ Steps to enable Auto QA:
 
 2. Enable the **Auto QA**.
 
+3. Click **Save** to save the settings.
+
 !!! Note
 
     Except the administrator, no other user can enable the Auto QA option for agents.The Auto QA toggle option is always in disable mode though it is in activate mode for a user.
-
-3. Click **Save** to save the settings.
-
+    
 Once the **Auto QA** feature is enabled, you get the following screen to create and configure evaluation forms.
 
 <img src="../images/qa-settings-eva-forms.png" alt="Create and Config Evaluation Forms" title="Create and Config Evaluation Forms" style="border: 1px solid gray; zoom:60%;">
@@ -138,9 +138,8 @@ This setting allows you to enable or disable agent-level interaction scoring thr
 
 #### Enable Agent Score Card
 
-Steps to enable the Agent Score Card:
-1. Expand the **Quality Management** collapse icon to view the **Agent Score Card**. 
-
+Steps to enable the Agent Score Card:  
+1. Expand the **Quality Management** collapse icon to view the **Agent Score Card**.   
 <img src="../images/sett-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
 2. Enable the **Agent Score Card** option.

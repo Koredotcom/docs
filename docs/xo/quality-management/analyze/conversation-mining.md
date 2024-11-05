@@ -202,6 +202,7 @@ This indicates the automated QA score associated with an interaction based on th
 <img src="../conversation-mining/images/filter-by-behaviour-agent-kore-evaluation.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:80%;">
 
 Once you Save Filter, you will get the following filters options to:  
+
 * **Copy**
 
     Allows the user to create another saved copy of the filter.
@@ -283,9 +284,9 @@ Steps to **Add New Audit Allocation** in Assignment:
 2. Enter the % allocation of interactions that you want to allocate for each selected auditor.
     1. The interactions column displays the number of interactions that will be assigned for each auditor based on the allocation % input that allows you to adjust the input based on your preferences.  
     <img src="../conversation-mining/images/audit-allocation-search-filter.png" alt="Audit Allocation Search Filter" title="Audit Allocation Search Filter" style="border: 1px solid gray; zoom:60%;">
-3. The total allocation percentage across all auditors must sum to 100% to enable the **Create** button.
+3. The total allocation percentage across all auditors must sum to 100% to enable the **Create** button.  
 
-    !!! Note
+    !!! note
 
         Once the assignment configuration is completed, such that the total allocation percentage is 100%.
 
