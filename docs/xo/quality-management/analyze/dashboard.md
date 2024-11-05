@@ -2,11 +2,11 @@
 
 The Dashboard provides a 360-degree view of Audit details, Fail Statistics, and Performance Monitoring of the Agent Evaluation Forms on a Daily, Weekly, and Monthly basis. It holds the last seven months of a year's data. By default, the Dashboard shows the Daily report for all three categories. This provides a quick glance through to monitor the quality standard at a given point of time.
 
-You can view the Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
+Users can view the Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
 
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
-!!! Note
+!!! note
 
     To view this **Dashboard** feature, you must first enable Auto QA setting and configure an evaluation form to generate Auto QA scores. Only users having the QA functionality permission can access this.
 
@@ -77,7 +77,7 @@ The users can view failure rates across evaluation forms they choose. This makes
 ### Agent Scorecard
 This shows the Trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard. 
 
-!!! Note
+!!! note
 
     In the Dashboard, the Agent Scorecard widget will appear only when the Agent Scorecard widget option is enabled in the Quality Management Settings.
 
@@ -114,7 +114,7 @@ This widget provides users with a summarized view of the agent leaderboard, offe
 
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+!!! note
 
     To view this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
 

@@ -2,6 +2,100 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.7.0 November 03, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### LLM & Generative AI
+
+#### Amazon Bedrock Integration
+
+XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across all Co-Pilot and Dynamic Conversations features. Note that while Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only make use of the model with the help of custom prompts.
+
+Key features:
+
+* Amazon Bedrock Connection: Connect to multiple Amazon Bedrock models securely using your AWS credentials and IAM role authentication.
+
+* Integration Setup: Configure the integration by providing an integration name, model details, endpoint, and IAM role credentials.
+
+* Custom Prompts: Create model-specific prompts for all Co-Pilot and Dynamic Conversations features with complete control over prompt design and optimization.
+
+* Security: End-to-end encryption with secure temporary credential management through Amazon STS.
+
+Key benefits:
+
+* Access to Amazon's advanced language models.
+
+* Seamless integration with existing XO Platform features.
+
+* Flexible prompt customization.
+
+* Enterprise-grade security.
+
+### Channels
+
+#### Netcore WhatsApp Business Integration
+
+The Platform now supports WhatsApp business messaging using Netcore as a new channel. This integration enables businesses to connect their WhatsApp Business account through Netcore to send text, media, and interactive messages using Virtual Assistants.
+
+Key features:
+
+* Single API Integration: Manage all WhatsApp conversations and virtual assistants through one API.
+
+* Rich Messaging Capabilities: Send text messages, share media files, and add interactive buttons and quick replies.
+
+* Secure Interactions: Built-in end-to-end encryption for secure message delivery.
+
+#### Email Management Enhancements
+
+##### Domain Configuration
+
+The enhanced email configuration options allow users to configure both Kore and custom domain email addresses to maintain brand consistency:
+
+Key updates:
+
+* Add multiple email addresses for Kore domains.
+
+* Set up verified custom domains.
+ 
+* Attach experience flows to specific addresses.
+
+##### Email Blacklisting
+
+The new Email Blacklist option helps protect your email reputation with administrator controls.
+
+Key features:
+
+* Block problematic email addresses.
+
+* Prevent automated responses to blacklisted addresses.
+
+* Maintain standard processing for verified contacts.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
+
+### Web SDK
+
+#### Webchat Theme Enhancement
+
+The XO Platform's Webchat interface now offers enhanced theme management capabilities. The users can preview themes before applying them and customize them to match their brand requirements.
+
+Key updates:
+
+* Theme Preview and Management: Create, customize, and preview themes before applying them to your webchat interface. Choose from pre-designed templates or customize them as per brand requirements.
+
+* Theme Options: Create new custom themes, Copy existing themes, Edit theme settings, Preview before applying, and Delete unused themes.
+
+* Theme Application: Preview themes in the test environment before applying. Changes take effect in live chat after publishing, with a clear indication of your active theme.
+
+Backward compatibility: 
+
+* Available for XO v11 while preserving all existing themes and settings.
+
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>

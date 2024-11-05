@@ -2,6 +2,121 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.7.0 November 03, 2024
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Preserve Agent’s Last Status
+
+To improve agent experience and maintain consistent availability, the agent’s last manually set status is now preserved across sessions. A chosen status (Available, Away, or Busy) is automatically restored when the agent:
+
+* Return from breaks,
+* Complete outbound calls, or
+* Switch from system-assigned states.
+
+[Learn more](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
+
+#### Support for German
+
+The Agent Console or Desktop now supports extended localization for German, allowing for full configuration and use in German.
+
+#### Connection Status Alerts
+
+A new status indicator at the top of the Agent Console shows the connection state and automatically updates when:
+
+* The connection is lost (offline),
+* Reconnection is in progress, or
+* The connection is restored (online).
+    <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
+
+[Learn more](../../console/manage-layout.md#connection-handling).
+
+#### Real-Time Disposition Updates
+
+The enhanced disposition management allows agents to select dispositions during active conversations, improving categorization and data accuracy.
+
+Key benefits:
+
+* Agent Productivity and Data Accuracy: Agents can tag interactions as they happen, reducing the risk of oversight.
+* Enhanced Filtering: Dispositions are integrated in real-time with dashboard filters, allowing users to track conversations with instant dashboard updates. [Learn more](../../console/interacting-with-customers.md#dispositions).
+
+#### Improved Visibility of Auto-Accepted Conversation
+
+Tracking auto-accepted conversations is now more effective with real-time agent assignment visibility:
+
+* See assigned agents immediately in the queue and agent tabs.
+* Monitor conversations before the agent's first response.
+* View synchronized assignment updates across all tabs.
+
+Key benefits:
+
+* Better workload monitoring.
+* Improved resource allocation.
+* Real-time conversation tracking.
+
+### Campaigns
+
+#### SMS Campaigns - Advanced Message Option
+
+SMS Campaigns now support the Advanced Message format in addition to the Simple message format. With the Advanced message format, businesses can establish two-way communication with their end customers. Within the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required. [Learn more](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
+
+### Kore Voice Gateway
+
+#### External Agent Transcription Control using SIP INVITE
+
+The new `agentUtils.setExternalAgentTranscribe` utility method helps manage transcription settings for external agents integrated via SIP INVITE. It allows transcription enablement or disablement during active calls on the Agent Assist platform.
+
+Utility details:
+
+* Function: `agentUtils.setExternalAgentTranscribe(param)`
+* Supported in:
+    * Experience Flow script nodes
+    * Bot Builder Dialog Flows
+    * Kore Voice Gateway integrations
+
+Key usage:
+
+* Enable/disable transcription during live calls.
+* Adjust settings based on agent requirements.
+* Configure language and provider preferences.
+* Control transcription in temporary scenarios.
+
+#### Handling Concurrent Outbound Calls
+
+This update allows agents to make concurrent outbound calls to the same customer seamlessly while maintaining separate conversation contexts for each agent.
+
+Each call remains independent with the following:
+
+* Isolated conversation records.
+* Separate call controls.
+* Independent agent sessions.
+
+#### Text-to-Speech Customization
+
+New voice controls for PlayHT, Eleven Labs, Google Cloud, Microsoft Azure, and AWS Polly let users customize parameters like speaking speed, pitch, and emotion to improve overall speech output quality.
+
+### Analytics
+
+#### Queue Tracking Improvement
+
+Queue metrics now focus on live customer interactions, showing only active cases in the dashboards. Voicemails and callbacks are excluded from counts until an agent accepts them. Also, "Waiting" and "In Queue" queue labels are standardized across views to reflect this change for clearer monitoring.
+
+#### Revised Average Speed to Answer Calculation
+
+The Average Speed to Answer (ASA) calculation is refined to focus on initial customer wait times:
+
+* Only counts first queue entry.
+* Excludes voicemails, callbacks, and outbound calls.
+* Measures time until first agent response.
+
+By excluding repeat entries and non-standard conversation types, ASA now better represents the average answer speed, positively impacting service-level evaluations.
+
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>
