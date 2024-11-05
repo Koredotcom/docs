@@ -143,7 +143,7 @@ nav:
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
-            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
+            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/setup-kore-voice-gateway.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md

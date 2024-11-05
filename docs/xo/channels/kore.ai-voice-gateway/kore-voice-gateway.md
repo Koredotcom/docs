@@ -1,298 +1,2694 @@
-# Kore.ai Voice Gateway
+# Kore Voice Gateway
 
-Kore.ai Voice Gateway (VG) helps configure how Contact Center AI handles automation for inbound voice calls.
+## Introduction
 
-By going to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**, you can add phone numbers, set up SIP Transfer, and configure the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
-<img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:100%;">
+The Kore Voice Gateway manages voice communication on the XO Platform. It seamlessly integrates with existing systems or utilizes Kore.ai's native voice processing capabilities to optimize voice interactions.
 
-## Phone Numbers
+As a fully-featured solution within the Kore XO platform, the Voice Gateway enables voice automation and human interactions, enhancing overall communication capabilities.
 
-This option helps add, edit, or delete a local or toll-free phone number to which Contact Center AI forwards incoming customer calls at a contact center.
+## Prerequisites
 
-### Buy New Phone Number
+By default, an account on SmartAssist or an app in the XO v11+ has Kore VG enabled. To verify your account is correctly setup, please ensure the following:
 
-Steps to buy a new phone number:
+1. A SmartAssist account in XO v10. Kore VG is supported without an explicit XO Contact Center account in XO v11.
+2. The Voice channel is configured on SmartAssist / XO v11. [Learn more](../../channels/third-party-voice.md).
+3. The app is associated with the channel.
 
-1. Click the **Phone Numbers** tab and click **Buy New Phone Number**.
-<img src="../images/buy-new-phone-number.png" alt="Buy New Phone Number" title="Buy New Phone Number" style="border: 1px solid gray; zoom:100%;">
+## Call Control Parameters
 
-2. You can configure a custom local or toll-free number by clicking **Get New Phone Number** on the **Phone Number** window.
-<img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
+Call control parameters are general-purpose parameters that can modify a call's behavior, including ASR/STT & TTS configurations.
 
-    1. Select the Select the **Country**.
-    2. Select either the **Local** or **Toll-Free Number** option.
-    3. Select the **State**.
-    4. Enter the **Area Code**.
-    5. After the above fields are configured, Contact Center AI displays the monthly fee and the operational charge per minute.
-    <img src="../images/get-new-phone-number-details.png" alt="Get New Phone Number Details" title="Get New Phone Number Details" style="border: 1px solid gray; zoom:100%;">
+!!! Note
 
-3. Configure an available number with the following steps:
+    Automatic Speech Recognition (ASR) and Speech-to-Text (STT) are two terms that refer to the same technology. Both involve converting spoken language into written text by analyzing and interpreting audio input. The terms are used interchangeably, describing the same function—transforming speech into readable, actionable text.
 
-    6. Click the **Get Number** button.
-    7. On the Forward to Phone Number page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both, and click **Done**.
-    <img src="../images/forward-to-phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:100%;">
-    8. A success confirmation message is displayed, and the phone number is added.
-    9. You can now call this number to test your Use Cases.
-    10. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
+There are two ways to define the Call Control Parameters:
 
-### Attach Flow
+### Node Level Call Control
 
-Steps to attach a flow to the phone number:
+The call control section is Available In [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md#ivr-properties)/[Confirmation Node](../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md#ivr-properties) > IVR Properties > Advanced Controls. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar).  
+<img src="../images/node-level-call-control-parameters.png" alt="Node Level Call Control" title="Node Level Call Control" style="border: 1px solid gray; zoom:80%;">
 
-1. Click **+ Attach Flow**. Hovering over the pie icon displays "**No Flow Attached**".
-<img src="../images/attach-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:100%;">
+### Channel Level Call Control
 
-2. Select a **Start Flow** you want to add to this number and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).  
-<img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:100%;">
+For information on configuring the Call Control Parameters at the channel level, refer to [Define the Call Control Parameters](../smart-assist-gateway.md#step-4-define-the-call-control-parameters).
 
-3. The attached flow appears. Hovering over the pie icon displays "**Configured**".
-<img src="../images/voice-flow-attached.png" alt="Voice Flow Configured" title="Voice Flow Configured" style="border: 1px solid gray; zoom:100%;">
+#### Supported Speech Engines
 
-### Edit a Phone Number
-
-Steps to edit a previously added phone number:
-
-1. Click the ellipsis (**︙**) and select **Update**.  
-<img src="../images/update-phone-number.png" alt="Update Phone Number" title="Update Phone Number" style="border: 1px solid gray; zoom:100%;">
-
-2. On the Forward to Phone Number page, click **Change**.
-<img src="../images/change-button.png" alt="Change Button" title="Change Button" style="border: 1px solid gray; zoom:100%;">
-
-3. Make the necessary edits and click **Done**.
-4. A success confirmation message is displayed when the phone number is updated.
-
-### Delete a Phone Number
-
-Deleting a phone number means stopping all services associated with it. If you remove a phone number and want to add it back later, you may be unable to do so if another user has selected it.
-
-Steps to delete an existing phone number:
-
-1. Click the ellipsis (**︙**) and select **Delete**.  
-<img src="../images/delete-phone-number.png" alt="Delete Phone Number" title="Delete Phone Number" style="border: 1px solid gray; zoom:100%;">
-
-2. The following pop-up is displayed. Click **Delete** to confirm your choice.
-<img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">
-
-3. Alternatively, click **Update**, go to the **Forward to Phone Number** window, and click **Remove**. You will need to confirm your choice.
-<img src="../images/remove-phone-number.png" alt="Remove Phone Number" title="Remove Phone Number" style="border: 1px solid gray; zoom:100%;">
-
-4. A success confirmation message is displayed once the phone number is deleted.
-
-## SIP Numbers
-
-This option is useful when transferring calls to Contact Center AI from a toll-free or local phone number using Session Initiation Protocol (SIP) in the IVR system.
-
-Under the SIP Transfer tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.
-
-Steps to configure SIP Transfer:
-
-1. Click **Configure SIP Transfer**.
-<img src="../images/configure-sip-transfer.png" alt="Configure SIP Transfer" title="Configure SIP Transfer" style="border: 1px solid gray; zoom:100%;">
-
-2. On the **Transfer from IVR** page, configure the following:
-    1. **SIP URI**: This is a pre-configured field.
-    2. **Network**: To configure the Network, you can select one of the following:
-        1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox.
-        <img src="../images/sip-transfer-setup.png" alt="SIP Transfer Setup" title="SIP Transfer Setup" style="border: 1px solid gray; zoom:100%;">
-
-        2. Under **Domain Name**, provide the following:
-    3. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone.
-    4. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose A-record, SRV, NAPTR, or MS-SYNC.
-    <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:100%;">
-
-    5. Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
-    6. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
-    7. (Optional) Set the **SIP Credentials** (username and password) to access your SIP transfer setup account.
-    8. Click **Next**.
-    <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:100%;">
-
-    9. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
-    10. Click **Save**.
-    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:100%;">
-
-    11. The selected information appears on the Channels page.
-    <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:100%;">
-
-### Attach Flow
-
-Steps to attach a flow to the SIP Number:
-
-1. Click **+ Attach Flow**. Hovering over the link icon displays "**No Flow Attached**".
-<img src="../images/attach-flow-sip.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:100%;">
-
-2. Select a **Start Flow** to add to individual numbers and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
-
-3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays "**Configured**".
-<img src="../images/flow-attached-sip.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:100%;">
-
-### Edit a SIP Number
-
-Steps to edit a previously added SIP number:
-
-1. Click the ellipsis (**︙**) and select **Update**.  
-<img src="../images/update-sip-number.png" alt="Update Button SIP Number" title="Update Button SIP Number" style="border: 1px solid gray; zoom:100%;">
-
-2. Make the necessary changes on the Transfer from IVR page, and click **Next**.
-<img src="../images/edit-sip-transfer.png" alt="Edit SIP Number" title="Edit Button SIP Number" style="border: 1px solid gray; zoom:100%;">
-
-3. Make the necessary changes on the Forward to Phone Number page, and click **Save**.
-<img src="../images/edit-forward-to-phone-number-page.png" alt="Edit Forward to Phone Number" title="Edit Forward to Phone Number" style="border: 1px solid gray; zoom:100%;">
-
-4. A success confirmation message is displayed when the phone number is updated.
-
-### Delete a SIP Number
-
-Deleting a SIP number means stopping all services associated with it.
-
-Steps to delete a SIP number:
-
-1. Click the ellipsis (**︙**) and select **Delete**.  
-<img src="../images/delete-sip-number.png" alt="Delete Button SIP" title="Delete Button SIP" style="border: 1px solid gray; zoom:100%;">
-
-2. The following pop-up is displayed. Click **Delete** to confirm your choice.
-<img src="../images/delete-confirmation-sip.png" alt="Delete SIP Number" title="Delete SIP Number" style="border: 1px solid gray; zoom:100%;">
-
-3. The sip number is deleted.
-
-## Voice Preferences
-
-You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.
-<img src="../images/voice-preferences.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:100%;">
-
-### Text-to-Speech Engine
-
-Steps to configure the TTS engine:
-
-1. In the Voice Preferences window, select a text-to-speech engine: Google Cloud Text-to-Speech, Microsoft Azure Speech Services, or AWS Amazon Polly.
-2. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to change the **Playback Speed** and **Download** the voice preview.
-3. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each has its voice options.
-4. Select a different Voice Language if required.
-<img src="../images/tts-engine.gif" alt="TTS Engine" title="TTS Engine" style="border: 1px solid gray; zoom:100%;">
-
-### Automated Speech Recognition Engine
-
-Steps to configure the ASR Engine:
-
-1. Select an **Automated Speech Recognition Engine**: Google Cloud Speech-to-Text, Microsoft Azure Speech Services, AmiVoice, or NVIDIA Riva.
-2. Select the Dialect and click **Done** once you have completed configuring your voice preferences.
-<img src="../images/asr-engine.png" alt="ASR Engine" title="ASR Engine" style="border: 1px solid gray; zoom:100%;">
-
-The set voice, language, and dialect apply to automated customer responses that use text-to-speech.
-
-#### List of Supported Dialects
-
-The following dialects are supported:
+Kore.ai supports the following third-party service providers for ASR/STT. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
 
 <table>
   <tr>
-   <td>English (Australia)
+   <td><strong>Speech Engine</strong>
    </td>
-   <td>English (Nigeria)
+   <td><strong>ASR Name</strong>
    </td>
-  </tr>
-  <tr>
-   <td>English (Canada)
+   <td><strong>TTS Name</strong>
    </td>
-   <td>English (Pakistan)
+   <td><strong>Supported Environment</strong>
    </td>
   </tr>
   <tr>
-   <td>English (Ghana)
+   <td>Microsoft Azure
    </td>
-   <td>English (Philippines)
+   <td>microsoft
    </td>
-  </tr>
-  <tr>
-   <td>English (Hong Kong)
+   <td>microsoft
    </td>
-   <td>English (Singapore)
-   </td>
-  </tr>
-  <tr>
-   <td>English (India)
-   </td>
-   <td>English (South Africa)
+   <td>On Premise
+<p style="text-align: center">
+Cloud
    </td>
   </tr>
   <tr>
-   <td>English (Ireland)
+   <td>Google
    </td>
-   <td>English (Tanzania)
+   <td>google
+   </td>
+   <td>google
+   </td>
+   <td>On-Premise
+<p style="text-align: center">
+Cloud
    </td>
   </tr>
   <tr>
-   <td>English (Kenya)
+   <td>Nvidia (Riva)
    </td>
-   <td>English (United Kingdom)
+   <td>nvidia
+   </td>
+   <td>nvidia
+   </td>
+   <td>On-Premise
    </td>
   </tr>
   <tr>
-   <td>English (New Zealand)
+   <td>Amazon (AWS)
+   </td>
+   <td>aws
+   </td>
+   <td>polly
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+  <tr>
+   <td>Deepgram
+   </td>
+   <td>deepgram
+   </td>
+   <td>Not Supported
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+  <tr>
+   <td>Elevenlabs
+   </td>
+   <td>Not Supported
+   </td>
+   <td>elevenlabs
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+  <tr>
+   <td>Whisper
+   </td>
+   <td>Not Supported
+   </td>
+   <td>whisper
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+  <tr>
+   <td>Ami voice
+   </td>
+   <td>amivoice
+   </td>
+   <td>
+   </td>
+   <td>Cloud
+   </td>
+  </tr>
+</table>
+
+### Common ASR Parameters
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Supporting STT/ TTS</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Examples</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>alternativeLanguages
+   </td>
+   <td>Array of Object
+   </td>
+   <td>Google
+Microsoft
+Deepgram
+   </td>
+   <td>An array of alternative languages that the speaker may be using
+Based on user utterance, the transcript will come from either of the selected languages.
+   </td>
+   <td>alternativeLanguages =
+[
+    {
+   
+   "language": "de-DE",
+      "voiceName": "de-DE-KatjaNeural"
+    },
+    {
+      "language": "fr-FR",
+      "voiceName": "fr-FR-DeniseNeural"
+    }
+  ]
+   </td>
+  </tr>
+  <tr>
+   <td>sttMinConfidence
+   </td>
+   <td>Number
+Range-
+<strong>(0.1 to 0.9)</strong>
+   </td>
+   <td>ALL
+   </td>
+   <td>If the <code>minConfidence</code> parameter is set, and the transcript generated by the ASR falls below this confidence threshold, the Voice Gateway will disregard the input and trigger the timeout prompt to play. This ensures that only highly accurate speech recognition results are captured, improving the quality of the interaction.
+   </td>
+   <td>Example
+ <code>sttMinConfidence = 0.5</code>,
+Any ASR transcript with a confidence score below 0.5 will be ignored, and the system will play the timeout prompt. This ensures that only inputs with sufficient accuracy are processed, improving reliability in voice interactions.
+   </td>
+  </tr>
+  <tr>
+   <td>Hints with Phrase level hintsboost
+This is an additional feature present in allowing a boost factor to be specified at the phrase level
+Kore VG
+Key = hints
+   </td>
+   <td><code>  Array Of Object</code>
+   </td>
+   <td>:
+Google
+Nvidia
+   </td>
+   <td>The parameter can list phrases or words that are passed to the speech-to-text service as "hints" for improving the accuracy of speech recognition.
+For example - weather and whether have the same pronunciation, for more accuracy we gave hints to the bot.  
+Hints : [‘weather’] It will take weather as input
+Put this array in the Grammar section of the bot builder.
+   </td>
+   <td><code>"hints" = [</code>
+<code>  {"phrase": "benign", "boost": 50},</code>
+<code>  {"phrase": "malignant", "boost": 10},</code>
+<code>  {"phrase": "biopsy", "boost": 20},</code>
+<code>]</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Hints with Separate HintBoost
+   </td>
+   <td>
+
+   </td>
+   <td>Google
+Microsoft
+Nvidia
+   </td>
+   <td>
+   </td>
+   <td><code>"hints": ["benign", "malignant", "biopsy"],</code>
+<code>"hintsBoost": 50</code>
+   </td>
+  </tr>
+  <tr>
+   <td>sttDisablePunctuation
+   </td>
+   <td>Boolean
+   </td>
+   <td>:
+ Google
+ Microsoft
+   </td>
+   <td>Prevents or Includes the ASR to add punctuation in response.
+By default, ASR will add punctuation in the User Transcript
+(for example, periods, commas, and question marks).
+   </td>
+   <td>sttDisablePunctuation : true
+True: means remove the punctuation.
+False: Add the punctuation
+   </td>
+  </tr>
+  <tr>
+   <td>vadEnable
+   </td>
+   <td>Boolean
+   </td>
+   <td>ALL
+   </td>
+   <td>If true, delay connecting to the cloud recognizer until the speech is detected
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>vadVoiceMS
+   </td>
+   <td>Number in MS
+   </td>
+   <td>ALL
+   </td>
+   <td>If vad is enabled, the number of milliseconds of speech is required before connecting to the cloud recognizer.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>vadMode
+   </td>
+   <td>Number between (0-3)
+   </td>
+   <td>ALL
+   </td>
+   <td>If vad is enabled, this setting governs the sensitivity of the voice activity detector; the value must be between 0 to 3 inclusive, lower numbers mean more sensitive
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Microsoft ASR</strong></h4>
+
+   </td>
+  </tr>
+  <tr>
+   <td>azureSpeechSegmentationSilenceTimeoutMs
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>Speech_SegmentationSilenceTimeoutMs is a timeout that can be set in between the phrases
+It is similar to Continuous ASR, the Only Difference is  Continuous ASR is handled by vocieGateway but Azure speech segmentation is handled by AZURE ASR, So accuracy will be higher as compared to Continios ASR.
+   </td>
+   <td><a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-recognize-speech?pivots=programming-language-csharp#change-how-silence-is-handled">More Info</a>
+   </td>
+  </tr>
+  <tr>
+   <td>sttEndpointID
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Custom service endpoint to connect to, instead of hosted Microsoft regional endpoint.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>azurePostProcessing
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>improve the final transcript, such as text normalization (adjusting punctuation, casing, etc.) or specific custom handling based on the needs of the application.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>        azureSpeechRecognitionMode
+   </td>
+   <td>String (Enum)
+It can be either
+1) AtStart,
+2) Continuous
+   </td>
+   <td>
+   </td>
+   <td>"<strong>AtStart</strong>": Starts recognizing speech as soon as it detects audio input and stops when the speaker finishes. Suitable for short, one-time speech recognition tasks
+"<strong>Continuous</strong>": Continuously listens and transcribes speech, ideal for longer audio streams or uninterrupted speech sessions like meetings or dictation.
+   </td>
+   <td>azureSpeechRecognitionMode = Continuous“”
+   </td>
+  </tr>
+  <tr>
+   <td>profanityOption
+   </td>
+   <td>String(enum)
+   </td>
+   <td>
+   </td>
+   <td>It is used to mask profane words in the transcript. It has three values masked, removed, or raw.
+Default: raw
+   </td>
+   <td>Example:
+profanityOption = “masked”
+   </td>
+  </tr>
+  <tr>
+   <td>initialSpeechTimeoutMs
+   </td>
+   <td>Number in Ms
+   </td>
+   <td>
+   </td>
+   <td>Initial speech timeout in milliseconds.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>requestSnr
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Request signal-to-noise information.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>outputFormat
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>simple or detailed. Default: simple.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Google ASR</strong></h4>
+   </td>
+  </tr>
+  <tr>
+   <td>sttProfanityFilter
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>A profanity filter provides a few options for dealing with profane words in the transcription.
+Default: false
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>singleUtterance
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>If true, return only a single utterance/transcript.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sttModel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>speech recognition model to use (default: phone_call)
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sttEnhancedModel
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Use enhanced model
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>words
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Enable word offsets
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>diarization
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Enable speaker diarization
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>diarizationMinSpeakers
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>Set the minimum speaker count.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>diarizationMaxSpeakers
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>Set the maximum speaker count.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>interactionType
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Set the interaction type: discussion, presentation, phone_call, voicemail, professionally_produced, voice_search, voice_command, dictation
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>naicsCode
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>Set an industry NAICS code that is relevant to the speech.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>googleServiceVersion
+   </td>
+   <td>String
+v1  or v2
+   </td>
+   <td>
+   </td>
+   <td>Specifies the version of Google's ASR API in use to ensure compatibility.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>googleRecognizerId
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Identifies the specific speech recognition model for processing the input.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>googleSpeechStartTimeoutMs
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>Set the time (in milliseconds) to wait for the speaker to start speaking before timing out.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>googleSpeechEndTimeoutMs
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>Defines how long to wait (in milliseconds) for silence before determining the end of speech.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>googleEnableVoiceActivityEvents
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Enables detection of when the user starts or stops speaking during recognition.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>googleTranscriptNormalization
+   </td>
+   <td>Array
+   </td>
+   <td>
+   </td>
+   <td>Adjusts the transcript to make it more readable, applying corrections like punctuation and caseing.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>AWS ASR</strong></h4>
+
+   </td>
+  </tr>
+  <tr>
+   <td>awsAccessKey
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>The AWS access key for authenticating requests.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsSecretKey
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>The corresponding secret key is used with the access key for AWS service authentication.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsSecurityToken
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>A temporary security token (optional) for requests that use AWS Security Token Service (STS).
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsRegion
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Specifies the AWS region where the service requests will be sent (for example, us-west-2, eu-central-1).
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>String
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>The name of the vocabulary filter is used to filter certain words or phrases during transcription.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsVocabularyFilterName
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>The name of the vocabulary filter is used to filter certain words or phrases during transcription.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsVocabularyFilterMethod
+   </td>
+   <td>String/enum
+  "remove",
+   “mask",
+   “tag”
+   </td>
+   <td>
+   </td>
+   <td>Specifies how words in the vocabulary filter are handled. It can take one of three values:
+<ul>
+
+<li><code>"remove"</code>: Completely remove the word from the transcription.</li>
+
+<li><code>"mask"</code>: Mask the word (e.g., replace it with asterisks).</li>
+
+<li><code>"tag"</code>: Add tags to identify the filtered word.</li>
+</ul>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsLanguageModelName
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>The name of a custom language model is to be applied during transcription for better accuracy in a domain-specific language.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsPiiEntityTypes
+   </td>
+   <td>Array
+   </td>
+   <td>
+   </td>
+   <td>A list of PII (Personally Identifiable Information) entity types to be detected (for example, ["NAME", "EMAIL", "SSN"]). This helps the system identify and protect sensitive information during transcription.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>awsPiiIdentifyEntities
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>A flag that indicates whether or not to identify and highlight PII entities within the transcribed text. If true, PII entities will be detected and processed according to the configuration.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Nvidia ASR</strong></h4>
+
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaRivaUri
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>grcp endpoint (ip:port) that Nvidia Riva is listening.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaMaxAlternatives
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>The number of alternatives to return.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaProfanityFilter
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to remove profanity from the transcript.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaWordTimeOffsets
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>indicates whether to provide word-level detail.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaVerbatimTranscripts
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to provide verbatim transcripts.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaCustomConfiguration
+   </td>
+   <td>Object
+   </td>
+   <td>
+   </td>
+   <td>An object of key-value pairs that can be sent to Nvidia for custom configuration.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>nvidiaPunctuation
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to provide punctuation in the transcripts.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Deepgram ASR</strong></h4>
+
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramApiKey
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Deepgram API key to authenticate with (overrides setting in Kore VG portal).
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramTier
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Deepgram tier you would like to use ('enhanced', 'base').
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sttModel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Deepgram model used to process submitted audio ('general', 'meeting', 'phonecall', 'voicemail', 'finance', 'conversationalai', 'video', 'custom').
+   </td>
+   <td>nova-2-phonecall
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramCustomModel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Id of the custom model.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramVersion
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Deepgram version of the model used.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramPunctuate
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to add punctuation and capitalization to the transcript.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramProfanityFilter
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to remove profanity from the transcript.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramRedact
+   </td>
+   <td>Object
+{
+        "type": "string",
+        "enum": [
+          "pci",
+          "numbers",
+          "true",
+          "ssn"
+        ]
+      },
+   </td>
+   <td>
+   </td>
+   <td>Whether to redact information from transcripts ('pci', 'numbers', 'true', 'ssn')
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramDiarize
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Whether to assign a speaker to each word in the transcript.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramDiarizeVersion
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>If set to '2021-07-14.0' the legacy diarization feature will be used.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramNer
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramMultichannel
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to transcribe each audio channel independently.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramAlternatives
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>The number of alternative transcripts to return.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramNumerals
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to convert numbers from written format (for example, one) to numerical format (for example, 1).
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramSearch
+   </td>
+   <td>Array
+   </td>
+   <td>
+   </td>
+   <td>An array of terms or phrases to search for in the submitted audio.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramReplace
+   </td>
+   <td>Array
+   </td>
+   <td>
+   </td>
+   <td>An array of terms or phrases to search for in the submitted audio and replace.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramKeywords
+   </td>
+   <td>Array
+   </td>
+   <td>
+   </td>
+   <td>An array of keywords to which the model should pay particular attention to boosting or suppressing to help it understand the context.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramEndpointing
+   </td>
+   <td>Boolean | Number
+   </td>
+   <td>
+   </td>
+   <td>Indicates the number of milliseconds of silence Deepgram will use to determine whether a speaker has finished saying a word or phrase. The value provided must be either several milliseconds or 'false' to disable the feature entirely. <strong>Note</strong>: The default endpoint value that Deepgram uses is 10 milliseconds. You can set this value higher to allow to require more silence before a final transcript is returned but we suggest a value of 1000 (one second) or less, as we have observed strange behaviors with higher values. If you wish to allow more time for pauses during a conversation before returning a transcript, we suggest using the utteranceEndMs feature instead.	
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramVadTurnoff
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramTag
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>A tag to associate with the request. Tags appear in usage reports.	
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramUtteranceEndMs
+   </td>
+   <td>Number
+   </td>
+   <td>
+   </td>
+   <td>This parameter is used to configure ASR to detect the end of speech in live-streaming audio.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramShortUtterance
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>This causes a transcript to be returned as soon as the Deepgram is_final property is set. This should only be used in scenarios where you are expecting a very short confirmation or directed command and you want minimal latency.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramSmartFormatting
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>Indicates whether to enable Deepgram's Smart Formatting feature.
+Deepgram's Smart Format feature applies additional formatting to transcripts to optimize them for human readability.
+
+Smart Format capabilities vary between models. When Smart Format is turned on, Deepgram will always apply the best-available formatting for your chosen combination of model, model option, and language.
    </td>
    <td>
    </td>
   </tr>
 </table>
 
-## Voice Call Properties
+### Common TTS Parameters
 
-Voice call properties are fundamental aspects that define the quality and reliability of communication over Kore.ai Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Supporting STT/ TTS</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Examples</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>SSML Tags
+   </td>
+   <td>&lt;speak>
+  Here are &lt;say-as interpret-as="characters">SSML&lt;/say-as> samples.
+  I can pause &lt;break time="3s"/>.
+  I can play a sound
+  &lt;audio src="https://www.example.com/MY_MP3_FILE.mp3">didn't get your MP3 audio file&lt;/audio>.
+ 
+&lt;/speak>
+   </td>
+   <td>TTS:
+Google
+AWS
+Microsoft
+*Aws does not support the audio tag
+   </td>
+   <td>It is used for modification in TTS.
+Procedure 
+<ol>
 
-You can configure the voice call properties by going to the Voice Preferences tab and clicking **Configure** on the **Voice Call Properties** section.
-<img src="../images/configure-voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:100%;">
+<li>Open Bot builder</li>
 
-The Voice Call Properties window is displayed.
-<img src="../images/voice-call-properties-window.png" alt="Voice Call Properties Window" title="Voice Call Properties Window" style="border: 1px solid gray; zoom:100%;">
+<li>Create EntityNode or messageNode </li>
 
-### End of Task Behavior
+<li>Under user Prompt open  manage  user   prompt, select channel, and paste the  syntax in plain text </li>
 
-Define the bot's behavior when reaching the end of a task. You can choose the following actions:
+<li>The bot will play this prompt instead of the default
 
-* Trigger End of Task Event
-* Terminate Call
-<img src="../images/end-of-task-behavior.png" alt="End of Task Behavior" title="End of Task Behavior" style="border: 1px solid gray; zoom:100%;">
+For more details refer to:
+https://cloud.google.com/text-to-speech/docs/ssml</li>
+</ol>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>disableTtsCache
+   </td>
+   <td>Boolean
+   </td>
+   <td>ALL
+   </td>
+   <td>Using cache for calling TTS engine if same statement or word found.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsEnhancedVoice
+   </td>
+   <td>String
+   </td>
+   <td>AWS
+   </td>
+   <td>Amazon Polly has four voice engines that convert input text into life-like speech. These include Generative, Long-form, Neural, and Standard. To use an Amazon Polly voice
+   </td>
+   <td>Examples
+    standard" , 
+"   neural",
+   "generative",
+ "  long-form"
+   </td>
+  </tr>
+  <tr>
+   <td>ttsGender
+   </td>
+   <td>String
+MALE, FEMALE, NEUTRAL
+   </td>
+   <td> Google
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsLoop
+   </td>
+   <td>Number / String
+   </td>
+   <td>ALL
+   </td>
+   <td>The <strong>ttsLoop</strong> parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When <strong>ttsLoop</strong> is enabled, the specified TTS message will be played multiple times in a loop, which is useful in scenarios where you want to ensure the message is heard clearly, or when the user might need more time to process the information.
+   </td>
+   <td>Example - ttsLoop = 2
+Text will be played twice
+   </td>
+  </tr>
+  <tr>
+   <td>earlyMedia
+   </td>
+   <td>Boolean
+   </td>
+   <td>ALL
+   </td>
+   <td>The <strong>Early Media</strong> parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected. This feature is typically employed in telecommunication systems, allowing messages to be played while the call is still in the "early" phase, meaning before the recipient answers the call.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsOptions
+   </td>
+   <td>Object
+   </td>
+   <td>PlayHt, Deepgram, ElevenLabs, Whisper
+   </td>
+   <td>It is used to tune the TTS.
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
 
-### Event Configuration
+### TTS Options in Kore VG
 
-Define how to proceed when this event is detected. You can choose the following actions:
+Kore VG now supports a `ttsOptions` parameter that allows bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
 
-* **Initiate Task**: Select a task from the dropdown menu to be initiated when the event is detected.
-<img src="../images/initiate-task.png" alt="Initiate Task" title="Initiate Task" style="border: 1px solid gray; zoom:100%;">
+!!! Note
 
-* **Run Script**: Enter the script to be run when the event is detected.
-<img src="../images/run-script.png" alt="Run Script" title="Run Script" style="border: 1px solid gray; zoom:100%;">
+    Each TTS provider will have its own set of customizable parameters. For more detailed information on the parameters they support, refer to their official websites.
 
-* **Show Message**: Click **+ Add Response**, enter the message to be displayed when the event is detected, and click **Done**.
-<img src="../images/add-response.png" alt="Add Response" title="Add Response" style="border: 1px solid gray; zoom:100%;">
 
-### Call Termination Handler
+#### Structure of `ttsOptions`
 
-Specify the intent (dialog) to handle the call termination event from the dropdown.
-<img src="../images/call-termination-handler.png" alt="Call Termination Handler" title="Call Termination Handler" style="border: 1px solid gray; zoom:100%;">
+The `ttsOptions` object contains provider-specific settings in a key-value format. Below are examples of different TTS providers:
 
-### Call Control Parameters
+#### 1. ElevenLabs
 
-Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**.
-<img src="../images/add-parameter.png" alt="Add Parameter" title="Add Parameter" style="border: 1px solid gray; zoom:100%;">
+* `optimize_streaming_latency`: Adjusts the latency during streaming.
+* `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/speech-synthesis/voice-settings).
 
-### Timeout Prompt
+#### 2. PlayHT
 
-Define prompt to be played when user input is not received within the time-out period.
-<img src="../images/timeout-prompt.png" alt="Timeout Prompt" title="Timeout Prompt" style="border: 1px solid gray; zoom:100%;">
+* `quality`: Sets the quality of the audio output.
+* `speed`: Controls the playback speed.
+* `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Allow further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
 
-### Barge-in
+#### 3. Deepgram
 
-Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled.
-<img src="../images/barge-in.png" alt="Barge In" title="Barge In" style="border: 1px solid gray; zoom:100%;">
+Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Deepgram offers a few additional parameters that enhance customization:
 
-### Timeout
+* **encoding (string)**: You can specify the desired encoding format for the output audio file, such as `mp3` or `wav`.
+* **model (enum)**: Defines the AI model to be used for synthesizing the text into speech. The default model is `aura-asteria-en`, optimized for natural-sounding English voice output.
+* **sample_rate (string)**: This enables you to set the sample rate of the audio output, offering control over the quality and clarity of the sound produced.
+* **Container**: The Container feature allows users to specify the desired file format wrapper for the output audio generated through text-to-speech synthesis.
 
-Define the maximum wait time to receive user input. The maximum wait time is 60 seconds.
-<img src="../images/timeout.png" alt="Timeout" title="Timeout" style="border: 1px solid gray; zoom:100%;">
+These parameters provide additional flexibility for developers to fine-tune the audio output to meet their specific needs. All these parameters will be set inside ttsOptions. [Learn more](https://developers.deepgram.com/docs/tts-rest).
 
-### No. of Retries
+#### 4. AWS
 
-Define the maximum number of retries allowed.
-<img src="../images/no-of-retries.png" alt="No.of Retries" title="No.of Retries" style="border: 1px solid gray; zoom:100%;">
+Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Aws offers a few additional parameters that enhance customization, like ttsEnhanceVoice, also known as an engine.
 
-Click **Save**. A success message is displayed, and the voice call properties are saved.
+Amazon Polly has four voice engines that convert input text into lifelike speech. These include “standard," "neural," "generative," and "long-form." 
+
+`ttsEnhancedVoice = “neural”`
+
+#### 5. Open AI (Whisper)
+
+Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Whisper offers a few additional parameters that enhance customization, like a model.
+
+For real-time applications, the standard tts-1 model provides the lowest latency but at a lower quality than the tts-1-hd model. Due to how the audio is generated, tts-1 is likely to generate more static content in certain situations than tts-1-hd. In some cases, the audio may not have noticeable differences depending on your listening device and the person.
+
+```
+ttsOptions = {
+   model = "tts-1"
+}
+```
+### Voice Gateway Properties
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Supporting STT/ TTS</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Examples</strong>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Provider related parameters</strong></h4>
+
+<strong>Speech-to-text and text-to-speech services interface with the user using a selected language (for example, English US, English UK, or German). Text-to-speech services also use a selected voice to speak to the user (for example, female or male)</strong>
+<strong>For Recognizer, Speech-to-text is used, and for synthesizer, Text to Speech</strong>
+<strong>sttProvider => google,microsoft  => Recognizer</strong>
+<strong>ttsProvider => google,microsoft,aws => Synthesizer</strong>
+<strong>JSON example</strong>
+<strong>{</strong>
+<strong>sttProvider : “google”,</strong>
+<strong>sttLangauge:”en-IN”</strong>
+<strong>ttsProvider : “google”</strong>
+<strong>Language : “en-IN”,</strong>
+<strong>voiceName :”‘en-IN-Wavenet-A” </strong>
+<strong> }</strong>
+<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG / smartAssist application</strong>
+<strong>Note: Provider Properties will be Applied at the Session Level</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>sttProvider
+   </td>
+   <td>String
+   </td>
+   <td>ALL
+   </td>
+   <td>To Set the Speech to Text Engine
+At any stage of the call, the bot can dynamically change the speech provider (speech-to-text or text-to-speech) of the call. The provider change can be done for the entire call duration (the current text/audio that is played by the bot).
+   </td>
+   <td>sttProvider : “google”
+   </td>
+  </tr>
+  <tr>
+   <td>sttLanguage
+   </td>
+   <td>String
+   </td>
+   <td>ALL
+   </td>
+   <td>	
+To set STT Language in for recognizing user's voice
+Note:  Transcript will come according to sttLanguage
+sttLangauge = “zh-CN”
+All transcripts will come in Chinese
+Defines the language (for example, "en-ZA" for South African English) of the bot conversation and is used for the speech-to-text service.
+   </td>
+   <td>sttLanguage = “en-US”
+   </td>
+  </tr>
+  <tr>
+   <td>ttsProvider
+   </td>
+   <td>String
+   </td>
+   <td>ALL
+   </td>
+   <td>Silimar to STT Provider
+   </td>
+   <td>ttsProvider:”microsoft”
+   </td>
+  </tr>
+  <tr>
+   <td>ttsLanguage
+   </td>
+   <td>String
+   </td>
+   <td>ALL 
+   </td>
+   <td>Similar To sttLanguage
+The parameter is required to set TTS  languages.
+   </td>
+   <td>Ex ttsLanguage = “en-US”
+   </td>
+  </tr>
+  <tr>
+   <td>voiceName
+   </td>
+   <td>String
+sttLanguage : ‘en-AU’,
+   </td>
+   <td>ALL
+   </td>
+   <td>voiceName is mandatory to text to speech conversion
+Voice name should be correctly aligned to ttsLanguage
+VoiceName is used in TTS only for bot response
+   </td>
+   <td>voiceName : ‘en
+-AU-NatashaNeural’
+Example- 
+{
+ttsPrrovider : ‘microsoft’,
+sttLanguage : ‘en-AU’,
+voiceName : ‘en-AU-NatashaNeural’
+}
+   </td>
+  </tr>
+  <tr>
+   <td>enableSpeechInput
+   </td>
+   <td>Boolean
+   </td>
+   <td> All
+   </td>
+   <td>If False, Allow only DTMF Input, By default It is always true and can be used in entity nodes
+Do not use this in Channel Over-rider Script. It is meant to be used only through the Call Control Parameter.
+   </td>
+   <td>Example - enableSpeechInput: false
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Labels and Fallback Providers</strong></h4>
+
+<strong>Label - Assign/Create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your application to specify which service to use.</strong>
+<strong>How to Configure Label</strong>
+<strong>1) Add a speech service Inside the speech tab. </strong>
+<strong>2) Select a provider and add a label with a unique name.</strong>
+<strong>3) Use the same label in the call control parameter.</strong>
+<strong>4) The NODE at which you use FallBack Call control parameters at the Same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
+<strong>  example</strong>
+<strong>  sttProvider = “google”,</strong>
+<strong>  sttLanguage = “en-US”,</strong>
+<strong>  sttLabel = “google-stt-2”</strong>
+<strong>Examples:</strong>
+<strong>STT</strong>
+<strong>  “sttProvider”: “microsoft”,</strong>
+<strong>  “sttLabel”: “my_azure-US”,</strong>
+<strong>  “sttLanguage: “en-US”</strong>
+<strong> TTS </strong>
+<strong>   “ttsProvider” : “microsoft”,</strong>
+<strong>   “ttsLanguage”: “en-US”,</strong>
+<strong>   “voiceName”: “en-US-AmberNeural”</strong>
+<strong>   “ttsLabel” : “my_azure-US”</strong>
+<strong>FallBack Examples</strong>
+<strong>  “sttProvider” : “microsoft”,</strong>
+<strong>  “sttLabel” : “my_azure-US”,</strong>
+<strong>  “sttLanguage: “en-US”</strong>
+<strong>   “ttsProvider” : “microsoft”,</strong>
+<strong>   “ttsLanguage”: “en-US”,</strong>
+<strong>   “voiceName”: “en-US-AmberNeural”</strong>
+<strong>   “ttsLabel” : “my_azure-US”</strong>
+<strong>  “sttFallbackProvider” : “microsoft”,</strong>
+<strong>   “sttFallbackLanguage: “en-US”,</strong>
+<strong>   “sttFallbackLabel”:”my_azure_Europe”</strong>
+<strong>   “ttsFallbackProvider” : “microsoft”,</strong>
+<strong>   “ttsFallbackLanguage” : “en-US”</strong>
+<strong>   “ttsFallbackLabel” : “my_azure_Europe”</strong>
+<strong>   “ttsFallbackVoiceName”: “en-US-AmberNeural”</strong>
+<strong>Note: The NODE at which you use FallBack Call control parameters, at the same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
+<strong>The best practice is to keep the same ASR Engine in Fallback with a different Label.</strong>
+<strong>If the current provider fails, Kore VG will pick a fallback provider. Similarly, we can add a Fallback for the TTS Provider.</strong>
+<strong>Note: Fallback properties will be applied at the session level.</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>sttLabel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Uniquely identify ASR engine in Kore VG.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sttFallbackLabel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>If fallback is enabled in Kore VG at the application level, then in case of any error the switch will happen of ASR to fallback configuration, it is recommended to have a fallback to the same vendor with a different region. 
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sttFallbackProvider
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Fallback provider details 
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sttFallbackLanguage
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Fallback language details 
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsLabel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Uniquely identify TTS engine in Kore VG
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsFallbackLabel
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Fallback Label details 
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsFallbackProvider
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Fallback provider details 
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsFallbackLanguage
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Fallback language details 
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>ttsFallbackVoice
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Fallback voice details
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Continuous ASR</strong></h4>
+
+Continuous ASR (automatic speech recognition) is a feature that allows speech-to-text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, often have pauses between utterances. 
+<strong>Note: For Only Microsoft </strong>
+Microsoft Azure Introduces one ASR Property that works the same way as Continuous ASR, <strong>AzureSegmentationSilenceTimeout</strong>. Since Silence is detected by ASR Engine Directly Instead of Voice Gateway, detect and merge the response. AzureSegmentationSilenceTimeout is more accurate than continuous ASR. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-recognize-speech?pivots=programming-language-csharp#change-how-silence-is-handled">Learn more</a>.
+<strong>Note</strong>: Continuous ASR / AzureSegmentationSilenceTimeout is applied at the session level. Throughout the Call, it will be active, and the developer can adjust the value at different nodes based on the requirement.
+   </td>
+  </tr>
+  <tr>
+   <td>continuousASRTimeoutInMS
+   </td>
+   <td>Number in millisecond 
+   </td>
+   <td>ALL
+   </td>
+   <td>This is a duration of silence, in seconds, to wait after a transcript is received from the STT vendor before returning the result. If another transcript is received before this timeout elapses, then the transcripts are combined and recognition continues. The combined transcripts are returned once a timeout between utterances exceeds this value
+   </td>
+   <td>Ex-5000 for  5 sec
+   </td>
+  </tr>
+  <tr>
+   <td>continuousASRDigits
+   </td>
+   <td>Any digit  Ex- *,%,&lt;,#
+   </td>
+   <td>ALL
+   </td>
+   <td>a DTMF key which, if entered, will also terminate the gather operation and immediately return the collected results
+   </td>
+   <td>continuousASRDigits : &
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Barge-IN</strong></h4>
+
+The Barge-In feature controls Kore VG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
+<strong>Note: </strong>Barge-in Will be applied at the Node level. 
+   </td>
+  </tr>
+  <tr>
+   <td>listenDuringPrompt
+   </td>
+   <td>Boolean - True or false
+   </td>
+   <td>ALL 
+   </td>
+   <td>If false, do not listen for user speech until the bot has finished playing its response to the user. Defaults to true
+Similar to Barge-in.	
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>bargeInMinWordCount
+   </td>
+   <td>Number
+   </td>
+   <td>ALL
+   </td>
+   <td>If barge-in is true, only kill speech when this many words are spoken. Defaults to 1.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>bargeInOnDTMF
+   </td>
+   <td>Boolean
+   </td>
+   <td>ALL
+   </td>
+   <td>Press any key to enable DTMF, and kill audio playback if the caller enters DTMF then you can tell your utterance or speech.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="5" >
+<h4><strong>Timeout related parameters</strong></h4>
+
+<strong>Note: </strong>All Timeout Parameters will be applied at the Node level.
+   </td>
+  </tr>
+  <tr>
+   <td>userNoInputTimeoutMS
+   </td>
+   <td>Number in millisecond
+1 sec - 1000
+   </td>
+   <td>ALL
+   </td>
+   <td>Define the maximum wait time to receive user input
+If userNoInputTimeoutMS = 0
+Kore VG will wait for an infinite time for User Input.
+Defines the maximum time (in milliseconds) that VoiceAI Connect waits for input from the user.
+   </td>
+   <td>userNoInputTimeoutMS = 20000
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectInterDigitTimeoutMS
+   </td>
+   <td>Number - Time in milliseconds
+   </td>
+   <td>ALL
+   </td>
+   <td>Defines the timeout that Kore VG waits for the user to press another digit before it sends all the digits to the bot.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectSubmitDigit
+   </td>
+   <td>Number
+   </td>
+   <td>ALL
+   </td>
+   <td>Defines a special DTMF "submit" digit that when received from the user, KoreVg immediately sends all the collected digits to the bot (as a DTMF message), without waiting for the timeout to expire or for the maximum number of expected digits.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectMaxDigits
+   </td>
+   <td>Number
+   </td>
+   <td>ALL
+   </td>
+   <td>Maximum number of DTMF digits expected to gather
+Example If maxDigit = 5 
+So Bot will take only a maximum of 5 digits Input 1234567 bot takes only 12345.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectminDigits
+   </td>
+   <td>Number
+   </td>
+   <td>ALL
+   </td>
+   <td>Minimum number of DTMF digits expected to gather. Defaults to 1
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectnumDigits
+   </td>
+   <td>Number
+   </td>
+   <td>ALL
+   </td>
+   <td>The exact number of DTMF digits is expected to be gathered.
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+## Utility Functions
+
+### Agent Utils and Voice Utils
+
+#### 1. agentUtils (SmartAssist Library)
+
+The `agentUtils` library in the SmartAssist allows you to dynamically modify call transfer properties through the bot builder (XO) before transferring the call to a human agent. It provides a wide range of options, including:
+
+* **Dynamic SIP Configuration**: Modify the SIP properties before transferring the call.
+* **Transfer Types**: Change the type of transfer (e.g., Skill-based, SIP-based).
+* **User Information**: Update user-specific information before routing the call to the agent.
+
+With `agentUtils`, you can adjust SmartAssist properties directly from the bot, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or SmartAssist agent desktop.
+
+**Agent Transfer Node in XO Platform (Used with agentUtils)**
+
+To apply changes made with `agentUtils`, you need to use the **Agent Transfer node** in the XO platform. The Agent Transfer node routes the call back to SmartAssist from the bot, and based on the type of transfer selected in SmartAssist (for example, External, SIP Transfer, SmartAssist Agent Desktop), the call will be appropriately routed.
+
+You can make this process **dynamic** by using `agentUtils` to modify transfer properties (such as SIP URI or transport type) before executing the Agent Transfer node.
+
+**Major Advantage**:
+Unlike `voiceUtils`, the `agentUtils + Agent Transfer` `Node` flow **supports** **header encoding/decoding and user-to-user (UUI) data transfer**, which is critical when data needs to be passed securely and efficiently during the transfer process. This is one of the **key reasons** to prefer this method for complex call transfers that require encoded headers or UUI support.
+
+**Example Use Case**:
+If you need to dynamically change the SIP transport type or update the SIP URI based on the user's session, `agentUtils` allows you to modify these properties via a script node in the bot builder. The Agent Transfer node will handle the actual routing to the SmartAssist platform. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
+
+#### 2 Voice Utils (Kore VG Library)
+
+The `voiceUtils` library is specifically for the SmartAssist Voice Gateway. It is used for transferring calls to external sources, such as SIP endpoints or phone numbers, **without involving the SmartAssist agent desktop**. This library supports functionalities like:
+
+* **Hangup**
+* **Agent Transfer (via Invite and Refer)**
+* **Abort Prompt**
+* **Play and Pause Audio, etc**
+
+In the case of agent transfers using `voiceUtils`, the call is directly routed to an external source (such as a SIP endpoint or a phone number), bypassing the SmartAssist platform. There is no interaction with the SmartAssist agent desktop, and it’s best used for scenarios where the call transfer needs to be completed externally.
+
+* **Transfer with Headers**: You can use `voiceUtils.invite()` and `voiceUtils.refer()` to transfer the call with custom headers. However, it is important to note that this does not support header encoding/decoding or user-to-user (UUI) data transfer.
+
+**Example Use Case**: \
+If you are transferring the call to an external SIP provider or a phone number directly, `voiceUtils` is the ideal choice. This quick method bypasses SmartAssist and is tailored for simple SIP or phone number transfers.
+
+#### **When to Use What**
+
+* **Use <code>agentUtils</code> + Agent Transfer Node</strong>:
+This method should be used when <strong>header</strong> <strong>encoding/decoding</strong> or <strong>user-to-user (UUI) data transfer</strong> is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
+* <strong>Use <code>voiceUtils</code></strong>:
+Use this method when you need to <strong>transfer the call directly to an external source</strong> like a SIP endpoint or phone number, <strong>bypassing the SmartAssist platform</strong>. It is best for simple transfers without the need for header encoding or UUI support.
+
+VoiceUtils Helper Methods
+
+These functions can be used in the Channel Override template inside Java script sections. All functions can be executed in the Message Node.
+
+**General Syntax** - `print(utility function)`
+
+#### Hangup
+
+**Use Cases**: 
+
+a) If you need to forcibly hang up the call from the bot during the flow or call.
+
+b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
+
+**Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
+
+The message, headers, and queueCommand are optional parameters.
+
+**Header syntax**:
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>Message to play before Hangup.
+   </td>
+   <td>String
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Headers
+   </td>
+   <td>an object containing SIP headers to include in the BYE request.
+   </td>
+   <td>Object
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>queueCommand
+   </td>
+   <td>If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately.	
+   </td>
+   <td>Boolean
+   </td>
+   <td>No
+By default True
+   </td>
+  </tr>
+</table>
+
+`````
+"headers": { \
+"X-Reason" : "maximum call duration exceeded" \
+}
+`````
+The system will first play the message, then hang up the call and transmit the headers.
+
+!!! Note
+
+    To skip the message and only send the headers, provide an empty string as the first argument.
+
+**Example**:
+
+```
+        1) With message and headers
+        var message = "Call completed";
+        var headers : {
+
+        	`"X-Reason"` `:` `"Call hangup from Kore side"`
+        }
+
+        print(voiceUtils.hangup(message,headers));
+
+        2) Without Message but containg headers
+          var message = "";
+          var headers = { "X-Reason" : "completed"}
+        print(voiceUtils.hangup(message,headers));
+```
+
+#### SIP Refer 
+
+This function transfers the call to an external contact number (telephone number or SIP URI). After the transfer (Refer), the bot's call leg will disconnect.
+
+**Use Case:**
+
+Transfer the call to a third party using the utility in the message node with Run Automation from Smartassist.
+
+message - Optional (Send Empty Message),  referTo - Required, headers - Optional
+
+**Syntax**: `print(voiceUtils.refer(message,ReferTo,headers,queueCommand))`
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>Play Message before Transferring a call to Agent
+   </td>
+   <td>String
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>ReferTo
+   </td>
+   <td>A SIP URI or a phone number/user identifier	
+   </td>
+   <td>String
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>headers
+   </td>
+   <td>Additional SIP headers to include in the response
+   </td>
+   <td>Object
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>queueCommand
+   </td>
+   <td>If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately.	
+   </td>
+   <td>Boolean
+   </td>
+   <td>NA
+Default:True
+   </td>
+  </tr>
+</table>
+
+**Example**:
+
+```
+1) Using all the options
+
+var message = "Transferring Call to xxxx number";
+var ReferTo = "+91xxxxxxxxxx";   // or sipUrl 
+
+var headers: {
+	"X-Reason" : "Call Received from Kore"
+}
+
+print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
+
+2) without Message and headers 
+
+var message = "";
+print(voiceUtils.refer(message,ReferTo));
+
+3) With QueueCommand
+  var message = "" , headers = {}, referTo = "sip:test@5060"
+print(voiceUtils.refer(message,ReferTo,headers,false));
+```
+#### SIP Invite
+
+The SIP Invite initiates a conference call. The bot's leg remains active after the call connects to the third party, and once the call with the third party ends, the bot's call will resume. The callerId and target fields are mandatory and should contain either a SIP URI or a phone number. To pass these values, provide an empty string for the message, followed by the callerId and target.
+
+**Syntax**: `print(voiceUtils.invite(message, callerId, target,headers,queueCommand))`
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Message
+   </td>
+   <td>Message to play before Transferring the call to a Third Party.
+   </td>
+   <td>String
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>CallerId
+   </td>
+   <td>The inbound caller's phone number, which is displayed to the number that was dialed. The caller ID must be a valid E.164 number.
+   </td>
+   <td>String containing phone number with country code (Bot Number)
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Target 
+   </td>
+   <td>The target property specifies the call destinations.
+   </td>
+   <td>String (SIP URI)
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Headers
+   </td>
+   <td>Additional SIP headers to include in the response
+   </td>
+   <td>Object
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>QueueCommand
+   </td>
+   <td>If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately.
+   </td>
+   <td>Boolean
+   </td>
+   <td>No
+Default: True
+   </td>
+  </tr>
+</table>
+
+**Example**:
+
+```
+let callerId = "+1901xxxx";
+let target = "sip:test.com:5060";
+let message = "SIP Invite Transfer"
+let headers = {
+"X-CallId" : "xxxxx"
+}
+print(voiceUtils.invite(message,callerId,target,headers))
+```
+#### AbortPrompt 
+
+The abortPrompts event cancels all pending prompts sent before it was triggered. For example, if the bot sends an abortPrompts event right after sending three prompt messages, the first prompt will stop playing immediately, and the remaining two prompts will not play.
+
+**Use Case**:
+
+Killing the previous prompt with the current Message.
+
+**Syntax**: `print(voiceUtils.abortPrompt())`
+
+The “Message” parameter is Optional.
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Descriptions</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Message
+   </td>
+   <td>Kill the previous command and play the configured message.
+   </td>
+   <td>String
+   </td>
+   <td>NA
+   </td>
+  </tr>
+</table>
+
+!!! Note
+
+    It supports .wav files and multiple messages also, but it should send as an array of messages
+
+ex - var message = [“[https://example.wav](https://example.wav)” , “welcome message”]
+
+**Example**:
+
+```
+var message = "Aborting the Previous Message",
+
+print(voiceUtils.abort(message))
+
+//without message
+print(voiceUtils.abortPrompt())
+```
+#### Send DTMF
+
+This function is used to send DTMF digits from the bot. The digits are sent as RTP payloads using RFC 2833
+
+**Use Case**:
+
+When one bot interacts with another bot and tries to give DTMF Input.  
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>dtmf
+   </td>
+   <td>String
+   </td>
+   <td>A string containing a sequence of DTMF digits (0-9,*,#).	
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>duration
+   </td>
+   <td>Number
+   </td>
+   <td>The length of each digit, in milliseconds, Defaults to 500.
+   </td>
+   <td>No
+Default value: 500
+   </td>
+  </tr>
+</table>
+
+**Example**:
+
+```
+let dtmf = "99865",
+let duration = 600
+
+print(voiceUtils.sendDTMF(dtmf,duration))
+```
+#### Pause and Play
+
+The pause command waits silently for a specified number of seconds. Play is Optional; If you pass the message, it will play after the pause.
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>length
+   </td>
+   <td>number (Seconds)
+For example, 4.
+The default is 3 seconds.
+   </td>
+   <td>Number of seconds to wait before continuing the app.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>string or an array of strings containing a URL and string.
+ [“This is the message”, “https://text.wav”]
+   </td>
+   <td>Play the message after executing the pause time.
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+**Example:**
+
+** \
+**`let` `length` `=` `4,`
+
+```
+let message = "After 4 second this message will play"
+print(voiceUtils.pauseAndPlay(length,message))
+```
+#### Play
+
+The play command is used to stream recorded audio to either a call or a text message. 
+
+The message can be either a single string or an array of strings that includes both audio URLs and text messages.
+
+**Syntax**: `print(voiceUtils.play(message))`
+
+<table>
+  <tr>
+   <td><strong>Option</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>To play text messages and audio URLs.
+   </td>
+   <td>String - Only message
+An array of strings - Both audio URL and Message.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+</table>
+
+**Example**:
+
+```
+Let message = ["this is First message", "https://audiofiile.wav" , "this is second Message"]
+
+ //  All three message will be played in Sequence WIse (Text Message -> Audio File -> Text Message)
+```
+### Raw Packet (JavaScript Code) 
+
+ It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code. 
+
+If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Communication Team.
+
+!!! Note
+
+    The Kore platform does not perform design-time validation of message overrides; they are passed as is, increasing the likelihood of errors.
+
+## Common Scenarios 
+
+### Configure ASR/TTS
+
+Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAssist or the XO Platform.
+
+    1. Global level (Channel level)
+    2. Experience Flow level
+    3. Node level
+
+1. **Setting ASR/TTS at the Global level**  
+   
+   The ASR/TTS engines configured at this level are applicable for all the experience flows (unless a separate speech engine is configured at the experience flow).
+
+    Steps to configure ASR/TTS at the global level:
+
+    1. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Language & Speech** > **Voice Preferences**.  
+      <img src="../images/language-and-speech.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
+
+   2. The Voice Preferences window is displayed. Select the Language from the dropdown.
+   3. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
+   4. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
+   5. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
+   6. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
+   7. To listen to the voice, enter a sample text into the **Sample Text** dialog box and click **Preview Text**.
+   8. Click **Done**.  
+      <img src="../images/save-voice-preference.png" alt="Save Voice Preference" title="Save Voice Preference" style="border: 1px solid gray; zoom:80%;">
+
+2. **Configure ASR/TTS at the Experience Flow level**
+
+    The speech engine configured in an Experience Flow applies to the entire flow and any bot called from within that flow.
+
+    Steps to configure ASR/TTS at the Experience Flow Level:
+
+   1. Go to **CONFIGURATION** > **EXPERIENCES** > **Experience Flows**.  
+      <img src="../images/experience-flows.png" alt="Experience Flows Page" title="Experience Flows Page" style="border: 1px solid gray; zoom:80%;">
+
+   2. Click **Edit** on the experience flow to assign a speech engine.  
+      <img src="../images/edit-experience-flow.png" alt="Edit Experience Flow" title="Edit Experience Flow" style="border: 1px solid gray; zoom:80%;">
+
+   3. On the Edit Experience Flow window, select the **Language** from the dropdown.
+   4. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
+   5. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
+   6. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
+   7. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
+   8. Click **Update & Continue to Flow Design** to save the configurations.  
+      <img src="../images/edit-flow-experience.png" alt="Continue to Flow Design" title="Continue to Flow Design" style="border: 1px solid gray; zoom:80%;">
+
+3. **Configure ASR/TTS at a node at the Entity level inside a dialog**  
+
+   Speech engines (ASR/TTS) can be configured at any Entity or Message node inside a dialog. Once a speech engine is set at an Entity or Message node, it will be used until the end of the call unless a different speech engine is assigned at another Entity or Message node.
+
+   The corresponding Call Control Parameter must be set to configure a speech engine at an Entity or Message node.
+
+   Steps to set call control parameters:
+
+   1. Click the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) in the [Dialog Task](../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md) where the ASR/TTS will be configured.
+   
+   2. Click **Voice Call Properties** and then click **Advanced Controls**.  
+      <img src="../images/advanced-controls.png" alt="Advanced Controls" title="Advanced Controls" style="border: 1px solid gray; zoom:80%;">
+
+   3. Click **Add** in the Call Control Parameters section to add a call control parameter.  
+      <img src="../images/add-call-control-parameters.png" alt="Add Call Control Parameters" title="Add Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
+
+   4. Enter the **Parameter Name** and **Value** and click **Confirm** to add the parameter.    
+      <img src="../images/parameter-value.png" alt="Parameter-Value" title="Parameter-Value" style="border: 1px solid gray; zoom:80%;">
+
+   5. The parameter is added successfully.  
+      <img src="../images/parameter-added.png" alt="Parameter Added" title="Parameter Added" style="border: 1px solid gray; zoom:80%;">
+
+### Continuous ASR 
+
+Continuous ASR (Automatic Speech Recognition) is a feature that allows Speech-to-Text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, are often spoken with pauses in between utterances. Two parameters to enable it are:
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Supporting STT/TTS</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>continuousASRTimeoutInMS
+   </td>
+   <td>Number in millisecond 
+Example-5000 for  5 sec
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>This is a duration of silence (in seconds) to wait after a transcript is received from the STT vendor before returning the result. If another transcript is received before this timeout elapses, the transcripts are combined, and recognition continues. The combined transcripts are returned once a timeout between utterances exceeds this value.
+   </td>
+  </tr>
+  <tr>
+   <td>continuousASRDigits
+   </td>
+   <td>Any digit  Example- *,%,&lt;,#
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>DTMF key, if entered, will also terminate the gather operation and immediately return the collected results.
+   </td>
+  </tr>
+</table>
+
+### Handling Bot Delay
+
+If the bot takes time to respond to a message, you can configure VoiceAI Connect to take action.
+
+### Handle Bot Delay After User Input 
+
+The delay is only applied when Kore VG sends a response to the bot and is waiting for the bot's reply. This includes delays at the Entity Node, Confirmation Node, or Message Node with an "On Intent" (User-Bot delay).  
+<img src="../images/handle-bot-delay.png" alt="Handle Bot Delay" title="Handle Bot Delay" style="border: 1px solid gray; zoom:80%;">
+
+If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
+
+By setting timeout properties, the following actions can be configured:
+
+   * Play a textual prompt to the user
+   * Play an audio file to the user
+   * Disconnect the call
+
+**Use Case**:
+
+   * To play a message to the user, configure a timeout on the botNoInputTimeoutMS parameter and define the action:
+   * To play a textual prompt, set the prompt on the botNoInputSpeech parameter.
+   * To play an audio file, set the file URL using the botNoInputUrl parameter.
+   * To replay the message if the timeout is exceeded multiple times, configure the number of retries using the botNoInputRetries parameter.
+   * A separate timeout for disconnecting the call can be configured using the botNoInputGiveUpTimeoutMS parameter, which is set to 30 seconds by default.
+
+**Parameters description**
+
+The following table lists the bot parameters that are used to configure this feature:
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>botNoInputGiveUpTimeoutMS
+   </td>
+   <td>Number
+   </td>
+   <td>IDefines the timeout (in milliseconds) for the bot response before the call is disconnected.
+If no response is received when the timeout expires, Kore VG Will disconnect the Call.
+The default is 30 Sec (that is, timeout for bot response).
+   </td>
+   <td>Yes
+The default is 30 sec
+   </td>
+  </tr>
+  <tr>
+   <td>botNoInputTimeoutMS
+   </td>
+   <td>Number
+   </td>
+   <td>Defines the timeout (in milliseconds) before a prompt is played to the user.
+If no input is received from the bot when this timeout expires, Kore VG can either play a textual prompt (see the botNoInputSpeech parameter) or an audio file (see the botNoInputUrl parameter) to the user.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>botNoInputRetries
+   </td>
+   <td>Number
+   </td>
+   <td>Defines the maximum number of recurring timeouts (configured by the botNoInputTimeoutMS parameter) for bot response.
+If this parameter is configured, the timer will be triggered again after playing the no-bot input prompt to the user.
+For example, if the parameter is set to 2, the timeout is set to 1000 ms, and no response is received from the bot, Kore VG  will play the prompt 2 times.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>botNoInputSpeech
+   </td>
+   <td>String/Array
+String - Single message
+Array - Multiple messages including audio URL.
+Example: [“<a href="https://audiourl">https://audiourl</a>” ,” This is Second Message”]
+   </td>
+   <td>Defines the textual prompt to play to the user when no input has been received from the bot when the timeout expires (configured by botNoInputTimeoutMS).
+The prompt can be configured in plain text or Speech Synthesis Markup Language (SSML) format (see Using SSML for more details).
+botNoInputSpeech can contain Multiple Messages, including AudioUrl.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>botNoInputUrl
+   </td>
+   <td>String
+   </td>
+   <td>Defines the URL from where the audio file is played to the user when no input has been received from the bot when the timeout expires.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+</table>
+
+Example:  
+<img src="../images/message-node-paremeters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
+
+   !!!Note
+
+      `botNoInputSpeech` can contain multiple messages, including audio URLs.
+
+Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://this)dummy.wav”,” this is third textual Message”].
+
+### Handle Delay Between Two Message Nodes
+
+Kore VG can only handle delays when it sends a response to the bot and waits for the bot's reply. If a delay occurs, Kore VG can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Kore VG won’t be aware of the delay, and the bot developer must handle it manually.
+
+If a Service Node is placed between two Message nodes (delay observed between two Message nodes):
+This must be managed manually, as the gateway has already received a command to play a message and is not waiting for user input. The gateway will not initiate a delay timer and will wait for the next bot message.
+
+To handle this scenario:
+
+   * Play music before the API call in the Message node.
+   * Configure the Service node.
+   * Deliver the message after the Service node.
+
+   !!! Note 
+
+      If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+
+   `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
+      <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
+
+### Barge-In
+
+The Barge-In feature controls KoreVG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Supporting STT/TTS</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>listenDuringPrompt 
+   </td>
+   <td>Boolean - True or false
+Similar to Barge-In
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>If false, do not listen for user speech until the bot has finished playing its response to the user. Defaults to true.	
+   </td>
+  </tr>
+  <tr>
+   <td>bargeInMinWordCount
+   </td>
+   <td>Number
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>if Barge-In is true, only kill speech when these many words are spoken. Defaults to 1.
+   </td>
+  </tr>
+  <tr>
+   <td>bargeInOnDTMF
+   </td>
+   <td>Boolean
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>Press any key to enable DTMF,
+kill audio playback if the caller enters DTMF, then you can tell your utterance or speech.
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectInterDigitTimeoutMS
+   </td>
+   <td>Number - Time in milliseconds
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>This defines the timeout during which KoreVG waits for the user to press another digit before sending all the digits to the bot.
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectSubmitDigit
+   </td>
+   <td>Number
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>Defines a special DTMF "submit" digit; when received from the user, KoreVG immediately sends all the collected digits to the bot (as a DTMF message) without waiting for the timeout to expire or the maximum number of expected digits.
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectMaxDigits
+   </td>
+   <td>Number
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>Maximum number of DTMF digits expected to gather.
+For example, If maxDigit = 5, the bot will allow a maximum of 5 digits Input. If 1234567 is entered, the bot takes only 12345.
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectminDigits
+   </td>
+   <td>Number
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>The minimum number of DTMF digits is expected to be gathered. It defaults to 1.
+   </td>
+  </tr>
+  <tr>
+   <td>dtmfCollectnumDigits
+   </td>
+   <td>Number
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>The exact number of DTMF digits is expected to be gathered.
+   </td>
+  </tr>
+  <tr>
+   <td>input
+   </td>
+   <td>Array of string
+['digits', 'speech'].
+   </td>
+   <td>STT - Google and Microsoft
+TTS - Not Required
+   </td>
+   <td>Array, specifying allowed types of input: ['digits'], ['speech'], or ['digits', 'speech'].  \
+Default: ['digits']
+   </td>
+  </tr>
+</table>
+
+### Language Detection
+
+In this setup, developers do not need to use DTMF or other methods to switch the bot's language. Instead, the bot will automatically detect the language based on the user's utterance.
+
+For example, if a user speaks in English, the conversation will continue in English. If the user switches to Spanish, the language will switch to Spanish. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant).
+
+**Configuration Steps**:
+
+1. In Bot Builder (on the child bot), navigate to **Languages,** add a new language (for example, Spanish), and enable it.
+2. Select English as the default language from the language dropdown menu.
+3. Create a new dialog titled "Language Detection" (or choose a suitable name).
+4. Inside this dialog, add an **entity node** to capture user intent input.
+5. Set the entity precedence to **'Intent over Entity'** in the advanced controls.
+6. Add the **AlternativeLanguage** call control parameter.
+7. Switching languages mid-conversation isn't supported; doing so can cause the bot to lose context. Language detection should happen at the beginning of the conversation (for example, in the welcome task), with the switch based on the user's first utterance.
+8. Opt for **'Intent over Entity'** to prioritize intent detection in the user's language.
+9. Create another dialog with a specific intent (for example, "book flight") and add relevant entities (for example, selecting source and destination).
+10. In the entity configuration, include the following call parameters:
+    * **Name**: alternativeLanguages
+    * **Value**: [] (Leave it empty if no further language switching is needed).
+11. Add utterances in the desired language and train the bot.
+12. Change the language to Spanish in the bot language dropdown.
+13. Open the intent and update utterances and intent details in Spanish.
+14. Update entity details in Spanish as well.
+15. Publish the bot.
+
+These steps will ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
+
+For a demonstration, you can access the [Sample Demo Bot](https://drive.google.com/drive/folders/1NC05qtbK7L2-14DyeDR7cpYFyOrZCy82?usp=drive_link).
+
+## Transfer a Call to SmartAssist Using SIP Transfer
+
+You can set up a dedicated number or SIP to transfer calls to a voice agent. [Learn more](https://docs.kore.ai/smartassist/settings/agent-setup/#SIP_Transfer_Methods).
+
+### Configure SIP Transfer
+
+Configure SIP transfers to enable seamless call routing between systems using SIP protocols for efficient voice communication. [Learn more](https://docs.kore.ai/smartassist/settings/agent-setup/#Set_up_SIP_Transfer).
+
+## Troubleshooting
+
+### Issue: Bot Publish is failing
+
+When updating settings such as adding, updating, deleting phone numbers, or modifying the Language & Speech section, if the bot publishing fails:  
+<img src="../images/bot-publishing-failed.png" alt="Bot Publishing Failed" title="Bot Publishing Failed" style="border: 1px solid gray; zoom:40%;">
+
+Before the bot publishing fails, open the Inspect tab in your browser. In the Network tab, search for the dockstatus API. You will see multiple APIs with the name dockstatus. When the bot publishing failure message appears, open the most recent dockstatus API.  
+<img src="../images/inspect-element.png" alt="Inspect" title="Inspect" style="border: 1px solid gray; zoom:40%;">
+
+In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the XOCCAI-Voice Gateway team. For any other reasons causing the bot publishing failure, the XOCCAI-Voice Gateway team is not responsible.  
+<img src="../images/dockstatus-api.jpg" alt="Dockstatus" title="Dockstatus" style="border: 1px solid gray; zoom:80%;">
+
+### Issue: Agent Transfer is Not Working
+
+If a request is not being assigned to an available agent and the bot is responding with "No agents are available right now," even though agents are online, follow these steps:
+
+1. **Verify Voice Enablement**: First, ensure the current Administrator or Agent has "**Voice Enabled**" in the User Settings.
+2. **Access User Settings**: Open the **Users** section as shown in the image, then navigate to the settings of the currently logged-in user.  
+   <img src="../images/users-page.png" alt="Users Page" title="Users Page" style="border: 1px solid gray; zoom:80%;">
+
+    Check if **Voice Experience** is enabled for the corresponding bot language. If it is not enabled, turn on the "Enable Voice Settings" toggle and check the language settings to ensure the user is available for voice support in the selected language.  
+    <img src="../images/voice-experience.png" alt="Enable Voice Settings" title="Enable Voice Settings" style="border: 1px solid gray; zoom:80%;">
+
+    In **Outgoing Voice Agent Transfer** settings, ensure the transfer type is set to **SmartAssist** (3rd block). This will ensure the request is assigned to the SmartAssist agent desktop.  
+    <img src="../images/agent-status-page.png" alt="Outgoing Voice Agent Transfer" title="Outgoing Voice Agent Transfer" style="border: 1px solid gray; zoom:80%;">
+
+    If the transfer type is set to **Call Number** or **SIP Transfer**, the call will be routed to a third party instead of the SmartAssist agent console.
+
+    In case of issues, check the **WebSocket Connection** and **Registration** in the console (Agent Desktop) to ensure everything is properly connected and functioning.  
+    <img src="../images/network-connection.png" alt="Websocket Connection" title="Websocket Connection" style="border: 1px solid gray; zoom:80%;">
+
+    In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Kore VG are connected.
+
+    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Kore VG. You can report this to the Kore.ai development team.
