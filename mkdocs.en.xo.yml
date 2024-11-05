@@ -519,7 +519,11 @@ nav:
           - Automation APIs: apis/automation/api-list.md
           - Search APIs: apis/searchai/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+            - QM APIs: apis/contact-center/qm-apis/apis-list.md
+              - Raw Data API: apis/contact-center/qm-apis/raw-data-api.md
+              - Auto QA Reporting API: apis/contact-center/qm-apis/auto-qa-reporting-api.md
           - Agent APIs: apis/agent-ai/apis-list.md
+
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
