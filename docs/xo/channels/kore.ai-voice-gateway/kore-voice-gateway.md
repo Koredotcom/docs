@@ -1830,7 +1830,7 @@ If you are transferring the call to an external SIP provider or a phone number d
 
 ### **When to Use What**
 
-* **Use <code>agentUtils</code> + Agent Transfer Node</strong>:
+* Use <code>agentUtils</code> + Agent Transfer Node</strong>:
 This method should be used when <strong>header</strong> <strong>encoding/decoding</strong> or <strong>user-to-user (UUI) data transfer</strong> is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
 * <strong>Use <code>voiceUtils</code></strong>:
 Use this method when you need to <strong>transfer the call directly to an external source</strong> like a SIP endpoint or phone number, <strong>bypassing the SmartAssist platform</strong>. It is best for simple transfers without the need for header encoding or UUI support.
@@ -2331,19 +2331,19 @@ Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAss
 
     Steps to configure ASR/TTS at the Experience Flow Level:
 
-   1. Go to **CONFIGURATION** > **EXPERIENCES** > **Experience Flows**.  
-      <img src="../images/experience-flows.png" alt="Experience Flows Page" title="Experience Flows Page" style="border: 1px solid gray; zoom:80%;">
+      1. Go to **CONFIGURATION** > **EXPERIENCES** > **Experience Flows**.  
+         <img src="../images/experience-flows.png" alt="Experience Flows Page" title="Experience Flows Page" style="border: 1px solid gray; zoom:80%;">
 
-   2. Click **Edit** on the experience flow to assign a speech engine.  
-      <img src="../images/edit-experience-flow.png" alt="Edit Experience Flow" title="Edit Experience Flow" style="border: 1px solid gray; zoom:80%;">
+      2. Click **Edit** on the experience flow to assign a speech engine.  
+         <img src="../images/edit-experience-flow.png" alt="Edit Experience Flow" title="Edit Experience Flow" style="border: 1px solid gray; zoom:80%;">
 
-   3. On the Edit Experience Flow window, select the **Language** from the dropdown.
-   4. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
-   5. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
-   6. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
-   7. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
-   8. Click **Update & Continue to Flow Design** to save the configurations.  
-      <img src="../images/edit-flow-experience.png" alt="Continue to Flow Design" title="Continue to Flow Design" style="border: 1px solid gray; zoom:80%;">
+      3. On the Edit Experience Flow window, select the **Language** from the dropdown.
+      4. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
+      5. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
+      6. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
+      7. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
+      8. Click **Update & Continue to Flow Design** to save the configurations.  
+      <  img src="../images/edit-flow-experience.png" alt="Continue to Flow Design" title="Continue to Flow Design" style="border: 1px solid gray; zoom:80%;">
 
    **Configure ASR/TTS at a node at the Entity level inside a dialog**  
 
@@ -2353,19 +2353,19 @@ Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAss
 
    Steps to set call control parameters:
 
-   1. Click the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) in the [Dialog Task](../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md) where the ASR/TTS will be configured.
+      1. Click the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) in the [Dialog Task](../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md) where the ASR/TTS will be configured.
    
-   2. Click **Voice Call Properties** and then click **Advanced Controls**.  
-      <img src="../images/advanced-controls.png" alt="Advanced Controls" title="Advanced Controls" style="border: 1px solid gray; zoom:80%;">
+      2. Click **Voice Call Properties** and then click **Advanced Controls**.  
+         <img src="../images/advanced-controls.png" alt="Advanced Controls" title="Advanced Controls" style="border: 1px solid gray; zoom:80%;">
 
-   3. Click **Add** in the Call Control Parameters section to add a call control parameter.  
-      <img src="../images/add-call-control-parameters.png" alt="Add Call Control Parameters" title="Add Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
+      3. Click **Add** in the Call Control Parameters section to add a call control parameter.  
+         <img src="../images/add-call-control-parameters.png" alt="Add Call Control Parameters" title="Add Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
 
-   4. Enter the **Parameter Name** and **Value** and click **Confirm** to add the parameter.    
-      <img src="../images/parameter-value.png" alt="Parameter-Value" title="Parameter-Value" style="border: 1px solid gray; zoom:80%;">
+      4. Enter the **Parameter Name** and **Value** and click **Confirm** to add the parameter.    
+         <img src="../images/parameter-value.png" alt="Parameter-Value" title="Parameter-Value" style="border: 1px solid gray; zoom:80%;">
 
-   5. The parameter is added successfully.  
-      <img src="../images/parameter-added.png" alt="Parameter Added" title="Parameter Added" style="border: 1px solid gray; zoom:80%;">
+      5. The parameter is added successfully.  
+         <img src="../images/parameter-added.png" alt="Parameter Added" title="Parameter Added" style="border: 1px solid gray; zoom:80%;">
 
 ### Continuous ASR 
 
@@ -2513,7 +2513,7 @@ botNoInputSpeech can contain Multiple Messages, including AudioUrl.
 Example:  
 <img src="../images/message-node-paremeters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
 
-   !!! Note
+!!! Note
 
       `botNoInputSpeech` can contain multiple messages, including audio URLs.
 
@@ -2534,7 +2534,7 @@ To handle this scenario:
 
       !!! Note 
 
-         If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+            If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
 
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
