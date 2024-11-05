@@ -161,6 +161,7 @@ The following table displays the features and the supported models.
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
     |Anthropic – <br>Claude and Claude Instant|✅|✅|✅|✅|❌|❌|
     |Custom LLM|✅|✅|❌|✅|❌|❌|
+    |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
 === "Search AI"
