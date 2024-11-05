@@ -25,7 +25,7 @@ Key features:
 #### Auto Save Option in JavaScript Editor
 
 The JavaScript editor in Dialog Builder now allows users to enable auto save to automatically save changes while writing the code. Users can enable auto-save with a single click, and the changes will automatically be saved after one second of inactivity. They can view the last saved timestamp and use this feature across all Dialog Builder script editors.
-
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#javascript-prompts-or-responses)
 <hr>
 
 ## v11.6.1 October 21, 2024
