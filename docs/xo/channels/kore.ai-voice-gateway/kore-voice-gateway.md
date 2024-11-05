@@ -2748,4 +2748,4 @@ If a request is not being assigned to an available agent and the bot is respondi
 
     In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Kore VG are connected.
 
-    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Kore VG. You can report this to the Kore.ai development team.
+    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Kore VG. You can report this to the Kore Support team.
