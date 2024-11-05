@@ -2,6 +2,31 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.7 November 03, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Support for Custom Connector
+
+Search AI now supports content ingestion from any application using the Custom Content Connector. This connector utilizes the application's REST APIs to ingest content facilitated through the Custom Connector Service. Additionally, Search AI enables access control for content ingested via the Custom Connector, ensuring secure access. This feature enhances flexibility by seamlessly integrating various applications, even without pre-built connectors.
+
+### Advanced Filters for ServiceNow and SharePoint Connector
+
+Search AI now supports advanced content filtering within the ServiceNow and SharePoint connectors, enabling users to refine the scope of ingested data from the repositories. This functionality allows administrators to apply specific criteria to select only relevant records or knowledge articles to make searchable. By filtering content based on attributes like status, category, and custom fields, organizations can tailor search responses to meet specific user needs, improving search accuracy.
+
+### Ingesting Documents with Attachments in the Confluence Server
+
+Search AI now supports ingesting Confluence Server documents with attachments, streamlining content indexing and retrieval. Users can include documents as attachments with Confluence knowledge articles. The primary content and its attachments are searchable and accessible, enhancing content discoverability and maximizing the accessibility of embedded knowledge. 
+
+### Enhanced Multi-Modal Content Preview
+
+End-users and developers can now seamlessly preview content within answers and the chunk browser. This enhanced viewing experience includes zoom functionality for tables and images, allowing users to thoroughly examine complex data and visual content. When content contains multiple images, a new carousel interface presents them in an elegant slideshow format, enabling effortless navigation through all visual assets. This integrated preview system streamlines the user experience by making all content immediately accessible and interactive within the natural workflow.
+
+
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>

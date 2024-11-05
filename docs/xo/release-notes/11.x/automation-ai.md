@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.7.0 November 03, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Conversation Testing
+
+#### Support for Preprocessor Script
+
+The new Preprocessor Script for Conversation Testing lets platform users control preconditions during conversation testing. Users can run custom scripts before the recording, validation, and execution phases.
+
+Key features:
+
+* Script Editor: Create, edit, and manage preprocessor scripts with built-in syntax highlighting and error checking.
+* Testing Controls: Execute scripts before initiating test recording and validation, with the ability to modify and re-validate on the fly.
+* Data Management: Control session context by modifying data, simulating external systems, and tracking changes through secure execution.
+
+### Dialog Builder
+
+#### Auto Save Option in JavaScript Editor
+
+The JavaScript editor in Dialog Builder now allows users to enable auto save to automatically save changes while writing the code. Users can enable auto-save with a single click, and the changes will automatically be saved after one second of inactivity. They can view the last saved timestamp and use this feature across all Dialog Builder script editors.
+
+<hr>
+
 ## v11.6.1 October 21, 2024
 
 <u> Patch Release </u>

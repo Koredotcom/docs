@@ -274,7 +274,9 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 5. Click the **Chat Endpoint** you want to attach with AgentAssist. For voice, click the **number** you want to attach with AgentAssist.
 6. Click **Edit**.
 7. Change the **script** based on your needs.
-8. Click **Done** to save it.
+8. Click **Done** to save it.  
+!!! note
+    To view the summary pop-up in the Agent AI widget, you must assign a disposition to the skill. If you don’t, the chat/voice screen automatically closes once the session ends.
 
 ## Access Custom Data in Agent AI Bot
 
@@ -317,9 +319,16 @@ In the **Dialog Task**, open a **Message** node, and click **MANAGE RESPONSES**.
 9. Copy the **Point of Contact URL**, and open it in a new tab.
 10. Initiate the chat from here. A chat request appears on the **MAX** desktop.
 11. Click **Accept**.  
-<img src="../nice-max-images/accept-chat-request-21.png" alt="accept-chat-request" title="accept-chat-request" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../nice-max-images/accept-chat-request-21.png" alt="accept-chat-request" title="accept-chat-request" style="border: 1px solid gray; zoom:80%;">  
 
     <img src="../nice-max-images/chat-simulation-realtime-22.png" alt="chat-simulation-realtime" title="chat-simulation-realtime" style="border: 1px solid gray; zoom:80%;">
+
+12. Click **End** to disconnect the chat.  
+    <img src="../nice-max-images/end-chat-button.png" alt="end-chat-button" title="end-chat-button" style="border: 1px solid gray; zoom:80%;">
+
+13. Click **End** again to confirm ending the chat. The Chat **summary** pop-up triggers at the end of the chat session.
+14. Select the **disposition**, and click **Save & Close**.  
+    <img src="../nice-max-images/chat-summary-and-disposition.png" alt="chat-summary-and-disposition" title="chat-summary-and-disposition" style="border: 1px solid gray; zoom:80%;">
 
 ## Voice Simulation
 
@@ -338,6 +347,13 @@ In the **Dialog Task**, open a **Message** node, and click **MANAGE RESPONSES**.
 
 8. Copy the **Phone Number,** and initiate the call.
 9. A voice request appears on the **MAX** desktop. Click **Accept**.  
-<img src="../nice-max-images/accept-voice-26.png" alt="accept-voice" title="accept-voice" style="border: 1px solid gray; zoom:80%;">
-
+   <img src="../nice-max-images/accept-voice-26.png" alt="accept-voice" title="accept-voice" style="border: 1px solid gray; zoom:80%;">
     <img src="../nice-max-images/voice-realtime-27.png" alt="voice-realtime" title="voice-realtime" style="border: 1px solid gray; zoom:80%;">
+
+10. Click **Hang Up** to disconnect the call.  
+    <img src="../nice-max-images/call-disconnection-button.png" alt="call-disconnection-button" title="call-disconnection-button" style="border: 1px solid gray; zoom:80%;">
+
+11. Click **Hang Up** again to confirm disconnection of the call. The Call **summary** pop-up gets triggered at the end of the call session.
+12. Select the **disposition**, and click **Save & Close**.  
+    <img src="../nice-max-images/call-summary-and-disposition.png" alt="call-summary-and-disposition" title="call-summary-and-disposition" style="border: 1px solid gray; zoom:80%;">
+
