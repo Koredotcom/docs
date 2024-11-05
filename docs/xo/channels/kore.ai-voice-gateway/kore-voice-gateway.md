@@ -1310,17 +1310,17 @@ ASR/TTS Fallback functionality can be implemented at various levels within the s
 
 **Location 1 - Global Setting**
 
-In Smart Assist: **Configurations** > **System Setup** > **Language & Speech** > **Voice Preferences** > **Show Advanced Settings**.  
+In SmartAssist: **Configurations** > **System Setup** > **Language & Speech** > **Voice Preferences** > **Show Advanced Settings**.  
 <img src="../images/show-advanced-settings.png" alt="Show Advanced Settings" title="Show Advanced Settings" style="border: 1px solid gray; zoom:80%;">
 
 **Location 2 - Call Control Parameters**
 
-In Smart Assist: **Automation** > **Select bot** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
+In SmartAssist: **Automation** > **Select bot** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
 <img src="../images/call-control-parameters.png" alt="Call Control Parameters" title="Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
 
 **Location 3 - Experience Flows**
 
-In Smart Assist: **Configurations** > **Experience Flows** > **Update/New Experience Flow** > **Speech Recognition Engine (ASR/TTS)** > **Show Advanced Settings**.  
+In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experience Flow** > **Speech Recognition Engine (ASR/TTS)** > **Show Advanced Settings**.  
 <img src="../images/experience-flows-advanced-settings.png" alt="Experience Flows" title="Experience flows" style="border: 1px solid gray; zoom:80%;">  
 
 <img src="../images/edit-experience-flows.png" alt="Edit Experience Flows" title="Edit Experience Flows" style="border: 1px solid gray; zoom:80%;">
@@ -1329,18 +1329,18 @@ In Smart Assist: **Configurations** > **Experience Flows** > **Update/New Experi
 <img src="../images/start-node.png" alt="Start Node" title="Start Node" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/start-node-experience-flow.png" alt="Start Node - Experience Flow" title="Start Node - Experience Flow" style="border: 1px solid gray; zoom:80%;">
 
-   !!! Note
+!!! Note
       
-         * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
-         * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
-            * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
-            * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
-            * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
-            * Both Primary and Fallback ASR/TTS configurations should be available in SAVG Speech Services otherwise you will not be able to configure in SmartAssist.
-            * The Credential Status of the Speech services configured in SAVG should be verified. If credential status is failed then ASR/TTS conversations will fail.
-         * In Call control parameters, 
-            * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
-            * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters)
+      * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
+      * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
+         * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
+         * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
+         * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
+         * Both Primary and Fallback ASR/TTS configurations should be available in SAVG Speech Services otherwise you will not be able to configure in SmartAssist.
+         * The Credential Status of the Speech services configured in SAVG should be verified. If credential status is failed then ASR/TTS conversations will fail.
+      * In Call control parameters, 
+         * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
+         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters)
 
 ### Voice Gateway Properties
 
@@ -2307,65 +2307,65 @@ Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAss
 2. Experience Flow level
 3. Node level
 
-   **Setting ASR/TTS at the Global level**  
+**Setting ASR/TTS at the Global level**  
    
-   The ASR/TTS engines configured at this level are applicable for all the experience flows (unless a separate speech engine is configured at the experience flow).
+The ASR/TTS engines configured at this level are applicable for all the experience flows (unless a separate speech engine is configured at the experience flow).
 
-    Steps to configure ASR/TTS at the global level:
+Steps to configure ASR/TTS at the global level:
 
-    1. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Language & Speech** > **Voice Preferences**.  
-      <img src="../images/language-and-speech.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
+1. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Language & Speech** > **Voice Preferences**.  
+   <img src="../images/language-and-speech.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
-   2. The Voice Preferences window is displayed. Select the Language from the dropdown.
-   3. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
-   4. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
-   5. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
-   6. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
-   7. To listen to the voice, enter a sample text into the **Sample Text** dialog box and click **Preview Text**.
-   8. Click **Done**.  
-      <img src="../images/save-voice-preference.png" alt="Save Voice Preference" title="Save Voice Preference" style="border: 1px solid gray; zoom:80%;">
+2. The Voice Preferences window is displayed. Select the Language from the dropdown.
+3. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
+4. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
+5. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
+6. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
+7. To listen to the voice, enter a sample text into the **Sample Text** dialog box and click **Preview Text**.
+8. Click **Done**.  
+   <img src="../images/save-voice-preference.png" alt="Save Voice Preference" title="Save Voice Preference" style="border: 1px solid gray; zoom:80%;">
 
-   **Configure ASR/TTS at the Experience Flow level**
+**Configure ASR/TTS at the Experience Flow level**
 
-    The speech engine configured in an Experience Flow applies to the entire flow and any bot called from within that flow.
+The speech engine configured in an Experience Flow applies to the entire flow and any bot called from within that flow.
 
-    Steps to configure ASR/TTS at the Experience Flow Level:
+Steps to configure ASR/TTS at the Experience Flow Level:
 
-      1. Go to **CONFIGURATION** > **EXPERIENCES** > **Experience Flows**.  
-         <img src="../images/experience-flows.png" alt="Experience Flows Page" title="Experience Flows Page" style="border: 1px solid gray; zoom:80%;">
+1. Go to **CONFIGURATION** > **EXPERIENCES** > **Experience Flows**.  
+   <img src="../images/experience-flows.png" alt="Experience Flows Page" title="Experience Flows Page" style="border: 1px solid gray; zoom:80%;">
 
-      2. Click **Edit** on the experience flow to assign a speech engine.  
-         <img src="../images/edit-experience-flow.png" alt="Edit Experience Flow" title="Edit Experience Flow" style="border: 1px solid gray; zoom:80%;">
+2. Click **Edit** on the experience flow to assign a speech engine.  
+   <img src="../images/edit-experience-flow.png" alt="Edit Experience Flow" title="Edit Experience Flow" style="border: 1px solid gray; zoom:80%;">
 
-      3. On the Edit Experience Flow window, select the **Language** from the dropdown.
-      4. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
-      5. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
-      6. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
-      7. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
-      8. Click **Update & Continue to Flow Design** to save the configurations.  
-      <  img src="../images/edit-flow-experience.png" alt="Continue to Flow Design" title="Continue to Flow Design" style="border: 1px solid gray; zoom:80%;">
+3. On the Edit Experience Flow window, select the **Language** from the dropdown.
+4. Select the **Automatic Speech Recognition Engine** and the **Dialect** from the dropdowns.
+5. Click **Show advanced settings** and select the **Primary** and **Fallback ASR Configurations**.
+6. Select the **Text to Speech Engine** and the **Voice** from the dropdowns.
+7. Click **Show advanced settings** and select the **Primary** and **Fallback TTS Configurations**.
+8. Click **Update & Continue to Flow Design** to save the configurations.  
+   <img src="../images/edit-flow-experience.png" alt="Continue to Flow Design" title="Continue to Flow Design" style="border: 1px solid gray; zoom:80%;">
 
-   **Configure ASR/TTS at a node at the Entity level inside a dialog**  
+**Configure ASR/TTS at a node at the Entity level inside a dialog**  
 
-   Speech engines (ASR/TTS) can be configured at any Entity or Message node inside a dialog. Once a speech engine is set at an Entity or Message node, it will be used until the end of the call unless a different speech engine is assigned at another Entity or Message node.
+Speech engines (ASR/TTS) can be configured at any Entity or Message node inside a dialog. Once a speech engine is set at an Entity or Message node, it will be used until the end of the call unless a different speech engine is assigned at another Entity or Message node.
 
-   The corresponding Call Control Parameter must be set to configure a speech engine at an Entity or Message node.
+The corresponding Call Control Parameter must be set to configure a speech engine at an Entity or Message node.
 
-   Steps to set call control parameters:
+Steps to set call control parameters:
 
-      1. Click the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) in the [Dialog Task](../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md) where the ASR/TTS will be configured.
+1. Click the [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) in the [Dialog Task](../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md) where the ASR/TTS will be configured.
    
-      2. Click **Voice Call Properties** and then click **Advanced Controls**.  
-         <img src="../images/advanced-controls.png" alt="Advanced Controls" title="Advanced Controls" style="border: 1px solid gray; zoom:80%;">
+2. Click **Voice Call Properties** and then click **Advanced Controls**.  
+   <img src="../images/advanced-controls.png" alt="Advanced Controls" title="Advanced Controls" style="border: 1px solid gray; zoom:80%;">
 
-      3. Click **Add** in the Call Control Parameters section to add a call control parameter.  
-         <img src="../images/add-call-control-parameters.png" alt="Add Call Control Parameters" title="Add Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
+3. Click **Add** in the Call Control Parameters section to add a call control parameter.  
+   <img src="../images/add-call-control-parameters.png" alt="Add Call Control Parameters" title="Add Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
 
-      4. Enter the **Parameter Name** and **Value** and click **Confirm** to add the parameter.    
-         <img src="../images/parameter-value.png" alt="Parameter-Value" title="Parameter-Value" style="border: 1px solid gray; zoom:80%;">
+4. Enter the **Parameter Name** and **Value** and click **Confirm** to add the parameter.    
+   <img src="../images/parameter-value.png" alt="Parameter-Value" title="Parameter-Value" style="border: 1px solid gray; zoom:80%;">
 
-      5. The parameter is added successfully.  
-         <img src="../images/parameter-added.png" alt="Parameter Added" title="Parameter Added" style="border: 1px solid gray; zoom:80%;">
+5. The parameter is added successfully.  
+   <img src="../images/parameter-added.png" alt="Parameter Added" title="Parameter Added" style="border: 1px solid gray; zoom:80%;">
 
 ### Continuous ASR 
 
@@ -2534,7 +2534,7 @@ To handle this scenario:
 
       !!! Note 
 
-         If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+          If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
 
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
