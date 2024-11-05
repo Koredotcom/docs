@@ -102,7 +102,8 @@ Steps to Configure a Pre-processor Script
 
     <img src="../images/service-node-img6-define-script-pre-and-post-processor.png" alt="Service node - Pre-processor script" title="Service node - Pre-processor script" style="border:1px solid gray;zoom:70%;">
 
-4. In the Add Script window, add the script you want to execute, and click **Save**.
+4. In the **Script Definition** window, add the script you want to execute, and click **Save**.
+    Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.
 
     <img src="../images/service-node-img7-add-script-to-service-node.png" alt="Service node - Add Pre-processor script" title="Service node - Add Pre-processor script" style="border:1px solid gray;zoom:70%;">
 
