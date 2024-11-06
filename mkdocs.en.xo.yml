@@ -377,15 +377,15 @@ nav:
           - Overview: quality-management/analyze/dashboard.md
           - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
           - Agent View (My Dashboard): quality-management/analyze/agent-dashboard-agent-view.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
-        - Coaching Assignments: 
-          - Supervisor View: quality-management/analyze/coaching-assignments-supervisor-view.md
-          - Agent View: quality-management/analyze/coaching-assignments-agent-view.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md        
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
-        - Coaching Monitor: quality-management/coach/coaching-monitor.md         
+        - Coaching Monitor: quality-management/coach/coaching-monitor.md
+        - Coaching Assignments: 
+          - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
+          - Agent View: quality-management/coach/coaching-assignments-agent-view.md         
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
@@ -517,11 +517,7 @@ nav:
           - Automation APIs: apis/automation/api-list.md
           - Search APIs: apis/searchai/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
-            - QM APIs: apis/contact-center/qm-apis/apis-list.md
-              - Raw Data API: apis/contact-center/qm-apis/raw-data-api.md
-              - Auto QA Reporting API: apis/contact-center/qm-apis/auto-qa-reporting-api.md
           - Agent APIs: apis/agent-ai/apis-list.md
-
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

@@ -4,6 +4,7 @@ This feature assists supervisors in analyzing agent performance and identifying 
 
 **Step 1:**
 
+
 1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.
 <img src="./agent-leaderboard/images/dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 

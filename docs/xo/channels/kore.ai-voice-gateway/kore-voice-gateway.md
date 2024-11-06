@@ -55,8 +55,7 @@ Kore.ai supports the following third-party service providers for ASR/STT. [Learn
    </td>
    <td>microsoft
    </td>
-   <td>On Premise
-<p style="text-align: center">
+   <td>On Premise<br>
 Cloud
    </td>
   </tr>
@@ -67,8 +66,7 @@ Cloud
    </td>
    <td>google
    </td>
-   <td>On-Premise
-<p style="text-align: center">
+   <td>On-Premise<br>
 Cloud
    </td>
   </tr>
@@ -236,7 +234,7 @@ Nvidia
    </td>
    <td>Boolean
    </td>
-   <td>:
+   <td>
  Google
  Microsoft
    </td>
@@ -1132,42 +1130,6 @@ Smart Format capabilities vary between models. When Smart Format is turned on, D
    </td>
   </tr>
   <tr>
-   <td>SSML Tags
-   </td>
-   <td>&lt;speak>
-  Here are &lt;say-as interpret-as="characters">SSML&lt;/say-as> samples.
-  I can pause &lt;break time="3s"/>.
-  I can play a sound
-  &lt;audio src="https://www.example.com/MY_MP3_FILE.mp3">didn't get your MP3 audio file&lt;/audio>.
- 
-&lt;/speak>
-   </td>
-   <td>TTS:
-Google
-AWS
-Microsoft
-*Aws does not support the audio tag
-   </td>
-   <td>It is used for modification in TTS.
-Procedure 
-<ol>
-
-<li>Open Bot builder</li>
-
-<li>Create EntityNode or messageNode </li>
-
-<li>Under user Prompt open  manage  user   prompt, select channel, and paste the  syntax in plain text </li>
-
-<li>The bot will play this prompt instead of the default
-
-For more details refer to:
-https://cloud.google.com/text-to-speech/docs/ssml</li>
-</ol>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
    <td>disableTtsCache
    </td>
    <td>Boolean
@@ -1306,7 +1268,7 @@ ttsOptions = {
 ASR/TTS Fallback functionality can be implemented at various levels within the system, such as the application level, experience flow level, or even the call control parameter level. This mechanism ensures that if there is an error or failure with the primary ASR (Automatic Speech Recognition) or TTS (Text-to-Speech) service, the system will automatically switch to a secondary, or fallback, ASR/TTS configuration. By doing this, the fallback prevents interruptions in the service and ensures a seamless user experience, regardless of issues with the primary configuration.
 * For optimal performance, it’s advised to configure the fallback with the same vendor in a different region/label.
 
-#### Configuring Primary and Fallback ASR/TTS
+#### Configure Primary and Fallback ASR/TTS
 
 **Location 1 - Global Setting**
 
@@ -1340,8 +1302,64 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
          * The Credential Status of the Speech services configured in SAVG should be verified. If credential status is failed then ASR/TTS conversations will fail.
       * In Call control parameters, 
          * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
-         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters)
+         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters).
 
+### SSML
+
+Using SSML (Speech Synthesis Markup Language) allows developers to control aspects of speech synthesis such as pronunciation, volume, pitch, and rate of speech. Here's a guide on how to use SSML effectively:
+
+#### Understanding SSML Basics
+
+* SSML is an XML-based markup language used to control text-to-speech synthesis.
+* It provides tags to control various aspects of speech synthesis, including pronunciation, prosody, volume, and more.
+* SSML is supported by many speech synthesis systems, including Amazon Polly, Google Text-to-Speech, and others.
+
+#### Basic SSML Tags
+
+* `&lt;speak>`: This is the root element of an SSML document and indicates the start and end of the speech content.
+* `&lt;break>`: Inserts a pause into the speech synthesis. You can specify the duration of the pause using the `time` attribute.
+* `&lt;emphasis>`: Emphasizes a portion of the text. You can specify the level of emphasis using the `level` attribute. * `&lt;prosody>`: Modifies aspects of speech such as pitch, rate, and volume. Attributes include `pitch`, `rate`, and `volume`.
+* `&lt;phoneme>`: Specifies the pronunciation of a word using phonetic alphabet symbols.
+* `&lt;say-as>`: Indicates how a particular piece of text should be pronounced, such as numbers, dates, or currency.
+* `&lt;audio>`: Embeds audio files into the speech output.
+
+#### Using SSML in Code
+
+* When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags
+
+Example:
+````
+&lt;speak>
+
+    Here is a number &lt;w role='amazon:VBD'>read&lt;/w>
+
+    as a cardinal number:
+
+    &lt;say-as interpret-as='cardinal'>12345&lt;/say-as>.
+
+    Here is a word spelled out:
+
+    &lt;say-as interpret-as='spell-out'>hello&lt;/say-as>.
+
+&lt;/speak>
+````
+#### Voice tag support
+
+support for voice elements in SSML,
+
+In the speak tag, follow below-mentioned steps:
+
+1. Empty speak tag without attributes **&lt;speak>**
+    1. In this case, Kore Voice Gateway will construct **voice** and **language** elements on its own based on values supplied in Call control params.
+2. Customised speak tag with attributes **&lt;speak version="1.0" xml:lang="en-US" xmlns="**[W3C Speech Synthesis namespace](http://www.w3.org/2001/10/synthesis) **">**
+    2. In this case, Kore Voice Gateway will send the SSML without any modifications to the TTS engine.
+
+In this case, follow option 2 and the voice element will work.
+
+Example:
+```
+<speak version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/10/synthesis"><voice name="en-US-AvaNeural">Hi, I'm eBay's automated phone assistant. Let me know in a few words how I can help.</voice></speak>
+```
 ### Voice Gateway Properties
 
 <table>
@@ -2291,7 +2309,7 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
 
  It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code. 
 
-If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Communication Team.
+If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Kore Support Team.
 
 !!! Note
 
@@ -2532,9 +2550,9 @@ To handle this scenario:
    * Configure the Service node.
    * Deliver the message after the Service node.
 
-      !!! Note 
+!!! Note 
 
-          If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
+      If you receive a response from the API and don’t want to play the full music, immediately abort the music and play the Message node prompt using the channel override utility function:
 
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
@@ -2688,8 +2706,6 @@ For example, if a user speaks in English, the conversation will continue in Engl
 
 These steps will ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
 
-For a demonstration, you can access the [Sample Demo Bot](https://drive.google.com/drive/folders/1NC05qtbK7L2-14DyeDR7cpYFyOrZCy82?usp=drive_link).
-
 ## Transfer a Call to SmartAssist Using SIP Transfer
 
 You can set up a dedicated number or SIP to transfer calls to a voice agent. [Learn more](https://docs.kore.ai/smartassist/settings/agent-setup/#SIP_Transfer_Methods).
@@ -2708,7 +2724,7 @@ When updating settings such as adding, updating, deleting phone numbers, or modi
 Before the bot publishing fails, open the Inspect tab in your browser. In the Network tab, search for the dockstatus API. You will see multiple APIs with the name dockstatus. When the bot publishing failure message appears, open the most recent dockstatus API.  
 <img src="../images/inspect-element.png" alt="Inspect" title="Inspect" style="border: 1px solid gray; zoom:40%;">
 
-In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the XOCCAI-Voice Gateway team. For any other reasons causing the bot publishing failure, the XOCCAI-Voice Gateway team is not responsible.  
+In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the Kore Support team.  
 <img src="../images/dockstatus-api.jpg" alt="Dockstatus" title="Dockstatus" style="border: 1px solid gray; zoom:80%;">
 
 ### Issue: Agent Transfer is Not Working
@@ -2732,4 +2748,4 @@ If a request is not being assigned to an available agent and the bot is respondi
 
     In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Kore VG are connected.
 
-    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Kore VG. You can report this to the Kore.ai development team.
+    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Kore VG. You can report this to the Kore Support team.

@@ -1,6 +1,6 @@
 # Dashboard Overview
 
-The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
+The Dashboard Overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
 
 You can access Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
 

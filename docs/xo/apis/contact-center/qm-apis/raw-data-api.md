@@ -72,10 +72,10 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
 curl --location 'https://sit-xo.kore.ai/agentassist/api/v1/public/qualitymanagement/app/st-5ceb332e-d21a-5675-8b45-7707f37b3f72/rawdata' \
 --header 'Accept: application/json, text/plain, /' \
 --header 'Accept-Language: en-US,en;q=0.9' \
---header 'AccountId: 6639f8cc882f9068043f9f7d' \
+--header 'AccountId: 6639f8cc882f9068043fxxxx' \
 --header 'Connection: keep-alive' \
 --header 'Content-Type: application/json;charset=UTF-8' \
---header 'Iid: st-5ceb332e-d21a-5675-8b45-7707f37b3f72' \
+--header 'Iid: st-5ceb332e-d21a-5675-8b45-7707f37bxxxx' \
 --header 'Referer: https://sit-xo.kore.ai/builder/app/setupguide' \
 --header 'Sec-Fetch-Dest: empty' \
 --header 'Sec-Fetch-Mode: cors' \
@@ -89,8 +89,8 @@ curl --location 'https://sit-xo.kore.ai/agentassist/api/v1/public/qualitymanagem
 --header 'sec-ch-ua-mobile: ?0' \
 --header 'sec-ch-ua-platform: "Windows"' \
 --header 'state: configured' \
---header 'accountId: 6639f8cc882f9068043f9f7d' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTMxZWY5NTg3LWVmNjItNWJkMC05YWYzLWY5NDg1YzNkODMwYiJ9.gq6RPw3ppZAr7yPuWJn5Tk39rF6-Z6C4vncWst0YKa0' \
+--header 'accountId: 6639f8cc882f9068043fxxxx' \
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTMxZWY5NTg3LWVmNjItNWJkMC05YWYzLWY5NDg1YzNkODMwYiJ9.gq6RPw3ppZAr7yPuWJn5Tk39rF6-Z6C4vncWst0xxxx' \
 --data '{
     "startDate": "2024-07-18 00:17:54",
     "endDate": "2024-07-19 13:36:35",
@@ -189,7 +189,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             "Conversation Start Time": "2024-07-18T11:31:14.722Z",
             "Conversation End Time": "2024-07-18T11:33:12.904Z",
             "Duration": "118182 milliseconds",
-            "Conversation ID": "c-89da2cc-512d-4e26-9404-18481299508a",
+            "Conversation ID": "c-89da2cc-512d-4e26-9404-18481299xxxx",
             "Sentiment Score": 5,
             "Intents": [
                 {
@@ -224,13 +224,13 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             "IsPassed": false,
             "Queues": [
                 {
-                    "Queue ID": "qu-20e6d30-e133-4651-8b4a-7e82ea1d8983",
+                    "Queue ID": "qu-20e6d30-e133-4651-8b4a-7e82ea1dxxxx",
                     "Queue Name": "Technical Support "
                 }
             ],
             "Agents": [
                 {
-                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474da60",
+                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474xxxxx",
                     "Agent Name": "Demo",
                     "Agent Start Time": "2024-07-18T11:31:18.703Z",
                     "Agent Email": "demo@mailinator.com"
@@ -238,7 +238,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             ],
             "Metrics": [
                 {
-                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1da0ee6",
+                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1daxxxx",
                     "Metric Name": "Customer Verification",
                     "Metric Weight": 25,
                     "Qualification": "NA"
@@ -259,7 +259,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
                     "Qualification": "NA"
             	},
                 {
-                    "Metric ID": "em-264a0841-b272-5604-a7ea-3bdb1132a370",
+                    "Metric ID": "em-264a0841-b272-5604-a7ea-3bdb1132xxxx",
                     "Metric Name": "QQQQQq",
                     "Metric Weight": 30,
                     "Qualification": "YES"
@@ -271,7 +271,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             "Conversation Start Time": "2024-07-19T13:30:20.347Z",
             "Conversation End Time": "2024-07-19T13:31:08.370Z",
             "Duration": "48023 milliseconds",
-            "Conversation ID": "c-508069e-a7c0-42ce-86ec-6658599599a8",
+            "Conversation ID": "c-508069e-a7c0-42ce-86ec-66585995xxxx",
             "Sentiment Score": 7,
             "Intents": [
                 {
@@ -291,13 +291,13 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             "IsPassed": false,
             "Queues": [
                 {
-                    "Queue ID": "qu-20e6d30-e133-4651-8b4a-7e82ea1d8983",
+                    "Queue ID": "qu-20e6d30-e133-4651-8b4a-7e82ea1dxxxx",
                     "Queue Name": "Technical Support "
                 }
             ],
             "Agents": [
                 {
-                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474da60",
+                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474xxxxx",
                     "Agent Name": "Demo",
                     "Agent Start Time": "2024-07-19T13:30:39.279Z",
                     "Agent Email": "demo@mailinator.com"
@@ -305,13 +305,13 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             ],
             "Metrics": [
                 {
-                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1da0ee6",
+                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1daxxxx",
                     "Metric Name": "Customer Verification",
                     "Metric Weight": 25,
                     "Qualification": "NA"
                 },
 		  {
-                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1da0ee7",
+                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1daxxxx",
                     "Metric Name": "Customer Price",
                     "Metric Weight": 30,
                     "Qualification": "NA"
@@ -327,7 +327,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
                     "Qualification": "NO"
                 },
                 {
-                    "Metric ID": "em-0127c0a1-3939-571a-9cde-33ab43f03939",
+                    "Metric ID": "em-0127c0a1-3939-571a-9cde-33ab43f0xxxx",
                     "Metric Name": "Cross talk check",
                     "Metric Weight": 30,
                     "Qualification": "YES"
