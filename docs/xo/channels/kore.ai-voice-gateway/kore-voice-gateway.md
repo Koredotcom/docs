@@ -2722,7 +2722,7 @@ When updating settings such as adding, updating, deleting phone numbers, or modi
 <img src="../images/bot-publishing-failed.png" alt="Bot Publishing Failed" title="Bot Publishing Failed" style="border: 1px solid gray; zoom:40%;">
 
 Before the bot publishing fails, open the Inspect tab in your browser. In the Network tab, search for the dockstatus API. You will see multiple APIs with the name dockstatus. When the bot publishing failure message appears, open the most recent dockstatus API.  
-<img src="../images/inspect-element.png" alt="Inspect" title="Inspect" style="border: 1px solid gray; zoom:40%;">
+<img src="../images/inspect-element-page.png" alt="Inspect" title="Inspect" style="border: 1px solid gray; zoom:40%;">
 
 In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the Kore Support team.  
 <img src="../images/dockstatus-api.jpg" alt="Dockstatus" title="Dockstatus" style="border: 1px solid gray; zoom:80%;">
