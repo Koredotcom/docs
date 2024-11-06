@@ -278,7 +278,7 @@ Specify the intent (dialog) to handle the call termination event from the dropdo
 
 #### Call Control Parameters
 
-Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md)  
+Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md).  
     <img src="../images/add-parameter.png" alt="Add Parameter" title="Add Parameter" style="border: 1px solid gray; zoom:100%;">
 
 #### Timeout Prompt
