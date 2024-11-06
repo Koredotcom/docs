@@ -80,13 +80,13 @@ To configure or modify the voice preferences, follow the steps below:
 <img src="../images/voice-preferences.png" alt="
 Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
-2. Select a **Text-to-Speech Engine** in the _Voice Preferences_ window: _Google Cloud Text-to-Speech, Microsoft Azure Speech Services,_ or _AWS Amazon Polly._
+2. Select a **Text-to-Speech Engine** in the _Voice Preferences_ window: _Google Cloud Text-to-Speech, Microsoft Azure Speech Services, AWS Amazon Polly_ or _Nvidia Riva_.
     1. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Fw), and adjust the preview volume. Clicking the More Options (⋮) button reveals options to adjust **Playback Speed** and **Download** the voice preview.
     2. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its own voice options.
     3. Select a different Voice Language if required.
     <img src="../images/configure-voice-preferences.gif" alt="Configure Voice Preferences" title="Configure Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
-3. Select an **Automated Speech Recognition Engine**: Google Cloud Speech-to-Text, Microsoft Azure Speech Services, AmiVoice, or NVIDIA Riva. Afterward, choose the **Dialect** that you want to work with.
+3. Select an **Automated Speech Recognition Engine**: Google Cloud Speech-to-Text, Microsoft Azure Speech Services, AmiVoice, or NVIDIA Riva. Afterward, choose the [Dialect](#list-of-supported-dialects) that you want to work with.
 <img src="../images/asr-and-dialect.png" alt="
 Select ASR and Dialect" title="Select ASR and Dialect" style="border: 1px solid gray; zoom:80%;">
 
@@ -94,9 +94,6 @@ Select ASR and Dialect" title="Select ASR and Dialect" style="border: 1px solid 
 
 ### List of Supported Dialects
 
-Here is the HTML table converted into Markdown format:
-
-|                     |                       |
 |---------------------|-----------------------|
 | English (Australia) | English (Philippines) |
 | English (Canada)    | English (Singapore)   |
