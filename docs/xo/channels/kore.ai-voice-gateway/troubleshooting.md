@@ -1,6 +1,8 @@
 # Troubleshooting
 
-## Issue: Bot Publish is failing
+Let's troubleshoot a few common Voice Gateway related issues reported by users. 
+
+## Bot Publish is Failing
 
 When updating settings such as adding, updating, deleting phone numbers, or modifying the Language & Speech section, if the bot publishing fails:  
 <img src="../images/bot-publishing-failed.png" alt="Bot Publishing Failed" title="Bot Publishing Failed" style="border: 1px solid gray; zoom:40%;">
@@ -11,7 +13,7 @@ Before the bot publishing fails, open the Inspect tab in your browser. In the Ne
 In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the Kore Support team.  
 <img src="../images/dockstatus-api.jpg" alt="Dockstatus" title="Dockstatus" style="border: 1px solid gray; zoom:80%;">
 
-## Issue: Agent Transfer is Not Working
+## Agent Transfer is Not Working
 
 If a request is not being assigned to an available agent and the bot is responding with "No agents are available right now," even though agents are online, follow these steps:
 

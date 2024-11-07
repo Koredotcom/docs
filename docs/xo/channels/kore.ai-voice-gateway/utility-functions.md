@@ -1,8 +1,8 @@
-# Utility Functions
+# Utility Functions in Voice Gateway
 
-## Agent Utils and Voice Utils
+Kore.ai Voice Gateway offers two utility libraries to manage call handling and transfers - Agent Utils and Voice Utils. These utilities provide comprehensive control over call flows, including features like SIP transfers, audio control, DTMF handling, and custom header management. Together, they offer flexible options for implementing both complex agent-assisted scenarios and straightforward external transfers.
 
-### Agent Utils (SmartAssist Library)
+## Agent Utils (SmartAssist / Contact Center Library)
 
 The `agentUtils` library in the SmartAssist allows you to dynamically modify call transfer properties through the bot builder (XO) before transferring the call to a human agent. It provides a wide range of options, including:
 
@@ -24,7 +24,7 @@ Unlike `voiceUtils`, the `agentUtils + Agent Transfer` `Node` flow **supports** 
 **Example Use Case**:  
 If you need to dynamically change the SIP transport type or update the SIP URI based on the user's session, `agentUtils` allows you to modify these properties via a script node in the bot builder. The Agent Transfer node will handle the actual routing to the SmartAssist platform. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
 
-### Voice Utils (SmartAssist Library)
+## Voice Utils (SmartAssist Library)
 
 The `voiceUtils` library is specifically for the SmartAssist Voice Gateway. It is used for transferring calls to external sources, such as SIP endpoints or phone numbers, **without involving the SmartAssist agent desktop**. This library supports functionalities like:
 
@@ -40,20 +40,20 @@ In the case of agent transfers using `voiceUtils`, the call is directly routed t
    **Example Use Case**:
 If you are transferring the call to an external SIP provider or a phone number directly, `voiceUtils` is the ideal choice. This quick method bypasses SmartAssist and is tailored for simple SIP or phone number transfers.
 
-### When to Use What
+## When to Use What
 
 * Use <code>agentUtils</code> + Agent Transfer Node</strong>:
 This method should be used when <strong>header</strong> <strong>encoding/decoding</strong> or <strong>user-to-user (UUI) data transfer</strong> is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
 * <strong>Use <code>voiceUtils</code></strong>:
 Use this method when you need to <strong>transfer the call directly to an external source</strong> like a SIP endpoint or phone number, <strong>bypassing the SmartAssist platform</strong>. It is best for simple transfers without the need for header encoding or UUI support.
 
-### VoiceUtils Helper Methods
+## VoiceUtils Helper Methods
 
 These functions can be used in the Channel Override template inside Java script sections. All functions can be executed in the Message Node.
 
 **General Syntax** - `print(utility function)`
 
-#### Hangup
+### Hangup
 
 **Use Cases**:
 
@@ -140,7 +140,7 @@ The system will first play the message, then hang up the call and transmit the h
         print(voiceUtils.hangup(message,headers));
 ```
 
-#### SIP Refer
+### SIP Refer
 
 This function transfers the call to an external contact number (telephone number or SIP URI). After the transfer (Refer), the bot's call leg will disconnect.
 
@@ -230,7 +230,7 @@ print(voiceUtils.refer(message,ReferTo));
 print(voiceUtils.refer(message,ReferTo,headers,false));
 ```
 
-#### SIP Invite
+### SIP Invite
 
 The SIP Invite initiates a conference call. The bot's leg remains active after the call connects to the third party, and once the call with the third party ends, the bot's call will resume. The callerId and target fields are mandatory and should contain either a SIP URI or a phone number. To pass these values, provide an empty string for the message, followed by the callerId and target.
 
@@ -312,7 +312,7 @@ let headers = {
 print(voiceUtils.invite(message,callerId,target,headers))
 ```
 
-#### AbortPrompt
+### AbortPrompt
 
 The abortPrompts event cancels all pending prompts sent before it was triggered. For example, if the bot sends an abortPrompts event right after sending three prompt messages, the first prompt will stop playing immediately, and the remaining two prompts will not play.
 
@@ -347,7 +347,7 @@ The “Message” parameter is Optional.
   </tr>
 </table>
 
-!!! Note
+!!! note
 
     It supports .wav files and multiple messages also, but it should send as an array of messages.
 
@@ -364,7 +364,7 @@ print(voiceUtils.abort(message))
 print(voiceUtils.abortPrompt())
 ```
 
-#### Send DTMF
+### Send DTMF
 
 This function is used to send DTMF digits from the bot. The digits are sent as RTP payloads using RFC 2833.
 
@@ -415,7 +415,7 @@ let duration = 600
 print(voiceUtils.sendDTMF(dtmf,duration))
 ```
 
-#### Pause and Play
+### Pause and Play
 
 The pause command waits silently for a specified number of seconds. Play is Optional; If you pass the message, it will play after the pause.
 
@@ -465,7 +465,7 @@ let message = "After 4 second this message will play"
 print(voiceUtils.pauseAndPlay(length,message))
 ```
 
-#### Play
+### Play
 
 The play command is used to stream recorded audio to either a call or a text message.
 
@@ -505,12 +505,12 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
  //  All three message will be played in Sequence WIse (Text Message -> Audio File -> Text Message)
 ```
 
-### Raw Packet (JavaScript Code)
+## Raw Packet (JavaScript Code)
 
  It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code.
 
 If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Kore Support Team.
 
-!!! Note
+!!! note
 
     The Kore platform does not perform design-time validation of message overrides; they are passed as is, increasing the likelihood of errors.

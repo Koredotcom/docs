@@ -1,4 +1,15 @@
-# Common Configuration Scenarios
+# Common Configuration Scenarios in Voice Gateway
+
+Kore.ai Voice Gateway offers several essential configuration options to customize and optimize voice interactions. These configurations enable administrators to fine-tune voice interactions, manage response delays, and create more natural conversational experiences across different languages and use cases.
+
+The common configuration scenarios include: 
+
+* Speech engine configuration (ASR/TTS) at global, experience flow, and node levels. 
+* Continuous ASR for handling digit strings and identifiers.
+* Bot delay management for response timing.
+* Barge-in controls for handling user interruptions.
+* Automated language detection for multilingual support. 
+
 
 ## Configure ASR/TTS
 

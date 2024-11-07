@@ -1,14 +1,12 @@
 # Kore Voice Gateway
 
-## Introduction
-
-The Kore Voice Gateway manages voice communication on the XO Platform. It seamlessly integrates with existing systems or utilizes Kore.ai's native voice processing capabilities to optimize voice interactions.
-
-As a fully-featured solution within the Kore XO platform, the Voice Gateway enables voice automation and human interactions, enhancing overall communication capabilities.
+Kore.ai Voice Gateway is a comprehensive voice automation solution that manages inbound call automation for Contact Center AI. It integrates with existing voice systems or uses Kore.ai's native voice processing capabilities, enabling seamless transitions between automated and human interactions within the XO Platform.
 
 ## Configure Kore Voice Gateway
 
-By going to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**, you can add phone numbers, set up SIP Transfer, and configure the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.  
+You can configure the voice gateway by adding phone numbers, setting up SIP Transfer, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
+
+Navigate to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
 <img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:100%;">
 
 ### Phone Numbers

@@ -2,11 +2,11 @@
 
 Call control parameters are general-purpose parameters that can modify a call's behavior, including ASR/STT & TTS configurations.
 
-!!! Note
+!!! note
 
     Automatic Speech Recognition (ASR) and Speech-to-Text (STT) are two terms that refer to the same technology. Both involve converting spoken language into written text by analyzing and interpreting audio input. The terms are used interchangeably, describing the same function—transforming speech into readable, actionable text.
 
-There are two ways to define the Call Control Parameters:
+There are two ways to define the Call Control Parameters - Node Level and Channel Level.
 
 ## Node Level Call Control
 
