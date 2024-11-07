@@ -1,15 +1,18 @@
-# XO Platform Sign Up
+# Quality Management (QM) Sign Up Process
 
-Steps to Sign up XO Platform:
+## XO Platform Sign Up
 
-1. Enter the Kore.ai [XO Platform](https://platform.kore.ai/auth/login). The following XO Platform Sign-Up page is displayed.
+Steps to Sign Up XO Platform:
 
+1. Enter the Kore.ai [XO Platform](https://platform.kore.ai/auth/login) URL link. The following XO Platform Sign Up page is displayed.  
 <img src="../dashboard/images/xo-platform-url-page.png" alt="XO Platform Sign-Up" title="XO Platform Sign-Up" style="border: 1px solid gray; zoom:70%;">
 
-2. Sign in to the Kore.ai XO account using the **Google**, **Microsoft Office** or **LinkedIn** profiles Email ID and Password. The following XO Platform landing page is displayed.  
+2. Sign in to the Kore.ai XO account using your **Google** or **Microsoft Office** or **LinkedIn** profiles Email ID and Password. The following XO Platform landing page is displayed.  
 <img src="../dashboard/images/xo-platform-landing-page.png" alt="XO account" title="XO account" style="border: 1px solid gray; zoom:70%;">
 
-# Quality Management Module Access
+3. You can filter and select the apps by **Pinned** or **Shared** or **My Apps** or **All Apps** as displayed in the above screen. 
+
+# QM Module Access
 
 1. Click the **Product Switcher** > **Contact Center AI** as displayed in the following screen.
 
