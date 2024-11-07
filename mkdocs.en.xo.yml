@@ -390,10 +390,10 @@ nav:
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
-        - Coaching Monitor: quality-management/coach/coaching-monitor.md
-        - Coaching Assignments: 
+          - Coaching Assignments: 
           - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
-          - Agent View: quality-management/coach/coaching-assignments-agent-view.md         
+          - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
+          - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md

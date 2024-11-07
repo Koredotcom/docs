@@ -12,7 +12,7 @@ Steps to Sign Up XO Platform:
 
 3. You can filter and select the apps by **Pinned** or **Shared** or **My Apps** or **All Apps** as displayed in the above screen. 
 
-# QM Module Access
+## QM Module Access
 
 1. Click the **Product Switcher** > **Contact Center AI** as displayed in the following screen.  
 
