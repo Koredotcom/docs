@@ -24,7 +24,7 @@ The following table lists the options available in the Model column:
   <tr>
    <td>
 
-<img src="../playground/images/bookmark.png" style="zoom:100%;"></img>
+<img src="../images/bookmark.png" style="zoom:100%;"></img>
 
    </td>
    <td>Rearrange  
