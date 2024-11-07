@@ -14,20 +14,19 @@ Steps to Sign Up XO Platform:
 
 # QM Module Access
 
-1. Click the **Product Switcher** > **Contact Center AI** as displayed in the following screen.
+1. Click the **Product Switcher** > **Contact Center AI** as displayed in the following screen.  
 
-<img src="../dashboard/images/contact-center-landing-page.png" alt="Contact Center AI" title="Contact Center AI" style="border: 1px solid gray; zoom:70%;">
+    <img src="../dashboard/images/contact-center-landing-page.png" alt="Contact Center AI" title="Contact Center AI" style="border: 1px solid gray; zoom:70%;">
 
 2. Navigate to Contact **Contact Center AI** > **Quality Management**. The following screen is displayed.
 
-<img src="../dashboard/images/qm-landing-page.png" alt="QM Module" title="QM Module" style="border: 1px solid gray; zoom:70%;">
+    <img src="../dashboard/images/qm-landing-page.png" alt="QM Module" title="QM Module" style="border: 1px solid gray; zoom:70%;">
 
 # Dashboard Overview
 
 The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
 
 You can access Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
-
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -67,15 +66,15 @@ The following are the metrics components to assess agent performance (audits) an
 
 ### Total Audits
 
-Displays the total manual audits count completed based on the date range selected.
+Displays the total manual audits count completed based on the date range selected.  
 <img src="../dashboard/images/total-audits.png" alt="Total Audits" title="Total Audits" style="border: 1px solid gray; zoom:100%;">
 
 ### Avg. Audits per Agent
-Displays the average number of manual audits per agent or evaluations completed belonging to the queues of a user.
+Displays the average number of manual audits per agent or evaluations completed belonging to the queues of a user.  
 <img src="../dashboard/images/avg-audits-per-agent.png" alt="Average Audits per Agent" title="Average Audits per Agent" style="border: 1px solid gray; zoom:100%;">
 
 ### Coaching Sessions Assigned
-Displays the number of coaching sessions the user (supervisor) has assigned across agents within a specific time period.
+Displays the number of coaching sessions the user (supervisor) has assigned across agents within a specific time period.  
 <img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
 
 ### Agents in Coaching
@@ -87,10 +86,10 @@ Displays the total number of audits (progress score) pending and completed.
 
 * **Completed**: Number of assigned interactions that are audited.
 * **Pending**: Number of interactions assigned for audit and not yet audited.
-* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** feature, where you can easily start evaluating interactions.
-For more information, see [Conversation Mining](../analyze/conversation-mining.md).
-
+* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
+
+For more information, see [Conversation Mining](../analyze/conversation-mining.md).
 
 ### Evaluation Score 
 This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
@@ -106,7 +105,7 @@ You can view both automated interactions and manual audits scores across the fol
 This chart displays the count of failed interactions based on the selected forms and date range. It allows you to visualize failure trends for the chosen forms over the last 7 days, 7 weeks, or 7 months, using daily, weekly, and monthly views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.
 
 ### Evaluation Form
-This chart displays failure rates across the selected evaluation forms, making it easy to track any increases in failure rates. It allows you to quickly identify issues and take appropriate action, without the need to manually review individual failed interactions. 
+This chart displays failure rates across the selected evaluation forms, making it easy to track any increases in failure rates. It allows you to quickly identify issues and take appropriate action, without the need to manually review individual failed interactions.   
 <img src="../dashboard/images/fail-stat-evaluation-form.png" alt="Fail Statistics Evaluation Form" title="Fail Statistics Evaluation Form" style="border: 1px solid gray; zoom:60%;">
 
 ### Agent Scorecard
@@ -141,8 +140,7 @@ Supervisors can monitor agent performance based on the selected evaluation form.
 
 ## Agent Leaderboard
 
-This widget allows users to view a condensed version of the agent leaderboard to have a snapshot version of agent performance. You can access the full Agent Leaderboard by clicking the [View Leaderboard](./agent-leaderboard.md) button.
-
+This widget provides a simplified view of the Agent Leaderboard and a snapshot version of agent performance. The Agent Leaderboard displays a centralized view that makes it easy to identify the best and worst performers. Enables you to make informed decisions about rewarding high performers and assigning coaching to those agents who need improvement.  
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
@@ -161,11 +159,12 @@ The Agent Leaderboard displays the following items:
 
 * **Fail Percentage**: This displays the percentage of failures across all interactions.
 
-### View Leaderboard or Agent Leaderboard
+### View Leaderboard
 
-Clicking the **View Leaderboard** button in the **Agent Leaderboard** (Dashboard) widget takes the user to the [View Leaderboard](../analyze/agent-leaderboard.md) or [Agent Leaderboard](../analyze/agent-leaderboard.md).
+This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations.  
 
-### Supervisor Dashboard
+Click the **View Leaderboard** button, the following screen is displayed that navigates you to the **Agent Leaderboard** page.   
+<img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-Clicking any one of the agents from the **Agent Leaderboard** (Dashboard) widget directs the user to the [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).  
+For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
 
