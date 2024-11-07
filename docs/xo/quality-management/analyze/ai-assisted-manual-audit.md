@@ -123,7 +123,7 @@ In the Chat History - Audit section, the evaluation form items determine perform
 
   **No**: If the threshold is 60% and the agent meets below 60% or similar, it will be marked as NO, and the question badge indicates red color.
 
-* **Trigger Not Detected (N/A)**: If the adherence percentage is not detected, it is considered as not applicable.
+* **Trigger Not Detected (N/A)**: If the adherence percentage is not detected,  and dynamic by question, then it is considered as not applicable.
 
   For example, 
 

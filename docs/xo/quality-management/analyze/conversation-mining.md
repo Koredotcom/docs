@@ -273,14 +273,18 @@ Steps to Add New Audit Allocation in Allocation:
     <img src="../conversation-mining/images/add-new-audit-allocation.png" alt="Allocation" title="Allocation" style="border: 1px solid gray; zoom:70%;">
 
 5. Select a required Filter option from the above search filter for audit.
-    5. The total interactions count displays the total number of interactions that is being assigned for this audit based on the evaluation form (queue), agent group selection and the filter selection
+
+    The total interactions count displays the total number of interactions that is being assigned for this audit based on the evaluation form (queue), agent group selection, and the filter selection.
+
 6. Click **Next** to move to **Assignment** section.
 
 ### Assignment
 
-Steps to **Add New Audit Allocation** in Assignment:  
+Steps to **Add New Audit Allocation** in Assignment: 
+
 1. Select the **Auditors** from the Search filter that you want to assign interactions for manual evaluation.  
     <img src="../conversation-mining/images/new-audit-allocat-assignment.png" alt="Assignment" title="Assignment" style="border: 1px solid gray; zoom:60%;">    
+    
 2. Enter the % allocation of interactions that you want to allocate for each selected auditor.
 
     The interactions column displays the number of interactions that will be assigned for each auditor based on the allocation % input that allows you to adjust the input based on your preferences.  
