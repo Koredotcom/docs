@@ -13,11 +13,12 @@ The Evaluation Forms are designed to check adherence to individual questions. Th
 
 The Evaluation Form includes chosen metrics with customizable weights totaling 100%. The Evaluation Forms are configured and assigned to respective Channels and Queues for audit. Each queue in the Chat and Voice channels can host only one evaluation form.
 
-Users can access the Evaluation Forms by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms**.   
+Users can access the Evaluation Forms by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms**.  
+
 <img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
 
 
-!!! Note     
+!!! note     
         
     To create and configure evaluation forms, the Auto QA setting must be enabled first.
 
@@ -42,9 +43,9 @@ Steps to create a new Evaluation Form:
 1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.    
 <img src="../images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">   
 
-    !!! Note     
+!!! note     
         
-        It is mandatory for the agents to attain the minimum pass score set by the Supervisor. If the pass score is not met for a given interaction, it will be evaluated as Fail.
+    It is mandatory for the agents to attain the minimum pass score set by the Supervisor. If the pass score is not met for a given interaction, it will be evaluated as Fail.
 
 The following table describes the Evaluation Forms details:
 
@@ -112,7 +113,7 @@ For example, if there is more than one Evaluation Metric, the total percentage m
   </tr>
 </table>
 
-2. Click **Create** to **Add New Evaluation Form** for queue review.
+2. Click **Create** to **Add New Evaluation Form** to the queue for review.
 3. In case, if you are changing the existing channel mode from Voice to Chat or vice-versa which is already added, then the following dialog box appears.  
 
     !!! Note
