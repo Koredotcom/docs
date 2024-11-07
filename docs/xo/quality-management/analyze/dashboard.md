@@ -1,27 +1,3 @@
-# Quality Management (QM) Sign Up Process
-
-## XO Platform Sign Up
-
-Steps to Sign Up XO Platform:
-
-1. Enter the Kore.ai [XO Platform](https://platform.kore.ai/auth/login) URL link. The following XO Platform Sign Up page is displayed.  
-<img src="../dashboard/images/xo-platform-url-page.png" alt="XO Platform Sign-Up" title="XO Platform Sign-Up" style="border: 1px solid gray; zoom:70%;">
-
-2. Sign in to the Kore.ai XO account using your **Google** or **Microsoft Office** or **LinkedIn** profiles Email ID and Password. The following XO Platform landing page is displayed.  
-<img src="../dashboard/images/xo-platform-landing-page.png" alt="XO account" title="XO account" style="border: 1px solid gray; zoom:70%;">
-
-3. You can filter and select the apps by **Pinned** or **Shared** or **My Apps** or **All Apps** as displayed in the above screen. 
-
-# QM Module Access
-
-1. Click the **Product Switcher** > **Contact Center AI** as displayed in the following screen.  
-
-    <img src="../dashboard/images/contact-center-landing-page.png" alt="Contact Center AI" title="Contact Center AI" style="border: 1px solid gray; zoom:70%;">
-
-2. Navigate to Contact **Contact Center AI** > **Quality Management**. The following screen is displayed.
-
-    <img src="../dashboard/images/qm-landing-page.png" alt="QM Module" title="QM Module" style="border: 1px solid gray; zoom:70%;">
-
 # Dashboard Overview
 
 The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
