@@ -391,8 +391,8 @@ nav:
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
           - Coaching Assignments: 
-          - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
-          - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
+            - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
+            - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
