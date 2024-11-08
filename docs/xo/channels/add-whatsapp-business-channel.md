@@ -1,13 +1,10 @@
 # Adding the WhatsApp Business Messaging Channel
 
-
 ## Adding the WhatsApp Channel using Infobip Application
 
 To complete this procedure, you must already have an **Infobip** account. This is one of the messaging providers for enabling **WhatsApp Business Messaging** on the Kore Platform.
 
 Steps to configure **Infobip**:
-
-
 
 1. Login to the **Infobip** developer portal.
 2. On the left navigation menu, click the **Channels and Numbers** option and select the **WhatsApp** channel on the **Channel Essentials** panel.
@@ -67,13 +64,9 @@ Once you’ve sent a message to **Infobip** using the **WhatsApp Business Messag
 <img src="../images/whatsapp11.png" alt="infobib errors" title="infobib errors" style="border: 1px solid gray; zoom:70%;">
 
 
-
-
 ### Messaging Templates
 
 WhatsApp for business communications supports the following messaging types for the Infobip channel:
-
-
 
 * **Templates**: Formatted, non-editable, and pre-registered messages approved by WhatsApp.
 * **Free-Form texts**: Free-flowing text messages.
@@ -82,14 +75,10 @@ The Kore.ai XO Platform now supports public APIs for WhatsApp templates on the I
 
 The Platform automatically decides the payload to be sent to the channels after parsing Advanced Messages (JS) that include one of the following:
 
-
-
 * **String**: A free-form text message template is used if the JS result is a string.
 * **Object**: A message template is used if the JS result is an object.
 
 **Additional Information**
-
-
 
 * To learn more about creating and managing templates, please refer to this [link](https://www.infobip.com/docs/whatsapp/manage-connection#manage-templates-manage-senders).
 * To know more about various message types and the structure of templates, please refer to this [link](https://www.infobip.com/docs/whatsapp/message-types#guidelines-amp-best-practices).
