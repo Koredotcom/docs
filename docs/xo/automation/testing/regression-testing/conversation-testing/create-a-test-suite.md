@@ -23,7 +23,7 @@ The option to record the test suite captures the metadata in the background whic
   
     !!! Note
     
-        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.     
+        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you select "No", the On-connect message does not get added as a test case. If you select "Yes", then the On-connect message is created as a separate test case.     
 
 4. Define the Pre-processor Script to control preconditions during conversation testing. [Learn more](../conversation-testing/create-a-test-suite.md#pre-processor-script). 
 
