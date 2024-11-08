@@ -383,11 +383,11 @@ nav:
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
-          - Agent View (My Dashboard): quality-management/analyze/agent-dashboard-agent-view.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md        
+          - Agent Dashbaord (Supervisor View): quality-management/analyze/agent-dashboard-supervisor-view.md
+          - My Dashboard (Agent View): quality-management/analyze/agent-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
           - Coaching Assignments: 
