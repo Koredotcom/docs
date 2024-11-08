@@ -70,16 +70,15 @@ Once enabled [click here](../app-settings/dev-tools/kore-ai-web-sdk-tutorial.md)
 
 ## Choose Deployment Options
 
-There are two different ways of deploying the Web/mobile client. You can either use the Kore.ai hosted Client or set up your own client and host it.
+Here are the available deployment options.
 
-If you are using the Kore.ai hosted client, then there are two different approaches:
-
-* Share the URL with users
-* Embed code in your website
+* **Shareable URL**: Use this to share the bot with internal stakeholders for validation. It opens a chat widget on a Kore-hosted webpage, which isn’t intended for end-users.
+* **Embed Script**: Add the chat widget to your website with basic customizations like theme changes. Advanced customizations aren’t supported, and all users will appear as anonymous.
+* **Web SDK**: Provides full control for integrating the chat widget into your website.
 
 Steps to choose deployment options:
 
-1. In the **Web Client Details** section, copy the URL to share this URL with users to interact with your virtual assistant.  
+1. In the **Web Client Details** section, copy the URL and share it with internal stakeholders for validation and interaction with your virtual assistant.  
 <img src="../images/Web_Mobile5.png" alt="Web Client details" title="Web Client details" style="border: 1px solid gray; zoom:70%;">
 
 2. In the **Embed Code** section, copy the code to embed this Channel in your application pages where you want to display this virtual assistant widget.  
