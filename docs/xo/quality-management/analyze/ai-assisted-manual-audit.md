@@ -4,6 +4,8 @@ The AI-Assisted Manual Audit feature streamlines interaction evaluation by autom
 
 Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../ai-assist-manual-edit/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
+Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
+<img src="../ai-assist-manual-edit/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Details
 
@@ -13,9 +15,11 @@ This section displays key information about the agent and the interaction:
 * Audit Details, such as Auditor Name, Audit Date, Audit Score, and Kore Evaluation Score.
 * Identifiers of the Agent, such as Call ID, Session ID, Channel User ID, Call Conversation ID, and Agent Conversation ID.  
 <img src="../ai-assist-manual-edit/ai-assist-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/ai-assist-detail.png" alt="Details" title="Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Violations
 
+This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
 This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
 
 Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction.
@@ -25,6 +29,7 @@ Each violation is displayed with a timestamp, allowing you to navigate directly 
 
     Violations are applicable only for voice channel interactions, not chat.
 
+<img src="../ai-assist-manual-edit/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
 <img src="../ai-assist-manual-edit/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
 
 ## Omission
@@ -37,9 +42,11 @@ This section highlights instances where the agent failed to follow configured pl
 If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section will not be displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
 
 <img src="../ai-assist-manual-edit/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
 
 ## Playbook
 
+This section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
 This section of the interaction audit screen enables evaluators to assess adherence to configured playbook metrics. It displays:
 
 * Each playbook metric with entire Playbook configuration
@@ -50,9 +57,11 @@ This section of the interaction audit screen enables evaluators to assess adhere
 This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
   
 <img src="../ai-assist-manual-edit/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
+<img src="../ai-assist-manual-edit/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
 
 ## Comments
 
+This section displays all comments created by an auditor during the evaluation process. It provides a comprehensive list of auditor feedback for the interaction.
 This section displays all comments created by an auditor during the evaluation process. It provides a comprehensive list of auditor feedback for the interaction.
 
 Each comment entry is clickable. When a comment is selected, the system automatically highlights the corresponding question metric, providing context for the feedback.
@@ -69,6 +78,7 @@ This section provides a keyword search option across the entire transcript. You 
 
 ## Audit
 
+This section (right panel) displays the By Question metrics configured for the evaluation form.
 This section (right panel) displays the By Question metrics configured for the evaluation form.
 
 Key features include:
@@ -123,7 +133,7 @@ In the Chat History - Audit section, the evaluation form items determine perform
 
   **No**: If the threshold is 60% and the agent meets below 60% or similar, it will be marked as NO, and the question badge indicates red color.
 
-* **Trigger Not Detected (N/A)**: If the adherence percentage is not detected, it is considered as not applicable.
+* **Trigger Not Detected (N/A)**: If the adherence percentage is not detected,  and dynamic by question, then it is considered as not applicable.
 
   For example, 
 
@@ -139,6 +149,7 @@ This section allows you to tag the agent interaction with different bookmarks. B
 
 ## Submit
 
+By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 
 For more information, see [Audit Allocation](../analyze/conversation-mining.md#audit-allocations).  

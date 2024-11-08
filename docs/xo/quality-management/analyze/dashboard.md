@@ -1,21 +1,25 @@
 # Dashboard Overview
 
-The Dashboard provides a 360-degree view of Audit details, Fail Statistics, and Performance Monitoring of the Agent Evaluation Forms on a Daily, Weekly, and Monthly basis. It holds the last seven months of a year's data. By default, the Dashboard shows the Daily report for all three categories. This provides a quick glance through to monitor the quality standard at a given point of time.
+The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
 
-Users can view the Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
-
+You can access Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 
-    To view this **Dashboard** feature, you must first enable Auto QA setting and configure an evaluation form to generate Auto QA scores. Only users having the QA functionality permission can access this.
+    To access this **Dashboard** feature, you need to enable **Auto QA** and set up an evaluation form in the **Settings** to generate Auto QA scores. Only users with permission to access QA functionality can view it.
 
-This Dashboard includes the following widgets:
+## Dashboard Filters
+
+This Dashboard allows you to filter the data by time period and specific channel.
 
 ### Date Range Filter
-The user can filter and view the performance metrics by channel, such as Voice, Chat, or both (All, Voice and Chat) conversations. The trends and graphs are displayed with daily, Weekly, or Monthly Trends view and Distribution view across the Dashboard.
 
-The user can filter all agent interaction by selecting the following date ranges:
+You can filter data based on a selected date range.
+To filter by date range, click the Calendar drop-down displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
+<img src="../dashboard/images/calendar drop-down.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
+
+This allows you to filter all agent interaction data by selecting the following date ranges:
 
 * **Today**: All interaction data for this day, in the agent’s time zone.
 * **Yesterday**: All interaction data of the previous day, in the agent’s time zone.
@@ -24,26 +28,33 @@ The user can filter all agent interaction by selecting the following date ranges
 * **Last 90 Days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
 * **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
 
-<img src="../dashboard/images/date-range-filter.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
+### Channel Filter
+
+The Quality Management Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **Email**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
+
+To filter data by channel, click the **All** Channels button in the top-right corner of the dashboard page, then select a conversation channel you wish to view.
+
+<img src="../dashboard/images/channel-options.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
+
+## Agent Performance Metrics
+
+The following are the metrics components to assess agent performance (audits) and to track coaching progress:
 
 ### Total Audits
-Displays the count of total manual audits done based on the date range selected.  
 
+Displays the total manual audits count completed based on the date range selected.  
 <img src="../dashboard/images/total-audits.png" alt="Total Audits" title="Total Audits" style="border: 1px solid gray; zoom:100%;">
 
 ### Avg. Audits per Agent
-Displays the average number of manual audits per agent or evaluations done belonging to the queues of a user.
-
+Displays the average number of manual audits per agent or evaluations completed belonging to the queues of a user.  
 <img src="../dashboard/images/avg-audits-per-agent.png" alt="Average Audits per Agent" title="Average Audits per Agent" style="border: 1px solid gray; zoom:100%;">
 
 ### Coaching Sessions Assigned
-Displays the number of coaching sessions the user (supervisor) has assigned across agents within a specific time period.
-
+Displays the number of coaching sessions the user (supervisor) has assigned across agents within a specific time period.  
 <img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
 
 ### Agents in Coaching
-Displays the number of agents with an active coaching assignment in the queues that the user belongs to.  
-
+Displays the number of agents with an active coaching assignment in the queues that the user belongs to.
 <img src="../dashboard/images/agents-in-coaching.png" alt="Agents in Coaching" title="Agents in Coaching" style="border: 1px solid gray; zoom:100%;">
 
 ### Audit Progress
@@ -51,90 +62,85 @@ Displays the total number of audits (progress score) pending and completed.
 
 * **Completed**: Number of assigned interactions that are audited.
 * **Pending**: Number of interactions assigned for audit and not yet audited.
-* **Audit**: Navigate to the **Audit Allocation** of the Conversation Mining section, where you can easily start evaluating interactions. For more information, see [Conversation Mining](../analyze/conversation-mining.md).
-
+* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
+For more information, see [Conversation Mining](../analyze/conversation-mining.md).
+
 ### Evaluation Score 
-This shows the trend of the average **Kore Evaluation Score** (Auto QA Score) and the average **Audit Score** (manual), allowing you to see if there is any consistency between system evaluations and manual audits. 
+This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
 
-You can view both automated scored interactions and manual audits of the following three date ranges:  
+You can view both automated interactions and manual audits scores across the following date ranges:
 
-* **Daily**: Displays score for the last seven days.
-* **Weekly**: Displays score for the last seven weeks.
-* **Monthly**: Displays score for the last seven months.
-  
+* **Daily**: Displays score for the last 7 days.
+* **Weekly**: Displays score for the last 7 weeks.
+* **Monthly**: Displays score for the last 7 months.  
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 ## Fail Statistics
-The number of fails count is the count of failed interactions for the selected forms and the selected date range. The chart allows visualization of failure trends for the selected forms over the last seven days, last seven weeks, or last seven months using the daily, weekly, and monthly views. In general, it provides the failure statistics of evaluation forms and scorecards for a given period of time.
+This chart displays the count of failed interactions based on the selected forms and date range. It allows you to visualize failure trends for the chosen forms over the last 7 days, 7 weeks, or 7 months, using daily, weekly, and monthly views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.
 
 ### Evaluation Form
-The users can view failure rates across evaluation forms they choose. This makes it easy to track increases in failure rates and enables them to take appropriate action to address issues without manually sifting through failed interactions.
-
+This chart displays failure rates across the selected evaluation forms, making it easy to track any increases in failure rates. It allows you to quickly identify issues and take appropriate action, without the need to manually review individual failed interactions.   
 <img src="../dashboard/images/fail-stat-evaluation-form.png" alt="Fail Statistics Evaluation Form" title="Fail Statistics Evaluation Form" style="border: 1px solid gray; zoom:60%;">
 
 ### Agent Scorecard
-This shows the Trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard. 
+This chart displays the trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard. 
 
 !!! note
 
-    In the Dashboard, the Agent Scorecard widget will appear only when the Agent Scorecard widget option is enabled in the Quality Management Settings.
+    This **Agent Scorecard** tab only appears on the Dashboard if the widget option is enabled in the **Settings** of the [Quality Management](../configure/settings.md#quality-management).
 
 <img src="../dashboard/images/fail-stat-agent-scorecard.png" alt="Fail Statistics Agent Scorecard" title="Fail Statistics Agent Scorecard" style="border: 1px solid gray; zoom:60%;">
 
 ## Performance Monitor
 
-This shows the total score of the Performance Monitor based on the Date Range and Evaluation Form selected. 
+This displays the total score of the Performance Monitor based on the Date Range and Evaluation Form selected. 
 
 ### Evaluation Form
-Supervisors can view and monitor agent performance based on the evaluation form chosen.
+Supervisors can monitor agent performance based on the selected evaluation form.
 
-* **Trends**: The Performance Monitor allows visualization of agent performance through the Trends view of the average Kore Evaluation of agent Scorecards scores on a Daily, Weekly, and Monthly basis.  
-
+* **Trends**: The Performance Monitor provides a **Trends** view (agent performance) that visualizes the average Kore Evaluation scores from agent scorecards on a daily, weekly, and monthly basis.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-trends.png" alt="Performance Monitor Evaluation Form Trends" title="Performance Monitor Evaluation Form Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This shows the distribution of both Kore evaluation scores and agents scorecard scores.
-
+* **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Evaluation Form Distribution" style="border: 1px solid gray; zoom:60%;">
 
 #### Agent Scorecard
 
-* **Trends**: This shows the performance monitor for agent scorecards.
-
+* **Trends**: This view displays the performance monitor for agent scorecards.  
 <img src="../dashboard/images/performance-monitor-agent-scorecard-trends.png" alt="Performance Monitor Agent Scorecard Trends" title="Performance Monitor Agent Scorecard Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This shows the distribution of agents across score bands of 10. 
-
+* **Distribution**: This view displays how agents are distributed across score bands in increments of 10.  
 <img src="../dashboard/images/performance-monitor-agent-scorecard-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Agent Scorecard Distribution" style="border: 1px solid gray; zoom:60%;">
 
 ## Agent Leaderboard
 
-This widget provides users with a summarized view of the agent leaderboard, offering a snapshot of agent performance. Users can access the full leaderboard by clicking the **View Leaderboard** button.
-
+This widget provides a simplified view of the Agent Leaderboard and a snapshot version of agent performance. The Agent Leaderboard displays a centralized view that makes it easy to identify the best and worst performers. Enables you to make informed decisions about rewarding high performers and assigning coaching to those agents who need improvement.  
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 
-    To view this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
+    To access this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
 
-The Agent Leaderboard includes the following items:
+The Agent Leaderboard displays the following items:
 
-* **Agents**: This shows the agent group name and queue that the agent is tagged.
+* **Agents**: This displays the agent group name and the queue to which the agent is assigned.
 
-* **Audits Done**: This shows the count of total manual audits done by agents.
+* **Audits Done**: This displays the total number of manual audits completed by agents.
 
-* **Audit Score**: This shows the average manual audit score.
+* **Audit Score**: This displays the average score of the manual audit.
 
-* **Kore Evaluation Score**: This shows the average Kore evaluation score against each interaction audited.
+* **Kore Evaluation Score**: This displays the average Kore Evaluation Score for each audited interaction.
 
-* **Fail Percentage**: This shows the failure percentage across all interactions.
+* **Fail Percentage**: This displays the percentage of failures across all interactions.
 
-### View Leaderboard or Agent Leaderboard
+### View Leaderboard
 
-Clicking the **View Leaderboard** button in the **Agent Leaderboard** (Dashboard) widget takes the user to the [View Leaderboard](../analyze/agent-leaderboard.md) or [Agent Leaderboard](../analyze/agent-leaderboard.md).
+This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations.  
 
-### Supervisor Dashboard
+Click the **View Leaderboard** button, the following screen is displayed that navigates you to the **Agent Leaderboard** page.   
+<img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-Clicking any one of the agents from the **Agent Leaderboard** (Dashboard) widget directs the user to the [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).  
+For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
 

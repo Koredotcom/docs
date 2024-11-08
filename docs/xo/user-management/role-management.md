@@ -631,11 +631,27 @@ Access to create and assign interactions for audit to other users
    </td>
 </tr>
 <tr>
-   <td><strong>QA Functionalities access</strong>
+   <td><strong>QA Functionalities Access</strong>
    <br>
 Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Scorecards & Attributes</strong>
+   <br>
+Access to agent scorecards & interactions
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Dashboard</strong>
+   <br>
+Access to agent dashboard
+   </td>
+   <td>No
    </td>
 </tr>
 </table>
@@ -1721,6 +1737,14 @@ Access to scored interactions, submit audits & QA dashboard
 
    </td>
 </tr>
+<tr>
+   <td><strong>Agent Dashboard</strong>
+   <br>
+Access to agent dashboard
+   </td>
+   <td>No
+   </td>
+</tr>
 </table>
 
 ### SUPERVISOR
@@ -2257,6 +2281,22 @@ Access to create and assign interactions for audit to other users
 Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Scorecards & Attributes</strong>
+   <br>
+Access to agent scorecards & interactions
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Dashboard</strong>
+   <br>
+Access to agent dashboard
+   </td>
+   <td>No
    </td>
 </tr>
 </table>
@@ -2797,6 +2837,22 @@ Access to scored interactions, submit audits & QA dashboard
    <td>No
    </td>
 </tr>
+<td><strong>Agent Scorecards & Attributes</strong>
+   <br>
+Access to agent scorecards & interactions
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Dashboard</strong>
+   <br>
+Access to agent dashboard
+   </td>
+   <td>Full
+   </td>
+</tr>
+<tr>
 </table>
 
 ### CUSTOM ROLE

@@ -27,7 +27,7 @@ The Greeting Messages, Widget Content, Layout Customization, and Negative Feedba
 
 #### Enhanced Access Control for Search AI
 
-Agent AI now allows restricted access for targeted users by configuring up to three Search AI apps: 
+Agent AI now allows restricted access for targeted users by configuring up to three Search AI apps with the following scopes: 
 
 * Internal Answers: Access to internal sources only.
 * External Answers: Access to external sources only.

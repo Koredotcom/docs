@@ -24,26 +24,26 @@ Steps to create **New Agent Score Card**:
 
 ### Settings
 
-1. Click **Settings** from the following **Add New Agent Score Card** window.  
+2. Click **Settings** from the following **Add New Agent Score Card** window.  
     <img src="../agent-scorecards/images/add-new-agent-score-card-settings.png" alt="Agent Scorecards Settings" title="Agent Scorecards Settings" style="border: 1px solid gray; zoom:70%;">
 
-2. In the **Name** field, enter the name of the agent scorecard.
-3. Enter a short **Description** (optional) for the newly created agent scorecard.
-4. Enable the **Mark as Default** toggle option to assign the default scorecards across all agents. By default, the toggle option is enabled for the first scorecard created.  
+3. In the **Name** field, enter the name of the agent scorecard.
+
+4. Enter a short **Description** (optional) for the newly created agent scorecard.
+
+5. Enable the **Mark as Default** toggle option to assign the default scorecards across all agents. By default, the toggle option is enabled for the first scorecard created. The pass score must be configured (40 by default).
 
     !!! note
 
         There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. If you try to enable the default scorecard toggle view, then the following warning pop-up window appears stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.   
 
-5. The pass score must be configured (40 by default).
-
-    <img src="../agent-scorecards/images/default-scorecard-alert.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../agent-scorecards/images/default-scorecard-alert.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:100%;">  
 
     !!! note
 
         When there is an existing default scorecard, and you try to disable the default scorecard toggle status, then you will get the following warning pop-up window stating that the default scorecard cannot be disabled; you must assign another scorecard as default before disabling.   
          
-    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:100%;">  
 
 ### Agent Attributes
 

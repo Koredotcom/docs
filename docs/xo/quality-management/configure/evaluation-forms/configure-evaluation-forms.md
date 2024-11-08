@@ -17,9 +17,10 @@ Users can access the Evaluation Forms by navigating to **Contact Center AI** > *
 
 <img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
 
-  !!! Note     
+
+!!! note     
         
-      To create and configure evaluation forms, the Auto QA setting must be enabled first.
+    To create and configure evaluation forms, the Auto QA setting must be enabled first.
 
 The Evaluation Forms has the following options:
 
@@ -39,12 +40,12 @@ You can access the Evaluation Metrics by navigating to **Contact Center AI** > *
 Steps to create a new Evaluation Form:
 <img src="../images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.  
-<img src="../images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
+1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.    
+<img src="../images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">   
 
-  !!! Note     
+!!! note     
         
-      It is mandatory for the agents to attain the minimum pass score set by the Supervisor. If the pass score is not met for a given interaction, it will be evaluated as Fail.
+    It is mandatory for the agents to attain the minimum pass score set by the Supervisor. If the pass score is not met for a given interaction, it will be evaluated as Fail.
 
 The following table describes the Evaluation Forms details:
 
@@ -91,8 +92,10 @@ The following table describes the Evaluation Forms details:
    <td><strong>Add Evaluation Metrics</strong>  
    </td>
    <td>It allows you to search and add evaluation metrics and weightage against them based on the metrics.  
+
 For example, if there is more than one Evaluation Metric, the total percentage must be set to 100% for all the evaluation metrics based on their weightage.
 <br>
+
 <strong>Note:</strong> If the channel selected is Chat, only metrics relevant to the Chat channel will be displayed. Metrics related to Speech and Playbook metrics with playbook channels set as Voice will not be shown.
    </td>
   </tr>

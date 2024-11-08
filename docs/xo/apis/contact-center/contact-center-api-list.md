@@ -13,6 +13,7 @@ Several APIs are available from Contact Center AI. Based on the functionality ad
 * [Outbound Calling API](#outbound-calling-api)
 * [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
 * [Queue Management APIs](#queue-management-apis)
+* [Quality Management APIs](#quality-management-apis)
 
 ### Analytics and Reporting APIs
 
@@ -109,3 +110,10 @@ Several APIs are available from Contact Center AI. Based on the functionality ad
 | [Get a Specific Queue](../contact-center/get-a-specific-queue.md)                                                   | To get a specific queue with the given streamId and queueId.                                                 | Configuration        |
 | [Update a Specific Queue](../contact-center/update-a-specific-queue.md)                                             | To update a specific queue with the given streamId and queueId.                                               | Configuration        |
 | [Delete a Queue](../contact-center/delete-a-queue.md)                                                               | To delete a specific queue with the given streamId and queueId.                                               | Configuration        |
+
+### Quality Management APIs
+
+| API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
+| [Raw Data API](../contact-center/qm-apis/raw-data-api.md)                                                               | Provides detailed Quality Management and Conversation Intelligence data, including quality metrics and analytics for each interaction.                                                                   | Configuration        |
+| [Auto QA Reporting API](../contact-center/qm-apis/auto-qa-reporting-api.md)                                                   |Provides interaction-level Auto QA scoring and metric qualification based on the associated Quality Management form.                | Configuration        |

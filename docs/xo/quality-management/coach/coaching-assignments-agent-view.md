@@ -2,8 +2,8 @@
 
 The Coaching Assignments feature in the Agent Dashboard enables agents to review and gain value from supervisor-created coaching assignments. To access these assignments, agents must have single permissions for the **Agent Dashboard** and **Coaching Assignments**. The assignments are listed in reverse chronological order.
 
-Users can view Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Coaching Assignments**.  
-<img src="../agent-dashboard/coaching-assignments-agent-view.png" alt="coaching-agent-view" title="coaching-agent-view" style="border: 1px solid gray; zoom:60%;">
+Users can view Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Coaching Assignments**.    
+<img src="./coaching-assignments/coaching-assignments-agent-view.png" alt="coaching-agent-view" title="coaching-agent-view" style="border: 1px solid gray; zoom:60%;">
 
 The **Coaching Assignments** page shows the following list of items:
 

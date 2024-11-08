@@ -34,6 +34,8 @@ Key benefits:
 
 * Enterprise-grade security.
 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#amazon-bedrock-llm-integration-framework)
+
 ### Channels
 
 #### Netcore WhatsApp Business Integration
