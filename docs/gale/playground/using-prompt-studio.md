@@ -114,11 +114,12 @@ After selecting your models, you can generate the output for your prompt. Ensure
 
 1. On the prompt canvas, click **Run** to generate the output.
 
-<img src="../images/prompt_outputscreen_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/prompt_outputscreen_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
 
 2. Once the generation is complete, the output is displayed in the model column of the prompt canvas. You can review the matrix in the generated output area to determine which prompt and model best meet your needs.
 
     The following data is displayed:
+    
     * The response/output from the models.
     * The total number of tokens sent to the model and returned in the response.
     * The time taken by the model to respond with the answer.  

@@ -1,6 +1,6 @@
 # Advanced Features  
 
-
+Prompt Studio offers a suite of features designed to streamline and enhance your prompt creation and management process, providing greater flexibility, collaboration, and control throughout your workflow.
   
 
 ## Prompt Versioning
@@ -72,7 +72,7 @@ Steps to bookmark a model:
 
 2. If you try to commit a version without bookmarking a model, you will be asked to select a preferred model. Select your preferred model in the dialog that appears.
 
-    <img src="../images/prompt_bookmark_select_example.png" alt="Select preferred model" title="Select preferred model" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/prompt_bookmark_select_example.png" alt="Select preferred model" title="Select preferred model" style="border: 1px solid gray; zoom:80%;">
  
     Once you select a preferred model, your version is committed successfully, and the number of committed versions is displayed.
 
