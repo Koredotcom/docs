@@ -56,7 +56,7 @@ The following table lists the options available in the Model column:
    </td>
    <td>Set a model as your preferred model for consistent output. If no model is bookmarked, you must select one when committing a prompt version.
 <p>
-For more information, see [Bookmark a Model](../playground/advanced-features.md#bookmark-a-model)
+
    </td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@ For more information, see [Bookmark a Model](../playground/advanced-features.md#
    </td>
    <td>Play
    </td>
-   <td>Regenerates the output for that single column. For more information, see [Regenerating Output](../playground/advanced-features.md#regenerating-output).
+   <td>Regenerates the output for that single column.
    </td>
   </tr>
   <tr>
@@ -155,7 +155,7 @@ Clicking this icon opens a separate dialog displaying the request and response i
    </td>
    <td>Re-generate
    </td>
-   <td>Regenerates the output for that single cell. For more information, see [Regenerating Output](../playground/advanced-features.md#regenerating-output).
+   <td>Regenerates the output for that single cell.
    </td>
   </tr>
 </table>
@@ -190,7 +190,7 @@ The following table lists the options available on the top toolbar of the prompt
    </td>
    <td>Access a collection of around 70 templates for prompt creation, providing users with ready-to-use options.
 <p>
-Click the icon to browse and select a template to customize or use as a base for your prompt. For more information, see [Prompt Library](../playground/accessing-prompt-studio.md#prompt-library).
+Click the icon to browse and select a template to customize or use as a base for your prompt.
    </td>
   </tr>
   <tr>
@@ -206,8 +206,7 @@ Click the icon to browse and select a template to customize or use as a base for
    </td>
    <td>Enable seamless sharing of prompts using version-specific API keys. Fetch and manage prompts through API calls without repetitive copying.
 <p>
-Click to open a dialog with API endpoints and select your preferred format (cURL, Python, Node.js) to integrate with your applications. 
-For more information, see [Prompt API Integration](../playground/advanced-features.md#prompt-api-integration).
+Click to open a dialog with API endpoints and select your preferred format (cURL, Python, Node.js) to integrate with your applications.
    </td>
   </tr>
   <tr>
@@ -221,9 +220,7 @@ For more information, see [Prompt API Integration](../playground/advanced-featur
    </td>
    <td>Save to prompt library
    </td>
-   <td>Saves the current prompt to the library for future use.  
-<p>
-Click the three dots icon and save your prompt as a template in the "My Templates" section of the prompt library.
+   <td>Saves the current prompt to the library for future use. Click the three dots icon and save your prompt as a template in the "My Templates" section of the prompt library.
    </td>
   </tr>
   <tr>
@@ -237,11 +234,8 @@ Click the three dots icon and save your prompt as a template in the "My Template
    </td>
    <td>Draft history
    </td>
-   <td>Capture and restore the state of the prompt canvas at different times, including inputs and outputs.
+   <td>Capture and restore the state of the prompt canvas at different times, including inputs and outputs. Click the three dots icon and save the prompt canvas in draft history.
 <p>
-Click the three dots icon and save the prompt canvas in draft history.
-<p>
-For more information, see &lt;Draft history>.
    </td>
   </tr>
   <tr>
@@ -255,9 +249,7 @@ For more information, see &lt;Draft history>.
    </td>
    <td>Export as CSV
    </td>
-   <td>Exports the entire prompt canvas (including inputs, outputs, and metadata) into a CSV file for offline analysis or sharing.
-<p>
-Click the three dots icon and export the prompt canvas as a CSV file.
+   <td>Exports the entire prompt canvas (including inputs, outputs, and metadata) into a CSV file for offline analysis or sharing. Click the three dots icon and export the prompt canvas as a CSV file.
    </td>
   </tr>
   <tr>
@@ -269,9 +261,7 @@ Click the three dots icon and export the prompt canvas as a CSV file.
    </td>
    <td>Share
    </td>
-   <td>Easily share prompts within the prompt canvas allowing you to collaborate with others or reuse them for future sessions.
-<p>
-Click the three dots icon and share the prompt with others.
+   <td>Easily share prompts within the prompt canvas allowing you to collaborate with others or reuse them for future sessions. Click the three dots icon and share the prompt with others.
    </td>
   </tr>
   <tr>
@@ -286,11 +276,7 @@ Click the three dots icon and share the prompt with others.
    </td>
    <td>Versions
    </td>
-   <td>Track and manage iterations of prompts. Manage and review different versions of prompts collaboratively.
-<p>
-Click to view all versions of prompts. Select a version to compare, restore, or use as a draft for further editing.
-<p>
-For more information, see &lt;Prompt versioning>.
+   <td>Track and manage iterations of prompts. Click to view all versions of prompts. Select a version to compare, restore, or use as a draft for further editing.
    </td>
   </tr>
   <tr>

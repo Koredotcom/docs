@@ -1,6 +1,6 @@
 # Using Prompt Studio
 
-Prompt Studio offers three distinct prompt creation journeys to enhance your AI experimentation process. You can select any of the three prompt creation journeys (Generate a prompt, Start from Scratch, Prompt library) to initiate your prompt experimentation process. A prompt experiment involves testing and comparing the performance of different AI models using a specific input, known as a prompt. This input can be a phrase, a question, or a paragraph of data, which the AI model uses to generate an output. Prompt experiments are useful for testing and comparing AI models for specific use cases and applications.
+Prompt Studio offers three distinct prompt creation journeys to enhance your AI experimentation process. You can select any of the three prompt creation journeys (Generate a prompt, Start from scratch, Prompt library) to initiate your prompt experimentation process. A prompt experiment involves testing and comparing the performance of different AI models using a specific input, known as a prompt. This input can be a phrase, a question, or a paragraph of data, which the AI model uses to generate an output. Prompt experiments are useful for testing and comparing AI models for specific use cases and applications.
 
 On the prompt canvas, you can easily input prompts and select from configured models to automatically generate outputs. You can also add variables, import your dataset, and use in-built prompt templates to get optimized results. You also have access to various enhanced options on the prompt canvas. For more information, see [Options on the Prompt Canvas](../playground/options-prompt-canvas.md).
 
@@ -114,15 +114,14 @@ After selecting your models, you can generate the output for your prompt. Ensure
 
 1. On the prompt canvas, click **Run** to generate the output.
 
+<img src="../images/prompt_outputscreen_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
+
 2. Once the generation is complete, the output is displayed in the model column of the prompt canvas. You can review the matrix in the generated output area to determine which prompt and model best meet your needs.
 
-The following data is displayed:
-* The response/output from the models.
-* The total number of tokens sent to the model and returned in the response.
-* The time taken by the model to respond with the answer.  
-
-
-    <img src="../images/prompt_outputscreen_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
+    The following data is displayed:
+    * The response/output from the models.
+    * The total number of tokens sent to the model and returned in the response.
+    * The time taken by the model to respond with the answer.  
 
 For more information on the available options on the prompts canvas, see [Options on the Prompt Canvas](../playground/options-prompt-canvas.md).
 

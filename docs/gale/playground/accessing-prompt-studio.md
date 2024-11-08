@@ -43,9 +43,9 @@ Steps to create prompts using the Generate a prompt option:
 3. Review the AI-generated prompt.
 4. Once you click **Proceed**, the prompt will be copied to the prompt canvas. You can then customize the prompt as needed.
 
-    You can also get assistance in generating a prompt in the prompt canvas by clicking the **Generate Prompt** option in the Prompt field. This feature provides users with helpful suggestions and options to enhance their prompt creation process.
+!!! note
 
-    <img src="../images/generate_prompt_new.png" alt="Generate prompt option" title="Generate prompt option" style="border: 1px solid gray; zoom:30%;">
+    You also have the option to generate prompts directly on the Prompt Canvas. You can click the **Generate Prompt** option in the Prompt field. This feature assists users in creating more elaborate and comprehensive prompts, helping to enhance the prompt creation process and ensure more detailed and effective results.
 
 
 ## Start From Scratch
