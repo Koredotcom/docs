@@ -1,4 +1,4 @@
-# **Raw Data API**
+# Raw Data API
 
 This API provides detailed Quality Management and Conversation Intelligence related data at an interaction level, including interaction quality metrics and interaction analytics attributes.
 
@@ -37,10 +37,7 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
   </tr>
 </table>
 
-
-
-## **Path Parameters** 
-
+## Path Parameters
 
 <table>
   <tr>
@@ -69,20 +66,17 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
   </tr>
 </table>
 
-
-
-## **Sample Request**
-
+## Sample Request
 
 ```
-curl --location 'https://{{host}}/api/v1/public/qualitymanagement/app/st-5ceb332e-d21a-5675-8b45-7707f37bxxxx/rawdata' \
+curl --location 'https://sit-xo.kore.ai/agentassist/api/v1/public/qualitymanagement/app/st-5ceb332e-d21a-5675-8b45-7707f37b3f72/rawdata' \
 --header 'Accept: application/json, text/plain, /' \
 --header 'Accept-Language: en-US,en;q=0.9' \
 --header 'AccountId: 6639f8cc882f9068043fxxxx' \
 --header 'Connection: keep-alive' \
 --header 'Content-Type: application/json;charset=UTF-8' \
 --header 'Iid: st-5ceb332e-d21a-5675-8b45-7707f37bxxxx' \
---header 'Referrer: https://{{host}}/builder/app/setupguide' \
+--header 'Referer: https://sit-xo.kore.ai/builder/app/setupguide' \
 --header 'Sec-Fetch-Dest: empty' \
 --header 'Sec-Fetch-Mode: cors' \
 --header 'Sec-Fetch-Site: same-origin' \
@@ -236,7 +230,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             ],
             "Agents": [
                 {
-                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474xxxx",
+                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474xxxxx",
                     "Agent Name": "Demo",
                     "Agent Start Time": "2024-07-18T11:31:18.703Z",
                     "Agent Email": "demo@mailinator.com"
@@ -244,7 +238,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             ],
             "Metrics": [
                 {
-                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1dxxxxx",
+                    "Metric ID": "em-5c65faba-39a8-5f45-b571-33d0c1daxxxx",
                     "Metric Name": "Customer Verification",
                     "Metric Weight": 25,
                     "Qualification": "NA"
@@ -303,7 +297,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
             ],
             "Agents": [
                 {
-                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474xxxx",
+                    "agentId": "a-5cd64b6-6634-4797-830d-e22c0474xxxxx",
                     "Agent Name": "Demo",
                     "Agent Start Time": "2024-07-19T13:30:39.279Z",
                     "Agent Email": "demo@mailinator.com"
@@ -345,6 +339,7 @@ For Example, <code>2024-07-18T11:33:12.904Z</code>
     "totalPages": 1,
     "hasMore": false
 }
+
 
 ```
 
