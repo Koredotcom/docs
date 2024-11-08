@@ -49,7 +49,7 @@ When a request is made to the API endpoint using the correct API key, the API re
 
 **API Request Options** - Users can access various request methods for active API endpoints: cURL, Python, and Node.js. This provides users with multiple options for integrating the API into their applications.
 
-Users can create multiple API keys for each endpoint. Each API key can be copied once and later deleted, but cannot be reused. This functionality streamlines prompt updates and reduces the manual effort required in managing API keys, while enhancing the security when used externally.
+Users can create multiple API keys for each endpoint. Each API key can be copied once and later deleted, but cannot be reused. This functionality streamlines prompt updates and reduces the manual effort required in managing API keys, while enhancing security when used externally.
 
 The following image displays the window when you click the prompt API icon. It features tabs for the API endpoint and API keys.
 
@@ -105,7 +105,7 @@ You can utilize each version as a draft without altering the saved version of th
 
 ## Regenerating Output
 
-Regenerating output is a cost-effective way to run the same prompt and generate responses again without the need for additional model generations. This feature helps reduce costs associated with multiple model generations by allowing you to reuse existing prompts. Regeneration options are available at both the cell and column levels. This approach is particularly useful in cases involving multiple models and rows. 
+Regenerating output is a cost-effective way to run the same prompt and generate responses again without the need for additional model generations. This feature helps reduce costs associated with multiple model generations by allowing you to do selective regenerations. Regeneration options are available at both the cell and column levels. This approach is particularly useful in cases involving multiple models and rows. 
 
 After generating the initial output, review each output to determine if it meets your expectations. If you find an issue in a specific cell, you can tweak the prompt slightly and regenerate it for improved results. Similarly, if a particular model is not performing well, you can modify the prompt to reduce any potential bias and regenerate the output. 
 

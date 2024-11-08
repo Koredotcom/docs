@@ -6,20 +6,20 @@ On the prompt canvas, you can easily input prompts and select from configured mo
 
 Here are the steps to create prompts on the prompt canvas:
 
-1. **Add Prompts** - Enter your prompts into the designated area.
+1. **Add prompts** - Enter your prompts into the designated area.
 2. **Apply variables** - Introduce any necessary variables to customize your prompts. You can add variables manually or import variables from a dataset.
-3. **Add Models** - Select and add the appropriate models you want to use to generate output.
-4. **Generate Output** - Initiate the output generation process based on your configured prompts and models.
+3. **Add models** - Select and add the appropriate models you want to use to generate output.
+4. **Generate output** - Initiate the output generation process based on your configured prompts and models.
 
 
 ## Add Prompts
 
-1. In the **System prompt** field, enter a system prompt. This prompt helps narrow down the LLM’s response by assigning a specific role to it.
-This field is optional. You can use the toggle to enable or disable it as needed.
+1. The **System prompt** field helps you assign a role to the model. 
+System prompts are optional. You can use the toggle to enable or disable it as needed.
 
     <img src="../images/promptcanvas-systemprompt.png" alt="System prompt" title="System prompt" style="border: 1px solid gray; zoom:80%;">
 	
-2. In the **Prompt** field, enter the prompt.
+2. In the **Prompt** field, you can provide the instructions that you want the model to follow.
 For assistance, you can click "Generate prompt" to help expand your prompt into a more detailed and elaborative prompt.  
 
     <img src="../images/promptcanvas_human_prompt.png" alt="Human prompt" title="Human prompt" style="border: 1px solid gray; zoom:80%;">
@@ -33,7 +33,7 @@ You can also click the "Prompt library" icon (highlighted in yellow in the image
 
 ## Apply Variables
 
-You can incorporate variables into your prompt. A variable acts as a placeholder representing multiple prompt injections. For large datasets, you can use the columns of an uploaded CSV file as variables in the prompt. For smaller datasets with one or two data points, you can manually type in a value for a variable and test the output. 
+You can incorporate variables into your prompt. A variable represents the 'key' part of the 'key-value' pair. For datasets, you can use the columns of an uploaded CSV file as variables in the prompt. For a limited number of variables, you can manually type in the values and test the output. 
 
 Variables enable you to run prompts with different values simultaneously, generating answers for all of them at once. By attaching variables to your prompts and defining their values, you can execute multiple prompts concurrently.
 
@@ -99,7 +99,8 @@ A list of models is displayed in the drop-down list.
 
     <img src="../images/prompt_selectmodels_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
 
-For more information on other model-related options such as model settings, bookmarking a model, or removing a model, see [Options on the Prompt Canvas](../playground/options-prompt-canvas.md).
+    You can also click the model settings icon to adjust the model parameters like temperature, top k, top p, and max tokens.
+    For more information on other model-related options such as model settings, bookmarking a model, or removing a model, see [Options on the Prompt Canvas](../playground/options-prompt-canvas.md).
 
 
 ## Generate output

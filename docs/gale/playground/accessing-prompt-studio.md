@@ -36,7 +36,8 @@ The Generate a prompt option takes a basic prompt (one or two sentences) and exp
 Steps to create prompts using the Generate a prompt option:
 
 1. On the Prompts landing page, click **Generate a prompt**.
-2. In the Prompt generator dialog, select a model and enter your instruction.
+2. In the Prompt generator dialog, select a model and enter your instruction.  
+    Note: Only openAI and Anthropic models are supported for prompt generation and test data generation.
 
     <img src="../images/generate_a_prompt.png" alt="Generate prompt" title="Generate prompt" style="border: 1px solid gray; zoom:80%;">
 
@@ -52,19 +53,19 @@ Steps to create prompts using the Generate a prompt option:
 
 The Start from Scratch option gives you complete flexibility to create custom prompts. When you select this option, you will be directed to a blank prompt canvas, where you can add your prompts, add variables manually or by importing data, add models, and generate your output.
 
-Additionally, you can generate AI responses and incorporate templates from the Prompt Library to enhance your prompt creation process. This flexibility ensures you can tailor prompts to meet your specific needs effectively.
+Additionally, you can generate AI responses and incorporate templates from the prompt library to enhance your prompt creation process. This flexibility ensures you can tailor prompts to meet your specific needs effectively.
 
 For more information on how to create prompts on the prompts canvas, see [Using Prompt Studio](../playground/using-prompt-studio.md).
 
 ## Prompt Library
 
-The Prompt Library includes a collection of 65+ built-in templates, each featuring pre-designed prompts ready for use. You can easily import these templates and  start crafting your own prompts by choosing from a variety of carefully designed templates tailored for various use cases. The Prompt library simplifies the prompt creation process and enhances your productivity by enabling you to access high-quality prompts.
+The Prompt library includes a collection of 65+ built-in templates, each featuring pre-designed prompts ready for use. You can easily import these templates and  start crafting your own prompts by choosing from a variety of carefully designed templates tailored for various use cases. The prompt library simplifies the prompt creation process and enhances your productivity by enabling you to access high-quality prompts.
 
-The Prompt library contains a variety of optimized prompts for different scenarios (For example, code generation, summarization, content creation, or Q&A), significantly speeding up experimentation and reducing prompt development time.
+The prompt library contains a variety of optimized prompts for different scenarios (For example, code generation, summarization, content creation, or Q&A), significantly speeding up experimentation and reducing prompt development time.
 
-The Prompt library includes a search functionality, where users can easily find prompts by keywords in their names. It also includes a filtering functionality where users can dynamically filter the prompt list by predefined use case categories, enhancing usability and relevance.
+The prompt library includes a search functionality, where users can easily find prompts by keywords in their names. It also includes a filtering functionality where users can dynamically filter the prompt list by predefined use case categories, enhancing usability and relevance.
 
-Steps to create prompts from Prompt library:
+Steps to create prompts from prompt library:
 
 1. On the Prompts landing page, click **Prompt library**.
 2. On the Prompt library dialog, select any of the available options.  
