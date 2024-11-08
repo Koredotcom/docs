@@ -203,7 +203,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
       <tr>
    <td><b>Monitoring - Model Analytics Dashboard</b></td>
-   <td>Review and monitor key performance indicators specific to open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance while optimizing performance.</td>
+   <td>Review and monitor key performance indicators for open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance, as well as optimal performance.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based model performance metrics.</li>
 <li>Analyze credit consumption for deployment and fine-tuning requests, and monitor model replica generation within subscription limits to ensure optimal usage.</li>
    <li>Compare successful versus failed requests over time and identify failure patterns.</li>
