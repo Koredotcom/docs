@@ -12,7 +12,7 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## Access the XO Platform
 
-To access the Kore.ai XO Platform, visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
+To access the Platform, visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
 
 You can sign up for Kore.ai XO Platform in any of the following two ways:
 
@@ -225,3 +225,6 @@ Steps to invite users:
 4. You can either invite individual Users or Groups.
 5. Click **Share Invite**. An invitation email is sent to the invited users.
 6. When the invited user accepts the invitation, they can access the specific app.
+
+##### Related Link
+[Accounts or Workspaces](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)

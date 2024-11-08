@@ -253,7 +253,7 @@ This is how it looks at runtime:
 
 ## JavaScript Prompts or Responses
 
-On the **Advanced** tab of the editor, you can add custom code to handle the user prompt message using system and session variables. The following is a sample code for displaying the weather forecast for a location:
+On the **Advanced** tab of the editor, you can add custom code to handle the user prompt message using system and session variables. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor. The following is a sample code for displaying the weather forecast for a location:
 
 
 ```

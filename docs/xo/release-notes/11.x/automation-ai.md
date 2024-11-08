@@ -2,6 +2,63 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.7.0 November 03, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Conversation Testing
+
+#### Support for Preprocessor Script
+
+The new Preprocessor Script for Conversation Testing lets platform users control preconditions during conversation testing. Users can run custom scripts before the recording, validation, and execution phases.
+
+Key features:
+
+* Script Editor: Create, edit, and manage preprocessor scripts with built-in syntax highlighting and error checking.
+* Testing Controls: Execute scripts before initiating test recording and validation, with the ability to modify and re-validate on the fly.
+* Data Management: Control session context by modifying data, simulating external systems, and tracking changes through secure execution.
+
+### Dialog Builder
+
+#### Auto Save Option in JavaScript Editor
+
+The JavaScript editor in Dialog Builder now allows users to enable auto save to automatically save changes while writing the code. Users can enable auto-save with a single click, and the changes will automatically be saved after one second of inactivity. They can view the last saved timestamp and use this feature across all Dialog Builder script editors.
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#javascript-prompts-or-responses)
+<hr>
+
+## v11.6.1 October 21, 2024
+
+<u> Patch Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Knowledge AI
+#### FAQ Conditional Responses
+
+The FAQ feature has been enhanced to provide more contextually relevant answers. Platform users can now define conditions for each FAQ response, allowing for dynamic answer selection based on specific criteria. 
+
+Key updates:
+
+* Context-based answer selection: Define rules to determine which response is delivered based on the query's context.
+* Integration with existing methods: The new rule-based system works seamlessly with the current channel-based and random  selection methods.
+
+Key benefits:
+
+* Improved accuracy and relevance of FAQ responses.
+* Enhanced personalization of user interactions.
+* Greater flexibility in managing complex FAQ scenarios.
+* Better user experience through context-aware answers.
+
+Backward compatibility:
+
+* The enhancement is fully compatible with existing FAQs and answers to ensure a smooth user transition.
+
+[Learn more :octicons-arrow-right-24:](../../automation/knowledge-ai/manage-faqs.md#faq-conditional-responses){:target="_blank"}
+
+<hr>
+
 ## v11.6.0 September 28, 2024
 
 <u> Minor Release </u>
@@ -37,7 +94,7 @@ Key benefits:
 
 <u> Patch Release </u>
 
-This update include minor enhancement and bug fixes. THe key enhancement included in this release is summarized below.
+This update include minor enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
 ### Dialog Builder
 #### Error Handling for Service Nodes

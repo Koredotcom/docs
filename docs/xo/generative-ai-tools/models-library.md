@@ -113,6 +113,44 @@ Steps to integrate a Custom LLM:
 
 
 
+## Amazon Bedrock LLM Integration Framework
+
+XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across Co-Pilot and Dynamic Conversations features. While Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only use the model with the help of custom prompts.
+
+!!! note
+
+    Before starting the integration process, ensure you have the necessary permissions and access to the IAM role and Amazon Bedrock resources in your AWS account. For more information, see [Policies and Permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+
+
+### Configure Amazon Bedrock LLM Integration
+
+Steps to integrate an Amazon Bedrock:
+
+
+1. Go to **Generative AI Tools** > **Models Library**.
+    <img src="../images/abr1.png" alt="Amazon Bedrock" title="Amazon Bedrock" style="border: 1px solid gray; zoom:70%;">
+2. Click **Amazon Bedrock**.
+3. On the **Authorization** tab, provide the following details.
+    * **Provider Name**: Enter a name to identify the provider or group of language models you want to connect.
+    * **Model Name**: Give a unique name to the language model you’re connecting with.
+    * **Identity Access Management (IAM) Role ARN**: The IAM Role ARN enables the platform to securely access resources on behalf of users without the need for long-term access keys, supporting cross-account access, least privilege principles, and enhanced auditing capabilities.
+    * **Amazon STS API**:
+        * To assume an IAM role and obtain temporary security credentials, provide the AWS STS (Security Token Service) API endpoint, specifically the AssumeRole action. The STS API is essential for generating the temporary access key, secret key, and session token required to securely access AWS resources based on the permissions associated with the IAM role.
+        * Ensure you have the correct endpoint URL for the AssumeRole action in the AWS region where your IAM role is located.
+    * **Amazon Resource Name (ARN)**: The Amazon Bedrock ARN that grants your IAM role access to the specific Language Model in Amazon Bedrock. The ARN uniquely identifies the Language Model resource within the Amazon Bedrock service.
+    * **Endpoint**: Enter the URL to interact with the Language Model’s API. 
+    * **Headers**: If needed, include additional headers with metadata specific to your Language Model integration. These headers provide extra information or configuration options to the Language Model API.
+    <img src="../images/abr2.png" alt="Amazon Bedrock" title="Amazon Bedrock" style="border: 1px solid gray; zoom:70%;">
+
+4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+5. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.
+    <img src="../images/abr3.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+6. On a successful connection, the save option is enabled.
+7. Click **Save**. The configuration successful message is displayed.
+8. The next step is to add[ Prompts](prompts-library.md).
+
+
+
 
 
 
@@ -196,7 +234,21 @@ Steps to integrate a Custom LLM using Dynamic Variables:
 7. Click **Save**. The configuration successful message is displayed.
 
 
+### Configure Amazon Bedrock LLM Integration using Dynamic Variables
 
+For Amazon Bedrock integration, you can configure IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, and Headers fields as dynamic variables.
+
+Steps to integrate an Amazon Bedrock LLM using Dynamic Variables:
+
+1. Go to **Generative AI Tools** > **Models Library**.
+2. Click **Amazon Bedrock**.
+3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional). <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.
+    <img src="../images/abr5.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+6. On a successful connection, the save option is enabled. 
+7. Click **Save**. The configuration successful message is displayed.
+8. The next step is to add[ Prompts](prompts-library.md).
 
 
 

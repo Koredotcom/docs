@@ -1,6 +1,6 @@
 # Analytics for Bots Admin
 
-The Analytics module provides the history of all administrative tasks with attributes such as **User**, **Date/Time**, and **Description** for an event. You can review the **Audit Report** page to analyze admin users, custom admins, and user events such as log on, log off, and changes to system settings.
+The Analytics module provides the history of all administrative tasks with attributes such as **User Name**, **User Email** **Date/Time**, and **Description** for an event. You can review the **Audit Report** page to analyze admin users, custom admins, and user events such as log on, log off, and changes to system settings.
 
 The following illustration shows an example of the **Analytics** module with the **Audit Report** page displayed.
 
@@ -9,9 +9,8 @@ The following illustration shows an example of the **Analytics** module with the
 ## Viewing System and User Events
 
 On the **Audit Report** page in the Kore.ai Bots Admin Console in the **Analytics** module, you can view the Kore.ai system and user-generated events. For example, a system-generated event could be a periodic Microsoft® Active Directory® Sync. An example of a user-generated event could be the addition of a new user.
-Post the release of v8.1, the changes triggered by using Public APIs is also captured. For example import of roles using API etc.
 
-Using the filters on the **Audit Report** page you can select event categories, events, and time periods to drill-down and filter events as needed. Kore.ai audit reports also list error messages that can help you to troubleshoot system issues or when you create a Kore.ai service request.
+Using the filters on the **Audit Report** page you can select event categories, events, and time periods to drill down and filter events as needed. Kore.ai audit reports also list error messages that can help you troubleshoot system issues or when you create a Kore.ai service request.
 
 ### Using the Search Field
 
@@ -47,7 +46,7 @@ You can narrow the list of events by date range, user/app, category, and name.
 
 ### Record Details
 
-By clicking on any entry you get to view further details pertaining as seen below:
+By clicking on any entry you get to view further details pertaining to below:
 
 <img src="../images/analytics-img3.png" alt="Record details" title="Record details" style="border: 1px solid gray;zoom:70%;"/>
 
@@ -132,13 +131,13 @@ The audit report is categorized by event category and event name. The following 
   <tr>
    <td>Admin Role Assigned to Users
    </td>
-   <td>When a user is assigned admin role.
+   <td>When a user is assigned an admin role.
    </td>
   </tr>
   <tr>
    <td>Admin Role Deleted for Users
    </td>
-   <td>When a user is unassigned from admin role.
+   <td>When a user is unassigned from an admin role.
    </td>
   </tr>
   <tr>
@@ -156,7 +155,7 @@ The audit report is categorized by event category and event name. The following 
   <tr>
    <td>Role Created
    </td>
-   <td>When custom admin role, and/or bot role created.
+   <td>When the custom admin role, and/or bot role is created.
    </td>
   </tr>
   <tr>
@@ -174,7 +173,7 @@ The audit report is categorized by event category and event name. The following 
   <tr>
    <td>Role Deleted
    </td>
-   <td>When custom admin role, and/or bot role deleted.
+   <td>When the custom admin role, and/or bot role is deleted.
    </td>
   </tr>
   <tr>
@@ -330,13 +329,13 @@ The audit report is categorized by event category and event name. The following 
   <tr>
    <td>Accept Enrollment Request
    </td>
-   <td>When enrollment request is accepted.
+   <td>When an enrollment request is accepted.
    </td>
   </tr>
   <tr>
    <td>Reject Enrollment Request
    </td>
-   <td>When enrollment request is rejected.
+   <td>When an enrollment request is rejected.
    </td>
   </tr>
   <tr>

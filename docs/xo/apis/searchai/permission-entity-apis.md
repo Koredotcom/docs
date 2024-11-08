@@ -15,7 +15,7 @@ This API lists all the permission entities associated with a connector.
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/connector/:connectorId/permission-entities
+   <td>&lt;host_url>/api/public/bot/:botId/connector/:connectorId/permission-entities
    </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ This API returns the details of the request permission entity. It lists the user
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/connector/:connectorId/permission-entities/:entityId
+   <td>&lt;host_url>/api/public/bot/:botId/connector/:connectorId/permission-entities/:entityId
    </td>
   </tr>
   <tr>
@@ -178,7 +178,7 @@ This API is used to associate users to a Permission Entity. You can add new user
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/connector/:connectorId/permission-entities/:entityId
+   <td>&lt;host_url>/api/public/bot/:botId/connector/:connectorId/permission-entities/:entityId
    </td>
   </tr>
   <tr>
@@ -268,7 +268,7 @@ This API removes a user already associated with the permission entity.
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/connector/:connectorId/permission-entities/:entityId
+   <td>&lt;host_url>/api/public/bot/:botId/connector/:connectorId/permission-entities/:entityId
    </td>
   </tr>
   <tr>

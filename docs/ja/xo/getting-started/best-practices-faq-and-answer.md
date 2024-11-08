@@ -1,59 +1,56 @@
+# FAQ（よくある質問）と回答生成のベストプラクティス
 
-# Best Practices for FAQs and Answers Generation
+バーチャルアシスタント（VA）をトレーニングして、お客様からの特定の質問に対して正確な回答を提供することができます。VAをトレーニングするには2つの方法があります：
 
-You can train your Virtual Assistant (VA) to provide exact answers to specific questions from customers. There are two ways to train your VA to do so:
+1. **FAQ**（よくある質問）
+    * 最も一般的な質問とその簡潔な回答を追加
+    * お客様がセルフサービスで解決できる迅速な解決策を提供
+    * ベストプラクティス：
+        * 様々なチャネルから主要な質問を収集
+        * お客様の意思決定プロセスに基づいて予想される質問を想定
+        * サポートチームからの意見を求める
+        * シンプルな言葉で簡潔な回答を心がける
+        * 各主要質問に対して別の表現の質問を追加
+        * 詳細情報へのリンクを含める
+        * 定期的にFAQを更新
 
-1. **FAQs** (Frequently Asked Questions)
-    * Add the most common questions and their brief answers
-    * Provide quick solutions in the answers for customers to self-serve
-    * Best practices:
-        * Collect top questions from various channels
-        * Anticipate customer queries based on their decision-making journey
-        * Seek input from your Support team
-        * Keep language simple and answers concise
-        * Add alternate questions for each primary question
-        * Include relevant links for more information
-        * Regularly update FAQs
+2. **文書からの生成AI回答**
+    * 関連文書（ポリシー、利用規約など）をアップロード
+    * VAが質問を分析し、文書から関連コンテンツを見つけ、生成AIを使用して回答を生成
+    * FAQにない詳細な回答を提供する際に有用
+    * 文書準備のベストプラクティス：
+        * オンボーディング時のファイル制限は5MB（オンボーディング後は、プランによって制限が異なります - Essentialプランは最大100MB、Advancedプランは最大300MB）
+        * シングルカラム形式と明確な見出しを使用
+        * スキャンしたPDF、暗号化ファイル、圧縮PDFは含めない
 
-2. **Generative AI Answers from Documents**
-    * Upload relevant documents (e.g., policies, terms & conditions)
-    * VA analyzes the question, finds relevant content from the documents, and generates answers using Generative AI
-    * Useful for providing more detailed answers not found in FAQs
-    * Best practices for document preparation:
-        * During onboarding, limit files to 5MB. (After onboarding, the file size limit depends on your plan - 100MB max for Essential, 300MB max for Advanced.)
-        * Use single-column format and clear section headings.
-        * Do not include scanned PDFs, encrypted files, or compressed PDFs
+3. **FAQと文書からの生成AI回答の使い分け**
 
-3. **FAQs vs. Generative AI Answers from Documents**  
-    
-    To ensure your VA generates answers from documents, avoid adding questions on the same topic to your FAQs. If a question exists in the FAQs, the VA will always prioritize the FAQ answer over searching the documents.
-    (For example, if you have a detailed document about your return policies, don't add a question like "What is your return policy?" to the FAQs. This allows the VA to use the comprehensive document to answer customer questions completely instead of relying on a potentially incomplete FAQ answer.) 
+    VAが文書から回答を生成できるようにするため、同じトピックに関する質問をFAQに追加することは避けてください。FAQに質問が存在する場合、VAは常に文書の検索よりもFAQの回答を優先します。
+    （例えば、返品ポリシーに関する詳細な文書がある場合、「返品ポリシーを教えてください」といった質問をFAQに追加しないでください。これにより、VAは不完全なFAQ回答に頼るのではなく、包括的な文書を使用して顧客の質問に完全に回答することができます。）
 
-## Generative AI Answers from Content/Document
+## コンテンツ/文書からの生成AI回答
 
-Answer from Documents allows the VA to analyze the customer/visitor’s question, look for the answer in the uploaded documents, and, if not found, look in the FAQs. Your VA is automatically trained after uploading the files to make it capable of answering from the documents.
+文書からの回答により、VAはお客様/訪問者の質問を分析し、アップロードされた文書から回答を探し、見つからない場合はFAQを参照します。ファイルをアップロードすると、VAは自動的にトレーニングされ、文書から回答できるようになります。
 
-### Why to Use Generative Answers from Documents
+### 文書からの生成回答を使用する理由
 
-* Text-heavy answers - heavier text can be picked from documents and presented as answers.
-* If the answer to a question is not available in the FAQs but is present in the document, the VA can extract and present an answer.
+* テキストが多い回答 - 文書から詳細なテキストを抽出して回答として提示できます
+* FAQに回答がないが文書に存在する質問に対して、VAが回答を抽出して提示できます
 
-A few examples of documents that can be added/uploaded for generating answers: Policies, Do’s and Don’ts, Terms & Conditions, Plans or Subscription comparison, etc.
+回答生成のためにアップロード/追加できる文書の例：ポリシー、推奨事項と禁止事項、利用規約、プランやサブスクリプションの比較など。
 
-## FAQs
+## FAQ
 
-FAQs are the most frequently asked questions by customers and visitors. They usually have short answers or are utilized for intent identification. The purpose of FAQs is to provide quick answers to common questions your business can anticipate. FAQs empower customers and visitors to self-serve, enabling them to find solutions quickly on their own.
+FAQは、お客様や訪問者から最もよく寄せられる質問です。通常、短い回答を持つか、意図の特定に使用されます。FAQの目的は、ビジネスが予想できる一般的な質問に対する迅速な回答を提供することです。FAQにより、お客様や訪問者は自己解決が可能となり、自分で素早く解決策を見つけることができます。
 
-For example, the screenshot below shows FAQs added to a virtual assistant for a bank:  
-<img src="../images/setup-guide-faq.png" alt="Adding FAQs" title="Adding FAQs" style="border: 1px solid gray; zoom:70%;">
+例えば、以下のスクリーンショットは銀行のバーチャルアシスタントに追加されたFAQを示しています：  
+<img src="../images/setup-guide-faq.png" alt="FAQの追加" title="FAQの追加" style="border: 1px solid gray; zoom:70%;">
 
+## FAQと文書からの生成AI回答の連携方法
 
-## How FAQs and Generative AI Answers from Documents Work Together?
+まず、VAは文書からAI回答を生成します—生成AIを使用してアップロード/追加された文書から回答を探します。文書に回答がない場合、自動化AI（ダイアログタスク/FAQ）を使用してお客様の質問に回答します。つまり、デフォルトの順序は、最初に文書からの生成AI回答、次に自動化（FAQ）となります。このデフォルトの順序はアプリ設定から変更できます。[詳細はこちら](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration)。
 
-First, your VA will generate AI Answers from Documents—it will look for answers in the uploaded/added documents using Generative AI. If the documents don’t have an answer, it will use Automation AI (Dialog Tasks/FAQs) to answer customer questions. So, the default order is - Generative AI Answers from Documents first and Automation (FAQs) second. You can change the default order from the App Settings. [Learn more](./../searchai/setup-search-ai.md#virtual-assistant-fallback-configuration).
+## FAQと文書からの生成AI回答の競合を避ける方法
 
-## How to Avoid Conflict Between FAQs and Generative AI Answers from Documents?
-
-To ensure your VA generates answers from documents, avoid adding questions on the same topic to your FAQs. If a question exists in the FAQs, the VA will always prioritize the FAQ response over searching the documents.
-For example, if you have a detailed document about your return policies, don't add a question like "What is your return policy?" to the FAQs. This allows the VA to use the comprehensive document to answer customer questions completely instead of relying on a potentially incomplete FAQ answer. 
-
+VAが文書から回答を生成できるようにするため、同じトピックに関する質問をFAQに追加することは避けてください。FAQに質問が存在する場合、VAは常に文書の検索よりもFAQ回答を優先します。
+例えば、返品ポリシーに関する詳細な文書がある場合、「返品ポリシーを教えてください」といった質問をFAQに追加しないでください。これにより、VAは不完全なFAQ回答に頼るのではなく、包括的な文書を使用して顧客の質問に完全に回答することができます。

@@ -1,14 +1,13 @@
 # Managing Your Users
 
-**User Management** involves managing users and user groups
+**User Management** involves managing users and user groups.
 
-* From **[Users section](#users)**, you can view and manage your Kore.ai user roles, status, and monitor user message activity.
-* From **[User Settings section](#user-settings)**, you can define the user profile fields displayed to the user in their profile, for example, address information, and if the user can edit those fields.
-
+* From the **[Users section](#users)**, you can view and manage your Kore.ai users' roles and status, and monitor user message activity.
+* From **[User Settings section](#user-settings)**, you can define the user profile fields displayed to the user in their profile, such as address information, and whether the user can edit those fields.
 
 ## Users
 
-You can manage users in your enterprise network from the Bot Administration page from **User Management -> Users** section.
+You can manage users in your enterprise network from the Bot Administration page in the **User Management > Users** section.
 
 <img src="../images/bac-users.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -38,12 +37,12 @@ The following list describes the columns displayed for each Kore.ai user.
   <tr>
    <td>Bot Builder Access
    </td>
-   <td>The type of access user has to Bot Builder. Can be
+   <td>The type of access a user has to Bot Builder. Can be
 <ul>
 
-<li><strong>none</strong> i.e no access to Bot Builder;
+<li><strong>None</strong> means no access to Bot Builder
 
-<li>only <strong>Bot Builder Access</strong>, or
+<li>Only <strong>Bot Builder Access</strong> or
 
 <li>Bot Builder access along with permission for a <strong>New Bot Creation</strong>
 </li>
@@ -58,11 +57,11 @@ The following list describes the columns displayed for each Kore.ai user.
 
 <li><strong>Active</strong> – The user is active and can interact with other Kore.ai users.
 
-<li><strong>Not Active</strong> – Users invited by the Admin, but who are yet to join or accept the invitation.
+<li><strong>Not Active</strong> – Users invited by the Admin but have yet to join or accept the invitation.
 
-<li><strong>Suspended</strong> – The user is suspended by an administrator. The user cannot log on to Kore.ai, however, messages can still be sent to the suspended user. The status of a <strong>Suspended </strong>user can be <strong>Activated</strong>.
+<li><strong>Suspended</strong> – The user is suspended by an administrator. The user cannot log on to Kore.ai; however, messages can still be sent to the suspended user. The status of a <strong>Suspended </strong>user can be <strong>Activated</strong>.
 
-<li><strong>Locked</strong> – The user exceeded the maximum number of logon attempts. The status of a locked user can be changed to <strong>Unlock</strong>, <strong>Suspend</strong>, or <strong>Deactivate</strong>.
+<li><strong>Locked</strong> – The user exceeded the maximum number of login attempts. The status of a locked user can be changed to <strong>Unlock</strong>, <strong>Suspend</strong>, or <strong>Deactivate</strong>.
 </li>
 </ul>
    </td>
@@ -70,8 +69,7 @@ The following list describes the columns displayed for each Kore.ai user.
 </table>
 
 
-Clicking on a specific User row from the Users page opens the **User Details** page from where you can modify the
-
+Clicking on a specific User row from the Users page opens the **User Details** page, from where you can modify the following:
 
 
 * **[User Profile](#profile)**,
@@ -89,22 +87,22 @@ You can modify the user profile information of a specific user in your account, 
 The following fields are accessible from this page:
 
 * **Status** can be:
-    * _Active_: hovering over the information icon displays the last logged in date and time.
+    * _Active_: hovering over the information icon displays the last logged-in date and time.
     * _Not Active_: hovering over the information icon displays when the invite to join the account was sent.
-    * _Suspended_: hovering over the information icon displays the last logged in date and time. You can Activate User either using the **more** icon on this dialog or using the **ACTIVATE** button displayed when you hover over the user row in the Users page.
+    * _Suspended_: hovering over the information icon displays the last logged-in date and time. You can Activate User using the More icon on this dialog or the ACTIVATE button displayed when you hover over the user row in the Users page.
 
-* **Groups** to which the user is assigned. Using the **Edit** link you can select or deselect the groups for the given User. [Refer here for more on Managing Groups](../managing-your-groups){:target="_blank"}
-* **Admin Role** status, can be added or removed using the **Edit** link.
+* **Groups** to which the user is assigned. Using the **Edit** link, you can select or deselect the groups for the given User. [Refer here for more on Managing Groups](../managing-your-groups){:target="_blank"}.
+* **Admin Role** status can be added or removed using the **Edit** link.
 * **Bot Builder Access** status can be modified using the **Edit** link. [Refer here for more on Role Management](../role-management){:target="_blank"}.
-* User Details like First Name, Last Name, email id, etc. can be viewed and modified.  
-Note that the email id is read-only field and cannot be modified.
+* User Details like First Name, Last Name, email id, etc., can be viewed and modified.  
+Note that the email id is a read-only field and cannot be modified.
 
 
 ### Sessions/Devices
 
 This tab displays the User activity – the session ID, device type the user used, and their last activity timestamp on that session.
 
-As an admin, you may need to end one or more user sessions. You can use the **Kill Session** button to to end a mobile or desktop session for the user.
+You can use the Kill Session button to end a mobile or desktop session for the user.
 
 !!! warning
 
@@ -113,14 +111,39 @@ As an admin, you may need to end one or more user sessions. You can use the **Ki
 
 <img src="../images/bac-users-sessions.png" alt="Sessions - User Activity" title="Sessions - User Activity" style="border: 1px solid gray;zoom:50%;"/>
 
+### Cross-Workspace Session Management
+
+The platform manages user sessions at the platform level rather than the workspace level. When users log in, a single session is created that works across all workspaces. This enables administrators to monitor active sessions for their users across all workspaces and terminate any user session, regardless of workspace.
+
+#### Security and Privacy Considerations
+
+* Privacy: Users should be aware that their sessions in one workspace might be visible to administrators of other workspaces they are part of.
+
+* Enhanced Security: Cross-workspace monitoring helps detect suspicious activities.
+
+* Session Management: Users may be logged out if an administrator from any workspace terminates their session.
+
+#### Best Practices
+
+For Administrators:
+
+* Utilize the session management feature responsibly.
+* Notify users before terminating sessions, especially those in other workspaces.
+* Regularly review active sessions to ensure proper account usage.
+
+For Users:
+
+* Be aware that your sessions are visible across multiple workspaces.
+* Log out of inactive sessions to maintain good security practices.
+* Report suspicious session activity to the workspace administrator.
 
 ### Manage Bots
 
-This tab displays the Bots to which the User has access and their role – Owner, Developer or Tester.
+This tab displays the Bots to which the User has access and their role – Owner, Developer, or Tester.
 
 As an admin, you may Edit or Delete the role of the User for a given Bot. Note that you cannot delete or modify the role of a Bot Owner, it is assigned at the time of Bot creation.
 
-You can also select a Bot and assign a Bot role to the user. [See here for more on Bot roles](../role-management/#bot-roles){:target="_blank"}.
+You can also select a Bot and assign a Bot role to the user. For more information, see [Bot roles](../role-management/#bot-roles){:target="_blank"}.
 
 <img src="../images/bac-manage-bots.png" alt="Manage Bots" title="Manage Bots" style="border: 1px solid gray;"/>
 
@@ -130,10 +153,9 @@ You can also select a Bot and assign a Bot role to the user. [See here for more 
 <img src="../images/bac-users-more.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;"/>
 
 
-
 #### Reset a User Password
 
-As a Bots Admin, you can send a password reset email to any user, including yourself, from the Bots Admin Console if Single Sign-On (SSO) is not enabled. You can reset the password using the **more** icon from the User Profile page.
+As a Bots Admin, you can send a password reset email to any user, including yourself, from the Bots Admin Console if Single Sign-On (SSO) is not enabled. You can reset the password using the **More** icon on the User Profile page.
 
 The _password reset email_ sent message is displayed and an email is sent to the user with instructions about how to reset the password.
 
@@ -146,18 +168,17 @@ The _password reset email_ sent message is displayed and an email is sent to the
 
 #### Delete User
 
-Using the **more** icon from the User Settings page you can **Delete User.**
-
-You can also **Delete User** from the Users page by using the **delete icon** on the hover of the User row or select users and using the **Delete Selected** link.
+You can **Delete a User** using the **More** icon from the User Settings page. 
+You can also **Delete a User** from the Users page by hovering over the **user row and** clicking the delete icon or by selecting a user and clicking the **Delete Selected** link.
 
 !!! Note
 
-    You cannot delete the Users if they are owners of the virtual assistant. You need to change the respective bot ownership to someone else in order to delete the user.
+    You cannot delete the Users if they are owners of the virtual assistant. You must change the respective bot ownership to someone else to delete the user.
 
 
 ## User Settings
 
-On the **User Settings** section in the **User Management** module, you can manage the fields to display to Kore.ai users on their **User Profile** page, for example, **Company**, **Department**, and so forth.
+On the **User Settings** section in the **User Management** module, you can manage the fields that Kore.ai users see on their **User Profile** page, such as **Company**, **Department**, and so forth.
 
 <img src="../images/bac-user-settings.png" alt="User Settings" title="User Settings" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -182,7 +203,7 @@ On the **User Settings** section in the **User Management** module, you can mana
 <li><strong>Profile Picture</strong>
 
 <br>
-You can also select or clear <strong>Allow Edits</strong> to enable/disable the user to overwrite the data. Modifications to the user profile take effect when the user logs in next.
+You can also select or clear <strong>Allow Edits</strong> to enable/disable the user  from overwriting the data. Modifications to the user profile take effect when the user logs in next.
 </li>
 </ul>
    </td>
@@ -216,7 +237,7 @@ You can also select or clear <strong>Allow Edits</strong> to enable/disable the 
 <li><strong>Country</strong>
 
 <br>
-You can also select or clear <strong>Allow Edits</strong> to enable/disable the user to overwrite the data. Modifications to the user profile take effect when the user logs in next.
+You can also select or clear <strong>Allow Edits</strong> to enable/disable the user from overwriting the data. Modifications to the user profile take effect when the user logs in next.
 </li>
 </ul>
    </td>
