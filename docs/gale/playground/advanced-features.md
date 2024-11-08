@@ -1,6 +1,6 @@
 # Advanced Features  
 
-
+Prompt Studio offers a suite of features designed to streamline and enhance your prompt creation and management process, providing greater flexibility, collaboration, and control throughout your workflow.
   
 
 ## Prompt Versioning
@@ -21,10 +21,10 @@ You can also view versions created by others, which helps understand how prompts
 
 **Steps to commit a version:**
 
-1. On the prompt canvas, click the **Commit** button.
+1. To save the current prompt version, click the **Commit** button on the prompt canvas.
 The current prompt, system prompt, and the preferred model is recorded as a version.
 
-    After you commit a version, the number of versions is displayed in the **Versions** button, next to the **Commit** button.
+    After you commit a version, a record is created in Versions. The number of versions is displayed in the **Versions** button, next to the **Commit** button.
 
     <img src="../images/prompt_no_of_versions_example.png" alt="Prompts commit" title="Prompt commit" style="border: 1px solid gray; zoom:80%;">
 
@@ -72,7 +72,7 @@ Steps to bookmark a model:
 
 2. If you try to commit a version without bookmarking a model, you will be asked to select a preferred model. Select your preferred model in the dialog that appears.
 
-    <img src="../images/prompt_bookmark_select_example.png" alt="Select preferred model" title="Select preferred model" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/prompt_bookmark_select_example.png" alt="Select preferred model" title="Select preferred model" style="border: 1px solid gray; zoom:80%;">
  
     Once you select a preferred model, your version is committed successfully, and the number of committed versions is displayed.
 
@@ -95,12 +95,13 @@ Once you click on Draft History, a dialog appears displaying the different draft
  
 You can utilize each version as a draft without altering the saved version of the prompt. While using a version as a draft, you can edit the prompt content (both human and system prompts) in the current prompt canvas. Any edits made in draft mode do not affect the saved version of the prompt.
 
+
 !!! note
 
-    Draft history is different from Versions. 
-    - Draft History includes both the input and the output, capturing the entire progression of the prompt, including any generated responses.
-    - Versions focus only on the development of the prompt itself, tracking and retaining only the input without considering the generated outputs.
-    This distinction helps in more detailed tracking of prompt changes (via Versions) while still preserving the full context of input-output iterations (via Draft History).
+    
+    **Draft History**: Includes both the input and the output, capturing the entire progression of the prompt, including any generated responses.   
+    **Versions**: Focus only on the development of the prompt itself, tracking and retaining only the input without considering the generated outputs.  
+    This distinction helps in more detailed tracking of prompt changes (via Versions) while still preserving the full context of input-output iterations (via Draft History)
 
 ## Regenerating Output
 
@@ -110,26 +111,18 @@ After generating the initial output, review each output to determine if it meets
 
 You can experiment with specific cells or columns, adjust variables, and preserve desired outputs ultimately enhancing user experience and optimizing token usage.
 
-### **Useful For:**
+**Useful For:**
 
-* Improving Prompts- Fine-tune prompts for better quality.
-* Comparing Models- Assess different models with the same prompt.
-* Reducing Bias- Adjust prompts to improve performance.
-* Targeted Changes- Experiment with specific areas while preserving other outputs.
+* Improving Prompts: Fine-tune prompts for better quality.
+* Comparing Models: Assess different models with the same prompt.
+* Reducing Bias: Adjust prompts to improve performance.
+* Targeted Changes: Experiment with specific areas while preserving other outputs.
 
-At cell level:
+At cell-level:
 
- <img src="../playground/images/prompt_regenerate_cell_example.png" alt="Regenerate cell level" title="Regenerate cell level" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/prompt_regenerate_cell_example.png" alt="Regenerate cell level" title="Regenerate cell level" style="border: 1px solid gray; zoom:70%;">
 
-At model level:
+At model-level:
 
- <img src="../playground/images/prompt_regenerate_model_example.png" alt="Regenerate model level" title="Regenerate model level" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/prompt_regenerate_model_example.png" alt="Regenerate model level" title="Regenerate model level" style="border: 1px solid gray; zoom:70%;">
  
-# Tips for Success
-
-* **Use Version Control** - Implement version control for significant changes and log updates clearly.
-* **Bookmark Strong Models** - Keep track of better-performing models by bookmarking them.
-* **Start with Templates** - Use templates from the prompt library for common use cases to streamline prompt creation.
-* **Incorporate Variables** - Use variables to run multiple prompts simultaneously and for consistent testing across prompts.
-* **Export Results as CSV** - Save important results in CSV format for easy sharing and analysis.
-* **Save Successful Prompts** - Save effective prompts as templates for future use.
