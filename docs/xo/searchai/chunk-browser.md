@@ -11,6 +11,10 @@ Go to the **Browse** section under the **Index** tab to view the chunks. The chu
 
 ![View Chunks](../images/browser-home.png "View Chunks")
 
+If the chunk contains one or more images or tables, a preview of these is also shown in the chunk summary. You can click on the preview to enlarge the image or table and view it at its full size. If there are multiple images, a carousel is displayed to allow easy navigation through them.
+
+![Chunk Preview](../images/preview.png "Preview Chunks")
+
 ## View Chunk Details
 
 Click the **Details** icon to view the details of a chunk. 
