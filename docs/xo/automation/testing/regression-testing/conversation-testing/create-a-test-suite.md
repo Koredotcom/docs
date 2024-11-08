@@ -24,7 +24,8 @@ The option to record the test suite captures the metadata in the background whic
     !!! Note
     
         "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.     
-4. Define the Pre-processor Script to control preconditions during conversation testing. Learn more. 
+
+4. Define the Pre-processor Script to control preconditions during conversation testing. [Learn more](../conversation-testing/create-a-test-suite.md#pre-processor-script). 
 
 5. Click **Proceed** to start the test recording.  
 <img src="../images/ct-create-test-suite-record2-window.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;zoom:50%;"/>   
@@ -47,6 +48,7 @@ To address these needs, users can run custom scripts at the recording, validatio
 * **Inject External Custom Data**: Simulate inputs from external systems for real-world test cases.
 
 Here are the key session variables that can be set:
+
 * EnterpriseContext
 * BotContext
 * UserContext
@@ -62,7 +64,7 @@ When recording a test case, the user is treated as a **new user** with no sessio
 
 The Pre-Processor Script allows users to:
 
-1. **Reset or Set Session Variables**: Adjust session data as needed to ensure consistent "new user" or "returning user" states.
+1. **Reset or Set Session Variables**: Adjust session data as needed to ensure consistent **New User** or **Returning User** states.
 2. **Simulate Different User Conditions**: Accurately test new and returning user flows by managing session variables to reflect the correct state.
 
 #### Generated User Response Suggestions
