@@ -37,7 +37,7 @@ Steps to create prompts using the Generate a prompt option:
 
 1. On the Prompts landing page, click **Generate a prompt**.
 2. In the Prompt generator dialog, select a model and enter your instruction.  
-    Note: Only openAI and Anthropic models are supported for prompt generation and test data generation.
+    Note: Only OpenAI and Anthropic models are supported for prompt generation and test data generation.
 
     <img src="../images/generate_a_prompt.png" alt="Generate prompt" title="Generate prompt" style="border: 1px solid gray; zoom:80%;">
 

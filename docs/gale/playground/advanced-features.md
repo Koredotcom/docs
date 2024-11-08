@@ -99,9 +99,9 @@ You can utilize each version as a draft without altering the saved version of th
 !!! note
 
     
-    **Draft History**: Includes both the input and the output, capturing the entire progression of the prompt, including any generated responses.   
-    **Versions**: Focus only on the development of the prompt itself, tracking and retaining only the input without considering the generated outputs.  
-    This distinction helps in more detailed tracking of prompt changes (via Versions) while still preserving the full context of input-output iterations (via Draft History)
+    **Draft History** includes both the input and the output, capturing the entire progression of the prompt, including any generated responses.   
+    **Versions** focus only on the development of the prompt itself, tracking and retaining only the input without considering the generated outputs.  
+    This distinction helps in more detailed tracking of prompt changes (via Versions) while still preserving the full context of input-output iterations (via Draft History).
 
 ## Regenerating Output
 
@@ -111,18 +111,18 @@ After generating the initial output, review each output to determine if it meets
 
 You can experiment with specific cells or columns, adjust variables, and preserve desired outputs ultimately enhancing user experience and optimizing token usage.
 
-**Useful For:**
+**Useful for:**
 
 * Improving Prompts: Fine-tune prompts for better quality.
 * Comparing Models: Assess different models with the same prompt.
 * Reducing Bias: Adjust prompts to improve performance.
 * Targeted Changes: Experiment with specific areas while preserving other outputs.
 
-At cell-level:
+Cell-level regeneration:
 
  <img src="../images/prompt_regenerate_cell_example.png" alt="Regenerate cell level" title="Regenerate cell level" style="border: 1px solid gray; zoom:70%;">
 
-At model-level:
+Column-level regeneration:
 
  <img src="../images/prompt_regenerate_model_example.png" alt="Regenerate model level" title="Regenerate model level" style="border: 1px solid gray; zoom:70%;">
  
