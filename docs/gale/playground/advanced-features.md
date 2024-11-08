@@ -35,7 +35,7 @@ The current prompt, system prompt, and the preferred model is recorded as a vers
 To use a particular prompt version, select it and click **Use as a draft**. The prompt canvas automatically opens with selected prompt and system prompts.
 
 
-## Prompt API integration
+## Prompt API Endpoint
 
 The Prompt API enables seamless sharing of prompts outside of GALE by using version-specific API keys. Users can fetch prompts via API calls, eliminating the need for repetitive copy-pasting.
 
@@ -45,11 +45,11 @@ When a request is made to the API endpoint using the correct API key, the API re
 
 **Editing API Endpoints** - Users can edit the endpoint to specify a different version in the query parameters. If no version is mentioned, it will call the default version of the prompt. This helps users to easily access the version they need.
 
-**Deleting API Endpoints** - When a user deletes an API key, any external locations where the API key was used will be affected, rendering the key invalid.
+**Deleting API Keys** - When a user deletes an API key, any external locations where the API key was used will be affected, rendering the key invalid.
 
-**Integration Options** - Users can access various request methods for active API endpoints: cURL, Python, and Node.js. This provides users with multiple options for integrating the API into their applications.
+**API Request Options** - Users can access various request methods for active API endpoints: cURL, Python, and Node.js. This provides users with multiple options for integrating the API into their applications.
 
-Users can create multiple API keys for each endpoint. Each API key can be copied once and later deleted, but cannot be reused. This functionality streamlines prompt updates and reduces manual effort in managing endpoints.
+Users can create multiple API keys for each endpoint. Each API key can be copied once and later deleted, but cannot be reused. This functionality streamlines prompt updates and reduces the manual effort required in managing API keys, while enhancing the security when used externally.
 
 The following image displays the window when you click the prompt API icon. It features tabs for the API endpoint and API keys.
 
