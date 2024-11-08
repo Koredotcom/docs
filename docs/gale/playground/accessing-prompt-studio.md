@@ -14,10 +14,7 @@ Steps to access Prompts:
 
     <img src="../images/prompt_dashboard.png" alt="Prompts dashboard" title="Prompts dashboard" style="border: 1px solid gray; zoom:80%;"> 
 
-    The tabs display the following information:  
-        Name: The title or name of each prompt.  
-        Prompt: The  exact text of the prompt.  
-        Created by: The name of the individual who created the prompt.
+    Each tab displays the title or name of each prompt, the exact text of the prompt, and the name of the individual who created the prompt.
 
 4. To create a new prompt, click **New prompt**.
 5. On the **New prompt** dialog, enter a name for your prompt, and click **Proceed**. The Prompt landing page is displayed.
@@ -41,14 +38,14 @@ Steps to create prompts using the Generate a prompt option:
 1. On the Prompts landing page, click **Generate a prompt**.
 2. In the Prompt generator dialog, select a model and enter your instruction.
 
-    <img src="../playground/images/generate_a_prompt.png" alt="Generate prompt" title="Generate prompt" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/generate_a_prompt.png" alt="Generate prompt" title="Generate prompt" style="border: 1px solid gray; zoom:80%;">
 
 3. Review the AI-generated prompt.
 4. Once you click **Proceed**, the prompt will be copied to the prompt canvas. You can then customize the prompt as needed.
 
     You can also get assistance in generating a prompt in the prompt canvas by clicking the **Generate Prompt** option in the Prompt field. This feature provides users with helpful suggestions and options to enhance their prompt creation process.
 
-    <img src="../playground/images/generate_prompt_new.png" alt="Generate prompt" title="Generate prompt" style="border: 1px solid gray; zoom:30%;">
+    <img src="../images/generate_prompt_new.png" alt="Generate prompt option" title="Generate prompt option" style="border: 1px solid gray; zoom:30%;">
 
 
 ## Start From Scratch
@@ -74,15 +71,15 @@ Steps to create prompts from Prompt library:
 **My templates**:  View and manage your saved templates. If you have not saved any templates, this section will be empty.  
 **All templates**:  Browse a list of available templates.
 
-    <img src="../playground/images/prompt_library_templates.png" alt="Prompt library" title="Prompt library" style="border: 1px solid gray; zoom:30%;">
+    <img src="../images/prompt_library_templates.png" alt="Prompt library" title="Prompt library" style="border: 1px solid gray; zoom:30%;">
 
 3. Click your desired template. A dialog box with the system prompt and prompt is displayed. To use the template, click **Use template**.
 
-    <img src="../playground/images/prompt_template_dialog.png" alt="Prompt library dialog" title="Prompt library dialog" style="border: 1px solid gray; zoom:30%;">
+    <img src="../images/prompt_template_dialog.png" alt="Prompt library dialog" title="Prompt library dialog" style="border: 1px solid gray; zoom:30%;">
 
 4. Once you click **Use template**, the prompts will be copied to the prompt canvas. You can then customize the prompts as needed.
 
-    <img src="../playground/images/prompt_canvas_library.png" alt="Prompt library canvas" title="Prompt library canvas" style="border: 1px solid gray; zoom:30%;">
+    <img src="../images/prompt_canvas_library.png" alt="Prompt library canvas" title="Prompt library canvas" style="border: 1px solid gray; zoom:30%;">
 
 !!! note
 

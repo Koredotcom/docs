@@ -104,8 +104,8 @@ For more information on other model-related options such as model settings, book
 
 ## Generate output
 
-After selecting your models, you can generate the output for your prompt. Ensure you have added the desired number of models for comparison before generating the results.  \
- \
+After selecting your models, you can generate the output for your prompt. Ensure you have added the desired number of models for comparison before generating the results.  
+ 
 !!! note
 
     You can generate a maximum of 10 rows of data simultaneously.
@@ -116,10 +116,10 @@ After selecting your models, you can generate the output for your prompt. Ensure
 
 2. Once the generation is complete, the output is displayed in the model column of the prompt canvas. You can review the matrix in the generated output area to determine which prompt and model best meet your needs.
 
-    The following data is displayed:
-    *  The response/output from the models.
-    * The total number of tokens sent to the model and returned in the response.
-    * The time taken by the model to respond with the answer.  
+The following data is displayed:
+* The response/output from the models.
+* The total number of tokens sent to the model and returned in the response.
+* The time taken by the model to respond with the answer.  
 
 
     <img src="../images/prompt_outputscreen_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">

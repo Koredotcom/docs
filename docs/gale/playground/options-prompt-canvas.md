@@ -49,14 +49,14 @@ The following table lists the options available in the Model column:
 
 
 
-<img src="../bookmark.png" style="zoom:100%;"></img>
+<img src="../images/bookmark.png" style="zoom:100%;"></img>
 
    </td>
    <td>Bookmark a model
    </td>
    <td>Set a model as your preferred model for consistent output. If no model is bookmarked, you must select one when committing a prompt version.
 <p>
-For more information, see &lt;Bookmark a model> .
+For more information, see [Bookmark a Model](../playground/advanced-features.md#bookmark-a-model)
    </td>
   </tr>
   <tr>
@@ -84,8 +84,7 @@ For more information, see &lt;Bookmark a model> .
    </td>
    <td>Play
    </td>
-   <td>Regenerates the output for that single column.
-For more information, see &lt;Regenerating prompts>.
+   <td>Regenerates the output for that single column. For more information, see [Regenerating Output](../playground/advanced-features.md#regenerating-output).
    </td>
   </tr>
   <tr>
@@ -156,9 +155,7 @@ Clicking this icon opens a separate dialog displaying the request and response i
    </td>
    <td>Re-generate
    </td>
-   <td>Regenerates the output for that single cell.
-<p>
-For more information, see &lt;Regenerating prompts>.
+   <td>Regenerates the output for that single cell. For more information, see [Regenerating Output](../playground/advanced-features.md#regenerating-output).
    </td>
   </tr>
 </table>
@@ -193,8 +190,7 @@ The following table lists the options available on the top toolbar of the prompt
    </td>
    <td>Access a collection of around 70 templates for prompt creation, providing users with ready-to-use options.
 <p>
-Click the icon to browse and select a template to customize or use as a base for your prompt. 
-For more information, see &lt;Prompt library>.
+Click the icon to browse and select a template to customize or use as a base for your prompt. For more information, see [Prompt Library](../playground/accessing-prompt-studio.md#prompt-library).
    </td>
   </tr>
   <tr>
@@ -210,8 +206,8 @@ For more information, see &lt;Prompt library>.
    </td>
    <td>Enable seamless sharing of prompts using version-specific API keys. Fetch and manage prompts through API calls without repetitive copying.
 <p>
-Click to open a dialog with API endpoints and select your preferred format (cURL, Python, Node.js) to integrate with your applications.
-For more information, see &lt;Prompt API>.
+Click to open a dialog with API endpoints and select your preferred format (cURL, Python, Node.js) to integrate with your applications. 
+For more information, see [Prompt API Integration](../playground/advanced-features.md#prompt-api-integration).
    </td>
   </tr>
   <tr>
