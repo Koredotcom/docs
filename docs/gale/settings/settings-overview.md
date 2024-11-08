@@ -9,6 +9,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
 6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}
+8. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}
 
 ## Levels of Users Management 
 
@@ -78,7 +79,8 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
+- Review Agent Performance Metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
+* Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -198,6 +200,15 @@ The following modules and features are supported on the **Settings** Console:
    <li>Monitor the average response times of agents for various requests.</li>
    <li>Monitor node executions across different types and ensure agent flow runs stay within your account's rate limits.</li>
    <li>Optimize agent performance with real-time metrics.</li></ul></td>
+  </tr>
+      <tr>
+   <td><b>Monitoring - Model Analytics Dashboard</b></td>
+   <td>Review and monitor key performance indicators specific to open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance while optimizing performance.</td>
+      <td><ul><li>Select a single date or date range to view specific, time-based model performance metrics.</li>
+<li>Analyze credit consumption for deployment and fine-tuning requests, and monitor model replica generation within subscription limits to ensure optimal usage.</li>
+   <li>Compare successful versus failed requests over time and identify failure patterns.</li>
+   <li>Explore latency, requests, token generation, and scaling metrics through dedicated, expandable widgets.</li>
+   <li>Optimize model performance with access to real-time metrics.</li></ul></td>
   </tr>
 </table>
 

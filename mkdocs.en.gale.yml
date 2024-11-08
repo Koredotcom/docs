@@ -193,4 +193,4 @@ nav:
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
         - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
-   
+        - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
