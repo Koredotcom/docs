@@ -2,11 +2,9 @@
 
 When Access Control is enabled for content ingested from a specific connector, SearchAI requires user identity information to be included in the Search API request. This identity data is used to determine the user's access rights and ensure the appropriate content is returned. The RACL Resolver APIs manage the fields that handle the transmission of identity information within the Search API, ensuring secure and accurate access resolution.
 
+## Get RACL Resolver
 
-## Get Racl Resolver
-
-This API fetches the fields that are used for passing the identity information in the Search API (advancedSearch). 
-
+This API returns the fields that are used for mapping the identity information in the Search API (advancedSearch). 
 
 <table>
   <tr>
@@ -18,7 +16,7 @@ This API fetches the fields that are used for passing the identity information i
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/racl-resolver
+   <td>&lt;host_url>/api/public/bot/:botId/racl-resolver
    </td>
   </tr>
   <tr>
@@ -47,7 +45,7 @@ This API fetches the fields that are used for passing the identity information i
 
 * Bot ID: Provide your application ID here. 
 
-## Update Racl Resolver
+## Update RACL Resolver
 
 This API is used to update the field used to pass user identity information in the Search API. 
 
@@ -61,7 +59,7 @@ This API is used to update the field used to pass user identity information in t
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/racl-resolver
+   <td>&lt;host_url>/api/public/bot/:botId/racl-resolver
    </td>
   </tr>
   <tr>
@@ -110,7 +108,7 @@ Below is a sample request object that indicates that the user identity is passed
 }
 ```
 
-## Delete Racl Resolver
+## Delete RACL Resolver
 
 This API is used to delete the racl resolver fields. 
 
@@ -125,7 +123,7 @@ This API is used to delete the racl resolver fields.
   <tr>
    <td>Endpoint
    </td>
-   <td>&lt;host_url>/public/bot/:botId/racl-resolver
+   <td>&lt;host_url>/api/public/bot/:botId/racl-resolver
    </td>
   </tr>
   <tr>

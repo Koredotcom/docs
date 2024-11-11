@@ -39,7 +39,9 @@ During task execution, when a dialog reaches the service node, the platform popu
 
 ## Receive Callback after Authentication
 
-The external system, on its part, performs a callback to the platform using the webhook URL, which is populated in the Context Object. Once all this is complete, the dialog task progresses based on the transitions defined for the node.
+The external system, on its part, performs a callback to the platform using the webhook URL, which is populated in the Context Object. **The platform expects a POST request during the callback**.
+
+Once all this is complete, the dialog task progresses based on the transitions defined for the node.
 
 
 ## Configure the Custom Authentication Service

@@ -3,131 +3,132 @@ hide:
   - toc
   - feedback
 ---
-# All-new Experience Optimization Platform
+# 新しいエクスペリエンス最適化プラットフォーム
 
 Kore.ai のまったく新しいエクスペリエンス最適化 (XO) プラットフォームは、顧客、従業員、エージェントにクラス最高の会話エクスペリエンスを提供する、あらゆる規模の企業向けの AI を活用したエンドツーエンドのエクスペリエンス最適化プラットフォームです。このプラットフォームは、会話型 AI インテリジェンスと生成型 AI イノベーションをシームレスに融合させ、スケーラブルで記憶に残る顧客エクスペリエンスを生み出すツールを提供します。このプラットフォームは、世界で最も安全で信頼性が高く、スケーラブルな生成 AI および会話型 AI のソリューションとして認められています。このプラットフォームのビジネス ユーザー フレンドリーなノーコード インターフェイスにより、企業は大規模な言語モデルと生成 AI を組み込んだインテリジェントな仮想アシスタントを構築して、ユーザーの好みの言語とチャネルで有意義で継続的な会話を促進できます。
 
-# Comprehensive Suite of Products and Services
-The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
+# 包括的な製品とサービスのスイート
+統合XOプラットフォームは、企業が会話型AIインテリジェンスと生成型AIイノベーションを活用して、優れた顧客体験を提供し、業務効率を向上させ、ビジネスの成長を促進するための包括的な製品、機能、サービスのスイートを提供します。
 
-**Key Products, Features, and Services offered by the XO Platform:**
+**XOプラットフォームが提供する主要な製品、機能、サービス：**
 
-<img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
+<img src="../images/xo-platform-components.png" alt="新統合XOプラットフォーム" title="新統合XOプラットフォーム">
 
 === "Automation AI"
 
-    Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+    Automation AIは、インテリジェントな自動化を通じて顧客とのやり取りを処理するバーチャルアシスタントを作成するための高度なAI搭載ツールを提供します。特定のユースケースを定義し、高度な自然言語処理（NLP）を活用して複雑なやり取りを処理できます。また、バーチャルアシスタントに割り込みを処理し、より自然な対話のための説明を提供する機能を持たせることができます。さらに、デプロイメント前に問題を特定して修正することで、スムーズで信頼性の高いユーザーエクスペリエンスを確保するためのテストツールも提供します。
     
-    Key Features
+    主な機能
     
-    * Virtual Assistant Builder: Enables the creation of intelligent virtual assistants.
-    * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
-    * GenAI Framework: A generative AI framework to enhance automation capabilities.  
+    * バーチャルアシスタントビルダー：インテリジェントなバーチャルアシスタントの作成を可能にします。
+    * マルチモデルNLU：ユーザー入力をより良く理解するために複数のモデルを使用する自然言語理解。
+    * GenAIフレームワーク：自動化機能を強化するための生成型AIフレームワーク。
     
-    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md)
+    [Automation AIの機能についてさらに詳しく :octicons-arrow-right-24:](../automation/about-automation-ai.md)
 
 === "Search AI"
 
-    Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. You can add multiple data sources to build your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. You can also enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining Automation AI Use Cases and Search AI, businesses can create an exceptional, seamless conversational experience for their users.
+    Search AIは、膨大なデータセットから素早く正確に情報を検索し、ユーザーに最も関連性の高い情報を提供するAI搭載の会話型検索ツールを提供します。ウェブサイトクローラー、構造化データ、非構造化ドキュメント、カタログ、ナレッジベースなど、複数のデータソースを追加して回答インデックスを構築できます。また、ビジネスニーズに応じてユーザーの特定のニーズを満たすようにコンテンツを充実させ、強化することもできます。Automation AIのユースケースとSearch AIを組み合わせることで、企業はユーザーに卓越したシームレスな会話体験を提供できます。
     
-    Key Features
+    主な機能
     
-    * Knowledge AI with LLM: Integrates large language models to enrich knowledge bases.
-    * Retrieval Augmented Generation: Enhances information retrieval with generative AI.
-    * Advanced RAG: An advanced version of retrieval augmented generation for improved search capabilities.  
+    * LLMを活用したKnowledge AI：大規模言語モデルを統合してナレッジベースを強化。
+    * 検索補強生成（RAG）：生成型AIで情報検索を強化。
+    * Advanced RAG：検索機能を向上させた高度な検索補強生成。
     
-    [Learn more about Search AI features :octicons-arrow-right-24:](../searchai/about-search-ai.md)
+    [Search AIの機能についてさらに詳しく :octicons-arrow-right-24:](../searchai/about-search-ai.md)
 
 === "Contact Center AI"
 
-    Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI Use Cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
+    Contact Center AIは、顧客体験の向上、収益の増加、運用コストの削減を実現する会話型AIネイティブのContact Center-as-a-serviceソリューションを提供します。チャネル全体で一貫性のある、パーソナライズされた、インテリジェントで手間のかからない顧客とエージェントの体験を作成するのに役立ちます。Automation AIのユースケースとSearch AIを活用して、定型的な顧客の問い合わせを自動化し、必要に応じてシームレスに人間のエージェントに転送できます。新しいキャンペーンモジュールは、アウトバウンドの音声およびウェブキャンペーンの合理化に役立ちます。テンプレートと分析を提供し、ターゲットを絞ったキャンペーンを簡単に作成し、効率的にオーディエンスにリーチし、パフォーマンスを追跡し、目標をより効果的に達成できます。
     
-    Key Features
+    主な機能
     
-    * Routing & Experience Flows: Manages the routing of queries and the flow of customer experiences.
-    * Agent Desktop: Provides a centralized workspace for agents.
-    * Campaigns: Tools for managing voice and proactive web campaigns.  
+    * ルーティング＆エクスペリエンスフロー：問い合わせのルーティングと顧客体験のフローを管理。
+    * エージェントデスクトップ：エージェント向けの一元化されたワークスペースを提供。
+    * キャンペーン：音声およびプロアクティブなウェブキャンペーンを管理するツール。
     
-    [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
+    [Contact Center AIの機能についてさらに詳しく :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
 
 === "Agent AI"
 
-    Agent AI is your agent’s personal intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
+    Agent AIは、エージェントのパーソナルインテリジェントバーチャルアシスタントです。コンタクトセンターのエージェントの生産性と顧客満足度を向上させるAIネイティブなエージェント支援を提供します。AIを活用した自動化ワークフローを設定して、リアルタイムの支援、次のベストアクション、組み込みのKnowledge AI、自動化された支援、リアルタイムのガイダンスを提供することで、エージェントが優れた顧客サービスを提供できるようにします。
     
-    Key Features
+    主な機能
     
-    * Real-time AI suggestions: Offers live AI-powered guidance to agents.
-    * Auto-fulfillment: Automates the completion of tasks and processes.
-    * Agent Coaching & Playbooks: Provides resources and strategies for agent training and performance.  
+    * リアルタイムAI提案：エージェントにリアルタイムのAI駆動ガイダンスを提供。
+    * 自動実行：タスクとプロセスの完了を自動化。
+    * エージェントコーチング＆プレイブック：エージェントのトレーニングとパフォーマンスのためのリソースと戦略を提供。
     
-    [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
+    [Agent AIの機能についてさらに詳しく :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
 === "Analytics"
 
-    The Analytics Module provides a comprehensive 360-degree view of all voice and digital conversations across channels. It offers insightful dashboards, including containment information, conversation history, automation analytics, generative AI logs and analytics, search analytics, and contact center analytics. The module empowers your teams with data-driven insights, enabling them to make informed decisions to meet their targets.
+    アナリティクスモジュールは、チャネル全体の音声およびデジタル会話の包括的な360度ビューを提供します。コンテインメント情報、会話履歴、自動化分析、生成型AIログと分析、検索分析、コンタクトセンター分析など、洞察に満ちたダッシュボードを提供します。このモジュールは、チームがデータに基づく洞察を得て、目標を達成するための情報に基づいた意思決定を行えるようにします。
     
-    Key Features
+    主な機能
     
-    * Virtual Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and virtual agents.
-    * Virtual Agent Performance Insights: Monitors and evaluates the performance of virtual agents.
-    * Contact Center Quality Management Insights: Offers insights to improve contact center operations.  
+    * バーチャルエージェント - ユーザー会話インサイト：ユーザーとバーチャルエージェント間のやり取りを分析し、洞察を提供。
+    * バーチャルエージェントパフォーマンスインサイト：バーチャルエージェントのパフォーマンスを監視・評価。
+    * コンタクトセンター品質管理インサイト：コンタクトセンター運営の改善のための洞察を提供。
     
-    [Learn more about Analytics features :octicons-arrow-right-24:](../analytics/introduction.md)
+    [アナリティクスの機能についてさらに詳しく :octicons-arrow-right-24:](../analytics/introduction.md)
 
-=== "Platform Services"
+=== "プラットフォームサービス"
 
-    Common services help manage the entire lifecycle of products and services easily. You can configure the settings and the services once and use them across the Platform for all products and services.
+    共通サービスは、製品とサービスのライフサイ���ル全体を簡単に管理するのに役立ちます。設定とサービスを一度構成すれば、すべての製品とサービスでプラットフォーム全体で使用できます。
     
-    Key Services
+    主なサービス
     
-    * Life Cycle Management: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
-    * Multi-lingual Support: Offers support for multiple languages.
-    * Pre-built Integrations: Provides ready-to-use integrations with other systems.
-    * Generative AI: Utilizes generative AI across the Platform.
-    * Omnichannel: Ensures a seamless experience across various communication channels.  
+    * ライフサイクル管理：バージョン管理、公開、コラボレーションを含むアプリとサービスのライフサイクルを管理するツール。
+    * 多言語サポート：複数言語のサポートを提供。
+    * 事前構築済み統合：他のシステムとの使用準備が整った統合。
+    * 生成型AI：プラットフォーム全体で生成型AIを活用。
+    * オムニチャネル：様々なコミュニケーションチャネルでシームレスな体験を確保。
     
-    [Learn more about Common Services :octicons-arrow-right-24:](../app-settings/app-profile.md)
+    [共通サービスについてさらに詳しく :octicons-arrow-right-24:](../app-settings/app-profile.md)
 
-=== "Enterprise Services"
+=== "エンタープライズサービス"
 
-    The Platform empowers enterprise customers with additional services.   
+    プラットフォームは、エンタープライズ顧客に追加のサービスを提供します。
     
-    Key Services
+    主なサービス
     
-    * Role-based Access Controls, Audit Logs: Ensures security and accountability through access management and logging.
-    * Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR): Compliant with major security and privacy standards.
-    * Cloud and On-Premise Deployments**: Flexible deployment options.
-    * Scalability, Integrations, Authentication, and Authorization: Ensures the Platform can scale and integrate securely with other systems.  
+    * ロールベースのアクセス制御、監査ログ：アクセス管理とログ記録を通じてセキュリティと説明責任を確保。
+    * セキュリティ、コンプライアンス（SOC-2、PCI、FedRAMP、HIPAA、GDPR）：主要なセキュリティとプライバシー基準に準拠。
+    * クラウドおよびオンプレミス展開：柔軟な展開オプション。
+    * スケーラビリティ、統合、認証、承認：プラットフォームが他のシステムと安全に連携しスケールできることを保証。
     
-    [Learn more about Enterprise Services :octicons-arrow-right-24:](../administration/adminconsole.md)
+    [エンタープライズサービスについてさらに詳しく :octicons-arrow-right-24:](../administration/adminconsole.md)
 
 <hr>
 
-## Integrated Architecture for Omnichannel Customer Engagement
-The image below provides a high-level understanding of the XO platform's capabilities, the integrated nature of its components, and how they work together as an integrated system to support customer engagement across multiple channels.
+## オムニチャネル顧客エンゲージメントのための統合アーキテクチャ
+以下の図は、XOプラットフォームの機能、そのコンポーネントの統合的な性質、および複数のチャネルにわたる顧客エンゲージメントをサポートする統合システムとしてどのように連携するかについての高レベルな理解を提供します。
 
 <img src="../images/xo-platform-components-flow.png">
 
-Various components and their interactions within the XO platform:
+XOプラットフォーム内の様々なコンポーネントとその相互作用：
 
-* At the top, it has different **Channels** or entry points: Digital, Voice Gateway, and 3rd Party IVR.
-* These channels feed into the **Start / Exit Flows** component, which handles the interactions' initial and final stages. From there, the flow can branch out into other components based on the implementation.
-* Automation flow: 
-    - **Intelligent Virtual Assistant**: The interaction is sent to the Virtual Assistant. It can handle complex interactions via Automation AI use cases and natural language processing.
-    - **Search AI**: In addition to Automation AI use cases, you can use Search AI to retrieve information from vast datasets and feed the most relevant information to users via the Virtual Assistant. 
-* Agent transfer flow:
-    - **Contact Center / Agent Desktop**: The request is sent to Contact Center AI or Agent Desktop for live agent interactions.
-    - **Agent AI**: Provides AI-powered assistance and recommendations to human agents during interactions via Agent Desktop.
-    - **Third-Party Contact Center / Agent Desktop**: The request can be sent to external contact center solutions for live agent interactions.
-* **Campaigns** can interact with the Contact Center to help you manage and execute marketing and customer outreach efforts via outbound voice and web campaigns.
-* **Analytics** gathers data to provide insights into user interactions and system performance.
-* **App Management** supports the entire platform with functionalities for publishing, importing/exporting apps, user management, collaboration, billing, etc.
+* 上部には、異なる **チャネル** またはエントリーポイントがあります：デジタル、音声ゲートウェイ、サードパーティIVR。
+* これらのチャネルは**開始/終了フロー**コンポーネントにつながり、これがやり取りの初期段階と最終段階を処理します。そこから、実装に基づいて他のコンポーネントに分岐できます。
+* 自動化フロー：
+    - **インテリジェントバーチャルアシスタント**：やり取りがバーチャルアシスタントに送信されます。Automation AIのユースケースと自然言語処理を通じて複雑なやり取りを処理できます。
+    - **Search AI**：Automation AIのユースケースに加えて、Search AIを使用して膨大なデータセットから情報を検索し、バーチャルアシスタントを通じてユーザーに最も関連性の高い情報を提供できます。
+* エージェント転送フロー：
+    - **コンタクトセンター/エージェントデスクトップ**：リクエストがContact Center AIまたはエージェントデスクトップに送信され、ライブエージェントとのやり取りが行われます。
+    - **Agent AI**：エージェントデスクトップを通じて、やり取り中に人間のエージェントにAI駆動の支援と推奨事項を提供します。
+    - **サードパーティコンタクトセンター/エージェントデスクトップ**：リクエストを外部のコンタクトセンターソリューションに送信してライブエージェントとのやり取りを行うことができます。
+* **キャンペーン** はコンタクトセンターと連携して、アウトバウンドの音声およびウェブキャンペーンを通じてマーケティングと顧客アウトリーチの取り組みを管理・実行するのに役立ちます。
+* **アナリティクス** はデータを収集して、ユーザーのやり取りとシステムパフォーマンスに関する洞察を提供します。
+* **アプリ管理** は、公開、アプリのインポート/エクスポート、ユーザー管理、コラボレーション、課金などの機能でプラットフォーム全体をサポートします。
 
 <hr>
 
-##### Related Links
+##### 関連リンク
 
-* [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Key Differences - XO v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
-* [Current Limitations](../release-notes/current-limitations.md)
-* [Migration Path for Existing Customers - Upgrade Journey](./whats-new-in-xo-platform.md#migration-path-for-existing-customers-upgrade-journey)
+* [XO v11の新機能](./whats-new-in-xo-platform.md)
+* [主な違い - XO v11とv10の比較](./key-differences-between-xo11-and-xo10.md)
+* [現在の制限事項](../release-notes/current-limitations.md)
+* [既存のお客様向け移行パス - アップグレードの道のり](./whats-new-in-xo-platform.md#migration-path-for-existing-customers-upgrade-journey)
+

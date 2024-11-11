@@ -168,7 +168,7 @@ nav:
     - External Models: 
       - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
       - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
-  - Playground: 
+  - Prompts: 
     - About Prompt Studio: playground/about-prompt-studio.md
     - Accessing Prompt Studio: playground/accessing-prompt-studio.md
     - Using Prompt Studio: playground/using-prompt-studio.md

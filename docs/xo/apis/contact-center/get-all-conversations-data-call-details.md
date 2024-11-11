@@ -23,27 +23,39 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 | limit | The number of conversations to be displayed in the response. The default value is 100. For example, 50 | integer, optional |
 | offset | The number of responses the documents need to Skip. The default value is 0. For example, 10 | integer, optional |
 
-## Sample Requests
+## Sample Request
 
 ```
-curl --location --request POST 'https://staging-smartassist.kore.ai/agentassist/api/public/analytics/account/65269fe0dd9c622245c1xxxx/v2/calldetails?offset=0&limit=100' \
---header 'authority: staging-smartassist.kore.ai' \
---header 'accept: application/json, text/plain, /' \
+curl --location 'https://{{host}}/agentassist/api/public/analytics/account/66050d249f946671f64axxxx/v2/calldetails?offset=0' \
+--header 'accept: application/json' \
 --header 'accept-language: en-US,en;q=0.9' \
---header 'accountid: 65269fe0dd9c622245c1xxxx' \
+--header 'accountId: 66050d249f946671f64axxxx' \
 --header 'app-language: en' \
 --header 'content-type: application/json;charset=UTF-8' \
---header 'referer:
-SmartAssist ' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUxZWE1ZGYyLTY3NDItNTlmNi1iNjg1LWUyNTJmNDE5ZjBlMyJ9.DAPhx_h32KPSoylUfGWpjQS2tITBcBxNYAEwPJWxxxx' \
---data-raw '{
-"startDate":"2024-08-24",
-"endDate":"2024-08-24",
-"timeZoneOffset":-330
+--header 'referer: smartassist' \
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy00MDE4OTQ3OS0yMWUwLTU0MjQtOTk4Yy0wN2RjZTYyMjVjY2UifQ.WlqMCWd5lUQ77b-aUO2R45C5cc1uLWOVoAC6_9oxxxx' \
+--header 'iId: st-e19dd469-90f5-5655-b0b2-858de901xxxx' \
+--data '{
+"startDate": "2024-09-24 07:20:15",
+"endDate": "2024-09-27 18:20:15",
+"timeZoneOffset": 0
 }'
 ```
 
-## Body Parameters
+## Request Header Parameters
+
+| **Header**        | **Description**                                             | **Optional/Required** |
+|-------------------|-------------------------------------------------------------|-----------------------|
+| accept            | Desired response format (for example, application/json)                   | Optional              |
+| accept-language   | Preferred response language (for example, en-US)             | Optional              |
+| accountId         | Unique account identifier                                    | Required              |
+| app-language      | Application display language (for example, en)               | Optional              |
+| content-type      | Request body format (application/json;charset=UTF-8)         | Required              |
+| referer           | Source application name (for example, smartassist)           | Optional              |
+| auth              | JWT authentication token                                     | Required              |
+| iId               | Stream or application id                                     | Required              |
+
+## Request Body Parameters
 
 | **PARAMETER**      | **DESCRIPTION**                                                                                                    | **TYPE**                 |
 |----------------|----------------------------------------------------------------------------------------------------------------|----------------------|
@@ -59,121 +71,158 @@ SmartAssist ' \
 | channels       | The different channels.                                                                                       | array[string], optional |
 |                | For Example, `['rtm', 'voice']`                                                                               |                      |
 | queues         | The list of queue ids in the instance bots.                                                                   | array[string], optional |
-| bots           | The list of instance bot ids in the account.                                                                   | array[string], optional |
 
 ## Sample Response
 
 ```
 {
-    "numResults": 13,
+    "numResults": 3,
     "data": [
         {
-            "sessionId": "66c97ba342aad0ced15fxxxx",
-            "channel": "AgentAssistV2",
-            "sessionStartTime": "2024-08-24T11:50:19",
-            "sessionEndTime": "2024-08-24T11:50:19",
-            "botId": "st-24ccdea9-de4e-5139-923f-883c53ffxxxx",
-            "userId": "u-1a94ad5b-741f-5f58-bf94-74065b30xxxx",
-            "channelSpecificUserId": "65269fe0dd9c622245c1xxxx/agentassist/c-221bca2-cbe8-4996-8216-187e1a69xxxx",
-            "orgId": "o-2d494e9d-b8f6-55d2-844e-a5bc4ca3xxxx",
+            "sessionId": "66f6b83b9147ddd71d70xxxx",
+            "channel": "agentassist",
+            "sessionStartTime": "2024-09-27T13:50:51",
+            "sessionEndTime": "2024-09-27T13:50:51",
+            "botId": "st-e19dd469-90f5-5655-b0b2-858de901xxxx",
+            "userId": "u-2ee7ff98-eef3-5cf7-8f5c-379970c9xxxx",
+            "channelSpecificUserId": "66050d249f946671f64axxxx/agentassist/c-c9d0a98-945b-4b3e-968a-48426134xxxx",
+            "orgId": "o-9569140a-d895-5951-99f4-33fb066bxxxx",
+            "smartStatus": "CLOSED AT BOT",
+            "reason": "",
             "finalStatus": "BotResolved"
         },
         {
-            "conversationId": "c-4c93422-e5d3-4e99-9d3c-e1e30238xxxx",
-            "sessionId": "66c9a55754638e543c37xxxx",
-            "channel": "voice",
+            "conversationId": "c-c9d0a98-945b-4b3e-968a-48426134xxxx",
+            "sessionId": "66f6b828873ee3868e8dxxxx",
+            "channel": "campaign",
             "isVoicemail": "NO",
-            "Direction": "Inbound",
-            "finalStatus": "CLOSED",
-            "botId": "st-24ccdea9-de4e-5139-923f-883c53ffxxxx",
+            "Direction": "Outbound",
+            "finalStatus": "USER ABANDONED",
+            "smartStatus": "ABANDONED WITH AGENT",
+            "Reason": "Default Queue:John Steve",
+            "botId": "st-e19dd469-90f5-5655-b0b2-858de901xxxx",
             "dispositions": [
-                "Resolved"
+                "Requires Supervisor Attention"
             ],
             "dispositionRemarks": [
-                "The customer had an issue with their internet service. They were unable to connect to the internet and were experiencing slow speeds. The customer also mentioned that they had been experiencing this issue for a while. The customer was frustrated with the situation and expressed their dissatisfaction with the service. The bot acknowledged the issue and informed the customer that an agent would be required to assist them further. The conversation ended with the customer being asked to hold while an available agent was found."
+                "The customer initiated a conversation with the agent, who responded with greetings. The conversation was brief and did not involve any specific issues or requests."
             ],
             "metaInfo": {
-                "caller": "+18448735673",
-                "callee": "+16095344861",
-                "callerHost": "50.19.121.248",
-                "userId": "u-df4d1529-ae2d-58e2-8759-f748e232xxxx",
-                "dialedNumber": "+16095344861",
-                "agentTransferConfig": {
-                    "skillsIds": [],
-                    "overrideAgents": false,
-                    "overrideValues": [],
-                    "assistEvents": {
-                        "startEvent": {
-                            "isEnabled": false
-                        }
-                    },
-                    "lastIntentName": "ConnectToAgent",
-                    "automationBotId": "st-06e05f6e-5fd0-58fa-8e16-7e7c33acxxxx",
-                    "accountId": "65269fe0dd9c622245c1xxxx"
-                },
-                "workinghours": {
-                    "workdays": "mon,tue,wed,thu,fri",
-                    "workstart": "8:00 AM",
-                    "workend": "5:00 PM"
-                },
-                "profImage": "no-avatar",
-                "profColour": "#00ff7f",
-                "jTitle": "",
-                "dept": "",
-                "activationStatus": "active",
+                "userId": "u-79edf186-d163-5a5e-bd4f-391d0f4dxxxx",
                 "firstName": "",
                 "lastName": "",
-                "orgId": "o-33749baa-f662-5ae8-b506-4b3bf787xxxx",
-                "_id": "u-df4d1529-ae2d-58e2-8759-f748e232xxxx",
-                "identities": [
-                    {
-                        "val": "cs-ab30569a-ee38-5408-a0ea-43398a16xxxx/259034b7-0d08-487d-a451-aaf5de2dxxxx",
-                        "type": "mapped"
-                    },
-                    {
-                        "val": "65269fe0dd9c622245c1xxxx/korevg/259034b7-0d08-487d-a451-aaf5de2dxxxx",
-                        "type": "mapped"
-                    }
-                ]
+                "caller": "+1234567890",
+                "callee": "+919876543210",
+                "countryCode": "91",
+                "dialedNumber": "+1234567890",
+                "endUserNumber": "+919876543210"
             },
-            "sessionStartTime": "2024-08-24T14:48:15",
-            "sessionEndTime": "2024-08-24T14:50:48",
-            "channelSpecificUserId": "65269fe0dd9c622245c1xxxx/korevg/259034b7-0d08-487d-a451-aaf5de2dxxxx",
-            "userId": "u-df4d1529-ae2d-58e2-8759-f748e232xxxx",
+            "sessionStartTime": "2024-09-27T13:50:32",
+            "sessionEndTime": "2024-09-27T13:51:06",
+            "userId": "u-79edf186-d163-5a5e-bd4f-391d0f4dxxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
-                    "queueId": "qu-77506d0-c529-4a71-a007-cc718742xxxx",
-                    "queueName": "Default Queue",
-                    "EnterTime": "2024-08-24T14:48:16",
+                    "queueId": "qu-18e471e-a77e-4a93-826e-39ae946axxxx",
                     "respondingAgent": {
-                        "agentId": "u-f2f39007-4c2c-54dc-9233-86a63c82xxxx",
-                        "agentNotes": [],
+                        "agentId": "u-fba6a2f9-26fb-5892-9216-bdea3704xxxx",
+                        "agentNotes": [
+                            "The customer initiated a conversation with the agent, who responded with greetings. The conversation was brief and did not involve any specific issues or requests."
+                        ],
                         "destinationType": "AgentSegment",
                         "status": "Answered",
-                        "firstResponseTime": "2024-08-24T14:48:33",
-                        "firstResponseDuration": 0,
-                        "interactionEndTime": "2024-08-24T14:48:53",
-                        "interactionDuration": 20,
+                        "interactionEndTime": "2024-09-27T13:51:06",
+                        "interactionDuration": 34,
+                        "holdDuration": 15,
+                        "afterCallWorkDuration": 4,
+                        "afterCallWorkEndTime": "2024-09-27T13:51:10",
                         "ConsultingAgents": [],
-                        "JoinedUsers": [
-                            {
-                                "agentId": "u-85041b83-16bd-55ca-a95d-24968945xxxx",
-                                "email": "agent.user1@getnada.com",
-                                "name": "detective agent1",
-                                "joinedAt": "2024-08-24T14:48:47",
-                                "end": "2024-08-24T14:48:56"
-                            }
-                        ],
-                        "email": "newaccount@mailinator.com",
-                        "name": "new account",
-                        "acceptedTime": "2024-08-24T14:48:33",
-                        "assignedAt": "2024-08-24T14:48:30"
+                        "JoinedUsers": [],
+                        "email": "mainaccount_staginguxo@mailinator.com",
+                        "name": "John Steve",
+                        "acceptedTime": "2024-09-27T13:50:32"
                     }
                 }
             ]
         },
-    ] 
+        {
+            "conversationId": "c-92a3ca7-8472-4e59-b927-8995e756xxxx",
+            "sessionId": "66f6b3fe3fd2da9b05f7xxxx",
+            "channel": "rtm",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "finalStatus": "CLOSED",
+            "smartStatus": "TERMINATED",
+            "Reason": "NO AGENTS AVAILABLE",
+            "botId": "st-e19dd469-90f5-5655-b0b2-858de901xxxx",
+            "dispositions": [
+                "DROP-OFF"
+            ],
+            "dispositionRemarks": [
+                "-"
+            ],
+            "metaInfo": {
+                "firstName": "Peter",
+                "lastName": "MIller",
+                "phoneNumber": "+919876543210",
+                "profImage": "https://cdn-icons-png.flaticon.com/512/4017/4017991.png",
+                "category": "animations",
+                "identities": [
+                    {
+                        "val": "cs-40189479-21e0-5424-998c-07dce622xxxx/48c25c33-8275-4a66-96f8-0288f9d1701c8980bb96-5a8a-436e-be14-d2ae3f56xxxx",
+                        "type": "mapped"
+                    }
+                ],
+                "agentTransferConfig": {
+                    "skillsIds": [
+                        "660515c38dbf527036d1xxxx"
+                    ],
+                    "overrideAgents": false,
+                    "overrideValues": [],
+                    "assistEvents": {
+                        "startEvent": {
+                            "isEnabled": false,
+                            "botId": "st-e19dd469-90f5-5655-b0b2-858de901xxxx"
+                        }
+                    },
+                    "automationBotId": "st-e19dd469-90f5-5655-b0b2-858de901xxxx",
+                    "lastIntentName": "agent transfer",
+                    "dialog_tone": []
+                },
+                "hostDomain": "https://staging-xo.korebots.com",
+                "os": "Mac OS X",
+                "device": "NA"
+            },
+            "sessionStartTime": "2024-09-27T13:32:46",
+            "sessionEndTime": "2024-09-27T13:42:13",
+            "channelSpecificUserId": "cs-40189479-21e0-5424-998c-07dce622xxxx/48c25c33-8275-4a66-96f8-0288f9d1701c8980bb96-5a8a-436e-be14-d2ae3f56xxxx",
+            "userId": "u-9bc0d7d6-2b3d-5af4-9446-ce9729b6xxxx",
+            "destinations": [
+                {
+                    "destinationType": "QueueEntry",
+                    "queueId": "qu-18e471e-a77e-4a93-826e-39ae946axxxx",
+                    "queueName": "Default Queue",
+                    "EnterTime": "2024-09-27T13:33:01",
+                    "respondingAgent": {
+                        "agentId": "u-fba6a2f9-26fb-5892-9216-bdea3704xxxx",
+                        "agentNotes": [],
+                        "destinationType": "AgentSegment",
+                        "status": "Answered",
+                        "firstResponseTime": "2024-09-27T13:33:12",
+                        "firstResponseDuration": 7,
+                        "interactionEndTime": "2024-09-27T13:42:10",
+                        "interactionDuration": 545,
+                        "ConsultingAgents": [],
+                        "JoinedUsers": [],
+                        "email": "mainaccount_staginguxo@mailinator.com",
+                        "name": "John Steve",
+                        "acceptedTime": "2024-09-27T13:33:05",
+                        "assignedAt": "2024-09-27T13:33:02"
+                    }
+                }
+            ]
+        }
+    ]
 }
 ```
 
@@ -181,34 +230,34 @@ SmartAssist ' \
 
 | FIELD                                 | DESCRIPTION                                                                                                        | TYPE AND FORMAT          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------|--------------------------|
-| conversationId                        | An ID generated by Contact center AI for this conversation. For example, c-7b078889-539d-408d-a3e6-9e6ae05946ba         | type-prefixed-guid       |
+| conversationId                        | An ID generated by Contact center AI for this conversation. For example, c-7b078889-539d-408d-a3e6-9e6ae05981abcd         | type-prefixed-guid       |
 | sessionId                             | A bot-generated ID for this conversation. For example, 63bd199c197b3646dadee11b                                     | internal value           |
 | channel                               | Name of the channel. For example, Web / Mobile Client                                                               | character string         |
 | finalStatus                           | Completion status of the conversation. For example, CLOSED                                                         | character string         |
-| botId                                 | An ID of the bot. It is also called Stream ID. For example, st-ae8470ab-8ecb-51fb-8e13-c87dc66f4ae4                | type-prefixed-guid       |
+| appId                                 | An ID of the bot. It is also called iId. For example, st-ae8470ab-8ecb-51fb-8e13-c87dc66f1klmn                | type-prefixed-guid       |
 | dispositions                          | Disposition codes. For example, [ “ESCALATED” ]                                                                     | array of strings         |
 | dispositionRemarks                    | Final remarks from the agent. For example, [” CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent.”] | array of strings |
 | metaInfo                              | Custom information, set by the automation.                                                                          | object                   |
-| sessionStartTime                      | Start time of the session. For example, 2023/01/10 2:25:54                                                         | YYYY-MM-DDTHH:mm:SS      |
-| sessionEndTime                        | End time of the session. For example, 2023/01/10 2:25:54                                                           | YYYY-MM-DDTHH:mm:SS      |
+| sessionStartTime                      | Start time of the session. For example, 2023/01/10 2:25:54                                                         | YYYY-MM-DDTHH: mm:SS      |
+| sessionEndTime                        | End time of the session. For example, 2023/01/10 2:25:54                                                           | YYYY-MM-DDTHH: mm:SS      |
 | channelSpecificUserId                 | user ID passed by the channel.                                                                                      | no specific format       |
-| userId                                | Contact Center AI's own generated user ID. For example, u-8413fd99-4ded-5f6d-8c1a-176dc66e526                             | type-prefixed-guid       |
+| userId                                | Contact Center AI's own generated user ID. For example, u-8413fd99-4ded-5f6d-8c1a-176dc66x987                             | type-prefixed-guid       |
 | destinations                          | One object for each Queue or Agent that the call was transferred to.                                                | array of objects         |
 | destination.destinationType           | Destination for any transfer – to distinguish a direct-to-agent transfer from a transfer to queue.                 | QueueEntry \| AgentSegment |
 | csatScore                             | CSAT score assigned by the customer (1 – 5). For example, 3                                                         | integer                  |
 | csatFeedback                          | Survey comment entered by the customer.                                                                            | string                   |
-| QueueEntry.queueId                    | Contact Center AI's internal ID for the Queue. For example, qu-123dbe9-c752-464d-a9be-1d0e43b670a5                        | type-prefixed-guid       |
+| QueueEntry.queueId                    | Contact Center AI's internal ID for the Queue. For example, qu-123dbe9-c752-464d-a9be-1d0e43b669a4                        | type-prefixed-guid       |
 | QueueEntry.queueName                  | Name of the queue. For example, Residential – Sales                                                                | character string         |
-| QueueEntry.EnterTime                  | The time at which this conversation entered this queue. For example, 2023/01/10 2:25:54                           | YYYY-MM-DDTHH:mm:SS      |
+| QueueEntry.EnterTime                  | The time at which this conversation entered this queue. For example, 2023/01/10 2:25:54                           | YYYY-MM-DDTHH: mm:SS      |
 | QueueEntry.respondingAgent            | Details of the responding agent.                                                                                   | an AgentSegment object   |
-| QueueEntry.respondingAgent.agentId    | Contact Center AI's internal ID for the agent. For example, u-f3a11f62-57d7-5a9f-a071-787650b17b34                       | type-prefixed-guid       |
+| QueueEntry.respondingAgent.agentId    | Contact Center AI's internal ID for the agent. For example, u-f3a11f62-57d7-5a9f-a071-787650b14b11                       | type-prefixed-guid       |
 | QueueEntry.respondingAgent.name       | The agent’s name. For example, Jared Smith                                                                         | character string         |
 | QueueEntry.respondingAgent.agentNotes | Notes from each agent. For example, [“CUSTOMER has a problem with Products and Sales. She needs an agent to help her.”] | array of strings |
 | QueueEntry.respondingAgent.destinationType | A constant value.                                                                                              | AgentSegment             |
 | QueueEntry.respondingAgent.email      | The agent’s email address. For example, jared.smith@example.com                                                    | full-email-id@employer.com |
-| QueueEntry.respondingAgent.assignedAt | The time at which the Queue assigned this contact to this Agent. For example, 2023/01/10 2:25:54                   | YYYY-MM-DDTHH:mm:SS      |
-| QueueEntry.respondingAgent.acceptedTime | The time at which this Agent accepted this contact. For example, 2023/01/10 2:25:54                             | YYYY-MM-DDTHH:mm:SS      |
+| QueueEntry.respondingAgent.assignedAt | The time at which the Queue assigned this contact to this Agent. For example, 2023/01/10 2:25:54                   | YYYY-MM-DDTHH: mm:SS      |
+| QueueEntry.respondingAgent.acceptedTime | The time at which this Agent accepted this contact. For example, 2023/01/10 2:25:54                             | YYYY-MM-DDTHH: mm:SS      |
 | QueueEntry.respondingAgent.status    | Status of the conversation with this respondingAgent.                                                              | Answered                 |
-| QueueEntry.respondingAgent.firstResponseTime | The time at which this Agent first responded. For example, 2023/01/10 2:25:54                                | YYYY-MM-DDTHH:mm:SS      |
+| QueueEntry.respondingAgent.firstResponseTime | The time at which this Agent first responded. For example, 2023/01/10 2:25:54                                | YYYY-MM-DDTHH: mm:SS      |
 | QueueEntry.respondingAgent.firstResponseDuration | Duration in seconds, from the time of Agent’s acceptance to the time of his first response. For example, 20 | integer                  |
-| QueueEntry.respondingAgent.interactionEndTime | The time at which the interaction with this respondingAgent ended. For example, 2023/01/10 2:25:54          | YYYY-MM-DDTHH:mm:
+| QueueEntry.respondingAgent.interactionEndTime | The time at which the interaction with this respondingAgent ended. For example, 2023/01/10 2:25:54          | YYYY-MM-DDTHH: mm:SS

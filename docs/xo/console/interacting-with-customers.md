@@ -815,18 +815,42 @@ If ACW is disabled the conversation disappears from the agent console at the end
 
 ### Dispositions
 
-To set the disposition and close the conversation, follow these steps:
+A Disposition Code is a short label assigned to the outcome of an interaction. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes).
 
-* Select the **Conversation** in your tray.
-* You must select a **Status** from the following available options:
-    * **Resolved**: Select when the customer query is resolved.
-    * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
-    * **Pending**: Select if the query is still pending resolution.
-    * **Custom**: Administrators can [create custom disposition codes ](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
-* Optionally, type a **Description** of your reason for selecting the disposition.
-* Click **_Close_** to close the conversation.
+Dispositions can be assigned in two ways:
 
-# Information Provided to Agents and Customers During Live Interactions
+1. During the conversation (Dynamic):
+    1. Click **+ Add Disposition**.  
+        <img src="../images/add-disposition.png" alt="+ Add Disposition" title="+ Add Disposition" style="border: 1px solid gray; zoom:80%;">
+
+    2. Select a disposition from the dropdown menu and click **Save**.  
+        <img src="../images/save-disposition.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:80%;">
+
+    3. The disposition is added. You can either **Transfer** or **End** the conversation.  
+        <img src="../images/disposition-added.png" alt="Disposition Added" title="Disposition Added" style="border: 1px solid gray; zoom:80%;">
+
+    4. When you click **End**, a confirmation message is displayed. Click **Yes** to confirm.  
+        <img src="../images/end-interaction.png" alt="End Interaction" title="End Interaction" style="border: 1px solid gray; zoom:80%;">
+
+    5. The **Disposition & Notes** window will appear, and you can make any necessary changes. Click **Close**, and the conversation will close with the disposition attached.  
+        <img src="../images/disposition-and-notes.png" alt="Disposition and Notes" title="Disposition and Notes" style="border: 1px solid gray; zoom:80%;">
+
+    !!! Note
+
+        If the disposition and description are not completed during the After Call Work (ACW) period, the system automatically closes the conversation with a system-generated disposition.
+
+2. At the end of the conversation:
+
+    * Select the **Conversation** in your tray.
+    * You must select a **Status** from the following available options:
+        * **Resolved**: Select when the customer query is resolved.
+        * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
+        * **Pending**: Select if the query is still pending resolution.
+        * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
+    * Optionally, type a **Description** of your reason for selecting the disposition.
+    * Click **_Close_** to close the conversation.
+
+## Information Provided to Agents and Customers During Live Interactions
 
 You can interact with customers within the **Live Interaction** area of the Agent Console.  
 <img src="../images/information-during-live-interaction.png" alt="Information Provided to Agents during Live Interactions" title="Information Provided to Agents during Live Interactions" style="border: 1px solid gray; zoom:80%;">
@@ -862,6 +886,7 @@ Do the following to enable the typing indicator for chat conversations:
 
 1. To integrate Kore.ai bots chat capability into custom applications, install WebSDK 2.0 on your server. WebSDK 2.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11) for additional information on installing WebSDK 2.0.
 2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 2.0. The Agent Desktop plugin allows the user to interact with the agent through the bot and supports the following features:
+
     * Audio Calling
     * Video Calling
     * Co-browse

@@ -69,7 +69,8 @@ See <a href="../api-introduction#generating-the-jwt-token">How to generate the J
    </td>
    <td>Required
    </td>
-   <td>Unique Identifier of your application. To view your App ID, go to the <strong>Dev Tools </strong>under <strong>App Settings</strong> and open your <strong>JWT App</strong>. 
+   <td>Unique Identifier of your application. Bot ID corresponds to the <strong>appID</strong> for your application. To view your App ID, go to the <strong>Dev Tools</strong> under <strong>App Settings</strong>. You can view the AppID under the API scopes.
+
    </td>
   </tr>
 </table>

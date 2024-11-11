@@ -2,21 +2,90 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.7.0 November 3, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Widget Enhancements
+
+#### Extended Language Support for Localization
+
+The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
+
+* HE - Hebrew
+* ZH_TW - Traditional Chinese
+* PT - Portuguese (Brazil)
+* ID - Indonesian
+* RU - Russian
+* TR - Turkish
+* VI - Vietnamese
+* PL - Polish
+* FA - Persian
+* UR - Urdu
+
+#### Enhanced Access Control for Search AI
+
+Agent AI now allows restricted access for targeted users by configuring up to three Search AI apps with the following scopes: 
+
+* Internal Answers: Access to internal sources only.
+* External Answers: Access to external sources only.
+* Auto-Suggestions: Access to auto-suggestions (prompts) only.
+
+**Configuration rules**:
+
+* Choose either Internal Answers or External Answers with Auto-Suggestions.
+* Internal and External Answers cannot be combined in one app.
+* Auto-Suggestions can be configured for only one Search AI app.
+* Knowledge AI settings are available only when selecting either Internal or External Answers.
+
+#### Decommissioning of Agent AI Widget v2
+
+The widget v2 will be decommissioned by the end of November 2024. A banner has been added in the Voice and Chat channels to notify users that Agent AI widget v2 will be decommissioned. Please upgrade to v3 for continued support.
+
+### Integration Enhancements
+
+#### Summary Support for NICE MAX Desktop
+
+Agents using NICE MAX Desktop now receive a concise summary at the end of a chat or voice session. This summary highlights key points and identifies action items, allowing agents to review important information quickly. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/integration/nice-max/nice-max-desktop-chat-and-voice/){:target="_blank"}.
+
+#### Multibot Support for Agent AI Voice in Genesys
+
+Previously limited to a single bot and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
+
+<hr>
+
+## v11.6.1 October 21, 2024
+
+<u> Patch Release </u>
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Enhanced NICE MAX Desktop Integration
+
+The Agent AI integration with NICE CX MAX Desktop now supports passing custom data to the Agent AI Widget and is compatible with XO v11. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/integration/nice-max/nice-max-desktop-chat-and-voice/){:target="_blank"}
+
+### Enhanced Salesforce-NICE CTI Integration
+
+The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI features, including automation, transcription, intent identification, Agent Coaching, Agent Playbooks, Sentiment Analysis, and end-of-call summaries. This results in improved personalization and operational efficiency.
+
+<hr>
+
 ## v11.6.0 September 28, 2024
 <u> Minor Release </u>
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### **“Thumbs-down”/Negative Feedback Reasons Comment Box Updated**
+### “Thumbs-down”/Negative Feedback Reasons Comment Box Updated
 
 The placeholder text in the comment box is now labeled “Tell us more…” instead of “Add additional comments here.”  
 <img src="../images/negative-feedback-reason-comment-box.png" alt="negative-feedback-reason-comment-box" title="negative-feedback-reason-comment-box" style="border: 1px solid gray; zoom:80%;">
 
-### **Summarization in Spanish**
+### Summarization in Spanish
 
 For Spanish conversations, auto-summarization is now available in the Spanish language.
 
-### **Error Message Configuration**
+### Error Message Configuration
 
 The error message display pattern in the Agent AI widget has been updated to help agents view and understand issues without unnecessary redundancy.
 
@@ -27,12 +96,12 @@ You can configure error messages during [Use Case creation](https://docs.kore.ai
 When a single error message is triggered during dialog task execution, the **Assist** tab displays the error message and the number of occurrences. If the same error message is triggered again, the message does not repeat, but the number of occurrences increases.  
 <img src="../images/single-error-message.png" alt="single-error-message" title="single-error-message" style="border: 1px solid gray; zoom:80%;">
 
-**Multiple Error Message**
+**Multiple Error MessageS**
 
 When multiple (different) error messages are triggered, they are all displayed in the **Assist** tab, with a count indicating the total number of error messages.  
 <img src="../images/multiple-error-messages.png" alt="multiple-error-messages" title="multiple-error-messages" style="border: 1px solid gray; zoom:80%;">
 
-### **Enhanced Raw Data API**
+### Enhanced Raw Data API
 
 The [Raw Data API](https://docs.kore.ai/agentassist/api/raw-data-api-v2/){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
 

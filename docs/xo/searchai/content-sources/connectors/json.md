@@ -4,7 +4,7 @@ JSON Connector enables the ingestion of chunked content directly into the Search
 
 The content can be added to the application as one or more files containing chunked content in JSON format. Each file should have an array of JSON objects where each object corresponds to a chunk. Hence, it is mandatory that the keys of the object exactly match the chunk fields in the application. 
 
-# File Format
+## File Format
 
 The structured content can be uploaded to the application using a JSON file.
 
@@ -157,7 +157,7 @@ Field name
 
 Refer to the sample file for reference. 
 
-# Configuration Steps
+## Configuration Steps
 
 Go to the **Connectors page** under **Content**. Add the **JSON Connector**. 
 
