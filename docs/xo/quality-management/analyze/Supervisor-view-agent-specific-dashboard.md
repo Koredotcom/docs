@@ -72,7 +72,7 @@ The Coaching Assignments include the following items:
 
     * **Start Now**: Number of interactions clicked through for that assignment. 
     
-    !!! Note
+    !!! note
             
         This option is only visible to the supervisors.
        
