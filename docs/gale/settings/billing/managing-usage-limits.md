@@ -1,11 +1,8 @@
-# Managing Usage Limits 
-
-
-## Exhaustion of Model Credits and Agent Runs
+# Managing Usage Limits
 
 When users create an account with GALE, they receive free credits— including 75 model credits and 10,000 agent runs by default. The model credits are used for model inference and setting guardrails, while agent runs are consumed when inferring agents. Once the free credits are fully exhausted, users will no longer be able to perform these actions . To continue using GALE’s services after the free credits are exhausted, users must add credits to their account by contacting GALE support at galesupport@kore.com.
 
-**Exhaustion alerts:**
+## Exhaustion alerts for Model Credits and Agent Runs:
 
 GALE provides multiple alert and warning notifications to inform users when their credits are running low or have expired. These notifications are crucial for:
 
@@ -13,15 +10,16 @@ GALE provides multiple alert and warning notifications to inform users when thei
 * Allowing proactive management to prevent service disruptions
 * Reminding users to add credits in advance to ensure uninterrupted access to GALE's features
 
-### **Notification Methods:**
+### Notification Methods
 
-* **Banner Alerts:** A banner appears at the top of the page in the application to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time. 
-For example, "*Your model credits and agent runs are low, and fine-tuning is disabled. Please contact galesupport@kore.com for uninterrupted service.*"
+* **Banner Alerts:** A banner appears at the top of the page in the application to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time.
 
-    Banners will appear at the top of the page in the following cases:
-    * **Free credits expired**: Users will see a fixed top banner prompting them to upgrade their plan.
-    * **Model credits/agent runs expired**: Users will see a fixed top banner prompting them to either upgrade or top-up their current plan.
-    * **Model credits/agent runs low**: Users will see a removable banner encouraging them to top-up or upgrade their plan. This banner can be removed, but will reappear upon page refresh. 
+    Banners will appear at the top of the page in the following cases:  
+* **Free credits expired**: Users will see a fixed top banner prompting them to upgrade their plan.
+* **Model credits/agent runs expired**: Users will see a fixed top banner prompting them to either upgrade or top-up their current plan.
+* **Model credits/agent runs low**: Users will see a removable banner encouraging them to top-up or upgrade their plan. This banner can be removed, but will reappear upon page refresh.
+
+    For example, *“Your model credits and agent runs are low, and fine-tuning is disabled. Please contact galesupport@kore.com for uninterrupted service.”*
 
 * **Email Notifications:** The system automatically sends email notifications to users when their credit levels fall below a specified threshold, including warnings for both model credits and agent runs. Emails will be sent at 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These emails include instructions on the next steps to resolve the issue, such as adding more credits byor  contacting GALE support.
 

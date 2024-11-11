@@ -1,5 +1,3 @@
-# Billing and Usage
-
 # About Billing
 
 The Billing section helps you monitor and analyze your GALE platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across agents, models, and guardrails to make data-driven decisions about your resource utilization.
@@ -14,7 +12,7 @@ Steps to access the Usage page:
 
     The Usage dashboard is displayed.
 
- <img src="../billing/images/accessing_billing.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/accessing_billing.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
 
 The Usage page displays the following tabs for billing and usage:
 
@@ -39,17 +37,15 @@ The Usage page displays the following tabs for billing and usage:
 
 # Usage Overview
 
-The Overview tab summarizes expenses and usage patterns across your agents and models.
-
-The following usage information is displayed on the tab:
+The Overview tab summarizes expenses and usage patterns across your agents and models. The following usage information is displayed on the tab:
 
 * **Runs**: This field indicates the usage of agent runs, showing the proportion of capacity consumed compared to the total available runs. For example, in the below image, 301 out of 10,000 available agent runs have been utilized, indicating that 3.01% of the total capacity has been consumed.
 * **Model Credits**: This field displays the total model credit usage, showing the proportion of model credits used across all models compared to the total available credits. It also includes the credits used to host guardrails. For example, in the image below, 12,899 credits have been used out of a total allocation of 13,325 credits, indicating that 96.80% of your available model credits have been utilized.
 * **Usage trend**: It visually represents **Agent runs** and **Model credits** consumption over time. Use the Calendar feature to see the changes over time, for example, daily, weekly, monthly, or any custom dates.
 
- <img src="../billing/images/overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:80%;">
 
- <img src="../billing/images/usagetrend.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/usagetrend.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
 
 
 # Agents Usage
@@ -58,7 +54,7 @@ The Agents tab displays a comprehensive list of agents associated with the accou
 
 The following usage information is displayed on the tab:
 
-* **Total Agents**:** The total number of agents in the account.
+* **Total Agents**: The total number of agents in the account.
 * **Total runs**: The total number of runs by all the agents.
 * **Agent name**: The name assigned to the agent.
 * **Runs**: The number of times the agent was inferred. 
@@ -69,7 +65,7 @@ The following usage information is displayed on the tab:
  <img src="../billing/images/agents.png" alt="Billing Agents tab" title="Billing Agents tab" style="border: 1px solid gray; zoom:80%;">
 
 
- # Models Usage
+# Models Usage
 
 The Models tab displays a comprehensive list of open-source models in the account and the computational cost of storing, fine-tuning, and hosting each model.
 
@@ -79,11 +75,9 @@ The following usage information is displayed on the tab:
 
 * **Total models**: The total number of models in the account.
 * **Total credits**: The total credits used by all the models.
-* **Fine-tuning credits**: The number of credits used for fine-tuning the models. \
-The number of credits are based on factors like the size of the training data, the model complexity, the number of training epochs, the type of hardware used, and other parameters.
+* **Fine-tuning credits**: The number of credits used for fine-tuning the models. The number of credits are based on factors like the size of the training data, the model complexity, the number of training epochs, the type of hardware used, and other parameters.
 * **Hosting credits**: The number of credits associated with hosting all the models. The total number of credits used to cover the cost of deploying and hosting models on GPUs.
-
-    When you deploy a model on powerful GPUs, each GPU instance is considered a "replica", which requires the allocation of hosting credits. For example, if your model runs on one A100 GPU, that counts as one replica and consumes a specific amount of hosting credits. If demand increases and you need to deploy a second A100 GPU to handle additional user requests, you will now have two replicas and be charged for both, requiring twice the number of hosting credits.
+When you deploy a model on powerful GPUs, each GPU instance is considered a "replica", which requires the allocation of hosting credits. For example, if your model runs on one A100 GPU, that counts as one replica and consumes a specific amount of hosting credits. If demand increases and you need to deploy a second A100 GPU to handle additional user requests, you will now have two replicas and be charged for both, requiring twice the number of hosting credits.
 
 * **Model name**: The name of the model.
 * **Model type**: The type of model used: Fine-tuned or Base.
@@ -102,7 +96,7 @@ The following information is displayed:
 * **Fine-tuning**: The number of credits used to fine-tune the model.
 * **Total**: The total number of credits for hosting and fine-tuning the model.
 
-<img src="../billing/images/models_right_panel_detailed.png" alt="Models detailed information" title="Models detailed information" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/models_right_panel_detailed.png" alt="Models detailed information" title="Models detailed information" style="border: 1px solid gray; zoom:80%;">
 
 
 # Guardrails Usage
@@ -111,11 +105,11 @@ The Guardrails tab displays the list of guardrails used and the charges related 
 
 The guardrail usage is deducted from the Model credits shown in the Overview tab, indicating that the available credits for the model will decrease based on the cost of using the guardrails.
 
-<img src="../billing/images/guardrails.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/guardrails.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:80%;">
 
 The following usage information is displayed on the Guardrails tab:
 
-* **Total guardrails**:** The total number of guardrails used in the account.
+* **Total guardrails**: The total number of guardrails used in the account.
 * **Total credits**: The total credits used by the guardrails.
 * **Time**: The total duration for which all the guardrails were deployed.
 * **Name**: The name of the guardrail/scanner.
@@ -130,12 +124,16 @@ Clicking each row on the Guardrail tab opens a panel on the right that displays 
 
 The following information is displayed:
 
-* Name of the guardrail
-* **Hardware**: The type of CPUs used, the number of CPUs used, the duration for which the CPUs are being used, and the number of credits used. 
-Note: Guardrails are hosted on smaller models. These smaller models do not need a lot of processing power, so they can be effectively managed by less powerful CPUs. Using CPUs is more economical, and they have enough capability to run the smaller models efficiently.
+* The name of the guardrail
+* **Hardware**: The type of CPUs used, the number of CPUs used, the duration for which the CPUs are being used, and the number of credits used.
 * **Total**: The total number of credits used for the hardware.
 
-<img src="../billing/images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
+!!! note
+
+    Guardrails are hosted on smaller models. These smaller models do not need a lot of processing power, so they can be effectively managed by less powerful CPUs. Using CPUs is more economical, and they have enough capability to run the smaller models efficiently.
+
+
+<img src="../images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
 
 
 
