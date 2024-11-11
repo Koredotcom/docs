@@ -4,7 +4,8 @@ The AI-Assisted Manual Audit feature streamlines interaction evaluation by autom
 
 Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../ai-assist-manual-edit/images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
-Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
+
+You can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../ai-assist-manual-edit/images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Details
@@ -21,13 +22,14 @@ This section displays key information about the agent and the interaction:
 This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
 This section highlights speech metric violations that occurred during the call. Examples include Cross Talk, Dead Air, and Speaking Rate Violation.
 
-Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction.
+Each violation is displayed with a timestamp, allowing you to navigate directly to the point in the recording where the violation occurred. It enables quick identification and review of problematic areas in the interaction.  
+<img src="../ai-assist-manual-edit/images/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
 
 !!! Note
 
     Violations are applicable only for voice channel interactions, not chat.
 
-<img src="../ai-assist-manual-edit/images/ai-assist-violation.png" alt="Violations" title="Violations" style="border: 1px solid gray; zoom:30%;">
+
 
 ## Omission
 
@@ -36,8 +38,7 @@ This section highlights instances where the agent failed to follow configured pl
 * Omitted playbook steps (for playbook metrics)
 * Omitted dialog tasks (for dialog metrics)
 
-If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section will not be displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
-
+If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section will not be displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.  
 <img src="../ai-assist-manual-edit/images/ai-assist-omission.png" alt="Omission" title="Omission" style="border: 1px solid gray; zoom:80%;">
 
 ## Playbook
@@ -50,8 +51,7 @@ This section of the interaction audit screen enables evaluators to assess adhere
 * Observed adherence within the interaction
 * Missing steps (Playbook steps not completed during the interaction)
 
-This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.
-  
+This comprehensive view is presented in a drop-down format, providing evaluators full visibility of playbook adherence. It helps identify gaps between expected and actual performance, facilitating targeted feedback and improvement.  
 <img src="../ai-assist-manual-edit/images/ai-assist-playbook.png" alt="Playbook" title="Playbook" style="border: 1px solid gray; zoom:50%;">
 
 ## Comments
@@ -61,14 +61,12 @@ This section displays all comments created by an auditor during the evaluation p
 
 Each comment entry is clickable. When a comment is selected, the system automatically highlights the corresponding question metric, providing context for the feedback.
 
-Clicking a comment also navigates the user directly to the relevant part of the transcript and recording. It enables quick review and easy correlation between auditor comments and specific moments in the interaction, significantly enhancing the efficiency of the quality assurance process.
-
+Clicking a comment also navigates the user directly to the relevant part of the transcript and recording. It enables quick review and easy correlation between auditor comments and specific moments in the interaction, significantly enhancing the efficiency of the quality assurance process.  
 <img src="../ai-assist-manual-edit/images/ai-assist-comments.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:80%;">
 
 ## Search
 
-This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.  
-
+This section provides a keyword search option across the entire transcript. You can quickly locate specific information or topics within the interaction by entering relevant keywords. It allows evaluators to efficiently find and assess particular points of interest in the conversation.
 <img src="../ai-assist-manual-edit/images/ai-assist-search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:80%;">
 
 ## Audit
@@ -106,8 +104,7 @@ Key features include:
   * Submit button is enabled only for interactions assigned to the user.
   * All By Question metrics must be answered before submission.
 
-This comprehensive audit panel facilitates efficient evaluation and ensures thorough review of each interaction.
-
+This comprehensive audit panel facilitates efficient evaluation and ensures thorough review of each interaction.  
 <img src="../ai-assist-manual-edit/images/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
 
 In the Chat History - Audit section, the evaluation form items determine performance levels through assigned scores, each with specific weights for the questions. The supervisor or auditor's role is to evaluate each question (using the options available in the evaluation form: **Yes/No/NA**). This process enables clear identification of strengths and areas for improvement, facilitating better coaching. Additionally, auditors can review the conversation for each question.
@@ -132,14 +129,12 @@ In the Chat History - Audit section, the evaluation form items determine perform
 
   For example, 
 
-  **N/A**: If the threshold is 60% and the agent has not met the configured threshold, it will be marked as N/A, and the question badge indicates gray color.
-
+  **N/A**: If the threshold is 60% and the agent has not met the configured threshold, it will be marked as N/A, and the question badge indicates gray color.  
   <img src="../ai-assist-manual-edit/images/ai-assist-score-metrics.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
 
 ## Bookmarks
 
 This section allows you to tag the agent interaction with different bookmarks. Bookmarks help to tag or group similar interactions together. Bookmarks are user-specific (a bookmark created by one user cannot be accessed by another) and must be enabled and created in the Settings section. Users can bookmark interactions from various places, including Interactions, Audit Allocations, and Settings, making it easy to add an interaction to a configured bookmark.  
-
 <img src="../ai-assist-manual-edit/images/ai-assist-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
 
 ## Submit
@@ -147,5 +142,5 @@ This section allows you to tag the agent interaction with different bookmarks. B
 By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 By default, this option is disabled unless the interaction is assigned for audit through Audit Allocations. Once the Supervisor or Auditor clicks **Submit**, the Supervisor’s responses for the interaction’s evaluations are recorded, and the audit score is computed based on the Supervisor’s responses.
 
-For more information, see [Audit Allocation](../analyze/conversation-mining.md#audit-allocations).  
+For more information, see [Audit Allocation](../analyze/conversation-mining.md#audit-allocations).    
 <img src="../ai-assist-manual-edit/images/ai-assist-submit.png" alt="Submit" title="Submit" style="border: 1px solid gray; zoom:80%;">
