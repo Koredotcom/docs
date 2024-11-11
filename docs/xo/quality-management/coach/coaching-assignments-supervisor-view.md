@@ -2,7 +2,7 @@
 
 This feature assists supervisors in analyzing agent performance and identifying interactions that need targeted coaching. It provides a view of coaching assignments for a specific agent within the agent dashboard. This shows all the assigned coaching tasks of agents.
 
-Users can view and add the new **Coaching Assignments** in the following ways:
+You can view and add the new **Coaching Assignments** in the following ways:
 
 **Step 1:**
 
