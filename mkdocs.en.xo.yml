@@ -506,6 +506,8 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
+        - NICE MAX:
+         - NICE MAX Desktop: contactcenter/integrations/nice-max/nice-max-desktop-chat-and-voice.md
         - Kore Voice Automation:
           - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
           - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
