@@ -62,7 +62,7 @@ Displays the total number of audits (progress score) pending and completed.
 
 * **Completed**: Number of assigned interactions that are audited.
 * **Pending**: Number of interactions assigned for audit and not yet audited.
-* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** > **Audit Allocation** feature, where you can easily start evaluating interactions.  
+* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
 For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining/#audit-allocations).
