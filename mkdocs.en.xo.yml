@@ -110,7 +110,7 @@ markdown_extensions:
 copyright: |
   © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
-  - Home : home.md
+  - Home: home.md
   - Platform:
     - Overview: getting-started/about-xo-platform.md    
     - Getting Started:
@@ -143,7 +143,14 @@ nav:
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
-            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/setup-kore-voice-gateway.md
+            - Kore.ai Voice Gateway: 
+              - Configure the Gateway: channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md
+              - Advanced Topics:
+                - Call Control Parameters: channels/kore.ai-voice-gateway/call-control-parameters.md
+                - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
+                - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
+                - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
+                - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -321,8 +328,9 @@ nav:
             - Workbench Simulator: searchai/workbench/simulation.md
         - Vector Configuration: searchai/index-configuration.md
     - Configuration:
+        - Retrieval Strategies: searchai/retrieval.md
         - Business Rules: searchai/business-rules.md
-        - Answer Configuration: searchai/answer-configuration.md
+        - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
@@ -371,28 +379,30 @@ nav:
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
       - Overview: quality-management/about-quality-management.md
-      - Setup Guide: quality-management/setup-guide.md 
+      - Setup Guide: quality-management/setup-guide.md
+      - QM Sign Up Process: quality-management/qm-sign-up-process.md
       - Analyze:
         - Dashboard: 
-          - Overview: quality-management/analyze/dashboard.md
-          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
-          - Agent View (My Dashboard): quality-management/analyze/agent-dashboard-agent-view.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md        
+          - Dashboard Overview: quality-management/analyze/dashboard.md
+          - Agent Dashbaord (Supervisor View): quality-management/analyze/agent-dashboard-supervisor-view.md
+          - My Dashboard (Agent View): quality-management/analyze/agent-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
-        - Coaching Monitor: quality-management/coach/coaching-monitor.md
-        - Coaching Assignments: 
-          - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
-          - Agent View: quality-management/coach/coaching-assignments-agent-view.md         
+          - Coaching Assignments: 
+            - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
+            - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
+            - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
-      - Settings: quality-management/configure/settings.md        
+        - Agent Scorecards: quality-management/configure/agent-scorecards.md
+        - Settings: quality-management/configure/settings.md        
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:

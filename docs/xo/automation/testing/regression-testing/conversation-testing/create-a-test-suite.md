@@ -19,20 +19,53 @@ The option to record the test suite captures the metadata in the background whic
 2. Click the **Record** option to start recording the new test.  
 <img src="../images/ct-create-test-suite-record1.png" alt="Start recording New Test" title="Start recording New Test" style="border: 1px solid gray;zoom:50%;"/>
 
-3. In the displayed pop-up, click **Proceed** to record the test with the On-Connect event or click the **Skip On-Connect** button.  
-<img src="../images/ct-create-test-suite-record2-window.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;zoom:50%;"/>   
+3. In the pop-up displayed, Choose whether to start the recording with the On Connect event included.  
   
     !!! Note
     
-        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      
-        
-4. The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click **Stop** to stop the recording.  
+        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you select "No", the On-connect message does not get added as a test case. If you select "Yes", then the On-connect message is created as a separate test case.     
+
+4. Define the Pre-processor Script to control preconditions during conversation testing. [Learn more](../conversation-testing/create-a-test-suite.md#pre-processor-script). 
+
+5. Click **Proceed** to start the test recording.  
+<img src="../images/ct-create-test-suite-record2-window.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;zoom:50%;"/>   
+
+6. The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click **Stop** to stop the recording.  
 <img src="../images/ct-create-test-suite-record-chat.png" alt="Chat Recording Status" title="Chat Recording Status" style="border: 1px solid gray;zoom:50%;"/>  
   
     !!! Note
 
         If there is an error while recording due to any limitation set on the platform, it is displayed on the page.
 
+
+#### Pre-processor Script
+
+The Pre-Processor Script allows users to manipulate context data and inject custom data before and during test execution. Context data is preset during conversation recording, which can sometimes lead to unintended workflow paths during validation and cause false negatives. Additionally, users may need to test scenarios requiring custom data from external systems.
+To address these needs, users can run custom scripts at the recording, validation, and execution phases of conversation testing, enabling them to:
+
+* **Modify Existing Context Data**: Adjust or reset context data to ensure intended workflow paths.
+* **Set Custom Context Data**: Define new context data for specific scenarios, enhancing test accuracy and coverage.
+* **Inject External Custom Data**: Simulate inputs from external systems for real-world test cases.
+
+Here are the key session variables that can be set:
+
+* EnterpriseContext
+* BotContext
+* UserContext
+* UserSession
+* BotUserSession
+* Opts
+
+**Use Case: Managing New vs. Returning Users in Conversation Testing**
+
+In conversation testing, the **Pre-Processor Script** is crucial for handling scenarios where user status (new vs. returning) affects session behavior, leading to potential validation issues.
+
+When recording a test case, the user is treated as a **new user** with no session data. During validation, however, the user may be recognized as a **returning user**, introducing session variables that change the conversation flow and potentially cause validation failures.
+
+The Pre-Processor Script allows users to:
+
+1. **Reset or Set Session Variables**: Adjust session data as needed to ensure consistent **New User** or **Returning User** states.
+2. **Simulate Different User Conditions**: Accurately test new and returning user flows by managing session variables to reflect the correct state.
 
 #### Generated User Response Suggestions
 

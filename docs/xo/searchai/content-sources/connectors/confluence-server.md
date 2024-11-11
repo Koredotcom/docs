@@ -72,7 +72,7 @@ Click **Connect** to initiate the connector authorization process. This complete
 
 ### Content Ingestion
 
-Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Server or select specific content. 
+Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Server or select specific content.  Note that if there are any attachments to the pages being ingested into the application, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
 
 ![Content Synchronization](../images/confluenceserver/content-synchronization.png "Content Synchronization")
 
