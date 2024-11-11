@@ -110,7 +110,7 @@ Steps to edit the Web/Mobile Client channel:
 
 ## Virtual Assistant Theme & Design
 
-The Theme and Design feature allows platform users to easily customize various aspects of VA interfaces, such as welcome text, buttons, colors, chat windows, and sound themes. This helps create engaging and user-friendly bot experiences aligned with specific design requirements. A real-time preview pane shows changes before deployment for quick adjustments. While the default light and dark themes cannot be edited, users can create and modify copies to make new themes. The light theme is used by default.
+The Theme and Design feature allows platform users to easily customize various aspects of VA interfaces, such as welcome text, buttons, colors, chat windows, and sound themes. This helps create engaging and user-friendly bot experiences aligned with specific design requirements. A real-time preview pane shows changes before deployment for quick adjustments. While the default light and dark themes cannot be edited, users can create a new themes using the templates themes. The light theme is used by default.
 
 Steps to change the theme and design:
 
@@ -121,32 +121,25 @@ Steps to change the theme and design:
 3. On the Configure tab, click **Edit** to change the current theme.  
 ![alt_text](images/sdke6.png  )
 
-4. The theme editor page displays all the default and created themes, if any. 
-    ![alt_text](images/sdke3.png  )
+4. The theme editor page displays all the templates and created themes, if any. 
+    <img src="../images/t1.png" alt="Theme Editor" title="Theme Editor" style="border: 1px solid gray; zoom:70%;">
     
     !!! note
 
-        You cannot edit the default themes, but you can create a copy and modify that copy using the **Make Copy** and **Customize** option.
+        You cannot edit the templates, but you can create a custom theme using a template.
         
-5. You can choose from the available themes or create your own using existing themes.
-    1. Click the theme you want to apply. The changes are reflected in the preview pane, and a success message is displayed. 
+5. Click **+ New Themes**. The Theme Store page is displayed.
 
-        ![alt_text](images/sdke4.png  )
 
-    2. Select the theme, click **Make Copy** to create a copy, and apply customization. The copy of the selected theme opens in the edit mode.
-        1. Make the required changes in the **Components** and the **Chat Screen** sections.
-        <img src="../images/sdke2.png" alt="Configuration" title="Configuration Saved" style="border: 1px solid gray; zoom:70%;">
+6. Select the theme and click **Get Theme**. 
 
-        
 
-        2. Click **Save**. The custom theme is created and selected as the current theme.
+7. On the theme editor page, make the required changes in the **Components** and the **Chat Screen** sections. The changes are reflected in the preview pane.  
+    <img src="../images/t2.png" alt="Theme Editor" title="Theme Editor" style="border: 1px solid gray; zoom:70%;">
 
-6. Click the back icon before the theme editor in the top left corner. 
-![alt_text](images/sdke1.png  )
+8. Click **Save**. The custom theme is created.
 
-7. On the Configure tab, click **Save**. The configuration saved message is displayed.  
-<img src="../images/sdke5-1.png" alt="Configuration" title="Configuration Saved" style="border: 1px solid gray; zoom:70%;">
+9. Select the theme and click **Apply**.
+        <img src="../images/t3.png" alt="Theme Editor" title="Theme Editor" style="border: 1px solid gray; zoom:70%;">
 
-8. Click **Proceed**. The Digital > Configured page is displayed.
-
-9. To push the modification from the development to the published state, publish the VA.
+10. To push the modification from the development to the published state, publish the VA.
