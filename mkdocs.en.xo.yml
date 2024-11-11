@@ -394,7 +394,7 @@ nav:
           - Coaching Assignments: 
             - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
             - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
-            - Coaching Monitor: quality-management/coach/coaching-monitor.md        
+          - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md

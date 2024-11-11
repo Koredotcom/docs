@@ -25,7 +25,7 @@ The supervisor can filter all agent interaction channels (Voice and Chat) by sel
 
 ## Overview
 
-This displays the selected agent dashboard metrics, which are calculated for that specific agent for the time selected and for the channel (Voice and Chat) selected.  
+This displays the selected agent dashboard metrics, which are calculated for that specific agent for the time and the channel (Voice and Chat) selected.  
 
 The **Overview** tab of the supervisor view of the Agent Dashboard which is specific to each agent includes the following:
 
