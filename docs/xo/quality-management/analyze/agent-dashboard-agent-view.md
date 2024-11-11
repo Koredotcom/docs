@@ -1,4 +1,4 @@
-# Agent Dashboard (My Dashboard) - Agent View
+# Agent View (My Dashboard)
 
 **My Dashboard** is the Agent Dashboard for agents’ view, which offers detailed insights into your activity and performance as an agent.
 
