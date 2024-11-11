@@ -2,7 +2,7 @@
 
 This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
 
-Users can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
+You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
 <img src="../images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 The Evaluation Metrics has the following options:
