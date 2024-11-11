@@ -5,7 +5,7 @@
 Each agent has a personalized dashboard, which is accessible to both the agents. In this, the agents can view their performance through scorecards provided by their supervisors. This setup allows agents to take appropriate actions based on their performance metrics.
 
 Users can view **My Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **My Dashboard**.  
-<img src="../agent-dashboard/coaching-assignments-agent-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
+<img src="../agent-dashboard/images/coaching-assignments-agent-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:
 
@@ -26,16 +26,16 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
 * **Total Interactions**: This shows the overall number of interactions completed for the time period.
 
-    <img src="../agent-dashboard/my-dashboard-total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **Kore Evaluation Score**: This shows the average Kore Evaluation Score completed calls during the selected time.
 
-    <img src="../agent-dashboard/my-dashboard-kore-eva-score.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-kore-eva-score.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **No. of Supervisor Audits**:  This shows the total number of supervisor (manual) audits completed for that time period.
     * This is the count of the agent's interactions that have been manually audited for that time period.
 
-    <img src="../agent-dashboard/my-dashboard-number-sup-audits.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-number-sup-audits.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **Supervisor Audit Score**: This shows the average supervisor (manual) audit score of the agent for the selected time period.
 
@@ -43,19 +43,19 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
 * **Total Coaching Assignments**: This shows the total number of coaching sessions assigned to the agent for the selected time.
 
-    <img src="../agent-dashboard/my-dashboard-total-coaching-assignment.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-total-coaching-assignment.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **No. of Fails**: This shows the total number of failed scorecards of an agent for the selected time.
 
-    <img src="../agent-dashboard/my-dashboard-number-of-fails.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-number-of-fails.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **Strongest Attributes**: This shows the top 5 attributes with scores of 80 or higher, ranked by a score assigned across the scorecards.
 
-    <img src="../agent-dashboard/my-dashboard-strongest-attributes.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-dashboard/images/my-dashboard-strongest-attributes.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
 
 * **Opportunity Areas**: This shows the bottom 5 attributes with scores below 80, ranked by a score assigned across the scorecards for that agent.
 
-    <img src="../agent-dashboard/my-dashboard-opportunity-areas.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-dashboard/images/my-dashboard-opportunity-areas.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
 
 ### Scorecard Trend
 
@@ -69,7 +69,7 @@ The widget presents attribute-level scoring trends across daily, weekly, and mon
 
 **Note**: If no interactions scored for an agent are found or for a given scorecard have not been assessed by the supervisor, the widget will be blank.
 
-<img src="../agent-dashboard/my-dashboard-scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
+<img src="../agent-dashboard/images/my-dashboard-scorecard-trend.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:60%;">
 
 #### Avg. Scorecard Score
 
