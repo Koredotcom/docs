@@ -118,7 +118,7 @@ The component properties empower you to configure the following settings. The ch
 It allows you to provide a **Name** and **Display Name** for the node. The node name cannot contain spaces.
 
 
-<img src="../images/componentproperties.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/gennodecp1.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
 
 
 #### Model Configuration
@@ -128,7 +128,6 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 
 * **Model**: The selected model for which the settings are displayed.
 * **Prompt/Instructions or Context**: Add feature/use case-specific instructions or context to guide the model.
-* **System Context**: Add a brief description of the use case context to guide the model.
 * **Conversation History Length**: This setting allows you to specify the number of recent messages sent to the LLM as context. These messages include both user messages and virtual assistant (VA) messages. The default value is 10. This conversation history can be seen from the debug logs. 
 **Note**: Applicable only if you are using a custom prompt. 
 * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
@@ -160,6 +159,9 @@ Most entity types are supported. Here are the exceptions: custom, composite, lis
 
 <img src="../images/entitiesv2.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
+#### System Context
+
+Add a brief description of the use case context to guide the model.
 
 #### Rules
 
