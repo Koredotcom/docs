@@ -1,15 +1,14 @@
-# Agent Dashboard - Supervisor View
+# Supervisor View (Agent-specific Dashboard)
 
-This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the overview section of the supervisor's Agent Dashboard, and is based on selected periods and channels (Voice or Chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
+This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the **Overview** section of the supervisor's agent-specific dashboard, and is based on selected periods and channels (Voice or Chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
 
-Users can access the Supervisor view of the Agent Dashboard in the following ways:
+You can access the Supervisor view of the Agent-specific dashboard in the following ways:
 
 **Step 1:**
 
-1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.   
-<img src="../agent-leaderboard/images/dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Overview** > **Agent Leaderboard**. 
 
-2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.  
+2. Click any of the agents from the **Agent Leaderboard** widget as shown in the following **Overview** screen of the agent-specific dashboard is displayed.  
 <img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 **Step 2:**
@@ -17,24 +16,12 @@ Users can access the Supervisor view of the Agent Dashboard in the following way
 3. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
 <img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.   
+4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent-specific dashboard is displayed.   
 <img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 Each agent has a dedicated dashboard, which is accessible to both the agents and their supervisors. This dashboard presents high-level metrics for supervisors to review.
 
-The supervisor can filter all agent interaction channels (Voice and SMS) by selecting the following date ranges:
-
-* **Today**: All interaction data for this day in the agent’s time zone.
-
-* **Yesterday**: All interaction data of the previous day in the agent’s time zone.
-
-* **Last 7 days**: All interaction data for the previous 7 days (not including today) in the agent’s time zone.
-
-* **Last 28 days**: All interaction data for the previous 28 days (not including today) in the agent’s time zone.
-
-* **Last 90 days**: All interaction data for the previous 90 days (not including today) in the agent’s time zone.
-
-* **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
+The supervisor can filter all agent interaction channels (Voice and Chat) by selecting the required date ranges from the Calendar drop-down list. For more information, see [Date Range Filter](../https://docs.kore.ai/xo/quality-management/analyze/dashboard/#date-range-filter). 
 
 ## Overview
 

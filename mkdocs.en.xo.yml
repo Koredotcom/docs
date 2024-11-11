@@ -384,7 +384,7 @@ nav:
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Agent Dashbaord (Supervisor View): quality-management/analyze/agent-dashboard-supervisor-view.md
+          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/supervisor-view-agent-specific-dashboard.md
           - My Dashboard (Agent View): quality-management/analyze/agent-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
