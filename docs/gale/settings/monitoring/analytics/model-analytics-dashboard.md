@@ -267,7 +267,7 @@ The expanded views of all the widgets are shown below:
 
 With intuitive data visualization and dynamic filtering capabilities, the **Model Analysis Dashboard** enables data-driven decisions for model optimization, resource allocation, and performance monitoring.
 
-## Related Links
+## Related Information
 
 * **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.

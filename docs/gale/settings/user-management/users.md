@@ -235,9 +235,11 @@ To perform bulk role change, follow the steps below:
 The role is updated for the selected users.
 <img src="../images/bulk-role-changed.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;">
 
-[Learn more](../user-management/role-management.md){:target="_blank"} about other Role Management features and capabilities to efficiently manage your account users.
+## Related Information
 
-To know how to leverage other features on the **Settings** Console, click [here](../../settings/settings-overview.md){:target="_blank"}.
+* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
+* **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
+* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
 
 
 
