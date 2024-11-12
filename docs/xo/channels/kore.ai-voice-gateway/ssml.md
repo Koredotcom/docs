@@ -20,7 +20,7 @@ Using SSML (Speech Synthesis Markup Language) allows developers to control aspec
 
 ## Using SSML in Code
 
-* When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags.
+When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags.
 
 Example:
 ````
