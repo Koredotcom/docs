@@ -247,8 +247,8 @@ Examples of invalid concepts names:
 
 You can also define custom concepts using emojis.
 
-For more information, refer to [Custom Concepts](/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-concepts){:target="_blank"}
-.
+For more information, refer to [Custom Concepts](../natural-language/training/fundamental-meaning.md#manage-concepts){:target="_blank"}.
+
 ## Standard Responses
 
 Standard Responses are template messages that the Platform uses to respond to specific situations during a conversation. Examples of these situations include resolution of ambiguous user inputs, requisition for authorization, obtaining confirmations, informing about interruptions and resumptions, and more. Standard Responses are categorized into the following:
