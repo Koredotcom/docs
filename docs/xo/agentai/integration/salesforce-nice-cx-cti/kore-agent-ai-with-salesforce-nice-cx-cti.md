@@ -664,25 +664,25 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 5. Sign in to your **Salesforce** org.
 6. From the **app launcher,** select **Service Console**.
 7. Sign in with **NICE CX** credentials for the agent.  
-<img src="../images/install-softphone-33.png" alt="install-softphone" title="install-softphone" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/install-softphone-33.png" alt="install-softphone" title="install-softphone" style="border: 1px solid gray; zoom:40%;">
 
 8. Install the softphone: [https://help.nice-incontact.com/content/agent/cxoneagent/addcxawebrtcext.htm](https://help.nice-incontact.com/content/agent/cxoneagent/addcxawebrtcext.htm){:target="_blank"}  
-<img src="../images/cx-one-agent-webrtc-extension-34.png" alt="cx-one-agent-webrtc-extension" title="cx-one-agent-webrtc-extension" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/cx-one-agent-webrtc-extension-34.png" alt="cx-one-agent-webrtc-extension" title="cx-one-agent-webrtc-extension" style="border: 1px solid gray; zoom:60%;">
 
 9. Refresh the screen, and click the **phone** icon on the status bar.
 10. Select **Integrated Softphone**, and click **Connect**.  
-<img src="../images/integrated-softphone-connect-35.png" alt="integrated-softphone-connect" title="integrated-softphone-connect" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/integrated-softphone-connect-35.png" alt="integrated-softphone-connect" title="integrated-softphone-connect" style="border: 1px solid gray; zoom:40%;">
 
 11. Change the status to **Available**.  
-<img src="../images/status-available-36.png" alt="status-available" title="status-available" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/status-available-36.png" alt="status-available" title="status-available" style="border: 1px solid gray; zoom:40%;">  
 
-<img src="../images/status-available2-37.png" alt="status-available2" title="status-available2" style="border: 1px solid gray; zoom:80%;">
+      <img src="../images/status-available2-37.png" alt="status-available2" title="status-available2" style="border: 1px solid gray; zoom:40%;">
 
 **For Call**:
 
 1. Make a call to the **Point of Contact** phone number.
 2. Accept the call.  
-<img src="../images/accept-a-call-38.png" alt="accept-a-call" title="accept-a-call" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/accept-a-call-38.png" alt="accept-a-call" title="accept-a-call" style="border: 1px solid gray; zoom:50%;">
 
     1. The **Contact** page appears.  
     <img src="../images/contact-page-39.png" alt="contact-page" title="contact-page" style="border: 1px solid gray; zoom:80%;">
@@ -722,4 +722,4 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 8. When **Disposition** is selected and clicked **Save**, Chat transcript is stored in Salesforce.  
 <img src="../images/chat-transcript-in-salesforce-50.png" alt="chat-transcript-in-salesforce" title="chat-transcript-in-salesforce" style="border: 1px solid gray; zoom:80%;">  
 
-<img src="../images/chat-summary-in-salesforce-51.png" alt="chat-summary-in-salesforce" title="chat-summary-in-salesforce" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/chat-summary-in-salesforce-51.png" alt="chat-summary-in-salesforce" title="chat-summary-in-salesforce" style="border: 1px solid gray; zoom:80%;">
