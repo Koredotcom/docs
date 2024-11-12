@@ -423,7 +423,8 @@ This app will be used in studio script.
 
 !!! note
     AgentAssist URL, Bot ID, Client ID, and Client Secret can be fetched from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
-    <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
+
+   <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
 
 5. Select **Active** and click **Save**.
 
@@ -722,4 +723,4 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 8. When **Disposition** is selected and clicked **Save**, Chat transcript is stored in Salesforce.  
 <img src="../images/chat-transcript-in-salesforce-50.png" alt="chat-transcript-in-salesforce" title="chat-transcript-in-salesforce" style="border: 1px solid gray; zoom:80%;">  
 
-   <img src="../images/chat-summary-in-salesforce-51.png" alt="chat-summary-in-salesforce" title="chat-summary-in-salesforce" style="border: 1px solid gray; zoom:80%;">
+      <img src="../images/chat-summary-in-salesforce-51.png" alt="chat-summary-in-salesforce" title="chat-summary-in-salesforce" style="border: 1px solid gray; zoom:80%;">
