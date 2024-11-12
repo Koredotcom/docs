@@ -147,6 +147,7 @@ nav:
               - Configure the Gateway: channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md
               - Advanced Topics:
                 - Call Control Parameters: channels/kore.ai-voice-gateway/call-control-parameters.md
+                - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
                 - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
@@ -328,8 +329,9 @@ nav:
             - Workbench Simulator: searchai/workbench/simulation.md
         - Vector Configuration: searchai/index-configuration.md
     - Configuration:
+        - Retrieval Strategies: searchai/retrieval.md
         - Business Rules: searchai/business-rules.md
-        - Answer Configuration: searchai/answer-configuration.md
+        - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
@@ -383,8 +385,8 @@ nav:
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Agent Dashbaord (Supervisor View): quality-management/analyze/agent-dashboard-supervisor-view.md
-          - My Dashboard (Agent View): quality-management/analyze/agent-dashboard-agent-view.md                
+          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-specific-dashboard.md
+          - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
@@ -393,12 +395,11 @@ nav:
           - Coaching Assignments: 
             - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
             - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
-            - Coaching Monitor: quality-management/coach/coaching-monitor.md        
+          - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
-        - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: quality-management/configure/settings.md        
@@ -515,9 +516,9 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
-        - Kore Voice Automation:
-          - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
-          - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
+          - Kore Voice Automation:
+            - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
+            - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

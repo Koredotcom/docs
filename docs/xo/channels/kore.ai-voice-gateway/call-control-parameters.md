@@ -1287,62 +1287,6 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
          * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
          * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes. [Learn more](#call-control-parameters).
 
-## SSML
-
-Using SSML (Speech Synthesis Markup Language) allows developers to control aspects of speech synthesis such as pronunciation, volume, pitch, and rate of speech. Here's a guide on how to use SSML effectively:
-
-### Understanding SSML Basics
-
-* SSML is an XML-based markup language used to control text-to-speech synthesis.
-* It provides tags to control various aspects of speech synthesis, including pronunciation, prosody, volume, and more.
-* SSML is supported by many speech synthesis systems, including Amazon Polly, Google Text-to-Speech, and others.
-
-### Basic SSML Tags
-
-* `&lt;speak>`: This is the root element of an SSML document and indicates the start and end of the speech content.
-* `&lt;break>`: Inserts a pause into the speech synthesis. You can specify the duration of the pause using the `time` attribute.
-* `&lt;emphasis>`: Emphasizes a portion of the text. You can specify the level of emphasis using the `level` attribute. * `&lt;prosody>`: Modifies aspects of speech such as pitch, rate, and volume. Attributes include `pitch`, `rate`, and `volume`.
-* `&lt;phoneme>`: Specifies the pronunciation of a word using phonetic alphabet symbols.
-* `&lt;say-as>`: Indicates how a particular piece of text should be pronounced, such as numbers, dates, or currency.
-* `&lt;audio>`: Embeds audio files into the speech output.
-
-### Using SSML in Code
-
-* When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags
-
-Example:
-````
-&lt;speak>
-
-    Here is a number &lt;w role='amazon:VBD'>read&lt;/w>
-
-    as a cardinal number:
-
-    &lt;say-as interpret-as='cardinal'>12345&lt;/say-as>.
-
-    Here is a word spelled out:
-
-    &lt;say-as interpret-as='spell-out'>hello&lt;/say-as>.
-
-&lt;/speak>
-````
-### Voice tag support
-
-support for voice elements in SSML,
-
-In the speak tag, follow below-mentioned steps:
-
-1. Empty speak tag without attributes **&lt;speak>**
-    1. In this case, Kore Voice Gateway will construct **voice** and **language** elements on its own based on values supplied in Call control params.
-2. Customised speak tag with attributes **&lt;speak version="1.0" xml:lang="en-US" xmlns="**[W3C Speech Synthesis namespace](http://www.w3.org/2001/10/synthesis) **">**
-    2. In this case, Kore Voice Gateway will send the SSML without any modifications to the TTS engine.
-
-In this case, follow option 2 and the voice element will work.
-
-Example:
-```
-<speak version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/10/synthesis"><voice name="en-US-AvaNeural">Hi, I'm eBay's automated phone assistant. Let me know in a few words how I can help.</voice></speak>
-```
 ## Voice Gateway Properties
 
 <table>

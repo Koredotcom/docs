@@ -6,8 +6,9 @@ Once created, it is recommended to validate the model to understand and estimate
 
 The XO Platform offers the following validation methods:
 
-* **Confusion Matrix** or **Error Matrix** to visualize the performance of the machine learning model.
+
 * **K-fold Cross-Validation** to estimate the skill of the machine learning model.
+* **Confusion Matrix** or **Error Matrix** to visualize the performance of the machine learning model.
 
 To choose the validation model, follow the steps below:
 
@@ -44,7 +45,7 @@ To initiate the training and generate the K-fold validation report, follow the b
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Validations are performed only when the total number of ML utterances used for training is at least 250. This number is configurable for the on-premises installation. <a href="https://kore.ai/support/" target="_blank">Contact</a> our support team for details.</p></div>
+<p>A minimum of 5 utterances per intent and a total of at least 250 utterances are required for K-fold to work. This number is configurable for the on-premises installation. <a href="https://kore.ai/support/" target="_blank">Contact</a> our support team for details.</p></div>
 
 ### Implementation
 
@@ -102,6 +103,10 @@ A quick look at the graph and you know which utterance-intent matches are accura
 The higher the utterance in the _True_ quadrants the better it exhibits expected behavior. **True +ve** represents a strong match with the task for which they are trained and the True -ve represents a mismatch with the irrelevant intents as expected. Utterances at a moderate level in the _True_ quadrants can be further trained for better scores.
 
 The utterances falling into the _False_ quadrants need immediate attention. These are the utterances that are either not matching with the intended tasks or are matching with the wrong ones. To read the utterance text in any quadrant, hover over the dot in the graph.
+
+!!!note
+
+    At least one utterance must be added to the bot, and the confusion matrix becomes available only after successful model validation.
 
 <img src="../images/confusion-matrix.jpg" alt="confusion matrix" title="confusion matrix" style="border: 1px solid gray; zoom:75%;">
 

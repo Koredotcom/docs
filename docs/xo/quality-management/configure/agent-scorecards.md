@@ -2,18 +2,18 @@
 
 Agent Scorecards facilitate the development of evaluation criteria at the individual agent level, focusing on configured performance areas such as salesmanship, product knowledge, and so on. Attributes are defined by integrating relevant evaluation metrics. Additionally, each agent is assessed based on all assigned scorecards during each call transfer, allowing for multiple scorecards per agent. Prior to creating scorecards, it is essential to create agent attributes.
 
+!!! note
+        
+    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality Management.
+
 A Supervisor has the following types of permissions for the agent scorecards:
 
 * Full access, to edit, and create agent scorecards and attributes
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-Users can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.  
+You can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.  
 <img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
-
-!!! note     
-        
-    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality Management.
 
 ## Create a New Agent Scorecard
 

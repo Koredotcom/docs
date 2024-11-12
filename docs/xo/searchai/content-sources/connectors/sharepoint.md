@@ -72,6 +72,35 @@ Go to the **Connectors** under **Sources** and select **SharePoint**. On the Aut
 
 This will authenticate with the SharePoint application. Once the authorization process is complete and the connector is configured, the next step is to select the SharePoint sites from which you want to ingest the content and make it searchable. Go to the **Configure** section, click the **Select Content** link, select the sites from which you want to ingest content, and click **Save**. Click on **Sync Now** to start content ingestion. 
 
+## Advanced Content Filtering
+
+In addition to choosing one or more sites for content ingestion, Search AI provides the flexibility to selectively ingest content by allowing you to apply custom filtering rules. These rules help control which content is ingested, improving relevance and efficiency. To do this, navigate to the **Advanced Filter** tab. Here, you can define your filtering rules using the fields provided.
+
+* **Site**: Select the site on which filtering is to be done. 
+* **Content-Type**: Select the type of content from the site, such as articles or files.  
+
+Use the following fields to set up conditions for the filtering rules. 
+
+* **Parameter**: This is the attribute of the content on which the filter condition will be applied. Commonly used parameters are listed in the dropdown menu. You can also add other parameters by selecting the **+Add** option. Ensure that the parameters match exactly with the field names in SharePoint.
+* **Operator**: Select an operator to define the condition on the chosen parameter (e.g., Equals, Contains, Greater Than).
+* **Value**: Enter the value that the parameter should meet according to the chosen operator.
+
+For instance, to selectively ingest articles with a given ID and from a specific SharePoint site, set up a filter as shown below. 
+![Example](images/sharepoint/filters/example1.png "Example")
+
+
+Note: 
+
+* You can define one or more rules to create a filter. Content that satisfies any one of the rules in the filter is selected for ingestion. For instance, the following filter can be used to select articles where either the article has a specific ID or a specific title. 
+
+![Example](images/sharepoint/filters/example2.png "Example")
+
+
+* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND, which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied.  For instance, the following filter can be used to select articles with a given title and web URL. 
+
+![Example](images/sharepoint/filters/example3.png "Example")
+
+
 ## Access Control
 
 

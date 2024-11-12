@@ -4,33 +4,32 @@ This feature assists supervisors in analyzing agent performance and identifying 
 
 **Step 1:**
 
-
 1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.
-<img src="./agent-leaderboard/images/dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+<img src="../agent-leaderboard/images/dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed. 
-<img src="./agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard Overview" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
+2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.   
+<img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard Overview" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
 
-3. Click the **Evaluation** tab. The following screen is displayed to **Add Coaching Assignment**.
-<img src="./agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard Evaluation" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
+3. Click the **Evaluation** tab. The following screen is displayed to **Add Coaching Assignment**.  
+<img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard Evaluation" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
 
 **Step 2:**
 
-3. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.
+3. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
 <img src="./agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed. 
 <img src="./agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard Overview" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
 
-Users can view and add Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Evaluation**.  
-<img src="./coaching-assignments/add-coaching-assignments.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+You can view and add Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Evaluation**.  
+<img src="../coaching-assignments/add-coaching-assignments.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
 ## Add Coaching Assignment
 Steps to add coaching assignments:
 
 1. Select the agent interactions to enable and assign coaching for the agent. 
 2. Click the **Add Coaching Assignment**, the following screen appears.  
-<img src="./coaching-assignments/new-coaching-assignment.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+<img src="../coaching-assignments/new-coaching-assignment.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
 3. Enter the **Name** of the coaching assignment.
 4. In the **Coaching Area**, enter the agent attributes that are selected for coaching as part of the assignment. By default, the interactions marked for coaching details are displayed, which are selected from the **Evaluation** tab.
