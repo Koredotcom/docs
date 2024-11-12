@@ -421,11 +421,10 @@ This app will be used in studio script.
 4. Enter the required details.  
 <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
 
-   !!! note
-   
-       AgentAssist URL, Bot ID, Client ID, and Client Secret can be fetched from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
+!!! note
+    AgentAssist URL, Bot ID, Client ID, and Client Secret can be fetched from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
 
-      <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
 
 5. Select **Active** and click **Save**.
 
