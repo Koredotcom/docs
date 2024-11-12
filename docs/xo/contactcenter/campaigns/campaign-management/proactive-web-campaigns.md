@@ -222,7 +222,7 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 
 ### Stop a Scheduled Campaign
 
-Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign; re-running a stopped scheduled campaign creates a new instance and all the contacts will be sent messages again.    
+Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign; re-running a stopped scheduled campaign creates a new instance and all the contacts will dialed again.    
 <img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
 A confirmation message is displayed. Click **Stop**.  
