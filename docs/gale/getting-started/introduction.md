@@ -74,10 +74,10 @@ The diagram below shows GALE's comprehensive AI platform. The platform manages A
 
 GALE provides enterprise-grade features to deploy AI at scale:
 
-* **Security**: Your data and intellectual property are protected by robust security measures.
+* Security: Your data and intellectual property are protected by robust security measures.
 
-* **Scalability**: As your AI applications grow and user numbers increase, GALE automatically scales to meet demand while maintaining consistent performance.
+* Scalability: As your AI applications grow and user numbers increase, GALE automatically scales to meet demand while maintaining consistent performance.
 
-* **Flexible Deployment**: Based on your organization's preferences, you can deploy AI models on the cloud or on-premises infrastructure.
+* Flexible Deployment: Based on your organization's preferences, you can deploy AI models on the cloud or on-premises infrastructure.
 
 With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
