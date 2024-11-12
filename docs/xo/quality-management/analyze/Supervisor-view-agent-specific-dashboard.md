@@ -21,7 +21,7 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 
 Each agent has a dedicated dashboard, which is accessible to both the agents and their supervisors. This dashboard presents high-level metrics for supervisors to review.
 
-The supervisor can filter all agent interaction channels (Voice and Chat) by selecting the required date ranges from the Calendar drop-down list. For more information, see [Date Range Filter](../https://docs.kore.ai/xo/quality-management/analyze/dashboard/#date-range-filter). 
+The supervisor can filter all agent interaction channels (Voice and Chat) by selecting the required date ranges from the Calendar drop-down list. For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-management/analyze/dashboard#date-range-filter). 
 
 ## Overview
 
@@ -72,7 +72,7 @@ The Coaching Assignments include the following items:
 
     * **Start Now**: Number of interactions clicked through for that assignment. 
     
-    !!! Note
+    !!! note
             
         This option is only visible to the supervisors.
        

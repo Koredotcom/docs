@@ -128,7 +128,7 @@ Steps to change the theme and design:
 
         You cannot edit the templates, but you can create a custom theme using a template.
         
-5. Click **+ New Themes**. The Theme Store page is displayed.
+5. Click **+ New Theme**. The theme store page is displayed.
 
 
 6. Select the theme and click **Get Theme**. 
