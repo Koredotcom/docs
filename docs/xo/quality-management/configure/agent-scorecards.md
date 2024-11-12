@@ -105,7 +105,7 @@ Steps to edit or update the agent scorecard:
 
     If you want to assign a different scorecard as default, then the following warning pop-up window is displayed stating that the existing default scorecard will be replaced by the new one, and upon confirming, the new scorecard gets applied or replaced as default. 
         
-    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Defualt" title="Enable Defualt" style="border: 1px solid gray; zoom:85%;">  
 
 4. Click **Update** to save the changes.
 
