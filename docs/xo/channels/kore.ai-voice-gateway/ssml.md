@@ -12,14 +12,15 @@ Using SSML (Speech Synthesis Markup Language) allows developers to control aspec
 
 * `&lt;speak>`: This is the root element of an SSML document and indicates the start and end of the speech content.
 * `&lt;break>`: Inserts a pause into the speech synthesis. You can specify the duration of the pause using the `time` attribute.
-* `&lt;emphasis>`: Emphasizes a portion of the text. You can specify the level of emphasis using the `level` attribute. * `&lt;prosody>`: Modifies aspects of speech such as pitch, rate, and volume. Attributes include `pitch`, `rate`, and `volume`.
+* `&lt;emphasis>`: Emphasizes a portion of the text. You can specify the level of emphasis using the `level` attribute. 
+* `&lt;prosody>`: Modifies aspects of speech such as pitch, rate, and volume. Attributes include `pitch`, `rate`, and `volume`.
 * `&lt;phoneme>`: Specifies the pronunciation of a word using phonetic alphabet symbols.
 * `&lt;say-as>`: Indicates how a particular piece of text should be pronounced, such as numbers, dates, or currency.
 * `&lt;audio>`: Embeds audio files into the speech output.
 
 ## Using SSML in Code
 
-* When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags
+* When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags.
 
 Example:
 ````
@@ -46,9 +47,7 @@ In the speak tag, follow below-mentioned steps:
 1. Empty speak tag without attributes **&lt;speak>**
     1. In this case, Kore Voice Gateway will construct **voice** and **language** elements on its own based on values supplied in Call control params.
 2. Customised speak tag with attributes **&lt;speak version="1.0" xml:lang="en-US" xmlns="**[W3C Speech Synthesis namespace](http://www.w3.org/2001/10/synthesis) **">**
-    2. In this case, Kore Voice Gateway will send the SSML without any modifications to the TTS engine.
-
-In this case, follow option 2 and the voice element will work.
+    1. In this case, Kore Voice Gateway will send the SSML without any modifications to the TTS engine. Follow option 2 and the voice element will work.
 
 Example:
 ```
