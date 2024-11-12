@@ -190,25 +190,20 @@ Steps to schedule a Campaign:
     3. Monthly,
     4. Yearly.
 
-    **Every “Enter Value” day(s)** is a subset of what you select, Daily, Weekly, Monthly, or Yearly.
+    **Every “Enter Value” day(s)** is a subset of what you select, Daily, Weekly, Monthly, or Yearly.  
+
+    <img src="../images/recurrance-duration.gif" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         When a Scheduled campaign completes the first occurrence, it considers that run as complete so on the next recurrence it will start reaching the contacts freshly.
         For example, If a campaign is scheduled to run every week on Monday then on the first occurrence of Monday, the dialer will dial as many contacts as it can and then treat the contact list as completed. The next Monday the dialer will again consider dialing all contacts in the list.
 
-5. Turn on the Recurrence toggle to select the recurrence duration for the campaign. You can choose from the following options:
-    * Daily
-    * Weekly
-    * Monthly
-    * Yearly  
-        <img src="../images/recurrance-duration.gif" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
-
-6. Turning on the Allow Recurrence Precedence toggle will give the recurrence start and end time precedence over Contactable timings.
+5. Turning on the Allow Recurrence Precedence toggle will give the recurrence start and end time precedence over Contactable timings.
 For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects Recurrence Start Time as 8:00 AM, the campaign will start contacting from 8:00 AM.  
 <img src="../images/allow-recurrence-precedence.png" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
 
-7. Click **Save**. A campaign is created as per the configured schedule.
+6. Click **Save**. A campaign is created as per the configured schedule.
 
     !!! Notes
 
