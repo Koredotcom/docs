@@ -38,9 +38,9 @@ Example:
 
 &lt;/speak>
 ````
-## Voice tag support
+## Voice Tag Support
 
-support for voice elements in SSML,
+### Support For Voice Elements in SSML
 
 In the speak tag, follow below-mentioned steps:
 
