@@ -11,3 +11,5 @@ Search AI application offers a versatile solution for data ingestion. You can in
 In the **Content** section of SearchAI, you can easily manage your data sources. Here, you can add or update any content source, with different content sources listed under different pages for easy navigation.
 
 ![Content Sources](../images/content-sources-home.png "Content Sources")
+
+Whenever content from a source is ingested into the Search AI application, **automatic training** is initiated for the newly ingested content. This creates the answer index in the application corresponding to the ingested content using the configured extraction strategies.
