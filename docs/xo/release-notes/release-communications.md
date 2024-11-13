@@ -12,7 +12,7 @@ For detailed information, see the product/module-specific release notes under Re
 
 ### Pre-Release Notifications
 
-Pre-release notifications are sent 3-4 days before planned releases and include maintenance schedules and planned updates, along with proposed features, enhancements, and bug fixes. To receive notifications, visit the [Kore.ai Status](https://status.kore.com/){:target="_blank"} page, click **Subscribe to Updates** on the top-right corner, and follow the on-screen instructions.
+Pre-release notifications are sent 3-4 days before planned releases and include maintenance schedules and a list of proposed features, enhancements, and bug fixes. To receive notifications, visit the [Kore.ai Status](https://status.kore.com/){:target="_blank"} page, click **Subscribe to Updates** on the top-right corner, and follow the on-screen instructions.
 
 ### Kore.ai Community Updates
 
