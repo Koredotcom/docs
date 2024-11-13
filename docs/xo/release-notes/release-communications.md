@@ -8,7 +8,7 @@ The XO Platform receives updates every fifteen days with new features, enhanceme
 
 The What’s New document includes new features and enhancements in a major release. The Release Notes include new features and enhancements in a minor or patch release. Bug fixes or minor cosmetic changes are not included in the release notes. 
 
-For detailed information, see the product/module-specific release notes for Automation AI, Search AI, Contact Center AI, Agent AI, and Platform Services. 
+For detailed information, see the product/module-specific release notes under Recent Updates in the left navigation. 
 
 ### Pre-Release Notifications
 
