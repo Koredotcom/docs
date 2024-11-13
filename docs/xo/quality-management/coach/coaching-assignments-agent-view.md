@@ -16,11 +16,11 @@ The **Coaching Assignments** page shows the following list of items:
 * **In Progress**: This shows the interactions (>1) that have been reviewed.
 * **Completed**: This shows all the interactions are completed
 
-Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignmentsS.  
+Upon clicking any of the assigned coaching assignments from the widget, the following best response interactions pane gets displayed on your right-hand side of the **New Coaching Assignment** screen. 
 
-<img src="../coaching-assignments/images/coaching-assignments-slideout-interactions.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
+<img src="./coaching-assignments/images/coaching-assignments-slideout-interactions.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
 
-### Interaction Marked for Coaching
+### Interactions Marked for Coaching
 
 The Interaction marked for coaching includes the following:
 
