@@ -30,7 +30,6 @@ Each violation is displayed with a timestamp, allowing you to navigate directly 
     Violations are applicable only for voice channel interactions, not chat.
 
 
-
 ## Omission
 
 This section highlights instances where the agent failed to follow configured playbook steps or dialog tasks during the interaction. It specifically identifies:

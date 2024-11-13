@@ -1,8 +1,12 @@
 # Audit Logs
 
-On the **Settings** console, you can monitor events related to your account's modules **and actions taken by the users linked to your account**. 
+## Overview
 
-**Audit Logs** offer a comprehensive and time-based view of all the account events. Each log entry includes:
+GALE’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+
+This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias. 
+
+Each log entry includes the following to provide actionable insights on account and agent-level activities:
 
 - Event name and category.
 - The user who performed the action.
@@ -22,9 +26,11 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
 <li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
+## Account-Level Audit Logs
+
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
-<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module and category specific metadata listed in the tables below.</p></div>
+<p>The <b>User ID</b> and <b>IP Address</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
 
 <table>
     <tr>
@@ -139,7 +145,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Integration added
    </td>
-   <td>Tracks integrations added by the user to the account.
+   <td>Tracks integrations added to the account.
    </td>
    <td rowspan="2" align="center">-</td>
    </tr>
@@ -176,7 +182,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Model added(external models only)
+   <td>Model added (external models only)
    </td>
    <td>Tracks the addition of external models to the account.
    </td>
@@ -199,13 +205,13 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>API Key deleted
    </td>
-   <td>Tracks the deletion of an API key for a model by the account user.
+   <td>Tracks the deletion of an API key for a model.
    </td>
   </tr>
   <tr>
    <td>Model Finetuning
    </td>
-   <td>Tracks the finetuning process for models done by the account user.
+   <td>Tracks the finetuning process for models done.
    </td>
    <td>
 <ul>
@@ -406,7 +412,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Prompt created
    </td>
-   <td>Tracks the creation of a prompt by the account user.
+   <td>Tracks the creation of a prompt.
    </td>
    <td rowspan="2" align="center">
    -
@@ -415,15 +421,15 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Prompt deleted
    </td>
-   <td>Tracks the deletion of a prompt by the account user.
+   <td>Tracks the deletion of a prompt.
    </td>
   </tr>
   <tr>
    <td>Versions committed
    </td>
-   <td>Tracks the prompt versions committed by the account user.
+   <td>Tracks the prompt versions committed.
    </td>
-   <td rowspan="2" >
+   <td rowspan="2">
 <ul>
 <li>Version Name
 </li>
@@ -433,34 +439,40 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Restored
    </td>
-   <td>Tracks the prompt version restored by the account user.
+   <td>Tracks the prompt version restored.
    </td>
   </tr>
   <tr>
    <td>Prompt Shared
    </td>
-   <td>Tracks the prompts shared by the account user with other users.
+   <td>Tracks the prompts shared with other users.
    </td>
-   <td rowspan="3" align="center">
+   <td rowspan="4" align="center">
    -
    </td>
   </tr>
   <tr>
    <td>Endpoint Copied
    </td>
-   <td>Tracks the prompt endpoint copy done by the account user.
+   <td>Tracks the prompt endpoint copy done.
+   </td>
+  </tr>
+    <tr>
+   <td>Endpoint Consumed
+   </td>
+   <td>Tracks the prompt endpoint that was consumed externally.
    </td>
   </tr>
   <tr>
    <td>API Key Created
    </td>
-   <td>Tracks the API key creation for the prompt endpoint by the account user.
+   <td>Tracks the API key creation for the prompt endpoint.
    </td>
   </tr>
   <tr>
    <td>Generated Test Data
    </td>
-   <td>Tracks the generation of test data by the account user.
+   <td>Tracks the generation of test data.
    </td>
    <td rowspan="2" >
 <ul>
@@ -551,6 +563,258 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
 </table>
 
+## Agent-Level Audit Logs
+
+<div class="admonition warning">
+<p class="admonition-title">Universal Metadata</p>
+<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Agent ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
+
+<table>
+  <tr>
+   <td colspan="3" align="center"><strong>Category</strong>: User Management
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Role Changed
+   </td>
+   <td>Tracks the change of an agent role for an account user by a user.
+   </td>
+   <td rowspan="3" align="center">-
+   </td>
+  </tr>
+  <tr>
+   <td>Invited users
+   </td>
+   <td>Tracks the invitation of one or more users to the account at the agent level.
+   </td>
+  </tr>
+  <tr>
+   <td>Removed Users
+   </td>
+   <td>Tracks the removal of one or more users from the account at the agent level.
+   </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+   <td colspan="4" align="center"><strong>Category</strong>: Agent Management
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" ><strong>Agent version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
+<p style="text-align: center">
+<strong> </strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td colspan="3"><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Agent Deployed</td>
+   <td>Tracks the agent deployments in the account.</td>
+   <td rowspan="2" align="center">-</td>
+  </tr>
+  <tr>
+   <td>Agent Undeployed
+   </td>
+   <td>Tracks the agent undeployments in the account.
+   </td>
+  </tr>
+  <tr>
+   <td colspan="4" ><strong>Version ID</strong> is displayed for all the category events below.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td colspan="2" ><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Version Created
+   </td>
+   <td>Tracks the agent version creation.
+   </td>
+   <td rowspan="8" colspan="2" align="center">-
+   </td>
+  </tr>
+  <tr>
+   <td>Version Deleted
+   </td>
+   <td>Tracks the agent version deletion.
+   </td>
+  </tr>
+  <tr>
+   <td>API Key created
+<p>
+ 
+   </td>
+   <td>Tracks the agent API Key creation.
+   </td>
+  </tr>
+  <tr>
+   <td>API Key deleted
+   </td>
+   <td>Tracks the agent API Key deletion.
+   </td>
+  </tr>
+  <tr>
+   <td>Agent description updated
+<p>
+ 
+   </td>
+   <td>Tracks the agent description update done.
+   </td>
+  </tr>
+  <tr>
+   <td>Agent name updated
+<p>
+ 
+   </td>
+   <td>Tracks the agent name update done.
+   </td>
+  </tr>
+  <tr>
+   <td>Agent exported
+<p>
+ 
+   </td>
+   <td>Tracks the agent export done.
+   </td>
+  </tr>
+  <tr>
+   <td>API sync timeout updated
+   </td>
+   <td>Tracks the synchronous time update.
+   </td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+   </tr>
+  <tr>
+   <td>API async enabled
+<p>
+ 
+   </td>
+   <td>Tracks the enabling of the asynchronous mode.
+   </td>
+   <td rowspan="2" colspan="2" align="center"> <ul><li>URL</li> <li>Access token</li> <li>timeout: yes/no</li>
+   <li>timeout value (if yes)</li></ul>
+   </td>
+  </tr>
+  <tr>
+   <td>API async updated
+<p>
+    </td>
+   <td>Tracks the update of the asynchronous mode configurations.
+   </td>
+     </tr>
+  <tr>
+   <td>API async disabled
+<p>
+    </td>
+   <td>Tracks the disabling of the asynchronous mode.
+   </td>
+      <td rowspan="4" colspan="2" align="center">-
+   </td>
+  </tr>
+  <tr>
+   <td>Environment variable added
+<p>
+ 
+   </td>
+   <td>Tracks the addition of an environment variable.
+   </td>
+  </tr>
+  <tr>
+   <td>Environment variable deleted
+<p>
+ 
+   </td>
+   <td>Tracks the deletion of an environment variable.
+   </td>
+  </tr>
+  <tr>
+   <td>Environment variable edited
+   </td>
+   <td>Tracks the modification of an environment variable.
+   </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+   <td colspan="4" align="center"><strong>Category</strong>: Guardrails
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Input scanner added
+   </td>
+   <td>Tracks the addition of an input scanner.
+   </td>
+   <td rowspan="6" colspan="2" align="center">-
+   </td>
+  </tr>
+  <tr>
+   <td>Input scanner edited
+   </td>
+   <td>Tracks the modification of an input scanner.
+   </td>
+  </tr>
+  <tr>
+   <td>Input scanner removed
+   </td>
+   <td>Tracks the deletion of an input scanner.
+   </td>
+  </tr>
+  <tr>
+   <td>Output scanner added
+   </td>
+   <td>Tracks the addition of an output scanner.
+   </td>
+  </tr>
+  <tr>
+   <td>Output scanner edited
+   </td>
+   <td>Tracks the modification of an output scanner.
+   </td>
+  </tr>
+  <tr>
+   <td>Output scanner removed</td>
+   <td>Tracks the deletion of an output scanner.
+   </td>
+  </tr>
+  </table>
+
 ## Access Audit Logs
 
 To access and view audit logs, follow the steps below:
@@ -558,9 +822,9 @@ To access and view audit logs, follow the steps below:
 1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale){:target="_blank"} to your GALE account.
 2. Navigate to the [Settings](https://galeadmin-kore.github.io/docs/gale/settings/settings-overview/#access-settings-console){:target="_blank"} console.
 3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
-<img src="../images/access-audit-logs.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
-## Audit Logs Information
+## Dashboard Information
 
 The **Audit Logs** Dashboard displays the following information to collectively provide a comprehensive overview of activities within your GALE account:
 
@@ -693,6 +957,14 @@ By default, the current day will be set as the end date. This feature allows you
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
 
-For more help or information on <b>Audit Logs</b>, [contact](https://kore.ai/support/){:target="_blank"} our technical support team.
+GALE’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
-[Learn more](../settings-overview.md){:target="_blank"} about other features on the <b>Settings</b> Console.
+You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
+
+## Related Information
+
+* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
+* [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
+* [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
+
+

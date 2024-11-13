@@ -4,7 +4,7 @@ The Agent Monitor capabilities are shown on the following tabs:
 
 * **All runs**: It shows comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
 
-* **LLM calls**: It shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
+* **Model runs**: This tab shows specific data on Gen AI node run instances, focusing on endpoint calls made to Gen AI nodes within the agent.
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
@@ -32,15 +32,15 @@ You can also see the following metrics on the top of the page:
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. 
 
-## LLM Calls
+## 	Model Runs
 
-Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
+Each GenAI node in the agent is recorded as a separate request in the Model runs tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
 
-If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
+If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.
 
-<img src="../images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_model_runs.png" alt="Model runs" title="Model runs tab" style="border: 1px solid gray; zoom:80%;">
 
-The LLM calls tab provides the following information for each Gen AI node call:
+The Model runs tab provides the following information for each Gen AI node call:
 
 * **Status**: The status indicating a success or failure. A green icon indicates success and a red icon indicates failure.
 * **Request ID**: The unique identifier of the GenAI node request.
@@ -62,7 +62,7 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 ## Viewing Detailed Run Information
 
-Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
+Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas. [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
 
 <img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
@@ -101,7 +101,7 @@ Steps to use the time-based search:
 
 2. Select a predefined time range or set custom dates.
 
-    <img src="../images/agent_monitor_calendar_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_calendar_selection_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply** to update the results.
 
@@ -115,7 +115,7 @@ You can also add multiple filters using AND/OR operators for more precise result
 Steps to use the filters:
 
 1. Click the Filter icon.
-2. Click + Add Filter.
+2. Click **+ Add filter**.
 
     <img src="../images/agent_monitor_filtericon_new.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
 

@@ -8,8 +8,9 @@ The **Monitoring** module in GALE tracks events, actions, and changes across you
 - Use filters to focus on specific events or users.
 - Utilize time-based filtering for targeted analysis.
 
-
 Monitoring supports the following features:
 
-1. **Audit Logs**: Enables the admin to view the log entries of all the changes made across their account by the member users. [Learn more](./audit-logs.md){:target="_blank"}.
+1. **Audit Logs**: From logins to model deployments, the enhanced Audit Logs dashboard ensures you stay secure and compliant with detailed, time-stamped logs. [Learn more](./audit-logs.md){:target="_blank"}.
+2. **Agent Analytics Dashboard**: Empowers admins to make informed decisions on agents deployed in their account, and ensure their peak performance by analyzing real-time performance metrics. [Learn more](./analytics/agent-analytics-dashboard.md){:target="_blank"}.
+3. **Model Analytics Dashboard**: Enables account owners to track the performance of models deployed in their account . [Learn more](./analytics/model-analytics-dashboard.md){:target="_blank"}.
 
