@@ -1,6 +1,6 @@
 # Supervisor View (Agent-specific Dashboard)
 
-This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to evaluate performance metrics and coaching opportunities at the individual level. The dashboard displays high-level metrics relevant to the agent, shown in the **Overview** section of the supervisor's agent-specific dashboard, and is based on selected periods and channels (Voice or Chat). It enables supervisors to analyze agent performance, identify areas needing improvement, and create targeted coaching assignments to enhance performance and skills.
+This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to assess performance metrics and identify coaching opportunities at an individual level. The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
 
 You can access the Supervisor view of the Agent-specific dashboard in the following ways:
 
@@ -8,7 +8,7 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 
 1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Overview** > **Agent Leaderboard**. 
 
-2. Click any of the agents from the **Agent Leaderboard** widget as shown in the following **Overview** screen of the agent-specific dashboard is displayed.  
+2. Click any of the agents from the **Agent Leaderboard** widget as displayed in the following **Overview** screen of the agent-specific dashboard.  
 <img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 **Step 2:**
@@ -19,38 +19,40 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent-specific dashboard is displayed.   
 <img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-Each agent has a dedicated dashboard, which is accessible to both the agents and their supervisors. This dashboard presents high-level metrics for supervisors to review.
+Each agent has a dedicated dashboard accessible to both the agents and their supervisor. This dashboard displays high-level metrics for supervisors to review.
 
-The supervisor can filter all agent interaction channels (Voice and Chat) by selecting the required date ranges from the Calendar drop-down list. For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-management/analyze/dashboard#date-range-filter). 
+The supervisor can filter agent interactions across all channels (Voice and Chat) by selecting the required date ranges from the Calendar drop-down list.
+
+For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-management/analyze/dashboard#date-range-filter). 
 
 ## Overview
 
-This displays the selected agent dashboard metrics, which are calculated for that specific agent for the time and the channel (Voice and Chat) selected.  
+This displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat only).  
 
-The **Overview** tab of the supervisor view of the Agent Dashboard which is specific to each agent includes the following:
+The **Overview** tab of the supervisor’s view of the Agent Dashboard, specific to each agent, includes the following:
 
-* **Total Interactions**: This shows the total interactions completed by the agent during the selected time.     
+* **Total Interactions**: This displays the total interactions completed by the agent during the selected time.     
     <img src="../agent-leaderboard/images/total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
-* **Kore Evaluation Score**: This shows the average Kore evaluation score of the agent for the calls they have completed during the selected time.    
+* **Kore Evaluation Score**: This displays the average Kore evaluation score of the agent for the calls they have completed during the selected time.    
     <img src="../agent-leaderboard/images/kore-evaluation-score.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:100%;">
 
-* **No. of Supervisor Audits**: This shows the total number of manual audits completed for the interactions completed by that agent for the selected time.     
+* **No. of Supervisor Audits**: This displays the total number of manual audits completed for the interactions completed by that agent for the selected time.     
     <img src="../agent-leaderboard/images/No-of-supervisor-audits.png" alt="No. of Supervisor Audits" title="No. of Supervisor Audits" style="border: 1px solid gray; zoom:100%;">
 
-* **Supervisor Audit Score**: This shows the Average manual audit score for the audited interactions for the selected time.   
+* **Supervisor Audit Score**: This displays the Average manual audit score for the audited interactions for the selected time.   
     <img src="../agent-leaderboard/images/supervisor-audit-score.png" alt="Supervisor Audit Score" title="Supervisor Audit Score" style="border: 1px solid gray; zoom:100%;">
 
-* **Total Coaching Assignments**: This shows the total number of coaching sessions assigned to the agent over a selected time.   
+* **Total Coaching Assignments**: This displays the total number of coaching sessions assigned to the agent over a selected time.   
     <img src="../agent-leaderboard/images/total-coaching-assignemnts.png" alt="Total Coaching Assignments" title="Total Coaching Assignments" style="border: 1px solid gray; zoom:100%;">
 
-* **No. of Fails**: This shows the total count of scorecard failures for the agent over a selected time.   
+* **No. of Fails**: This displays the total count of scorecard failures for the agent over a selected time.   
     <img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:100%;">
 
-* **Strongest Attributes**: Shows the top 5 attributes with the highest scores from the scorecards assigned to the agent during the selected time, with each attribute having a score greater than 80, listed in descending order.    
+* **Strongest Attributes**: This displays the top 5 attributes with the highest scores from the scorecards assigned to the agent during the selected time, with each attribute having a score greater than 80, listed in descending order.    
     <img src="../agent-leaderboard/images/strongest-attributes.png" alt="Strongest Attributes" title="Strongest Attributes" style="border: 1px solid gray; zoom:80%;">
 
-* **Opportunity Areas**: Shows the bottom 5 attributes with the lowest scores from the scorecards assigned to the agent during the selected time (the attribute score must be &lt; 80 to be highlighted as an opportunity area).    
+* **Opportunity Areas**: This displays the bottom 5 attributes with the lowest scores from the scorecards assigned to the agent during the selected time (the attribute score must be &lt; 80 to be highlighted as an opportunity area).    
     <img src="../agent-leaderboard/images/opportunity-areas.png" alt="Opportunity Areas" title="Opportunity Areas" style="border: 1px solid gray; zoom:80%;">
 
 **Coaching Assignments**
@@ -60,15 +62,15 @@ This feature displays all coaching assignments given to an agent as part of the 
 
 The Coaching Assignments include the following items:
 
-* **Agents**: This shows the name of the Coaching assignment agent.
+* **Agents**: This displays the name of the Coaching assignment agent.
 
-* **Coaching Area**: This shows all the attributes selected or designated as coaching areas for that assignment.  
+* **Coaching Area**: This displays all the attributes selected or designated as coaching areas for that assignment.  
 
-* **Assigned Date**: This shows the date that the coaching session was assigned.
+* **Assigned Date**: This displays the date that the coaching session was assigned.
 
-* **Follow-up Date**: This shows the assigned date as a follow-up date for that coaching assignment.
+* **Follow-up Date**: This displays the assigned date as a follow-up date for that coaching assignment.
 
-* **Status**: This shows three types of status for the coaching assignment, calculated based on the number of interactions opened out of those assigned (including both interactions marked for coaching and best responses) for that assignment as follows:
+* **Status**: This displays three types of status for the coaching assignment, calculated based on the number of interactions opened out of those assigned (including both interactions marked for coaching and best responses) for that assignment as follows:
 
     * **Start Now**: Number of interactions clicked through for that assignment. 
     
@@ -78,7 +80,7 @@ The Coaching Assignments include the following items:
        
     * **Yet to start**: Interactions for an assignment are yet to start.
 
-    * **In Progress**: Shows the total number of interactions that have been clicked through for that coaching assignment.
+    * **In Progress**: This displays the total number of interactions that have been clicked through for that coaching assignment.
 
     * **Completed**: All interactions clicked through for that assignment.
 
@@ -93,9 +95,9 @@ This feature displays an agent's assigned scorecards and allows supervisors to t
 
 #### Avg. Scorecard Score
 
-From the agent side, the scorecard trend widget shows the average scorecard for the selected time range and the scoring trend at an attribute level across the following time ranges in a tabular view.
+From the agent side, the scorecard trend widget displays the average scorecard for the selected time range and the scoring trend at an attribute level across the following time ranges in a tabular view.
 
-When a scorecard is selected, the average score for that agent within the chosen global date range is displayed. If no conversations are made after assigning, then the scorecard does not show any score for that agent. If any conversations exist, then the scorecard is displayed in the dropdown for scorecard trends.
+When a scorecard is selected, the average score for that agent within the chosen global date range is displayed. If no conversations are made after assigning, then the scorecard does not displays any score for that agent. If any conversations exist, then the scorecard is displayed in the dropdown for scorecard trends.
 
 #### Attributes
 
@@ -116,19 +118,19 @@ This allows supervisors to drill down and view specific agents' interactions and
 
 This Evaluation section has the following interactions listing items:
 
-* **Date**: Shows the date and time that an interaction has started.
+* **Date**: This displays the date and time that an interaction has started.
 
-* **Actions**: Shows the list of bookmarks assigned to an interaction, which you can filter and assign coaching for later reference.
+* **Actions**: This displays the list of bookmarks assigned to an interaction, which you can filter and assign coaching for later reference.
 
-* **Queues**: Shows the completed queue interaction and its origin.
+* **Queues**: This displays the completed queue interaction and its origin.
 
-* **Kore Evaluation Score**: This shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
+* **Kore Evaluation Score**: This displays the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
 
-* **Supervisor Audit Score**: Shows the Supervisor Audited score if the interaction has already been audited or manually evaluated.
+* **Supervisor Audit Score**: This displays the Supervisor Audited score if the interaction has already been audited or manually evaluated.
 
-* **Sentiment Score**: This shows the system-generated sentiment score for the interaction based on the context of what the customer said in the interaction (keywords and emotions about that topic).
+* **Sentiment Score**: This displays the system-generated sentiment score for the interaction based on the context of what the customer said in the interaction (keywords and emotions about that topic).
 
-* **Date Range Selection**: This allows you to filter the date range options for agent conversation interactions, with the default setting always showing the last 7 days.
+* **Date Range Selection**: This allows you to filter the date range options for agent conversation interactions, with the default setting always displaying the last 7 days.
 
 * **Bookmarks**: Allows you to filter the saved bookmark interactions that an agent has handled. This filters only the specific agent's interactions that have been bookmarked for coaching by the supervisor and need to be audited properly. This populates only the bookmarks that are audited in the agent dashboard.
 
@@ -142,6 +144,6 @@ This Evaluation section has the following interactions listing items:
     * **Audit Status**: This allows you to filter and apply audited and unaudited interactions separately before applying them for coaching assignments.       
        <img src="../agent-leaderboard/images/filter-audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
 
-    * **Filter Interactions**: Shows the total number of filtered interactions.
+    * **Filter Interactions**: This displays the total number of filtered interactions.
 
 For more detailed information, see [Coaching Assignments - Supervisor View](./coaching-assignments-supervisor-view.md).
