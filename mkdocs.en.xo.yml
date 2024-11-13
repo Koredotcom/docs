@@ -414,6 +414,7 @@ nav:
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
         - Configure Auto Summarization with Custom Dialog Tasks: agentai/configuration/configure-auto-summarization-with-custom-dialog-tasks.md
+        - Supported Languages: agentai/agent-experience/supported-languages.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
