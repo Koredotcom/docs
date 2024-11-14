@@ -1,25 +1,7 @@
 The following table displays all languages supported by the Agent AI widget, indicating which ones support the Auto Summarization and Greeting Messages features:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Table</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: Center; /* Center-align content */
-        }
-    </style>
-</head>
 <body>
 
-<table>
+<table align="center">
   <tr>
    <td><strong>Languages</strong>
    </td>
@@ -2301,5 +2283,3 @@ The following table displays all languages supported by the Agent AI widget, ind
    </td>
   </tr>
 </table>
-</body>
-</html>
