@@ -13,7 +13,7 @@ The following table displays all languages supported by the Agent AI widget, ind
         th, td {
             border: 1px solid black;
             padding: 8px;
-            text-align: Center; /* Center-align content. */
+            text-align: Center; /* Center-align content */
         }
     </style>
 </head>
