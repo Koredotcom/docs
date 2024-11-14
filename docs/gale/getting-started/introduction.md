@@ -10,7 +10,7 @@ You don't need to be an AI expert to use GALE. It has ready-to-use AI models and
 
 ## Key Components
 
-Agents, Models, and Playground are the key components of GALE that work together to enable businesses to leverage AI capabilities effectively.
+Agents, Models, and Prompts are the key components of GALE that work together to enable businesses to leverage AI capabilities effectively.
 
 === "Agents"
 
@@ -24,11 +24,11 @@ Agents, Models, and Playground are the key components of GALE that work together
     
     [Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
 
-=== "Playground"
+=== "Prompts"
 
-    GALE's Prompt Playground allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. The Playground helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
+    GALE's Prompts Studio allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. It helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
     
-    [Learn more about Playground :octicons-arrow-right-24:](../playground/overview.md)
+    [Learn more about Prompts :octicons-arrow-right-24:](../playground/about-prompt-studio.md)
 
 <hr>
 

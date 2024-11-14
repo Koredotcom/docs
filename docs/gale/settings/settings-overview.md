@@ -8,6 +8,8 @@ GALE’s **Settings** console is a centralized management interface that provide
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
 6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
+7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}
+8. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}
 
 ## Levels of Users Management 
 
@@ -76,8 +78,9 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 **Monitoring**
 
-- Track the audit logs of user actions within your account to gain insights into their activities. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard.
+- Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
+- Review Agent Performance Metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
+* Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -174,10 +177,38 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Monitoring - Audit Logs</b></td>
-   <td>View the log of all the changes made across the account by the linked users for log in and log out activities, and role management changes made by you for the specified time range.</td>
-   <td><ul><li>Select the date range and view periodic, event-based logs related to <b>Login/Log out</b> or <b>Roles</b> categories.</li>
+   <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and agent-level event logs.</td>
+   <td><ul><li>Select the date range and view periodic, event-based logs related to the following categories:</li>
+   <ul><li>Login/Logout</li>
+   <li>Roles</li>
+   <li>Integrations</li>
+   <li>Models</li>
+   <li>Agents</li>
+   <li>Users Management</li>
+   <li>Prompts</li>
+   <li>Dataset</li>
+   <li>Guardrails</li></ul>
    <li>Set one or more levels of custom filters to view only specific audit logs.</li>
    <li>Search for the required audit log from the listed entries.</li></ul></td>
+  </tr>
+    <tr>
+   <td><b>Monitoring - Agent Analytics Dashboard</b></td>
+   <td>Get actionable insights into successful and failed agent runs, average agent response time, and drill down into nodes execution data to enable informed decisions on agent deployments, optimize their performance, and accelerate system efficiency.</td>
+   <td><ul><li>Select a single date or date range to view periodic agent performance metrics.</li>
+   <li>Make performance comparison between different agent versions.</li>
+   <li>Keep track of failed execution runs and investigate the reason for the same.</li>
+   <li>Monitor the average response times of agents for various requests.</li>
+   <li>Monitor node executions across different types and ensure agent flow runs stay within your account's rate limits.</li>
+   <li>Optimize agent performance with real-time metrics.</li></ul></td>
+  </tr>
+      <tr>
+   <td><b>Monitoring - Model Analytics Dashboard</b></td>
+   <td>Review and monitor key performance indicators for open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance, as well as optimal performance.</td>
+      <td><ul><li>Select a single date or date range to view specific, time-based model performance metrics.</li>
+<li>Analyze credit consumption for deployment and fine-tuning requests, and monitor model replica generation within subscription limits to ensure optimal usage.</li>
+   <li>Compare successful versus failed requests over time and identify failure patterns.</li>
+   <li>Explore latency, requests, token generation, and scaling metrics through dedicated, expandable widgets.</li>
+   <li>Optimize model performance with access to real-time metrics.</li></ul></td>
   </tr>
 </table>
 

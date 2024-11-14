@@ -62,7 +62,7 @@ Displays the total number of audits (progress score) pending and completed.
 
 * **Completed**: Number of assigned interactions that are audited.
 * **Pending**: Number of interactions assigned for audit and not yet audited.
-* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
+* **Audit**: Click the **Audit** button, which directs you to the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
 For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining/#audit-allocations).
@@ -74,8 +74,12 @@ You can view both automated interactions and manual audits scores across the fol
 
 * **Daily**: Displays score for the last 7 days.
 * **Weekly**: Displays score for the last 7 weeks.
-* **Monthly**: Displays score for the last 7 months.  
+* **Monthly**: Displays score for the last 7 months.   
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
+
+## Adherence Heatmap
+This enables supervisors to view and track trends in agent compliance with specific metrics over time. It highlights interactions where agents consistently fail to meet metrics and offers the ability to filter non-compliant interactions. By analyzing the heatmap, supervisors can quickly identify areas of concern, monitor agent performance across evaluation forms or queues, and pinpoint agents who need attention. This provides actionable insights, helping supervisors make informed decisions and take targeted steps to drive improvement.  
+<img src="../dashboard/images/adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 ## Fail Statistics
 This chart displays the count of failed interactions based on the selected forms and date range. It allows you to visualize failure trends for the chosen forms over the last 7 days, 7 weeks, or 7 months, using daily, weekly, and monthly views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.

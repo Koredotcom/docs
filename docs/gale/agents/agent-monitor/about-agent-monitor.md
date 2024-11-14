@@ -8,7 +8,7 @@
 * **Performance Tracking**: Monitor your agents across multiple runs, gaining valuable insights into response times, execution patterns, and overall efficiency.
 * **Dual-View Analytics**:
     *  **All Runs**: Comprehensive data on all agent instances, offering a holistic view of endpoint interactions.
-    *  **LLM Calls**: Focused analytics on Gen AI node executions, providing deeper insights into language model performance.
+    *  **Model Runs**: Focused analytics on Gen AI node executions, providing deeper insights into language model performance.
 *  **Detailed Metrics**: Access critical performance indicators, including total runs, average response times (P90 and P99), and failure rates, allowing for precise performance tuning.
 *  **API Key Usage Monitoring**: Track and manage the utilization of API keys across your agent ecosystem.
 *  **Gen AI Node Analysis**: Gain specific insights into the performance of individual Gen AI nodes within your agents.

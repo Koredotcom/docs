@@ -168,13 +168,12 @@ nav:
     - External Models: 
       - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
       - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
-  - Playground: 
-    - About Playground: playground/overview.md
-    - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
-    - Add a Model: playground/add-a-model.md
-    - Select a Template for a Prompt: playground/select-a-template-for-a-prompt.md
-    - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
-    - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
+  - Prompts: 
+    - About Prompt Studio: playground/about-prompt-studio.md
+    - Accessing Prompt Studio: playground/accessing-prompt-studio.md
+    - Using Prompt Studio: playground/using-prompt-studio.md
+    - Advanced Features: playground/advanced-features.md
+    - More Options on Prompt Studio: playground/options-prompt-canvas.md
   - Data: 
     - Manage Data: data/manage-datasets.md
   - Settings:
@@ -191,5 +190,7 @@ nav:
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
-      - Audit Logs: settings/monitoring/audit-logs.md      
-   
+      - Audit Logs: settings/monitoring/audit-logs.md
+      - Analytics:
+        - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
+        - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
