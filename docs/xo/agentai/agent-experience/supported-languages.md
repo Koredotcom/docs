@@ -1,8 +1,6 @@
 The following table displays all languages supported by the Agent AI widget, indicating which ones support the Auto Summarization and Greeting Messages features:
 
 
-
-
 | **Languages**               | **Dialogs** | **Agent AI Widget (Localization)** | **Greeting Messages** | **Custom Summary through Dialog Task** | **OOTB Summarization** | **Answers** | **Playbooks** | **Coaching** |
 |-----------------------------|:-----------:|:----------------------------------:|:----------------------:|:-------------------------------------:|:-----------------------:|:-----------:|:-------------:|:------------:|
 | Arabic                      |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
@@ -57,3 +55,4 @@ The following table displays all languages supported by the Agent AI widget, ind
 | Georgian                      |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
 | Greek                         |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
 | Haitian Creole                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
+
