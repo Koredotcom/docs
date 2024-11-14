@@ -103,30 +103,36 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 <hr>
 
 ## Integrated Architecture for Omnichannel Customer Engagement
-The image below provides a high-level understanding of the XO platform's capabilities, the integrated nature of its components, and how they work together as an integrated system to support customer engagement across multiple channels.
+
+The image below provides a high-level understanding of the XO platform's capabilities, the integrated nature of its components, and how they work together to support customer engagement across multiple channels.
 
 <img src="../images/xo-platform-components-flow.png">
 
-Various components and their interactions within the XO platform:
+Here is how the various components work:
 
-* At the top, it has different **Channels** or entry points: Digital, Voice Gateway, and 3rd Party IVR.
-* These channels feed into the **Start / Exit Flows** component, which handles the interactions' initial and final stages. From there, the flow can branch out into other components based on the implementation.
-* Automation flow: 
-    - **Intelligent Virtual Assistant**: The interaction is sent to the Virtual Assistant. It can handle complex interactions via Automation AI use cases and natural language processing.
-    - **Search AI**: In addition to Automation AI use cases, you can use Search AI to retrieve information from vast datasets and feed the most relevant information to users via the Virtual Assistant. 
-* Agent transfer flow:
-    - **Contact Center / Agent Desktop**: The request is sent to Contact Center AI or Agent Desktop for live agent interactions.
-    - **Agent AI**: Provides AI-powered assistance and recommendations to human agents during interactions via Agent Desktop.
-    - **Third-Party Contact Center / Agent Desktop**: The request can be sent to external contact center solutions for live agent interactions.
-* **Campaigns** can interact with the Contact Center to help you manage and execute marketing and customer outreach efforts via outbound voice and web campaigns.
-* **Analytics** gathers data to provide insights into user interactions and system performance.
-* **App Management** supports the entire platform with functionalities for publishing, importing/exporting apps, user management, collaboration, billing, etc.
+* Entry channels serve as the first point of contact, including digital channels, voice gateways, and third-party IVR systems.
+
+* These channels feed into the start or exit flows, which handle the initial and final stages of interactions. The flow can branch out into an appropriate customer service flow, depending on the implementation.
+
+* Customer service flows:
+    
+    * Automation flow: The flow uses an Intelligent Virtual Assistant to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the Virtual Assistant.
+
+    * Agent transfer flow: The flow routes requests to live agents through the Contact Center or Agent Desktop. Agents receive AI-powered assistance during customer interactions. The flow can also connect with third-party contact centers.
+
+* Supporting systems:
+
+    * Campaigns work with the Contact Center to manage outbound voice and web marketing efforts.
+    
+    * Analytics gathers data to provide insights into user interactions and system performance.
+    
+    * App Management handles the platform's administrative tasks such as publishing, importing/exporting apps, user management, collaboration, and billing.
 
 <hr>
 
 ##### Related Links
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Key Differences - XO v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
+* [Key Differences Between v11 and v10](./key-differences-between-xo11-and-xo10.md)
 * [Current Limitations](../release-notes/current-limitations.md)
-* [Migration Path for Existing Customers - Upgrade Journey](./whats-new-in-xo-platform.md#migration-path-for-existing-customers-upgrade-journey)
+* [Upgrade Journey: Migration Path for Existing Customers](./whats-new-in-xo-platform.md#migration-path-for-existing-customers-upgrade-journey)
