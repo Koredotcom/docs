@@ -39,7 +39,7 @@ The option to record the test suite captures the metadata in the background whic
 
 #### Pre-processor Script
 
-The Pre-Processor Script allows users to manipulate session context data and inject custom data before and during test execution. Context data is preset during conversation recording, which can sometimes lead to unintended workflow paths during validation and cause false negatives. Additionally, users may need to test scenarios requiring custom data from external systems.
+The Pre-Processor Script allows users to manipulate session context data and inject custom data before and during test execution. Session context data is preset during conversation recording, which can sometimes lead to unintended workflow paths during validation and cause false negatives. Additionally, users may need to test scenarios requiring custom data from external systems.
 To address these needs, users can run custom scripts at the recording, validation, and execution phases of conversation testing, enabling them to:
 
 * **Modify Existing Session Context Data**: Adjust or reset session context data to ensure intended workflow paths.
