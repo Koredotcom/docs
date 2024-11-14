@@ -4,10 +4,12 @@ hide:
   - feedback
 ---
 # All-new Experience Optimization Platform
-Kore.ai all-new Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. The Platform seamlessly blends conversational AI intelligence and generative AI innovation, offering the tools to create scalable and memorable customer experiences. The Platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. The Platform's business user-friendly, no-code interface allows businesses to construct intelligent virtual assistants, incorporating large language models and generative AI to foster meaningful and continuous conversations in users' preferred languages and channels.
+The Kore.ai Experience Optimization (XO) Platform helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
+
+Built for security and scalability, the platform uses a no-code interface that lets businesses build intelligent virtual assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
 
 # Comprehensive Suite of Products and Services
-The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
+The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
 **Key Products, Features, and Services offered by the XO Platform:**
 
@@ -15,7 +17,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 === "Automation AI"
 
-    Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+    Automation AI offers sophisticated AI-powered tools for creating virtual assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
     Key Features
     
@@ -39,7 +41,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 === "Contact Center AI"
 
-    Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI Use Cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
+    Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI use cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
     
     Key Features
     
@@ -51,7 +53,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 === "Agent AI"
 
-    Agent AI is your agent’s personal intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
+    Agent AI is your agent’s personal intelligent virtual assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
     
     Key Features
     
@@ -116,7 +118,7 @@ Here is how the various components work:
 
 * Customer service flows:
     
-    * Automation flow: The flow uses an Intelligent Virtual Assistant to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the Virtual Assistant.
+    * Automation flow: The flow uses an intelligent virtual assistant to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the virtual assistant.
 
     * Agent transfer flow: The flow routes requests to live agents through the Contact Center or Agent Desktop. Agents receive AI-powered assistance during customer interactions. The flow can also connect with third-party contact centers.
 
