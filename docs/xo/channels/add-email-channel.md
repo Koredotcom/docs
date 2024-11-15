@@ -14,7 +14,7 @@ The email channel offers the following functionalities:
 You can use the Kore.ai Email domain or create your custom Email Domain to configure your email addresses.
 
 To configure the email domains, go to **Contact Center AI** > **Flows & Channels** > **CHANNELS** > **Email**.  
-<img src="../images/email-page.png" alt="Emails" title="Email" style="border: 1px solid gray; zoom:80%;">
+<img src="../channels/images/" alt="google assistant" title="google assistant" style="border: 1px solid gray; zoom:80%;">
 
 ## Kore.ai Email Domain
 
@@ -24,87 +24,193 @@ With the capabilities of the experience flow, we can efficiently route incoming 
 
 Any reply email managed by either the agent or the bot is directly sent to the end customer. To maintain transparency and accountability, the customer contact center domain is included in the BCC (Blind Carbon Copy) field and the Reply-to field. This configuration ensures that communication remains open and accessible to all relevant parties.
 
-Whenever the customer responds to the email thread, it is directed back to the customer contact center domain. From there, it is seamlessly forwarded to the Kore domain, ensuring a continuous and efficient communication loop.  
-<img src="../images/email-flow.png" alt="Email Flow" title="Email Flow" style="border: 1px solid gray; zoom:80%;">
+Whenever the customer responds to the email thread, it is directed back to the customer contact center domain. From there, it is seamlessly forwarded to the Kore domain, ensuring a continuous and efficient communication loop.
+
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image2.png "image_tooltip")
 
 ### Create a Kore Domain Email Address
 
 Steps to create an email address in the Kore domain:
 
-1. Click the **+ New Email Address** button.  
-    <img src="../images/kore-new-email-address-button.png" alt="+ New Email Address" title="+ New Email Address" style="border: 1px solid gray; zoom:80%;">
+1. Click the **+ New Email Address** button.
+
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image3.png "image_tooltip")
 
 2. Enter the following details.
     1. Email Address
     2. Display Name
     3. Choose whether to use the custom email for inbound, outbound, or both under **Additional Settings**.
     4. Choose whether you want to send a contact card to all users as a part of the introduction message under **Send contact card (.VCF)**.
-    5. Under the Enable Channel section, select **Yes** to enable the channel.  
-        <img src="../images/email-configuration-page.png" alt="Email Configuration Page" title="Email Configuration Page" style="border: 1px solid gray; zoom:80%;">
+    5. Under the Enable Channel section, select **Yes** to enable the channel.
+
+
+        <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+        !  [alt_text](images/image4.png "image_tooltip")
 
     6. Turn on the **Email Template Design (Optional)** toggle to configure the header and footer of the emails that are sent via the configured email address, and do the following:
-        1. Click **Edit Header** and **Edit Footer** to configure the header and footer details.  
-            <img src="../images/email-template-design.png" alt="Email Template Design" title="Email Template Design" style="border: 1px solid gray; zoom:80%;">
+        1. Click **Edit Header** and **Edit Footer** to configure the header and footer details.
+
+
+        <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+        ![alt_text](images/image5.png "image_tooltip")
 
         2. In the **Edit** window, change the header and footer details, and click **Save**.
-    7. Click **Preview** to see a preview of the Email template.  
-        <img src="../images/email-template-preview.png" alt="Email Template Preview" title="Email Template Preview" style="border: 1px solid gray; zoom:80%;">
+
+    7. Click **Preview** to see a preview of the Email template.
+
+
+        <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+        ![alt_text](images/image6.png "image_tooltip")
 
 3. Click **Save.**
-4. A success message is displayed and the email address is created.  
-    <img src="../images/kore-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">
+4. A success message is displayed and the email address is created.
+
+
+        <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+        ![alt_text](images/image7.png "image_tooltip")
 
 ### Attach a Flow to a Kore Domain Email Address
 
 Steps to attach a flow to an email address in the Kore domain:
 
-1. Go to **Flows & Channels** > **FLOWS** > **Start Flows**.  
-    <img src="../images/start-flow.png" alt="Start Flows" title="Start Flows" style="border: 1px solid gray; zoom:80%;">
+1. Go to **Flows & Channels** > **FLOWS** > **Start Flows**.
 
-2. Click the ellipsis icon (**⋮**) beside the flow you want to attach to the email and click **Update**.  
-    <img src="../images/update-flow.png" alt="Update" title="Update" style="border: 1px solid gray; zoom:80%;">
 
-3. Select the email address and click **Update**.  
-    <img src="../images/attach-email.png" alt="Attach Email" title="Attach Email" style="border: 1px solid gray; zoom:80%;">
+<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-4. A success message is displayed and the flow is attached to the email.  
-    <img src="../images/flow-attached.png" alt="Flow Attached" title="Flow Attached" style="border: 1px solid gray; zoom:80%;">
+
+![alt_text](images/image8.png "image_tooltip")
+
+2. Click the ellipsis icon (**⋮**) beside the flow you want to attach to the email and click **Update**.
+
+
+<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image9.png "image_tooltip")
+ \
+
+3. Select the email address and click **Update**.
+
+
+<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image10.png "image_tooltip")
+
+4. A success message is displayed and the flow is attached to the email.
+
+
+<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image11.png "image_tooltip")
 
 ### Publish Kore Domain Email Addresses
 
 Steps to publish email addresses in the Kore domain:
 
-1. Go to **Deploy** > **Deploy Management** > **Publish**.  
-    <img src="../images/publish-page.png" alt="Publish Page" title="Publish Page" style="border: 1px solid gray; zoom:80%;">
 
-2. Select the email address under channels and click **Proceed**.  
-    <img src="../images/select-email.png" alt="Select Email" title="Select Email" style="border: 1px solid gray; zoom:80%;">
 
-3. Enter the Comments and click **Confirm**.  
-    <img src="../images/comments-publish.png" alt="Enter Comments" title="Enter Comments" style="border: 1px solid gray; zoom:80%;">
+1. Go to **Deploy** > **Deploy Management** > **Publish**. \
 
-4. A success message is displayed and the email address is published.  
-    <img src="../images/email-published.png" alt="Email Published" title="Email Published" style="border: 1px solid gray; zoom:80%;">
+
+<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image12.png "image_tooltip")
+ \
+
+2. Select the email address under channels and click **Proceed**.
+
+
+<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image13.png "image_tooltip")
+
+3. Enter the Comments and click **Confirm**.
+
+
+<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image14.png "image_tooltip")
+
+4. A success message is displayed and the email address is published.
+
+
+<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image15.png "image_tooltip")
+
+
 
 ### Edit a Kore Domain Email Address
 
 Steps to edit an email address in the Kore domain:
 
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Edit**.  
-    <img src="../images/edit-kore-email.png" alt="Edit Email" title="Edit Email" style="border: 1px solid gray; zoom:80%;">
 
-2. The email configuration window is displayed. Click **Update** after making the changes.  
-    <img src="../images/update-configuration.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
+
+1. Click the ellipsis icon (**⋮**) beside the email address and click **Edit**.
+
+
+<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image16.png "image_tooltip")
+ \
+
+2. The email configuration window is displayed. Click **Update** after making the changes.
+
+
+<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image17.png "image_tooltip")
+
+
 
 ### Delete a Kore Domain Email Address
 
 Steps to delete an email address in the Kore domain:
 
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Delete**.  
-    <img src="../images/delete-kore-email.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Delete** on the confirmation pop-up window.  
-    <img src="../images/delete-kore-email-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
+
+1. Click the ellipsis icon (**⋮**) beside the email address and click **Delete**.
+
+
+<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image18.png "image_tooltip")
+
+2. Click **Delete** on the confirmation pop-up window.
+
+
+<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image19.png "image_tooltip")
+
+
 
 ## Custom Email Domain
 
@@ -114,35 +220,75 @@ Custom email domains add a professional look to your email communications, reinf
 
 Steps to create a custom domain:
 
-1. Click the **+ New Domain** button.  
-    <img src="../images/new-domain.png" alt="+ New Domain" title="+ New Domain" style="border: 1px solid gray; zoom:80%;">
 
-2. In the Add Domain dialog box, enter the **Domain Name** and click **Create**.  
-    <img src="../images/domain-name.png" alt="Domain Name" title="Domain Name" style="border: 1px solid gray; zoom:80%;">
 
-3. A success message is displayed and the new domain is created.  
-    <img src="../images/domain-created.png" alt="Domain Created" title="Domain Created" style="border: 1px solid gray; zoom:80%;">
+1. Click the **+ New Domain** button.
+
+
+<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image20.png "image_tooltip")
+
+2. In the Add Domain dialog box, enter the **Domain Name** and click **Create**.
+
+
+<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image21.png "image_tooltip")
+
+3. A success message is displayed and the new domain is created.
+
+
+<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image22.png "image_tooltip")
+
+
 
 ### Delete a Custom Domain
 
 Steps to delete a custom domain:
 
-1. Click the ellipsis icon (**⋮**) on the right corner and click **Delete**.  
-    <img src="../images/delete-domain.png" alt="Delete Domain" title="Delete Domain" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Delete** on the confirmation pop-up window.  
-    <img src="../images/delete-domain-confirmation.png" alt="Delete Domain Confirmation" title="Delete Domain Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-    !!! Note
+1. Click the ellipsis icon (**⋮**) on the right corner and click **Delete**.
 
-        Custom domains can only be deleted when no email addresses are added to the domain.
+
+<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image23.png "image_tooltip")
+
+
+2. Click **Delete** on the confirmation pop-up window.
+
+    **Note**: Custom domains can only be deleted when no email addresses are added to the domain.
+
+
+<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image24.png "image_tooltip")
+
+
+
 
 ### Create a Custom Email Address
 
 Steps to create an email address in the custom domain:
 
-1. Click **+ New Email Address**.  
-    <img src="../images/new-custom-email.png" alt="+ New Email" title="+ New Email" style="border: 1px solid gray; zoom:80%;">
+
+
+1. Click **+ New Email Address**.
+
+
+<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image25.png "image_tooltip")
 
 2. Enter the following details in the **Configuration** tab.
     1. Email Address
@@ -156,124 +302,102 @@ Steps to create an email address in the custom domain:
         5. Select “Use SSL to connect” if you want to use a Secure Socket Layer.
     5. Choose whether to use the custom email for inbound, outbound, or both under **Additional Settings**.
     6. Choose whether you want to send a contact card to all users as a part of the introduction message under **Send contact card (.VCF)**.
-    7. Under the Enable Channel section, select **Yes** to enable the channel.  
-        <img src="../images/custom-email-configuration.png" alt="Custom Email Configuration" title="Custom Email Configuration" style="border: 1px solid gray; zoom:80%;">
+    7. Under the Enable Channel section, select **Yes** to enable the channel.
+
+
+<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image26.png "image_tooltip")
 
     8. Turn on the **Email Template Design (Optional)** toggle to configure the header and footer of the emails that are sent via the configured email address, and do the following:
-        1. Click **Edit Header** and **Edit Footer** to configure the header and footer details.  
-            <img src="../images/email-template-design.png" alt="Email Template Design" title="Email Template design" style="border: 1px solid gray; zoom:80%;">
+        6. Click **Edit Header** and **Edit Footer** to configure the header and footer details.
 
-        2. In the **Edit** window, change the header and footer details, and click **Save**.
-    9. Click **Preview** to see a preview of the Email template.  
-        <img src="../images/custom-template-preview.png" alt="Preview Template" title="Template PReview" style="border: 1px solid gray; zoom:80%;">
 
-3. Click the **Test Connection** button to verify the domain ownership. A success message is displayed below the button upon successful completion.  
-    <img src="../images/test-connection.png" alt="Test Connection" title="Test Connection" style="border: 1px solid gray; zoom:80%;">
+<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image27.png "image_tooltip")
+
+        7. In the **Edit** window, change the header and footer details, and click **Save**.
+    9. Click **Preview** to see a preview of the Email template.
+
+
+<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image28.png "image_tooltip")
+
+3. Click the **Test Connection** button to verify the domain ownership. A success message is displayed below the button upon successful completion.
+
+
+<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image29.png "image_tooltip")
 
 4. Click **Save.**
-5. A success message is displayed and the email address is created.
-    <img src="../images/custom-email-created.png" alt="Custom Email Created" title="Custom Email Created" style="border: 1px solid gray; zoom:80%;">
+5. A success message is displayed and the email address is created. \
+**Note**: You can create up to three custom email addresses in a custom domain.
 
-    !!! Note
 
-        You can create up to three custom email addresses in a custom domain.
+<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image30.png "image_tooltip")
+
+
 
 ### Edit a Custom Domain Email
 
 Steps to edit an email address in the custom domain:
 
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Edit**.  
-    <img src="../images/edit-custom-email.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
-2. The email configuration window is displayed. Click **Save** after making the changes.  
-    <img src="../images/update-custom-configuration.png" alt="Save Changes" title="Save Changes" style="border: 1px solid gray; zoom:80%;">
+
+1. Click the ellipsis icon (**⋮**) beside the email address and click **Edit**.
+
+
+<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image31.png "image_tooltip")
+
+2. The email configuration window is displayed. Click **Save** after making the changes.
+
+
+<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image32.png "image_tooltip")
+
+
 
 ### Delete a Custom Domain Email
 
 Steps to delete an email address in the custom domain:
 
-1. Click the ellipsis icon (**⋮**) beside the email address and click **Delete**.  
-    <img src="../images/delete-custom-email.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Delete** on the confirmation pop-up window.  
-    <img src="../images/delete-custom-email-confirmation.png" alt="Delete Email Confirmation" title="Delete Email Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-## Email Blacklist
+1. Click the ellipsis icon (**⋮**) beside the email address and click **Delete**.
 
-Email blacklisting allows admins to specify a list of blacklisted email addresses during email address creation preventing blocking interactions originating from blacklisted email addresses, automations, and subsequent agent transfers are prevented, reducing unnecessary processing, and ensuring that resources are allocated to valid interactions.
 
-### Blacklist Verification
+<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-Upon receiving a new interaction, the system checks the incoming email address against the blacklist associated with the receiving email address.
 
-* If a match is found between the incoming email address and the blacklist, any pre-configured automations linked to the receiving email address will be disabled for that specific interaction. Automated agent transfers triggered by the interaction will be prevented, ensuring that blacklisted emails do not initiate further actions within the system.
-* If no match is found, the system will continue with the usual automation processes and agent transfer rules, handling the interaction as normal.
+![alt_text](images/image33.png "image_tooltip")
 
-### Configure Email Blacklist
+2. Click **Delete** on the confirmation pop-up window.
 
-Steps to Configure Email Blacklist:
 
-1. Click the **Email Blacklist** tab and turn on the **Enable Email Blacklist** toggle.  
-    <img src="../images/email-blacklist-tab.png" alt="Email Blacklist Tab" title="Email Blacklist Tab" style="border: 1px solid gray; zoom:80%;">
+<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-2. You can add email addresses manually or using bulk upload.
-    1. **Manual entry**:
-        1. Enter the email address in the search dialog box and click **Add**.  
-            <img src="../images/add-button.png" alt="Add Button" title="Add Button" style="border: 1px solid gray; zoom:80%;">
 
-            !!! Note
+![alt_text](images/image34.png "image_tooltip")
 
-                The search box can be used to search for existing email addresses or to add a new email address.
-        2. The email address is updated successfully.  
-            <img src="../images/email-blacklist-added.png" alt="Email Blacklist Added" title="Email Blacklist Added" style="border: 1px solid gray; zoom:80%;">
 
-    2. **Bulk Upload**:
-        1. Click **Bulk Upload**.  
-            <img src="../images/bulk-upload.png" alt="Bulk Upload" title="Bulk Upload" style="border: 1px solid gray; zoom:80%;">
 
-        2. A pop-up window is displayed. Click **Select a CSV file to Upload** and upload the CSV file. You can download a sample CSV file by clicking **Download sample CSV file**.  
-            <img src="../images/select-csv.png" alt="Select CSV" title="Select CSV" style="border: 1px solid gray; zoom:80%;">
 
-        3. The upload progress is displayed.  
-        <img src="../images/upload-progress.png" alt="Upload Progress" title="Upload Progress" style="border: 1px solid gray; zoom:80%;">
+<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-        4. On completion, map the CSV file fields with system fields.  
-            <img src="../images/map-fields.png" alt="Map Fields" title="Map Fields" style="border: 1px solid gray; zoom:80%;">
 
-            !!! Note
-
-                If the CSV file contains only one column, field mapping is not required and will not be displayed.
-
-        5. Click **Validate**.  
-            <img src="../images/validate.png" alt="Validate Button" title="Validate Button" style="border: 1px solid gray; zoom:80%;">
-
-        6. The details of the mapped contacts, duplicates, and errors (if any) are displayed. Click **Save**.  
-            <img src="../images/save-blacklist.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
-
-        7. A success message is displayed and the email blacklist is updated.  
-            <img src="../images/blacklist-updated.png" alt="Blacklist Updated" title="Blacklist Updated" style="border: 1px solid gray; zoom:80%;">
-
-### Edit Blacklisted Email Addresses
-
-1. Go to **Flows & Channels** > **CHANNELS** > **Emails** > Click the **Ellipsis** (**⋮**) icon.  
-    <img src="../images/ellipsis-button.png" alt="Ellipsis Button" title="Ellipsis Button" style="border: 1px solid gray; zoom:80%;">
-
-2. Click **Edit**.  
-    <img src="../images/edit-blacklist.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
-
-3. Do the required changes and click **Update**.
-
-### Delete Blacklisted Email Addresses
-
-Steps to delete blacklisted email addresses:
-
-1. Select the email addresses you want to delete and click the **Delete (bin)** icon.  
-    <img src="../images/delete-blacklist.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
-
-2. A confirmation message is displayed. Click **Delete**.  
-    <img src="../images/delete-blacklist-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
-
-3. A success message is displayed and the selected email addresses are deleted.  
-    <img src="../images/blacklist-email-deleted.png" alt="Blacklist Email Deleted" title="Blacklist Email Deleted" style="border: 1px solid gray; zoom:80%;">
-
-4. Click **Update**.
+![alt_text](images/image35.png "image_tooltip")

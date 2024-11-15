@@ -190,7 +190,9 @@ Steps to schedule a Campaign:
     3. Monthly,
     4. Yearly.
 
-    **Every “Enter Value” day(s)** is a subset of what you select, Daily, Weekly, Monthly, or Yearly.
+    **Every “Enter Value” day(s)** is a subset of what you select, Daily, Weekly, Monthly, or Yearly.  
+
+    <img src="../images/recurrance-duration.gif" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -215,7 +217,7 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 
 ### Stop a Scheduled Campaign
 
-Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.  
+Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign; re-running a stopped scheduled campaign creates a new instance and all the contacts will dialed again.    
 <img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
 
 A confirmation message is displayed. Click **Stop**.  
