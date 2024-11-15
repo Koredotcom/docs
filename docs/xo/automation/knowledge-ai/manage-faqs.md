@@ -94,9 +94,9 @@ Selecting multiple intents lets you delete them in bulk.
 
 ## FAQ Conditional Responses
 
-The FAQ Conditional Responses feature allows you to provide dynamic responses to FAQs so that you can provide personalized, context-aware responses to your users.
+The feature allows you to define rules for different responses to FAQs depending on specific conditions. It helps you handle complex scenarios while giving users more relevant, context-aware answers.
 
-### How Do Conditional Responses Work?
+### How Conditional Responses Work
 
 When the conditional responses are present, it works as follows:
 
@@ -104,15 +104,11 @@ When the conditional responses are present, it works as follows:
 2. Once the FAQ is identified, the conditions are evaluated in the order they're defined.
 3. If a condition is met, its corresponding response is selected.
 4. If no conditions are met, the default response is used.
-5. The platform prioritizes channel-specific responses for both conditional and default responses.
-     * Channel-Specific Priority
-        * If a condition is met and has a response for the user's channel, that response is used. For example, if the user interacts via MS Teams and the first condition is passed Which has two responses, one for “MS Teams” and one for "All Channels", the MS Teams response will be delivered.
-     * "All Channels" Fallback
-        * If conditional responses are available for Slack and All Channels, the "All Channels" response will be delivered on MS Teams.
-     * Condition Skipping
-        * If the conditional responses are for Slack and Twitter only, the platform skips the conditional response and checks the next condition. If no conditions match, the default response is delivered.
-     * Default Response Selection
-        * For default responses, the platform first attempts to select a channel-specific response. If none is available, the default "All Channels" response will be presented.
+5. Channel-specific responses take priority for both conditional and default responses.
+   * Channel-specific priority: If a matching condition has a response for the user's channel, use that response first. For example, for MS Teams users, the MS Teams response is used over the "All Channels" response.
+   * "All Channels" fallback: If no channel-specific response exists, use the "All Channels" response. For example, MS Teams users get the "All Channels" response when only the Slack and "All Channels" options exist.
+   * Condition skipping: If responses exist only for other channels, skip to the next condition. For example, skip responses that are meant only for Slack and Twitter. If no conditions match, deliver the default response.
+   * Default response selection: For default responses, first attempt to select a channel-specific response. If none is available, deliver the default "All Channels" response.
 
 
 !!! example "Example Scenarios"
@@ -139,50 +135,50 @@ When the conditional responses are present, it works as follows:
       Default (No condition met):
 
       * Web: "International shipping rates vary. Please check our shipping page for detailed information on rates and delivery times."
-      * Mobile: "Int'l shipping rates vary. Tap here for your location's rates and times."
+      * Mobile: "International shipping rates vary. Tap here for your location's rates and times."
       * All Channels: "Shipping options depend on your location. Please contact our customer service for specific shipping information."
 
       **Scenarios**
 
       Let's see how the answers/responses are selected in different scenarios:
 
-      Scenario 1: Customer from the United States accessing via Web
+      Scenario 1: Customer from the United States accessing using Web
 
       * Condition "Customer Location Equals To United States" is satisfied for the Web.
       * Selected Response: "We offer free standard shipping on orders over $50 within the United States. Express shipping is available for $15."
 
-      Scenario 2: Customer from Canada accessing via Mobile
+      Scenario 2: Customer from Canada accessing using Mobile
 
       * Condition "Customer Location Equals To Canada" is satisfied for Mobile.
       * Selected Response: "Canada shipping: $10 flat rate. Free on $100+ orders. Tap for info."
 
-      Scenario 3: Customer from the United Kingdom accessing via Web
+      Scenario 3: Customer from the United Kingdom accessing using Web
 
       * Condition "Customer Location Equals To United Kingdom" is satisfied for the Web.
       * Selected Response: "Shipping to the UK is £5 for standard delivery. Free shipping on orders over £75."
 
-      Scenario 4: Customer from France accessing via Mobile
+      Scenario 4: Customer from France accessing using Mobile
 
-      * Channel-specific as well as "All Channels" conditions are not satisfied.
-      * Selected Response (default): "Int'l shipping rates vary. Tap here for your location's rates and times."
+      * Channel-specific and "All Channels" conditions are not satisfied.
+      * Selected Response (default): "International shipping rates vary. Tap here for your location's rates and times."
 
 
 ### Best Practices 
 
-When creating your conditional responses:
+When setting up conditional responses:
 
-* Identify the most important factors for your FAQ (e.g., location, time, user metadata like customer type, products/services, etc).
+* Identify important factors like location, customer type, products, and services.
 * Create specific conditions for these factors.
-* Order your conditions from most to least specific 
-* Use AND logic for more specific scenarios OR logic for wider coverage.
-* Always provide a default response for cases where no conditions are met. 
-* When using variables from the context object to define the conditional responses, it is recommended to have these variables as part of the ‘BotUserSession’ (context.session.BotUserSession) as they will be available across the session between the user and the bot.  
+* Order your conditions from most to least specific.
+* Use ‘AND’ for specific scenarios and ‘OR’ for broader ones.
+* Always set a default response.
+* Create only a few conditions or nested rules; too many conditions can make the graph overly complex and difficult to manage.
+* When using variables from the context object to define the conditional responses, use only ‘BotUserSession’ variables (context.session.BotUserSession), as they will be available across the session between the user and the bot.
 
 ### Limitations 
 
-* A maximum of 10 conditions are allowed per FAQ. 
-* A maximum of up to 10 nested rules are allowed per condition.
-* It is not recommended to create too many conditions or nested rules, as this can make the graph overly complex and difficult to manage.
+* Maximum 10 conditions per FAQ.
+* Maximum 10 nested rules per condition.
 
 ### Setting Up Conditional Responses 
 
