@@ -1,5 +1,5 @@
 site_name: Kore ai Docs
-site_author: Rajasekhar Balla
+site_author: Kore ai Content Experience Team
 docs_dir: 'docs/xo/'
 site_dir: 'site/xo/'
 repo_name: Koredotcom/docs
@@ -159,7 +159,7 @@ nav:
               - IVR: channels/IVR-integration.md
       - Glossary: getting-started/glossary/concepts-and-terminology.md      
     - Release Notes:
-      - Release Communications: release-notes/release-communications.md
+      - Release Communication: release-notes/release-communications.md
       - What's New:
         - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md

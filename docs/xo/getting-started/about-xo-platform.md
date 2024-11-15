@@ -11,7 +11,7 @@ Built for security and scalability, the platform uses a no-code interface that l
 # Comprehensive Suite of Products and Services
 The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
-**Key Products, Features, and Services offered by the XO Platform:**
+**Key Products, Features, and Services Offered by the XO Platform:**
 
 <img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
 

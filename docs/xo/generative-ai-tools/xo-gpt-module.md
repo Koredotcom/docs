@@ -1,6 +1,5 @@
 
 # Kore.ai XO GPT Module
-	
 The new Kore.ai XO GPT module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Initial capabilities include Conversation Summarization and User Query Rephrasing. We plan to add more capabilities in future updates, including Intent Resolution, Bot Response Rephrasing, and Entity Co-referencing.
 
 !!! note
@@ -9,7 +8,6 @@ The new Kore.ai XO GPT module provides fine-tuned large language models optimize
 
 
 ## Benefits of Using the Module
-
 The XO GPT module offers fast, accurate AI responses with built-in security:
 
 * **Better Accuracy**: The module leverages smaller foundation models, typically under 10 billion parameters, that have been explicitly fine-tuned for conversational AI applications. The models achieve better accuracy, relevance, and interpretability for production deployment by tuning smaller models rather than directly prompting larger generative models.
@@ -21,8 +19,7 @@ The XO GPT module offers fast, accurate AI responses with built-in security:
 * **Data Security and Privacy**: The models are fully integrated into the XO Platform, enabling the same enterprise-grade data confidentiality, privacy, and governance enforced across the XO stack.
 
 
-## Kore.ai’s Model Fine-Tuning Process
-
+## Kore.ai’s Model Fine-tuning Process
 Fine-tuning is an iterative process of taking a pre-trained LLM and adapting it to perform conversational AI tasks:
 
 1. **Collect Data**: Gather a dataset relevant to the desired task. This dataset serves as the training material for fine-tuning the LLM.
@@ -35,7 +32,6 @@ Fine-tuning is an iterative process of taking a pre-trained LLM and adapting it 
 
 
 ## Features Supported by the Module
-
 The Kore.ai XO GPT module currently supports the following features:
 
 * **Conversation Summary**: This model generates concise, natural language summaries of interactions between the virtual assistant, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Enterprises can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations without reading lengthy transaction histories. It is pre-integrated with Kore.ai’s Contact Center platform and extensible to third-party applications via API integration. [Learn more](co-pilot-features.md#conversation-summarization).

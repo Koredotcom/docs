@@ -1,4 +1,4 @@
-# XO Platform Release Communications
+# XO Platform Release Communication
 
 The XO Platform receives updates every fifteen days with new features, enhancements, and bug fixes. Release schedules may be adjusted during holidays.
 
