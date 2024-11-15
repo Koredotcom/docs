@@ -7,7 +7,7 @@ FAQs allow you to add question-answer sets to your Knowledge Graph and map them 
     * The **Manage KG** option is available only for enterprise accounts.
     * There is a limit of 50k FAQs over 20k nodes to avoid performance issues.
 
-All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
+All features explained in this document are supported by the Few-Shot Knowledge Graph, except for the following:
 
 * Adding the Root Term/Node without an ontology structure. However, you can create one to improve intent detection.
 * Default terms. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
