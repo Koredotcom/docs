@@ -105,13 +105,13 @@ When the conditional responses are present, it works as follows:
 4. If no conditions are met, the default response is used.
 5. Channel-specific responses take priority for both conditional and default responses.
 
-        * Channel-specific priority: If a matching condition has a response for the user's channel, use that response first. For example, for MS Teams users, the MS Teams response is used over the "All Channels" response.
+      * Channel-specific priority: If a matching condition has a response for the user's channel, use that response first. For example, for MS Teams users, the MS Teams response is used over the "All Channels" response.
 
-        * "All Channels" fallback: If no channel-specific response exists, use the "All Channels" response. For example, MS Teams users get the "All Channels" response when only the Slack and "All Channels" options exist.
+      * "All Channels" fallback: If no channel-specific response exists, use the "All Channels" response. For example, MS Teams users get the "All Channels" response when only the Slack and "All Channels" options exist.
         
-        * Condition skipping: If responses exist only for other channels, skip to the next condition. For example, skip responses that are meant only for Slack and Twitter. If no conditions match, deliver the default response.
+      * Condition skipping: If responses exist only for other channels, skip to the next condition. For example, skip responses that are meant only for Slack and Twitter. If no conditions match, deliver the default response.
         
-        * Default response selection: For default responses, first attempt to select a channel-specific response. If none is available, deliver the default "All Channels" response.
+      * Default response selection: For default responses, first attempt to select a channel-specific response. If none is available, deliver the default "All Channels" response.
 
 
 !!! example "Example Scenarios"
