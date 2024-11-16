@@ -10,7 +10,7 @@ Steps to add and configure the node:
 
 1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
 
-2. Click the **Go to flow** to edit the in-development version of the flow.
+2. Click **Go to flow** to edit the in-development version of the flow.
 
 3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, drag the **Function** node from the Assets panel onto the canvas.)
 
@@ -34,14 +34,14 @@ Steps to add and configure the node:
             ~~~
 
             !!! note
-                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  numpy. [Learn more](../types-of-nodes/script-libraries.md).
+                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or numpy. [Learn more](../types-of-nodes/script-libraries.md).
 
-        2. You can use the Context input/output feature to use a variable from the previous node or when testing a function.
+        2. You can use the Context input or output feature to use a variable from the previous node or when testing a function.
             * **Context Input**: Add the required variable; dummy input values can be given to test the defined function.
             * **Context Output**: Shows the results of the function from the given input.
             * **Log**: Monitor the state of the function and view the values.
 
-        3. Click the **Run** button to test the script. Once the script is resolved successfully, the results are displayed in the Log section.
+        3. Click **Run** to test the script. Once the script is resolved successfully, the results are displayed in the Log section.
         4. Close the Script Editor.
 
 6. Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.  
