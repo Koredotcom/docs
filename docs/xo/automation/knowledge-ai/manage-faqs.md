@@ -7,15 +7,15 @@ FAQs allow you to add question-answer sets to your Knowledge Graph and map them 
     * The **Manage KG** option is available for enterprise accounts only.
     * Limited to 50k FAQs across 20k nodes to avoid performance issues.
 
-All features explained in this document are supported by the Few-Shot Knowledge Graph, except for the following:
+The Few-Shot Knowledge Graph supports all features explained in this document, except the following:
 
-* Adding the Root Term/Node without an ontology structure is not. However, you can create one to improve intent detection.
+* Adding the root term or node without an ontology structure. However, you can create one to improve intent detection.
 
-* When switching from Ontology Graph, existing Default terms stay until updated. After updating, they become Organizer terms and can be set as Mandatory.
+* When switching from Ontology Graph, existing default terms stay until updated. After updating, they become organizer terms and can be set as mandatory.
 
-* Lemmatization using Parts of Speech Search is unavailable for Answer and Contextual Paths Qualification. See the [Knowledge Graph Types Comparison Table](./knowledge-graph-overview.md#compare-knowledge-graph-types){:target="_blank"} for a detailed list of supported features.
+* Lemmatization using Parts of Speech Search is unavailable for answer and contextual paths qualification. See the [Knowledge Graph Types Comparison Table](./knowledge-graph-overview.md#compare-knowledge-graph-types){:target="_blank"} for a detailed list of supported features.
 
-* Path Level and Knowledge Graph Synonyms are supported only for Mandatory Terms and Tags.
+* Path Level and Knowledge Graph Synonyms are supported only for mandatory terms and tags.
 
 ## Add FAQs
 Step to add an FAQ:
@@ -48,9 +48,9 @@ To add a channel-specific response, select the channel from the channels list be
 
 !!! Note
 
-    We recommend adding one response for All Channels, which will be triggered in the absence of a channel-specific response.
+    Add at least one response for All Channels, which will be triggered in the absence of a channel-specific response.
 
-**Handling Lengthy Responses and Improving Readability**
+### Handling Lengthy Responses and Improving Readability
 
 Sometimes, the FAQ responses are lengthy or may include nice-to-have information along with the primary response. To improve the readability of such responses, you can do one of the following:
 
@@ -81,7 +81,7 @@ Steps to move FAQs between nodes:
 
 ## Edit FAQs and Responses
 
-Steps to edit FAQs and Responses:
+Steps to edit FAQs and responses:
 
 1. From the nodes hierarchy, select the relevant term.
 2. FAQs associated with the term appear on the right pane.
@@ -105,9 +105,13 @@ When the conditional responses are present, it works as follows:
 3. If a condition is met, its corresponding response is selected.
 4. If no conditions are met, the default response is used.
 5. Channel-specific responses take priority for both conditional and default responses.
+
    * Channel-specific priority: If a matching condition has a response for the user's channel, use that response first. For example, for MS Teams users, the MS Teams response is used over the "All Channels" response.
+
    * "All Channels" fallback: If no channel-specific response exists, use the "All Channels" response. For example, MS Teams users get the "All Channels" response when only the Slack and "All Channels" options exist.
+   
    * Condition skipping: If responses exist only for other channels, skip to the next condition. For example, skip responses that are meant only for Slack and Twitter. If no conditions match, deliver the default response.
+   
    * Default response selection: For default responses, first attempt to select a channel-specific response. If none is available, deliver the default "All Channels" response.
 
 
@@ -140,7 +144,7 @@ When the conditional responses are present, it works as follows:
 
       **Scenarios**
 
-      Let's see how the answers/responses are selected in different scenarios:
+      Let's see how the responses are selected in different scenarios:
 
       Scenario 1: Customer from the United States accessing using Web
 
@@ -168,12 +172,23 @@ When the conditional responses are present, it works as follows:
 When setting up conditional responses:
 
 * Identify important factors like location, customer type, products, and services.
+
 * Create specific conditions for these factors.
+
 * Order your conditions from most to least specific.
+
 * Use ‘AND’ for specific scenarios and ‘OR’ for broader ones.
+
 * Always set a default response.
+
 * Create only a few conditions or nested rules; too many conditions can make the graph overly complex and difficult to manage.
+
 * When using variables from the context object to define the conditional responses, use only ‘BotUserSession’ variables (context.session.BotUserSession), as they will be available across the session between the user and the bot.
+
+* Create context, environment, or content variables before using them in conditional responses.
+
+* Save and train the FAQ after changes; publish to update the end channel.
+
 
 ### Limitations 
 
@@ -195,11 +210,10 @@ For example: `context.session.Usercontext.emailID Equals To xxx@xmail.com`
 8. Under each condition, enter your response text in the **Then Response** section.
 9. Optionally, specify channel-specific variations of the response by selecting the channel from the dropdown menu of **All Channels.**
 
-!!! note "Important Points"
+!!! note "Notes"
 
-    1. When a new app is created, it will only use the Fewshot model. However, if an old app or a bot converted to an app is imported, the model may be set to Ontology. To verify this, navigate to **Natural Language** > **NLU config** > **Knowledge Graph** > **KG type** and check for the Fewshot model.
-    2. Ensure to save and train the FAQ after each creation or edit. Without training, the changes will not be reflected in the RTM. The updates will only be visible in the end channel after publishing.
-    3. Enabling **Conditional Response** removes any existing extended responses.
-    4. Disabling the **Conditional Response** will permanently erase all data entered in the conditional responses, and this action is irreversible.
-    5. Ensure the context, environment, or content variables are created before implementing the **Conditional Response**.
-    6. **Conditional Responses** are included only when the Knowledge Graph is exported in JSON format. Conditional responses are not supported in the CSV format. 
+    * New apps use the Fewshot model; imported apps may use the Ontology model. Check the model in **NLU Config** > **Knowledge Graph** > **KG Type**.
+    
+    * Enabling conditional responses removes extended responses. Disabling conditional response permanently deletes conditional response data.
+    
+    * Exporting the Knowledge Graph as JSON includes conditional responses; exporting as CSV does not.
