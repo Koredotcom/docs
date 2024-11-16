@@ -81,7 +81,7 @@ Steps to move FAQs between nodes:
 
 ## Edit FAQs and Responses
 
-Steps to edit FAQs and Responses:
+Steps to edit FAQs and responses:
 
 1. From the nodes hierarchy, select the relevant term. FAQs associated with the term appear on the right pane.
 3. Hover over the intent or response and click the **Edit** icon.
@@ -93,7 +93,7 @@ You can also select multiple intents to delete them in bulk.
 
 ## FAQ Conditional Responses
 
-The feature allows you to define rules for different responses to FAQs depending on specific conditions. It helps you handle complex scenarios while giving users more relevant, context-aware answers.
+The feature lets you define rules for different responses to FAQs depending on specific conditions. It helps you handle complex scenarios while giving users more relevant, context-aware answers.
 
 ### How Conditional Responses Work
 
@@ -195,6 +195,8 @@ When setting up conditional responses:
 * Maximum 10 nested rules per condition.
 
 ### Setting Up Conditional Responses 
+
+Steps to set up conditional responses:
 
 1. Navigate to the FAQ management section in your dashboard. 
 2. Select the FAQ you want to enhance with conditional responses. 
