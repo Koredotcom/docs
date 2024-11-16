@@ -10,7 +10,7 @@ Steps to add and configure the node:
 
 1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
 
-2. Click **Go to flow** for the in-development version of the flow for editing.
+2. Click **Go to flow** to edit the in-development version of the flow.
 
 3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **Gen AI** from the pop-up menu. (Alternatively, drag the **Gen AI** node from the Assets panel onto the canvas.)  
 
