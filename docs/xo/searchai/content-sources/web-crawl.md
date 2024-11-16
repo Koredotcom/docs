@@ -39,9 +39,9 @@ You can choose to run the crawl in the background which allows you to perform ot
 
 **Description** - Enter a description of the source. This field can contain any information about the source, such as the data it offers and the reason for adding it as a source. 
 
-**Crawl Sources** – There are three ways to initiate crawling for a web domain. 
+**Crawl Sources** – There are three ways to initiate crawling for a web domain.
     1. **URL** – Provide the base URL of the web domain to be crawled. When a URL is provided, the crawler automatically goes through the web pages that are discoverable through this URL in the domain based on the **crawl configuration** discussed below.
-    2. **Upload Sitemap** – Provide a list of sitemaps as a CSV file and a Base URL. The base URL is used to validate the URLs in the sitemaps.  It crawls through all the web pages listed in each sitemap in the CSV file, for which the URL matches the Base URL. If a URL in the sitemap does not match the base URL, the crawler skips that URL and does not crawl it. The crawl options are used to refine the URLs further for crawling. You can use the sample sitemap CSV to learn the format of the CSV file.  
+    2. **Upload Sitemap** – Provide a list of sitemaps as a CSV file and a Base URL. The base URL is used to validate the URLs in the sitemaps.  It crawls through all the web pages listed in each sitemap in the CSV file, for which the URL matches the Base URL. If a URL in the sitemap does not match the base URL, the crawler skips that URL and does not crawl it. The crawl options are used to refine the URLs further for crawling. You can use the sample sitemap CSV to learn the format of the CSV file. 
     3. **Upload URL**– Provide a list of URLs to crawl in the form of a CSV file and a base URL. The base URL is used to validate the URLs in the CSV file.  In this case, the crawler goes through all the pages listed in the CSV file that match the Base URL. The URLs that match the base URL are crawled, and those that do not match are skipped. The crawl options are used to refine the URLs further for crawling. In this case, crawl depth and max URL crawl options are not required.  Use the *Sample URL CSV* to learn about the format of the CSV file.
 
 **Crawl depth** – Each website contains multiple levels of the hierarchy of pages and subpages. The source URL is considered to be at the top of the hierarchy, and other pages linked to the source URL create nested layers. Crawl depth refers to the maximum number of nested levels that the crawler should go to. Set to 0 to indicate no limit. If no value is provided for the field, the default crawl depth is set to 5. 
@@ -79,10 +79,10 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
     ![Crawl Only Specific URLs](../images/URL-include-conditions.png "crawl only specific URLs")
         
     You can use any of the following types of conditions to choose the URLs:
-    * **Equals to** - when the URL exactly matches the given value. 
-    * **Not equal to** - when the URL does not match the given value. 
-    * **Contains** - when a given string is found in the URL. 
-    * **Does not contain** - When a given string value is not found in the URL. 
+    * **Equals to** - when the URL exactly matches the given value.
+    * **Not equal to** - when the URL does not match the given value.
+    * **Contains** - when a given string is found in the URL.
+    * **Does not contain** - When a given string value is not found in the URL.
     * **Begins with** - when a given string is found at the beginning of the URL.
     * **Ends with** - when a given string is found at the end of the URL.
             
@@ -90,12 +90,12 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
         
     ![Number of rules](../images/multiple-include-conditions.png "number of rules")
 
-* **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for recrawling the web domain at regular intervals. 
-    
-To set a schedule, enter the following:    
-   * **Date**: The date you want to schedule the first crawl of the web source.
-   * **Time**: When you want to schedule the first crawling of the web source. Specify the hours and minutes in a 12-hour format along with the timezone.
-   * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the  the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
+* **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for recrawling the web domain at regular intervals.  
+
+To set a schedule, enter the following:
+    * **Date**: The date you want to schedule the first crawl of the web source.
+    * **Time**: When you want to schedule the first crawling of the web source. Specify the hours and minutes in a 12-hour format along with the timezone. 
+    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the  the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
 
 * **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. 
 
@@ -229,7 +229,7 @@ Crawling a web domain takes time, depending on the crawl options set for the sou
  
 This information can be very useful for understanding the data retrieved from the web source.
 
-![Crawled pages](../images/crawled-pages-logs.png "crawled pages")
+![Crawled pages](../images/crawled-pages_logs.png "crawled pages")
 
 It lists the pages crawled in the last update, the user who initiated the crawl, and the URL of the crawled page. You can also recrawl a given page or delete it using the actions for the page. 
 ![Page actions](../images/pages-actions.png "page actions")
@@ -254,6 +254,8 @@ You can also use the Re-Crawl on the configuration page of the web source. ![Rec
 
 
 You can also recrawl selected pages of the source when you know the specific pages that have been updated. This can avoid the unnecessary crawling of the whole source. Go to the **Pages** tab of the source and click the **Recrawl** link under **Actions** for the page to be crawled.![Recrawl a page](../images/page-actions.png "recrawl a page")
+
+Whenever a web page is recrawled, all the existing chunks corresponding to the content are deleted and recreated.
 
 ## Deleting an existing web crawler
 
