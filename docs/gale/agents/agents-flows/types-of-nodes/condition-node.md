@@ -35,20 +35,14 @@ Steps to add and configure the node:
         1. In the **IF** section, select the context variable you want to use - enter "{{context." and select the node/variable from the list and then close the braces with "}}".  
         <img src="../images/if-condition-context-variable-selection.png" alt="Using Context Variable" title="Using Context Variable" style="border: 1px solid gray; zoom:80%;">
         
-            Example: 
-            ~~~
-            {{context.ambiguous_sub_categories}}
-            ~~~
+            Example: `{{context.ambiguous_sub_categories}}`
         
         2. Select an appropriate Operator from the drop-down list. For example, **Contains**.
 
         3. Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node or variable, and then close the braces with "}}".
             
-            Example:
-            ~~~
-            {{context.steps.Sub_Category_Detection.output}}   
-            ~~~
-        
+            Example: `{{context.steps.Sub_Category_Detection.output}}`   
+                  
         4. Additionally, you can use an **AND**/**OR** logical operator to add more criteria to the condition.
 
         5. In the **Then Go To** drop-down list, select the node to connect if the condition is met.
