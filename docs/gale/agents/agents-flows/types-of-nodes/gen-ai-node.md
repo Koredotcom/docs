@@ -26,13 +26,9 @@ Steps to add and configure the node:
     * **System Prompt**: Enter the system prompt for your use case. For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters.”
 
     * **Prompt**: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
-    Format:
+    Syntax: `{{context.variable_name}}`
 
-        `{{context.variable_name}}`
-
-         Example:
-
-        `{{context.conversation}}`
+        Example: `{{context.conversation}}`
 
     * **Few-shot examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of user input and expected AI output.  
     <img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:60%;"> 
@@ -70,7 +66,7 @@ Steps to add and configure the node:
 
 ## Access the Gen AI Node’s Output
 
-The node’s output is stored in a context variable. You can access the variable as follows:
+The node’s output is stored in a context variable. You can access the variable using the following syntax:
 
 `{{context.steps.GenAINodeName.output}}`
 

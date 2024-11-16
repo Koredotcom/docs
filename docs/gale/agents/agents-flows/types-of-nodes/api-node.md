@@ -63,7 +63,7 @@ Steps to add and configure the node:
 
 !!! note
     
-    To access an API node using the context variable, use the following format: 
+    Use the following syntax to access an API node using the context variable: 
     ~~~
     {{context.steps.Start.APINodeName}}
     ~~~

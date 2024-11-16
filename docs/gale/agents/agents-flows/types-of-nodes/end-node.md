@@ -26,7 +26,7 @@ Steps to add and configure the node:
     
     * **Value**: Select an appropriate variable or node as the value. Enter “{{context.” and select the node/variable from the list and then close the braces with “}}”.
     
-        For example:
+        Syntax example:
         ~~~
         {{context.steps.summarization.output}}
         ~~~  
