@@ -1,6 +1,6 @@
 # Gen AI Node
 
-The Gen AI Node is a key component in GALE's Agent Flow that lets you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the Agent Flow.
+The Gen AI node is a key component in GALE's agent flow that lets you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the agent flow.
 
 ## Add and Configure a Gen AI Node
 

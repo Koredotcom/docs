@@ -1,6 +1,6 @@
 # Function Node
 
-Function nodes allow you to write custom scripts using JavaScript or Python to process context variables or other variables used in the agent flow.
+The Function node lets you write custom scripts using JavaScript or Python to process context variables or other variables used in the agent flow.
 
 ## Add and Configure a Function Node
 

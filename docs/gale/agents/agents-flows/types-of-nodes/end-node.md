@@ -1,6 +1,6 @@
 # End Node
 
-End nodes lets you show the agent or flow's outputs on success or an error message on failure.   
+The End node lets you show the agent or flow's outputs on success or an error message on failure.   
 
 ## Add and Configure an End Node
 
