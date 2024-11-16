@@ -35,7 +35,7 @@ Steps to add and configure the node:
         1. In the **IF** section, select the context variable you want to use - enter "{{context." and select the node/variable from the list and then close the braces with "}}".  
         <img src="../images/if-condition-context-variable-selection.png" alt="Using Context Variable" title="Using Context Variable" style="border: 1px solid gray; zoom:80%;">
         
-            Syntax example: 
+            Example: 
             ~~~
             {{context.ambiguous_sub_categories}}
             ~~~
@@ -44,7 +44,7 @@ Steps to add and configure the node:
 
         3. Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node or variable, and then close the braces with "}}".
             
-            Syntax example:
+            Example:
             ~~~
             {{context.steps.Sub_Category_Detection.output}}   
             ~~~

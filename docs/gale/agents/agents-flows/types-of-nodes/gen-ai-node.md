@@ -67,7 +67,6 @@ Steps to add and configure the node:
 ## Access the Gen AI Node’s Output
 
 The node’s output is stored in a context variable. You can access the variable using the following syntax:
-
 `{{context.steps.GenAINodeName.output}}`
 
 !!! note
