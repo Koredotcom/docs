@@ -203,7 +203,7 @@ Steps to set up conditional responses:
 3. Toggle to enable the **Conditional Response** switch.  
 <img src="../images/conditional-response.png" alt="conditional-response" title="conditional-response" style="border: 1px solid gray; zoom:75%;">
 
-4. Define conditions based on content, context, and environmental variables. The condition must be defined properly without any discontinuation.
+4. Define conditions based on content, context, and environmental variables. The condition must be defined properly without any discontinuation.  
 For example: `context.session.Usercontext.emailID Equals To xxx@xmail.com`
 5. Select an appropriate operator from the dropdown list: Exists, Does Not Exist, Equals To, or Not Equals To. 
 6. Enter the value to compare against. 
