@@ -81,15 +81,14 @@ Steps to move FAQs between nodes:
 
 ## Edit FAQs and Responses
 
-Steps to edit FAQs and responses:
+Steps to edit FAQs and Responses:
 
-1. From the nodes hierarchy, select the relevant term.
-2. FAQs associated with the term appear on the right pane.
-3. Hover over the Question or Response to edit it and click the **edit** icon.
-4. Make changes to the Question or Response and click **Save**.
-5. You can delete the Question using the **bin** icon.
+1. From the nodes hierarchy, select the relevant term. FAQs associated with the term appear on the right pane.
+3. Hover over the intent or response and click the **Edit** icon.
+4. Make changes and click **Save**.
+5. To delete the question, click the **Bin** icon.
 <img src="../images/edit-delete-faq-responses.png" alt="edit or delete faq responses" title="edit or delete faq responses" style="border: 1px solid gray; zoom:75%;">
-Selecting multiple intents lets you delete them in bulk.
+You can also select multiple intents to delete them in bulk.
 <img src="../images/delete-multiple-intents.png" alt="delete selected intents" title="delete selected intents" style="border: 1px solid gray; zoom:75%;">
 
 ## FAQ Conditional Responses
