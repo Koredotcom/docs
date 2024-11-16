@@ -15,7 +15,7 @@ The node can handle three types of conditions:
 
 ## Add and Configure a Condition Node
 
-Setting up a Condition node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Condition node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
@@ -42,7 +42,7 @@ Steps to add and configure the node:
         
         2. Select an appropriate Operator from the drop-down list. For example, **Contains**.
 
-        3. Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node/variable, and then close the braces with "}}".
+        3. Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node or variable, and then close the braces with "}}".
             
             For example:
             ~~~

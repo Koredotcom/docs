@@ -4,7 +4,7 @@ End nodes lets you show the agent or flow's outputs on success or an error messa
 
 ## Add and Configure an End Node
 
-Setting up an End node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an End node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 

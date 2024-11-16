@@ -4,7 +4,7 @@ The API Node lets you connect to external systems and retrieve data by making SO
 
 ## Add and Configure an API Node
 
-Setting up an API node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an API node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 

@@ -4,7 +4,7 @@ Function nodes allow you to write custom scripts using JavaScript or Python to p
 
 ## Add and Configure a Function Node
 
-Setting up a Function node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Function node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
