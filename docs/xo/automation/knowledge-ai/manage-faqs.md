@@ -213,7 +213,7 @@ For example: `context.session.Usercontext.emailID Equals To xxx@xmail.com`
 
 !!! note "Notes"
 
-    * New apps use the Fewshot model; imported apps may use the Ontology model. Check the model in **NLU Config** > **Knowledge Graph** > **KG Type**.
+    * New apps use the Few-Shot model; imported apps may use the Ontology model. Check the model in **NLU Config** > **Knowledge Graph** > **KG Type**.
     
     * Enabling conditional responses removes extended responses. Disabling conditional response permanently deletes conditional response data.
     
