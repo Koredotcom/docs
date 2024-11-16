@@ -1,6 +1,6 @@
 # Condition Node
 
-The Condition node lets you create branches in a workflow, directing actions based on whether certain conditions are met. This helps control the flow’s execution.
+Condition nodes let you create branches in a workflow, directing actions based on whether certain conditions are met. This helps control the flow’s execution.
 
 The node can handle three types of conditions:
 
