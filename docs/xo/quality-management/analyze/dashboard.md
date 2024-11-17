@@ -2,7 +2,7 @@
 
 The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
 
-You can access Dashboard by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
+You can access **Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -16,7 +16,7 @@ This Dashboard allows you to filter the data by time period and specific channel
 ### Date Range Filter
 
 You can filter data based on a selected date range.
-To filter by date range, click the Calendar drop-down displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
+To filter by date range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
 <img src="../dashboard/images/calendar drop-down.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
 
 This allows you to filter all agent interaction data by selecting the following date ranges:
@@ -30,7 +30,7 @@ This allows you to filter all agent interaction data by selecting the following 
 
 ### Channel Filter
 
-The Quality Management Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **Email**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
+The Quality Management Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **All**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
 
 To filter data by channel, click the **All** Channels button in the top-right corner of the dashboard page, then select a conversation channel you wish to view.
 
@@ -62,10 +62,10 @@ Displays the total number of audits (progress score) pending and completed.
 
 * **Completed**: Number of assigned interactions that are audited.
 * **Pending**: Number of interactions assigned for audit and not yet audited.
-* **Audit**: Click the **Audit** button that navigates you to the Audit Allocation of the **Conversation Mining** feature, where you can easily start evaluating interactions.  
+* **Audit**: Click the **Audit** button, which directs you to the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
-For more information, see [Conversation Mining](../analyze/conversation-mining.md).
+For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining/#audit-allocations).
 
 ### Evaluation Score 
 This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
@@ -74,8 +74,12 @@ You can view both automated interactions and manual audits scores across the fol
 
 * **Daily**: Displays score for the last 7 days.
 * **Weekly**: Displays score for the last 7 weeks.
-* **Monthly**: Displays score for the last 7 months.  
+* **Monthly**: Displays score for the last 7 months.   
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
+
+## Adherence Heatmap
+This enables supervisors to view and track trends in agent compliance with specific metrics over time. It highlights interactions where agents consistently fail to meet metrics and offers the ability to filter non-compliant interactions. By analyzing the heatmap, supervisors can quickly identify areas of concern, monitor agent performance across evaluation forms or queues, and pinpoint agents who need attention. This provides actionable insights, helping supervisors make informed decisions and take targeted steps to drive improvement.  
+<img src="../dashboard/images/adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 ## Fail Statistics
 This chart displays the count of failed interactions based on the selected forms and date range. It allows you to visualize failure trends for the chosen forms over the last 7 days, 7 weeks, or 7 months, using daily, weekly, and monthly views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.
@@ -87,11 +91,12 @@ This chart displays failure rates across the selected evaluation forms, making i
 ### Agent Scorecard
 This chart displays the trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard. 
 
+<img src="../dashboard/images/fail-stat-agent-scorecard.png" alt="Fail Statistics Agent Scorecard" title="Fail Statistics Agent Scorecard" style="border: 1px solid gray; zoom:60%;">
+
+
 !!! note
 
     This **Agent Scorecard** tab only appears on the Dashboard if the widget option is enabled in the **Settings** of the [Quality Management](../configure/settings.md#quality-management).
-
-<img src="../dashboard/images/fail-stat-agent-scorecard.png" alt="Fail Statistics Agent Scorecard" title="Fail Statistics Agent Scorecard" style="border: 1px solid gray; zoom:60%;">
 
 ## Performance Monitor
 
@@ -103,7 +108,7 @@ Supervisors can monitor agent performance based on the selected evaluation form.
 * **Trends**: The Performance Monitor provides a **Trends** view (agent performance) that visualizes the average Kore Evaluation scores from agent scorecards on a daily, weekly, and monthly basis.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-trends.png" alt="Performance Monitor Evaluation Form Trends" title="Performance Monitor Evaluation Form Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores.  
+* **Distribution**: This view displays the distribution of both Kore evaluation scores and agents scorecard scores over the last 7 days, 30 days and 90 days.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Evaluation Form Distribution" style="border: 1px solid gray; zoom:60%;">
 
 #### Agent Scorecard
@@ -111,7 +116,7 @@ Supervisors can monitor agent performance based on the selected evaluation form.
 * **Trends**: This view displays the performance monitor for agent scorecards.  
 <img src="../dashboard/images/performance-monitor-agent-scorecard-trends.png" alt="Performance Monitor Agent Scorecard Trends" title="Performance Monitor Agent Scorecard Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This view displays how agents are distributed across score bands in increments of 10.  
+* **Distribution**: This view displays how agents are distributed across score bands in increments of 10 over the last 7 days, 30 days and 90 days.  
 <img src="../dashboard/images/performance-monitor-agent-scorecard-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Agent Scorecard Distribution" style="border: 1px solid gray; zoom:60%;">
 
 ## Agent Leaderboard

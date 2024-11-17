@@ -115,11 +115,11 @@ nav:
     - Overview: getting-started/about-xo-platform.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
-      - Navigating the Platform: getting-started/navigating-the-platform.md  
       - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
+        - Navigating the Platform: getting-started/navigating-the-platform.md  
         - Guided Onboarding: getting-started/guided-onboarding.md
-        - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
+        - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md      
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
@@ -144,9 +144,10 @@ nav:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
             - Kore.ai Voice Gateway: 
-              - Configure the Gateway: channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md
+              - Configure Gateway: channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md
               - Advanced Topics:
                 - Call Control Parameters: channels/kore.ai-voice-gateway/call-control-parameters.md
+                - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
                 - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
@@ -156,13 +157,14 @@ nav:
               - Twilio Voice: channels/add-twilio-voice-channel.md
               - AudioCodes: channels/ivr-audio-codes.md
               - IVR: channels/IVR-integration.md
-    - Glossary:
-      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
+      - Glossary: getting-started/glossary/concepts-and-terminology.md      
     - Release Notes:
-      - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
-      - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
-      - Current Limitations: release-notes/current-limitations.md
-      - v11.x Updates:
+      - Release Communications: release-notes/release-communications.md
+      - What's New:
+        - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
+        - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
+        - Current Limitations: release-notes/current-limitations.md      
+      - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -328,8 +330,9 @@ nav:
             - Workbench Simulator: searchai/workbench/simulation.md
         - Vector Configuration: searchai/index-configuration.md
     - Configuration:
+        - Retrieval Strategies: searchai/retrieval.md
         - Business Rules: searchai/business-rules.md
-        - Answer Configuration: searchai/answer-configuration.md
+        - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
@@ -383,22 +386,21 @@ nav:
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Supervisor View: quality-management/analyze/agent-dashboard-supervisor-view.md
-          - Agent View (My Dashboard): quality-management/analyze/agent-dashboard-agent-view.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md        
+          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-specific-dashboard.md
+          - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
           - Coaching Assignments: 
             - Supervisor View: quality-management/coach/coaching-assignments-supervisor-view.md
             - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
-            - Coaching Monitor: quality-management/coach/coaching-monitor.md        
+          - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
-        - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: quality-management/configure/settings.md        
@@ -414,12 +416,14 @@ nav:
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
         - Configure Auto Summarization with Custom Dialog Tasks: agentai/configuration/configure-auto-summarization-with-custom-dialog-tasks.md
+        - Supported Languages: agentai/agent-experience/supported-languages.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
+      - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
@@ -515,9 +519,9 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
-        - Kore Voice Automation:
-          - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
-          - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
+          - Kore Voice Automation:
+            - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
+            - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

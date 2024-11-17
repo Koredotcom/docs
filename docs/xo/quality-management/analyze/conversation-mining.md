@@ -4,7 +4,7 @@ The Conversation Mining feature allows you to drill down to interactions that ar
 
 Users can access Conversation Mining by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
 
-<img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
+<img src="./conversation-mining/images/conversation-mining-interaction-default.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining has the following two sections:
 
@@ -51,6 +51,7 @@ The Conversation Mining Interactions has the following key Items:
 * **Kore Evaluation Score**: Shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
 * **Supervisor Auditor Score**: Shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
 * **Sentiment Score**: Shows the system generated sentiment score for the interaction based on the context of what was said in the interaction by the customer.
+* **Moments**: The Moments column shows the counts for adherences, violations, and omissions related to the configured metrics of the interaction. 
 
 The Conversation Mining provides the following Interactions of interest with filters to drill down:  
 <img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters" title="Interactions Filters" style="border: 1px solid gray; zoom:80%;">

@@ -38,7 +38,7 @@ If you are using **Basic authentication**, you can skip this step. To use OAuth 
 * Select the ServiceNow connector from the list of available connectors. 
 * Go to the **Authorization** tab and enter the following details:
 
-![ServiceNow Authorization](../images/servicenow/auth-tab.png "ServiceNow Authorization")
+![ServiceNow Authorization](images/servicenow/auth-tab.png "ServiceNow Authorization")
 
 * **Name**: Give a unique name to the connector
 * **Authorization Type**: Search AI supports two types of authentication: **Basic** and **OAuth 2.0**.
@@ -65,11 +65,11 @@ In ServiceNow, user access to knowledge base articles can be defined in three wa
 2. Managers of the Knowledgebase
 3. User Criteria with specific access permissions (Can Read and Can Contribute) \
 
-![User criteria](./images/connectors/servicenow/racl/user-criteria.png "User criteria")
+![User criteria](images/servicenow/racl/user-criteria.png "User criteria")
  \
  \
 User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc. \
-![Individual Users](./images/connectors/servicenow/racl/users-in-user-criteria.png "Individual Users")
+![Individual Users](images/servicenow/racl/users-in-user-criteria.png "Individual Users")
 
 #### **Handling User Permissions in SearchAI**
 
@@ -79,7 +79,7 @@ By default, SearchAI grants access to the following:
     * **Managers **of the Knowledgebase – This list of managers will be added directly in racl field of the indexed content.
     * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
-![Individual Users](./images/connectors/servicenow/racl/individual-users.png "Individual Users")
+![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
  \
 Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default.  Users associated with other conditions (e.g., department or role) are not automatically included. Therefore, these users cannot access articles unless they are explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledgebase is John@example.com and the knowledgebase can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. `"sourceAcl": [`
 
@@ -96,3 +96,27 @@ Each User Criteria is retrieved as a Permission Entity. The permission entity ID
 
         ` \
 `If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to associate them with the permission entity.
+
+### Advanced Filters
+
+Search AI allows setting up advanced filters to select the content for ingestion. Selective content ingestion can be done using the content properties like status, type, number, knowledge base, source, etc. To set up advanced filtering, go to the **Configuration** tab, select **Sync Specific Content,** and click the **Configure** link.  
+
+![Configuration](images/servicenow/config-tab.png "Configuration")
+
+Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to [this ](https://developer.servicenow.com/dev.do#!/reference)for the complete list of parameters.  \
+ \
+For instance, to ingest articles with a given sys ID, use the filter as shown below. 
+
+![Example](images/servicenow/example1.png "Example")
+
+Click on **Test and Save** to enable the filter. The filter is used on the next scheduled or manual sync with the ServiceNow application. 
+
+Note:
+
+* You can define one or more rules to create a filter. Content that satisfies any one of the rules in the filter is selected for ingestion. For instance, the following filter can be used to select articles where sys ID is either of the list.
+
+![Example](images/servicenow/example2.png "Example")
+
+* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied.  For instance, the following filter can be used to select published articles with a given Sys Id.
+
+![Example](images/servicenow/example3.png "Example")

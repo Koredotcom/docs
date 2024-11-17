@@ -48,7 +48,6 @@ The settings made within this section affect this node across all instances in a
     <img src="../images/genai-propmpt(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
     * **Model**: The default model for which the settings are displayed. You can choose another supported mode if it’s configured. If you select a non-default model, it’s used for this node only. If you want to change the default model, you can select the model in the drop-down list and use the **Mark Default** option shown next to its name.
-    * **System Context**: Add a brief description of the use case context to guide the model.
     * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
     * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
 
@@ -57,7 +56,6 @@ The settings made within this section affect this node across all instances in a
     <img src="../images/genai-propmpt(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
     * **Timeout**: Select the maximum wait time from the drop-down list. The timeout range can be any value between 10 to 60, the default being 10.
-
 
 ### Instance Properties
 

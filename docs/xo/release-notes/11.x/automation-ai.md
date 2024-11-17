@@ -18,7 +18,8 @@ Key features:
 
 * Script Editor: Create, edit, and manage preprocessor scripts with built-in syntax highlighting and error checking.
 * Testing Controls: Execute scripts before initiating test recording and validation, with the ability to modify and re-validate on the fly.
-* Data Management: Control session context by modifying data, simulating external systems, and tracking changes through secure execution.
+* Data Management: Control session context by modifying data, simulating external systems, and tracking changes through secure execution.  
+[Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#pre-processor-script)
 
 ### Dialog Builder
 

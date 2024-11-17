@@ -1,54 +1,41 @@
-# Coaching Assignments
+# **Coaching Assignments - Agent View**
 
-This feature assists supervisors in analyzing agent performance and identifying interactions that need targeted coaching. It provides a view of coaching assignments for a specific agent within the agent dashboard. This shows all the assigned coaching tasks of agents.
+The Coaching Assignment feature in the Agent Dashboard enables agents to review and gain value from supervisor-created coaching assignments. To access these assignments, agents must have single permissions for the "agent dashboard" and "coaching assignments". The assignments are listed in reverse chronological order.
 
-**Step 1:**
+You can view Coaching Assignments by navigating to **Contact Center AI > Quality Management > Dashboard > Coaching Assignments**.  
 
+<img src="../images/coaching-assignments.png" alt="Coaching Assignment Agent View" title="Coaching Assignment Agent View" style="border: 1px solid gray; zoom:80%;">
 
-1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.
-<img src="./agent-leaderboard/images/dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+The Agent Dashboard - Coaching Assignments page shows the following list of items:
 
-2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed. 
-<img src="./agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard Overview" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
+* **Name**: This shows the coaching assignment name.
+* **Coaching Area**: This displays the tags for assigned coaching attributes, along with tooltips for additional tags. This represents the performance area the agent needs to focus on as part of their coaching assignment.
+* **Assigned Date**: This shows the date when the coaching assignment was given.
+* **Follow-up Date**: This shows the follow-up date for that coaching assignment.
+* **Status**: This shows the following status of the coaching assignments, which is calculated based on the number of interactions and best responses:
+* **Start Now**: This indicates the assigned interactions in coaching that have been reviewed.
+* **In Progress**: This shows the interactions (>1) that have been reviewed.
+* **Completed**: This shows all the interactions are completed
 
-3. Click the **Evaluation** tab. The following screen is displayed to **Add Coaching Assignment**.
-<img src="./agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard Evaluation" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
+Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignment.  
 
-**Step 2:**
+<img src="../images/coaching-assignments-slide-out-interaction.png" alt="Interactions Slideout" title="Interaction Slideout" style="border: 1px solid gray; zoom:80%;">
 
-3. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.
-<img src="./agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+### **Interaction Marked for Coaching**
 
-4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed. 
-<img src="./agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard Overview" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
+The Interaction marked for coaching includes the following:
 
-Users can view and add Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard** > **Evaluation**.  
-<img src="./coaching-assignments/add-coaching-assignments.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
+* **Coaching Area:** This shows the specific attributes or focus topics identified by the supervisor for improvement during coaching sessions for agents. Such as communication skills, adherence to procedures, or handling customer queries.
+* **Interactions Marked for Coaching**: This shows the following interaction details marked for coaching.
+    * **Queues**: This refers to the specific categories or channels through which interactions (such as calls, chats, or emails) are routed. It helps you to identify where the interaction took place.
+    * **Action**: This refers to a call-to-action (CTA) that allows you to access the following interaction audit screen. 
 
-## Add Coaching Assignment
-Steps to add coaching assignments:
+        <img src="../images/audit-interaction-screen.png" alt="Audit Interaction Screen" title="Audit Interaction Screen" style="border: 1px solid gray; zoom:80%;">
 
-1. Select the agent interactions to enable and assign coaching for the agent. 
-2. Click the **Add Coaching Assignment**, the following screen appears.  
-<img src="./coaching-assignments/new-coaching-assignment.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
-
-3. Enter the **Name** of the coaching assignment.
-4. In the **Coaching Area**, enter the agent attributes that are selected for coaching as part of the assignment. By default, the interactions marked for coaching details are displayed, which are selected from the **Evaluation** tab.
-6. Under the **Best Responses** (optional), select the best response interactions from other agents to provide best reference for this coaching assignment using saved bookmarks. You can select more than one bookmark based on the evaluation criteria, for example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.
-7. In the **Feedback**, enter your feedback for better improvement.
-8. Enter **the Action Plan** for the coaching assignment.
-9. Provide the input for the **Follow-up Date** chosen for the assignment
-10. Click **Create** to assign coaching assignments to an agent, which will be populated in the **Agent Dashboard**.
-
-## **View Agent Interactions**
-
-Steps to view agent interactions
-
-1. Select any of the evaluation agent groups to view the agent interactions.
-2. Right-click on the vertical ellipsis (⋮) button. The following screen appears.  
-    <img src="../coaching-assignments/view-agent-interactions.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
-
-3. Click **View**. The following screen appears to view the agent **Chat History** and **Details** of the conversation selected.  
-<img src="../coaching-assignments/chat-audit-history-details.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:60%;">
-
-For more information, see [Agent Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).
+    * **Kore Evaluation Score**: This shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
+    * **Supervisor Audit Score**: This score represents the supervisor's assessment of the interaction, providing insights into the agent's performance based on the supervisor’s criteria and evaluation.
+    * **Sentiment Score**: This score is generated by a system based on the emotions or sentiments expressed by the customer.
+    * **Best Response Examples:** The best response examples come from interactions handled by other agents in similar contexts to those selected for coaching by the supervisor. These examples showcase successful performances, allowing the agent receiving coaching to use them as a reference for learning and improvement.
+    
+* **Feedback**: This shows supervisors’ feedback on the agent's handling of an interaction, which includes both positive aspects and areas for improvement.
+* **Action Plan**: This shows that the action plan outlines clear, actionable steps for the agent to improve their performance in future interactions.

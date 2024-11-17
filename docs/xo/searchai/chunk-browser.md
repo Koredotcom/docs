@@ -2,6 +2,8 @@
 
 The Content Browser provides a tool to observe the extracted chunks from the source data. It gives insights into the output from the extraction process and enables you to take subsequent actions like editing and rectifying the chunks. This not only allows you to view and verify the extracted chunks but also allows you to edit them, enabling you to work with answers that best serve your specific goals and requirements.
 
+When new content is added to the application, auto-training of the application with the new content is automatically initiated, generating corresponding chunks. If existing content is updated, the chunks related to that content are deleted and recreated.
+
 ## Key capabilities
 
 * **Observation and Verification:** You can use the Browser to inspect and verify the extracted chunks. This step is crucial for ensuring the correctness of the extraction process, the accuracy of the chunks generated, and to ensure that no data is lost during extraction.
@@ -10,6 +12,10 @@ The Content Browser provides a tool to observe the extracted chunks from the sou
 Go to the **Browse** section under the **Index** tab to view the chunks. The chunks browser displays chunks from all the data ingested into the application. 
 
 ![View Chunks](../images/browser-home.png "View Chunks")
+
+If the chunk contains one or more images or tables, a preview of these is also shown in the chunk summary. You can click on the preview to enlarge the image or table and view it at its full size. If there are multiple images, a carousel is displayed to allow easy navigation through them.
+
+![Chunk Preview](../images/preview.png "Preview Chunks")
 
 ## View Chunk Details
 
@@ -49,7 +55,9 @@ Make changes to the text as required and click **Save**.
 
 ![Update Chunks](../images/save-edited-chunk.png "Update Chunks")
 
-
+!!!note
+    When a document is updated, all its chunks are deleted and recreated. As a result, any changes made to the edited chunk are lost during the synchronization process if the content is updated. 
+    
 ## Search and Filter Chunks
 
 You can also use the chunk browser to search for specific chunks using any of the properties of the chunks like chunkTitle, chunkText, source, etc. Use the **search bar** at the top to search for chunks.

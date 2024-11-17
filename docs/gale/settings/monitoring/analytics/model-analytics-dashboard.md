@@ -184,6 +184,7 @@ This widget is available for **Fine-tuned** and **Open-source** models. It featu
 <p class="admonition-title">Note</p>
 <p>"<b>Multiple Hardware</b>" is displayed when replicas with more than one hardware configuration are deployed across a date range.</p></div>
 
+
 * The Y-axis automatically adjusts based on the increase in the deployed replicas during the selected period.
 * Each upward step in the graph represents the generation of additional model replicas, continuing until deployment is complete (indicated by the Max Replicas line). The downward steps show the undeployment of replicas.
 * Hover over a data point on the step graph to view the timestamp, deployment version name, number of replicas, and hardware configuration deployed at that point by the model version. For example, you can check the replicas and hardware usage on January 16, 2024, at 11:35 AM for the last 30 days.
@@ -269,7 +270,7 @@ The expanded views of all the widgets are shown below:
 
 With intuitive data visualization and dynamic filtering capabilities, the **Model Analysis Dashboard** enables data-driven decisions for model optimization, resource allocation, and performance monitoring.
 
-## Related Information
+## Related Links
 
 * **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
