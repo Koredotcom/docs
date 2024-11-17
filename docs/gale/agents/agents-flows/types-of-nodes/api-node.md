@@ -19,7 +19,7 @@ Steps to add and configure the node:
 
 5. Enter or select the following information:
 
-    * **Custom Name**: Enter an appropriate name for the node.
+    * **Node Name**: Enter an appropriate name for the node.
     * **Type**: Select the API type from the drop-down list - REST or SOAP.
     * **Integration Type**: Select the integration type for the connection—synchronous or Asynchronous—and set the timeout duration for the integration. 
         * **Synchronous**: The allowed range is 5 to 180 seconds (3 minutes). The default is 60 seconds.

@@ -19,7 +19,7 @@ Steps to add and configure the node:
 
 5. Enter or select the following **General Settings**:
 
-    * **Custom Name**: Enter an appropriate name for the node.
+    * **Node Name**: Enter an appropriate name for the node.
 
     * **Select Model**: Select a model from the list of configured models.
 
