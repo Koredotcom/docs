@@ -22,7 +22,7 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 Each agent has a dedicated dashboard accessible to both the agents and their supervisor. This dashboard displays high-level metrics for supervisors to review.
 
 For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-management/analyze/dashboard#date-range-filter). 
-========
+
 ## Overview
 
 This displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat only).  
