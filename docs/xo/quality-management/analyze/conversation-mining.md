@@ -4,7 +4,7 @@ The Conversation Mining feature allows you to drill down to interactions that ar
 
 Users can access Conversation Mining by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
 
-<img src="./conversation-mining/images/conversation-mining-interaction-default.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining has the following two sections:
 
@@ -22,7 +22,7 @@ Users can see scored interactions or evaluation information at a glance from Con
 
 The Conversation Mining interaction listing option enables users to quickly identify specific interactions of interest, eliminating the need to sift through numerous individual interaction records. This provides valuable insights for informed decision-making, enhances operational efficiency, and reduces the time spent on manual reviews through targeted analysis, ultimately improving oversight quality. Additionally, users can customize the interaction listing page by adding extra metadata and columns.
   
-<img src="../images/conversation-mining-interaction.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
+<img src="./conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining Interactions has the following key Items:
 
