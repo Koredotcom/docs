@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.7.1 November 18, 2024
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Advanced Search API Enhancement 
+The Answer Generation API has been enhanced to support passing permission entity IDs, enabling refined and secure search responses. This update provides control over content access and ensures that users receive answers tailored to their permissions.
+
+### Introduction of Get Content API
+Search AI introduces a new API that enables users to retrieve a document's content, metadata, or both using its ID. This enhancement simplifies access to document data and improves the overall content retrieval experience. 
+
+### Permission Entity API Enhancement
+The Get Permission Entity API has been enhanced to provide more comprehensive information. The update adds the entity type and source type to the existing permission entity details in the response. This enhancement helps developers gain deeper insights into permission entities, streamlining integration efforts.
+
+
+<hr>
+
 ## v11.7 November 03, 2024
 
 <u> Minor Release </u>
