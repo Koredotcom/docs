@@ -17,11 +17,11 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 === "Automation AI"
 
-    Automation AI offers sophisticated AI-powered tools for creating virtual assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+    Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower Virtual Assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
     Key Features
     
-    * Virtual Assistant Builder: Enables the creation of intelligent virtual assistants.
+    * Virtual Assistant Builder: Enables the creation of Intelligent Virtual Assistants.
     * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
     * GenAI Framework: A generative AI framework to enhance automation capabilities.  
     
@@ -53,7 +53,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 === "Agent AI"
 
-    Agent AI is your agent’s personal intelligent virtual assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
+    Agent AI is your agent’s personal Intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
     
     Key Features
     
@@ -106,7 +106,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 ## Integrated Architecture for Omnichannel Customer Engagement
 
-The image below provides a high-level understanding of the XO platform's capabilities, the integrated nature of its components, and how they work together to support customer engagement across multiple channels.
+The image below provides a high-level understanding of the XO Platform's capabilities, the integrated nature of its components, and how they work together to support customer engagement across multiple channels.
 
 <img src="../images/xo-platform-components-flow.png">
 
