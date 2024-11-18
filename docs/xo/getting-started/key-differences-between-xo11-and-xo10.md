@@ -4,6 +4,7 @@ hide:
   - toc  
 ---
 # Key Differences Between XO v11 and v10
+
 Key differences Between XO v11 and v10 are summarized below.
 
 ## Key Navigation Changes
