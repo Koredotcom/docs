@@ -6,7 +6,7 @@ hide:
 # All-new Experience Optimization Platform
 The Kore.ai Experience Optimization (XO) Platform helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
 
-Built for security and scalability, the platform uses a no-code interface that lets businesses build intelligent virtual assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
+Built for security and scalability, the platform uses a no-code interface that lets businesses build Intelligent Virtual Assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
 
 # Comprehensive Suite of Products and Services
 The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
