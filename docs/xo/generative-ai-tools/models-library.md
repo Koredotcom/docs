@@ -236,13 +236,16 @@ Steps to integrate a Custom LLM using Dynamic Variables:
 
 ### Configure Amazon Bedrock LLM Integration using Dynamic Variables
 
-For Amazon Bedrock integration, you can configure IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, and Headers fields as dynamic variables.
+!!! note
+
+    For Amazon Bedrock integration, you can configure IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, and Headers fields as dynamic variables.
 
 Steps to integrate an Amazon Bedrock LLM using Dynamic Variables:
 
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Click **Amazon Bedrock**.
-3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional). <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional).
+    <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.
     <img src="../images/abr5.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">

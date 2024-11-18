@@ -11,7 +11,7 @@ Built for security and scalability, the platform uses a no-code interface that l
 # Comprehensive Suite of Products and Services
 The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
-**Key Products, Features, and Services offered by the XO Platform:**
+**Key Products, Features, and Services Offered by the XO Platform:**
 
 <img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
 
@@ -110,19 +110,18 @@ The image below provides a high-level understanding of the XO platform's capabil
 
 <img src="../images/xo-platform-components-flow.png">
 
-Here is how the various components work:
 
-* Entry channels serve as the first point of contact, including digital channels, voice gateways, and third-party IVR systems.
+1. Entry channels serve as the first point of contact, including Digital channels, Voice Gateways, and third-party IVR systems.
 
-* These channels feed into the start or exit flows, which handle the initial and final stages of interactions. The flow can branch out into an appropriate customer service flow, depending on the implementation.
+2. These channels feed into the Start or Exit flows, which handle the initial and final stages of interactions. The flow can branch out into an appropriate customer service flow, depending on the implementation.
 
-* Customer service flows:
+3. Customer service flows:
     
-    * Automation flow: The flow uses an intelligent virtual assistant to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the virtual assistant.
+    * Automation flow: The flow uses an Intelligent Virtual Assistant to handle complex interactions with AI. In addition, Search AI retrieves information from vast datasets and feeds the most relevant information to users using the Virtual Assistant.
 
-    * Agent transfer flow: The flow routes requests to live agents through the Contact Center or Agent Desktop. Agents receive AI-powered assistance during customer interactions. The flow can also connect with third-party contact centers.
+    * Agent transfer flow: The flow routes requests to live agents through the Contact Center or Agent Desktop. Agents receive AI-powered assistance during customer interactions. The flow can also connect with third-party Contact Centers.
 
-* Supporting systems:
+4. Supporting systems:
 
     * Campaigns work with the Contact Center to manage outbound voice and web marketing efforts.
     

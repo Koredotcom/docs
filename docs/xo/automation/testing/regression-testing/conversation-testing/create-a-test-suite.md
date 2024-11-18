@@ -66,6 +66,35 @@ The Pre-Processor Script allows users to:
 1. **Reset or Set Session Variables**: Adjust session data as needed to ensure consistent **New User** or **Returning User** states.
 2. **Simulate Different User Conditions**: Accurately test new and returning user flows by managing session variables to reflect the correct state.
 
+#### Pre-processor Script
+
+The Pre-Processor Script allows users to manipulate context data and inject custom data before and during test execution. Context data is preset during conversation recording, which can sometimes lead to unintended workflow paths during validation and cause false negatives. Additionally, users may need to test scenarios requiring custom data from external systems.
+To address these needs, users can run custom scripts at the recording, validation, and execution phases of conversation testing, enabling them to:
+
+* **Modify Existing Context Data**: Adjust or reset context data to ensure intended workflow paths.
+* **Set Custom Context Data**: Define new context data for specific scenarios, enhancing test accuracy and coverage.
+* **Inject External Custom Data**: Simulate inputs from external systems for real-world test cases.
+
+Here are the key session variables that can be set:
+
+* EnterpriseContext
+* BotContext
+* UserContext
+* UserSession
+* BotUserSession
+* Opts
+
+**Use Case: Managing New vs. Returning Users in Conversation Testing**
+
+In conversation testing, the **Pre-Processor Script** is crucial for handling scenarios where user status (new vs. returning) affects session behavior, leading to potential validation issues.
+
+When recording a test case, the user is treated as a **new user** with no session data. During validation, however, the user may be recognized as a **returning user**, introducing session variables that change the conversation flow and potentially cause validation failures.
+
+The Pre-Processor Script allows users to:
+
+1. **Reset or Set Session Variables**: Adjust session data as needed to ensure consistent **New User** or **Returning User** states.
+2. **Simulate Different User Conditions**: Accurately test new and returning user flows by managing session variables to reflect the correct state.
+
 #### Generated User Response Suggestions
 
 If you have enabled [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/introduction/){:target="_blank"} for your Virtual Assistant, you will see User Response suggestions while recording a Conversation Test Case. 
