@@ -152,6 +152,7 @@ nav:
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
                 - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
+                - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
