@@ -383,7 +383,6 @@ nav:
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
       - Overview: quality-management/about-quality-management.md      
-      - QM Sign Up Process: quality-management/qm-sign-up-process.md
       - Setup Guide: quality-management/setup-guide.md
       - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
       - Analyze:
