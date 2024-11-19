@@ -11,7 +11,7 @@ Prompt versioning in GALE improves the experimentation process and promotes coll
 
 **Version naming** - When you commit a prompt, the first version is created and automatically labeled (e.g., V1). Subsequent versions are sequentially named V2, V3, and so forth. Users are not allowed to manually assign names to the versions.
 
-**Version Management** - You can view the number of versions available for a particular prompt and access the content of each version. You can also restore a previous version. The latest committed version becomes the default, but you can change the default version manually.
+**Version Management** - You can view the number of versions available for a particular prompt and access the content of each version. You can also restore a previous version. The latest committed version becomes the default version, but you can manually change it by selecting your preferred prompt version and clicking the 'Mark as a default version' option.
  
 You can also view versions created by others, which helps understand how prompts have changed over time. Additionally, you can use any version as a draft without altering the original. You can edit the draft and commit the changes to create a new version, which will be visible to others.
 
@@ -82,6 +82,9 @@ Steps to bookmark a model:
 
     <img src="../images/versions_dialog_prefered_model.png" alt="Versions dialog" title="Versions dialog" style="border: 1px solid gray; zoom:70%;">
 
+    !!! note
+
+        You can select the 'Mark as a default version' option to set a preferred prompt as the default version. 
 
 ## Draft History
 

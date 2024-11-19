@@ -62,21 +62,21 @@ The following usage information is displayed on the tab:
 * **Last active on**: The date when the agent was last active.
 * **Status**: The agent's status - Deployed, Undeployed, or Deleted.
 
- <img src="../billing/images/agents.png" alt="Billing Agents tab" title="Billing Agents tab" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/agents.png" alt="Billing Agents tab" title="Billing Agents tab" style="border: 1px solid gray; zoom:80%;">
 
 
 # Models Usage
 
 The Models tab displays a comprehensive list of open-source models in the account and the computational cost of storing, fine-tuning, and hosting each model.
 
-<img src="../billing/images/models.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/models.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
 
 The following usage information is displayed on the tab:
 
 * **Total models**: The total number of models in the account.
 * **Total credits**: The total credits used by all the models.
 * **Fine-tuning credits**: The number of credits used for fine-tuning the models. The number of credits are based on factors like the size of the training data, the model complexity, the number of training epochs, the type of hardware used, and other parameters.
-* **Hosting credits**: The number of credits associated with hosting all the models. The total number of credits used to cover the cost of deploying and hosting models on GPUs.
+* **Hosting credits**: The total number of credits used to cover the cost of deploying and hosting models on GPUs.
 When you deploy a model on powerful GPUs, each GPU instance is considered a "replica", which requires the allocation of hosting credits. For example, if your model runs on one A100 GPU, that counts as one replica and consumes a specific amount of hosting credits. If demand increases and you need to deploy a second A100 GPU to handle additional user requests, you will now have two replicas and be charged for both, requiring twice the number of hosting credits.
 
 * **Model name**: The name of the model.
@@ -89,6 +89,8 @@ When you deploy a model on powerful GPUs, each GPU instance is considered a "rep
 
 Clicking each row on the Models tab opens a panel on the right that displays detailed information about the costs associated with the selected model.
 
+<img src="../images/models_right_panel_detailed.png" alt="Models detailed information" title="Models detailed information" style="border: 1px solid gray; zoom:80%;">
+
 The following information is displayed:
 
 * Name of the model.
@@ -96,7 +98,6 @@ The following information is displayed:
 * **Fine-tuning**: The number of credits used to fine-tune the model.
 * **Total**: The total number of credits for hosting and fine-tuning the model.
 
-<img src="../images/models_right_panel_detailed.png" alt="Models detailed information" title="Models detailed information" style="border: 1px solid gray; zoom:80%;">
 
 
 # Guardrails Usage
@@ -122,6 +123,9 @@ The following usage information is displayed on the Guardrails tab:
 
 Clicking each row on the Guardrail tab opens a panel on the right that displays detailed information about the hardware it was deployed on and the charges associated with the guardrail.
 
+<img src="../images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
+
+
 The following information is displayed:
 
 * The name of the guardrail
@@ -133,7 +137,6 @@ The following information is displayed:
     Guardrails are hosted on smaller models. These smaller models do not need a lot of processing power, so they can be effectively managed by less powerful CPUs. Using CPUs is more economical, and they have enough capability to run the smaller models efficiently.
 
 
-<img src="../images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
 
 
 
