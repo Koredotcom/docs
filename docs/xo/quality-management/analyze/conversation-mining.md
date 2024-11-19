@@ -95,7 +95,7 @@ Provides the option to select the date range to the conversation interactions. D
 #### Chat History
 
 This shows all the conversation history.  
-<img src="../images/conversation-mining-interaction-chat-hist.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-interaction-chat-hist.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
 
 ### Filters
 
