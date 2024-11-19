@@ -2,7 +2,7 @@
 
 The Conversation Mining feature allows you to drill down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
 
-Users can access Conversation Mining by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
+You can access Conversation Mining by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining**.  
 
 <img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
@@ -22,7 +22,7 @@ Users can see scored interactions or evaluation information at a glance from Con
 
 The Conversation Mining interaction listing option enables users to quickly identify specific interactions of interest, eliminating the need to sift through numerous individual interaction records. This provides valuable insights for informed decision-making, enhances operational efficiency, and reduces the time spent on manual reviews through targeted analysis, ultimately improving oversight quality. Additionally, users can customize the interaction listing page by adding extra metadata and columns.
   
-<img src="./conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
 The Conversation Mining Interactions has the following key Items:
 
@@ -51,10 +51,36 @@ The Conversation Mining Interactions has the following key Items:
 * **Kore Evaluation Score**: Shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
 * **Supervisor Auditor Score**: Shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
 * **Sentiment Score**: Shows the system generated sentiment score for the interaction based on the context of what was said in the interaction by the customer.
-* **Moments**: The Moments column shows the counts for adherences, violations, and omissions related to the configured metrics of the interaction. 
+* **Moments**: The Moments column shows the counts for adherences, violations, and omissions related to the configured metrics of the interaction.  
+<img src="../conversation-mining/images/conversation-mining-moments.png" alt="Interactions Filters" title="Interactions Filters" style="border: 1px solid gray; zoom:80%;">
 
-The Conversation Mining provides the following Interactions of interest with filters to drill down:  
+When clicked, a drop-down shows the following three categories of metric: 
+
+* **Adherences**: Metrics that were met during the conversation.
+* **Violations**: Speech-based violations that occurred.
+* **Omissions**: Metrics not adhered to, including playbook steps and dialog tasks.
+
+By clicking any of the interactions items, such as Agents, Actions, Kore Evaluation Score, and Moments, the Conversation Mining provides the following filters (Interactions of interest with) to drill down:
 <img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters" title="Interactions Filters" style="border: 1px solid gray; zoom:80%;">
+
+Auditors can check the following near-miss scenarios by reviewing metrics on the audit screen:
+
+* **Evaluation Marking**: If an agent's adherence is close to the required standard but not fully met, the system marks the evaluation as "No" and highlights similarities to fully adhered cases for easier comparison.
+
+* **Click-Through Navigation**: The system provides clickable links (View) for near-miss agent utterances, similar to those for adhered cases, allowing for a more detailed review.
+
+* **Near-Miss Criteria**: Near-miss criteria are based on predefined similarity thresholds. These thresholds help flag and navigate near-miss utterances close to adherence standards.
+
+### Columns
+
+Allows users to filter the following default fields:
+Supervisor Auditor Score: This shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
+
+* **Sentiment Score**: This shows the system-generated sentiment score for the interaction based on the context of what the customer said in the interaction.
+
+* **Start Time**: This shows a specified time format of the conversation in the interaction listing page (for example, 24th May, 2024, 1:17:10 PM). 
+
+* **Duration**: This shows call duration (voice and chat), including talk time, hold time, and after-call work time. For example, 0h 6m 25s.
 
 ### Bookmarks
 
@@ -69,7 +95,7 @@ Provides the option to select the date range to the conversation interactions. D
 #### Chat History
 
 This shows all the conversation history.  
-<img src="../images/conversation-mining-interaction-chat-hist.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-interaction-chat-hist.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
 
 ### Filters
 

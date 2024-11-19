@@ -152,6 +152,7 @@ nav:
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
                 - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
+                - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -381,13 +382,14 @@ nav:
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
-      - Overview: quality-management/about-quality-management.md
-      - Setup Guide: quality-management/setup-guide.md
+      - Overview: quality-management/about-quality-management.md      
       - QM Sign Up Process: quality-management/qm-sign-up-process.md
+      - Setup Guide: quality-management/setup-guide.md
+      - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-specific-dashboard.md
+          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
           - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md

@@ -1,6 +1,6 @@
 # Supervisor View (Agent-specific Dashboard)
 
-This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to assess performance metrics and identify coaching opportunities at an individual level. The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
+The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
 
 You can access the Supervisor view of the Agent-specific dashboard in the following ways:
 

@@ -184,14 +184,17 @@ This widget is available for **Fine-tuned** and **Open-source** models. It featu
 <p class="admonition-title">Note</p>
 <p>"<b>Multiple Hardware</b>" is displayed when replicas with more than one hardware configuration are deployed across a date range.</p></div>
 
-* The Y-axis automatically adjusts based on the increased deployed replicas during the selected period.
+
+* The Y-axis automatically adjusts based on the increase in the deployed replicas during the selected period.
+* Each upward step in the graph represents the generation of additional model replicas, continuing until deployment is complete (indicated by the Max Replicas line). The downward steps show the undeployment of replicas.
 * Hover over a data point on the step graph to view the timestamp, deployment version name, number of replicas, and hardware configuration deployed at that point by the model version. For example, you can check the replicas and hardware usage on January 16, 2024, at 11:35 AM for the last 30 days.
 
 <img src="../images/model-scaling-hover-info.png" alt="model scaling hover info" title="model scaling hover info" style="border: 1px solid gray; zoom:75%;">
 
 #### Maximum Replicas Limit for a Single-Day Selection
 
-The **Model Scaling and Usage** widget displays the graph with the Y axis up to your account's maximum subscribed replicas limit, indicated by a red line. **This happens only when you select 24 hours** in the [Global Timeline Filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+The **Model Scaling and Usage** widget displays the graph with the Y axis set up to the maximum number of replicas configured during the model deployment. This limit is indicated by a red line. 
+
 <img src="../images/max-replicas.png" alt="max replicas" title="max replicas" style="border: 1px solid gray; zoom:75%;"> 
 
 **Best Practices**
