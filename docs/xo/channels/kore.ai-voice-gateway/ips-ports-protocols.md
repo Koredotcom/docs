@@ -137,9 +137,9 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>savg-webserver.kore.ai
+   <td>savg-webserver.kore.ai,
 <br>
-savg-sbc1.kore.ai,savg-sbc2.kore.ai
+savg-sbc1.kore.ai,<br>savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -312,7 +312,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="https://au-savg-webserver.kore.ai/">au-savg-webserver.kore.ai</a>, au-prod-savg-sbc.kore.ai,
+   <td><a href="https://au-savg-webserver.kore.ai/">au-savg-webserver.kore.ai</a>, <br>au-prod-savg-sbc.kore.ai,
 <br>
 <a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc1.kore.ai</a>,
 <br>
@@ -491,7 +491,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
 <br>
 <a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc.kore.ai</a>,
 <br>
-<a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc1.kore.ai</a>
+<a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc1.kore.ai</a>,
 <br>
 <a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc2.kore.ai</a>
    </td>
@@ -664,7 +664,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>eu<a href="https://au-savg-webserver.kore.ai/">-savg-webserver.kore.ai</a>, eu-savg-sbc1.kore.ai,
+   <td>eu<a href="https://au-savg-webserver.kore.ai/">-savg-webserver.kore.ai</a>, <br>eu-savg-sbc1.kore.ai,
 <br>
 eu<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
    </td>
@@ -839,7 +839,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>de<a href="https://au-savg-webserver.kore.ai/">-savg-webserver.kore.ai</a>, de-savg-sbc1.kore.ai,
+   <td>de<a href="https://au-savg-webserver.kore.ai/">-savg-webserver.kore.ai</a>, <br>de-savg-sbc1.kore.ai,
 <br>
 de<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
    </td>
@@ -1014,7 +1014,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>jp<a href="https://au-savg-webserver.kore.ai/">-savg-webserver.kore.ai</a>, jp-savg-sbc1.kore.ai,<br>
+   <td>jp<a href="https://au-savg-webserver.kore.ai/">-savg-webserver.kore.ai</a>, <br>jp-savg-sbc1.kore.ai,<br>
 jp<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
    </td>
   </tr>
