@@ -56,7 +56,7 @@ The XO Platform now enables enterprises to power up their virtual assistants wit
 
 !!! note
 
-    Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English.
+    Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform.
 
 
 ### Configure Custom LLM Integration
@@ -245,6 +245,7 @@ Steps to integrate an Amazon Bedrock LLM using Dynamic Variables:
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Click **Amazon Bedrock**.
 3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional).
+    
     <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.
