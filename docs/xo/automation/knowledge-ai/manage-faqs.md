@@ -56,7 +56,7 @@ Sometimes, the FAQ responses are lengthy or may include nice-to-have information
 
 * Split information into easy-to-read chunks that go as separate messages in a sequence by clicking **Add Extended Response** on the top-right of the **Bot Response** window.
 
-* Select **Add Alternate Response** if your question has multiple answers. Repeat the step for all the alternative responses you want to add. At runtime, the platform picks one response at random.
+* Select **Add Alternate Response** if your question has multiple answers. Repeat the step for all the alternative responses you want to add. At runtime, the Platform picks one response at random.
 
 ## Add FAQs from an Existing Source
 When the Knowledge Graph you are trying to build is large and complex, it's important to have all the FAQs in one place and Import or Extract them as required. 
@@ -99,7 +99,7 @@ The feature lets you define rules for different responses to FAQs depending on s
 
 When the conditional responses are present, it works as follows:
 
-1. The platform identifies the appropriate FAQ using the regular process based on the selected model, training, and alternate questions.
+1. The Platform identifies the appropriate FAQ using the regular process based on the selected model, training, and alternate questions.
 2. Once the FAQ is identified, the conditions are evaluated in the order they're defined.
 3. If a condition is met, its corresponding response is selected.
 4. If no conditions are met, the default response is used.
