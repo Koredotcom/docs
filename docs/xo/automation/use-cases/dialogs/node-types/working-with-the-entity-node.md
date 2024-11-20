@@ -61,8 +61,11 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
     
     <img src="../images/entity-node-img5.png" alt="Entity node - Rephrase responses" title="Entity node - Rephrase responses" style="border:1px solid gray;zoom:70%;">
 
-7. Under **Redaction of PII Data**, you can configure how the value of this entity should be presented if it is identified as PII data and is used in defining any messages or responses. You can choose to de-identify PII Data or use the original values while presenting this data to the user. 
+7. Under **Redaction of PII Data**, you can configure how the value of this entity is presented if it is identified as PII data and used in defining any messages or responses:
 
+    * De-identify PII data while presenting it to the user: The entity’s redacted value is shown in prompts and messages.
+    * Use the original value of the PII data while presenting it to the user: The entity’s original value is shown in prompts and messages.
+ 
 8. You can enable the **Sensitive Entity** option to  transient an entity, and redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
     
     <img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">

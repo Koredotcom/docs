@@ -7,8 +7,8 @@ Kore.ai allows you to redact any sensitive information that users share with you
 The original values are stored in a secure vault and can be used in a few scenarios to achieve business needs.  
 
 * If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation, such as validating the entity value's format (for example,  checking if it is a valid number).
-* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node for scenarios like passing this value to the backend system for further processing. Refer to the [Service Node ](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}post for more details.
-* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Refer to the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"} post for more details.
+* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. However, you can send the original data for scenarios like passing the value to the backend system for further processing. Select the appropriate option while configuring the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}.
+* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Select the appropriate option while configuring the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"}.
 
 The platform provides the following three modes to redact specified information types:
 
