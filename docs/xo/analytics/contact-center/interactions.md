@@ -255,7 +255,7 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 **Call Conversation ID**: The conversation ID (for voice calls)  
 **Agent Conversation ID**: The agent conversation ID.  
 **User ID**: The agent’s user ID.  
-**Campaign Instance ID**: The campaign instance ID.  
+**Campaign Instance ID**: The campaign instance ID (for campaigns).  
 <img src="../images/identifiers-tab.png" alt="Identifiers Tab" title="Identifiers Tab" style="border: 1px solid gray; zoom:60%;">
 
 ## Call Recording
