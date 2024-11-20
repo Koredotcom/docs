@@ -34,6 +34,9 @@ The current prompt, system prompt, and the preferred model is recorded as a vers
  
 To use a particular prompt version, select it and click **Use as a draft**. The prompt canvas automatically opens with selected prompt and system prompts.
 
+!!! note
+
+    You can select the 'Mark as a default version' option to set a preferred prompt as the default version. 
 
 ## Prompt API Endpoint
 
@@ -82,9 +85,7 @@ Steps to bookmark a model:
 
     <img src="../images/versions_dialog_prefered_model.png" alt="Versions dialog" title="Versions dialog" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
 
-        You can select the 'Mark as a default version' option to set a preferred prompt as the default version. 
 
 ## Draft History
 

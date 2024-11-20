@@ -95,12 +95,13 @@ Test your prompts with different AI models to identify which one best aligns wit
 1. In the prompt canvas, click the **Select Model** field.
 A list of models is displayed in the drop-down list.
 2. Select your preferred model for your prompts.
-3. To add multiple models, select different models in the columns on the right.
+3. To add multiple models, select different models in the columns on the right.  
+    You can also click the model settings icon to adjust the model parameters like temperature, top k, top p, and max tokens.
 
     <img src="../images/prompt_selectmodels_example.png" alt="Select model" title="Select model" style="border: 1px solid gray; zoom:80%;">
 
-    You can also click the model settings icon to adjust the model parameters like temperature, top k, top p, and max tokens.
-    For more information on other model-related options such as model settings, bookmarking a model, or removing a model, see [Options on the Prompt Canvas](../playground/options-prompt-canvas.md).
+    
+    For more information on other model-related options such as model settings, bookmarking a model, or removing a model, see [More options on the Prompt Canvas](../playground/options-prompt-canvas.md).
 
 
 ## Generate output

@@ -191,7 +191,7 @@ Then, enter your password and click **Login**.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Once you create an account, you are provided with 75 model credits and 10k agent runs to start using GALE's features.</p>
+<p>Once you create an account, you will receive 75 model credits and 10,000 agent runs by default to start using GALE's features.</p>
 </div>
 
 ### Failed Login and Account Locking
@@ -281,12 +281,13 @@ Click the account you want to access. The system redirects you to the **Agents**
 
 Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts.  
 
-If you do not have sufficient model credits and agent runs in your account, you will have only limited access to modules and features.
+
 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul><li>Each email address can only be associated with one GALE account.</li>
+<li>If you do not have sufficient model credits and agent runs in your account, you will have only limited access to modules and features.</li>
 </ul>
 </div>
 
