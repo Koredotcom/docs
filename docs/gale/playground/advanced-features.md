@@ -1,7 +1,115 @@
 # Advanced Features  
 
 Prompt Studio offers a suite of features designed to streamline and enhance your prompt creation and management process, providing greater flexibility, collaboration, and control throughout your workflow.
-  
+
+
+## Using Test Data
+
+GALE provides two options for working with test data: Importing test data and Generating test data. Both options enable you to efficiently populate variables within your prompts, helping you test and experiment with AI models in a streamlined manner.
+
+* **Importing test data** lets you upload a CSV file with your own data to automatically populate variables.
+* **Generating test data** provides a quick, automated way to create synthetic datasets significantly reducing the time required for manual data creation. AI analyzes the prompt and its variables to understand the context, then generates the corresponding values for each variable.
+
+<img src="../playground/images/generate_and_import_test_data.png" alt="Test data" title="Test data" style="border: 1px solid gray; zoom:80%;">
+
+### Import Test Data
+
+The Import test data option lets you upload datasets with variables from a CSV file. The values for variables in {{}} braces are populated from this file. For a selected column, the variable values are automatically populated from that column for up to 10 rows (if available in the dataset). You can manually edit these entries as needed.
+
+To correctly map the values, ensure the column names in the .csv file match the variables exactly (case-sensitive), such as {{Name}} for a column named "Name." Also make sure the data starts from the first row and first column of the .csv file so that your variables are pulled in correctly.
+
+!!! note
+
+    You can import a maximum of 10 rows of data simultaneously.
+
+**Steps to import data:**
+
+1. To import your CSV file with data, on the prompt canvas, click **Test data > Import test data**.
+
+2. In the **Import test data** dialog, upload the CSV file from your local computer or select from existing datasets.
+
+    <img src="../images/import_test_data.png" alt="Import test data dialog" title="Import test data dialog" style="border: 1px solid gray; zoom:80%;">
+
+3. Once you upload the file, you can see a preview of all the data in your CSV file. Click **Proceed** to accept the file.
+
+    <img src="../images/import_test_data_preview.png" alt="Import test data preview" title="Import test data preview" style="border: 1px solid gray; zoom:80%;">
+
+The prompt canvas will directly fetch the row data from the .csv file into the Variables window. The variables are substituted with their assigned values during prompt execution, and the generated output reflects these values accordingly. You can now easily utilize the data in your prompts, managing and executing multiple variables at once.
+
+### Generate Test Data
+
+You can easily generate custom test datasets without manual data creation. By providing a prompt with defined variables (like "name","age", or "location"), the system automatically creates the dataset based on these variables. This feature saves time on manual data preparation, allowing you to focus on testing and experimenting with your AI models.
+
+!!! note
+
+    You can generate a maximum of 5 rows of data simultaneously.
+
+**Steps to generate custom test data:**
+
+1. **Define the prompt**: In the prompt canvas, enter your prompt describing the dataset you want to generate. For example, "Generate a job description with job title, experience, and location."
+2. **Add the variables**: Include variables in double curly braces. For example, {{Job Title}}, {{Experience}}, and {{Location}}. Once you add the variables, the **Test data** option is displayed.
+3. **Generate Dataset**: Click **Test data > Generate test data**. In the Generate test data dialog, specify the type of model and number of rows and click **Generate**. The system generates the dataset based on the prompt and number of data points.
+
+    <img src="../images/generate_test_data_dialog.png" alt="Import test data dialog" title="Import test data dialog" style="border: 1px solid gray; zoom:80%;">
+
+4. **Preview the Dataset**: Check the preview of the generated data.
+5. **Apply Dataset to Playground**: After confirming the preview, click **Apply value to the variables**. The dataset will be applied to the prompt canvas and the data is filled into the correct rows and columns for testing.
+
+    <img src="../images/generate_test_data_values_applied.png" alt="Import test data dialog" title="Import test data dialog" style="border: 1px solid gray; zoom:80%;">
+
+
+
+## Prompt Sharing
+
+Prompt Sharing lets users collaborate on prompt creation by sharing prompts, inputs, outputs, and settings with other users. This helps in enhancing teamwork, improving efficiency, and helps track changes through version history.
+
+**Key Scenarios**:
+
+1. **Sharing without committing a version**
+    * The user shares a prompt without saving a version - All inputs, outputs, and settings are shared with the new user, but no version history is shared as no versions have been saved.
+    * Both users work on the same draft version without affecting each other's drafts.
+2. **Sharing after committing a version**
+    * The user shares a prompt after saving (committing) a version - The new user receives the full version history and can see all changes made.
+    * The new user starts with the latest draft but can view all previous versions.
+3. **Sharing with multiple users and versions**
+    * When multiple users have contributed to a prompt, the original creator is marked as the ‘Owner’.
+    * The new user can access all versions, and see who made each change.
+
+**Steps to share a prompt and manage roles:**
+
+1. Open the prompt you want to share.
+2. On the prompt canvas, click the **three dots** icon and select **Share**.
+
+    <img src="../images/share_option.png" alt="Share option" title="Share option" style="border: 1px solid gray; zoom:80%;">
+
+
+3. In the **Share** dialog, select the users you want to share the prompt with.  
+
+    Ensure the user is part of your account; if they are not, you can add them in Settings.
+4. Assign a role to the user: **Full**, **Edit**, or **View**.
+
+    <img src="../images/share_dialog.png" alt="Share dialog" title="Share dialog" style="border: 1px solid gray; zoom:80%;">
+
+
+5. Click **Share**.
+The system sends appropriate notifications to the users involved in the sharing process, informing them about the shared prompt and their assigned permissions.
+
+### Prompts Roles and Permissions
+
+The roles in Prompt Studio define user access levels, ensuring appropriate control over prompts. You can easily assign users the appropriate access level as needed, ensuring efficient collaboration and maintaining control over your prompts. To ensure proper access, it's important to regularly review and adjust user roles as needed.
+
+Below are the roles and their associated permissions:
+
+1. **Full (Owner):**
+    * Has full control over prompts - view, edit, restore, commit, delete.
+    * Can manage users and API keys, and generate and manage data.
+2. **Edit (Collaborator)**:
+    * Has all 'Full' role permissions except deletion.
+    * Can edit prompts but cannot delete prompts.
+3. **View (Viewer)**:
+    * Can only view prompts and versions.
+    * Cannot do any actions in the prompt such as editing, deleting, or committing versions.
+
 
 ## Prompt Versioning
 

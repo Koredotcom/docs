@@ -6,13 +6,13 @@ When users create an account with GALE, they receive free credits— including 7
 
 GALE provides multiple alert and warning notifications to inform users when their credits are running low or have expired. These notifications are crucial for:
 
-* Helping users monitor their credit usage
-* Allowing proactive management to prevent service disruptions
-* Reminding users to add credits in advance to ensure uninterrupted access to GALE's features
+* Helping users monitor their credit usage.
+* Allowing proactive management to prevent service disruptions.
+* Reminding users to add credits in advance to ensure uninterrupted access to GALE's features.
 
 ### Notification Methods
 
-* **Banner Alerts:** A banner appears at the top of the page in the application to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time.
+* **Banner Alerts:** A banner appears at the top of the page to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time.
 
     Banners will appear at the top of the page in the following cases:  
     * Free credits expired: Users will see a fixed top banner prompting them to upgrade their plan.  
@@ -21,7 +21,7 @@ GALE provides multiple alert and warning notifications to inform users when thei
 
     For example, *“Your model credits and agent runs are low, and fine-tuning is disabled. Please contact galesupport@kore.com for uninterrupted service.”*
 
-* **Email Notifications:** The system automatically sends email notifications to users when their credit levels fall below a specified threshold, including warnings for both model credits and agent runs. Emails will be sent at 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These emails include instructions on the next steps to resolve the issue, such as adding more credits byor  contacting GALE support.
+* **Email Notifications:** The system automatically sends email notifications to users when their credit levels fall below a specified threshold, including warnings for both model credits and agent runs. Emails will be sent at 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These emails include instructions on the next steps to resolve the issue, such as adding more credits by contacting GALE support.
 
     For example, *“This is to inform you that your model credits are getting low. You cannot start a new model fine-tuning job unless you have more than 25 model credits. To ensure uninterrupted service, kindly top up your plan with more model credits or email galesupport@kore.com.”*
 
@@ -31,7 +31,7 @@ GALE provides multiple alert and warning notifications to inform users when thei
 
 ## Credit Usage Indicator
 
-Users can easily track their usage and know when to take action. On the top right side of the application, users will see a round pie chart icon that visually represents their credit usage. 
+Users can easily track their usage and know when to take action. On the top right corner of the application, you can see a round pie chart icon that visually represents their credit usage.
 
 <img src="../images/managing_usage_color_coding.png" alt="Credit usage indicator" title="Credit usage indicator" style="border: 1px solid gray; zoom:80%;">
 
