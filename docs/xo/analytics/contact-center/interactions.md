@@ -207,10 +207,10 @@ The Insights to Logs panel provides details of the conversation between the cont
 
 Click the interaction to view the Insights to Logs panel. The following tabs are displayed:
 
-TRANSCRIPT – (formerly CHAT HISTORY)
-DETAILS
-USER
-IDENTIFIERS
+1. TRANSCRIPT – (formerly CHAT HISTORY)  
+2. DETAILS  
+3. USER  
+4. IDENTIFIERS
 
 Icons beside the Insights to Logs header show the Direction (inbound or outbound), Language, and Channel.  
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
@@ -220,41 +220,42 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 
 **DETAILS**: This tab shows the following details:
 
-**Start**: Conversation start time
-**End**: Conversation end time
-**Agents**: Name of the agent
-**Consulting agents**: Name of the consulting agent
-**Joined Users**: Names of users who joined this conversation
-**Queues**: The queues where the call was handled
-**Skills**: The assigned skills
-**Status**: Conversation status
-**Mode**: Mode of the conversation
-**CSAT**: CSAT survey score
-**Disposition**: Dispositions assigned
-**Notes**: Notes added to the conversation (view only)
-**Snooze Count**: Number of times the conversation was snoozed
-**Snooze Duration**: Duration for which the conversation was snoozed
-**Session-level tags**: Session-level tags assigned to the conversation.  
+**Start**: Conversation start time  
+**End**: Conversation end time  
+**Agents**: Name of the agent  
+**Consulting agents**: Name of the consulting agent  
+**Joined Users**: Names of users who joined this conversation  
+**Queues**: The queues where the call was handled  
+**Skills**: The assigned skills  
+**Status**: Conversation status  
+**Mode**: Mode of the conversation  
+**CSAT**: CSAT survey score  
+**Disposition**: Dispositions assigned  
+**Notes**: Notes added to the conversation (view only)  
+**Snooze Count**: Number of times the conversation was snoozed  
+**Snooze Duration**: Duration for which the conversation was snoozed  
+**Session-level tags**: Session-level tags assigned to the conversation.    
 <img src="../images/details-tab-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
 **USER**: This tab shows the following details:
 
-**Customer Phone**: Customer’s phone number.
-**Customer Name**: Customer’s name.
-**Customer Email**: Customer’s email address.
-**Channel User ID**: The user ID of the conversation channel.
-**User ID**: Agent’s user ID.
+**Customer Phone**: Customer’s phone number.  
+**Customer Name**: Customer’s name.  
+**Customer Email**: Customer’s email address.  
+**Channel User ID**: The user ID of the conversation channel.  
+**User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
 <img src="../images/user-tab.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 
-**Call ID**: The call ID (for voice calls)
-**Session ID**: The session ID.
-**Channel User ID**: The user ID of the conversation channel.
-**Call Conversation ID**: The conversation ID (for voice calls)
-**Agent Conversation ID**: The agent conversation ID.
+**Call ID**: The call ID (for voice calls)  
+**Session ID**: The session ID.  
+**Channel User ID**: The user ID of the conversation channel.  
+**Call Conversation ID**: The conversation ID (for voice calls)  
+**Agent Conversation ID**: The agent conversation ID.  
 **User ID**: The agent’s user ID.  
+**Campaign Instance ID**: The campaign instance ID (for campaigns).  
 <img src="../images/identifiers-tab.png" alt="Identifiers Tab" title="Identifiers Tab" style="border: 1px solid gray; zoom:60%;">
 
 ## Call Recording

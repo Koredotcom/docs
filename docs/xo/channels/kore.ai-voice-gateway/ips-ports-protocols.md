@@ -4,14 +4,13 @@ This document contains all the region wise IPs, ports, and protocols for Kore Vo
 
 ## Regions
 
-### United States of America (US)
+### United States of America (US) - East
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
 <table>
   <tr>
-   <td>
-<strong>Component</strong>
+   <td><strong>Component</strong>
    </td>
    <td>SIP Server – 1
    </td>
@@ -117,7 +116,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   </tr>
 </table>
 
-For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
+For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:  
 
 <table>
   <tr>
@@ -137,9 +136,9 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>savg-webserver.kore.ai,
+   <td>savg-webserver.kore.ai
 <br>
-savg-sbc1.kore.ai,<br>savg-sbc2.kore.ai
+savg-sbc1.kore.ai,savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -169,6 +168,180 @@ savg-sbc1.kore.ai,<br>savg-sbc2.kore.ai
    <td>44.215.230.111
 <br>
 54.210.75.166
+   </td>
+  </tr>
+  <tr>
+   <td><strong>RTP Ports</strong>
+   </td>
+   <td>10000 to 60000
+   </td>
+  </tr>
+</table>
+
+### United States of America (US) - West
+
+Enable inward and outward traffic to the following IPs and respective ports:
+
+<table>
+  <tr>
+   <td><strong>Component</strong>
+   </td>
+   <td>SIP Server – 1
+   </td>
+  </tr>
+  <tr>
+   <td><strong>IP Address</strong>
+   </td>
+   <td>54.67.69.12
+   </td>
+  </tr>
+  <tr>
+   <td><strong>FQDN</strong>
+   </td>
+   <td>usw-savg-sbc1.kore.ai
+   </td>
+  </tr>
+  <tr>
+   <td><strong>TCP / UDP Port</strong>
+   </td>
+   <td>5060
+   </td>
+  </tr>
+  <tr>
+   <td><strong>TLS Port</strong>
+   </td>
+   <td>5061
+   </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+   <td><strong>Component</strong>
+   </td>
+   <td>SIP Server – 2
+   </td>
+  </tr>
+  <tr>
+   <td><strong>IP Address</strong>
+   </td>
+   <td>54.177.21.117
+   </td>
+  </tr>
+  <tr>
+   <td><strong>FQDN</strong>
+   </td>
+   <td>usw-savg-sbc2.kore.ai
+   </td>
+  </tr>
+  <tr>
+   <td><strong>TCP / UDP Port</strong>
+   </td>
+   <td>5060
+   </td>
+  </tr>
+  <tr>
+   <td><strong>TLS Port</strong>
+   </td>
+   <td>5061
+   </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+   <td><strong>Component</strong>
+   </td>
+   <td>RTP Server – 1
+   </td>
+  </tr>
+  <tr>
+   <td><strong>IP Address</strong>
+   </td>
+   <td>54.67.69.12
+   </td>
+  </tr>
+  <tr>
+   <td><strong>RTP Ports</strong>
+   </td>
+   <td>10000 to 60000
+   </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+   <td><strong>Component</strong>
+   </td>
+   <td>RTP Server – 2
+   </td>
+  </tr>
+  <tr>
+   <td><strong>IP Address</strong>
+   </td>
+   <td>54.177.21.117
+   </td>
+  </tr>
+  <tr>
+   <td><strong>RTP Ports</strong>
+   </td>
+   <td>10000 to 60000
+   </td>
+  </tr>
+</table>
+
+For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
+
+<table>
+  <tr>
+   <td><strong>Component</strong>
+   </td>
+   <td>WebRTC Session Border Controller (SBC)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>IP Address</strong>
+   </td>
+   <td>54.67.69.12
+<br>
+54.177.21.117
+   </td>
+  </tr>
+  <tr>
+   <td><strong>FQDN</strong>
+   </td>
+   <td>usw-savg-sbc1.kore.ai
+<br>
+usw-savg-sbc2.kore.ai
+   </td>
+  </tr>
+  <tr>
+   <td><strong>HTTPS</strong>
+   </td>
+   <td>443
+   </td>
+  </tr>
+  <tr>
+   <td><strong>WSS Port</strong>
+   </td>
+   <td>8443
+   </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+   <td><strong>Component</strong>
+   </td>
+   <td>WebRTC RTP Servers
+   </td>
+  </tr>
+  <tr>
+   <td><strong>IP Address</strong>
+   </td>
+   <td>54.67.69.12
+<br>
+54.177.21.117
    </td>
   </tr>
   <tr>

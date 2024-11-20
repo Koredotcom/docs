@@ -151,8 +151,8 @@ nav:
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
                 - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
-                - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
                 - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
+                - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -383,7 +383,6 @@ nav:
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
       - Overview: quality-management/about-quality-management.md      
-      - QM Sign Up Process: quality-management/qm-sign-up-process.md
       - Setup Guide: quality-management/setup-guide.md
       - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
       - Analyze:
