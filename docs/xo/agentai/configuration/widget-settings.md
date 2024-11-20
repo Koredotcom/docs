@@ -53,7 +53,7 @@ This section lets you set your preferences based on the channels. It has three c
 ### Steps to set channel specific preferences
 
 1. Sign in to XO Platform.
-2. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Widget Settings**.
+2. Go to **Agent AI** > **Configuration** > **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings**.
 3. Click to expand the **Agent AI Channel Specific Settings** section on the **Agent AI Settings** page.
 4. Select a **channel** in the **Select channel** list.
 5. Click the **toggle** against **Agent AI Channel Specific Settings** to enable it (if **Disabled**).
@@ -88,27 +88,32 @@ This section lets you set up the general features of the Agent AI widget. Here, 
     <img src="../widget-settings-images/post-event-url-opening-behavior-3.png" alt="post-event-url-opening-behavior" title="post-event-url-opening-behavior" style="border: 1px solid gray; zoom:80%;">
 
     As in the above image, when you click a link in the widget the **AgentAI.UrlClickedMessage** event is triggered and a log opens on the right showing the URL. Desktop applications can take this URL and customize its opening behavior.
+
 * **Data Format Preference**: You can decide the message text format that you send to the customer through the **Send**/**Copy** fields for the Playbooks and Dialog Tasks in the Agent AI widget. The values to choose from are:
     * **Plain String**: Transmits messages in plain text format.
     * **Original Format**: Transmits messages in HTML tags as received.
+
 * **Help & Support**: This section gives you access to the available documents, FAQs, and the Kore Academy courses. You can select whether or not to display Help & Support, which components to show under it, and the URLs of those components.
+
 * **Honor Bot Event** **– Intent not found**: Here, you can turn on or off the **Honor Bot Event – Intent not found** toggle. When turned on, the configured intent-not-found event triggers if Agent AI doesn’t understand the user’s intent.
+
 * **Default Language for Agent AI Widget**: In this section, you can select a language for the Agent AI widget. In runtime, the widget appears in the selected language. Also, you enable a checkbox that allows agents to change the language in run time. If this checkbox is disabled, agents can’t change the language.
+
 * **Dialog Task Display Name Configurations**: Here, you can set up the “trait” identification method that helps display appropriate trait-based Dialog Tasks for agents. This method helps display the “child”/sub Dialog Tasks if they are the most accurate match, based on customer interaction. To use the “trait” based Dialog Task display, admins must define a custom script logic in the Agent AI Settings page.
 
 ### Steps to set Agent AI General Settings
 
-1. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Widget Settings**.
+1. Go to **Agent AI** > **Configuration** > **Widget Settings** > **Agent AI Settings** > **Agent AI General Settings**.
 2. Click to expand the **Agent AI General Settings** section.
 3. Select **Default System Behavior** or **Post Event** under the **URL opening behavior** section.
-4. Select **Plain String **or** Original Format** in the **Data Format Preference** section.
+4. Select **Plain String** or **Original Format** in the **Data Format Preference** section.
 5. **Enable** or **disable** the **Help & Support** toggle.
     1. Click to select any or all of the components (**Documentation**, **FAQ**, and **Kore Academy**).
     2. Click to customize the default URLs of the **Documentation** and/or **FAQ** components.
 6. Enable or disable the **Honor Bot Event – Intent not found** toggle.
 7. Select a language from the list in the **Default Language for Agent AI Widget** section.
     1. Select/clear the **Allow agents to switch between multiple available languages** field.
-8. Select **Default System Behavior **or** Advanced Mode** in the **Dialog Task Display Name Configurations** field.
+8. Select **Default System Behavior** or **Advanced Mode** in the **Dialog Task Display Name Configurations** field.
     1. If you select **Advanced Mode**, a pop-up box to enter custom scripts appears.
     2. Enter your script, and click **Save**.  
     <img src="../widget-settings-images/custom-script.png" alt="custom-script" title="custom-script" style="border: 1px solid gray; zoom:80%;">
