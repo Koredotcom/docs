@@ -73,15 +73,17 @@ To configure the Component Properties tab, please follow the steps below:
        * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** 
 
        * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
-
-            * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
-            * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
-            * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
+         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
+         
+         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
+         
+         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
         
        * Under **Redaction of PII Data**, you can specify the format for presenting this API response containing PII data in messages and post-processing:
-
-            * De-identify PII data when presenting it to the user or in post-processing: The redacted value is shown in messages and post-processing.
-            * Use the original value of the PII data while presenting it to the user or in post-processing: The original value is shown in messages and post-processing.
+         
+         * De-identify PII data when presenting it to the user or in post-processing: The redacted value is shown in messages and post-processing.
+         
+         * Use the original value of the PII data while presenting it to the user or in post-processing: The original value is shown in messages and post-processing.
 
             For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;">
