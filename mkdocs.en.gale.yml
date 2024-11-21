@@ -128,7 +128,8 @@ nav:
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
-        - End Node: agents/agents-flows/types-of-nodes/end-node.md        
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md 
+      - Agent Canvas Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Agent Endpoint: 

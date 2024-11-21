@@ -10,7 +10,7 @@ GALE provides two options for working with test data: Importing test data and Ge
 * **Importing test data** lets you upload a CSV file with your own data to automatically populate variables.
 * **Generating test data** provides a quick, automated way to create synthetic datasets significantly reducing the time required for manual data creation. AI analyzes the prompt and its variables to understand the context, then generates the corresponding values for each variable.
 
-<img src="../playground/images/generate_and_import_test_data.png" alt="Test data" title="Test data" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/generate_and_import_test_data.png" alt="Test data" title="Test data" style="border: 1px solid gray; zoom:80%;">
 
 ### Import Test Data
 
@@ -24,7 +24,7 @@ To correctly map the values, ensure the column names in the .csv file match the 
 
 **Steps to import data:**
 
-1. To import your CSV file with data, on the prompt canvas, click **Test data > Import test data**.
+1. On the prompt canvas, click **Test data > Import test data**.
 
 2. In the **Import test data** dialog, upload the CSV file from your local computer or select from existing datasets.
 
@@ -65,7 +65,7 @@ Prompt Sharing lets users collaborate on prompt creation by sharing prompts, inp
 
 **Key Scenarios**:
 
-1. **Sharing without committing a version**
+1. **Sharing without committing a version**:
     * The user shares a prompt without saving a version - All inputs, outputs, and settings are shared with the new user, but no version history is shared as no versions have been saved.
     * Both users work on the same draft version without affecting each other's drafts.
 2. **Sharing after committing a version**
