@@ -77,10 +77,6 @@ You can view both automated interactions and manual audits scores across the fol
 * **Monthly**: Displays score for the last 7 months.   
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
-## Adherence Heatmap
-This enables supervisors to view and track trends in agent compliance with specific metrics over time. It highlights interactions where agents consistently fail to meet metrics and offers the ability to filter non-compliant interactions. By analyzing the heatmap, supervisors can quickly identify areas of concern, monitor agent performance across evaluation forms or queues, and pinpoint agents who need attention. This provides actionable insights, helping supervisors make informed decisions and take targeted steps to drive improvement.  
-<img src="../dashboard/images/adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
-
 ## Fail Statistics
 This chart displays the count of failed interactions based on the selected Evaluation forms and date range. It allows you to visualize failure trends for the chosen Evaluation forms over the last 7 days, 7 weeks, or 7 months (using daily, weekly, and monthly) views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.
 
