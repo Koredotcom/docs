@@ -10,6 +10,11 @@ The original values are stored in a secure vault and can be used in a few scenar
 * If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. However, you can send the original data for scenarios like passing the value to the backend system for further processing. Select the appropriate option while configuring the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}.
 * You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Select the appropriate option while configuring the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"}.
 
+!!! note
+  
+    The ‘Redaction of PII Data’ option selected at the node level only affects those instances during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected at the node level.
+
+
 The platform provides the following three modes to redact specified information types:
 
 
