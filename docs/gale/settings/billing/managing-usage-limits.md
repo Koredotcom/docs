@@ -15,7 +15,8 @@ GALE provides multiple alert and warning notifications to inform users when thei
 **Banner Alerts:** A banner appears at the top of the page to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time.
 
 Banners will appear at the top of the page in the following cases:  
-* Free credits expired: Users will see a fixed top banner prompting them to upgrade their plan.  
+
+* Free credits expired: Users will see a fixed top banner prompting them to upgrade their plan.
 * Model credits/agent runs expired: Users will see a fixed top banner prompting them to either upgrade or top-up their current plan.  
 * Model credits/agent runs low: Users will see a removable banner encouraging them to top-up or upgrade their plan. This banner can be removed, but will reappear upon page refresh.
 
