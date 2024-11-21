@@ -12,7 +12,7 @@ GALE provides multiple alert and warning notifications to inform users when thei
 
 ### Notification Methods
 
-* **Banner Alerts:** A banner appears at the top of the page to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time.
+1) **Banner Alerts:** A banner appears at the top of the page to inform users of their usage status. The alert banners are displayed at 20%, 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These banners ensure users are aware of low credits/runs in real-time.
 
     Banners will appear at the top of the page in the following cases:  
     * Free credits expired: Users will see a fixed top banner prompting them to upgrade their plan.  
@@ -21,7 +21,7 @@ GALE provides multiple alert and warning notifications to inform users when thei
 
     For example, *“Your model credits and agent runs are low, and fine-tuning is disabled. Please contact galesupport@kore.com for uninterrupted service.”*
 
-* **Email Notifications:** The system automatically sends email notifications to users when their credit levels fall below a specified threshold, including warnings for both model credits and agent runs. Emails will be sent at 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These emails include instructions on the next steps to resolve the issue, such as adding more credits by contacting GALE support.
+2) **Email Notifications:** The system automatically sends email notifications to users when their credit levels fall below a specified threshold, including warnings for both model credits and agent runs. Emails will be sent at 50%, 70%, 80%, and 90% exhaustion of model credits and agent runs, providing users with ample notice to take action. These emails include instructions on the next steps to resolve the issue, such as adding more credits by contacting GALE support.
 
     For example, *“This is to inform you that your model credits are getting low. You cannot start a new model fine-tuning job unless you have more than 25 model credits. To ensure uninterrupted service, kindly top up your plan with more model credits or email galesupport@kore.com.”*
 

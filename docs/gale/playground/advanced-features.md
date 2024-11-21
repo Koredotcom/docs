@@ -66,14 +66,14 @@ Prompt Sharing lets users collaborate on prompt creation by sharing prompts, inp
 **Key Scenarios**:
 
 1. **Sharing without committing a version**:
-    * The user shares a prompt without saving a version - All inputs, outputs, and settings are shared with the new user, but no version history is shared as no versions have been saved.
+    * When a user shares a prompt without saving (committing) a version - all inputs, outputs, and settings are shared with the new user. Version history is not shared as no versions have been saved.
     * Both users work on the same draft version without affecting each other's drafts.
 2. **Sharing after committing a version**
-    * The user shares a prompt after saving (committing) a version - The new user receives the full version history and can see all changes made.
+    * When a user shares a prompt after saving (committing) a version - the new user will receive the full version history and can see all the changes made.
     * The new user starts with the latest draft but can view all previous versions.
 3. **Sharing with multiple users and versions**
-    * When multiple users have contributed to a prompt, the original creator is marked as the ‘Owner’.
-    * The new user can access all versions, and see who made each change.
+    * When multiple users have contributed to a prompt, the original creator is designated as the ‘Owner’.
+    * The new user can access all versions, and see which user made each change.
 
 **Steps to share a prompt and manage roles:**
 
