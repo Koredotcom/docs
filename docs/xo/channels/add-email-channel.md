@@ -14,7 +14,7 @@ The email channel offers the following functionalities:
 You can use the Kore.ai Email domain or create your custom Email Domain to configure your email addresses.
 
 To configure the email domains, go to **Contact Center AI** > **Flows & Channels** > **CHANNELS** > **Digital** > **Email**.  
-<img src="../images/email-page.png/" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/email-page.png" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
 
 ## Kore.ai Email Domain
 
