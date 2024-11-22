@@ -194,3 +194,7 @@ nav:
       - Analytics:
         - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
+    - Billing:
+      - Billing and Usage: settings/billing/billing-and-usage.md
+      - Managing Usage Limits: settings/billing/managing-usage-limits.md
+      

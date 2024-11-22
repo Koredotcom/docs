@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.7.1 November 18, 2024
+
+<u> Patch Release </u>
+
+This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Widget Enhancement
+#### Agent AI for Outbound Calls
+
+Agent AI is now available for both inbound and outbound calls.
+
+### Integration Enhancement
+#### Default Kore Agent AI Interaction Widget for Genesys
+
+To streamline call handling and improve efficiency, the Agent AI widget now supports Genesys' default pop-up window. The widget automatically opens upon receiving a call or message.
+
+<hr>
+
 ## v11.7.0 November 3, 2024
 
 <u> Minor Release </u>

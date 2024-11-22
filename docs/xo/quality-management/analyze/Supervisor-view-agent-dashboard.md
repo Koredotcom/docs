@@ -1,27 +1,25 @@
 # Supervisor View (Agent-specific Dashboard)
 
-This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It allows supervisors to assess performance metrics and identify coaching opportunities at an individual level. The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
+The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
 
 You can access the Supervisor view of the Agent-specific dashboard in the following ways:
 
-**Step 1:**
+**Approach 1:**
 
-1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Overview** > **Agent Leaderboard**. 
+1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. 
 
-2. Click any of the agents from the **Agent Leaderboard** widget as displayed in the following **Overview** screen of the agent-specific dashboard.  
+2. Click any of the agents from the **Agent Leaderboard** as shown in the following **Overview** screen of the agent-specific dashboard.  
 <img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-**Step 2:**
+**Approach 2:**
 
-3. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
+1. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
 <img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-4. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent-specific dashboard is displayed.   
+2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent-specific dashboard is displayed.   
 <img src="../agent-leaderboard/images/agent-leaderboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 Each agent has a dedicated dashboard accessible to both the agents and their supervisor. This dashboard displays high-level metrics for supervisors to review.
-
-The supervisor can filter agent interactions across all channels (Voice and Chat) by selecting the required date ranges from the Calendar drop-down list.
 
 For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-management/analyze/dashboard#date-range-filter). 
 
