@@ -11,7 +11,7 @@ Each log entry includes the following to provide actionable insights on account 
 - Date and time of the event.
 - Detailed description of the action.
 
-<img src="../images/audit-logs-metadata.png" alt="audit logs metadata" title="audit logs metadata" style="border: 1px solid gray; zoom:75%;">
+<img src="../audit-log/images/agent_audit_log_details.png" alt="audit logs metadata" title="audit logs metadata" style="border: 1px solid gray; zoom:75%;">
 
 The event metadata provides business users with actionable insights, helping them in efficiently identifying patterns in user activities within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.
 
@@ -26,8 +26,10 @@ Steps to access and view agent audit logs:
 1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your GALE account.
 2. On the top navigation bar, click **Agents**.
 3. On the **All agents** page, click the desired agent.
-4. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed.  
+4. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 
+5. Click each row to view more details about the event. For more information, see types of Agent-Level Audit Logs. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
 
+    <img src="../audit-log/images/agent_audit_log.png" alt="audit logs" title="audit logs" style="border: 1px solid gray; zoom:80%;">
 
 ## Dashboard Information
 
@@ -39,5 +41,4 @@ The **Audit Logs** dashboard displays the following information to collectively 
 * **Date and Time:** Represents when the event occurred.
 * **Description:** Provides detailed information about what was done.  
 
-<img src="../images/audit-logs-dashboard.png" alt="audit logs dashboard" title="audit logs dashboard" style="border: 1px solid gray; zoom:75%;">
 
