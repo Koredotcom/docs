@@ -1,6 +1,6 @@
-# Agent Canvas Change Log
+# Agent Flow Change Log
 
-The Agent canvas change log enables admins to track, audit, and review changes made to an agent's canvas over time. This feature enables transparency and accountability by providing a history of all actions taken within the canvas, including updates to node properties, user changes, and version-specific modifications, making it ideal for monitoring agent flow evolution and managing collaborative work.
+The Agent flow change log enables admins to track, audit, and review changes made to an agent's flow over time. This feature enables transparency and accountability by providing a history of all actions taken within the flow, including updates to node properties, user changes, and version-specific modifications, making it ideal for monitoring agent flow evolution and managing collaborative work.
 
 The change log, accessible through the admin console, is an essential tool for tracking user activities and understanding the impact of changes made within the agent's flow.
 
@@ -9,7 +9,7 @@ The change log, accessible through the admin console, is an essential tool for t
 * **Event tracking**: The change log records each time a user exits a property field in a node, capturing the timestamp, the user responsible for the change, and the change made.
 * **Filters for enhanced searchability**: Admins can filter the change log to easily track changes over time, by node, or by specific team members.
 
-## Using the Agent Canvas Change Log
+## Using the Agent Flow Change Log
 
 The change log automatically records every change made within the agent flow whenever a user exits a property field in any node. You can quickly scroll through the log to review the complete history of changes made across the flow.
 
@@ -17,13 +17,13 @@ The change log automatically records every change made within the agent flow whe
 
 ### Accessing the Change Log
 
-1. Open the agent canvas of the agent for which you want to view the change log.
-2. Click the **History/Log** icon at the top-right corner of the canvas.
+1. Open the agent flow of the agent for which you want to view the change log.
+2. Click the **History/Log** icon at the top-right corner of the page.
 The change log opens in a panel on the right.
 
 ### Viewing the Change Log
 
-Once the change log panel opens, you will see a list of entries corresponding to different actions made inside the agent canvas. The most recent changes will appear first in the log.
+Once the change log panel opens, you will see a list of entries corresponding to different actions made inside the agent flow. The most recent changes will appear first in the log.
 
 Each log entry will display the following:
 

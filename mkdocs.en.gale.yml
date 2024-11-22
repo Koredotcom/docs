@@ -129,7 +129,7 @@ nav:
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
         - End Node: agents/agents-flows/types-of-nodes/end-node.md 
-      - Agent Canvas Change Log: agents/agents-flows/agent-canvas-change-log.md   
+      - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Agent Endpoint: 
@@ -145,6 +145,8 @@ nav:
       - Add a Scanner: agents/guardrails/add-a-scanner.md
       - Test Guardrail: agents/guardrails/test-guardrail.md
       - Manage Guardrails: agents/guardrails/manage-guardrails.md
+    - Audit logs:
+      - Agent Audit Logs: agents/agent-audit-log.md
     - Configurations:
       - Configure an Agent: agents/configure-an-agent.md
   - Models: 
