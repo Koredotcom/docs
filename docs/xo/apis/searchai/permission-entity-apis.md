@@ -85,6 +85,77 @@ This API lists all the permission entities associated with a connector.
   </tr>
 </table>
 
+### Response Parameters
+
+<table>
+  <tr>
+   <td>Parameters
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>Entity Id
+   </td>
+   <td>Unique identifier of the field used to create Permission entity. 
+   </td>
+  </tr>
+  <tr>
+   <td>name
+   </td>
+   <td>Name of the entity field as in the source. 
+   </td>
+  </tr>
+  <tr>
+   <td>meta
+   </td>
+   <td>Meta information about the entity. 
+   </td>
+  </tr>
+  <tr>
+   <td>userIds
+   </td>
+   <td>Array of users associated with the permission entity
+   </td>
+  </tr>
+  <tr>
+   <td>sourceType
+   </td>
+   <td>Source of the entity. This field indicates the content source for which the permission entity was created. For instance, if the given permission entity corresponds to a google user group, the value of the field would be googleDrive. 
+   </td>
+  </tr>
+  <tr>
+   <td>type
+   </td>
+   <td>Type of entity. This field indicates the type of user  permission to which the permission entity corresponds. For instance, if the permission entity corresponds to the user criteria in ServiceNow, the value of the field would be userCriteria. 
+   </td>
+  </tr>
+</table>
+
+### **Sample Response**
+```
+[
+    {
+        "_id": "fpe-82e99097-7532-506b-af42-363cbe5bb59c",
+        "entityId": "SearchAssist-qa@kore.com",
+        "meta": {},
+        "name": "SearchAssist-qa",
+        "userIds": [],
+        "sourceType": "googleDrive",
+        "type": "googleGroup"
+    },
+    {
+        "_id": "fpe-5963cdfb-8401-5b90-8115-4c7624057733",
+        "entityId": "2ftst48234234jf-ef",
+        "meta": {},
+        "name": "searchassist dev",
+        "userIds": [],
+        "sourceType": "serviceNow",
+        "type": "usercriteria"
+    }
+]
+```
+
 ## Get Permission Entity by ID
 
 This API returns the details of the request permission entity. It lists the users associated with the permission entity. 
@@ -123,10 +194,7 @@ This API returns the details of the request permission entity. It lists the user
   </tr>
 </table>
 
-
-
 ### **Query Parameters**
-
 
 <table>
   <tr>
@@ -163,6 +231,18 @@ This API returns the details of the request permission entity. It lists the user
   </tr>
 </table>
 
+### **Sample Response**
+```
+{
+    "_id": "fpe-82e99097-7532-506b-af42-363cbe5bb59c",
+    "entityId": "SearchAssist-qa@kore.com",
+    "meta": {},
+    "name": "SearchAssist-qa",
+    "userIds": [],
+    "sourceType": "googleDrive",
+    "type": "googleGroup"
+}
+```  
 ## Update Permission Entity by ID
 
 This API is used to associate users to a Permission Entity. You can add new users to the entity using this API.
