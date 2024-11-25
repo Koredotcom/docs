@@ -15,9 +15,9 @@ Each log entry includes the following to provide actionable insights on account 
 
 The event metadata provides business users with actionable insights, helping them in efficiently identifying patterns in user activities within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.
 
-You can specify a **current** or **past period** to view the logs and have complete visibility into the activities and modifications in your account. [Learn more](./audit-logs.md/#steps-to-set-time-range-for-audit-logs){:target="_blank"}.
+You can specify a **current** or **past period** to view the logs and have complete visibility into the activities and modifications in your account. [Learn more](./audit-logs.md#steps-to-set-time-range-for-audit-logs){:target="_blank"}.
 
-Additionally, you can set **custom filters** based on a specific category, event, or user value to view only the required audit logs. [Learn more](./audit-logs.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+Additionally, you can set **custom filters** based on a specific category, event, or user value to view only the required audit logs. [Learn more](./audit-logs.md#steps-to-add-a-custom-filter){:target="_blank"}.
 
 ## Access Audit Logs
 
@@ -29,7 +29,7 @@ Steps to access and view agent audit logs:
 4. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 
 5. Click each row to view more details about the event. For more information, see types of Agent-Level Audit Logs. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
 
-    <img src="../audit-log/images/agent_audit_log.png" alt="audit logs" title="audit logs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_audit_log.png" alt="agent audit logs" title="agent audit logs" style="border: 1px solid gray; zoom:80%;">
 
 ## Dashboard Information
 
