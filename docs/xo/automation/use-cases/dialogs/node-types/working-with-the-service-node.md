@@ -80,7 +80,7 @@ To configure the Component Properties tab, please follow the steps below:
          * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
         
        * Under **Redaction of PII Data**, you can specify the format for presenting this API response containing PII data in messages and post-processing:
-         
+
          * De-identify PII data when presenting it to the user or in post-processing: The redacted value is used in messages and post-processing.
          
          * Use the original value of the PII data while presenting it to the user or in post-processing: The original value is used in messages and post-processing.

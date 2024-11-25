@@ -70,6 +70,10 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
         
         These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.
 
+
+    * De-identify PII data while presenting it to the user: The entity’s redacted value is shown in prompts and messages.
+    * Use the original value of the PII data while presenting it to the user: The entity’s original value is shown in prompts and messages.
+ 
 8. You can enable the **Sensitive Entity** option to  transient an entity, and redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
     
     <img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">
