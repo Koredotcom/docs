@@ -159,7 +159,6 @@ The following table displays the features and the supported models.
     |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
     |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
-    |Anthropic – <br>Claude and Claude Instant|✅|✅|✅|✅|❌|❌|
     |Custom LLM|✅|✅|❌|✅|❌|❌|
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
@@ -184,9 +183,7 @@ The following table displays the features and the supported models.
 
 \*  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.
 
-!!! note
 
-    Azure OpenAI and OpenAI have officially ended support for their GPT-3 model on January 4, 2024. We recommend selecting a higher or alternate model for supported features as soon as possible.[ Learn more](https://platform.openai.com/docs/deprecations).
 
 
 ## Feature Details

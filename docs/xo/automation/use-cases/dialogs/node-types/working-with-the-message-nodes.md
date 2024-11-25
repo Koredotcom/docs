@@ -19,7 +19,7 @@ For example, the _Book Flights_ sample dialog uses the following message nodes:
 * **_FinalFlightinfo_**: This shows the flight itineraries that the _Flights info_ service node returns.
 * **_Thanks_**: After showing the final flight details, prompts the user if they have any other requests.
 
-To understand customized JavaScript responses and channel-specific templates, refer to [_Customize JavaScript Responses_](../../prompt-editor/#customize-javascript-responses){:target="_blank"} in [_User Prompts_](../../prompt-editor){:target="_blank"} article.
+To understand customized JavaScript responses and channel-specific templates, refer to [_Customize JavaScript Responses_](../prompt-editor.md#javascript-prompts-or-responses){:target="_blank"} in [_User Prompts_](../../prompt-editor){:target="_blank"} article.
 
 
 ## Set-Up

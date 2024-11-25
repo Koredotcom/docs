@@ -1,14 +1,13 @@
-# Customizing the AgentAssist Widget
+# Customizing the Agent AI Widget
 
-The AgentAssist Settings page allows users to set the AgentAssist widget’s appearance. On this page, users can decide what features they want on the widget, how the widget’s search functionality should work, channel specific settings, and the URL opening behavior.
+The Agent AI Settings page allows users to set the Agent AI widget’s appearance. On this page, users can decide what features they want on the widget, channel specific settings, and the URL opening behavior.
 
-The AgentAssist Settings page has the following sections:
+The Agent AI Settings page has the following sections:
 
-* AgentAssist Channel Specific Settings
-* Knowledge AI
-* AgentAssist General Settings
+* Agent AI Channel Specific Settings
+* Agent AI General Settings
 
-## AgentAssist Channel-Specific Settings
+## Agent AI Channel-Specific Settings
 
 This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options. The following options toggles are available to select under this section:
 
@@ -18,16 +17,16 @@ This section lets you set your preferences based on the channels. It has three c
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
         * For Primary playbooks, the automatic adherence or automatic tick-off does not happen.
         * If the Playbook widget is also disabled, the default landing page is “My Bot”.
-* **Agent Coaching**: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only.
+* **Agent Coaching**: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only.
 * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
     
-* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the **Assist** tab. Admins can enable/disable it through the **Widget Settings** > **AgentAssist Settings** > **AgentAssist Channel Specific Settings** page, while the Agents can access it in the **AgentAssist widget** > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
+* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the **Assist** tab. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI widget** > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
 
-* **Send Button**: This widget lets you control the accessibility of the Send button functionality for AgentAssist responses. By default, this widget is enabled for Voice and Chat channels only.
+* **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
 
-* **Copy Button**: This widget lets you control the accessibility of the Copy button functionality for AgentAssist responses. By default, this widget is enabled for all three channels.
+* **Copy Button**: This widget lets you control the accessibility of the Copy button functionality for Agent AI responses. By default, this widget is enabled for all three channels.
 
 * **Conversation Transfer**: This widget lets you define and categorize the conversation transfer behavior based on the transfer type and channels. It applies only to the third-party configurations where appropriate transfer events are transmitted.
 
@@ -42,7 +41,7 @@ This section lets you set your preferences based on the channels. It has three c
 
         * Configure Dialog Task: The user has to select one of the dialog tasks associated with a bot from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
 
-* **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled.
+* **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the Agent AI widget. By default, this widget is enabled.
 
 * **Auto Summarization**: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the **Notes** or **Remark** field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the **Submit** button.
 
@@ -54,10 +53,10 @@ This section lets you set your preferences based on the channels. It has three c
 ### Steps to set channel specific preferences
 
 1. Sign in to XO Platform.
-2. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Widget Settings**.
-3. Click to expand the **AgentAssist Channel Specific Settings** section on the **AgentAssist Settings** page.
+2. Go to **Agent AI** > **Configuration** > **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings**.
+3. Click to expand the **Agent AI Channel Specific Settings** section on the **Agent AI Settings** page.
 4. Select a **channel** in the **Select channel** list.
-5. Click the **toggle** against **AgentAssist Channel Specific Settings** to enable it (if **Disabled**).
+5. Click the **toggle** against **Agent AI Channel Specific Settings** to enable it (if **Disabled**).
 6. Turn the toggle **on** or **off** against each widget, as required.
 7. Select an option under the **Conversation Transfer** section.
 
@@ -79,45 +78,45 @@ This section lets you set your preferences based on the channels. It has three c
 10. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
-## Knowledge AI
+## **Agent AI General Settings**
 
-This section lets you gain access to the Knowledge AI features within the AgentAssist widget during customer interactions. Here, you can set channel-specific display of Knowledge AI search results. It has the following sub sections:
+This section lets you set up the general features of the Agent AI widget. Here, you can turn on or off the event-not-found event trigger, control the URL opening behavior.
 
-* **Search Results**: Gives you the control over Knowledge AI search results. Agents can select between Always Show, Show with XO Results, and Show as a Fallback event.
-    * **Always Show**: Shows all results of Knowledge AI regardless of bot intents. This is the default selection.
-    * **Show with XO Results**: Shows results of Knowledge AI only when relevant bot events such as Dialog Tasks or FAQs are detected.
-    * **Show as a Fallback**: Shows results of Knowledge AI as a fallback when no bot events are detected.
-* **Show Auto Suggestions**: When On, you can avail auto suggestions in the Ask AgentAssist search bar. Turn it Off if you don’t want to avail auto suggestions. The default selection is On.
-* **API Integration**: You can optimize your search experience with the advanced Knowledge AI API configuration. Choose Basic to use the default Knowledge AI configurations or Advanced to configure how you want to use the Knowledge AI. The Advanced option lets you use your own API. The default selection is Basic.
-
-#### **Steps to set channel-specific Knowledge AI**
-
-1. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Widget Settings**.
-2. Click to expand **Knowledge AI** on the **AgentAssist Settings** page.
-3. Select a **channel** in the **Select channel** list.
-4. Click the toggle against **Knowledge Settings** to enable it (if **Disabled**).
-5. Select the options under the **Search Results**, **Show Auto Suggestions**, and **API Integration** sections.
-6. Click **Save** to save your settings.
-   <img src="../widget-settings-images/knowledge-ai-settings-page-2.png" alt="knowledge-ai-settings-page" title="knowledge-ai-settings-page" style="border: 1px solid gray; zoom:80%;">
-
-## **AgentAssist General Settings**
-
-This section lets you set up the general features of the AgentAssist widget. Here, you can turn on or off the event-not-found event trigger and control the URL opening behavior.
-
-* **Honor Bot Event – Intent not found**: Here, you can turn on or off the Honor Bot Event – Intent not found toggle. When turned on, the configured intent-not-found event triggers if AgentAssist doesn’t understand the user’s intent.
-
-* **URL opening behavior**: Here, you can customize the behavior for URL opening in the AgentAssist widget for desktop applications. The following options are available:
-    * **Default System Behavior**: The AgentAssist widget uses the system’s default approach for URL opening – the link/page opens in a new window.
-    * **Post Event**: When a URL is clicked within the AgentAssist widget, it initiates an event named “AgentAssist.UrlClickedMessage.” This event enables the desktop application to manage the URL’s opening behavior, as defined in the agreement between AgentAssist and the agent desktop application. The following screenshot depicts the actions in the widget when you click a URL:
+* **URL opening behavior**: Here, you can customize the behavior for URL opening in the Agent AI widget for desktop applications. The following options are available:
+    * **Default System Behavior**: The Agent AI widget uses the system’s default approach for URL opening – the link/page opens in a new window.
+    * **Post Event**: When a URL is clicked within the Agent AI widget, it initiates an event named “**AgentAI.UrlClickedMessage**.” This event enables the desktop application to manage the URL’s opening behavior, as defined in the agreement between Agent AI and the agent desktop application. The following screenshot depicts the actions in the widget when you click a URL:  
     <img src="../widget-settings-images/post-event-url-opening-behavior-3.png" alt="post-event-url-opening-behavior" title="post-event-url-opening-behavior" style="border: 1px solid gray; zoom:80%;">
-    
-    As in the above image, when you click a link in the widget the AgentAssist.UrlClickedMessage event is triggered and a log opens on the right showing the URL. Desktop applications can take this URL and customize its opening behavior.
 
-### Steps to set AgentAssist General Settings
+    As in the above image, when you click a link in the widget the **AgentAI.UrlClickedMessage** event is triggered and a log opens on the right showing the URL. Desktop applications can take this URL and customize its opening behavior.
 
-1. Go to **CONFIGURATION** > **SYSTEM SETUP**> **Widget Settings**.
-2. Click to expand the **AgentAssist General Settings** section.
-3. Enable or Disable the **Honor Bot Event - Intent not found** toggle, as required.
-4. Select **Default System Behavior** or **Post Event** under the **URL opening behavior** section.
-5. Click **Save** to save your settings.
-   <img src="../widget-settings-images/agentassist-general-settings-page-4.png" alt="agentassist-general-settings-page" title="agentassist-general-settings-page" style="border: 1px solid gray; zoom:80%;">
+* **Data Format Preference**: You can decide the message text format that you send to the customer through the **Send**/**Copy** fields for the Playbooks and Dialog Tasks in the Agent AI widget. The values to choose from are:
+    * **Plain String**: Transmits messages in plain text format.
+    * **Original Format**: Transmits messages in HTML tags as received.
+
+* **Help & Support**: This section gives you access to the available documents, FAQs, and the Kore Academy courses. You can select whether or not to display Help & Support, which components to show under it, and the URLs of those components.
+
+* **Honor Bot Event** **– Intent not found**: Here, you can turn on or off the **Honor Bot Event – Intent not found** toggle. When turned on, the configured intent-not-found event triggers if Agent AI doesn’t understand the user’s intent.
+
+* **Default Language for Agent AI Widget**: In this section, you can select a language for the Agent AI widget. In runtime, the widget appears in the selected language. Also, you enable a checkbox that allows agents to change the language in run time. If this checkbox is disabled, agents can’t change the language.
+
+* **Dialog Task Display Name Configurations**: Here, you can set up the “trait” identification method that helps display appropriate trait-based Dialog Tasks for agents. This method helps display the “child”/sub Dialog Tasks if they are the most accurate match, based on customer interaction. To use the “trait” based Dialog Task display, admins must define a custom script logic in the Agent AI Settings page.
+
+### Steps to set Agent AI General Settings
+
+1. Go to **Agent AI** > **Configuration** > **Widget Settings** > **Agent AI Settings** > **Agent AI General Settings**.
+2. Click to expand the **Agent AI General Settings** section.
+3. Select **Default System Behavior** or **Post Event** under the **URL opening behavior** section.
+4. Select **Plain String** or **Original Format** in the **Data Format Preference** section.
+5. **Enable** or **disable** the **Help & Support** toggle.
+    1. Click to select any or all of the components (**Documentation**, **FAQ**, and **Kore Academy**).
+    2. Click to customize the default URLs of the **Documentation** and/or **FAQ** components.
+6. Enable or disable the **Honor Bot Event – Intent not found** toggle.
+7. Select a language from the list in the **Default Language for Agent AI Widget** section.
+    1. Select/clear the **Allow agents to switch between multiple available languages** field.
+8. Select **Default System Behavior** or **Advanced Mode** in the **Dialog Task Display Name Configurations** field.
+    1. If you select **Advanced Mode**, a pop-up box to enter custom scripts appears.
+    2. Enter your script, and click **Save**.  
+    <img src="../widget-settings-images/custom-script.png" alt="custom-script" title="custom-script" style="border: 1px solid gray; zoom:80%;">
+9. Click **Save** to save your settings.  
+<img src="../widget-settings-images/agent-ai-general-settings.png" alt="agent-ai-general-settings" title="agent-ai-general-settings" style="border: 1px solid gray; zoom:80%;">
+

@@ -14,6 +14,7 @@ Several APIs are available from Contact Center AI. Based on the functionality ad
 * [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
 * [Queue Management APIs](#queue-management-apis)
 * [Quality Management APIs](#quality-management-apis)
+* [WFM APIs](#wfm-apis)
 
 ### Analytics and Reporting APIs
 
@@ -117,3 +118,12 @@ Several APIs are available from Contact Center AI. Based on the functionality ad
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
 | [Raw Data API](../contact-center/qm-apis/raw-data-api.md)                                                               | Provides detailed Quality Management and Conversation Intelligence data, including quality metrics and analytics for each interaction.                                                                   | Configuration        |
 | [Auto QA Reporting API](../contact-center/qm-apis/auto-qa-reporting-api.md)                                                   |Provides interaction-level Auto QA scoring and metric qualification based on the associated Quality Management form.                | Configuration        |
+
+### WFM APIs
+
+| API                                                                                           | Description                                                                                                                      | Associated App Scope |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| [Agents API](../contact-center/agents.md)                                | To get all agent details associated with an accountId.                                                                          | WFM Integration       |
+| [Queues API](../contact-center/queues.md)                                | To get the Queues/Skills associated with an accountId.                                                                          | WFM Integration       |
+| [Agent Activity API](../contact-center/agent-activity.md)                | To get the agent status in real-time or changes stacked every 30 seconds.                                                       | WFM Integration       |
+| [Contact Volume API](../contact-center/contact-volume.md)                | To retrieve call volume details associated with a specified collection point for a given interval, including fields mapped to specific field names relevant to the Workforce Management (WFM) client. | WFM Integration       |

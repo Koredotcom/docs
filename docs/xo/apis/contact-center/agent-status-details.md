@@ -30,6 +30,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy1iMDIzM2M2Ny0zMjJlLTVkMWEtOWZiNy0z
 NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
 --header 'Content-Type: application/json' \
+--header 'iId: st-e19dd469-90f5-5655-b0b2-858de901xxxx' \
 --data-raw '{
 "filter":{
 "dateFilter":{
@@ -40,7 +41,14 @@ NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
 }'
 ```
 
-## Body Parameters
+## Request Header Parameters
+
+| **Header**      | **Description**                         | **Type**                         |
+|------------------|-----------------------------------------|-------------------------------------------|
+| `Content-Type`  | Request body format. For example, `application/json` |  required                      |
+| `iId`           | Stream or application id. For example, `st-e19dd469-90f5-5655-b0b2-858de901xxxx`    | required |
+
+## Request Body Parameters
 
 | **PARAMETER**      | **DESCRIPTION**                                                                                                                                            | **TYPE**        |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|

@@ -1,16 +1,16 @@
 
 # Quality Management Setup Guide
 
-Get started on the Quality AI module: Learn how to set up, configure, and use the Quality AI module.
+Get started on the Quality Management module: Learn how to set up, configure, and use the Quality AI module.
 
 Follow these steps:
 
-1. Configure Quality AI permissions:
+1. Configure Quality Management permissions:
 
     1. Navigate to **User Management** > **Role Management** > **New Role** > **Other Modules**.
-    <br>(Only the app owner has access to Role Management).</br>
+    <br> (Only the app owner has access to [Role Management](https://docs.kore.ai/xo/user-management/role-management/) ).</br>
 
-    2. Assign relevant roles (Supervisor role) or create custom roles with Quality AI permissions.
+    2. Assign relevant roles (Supervisor role) or create custom roles with Quality Management permissions.
 
 2. Set up Contact Center:
 
@@ -18,7 +18,7 @@ Follow these steps:
 
 3. Enable features:
 
-    1. Enable Conversation Intelligence, Auto QA, and Bookmarks in Quality AI Settings. See [Conversation Intelligence](../quality-management/analyze/conversation-intelligence.md).
+    1. Enable Conversation Intelligence, Auto QA, and Bookmarks in Quality Management Settings. See [Conversation Intelligence](../quality-management/analyze/conversation-intelligence.md).
 
     2. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling Gen AI Co-pilot Features](../generative-ai-tools/co-pilot-features.md).
 
