@@ -126,7 +126,9 @@ Once the admin accepts your request via an invitation, you can complete the sign
 
 <ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
 
-<p>Ensure you set a strong password that includes the following:</p>
+#### Password Validation
+
+<p>When signing in or resetting your account password, make sure to provide the following:</p>
 <ul><li>A minimum of 12 characters.</li>
 <img src="../images/password-12-characters-long.png" alt="12 characters" title="12 characters" style="border: 1px solid gray; zoom:75%;"></ul>
 <ul><li>At least one special character.</li>
@@ -138,10 +140,10 @@ Once the admin accepts your request via an invitation, you can complete the sign
 <ul><li>At least one upper case character.</li>
 <img src="../images/password-uppercase-character.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;"></ul>
 
-<p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> button is enabled.</p>
+<p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> or <b>Reset Password</b> button is enabled based on the scenario.</p>
 <img src="../images/strong-password-set.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
 
-### **Account Activation**
+### Account Activation
 
 After you initiate the sign-up process, GALE sends an email to the address you provided. This email contains a verification link and a code to activate your account.
 
@@ -239,6 +241,8 @@ You will receive instructions via email on how to reset your password. Check you
 <img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
 <img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;"></li></ol>
+
+Please refer to the validation instructions [here](../getting-started/sign-up-sign-in.md/#password-validation){:target="_blank"} when resetting the password.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
