@@ -69,7 +69,7 @@ Steps to configure IVR settings for your Virtual Assistant:
  ![IVR Sandbox](../images/IVR-6.png "IVR")
  ![IVR data](../images/IVR-7.png "image_tooltip")
 
-  !!! note
+    !!! note
 
       If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:  
         * Enable Transcription set to Yes.  
