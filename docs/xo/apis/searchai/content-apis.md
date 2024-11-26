@@ -3,7 +3,7 @@
 
 ## Get Content By ID
 
-This API returns the complete metadata of the content requested.
+This API returns the content requested.
 
 
 <table>

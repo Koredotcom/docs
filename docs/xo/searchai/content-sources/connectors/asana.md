@@ -17,8 +17,8 @@ To search through the projects and tasks in your Asana application, configure th
    </td>
    <td>Projects
 <p>
-Tasks \
- \
+Tasks
+
 Note that sub-tasks and attachments are not supported. 
    </td>
   </tr>

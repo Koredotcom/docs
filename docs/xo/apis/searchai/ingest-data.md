@@ -272,9 +272,9 @@ See <a href="../api-introduction/#generating-the-jwt-token"">How to generate the
    </td>
    <td>Yes
    </td>
-   <td>Depending upon the  value of the sourceType, this field can either be used to pass the chunks fields in JSON format or it can be used to pass the reference of the file containing the chunk fields in JSON format.  \
- \
-<strong>For ingesting chunks directly, use the following format.</strong>
+   <td>Depending upon the  value of the sourceType, this field can either be used to pass the chunks fields in JSON format or it can be used to pass the reference of the file containing the chunk fields in JSON format. 
+   
+   <strong>For ingesting chunks directly, use the following format.</strong>
 <p>
 “sourceName”: “Abc”,  \
 “sourceType” : “json”,
@@ -309,8 +309,8 @@ Note that the fields inside the chunks object should correspond to the chunk fie
 <p>
 <strong>For ingesting content from a file, pass the following information in this field.</strong>
 <p>
-“sourceName”: “Abc”,  \
-“sourceType” : “file”, \
+“sourceName”: “Abc”,
+“sourceType” : “file”,
 “documents”: [
 <p>
       {

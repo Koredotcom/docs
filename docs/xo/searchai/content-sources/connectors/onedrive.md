@@ -28,8 +28,8 @@ Type of Repository
   <tr>
    <td>Supported Content Type
    </td>
-   <td>Extractive Answers - .pdf, pages/articles(.aspx), .html, .xhtml. \
-Generative Answers - pages/articles (.aspx), .doc, .docx, .ppt, .pptx, .html, .xhtml, .txt, .pdf
+   <td>Extractive Answers - .pdf, pages/articles(.aspx), .html, .xhtml.
+   Generative Answers - pages/articles (.aspx), .doc, .docx, .ppt, .pptx, .html, .xhtml, .txt, .pdf
    </td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@ Search AI uses **OAuth 2.0 Authorization Code Grant Type** mechanism for integra
 App registrations are required to access resources programmatically. Registering an application establishes trust between the SearchAI application and the identity provider, the Microsoft identity platform. To register, 
 
 * Log in to the [Azure Platform Portal](https://portal.azure.com/#home) and go to Manage **Azure Active Directory**.
-* Register a new application. To do so, go to **App Registrations** under **Applications **and click on **New Registration.**
+* Register a new application. To do so, go to **App Registrations** under **Applications** and click on **New Registration.**
 * Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click ***Register***. You can use one of the following URLs according to your region or deployment.
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
@@ -81,7 +81,7 @@ This will authenticate and enable the Search AI connector to interact with OneDr
 
 ## Content Ingestion
 
-Once the authorization process is complete and the connector is configured, the next step is to ingest the content and make it searchable. Go to the **Configuration **tab and click on** Sync Now** to perform an immediate sync operation with the application. You can also **schedule a sync** to be performed at a future time. 
+Once the authorization process is complete and the connector is configured, the next step is to ingest the content and make it searchable. Go to the **Configuration** tab and click on **Sync Now** to perform an immediate sync operation with the application. You can also **schedule a sync** to be performed at a future time. 
 
 A sync operation ingests content from the application, which is then chunked and indexed according to the configuration of the Search AI application. When a sync operation is performed for the first time, all the supported content is ingested into the application. When a recurrent sync is performed, only the updated content is ingested from the application. In this case, the chunks corresponding to the updated content are deleted and recreated. 
 

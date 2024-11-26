@@ -51,9 +51,9 @@ Search AI supports the ingestion of content from both public and private sites. 
 ![OAuth Client](images/wordpress/OAuth-client.png "Client")
     1. **Name**: Enter a name for the client (e.g., *My App*).
     2. **Redirect URLs**: Provide the callback URL where authorization responses will be sent. Use one of the following redirect URLs based on your region or deployment. 
-        * JP Region Callback URLs: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-        * DE Region Callback URLs: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-        * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+    * JP Region Callback URLs: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
+    * DE Region Callback URLs: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
+    * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 3. Click **Create** to generate the client credentials. 
 4. The following page will display the **Client credentials** along with other details of the app. Copy these and keep them secure. These credentials are required for configuration in the Search AI connector. 
 
@@ -94,7 +94,7 @@ When Permission Aware access is enabled for a site, only users who have access t
 ![Access Control](images/wordpress/site-settings.png "Settings")
 
 
-For **public WordPress sites**, the sys_racl field in the content is set to *. For **private** sites, the identity information of the team members added to the WordPress site is added to the sys_racl field of the corresponding content. To view the team members for a site, go to the **Users** page on the site’s dashboard. 
+For **public WordPress sites**, the sys_racl field in the content is set to "*". For **private** sites, the identity information of the team members added to the WordPress site is added to the sys_racl field of the corresponding content. To view the team members for a site, go to the **Users** page on the site’s dashboard. 
 
 ![Adding users](images/wordpress/adding-users.png "adding users")
 

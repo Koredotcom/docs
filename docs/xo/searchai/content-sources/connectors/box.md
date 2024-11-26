@@ -56,8 +56,8 @@ To enable content ingestion from the Box account, perform the following steps:
 ### Creating an OAuth application in Box Account
 
 * Log in to the developer console in your [Box account](https://app.box.com/developers/console). 
-* Go to **My Apps** and click **Create New App**.  \
-![New App](images/box/createnewapp.png "New App
+* Go to **My Apps** and click **Create New App**. 
+![New App](images/box/createnewapp.png "New App")
 
 * Create a Custom App.
     * On the first step of the app creation wizard, provide the basic details of the app, such as name, description, purpose, etc.   
