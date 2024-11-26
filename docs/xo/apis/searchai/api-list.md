@@ -1,6 +1,7 @@
-## Answer Generation API
+# Search AI API List
 
-Following  is the API provided by Search AI, allowing users to retrieve answers for a given search query.
+The following table lists the APIs available for Search AI, which allows users to retrieve answers to a given search query.
+
 
 | API            | Description                                 | App Scope         |
 |----------------|---------------------------------------------|-------------------|

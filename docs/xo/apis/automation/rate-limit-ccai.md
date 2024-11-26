@@ -1,4 +1,4 @@
-# Rate Limits - Contact Center AI
+# Contact Center AI - API Rate Limits 
 
 Contact Center AI enforces rate limits to restrict the number of API requests an account/application can make within a timeframe. It helps prevent a single user or service from consuming disproportionate resources that could degrade the service for others.
 
