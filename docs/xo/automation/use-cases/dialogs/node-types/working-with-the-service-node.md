@@ -80,13 +80,17 @@ To configure the Component Properties tab, please follow the steps below:
          * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
         
        * Under **Redaction of PII Data**, you can specify the format for presenting this API response containing PII data in messages and post-processing:
-         
-         * De-identify PII data when presenting it to the user or in post-processing: The redacted value is shown in messages and post-processing.
-         
-         * Use the original value of the PII data while presenting it to the user or in post-processing: The original value is shown in messages and post-processing.
 
-            For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
-       <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;">
+         * De-identify PII data when presenting it to the user or in post-processing: The redacted value is used in messages and post-processing.
+         
+         * Use the original value of the PII data while presenting it to the user or in post-processing: The original value is used in messages and post-processing.
+
+            !!! note
+            
+                These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.
+
+        For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
+       <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
 11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 

@@ -63,6 +63,14 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
 
 7. Under **Redaction of PII Data**, you can configure how the value of this entity is presented if it is identified as PII data and used in defining any messages or responses:
 
+    * De-identify PII data while presenting it to the user: The entity’s redacted value is used in prompts and messages.
+    * Use the original value of the PII data while presenting it to the user: The entity’s original value is used in prompts and messages. (This is helpful when you need user confirmation on the original values of the PII data.)
+ 
+    !!! note
+        
+        These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.
+
+
     * De-identify PII data while presenting it to the user: The entity’s redacted value is shown in prompts and messages.
     * Use the original value of the PII data while presenting it to the user: The entity’s original value is shown in prompts and messages.
  

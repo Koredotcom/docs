@@ -24,6 +24,7 @@ To retrieve the self reported status (available, busy, away, etc.) and ACD statu
 curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}//userstatus' \
 --header 'auth: {jwt-code}' \
 --header 'Content-Type: application/json' \
+--header 'iId: st-e19dd469-90f5-5655-b0b2-858de901xxxx' \
 --data-raw '{
 "filter":{
  "agents":["jsmith@domain.com","username@domain.com"],
@@ -37,7 +38,15 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
 }
 ```
 
-## Body Parameters
+## Request Header Parameters
+
+| **Header**      | **Description**                         | **Type**                         |
+|------------------|-----------------------------------------|-------------------------------------------|
+| `auth`          | JWT authentication token. For example, `{jwt-code}`     |      required                        |
+| `Content-Type`  | Request body format. For example, `application/json` |  required                      |
+| `iId`           | Stream or application id. For example, `st-e19dd469-90f5-5655-b0b2-858de901xxxx`    | required |
+
+## Request Body Parameters
 
 | **Parameter**    | **Description**                                                            | **Type**      |
 |--------------|------------------------------------------------------------------------|-----------|
