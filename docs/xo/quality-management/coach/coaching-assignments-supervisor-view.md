@@ -38,11 +38,17 @@ Steps to add coaching assignments:
 8. By default, the Interactions Marked for Coaching details, which are selected from the evaluation tab, are displayed.  
     <img src="../coaching-assignments/images/add-coaching-assignments-coaching-area.png" alt="Interactions Marked for Coaching.png" title="Interactions Marked for Coaching" style="border: 1px solid gray; zoom:70%;">
 
-9. Under the **Best Responses** (optional), select the best response interactions from other agents to provide best reference for this coaching assignment using saved bookmarks. You can select more than one bookmark based on the evaluation criteria, for example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.    
-    <img src="../coaching-assignments/images/best-responses.png" alt="best-responses.png" title="Best Responses" style="border: 1px solid gray; zoom:70%;">
+9. Under the **Best Responses** (optional), select the best response interactions from other agents to provide best reference for this coaching assignment using saved bookmarks.   
+    <img src="../coaching-assignments/images/best-responses.png" title="Best Responses" style="border: 1px solid gray; zoom:70%;">
+    * **View Interactions**: By clicking this button, you can view the specific audit interaction status of an agent in the Chat History.      
 
-10. In the **Feedback**, enter your feedback for better improvement.
-11. Enter **the Action Plan** for the coaching assignment.
-12. Provide the input for the **Follow-up Date** chosen for the assignment
+    * **Add Interactions**: By clicking this button, you can select more than one bookmark based on the evaluation criteria, for example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.        
+
+10. In the **Feedback**, enter your feedback for better improvement on the agent's handling of an interaction, which includes both positive aspects and areas for improvement.    
+    <img src="../coaching-assignments/images/feedback.png" alt="Feedback.png" title="Feedback" style="border: 1px solid gray; zoom:70%;">
+11. Enter **Action Plan** for the coaching assignment that includes actionable steps for the agent to improve their performance in future interactions.    
+    <img src="../coaching-assignments/images/action-plan.png" alt="Action Plan.png" title="Action Plan" style="border: 1px solid gray; zoom:70%;"> 
+12. Provide the input for the **Follow-up Date** chosen for the assignment.  
+    <img src="./coaching-assignments/images/followup-date.png" alt="Follow-up Date.png" title="Follow-up Date" style="border: 1px solid gray; zoom:70%;">
 13. Click **Create** to assign coaching assignments to an agent, which will be populated in the **Agent Dashboard**.
 
