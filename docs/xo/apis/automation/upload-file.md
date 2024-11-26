@@ -1,9 +1,9 @@
 # Upload File API
 
-To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and the **bot** icon to the local server. Additionally, the API fetches the _file ID_ to be used in [Import Bot API](../import-bot-as-new-bot).
+To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and the **bot** icon to the local server. You can also use this API to upload files for ingestion using Search AI. The API returns the file ID in response which is required in Import Bot API or Ingest Data API for further actions on the file.
 
 !!! note
-    You need to upload the files separately. You can upload a file by signing with any app created by the account administrator.
+    To upload  botdefinition, botconfig, and botfunction files, you need to upload the files separately. You can upload a file by signing with any app created by the account administrator.
 
  <table>
   <tr>
@@ -247,3 +247,34 @@ For ML Utterances File ID
    </td>
   </tr>
 </table>
+
+For Data Ingestion in Search AI
+
+
+<table>
+  <tr>
+   <td><strong>PARAMETER</strong>
+   </td>
+   <td><strong>DESCRIPTION</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>file</strong>
+   </td>
+   <td>Upload the file to be ingested into the Search AI application
+   </td>
+  </tr>
+  <tr>
+   <td><strong>fileContext</strong>
+   </td>
+   <td>findly
+   </td>
+  </tr>
+  <tr>
+   <td><strong>fileExtension</strong>
+   </td>
+   <td>pdf, docx, txt, pptx
+   </td>
+  </tr>
+</table>
+
