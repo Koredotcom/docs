@@ -531,8 +531,9 @@ nav:
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
-        - Rate Limits - Automation: apis/automation/rate-limit.md
-        - Rate Limits - Contact Center AI: apis/automation/rate-limit-ccai.md
+        - Rate Limits:
+          - Automation: apis/automation/rate-limit.md
+          - Contact Center AI: apis/automation/rate-limit-ccai.md
         - API List:          
           - Automation AI: apis/automation/api-list.md
           - Search AI: apis/searchai/api-list.md
