@@ -48,15 +48,3 @@ Steps to add coaching assignments:
 9. Provide the input for the **Follow-up Date** chosen for the assignment
 10. Click **Create** to assign coaching assignments to an agent, which will be populated in the **Agent Dashboard**.
 
-## **View Agent Interactions**
-
-Steps to view agent interactions
-
-1. Select any of the existing evaluation agent groups to view the agent interactions.     
-2. Right-click on the vertical ellipsis (⋮) button.
-<img src="./coaching-assignments/images/view-agent-interactions.png" alt="View Agent Interactions" title="View Agent Interactions" style="border: 1px solid gray; zoom:60%;">
-
-3. Click **View**. The following screen appears to view the agent **Chat History** and **Details** of the conversation selected.    
-<img src="../coaching-assignments/images/chat-audit-history-details.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:60%;">
-
-For more information, see [My Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).
