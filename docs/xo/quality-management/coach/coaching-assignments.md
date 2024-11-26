@@ -16,9 +16,8 @@ The Agent Dashboard - Coaching Assignments page shows the following list of item
 * **In Progress**: This shows the interactions (>1) that have been reviewed.
 * **Completed**: This shows all the interactions are completed
 
-Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignment. 
-<img src="../coaching-assignments/images/coaching-assignments-slideout-interactions.png" alt="Interactions Slideout" title="Interactions Slideout"
-style="border: 1px solid gray; zoom:80%;">
+Upon clicking any of the assigned coaching assignments from the widget displayed, you will get the following slide-out interaction details screen of the coaching assignment.  
+<img src="../coaching-assignments/images/coaching-assignments-slideout-interactions1.png" alt="Coaching Monitor" title="Coaching Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ### **Interaction Marked for Coaching**
 
@@ -28,7 +27,7 @@ The Interaction marked for coaching includes the following:
 * **Interactions Marked for Coaching**: This shows the following interaction details marked for coaching.
     * **Queues**: This refers to the specific categories or channels through which interactions (such as calls, chats, or emails) are routed. It helps you to identify where the interaction took place.
     * **Action**: This refers to a call-to-action (CTA) that allows you to access the following interaction audit screen.  
-    <img src="../coaching-assignments/images/interaction-audit-status-coaching-assignement.png" alt="Audit Interaction Screen" title="Audit Interaction Screen" style="border: 1px solid gray; zoom:80%;">
+    <img src="../coaching-assignments/images/interaction-audit-status-coaching-assignement.png" alt="Coaching Monitor" title="Coaching Monitor" style="border: 1px solid gray; zoom:80%;">
 
     * **Kore Evaluation Score**: This shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
     * **Supervisor Audit Score**: This score represents the supervisor's assessment of the interaction, providing insights into the agent's performance based on the supervisor’s criteria and evaluation.
