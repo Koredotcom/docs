@@ -6,8 +6,6 @@ This page serves as the starting page for coaching assignment creation.
 
 You can add the new **Coaching Assignments** in the following ways:
 
-**Step 1:**
-
 1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.   
 
 2. Click any of the agents from the Agent Leaderboard widget, which navigates you to the **Quality Management** > **Dashboard** > **Overview** to navigate to the agent-specific dashboard.  
