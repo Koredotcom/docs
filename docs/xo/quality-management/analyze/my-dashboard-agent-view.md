@@ -39,7 +39,7 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
 * **Supervisor Audit Score**: This shows the average supervisor (manual) audit score of the agent for the selected time period.
 
-    <img src="../agent-dashboard/my-dashboard-sup-audit-score.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-sup-audit-score.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **Total Coaching Assignments**: This shows the total number of coaching sessions assigned to the agent for the selected time.
 
