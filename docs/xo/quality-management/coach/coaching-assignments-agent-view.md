@@ -3,9 +3,7 @@
 The Coaching Assignments feature in the Agent Dashboard enables agents to review and gain value from supervisor-created coaching assignments. To access these assignments, agents must have single permissions for the **Agent Dashboard** and **Coaching Assignments**. The assignments are listed in reverse chronological order.
 
 You can view Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Coaching Assignments**.   
-<img src="../coach/coaching-assignments/images/coaching-assignments-agent-view.png" alt="coaching-agent-view" title="coaching-agent-view" style="border: 1px solid gray; zoom:60%;"> 
-
-<img src="../coach/coaching-assignments/images/coaching-assignments-agent-view.png" alt="coaching-agent-view" title="coaching-agent-view" style="border: 1px solid gray; zoom:60%;">
+<img src="../coaching-assignments/images/coaching-assignments-agent-view.png" alt="coaching-agent-view" title="coaching-agent-view" style="border: 1px solid gray; zoom:60%;">
 
 The **Coaching Assignments** page shows the following list of items:
 
@@ -19,7 +17,7 @@ The **Coaching Assignments** page shows the following list of items:
   * **Completed**: This shows all the interactions are completed
 
 Upon clicking any of the assigned coaching assignments from the widget, the following best response interactions pane gets displayed on your right-hand side of the **New Coaching Assignment** screen.  
-<img src="../coach/coaching-assignments/images/coaching-assignments-slideout-interactions1.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
+<img src="../coaching-assignments/images/coaching-assignments-slideout-interactions1.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
 
 ### Interactions Marked for Coaching
 
@@ -29,7 +27,7 @@ The Interaction marked for coaching includes the following:
 * **Interactions Marked for Coaching**: This shows the following interaction details marked for coaching.
   * **Queues**: This refers to the specific categories or channels through which interactions (such as calls, chats, or emails) are routed. It helps you to identify where the interaction took place.
   * **Action**: This refers to a call-to-action (CTA) that allows you to access the following interaction audit screen.  
-  <img src="../coach/coaching-assignments/images/interaction-audit-status-coaching-assignement.png" alt="Interaction Audit Status" title="Interaction Audit Status" style="border: 1px solid gray; zoom:60%;">
+  <img src="../coaching-assignments/images/interaction-audit-status-coaching-assignement.png" alt="Interaction Audit Status" title="Interaction Audit Status" style="border: 1px solid gray; zoom:60%;">
 
   * **Kore Evaluation Score**: This shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
   * **Supervisor Audit Score**: This score represents the supervisor's assessment of the interaction, providing insights into the agent's performance based on the supervisor’s criteria and evaluation.

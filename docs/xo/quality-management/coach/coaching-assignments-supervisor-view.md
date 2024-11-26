@@ -49,6 +49,6 @@ Steps to add coaching assignments:
 11. Enter **Action Plan** for the coaching assignment that includes actionable steps for the agent to improve their performance in future interactions.    
     <img src="../coaching-assignments/images/action-plan.png" alt="Action Plan.png" title="Action Plan" style="border: 1px solid gray; zoom:70%;"> 
 12. Provide the input for the **Follow-up Date** chosen for the assignment.  
-    <img src="./coaching-assignments/images/followup-date.png" alt="Follow-up Date.png" title="Follow-up Date" style="border: 1px solid gray; zoom:70%;">
+    <img src="../coaching-assignments/images/followup-date.png" alt="Follow-up Date.png" title="Follow-up Date" style="border: 1px solid gray; zoom:70%;">
 13. Click **Create** to assign coaching assignments to an agent, which will be populated in the **Agent Dashboard**.
 
