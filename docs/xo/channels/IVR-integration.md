@@ -71,7 +71,7 @@ Steps to configure IVR settings for your Virtual Assistant:
 
     !!! note
 
-      If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:  
+        If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:  
         * Enable Transcription set to Yes.  
         * Transcription engine source set to builtin:speech/transcribe.  
         * IVR Data Extraction Key set to user input.  
