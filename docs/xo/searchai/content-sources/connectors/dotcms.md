@@ -16,15 +16,9 @@ DotCMS is a content management system specifically designed to manage documentat
    </td>
   </tr>
   <tr>
-   <td>Extractive Model for Answer Generation
+   <td>Content Support
    </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Generative Model for Answer Generation
-   </td>
-   <td>
+   <td>Files
    </td>
   </tr>
 </table>

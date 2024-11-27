@@ -2,12 +2,15 @@
 
 Search AI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
 
-| **Connector**     | **Type of Repository** | **Supported Content for  Extractive and Generative Answers**                                                          | **Content Filtering Support** | **RACL Support** |
+| **Connector**     | **Type of Repository** | **Supported Content**                                                          | **Content Filtering Support** | **RACL Support** |
 |-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------|------------------|
 | [Airtable](./airtable.md)          | Cloud                  |                                                                                                                       | No                    | No               |
+| [Amazon S3]()          | Cloud                  |  Files in buckets in .pdf, .ppt, .txt, or .docx formats                                                                                                                     | No                    | No               |
+| [Aha]()          | Cloud                  |  Ideas, Features                                                                                                                     | No                    | Yes               |
 | [Asana](./asana.md)          | Cloud                  |          Projects and Tasks                                                                                                             | No                    | Yes               |
 | [Azure Storage](./azure.md)     | Cloud                  | .txt, .pdf, .rtf, .msword, .doc, .docx, .ppt, .pptx  Extractive Answers are supported only for content in .pdf files. | No                    | No               |
 | [Box](./box.md)          | Cloud                  | .pdf, .docx, .txt                                                                                                                      | No                    | Yes               |
+| [Coda Docs]()          | Cloud                  | .pdf, .docx, .txt                                                                                                                      | No                    | Yes               |
 | [Confluence Cloud](./confluence-cloud.md)  | Cloud                  | Knowledge Articles                                                                                                    | Yes                   | Yes              |
 | [Confluence Server](./confluence-server.md) | On-prem                | .doc, .docx, .ppt, .pptx, .pdf, .txt, .html                                                                           | Yes                   | No               |
 | [Custom Connector](./custom-connector.md) | Cloud                |                                                                           | No                   | Yes               |
@@ -26,5 +29,7 @@ Search AI provides out-of-the-box support for ingesting data from a range of thi
 | [Salesforce](./salesforce.md)        | Cloud                  | Knowledge articles managed by Salesforce.  Extractive Answers are not supported for this type of content.             | Yes                   | No               |
 | [ServiceNow](./servicenow.md)        | Cloud                  | knowledge articles managed by ServiceNow.                                                                             | Yes                    | Yes              |
 | [SharePoint](./sharepoint.md)        | Cloud                  | pages/articles (.aspx), .doc, .docx, .ppt, .pptx, .html, .xhtml, .txt, .pdf                                           | Yes                   | Yes              |
+| [Slab]()        | Cloud                  |Posts   | No                   | No              |
+| [Trello]()        | Cloud                  | Boards, Cards | No                   | Yes              |
 | [WordPress](./wordpress.md)        | Cloud                  | pages, posts                                        | No                   | Yes              |
 | [Zendesk](./zendesk.md)           | Cloud                  | Zendesk knowledge base articles                                                                                       | No                    | No               |
