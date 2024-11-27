@@ -3,12 +3,12 @@
 
 The Coaching Monitor feature enables supervisors to track and evaluate the coaching progress of all agents, ensuring coaching effectiveness and facilitating follow-up sessions to assess improvements in assigned attributes. It provides an overview of all coaching assignments assigned by the user and highlights the score trend of the agent attributes that were assigned for coaching, agent score trends, Kore evaluation score, and includes filters that allow supervisors to focus on particular areas of interest. This functionality also allows supervisors to engage in meaningful discussions without needing to examine each agent’s specific attributes in depth.
 
-You can view **Coaching Monitor** by navigating to **Contact Center AI** > **Quality Management** > **Coach** > **Coaching Monitor**.  
-<img src="../coaching-monitor/images/coaching-monitor-landing-page.png" alt="Coaching Monitor" title="Coaching Monitor" style="border: 1px solid gray; zoom:70%;">
+You can view **Coaching Monitor** by navigating to **Contact Center AI** > **Quality Management** > **Coach** > **Coaching Monitor**.   
+<img src="../coaching-monitor/images/coaching-monitor-landing-page.png" alt="Coaching Monitor" title="Coaching Monitor" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
-    To track score trends for individual attributes in Coaching Monitor across all agents, you must enable Auto QA for automated scoring of interactions.
+    To track score trends for individual attributes in **Coaching Monitor** across all agents, you must enable **Auto QA** for automated scoring of interactions.
 
 The **Coaching Monitor** page shows the following list of items:
 
@@ -43,7 +43,7 @@ Upon clicking the **Filter** icon, you will get the following set of parameters 
 
 ### Agent Progress
 
-When you click on a specific agent's name in the Coaching Monitor widget, the corresponding agent-specific Coaching Progress pane is displayed. This includes a drop-down for each assigned attribute. This displays all attributes assigned for the agent, their current scores, and a spike/dip indicator that highlights the percentage change since the assignment date.  
+When you click on a specific agent's record in the Coaching Monitor screen, the corresponding agent-specific Coaching Progress status gets displayed, where you can visualize the comparison progress between the previous coaching score with the current coaching score based on the attributes. 
     <img src="../coaching-monitor/images/coaching-monitor-agent-progress.png" alt="Agent Progress" title="Agent Progress" style="border: 1px solid gray; zoom:70%;">
 
 You can view the following coaching progress metrics for the agent:

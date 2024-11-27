@@ -2,57 +2,53 @@
 
 This feature assists supervisors in analyzing agent performance and identifying interactions that need targeted coaching. It provides a view of coaching assignments for a specific agent within the agent dashboard. This shows all the assigned coaching tasks of agents.
 
-You can view and add the new **Coaching Assignments** in the following ways:
-
-**Step 1:**
-
-1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. The following screen is displayed.   
-<img src="../coaching-assignments/images/Coach-asgmt_dashboard-agent-leaderboard.png" alt="Dashboard Agent Leaderboard" title="Dashboard Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
-
-2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.  
-<img src="../coaching-assignments/images/coach-asgmt-agent-leaderboard-overview.png" alt="Dashboard Overview" title="Dashboard Overview" style="border: 1px solid gray; zoom:100%;">
-
-3. Click the **Evaluation** tab. The following screen is displayed to **Add Coaching Assignment**.  
-<img src="../coaching-assignments/images/evaluation-tab-add-coaching-assignments.png" alt="Add Coaching Assignments" title="Add Coaching Assignments" style="border: 1px solid gray; zoom:100%;">
-
-**Step 2:**
-
-4. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
-<img src="../coaching-assignments/images/coach-asgmt-agent-leaderboard-default.png" alt="Agent Leaderboard Default" title="Agent Leaderboard Default" style="border: 1px solid gray; zoom:100%;">
-
-5. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent dashboard is displayed.   
-<img src="../coaching-assignments/images/coach-asgmt-agent-leaderboard-overview.png" alt="Agent Leaderboard Overview" title="Agent Leaderboard Overview" style="border: 1px solid gray; zoom:100%;">
+You can view **Coaching Assignments** by navigating to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**.
 
 ## Add Coaching Assignment
+
+This page serves as the starting page for coaching assignment creation.
+
 Steps to add coaching assignments:
 
-1. Click the **Evaluation** tab. The following screen is displayed to **Add Coaching Assignment**.      
-<img src="../coaching-assignments/images/agent-leaderbaord-eva-tab-add-coaching-assignments.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+1. Click any of the agents from the Agent Leaderboard widget, which navigates you to the **Quality Management** > **Dashboard** > **Overview** to navigate to the agent-specific dashboard.  
+<img src="../coaching-assignments/images/dashboard-overview.png" alt="coaching assignments Dashboard overview" title="coaching assignments Dashboard overview" style="border: 1px solid gray; zoom:70%;">
 
-2. Select any of the agent interactions to enable and assign coaching for the agent. 
+2. Click the **Evaluation** tab. The following screen is displayed to **Add Coaching Assignment**.       
+<img src="../coaching-assignments/images/add-coaching-evaluation-assignment.png" alt="Add Coaching Assignment" title="Add Coaching Assignment" style="border: 1px solid gray; zoom:70%;">
+
+3. Select any of the agent interactions to enable and assign coaching for the agent. 
 
     Each agent has a dedicated dashboard, which is accessible to both the agents and their supervisors. This dashboard presents high-level metrics for supervisors to review.
 
-3. Click the **Add Coaching Assignment**, the following screen appears.    
-<img src="../coaching-assignments/images/new-coaching-assignment.png" alt="Add Coaching Assignment" title="Add Coaching Assignment" style="border: 1px solid gray; zoom:60%;">
+4. Right-click on the vertical ellipsis (⋮) button and click **View**.   
+    <img src="../coaching-assignments/images/view-agent-interactions.png" alt="view Agent Interactions.png" title="view Agent Interactions" style="border: 1px solid gray; zoom:70%;">
 
-4. Enter the **Name** of the coaching assignment.
-5. In the **Coaching Area**, enter the agent attributes that are selected for coaching as part of the assignment. By default, the interactions marked for coaching details are displayed, which are selected from the **Evaluation** tab.
-6. Under the **Best Responses** (optional), select the best response interactions from other agents to provide best reference for this coaching assignment using saved bookmarks. You can select more than one bookmark based on the evaluation criteria, for example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.
-7. In the **Feedback**, enter your feedback for better improvement.
-8. Enter **the Action Plan** for the coaching assignment.
-9. Provide the input for the **Follow-up Date** chosen for the assignment
-10. Click **Create** to assign coaching assignments to an agent, which will be populated in the **Agent Dashboard**.
+     Once you click the **View** button, you can view the agent **Chat History** and **Details** of the agent conversation selected.   
+    <img src="../coaching-assignments/images/chat-audit-history-details.png" alt="view Agent Interactions.png" title="view Agent Interactions" style="border: 1px solid gray; zoom:70%;">
 
-## **View Agent Interactions**
+5. Click the **Add Coaching Assignment**, the following screen appears.    
+    <img src="../coaching-assignments/images/add-new-coaching-assignment1.png" alt="Add Coaching Assignment.png" title="Add Coaching Assignment" style="border: 1px solid gray; zoom:70%;">
 
-Steps to view agent interactions
+6. Enter the **Name** of the coaching assignment.
+    <img src="../coaching-assignments/images/add-coaching-assignments-name.png" alt="Add Coaching Assignment Name.png" title="Add Coaching Assignment Name" style="border: 1px solid gray; zoom:70%;">
 
-1. Select any of the existing evaluation agent groups to view the agent interactions.     
-2. Right-click on the vertical ellipsis (⋮) button.
-<img src="../coaching-assignments/images/view-agent-interactions.png" alt="View Agent Interactions" title="View Agent Interactions" style="border: 1px solid gray; zoom:60%;">
+7. In the **Coaching Area**, enter the agent attributes that are selected for coaching as part of the assignment.  
+    <img src="../coaching-assignments/images/add-coaching-assignments-coaching-area.png" alt="Add Coaching Assignment Area.png" title="Add Coaching Assignment Area" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **View**. The following screen appears to view the agent **Chat History** and **Details** of the conversation selected.    
-<img src="../coaching-assignments/images/chat-audit-history-details.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:60%;">
+8. By default, the Interactions Marked for Coaching details, which are selected from the evaluation tab, are displayed.  
+    <img src="../coaching-assignments/images/add-coaching-assignments-coaching-area.png" alt="Interactions Marked for Coaching.png" title="Interactions Marked for Coaching" style="border: 1px solid gray; zoom:70%;">
 
-For more information, see [My Dashboard - Supervisor View](./agent-dashboard-supervisor-view.md).
+9. Under the **Best Responses** (optional), select the best response interactions from other agents to provide best reference for this coaching assignment using saved bookmarks.   
+    <img src="../coaching-assignments/images/best-responses.png" title="Best Responses" style="border: 1px solid gray; zoom:70%;">
+    * **View Interactions**: By clicking this button, you can view the specific audit interaction status of an agent in the Chat History.      
+
+    * **Add Interactions**: By clicking this button, you can select more than one bookmark based on the evaluation criteria, for example, one set of interactions for the support queue and another set of interactions for the best responses to get populated in the selected interactions box.        
+
+10. In the **Feedback**, enter your feedback for better improvement on the agent's handling of an interaction, which includes both positive aspects and areas for improvement.    
+    <img src="../coaching-assignments/images/feedback.png" alt="Feedback.png" title="Feedback" style="border: 1px solid gray; zoom:70%;">
+11. Enter **Action Plan** for the coaching assignment that includes actionable steps for the agent to improve their performance in future interactions.    
+    <img src="../coaching-assignments/images/action-plan.png" alt="Action Plan.png" title="Action Plan" style="border: 1px solid gray; zoom:70%;"> 
+12. Provide the input for the **Follow-up Date** chosen for the assignment.  
+    <img src="../coaching-assignments/images/followup-date.png" alt="Follow-up Date.png" title="Follow-up Date" style="border: 1px solid gray; zoom:70%;">
+13. Click **Create** to assign coaching assignments to an agent, which will be populated in the **Agent Dashboard**.
+

@@ -1,6 +1,6 @@
-# Contact Center API List
+# Contact Center AI API List
 
-Several APIs are available from Contact Center AI. Based on the functionality addressed, the APIs can be categorized as:
+The following tables list the APIs available for Contact Center AI, grouped by the functionality they address:
 
 * [Analytics and Reporting APIs](#analytics-and-reporting-apis)
 * [Agent Creation APIs](#agent-creation-apis)
