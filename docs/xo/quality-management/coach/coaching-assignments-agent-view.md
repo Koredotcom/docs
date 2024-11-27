@@ -14,7 +14,8 @@ The **Coaching Assignments** page shows the following list of items:
 * **Status**: This shows the following status of the coaching assignments, which is calculated based on the number of interactions and best responses:
   * **Start Now**: This indicates the assigned interactions in coaching that have been reviewed.
   * **In Progress**: This shows the interactions (>1) that have been reviewed.
-  * **Completed**: This shows all the interactions are completed
+  * **Completed**: This shows all the interactions are completed.  
+  <img src="../coaching-assignments/images/assigned-coaching-assignments.png" alt="Assigned Coaching Assignment" title="Assigned Coaching Assignment" style="border: 1px solid gray; zoom:60%;">
 
 Upon clicking any of the assigned coaching assignments from the widget, the following best response interactions pane gets displayed on your right-hand side of the **New Coaching Assignment** screen.  
 <img src="../coaching-assignments/images/coaching-assignments-slideout-interactions1.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
