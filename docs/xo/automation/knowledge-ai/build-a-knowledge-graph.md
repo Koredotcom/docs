@@ -16,7 +16,8 @@ To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To
     <ul><li>Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection.</li> 
     <li>Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
     <li>Lemmatization using Parts of Speech, Search in Answer, and Contextual Paths Qualification are not supported by Few-Shot Graphs. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.</li>
-    <li>Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.</li></ul></p>
+    <li>Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.</li>
+    <li>In the Few-shot model, all synonyms are treated equally, at a global level.</li></ul></p>
     </div>
 
 ## Create the Knowledge Graph Node Structure
