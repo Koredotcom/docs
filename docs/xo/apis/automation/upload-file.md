@@ -21,7 +21,7 @@ To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and
   <tr>
    <td><strong>Content Type</strong>
    </td>
-   <td><code>application/json</code>
+   <td><code>multipart/form-data</code>
    </td>
   </tr>
   <tr>
