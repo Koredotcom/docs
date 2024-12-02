@@ -392,6 +392,7 @@ nav:
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
+          - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
           - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
           - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
