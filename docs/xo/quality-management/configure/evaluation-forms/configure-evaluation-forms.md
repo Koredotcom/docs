@@ -37,7 +37,7 @@ The Evaluation Forms has the following options:
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
 
-Steps to create a new Evaluation Form:
+Steps to create a new Evaluation Form:  
 <img src="../images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.    
