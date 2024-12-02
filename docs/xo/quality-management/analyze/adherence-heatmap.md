@@ -19,7 +19,7 @@ This outlines how adherence metrics are displayed and calculated for a selected 
 
 * **Adherence % Calculation**
 
-    This is calculated by comparing:
+    This is calculated by comparing:  
     <img src="../adher-heatmap/images/adher-calc.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
     * The % adherence for each tile (box) in the heatmap is calculated based on evaluation form, agent, and date range.
