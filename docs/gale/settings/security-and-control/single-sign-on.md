@@ -206,9 +206,9 @@ To enable SSO on the **Settings** console, follow the steps below:
 4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
 5. Configure the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
 
-<ul><li><b>SAML</b>: <a href="/docs/security-and-control/single-sign-on.md/#okta-configuration" target="_blank">Okta</a>, <a href="/docs/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="/docs/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="/docs/security-and-control/single-sign-on/#saml" target="_blank">Learn more</a>.</li>
-<li><b>WS-Federation</b>: <a href="/docs/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="/docs/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="/docs/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="/docs/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="/docs/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
+<ul><li><b>SAML</b>: <a href="/docs/gale/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a>, <a href="/docs/gale/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="/docs/gale/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="/docs/gale/settings/security-and-control/single-sign-on/#saml" target="_blank">Learn more</a>.</li>
+<li><b>WS-Federation</b>: <a href="/docs/gale/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="/docs/gale/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="/docs/gale/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
+<li><b>OpenId connect</b>: <a href="/docs/gale/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="/docs/gale/settings/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
@@ -328,7 +328,7 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 <ul><li>To learn how to <b>add a new app</b>, click <a href="https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#manage-add" target="_blank">here</a>.</li>
 <li>To learn how to <b>configure apps</b>, click <a href="https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#config" target="_blank">here</a>.</li></ul>
 
-<ol start="6"><li>Search for your GALE app and click enter.</li>
+<ol start="6"><li>Search for your GALE app and click <b>Enter</b>.</li>
 <li>Click your app to view the <b>Add App</b> page. Optionally, change the display name or the icons displayed to your users in the <i>OneLogin</i> portal, and then click <b>SAVE</b>. The GALE app has been added to your company apps for <i>OneLogin</i> and is listed on the app page.</li>
 <li>Copy the following values from <b>SSO</b> > <b>Enable SAML2.0</b> on Onelogin and paste them into the relevant fields on GALE’s SSO setup page:</li>
     <ul><li><b>OneLogin SAML 2.0 Endpoint (HTTP)</b>: Paste into <b>SAML 2.0 endpoint</b>.</li>
