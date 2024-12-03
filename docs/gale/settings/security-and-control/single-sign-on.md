@@ -210,7 +210,7 @@ To enable SSO on the **Settings** console, follow the steps below:
 <li><b>WS-Federation</b>: <a href="/docs/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="/docs/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="/docs/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
 <li><b>OpenId connect</b>: <a href="/docs/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="/docs/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
 
-<ol start="6"><li>Click <b>Save</b>.</li></ol>
+<ol start="9"><li>Click <b>Save</b>.</li></ol>
 
 A success message is displayed once the SSO setup is complete.
 <img src="../images/sso-configuration-updated-successfully.png" alt="sso updated successfully message" title="sso updated successfully message" style="border: 1px solid gray; zoom:75%;">
@@ -308,10 +308,8 @@ To add a new certificate, click <b>+ Add new</b>.</ol>
 <p class="admonition-title">Note</p>
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.</p></div>
 
-<ol start="18"><li>Click <b>Save</b>.</li>
-
-Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</b> page for GALE account authentication.
-
+<ol start="18"><li>Click <b>Save</b>.
+Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</b> page for GALE account authentication.</li>
 <img src="../images/okta-sign-in-page.png" alt="okta sign in page" title="okta sign in page" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Onelogin Configuration
@@ -327,8 +325,8 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 5. Go to **Applications** > **Add Apps** to access your app.
 <img src="../images/onelogin-add-app.png" alt="onelogin add app" title="onelogin add app" style="border: 1px solid gray; zoom:75%;">
 
-* To learn how to **add a new app**, click [here](https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#manage-add){:target="_blank"}.
-* To learn how to **configure apps**, click [here](https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#config){:target="_blank"}.
+<ul><li>To learn how to <b>add a new app</b>, click <a href="https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#manage-add" target="_blank">here</a>.</li>
+<li>To learn how to <b>configure apps</b>, click <a href="https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#config" target="_blank">here</a>.</li></ul>
 
 <ol start="6"><li>Search for your GALE app and click enter.</li>
 <li>Click your app to view the <b>Add App</b> page. Optionally, change the display name or the icons displayed to your users in the <i>OneLogin</i> portal, and then click <b>SAVE</b>. The GALE app has been added to your company apps for <i>OneLogin</i> and is listed on the app page.</li>
@@ -345,7 +343,7 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 <p class="admonition-title">Note</p>
 <p>Copy data after the <b>BEGIN CERTIFICATE</b> header and before the <b>END CERTIFICATE</b> footer.</p></div>
 
-To add a new certificate, click **+Add new**.
+To add a new certificate, click <b>+Add new</b>.
 <img src="../images/add-new-x-509-certificate.png" alt="add new x 509 certificate" title="add new x 509 certificate" style="border: 1px solid gray; zoom:75%;"></ol>
 
 <div class="admonition note">
