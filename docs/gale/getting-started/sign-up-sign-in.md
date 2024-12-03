@@ -409,3 +409,11 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 3. Select the account you want from the **Accounts** list.
 
 <img src="../images/switch-accounts.png" alt="switch account" title="switch account" style="border: 1px solid gray; zoom:75%;">
+
+## Related Information
+
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about using the GALE admin features.
+* [Users](../settings/user-management/users.md){:target="_blank"}- Manage users seamlessly in your account.
+* [Roles](../settings/user-management/role-management.md){:target="_blank"}- Manage system and custom roles and permissions in your account.
+* [Billing](../settings/billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption in your account, set limits and view usage trends.
+* [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}- Enable Single Sign-On (SSO) for fast and secure account access through your configured Identity Provider (IDP), while excluding designated users.
