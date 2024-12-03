@@ -254,20 +254,18 @@ To configure SSO using SAML and Okta, follow the steps below:
 <p class="admonition-title">Note</p>
 <p>If you already have the required parameters for Okta, move directly to Step 18.</p></div>
 
-4. Login to the [Okta developer portal](https://developer.okta.com/login/){:target="_blank"}.
-5. On the dashboard, click **Applications** on the left menu.
-6. Click **Create App Integration**.
-<img src="../images/okta-create-app-integration.png" alt="okta create app integration" title="okta create app integration" style="border: 1px solid gray; zoom:75%;">
+<ol start="4"><li>Login to the <a href="https://developer.okta.com/login/" target="_blank">Okta developer portal</a>.</li>
+<li>On the dashboard, click <b>Applications</b> on the left menu.</li>
+<li>Click <b>Create App Integration</b>.</li>
+<img src="../images/okta-create-app-integration.png" alt="okta create app integration" title="okta create app integration" style="border: 1px solid gray; zoom:75%;"></ol>
 
-7. In the **Create a new app integration** window, select **SAML 2.0** and click **Next**.
-<img src="../images/create-a-new-app-integration.png" alt="create a new app integration" title="create a new app integration" style="border: 1px solid gray; zoom:75%;">
-
-8. On the **Create SAML Integration** page, provide the **App Name** under **General Settings**, and click **Next**.
-<img src="../images/create-saml-integration.png" alt="create saml integration" title="create saml integration" style="border: 1px solid gray; zoom:75%;">
-
-9. Copy the following values from GALE’s SSO setup page and paste them into Okta under **Configure SAML**:
-    * **ACS url for SP initiated SAML flow: **Paste into** Single sign-on URL.**
-    * **ACS url for IDP initiated SAML flow: **Paste into** Audience URI (SP Entity ID)**.
+<ol start="7"><li>In the <b>Create a new app integration</b> window, select <b>SAML 2.0</b> and click <b>Next</b>.
+<img src="../images/create-a-new-app-integration.png" alt="create a new app integration" title="create a new app integration" style="border: 1px solid gray; zoom:75%;"></li>
+<li>On the <b>Create SAML Integration</b> page, provide the <b>App Name</b> under <b>General Settings</b>, and click <b>Next</b>.
+<img src="../images/create-saml-integration.png" alt="create saml integration" title="create saml integration" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Copy the following values from GALE’s SSO setup page and paste them into Okta under <b>Configure SAML</b>:</li>
+<ul><li><b>ACS url for SP initiated SAML flow</b>: Paste into <i>Single sign-on URL</i>.</li>
+<li><b>ACS url for IDP initiated SAML flow</b>: Paste into <i>Audience URI (SP Entity ID)</i>.</li></ul></ol>
 
 <table>
   <tr>
@@ -291,33 +289,32 @@ To configure SSO using SAML and Okta, follow the steps below:
   </tr>
 </table>
 
-10. Click **Next**.
-11. Click **Finish** under **Feedback** on Okta’s **Create SAML Integration** page.
-12. Once the app is created, go to the **Sign On** tab and click **View Setup Instructions**. 
-13. On the **How to Configure SAML 2.0 for <app-name> Application** page, do the following from Okta into GALE:
-    * Copy the **Identity Provider Single Sign-On URL** value and paste it into the **Okta Single Sign-On URL**.
-    * Copy the **Identity Provider Issuer** value into the **Identity provider issuer**.
-    <img src="../images/copy-Identity-Provider-Issuer.png" alt="copy identity provider issuer" title="copy identity provider issuer" style="border: 1px solid gray; zoom:75%;">
-14. Go to **Sign On** > **SAML Signing Certificates** on your Okta app.
-15. Click **Download certificate** under **Actions** for the required certificate.
-<img src="../images/download-certificate-saml.png" alt="download certificate" title="download certificate" style="border: 1px solid gray; zoom:75%;">
+<ol start="10"><li>Click <b>Next</b>.</li>
+<li>Click <b>Finish</b> under <b>Feedback</b> on Okta’s <b>Create SAML Integration</b> page.</li>
+<li>Once the app is created, go to the <b>Sign On</b> tab and click <b>View Setup Instructions</b>.</li>
+<li>On the <b>How to Configure SAML 2.0 for <app-name> Application</b> page, do the following from Okta into GALE:</li>
+<ul><li>Copy the <b>Identity Provider Single Sign-On URL</b> value and paste it into the <b>Okta Single Sign-On URL</b>.</li>
+<li>Copy the <b>Identity Provider Issuer</b> value into the <b>Identity provider issuer</b>.</li>
+    <img src="../images/copy-Identity-Provider-Issuer.png" alt="copy identity provider issuer" title="copy identity provider issuer" style="border: 1px solid gray; zoom:75%;"></ul>
+<li>Go to <b>Sign On</b> > <b>SAML Signing Certificates</b> on your Okta app.</li>
+<li>Click <b>Download certificate</b> under <b>Actions</b> for the required certificate.
+<img src="../images/download-certificate-saml.png" alt="download certificate" title="download certificate" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Once the certificate is downloaded, open it in Notepad and copy the data between the <b>BEGIN CERTIFICATE</b> header and <b>END CERTIFICATE</b> footer.
+<img src="../images/okta-certificate-notepad.png" alt="okta certificate" title="okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Paste the value into the <b>Certificate</b> field on GALE’s SSO setup page.
+<img src="../images/paste-okta-certificate.png" alt="paste okta certificate" title="paste okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
 
-16. Once the certificate is downloaded, open it in Notepad and copy the data between the **BEGIN CERTIFICATE** header and **END CERTIFICATE** footer.
-<img src="../images/okta-certificate-notepad.png" alt="okta certificate" title="okta certificate" style="border: 1px solid gray; zoom:75%;">
-
-17. Paste the value into the **Certificate** field on GALE’s SSO setup page.
-<img src="../images/paste-okta-certificate.png" alt="paste okta certificate" title="paste okta certificate" style="border: 1px solid gray; zoom:75%;">
-
-To add a new certificate, click **+ Add new**.
+To add a new certificate, click **+ Add new**.</ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.</p></div>
 
-18. Click **Save**.
+<ol start="18"><li>Click <b>Save</b>.</li>
 
 Once SSO for Okta is complete, the system will redirect to the **Okta Sign in** page for GALE account authentication.
-<img src="../images/okta-sign-in-page.png" alt="okta sign in page" title="okta sign in page" style="border: 1px solid gray; zoom:75%;">
+
+<img src="../images/okta-sign-in-page.png" alt="okta sign in page" title="okta sign in page" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Onelogin Configuration
 
@@ -357,13 +354,13 @@ To add a new certificate, click **+Add new**.
 <p class="admonition-title">Note</p>
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.</p></div>
 
-11. Copy the following field values from GALE’s SSO setup page into the relevant fields in Onelogin:
+<ol start="13"><li>Copy the following field values from GALE’s SSO setup page into the relevant fields in Onelogin:</li>
 
-* ACS URL for SP Initiated SAML Flow.
-* ACS URL for IDP Initiated SAML Flow.
-<img src="../images/copy-acs-urls.png" alt="copy acs urls" title="copy acs urls" style="border: 1px solid gray; zoom:75%;">
+<ul><li>ACS URL for SP Initiated SAML Flow.</li>
+<li>ACS URL for IDP Initiated SAML Flow.</li>
+<img src="../images/copy-acs-urls.png" alt="copy acs urls" title="copy acs urls" style="border: 1px solid gray; zoom:75%;"></ul>
 
-12. Click **Save** on GALE and Onelogin.
+<li>Click <b>Save</b> on GALE and Onelogin.</li></ol>
 
 Once SSO for Onelogin is complete, the system redirects to the **Onelogin Sign in** page for GALE account authentication.
 
@@ -389,8 +386,8 @@ To add a new certificate, click **+Add new**.
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.
 </p></div>
 
-6. Copy and paste **ACS url for SP initiated SAML flow** and **ACS url for IDP initiated SAML flow** values from GALE into the relevant app fields within the IDP’s developer portal.
-7. Click **Save**.
+<ol start="6"><li>Copy and paste <b>ACS url for SP initiated SAML flow</b> and <b>ACS url for IDP initiated SAML flow</b> values from GALE into the relevant app fields within the IDP’s developer portal.</li>
+<li>Click <b>Save</b>.</li></ol>
 
 ## WS-Federation
 
@@ -532,6 +529,7 @@ When **SSO is enabled**, the following page is displayed.
 The user can do one of the following:
 
 * Click **Continue** to log in using the configured SSO provider service's sign-in page, for example, OKTA, as shown below:
+
 <img src="../images/connect-to-okta.png" alt="connect to okta" title="connect to okta" style="border: 1px solid gray; zoom:75%;">
 
 * Click “**Having trouble logging in with SSO?**” to sign in using the default option (email and password, Google, Windows, etc.) set during GALE sign-up.
