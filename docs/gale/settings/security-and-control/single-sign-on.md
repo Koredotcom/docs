@@ -16,7 +16,6 @@ SSO is a powerful option for organizations looking to balance convenience and se
 <p>Only account owners and admins can enable/disable SSO from the <b>Settings</b> console.</p></div>
 
 GALE supports SSO for the following protocols and providers:
-
 <table>
   <tr>
    <td><strong>Protocol</strong>
@@ -26,35 +25,32 @@ GALE supports SSO for the following protocols and providers:
   </tr>
   <tr>
    <td>
-
-<a href="../security-and-control/single-sign-on.md/#saml" target="_blank">SAML</a>
+<a href="/docs/gale/settings/security-and-control/single-sign-on/#saml" target="_blank">SAML</a>
    </td>
    <td>
 <ul>
-
-<li><a href="../security-and-control/single-sign-on.md/#okta-configuration" target="_blank">Okta</a></li>
-<li><a href="../security-and-control/single-sign-on.md/#onelogin-configuration" target="_blank">OneLogin</a></li>
-<li><a href="../security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a></li>
+<li><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#okta-configuration" target="_blank">Okta</a></li>
+<li><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#onelogin-configuration" target="_blank">OneLogin</a></li>
+<li><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a></li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="../security-and-control/single-sign-on.md/#ws-federation" target="_blank">WS-Federation</a>
+   <td><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#ws-federation" target="_blank">WS-Federation</a>
    </td>
    <td>
 <ul>
-
-<li><a href="../security-and-control/single-sign-on.md/#windows-azure-configuration" target="_blank">Windows Azure</a></li>
-<li><a href="../security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a></li>
+<li><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#windows-azure-configuration" target="_blank">Windows Azure</a></li>
+<li><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#other-configuration" target="_blank">Other</a></li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="../security-and-control/single-sign-on.md/#openid-connect-configuration" target="_blank">OpenID Connect</a>
+   <td><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#openid-connect-configuration" target="_blank">OpenID Connect</a>
    </td>
    <td>
 <ul>
-<li><a href="../security-and-control/single-sign-on.md/#google-configuration" target="_blank">Google account</a></li>
+<li><a href="/docs/gale/settings/security-and-control/single-sign-on.md/#google-configuration" target="_blank">Google account</a></li>
 </ul>
    </td>
   </tr>
@@ -73,7 +69,7 @@ GALE supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. Sign in to your GALE account.
+1. [Sign in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account.
 2. Click **Settings** on the top menu.
 3. Go to **Security & Control** > **Single Sign On** on the left navigation menu.
 
@@ -209,10 +205,12 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
 5. Configure the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
+
 * **SAML**: [Okta](../security-and-control/single-sign-on.md/#okta-configuration){:target="_blank"}, [Onelogin](../security-and-control/single-sign-on.md/#onelogin-configuration){:target="_blank"}, or [other](../security-and-control/single-sign-on.md/#other-configuration){:target="_blank"}. [Learn more](../security-and-control/single-sign-on.md/#saml){:target="_blank"}.
 * **WS-Federation**: Windows Azure or other. [Learn more](../security-and-control/single-sign-on.md/#ws-federation){:target="_blank"}.
 * **OpenId connect**: [Google](../security-and-control/single-sign-on.md/#google-configuration){:target="_blank"}. [Learn more](../security-and-control/single-sign-on.md/#openid-connect-configuration){:target="_blank"}.
-6. Click **Save**.
+
+<ol start="6"><li>Click <b>Save</b>.</li></ol>
 
 A success message is displayed once the SSO setup is complete.
 <img src="../images/sso-configuration-updated-successfully.png" alt="sso updated successfully message" title="sso updated successfully message" style="border: 1px solid gray; zoom:75%;">
@@ -304,7 +302,7 @@ To configure SSO using SAML and Okta, follow the steps below:
 <li>Paste the value into the <b>Certificate</b> field on GALE’s SSO setup page.
 <img src="../images/paste-okta-certificate.png" alt="paste okta certificate" title="paste okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
 
-To add a new certificate, click **+ Add new**.</ol>
+To add a new certificate, click <b>+ Add new</b>.</ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -312,7 +310,7 @@ To add a new certificate, click **+ Add new**.</ol>
 
 <ol start="18"><li>Click <b>Save</b>.</li>
 
-Once SSO for Okta is complete, the system will redirect to the **Okta Sign in** page for GALE account authentication.
+Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</b> page for GALE account authentication.
 
 <img src="../images/okta-sign-in-page.png" alt="okta sign in page" title="okta sign in page" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -331,30 +329,30 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 
 * To learn how to **add a new app**, click [here](https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#manage-add){:target="_blank"}.
 * To learn how to **configure apps**, click [here](https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#config){:target="_blank"}.
-6. Search for your GALE app and click enter.
-7. Click your app to view the **Add App** page. Optionally, change the display name or the icons displayed to your users in the *OneLogin* portal, and then click **SAVE**. The GALE app has been added to your company apps for *OneLogin* and is listed on the app page.
-8. Copy the following values from **SO** > **Enable SAML2.0** on Onelogin and paste them into the relevant fields on GALE’s SSO setup page:
-    * **OneLogin SAML 2.0 Endpoint (HTTP): **Paste into** SAML 2.0 endpoint.**
-    * **OneLogin Issuer URL**: Paste into **Issuer URL**.
-    <img src="../images/paste-onelogin-issuer-url.png" alt="paste one login issuer url" title="paste one login issuer url" style="border: 1px solid gray; zoom:75%;">
 
-9. In the **OneLogin X.509 Certificate** field, click **View Details**. The **Standard Strength Certificate (2048-bit)** page is displayed.
-<img src="../images/onelogin-view-details.png" alt="one login view details" title="one login view details" style="border: 1px solid gray; zoom:75%;">
+<ol start="6"><li>Search for your GALE app and click enter.</li>
+<li>Click your app to view the <b>Add App</b> page. Optionally, change the display name or the icons displayed to your users in the <i>OneLogin</i> portal, and then click <b>SAVE</b>. The GALE app has been added to your company apps for <i>OneLogin</i> and is listed on the app page.</li>
+<li>Copy the following values from <b>SSO</b> > <b>Enable SAML2.0</b> on Onelogin and paste them into the relevant fields on GALE’s SSO setup page:</li>
+    <ul><li><b>OneLogin SAML 2.0 Endpoint (HTTP)</b>: Paste into <b>SAML 2.0 endpoint</b>.</li>
+    <li><b>OneLogin Issuer URL</b>: Paste into <b>Issuer URL</b>.</li>
+    <img src="../images/paste-onelogin-issuer-url.png" alt="paste one login issuer url" title="paste one login issuer url" style="border: 1px solid gray; zoom:75%;"></ul>
 
-10. In the **X.509 Certificate** section, copy the certificate data and then paste it into the **X.509 Certificate** field on GALE’s SSO setup page.
+<li>In the <b>OneLogin X.509 Certificate</b> field, click <b>View Details</b>. The <b>Standard Strength Certificate (2048-bit)</b> page is displayed.
+<img src="../images/onelogin-view-details.png" alt="one login view details" title="one login view details" style="border: 1px solid gray; zoom:75%;"></li>
+<li>In the <b>X.509 Certificate</b> section, copy the certificate data and then paste it into the <b>X.509 Certificate</b> field on GALE’s SSO setup page.</li>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Copy data after the <b>BEGIN CERTIFICATE</b> header and before the <b>END CERTIFICATE</b> footer.</p></div>
 
 To add a new certificate, click **+Add new**.
-<img src="../images/add-new-x-509-certificate.png" alt="add new x 509 certificate" title="add new x 509 certificate" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-new-x-509-certificate.png" alt="add new x 509 certificate" title="add new x 509 certificate" style="border: 1px solid gray; zoom:75%;"></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.</p></div>
 
-<ol start="13"><li>Copy the following field values from GALE’s SSO setup page into the relevant fields in Onelogin:</li>
+<ol start="11"><li>Copy the following field values from GALE’s SSO setup page into the relevant fields in Onelogin:</li>
 
 <ul><li>ACS URL for SP Initiated SAML Flow.</li>
 <li>ACS URL for IDP Initiated SAML Flow.</li>
@@ -444,7 +442,7 @@ To configure and enable SSO using WS-Federation and other IDPs of your choice, f
 When a user logs into a system that acts as an IDP and tries to access his GALE account, the following happens:
 
 1. The application redirects the user to the IDP for authentication.
-2. The user logs in at the IDP. portal/
+2. The user logs in at the IDP portal.
 3. IDP redirects the user back with an authorization code.
 4. The application exchanges the code for ID and access tokens.
 5. The application validates tokens and grants access.
@@ -512,7 +510,7 @@ To exclude a user from the SSO requirement, follow the steps below:
 You can add multiple users to the list, as shown below:
 <img src="../images/add-multiple-users-to-exclude.png" alt="exclude multiple users" title="exclude multiple users" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Save**.
+<ol start="3"><li>Click <b>Save</b>.</li></ol>
 
 A success message is displayed, and the SSO sign-in is made optional for the user.
 
