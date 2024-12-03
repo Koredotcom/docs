@@ -2,8 +2,7 @@
 
 The Coaching Assignments feature in the Agent Dashboard enables agents to review and gain value from supervisor-created coaching assignments. To access these assignments, agents must have single permissions for the **Agent Dashboard** and **Coaching Assignments**. The assignments are listed in reverse chronological order.
 
-You can view Coaching Assignments by navigating to **Contact Center AI** > **Quality Management** > **Coaching Assignments**.    
-
+You can view Coaching Assignments by navigating to **Contact Center AI** > **Quality AI** > **Coaching Assignments**.   
 <img src="../coaching-assignments/images/coaching-assignments-agent-view.png" alt="coaching-agent-view" title="coaching-agent-view" style="border: 1px solid gray; zoom:60%;">
 
 The **Coaching Assignments** page shows the following list of items:
@@ -13,13 +12,13 @@ The **Coaching Assignments** page shows the following list of items:
 * **Assigned Date**: This shows the date when the coaching assignment was given.
 * **Follow-up Date**: This shows the follow-up date for that coaching assignment.
 * **Status**: This shows the following status of the coaching assignments, which is calculated based on the number of interactions and best responses:
-* **Start Now**: This indicates the assigned interactions in coaching that have been reviewed.
-* **In Progress**: This shows the interactions (>1) that have been reviewed.
-* **Completed**: This shows all the interactions are completed
+  * **Start Now**: This indicates the assigned interactions in coaching that have been reviewed.
+  * **In Progress**: This shows the interactions (>1) that have been reviewed.
+  * **Completed**: This shows all the interactions are completed.  
+  <img src="../coaching-assignments/images/assigned-coaching-assignments.png" alt="Assigned Coaching Assignment" title="Assigned Coaching Assignment" style="border: 1px solid gray; zoom:60%;">
 
-Upon clicking any of the assigned coaching assignments from the widget, the following best response interactions pane gets displayed on your right-hand side of the **New Coaching Assignment** screen. 
-
-<img src="../coaching-assignments/images/coaching-assignments-slideout-interactions.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
+Upon clicking any of the assigned coaching assignments from the widget, the following best response interactions pane gets displayed on your right-hand side of the **New Coaching Assignment** screen.  
+<img src="../coaching-assignments/images/coaching-assignments-slideout-interactions1.png" alt="coaching-assignments slideout" title="coaching-assignments slideout" style="border: 1px solid gray; zoom:60%;">
 
 ### Interactions Marked for Coaching
 

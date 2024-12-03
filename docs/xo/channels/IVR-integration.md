@@ -71,17 +71,15 @@ Steps to configure IVR settings for your Virtual Assistant:
 
     !!! note
 
-        If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
-          * Enable Transcription set to Yes.
-          * Transcription engine source set to builtin:speech/transcribe.
-          * IVR Data Extraction Key set to user input.
-          * ASR Confidence Threshold Key set to userinput confidence.
+        If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:  
+          * Enable Transcription set to Yes.  
+          * Transcription engine source set to builtin:speech/transcribe.  
+          * IVR Data Extraction Key set to user input.  
+          * ASR Confidence Threshold Key set to userinput confidence.  
           * ASR Threshold Confidence set to 50.
   
-
-  
-10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](#configure-dialog-node-ivr-properties).
-See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar]) for a detailed configuration for Grammar syntax.
+10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](#configure-dialog-node-ivr-properties)).
+See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar]) for a detailed configuration for Grammar syntax.  
 
 
 

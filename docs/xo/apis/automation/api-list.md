@@ -1,17 +1,15 @@
-# APIs List
+# Automation AI API List
 
-Following is the list of APIs available from the Kore.ai XO Platform. For details on the API functioning and usage instructions [refer here](https://developer.kore.ai/docs/bots/api-guide/apis/).
+The following tables list the APIs available for Automation AI, grouped by the functionality they address:
 
-Based on the functionality addressed, the APIs can be categorized as:
+* [Bot Definition APIs](#bot-definition-apis)
+* [NLP training APIs](#nlp-training-apis)
+* [Analytics APIs](#analytics-apis)
+* [Admin APIs](#admin-apis)
+* [Data Tables Access APIs](#data-data-table-access-apis) 
 
-1. APIs related to the Bot Definition functionality, [more](#bot-definition-apis)
-2. APIs related to NLP training, [more](#nlp-training-apis)
-3. APIs aiding in Analyzing the performance and behavior, [more](#analytics-apis)
-4. APIs related to the Admin Console functionality, [more](#admin-apis)
-5. APIs related to the data access from Data Tables, [more](#data-data-table-access-apis)
-6. API related to Search and Answer Generation, [more](#answer-generation-api)
+!!! note
 
-!!!note
     All the APIs have rate limits to manage the usage. If the rate limit is exceeded, an API call fails with the following error message – “_Rate limit for this API has been reached. Please try again after some time._”
 
 

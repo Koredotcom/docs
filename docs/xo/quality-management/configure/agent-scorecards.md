@@ -134,22 +134,19 @@ Users can view **Agent Attributes** by navigating to **Contact Center AI** > **Q
 
 Steps to create **New Agent Attribute**:
 
-1. From the **Agent Score Cards**, select the **Agent Attributes** tab, the following screen appears.  
-    <img src="../agent-scorecards/images/agent-attributes.page.png" alt="Agent Attribute Tab" title="Agent Attribute Tab" style="border: 1px solid gray; zoom:70%;">
-
-2. Click the **+New Agent Attribute** displayed on the top-right corner of the **Agent Attributes** page.  
+1. From the **Agent Score Cards**, select the **Agent Attributes** > **+New Agent Attribute** displayed on the top-right corner of the **Agent Attributes** page.  
     <img src="../agent-scorecards/images/new-agent-attribute1.png" alt="New Agent Attribute" title="New Agent Attribute" style="border: 1px solid gray; zoom:70%;">
 
-3. Upon clicking the **+New Agent Attribute**, the following **Add New Agent Attribute** screen appears.   
+2. Upon clicking the **+New Agent Attribute**, the following **Add New Agent Attribute** screen appears.   
 <img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
-4. In the **Name** field, enter the name of the agent attribute.
-5. Enter a short **Description** (optional) for the newly created agent attribute.
-6. In the **Add Evaluation Metrics**, search for the required evaluation metrics to add. 
-7. Click the **Add Evaluation Metrics** option. The following screen appears with the selected evaluation metrics.  
-    <img src="../agent-scorecards/images/update-new-agent-attribute.png" alt="Add Evaluation Metrics" title="Add Evaluation Metrics" style="border: 1px solid gray; zoom:70%;"> 
+    * In the **Name** field, enter the name of the agent attribute.
+    * Enter a short **Description** (optional) for the newly created agent attribute.
+    * In the **Add Evaluation Metrics**, search for the required evaluation metrics to add. 
+    * Search and click the **Add Evaluation Metrics** to select an option. The following screen appears with the selected evaluation metrics.  
+<img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Add Evaluation Metrics" title="Add Evaluation Metrics" style="border: 1px solid gray; zoom:70%;"> 
 
-8. Click **Create**. The following screen appears with all the added agent attribute options.   
+3. Click **Create**. The following screen appears with the newly added agent attribute options.   
 <img src="../agent-scorecards/images/added-new-attributes.png" alt="Updated Attributes List" title="Updated Attributes List" style="border: 1px solid gray; zoom:70%;"> 
 
 The Agent Attributes include the following:

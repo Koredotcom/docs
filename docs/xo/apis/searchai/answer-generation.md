@@ -171,4 +171,31 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
 
    </td>
   </tr>
+  <tr>
+   <td>raclEntityIds</td>
+   <td>No </td>
+   <td>Array of RACL values
+
+This field specifies the **RACL (Role-Based Access Control List)** values to be used to determine accessible content. It can include both **user identities** (e.g., email addresses) and **permission entity IDs( **e.g., user groups).
+
+When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response.
+
+For instance, if raclEntityIds: [
+
+“123234”, // Permission Entity ID
+
+“[user@example.com](mailto:user@example.com)” // User Identity
+
+]
+
+* Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.
+* The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".
+
+This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings.
+
+“raclEntityIds” takes precendence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present we will only honor that. 
+
+
+   </td>
+  </tr>
 </table>

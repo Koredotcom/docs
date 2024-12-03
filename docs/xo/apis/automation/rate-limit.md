@@ -1,5 +1,5 @@
 
-# Rate Limits
+# Automation AI - API Rate Limits
 
 The Platform enforces rolling rate limits to restrict the number of API requests a user, application, or service can make within a dynamic timeframe. It helps prevent a single user or service from consuming disproportionate resources that could degrade the service for others.
 

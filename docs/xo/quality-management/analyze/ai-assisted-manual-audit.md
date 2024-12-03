@@ -2,10 +2,10 @@
 
 The AI-Assisted Manual Audit feature streamlines interaction evaluation by automatically categorizing conversations into three key areas: moments of adherence, moments of violation, and omissions. By highlighting these critical elements, evaluators can quickly assess the quality of interactions, significantly reducing review time and improving efficiency in the quality assurance process.
 
-Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
+Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../ai-assist-manual-edit/images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
-You can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Conversation Mining** > **Interactions**.  
+You can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../ai-assist-manual-edit/images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Details

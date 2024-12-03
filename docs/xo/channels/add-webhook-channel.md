@@ -1033,7 +1033,7 @@ The Webhook V2.0 supports the OnConnect event as part of the first user message.
 
 
 ```
-curl -x POST 'https://bots.kore.ai/chatbot/v2/webhook/st-e4xxxa3-1dbc-xxxx-aa8f-1f225xxxx6ea' \
+curl -X POST 'https://bots.kore.ai/chatbot/v2/webhook/st-e4xxxa3-1dbc-xxxx-aa8f-1f225xxxx6ea' \
 --header 'Authorization: bearer eyJhbGciOiJIUzI1NiIsInxxxxxxxxxxxxxxxxxxxxxxxxQ3LTcwYTlmOTg3Yjg0NCJ9._pztYVnP2UfJNu4-Unwx5eM7qT19tsM-hkU3gU7a6lU' \
 --header 'Content-Type: application/json' \
 --data '{
