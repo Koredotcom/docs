@@ -1,4 +1,5 @@
 The following table displays all the languages supported by the Agent AI widget, indicating which ones support the Auto Summarization and Greeting Messages features:
+
 | Language  | Dialogs|Agent AI Widget (Localization) | Greeting Messages | Custom Summary through Dialog Task | OOTB Summarization | Answers | Playbooks | Coaching |
 |-----------------------------------|---------|--------------------------------|-------------------|------------------------------------|--------------------|---------|-----------|----------|
 | Arabic (ar)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
