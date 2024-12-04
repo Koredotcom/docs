@@ -10,15 +10,15 @@ This update include new features, improvements, and bug fixes, summarized below.
 
 **New Features**
 
-* Added support to import open-source models - Base & Adapter models from the local
-* Added support to new external models: *OpenAI - o1-mini* and *o1-preview*
+* Added support to import open-source models - Base & Adapter models from a user's local machine
+* Added support for new external models: *OpenAI - o1-mini* and *o1-preview*
 * Expanded support for new hardware types for model deployment: *Cluster of 8's - A10* and *Cluster of 8's - T4*
 * Added statuses *Waiting* and *In Progress* to track Agent Runs in Async mode
 
 **Improvements**
 
 * Upgraded the vLLM package version from 0.4.3 to 0.6.2 for Model inferencing
-* Added 10 new events in the Audit log for Prompt Studio
+* Added 10 new events in the Audit log for Prompt Studio.  [Learn more](./audit-logs.md){:target="_blank"}.
 
 **Bug Fixes**
 
@@ -38,13 +38,13 @@ This update include new features, improvements, and bug fixes, summarized below.
 * Generate Prompt and Prompt Test Data using GenAI
 * Prompts - Permission Enforcement
 * Enabled optimization CT2 and vllm for mistralai/Mistral-7B-Instruct-v0.3 model
-* Option to exclude specific users from SSO. And SSO Mixpanel events
+* Option to exclude specific users from SSO
 * Audit logs for Agent canvas changes and Export audit Logs
 * Export model traces
 
 **Improvements**
 
-* User id coming as undefined for shared prompts in Model traces
+* User ID no longer shown as undefined for shared prompts in Model traces
 * Model credits in traces for the model used only in Agents
 * Empty state for model listing and adding model from empty state
 * Allow invited users to sign up
@@ -121,7 +121,6 @@ This update include new features, enhancement and bug fixes, summarized below.
 
 **Feature Enhancements**
 
-* Navbar revamp across GALE Application
 * Updating details in the Custom API Integration model to continue to work in existing experiments
 
 **Security Enhancement**
