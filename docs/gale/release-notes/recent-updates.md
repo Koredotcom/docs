@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This update include new features, improvements, and bug fixes, summarized below.
+This update includes new features, improvements, and bug fixes, summarized below.
 
 **New Features**
 
@@ -31,7 +31,7 @@ This update include new features, improvements, and bug fixes, summarized below.
 
 <u> Minor Release </u>
 
-This update include new features, improvements, and bug fixes, summarized below.
+This update includes new features, improvements, and bug fixes, summarized below.
 
 **New Features**
 
@@ -60,7 +60,7 @@ This update include new features, improvements, and bug fixes, summarized below.
 
 <u> Major Release </u>
 
-This update include new features and improvements, summarized below.
+This update includes new features and improvements, summarized below.
 
 **New Features**
 
@@ -81,7 +81,7 @@ This update include new features and improvements, summarized below.
 
 <u> Minor Release </u>
 
-This update include new features, enhancement and bug fixes, summarized below.
+This update includes new features, enhancements, and bug fixes, summarized below.
 
 **New Features**
 
@@ -95,7 +95,7 @@ This update include new features, enhancement and bug fixes, summarized below.
 * Added GPT-4o mini, llama3.1-8B instruct, llama 3.1-8B open source and external models
 * Toast messages have been improved for the sync-async feature in Agents
 
-**Security Enhancement**
+**Security Enhancements**
 
 * Command Injection fix in admin service
 
@@ -109,7 +109,7 @@ This update include new features, enhancement and bug fixes, summarized below.
 
 <u> Minor Release </u>
 
-This update include new features, enhancement and bug fixes, summarized below.
+This update includes new features, enhancements, and bug fixes, summarized below.
 
 **New Features**
 
@@ -123,7 +123,7 @@ This update include new features, enhancement and bug fixes, summarized below.
 
 * Updating details in the Custom API Integration model to continue to work in existing experiments
 
-**Security Enhancement**
+**Security Enhancements**
 
 * Enforce the password in email-based login to be 12 characters long
 
