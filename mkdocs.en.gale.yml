@@ -124,7 +124,6 @@ nav:
         - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Debug Log Overview: agents/agents-flows/perform-other-actions-on-the-flow-builder/debug-log-overview.md
         - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md

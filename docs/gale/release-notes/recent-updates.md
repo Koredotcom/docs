@@ -10,7 +10,7 @@ This update include new features, improvements, and bug fixes, summarized below.
 
 **New Features**
 
-* Added support to import open-source models - Base & Adapter models from a user's local machine
+* Added support to import open-source models, such as Base and Adapter models, from a user's local machine
 * Added support for new external models: *OpenAI - o1-mini* and *o1-preview*
 * Expanded support for new hardware types for model deployment: *Cluster of 8's - A10* and *Cluster of 8's - T4*
 * Added statuses *Waiting* and *In Progress* to track Agent Runs in Async mode
@@ -18,7 +18,7 @@ This update include new features, improvements, and bug fixes, summarized below.
 **Improvements**
 
 * Upgraded the vLLM package version from 0.4.3 to 0.6.2 for Model inferencing
-* Added 10 new events in the Audit log for Prompt Studio.  [Learn more](./audit-logs.md){:target="_blank"}.
+* Added 10 new events in the Audit log for Prompt Studio.  [Learn more](../settings/monitoring/audit-logs.md).
 
 **Bug Fixes**
 
