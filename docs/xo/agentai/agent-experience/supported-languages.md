@@ -1,56 +1,67 @@
-The following table displays all languages supported by the Agent AI widget, indicating which ones support the Auto Summarization and Greeting Messages features:
-
-| **Languages**               | **Dialogs** | **Agent AI Widget (Localization)** | **Greeting Messages** | **Custom Summary through Dialog Task** | **OOTB Summarization** | **Answers** | **Playbooks** | **Coaching** |
-|-----------------------------|:-----------:|:----------------------------------:|:----------------------:|:-------------------------------------:|:-----------------------:|:-----------:|:-------------:|:------------:|
-| Arabic (ar)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Assamese (as)                |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Bangla (bn)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Dutch (nl)                   |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| English (en)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ✅            |      ✅      |       ✅       |      ✅      |
-| Español (Spanish) (es)       |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ✅            |      ✅      |       ❌       |      ❌      |
-| French (fr)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ✅            |      ✅      |       ❌       |      ❌      |
-| German (de)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ✅            |      ✅      |       ❌       |      ❌      |
-| Gujarati (gu)                |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Hebrew (he)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Hindi (hi)                   |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Indonesian (id)              |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| Italian (it)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| Japanese (ja)                |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| Kannada (kn)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Korean (ko)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| Malayalam (ml)               |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Marathi (mr)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Nepali (ne)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Odia (or)                    |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Persian (fa)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Polish (pl)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| Portuguese (Brazil) (pt-BR)  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Punjabi (pa)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Russian (ru)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Simplified Chinese (zh-CN)   |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Tamil (ta)                   |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Telugu (te)                  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Traditional Chinese (zh-TW)  |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Turkish (tr)                 |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ✅      |       ❌       |      ❌      |
-| Urdu (ur)                    |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Vietnamese (vi)              |     ✅      |                ✅                  |           ✅            |                 ✅                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Afrikaans (af)               |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Albanian (sq)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Amharic (am)                 |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Armenian (hy)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Azerbaijani (az)             |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Basque (eu)                  |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Belarusian (be)              |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Bosnian (bs)                 |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Bulgarian (bg)               |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Catalan (ca)                 |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Cebuano (ceb)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Corsican (co)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Croatian (hr)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Czech (cs)                   |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Danish (da)                  |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Estonian (et)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Finnish (fi)                 |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Georgian (ka)                |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Greek (el)                   |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
-| Haitian Creole (ht)          |     ✅      |                ❌                  |           ❌            |                 ❌                     |            ❌            |      ❌      |       ❌       |      ❌      |
+The following table displays all the languages supported by the Agent AI widget, indicating which ones support the Auto Summarization and Greeting Messages features:
+| Language                         | Dialogs | Agent AI Widget (Localization) | Greeting Messages | Custom Summary through Dialog Task | OOTB Summarization | Answers | Playbooks | Coaching |
+|-----------------------------------|---------|--------------------------------|-------------------|------------------------------------|--------------------|---------|-----------|----------|
+| Arabic (ar)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Assamese (as)                     | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Bengali (bn)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Bulgarian (bg)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Catalan (ca)                      | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Chinese (zh)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Croatian (hr)                     | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Czech (cs)                        | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Danish (da)                       | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Dutch (nl)                        | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| English (en)                      | ✅      | ✅                             | ✅                | ✅                                 | ✅                 | ✅      | ✅        | ✅       |
+| Estonian (et)                     | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Filipino (fil)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Finnish (fi)                      | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| French (fr)                       | ✅      | ✅                             | ✅                | ✅                                 | ✅                 | ✅      | ❌        | ❌       |
+| Georgian (ka)                     | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| German (de)                       | ✅      | ✅                             | ✅                | ✅                                 | ✅                 | ✅      | ❌        | ❌       |
+| Greek (el)                        | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Gujarati (gu)                     | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Hebrew (he)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Hindi (hi)                        | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Hungarian (hu)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Icelandic (is)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Indonesian (id)                   | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Irish (ga)                        | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Italian (it)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Japanese (ja)                     | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Kannada (ka)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Kazakh (kk)                       | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Korean (ko)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Latvian (lv)                      | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Lithuanian (lt)                   | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Malayalam (ml)                    | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Marathi (mr)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Mongolian (mn)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Nepali (ne)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Norwegian (no)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Pashto (ps)                       | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Persian (fa)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Polish (pl)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Portuguese (pt)                   | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Punjabi (pa)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Romanian (ro)                     | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Russian (ru)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Serbian (sr)                      | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Sinhalese (si)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Slovak (sk)                       | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Slovenian (sl)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Somali (so)                       | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Spanish (es)                      | ✅      | ✅                             | ✅                | ✅                                 | ✅                 | ✅      | ❌        | ❌       |
+| Swahili (sw)                      | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Swedish (sv)                      | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Tamil (ta)                        | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Telugu (te)                       | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Thai (th)                         | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Turkish (tr)                      | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Ukrainian (uk)                    | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Urdu (ur)                         | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ❌      | ❌        | ❌       |
+| Uzbek (uz)                        | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Vietnamese (vi)                   | ✅      | ✅                             | ✅                | ✅                                 | ❌                 | ✅      | ❌        | ❌       |
+| Welsh (cy)                        | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Xhosa (xh)                        | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Yoruba (yo)                       | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
+| Zulu (zu)                         | ✅      | ❌                             | ❌                | ❌                                 | ❌                 | ❌      | ❌        | ❌       |
