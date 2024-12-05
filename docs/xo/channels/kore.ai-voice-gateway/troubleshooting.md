@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Let's troubleshoot a few common Voice Gateway related issues reported by users. 
+Let's troubleshoot a few common Voice Gateway related issues reported by users.
 
 ## Bot Publish is Failing
 

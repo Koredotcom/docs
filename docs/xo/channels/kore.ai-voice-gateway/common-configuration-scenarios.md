@@ -97,7 +97,7 @@ Continuous ASR (Automatic Speech Recognition) is a feature that allows Speech-to
   <tr>
    <td>continuousASRTimeoutInMS
    </td>
-   <td>Number in millisecond 
+   <td>Number in millisecond
 Example-5000 for  5 sec
    </td>
    <td>STT - Google and Microsoft
@@ -109,7 +109,7 @@ TTS - Not Required
   <tr>
    <td>continuousASRDigits
    </td>
-   <td>Any digit  Example- *,%,&lt;,#
+   <td>Any digit  Example- *,%,&;,#
    </td>
    <td>STT - Google and Microsoft
 TTS - Not Required
@@ -366,7 +366,7 @@ TTS - Not Required
    <td>STT - Google and Microsoft
 TTS - Not Required
    </td>
-   <td>Array, specifying allowed types of input: ['digits'], ['speech'], or ['digits', 'speech'].  \
+   <td>Array, specifying allowed types of input: ['digits'], ['speech'], or ['digits', 'speech'].
 Default: ['digits']
    </td>
   </tr>
