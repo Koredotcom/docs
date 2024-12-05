@@ -1,4 +1,4 @@
-# SSML (Speech Synthesis MArkup Language)
+# SSML (Speech Synthesis Markup Language)
 
 Using SSML allows developers to control aspects of speech synthesis such as pronunciation, volume, pitch, and rate of speech. Here's a guide on how to use SSML effectively:
 
