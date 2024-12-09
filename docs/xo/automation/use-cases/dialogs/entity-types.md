@@ -1063,7 +1063,7 @@ This feature is not fully supported in all languages [Click here for details](..
     2. The number is converted to a percentage of the total number of letters in the input.
     3. The list value with the highest similarity is considered as input if the score is greater than or equal to the configured percentage.
 
-!!! note ""
+!!! note 
 
     Spell correction does not apply to dictionary words or alphanumeric inputs.
 
