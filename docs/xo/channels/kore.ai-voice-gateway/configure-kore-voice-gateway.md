@@ -150,7 +150,7 @@ Deleting a SIP number means stopping all services associated with it.
 
 Steps to delete a SIP number:
 
-1. Click the ellipsis (**︙**) and select **Delete**.    
+1. Click the ellipsis (**︙**) and select **Delete**.  
     <img src="../images/delete-sip-number.png" alt="Delete Button SIP" title="Delete Button SIP" style="border: 1px solid gray; zoom:100%;">
 
 2. The following pop-up is displayed. Click **Delete** to confirm your choice.  
