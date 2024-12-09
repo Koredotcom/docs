@@ -2,8 +2,8 @@
 
 This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
 
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
-<img src="../images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
+<img src="../evaluation-forms/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 The Evaluation Metrics has the following options:
 
@@ -16,13 +16,12 @@ The Evaluation Metrics has the following options:
 
 ## Add New Evaluation Metrics
 
-
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
+You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
 
 Steps to create New Evaluation Metrics:
 
 1. Click the **New Evaluation Metric** button in the upper-right corner to configure the most commonly used evaluation metrics. The following screen appears, allowing you to select a type of evaluation metrics measurement.  
-<img src="../images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
+<img src="../evaluation-forms/images/mtric-pane.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the type of Evaluation Metrics Measurement, such as **By Question**, **By Speech**, **By Playbook Adherence**, and **By Dialog Task**.
 
@@ -67,7 +66,6 @@ To get the agent's answers, you set up different acceptable utterances for a par
 This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
-
 
 <li><strong>Trigger:</strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>
 
@@ -144,7 +142,6 @@ If you select the <strong>First Part of Conversation </strong> or the <strong> L
 
 <p>Similarly, if the number of Cross Talk instances exceeds the no. of instances limit, it is considered a failure for that metric, and the agent will be penalized.</p>
 
-
 <li><strong>Dead Air</strong>: This defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. By default, the minimum Dead Air time is one second, with a maximum limit of 300 seconds. However, you can customize the configuration instances limit and the Dead Air duration combination. 
 
 <li><strong>Dead Air Metric Qualification</strong>: The interaction will qualify for the metric if the number of dead air instances is less than the acceptable limit set in the metric configuration. Conversely, if the number of instances exceeds the configured limit, the interaction will fail the dead air metric. An instance will only be counted as dead air if it exceeds the specified dead air duration.</li>
@@ -153,7 +150,7 @@ If you select the <strong>First Part of Conversation </strong> or the <strong> L
  
 <ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</ul></li>
 
-   </td>
+  </td>
   </tr>
 </table>
 
@@ -162,11 +159,11 @@ If you select the <strong>First Part of Conversation </strong> or the <strong> L
    <td><strong>Evaluation Metrics Measurement Types</strong>
    </td>
    <td><strong>Description</strong>
-   </td>
+  </td>
   </tr>
   <tr>
    <td colspan="2" ><strong>By Dialog Task: </strong>Configures a metric based on adherence to execution of dialog tasks.
-   </td>
+  </td>
   </tr>
   <tr>
    <td><strong>Name</strong>
@@ -266,10 +263,10 @@ If you select the <strong>First Part of Conversation</strong> or the <strong>Las
 Steps to edit existing Evaluation Metrics:
 
 1. Right-click to select any of the existing **Evaluation Metrics** (Name). The following screen appears, allowing you to select a type of evaluation metrics measurement.  
-<img src="../images/edit-metric.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../evaluation-forms/images/edit-metric.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Click **Edit** to update the Evaluation Metrics dialog box fields. The following dialog box appears to update the required fields.  
-<img src="../images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
+<img src="../evaluation-forms/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
 
 3. Edit the required fields that you want to update.
 
