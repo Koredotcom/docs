@@ -13,14 +13,9 @@ The Evaluation Forms are designed to check adherence to individual questions. Th
 
 The Evaluation Form includes chosen metrics with customizable weights totaling 100%. The Evaluation Forms are configured and assigned to respective Channels and Queues for audit. Each queue in the Chat and Voice channels can host only one evaluation form.
 
-You can access the Evaluation Forms by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms**.  
+You can access the Evaluation Forms by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms**.  
 
-<img src="../images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
-
-
-!!! note     
-        
-    To create and configure evaluation forms, the Auto QA setting must be enabled first.
+<img src="..configure/evaluation-forms/images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
 
 The Evaluation Forms has the following options:
 
@@ -33,9 +28,13 @@ The Evaluation Forms has the following options:
 * **Status**: Allows you to enable or disable the scoring for the individual Evaluation Form.  
 * **Search**: Provides a quick search option to view and update the Evaluation Forms by name only.
 
+!!! note     
+        
+    To create and configure evaluation forms, the **Auto QA** setting must be enabled first.
+
 ### Add New Evaluation Form
 
-You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
+You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
 
 Steps to create a new Evaluation Form:  
 <img src="../images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
@@ -70,6 +69,12 @@ The following table describes the Evaluation Forms details:
    <td><strong>Description</strong>
    </td>
    <td>Enter a short description for the form, which is optional.
+   </td>
+  </tr>
+   <tr>
+   <td><strong>Language</strong>
+   </td>
+   <td>Select a language from the drop-down list.
    </td>
   </tr>
   <tr>
