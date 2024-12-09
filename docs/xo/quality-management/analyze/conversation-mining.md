@@ -92,7 +92,7 @@ Provides the option to select the date range to the conversation interactions. D
 
 #### Chat History
 
-This shows all the conversation history.  
+This shows all the conversation history when you click any of the agent interactions.  
 <img src="../conversation-mining/images/conversation-mining-interaction-chat-hist.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
 
 ### Filters
@@ -114,39 +114,52 @@ Steps to Add New Filter:
 1. Click the **Filters** button on the upper-right corner. The following screen appears to add a new filter.  
 <img src="../conversation-mining/images/conversation-mining-interaction-new-filters.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:80%;">  
     
-The New Filter provides the following three Filter categories of interest:
-    
+The New Filter provides the following three Filter categories of interest:    
 <img src="../conversation-mining/images/conversation-mining-interaction-filters-category.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
 
 #### Filter by Efficiency
 
 This provides an operational view of areas of interest where there is greater potential for improvement.
 
-1. Select a type of conversation interaction **Channels**, such as **Voice** or **Chat**.
-2. Choose the **Audit Status** if it is **Audited**, **Assigned**, or **Not Assigned**.
+1. Select a type of conversation interaction **Channels**, such as **Chat** or **Voice**.  
+<img src="../conversation-mining/images/channels.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+
+2. Choose the **Audit Status** if it is **Audited**, **Assigned**, or **Not Assigned**.  
+<img src="../conversation-mining/images/audit-status.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+
 3. From the **Queues** list, add the Queue names.
-4. From the **Agent Groups** list, add the agent group name based on the queue selected.
+<img src="../conversation-mining/images/audit-status.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+
+4. From the **Agent Groups** list, add the agent group name based on the queue selected.  
+<img src="../conversation-mining/images/agent-groups.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         The user can filter the **Agents**, based on the interactions that are part of the queues and the user is part of.
 
-5. From the **Agents** list, add the agent name based on the queue selected.
+5. From the **Agents** list, add the agent name based on the queue selected.  
+<img src="../conversation-mining/images/agents.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         The user can filter the **Agent Groups**, who are part of the queues, not based on agents in the agent group that are part of other queues.
 
 6. Enable either of the following options:
-    * **Average Handling Time (AHT)**: Filters interactions based on the start and end of handling time range of interaction.
-    * **Filter by deviation from AHT**: Filters interactions by % deviation from the average handling time across all interactions for the respective date range and the interactions that are going wrong.  
-      <img src="../conversation-mining/images/conversation-mining-interaction-filters-by-efficiency.png" alt="Filterby Efficiency" title="Filter by Efficiency" style="border: 1px solid gray; zoom:80%;">  
+    * **Average Handling Time (AHT)**: Filters interactions based on the start and end of handling time range of interaction.    
+    <img src="../conversation-mining/images/handling-time.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
 
-    * Specify the **Deviation of** % number.
-    * If **No. of Transfers** is selected, then specify the filters by the number of transfer that occurred within each interaction.
+    * **Filter by deviation from AHT**: Filters interactions by % deviation from the average handling time across all interactions for the respective date range and the interactions that are going wrong.  
+      <img src="../conversation-mining/images/deviation-from-aht.png" alt="Filterby Efficiency" title="Filter by Efficiency" style="border: 1px solid gray; zoom:80%;">  
+
+    * Specify the **Deviation of** % number.  
+    <img src="../conversation-mining/images/deviation-of.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+
+    * If **No. of Transfers** is selected, then specify the filters by the number of transfer that occurred within each interaction.  
+        <img src="../conversation-mining/images/number-of-transfers.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
 
 7. Click **Apply** to save the filter settings entered which will be stored as **Unsaved Filter** in the Dashboard.
-    * If you do not intend to use this filter to assign an audit allocation, you can apply without saving; however, to assign audit allocation based on filters, you have to save and name it accordingly to reference it during audit allocation.
+    * If you do not intend to use this filter to assign an audit allocation, you can apply without saving; however, to assign audit allocation based on filters, you have to save and name it accordingly to reference it during audit allocation.  
+    <img src="../conversation-mining/images/unsaved-filter.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
 
 8. Click **Save & Apply** to save the new filter with a new name.  
     <img src="../conversation-mining/images/conversation-mining-interaction-save-apply.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
