@@ -71,6 +71,7 @@ Steps:
     !!! note
 
         By default, Dialogs and FAQs are enabled and cannot be disabled.
+
 4. In the **Model Configuration** section, select the **Model** to generate the embedding.
 5. (Optional) click Show Advanced Settings to view and adjust the Similarity Threshold and Proximity Threshold. In most cases, the default settings work fine.
 6. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which will determine the user intent and the execution plan.
@@ -94,7 +95,7 @@ The Debug Logs offer detailed insights into the DialogGPT model's behavior and e
 
 When DialogGPT processes a user utterance, the debug logs capture key details such as:
 
-* Shortlisted chunks (dialogs, knowledge documents, and FAQs)
+* Shortlisted chunks (dialogs, FAQ, and Search AI)
 * Resolved chunks
 * Fulfillment type
 * Exit path (intent identified, FAQ, or Answer)

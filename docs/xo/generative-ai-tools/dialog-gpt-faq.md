@@ -124,22 +124,3 @@ Yes, fallback mechanisms are seamlessly integrated into DialogGPT. If a user inp
 
 
 
-  - GenAI Tools:
-    - Overview: generative-ai-tools/introduction.md
-    - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
-    - Models Library:
-      - LLM Integration: generative-ai-tools/models-library.md
-      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
-    - Prompts Library: 
-      - Add Custom Prompts: generative-ai-tools/prompts-library.md
-    - GenAI Features:
-      - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
-      - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
-    - DialogGPT
-      - Overview: generative-ai-tools/dialog-gpt.md
-      - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
-      - Upcoming Features: generative-ai-tools/dialog-gpt-upcoming-features.md
-      - DialogGPT FAQs: generative-ai-tools/dailog-gpt-faq.md
-    - Safeguards:
-      - Data Anonymization: generative-ai-tools/data-anonymization.md
-      - Guardrails: generative-ai-tools/guardrails.md  
