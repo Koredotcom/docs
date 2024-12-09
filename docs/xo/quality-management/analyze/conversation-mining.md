@@ -48,7 +48,7 @@ The Conversation Mining Interactions has the following key Items:
 * **Supervisor Auditor Score**: Shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
 * **Sentiment Score**: Shows the system generated sentiment score for the interaction based on the context of what was said in the interaction.
 * **Moments**: Shows the Moments column counts for adherences, violations, and omissions related to the configured metrics of the interaction.  
-<img src="../conversation-mining/images/conversation-mining-moments.png" alt="Interactions Filters" title="Interactions Filters" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-moments.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
 When you hover over the listed **Moments**, the following metrics are displayed: 
 
@@ -57,7 +57,7 @@ When you hover over the listed **Moments**, the following metrics are displayed:
 * **Omissions**: Metrics not adhered to; including playbook steps, dialog tasks, and by question metrics.
 
 Clicking on an interaction opens the corresponding AI assisted manual audit page that allows the user to view the conversation history and the recording.    
-<img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters" title="Interactions Filters" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters Audit Page" title="Interactions Filters Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 Auditors can check the following near-miss scenarios by reviewing metrics on the audit screen:
 
@@ -121,24 +121,24 @@ The New Filter provides the following three Filter categories of interest:
 
 This provides an operational view of areas of interest where there is greater potential for improvement.
 
-1. Select a type of conversation interaction **Channels**, such as **Chat** or **Voice**.  
-<img src="../conversation-mining/images/channels.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+1. Select a type of conversation interaction **Channels**, such as **Chat** or **Voice**.    
+<img src="../conversation-mining/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:80%;">
 
-2. Choose the **Audit Status** if it is **Audited**, **Assigned**, or **Not Assigned**.  
-<img src="../conversation-mining/images/audit-status.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+2. Choose the **Audit Status** if it is **Audited**, **Assigned**, or **Not Assigned**.     
+<img src="../conversation-mining/images/audit-status.png" alt="Audit Status" title="Audit Status" style="border: 1px solid gray; zoom:80%;">
 
-3. From the **Queues** list, add the Queue names.
-<img src="../conversation-mining/images/audit-status.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+3. From the **Queues** list, add the Queue names.   
+<img src="../conversation-mining/images/queues.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:80%;">
 
 4. From the **Agent Groups** list, add the agent group name based on the queue selected.  
-<img src="../conversation-mining/images/agent-groups.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/agent-groups.png" alt="Agent Groups" title="Agent Groups" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         The user can filter the **Agents**, based on the interactions that are part of the queues and the user is part of.
 
 5. From the **Agents** list, add the agent name based on the queue selected.  
-<img src="../conversation-mining/images/agents.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/agents.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -146,20 +146,20 @@ This provides an operational view of areas of interest where there is greater po
 
 6. Enable either of the following options:
     * **Average Handling Time (AHT)**: Filters interactions based on the start and end of handling time range of interaction.    
-    <img src="../conversation-mining/images/handling-time.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+    <img src="../conversation-mining/images/handling-time.png" alt="Average Handling Time" title="Average Handling Time" style="border: 1px solid gray; zoom:80%;">
 
     * **Filter by deviation from AHT**: Filters interactions by % deviation from the average handling time across all interactions for the respective date range and the interactions that are going wrong.  
-      <img src="../conversation-mining/images/deviation-from-aht.png" alt="Filterby Efficiency" title="Filter by Efficiency" style="border: 1px solid gray; zoom:80%;">  
+      <img src="../conversation-mining/images/deviation-from-aht.png" alt="Filter by deviation" title="Filter by deviation" style="border: 1px solid gray; zoom:80%;">  
 
     * Specify the **Deviation of** % number.  
-    <img src="../conversation-mining/images/deviation-of.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+    <img src="../conversation-mining/images/deviation-of.png" alt="Deviation of" title="Deviation of" style="border: 1px solid gray; zoom:80%;">
 
     * If **No. of Transfers** is selected, then specify the filters by the number of transfer that occurred within each interaction.  
-        <img src="../conversation-mining/images/number-of-transfers.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+        <img src="../conversation-mining/images/number-of-transfers.png" alt="No. of Transfers" title="No. of Transfers" style="border: 1px solid gray; zoom:80%;">
 
 7. Click **Apply** to save the filter settings entered which will be stored as **Unsaved Filter** in the Dashboard.
     * If you do not intend to use this filter to assign an audit allocation, you can apply without saving; however, to assign audit allocation based on filters, you have to save and name it accordingly to reference it during audit allocation.  
-    <img src="../conversation-mining/images/unsaved-filter.png" alt="Filter Catgories" title="Filter Categories" style="border: 1px solid gray; zoom:80%;">
+    <img src="../conversation-mining/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:80%;">
 
 8. Click **Save & Apply** to save the new filter with a new name.  
     <img src="../conversation-mining/images/conversation-mining-interaction-save-apply.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
@@ -220,32 +220,32 @@ This detects the number of escalations raised to the Supervisor by a customer.
 
 #### Filter by Behavior
 
-##### Metric Name
+* **Metric Name**
 
 This filter allows you to view interactions based on specific evaluation metrics, with options to filter by **Pass** or **Fail** using radio buttons. You can select an evaluation metric from a drop-down list to apply the filter.    
 <img src="../conversation-mining/images/metric-name.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
-##### Metric Qualification
+**Metric Qualification** 
 
 The selected evaluation metric displays as a tag below the input field, which you can clear by clicking a cross button. When accessing the conversation mining page from the adherence heatmap, the filter selections are applied automatically. If queues are selected, only evaluation metrics related to those queues' forms are displayed. The filter retrieves interactions where the selected metric applies and is part of the relevant queue’s form. It allows you to view interactions where metrics have either failed or adhered, with the following qualifications displayed as radio buttons.  
 <img src="../conversation-mining/images/metric-qualification.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
-##### Empathy Score
+**Empathy Score**
 
 This measures the level of understanding and compassion shown by the agent towards the customer situation. Provides the extent of empathy like frustration or displeasure that a customer has shown (negative sentiment). A higher score indicates a more empathetic interaction.  
 <img src="../conversation-mining/images/filter-by-behaviour-empathy.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
-##### Crutch Word Score
+**Crutch Word Score**
 
 This indicates the extent of filler words (for example, umm, uh, and so on) which is used by the agent. Higher score indicates the higher usage of crutch words.  
 <img src="../conversation-mining/images/filter-by-behaviour-crutch-word.png" alt="Crutch Word Score" title="Crutch Word Score" style="border: 1px solid gray; zoom:80%;">
 
-##### Agent Playbook Adherence
+**Agent Playbook Adherence** 
 
 This indicates the adherence percentage to the Agent AI playbook assigned to that interaction.  
 <img src="../conversation-mining/images/filter-by-behaviour-agent-playbook.png" alt="Agent Playbook Adherence" title="Agent Playbook Adherence" style="border: 1px solid gray; zoom:80%;">
 
-##### Kore Evaluation Score
+**Kore Evaluation Score** 
 
 This indicates the automated QA score associated with an interaction based on the evaluation form assigned to an interactions’s queue.  
 <img src="../conversation-mining/images/filter-by-behaviour-agent-kore-evaluation.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:80%;">
@@ -277,7 +277,7 @@ This helps users to create and assign allocations to auditors for manual quality
 The users can access the Audit Allocation by going to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocation**.  
 <img src="../conversation-mining/images/conversation-mining-new-audit-allocations.png" alt="New Audit Allocations" title="New Audit Allocations" style="border: 1px solid gray; zoom:80%;">
 
-The Audit Allocations has the following options:
+The **Audit Allocations** has the following options:
 
 * **Agent**: Shows the name of the Auditor.
 * **Actions**:  Allows auditors to assign the allocation to the desired bookmark for later reference.
@@ -293,7 +293,7 @@ The Audit Allocations has the following options:
 
 ### Settings
 
-Steps to add New Audit Allocation in Settings:
+Steps to add New Audit Allocation in **Settings** tab:
 
 1. Click the **New Audit Allocation** button. The following **Settings** screen appears to assign the interactions for a new audit allocation.  
     <img src="../conversation-mining/images/conversation-mining-add-new-audit-allocations.png" alt="Add New Audit Allocations" title="Add New Audit Allocations" style="border: 1px solid gray; zoom:80%;">
@@ -301,16 +301,20 @@ Steps to add New Audit Allocation in Settings:
 2. Under the **Settings**, enter a **Name** for the audit that needs to be done.
 3. Enter a short **Description** of the audit which is optional.
 4. Select an **Evaluation Form** from the drop down list to evaluate for.
-5. Select **Agents** to search an agent from the drop down list to assign specific agents to a Queue for audit allocation.
-6. Select **Agents Groups** to search an agent group from the drop down list to assign the agents group to a Queue for audit allocation.
+5. Select **Agents** to search an agent from the drop down list to assign specific agents to a Queue for audit allocation.  
+    <img src="../conversation-mining/images/agens-search.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:80%;">
+
+6. Select **Agents Groups** to search an agent group from the drop down list to assign the agents group to a Queue for audit allocation.  
+    <img src="../conversation-mining/images/agentgroups.png" alt="Agents Groups" title="Agents Groups" style="border: 1px solid gray; zoom:80%;"> 
+
 7. Click **Next** to move to **Allocation** section.
 
 ### Allocation
 
-Steps to Add New Audit Allocation in Allocation:
+Steps to Add New Audit **Allocation** tab:
 
 1. Select an **Allocation Type** (**Random** or **Custom**).
-    1. **Random** allocation allows randomly sampled interactions to be assigned for audit.
+    1. **Random** allocation allows users to select randomly sampled interactions to be assigned for audit.
     2. **Custom** allocation allows users to select saved filters from Conversation Mining to be assigned for audit allowing focused evaluations.
 2. By default, the **Random** radio button is selected. If you choose **Random**, then select a **Date range**.
 3. Select the **Channel** to enable **Voice** toggle button, and specify the % Interactions per agent  that you want to assign for audit. Based on the input, a random set of interactions is getting selected among the selected agents, and the selected queue (based on the form selection).
@@ -325,11 +329,11 @@ Steps to Add New Audit Allocation in Allocation:
 
     The total interactions count displays the total number of interactions that is being assigned for this audit based on the evaluation form (queue), agent group selection, and the filter selection.
 
-6. Click **Next** to move to **Assignment** section.
+6. Click **Next** to move to **Assignment** tab.
 
 ### Assignment
 
-Steps to **Add New Audit Allocation** in Assignment: 
+Steps to **Add New Audit Allocation** in **Assignment** tab: 
 
 1. Select the **Auditors** from the Search filter that you want to assign interactions for manual evaluation.  
     <img src="../conversation-mining/images/new-audit-allocat-assignment.png" alt="Assignment" title="Assignment" style="border: 1px solid gray; zoom:60%;">    
