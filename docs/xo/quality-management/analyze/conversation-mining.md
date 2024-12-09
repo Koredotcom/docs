@@ -145,7 +145,7 @@ This provides an operational view of areas of interest where there is greater po
         The user can filter the **Agent Groups**, who are part of the queues, not based on agents in the agent group that are part of other queues.
 
 6. Enable either of the following options:
-    * **Average Handling Time (AHT)**: Filters interactions based on the start and end of handling time range of interaction.    
+    * **Average handling time**: Filters interactions based on the start and end of handling time range of interaction.    
     <img src="../conversation-mining/images/handling-time.png" alt="Average Handling Time" title="Average Handling Time" style="border: 1px solid gray; zoom:80%;">
 
     * **Filter by deviation from AHT**: Filters interactions by % deviation from the average handling time across all interactions for the respective date range and the interactions that are going wrong.  
