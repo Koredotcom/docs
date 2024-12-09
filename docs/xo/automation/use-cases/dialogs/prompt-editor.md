@@ -36,19 +36,24 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
 3. The **Confirmation (or Entity or Message)** window is displayed with the **Components Properties** tab selected by default.
 4. Under the **User Prompts** (or VA Responses) section:
 
-    1. If you only want to change the default sample message, howver on the message text and then click the **edit** (<img src="../images/prompt-editor-edit-icon.png">) icon. The editor appears and here you can edit the message.
+    1. If you only want to change the default sample message, hover on the message text and then click the **edit** (<img src="../images/prompt-editor-edit-icon.png">) icon. The editor appears and here you can edit the message.
+
+    2. Double-click anywhere in the text area to highlight a text and it shows the text formatting toolbar, which allows you to:
+        * Enable list creation and referencing.
+        * Allow image and link insertion.
+        * Provide basic text styling options.
 
         <img src="../images/prompt-editor-edit-default-prompt.gif" alt="Change default message" title="Change default message" style="border:1px solid gray;zoom:70%;">
 
-    2. To add a new prompt message, click **+ Add**. The Message editor opens.
+    3. To add a new prompt message, click **+ Add**. The Message editor opens.
 
         <img src="../images/prompt-editor-add-new-prompt.png" alt="Add new message" title="Add new message" style="border:1px solid gray;zoom:70%;">
 
-    3. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list. This feature would be available for both **Add** and **Edit** message.
+    4. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list. This feature would be available for both **Add** and **Edit** message.
 
         <img src="../images/prompt-editor-select-channel.png" alt="Select channel" title="Select channel" style="border:1px solid gray;zoom:70%;">
 
-    4. You can use one of of the several available templates to create/edit your message:
+    5. You can use one of of the several available templates to create/edit your message:
         * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
         * [**Buttons**](#button-prompts) (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task.
         * [**Quick Reply**](#quick-reply-template) (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
