@@ -207,6 +207,16 @@ This detects the number of escalations raised to the Supervisor by a customer.
 
 #### Filter by Behavior
 
+##### Metric Name
+
+This filter allows you to view interactions based on specific evaluation metrics, with options to filter by **Pass** or **Fail** using radio buttons. You can select an evaluation metric from a drop-down list to apply the filter.    
+<img src="../conversation-mining/images/metric-name.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
+
+##### Metric Qualification
+
+The selected evaluation metric displays as a tag below the input field, which you can clear by clicking a cross button. When accessing the conversation mining page from the adherence heatmap, the filter selections are applied automatically. If queues are selected, only evaluation metrics related to those queues' forms are displayed. The filter retrieves interactions where the selected metric applies and is part of the relevant queue’s form. It allows you to view interactions where metrics have either failed or adhered, with the following qualifications displayed as radio buttons.  
+<img src="../conversation-mining/images/metric-qualification.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
+
 ##### Empathy Score
 
 This measures the level of understanding and compassion shown by the agent towards the customer situation. Provides the extent of empathy like frustration or displeasure that a customer has shown (negative sentiment). A higher score indicates a more empathetic interaction.  
