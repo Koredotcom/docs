@@ -1071,6 +1071,7 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
 * **ambiguousEntityValues**: This key contains values when the user input for a multi-item entity is ambiguous. Using this, you can check if any ambiguous values were identified and construct the flow to resolve the ambiguity. This key is reset if the entity is re-prompted during the dialog. The values are an array of JSON objects, each object containing title, value, and synonym.
 * **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
+
 <img src="../images/entity-types-list-of-item-enum.png" alt=" List of items (enumerated) " title="List of items (enumerated) " style="border:1px solid gray;zoom:70%;">
 
 !!! note ""
@@ -1097,7 +1098,9 @@ Display a list of values to the end user. To define the lookup list,
 
 This feature is not fully supported in all languages. [Click here for details](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}.
 
-**Static List**: Use Static List to define the entity values as one of the following list types:
+#### Static List
+
+Use Static List to define the entity values as one of the following list types:
 
 * **List of Values** tab – Enter the **Display Name**, **Value**, and **Synonyms** for the key.
 * **JSON Preview** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
