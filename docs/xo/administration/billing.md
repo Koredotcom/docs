@@ -54,7 +54,7 @@ Admin users can access detailed usage information for Bots and Apps directly in 
 <img src="../images/admin-console-billing-graph.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
 
 
-<img src="..images/admin-console-billing-table.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/admin-console-billing-table.png" alt="admin-console-billing-table" title="admin-console-billing-table" style="border: 1px solid gray;zoom:70%;"/>
 
 
 The dashboard provides a consolidated view of cumulative billing data, including Billing sessions, voice sessions, and agent counts, across all apps within the workspace. 
