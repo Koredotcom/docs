@@ -68,6 +68,45 @@ Key benefits:
 
 SMS Campaigns now support the Advanced Message format in addition to the Simple message format. With the Advanced message format, businesses can establish two-way communication with their end customers. Within the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required. [Learn more](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
 
+## Kore Voice Gateway
+
+### External Agent Transcription Control using SIP INVITE
+
+The new `agentUtils.setExternalAgentTranscribe` utility method helps manage transcription settings for external agents integrated via SIP INVITE. It allows transcription enablement or disablement during active calls on the Agent Assist platform.
+
+Utility details:
+
+* Function: `agentUtils.setExternalAgentTranscribe(param)`
+* Supported in:
+    * Experience Flow script nodes
+    * Bot Builder Dialog Flows
+    * Kore Voice Gateway integrations
+
+Key usage:
+
+* Enable/disable transcription during live calls.
+* Adjust settings based on agent requirements.
+* Configure language and provider preferences.
+* Control transcription in temporary scenarios.
+
+### Handling Concurrent Outbound Calls
+
+This update allows agents to make concurrent outbound calls to the same customer seamlessly while maintaining separate conversation contexts for each agent.
+
+Each call remains independent with the following:
+
+* Isolated conversation records.
+* Separate call controls.
+* Independent agent sessions.
+
+### Call Trace Enhancement
+
+This update extends the display of SIP stack traces to all Kore Voice Gateway calls regardless of automation status or agent transfers. This improved visibility helps administrators monitor connections, diagnose issues, and troubleshoot more effectively.
+
+### Text-to-Speech Customization
+
+New voice controls for PlayHT, Eleven Labs, and Deepgram enable users to customize parameters like speaking speed, pitch, and emotion to improve overall quality of speech output. Bot developers using AWS Polly, Microsoft Azure, and Google Cloud can use SSML tags for advanced customization.
+
 ### Analytics
 
 #### Queue Tracking Improvement
