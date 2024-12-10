@@ -22,8 +22,9 @@ This outlines how adherence metrics are displayed and calculated for a selected 
     This is calculated by comparing:  
     <img src="../adher-heatmap/images/adher-calc.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-    * The % adherence for each tile (box) in the heatmap is calculated based on evaluation form, agent, and date range.
-* **Applicability of metrics** 
+    The % adherence for each tile (box) in the heatmap is calculated based on evaluation form, agent, and date range. 
+
+* **Applicability of Metrics** 
 
     This depends on the form of the queue selected.
 
@@ -42,9 +43,11 @@ This outlines how adherence metrics are displayed and calculated for a selected 
 
     This displays the **% adherence** and the **number of calls adhered** to for each date range selected.
 
-    * If there are no interactions for a selected date range and filter, it does not display any interactions.
-    * In the Weekly view, hovering over the tile shows the date range used for the adherence calculation, along with the percentage and the number of interactions.  
-        <img src="../adher-heatmap/images/tile-display.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
+    * If there are no interactions for a selected date range and filter, it does not display any interactions.  
+        <img src="../adher-heatmap/images/no-interaction.png" alt="No Interaction" title="No Interaction" style="border: 1px solid gray; zoom:100%;">
+
+    * In the Weekly view, hovering over the tile shows the date range used for the adherence calculation, along with the adherence percentage, interactions adhered, and the total number of interactions. Weekly view is displayed when you select more than 7 days from the Calendar.  
+        <img src="../adher-heatmap/images/weekly-view.png" alt="Weekly View" title="Weekly View" style="border: 1px solid gray; zoom:100%;">
 
 ## Filters
 
@@ -59,8 +62,14 @@ You can filter by a specific date range. The default range, based on queue selec
 
 You can select from three views (Daily, Weekly, and a Custom range):
 
-* **Daily View**: When the selected date range is 1-14 days, and each tile shows adherence for a specific day, with a horizontal scroll option if the date range is more than 7 days.
-* **Weekly View**: When the selected range is more than 14 days, and each tile shows adherence for the full week, with similar scrolling and display logic as the daily view.
+* **Daily View**: When the selected date range is 1-14 days, and each tile shows adherence for a specific day, with a horizontal scroll option if the date range is more than 7 days.  
+<img src="../adher-heatmap/images/daily-view.png" alt="Daily View" title="Daily View" style="border: 1px solid gray; zoom:100%;">
+
+* **Weekly View**: When the selected range is more than 14 days, and each tile shows adherence for the full week, with similar scrolling and display logic as the daily view.  
+<img src="./adher-heatmap/images/weekly-view.png" alt="Weekly View" title="Weekly View" style="border: 1px solid gray; zoom:100%;">
+
+* **Custom Range View**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.  
+<img src="./adher-heatmap/images/custom-range-view.png" alt="Custom Range View" title="Custom Range View" style="border: 1px solid gray; zoom:100%;">
 
 **Evaluation Form**
 

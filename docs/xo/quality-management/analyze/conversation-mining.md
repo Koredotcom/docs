@@ -158,9 +158,10 @@ This provides an operational view of areas of interest where there is greater po
         <img src="../conversation-mining/images/number-of-transfers.png" alt="No. of Transfers" title="No. of Transfers" style="border: 1px solid gray; zoom:80%;">
 
 7. Click **Apply** to save the filter settings entered which will be stored as **Unsaved Filter** in the Dashboard.
-    * If you do not intend to use this filter to assign an audit allocation, you can apply without saving; however, to assign audit allocation based on filters, you have to save and name it accordingly to reference it during audit allocation.  
     <img src="../conversation-mining/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:80%;">
 
+    If you do not intend to use this filter to assign an audit allocation, you can apply it without saving; however, you can assign audit allocation based on filters, and can save and name it accordingly for reference during audit allocation.  
+  
 8. Click **Save & Apply** to save the new filter with a new name.  
     <img src="../conversation-mining/images/conversation-mining-interaction-save-apply.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
 
