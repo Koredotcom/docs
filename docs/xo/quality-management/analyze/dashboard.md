@@ -77,9 +77,9 @@ You can view both automated interactions and manual audits scores across the fol
 * **Monthly**: Displays score for the last 7 months.   
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
-# **Adherence Heatmap**
+## Adherence Heat Map
 
-The QA Dashboard feature displays a condensed heatmap of adherence data for the last 7 days,  with a default form selection, and no clickthrough functionality. You can select the evaluation form from the drop-down, and set it as the default queue for viewing adherence across the heatmap and the QA dashboard. In this, the hover tooltip displays the metrics for selected agents of the corresponding date, including % adherence, interaction count, and total interactions.  
+The QA Dashboard feature displays a condensed heatmap of adherence data for the last 7 days,  with a default form selection, and no click-through functionality. You can select the evaluation form from the drop-down, and set it as the default queue for viewing adherence across the heatmap and the QA dashboard. In this, the hover tooltip displays the metrics for selected agents of the corresponding date, including % adherence, interaction count, and total interactions.  
 <img src="../dashboard/images/dashboard-adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 ## Fail Statistics
