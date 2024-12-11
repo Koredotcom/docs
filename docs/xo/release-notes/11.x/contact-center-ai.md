@@ -60,7 +60,8 @@ Key Updates
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
 
-### Kore Voice Gateway
+### Kore Voice Gateway 
+### (v0.9.3-rc4)
 
 #### Wait Time for IP Whitelisting While Configuring SIP Transfer
 
@@ -114,7 +115,7 @@ On the **Dashboard** > **Interactions** tab, supervisors now have two options to
 * Download as a single file,
 * Download as separate files.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
 #### Enhanced Diagnostics for Voice Interactions
 
