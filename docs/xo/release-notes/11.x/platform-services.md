@@ -32,7 +32,8 @@ The XO Platform's Guardrail framework now supports the Answer Generation feature
 
 #### Rephrase User Query feature is now extended to Search AI
 
-The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model. 
+The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model.  
+
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-user-query)
 
 ### Bot Admin Console
@@ -43,7 +44,7 @@ The Bot Admin Console now includes a Billing Session Widget, providing admins wi
 
 * Billing Sessions: Total number of completed sessions.
 * Voice Sessions: The count of Voice Sessions in a conversation consumed in an App; calculated as every 15 minutes of interaction with the Virtual Assistant or an Agent.
-* Agent Count: The count of agents subscribed to the plan for each app.
+* Agent Count: The count of agents subscribed to the plan for each app.  
 [Learn more :octicons-arrow-right-24:](../../administration/billing.md#usage)
 
 ### App Settings
