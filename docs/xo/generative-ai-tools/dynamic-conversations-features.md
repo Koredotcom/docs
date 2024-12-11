@@ -159,7 +159,7 @@ The following table displays the features and the supported models.
     |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
     |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
-    |Custom LLM|✅|✅|❌|✅|❌|❌|
+    |Custom LLM|✅|✅|❌|✅|❌|✅|
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
@@ -334,7 +334,9 @@ This feature helps create vector embeddings for all the ingested data in the Sea
 
 ### Zero-shot ML Model
 
-This feature uses a Azure OpenAI or OpenAI LLM models to help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
+This feature help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
+
+For the Zero-shot model feature, the XO Platform offers two template prompts for every supported model of Open AI and Azure Open AI. The template prompts are “Default” and “Zero-Shot-V2”. The “Zero-Shot-V2” is the advanced version of the “Default” template and is selected by default as you select the model. You can import both templates and create a custom prompt using them.
 
 !!! note
 
@@ -342,7 +344,7 @@ This feature uses a Azure OpenAI or OpenAI LLM models to help the ML Engine iden
 
 **Usage**
 
-Before performing utterance testing, the user selects the **Zero-shot Model with OpenAI** Network Type. During utterance testing, the user provides a more descriptive input with a subject, object, and nouns. Once the test runs, the system identifies the most logical intent as the definitive match by comparing the following:
+Before performing utterance testing, the user selects the **Zero-shot Model** Network Type. During utterance testing, the user provides a more descriptive input with a subject, object, and nouns. Once the test runs, the system identifies the most logical intent as the definitive match by comparing the following:
 
 
 
@@ -352,6 +354,7 @@ Before performing utterance testing, the user selects the **Zero-shot Model with
 The identified intent is then displayed as the matched intent.
 
 If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
+
 
 
 
