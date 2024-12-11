@@ -40,8 +40,7 @@ Key Updates
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
     * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
-* Improved User Interface:
-* Clear organization of Kore and custom domain settings.
+* Improved User Interface: Clear organization of Kore and custom domain settings.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
