@@ -60,7 +60,8 @@ Key Updates
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
 
-### Kore Voice Gateway
+### Kore Voice Gateway 
+### (v0.9.3-rc4)
 
 #### Wait Time for IP Whitelisting While Configuring SIP Transfer
 
