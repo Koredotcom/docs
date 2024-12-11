@@ -1,0 +1,149 @@
+site_name: Kore ai Docs
+site_author: Kore ai Content Experience Team
+docs_dir: 'docs/eva/'
+site_dir: 'site/ai-for-work/'
+repo_name: Koredotcom/docs
+repo_url: https://github.com/Koredotcom/docs
+extra_css:
+    - stylesheets/extra_kore.css
+theme:
+  favicon: images/Kore_Black.svg
+  name: material
+  custom_dir: overrides.en.eva
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
+plugins:
+  - search:
+      lang: tr
+  - glightbox   
+extra:
+  version:
+    provider: mike
+  generator: false
+  analytics:
+    provider: google
+    property: G-560BYJFH0P
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
+            
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this Page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: |
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+nav:
+  - Home : home.md
+  - Getting Started: 
+    - AI for Work Overview: getting-started/introduction.md   
+    - Accessing AI for Work: getting-started/sign-up-sign-in.md
+    - Using AI for Work Assistant: getting-started/how-to-use.md
+  - Pre-built Solutions:
+    - Overview: pre-built-solution/overview.md
+  - Pre-built Agents:
+    - Overview: ai-agents/overview.md   
+    - Bot Agent: ai-agents/bot-agent/bot-agent.md
+    - GPT Agent: ai-agents/gpt-agent/gpt-agents.md
+    - GALE Agent: ai-agents/gale-agent/gale-agents.md
+  - Custom Agents:
+    - Default RAG: ai-search/default-rag/default-rag.md
+    - RAG Agent: ai-search/rag-agent/rag-agent.md
+    - API Agent: ai-search/api-agents.md
+  - Analytics: 
+    - Dashboard: dashboard/dashboard.md
+  - Administration:
+    - Overview: admin-overview.md
+    - Assist Configuration:
+      - LLM Configuration: assistant-configuration/llm-configuration.md
+      - Business Rules: assistant-configuration/business-rules.md
+      - Email Template: assistant-configuration/email-template.md
+      - Rate Limit: assistant-configuration/rate-limit.md
+    - User Management:
+      - User Enrollments: user-management/user-enrollments.md
+      - Add Users: user-management/managing your users.md
+      - Manage Groups: user-management/managing-your-groups.md
+    - Security: 
+      - SSO: security/sso.md
+      - IP Restriction: security/ip-restriction.md
+      - Domain Management: security/domain-management.md
+      - Kore Connector: security/kore-connector.md
+      - Service Accounts: security/service-accounts.md
+
+
+      

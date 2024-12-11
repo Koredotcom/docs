@@ -6,6 +6,7 @@ hide:
 
 Search AI provides out-of-the-box support for ingesting data from a range of third-party repositories. If you want to use a repository not listed in the table below, please [contact us](https://kore.ai/contact-us/).
 
+
 |**No.**| **Name**     | **Type of Repository** | **Supported Content**                                                          | **Content Filtering Support** | **RACL Support** |
 |---|-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------|------------------|
 |1.|[Aha!]() <br /> Aha is a product management platform used to define strategy, prioritize features, and manage roadmaps.  | Cloud                  |  Ideas, Features                                                                                                                     | No                    | Yes               |
