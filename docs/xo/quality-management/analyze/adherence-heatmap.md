@@ -30,6 +30,7 @@ This outlines how adherence metrics are displayed and calculated for a selected 
 
     * For static metrics (by question), the metric applies to all terminated or failed interactions in the respective queue (form).
     * For dynamic metrics (by question), the metric applies only when the relevant trigger is detected; if the trigger is missing, the metric is not applicable.
+
 * **Color Coding & Display** 
 
     This displays the heatmap tile (box) color based on the calculated adherence %.
@@ -92,8 +93,13 @@ This describes the functionality of a heatmap interface for tracking agent adher
 <img src="../adher-heatmap/images/click-through.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;"> 
 
 The clickable date range tiles (each box is a metric) display the interactions for the selected agents, showing the following metrics for each date:  
+
 * **Adherence Display**: Adherence percentages are shown within colored boxes, with color matching the heatmap’s color scheme. You can sort the adherence column by percentage, defaulting to the least adherence first. 
-* **Heatmap Interaction**: Click a date range tile (box) in the heatmap to open a window that displays agent-wise adherence for the selected metric, ordered from least to most adherence. This displays the count of adherence interactions.
+<img src="../adher-heatmap/images/adherence-percentage-column-sorting.png" alt="Adherence Display" title="Adherence Display" style="border: 1px solid gray; zoom:100%;"> 
+
+* **Heatmap Interaction**: Click a date range tile (box) in the heatmap to open a window that displays agent-wise adherence percentage for the selected metric, ordered from least to most adherence. This displays the percentage count of adherence interactions.
+<img src="../adher-heatmap/images/adherence-percentage-count.png" alt="Heatmap Interaction" title="Heatmap Interaction" style="border: 1px solid gray; zoom:100%;"> 
+
 * **View Interactions**: Click the **View Interactions** button, which directs you to the [Conversation Mining](https://docs.google.com/document/u/0/d/1Ushu0NJ27_Fml-1Iqgib-uVccol8jY0ZV4xdvJCnmDk/edit) page, where you can view all the agents' failed interactions. The applied filters (as **Unsaved**) include the evaluation metric name or metric used, queues, and metric qualification or the number of failed interactions (pass/fail).  
 <img src="../adher-heatmap/images/view-interactions-filters.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
