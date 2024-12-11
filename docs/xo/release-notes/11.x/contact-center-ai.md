@@ -35,11 +35,11 @@ Key updates:
 * Kore Domain Email Management:
     * Configure multiple Kore domain email addresses.
     * Easy addition of new addresses via the “Add Email Address” button.
-    * Attach experience flows to specific email addresses.
+    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#attach-a-flow-to-a-kore-domain-email-address)
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses.
+    * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
 * Improved User Interface:
 * Clear organization of Kore and custom domain settings.
 
