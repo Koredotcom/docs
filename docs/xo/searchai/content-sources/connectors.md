@@ -9,7 +9,7 @@ Search AI provides in-built connectors to enable crawling specific third-party c
 
 Connectors enable the application to establish a connection with the third-party application. After the connection is established and authentication is complete, the data from the third-party application is ingested, indexed, and ready to answer in response to search queries. The access privileges of the content are maintained as per the privileges assigned to the user in the third-party repository. This implies that only the files accessible to the user can appear in the answers. During each synchronization cycle of the connector, Search AI only retrieves newly added or modified data from the application, determined by the timestamp of changes. If data has previously been indexed and remains unchanged, it is not retrieved again. 
 
-Currently, Search AI provides a connector for ServiceNow. The list will continue to grow with future releases and will provide out-of-the-box support for most of the commonly used enterprise applications. For any specific integration requirements, please [contact us](https://kore.ai/contact-us/). 
+Refer to the [Connector Directory](connectors/connector-directory.md) for the complete list of applications supported via connectors. For any specific integration requirements, please [contact us](https://kore.ai/contact-us/). 
 
 ## Authorization Support for Connectors
 
@@ -54,7 +54,7 @@ Currently, SearchAI supports the following grant types:
 To configure a new connector, go to the **Connectors** page under **Content**. For a new connector, click on the **+Connect** button.
 ![Connector Home](../images/connectors/connector-home.png "connector home")
 
-The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
+The following page shows the list of available connectors. The connectors are categorized according to the type of application. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
 
 ### Enabling RACL 
 
