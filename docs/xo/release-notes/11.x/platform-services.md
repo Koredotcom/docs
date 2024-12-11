@@ -2,6 +2,65 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.8.0 December 11, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### LLM & Generative AI
+
+#### Zero-Shot Enhancements
+
+The Zero-Shot intent detection model has been significantly enhanced to improve contextual understanding and intent-matching accuracy, addressing challenges related to large intent sets and false positives. 
+
+Key Updates
+
+* Expanded Input: The enhanced model now incorporates intent descriptions, conversation history, list of intents, and user utterances for more accurate intent recognition.
+* New Prompt Structure: A new prompt, "Zero-Shot-V2," is available for XO v10 and v11, enabling platform users to input additional contextual components.
+* System Prompts: Pre-built system prompts are provided for out-of-the-box integrations (Azure OpenAI and OpenAI), allowing the users to leverage the enhanced Zero-Shot Model without crafting custom prompts.
+* Custom Prompts: Platform users can create custom prompts linked to system models for Zero-Shot, offering full control over prompt design to tailor them to specific features, contexts, and user needs.
+* Custom LLM Support: The Zero-Shot ML model can now be used with the Bring Your Own Model (BYOM), enabling platform users to define prompts and leverage the enhanced capabilities with their custom LLMs.
+
+These enhancements significantly improve the Zero-Shot model's ability to accurately identify intents, particularly in complex or nuanced conversational scenarios, while maintaining compatibility with existing configurations.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#zero-shot-ml-model)
+
+#### Guardrails Framework Extention to Answer Generation
+
+The XO Platform's Guardrail framework now supports the Answer Generation feature. Guardrails enable responsible and ethical AI practices by allowing platform users to easily enable/disable rules and configure settings for different features using LLMs.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
+
+#### Rephrase User Query feature is now extended to Search AI
+
+The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model.  
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-user-query)
+
+### Bot Admin Console
+
+#### Consolidated Billing Session Widget
+
+The Bot Admin Console now includes a Billing Session Widget, providing admins with a consolidated view of key billing metrics across all apps in their workspace. This graphical widget displays:
+
+* Billing Sessions: Total number of completed sessions.
+* Voice Sessions: The count of Voice Sessions in a conversation consumed in an App; calculated as every 15 minutes of interaction with the Virtual Assistant or an Agent.
+* Agent Count: The count of agents subscribed to the plan for each app.  
+[Learn more :octicons-arrow-right-24:](../../administration/billing.md#usage)
+
+### App Settings
+
+#### Change Log Improvements: Module Field and Detailed Views
+
+The Change Logs feature has been updated to provide better context and more detailed information about configuration changes made within XO 11.
+
+Key Improvements
+
+* Module Field: Each log entry has a new "Module" field indicating which XO 11 module the change originated from. Possible module values include Automation AI and Global (for changes related to Settings, User Management, Deployment, Billing, Experience Flows, Channels, and GenAI Configs).
+* Detailed Views: Log entries now include a "Details" link whenever additional information is available. The link opens a side panel displaying a JSON view of the full change details. It helps access the complete technical information for each change without cluttering the main log view.  
+[Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
+
+<hr>
+
 ## v11.7.1 November 18, 2024
 
 <u> Patch Release </u>

@@ -417,10 +417,11 @@ While interacting with a customer, if an agent needs to seek external consultati
     1. **Mute** – Mute the conversation.
     2. **Hold** – Place the external consult call on hold.
     3. **Merge** – Merge the external call with the existing inbound call (conference).
-    4. **Forward** – Forward the call to another agent.
-    5. **Swap** – Swap between the customer and the external call.
-    6. **End** – End the external consult call.  
-    <img src="../images/consult-call-options.png" alt="Consult Call Options" title="Consult call Options" style="border: 1px solid gray; zoom:60%;">
+    4. **Keypad** –  To send DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
+    5. **Forward** – Forward the call to another agent.
+    6. **End** – End the external consult call.
+    7. **Swap** (Top Right Corner)– Swap between the customer and the external call.  
+    <img src="../images/consult-call-option.png" alt="Consult Call Options" title="Consult call Options" style="border: 1px solid gray; zoom:60%;">
 
     The Call History tab contains records of the outbound calls.  
         <img src="../images/call-history-tab.png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
@@ -787,6 +788,18 @@ An agent can transfer the call to an external contact during a voice interaction
 <img src="../images/end-interaction-window.png" alt="End Interaction pop-up" title="End Interaction pop-up" style="border: 1px solid gray; zoom:60%;">
 
     Clicking **_Yes_** ends the session and moves the interaction to _After Call Work_.
+
+### Timer After Caller Disconnects a Voice Call
+
+When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#auto-logout--auto-close-conversation).
+
+**Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
+<img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  
+
+**Timer when the caller disconnects during a conference call**: A depleting timer is displayed on the live interaction pane, with options to close or rejoin the conference call.  
+<img src="../images/end-conference-call.png" alt="End Conference Call Button" title="End Conference Call Button" style="border: 1px solid gray; zoom:80%;">  
+
+The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
 
 ### After Call Work (ACW)
 
