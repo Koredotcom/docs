@@ -219,16 +219,16 @@ Note that the customer churn is calculated once per interaction. Customer churn 
 ##### Escalation
 This detects the number of escalations raised to the Supervisor by a customer.
 
-#### Filter by Behavior
+#### Filter by Behaviour
 
 * **Metric Name**
 
-This filter allows you to view interactions based on specific evaluation metrics, with options to filter by **Pass** or **Fail** using radio buttons. You can select an evaluation metric from a drop-down list to apply the filter.    
+This filter allows you to view interactions based on a specific evaluation metric, which the user can filter by selecting Pass or Fail options. The selected metric appears as a tag below the input field, which you can remove by clicking the cross button to hide the Metric Qualification field. When you access the Conversation Mining page through the Adherence Heatmap, the filter settings are automatically applied.  
 <img src="../conversation-mining/images/metric-name.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
 **Metric Qualification** 
 
-The selected evaluation metric displays as a tag below the input field, which you can clear by clicking a cross button. When accessing the conversation mining page from the adherence heatmap, the filter selections are applied automatically. If queues are selected, only evaluation metrics related to those queues' forms are displayed. The filter retrieves interactions where the selected metric applies and is part of the relevant queue’s form. It allows you to view interactions where metrics have either failed or adhered, with the following qualifications displayed as radio buttons.  
+This filter shows the Pass or Fail options based on any queues selected in the Metric Name filter. Only evaluation metrics associated with forms in those selected queues get displayed. The filter retrieves interactions where the selected metric is relevant and part of the corresponding queue's form.   
 <img src="../conversation-mining/images/metric-qualification.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
 **Empathy Score**

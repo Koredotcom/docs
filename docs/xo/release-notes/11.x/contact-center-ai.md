@@ -60,52 +60,6 @@ Key Updates
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
 
-### Kore Voice Gateway 
-### (v0.9.3-rc4)
-
-#### Wait Time for IP Whitelisting While Configuring SIP Transfer
-
-Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
-
-#### Session and Node Level Call Control Parameters
-
-Developers can now apply Call Control Parameters at the **Session** or **Node** level, offering more flexibility in managing call behavior.
-
-* **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
-* **Node-Level Parameters**: Add the prefix “`node."` to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
-* **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
-
-#### SIP REFER Handling and Transcript Enhancements
-
-When an external system sends a SIP REFER to Contact Center AI:
-
-* **Matching Numbers**: If the referred number matches a configured experience flow, Contact Center AI will trigger the corresponding flow.
-
-* **Non-Matching Numbers**: Calls will be returned to the source (default behavior).
-
-The Transcripts now show key conversation stages, including:
-
-* User transferred to Agent (When the Automation transfers the voice call to Agent)
-* User transferred to Automation (When the Agent transfers the voice call back to Automation)
-
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
-
-#### Mean Opinion Score (MOS) Display in Call Controls
-
-The Mean Opinion Score (MOS), indicating signal connectivity strength, is now displayed as a bar chart within the call controls widget.
-
-<img src="../images/mos-connection.png" alt="Mean Opinion Score" title="Mean Opinion Score" style="border: 1px solid gray; zoom:80%;">
-
-Color Coding:
-
-* 4-5 (Excellent): Green
-* 3-4 (Moderate): Orange
-* 2-3 (Poor): Orange
-* 1-2 (Very Poor): Red
-
-Hovering over the bars displays tooltips providing details on network connection status.
-
 ### Analytics
 
 #### Enhanced Call Recording Download
@@ -169,6 +123,51 @@ Each tracked detail includes the following:
 * Detailed Event Description
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Wait Time for IP Whitelisting While Configuring SIP Transfer
+
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
+
+#### Session and Node Level Call Control Parameters
+
+Developers can now apply Call Control Parameters at the **Session** or **Node** level, offering more flexibility in managing call behavior.
+
+* **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
+* **Node-Level Parameters**: Add the prefix “`node."` to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
+* **Default Behavior**: Parameters without a prefix are considered session-level by default.
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
+
+#### SIP REFER Handling and Transcript Enhancements
+
+When an external system sends a SIP REFER to Contact Center AI:
+
+* **Matching Numbers**: If the referred number matches a configured experience flow, Contact Center AI will trigger the corresponding flow.
+
+* **Non-Matching Numbers**: Calls will be returned to the source (default behavior).
+
+The Transcripts now show key conversation stages, including:
+
+* User transferred to Agent (When the Automation transfers the voice call to Agent)
+* User transferred to Automation (When the Agent transfers the voice call back to Automation)
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+#### Mean Opinion Score (MOS) Display in Call Controls
+
+The Mean Opinion Score (MOS), indicating signal connectivity strength, is now displayed as a bar chart within the call controls widget.
+
+<img src="../images/mos-connection.png" alt="Mean Opinion Score" title="Mean Opinion Score" style="border: 1px solid gray; zoom:80%;">
+
+Color Coding:
+
+* 4-5 (Excellent): Green
+* 3-4 (Moderate): Orange
+* 2-3 (Poor): Orange
+* 1-2 (Very Poor): Red
+
+Hovering over the bars displays tooltips providing details on network connection status.
 
 <hr>
 
