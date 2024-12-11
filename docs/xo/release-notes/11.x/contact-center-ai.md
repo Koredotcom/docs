@@ -124,8 +124,7 @@ Each tracked detail includes the following:
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
 
-### Kore Voice Gateway 
-### (v0.9.3-rc4)
+### Kore Voice Gateway (v0.9.3-rc4)
 
 #### Wait Time for IP Whitelisting While Configuring SIP Transfer
 
