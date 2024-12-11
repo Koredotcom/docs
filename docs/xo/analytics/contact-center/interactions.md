@@ -84,17 +84,22 @@ How it works:
 4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
 <img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
 
-## Export Conversation Data/Transcripts
+## Export Conversation Data, Transcripts, and Events
 
-The conversation data/transcripts can be exported as a .csv file and downloaded to the local system from the dashboard.
+The conversation data, transcripts, and events can be exported as a .csv file and downloaded to the local system from the dashboard.
 
 Steps to export conversation data/transcripts:
 
 1. Select the conversations and click **Export**.  
-<img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Export Conversation Data** or **Export Transcripts** as required.  
-<img src="../images/export-options.png" alt="Export Options" title="Export Options" style="border: 1px solid gray; zoom:80%;">
+2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.  
+    <img src="../images/export-fields.png" alt="Export Options" title="Export Options" style="border: 1px solid gray; zoom:80%;">  
+
+    or
+
+    Click **Download Recording** or **Download Transcript**.  
+    <img src="../images/download-options.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! Notes
 
@@ -102,6 +107,40 @@ Steps to export conversation data/transcripts:
         * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
         * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
 3. A status message is displayed at the start of the export. On completion, the file is downloaded.
+
+Steps to Preview and Download Events:
+
+1. Select the conversations, click **Export**, or click the Ellipsis (**⋮**) icon under Actions.  
+    <img src="../images/ellipsis-button-event.png" alt="Ellipsis Button" title="Ellipsis Button" style="border: 1px solid gray; zoom:80%;">
+
+2. Click **Preview Events**.  
+    <img src="../images/preview-events.png" alt="Preview Events" title="Preview Events" style="border: 1px solid gray; zoom:80%;">
+
+3. The preview is generated. Click **Download Events**.
+
+    !!! Notes
+
+        * The Download Events option will be unavailable for conversations over 30 days old.
+        * Events are recorded periodically, so the exported document may not always reflect the entire event history. For a comprehensive record, it is recommended to download the events once the conversation has ended.
+
+    <img src="../images/preview-events-page.png" alt="Preview Events Page" title="Preview Events Page" style="border: 1px solid gray; zoom:80%;">
+
+4. A confirmation is displayed when the event is exported.  
+    <img src="../images/export-completed.png" alt="Export Completed" title="Export Completed" style="border: 1px solid gray; zoom:80%;">  
+
+    The following events and their timestamps are exported for chat and voice conversations.  
+        1. Routing Initiation  
+        2. Conversation Acceptance  
+        3. Conversation Rejection  
+        4. Conversation Transfer  
+        5. Transfer Failures  
+        6. Agent join  
+        7. Agent left  
+        8. Agent Consultation  
+        9. Skill Change  
+        10. Disposition Updates  
+        11. After-Call Work (ACW)  
+        12. Conversation Closure  
 
 ## Filters
 
@@ -216,7 +255,13 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 **TRANSCRIPT**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
-<img src="../images/transcript-tab.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/transcript-tab.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
+
+The transcripts tab also shows the call transfer stages:
+
+* **User transferred to Agent** - When the Automation transfers the voice call to Agent.
+* **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
+<img src="../images/transfer-stages.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
 
 **DETAILS**: This tab shows the following details:
 
@@ -255,37 +300,78 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 **Call Conversation ID**: The conversation ID (for voice calls)  
 **Agent Conversation ID**: The agent conversation ID.  
 **User ID**: The agent’s user ID.  
-**Campaign Instance ID**: The campaign instance ID (for campaigns).  
-<img src="../images/identifiers-tab.png" alt="Identifiers Tab" title="Identifiers Tab" style="border: 1px solid gray; zoom:60%;">
+**Campaign Instance ID**: The campaign instance ID (for campaigns).
 
-## Call Recording
+Click the **Copy All** button to copy all the identifier details and start and end date timestamps (from the details tab).  
+<img src="../images/identifiers-uxo.png" alt="Identifiers Tab" title="Identifiers Tab" style="border: 1px solid gray; zoom:80%;">
+
+### Call Recording
 
 The call recording feature available under CHAT HISTORY can play past conversations between a contact and an agent and is recorded by the system. It is helpful for conversational quality analysis and auditing purposes.  The recorded audio stream is available under CHAT HISTORY in the Insights to Logs panel.
 
 The following recording settings can be configured:
 
 * Play Audio: Click the Play icon to play the waveform of the audio.
-<img src="../images/play-audio.png" alt="Play Audio" title="Play Audio" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/play-audio.png" alt="Play Audio" title="Play Audio" style="border: 1px solid gray; zoom:80%;">
 
 * Increase playback speed: To change the playback speed, click the speed selection drop-down, and select the speed. The values ranging from the lowest to highest speeds are as follows:  
-<img src="../images/increase-playback-speed.png" alt="Increase Playback Speed" title="Increase Playback Speed" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/increase-playback-speed.png" alt="Increase Playback Speed" title="Increase Playback Speed" style="border: 1px solid gray; zoom:80%;">
 
 * Volume: The volume slider can be adjusted to increase or decrease the volume.  
-<img src="../images/volume-slider.png" alt="Volume Slider" title="Volume Slider" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/volume-slider.png" alt="Volume Slider" title="Volume Slider" style="border: 1px solid gray; zoom:80%;">
 
 * Mute: Click the Mute button to mute the audio.  
-<img src="../images/mute-button.png" alt="Mute Button" title="Mute Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/mute-button.png" alt="Mute Button" title="Mute Button" style="border: 1px solid gray; zoom:80%;">
 
 * Rewind Audio: To rewind the audio by 10 seconds, click the Backward button.
 * Forward Audio: To fast forward the audio by 10 seconds, click the Forward button.  
-<img src="../images/forward-audio.png" alt="Forward Audio" title="Forward Audio" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/forward-audio.png" alt="Forward Audio" title="Forward Audio" style="border: 1px solid gray; zoom:80%;">
 
-* Download: Clicking the Download button downloads the audio (.MP3) file.  
-<img src="../images/download.png" alt="Download" title="Download" style="border: 1px solid gray; zoom:80%;">
+* Download: Click the Download button to download the transcript.  
+    <img src="../images/download.png" alt="Download" title="Download" style="border: 1px solid gray; zoom:80%;">  
+
+    You can choose either as a single file or separate files.
+
+    * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+
+        <img src="../images/download-as-single-file.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+
+    * **Download as separate files**: If you choose this option, you can select the files and download them.  
+
+        <img src="../images/download-as-separate-files.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
-<img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! Note
 
-    If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
+        If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
+
+A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-recording-control).  
+<img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">
+
+## Diagnostics
+
+Diagnostics is located at the top right corner of the Insights to Logs.
+
+<img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    This option is available only for voice interactions.
+
+Clicking **Diagnostics** shows the following tabs:
+
+**Flow**:
+
+<img src="../images/flow-tab.png" alt="Flow" title="Flow" style="border: 1px solid gray; zoom:80%;">
+
+**Quality of Service (QoS)**:
+
+<img src="../images/qos-tab.png" alt="QoS" title="QoS" style="border: 1px solid gray; zoom:80%;">
+
+You can export the report in the following formats:
+
+* Export PCAP
+* Export TEXT.  
+    <img src="../images/export-option.png" alt="Export Option" title="Export Option" style="border: 1px solid gray; zoom:80%;">

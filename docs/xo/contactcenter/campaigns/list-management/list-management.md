@@ -84,7 +84,7 @@ hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on
 #### Time Zone
 * The "**Timezone**" field of the CSV is validated against the Calling Hours Timezone.
 * The time zone mentioned against a contact in the CSV is given preference over Calling Hours.
-* When setting up the time zones for an Outbound campaign's contact list or specifying callable times, use the Tz database notation. This notation, also known as tzdata, zoneinfo database, or IANA Time Zone Database, provides a standardized naming convention for time zones across the globe.
+* When setting up the time zones for an Outbound campaign's contact list or specifying contactable timings, use the format mentioned in the Tz database. [Tz Identifiers](./tz-identifiers.md).
 * Each location is identified in the Tz database by its continent or ocean, followed by the largest city in that area. For example,
     * America/Phoenix
     * Asia/Hong_Kong
