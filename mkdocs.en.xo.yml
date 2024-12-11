@@ -392,6 +392,7 @@ nav:
       - Analyze:
         - Dashboard: 
           - Dashboard Overview: quality-management/analyze/dashboard.md
+          - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
           - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
           - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
@@ -405,8 +406,8 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+          - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
+          - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: quality-management/configure/settings.md        
@@ -441,7 +442,13 @@ nav:
     - GenAI Features:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - DialogGPT:
+      - Overview: generative-ai-tools/dialog-gpt.md
+      - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
+      - Upcoming Features: generative-ai-tools/dialog-gpt-upcoming-features.md
+      - DialogGPT FAQs: generative-ai-tools/dialog-gpt-faq.md  
     - Safeguards:
+      - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md

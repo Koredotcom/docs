@@ -347,14 +347,21 @@ Steps to Listen and Whisper Voice Conversations:
 2. Click **Listen & Whisper**.  
 <img src="../images/voice-conversation-agents-tab.png" alt="Listen & Whisper Button" title="Listen & Whisper Button" style="border: 1px solid gray; zoom:70%;">
 
-3. You can listen to the conversation between the customer and the agent. Press and hold the spacebar to whisper to the agent.  
-<img src="../images/listen-conversation.png" alt="Listen Conversation" title="Listen Conversation" style="border: 1px solid gray; zoom:70%;">
+3. You can listen to the conversation between the customer and the agent.  Click the **Whisper to Agent** button.  
+<img src="../images/whisper-to-agent.png" alt="Whisper to Agent" title="Whisper to Agent" style="border: 1px solid gray; zoom:70%;">
 
-4. Release the spacebar to stop whispering to the agent.  
-<img src="../images/release-spacebar.png" alt="Release Spacebar" title="Release Spacebar" style="border: 1px solid gray; zoom:70%;">
+4. A confirmation is displayed that whisper mode is enabled.  
+<img src="../images/whisper-mode-on.png" alt="Whisper Mode ON" title="Whisper Mode ON" style="border: 1px solid gray; zoom:70%;">
 
     When a supervisor whispers, an indication appears at the top of the live interaction, and the transcript is displayed in yellow.  
     <img src="../images/console-whisper-input.png" alt="Console Whisper Input" title="Console Whisper Input" style="border: 1px solid gray; zoom:70%;">
+
+5. Click **Stop Whispering** to end the Listen and Whisper Session.  
+    <img src="../images/stop-whispering.png" alt="Stop Whispering" title="Stop Whispering" style="border: 1px solid gray; zoom:70%;">  
+    When a supervisor stops listening to a conversation, the message Listen session ended is displayed.  
+    <img src="../images/listen-session-ended.png" alt="Listen Session Ended" title="Listen Session Ended" style="border: 1px solid gray; zoom:70%;">  
+    The transcripts are not real-time. Click the **Refresh** icon to refresh the transcript.  
+    <img src="../images/transcripts.png" alt="Transcripts" title="Transcripts" style="border: 1px solid gray; zoom:70%;">
 
 ## Interactions
 

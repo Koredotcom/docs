@@ -3,7 +3,7 @@
 
 The Coaching Monitor feature enables supervisors to track and evaluate the coaching progress of all agents, ensuring coaching effectiveness and facilitating follow-up sessions to assess improvements in assigned attributes. It provides an overview of all coaching assignments assigned by the user and highlights the score trend of the agent attributes that were assigned for coaching, agent score trends, Kore evaluation score, and includes filters that allow supervisors to focus on particular areas of interest. This functionality also allows supervisors to engage in meaningful discussions without needing to examine each agent’s specific attributes in depth.
 
-You can view **Coaching Monitor** by navigating to **Contact Center AI** > **Quality Management** > **Coach** > **Coaching Monitor**.   
+You can view **Coaching Monitor** by navigating to **Contact Center AI** > **Quality AI** > **Coach** > **Coaching Monitor**.   
 <img src="../coaching-monitor/images/coaching-monitor-landing-page.png" alt="Coaching Monitor" title="Coaching Monitor" style="border: 1px solid gray; zoom:80%;">
 
 !!! note

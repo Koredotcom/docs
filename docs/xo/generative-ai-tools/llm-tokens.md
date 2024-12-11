@@ -7,13 +7,13 @@ Free LLM tokens are now allocated to each newly created app, enabling the explor
 
     Free LLM tokens are available only for the apps created in the Standard workspaces/accounts.
 
-These tokens use OpenAI GPT-3.5 model from Azure by Kore.ai's enterprise account, allowing users to experience the capabilities of large language models (LLMs) without the need for their own LLM account initially.
+These tokens use OpenAI GPT-4o model from Azure by Kore.ai's enterprise account, allowing users to experience the capabilities of large language models (LLMs) without the need for their own LLM account initially.
 
 
 ## Key Information
 
 * **Free Tokens**: Use the provided free tokens to explore and experiment with our GenAI features.
-* **OpenAI GPT-3.5 model from Azure using Kore’s Enterprise Account:** All features are powered by our enterprise account, ensuring high performance and reliability.
+* **OpenAI GPT-4o model from Azure using Kore’s Enterprise Account:** All features are powered by our enterprise account, ensuring high performance and reliability.
 * **Transition to Personal LLM Account**: Once your free tokens are exhausted, users must integrate their own LLM (Language Learning Model) account to continue using the GenAI features.
 * **Security Note**: For your security, we advise against uploading any sensitive documents until the users have switched to their own LLM account.
 

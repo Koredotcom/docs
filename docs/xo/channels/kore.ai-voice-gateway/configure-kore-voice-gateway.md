@@ -90,14 +90,14 @@ Under the SIP Transfer tab, you can configure the network IPs and domains, DID n
 
 Steps to configure SIP Transfer:
 
-1. Click **Configure SIP Transfer**.
-<img src="../images/configure-sip-transfer.png" alt="Configure SIP Transfer" title="Configure SIP Transfer" style="border: 1px solid gray; zoom:100%;">
+1. Click **Configure SIP Transfer**.  
+    <img src="../images/configure-sip-transfer.png" alt="Configure SIP Transfer" title="Configure SIP Transfer" style="border: 1px solid gray; zoom:100%;">
 
 2. On the **Transfer from IVR** page, configure the following:
     1. **SIP URI**: This is a pre-configured field.
     2. **Network**: To configure the Network, you can select one of the following:
         1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox.  
-        <img src="../images/sip-transfer-setup.png" alt="SIP Transfer Setup" title="SIP Transfer Setup" style="border: 1px solid gray; zoom:100%;">
+            <img src="../images/sip-transfer-setup.png" alt="SIP Transfer Setup" title="SIP Transfer Setup" style="border: 1px solid gray; zoom:100%;">
 
         2. Under **Domain Name**, provide the following:
             1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone.
@@ -112,7 +112,10 @@ Steps to configure SIP Transfer:
 
     7. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
     8. Click **Save**.  
-    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:100%;">  
+
+        Please wait for upto ten minutes after saving for the IPs to be whitelisted.  
+        <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
     9. The selected information appears on the Channels page.  
         <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:100%;">
@@ -150,7 +153,7 @@ Deleting a SIP number means stopping all services associated with it.
 
 Steps to delete a SIP number:
 
-1. Click the ellipsis (**︙**) and select **Delete**.    
+1. Click the ellipsis (**︙**) and select **Delete**.  
     <img src="../images/delete-sip-number.png" alt="Delete Button SIP" title="Delete Button SIP" style="border: 1px solid gray; zoom:100%;">
 
 2. The following pop-up is displayed. Click **Delete** to confirm your choice.  

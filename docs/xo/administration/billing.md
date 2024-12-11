@@ -28,10 +28,10 @@ You have the option to download the Invoice from the invoice field.
 
     This section is not available for customers under the Enterprise plan.
 
-## Plan & Usage
+## Plan
 
 **Admin** users can view and manage all plan subscriptions for their account and published apps on the **Admin Console**. 
-The Plan & Usage section displays all the Bots in your account, along with their status and balance.
+The Plan section displays all the Bots in your account, along with their status and balance.
 An **information** icon highlights plan changes, such as downgrade notifications and expiring plans.
 Click the **Ellipses** icon to change the Bot Owner.
 
@@ -42,22 +42,34 @@ The **Manage** option displays the current plan based on eligibility and usage d
 
 <img src="../images/billing-img3.png" alt="Plan based eligibility and usage details" title="Plan based eligibility and usage details" style="border: 1px solid gray;zoom:70%;"/>
 
-### Navigating to Plan and Usage		
-
 !!! note
 
-      Only a user with **Admin** privileges can access the Admin Console.		
+    The **Billing** > **Plan and Usage** option does not appear on the Admin Console (left menu) for a shared account user.
 
-To access the **Plan and Usage** feature on the **Admin Console**, follow the steps below:
+## Usage
 
-1. On the Bot Builder, click the **profile** icon in the top right corner.
-2. Click **Go to Admin Console**.  
-    <img src="../images/up(36).png" alt="Admin Console" title="Admin Console" style="border:1px solid gray;zoom:70%;"> 
-    
-3. Login and navigate to **BILLING** > **PLAN & USAGE** on the left menu.  
-    <img src="../images/up(32).png" alt="Plan and Usage - Admin Console" title="Plan and Usage - Admin Console" style="border:1px solid gray;zoom:70%;">
-        
+Admin users can access detailed usage information for Bots and Apps directly in the Admin Console. For administrators managing multiple apps, it offers consolidated billing insights across all apps within a workspace, along with graphical representations of key billing metrics. 
 
-!!! note
 
-      The **Billing** > **Plan and Usage** option does not appear on the Admin Console (left menu) for a shared account user.
+<img src="../images/admin-console-billing-graph.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
+
+
+<img src="../images/admin-console-billing-table.png" alt="admin-console-billing-table" title="admin-console-billing-table" style="border: 1px solid gray;zoom:70%;"/>
+
+
+The dashboard provides a consolidated view of cumulative billing data, including Billing sessions, voice sessions, and agent counts, across all apps within the workspace. 
+
+* Billing Sessions: Total number of completed sessions.
+* Voice Sessions: The count of Voice Sessions in a conversation consumed in an App; calculated as every 15 minutes of interaction with the Virtual Assistant or an Agent.
+* Agent Count: The count of agents subscribed to the plan for each app aggregated by Day/Week/Month.
+
+Users can filter and view billing data for individual apps and refine the data further with date filters. They can select from predefined ranges such as 24 hours, 7 days, or 30 days or set a custom date range. 
+
+Billing metrics are shown using a graph or table, making it easy to understand usage patterns.
+
+Hovering over a data point displays a tooltip with the following details:
+
+* **Date**
+* **Sessions**
+* **Voice Sessions**
+* **Agents**

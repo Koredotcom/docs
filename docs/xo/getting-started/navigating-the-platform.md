@@ -19,7 +19,7 @@ The top menu available on the landing page provides access to the following opti
 3. **Invite Users** – You can invite members to collaborate on the App creation journey.
 4. **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
 5. **Profile** - Access the profile section, which allows you to reach the following features:
-    * **Profile** - View and edit your.
+    * **Profile** - View and edit your profile.
     * **Admin Console** – Access the Admin Console only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Logout**.
 

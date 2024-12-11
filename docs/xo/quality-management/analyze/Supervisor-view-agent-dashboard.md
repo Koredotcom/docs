@@ -6,14 +6,14 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 
 **Approach 1:**
 
-1. Navigate to **Contact Center AI** > **Quality Management** > **Dashboard** > **Agent Leaderboard**. 
+1. Navigate to **Contact Center AI** > **Quality AI** > **Dashboard** > **Agent Leaderboard**. 
 
 2. Click any of the agents from the **Agent Leaderboard** as shown in the following **Overview** screen of the agent-specific dashboard.  
 <img src="../agent-leaderboard/images/agent-leaderboard-dashboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 **Approach 2:**
 
-1. Navigate to **Contact Center AI** > **Quality Management** > **Agent Leaderboard**. The following screen is displayed.  
+1. Navigate to **Contact Center AI** > **Quality AI** > **Agent Leaderboard**. The following screen is displayed.  
 <img src="../agent-leaderboard/images/agent-leaderboard-default.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 2. Click any of the agents from the **Agent Leaderboard** Dashboard. The following **Overview** screen of the agent-specific dashboard is displayed.   

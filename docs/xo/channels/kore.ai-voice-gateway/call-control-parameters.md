@@ -8,6 +8,13 @@ Call control parameters are general-purpose parameters that can modify a call's 
 
 There are two ways to define the Call Control Parameters - Node Level and Channel Level.
 
+You can apply Call Control Parameters at either the Session or Node level, offering more flexibility in managing call behavior.
+
+* **Session-Level Parameters**: Add the prefix `session.` to apply parameters throughout the session (for example, `session.ttsprovider`).
+* **Node-Level Parameters**: Add the prefix node. to apply parameters only at a specific node (for example, `node.ttsprovider`).
+* **Default Behavior**: Parameters without a prefix are considered session-level by default.
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied.
+
 ## Node Level Call Control
 
 The call control section is Available In [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md#ivr-properties)/[Confirmation Node](../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md#ivr-properties) > IVR Properties > Advanced Controls. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar).  
@@ -179,7 +186,7 @@ This is an additional feature present in allowing a boost factor to be specified
 Kore VG
 Key = hints
    </td>
-   <td><code>  Array Of Objects</code>
+   <td> Array Of Objects
    </td>
    <td>:
 Google
@@ -896,7 +903,7 @@ v1  or v2
    <td>deepgramRedact
    </td>
    <td>Object
-{
+<code>{
         "type": "string",
         "enum": [
           "pci",
@@ -904,7 +911,7 @@ v1  or v2
           "true",
           "ssn"
         ]
-      },
+      },</code>
    </td>
    <td>
    </td>
@@ -1306,19 +1313,19 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
    <td colspan="5" >
 <h4><strong>Provider related parameters</strong></h4>
 
-<strong>Speech-to-text and text-to-speech services interface with the user using a selected language (for example, English US, English UK, or German). Text-to-speech services also use a selected voice to speak to the user (for example, female or male)</strong>
-<strong>For Recognizer, Speech-to-text is used, and for synthesizer, Text to Speech</strong>
-<strong>sttProvider => google,microsoft  => Recognizer</strong>
-<strong>ttsProvider => google,microsoft,aws => Synthesizer</strong>
-<strong>JSON example</strong>
-<strong>{</strong>
-<strong>sttProvider : “google”,</strong>
-<strong>sttLangauge:”en-IN”</strong>
-<strong>ttsProvider : “google”</strong>
-<strong>Language : “en-IN”,</strong>
-<strong>voiceName :”‘en-IN-Wavenet-A” </strong>
-<strong> }</strong>
-<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG / smartAssist application</strong><br>
+<strong>Speech-to-text and text-to-speech services interface with the user using a selected language (for example, English US, English UK, or German). Text-to-speech services also use a selected voice to speak to the user (for example, female or male).</strong><br>
+<strong>For Recognizer, Speech-to-text is used, and for synthesizer, Text to Speech</strong><br>
+<strong>sttProvider => google,microsoft  => Recognizer</strong><br>
+<strong>ttsProvider => google,microsoft,aws => Synthesizer</strong><br>
+<strong>JSON example:</strong><br>
+<code>{</code><br>
+<code>sttProvider : “google”,</code><br>
+<code>sttLangauge:”en-IN”</code><br>
+<code>ttsProvider : “google”</code><br>
+<code>Language : “en-IN”,</code><br>
+<code>voiceName :”‘en-IN-Wavenet-A”</code><br>
+<code>}</code><br>
+<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG/SmartAssist application</strong><br>
 <strong>Note: Provider Properties will be Applied at the Session Level</strong>
    </td>
   </tr>
@@ -1385,18 +1392,18 @@ sttLanguage : ‘en-AU’,
    </td>
    <td>ALL
    </td>
-   <td>voiceName is mandatory to text to speech conversion
-Voice name should be correctly aligned to ttsLanguage
-VoiceName is used in TTS only for bot response
+   <td>voiceName is mandatory to text to speech conversion.
+Voice name should be correctly aligned to ttsLanguage.
+VoiceName is used in TTS only for bot response.
    </td>
    <td>voiceName : ‘en
 -AU-NatashaNeural’
-Example- 
-{
+For example - 
+<code>{
 ttsPrrovider : ‘microsoft’,
 sttLanguage : ‘en-AU’,
 voiceName : ‘en-AU-NatashaNeural’
-}
+}</code>
    </td>
   </tr>
   <tr>
@@ -1417,44 +1424,44 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
 <h4><strong>Labels and Fallback Providers</strong></h4>
 
 <strong>Label - Assign/Create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your application to specify which service to use.</strong>
-<strong>How to Configure Label</strong>
-<strong>1) Add a speech service Inside the speech tab. </strong>
-<strong>2) Select a provider and add a label with a unique name.</strong>
-<strong>3) Use the same label in the call control parameter.</strong>
-<strong>4) The NODE at which you use FallBack Call control parameters at the Same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
-<strong>  example</strong>
-<strong>  sttProvider = “google”,</strong>
-<strong>  sttLanguage = “en-US”,</strong>
-<strong>  sttLabel = “google-stt-2”</strong>
-<strong>Examples:</strong>
-<strong>STT</strong>
-<strong>  “sttProvider”: “microsoft”,</strong>
-<strong>  “sttLabel”: “my_azure-US”,</strong>
-<strong>  “sttLanguage: “en-US”</strong>
-<strong> TTS </strong>
-<strong>   “ttsProvider” : “microsoft”,</strong>
-<strong>   “ttsLanguage”: “en-US”,</strong>
-<strong>   “voiceName”: “en-US-AmberNeural”</strong>
-<strong>   “ttsLabel” : “my_azure-US”</strong>
-<strong>FallBack Examples</strong>
-<strong>  “sttProvider” : “microsoft”,</strong>
-<strong>  “sttLabel” : “my_azure-US”,</strong>
-<strong>  “sttLanguage: “en-US”</strong>
-<strong>   “ttsProvider” : “microsoft”,</strong>
-<strong>   “ttsLanguage”: “en-US”,</strong>
-<strong>   “voiceName”: “en-US-AmberNeural”</strong>
-<strong>   “ttsLabel” : “my_azure-US”</strong>
-<strong>  “sttFallbackProvider” : “microsoft”,</strong>
-<strong>   “sttFallbackLanguage: “en-US”,</strong>
-<strong>   “sttFallbackLabel”:”my_azure_Europe”</strong>
-<strong>   “ttsFallbackProvider” : “microsoft”,</strong>
-<strong>   “ttsFallbackLanguage” : “en-US”</strong>
-<strong>   “ttsFallbackLabel” : “my_azure_Europe”</strong>
-<strong>   “ttsFallbackVoiceName”: “en-US-AmberNeural”</strong>
-<strong>Note: The NODE at which you use FallBack Call control parameters, at the same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
+<strong>How to Configure Label</strong><br>
+<strong>(1) Add a speech service Inside the speech tab. </strong><br>
+<strong>(2) Select a provider and add a label with a unique name.</strong><br>
+<strong>(3) Use the same label in the call control parameter.</strong><br>
+<strong>(4) The NODE at which you use FallBack Call control parameters at the Same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong><br>
+<strong>  Examples:</strong><br>
+<strong>  sttProvider = “google”,</strong><br>
+<strong>  sttLanguage = “en-US”,</strong><br>
+<strong>  sttLabel = “google-stt-2”</strong><br>
+<strong>Examples:</strong><br>
+<strong>STT</strong><br>
+<strong>  “sttProvider”: “microsoft”,</strong><br>
+<strong>  “sttLabel”: “my_azure-US”,</strong><br>
+<strong>  “sttLanguage: “en-US”</strong><br>
+<strong> TTS </strong><br>
+<strong>   “ttsProvider” : “microsoft”,</strong><br>
+<strong>   “ttsLanguage”: “en-US”,</strong><br>
+<strong>   “voiceName”: “en-US-AmberNeural”</strong><br>
+<strong>   “ttsLabel” : “my_azure-US”</strong><br>
+<strong>FallBack Examples</strong><br>
+<strong>  “sttProvider” : “microsoft”,</strong><br>
+<strong>  “sttLabel” : “my_azure-US”,</strong><br>
+<strong>  “sttLanguage: “en-US”</strong><br>
+<strong>   “ttsProvider” : “microsoft”,</strong><br>
+<strong>   “ttsLanguage”: “en-US”,</strong><br>
+<strong>   “voiceName”: “en-US-AmberNeural”</strong><br>
+<strong>   “ttsLabel” : “my_azure-US”</strong><br>
+<strong>  “sttFallbackProvider” : “microsoft”,</strong><br>
+<strong>   “sttFallbackLanguage: “en-US”,</strong><br>
+<strong>   “sttFallbackLabel”:”my_azure_Europe”</strong><br>
+<strong>   “ttsFallbackProvider” : “microsoft”,</strong><br>
+<strong>   “ttsFallbackLanguage” : “en-US”</strong><br>
+<strong>   “ttsFallbackLabel” : “my_azure_Europe”</strong><br>
+<strong>   “ttsFallbackVoiceName”: “en-US-AmberNeural”</strong><br>
+<strong>Notes: <br>The NODE at which you use FallBack call control parameters, at the same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
 <strong>The best practice is to keep the same ASR Engine in Fallback with a different Label.</strong>
 <strong>If the current provider fails, Kore VG will pick a fallback provider. Similarly, we can add a Fallback for the TTS Provider.</strong><br>
-<strong>Note: Fallback properties will be applied at the session level.</strong>
+<strong>Fallback properties will be applied at the session level.</strong>
    </td>
   </tr>
   <tr>
@@ -1572,7 +1579,7 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
 Continuous ASR (automatic speech recognition) is a feature that allows speech-to-text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, often have pauses between utterances.<br> 
 <strong>Note: For Only Microsoft </strong>
 Microsoft Azure Introduces one ASR Property that works the same way as Continuous ASR, <strong>AzureSegmentationSilenceTimeout</strong>. Since Silence is detected by ASR Engine Directly Instead of Voice Gateway, detect and merge the response. AzureSegmentationSilenceTimeout is more accurate than continuous ASR. <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-recognize-speech?pivots=programming-language-csharp#change-how-silence-is-handled">Learn more</a>.<br>
-<strong>Note</strong>: Continuous ASR / AzureSegmentationSilenceTimeout is applied at the session level. Throughout the Call, it will be active, and the developer can adjust the value at different nodes based on the requirement.
+<strong>Note</strong>: Continuous ASR/AzureSegmentationSilenceTimeout is applied at the session level. Throughout the Call, it will be active, and the developer can adjust the value at different nodes based on the requirement.
    </td>
   </tr>
   <tr>
@@ -1584,13 +1591,13 @@ Microsoft Azure Introduces one ASR Property that works the same way as Continuou
    </td>
    <td>This is a duration of silence, in seconds, to wait after a transcript is received from the STT vendor before returning the result. If another transcript is received before this timeout elapses, then the transcripts are combined and recognition continues. The combined transcripts are returned once a timeout between utterances exceeds this value
    </td>
-   <td>Ex-5000 for  5 sec
+   <td>For example - 5000 for  5 sec
    </td>
   </tr>
   <tr>
    <td>continuousASRDigits
    </td>
-   <td>Any digit  Ex- *,%,&lt;,#
+   <td>Any digit  For example - *,%,&,#
    </td>
    <td>ALL
    </td>
@@ -1610,7 +1617,7 @@ The Barge-In feature controls Kore VG behavior in scenarios where the user start
   <tr>
    <td>listenDuringPrompt
    </td>
-   <td>Boolean - True or false
+   <td>Boolean - True or False
    </td>
    <td>ALL 
    </td>
@@ -1641,8 +1648,7 @@ Similar to Barge-in.
    </td>
    <td>Press any key to enable DTMF, and kill audio playback if the caller enters DTMF then you can tell your utterance or speech.
    </td>
-   <td>
-   </td>
+
   </tr>
   <tr>
    <td colspan="5" >

@@ -2,6 +2,88 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.8.0 December 11, 2024
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Widget Enhancements
+
+#### **Auto-Scroll for Transcript Tab**
+Agents now have access to the content of the **Transcript** tab. They can scroll vertically (up and down) and horizontally (left and right) to read through the content.  
+<img src="../auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
+
+#### **Enhanced Language Support for Localization**
+The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
+
+* HT - Haitian Creole
+* TL - Tagalog
+* FI - Finnish
+* UK - Ukrainian
+* SV - Swedish
+* CA - Catalan
+* AZ - Azerbaijani
+* DA - Danish
+* MS - Malay
+* MY - Myanmar (Burmese)
+* TH - Thai
+* PT_PT - Portuguese (European)
+
+#### **Clickable Spyglass icon on the Search bar**
+The **Spyglass** icon on the Agent AI widget’s **Search** bar is now clickable. Users can search by pressing the **Enter** key or clicking the **Spyglass** icon.  
+<img src="../spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
+
+#### **Run Dialog Task Enhancement**
+In the Agent AI widget, Dialog Tasks now display the **Run with Agent Input** button as an icon next to the Run button. Agents can click this icon to customize the Dialog Task content and decide whether to send the dialog.
+
+#### **Rate Limit on Socket Connections from Agent AI**
+
+To prevent system overload, crashes, or slowdowns and ensure optimal performance, Kore.ai has implemented a rate limit on sockets. The rate limit on sockets are:
+* Message Limit: This limit is 500 messages per socket per minute. If exceeded, a 1-minute cooldown will be activated, during which no messages can be sent. A rate_limit event will notify users of the retry time.
+* Conversation Limit: Each conversation is limited to 10 parallel socket connections. If this limit is surpassed, additional connections are disconnected until one of the existing connections is closed.
+* Agent Conversation Socket Limit: No specific limit on socket connections per agent exists.
+
+#### Summarization Support for Japanese
+The Agent AI widget now supports conversation summarization in Japanese.
+
+### Integration Enhancements
+
+#### **Genesys Agent AI integration with Genesys Desktop Application**
+The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/).
+
+#### **Enhanced Language Support for NICE MAX Desktop**
+
+The Agent AI integration with NICE MAX Desktop now supports multiple languages, allowing agents to interact with the Agent AI widget in their preferred language.
+
+#### **Support for passing Custom Data**
+Agent AI integration with NICE CTI on Salesforce allows agents to pass custom data (such as name and department) into the Agent AI widget via the NICE CTI scripts. This integration enhances personalization and context-awareness in customer interactions, improving customer satisfaction and operational efficiency.
+
+#### **Security Enhancement to Prevent Agent Impersonation**
+
+Kore.ai has implemented a security enhancement for the Agent AI widget to prevent data breaches and unauthorized actions. The widget’s URL, which previously accepted a modifiable **conversationID** query parameter, now prevents the impersonation of legitimate agents. This update mitigates the risk of unauthorized access via **JWT token** misuse and **iframe link** inspection.
+
+#### **AgentAssist Chat Integration with ServiceNow**
+AgentAssist is now integrated with ServiceNow, allowing agents to access the features for a seamless chat experience within the ServiceNow environment.
+
+### API Enhancements
+
+#### **Raw Data API Enhancements**
+The Raw Data API is updated to include the following:
+* **Queue Details**: This parameter, “queueInfo,” contains the “queueId” and “queueName” information.
+* **Scroll Up and Scroll Down counts**: The “countScrollUp” and “countScrollDn” parameters show the number of times an agent clicks the “up” and “down” arrows to scroll up or down in the widget.
+* **Links Clicked / Redirects**: The “linksClicked” parameter shows the URL and the timestamp when a link was clicked.
+
+#### **Chat History API Includes Agent Messages**
+The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/) now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
+
+### UI Enhancement
+
+#### **Enhanced Language Support for UXO**
+For localization, the **UXO Builder App** now supports **Japanese** and **Korean** languages.
+
+<hr>
+
 ## v11.7.1 November 18, 2024
 
 <u> Patch Release </u>
