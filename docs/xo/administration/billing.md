@@ -61,7 +61,7 @@ The dashboard provides a consolidated view of cumulative billing data, including
 
 * Billing Sessions: Total number of completed sessions.
 * Voice Sessions: The count of Voice Sessions in a conversation consumed in an App; calculated as every 15 minutes of interaction with the Virtual Assistant or an Agent.
-* Agent Count: The count of agents subscribed to the plan for each app.
+* Agent Count: The count of agents subscribed to the plan for each app aggregated by Day/Week/Month.
 
 Users can filter and view billing data for individual apps and refine the data further with date filters. They can select from predefined ranges such as 24 hours, 7 days, or 30 days or set a custom date range. 
 
