@@ -34,11 +34,6 @@ The Greeting Messages, Widget Content, Layout Customization, and Negative Feedba
 The **Spyglass** icon on the Agent AI widget’s **Search** bar is now clickable. Users can search by pressing the **Enter** key or clicking the **Spyglass** icon.  
 <img src="../spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
 
-#### **Answers Module doesn’t impact the Search AI Performance**
-
-Enabling or disabling the **Answers** module does not impact the Search AI performance in UXO. Search AI is built-in and displays results regardless of the Answers module setting.  
-<img src="../answers-module-setting-irrelevant.png" alt="answers-module-setting-irrelevant" title="answers-module-setting-irrelevant" style="border: 1px solid gray; zoom:80%;">
-
 #### **Run Dialog Task Enhancement**
 In the Agent AI widget, Dialog Tasks now display the **Run with Agent Input** button as an icon next to the Run button. Agents can click this icon to customize the Dialog Task content and decide whether to send the dialog.
 
