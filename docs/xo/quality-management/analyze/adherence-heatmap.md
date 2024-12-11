@@ -101,7 +101,7 @@ The clickable date range tiles (each box is a metric) display the interactions f
 <img src="../adher-heatmap/images/adherence-percentage-count.png" alt="Heatmap Interaction" title="Heatmap Interaction" style="border: 1px solid gray; zoom:100%;"> 
 
 * **View Interactions**: Click the **View Interactions** button, which directs you to the [Conversation Mining](https://docs.google.com/document/u/0/d/1Ushu0NJ27_Fml-1Iqgib-uVccol8jY0ZV4xdvJCnmDk/edit) page, where you can view all the agents' failed interactions. The applied filters (as **Unsaved**) include the evaluation metric name or metric used, queues, and metric qualification or the number of failed interactions (pass/fail).  
-<img src="./adher-heatmap/images/conv-mining-failed-interactions.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
+<img src="../adher-heatmap/images/conv-mining-failed-interactions.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **View Interactions Filter Parameters**
 
@@ -110,27 +110,25 @@ Following are the filter parameters of **View Interactions**:
 * Displays agents' names at the end of the list who do not have any applicable interactions for that metric.  
 <img src="../adher-heatmap/images/not-applicable.png" alt="No Applicable Interaction" title="No Applicable Interaction" style="border: 1px solid gray; zoom:100%;"> 
 
-* Displays agents' names at the end of the list who do not have any applicable interactions for that metric.  
-<img src="../adher-heatmap/images/view-interactions-filters.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
-
 * Displays “No interactions” for N/A cases and “No failed interactions” for agents with 100% adherence. The "View Interactions" button gets disabled for agents with no applicable interactions or those with 100% adherence.  
-<img src="../adher-heatmap/images/disable-button.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
-    !!!Note
+<img src="../adher-heatmap/images/no-interactions-with-failed-interactions.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
-       * By clicking the **View Interaction** button, users get redirected from the **Adherence Heatmap** to the **Conversation Mining** page, where they can view failed interactions and see the tags that explain the filtering criteria in the **Conversation Mining** page based on the metric clicked-through. 
-       
-       * All these notification tags are shown only when the agent navigates to **Conversation Mining** from **Adherence Heatmap** and not directly in the **Conversation Mining** page. 
+!!!Note
+
+    * By clicking the **View Interaction** button, users get redirected from the **Adherence Heatmap** to the **Conversation Mining** page, where they can view failed interactions and see the tags that explain the filtering criteria in the **Conversation Mining** page based on the metric clicked-through.
 
     <img src="../adher-heatmap/images/conv-mining-interaction-notification-tag.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
+       
+    * All these notification tags are shown only when the agent navigates to **Conversation Mining** from **Adherence Heatmap**, and not directly in the **Conversation Mining** page. 
 
 **Action**: 
 
 * **Filter Heatmap by Agent**: By clicking this icon, you can filter the heatmap metrics of any individual agent within a selected date range as displayed in the following **View Interactions** screen.  
-<img src="../adher-heatmap/images/disable-button.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
+<img src="../adher-heatmap/images/heatmap-by-agent.png" alt="Filter Heatmap by Agent" title="Filter Heatmap by Agent" style="border: 1px solid gray; zoom:100%;"> 
 
-* **View Interaction in Conversation Mining**: By clicking on any agent interaction icon filter will take you to the **Adherence Heatmap** page, displaying data for the selected agent.    
-<img src="../adher-heatmap/images/disable-button.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
+* **View Failed Interactions in Conversation Mining**: By clicking on any agent interaction icon filter will take you to the **Adherence Heatmap** page, displaying data for the selected agent.    
+<img src="../adher-heatmap/images/no-failed-interactions.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **QA Dashboard**:  This displays the condensed version of the heatmap, which is available in the QA Dashboard, showing only the last 7 days, with a default form selection and no click-through functionality. In this, you can select a form from the drop-down and mark it as default within the QA Dashboard. For more information see [Supervisor Dashboard](./dashboard.md).   
     <img src="../adher-heatmap/images/view-interaction-conversation-mining.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;"> 
