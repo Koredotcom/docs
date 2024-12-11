@@ -94,7 +94,7 @@ This describes the functionality of a heatmap interface for tracking agent adher
 
 The clickable date range tiles (each box is a metric) display the interactions for the selected agents, showing the following metrics for each date:  
 
-* **Adherence Display**: Adherence percentages are shown within colored boxes, with color matching the heatmap’s color scheme. You can sort the adherence column by percentage, defaulting to the least adherence first. 
+* **Adherence Display**: Adherence percentages are shown within colored boxes, with color matching the heatmap’s color scheme. You can sort the adherence column by percentage, defaulting to the least adherence first.   
 <img src="../adher-heatmap/images/adherence-percentage-column-sorting.png" alt="Adherence Display" title="Adherence Display" style="border: 1px solid gray; zoom:100%;"> 
 
 * **Heatmap Interaction**: Click a date range tile (box) in the heatmap to open a window that displays agent-wise adherence percentage for the selected metric, ordered from least to most adherence. This displays the percentage count of adherence interactions.
