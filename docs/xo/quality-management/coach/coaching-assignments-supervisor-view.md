@@ -36,7 +36,7 @@ Steps to add coaching assignments:
     <img src="../coaching-assignments/images/add-coaching-assignments-coaching-area.png" alt="Add Coaching Assignment Area.png" title="Add Coaching Assignment Area" style="border: 1px solid gray; zoom:70%;">
 
 8. By default, the Interactions Marked for Coaching details, which are selected from the evaluation tab, are displayed.  
-    <img src="../coaching-assignments/images/add-coaching-assignments-coaching-area.png" alt="Interactions Marked for Coaching.png" title="Interactions Marked for Coaching" style="border: 1px solid gray; zoom:70%;">
+    <img src="../coaching-assignments/images/interactions-marked-for-coaching.png" alt="Interactions Marked for Coaching.png" title="Interactions Marked for Coaching" style="border: 1px solid gray; zoom:70%;">
 
 9. Under the **Best Responses** (optional), select the best response interactions from other agents to provide best reference for this coaching assignment using saved bookmarks.   
     <img src="../coaching-assignments/images/best-responses.png" title="Best Responses" style="border: 1px solid gray; zoom:70%;">
