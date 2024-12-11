@@ -103,8 +103,7 @@ Search AI allows setting up advanced filters to select the content for ingestion
 
 ![Configuration](images/servicenow/config-tab.png "Configuration")
 
-Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to [this ](https://developer.servicenow.com/dev.do#!/reference)for the complete list of parameters.  \
- \
+Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to [this ](https://developer.servicenow.com/dev.do#!/reference)for the complete list of parameters. 
 For instance, to ingest articles with a given sys ID, use the filter as shown below. 
 
 ![Example](images/servicenow/example1.png "Example")

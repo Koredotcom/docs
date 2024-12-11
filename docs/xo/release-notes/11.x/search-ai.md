@@ -2,6 +2,30 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.8.0 December 11, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Comprehensive Analytics Logs
+
+The new Answer Insights feature provides enhanced visibility into query-response interactions, aiding developers and analysts in debugging, performance improvement, and response quality assessment. 
+
+### Enhanced API Support
+
+Search AI now provides expanded API functionality, enabling users to manage content, retrieve chunks, Ingest new content, and Train the application. This enhancement provides greater control and flexibility for application developers.
+
+### Enhancement for Hybrid Retrieval Search
+
+Search AI now automates query optimization by removing stop words from user queries when using the Hybrid retrieval strategy. This enhancement improves retrieval accuracy, delivering more relevant and precise search results without requiring manual adjustments.
+
+### Public API to fetch the List of Connectors
+
+Search AI now includes a Public API that allows users to retrieve a list of all connectors configured in the application. This addition allows developers to manage connectors programmatically, enhancing productivity.
+
+<hr>
+
 ## v11.7.1 November 18, 2024
 
 <u> Patch Release </u>
