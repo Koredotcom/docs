@@ -444,9 +444,9 @@ nav:
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
     - DialogGPT:
       - Overview: generative-ai-tools/dialog-gpt.md
+      - Rollout Plan: generative-ai-tools/dialog-gpt-upcoming-features.md
       - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
-      - Upcoming Features: generative-ai-tools/dialog-gpt-upcoming-features.md
-      - DialogGPT FAQs: generative-ai-tools/dialog-gpt-faq.md  
+      - FAQs: generative-ai-tools/dialog-gpt-faq.md  
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
