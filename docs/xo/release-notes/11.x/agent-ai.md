@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 #### **Auto-Scroll for Transcript Tab**
 Agents now have access to the content of the **Transcript** tab. They can scroll vertically (up and down) and horizontally (left and right) to read through the content.  
-<img src="../auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
 
 #### **Enhanced Language Support for Localization**
 The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
@@ -32,7 +32,7 @@ The Greeting Messages, Widget Content, Layout Customization, and Negative Feedba
 
 #### **Clickable Spyglass icon on the Search bar**
 The **Spyglass** icon on the Agent AI widget’s **Search** bar is now clickable. Users can search by pressing the **Enter** key or clicking the **Spyglass** icon.  
-<img src="../spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
 
 #### **Run Dialog Task Enhancement**
 In the Agent AI widget, Dialog Tasks now display the **Run with Agent Input** button as an icon next to the Run button. Agents can click this icon to customize the Dialog Task content and decide whether to send the dialog.
