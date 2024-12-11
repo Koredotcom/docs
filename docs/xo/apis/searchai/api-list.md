@@ -10,3 +10,4 @@ The following table lists the APIs available for Search AI, which allows users t
 | [RACL Resolver APIs](./racl-resolver-apis.md) | To manage RACL resolver fields | Permission Entity Management |
 | [Content APIs](./content-apis.md) | To get details of the ingested content | Document Management |
 | [Data Ingestion](./ingest-data.md) | To ingest data(documents or chunks) into the Search AI application | Data Ingestion |
+| [Connector APIs](./connector-apis.md) | To list details of the configured connectors | Permission Entity Management |

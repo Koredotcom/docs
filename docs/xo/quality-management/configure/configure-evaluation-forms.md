@@ -71,12 +71,6 @@ The following table describes the Evaluation Forms details:
    <td>Enter a short description for the form, which is optional.
    </td>
   </tr>
-   <tr>
-   <td><strong>Language</strong>
-   </td>
-   <td>Select a language from the drop-down list.
-   </td>
-  </tr>
   <tr>
    <td><strong>Select Channel</strong>
    </td>
