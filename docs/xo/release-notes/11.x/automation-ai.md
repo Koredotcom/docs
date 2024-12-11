@@ -61,9 +61,7 @@ Key Capabilities
 * Media: Insertion of links and images (with URL and alt text)
 
 Formatted text is rendered properly across all supported channels, and the feature maintains backward compatibility with existing prompts.
-
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#configure-the-user-prompt)
-
 
 ### Knowledge AI 
 

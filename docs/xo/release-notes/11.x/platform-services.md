@@ -23,19 +23,16 @@ Key Updates
 * Custom LLM Support: The Zero-Shot ML model can now be used with the Bring Your Own Model (BYOM), enabling platform users to define prompts and leverage the enhanced capabilities with their custom LLMs.
 
 These enhancements significantly improve the Zero-Shot model's ability to accurately identify intents, particularly in complex or nuanced conversational scenarios, while maintaining compatibility with existing configurations.  
-
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#zero-shot-ml-model)
 
 #### Guardrails Framework Extention to Answer Generation
 
 The XO Platform's Guardrail framework now supports the Answer Generation feature. Guardrails enable responsible and ethical AI practices by allowing platform users to easily enable/disable rules and configure settings for different features using LLMs.  
-
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
 
 #### Rephrase User Query feature is now extended to Search AI
 
 The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model. 
-
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-user-query)
 
 ### Bot Admin Console
@@ -47,7 +44,6 @@ The Bot Admin Console now includes a Billing Session Widget, providing admins wi
 * Billing Sessions: Total number of completed sessions.
 * Voice Sessions: The count of Voice Sessions in a conversation consumed in an App; calculated as every 15 minutes of interaction with the Virtual Assistant or an Agent.
 * Agent Count: The count of agents subscribed to the plan for each app.
-
 [Learn more :octicons-arrow-right-24:](../../administration/billing.md#usage)
 
 ### App Settings
@@ -60,7 +56,6 @@ Key Improvements
 
 * Module Field: Each log entry has a new "Module" field indicating which XO 11 module the change originated from. Possible module values include Automation AI and Global (for changes related to Settings, User Management, Deployment, Billing, Experience Flows, Channels, and GenAI Configs).
 * Detailed Views: Log entries now include a "Details" link whenever additional information is available. The link opens a side panel displaying a JSON view of the full change details. It helps access the complete technical information for each change without cluttering the main log view.  
-
 [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
 
 <hr>
