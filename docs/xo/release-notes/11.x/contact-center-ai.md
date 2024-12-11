@@ -30,7 +30,7 @@ Calls now connect within 3 seconds when agents click the **Accept** button on th
 
 The enhanced email configuration options allow platform users to set up and manage Kore and custom domain email addresses. The options significantly expand email capabilities, allowing businesses to maintain brand consistency in their communications while leveraging the full features of Contact Center AI.
 
-Key updates:
+Key Updates
 
 * Kore Domain Email Management:
     * Configure multiple Kore domain email addresses.
@@ -51,7 +51,7 @@ This update introduces Email Address Blocklisting functionality for Contact Cent
 
 <img src="../images/email-blocklist.png" alt="Email Address Blocklist" title="Email Address Blocklist" style="border: 1px solid gray; zoom:80%;">
 
-Key updates:
+Key Updates
 
 * **Blocklist Management**: Administrators can specify blocklisted email addresses.
 * **Verification Process**: The system checks incoming email addresses against the blocklist.
