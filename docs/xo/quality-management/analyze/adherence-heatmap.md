@@ -101,7 +101,7 @@ The clickable date range tiles (each box is a metric) display the interactions f
 <img src="../adher-heatmap/images/adherence-percentage-count.png" alt="Heatmap Interaction" title="Heatmap Interaction" style="border: 1px solid gray; zoom:100%;"> 
 
 * **View Interactions**: Click the **View Interactions** button, which directs you to the [Conversation Mining](https://docs.google.com/document/u/0/d/1Ushu0NJ27_Fml-1Iqgib-uVccol8jY0ZV4xdvJCnmDk/edit) page, where you can view all the agents' failed interactions. The applied filters (as **Unsaved**) include the evaluation metric name or metric used, queues, and metric qualification or the number of failed interactions (pass/fail).  
-<img src="../adher-heatmap/images/view-interactions-filters.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
+<img src="./adher-heatmap/images/conv-mining-failed-interactions.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **View Interactions Filter Parameters**
 
