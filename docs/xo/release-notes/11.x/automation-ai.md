@@ -34,8 +34,8 @@ The implementation of DialogGPT is planned in three phases:
 
 * Phase 1 (included in this release): Focuses on core capabilities like the main DialogGPT flow, RAG pipeline, conversation orchestrator, and handling of common conversation intents.
 * Phase 2 (future release): Introduces advanced features such as Universal Bot support, granular intent identification, custom entity extraction, and new XO GPT models.
-* Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.
-
+* Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
 
 ### Dialog Builder  
 
@@ -67,9 +67,7 @@ Formatted text is rendered properly across all supported channels, and the featu
 
 ### Knowledge AI 
 
-
-### Get FAQs API Enhancement
-
+#### Get FAQs API Enhancement
 
 The **Get FAQs API** has been enhanced to support two sets of parameters, providing more flexible retrieval options while ensuring backward compatibility:
 

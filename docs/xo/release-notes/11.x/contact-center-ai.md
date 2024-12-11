@@ -35,11 +35,11 @@ Key updates:
 * Kore Domain Email Management:
     * Configure multiple Kore domain email addresses.
     * Easy addition of new addresses via the “Add Email Address” button.
-    * Attach experience flows to specific email addresses. Learn more.
+    * Attach experience flows to specific email addresses.
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses. Learn more.
+    * Tabular display of custom domains with associated email addresses.
 * Improved User Interface:
 * Clear organization of Kore and custom domain settings.
 
@@ -114,7 +114,7 @@ On the **Dashboard** > **Interactions** tab, supervisors now have two options to
 * Download as a single file,
 * Download as separate files.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs).
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
 
 #### Enhanced Diagnostics for Voice Interactions
 
@@ -127,7 +127,7 @@ The diagnostics reports can be exported in the following formats:
 * Export PCAP
 * Export TEXT
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#diagnostics).
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#diagnostics)
 
 #### Call Recording Status Messaging Enhancements
 
