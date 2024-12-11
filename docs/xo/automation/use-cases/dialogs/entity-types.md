@@ -1102,7 +1102,7 @@ This feature is not fully supported in all languages. [Click here for details](.
 
 Use Static List to define the entity values as one of the following list types:
 
-* **List of Values** tab – Enter the **Display Name**, **Value**, and **Synonyms** for the key.
+* **List of Values** tab: Enter the **Display Name**, **Value**, and **Synonyms** for the key.
 * **JSON Preview** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
                  
     ```
@@ -1119,7 +1119,7 @@ Use Static List to define the entity values as one of the following list types:
     ]
     ```
 
-* **Upload File** – Click **Upload** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
+* **Upload** tab: Click **Upload** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
 
     <img src="../images/entity-types-list-of-item-lookup-upload-file.png" alt="Upload file containing key/value pairs" title="Upload file containing key/value pairs" style="border:1px solid gray;zoom:70%;">
 

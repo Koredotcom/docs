@@ -10,3 +10,5 @@ Change Logs keep track of all the changes that take place in your Process App. T
 <img src="../images/change-logs-img1.png" alt="Change Logs" title="Change Logs" style="border: 1px solid gray;zoom:50%;"/>
 
 Click **Details** to open a specific log, where you can view additional information about the changes made.
+
+<img src="../images/change-logs-img2.png" alt="Change Logs details" title="Change Logs details" style="border: 1px solid gray;zoom:50%;"/>

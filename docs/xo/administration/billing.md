@@ -71,5 +71,5 @@ Hovering over a data point displays a tooltip with the following details:
 
 * **Date**
 * **Sessions**
-* **Voice Minutes**
+* **Voice Sessions**
 * **Agents**
