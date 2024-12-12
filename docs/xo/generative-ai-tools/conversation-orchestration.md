@@ -1,15 +1,10 @@
-
-
 # Conversation Orchestration
 
-Conversation Orchestration in DialogGPT allows you to define and manage Conversation Types while configuring separate Chunk Shortlisting and Conversation Orchestration models. You can turn Intent Events and Conversation Events on or off and choose how each event is fulfilled, ensuring precise and adaptable conversation management that you can confidently rely on.  
+Conversation Orchestration in DialogGPT allows you to define and manage Conversation Types while configuring separate Chunk Shortlisting and Conversation Orchestration models. You can turn Intent Events and Conversation Events on or off and choose how each event is fulfilled.  
 
-This flexible system gives developers complete control over conversation management, ensuring the accuracy, relevance, and efficiency of user interactions.
-
+This flexible system gives you complete control over conversation management, ensuring the accuracy, relevance, and efficiency of user interactions.
 
 <img src="../images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
-
-
 
 ## Conversation Types
 
@@ -30,10 +25,9 @@ To manage the conversation types, click **Settings**, turn the toggle on/off to 
 
 The Model Configurations card lets you choose the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
 
-
-
 * **Shortlisting Relevant Chunks**: 
 The XO Platform supports **MPNet**, **BGE M3**, **Labse**, and **E5 embedding** models, with more options coming soon. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine.
+
 * **Conversation Management**: 
 Currently, **OpenAI GPT-4o** and **Azure OpenAI GPT-4o** models support user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.
 
@@ -41,19 +35,14 @@ To configure the model and settings, click **Settings**. Select the model, adjus
 
 <img src="../images/gpt6.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
- 
-
 
 ## Fulfillment
 
 There are two types of fulfillment events: intent events and conversation events. You can modify the fulfillment behavior for each event as needed. 
 
-
 ### Intent Events
 
 The following is the intent event fulfillment behavior.
-
-
 
 * **Intent not Identified**: Define the fulfillment when no user intent is identified in the user utterance. By default, the fallback task is triggered.
 * **Ambiguous Intents Identified**: Define the flow when ambiguous intent is identified. You can configure how the system should handle such situations.

@@ -35,6 +35,7 @@ The implementation of DialogGPT is planned in three phases:
 * Phase 1 (included in this release): Focuses on core capabilities like the main DialogGPT flow, RAG pipeline, conversation orchestrator, and handling of common conversation intents.
 * Phase 2 (future release): Introduces advanced features such as Universal Bot support, granular intent identification, custom entity extraction, and new XO GPT models.
 * Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
+
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
 
 ### Dialog Builder  
@@ -43,10 +44,11 @@ The implementation of DialogGPT is planned in three phases:
 
 The property panel has been updated with a redesigned interface for configuring "List of Items" properties, including both enumerated and lookup types. 
 
-Key Improvements:
+Key Improvements
 
 * Intuitive Layout: The new design organizes properties logically, making it easier to locate and modify settings. The streamlined interface reduces clutter and enhances usability.
 * Enhanced Sliders: The configuring "List of Items" sliders have been revamped to provide a more user-friendly experience. Users can now adjust settings more efficiently within the improved interface.  
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/entity-types.md#list-of-items-enumerated)
 
 #### Rich Text Formatting for Prompts
@@ -61,6 +63,7 @@ Key Capabilities
 * Media: Insertion of links and images (with URL and alt text)
 
 Formatted text is rendered properly across all supported channels, and the feature maintains backward compatibility with existing prompts.
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#configure-the-user-prompt)
 
 ### Knowledge AI 

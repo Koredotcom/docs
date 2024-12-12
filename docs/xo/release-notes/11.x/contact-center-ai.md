@@ -30,18 +30,17 @@ Calls now connect within 3 seconds when agents click the **Accept** button on th
 
 The enhanced email configuration options allow platform users to set up and manage Kore and custom domain email addresses. The options significantly expand email capabilities, allowing businesses to maintain brand consistency in their communications while leveraging the full features of Contact Center AI.
 
-Key updates:
+Key Updates
 
 * Kore Domain Email Management:
     * Configure multiple Kore domain email addresses.
     * Easy addition of new addresses via the “Add Email Address” button.
-    * Attach experience flows to specific email addresses.
+    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#attach-a-flow-to-a-kore-domain-email-address)
 * Custom Domain Setup:
     * “Add Domain” button for custom email domain configuration.
     * Domain ownership verification through email login test.
-    * Tabular display of custom domains with associated email addresses.
-* Improved User Interface:
-* Clear organization of Kore and custom domain settings.
+    * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
+* Improved User Interface: Clear organization of Kore and custom domain settings.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
@@ -51,7 +50,7 @@ This update introduces Email Address Blocklisting functionality for Contact Cent
 
 <img src="../images/email-blocklist.png" alt="Email Address Blocklist" title="Email Address Blocklist" style="border: 1px solid gray; zoom:80%;">
 
-Key updates:
+Key Updates
 
 * **Blocklist Management**: Administrators can specify blocklisted email addresses.
 * **Verification Process**: The system checks incoming email addresses against the blocklist.
@@ -59,51 +58,6 @@ Key updates:
 * **Normal Processing**: Non-blocklisted emails proceed through the usual automation and transfer processes.
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
-
-### Kore Voice Gateway
-
-#### Wait Time for IP Whitelisting While Configuring SIP Transfer
-
-Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
-
-#### Session and Node Level Call Control Parameters
-
-Developers can now apply Call Control Parameters at the **Session** or **Node** level, offering more flexibility in managing call behavior.
-
-* **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
-* **Node-Level Parameters**: Add the prefix “`node."` to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
-* **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
-
-#### SIP REFER Handling and Transcript Enhancements
-
-When an external system sends a SIP REFER to Contact Center AI:
-
-* **Matching Numbers**: If the referred number matches a configured experience flow, Contact Center AI will trigger the corresponding flow.
-
-* **Non-Matching Numbers**: Calls will be returned to the source (default behavior).
-
-The Transcripts now show key conversation stages, including:
-
-* User transferred to Agent (When the Automation transfers the voice call to Agent)
-* User transferred to Automation (When the Agent transfers the voice call back to Automation)
-
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
-
-#### Mean Opinion Score (MOS) Display in Call Controls
-
-The Mean Opinion Score (MOS), indicating signal connectivity strength, is now displayed as a bar chart within the call controls widget.
-
-<img src="../images/mos-connection.png" alt="Mean Opinion Score" title="Mean Opinion Score" style="border: 1px solid gray; zoom:80%;">
-
-Color Coding:
-
-* 4-5 (Excellent): Green
-* 3-4 (Moderate): Orange
-* 2-3 (Poor): Orange
-* 1-2 (Very Poor): Red
-
-Hovering over the bars displays tooltips providing details on network connection status.
 
 ### Analytics
 
@@ -114,7 +68,7 @@ On the **Dashboard** > **Interactions** tab, supervisors now have two options to
 * Download as a single file,
 * Download as separate files.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
 #### Enhanced Diagnostics for Voice Interactions
 
@@ -168,6 +122,51 @@ Each tracked detail includes the following:
 * Detailed Event Description
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Wait Time for IP Whitelisting While Configuring SIP Transfer
+
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
+
+#### Session and Node Level Call Control Parameters
+
+Developers can now apply Call Control Parameters at the **Session** or **Node** level, offering more flexibility in managing call behavior.
+
+* **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
+* **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
+* **Default Behavior**: Parameters without a prefix are considered session-level by default.
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
+
+#### SIP REFER Handling and Transcript Enhancements
+
+When an external system sends a SIP REFER to Contact Center AI:
+
+* **Matching Numbers**: If the referred number matches a configured experience flow, Contact Center AI will trigger the corresponding flow.
+
+* **Non-Matching Numbers**: Calls will be returned to the source (default behavior).
+
+The Transcripts now show key conversation stages, including:
+
+* User transferred to Agent (When the Automation transfers the voice call to Agent)
+* User transferred to Automation (When the Agent transfers the voice call back to Automation)
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+#### Mean Opinion Score (MOS) Display in Call Controls
+
+The Mean Opinion Score (MOS), indicating signal connectivity strength, is now displayed as a bar chart within the call controls widget.
+
+<img src="../images/mos-connection.png" alt="Mean Opinion Score" title="Mean Opinion Score" style="border: 1px solid gray; zoom:80%;">
+
+Color Coding:
+
+* 4-5 (Excellent): Green
+* 3-4 (Moderate): Orange
+* 2-3 (Poor): Orange
+* 1-2 (Very Poor): Red
+
+Hovering over the bars displays tooltips providing details on network connection status.
 
 <hr>
 

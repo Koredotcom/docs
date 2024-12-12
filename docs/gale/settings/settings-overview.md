@@ -10,6 +10,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}
 8. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}
+9. [Security and Control](){:target="_blank"}: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
 
 ## Levels of Users Management 
 
@@ -81,6 +82,10 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
 - Review Agent Performance Metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
+
+**Security and Control**
+
+- Enable or disable **Single Sign-On (SSO)** for your account and other users to streamline authentication and enhance password security. [Learn more](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -209,6 +214,13 @@ The following modules and features are supported on the **Settings** Console:
    <li>Compare successful versus failed requests over time and identify failure patterns.</li>
    <li>Explore latency, requests, token generation, and scaling metrics through dedicated, expandable widgets.</li>
    <li>Optimize model performance with access to real-time metrics.</li></ul></td>
+  </tr>
+   <tr>
+   <td><b>Security and Control - Single Sign On</b></td>
+   <td>By centralizing authentication for your enterprise account users, SSO enhances user convenience and strengthens security through streamlined password management. SSO helps improve efficiency, reduce password fatigue, and safeguard sensitive information.</td>
+      <td><ul><li>Configure and enable SSO for the available IdP providers.</li>
+<li>Disable SSO for the required account users.</li>
+<li>Exclude specific users from the SSO requirement to provide an alternative way to access their accounts.</li></ul></td>
   </tr>
 </table>
 
