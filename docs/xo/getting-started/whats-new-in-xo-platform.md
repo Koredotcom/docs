@@ -336,7 +336,7 @@ The upgrade journey involves user consent, downloading a bot backup, a multi-ste
 1. Log in to the [XO1O Platform](https://bots.kore.ai) and duplicate the Bot you intend to upgrade to the XO11 App.
     * Click the Bot from the home page, and go to **Deploy > Bot Management > Export & Import Bot**. 
     * Export the latest version of the Bot.
-    * Navigate back to the homepage, click **New Bot > Import Bot,** and then upload the corresponding files from the exported copy. Name the duplicate Bot appropriately.
+    * Navigate back to the homepage, click **New Bot > Import Bot** and then upload the corresponding files from the exported copy. Name the duplicate Bot appropriately.
 2. Log in to the [XO11 Platform](https://platform.kore.ai).
 3. Check if the XO10 bots are available on the platform.
 4. Open the duplicate Bot and click **upgrade** on the banner.  
