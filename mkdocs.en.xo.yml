@@ -554,10 +554,7 @@ nav:
           - SDK Security: sdk/sdk-security.md
           - SDK Registration: sdk/app-registration.md
           - SDK Configurations: sdk/sdk-configuration.md
-          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
-          - Tutorials:
-            - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
-            - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md         
         - BotKit SDK:
           - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
           - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
@@ -565,11 +562,7 @@ nav:
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
-          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
-          - Tutorials:
-            - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
-            - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
-            - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md          
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
   - Analytics:
     - Introduction: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
