@@ -330,7 +330,7 @@ You can select from the following options:
 
 ## Auto Logout & Auto Close Conversation
 
-This feature allows administrators to specify the period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
+This feature allows administrators to specify the period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode. By default, auto logout & auto close conversation is disabled.
 
 **Auto Logout**  
 <img src="../images/auto-logout-toggle.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
