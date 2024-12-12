@@ -962,6 +962,36 @@ would have been “Bob Review” without the rule
 would have been “Philip” without the rule
    </td>
   </tr>
+
+
+  <tr>
+   <td><strong>ignorePunctuation</strong>
+   </td>
+   <td>An array of punctuation to ignore in the person_name entity.
+   </td>
+   <td>To ignore punctuation in the person’s name entity, the following characters can be ignored: !”#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" >Example
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" >JSON
+<br>
+<code>{</code>
+<br>
+<code>  "ignorePunctuation": [</code>
+<br>
+<code>     "-", ","</code>
+<br>
+<code>  ]</code>
+<br>
+<code>}</code>
+   </td>
+   <td>This applies only to languages other than English, Spanish, German, and French.
+   </td>
+  </tr>
 </table>
 
 
