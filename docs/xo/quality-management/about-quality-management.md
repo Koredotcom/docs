@@ -3,7 +3,7 @@ hide:
   - toc
   - feedback
 ---
-# About Quality Management
+# About Quality AI
 
 The Quality AI module leverages AI to automated QA scoring for 100% customer interactions. It offers customizable scoring configurations, comprehensive interaction analysis, and identification of critical issues to meet your business needs. 
 

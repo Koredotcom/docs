@@ -1,5 +1,5 @@
 
-# Quality Management Setup Guide
+# Quality AI Setup Guide
 
 Get started on the Quality AI module: Learn how to set up, configure, and use the Quality AI module.
 
@@ -8,7 +8,7 @@ Follow these steps:
 1. Configure Quality AI permissions:
 
     1. Navigate to **User Management** > **Role Management** > **New Role** > **Other Modules**.
-    <br>(Only the app owner has access to Role Management).</br>
+    <br> (Only the app owner has access to [Role Management](https://docs.kore.ai/xo/user-management/role-management/)).</br>
 
     2. Assign relevant roles (Supervisor role) or create custom roles with Quality AI permissions.
 

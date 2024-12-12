@@ -40,7 +40,8 @@ The following table describes all the filter criteria available on the Kore.ai X
 
 <li><strong>7 Days</strong> – Data aggregated over the past seven days is displayed. The start date is the day you select from which this filter is applied. By default, the current day is set as the start date, which you can change.
 
-<li><strong>Custom</strong> – You can choose a custom date range to filter the records. Choose the start date and end date in the calendar and click the <strong>Select</strong> button to filter the records. The Platform stores only the latest six months of data, and you can apply the date filter only for this date range.
+<li><strong>Custom</strong> – You can choose a custom date range to filter the records. Choose the start date and end date in the calendar and click <strong>Select</strong> to filter the records. The XO Platform allows filtering a date range of up to 90 days.
+
 </li>
 </ul>
    </td>

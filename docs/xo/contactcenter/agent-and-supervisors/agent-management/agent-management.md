@@ -171,14 +171,12 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 3. **Call Recording Control**: These settings let you configure call recording behavior. If enabled, you can further enable options to allow Agents and Virtual Assistants to Pause/Resume call recording.
 4. **Transfers**: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.
 5. **Skill Modification**: You can decide if the agents can modify skills attached to a conversation.
-6. **Auto Logout**: Administrators can configure this setting to specify a period of inactivity that automatically logs out agents.
-
+6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
 7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
-
 8. **Load Balanced Agent Routing**: This setting ensures a fair distribution of tasks among available agents with the necessary skills and language proficiency.
 
 These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
-<img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/agent-settings-tab.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -260,21 +258,21 @@ For each status, you can configure the following:
     1. The statuses for which you can set a percent value are: _Due Reminder For Agent_, and _Idle Reminder For Customer._
     2. The statuses for which you can set a response time (in minutes and seconds) are: _Overdue, Agent Inactivity, Idle_, and _Auto Expire_.
     3. The statuses that do not require percentile or response time configuration are: _On Connect, On Interruption_, and _On Close_.  
-    <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
+        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
     The following applies to emails:
     4. The statuses for which you can set a response time (in hours) are _Due Reminder for Agent Inactivity_, and _Due Reminder for Auto Expiry_.
     5. The status for which there is no response time is _On Close_.
     6. The statuses for which you can set a response time (in hours and minutes) are _Overdue_, Agent _Inactivity_, _Agent Offline_, _Customer Idle_, and _Auto Expire_.
 2. **The messaging goes out to either the user or the agent**. Status
 Messages can be edited by clicking the Edit icon under the Message column.  
-<img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
-    7. Each status lets you edit the message text, add variables and select the language.
-    <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
+    1. Each status lets you edit the message text, add variables and select the language.  
+        <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
 
-    8. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
+    2. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
     For example: `{{agentFirstName}}` becomes Christine Mark.  
-    <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
+        <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
 See the tables in [Conversation Statuses by Channel (Live Chat, MEssaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
 
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.
@@ -326,29 +324,41 @@ If enabled, the system allows agents to modify skills attached to an interaction
 You can select from the following options:
 
 * **Live Interaction**: Selecting this option lets agents modify skills from the skills bar on the Live Interaction window.
-* **Transfer**: Selecting this option lets agents modify skills when transferring an interaction.
+* **Transfer**: Selecting this option lets agents modify skills when transferring an interaction.  
 <img src="../images/skill-modification.png" alt="Skill Modification" title="Skill Modification" style="border: 1px solid gray; zoom:80%;">
 
-## Auto Logout
+## Auto Logout & Auto Close Conversation
 
-This feature allows administrators to specify the period of inactivity after which auto logout occurs. By default, auto logout is disabled.  
-<img src="../images/auto-logout.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
+This feature allows administrators to specify the period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
+
+**Auto Logout**  
+<img src="../images/auto-logout-toggle.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
 
 Enabling the setting allows administrators to configure the following rules:
 
 **Auto Logout**: The period of inactivity after which auto logout occurs. The default setting is 8 hours.
 
-**Due Reminder for Auto Logout**: The time duration before auto logout when the alert message appears.
-<img src="../images/auto-logout-configuration.png" alt="Configure Auto Logout" title="Configure Auto Logout" style="border: 1px solid gray; zoom:80%;">
+**Due Reminder for Auto Logout**: The time duration before auto logout when the alert message appears.  
+<img src="../images/configuring-auto-logout.png" alt="Configure Auto Logout" title="Configure Auto Logout" style="border: 1px solid gray; zoom:80%;">
+
+**Conversation Callback Timeout**
+
+If enabled, the conversation automatically moves to ACW mode after the timeout period if the agent remains inactive on the callback screen. 30 Seconds is the default selection, you can configure it between 10 seconds and 5 minutes.  
+<img src="../images/conversation-callback-timeout.png" alt="Conversation Callback Timeout" title="Conversation Callback Timeout" style="border: 1px solid gray; zoom:80%;">
 
 ## Snooze
 
 This feature allows agents to temporarily pause conversations that are awaiting a response from the customer or require any necessary action from the agent.
 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
-<img src="../images/enable-snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
 
 ## Load-Balanced Agent Routing
 
 By default, the load-balanced agent routing functionality is disabled. Administrators can turn on the toggle to enable the functionality allowing the distribution of tasks more evenly and reducing the chances of agent overload, leading to better focus and potentially faster task completion times, decreasing wait times for tasks. and improve overall system performance.  
-<img src="../images/load-balanced-agent-routing.png" alt="Load-Balanced Agent Routing" title="Load-Balanced Agent Routing" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/load-balanced-routing-toggle.png" alt="Load-Balanced Agent Routing" title="Load-Balanced Agent Routing" style="border: 1px solid gray; zoom:80%;">
+
+## Call Acceptance Behaviour
+
+By default, the call acceptance behaviour functionality is disabled. Administrators can turn on the toggle to enable the functionality, allowing the call to be accepted while the connection message plays in the background instead of waiting for it to finish, enhancing agent efficiency and reducing call handling time by enabling immediate call acceptance without waiting for the connection message to finish.  
+<img src="../images/call-acceptance-behaviour.png" alt="Call Acceptance Behavior" title="Call Acceptance Behavior" style="border: 1px solid gray; zoom:80%;">

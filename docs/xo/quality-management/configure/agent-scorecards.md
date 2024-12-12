@@ -4,7 +4,7 @@ Agent Scorecards facilitate the development of evaluation criteria at the indivi
 
 !!! note
 
-    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality Management.
+    To view **Agent Scorecards** and **Agent Attributes**, you must have to enable the **Agent Scorecards** toggle view in the **Settings** of Quality AI.
 
 A Supervisor has the following types of permissions for the agent scorecards:
 
@@ -12,7 +12,7 @@ A Supervisor has the following types of permissions for the agent scorecards:
 * No access, to edit, and create agent scorecards and attributes
 * Only view access for the existing agent scorecards and attributes.
 
-You can view Agent Scorecards by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Score Cards**.  
+You can view Agent Scorecards by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Agent Score Cards**.  
 <img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
 ## Create a New Agent Scorecard
@@ -96,10 +96,10 @@ Steps to edit or update the agent scorecard:
     <img src="../agent-scorecards/images/vertical-elipsis-edit-button.png" alt="Vertical Ellipse Edit Button" title="Vertical Ellipse Edit Button" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Click **Edit** to update the existing agent scorecard details.  
-   <img src="../agent-scorecards/images/edit-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+   <img src="../agent-scorecards/images/edit-agent-scorecard.png" alt="Quality AI Dashboard" title="Quality AI Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 3. Modify the required details in the **Settings**,  **Agent Attributes**, and **Assignments**.  
-   <img src="../agent-scorecards/images/update-agent-scorecard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+   <img src="../agent-scorecards/images/update-agent-scorecard.png" alt="Quality AI Dashboard" title="Quality AI Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
 !!! Note 
 
@@ -127,29 +127,26 @@ Steps to delete the agent scorecard:
 
 This feature enables the creation of agent attributes by combining existing evaluation metrics. This calculates the Agent Attribute Score using data from evaluation metric results. Agent attributes are specific areas of performance relevant to an agent's role like Professionalism, Product Knowledge, Problem-solving skills, and Customer service skills. 
 
-Users can view **Agent Attributes** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Agent Attributes**. 
+Users can view **Agent Attributes** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Agent Attributes**. 
 <img src="../agent-scorecards/images/agent-attributes-default-screen.png" alt="Agent Attributes" title="Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Create a New Agent Attribute
 
 Steps to create **New Agent Attribute**:
 
-1. From the **Agent Score Cards**, select the **Agent Attributes** tab, the following screen appears.  
-    <img src="../agent-scorecards/images/agent-attributes.page.png" alt="Agent Attribute Tab" title="Agent Attribute Tab" style="border: 1px solid gray; zoom:70%;">
-
-2. Click the **+New Agent Attribute** displayed on the top-right corner of the **Agent Attributes** page.  
+1. From the **Agent Score Cards**, select the **Agent Attributes** > **+New Agent Attribute** displayed on the top-right corner of the **Agent Attributes** page.  
     <img src="../agent-scorecards/images/new-agent-attribute1.png" alt="New Agent Attribute" title="New Agent Attribute" style="border: 1px solid gray; zoom:70%;">
 
-3. Upon clicking the **+New Agent Attribute**, the following **Add New Agent Attribute** screen appears.   
-<img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+2. Upon clicking the **+New Agent Attribute**, the following **Add New Agent Attribute** screen appears.   
+<img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Add New Agent Attribute" title="Add New Agent Attribute" style="border: 1px solid gray; zoom:70%;"> 
 
-4. In the **Name** field, enter the name of the agent attribute.
-5. Enter a short **Description** (optional) for the newly created agent attribute.
-6. In the **Add Evaluation Metrics**, search for the required evaluation metrics to add. 
-7. Click the **Add Evaluation Metrics** option. The following screen appears with the selected evaluation metrics.  
-    <img src="../agent-scorecards/images/update-new-agent-attribute.png" alt="Add Evaluation Metrics" title="Add Evaluation Metrics" style="border: 1px solid gray; zoom:70%;"> 
+    * In the **Name** field, enter the name of the agent attribute.
+    * Enter a short **Description** (optional) for the newly created agent attribute.
+    * In the **Add Evaluation Metrics**, search for the required evaluation metrics to add. 
+    * Search and click the **Add Evaluation Metrics** to select an option. The following screen appears with the selected evaluation metrics.  
+<img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Add Evaluation Metrics" title="Add Evaluation Metrics" style="border: 1px solid gray; zoom:70%;"> 
 
-8. Click **Create**. The following screen appears with all the added agent attribute options.   
+3. Click **Create**. The following screen appears with the newly added agent attribute options.   
 <img src="../agent-scorecards/images/added-new-attributes.png" alt="Updated Attributes List" title="Updated Attributes List" style="border: 1px solid gray; zoom:70%;"> 
 
 The Agent Attributes include the following:
@@ -163,10 +160,10 @@ The Agent Attributes include the following:
 Steps to edit or update the agent attributes:
 
 1. Select any of the agent attributes, and right-click on the vertical ellipse button. The following screen appears.  
-    <img src="../agent-scorecards/images/edit-attribute-list.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">   
+    <img src="../agent-scorecards/images/edit-attribute-list.png" alt="Edit Agent Attribute" title="Edit Agent Attribute" style="border: 1px solid gray; zoom:70%;">   
 
 2. Click **Edit**. The following screen appears to update existing agent attribute details.  
-    <img src="../agent-scorecards/images/edit-attribute-option.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="../agent-scorecards/images/edit-attribute-option.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;"> 
 
 3. Modify the required field details in the **Add Evaluation Metrics**.
 4. Click **Update** to assign and update the evaluation metrics that will service this new attribute added.
@@ -176,10 +173,10 @@ Steps to edit or update the agent attributes:
 Steps to delete the agent scorecard:
 
 1. Select any of the agent attributes, and right-click on the vertical ellipse button. The following screen appears.  
-    <img src="../agent-scorecards/images/edit-attribute-list.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="../agent-scorecards/images/edit-attribute-list.png" alt="Delete Agent Attribute" title="Delete Agent Attribute" style="border: 1px solid gray; zoom:70%;"> 
     
 2. Click **Delete**. The following warning popup window appears.  
-    <img src="../agent-scorecards/images/delete-agent-attribute.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="../agent-scorecards/images/delete-agent-attribute.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;"> 
 
     !!! note
             

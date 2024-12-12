@@ -1,4 +1,6 @@
-This document lists out all Agent AI APIs.
+# Agent AI
+
+The following table lists the APIs available for Agent AI. 
 
 | API            | Description                                 | App Scope         |
 |----------------|---------------------------------------------|-------------------|

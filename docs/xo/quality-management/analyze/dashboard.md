@@ -1,8 +1,8 @@
-# Dashboard Overview
+# Supervisor Dashboard Overview
 
-The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the Agent Evaluation Forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
+The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the agent Evaluation forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
 
-You can access **Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Dashboard**.  
+You can access **Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -30,7 +30,7 @@ This allows you to filter all agent interaction data by selecting the following 
 
 ### Channel Filter
 
-The Quality Management Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **All**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
+The Quality AI Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **All**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
 
 To filter data by channel, click the **All** Channels button in the top-right corner of the dashboard page, then select a conversation channel you wish to view.
 
@@ -54,7 +54,7 @@ Displays the number of coaching sessions the user (supervisor) has assigned acro
 <img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
 
 ### Agents in Coaching
-Displays the number of agents with an active coaching assignment in the queues that the user belongs to.
+Displays the number of agents with an active coaching assignment in the queues that the user belongs to.  
 <img src="../dashboard/images/agents-in-coaching.png" alt="Agents in Coaching" title="Agents in Coaching" style="border: 1px solid gray; zoom:100%;">
 
 ### Audit Progress
@@ -77,12 +77,13 @@ You can view both automated interactions and manual audits scores across the fol
 * **Monthly**: Displays score for the last 7 months.   
 <img src="../dashboard/images/evaluation-score.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
-## Adherence Heatmap
-This enables supervisors to view and track trends in agent compliance with specific metrics over time. It highlights interactions where agents consistently fail to meet metrics and offers the ability to filter non-compliant interactions. By analyzing the heatmap, supervisors can quickly identify areas of concern, monitor agent performance across evaluation forms or queues, and pinpoint agents who need attention. This provides actionable insights, helping supervisors make informed decisions and take targeted steps to drive improvement.  
-<img src="../dashboard/images/adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
+## Adherence Heat Map
+
+The QA Dashboard feature displays a condensed heatmap of adherence data for the last 7 days,  with a default form selection, and no click-through functionality. You can select the evaluation form from the drop-down, and set it as the default queue for viewing adherence across the heatmap and the QA dashboard. In this, the hover tooltip displays the metrics for selected agents of the corresponding date, including % adherence, interaction count, and total interactions.  
+<img src="../dashboard/images/dashboard-adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
 ## Fail Statistics
-This chart displays the count of failed interactions based on the selected forms and date range. It allows you to visualize failure trends for the chosen forms over the last 7 days, 7 weeks, or 7 months, using daily, weekly, and monthly views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.
+This chart displays the count of failed interactions based on the selected Evaluation forms and date range. It allows you to visualize failure trends for the chosen Evaluation forms over the last 7 days, 7 weeks, or 7 months (using daily, weekly, and monthly) views. Overall, it provides failure statistics for evaluation forms and scorecards for a specified time period.
 
 ### Evaluation Form
 This chart displays failure rates across the selected evaluation forms, making it easy to track any increases in failure rates. It allows you to quickly identify issues and take appropriate action, without the need to manually review individual failed interactions.   
@@ -121,12 +122,12 @@ Supervisors can monitor agent performance based on the selected evaluation form.
 
 ## Agent Leaderboard
 
-This widget provides a simplified view of the Agent Leaderboard and a snapshot version of agent performance. The Agent Leaderboard displays a centralized view that makes it easy to identify the best and worst performers. Enables you to make informed decisions about rewarding high performers and assigning coaching to those agents who need improvement.  
+This widget provides a simplified view of the Agent Leaderboard and a snapshot version of agent performance. The Agent Leaderboard displays a centralized view that makes it easy to identify the best and worst performers. It enables you to make informed decisions about rewarding high performers and assigning coaching to those agents who need improvement.  
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 
-    To access this feature, enable the **Agent Scorecard** toggle option in the Quality Management displayed under **Settings**.
+    To access this feature, enable the **Agent Scorecard** toggle option in the Quality AI displayed under **Settings**.
 
 The Agent Leaderboard displays the following items:
 

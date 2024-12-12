@@ -4,7 +4,7 @@
 
 Each agent has a personalized dashboard, which is accessible to both the agents. In this, the agents can view their performance through scorecards provided by their supervisors. This setup allows agents to take appropriate actions based on their performance metrics.
 
-You can view **My Dashboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **My Dashboard**.  
+You can view **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **My Dashboard**.  
 <img src="../agent-dashboard/images/coaching-assignments-agent-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:
@@ -39,7 +39,7 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
 * **Supervisor Audit Score**: This shows the average supervisor (manual) audit score of the agent for the selected time period.
 
-    <img src="../agent-dashboard/my-dashboard-sup-audit-score.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
+    <img src="../agent-dashboard/images/my-dashboard-sup-audit-score.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
 * **Total Coaching Assignments**: This shows the total number of coaching sessions assigned to the agent for the selected time.
 
