@@ -113,6 +113,8 @@ nav:
   - Getting Started: 
     - GALE Overview: getting-started/introduction.md
     - Accessing GALE: getting-started/sign-up-sign-in.md        
+    - Release Notes:
+      - Recent Updates: release-notes/recent-updates.md
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
@@ -128,7 +130,8 @@ nav:
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
-        - End Node: agents/agents-flows/types-of-nodes/end-node.md        
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md 
+      - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Agent Endpoint: 
@@ -144,6 +147,8 @@ nav:
       - Add a Scanner: agents/guardrails/add-a-scanner.md
       - Test Guardrail: agents/guardrails/test-guardrail.md
       - Manage Guardrails: agents/guardrails/manage-guardrails.md
+    - Audit logs:
+      - Agent Audit Logs: agents/agent-audit-log.md
     - Configurations:
       - Configure an Agent: agents/configure-an-agent.md
   - Models: 
@@ -194,6 +199,8 @@ nav:
       - Analytics:
         - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
+    - Security and Control:
+      - Single Sign On: settings/security-and-control/single-sign-on.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md

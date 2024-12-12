@@ -33,11 +33,14 @@ Steps to access Prompts:
 
 The Generate a prompt option takes a basic prompt (one or two sentences) and expands it into a more detailed and elaborative prompt. This helps create prompts that are more comprehensive, allowing large language models (LLMs) to better understand the full context and perform the task more effectively. It simplifies the prompt creation process and improves the quality of results by providing a clearer, more structured prompt.
 
+!!! note
+
+    Currently, only OpenAI and Anthropic models are supported for both generative tasks: prompt generation and test data generation.
+
 Steps to create prompts using the Generate a prompt option:
 
 1. On the Prompts landing page, click **Generate a prompt**.
 2. In the Prompt generator dialog, select a model and enter your instruction.  
-    Note: Only OpenAI and Anthropic models are supported for prompt generation and test data generation.
 
     <img src="../images/generate_a_prompt.png" alt="Generate prompt" title="Generate prompt" style="border: 1px solid gray; zoom:80%;">
 

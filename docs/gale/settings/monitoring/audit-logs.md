@@ -966,5 +966,6 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 * [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
+* [Agent Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to an agent's flow.
 
 

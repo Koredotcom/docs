@@ -41,7 +41,12 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.gale.yml      
+          args: build --config-file=mkdocs.en.gale.yml   
+      - name: Build EN EVA docs
+        uses: ./
+        with:
+          entrypoint: mkdocs
+          args: build --config-file=mkdocs.en.eva.yml          
             
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
