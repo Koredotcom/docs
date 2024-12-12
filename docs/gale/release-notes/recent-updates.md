@@ -2,6 +2,38 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent GALE releases.
 
+## v1.0.6 December 12, 2024
+
+<u> Minor Release </u>
+
+This update includes new features, improvements, and bug fixes, summarized below.
+
+**New Features**
+
+* (TEST)Improve prompt API endpoint: The updated instructions in the prompt API endpoint help users properly set up and use the endpoint.
+* Improved UI labels for credits and runs.
+* Show variables in an expanded state by default in Prompt Studio.
+* Show deployment history after the first model deployment attempt, regardless of the deployment status.
+
+**Feature Enhancements**
+
+* (TEST)Improve prompt API endpoint: The updated instructions in the prompt API endpoint help users properly set up and use the endpoint.
+* Improved UI labels for credits and runs.
+* Show variables in an expanded state by default in Prompt Studio.
+* Show deployment history after the first model deployment attempt, regardless of the deployment status.
+
+**Security Enhancements**
+
+* (TEST)Improve prompt API endpoint: The updated instructions in the prompt API endpoint help users properly set up and use the endpoint.
+* Improved UI labels for credits and runs.
+* Show variables in an expanded state by default in Prompt Studio.
+* Show deployment history after the first model deployment attempt, regardless of the deployment status.
+
+
+
+<hr>
+
+
 ## v1.0.5 November 20, 2024
 
 <u> Minor Release </u>
