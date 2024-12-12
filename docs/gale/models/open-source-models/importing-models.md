@@ -27,7 +27,7 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 * The model file to be imported must be available on the user’s local machine.
 
 
-# Importing Base Models into GALE
+## Importing Base Models into GALE
 
 **Steps to import a base model into GALE:**
 
@@ -36,9 +36,9 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 
 <img src="../images/base_model.png" alt="Base Model" title="Base Model" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
-    Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
+        Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
 
 3. **Upload the model file**: In the **Import base model file** section, drag and drop the model file into the designated upload area, or use the **Upload file** link to browse and select the file from your local machine. Ensure the file extension matches the supported model formats.
 4. **File Validation**: The system validates the file’s extension.
@@ -51,14 +51,15 @@ This process enables users to seamlessly integrate local models into GALE, ensur
     * **Importing**: When the file is being uploaded.
     * **Validating**: When the file is being validated.
     * **Import Failed**: If any errors occur during the import or validation process, the system displays the error details. You can choose to fix the issue and re-import the model or cancel the process.
-    * **Ready to Deploy**: When the model is successfully imported and validated.
+    * **Ready to Deploy**: When the model is successfully imported and validated.  
+
 6. Once the model is ready for deployment, you can click the row in the dashboard and manage the model’s deployment settings in the following sections:
     * **Configurations**: Edit the model’s description and tags.
     * **API keys**: Configure the API key and deployment settings.
     * **Model Endpoint**: Start the deployment.
 
 
-# Importing Adapter Models into GALE
+## Importing Adapter Models into GALE
 
 **Steps to import an adapter model into GALE:**
 
@@ -67,17 +68,17 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 
 <img src="../images/adapter_model.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">
  
-!!! note
+    !!! note
 
-    Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
+        Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
 
 3. **Select a base model**: Browse through the list of available base models and choose one that supports the adapter model you're importing. Once selected, the base model is associated with the adapter model.
 
 <img src="../images/adapter_model_details.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
-    The system alerts you that the adapter model needs a base model to work, and you must choose one from the supported models in the models hub.
+        The system alerts you that the adapter model needs a base model to work, and you must choose one from the supported models in the models hub.
 
 4. **Upload the model file**: In the **Import base model file** section, drag and drop the model file into the designated upload area, or use the **Upload file** link to browse and select the file from your local machine. Ensure the file extension matches the supported model formats.
 5. **File Validation**: The system validates the file’s extension.
@@ -102,7 +103,7 @@ This process enables users to seamlessly integrate local models into GALE, ensur
     * If the model has not been deployed or while the model is being imported, you can delete it using the Delete option from the three-dot menu on the dashboard.
     * If the model is deployed, you can trigger re-deployment or view the deployment history.
 * **Errors during model import**: If any errors occur during model import, such as invalid file formats, upload failures, extraction issues, or compatibility problems, refer to the error message displayed by the system for guidance on resolving the issue.
-* **Further fine-tuning:** Imported models can be fine-tuned further and deployed as individual units. During fine-tuning, the imported models are included in the Models hub menu in the Base model section. \
+* **Further fine-tuning:** Imported models can be fine-tuned further and deployed as individual units. During fine-tuning, the imported models are included in the Models hub menu in the Base model section. 
 
 
 !!! note
