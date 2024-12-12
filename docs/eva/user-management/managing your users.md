@@ -1,0 +1,119 @@
+# Managing Your Users
+
+You can manage users in AI for Work **Admin Console** from the **User Management > Users section**.
+
+All users across your network accounts are listed here.  
+
+<img src="../images/users.png" alt="users" title="users" style="border: 1px solid gray; zoom:80%;"> 
+
+The following list describes the columns displayed for each AI for Work user.
+
+<table>
+  <tr>
+   <td>COLUMN
+   </td>
+   <td>DESCRIPTION
+   </td>
+  </tr>
+  <tr>
+   <td>USERS
+   </td>
+   <td>Displays the username, admin indicator, and selection box.
+   </td>
+  </tr>
+  <tr>
+   <td>DESIGNATION
+   </td>
+   <td>Designation of the user.
+   </td>
+  </tr>
+  <tr>
+   <td>STATUS
+   </td>
+   <td>Displays the user status. 
+<ul>
+
+<li>Active – The user is active and can interact with other users.</li>
+
+<li>Invited – Users invited by the Admin, but who are yet to join or accept the invitation.</li>
+
+<li>Suspended – The user is suspended by an administrator. The user cannot log on to AI for Work. The status of a Suspended user can be Activated anytime by admin.</li>
+
+<li>Removed – A user deleted by an admin enters a "soft delete" state for 60 days, after which they are permanently deleted. During this period, the user's status can be changed back to "Active."</li>
+
+<li>Remove Permanently – Available only for users in the "Removed" state, this action deletes them permanently from the list.
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>ROLE
+   </td>
+   <td>Displays the user's role, indicating whether they are an admin or a member. Click on the role to navigate to the role management section, where you can add a custom role.
+   </td>
+  </tr>
+  <tr>
+   <td>USER GROUP
+   </td>
+   <td>Displays the names of all the groups the user belongs to.
+   </td>
+  </tr>
+</table>
+
+
+To view the user details page:
+
+* Hover over the specific username, the **Open** icon will appear. Click **Open**.
+* Click **More** in the last column of the specific user row.  
+
+<img src="../images/users-more.png" alt="users-more" title="users-more" style="border: 1px solid gray; zoom:80%;"> 
+
+From the user details page, you can access the following fields:
+
+* Personal Details
+* Application Details
+* Log details  
+
+<img src="../images/user-details.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
+
+## Top Navigation Menu
+
+This section describes the commands available on the Top Navigation Menu.  
+
+<img src="../images/top-menu.png" alt="top-menu" title="top-menu" style="border: 1px solid gray; zoom:80%;"> 
+
+1. User Enrollments
+
+    Click the **Change** button to open the User Enrollment page.  
+    <img src="../images/user-enrollment-ref.png" alt="user-enrollment-ref" title="user-enrollment-ref" style="border: 1px solid gray; zoom:80%;"> 
+
+    Refer to [User Enrollment](../user-management/user-enrollments.md) for details on the type of enrollment configurations.
+
+2. Search Field
+
+    The list of entries in the User’s table can be very long. To find one or more specific users enter the keywords. To view all entries, clear the search field.
+
+3. Filter
+
+    Allows users to narrow down data or content based on specific criteria or conditions. By applying filters, users can view only the items that match their selected parameters, such as Status and Role.
+
+4. Sort By
+
+    Allows users to organize data or content based on specific criteria. By selecting a sorting option, users can arrange items in a particular order, such as First name, Last name, and Last login time.
+
+5. Group 
+
+    Allows users to organize data or items into categories based on shared attributes or criteria. Grouping allows users to view and manage information more effectively by clustering related elements together such as Status and Role.
+
+6. Invite users
+
+    You can add a new user by sending bulk or individual email invites. Alternatively, import the user information file directly to the console.
+
+    1. On the Top Navigation Menu, click **Invite users**.
+    2. To invite users by importing a file, **Click to upload** the file or **drag and drop** the file. Refer to the **Format template for importing files** for the Instructions to prepare files for importing users.  
+    <img src="../images/invite-user.png" alt="invite-user" title="invite-user" style="border: 1px solid gray; zoom:80%;"> 
+
+    3. To invite users by sending emails, select the **Add manual** radio button.
+    4. Enter the email address of the user. You can send invitations to multiple users at a given time.  
+    <img src="../images/add-manual.png" alt="add-manual" title="add-manual" style="border: 1px solid gray; zoom:80%;"> 
+    5. Click **Invite.**

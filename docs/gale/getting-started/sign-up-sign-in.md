@@ -126,7 +126,9 @@ Once the admin accepts your request via an invitation, you can complete the sign
 
 <ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
 
-<p>Ensure you set a strong password that includes the following:</p>
+#### Password Validation
+
+<p>When signing in or resetting your account password, make sure to provide the following:</p>
 <ul><li>A minimum of 12 characters.</li>
 <img src="../images/password-12-characters-long.png" alt="12 characters" title="12 characters" style="border: 1px solid gray; zoom:75%;"></ul>
 <ul><li>At least one special character.</li>
@@ -138,10 +140,10 @@ Once the admin accepts your request via an invitation, you can complete the sign
 <ul><li>At least one upper case character.</li>
 <img src="../images/password-uppercase-character.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;"></ul>
 
-<p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> button is enabled.</p>
+<p>If the password is strong (ideal), the following message is displayed, and the <b>Create Account</b> or <b>Reset Password</b> button is enabled based on the scenario.</p>
 <img src="../images/strong-password-set.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
 
-### **Account Activation**
+### Account Activation
 
 After you initiate the sign-up process, GALE sends an email to the address you provided. This email contains a verification link and a code to activate your account.
 
@@ -191,7 +193,7 @@ Then, enter your password and click **Login**.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Once you create an account, you need to add credits for computation hours to start using GALE's features.</p>
+<p>Once you create an account, you will receive 75 model credits and 10,000 agent runs by default to start using GALE's features.</p>
 </div>
 
 ### Failed Login and Account Locking
@@ -240,6 +242,8 @@ You will receive instructions via email on how to reset your password. Check you
 <li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
 <img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
+Please refer to the validation instructions [here](../getting-started/sign-up-sign-in.md/#password-validation){:target="_blank"} when resetting the password.
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 If both the entries do not match, you cannot proceed.</div>
@@ -279,15 +283,18 @@ Click the account you want to access. The system redirects you to the **Agents**
 
 ## Create an Account
 
-Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts.
+Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts.  
+
+
+
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul><li>Each email address can only be associated with one GALE account.</li>
-<li>If you do not have computation hours in your account, you will have only limited access to modules and features. The following message is displayed for accounts with no computational hours.</li></ul>
+<li>If you do not have sufficient model credits and agent runs in your account, you will have only limited access to modules and features.</li>
+</ul>
 </div>
 
-<img src="../images/error-message-computation-hours.png" alt="error message computation hours" title="error message computation hours" style="border: 1px solid gray; zoom:75%;">
 
 **Steps to Create an Account**
 
@@ -402,3 +409,11 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 3. Select the account you want from the **Accounts** list.
 
 <img src="../images/switch-accounts.png" alt="switch account" title="switch account" style="border: 1px solid gray; zoom:75%;">
+
+## Related Information
+
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about using the GALE admin features.
+* [Users](../settings/user-management/users.md){:target="_blank"}- Manage users seamlessly in your account.
+* [Roles](../settings/user-management/role-management.md){:target="_blank"}- Manage system and custom roles and permissions in your account.
+* [Billing](../settings/billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption in your account, set limits and view usage trends.
+* [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}- Enable Single Sign-On (SSO) for fast and secure account access through your configured Identity Provider (IDP), while excluding designated users.
