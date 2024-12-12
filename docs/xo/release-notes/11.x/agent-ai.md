@@ -11,7 +11,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 ### Widget Enhancements
 
 #### **Auto-Scroll for Transcript Tab**
-Agents now have access to the content of the **Transcript** tab. They can scroll vertically (up and down) and horizontally (left and right) to read through the content.  
+The Transcript tab is now updated with the "auto-scroll" functionality, wherein the system automatically navigates to the last message for new utterances. Agents can manually scroll up and down to read through the content.  
 <img src="../images/auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
 
 #### **Enhanced Language Support for Localization**
