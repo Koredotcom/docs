@@ -10,6 +10,7 @@ The following features are available in the Agent AI widget:
 * **Real-time Sentiment Analysis**: Provides a continuous, time-based graph that displays the customer’s sentiment fluctuations. Agents get immediate visibility of the evolving emotional tone of the conversation and take proactive and empathetic responses.
 * **Transcription**: Enhances agent accessibility and context by providing accurate transcriptions of user and agent voices during interactions. Offers a conversation overview and serves as the basis for automated Quality Assessment (QA). Agents receive a visual indicator when an intent is identified, improving real-time understanding and response.
 * **Auto Summarization**: Automatically shortens lengthy information into concise summaries, enabling agents to respond promptly to customer inquiries. It helps agents quickly understand and make decisions.
+* **Auto-Scroll Widget Content**: The system automatically navigates to the last message/content to display the latest message/content.
 * **PII Redaction**: Securely removes Personally Identifiable Information (PII) from the agent's view and transcripts, ensuring a safe environment for customer interactions and compliance with privacy regulations.
 * **Feedback**: Empowers agents to provide real-time feedback on suggestions. This continuous process forms a dynamic loop, allowing Machine Learning (ML) algorithms to continuously enhance and customize recommendations for accurate and contextually relevant outcomes.
 * **Next Best Action**: Enhances the product by enabling seamless execution of Dialog Tasks for swift customer query resolution. The generative AI nodes and script nodes integration equips the system to efficiently communicate with external systems through API calls. This leads to improved customer experience and reduced necessity for frequent screen changes for agents. This allows agents to deliver contextually relevant next-best responses, contributing to a more streamlined and effective contact center operation.
@@ -23,23 +24,23 @@ The following features are available in the Agent AI widget:
 
 ## Widget Tabs
 
-The widget consists of five tabs–Search, My Bot, Assist, Transcript, and Settings–to help the agents perform different tasks and activities.
+The widget consists of four tabs–Search, My Bot, Assist, Transcript (for Voice channel)–and two buttons (Settings and theme) to help agents perform different tasks and activities.
 
 **Agent AI tabs:**
 
-<img src="../widget-images/agent-assist-widget-tabs.png" alt="agent-assist-widget-tabs.png" title="agent-assist-widget-tabs.png" style="border: 1px solid gray; zoom:80%;">
+<img src="../WidgetContentUpdate_3.3.0/agent-assist-widget-tabs.png" alt="agent-assist-widget-tabs.png" title="agent-assist-widget-tabs.png" style="border: 1px solid gray; zoom:80%;">
 
 ### Search Tab
 
-This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities wherein agents can search Dialog Tasks, frequently asked questions (FAQs), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on all agent interactions. The agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the ellipsis and select “Run with Agent’s input”, the dialog moves to the My Bot section, and you can run the dialog from there.
+This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on agent interactions. Agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the “Run with Agent input” button, the dialog moves to the My Bot section, and you can run the dialog from there.
 
-<img src="../WidgetContentUpdate_3.3.0/updated-search-bar_12.png" alt="updated-search-bar" title="updated-search-bar" style="border: 1px solid gray; zoom:80%;">
+<img src="../WidgetContentUpdate_3.3.0/search-tab.png" alt="updated-search-bar" title="updated-search-bar" style="border: 1px solid gray; zoom:80%;">
 
 The following buttons are available in this section:
 
 * **Run button**: For Dialog Tasks. Click to run a configured Dialog Task.
 * **Run with Agent’s input**: Click this button to run a Dialog Task with agent’s input. The agent can customize the content and decide whether to send a dialog or not. Selecting this option automatically moves you to the My Bot section.
-
+* **Spyglass icon**: After entering the search content, click the “spyglass” icon in the search bar or press the “Enter” key to search.
 
 ### My Bot Tab
 
@@ -53,7 +54,6 @@ My bot functionality can be used in multiple circumstances (but not limited to):
 
 * If Automation fails, the agent can rerun it by providing inputs manually, which helps to reduce the average handle time (AHT) and makes it less frustrating for customers as they don’t have to repeat the same information.
 * Agents can run MyBot automation in parallel and seek information directly from the bot.
-
 
 ### Assist Tab
 
@@ -151,21 +151,25 @@ Scenario 2: Smart Assist Application Suite
 
 ### Transcript Tab
 
-The Transcript feature is available specifically for voice calls.
-
-When a voice call begins, the Transcript tab shows the transcripts. This information is in text format, which allows the agent to look up information and copy/paste it.
-
-The Transcript functionality transcribes the audio for the agent and the customer in real-time. Once transcribed, the messages are readily available for the agent throughout the session. Also, it allows the agent to have a historical view for referring back whenever needed.
+The Transcription feature is available only for the voice calls. When a call begins, the Transcript tab displays the real-time transcription of conversations between agents and customers in text format. The transcriptions are available for the agent throughout the session and provide a historical record for future reference. Agents can read through and copy/paste it. If the Auto-scroll Widget Content toggle is enabled in the Widget Settings page, the system automatically navigates to the last message content for new utterances. Agents can manually scroll up and down to read through the content.  
 <img src="../widget-images/transcript-tab.png" alt="transcript-tab.png" title="transcript-tab.png" style="border: 1px solid gray; zoom:80%;">
 
 ### Settings
 
-The Settings tab gives you access to set the listening mode of the bot, auto-scroll functionality of the content in the Assist tab, available documents and FAQs, option to choose a language, and the option to select a theme (Dark or Light).  
-<img src="../WidgetContentUpdate_3.3.0/settings-tab-updated_10.png" alt="settings-tab-updated" title="settings-tab-updated" style="border: 1px solid gray; zoom:80%;">
+The Settings tab gives you access to set:
+
+* The listening mode of the bot
+* Auto-scroll functionality of the content in the Assist, My Bot, and Transcript tabs.
+* Available documents and FAQs
+* Option to choose a language  
+<img src="../WidgetContentUpdate_3.3.0/widget-settings-section.png" alt="settings-tab-updated" title="settings-tab-updated" style="border: 1px solid gray; zoom:80%;">
 
 #### Proactive Mode
 
 The Proactive Mode toggle allows you to put the bot in listening mode. You can turn off the toggle if it is not working as expected.
+
+#### Auto-Scroll Content
+The Auto-Scroll Content toggle lets you manage the scrolling functionality of content in the Assist, My Bot, and Transcript tabs. You can turn on or off the toggle, as required.
 
 #### Help & Support
 
@@ -179,29 +183,27 @@ This section lists the supported languages and lets you select a language of you
 
 <img src="../widget-images/settings-tab-help&support-language.png" alt="settings-tab-help&support-language.png" title="settings-tab-help&support-language.png" style="border: 1px solid gray; zoom:80%;">
 
-#### **Theme Selection**
+### **Theme Selection**
 
 This section lets you customize the widget’s appearance with the help of a theme (dark or light). To select it, go to the widget’s Settings tab, and select Dark or Light.  
-<img src="../WidgetContentUpdate_3.3.0/widget-theme-selection_11.png" alt="widget-theme-selection" title="widget-theme-selection" style="border: 1px solid gray; zoom:80%;">
+<img src="../WidgetContentUpdate_3.3.0/theme-icon.png" alt="widget-theme-selection" title="widget-theme-selection" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI V2 vs V3 - Key Differences
 
 Agent Ai V3 introduces many additional features and updates over Agent AI V2. This document highlights the differences visible on the user interface (UI) and at the feature-level.
 
-
 ### Difference in the UI
 
 The following UI updates are done:
 
-
 * **Tab Configuration**:
     * V2 features three tabs - **Assist**, **Library**, and **My Bot** - and a search bar at the bottom.
-    * V3 features four tabs - **Search**, **My Bot**,** Assist**, and** Settings**.
+    * V3 features four tabs - **Search**, **My Bot**, **Assist**, and **Settings**.
 * **Library Tab Transformation**: The **Library** tab in V2 has been transformed into the **Search** tab in V3.
 * **Tab Placement**: In V2, tabs are positioned at the top but in V3 they are moved to the bottom of the screen.
 * **Sentiment Analysis** **Display**: The **Sentiment Analysis** display is always visible in V3, but it was visible only upon a customer utterance match in V2. V3 has badges, an icon (for example, Positive, Negative and Neutral), and an emoji for every customer utterance. Clicking the badge takes you to the sentiment graph (as was the case in V2).
 * **Proactive Button Location**: The **Proactive** button, earlier located at the top-right corner of the page in V2 has been moved to the **Settings** tab in V3.
-* **Playbook Closure**: The **Proceed to Close **display for Playbooks in V2 has been replaced with a symbol in V3.
+* **Playbook Closure**: The **Proceed to Close** display for Playbooks in V2 has been replaced with a symbol in V3.
     * The **Widget Playbook** list in V2 displays only the Primary Playbooks and doesn’t display the Dynamic Playbooks.
     * The **Widget Playbook** list in V3 displays both the Primary and the Dynamic Playbooks.
 * **Dialog Task Section:** The **Dialog Task** section in V2 has the customer’s utterance displayed at the top, but it is updated as a tool tip (accessible with a hover over the information icon) in V3.
@@ -211,8 +213,6 @@ The following UI updates are done:
 
 <img src="../widget-images/agent-assist-widget-v2.png" alt="agent-assist-widget-v2.png" title="agent-assist-widget-v2.png" style="border: 1px solid gray; zoom:80%;">
 
-
-
 **Agent AI V3**
 
 <img src="../widget-images/agent-assist-widget-v3.png" alt="agent-assist-widget-v3.png" title="agent-assist-widget-v3.png" style="border: 1px solid gray; zoom:80%;">
@@ -220,8 +220,6 @@ The following UI updates are done:
 ### Differences at the Feature/Tab level
 
 The following updates have been added at the feature level:
-
-
 
 * **Dialog Task execution**: The Dialog Tasks in V2 had **Terminate** and **Override Input** buttons, but V3 has **List View**, **Restart**, **Terminate**, and **Maximize** functionality as symbols.
 
@@ -243,10 +241,10 @@ The following updates have been added at the feature level:
 
 <img src="../widget-images/agentassist-v3-features-2.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
 
-
 ### New Tab addition - Settings Tab
 The **Settings** tab in V3 lets you to:
 
 * Turn on/off the **Proactive mode**.
+* Enable/Disable the **Auto-Scroll Content** toggle.
 * Navigate to the **Documentation**, **FAQ**, and the **Kore Academy**.
 * Select a language.
