@@ -36,9 +36,9 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 
 <img src="../images/base_model.png" alt="Base Model" title="Base Model" style="border: 1px solid gray; zoom:80%;">
 
-    !!! note
+!!! note
 
-        Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
+    Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
 
 3. **Upload the model file**: In the **Import base model file** section, drag and drop the model file into the designated upload area, or use the **Upload file** link to browse and select the file from your local machine. Ensure the file extension matches the supported model formats.
 4. **File Validation**: The system validates the file’s extension.
@@ -68,9 +68,9 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 
 <img src="../images/adapter_model.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">
  
-    !!! note
+!!! note
 
-        Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
+    Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
 
 3. **Select a base model**: Browse through the list of available base models and choose one that supports the adapter model you're importing. Once selected, the base model is associated with the adapter model.
 
@@ -95,7 +95,7 @@ This process enables users to seamlessly integrate local models into GALE, ensur
     * **Model Endpoint**: Start the deployment.
 
 
-### Key Considerations
+## Key Considerations
 
 * **Model details**: Once the model is ready, you can modify its description and tags. However, the model name remains uneditable, as it is derived from the file name.
 * **Deployment and management**: All actions related to deployment, re-deployment, and failure management will follow the same process as existing open-source models. After deployment, the model’s status, re-deployment history, API endpoint, and related toasts or email notifications will be the same as those for other open-source models.
