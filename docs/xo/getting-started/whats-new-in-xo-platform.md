@@ -445,7 +445,6 @@ During the upgrade, the bot goes through an automated publishing process:
 3. Finally, the upgraded bot, now an XO v11 app with the new capabilities, is published again.
 
 <hr>
-
 ##### Related Links
 
 * [Key Differences - XO v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
