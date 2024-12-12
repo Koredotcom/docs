@@ -134,7 +134,7 @@ Users must wait for at least 10 minutes after saving their IPs to be whitelisted
 Developers can now apply Call Control Parameters at the **Session** or **Node** level, offering more flexibility in managing call behavior.
 
 * **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
-* **Node-Level Parameters**: Add the prefix “`node."` to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
+* **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
 * Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
 
