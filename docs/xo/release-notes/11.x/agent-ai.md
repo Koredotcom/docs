@@ -51,7 +51,7 @@ The Agent AI widget now supports conversation summarization in Japanese.
 ### Integration Enhancements
 
 #### Genesys Agent AI integration with Genesys Desktop Application
-The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/).
+The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/){:target="_blank"}.
 
 #### Enhanced Language Support for NICE MAX Desktop
 The Agent AI integration with NICE MAX Desktop now supports multiple languages, allowing agents to interact with the Agent AI widget in their preferred language.
@@ -75,7 +75,7 @@ The Raw Data API is updated to include the following:
 * Links Clicked / Redirects: The “linksClicked” parameter shows the URL and the timestamp when a link was clicked.
 
 #### Chat History API Includes Agent Messages
-The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/) now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
+The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
 
 ### UI Enhancement
 
