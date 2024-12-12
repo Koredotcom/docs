@@ -730,4 +730,4 @@ No body parameters are passed.
 
 !!!note
     
-    Refer to Get [FAQs – KG](../automation/get-faqs-from-knowledge-task-V2.md)  which supports the Parameters: botId, language, mode (configured/published), and nodeName.
+    Refer to Get [FAQs – KG V2](../automation/get-faqs-from-knowledge-task-V2.md)  which supports the Parameters: botId, language, mode (configured/published), and nodeName.
