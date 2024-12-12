@@ -1042,9 +1042,9 @@ Captures email address from the utterance. For example, “_Send an email to hel
 
 ### List of Items (enumerated)
 
-Display a list of values to the end-user. To define the list type,
+Display a list of values to the end user. To define the list type,
 
-1. Click the **Settings** icon next to the **List of items (enumerated) Type** field.
+1. Click the **Customise The List Of Itemss** below the **List of items (enumerated) Type** field.
 2. On the List of items (enumerated) Setup page, define one of the following list types.
     1. Static List
     2. List from Context
@@ -1055,7 +1055,7 @@ This feature is not fully supported in all languages [Click here for details](..
 * **List from Context** – Define a context variable to use for this item in the following fields:
     * **Specify Context Variable to Use** – Defines the context object type. For example, EnterpriseContext, BotContext, UserContexts, or session variables such as context.entities. Enter`context.`; select a context object type.
     * **Display Name Key** – The name displayed to the end-user.
-    * **Value Key** – The key that represents the value of the item in the list.
+    * **Value Key** – The key that represents the item's value in the list.
     * **Synonyms Key** – Enter one or more synonyms for the key ([Click here for details](../../../natural-language/nlp-guidelines/#synonyms){:target="_blank"}).
 
 * **Auto-Correction**– Set up auto-correct thresholds for the LOV entity type so that it not only accepts exact matches but also closest utterances with small variations. For example, let us consider that a list value called Apple for which a typo such as _appel_ is accepted based on your threshold settings. The Auto-Correction setting works in the following way:
@@ -1063,14 +1063,16 @@ This feature is not fully supported in all languages [Click here for details](..
     2. The number is converted to a percentage of the total number of letters in the input.
     3. The list value with the highest similarity is considered as input if the score is greater than or equal to the configured percentage.
 
-!!! note ""
+!!! note 
 
     Spell correction does not apply to dictionary words or alphanumeric inputs.
 
 Post v7.1, the following keys are added to the context object for the below-mentioned usage:
 
 * **ambiguousEntityValues**: This key contains values when the user input for a multi-item entity is ambiguous. Using this, you can check if any ambiguous values were identified and construct the flow to resolve the ambiguity. This key is reset if the entity is re-prompted during the dialog. The values are an array of JSON objects, each object containing title, value, and synonym.
-* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.
+* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
+
+<img src="../images/entity-types-list-of-item-enum.png" alt=" List of items (enumerated) " title="List of items (enumerated) " style="border:1px solid gray;zoom:70%;">
 
 !!! note ""
 
@@ -1087,18 +1089,21 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
 ### List of Items (lookup)
 
-Display a list of values to the end-user. To define the lookup list,
+Display a list of values to the end user. To define the lookup list,
 
-1. Click the **Settings** icon next to the **List of items (lookup) Type** field.
+1. Click the **Customise The List Of Items** below the **List of items (lookup) Type** field.
 2. On the List of items (lookup) Setup page, define one of the following list types.
     1. Static List
     2. Remote List
 
 This feature is not fully supported in all languages. [Click here for details](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}.
 
-**Static List**: Use Static List to define the entity values as one of the following list types:
+#### Static List
 
-* **JSON** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
+Use Static List to define the entity values as one of the following list types:
+
+* **List of Values** tab: Enter the **Display Name**, **Value**, and **Synonyms** for the key.
+* **JSON Preview** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
                  
     ```
     [{
@@ -1114,16 +1119,15 @@ This feature is not fully supported in all languages. [Click here for details](.
     ]
     ```
 
-* **Editor** tab – Enter the **Display Name**, **Value**, and **Synonyms** for the key.
-* **Upload File** – Click **Upload File** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
+* **Upload** tab: Click **Upload** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
 
     <img src="../images/entity-types-list-of-item-lookup-upload-file.png" alt="Upload file containing key/value pairs" title="Upload file containing key/value pairs" style="border:1px solid gray;zoom:70%;">
 
 Post v7.1, the following keys are added to the context object for the below-mentioned usage:
 
 * **ambiguousEntityValues**: This key contains values when the user input for a multi-item entity is ambiguous. Using this, you can check if any ambiguous values were identified and construct the flow to resolve the ambiguity. This key is reset if the entity is re-prompted during the dialog. The values are an array of JSON objects, each object containing title, value, and synonym.
-* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.
-
+* **synonymsUsed**: This key holds the synonym used to identify the item. You can use this value to personalize the virtual assistant response accordingly if needed. This key is reset if the entity is re-prompted during the dialog.  
+<img src="../images/entity-types-list-of-item-lookup-static-list.png" alt=" List of items (enumerated) " title="List of items (enumerated) " style="border:1px solid gray;zoom:70%;">
 
 #### Remote List
 

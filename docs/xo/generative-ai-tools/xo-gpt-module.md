@@ -1,6 +1,6 @@
 
 # Kore.ai XO GPT Module
-	
+
 The new Kore.ai XO GPT module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Initial capabilities include Conversation Summarization and User Query Rephrasing. We plan to add more capabilities in future updates, including Intent Resolution, Bot Response Rephrasing, and Entity Co-referencing.
 
 !!! note

@@ -1,5 +1,5 @@
 site_name: Kore ai Docs
-site_author: Rajasekhar Balla
+site_author: Kore ai Content Experience Team
 docs_dir: 'docs/xo/'
 site_dir: 'site/xo/'
 repo_name: Koredotcom/docs
@@ -151,6 +151,7 @@ nav:
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
                 - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
+                - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
@@ -159,7 +160,7 @@ nav:
               - IVR: channels/IVR-integration.md
       - Glossary: getting-started/glossary/concepts-and-terminology.md      
     - Release Notes:
-      - Release Communications: release-notes/release-communications.md
+      - Release Communication: release-notes/release-communications.md
       - What's New:
         - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
@@ -301,9 +302,12 @@ nav:
                 - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
                 - RACL Overview: searchai/content-sources/racl-support.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
+                - Asana: searchai/content-sources/connectors/asana.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
+                - Box: searchai/content-sources/connectors/box.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - GitHub: searchai/content-sources/connectors/github.md
@@ -314,10 +318,12 @@ nav:
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - Monday: searchai/content-sources/connectors/monday.md
                 - Notion: searchai/content-sources/connectors/notion.md
+                - OneDrive: searchai/content-sources/connectors/onedrive.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md     
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md  
+                - WordPress: searchai/content-sources/connectors/wordpress.md   
                 - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
@@ -380,14 +386,15 @@ nav:
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
-      - Overview: quality-management/about-quality-management.md
+      - Overview: quality-management/about-quality-management.md      
       - Setup Guide: quality-management/setup-guide.md
-      - QM Sign Up Process: quality-management/qm-sign-up-process.md
+      - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
       - Analyze:
-        - Dashboard: 
+        - Dashboard:
           - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-specific-dashboard.md
+          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
           - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
+        - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: quality-management/analyze/conversation-mining.md
         - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
@@ -399,8 +406,8 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+          - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
+          - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
         - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
         - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: quality-management/configure/settings.md        
@@ -435,7 +442,13 @@ nav:
     - GenAI Features:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - DialogGPT:
+      - Overview: generative-ai-tools/dialog-gpt.md
+      - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
+      - DialogGPT FAQs: generative-ai-tools/dialog-gpt-faq.md  
+      - Rollout Plan: generative-ai-tools/dialog-gpt-upcoming-features.md
     - Safeguards:
+      - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
@@ -525,12 +538,14 @@ nav:
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
-        - Rate Limits: apis/automation/rate-limit.md
+        - Rate Limits:
+          - Automation AI: apis/automation/rate-limit.md
+          - Contact Center AI: apis/automation/rate-limit-ccai.md
         - API List:          
-          - Automation APIs: apis/automation/api-list.md
-          - Search APIs: apis/searchai/api-list.md
-          - Contact Center APIs: apis/contact-center/contact-center-api-list.md
-          - Agent APIs: apis/agent-ai/apis-list.md
+          - Automation AI: apis/automation/api-list.md
+          - Search AI: apis/searchai/api-list.md
+          - Contact Center AI: apis/contact-center/contact-center-api-list.md
+          - Agent AI: apis/agent-ai/apis-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

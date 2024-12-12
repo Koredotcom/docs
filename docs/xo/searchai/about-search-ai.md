@@ -4,19 +4,27 @@ hide:
   - feedback
 ---
 # About Search AI
-Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. Add multiple data sources for building your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. Enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining automation Use Cases and Answers, you can create an exceptional, seamless conversational experience for your users.
+Search AI offers advanced, AI-powered conversational search capabilities that enable businesses to efficiently navigate vast datasets and deliver users the most relevant information. Powered by large language models (LLMs), Search AI provides accurate, context-aware answers, significantly improving the user experience. Integrate a variety of data sources—such as web crawlers, structured data, documents, catalogues, and knowledge repositories—to create a comprehensive answer index. Customize and enrich content to meet specific business needs and boost user engagement.
+
+By combining automation, LLM capabilities, and intelligent answer generation, Search AI helps create intuitive, seamless conversational search experiences. This innovative approach supports businesses in enhancing user satisfaction and driving informed decision-making.
 
 <kr-grid type="g2">
     <kr-grid-item>
         <img src="../images/lm-answer-content.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Content</kr-grid-title>
-        <kr-grid-desc>Add content from web pages, files, and other sources. Define strategies for extracting chunks, generate vectors from the extracted chunks, and create the knowledge index.</kr-grid-desc>
+        <kr-grid-title>Ingest</kr-grid-title>
+        <kr-grid-desc>Easily integrate content from web pages, files, and third-party knowledge bases, enabling quick access to relevant answers from an extensive data set and simplifying the process of searching for precise information.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./content-sources/introduction.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/lm-answer-configuration.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Configurations</kr-grid-title>
-        <kr-grid-desc>Configure the similarity score for the closer match, set the number of chunks for answer generation, and choose an LLM to get paraphrased answers for user queries.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./answer-configuration.md)
-    </kr-grid-item>           
+        <kr-grid-title>Enhance</kr-grid-title>
+        <kr-grid-desc>Enrich ingested content and  improve the efficiency and precision of generated answers. Tailor your knowledge index by selecting the most suitable embedding models and fields for vector generation.</kr-grid-desc>
+        [Learn more :octicons-arrow-right-24:](./workbench/introduction.md)
+    </kr-grid-item> 
+    <kr-grid-item>
+        <img src="../images/lm-answer-configuration.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Retrieve</kr-grid-title>
+        <kr-grid-desc>Define content retrieval strategies that identify the most relevant content based on search queries. Leverage answer generation techniques to select and generate precise responses from the retrieved content.</kr-grid-desc>
+        [Learn more :octicons-arrow-right-24:](./retrieval.md)
+    </kr-grid-item>
 </kr-grid>

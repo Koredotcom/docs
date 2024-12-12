@@ -17,9 +17,9 @@ This section provides detailed steps on how to run a Kore.ai bot using the Widge
 
 ### Pre-requisites
 
-1. To get started, you will need to build a bot with Digital Views to run in the test application ([see here for more on Digital Views](../../automation/use-cases/digital-skills/digital-views)).
-2. You need enable the Widget SDK channel for the above bot by either creating a new client app or use an existing client app and define the channel settings. [See here](../../channels/add-widget-sdk-channel) for a detailed explanation of the steps.
-3. If you want to co-host the Panels & Widgets along with the WebSDK, you need enable the Web/Mobile Client channel for the above bot by either creating a new client app or use an existing client app and define the channel settings. [See here](../tutorials/web-sdk) for a detailed explanation of the steps.
+1. To get started, you will need to build a bot with Digital Views to run in the test application [see here for more on Digital Views](../../automation/use-cases/digital-skills/digital-views.md).
+2. You need enable the Widget SDK channel for the above bot by either creating a new client app or use an existing client app and define the channel settings. [See here](../../channels/add-widget-sdk-channel.md) for a detailed explanation of the steps.
+3. If you want to co-host the Panels & Widgets along with the WebSDK, you need enable the Web/Mobile Client channel for the above bot by either creating a new client app or use an existing client app and define the channel settings. [See here](../tutorials/web-sdk.md) for a detailed explanation of the steps.
 4. Publish the bot.
 5. From the **Channels -> Configured Channels**, click to open the configured **Widget SDK** channel. From the Configurations tab make a note of the following, we will be using them later in the Widget SDK setup:
     1. Bot Name

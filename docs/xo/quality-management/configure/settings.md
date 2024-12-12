@@ -5,13 +5,13 @@ The Settings allow you to make app-level changes to Conversation Intelligence.
 The Settings has the following two sections:
 
 * Conversation Intelligence
-* Quality Management
+* Quality AI
 
 ## Conversation Intelligence
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the **Conversation Intelligence** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Conversation Intelligence**.
+You can access the **Conversation Intelligence** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.
 
 <img src="../settings/images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
@@ -78,11 +78,11 @@ Steps to enable the Script Adherence Configuration:
 
         * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
 
-## Quality Management
+## Quality AI
 
 The App owners can use the Settings option under QM to enable or disable auto QA scoring of interactions and at an app level. Users with relevant permissions can enable and create bookmarks to collect interactions in different bookmarks for easy future reference.
 
-Yoc can access the **Quality Management** by navigating to **Contact Center AI** > **Quality Management** > **Configure** > **Settings** > **Quality Management**.  
+Yoc can access the **Quality AI** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Quality AI**.  
 <img src="../settings/images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
 
 The QA has the following sections:
@@ -139,7 +139,7 @@ This setting allows you to enable or disable agent-level interaction scoring thr
 #### Enable Agent Score Card
 
 Steps to enable the Agent Score Card:  
-1. Expand the **Quality Management** collapse icon to view the **Agent Score Card**.   
+1. Expand the **Quality AI** collapse icon to view the **Agent Score Card**.   
 <img src="../settings/images/sett-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
 2. Enable the **Agent Score Card** option.
@@ -165,7 +165,7 @@ This feature lets you bookmark interactions into various collections for future 
 #### Enable Bookmarks
 Steps to Add Bookmarks:
 
-1. Expand the **Quality Management** collapse icon to view the following **Bookmarks** option.  
+1. Expand the **Quality AI** collapse icon to view the following **Bookmarks** option.  
 <img src="../settings/images/settings-bookmarks.png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
 
 2. Enable the **Bookmarks** toggle option to add a new bookmark.

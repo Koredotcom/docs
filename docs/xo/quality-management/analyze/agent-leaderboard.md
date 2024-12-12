@@ -2,12 +2,12 @@
 
 This **Agent Leaderboard** feature allows auditors and managers to view both top and bottom-performing agents, along with their conversations. This helps to make informed decisions regarding incentives and coaching assignments. Based on the agents' rankings, it becomes easier to identify and assign coaching assignments to lower-performing agents as needed. The agent leaderboard widget shows all the agents across queues and channels with a functionality to sort across all the columns.
 
-You can view **Agent Leaderboard** by navigating to **Contact Center AI** > **Quality Management** > **Analyze** > **Agent Leaderboard**.   
+You can view **Agent Leaderboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 !!! Note
 
-    If the **Agent Scorecard** toggle view is disabled in the **Settings** of Quality Management by the administrator for a particular agent, then the agent cannot start any automated agent scoring. 
+    If the **Agent Scorecard** toggle view is disabled in the **Settings** of Quality AI by the administrator for a particular agent, then the agent cannot start any automated agent scoring. 
 
 The Agent Leaderboard widget shows all the agents across queues and channels which includes the following list of items:
 

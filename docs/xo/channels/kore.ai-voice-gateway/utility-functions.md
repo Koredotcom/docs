@@ -2,7 +2,7 @@
 
 Kore.ai Voice Gateway offers two utility libraries to manage call handling and transfers - Agent Utils and Voice Utils. These utilities provide comprehensive control over call flows, including features like SIP transfers, audio control, DTMF handling, and custom header management. Together, they offer flexible options for implementing both complex agent-assisted scenarios and straightforward external transfers.
 
-## Agent Utils (SmartAssist / Contact Center Library)
+## Agent Utils (SmartAssist/Contact Center Library)
 
 The `agentUtils` library in the SmartAssist allows you to dynamically modify call transfer properties through the bot builder (XO) before transferring the call to a human agent. It provides a wide range of options, including:
 
@@ -42,10 +42,10 @@ If you are transferring the call to an external SIP provider or a phone number d
 
 ## When to Use What
 
-* Use <code>agentUtils</code> + Agent Transfer Node</strong>:
-This method should be used when <strong>header</strong> <strong>encoding/decoding</strong> or <strong>user-to-user (UUI) data transfer</strong> is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
-* <strong>Use <code>voiceUtils</code></strong>:
-Use this method when you need to <strong>transfer the call directly to an external source</strong> like a SIP endpoint or phone number, <strong>bypassing the SmartAssist platform</strong>. It is best for simple transfers without the need for header encoding or UUI support.
+* Use `agentUtils` + **Agent Transfer Node**:<br>
+This method should be used when **header encoding/decoding** or **user-to-user (UUI) data transfer** is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
+* Use `voiceUtils`:
+Use this method when you need to **transfer the call directly to an external source** like a SIP endpoint or phone number, **bypassing the SmartAssist platform**. It is best for simple transfers without the need for header encoding or UUI support.
 
 ## VoiceUtils Helper Methods
 
@@ -57,9 +57,9 @@ These functions can be used in the Channel Override template inside Java script 
 
 **Use Cases**:
 
-a) If you need to forcibly hang up the call from the bot during the flow or call.
+(a) If you need to forcibly hang up the call from the bot during the flow or call.
 
-b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
+(b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
 
    **Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
 
@@ -146,7 +146,7 @@ This function transfers the call to an external contact number (telephone number
 
 **Use Case:**
 
-Transfer the call to a third party using the utility in the message node with Run Automation from Smartassist.
+Transfer the call to a third party using the utility in the message node with Run Automation from SmartAssist.
 
 message - Optional (Send Empty Message),  referTo - Required, headers - Optional
 
@@ -176,7 +176,7 @@ message - Optional (Send Empty Message),  referTo - Required, headers - Optional
   <tr>
    <td>ReferTo
    </td>
-   <td>A SIP URI or a phone number/user identifier	
+   <td>A SIP URI or a phone number/user identifier
    </td>
    <td>String
    </td>
@@ -388,7 +388,7 @@ When one bot interacts with another bot and tries to give DTMF Input.
    </td>
    <td>String
    </td>
-   <td>A string containing a sequence of DTMF digits (0-9,*,#).	
+   <td>A string containing a sequence of DTMF digits (0-9,*,#).
    </td>
    <td>Yes
    </td>
@@ -456,6 +456,7 @@ The default is 3 seconds.
 </table>
 
 **Example:**
+
 
 `\`
 `let` `length` `=` `4,`

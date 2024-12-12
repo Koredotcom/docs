@@ -68,16 +68,29 @@ To configure the Component Properties tab, please follow the steps below:
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
     5. [Defining Data Service](#define-a-data-service)
 
- 10.  Enable the **PII Redaction for API responses**.
-    * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** \
+ 10.  Enable the **PII Redaction for API responses**.  
+    
+       * You can define the path of the API response data to be redacted in the **Response Data Path**. The path must start with 'body.' or 'headers.' followed by data. To add a path, click **+Add.** 
 
-    * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
-        * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
-        * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
-        * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
-    * Under **Redaction of PII Data**, you can configure how the value of this entity should be presented if it is identified as PII data and is used in defining any messages or responses. You can choose to de-identify PII Data or use the original values while presenting this data to the user.
-    For more information, see the [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"} article.  
-    <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;">
+       * Select one of the following options about how you want to **display** the sensitive data to non-authorized users:
+         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
+         
+         * **Replacement** – Replace the data with a static value that you enter in the Sensitive Entity settings.
+         
+         * **Mask with character** – Mask the first few and last few characters of the sensitive data with ‘+’ or ‘#’ symbols.
+        
+       * Under **Redaction of PII Data**, you can specify the format for presenting this API response containing PII data in messages and post-processing:
+
+         * De-identify PII data when presenting it to the user or in post-processing: The redacted value is used in messages and post-processing.
+         
+         * Use the original value of the PII data while presenting it to the user or in post-processing: The original value is used in messages and post-processing.
+
+            !!! note
+            
+                These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.
+
+        For more information, see [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}.  
+       <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
 11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
