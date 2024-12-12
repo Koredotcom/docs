@@ -416,8 +416,8 @@ While interacting with a customer, if an agent needs to seek external consultati
 3. The external consult call is connected and the customer is placed on hold. The following options are available with agents during the external consult call:
     1. **Mute** – Mute the conversation.
     2. **Hold** – Place the external consult call on hold.
-    3. **Merge** – Merge the external call with the existing inbound call (conference).
-    4. **Keypad** –  To send DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
+    3. **Keypad** –  To enter DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
+    4. **Merge** – Merge the external call with the existing inbound call (conference).
     5. **Forward** – Forward the call to another agent.
     6. **End** – End the external consult call.
     7. **Swap** (Top Right Corner)– Swap between the customer and the external call.  
