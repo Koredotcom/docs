@@ -203,6 +203,7 @@ nav:
       - Analytics:
         - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
+        - Model Traces: settings/monitoring/analytics/model-traces.md
     - Security and Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
     - Billing:
