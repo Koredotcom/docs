@@ -61,7 +61,7 @@ If you have used the feature before, the data from your previous model selection
 
 **Model Traces** in the **Settings** console provides a centralized view for actionable insights into run-level details of the selected model deployed in your account.
 
-Key features for customizing the model traces data include:
+The key features for customizing the model traces data include:
 
 * **Model Name Filter**: Required for selecting and viewing information specific to the model you want to monitor.
 <img src="../images/model-name-filter.png" alt="model name filter" title="model name filter" style="border: 1px solid gray; zoom:75%;">
@@ -102,7 +102,7 @@ Below is a sample of the export schema file. The file name is automatically save
 
 * **Model Performance Metrics Summary**: Summarizes key metrics to help quickly analyze the model’s performance. [Learn more](./model-traces.md/#performance-metrics-summary){:target="_blank"}.
 * **Model Traces**: The table displays all runs executed by the model since its configuration, sorted by execution date from the latest to the oldest records. It includes data from the initial execution onward—whether deployed (for open-source and fine-tuned models) or integrated (for external models). The table includes the following metrics:
-    * **Status**: An icon indicating the success or failure of the run is displayed. [Learn more](./model-traces.md/#key-features){:target="_blank"}.
+    * **Status**: An icon indicating the success or failure of the run is displayed. See point 7 [here](./model-traces.md/#key-features){:target="_blank"}.
     * **Request ID**: The unique identifier used for the run record. 
     * **Response Time**: The time taken by the model to respond to a request.
     * **Deployment Version**: The model version deployed in your account. 
@@ -185,7 +185,7 @@ By default, the current day will be set as the end date. This feature allows you
 
 ## Filter Model Traces by Columns
 
-You can narrow down the information displayed for model traces by applying **custom column filters**. This functionality is similar to the Audit Logs feature. [Learn more](../audit-logs.md/#filter-audit-logs){:target="_blank"}.
+You can narrow down the information displayed for model traces by applying **custom column filters**. This functionality is similar to **Filter** in the Audit Logs feature. [Learn more](../audit-logs.md/#filter-audit-logs){:target="_blank"}.
 
 These filters allow you to select specific column values, compare the chosen or entered values, and apply logical operators across columns for multi-level filtering, providing targeted, custom data on the UI.
 
@@ -212,8 +212,6 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td><strong>Comparison Operator</strong>
    </td>
-   <td><strong>Result</strong>
-   </td>
    <td><strong>Input Type for Value</strong>
    </td>
    <td><strong>Value Options</strong>
@@ -226,23 +224,17 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td>Is Equals To
    </td>
-   <td>Displays records where the column/field matches the selected value.
-   </td>
    <td rowspan="2" >List Selection
    </td>
    <td rowspan="2" >
 <ul>
-
 <li><strong>Failed</strong>: Indicates failed runs.</li>
-
 <li><strong>Success</strong>: Indicates successful runs.</li>
 </ul>
    </td>
   </tr>
   <tr>
    <td>Is Not Equals To
-   </td>
-   <td>Displays records where the column/field does not match the selected value.
    </td>
   </tr>
   <tr>
@@ -252,8 +244,6 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td>Is Equals To
    </td>
-   <td>Displays records where the column/field matches the entered value.
-   </td>
    <td rowspan="3" >Enter manually
    </td>
    <td rowspan="3" >Any value
@@ -262,13 +252,9 @@ The table below summarizes the available columns along with their supported oper
   <tr>
    <td>Is Not Equals To
    </td>
-   <td>Displays records where the column/field does not match the entered value.
-   </td>
   </tr>
   <tr>
    <td>Contains
-   </td>
-   <td>Displays records by matching the column or field partially  or  completely with the value you select.
    </td>
   </tr>
   <tr>
@@ -278,8 +264,6 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td>Is Equals To
    </td>
-   <td>Displays records where the column/field matches the entered value.
-   </td>
    <td rowspan="6" >Enter manually
    </td>
    <td rowspan="6" >Enter the numeric values for minutes,  seconds, and milliseconds in the m:s:ms format.
@@ -288,31 +272,21 @@ The table below summarizes the available columns along with their supported oper
   <tr>
    <td>Is Not Equals To
    </td>
-   <td>Displays records where the column/field does not match the entered value.
-   </td>
-  </tr>
+   </tr>
   <tr>
    <td>Is Greater Than
-   </td>
-   <td>Displays records where the column value is greater than (>) the entered value.
    </td>
   </tr>
   <tr>
    <td>Is Less Than
    </td>
-   <td>Displays records where the column value is less than (&lt;) the entered value.
-   </td>
   </tr>
   <tr>
    <td>Is Greater Than Equals To
    </td>
-   <td>Displays records where the column/field value is greater than or equal to (>=) the entered value.
-   </td>
   </tr>
   <tr>
    <td>Is Less Than Equals To
-   </td>
-   <td>Displays records where the column/field value is less than or equal to (&lt;=) the entered value.
    </td>
   </tr>
   <tr>
@@ -322,8 +296,6 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td>Is Equals To
    </td>
-   <td>Displays records where the column/field matches the entered value.
-   </td>
    <td rowspan="3" >Enter manually
    </td>
    <td rowspan="3" >Any value
@@ -332,13 +304,9 @@ The table below summarizes the available columns along with their supported oper
   <tr>
    <td>Is Not Equals To
    </td>
-   <td>Displays records where the column/field does not match the entered value.
-   </td>
   </tr>
   <tr>
    <td>Contains
-   </td>
-   <td>Displays records where the column or field data contains the exact value you enter, either as a part or whole.
    </td>
   </tr>
   <tr>
@@ -348,31 +316,25 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td>Is Equals To
    </td>
-   <td>Displays records where the column/field matches the selected value. 
-   </td>
    <td rowspan="3" >List Selection
    </td>
    <td rowspan="3" >
 <ul>
 
-<li><strong>Agent</strong>: The request was sent to the model from an agent. <a href="https://docs.kore.ai/gale/agents/overview/">Learn more</a>.</li>
+<li><strong>Agent</strong>: The request was sent to the model from an agent. <a href="https://docs.kore.ai/gale/agents/overview/" target="_blank">Learn more</a>.</li>
 
-<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/gale/playground/create-a-new-prompt-experiment/">Learn more</a>.</li>
+<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/gale/playground/create-a-new-prompt-experiment/" target="_blank">Learn more</a>.</li>
 
-<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="https://docs.kore.ai/gale/models/open-source-models/generate-an-api-key-open-source/">Learn more</a>.</li>
+<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="https://docs.kore.ai/gale/models/open-source-models/generate-an-api-key-open-source/" target="_blank">Learn more</a>.</li>
 </ul>
    </td>
   </tr>
   <tr>
    <td>Is Not Equals To
    </td>
-   <td>Displays records where the column/field does not match the selected  value.
-   </td>
   </tr>
   <tr>
    <td>Contains
-   </td>
-   <td>Displays records by matching the column or field partially or completely with the value you select.
    </td>
   </tr>
   <tr>
@@ -382,8 +344,6 @@ The table below summarizes the available columns along with their supported oper
    </td>
    <td>Is Equals To
    </td>
-   <td>Displays records where the column/field matches the selected value. 
-   </td>
    <td rowspan="3" >List Selection
    </td>
    <td rowspan="3" >Custom value(s) set by the user.
@@ -392,13 +352,9 @@ The table below summarizes the available columns along with their supported oper
   <tr>
    <td>Is Not Equals To
    </td>
-   <td>Displays records where the column/field does not match the selected  value.
-   </td>
   </tr>
   <tr>
    <td>Contains
-   </td>
-   <td>Displays records by matching the column or field partially or completely with the value you select.
    </td>
   </tr>
 </table>
@@ -410,6 +366,7 @@ The UI displays all the relevant model traces' records that align with the appli
 <img src="../images/number-of-filters.png" alt="number of filters" title="number of filters" style="border: 1px solid gray; zoom:75%;">
 
 To clear the filter settings, click **Clear All**.
+
 <img src="../images/clear-all-link.png" alt="clear all" title="clear all" style="border: 1px solid gray; zoom:75%;">
 
 ### Add Multiple Filters
