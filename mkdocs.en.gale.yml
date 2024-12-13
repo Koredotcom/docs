@@ -134,9 +134,8 @@ nav:
       - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
-    - Manage Agents: 
+    - Agent Endpoint: 
       - Deploy an Agent: agents/deploy-an-agent.md
-      - Export an Agent: agents/export-an-agent.md
     - Agent Monitor: 
       - About Agent Monitor: agents/agent-monitor/about-agent-monitor.md
       - Accessing Agent Monitor: agents/agent-monitor/accessing-agent-monitor.md
@@ -152,6 +151,7 @@ nav:
       - Agent Audit Logs: agents/agent-audit-log.md
     - Configurations:
       - Configure an Agent: agents/configure-an-agent.md
+      - Export an Agent: agents/export-an-agent.md
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tuned Models: 
