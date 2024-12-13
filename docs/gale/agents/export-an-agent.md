@@ -4,7 +4,11 @@ GALE offers the ability to export specific agent versions from your account as s
 
 When you export an agent, GALE automatically creates a *.zip* file named after the agent. For example, if the agent is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*."
 
-You can save this folder in the desired location on your local machine. The exported package can be reimported into GALE, ensuring seamless restoration into your account.
+You can save this folder in the desired location on your local machine. 
+
+<div class="admonition note">
+<p class="admonition-title">Useful Information</p>
+<p>The exported package can be reimported into GALE, ensuring seamless restoration into your account.</p></div>
 
 The [exported package](../agents/export-an-agent.md/#exported-information){:target="_blank"} preserves the following agent configurations within JSON files:
 
@@ -37,14 +41,14 @@ To export an agent’s version, follow the steps below:
 
 The export process begins, and a success message is displayed after the agent validation is completed and the export process finishes.
 
+<img src="../images/exporting-in-progress.png" alt="export in progress" title="export in progress" style="border: 1px solid gray; zoom:75%;">
+
+<img src="../images/agent-export-success.png" alt="export success" title="export success" style="border: 1px solid gray; zoom:75%;">
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Once export begins, the selected version cannot be changed.
 </p></div>
-    
-<img src="../images/exporting-in-progress.png" alt="export in progress" title="export in progress" style="border: 1px solid gray; zoom:75%;">
-
-<img src="../images/agent-export-success.png" alt="export success" title="export success" style="border: 1px solid gray; zoom:75%;">
 
 ### Exported Information
 
