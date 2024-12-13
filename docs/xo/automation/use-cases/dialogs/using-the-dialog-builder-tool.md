@@ -558,7 +558,7 @@ Add or modify the following settings for your dialog:
         
  !!! Note 
         
-    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+        This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
 * **Customer Use Cases** – Select if this dialog task is available for end users (customers).
 * **Agent AI Use Cases** - Select if this dialog task is available for agents.
     * Enable or disable the following options in this section:
