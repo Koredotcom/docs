@@ -124,7 +124,8 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>withallchild</strong>
    </td>
-   <td>Whether child nodes need to be included
+   <td>Whether child nodes need to be included. Accepted values are **true** or **false**.
+
    </td>
    <td>Optional
    </td>
@@ -140,7 +141,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>language</strong>
    </td>
-   <td>The Bot language which is identified by the language acronym. For example, <em>en</em> for English and <em>de</em> for German. The user can set the default language of the bot.
+   <td>The Bot language which is identified by the language code. For example, <em>en</em> for English and <em>de</em> for German. The user can set the default language of the bot.
    </td>
    <td>Required
    </td>
@@ -162,11 +163,6 @@ curl --location 'http://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?limi
 --header 'auth: eyJfxxxxxI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWJjZTZiMfxxxxxNTFkYS1iYjNhLWY5MzkwMDM0Mjg2ZiJ9.40rpnPhnY1CnDPwWfxxxxx'
  
 ```
-## Body Parameters
-
-No body parameters are passed.
-
-
 ## Sample Response
 
 
