@@ -2,13 +2,9 @@
 
 GALE offers the ability to export specific agent versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer agent configurations without compromising the integrity and security of the agent setup.
 
-When you export an agent, GALE automatically creates a *.zip* file named after the agent. For example, if the agent is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*."
+When you export an agent, GALE automatically creates a *.zip* file named after the agent. For example, if the agent is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
 
-You can save this folder in the desired location on your local machine. 
-
-<div class="admonition note">
-<p class="admonition-title">Useful Information</p>
-<p>The exported package can be reimported to create a new agent or add it as a version to an existing one, ensuring seamless restoration.</p></div>
+The exported package can be reimported to create a new agent or add it as a version to an existing one, ensuring seamless restoration.
 
 The [exported package](../agents/export-an-agent.md/#exported-information){:target="_blank"} preserves the following agent configurations within JSON files:
 
@@ -50,7 +46,7 @@ The export process begins, and a success message is displayed after the agent va
 <p>Once export begins, the selected version cannot be changed.
 </p></div>
 
-### Exported Information
+## Exported Information
 
 The exported package includes the following JSON files encapsulating the agent’s configuration data:
 
@@ -68,8 +64,10 @@ The file information is displayed as follows:
 
 <img src="../images/app-definition-file-example.png" alt="file example" title="file example" style="border: 1px solid gray; zoom:75%;">
 
-## Related Information
+<hr>
 
-* [Import an Agent](../agents/import-an-agent.md){:target="_blank"}- Create an agent by importing configurations or add it as a version to an existing agent.
-* [Deploy and Agent](../agents/deploy-an-agent.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for agent integration.
-* [Configure an Agent](../agents/configure-an-agent.md){:target="_blank"}- Modify the agent's details, configure settings, or undeploy and delete it if unused.
+#### Related Links
+
+* [Import an Agent](../agents/import-an-agent.md){:target="_blank"} - Create an agent by importing configurations or add it as a version to an existing agent.
+* [Deploy an Agent](../agents/deploy-an-agent.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for agent integration.
+* [Configure an Agent](../agents/configure-an-agent.md){:target="_blank"} - Modify the agent's details, configure settings, or undeploy and delete it if unused.
