@@ -8,7 +8,7 @@ You can save this folder in the desired location on your local machine.
 
 <div class="admonition note">
 <p class="admonition-title">Useful Information</p>
-<p>The exported package can be reimported into GALE, ensuring seamless restoration into your account.</p></div>
+<p>The exported package can be reimported to create a new agent or add it as a version to an existing one, ensuring seamless restoration.</p></div>
 
 The [exported package](../agents/export-an-agent.md/#exported-information){:target="_blank"} preserves the following agent configurations within JSON files:
 
