@@ -222,8 +222,10 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
 9. Scroll down and add the following Configuration Parameters. (Only for chat.)
 
-!!! note
-    If the language parameter is not provided, English (en) is used as the default. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to obtain the language code corresponding to your bot’s language.  
+    !!! note
+
+        If the language parameter is not provided, English (en) is used as the default. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to obtain the language code corresponding to your bot’s language.  
+
     <img src="../nice-max-images/configuration-parameters-8.png" alt="configuration-parameters" title="configuration-parameters" style="border: 1px solid gray; zoom:80%;">
 
 10. Click **Create**.
