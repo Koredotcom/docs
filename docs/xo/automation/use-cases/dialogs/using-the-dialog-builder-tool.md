@@ -552,11 +552,13 @@ Add or modify the following settings for your dialog:
 * **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
 * **Description** – An optional description of your dialog task displayed in the XO Platform.
 * **Intent Settings:**
-        * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
-        * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-        !!! Note 
- 
-	    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+            
+     * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
+     * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
+        
+ !!! Note 
+        
+    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
 * **Customer Use Cases** – Select if this dialog task is available for end users (customers).
 * **Agent AI Use Cases** - Select if this dialog task is available for agents.
     * Enable or disable the following options in this section:
