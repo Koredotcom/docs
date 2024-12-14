@@ -14,7 +14,11 @@ The [exported package](../agents/export-an-agent.md/#exported-information){:targ
 * Environment variables
 * Sync/Async setup
 
-To maintain security, sensitive information such as **API keys**, **sharing permissions**, **agent endpoint**, and **audit logs** are excluded from the exported package. 
+To maintain security, sensitive information such as **API keys**, **sharing permissions**, **agent endpoint**, and **audit logs** are excluded from the exported package.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Users with only <b>Viewer</b> permissions cannot export an agent.</p></div>
 
 ## Steps to Export an Agent
 
