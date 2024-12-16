@@ -92,7 +92,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>state</strong>
    </td>
-   <td>The mode or state of the app. Accepted conditions are Published or Configured mode.
+   <td>The mode or state of the app - Published or Configured.
    </td>
    <td>Required
    </td>
@@ -108,7 +108,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>offset</strong>
    </td>
-   <td>The number of records to be skipped. The default count is set 0.
+   <td>The number of records to be skipped. The default count is set to 0.
    </td>
    <td>Optional
    </td>
