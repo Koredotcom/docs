@@ -27,9 +27,9 @@ Steps to add a dialog task:
 
 7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).  
     
-!!!Note 
+    !!!Note 
         
-     Non utf 8 characters are not supported for intent display name.
+         Non utf 8 characters are not supported for intent display name.
 
 8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(Agent AI Use Case)**, or both.
 9. Under **Intent Settings**, set options for the task to be independent, such as a **Sub-intent dialog** or **Hide it from Help**.
@@ -562,12 +562,12 @@ Add or modify the following settings for your dialog:
 * **Intent Settings:**
             
      * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
-     * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
+     * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.  
+      
+      !!!Note 
         
- !!! Note
-    
-     This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
-     
+          This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+        
 * **Customer Use Cases** – Select if this dialog task is available for end users (customers).
 * **Agent AI Use Cases** - Select if this dialog task is available for agents.
     * Enable or disable the following options in this section:
