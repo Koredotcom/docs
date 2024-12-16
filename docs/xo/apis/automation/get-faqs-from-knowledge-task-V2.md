@@ -92,7 +92,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>state</strong>
    </td>
-   <td>Published or configured mode
+   <td>The mode or state of the app - Published or Configured.
    </td>
    <td>Required
    </td>
@@ -108,7 +108,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>offset</strong>
    </td>
-   <td>The number of records to be skipped. The default count is set 0.
+   <td>The number of records to be skipped. The default count is set to 0.
    </td>
    <td>Optional
    </td>
@@ -124,7 +124,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>withallchild</strong>
    </td>
-   <td>Whether child nodes need to be included. Accepted values are **true** or **false**.
+   <td>Whether child nodes need to be included. Accepted conditions are true or false.
 
    </td>
    <td>Optional
