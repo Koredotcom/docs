@@ -464,18 +464,17 @@ Create a Lightning Out app, a special type of standalone Aura app:
 3. In the **Visualforce Markup** code editor, add `&lt;apex:includeLightning />` at the beginning of your Visualforce page. This component loads the JavaScript file that Lightning Components for Visualforce uses.
 4. Paste the following code into the **Visualforce Markup** code editor at the desired location where you want the Agent AI widget to appear:
 
-```
-<div id="lwc-container"></div>
-<script>
-    // Initialize Lightning Out with the app you created
-    $Lightning.use("c:LightningApplication", function() {
-        // Create the LWC component inside the div container
-        $Lightning.createComponent("KAA:niceCTIAgentAssistVoice", { height: '600px', width: '500px'}, "lwc-container");
-    });
-</script>
-```
+   ```
+   <div id="lwc-container"></div>
+   <script>
+      // Initialize Lightning Out with the app you created
+      $Lightning.use("c:LightningApplication", function() {
+         // Create the LWC component inside the div container
+         $Lightning.createComponent("KAA:niceCTIAgentAssistVoice", { height: '600px', width: '500px'}, "lwc-container");
+      });
+   </script>
+   ```
    !!! note
-
       Replace “LightningApplication” with the name of the Lightning Out app you created in [Step-1](#step-1-create-a-lightning-out-app). Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference - these are the height and width of the Agent AI widget.
 
 5. Click **Save**.
