@@ -92,7 +92,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>state</strong>
    </td>
-   <td>The mode or state of the app.  Accepted conditions are Published or configured mode.
+   <td>The mode or state of the app. Accepted conditions are Published or Configured mode.
    </td>
    <td>Required
    </td>
