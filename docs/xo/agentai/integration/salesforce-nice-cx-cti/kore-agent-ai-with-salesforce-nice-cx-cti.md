@@ -474,9 +474,9 @@ Create a Lightning Out app, a special type of standalone Aura app:
     });
 </script>
 ```
-!!! note
+   !!! note
 
-    Replace “LightningApplication” with the name of the Lightning Out app you created in [Step-1]{#### Step-1: Create a Lightning Out App}. Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference - these are the height and width of the Agent AI widget.
+      Replace “LightningApplication” with the name of the Lightning Out app you created in [Step-1](#step-1-create-a-lightning-out-app). Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference - these are the height and width of the Agent AI widget.
 
 5. Click **Save**.
 
