@@ -26,9 +26,10 @@ Steps to add a dialog task:
     <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
 
 7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).  
-    !!!note 
+    
+!!!Note 
         
-        Non utf 8 characters are not supported for intent display name.
+     Non utf 8 characters are not supported for intent display name.
 
 8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(Agent AI Use Case)**, or both.
 9. Under **Intent Settings**, set options for the task to be independent, such as a **Sub-intent dialog** or **Hide it from Help**.
@@ -67,7 +68,8 @@ Right after creating your dialog task, you will see a **Conversation Preview** w
     <img src="../images/using-dialog-builder-img5-create-dialog-genai.png" alt="Select Gen Ai" title="Select Gen Ai" style="border:1px solid gray;zoom:60%;">
 
 2. Provide **Intent Name** (mandatory) and a meaningful **Description** that states the purpose of the Dialog Task, and click **Generate**.  
-    !!!note
+    
+    !!!Note
         
         Non utf 8 characters are not supported for intent display name.
 
@@ -564,7 +566,8 @@ Add or modify the following settings for your dialog:
         
  !!! Note
     
-    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+     This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+     
 * **Customer Use Cases** – Select if this dialog task is available for end users (customers).
 * **Agent AI Use Cases** - Select if this dialog task is available for agents.
     * Enable or disable the following options in this section:
