@@ -124,7 +124,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>withallchild</strong>
    </td>
-   <td>Whether child nodes need to be included. Accepted conditions are **true** or **false**.
+   <td>Whether child nodes need to be included. Accepted conditions are true or false.
 
    </td>
    <td>Optional
