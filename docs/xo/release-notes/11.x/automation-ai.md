@@ -73,7 +73,9 @@ Formatted text is rendered properly across all supported channels, and the featu
 The **Get FAQs API** has been enhanced to support two sets of parameters, providing more flexible retrieval options while ensuring backward compatibility:
 
 * Existing Parameters (backward compatible): ktId and parentId (node ID)
-* New Parameters (alternative option): botId, language, mode (configured/published), and nodeName.
+* New Parameters (alternative option): botId, language, mode (configured/published), and nodeName.  
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/get-faqs-from-knowledge-task-V2.md)
 
 <hr>
 

@@ -180,9 +180,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 1. [NICE CX Integration Hubs, Add Agent Assist Hub](#nice-cx-integration-hubs-add-agent-assist-hub)
 2. [NICE CX Studio, Import Chat and Voice Scripts and Configure Parameters](#nice-cx-studio-import-chat-voice-scripts-and-configure-parameters)
 3. [NICE CX Setup, Attach Point of Contact with Chat/Voice Script](#nice-cx-setup-attach-point-of-contact-with-chatvoice-script)
-4. [Access Data in Agent AI Bot](#access-custom-data-in-agent-ai-bot)
-5. [Chat Simulation](#chat-simulation)
-6. [Voice Simulation](#voice-simulation)
+4. [Chat Simulation](#chat-simulation)
+5. [Voice Simulation](#voice-simulation)
 
 ## Nice CX Integration Hubs > Add Agent Assist Hub
 
@@ -196,12 +195,12 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 4. Click **Agent Assist Hub** > **Add Agent Assist App**.  
 <img src="../nice-max-images/add-agent-assist-app-3.png" alt="add-agent-assist-app" title="add-agent-assist-app" style="border: 1px solid gray; zoom:80%;">
 
-1. Enter the name of the **Agent Assist App** in the **AGENT ASSIST APP NAME** field.
-2. Select **Custom Agent Assist Endpoints**.
-3. Click **Next**.  
+5. Enter the name of the **Agent Assist App** in the **AGENT ASSIST APP NAME** field.
+6. Select **Custom Agent Assist Endpoints**.
+7. Click **Next**.  
 <img src="../nice-max-images/custom-agent-assist-endpoint-4.png" alt="custom-agent-assist-endpoint" title="custom-agent-assist-endpoint" style="border: 1px solid gray; zoom:80%;">
 
-4. Add the following settings with config parameters:
+8. Add the following settings with config parameters:
     1. Agent UI Option: Available by default 
     2. App URL: {<a href="#adn">Agent AI URL</a>}/integrations/nice/iframe/?params={scriptparams}
     3. App Title: Kore Agent AI (change as needed)
@@ -220,10 +219,16 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
             * Payload: {“appId”: &lt;Bot Client ID>}
             * Header: {“alg”: “HS256″,”typ”: “JWT”}
             * Secret: Bot Client Secret.
-1. Scroll down and add the following Configuration Parameters. (only for chat)  
-<img src="../nice-max-images/configuration-parameters-8.png" alt="configuration-parameters" title="configuration-parameters" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Create**.
+9. Scroll down and add the following Configuration Parameters. (Only for chat.)
+
+    !!! note
+
+        If the language parameter is not provided, English (en) is used as the default. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to obtain the language code corresponding to your bot’s language.  
+
+    <img src="../nice-max-images/configuration-parameters-8.png" alt="configuration-parameters" title="configuration-parameters" style="border: 1px solid gray; zoom:80%;">
+
+10. Click **Create**.
 
 ## NICE CX Studio > Import Chat & Voice Scripts and Configure Parameters
 
@@ -242,7 +247,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         2. Bot Client Secret
         3. Bot ID
         4. Agent AI Widget URL
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot. Refer to [Access Custom Data in Agent AI Bot](#access-custom-data-in-agent-ai-bot) for instructions on how to access customdata in the bot. 
+        5. Bot Language Code - “en” is set as the default language. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to provide the language code for your bot's language.
+    2. Custom Data: The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot. Refer to [Access Custom Data in Agent AI Bot](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} for instructions on how to access customdata in the bot. 
  
         Include your data in the customdata object (one key-value pair per line). For example: 
 
@@ -283,28 +289,6 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 8. Click **Done** to save it.  
 !!! note
     To view the summary pop-up in the Agent AI widget, you must assign a disposition to the skill. If you don’t, the chat/voice screen automatically closes once the session ends.
-
-## Access Custom Data in Agent AI Bot
-
-You can access Custom Data in **Welcome Events** in **Agent AI configuration** page and in **Dialog Tasks** in **Agent AI automation** page.
-
-Custom Data can be accessed as
-
-```
-{{context.session.UserContext.customData.<key>}}
-```
-
-**Welcome Events:**  
-<img src="../nice-max-images/welcome-events-14.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
-
-**Dialog Tasks:**
-
-In the **Dialog Task**, open a **Message** node, and click **MANAGE RESPONSES**.  
-<img src="../nice-max-images/manage-responses-15.png" alt="manage-responses" title="manage-responses" style="border: 1px solid gray; zoom:80%;">  
-
-<img src="../nice-max-images/plain-responses-16.png" alt="plain-responses" title="plain-responses" style="border: 1px solid gray; zoom:80%;">
-
-<img src="../nice-max-images/java-script-response-17.png" alt="java-script-response" title="java-script-response" style="border: 1px solid gray; zoom:80%;">
 
 ## Chat Simulation
 
