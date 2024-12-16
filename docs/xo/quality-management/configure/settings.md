@@ -58,9 +58,7 @@ Steps to enable the Script Adherence Configuration:
 
 2. Define the scripts for the following attributes to check the agent adherence. 
 
-    * **Attribute**: Shows script steps like Greeting, Branding, and so on, where custom messages can be added.
-
-    * **Message**: Shows the custom messages that are already configured.
+    * **Attribute**: Shows script steps like Greeting, Branding, and so on, where you can add custom messages.
 
     * **Action**: Enables you to enter messages for the agent by toggling the action button.
 
@@ -69,6 +67,12 @@ Steps to enable the Script Adherence Configuration:
         Upon enabling, the system checks for adherence to the configured messages of the script adherence section of conversation intelligence instead of the default messages.
 
     * **Message**: Allows you to define specified attribute messages for the agent or user. You can add more than one message for the user for the same attribute and delete the defined messages.
+
+        !!! Note
+    
+        If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute.
+
+    <img src="./settings/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
     * **Save**: Allows you to save the defined messages.
 
