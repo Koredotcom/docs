@@ -979,14 +979,14 @@ To export audit logs, follow the steps below:
 
 1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
 2. Click the **Export** icon next to the **Filter By** icon.
-<img src="../monitoring/images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
 
 The following message is displayed once the file is downloaded. The file can be found in the configured location in your system.
-<img src="../monitoring/images/success-message-export-audit-logs.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/success-message-export-audit-logs.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
 
 The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file is shown below.
 
-<img src="../monitoring/images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
 
 GALE’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
