@@ -12,6 +12,10 @@ This updated version of the Raw Data API offers the following additional convers
 * Full end-user utterances
 * Dialog task execution details
 * Agent search bar activity timing
+* Name of the queue involved in the conversation
+* Number of times an agent uses the scroll up and scroll down buttons
+* Names of the URLs an agent clicks 
+
 
 <table>
   <tr>
@@ -3166,6 +3170,40 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
    <td>boolean (True / False)
    </td>
    <td>Example: “false” without the double-quotes
+   </td>
+  </tr>
+  <tr>
+   <td>queueInfo
+
+    * queueId
+    * queueName
+
+   </td>
+   <td>string
+   </td>
+   <td>Unique name and ID number of the queue involved in the conversation.
+
+   Example: “CreditCard”, “qu-2335c1-8et33-33535-133535”
+
+   </td>
+  </tr>
+  <tr>
+   <td>countScrollUp and countScrollDn
+   </td>
+   <td>integer
+   </td>
+   <td>Number of times an agent clicks the scroll up and/or scroll down buttons.
+   </td>
+  </tr>
+  <tr>
+   <td>linksClicked
+   </td>
+   <td>string
+   </td>
+   <td>List of the URL/s an agent clicks with   timestamps during a conversation.
+   
+   Example: “https://www.apple.com/in/”, 2024-12-17T11:04:37.163Z
+
    </td>
   </tr>
 </table>
