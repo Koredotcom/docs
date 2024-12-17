@@ -301,6 +301,7 @@ nav:
                 - Introduction: searchai/content-sources/connectors.md
                 - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
                 - RACL Overview: searchai/content-sources/racl-support.md
+                - Aha: searchai/content-sources/connectors/aha.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
                 - Asana: searchai/content-sources/connectors/asana.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
@@ -323,7 +324,9 @@ nav:
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md  
-                - WordPress: searchai/content-sources/connectors/wordpress.md   
+                - Trello: searchai/content-sources/connectors/trello.md
+                - WordPress: searchai/content-sources/connectors/wordpress.md
+                - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
