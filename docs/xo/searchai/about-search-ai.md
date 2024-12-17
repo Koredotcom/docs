@@ -10,19 +10,19 @@ By combining automation, LLM capabilities, and intelligent answer generation, Se
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/lm-answer-content.svg" style="zoom:200%;"></img>
+        <img src="../images/ingest.svg" style="zoom:200%;"></img>
         <kr-grid-title>Ingest</kr-grid-title>
         <kr-grid-desc>Easily integrate content from web pages, files, and third-party knowledge bases, enabling quick access to relevant answers from an extensive data set and simplifying the process of searching for precise information.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./content-sources/introduction.md)
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/lm-answer-configuration.svg" style="zoom:200%;"></img>
+        <img src="../images/enhance.svg" style="zoom:200%;"></img>
         <kr-grid-title>Enhance</kr-grid-title>
         <kr-grid-desc>Enrich ingested content and  improve the efficiency and precision of generated answers. Tailor your knowledge index by selecting the most suitable embedding models and fields for vector generation.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./workbench/introduction.md)
     </kr-grid-item> 
     <kr-grid-item>
-        <img src="../images/lm-answer-configuration.svg" style="zoom:200%;"></img>
+        <img src="../images/retrieval.svg" style="zoom:200%;"></img>
         <kr-grid-title>Retrieve</kr-grid-title>
         <kr-grid-desc>Define content retrieval strategies that identify the most relevant content based on search queries. Leverage answer generation techniques to select and generate precise responses from the retrieved content.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./retrieval.md)
