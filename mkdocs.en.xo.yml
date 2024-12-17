@@ -364,6 +364,7 @@ nav:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
+      - Contact Center AI Routing: contactcenter/routing/queues/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
     - Agent Console:
