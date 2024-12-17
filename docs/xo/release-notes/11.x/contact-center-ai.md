@@ -196,17 +196,6 @@ To improve agent experience and maintain consistent availability, the agent’s 
 
 [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
 
-#### Connection Status Alerts
-
-A new status indicator at the top of the Agent Console shows the connection state and automatically updates when:
-
-* The connection is lost (offline),
-* Reconnection is in progress, or
-* The connection is restored (online).  
-    <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
-
-[Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#connection-handling).
-
 #### Real-Time Disposition Updates
 
 The enhanced disposition management allows agents to select dispositions during active conversations, improving categorization and data accuracy.
