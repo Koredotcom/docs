@@ -3175,14 +3175,13 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
   <tr>
    <td>queueInfo
 
-    * queueId
-    * queueName
+        * queueId
+        * queueName
 
    </td>
    <td>string
    </td>
-   <td>Unique name and ID number of the queue involved in the conversation.
-
+   <td>Unique name and ID number of the queue involved in the conversation.  
    Example: “CreditCard”, “qu-2335c1-8et33-33535-133535”
 
    </td>
@@ -3200,8 +3199,8 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
    </td>
    <td>string
    </td>
-   <td>List of the URL/s an agent clicks with   timestamps during a conversation.
-   
+   <td>List of the URL/s an agent clicks with   timestamps during a conversation.  
+
    Example: “https://www.apple.com/in/”, 2024-12-17T11:04:37.163Z
 
    </td>
