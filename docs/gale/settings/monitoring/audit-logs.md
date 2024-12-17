@@ -957,10 +957,6 @@ By default, the current day will be set as the end date. This feature allows you
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
 
-GALE’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
-
-You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
-
 ## Export Audit Logs
 
 The **Export** feature helps prepare and export [account-level audit logs](./audit-logs.md/#account-level-audit-logs){:target="_blank"} into a *.csv* file. The audit logs data for the following columns is downloaded. [Learn more](./audit-logs.md/#dashboard-information){:target="_blank"}.
@@ -991,6 +987,10 @@ The following message is displayed once the file is downloaded. The file can be 
 The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file is shown below.
 
 <img src="../monitoring/images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
+
+GALE’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
+
+You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
 
 ## Related Information
 
