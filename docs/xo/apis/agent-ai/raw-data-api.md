@@ -3161,7 +3161,9 @@ Example: AWS EC2 On-demand pricing
    </td>
    <td>The link itself.
 <p>
-Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.amazon.com/ec2/pricing/on-demand/</a>“
+Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.amazon.com/ec2/pricing/on-demand/
+</a>“
+</p>
    </td>
   </tr>
   <tr>
@@ -3174,16 +3176,17 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
   </tr>
   <tr>
    <td>queueInfo
-
-        * queueId
-        * queueName
-
+   <ul>
+   <li> queueId </li>
+   <li> queueName </li>
+    </ul>
    </td>
    <td>string
    </td>
-   <td>Unique name and ID number of the queue involved in the conversation.  
+   <td>Unique name and ID number of the queue involved in the conversation.
+   <P>
    Example: “CreditCard”, “qu-2335c1-8et33-33535-133535”
-
+    </P>
    </td>
   </tr>
   <tr>
@@ -3199,10 +3202,10 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
    </td>
    <td>string
    </td>
-   <td>List of the URL/s an agent clicks with   timestamps during a conversation.  
-
+   <td>List of the URL/s an agent clicks with   timestamps during a conversation.
+   <p>
    Example: “https://www.apple.com/in/”, 2024-12-17T11:04:37.163Z
-
+    </p>
    </td>
   </tr>
 </table>
