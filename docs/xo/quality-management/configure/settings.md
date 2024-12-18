@@ -5,7 +5,7 @@ The Settings allow you to make app-level changes to Conversation Intelligence.
 The Settings has the following two sections:
 
 * Conversation Intelligence
-* Quality AI
+* Quality AI General Settings
 
 ## Conversation Intelligence
 
