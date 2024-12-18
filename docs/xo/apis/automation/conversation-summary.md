@@ -5,7 +5,7 @@ The API summarizes the conversation between a user and an agent. The agent can b
 The API uses open-source LLM fine-tuned and hosted by Kore.ai for summarizing conversations using a large number of sample conversation transcripts from various fields and industries.
 
 !!!note
-    Currently, the API is in its beta phase and has some limitations. The API supports transcripts only in English (en) and is available only in our global deployment (https://bots.kore.ai). The generated summary may have factual inconsistencies and inaccurate representations due to limited coverage in the beta phase.
+    Currently, the API is in its beta phase and has some limitations. The API supports transcripts only in English (en) and is available only in our global deployment (https://platform.kore.ai). The generated summary may have factual inconsistencies and inaccurate representations due to limited coverage in the beta phase.
 
 <table>
   <tr>
@@ -58,7 +58,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>required
    </td>
-   <td>Environment URL, for example, https://bots.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
   </tr>
   <tr>
@@ -106,8 +106,6 @@ curl -X POST \
     }
 }'
 ```
-
-
 
 ## Request Body Parameters
 

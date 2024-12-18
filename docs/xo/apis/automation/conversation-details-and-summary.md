@@ -55,7 +55,7 @@ To fetch the conversation details and conversation summary between the bot and t
    </td>
    <td>Required
    </td>
-   <td>Environment URL, for example, https://bots.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ To fetch the conversation details and conversation summary between the bot and t
 
 
 ```json
-curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-7021-5f2b-bf6c-8a1xxxxxb0/conversationDetails' \
+curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exxx8d-7021-5f2b-bf6c-8a1xxxxxb0/conversationDetails' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{

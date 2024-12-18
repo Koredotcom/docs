@@ -46,7 +46,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
    <td>Yes
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>.
    </td>
   </tr>
   <tr>

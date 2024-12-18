@@ -87,7 +87,7 @@ OR
    </td>
    <td>required
    </td>
-   <td>Environment URL, for example, https://bots.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
   </tr>
   <tr>
