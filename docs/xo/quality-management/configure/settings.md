@@ -82,7 +82,7 @@ Steps to enable the Script Adherence Configuration:
 
         * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
 
-## Quality AI
+## Quality AI General Settings
 
 The App owners can use the Settings option under QM to enable or disable auto QA scoring of interactions and at an app level. Users with relevant permissions can enable and create bookmarks to collect interactions in different bookmarks for easy future reference.
 
