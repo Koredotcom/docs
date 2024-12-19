@@ -2,6 +2,19 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+<hr>
+
+## v11.8.1 December 19, 2024
+
+<u> Patch Release </u>
+
+This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Multi-lingual Support
+The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
+
+<hr>
+
 ## v11.8.0 December 11, 2024
 
 <u> Minor Release </u>
