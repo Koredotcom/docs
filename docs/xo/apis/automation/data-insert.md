@@ -54,7 +54,7 @@ For more information, see <a href="../../../administration/data/data-services">a
   <tr>
    <td>host
    </td>
-   <td>Environment URL, for example, <code>https://bots.kore.ai</code>
+   <td>Environment URL, for example, <code>https://platform.kore.ai</code>
    </td>
   </tr>
   <tr>

@@ -228,7 +228,7 @@ Parameters:
         OnAgentTransferPayload ","
         requestId ":1501244156289,"
         botId ":"st - b4a22e86 - e95b - 575 c - b888 - e106d083a251 ","
-        callbackUrl ":"https: //bots.kore.ai/api/botsdk/stream/st-b4a22e86-e95b-575c-b888-e106d083a251/serviceCallback/1501244156289","context": ...
+        callbackUrl ":"https://platform.kore.ai/api/botsdk/stream/st-b4a22e86-e95b-575c-b888-e106d083a251/serviceCallback/1501244156289","context": ...
     }
     ```
 

@@ -70,7 +70,7 @@ See <a href="../../../analytics/automations/conversation-flows">How to generate 
   <tr>
    <td>host
    </td>
-   <td>Environment URL, for example, https://bots.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
   </tr>
 </table>

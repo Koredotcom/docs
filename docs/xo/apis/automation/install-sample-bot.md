@@ -65,7 +65,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. for example, https://bots.kore.ai
+   <td>The environment URL. for example, https://platform.kore.ai
    </td>
    <td>Required
    </td>

@@ -163,9 +163,12 @@ nav:
         - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
       - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
     - Open-Source Models:
+      - Import a model: models/open-source-models/importing-models.md
+      - Deploy a model:
+        - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+        - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
       - Model Optimization Techniques: models/open-source-models/model-optimization.md 
-      - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
-      - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - Open-Source models overview: models/open-source-models/open-source-summary.md
       - Model Settings:
         - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
         - API Keys: models/open-source-models/generate-an-api-key-open-source.md

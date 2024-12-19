@@ -1,0 +1,29 @@
+# Pre-built Solutions
+
+Kore.ai’s **Pre-Built Solutions** offer a suite of AI-powered tools designed to streamline various organizational workflows, reduce repetitive tasks, and improve operational efficiency. These solutions, like **IT Assist** and  **HR Assist,** come with core features tailored to automate and enhance specific departments.
+
+**IT Assist** and **HR Assist** are now being integrated to work together seamlessly. When combined with AI for Work, they can serve as unified agents for end-users, offering a consolidated support experience. This integration allows organizations to leverage the strengths of each solution, providing employees with comprehensive support and faster resolutions through a single, intelligent interface.
+
+## What is IT Assist
+
+IT Assist is an AI-powered all-in-one solution that provides a customizable virtual assistant to handle various IT needs, from access and request management to incident management. The virtual assistant is an interactive tool that can be integrated seamlessly with any preferred communication channel, making it easier and more effective for employees to ask questions, raise issues, and obtain personalized solutions.
+
+IT Assist can help you generate fewer IT tickets by enabling employee self-service and augmenting Help Desk workflows with Generative Al-Assisted technology to resolve outstanding tickets faster.  
+<img src="../images/pre-built-solutions.png" alt="pre-built-solutions-it assist" title="pre-built-solutions-it assist" style="border: 1px solid gray; zoom:80%;"> 
+
+## What is HR Assist
+
+HR Assist is an AI-powered customizable unified virtual assistant solution that can handle various HR needs of employees and thus act as a force multiplier for HR staff. Out-of-the-box, HR Assist can manage various day-to-day activities of employees, such as searching for employee information, updating profiles, requesting time off, viewing timesheets and payslips, etc. It can also be trained to automate custom HR tasks. 
+
+HR Assist can help you deliver tailored engagement at scale across all employees, enriching their experience along their journey from recruitment to retirement.  
+<img src="../images/pre-built-solutions-hr-assist.png" alt="pre-built-solutions-hr assist-hr-assist" title="pre-built-solutions-hr-assist" style="border: 1px solid gray; zoom:80%;"> 
+
+
+## Integration into AI for Work
+
+With integration into **AI for Work**, these pre-built solutions offer an even more seamless experience for end-users. For example, when a user submits a query related to ticketing, AI for Work automatically triggers the **IT Assist** bot, enabling a real-time conversation to address the user’s needs efficiently. By accessing the **Go to Workbench** feature, admins are taken directly to the workbench of the linked **IT Assist** account.
+
+
+
+
+

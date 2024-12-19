@@ -17,6 +17,7 @@ The Evaluation Metrics has the following options:
 ## Add New Evaluation Metrics
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
+<img src="../evaluation-forms/images/new-eva-metrics.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">  
 
 Steps to create New Evaluation Metrics:
 

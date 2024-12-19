@@ -65,7 +65,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
    <td>Required
    </td>
@@ -114,7 +114,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 
 ```json
-curl --location 'https://bots.kore.ai/api/public/bot/botID/faqs/bulk?language=en' \
+curl --location 'https://platform.kore.ai/api/public/bot/botID/faqs/bulk?language=en' \
 --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
 --header 'content-type: application/json' \
 --data-raw '{
