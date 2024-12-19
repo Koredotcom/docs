@@ -2,6 +2,28 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.8.1 December 19, 2024
+
+<u>Patch Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Campaigns
+
+#### Configure SIP Transfer Voice Numbers for SMS Campaigns
+
+This update allows supervisors to set up Twilio voice numbers in the generic SMS channel, enabling a single number to be used for both voice and SMS flows.
+
+Key Updates
+
+* Twilio numbers purchased for voice can be configured in the generic SMS channel.
+* The number can be attached to both a voice flow and an SMS flow.
+* Voice flow is triggered when a customer calls the number.
+* SMS flow is triggered when a customer texts the number.
+* Currently, it only supports Twilio numbers in the generic SMS channel.
+
+<hr>
+
 ## v11.8.0 December 11, 2024
 
 <u> Minor Release </u>
