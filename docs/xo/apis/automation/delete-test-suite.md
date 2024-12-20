@@ -62,7 +62,7 @@ See <a href="">How to generate the JWT Token</a>.
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>Environment URL. For example,<code>https://bots.kore.ai</code>
+   <td>Environment URL. For example,<code>https://platform.kore.ai</code>
    </td>
    <td>Required
    </td>

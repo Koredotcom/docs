@@ -10,34 +10,29 @@ DialogGPT is an intelligent, agentic orchestration engine that powers natural co
 
 ## Key Features
 
-
-
-* **Superior Intent Detection**: DialogGPT leverages zero-shot intent detection using Retrieval-Augmented Generation (RAG) and autonomous decision-making, enabling it to accurately identify user intents without relying on predefined training data.
-* **Ambiguity Resolution**: DialogGPT efficiently resolves ambiguous intents by asking clarifying questions in real time, ensuring accurate interpretation and seamless conversation flow.
+* **Autonomous Decision Making**: Independently analyzes user inputs and identifies intents and execution order. 
+* **Superior Intent Detection**: DialogGPT leverages zero-shot intent detection using Retrieval-Augmented Generation (RAG) and LLMs, enabling it to accurately identify user intents without relying on predefined training data.
+* **Ambiguity Resolution**: DialogGPT efficiently resolves ambiguous intents by asking clarifying questions in real-time, ensuring accurate interpretation and seamless conversation flow.
 * **Multi-intent Identification**: The system recognizes and processes multiple intents within a single user query, dynamically managing and prioritizing tasks based on dependencies and execution order.
 * **Conversational Nuances Management**: DialogGPT handles conversational nuances such as pauses, repetitions, and restarts, adapting to the flow of conversation to provide a more natural, human-like interaction experience.
 * **Dynamic Response Generation**: It generates responses grounded in the current context, utilizing user data, conversation history, and business rules to ensure each response is relevant and contextually appropriate.
 * **Model Flexibility**: It supports a wide range of model options, allowing users to choose from commercial or custom models or Kore.ai’s XO GPT models, which are adaptable for various use cases. This flexibility ensures that DialogGPT can meet the unique needs of your project, no matter how complex or specialized.
 * **Granular Intent Resolution**: It refines broad user queries into specific, actionable intents by leveraging domain knowledge graphs, ensuring more precise understanding and response generation.
 
-
 ## Key Benefits
 
-
-
 * **Improved Customer Experience**: Customers enjoy more natural conversations with virtual assistants who understand the context and can simultaneously handle multiple requests.
-* **Greater Accuracy**: The system better understands what customers request, even when requests are complex or industry-specific. Combining broad understanding with detailed knowledge of your business can extract the right information and make smarter decisions about how to help.
-* **Lower Costs**: It reduces manual effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
+* **Greater Accuracy**: The system better understands what customers request, even when requests are complex or industry-specific.
+* **Lower Costs**: It reduces manual effort in building, training, and maintaining virtual agents; it increases the self-service rate, minimizing transfers to human agents and lowering operational costs.
 
 
 ## How DialogGPT Works
 
-DialogGPT is a central orchestrator, managing the entire conversation flow from intent identification to fulfillment. It enhances intent detection and conversation handling with zero training. 
+DialogGPT is an agentic orchestrator, managing the entire conversation flow from intent identification to fulfillment. It enhances intent detection and conversation handling with zero training.  
 <img src="../images/gpt10.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
 
 DialogGPT's functionality is built on a three-step process:
-
 
 ### Step 1: User Input and Chunk Shortlisting
 
@@ -58,8 +53,6 @@ DialogGPT triggers the resolved intent with the appropriate fulfillment action. 
 
 Steps:
 
-
-
 1. Navigate to **Generative AI Tools** > **DialogGPT**.  
 <img src="../images/gpt1.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
@@ -72,11 +65,11 @@ Steps:
 
         By default, Dialogs and FAQs are enabled and cannot be disabled.
 
-4. In the **Model Configuration** section, select the **Model** to generate the embedding.
+4. In the **Model Configuration** section, select the **Model** that can be used to generate the embeddings. (The embeddings model settings will apply only to Dialogs and FAQs. For Knowledge from Search AI, the settings in the Search AI app will apply.)
 5. (Optional) click Show Advanced Settings to view and adjust the Similarity Threshold and Proximity Threshold. In most cases, the default settings work fine.
 6. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which will determine the user intent and the execution plan.
 7. (Optional) click Show Advanced Settings to view and set the Temperature, Max Tokens, and Conversation History Length. In most cases, the default settings work fine.
-8. Click **Enable DialogGPT**. The DailogGPT home page is displayed.  
+8. Click **Enable DialogGPT**. The DialogGPT home page is displayed.  
 <img src="../images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 9. To disable DialogGPT, click the **More** icon (three dots) in the top right corner and then click Disable DialogGPT. The Disable DialogGPT pop-up is displayed.  
 <img src="../images/gpt3.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
@@ -91,7 +84,7 @@ Steps:
 
 ## Debug Logs
 
-The Debug Logs offer detailed insights into the DialogGPT model's behavior and execution flow. They allow you to observe each step of the DialogGPT process and its outcomes. Logs include complete request and response details for every LLM call, providing a clear view of what happens at each stage. This information helps understand and analyze the DailogGPT’s decision-making and execution for better debugging and optimization.
+The Debug Logs offer detailed insights into the DialogGPT model's behavior and execution flow. They allow you to observe each step of the DialogGPT process and its outcomes. Logs include complete request and response details for every LLM call, clearly showing what happens at each stage. This information helps understand and analyze the DialogGPT’s decision-making and execution for better debugging and optimization.
 
 When DialogGPT processes a user utterance, the debug logs capture key details such as:
 

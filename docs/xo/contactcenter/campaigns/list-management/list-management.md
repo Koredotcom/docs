@@ -111,14 +111,14 @@ Steps to edit a contact list:
 
 Steps to delete a contact list:
 
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.
+1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
 <img src="../images/delete-call-list.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         You cannot delete a contact list if it is associated with any campaign.
 
-2. A confirmation message is displayed. Click **Delete**.
+2. A confirmation message is displayed. Click **Delete**.  
 <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 The contact list is deleted.

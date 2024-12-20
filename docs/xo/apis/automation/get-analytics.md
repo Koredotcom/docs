@@ -65,7 +65,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
-   <td>Environment URL, for example, https://bots.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@ The following sample request shows how to retrieve _unhandled utterance_ analyti
 
 
 ```json
-curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-xxxxxxd-xxxx-xxxx-xxxx-xxxxxxxxxx/getAnalytics' \
+curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxxxd-xxxx-xxxx-xxxx-xxxxxxxxxx/getAnalytics' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'content-type: application/json' \
 --data-raw '{

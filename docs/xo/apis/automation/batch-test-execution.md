@@ -59,7 +59,7 @@ To execute Batch Test Suites and get results. This API only initiates the test p
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
    <td>Required
    </td>

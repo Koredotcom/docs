@@ -2,6 +2,38 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.8.1 December 19, 2024
+
+<u>Patch Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Content Transformation
+
+Search AI introduces an ETL tool, empowering users to enrich content immediately after extraction and before vectorization. This feature enhances data quality by enabling users to fix errors and enrich data while preserving essential relationships and context between sections of the original document during enrichment.
+
+This tool offers flexibility and control through enrichment stages that can be applied based on the document's extraction strategy. Currently, the following enrichment stages are supported:
+
+* Field Mapping: Map extracted data fields to desired fields.
+* Custom Script: Apply custom transformations using custom scripts.
+
+This enrichment process ensures high-quality input for improved answers.
+
+### Change Logs
+
+SearchAI introduces a comprehensive **Change Logs** feature to track and manage application updates made by all team members. Users can search logs by user, export them in CSV format, and access them through public APIs. This feature ensures transparency and simplifies auditing and troubleshooting by providing a centralized view of all changes.
+
+### Chunk Size Configuration
+
+To leverage the potential of the LLM capabilities, Search AI has now increased the chunk size and the maximum number of tokens sent to the LLM. This update ensures that the LLM receives sufficient context for more accurate and comprehensive answer generation.
+
+* The **default chunk** size has been updated to **1000**, with a maximum limit of **5000** tokens per chunk.
+* The value of the maximum number of tokens for **Chunk Overlap** is also increased to **100**.
+* A new configuration, **Max Tokens for Chunks**, has been introduced that specifies the total number of tokens that can be included in the chunks sent to the LLM for processing. This allows users to fully utilize the LLM’s context-handling capabilities. This has a default value of 20,000 and can take a maximum value of 10,00,000. 
+
+<hr>
+
+
 ## v11.8.0 December 11, 2024
 
 <u> Minor Release </u>

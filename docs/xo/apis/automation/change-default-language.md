@@ -61,7 +61,7 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
    </td>
    <td>Yes
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>.
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>.
    </td>
   </tr>
   <tr>

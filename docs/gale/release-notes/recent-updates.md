@@ -2,6 +2,34 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent GALE releases.
 
+## v1.0.6 December 12, 2024
+
+<u> Minor Release </u>
+
+This update includes new features, feature enhancements, and security enhancements, summarized below.
+
+**New Features**
+
+* Export and import agents: The new agent export functionality allows users to export GALE agents as self-contained packages. Users can import the agents from the files, preserving node configurations, variables, and settings.
+* Increased token limits and hyper-parameter changes for external models.
+* Better validation for open-source model files under 500MB to streamline imports (files over 500MB continue to use server-side validation).
+* Added support for Llama3.2 (1B, 3B) and Mistral-Nemo-12b open-source and fine-tuned models.
+* Added support for using IAM roles to access AWS services like S3 and KMS, in addition to the existing key-based authentication for customers running GALE on an AWS VPC environment.
+
+
+**Feature Enhancements**
+
+* Improved prompt API endpoint: The updated instructions in the prompt API endpoint help users properly set up and use the endpoint.
+* Improved labels for credits and runs.
+* Show deployment history after the first model deployment attempt, regardless of the deployment status.
+
+**Security Enhancements**
+
+* Fixed stored XSS vulnerability in open-source model.
+* Resolved security issues found in v1.0.4 scan.
+
+<hr>
+
 ## v1.0.5 November 20, 2024
 
 <u> Minor Release </u>
