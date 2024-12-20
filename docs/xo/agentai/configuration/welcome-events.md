@@ -26,7 +26,8 @@ In this section, you can select a pre-configured dialog task and channel and cho
 9. Select the **Extract intents from On Connect Dialog task** radio button.  
    !!! note
 
-      When enabled, the system terminates the current dialog and uses the message node's content to identify the Next Best Actions (suggestions) upon encountering it. Ensure the dialog flow contains only one message node, preferably at the end.
+       When enabled, the system terminates the current dialog and uses the message node's content to identify the Next Best Actions (suggestions) upon encountering it. Ensure the dialog flow contains only one message node, preferably at the end.
+
 10. Click **Save**.  
    <img src="../welcome-events-images/configure-on-connect-dialog-task-1.png" alt="configure-on-connect-dialog-task" title="configure-on-connect-dialog-task" style="border: 1px solid gray; zoom:80%;">
 
@@ -50,8 +51,8 @@ In this section, you can customize greeting messages at the beginning of the con
 7. Click **Copy from Chat** to copy existing messages in **Chat**.  
    !!! note
       
-      **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel. 
-       
+       **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel. 
+
     <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
       
       a. Select the **Welcome Messages** button to select all the existing messages or select individual messages one by one.
