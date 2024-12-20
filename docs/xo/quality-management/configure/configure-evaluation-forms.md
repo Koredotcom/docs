@@ -76,16 +76,10 @@ The following table describes the Evaluation Forms details:
    </td>
    <td>Select a language from the drop-down list.
    <br>
-<strong>Note</strong>: Evaluation Metrics available for selection is based on the form language selected. For example, if you choose English and Dutch, only metrics supported for both languages get displayed. If a metric is not available for a specific language, then it does not appear when both languages are selected.
+   
+<strong>Note</strong>: Evaluation Metrics available for selection is based on the form language selected. For example, if you choose English and Dutch, only metrics supported for both languages get displayed. If a metric is not available for a specific language, then it does not appear.
    </td>
   </tr>
-   <td>Select a language from the drop-down list. 
-   
-   <strong>Note:</strong> Evaluation Metrics available for selection is based on the form language selected. For example, if you choose English and Dutch, only metrics supported for both languages get displayed. If a metric is not available for a specific language, then it does not appear.
-  </td>
-  </tr>
-  <tr>
-
    <td><strong>Select Channel</strong>
    </td>
    <td>Select a Channel mode (Voice or Chat).

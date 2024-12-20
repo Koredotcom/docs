@@ -46,6 +46,21 @@ The following table describes the Evaluation Metrics Measurement Types:
    </td>
   </tr>
   <tr>
+   <td><strong>Language</strong>
+   </td>
+   <td>Select a language from the drop-down list.
+   <br>
+
+   <strong>Note</strong>: In case of **Dynamic**, the user must configure at least one **Trigger** and one agent **Answer** utterance for **Adherence Type**.
+
+In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
+   </td>
+  </tr>
+ 
+In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
+   </td>
+  </tr>
+  <tr>
    <td><strong>Question</strong>
    </td>
    <td>Provides reference to the supervisor about audit and interaction evaluation. You enter a question for which adherence check is done.

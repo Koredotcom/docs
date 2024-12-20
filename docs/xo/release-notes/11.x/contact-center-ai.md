@@ -2,6 +2,47 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.8.1 December 19, 2024
+
+<u>Patch Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Campaigns
+
+#### Configure SIP Transfer Voice Numbers for SMS Campaigns
+
+This update allows supervisors to set up Twilio voice numbers in the generic SMS channel, enabling a single number to be used for both voice and SMS flows.
+
+Key Updates
+
+* Twilio numbers purchased for voice can be configured in the generic SMS channel.
+* The number can be attached to both a voice flow and an SMS flow.
+* Voice flow is triggered when a customer calls the number.
+* SMS flow is triggered when a customer texts the number.
+* Currently, it only supports Twilio numbers in the generic SMS channel.
+
+### Flows
+
+#### Configuring Bot Delay – Transfer to External Agent
+
+A new option is added to transfer calls to external agents if the bot fails to respond in time.
+
+When enabled, the following options are available:
+
+* BotNoInputTimeout: Timeout in seconds (default is 2 sec).
+* BotNoInputSpeech/URL: Allows text or audio URL input (default is text).
+* BotNoInputRetries: Number of retries (default is 2).
+* BotNoInputGiveUpTimeout: Timeout in seconds (default if not provided).
+
+Two options are available if the bot does not respond within Give Up Timeout:
+
+* End the Call (default): Option to add a custom message.
+* Transfer the Call: Option to add a custom message for external agent transfer.
+
+
+<hr>
+
 ## v11.8.0 December 11, 2024
 
 <u> Minor Release </u>
