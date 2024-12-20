@@ -24,9 +24,9 @@ In this section, you can select a pre-configured dialog task and channel and cho
 7. Select a channel – **Chat**, **Voice**, or **Email**.
 8. Select a configured dialog task from the **Select Dialog** list.
 9. Select the **Extract intents from On Connect Dialog task** radio button.  
-   !!! note
-
-       When enabled, the system terminates the current dialog and uses the message node's content to identify the Next Best Actions (suggestions) upon encountering it. Ensure the dialog flow contains only one message node, preferably at the end.
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>When enabled, the system terminates the current dialog and uses the message node's content to identify the Next Best Actions (suggestions) upon encountering it. Ensure the dialog flow contains only one message node, preferably at the end.</p></div> 
 
 10. Click **Save**.  
    <img src="../welcome-events-images/configure-on-connect-dialog-task-1.png" alt="configure-on-connect-dialog-task" title="configure-on-connect-dialog-task" style="border: 1px solid gray; zoom:80%;">
@@ -49,9 +49,9 @@ In this section, you can customize greeting messages at the beginning of the con
       The new greeting message gets added to the list of existing messages.
 
 7. Click **Copy from Chat** to copy existing messages in **Chat**.  
-   !!! note
-   
-       **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel. 
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p><b>Copy from Voice<b> appears for the Chat channel and <b>Copy from Chat<b> appears for the Voice channel.</p></div>  
 
     <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
       
