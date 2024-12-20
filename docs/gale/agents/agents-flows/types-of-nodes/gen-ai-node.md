@@ -27,7 +27,7 @@ Steps to add and configure the node:
             * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
             Syntax: `{{context.variable_name}}`
             Example: `{{context.conversation}}`  
-        <img src="../images/write_your_own_prompt.png" alt="Write your own prompt" title="Write your own prompt" style="border: 1px solid gray; zoom:20%;">
+        <img src="../images/write_your_own_prompt.png" alt="Write your own prompt" title="Write your own prompt" style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
@@ -38,7 +38,7 @@ Steps to add and configure the node:
         2. **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
             * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.
             * To edit the prompt, click the **Customize** option. The ‘Custom Prompt’ view is displayed, where the prompt from Prompt Studio will be populated in both the system and human prompt fields. You can then modify the prompt while preserving the selected version.  
-        <img src="../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:20%;">      
+        <img src="../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
 
         !!! note
 
@@ -66,7 +66,7 @@ Steps to add and configure the node:
         * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
 
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
-<img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
 
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
 
