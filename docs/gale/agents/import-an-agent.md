@@ -20,17 +20,15 @@ To initiate an agent creation journey through the import functionality, follow t
 2. Click **Agents** on the top menu.
 3. Do one of the following based on your requirements:
 
-* If you don't have any existing agents and want to create one by importing from another environment, click **Import Agent**.
-<img src="../images/import-new-agent.png" alt="import new agent" title="import new agent" style="border: 1px solid gray; zoom:75%;">
+<ul><li>If you don't have any existing agents and want to create one by importing from another environment, click <b>Import Agent</b>.
+<img src="../images/import-new-agent.png" alt="import new agent" title="import new agent" style="border: 1px solid gray; zoom:75%;"></li>
+<li>If you already have agents deployed, the following page is displayed. To import an agent, select the relevant tab on the <b>Agents</b> dashboard and click the <b>Import Agent</b> icon.
+<img src="../images/click-import-agent.png" alt="click import agent" title="click import agent" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
-* If you already have agents deployed, the following page is displayed. To import an agent, select the relevant tab on the **Agents** dashboard and click the **Import Agent** icon.
-<img src="../images/click-import-agent.png" alt="click import agent" title="click import agent" style="border: 1px solid gray; zoom:75%;">
-
-4. In the **Import Agent** window, providing the following information is mandatory.
-* **Agent Name**: Provide a unique agent name to avoid the following error.
-<img src="../images/app-name-exists.png" alt="app name exists" title="app name exists" style="border: 1px solid gray; zoom:75%;">
-
-* **Flow definition file**: Upload the required **flow_definition.json**file from your local directory. The file includes the agent's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.
+<ol start="4"><li>In the <b>Import Agent</b> window, providing the following information is mandatory.</li>
+<ul><li><b>Agent Name</b>: Provide a unique agent name to avoid the following error.
+<img src="../images/app-name-exists.png" alt="app name exists" title="app name exists" style="border: 1px solid gray; zoom:75%;"></li>
+<li><b>Flow definition file</b>: Upload the required <b>flow_definition.json</b> file from your local directory. The file includes the agent's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.</li></ul></ol>
 
 Providing the following information is optional:
 
