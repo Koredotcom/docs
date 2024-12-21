@@ -71,7 +71,7 @@ The import may fail due to an incompatible agent version, a corrupt file, an int
 
 ## Import Agent as a Version
 
-Use the **Import** functionality under **Agents** > **Configurations** to add an agent as a version of a parent agent, replacing the existing one. You should back up the current in-development version to preserve its configuration definitions. The export file is saved as '*Exported_&lt;Agent Name>.zip*.’
+Use the **Import** functionality under **Agents** > **Configurations** to add an agent as a version of a parent agent, replacing the existing one. You should back up the current in-development version to preserve its configuration definitions. The export file is saved as '<code>Exported_<i>AgentName</i>.zip</code>.’
 
 When you import an agent as a version, you must upload all the following files:
 

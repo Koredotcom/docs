@@ -153,7 +153,7 @@ nav:
     - Configurations:
       - Configure an Agent: agents/configure-an-agent.md
       - Export an Agent: agents/export-an-agent.md
-      - Import Agent as a Version: agents/import-an-agent.md/#import-agent-as-a-version
+      - Import Agent as a Version: agents/import-an-agent/#import-agent-as-a-version
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tuned Models: 
