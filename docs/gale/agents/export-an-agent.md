@@ -70,7 +70,7 @@ The file information is displayed as follows:
 
 <hr>
 
-#### Related Links
+## Related Links
 
 * [Import an Agent](../agents/import-an-agent.md){:target="_blank"} - Create an agent by importing configurations or add it as a version to an existing agent.
 * [Deploy an Agent](../agents/deploy-an-agent.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for agent integration.
