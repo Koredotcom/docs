@@ -108,8 +108,8 @@ To import an agent as a version, follow the steps below:
 
 If you choose not to back up/export the agent configurations, unselect the back-up option and proceed to the next step.
 
-7. Click **Import** in the confirmation dialog.
-8. In the **Import Agent** window, upload the required JSON files and click **Import**.
+<ol start="7"><li>Click <b>Import</b> in the confirmation dialog.</li>
+<li>In the <b>Import Agent</b> window, upload the required JSON files and click <b>Import</b>.</li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
