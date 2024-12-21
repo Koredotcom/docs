@@ -167,6 +167,7 @@ To cancel the import process during the conflicting environment variables resolu
 
 #### Related Links
 
-* [Export an Agent](../agents/export-an-agent.md){:target="_blank"} - Export the defined configurations of an agent for data sharing and preservation.
-* [Deploy an Agent](../agents/deploy-an-agent.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for agent integration.
-* [Configure an Agent](../agents/configure-an-agent.md){:target="_blank"} - Modify the agent's details, configure settings, or undeploy and delete it if unused.
+* [Create an Agent](../agents/create-a-new-agent.md){:target="_blank"}- Create a new agent and configure its flow.
+* [Export an Agent](../agents/export-an-agent.md){:target="_blank"}- Export the set configurations of an agent for data sharing and preservation.
+* [Deploy an Agent](../agents/deploy-an-agent.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for agent integration.
+* [Configure an Agent](../agents/configure-an-agent.md){:target="_blank"}- Modify the agent's details, configure settings, or undeploy and delete it if unused.
