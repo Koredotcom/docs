@@ -303,6 +303,7 @@ nav:
                 - RACL Overview: searchai/content-sources/racl-support.md
                 - Aha: searchai/content-sources/connectors/aha.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
+                - Amazon S3: searchai/content-sources/connectors/amazons3.md
                 - Asana: searchai/content-sources/connectors/asana.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - Box: searchai/content-sources/connectors/box.md
