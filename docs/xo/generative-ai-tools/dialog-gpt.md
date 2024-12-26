@@ -29,7 +29,7 @@ DialogGPT is an intelligent, agentic orchestration engine that powers natural co
 ## How DialogGPT Works
 
 DialogGPT is an agentic orchestrator, managing the entire conversation flow from intent identification to fulfillment. It enhances intent detection and conversation handling with zero training.  
-<img src="../images/gpt10.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/gpt10new1.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
 
 DialogGPT's functionality is built on a three-step process:
@@ -65,7 +65,8 @@ Steps:
 
         By default, Dialogs and FAQs are enabled and cannot be disabled.
 
-4. In the **Model Configuration** section, select the **Model** that can be used to generate the embeddings. (The embeddings model settings will apply only to Dialogs and FAQs. For Knowledge from Search AI, the settings in the Search AI app will apply.)
+4. In the **Model Configuration** section, select the **Model** that can be used to generate the embeddings.  
+The embeddings model settings will apply only to Dialogs and FAQs. For Knowledge from Search AI, the settings in the Search AI app will apply.
 5. (Optional) click Show Advanced Settings to view and adjust the Similarity Threshold and Proximity Threshold. In most cases, the default settings work fine.
 6. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which will determine the user intent and the execution plan.
 7. (Optional) click Show Advanced Settings to view and set the Temperature, Max Tokens, and Conversation History Length. In most cases, the default settings work fine.
