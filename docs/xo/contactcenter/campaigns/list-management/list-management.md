@@ -94,7 +94,7 @@ hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on
     * Asia/Hong_Kong
     * Pacific/Fiji
 * If a contact has a timezone mentioned, the timezone will be validated or converted before dialing. If the contact’s timezone doesn’t fall under calling hours then the contact will be skipped.
-* If a contact is skipped then it is considered a check and the Campaign is "**Completed**" once all other contacts are dialed successfully.
+* If a contact is skipped, then it is considered a check and the Campaign is "**Completed**" once all other contacts are dialed successfully.
 * Contacts skipped due to timezone mismatch will appear as "**Unconnected Calls**" on the Campaign Dashboard.
 
 #### API Integration
@@ -112,7 +112,7 @@ Steps to pull  the contacts using API Integration:
 2. On the **New Contact List** pop-up window, enter the **Name**, **Description**, and select **API Integration** from the Source dropdown.  
 <img src="../images/apiintegration.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-3. Click **API Integration** to select to configure the API and add records in the contact list.  
+3. Click **API Integration** to select to configure the API and add records to the contact list.  
 <img src="../images/newlist.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 4. Select the Method and enter the URL.  
@@ -122,7 +122,7 @@ Steps to pull  the contacts using API Integration:
 <img src="../images/syncinterval.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 6. Select the **Data Sync Mode**. You can choose from the following options:
-    1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list and they will not be contacted again.
+    1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they will not be contacted again.
     2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again. 
     <img src="../images/apisyncmodenew.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
@@ -138,10 +138,25 @@ Steps to pull  the contacts using API Integration:
 10. Click **Test**. The response is displayed on the **Test Response** tab.  
 <img src="../images/testresponse.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-11. Select the **Mapping Fields** and click **Save**.  
+11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
+    * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John", you would enter "firstName" in the field mapping.
+    * If the data is nested, specify the full path to traverse the JSON hierarchy. Use dot notation to drill down into nested objects. For example, if the name data is located like:
+        ``` json
+            {
+            "contact": {
+            "name": {
+            "first": "John",
+            "last": "Doe"
+            }
+            }
+            }
+        ```
+        You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields. 
 <img src="../images/fieldmapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
  
-The contact list is fetched from the third party database.
+12. click **Save**. The contact list is fetched from the third-party database.
+
+
 
 
 
@@ -161,7 +176,7 @@ Steps to edit a contact list from the local drive:
 
     !!! Note
 
-        You can only append a contact list, you cannot edit an existing contact list.
+        You can only append a contact list; you cannot edit an existing contact list.
 
 
 #### API Integration
@@ -204,7 +219,7 @@ The contact list is deleted.
 
 #### API Integration
 
-Steps to delete an API integrated contact list:
+Steps to delete an API-integrated contact list:
 
 
 1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
@@ -241,7 +256,7 @@ Steps to create a new DNC list:
 
         You can download the template for the CSV file by clicking the CSV Template.
 
-4. The file upload progress is displayed.
+4. The file upload progress is displayed.  
 <img src="../images/dnc-list-progress.png" alt="DNC List Upload Progress" title="DNC List Upload Progress" style="border: 1px solid gray; zoom:80%;">
 
 5. Select the **Mapping Fields** and click **Next**.
@@ -267,7 +282,7 @@ Steps to edit a DNC list:
 
 Steps to delete a DNC list:
 
-1. Click the **Edit** icon beside the DNC list name and click the **Delete** icon at the bottom left corner of the edit window.
+1. Click the **Edit** icon beside the DNC list name and click the **Delete** icon at the bottom left corner of the edit window.  
 <img src="../images/delete-dnc-list.png" alt="Delete DNC List" title="Delete DNC List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
