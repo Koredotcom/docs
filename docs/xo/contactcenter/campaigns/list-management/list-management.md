@@ -124,7 +124,7 @@ Steps to pull  the contacts using API Integration:
 6. Select the **Data Sync Mode**. You can choose from the following options:
     1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list and they will not be contacted again.
     2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again. 
-    <img src="../images/syncmode.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/apisyncmodenew.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 7. Configure the authorization profile for the request.  
 <img src="../images/auth.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
