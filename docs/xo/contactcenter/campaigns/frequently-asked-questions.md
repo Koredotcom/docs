@@ -74,4 +74,4 @@
 
 * **Can I use the same number for both voice and SMS flows?**  
 
-    Yes, you can attach the same number to both a voice flow and an SMS flow. This setup ensures that the appropriate flow is triggered based on how the customer interacts with the number. If a customer calls the number, the voice flow will be triggered. If a customer sends an SMS to the number, the SMS flow will be triggered. However, you can’t associate the same number to flows of the same type; for example - you can’t associate the same number to two voice flows.
+    Yes, you can attach the same number to both a voice flow and an SMS flow. This setup ensures that the appropriate flow is triggered based on how the customer interacts with the number. If a customer calls the number, the **voice flow** will be triggered. If a customer sends an SMS to the number, the **SMS flow** will be triggered. However, you can’t associate the same number to flows of the same type; for example - you can’t associate the same number to two voice flows.

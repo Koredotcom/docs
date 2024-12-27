@@ -39,8 +39,6 @@ Steps to add a contact list from the local drive:
 <img src="../images/localdrive.png" alt="Name and Description of Contact List" title="Name and Description of Contact List" style="border: 1px solid gray; zoom:80%;">
 
 3. Select a CSV file from the local drive and upload the CSV file. .
-<img src="../images/select-csv-for-contact-list.png" alt="Select CSV File" title="Select CSV File" style="border: 1px solid gray; zoom:80%;">
-
 
 
 5. Select the **Mapping Fields** and click **Save**.  
@@ -137,7 +135,7 @@ Steps to pull  the contacts using API Integration:
 9. Enter the **Key-Value** pairs and click **Next**.  
 <img src="../images/keyvalue.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-10. Click **Test**.The response is displayed on the **Test Response** tab.  
+10. Click **Test**. The response is displayed on the **Test Response** tab.  
 <img src="../images/testresponse.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 11. Select the **Mapping Fields** and click **Save**.  
@@ -201,6 +199,7 @@ Steps to delete a contact list from the local drive:
 2. A confirmation message is displayed. Click **Delete**.  
 <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">
 
+
 The contact list is deleted.
 
 #### API Integration
@@ -213,6 +212,7 @@ Steps to delete an API integrated contact list:
 
 2. A confirmation message is displayed. Click **Delete**.  
 <img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
+
 The contact list is deleted.
 
 
