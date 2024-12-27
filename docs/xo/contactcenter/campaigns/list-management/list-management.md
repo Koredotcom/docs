@@ -154,7 +154,7 @@ Steps to pull  the contacts using API Integration:
         You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields.  
         <img src="../images/fieldmapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
  
-12. click **Save**. The contact list is fetched from the third-party database.
+12. Click **Save**. The contact list is fetched from the third-party database.
 
 
 
