@@ -40,13 +40,16 @@ Steps to add a contact list from the local drive:
 
 3. Select a CSV file from the local drive and upload the CSV file.
 
+    !!! Note
+
+        Phone numbers in the CSV should be in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
+
 4. Select the **Mapping Fields** and click **Save**.  
     <img src="../images/mapping-fields-contact-list.png" alt="Mapping Fields" title="Mapping Fields" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
-        * Phone Number is mandatory for voice campaigns. 
-        * Phone numbers in CSV should be in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
+        Phone Number is mandatory for voice campaigns.
 
 5. The Contact List is created.
 
