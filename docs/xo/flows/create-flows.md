@@ -161,7 +161,7 @@ The following options are available:
 
 This configuration ensures that user interactions remain seamless and informative, even during unexpected system delays or failures.
 
-9. Select a **Exit Flow** (Optional): When the call disconnect event is triggered, the published version of the selected flow will be executed. You can either select the default _Exit Flow_ or one that you have created yourself.
+9. Select a **Exit Flow** (Optional): When the exit event is triggered, the published version of the selected flow will be executed. You can either select the default _Exit Flow_ or one that you have created yourself.
 <img src="../images/exit-flow.png" alt="Exit Flow" title="Exit Flow" style="border: 1px solid gray; zoom:80%;">
 
 10. Select a **No Agents Available Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered, but no agents are available, or the conversation exceeds the maximum waiting time in the queue. You can either select the default _No Agents Available Flow_ or one that you have created yourself.
