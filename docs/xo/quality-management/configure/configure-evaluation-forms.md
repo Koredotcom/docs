@@ -35,9 +35,9 @@ The Evaluation Forms has the following options:
 ### Add New Evaluation Form
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
+<img src="../evaluation-forms/images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">  
 
 Steps to create a new Evaluation Form:  
-<img src="../evaluation-forms/images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.    
 <img src="../evaluation-forms/images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">   
@@ -72,6 +72,14 @@ The following table describes the Evaluation Forms details:
    </td>
   </tr>
   <tr>
+   <td><strong>Language</strong>
+   </td>
+   <td>Select a language from the drop-down list.
+   <br>
+   
+<strong>Note</strong>: Evaluation Metrics available for selection is based on the form language selected. For example, if you choose English and Dutch, only metrics supported for both languages get displayed. If a metric is not available for a specific language, then it does not appear.
+   </td>
+  </tr>
    <td><strong>Select Channel</strong>
    </td>
    <td>Select a Channel mode (Voice or Chat).

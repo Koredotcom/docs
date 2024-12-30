@@ -104,8 +104,8 @@ The next step after creating a connector is to authorize it on the **Create Kore
 
 2. Provide the following information in the **Authorize** section:
     * Select the region you want the chatbot to be available from the dropdown.
-    * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `bots.kore.ai`.
-    * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels & Flows** > **Channels** > **Digital** > **All** > **Configurred** section of the XO Platform (shown below) for **Authorization Parameters**.
+    * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `platform.kore.ai`.
+    * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels & Flows** > **Channels** > **Digital** > **All** > **Configured** section of the XO Platform (shown below) for **Authorization Parameters**.
     <img src="../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
 
 3. Click **Next**.

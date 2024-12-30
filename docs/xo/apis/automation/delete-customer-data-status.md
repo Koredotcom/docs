@@ -66,7 +66,7 @@ See <a href="Delete Customer Data Status API">How to generate the JWT Token.</a>
   <tr>
    <td>host
    </td>
-   <td>Environment URL, for example, https://bots.kore.ai
+   <td>Environment URL, for example, https://platform.kore.ai
    </td>
   </tr>
   <tr>

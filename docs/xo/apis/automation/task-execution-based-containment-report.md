@@ -67,7 +67,7 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    </td>
    <td>Required
    </td>
-   <td>Environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>Environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
   </tr>
   <tr>

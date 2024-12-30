@@ -70,6 +70,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Get KnowledgeTasks](./get-knowledge-tasks.md) | To get a listing of knowledge Tasks along with the nodes. | Manage Knowledge Graph | Manage Knowledge Graph |
 | [Add Questions from Extraction](./add-questions-to-knowledgegraph.md) | To add specific questions from extraction to the Knowledge Graph. | Manage Knowledge Graph | Manage Knowledge Graph |
 | [Get FAQs](./get-faqs-from-knowledge-task.md) | To get a list of questions and nodes under the Knowledge task. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Get FAQs V2](./get-faqs-from-knowledge-task-V2.md) | To get a list of questions and nodes under the Knowledge task. | Manage Knowledge Graph | Manage Knowledge Graph |
 | [Update NLP Configurations](./update-nlp-configurations.md) | To update the NLP thresholds and configurations. | NLP Configurations | Test > NLP Configurations & Train |
 
 

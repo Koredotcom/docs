@@ -17,6 +17,7 @@ The Evaluation Metrics has the following options:
 ## Add New Evaluation Metrics
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
+<img src="../evaluation-forms/images/new-eva-metrics.png" alt="Metric Measurement Type" title="Metric Measurement Type" style="border: 1px solid gray; zoom:70%;">  
 
 Steps to create New Evaluation Metrics:
 
@@ -42,6 +43,21 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td><strong>Name</strong>
    </td>
    <td>Enter a name for the future reference of the metrics.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Language</strong>
+   </td>
+   <td>Select a language from the drop-down list.
+   <br>
+
+   <strong>Note</strong>: In case of **Dynamic**, the user must configure at least one **Trigger** and one agent **Answer** utterance for **Adherence Type**.
+
+In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
+   </td>
+  </tr>
+ 
+In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
    </td>
   </tr>
   <tr>

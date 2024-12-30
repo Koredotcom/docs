@@ -318,13 +318,37 @@ Key updates to products and features are summarized below. Click the correspondi
 
 ## Migration Path for Existing Customers - Upgrade Journey
 
-Users will see a banner on the current bots.kore.ai platform prompting them to try the new XO v11 platform at platform.kore.ai, which is the new home for existing bots and creating XO v11 apps with enhanced capabilities.
-Existing bots open in the old UI on platform.kore.ai and have the same functionality, such as creating dialogs, configurations, publishing, etc. Also, a banner appears inside the bot, allowing users to upgrade it to an XO v11 app.
+Users will see a banner on the current bots.kore.ai platform prompting them to try the new XO v11 platform at platform.kore.ai, which is the new home for existing bots and creating XO v11 apps with enhanced capabilities. Existing bots open in the old UI on platform.kore.ai and have the same functionality, such as creating dialogs, configurations, publishing, etc. Also, a banner appears inside the bot, allowing users to upgrade it to an XO v11 app.
 
-The upgrade journey involves user consent, downloading a bot backup, a multi-step process to add new capabilities, and a success/failure output with a retry option if needed.
-Upgrades are currently not allowed for paid bots on standard accounts. Any remaining trial period is transferred to the new app with updated trial conditions.
+The upgrade journey involves user consent, downloading a bot backup, a multi-step process to add new capabilities, and a success/failure output with a retry option if needed. Upgrades are currently not allowed for paid bots on standard accounts. For the Standard account Workspaces that are in Trial, the remaining trial period is transferred to the new app with updated trial conditions.
+
+### Prerequisites to Upgrade from XO v10 to v11
+
+* Ensure you have access to both the XO v10 and XO v11 platforms.
+* Confirm that you own the bot you plan to upgrade to XO v11.
+* Verify the bot exists in XO v10 and is fully functional.
+* Ensure you have permission to duplicate and upgrade bots on XO v10.
+* Familiarize yourself with the changes introduced in XO v11, including updated event handling and deprecated features.
+* Only XO v10 bots are eligible for XO v11 Apps platform upgrades. Bots from the SmartAssist instance and Automation bots linked to SmartAssist are not supported for migration. 
 
 ### Upgrade Journey Steps
+
+1. Log in to the [XO1O Platform](https://bots.kore.ai) and duplicate the Bot you intend to upgrade to the XO11 App.
+    * Click the Bot from the home page, and go to **Deploy > Bot Management > Export & Import Bot**. 
+    * Export the latest version of the Bot.
+    * Navigate back to the homepage, click **New Bot > Import Bot** and then upload the corresponding files from the exported copy. Name the duplicate Bot appropriately.
+2. Log in to the [XO11 Platform](https://platform.kore.ai).
+3. Check if the XO10 bots are available on the platform.
+4. Open the duplicate Bot and click **upgrade now** on the banner.  
+<img src="../images/upgrade-banner.png" alt="upgrade-banner" title="upgrade-banner">
+
+5. Follow the guided upgrade journey to upgrade the duplicate Bot to the XO11 App.  
+<img src="../images/upgrading-guide.png" alt="upgrading-guide" title="upgrading-guide"> 
+
+6. Test the new upgraded App, verify functionality, and assess the migration's impact.
+7. Once the duplicate bot works as expected, upgrade the original bot to XO v11.
+
+### Additional features in XO11
 
 #### 1. Addition of Flows
 
@@ -334,11 +358,11 @@ For bots being upgraded to XO v11, existing On-connect and Welcome events (like 
 
 #### 2. Dialog Builder Upgrade
 
-The Dialog Builder used to create Dialog Tasks will be upgraded to the latest version V3. Existing published Dialog Tasks will remain viewable in their original V2 or V1 versions. However, if users want to edit any of those existing Dialog Tasks, they will need to upgrade them to the new V3 Dialog Builder version before making changes.
+The Dialog Builder used to create Dialog Tasks will be upgraded to the latest version V3. Existing published Dialog Tasks will remain viewable in their original V2 or V1 versions. However, if users want to edit any of those existing Dialog Tasks, they must upgrade them to the new V3 Dialog Builder version before making changes.
 
 #### 3. Addition of Search AI
 
-For standard accounts, the Basic and Advanced RAG features of Search AI come bundled with the Automation AI module. For enterprise customers, a separate Enterprise Search AI plan purchase is required to access the Search AI product, which is not included by default.
+The Basic and Advanced RAG features of Search AI come bundled with the Automation AI module for standard accounts. For enterprise customers, a separate Enterprise Search AI plan purchase is required to access the Search AI product, which is not included by default.
 
 A new "Fallback configuration" is available in App Settings -> App Profile:
 
@@ -360,7 +384,7 @@ The Campaigns Module is unavailable immediately after the bot-to-app upgrade. Fo
 
 #### 6. Addition of Agent AI
 
-Agent AI is not available by default for standard accounts. Users must first have an Automation AI subscription, and then Agent AI can be added as a paid add-on. Users who are interested in only Agent AI without Automation AI must contact the sales team to initiate the process.
+Agent AI is not available by default for standard accounts. Users must first have an Automation AI subscription, and then Agent AI can be added as a paid add-on. Users interested in only Agent AI without Automation AI must contact the sales team to initiate the process.
 
 During the bot-to-app upgrade, the following default Agent AI components are created but kept inactive until the product is activated:
 
@@ -370,7 +394,7 @@ During the bot-to-app upgrade, the following default Agent AI components are cre
 
 #### 7. User Role Management Module
 
-When upgrading a bot to an XO v11 app, there are several changes to user roles and permission - updated role names aligned to "App", consolidation of permissions, the addition of new system roles like Agent/Supervisor, and the ability for App Owners to create new account roles.
+When upgrading a bot to an XO v11 app, several changes to user roles and permissions occur —updated role names aligned to "App," consolidation of permissions, the addition of new system roles like Agent/Supervisor, and the ability for App Owners to create new account roles.
 
 System Roles:
 
@@ -384,7 +408,7 @@ System Roles:
 Bot Admin Console (BAC) Changes:
 
 * The "Bot" role type is renamed to "App"
-* All permissions across products consolidated into one list
+* All permissions across products are consolidated into one list
 * Existing role permissions remain, with additional permissions for other products in the same app
 * Users can enable these new cross-product permissions for roles
 
@@ -421,7 +445,6 @@ During the upgrade, the bot goes through an automated publishing process:
 3. Finally, the upgraded bot, now an XO v11 app with the new capabilities, is published again.
 
 <hr>
-
 ##### Related Links
 
 * [Key Differences - XO v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
