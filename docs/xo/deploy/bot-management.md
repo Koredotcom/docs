@@ -223,7 +223,7 @@ You can export a VA’s definition and configuration using the Export option.
 
     **Forward Compatibility is NOT SUPPORTED**. That is, Export from a lower (not an end-of-life) version to a higher supported version is allowed for all the virtual assistants. However, a VA export from a higher environment and import to an environment running a lower version or lower patch is not supported.
 
-When you export a assistant, it downloads a zipped file with the following parameters:
+When you export an assistant, it downloads a zipped file with the following parameters:
 
 * **appDefinition.json**: Includes metadata, tasks, VA and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – VA settings, variables, IVR settings- while exporting the assistant.
 * **config.json**: Includes VA settings, VA variables, and IVR settings.
