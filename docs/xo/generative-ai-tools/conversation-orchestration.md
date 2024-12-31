@@ -1,8 +1,8 @@
 # Conversation Orchestration
 
-Conversation Orchestration in DialogGPT allows you to define and manage Conversation Types while configuring separate Chunk Shortlisting and Conversation Orchestration models. You can turn Intent Events and Conversation Events on or off and choose how each event is fulfilled.  
+Conversation Orchestration in DialogGPT allows you to define and manage Conversation Types while configuring separate Chunk Shortlisting and Conversation Orchestration models. You can turn Intent Events and Conversation Events on or off and choose how each event is fulfilled (by overriding the default fulfillment), ensuring precise and adaptable conversation management that you can confidently rely on.  
+This flexible system gives developers complete control over conversation management, ensuring the accuracy, relevance, and efficiency of user interactions.
 
-This flexible system gives you complete control over conversation management, ensuring the accuracy, relevance, and efficiency of user interactions.
 
 <img src="../images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
@@ -26,10 +26,12 @@ To manage the conversation types, click **Settings**, turn the toggle on/off to 
 The Model Configurations card lets you choose the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
 
 * **Shortlisting Relevant Chunks**: 
-The XO Platform supports **MPNet**, **BGE M3**, **Labse**, and **E5 embedding** models, with more options coming soon. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine.
+The XO Platform supports **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding** models, with more options coming soon. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3
+
 
 * **Conversation Management**: 
-Currently, **OpenAI GPT-4o** and **Azure OpenAI GPT-4o** models support user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.
+Currently, **OpenAI GPT-4o** and **Azure OpenAI GPT-4o** models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.  
+Support for the major commercial models will be available in the upcoming months. However, you can always bring your own model via the custom LLM integration route.  
 
 To configure the model and settings, click **Settings**. Select the model, adjust the settings if necessary, and click **Save**.
 
@@ -63,10 +65,10 @@ Supported Conversation Events:
 
 
 
-* **Interaction Intents**: Handle actions like answering from context, holding, or refusing to answer. The default fulfillment method is ‘Executing a dialog task.’ 
-* **Restart Conversation**: Triggers the welcome flow. The default fulfillment method is Ask for Confirmation and Restart the Conversation.
-* **Agent Transfer**: Transition the user to a human agent. The default fulfillment method is Ask for Confirmation and Execute the Dialog Task.
-* **End Conversation**: Manage the termination of a conversation. The default fulfillment method is Ask for Confirmation and End the Conversation.
+* **Interaction Intents**: Handle actions like answering from context, holding, or refusing to answer. The default fulfillment method is ‘Executing a dialog task - ConversationEvent.’ 
+* **Restart Conversation**: Triggers the welcome flow. The default fulfillment method is 'Ask for Confirmation' and then based on the user response, 'Restart the Conversation'.
+* **Agent Transfer**: Transition the user to a human agent. The default fulfillment method is 'Ask for Confirmation' and then based on the user response 'Execute the Dialog Task - DefaultAgentTrasfer'.
+* **End Conversation**: Manage the termination of a conversation. The default fulfillment method is 'Ask for Confirmation' and then based on the user response, 'End the Conversation'.
 
 To manage an intent, click the respective settings. Define the event configuration, use the toggle to enable/disable the intent type, and click save.
 
