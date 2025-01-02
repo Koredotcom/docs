@@ -760,10 +760,9 @@ Here’s a list of keys and their purpose:
    </td>
    <td>Message that is displayed when the form link expires.
    
-   **Note:**
-       
-       * The expiry message of the digital form cannot be customized.
-       * The expiry message will be displayed according to the bot's language settings.
+   **Note:**  
+   * The expiry message of the digital form cannot be customized.  
+   * The expiry message will be displayed according to the bot's language settings.
 
    </td>
   </tr>
