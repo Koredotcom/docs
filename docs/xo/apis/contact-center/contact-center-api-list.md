@@ -12,8 +12,8 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Call Recording API](#call-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
 * [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
-* [Queue Management APIs](#queue-management-apis)
-* [Quality Management APIs](#quality-management-apis)
+* [Queue AI APIs](#queue-ai-apis)
+* [Quality AI APIs](#quality-ai-apis)
 * [WFM APIs](#wfm-apis)
 
 ### Analytics and Reporting APIs
@@ -101,7 +101,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Transfer Conversation to a Specific Agent](./transfer-conversation-to-a-specific-agent-or-queue.md)         | To transfer a conversation to a specific agent using the provided botSessionId and aId. It posts specific messages to the provided callbackUrl to indicate the success or failure of the conversation transfer. | Routing              |
 
-### Queue Management APIs
+### Queue AI APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
@@ -112,12 +112,12 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Update a Specific Queue](../contact-center/update-a-specific-queue.md)                                             | To update a specific queue with the given streamId and queueId.                                               | Configuration        |
 | [Delete a Queue](../contact-center/delete-a-queue.md)                                                               | To delete a specific queue with the given streamId and queueId.                                               | Configuration        |
 
-### Quality Management APIs
+### Quality AI APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
-| [Raw Data API](../contact-center/qm-apis/raw-data-api.md)                                                               | Provides detailed Quality Management and Conversation Intelligence data, including quality metrics and analytics for each interaction.                                                                   | Configuration        |
-| [Auto QA Reporting API](../contact-center/qm-apis/auto-qa-reporting-api.md)                                                   |Provides interaction-level Auto QA scoring and metric qualification based on the associated Quality Management form.                | Configuration        |
+| [Raw Data API](../contact-center/qm-apis/raw-data-api.md)                                                               | Provides detailed Quality AI and Conversation Intelligence data, including quality metrics and analytics for each interaction.                                                                   | Configuration        |
+| [Auto QA Reporting API](../contact-center/qm-apis/auto-qa-reporting-api.md)                                                   |Provides interaction-level Auto QA scoring and metric qualification based on the associated Quality AI form.                | Configuration        |
 
 ### WFM APIs
 
