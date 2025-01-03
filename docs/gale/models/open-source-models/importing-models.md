@@ -6,8 +6,9 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 
 !!! note
 
-    **Base Model**: A base model is a pre-trained model that can be used for general tasks. It’s already trained on a large dataset and can be used as-is or fine-tuned for specific tasks.
-    **Adapter Model**: An adapter model is a smaller model that works with a base model to make it more suited for a specific task or dataset. It doesn’t need to retrain the entire base model but adjusts it for new purposes. To import an adapter model in GALE, it is necessary to specify the related base model."
+    **Base Model**: A base model is a pre-trained model that can be used for general tasks. It’s already trained on a large dataset and can be used as-is or fine-tuned for specific tasks.  
+    
+    **Adapter Model**: An adapter model is a smaller model that works with a base model to make it more suited for a specific task or dataset. It doesn’t need to retrain the entire base model but adjusts it for new purposes. To import an adapter model in GALE, it is necessary to specify the related base model.
 
 
 ### Best Practices

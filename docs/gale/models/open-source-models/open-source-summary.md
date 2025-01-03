@@ -1,4 +1,4 @@
-# Open-source Models Summary table
+# Open-source Models Overview
 
 The Open-source models tab displays the following details:
 
