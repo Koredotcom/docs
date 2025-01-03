@@ -13,6 +13,7 @@ This update includes new features, feature enhancements, and security enhancemen
 * Unified External Model Request & Response Structure: Introducing a wrapper endpoint to standardize request and response formats for all external AI models. The wrapper converts model-specific outputs to a unified structure, resulting in a consistent API, simplified integration, and improved maintainability.
 * Knowledge Node: Introducing a new node on the agent canvas, allowing users to search documents within GALE workflows by integrating with Search AI. Users can connect accounts, configure searches, and use optional meta filters to narrow results.
 * Function Calling in Gen AI Node: Implemented support for function calling (happy path) within the Gen AI Node in the Agent, including basic debugging capabilities.
+* Prompt Integration in Gen AI Node: Prompt studio is now integrated into Gen AI nodes, simplifying the use of prompts and AI models while enhancing accessibility and productivity. Users can easily manage and customize prompts in the studio, and seamlessly integrate them with the Gen AI nodes.
 
 
 **Feature Enhancements**
