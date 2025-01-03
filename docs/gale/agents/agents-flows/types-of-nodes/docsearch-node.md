@@ -11,18 +11,16 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
     RAG blends traditional retrieval systems (e.g., search, databases) with generative LLM capabilities, ensuring more accurate, relevant, and up-to-date results tailored to your needs.
 
 
-    RAG enhances generative AI outputs through key steps:
+    RAG enhances generative AI outputs through these key steps:
 
-    * **Retrieval & Pre-processing**: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.
-    * **Grounded Generation**: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.
-* **Integration with SearchAI**
-      
-    * The DocSearch Node connects to a configured **Search AI App** via GALE’s integration page.
-    * It accesses indexed resources from the **Sources** repository within Search AI to retrieve relevant information.
-* **Dynamic Input Queries**
-
-    * Accepts search input either as a variable or static text.
-    * Facilitates seamless query processing by **Search AI**, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s [Answer Generation](https://docs.kore.ai/xo/searchai/answer-generation/){:target="_blank"}, corresponding to the input query and the meta filters provided via the **Advanced Search API**. [Learn more](https://docs.kore.ai/xo/apis/searchai/answer-generation/){:target="_blank"}.
+    <ul><li><b>Retrieval & Pre-processing</b>: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.</li>
+    <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li>
+    <li><b>Integration with SearchAI</b></li>      
+    <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via GALE’s integration page.</li>
+    <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li>
+<li><b>Dynamic Input Queries</b></li>
+    <ul><li>Accepts search input either as a variable or static text.</li>
+    <li>Facilitates seamless query processing by <b>Search AI</b>, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s <a href="https://docs.kore.ai/xo/searchai/answer-generation/" target="_blank">Answer Generation</a>, corresponding to the input query and the meta filters provided via the <b>Advanced Search API</b>. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/" target="_blank">Learn more</a>.</li></ul></ul></ul>
 
 * **Configurable Meta filters**
 
@@ -120,7 +118,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 <p class="admonition-title">Note</p>
 <p>Use search to look up and select the required connection.</p></div>
 
-    To set up a new connection, click **+ New Connection**. This will redirect you to the GALE Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
+To set up a new connection, click **+ New Connection**. This will redirect you to the GALE Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
 
 <ol start="7"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
 <img src="../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>
