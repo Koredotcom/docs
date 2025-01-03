@@ -13,8 +13,8 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
     RAG enhances generative AI outputs through these key steps:
 
     <ul><li><b>Retrieval & Pre-processing</b>: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.</li>
-    <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li>
-    <li><b>Integration with SearchAI</b>     
+    <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li></ul>
+<ul><li><b>Integration with SearchAI</b>     
     <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via GALE’s integration page.</li>
     <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li></ul></li>
     <li><b>Dynamic Input Queries</b></li>
@@ -98,12 +98,12 @@ Setting up a DocSearch node in an agent flow involves adding the node at the app
 2. Click **Go to flow** to edit the in-development version of the flow.
 <img src="../images/go-to-flow-doc-search.png" alt="go to agent flow" title="go to agent flow" style="border: 1px solid gray; zoom:75%;">
 
-3. In the flow builder, click **DocSearch** > **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
+3. In the flow builder, click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
 <img src="../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
 
 4. To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
 
-<img src="../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
 
 Alternatively, click the node and change the value for **Node Name** in the configuration panel.
 <img src="../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
