@@ -763,7 +763,7 @@ Here’s a list of keys and their purpose:
    <strong>Note</strong>:
    <ul>
       <li>The expiry message of the digital form cannot be customized.</li>
-      <li>The expiry message will be displayed according to the bot's language settings.
+      <li>The expiry message will be displayed according to the app's language settings.
       </li>
    </ul>
    </td>
