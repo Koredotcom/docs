@@ -10,17 +10,16 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
 
     RAG blends traditional retrieval systems (e.g., search, databases) with generative LLM capabilities, ensuring more accurate, relevant, and up-to-date results tailored to your needs.
 
-
     RAG enhances generative AI outputs through these key steps:
 
     <ul><li><b>Retrieval & Pre-processing</b>: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.</li>
     <li><b>Grounded Generation</b>: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.</li>
-    <li><b>Integration with SearchAI</b></li>      
+    <li><b>Integration with SearchAI</b>     
     <ul><li>The DocSearch Node connects to a configured <b>Search AI App</b> via GALE’s integration page.</li>
-    <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li>
-<li><b>Dynamic Input Queries</b></li>
+    <li>It accesses indexed resources from the <b>Sources</b> repository within Search AI to retrieve relevant information.</li></ul></li>
+    <li><b>Dynamic Input Queries</b></li>
     <ul><li>Accepts search input either as a variable or static text.</li>
-    <li>Facilitates seamless query processing by <b>Search AI</b>, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s <a href="https://docs.kore.ai/xo/searchai/answer-generation/" target="_blank">Answer Generation</a>, corresponding to the input query and the meta filters provided via the <b>Advanced Search API</b>. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/" target="_blank">Learn more</a>.</li></ul></ul></ul>
+    <li>Facilitates seamless query processing by <b>Search AI</b>, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s <a href="https://docs.kore.ai/xo/searchai/answer-generation/" target="_blank">Answer Generation</a>, corresponding to the input query and the meta filters provided via the <b>Advanced Search API</b>. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/" target="_blank">Learn more</a>.</li></ul></ul>
 
 * **Configurable Meta filters**
 
