@@ -1,6 +1,6 @@
 # Raw Data API
 
-This API provides detailed Quality Management and Conversation Intelligence related data at an interaction level, including interaction quality metrics and interaction analytics attributes.
+This API provides detailed Quality AI and Conversation Intelligence related data at an interaction level, including interaction quality metrics and interaction analytics attributes.
 
 <table>
   <tr>
@@ -32,7 +32,7 @@ See <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/#generatin
   <tr>
    <td>API Scope
    </td>
-   <td>Quality Management
+   <td>Quality AI
    </td>
   </tr>
 </table>
