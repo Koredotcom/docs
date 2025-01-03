@@ -5,7 +5,7 @@ The Settings allow you to make app-level changes to Conversation Intelligence.
 The Settings has the following two sections:
 
 * Conversation Intelligence
-* Quality AI
+* Quality AI General Settings
 
 ## Conversation Intelligence
 
@@ -58,9 +58,7 @@ Steps to enable the Script Adherence Configuration:
 
 2. Define the scripts for the following attributes to check the agent adherence. 
 
-    * **Attribute**: Shows script steps like Greeting, Branding, and so on, where custom messages can be added.
-
-    * **Message**: Shows the custom messages that are already configured.
+    * **Attribute**: Shows script steps like Greeting, Branding, and so on, where you can add custom messages.
 
     * **Action**: Enables you to enter messages for the agent by toggling the action button.
 
@@ -70,6 +68,12 @@ Steps to enable the Script Adherence Configuration:
 
     * **Message**: Allows you to define specified attribute messages for the agent or user. You can add more than one message for the user for the same attribute and delete the defined messages.
 
+        !!! Note
+    
+        If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute.
+
+    <img src="../settings/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
+
     * **Save**: Allows you to save the defined messages.
 
         At the agent account level, the agent can only check the following options defined by the supervisor or app owner or administrator in the Settings.
@@ -78,7 +82,7 @@ Steps to enable the Script Adherence Configuration:
 
         * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
 
-## Quality AI
+## Quality AI General Settings
 
 The App owners can use the Settings option under QM to enable or disable auto QA scoring of interactions and at an app level. Users with relevant permissions can enable and create bookmarks to collect interactions in different bookmarks for easy future reference.
 

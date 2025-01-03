@@ -2,6 +2,19 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+<hr>
+
+## v11.8.1 December 19, 2024
+
+<u> Patch Release </u>
+
+This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
+
+### Multi-lingual Support
+The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
+
+<hr>
+
 ## v11.8.0 December 11, 2024
 
 <u> Minor Release </u>
@@ -11,8 +24,8 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 ### Widget Enhancements
 
 #### Auto-Scroll for Transcript Tab
-Agents now have access to the content of the **Transcript** tab. They can scroll vertically (up and down) and horizontally (left and right) to read through the content.  
-<img src="../auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
+The Transcript tab is now updated with the "auto-scroll" functionality, wherein the system automatically navigates to the last message for new utterances. Agents can manually scroll up and down to read through the content.  
+<img src="../images/auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
 
 #### Enhanced Language Support for Localization
 The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
@@ -33,7 +46,7 @@ The Greeting Messages, Widget Content, Layout Customization, and Negative Feedba
 #### Clickable Spyglass icon on the Search bar
 
 The **Spyglass** icon on the Agent AI widget’s **Search** bar is now clickable. Users can search by pressing the **Enter** key or clicking the **Spyglass** icon.  
-<img src="../spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
 
 #### Run Dialog Task Enhancement
 In the Agent AI widget, Dialog Tasks now display the **Run with Agent Input** button as an icon next to the Run button. Agents can click this icon to customize the Dialog Task content and decide whether to send the dialog.
@@ -51,7 +64,7 @@ The Agent AI widget now supports conversation summarization in Japanese.
 ### Integration Enhancements
 
 #### Genesys Agent AI integration with Genesys Desktop Application
-The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/).
+The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/){:target="_blank"}.
 
 #### Enhanced Language Support for NICE MAX Desktop
 The Agent AI integration with NICE MAX Desktop now supports multiple languages, allowing agents to interact with the Agent AI widget in their preferred language.
@@ -75,7 +88,7 @@ The Raw Data API is updated to include the following:
 * Links Clicked / Redirects: The “linksClicked” parameter shows the URL and the timestamp when a link was clicked.
 
 #### Chat History API Includes Agent Messages
-The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/) now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
+The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
 
 ### UI Enhancement
 

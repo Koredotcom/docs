@@ -172,7 +172,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
         "isp": "Bharti Airtel Ltd. AS for GPRS Service",
         "ipAddress": "106.203.156.168",
         "queue": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-        "hostDomain": "https://bots.kore.ai",
+        "hostDomain": "https://platform.kore.ai",
         "os": "Windows",
         "device": "NA"
     }

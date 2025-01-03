@@ -61,7 +61,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
   </tr>
   <tr>
@@ -99,11 +99,11 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 
 ```json
-curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-0166b82bc41c/qna/import?language=en' \
+curl --location 'https://platform.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-0166b82bc41c/qna/import?language=en' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'content-type: application/json' \
 --data '{
-    "fileUrl":"https://www.icicibank.com/nri-banking/money_transfer/faq/m2i-rewards-program/loyalty-program.page%22, 
+    "fileUrl":"https://www.ibank.com/nri-banking/money_transfer/faq/m2i-rewards-program/loyalty-program.page%22, 
     "name":"Test"
 
  }'
@@ -112,7 +112,7 @@ curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-
 ## Sample Request (Extraction using File)
 
 ```json
-curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-0166b82bc41c/qna/import?language=en' \
+curl --location 'https://platform.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-0166b82bc41c/qna/import?language=en' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'content-type: application/json' \
 --header 'Cookie: AWSALB=ywKTJVAcCplRMGaJXRvhZ4gUvOCrfYhOjeqvdYirqAyRQyP9WpTDeNwZI1tDwgoP/CiA6G6j2DxXGWIbCEWdjaiq1ehA2Xo/YxwOBDi02Ix9cbcGYum8P1bxBSq1; AWSALBCORS=ywKTJVAcCplRMGaJXRvhZ4gUvOCrfYhOjeqvdYirqAyRQyP9WpTDeNwZI1tDwgoP/CiA6G6j2DxXGWIbCEWdjaiq1ehA2Xo/YxwOBDi02Ix9cbcGYum8P1bxBSq1' \

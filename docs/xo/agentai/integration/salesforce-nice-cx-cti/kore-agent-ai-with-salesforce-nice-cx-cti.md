@@ -439,6 +439,95 @@ Assuming the Account Object is mapped above, open the page layout for Account Ob
 In the filter field, type “NiceCTI” and drag and drop the object onto the **Account Object** layout page.  
 <img src="../images/nice-cti-19.png" alt="nice-cti" title="nice-cti" style="border: 1px solid gray; zoom:80%;">
 
+### Configure a Visualforce Page to embed Kore Agent AI Widget (If Applicable)
+
+#### Step-1: Create a Lightning Out App
+
+Create a Lightning Out app, a special type of standalone Aura app:
+
+1. Open the **Developer Console** from your **Salesforce** org.
+2. Navigate to **File** > **New** > **Lightning Application**.
+3. Fill in the **Name** and **Description** fields, and then click **Submit**.
+4. Paste the following code into the editor, and save the **Lightning Application**:
+
+```
+<aura:application access="GLOBAL" extends="ltng:outApp">
+    <!-- Lightning Web Component will be loaded here from Visualforce page -->
+    <aura:dependency resource="KAA:niceCTIAgentAssistVoice" />
+</aura:application>
+```
+
+#### Step-2: Create/Edit Visualforce Page
+
+1. Either create a new Visualforce Page or open an existing one.
+2. To create a new Visualforce Page, navigate to the **Setup** page > **Visualforce Pages,** and click **New**.
+3. In the **Visualforce Markup** code editor, add `&lt;apex:includeLightning />` at the beginning of your Visualforce page. This component loads the JavaScript file that Lightning Components for Visualforce uses.
+4. Paste the following code into the **Visualforce Markup** code editor at the desired location where you want the Agent AI widget to appear:
+
+      ```
+      <div id="lwc-container"></div>
+      <script>
+         // Initialize Lightning Out with the app you created
+         $Lightning.use("c:LightningApplication", function() {
+            // Create the LWC component inside the div container
+            $Lightning.createComponent("KAA:niceCTIAgentAssistVoice", { height: '600px', width: '500px'}, "lwc-container");
+         });
+      </script>
+      ```
+    !!! note
+
+        Replace “LightningApplication” with the name of the Lightning Out app you created in [Step-1](#step-1-create-a-lightning-out-app). Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference - these are the height and width of the Agent AI widget.
+
+5. Click **Save**.
+
+**Sample Visualforce Page:**
+
+```
+<apex:page >
+    <apex:includeLightning />
+    <h1>Hello !</h1>
+    <p>Welcome to Kore.ai Visualforce page.</p>
+    <div id="lwc-container"></div>
+    <script>
+        // Initialize Lightning Out with the app you created
+        $Lightning.use("c:Kore_Lightning_App", function() {
+            // Create the LWC component inside the div container
+            $Lightning.createComponent("KAA:niceCTIAgentAssistVoice", { height: '600px', width: '500px'}, "lwc-container");
+        });
+    </script>
+</apex:page>
+```
+
+Set this Visualforce page as the screen pop in the Softphone layouts of your Salesforce org, or create a Visualforce tab by following the instructions in this [document](https://help.salesforce.com/s/articleView?id=platform.pages_tabs_create.htm&type=5){:target="_blank"}.
+
+### Configure an Aura Component to embed Kore Agent AI widget (If Applicable)
+
+1. Either create a new Aura Component or open an existing one.
+2. To create a new Aura Component, open **Developer Console** from your Salesforce org.
+3. In the **Developer Console**, navigate to **File** > **New** > **LightningComponent**.
+4. Fill in the **Name** and **Description** fields, and then click **Submit**.
+5. Paste the following code into the editor at the desired location where you want the Agent AI widget to appear, and save the **Lightning Application**:
+
+    ```
+    <KAA:niceCTIAgentAssistVoice height="800px" width="500px" />
+    ```
+
+    !!! note
+
+        Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference–these are the height and width of the Agent AI widget.
+
+**Sample Aura Component:**
+
+```
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <h1>Hello! Kore Aura Component</h1>
+    <KAA:niceCTIAgentAssistVoice height="800px" width="500px" />
+    <h1>End of Aura Component</h1>
+</aura:component>
+```
+
+Create a Lightning tab by following the instructions in this [document](https://help.salesforce.com/s/articleView?id=platform.creating_flexipage_tabs.htm&type=5){:target="_blank"}.
+
 ### <span id="OAuth">Enabling OAuth</span>
 
 1. Go to **Setup** > **OAuth and OpenID Connect Settings** and enable **Allow OAuth Username-Password Flows**.  

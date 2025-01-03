@@ -25,7 +25,12 @@ Steps to add a dialog task:
 
     <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
 
-7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).
+7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).  
+    
+    !!!Note 
+        
+         Non utf 8 characters are not supported for intent display name.
+
 8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(Agent AI Use Case)**, or both.
 9. Under **Intent Settings**, set options for the task to be independent, such as a **Sub-intent dialog** or **Hide it from Help**.
 10. Under **Analytics - Containment type**, you can choose between **Abandonment as Self-Service** and **Abandonment as Drop Off**.
@@ -53,17 +58,20 @@ The nodes and the flow for the Business Logic are automatically built for your c
 The Platform auto-defines the _Entities, Prompts, Error Prompts, Bot Action nodes, Service Tasks, Request Definition_, and other parameters.
 
 
-
 ### Auto-Generate Dialog Tasks using Gen AI
 
 Right after creating your dialog task, you will see a **Conversation Preview** window. In this window, you can view mock conversations and convert them into dialog flows for every intent.
 
 
-1. Click the **Gen Ai** option.
+1. Click the **Gen AI** option.
 
     <img src="../images/using-dialog-builder-img5-create-dialog-genai.png" alt="Select Gen Ai" title="Select Gen Ai" style="border:1px solid gray;zoom:60%;">
 
-2. Provide **Intent Name** (mandatory) and a meaningful **Description** that states the purpose of the Dialog Task, and click **Generate**.
+2. Provide **Intent Name** (mandatory) and a meaningful **Description** that states the purpose of the Dialog Task, and click **Generate**.  
+    
+    !!!Note
+        
+        Non utf 8 characters are not supported for intent display name.
 
     <img src="../images/using-dialog-builder-img6-create-dialog-genai-generate.png" alt="Gen Ai - Generate" title="Gen Ai - Generate" style="border:1px solid gray;zoom:60%;">
 
@@ -552,11 +560,12 @@ Add or modify the following settings for your dialog:
 * **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
 * **Description** – An optional description of your dialog task displayed in the XO Platform.
 * **Intent Settings:**
-        * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
-        * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-        !!! Note 
- 
-	    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+            
+     * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
+     * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.  
+        
+    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+        
 * **Customer Use Cases** – Select if this dialog task is available for end users (customers).
 * **Agent AI Use Cases** - Select if this dialog task is available for agents.
     * Enable or disable the following options in this section:

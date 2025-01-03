@@ -455,7 +455,7 @@ If the assistant fails to detect a user’s language with high confidence, it re
 
 ### Language Selection 
 
-1. The virtual assistant identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceed as per the user response.  These standard responses can be customized using the getCurrentOptions utility, [see here for more](../../../apis/koreutil-libraries/#koreutilgetcurrentoptions){target="_blank"}.  
+1. The virtual assistant identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceed as per the user response. These standard responses can be customized using the [getCurrentOptions utility](../../apis/automation/koreutil-libraries.md#koreutilgetcurrentoptions).
   
     !!! Note
     

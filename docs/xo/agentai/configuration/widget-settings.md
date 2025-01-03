@@ -1,6 +1,6 @@
 # Customizing the Agent AI Widget
 
-The Agent AI Settings page allows users to set the Agent AI widget’s appearance. On this page, users can decide what features they want on the widget, channel specific settings, and the URL opening behavior.
+The Agent AI Settings page allows users to set the Agent AI widget’s appearance. On this page, users can decide what features they want on the widget, channel-specific settings, and the URL opening behavior.
 
 The Agent AI Settings page has the following sections:
 
@@ -22,7 +22,7 @@ This section lets you set your preferences based on the channels. It has three c
 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
     
-* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the **Assist** tab. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI widget** > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
+* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My Bot, and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
 
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
 
@@ -59,7 +59,6 @@ This section lets you set your preferences based on the channels. It has three c
 5. Click the **toggle** against **Agent AI Channel Specific Settings** to enable it (if **Disabled**).
 6. Turn the toggle **on** or **off** against each widget, as required.
 7. Select an option under the **Conversation Transfer** section.
-
 8. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:

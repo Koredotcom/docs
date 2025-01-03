@@ -7,9 +7,9 @@ Custom Script gives you the flexibility to implement custom changes to the Workb
 
 Use the following properties to configure this stage. 
 
-* **Stage Type:** Set this field to Exclude Document type
+* **Stage Type:** Set this field to Custom Script
 * **Stage Name**: Set a unique name for the stage.
-* **Condition**: Define a condition for selecting the documents to be excluded from processing. Use the basic or script mode to define the condition. You can define any number of conditions with the AND operator between the conditions to find the exact set of data to be excluded. For example, if you want to process only file content, use the following script as the condition.
+* **Condition**: Define a condition for selecting the documents. Use the basic or script mode to define the condition. You can define any number of conditions with the AND operator between the conditions to find the exact set of data to be excluded. For example, if you want to process only file content, use the following script as the condition.
 
 ```javascript
 if(ctx.sys_content_type.equals("file"))

@@ -27,7 +27,6 @@ This update includes new features, feature enhancements, and security enhancemen
 
 <hr>
 
-
 ## v1.0.6 December 12, 2024
 
 <u> Minor Release </u>

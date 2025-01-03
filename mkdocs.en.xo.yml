@@ -301,7 +301,9 @@ nav:
                 - Introduction: searchai/content-sources/connectors.md
                 - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
                 - RACL Overview: searchai/content-sources/racl-support.md
+                - Aha: searchai/content-sources/connectors/aha.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
+                - Amazon S3: searchai/content-sources/connectors/amazons3.md
                 - Asana: searchai/content-sources/connectors/asana.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - Box: searchai/content-sources/connectors/box.md
@@ -323,7 +325,9 @@ nav:
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md  
-                - WordPress: searchai/content-sources/connectors/wordpress.md   
+                - Trello: searchai/content-sources/connectors/trello.md
+                - WordPress: searchai/content-sources/connectors/wordpress.md
+                - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
         - Extraction Strategy: searchai/content-extraction/extraction.md
@@ -364,6 +368,7 @@ nav:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
+      - Contact Center AI Routing: contactcenter/routing/contact-center-ai-routing.md
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
     - Agent Console:
@@ -554,10 +559,7 @@ nav:
           - SDK Security: sdk/sdk-security.md
           - SDK Registration: sdk/app-registration.md
           - SDK Configurations: sdk/sdk-configuration.md
-          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
-          - Tutorials:
-            - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
-            - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md         
         - BotKit SDK:
           - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
           - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
@@ -565,11 +567,7 @@ nav:
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
           - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
-          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
-          - Tutorials:
-            - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
-            - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
-            - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md          
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
   - Analytics:
     - Introduction: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md

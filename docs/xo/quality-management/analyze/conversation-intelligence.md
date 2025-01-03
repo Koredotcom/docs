@@ -279,21 +279,47 @@ The Customer Churn Monitor is a pie chart representation of the customer churn r
 
 ## Insights Mining
 
-The insights mining dashboard comprises three widgets that facilitate data exploration.
+Insights Mining displays the top 30 topics by volume and allows you to identify the topics associated with volume, sentiment, keywords and emotions for the selected date range and channel.  
+<img src="../conversation-intelligence/images/insights-mining-default-screen.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
+
+By default, this widget displays a blank screen without any data. Based on the date range and topic selected from the calendar, it pulls the required sentiment scores for interactions in bubbles.
 
 ### Topics 
 
-The widget grades sentiment scores for interactions on a scale of 1 to 10. Each topic is represented by a bubble with indicators for different weights associated with positive, neutral, or negative sentiment.
+This displays grades sentiment scores for interactions on a scale of 1 to 10. Each topic is represented by a bubble with indicators for different volumes associated with positive, neutral, or negative sentiment. This displays the Top 5 emotions including both positive and negative.
 
-Hovering over a topic displays the associated average emotion index label (for example, angry or frustrated) instead of the topic name.
+Hovering over a topic (actionable insights via tooltips) displays the following associated average emotion index label (for example, angry or frustrated) instead of the topic name. 
 
-For example: The “Network issues” bubble indicates sentiment distribution as follows:
+#### Bubble Color & Sentiment Logic
+The bubble plotting visual representation helps you to quickly identify sentiment distribution and volume for each topic. Hovering over a bubble displays a tooltip with sentiment distribution, total interactions, and average sentiment score.
 
-40% positive (green), 30% neutral, and 30% negative. These percentages are represented by the bubble’s circumference. Hovering over “Network issues” shows the average emotion index, such as “satisfied” (associated with the average sentiment score).
+**Sentiment Color**
+
+* **Green** (Positive): Indicates positive sentiment distribution and the Sentiment score is between 6 and 10.
+* **Grey** (Neutral): Indicates neutral sentiment distribution and the Sentiment score is between 4 and 6.
+* **Red** (Negative): Indicates negative sentiment distribution and the Sentiment score is between 1 and 4.
+* **No. of Interactions**: Total count of interactions for that topic.
+* **Sentiment Score**: Overall sentiment score for the topic.
+
+The bubble size reflects the volume of interactions for a topic. It is dynamically calculated within the selected date range, with the size scaled proportionally to show the topic's interaction volume relative to the minimum and maximum values. By default, all three sentiment colors are selected, showing a combined view of all topics with varying sentiments. By clicking on a specific sentiment color, you can view the most relevant topics within each sentiment category.
+
+The color logic for sentiment:
+* 1<=x<4: Negative (Red)
+* 4<=x<6: Neutral (Grey)
+* 6<=x<=10: Positive (Green)
+
+    !!! Note
+
+        By default, only the top most significant 30 topics (based on interaction volume) are displayed on the widget.
+
+For example, the **Payment** bubble indicates sentiment distribution as **Positive** 68% (green), **Neutral**  10% (grey), and **Negative** 22% (red). 
+
+These percentages are represented by the bubble’s circumference. Hovering over the Payment bubble shows the average emotion index, such as **Flexible**, **Accurate**, **Fast**, and so on (associated with the average sentiment score).  
+<img src="../conversation-intelligence/images/topics-percentage.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
 
 ## Keyword Cloud & Emotions for All
 
-This widget shows relevant keywords for a selected topic from the previous widget. It excludes general stop words and common words. 
+This displays relevant keywords for a selected **Topics** from the previous widget. It excludes general stop words and common words. 
  
 <img src="../conversation-intelligence/images/insights-mining.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
 
@@ -317,7 +343,7 @@ The interaction details refer to the main keyword searched, and if any semantic 
 
 When a specific semantic variation keyword is selected in the keyword cloud, the interactions related to that keyword are displayed in the interaction details.  
 
-<img src="../conversation-intelligence/images/keyword-search.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
+<img src="../conversation-intelligence/images/selected-topic.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
 
 ## Interaction Details
 

@@ -8,7 +8,6 @@ The  Admin Console of **AI for Work** is a centralized management interface for 
 * AI Search
 * Pre Built Solutions
 * AI Agents
-* Account Knowledge
 * Security
 
 ## Prerequisites
