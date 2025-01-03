@@ -16,9 +16,11 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
     * **Retrieval & Pre-processing**: Powerful search algorithms query external data (e.g., web pages, databases). Retrieved data is pre-processed through tokenization, stemming, and stop-word removal.
     * **Grounded Generation**: Pre-processed data integrates with the LLM, enriching its context for more accurate, informative, and engaging responses.
 * **Integration with SearchAI**
+      
     * The DocSearch Node connects to a configured **Search AI App** via GALE’s integration page.
     * It accesses indexed resources from the **Sources** repository within Search AI to retrieve relevant information.
 * **Dynamic Input Queries**
+
     * Accepts search input either as a variable or static text.
     * Facilitates seamless query processing by **Search AI**, which identifies and extracts/retrieves contextually relevant chunks from the available resources using SearchAI’s [Answer Generation](https://docs.kore.ai/xo/searchai/answer-generation/){:target="_blank"}, corresponding to the input query and the meta filters provided via the **Advanced Search API**. [Learn more](https://docs.kore.ai/xo/apis/searchai/answer-generation/){:target="_blank"}.
 
@@ -80,6 +82,7 @@ A success message is displayed and the connection is listed for SearchAI.
 <img src="../images/listed-connection.png" alt="listed connection" title="listed connection" style="border: 1px solid gray; zoom:75%;">
 
 If the connection fails with the following message, check and re-enter the correct Search AI app credentials.
+
 <img src="../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -102,25 +105,25 @@ Setting up a DocSearch node in an agent flow involves adding the node at the app
 <img src="../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
 
 4. To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
+
 <img src="../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
 
 Alternatively, click the node and change the value for **Node Name** in the configuration panel.
 <img src="../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
-5. Enter an input variable for dynamic inputs or plaintext for hard-coded inputs in the **Query** field. This field captures the user’s search query.
-<img src="../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;">
-
-6. Select the **Search AI connection** you set up in [Step 2](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} on the GALE integration page.
-<img src="../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;">
+<ol start="5"><li>Enter an input variable for dynamic inputs or plaintext for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
+<img src="../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-gale" target="_blank">Step 2</a> on the GALE integration page.
+<img src="../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Use search to look up and select the required connection.</p></div>
 
-To set up a new connection, click **+ New Connection**. This will redirect you to the GALE Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
+    To set up a new connection, click **+ New Connection**. This will redirect you to the GALE Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
 
-<ol start="7"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.</li>
-<img src="../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></ol>
+<ol start="7"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
+<img src="../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
