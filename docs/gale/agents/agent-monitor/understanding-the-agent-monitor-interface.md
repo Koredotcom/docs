@@ -99,23 +99,23 @@ Below are the four scenarios showing how timeouts affect the agent endpoint, alo
 
 **Agent 'Sync' & API node 'Sync'**:
 
-* Immediately fulfilled, no specific endpoint message.
+* Request immediately fulfilled, no specific message to the endpoint.
 * 'In-progress' status while running.
 
 **Agent 'Sync' & API node 'Async' (API node timeout < Agent Sync timeout)**:
 
-* API retrieves data, flow executes as 'In-progress' status, and the response is sent.
-* External requests: Flow is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when response returns.
+* Agent API retrieves data, flow executes as 'In-progress' status, and the response is sent.
+* External requests: Agent execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when agent execution resumes.
 
 **Agent 'Async' & API node 'Sync'**:
 
-* Flow executes, and the response is sent to the callback URL.
+* Agent executes, and the response is sent to the callback URL.
 * 'In-progress' status while flow is running.
 
 **Agent 'Async' & API node 'Async' (API node timeout < Agent Async timeout OR both are set to infinite)**:
 
-* External requests: Flow is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when response returns.
-* Informs if the request has already been fulfilled on retry.
+* External requests: Agent execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when agent execution resumes.
+* If the external system tries the same callback URL again, it will be notified that the request has already been fulfilled.
 
 
 The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure an Agent](https://docs.kore.ai/gale/agents/configure-an-agent/) and [API Node](https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/).
