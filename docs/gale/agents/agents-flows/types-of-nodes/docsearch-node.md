@@ -141,3 +141,9 @@ The request and response are displayed in the **Run** window.
 Use the extracted chunks (shown in the example below), as required to build the agent flow.
 <img src="../images/chunks-example.png" alt="extracted chunks" title="extracted chunks" style="border: 1px solid gray; zoom:75%;">
 
+## Related Links
+
+* [Manage Nodes in Agent Flow](../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
+* [Run Agent Flow](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an agent flow in real time.
+
+
