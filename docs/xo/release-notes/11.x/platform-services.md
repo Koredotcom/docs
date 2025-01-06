@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 
 
-## v11.9.0 January 06, 2025
+## v11.9.0 January 05, 2025
 
 <u> Minor Release </u>
 
@@ -55,6 +55,7 @@ Key benefits
 The platform now ensures consistent Auto-Save behavior across all configurations in the App Profile menu of the App Settings page. This update aligns the App Settings page with other areas of the platform, such as the Property Panel and NLP Training Configurations, offering users a seamless and intuitive experience.
 
 Key updates
+
 * Auto-save on blur for App Name, App Description, and other settings.
 * Toaster messages to confirm the successful saving of changes.
 * Special handling for renaming published apps.
