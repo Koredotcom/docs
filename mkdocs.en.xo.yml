@@ -331,7 +331,10 @@ nav:
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
-        - Extraction Strategy: searchai/content-extraction/extraction.md
+        - Extraction:
+            - ETL Tool: searchai/content-extraction/etl.md
+            - Content Extraction: searchai/content-extraction/extraction.md
+            - Content Transformation: searchai/content-extraction/transformation.md
         - Content Browser: searchai/chunk-browser.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -346,7 +349,7 @@ nav:
         - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
-        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md 
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 

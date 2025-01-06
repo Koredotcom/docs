@@ -15,9 +15,9 @@ By default, every application has a **Default Strategy** configured to perform T
 To add a new extraction strategy, click on the **+Add Strategy** button.
 
 ![Add a new Strategy](../images/add-strategy.png "Add a new Strategy")
-Enter the following details of the strategy.
+Enter the strategy details on the following page. 
 
-![Strategy Details](../images/add-strategy-widget.png "Strategy Details")
+![Strategy Details](./images/extraction-page.png "Strategy Details")
 
 **Strategy Name**: Enter a unique name for the strategy for identification. 
 
@@ -81,13 +81,13 @@ To delete an existing strategy, go to the corresponding strategy page and click 
 !!! note
     Deleting a strategy does not affect the existing chunks.
 
-![Deleting a strategy](../images/delete-a-strategy.png "Deleting a strategy")
+![Deleting a strategy](./images/delete-extraction-strategy.png "Deleting a strategy")
 
 ## Enabling/ Disabling a Strategy
 
 By default, as soon as a strategy is created, it is enabled. You can also temporarily disable a strategy for testing purposes to evaluate alternative extraction strategies or when it is no longer needed. You can do so from the strategy page. 
 
-![Disable a strategy](../images/disable-a-strategy.png "Disable a strategy")
+![Disable a strategy](./images/disable-extraction-strategy.png "Disable a strategy")
 
 ## Using Multiple Extraction Strategies
 
