@@ -376,7 +376,9 @@ You can use Notes, Comments, and Bookmarks to easily record and collaborate betw
 
 You can place **Notes** on strategic points on the canvas and write down the dialog's introduction, a list of subtasks, and the purpose of each subtask.
 
-Using **Bookmarks**, you can create navigation points in a dialog with a complex structure so that you can quickly navigate to the bookmarked points without having to manually search the entire design. You can mention the specific point of the dialog flow in the bookmarks as an easy reference for other users.
+Using **Bookmarks**, you can create navigation points in a dialog with a complex structure so that you can quickly navigate to the bookmarked points without having to manually search the entire design. You can mention the specific point of the dialog flow in the bookmarks as an easy reference for other users.  
+
+You can use custom colours for both Notes and Bookmarks to improve visibility and collaboration.
 
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 

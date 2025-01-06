@@ -1,15 +1,20 @@
-# GenAI Node (v2, BETA)
-
-The **GenAI Node** lets you leverage the full potential of LLMs and Generative AI to quickly build conversations that involve complex flows and provide human-like experiences. You can define the entities you would like to collect and the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
+# Agent Node Version 2
 
 !!! note
 
-    The GenAI Node v2 is included in the XO v11.4.1 release. All GenAI Nodes and prompts created after this release are version 2.
+    Agent Node is formally known as GenAI Node.
 
 
-## Why a GenAI Node?
+The **Agent Node** lets you leverage the full potential of LLMs and Generative AI to quickly build conversations that involve complex flows and provide human-like experiences. You can define the entities you would like to collect and the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
 
-There are two key scenarios when a GenAI node might be beneficial:
+!!! note
+
+    The Agent Node v2 is included in the XO v11.4.1 release. All Agent Nodes and prompts created after this release are version 2.
+
+
+## Why a Agent Node?
+
+There are two key scenarios when a Agent node might be beneficial:
 
 
 
@@ -19,7 +24,7 @@ There are two key scenarios when a GenAI node might be beneficial:
 Leveraging a generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
 
 
-## What’s New in Version 2 of the GenAI Node
+## What’s New in Version 2 of the Agent Node
 
 **Node Level Enhancements**
 
@@ -76,17 +81,17 @@ context.payloadFields = jsonRepresentation;
 You can work with this node like any other node within Dialog Tasks and invoke it within multiple tasks. During runtime, the node behaves as follows:
 
 1. Entities Collection:
-    1. On reaching the GenAI Node, the platform invokes the Generative AI model to understand the user input.
+    1. On reaching the Agent Node, the platform invokes the Generative AI model to understand the user input.
     2. The platform uses the entities and business rules defined as part of the node configurations to understand the user input and identify the required entity values.
     3. The responses required to prompt/inform the user are automatically generated based on the conversation context.
     4. The platform drives the conversation until all the defined entities are captured.
 2. Contextual Intents:
     5. Contextual intents (Dialog or FAQs) recognized from the user input continue to be honored as per the Interruption Settings defined in the bot definition.
-    6. Post completion of the contextual intents, the flows can return to the GenAI Node.
+    6. Post completion of the contextual intents, the flows can return to the Agent Node.
 3. Exit Conditions:
-    7. The platform exits from the GenAI Node when any of the defined exit conditions are met.
+    7. The platform exits from the Agent Node when any of the defined exit conditions are met.
     8. These conditions provide you the ability to define scenarios that need a different path in the conversation, for example, handing off to a human agent.
-4. The platform can also exit the GenAI Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
+4. The platform can also exit the Agent Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
 5. The platform stores the entity values in the context object, and this information can be used to define the transitions or any other part of the bot configuration.
 
 #### Output
@@ -100,16 +105,16 @@ By default, the feature/node is disabled. To enable the feature, [Dynamic Conver
 
 ### Add to a Task
 
-Steps to add a GenAI node to a Dialog Task:
+Steps to add a Agent node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
 
-2. You can add the GenAI Node just like any other node. You can find it in the main list of nodes. 
+2. You can add the Agent Node just like any other node. You can find it in the main list of nodes. 
 
     <img src="../images/canvas-GenAI Node.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
-## Configure GenAI Node
+## Configure Agent Node
 
 ### Component Properties
 
@@ -118,7 +123,7 @@ The component properties empower you to configure the following settings. The ch
 It allows you to provide a **Name** and **Display Name** for the node. The node name cannot contain spaces.
 
 
-<img src="../images/gennodecp1.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/gennodecp1n.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
 
 
 #### Model Configuration
@@ -144,7 +149,7 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
     The pre-processor script does not apply to the custom prompt.
 
 
-This property helps execute a script as the first step when the GenAI Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
 To define a pre-processor script, click **Define Script**, add the script you want to execute, and click **Save**. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.
 
@@ -195,11 +200,11 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
     The post-processor script does not apply to the custom prompt.
 
 
-This property initiates the post-processor script after processing every user input as part of the GenAI Node. Use the script to manipulate the response captured in the context variables just before exiting the GenAI Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
 **Important Considerations**
 
-If the GenAI Node requires multiple user inputs, the post-processor is executed for every user input received.
+If the Agent Node requires multiple user inputs, the post-processor is executed for every user input received.
 
 To define a post-processor script, click **Define Script** and add the script you want to execute. 
 
@@ -289,17 +294,17 @@ This node captures entities in the following structure:
 ```
 
 
-## Add Custom Prompt for GenAI Node
+## Add Custom Prompt for Agent Node
 
-This step involves adding a custom prompt to the GenAI node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
+This step involves adding a custom prompt to the Agent node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
 
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
-To add a GenAI node prompt using JavaScript, follow the steps:
+To add a Agent node prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library**.
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
-3. Enter the **prompt name**. In the **feature** dropdown, select **GenAI Node** and select the **model**. 
+3. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**. 
 4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
 5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables). 
 
@@ -350,7 +355,7 @@ To add a GenAI node prompt using JavaScript, follow the steps:
                 <img src="../images/pps2response.png" alt=" response" title="response" style="border: 1px solid gray; zoom:70%;"> 
         3. Click **Save**. The actual response and expected response turn green.
 
-14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.
+14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.
     <img src="../images/key-value.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 
@@ -374,13 +379,13 @@ Keys
   <tr>
    <td>{{Model}} Optional
    </td>
-   <td>This specifies the LLM tagged to the GenAI Node in the Dialog Task.
+   <td>This specifies the LLM tagged to the Agent Node in the Dialog Task.
    </td>
   </tr>
   <tr>
    <td>{{System_Context}} Optional
    </td>
-   <td>This contains the initial instructions provided in the GenAI Node that guide how the LLM should respond.
+   <td>This contains the initial instructions provided in the Agent Node that guide how the LLM should respond.
    </td>
   </tr>
   <tr>
@@ -392,13 +397,13 @@ Keys
   <tr>
    <td>{{Business_Rules}} Optional
    </td>
-   <td>Rules mentioned in the GenAI Node are used to understand the user input and identify the required entity values.
+   <td>Rules mentioned in the Agent Node are used to understand the user input and identify the required entity values.
    </td>
   </tr>
   <tr>
    <td>{{Exit_Scenarios}} Optional
    </td>
-   <td>Scenarios mentioned in the GenAI Node should terminate entity collection and transition to the next node based on Connection Rules.
+   <td>Scenarios mentioned in the Agent Node should terminate entity collection and transition to the next node based on Connection Rules.
    </td>
   </tr>
   <tr>
@@ -416,7 +421,7 @@ Keys
   <tr>
    <td>{{Required_Entities}} Optional
    </td>
-   <td>This contains the list of entities (comma-separated values) mentioned in the GenAI Node to be captured by the LLM.
+   <td>This contains the list of entities (comma-separated values) mentioned in the Agent Node to be captured by the LLM.
    </td>
   </tr>
   <tr>

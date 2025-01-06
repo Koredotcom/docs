@@ -50,26 +50,17 @@ Steps to create an SMS campaign:
             * Editing a custom or system template modifies it for a specific campaign, and does not alter the original template. 
             * When a system or custom template is selected and the user chooses to edit it, the template selection drop-down resets to "None."
 
-    * **Advanced**: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.  
+    * **Advanced**: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. All the published start flows are displayed irrespective of the number associated with it or not. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.  
         <img src="../images/advanced-message.png" alt="Advanced Message" title="Advanced Message" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Save** after entering the message.  
     <img src="../images/save-message-sms.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:80%;">
 
-5. On the **Outreach Strategy** tab, first select the Caller ID. Caller ID is the number that is used to send SMS and the same number is displayed on recipient's phone.
+5. On the **Outreach Strategy** tab, first, select the Caller ID. Caller ID is the number that is used to send SMS, and the same number is displayed on the recipient's phone. All the numbers available in the app are available to be selected as the caller ID.  
+In the Simple message format, the caller ID displays numbers configured for Outbound only, which are not linked to any flows.  
+In the Advanced message format, businesses can establish two-way communication with their end customers. Using the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required.
 
-    In the Simple message format, the caller ID displays numbers configured for Outbound only, which are not linked to any flows. 
 
-    In the Advanced message format, businesses can establish two-way communication with their end customers. Using the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required.
-
-6. select the **Timezone** from the drop-down and add the Contactable Timings (day of the week/time) when the dialer will dial the calls.  
-    <img src="../images/outreach-strategy-tab.png" alt="Outreach Strategy Tab" title="Outreach Strategy Tab" style="border: 1px solid gray; zoom:80%;">
-
-    !!! Note
-
-        Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
-
-7. Click **Save**. The campaign is created.
 
 ## Edit an SMS Campaign
 

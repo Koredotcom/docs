@@ -1,4 +1,4 @@
-This document lists out all Quality Management APIs.
+This document lists out all Quality AI APIs.
 
 | API            | Description                                 | App Scope         |
 |----------------|---------------------------------------------|-------------------|

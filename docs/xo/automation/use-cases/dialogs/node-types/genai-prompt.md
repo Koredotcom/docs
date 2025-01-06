@@ -1,6 +1,10 @@
-# GenAI Prompt (BETA)
+# Prompt Node
 
-The GenAI Prompt lets bot developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
+!!! note
+
+    Prompt Node is formally known as GenAI Prompt.
+
+The Prompt Node lets bot developers leverage the full potential of LLM and Generative AI models to quickly build their own prompts. Developers can select a specific AI model, tweak its settings, and preview the response for the prompt. The node allows developers to creatively leverage LLMs by defining the prompt using conversation context and the response from the LLMs in defining the subsequent conversation flow.
 
 
 ## Node Behavior
@@ -9,10 +13,10 @@ The GenAI Prompt lets bot developers leverage the full potential of LLM and Gene
 
 You can work with this node like with any other node within Dialog Tasks and can invoke it within multiple tasks. During runtime, the node behaves as follows:
 
-1. On reaching the GenAI Prompt, the platform parses any variable used in the prompt and constructs the request using the Prompt and the Advanced Settings.
+1. On reaching the Prompt Node, the platform parses any variable used in the prompt and constructs the request using the Prompt and the Advanced Settings.
 2. An API call is made to the model with the request.
 3. The [response is stored in the context object](#about-responses) as part of the dialog context and can be used to define the transitions or any other part of the bot configuration.
-4. The platform exits from the GenAI Prompt node when a successful response is received, or the defined timeout condition is met.
+4. The platform exits from the Prompt Node node when a successful response is received, or the defined timeout condition is met.
 
 
 ## Enable the Node
@@ -21,9 +25,9 @@ By default, the feature/node is disabled. To enable the feature, see [Dynamic Co
 
 ## Add the Node
 
-1. Go to **Automation** > **Dialogs** and select the task to which you want to add the GenAI Prompt.
-2. Click **Gen AI** and then click **GenAI Prompt**. Alternatively, you can drag and drop the **GenAI Prompt** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
-3. The GenAI Prompt window is displayed with the **Component Properties** tab selected by default.
+1. Go to **Automation** > **Dialogs** and select the task to which you want to add the Prompt Node.
+2. Click **Gen AI** and then click **Prompt Node**. Alternatively, you can drag and drop the **Prompt Node** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+3. The Prompt Node window is displayed with the **Component Properties** tab selected by default.
 
     <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
     
@@ -33,7 +37,7 @@ By default, the feature/node is disabled. To enable the feature, see [Dynamic Co
 
 The settings made within this section affect this node across all instances in all dialog tasks.
 
-<img src="../images/genai-propmpt(5).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/promptnodenew.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 * Provide **Name** and **Display Name** for the node and write your own OpenAI **Prompt**.
 
@@ -59,7 +63,7 @@ The settings made within this section affect this node across all instances in a
 
 ### Instance Properties
 
-On the **Instance Properties** tab, you can configure the instance-specific fields for this GenAI Prompt. These settings are applicable only for this instance and will not affect any other instances of this node.
+On the **Instance Properties** tab, you can configure the instance-specific fields for this Prompt Node. These settings are applicable only for this instance and will not affect any other instances of this node.
 
 <img src="../images/genai-propmpt(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 

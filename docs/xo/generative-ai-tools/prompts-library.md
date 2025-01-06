@@ -7,7 +7,7 @@ Effective prompts play a crucial role in enhancing response accuracy when intera
 
 The post processor for prompts allows designers to align LLM responses perfectly with Platform expectations. Designers can modify the LLM response to guarantee the correct behavior and high-quality interactions during runtime.
 
-For more information on adding prompt for GenAI node, see [GenAI Node](../automation/use-cases/dialogs/node-types/genai-node-v2.md#add-custom-prompt-for-genai-node).
+For more information on adding prompt for Agent Node, see [Agent Node](../automation/use-cases/dialogs/node-types/genai-node-v2.md#add-custom-prompt-for-genai-node).
 
 !!! note
 
@@ -59,17 +59,32 @@ To add a new prompt, follow the steps:
     2. To create a prompt from scratch, click **Start from scratch** and enter the **JSON** request the LLM. 
     ![alt_text](images/prl(8).png  )
 
+6. (Optional) Toggle the Stream Response if required. If enabled, the response is sent to the user piece by piece as it’s being created in real time, instead of waiting for the entire response to be generated before displaying it. By default, the response streaming is disabled.  
+<img src="../images/stream-1.jpg" alt="Import from Prompts and Requests Library" title="Prompt Streaming" style="border: 1px solid gray; zoom:70%;">
+
+    !!! note
+
+        * If enabled, ensure to add a stream parameter to the custom prompt, e.g., “stream”: true, to get the streaming response. The saved prompt will be displayed with the stream tag in the prompts library.
+        * If enabled, the “exist scenario” field is disabled.
+        * The response streaming applies only to the Agent Node and Prompt Node features using OpenAI and Azure OpenAI models.  
+
+
 6. Once you type the JSON, the **Sample Context Values** fields are displayed. Fill in the values and click **Test**.
 7. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
 
 
     ![alt_text](images/prl(6).png  )
 
-8. In the Actual Response section, double-click the **Key** that should be used to generate the response path. For example, double-click the **text** key and click **Save**. 
+8. **Selecting a Key for Generating Response Path**  
+The XO Platform receives the LLM response in the JSON format, which contains multiple data fields. To display the relevant information from the JSON to the end user, select the **key** that holds the specific information. The XO Platform then generates a **Response Path** that identifies the exact location of the information within the JSON response.  
+For example, double-click the "content" key in the JSON structure and click **Save**.  
+<img src="../images/selectkey.jpg" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
 
-    ![alt_text](images/prl(5).png  )
 
-9. The **Response Path** is displayed. Click **Lookup Path**.
+
+9. The **Response Path** is displayed. Click **Lookup Path**.  
+<img src="../images/responsepath.jpg" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
+
 10. The **Actual Response** and **Expected Response** are displayed. 
     1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
 
@@ -85,7 +100,7 @@ To add a new prompt, follow the steps:
                 ![alt_text](images/prl(4).png  )
         3. Click **Save**. The actual response and expected response turn green.
 
-11. (Only for GenAI Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
+11. (Only for Agent Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
     ![alt_text](images/image1-8.png  )
 12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 <img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
@@ -93,3 +108,7 @@ To add a new prompt, follow the steps:
 13. Now proceed to enable[ Co-Pilot](co-pilot-features.md) and[ Dynamic Conversations](dynamic-conversations-features.md) features.
 
 		
+
+
+
+
