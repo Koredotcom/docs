@@ -2,6 +2,8 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+<hr>
+
 ## v11.9.0 January 05, 2025
 
 <u>Minor Release</u>
