@@ -365,6 +365,7 @@ nav:
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
         - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
+        - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
