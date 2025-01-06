@@ -68,6 +68,8 @@ Key benefits
 * Better resource utilization.
 * Clearer agent availability status.
 
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#key-changes-with-blended-agent-mode)
+
 #### Real-time LLM Streaming for Enhanced Voice Interactions
 
 Contact Center supervisors can enable real-time streaming of LLM responses to significantly reduce latency to create more responsive and engaging voice interactions.
@@ -96,6 +98,8 @@ Key benefits
 * Simplified flow selection process.
 * More efficient campaign setup.
 * Better control over outbound messaging.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
 
 #### Outbound SMS API Integration
 
