@@ -19,7 +19,7 @@ To access the logs, Go to **Analytics** > **Gen AI Analytics** > **Usage Logs**.
 
 
 
-<img src="../images/usage-logs.gif" alt="Usage Logs" title="Usage Logs" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/llmlogsforguardrails.gif" alt="Usage Logs" title="Usage Logs" style="border: 1px solid gray; zoom:70%;">
 
 
 
