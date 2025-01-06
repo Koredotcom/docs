@@ -99,7 +99,7 @@ Key benefits
 
 #### Outbound SMS API Integration
 
-This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services.
+This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/send-outbound-sms.md)
 
 ### Kore Voice Gateway
 
