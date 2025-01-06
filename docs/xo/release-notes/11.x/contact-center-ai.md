@@ -10,12 +10,12 @@ This document provides information on the feature updates and enhancements intro
 
 ### Enhanced Contact Recognition for Better Customer Service
 
-This enhancement improves how contact information is displayed during customer interactions to help agents deliver more personalized service.
+This enhancement improves how saved contact information is displayed during customer interactions to help agents deliver more personalized service.
 
 Key updates
 
 * Automatic contact name display for inbound/outbound interactions.
-* Phone numbers now show associated contact names instead of "Anonymous".
+* For the saved contact entries, phone numbers now show associated contact names instead of "Anonymous".
 * Updates are visible in the chat history and interaction pane.
 
 Key benefits
@@ -23,6 +23,12 @@ Key benefits
 * Instant recognition of known contacts for personalized customer interactions.
 * Reduced time spent identifying callers.
 * Consistent contact display across all interaction points.
+
+## Supervisor Console
+
+### Improved Supervisor Monitoring with Callback and Voicemail Filters
+
+Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters.
 
 ## Configuration
 
@@ -32,9 +38,9 @@ The enhanced notification system ensures agents never miss an incoming interacti
 
 Key updates
 
-* Configurable notification intervals (1s, 5s, 10s, 30s, 1min).
+* Configurable notification intervals (5s, 10s, 30s, 1min).
 * Unified sound alerts for transfers and incoming interactions.
-* Settings update on page refresh.
+* Visual loop notification icon in settings; disabled by default for all accounts.
 
 Key benefits
 
@@ -43,14 +49,22 @@ Key benefits
 * Automatic alert management based on agent actions.
 * Simplified notification system with combined transfer alerts.
 
-Notifications automatically stop when interactions are accepted/rejected, the first message sent, conversation timeout, or supervisor reassignment occurs.
+Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system.
 
 ### Blended Mode for Voice and Digital Interactions
 
-Blended Mode allows agents to handle both voice and digital interactions simultaneously. The Blended Agents toggle can be configured at the agent level to enable or disable blended functionality.  
-<img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
+Blended Mode allows agents to handle both voice and digital interactions simultaneously.
 
-System Busy activates only when all interaction slots (voice and digital) are occupied. The existing channel-specific system busy logic applies when blending is disabled.
+Key updates
+
+* Blended Agents toggle to enable/disable it at the organization level.
+* System Busy activates only when all slots (voice and digital) are full. The existing channel-specific system busy logic applies when blended mode is disabled.
+
+Key benefits
+
+* Efficient handling of mixed interaction types.
+* Better resource utilization.
+* Clearer agent availability status.
 
 ### Real-time LLM Streaming for Enhanced Voice Interactions
 
@@ -59,11 +73,8 @@ Contact Center supervisors can enable real-time streaming of LLM responses to si
 Key updates
 
 * Real-time streaming of rephrased responses.
-* Bot delay response behavior controls.
-* New VoiceGateway Settings permission. Learn more.
-* Role-based access controls (Full Access for Admins/Supervisors).
-
-[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+* Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 ## Campaigns
 
@@ -92,7 +103,7 @@ This update introduces a new public API to send outbound SMS messages via the Ge
 
 ### Fetch Again Option for Failed Recordings
 
-This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed.
+This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
 ### Enhanced SIP Transfer Options
 
@@ -108,10 +119,6 @@ Key updates
 In the SIP Transfer configuration page, the MS Teams option is added under the Network field to support SIP transfers directly to Microsoft Teams for both inbound and outbound calls.
 
 ## Analytics
-
-### Improved Supervisor Monitoring with Callback and Voicemail Filters
-
-Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters.
 
 ### External Transfer Status Tracking
 
