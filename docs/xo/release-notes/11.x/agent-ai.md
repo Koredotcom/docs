@@ -6,9 +6,11 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</u>
 
-## Search AI Configuration
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Inbuilt and External Search AI App
+### Search AI Configuration
+
+#### Inbuilt and External Search AI App
 
 This update introduced flexible Search AI configuration to choose built-in functionality or custom Search AI apps:
 
@@ -16,19 +18,19 @@ This update introduced flexible Search AI configuration to choose built-in funct
 * Use Search AI Configurations from the current app: Uses the in-built Search AI app that comes with the current XO11 app.
 * Link Search AI Configurations from a different app: Users can configure up to three customized Search AI apps.
 
-## Widget Settings
+### Widget Settings
 
-### Auto-corrections for the Search tab
+#### Auto-corrections for the Search tab
 
 The new auto-correct feature for the Search tab allows admins to control spelling corrections through Widget Settings, including custom dictionary management. While admins can enable/disable it globally, agents can toggle it individually in Settings, with agent preferences taking priority.
 
-### Enhanced Dialog Task Entity Extraction
+#### Enhanced Dialog Task Entity Extraction
 
 The Proactive Mode toggle is enhanced to include the “Automatic Dialog Task Entity Extraction” option. Select this option to automatically extract entities from user messages during a dialog task execution.
 
-## Integration
+### Integration
 
-### ServiceNow Chat Integration
+#### ServiceNow Chat Integration
 
 Agent AI is now integrated with ServiceNow Chat.
 

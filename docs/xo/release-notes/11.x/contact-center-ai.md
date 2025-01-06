@@ -6,9 +6,11 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</u>
 
-## Agent Console
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Enhanced Contact Recognition for Better Customer Service
+### Agent Console
+
+#### Enhanced Contact Recognition for Better Customer Service
 
 This enhancement improves how saved contact information is displayed during customer interactions to help agents deliver more personalized service.
 
@@ -24,15 +26,15 @@ Key benefits
 * Reduced time spent identifying callers.
 * Consistent contact display across all interaction points.
 
-## Supervisor Console
+### Supervisor Console
 
-### Improved Supervisor Monitoring with Callback and Voicemail Filters
+#### Improved Supervisor Monitoring with Callback and Voicemail Filters
 
 Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters.
 
-## Configuration
+### Configuration
 
-### Configurable Repeat Notification Alerts for Improved Response Time
+#### Configurable Repeat Notification Alerts for Improved Response Time
 
 The enhanced notification system ensures agents never miss an incoming interaction.
 
@@ -51,7 +53,7 @@ Key benefits
 
 Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system.
 
-### Blended Mode for Voice and Digital Interactions
+#### Blended Mode for Voice and Digital Interactions
 
 Blended Mode allows agents to handle both voice and digital interactions simultaneously.
 
@@ -66,7 +68,7 @@ Key benefits
 * Better resource utilization.
 * Clearer agent availability status.
 
-### Real-time LLM Streaming for Enhanced Voice Interactions
+#### Real-time LLM Streaming for Enhanced Voice Interactions
 
 Contact Center supervisors can enable real-time streaming of LLM responses to significantly reduce latency to create more responsive and engaging voice interactions.
 
@@ -76,9 +78,9 @@ Key updates
 * Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
 * Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
-## Campaigns
+### Campaigns
 
-### Decoupling Flows and Numbers for SMS Campaigns
+#### Decoupling Flows and Numbers for SMS Campaigns
 
 This update decouples flows and numbers in Advanced SMS Campaigns to offer more flexible flow and number selection.
 
@@ -95,17 +97,17 @@ Key benefits
 * More efficient campaign setup.
 * Better control over outbound messaging.
 
-### Outbound SMS API Integration
+#### Outbound SMS API Integration
 
 This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services.
 
-## Kore Voice Gateway
+### Kore Voice Gateway
 
-### Fetch Again Option for Failed Recordings
+#### Fetch Again Option for Failed Recordings
 
 This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
-### Enhanced SIP Transfer Options
+#### Enhanced SIP Transfer Options
 
 To enhance the flexibility and compatibility of the SIP Transfer configuration, two new fields have been added to the 'SIP Transfer' configuration. These fields give more control over how DID numbers are handled and DTMF signals are transmitted.
 
@@ -114,13 +116,13 @@ Key updates
 * E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
 * DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Transfers - RFC 2833 (Default option) or Tones.
 
-### Microsoft Teams Integration for Inbound and Outbound Calls
+#### Microsoft Teams Integration for Inbound and Outbound Calls
 
 In the SIP Transfer configuration page, the MS Teams option is added under the Network field to support SIP transfers directly to Microsoft Teams for both inbound and outbound calls.
 
-## Analytics
+### Analytics
 
-### External Transfer Status Tracking
+#### External Transfer Status Tracking
 
 This update adds detailed transfer status visibility across the Interaction Dashboard, Reports, and API.
 
@@ -138,7 +140,7 @@ Key benefits
 * Standardized status tracking across platforms.
 * Clear visibility into transfer failures.
 
-### Updated Queue Load Calculation for Blended Conversations
+#### Updated Queue Load Calculation for Blended Conversations
 
 **DASHBOARD** > **Queues & Agents**
 
@@ -148,14 +150,14 @@ The modified queue load formula accurately reflects the blended conversation han
 
 Where
 
-VoiceCount = Calls ongoing or waiting in queue (including Voicemails or Callbacks before turning Outbound).  
-ChatCount = Live chat conversations ongoing or waiting in a queue.  
-MessagingCount = Messaging conversations ongoing or waiting in a queue.  
-EmailCount = Email conversations ongoing or waiting in a queue.
+Voice = Voice Count; Ongoing or waiting in queue (including Voicemails or Callbacks before turning Outbound).  
+Chat = Chat Count; Live chat conversations ongoing or waiting in a queue.  
+Messaging = MessagingCount; Messaging conversations ongoing or waiting in a queue.  
+Email = Email Count; Email conversations ongoing or waiting in a queue.
 
-## API
+### API
 
-### Call Termination Tracking Added to Call Details API (v2)
+#### Call Termination Tracking Added to Call Details API (v2)
 
 The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md).
 
