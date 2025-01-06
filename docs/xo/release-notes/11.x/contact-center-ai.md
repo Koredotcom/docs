@@ -63,6 +63,8 @@ Key updates
 * New VoiceGateway Settings permission. Learn more.
 * Role-based access controls (Full Access for Admins/Supervisors).
 
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+
 ## Campaigns
 
 ### Decoupling Flows and Numbers for SMS Campaigns
@@ -148,7 +150,7 @@ EmailCount = Email conversations ongoing or waiting in a queue.
 
 ### Call Termination Tracking Added to Call Details API (v2)
 
-The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more](../../apis/contact-center/get-all-conversations-data-call-details.md).
+The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md).
 
 <hr>
 
