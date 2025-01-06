@@ -39,6 +39,10 @@ curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{str
 ]
 ```
 
+!!! Note
+
+     Saving contacts through the public API will allow duplicate names with different numbers but will prevent the same number from being associated with different or identical names. Backward compatibility to delete existing duplicate numbers will not be provided.
+
 ## Body Parameters
 
 | **PARAMETER**            | **DESCRIPTION**                                                                              | **TYPE**         |

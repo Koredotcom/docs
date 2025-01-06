@@ -15,6 +15,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Queue AI APIs](#queue-ai-apis)
 * [Quality AI APIs](#quality-ai-apis)
 * [WFM APIs](#wfm-apis)
+* [Campaigns API](#campaigns-api)
 
 ### Analytics and Reporting APIs
 
@@ -127,3 +128,9 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Queues API](../contact-center/queues.md)                                | To get the Queues/Skills associated with an accountId.                                                                          | WFM Integration       |
 | [Agent Activity API](../contact-center/agent-activity.md)                | To get the agent status in real-time or changes stacked every 30 seconds.                                                       | WFM Integration       |
 | [Contact Volume API](../contact-center/contact-volume.md)                | To retrieve call volume details associated with a specified collection point for a given interval, including fields mapped to specific field names relevant to the Workforce Management (WFM) client. | WFM Integration       |
+
+### Campaigns API
+
+| API                | Description                                                                                                                                          | Associated App Scope |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| Send Outbound SMS  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
