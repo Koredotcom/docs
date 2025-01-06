@@ -32,15 +32,6 @@ The Proactive Mode toggle is enhanced to include the “Automatic Dialog Task En
 
 Agent AI is now integrated with ServiceNow Chat.
 
-### Enhanced IVA-to-Agent Transfers for Talkdesk
-
-This update significantly improves conversation handoffs between IVA and live agents by adding context in SIP BYE headers during transfers, enabling agents to understand customer context immediately.
-
-Key updates
-
-* SIP BYE method for call transfers.
-* Standardized SIP headers for context sharing.
-
 <hr>
 
 ## v11.8.1 December 19, 2024
