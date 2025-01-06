@@ -18,12 +18,14 @@ This release introduces new features that simplify building agentic experiences.
 Tool Calling enables Agent Node (previously GenAI Node) to interact with your business applications. You can define accessible tools, connect multiple actions, and incorporate external data into the conversation context. The recently launched DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Combine these features to deliver seamless agentic experiences for your customers and employees. 
 
 Key updates
+
 * Tool calling integration with business applications and external data.
 * New tools repository for managing custom and system integrations.
 * Direct connection between tools and actions (scripts, service Search AI, Webhooks).
 * Prompts include tool definitions and context for decision-making.
 
 Key benefits
+
 * More dynamic, responsive virtual assistants.
 * Integration of real-time data and complex query handling.
 * Flexibility with custom/system integrations and prompts.
@@ -40,14 +42,17 @@ The GenAI Node has been renamed the Agent Node to reflect its agentic experience
 DialogGPT has been integrated into the app lifecycle to centralize configuration management, ensuring consistency and scalability.
 
 Key updates
+
 * Integrated with Generative AI & LLM Settings for centralized management.
 * DialogGPT events added to Integrations & API Extensions.
 * Full and partial app export/import support.
 * Version control and comparison features.
+
 [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
 
 #### OpenAI GPT-4o mini Support for DialogGPT
 The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient conversation management. These models are compact and optimized variants of the GPT-4 family, designed to deliver high efficiency in resource-constrained environments while maintaining advanced capabilities.
+
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/conversation-orchestration.md)
 
 
@@ -56,12 +61,14 @@ The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient c
 The redesigned notes feature works like familiar sticky notes, making it easier and more intuitive to capture and organize your thoughts.
 
 Key updates
+
 * Streamlined editing with autosave functionality.
 * Resizable notes for better organization.
 * One-click note duplication.
 * Comment threads on individual notes.
 * Customizable background colors.
 * Default yellow styling with instant edit mode.
+
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md)
 
 
@@ -69,10 +76,12 @@ Key updates
 The enhanced bookmarks feature improves organization and collaboration capabilities.
 
 Key updates
+
 * Comment threads on individual bookmarks.
 * Customizable background colors.
 * Improved loading experience with visual feedback.
 
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md)
 
 
 <hr>

@@ -37,10 +37,12 @@ The platform has introduced a Redis-based caching solution to significantly impr
 The Get Bots API now includes crucial authentication and security metadata for each bot, enabling better management and auditing.
 
 Key updates
+
 * Added fields to bot objects in API response: clientId, clientSecret, jtiClaimEnforced, and jweEncryptionEnforced.
 * No changes to endpoint structure (backward compatible).
 
 Key benefits
+
 * Comprehensive bot details, including auth credentials.
 * Visibility into per-bot security configurations.
 * Streamlined management and compliance workflows.
@@ -63,16 +65,17 @@ Key updates
 
 ### App Language
 
-
 #### Japanese and Korean Language Support in the App (Beta)
 The platform has enabled Japanese and Korean language selection for the App, allowing platform users to access the app in their native language.
 
 Key updates
+
 * Language selection dropdown added to Profile, Login, and Signup pages.
 * The "BETA" tag indicates the feature's beta status.
 * Dynamic translation of UI elements and content based on selected language.
 
 Key benefits
+
 * Improved accessibility for Japanese and Korean users.
 * Consistent language selection across the app.
 * Leverages existing backend localization for seamless translation.
