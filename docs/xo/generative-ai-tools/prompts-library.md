@@ -62,11 +62,11 @@ To add a new prompt, follow the steps:
 6. (Optional) Toggle the Stream Response if required. If enabled, the response is sent to the user piece by piece as it’s being created in real time, instead of waiting for the entire response to be generated before displaying it. By default, the response streaming is disabled.  
 <img src="../images/stream-1.jpg" alt="Import from Prompts and Requests Library" title="Prompt Streaming" style="border: 1px solid gray; zoom:70%;">
 
-!!! note
+    !!! note
 
-    * If enabled, ensure to add a stream parameter to the custom prompt, e.g., “stream”: true, to get the streaming response. The saved prompt will be displayed with the stream tag in the prompts library.
-    * If enabled, the “exist scenario” field is disabled.
-    * The response streaming applies only to the Agent Node and Prompt Node features using OpenAI and Azure OpenAI models.  
+        * If enabled, ensure to add a stream parameter to the custom prompt, e.g., “stream”: true, to get the streaming response. The saved prompt will be displayed with the stream tag in the prompts library.
+        * If enabled, the “exist scenario” field is disabled.
+        * The response streaming applies only to the Agent Node and Prompt Node features using OpenAI and Azure OpenAI models.  
 
 
 6. Once you type the JSON, the **Sample Context Values** fields are displayed. Fill in the values and click **Test**.

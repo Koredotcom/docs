@@ -63,7 +63,7 @@ To import a Virtual Assistant, follow these steps:
         * Deletes existing models and prompts in the target app.
         * Overwrites with models, prompts, and GenAI features from the import file.
         * Retains model configurations if a model exists in both source and target
-        * Replaces all feature mappings, custom instructions, safeguards, and dialogGPT.
+        * Replaces all feature mappings, custom instructions, safeguards, and DialogGPT.
         * Preserve existing integrations.
         * Import XO-GPT integration as-is.
         * Enable imported features with warnings.
@@ -203,7 +203,7 @@ To import a VA while creating it, follow these steps:
    <br>
     – Keeps existing prompts, only adds new ones.
     <br>
-    – Replaces all feature mappings, custom instructions, safeguards, and dailogGPT.
+    – Replaces all feature mappings, custom instructions, safeguards, and DailogGPT.
     <br>
     – Preserve existing integrations.
     <br>

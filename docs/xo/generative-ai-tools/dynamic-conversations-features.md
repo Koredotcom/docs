@@ -15,7 +15,7 @@ Steps to enable the feature:
 
 
 1. Navigate to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
-<img src="../images/dcf(1).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/dcfnew.png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
    

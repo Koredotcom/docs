@@ -1,4 +1,4 @@
-# Prompt Node (BETA)
+# Prompt Node
 
 !!! note
 
@@ -37,7 +37,7 @@ By default, the feature/node is disabled. To enable the feature, see [Dynamic Co
 
 The settings made within this section affect this node across all instances in all dialog tasks.
 
-<img src="../images/genai-propmpt(5).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/promptnodenew.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 * Provide **Name** and **Display Name** for the node and write your own OpenAI **Prompt**.
 

@@ -1,4 +1,4 @@
-# GenAI Node Version 2
+# Agent Node Version 2
 
 !!! note
 
@@ -123,7 +123,7 @@ The component properties empower you to configure the following settings. The ch
 It allows you to provide a **Name** and **Display Name** for the node. The node name cannot contain spaces.
 
 
-<img src="../images/gennodecp1.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/gennodecp1n.png" alt="Component Properties" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
 
 
 #### Model Configuration
