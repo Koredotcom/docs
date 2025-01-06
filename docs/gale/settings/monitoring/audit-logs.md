@@ -819,14 +819,14 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 To access and view audit logs, follow the steps below:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale){:target="_blank"} to your GALE account.
+1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale){:target="_blank"} to your GALE account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
 2. Navigate to the [Settings](https://galeadmin-kore.github.io/docs/gale/settings/settings-overview/#access-settings-console){:target="_blank"} console.
 3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
 ## Dashboard Information
 
-The **Audit Logs** Dashboard displays the following information to collectively provide a comprehensive overview of activities within your GALE account:
+The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your GALE account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.
@@ -957,6 +957,37 @@ By default, the current day will be set as the end date. This feature allows you
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
 
+## Export Audit Logs
+
+The **Export** feature helps prepare and export [account-level audit logs](./audit-logs.md/#account-level-audit-logs){:target="_blank"} into a *.csv* file. The audit logs data for the following columns is downloaded. [Learn more](./audit-logs.md/#dashboard-information){:target="_blank"}.
+
+* Date and Time
+* Event Name
+* Event Category
+* Description
+* User/App Name
+* **IP Address**: The user's network IP address linked to the specific event.
+
+Exporting audit logs offers the following benefits:
+
+* **Detailed Analysis**: CSV format allows you to perform in-depth analysis of log data to identify patterns or anomalies over time, while supporting transparency and accountability.
+* **Easy Sharing and Reporting**: CSV files of audit logs are easy to share with other stakeholders or integrate them into reporting tools.
+* **Compliance and Record-Keeping**: Having a documented trail in a standardized format is useful for compliance and regulatory audits, ensuring data is readily available when needed.
+* **Automation and Integration**: CSVs can be imported into other tools or systems, enabling automation and integration into workflows for continuous monitoring and alerts.
+
+To export audit logs, follow the steps below:
+
+1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
+2. Click the **Export** icon next to the **Filter By** icon.
+<img src="../images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
+
+The following message is displayed once the file is downloaded. The file can be found in the configured location in your system.
+<img src="../images/success-message-export-audit-logs.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
+
+The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file is shown below.
+
+<img src="../images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
+
 GALE’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
 You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
@@ -967,5 +998,6 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
 * [Agent Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to an agent's flow.
+
 
 

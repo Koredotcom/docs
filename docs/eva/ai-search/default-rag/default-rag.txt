@@ -37,14 +37,12 @@ The **Default RAG** is meant for generic use rather than a specific intent.
 Under the **AI search** agents, go to **Default RAG**. Then, use the **Go to
 Search AI** option to access **the associated Search AI** app.
 
--   [Configure the content
-    sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/)
-    on the Search AI application.
+* [Configure the content sources](https://docs.kore.ai/xo/searchai/content-sources/introduction/) on the Search AI application.
 
--   Fine-tune configurations to get appropriate responses.
+* Fine-tune configurations to get appropriate responses.
 
 -   [Enable
-    Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
+    Answers](https://docs.kore.ai/xo/searchai/answer-configuration/).
 
 -   Train the application.
 

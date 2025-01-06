@@ -7,10 +7,8 @@ GALE’s **Settings** console is a centralized management interface that provide
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
-7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}
-8. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}
-9. [Security and Control](){:target="_blank"}: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
+6. [Security and Control: Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
 
 ## Levels of Users Management 
 
@@ -82,6 +80,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
 - Review Agent Performance Metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
+* Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 
 **Security and Control**
 
@@ -91,7 +90,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 To access the **Settings** Console on GALE, follow the steps below:
 
-1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials.
+1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 
 2. Click **Settings** on the top menu.
 <img src="../images/settings-menu.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
@@ -215,6 +214,15 @@ The following modules and features are supported on the **Settings** Console:
    <li>Explore latency, requests, token generation, and scaling metrics through dedicated, expandable widgets.</li>
    <li>Optimize model performance with access to real-time metrics.</li></ul></td>
   </tr>
+        <tr>
+   <td><b>Monitoring - Model Traces</b></td>
+   <td>Review and monitor key performance indicators for each run executed by different versions of the open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance, as well as optimal performance.</td>
+      <td><ul><li>Select a single date or date range to view specific, time-based run performance metrics.</li>
+      <li>Analyze failed runs by exporting performance metrics into a <i>csv</i> file and identify failure patterns.</li>
+<li>Analyze hosting credits vs each successful/failed run to ensure optimal usage.</li>
+   <li>Identify and isolate model runs with low response times for further investigation.</li>
+   <li>Analyze requests, model outputs, response times, and sources to gain performance insights, diagnose errors, and optimize usage and experience.</li></ul></td>
+  </tr>
    <tr>
    <td><b>Security and Control - Single Sign On</b></td>
    <td>By centralizing authentication for your enterprise account users, SSO enhances user convenience and strengthens security through streamlined password management. SSO helps improve efficiency, reduce password fatigue, and safeguard sensitive information.</td>
@@ -223,6 +231,7 @@ The following modules and features are supported on the **Settings** Console:
 <li>Exclude specific users from the SSO requirement to provide an alternative way to access their accounts.</li></ul></td>
   </tr>
 </table>
+
 
 
 

@@ -64,25 +64,17 @@ Before creating a RAG Agent, ensure that the **Search AI** application is
 configured accurately to enable the retrieval and generation of responses.
 Follow these steps to prepare:
 
--   [Create a search
-    AI](https://docs.kore.ai/searchassist/getting-started/searchassist-introduction/)
-    application.
+* [Create a search AI](https://docs.kore.ai/xo/searchai/setup-search-ai/) application.
 
--   [Configure content
-    sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/)
-    in the application.
+* [Configure content sources](https://docs.kore.ai/xo/searchai/content-sources/introduction/) in the application.
 
--   Fine-tune the application [search
-    settings](https://docs.kore.ai/searchassist/manage-relevance/introduction-to-relevance/)
-    to generate appropriate responses.
+* Fine-tune the application [search settings](https://docs.kore.ai/xo/searchai/chunk-browser/) to generate appropriate responses.
 
--   [Enable
-    Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
+* [Enable Answers](https://docs.kore.ai/xo/searchai/answer-configuration/).
 
--   Train the application.
+* Train the application.
 
--   Enable the [Client Channel for
-    communication](https://docs.kore.ai/searchassist/public-apis/searchassist-public-apis/#Client_Configuration_on_the_SearchAssist_application).
+* Enable the [Client Channel for communication](https://docs.kore.ai/xo/channels/adding-channels-to-your-bot/#enable-a-channel).
     Ensure that the appropriate API scope is enabled for the application.
 
 -   The Search AI application is ready for communication.

@@ -4,8 +4,6 @@ GALE is a new platform for building LLM-powered AI agents. It offers tools to cr
 
 You don't need to be an AI expert to use GALE. It has ready-to-use AI models and simple tools. The platform uses a drag-and-drop interface. This makes it easy to create and deploy custom AI agents. GALE offers both open-source and commercial AI models. You can fine-tune these models as needed. The platform lets you chain workflows and set up guardrails without coding. When your AI agent is ready, GALE helps you deploy it using an API.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/ktJrwUAWEAY" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GALE  Overview" frameborder="0" allow="autoplay; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
 <hr>
 
 ## Key Components
