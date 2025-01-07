@@ -32,7 +32,6 @@ Key benefits
 * Seamless orchestration between user input, functions, and responses.
 
 
-
 #### GenAI Node and Prompt Node Renaming
 The GenAI Node has been renamed the Agent Node to reflect its agentic experiences and tool-calling capabilities, while the GenAI Prompt Node has been renamed the Prompt Node.
 
@@ -69,7 +68,7 @@ Key updates
 * Customizable background colors.
 * Default yellow styling with instant edit mode.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
 
 
 #### Upgraded Bookmarks for Better Visual Organization 
@@ -81,7 +80,7 @@ Key updates
 * Customizable background colors.
 * Improved loading experience with visual feedback.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
 
 
 <hr>
