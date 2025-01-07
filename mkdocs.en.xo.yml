@@ -440,7 +440,7 @@ nav:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
       - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
-      - Chat Integration with ServiceNow: agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow.md
+      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md      
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
