@@ -144,8 +144,7 @@ This step is required if the chat client is routed through the Kore XO bot build
 
 For passing the language code dynamically from Kore XO to the Agent AI widget inside Servicenow, add the following javascript code inside a script node of Kore XO dialogtask before the Agent Transfer node of Servicenow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
 
-
-```
+``` json
 let metaData = {
 	"payloadFields" : {
     		"langCode":context.currentLanguage
@@ -155,7 +154,9 @@ let metaData = {
 	}
 }
 agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));  
+
 ```
+
    <img src="../images/script-node.png" alt="Language Code" title="Language Code" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
