@@ -28,7 +28,7 @@ The new auto-correct feature for the Search tab allows admins to control spellin
 
 #### Enhanced Dialog Task Entity Extraction
 
-The Proactive Mode toggle is enhanced to include the “Automatic Dialog Task Entity Extraction” option. Select this option to automatically extract entities from user messages during a dialog task execution.
+The Proactive Mode toggle has been enhanced to include the “Automatic Dialog Task Entity Extraction” option. This option automatically extracts entities from user messages during dialog task execution.
 
 ### Integration
 
