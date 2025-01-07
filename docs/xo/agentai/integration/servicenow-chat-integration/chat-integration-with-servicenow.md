@@ -1,8 +1,6 @@
 # Agent AI Chat Integration with ServiceNow
 
-This document provides detailed instructions on integrating the Kore.ai Agent AI widget with ServiceNow Desktop for the Chat channel. The integration will support all outstanding features of Agent AI, such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/), [Agent Coaching](https://docs.kore.ai/agentassist/agent/agent-coaching/), [Agent Playbook](https://docs.kore.ai/agentassist/agent/agentassist-playbook/), [Sentiment Analysis](https://docs.kore.ai/agentassist/agent/agentassist-widget/), and [Chat Transcription](https://docs.kore.ai/agentassist/agent/agentassist-widget/#Transcript_Tab). It will also include an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
-
-This document contains the following topics:
+This document provides detailed instructions on integrating the Kore.ai Agent AI widget with ServiceNow Desktop for the Chat channel. The integration will support all outstanding features of Agent AI, such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/), [Agent Coaching](https://docs.kore.ai/agentassist/agent/agent-coaching/), [Agent Playbook](https://docs.kore.ai/agentassist/agent/agentassist-playbook/), [Sentiment Analysis](https://docs.kore.ai/agentassist/agent/agentassist-widget/), and [Chat Transcription](https://docs.kore.ai/agentassist/agent/agentassist-widget/#Transcript_Tab). It also includes an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
 
 ## Prerequisites
 
@@ -19,12 +17,25 @@ This section outlines the essential components, credentials, and permissions req
 * Roles and Permissions (Optional):
     * Only required for agent transfers from Kore XO Platform to ServiceNow; refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/).
 
-## Interaction between SNOW and Kore.ai Agent AI (Architecture Diagram)
+## Interaction between ServiceNow and Kore.ai Agent AI (Architecture Diagram)
+
+The following architecture diagram shows the interaction between ServiceNow and Agent AI:
+
 <img src="../images/snow-kore.ai-architecture.png" alt="snow-kore.ai-architecture" title="snow-kore.ai-architecture" style="border: 1px solid gray; zoom:80%;">
 
 ## Set Up Kore Agent AI in ServiceNow Sandbox
 
-### Step 1: Download from the ServiceNow store (recommended)
+Setting up Agent AI chat with Servicenow consists of the following steps:
+
+1. [Set Up Kore Agent AI in ServiceNow Sandbox](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#set-up-kore-agent-ai-in-servicenow-sandbox)
+    * [Download from the ServiceNow store (recommended)](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-1-download-from-the-servicenow-store-recommended) Or
+    * [Install through an Update Set](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-2-install-through-an-update-set)
+2. [Set up Agent AI app configuration](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-3-set-up-agent-ai-app-configuration)
+3. [Test your configuration](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-4-test-your-integration)
+4. [Kore XO configuration (Optional)](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-5-kore-xo-configurationoptional)
+5. [Get to know the Agent AI widget](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-6-get-to-know-the-agent-ai-widget)
+
+### Step 1: Download from the ServiceNow Store (recommended)
 
 1. Get the [Agent AI by Kore.ai](https://store.servicenow.com/sn_appstore_store.do#!/store/application/92d544cec3da0a9082881b6ce0013194/1.0.0?referer=%2Fstore%2Fsearch%3Flistingtype%3Dallintegrations%25253Bancillary_app%25253Bcertified_apps%25253Bcontent%25253Bindustry_solution%25253Boem%25253Butility%25253Btemplate%25253Bgenerative_ai%25253Bsnow_solution%26q%3Dkore&sl=sh) application from the ServiceNow store.
 2. Click the **GET** button to proceed with the entitlement process of the application.
@@ -33,7 +44,7 @@ This section outlines the essential components, credentials, and permissions req
 
 **or**
 
-### Step 2: Install through an Update Set
+### Install through an Update Set
 
 1. Ask the Kore representative for the relevant Update Set XML file.
 2. Search in **All** > **filter** navigator as “Retrieved Update Sets,” which is under “System Update Sets”, and open it.
@@ -43,20 +54,20 @@ This section outlines the essential components, credentials, and permissions req
 4. Open the update set **Agent AI by kore.ai** (This is the official name for Kore Agent AI).  
 <img src="../images/open-agent-ai-by-kore-ai.png" alt="open-agent-ai" title="open-agent-ai" style="border: 1px solid gray; zoom:80%;">
 
-### Preview Update Set
+#### Preview Update Set
 
 To preview the update set, click the **Preview Update Set** tab.
 <img src="../images/preview-update-set.png" alt="preview-update-set" title="preview-update-set" style="border: 1px solid gray; zoom:80%;">
 
-### Commit Update Set
+#### Commit Update Set
 
 This option is enabled after the successful preview. You must click **Commit Update Set**.
 
 <img src="../images/commit-update-set.png" alt="commit-update-set" title="commit-update-set" style="border: 1px solid gray; zoom:80%;">
 
-### Tips:
+    !!! note
 
-If you get any error (refer to the following screenshot) in the preview step, do the following:
+        If you get any error (refer to the following screenshot) in the preview step, do the following:
 
 <img src="../images/update-set-preview-error.png" alt="update-set-preview-error" title="update-set-preview-error" style="border: 1px solid gray; zoom:80%;">
 
@@ -70,7 +81,7 @@ Steps required:
 
         **Multi-language support** for Agent AI is available only with the **Update Set**.
 
-### Step 3: Set up Agent AI App Configuration
+### Step 2: Set up Agent AI App Configuration
 
 Application Name: **Agent AI by kore.ai**
 
@@ -99,7 +110,7 @@ This section details the steps to set up the Agent AI app configuration.
 
     <img src="../images/aatoken.png" alt="aatoken" title="aatoken" style="border: 1px solid gray; zoom:80%;">
 
-### Step 4: Test your integration
+### Step 3: Test your integration
 
 * **Agent**: Sign in to the Servicenow Agent Console/Workspace(Eg- Service Operation Workspace) with your agent credentials (agent-specific permissions) and be available to receive chat on the SNOW desktop.
 * Minimum permissions/roles required for an agent are:
@@ -126,7 +137,7 @@ This section details the steps to set up the Agent AI app configuration.
 
         <img src="../images/agent-ai-conversation-summary.png" alt="agent-ai-conversation-summary" title="agent-ai-conversation-summary" style="border: 1px solid gray; zoom:80%;">
 
-### Step 5: Kore XO configuration(Optional)
+### Step 4: Kore XO configuration (Optional)
 
 This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the Servicenow Agent workspace. For more information, refer to the [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities).
 
@@ -147,11 +158,11 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 
    <img src="../images/script-node.png" alt="Language Code" title="Language Code" style="border: 1px solid gray; zoom:80%;">
 
-    !!! note
+!!! note
 
-    If a Language Code is sent from Kore XO to Servicenow, then the Agent AI widget will load according to that language code. So, the XO language code will always take precedence over the language code set inside the Servicenow custom table in step 3.
+    If a Language Code is sent from Kore XO to Servicenow, then the Agent AI widget will load according to that language code. So, the XO language code will always take precedence over the language code set inside the Servicenow custom table in Step 2.
 
-### Step 6: Get to know the Agent AI widget
+### Step 5: Get to know the Agent AI widget
 
 From the integration perspective, along with all the features and capabilities of Agent AI ([Introduction to Agent AI](https://docs.kore.ai/agentassist/getting-started/introduction/)), agents on Servicenow have the flexibility to use the following additional features:
 
