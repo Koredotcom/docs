@@ -63,7 +63,7 @@ This option is enabled after the successful preview. You must click **Commit Upd
 
 <img src="../images/commit-update-set.png" alt="commit-update-set" title="commit-update-set" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+!!! Tips
 
     If you get any error (refer to the following screenshot) in the preview step, do the following:
 
