@@ -171,9 +171,9 @@ Channel-specific ids are shown only for the users who have interacted with the V
   </tr>
 </table>
 
-   !!! note
+!!! note
 
-      The Guardrail details are displayed only if they are configured.
+    The Guardrail details are displayed only if they are configured.
 
 ### Payload Details
 
@@ -191,10 +191,18 @@ Channel-specific ids are shown only for the users who have interacted with the V
    <td>The request payload sent to a Large Language Model (LLM) is the user’s input or question, along with any extra details needed for the model to give a good response.
    </td>
   </tr>
-  <tr>
-   <td>Response Payload
-   </td>
+  <tr> 
+  <td>Response Payload
+  </td>
    <td>The Large Language Model (LLM) produces a response payload as its answer to the input it receives. It’s in the text format and contains additional information required to present the response. This payload helps developers use the model’s output effectively.
+  </tr> </td>
+   <td>Tokens Used 
+   </td>
+   <td>Response tokens for a Large Language Model (LLM) are the pieces of generated output, like words or punctuation, showing the model’s response. These tokens make up the structured parts of the LLM’s text, making it easier to understand and analyze.
+   </tr></td>
+   <td>Stream  
+   </td>
+   <td>If the stream = true, then the response is delivered incrementally, token by token in real-time.  
    </td>
   </tr>
 </table>
