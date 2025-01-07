@@ -21,7 +21,7 @@ This section lets you set your preferences based on the channels. It has three c
 * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
-    
+
 * **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My Bot, and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
 
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
@@ -77,7 +77,7 @@ This section lets you set your preferences based on the channels. It has three c
 10. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
-## **Agent AI General Settings**
+## Agent AI General Settings
 
 This section lets you set up the general features of the Agent AI widget. Here, you can turn on or off the event-not-found event trigger, control the URL opening behavior.
 
@@ -119,3 +119,25 @@ This section lets you set up the general features of the Agent AI widget. Here, 
 9. Click **Save** to save your settings.  
 <img src="../widget-settings-images/agent-ai-general-settings.png" alt="agent-ai-general-settings" title="agent-ai-general-settings" style="border: 1px solid gray; zoom:80%;">
 
+### Auto-corrections for the Search tab
+
+The Auto Correct feature improves typing accuracy in the Search tab by highlighting misspelled words and suggesting corrections. Admins can enable or disable this feature in Widget Settings > Agent AI General Settings > Auto Correct to define the widget landing behavior. They can also select the Use Custom Dictionary option to upload a list of words for auto-corrections and download the uploaded list to customize, as required. During run time, agents can enable or disable the Auto Correct feature in the Settings tab > Auto Correct toggle. Between the admin and the agent, agent’s selection takes precedence.
+
+Steps:
+
+1. Sign in to **Agent AI**.
+2. Go to **Widget Settings** > **Agent AI General Settings**.
+3. Turn the **Auto Correct** toggle on or off, as required.
+4. Select or clear the **Use Custom Dictionary** option.
+5. Upload your customized list of words.
+
+    !!! Note
+
+        You can download the present list of words, if already uploaded.
+6. Click **Save**.
+
+Agents can enable or disable the Auto Correct toggle by using the following steps:
+
+1. Sign in to the **Agent AI** widget.
+2. Go to the **Settings** tab.
+3. Enable or disable the **Auto Correct** toggle.
