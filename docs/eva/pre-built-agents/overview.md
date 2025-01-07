@@ -43,7 +43,7 @@ Steps to publish a pre-built agent:
         * **Selected User groups/Users**: Specify individual users or groups.
         * **Everyone in the Account**: Make the agent available to all users.
     * **Actions**: Choose what users can do with this agent:
-        * **Lookup**:Users can search for existing items. 
+        * **Lookup**: Users can search for existing items. 
         * **Creation**: Users can create new items.
     
         For example: For a Jira agent, you can allow users to look up issues or also let them create new issues.

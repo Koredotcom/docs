@@ -2,6 +2,30 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent GALE releases.
 
+## v1.0.7 December 25, 2024
+
+<u> Minor Release </u>
+
+This update includes new features, feature enhancements, and security enhancements, summarized below.
+
+**New Features**
+
+* Unified External Model Request & Response Structure: Introducing a wrapper endpoint to standardize request and response formats for all external AI models. The wrapper converts model-specific outputs to a unified structure, resulting in a consistent API, simplified integration, and improved maintainability.
+* Knowledge Node: Introducing a new node on the agent canvas, allowing users to search documents within GALE workflows by integrating with Search AI. Users can connect accounts, configure searches, and use optional meta filters to narrow results.
+* Function Calling in Gen AI Node: Implemented support for function calling (happy path) within the Gen AI Node in the Agent, including basic debugging capabilities.
+
+
+**Feature Enhancements**
+
+* Improved Model Import File Download: ML services will now directly access imported model files from the file system to address issues with the current URL-based download, such as unknown speeds for large files and URL expiration during scaling or restarts.
+* Improved Error Handling for Agent Runtime Failures: Defined error codes and messages for the 15 agent runtime failure scenarios and propagated these consistently to both the Agent API response and Agent Monitoring tab.
+
+**Security Enhancements**
+
+* Host Manipulation in Forgotten Password Emails: Implemented proper protocol and host validation when using "hostUrl" to construct reset links
+
+<hr>
+
 ## v1.0.6 December 12, 2024
 
 <u> Minor Release </u>

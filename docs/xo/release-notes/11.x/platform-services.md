@@ -47,9 +47,9 @@ Key benefits
 * Visibility into per-bot security configurations.
 * Streamlined management and compliance workflows.
 
+[Learn more :octicons-arrow-right-24:](../../apis/automation/get-bots.md)
 
 ### App Settings
-
 
 #### Auto-Save for App Profile Settings
 The platform now ensures consistent Auto-Save behavior across all configurations in the App Profile menu of the App Settings page. This update aligns the App Settings page with other areas of the platform, such as the Property Panel and NLP Training Configurations, offering users a seamless and intuitive experience.
@@ -81,9 +81,7 @@ Key benefits
 * Consistent language selection across the app.
 * Leverages existing backend localization for seamless translation.
 
-[Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md)
-
-
+[Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
 
 
 <hr>
