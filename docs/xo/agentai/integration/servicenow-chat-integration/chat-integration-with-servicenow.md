@@ -25,7 +25,7 @@ The following architecture diagram shows the interaction between ServiceNow and 
 
 Setting up Agent AI chat with Servicenow consists of the following steps:
 
-1. [Set Up Kore Agent AI in ServiceNow Sandbox](#set-up-kore-agent-ai-in-servicenow-sandbox) (#add-agent-ai-bot-configuration-in-the-servicenow-custom-table)
+1. [Set Up Kore Agent AI in ServiceNow Sandbox](#set-up-kore-agent-ai-in-servicenow-sandbox) 
     * [Download from the ServiceNow store (recommended)](#step-1-download-from-the-servicenow-store-recommended) Or
     * [Install through an Update Set](#install-through-an-update-set)
 2. [Set up Agent AI app configuration](#step-2-set-up-agent-ai-app-configuration)
