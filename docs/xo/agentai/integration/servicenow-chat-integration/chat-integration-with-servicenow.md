@@ -109,11 +109,13 @@ This section details the steps to set up the Agent AI app configuration.
 
     !!! note
 
-        ESC portal link: &lt;Servicenow domain>/esc
+        ESC portal link: &lt;Servicenow domain>/esc.
    
     <img src="../images/chat-initiate.png" alt="Chat Initiate" title="Chat Initiate" style="border: 1px solid gray; zoom:80%;">
+
 * **Agent:** Once the agent accepts the incoming chat, an Interaction Record page opens, and the **Agent AI by Kore** is the first icon on the contextual side panel.
-    * First, the agent gets a notification of the incoming chat.
+
+    * The agent gets a notification of the incoming chat.
 
         <img src="../images/incoming-chat-notification.png" alt="incoming-chat-notification" title="incoming-chat-notification" style="border: 1px solid gray; zoom:80%;">
 
@@ -145,6 +147,7 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 ```
 
    <img src="../images/script-node.png" alt="Language Code" title="Language Code" style="border: 1px solid gray; zoom:80%;">
+   
 
     !!! note
 
