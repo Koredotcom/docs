@@ -115,8 +115,7 @@ This section details the steps to set up the Agent AI app configuration.
 
 * **Agent:** Once the agent accepts the incoming chat, an Interaction Record page opens, and the **Agent AI by Kore** is the first icon on the contextual side panel.
 
-    * The agent gets a notification of the incoming chat.
-
+    * The agent gets a notification of the incoming chat.  
         <img src="../images/incoming-chat-notification.png" alt="incoming-chat-notification" title="incoming-chat-notification" style="border: 1px solid gray; zoom:80%;">
 
     * Once the agent accepts the chat, the Agent AI widget appears on the right contextual side panel. 
@@ -147,11 +146,10 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 ```
 
    <img src="../images/script-node.png" alt="Language Code" title="Language Code" style="border: 1px solid gray; zoom:80%;">
-   
 
     !!! note
 
-        If a Language Code is sent from Kore XO to Servicenow, then the Agent AI widget will load according to that language code. So, the XO language code will always take precedence over the language code set inside the Servicenow custom table in step 3.
+    If a Language Code is sent from Kore XO to Servicenow, then the Agent AI widget will load according to that language code. So, the XO language code will always take precedence over the language code set inside the Servicenow custom table in step 3.
 
 ### Step 6: Get to know the Agent AI widget
 
