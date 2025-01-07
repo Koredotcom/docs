@@ -14,7 +14,7 @@ There are two key scenarios when an Agent node might be beneficial:
 1. NLP might not pick up co-referencing and entity correction during a conversation. For example, in a flight booking task, someone might ask to book two window seats, then change their mind and ask to modify one of the `seat types` from the `window` to the `middle`. In this scenario, the VA must correct the already collected entity `(seat type)` and perform entity co-referencing to modify from `window` to `middle`.
 2. Complex flows like the above increase dialog task complexity, requiring multiple paths and nodes. Even then, it is humanly impossible to predict all such scenarios. Scripting all these possibilities might also result in a sub-par end-user experience.
 
-Leveraging OpenAI’s generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
+Leveraging generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
 
 
 ## Node Behavior
