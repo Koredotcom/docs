@@ -55,6 +55,7 @@ Key benefits
 
 Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#enable-repeat-notifications)
 
+
 #### Blended Mode for Voice and Digital Interactions
 
 Blended Mode allows agents to handle both voice and digital interactions simultaneously.
@@ -106,6 +107,7 @@ Key benefits
 #### Outbound SMS API Integration
 
 This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/send-outbound-sms.md)
+
 
 ### Analytics
 
