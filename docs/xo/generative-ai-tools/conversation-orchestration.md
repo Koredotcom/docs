@@ -30,7 +30,9 @@ The XO Platform supports **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding** 
 
 
 * **Conversation Management**: 
-Currently, **OpenAI GPT-4o** and **Azure OpenAI GPT-4o** models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.  
+
+Currently, **OpenAI GPT-4o**, **OpenAI GPT-4o mini**, and **Azure OpenAI GPT-4o** models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.  
+
 Support for the major commercial models will be available in the upcoming months. However, you can always bring your own model via the custom LLM integration route.  
 
 To configure the model and settings, click **Settings**. Select the model, adjust the settings if necessary, and click **Save**.

@@ -21,17 +21,33 @@ Steps to add and configure the node:
 
     * **Node Name**: Enter an appropriate name for the node.
 
+    * **Prompt options**: Choose one of the following options:
+        1. **Write your own prompt**: If you select 'Write your own prompt’, follow these steps:
+            * **System Prompt**: Enter the system prompt for your use case. System prompts help you assign a role to the model. For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters".
+            * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
+            Syntax: `{{context.variable_name}}`
+            Example: `{{context.conversation}}`  
+        <img src="../images/write_your_own_prompt.png" alt="Write your own prompt" title="Write your own prompt" style="border: 1px solid gray; zoom:70%;">
+
+        !!! note
+
+            System Prompts: These are instructions to guide how the model should respond. They define the overall behavior or tone of the model. For example: "You are a helpful assistant."   
+            Human Prompts: These are the questions or requests made by the user. They specify what the user wants the model to do or answer. For example: "Summarize this error log and tell me the likely cause of the issue."
+
+
+        2. **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
+            * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.
+            * To edit the prompt, click the **Customize** option. The ‘Custom Prompt’ view is displayed, where the prompt from Prompt Studio will be populated in both the system and human prompt fields. You can then modify the prompt while preserving the selected version.  
+        <img src="../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
+
+        !!! note
+
+            Importing a Prompt with Variables: If you import a prompt from Prompt Studio with set variables, you can add the necessary variables in the ‘Map Variables’ field for that GenAI node.
+
+            Importing a Prompt without Variables: If you import a prompt from Prompt Studio that does not have variables, you must customize the prompt and manually add the variables. In this case, the "Map Variables" field does not appear, as the imported prompt has no variables to map.
+
     * **Select Model**: Select a model from the list of configured models.
-
-    * **System Prompt**: Enter the system prompt for your use case. For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters.”
-
-    * **Prompt**: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
-    Syntax: `{{context.variable_name}}`
-
-        Example: `{{context.conversation}}`
-
-    * **Few-shot examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of user input and expected AI output.  
-    <img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:60%;"> 
+    Note that when you choose a prompt from the prompt hub, it will also fetch the preferred model associated with that version if you specified one during the commit process
 
     * **Timeout**: Select the timeout duration from the allowed range. The allowed range is 30 to 180 seconds (3 minutes). The default is 60 seconds (1 minute). The node triggers a timeout error if the request is not completed within the selected time frame.    
 
@@ -39,20 +55,18 @@ Steps to add and configure the node:
 
             Timeout precedence: Agent timeout *is greater than* Node timeout *is greater than* Model timeout.
 
-    * **Hyperparameters**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
+    * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
         * **Temperature**: Controls the randomness of the model's responses. Higher values lead to more random outputs, while lower values result in more focused outputs.
 
+        * **Top p**: Controls the diversity of the model's output by considering only the top tokens whose cumulative probability exceeds a threshold. Higher values produce more diverse outputs, while lower values result in more deterministic outputs.
+
+        * **Top k**: Restricts the model from considering only the top k most probable next words when generating output. For example, if k=50, the model will randomly choose from the top 50 predictions at each step. This helps balance quality and diversity in the generated text. Higher top-k values encourage creativity and diversity, while lower values promote coherence and reliability.
+
         * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
 
-        * **Frequency Penalty**: Penalizes common or frequent tokens, making the model's output less generic. Higher values produce more unique outputs, while lower values produce more common outputs.
-
-        * **Presence Penalty**: Penalizes new or rare tokens, making the model's output more common. Higher values lead to more common outputs, while lower values produce more unique outputs.
-
-        * **Top P**: Controls the diversity of the model's output by considering only the top tokens whose cumulative probability exceeds a threshold. Higher values produce more diverse outputs, while lower values result in more deterministic outputs.
-
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
-<img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
 
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
 

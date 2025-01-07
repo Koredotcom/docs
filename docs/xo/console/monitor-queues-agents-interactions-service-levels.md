@@ -15,7 +15,7 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
 
 ## Queues
 
-In this section, you can see all the queues to which you are assigned. The number of conversations waiting to be picked up, the number of already engaged conversations, and a summary of agents assigned to a particular queue along with their current status. In addition to the above details, the manager can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.
+In this section, you can see all the queues to which you are assigned. The number of conversations waiting to be picked up, the number of already engaged conversations, and a summary of agents assigned to a particular queue along with their current status. In addition to the above details, the supervisor can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.
 
 To monitor the agents:
 
@@ -46,12 +46,12 @@ To monitor the agents:
 2. Click **New Filter**.  
 <img src="../images/new-filter.png" alt="New Filter" title="New Filter" style="border: 1px solid gray; zoom:80%;"> 
 
-3. Select the **Queues**, **Channels**, and **Language**.
+3. Select the **Queues**, **Channels**, **Type**, and **Language**.
 
     !!! Note
 
         You can select from agent groups (list of agents), search for agents, and select from dynamic sub-filters.    
-    <img src="../images/filter-by.png" alt="Filter By" title="Filter By" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/queues-filters.png" alt="Filter By" title="Filter By" style="border: 1px solid gray; zoom:80%;">  
 
     Select from the below available options:  
         1. **Clear** – Clears the selection.  
@@ -75,7 +75,7 @@ Steps to edit a filter:
 <img src="../images/edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;"> 
 
 3. Make the necessary changes and click **Save & Apply**.  
-<img src="../images/save-edited-filter.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/edit-queue-filters.png" alt="Save and Apply" title="Save and Apply" style="border: 1px solid gray; zoom:80%;">  
 
     A confirmation message is displayed and the filter is updated.
 
@@ -107,8 +107,7 @@ Steps to edit a filter:
     A confirmation message is displayed and the filter is deleted.
 
 ### Join a Conversation
-
-Managers can monitor live conversations between agents and customers. The manager can view the agent engagement metrics of the agent. At any point, the manager can view details of the agent-customer conversation, or the manager can manually assign the agent to another available agent.
+Supervisors can monitor live conversations between agents and customers. The supervisor can view the agent engagement metrics of the agent. At any point, the supervisor can view details of the agent-customer conversation, or the supervisor can manually assign the agent to another available agent.
 
 ### Manually Assign Conversations from the Queue to an Agent
 
@@ -171,7 +170,7 @@ The following metrics and their total counts are displayed:
 * The load capacity indicator displays the agent’s overall load capacity. Hovering over the load shows the channel-wise load capacity—for example, Live Chat ⅔ (2 slots out of 3 defined slots are engaged).
 <img src="../images/load-capacity-indicator.png" alt="Load Capacity Indicator" title="Load Capacity Indicator" style="border: 1px solid gray; zoom:80%;">
 
-* On the monitor tab, select an agent on the left side. The manager can view the agent’s ongoing conversation on the right and check the engagement metrics.  
+* On the monitor tab, select an agent on the left side. The supervisor can view the agent’s ongoing conversation on the right and check the engagement metrics.  
 <img src="../images/engagement-metrics.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
 
 * On the right window, click the agent’s name.  Another window opens to the right as shown below. To check the agent engagement metrics, on the right window, click the down arrow as shown below:  
@@ -184,7 +183,7 @@ The following metrics and their total counts are displayed:
 
     <img src="../images/email-metrics.png" alt="Email Metrics" title="Email Metrics" style="border: 1px solid gray; zoom:70%;">
 
-* For a selected agent, the manager can check the agent profile, chat with the agent, change the queue, and assign the conversation to other agents as shown below:  
+* For a selected agent, the supervisor can check the agent profile, chat with the agent, change the queue, and assign the conversation to other agents as shown below:  
 <img src="../images/assign-change-queue.png" alt="Assign, Change Queue" title="Assign, Change Queue" style="border: 1px solid gray; zoom:80%;">
 
 ### Filters
@@ -255,7 +254,7 @@ Steps to edit a filter:
 
     A confirmation message is displayed and the filter is deleted.
 
-### **Auto Refresh When Filters are Applied**
+### Auto Refresh When Filters are Applied
 
 When a supervisor applies a filter, the page automatically refreshes at fixed intervals to maintain real-time data accuracy. For example, any changes in the status of agents are reflected after the auto-refresh, ensuring the data is up-to-date.
 
@@ -308,7 +307,7 @@ You can select the Proficiency level of the skill.
 
 To chat with an Agent:
 
-* Select the Chat option. A pop-up chat window appears, where the manager can type messages for the agent.  
+* Select the Chat option. A pop-up chat window appears, where the supervisor can type messages for the agent.  
 <img src="../images/chat-agent.png" alt="Chat With Agent" title="Chat With Agent" style="border: 1px solid gray; zoom:60%;">
 
 ### Mark Offline
@@ -323,7 +322,7 @@ Force Logout is a feature that allows the agent to be freed up and the ongoing c
 
 ### Join a Conversation
 
-Managers can monitor live conversations between agents and customers. The manager can view the agent engagement metrics of the agent. At any point, the manager can Join a conversation (conference) and view details of the agent-customer conversation.
+Supervisors can monitor live conversations between agents and customers. The supervisor can view the agent engagement metrics of the agent. At any point, the supervisor can Join a conversation (conference) and view details of the agent-customer conversation.
 
 Steps to Join a conversation:
 
@@ -370,10 +369,10 @@ You can view all live interactions on the Contact Center AI console. This view i
 
 ### Manually Assign Conversations to an Agent and Change Queue
 
-* Managers can assign conversations to an agent, and change queues for conversations. Click an on going conversation to view the Assign and Change Queue options.  
+* Supervisors can assign conversations to an agent, and change queues for conversations. Click an on going conversation to view the Assign and Change Queue options.  
 <img src="../images/manual-assign-change-queue.png" alt="Manually Assign/Change Queue" title="Manually Assign/Change Queue" style="border: 1px solid gray; zoom:80%;">
 
-Managers can also view an agent’s engagement metrics.  
+Supervisors can also view an agent’s engagement metrics.  
 <img src="../images/interaction-dropdown.png" alt="Agent Engagement Metrics Dropdown" title="Agent Engagement Metrics Dropdown" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/engagement-metrics-agent.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
@@ -388,13 +387,14 @@ Managers can also view an agent’s engagement metrics.
 2. Click **New Filter**.  
 <img src="../images/new-filter.png" alt="New Filter Button" title="New Filter Button" style="border: 1px solid gray; zoom:80%;">
 
-3. Select the **Status**, **Agents**, **Skills**, **Queues**, **Channels**, and **Language**.  
-    <img src="../images/filter-criteria.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:80%;">
+3. Select the Select the **Status**, **Agents**, **Skills**, **Queues**, **Channels**, **Type**, and **Language**.  
+    <img src="../images/interactions-filters.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:80%;">
 
     Select from the below available options:
-    1. **Clear** – Clears the selection.
-    2. **Save & Apply** – Saves the filter, and it appears when selected.
-    3. **Apply** – Applied for one instance and not saved.
+    1. **Clear** – Clears the selection.  
+    2. **Save & Apply** – Saves the filter, and it appears when selected.  
+    3. **Apply** – Applied for one instance and not saved.  
+
 4. Click **Save & Apply**.
 
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
@@ -413,7 +413,7 @@ Steps to edit a filter:
 <img src="../images/edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
 3. Make the necessary changes and click **Save & Apply**.  
-    <img src="../images/save-and-apply-edits.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/edit-interactions-filters.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:60%;">
 
     A confirmation message is displayed and the filter is updated.
 

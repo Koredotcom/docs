@@ -2,6 +2,10 @@
 
 You can deploy an open-source model by selecting the Hugging Face option in the deployment process.
 
+!!! note
+
+    GALE currently supports models that are compatible with version 4.43.1 of the Transformers library. Models that require a higher version of the Transformers library cannot be supported in GALE at this time.
+
 To deploy a model from Hugging Face, follow these steps:
 
 

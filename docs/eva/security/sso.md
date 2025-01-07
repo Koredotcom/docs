@@ -1,6 +1,6 @@
 # Using Single Sign-On
 
-SSO enables easy access to the application of **AI for Work** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing their AI for Work application, the system can automatically use the same login credentials.
+SSO enables easy access to **AI for Work** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing AI for Work, the system can automatically use the same login credentials.
 
 Administrators can configure Single Sign-On (SSO) authentication for **AI for Work** using one of the following sign-on protocols or methods:
 

@@ -1,1 +1,4 @@
 [0229/133149.734:ERROR:registration_protocol_win.cc(135)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1220/163645.013:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)
+[1220/163645.097:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)
+[1220/163645.139:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)

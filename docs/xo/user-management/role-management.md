@@ -563,11 +563,43 @@ Manage ASR/TTS voice preferences
    </td>
 </tr>
 <tr>
+   <td><strong>Agent Playbook - Configuration</strong>
+   <br>
+Manage the accessibility of agent playbook feature
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
    <td><strong>WFM Configuration Management</strong>
    <br>
 Can Manage WFM Configurations.
    </td>
    <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>VoiceGateway Settings</strong>
+   <br>
+Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent AI Settings</strong>
+   <br>
+Define Agent AI Widgets accessibility to Agents
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Coaching - Configuration</strong>
+   <br>
+Manage the accessibility of real time coaching feature
+   </td>
+   <td>Full Access
    </td>
 </tr>
 <tr>
@@ -1097,37 +1129,73 @@ Make outbound emails if enabled for the account
    <br>
 Manage communication channels
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>Billing</strong>
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>API</strong>
    <br>
 Manage API setup and configuration
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>Language & Speech Control</strong>
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Playbook - Configuration</strong>
+   <br>
+Manage the accessibility of agent playbook feature
+   </td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>WFM Configuration Management</strong>
    <br>
 Can Manage WFM Configurations.
    </td>
-   <td>Yes</td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
+   <td><strong>VoiceGateway Settings</strong>
+   <br>
+Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent AI Settings</strong>
+   <br>
+Define Agent AI Widgets accessibility to Agents
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Coaching - Configuration</strong>
+   <br>
+Manage the accessibility of real time coaching feature
+   </td>
+   <td>Full Access
+   </td>
+</tr>
    <td colspan="2" ><strong>Other Modules</strong>
    </td>
 </tr>
@@ -1191,8 +1259,7 @@ Access to create and assign interactions for audit to other users
 Access to scored interactions, submit audits & QA dashboard
    </td>
    <td>No
-   </td>
-   
+   </td> 
 </tr>
 </table>
 
@@ -1637,37 +1704,73 @@ Make outbound emails if enabled for the account
    <br>
 Manage communication channels
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>Billing</strong>
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>API</strong>
    <br>
 Manage API setup and configuration
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>Language & Speech Control</strong>
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Playbook - Configuration</strong>
+   <br>
+Manage the accessibility of agent playbook feature
+   </td>
+   <td>Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>WFM Configuration Management</strong>
    <br>
 Can Manage WFM Configurations.
    </td>
-   <td>Yes</td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
+   <td><strong>VoiceGateway Settings</strong>
+   <br>
+Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+   </td>
+   <td>None
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent AI Settings</strong>
+   <br>
+Define Agent AI Widgets accessibility to Agents
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Coaching - Configuration</strong>
+   <br>
+Manage the accessibility of real time coaching feature
+   </td>
+   <td>Full Access
+   </td>
+</tr>
    <td colspan="2" ><strong>Other Modules</strong>
    </td>
 </tr>
@@ -2188,35 +2291,72 @@ Make outbound emails if enabled for the account
    <br>
 Manage communication channels
    </td>
-   <td>None</td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>Billing</strong>
    <br>
 Manage account-level billing preferences
    </td>
-   <td>None</td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>API</strong>
    <br>
 Manage API setup and configuration
    </td>
-   <td>None</td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>Language & Speech Control</strong>
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access</td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Playbook - Configuration</strong>
+   <br>
+Manage the accessibility of agent playbook feature
+   </td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>WFM Configuration Management</strong>
    <br>
 Can Manage WFM Configurations.
    </td>
-   <td>No</td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>VoiceGateway Settings</strong>
+   <br>
+Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent AI Settings</strong>
+   <br>
+Define Agent AI Widgets accessibility to Agents
+   </td>
+   <td>None
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Coaching - Configuration</strong>
+   <br>
+Manage the accessibility of real time coaching feature
+   </td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>Other Modules</strong>
@@ -2742,35 +2882,72 @@ Make outbound emails if enabled for the account
    <br>
 Manage communication channels
    </td>
-   <td>None</td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>Billing</strong>
    <br>
 Manage account-level billing preferences
    </td>
-   <td>None</td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>API</strong>
    <br>
 Manage API setup and configuration
    </td>
-   <td>None</td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>Language & Speech Control</strong>
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>None</td>
+   <td>None
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Playbook - Configuration</strong>
+   <br>
+Manage the accessibility of agent playbook feature
+   </td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td><strong>WFM Configuration Management</strong>
    <br>
 Can Manage WFM Configurations.
    </td>
-   <td>No</td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>VoiceGateway Settings</strong>
+   <br>
+Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+   </td>
+   <td>None
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent AI Settings</strong>
+   <br>
+Define Agent AI Widgets accessibility to Agents
+   </td>
+   <td>None
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Coaching - Configuration</strong>
+   <br>
+Manage the accessibility of real time coaching feature
+   </td>
+   <td>None
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>Other Modules</strong>
@@ -3480,53 +3657,94 @@ No</td>
    <br>
 Manage communication channels
    </td>
-   <td>View
-   <br>
-None
-<br>  
-Full Access</td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>Billing</strong>
    <br>
 Manage account-level billing preferences
    </td>
-   <td>View
-   <br>
-None
-<br>
-Full Access</td>
+   </td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>API</strong>
    <br>
 Manage API setup and configuration
    </td>
-   <td>View
-   <br>
-None
-<br>
-Full Access</td>
+   </td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>Language & Speech Control</strong>
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>View
+   </td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Playbook - Configuration</strong>
    <br>
-None
-<br>
-Full Access</td>
+Manage the accessibility of agent playbook feature
+   </td>
+   <td>None<br>
+   Full Access
+   </td>
 </tr>
 <tr>
    <td><strong>WFM Configuration Management</strong>
    <br>
 Can Manage WFM Configurations.
    </td>
-   <td>Yes
+   <td>Yes<br>
+   No
+   </td>
+</tr>
+<tr>
+   <td><strong>VoiceGateway Settings</strong>
    <br>
-No</td>
+Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+   </td>
+   </td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent AI Settings</strong>
+   <br>
+Define Agent AI Widgets accessibility to Agents
+   </td>
+   </td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Coaching - Configuration</strong>
+   <br>
+Manage the accessibility of real time coaching feature
+   </td>
+   </td>
+   <td>View<br>
+   None<br>
+   Full Access
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>Other Modules</strong>

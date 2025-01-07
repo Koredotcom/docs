@@ -8,7 +8,7 @@ Large language models (LLMs) are powerful AI systems that can be leveraged to of
 Guardrails enable responsible and ethical AI practices by allowing platform users to easily enable/disable rules and configure settings for different features using LLMs. Additionally, the users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
 
 The XO Platform leverages the open-source models tailored for conversational AI applications. Each guardrail is powered by a different model, that has been fine-tuned specifically to validate text for toxicity, bias, filter topics, etc. Kore.ai hosts these models and periodically updates them through training to detect emerging threats and prompt injection patterns effectively. These small models reside within the platform, ensuring swift performance during runtime.
-<img src="../images/guardrails-safeguard.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/safeguards.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Types of Guardrails
@@ -53,7 +53,7 @@ For example: \b(yep|nah|ugh|meh|huh|dude|bro|yo|lol|rofl|lmao|lmfao)\b
 
 ## Guardrails and Features Support Matrix
 
-The Guardrails are currently available for the following features: **GenAI Node** and **Rephrase Dialog Response**. They will gradually become available for the remaining features.
+The Guardrails are currently available for the following features: **Agent Node** and **Rephrase Dialog Response**. They will gradually become available for the remaining features.
 
 (✅ Supported | ❌ Not supported)
 
@@ -83,7 +83,7 @@ The Guardrails are currently available for the following features: **GenAI Node*
     <td colspan="9"><strong>Dynamic Conversation Features</strong></td>
   </tr>
   <tr>
-    <td>GenAI Node</td>
+    <td>Agent Node</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
@@ -210,7 +210,7 @@ For example, the debug logs display two entries: one for the LLM input and anoth
 Fallback behavior lets the system determine the optimal course of action when the Guardrails are violated. Each feature has a different fallback behavior, which can be selected in the feature's advanced settings.
 
 
-### Fallback Behavior for GenAI Node
+### Fallback Behavior for Agent Node
 
 You can define the fallback behavior in the following two ways.
 
@@ -223,7 +223,7 @@ Steps to change the fallback behavior:
 
 
 
-1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversation** > **GenAI Node** > **Advance Settings**.  
+1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversation** > **Agent Node** > **Advance Settings**.  
 <img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
 
 2. Select the fallback behavior as required.

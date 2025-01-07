@@ -14,11 +14,15 @@ Both tabs include summary metrics at the top of the page, including total runs/r
 
 The All runs tab provides the following information for each agent run:
 
-* **Status**: The status indicating a success or failure. A green icon indicates success, and a red icon indicates failure.
 * **Run ID**: The unique identifier for the flow.
+* **Status**: The current state of the request. It displays one of the following statuses:
+    * **In Progress**: The request is being processed.
+    * **Waiting**: The request is outside of GALE and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Success**: The request has been completed successfully.
+    * **Failed**: The request was not completed successfully.
 * **Response time**: The duration the agent takes to complete a request and provide an output.
 * **Nodes executed**: The total number of nodes executed in the run.
-* **Start time**: The time when the request is initiated. 
+* **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
 * **API key**: The API key used to execute the agent. (This is the name provided in the **API keys** page when you created a new API key. If you did not provide a name, the system uses the default name ‘Secret Key’. You can have multiple API keys for a single agent.)
 
@@ -42,8 +46,12 @@ If your agent currently does not have any Gen AI nodes, this section will remain
 
 The Model runs tab provides the following information for each Gen AI node call:
 
-* **Status**: The status indicating a success or failure. A green icon indicates success and a red icon indicates failure.
 * **Request ID**: The unique identifier of the GenAI node request.
+* **Status**: The current state of the request. It displays one of the following statuses: 
+    * **In Progress**: The request is being processed.
+    * **Waiting**: The request is outside of GALE and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Success**: The request has been completed successfully.
+    * **Failed**: The request was not completed successfully.
 * **Node name**: The name of the GenAI node.
 * **Model name**: The model that is used for the GenAI node.
 * **Response time**: The amount of time taken by the GenAI node to complete the request.
@@ -124,3 +132,35 @@ Steps to use the filters:
     <img src="../images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Apply**.
+
+
+
+
+## Understanding the Impact of Timeouts on Agent Endpoints
+
+The impact of timeouts on agent endpoints depends on whether the process is synchronous (Sync) or asynchronous (Async). **Sync** requests are handled and fulfilled immediately, while **Async** requests may pause and show a ‘Waiting’ status until a response is received. If the response time is longer or the timeout is set to infinite, the system will wait indefinitely until the external system responds.
+
+Below are the four scenarios showing how timeouts affect the agent endpoint, along with the corresponding status on the Agent monitoring page:
+
+**Agent 'Sync' & API node 'Sync'**:
+
+* Immediately fulfilled, no specific endpoint message.
+* 'In-progress' status while running.
+
+**Agent 'Sync' & API node 'Async' (API node timeout < Agent Sync timeout)**:
+
+* API retrieves data, flow executes as 'In-progress' status, and the response is sent.
+* External requests: Flow is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when response returns.
+
+**Agent 'Async' & API node 'Sync'**:
+
+* Flow executes, and the response is sent to the callback URL.
+* 'In-progress' status while flow is running.
+
+**Agent 'Async' & API node 'Async' (API node timeout < Agent Async timeout OR both are set to infinite)**:
+
+* External requests: Flow is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when response returns.
+* Informs if the request has already been fulfilled on retry.
+
+
+The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure an Agent](https://docs.kore.ai/gale/agents/configure-an-agent/) and [API Node](https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/).
