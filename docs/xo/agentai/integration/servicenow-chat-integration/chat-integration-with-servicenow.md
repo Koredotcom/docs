@@ -2,20 +2,7 @@
 
 This document provides detailed instructions on integrating the Kore.ai Agent AI widget with ServiceNow Desktop for the Chat channel. The integration will support all outstanding features of Agent AI, such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/), [Agent Coaching](https://docs.kore.ai/agentassist/agent/agent-coaching/), [Agent Playbook](https://docs.kore.ai/agentassist/agent/agentassist-playbook/), [Sentiment Analysis](https://docs.kore.ai/agentassist/agent/agentassist-widget/), and [Chat Transcription](https://docs.kore.ai/agentassist/agent/agentassist-widget/#Transcript_Tab). It will also include an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
 
-The document contains the following topics:
-
-* [Prerequisites](#heading=h.xmamu7q6unsu)
-* [Architecture Diagram](#heading=h.wbeckacpw8ep)
-* [Set up Kore Agent AI in ServiceNow Sandbox](#heading=h.xvzl9mb79989)
-
-    * [Download from the ServiceNow store (recommended)](#heading=h.pyl155uizw10)
-    * [Install through an Update Set](#heading=h.koxf511l0f0l)
-* [Preview Update Set](#heading=h.95jnq5f4orz0)
-* [Commit Update Set](#heading=h.ow9aftu0gxc)
-* [Tips](#heading=h.4pt7ksxy1sa1)
-* [Set up Agent AI app configuration](#heading=h.43g51ctn86go)
-* [Test your configuration](#heading=h.hublm2qu2fxf)
-* [Get to know the Agent AI widget](#heading=h.hfg53cop263h)
+This document contains the following topics:
 
 ## Prerequisites
 
@@ -97,7 +84,7 @@ This section details the steps to set up the Agent AI app configuration.
     <img src="../images/kore-config-customtable.png" alt="kore-config-customtable" title="kore-config-customtable" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New.**
-4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (check [here](#heading=h.xmamu7q6unsu)), and **Table Key** (give the Table Key as **koreai**).
+4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (check [Prerequisite](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#prerequisites), and **Table Key** (give the Table Key as **koreai**).
 
     !!! note
 
@@ -140,7 +127,7 @@ This section details the steps to set up the Agent AI app configuration.
 
 ### Step 5: Kore XO configuration(Optional)
 
-This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the Servicenow Agent workspace. Follow the documentation link for the same, [here](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities).
+This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the Servicenow Agent workspace. For more information, refer to the [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities).
 
 For passing the language code dynamically from Kore XO to the Agent AI widget inside Servicenow, add the following javascript code inside a script node of Kore XO dialogtask before the Agent Transfer node of Servicenow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
 
