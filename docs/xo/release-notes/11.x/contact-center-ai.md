@@ -32,7 +32,7 @@ Key benefits
 
 #### Improved Supervisor Monitoring with Callback and Voicemail Filters
 
-Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters.
+Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md)
 
 ### Configuration
 
@@ -53,7 +53,7 @@ Key benefits
 * Automatic alert management based on agent actions.
 * Simplified notification system with combined transfer alerts.
 
-Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system.
+Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#enable-repeat-notifications)
 
 #### Blended Mode for Voice and Digital Interactions
 
@@ -107,25 +107,6 @@ Key benefits
 
 This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/send-outbound-sms.md)
 
-### Kore Voice Gateway
-
-#### Fetch Again Option for Failed Recordings
-
-This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
-
-#### Enhanced SIP Transfer Options
-
-To enhance the flexibility and compatibility of the SIP Transfer configuration, two new fields have been added to the 'SIP Transfer' configuration. These fields give more control over how DID numbers are handled and DTMF signals are transmitted.
-
-Key updates
-
-* E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
-* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Transfers - RFC 2833 (Default option) or Tones.
-
-#### Microsoft Teams Integration for Inbound and Outbound Calls
-
-In the SIP Transfer configuration page, the MS Teams option is added under the Network field to support SIP transfers directly to Microsoft Teams for both inbound and outbound calls.
-
 ### Analytics
 
 #### External Transfer Status Tracking
@@ -166,6 +147,25 @@ Email = Email Count; Email conversations ongoing or waiting in a queue.
 #### Call Termination Tracking Added to Call Details API (v2)
 
 The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Fetch Again Option for Failed Recordings
+
+This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### Enhanced SIP Trunk Options
+
+To enhance the flexibility and compatibility of the SIP Trunk configuration, two new fields have been added to the 'SIP Trunk' configuration. These fields give more control over how DID numbers are handled and DTMF signals are transmitted.
+
+Key updates
+
+* E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
+* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Microsoft Teams Integration for Inbound and Outbound Calls
+
+In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
 
 <hr>
 

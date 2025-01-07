@@ -4,7 +4,7 @@ Kore.ai Voice Gateway is a comprehensive voice automation solution that manages 
 
 ## Configure Kore Voice Gateway
 
-You can configure the voice gateway by adding phone numbers, setting up SIP Transfer, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
+You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
 
 Navigate to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
 <img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:100%;">
@@ -82,42 +82,52 @@ Steps to delete an existing phone number:
 
 4. A success confirmation message is displayed once the phone number is deleted.
 
-### SIP Numbers
+### SIP Trunk Setup
 
 This option is useful when transferring calls to Contact Center AI from a toll-free or local phone number using Session Initiation Protocol (SIP) in the IVR system.
 
-Under the SIP Transfer tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.
+Under the SIP Trunk tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.
 
-Steps to configure SIP Transfer:
+Steps to configure SIP Trunk:
 
-1. Click **Configure SIP Transfer**.  
-    <img src="../images/configure-sip-transfer.png" alt="Configure SIP Transfer" title="Configure SIP Transfer" style="border: 1px solid gray; zoom:100%;">
+1. Click **Configure SIP Trunk**.  
+    <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
 
-2. On the **Transfer from IVR** page, configure the following:
-    1. **SIP URI**: This is a pre-configured field.
-    2. **Network**: To configure the Network, you can select one of the following:
+2. On the **Configure SIP Trunk** page, configure the following:
+    1. **Product Selection**: Select the product for which the SIP Trunk is being configured. You can select from the following options:
+        * Contact Center AI
+        * Agent AI
+    2. **SIP URI**: This is a pre-configured field.
+    3. **Network**: To configure the Network, you can select one of the following:
         1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox.  
-            <img src="../images/sip-transfer-setup.png" alt="SIP Transfer Setup" title="SIP Transfer Setup" style="border: 1px solid gray; zoom:100%;">
+            <img src="../images/sip-trunk-setup.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
 
         2. Under **Domain Name**, provide the following:
             1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone.
-            2. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose A-record, SRV, NAPTR, or MS-SYNC.
-                <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:100%;">
+            2. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
+                <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">
+        3. Under **MS Teams**, provide a Fully Qualified Domain Name (The domain name that specifies all domain levels, including the top-level domain and the root zone).  
+                <img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;">
 
-    3. Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
-    4. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
-    5. (Optional) Set the **SIP Credentials** (username and password) to access your SIP transfer setup account.
-    6. Click **Next**.  
-        <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:100%;">
+    3. (Optional) The **E.164 Syntax** is selected by default. Selecting this option prepends a + before the DID number.  
+        <img src="../images/e-164.png" alt="E-164 Syntax" title="E-164-Syntax" style="border: 1px solid gray; zoom:80%;">
+    4. Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
+    5. **DTMF Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
+    6. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
+    7. (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
+    8. Under SIP Termination URI, enter the **IP Address**/**Domain Name**.
+    9. Enter the **SIP Headers**.
+    10. Click **Next**.  
+        <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;">
 
-    7. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
-    8. Click **Save**.  
-    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:100%;">  
+    11. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
+    12. Click **Save**.  
+    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:80%;">  
 
         Please wait for upto ten minutes after saving for the IPs to be whitelisted.  
         <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
-    9. The selected information appears on the Channels page.  
+    13. The selected information appears on the SIP Numbers tab.  
         <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:100%;">
 
 ### Attach Flow
