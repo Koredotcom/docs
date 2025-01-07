@@ -378,8 +378,6 @@ You can place **Notes** on strategic points on the canvas and write down the dia
 
 Using **Bookmarks**, you can create navigation points in a dialog with a complex structure so that you can quickly navigate to the bookmarked points without having to manually search the entire design. You can mention the specific point of the dialog flow in the bookmarks as an easy reference for other users.  
 
-You can use custom colours for both Notes and Bookmarks to improve visibility and collaboration.
-
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
 **Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
@@ -502,7 +500,7 @@ The platform provides the following options for customizing notes and bookmarks:
 
 * **Edit:** To edit the contents.
 * **Delete:** To delete the bookmark or the note from the canvas
-* **Color Change:** To change the color of the bookmark or note.
+* **Color Change:** To change the color of the bookmark or note. You can use custom colours to improve visibility and collaboration.
 
 <img src="../images/using-dialog-builder-visual-customization-notes-bookmarks.png" alt="Visual customization of Notes and Bookmarks" title="Visual customization of Notes and Bookmarks" style="border:1px solid gray;zoom:60%;">
 
