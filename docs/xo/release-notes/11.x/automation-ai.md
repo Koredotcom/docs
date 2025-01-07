@@ -56,6 +56,7 @@ The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient c
 
 
 ### Dialog Builder 
+
 #### Enhanced Sticky Notes for Intuitive Note-Taking Experience 
 The redesigned notes feature works like familiar sticky notes, making it easier and more intuitive to capture and organize your thoughts.
 
@@ -63,8 +64,6 @@ Key updates
 
 * Streamlined editing with autosave functionality.
 * Resizable notes for better organization.
-* One-click note duplication.
-* Comment threads on individual notes.
 * Customizable background colors.
 * Default yellow styling with instant edit mode.
 
@@ -76,7 +75,6 @@ The enhanced bookmarks feature improves organization and collaboration capabilit
 
 Key updates
 
-* Comment threads on individual bookmarks.
 * Customizable background colors.
 * Improved loading experience with visual feedback.
 
