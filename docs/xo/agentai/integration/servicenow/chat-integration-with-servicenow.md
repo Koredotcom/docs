@@ -1,6 +1,6 @@
 # Agent AI Chat Integration with ServiceNow
 
-This document provides detailed instructions on integrating the Kore.ai Agent AI widget with ServiceNow Desktop for the Chat channel. The integration will support [all features of Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}. It also includes an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
+This document provides detailed instructions on integrating the Kore.ai Agent AI widget with ServiceNow Desktop for the Chat channel. The integration supports [all features of Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}. It also includes an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
 
 ## Prerequisites
 
@@ -94,7 +94,7 @@ This section details the steps to set up the Agent AI app configuration.
     <img src="../images/kore-config-customtable.png" alt="kore-config-customtable" title="kore-config-customtable" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New.**
-4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (check [Prerequisite](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#prerequisites), and **Table Key** (give the Table Key as **koreai**).
+4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (check [Prerequisite](#prerequisites), and **Table Key** (give the Table Key as **koreai**).
 
     !!! note
 
@@ -137,9 +137,9 @@ This section details the steps to set up the Agent AI app configuration.
 
 ### Step 4: Kore XO Configuration (Optional)
 
-This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the Servicenow Agent workspace. For more information, refer to the [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities).
+This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the Servicenow Agent workspace. For more information, refer to the [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities){:target=”_blank”}.
 
-For passing the language code dynamically from Kore XO to the Agent AI widget inside Servicenow, add the following javascript code inside a script node of Kore XO dialogtask before the Agent Transfer node of Servicenow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
+For passing the language code dynamically from Kore XO to the Agent AI widget inside Servicenow, add the following javascript code inside a script node of Kore XO dialog task before the Agent Transfer node of Servicenow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
 
 ``` json
 let metaData = {
@@ -162,7 +162,7 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 
 ### Step 5: Using the Agent AI widget
 
-From the integration perspective, along with all the features and capabilities of Agent AI ([Introduction to Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}, agents on Servicenow have the flexibility to use the following additional features:
+From the integration perspective, along with all the features and capabilities of Agent AI [Introduction to Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}, agents on Servicenow have the flexibility to use the following additional features:
 
 * **Send / Copy Buttons:** Agents can use the **Send** and **Copy** buttons on the Agent AI UI to directly send and copy data from the Agent AI widget to the customer.  
 <img src="../images/send-copy-button.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
