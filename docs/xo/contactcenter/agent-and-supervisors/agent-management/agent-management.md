@@ -201,7 +201,7 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
 7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
 8. **Load Balanced Agent Routing**: This setting ensures a fair distribution of tasks among available agents with the necessary skills and language proficiency.
-9. **Blended Mode** The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices. Implementing Blended Agent Mode effectively requires thoughtful planning, configuration, agent enablement, and performance management. However, when done well, it can significantly boost efficiency and customer experience.
+9. **Blended Mode** The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.
 10. **Call Acceptance Behaviour**: This setting allows the call to be accepted while the connection message plays in the background instead of waiting for it to finish.
 
 These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  

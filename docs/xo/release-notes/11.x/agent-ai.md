@@ -24,7 +24,7 @@ This update introduced flexible Search AI configuration to choose built-in funct
 
 #### Auto-corrections for the Search tab
 
-The new auto-correct feature for the Search tab allows admins to control spelling corrections through Widget Settings, including custom dictionary management. While admins can enable/disable it globally, agents can toggle it individually in Settings, with agent preferences taking priority.
+The new auto-correct feature for the Search tab allows admins to control spelling corrections through Widget Settings, including custom dictionary management. While admins can enable/disable it globally, agents can toggle it individually in Settings, with agent preferences taking priority. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#auto-corrections-for-the-search-tab)
 
 #### Enhanced Dialog Task Entity Extraction
 

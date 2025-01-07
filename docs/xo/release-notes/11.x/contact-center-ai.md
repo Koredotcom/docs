@@ -165,7 +165,7 @@ Email = Email Count; Email conversations ongoing or waiting in a queue.
 
 #### Call Termination Tracking Added to Call Details API (v2)
 
-The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md).
+The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
 
 <hr>
 
