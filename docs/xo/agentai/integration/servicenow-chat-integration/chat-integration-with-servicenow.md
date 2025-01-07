@@ -12,10 +12,8 @@ This section outlines the essential components, credentials, and permissions req
         * Configured to receive desktop chats
     * Agent AI Account
         * Enabled Web/Mobile channel
-        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL \
-(Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For more information, refer to [Chat Channel](https://docs.kore.ai/agentassist/channels/chat/) for standalone Agent AI and XO v1.)
-* Roles and Permissions (Optional):
-    * Only required for agent transfers from Kore XO Platform to ServiceNow; refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/).
+        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For more information, refer to [Chat Channel](https://docs.kore.ai/agentassist/channels/chat/) for standalone Agent AI and XO v1.)
+* Roles and Permissions (Optional): Only required for agent transfers from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/).
 
 ## Interaction between ServiceNow and Kore.ai Agent AI (Architecture Diagram)
 
@@ -27,13 +25,13 @@ The following architecture diagram shows the interaction between ServiceNow and 
 
 Setting up Agent AI chat with Servicenow consists of the following steps:
 
-1. [Set Up Kore Agent AI in ServiceNow Sandbox](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#set-up-kore-agent-ai-in-servicenow-sandbox)
-    * [Download from the ServiceNow store (recommended)](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-1-download-from-the-servicenow-store-recommended) Or
-    * [Install through an Update Set](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-2-install-through-an-update-set)
-2. [Set up Agent AI app configuration](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-3-set-up-agent-ai-app-configuration)
-3. [Test your configuration](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-4-test-your-integration)
-4. [Kore XO configuration (Optional)](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-5-kore-xo-configurationoptional)
-5. [Get to know the Agent AI widget](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow-chat-integration/chat-integration-with-servicenow/#step-6-get-to-know-the-agent-ai-widget)
+1. [Set Up Kore Agent AI in ServiceNow Sandbox](#set-up-kore-agent-ai-in-servicenow-sandbox) (#add-agent-ai-bot-configuration-in-the-servicenow-custom-table)
+    * [Download from the ServiceNow store (recommended)](#step-1-download-from-the-servicenow-store-recommended) Or
+    * [Install through an Update Set](#install-through-an-update-set)
+2. [Set up Agent AI app configuration](#step-2-set-up-agent-ai-app-configuration)
+3. [Test your configuration](#step-3-test-your-integration)
+4. [Kore XO configuration (Optional)](#step-4-kore-xo-configuration-optional)
+5. [Get to know the Agent AI widget](#step-5-get-to-know-the-agent-ai-widget)
 
 ### Step 1: Download from the ServiceNow Store (recommended)
 
@@ -65,9 +63,10 @@ This option is enabled after the successful preview. You must click **Commit Upd
 
 <img src="../images/commit-update-set.png" alt="commit-update-set" title="commit-update-set" style="border: 1px solid gray; zoom:80%;">
 
-    !!! note
+!!! note
 
-        If you get any error (refer to the following screenshot) in the preview step, do the following:
+    If you get any error (refer to the following screenshot) in the preview step, do the following:
+
 
 <img src="../images/update-set-preview-error.png" alt="update-set-preview-error" title="update-set-preview-error" style="border: 1px solid gray; zoom:80%;">
 
@@ -166,14 +165,11 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 
 From the integration perspective, along with all the features and capabilities of Agent AI ([Introduction to Agent AI](https://docs.kore.ai/agentassist/getting-started/introduction/)), agents on Servicenow have the flexibility to use the following additional features:
 
-* **Send / Copy Buttons:** Agents can use the **Send** and **Copy** buttons on the Agent AI UI to directly send and copy data from the Agent AI widget to the customer.
-    
-   <img src="../images/send-copy-button.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
+* **Send / Copy Buttons:** Agents can use the **Send** and **Copy** buttons on the Agent AI UI to directly send and copy data from the Agent AI widget to the customer.  
+<img src="../images/send-copy-button.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
 
-* **Conversation Summary / End Of Conversation**: The conversation summary is displayed in the Summary box on the Agent AI widget after the end of the conversation when the conversation is closed/ended by agents or customers. Agents have the flexibility to copy this summary on their notepad or save it. If the **Submit Summary** option is used, the summary is saved inside the interaction table of that conversation.
+* **Conversation Summary / End Of Conversation**: The conversation summary is displayed in the Summary box on the Agent AI widget after the end of the conversation when the conversation is closed/ended by agents or customers. Agents have the flexibility to copy this summary on their notepad or save it. If the **Submit Summary** option is used, the summary is saved inside the interaction table of that conversation.  
+<img src="../images/submit-summary.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
 
-   <img src="../images/submit-summary.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
-
-* **Conversation logs:** Agents or supervisors can check the chat transcript along with the Agent AI summary on the Interaction record page.
-
-   <img src="../images/conversation-logs.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
+* **Conversation logs:** Agents or supervisors can check the chat transcript along with the Agent AI summary on the Interaction record page.  
+<img src="../images/conversation-logs.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
