@@ -99,6 +99,10 @@ To receive call status notifications using the `notifyUrl` property on the dial-
 
 When this property is set, Kore.ai Voice Gateway sends an HTTP POST request to the specified URL.
 
+!!! Note
+
+    Only the final call status is sent, indicating whether the call is completed, failed, busy, no-answer, or temporarily unavailable. Intermediate statuses are not shared.
+
 ## Sample Response
 
 ```
