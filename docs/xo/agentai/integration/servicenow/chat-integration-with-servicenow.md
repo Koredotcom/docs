@@ -96,7 +96,7 @@ This section details the steps to set up the Agent AI app configuration.
     <img src="../images/kore-config-customtable.png" alt="kore-config-customtable" title="kore-config-customtable" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New.**
-4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (Refer to [Prerequisite](#prerequisites){:target=”_blank”}, and **Table Key** (give the Table Key as **koreai**).
+4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (Refer to [Prerequisite](#prerequisites), and **Table Key** (give the Table Key as **koreai**).
 
     !!! note
 
