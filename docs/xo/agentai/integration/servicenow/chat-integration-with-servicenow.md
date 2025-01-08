@@ -15,7 +15,7 @@ This section outlines the essential components, credentials, and permissions req
         * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
 * Roles and Permissions:
     * ServiceNow: Admin Role
-    * Kore XO Platform: Admin Role (required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}).
+    * Kore XO Platform (Optional): Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
 
 ## Interaction between ServiceNow and Kore.ai Agent AI
 
@@ -104,7 +104,7 @@ This section details the steps to set up the Agent AI app configuration.
 
         * For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
 
-        * For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. 
+        * For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. (For XO v11, Go to Flows and Channels > Channels > Digital > Web/Mobile Client > JWT App Details. Refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/)).
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
 
