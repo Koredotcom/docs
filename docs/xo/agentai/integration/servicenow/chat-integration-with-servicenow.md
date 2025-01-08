@@ -15,7 +15,7 @@ This section outlines the essential components, credentials, and permissions req
         * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
 * Roles and Permissions:
     * **ServiceNow**: Admin Role
-    * **Kore XO Platform**: Admin Role (Only required for agent transfers from Kore XO Platform to ServiceNow. For more information, see [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}).
+    * **Kore XO Platform**: Admin Role (Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}).
 
 ## Interaction between ServiceNow and Kore.ai Agent AI
 
@@ -96,12 +96,14 @@ This section details the steps to set up the Agent AI app configuration.
     <img src="../images/kore-config-customtable.png" alt="kore-config-customtable" title="kore-config-customtable" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New.**
-4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (see [Prerequisite](#prerequisites), and **Table Key** (give the Table Key as **koreai**).
+4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (Refer to [Prerequisite](#prerequisites), and **Table Key** (give the Table Key as **koreai**).
 
     !!! note
 
         a. The Client Secret & Token fields are masked for security reasons.
+
         b.  For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
+        
         c. For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. 
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
@@ -141,7 +143,7 @@ This section details the steps to set up the Agent AI app configuration.
 
 ### Step 4: Kore XO Configuration (Optional)
 
-This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the ServiceNow Agent workspace. For more information, see the [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities){:target=”_blank”}.
+This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the ServiceNow Agent workspace. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities){:target=”_blank”}.
 
 For passing the language code dynamically from Kore XO to the Agent AI widget inside ServiceNow, add the following javascript code inside a script node of Kore XO dialog task before the Agent Transfer node of ServiceNow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
 
