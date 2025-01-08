@@ -14,8 +14,8 @@ This section outlines the essential components, credentials, and permissions req
         * Enabled Web/Mobile channel
         * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
 * Roles and Permissions:
-    * **ServiceNow**: Admin Role
-    * **Kore XO Platform**: Admin Role (Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}).
+    * ServiceNow: Admin Role
+    * Kore XO Platform: Admin Role (required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}).
 
 ## Interaction between ServiceNow and Kore.ai Agent AI
 
@@ -52,7 +52,7 @@ Setting Up Agent AI chat with ServiceNow consists of the following steps:
 3. Under **Related Links**, click **Import Update Set from XML**. 
 <img src="../images/import-update-xml.png" alt="import-update-xml" title="import-update-xml" style="border: 1px solid gray; zoom:80%;">
 
-4. Open the update set **Agent AI by kore.ai** (This is the official name for Kore Agent AI).  
+4. Open the update set **Agent AI by kore.ai** (this is the official name for Kore Agent AI).  
 <img src="../images/open-agent-ai-by-kore-ai.png" alt="open-agent-ai" title="open-agent-ai" style="border: 1px solid gray; zoom:80%;">
 
 #### Preview Update Set
@@ -100,11 +100,11 @@ This section details the steps to set up the Agent AI app configuration.
 
     !!! note
 
-        a. The Client Secret & Token fields are masked for security reasons.
+        * The Client Secret & Token fields are masked for security reasons.
 
-        b.  For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
-        
-        c. For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. 
+        * For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
+
+        * For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. 
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
 
