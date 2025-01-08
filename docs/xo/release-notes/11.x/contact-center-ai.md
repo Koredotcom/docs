@@ -71,7 +71,7 @@ Key benefits
 * Better resource utilization.
 * Clearer agent availability status.
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#key-changes-with-blended-mode)
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#blended-agents)
 
 #### Real-time LLM Streaming for Enhanced Voice Interactions
 
