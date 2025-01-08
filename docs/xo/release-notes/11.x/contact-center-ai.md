@@ -1184,4 +1184,3 @@ The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/dis
 #### Selected Hours Report
 
 The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/selected-hours-report.md)
-
