@@ -7,8 +7,7 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 !!! note
 
     **Base Model**: A base model is a pre-trained model that can be used for general tasks. It’s already trained on a large dataset and can be used as-is or fine-tuned for specific tasks.
-
-    **Adapter Model**: An adapter model is a smaller model that works with a base model to make it more suited for a specific task or dataset. It doesn’t need to retrain the entire base model but adjusts it for new purposes.
+    **Adapter Model**: An adapter model is a smaller model that works with a base model to make it more suited for a specific task or dataset. It doesn’t need to retrain the entire base model but adjusts it for new purposes. To import an adapter model in GALE, it is necessary to specify the related base model."
 
 
 ### Best Practices
@@ -33,11 +32,11 @@ This process enables users to seamlessly integrate local models into GALE, ensur
 
 1. Go to **Models** > **Open-source models** and click the **Import model** button.
 2. On the **Import model** dialog, choose the **Base Model** tab.  
+    <img src="../images/base_model.png" alt="Base Model" title="Base Model" style="border: 1px solid gray; zoom:80%;">
+
+3. **Upload the model file**: In the **Import base model file** section, drag and drop the model file into the designated upload area, or use the **Upload file** link to browse and select the file from your local machine. Ensure the file extension matches the supported model formats.  
 Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
 
-<img src="../images/base_model.png" alt="Base Model" title="Base Model" style="border: 1px solid gray; zoom:80%;">
-
-3. **Upload the model file**: In the **Import base model file** section, drag and drop the model file into the designated upload area, or use the **Upload file** link to browse and select the file from your local machine. Ensure the file extension matches the supported model formats.
 4. **File Validation**: The system validates the file’s extension.
     * If the file is valid, the file name appears and the **Import** button is enabled.
     * If the file fails validation, an error message appears detailing why the file is invalid. You must correct the file before proceeding.
@@ -62,13 +61,12 @@ Click ‘Instructions’ to view the detailed guidelines for the supported forma
 
 1. Go to **Models** > **Open-source models** and click the **Import model** button.
 2. On the **Import model** dialog, choose the **Adapter Model** tab.  
+    <img src="../images/adapter_model.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">
+
+3. **Select a base model**: Browse through the list of available base models and choose one that supports the adapter model you're importing. Once selected, the base model is associated with the adapter model.  
 Click ‘Instructions’ to view the detailed guidelines for the supported format and the necessary files to include in the zip folder for both base and adapter models.
 
-<img src="../images/adapter_model.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">
-
-3. **Select a base model**: Browse through the list of available base models and choose one that supports the adapter model you're importing. Once selected, the base model is associated with the adapter model.
-
-<img src="../images/adapter_model_details.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/adapter_model_details.png" alt="Adapter Model" title="Adapter Model" style="border: 1px solid gray; zoom:80%;">  
 
 4. **Upload the model file**: In the **Import base model file** section, drag and drop the model file into the designated upload area, or use the **Upload file** link to browse and select the file from your local machine. Ensure the file extension matches the supported model formats.
 5. **File Validation**: The system validates the file’s extension.

@@ -1,24 +1,18 @@
 # Agent Node Version 1
 
-!!! note
-
-    Agent Node is formally known as GenAI Node.
 
 The **Agent Node** lets you leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. You can define the entities you would like to collect and also the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
 
-**Watch a Short Video on Agent Node (Previously AI-Assisted Dialog Node)**
-
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/818451050?h=46004417e1" width="960" height="540" frameborder="0"    allowfullscreen></iframe>
-
 
 ## Why a Agent Node?
+
 
 There are two key scenarios when an Agent node might be beneficial:
 
 1. NLP might not pick up co-referencing and entity correction during a conversation. For example, in a flight booking task, someone might ask to book two window seats, then change their mind and ask to modify one of the `seat types` from the `window` to the `middle`. In this scenario, the VA must correct the already collected entity `(seat type)` and perform entity co-referencing to modify from `window` to `middle`.
 2. Complex flows like the above increase dialog task complexity, requiring multiple paths and nodes. Even then, it is humanly impossible to predict all such scenarios. Scripting all these possibilities might also result in a sub-par end-user experience.
 
-Leveraging OpenAI’s generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
+Leveraging generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
 
 
 ## Node Behavior

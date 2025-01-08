@@ -44,6 +44,7 @@ Steps to add a contact list from the local drive:
 
         Phone numbers in the CSV should be in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
 
+
 4. Select the **Mapping Fields** and click **Save**.  
     <img src="../images/mapping-fields-contact-list.png" alt="Mapping Fields" title="Mapping Fields" style="border: 1px solid gray; zoom:80%;">
 
@@ -119,9 +120,11 @@ Steps to pull  the contacts using API Integration:
 5. Select the **Data Sync Interval** from the dropdown. Sync intervals ensure that updates in the database are reflected in the contact lists without a manual refresh. You can select an interval of up to 24 hours.  
     <img src="../images/syncinterval.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
+
 6. Select the **Data Sync Mode**. You can choose from the following options:
     1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they will not be contacted again.
     2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again. 
+
         <img src="../images/apisyncmodenew.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 7. Configure the authorization profile for the request.  
@@ -156,6 +159,7 @@ Steps to pull  the contacts using API Integration:
 
 12. Click **Save**. The contact list is fetched from the third-party database.
 
+
 ### Edit a Contact List
 
 #### Local Drive
@@ -172,6 +176,7 @@ Steps to edit a contact list from the local drive:
 
         You can only append a contact list; you cannot edit an existing contact list.
 
+
 #### API Integration
 
 Steps to  edit an API-integrated contact list:
@@ -187,6 +192,7 @@ Steps to  edit an API-integrated contact list:
 
 4. Make changes to the mapping fields (if required) and click **Save**.  
     <img src="../images/editapimapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+
 
 ### Delete a Contact List
 
@@ -216,7 +222,22 @@ Steps to delete an API-integrated contact list:
 2. A confirmation message is displayed. Click **Delete**.  
     <img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
+
 The contact list is deleted.
+
+#### API Integration
+
+Steps to delete an API-integrated contact list:
+
+
+1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
+<img src="../images/deleteapilist.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
+
+2. A confirmation message is displayed. Click **Delete**.  
+<img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
+
+The contact list is deleted.
+
 
 ## DNC Lists
 
@@ -270,6 +291,7 @@ Steps to edit a DNC list:
 Steps to delete a DNC list:
 
 1. Click the **Edit** icon beside the DNC list name and click the **Delete** icon at the bottom left corner of the edit window.  
+
     <img src="../images/delete-dnc-list.png" alt="Delete DNC List" title="Delete DNC List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note

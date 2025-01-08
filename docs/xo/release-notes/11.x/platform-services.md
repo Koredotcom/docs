@@ -2,6 +2,90 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+
+
+## v11.9.0 January 05, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### LLM & Generative AI
+
+#### Enhanced Usage Logs for Guardrails
+
+The Usage Logs now provide more comprehensive insights into guardrails performance and token consumption. These insights enable platform users to better track and analyze the effectiveness of their configured guardrails, identify patterns in breaches, optimize costs, and streamline the debugging process.
+
+Key enhancements
+
+* Failed guardrail tracking with identifiers and failure explanations.
+* Analytics table for configured guardrails, outcomes, and risk scores
+* Input and output token count monitoring.
+* Expanded export columns, including guardrail risk scores and token counts.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/genai-analytics/llm-usage-logs.md)
+
+
+#### Optimized Conversation Context Management
+
+The platform has introduced a Redis-based caching solution to significantly improve conversation context management. This enhancement optimizes the storage and retrieval of conversation history for LLM interactions, reducing latency and resource usage while maintaining context integrity.
+
+
+### Admin Console
+
+#### Enhanced Get Bots API
+The Get Bots API now includes crucial authentication and security metadata for each bot, enabling better management and auditing.
+
+Key updates
+
+* Added fields to bot objects in API response: clientId, clientSecret, jtiClaimEnforced, and jweEncryptionEnforced.
+* No changes to endpoint structure (backward compatible).
+
+Key benefits
+
+* Comprehensive bot details, including auth credentials.
+* Visibility into per-bot security configurations.
+* Streamlined management and compliance workflows.
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/get-bots.md)
+
+### App Settings
+
+
+#### Auto-Save for App Profile Settings
+The platform now ensures consistent Auto-Save behavior across all configurations in the App Profile menu of the App Settings page. This update aligns the App Settings page with other areas of the platform, such as the Property Panel and NLP Training Configurations, offering users a seamless and intuitive experience.
+
+Key updates
+
+* Auto-save on blur for App Name, App Description, and other settings.
+* Toaster messages to confirm the successful saving of changes.
+* Special handling for renaming published apps.
+* Removal of the Save button at the bottom of the page.
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md)
+
+
+### App Language
+
+#### Japanese and Korean Language Support in the App (Beta)
+The platform has enabled Japanese and Korean language selection for the App, allowing platform users to access the app in their native language.
+
+Key updates
+
+* Language selection dropdown added to Profile, Login, and Signup pages.
+* The "BETA" tag indicates the feature's beta status.
+* Dynamic translation of UI elements and content based on selected language.
+
+Key benefits
+
+* Improved accessibility for Japanese and Korean users.
+* Consistent language selection across the app.
+* Leverages existing backend localization for seamless translation.
+
+[Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
+
+<hr>
+
 ## v11.8.1 December 19, 2024
 
 <u>Patch Release</u>
