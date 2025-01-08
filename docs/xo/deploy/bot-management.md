@@ -63,7 +63,7 @@ To import a Virtual Assistant, follow these steps:
         * Deletes existing models and prompts in the target app.
         * Overwrites with models, prompts, and GenAI features from the import file.
         * Retains model configurations if a model exists in both source and target
-        * Replaces all feature mappings, custom instructions, and guardrails.
+        * Replaces all feature mappings, custom instructions, safeguards, and DialogGPT.
         * Preserve existing integrations.
         * Import XO-GPT integration as-is.
         * Enable imported features with warnings.
@@ -96,7 +96,8 @@ To import a Virtual Assistant, follow these steps:
         * Integrations
         * Prompts and Requests Library
         * Feature Mappings
-        * Guardrails 
+        * Safeguards
+        * DialogGPT (Conversation Types and Configurations) 
         
     * **Custom Dashboards**: This is useful in case you have created custom dashboards under the Analyze section and want to import them to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
@@ -202,7 +203,7 @@ To import a VA while creating it, follow these steps:
    <br>
     – Keeps existing prompts, only adds new ones.
     <br>
-    – Replaces all feature mappings, custom instructions, and guardrails.
+    – Replaces all feature mappings, custom instructions, safeguards, and DailogGPT.
     <br>
     – Preserve existing integrations.
     <br>
@@ -223,7 +224,7 @@ You can export a VA’s definition and configuration using the Export option.
 
     **Forward Compatibility is NOT SUPPORTED**. That is, Export from a lower (not an end-of-life) version to a higher supported version is allowed for all the virtual assistants. However, a VA export from a higher environment and import to an environment running a lower version or lower patch is not supported.
 
-When you export a assistant, it downloads a zipped file with the following parameters:
+When you export an assistant, it downloads a zipped file with the following parameters:
 
 * **appDefinition.json**: Includes metadata, tasks, VA and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – VA settings, variables, IVR settings- while exporting the assistant.
 * **config.json**: Includes VA settings, VA variables, and IVR settings.
@@ -496,7 +497,9 @@ When you export a VA, the following components get exported, depending on your L
 
 <li>Feature Mappings
 
-<li>Guardrails
+<li>Safeguards
+
+<li>DialogGPT (Conversation Types and Configurations)
 
 </li>
 </ul>

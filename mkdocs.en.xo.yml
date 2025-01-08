@@ -187,9 +187,10 @@ nav:
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
-          - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
-          - GenAI Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
-          - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
+          - Agent Node:
+            - Agent Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
+            - Agent Node v1: automation/use-cases/dialogs/node-types/genai-node.md
+          - Prompt Node: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
           - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
@@ -330,7 +331,10 @@ nav:
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
-        - Extraction Strategy: searchai/content-extraction/extraction.md
+        - Extraction:
+            - ETL Tool: searchai/content-extraction/etl.md
+            - Content Extraction: searchai/content-extraction/extraction.md
+            - Content Transformation: searchai/content-extraction/transformation.md
         - Content Browser: searchai/chunk-browser.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -345,7 +349,7 @@ nav:
         - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
-        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md 
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
@@ -364,6 +368,7 @@ nav:
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
         - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
+        - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
@@ -413,8 +418,7 @@ nav:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
-        - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
-        - Agent Scorecards: quality-management/configure/agent-scorecards.md
+          - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: quality-management/configure/settings.md        
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
@@ -436,6 +440,7 @@ nav:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
       - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
+      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md      
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 

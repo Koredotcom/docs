@@ -165,5 +165,3 @@ Steps to use the filters:
 4. Click **Apply**.
 
 
-
-

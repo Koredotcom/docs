@@ -40,8 +40,8 @@ The Integration of Generative AI and LLM enables the following features:
 * Dynamic Conversations features:
     * **Agent Response Rephrasing**: Agents will be able to use the below chosen LLM to rephrase their responses.
     * **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application.
-    * **GenAI Node**: Collect Entities from end-users in a free-flowing conversation using LLM and Generative AI in the background. You can define entities to be collected as well as rules & scenarios.
-    * **GenAI Prompt:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
+    * **Agent Node**: Collect Entities from end-users in a free-flowing conversation using LLM and Generative AI in the background. You can define entities to be collected as well as rules & scenarios.
+    * **Prompt Node:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
     * **Repeat Responses**: Use LLM to reiterate the last bot responses when the Repeat Bot Response event is triggered.
     * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual bot responses.
     * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.

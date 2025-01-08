@@ -71,7 +71,7 @@ You can use one of the following URLs as per your region.
 
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Region Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+    * Prod Region Callback URL: https://idp.kore.com/workflows/callback
 
 ![OAuth Credentials](../images/googledrive/oauth-credentials.png "OAuth Credentials")
 

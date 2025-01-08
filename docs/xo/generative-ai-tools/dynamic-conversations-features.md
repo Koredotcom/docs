@@ -15,7 +15,7 @@ Steps to enable the feature:
 
 
 1. Navigate to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
-<img src="../images/dcf(1).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/dcfnew.png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
    
@@ -33,7 +33,7 @@ Steps to enable the feature:
 Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
 
 
-<img src="../images/genai-product-level-filters-dcf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/dcf-productfilter.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
 		
@@ -66,7 +66,7 @@ Follow these steps:
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Advance Settings** (gear) icon. 
-<img src="../images/dcf(2).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/dcf-as.png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
     
@@ -133,7 +133,7 @@ Follow these steps:
     ![alt_text](images/cpf(6).png  )
 
 6. Click **Save**.
-7. (Only for GenAI Node) Enter the **Exit Scenario Key-Value** and **Virtual Assistance Response Key fields**. Click **Save**.
+7. (Only for Agent Node) Enter the **Exit Scenario Key-Value** and **Virtual Assistance Response Key fields**. Click **Save**.
 The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
     ![alt_text](images/image1-8.png  )
 	
@@ -154,7 +154,7 @@ The following table displays the features and the supported models.
 
 === "Automation AI"
 
-    |Model|GenAI Node|GenAI Prompt|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
+    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
     |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
@@ -201,11 +201,11 @@ Agents will be able to choose the LLM to rephrase their responses in the followi
 
 This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../searchai/answer-configuration.md#answers-generation).
 
-### GenAI Node
+### Agent Node
 
-When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node allows you to collect Entities from end-users in a free-flowing conversation (in the selected English/Non-English Bot Language) using LLM and Generative AI in the background. You can define the entities to be collected as well as rules & scenarios in English and Non-English Bot languages. You can configure node properties just like any other node. You can also use the GenAI Node across Dialog Tasks.
+When enabled, this feature lets you add an Agent Node to Dialog Tasks. This node allows you to collect Entities from end-users in a free-flowing conversation (in the selected English/Non-English Bot Language) using LLM and Generative AI in the background. You can define the entities to be collected as well as rules & scenarios in English and Non-English Bot languages. You can configure node properties just like any other node. You can also use the Agent Node across Dialog Tasks.
 
-<img src="../images/genainode.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genainode.png" alt="Agent Node" title="Agent Node" style="border: 1px solid gray; zoom:70%;"> 
 
 
 
@@ -214,12 +214,12 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 
 **Usage**
 
-When creating or editing a Dialog Task that’s created manually or[ auto-generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
+When creating or editing a Dialog Task that’s created manually or[ auto-generated](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called Agent Node within your nodes list. 
 
 When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../automation/use-cases/dialogs/node-types/genai-node.md).
 
 
-### GenAI Prompt
+### Prompt Node
 
 This feature lets you define custom user prompts based on the conversation context and the response from the LLMs. You can define the subsequent conversation flow by selecting a specific AI model, tweaking its settings, and previewing the response for the prompt.
 
@@ -229,8 +229,8 @@ This feature lets you define custom user prompts based on the conversation conte
 
 
 
-1. When building the Dialog Flow, click the **“Gen AI”**, and select the **GenAI Prompt** node. 
-<img src="../images/genaiprompt.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"> 
+1. When building the Dialog Flow, click the **“Gen AI”**, and select the **Prompt Node** node. 
+<img src="../images/genaiprompt.png" alt="Agent Node" title="Agent Node" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Configuring the Component Properties in the following sections helps set up the node:
     * **General Settings**: Provide **Name** and **Display Name** for the node and write your own OpenAI Prompt.

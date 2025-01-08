@@ -118,7 +118,7 @@ Once the <strong>Target Audience</strong> is defined and saved, you cannot chang
   </tr>
 </table>
 
-To save the App settings, click **Save**. The _&lt; **App Name** > updated successfully_ message is displayed.
+Any edits made to the **App Profile** are auto-saved.
 
 ## Customizing Error Messages
 

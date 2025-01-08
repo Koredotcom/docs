@@ -128,7 +128,7 @@ The following table lists the details included in the window for each component 
    </td>
   </tr>
   <tr>
-   <td><strong>GenAI Node</strong>
+   <td><strong>Agent Node</strong>
    </td>
    <td>
 <ul>
@@ -143,7 +143,7 @@ The following table lists the details included in the window for each component 
    </td>
   </tr>
   <tr>
-   <td><strong>GenAI Prompt</strong>
+   <td><strong>Prompt Node</strong>
    </td>
    <td>
 <ul>

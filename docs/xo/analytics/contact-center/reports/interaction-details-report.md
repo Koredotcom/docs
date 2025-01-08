@@ -141,7 +141,41 @@ The Agent Interaction Details report is generated and is available for download.
    <td>“12:34:56”
    </td>
   </tr>
+  <tr>
+   <td>Assignments (CSV Format)
+   </td>
+   <td>The number of times this conversation has been assigned to any agent, irrespective of the queue.
+   </td>
+   <td>1
+   </td>
+  </tr>
+  <tr>
+   <td>Acceptances (CSV Format)
+   </td>
+   <td>The number of times this conversation has been accepted by any agent, irrespective of the queue.
+   </td>
+   <td>1
+   </td>
+  </tr>
+  <tr>
+   <td>SmartStatus (CSV Format)
+   </td>
+   <td>The Conversation status.
+   </td>
+   <td>Completed (AbandonedWithAgent)
+   </td>
+  </tr>
+  <tr>
+   <td>Reason (CSV Format)
+   </td>
+   <td>The reason for the status.
+   </td>
+   <td>Default Queue: Aug2Uat 2
+   </td>
+  </tr>
 </table>
+
+
 
 #### Related Link
 

@@ -50,7 +50,7 @@ Steps to create an SMS campaign:
             * Editing a custom or system template modifies it for a specific campaign, and does not alter the original template. 
             * When a system or custom template is selected and the user chooses to edit it, the template selection drop-down resets to "None."
 
-    * **Advanced**: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. All the published start flows are displayed irrespective of the number associated with it or not. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.  
+    * **Advanced**: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. All the published start flows are displayed regardless of a number associated with them. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.  
         <img src="../images/advanced-message.png" alt="Advanced Message" title="Advanced Message" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Save** after entering the message.  

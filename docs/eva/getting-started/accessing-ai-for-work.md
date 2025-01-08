@@ -1,5 +1,4 @@
 # Accessing AI for Work
-To sign up for a new account, contact [Kore.ai sales team](https://kore.ai/contact-us/){:target="_blank"}.
 
 As per the [User Enrollments](../user-management/user-enrollments.md) configured by the admin, users can log in to AI for Work here: [https://work.kore.ai/login](https://work.kore.ai/login){:target="_blank"}
 
