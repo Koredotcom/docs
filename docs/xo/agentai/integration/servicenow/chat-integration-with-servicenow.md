@@ -96,7 +96,7 @@ This section details the steps to set up the Agent AI app configuration.
     <img src="../images/kore-config-customtable.png" alt="kore-config-customtable" title="kore-config-customtable" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New.**
-4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (Refer to [Prerequisite](#prerequisites), and **Table Key** (give the Table Key as **koreai**).
+4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (Refer to [Prerequisite](#prerequisites){:target=”_blank”}, and **Table Key** (give the Table Key as **koreai**).
 
     !!! note
 
@@ -104,7 +104,7 @@ This section details the steps to set up the Agent AI app configuration.
 
         * For version 2 (V2) of Agent AI (https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
 
-        * For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).
+        * For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}.
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
 
