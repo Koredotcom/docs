@@ -391,7 +391,6 @@ This feature allows agents to temporarily pause conversations that are awaiting 
 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
-<img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
 
 ## Load-Balanced Agent Routing
 
