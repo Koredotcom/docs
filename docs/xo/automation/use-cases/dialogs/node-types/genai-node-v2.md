@@ -163,9 +163,7 @@ Add a brief description of the use case context to guide the model.
 
 #### Tools
 
-Tools enable language models to perform tasks or retrieve information during conversations. They support integration with external services, scripts, and search functionalities, allowing developers to create interactive workflows that combine LLM capabilities with custom business logic.
-
-Users can add a maximum of 5 tools for each node.
+Tools enable language models to perform tasks or retrieve information during conversations. They support integration with external services, scripts, and search functionalities, allowing developers to create interactive workflows that combine LLM capabilities with custom business logic. Users can add a maximum of 5 tools for each node.
 
 It supports both system and custom integrations.
 
@@ -191,7 +189,7 @@ Users can define the following details for tool configuration:
 
 **Use Case: Hotel Booking Flow Using an Agent Node**
 
-The flow demonstrates how to efficiently use function calling** **tools and execute multiple sequential actions within a single Agent node to streamline hotel booking.
+The flow demonstrates how to efficiently use function calling tools and execute multiple sequential actions within a single Agent node to streamline hotel booking.
 
 **Flow Details**
 
