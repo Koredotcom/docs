@@ -313,6 +313,8 @@ nav:
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
+                - Egnyte: searchai/content-sources/connectors/egnyte.md
+                - Freshservice: searchai/content-sources/connectors/freshservice.md
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
@@ -323,6 +325,7 @@ nav:
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
+                - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md  
@@ -349,7 +352,9 @@ nav:
         - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
-        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md 
+        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+    - FAQs:
+        - Automatic vs Manual Training: searchai/application-training.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
