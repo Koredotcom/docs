@@ -7,65 +7,7 @@ The **Agent Node** lets you leverage the full potential of LLMs and Generative A
     The Agent Node v2 is included in the XO v11.4.1 release. All Agent Nodes and prompts created after this release are version 2.
 
 
-## Why a Agent Node?
 
-There are two key scenarios when a Agent node might be beneficial:
-
-
-
-1. Handling co-referencing and entity correction in conversations: NLP might not pick up co-referencing and entity correction during a conversation. For example, in a flight booking task, someone might ask to book two window seats, then change their mind and ask to modify one of the `seat types` from the `window` to the `middle`. In this scenario, the VA must correct the already collected entity `(seat type)` and perform entity co-referencing to modify from `window` to `middle`.
-2. Managing complex flows without extensive scripting: Complex flows like the above increase dialog task complexity, requiring multiple paths and nodes. Even then, it is humanly impossible to predict all such scenarios. Scripting all these possibilities might also result in a sub-par end-user experience.
-
-Leveraging a generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
-
-
-## What’s New in Version 2 of the Agent Node
-
-**Node Level Enhancements**
-
-* Conversation History Length: Specify the number of recent messages (both user and VA) to send to the language model as context.
-
-**Custom Prompt Enhancements**
-
-* Required Entities: A new dynamic variable holding a comma-separated list of entity names to be captured by the LLM. This allows platform users to specify which entities need to be collected or included in the output. 
-* Collected Entities: An object containing the entities and their values collected by the language model.
-* Custom Prompt Creation using JavaScript: The Platform introduces a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.
-
-    !!! note
-
-        The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
-
-Sample JavaScript
-
-```
-const jsonRepresentation = {
-  messages: [
-    {
-      role: "system",
-      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {"bot": "prompt to collect unfulfilled entities", "conv_status": "ongoing" or "ended", "entities": [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as 'ended' when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as 'ongoing'.`
-    },
-    ...Conversation_History,
-    {
-        "role": "user",
-        "content": `${User_Input}`
-    }
-  ],
-  model: "gpt-4",
-  temperature: 0.73,
-  max_tokens: 300,
-  top_p: 1,
-  frequency_penalty: 0,
-  presence_penalty: 0
-};
-
-context.payloadFields = jsonRepresentation;
-```
-
-**Support for Variables**
-
-* Support for Dynamic Variables: Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
-
-[Learn more](../../../../app-settings/variables/using-bot-variables.md).
 
 
 ## Node Behavior
@@ -100,7 +42,7 @@ By default, the feature/node is disabled. To enable the feature, [Dynamic Conver
 
 ### Add to a Task
 
-Steps to add a Agent node to a Dialog Task:
+Steps to add an Agent node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
 
@@ -163,6 +105,52 @@ Most entity types are supported. Here are the exceptions: custom, composite, lis
 
 Add a brief description of the use case context to guide the model.
 
+#### Tools
+
+Tools enable language models to perform tasks or retrieve information during conversations. They support integration with external services, scripts, and search functionalities, allowing developers to create interactive workflows that combine LLM capabilities with custom business logic. Users can add a maximum of 5 tools for each node.
+
+It supports both system and custom integrations.
+
+Click **+ Add** to open the **New Tool** creation window.  
+
+<img src="../images/genai-node(18).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;">
+
+Users can define the following details for tool configuration:
+
+* **Name**: Name of the tool.
+* **Description**: Capabilities of the tool.
+* **Parameters**: Define the parameters needed for tool execution, specifying whether each parameter is mandatory or optional. Users can define 10 parameters for each tool.
+    * **Name**: Parameter Name
+    * **Description**: Description of the parameter
+    * **Type**: Specify the meta type (String, Boolean, Integer) from the dropdown with "String" as the default. 
+    * **Actions**: Select the series of new or existing nodes to execute sequentially. Users can select 5 actions for each tool.
+    * **Node Type**: Choose the Node type (Service Node, Script Node, Search AI Node) from the dropdown.
+    * **Node Name**: Choose a New or Existing node from the dropdown.
+* **Response Path**: Select the key that identifies the output required by the XO Platform from the service node's response.
+* **Choose transition**: Define the behavior after tool execution:
+* **Default**: Send the response back to the LLM.
+* **Exit Node**: Follow the transitions defined for the Agent Node.
+
+**Use Case: Hotel Booking Flow Using an Agent Node**
+
+The flow demonstrates how to efficiently use function calling tools and execute multiple sequential actions within a single Agent node to streamline hotel booking.
+
+**Flow Details**
+
+Step 1: The **Agent Node** collects user inputs.
+
+Step 2: **Service Node** uses the collected inputs to book a hotel.
+
+Step 3: Extract the **booker's name** from the previous response. Another **Service Node** uses the extracted name to retrieve the booker’s age.
+
+Step 4. Save the booker’s name and age in a **Script Node** for further processing or logging.
+
+Step 5: Pass the stored data (name and age) as input to the next **Service node**.
+
+Step 6: The final output is then provided in the **Message Node**.  
+
+<img src="../images/genai-node(19).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;">
+
 #### Rules
 
 Add the business rules that the collected entities should respect. In the rules section, click **+ Add**, then enter a short and to-the-point sentence, such as:
@@ -186,14 +174,11 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
 
 <img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;">
 
-
-
 #### Post-Processor Script
 
 !!! note
 
     The post-processor script does not apply to the custom prompt.
-
 
 This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
@@ -289,13 +274,47 @@ This node captures entities in the following structure:
 ```
 
 
-## Add Custom Prompt for Agent Node
+## Custom Prompt for Agent Node
 
+
+The Platform lets you create a custom prompt tailored to your use case, for both system and custom integrations. This also supporrs a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.
+
+    !!! note
+
+        The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
+
+Sample JavaScript
+
+```
+const jsonRepresentation = {
+  messages: [
+    {
+      role: "system",
+      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {"bot": "prompt to collect unfulfilled entities", "conv_status": "ongoing" or "ended", "entities": [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as 'ended' when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as 'ongoing'.`
+    },
+    ...Conversation_History,
+    {
+        "role": "user",
+        "content": `${User_Input}`
+    }
+  ],
+  model: "gpt-4",
+  temperature: 0.73,
+  max_tokens: 300,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0
+};
+
+context.payloadFields = jsonRepresentation;
+```
+
+### Add Custom Prompt
 This step involves adding a custom prompt to the Agent node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
 
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
-To add a Agent node prompt using JavaScript, follow the steps:
+To add an Agent node prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library**.
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
@@ -356,6 +375,10 @@ To add a Agent node prompt using JavaScript, follow the steps:
 
 
 ## Dynamic Variables
+
+The Dynamic Variables like Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
+
+[Learn more](../../../../app-settings/variables/using-bot-variables.md).
 
 <table>
   <tr>
