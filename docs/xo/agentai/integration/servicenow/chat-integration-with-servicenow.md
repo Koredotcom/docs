@@ -30,8 +30,8 @@ Setting Up Agent AI chat with ServiceNow consists of the following steps:
 1. Set Up Kore Agent AI in ServiceNow Sandbox 
     * [Download from the ServiceNow Store (recommended)](#step-1-download-from-the-servicenow-store-recommended), 
     or
-    * [Install Using an Update Set](#install-through-an-update-set)
-2. [Set Up Agent AI App Configuration](#step-2-set-up-agent-ai-app-configuration)
+    * [Install Using an Update Set](#install-using-an-update-set)
+2. [Set Up Agent AI App Configuration](#step-2-set-up-agent-ai-application-configuration)
 3. [Test the Configuration](#step-3-test-the-integration)
 4. [Kore XO Configuration (Optional)](#step-4-kore-xo-configuration-optional)
 5. [Using the Agent AI widget](#step-5-using-the-agent-ai-widget)
@@ -45,7 +45,7 @@ Setting Up Agent AI chat with ServiceNow consists of the following steps:
 
 **or**
 
-### Install through an Update Set
+### Install Using an Update Set
 
 1. Ask the Kore representative for the relevant Update Set XML file.
 2. Search in **All** > **filter** navigator as “Retrieved Update Sets,” which is under “System Update Sets”, and open it.
@@ -114,11 +114,11 @@ This section details the steps to set up the Agent AI app configuration.
 
 #### V2-V3 Migration
 
-* For version 2 (v2) of Agent AI "https://agentassist.kore.ai" (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL.  
-Sample v2 URL: https://\<domain-name>.kore.ai
+* For version 2 (v2) of Agent AI "https://agentassist.kore.ai" (or the domain where the Agent AI is hosted), you should add this to the Agent AI URL.  
+Sample v2 URL: https://\<domain-name\>.kore.ai
 
 * For version 3 (v3), you must copy the Agent AI widget URL from the Agent AI or XO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).  
-Sample v3 URL: https://\<domain-name>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+Sample v3 URL: https://\<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
 
 ### Step 3: Test the Integration
 
