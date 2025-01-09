@@ -1,43 +1,58 @@
-# Agent Node Version 2 Beta
+# Agent Node Version 2 Draft
 
-The **Agent Node** lets you leverage the full potential of LLMs and Generative AI to quickly build conversations that involve complex flows and provide human-like experiences. You can define the entities you would like to collect and the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
+The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to create sophisticated and versatile bots capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
-!!! note
+## Key Features
 
-    The Agent Node v2 is included in the XO v11.4.1 release. All Agent Nodes and prompts created after this release are version 2.
+* **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making bot interactions more natural and user-friendly.
+* **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
+* **Multilingual Support**: The Agent Node supports both English and non-English bot languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
+* **Configuration Flexibility**: The Agent Node can be configured like any other node in the XO Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 
+### Enhanced Capabilities with Tool Calling
 
-## Node Behavior
+Tool calling is the ability to identify when external functions are needed, select appropriate ones, invoke them with correct parameters, process their outputs, and incorporate the results into responses.
 
+* **Interaction with External Systems**: The introduction of tool calling expands the Agent Node's capabilities beyond text generation. It enables interaction with external systems and databases, facilitating real-time data retrieval, calculations, and system-specific operations. This integration allows for more dynamic and data-driven conversational experiences.
+* **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. Based on user input and ongoing conversation, the language model can dynamically decide whether to generate text or call a tool. The dynamic prompt adaptation ensures that the virtual assistant provides the most appropriate response or action at each step of the interaction.
 
-### Runtime
+## Agent Node Runtime Behavior
 
-You can work with this node like any other node within Dialog Tasks and invoke it within multiple tasks. During runtime, the node behaves as follows:
+During runtime, the Agent Node efficiently orchestrates interactions between the node, language model, and XO Platform to enable seamless user experiences and integration with external systems. You can work with this node like any other node within Dialog Tasks and invoke it within multiple tasks. 
 
-1. Entities Collection:
-    1. On reaching the Agent Node, the platform invokes the Generative AI model to understand the user input.
-    2. The platform uses the entities and business rules defined as part of the node configurations to understand the user input and identify the required entity values.
-    3. The responses required to prompt/inform the user are automatically generated based on the conversation context.
-    4. The platform drives the conversation until all the defined entities are captured.
-2. Contextual Intents:
-    5. Contextual intents (Dialog or FAQs) recognized from the user input continue to be honored as per the Interruption Settings defined in the bot definition.
-    6. Post completion of the contextual intents, the flows can return to the Agent Node.
-3. Exit Conditions:
-    7. The platform exits from the Agent Node when any of the defined exit conditions are met.
-    8. These conditions provide you the ability to define scenarios that need a different path in the conversation, for example, handing off to a human agent.
-4. The platform can also exit the Agent Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
-5. The platform stores the entity values in the context object, and this information can be used to define the transitions or any other part of the bot configuration.
+During runtime, the node behaves as follows:
 
-#### Output
+1. **Input Processing**: When the agent node receives user input, it processes it first through a Pre-Processor script. This script runs only once before the orchestration starts between the node and the platform. This script can perform tasks like formatting the input or extracting relevant information before sending the input to the language model.
+2. **Entities Collection**:
+    * The platform invokes the Generative AI model to understand the user input.
+    * The platform uses the entities and business rules defined in the node configurations to understand user input and identify the required entity values.
+    * The responses required to prompt/inform the user are automatically generated based on the conversation context.
+    * The platform drives the conversation until all the defined entities are captured.
+3. **Contextual Intents**
+    * Contextual intents (Dialog or FAQs) recognized from user input continue to be honored according to the Interruption Settings defined in the bot definition.
+    * Post completion of the contextual intents, the flows can return to the Agent Node.
+4. **Language Model Decision**: The language model analyzes the processed user input and decides whether to respond with generated text or call a tool:
+    * **Text Response**: If the language model determines that a text response is appropriate, it generates the response and sends it to the XO Platform. The platform then renders this response to the user.
+    * **Tool Call Execution**: When the language model decides to call a tool, it sends a tool request to the XO Platform. The platform identifies the action linked to the called tool, which could be a script, service, or Search AI node. The XO Platform executes this action and retrieves the output.
+5. **Output Appending**: Depending on the selected transition, the XO Platform may exit the node or append the output to the request prompt for enriched context and send the updated prompt back to the model for further processing.
+6. **Post-Processing**: Before presenting the final output, the XO Platform passes the response from the language model through a Post-Processor script. This script runs every time a response is received. It allows further manipulation of the response, such as formatting the output or integrating it with other elements of the conversation.
+7. **Exit Conditions**
+    * The platform exits from the Agent Node when any of the defined exit conditions are met.
+    * These conditions allow you to define scenarios that require a different path in the conversation, such as handing off to a human agent.
+    * The platform can also exit the Agent Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
+8. **Iterative Process**: This process repeats for each conversation volley, ensuring the Agent Node dynamically adapts to user input and leverages the power of language models and external systems through tool calls.
 
-The output generated by this node is fully usable throughout the dialog flow, even once the node is no longer in use. Output is maintained in a structured .json within the [Context Object](../../../intelligence/context-object.md), so you can access and use the output throughout the rest of your flow.
+### Entity Values and Outputs
 
-### Enable
+* **Entity Values**: The platform stores the entity values in the [context object](../../../intelligence/context-object.md), and this information can be used to define the transitions or any other part of the bot configuration.
+* **Conversation History and Tool Output**: The `LLM_Conversation_History` object stores the conversation history, tool history, and transactions between the platform and the model during a tool call. Additionally, the `Tool_Output` variable stores the output from the executed tools.
+* **Node’s Output**: The Agent Node's output is stored as structured JSON in the [context object](../../../intelligence/context-object.md), making it accessible and usable throughout the entire dialog flow, even after the node is no longer active.
+
+## Enable
 
 By default, the feature/node is disabled. To enable the feature, [Dynamic Conversations Features](../../../../generative-ai-tools/dynamic-conversations-features.md).
 
-
-### Add to a Task
+## Add to a Task
 
 Steps to add an Agent node to a Dialog Task:
 
@@ -104,32 +119,32 @@ Add a brief description of the use case context to guide the model.
 
 #### Tools
 
-Tools enable language models to perform specific tasks or retrieve information when called. Each tool is associated with a specific action using a Script node, Service node, or Search AI node. When a tool is called, the platform executes its linked action. Users can add a maximum of 5 tools for each node.
+Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.
 
 !!!note
 
-    Tool calling is only supported in custom prompts without streaming.
+    Tool calling is supported only with custom prompts (Javascript) without streaming.
 
 Click **+ Add** to open the **New Tool** creation window.  
 
 <img src="../images/genai-node(18).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;">
 
-Users can define the following details for tool configuration:
+Define the following details for tool configuration:
 
-* **Name**: A unique identifier for the tool. It is one of the important components when defining the tool since it helps the language model to identify which tool to call in the conversation.
-* **Description**: An explanation of what the tool does. It helps the language model to understand which tool to call in the conversation.
-* **Parameters**: Describe the input parameters needed for the tool’s execution, specifying whether each parameter is mandatory or optional. Users can define up to 10 parameters for each tool. 
-    * **Name**: Parameter Name.
-    * **Description**: Description of the parameter.
-    * **Type**: Select the parameter type (String, Boolean, or Integer) from the dropdown. . 
-* **Actions**: Select the series of new or existing nodes to execute sequentially. Users can select 5 actions for each tool.
-    * **Node Type**: Choose the Node type (Service Node, Script Node, Search AI Node) from the dropdown that should be executed by the platform when the language model requests a tool call with the required parameters.
-    * **Node Name**: Choose a New or Existing node from the dropdown. Users can chain a set of the above mentioned action nodes for the same tool.
-* **Response Path**: Choose the specific key or path that defines the output required by the Platform. The output from one node serves as the input for another node. Action nodes is required to be added as Response Path for Platform to understand where to look for the actual response in the payload.
+* **Name**: Add a meaningful name that helps the language model identify the tool to call during the conversation. 
+* **Description**: Provide a detailed explanation of what the tool does to help the language model understand when to call it.
+* **Parameters**:Specify the inputs the tool needs to collect from the user. Define up to 10 parameters for each tool and mark them as mandatory or optional.  
+    * **Name**: Enter the parameter name.
+    * **Description**: Enter an appropriate description of the parameter.
+    * **Type**: Select the parameter type (String, Boolean, or Integer). 
+* **Actions**: These are the nodes that the XO Platform executes when the language model requests a tool call with the required parameters. Users can add up to 5 actions for each tool. These actions are chained and executed sequentially, where the output of one action becomes the input for the next.
+    * **Node Type**: Select the node type (Service Node, Script Node, Search AI Node) from the dropdown.
+    * **Node Name**: Select a new or existing node from the dropdown.
+* **Response Path**: The final output from the action nodes is required to be added as a Response Path for the Platform to understand where to look for the actual response in the payload. Choose the specific key or path that defines the output.
 * **Choose transition**: Define the behavior after tool execution:
-    * **Default**: The response from the specific tool called will go back to the language model. It is mandatory to have a response path in this case.
-    * **Exit Node**:  The conversation ends and the flow exits the Agent Node.
-    * **Jump to a Node** (Coming soon): When a specific tool is called for which this transition is defined, the flow will jump to that particular node in the canvas.
+    * **Default**: Send the response back to the LLM. It is mandatory to have a Response Path in this case.
+    * **Exit Node**: Follow the transitions defined for the Agent Node.
+    * **Jump to a Node** (Coming soon): You can jump to any node defined in the dialog.
 
 #### Rules
 
