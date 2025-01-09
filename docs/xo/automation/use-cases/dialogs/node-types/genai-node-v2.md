@@ -122,7 +122,7 @@ Users can define the following details for tool configuration:
     * **Name**: Parameter Name
     * **Description**: Description of the parameter
     * **Type**: Specify the meta type (String, Boolean, Integer) from the dropdown with "String" as the default. 
-    * **Actions**: Select the series of new or existing nodes to execute sequentially. Users can select 5 actions for each tool.
+* **Actions**: Select the series of new or existing nodes to execute sequentially. Users can select 5 actions for each tool.
     * **Node Type**: Choose the Node type (Service Node, Script Node, Search AI Node) from the dropdown that should be executed by the platform when the language model requests a tool call with the required parameters.
     * **Node Name**: Choose a New or Existing node from the dropdown. Users can chain a set of the above mentioned action nodes for the same tool.
 * **Response Path**: Choose the specific key or path that defines the output required by the XO Platform. The output from one node serves as the input for another node. Action nodes is required to be added as Response Path for Platform to understand where to look for the actual response in the payload.
