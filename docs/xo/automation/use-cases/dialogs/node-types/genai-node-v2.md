@@ -276,7 +276,7 @@ The Platform lets you create a custom prompt tailored to your use case, for both
 
 !!! note
 
-        The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
+     The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
 
 Sample JavaScript
 
