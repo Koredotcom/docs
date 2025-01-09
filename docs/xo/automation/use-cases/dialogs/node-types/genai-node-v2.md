@@ -274,7 +274,7 @@ This node captures entities in the following structure:
 
 The Platform lets you create a custom prompt tailored to your use case, for both system and custom integrations. This also supporrs a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.
 
-    !!! note
+!!! note
 
         The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
 
