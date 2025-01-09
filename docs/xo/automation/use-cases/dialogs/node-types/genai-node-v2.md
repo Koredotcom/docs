@@ -1,13 +1,10 @@
-# Agent Node Version 2
+# Agent Node Version 2 Beta
 
 The **Agent Node** lets you leverage the full potential of LLMs and Generative AI to quickly build conversations that involve complex flows and provide human-like experiences. You can define the entities you would like to collect and the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
 
 !!! note
 
     The Agent Node v2 is included in the XO v11.4.1 release. All Agent Nodes and prompts created after this release are version 2.
-
-
-
 
 
 ## Node Behavior
@@ -107,9 +104,11 @@ Add a brief description of the use case context to guide the model.
 
 #### Tools
 
-Tools enable language models to perform tasks or retrieve information during conversations. They support integration with external services, scripts, and search functionalities, allowing developers to create interactive workflows that combine LLM capabilities with custom business logic. Users can add a maximum of 5 tools for each node.
+Tools enable language models to perform specific tasks or retrieve information when called. Each tool is associated with a specific action using a Script node, Service node, or Search AI node. When a tool is called, the platform executes its linked action. Users can add a maximum of 5 tools for each node.
 
-It supports both system and custom integrations.
+!!!note
+
+    Tool calling is only supported in custom prompts without streaming.
 
 Click **+ Add** to open the **New Tool** creation window.  
 
@@ -117,39 +116,20 @@ Click **+ Add** to open the **New Tool** creation window.
 
 Users can define the following details for tool configuration:
 
-* **Name**: Name of the tool.
-* **Description**: Capabilities of the tool.
-* **Parameters**: Define the parameters needed for tool execution, specifying whether each parameter is mandatory or optional. Users can define 10 parameters for each tool.
+* **Name**: A unique identifier for the tool. It is one of the important components when defining the tool since it helps the language model to identify which tool to call in the conversation.
+* **Description**: An explanation of what the tool does. It helps the language model to understand what tool to call in the conversation.
+* **Parameters**: Describe the input parameters needed for the tool’s execution, specifying whether each parameter is mandatory or optional. Users can define up to 10 parameters for each tool. 
     * **Name**: Parameter Name
     * **Description**: Description of the parameter
     * **Type**: Specify the meta type (String, Boolean, Integer) from the dropdown with "String" as the default. 
     * **Actions**: Select the series of new or existing nodes to execute sequentially. Users can select 5 actions for each tool.
-    * **Node Type**: Choose the Node type (Service Node, Script Node, Search AI Node) from the dropdown.
-    * **Node Name**: Choose a New or Existing node from the dropdown.
-* **Response Path**: Select the key that identifies the output required by the XO Platform from the service node's response.
+    * **Node Type**: Choose the Node type (Service Node, Script Node, Search AI Node) from the dropdown that should be executed by the platform when the language model requests a tool call with the required parameters.
+    * **Node Name**: Choose a New or Existing node from the dropdown. Users can chain a set of the above mentioned action nodes for the same tool.
+* **Response Path**: Choose the specific key or path that defines the output required by the XO Platform. The output from one node serves as the input for another node. Action nodes is required to be added as Response Path for Platform to understand where to look for the actual response in the payload.
 * **Choose transition**: Define the behavior after tool execution:
-* **Default**: Send the response back to the LLM.
-* **Exit Node**: Follow the transitions defined for the Agent Node.
-
-**Use Case: Hotel Booking Flow Using an Agent Node**
-
-The flow demonstrates how to efficiently use function calling tools and execute multiple sequential actions within a single Agent node to streamline hotel booking.
-
-**Flow Details**
-
-Step 1: The **Agent Node** collects user inputs.
-
-Step 2: **Service Node** uses the collected inputs to book a hotel.
-
-Step 3: Extract the **booker's name** from the previous response. Another **Service Node** uses the extracted name to retrieve the booker’s age.
-
-Step 4. Save the booker’s name and age in a **Script Node** for further processing or logging.
-
-Step 5: Pass the stored data (name and age) as input to the next **Service node**.
-
-Step 6: The final output is then provided in the **Message Node**.  
-
-<img src="../images/genai-node(19).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;">
+    * **Default**: The response from the specific tool called will go back to the language model. It is mandatory to have a response path in this case.
+    * **Exit Node**:  The conversation ends and the flow exits the Agent Node.
+    * **Jump to a Node** (Coming soon): When a specific tool is called for which this transition is defined, the flow will jump to that particular node in the canvas.
 
 #### Rules
 
