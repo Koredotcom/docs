@@ -117,15 +117,15 @@ Click **+ Add** to open the **New Tool** creation window.
 Users can define the following details for tool configuration:
 
 * **Name**: A unique identifier for the tool. It is one of the important components when defining the tool since it helps the language model to identify which tool to call in the conversation.
-* **Description**: An explanation of what the tool does. It helps the language model to understand what tool to call in the conversation.
+* **Description**: An explanation of what the tool does. It helps the language model to understand which tool to call in the conversation.
 * **Parameters**: Describe the input parameters needed for the tool’s execution, specifying whether each parameter is mandatory or optional. Users can define up to 10 parameters for each tool. 
-    * **Name**: Parameter Name
-    * **Description**: Description of the parameter
-    * **Type**: Specify the meta type (String, Boolean, Integer) from the dropdown with "String" as the default. 
+    * **Name**: Parameter Name.
+    * **Description**: Description of the parameter.
+    * **Type**: Select the parameter type (String, Boolean, or Integer) from the dropdown. . 
 * **Actions**: Select the series of new or existing nodes to execute sequentially. Users can select 5 actions for each tool.
     * **Node Type**: Choose the Node type (Service Node, Script Node, Search AI Node) from the dropdown that should be executed by the platform when the language model requests a tool call with the required parameters.
     * **Node Name**: Choose a New or Existing node from the dropdown. Users can chain a set of the above mentioned action nodes for the same tool.
-* **Response Path**: Choose the specific key or path that defines the output required by the XO Platform. The output from one node serves as the input for another node. Action nodes is required to be added as Response Path for Platform to understand where to look for the actual response in the payload.
+* **Response Path**: Choose the specific key or path that defines the output required by the Platform. The output from one node serves as the input for another node. Action nodes is required to be added as Response Path for Platform to understand where to look for the actual response in the payload.
 * **Choose transition**: Define the behavior after tool execution:
     * **Default**: The response from the specific tool called will go back to the language model. It is mandatory to have a response path in this case.
     * **Exit Node**:  The conversation ends and the flow exits the Agent Node.
