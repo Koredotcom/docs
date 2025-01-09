@@ -114,9 +114,11 @@ This section details the steps to set up the Agent AI app configuration.
 
 #### V2-V3 Migration
 
-* For version 2 (V2) of [Agent AI](https://agentassist.kore.ai){:target=”_blank”} (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
+* For version 2 (v2) of [Agent AI](https://agentassist.kore.ai){:target=”_blank”} (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL.  
+Sample v2 URL: https://XXXX.kore.ai
 
-* For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).
+* For version 3 (v3), you must copy the Agent AI widget URL from the Agent AI or XO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).  
+Sample v3 URL: https://XXXX.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
 
 ### Step 3: Test the Integration
 
