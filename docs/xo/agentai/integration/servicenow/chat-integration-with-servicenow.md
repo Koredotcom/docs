@@ -100,11 +100,7 @@ This section details the steps to set up the Agent AI app configuration.
 
     !!! note
 
-        * The Client Secret & Token fields are masked for security reasons.
-
-        * For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
-
-        * For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}.
+        The Client Secret & Token fields are masked for security reasons.        
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
 
@@ -115,6 +111,12 @@ This section details the steps to set up the Agent AI app configuration.
         The **AAtoken** field must be empty for the widget to load. The Token field automatically populates at the runtime.
 
     <img src="../images/aatoken.png" alt="aatoken" title="aatoken" style="border: 1px solid gray; zoom:80%;">
+
+#### V2-V3 Migration
+
+* For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
+
+* For version 3 (V3), you must copy the Agent AI widget URL from Agent AI or UXO Channel configuration and past it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).
 
 ### Step 3: Test the Integration
 
