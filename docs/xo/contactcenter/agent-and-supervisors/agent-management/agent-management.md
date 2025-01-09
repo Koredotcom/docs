@@ -404,5 +404,5 @@ By default, the call acceptance behaviour functionality is disabled. Administrat
 
 ## Blended Agents
 
-By default, the blended agents functionality is disabled. Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
+Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
 <img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
