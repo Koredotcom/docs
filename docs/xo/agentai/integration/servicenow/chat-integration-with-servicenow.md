@@ -112,7 +112,7 @@ This section details the steps to set up the Agent AI app configuration.
 
     <img src="../images/aatoken.png" alt="aatoken" title="aatoken" style="border: 1px solid gray; zoom:80%;">
 
-#### V2-V3 migration
+#### V2-V3 Migration
 
 * For version 2 (V2) of [Agent AI](https://agentassist.kore.ai) (or the domain where the AgentAI is hosted), you should add this to the Agent AI URL. 
 
