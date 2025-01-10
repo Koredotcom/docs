@@ -1,106 +1,60 @@
-# Agent Node Version 2
+# Agent Node Version 2 (Draft)
 
-The **Agent Node** lets you leverage the full potential of LLMs and Generative AI to quickly build conversations that involve complex flows and provide human-like experiences. You can define the entities you would like to collect and the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
+The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to create sophisticated and versatile bots capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
-!!! note
+## Key Features
 
-    The Agent Node v2 is included in the XO v11.4.1 release. All Agent Nodes and prompts created after this release are version 2.
+* **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making bot interactions more natural and user-friendly.
+* **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
+* **Multilingual Support**: The Agent Node supports both English and non-English bot languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
+* **Configuration Flexibility**: The Agent Node can be configured like any other node in the XO Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 
+### Enhanced Capabilities with Tool Calling
 
-## Why a Agent Node?
+Tool calling is the ability to identify when external functions are needed, select appropriate ones, invoke them with correct parameters, process their outputs, and incorporate the results into responses.
 
-There are two key scenarios when a Agent node might be beneficial:
+* **Interaction with External Systems**: The introduction of tool calling expands the Agent Node's capabilities beyond text generation. It enables interaction with external systems and databases, facilitating real-time data retrieval, calculations, and system-specific operations. This integration allows for more dynamic and data-driven conversational experiences.
+* **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. Based on user input and ongoing conversation, the language model can dynamically decide whether to generate text or call a tool. The dynamic prompt adaptation ensures that the virtual assistant provides the most appropriate response or action at each step of the interaction.
 
+## Agent Node Runtime Behavior
 
+During runtime, the Agent Node efficiently orchestrates interactions between the node, language model, and XO Platform to enable seamless user experiences and integration with external systems. You can work with this node like any other node within Dialog Tasks and invoke it within multiple tasks. 
 
-1. Handling co-referencing and entity correction in conversations: NLP might not pick up co-referencing and entity correction during a conversation. For example, in a flight booking task, someone might ask to book two window seats, then change their mind and ask to modify one of the `seat types` from the `window` to the `middle`. In this scenario, the VA must correct the already collected entity `(seat type)` and perform entity co-referencing to modify from `window` to `middle`.
-2. Managing complex flows without extensive scripting: Complex flows like the above increase dialog task complexity, requiring multiple paths and nodes. Even then, it is humanly impossible to predict all such scenarios. Scripting all these possibilities might also result in a sub-par end-user experience.
+During runtime, the node behaves as follows:
 
-Leveraging a generative AI model mitigates these scenarios by eliminating the need to predict and configure such complex possibilities while still under the constraint of defined rules and exit scenarios. This can facilitate more natural conversations and improve end-user experience.
+1. **Input Processing**: When the agent node receives user input, it processes it first through a Pre-Processor script. This script runs only once before the orchestration starts between the node and the platform. This script can perform tasks like formatting the input or extracting relevant information before sending the input to the language model.
+2. **Entities Collection**:
+    * The platform invokes the Generative AI model to understand the user input.
+    * The platform uses the entities and business rules defined in the node configurations to understand user input and identify the required entity values.
+    * The responses required to prompt/inform the user are automatically generated based on the conversation context.
+    * The platform drives the conversation until all the defined entities are captured.
+3. **Contextual Intents**
+    * Contextual intents (Dialog or FAQs) recognized from user input continue to be honored according to the Interruption Settings defined in the bot definition.
+    * Post completion of the contextual intents, the flows can return to the Agent Node.
+4. **Language Model Decision**: The language model analyzes the processed user input and decides whether to respond with generated text or call a tool:
+    * **Text Response**: If the language model determines that a text response is appropriate, it generates the response and sends it to the XO Platform. The platform then renders this response to the user.
+    * **Tool Call Execution**: When the language model decides to call a tool, it sends a tool request to the XO Platform. The platform identifies the action linked to the called tool, which could be a script, service, or Search AI node. The XO Platform executes this action and retrieves the output.
+5. **Output Appending**: Depending on the selected transition, the XO Platform may exit the node or append the output to the request prompt for enriched context and send the updated prompt back to the model for further processing.
+6. **Post-Processing**: Before presenting the final output, the XO Platform passes the response from the language model through a Post-Processor script. This script runs every time a response is received. It allows further manipulation of the response, such as formatting the output or integrating it with other elements of the conversation.
+7. **Exit Conditions**
+    * The platform exits from the Agent Node when any of the defined exit conditions are met.
+    * These conditions allow you to define scenarios that require a different path in the conversation, such as handing off to a human agent.
+    * The platform can also exit the Agent Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
+8. **Iterative Process**: This process repeats for each conversation volley, ensuring the Agent Node dynamically adapts to user input and leverages the power of language models and external systems through tool calls.
 
+### Entity Values and Outputs
 
-## What’s New in Version 2 of the Agent Node
+* **Entity Values**: The platform stores the entity values in the [context object](../../../intelligence/context-object.md), and this information can be used to define the transitions or any other part of the bot configuration.
+* **Conversation History and Tool Output**: The `LLM_Conversation_History` object stores the conversation history, tool history, and transactions between the platform and the model during a tool call. Additionally, the `Tool_Output` variable stores the output from the executed tools.
+* **Node’s Output**: The Agent Node's output is stored as structured JSON in the [context object](../../../intelligence/context-object.md), making it accessible and usable throughout the entire dialog flow, even after the node is no longer active.
 
-**Node Level Enhancements**
-
-* Conversation History Length: Specify the number of recent messages (both user and VA) to send to the language model as context.
-
-**Custom Prompt Enhancements**
-
-* Required Entities: A new dynamic variable holding a comma-separated list of entity names to be captured by the LLM. This allows platform users to specify which entities need to be collected or included in the output. 
-* Collected Entities: An object containing the entities and their values collected by the language model.
-* Custom Prompt Creation using JavaScript: The Platform introduces a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.
-
-    !!! note
-
-        The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
-
-Sample JavaScript
-
-```
-const jsonRepresentation = {
-  messages: [
-    {
-      role: "system",
-      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {"bot": "prompt to collect unfulfilled entities", "conv_status": "ongoing" or "ended", "entities": [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as 'ended' when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as 'ongoing'.`
-    },
-    ...Conversation_History,
-    {
-        "role": "user",
-        "content": `${User_Input}`
-    }
-  ],
-  model: "gpt-4",
-  temperature: 0.73,
-  max_tokens: 300,
-  top_p: 1,
-  frequency_penalty: 0,
-  presence_penalty: 0
-};
-
-context.payloadFields = jsonRepresentation;
-```
-
-**Support for Variables**
-
-* Support for Dynamic Variables: Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
-
-[Learn more](../../../../app-settings/variables/using-bot-variables.md).
-
-
-## Node Behavior
-
-
-### Runtime
-
-You can work with this node like any other node within Dialog Tasks and invoke it within multiple tasks. During runtime, the node behaves as follows:
-
-1. Entities Collection:
-    1. On reaching the Agent Node, the platform invokes the Generative AI model to understand the user input.
-    2. The platform uses the entities and business rules defined as part of the node configurations to understand the user input and identify the required entity values.
-    3. The responses required to prompt/inform the user are automatically generated based on the conversation context.
-    4. The platform drives the conversation until all the defined entities are captured.
-2. Contextual Intents:
-    5. Contextual intents (Dialog or FAQs) recognized from the user input continue to be honored as per the Interruption Settings defined in the bot definition.
-    6. Post completion of the contextual intents, the flows can return to the Agent Node.
-3. Exit Conditions:
-    7. The platform exits from the Agent Node when any of the defined exit conditions are met.
-    8. These conditions provide you the ability to define scenarios that need a different path in the conversation, for example, handing off to a human agent.
-4. The platform can also exit the Agent Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
-5. The platform stores the entity values in the context object, and this information can be used to define the transitions or any other part of the bot configuration.
-
-#### Output
-
-The output generated by this node is fully usable throughout the dialog flow, even once the node is no longer in use. Output is maintained in a structured .json within the [Context Object](../../../intelligence/context-object.md), so you can access and use the output throughout the rest of your flow.
-
-### Enable
+## Enable
 
 By default, the feature/node is disabled. To enable the feature, [Dynamic Conversations Features](../../../../generative-ai-tools/dynamic-conversations-features.md).
 
+## Add to a Task
 
-### Add to a Task
-
-Steps to add a Agent node to a Dialog Task:
+Steps to add an Agent node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
 
@@ -163,6 +117,35 @@ Most entity types are supported. Here are the exceptions: custom, composite, lis
 
 Add a brief description of the use case context to guide the model.
 
+#### Tools
+
+Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.
+
+!!!note
+
+    Tool calling is supported only with custom prompts (Javascript) without streaming.
+
+Click **+ Add** to open the **New Tool** creation window.  
+
+<img src="../images/genai-node(18).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;">
+
+Define the following details for tool configuration:
+
+* **Name**: Add a meaningful name that helps the language model identify the tool to call during the conversation. 
+* **Description**: Provide a detailed explanation of what the tool does to help the language model understand when to call it.
+* **Parameters**:Specify the inputs the tool needs to collect from the user. Define up to 10 parameters for each tool and mark them as mandatory or optional.  
+    * **Name**: Enter the parameter name.
+    * **Description**: Enter an appropriate description of the parameter.
+    * **Type**: Select the parameter type (String, Boolean, or Integer). 
+* **Actions**: These are the nodes that the XO Platform executes when the language model requests a tool call with the required parameters. Users can add up to 5 actions for each tool. These actions are chained and executed sequentially, where the output of one action becomes the input for the next.
+    * **Node Type**: Select the node type (Service Node, Script Node, Search AI Node) from the dropdown.
+    * **Node Name**: Select a new or existing node from the dropdown.
+* **Response Path**: The final output from the action nodes is required to be added as a Response Path for the Platform to understand where to look for the actual response in the payload. Choose the specific key or path that defines the output.
+* **Choose transition**: Define the behavior after tool execution:
+    * **Default**: Send the response back to the LLM. It is mandatory to have a Response Path in this case.
+    * **Exit Node**: Follow the transitions defined for the Agent Node.
+    * **Jump to a Node** (Coming soon): You can jump to any node defined in the dialog.
+
 #### Rules
 
 Add the business rules that the collected entities should respect. In the rules section, click **+ Add**, then enter a short and to-the-point sentence, such as:
@@ -186,14 +169,11 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
 
 <img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;">
 
-
-
 #### Post-Processor Script
 
 !!! note
 
     The post-processor script does not apply to the custom prompt.
-
 
 This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
@@ -289,13 +269,47 @@ This node captures entities in the following structure:
 ```
 
 
-## Add Custom Prompt for Agent Node
+## Custom Prompt for Agent Node
 
+
+The Platform lets you create a custom prompt tailored to your use case, for both system and custom integrations. This also supporrs a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.
+
+!!! note
+
+     The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
+
+Sample JavaScript
+
+```
+const jsonRepresentation = {
+  messages: [
+    {
+      role: "system",
+      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {"bot": "prompt to collect unfulfilled entities", "conv_status": "ongoing" or "ended", "entities": [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as 'ended' when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as 'ongoing'.`
+    },
+    ...Conversation_History,
+    {
+        "role": "user",
+        "content": `${User_Input}`
+    }
+  ],
+  model: "gpt-4",
+  temperature: 0.73,
+  max_tokens: 300,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0
+};
+
+context.payloadFields = jsonRepresentation;
+```
+
+### Add Custom Prompt
 This step involves adding a custom prompt to the Agent node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
 
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
-To add a Agent node prompt using JavaScript, follow the steps:
+To add an Agent node prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library**.
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
@@ -316,7 +330,7 @@ To add a Agent node prompt using JavaScript, follow the steps:
 
 
 8. On the Preview pop-up, enter the Variable **Value** and click **Test**. This will convert the JavaScript to a JSON object and send it to the LLM. You can view the JSON object in the JSON Preview section. The success message is displayed. Click **Close**.
-    <img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/tc1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
 9. You can view the JSON object in the JSON Preview section. Click **Close**.
 
@@ -326,10 +340,10 @@ To add a Agent node prompt using JavaScript, follow the steps:
 
 10. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
 
-11. In the Actual Response section, double-click the **Key** that should be used to generate the response path. For example, double-click the **Content** key and click **Save**. 
+11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**. 
     <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
 
-12. The **Response Path** is displayed. Click **Lookup Path**.
+12. The **Response Path** is displayed.
 
 13. The **Actual Response** and **Expected Response** are displayed. 
     1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 15.
@@ -350,12 +364,18 @@ To add a Agent node prompt using JavaScript, follow the steps:
                 <img src="../images/pps2response.png" alt=" response" title="response" style="border: 1px solid gray; zoom:70%;"> 
         3. Click **Save**. The actual response and expected response turn green.
 
-14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.
-    <img src="../images/key-value.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
-15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
+14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, **Collected Entities**, and **Tool Call Request**.The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured. The tool call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
+    <img src="../images/tc2.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+15. Click **Test**. The Key Mapping pop-up appears. Make any necessary corrections and close it.  
+<img src="../images/key-map.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+16. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 
 
 ## Dynamic Variables
+
+The Dynamic Variables like Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
+
+[Learn more](../../../../app-settings/variables/using-bot-variables.md).
 
 <table>
   <tr>
