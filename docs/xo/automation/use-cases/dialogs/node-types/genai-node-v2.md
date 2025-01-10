@@ -330,7 +330,7 @@ To add an Agent node prompt using JavaScript, follow the steps:
 
 
 8. On the Preview pop-up, enter the Variable **Value** and click **Test**. This will convert the JavaScript to a JSON object and send it to the LLM. You can view the JSON object in the JSON Preview section. The success message is displayed. Click **Close**.
-    <img src="../images/preview1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/tc1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
 9. You can view the JSON object in the JSON Preview section. Click **Close**.
 
@@ -340,10 +340,10 @@ To add an Agent node prompt using JavaScript, follow the steps:
 
 10. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
 
-11. In the Actual Response section, double-click the **Key** that should be used to generate the response path. For example, double-click the **Content** key and click **Save**. 
+11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**. 
     <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
 
-12. The **Response Path** is displayed. Click **Lookup Path**.
+12. The **Response Path** is displayed.
 
 13. The **Actual Response** and **Expected Response** are displayed. 
     1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 15.
@@ -364,9 +364,11 @@ To add an Agent node prompt using JavaScript, follow the steps:
                 <img src="../images/pps2response.png" alt=" response" title="response" style="border: 1px solid gray; zoom:70%;"> 
         3. Click **Save**. The actual response and expected response turn green.
 
-14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.
-    <img src="../images/key-value.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
-15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
+14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, **Collected Entities**, and **Tool Call Request**.The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured. The tool call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
+    <img src="../images/tc2.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+15. Click **Test**. The Key Mapping pop-up appears. Make any necessary corrections and close it.  
+<img src="../images/key-map.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+16. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 
 
 ## Dynamic Variables
