@@ -130,7 +130,8 @@ nav:
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
-        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: agents/agents-flows/types-of-nodes/docsearch-node.md        
         - End Node: agents/agents-flows/types-of-nodes/end-node.md 
       - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
