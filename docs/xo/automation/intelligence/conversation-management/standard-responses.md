@@ -824,7 +824,7 @@ Statements from the bot to the user, when an error occurs during the scenario, s
    </td>
    <td>This response is displayed when the end-user authorization or re-authorization is requested.
 <p>
-The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. [Learn More](../../../apis/automation/koreutil-libraries.md#koreutilgetcurrentoptions).
+The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
