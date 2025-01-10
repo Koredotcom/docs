@@ -102,7 +102,7 @@ Still, the customer will be required to update browser versions if an issue is i
 
 ### Disable Your Browser’s Sleep Mode Setting
 
-When using the SmartAssist/XOCC console in a browser with multiple tabs open, you may experience connection issues when the console isn’t the active tab. To prevent this from happening, you might want to consider disabling your browser’s sleep mode setting. For more information, see below.
+When using the Contact Center AI console in a browser with multiple tabs open, you may experience connection issues when the console isn’t the active tab. To prevent this from happening, you might want to consider disabling your browser’s sleep mode setting. For more information, see below.
 
 #### Microsoft Edge
 
