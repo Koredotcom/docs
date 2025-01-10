@@ -44,13 +44,13 @@ The following web browsers are supported for use with XO Contact Center Agent an
   <tr>
    <td>Chrome
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
   <tr>
@@ -58,23 +58,23 @@ The following web browsers are supported for use with XO Contact Center Agent an
    </td>
    <td>Supported  
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
   <tr>
    <td>Safari
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
 </table>
@@ -84,7 +84,7 @@ The following web browsers are supported for use with XO Contact Center Agent an
 * Chrome — Requires a current major release or one previous version.
 * Microsoft Edge Chromium — Requires current release.
 
-Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well.
+Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well.  
 Still, the customer will be required to update browser versions if an issue is identified due to browser version mismatches.
 
 !!! Note
@@ -129,7 +129,7 @@ In Google Chrome, you can disable sleep mode for specific sites.
 7. Type your region domain in the Site box. For example, **platform.kore.ai**.
 8. Click **Add**.
 
-## **Firewall Requirements**
+## Firewall Requirements
 
 Allow traffic and whitelist the ports listed below in their respective firewalls based on the Session Border Controller (SBC) they connect to.
 
