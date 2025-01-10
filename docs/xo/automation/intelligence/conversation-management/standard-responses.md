@@ -803,6 +803,8 @@ Statements from the bot to the user, when an error occurs during the scenario, s
     <li>When an agent closes or rejects the chat.
     <li>When there is a technical error with the third-party agent system.
     <li>When the Platform fails to transfer the conversation to the agent.</ul>
+    <br>
+    <strong>Note:</strong> This is currently managed specifically for agent integrations like Salesforce and Helpshift, based on the events emitted by these integrations.
    </td>
   </tr>
   <tr>
