@@ -2,6 +2,383 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+<hr>
+
+## v11.9.0 January 05, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Console
+
+#### Enhanced Contact Recognition for Better Customer Service
+
+This enhancement improves how saved contact information is displayed during customer interactions to help agents deliver more personalized service.
+
+Key updates
+
+* Automatic contact name display for inbound/outbound interactions.
+* For the saved contact entries, phone numbers now show associated contact names instead of "Anonymous".
+* Updates are visible in the chat history and interaction pane.
+
+Key benefits
+
+* Instant recognition of known contacts for personalized customer interactions.
+* Reduced time spent identifying callers.
+* Consistent contact display across all interaction points.
+
+### Supervisor Console
+
+#### Improved Supervisor Monitoring with Callback and Voicemail Filters
+
+Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md)
+
+### Configuration
+
+#### Configurable Repeat Notification Alerts for Improved Response Time
+
+The enhanced notification system ensures agents never miss an incoming interaction.
+
+Key updates
+
+* Configurable notification intervals (5s, 10s, 30s, 1min).
+* Unified sound alerts for transfers and incoming interactions.
+* Visual loop notification icon in settings; disabled by default for all accounts.
+
+Key benefits
+
+* Fewer missed interactions.
+* Customizable alerts based on team needs.
+* Automatic alert management based on agent actions.
+* Simplified notification system with combined transfer alerts.
+
+Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#enable-repeat-notifications)
+
+
+#### Blended Mode for Voice and Digital Interactions
+
+Blended Mode allows agents to handle both voice and digital interactions simultaneously.
+
+Key updates
+
+* Blended Agents toggle to enable/disable it at the organization level.
+* System Busy activates only when all slots (voice and digital) are full. The existing channel-specific system busy logic applies when blended mode is disabled.
+
+Key benefits
+
+* Efficient handling of mixed interaction types.
+* Better resource utilization.
+* Clearer agent availability status.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#blended-agents)
+
+#### Real-time LLM Streaming for Enhanced Voice Interactions
+
+Contact Center supervisors can enable real-time streaming of LLM responses to significantly reduce latency to create more responsive and engaging voice interactions.
+
+Key updates
+
+* Real-time streaming of rephrased responses.
+* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+* Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+### Campaigns
+
+#### Decoupling Flows and Numbers for SMS Campaigns
+
+This update decouples flows and numbers in Advanced SMS Campaigns to offer more flexible flow and number selection.
+
+Key updates
+
+* Independent flow and number selection.
+* Access to all published start flows.
+* Comprehensive caller ID options from available numbers.
+
+Key benefits
+
+* Greater campaign configuration flexibility.
+* Simplified flow selection process.
+* More efficient campaign setup.
+* Better control over outbound messaging.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
+
+#### Outbound SMS API Integration
+
+This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/send-outbound-sms.md)
+
+
+### Analytics
+
+#### External Transfer Status Tracking
+
+This update adds detailed transfer status visibility across the Interaction Dashboard, Reports, and API.
+
+Key updates
+
+* Success/failure status tracking.
+* Transfer mode and reason reporting.
+* Consistent status display in the dashboard, reports, and API.
+* Detailed failure reason reporting ("No Answer," "Busy," "Declined").
+
+Key benefits
+
+* Better transfer outcome monitoring.
+* Improved transparency for external transfers.
+* Standardized status tracking across platforms.
+* Clear visibility into transfer failures.
+
+#### Updated Queue Load Calculation for Blended Conversations
+
+**DASHBOARD** > **Queues & Agents**
+
+The modified queue load formula accurately reflects the blended conversation handling. It represents how agents manage multiple conversation types simultaneously across voice, chat, messaging, and email channels.
+
+**Queue Load** = (Voice + Chat/3 + Messaging/8 + Email/10) x 100 / Available Agents
+
+Where
+
+Voice = Voice Count; Ongoing or waiting in queue (including Voicemails or Callbacks before turning Outbound).  
+Chat = Chat Count; Live chat conversations ongoing or waiting in a queue.  
+Messaging = MessagingCount; Messaging conversations ongoing or waiting in a queue.  
+Email = Email Count; Email conversations ongoing or waiting in a queue.
+
+### API
+
+#### Call Termination Tracking Added to Call Details API (v2)
+
+The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Fetch Again Option for Failed Recordings
+
+This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### Enhanced SIP Trunk Options
+
+To enhance the flexibility and compatibility of the SIP Trunk configuration, two new fields have been added to the 'SIP Trunk' configuration. These fields give more control over how DID numbers are handled and DTMF signals are transmitted.
+
+Key updates
+
+* E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
+* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Microsoft Teams Integration for Inbound and Outbound Calls
+
+In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+<hr>
+
+## v11.8.1 December 19, 2024
+
+<u>Patch Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Campaigns
+
+#### Configure SIP Transfer Voice Numbers for SMS Campaigns
+
+This update allows supervisors to set up Twilio voice numbers in the generic SMS channel, enabling a single number to be used for both voice and SMS flows.
+
+Key Updates
+
+* Twilio numbers purchased for voice can be configured in the generic SMS channel.
+* The number can be attached to both a voice flow and an SMS flow.
+* Voice flow is triggered when a customer calls the number.
+* SMS flow is triggered when a customer texts the number.
+* Currently, it only supports Twilio numbers in the generic SMS channel.
+
+### Flows
+
+#### Configuring Bot Delay – Transfer to External Agent
+
+A new option is added to transfer calls to external agents if the bot fails to respond in time.
+
+When enabled, the following options are available:
+
+* BotNoInputTimeout: Timeout in seconds (default is 2 sec).
+* BotNoInputSpeech/URL: Allows text or audio URL input (default is text).
+* BotNoInputRetries: Number of retries (default is 2).
+* BotNoInputGiveUpTimeout: Timeout in seconds (default if not provided).
+
+Two options are available if the bot does not respond within Give Up Timeout:
+
+* End the Call (default): Option to add a custom message.
+* Transfer the Call: Option to add a custom message for external agent transfer.
+
+<hr>
+
+## v11.8.0 December 11, 2024
+
+<u> Minor Release </u>
+
+### Agent Console
+
+#### Keypad for IVR Navigation During Conference Calls
+
+Agents can now access a keypad during active conferences with DTMF (Dual-Tone Multi-Frequency) input in the conference call interface. The keypad allows agents to navigate through IVR menus and make IVR number calls without disrupting the main conference call. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#external-consult-and-conference-during-an-ongoing-interaction)
+
+#### Depleting Timer Post Caller Disconnection
+
+A depleting timer is introduced on the call disconnected screen, prompting agents to either **Call Back** or **End** the call within a specified timeframe.
+
+This feature prevents agents from occupying slots indefinitely by enforcing timely action and enhancing productivity and slot availability.
+
+Administrators can enable this functionality through Agent Settings. By default, the timer is disabled for existing users. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#timer-after-caller-disconnects-a-voice-call)
+
+#### Enhanced Call Connection
+
+Calls now connect within 3 seconds when agents click the **Accept** button on their console. The default message, **“Thank you for waiting…”**, will only play after an agent successfully connects to the call. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-acceptance-behaviour)
+
+### Configuration
+
+#### Custom Email Domain Configuration
+
+The enhanced email configuration options allow platform users to set up and manage Kore and custom domain email addresses. The options significantly expand email capabilities, allowing businesses to maintain brand consistency in their communications while leveraging the full features of Contact Center AI.
+
+Key Updates
+
+* Kore Domain Email Management:
+    * Configure multiple Kore domain email addresses.
+    * Easy addition of new addresses via the “Add Email Address” button.
+    * Attach experience flows to specific email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#attach-a-flow-to-a-kore-domain-email-address)
+* Custom Domain Setup:
+    * “Add Domain” button for custom email domain configuration.
+    * Domain ownership verification through email login test.
+    * Tabular display of custom domains with associated email addresses. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#create-a-custom-domain)
+* Improved User Interface: Clear organization of Kore and custom domain settings.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
+
+#### Email Address Blocklisting
+
+This update introduces Email Address Blocklisting functionality for Contact Center AI administrators. By proactively managing potentially problematic email addresses, contact centers can maintain a clear communication channel, improve efficiency, and protect their email reputation.
+
+<img src="../images/email-blocklist.png" alt="Email Address Blocklist" title="Email Address Blocklist" style="border: 1px solid gray; zoom:80%;">
+
+Key Updates
+
+* **Blocklist Management**: Administrators can specify blocklisted email addresses.
+* **Verification Process**: The system checks incoming email addresses against the blocklist.
+* **Automated Response**: Disables pre-configured automations for blocklisted addresses and prevents automated agent transfers for blocklisted interactions.
+* **Normal Processing**: Non-blocklisted emails proceed through the usual automation and transfer processes.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#email-blocklist)
+
+### Analytics
+
+#### Enhanced Call Recording Download
+
+On the **Dashboard** > **Interactions** tab, supervisors now have two options to download call recordings:
+
+* Download as a single file,
+* Download as separate files.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### Enhanced Diagnostics for Voice Interactions
+
+Diagnostics functionality is enhanced by adding the **Flow** and **Quality of Service (QoS)** tabs.
+
+<img src="../images/flow-qos.png" alt="Flow and QoS" title="Flow and QoS" style="border: 1px solid gray; zoom:80%;">
+
+The diagnostics reports can be exported in the following formats:
+
+* Export PCAP
+* Export TEXT
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#diagnostics)
+
+#### Call Recording Status Messaging Enhancements
+
+On the Dashboard > Interactions tab, a message, **“No audio is available for this interaction as call recording is disabled,”** will be displayed in the following scenarios:
+
+* Transcript Tab: When call recording is disabled in Agent Settings, no audio is available.
+* Transcript Tab: When call recording is disabled, and media generation is in progress.
+* Interactions Page: When call recording is disabled and users attempt to download the recording from the Actions menu, the “Media generation is in progress” message will also appear. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### Copy All Identifiers
+
+Supervisors can copy all details from the **Identifiers** tab by clicking Copy All.
+
+The copied details include:
+
+* Call Start and Call End timestamps.
+* All other identifier information.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+#### Agent Activity Summary Report CSV Format: Added Count for Each Status
+
+Each Status Duration field now includes a corresponding **“Status - Count”** field (for example, **“Busy:Busy-Count”**).  The field displays the number of times an agent was in each status, with a count of 0 if the agent was never in that status.
+
+#### Agent Chat Metrics Report Merged with Agent Metrics Daily Report
+
+The Agent Chat Metrics Report is deprecated, and its fields have been moved to the CSV version of the Agent Metrics Daily Report. The “Sessions” field is changed to “Answered” in the PDF version of the Agent Metrics Daily Report.
+
+#### Conversation Lifecycle Tracking
+
+The system now captures all significant events throughout the conversation lifecycle, providing visibility into key actions and transitions.
+
+Each tracked detail includes the following:
+
+* Precise Timestamp
+* Event Type
+* Involved Agents/Supervisors
+* Detailed Event Description
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-data-transcripts-and-events)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Wait Time for IP Whitelisting While Configuring SIP Transfer
+
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
+
+#### Session and Node Level Call Control Parameters
+
+Developers can now apply Call Control Parameters at the **Session** or **Node** level, offering more flexibility in managing call behavior.
+
+* **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
+* **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
+* **Default Behavior**: Parameters without a prefix are considered session-level by default.
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
+
+#### SIP REFER Handling and Transcript Enhancements
+
+When an external system sends a SIP REFER to Contact Center AI:
+
+* **Matching Numbers**: If the referred number matches a configured experience flow, Contact Center AI will trigger the corresponding flow.
+
+* **Non-Matching Numbers**: Calls will be returned to the source (default behavior).
+
+The Transcripts now show key conversation stages, including:
+
+* User transferred to Agent (When the Automation transfers the voice call to Agent)
+* User transferred to Automation (When the Agent transfers the voice call back to Automation)
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+#### Mean Opinion Score (MOS) Display in Call Controls
+
+The Mean Opinion Score (MOS), indicating signal connectivity strength, is now displayed as a bar chart within the call controls widget.
+
+<img src="../images/mos-connection.png" alt="Mean Opinion Score" title="Mean Opinion Score" style="border: 1px solid gray; zoom:80%;">
+
+Color Coding:
+
+* 4-5 (Excellent): Green
+* 3-4 (Moderate): Orange
+* 2-3 (Poor): Orange
+* 1-2 (Very Poor): Red
+
+Hovering over the bars displays tooltips providing details on network connection status.
+
+<hr>
+
 ## v11.7.1 November 18, 2024
 
 <u> Patch Release </u>
@@ -26,18 +403,7 @@ To improve agent experience and maintain consistent availability, the agent’s 
 * Complete outbound calls, or
 * Switch from system-assigned states.
 
-[Learn more](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
-
-#### Connection Status Alerts
-
-A new status indicator at the top of the Agent Console shows the connection state and automatically updates when:
-
-* The connection is lost (offline),
-* Reconnection is in progress, or
-* The connection is restored (online).
-    <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
-
-[Learn more](../../console/manage-layout.md#connection-handling).
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status).
 
 #### Real-Time Disposition Updates
 
@@ -46,7 +412,7 @@ The enhanced disposition management allows agents to select dispositions during 
 Key benefits:
 
 * Agent Productivity and Data Accuracy: Agents can tag interactions as they happen, reducing the risk of oversight.
-* Enhanced Filtering: Dispositions are integrated in real-time with dashboard filters, allowing users to track conversations with instant dashboard updates. [Learn more](../../console/interacting-with-customers.md#dispositions).
+* Enhanced Filtering: Dispositions are integrated in real-time with dashboard filters, allowing users to track conversations with instant dashboard updates. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#dispositions)
 
 #### Improved Visibility of Auto-Accepted Conversation
 
@@ -66,7 +432,46 @@ Key benefits:
 
 #### SMS Campaigns - Advanced Message Option
 
-SMS Campaigns now support the Advanced Message format in addition to the Simple message format. With the Advanced message format, businesses can establish two-way communication with their end customers. Within the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required. [Learn more](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
+SMS Campaigns now support the Advanced Message format in addition to the Simple message format. With the Advanced message format, businesses can establish two-way communication with their end customers. Within the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
+
+### Kore Voice Gateway
+
+#### External Agent Transcription Control using SIP INVITE
+
+The new `agentUtils.setExternalAgentTranscribe` utility method helps manage transcription settings for external agents integrated via SIP INVITE. It allows transcription enablement or disablement during active calls on the Agent Assist platform.
+
+Utility details:
+
+* Function: `agentUtils.setExternalAgentTranscribe(param)`
+* Supported in:
+    * Experience Flow script nodes
+    * Bot Builder Dialog Flows
+    * Kore Voice Gateway integrations
+
+Key usage:
+
+* Enable/disable transcription during live calls.
+* Adjust settings based on agent requirements.
+* Configure language and provider preferences.
+* Control transcription in temporary scenarios.
+
+#### Handling Concurrent Outbound Calls
+
+This update allows agents to make concurrent outbound calls to the same customer seamlessly while maintaining separate conversation contexts for each agent.
+
+Each call remains independent with the following:
+
+* Isolated conversation records.
+* Separate call controls.
+* Independent agent sessions.
+
+#### Call Trace Enhancement
+
+This update extends the display of SIP stack traces to all Kore Voice Gateway calls regardless of automation status or agent transfers. This improved visibility helps administrators monitor connections, diagnose issues, and troubleshoot more effectively.
+
+#### Text-to-Speech Customization
+
+New voice controls for PlayHT, Eleven Labs, and Deepgram enable users to customize parameters like speaking speed, pitch, and emotion to improve overall quality of speech output. Bot developers using AWS Polly, Microsoft Azure, and Google Cloud can use SSML tags for advanced customization.
 
 ### Analytics
 
@@ -779,4 +1184,3 @@ The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/dis
 #### Selected Hours Report
 
 The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/selected-hours-report.md)
-

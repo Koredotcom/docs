@@ -803,6 +803,8 @@ Statements from the bot to the user, when an error occurs during the scenario, s
     <li>When an agent closes or rejects the chat.
     <li>When there is a technical error with the third-party agent system.
     <li>When the Platform fails to transfer the conversation to the agent.</ul>
+    <br>
+    <strong>Note:</strong> This is currently managed specifically for agent integrations like Salesforce and Helpshift, based on the events emitted by these integrations.
    </td>
   </tr>
   <tr>
@@ -822,7 +824,7 @@ Statements from the bot to the user, when an error occurs during the scenario, s
    </td>
    <td>This response is displayed when the end-user authorization or re-authorization is requested.
 <p>
-The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://docsinternal-kore.github.io/docs/xo/apis/koreutil-libraries/#koreutilgetcurrentoptions">Know more</a>.
+The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">

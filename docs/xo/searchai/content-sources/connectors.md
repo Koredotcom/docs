@@ -9,7 +9,7 @@ Search AI provides in-built connectors to enable crawling specific third-party c
 
 Connectors enable the application to establish a connection with the third-party application. After the connection is established and authentication is complete, the data from the third-party application is ingested, indexed, and ready to answer in response to search queries. The access privileges of the content are maintained as per the privileges assigned to the user in the third-party repository. This implies that only the files accessible to the user can appear in the answers. During each synchronization cycle of the connector, Search AI only retrieves newly added or modified data from the application, determined by the timestamp of changes. If data has previously been indexed and remains unchanged, it is not retrieved again. 
 
-Currently, Search AI provides a connector for ServiceNow. The list will continue to grow with future releases and will provide out-of-the-box support for most of the commonly used enterprise applications. For any specific integration requirements, please [contact us](https://kore.ai/contact-us/). 
+Refer to the [Connector Directory](connectors/connector-directory.md) for the complete list of applications supported via connectors. For any specific integration requirements, please [contact us](https://kore.ai/contact-us/). 
 
 ## Authorization Support for Connectors
 
@@ -54,16 +54,16 @@ Currently, SearchAI supports the following grant types:
 To configure a new connector, go to the **Connectors** page under **Content**. For a new connector, click on the **+Connect** button.
 ![Connector Home](../images/connectors/connector-home.png "connector home")
 
-The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
+The following page shows the list of available connectors. The connectors are categorized according to the type of application. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
 
 ### Enabling RACL 
 
 To enable RACL in supported connectors, go to the **Permissions and Security** tab and select Permission Aware.
 
-* Permission Aware: Automatically syncs the permission information for the ingested content from the third-party application.
-* Public Access: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
+* **Permission Aware**: Automatically syncs the permission information for the ingested content from the third-party application.
+* **Public Access**: Irrespective of the permissions in the third-party application, the ingested content is accessible to all SearchAI users. 
 
-You can verify the permissions imported in the ingested content in the <code>sourceACL</code></strong> field in the JSON view of the corresponding content.
+You can verify the permissions imported in the ingested content in the <code>sys_racl</code></strong> field in the JSON view of the corresponding content.
 
 For more information on RACL implementation in Search AI, refer to [this](./racl-support.md). 
 
@@ -72,7 +72,7 @@ For more information on RACL implementation in Search AI, refer to [this](./racl
 
 By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
 
-To initiate a sync operation manually, go to the Configurations tab in the Connector details and click on **Sync Now**. This initiates the sync operation immediately and ingests new or updated content from the application. 
+To initiate a sync operation manually, go to the **Configurations** tab in the Connector details and click on **Sync Now**. This initiates the sync operation immediately and ingests new or updated content from the application. 
 
 ![Manual Sync](../images/connectors/manual-sync.PNG "Manual Sync")
 
@@ -102,8 +102,15 @@ To enable or disable a connector, use the corresponding Action buttons.
 
 ### View and Edit Connector Details
 
-To view or edit the connector configuration, i.e., connection settings, sync schedule, etc.,  click the corresponding _connector from the list_. The details page shows the config details of the connector under different tabs.
+To view or edit the connector configuration, i.e., connection settings, sync schedule, etc.,  click the corresponding connector from the list. The configuration details and content from the connector are shown under different tabs.
 ![Connector Details](../images/connectors/connector-details.png "Connector Details")
+
+Click on any of the content items to view the details of the ingested content. It provides an overview of the ingested content like file type, URL, preview of the content of the file, etc. Click on **View JSON** to see the details of the ingested content. 
+![Content Details](../images/connectors/content-details.png "Content Details")
+
+The JSON view provides detailed information of the ingested content. The ingested content and its metadata are captured in standard fields in the Search AI application. For instance, the description or text of the ingested content is set in the content field, the access information is stored in the sys_racl field, sourceType suggests the source of the content, and the meta_data field captures the meta information of the ingested content. 
+![Content Details](../images/connectors/content-details-json.png "Content Details")
+
 
 **Content**
 

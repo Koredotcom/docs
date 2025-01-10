@@ -759,6 +759,13 @@ Here’s a list of keys and their purpose:
    <td>formMsgMeta.FORM_LINK_EXPIRY
    </td>
    <td>Message that is displayed when the form link expires.
+   
+   <strong>Note</strong>:
+   <ul>
+      <li>The expiry message of the digital form cannot be customized.</li>
+      <li>The expiry message will be displayed according to the app's language settings.
+      </li>
+   </ul>
    </td>
   </tr>
   <tr>

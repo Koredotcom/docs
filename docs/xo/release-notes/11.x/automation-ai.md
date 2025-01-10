@@ -2,6 +2,173 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+
+## v11.9.0 January 05, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Build Agentic Experiences
+
+This release introduces new features that simplify building agentic experiences. Create more natural and personalized virtual assistant conversations while streamlining your development workflow.
+
+#### Function or Tool Calling Support in Agent Node
+
+Tool Calling enables Agent Node (previously GenAI Node) to interact with your business applications. You can define accessible tools, connect multiple actions, and incorporate external data into the conversation context. The recently launched DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Combine these features to deliver seamless agentic experiences for your customers and employees. 
+
+Key updates
+
+* Tool calling integration with business applications and external data.
+* New tools repository for managing custom and system integrations.
+* Direct connection between tools and actions (scripts, service Search AI, Webhooks).
+* Prompts include tool definitions and context for decision-making.
+
+Key benefits
+
+* More dynamic, responsive virtual assistants.
+* Integration of real-time data and complex query handling.
+* Flexibility with custom/system integrations and prompts.
+* Seamless orchestration between user input, functions, and responses.  
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
+
+#### GenAI Node and Prompt Node Renaming
+The GenAI Node has been renamed the Agent Node to reflect its agentic experiences and tool-calling capabilities, while the GenAI Prompt Node has been renamed the Prompt Node.
+
+
+### DialogGPT
+#### DialogGPT App Lifecycle Management
+DialogGPT has been integrated into the app lifecycle to centralize configuration management, ensuring consistency and scalability.
+
+Key updates
+
+* Integrated with Generative AI & LLM Settings for centralized management.
+* DialogGPT events added to Integrations & API Extensions.
+* Full and partial app export/import support.
+* Version control and comparison features.
+
+[Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
+#### OpenAI GPT-4o mini Support for DialogGPT
+The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient conversation management. These models are compact and optimized variants of the GPT-4 family, designed to deliver high efficiency in resource-constrained environments while maintaining advanced capabilities.
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/conversation-orchestration.md)
+
+
+### Dialog Builder 
+
+#### Enhanced Sticky Notes for Intuitive Note-Taking Experience 
+The redesigned notes feature works like familiar sticky notes, making it easier and more intuitive to capture and organize your thoughts.
+
+Key updates
+
+* Streamlined editing with autosave functionality.
+* Resizable notes for better organization.
+* Customizable background colors.
+* Default yellow styling with instant edit mode.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+
+
+#### Upgraded Bookmarks for Better Visual Organization 
+The enhanced bookmarks feature improves organization and collaboration capabilities.
+
+Key updates
+
+* Customizable background colors.
+* Improved loading experience with visual feedback.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+
+
+<hr>
+
+## v11.8.1 December 19, 2024
+
+<u>Patch Release</u>
+
+This update includes bug fixes.
+
+<hr>
+
+## v11.8.0 December 11, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### DialogGPT, an Agentic Orchestration for Intelligent Conversations
+
+DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is in beta and is supported only for English conversations.    
+
+Key Capabilities
+
+* Conversation Orchestration: DialogGPT intelligently manages conversations, understands user intent, handles requests, seeks clarification when needed, and automatically deals with common conversational flows like pausing, repeating information, or restarting.
+* Smart Understanding: By considering the full context - current conversation, prior interactions, and user details - the system better understands user needs, reducing errors. It simplifies intent training and management by consolidating all intent types within a unified vector index.
+* Intelligent Dialog Navigation: DialogGPT can start by understanding a request and then asking targeted follow-up questions to determine the user's needs, guiding the conversation intelligently.
+* Flexible Responses: The system generates natural, contextual responses dynamically based on conversation history, user information, and business rules, ensuring appropriate answers for each situation.
+* Cross-Assistant Communication: DialogGPT seamlessly routes conversations to the correct assistant based on the user's stated needs for organizations with multiple virtual assistants.
+* Model Flexibility: Organizations can use their preferred AI models, whether commercial, custom, or Kore.ai's fine-tuned specialized models, for enhanced performance. They also have full control over the prompts' design to interact with AI models.
+* Performance Monitoring: Comprehensive testing tools and analytics are provided to track the system's performance in understanding users, successfully handling requests, and identifying areas for improvement.
+
+Key Benefits
+
+* Improved Customer Experience: Customers enjoy more natural conversations with virtual assistants who understand the context and can simultaneously handle multiple requests.
+* Greater Accuracy: The system better understands what customers request, even when requests are complex or industry-specific. Combining broad understanding with detailed knowledge of your business can extract the right information and make smarter decisions about how to help.
+* Lower Costs: It reduces manual effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
+
+**DialogGPT Rollout Plan**
+
+The implementation of DialogGPT is planned in three phases:
+
+* Phase 1 (included in this release): Focuses on core capabilities like the main DialogGPT flow, RAG pipeline, conversation orchestrator, and handling of common conversation intents.
+* Phase 2 (future release): Introduces advanced features such as Universal Bot support, granular intent identification, custom entity extraction, and new XO GPT models.
+* Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+
+### Dialog Builder  
+
+#### Property Panel Enhancements for List of Items Configuration
+
+The property panel has been updated with a redesigned interface for configuring "List of Items" properties, including both enumerated and lookup types. 
+
+Key Improvements
+
+* Intuitive Layout: The new design organizes properties logically, making it easier to locate and modify settings. The streamlined interface reduces clutter and enhances usability.
+* Enhanced Sliders: The configuring "List of Items" sliders have been revamped to provide a more user-friendly experience. Users can now adjust settings more efficiently within the improved interface.  
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/entity-types.md#list-of-items-enumerated)
+
+#### Rich Text Formatting for Prompts
+
+A new rich text editor has been added to all prompt areas in the platform, including User Prompts, Bot Responses, and Error Prompts. The editor allows platform users to easily format text using a convenient markup toolbar, enhancing readability and improving the user experience for content creators and end users. Double-click or select any text in the detailed prompt editor to invoke the toolbar.
+
+Key Capabilities
+
+* Text Styling: Bold and italic formatting options
+* Headings: Six levels of headings (H1 to H6) for clear content structure
+* Lists: Numbered and bulleted lists with referencing controls
+* Media: Insertion of links and images (with URL and alt text)
+
+Formatted text is rendered properly across all supported channels, and the feature maintains backward compatibility with existing prompts.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#configure-the-user-prompt)
+
+### Knowledge AI 
+
+#### Get FAQs API Enhancement
+
+The **Get FAQs API** has been enhanced to support two sets of parameters, providing more flexible retrieval options while ensuring backward compatibility:
+
+* Existing Parameters (backward compatible): ktId and parentId (node ID)
+* New Parameters (alternative option): botId, language, mode (configured/published), and nodeName.  
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/get-faqs-from-knowledge-task-V2.md)
+
+<hr>
+
 ## v11.7.1 November 18, 2024
 
 <u> Patch Release </u>

@@ -21,7 +21,7 @@ To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and
   <tr>
    <td><strong>Content Type</strong>
    </td>
-   <td><code>application/json</code>
+   <td><code>multipart/form-data</code>
    </td>
   </tr>
   <tr>
@@ -66,7 +66,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>host
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
    <td>Required
    </td>

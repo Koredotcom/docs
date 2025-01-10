@@ -9,7 +9,7 @@ This process happens in two parts:
 1. The application triggers an Outbound Call.
 2. Receiving Call Status Notifications.
 
-# 1. Triggering the Outbound Call via API
+## 1. Triggering the Outbound Call via API
 
 The application triggers an outbound call using an HTTP POST request to the endpoint.
 
@@ -20,7 +20,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**   | SmartAssist Dialout                                                                                      |
 
-## Path Parameters
+### Path Parameters
 
 | **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
@@ -45,7 +45,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 |                     | - “disabled”: Machine detection is not enabled.                                                                                                          |                  |
 | thresholdWordCount | Number of spoken words in a greeting that result in an amd_machine_detected result.                                                                      | number, optional |
 
-## Timers Configuration
+### Timers Configuration
 
 | **PROPERTY**                                   | **DESCRIPTION**                                                                                        | **REQUIRED**     |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------|--------------|
@@ -55,7 +55,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | `timers.greetingCompletionTimeoutMs`      | Silence in milliseconds to wait for during greeting before returning amd_machine_stopped_speaking. | no, default=2000  |
 | `timers.noSpeechTimeoutMs`                | Time in milliseconds to wait for a speech before returning amd_no_speech_detected.                 | no, default=5000  |
 
-## Sample Request
+### Sample Request
 
 ```
 curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialout' \
@@ -84,7 +84,7 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialou
 }
 ```
 
-## Sample Response
+### Sample Response
 
 ```
 {
@@ -93,13 +93,17 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialou
 }
 ```
 
-# 2. Receiving Call Status Notifications
+## 2. Receiving Call Status Notifications
 
 To receive call status notifications using the `notifyUrl` property on the dial-out request.
 
 When this property is set, Kore.ai Voice Gateway sends an HTTP POST request to the specified URL.
 
-## Sample Response
+!!! Note
+
+    Only the final call status is sent, indicating whether the call is completed, failed, busy, no-answer, or temporarily unavailable. Intermediate statuses are not shared.
+
+### Sample Response
 
 ```
 POST /notify HTTP/1.1

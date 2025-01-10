@@ -1,7 +1,6 @@
 # Get FAQs – KG
 
-To get a list of questions and nodes under the Knowledge task.
-
+To get a list of questions and nodes under the Knowledge task. This API supports parameters like  ktId and parentId (node ID).
 
 <table>
   <tr>
@@ -62,7 +61,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
    <td>Required
    </td>
@@ -728,3 +727,7 @@ No body parameters are passed.
     "count": 9
 }
 ```
+
+!!!note
+    
+    Refer to Get [FAQs – KG V2](../automation/get-faqs-from-knowledge-task-V2.md)  which supports the Parameters: botId, language, mode (configured/published), and nodeName.

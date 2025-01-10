@@ -2,6 +2,153 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+
+
+## v11.9.0 January 05, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### LLM & Generative AI
+
+#### Enhanced Usage Logs for Guardrails
+
+The Usage Logs now provide more comprehensive insights into guardrails performance and token consumption. These insights enable platform users to better track and analyze the effectiveness of their configured guardrails, identify patterns in breaches, optimize costs, and streamline the debugging process.
+
+Key enhancements
+
+* Failed guardrail tracking with identifiers and failure explanations.
+* Analytics table for configured guardrails, outcomes, and risk scores
+* Input and output token count monitoring.
+* Expanded export columns, including guardrail risk scores and token counts.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/genai-analytics/llm-usage-logs.md)
+
+
+#### Optimized Conversation Context Management
+
+The platform has introduced a Redis-based caching solution to significantly improve conversation context management. This enhancement optimizes the storage and retrieval of conversation history for LLM interactions, reducing latency and resource usage while maintaining context integrity.
+
+
+### Admin Console
+
+#### Enhanced Get Bots API
+The Get Bots API now includes crucial authentication and security metadata for each bot, enabling better management and auditing.
+
+Key updates
+
+* Added fields to bot objects in API response: clientId, clientSecret, jtiClaimEnforced, and jweEncryptionEnforced.
+* No changes to endpoint structure (backward compatible).
+
+Key benefits
+
+* Comprehensive bot details, including auth credentials.
+* Visibility into per-bot security configurations.
+* Streamlined management and compliance workflows.
+
+[Learn more :octicons-arrow-right-24:](../../apis/automation/get-bots.md)
+
+### App Settings
+
+
+#### Auto-Save for App Profile Settings
+The platform now ensures consistent Auto-Save behavior across all configurations in the App Profile menu of the App Settings page. This update aligns the App Settings page with other areas of the platform, such as the Property Panel and NLP Training Configurations, offering users a seamless and intuitive experience.
+
+Key updates
+
+* Auto-save on blur for App Name, App Description, and other settings.
+* Toaster messages to confirm the successful saving of changes.
+* Special handling for renaming published apps.
+* Removal of the Save button at the bottom of the page.
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md)
+
+
+### App Language
+
+#### Japanese and Korean Language Support in the App (Beta)
+The platform has enabled Japanese and Korean language selection for the App, allowing platform users to access the app in their native language.
+
+Key updates
+
+* Language selection dropdown added to Profile, Login, and Signup pages.
+* The "BETA" tag indicates the feature's beta status.
+* Dynamic translation of UI elements and content based on selected language.
+
+Key benefits
+
+* Improved accessibility for Japanese and Korean users.
+* Consistent language selection across the app.
+* Leverages existing backend localization for seamless translation.
+
+[Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
+
+<hr>
+
+## v11.8.1 December 19, 2024
+
+<u>Patch Release</u>
+
+This update includes bug fixes.
+
+<hr>
+
+## v11.8.0 December 11, 2024
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### LLM & Generative AI
+
+#### Zero-Shot Enhancements
+
+The Zero-Shot intent detection model has been significantly enhanced to improve contextual understanding and intent-matching accuracy, addressing challenges related to large intent sets and false positives. 
+
+Key Updates
+
+* Expanded Input: The enhanced model now incorporates intent descriptions, conversation history, list of intents, and user utterances for more accurate intent recognition.
+* New Prompt Structure: A new prompt, "Zero-Shot-V2," is available for XO v10 and v11, enabling platform users to input additional contextual components.
+* System Prompts: Pre-built system prompts are provided for out-of-the-box integrations (Azure OpenAI and OpenAI), allowing the users to leverage the enhanced Zero-Shot Model without crafting custom prompts.
+* Custom Prompts: Platform users can create custom prompts linked to system models for Zero-Shot, offering full control over prompt design to tailor them to specific features, contexts, and user needs.
+* Custom LLM Support: The Zero-Shot ML model can now be used with the Bring Your Own Model (BYOM), enabling platform users to define prompts and leverage the enhanced capabilities with their custom LLMs.
+
+These enhancements significantly improve the Zero-Shot model's ability to accurately identify intents, particularly in complex or nuanced conversational scenarios, while maintaining compatibility with existing configurations.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#zero-shot-ml-model)
+
+#### Rephrase User Query feature is now extended to Search AI
+
+The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-user-query)
+
+### Bot Admin Console
+
+#### Consolidated Billing Session Widget
+
+The Bot Admin Console now includes a Billing Session Widget, providing admins with a consolidated view of key billing metrics across all apps in their workspace. This graphical widget displays:
+
+* Billing Sessions: Total number of completed sessions.
+* Voice Sessions: The count of Voice Sessions in a conversation consumed in an App; calculated as every 15 minutes of interaction with the Virtual Assistant or an Agent.
+* Agent Count: The count of agents subscribed to the plan for each app.  
+
+[Learn more :octicons-arrow-right-24:](../../administration/billing.md#usage)
+
+### App Settings
+
+#### Change Log Improvements: Module Field and Detailed Views
+
+The Change Logs feature has been updated to provide better context and more detailed information about configuration changes made within XO 11.
+
+Key Improvements
+
+* Module Field: Each log entry has a new "Module" field indicating which XO 11 module the change originated from. Possible module values include Automation AI and Global (for changes related to Settings, User Management, Deployment, Billing, Experience Flows, Channels, and GenAI Configs).
+* Detailed Views: Log entries now include a "Details" link whenever additional information is available. The link opens a side panel displaying a JSON view of the full change details. It helps access the complete technical information for each change without cluttering the main log view.  
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
+
+<hr>
+
 ## v11.7.1 November 18, 2024
 
 <u> Patch Release </u>

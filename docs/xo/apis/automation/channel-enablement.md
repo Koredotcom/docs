@@ -60,7 +60,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>host
    </td>
-   <td>The environment URL. For example, https://bots.kore.ai
+   <td>The environment URL. For example, https://platform.kore.ai
    </td>
    <td>Required
    </td>
@@ -243,7 +243,7 @@ Sample response for **web/mobile SDK**:
         "domains": [],
         "apiKey": "d3be215756d94803b0a548e594c0e1625b88e873cec9e48eb918add573d738f26stda",
         "testAPIKey": "7e203670dc4d41d5bcc0d58b4e02a164e0b6a0c9438b45c1971c6e703582c88estda",
-        "chatURL": "https://preprod-bots.korebots.com/webclient/d3be215756d94803b0548e594c0e162a5b88e873cec9e48eb918add573d738f26stda",
+        "chatURL": "https://platform.kore.ai/webclient/d3be215756d94803b0548e594c0e162a5b88e873cec9e48eb918add573d738f26stda",
         "isURLEnabled": true
     }
 }

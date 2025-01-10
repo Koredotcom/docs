@@ -56,11 +56,11 @@ The following metrics summarize the counts for agents, runs, and node executions
 
 * **Number of runs**: The total count of success and failure agent flow runs or node executions completed by all deployed agents in your account during the specified period. 
 
-    For detailed statistics on each status for the selected date/date range, see the **Agent Runs** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-runs){:target="_blank"}.
+For detailed statistics on each status for the selected date/date range, see the **Agent Runs** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-runs){:target="_blank"}.
 
 * **Number of times nodes are executed**: The event-driven execution counts for different node types during an agent run. 
 
-    For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
+For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -284,5 +284,7 @@ The **Agents Analysis Dashboard** offers custom and actionable insights through 
 ## Related Information
 
 * [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
+* [Agent Flow Change Logs](../../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to an agent's flow.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for agents, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.

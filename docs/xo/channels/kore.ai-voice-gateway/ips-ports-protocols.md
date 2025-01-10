@@ -484,8 +484,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>au-prod-savg-sbc.kore.ai,
-<br>
+   <td>
 <a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc1.kore.ai</a>,
 <br>
 <a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc2.kore.ai</a>
@@ -660,8 +659,6 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
    <td><strong>FQDN</strong>
    </td>
    <td>
-<a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc.kore.ai</a>,
-<br>
 <a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc1.kore.ai</a>,
 <br>
 <a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc2.kore.ai</a>
