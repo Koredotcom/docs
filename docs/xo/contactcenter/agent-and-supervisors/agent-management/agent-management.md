@@ -82,17 +82,40 @@ Here you can see a list of existing statuses, along with the following informati
 * **Description**: A short description of the status.
 <img src="../images/agent-status-page.png" alt="Agent Status Page" title="Agent Status Page" style="border: 1px solid gray; zoom:80%;">
 
-### System Away and System Busy Status
+### System Busy Status without Blended Mode
 
-**System Away**: When an agent does not accept or respond to an interaction within the configured acceptance timeout, the agent’s status automatically changes to system away.
+Without Blended Mode, the "System Busy" status follows this logic:
 
-**System Busy**: When all the slots assigned to an agent are occupied, the agent’s status automatically changes to system busy.
+* For digital interactions: Triggers when digital interaction concurrency reaches 100% of available slots.
+* For voice interactions: Triggers when the single voice slot is occupied.
+* Combined: Agents on voice are marked "System Busy" for digital, and vice versa.
 
-!!! Note
+#### Key Changes with Blended Mode
 
-    * System Away and System Busy statuses are enabled by default for new accounts. To enable them for existing accounts, contact Kore Support. 
+The following key changes are introduced with the Blended Mode:
 
-    * The system preserves an agent's last recorded status, such as "available," "away," or "busy," to ensure a seamless workflow. When an agent returns from a break or completes an outbound call, they automatically revert to their previous status without manual intervention. During outbound calls, the system temporarily updates the status but restores it to the prior state once the call ends. Similarly, when the system places an agent in a "busy" state due to high activity or system processes, their last status is preserved and reinstated after the busy period, enhancing efficiency and consistency in agent operations.
+1. Slot Treatment: Voice is treated as another interaction slot (not just digital slots).
+
+2. System Busy Logic:
+
+    * **Blended On**: Triggers when all voice + digital slots full
+    * **Blended Off**: Triggers at 100% digital occupancy or voice slot full
+
+3. Load Capacity: Calculated as (Occupied Voice / Max Voice) + (Occupied Digital / Max Digital)
+
+#### Status Transitions
+
+The "System Busy" status is triggered differently depending on whether Blended Mode is on or off:
+
+* **Blended On**: System busy when all the slots are full (Voice + Digital).
+* **Blended Off**: Traditional System Busy logic (100% digital or voice slot full).
+
+#### Best Practices
+
+* Configure appropriate slot allocations based on interaction volumes.
+* Train agents on blended handling and multitasking strategies.
+* Monitor load capacity to optimize staffing levels.
+* Use reporting to track blended mode impact on KPIs.
 
 ### Create an Agent Status
 
@@ -151,7 +174,7 @@ You can customize the following fields:
     2. Description
     3. Message to Agent
         1. Rule (default 30 seconds)
-        2. Message 
+        2. Message  
         <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:80%;">  
 
 3. Click **Update** to save the changes.  
@@ -176,10 +199,9 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
 8. **Load Balanced Agent Routing**: This setting ensures a fair distribution of tasks among available agents with the necessary skills and language proficiency.
 9. **Call Acceptance Behaviour**: This setting allows the call to be accepted while the connection message plays in the background instead of waiting for it to finish.
-
 These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
-<img src="../images/agent-settings-tab.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
-<img src="../images/agent-settings-tab.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
+10. **Blended Mode**: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.  
+    <img src="../images/agent-settings-tab.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -282,7 +304,7 @@ Messages can be edited by clicking the Edit icon under the Message column.
     For example: `{{agentFirstName}}` becomes Christine Mark.  
         <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
         <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
-See the tables in [Conversation Statuses by Channel (Live Chat, MEssaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
+See the tables in [Conversation Statuses by Channel (Live Chat, Messaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
 
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.
 <img src="../images/save-button.png" alt="Save Conversation Status" title="Save Conversation Status" style="border: 1px solid gray; zoom:80%;">
@@ -343,8 +365,6 @@ This feature allows administrators to specify the period of inactivity for autom
 
 **Auto Logout**  
 <img src="../images/auto-logout-toggle.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
-**Auto Logout**  
-<img src="../images/auto-logout-toggle.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
 
 Enabling the setting allows administrators to configure the following rules:
 
@@ -371,7 +391,6 @@ This feature allows agents to temporarily pause conversations that are awaiting 
 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
-<img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
 
 ## Load-Balanced Agent Routing
 
@@ -382,9 +401,8 @@ By default, the load-balanced agent routing functionality is disabled. Administr
 
 By default, the call acceptance behaviour functionality is disabled. Administrators can turn on the toggle to enable the functionality, allowing the call to be accepted while the connection message plays in the background instead of waiting for it to finish, enhancing agent efficiency and reducing call handling time by enabling immediate call acceptance without waiting for the connection message to finish.  
 <img src="../images/call-acceptance-behaviour.png" alt="Call Acceptance Behavior" title="Call Acceptance Behavior" style="border: 1px solid gray; zoom:80%;">
-<img src="../images/load-balanced-routing-toggle.png" alt="Load-Balanced Agent Routing" title="Load-Balanced Agent Routing" style="border: 1px solid gray; zoom:80%;">
 
-## Call Acceptance Behaviour
+## Blended Agents
 
-By default, the call acceptance behaviour functionality is disabled. Administrators can turn on the toggle to enable the functionality, allowing the call to be accepted while the connection message plays in the background instead of waiting for it to finish, enhancing agent efficiency and reducing call handling time by enabling immediate call acceptance without waiting for the connection message to finish.  
-<img src="../images/call-acceptance-behaviour.png" alt="Call Acceptance Behavior" title="Call Acceptance Behavior" style="border: 1px solid gray; zoom:80%;">
+Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
+<img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">

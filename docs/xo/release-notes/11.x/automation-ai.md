@@ -2,6 +2,88 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+
+## v11.9.0 January 05, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Build Agentic Experiences
+
+This release introduces new features that simplify building agentic experiences. Create more natural and personalized virtual assistant conversations while streamlining your development workflow.
+
+#### Function or Tool Calling Support in Agent Node
+
+Tool Calling enables Agent Node (previously GenAI Node) to interact with your business applications. You can define accessible tools, connect multiple actions, and incorporate external data into the conversation context. The recently launched DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Combine these features to deliver seamless agentic experiences for your customers and employees. 
+
+Key updates
+
+* Tool calling integration with business applications and external data.
+* New tools repository for managing custom and system integrations.
+* Direct connection between tools and actions (scripts, service Search AI, Webhooks).
+* Prompts include tool definitions and context for decision-making.
+
+Key benefits
+
+* More dynamic, responsive virtual assistants.
+* Integration of real-time data and complex query handling.
+* Flexibility with custom/system integrations and prompts.
+* Seamless orchestration between user input, functions, and responses.  
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
+
+
+#### GenAI Node and Prompt Node Renaming
+The GenAI Node has been renamed the Agent Node to reflect its agentic experiences and tool-calling capabilities, while the GenAI Prompt Node has been renamed the Prompt Node.
+
+### DialogGPT
+#### DialogGPT App Lifecycle Management
+DialogGPT has been integrated into the app lifecycle to centralize configuration management, ensuring consistency and scalability.
+
+Key updates
+
+* Integrated with Generative AI & LLM Settings for centralized management.
+* DialogGPT events added to Integrations & API Extensions.
+* Full and partial app export/import support.
+* Version control and comparison features.
+
+[Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
+#### OpenAI GPT-4o mini Support for DialogGPT
+The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient conversation management. These models are compact and optimized variants of the GPT-4 family, designed to deliver high efficiency in resource-constrained environments while maintaining advanced capabilities.
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/conversation-orchestration.md)
+
+
+### Dialog Builder 
+
+#### Enhanced Sticky Notes for Intuitive Note-Taking Experience 
+The redesigned notes feature works like familiar sticky notes, making it easier and more intuitive to capture and organize your thoughts.
+
+Key updates
+
+* Streamlined editing with autosave functionality.
+* Resizable notes for better organization.
+* Customizable background colors.
+* Default yellow styling with instant edit mode.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+
+
+#### Upgraded Bookmarks for Better Visual Organization 
+The enhanced bookmarks feature improves organization and collaboration capabilities.
+
+Key updates
+
+* Customizable background colors.
+* Improved loading experience with visual feedback.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+
+
+<hr>
+
 ## v11.8.1 December 19, 2024
 
 <u>Patch Release</u>

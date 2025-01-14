@@ -14,7 +14,7 @@ Follow these steps:
 
 2. Set up Contact Center:
 
-    1. Assign Supervisors/Auditors to relevant queues in your Contact Center application so that they have access to the relevant interactions.
+    1. Assign Supervisors/Auditors to relevant [Queues](https://docs.kore.ai/xo/console/monitor-queues-agents-interactions-service-levels/?h=queues#queues) in your Contact Center application so that they have access to the relevant interactions. 
 
 3. Enable features:
 

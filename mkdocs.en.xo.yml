@@ -187,9 +187,10 @@ nav:
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
-          - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
-          - GenAI Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
-          - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
+          - Agent Node:
+            - Agent Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
+            - Agent Node v1: automation/use-cases/dialogs/node-types/genai-node.md
+          - Prompt Node: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
           - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
@@ -301,7 +302,9 @@ nav:
                 - Introduction: searchai/content-sources/connectors.md
                 - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
                 - RACL Overview: searchai/content-sources/racl-support.md
+                - Aha: searchai/content-sources/connectors/aha.md
                 - Airtable: searchai/content-sources/connectors/airtable.md
+                - Amazon S3: searchai/content-sources/connectors/amazons3.md
                 - Asana: searchai/content-sources/connectors/asana.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - Box: searchai/content-sources/connectors/box.md
@@ -310,6 +313,8 @@ nav:
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
+                - Egnyte: searchai/content-sources/connectors/egnyte.md
+                - Freshservice: searchai/content-sources/connectors/freshservice.md
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
@@ -320,13 +325,19 @@ nav:
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
+                - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md  
-                - WordPress: searchai/content-sources/connectors/wordpress.md   
+                - Trello: searchai/content-sources/connectors/trello.md
+                - WordPress: searchai/content-sources/connectors/wordpress.md
+                - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md         
     - Index:               
-        - Extraction Strategy: searchai/content-extraction/extraction.md
+        - Extraction:
+            - ETL Tool: searchai/content-extraction/etl.md
+            - Content Extraction: searchai/content-extraction/extraction.md
+            - Content Transformation: searchai/content-extraction/transformation.md
         - Content Browser: searchai/chunk-browser.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -342,8 +353,12 @@ nav:
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+    - FAQs:
+        - Automatic vs Manual Training: searchai/application-training.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center-ai.md    
+    - Overview: contactcenter/about-contact-center-ai.md 
+    - Getting Started:
+      - Minimum System and Browser Requirements: channels/kore.ai-voice-gateway/minimum-system-and-browser-requirements.md
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
@@ -360,6 +375,7 @@ nav:
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
         - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
+        - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
@@ -409,8 +425,7 @@ nav:
         - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
-        - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
-        - Agent Scorecards: quality-management/configure/agent-scorecards.md
+          - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: quality-management/configure/settings.md        
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
@@ -432,6 +447,7 @@ nav:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
       - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
+      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md      
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 

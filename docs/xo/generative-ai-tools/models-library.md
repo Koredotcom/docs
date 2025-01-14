@@ -139,8 +139,8 @@ Steps to integrate an Amazon Bedrock:
         * Ensure you have the correct endpoint URL for the AssumeRole action in the AWS region where your IAM role is located.
     * **Amazon Resource Name (ARN)**: The Amazon Bedrock ARN that grants your IAM role access to the specific Language Model in Amazon Bedrock. The ARN uniquely identifies the Language Model resource within the Amazon Bedrock service.
     * **Endpoint**: Enter the URL to interact with the Language Model’s API. 
-    * **Headers**: If needed, include additional headers with metadata specific to your Language Model integration. These headers provide extra information or configuration options to the Language Model API.
-    <img src="../images/abr2.png" alt="Amazon Bedrock" title="Amazon Bedrock" style="border: 1px solid gray; zoom:70%;">
+    * **Headers**: If needed, include additional headers with metadata specific to your Language Model integration. These headers provide extra information or configuration options to the Language Model API.  
+    <img src="../images/abr2n.png" alt="Amazon Bedrock" title="Amazon Bedrock" style="border: 1px solid gray; zoom:70%;">
 
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.

@@ -118,6 +118,7 @@ nav:
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
+    - Import an Agent: agents/import-an-agent.md
     - Agent Flows:
       - About Flows: agents/agents-flows/flows-overview.md
       - Manage Flows: 
@@ -129,7 +130,8 @@ nav:
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
-        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: agents/agents-flows/types-of-nodes/docsearch-node.md        
         - End Node: agents/agents-flows/types-of-nodes/end-node.md 
       - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
@@ -151,6 +153,8 @@ nav:
       - Agent Audit Logs: agents/agent-audit-log.md
     - Configurations:
       - Configure an Agent: agents/configure-an-agent.md
+      - Export an Agent: agents/export-an-agent.md
+      - Import Agent as a Version: agents/import-an-agent/#import-agent-as-a-version
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tuned Models: 
@@ -202,6 +206,7 @@ nav:
       - Analytics:
         - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
+        - Model Traces: settings/monitoring/analytics/model-traces.md
     - Security and Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
     - Billing:

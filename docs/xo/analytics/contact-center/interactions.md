@@ -263,6 +263,10 @@ The transcripts tab also shows the call transfer stages:
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
 <img src="../images/transfer-stages.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
 
+!!! Note
+
+    To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+
 **DETAILS**: This tab shows the following details:
 
 **Start**: Conversation start time  
@@ -348,7 +352,65 @@ The following recording settings can be configured:
         If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
 
 A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-recording-control).  
-<img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">  
+
+List of recording status and messages:
+
+<table>
+  <tr>
+   <td><strong>Status</strong>
+   </td>
+   <td><strong>Message</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>failed
+   </td>
+   <td>Media generation failed due to some technical issue. Please contact your administrator
+   </td>
+  </tr>
+  <tr>
+   <td>media_unavailable
+   </td>
+   <td>No audio recording found in the server. Please contact your administrator
+   </td>
+  </tr>
+  <tr>
+   <td>call_in_progress
+   </td>
+   <td>Media unavailable while call is in progress. Please recheck once the call has ended.
+   </td>
+  </tr>
+  <tr>
+   <td>media_in_progress
+   </td>
+   <td>Media generation is in progress. Please wait for a few minutes.
+   </td>
+  </tr>
+  <tr>
+   <td>partial_download_failed
+   </td>
+   <td>Unable to fetch the recording. Please click the button below to retry. \
+<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. Please contact your administrator’ message appears.
+   </td>
+  </tr>
+  <tr>
+   <td>partial_upload_failed
+   </td>
+   <td>Unable to fetch the recording. Please click the button below to retry.
+<p>
+<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. 
+   </td>
+  </tr>
+  <tr>
+   <td>partial_failed
+   </td>
+   <td>Unable to fetch the recording. Please click the button below to retry.
+<p>
+<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue.
+   </td>
+  </tr>
+</table>
 
 ## Diagnostics
 

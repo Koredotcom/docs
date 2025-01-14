@@ -23,23 +23,44 @@ Notifications is compatible with the following browsers:
 Steps to manage notifications:
 
 1. Click the **Bell** icon on the top right corner.  
-<img src="../images/bell-icon.png" alt="Notifications Button" title="Notifications Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/bell-icon.png" alt="Notifications Button" title="Notifications Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Settings** icon to view the available options.  
-<img src="../images/settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 3. Notifications can be managed for the following:  
-<img src="../images/notification-preferences.png" alt="Notification Preferences" title="Notification Preferences" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/notification-preferences.png" alt="Notification Preferences" title="Notification Preferences" style="border: 1px solid gray; zoom:70%;">
 
     !!! Notes
 
         1. The error prompt sound notifications apply only to console runtime errors and not validation errors on the configuration page.
         2. Web notification option is available for New Message from Customer, Message from manager, SLA Breach, Transfer Request, and New Conversation.
 
-    1. Click the name on the right corner to change the sound for a notification type.  
+4. Click the name on the right corner to change the sound for a notification type.  
     <img src="../images/notification-name.png" alt="Notification Name" title="Notification Name" style="border: 1px solid gray; zoom:60%;">
-    
-    2. Click **Save** to update the notification settings.
+
+### Repeat Notifications
+
+Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:
+* Minimize missed interactions.
+* Improve response times.
+* Enhance overall customer satisfaction and SLA compliance.
+
+#### Enable Repeat Notifications
+
+Steps to enable repeat notifications for incoming interactions:
+
+1. Click the **Repeat** icon beside Incoming Interactions to enable it.    
+    <img src="../images/enable-repeat-notification.png" alt="Enable Repeat Tone" title="Enable Repeat Tone" style="border: 1px solid gray; zoom:80%;">
+
+    !!! Note
+
+        The repeat functionality is not enabled by default.
+
+2. The default timer is set to 5 seconds. Select the duration from the dropdown.  
+<img src="../images/duration-dropdown.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
+
+3. Click **Save** to update the notification settings.
 
 ## User Diagnostics
 

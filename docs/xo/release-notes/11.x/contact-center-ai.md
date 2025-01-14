@@ -2,6 +2,175 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+<hr>
+
+## v11.9.0 January 05, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Console
+
+#### Enhanced Contact Recognition for Better Customer Service
+
+This enhancement improves how saved contact information is displayed during customer interactions to help agents deliver more personalized service.
+
+Key updates
+
+* Automatic contact name display for inbound/outbound interactions.
+* For the saved contact entries, phone numbers now show associated contact names instead of "Anonymous".
+* Updates are visible in the chat history and interaction pane.
+
+Key benefits
+
+* Instant recognition of known contacts for personalized customer interactions.
+* Reduced time spent identifying callers.
+* Consistent contact display across all interaction points.
+
+### Supervisor Console
+
+#### Improved Supervisor Monitoring with Callback and Voicemail Filters
+
+Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md)
+
+### Configuration
+
+#### Configurable Repeat Notification Alerts for Improved Response Time
+
+The enhanced notification system ensures agents never miss an incoming interaction.
+
+Key updates
+
+* Configurable notification intervals (5s, 10s, 30s, 1min).
+* Unified sound alerts for transfers and incoming interactions.
+* Visual loop notification icon in settings; disabled by default for all accounts.
+
+Key benefits
+
+* Fewer missed interactions.
+* Customizable alerts based on team needs.
+* Automatic alert management based on agent actions.
+* Simplified notification system with combined transfer alerts.
+
+Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#enable-repeat-notifications)
+
+
+#### Blended Mode for Voice and Digital Interactions
+
+Blended Mode allows agents to handle both voice and digital interactions simultaneously.
+
+Key updates
+
+* Blended Agents toggle to enable/disable it at the organization level.
+* System Busy activates only when all slots (voice and digital) are full. The existing channel-specific system busy logic applies when blended mode is disabled.
+
+Key benefits
+
+* Efficient handling of mixed interaction types.
+* Better resource utilization.
+* Clearer agent availability status.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#blended-agents)
+
+#### Real-time LLM Streaming for Enhanced Voice Interactions
+
+Contact Center supervisors can enable real-time streaming of LLM responses to significantly reduce latency to create more responsive and engaging voice interactions.
+
+Key updates
+
+* Real-time streaming of rephrased responses.
+* Bot delay response behavior controls. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md)
+* Role-based access controls (Full Access for Admins/Supervisors). [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+### Campaigns
+
+#### Decoupling Flows and Numbers for SMS Campaigns
+
+This update decouples flows and numbers in Advanced SMS Campaigns to offer more flexible flow and number selection.
+
+Key updates
+
+* Independent flow and number selection.
+* Access to all published start flows.
+* Comprehensive caller ID options from available numbers.
+
+Key benefits
+
+* Greater campaign configuration flexibility.
+* Simplified flow selection process.
+* More efficient campaign setup.
+* Better control over outbound messaging.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#create-sms-campaigns)
+
+#### Outbound SMS API Integration
+
+This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/send-outbound-sms.md)
+
+
+### Analytics
+
+#### External Transfer Status Tracking
+
+This update adds detailed transfer status visibility across the Interaction Dashboard, Reports, and API.
+
+Key updates
+
+* Success/failure status tracking.
+* Transfer mode and reason reporting.
+* Consistent status display in the dashboard, reports, and API.
+* Detailed failure reason reporting ("No Answer," "Busy," "Declined").
+
+Key benefits
+
+* Better transfer outcome monitoring.
+* Improved transparency for external transfers.
+* Standardized status tracking across platforms.
+* Clear visibility into transfer failures.
+
+#### Updated Queue Load Calculation for Blended Conversations
+
+**DASHBOARD** > **Queues & Agents**
+
+The modified queue load formula accurately reflects the blended conversation handling. It represents how agents manage multiple conversation types simultaneously across voice, chat, messaging, and email channels.
+
+**Queue Load** = (Voice + Chat/3 + Messaging/8 + Email/10) x 100 / Available Agents
+
+Where
+
+Voice = Voice Count; Ongoing or waiting in queue (including Voicemails or Callbacks before turning Outbound).  
+Chat = Chat Count; Live chat conversations ongoing or waiting in a queue.  
+Messaging = MessagingCount; Messaging conversations ongoing or waiting in a queue.  
+Email = Email Count; Email conversations ongoing or waiting in a queue.
+
+### API
+
+#### Call Termination Tracking Added to Call Details API (v2)
+
+The Call Details API (v2) has been updated to include the `disconnectingEvent` parameter to provide clearer visibility into call termination reasons. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details.md)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Fetch Again Option for Failed Recordings
+
+This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### Enhanced SIP Trunk Options
+
+To enhance the flexibility and compatibility of the SIP Trunk configuration, two new fields have been added to the 'SIP Trunk' configuration. These fields give more control over how DID numbers are handled and DTMF signals are transmitted.
+
+Key updates
+
+* E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
+* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Microsoft Teams Integration for Inbound and Outbound Calls
+
+In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+<hr>
+
 ## v11.8.1 December 19, 2024
 
 <u>Patch Release</u>
@@ -39,7 +208,6 @@ Two options are available if the bot does not respond within Give Up Timeout:
 
 * End the Call (default): Option to add a custom message.
 * Transfer the Call: Option to add a custom message for external agent transfer.
-
 
 <hr>
 
@@ -1016,4 +1184,3 @@ The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/dis
 #### Selected Hours Report
 
 The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/selected-hours-report.md)
-
