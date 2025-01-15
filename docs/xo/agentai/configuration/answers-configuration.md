@@ -1,7 +1,16 @@
 # Configure Search AI
 ## Overview
 
-Search AI provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. To enhance the search capabilities of Agent AI and allow restricted access for targeted users, you can configure up to three Search AI apps with the following scopes:
+Search AI provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. Users have the flexibility to select the built-in Search AI functionality or the custom Search AI apps:
+
+* **None**: No Search AI functionality.
+* **Use Search AI Configurations from the current app**: Uses the in-built Search AI app that comes with the current XO11 app.
+* **Link Search AI Configurations from a different app**: Users can configure up to three customized Search AI apps.  
+<img src="../answers-configuration-images/answers-generation.png" alt="answers-generation" title="answers-generation" style="border: 1px solid gray; zoom:40%;">
+
+## Link Search AI Configurations from a different app
+
+To enhance the search capabilities of Agent AI and allow restricted access for targeted users, you can configure up to three Search AI apps with the following scopes:
 
 * **Internal Information**: This feature can be leveraged to send internal notes to agents. Agents can’t share the search results with customers as it doesn’t include the **Send** / **Copy** buttons. The following screenshot shows internal information related to the search words "national pension":  
 <img src="../answers-configuration-images/internal-information-1.png" alt="internal-information" title="internal-information" style="border: 1px solid gray; zoom:40%;">

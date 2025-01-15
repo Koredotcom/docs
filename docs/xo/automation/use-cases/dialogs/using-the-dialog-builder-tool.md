@@ -20,7 +20,7 @@ Steps to add a dialog task:
 
     <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
 
-5. The **Create Dialog** window appears; from here, you can **Create a dialog from scratch**, **Gen AI** to create a dialog, or **Marketplace** with integrations to create a dialog.
+5. The **Create Dialog** window appears; from here, you can **Create a dialog from scratch**, **Generate with AI** to create a dialog, or **Marketplace** with integrations to create a dialog.
 6. Click on **Start From Scratch.**
 
     <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
@@ -58,12 +58,12 @@ The nodes and the flow for the Business Logic are automatically built for your c
 The Platform auto-defines the _Entities, Prompts, Error Prompts, Bot Action nodes, Service Tasks, Request Definition_, and other parameters.
 
 
-### Auto-Generate Dialog Tasks using Gen AI
+### Auto-Generate Dialog Tasks using AI
 
 Right after creating your dialog task, you will see a **Conversation Preview** window. In this window, you can view mock conversations and convert them into dialog flows for every intent.
 
 
-1. Click the **Gen AI** option.
+1. Click the **Generate with AI** option.
 
     <img src="../images/using-dialog-builder-img5-create-dialog-genai.png" alt="Select Gen Ai" title="Select Gen Ai" style="border:1px solid gray;zoom:60%;">
 
@@ -296,7 +296,7 @@ Node type groups in the panel:
 * **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
 * **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
 * **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
-* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
+* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, Agen Node and Prompt Node.
 
 ### The Canvas
 
