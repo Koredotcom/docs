@@ -16,16 +16,19 @@ To access the changelogs, follow the below steps:
 
 For more information about a specific change, click on the **Details** link.
 
-<img src="./images/change-logs-img1.png" alt="Change Logs" title="Change Logs" style="border: 1px solid gray;zoom:50%;"/>
+![Change Logs](./images/change-logs-img1.png "Change logs")
 
 This page shows the change made to the application in JSON format.
 
-<img src="./images/change-logs-img2.png" alt="Change Logs details" title="Change Logs details" style="border: 1px solid gray;zoom:50%;"/>
+![Change Logs](./images/change-logs-img2.png "Change logs")
 
 
 ## Search and Filter Options
 
 The Change Logs page includes search and filter functionalities to locate specific log entries. Filters can be applied to view logs from a specific module, for a given timeframe, from a specific user or with specific changes.
 
-<img src="./images/filter-logs.png" alt="Change Logs details" title="Change Logs details" style="border: 1px solid gray;zoom:50%;"/>
+![Change Logs](./images/filter-logs.png "Change logs")
 
+To download the changes in a CSV format, use the download option. All the details of the changes in the selected timeframe are captured and downloaded to the local machine. 
+
+![Download Logs](./images/download-csv.png "Download logs")
