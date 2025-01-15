@@ -6,7 +6,7 @@ Search AI provides an intelligent, contextual, and personalized experience in ev
 * **None**: No Search AI functionality.
 * **Use Search AI Configurations from the current app**: Uses the in-built Search AI app that comes with the current XO11 app.
 * **Link Search AI Configurations from a different app**: Users can configure up to three customized Search AI apps.
-<img src="./answers-configuration-images/answers-generation.png" alt="answers-generation" title="answers-generation" style="border: 1px solid gray; zoom:40%;">
+<img src="../answers-configuration-images/answers-generation.png" alt="answers-generation" title="answers-generation" style="border: 1px solid gray; zoom:40%;">
 
 ## Link Search AI Configurations from a different app
 
