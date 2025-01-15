@@ -58,7 +58,7 @@ The first page is a list of existing Dialog Tasks. Now, let us review the featur
 
 ### Edit
 
-Clicking the **Edit** (<img src="../images/navigate-dialog-builder-edit.png">) corresponding to a dialog task opens the [Dialog Builder](#dialog-builder---conversation-design-and-logic-building) canvas, where you can design the dialog task based on the conversation logic and business requirements. You can add and configure various components and features to build the end-to-end conversation flow.
+Clicking the **Edit** (<img src="../images/navigate-dialog-builder-edit.png">) corresponding to a dialog task opens the [Dialog Builder](../dialogs/navigating-dialog-tasks.md#dialog-builder---conversation-design-and-logic-building) canvas, where you can design the dialog task based on the conversation logic and business requirements. You can add and configure various components and features to build the end-to-end conversation flow.
 
 ### Clone
 
