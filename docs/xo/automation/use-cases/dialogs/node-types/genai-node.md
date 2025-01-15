@@ -4,7 +4,7 @@
 The **Agent Node** lets you leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. You can define the entities you would like to collect and also the business rules that govern the collection of these entities. The XO Platform orchestrates the conversation using contextual intelligence, ensuring that the conversation is always grounded to your enterprise business rules. You can also provide exit rules for handing off the conversation to the virtual assistant or the human agents.
 
 
-## Why a Agent Node?
+## Why an Agent Node?
 
 
 There are two key scenarios when an Agent node might be beneficial:
