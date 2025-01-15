@@ -10,7 +10,7 @@ To access the changelogs, follow the below steps:
 3. On the left pane, click **Change Logs**.
 4. The Change Logs page displays log files from all modules of the application, by default. Each log entry includes the following details:
     * User Name and Email ID: Identifies who made the change.
-    * Module: Specifies the module where the change occurred.
+    * Module: Indicates the module where the change occurred. This page provides detailed updates for all modules, including **Automation AI, Search AI, Agent AI, and Contact Center AI**. Changes that apply universally across all modules are categorized as **Global**. 
     * Changes: Provides a brief description of the change.
     * Date: Timestamp indicating when the change was made.
 
