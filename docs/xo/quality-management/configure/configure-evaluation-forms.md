@@ -24,7 +24,7 @@ The Evaluation Forms has the following options:
 * **Queues**: Shows the forms assigned and not assigned in the queue.
 * **Channel**: Shows the assigned form channel mode: Voice or Chat interaction. Only one form is allowed for the audit. 
 * **Created By**: Shows the form creator's name.
-* **Pass Score**: Shows the set pass score percentage for the specified assigned forms and the Channel selected.
+* **Pass Score**: Shows the pass score percentage for the selected assigned forms and channels. The pass score is the minimum score that the agents must achieve.
 * **Status**: Allows you to enable or disable the scoring for the individual Evaluation Form.  
 * **Search**: Provides a quick search option to view and update the Evaluation Forms by name only.
 
