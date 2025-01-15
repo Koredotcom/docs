@@ -44,13 +44,13 @@ The following web browsers are supported for use with XO Contact Center Agent an
   <tr>
    <td>Chrome
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
   <tr>
@@ -58,23 +58,23 @@ The following web browsers are supported for use with XO Contact Center Agent an
    </td>
    <td>Supported  
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
   <tr>
    <td>Safari
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
 </table>
@@ -84,25 +84,25 @@ The following web browsers are supported for use with XO Contact Center Agent an
 * Chrome — Requires a current major release or one previous version.
 * Microsoft Edge Chromium — Requires current release.
 
-Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well. \
+Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well.  
 Still, the customer will be required to update browser versions if an issue is identified due to browser version mismatches.
 
-    !!! Notes
+!!! Note
 
-        * The latest version of Chrome, Safari, or Edge.
-        * JavaScript and cookies must be enabled.
-        * Grant permissions and allow access to the camera and microphone when prompted by the browser.
-        * Turn off the pop-up blocker, and allow a separate WebRTC window to open.
-        * Grant permissions and allow users to share their screen, a specific window, or the entire desktop when prompted.
-        * Allow Transport Layer Security (TLS) v.1.2 protocol (Kore.AI doesn’t support TLS versions 1.0, 1.1, and 1.3).
-        * Do not minimize the active call tab or window. If you minimize the active window, then the client stops working properly. \
-        For example, you may experience a delay when you answer a call or are unable to answer a call. Restore the minimized window for the client to function properly.
-        * Chrome updates automatically. Versions of Chrome are only an issue if the customer’s IT department restricts automatic updates.
-        * Running Microsoft Edge in IE compatibility mode is not supported.
+    * The latest version of Chrome, Safari, or Edge.
+    * JavaScript and cookies must be enabled.
+    * Grant permissions and allow access to the camera and microphone when prompted by the browser.
+    * Turn off the pop-up blocker, and allow a separate WebRTC window to open.
+    * Grant permissions and allow users to share their screen, a specific window, or the entire desktop when prompted.
+    * Allow Transport Layer Security (TLS) v.1.2 protocol (Kore.AI doesn’t support TLS versions 1.0, 1.1, and 1.3).
+    * Do not minimize the active call tab or window. If you minimize the active window, then the client stops working properly.  
+    For example, you may experience a delay when you answer a call or are unable to answer a call. Restore the minimized window for the client to function properly.
+    * Chrome updates automatically. Versions of Chrome are only an issue if the customer’s IT department restricts automatic updates.
+    * Running Microsoft Edge in IE compatibility mode is not supported.
 
 ### Disable Your Browser’s Sleep Mode Setting
 
-When using the SmartAssist/XOCC console in a browser with multiple tabs open, you may experience connection issues when the console isn’t the active tab. To prevent this from happening, you might want to consider disabling your browser’s sleep mode setting. For more information, see below.
+When using the Contact Center AI console in a browser with multiple tabs open, you may experience connection issues when the console isn’t the active tab. To prevent this from happening, you might want to consider disabling your browser’s sleep mode setting. For more information, see below.
 
 #### Microsoft Edge
 
@@ -129,7 +129,7 @@ In Google Chrome, you can disable sleep mode for specific sites.
 7. Type your region domain in the Site box. For example, **platform.kore.ai**.
 8. Click **Add**.
 
-## **Firewall Requirements**
+## Firewall Requirements
 
 Allow traffic and whitelist the ports listed below in their respective firewalls based on the Session Border Controller (SBC) they connect to.
 

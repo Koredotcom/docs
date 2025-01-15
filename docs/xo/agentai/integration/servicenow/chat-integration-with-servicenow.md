@@ -17,6 +17,7 @@ This section outlines the essential components, credentials, and permissions req
     * ServiceNow: Admin Role
     * Kore XO Platform (Optional): Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
 
+
 ## Interaction between ServiceNow and Kore.ai Agent AI
 
 The following architecture diagram shows the interaction between ServiceNow and Agent AI:
@@ -53,8 +54,6 @@ Setting Up Agent AI chat with ServiceNow consists of the following steps:
 <img src="../images/import-update-xml.png" alt="import-update-xml" title="import-update-xml" style="border: 1px solid gray; zoom:80%;">
 
 4. Open the update set **Agent AI by kore.ai** (this is the official name for Kore Agent AI).  
-<img src="../images/open-agent-ai-by-kore-ai.png" alt="open-agent-ai" title="open-agent-ai" style="border: 1px solid gray; zoom:80%;">
-
 #### Preview Update Set
 
 To preview the update set, click the **Preview Update Set** tab.
@@ -78,9 +77,11 @@ Steps to resolve the error:
 * Go to **Update Set Review Problems**, and select all.
 * On the right-side, select **Accept remote update** from the **Action on selected rows…** drop-down list. 
 
+
     !!! note
 
         **Multi-language support** for Agent AI is available only with the **Update Set**.
+
 
 ### Step 2: Set Up Agent AI Application Configuration
 
@@ -96,6 +97,7 @@ This section details the steps to set up the Agent AI app configuration.
     <img src="../images/kore-config-customtable.png" alt="kore-config-customtable" title="kore-config-customtable" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New.**
+
 4. Add the **Agent AI URL**, **Bot Id**, **Client Id**, **Client Secret** (Refer to [Prerequisite](#prerequisites), and **Table Key** (give the Table Key as **koreai**).
 
     !!! note
@@ -103,6 +105,7 @@ This section details the steps to set up the Agent AI app configuration.
         The Client Secret & Token fields are masked for security reasons.        
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
+
 
 6. Click **Submit**.
 
@@ -134,10 +137,12 @@ Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentas
 
 * **Agent:** Once the agent accepts the incoming chat, an Interaction Record page opens, and the **Agent AI by Kore** is the first icon on the Contextual side panel.
 
+
     * The agent gets a notification of the incoming chat.  
         <img src="../images/incoming-chat-notification.png" alt="incoming-chat-notification" title="incoming-chat-notification" style="border: 1px solid gray; zoom:80%;">
 
     * Once the agent accepts the chat, the Agent AI widget appears on the right Contextual side panel. 
+
 
         <img src="../images/agent-ai-contextual-panel.png" alt="agent-ai-contextual-panel" title="agent-ai-contextual-panel" style="border: 1px solid gray; zoom:80%;">
 
@@ -150,6 +155,7 @@ Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentas
 This step is required if the chat client is routed through the Kore XO bot builder, and post agent transfer, it lands into the ServiceNow Agent workspace. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](https://developer.kore.ai/integrations/configuring-the-servicenow-agent-utah-and-vancouver/#Additional_Capabilities){:target=”_blank”}.
 
 For passing the language code dynamically from Kore XO to the Agent AI widget inside ServiceNow, add the following javascript code inside a script node of Kore XO dialog task before the Agent Transfer node of ServiceNow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
+
 
 ``` json
 let metaData = {
@@ -173,6 +179,7 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 ### Step 5: Using the Agent AI widget
 
 From the integration perspective, along with all the features and capabilities of Agent AI [Introduction to Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}, agents on ServiceNow have the flexibility to use the following additional features:
+
 
 * **Send / Copy Buttons:** Agents can use the **Send** and **Copy** buttons on the Agent AI UI to directly send and copy data from the Agent AI widget to the customer.  
 <img src="../images/send-copy-button.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">

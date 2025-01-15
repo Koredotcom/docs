@@ -314,6 +314,7 @@ nav:
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - Egnyte: searchai/content-sources/connectors/egnyte.md
+                - Freshdesk: searchai/content-sources/connectors/freshdesk.md
                 - Freshservice: searchai/content-sources/connectors/freshservice.md
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
@@ -356,7 +357,9 @@ nav:
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center-ai.md    
+    - Overview: contactcenter/about-contact-center-ai.md 
+    - Getting Started:
+      - Minimum System and Browser Requirements: channels/kore.ai-voice-gateway/minimum-system-and-browser-requirements.md
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md

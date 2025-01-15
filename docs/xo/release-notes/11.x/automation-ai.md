@@ -33,9 +33,9 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
 
+
 #### GenAI Node and Prompt Node Renaming
 The GenAI Node has been renamed the Agent Node to reflect its agentic experiences and tool-calling capabilities, while the GenAI Prompt Node has been renamed the Prompt Node.
-
 
 ### DialogGPT
 #### DialogGPT App Lifecycle Management
