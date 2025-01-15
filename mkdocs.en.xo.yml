@@ -331,6 +331,7 @@ nav:
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md  
+                - Slack: searchai/content-sources/connectors/slack.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
