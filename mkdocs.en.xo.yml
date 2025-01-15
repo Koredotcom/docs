@@ -316,6 +316,7 @@ nav:
                 - Egnyte: searchai/content-sources/connectors/egnyte.md
                 - Freshdesk: searchai/content-sources/connectors/freshdesk.md
                 - Freshservice: searchai/content-sources/connectors/freshservice.md
+                - Front: searchai/content-sources/connectors/front.md
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
