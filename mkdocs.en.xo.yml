@@ -357,7 +357,9 @@ nav:
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center-ai.md    
+    - Overview: contactcenter/about-contact-center-ai.md 
+    - Getting Started:
+      - Minimum System and Browser Requirements: channels/kore.ai-voice-gateway/minimum-system-and-browser-requirements.md
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
