@@ -35,7 +35,7 @@ The Proactive Mode toggle has been enhanced to include the “Automatic Dialog T
 
 #### ServiceNow Chat Integration
 
-Agent AI is now integrated with ServiceNow Chat. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/integration/servicenow/chat-integration-with-servicenow/){:target="_blank"}
+Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-right-24:](../../agentai/integration/servicenow/chat-integration-with-servicenow.md){:target="_blank"}
 
 <hr>
 
@@ -99,7 +99,7 @@ The Agent AI widget now supports conversation summarization in Japanese.
 ### Integration Enhancements
 
 #### Genesys Agent AI integration with Genesys Desktop Application
-The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/){:target="_blank"}.
+The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more :octicons-arrow-right-24:](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/){:target="_blank"}.
 
 #### Enhanced Language Support for NICE MAX Desktop
 The Agent AI integration with NICE MAX Desktop now supports multiple languages, allowing agents to interact with the Agent AI widget in their preferred language.
@@ -196,7 +196,7 @@ The widget v2 will be decommissioned by the end of November 2024. A banner has b
 
 #### Summary Support for NICE MAX Desktop
 
-Agents using NICE MAX Desktop now receive a concise summary at the end of a chat or voice session. This summary highlights key points and identifies action items, allowing agents to review important information quickly. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/integration/nice-max/nice-max-desktop-chat-and-voice/){:target="_blank"}.
+Agents using NICE MAX Desktop now receive a concise summary at the end of a chat or voice session. This summary highlights key points and identifies action items, allowing agents to review important information quickly. [Learn more :octicons-arrow-right-24:](../../agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md){:target="_blank"}.
 
 #### Multibot Support for Agent AI Voice in Genesys
 
@@ -211,7 +211,7 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 ### Enhanced NICE MAX Desktop Integration
 
-The Agent AI integration with NICE CX MAX Desktop now supports passing custom data to the Agent AI Widget and is compatible with XO v11. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/integration/nice-max/nice-max-desktop-chat-and-voice/){:target="_blank"}
+The Agent AI integration with NICE CX MAX Desktop now supports passing custom data to the Agent AI Widget and is compatible with XO v11. [Learn more :octicons-arrow-right-24:](../../agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md){:target="_blank"}
 
 ### Enhanced Salesforce-NICE CTI Integration
 
@@ -354,7 +354,7 @@ To improve the usability and relevance of the Playbooks module, Agent AI now res
 
 ### Feedback Reason and Comment on Summarization
 
-The Agent AI widget's Summary feature now offers enhanced feedback capabilities for auto-generated summaries. Agents can provide more specific and actionable feedback by selecting a reason from up to five customizable messages and adding optional comments. Administrators can edit these messages, turn the comment box on or off, and choose the feedback language. This improved feedback system allows agents to pinpoint issues with summaries more accurately, contributing to the continuous improvement of the auto-summarization feature's accuracy and relevance over time. [Learn More](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/feedback-settings/){:target="_blank"} 
+The Agent AI widget's Summary feature now offers enhanced feedback capabilities for auto-generated summaries. Agents can provide more specific and actionable feedback by selecting a reason from up to five customizable messages and adding optional comments. Administrators can edit these messages, turn the comment box on or off, and choose the feedback language. This improved feedback system allows agents to pinpoint issues with summaries more accurately, contributing to the continuous improvement of the auto-summarization feature's accuracy and relevance over time. [Learn More :octicons-arrow-right-24:](../../agentai/configuration/feedback-settings.md){:target="_blank"} 
 <img src="../images/feedback-reason-3.png" alt="feedback-reason" title="feedback-reason" style="border: 1px solid gray; zoom:80%;">
 
 ### Language-specific Summarization
@@ -368,7 +368,7 @@ The Agent AI widget now displays summaries more flexibly across all active tabs.
 
 ### Widget Layout Customization (Beta)
 
-The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options. [Learn More](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/widget-theming-layout-customization/){:target="_blank"}  
+The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options. [Learn More :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md){:target="_blank"}  
 <img src="../images/widget-layout-customization-5.png" alt="widget-layout-customization" title="widget-layout-customization" style="border: 1px solid gray; zoom:80%;">
 
 ### Entry/Exit Event Support in Third-Party Integration
