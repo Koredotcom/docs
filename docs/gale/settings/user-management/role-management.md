@@ -42,7 +42,7 @@ The features for which permissions and access levels are defined for a role incl
 
 * Agents
 * Models
-* Playground and Experiments
+* Prompts
 * Settings including Integrations, User Management, Security and Control, Monitoring, Guardrails, and Billing.
 
 **Agent Level**
@@ -365,9 +365,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="6" ><strong>Playground and Experiments</strong>
+   <td rowspan="6" ><strong>Prompts</strong>
    </td>
-   <td>Access to Playground
+   <td>Access to a Prompt
    </td>
    <td>Yes
    </td>
@@ -1049,7 +1049,7 @@ The following information is displayed:
 * Role Description
 * [Role Type](./role-management.md/#role-types){:target="_blank"}
 * Configuration panel to enable/disable access and set access levels for the listed permissions at the agent/account level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
-<img src="../images/module-wise permissions.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/module-wise-permissions-new.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;">
 
 #### Duplicate System Role
 
@@ -1098,7 +1098,7 @@ To add a custom role, follow the steps below:
 
           * Create Agents
           * Models 
-          * Playground and Experiments
+          * Prompts
           * Integrations
           * User Management
           * Security and Control Settings
