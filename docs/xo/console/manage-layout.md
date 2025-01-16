@@ -136,7 +136,7 @@ Steps to perform the connectivity and bandwidth tests:
 1. Click **Start Test**. The progress is displayed.  
 <img src="../images/start-test.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
 
-2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.
+2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.  
 <img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
 
 ## Connection Handling
