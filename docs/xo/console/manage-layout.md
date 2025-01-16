@@ -145,7 +145,7 @@ If the internet connection is lost, a message appears at the top of the agent co
 <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
 
 The system automatically attempts to reconnect to the network. If it fails after several tries, a message instructs you to reload the page.  
-<img src="../images/error-message.png" alt="Error" title="Error" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/error-message.png" alt="Error" title="Error" style="border: 1px solid gray; zoom:60%;">
 
 ## Features
 
