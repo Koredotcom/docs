@@ -1,12 +1,10 @@
-# Agent Node Configurations
+# Configure Agent Node
 
+By default, the Agent Node is disabled. Enable the node from **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**. [Learn more](../../../../generative-ai-tools/dynamic-conversations-features.md/#agent-node).
 
+Add the node to a dialog task and configure the node's properties and tool calling capabilities.  
 
-## How to Enable Agent Node
-
-By default, the feature/node is disabled. To enable the feature, [Dynamic Conversations Features](../../../../generative-ai-tools/dynamic-conversations-features.md).
-
-## Add to a Task
+## Add Agent Node to a Dialog Task
 
 Steps to add an Agent node to a Dialog Task:
 

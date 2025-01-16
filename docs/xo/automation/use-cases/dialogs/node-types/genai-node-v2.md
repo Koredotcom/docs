@@ -1,4 +1,4 @@
-# Agent Node (Draft)
+# Agent Node Overview
 
 The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to create sophisticated and versatile bots capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
