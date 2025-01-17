@@ -13,28 +13,29 @@ Slack can be easily integrated with Search AI to search through conversations in
 4. **Direct Links to Context:** Provides citations and direct links to Slack threads or messages, making it easy to dive into the original context. 
 5. **File attachment:** Provides precise searches for files or attachments shared in Slack using its metadata.
 
+<span style="text-decoration:underline;">Specifications</span>
+
 <table>
   <tr>
-   <td>
-Type of Repository 
+   <td> <b>Type of Repository </b>
    </td>
    <td>Cloud
    </td>
   </tr>
   <tr>
-   <td>Content Supported
+   <td><b>Content Supported</b>
    </td>
    <td>Conversations from Public and Private Slack Channels
    </td>
   </tr>
   <tr>
-   <td>RACL Support
+   <td><b>RACL Support</b>
    </td>
    <td>Yes
    </td>
   </tr>
   <tr>
-   <td>Content Filtering
+   <td><b>Content Filtering</b>
    </td>
    <td>No
    </td>

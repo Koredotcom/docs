@@ -31,7 +31,10 @@ To configure the ServiceNow connector, follow the steps listed below.
 
 ## **Step 1: Configure an OAuth endpoint in ServiceNow**
 
-If you are using **Basic authentication**, you can skip this step. To use OAuth 2.0 for authentication, set up an OAuth endpoint in your ServiceNow instance. Refer to[ this documentation](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) for step-by-step instructions to do the same.
+If you are using **Basic authentication**, you can skip this step. To use **OAuth 2.0** for authentication, set up an OAuth endpoint in your ServiceNow instance. Refer to[ this documentation](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) for step-by-step instructions to do the same. Use one of the following Redirect URLs as per your region and deployment. 
+* JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
+* DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
+* Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 
 ## **Step 2: Configure the ServiceNow connector in Search AI**
 
@@ -66,8 +69,7 @@ In ServiceNow, user access to knowledge base articles can be defined in three wa
 3. User Criteria with specific access permissions (Can Read and Can Contribute) \
 
 ![User criteria](images/servicenow/racl/user-criteria.png "User criteria")
- \
- \
+
 User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc. \
 ![Individual Users](images/servicenow/racl/users-in-user-criteria.png "Individual Users")
 
@@ -80,7 +82,7 @@ By default, SearchAI grants access to the following:
     * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
- \
+
 Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default.  Users associated with other conditions (e.g., department or role) are not automatically included. Therefore, these users cannot access articles unless they are explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledgebase is John@example.com and the knowledgebase can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. `"sourceAcl": [`
 
     ```

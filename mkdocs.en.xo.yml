@@ -330,7 +330,8 @@ nav:
                 - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md  
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md 
+                - Slab: searchai/content-sources/connectors/slab.md
                 - Slack: searchai/content-sources/connectors/slack.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
