@@ -105,29 +105,40 @@ Steps to configure SIP Trunk:
         2. Under **Domain Name**, provide the following:
             1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone.
             2. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
-                <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">
+                <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">  
+
         3. Under **MS Teams**, provide a Fully Qualified Domain Name (The domain name that specifies all domain levels, including the top-level domain and the root zone).  
                 <img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;">
 
-    3. (Optional) The **E.164 Syntax** is selected by default. Selecting this option prepends a + before the DID number.  
+    4. (Optional) The **E.164 Syntax** is selected by default. Selecting this option prepends a + before the DID number.  
         <img src="../images/e-164.png" alt="E-164 Syntax" title="E-164-Syntax" style="border: 1px solid gray; zoom:80%;">
-    4. Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
-    5. **DTMF Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
-    6. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
-    7. (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
-    8. Under SIP Termination URI, enter the **IP Address**/**Domain Name**.
-    9. Enter the **SIP Headers**.
-    10. Click **Next**.  
+    5. Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
+    6. **DTMF Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
+    7. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
+    8. (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
+    9. Under SIP Termination URI, enter the **IP Address**/**Domain Name**.
+    10. Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
+        * X-AgentName: {{agentName}}
+        * X-AgentPhoneNumber: {{agentPhoneNumber}}
+        * X-AgentEmailID:  {{agentEmailId}}
+        * X-AgentGroup: {{agentGroup}}
+        * X-AgentCustomID: {{agentCustomId}}
+        * X-AgentNickName: {{agentNickName}}
+        * X-QueueName:  {{agentQueue}}
+        * X-AgentFirstName: {{agentFirstName}}
+        * X-AgentLastName: {{agentLastName}}
+
+    11. Click **Next**.  
         <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;">
 
-    11. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
-    12. Click **Save**.  
+    12. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
+    13. Click **Save**.  
     <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:80%;">  
 
         Please wait for upto ten minutes after saving for the IPs to be whitelisted.  
         <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
-    13. The selected information appears on the SIP Numbers tab.  
+    14. The selected information appears on the SIP Numbers tab.  
         <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:100%;">
 
 ### Attach Flow
