@@ -39,7 +39,7 @@ Steps to create an SMS campaign:
     * **Priority**: Select the priority for the campaign from the drop-down.  
     <img src="../images/general-tab-sms.png" alt="General Tab" title="General Tab" style="border: 1px solid gray; zoom:80%;">
 
-3. On the **Message** tab, you can select from two available formats: 
+3. On the **Message** tab, you can select from two available formats:
 
     * **Simple**: This format is useful for sending simple outbound messages. Select a template for the SMS campaign from the drop-down. Click the 🖉 icon to enter the message to be shared.  
         <img src="../images/simple-message.png" alt="Simple Message" title="Simple Message" style="border: 1px solid gray; zoom:80%;">
