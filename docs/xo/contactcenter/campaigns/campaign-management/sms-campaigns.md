@@ -60,8 +60,6 @@ Steps to create an SMS campaign:
 In the Simple message format, the caller ID displays numbers configured for Outbound only, which are not linked to any flows.  
 In the Advanced message format, businesses can establish two-way communication with their end customers. Using the Advanced message format, you can associate an SMS Flow that can take the end customers through an automation journey, run dialog tasks, and connect to live agents if required.
 
-
-
 ## Edit an SMS Campaign
 
 Editing an SMS campaign allows you to make changes to the campaign as per your needs.
