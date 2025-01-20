@@ -527,7 +527,7 @@ My Dashboard
    </td>
    <td>The sum of time from when the agent starts talking to the end of the call/no. of conversations answered
    </td>
-   <td>Average of (time from when the Agent starts talking to the end of the call.)
+   <td>Average of time from when the Agent starts talking to the end of the call
    </td>
    <td>NA
    </td>
