@@ -375,7 +375,7 @@ Call Volume API
    </td>
    <td>NA
    </td>
-   <td>All the conversations that came into the SmartAssist routing system fulfilling the filters
+   <td>All the conversations that came into the Contact Center AI routing system fulfilling the filters
    </td>
    <td>NA
    </td>
@@ -551,7 +551,7 @@ Call Volume API
 <br>
 Monitor tab
    </td>
-   <td>Avg Engagement time – mute/hold time
+   <td>Average Engagement time – mute/hold time
    </td>
    <td>Average talk time
    </td>
