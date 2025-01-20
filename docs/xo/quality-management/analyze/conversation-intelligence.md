@@ -304,9 +304,13 @@ The bubble plotting visual representation helps you to quickly identify sentimen
 The bubble size reflects the volume of interactions for a topic. It is dynamically calculated within the selected date range, with the size scaled proportionally to show the topic's interaction volume relative to the minimum and maximum values. By default, all three sentiment colors are selected, showing a combined view of all topics with varying sentiments. By clicking on a specific sentiment color, you can view the most relevant topics within each sentiment category.
 
 The color logic for sentiment:
+
 * 1<=x<4: Negative (Red)
+
 * 4<=x<6: Neutral (Grey)
+
 * 6<=x<=10: Positive (Green)
+
 
     !!! Note
 
