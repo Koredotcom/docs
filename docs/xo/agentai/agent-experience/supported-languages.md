@@ -748,11 +748,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -848,11 +848,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -948,11 +948,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1028,11 +1028,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1128,11 +1128,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1548,11 +1548,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1628,11 +1628,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1688,11 +1688,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1948,11 +1948,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -1968,11 +1968,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -2028,11 +2028,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -2088,11 +2088,11 @@ The following table displays all the languages supported by the Agent AI widget,
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
