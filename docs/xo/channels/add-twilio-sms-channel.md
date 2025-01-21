@@ -62,6 +62,6 @@ To add the Twilio Channel, pursue the following steps:
 15. Copy the **Messaging Service SID** and click **Save**.
 16. On the Twilio Configuration tab, paste the **Messaging Service SID** and click **Save**. The configuration saved message is displayed.
 
-**Related Links**
+**Related Link**
 
-* [How do I include an Image in an Outbound Twilio SMS (MMS)?](../kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md)
+[How do I include an Image in an Outbound Twilio SMS (MMS)?](../kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md)
