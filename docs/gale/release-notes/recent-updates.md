@@ -2,6 +2,44 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent GALE releases.
 
+## v1.0.8 January 10, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, security fixes, and bug fixes summarized below.
+
+**New Features**
+
+* **Evaluation Studio**: GALE’s new Evaluation Studio serves as a comprehensive tool for assessing LLM performance. The platform offers users the flexibility to either select from a variety of pre-existing evaluators or design their own to measure model effectiveness. Users can upload and organize datasets, which include inputs and outputs, into designated projects. The evaluation process accommodates adjustable thresholds and scoring metrics, allowing customization based on specific evaluator needs.
+* **Public API Support**: Users can now generate and manage API keys with customizable expiration dates and scopes (e.g., deploying models or agents). The API endpoints enables users to deploy, undeploy, import, and export GALE agents, models, and guardrails with the appropriate permissions.
+
+
+**Feature Enhancements**
+
+* **Function Calling:**
+    * Tool traceability and enhanced debugger in Gen AI nodes: Users can now trace tool calls (both sequential and parallel) in the Gen AI node. Each tool call is logged, with input and output data displayed in the debug panel, with a dedicated tool trace view.
+    * Agent and model analytics also include relevant metrics for tool calls, such as latency and token calculations.
+    * Change log and permissions: Tool-related events are now captured in the flow change log of the GenAI node. User permissions determine if they can add tools to the builder.
+    * Tool output variables: At least one output variable is now required for every end node in the agent flow. If not added, an error message will appear, the debug run will fail, and new flow versions cannot be deployed.
+* **Improved Model Deployment and Fine-tuning:** Specific folders in AWS S3 buckets are now mounted directly to fine-tuning and deployment pods in K8s cluster, reducing the need to download files. This improves deployment and fine-tuning service start times, especially in autoscaling scenarios.
+* **Improved Test Automation with data-id Attributes**: Added data-id attributes to all actionable elements on the frontend to improve test automation stability despite ongoing UI changes.
+
+
+**Security Enhancements**
+
+* The Python version is upgraded to 3.10.15 in the following ML services: ml-training, ml-ray, ml-inference, and ml-guardrail.
+* Analyzed and fixed security vulnerabilities in ML services.
+
+
+**Bug Fixes**
+
+* Fixed an issue where the DocSearch response appeared blank in agent monitoring when executing an agent with a DocSearch node.
+* Resolved the issue where users were unable to view the flow when importing an agent into a shared workspace.
+
+
+<hr>
+
+
 ## v1.0.7 December 25, 2024
 
 <u> Minor Release </u>
