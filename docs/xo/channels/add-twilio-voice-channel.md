@@ -19,7 +19,9 @@ Twilio Voice for assistants is designed to work on voice-based channels. Before 
 
 ## Prerequisites
 
-[Log in to your Twilio Voice account](https://www.twilio.com/) to create a new Twilio number to associate with your assistant. You can buy a number by going to the Twilio **Account Dashboard **>** Develop **> **Phone Numbers **>** Manage **>** Buy a Number**. If you already have a Twilio phone number that you want to associate with this VA, you can proceed to the next steps.
+- Create a new Twilio number to associate with your assistant through [Log in to your Twilio Voice account](https://www.twilio.com/) link.
+- Buy a number by going to the Twilio **Account Dashboard** > **Develop** > **Phone Numbers** > **Manage** > **Buy a Number**. 
+- Twilio phone number. If you already have a Twilio phone number you want to associate with this VA, you can proceed to the next steps.
 
 
 ### Step 1: Configure the Integration in Twilio
@@ -27,8 +29,7 @@ Twilio Voice for assistants is designed to work on voice-based channels. Before 
 To set up the integration:
 
 
-
-1. Go to Twilio **Account Dashboard > Develop > Phone Numbers > Manage > TwiML Apps** and click **Create New TwiML App**.
+1. Go to Twilio **Account Dashboard** > **Develop** > **Phone Numbers** > **Manage** > **TwiML Apps** and click **Create New TwiML App**.
 2. Enter a name for the app and copy the **Webhook URL** from the **Configurations** tab of the Twilio Voice Channel page (**Automation AI** > **Channels & Flows** > **Channels** > **Third Party Voice** > **All** > **Twilio Voice**) and enter in the **Request URL** field for the **Voice Configuration**.
 3. Click **Create** to complete the app creation.
 
@@ -48,14 +49,14 @@ To associate the TwiML App with your Twilio Phone Number:
 
 ### Step 3: Set Up Agent Transfer (Optional)
 
-Optionally, you can also set up **Agent Transfer** functionality to transfer the user’s call conversation to another Twilio number. To do this, you must configure the Kore.ai Agent Transfer SDK. Download the **Agent Transfer SDK** from the [Kore.ai GitHub repository](https://github.com/Koredotcom/BotKit) and define **data.message, transferCallToAgent**, and **agentPhonenumber** parameters..
+Optionally, you can also set up **Agent Transfer** functionality to transfer the user’s call conversation to another Twilio number. To do this, you must configure the Kore.ai Agent Transfer SDK. Download the **Agent Transfer SDK** from the [Kore.ai GitHub repository](https://github.com/Koredotcom/BotKit) and define **data.message, transferCallToAgent**, and **agentPhonenumber** parameters.
 
 1. **data.message**: Define the message to be read out to the end-user when the *call is transferred to the agent* is initiated.
 2. **transferCallToAgent**: Set this flag to **True** to enable Agent Transfer and **False** to disable.
 3. **agentPhonenumber**: Provide your Twilio phone number to which the user call conversation is transferred.
 
 
-## Step 4: Enable the Twilio Voice Channel
+### Step 4: Enable the Twilio Voice Channel
 
 To enable the Twilio Voice Channel:
 
@@ -72,7 +73,7 @@ To enable the Twilio Voice Channel:
     4. Click **Use Voice Call Properties** to open the Voice Call settings section.
     5. Under the **Initial Prompts** text box, enter the message that needs to be played when the user connects to the VA.
 
-### Related links
+### Related Links
 
 For details regarding the configuration of voice properties at the Dialog Task level, refer to [Configuring Voice Call Settings for a Node](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/voice-call-properties/#dialog-node-settings).
 
