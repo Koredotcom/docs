@@ -13,6 +13,60 @@ This document contains confidential and proprietary information of Kore.ai Inc. 
 
 XO GPT is an advanced AI model designed to enhance your applications. However, like all emerging technologies, it will require improvements over time. Despite extensive testing, it is impossible to cover every possible scenario. As a result, XO GPT’s outputs may sometimes be unpredictable, leading to responses that could be inaccurate, biased, or otherwise unexpected. We strongly recommend that developers conduct thorough safety testing and make necessary adjustments to ensure the model fits their specific use cases.
 
+## Live Versions
+
+
+<table>
+  <tr>
+   <td>Model Version
+   </td>
+   <td>Base Model
+   </td>
+   <td>Languages Supported
+   </td>
+   <td>Deployed Region
+   </td>
+   <td>Deployment Date
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="3" > Version 2.0
+   </td>
+   <td rowspan="3" >Mistral 7B Instruct v0.2
+   </td>
+   <td rowspan="3" >
+<p>
+English,
+<p>
+French,
+<p>
+Spanish,
+<p>
+German,
+<p>
+Japanese, 
+<p>
+Turkish
+   </td>
+   <td>US
+   </td>
+   <td>19th Dec 2024
+   </td>
+  </tr>
+  <tr>
+   <td>DE
+   </td>
+   <td>20th Dec 2024
+   </td>
+  </tr>
+  <tr>
+   <td>JP
+   </td>
+   <td>20th Dec 2024
+   </td>
+  </tr>
+</table>
+
 
 ## Introduction
 
@@ -48,59 +102,7 @@ In our ongoing efforts to enhance the capabilities of our conversational AI solu
 6. **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
 
-## Live Versions
 
-
-
-
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Base Model
-   </td>
-   <td>Languages Supported
-   </td>
-   <td>Deployed Region
-   </td>
-   <td>Deployment Date
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="3" > Version 2.0
-   </td>
-   <td rowspan="3" >Mistral 7B Instruct v0.2
-   </td>
-   <td rowspan="3" >English,
-<p>
-French,
-<p>
-Spanish,
-<p>
-German,
-<p>
-Japanese, 
-<p>
-Turkish
-   </td>
-   <td>US
-   </td>
-   <td>19th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>20th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>JP
-   </td>
-   <td>20th Dec 2024
-   </td>
-  </tr>
-</table>
 
 
 ## Model Overview
@@ -230,63 +232,25 @@ For example:
 
 
     Bot: Hello! How can I help you today?
-
-
     Customer: I need to check the status of my order.
-
-
-    Bot: Sure! Please provide your **order reference number**.
-
-
-    Customer: It’s **12345-67890**.
-
-
-    Bot: Thanks! For verification, please provide the last four digits of your **Social Security Number**.
-
-
-    Customer: **9876.**
-
-
-    Bot: Got it. To proceed, please confirm your **password**.
-
-
-    Customer: It’s **Mark123**.
-
+    Bot: Sure! Please provide your order reference number.
+    Customer: It’s 12345-67890.
+    Bot: Thanks! For verification, please provide the last four digits of your Social Security Number.
+    Customer: 9876.
+    Bot: Got it. To proceed, please confirm your password.
+    Customer: It’s Mark123.
     Bot: Thank you. Your order is being processed and will ship in 48 hours. Would you like any further assistance?
-
-
     Customer: Yes, I want to speak with an agent.
-
-
     Bot: Alright, I’m transferring you to an agent now. Please hold.
-
-
     Agent: Hi, this is John from XYZ Support. How can I assist you today?
-
-
     Customer: Hi, John. I just wanted to confirm the shipping address on my order.
-
-    Agent: Of course! Could you please provide your full name and the last four digits of your **Social Security Number**?
-
-
-    Customer: Jane Doe, **9876**.
-
-
-    Agent: Thank you, Jane. The shipping address we have on file is **123 Elm Street, Springfield, IL**.
-
-
+    Agent: Of course! Could you please provide your full name and the last four digits of your Social Security Number?
+    Customer: Jane Doe, 9876.
+    Agent: Thank you, Jane. The shipping address we have on file is 123 Elm Street, Springfield, IL.
     Customer: That’s correct. Thanks!
-
-
     Agent: You’re welcome! Is there anything else I can do for you?
-
-
     Customer: No, that’s all. Thanks!
-
-
     Agent: Have a great day! Goodbye!
-
-
     Customer: Goodbye!
 
 
@@ -400,8 +364,8 @@ The following table summarizes the versions covered in this document:
 
 | Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison          | Test Data & Results    |
 |------------|----------|---------------|--------------|-------|------|
-| Version 2.0   | 100%     | 71  | 2  | [Benchmark Summary](#benchmarks-summary) | [Performance Benchmarking](#performance-benchmarking-xo-gpt-vs-other-models)   |
-| Version 1.0   | 98%      | 40               | 3.04           | [Benchmark Summary](#benchmarks-summary-1) | [Performance Benchmarking](#performance-benchmarking-xo-gpt-vs-other-models-1)  |
+| Version 2.0   | 100%     | 71  | 2  | [Benchmark Summary](#benchmarks-summary-v2) | [Performance Benchmarking](#performance-benchmarking-xo-gpt-v2-vs-other-models)   |
+| Version 1.0   | 98%      | 40               | 3.04           | [Benchmark Summary](#benchmarks-summary-v1) | [Performance Benchmarking](#performance-benchmarking-xo-gpt-v1-vs-other-models)  |
 
 
 
@@ -807,7 +771,7 @@ To optimize the performance and efficiency of the model, we apply AWQ (Activatio
 
 
 
-#### Benchmarks Summary
+#### Benchmarks Summary v2
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
@@ -824,7 +788,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust accuracy, fluency, and robustness capabilities, particularly in multilingual contexts. XO GPT consistently delivers strong results across various tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. The following are the detailed test results.
 
 
-###### **Performance Benchmarking: XO GPT vs. Other Models**
+###### **Performance Benchmarking: XO GPT v2 vs. Other Models**
 
 
 <table>
@@ -986,7 +950,7 @@ XO GPT has demonstrated outstanding performance in recent evaluations, achieving
 
 
 
-###### **Multilingual Performance Comparison**
+###### **Multilingual Performance Comparison v2**
 
 
 <table>
@@ -1192,7 +1156,7 @@ XO GPT has demonstrated outstanding performance in recent evaluations, achieving
 
 
 
-###### **Average Latency Benchmarking: XO GPT and Other Models**
+###### **Average Latency Benchmarking: XO GPT v2 and Other Models**
 
 
 <table>
@@ -1354,7 +1318,7 @@ XO GPT has demonstrated outstanding performance in recent evaluations, achieving
 
 
 
-###### **Median Latency Benchmarking: XO GPT and Other Models**
+###### **Median Latency Benchmarking: XO GPT v2 and Other Models**
 
 
 <table>
@@ -1813,7 +1777,7 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
 
 
 
-#### Benchmarks Summary
+#### Benchmarks Summary v1
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
@@ -1830,7 +1794,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust accuracy, fluency, and robustness capabilities, particularly in multilingual contexts. XO GPT consistently delivers strong results across various tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional English, French, German, and Spanish performance, with notable strengths in customer requests and negation detection. The following are the detailed test results.
 
 
-###### **Performance Benchmarking: XO GPT vs. Other Models**
+###### **Performance Benchmarking: XO GPT v1 vs. Other Models**
 
 
 <table>
@@ -1992,7 +1956,7 @@ XO GPT has demonstrated outstanding performance in recent evaluations, achieving
 
 
 
-###### **Multilingual Performance Comparison**
+###### **Multilingual Performance Comparison  v1**
 
 
 <table>
@@ -2198,7 +2162,7 @@ XO GPT has demonstrated outstanding performance in recent evaluations, achieving
 
 
 
-###### **Average Latency Benchmarking: XO GPT and Other Models**
+###### **Average Latency Benchmarking: XO GPT v1 and Other Models**
 
 
 <table>
@@ -2360,7 +2324,7 @@ XO GPT has demonstrated outstanding performance in recent evaluations, achieving
 
 
 
-###### **Median Latency Benchmarking: XO GPT and Other Models**
+###### **Median Latency Benchmarking: XO GPT v1 and Other Models**
 
 
 <table>
