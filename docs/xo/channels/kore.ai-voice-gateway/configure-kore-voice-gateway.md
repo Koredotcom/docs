@@ -103,7 +103,7 @@ Steps to configure SIP Trunk:
             <img src="../images/sip-trunks-setup.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
 
         2. Under **Domain Name**, provide the following:
-            1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](../kore.ai-voice-gateway/ips-ports-protocols.md)
+            1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](../kore.ai-voice-gateway/ips-ports-protocols.md).
             2. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
                 <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">  
 
