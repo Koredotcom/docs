@@ -263,6 +263,10 @@ The transcripts tab also shows the call transfer stages:
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
 <img src="../images/transfer-stages.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
 
+!!! Note
+
+    To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+
 **DETAILS**: This tab shows the following details:
 
 **Start**: Conversation start time  

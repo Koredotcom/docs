@@ -188,8 +188,8 @@ nav:
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
           - Agent Node:
-            - Agent Node v2: automation/use-cases/dialogs/node-types/genai-node-v2.md
-            - Agent Node v1: automation/use-cases/dialogs/node-types/genai-node.md
+            - Overview: automation/use-cases/dialogs/node-types/genai-node-v2.md
+            - Configure the Node: automation/use-cases/dialogs/node-types/agent-node-configuration.md
           - Prompt Node: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
@@ -313,6 +313,10 @@ nav:
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
                 - DotCMS: searchai/content-sources/connectors/dotcms.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
+                - Egnyte: searchai/content-sources/connectors/egnyte.md
+                - Freshdesk: searchai/content-sources/connectors/freshdesk.md
+                - Freshservice: searchai/content-sources/connectors/freshservice.md
+                - Front: searchai/content-sources/connectors/front.md
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
@@ -323,9 +327,11 @@ nav:
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
+                - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
                 - SharePoint: searchai/content-sources/connectors/sharepoint.md  
+                - Slack: searchai/content-sources/connectors/slack.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
@@ -349,9 +355,13 @@ nav:
         - Answer Generation: searchai/answer-generation.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
-        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md 
+        - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+    - FAQs:
+        - Automatic vs Manual Training: searchai/application-training.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center-ai.md    
+    - Overview: contactcenter/about-contact-center-ai.md 
+    - Getting Started:
+      - Minimum System and Browser Requirements: channels/kore.ai-voice-gateway/minimum-system-and-browser-requirements.md
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md

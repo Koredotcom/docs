@@ -61,6 +61,7 @@ Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-int
 <p class="admonition-title">Note</p>
 <p>To receive answers from Search AI, you must enable the <b><i>Answer Generation</i></b> option under the <b>API scopes</b> section.</p></div>
 
+
 ## Step 2: Link the Search AI App in GALE
 
 After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in GALE. 

@@ -29,12 +29,13 @@ Key benefits
 * More dynamic, responsive virtual assistants.
 * Integration of real-time data and complex query handling.
 * Flexibility with custom/system integrations and prompts.
-* Seamless orchestration between user input, functions, and responses.
+* Seamless orchestration between user input, functions, and responses.  
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
 
 
 #### GenAI Node and Prompt Node Renaming
 The GenAI Node has been renamed the Agent Node to reflect its agentic experiences and tool-calling capabilities, while the GenAI Prompt Node has been renamed the Prompt Node.
-
 
 ### DialogGPT
 #### DialogGPT App Lifecycle Management

@@ -9,7 +9,7 @@ You can create experience flows using the Flow Designer.
 There are two types of Flows:
 
 1. **Start Flows**: Most flows are classified as start flows, applicable to both voice and chat channels.
-2. **Exit Flows**: Used when a call disconnects, applicable to both voice and chat channels.
+2. **Exit Flows**: Used when a call disconnects, applicable to voice channels.
 
 ### The Start Flows
 
@@ -22,6 +22,10 @@ Start flows represent the most complex flow type, providing access to all [node 
 ### The Exit Flows
 
 This flow type runs when a call gets disconnected and is useful in gathering customer data during post-call analytics, clean-up, or updates in other systems after a call ends. Conversational context can be passed from the main experience flow into the _Exit Flows_.
+
+!!! Note
+
+    Exit flows are currently configurable only for voice channels.
 
 ## Create a Start Flow
 
