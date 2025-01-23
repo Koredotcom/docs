@@ -15,7 +15,7 @@ Egnyte is a versatile content collaboration and data management platform designe
   <tr>
    <td>Content Supported
    </td>
-   <td>Files in the formats .doc, .docx, .ppt, .pptx, .pdf, .txt,
+   <td>Files in the formats .doc, .docx, .ppt, .pptx, .pdf, .txt
    </td>
   </tr>
   <tr>
