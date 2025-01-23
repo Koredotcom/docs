@@ -1,6 +1,6 @@
 # IPs, Ports, and Protocols
 
-This document contains all the region wise IPs, ports, and protocols for Kore Voice Gateway. It is useful for transferring calls from respective Contact Centres to Contact Center AI.
+This document contains all the region wise IPs, ports, and protocols for Kore Voice Gateway. It is useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](../kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup).
 
 ## Regions
 
@@ -41,6 +41,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
   </tr>
 </table>
 
+For example: sip:savg-sbc1.kore.ai:5060
+
 <table>
   <tr>
    <td><strong>Component</strong>
@@ -73,6 +75,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -154,6 +158,8 @@ savg-sbc1.kore.ai,<br>savg-sbc2.kore.ai
   </tr>
 </table>
 
+For example: sip:savg-sbc1.kore.ai:443
+
 <table>
   <tr>
    <td><strong>Component</strong>
@@ -214,6 +220,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   </tr>
 </table>
 
+For example: sip:usw-savg-sbc1.kore.ai:5060
 <table>
   <tr>
    <td><strong>Component</strong>
@@ -246,6 +253,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:usw-savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -328,6 +337,8 @@ usw-savg-sbc2.kore.ai
   </tr>
 </table>
 
+For example: sip:usw-savg-sbc1.kore.ai:443
+
 <table>
   <tr>
    <td><strong>Component</strong>
@@ -372,7 +383,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc1.kore.ai</a>
+   <td>au-prod-savg-sbc1.kore.ai
    </td>
   </tr>
   <tr>
@@ -388,6 +399,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:au-prod-savg-sbc1.kore.ai:5060
 
 <table>
   <tr>
@@ -405,7 +418,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc2.kore.ai</a>
+   <td>au-prod-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -421,6 +434,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:au-prod-savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -484,10 +499,9 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>
-<a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc1.kore.ai</a>,
+   <td>au-prod-savg-sbc1.kore.ai,
 <br>
-<a href="http://ntt-prod-savg-sbc1.kore.ai/">au-prod-savg-sbc2.kore.ai</a>
+au-prod-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -503,6 +517,8 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
    </td>
   </tr>
 </table>
+
+For example: sip:au-prod-savg-sbc1.kore.ai:443
 
 <table>
   <tr>
@@ -548,7 +564,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc1.kore.ai</a>
+   <td>ind-savg-sbc1.kore.ai
    </td>
   </tr>
   <tr>
@@ -564,6 +580,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:ind-savg-sbc1.kore.ai:5060
 
 <table>
   <tr>
@@ -581,7 +599,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc2.kore.ai</a>
+   <td>ind-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -597,6 +615,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:ind-savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -658,10 +678,9 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td>
-<a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc1.kore.ai</a>,
+   <td>ind-savg-sbc1.kore.ai,
 <br>
-<a href="http://ind-savg-sbc1.kore.ai">ind-savg-sbc2.kore.ai</a>
+ind-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -677,6 +696,8 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
    </td>
   </tr>
 </table>
+
+For example: sip:ind-savg-sbc1.kore.ai:443
 
 <table>
   <tr>
@@ -737,6 +758,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
   </tr>
 </table>
 
+For example: sip:eu-savg-sbc1.kore.ai:5060
+
 <table>
   <tr>
    <td><strong>Component</strong>
@@ -753,7 +776,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://eu-savg-sbc2.kore.ai/">eu-savg-sbc2.kore.ai</a>
+   <td>eu-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -769,6 +792,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:eu-savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -834,7 +859,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
    </td>
    <td>eu-savg-sbc1.kore.ai,
 <br>
-eu<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
+eu-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -850,6 +875,8 @@ eu<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
    </td>
   </tr>
 </table>
+
+For example: sip:eu-savg-sbc1.kore.ai:443
 
 <table>
   <tr>
@@ -912,6 +939,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
   </tr>
 </table>
 
+For example: sip:de-savg-sbc1.kore.ai:5060
+
 <table>
   <tr>
    <td><strong>Component</strong>
@@ -928,7 +957,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://de-savg-sbc2.kore.ai/">de-savg-sbc2.kore.ai</a>
+   <td>de-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -944,6 +973,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:de-savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -1009,7 +1040,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
    </td>
    <td>de-savg-sbc1.kore.ai,
 <br>
-de<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
+de-savg-sbc2.kore.ai</a>
    </td>
   </tr>
   <tr>
@@ -1025,6 +1056,8 @@ de<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
    </td>
   </tr>
 </table>
+
+For example: sip:de-savg-sbc1.kore.ai:443
 
 <table>
   <tr>
@@ -1070,7 +1103,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://jp-savg-sbc1.kore.ai/">jp-savg-sbc1.kore.ai</a>
+   <td>jp-savg-sbc1.kore.ai
    </td>
   </tr>
   <tr>
@@ -1086,6 +1119,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:jp-savg-sbc1.kore.ai:5060
 
 <table>
   <tr>
@@ -1103,7 +1138,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
   <tr>
    <td><strong>FQDN</strong>
    </td>
-   <td><a href="http://jp-savg-sbc2.kore.ai/">jp-savg-sbc2.kore.ai</a>
+   <td>jp-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -1119,6 +1154,8 @@ Enable inward and outward traffic to the following IPs and respective ports:
    </td>
   </tr>
 </table>
+
+For example: sip:jp-savg-sbc2.kore.ai:5060
 
 <table>
   <tr>
@@ -1183,7 +1220,7 @@ For Agent transfers, enable inward and outward traffic to the following IPs and 
    <td><strong>FQDN</strong>
    </td>
    <td>jp-savg-sbc1.kore.ai,<br>
-jp<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
+jp-savg-sbc2.kore.ai
    </td>
   </tr>
   <tr>
@@ -1199,6 +1236,8 @@ jp<a href="http://ntt-prod-savg-sbc1.kore.ai/">-savg-sbc2.kore.ai</a>
    </td>
   </tr>
 </table>
+
+For example: sip:jp-savg-sbc2.kore.ai:443
 
 <table>
   <tr>
