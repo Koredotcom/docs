@@ -63,16 +63,16 @@ To enable the Twilio Voice Channel:
     1. Enter your Twilio Number to associate with the Kore.ai assistant.
     2. Select **Yes** in the **Enable Channel** section and then click **Save** to complete the user creation process and channel activation.  
     <img src="../images/twv3.png" alt="Automations" title="image_select phone number" style="border: 1px solid gray; zoom:70%;">
-3. From the **Voice Call Properties** tab, enter the details to configure the channel-level voice properties. Click [here for more details](../automation/use-cases/dialogs/node-types/voice-call-properties/#channel-settings).
+3. From the **Voice Call Properties** tab, enter the details to configure the channel-level voice properties. Click [here for more details](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings).
 
 
 ### Related Links
 
-For details regarding the configuration of voice properties at the Dialog Task level, refer to [Configuring Voice Call Settings for a Node](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings)
+For details regarding the configuration of voice properties at the Dialog Task level, refer to [Configuring Voice Call Settings for a Node](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings).
 
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement](adding-channels-to-your-bot.md).
 
 
