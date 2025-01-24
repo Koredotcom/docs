@@ -1,7 +1,5 @@
 # Configure Evaluators
 
-## What are Evaluators?
-
 In Evaluation Studio, evaluators are tools used to assess how well a model is performing based on specific tasks. They function like custom prompts or instructions designed to check certain aspects of a model’s output.
 
 For example, an evaluator can be set up to assess content completeness. It takes inputs and outputs from a model and is programmed to compare the results against predefined criteria to check if the content is complete.
@@ -14,7 +12,7 @@ System AI Evaluators are pre-built evaluators offered by the platform to assess 
 
 !!! note
 
-    Users can also access all the available system evaluators through the global Evaluators page located at the project level. This page provides an overview of available evaluators that can be applied to datasets for evaluation.
+    Users can also access all the available system evaluators through the global Evaluators page located at the project level. Simply click the Evaluators tab, located next to the Projects tab. This page provides an overview of available evaluators that can be applied to datasets for evaluation.
 
 System Evaluators are grouped into two categories: **Quality Metrics** and **Safety Metrics**.
 
@@ -153,14 +151,14 @@ Steps to add an evaluator:
 
 1. On the Evaluation Insights page, click the **+** button, and select the **Add evaluator** option.
 
-    <img src="../evaluation/images/import_dataset_options.png" alt="Configure evaluator" title="Configure evaluator" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/import_dataset_options.png" alt="Configure evaluator" title="Configure evaluator" style="border: 1px solid gray; zoom:80%;">
 
 2. From the list of Quality and Safety evaluators, select the desired evaluator.
 3. In the Evaluators dialog, fill in these details:
     1. **Model**: Choose the model you want to use as an evaluator. This model will assess the input and/or output and generate a score. Only the models deployed in GALE will appear in the search dropdown. Both open-source and the external models are considered here.
     2. **Model Configuration**: Select the appropriate model hyperparameters such as Temperature, Output token limit, Top P etc.
     3. **Prompt**: Click to view the system prompt. The prompt associated with the system evaluator is view-only. While you can view the prompt, it cannot be edited.
-    4. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. Learn more.
+    4. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. 
     5. **Pass threshold**: Set the minimum score required for an output to pass the evaluation. Choose either the ‘Greater than’ or ‘Less than’ option and then enter a threshold value (from 1 to 5).
         * For **Positive Evaluators** (or evaluators where a higher score is better, such as Completeness), the output is considered "good" if the score exceeds the threshold. For example, if the Completeness evaluator returns a score greater than 2.5, the result will be marked green, indicating that it meets the expected quality level.
         * For **Negative Evaluators** (such as Toxicity, where a lower score is better), a score above the threshold indicates a problem. For example, if the Toxicity evaluator returns a score greater than 2.5, it will be marked red, signaling that the output contains undesirable levels of toxic content.

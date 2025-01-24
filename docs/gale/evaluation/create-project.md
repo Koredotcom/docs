@@ -1,8 +1,4 @@
-# Create Projects
-
-**Projects: The Foundation of Evaluation Studio**
-
-## What Are Projects?
+# Projects
 
 In Evaluation Studio, projects serve as the core containers for organizing evaluations. Each project can store multiple evaluations, and each evaluation contains a distinct dataset.
 
@@ -10,7 +6,7 @@ Users have the flexibility to create, rename, and delete projects as needed. Whe
 
 ## Creating a New Project
 
-**Steps to create a new project**:
+Steps to create a new project:
 
 1. Navigate to Evaluation Studio.
 2. On the Projects tab, click **New Project**.
@@ -22,8 +18,8 @@ Users have the flexibility to create, rename, and delete projects as needed. Whe
 4. Click **Create** to submit the project creation request.
 Once the project is created successfully, the system will redirect you to the newly created project’s main page.
 
-5. On the Project's landing page, click the three dots icon in the row of the project you want to manage for the following options:
-    * **Rename**: Use this option to change the project name. Once you enter a new project name, the project's landing page will reflect the updated name.
+5. On the Project page, click the three dots icon in the row of the project you want to manage for the following options:
+    * **Rename**: Use this option to change the project name. 
     * **Delete**: Use this option to delete the project. A confirmation message appears, asking for confirmation to delete the project. If the user confirms, the project and all its associated datasets will be permanently deleted.
 
     <img src="../images/project_threedots.png" alt="Create project" title="Create project" style="border: 1px solid gray; zoom:80%;"> 
