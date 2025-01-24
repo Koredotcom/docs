@@ -369,21 +369,19 @@ To add an Agent node prompt using JavaScript, follow the steps:
             
             When you add the post-processor script, the system does not honor the text response and sets all child keys under the text and tool keys to match those in the post-processor script. 
 
-    3. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
-    <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">
+        1. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
+        <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">     
+        2. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 
-    4. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
 <img src="../images/promptinlibrary.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
 <img src="../images/selectprompt.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
-
-        If the default prompt is selected, the system will display a warning that “Tools calling functionality requires custom prompts with streaming disabled.
-        
+    If the default prompt is selected, the system will display a warning that “Tools calling functionality requires custom prompts with streaming disabled.  
 <img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
 
 
 
@@ -480,7 +478,7 @@ Keys
 
 
 
-### Tool Calling in Debug Logs
+## Tool Calling in Debug Logs
 
 The debug logs capture the entire execution flow, including the conversation history array and the tools being called. The conversation history array tracks the interaction between the user and the assistant, while the tool calls (`FundsTransfer`, `PayeesAvailableCheck`) represent the specific actions or functions invoked by the assistant to fulfill the user's request.
 
