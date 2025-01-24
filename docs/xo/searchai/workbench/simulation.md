@@ -10,12 +10,12 @@ The Workbench comes with a built-in simulator that provides an interactive previ
 
 Click the **Simulate** button at any point to test the changes made to the source data due to the workbench stages. 
 
-![Simulator](../images/simulate-option.png "Simulator")
+![Simulator](images/simulate-option.png "Simulator")
 
 
 The simulation is performed on a sample set of documents. The output of the simulator is in JSON format as shown below. 
 
-![Simulator Output](../images/simulator-output.png "Simulator Output")
+![Simulator Output](images/simulator-output.png "Simulator Output")
 
 
 The simulator shows the changes made to the source data through various stages of Workbench in the order in which they are listed, starting from the first stage. When you click the Simulate option on a particular stage, the simulator shows the changes made through the workbench pipeline till that stage. For example, if there are three stages in the Workbench pipeline and you click the **Simulate** button while on the second stage, the simulation will show the cumulative effect of changes made through Stage one and Stage two. 

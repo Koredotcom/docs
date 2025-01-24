@@ -52,11 +52,11 @@ This outlines how adherence metrics are displayed and calculated for a selected 
 
 ## Filters
 
-This allows supervisors to drill down into agent performance based on selected criteria chosen. This outlines the following filter types based on the form, date range, and agent selected.
+This allows supervisors to drill down into agent performance based on selected criteria chosen. This outlines the following filter types based on the form, date range, and agent selected. 
 
 **Date Range Filter**
 
-You can filter by a specific date range. The default range, based on queue selection, is the last 7 days. Timezone settings are based on the user's system time zone.  
+You can filter data within a specific date range. By default, the range is set to the last 7 days, depending on the selected queue. Timezone settings are based on the user's system time zone.
 <img src="../adher-heatmap/images/date-range-view.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
 **Date Range View**: 

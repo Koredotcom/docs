@@ -6,8 +6,7 @@ For complex workflows involving multiple system integrations and logic, users ca
 
 For example, consider a Fund Transfer Bot Agent. By creating this bot on the XO Platform, you can automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization’s systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
 
-
-##  Create a Bot Agent
+## Create a Bot Agent
 
 You can create a new Bot agent to assist users in completing various tasks by
 utilizing the Bot created using the XO Platform.

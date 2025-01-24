@@ -1,6 +1,6 @@
 # Conversation Flows
 
-Conversation Flows is a visual representation of the user journey. The user interactions with the virtual assistants are analyzed by the platform to provide insights into the commonly used intents, paths traversed, and drop-off points.
+Conversation Flows is a visual representation of the user journey. The user interactions with the virtual assistants are analyzed by the platform to provide insights into the commonly used intents, paths traversed, and drop-off points. xyz
 
 
 !!! note

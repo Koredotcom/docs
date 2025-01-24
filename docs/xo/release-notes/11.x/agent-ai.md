@@ -24,12 +24,11 @@ This update introduced flexible Search AI configuration to choose built-in funct
 
 #### Auto-corrections for the Search tab
 
-
 The new auto-correct feature for the Search tab allows admins to control spelling corrections through Widget Settings, including custom dictionary management. While admins can enable/disable it globally, agents can toggle it individually in Settings, with agent preferences taking priority. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#auto-corrections-for-the-search-tab){:target="_blank"}
 
 #### Enhanced Dialog Task Entity Extraction
 
-The Proactive Mode toggle has been enhanced to include the “Automatic Dialog Task Entity Extraction” option. This option automatically extracts entities from user messages during dialog task execution.
+The Proactive Mode toggle has been enhanced to include the “Automatic Dialog Task Entity Extraction” option. This option automatically extracts entities from user messages during dialog task execution. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#agent-ai-channel-specific-settings){:target="_blank"}
 
 ### Integration
 

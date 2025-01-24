@@ -2,27 +2,29 @@
 
 Front is a customer communication hub that streamlines conversations, enhances team collaboration, and provides a unified view of messages from various channels with the help of team inboxes and knowledgebase capabilities. Using the Search AI connector for Front, you can ingest and index content from your Front knowledge bases and enable efficient search capabilities on the content.
 
+<span style="text-decoration:underline;">Specifications</span>
+
 <table>
   <tr>
-   <td>Type of Repository 
+   <td><b>Type of Repository</b>
    </td>
    <td>Cloud
    </td>
   </tr>
   <tr>
-   <td>Content Supported
+   <td><b>Content Supported</b>
    </td>
    <td>Knowledgebase Articles
    </td>
   </tr>
   <tr>
-   <td>RACL Support
+   <td><b>RACL Support</b>
    </td>
    <td>Yes
    </td>
   </tr>
   <tr>
-   <td>Content Filtering
+   <td><b>Content Filtering</b>
    </td>
    <td>No
    </td>

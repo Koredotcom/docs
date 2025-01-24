@@ -1,6 +1,6 @@
 # GALE Agent
 
-The Workflow or GALE Agent allows users to build agents directly with the **GALE platform** to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of
+The Workflow or GALE Agent allows users to build agents directly with the GALE platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of
 creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
 
 The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the GALE platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
@@ -47,7 +47,7 @@ You must integrate **GALE Flow** with the **GALE** platform and create a
 channel. To set up a channel and complete the integration process, follow the
 steps outlined below:
 
-1.  In the **Define GALE API** section, select between **Sync Mode** and **Async
+1.  In the Define GALE API section, select between **Sync Mode** and **Async
     Mode**, depending on the requirements of your interactions.
 
     1.  **Sync Mode**: In sync mode, users receive immediate responses. This

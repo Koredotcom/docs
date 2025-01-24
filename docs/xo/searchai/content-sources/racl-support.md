@@ -105,7 +105,7 @@ The user identity is matched against the racl fields in the chunks. In case, the
 
 When a user group or user criteria is used to define a file’s access list, the indexed content contains a Permission Entity corresponding to the user group. In this case, SearchAI needs additional information to resolve user identities. For example, if a file is accessible only to employees in the HR department, the permission entity generated for the file will reflect departmental access and will not have information about the individual users associated with the group. 
 
-In such a case, SearchAI needs additional information to determine the association between the users and the groups. This can be done with the help of Permission Entity APIs, which can be used to add or remove users from a group. Learn more about [Permission Entity APIs here.](/docs/xo/apis/searchai/permission-entity-apis.md) 
+In such a case, SearchAI needs additional information to determine the association between the users and the groups. This can be done with the help of Permission Entity APIs, which can be used to add or remove users from a group. Learn more about [Permission Entity APIs here.](../../apis/searchai/permission-entity-apis.md) 
 
 ## Set up 
 

@@ -346,6 +346,14 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    <td>Accepts true or false. If the value is true then the agent info is fetched and put in the author object of the agent. If the value is false or the field is not provided then agent info is not passed in the response.
    </td>
   </tr>
+  <tr>
+   <td>sessionId
+   </td>
+   <td>optional
+   </td>
+   <td>A specific Session-Id if known. <a href="../get-sessions-history/">Refer here to obtain the session id.</a>
+   </td>
+  </tr>
 </table>
 
 
@@ -447,7 +455,7 @@ Default direction is forward.
    </td>
    <td>optional
    </td>
-   <td>A specific Session-Id if known. <a href="../get-sessions-history/">Refer here to obtain the session id</a>
+   <td>A specific Session-Id if known. <a href="../get-sessions-history/">Refer here to obtain the session id.</a>
    </td>
   </tr>
   <tr>

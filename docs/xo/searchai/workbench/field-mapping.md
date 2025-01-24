@@ -7,7 +7,7 @@ The Field Mapping stage can be used to perform operations on the fields in a chu
 * Copy the value of one field to another
 * Remove a field
 
-![Field Mapping Stage](../images/field-mapping.png "Field Mapping")
+![Field Mapping Stage](images/field-mapping.png "Field Mapping")
 
 The Field Mapping stage can be defined using the following three properties:
 
@@ -25,4 +25,4 @@ The Field Mapping stage can be defined using the following three properties:
         * Rename - Renames the selected field. 
 
  Example: If you want to assign a chunk source as its title in case the title is missing, you can define the stage as shown below.
- ![Example](../images/field-mapping-example.png "Example")
+ ![Example](images/field-mapping-example.png "Example")

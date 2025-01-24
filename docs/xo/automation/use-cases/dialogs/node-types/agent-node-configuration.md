@@ -223,41 +223,99 @@ This node captures entities in the following structure:
 
 ## Custom Prompt for Agent Node
 
+Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
+The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.
 
-The Platform lets you create a custom prompt tailored to your use case, for both system and custom integrations. This also supporrs a JavaScript mode that enables you to create prompts using JavaScript. It will process the JavaScript and any variables in the prompt to generate a JSON object. The users can preview and validate the scripts by seeing the key-value pairs of the resulting JSON object, similar to a message node. Finally, the system will send the generated JSON object to the configured model.
-
-!!! note
-
-    The Prompts and Requests Library offers reference template prompts and the custom prompts you have created. While template prompts provide a solid starting point, we recommend reviewing and adjusting them as necessary to suit your business needs.
+Let’s review a sample prompt written in Javascript and follow the step-by-step instructions to create a custom prompt. 
 
 Sample JavaScript
 
 ```
-const jsonRepresentation = {
-  messages: [
-    {
-      role: "system",
-      content: `You are a virtual assistant representing an enterprise business. Act professionally at all times and do not engage in abusive language or non-business-related conversations. ${System_Context} Your task is to collect entities from user input and conversation history. Entities to collect: ${Required_Entities} Entities already collected: ${JSON.stringify(Collected_Entities)}. Business rules for entity collection: ${Business_Rules}. Instructions: - Capture all mentioned entities. - Do not prompt for entities that have already been provided. - Generate appropriate prompts to collect unfulfilled entities only in ${Language} Language and keep the entities collected in the Original Language. - Keep prompts and messages voice-friendly. Output format: STRICTLY RETURN A JSON OBJECT WITH THE FOLLOWING STRUCTURE: {"bot": "prompt to collect unfulfilled entities", "conv_status": "ongoing" or "ended", "entities": [{key1: value1, key2: value2, ...}]} Always ensure that the entities collected SHOULD be in an array of one object. Conversation status: Mark conv_status as 'ended' when all entity values are captured or if any of the following scenarios are met: ${Exit_Scenarios} - Otherwise, set conv_status as 'ongoing'.`
-    },
-    ...Conversation_History,
-    {
-        "role": "user",
-        "content": `${User_Input}`
-    }
-  ],
-  model: "gpt-4",
-  temperature: 0.73,
-  max_tokens: 300,
-  top_p: 1,
-  frequency_penalty: 0,
-  presence_penalty: 0
+let payloadFields = {
+"model": "gpt-4",
+"temperature": 0.73,
+"max_tokens": 1068,
+"top_p": 1,
+"frequency_penalty": 0,
+"presence_penalty": 0,
+"messages": [
+{
+"role": "system",
+"content": You are a virtual assistant representing an enterprise business, and so you have to act professionally at all times. You do not participate or respond to any abusive language or indulge in any conversation that does not represent enterprise business.\n ${System_Context} For the instructions that the user provides, you have to process the instructions. Here are the rules that you are supposed to follow: \n ${Business_Rules}\n and List of entities you need to capture from user are ${Required_Entities}. You need to capture all these entitites .\n If user has provided the required value for any of the required inputs, then do not prompt for it again.\n Generate appropriate prompt to the end user to collect the information\n In the output return JSON must containing {"bot"://next prompt , "conv_status": "ongoing" or "ended","entities":[] } \n - Use the same format for tool responses.\n When returning the result return a json format \n Once all the entities details are captured  AND No function/tool calls are pending AND No follow-up actions are needed then only generate conv_status as 'ended'. When the flow is to be continued or aAny required entity is still pending collection or A tool/function needs to be called or User input requires clarification, generate conv_status as 'ongoing' \n If any enitity is already captured do not ask user about it again.\n Keep the prompts and messages voice friendly in ${language}.\n If there are mutiple entities, return entitites in format of json of object in key values pairs.\n If any one of the below scenarios are met , generate conv_status as 'ended': ${Exit_Scenarios} conversation history string ${Conversation_History_String}
+},
+]
 };
 
-context.payloadFields = jsonRepresentation;
+if (Tools_Definition && Tools_Definition.length) {
+    payloadFields.tools = Tools_Definition.map(tool_info => {
+        return {
+            type: "function",
+            function: tool_info
+        };
+    });
+}
+let contextChatHistory = [];
+Conversation_History.forEach(function (entry) {
+
+    if (entry.role === "tool") {
+        entry.content.forEach(function (content) {
+            contextChatHistory.push({
+                role: 'tool',
+                content: content.result,
+                tool_call_id: content.toolCallId
+            });
+        });
+    } else if (entry.role === "user") {
+        contextChatHistory.push({
+            role: entry.role,
+            content: entry.content
+        })
+    }
+    else {
+        if (typeof entry.content === "string") {
+            contextChatHistory.push({
+                role: entry.role === "bot" ? "assistant" : entry.role,
+                content: entry.content
+            })
+        }
+        else {
+
+            contextChatHistory.push({
+                role: entry.role,
+                tool_calls: entry.content.map(function (content) {
+                    return {
+                        "id": content.toolCallId,
+                        "type": "function",
+                        "function": {
+                            "arguments": JSON.stringify(content.args),
+                            "name": content.toolName
+                        }
+                    }
+                })
+            })
+        }
+    }
+});
+
+payloadFields.messages.push(...contextChatHistory);
+context.payloadFields = payloadFields;
+
+// Push context chat history into messages
+
+// Add user input to messages
+// payloadFields.messages.push({
+//     role: "user",
+//     content: ${User_Input}
+// });
+
+// Assign payloadFields to context
+context.payloadFields = payloadFields;
+
 ```
 
 ### Add Custom Prompt
-This step involves adding a custom prompt to the Agent node to tailor its behavior or responses according to specific requirements. By customizing the prompt, you can guide the AI to generate outputs that align more closely with the desired outcomes of your application.
+The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
+
 
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
@@ -267,43 +325,186 @@ To add an Agent node prompt using JavaScript, follow the steps:
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
 3. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**. 
 4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
-5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables). 
+5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables).  
+<img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
-    <img src="../images/javasv2.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
+6. Ensure the Stream Response is disabled, as the Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.
 
-6. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**. 
+7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
+<img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
-    <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
+    !!! note
 
-7. Enter the JavaScript, click **Preview**. 
-
-
-    <img src="../images/preview2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
-
-
-8. On the Preview pop-up, enter the Variable **Value** and click **Test**. This will convert the JavaScript to a JSON object and send it to the LLM. You can view the JSON object in the JSON Preview section. The success message is displayed. Click **Close**.
-    <img src="../images/tc1.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
-
-9. You can view the JSON object in the JSON Preview section. Click **Close**.
-
-    <img src="../images/jsonpreview.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
-
-9. In the request section, click **Test**. This will make a call to the LLM.
-
-10. If the request values are correct, the response from the LLM is displayed. If not, an error message is displayed. 
-
-11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**. 
-    <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
-
-12. The **Response Path** is displayed.
-
-13. The **Expected Response** are displayed. 
+        Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.
     
-14. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, **Collected Entities**, and **Tool Call Request**.The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured. The tool call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
-    <img src="../images/tc2.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
-15. Click **Test**. The Key Mapping pop-up appears. Make any necessary corrections and close it.  
-<img src="../images/key-map.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
-16. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
+8. Enter the **JavaScript**. The Sample Context Values are displayed. To know more about context values, see [Dynamic Variables](#dynamic-variables).  
+<img src="../images/toolcall2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+
+
+9. Enter the Variable **Value** and click **Test**. This will convert the JavaScript to a JSON object and send it to the LLM.  
+<img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+
+    You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
+<img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
+
+10. The LLM's response is displayed.  
+<img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
+
+11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**.
+12. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.  
+<img src="../images/essentialkeys.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+
+13. Enter the **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
+14. Click **Test**. The Key Mapping pop-up appears.
+    1. If all the key mapping is correct, close the pop-up and go to step 15.  
+    <img src="../images/keymappingright.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+
+    2. If the key mapping, actual response, and expected response structures are mismatched, click **Configure** to write the post-processor script.  
+    <img src="../images/key-map.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+    
+        !!! note
+            
+            When you add the post-processor script, the system does not honor the text response and sets all child keys under the text and tool keys to match those in the post-processor script. 
+
+        1. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
+        <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">     
+        2. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
+
+15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
+<img src="../images/promptinlibrary.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+
+16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
+<img src="../images/selectprompt.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
+    If the default prompt is selected, the system will display a warning that “Tools calling functionality requires custom prompts with streaming disabled.  
+<img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
+
+## Expected Output Structure
+
+Defines the standardized format required by the XO Platform to process LLM responses effectively.
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Format Type</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text Response Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Conversation Status Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  {=="conv_status": "ongoing"==}
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Virtual Assistant Response Format</td>
+      <td>
+        <pre>
+{
+  {=="bot": "Sure, I can help you with that. Can I have your name please?"==},
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Collected Entities Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  {== "entities": []==},
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Tool Response Format</td>
+      <td>
+        <pre>
+{
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2isho",
+  "toolName": "get_delivery_date",
+  "result": {
+    "delivery_date": "2024-11-20"
+  }
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Post-Processor Script Format</td>
+      <td>
+        <pre>
+{
+  "bot": "I'll help you check the delivery date for order ID 123.",
+  "entities": [{"order_id": "123"}],
+  "conv_status": "ongoing",
+  "tools": [
+    {
+      "toolCallId": "toolu_016FWtdANisgqDLu3SjhAXJV",
+      "toolName": "get_delivery_date",
+      "args": { "order_id": "123" }
+    }
+  ]
+}
+      </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+## Context Object
+
+The context object is used to get the entities and the parameters of tools.
+
+
+<table>
+  <tr>
+   <td>Entities
+   </td>
+   <td>context.AI_Assisted_Dialogs.GenAINodeName.entities.{entityName}
+   </td>
+  </tr>
+  <tr>
+   <td>Parameters
+   </td>
+   <td>context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}
+   </td>
+  </tr>
+</table>
 
 
 ## Dynamic Variables
@@ -359,7 +560,7 @@ Keys
   <tr>
    <td>{{Conversation_History_String}} Optional
    </td>
-   <td>This contains the messages exchanged between the end-user and the virtual assistant.
+   <td>This contains the messages exchanged between the end-user and the virtual assistant. It can used only in the JSON prompt.
    </td>
   </tr>
   <tr>
@@ -377,7 +578,7 @@ Keys
   <tr>
    <td>{{Conversation_History}} Optional
    </td>
-   <td>Past messages in the conversation are exchanged between the end-user and the virtual assistant. This is an array of objects with role and content as keys.
+   <td>Past messages in the conversation are exchanged between the end-user and the virtual assistant. This is an array of objects with role and content as keys. It can used only in the JavaScript prompt
    </td>
   </tr>
   <tr>
@@ -386,6 +587,37 @@ Keys
    <td>List of entities and their values collected by the LLM. This is an object with an entity name as the key and the value as LLM collected value.
    </td>
   </tr>
+  <tr>
+   <td>{{Tools_Definition}} Optional
+   </td>
+   <td>List of tools that will enable the language model to retrieve data, perform calculations, interact with APIs, or execute custom code.
+   </td>
+  </tr>
 </table>
 
 
+## Tool Calling in Debug Logs
+
+The debug logs capture the entire execution flow, including the conversation history array and the tools being called. The conversation history array tracks the interaction between the user and the assistant, while the tool calls (`FundsTransfer`, `PayeesAvailableCheck`) represent the specific actions or functions invoked by the assistant to fulfill the user's request.
+
+By examining the debug logs, users can trace the steps taken by the assistant, understand how it processes the user's input, and see how it interacts with different tools to complete the requested task. The logs provide crucial visibility into the underlying execution and are invaluable for debugging, monitoring, and gaining a deeper understanding of the assistant's behavior.
+
+The debug logs on the left side of the screenshot below provide a comprehensive view of the execution flow and the interactions between the user, the assistant (Finance Buddy), and the underlying system. This detailed view ensures that you are fully informed about the process.
+
+<img src="../images/tooldebug.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+
+Here's a step-by-step explanation of the execution captured in the debug logs:
+
+1. The user initiates the conversation with Finance Buddy, requesting to transfer funds to the user.
+2. Finance Buddy responds, asking how it can help the user.
+3. The user expresses their intent to transfer funds to a person.
+4. The Agent Node is initiated (`Agent node initiated`).
+5. The Agent Node Request Response Details are captured in JSON format and contain the conversation history up to this point.
+6. The tool execution (`FundsTransfer`) is initiated. This indicates that the assistant has determined that the tool needs to be called based on the user's request.
+7. The assistant checks if the person (Raj Kumar) is already registered as a payee in the user's account. To verify this, it calls the `PayeesAvailableCheck` tool.
+8. The `PayeesAvailableCheck` tool completes execution, and the result is captured in the debug logs. The assistant determines that the person is registered as a payee.
+9. The assistant informs the user that the person is registered as a payee and requests additional details to proceed with the fund transfer. It asks the user to select the transfer type (NEFT/IMPS/RTGS), provide the transfer amount, and confirm their account ID.
+10. The user provides the requested information.
+11. The assistant calls the `FundsTransfer` tool with the provided details to initiate the fund transfer.
+12. The `FundsTransfer` tool completes execution, and the Agent Node captures the updated conversation history array in the request-response details.
+13. The XO Platform exits the Agent node.
