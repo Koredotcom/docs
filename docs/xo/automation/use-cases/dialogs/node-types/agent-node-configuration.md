@@ -388,8 +388,6 @@ To add an Agent node prompt using JavaScript, follow the steps:
 Defines the standardized format required by the XO Platform to process LLM responses effectively.
 
 
-
-
 <table border="1">
   <thead>
     <tr>
@@ -419,7 +417,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
   "bot": "Sure, I can help you with that. Can I have your name please?",
   "analysis": "Initiating appointment scheduling.",
   "entities": [],
-  <strong>"conv_status": "ongoing"</strong>
+  {=="conv_status": "ongoing"==}
 }
         </pre>
       </td>
@@ -429,9 +427,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
       <td>
         <pre>
 {
-  {==
-  "bot": "Sure, I can help you with that. Can I have your name please?"
-  ==},
+  {=="bot": "Sure, I can help you with that. Can I have your name please?"==},
   "analysis": "Initiating appointment scheduling.",
   "entities": [],
   "conv_status": "ongoing"
@@ -446,9 +442,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
 {
   "bot": "Sure, I can help you with that. Can I have your name please?",
   "analysis": "Initiating appointment scheduling.",
-  {~~ 
-  "entities": [] 
-  ~~},
+  {== "entities": []==},
   "conv_status": "ongoing"
 }
         </pre>
@@ -468,7 +462,50 @@ Defines the standardized format required by the XO Platform to process LLM respo
         </pre>
       </td>
     </tr>
+    <tr>
+      <td>Post-Processor Script Format</td>
+      <td>
+        <pre>
+{
+  "bot": "I'll help you check the delivery date for order ID 123.",
+  "entities": [{"order_id": "123"}],
+  "conv_status": "ongoing",
+  "tools": [
+    {
+      "toolCallId": "toolu_016FWtdANisgqDLu3SjhAXJV",
+      "toolName": "get_delivery_date",
+      "args": { "order_id": "123" }
+    }
+  ]
+}
+      </pre>
+      </td>
+    </tr>
   </tbody>
+</table>
+
+
+
+
+
+## Context Object
+
+The context object is used to get the entities and the parameters of tools.
+
+
+<table>
+  <tr>
+   <td>Entities
+   </td>
+   <td>context.AI_Assisted_Dialogs.GenAINodeName.entities.{entityName}
+   </td>
+  </tr>
+  <tr>
+   <td>Parameters
+   </td>
+   <td>context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}
+   </td>
+  </tr>
 </table>
 
 

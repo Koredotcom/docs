@@ -220,7 +220,7 @@ Yes, you can trigger an FAQ from NLMeta. To do this, include an additional key c
 
 For example:
 
-```
+``` json
 if(data.message === "TriggerFAQFromNLMeta"){
            console.log("NL Meta section executed")
            let metaInfo = {
@@ -232,3 +232,5 @@ if(data.message === "TriggerFAQFromNLMeta"){
            data.metaInfo = metaInfo;
            return sdk.sendBotMessage(data,callback);
        }
+
+```
