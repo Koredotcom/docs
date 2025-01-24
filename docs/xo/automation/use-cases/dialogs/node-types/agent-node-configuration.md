@@ -223,13 +223,10 @@ This node captures entities in the following structure:
 
 ## Custom Prompt for Agent Node
 
-
 Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
 The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.
 
 Let’s review a sample prompt written in Javascript and follow the step-by-step instructions to create a custom prompt. 
-
-
 
 Sample JavaScript
 
@@ -318,6 +315,7 @@ context.payloadFields = payloadFields;
 
 ### Add Custom Prompt
 The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
+
 
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
@@ -509,7 +507,6 @@ The context object is used to get the entities and the parameters of tools.
 </table>
 
 
-
 ## Dynamic Variables
 
 The Dynamic Variables like Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
@@ -599,8 +596,6 @@ Keys
 </table>
 
 
-
-
 ## Tool Calling in Debug Logs
 
 The debug logs capture the entire execution flow, including the conversation history array and the tools being called. The conversation history array tracks the interaction between the user and the assistant, while the tool calls (`FundsTransfer`, `PayeesAvailableCheck`) represent the specific actions or functions invoked by the assistant to fulfill the user's request.
@@ -609,12 +604,9 @@ By examining the debug logs, users can trace the steps taken by the assistant, u
 
 The debug logs on the left side of the screenshot below provide a comprehensive view of the execution flow and the interactions between the user, the assistant (Finance Buddy), and the underlying system. This detailed view ensures that you are fully informed about the process.
 
-
 <img src="../images/tooldebug.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 
-
 Here's a step-by-step explanation of the execution captured in the debug logs:
-
 
 1. The user initiates the conversation with Finance Buddy, requesting to transfer funds to the user.
 2. Finance Buddy responds, asking how it can help the user.
