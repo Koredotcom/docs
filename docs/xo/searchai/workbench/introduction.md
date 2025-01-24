@@ -29,15 +29,15 @@ Adding a new stage requires defining the type of stage, the condition that selec
  To add a new stage, go to the **Enrich** page under **Index** and click **+New Stage**. 
 
 
-![Add a new stage](../images/workbench-home.png "add a new stage")
+![Add a new stage](images/workbench-home.png "add a new stage")
 
 Select the **stage type**.
 
-![Selecting Stage type](../images/select-stage.png "selecting stage type")
+![Selecting Stage type](images/select-stage.png "selecting stage type")
 
 Enter the details of the stage and click **Save**.
 
-![Stage Details](../images/stage-details.png "Stage Details")
+![Stage Details](images/stage-details.png "Stage Details")
 
 Enter a unique name for the stage, the condition for the stage to select content on which processing is to be done, and the outcome of the stage. 
 
@@ -51,10 +51,10 @@ Enter a unique name for the stage, the condition for the stage to select content
 
 The ingested data undergoes processing in the Workbench stages in a sequence. The order of the stages is marked along with the stage name. 
 
-![Ordering Stages](../images/stage-order.png "Ordering Stages")
+![Ordering Stages](images/stage-order.png "Ordering Stages")
 
 To change the order of execution of the stages, use the draggable dots icon to move and place the stage as required. 
-![Ordering Stages](../images/change-stage-order.png "Ordering Stages")
+![Ordering Stages](images/change-stage-order.png "Ordering Stages")
 
 ## Enabling/Disabling a stage
 
@@ -62,10 +62,10 @@ When a stage is disabled, the stage is skipped during Workbench processing. For 
 
 To enable or disable a stage, use the **Stage Status toggle button** on the stage description page. 
 
-![Status of stage](../images/stage-status.png "Status of a stage")
+![Status of stage](images/stage-status.png "Status of a stage")
 
 ## Deleting a stage
 
 Deleting a stage removes it permanently from the Workbench. Use the **Delete** button at the bottom of the page to delete the stage. 
 
-![Delete Stage](../images/delete-stage.png "Delete Stage")
+![Delete Stage](images/delete-stage.png "Delete Stage")

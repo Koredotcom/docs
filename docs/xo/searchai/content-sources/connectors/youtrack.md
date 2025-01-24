@@ -46,11 +46,11 @@ YouTrack connector interacts with YouTrack via the REST APIs. To enable this com
 * Go to the **Account Security** tab under the **Profile** page. 
 * Click on **New Token** under **Tokens**. 
 
-![Token Generation](images/new-token.png "Token Generation")
+![Token Generation](images/youtrack/new-token.png "Token Generation")
 
 * Give a name for the token and save the generated token. 
 
-![Token Generation](images/create-token.png "Token Generation")
+![Token Generation](images/youtrack/create-token.png "Token Generation")
 
 ## Configure YouTrack Connector in Search AI
 

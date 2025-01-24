@@ -307,6 +307,7 @@ nav:
                 - Amazon S3: searchai/content-sources/connectors/amazons3.md
                 - Asana: searchai/content-sources/connectors/asana.md
                 - Azure Storage: searchai/content-sources/connectors/azure.md
+                - BitBucket: searchai/content-sources/connectors/bitbucket.md
                 - Box: searchai/content-sources/connectors/box.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md

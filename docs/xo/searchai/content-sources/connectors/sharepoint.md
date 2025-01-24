@@ -15,38 +15,38 @@ App registrations are required to access resources programmatically. Registering
 
 * Log in to the [Azure Platform Portal](https://portal.azure.com/#home) and go to Manage **Azure Active Directory**.
 
-![Azure Home](../images/sharepoint/azure-home.png "Admin Center")
+![Azure Home](images/sharepoint/azure-home.png "Admin Center")
 
 * Register a new application. To do so, go to **App Registrations** under **Applications** and click on **New Registration.**
 
-![App Registration](../images/sharepoint/new-app-registration.png "Application Registration")
+![App Registration](images/sharepoint/new-app-registration.png "Application Registration")
 
 * Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click **_Register_**. You can use one of the following URLs according to your region.
     * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
     * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
     * Prod Region Callback URL: https://idp.kore.com/workflows/callback
     
-![Account Types](../images/sharepoint/account-types.png "Account Types")
+![Account Types](images/sharepoint/account-types.png "Account Types")
 
 * This will generate a client ID, which will be used to identify the application uniquely in the  Microsoft Identity Platform. Save the **ClientId** and **TenantId** from the **Overview** section.
 
-![Client Credentials](../images/sharepoint/client-credentials.png "Client Credentials")
+![Client Credentials](images/sharepoint/client-credentials.png "Client Credentials")
 
 * Next, [Generate a client Secret for the registered app](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) under the **Certificates and Secrets** tab.
 
-![Client Credentials](../images/sharepoint/client-secret.png "Client Credentials")
+![Client Credentials](images/sharepoint/client-secret.png "Client Credentials")
 
 * Enter a description and set the expiration time to 24 months. Click **Add**.
 
- ![Client Credentials](../images/sharepoint/generate-secret.png "Client Credentials")
+ ![Client Credentials](images/sharepoint/generate-secret.png "Client Credentials")
 
 * Save the client secret generated. The client secret cannot be seen again on switching the tabs. 
 
-![Client Credentials](../images/sharepoint/save-secret.png "Client Credentials")
+![Client Credentials](images/sharepoint/save-secret.png "Client Credentials")
 
 * The next step is to set up the application's required permissions. Go to **API Permissions** and click **Add a permission**.
 
-![API Permissions](../images/sharepoint/api-permissions.png "API Permissions")
+![API Permissions](images/sharepoint/api-permissions.png "API Permissions")
 
 * Add the following delegated permissions found under **Microsoft Graph**.
     * User.ReadBasic.All
@@ -57,11 +57,11 @@ App registrations are required to access resources programmatically. Registering
     * Sites.Read.All
     * Offline_access
     
-    ![Request Permissions](../images/sharepoint/request-permissions.png "Request Permissions")
+    ![Request Permissions](images/sharepoint/request-permissions.png "Request Permissions")
 
 * After adding all the permissions, click **_Grant Admin Consent_** to grant the permissions to the application.
 
-![Grant Permissions](../images/sharepoint/grant-permissions.png "Grant Permissions")
+![Grant Permissions](images/sharepoint/grant-permissions.png "Grant Permissions")
 
 * To configure the SharePoint connector in SearchAssist, use the client ID, client secret, and tenant ID generated above. For more details, refer to [this](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
@@ -115,17 +115,17 @@ There are **two membership groups** in SharePoint: **Office 365** ** groups and 
 
 You can view the **Office 365 Group Membership** for a site here. 
 
-![Office 365 Membership](../images/sharepoint/racl/config-tab.png "Configuration")
+![Office 365 Membership](images/sharepoint/racl/config-tab.png "Configuration")
 
 
 Click on the **Members** button to view the list of members and their roles. 
 
-![Office 365 Members](../images/sharepoint/racl/members.png "Members")
+![Office 365 Members](images/sharepoint/racl/members.png "Members")
 
 
 Another set of permissions allows users to access a site. Go to **settings** and click on **site permissions**. These are referred to as **SharePoint Security Groups.**
 
-![Site Permissions](../images/sharepoint/racl/site-permissions.png "Site Permissions")
+![Site Permissions](images/sharepoint/racl/site-permissions.png "Site Permissions")
 
 
 Every site has three default SharePoint permission levels, which differ in the access granted to the users. 
@@ -148,11 +148,11 @@ Therefore, in the sourceACL field, you will see four permission entities corresp
 
 The access control set for a site applies to all the files/pages within the site. Additionally, an owner of the file can share it with a new user, internally or externally. 
 
-![File Permissions](../images/sharepoint/racl/file-permissions.png "File Permissions")
+![File Permissions](images/sharepoint/racl/file-permissions.png "File Permissions")
 
 The owner can also share a file with all the domain or organization members. 
 
-![Domain Access](../images/sharepoint/racl/domain-access.png "Domain Level Access")
+![Domain Access](images/sharepoint/racl/domain-access.png "Domain Level Access")
 
 
 ### Handling of File Permissions in SearchAI

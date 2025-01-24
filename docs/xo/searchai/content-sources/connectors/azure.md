@@ -60,7 +60,7 @@ Use the following minimum permissions:
 
 This will generate the connection string, SAS token, and blob service SAS URL. Save these fields to configure the Azure connector in Search AI. 
 
-![Azure Connection Details](../images/azure/azure-credentials.png "Azure Connection Details")
+![Azure Connection Details](images/azure/azure-credentials.png "Azure Connection Details")
 
 ## Step 2: Configuring the Azure connector in Search AI
 
@@ -71,7 +71,7 @@ This step allows you to configure the Azure Storage account in SearchAI and sele
 
 Go to the **Connectors** tab, click on the **Add New Connector** option, and select **Azure Storage**.
 
-![Connector Home](../images/azure/connector-home.png "Connector Home")
+![Connector Home](images/azure/connector-home.png "Connector Home")
 
 On the **Authorization** tab, enter the following fields and click **Connect**.
   * Name: Name for the connector
@@ -87,22 +87,22 @@ On successful authentication, this will set up a connection with Azure storage a
 
 To synchronize the content, go to the **Configurations** tab. The synchronization allows ingestion of the intended content from the Azure Storage account to the SearchAI application. You can either set up automatic synchronization or trigger a manual sync.  To initiate a sync manually, click on the **Sync Now** button at the end of the page.
 
-![Manual Sync](../images/azure/manual-sync.png "Manual Sync")
+![Manual Sync](images/azure/manual-sync.png "Manual Sync")
 
 You can also set up automatic synchronization that can be used to synchronize content at a specific time or at regular intervals. To do so, enable the **Schedule Sync** option. 
 
-![Schedule Sync](../images/azure/schedule-sync.png "Schedule Sync")
+![Schedule Sync](images/azure/schedule-sync.png "Schedule Sync")
 
 Set the date, time, and frequency of the sync operation. 
 
-![Schedule Time](../images/azure/schedule-time.png "Schedule Time")
+![Schedule Time](images/azure/schedule-time.png "Schedule Time")
 
 You can select all the content for synchronization or select specific containers. For specific content, click on the **Select Content** link and specify the containers from which the content will be synced. Choose one or more containers, as required, and click Save.
 
-![Select Container](../images/azure/select-container.png "Select Container")
+![Select Container](images/azure/select-container.png "Select Container")
 
 To change the selected container list at any time, click on the **Edit Selection** link and update the container list as required. 
 
-![Edit Selected Containers](../images/azure/edit-container.png "Edit selected containers")
+![Edit Selected Containers](images/azure/edit-container.png "Edit selected containers")
 
 You can view the synchronized content under the **Content** tab. The **Jobs** tab lists all the sync actions in the connector.  
