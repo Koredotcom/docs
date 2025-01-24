@@ -16,7 +16,7 @@ This update includes new features, enhancements, security fixes, and bug fixes s
 
 **Feature Enhancements**
 
-* Function Calling:
+* Tool Calling:
     * Tool traceability and enhanced debugger in Gen AI nodes: Users can now trace tool calls (both sequential and parallel) in the Gen AI node. Each tool call is logged, with input and output data displayed in the debug panel, with a dedicated tool trace view.
     * Agent and model analytics also include relevant metrics for tool calls, such as latency and token calculations.
     * Change log and permissions: Tool-related events are now captured in the flow change log of the GenAI node. User permissions determine if they can add tools to the builder.
