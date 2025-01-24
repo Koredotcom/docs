@@ -383,7 +383,93 @@ To add an Agent node prompt using JavaScript, follow the steps:
 <img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
+## Expected Output Structure
 
+Defines the standardized format required by the XO Platform to process LLM responses effectively.
+
+
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Format Type</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text Response Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Conversation Status Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  <strong>"conv_status": "ongoing"</strong>
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Virtual Assistant Response Format</td>
+      <td>
+        <pre>
+{
+  {==
+  "bot": "Sure, I can help you with that. Can I have your name please?"
+  ==},
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Collected Entities Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  {~~ 
+  "entities": [] 
+  ~~},
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Tool Response Format</td>
+      <td>
+        <pre>
+{
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2isho",
+  "toolName": "get_delivery_date",
+  "result": {
+    "delivery_date": "2024-11-20"
+  }
+}
+        </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 
