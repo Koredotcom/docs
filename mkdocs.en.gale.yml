@@ -108,7 +108,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
@@ -189,6 +189,13 @@ nav:
     - More Options on Prompt Studio: playground/options-prompt-canvas.md
   - Data: 
     - Manage Data: data/manage-datasets.md
+  - Evaluation: 
+    - Overview: evaluation/overview.md
+    - Create Projects: evaluation/create-project.md
+    - Create Evaluations: evaluation/create-evaluation.md
+    - Import Datasets: evaluation/import-dataset.md
+    - Configure Evaluators: evaluation/configure-evaluator.md
+    - Run Evaluations: evaluation/run-evaluation.md
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 
