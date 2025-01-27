@@ -25,61 +25,19 @@ Evaluation Studio is an essential tool for managing, evaluating, and optimizing 
 
 ## Evaluation Studio: User Experience Overview
 
-The following table outlines the key actions at each stage of the Evaluation Studio user journey. It serves as a quick reference, guiding users through the process.
+The following outlines the key actions at each stage of the Evaluation Studio user journey:
+
+1. **<a href="https://docs.kore.ai/gale/evaluation/create-project/"> Creating a Project</a>**: Log in to GALE, go to Evaluation Studio, and create a project.
+
+2. **<a href="https://docs.kore.ai/gale/evaluation/create-evaluation/"> Creating an Evaluation</a>**: Create an evaluation for your project.
+
+3. **<a href="https://docs.kore.ai/gale/evaluation/import-dataset/"> Importing a dataset</a>**: Upload your dataset (e.g., CSV) for evaluation.
+
+4. **<a href="https://docs.kore.ai/gale/evaluation/configure-evaluator/"> Configuring an Evaluator</a>**: Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
+
+5. **<a href="https://docs.kore.ai/gale/evaluation/run-evaluation/"> Run an evaluation</a>**: Trigger the evaluation based on your dataset and selected evaluators.
 
 
 
-<table>
-  <tr>
-   <td><strong>Step</strong>
-   </td>
-   <td><strong>Action</strong>
-   </td>
-   <td><strong>Link to procedure </strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>1. Create a Project</strong>
-   </td>
-   <td>Log in to GALE, go to Evaluation Studio, and
-    create a project.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/create-project/"> Creating a Project</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>2. Create an Evaluation</strong>
-   </td>
-   <td>Create an evaluation for your project.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/create-evaluation/"> Creating an Evaluation</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>3. Import a Dataset</strong>
-   </td>
-   <td>Upload your dataset (e.g., CSV) for evaluation.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/import-dataset/"> Importing a dataset</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>4. Configure Evaluators</strong>
-   </td>
-   <td>Choose Quality or Safety evaluators such as Coherence,  
-    Toxicity, or Bias Detection. Link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/configure-evaluator/"> Adding an Evaluator</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>5. Run the Evaluation</strong>
-   </td>
-   <td>Trigger the evaluation based on your dataset  
-    and selected evaluators.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/run-evaluation/"> Run an evaluation</a>
-   </td>
-  </tr>
- </table>
+
 

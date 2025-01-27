@@ -10,7 +10,7 @@ This update includes new features, enhancements, security fixes, and bug fixes s
 
 **New Features**
 
-* Evaluation Studio: GALE’s new Evaluation Studio serves as a comprehensive tool for assessing LLM performance. The platform offers users the flexibility to either select from a variety of pre-existing evaluators or design their own to measure model effectiveness. Users can upload and organize datasets, which include inputs and outputs, into designated projects. The evaluation process accommodates adjustable thresholds and scoring metrics, allowing customization based on specific evaluator needs.
+* Evaluation Studio: GALE’s new Evaluation Studio serves as a comprehensive tool for assessing LLM performance. The platform offers users the flexibility to either select from a variety of pre-existing evaluators or design their own to measure model effectiveness. Users can upload and organize datasets, which include inputs and outputs, into designated projects. The evaluation process accommodates adjustable thresholds and scoring metrics, allowing customization based on specific evaluator needs. [Learn more](https://docs.kore.ai/gale/evaluation/overview/).
 * Public API Support: Users can now generate and manage API keys with customizable expiration dates and scopes (e.g., deploying models or agents). The API endpoints enables users to deploy, undeploy, import, and export GALE agents, models, and guardrails with the appropriate permissions.
 
 **Feature Enhancements**
