@@ -66,25 +66,21 @@ Steps to create a Start Flow:
     * You can now use this number for your Start Flow.
 
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
-    * Google Cloud Speech-to-Text,
     * Microsoft Azure Speech Services,
-    * Nuance,
-    * AmiVoice,
-    * NVIDIA Riva,
-    * Deepgram, or
-    * Gnani Speech-to-Text.
+    * Google Cloud Speech-to-Text,
+    * Amazon Transcribe.  
     <img src="../images/speech-recognition-engine.png" alt="Speech Recognition Engine" title="Speech Recognition Engine" style="border: 1px solid gray; zoom:80%;">
 
-5. Select an English Dialect. This option is not available for _AmiVoice_.
+5. Select an English Dialect.
 
 6. Select a **TTS Speech Recognition**. You can choose from the following:
     * Microsoft Azure Speech Services,
     * Google Cloud Text-to-Speech,
     * AWS Amazon Polly,
-    * Nuance,
     * ElevenLabs,
-    * Whisper, or
-    * NVIDIA RIVA Text-to-Speech  
+    * Whisper,
+    * PlayHT,
+    * Deepgram Text-to-speech.  
     <img src="../images/text-to-speech-engine.png" alt="Text to Speech Engine" title="Text to Speech Engine" style="border: 1px solid gray; zoom:80%;">
 
 7. Select a **Language** for text-to-speech, then select a **Voice**.
