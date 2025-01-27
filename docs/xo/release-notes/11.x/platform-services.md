@@ -2,7 +2,13 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.9.1 January 25, 2025
 
+<u> Patch Release </u>
+
+This update include only bug fixes.
+
+<hr>
 
 ## v11.9.0 January 05, 2025
 
