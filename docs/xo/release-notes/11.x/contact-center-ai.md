@@ -34,7 +34,7 @@ The feature enhances supervisor flexibility while maintaining oversight during l
 
 Multiple prompts in the IVR voice channel flow are combined into a single message before being handed over to the Virtual Assistant using the Automation Node. A "Prompt: True" flag indicates the system awaits user input, ensuring smooth and uninterrupted communication.
 
-Key Benefits
+Key benefits
 
 * Ensures effective user input capture.
 * Prevents call disconnections.
@@ -46,6 +46,7 @@ Key Benefits
 #### Deepgram TTS Support
 
 This update includes Deepgram TTS support to complement their existing ASR integration. Deepgram is now available as a TTS option when configuring [Start Flows](../../flows/create-flows.md#create-a-start-flow) and [Voice Preferences](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences).
+
 All Deepgram voices can be selected, and Deepgram TTS can be set using call control parameters. This enables the use of Deepgram TTS across the Kore.ai XO platform, with existing flows working successfully using Deepgram voices.
 
 <hr>
