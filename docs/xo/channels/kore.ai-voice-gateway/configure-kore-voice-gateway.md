@@ -191,7 +191,7 @@ You can configure the voice preferences to personalize the ASR Engine and the vo
 
 Steps to configure the TTS engine:
 
-1. In the Voice Preferences window, select a text-to-speech engine. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md#supported-speech-engines)
+1. In the Voice Preferences window, select a text-to-speech engine. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md#supported-speech-engines).
 2. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to change the **Playback Speed** and **Download** the voice preview.
 3. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each has its voice options.
 4. Select a different Voice Language if required.  
