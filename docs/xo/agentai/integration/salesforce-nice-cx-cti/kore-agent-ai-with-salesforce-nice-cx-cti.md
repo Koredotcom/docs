@@ -629,10 +629,8 @@ curl –location –request POST ‘https://login.salesforce.com/services/oauth2
 Refer to [Access Custom Data in Agent AI Bot](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} for instructions on how to access customdata in the bot.
    </td>
    <td>Include your data in the customdata object (one key-value pair per line). For example: 
-
-*  customdata.agentName="Agent"
-
-*  customdata.agentID="{agentid}"
+<li>customdata.agentName="Agent"</li>
+<li>customdata.agentID="{agentid}"</li>
 
    </td>
   </tr>
@@ -721,10 +719,9 @@ Open the Studio, import the above script, and customize as per the following tab
 Refer to [Access Custom Data in Agent AI Bot](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} for instructions on how to access customdata in the bot.
    </td>
    <td>Include your data in the customdata object (one key-value pair per line). For example: 
-
-*  customdata.agentName="Agent"
-
-*  customdata.agentID="{agentid}"
+<li>
+customdata.agentName="Agent"</li>
+<li>customdata.agentID="{agentid}"</li>
 
    </td>
    <td>AgentAssist
