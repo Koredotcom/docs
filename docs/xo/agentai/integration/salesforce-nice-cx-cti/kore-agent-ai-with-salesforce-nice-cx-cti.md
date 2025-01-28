@@ -626,15 +626,13 @@ curl –location –request POST ‘https://login.salesforce.com/services/oauth2
    </td>
    <td>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.
 
-Refer to [Access Custom Data in Agent AI Bot](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} for instructions on how to access customdata in the bot.
+<p>Refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data in Agent AI Bot</a> for instructions on how to access custom data in the bot.</p>
    </td>
    <td>Include your data in the customdata object (one key-value pair per line). For example: 
 <li>customdata.agentName="Agent"</li>
 <li>customdata.agentID="{agentid}"</li>
-
    </td>
   </tr>
-  
   <tr>
    <td>AgentAssist
    </td>
@@ -715,8 +713,7 @@ Open the Studio, import the above script, and customize as per the following tab
   <td>Custom Data
    </td>
    <td>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.
-
-Refer to [Access Custom Data in Agent AI Bot](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} for instructions on how to access customdata in the bot.
+<p>Refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data in Agent AI Bot</a> for instructions on how to access custom data in the bot.</p>
    </td>
    <td>Include your data in the customdata object (one key-value pair per line). For example: 
 <li>
