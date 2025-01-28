@@ -719,8 +719,9 @@ Open the Studio, import the above script, and customize as per the following tab
 <li>
 customdata.agentName="Agent"</li>
 <li>customdata.agentID="{agentid}"</li>
-
    </td>
+  </tr>
+  <tr> 
    <td>AgentAssist
    </td>
    <td>Map the AgentAssist Hub Instance
