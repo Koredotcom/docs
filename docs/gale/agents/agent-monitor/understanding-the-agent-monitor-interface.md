@@ -188,8 +188,7 @@ The errors are classified as follows:
 * **Internal Server Error:** Technical issues encountered with the internal server.
 * **Network**: Technical issues encountered with the network connectivity.
 
-
-## Error Scenarios 
+### Error Scenarios 
 
 The table below lists the errors that can occur in the **Agent Monitoring** dashboard, including the error categories and HTTP status codes:
 
