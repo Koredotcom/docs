@@ -187,77 +187,105 @@ Steps to delete a SIP number:
 You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
     <img src="../images/voice-preferences.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
-### Text-to-Speech Engine
+Steps to configure Voice Preferences:
 
-Steps to configure the TTS engine:
+1. Select the following on the Voice Preferences window:
+    1. Language
+    2. Automatic Speech Recognition Engine (ASR)
+        1. ASR
+            You can choose between
+            * Microsoft Azure Speech Services,
+            * Google Cloud Speech-to-Text,
+            * Amazon Transcribe.
+        2. Dialect
+        3. Primary ASR Configuration (Advanced Setting)
+        4. Fallback ASR Configuration (Advanced Setting)
+    3. Text to Speech Engine (TTS)
+        1. TTS
+            You can choose between
+            * Microsoft Azure Speech Services,
+            * Google Cloud Text-to-Speech,
+            * AWS Amazon Polly,
+            * ElevenLabs,
+            * Whisper,
+            * PlayHT,
+            * Deepgram Text-to-speech.
+        2. Voice
+    4. Voice Preview
+        1. Sample Text: Enter Sample Text to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to adjust Playback Speed. Click the Play button next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its voice options. Select a different Voice Language if required.
+        2. Primary TTS Configuration (Advanced Setting)
+        3. Fallback TTS Configuration (Advanced Setting)
+2. Click **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.  
 
-1. In the Voice Preferences window, select a text-to-speech engine. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md#supported-speech-engines).
-2. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to change the **Playback Speed** and **Download** the voice preview.
-3. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each has its voice options.
-4. Select a different Voice Language if required.  
-    <img src="../images/tts-engine.gif" alt="TTS Engine" title="TTS Engine" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
 
-### Automated Speech Recognition Engine
-
-Steps to configure the ASR Engine:
-
-1. Select an **Automated Speech Recognition Engine**. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md#supported-speech-engines).
-2. Select the Dialect and click **Done** once you have completed configuring your voice preferences.  
-    <img src="../images/asr-engine.png" alt="ASR Engine" title="ASR Engine" style="border: 1px solid gray; zoom:80%;">
-
-    The set voice, language, and dialect apply to automated customer responses that use text-to-speech.
-
-#### List of Supported Dialects
+## List of Supported Dialects
 
 The following dialects are supported:
 
 <table>
   <tr>
-   <td>English (Australia)
-   </td>
-   <td>English (Nigeria)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Canada)
-   </td>
-   <td>English (Pakistan)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Ghana)
-   </td>
-   <td>English (Philippines)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Hong Kong)
-   </td>
-   <td>English (Singapore)
-   </td>
-  </tr>
-  <tr>
-   <td>English (India)
-   </td>
-   <td>English (South Africa)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Ireland)
-   </td>
-   <td>English (Tanzania)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Kenya)
-   </td>
-   <td>English (United Kingdom)
-   </td>
-  </tr>
-  <tr>
-   <td>English (New Zealand)
+   <td>
+    English (Australia)
    </td>
    <td>
+    English (Nigeria)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Canada)
+   </td>
+   <td>
+    English (Pakistan)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Ghana)
+   </td>
+   <td>
+    English (Philippines)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Hong Kong)
+   </td>
+   <td>
+    English (Singapore)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (India)
+   </td>
+   <td>
+    English (South Africa)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Ireland)
+   </td>
+   <td>
+    English (Tanzania)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Kenya)
+   </td>
+   <td>
+    English (United Kingdom)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (New Zealand)
+   </td>
+   <td>
+    English (United States)
    </td>
   </tr>
 </table>
