@@ -17,7 +17,7 @@ In GALE, the tool calling feature within the GenAI nodes expands the model’s c
 The following outlines the typical steps involved in a tool calling process:
 
 1. **Input Data**: The model receives a query or input from the user.
-2. **Processing**: The model analyzes the request and determines which tools or additional resources are needed. It then maps the user's query to predefined functions configured in the GenAI node.
+2. **Processing**: The model analyzes the request and determines which tools or additional resources are needed. It then maps the user's query to predefined tools configured in the GenAI node.
 3. **Tool Call**: GALE triggers the mapped tool with the necessary arguments.
 4. **Tool Execution**: The called tool performs its tasks, such as running a search, generating an image, or fetching specific information.
 5. **Output**: The tool's result is returned to the GenAI node, which may process it further or deliver the final output to the user. The model combines the results from the various tools and generates a cohesive, informative response for the user.
@@ -41,13 +41,13 @@ For example, a user requests information about the current weather in Paris and 
 **Step 1: User input (Initial query)**  
 The user enters a query: *"What's the weather in Paris like, and is it a good time to visit?"*
 
-**Step 2:** **Query processing - clarifying and mapping functions**  
-The model processes the query and identifies two distinct functions based on the user's request:
+**Step 2:** **Query processing - clarifying and mapping tools**  
+The model processes the query and identifies two distinct tools based on the user's request:
 
 1. *Get Weather* – To check the current weather in Paris.
 2. *Get Travel Advice* – To provide travel recommendations based on the weather.
 
-The model maps the query to these functions and prepares a response to clarify the intent: *"I will check the weather in Paris and provide travel advice based on the current conditions."*
+The model maps the query to these tools and prepares a response to clarify the intent: *"I will check the weather in Paris and provide travel advice based on the current conditions."*
 
 **Step 3: Model response - Preparing tool call for weather API**  
 The model generates the tool call for the Get Weather API, which includes the necessary arguments:
@@ -67,7 +67,7 @@ The Get Weather tool is triggered, and the external Weather API returns the foll
 * *Forecast: Light rain later*
 
 The model then prepares to trigger the next tool based on the weather data.
-In sequential execution, the tool sends the data to the model, which then processes it and determines the next tool or function to execute.
+In a sequential execution, the tool sends the data to the model, which then processes it and determines the next tool or function to execute.
 
 **Step 5: Model response - Preparing tool call for travel advice**  
 The model now generates the tool call for Get Travel Advice based on the weather conditions, including:

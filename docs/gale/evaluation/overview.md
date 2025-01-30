@@ -27,7 +27,7 @@ Evaluation Studio is an essential tool for managing, evaluating, and optimizing 
 
 The following outlines the key actions at each stage of the Evaluation Studio user journey:
 
-1. [**Create a Project**](./create-project.md): Log in to GALE, go to Evaluation Studio, and create a project.
+1. [**Create a project**](./create-project.md): Log in to GALE, go to Evaluation Studio, and create a project.
 
 2. [**Create an evaluation**](./create-evaluation.md): Create an evaluation for your project.
 
