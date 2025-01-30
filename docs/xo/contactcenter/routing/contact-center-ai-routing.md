@@ -22,24 +22,6 @@ Contact Center AI provides a variety of routing methods to suit different operat
 5. **Reprioritization**: Allows reprioritizing conversations during queue transfers to adapt to changing customer or business demands.
 6. **Routing Fallback**: Invokes the 'No Agents Available' flow if no agents are logged into the system or invokes the ‘Out of Operational Hours Flow’ if the conversations are received outside configured working hours.
 
-### Priority-Based Routing
-
-Contact Center AI enables priority-based routing, allowing businesses to handle conversations efficiently based on various contextual factors. The system supports dynamic prioritization using multiple criteria, including but not limited to:
-
-**Intent-Based Routing**: Conversations with critical intents, such as account closure requests, can be given higher priority and routed to expert agents.  
-
-**Ticket Value-Based Routing**: Customers with high-value tickets (for example, VIP customers with transactions exceeding $10,000) can be prioritized over standard users.  
-
-**Location-Based Routing**: Conversations from specific regions can be prioritized to ensure faster response times or localized support.  
-
-To implement such flexible prioritization, Contact Center AI's Flow Editor provides a [Set Queue](../../flows/node-types/set-queue.md) and [Script Node](../../flows/node-types/script-task.md) with scripting capabilities. Once a conversation is created, its context is available for use. Businesses can configure custom scripts to:
-
-* Define priority levels dynamically,
-* Assign skill tags based on conversation attributes,
-* Route conversations to the appropriate queue.
-
-This approach ensures that high-priority conversations are handled effectively while providing a scalable and customizable routing framework.
-
 ### Pre-Transfer Workflow
 
 Before transferring a conversation:
@@ -67,6 +49,24 @@ Agents assigned to multiple queues are managed using the following logic:
 * For conversations with the same priority, preference is given to:
     * Conversations where the agent is a preferred agent.
     * If no preferred agent exists, skill match determines the assignment.
+
+### Priority-Based Routing
+
+Contact Center AI enables priority-based routing, allowing businesses to handle conversations efficiently based on various contextual factors. The system supports dynamic prioritization using multiple criteria, including but not limited to:
+
+**Intent-Based Routing**: Conversations with critical intents, such as account closure requests, can be given higher priority and routed to expert agents.  
+
+**Ticket Value-Based Routing**: Customers with high-value tickets (for example, VIP customers with transactions exceeding $10,000) can be prioritized over standard users.  
+
+**Location-Based Routing**: Conversations from specific regions can be prioritized to ensure faster response times or localized support.  
+
+To implement such flexible prioritization, Contact Center AI's Flow Editor provides a [Set Queue](../../flows/node-types/set-queue.md) and [Script Node](../../flows/node-types/script-task.md) with scripting capabilities. Once a conversation is created, its context is available for use. Businesses can configure custom scripts to:
+
+* Define priority levels dynamically,
+* Assign skill tags based on conversation attributes,
+* Route conversations to the appropriate queue.
+
+This approach ensures that high-priority conversations are handled effectively while providing a scalable and customizable routing framework.
 
 ### Language-Based Routing
 
