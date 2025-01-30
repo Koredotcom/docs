@@ -27,25 +27,12 @@ Evaluation Studio is an essential tool for managing, evaluating, and optimizing 
 
 The following outlines the key actions at each stage of the Evaluation Studio user journey:
 
-<<<<<<< Updated upstream
-1. [**Create a project**](./create-project.md): Log in to GALE, go to Evaluation Studio, and create a project.
-=======
-1. **<a href="https://docs.kore.ai/gale/evaluation/create-project/"> Creating a Project</a>**: Log in to GALE, go to Evaluation Studio, and create a project.
-
-2. **<a href="https://docs.kore.ai/gale/evaluation/create-evaluation/"> Creating an Evaluation</a>**: Create an evaluation for your project.
-
-3. **<a href="https://docs.kore.ai/gale/evaluation/import-dataset/"> Importing a dataset</a>**: Upload your dataset (e.g., CSV) for evaluation.
-
-4. **<a href="https://docs.kore.ai/gale/evaluation/configure-evaluator/"> Configure evaluators</a>**: Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
-
-5. **<a href="https://docs.kore.ai/gale/evaluation/run-evaluation/"> Run an evaluation</a>**: Trigger the evaluation based on your dataset and selected evaluators.
-
->>>>>>> Stashed changes
+1. [**Create a Project**](./create-project.md): Log in to GALE, go to Evaluation Studio, and create a project.
 
 2. [**Create an evaluation**](./create-evaluation.md): Create an evaluation for your project.
 
 3. [**Import a dataset**](./import-dataset.md): Upload your dataset (e.g., CSV) for evaluation.
 
-4. [**Configuring an evaluator**](./configure-evaluator.md): Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
+4. [**Configure evaluators**](./configure-evaluator.md): Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
 
 5. [**Run an evaluation**](./run-evaluation.md): Trigger the evaluation based on your dataset and selected evaluators.
