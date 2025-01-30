@@ -2,6 +2,53 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.9.1 January 25, 2025
+
+<u>Patch Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Console
+
+#### Connection Status Alerts
+
+A new status indicator at the top of the Agent Console shows the connection state and automatically updates when:
+
+* The connection is lost (offline),
+* Reconnection is in progress, or
+* The connection is restored (online).  
+<img src="../images/connection-lost.png" alt="Connection Status Alert" title="Connection Status Alert" style="border: 1px solid gray; zoom:80%;">
+
+[Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#connection-handling)
+
+#### Improved Monitoring of Listen and Whisper Functionality
+
+When a supervisor shifts focus away from the current conversation, a Listen Banner appears in the Monitor Tab. This ensures supervisors can monitor other conversations without being tied to one conversation.
+
+A restriction message ensures supervisors confirm before leaving the monitor tab during an active Listen or Whisper session, preventing unintentional interruptions.
+The feature enhances supervisor flexibility while maintaining oversight during live conversations. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen-and-whisper-voice-calls)
+
+### Configuration
+
+#### Enhanced IVR channel Flow
+
+Multiple prompts in the IVR voice channel flow are combined into a single message before being handed over to the Virtual Assistant using the Automation Node. A "Prompt: True" flag indicates the system awaits user input, ensuring smooth and uninterrupted communication.
+
+Key benefits
+
+* Ensures effective user input capture.
+* Prevents call disconnections.
+* Maintains seamless transitions between the IVR Welcome Voice Flow and the Automation Node.
+[Learn more :octicons-arrow-right-24:](../../channels/IVR-integration.md#managing-multiple-prompts-in-ivr-voice-channel)
+
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Deepgram TTS Support
+
+This update includes Deepgram TTS support to complement their existing ASR integration. Deepgram is now available as a TTS option when configuring [Start Flows](../../flows/create-flows.md#create-a-start-flow) and [Voice Preferences](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences).
+
+All Deepgram voices can be selected, and Deepgram TTS can be set using call control parameters. This enables the use of Deepgram TTS across the Kore.ai XO platform, with existing flows working successfully using Deepgram voices.
+
 <hr>
 
 ## v11.9.0 January 05, 2025
@@ -55,7 +102,6 @@ Key benefits
 
 Notification alerts automatically stop when an agent takes action - either accepting/rejecting the interaction, sending their first message, or when a supervisor reassigns the interaction, or it times out in the system. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#enable-repeat-notifications)
 
-
 #### Blended Mode for Voice and Digital Interactions
 
 Blended Mode allows agents to handle both voice and digital interactions simultaneously.
@@ -107,7 +153,6 @@ Key benefits
 #### Outbound SMS API Integration
 
 This update introduces a new public API to send outbound SMS messages via the Generic SMS Channel, enabling seamless integration of SMS communication into applications and services. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/send-outbound-sms.md)
-
 
 ### Analytics
 

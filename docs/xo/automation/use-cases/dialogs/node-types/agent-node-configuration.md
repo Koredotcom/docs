@@ -45,10 +45,6 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 
 #### Pre-Processor Script
 
-!!! note
-
-    The pre-processor script does not apply to the custom prompt.
-
 
 This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
@@ -73,9 +69,9 @@ Add a brief description of the use case context to guide the model.
 
 Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.
 
-!!!note
+!!! note
 
-    Tool calling is supported only with custom prompts (Javascript) without streaming.
+    The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
 
 Click **+ Add** to open the **New Tool** creation window.  
 
@@ -122,10 +118,6 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
 <img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;">
 
 #### Post-Processor Script
-
-!!! note
-
-    The post-processor script does not apply to the custom prompt.
 
 This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
@@ -225,6 +217,20 @@ This node captures entities in the following structure:
 
 Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
 The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.
+
+Agent Node with custom prompt supports configuring pre and post-processor scripts at both node and prompt levels. This enables platform users to reuse the same custom prompt across multiple nodes while customizing the processing logic, input variables, and output keys for each specific use case. 
+
+When you configure pre and post-processor scripts at both node and prompt levels, the execution order is: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
+
+!!! warning
+
+    Configuring pre and post-processor scripts at both node and prompt levels may increase latency.
+
+!!! note
+
+    Node-level pre and post-processor scripts support [App Functions](../../../../app-settings/dev-tools/reusing-bot-functions-custom-script-file.md) in addition to content, context, and environment variables.
+
+
 
 Let’s review a sample prompt written in Javascript and follow the step-by-step instructions to create a custom prompt. 
 
@@ -328,14 +334,14 @@ To add an Agent node prompt using JavaScript, follow the steps:
 5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables).  
 <img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
-6. Ensure the Stream Response is disabled, as the Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.
+6. Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
-        Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.
+        The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
     
 8. Enter the **JavaScript**. The Sample Context Values are displayed. To know more about context values, see [Dynamic Variables](#dynamic-variables).  
 <img src="../images/toolcall2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
