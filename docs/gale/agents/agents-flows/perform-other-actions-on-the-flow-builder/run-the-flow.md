@@ -37,10 +37,11 @@ The debug log lets you monitor the flow’s execution and track output results, 
 
 The debug log shows the following key details:
 
-* **Flow input values**: View the values you entered for the input variables when setting up the flow, which are used to run the agent.
+* **Flow input values**: View the values you entered for the input variables when setting up the flow. 
 * **Flow-level log details**: Get an overview of logs at the flow level, including initiation and progress.
 * **Node-level information**: For each flow initiation, detailed logs are provided for each node, which include the success or failure status.
-* **Node success/failure Links**: Links to additional details if a node succeeds or fails.
+* **Node success/failure links**: Links to additional details if a node succeeds or fails.
+* **Tool calling details**: Provides detailed logs of any tools called during the agent flow's execution (available only for Gen AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.
 * **Node metrics**: For each node, the following metrics are available:
     * **Initiated On**: The timestamp for when the node was triggered.
     * **Executed On**: The timestamp for when the node execution was completed.

@@ -122,6 +122,7 @@ nav:
     - Import an Agent: agents/import-an-agent.md
     - Agent Flows:
       - About Flows: agents/agents-flows/flows-overview.md
+      - About Tool Calling: agents/agents-flows/tool-calling.md
       - Manage Flows: 
         - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
