@@ -41,7 +41,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <img src="../images/voice-gateway.svg" style="zoom:200%;"></img>
         <kr-grid-title>Kore Voice Gateway</kr-grid-title>
         <kr-grid-desc>Kore Voice Gateway seamlessly integrates with telephony networks, contact center platforms and supports features like real-time call transcription, natural language understanding, and intent-based routing to enhance customer engagement and streamline call management.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](../kore.ai-voice-gateway/configure-kore-voice-gateway.md)
+        [Learn more :octicons-arrow-right-24:](../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/quality-management.svg" style="zoom:200%;"></img>
