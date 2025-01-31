@@ -962,7 +962,7 @@ Administrators can now label outbound phone numbers (for example, Technical Supp
 
 #### PII Redaction: Consistency Between Instance and Automation Bots
 
-To ensure consistency, the instance bot also redacts data that the Automation bot redacts and vice versa. This applies to all channels.
+To ensure consistency, the instance bot also redacts data that the Automation bot redacts and vice versa. This applies to all channels. This change affects new transcripts created from this release onwards. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/pii-data-masking.md)
 
 ### Analytics and Reporting
 
