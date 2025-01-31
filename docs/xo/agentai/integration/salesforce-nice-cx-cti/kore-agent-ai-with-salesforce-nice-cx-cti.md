@@ -418,10 +418,10 @@ This app will be used in studio script.
 <img src="../images/kore-agentassist-configuration-15.png" alt="kore-agentassist-configuration" title="kore-agentassist-configuration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the right-top corner of the page.
-4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
-   <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">  
-
-      <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
+4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
+<img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;"> 
+ * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the bot.  
+ <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
 5. Select **Active** and click **Save**.
 
 ### Configure NICE CTI Data in Salesforce
