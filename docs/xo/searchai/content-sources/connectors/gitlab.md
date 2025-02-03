@@ -80,4 +80,4 @@ Click **Connect** to sync the content from GitLab.
 
 ## RACL Support
 
-For the GitLab connector, all the ingested content is associated with the project to which it belongs. Hence, `sys_racl` field is also set to **projectId**. A permission entity is created corresponding to each projectID. Use the Permission Entity APIs to associate users with this permission entity to enable access to the content. 
+For the GitLab connector, all the ingested content is associated with the project to which it belongs. Hence, `sys_racl` field is also set to **projectId**. A permission entity is created corresponding to each projectID. Use the Permission Entity APIs to associate users with this permission entity to enable access to the content.
