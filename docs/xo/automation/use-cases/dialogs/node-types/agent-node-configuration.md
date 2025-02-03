@@ -45,10 +45,6 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 
 #### Pre-Processor Script
 
-!!! note
-
-    The pre-processor script does not apply to the custom prompt.
-
 
 This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
@@ -73,9 +69,9 @@ Add a brief description of the use case context to guide the model.
 
 Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.
 
-!!!note
+!!! note
 
-    Tool calling is supported only with custom prompts (Javascript) without streaming.
+    The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
 
 Click **+ Add** to open the **New Tool** creation window.  
 
@@ -122,10 +118,6 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
 <img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;">
 
 #### Post-Processor Script
-
-!!! note
-
-    The post-processor script does not apply to the custom prompt.
 
 This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
 
@@ -223,13 +215,24 @@ This node captures entities in the following structure:
 
 ## Custom Prompt for Agent Node
 
-
 Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
 The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.
 
+Agent Node with custom prompt supports configuring pre and post-processor scripts at both node and prompt levels. This enables platform users to reuse the same custom prompt across multiple nodes while customizing the processing logic, input variables, and output keys for each specific use case. 
+
+When you configure pre and post-processor scripts at both node and prompt levels, the execution order is: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
+
+!!! warning
+
+    Configuring pre and post-processor scripts at both node and prompt levels may increase latency.
+
+!!! note
+
+    Node-level pre and post-processor scripts support [App Functions](../../../../app-settings/dev-tools/reusing-bot-functions-custom-script-file.md) in addition to content, context, and environment variables.
+
+
+
 Let’s review a sample prompt written in Javascript and follow the step-by-step instructions to create a custom prompt. 
-
-
 
 Sample JavaScript
 
@@ -319,6 +322,7 @@ context.payloadFields = payloadFields;
 ### Add Custom Prompt
 The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
 
+
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
 To add an Agent node prompt using JavaScript, follow the steps:
@@ -330,14 +334,14 @@ To add an Agent node prompt using JavaScript, follow the steps:
 5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables).  
 <img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
-6. Ensure the Stream Response is disabled, as the Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.
+6. Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
-        Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.
+        The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
     
 8. Enter the **JavaScript**. The Sample Context Values are displayed. To know more about context values, see [Dynamic Variables](#dynamic-variables).  
 <img src="../images/toolcall2.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
@@ -369,24 +373,144 @@ To add an Agent node prompt using JavaScript, follow the steps:
             
             When you add the post-processor script, the system does not honor the text response and sets all child keys under the text and tool keys to match those in the post-processor script. 
 
-    3. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
-    <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">
+        1. On the Post-Processor Script pop-up, enter the Post-Processor Script and click **Save & Test**. The response path keys are updated based on the post-processor script.  
+        <img src="../images/postprocessor.png" alt="Post-Processor Script" title="Post-Processor Script" style="border: 1px solid gray; zoom:70%;">     
+        2. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 
-    4. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
 <img src="../images/promptinlibrary.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
 <img src="../images/selectprompt.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
-
-        If the default prompt is selected, the system will display a warning that “Tools calling functionality requires custom prompts with streaming disabled.
-        
+    If the default prompt is selected, the system will display a warning that “Tools calling functionality requires custom prompts with streaming disabled.  
 <img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
+## Expected Output Structure
 
+Defines the standardized format required by the XO Platform to process LLM responses effectively.
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Format Type</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text Response Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Conversation Status Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  {=="conv_status": "ongoing"==}
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Virtual Assistant Response Format</td>
+      <td>
+        <pre>
+{
+  {=="bot": "Sure, I can help you with that. Can I have your name please?"==},
+  "analysis": "Initiating appointment scheduling.",
+  "entities": [],
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Collected Entities Format</td>
+      <td>
+        <pre>
+{
+  "bot": "Sure, I can help you with that. Can I have your name please?",
+  "analysis": "Initiating appointment scheduling.",
+  {== "entities": []==},
+  "conv_status": "ongoing"
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Tool Response Format</td>
+      <td>
+        <pre>
+{
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2isho",
+  "toolName": "get_delivery_date",
+  "result": {
+    "delivery_date": "2024-11-20"
+  }
+}
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Post-Processor Script Format</td>
+      <td>
+        <pre>
+{
+  "bot": "I'll help you check the delivery date for order ID 123.",
+  "entities": [{"order_id": "123"}],
+  "conv_status": "ongoing",
+  "tools": [
+    {
+      "toolCallId": "toolu_016FWtdANisgqDLu3SjhAXJV",
+      "toolName": "get_delivery_date",
+      "args": { "order_id": "123" }
+    }
+  ]
+}
+      </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+## Context Object
+
+The context object is used to get the entities and the parameters of tools.
+
+
+<table>
+  <tr>
+   <td>Entities
+   </td>
+   <td>context.AI_Assisted_Dialogs.GenAINodeName.entities.{entityName}
+   </td>
+  </tr>
+  <tr>
+   <td>Parameters
+   </td>
+   <td>context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}
+   </td>
+  </tr>
+</table>
 
 
 ## Dynamic Variables
@@ -478,9 +602,7 @@ Keys
 </table>
 
 
-
-
-### Tool Calling in Debug Logs
+## Tool Calling in Debug Logs
 
 The debug logs capture the entire execution flow, including the conversation history array and the tools being called. The conversation history array tracks the interaction between the user and the assistant, while the tool calls (`FundsTransfer`, `PayeesAvailableCheck`) represent the specific actions or functions invoked by the assistant to fulfill the user's request.
 
@@ -488,12 +610,9 @@ By examining the debug logs, users can trace the steps taken by the assistant, u
 
 The debug logs on the left side of the screenshot below provide a comprehensive view of the execution flow and the interactions between the user, the assistant (Finance Buddy), and the underlying system. This detailed view ensures that you are fully informed about the process.
 
-
 <img src="../images/tooldebug.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 
-
 Here's a step-by-step explanation of the execution captured in the debug logs:
-
 
 1. The user initiates the conversation with Finance Buddy, requesting to transfer funds to the user.
 2. Finance Buddy responds, asking how it can help the user.

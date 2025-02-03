@@ -14,7 +14,7 @@ For instance, if you're connected to Jira, you can type “Get my Jira issues”
 
 **Ask Assistant:** “Get my Jira issues. Let me know John Doe’s availability for a meeting tomorrow. Send the Jira issues to John Doe.”
 
-**Agents Involved:**
+**Agents Involved**:
 
 1. **Jira:** Fetches the user's Jira issues.
 2. **Google Calendar:** Checks John Doe’s availability for a specified time.

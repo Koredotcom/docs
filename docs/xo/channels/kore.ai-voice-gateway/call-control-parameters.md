@@ -26,7 +26,7 @@ For information on configuring the Call Control Parameters at the channel level,
 
 ### Supported Speech Engines
 
-Kore.ai supports the following third-party service providers for ASR/STT. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
+Kore.ai supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
 
 <table>
   <tr>
@@ -86,7 +86,7 @@ Cloud
    </td>
    <td>deepgram
    </td>
-   <td>Not Supported
+   <td>deepgram
    </td>
    <td>Cloud
    </td>
