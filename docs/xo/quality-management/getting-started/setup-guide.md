@@ -18,13 +18,13 @@ Follow these steps:
 
 3. Enable features:
 
-    1. Enable Conversation Intelligence, Auto QA, and Bookmarks in Quality AI Settings. See [Conversation Intelligence](../quality-management/analyze/conversation-intelligence.md).
+    1. Enable Conversation Intelligence, Auto QA, and Bookmarks in Quality AI Settings. See [Conversation Intelligence](../analyze/conversation-intelligence.md).
 
-    2. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling Gen AI Co-pilot Features](../generative-ai-tools/co-pilot-features.md).
+    2. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling Gen AI Co-pilot Features](https://docs.kore.ai/xo/generative-ai-tools/co-pilot-features).
 
 4. Create Evaluation Metrics:
 
-    1. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). See [Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-metrics.md).
+    1. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). See [Evaluation Metrics](../configure/evaluation-forms.md).
 
     b. 	Set Count Type (Entire Conversation/Time Bound). See[ Add New Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-metrics.md#add-new-evaluation-metrics).  
 
