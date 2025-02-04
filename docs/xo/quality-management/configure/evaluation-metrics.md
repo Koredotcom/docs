@@ -3,7 +3,7 @@
 This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
-<img src="../evaluation-forms/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
+<img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 The Evaluation Metrics has the following options:
 
@@ -285,7 +285,7 @@ Steps to edit existing Evaluation Metrics:
 <img src="../evaluation-forms/images/edit-metric.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Click **Edit** to update the Evaluation Metrics dialog box fields. The following dialog box appears to update the required fields.  
-<img src="../evaluation-forms/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
+<img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
 
 3. Edit the required fields that you want to update.
 
