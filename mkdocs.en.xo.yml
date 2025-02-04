@@ -422,8 +422,8 @@ nav:
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md
         - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md
       - Connectors: 
-        - Introduction: quality-management/intro.txt
-        - Amazon S3: quality-management/amazon-s3.txt
+        - Introduction: quality-management/connectors/connector-intro
+        - Amazon S3: quality-management/connectors/amazon-s3
       - Analyze:
         - Dashboard:
           - Dashboard Overview: quality-management/analyze/dashboard.md
@@ -432,11 +432,8 @@ nav:
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
-          - Interactions: quality-management/analyze/conversation-mining.md
-          - Interactions: quality-management/analyze/conversation-mining.txt
-          - Audit Allocations: quality-management/analyze/audit-allocations.txt
-
-
+          - Interactions: quality-management/analyze/conversation-mining-interactions.md 
+          - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
           - Coaching Assignments: 
@@ -449,9 +446,9 @@ nav:
           - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: 
-          - Conversation Intelligence: quality-management/configure/settings.md
-          - Quality AI Genenal Settings: quality-management/configure/quality-ai-settings.txt
-          - Language Settings: quality-management/configure/language-settings.txt  
+          - Conversation Intelligence: quality-management/configure/settings/conversation-intelligence.md
+          - Quality AI Genenal Settings: quality-management/configure/settings/quality-ai-general-settings.md
+          - Language Settings: quality-management/configure/settings/langauge-settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
