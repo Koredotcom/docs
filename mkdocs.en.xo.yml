@@ -442,8 +442,8 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
+          - Configure Evaluation Forms: quality-management/configure/evaluation-forms.md
+          - Configure Evaluation Metrics:  quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/settings/conversation-intelligence.md
