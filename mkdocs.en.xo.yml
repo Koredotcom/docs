@@ -421,9 +421,9 @@ nav:
         - Introduction: quality-management/intro.txt
         - Amazon S3: quality-management/amazon-s3.txt
       - Getting Started:     
-        - Setup Guide: quality-management/setup-guide.md
-        - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Setup Guide: quality-management/getting-started/setup-guide.md
+        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md
+        - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md
       - Analyze:
         - Dashboard:
           - Dashboard Overview: quality-management/analyze/dashboard.md
