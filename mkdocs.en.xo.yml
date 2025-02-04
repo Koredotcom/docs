@@ -416,14 +416,14 @@ nav:
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
-      - Overview: quality-management/about-quality-management.md 
-      - Connectors: 
-        - Introduction: quality-management/intro.txt
-        - Amazon S3: quality-management/amazon-s3.txt
+      - Overview: quality-management/about-quality-management.md       
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md
         - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md
+      - Connectors: 
+        - Introduction: quality-management/intro.txt
+        - Amazon S3: quality-management/amazon-s3.txt
       - Analyze:
         - Dashboard:
           - Dashboard Overview: quality-management/analyze/dashboard.md
