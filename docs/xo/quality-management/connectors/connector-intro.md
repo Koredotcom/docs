@@ -6,19 +6,19 @@ From a quality assurance perspective, having information scattered across variou
 
 The Kore Quality AI addresses these quality management concerns through a systematic approach to data integration and standardization. By implementing automated data ingestion processes, it ensures:
 
-    **Data Consistency**: Unified information retrieval across multiple sources maintains consistency in organizational knowledge.
+**Data Consistency**: Unified information retrieval across multiple sources maintains consistency in organizational knowledge.
 
-    **Quality Control**: Automated validation processes help identify and eliminate information discrepancies.
+**Quality Control**: Automated validation processes help identify and eliminate information discrepancies.
 
-    **Standardization**: Consistent formatting and presentation of data regardless of source.
+**Standardization**: Consistent formatting and presentation of data regardless of source.
 
 The Quality AI application supports this quality-focused approach through three primary ingestion methods:
 
-    **Web Crawl**: Systematically extracts and indexes web content while maintaining version control and data integrity.
+**Web Crawl**: Systematically extracts and indexes web content while maintaining version control and data integrity.
 
-    **Directories**: Processes and standardizes various document formats (PDF, docx, ppt) ensuring consistent quality standards.
+**Directories**: Processes and standardizes various document formats (PDF, docx, ppt) ensuring consistent quality standards.
 
-    **Connectors**: Integrates third-party application data while preserving data quality and traceability.
+**Connectors**: Integrates third-party application data while preserving data quality and traceability.
 
 The Content section of Quality AI serves as a centralized quality control dashboard where data sources can be monitored, managed, and validated. This ensures that information meets organizational quality standards across all sources.
 
