@@ -15,7 +15,7 @@ The Evaluation Form includes chosen metrics with customizable weights totaling 1
 
 You can access the Evaluation Forms by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms**.  
 
-<img src="../evaluation-forms/images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-evaluation-forms.png" alt="Evaluation Forms Page" title="Evaluation Forms Page" style="border: 1px solid gray; zoom:80%;">
 
 The Evaluation Forms has the following options:
 
@@ -35,12 +35,12 @@ The Evaluation Forms has the following options:
 ### Add New Evaluation Form
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **New Evaluation Forms**.  
-<img src="../evaluation-forms/images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">  
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-evaluation-form.png" alt="Add New Evaluation Form" title="Add New Evaluation Form" style="border: 1px solid gray; zoom:80%;">  
 
 Steps to create a new Evaluation Form:  
 
-1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form.    
-<img src="../evaluation-forms/images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">   
+1. Click the **+New Evaluation Form** button in the upper-right corner to configure the most commonly used evaluation form. The following screen appears, allowing you to add a new evaluation form details.    
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-evaluation-forms-settings.png" alt="New Evaluation Form" title="New Evaluation Form" style="border: 1px solid gray; zoom:80%;">   
 
 !!! note     
         
@@ -121,13 +121,14 @@ For example, if there is more than one Evaluation Metric, the total percentage m
 </table>
 
 2. Click **Create** to **Add New Evaluation Form** to the queue for review.
-3. In case, if you are changing the existing channel mode from Voice to Chat or vice-versa which is already added, then the following dialog box appears.  
+<img src="../evaluation-criteria/evaluation-forms/images/add-forms-to-queue.png" alt="Edit Evaluation Form Settings" title="Edit Evaluation Form Settings" style="border: 1px solid gray; zoom:70%;">
 
+3. In case, if you are changing the existing channel mode from Voice to Chat or vice-versa which is already added, then the following dialog box appears.  
+      <img src="../evaluation-criteria/evaluation-forms/images/channel-update.png" alt="Channel Update Confirmation" title="Channel Update Confirmation" style="border: 1px solid gray; zoom:70%;">
+    
     !!! Note
 
-        Upon changing any of the existing Channel modes like Voice to Chat or vice versa, will delete the earlier existing speech-based metrics in the Evaluation Form, which has to be updated again across the remaining metrics along with weights.  
-
-      <img src="../evaluation-forms/images/channel-update.png" alt="Channel Update Confirmation" title="Channel Update Confirmation" style="border: 1px solid gray; zoom:70%;">
+        Upon changing any of the existing Channel modes like Voice to Chat or vice versa, will delete the earlier existing speech-based metrics in the Evaluation Form, which has to be updated again across the remaining metrics along with weights. 
 
 4. Click **Confirm** to update the Channel.
 
@@ -136,10 +137,10 @@ For example, if there is more than one Evaluation Metric, the total percentage m
 Steps to edit the existing Evaluation Forms:
 
 1. Right-click to select any of the existing **Evaluation Form** (Name). The following screen appears to edit the required fields.  
-<img src="../evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:70%;">
+<img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update the Evaluation Form dialog box fields. The following dialog box appears to update the required fields.  
-<img src="../evaluation-forms/images/edit-evaluation-form_settings.png" alt="Edit Evaluation Form Settings" title="Edit Evaluation Form Settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form_settings.png" alt="Edit Evaluation Form Settings" title="Edit Evaluation Form Settings" style="border: 1px solid gray; zoom:70%;">
 
 3. Edit the required fields that you want to update.
 4. Click **Update** to save the changes.
