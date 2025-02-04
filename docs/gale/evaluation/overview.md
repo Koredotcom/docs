@@ -33,6 +33,6 @@ The following outlines the key actions at each stage of the Evaluation Studio us
 
 3. [**Import a dataset**](./import-dataset.md): Upload your dataset (e.g., CSV) for evaluation.
 
-4. [**Configuring an evaluator**](./configure-evaluator.md): Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
+4. [**Configure evaluators**](./configure-evaluator.md): Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
 
 5. [**Run an evaluation**](./run-evaluation.md): Trigger the evaluation based on your dataset and selected evaluators.
