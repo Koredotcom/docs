@@ -6,13 +6,13 @@ The Settings has the following two sections:
 
 * Conversation Intelligence
 * Quality AI General Settings
+* Language Settings
 
 ## Conversation Intelligence
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the **Conversation Intelligence** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.
-
+You can access the **Conversation Intelligence** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.  
 <img src="../settings/images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Intelligence Dashboard
@@ -82,113 +82,3 @@ Steps to enable the Script Adherence Configuration:
 
         * In the Script adherence configuration, the agent can visualize the specific messages or scripts that are defined by the supervisor or app owner or administrator.  
 
-## Quality AI General Settings
-
-The App owners can use the Settings option under QM to enable or disable auto QA scoring of interactions and at an app level. Users with relevant permissions can enable and create bookmarks to collect interactions in different bookmarks for easy future reference.
-
-Yoc can access the **Quality AI** by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Settings** > **Quality AI**.  
-<img src="../settings/images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
-
-The QA has the following sections:
-
-* Auto QA
-* Agent Score Card
-* Bookmarks
-
-### Auto QA
-
-The Auto QA feature lets you set up Evaluation Forms for automated scoring. When the feature is turned off, automated QA scores are hidden across the entire application and its queues, regardless of whether the user has access to Agent Scorecard and QA functionalities. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
-
-#### Enable Auto QA
-
-Steps to enable Auto QA:
-
-1. Expand the **Quality AI** collapse icon to view the following **Auto QA**.  
-<img src="../settings/images/auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:90%;">
-
-2. Enable the **Auto QA**.
-
-3. Click **Save** to save the settings.
-
-!!! Note
-
-    Except the administrator, no other user can enable the Auto QA option for agents.The Auto QA toggle option is always in disable mode though it is in activate mode for a user.
-    
-Once the **Auto QA** feature is enabled, you get the following screen to create and configure evaluation forms.
-
-<img src="../settings/images/qa-settings-eva-forms.png" alt="Create and Config Evaluation Forms" title="Create and Config Evaluation Forms" style="border: 1px solid gray; zoom:60%;">
-
-!!! Note
-
-    When a user with Auto QA permissions disables the Auto QA toggle in **Settings**, the Agent Scorecard and bookmarks will also be disabled, regardless of whether the user has access to the Agent Scorecard and QA functionalities.
-
-#### Disable Auto QA
-
-Steps to disable Auto QA:
-
-1. If you turn off the **Auto QA** toggle, the following dialog box is displayed.  
-<img src="../settings/images/disable-auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:100%;">
-
-2. Click **Confirm** to disable the Auto QA.
-3. Click **Save** to save the settings.
-
-!!! Note
-
-    By disabling the Auto QA, the automated QA scoring will be disabled across the entire app and all queues within it.
-    
-### Agent Score Card
-
-This setting allows you to enable or disable agent-level interaction scoring through agent scorecards, users with the relevant permission access can enable or disable this setting.
-
-#### Enable Agent Score Card
-
-Steps to enable the Agent Score Card:  
-1. Expand the **Quality AI** collapse icon to view the **Agent Score Card**.   
-<img src="../settings/images/sett-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
-
-2. Enable the **Agent Score Card** option.
-3. Click **Save** to save the settings.
-
-Once the **Agent Score Card** is enabled from the **Settings**, you will get the following screen to create agent scorecards.  
-<img src="../settings/images/settings-enable-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
-
-#### Disable Agent Score Card
-Steps to disable the Agent Score Card:
-
-1. If you turn off the **Agent Score Card** toggle, the following dialog box is displayed.
-
-<img src="../settings/images/settings-disable-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:100%;">
-
-2. Click **Confirm** to disable the Agent Scorecard.
-3. Click **Save** to save the settings.
-
-### Bookmarks
-
-This feature lets you bookmark interactions into various collections for future reference. Once created, these collections are added to Conversation Mining.
-
-#### Enable Bookmarks
-Steps to Add Bookmarks:
-
-1. Expand the **Quality AI** collapse icon to view the following **Bookmarks** option.  
-<img src="../settings/images/settings-bookmarks.png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
-
-2. Enable the **Bookmarks** toggle option to add a new bookmark.
-3. Click the **Add Bookmark**. The following new **Bookmarks** row appears.  
-<img src="../settings/images/settings-new-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:100%;">
-
-4. Enter the **Bookmarks** name for the assigned interactions.
-5. Add **Color** for the newly added bookmarks.
-6. Click **Save** to save the settings.
-
-#### Disable Bookmarks
-Steps to disable Bookmarks:
-
-1. If you turn off the **Bookmarks** toggle, the following dialog box is displayed.   
-<img src="../settings/images/settings-delete-bookmarks.png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:100%;">
-
-2. Click **Confirm** to disable the bookmark.
-3. Click **Save** to save the settings.   
-
-!!! Note
-    
-    Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.
