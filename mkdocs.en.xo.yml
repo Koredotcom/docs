@@ -475,7 +475,14 @@ nav:
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
     - Models Library:
       - LLM Integration: generative-ai-tools/models-library.md
-      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
+      - Kore.ai XO GPT Module: 
+        - Overview: generative-ai-tools/xo-gpt-module.md
+        - XO GPT Model Specifications:
+          - Model Building: generative-ai-tools/xogpt-model-specifications.md
+          - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
+          - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
+          - User Query Paraphrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
     - GenAI Features:
