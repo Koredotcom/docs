@@ -11,7 +11,7 @@ AI for Work setup consists of the following steps:
     - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
     - [Step 5: Configure Default RAG](#step-5-configure-default-rag)
     - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
-    - [Step 7: Configure Custom Agents As Per your Requirements](#step-7-configure-custom-agents-as-per-your-requirements)
+    - [Step 7: Configure Custom Agents As Per your Requirement](#step-7-configure-custom-agents-as-per-your-requirement)
     - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
 
 ### Step 1: Sign Up for a New AI for Work Account
@@ -39,13 +39,13 @@ Rate limits restrict user queries based on complexity and user category. Simple 
 
 ### Step 5: Configure Default RAG
 
-The Default RAG is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query.[Learn how to configure the default RAG](/docs/ai-for-work/custom-agents/default-rag/).
+The Default RAG is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query. [Learn how to configure the default RAG](/docs/ai-for-work/custom-agents/default-rag/).
 
 ### Step 6: Publish Pre-built Agents to be Available for your Users
 
 AI for Work provides a set of pre-built agents that perform specific tasks with minimal setup or customization. These agents are designed to automate processes such as summarizing content, drafting emails, translating text, etc. Administrators can configure and publish pre-built agents for user access through the Agent Store. [Learn more](/docs/ai-for-work/pre-built-agents/overview/).
 
-### Step 7: Configure Custom Agents As Per your Requirements
+### Step 7: Configure Custom Agents As Per your Requirement
 
 Custom AI agents can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](/docs/ai-for-work/custom-agents/overview/).
 
