@@ -432,8 +432,7 @@ This app will be used in studio script.
  5. Select **Active**, and click **Save**.
 
       !!! note
-
-         If the language parameter is missing from the layout page after saving the configuration, either uninstall and reinstall the package or manually add the parameter by following these steps:
+          If the language parameter is missing from the layout page after saving the configuration, either uninstall and reinstall the package or manually add the parameter by following these steps:
          
       1. Go to the **Salesforce Setup** page > **Object Manager**.
 
