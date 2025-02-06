@@ -164,4 +164,105 @@ Steps to use the filters:
 
 4. Click **Apply**.
 
+## Agent Run Errors
+
+In the **All runs** section, any error that occurs via the endpoint during an agent run is displayed in a separate window for the specified *Run ID*.
+
+To view detailed error information, click on the corresponding agent run entry in the **Agent Monitor** dashboard.
+
+<img src="../images/agent-run-errors.png" alt="agent run errors" title="agent run errors" style="border: 1px solid gray; zoom:80%;">
+
+An error message includes the following information:
+
+* HTTP status code returned by the web server as a response.
+* A message describing the error.
+* Suggestions to verify and manage the error.
+
+### Error Categories
+
+The errors are classified as follows:
+
+* **Authorization:** An error that occurs during API key authorization of an agent.
+* **Data Validation:** Any discrepancy detected when validating input fields and API calls during an agent run.
+* **Content Filter:** Breaches of guardrail threshold limits during GenAI node execution.
+* **Internal Server Error:** Technical issues encountered with the internal server.
+* **Network**: Technical issues encountered with the network connectivity.
+
+### Error Scenarios 
+
+The table below lists the errors that can occur in the **Agent Monitoring** dashboard, including the error categories and HTTP status codes:
+
+
+<table>
+  <tr>
+   <td><strong>Error Scenario</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Category</strong>
+   </td>
+   <td><strong>HTTP Status Code</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Mandatory input field
+   </td>
+   <td>A mandatory input field is missing for the agent run.
+   </td>
+   <td rowspan="4" >Data Validation
+   </td>
+   <td rowspan="3" >400 Bad Request
+   </td>
+  </tr>
+  <tr>
+   <td>Invalid data type for input field
+   </td>
+   <td>An incorrect data type is provided for a field input.
+   </td>
+  </tr>
+  <tr>
+   <td>Empty Input Object
+   </td>
+   <td>A field input is missing a value or has an empty value.
+   </td>
+  </tr>
+  <tr>
+   <td>Large Request Payload
+   </td>
+   <td>The request payload exceeds the server's size limit.
+   </td>
+   <td>413 Payload Too Large
+   </td>
+  </tr>
+  <tr>
+   <td>Any Server side issues
+   </td>
+   <td>A technical issue caused the server to fail.
+   </td>
+   <td>Internal Server
+   </td>
+   <td>500 Internal Server Error
+   </td>
+  </tr>
+  <tr>
+   <td>Network Issues:- Request timeout on the server
+   </td>
+   <td>Temporary network or GALE server connection issue.
+   </td>
+   <td>Network
+   </td>
+   <td>408 Request Timeout
+   </td>
+  </tr>
+  <tr>
+   <td>Guardrail Failure
+   </td>
+   <td>The flow execution was aborted at the <strong>GenAI node</strong> due to a guardrail violation, as the risk score exceeded the threshold.
+   </td>
+   <td>Content Filter
+   </td>
+   <td>403 Forbidden
+   </td>
+  </tr>
+</table>
 

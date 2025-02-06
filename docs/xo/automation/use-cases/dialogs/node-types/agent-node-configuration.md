@@ -187,31 +187,6 @@ Define the transition conditions from this node. These conditions apply only to 
 <img src="../images/connectionsv2.png" alt="Connections Properties" title="Connections Properties" style="border: 1px solid gray; zoom:70%;">
 
 
-All the entity values collected are stored in context variables. For example, `{{context.genai_node.bookflight_genainode.entities.entity_1}}`.
-You can define transitions using the context variables.
-
-This node captures entities in the following structure:
-
-
-```
-{
-    "bookflight_genainode": {
-        "entities": {
-            "entity_1": "value 1",
-            "entity_2": "value 2",
-            "entity_3": "value 3"
-        },
-        "exit_scenario": {
-            "conv_status": "ended"
-        },
-        "bot_response": {
-            "bot": "Thank you for choosing us, your flight ticket details will be shared over email."
-        }
-    }
-}
-
-```
-
 
 ## Custom Prompt for Agent Node
 
