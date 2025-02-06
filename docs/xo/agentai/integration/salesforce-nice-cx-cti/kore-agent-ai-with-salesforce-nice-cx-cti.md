@@ -435,14 +435,14 @@ This app will be used in studio script.
 
          If the language parameter is missing from the layout page after saving the configuration, either uninstall and reinstall the package or manually add the parameter by following these steps:
          
-         1. Go to the **Salesforce Setup** page > **Object Manager**.
+      1. Go to the **Salesforce Setup** page > **Object Manager**.
 
-         2. Search for and select the **Kore AgentAssist Configuration** object.
+      2. Search for and select the **Kore AgentAssist Configuration** object.
 
-         3. On the left panel, click **Page Layouts**.
+      3. On the left panel, click **Page Layouts**.
 
-         4. Open **KoreAgentAssistConfig Layout**, and drag the **Language** parameter onto the layout screen.  
-         <img src="../images/language-parameter.png" alt="language-parameter" title="language-parameter" style="border: 1px solid gray; zoom:80%;">
+      4. Open **KoreAgentAssistConfig Layout**, and drag the **Language** parameter onto the layout screen.  
+      <img src="../images/language-parameter.png" alt="language-parameter" title="language-parameter" style="border: 1px solid gray; zoom:80%;">
 
 ### Configure NICE CTI Data in Salesforce
 
