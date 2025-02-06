@@ -115,10 +115,7 @@ nav:
     - Overview: getting-started/introduction.md   
     - Setup Guide: getting-started/setup-guide.md
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md    
-    - Using AI for Work Assistant: getting-started/how-to-use.md    
-  - RAG Agents:
-    - Default RAG: rag-agents/default-rag.md 
-    - RAG Agents: rag-agents/rag-agent.md
+    - Using AI for Work Assistant: getting-started/how-to-use.md        
   - Custom Agents:
     - Overview: custom-agents/overview.md
     - AI Agents: 
@@ -129,7 +126,9 @@ nav:
         - Alert Task: custom-agents/alert-task.md
         - Notify API: custom-agents/notify-bot-agent-api.md     
     - AI Search: 
-       - API Agents: custom-agents/api-agents.md 
+      - RAG Agents: custom-agents/rag-agent.md
+      - Default RAG: custom-agents/default-rag.md 
+      - API Agents: custom-agents/api-agents.md 
     - Agentic App: 
       - Standard Apps: custom-agents/agentic-apps.md
   - Pre-built Agents:
