@@ -429,10 +429,10 @@ This app will be used in studio script.
 <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;"> 
       * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the bot.  
  <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;"> 
- 5. Select **Active**, and click **Save**.
+ 5. Select **Active**, and click **Save**.  
+    !!! note
 
-      !!! note
-          If the language parameter is missing from the layout page after saving the configuration, either uninstall and reinstall the package or manually add the parameter by following these steps:
+        If the language parameter is missing from the layout page after saving the configuration, either uninstall and reinstall the package or manually add the parameter by following these steps:
          
       1. Go to the **Salesforce Setup** page > **Object Manager**.
 
