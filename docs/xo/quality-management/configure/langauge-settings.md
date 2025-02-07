@@ -14,7 +14,7 @@ Steps to add a new language:
 1. Expand the **Language Settings** collapse icon to view the languages list.  
 <img src="../settings/langauge-settings/images/add-language.png" alt="new language" title="new language" style="border: 1px solid gray; zoom:60%;">
 
-2. Click the +**Add Language**. The following screen appears to select a language.  
+2. Click the +**Add Language**. The following screen appears to select a language.    
 <img src="../settings/langauge-settings/images/add-lnew-anguage.png" alt="Add Language" title="Add Language" style="border: 1px solid gray; zoom:60%;">
 
 3. From the **Language** drop-down list, search a language name to add to the language list.
@@ -24,8 +24,8 @@ Steps to add a new language:
 
 Steps to disable a language:
 
-1. Select the **Status** toggle off to disable any of the languages, the following warning dialog box is displayed. 
-<img src="../settings/langauge-settings/images/disable-language.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
+1. Select the **Status** toggle off to disable any of the languages, the following warning dialog box is displayed.  
+<img src="../settings/langauge-settings/images/disable-language.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">  
 
 2. Click **Confirm** to disable the selected language.
 
