@@ -30,7 +30,7 @@
    </td>
    <td rowspan="3" >Answer Generation
    </td>
-   <td rowspan="3" >[Version 2.0](../generative-ai-tools/xogpt-answer-generation-model.md#version-20)
+   <td rowspan="3" >Version 2.0
    </td>
    <td rowspan="3" >Llama 3.1 8B Instruct
    </td>
@@ -58,7 +58,7 @@
    </td>
    <td rowspan="3" >Conversation Summarization
    </td>
-   <td rowspan="3" >[Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)
+   <td rowspan="3" >Version 2.0
    </td>
    <td rowspan="3" >Mistral 7B Instruct v0.2
    </td>
@@ -96,7 +96,7 @@ Turkish
    </td>
    <td rowspan="2" >Rephrase Dialog Responses
    </td>
-   <td rowspan="2" >[Version 1.0](../generative-ai-tools/xogpt-response-rephrasing-model.md#version-10)
+   <td rowspan="2" >Version 1.0
    </td>
    <td rowspan="2" >Mistral 7B Instruct v0.2
    </td>
@@ -118,7 +118,7 @@ Turkish
    </td>
    <td rowspan="2" >Rephrase User Query
    </td>
-   <td rowspan="2" >[Version 1.0](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md#version-10)
+   <td rowspan="2" >Version 1.0
    </td>
    <td rowspan="2" >Mistral 7B Instruct v0.2
    </td>
