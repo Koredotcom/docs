@@ -144,4 +144,4 @@ This Evaluation section has the following interactions listing items:
 
     * **Filter Interactions**: This displays the total number of filtered interactions.
 
-For more detailed information, see [Coaching Assignments - Supervisor View](https:/docs.kore.ai/xo/quality-management/coach/coaching-assignments-supervisor-view).
+For more detailed information, see [Coaching Assignments - Supervisor View](https://docs.kore.ai/xo/quality-management/coach/coaching-assignments-supervisor-view/).
