@@ -6,10 +6,10 @@ Go to **Contact Center AI** > **CONFIGURATIONS** > **Languages & Speech** to acc
 <img src="../images/languages-and-speech-page.png" alt="
 Languages & Speech Page" title="Languages & Speech Page" style="border: 1px solid gray; zoom:80%;">
 
-This section of the Contact Center module provides access to the following settings:
+This section of the Contact Center AI module provides access to the following settings:
 
 * **[Supported languages for Bots and Agents](#list-of-supported-languages-for-bots-and-agents)**: Define the languages you want agents and automation to work with.
-* **[Voice Preferences](#voice-preferences)**: Choose the engines to use with SmartAssist for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
+* **[Voice Preferences](#voice-preferences)**: Choose the engines to use with Contact Center AI for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
 * **[List of Supported Dialects](#list-of-supported-dialects)**: Choose the supported dialects.
 * **[Hold Audio](#hold-audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
 
@@ -70,43 +70,11 @@ The following languages are supported for bots and agents:
 | Danish          | Icelandic      | Malagasy        | Scots Gaelic    | Turkish         |                 |
 | Dutch           | Igbo           | Malay           | Serbian (Cyrillic) | Turkmen       |                 |
 
-## Voice Preferences
-
-In the Language & Speech section of SmartAssist, you can configure the voice preferences to personalize the ASR Engine and the voice that plays for your text-to-speech conversions.
-
-To configure or modify the voice preferences, follow the steps below:
-
-1. Under **Languages & Speech**, click **Voice Preferences**.
-<img src="../images/voice-preferences.png" alt="
-Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
-
-2. Select a **Text-to-Speech Engine** in the _Voice Preferences_ window: _Google Cloud Text-to-Speech, Microsoft Azure Speech Services, AWS Amazon Polly_ or _Nvidia Riva_.
-    1. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Fw), and adjust the preview volume. Clicking the More Options (⋮) button reveals options to adjust **Playback Speed** and **Download** the voice preview.
-    2. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its own voice options.
-    3. Select a different Voice Language if required.
-    <img src="../images/configure-voice-preferences.gif" alt="Configure Voice Preferences" title="Configure Voice Preferences" style="border: 1px solid gray; zoom:80%;">
-
-3. Select an **Automated Speech Recognition Engine**: Google Cloud Speech-to-Text, Microsoft Azure Speech Services, AmiVoice, or NVIDIA Riva. Afterward, choose the [Dialect](#list-of-supported-dialects) that you want to work with.
-<img src="../images/asr-and-dialect.png" alt="
-Select ASR and Dialect" title="Select ASR and Dialect" style="border: 1px solid gray; zoom:80%;">
-
-4. Click **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.
-
-### List of Supported Dialects
-
-|---------------------|-----------------------|
-| English (Australia) | English (Philippines) |
-| English (Canada)    | English (Singapore)   |
-| English (Hong Kong) | English (South Africa)|
-| English (India)     | English (United Kingdom) |
-| English (Ireland)   | English (United States)  |
-| English (New Zealand) |                     |
-
 ## Hold Audio
 
 This option helps configure the audio played to a caller while on hold or waiting in the queue.
 
-To configure the **Hold Audio**, go to **Languages & Speech** and select the **Hold Audio** option.
+To configure the **Hold Audio**, go to **Languages & Speech** and select the **Hold Audio** option.  
 <img src="../images/hold-audio.png" alt="
 Hold Audio" title="Hold Audio" style="border: 1px solid gray; zoom:80%;">
 

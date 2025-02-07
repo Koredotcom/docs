@@ -146,6 +146,7 @@ nav:
             - Script Task: flows/node-types/script-task.md
             - Set Queue: flows/node-types/set-queue.md
             - Split: flows/node-types/split.md
+            - Script Nodes, Call Flows, Agent Utils, and userSessionUtils: flows/node-types/utils.md
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
@@ -415,9 +416,14 @@ nav:
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
-      - Overview: quality-management/about-quality-management.md      
-      - Setup Guide: quality-management/setup-guide.md
-      - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
+      - Overview: quality-management/about-quality-management.md       
+      - Getting Started:     
+        - Setup Guide: quality-management/getting-started/setup-guide.md
+        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md
+        - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md
+      - Connectors: 
+        - Introduction: quality-management/connectors/connector-intro
+        - Amazon S3: quality-management/connectors/amazon-s3
       - Analyze:
         - Dashboard:
           - Dashboard Overview: quality-management/analyze/dashboard.md
@@ -425,8 +431,9 @@ nav:
           - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
-        - Conversation Mining: quality-management/analyze/conversation-mining.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Conversation Mining: 
+          - Interactions: quality-management/analyze/conversation-mining-interactions.md 
+          - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
           - Coaching Assignments: 
@@ -435,10 +442,13 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
+          - Configure Evaluation Forms: quality-management/configure/evaluation-forms.md
+          - Configure Evaluation Metrics:  quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
-        - Settings: quality-management/configure/settings.md        
+        - Settings: 
+          - Conversation Intelligence: quality-management/configure/settings/conversation-intelligence.md
+          - Quality AI Genenal Settings: quality-management/configure/settings/quality-ai-general-settings.md
+          - Language Settings: quality-management/configure/settings/langauge-settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:

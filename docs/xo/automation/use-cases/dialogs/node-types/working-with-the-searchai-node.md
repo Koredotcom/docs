@@ -12,7 +12,7 @@ The Search AI Node allows users to create meta filters with specific rules, enha
 ## Add the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the **Search AI Node**.
-2. Click **Gen AI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
+2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
 3. The **Search AI Node** window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/search_ai_adding_node.png" alt="adding_node" title="adding_node" style="border:1px solid gray;zoom:70%;">

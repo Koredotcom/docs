@@ -633,7 +633,7 @@ Allow user to Access and Manage AgentAI Module
 <tr>
    <td><strong>Auto QA</strong>
    <br>
-Enable and Disable access for Auto QA
+Enable and disable access for Auto QA
    </td>
    <td>Full Access
    </td>

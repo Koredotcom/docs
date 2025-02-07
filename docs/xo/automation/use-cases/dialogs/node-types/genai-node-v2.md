@@ -45,5 +45,5 @@ During runtime, the node behaves as follows:
 ### Entity Values and Outputs
 
 * **Entity Values**: The platform stores the entity values in the [context object](../../../intelligence/context-object.md), and this information can be used to define the transitions or any other part of the bot configuration.
-* **Conversation History and Tool Output**: The `LLM_Conversation_History` object stores the conversation history, tool history, and transactions between the platform and the model during a tool call. Additionally, the `Tool_Output` variable stores the output from the executed tools.
+* **Conversation History**: The `LLM_Conversation_History` object stores the conversation history, tool history, and transactions between the platform and the model during a tool call. 
 * **Node’s Output**: The Agent Node's output is stored as structured JSON in the [context object](../../../intelligence/context-object.md), making it accessible and usable throughout the entire dialog flow, even after the node is no longer active.

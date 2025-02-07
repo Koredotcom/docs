@@ -2,13 +2,19 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.9.1 January 25, 2025
+
+<u>Patch Release</u>
+
+This update includes bug fixes.
+
 <hr>
 
 ## v11.9.0 January 05, 2025
 
 <u>Minor Release</u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
 ### Search AI Configuration
 

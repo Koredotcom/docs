@@ -4,25 +4,29 @@ If you are using Confluence Server to store and manage your content, you can eas
 
 <span style="text-decoration:underline;">Specifications</span>
 
-
 <table>
   <tr>
    <td>Type of Repository 
    </td>
-   <td>On-Prem
+   <td>On-Premise
    </td>
   </tr>
   <tr>
-   <td>Supported API version
+   <td>Content Supported
    </td>
-   <td>
+   <td>Knowledge Articles
    </td>
   </tr>
   <tr>
-   <td>Supported file types
+   <td>RACL Support
    </td>
-   <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html \
-Note: Password-protected files in any format are not supported
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Content Filtering Support
+   </td>
+   <td>Yes
    </td>
   </tr>
 </table>
@@ -82,10 +86,10 @@ The connector allows you to set up rules to selectively ingest content from the 
 
 ![Content Filters](../images/confluenceserver/content-filters.png "Content Filters")
 
-The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
+The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/). 
   * Ancestor: Affects the direct child pages/content and descendants of the given content IDs as value. 
   * Content: Affects the content defined using content ID only. 
-  * Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”
+  * Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”. 
   * Creator: Affects the content created by the User account IDs provided as values. 
   * Label: Affects the content by its label. 
   * Parent: Affects the content under a given parent. 
@@ -106,9 +110,8 @@ Similarly, to selectively ingest only the pages created or modified after Jan 1,
 
 ![Content Filters](../images/confluenceserver/example1.png "Content Filters")
 
-Note:
-  * You can define more than one condition to choose different types of content from the connector using the OR operator. 
-  * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
-  
-  ![Content Filters](../images/confluenceserver/example3.png "Content Filters")
+Note: 
+* You can define more than one condition to choose different types of content from the connector using the OR operator. 
+* Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
+![Content Filters](../images/confluenceserver/example3.png "Content Filters")
 

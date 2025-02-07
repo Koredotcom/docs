@@ -2,7 +2,8 @@
 
 The `Context` object is the container object that persists data for dialog execution and across all intents i.e. dialog tasks, action, alert & info tasks, and FAQs. Kore.ai’s natural language processing (NLP) engine populates the intent identified, entities extracted, and history into this object. Keys from the `Context` object are used in the dialog task and intent transition conditions. Also, the `context` object can be accessed with additional system and session variables. 
 
-The syntax when using an `Context` object key in a URL is to enclose the object name in double brackets as shown next, [Learn more](https://quora.com/**{{context.entities.topic}}**/rss){target="_blank"}.
+The syntax when using an `Context` object key in a URL is to enclose the object name in double brackets as shown next:
+ `https://quora.com/{{context.entities.topic}}/rss`
 
 The `Context` object can also be referenced in a script node as well as for dynamic values in an entity node and passed in the payload response to the Kore.ai SDK. You can update the `Context` object key values based on business logic to influence the dialog task execution.
 
@@ -12,9 +13,8 @@ The `Context` object can also be referenced in a script node as well as for dyna
     
     We recommend you review these notifications and modify the bot definition to keep the context object size under the limit. In the upcoming releases, the platform will discard conversations if the context size exceeds the limit.
 
-The platform also creates and maintains Session Variables which can be referred to from [here](/docs/xo/automation/use-cases/using-session-and-context-variables/){target="_blank"}.
-
-The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click [here](/docs/bots/bot-settings/bot-sessions/#Implementation){target="_blank"} for details.
+The platform also creates and maintains Session Variables which can be referred to from [here](../../automation/use-cases/using-session-and-context-variables.md).
+The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click [here](../../app-settings/advanced-settings/bot-sessions.md#implementation) for details.
 
 <table border="1.5">
 <tr bgcolor="#ECECEC">

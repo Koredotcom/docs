@@ -18,7 +18,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <kr-grid-title>Agents and Supervisors</kr-grid-title>
         <kr-grid-desc>Add agents and supervisors, configure digital and voice experiences for them, assign them a role, and map them to queues and skills. Also, create disposition sets to organize disposition codes according to your business requirements.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./agent-and-supervisors/agent-management/agent-management.md)
-    </kr-grid-item>           
+    </kr-grid-item>
     <kr-grid-item>
         <img src="../images/sa-unified-configurations.svg" style="zoom:200%;"></img>
         <kr-grid-title>Configurations</kr-grid-title>
@@ -38,9 +38,15 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         [Learn more :octicons-arrow-right-24:](./campaigns/about-campaigns.md)
     </kr-grid-item>
     <kr-grid-item>
+        <img src="../images/voice-gateway.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Kore Voice Gateway</kr-grid-title>
+        <kr-grid-desc>It seamlessly integrates with telephony networks, contact center platforms and supports features like real-time call transcription, natural language understanding, and intent-based routing to enhance customer engagement and streamline call management.</kr-grid-desc>
+        [Learn more :octicons-arrow-right-24:](../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md)
+    </kr-grid-item>
+    <kr-grid-item>
         <img src="../images/quality-management.svg" style="zoom:200%;"></img>
         <kr-grid-title>Quality AI</kr-grid-title>
         <kr-grid-desc>AI-powered automated QA scoring for all customer interactions, with customizable configurations and comprehensive analysis. Optimize manual reviews, enhance agent feedback, and measure metrics to improve service quality.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](../quality-management/about-quality-management.md)
-    </kr-grid-item>            
+    </kr-grid-item>
 </kr-grid>
