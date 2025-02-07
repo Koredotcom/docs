@@ -67,11 +67,6 @@ Turkish
   </tr>
 </table>
 
-
-
-# 
-
-
 # Introduction
 
 Large Language Models (LLMs) have revolutionized conversation summarization by leveraging deep learning to extract key details from dialogues, generating concise, context-aware summaries. These models integrate techniques like abstractive summarization, context analysis, and sentiment detection to transform lengthy interactions into actionable insights, proving invaluable in domains such as customer service, healthcare, and IT support. However, challenges like ambiguous language, privacy concerns, and balancing brevity with completeness remain. Kore.ai's XO-GPT addresses these by fine-tuning LLMs to produce accurate, secure, and domain-specific summaries that align with conversational flow and industry needs.
@@ -79,37 +74,31 @@ Large Language Models (LLMs) have revolutionized conversation summarization by l
 
 ## Challenges with Commercial Models
 
-
-
-1. **Latency**: The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
-2. **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
-3. **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
-4. **Lack of Customization**: Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
-5. **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
-6. **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
+* **Latency:** The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
+* **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
+* **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
+* **Lack of Customization**: Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
+* **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
 
 ## Key Assumptions
 
-Below are some of the key assumptions made for the XO-GPT Summarization Model - 
+The following are a few key assumptions made for the XO-GPT Summarization Model:
 
-
-
-1. XO-GPT Summarization Model is designed for summarizing text-based conversations only.
-2. XO-GPT Summarization Model assumes structured conversational data with clear speaker delineation.
+* XO-GPT Summarization Model is designed for summarizing text-based conversations only.
+* XO-GPT Summarization Model assumes structured conversational data with clear speaker delineation.
 
 
 ## Benefits of the XO-GPT Summarization Model
 
 The XO-GPT summarization  model offers several potential advantages for businesses seeking to enhance their summarization capabilities:
 
-
-
 * **Consistent and Accurate** 
 
     XO-GPT leverages advanced language generation techniques to deliver precise and contextually relevant summaries for conversation transcripts, ensuring consistent and reliable performance. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-11).
 
-* **Cost-Effective Performance**  \
+* **Cost-Effective Performance**
 For customers in the Enterprise Tier, XO-GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For an average of 250 input tokens and 1,000 daily conversation summaries, each averaging 120 tokens, the cost comparison across models is as follows:
 
 <table>
@@ -159,10 +148,10 @@ For customers in the Enterprise Tier, XO-GPT completely eliminates the commercia
 
 
 
-* **Enhanced Data Security and Safety** \
+* **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails: **XO-GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails:** XO-GPT uses the following key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -170,24 +159,14 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures: **XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
-**Important Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
-
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
+**Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
 ## Use Cases
 
@@ -270,7 +249,7 @@ The table presents various use cases for implementing a summarization model to a
 The following section presents a few examples of the summary generated by the XO-GPT summarization model based on the conversations. In spite of conversations having PII information and XO GPT model summary restricted PII info out of the summary displayed in the sample output below.
 
 
-    Agent Conversation
+    **Agent Conversation**
 
 
     Bot: Hello! How can I help you today?
@@ -333,18 +312,9 @@ Agent: Of course! Could you please provide your full name and the last four digi
 
     Customer: Goodbye!
 
-Summary Generated
+**Generated Responses**
 
 The customer contacted support to check the status of their order. The bot verified the customer's identity using their order reference number, partial social security number, and password. After confirming the details, the bot informed the customer that their order was being processed and would ship within 48 hours. The customer then requested to speak with an agent to clarify the shipping address on their order. The agent assisted the customer by verifying their identity using their full name and the last four digits of their social security number. The agent confirmed that the shipping address on file was correct. The customer thanked the agent, and the conversation ended.
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
 
 # XO-GPT - Model Building Process
 
@@ -380,8 +350,6 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>[
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Link"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 <a href="#heading=h.531umuu1r0ni">Link</a>]
    </td>
    <td>[<a href="https://docs.google.com/spreadsheets/d/1P_oqslymFyag7nmGkuoGOlFiQMhiFfwvta-tmVwVolk/edit?usp=sharing">Link</a>]
@@ -397,8 +365,6 @@ The following table summarizes the versions covered in this document:
    <td rowspan="2" >2
    </td>
    <td rowspan="2" >[
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Link"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 <a href="#heading=h.s8an3e963uw1">Link</a>]
    </td>
@@ -638,8 +604,6 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
@@ -728,8 +692,6 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-
-
 #### AWQ Model Quantization
 
 To optimize the performance and efficiency of the model, we apply AWQ (Activation-aware Weight Quantization), a technique designed to reduce memory and computational requirements while maintaining accuracy significantly. Below is a detailed breakdown of the quantization process and parameters used with AWQ for the Llama 3.1 8B Instruct model.
@@ -814,21 +776,11 @@ To optimize the performance and efficiency of the model, we apply AWQ (Activatio
 
 ### Benchmarks Summary
 
-To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
-
-
+To compare and contrast the performance of the fine-tuned model, the following models are we have considered the following other models: 
 
 * LLama-8B: An open-source large language model with 8 billion parameters, known for its strong performance despite its relatively small size.
 * GPT-4: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude 3 Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
-
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
 
 
 XO-GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO-GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1J5YHgMWZFTgJqBQEMRSPXmVkK3pb1qIPHKx1rmC57dg/edit?usp=sharing).
@@ -1122,18 +1074,9 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
 
-
 * Llama 3 8b (Ctranslate): An open-source large language model with 8 billion parameters, known for its strong performance despite its relatively small size.
 * Sonnet 3.5: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 * GPT 4o: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
-
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
 
 
 XO-GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO-GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1P_oqslymFyag7nmGkuoGOlFiQMhiFfwvta-tmVwVolk/edit?usp=sharing).

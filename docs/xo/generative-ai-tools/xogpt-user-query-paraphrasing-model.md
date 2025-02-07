@@ -32,8 +32,6 @@
   <tr>
    <td rowspan="2" >
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Version 1.0"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 <a href="https://docs.google.com/document/d/1PMb3R4iDSh2n9ENCQOMnqufH5StuBRLRQ7_DPYmM9Sg/edit#heading=h.nn1lo7vzghem">Version 1.0</a>
    </td>
    <td rowspan="2" >Mistral 7B Instruct v0.2
@@ -52,11 +50,6 @@
    </td>
   </tr>
 </table>
-
-
-
-# 
-
 
 # Introduction
 
@@ -91,11 +84,9 @@ Below are some of the key assumptions made for the XO-GPT User Query Paraphrasin
 
 The XO-GPT Query Paraphrasing Model offers several advantages for businesses seeking to provide enhanced customer service experience:
 
-
-
-* **Contextual Communication**  \
+* **Contextual Communication**
 XO-GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks-11).
-* **Cost-Effective Performance** \
+* **Cost-Effective Performance**
 For customers in the Enterprise Tier, XO-GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
 
 <table>
@@ -145,7 +136,7 @@ For customers in the Enterprise Tier, XO-GPT completely eliminates the commercia
 
 
 
-* **Enhanced Data Security and Safety** \
+* **Enhanced Data Security and Safety**
 Our model safeguards information by ensuring that no client or user data is used for model retraining. Our systems are robust enough to handle both client and user data securely.
 
     **Guardrails: **XO-GPT uses several key safety measures to ensure responsible and secure interactions:
@@ -164,16 +155,6 @@ Our model safeguards information by ensuring that no client or user data is used
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
 **Important Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
-
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
 
 ## Use Cases
 
@@ -323,7 +304,6 @@ User: Ok, I'll choose that one.
 
 User: Ok, I will choose to apply at Stanford University for a Physics course.
 
-
 # XO-GPT - Model Building Process
 
 # Model Benchmarks
@@ -358,8 +338,6 @@ The following table summarizes the versions covered in this document:
    <td>0.54
    </td>
    <td>[
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Link"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 <a href="#heading=h.rn9kh1xmknc0">Link</a>]
    </td>
@@ -604,13 +582,5 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 * Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI.
 * GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
-
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
 
 By leveraging its strengths in performance, latency, and responsible AI principles, XO-GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1dZpVnOh5lcysSJS_yDteak_91WD6t8yMLzPFAULv43M/edit?usp=sharing) report.
