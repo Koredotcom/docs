@@ -11,7 +11,7 @@ Search AI allows you to configure and index content from various knowledge
 bases, files, and websites in the application, which is then used to dynamically
 provide answers to user queries. RAG Agents interact with the Search AI
 application to answer the user queries. [Learn
-more](https://docs.kore.ai/xo/searchai/about-search-ai/).
+more](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}.
 
 For instance, you can build a RAG Agent that handles queries related to Kore's
 products by creating a **Search AI application**. Configure the application to
@@ -84,17 +84,17 @@ Before creating a RAG Agent, ensure that the **Search AI** application is
 configured accurately to enable the retrieval and generation of responses.
 Follow these steps to prepare:
 
-* [Create a search AI](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/) application.
+* [Create a search AI](https://docs.kore.ai/searchassist/getting-started/build-and-publish-your-first-searchassist-app/){:target="_blank"} application.
 
-* [Configure content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/) in the application.
+* [Configure content sources](https://docs.kore.ai/searchassist/manage-content-sources/content-overview/){:target="_blank"} in the application.
 
-* Fine-tune the application [search settings](https://docs.kore.ai/xo/searchai/chunk-browser/) to generate appropriate responses.
+* Fine-tune the application [search settings](https://docs.kore.ai/xo/searchai/chunk-browser/){:target="_blank"} to generate appropriate responses.
 
-* [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/).
+* [Enable Answers](https://docs.kore.ai/searchassist/concepts/personalizing-results/about-answers/){:target="_blank"}.
 
 * Train the application.
 
-* Enable the [Client Channel for communication](https://docs.kore.ai/searchassist/administration/web-sdk-integration/#Step_1_Configure_Channel_and_credentials).
+* Enable the [Client Channel for communication](https://docs.kore.ai/searchassist/administration/web-sdk-integration/#Step_1_Configure_Channel_and_credentials){:target="_blank"}.
     Ensure that the appropriate API scope is enabled for the application.
 
 -   The Search AI application is ready for communication.
@@ -139,7 +139,7 @@ used for answer generation. Provide the following details for integration.
 
 These details are available in the **Search AI app** on the **Credentials** page
 under the **Manage** tab. Refer to
-[this](https://docs.kore.ai/xo/searchai/about-search-ai/) for more details.
+[this](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"} for more details.
 
 -   **URL**: Select your Search AI instance where the application is hosted.
 
