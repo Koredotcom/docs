@@ -2,66 +2,13 @@
 ## **XO Platform**
 
 
-# XO-GPT: Answer Generation Model
-
-
-## Overview, Model Development Process and Performance
-
-
-
-**Table of Contents**
-
-
-[TOC]
-
-
-# Live Versions
-
-
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Base Model
-   </td>
-   <td>Languages Supported
-   </td>
-   <td>Deployed Region
-   </td>
-   <td>Deployment Date
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="3" ><a href="#version-2-0-13">Version 2.0</a>
-   </td>
-   <td rowspan="3" >Llama 3.1 8B Instruct
-   </td>
-   <td rowspan="3" >English
-   </td>
-   <td>US
-   </td>
-   <td>9th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>9th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>EU
-   </td>
-   <td>9th Dec 2024
-   </td>
-  </tr>
-</table>
+# XO GPT: Answer Generation Model
 
 # Introduction
 
 Large Language Models (LLMs) have transformed the landscape of natural language processing (NLP), particularly in the development of Question and Answer (Q&A) systems. By utilizing the Retrieval Augmented Generation (RAG) approach, these models combine the power of vast textual data with real-time retrieval of relevant information, enabling them to generate accurate and contextually rich answers to user queries. The RAG technique enhances the model's ability to deliver precise responses, especially in scenarios where up-to-date or domain-specific information is crucial. This hybrid approach allows reliability and relevance, making LLM-based Q&A systems highly effective across various applications, from customer service to research assistance. 
 
-Implementing RAG-driven Q&A systems also presents challenges, such as ensuring the quality of retrieved content and managing potential biases. The Kore.ai’s XO-GPT Model for Answer Generation is a fine-tuned Large Language LLM (LLM) that addresses the key challenges faced when pre-trained LLMs are used out-of-the-box.  
+Implementing RAG-driven Q&A systems also presents challenges, such as ensuring the quality of retrieved content and managing potential biases. The Kore.ai’s XO GPT Model for Answer Generation is a fine-tuned Large Language LLM (LLM) that addresses the key challenges faced when pre-trained LLMs are used out-of-the-box.  
 
 
 ## Challenges with Commercial Models
@@ -73,85 +20,80 @@ Implementing RAG-driven Q&A systems also presents challenges, such as ensuring t
 * **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
 * **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
-
-## RAG Framework and XO-GPT Integration
+## RAG Framework and XO GPT Integration
 
 The XO GPT Model is a key component within our RAG framework. It is activated right after the retrieval phase. It takes the retrieved data and generates accurate, contextually relevant answers, ensuring the overall system delivers high-quality responses.
 
-
 ## Key Assumptions
 
-The following are a few key assumptions made for the XO-GPT Answer Generation Model: 
+The following are a few key assumptions made for the XO GPT Answer Generation Model: 
 
 * The answer generation is assumed to be based only on text-based data chunks, excluding non-textual content like images or videos.
-* The model processes questions that the XO-GPT User Query Rephrasing Model has first rephrased for improved clarity and relevance.
+* The model processes questions that the XO GPT User Query Rephrasing Model has first rephrased for improved clarity and relevance.
 * The model assumes that the data chunks it retrieves are accurate and relevant, and its performance is evaluated accordingly.
 * The model focuses on generating answers based solely on the text, so the responses may not include information within links or images.
 
+## Benefits of XO GPT Answer Generation Model
 
-## Benefits of XO-GPT Answer Generation Model
-
-The XO-GPT Answer Generation model offers several potential advantages for businesses seeking to enhance their Q&A capabilities:
+The XO GPT Answer Generation model offers several potential advantages for businesses seeking to enhance their Q&A capabilities:
 
 
 * **Consistent and Accurate** 
 
-    XO-GPT employs retrieval-augmented generation techniques to deliver contextually relevant and precise answers, enhancing the reliability and effectiveness of responses in Q&A applications. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-12).
+    XO GPT employs retrieval-augmented generation techniques to deliver contextually relevant and precise answers, enhancing the reliability and effectiveness of responses in Q&A applications. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-12).
 
 * **Cost-Effective Performance**
 
-    For customers in the Enterprise Tier, XO-GPT completely eliminates the commercial models’ usage costs. The following is an illustration of GPT -4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 10 input tokens per user question and 10,000 daily Q&A pairs, where each answer averages 80 tokens, the cost comparison between models is as follows: 
+    For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. The following is an illustration of GPT -4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 10 input tokens per user question and 10,000 daily Q&A pairs, where each answer averages 80 tokens, the cost comparison between models is as follows: 
 
-
-<table>
-  <tr>
-   <td>
-<strong>Model Name</strong>
-   </td>
-   <td><strong>Input Cost / MTok</strong>
-   </td>
-   <td><strong>Output Cost / MTok</strong>
-   </td>
-   <td><strong>Total Cost / Annum</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4 Turbo
-   </td>
-   <td>$30
-   </td>
-   <td>$60
-   </td>
-   <td><strong>$558,450</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4
-   </td>
-   <td>$10
-   </td>
-   <td>$30
-   </td>
-   <td><strong>$273,750</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4o Mini
-   </td>
-   <td>$0.15
-   </td>
-   <td>$0.6
-   </td>
-   <td><strong>$5,420</strong>
-   </td>
-  </tr>
-</table>
-
+    <table>
+    <tr>
+    <td>
+    <strong>Model Name</strong>
+    </td>
+    <td><strong>Input Cost / MTok</strong>
+    </td>
+    <td><strong>Output Cost / MTok</strong>
+    </td>
+    <td><strong>Total Cost / Annum</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4 Turbo
+    </td>
+    <td>$30
+    </td>
+    <td>$60
+    </td>
+    <td><strong>$558,450</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4
+    </td>
+    <td>$10
+    </td>
+    <td>$30
+    </td>
+    <td><strong>$273,750</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4o Mini
+    </td>
+    <td>$0.15
+    </td>
+    <td>$0.6
+    </td>
+    <td><strong>$5,420</strong>
+    </td>
+    </tr>
+    </table>
 
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails:** XO-GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -159,7 +101,7 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures:** XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
@@ -167,7 +109,6 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
 **Note:** The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
-
 
 ## Use Cases
 
@@ -284,7 +225,7 @@ The use cases of an Answer Generation / Q&A model, particularly one leveraging R
 
 ## Sample Outputs
 
-The following section presents a few examples of the answers generated by the XO-GPT Answer Generated model based on the shortlisted chunks:
+The following section presents a few examples of the answers generated by the XO GPT Answer Generated model based on the shortlisted chunks:
 
 **Ingested Content (Chunks)**
 
@@ -292,7 +233,7 @@ The following section presents a few examples of the answers generated by the XO
 * ChunkId: chk-2 Content: The principal amount is the initial loan amount sanctioned by the lender. The interest rate can be either fixed or floating. Fixed interest rates remain constant throughout the loan tenure, whereas floating rates fluctuate with changes in market rates. 
 * ChunkId: chk-3 Content: The tenure of the loan is the period over which the loan is to be repaid. It typically ranges from 5 to 30 years. Longer tenures cause lower monthly installments but higher interest payments over the life of the loan.
 * ChunkId: chk-4 Content: The Equated Monthly Installment (EMI) is the amount a borrower needs to pay every month. It includes both the principal and interest components. The EMI can be calculated using the formula: EMI = [P x R x (1+R)^N] / [(1+R)^N-1], where P is the principal loan amount, R is the monthly interest rate, and N is the number of monthly installments. 
-* ChunkId: chk-5 Content: Lenders also consider the borrower’s financial profile, including income, credit score, and existing liabilities, before sanctioning the loan. A good credit score and stable income can help you get a lower interest rate. Borrowers should use online home loan calculators to get an estimate of their EMI and plan their finances accordingly. \
+* ChunkId: chk-5 Content: Lenders also consider the borrower’s financial profile, including income, credit score, and existing liabilities, before sanctioning the loan. A good credit score and stable income can help you get a lower interest rate. Borrowers should use online home loan calculators to get an estimate of their EMI and plan their finances accordingly.
 
 
 **Generated Responses**
@@ -314,7 +255,7 @@ What is a home loan? What is photosynthesis?
 I found only the answer to one question 'What is a home loan?': A home loan is a secured loan that is obtained to purchase a property by offering the property itself as collateral. The calculation of a home loan involves several factors, including the loan amount, interest rate, tenure, and the borrower’s financial profile [chk-1]. The remaining questions cannot be answered from the given context.
 
 
-# XO-GPT - Model Building Process
+# XO GPT - Model Building Process
 
 # Model Benchmarks
 
@@ -374,10 +315,7 @@ The following table summarizes the versions covered in this document:
   </tr>
 </table>
 
-
-
 ## Version 2.0
-
 
 ### Model Choice
 
@@ -415,10 +353,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### Fine-tuning Parameters
-
 
 <table>
   <tr>
@@ -515,7 +450,7 @@ We evaluate various community models that are suitable for the objective of resp
 
 #### General Parameters
 
-As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
+As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following:
 
 
 <table>
@@ -600,8 +535,6 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
    </td>
   </tr>
 </table>
-
-
 
 #### AWQ Model Quantization
 
@@ -692,7 +625,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * GPT 4o mini: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude 3.5 Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO-GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1m1tI3ER1zjV317LpnNUiamX4t3ZwrpfK65sa_GeLOtI/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1m1tI3ER1zjV317LpnNUiamX4t3ZwrpfK65sa_GeLOtI/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
 
 
 ## Version 1.0
@@ -830,8 +763,6 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
@@ -930,4 +861,4 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * GPT-40 mini: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude-3-5-Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO-GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1TAfOVd3rU_uhRJ957oUbmLtGW14TNbGBVfxcDN4pGxc/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1TAfOVd3rU_uhRJ957oUbmLtGW14TNbGBVfxcDN4pGxc/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.

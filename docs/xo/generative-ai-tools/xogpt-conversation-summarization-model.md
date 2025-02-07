@@ -2,156 +2,89 @@
 ## **XO Platform**
 
 
-# XO-GPT: Conversation Summarization Model
-
-
-## Overview, Model Development Process and Performance
-
-
-
-**Table of Contents**
-
-
-# 
-
-
-# Live Versions
-
-
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Base Model
-   </td>
-   <td>Languages Supported
-   </td>
-   <td>Deployed Region
-   </td>
-   <td>Deployment Date
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="3" ><a href="#version-2-0-12">Version 2.0</a>
-   </td>
-   <td rowspan="3" >Mistral 7B Instruct v0.2
-   </td>
-   <td rowspan="3" >English,
-<p>
-French,
-<p>
-Spanish,
-<p>
-German,
-<p>
-Japanese, 
-<p>
-Turkish
-   </td>
-   <td>US
-   </td>
-   <td>19th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>20th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>JP
-   </td>
-   <td>20th Dec 2024
-   </td>
-  </tr>
-</table>
+# XO GPT: Conversation Summarization Model
 
 # Introduction
 
-Large Language Models (LLMs) have revolutionized conversation summarization by leveraging deep learning to extract key details from dialogues, generating concise, context-aware summaries. These models integrate techniques like abstractive summarization, context analysis, and sentiment detection to transform lengthy interactions into actionable insights, proving invaluable in domains such as customer service, healthcare, and IT support. However, challenges like ambiguous language, privacy concerns, and balancing brevity with completeness remain. Kore.ai's XO-GPT addresses these by fine-tuning LLMs to produce accurate, secure, and domain-specific summaries that align with conversational flow and industry needs.
-
+Large Language Models (LLMs) have revolutionized conversation summarization by leveraging deep learning to extract key details from dialogues, generating concise, context-aware summaries. These models integrate techniques like abstractive summarization, context analysis, and sentiment detection to transform lengthy interactions into actionable insights, proving invaluable in domains such as customer service, healthcare, and IT support. However, challenges like ambiguous language, privacy concerns, and balancing brevity with completeness remain. Kore.ai's XO GPT addresses these by fine-tuning LLMs to produce accurate, secure, and domain-specific summaries that align with conversational flow and industry needs.
 
 ## Challenges with Commercial Models
 
 * **Latency:** The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
 * **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
-* **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
-* **Lack of Customization**: Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Data Governance:** Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
+* **Lack of Customization:** Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
 * **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
 * **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
 
 ## Key Assumptions
 
-The following are a few key assumptions made for the XO-GPT Summarization Model:
+The following are a few key assumptions made for the XO GPT Summarization Model:
 
-* XO-GPT Summarization Model is designed for summarizing text-based conversations only.
-* XO-GPT Summarization Model assumes structured conversational data with clear speaker delineation.
+* XO GPT Summarization Model is designed for summarizing text-based conversations only.
+* XO GPT Summarization Model assumes structured conversational data with clear speaker delineation.
 
 
-## Benefits of the XO-GPT Summarization Model
+## Benefits of the XO GPT Summarization Model
 
-The XO-GPT summarization  model offers several potential advantages for businesses seeking to enhance their summarization capabilities:
+The XO GPT summarization  model offers several potential advantages for businesses seeking to enhance their summarization capabilities:
 
 * **Consistent and Accurate** 
 
-    XO-GPT leverages advanced language generation techniques to deliver precise and contextually relevant summaries for conversation transcripts, ensuring consistent and reliable performance. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-11).
+    XO GPT leverages advanced language generation techniques to deliver precise and contextually relevant summaries for conversation transcripts, ensuring consistent and reliable performance. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-11).
 
 * **Cost-Effective Performance**
-For customers in the Enterprise Tier, XO-GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For an average of 250 input tokens and 1,000 daily conversation summaries, each averaging 120 tokens, the cost comparison across models is as follows:
+For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For an average of 250 input tokens and 1,000 daily conversation summaries, each averaging 120 tokens, the cost comparison across models is as follows:
 
-<table>
-  <tr>
-   <td>
-<strong>Model Name</strong>
-   </td>
-   <td><strong>Input Cost / MTok</strong>
-   </td>
-   <td><strong>Output Cost / MTok</strong>
-   </td>
-   <td><strong>Total Cost / Annum</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4 Turbo
-   </td>
-   <td>$30
-   </td>
-   <td>$60
-   </td>
-   <td><strong>$160,965</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4
-   </td>
-   <td>$10
-   </td>
-   <td>$30
-   </td>
-   <td><strong>$66,795</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4o Mini
-   </td>
-   <td>$0.15
-   </td>
-   <td>$0.6
-   </td>
-   <td><strong>$1,199</strong>
-   </td>
-  </tr>
-</table>
-
-
-
+  <table>
+    <tr>
+    <td>
+  <strong>Model Name</strong>
+    </td>
+    <td><strong>Input Cost / MTok</strong>
+    </td>
+    <td><strong>Output Cost / MTok</strong>
+    </td>
+    <td><strong>Total Cost / Annum</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4 Turbo
+    </td>
+    <td>$30
+    </td>
+    <td>$60
+    </td>
+    <td><strong>$160,965</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4
+    </td>
+    <td>$10
+    </td>
+    <td>$30
+    </td>
+    <td><strong>$66,795</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4o Mini
+    </td>
+    <td>$0.15
+    </td>
+    <td>$0.6
+    </td>
+    <td><strong>$1,199</strong>
+    </td>
+    </tr>
+  </table>
 
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails:** XO-GPT uses the following key safety measures to ensure responsible and secure interactions:
+    **Guardrails:** XO GPT uses the following key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -159,7 +92,7 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures:** XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
@@ -242,73 +175,51 @@ The table presents various use cases for implementing a summarization model to a
   </tr>
 </table>
 
-
-
 ## Sample Outputs
 
-The following section presents a few examples of the summary generated by the XO-GPT summarization model based on the conversations. In spite of conversations having PII information and XO GPT model summary restricted PII info out of the summary displayed in the sample output below.
+The following section presents a few examples of the summary generated by the XO GPT summarization model based on the conversations. In spite of conversations having PII information and XO GPT model summary restricted PII info out of the summary displayed in the sample output below.
 
-
-    **Agent Conversation**
-
+    Agent Conversation
 
     Bot: Hello! How can I help you today?
 
-
     Customer: I need to check the status of my order.
-
 
     Bot: Sure! Please provide your **order reference number**.
 
-
     Customer: It’s **12345-67890**.
 
+    Bot: Thanks! For verification, please provide the last four digits of your **Social Security Number**.
 
-    Bot: Thanks! For verification, please provide the last four digits of your** Social Security Number.**
-
-
-    Customer:** 9876.**
-
+    Customer: **9876**.
 
     Bot: Got it. To proceed, could you please confirm your **password**?
 
-
     Customer: It’s **Mark123**.
 
-Bot: Thank you. Your order is being processed and will ship in 48 hours. Would you like any further assistance?
-
+    Bot: Thank you. Your order is being processed and will ship in 48 hours. Would you like any further assistance?
 
     Customer: Yes, I want to speak with an agent.
 
-
     Bot: Alright, I’m transferring you to an agent now. Please hold.
-
 
     Agent: Hi, this is John from XYZ Support. How can I assist you today?
 
-
     Customer: Hi, John. I just wanted to confirm the shipping address on my order.
 
-Agent: Of course! Could you please provide your full name and the last four digits of your **Social Security Number**?
+    Agent: Of course! Could you please provide your full name and the last four digits of your **Social Security Number**?
 
+    Customer: Jane Doe, **9876**.
 
-    Customer: Jane Doe,** 9876**.
-
-
-    Agent: Thank you, Jane. The shipping address we have on file is** 123 Elm Street, Springfield, IL**.
-
+    Agent: Thank you, Jane. The shipping address we have on file is **123 Elm Street, Springfield, IL**.
 
     Customer: That’s correct. Thanks!
 
-
     Agent: You’re welcome! Is there anything else I can do for you?
-
 
     Customer: No, that’s all. Thanks!
 
-
     Agent: Have a great day! Goodbye!
-
 
     Customer: Goodbye!
 
@@ -316,7 +227,7 @@ Agent: Of course! Could you please provide your full name and the last four digi
 
 The customer contacted support to check the status of their order. The bot verified the customer's identity using their order reference number, partial social security number, and password. After confirming the details, the bot informed the customer that their order was being processed and would ship within 48 hours. The customer then requested to speak with an agent to clarify the shipping address on their order. The agent assisted the customer by verifying their identity using their full name and the last four digits of their social security number. The agent confirmed that the shipping address on file was correct. The customer thanked the agent, and the conversation ended.
 
-# XO-GPT - Model Building Process
+# XO GPT - Model Building Process
 
 # Model Benchmarks
 
@@ -375,10 +286,7 @@ The following table summarizes the versions covered in this document:
   </tr>
 </table>
 
-
-
 ## Version 2.0
-
 
 ### Model Choice
 
@@ -416,10 +324,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### Fine-tuning Parameters
-
 
 <table>
   <tr>
@@ -608,7 +513,6 @@ We evaluate various community models that are suitable for the objective of resp
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
 
-
 <table>
   <tr>
    <td>Parameters
@@ -696,7 +600,6 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
 
 To optimize the performance and efficiency of the model, we apply AWQ (Activation-aware Weight Quantization), a technique designed to reduce memory and computational requirements while maintaining accuracy significantly. Below is a detailed breakdown of the quantization process and parameters used with AWQ for the Llama 3.1 8B Instruct model.
 
-
 <table>
   <tr>
    <td><strong>Parameters</strong>
@@ -772,8 +675,6 @@ To optimize the performance and efficiency of the model, we apply AWQ (Activatio
   </tr>
 </table>
 
-
-
 ### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, the following models are we have considered the following other models: 
@@ -783,16 +684,13 @@ To compare and contrast the performance of the fine-tuned model, the following m
 * Claude 3 Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 
 
-XO-GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO-GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1J5YHgMWZFTgJqBQEMRSPXmVkK3pb1qIPHKx1rmC57dg/edit?usp=sharing).
-
+XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1J5YHgMWZFTgJqBQEMRSPXmVkK3pb1qIPHKx1rmC57dg/edit?usp=sharing).
 
 ## Version 1.0
-
 
 ### Model Choice
 
 We evaluate various community models that are suitable for the objective of response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in terms of accuracy, safety, latency etc. will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as one of the base models for fine-tuning and deployment.
-
 
 <table>
   <tr>
@@ -825,10 +723,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### Fine-tuning Parameters
-
 
 <table>
   <tr>
@@ -977,12 +872,9 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
-
 
 <table>
   <tr>
@@ -1067,16 +959,13 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-
-
 ### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
-
 
 * Llama 3 8b (Ctranslate): An open-source large language model with 8 billion parameters, known for its strong performance despite its relatively small size.
 * Sonnet 3.5: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 * GPT 4o: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 
 
-XO-GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO-GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1P_oqslymFyag7nmGkuoGOlFiQMhiFfwvta-tmVwVolk/edit?usp=sharing).
+XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1P_oqslymFyag7nmGkuoGOlFiQMhiFfwvta-tmVwVolk/edit?usp=sharing).
