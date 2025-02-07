@@ -446,9 +446,9 @@ nav:
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: 
-          - Conversation Intelligence: quality-management/configure/settings/conversation-intelligence.md
-          - Quality AI Genenal Settings: quality-management/configure/settings/quality-ai-general-settings.md
-          - Language Settings: quality-management/configure/settings/langauge-settings.md
+          - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
+          - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
+          - Language Settings: quality-management/configure/langauge-settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
