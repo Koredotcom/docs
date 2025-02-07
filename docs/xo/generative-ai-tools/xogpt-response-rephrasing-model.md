@@ -14,10 +14,6 @@
 
 [TOC]
 
-
-
-
-
 # Live Versions
 
 
@@ -55,10 +51,6 @@
 </table>
 
 
-
-# 
-
-
 # Introduction
 
 The Response Rephrasing model has been meticulously designed to enhance the quality and naturalness of chatbot interactions. By refining the language and structure of predefined responses, our model not only preserves the conversation's context but also adapts to the emotional tone of the user. This ensures that responses are more engaging, human-like, and empathetic, significantly improving the overall user experience.
@@ -68,35 +60,28 @@ This model excels at creating interactions that feel more authentic and relatabl
 
 ## Challenges with Commercial Models
 
-
-
-1. **Latency**: The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
-2. **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
-3. **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
-4. **Lack of Customization**: Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+1. **Latency:** he time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
+2. **Cost:** Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
+3. **Data Governance:** Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
+4. **Lack of Customization:** Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
 5. **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
-6. **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
-
+6. **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
 ## Key Assumptions
 
-Below are some of the key assumptions made for the XO-GPT Response Rephrasing Model -
+ The following are a few assumptions made for the XO-GPT Response Rephrasing Model:
 
-
-
-1. The model is designed to work with text based conversations only.
-2. It is intended to rephrase only bot responses and does not modify user inputs.
+* The model is designed to work with text based conversations only.
+* It is intended to rephrase only bot responses and does not modify user inputs.
 
 
 ## Benefits of XO-GPT Response Rephrasing Model
 
 The XO-GPT Response Rephrasing Model offers several potential advantages for businesses seeking to enhance their service capabilities:
 
-
-
-* **Empathetic and Contextual Communication**  \
+* **Empathetic and Contextual Communication**
 XO-GPT tailors responses to align with user sentiment and tone, promoting engaging and empathetic interactions that enhance user satisfaction. Detailed performance metrics and comparison to other models can be found [here](#model-benchmarks-11).
-* **Cost-Effective Performance** \
+* **Cost-Effective Performance**
 For customers in the Enterprise Tier, XO-GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 120 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 40 tokens, the cost comparison between models is as follows:
 
 <table>
@@ -144,12 +129,10 @@ For customers in the Enterprise Tier, XO-GPT completely eliminates the commercia
 </table>
 
 
-
-
-* **Enhanced Data Security and Safety** \
+* **Enhanced Data Security and Safety**
 Our model safeguards information by ensuring that no client or user data is used for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails: **XO-GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails:** XO-GPT uses several key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -157,24 +140,14 @@ Our model safeguards information by ensuring that no client or user data is used
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures: **XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
-**Important Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
-
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
+**Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
 ## Use Cases
 
@@ -302,13 +275,11 @@ The use cases of response paraphrasing span various domains, each benefiting fro
   </tr>
 </table>
 
-
-
 ## Sample Outputs
 
 The following section presents a few examples of the answers generated by the XO-GPT Response Rephrasing model based on the conversation history. 
 
-**Input:**
+**Ingested Content (Chunks)**
 
 Current intent: book a flight
 
@@ -328,7 +299,7 @@ User: I prefer economy class, but I'm concerned. Are the flights safe?
 
 Bot: Could you please let me know your preferred time of flight?
 
-**XO-GPT Response:**
+**XO-GPT Generated Responses**
 
 Absolutely, your worries are entirely understandable. However, please be assured that airlines are practicing stringent safety measures to ensure the well-being of all passengers. Now, could you please share your preferred flight time?
 
@@ -367,8 +338,6 @@ The following table summarizes the versions covered in this document:
    <td>0.9
    </td>
    <td>[
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Link"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 <a href="#heading=h.rn9kh1xmknc0">Link</a>]
    </td>
@@ -609,17 +578,8 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
-
-
 * Mistral-vanilla: An open-source large language model with 7 billion parameters, known for its strong performance despite its relatively small size.
 * GPT 4: OpenAI's advanced language model is known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
-
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
 
 
 By leveraging its strengths in performance, latency, and responsible AI principles, XO-GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1CrA_OAFZThkjc6v6BXdZOAwLf9scxF3ca1L-lycqTVQ/edit?usp=sharing) report.
