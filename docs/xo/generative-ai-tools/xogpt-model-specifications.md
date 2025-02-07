@@ -30,7 +30,7 @@
    </td>
    <td rowspan="3" >Answer Generation
    </td>
-   <td rowspan="3" >Version 2.0
+   <td rowspan="3" >[Version 2.0](../generative-ai-tools/xogpt-answer-generation-model.md#version-20)
    </td>
    <td rowspan="3" >Llama 3.1 8B Instruct
    </td>
@@ -58,7 +58,7 @@
    </td>
    <td rowspan="3" >Conversation Summarization
    </td>
-   <td rowspan="3" >Version 2.0
+   <td rowspan="3" >[Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)
    </td>
    <td rowspan="3" >Mistral 7B Instruct v0.2
    </td>
@@ -96,7 +96,7 @@ Turkish
    </td>
    <td rowspan="2" >Rephrase Dialog Responses
    </td>
-   <td rowspan="2" >Version 1.0
+   <td rowspan="2" >[Version 1.0](../generative-ai-tools/xogpt-response-rephrasing-model.md#version-10)
    </td>
    <td rowspan="2" >Mistral 7B Instruct v0.2
    </td>
@@ -118,7 +118,7 @@ Turkish
    </td>
    <td rowspan="2" >Rephrase User Query
    </td>
-   <td rowspan="2" >Version 1.0
+   <td rowspan="2" >[Version 1.0](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md#version-10)
    </td>
    <td rowspan="2" >Mistral 7B Instruct v0.2
    </td>
@@ -146,7 +146,7 @@ Turkish
 
 The model-building process consists of several key stages that form the backbone of AI system development.
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/answer04.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 ## Data Collection
 
@@ -212,10 +212,10 @@ While internal testing shows strong performance, real-world results may vary due
 
 This section highlights the features, updates, and changes that vary between different versions of the XO GPT Model. It provides version-specific information that can help identify what is unique to each version. 
 
-* To learn more about the Answer Generation Model, click here.
-* To learn more about the Conversation Summary Model, click here.
-* To learn more about the Response Rephrasing Model, click here.
-* To learn more about the User Query Paraphrasing Model, click here.
+* To learn more about the Answer Generation Model, click [here](../generative-ai-tools/xogpt-answer-generation-model.md).
+* To learn more about the Conversation Summary Model, click [here](../generative-ai-tools/xogpt-conversation-summarization-model.md).
+* To learn more about the Response Rephrasing Model, click [here](../generative-ai-tools/xogpt-response-rephrasing-model.md).
+* To learn more about the User Query Paraphrasing Model, click [here](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md).
 
 # Model Roadmap
 

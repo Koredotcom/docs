@@ -101,6 +101,8 @@ Our model safeguards information by ensuring that no client or user data is used
 
 **Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
+<img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+
 ## Use Cases
 
 The use cases of a user query paraphrasing span various domains, each benefiting from the model’s ability to provide accurate responses and seamless communication.
@@ -283,9 +285,10 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>[
 
-<a href="#heading=h.rn9kh1xmknc0">Link</a>]
+<a href="#benchmarks-summary">link</a>]
    </td>
-   <td>[<a href="https://docs.google.com/spreadsheets/d/1dZpVnOh5lcysSJS_yDteak_91WD6t8yMLzPFAULv43M/edit?usp=sharing">Link</a>]
+   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">link</a>]
+
    </td>
   </tr>
 </table>
@@ -521,4 +524,6 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI.
 * GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1dZpVnOh5lcysSJS_yDteak_91WD6t8yMLzPFAULv43M/edit?usp=sharing) report.
+<img src="../images/user01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report.

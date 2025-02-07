@@ -23,6 +23,8 @@ Implementing RAG-driven Q&A systems also presents challenges, such as ensuring t
 
 The XO GPT Model is a key component within our RAG framework. It is activated right after the retrieval phase. It takes the retrieved data and generates accurate, contextually relevant answers, ensuring the overall system delivers high-quality responses.
 
+<img src="../images/answer01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+
 ## Key Assumptions
 
 The following are a few key assumptions made for the XO GPT Answer Generation Model: 
@@ -39,7 +41,7 @@ The XO GPT Answer Generation model offers several potential advantages for busin
 
 * **Consistent and Accurate** 
 
-    XO GPT employs retrieval-augmented generation techniques to deliver contextually relevant and precise answers, enhancing the reliability and effectiveness of responses in Q&A applications. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-12).
+    XO GPT employs retrieval-augmented generation techniques to deliver contextually relevant and precise answers, enhancing the reliability and effectiveness of responses in Q&A applications. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-12)
 
 * **Cost-Effective Performance**
 
@@ -108,6 +110,8 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
 **Note:** The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
+
+<img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 ## Use Cases
 
@@ -288,9 +292,9 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>[
 
-<a href="#heading=h.alo927mcdbtr">Link</a>]
+<a href="#benchmarks-summary">link</a>]
    </td>
-   <td>[<a href="https://docs.google.com/spreadsheets/d/1TAfOVd3rU_uhRJ957oUbmLtGW14TNbGBVfxcDN4pGxc/edit?usp=sharing">Link</a>]
+   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">link</a>]
    </td>
   </tr>
   <tr>
@@ -305,9 +309,9 @@ The following table summarizes the versions covered in this document:
    <td rowspan="2" >[
 
 
-<a href="#heading=h.amjflkq9qkeb">Link</a>]
+<a href="#benchmarks-summary">link</a>]
    </td>
-   <td rowspan="2" >[<a href="https://docs.google.com/spreadsheets/d/1m1tI3ER1zjV317LpnNUiamX4t3ZwrpfK65sa_GeLOtI/edit?usp=sharing">Link</a>]
+   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">link</a>]
    </td>
   </tr>
   <tr>
@@ -624,6 +628,8 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * GPT 4o mini: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude 3.5 Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 
+<img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+
 By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1m1tI3ER1zjV317LpnNUiamX4t3ZwrpfK65sa_GeLOtI/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
 
 
@@ -859,5 +865,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * Llama 3.1 8B: A powerful open-source large language model with 8 billion parameters, known for its strong performance across various tasks, including multilingual dialogue, text generation, and understanding.
 * GPT-40 mini: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude-3-5-Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
+
+<img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1TAfOVd3rU_uhRJ957oUbmLtGW14TNbGBVfxcDN4pGxc/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
