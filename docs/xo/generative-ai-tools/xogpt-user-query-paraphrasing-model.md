@@ -3,143 +3,88 @@
 
 # XO GPT - User Query Paraphrasing Model
 
-
-## Overview, Model Development Process and Performance
-
-
-
-**Table of Contents**
-
-
-[TOC]
-
-# Live Versions
-
-
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Base Model
-   </td>
-   <td>Languages Supported
-   </td>
-   <td>Deployed Region
-   </td>
-   <td>Deployment Date
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >
-
-<a href="https://docs.google.com/document/d/1PMb3R4iDSh2n9ENCQOMnqufH5StuBRLRQ7_DPYmM9Sg/edit#heading=h.nn1lo7vzghem">Version 1.0</a>
-   </td>
-   <td rowspan="2" >Mistral 7B Instruct v0.2
-   </td>
-   <td rowspan="2" >English
-   </td>
-   <td>US
-   </td>
-   <td>1st Jun 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>3rd Sep 2024
-   </td>
-  </tr>
-</table>
-
 # Introduction
 
 User Query Paraphrasing Model has been meticulously designed to enhance the quality and naturalness of chatbot interactions. By refining the language and structure of predefined responses, our model not only preserves the conversation's context but also co-refers to the details in the user query to the context. This ensures that responses are more engaging, human-like, and empathetic, significantly improving the overall user experience.
 
 This model excels at creating interactions that feel more authentic and relatable. It intelligently adjusts responses to reflect the user's emotions and conversational flow, fostering a deeper connection and satisfaction. This technology is ideal for various applications, including customer support, virtual assistants, and interactive platforms, where the quality of communication directly impacts user engagement and loyalty. With our model, your chatbot can deliver responses that are not only accurate but also beautifully crafted to resonate with users.
 
-
 ## Challenges with Commercial Models
 
-
-
-1. **Latency**: The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
-2. **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
-3. **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
-4. **Lack of Customization**: Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
-5. **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
-6. **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
+* **Latency:** The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
+* **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
+* **Data Governance:** Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
+* **Lack of Customization:** Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
+* **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
 
 ## Key Assumptions
 
-Below are some of the key assumptions made for the XO-GPT User Query Paraphrasing Model -
+The following are a few key assumptions made for the XO GPT User Query Paraphrasing Model -
+
+* The model is designed to work with text based conversations only.
+* The model paraphrases the user query only when it references or co-refers to details from the previous conversation context. It does not paraphrase the user input in all other cases.
 
 
+## Benefits of XO GPT User Query Paraphrasing Model
 
-1. The model is designed to work with text based conversations only.
-2. The model paraphrases the user query only when it references or co-refers to details from the previous conversation context. It does not paraphrase the user input in all other cases.
-
-
-## Benefits of XO-GPT User Query Paraphrasing Model
-
-The XO-GPT Query Paraphrasing Model offers several advantages for businesses seeking to provide enhanced customer service experience:
+The XO GPT Query Paraphrasing Model offers several advantages for businesses seeking to provide enhanced customer service experience:
 
 * **Contextual Communication**
-XO-GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks-11).
+XO GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks-11).
+
 * **Cost-Effective Performance**
-For customers in the Enterprise Tier, XO-GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
+For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
 
-<table>
-  <tr>
-   <td>
-<strong>Model Name</strong>
-   </td>
-   <td><strong>Input Cost / MTok</strong>
-   </td>
-   <td><strong>Output Cost / MTok</strong>
-   </td>
-   <td><strong>Total Cost / Annum</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4 Turbo
-   </td>
-   <td>$30
-   </td>
-   <td>$60
-   </td>
-   <td><strong>$427,050</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4
-   </td>
-   <td>$10
-   </td>
-   <td>$30
-   </td>
-   <td><strong>$158,775</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4o Mini
-   </td>
-   <td>$0.15
-   </td>
-   <td>$0.6
-   </td>
-   <td><strong>$2,628</strong>
-   </td>
-  </tr>
-</table>
-
-
-
+  <table>
+    <tr>
+    <td>
+  <strong>Model Name</strong>
+    </td>
+    <td><strong>Input Cost / MTok</strong>
+    </td>
+    <td><strong>Output Cost / MTok</strong>
+    </td>
+    <td><strong>Total Cost / Annum</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4 Turbo
+    </td>
+    <td>$30
+    </td>
+    <td>$60
+    </td>
+    <td><strong>$427,050</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4
+    </td>
+    <td>$10
+    </td>
+    <td>$30
+    </td>
+    <td><strong>$158,775</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4o Mini
+    </td>
+    <td>$0.15
+    </td>
+    <td>$0.6
+    </td>
+    <td><strong>$2,628</strong>
+    </td>
+    </tr>
+  </table>
 
 * **Enhanced Data Security and Safety**
 Our model safeguards information by ensuring that no client or user data is used for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails: **XO-GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -147,14 +92,14 @@ Our model safeguards information by ensuring that no client or user data is used
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures: **XO-GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
-**Important Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
+**Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
 ## Use Cases
 
@@ -283,12 +228,11 @@ The use cases of a user query paraphrasing span various domains, each benefiting
 </table>
 
 
-
 ## Sample Outputs
 
-The following section presents a few examples of the answers generated by the XO-GPT User Query Paraphrasing model based on the conversation history. 
+The following section presents a few examples of the answers generated by the XO GPT User Query Paraphrasing model based on the conversation history. 
 
-**Input:**
+**Ingested Content (Chunks)**
 
 User: Hi, can you help me select a University for studying Physics?
 
@@ -300,11 +244,11 @@ Bot: Generally, the tuition fees for an Undergraduate course in Physics is most 
 
 User: Ok, I'll choose that one.
 
-**XO-GPT Response:**
+**XO GPT Model Generated Responses:**
 
 User: Ok, I will choose to apply at Stanford University for a Physics course.
 
-# XO-GPT - Model Building Process
+# XO GPT - Model Building Process
 
 # Model Benchmarks
 
@@ -482,8 +426,6 @@ Fine-tuning Parameters
   </tr>
 </table>
 
-
-
 #### General Parameters
 
 The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other general fine-tuning parameters include the following
@@ -572,15 +514,11 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
   </tr>
 </table>
 
-
-
 ### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
-
-
 * Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI.
 * GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO-GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1dZpVnOh5lcysSJS_yDteak_91WD6t8yMLzPFAULv43M/edit?usp=sharing) report.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1dZpVnOh5lcysSJS_yDteak_91WD6t8yMLzPFAULv43M/edit?usp=sharing) report.
