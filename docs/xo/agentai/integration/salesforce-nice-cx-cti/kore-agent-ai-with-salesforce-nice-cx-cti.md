@@ -328,6 +328,13 @@ For on-prem, refer to the corresponding host.<strong> </strong>
   </tr>
 </table>
 
+## Architecture Diagrams
+### Chat
+<img src="../images/chat-architecture.png" alt="chat-architecture" title="chat-architecture" style="border: 1px solid gray; zoom:80%;">
+
+### Voice
+<img src="../images/voice-architecture.png" alt="voice-architecture" title="voice-architecture" style="border: 1px solid gray; zoom:80%;">
+
 ## Set up Salesforce-NICE CTI package
 
 Follow [this article](https://help.nice-incontact.com/content/agent/agentapplicationadministration/agentforsalesforce/installation.htm?TocPath=Agent%20Application%20Administration%7CAgent%20Application%20Administration%7CSalesforce%20Agent%20%7C_____3){:target="_blank"} to install and configure the NICE CTI package on your Salesforce account.
@@ -408,7 +415,7 @@ This app will be used in studio script.
 5. Select **NICE inContact** in the **CTI Provider** list.  
 <img src="../images/nice-incontact-13.png" alt="nice-incontact" title="nice-incontact" style="border: 1px solid gray; zoom:80%;">
 
-6. Select **Active,** and click **Save**.  
+6. Select **Active**, and click **Save**.  
 <img src="../images/active-save-14.png" alt="active-save" title="active-save" style="border: 1px solid gray; zoom:80%;">
 
 ### Set up AgentAssist Configuration
@@ -421,8 +428,20 @@ This app will be used in studio script.
 4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
 <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;"> 
       * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the bot.  
- <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
- 5. Select **Active** and click **Save**.
+ <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;"> 
+ 5. Select **Active**, and click **Save**.  
+    !!! note
+
+        If the language parameter is missing from the layout page after saving the configuration, either uninstall and reinstall the package or manually add the parameter by following these steps:
+         
+      1. Go to the **Salesforce Setup** page > **Object Manager**.
+
+      2. Search for and select the **Kore AgentAssist Configuration** object.
+
+      3. On the left panel, click **Page Layouts**.
+
+      4. Open **KoreAgentAssistConfig Layout**, and drag the **Language** parameter onto the layout screen.  
+      <img src="../images/language-parameter.png" alt="language-parameter" title="language-parameter" style="border: 1px solid gray; zoom:80%;">
 
 ### Configure NICE CTI Data in Salesforce
 
