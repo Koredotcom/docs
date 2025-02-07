@@ -426,9 +426,9 @@ nav:
         - Amazon S3: quality-management/connectors/amazon-s3.md
       - Analyze:
         - Dashboard:
-          - Dashboard Overview: quality-management/analyze/dashboard.md
+          - Supervisor Dashboard: quality-management/analyze/dashboard.md
           - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 

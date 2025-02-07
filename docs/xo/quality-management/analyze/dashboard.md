@@ -1,4 +1,6 @@
-# Supervisor Dashboard Overview
+# Supervisor Dashboard 
+
+## Overview
 
 The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the agent Evaluation forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
 
