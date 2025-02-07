@@ -32,7 +32,7 @@ Follow these steps:
 
     1. Assign Name, Description, Channel, and Pass Score.
 
-    2. Select metrics, assign weights, and link to queues. See [Evaluation Forms](../configure/evaluation-forms.md).
+    2. Select metrics, assign weights, and link to queues. See [Evaluation Forms](../configure/evaluation-forms.md/#evaluation-forms).
 
 6. View scored interactions in Conversation Mining:
 

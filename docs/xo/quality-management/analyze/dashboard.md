@@ -65,7 +65,7 @@ Displays the total number of audits (progress score) pending and completed.
 * **Audit**: Click the **Audit** button, which directs you to the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
-For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining/#audit-allocations).
+For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining-audit-allocations/).
 
 ### Evaluation Score 
 This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
