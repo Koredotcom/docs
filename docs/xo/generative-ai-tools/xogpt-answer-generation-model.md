@@ -446,8 +446,6 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-
-
 #### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following:
@@ -629,9 +627,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1m1tI3ER1zjV317LpnNUiamX4t3ZwrpfK65sa_GeLOtI/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
 
-
 ## Version 1.0
-
 
 ### Model Choice
 
@@ -852,8 +848,6 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
    </td>
   </tr>
 </table>
-
-
 
 ### Benchmarks Summary
 
