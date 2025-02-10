@@ -23,7 +23,6 @@ This model excels at creating interactions that feel more authentic and relatabl
 * The model is designed to work with text based conversations only.
 * It is intended to rephrase only bot responses and does not modify user inputs.
 
-
 ## Benefits of XO GPT Response Rephrasing Model
 
 The XO GPT Response Rephrasing Model offers several potential advantages for businesses seeking to enhance their service capabilities:
@@ -298,10 +297,7 @@ The following table summarizes the versions covered in this document:
   </tr>
 </table>
 
-
-
 ## Version 1.0
-
 
 ### Model Choice
 

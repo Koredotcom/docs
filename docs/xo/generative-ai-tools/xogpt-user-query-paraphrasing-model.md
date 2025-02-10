@@ -15,14 +15,12 @@ This model excels at creating interactions that feel more authentic and relatabl
 * **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
 * **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
-
 ## Key Assumptions
 
 The following are a few key assumptions made for the XO GPT User Query Paraphrasing Model -
 
 * The model is designed to work with text based conversations only.
 * The model paraphrases the user query only when it references or co-refers to details from the previous conversation context. It does not paraphrase the user input in all other cases.
-
 
 ## Benefits of XO GPT User Query Paraphrasing Model
 

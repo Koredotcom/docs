@@ -21,7 +21,6 @@
 | User Query Paraphrasing Model | Rephrase User Query          | [Version 1.0](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  | US              | 1st Jun 2024    |
 |                               |                              |               |                       |                                          | DE              | 3rd Sep 2024    |
 
-
 # XO GPT - Model Building Process (SAME)
 
 The model-building process consists of several key stages that form the backbone of AI system development.
@@ -56,9 +55,9 @@ The complete training data is versioned and available in Kore.ai’s XO GPT Data
 
 Once the data is collected, it is cleaned to 
 
-* Remove any irrelevant or noisy content, 
-* Standardizing formats, 
-* Ensure the text is ready for use. 
+* Remove any irrelevant or noisy content 
+* Standardizing formats 
+* Ensure the text is ready for use
 
 We also perform tokenization and normalization to make the data compatible with the base model’s requirements. By carefully preparing the data, we aim to enhance the model’s ability to generate relevant summaries.
 
