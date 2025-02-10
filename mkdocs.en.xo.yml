@@ -441,7 +441,7 @@ nav:
             - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
-        - Evaluation Criteria:
+        - Evaluation:
           - Evaluation Forms: quality-management/configure/evaluation-forms.md
           - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
