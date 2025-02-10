@@ -441,10 +441,10 @@ nav:
             - Agent View: quality-management/coach/coaching-assignments-agent-view.md 
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
-        - Evaluation:
-          - Evaluation Forms: quality-management/configure/evaluation-forms.md
-          - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-          - Agent Scorecards: quality-management/configure/agent-scorecards.md
+        - Evaluation Criteria:
+            - Evaluation Forms: quality-management/configure/evaluation-forms.md
+            - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
+        - Agent Score Cards: quality-management/configure/agent-scorecards.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
