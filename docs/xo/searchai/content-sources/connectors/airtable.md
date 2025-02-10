@@ -1,6 +1,8 @@
 # Airtable Connector
 
-Airtable combines the functionality of a spreadsheet and a database, making it a powerful tool for organizing and managing structured data. Using the Airtable connector, you can easily ingest data from Airtable into your SearchAI application. 
+Airtable combines the functionality of a spreadsheet and a database, making it a powerful tool for organizing and managing structured data. Using the Airtable connector, you can easily ingest data from Airtable into your SearchAI application and make it searchable. 
+
+<span style="text-decoration:underline;">Specifications</span>
 
 
 <table>
@@ -11,29 +13,30 @@ Airtable combines the functionality of a spreadsheet and a database, making it a
    </td>
   </tr>
   <tr>
-   <td>Extractive Model for Answer Generation
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Generative Model for Answer Generation
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
    <td>Supported Content Type
    </td>
-   <td>
+   <td>Tables
+   </td>
+  </tr>
+  <tr>
+   <td>Content Filtering Support
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>RACL Support 
+   </td>
+   <td>Yes
    </td>
   </tr>
 </table>
 
 
+
 ## Authorization Support
 
-SearchAI supports authentication using **personal access tokens** and **OAuth access tokens** for integration with Airtable. 
+SearchAI supports authentication using** personal access tokens an**d **OAuth access tokens** for integration with Airtable. 
 
 
 ## Airtable Configuration 
@@ -42,17 +45,31 @@ To enable communication between Airtable and SearchAI, generate the access token
 
 **Personal Access Token**
 
-If you are using personal access tokens, log in to the [Developer Hub](https://airtable.com/login?continue=%2Fcreate%2Ftokens%3F_gl%3D1*1a4c3xl*_gcl_au*MTczODA4OTc2Ny4xNzI1MDAwMDk3*_ga*MjAxMzA2MDg2My4xNzI1MDAwMDk3*_ga_VJY8J9RFZM*MTcyNzE1MzQ3MS4zLjEuMTcyNzE1NDM5Mi4zOC4wLjA.) of your Airtable setup and 
+If you are using personal access tokens, log in to the [Builder Hub](https://airtable.com/create/tokens) of your Airtable setup and 
 
 [create a new PAT](https://support.airtable.com/docs/creating-personal-access-tokens). Add the following scopes to the PAT. 
 
-* `data.records:read`
-* `data.recordComments:read`
-* `schema.bases:read`
+* data.records:read
+* data.recordComments:read
+* schema.bases:read
 
-**OAuth 2.0**
+**OAuth 2.0** 
 
-If you are using OAuth 2.0 for authentication, [register a new integration](https://airtable.com/create/oauth) for SearchAI.  Refer to[ this](https://airtable.com/developers/web/guides/oauth-integrations) for step-by-step instructions on how to register. This registration will generate a client id and client secret. 
+If you are using OAuth 2.0 for authentication, 
+
+* [Register a new integration](https://airtable.com/create/oauth) for SearchAI.   
+* Set OAuth Redirect URL to one of the following, depending on your region or deployment. 
+    * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
+    * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
+    * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+* When client ID is generated, click on Generate Client Secret. 
+* Enable the following permissions. 
+    * data.records:read
+    * data.recordComments:read
+    * schema.bases:read
+
+Refer to[ this](https://airtable.com/developers/web/guides/oauth-integrations) for step-by-step instructions on how to register. This registration will generate a client id and client secret. Copy the same for configuring the Airtable connector in Search AI. 
+
 
 ## Airtable Connector Configuration in Search AI
 
@@ -66,3 +83,7 @@ Provide the following fields while configuring the Airtable connector in Search 
 * If OAuth 2.0 is selected as the auth type, provide the **client ID and the client secret**. 
 
 There are some other optional fields that are used to map the Airtable content to the ingested content. Currently, Search AI supports only the standard fields. Hence, it is not mandatory to provide the other fields. 
+
+## RACL Support
+
+For all the content ingested from Airtable, the access is controlled by the **tableId** field of the table to which the content belongs. This field is available in the `sys_racl` field as a permission entity. Use the permission entity APIs to associate users to this permission entity so that they can access the related content. 

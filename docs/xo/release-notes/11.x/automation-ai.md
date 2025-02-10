@@ -2,6 +2,29 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.9.1 January 25, 2025
+
+<u>Patch Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Node
+
+#### Pre and Post Processor Support at the Node Level for Custom Prompts
+
+Agent Node now supports configuring pre and post-processor scripts at the node level for custom prompts, in addition to the existing prompt-level script support. This enables platform users to reuse the same custom prompt across multiple nodes while customizing the processing logic, input variables, and output keys for each specific use case.
+
+Key changes
+
+* Pre and post-processor scripts can now be configured at both node and prompt levels for custom prompts.
+* A warning is shown to alert users about potential added latency when configuring scripts at both the node and prompt levels.
+* Scripts execution order in a defined flow: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
+* Support for app functions in addition to content, context, and environment variables in the node level pre and post-processor scripts.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#custom-prompt-for-agent-node)
+
+
+<hr>
 
 ## v11.9.0 January 05, 2025
 

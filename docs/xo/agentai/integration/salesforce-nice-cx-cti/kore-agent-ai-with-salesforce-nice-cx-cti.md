@@ -418,11 +418,11 @@ This app will be used in studio script.
 <img src="../images/kore-agentassist-configuration-15.png" alt="kore-agentassist-configuration" title="kore-agentassist-configuration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the right-top corner of the page.
-4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
-   <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">  
-
-      <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
-5. Select **Active** and click **Save**.
+4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
+<img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;"> 
+      * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the bot.  
+ <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
+ 5. Select **Active** and click **Save**.
 
 ### Configure NICE CTI Data in Salesforce
 
@@ -622,6 +622,18 @@ curl –location –request POST ‘https://login.salesforce.com/services/oauth2
    </td>
   </tr>
   <tr>
+   <td>Custom Data
+   </td>
+   <td>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.
+
+<p>Refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data in Agent AI Bot</a> for instructions on how to access custom data in the bot.</p>
+   </td>
+   <td>Include your data in the customdata object (one key-value pair per line). For example: 
+<li>customdata.agentName="Agent"</li>
+<li>customdata.agentID="{agentid}"</li>
+   </td>
+  </tr>
+  <tr>
    <td>AgentAssist
    </td>
    <td>Map the AgentAssist Hub Instance
@@ -698,6 +710,18 @@ Open the Studio, import the above script, and customize as per the following tab
    </td>
   </tr>
   <tr>
+  <td>Custom Data
+   </td>
+   <td>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.
+<p>Refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data in Agent AI Bot</a> for instructions on how to access custom data in the bot.</p>
+   </td>
+   <td>Include your data in the customdata object (one key-value pair per line). For example: 
+<li>
+customdata.agentName="Agent"</li>
+<li>customdata.agentID="{agentid}"</li>
+   </td>
+  </tr>
+  <tr> 
    <td>AgentAssist
    </td>
    <td>Map the AgentAssist Hub Instance

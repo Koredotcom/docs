@@ -475,7 +475,11 @@ During a conversation, agents can click the **Emoji** icon to react to the conve
 
 ## Sending Attachments to Customers
 
-During a conversation, agents can click the **Attachments** icon to share attachments with customers.  
+During a conversation, agents can click the **Attachments** icon to share attachments with customers.
+
+!!! Note
+
+    Uploading files with malicious content (for example, HTML scripts) will be blocked, irrespective of the file extension. Retry after removing any embedded elements in the attachments.  
 <img src="../images/attachment-icon.png" alt="Attachment Button" title="Attachment Button" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent Forms for Handling Sensitive Information

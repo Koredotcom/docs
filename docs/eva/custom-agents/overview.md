@@ -2,9 +2,9 @@
 
 Configurable AI agents designed for quick deployment and workflow integration with minimal setup:
 
-* **Prompt Agents**: Build custom **GPT** agents capable of executing specific tasks by responding to tailored prompts, user inputs, and knowledge. [Learn more](./gpt-agents.md).
+* **Prompt Agents**: Build custom **GPT** agents capable of executing specific tasks by responding to tailored prompts, user inputs, and knowledge. [Learn more](./prompt-agents.md).
 
-* **GALE Agents**: Create agents that seamlessly integrate with your **GALE** flow, enhancing interaction and enabling smooth workflow execution. [Learn more](./gale-agents.mdgale-agents.md).
+* **GALE Agents**: Create agents that seamlessly integrate with your **GALE** flow, enhancing interaction and enabling smooth workflow execution. [Learn more](./gale-agents.md).
 
 * **Bot Agents**: Connect your **XO** bot to create agents that smoothly integrate and interact with it, enabling seamless workflow execution. [Learn more](./bot-agent.md).
 
