@@ -22,11 +22,6 @@
 |                               |                              |               |                       |                                          | DE              | 3rd Sep 2024    |
 
 
-
-
-# 
-x
-
 # XO GPT - Model Building Process (SAME)
 
 The model-building process consists of several key stages that form the backbone of AI system development.

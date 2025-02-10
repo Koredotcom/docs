@@ -44,49 +44,49 @@ The XO GPT Answer Generation model offers several potential advantages for busin
 
     For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. The following is an illustration of GPT -4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 10 input tokens per user question and 10,000 daily Q&A pairs, where each answer averages 80 tokens, the cost comparison between models is as follows: 
 
-    <table>
-  <tr>
-   <td>
-<strong>Model Name</strong>
-   </td>
-   <td><strong>Input Cost / MTok</strong>
-   </td>
-   <td><strong>Output Cost / MTok</strong>
-   </td>
-   <td><strong>Total Cost / Annum</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4 Turbo
-   </td>
-   <td>$30
-   </td>
-   <td>$60
-   </td>
-   <td><strong>$427,050</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4
-   </td>
-   <td>$10
-   </td>
-   <td>$30
-   </td>
-   <td><strong>$158,775</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>GPT-4o Mini
-   </td>
-   <td>$0.15
-   </td>
-   <td>$0.6
-   </td>
-   <td><strong>$2,628</strong>
-   </td>
-  </tr>
-</table>
+  <table>
+    <tr>
+    <td>
+  <strong>Model Name</strong>
+    </td>
+    <td><strong>Input Cost / MTok</strong>
+    </td>
+    <td><strong>Output Cost / MTok</strong>
+    </td>
+    <td><strong>Total Cost / Annum</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4 Turbo
+    </td>
+    <td>$30
+    </td>
+    <td>$60
+    </td>
+    <td><strong>$427,050</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4
+    </td>
+    <td>$10
+    </td>
+    <td>$30
+    </td>
+    <td><strong>$158,775</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>GPT-4o Mini
+    </td>
+    <td>$0.15
+    </td>
+    <td>$0.6
+    </td>
+    <td><strong>$2,628</strong>
+    </td>
+    </tr>
+  </table>
 
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
@@ -289,9 +289,9 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>[
 
-<a href="#benchmarks-summary">version 1.0 benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>]
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">test date and results spreadsheet</a>]
+   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
    </td>
   </tr>
   <tr>
@@ -306,9 +306,9 @@ The following table summarizes the versions covered in this document:
    <td rowspan="2" >[
 
 
-<a href="#benchmarks-summary">version 2.0 benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>]
    </td>
-   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">test date and results spreadsheet</a>]
+   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
    </td>
   </tr>
   <tr>

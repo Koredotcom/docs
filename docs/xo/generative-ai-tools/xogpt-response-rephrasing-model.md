@@ -291,9 +291,9 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>[
 
-<a href="#benchmarks-summary">version 1.0 benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>]
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">test date and results spreadsheet</a>]
+   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
    </td>
   </tr>
 </table>
