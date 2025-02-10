@@ -26,8 +26,6 @@ Steps to create New Evaluation Metrics:
 
 2. Select the type of Evaluation Metrics Measurement, such as **By Question**, **By Speech**, **By Playbook Adherence**, and **By Dialog Task**.
 
-In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
-
 The following table describes the Evaluation Metrics Measurement Types:
 
 <table>
@@ -53,19 +51,10 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td>Select a preferred language from the drop-down list.
    <br>
 
-   <strong>Note</strong>: For **Dynamic**, you must configure at least one Trigger and one agent Answer utterance for the Adherence Type.
-
-For **Static**, you must configure at least one agent Answer utterance for the Adherence Type.
-
-In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
-   </td>
+   <strong>Note</strong>: For **Dynamic**, you must configure at least one Trigger and one agent **Answer** utterance for the Adherence Type.
+ </td>
   </tr>
- 
-In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Question</strong>
+ <td><strong>Question</strong>
    </td>
    <td>Provides reference to the supervisor about audit and interaction evaluation. You enter a question for which adherence check is done.
    </td>
