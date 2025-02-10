@@ -8,139 +8,24 @@
 # XO GPT Models - Live Versions
 
 
-<table>
-  <tr>
-   <td>XO GPT Model
-   </td>
-   <td>Supported Feature
-   </td>
-   <td>Model Version
-   </td>
-   <td>Base Model
-   </td>
-   <td>Languages Supported
-   </td>
-   <td>Deployed Region
-   </td>
-   <td>Deployment Date
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="3" >Answer Generation Model
-   </td>
-   <td rowspan="3" >Answer Generation
-   </td>
-   <td rowspan="3" >Version 2.0
-   </td>
-   <td rowspan="3" >Llama 3.1 8B Instruct
-   </td>
-   <td rowspan="3" >English
-   </td>
-   <td>US
-   </td>
-   <td>9th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>9th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>EU
-   </td>
-   <td>9th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="3" >Conversation Summarization Model
-   </td>
-   <td rowspan="3" >Conversation Summarization
-   </td>
-   <td rowspan="3" >Version 2.0
-   </td>
-   <td rowspan="3" >Mistral 7B Instruct v0.2
-   </td>
-   <td rowspan="3" >English,
-<p>
-French,
-<p>
-Spanish,
-<p>
-German,
-<p>
-Japanese, 
-<p>
-Turkish
-   </td>
-   <td>US
-   </td>
-   <td>19th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>20th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td>JP
-   </td>
-   <td>20th Dec 2024
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >Response Rephrasing Model
-   </td>
-   <td rowspan="2" >Rephrase Dialog Responses
-   </td>
-   <td rowspan="2" >Version 1.0
-   </td>
-   <td rowspan="2" >Mistral 7B Instruct v0.2
-   </td>
-   <td rowspan="2" >English
-   </td>
-   <td>US
-   </td>
-   <td>1st Jun 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>3rd Sep 2024
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >User Query Paraphrasing Model
-   </td>
-   <td rowspan="2" >Rephrase User Query
-   </td>
-   <td rowspan="2" >Version 1.0
-   </td>
-   <td rowspan="2" >Mistral 7B Instruct v0.2
-   </td>
-   <td rowspan="2" >English
-   </td>
-   <td>US
-   </td>
-   <td>1st Jun 2024
-   </td>
-  </tr>
-  <tr>
-   <td>DE
-   </td>
-   <td>3rd Sep 2024
-   </td>
-  </tr>
-</table>
+| XO GPT Model                  | Supported Feature            | Model Version | Base Model            | Languages Supported                      | Deployed Region | Deployment Date |
+|-------------------------------|------------------------------|---------------|-----------------------|------------------------------------------|-----------------|-----------------|
+| Answer Generation Model       | Answer Generation            | [Version 2.0](../generative-ai-tools/xogpt-answer-generation-model.md#version-20)   | Llama 3.1 8B Instruct | English                                  | US              | 9th Dec 2024    |
+|                               |                              |               |                       |                                          | DE              | 9th Dec 2024    |
+|                               |                              |               |                       |                                          | EU              | 9th Dec 2024    |
+| Conversation Summarization Model | Conversation Summarization | [Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2 | English, French, Spanish, German, Japanese, Turkish | US | 19th Dec 2024 |
+|                               |                              |               |                       |                                          | DE              | 20th Dec 2024   |
+|                               |                              |               |                       |                                          | JP              | 20th Dec 2024   |
+| Response Rephrasing Model     | Rephrase Dialog Responses    | [Version 1.0](../generative-ai-tools/xogpt-response-rephrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  | US              | 1st Jun 2024    |
+|                               |                              |               |                       |                                          | DE              | 3rd Sep 2024    |
+| User Query Paraphrasing Model | Rephrase User Query          | [Version 1.0](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  | US              | 1st Jun 2024    |
+|                               |                              |               |                       |                                          | DE              | 3rd Sep 2024    |
+
 
 
 
 # 
-
+x
 
 # XO GPT - Model Building Process (SAME)
 

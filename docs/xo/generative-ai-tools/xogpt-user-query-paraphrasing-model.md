@@ -1,6 +1,3 @@
-## **XO Platform**
-
-
 # XO GPT - User Query Paraphrasing Model
 
 # Introduction
@@ -285,9 +282,9 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>[
 
-<a href="#benchmarks-summary">link</a>]
+<a href="#benchmarks-summary">version 1.0 benchmark summary</a>]
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">link</a>]
+   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">test date and results spreadsheet</a>]
 
    </td>
   </tr>
