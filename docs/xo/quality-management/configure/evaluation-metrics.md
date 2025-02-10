@@ -51,7 +51,7 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td>Select a preferred language from the drop-down list.
    <br>
 
-   <strong>Note</strong>: For <strong>Dynamic</strong>, you must configure at least one Trigger and one agent **Answer** utterance for the Adherence Type.
+   <strong>Note</strong>: For <strong>Dynamic</strong>, you must configure at least one Trigger and one agent <strong>Answer</strong> utterance for the Adherence Type.
  </td>
   </tr>
  <td><strong>Question</strong>
