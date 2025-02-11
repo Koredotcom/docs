@@ -78,6 +78,7 @@ For customers in the Enterprise Tier, XO GPT completely eliminates the commercia
   </table>
 
 * **Enhanced Data Security and Safety**
+
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
     **Guardrails:** XO GPT uses the following key safety measures to ensure responsible and secure interactions:
