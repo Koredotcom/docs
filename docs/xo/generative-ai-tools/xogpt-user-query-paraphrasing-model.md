@@ -29,10 +29,12 @@ The following are a few key assumptions made for the XO GPT User Query Paraphras
 The XO GPT Query Paraphrasing Model offers several advantages for businesses seeking to provide enhanced customer service experience:
 
 * **Contextual Communication**
-XO GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks).
+
+    XO GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks).
 
 * **Cost-Effective Performance**
-For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
+
+    For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
 
   <table>
     <tr>
@@ -79,22 +81,23 @@ For customers in the Enterprise Tier, XO GPT completely eliminates the commercia
   </table>
 
 * **Enhanced Data Security and Safety**
+Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-  Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
+    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
-  **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
     * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-  **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
-    
+
 !!! note
 
     The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.

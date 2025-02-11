@@ -90,17 +90,18 @@ The XO GPT Answer Generation model offers several potential advantages for busin
   </table>
 
 * **Enhanced Data Security and Safety**
+Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-  Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
+    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
-  **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
     * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-  **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
@@ -864,5 +865,4 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 <img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
-
 
