@@ -1,6 +1,6 @@
 # Evaluation Metrics
 
-This phase is entirely based on individual questions. It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
+This phase is entirely based on individual questions .  It allows you to create custom evaluation criteria across different measurement types. You can create Evaluation Metrics in the Evaluation Forms section utilizing these different measurement types.
 
 You can access the Evaluation Metrics by navigating to **Contact Center AI** > **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.  
 <img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
@@ -51,10 +51,21 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td>Select a preferred language from the drop-down list.
    <br>
 
-   <strong>Note</strong>: For <strong>Dynamic</strong>, you must configure at least one Trigger and one agent <strong>Answer</strong> utterance for the Adherence Type.
- </td>
+  <strong>Note</strong>: For **Dynamic**, you must configure at least one Trigger and one agent Answer utterance for the Adherence Type.
+
+
+For **Static**, you must configure at least one agent Answer utterance for the Adherence Type.
+
+In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
+   </td>
   </tr>
- <td><strong>Question</strong>
+ 
+In case of **Static**, the user must configure at least one agent **Answer** utterance for **Adherence Type**.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Question</strong>
+
    </td>
    <td>Provides reference to the supervisor about audit and interaction evaluation. You enter a question for which adherence check is done.
    </td>

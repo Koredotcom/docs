@@ -2,7 +2,7 @@
 
 The Settings allow you to make app-level changes to Conversation Intelligence.
 
-The Settings has the following three sections:
+The Settings has the following two sections:
 
 * Conversation Intelligence
 * Quality AI General Settings
@@ -33,8 +33,6 @@ Steps to enable the Conversation Intelligence:
 2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details.  
 <img src="../settings/images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
 
-By enabling this option, you can view the **Conversation Intelligence** feature displaying under the Analyze section.
-
 Steps to disable the **Conversation Intelligence** Dashboard:
 
 1. Disable the **Conversation Intelligence Dashboard** toggle button. The following dialog box appears.  
@@ -42,10 +40,10 @@ Steps to disable the **Conversation Intelligence** Dashboard:
 
     !!! Note
     
-        The Conversation Intelligence dashboard will not be visible to users throughout the application if the admin has disabled Conversation Intelligence. If it is enabled, then the user can view the insights on **Contact Center Efficiency**, **Agent Efficacy**, and **Customer Experience**.
+        The Conversation Intelligence dashboard will not be visible to users throughout the application if the admin has disabled Conversation Intelligence. If it is enabled, then the user can view the insights on contact center efficiency, agent efficacy, and customer experience.
 
 2. Click **Confirm** to disable the entire Conversation Intelligence application. The following screen appears.  
-<img src="../settings/conversation-intelligence/images/conv-warning-message.png" alt="Converstion Warning Message" title="Converstion Warning Message" style="border: 1px solid gray; zoom:60%;">
+<img src="../settings/images/confirm-conversation-intelligence.png" alt="Confirm Disable Converstion Intelligence" title="Confirm Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
 
 3. Click **Save** to save the settings.
 
@@ -72,8 +70,9 @@ Steps to enable the Script Adherence Configuration:
 
         !!! Note
     
-        If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute.  
-    <img src="../settings/conversation-intelligence/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
+            If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute.
+
+    <img src="../settings/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
     * **Save**: Allows you to save the defined messages.
 

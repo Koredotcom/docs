@@ -1,6 +1,6 @@
 # Amazon S3 Connector
 
-The Amazon S3 Connector allows seamless integration between Amazon S3 and Quality AI, enabling the ingestion of files stored in Amazon S3 buckets into the Quality AI platform. By connecting to an Amazon S3 account, users can retrieve and make their content available for intelligent metrics analysis.
+The Amazon S3 Connector allows seamless integration between Amazon S3 and Search AI, enabling the ingestion of files stored in Amazon S3 buckets into the Search AI platform. By connecting to an Amazon S3 account, users can retrieve and make their content available for intelligent search and analysis.
 
 **Specifications**
 
@@ -29,11 +29,12 @@ The Amazon S3 Connector allows seamless integration between Amazon S3 and Qualit
    <td>No
 </table>
 
-To integrate Quality AI with the Amazon S3 account and ingest data from it, follow the steps listed below. 
+To integrate Search AI with the Amazon S3 account and ingest data from it, follow the steps listed below. 
 
 1. Generate an Access Key for the Amazon S3 account from which content will be ingested.
 
-2. Configure the Amazon S3 connector in Quality AI.
+2. Configure the Amazon S3 connector in Search AI.
+
 
 ## Generate Access Key
 
@@ -51,7 +52,7 @@ To integrate Quality AI with the Amazon S3 account and ingest data from it, foll
 
 Refer to [this](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_manage_add-key.html) for detailed instructions.
 
-## Configure Amazon S3 Connector in Quality AI
+## Configure Amazon S3 Connector in Search AI
 
 Go to the **Authorization** page of the Connector, provide the following configuration fields, and click **Connect**.
 
@@ -67,8 +68,7 @@ Go to the **Authorization** page of the Connector, provide the following configu
 
 ## Ingesting Content
 
-After successfully connecting the Quality AI connector to the Amazon S3 account, go to the **Configuration** tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future.
+After successfully connecting the Search AI connector to the Amazon S3 account, go to the **Configuration** tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future.
 
-Upon sync, Quality AI ingests all the files (in supported formats) from the buckets accessible to the user used to log into the connector. 
-This content is then accessible to all the users of Quality AI.
-
+Upon sync, Search AI ingests all the files (in supported formats) from the buckets accessible to the user used to log into the connector. 
+This content is then accessible to all the users of Search AI.

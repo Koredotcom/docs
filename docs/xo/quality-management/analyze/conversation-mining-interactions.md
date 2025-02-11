@@ -1,6 +1,7 @@
-# Conversation Mining
+# Conversation Mining - Interactions
 
-In Conversation Mining, the Interactions and Audit Allocation features work together to improve contact center quality assurance by analyzing interactions and managing audits efficiently. These features help identify key interactions that need attention, eliminating the guesswork from manual evaluations. By focusing on critical interactions, manual efforts are streamlined, and interactions are assigned for review either randomly or based on custom filters. Audit allocation then distributes the workload across auditors for efficient management. 
+The Conversation Mining Interaction feature allows you to drill-down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
+
 
 You can access Conversation Mining by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining**.  
 

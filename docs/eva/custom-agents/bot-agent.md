@@ -6,10 +6,30 @@ For complex workflows involving multiple system integrations and logic, users ca
 
 For example, consider a Fund Transfer Bot Agent. By creating this bot on the XO Platform, you can automate fund transfers to clients' designated accounts, capturing key details such as client names, account information, and transfer amounts. Once integrated with your organization’s systems, the bot allows seamless conversational interactions, simplifying fund transfer operations.
 
-## Create a Bot Agent
+You can create a new agent or import an existing one.
+
+-   [Import existing bot agent](#import-existing-bot-agent)
+
+-   [Create a new bot agent](#create-a-new-bot-agent)
+
+# Import existing Bot Agent
+
+To import an existing Bot Agent:
+
+1.  Click the **Import** **Agent** button located in the upper-right
+    corner.![](images/import_bot.png)
+
+2.  Select the .ZIP file of the existing
+    agent.![](images/import_bot-agent.png)
+
+3.  Click **Import** to complete the process. The imported agent will appear on
+    the Bot Agents page.
+
+## Create a New Bot Agent
 
 You can create a new Bot agent to assist users in completing various tasks by
-utilizing the Bot created using the XO Platform.
+utilizing the Bot created using the XO Platform. [Learn
+more.](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/)
 
 To create a new Bot Agent, follow these steps:
 
@@ -18,11 +38,14 @@ To create a new Bot Agent, follow these steps:
 
     ![](images/bot-agent.png)
 
-2.  On the Workflow Agents page, click **+Create
+2.  On the Bot Agents page, click **+Create
     Agent.![](images/create-agent.png)**
 
 3.  You must link your Bot built on the XO Platform with **AI for Work** and
-    create a webhook channel. To create a webhook channel on the Bot and
+    create a webhook channel. [Learn
+    more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
+    
+    To create a webhook channel on the Bot and
     complete the integration process, follow these steps:
 
     1.  Log in to the **XO Platform**. Open the virtual assistant or bot you
@@ -78,7 +101,7 @@ activated, follow the integration steps to complete the process:
     2.  Enter the **Bot secret ID** you fetched from the Bot Webhook dialog.
 
     3.  Enter the **Webhook URL** that you have fetched from the Bot Webhook
-        dialog.![](images/add-bot.png)
+        dialog. [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).![](images/add-bot.png)
 
 2.  Click **Connect account** to move to the next step.
 
@@ -100,16 +123,16 @@ required.
 -   Select the option to **Publish to** either Admins, Selected users, or
     Everyone in the account.
 
--   Select the **Enablement type** option. If you select **Always enabled**, the
-    user will not have the choice to disable the agent. If you select the
-    **Users choice**, the user can enable or disable the agent based on the
-    requirement.
+-   **Enablement Type**: Define how end users can enable or disable the agent
+    from the agent store.
+
+    -   **Always Enabled:** Users cannot disable the agent; it is always active.
+
+    -   **User's Choice:** Users can choose whether to enable or disable the
+        agent as needed
 
     ![](images/publish_bot.png)
 
--   The **Publish log** will display the published versions of the agent. Click
-    **Publish** to publish this agent. Once published, your agent is displayed
-    in the Agent list of the **Admin console** page.
 
 The user can see this agent in the **Agents list** on the **Agents** page.
 
@@ -122,17 +145,43 @@ You can change the form if required.
 
 To modify the agent, follow these steps:
 
+1.  Navigate to the Agents list page and locate the agent you wish to
+    modify.![](images/export_bot.png)
 
-1.  Click the **three dots icon** next to the agent’s name. A menu with the
+2.  Click the three dots icon next to the agent’s name. A menu with the
     following options will appear:
 
-    -   **Edit** – Open and modify the agent's details.
+    -  **Edit** – Open and modify the agent's details.
 
-    -   **Publish/Unpublish** – Change the agent's status.
+    -  **Publish/Unpublish** – Change the agent's status.
 
-    -   **Delete** – Permanently remove the agent.
+    -  **Export Agent** - The agent's data is packaged into a ZIP file for
+        download, migration, or import into another system.
 
-    ![](images/modify_bot.png)
+    -  **Delete** – Permanently remove the agent.
 
-2.  Click on the required option and continue to complete the modifications as
+3.  Click on the required option and continue to complete the modifications as
     needed.
+
+
+# Agent Option
+
+The agent options allow you to export, delete, and un-publish the agent.
+
+![](images/agent_option_bot.png)
+
+
+# User Interaction
+
+Interacting with the Bot Agent is designed to simplify communication and task
+execution. Users can initiate a conversation by typing a command. The bot
+responds promptly, guiding users through the required steps. For example, if
+performing a task like a fund transfer, users simply need to engage with the bot
+by providing key details such as the client’s name, account information, and the
+transfer amount. Once the task is completed, the bot provides a confirmation or
+status update.
+
+![](images/user-interaction_1.png)
+
+![](images/user-interaction_2.png)
+
