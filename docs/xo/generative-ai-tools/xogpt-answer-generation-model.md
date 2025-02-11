@@ -1,28 +1,29 @@
 # XO GPT: Answer Generation Model
+<br>
 
-# Introduction
+## Introduction
 
 Large Language Models (LLMs) have transformed the landscape of natural language processing (NLP), particularly in the development of Question and Answer (Q&A) systems. By utilizing the Retrieval Augmented Generation (RAG) approach, these models combine the power of vast textual data with real-time retrieval of relevant information, enabling them to generate accurate and contextually rich answers to user queries. The RAG technique enhances the model's ability to deliver precise responses, especially in scenarios where up-to-date or domain-specific information is crucial. This hybrid approach allows reliability and relevance, making LLM-based Q&A systems highly effective across various applications, from customer service to research assistance. 
 
 Implementing RAG-driven Q&A systems also presents challenges, such as ensuring the quality of retrieved content and managing potential biases. The Kore.ai’s XO GPT Model for Answer Generation is a fine-tuned Large Language LLM (LLM) that addresses the key challenges faced when pre-trained LLMs are used out-of-the-box.  
 
 
-## Challenges with Commercial Models
+### Challenges with Commercial Models
 
-* **Latency:** The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
-* **Cost:** Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
-* **Data Governance:** Sending user queries to external models raises data privacy and security concerns. This is crucial in industries that involve sensitive or proprietary information.
-* **Lack of Customization:** Commercial models are not tailored to specific use cases or industries, leading to less accurate or relevant responses.
-* **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
-* **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
+* **Latency**: The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
+* **Cost**: Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
+* **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is crucial in industries that involve sensitive or proprietary information.
+* **Lack of Customization**: Commercial models are not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Limited Control**: There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
+* **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
-## RAG Framework and XO GPT Integration
+### RAG Framework and XO GPT Integration
 
 The XO GPT Model is a key component within our RAG framework. It is activated right after the retrieval phase. It takes the retrieved data and generates accurate, contextually relevant answers, ensuring the overall system delivers high-quality responses.
 
 <img src="../images/answer01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-## Key Assumptions
+### Key Assumptions
 
 The following are a few key assumptions made for the XO GPT Answer Generation Model: 
 
@@ -31,14 +32,14 @@ The following are a few key assumptions made for the XO GPT Answer Generation Mo
 * The model assumes that the data chunks it retrieves are accurate and relevant, and its performance is evaluated accordingly.
 * The model focuses on generating answers based solely on the text, so the responses may not include information within links or images.
 
-## Benefits of XO GPT Answer Generation Model
+### Benefits of XO GPT Answer Generation Model
 
 The XO GPT Answer Generation model offers several potential advantages for businesses seeking to enhance their Q&A capabilities:
 
 
 * **Consistent and Accurate** 
 
-    XO GPT employs retrieval-augmented generation techniques to deliver contextually relevant and precise answers, enhancing the reliability and effectiveness of responses in Q&A applications. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks-12)
+    XO GPT employs retrieval-augmented generation techniques to deliver contextually relevant and precise answers, enhancing the reliability and effectiveness of responses in Q&A applications. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks).
 
 * **Cost-Effective Performance**
 
@@ -91,7 +92,7 @@ The XO GPT Answer Generation model offers several potential advantages for busin
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -99,18 +100,20 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
-**Note:** The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
+!!! note
+
+    The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
 <img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-## Use Cases
+### Use Cases
 
 The use cases of an Answer Generation / Q&A model, particularly one leveraging Retrieval-Augmented Generation (RAG), span various domains, each benefiting from the model’s ability to provide accurate, contextually relevant answers. 
 
@@ -223,41 +226,43 @@ The use cases of an Answer Generation / Q&A model, particularly one leveraging R
 </table>
 
 
-## Sample Outputs
+### Sample Outputs
 
 The following section presents a few examples of the answers generated by the XO GPT Answer Generated model based on the shortlisted chunks:
 
 **Ingested Content (Chunks)**
 
-* ChunkId: chk-1 Content: A home loan is a secured loan that is obtained to purchase a property by offering the property itself as collateral. The calculation of a home loan involves several factors, including the loan amount, interest rate, tenure, and the borrower’s financial profile. 
-* ChunkId: chk-2 Content: The principal amount is the initial loan amount sanctioned by the lender. The interest rate can be either fixed or floating. Fixed interest rates remain constant throughout the loan tenure, whereas floating rates fluctuate with changes in market rates. 
-* ChunkId: chk-3 Content: The tenure of the loan is the period over which the loan is to be repaid. It typically ranges from 5 to 30 years. Longer tenures cause lower monthly installments but higher interest payments over the life of the loan.
-* ChunkId: chk-4 Content: The Equated Monthly Installment (EMI) is the amount a borrower needs to pay every month. It includes both the principal and interest components. The EMI can be calculated using the formula: EMI = [P x R x (1+R)^N] / [(1+R)^N-1], where P is the principal loan amount, R is the monthly interest rate, and N is the number of monthly installments. 
-* ChunkId: chk-5 Content: Lenders also consider the borrower’s financial profile, including income, credit score, and existing liabilities, before sanctioning the loan. A good credit score and stable income can help you get a lower interest rate. Borrowers should use online home loan calculators to get an estimate of their EMI and plan their finances accordingly.
+* **ChunkId: chk-1 Content**: A home loan is a secured loan that is obtained to purchase a property by offering the property itself as collateral. The calculation of a home loan involves several factors, including the loan amount, interest rate, tenure, and the borrower’s financial profile. 
+* **ChunkId: chk-2 Content**: The principal amount is the initial loan amount sanctioned by the lender. The interest rate can be either fixed or floating. Fixed interest rates remain constant throughout the loan tenure, whereas floating rates fluctuate with changes in market rates. 
+* **ChunkId: chk-3 Content**: The tenure of the loan is the period over which the loan is to be repaid. It typically ranges from 5 to 30 years. Longer tenures cause lower monthly installments but higher interest payments over the life of the loan.
+* **ChunkId: chk-4 Content**: The Equated Monthly Installment (EMI) is the amount a borrower needs to pay every month. It includes both the principal and interest components. The EMI can be calculated using the formula: EMI = [P x R x (1+R)^N] / [(1+R)^N-1], where P is the principal loan amount, R is the monthly interest rate, and N is the number of monthly installments. 
+* **ChunkId: chk-5 Content**: Lenders also consider the borrower’s financial profile, including income, credit score, and existing liabilities, before sanctioning the loan. A good credit score and stable income can help you get a lower interest rate. Borrowers should use online home loan calculators to get an estimate of their EMI and plan their finances accordingly.
 
 
 **Generated Responses**
 
-**Question:**
+**Question**:
 
 How do you compute EMI?
 
-**XO GPT Model Answer:**
+**XO GPT Model Answer**:
 
 The EMI is calculated using the formula: EMI = [P x R x (1+R)^N] / [(1+R)^N-1], where P is the principal loan amount, R is the monthly interest rate, and N is the number of monthly installments [chk-4].
 
-**Question:**
+**Question**:
 
 What is a home loan? What is photosynthesis?
 
-**XO GPT Model Generated Responses:**
+**XO GPT Model Generated Responses**:
 
 I found only the answer to one question 'What is a home loan?': A home loan is a secured loan that is obtained to purchase a property by offering the property itself as collateral. The calculation of a home loan involves several factors, including the loan amount, interest rate, tenure, and the borrower’s financial profile [chk-1]. The remaining questions cannot be answered from the given context.
 
 
-# XO GPT - Model Building Process
+## XO GPT - Model Building Process
 
-# Model Benchmarks
+The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](./xogpt-model-specifications.md#xo-gpt---model-building-process).
+
+## Model Benchmarks
 
 This section highlights the features, updates, and changes that vary between different versions of the Answer Generation Model. It provides version-specific information that can help identify what is unique to each version. 
 
@@ -315,9 +320,9 @@ The following table summarizes the versions covered in this document:
   </tr>
 </table>
 
-## Version 2.0
+### Version 2.0
 
-### Model Choice
+#### Model Choice
 
 We evaluate various community models that are suitable for the objective of response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in terms of accuracy, safety, latency, etc., will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model.  Currently, we are using [Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) as the base model for fine-tuning and deployment.
 
@@ -625,11 +630,11 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 <img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](https://docs.google.com/spreadsheets/d/1m1tI3ER1zjV317LpnNUiamX4t3ZwrpfK65sa_GeLOtI/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.0.xlsx) report provides a deeper dive into the evaluation process and results.
 
-## Version 1.0
+### Version 1.0
 
-### Model Choice
+#### Model Choice
 
 We evaluate various community models that are suitable for the objective of response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in terms of accuracy, safety, latency, etc., will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as one of the base models for fine-tuning and deployment.
 
@@ -859,4 +864,4 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 <img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](https://docs.google.com/spreadsheets/d/1TAfOVd3rU_uhRJ957oUbmLtGW14TNbGBVfxcDN4pGxc/edit?usp=sharing) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](../test-date-and-results/xogpt-answer-generation-v1.0.0.xlsx) report provides a deeper dive into the evaluation process and results.

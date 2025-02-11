@@ -1,33 +1,35 @@
 # XO GPT - User Query Paraphrasing Model
+<br>
 
-# Introduction
+## Introduction
 
 User Query Paraphrasing Model has been meticulously designed to enhance the quality and naturalness of chatbot interactions. By refining the language and structure of predefined responses, our model not only preserves the conversation's context but also co-refers to the details in the user query to the context. This ensures that responses are more engaging, human-like, and empathetic, significantly improving the overall user experience.
 
 This model excels at creating interactions that feel more authentic and relatable. It intelligently adjusts responses to reflect the user's emotions and conversational flow, fostering a deeper connection and satisfaction. This technology is ideal for various applications, including customer support, virtual assistants, and interactive platforms, where the quality of communication directly impacts user engagement and loyalty. With our model, your chatbot can deliver responses that are not only accurate but also beautifully crafted to resonate with users.
 
-## Challenges with Commercial Models
+### Challenges with Commercial Models
 
-* **Latency:** The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
-* **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
-* **Data Governance:** Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
-* **Lack of Customization:** Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
-* **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
-* **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
+* **Latency**: The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
+* **Cost**: Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
+* **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is crucial in industries that involve sensitive or proprietary information.
+* **Lack of Customization**: Commercial models are not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Limited Control**: There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
+* **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
-## Key Assumptions
+
+### Key Assumptions
 
 The following are a few key assumptions made for the XO GPT User Query Paraphrasing Model -
 
 * The model is designed to work with text based conversations only.
 * The model paraphrases the user query only when it references or co-refers to details from the previous conversation context. It does not paraphrase the user input in all other cases.
 
-## Benefits of XO GPT User Query Paraphrasing Model
+### Benefits of XO GPT User Query Paraphrasing Model
 
 The XO GPT Query Paraphrasing Model offers several advantages for businesses seeking to provide enhanced customer service experience:
 
 * **Contextual Communication**
-XO GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks-11).
+XO GPT adapts user queries to the conversation context, enabling it to interpret user intent and facilitate meaningful, satisfying interactions accurately. Detailed performance insights, including context-awareness and response relevance, can be found [here](#model-benchmarks).
 
 * **Cost-Effective Performance**
 For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 100 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 15 tokens, the cost comparison between models is as follows:
@@ -79,7 +81,7 @@ For customers in the Enterprise Tier, XO GPT completely eliminates the commercia
 * **Enhanced Data Security and Safety**
 Our model safeguards information by ensuring that no client or user data is used for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -87,18 +89,20 @@ Our model safeguards information by ensuring that no client or user data is used
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
-**Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
+!!! note
+
+    The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
 <img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-## Use Cases
+### Use Cases
 
 The use cases of a user query paraphrasing span various domains, each benefiting from the model’s ability to provide accurate responses and seamless communication.
 
@@ -225,7 +229,7 @@ The use cases of a user query paraphrasing span various domains, each benefiting
 </table>
 
 
-## Sample Outputs
+### Sample Outputs
 
 The following section presents a few examples of the answers generated by the XO GPT User Query Paraphrasing model based on the conversation history. 
 
@@ -241,13 +245,15 @@ Bot: Generally, the tuition fees for an Undergraduate course in Physics is most 
 
 User: Ok, I'll choose that one.
 
-**XO GPT Model Generated Responses:**
+**XO GPT Model Generated Responses**:
 
 User: Ok, I will choose to apply at Stanford University for a Physics course.
 
-# XO GPT - Model Building Process
+## XO GPT - Model Building Process
 
-# Model Benchmarks
+The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](./xogpt-model-specifications.md#xo-gpt---model-building-process).
+
+## Model Benchmarks
 
 This section highlights the features, updates, and changes that vary across different versions of the User Query Paraphrasing Model. It provides version-specifics, which can help identify what is unique to each version. 
 
@@ -282,7 +288,7 @@ The following table summarizes the versions covered in this document:
 
 <a href="#benchmarks-summary">Benchmark summary</a>]
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td>[<a href="../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx">Test date and results spreadsheet</a>]
 
    </td>
   </tr>
@@ -290,10 +296,10 @@ The following table summarizes the versions covered in this document:
 
 
 
-## Version 1.0
+### Version 1.0
 
 
-### Model Choice
+#### Model Choice
 
 We evaluated various community models that are suited for response generation and fine-tuned our proprietary data described in the previous section. One or more candidate models were used throughout the training and evaluation phase. The model that performed better in terms of accuracy, safety, latency, etc. was deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as the base model for fine-tuning and deployment.
 
@@ -521,4 +527,4 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 <img src="../images/user01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper [Test Data and Results V2.0](../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx) report.

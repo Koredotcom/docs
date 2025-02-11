@@ -1,20 +1,22 @@
 # XO GPT: Conversation Summarization Model
+<br>
 
-# Introduction
+## Introduction
 
 Large Language Models (LLMs) have revolutionized conversation summarization by leveraging deep learning to extract key details from dialogues, generating concise, context-aware summaries. These models integrate techniques like abstractive summarization, context analysis, and sentiment detection to transform lengthy interactions into actionable insights, proving invaluable in domains such as customer service, healthcare, and IT support. However, challenges like ambiguous language, privacy concerns, and balancing brevity with completeness remain. Kore.ai's XO GPT addresses these by fine-tuning LLMs to produce accurate, secure, and domain-specific summaries that align with conversational flow and industry needs.
 
-## Challenges with Commercial Models
+### Challenges with Commercial Models
 
-* **Latency:** The time it takes for commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This latency can impact user experience.
-* **Cost:** Commercial models often have a per-request cost, which can quickly become expensive, particularly as usage scales. This makes managing costs difficult, especially for large-scale deployments.
-* **Data Governance:** Sending user queries to external models raises data privacy and security concerns. This is especially important in industries that involve sensitive or proprietary information.
-* **Lack of Customization:** Commercial models are generally not tailored to specific use cases or industries, leading to less accurate or relevant responses.
-* **Limited Control:** There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
-* **Compliance and Regulatory Constraints:** Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
+* **Latency**: The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
+* **Cost**: Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
+* **Data Governance**: Sending user queries to external models raises data privacy and security concerns. This is crucial in industries that involve sensitive or proprietary information.
+* **Lack of Customization**: Commercial models are not tailored to specific use cases or industries, leading to less accurate or relevant responses.
+* **Limited Control**: There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
+* **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
 
-## Key Assumptions
+
+### Key Assumptions
 
 The following are a few key assumptions made for the XO GPT Summarization Model:
 
@@ -22,13 +24,13 @@ The following are a few key assumptions made for the XO GPT Summarization Model:
 * XO GPT Summarization Model assumes structured conversational data with clear speaker delineation.
 
 
-## Benefits of the XO GPT Summarization Model
+### Benefits of the XO GPT Summarization Model
 
 The XO GPT summarization  model offers several potential advantages for businesses seeking to enhance their summarization capabilities:
 
 * **Consistent and Accurate** 
 
-    XO GPT leverages advanced language generation techniques to deliver precise and contextually relevant summaries for conversation transcripts, ensuring consistent and reliable performance. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#benchmarks-summary).
+    XO GPT leverages advanced language generation techniques to deliver precise and contextually relevant summaries for conversation transcripts, ensuring consistent and reliable performance. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks).
 
 * **Cost-Effective Performance**
 For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For an average of 250 input tokens and 1,000 daily conversation summaries, each averaging 120 tokens, the cost comparison across models is as follows:
@@ -80,7 +82,7 @@ For customers in the Enterprise Tier, XO GPT completely eliminates the commercia
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails:** XO GPT uses the following key safety measures to ensure responsible and secure interactions:
+    **Guardrails**: XO GPT uses the following key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -88,18 +90,20 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
     * Transparency: Clear, understandable responses to promote trust and accountability.
     * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
-**Note**: The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
+!!! note
+
+    The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
 <img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-## Use Cases
+### Use Cases
 
 The table presents various use cases for implementing a summarization model to analyze agent and customer conversations across ten different domains. The summarization model aims to distill lengthy dialogues into concise overviews, allowing businesses to capture key points from customer interactions quickly. This facilitates improved response times, better customer service, and more efficient resolution of issues. By applying this model solution, organizations can enhance their operational efficiency, ensure information accuracy, and provide a better customer experience.
 
@@ -173,7 +177,7 @@ The table presents various use cases for implementing a summarization model to a
   </tr>
 </table>
 
-## Sample Outputs
+### Sample Outputs
 
 The following section presents a few examples of the summary generated by the XO GPT summarization model based on the conversations. In spite of conversations having PII information and XO GPT model summary restricted PII info out of the summary displayed in the sample output below.
 
@@ -227,9 +231,11 @@ The customer contacted support to check the status of their order. The bot verif
 
 <img src="../images/conversation02.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-# XO GPT - Model Building Process
+## XO GPT - Model Building Process
 
-# Model Benchmarks
+The model-building process consists of several key stages that form the backbone of AI system development. To know more see [Model Building Process](./xogpt-model-specifications.md#xo-gpt---model-building-process).
+
+## Model Benchmarks
 
 This section highlights the features, updates, and changes that vary between different versions of the Conversation Summary Model. It provides version-specific information that can help identify what is unique to each version. 
 
@@ -263,7 +269,7 @@ The following table summarizes the versions covered in this document:
 
 <a href="#benchmarks-summary">Benchmark summary</a>]
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td>[<a href="../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx">Test date and results spreadsheet</a>]
    </td>
   </tr>
   <tr>
@@ -279,16 +285,16 @@ The following table summarizes the versions covered in this document:
 
 <a href="#benchmarks-summary">Benchmark summary</a>]
    </td>
-   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-conversation-summarization-v1.0.0.xlsx">Test date and results spreadsheet</a>]
    </td>
   </tr>
   <tr>
   </tr>
 </table>
 
-## Version 2.0
+### Version 2.0
 
-### Model Choice
+#### Model Choice
 
 We evaluate various community models that are suitable for the objective of response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in terms of accuracy, safety, latency, etc., will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as one of the base models for fine-tuning and deployment.
 
@@ -675,7 +681,7 @@ To optimize the performance and efficiency of the model, we apply AWQ (Activatio
   </tr>
 </table>
 
-### Benchmarks Summary
+#### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, the following models are we have considered the following other models: 
 
@@ -686,11 +692,11 @@ To compare and contrast the performance of the fine-tuned model, the following m
 <img src="../images/conversation03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 
-XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx).
+XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, Japanese, Turkish, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx).
 
-## Version 1.0
+### Version 1.0
 
-### Model Choice
+#### Model Choice
 
 We evaluate various community models that are suitable for the objective of response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in terms of accuracy, safety, latency etc. will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer versions of the model. Currently, we are using [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) as one of the base models for fine-tuning and deployment.
 
@@ -972,4 +978,4 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 <img src="../images/conversation03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 
-XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx).
+XO GPT has demonstrated outstanding performance in recent evaluations, achieving an impressive overall score, which positions it alongside leading models like Llama and ahead of competitors such as Sonnet and GPT-4. This high score reflects the model's robust capabilities in accuracy, fluency, and robustness, particularly in multilingual contexts. XO GPT consistently delivers strong results across a variety of tasks, including bias detection, bribery identification, and sentiment analysis. It shows exceptional performance in English, French, German, and Spanish, with notable strengths in areas like customer requests and negation detection. For detailed test results, please refer to [Test Data and Results V2.0](../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx).
