@@ -79,23 +79,23 @@ For customers in the Enterprise Tier, XO GPT completely eliminates the commercia
   </table>
 
 * **Enhanced Data Security and Safety**
-Our model safeguards information by ensuring that no client or user data is used for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
+  Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    * Content Moderation: Detects and blocks harmful or inappropriate content.
-    * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
-    * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
-    * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
-    * Usage Controls: Applies limits to prevent misuse and support responsible operation.
+    * **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
-    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+      * Content Moderation: Detects and blocks harmful or inappropriate content.
+      * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
+      * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
+      * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
+      * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
-    * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
-    * Transparency: Clear, understandable responses to promote trust and accountability.
-    * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
+    * **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
+      * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
+      * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
+      * Transparency: Clear, understandable responses to promote trust and accountability.
+      * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 !!! note
 
     The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
@@ -284,11 +284,11 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>0.54
    </td>
-   <td>[
+   <td>
 
-<a href="#benchmarks-summary">Benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td><a href="../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx">Test date and results spreadsheet</a>
 
    </td>
   </tr>

@@ -91,22 +91,22 @@ The XO GPT Answer Generation model offers several potential advantages for busin
 
 * **Enhanced Data Security and Safety**
 
-Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
+  Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
+    * **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
-    * Content Moderation: Detects and blocks harmful or inappropriate content.
-    * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
-    * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
-    * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
-    * Usage Controls: Applies limits to prevent misuse and support responsible operation.
+      * Content Moderation: Detects and blocks harmful or inappropriate content.
+      * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
+      * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
+      * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
+      * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    * **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
-    * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
-    * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
-    * Transparency: Clear, understandable responses to promote trust and accountability.
-    * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
+      * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
+      * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
+      * Transparency: Clear, understandable responses to promote trust and accountability.
+      * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
 !!! note
 
@@ -293,11 +293,11 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>1.36
    </td>
-   <td>[
+   <td>
 
-<a href="#benchmarks-summary">Benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td><a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>
    </td>
   </tr>
   <tr>
@@ -309,12 +309,12 @@ The following table summarizes the versions covered in this document:
    </td>
    <td rowspan="2" >1.03
    </td>
-   <td rowspan="2" >[
+   <td rowspan="2" >
 
 
-<a href="#benchmarks-summary">Benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>
    </td>
-   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td rowspan="2" ><a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>
    </td>
   </tr>
   <tr>
@@ -359,7 +359,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### Fine-tuning Parameters
+##### Fine-tuning Parameters
 
 <table>
   <tr>
@@ -452,7 +452,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### General Parameters
+##### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following:
 
@@ -540,7 +540,7 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-#### AWQ Model Quantization
+##### AWQ Model Quantization
 
 To optimize the performance and efficiency of the model, we apply AWQ (Activation-aware Weight Quantization), a technique designed to reduce memory and computational requirements while maintaining accuracy significantly. Below is a detailed breakdown of the quantization process and parameters used with AWQ for the Llama 3.1 8B Instruct model. 
 
@@ -620,7 +620,7 @@ To optimize the performance and efficiency of the model, we apply AWQ (Activatio
   </tr>
 </table>
 
-### Benchmarks Summary
+#### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
@@ -631,7 +631,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 <img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.0.xlsx) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
 
 ### Version 1.0
 
@@ -673,7 +673,7 @@ We evaluate various community models that are suitable for the objective of resp
 
 
 
-#### Fine-tuning Parameters
+##### Fine-tuning Parameters
 
 
 <table>
@@ -767,7 +767,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### General Parameters
+##### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
 
@@ -855,7 +855,7 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-### Benchmarks Summary
+#### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
@@ -865,4 +865,6 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 
 <img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](../test-date-and-results/xogpt-answer-generation-v1.0.0.xlsx) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
+
+

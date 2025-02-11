@@ -81,22 +81,22 @@ For customers in the Enterprise Tier, XO GPT completely eliminates the commercia
 
 * **Enhanced Data Security and Safety**
 
-Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
+  Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails**: XO GPT uses the following key safety measures to ensure responsible and secure interactions:
+    * **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
-    * Content Moderation: Detects and blocks harmful or inappropriate content.
-    * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
-    * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
-    * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
-    * Usage Controls: Applies limits to prevent misuse and support responsible operation.
+      * Content Moderation: Detects and blocks harmful or inappropriate content.
+      * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
+      * Response Oversight: Monitors and addresses flagged or potentially problematic interactions.
+      * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
+      * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    * **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
-    * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
-    * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
-    * Transparency: Clear, understandable responses to promote trust and accountability.
-    * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
+      * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
+      * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
+      * Transparency: Clear, understandable responses to promote trust and accountability.
+      * Continuous Improvement: Ongoing updates to enhance safety and incorporate feedback.
 
 !!! note
 
@@ -266,11 +266,10 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>3.04
    </td>
-   <td>[
-
-<a href="#benchmarks-summary">Benchmark summary</a>]
+   <td>
+<a href="#benchmarks-summary">Benchmark summary</a>
    </td>
-   <td>[<a href="../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx">Test date and results spreadsheet</a>]
+   <td><a href="../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx">Test date and results spreadsheet</a>
    </td>
   </tr>
   <tr>
@@ -282,11 +281,11 @@ The following table summarizes the versions covered in this document:
    </td>
    <td rowspan="2" >2
    </td>
-   <td rowspan="2" >[
+   <td rowspan="2" >
 
-<a href="#benchmarks-summary">Benchmark summary</a>]
+<a href="#benchmarks-summary">Benchmark summary</a>
    </td>
-   <td rowspan="2" >[<a href="../test-date-and-results/xogpt-conversation-summarization-v1.0.0.xlsx">Test date and results spreadsheet</a>]
+   <td rowspan="2" ><a href="../test-date-and-results/xogpt-conversation-summarization-v1.0.xlsx">Test date and results spreadsheet</a>
    </td>
   </tr>
   <tr>
@@ -331,7 +330,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### Fine-tuning Parameters
+##### Fine-tuning Parameters
 
 <table>
   <tr>
@@ -516,7 +515,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### General Parameters
+##### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
 
@@ -603,7 +602,7 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-#### AWQ Model Quantization
+##### AWQ Model Quantization
 
 To optimize the performance and efficiency of the model, we apply AWQ (Activation-aware Weight Quantization), a technique designed to reduce memory and computational requirements while maintaining accuracy significantly. Below is a detailed breakdown of the quantization process and parameters used with AWQ for the Llama 3.1 8B Instruct model.
 
@@ -732,7 +731,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### Fine-tuning Parameters
+##### Fine-tuning Parameters
 
 <table>
   <tr>
@@ -881,7 +880,7 @@ We evaluate various community models that are suitable for the objective of resp
   </tr>
 </table>
 
-#### General Parameters
+##### General Parameters
 
 As a pre-requisite, an Agent AI License is required, and the model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following
 
@@ -968,7 +967,7 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-### Benchmarks Summary
+#### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
