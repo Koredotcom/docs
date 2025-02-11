@@ -56,7 +56,7 @@ The XO Platform now enables enterprises to power up their virtual assistants wit
 
 !!! note
 
-    Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform.
+    The Kore.ai XO Platform offers generative AI features for English and non-English NLU and VA languages.
 
 
 ### Configure Custom LLM Integration
