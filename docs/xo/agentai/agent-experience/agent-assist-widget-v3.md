@@ -58,9 +58,9 @@ My bot functionality can be used in multiple circumstances (but not limited to):
 
 ### Assist Tab
 
-The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, a “bulb” icon (if there is a Dynamic Playbook match), and . For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
+The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, a “bulb” icon (if there is a Dynamic Playbook match), and a summary generation button. For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
 
-<img src="../widget-images/assist-tab.png" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">  
+<img src="../widget-images/assist-tab.jpg" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">  
 
 The Assist tab facilitates the following:
 
@@ -75,6 +75,7 @@ The Assist tab facilitates the following:
 * Feedback for Dialog Task and Knowledge AI.
 * Attach files or images up to the size of 25 MB.
 * Lets you collect customer information during live conversations through the In-line digital forms.
+* Lets agents generate on-demand summary up to two times per agent, per conversation.
 
 The Assist tab features the following:
 
@@ -85,12 +86,23 @@ The Assist tab features the following:
 * **Up/down arrow buttons**: These buttons appear only after the messages in the Assist tab are large enough to require a scroll bar. Click the **up** and **down** arrows to go to the first and last messages respectivly.
 * **Resume button**: This button applies to the Playbooks and appears while switching to another playbook while one is already running.
 * **List View**: This is an entity list button. When clicked, a pop-up displays a list of all entity entries present in the conversation.
+* **Generate Summary**: This buttons lets agents generate on-demand summary up to two times per agent, per conversation.
 * **Restart button**: When clicked, this button provides agents with two options: "Start over" and "Restart with Captured Inputs." These options allow agents to either restart the Dialog Task or continue it by providing input for each entity before restarting.
 * **Termination button**: This button provides agents options to handle ongoing interactions effectively, allowing them to either terminate, cancel, or continue, which involves manual input of customer responses for entity responses.
     * **Option 1: Yes, Terminate**: Terminates the running Dialog Task and provides feedback.
     * **Option 2: No, Cancel**: Closes the pop-up with no actions taken.
     * **Option 3: Continue with Override Mode**: Agents manually enter the response to the customer’s conversation.
 * **Maximize/Minimize button**: This button maximizes/minimizes the displayed page section.
+
+#### Generate Summary
+
+Agents can now click the **Generate Summary** button in the Assist tab to generate on-demand conversation summaries at any point during a conversation, up to two times per agent, per conversation. This functionality is available even during agent transfers, allowing the receiving agent to regenerate a new summary and view the previous summary with timestamps. Agents can also provide feedback for these summaries.
+
+!!! note
+    For this functionality, the **Generate Summary** toggle must be enabled in the **Widget Theming > Layout Customization > Assist Action Menu Layout** section. [Learn more](../configuration/widget-theming-layout-customization.md/#assist-action-menu-layout){:target="_blank"}
+
+The following screenshot shows the agent-generated summaries with timestamps along with the end-of-summary auto-generated summary:  
+<img src="../widget-images/summary-generation.jpg" alt="summary-generation" title="summary-generation" style="border: 1px solid gray; zoom:80%;">
 
 #### **Attachment Support**
 
