@@ -19,7 +19,7 @@ This Dashboard lets you filter the data based on language, time period, and chan
 
 In this Quality AI Dashboard, you can filter and search by language across the dashboards and interaction listing pages to search and apply the language-specific metrics. These metrics are available based on the languages configured at the evaluation metric level under the **Configuration** > **Settings** > **Language Settings**. 
  
-<img src="./dashboard/images/language-filter.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:100%;">
+<img src="../dashboard/images/language-filter.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:100%;">
 
 !!! note
 
