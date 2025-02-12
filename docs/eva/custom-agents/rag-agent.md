@@ -38,12 +38,12 @@ comprehensive and efficient support for all Kore product-related inquiries.
     retrieval from multiple sources, offering access to comprehensive knowledge
     and ensuring answers to all queries are in one place.
 
-## Difference between RAG Agents and Default RAG
+## Difference between RAG Agents and Enterprise Knowledge
 
-The main distinction between **RAG Agents** and **Default RAG** lies in their
+The main distinction between **RAG Agents** and **Enterprise Knowledge** lies in their
 configuration and scope:
 
--   **Default RAG** uses the Search AI application, provisioned with the AI for
+-   **Enterprise Knowledge** uses the Search AI application, provisioned with the AI for
     Work account by default. It serves as a fallback mechanism when no specific
     agent matches the user's query intent.
 
@@ -54,7 +54,7 @@ configuration and scope:
     
     When a query aligns with the purpose of a specific configured RAG agent,
     that agent takes over to generate a response. If no matching RAG agent is
-    found for the given intent, the system defaults to the **Default RAG** for
+    found for the given intent, the system defaults to the **Enterprise Knowledge** for
     the response.
 
 You can create a new agent or import an existing one.
