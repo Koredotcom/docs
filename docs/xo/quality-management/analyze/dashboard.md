@@ -26,6 +26,7 @@ In this Quality AI Dashboard, you can filter and search by language across the d
     By default, all languages are selected when the **All Languages** filter is applied. Only metrics configured for the selected languages are displayed under this filter.
 
 When any of the language filters are selected, the following widget metrics are updated:
+
 * Total Audits
 
 * Avg. Audits per Agent
@@ -35,7 +36,6 @@ When any of the language filters are selected, the following widget metrics are 
 * Fail Statistics (Evaluation Form)
 
 * Performance Monitor (Evaluation Form) 
-
 
 ### Date Range
 
@@ -89,7 +89,7 @@ Displays the total number of audits (progress score) pending and completed.
 * **Audit**: Click the **Audit** button, which directs you to the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
-For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md)
+For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md).
 
 ### Evaluation Score 
 This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
@@ -121,7 +121,7 @@ This chart displays the trend view of the percentage of interactions with agent 
 
 !!! note
 
-    This **Agent Scorecard** tab only appears on the Dashboard if the widget option is enabled in the **Settings** of the [Quality AI](../configure/settings/quality-ai-general-settings).
+    This **Agent Scorecard** tab only appears on the Dashboard if the widget option is enabled in the **Settings** of the [Quality AI General Settings](../configure/quality-ai-general-settings.md).
 
 ## Performance Monitor
 
@@ -172,5 +172,5 @@ This **View Leaderboard** or **Agent Leaderboard** feature allows auditors and m
 Click the **View Leaderboard** button, the following screen is displayed that navigates you to the **Agent Leaderboard** page.   
 <img src="../dashboard/images/view-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md)
+For more information, see [Agent Leaderboard](../analyze/agent-leaderboard.md).
 
