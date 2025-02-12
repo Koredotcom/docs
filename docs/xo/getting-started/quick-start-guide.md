@@ -17,7 +17,7 @@ The Quick Start page consists of two sections:
 Includes links to popular tutorials, Kore Academy, Documentation, and Community.  
 <img src="../images/quick-start-2.png" alt="Tour the Product" title="Tour the Product" style="border: 1px solid gray; zoom:70%;">
   
-  **Related Link**
+  **Related Links**
 
    [Setup Guide](../getting-started/setup-guide.md)  
    [Guided Onboarding](../getting-started/guided-onboarding.md)
