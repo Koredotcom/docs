@@ -17,8 +17,6 @@ With this update, platform users can leverage the latest LLMs as soon as they be
 
 Key benefits
 
-
-
 * Quickly access newly launched language models without waiting for the platform to make the new models available.
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
@@ -32,6 +30,38 @@ The platform now supports answer generation guardrails to ensure the safety and 
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
 
+
+### Getting Started
+
+#### Simplified Onboarding Journey and Customizable App Icons 
+
+The XO Platform now offers a streamlined onboarding experience with simplified product selection, an improved signup flow, and an easy-to-follow Quick Start & Setup Guide. These changes help platform users get started faster, focus on what matters, and see value sooner.
+
+In addition, the platform allows users to personalize their app icons. They can select from a dropdown of preset icons and colors or upload a custom PNG or JPG icon up to 80x80 pixels in size.  
+
+[Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md)
+
+### Billing & Payments
+
+#### Usage Trends Enhancements for Improved Billing Insights
+
+The Usage Trends section now includes a new Billing Session Widget. This widget provides key metrics to help app users easily understand and manage their apps’ usage.
+
+The Widget includes
+
+* Consolidated view of billing sessions, voice sessions, and agent counts.
+* Filtering by date range (24 hours, 7 days, 30 days, or custom).
+* Clear graphical representation of usage trends.
+* Hover tooltips for detailed data points.
+
+Metrics tracked
+
+* Automation AI Billing Sessions: 15 minutes of bot/app interaction.
+* API Requests: Each triggered request is counted as a session.
+* Voice Gateway Sessions: 15 minutes of voice interaction.
+* Agent Count: Concurrent Agent Seats that the customers have subscribed to for the given time.  
+
+[Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#usage-trends)
 
 <hr>
 
