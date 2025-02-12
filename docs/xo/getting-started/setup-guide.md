@@ -42,3 +42,8 @@ The Left Navigation Menu available on the setup guide provides access to the fol
 
 4. Explore 
 	Analytics: Gain valuable insights into your AI chatbot’s performance and interactions through comprehensive analytics. The Kore.ai XO Platform offers various dashboards to track real-time data and assess how your virtual assistant is performing over time. [Learn more](../administration/analytics.md).
+
+   ## Related Link
+
+   [Quick Start Guide](../getting-started/quick-start-guide.md)  
+   [Guided Onboarding](../getting-started/guided-onboarding.md)
