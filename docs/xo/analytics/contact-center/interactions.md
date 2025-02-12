@@ -317,8 +317,7 @@ Click the **Copy All** button to copy all the identifier details (from the detai
 * Agent Conversation ID
 * User ID
 * Caller
-* Callee  
-<img src="../images/identifiers-uxo.png" alt="Identifiers Tab" title="Identifiers Tab" style="border: 1px solid gray; zoom:80%;">
+* Callee
 
 ### Call Recording
 
