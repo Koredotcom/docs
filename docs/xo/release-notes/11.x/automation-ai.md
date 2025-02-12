@@ -23,7 +23,7 @@ DialogGPT's comprehensive analytics provide detailed tracking of user interactio
 #### Redesigned Export Interface for Improved User Experience
 
 The Import / Export interface has been redesigned to mirror the Publish layout. A new top-level "Flows" section and reorganized "Automation Tasks" improve component organization. The update maintains backward compatibility and provides clearer section names and descriptions for an intuitive, cohesive experience.
-[Learn more :octicons-arrow-right-24:]()
+[Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
 
 
 <hr>
