@@ -77,7 +77,7 @@ The Coaching Assignments include the following items:
        
     * **Yet to start**: Interactions for an assignment are yet to start.
 
-        !!! note
+    !!! note
             
         This option is only visible for supervisors.
 
