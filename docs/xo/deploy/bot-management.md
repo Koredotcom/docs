@@ -178,7 +178,7 @@ To import a VA while creating it, follow these steps:
    </td>
   </tr>
   <tr>
-   <td> Bot Synonyms and Standard Responses
+   <td> App Synonyms and Standard Responses
    </td>
    <td>Existing VA synonyms, and standard responses in the target assistant are replaced with the imported ones.
    </td>
@@ -368,7 +368,7 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 
 9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
-### Exported Bot Components
+### Exported App Components
 
 When you export a VA, the following components get exported, depending on your Latest or Published Mode selection:
 
@@ -470,18 +470,18 @@ When you export a VA, the following components get exported, depending on your L
   <tr>
    <td>App Settings
    </td>
-   <td>The following information from the Bot Settings page:
+   <td>The following information from the App Settings page:
 <ul>
 
 <li>General Settings
 
 <li>App name, description, and VA synonyms for each enabled language
 
-<li>Language selection time frame (Bot Settings > Language Management)
+<li>Language selection time frame (App Settings > Language Management)
 
 <li>Welcome message
 
-<li>Hold and Resume settings (Bot level)
+<li>Hold and Resume settings (App level)
 
 <li>Custom Script file
 
