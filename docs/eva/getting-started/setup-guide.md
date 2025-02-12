@@ -11,7 +11,7 @@ AI for Work setup consists of the following steps:
     - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
     - [Step 5: Configure Enterprise Knowledge](#step-5-configure-enterprise-knowledge)
     - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
-    - [Step 7: Configure Custom Agents As Per your Requirement](#step-7-configure-custom-agents-as-per-your-requirement)
+    - [Step 7: Configure Agents and Applications As Per your Requirement](#step-7-configure-agents-and-applications-as-per-your-requirement)
     - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
 
 ### Step 1: Sign Up for a New AI for Work Account
@@ -45,9 +45,9 @@ The Enterprise Knowledge is a pre-configured Search AI app available to all AI f
 
 AI for Work provides a set of pre-built agents that perform specific tasks with minimal setup or customization. These agents are designed to automate processes such as summarizing content, drafting emails, translating text, etc. Administrators can configure and publish pre-built agents for user access through the Agent Store. [Learn more](https://docs.kore.ai/ai-for-work/pre-built-agents/overview/).
 
-### Step 7: Configure Custom Agents As Per your Requirement
+### Step 7: Configure Agents and Applications As Per your Requirement
 
-Custom AI agents can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](https://docs.kore.ai/ai-for-work/agents-apps/overview/).
+Agents and applications can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](https://docs.kore.ai/ai-for-work/agents-apps/overview/).
 
 ### Step 8: Invite your Users to AI for Work
 

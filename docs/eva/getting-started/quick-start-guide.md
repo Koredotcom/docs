@@ -13,7 +13,7 @@ AI for Work setup consists of the following steps:
   - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
   - [Step 5: Configure Enterprise Knowledge](#step-5-configure-enterprise-knowledge)
   - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
-  - [Step 7: Configure Custom Agents As Per your Requirements](#step-7-configure-custom-agents-as-per-your-requirements)
+  - [Step 7: Configure Custom Agents As Per your Requirements](#step-7-configure-agents-apps-as-per-your-requirements)
   - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
 
 ## Step 1: Sign Up for a New AI for Work Account
