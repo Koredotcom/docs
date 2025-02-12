@@ -2,6 +2,51 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+
+## v11.10.0 February 12, 2025
+
+<u>Minor Release</u>
+
+## UI Enhancements
+
+### Language Dropdown Automatically Adjusts to the App's Language
+
+The language dropdown in Welcome Events, Widget Settings, and Feedback Settings now automatically adjusts to match the app's language.
+
+## Widget Enhancements
+
+### Load Time Reduction of Agent AI Widget
+
+The Agent AI widget’s load time has been optimized by removing synchronous API calls for settings and preferences before establishing the socket connection. These configurations are now received asynchronously using a socket event, significantly improving initial load performance.
+
+### Ability to Pause or Resume Transcription
+
+Agent AI widget is now capable of honoring the pause and resume events transmitted from agent desktops to control the visibility of transcripts to agents within the Widget.
+
+### Enhanced Input Box for Override, List View, Restart, and Search Bar fields
+
+For improved navigation of longer entries, input text boxes of Override, List View, Restart, and Search Bar are now expanded to display up to three lines with a scroll bar.
+
+### On-demand Summary Generation
+
+Agents can now generate on-demand conversation summaries at any point during a conversation, up to 2 times per agent per conversation. This functionality is available even during agent transfers, allowing the receiving agent to regenerate a new summary and view the previous summary with timestamps.
+
+## Integrations
+
+### Enhanced Genesys Middleware to Support Base64 Encoded Value
+
+Genesys Middleware has been enhanced to support Base64-encoded values when passing the *x_passthru_metadata* parameter to Agent AI. This enhancement resolves the issues with SSO token decryption.
+
+### Enhanced Salesforce Package includes Language Parameter
+
+The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more](https://docs.kore.ai/xo/agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti/#set-up-agentassist-configuration){:target="_blank"}.
+
+### Multi-bot Support for Agent AI Integration with ServiceNow
+
+Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations.
+
+<hr>
+
 ## v11.9.1 January 25, 2025
 
 <u>Patch Release</u>
