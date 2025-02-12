@@ -78,11 +78,11 @@ For instance, if you want to replace the manual effort of summarizing customer c
     <img src="../images/run_prompt.png" alt="Run a prompt" title="Run a prompt" style="border: 1px solid gray; zoom:80%;">
 
 
-*Additional options*: After running the prompt, the following options are available:
+After running the prompt, the following additional options are available:
 
-* **Modify Settings**: To update your prompt or configurations, click the **‘Properties’** option.
-* **Regenerate Data**: To refresh the output based on a new prompt or updated data, click **‘Regenerate’**.
-* **Delete Output**: To remove an output column, click **‘Delete’**. Ensure no evaluators are dependent on this column before deleting to avoid errors.
+* To modify your prompt or configurations, click the **Properties**.
+* To refresh the output based on a new prompt or updated data, click **Regenerate**.
+* To remove an output column, click **Delete**. Before deleting, ensure that no evaluators are dependent on this column to avoid any errors.
 
 
 

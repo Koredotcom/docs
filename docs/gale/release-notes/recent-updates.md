@@ -2,6 +2,34 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent GALE releases.
 
+## v1.0.9 February 10, 2025
+
+<u> Minor Release </u>
+
+This update includes new features and feature enhancements summarized below.
+
+**New Features**
+
+* Added JSON Input and Output Types in Agent/Tool: Users can now pass and generate JSON data as input and output parameters. This ensures flexible data handling and runtime validation, with error messages for inconsistencies.
+* Added Enum Input Type in Agent/Tool: Users can now pass enumerated values as input parameters, ensuring only predefined values are accepted, with validation and error messages for invalid inputs.
+* Added Image-to-Text Support (OCR): GALE agents can now process images using external models like OpenAI (GPT-4, GPT-4-turbo) and Anthropic (Claude Sonnet Vision), allowing users to upload a single image for text generation. The new ‘Image to Text’ node supports image URLs or binary, base64-encoded images with model-specific input formats and temporary storage during the agent run.
+* Added Source Column on Monitoring Page: A new 'Source' column on the monitoring page shows whether a tool is run via an Agentic app (displaying the app name) or called through an API endpoint (showing the API key).
+* Added Public File Upload API: Users can now upload files via an API, receiving a unique file URL and file ID in response for use in multimodal nodes and managing file availability across the application.
+* AWQ-Marlin Support in GALE: AWQ-Marlin is now the default for models using AWQ with vLLM, providing improved throughput while maintaining accuracy. This update supports models in Prompt studio, model endpoints, and agents without requiring any UI changes.
+* Distributed Traceability for Agents and Models: Added support for distributed traceability across agents and models. Each component now generates and maintains its own x-trace-id for operations while supporting parent_trace_id for tracking parent-child relationships between component interactions.
+
+**Feature Enhancements**
+
+* Debug Log UI Enhancement for Tool Calls: The debug log UI has been improved by grouping GEN AI requests/responses under ‘Model’ calls and consolidating tool executions in the ‘Tools’ section. It also clearly demarcates sequential and parallel calls.
+* Evaluation Studio:
+    * Running a Prompt: Users can now generate data by running a prompt in Evaluation studio, allowing for dynamic data creation based on the given input.
+    * Evaluator Snapshot and Insights: Users can now view a quick snapshot of insights for each evaluator, including pass rates and visualizations - line charts for continuous scoring and stacked columns for Boolean evaluators.
+    * Stopping an Evaluation: Users can now stop an ongoing evaluation at the overall, column, or cell level.
+    * Importing Production Data: Users can now import production data based on the selected model through traces and filter the data further by sources such as agents, prompt studio, or model Inference.
+
+
+<hr>
+
 ## v1.0.8 January 10, 2025
 
 <u> Minor Release </u>
