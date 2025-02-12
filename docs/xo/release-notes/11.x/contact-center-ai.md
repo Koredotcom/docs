@@ -47,7 +47,7 @@ The `agentUtils.setQueue` function is enhanced with queue identification capabil
 
 ### API
 
-#### **Fetch Real-Time Agent Status Distribution
+#### Fetch Real-Time Agent Status Distribution
 
 Introduced a new API endpoint to fetch real-time agent status distribution. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/check-agent-availability-status.md)
 

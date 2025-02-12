@@ -63,7 +63,7 @@ Metrics tracked
 
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#usage-trends)
 
-### Kore Voice Gateway
+### Kore Voice Gateway (v0.9.3-rc4)
 
 #### Audit Log for 'SIP Trunk Configuration' Changes and Proper Failure Reasons
 
