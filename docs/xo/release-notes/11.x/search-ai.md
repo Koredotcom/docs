@@ -13,6 +13,7 @@ The Custom LLM feature now supports Vector Generation in Search AI, allowing use
 ### Custom Extraction (Beta)
 
 The new Custom Extraction feature in Search AI enables a tailored approach to extracting content from sources. It sends ingested content to a third-party service, which processes and returns the extracted data in a structured chunk format. This enhances flexibility in handling diverse content extraction needs and ensures improved data retrieval and indexing within Search AI.
+
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#custom-extractionbeta)
 
 ### Answer Insights
@@ -25,9 +26,10 @@ Key features
 * Search logs by answer and channel.
 * Filter logs based on channel
 * A detailed view of each answer, including query overview, answer debug information, and LLM request-response details (if available).
+
 [Learn more :octicons-arrow-right-24:](./../../analytics/searchai/answer-insights.md)
 
-## Search Results and Facets
+### Search Results and Facets
 
 The new Search Results feature, along with faceted search capabilities, allows retrieving and displaying multiple search results ranked by relevance for each query. 
 
@@ -36,16 +38,19 @@ Key changes
 * Search Results now use the same pipeline as Answers for improved accuracy and consistency.
 * Search Results Configuration - Enable/disable the feature and set the number of search results to display.
 * Faceted search offers default filters, customizable filter creation, and static and dynamic filter types.
+
 [Learn more :octicons-arrow-right-24:](./../../searchai/search-results.md)
 
 ### Introducing Connector Ingestion Logs for Greater Visibility
 
 Search AI now provides Connector Ingestion Logs, providing file-level status information (successful, failed, or skipped) and pop-ups with error details. Users can now easily identify and troubleshoot issues, understand the actual content available, and re-sync connectors to ensure up-to-date content. The update also improves tracking capabilities and record document sizes in Search AI. 
+
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
 
 ### New Connector Experience: Discover and Configure with Ease
 
 The revamped connector experience makes it easier to discover and configure integrations. The new Configured and All Connectors tabs provide a more informative and intuitive interface, with improved search functionality for quick access to connector configuration. These enhancements streamline the process of connecting data sources and leveraging the unified search capabilities.
+
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
 
 <hr>
