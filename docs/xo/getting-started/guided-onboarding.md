@@ -6,7 +6,7 @@ After signing up, users are guided through the onboarding process as follows:
     * Build an AI Chatbot
     * Setup a Contact Center  
 
- <img src="../images/accplatform(19).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/accplatform(19).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the relevant option that best applies to you and click **Start building AI chatbot**.
 <img src="../images/accplatform(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
