@@ -47,14 +47,15 @@ Currently, SearchAI supports the following grant types:
     For this type of authorization, provide the **client credentials** as well as **user credentials** with access to the required resources. 
 
 ## Managing Connectors
+The Connectors are available under the Content Section. There are two tabs that list the configured connectors and the list of all supported connectors. On the UI, supported connectors are organized by the application type for easy navigation. Additionally, configured connectors are marked with a green indicator.
+![Connector Home](images/home.png "connector home")
+
 
 
 ### Adding a content source using Connector
 
-To configure a new connector, go to the **Connectors** page under **Content**. For a new connector, click on the **+Connect** button.
-![Connector Home](../images/connectors/connector-home.png "connector home")
+To set up a new connector, choose it from the list of supported connectors and enter the configuration details. For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
 
-The following page shows the list of available connectors. The connectors are categorized according to the type of application. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
 
 ### Enabling RACL 
 
@@ -89,6 +90,25 @@ To set up a recurring sync schedule, provide the synchronization frequency along
 To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
 
 ![Disable Sync](../images/connectors/disable-sync.PNG "Disable Sync")
+
+**Stopping the Synchronization**
+
+* If you manually stop synchronization using the **Stop Sync** option while the sync job is actively running, it will halt immediately. Any content that has already been ingested at the time of stopping will be available for search.
+* If the sync job is queued when you select Stop Sync, the synchronization will be canceled and will not proceed.
+
+**Status of Ingested Content**
+
+Upon initiating the synchronization operation, the ingestion of the content from the connector begins. You can monitor the progress of this operation by navigating to the **Jobs** tab. The ingested content is displayed under the **Content** tab, which features three separate tabs based on the ingestion status of the content.
+
+* Successful: This section lists content that has been successfully ingested.
+* Failed: Here, you will find content that failed to ingest.
+* Skipped: This section includes content that was bypassed during the ingestion process.
+
+![Ingestion Logs](images/connectors/ingestion-logs/tabs.png "Ingestion Logs")
+
+For both **failed** and **skipped** content, the application provides detailed logs that can be useful for troubleshooting. These logs include potential reasons for the failure and actionable steps to facilitate successful ingestion in the future. By reviewing these logs, users can gain insights into the issues encountered and take informed actions to resolve them, ensuring a smoother ingestion process moving forward.
+![Ingestion Logs](images/connectors/ingestion-logs/errors.png "Error Messages")
+
 
 ### Enabling/Disabling Connectors
 

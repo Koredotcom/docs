@@ -14,7 +14,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 #### Analytics for DialogGPT
 
 DialogGPT's comprehensive analytics provide detailed tracking of user interactions, intent detection, and conversation outcomes, ensuring data-driven insights for continuous improvement. By leveraging analytics, the platform users can accurately evaluate DialogGPT's effectiveness and enhance conversational experiences.
-[Learn more :octicons-arrow-right-24:]()
+[Learn more :octicons-arrow-right-24:](../../analytics/automation/nlp-insights.md#dialoggpt-nlp-insights-analysis)
 
 
 ### Export/Import

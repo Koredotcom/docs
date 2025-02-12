@@ -91,7 +91,7 @@ On the **Connections** tab, you can set the transition properties to determine t
 
 ## About Responses
 
-All the responses collected are stored in context variables. For example, `{{context.GenAIPrompt.NodeName.properties}}`. You can define transitions using the context variables.
+All the responses collected are stored in context variables. For example, `{{context.GenerativeAINode.PromptNodeName.text}}`. You can define transitions using the context variables.
 
 The responses are captured in a specific format, as shown below.
 
