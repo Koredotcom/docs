@@ -311,7 +311,7 @@ Click the **Copy All** button to copy all the identifier details (from the detai
 * Start Time
 * End time
 * Caller ID
-* session ID
+* Session ID
 * Channel User ID
 * Call Conversation ID
 * Agent Conversation ID
