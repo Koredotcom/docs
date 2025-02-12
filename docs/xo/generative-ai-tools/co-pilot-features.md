@@ -147,6 +147,7 @@ The following table displays the features and the supported models.
     |:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|❌|✅|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|❌|✅|✅|
+    |Recentaly Released Pre-built LLM|✅|✅|❌|✅|✅|
     |Custom LLM|✅|✅|✅|✅|✅|
     |Amazon Bedrock|✅|✅|❌|✅|✅|
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|

@@ -30,9 +30,9 @@ Steps to configure a pre-built LLM:
 4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
 5. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -66,8 +66,8 @@ Steps to configure new language model Integration:
 1. Go to **Generative AI Tools > Models Library**.
 2. Click **Configure Now** for the Azure Open AI or Open AI or Anthropic. For example, Azure OpenAI.
 3. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. 
-4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model** Description,** and **Deployment ID**.  
-<img src="../images/rrazureaddmodel.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
+4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, and **Deployment ID**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.
+<img src="../images/rrazureadd.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
 
 5. Click **Add Model**. The current model is saved with a custom tag in the available models list. Toggle on the **model**. If you want to add more models, perform step 4.  
 <img src="../images/rrazureaddedmodel.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
@@ -75,9 +75,9 @@ Steps to configure new language model Integration:
 6. Read the **Policy Guidelines**, select the checkbox, and click **Save**. 
 7. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -114,16 +114,17 @@ Steps to Integrate a Custom LLM:
 
     !!! note
 
-         OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration.  
+        OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration.  
+
 5. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 6. On the request prompt pop-up, enter the test payload and click **Save** to check the connection. You can also save the test payload using the check box.  
-<img src="../images/custompayload.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/custompayload.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
 7. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Save**.  
-    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/customcallfail.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -205,20 +206,19 @@ Steps to configure a pre-built LLM using Dynamic Variables:
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Choose the LLM you want to configure. For example, Azure OpenAI.
 3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. Toggle the required **model** and enter the variable for **Deployment ID**.  
-<img src="../images/azurellmdv1.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/azurellmdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
-<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 6. The Connection Status pop-up appears.
     1. If a connection is successful, click **Save**.  
-    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     2. If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
             You can save the configuration with an unsuccessful connection.
-
 
 7. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
@@ -237,21 +237,27 @@ Steps to configure a recently released pre-built LLM using Dynamic Variables:
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Choose the LLM you want to configure. For example, Azure OpenAI.
 3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. 
-4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description,** and variable for **Deployment ID**.  
+4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, and variable for **Deployment ID**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.  
+<img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
 5. Click **Add Model**. The current model is saved to the available models list with a custom tag. Toggle on the **model**. If you want to add more models, perform step 4.  
-<img src="../images/rrazureadd.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/azuredynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
 6. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+
 7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
-<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
 8. The Connection Status pop-up appears.
     1. If a connection is successful, click **Save**.  
-    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     2. If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
             You can save the configuration with an unsuccessful connection.
+            
 9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
@@ -267,16 +273,16 @@ Steps to integrate a Custom LLM using Dynamic Variables:
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Click **Custom LLM**.
 3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for the **Endpoint** and **Headers**.  
-<img src="../images/customdynamic.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/customdynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 
 5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
-<img src="../images/customvariable.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 6. The Testing Connection pop-up appears.
     1. If a connection is successful, click **Save**.  
-    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
     2. If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/customcallfail.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
@@ -300,7 +306,7 @@ Steps to integrate an Amazon Bedrock LLM using Dynamic Variables:
 <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.  
-<img src="../images/abr5.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/abr5.png" alt="Amazon Bedrock" title=" " style="border: 1px solid gray; zoom:70%;">
 6. On a successful connection, the save option is enabled. 
 7. Click **Save**. The configuration successful message is displayed.
 8. The next step is to add[ Prompts](prompts-library.md).
@@ -353,7 +359,7 @@ When you reset/delete the integration, the system does the following:
 
     This change impacts only the in-development copy of the VA. The changes will apply to the published version when you later publish the VA with NLP configurations.
 
-=== "Reset Configured Pre-build LLM Integration"
+=== "Reset Pre-build LLM Integration"
 
 
 
@@ -369,7 +375,7 @@ When you reset/delete the integration, the system does the following:
 
     4. The success message is displayed.
 
-=== "Delete Configured Custom LLM Integration"
+=== "Delete Custom LLM Integration"
 
     Steps to delete an integration:
 
@@ -384,7 +390,7 @@ When you reset/delete the integration, the system does the following:
 
     4. The success message is displayed.
 
-=== "Reset Configured Kore.ai XO GPT Integration"
+=== "Reset Kore.ai XO GPT Integration"
 
     Steps to reset an integration:
 

@@ -2,13 +2,14 @@
 
 # LLM Integration
 
-You must configure the integration with a pre-built or custom LLM or Kore.ai XO GPT Module to use LLM and Generative AI features.
+To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM or Kore.ai XO GPT Module.
 
-Review the model and feature support matrix for the [Co-Pilot features](co-pilot-features.md#model-and-feature-support-matrix) and [Dynamic Conversation features](./dynamic-conversations-features.md#model-and-feature-support-matrix).
+Review the model and feature support matrix for the [Co-Pilot features](./co-pilot-features.md#model-and-supported-features) and [Dynamic Conversation features](./dynamic-conversations-features.md#model-and-supported-features).
+
 
 ## Pre-built LLM Integration
 
-The XO Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompts and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the XO platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
+The XO Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the XO platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
 
 ### Configure Pre-built LLM Integration
@@ -16,38 +17,74 @@ The XO Platform offers seamless integration with leading AI services like Azure 
 Steps to configure a pre-built LLM:
 
 
-
-1. Go to **Generative AI Tools** > **Models Library**.
+1. Go to **Generative AI Tools** > **Models Library**.  
 <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
+2. Click **Configure Now** for Azure Open AI, Open AI, or Anthropic. If you have already configured a model, click **+ New Model** and select the LLM.
+3. On the **Authorization** tab:
+    * For **Azure OpenAI**, enter details like the **API Key** and **User Sub Domain**. In the models section, toggle on the required **model** and enter **Deployment ID**.  
+    <img src="../images/configazure.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
+    * For **OpenAI** and **Anthropic**, enter the **API Key**.  
+    <img src="../images/configopenai.png" alt="OpenAI" title="" style="border: 1px solid gray; zoom:70%;">
+
+4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
+5. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Save**.  
+    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+    !!! note
+
+        You can save the configuration with an unsuccessful connection.
 
 
-2. Choose the LLM you want to configure.
-    1. Steps to configure Azure OpenAI:
-        1. Click **Configure Now** for Azure OpenAI.
-            <img src="../images/azure11.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
-        2. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter **Deployment ID**.
-        3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
-    2. Steps to configure OpenAI:
-        1. Click **Configure Now** for OpenAI.
-            <img src="../images/llm-integration(5).png" alt="OpenAI" title="" style="border: 1px solid gray; zoom:70%;">
-        2. On the **Authorization** tab, enter the **API Key**.
-        3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
-    3. Steps to configure Anthropic:
-        1. Click **Configure Now** for Anthropic. 
-            ![alt_text](images/llm-integration(1).png  )
-        2. On the **Authorization** tab, enter the **API Key**.
-        3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
+6. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
-3. The configured model is listed in the Models Library section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported.
-<img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
-   
 
-4. If you want to configure another model, click **+ New Model** and select the model. 
-<img src="../images/new-model.png" alt="+ New  Model" title="+ New Model" style="border: 1px solid gray; zoom:70%;">
-  
 
-5. The next step is to enable [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+## Recently Released Pre-built LLM Integration
+
+The XO Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models do not include a pre-built prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
+
+
+### Key Benefits
+
+
+
+* **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
+* **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
+* **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.
+
+
+### Configure Recently Released Pre-built LLM Integration
+
+Steps to configure new language model Integration:
+
+
+
+1. Go to **Generative AI Tools > Models Library**.
+2. Click **Configure Now** for the Azure Open AI or Open AI or Anthropic. For example, Azure OpenAI.
+3. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. 
+4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, and **Deployment ID**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.
+<img src="../images/rrazureadd.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
+
+5. Click **Add Model**. The current model is saved with a custom tag in the available models list. Toggle on the **model**. If you want to add more models, perform step 4.  
+<img src="../images/rrazureaddedmodel.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
+
+6. Read the **Policy Guidelines**, select the checkbox, and click **Save**. 
+7. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Save**.  
+    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+    !!! note
+
+        You can save the configuration with an unsuccessful connection.
+
+8. The configured model is listed in the Models Library. The next step is to add[ Prompts](./prompts-library.md). 
+
 
 
 ## Custom LLM Integration Framework
@@ -63,57 +100,41 @@ The XO Platform now enables enterprises to power up their virtual assistants wit
 
 You can integrate a custom LLM and build your Prompts and Requests Library for specific features.
 
-Steps to integrate a Custom LLM:
+Steps to Integrate a Custom LLM:
 
 
 
 1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Custom LLM**. 
+2. Click **Custom LLM**. If you have already configured a model, click **+ New Model** and select the Custom LLM.
+3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**.  
+<img src="../images/customint.png" alt="Azure OpenAI" title="Azure OpenAI" style="border: 1px solid gray; zoom:70%;"> 
 
-
-    <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
-
-    If you have already configured a model, click **+ New Model** > **Custom Integration**. 
-
-
-
-    <img src="../images/custom-new.png" alt="+ New  Model" title="+ New Model" style="border: 1px solid gray; zoom:70%;">
-
-3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**. 
-
-
-    ![alt_text](images/llm-integration(8).png  )
-
-4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile  to use for this request. For more information, see the[ Bot Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article. 
+4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile to use for this request. For more information, see the[ Bot Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article. 
     ![alt_text](images/llm-integration(15).png  )
 
     !!! note
 
-         OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration. 
+        OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration.  
 
-5. Click **Test**. The Request Body to test LLM Connection pop-up is displayed. 
+5. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+6. On the request prompt pop-up, enter the test payload and click **Save** to check the connection. You can also save the test payload using the check box.  
+<img src="../images/custompayload.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
+7. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Save**.  
+    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
+    !!! note
 
+        You can save the configuration with an unsuccessful connection.
 
-
-    ![alt_text](images/llm-integration(2).png  )
-
-6. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message. 
-
-    ![alt_text](images/llm-integration(7).png  )
-
-7. Please **Read Policy Guidelines**, select the check box, and then click **Save**.
-8. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported.
-<img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
-
-    
-
-9. The next step is to add[ Prompts](prompts-library.md).
-
+8. The configured model is listed in the Models Library. The next step is to add[ Prompts](./prompts-library.md).
 
 
 ## Amazon Bedrock LLM Integration Framework
+
 
 XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across Co-Pilot and Dynamic Conversations features. While Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
@@ -151,15 +172,12 @@ Steps to integrate an Amazon Bedrock:
 
 
 
-
-
-
-
 ## LLM Integration using Dynamic Variables
 
-The Platform now enables seamless configuration of both pre-built and custom LLMs by allowing you to use content, context, and environment variables, including the secured ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
+The platform now enables seamless configuration of custom and pre-built LLMs, including newly launched ones, by allowing you to use content, context, and environment variables, including secure ones. Secure Variables, particularly for environment settings, function just as smoothly as the current system ensures.
 
-Before configuring the LLM, ensure all necessary variables are set up. For more details, see [Bot Variables](../app-settings/variables/using-bot-variables.md).
+Ensure all necessary variables are set up before configuring the LLM. For more details, see [Bot Variables](../app-settings/variables/using-bot-variables.md).
+
 
 !!! note
 
@@ -168,7 +186,7 @@ Before configuring the LLM, ensure all necessary variables are set up. For more 
 
 ### Key Advantages
 
-**Avoid Misuse of API Keys**: By utilizing secure environment variables for API keys, the system minimizes the risk of unauthorized access. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
+**Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
 
 **Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
 
@@ -185,23 +203,58 @@ Before configuring the LLM, ensure all necessary variables are set up. For more 
 Steps to configure a pre-built LLM using Dynamic Variables:
 
 
+1. Go to **Generative AI Tools** > **Models Library**.
+2. Choose the LLM you want to configure. For example, Azure OpenAI.
+3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. Toggle the required **model** and enter the variable for **Deployment ID**.  
+<img src="../images/azurellmdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
+<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+6. The Connection Status pop-up appears.
+    1. If a connection is successful, click **Save**.  
+    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    2. If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+        !!! note
+
+            You can save the configuration with an unsuccessful connection.
+
+7. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+
+
+### Configure Recently Released Pre-built LLM Integration using Dynamic Variables
+
+!!! note
+
+    * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
+    * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
+
+Steps to configure a recently released pre-built LLM using Dynamic Variables:
+
+
 
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Choose the LLM you want to configure. For example, Azure OpenAI.
-3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter the variable for **Deployment ID**.
+3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. 
+4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, and variable for **Deployment ID**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.  
+<img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+5. Click **Add Model**. The current model is saved to the available models list with a custom tag. Toggle on the **model**. If you want to add more models, perform step 4.  
+<img src="../images/azuredynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+6. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
+<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+8. The Connection Status pop-up appears.
+    1. If a connection is successful, click **Save**.  
+    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    2. If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-    <img src="../images/azurellmdv.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+        !!! note
 
+            You can save the configuration with an unsuccessful connection.
 
-
-4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-5. On the **Testing** tab, enter the sample values for the API Key, User Sub Domain, and Model key. 
-
-
-    <img src="../images/llmsampletestingdv.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
-
-
-6. Click **Save**. The configuration successful message is displayed.
+9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
 ### Configure Custom LLM Integration using Dynamic Variables
@@ -213,28 +266,29 @@ Steps to configure a pre-built LLM using Dynamic Variables:
 Steps to integrate a Custom LLM using Dynamic Variables:
 
 
-
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Click **Custom LLM**.
-3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for **Endpoint** and **Headers**. 
-
-
-    <img src="../images/dvcustomllm.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
-
+3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for the **Endpoint** and **Headers**.  
+<img src="../images/customdynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-5. On the Testing **tab**, enter the sample endpoint and header values. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message. 
 
-    <img src="../images/dvcustomllm1.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
+5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
+<img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+6. The Testing Connection pop-up appears.
+    1. If a connection is successful, click **Save**.  
+    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    2. If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
+    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
-6. On a successful connection, the save option is enabled. 
+        !!! note
+
+            You can save the configuration with an unsuccessful connection.
+
+7. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
 
 
-    <img src="../images/dvcustomllm2.png" alt="Dynamic Variables" title="Dynamic Variables" style="border: 1px solid gray; zoom:70%;">
 
-7. Click **Save**. The configuration successful message is displayed.
-
-
-### Configure Amazon Bedrock LLM Integration using Dynamic Variables
+### Configure Amazon Bedrock LLM Integration using Dynamic Variables 
 
 !!! note
 
@@ -248,11 +302,10 @@ Steps to integrate an Amazon Bedrock LLM using Dynamic Variables:
 <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
 4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
 5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.  
-<img src="../images/abr5.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/abr5.png" alt="Amazon Bedrock" title=" " style="border: 1px solid gray; zoom:70%;">
 6. On a successful connection, the save option is enabled. 
 7. Click **Save**. The configuration successful message is displayed.
 8. The next step is to add[ Prompts](prompts-library.md).
-
 
 
 
@@ -262,16 +315,12 @@ Steps to integrate an Amazon Bedrock LLM using Dynamic Variables:
 The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation and Answer Generation.
 
 
-
-
-
 ### Enable Kore.ai XO GPT Integration
 Steps to enable Kore.ai XO GPT Models.
 
 1. Go to **Generative AI Tools** > **Models Library**.
 
-2. Click **Enable Now** for Kore.ai XO GPT.
-<img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+2. Click **Enable Now** for Kore.ai XO GPT.  <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
     If you have already configured a model, click **+ New Model > Kore.ai XO GPT**.
     <img src="../images/xogpt2.png" alt="XO GPT" title="XO GPT" style="border: 1px solid gray; zoom:70%;">
@@ -287,7 +336,7 @@ Steps to enable Kore.ai XO GPT Models.
 <img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
 
 
-6. You can now use these models in [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+6. You can now use these models in [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
 ## Reset/Delete the Configured LLM Integration
@@ -306,69 +355,51 @@ When you reset/delete the integration, the system does the following:
 
     This change impacts only the in-development copy of the VA. The changes will apply to the published version when you later publish the VA with NLP configurations.
 
-
-### Reset Configured Pre-build LLM Integration
-
-Steps to reset an integration:
+=== "Reset Pre-build LLM Integration"
 
 
 
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click three dots (more icons) and then click the **Reset Configuration** for the model you want to reset. 
-<img src="../images/reset-config.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
+    Steps to reset an integration:
+
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Click three dots (more icons) and then click the **Reset Configuration** for the model you want to reset. 
+    <img src="../images/reset-config.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
+
+    3. Click **Reset** in the confirmation dialog.  
+    <img src="../images/llm-integration(6).png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
+
+
+    4. The success message is displayed.
+
+=== "Delete Custom LLM Integration"
+
+    Steps to delete an integration:
+
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Click three dots (more icons) and then click **Delete** for the integration you want to delete.
+    <img src="../images/reset-custom.png" alt="reset-custom" title="Delete Custom Model" style="border: 1px solid gray; zoom:70%;">
+
+    3. Click **Delete** in the confirmation dialog.  
+    <img src="../images/llm-integration(16).png" alt="Delete Configuration" title="Delete Configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 
+    4. The success message is displayed.
 
+=== "Reset Kore.ai XO GPT Integration"
 
+    Steps to reset an integration:
 
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Click three dots (more icons) for Kore.ai XO GPT and then click the **Reset Configuration** for the integration you want to reset.
+    <img src="../images/reset-xo.png" alt="Reset XO GPT" title="Reset XO GPT" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Reset** in the confirmation dialog.  
-<img src="../images/llm-integration(6).png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
+    3. Click Reset in the confirmation dialog.  
+    <img src="../images/image7-6.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;">
 
-
-
-4. The success message is displayed.
-
-
-### Delete Configured Custom LLM Integration
-
-Steps to delete an integration:
-
-
-
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click three dots (more icons) and then click **Delete** for the integration you want to delete.
-<img src="../images/reset-custom.png" alt="reset-custom" title="Delete Custom Model" style="border: 1px solid gray; zoom:70%;">
-
-
-
-3. Click **Delete** in the confirmation dialog.  
-<img src="../images/llm-integration(16).png" alt="Delete Configuration" title="Delete Configuration" style="border: 1px solid gray; zoom:70%;">
-
-
-
-
-
-4. The success message is displayed.
-
-		
-
-
-
-### Reset Configured Kore.ai XO GPT Integration
-Steps to reset an integration:
-
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click three dots (more icons) for Kore.ai XO GPT and then click the **Reset Configuration** for the integration you want to reset.
-<img src="../images/reset-xo.png" alt="Reset XO GPT" title="Reset XO GPT" style="border: 1px solid gray; zoom:70%;">
+    4. The success message is displayed.
+<hr>
 
 
 
 
-3. Click Reset in the confirmation dialog.  
-<img src="../images/image7-6.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;">
-
-
-
-4. The success message is displayed.
