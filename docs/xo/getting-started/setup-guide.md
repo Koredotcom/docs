@@ -3,7 +3,7 @@
 The **Setup Guide** facilitates faster app building for platform users. It offers a guided, step-by-step process that provides a comprehensive overview of all XO features.  
  <img src="../images/setup-guide.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-## The Left Navigation Menu
+**The Left Navigation Menu**
 
 The Left Navigation Menu available on the setup guide provides access to the following options:
 
@@ -44,7 +44,7 @@ The Left Navigation Menu available on the setup guide provides access to the fol
 4. Explore 
 	Analytics: Gain valuable insights into your AI chatbot’s performance and interactions through comprehensive analytics. The Kore.ai XO Platform offers various dashboards to track real-time data and assess how your virtual assistant is performing over time. [Learn more](../administration/analytics.md).
 
-## Related Links
+**Related Links**
 
 [Quick Start Guide](../getting-started/quick-start-guide.md)  
 [Guided Onboarding](../getting-started/guided-onboarding.md)
