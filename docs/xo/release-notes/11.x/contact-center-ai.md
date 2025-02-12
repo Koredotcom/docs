@@ -2,6 +2,67 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.10.0 February 12, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Console
+
+#### Agent AI Localization
+
+Agent AI now supports English, French, Italian, Spanish, Japanese, Korean, and Chinese localization.
+
+### Supervisor Console
+
+#### Monitor and Intervene in Bot-led Interactions
+
+This update includes new permissions, filtering options, and intervention capabilities to help supervisors monitor and manage bot-led conversations effectively.
+
+Key benefits
+
+* Greater visibility into bot-handled conversations.
+* Improved control over conversation routing.
+* Enhanced ability to maintain conversation quality.
+* Flexible filtering options for better workflow management.
+
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#manually-assign-a-bot-led-conversation-to-an-agent-or-queue)
+
+#### Quick Agent Information Pop-up on Monitor Tab
+
+Hovering over an agent’s name in the agents' tab shows key details about the agent, reducing the need to navigate multiple screens. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#agents)
+
+### Configuration
+
+### Support for Queue Name in agentUtils.setQueue
+
+The `agentUtils.setQueue` function is enhanced with queue identification capabilities and improved error handling.
+
+* The function now accepts Queue IDs and Queue Names.
+* Direct ‘Queue ID’ resolution without additional API calls.
+* Added validation for queue names in numeric format.
+* A new error message for unsupported queue name formats.  
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-queue)
+
+### API
+
+#### Fetch Real-Time Agent Status Distribution
+
+Introduced a new API endpoint to fetch real-time agent status distribution. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/check-agent-availability-status.md)
+
+#### Fetch Agent ID Using Custom ID (Extension Number)
+
+Custom IDs can effectively retrieve agent IDs if mapped one-to-one. However, in scenarios where the organization has multiple agent IDs for the same custom ID, it will return an array of agent IDs. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-the-agent-id-using-custom-id.md)
+
+### Analytics
+
+#### Interaction Details Enhancement
+
+The 'Copy All' functionality in the Interaction Details tab now includes additional information fields: Timezone and Caller and Callee Numbers. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+<hr>
+
 ## v11.9.1 January 25, 2025
 
 <u>Patch Release</u>

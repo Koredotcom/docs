@@ -63,6 +63,21 @@ Metrics tracked
 
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#usage-trends)
 
+### Kore Voice Gateway (v0.9.3-rc4)
+
+#### Audit Log for 'SIP Trunk Configuration' Changes and Proper Failure Reasons
+
+The audit logs now record the following information when the SIP trunk configuration is updated.
+
+* Updated Time Stamp along with Time Zone
+* Updated by
+
+Whenever a SIP Trunk or Phone Number configuration fails—whether during the setup of a new one or deletion of an existing one—the system displays the relevant failure reasons.
+
+#### Mask PII Data in Debug Logs
+
+The user input's Personal Identifiable Information (PII) data will be masked in the debug logs.
+
 <hr>
 
 ## v11.9.1 January 25, 2025
