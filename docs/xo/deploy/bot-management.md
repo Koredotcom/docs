@@ -227,7 +227,7 @@ You can export a VA’s definition and configuration using the Export option.
 When you export an assistant, it downloads a zipped file with the following parameters:
 
 * **appDefinition.json**: Includes metadata, tasks, VA and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – VA settings, variables, IVR settings- while exporting the assistant.
-* **config.json**: Includes App settings, APP variables, and IVR settings.
+* **config.json**: Includes App settings, App variables, and IVR settings.
 * **Icon.png**: Includes the assistant icon.
 * **&lt;_Custom ScriptFile Name_.js> (if available)**: Includes a script file with JavaScript functions. When you upload this file, you can access the functions in the file from anywhere in the assistant.
 
@@ -373,12 +373,39 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 When you export a VA, the following components get exported, depending on your Latest or Published Mode selection:
 
 <table>
-  <tr>
-   <td colspan="2" ><strong>Tasks</strong>
+<tr>
+   <td colspan="2" ><strong>Flows</strong>
    </td>
   </tr>
   <tr>
-   <td>Tasks Only
+   <td>Start Flows
+   </td>
+   <td>
+<ul>
+
+<li>System-created conversational start flow for calls and chat
+</li>
+</ul>
+   </td>   
+  </tr>
+  <tr>
+   <td>Exis Flows
+   </td>
+   <td>
+<ul>
+
+<li>System Created Flow to handle No Agents Available in Voice and Chat
+<li>System-created flow to handle Out Of Operational Hours in Voice and Chat
+</li>
+</ul>
+   </td>  
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Automation Tasks</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Alert Tasks, Dialog Task, Digital Forms, FAQs,  Small Talks
    </td>
    <td>
 <ul>
@@ -392,18 +419,13 @@ When you export a VA, the following components get exported, depending on your L
 </ul>
    </td>
   </tr>
+  
   <tr>
-   <td>Knowledge Graph
-   </td>
-   <td>Knowledge Graph definition along with the associated synonyms and classes.
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>NLP Data</strong>
+   <td colspan="2" ><strong>Natural Language</strong>
    </td>
   </tr>
   <tr>
-   <td>NLP Settings
+   <td>NL Model
    </td>
    <td>The Advanced NLP Settings and Ignore words and Field memory. The Advanced NLP Settings ( Natural Language > Advanced Settings) include the following:
 <ul>
@@ -446,14 +468,14 @@ When you export a VA, the following components get exported, depending on your L
    </td>
   </tr>
   <tr>
-   <td>Bot Settings
+   <td>App Settings
    </td>
    <td>The following information from the Bot Settings page:
 <ul>
 
 <li>General Settings
 
-<li>Bot name, description, and VA synonyms for each enabled language
+<li>App name, description, and VA synonyms for each enabled language
 
 <li>Language selection time frame (Bot Settings > Language Management)
 
@@ -473,15 +495,15 @@ When you export a VA, the following components get exported, depending on your L
    </td>
   </tr>
   <tr>
-   <td>Bot Variables
+   <td>App Variables
    </td>
    <td>All the global and content variables present in the assistant, along with their values.
    </td>
   </tr>
   <tr>
-   <td>IVR settings
+   <td>Voice Call Properties
    </td>
-   <td>All the IVR settings for the assistant (Bot Settings > IVR settings).
+   <td> Configurations of all voice channels.
    </td>
   </tr>
   <tr>
@@ -497,15 +519,44 @@ When you export a VA, the following components get exported, depending on your L
 
 <li>Feature Mappings
 
-<li>Safeguards
+<li>Guardrails
 
 <li>DialogGPT (Conversation Types and Configurations)
 
 </li>
 </ul>
+</td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Custom Dashboard</strong>
    </td>
   </tr>
 
+ <tr>
+   <td colspan="2" ><strong>Agent AI Dashboard</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Agent Coaching
+   </td>
+   <td>
+<ul>
+<li>Agent coaching rules and their configurations
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Agent Playbook
+
+   </td>
+   <td>
+<ul>
+<li>Checklists and their configurations
+</li>
+</ul>
+   </td>
+  </tr>
 </table>
 
 ## Deleting an Assistant
