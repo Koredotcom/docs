@@ -1,19 +1,19 @@
-# Agentic Apps
+# Standard Agentic Apps
 
-Agentic applications enable the sequential execution of multiple AI agents to accomplish and automate complex tasks efficiently using AI agents. These applications streamline workflows by automating interactions and decision-making processes based on predefined logic and user input.
+Standard Agentic applications enable the sequential execution of multiple AI agents to accomplish and automate complex tasks efficiently using AI agents. These applications streamline workflows by automating interactions and decision-making processes based on predefined logic and user input.
 
-## Creating Agentic App
+## Creating Standard Agentic app
 
-Follow these steps to create a new Agentic App:
+Follow these steps to create a new Standard Agentic app:
 
 1. Access the Admin Console
-    * Navigate to **AI Agents** in the left pane.
-    * Select **Agentic Apps** to view the list of existing applications.
+    * Navigate to **Agents and Apps** in the left pane.
+    * Select **Standard Apps** to view the list of existing applications.
     <img src="../images/Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 2. Initiate Agent Creation
-    * Click **+Create Agent** on the Agentic App page.
-    * The **Prompt Agentic App Creation Wizard** guides you through the setup process.
+    * Click **+Create Agent** on the Standard Agentic app page.
+    * The **Prompt Standard App Creation Wizard** guides you through the setup process.
     <img src="../images/Agentic_App_2.png" alt="Admin Creation" title="Admin Creation" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 1: Details and Purpose
@@ -56,7 +56,7 @@ The **Preview** section displays sample queries to test the app’s behavior.
 
 Publish your app and define access permissions and enablement.
 
-To deploy the Agentic App, complete the following steps:
+To deploy the Standard Agentic app, complete the following steps:
 
 **Specify publishing details**:
 
@@ -73,16 +73,16 @@ To deploy the Agentic App, complete the following steps:
 
 **Finalize deployment**:
 
-* Click **Publish** to make the agent available. The app appears in the **Agentic App List** on the Admin Console page.
+* Click **Publish** to make the agent available. The app appears in the **Standard App List** on the Admin Console page.
 
-## Modifying an Agentic App
+## Modifying an Standard Agentic app
 
 Make changes to your app's configuration and settings as needed.
 
-To edit an existing Agentic App:
+To edit an existing Standard Agentic app:
 
-1. Navigate to the **Agentic App list** page and locate the app you wish to modify.
-<img src="../images/Agentic_App_9.png" alt="Modifying an Agentic App" title="Modifying an Agentic App" style="border: 1px solid gray; zoom:70%;">
+1. Navigate to the **Standard Agentic app list** page and locate the app you wish to modify.
+<img src="../images/Agentic_App_9.png" alt="Modifying an Standard Agentic app" title="Modifying an Standard Agentic app" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **three dots icon** next to the app’s name. A menu with the following options will appear:
     * **Edit**: Open and modify the app's details.
@@ -92,7 +92,7 @@ To edit an existing Agentic App:
 
 ## Agent Options
 
-Manage your app's deployment, data, and availability post-publication. Agent options are enabled after publishing your Agentic Application. You can perform the following actions on published apps:
+Manage your app's deployment, data, and availability post-publication. Agent options are enabled after publishing your Standard Agentic application. You can perform the following actions on published apps:
 
 * **Export Agent**: Download agent configuration and associated data.
 * **Delete Agent**: Permanently remove the application.

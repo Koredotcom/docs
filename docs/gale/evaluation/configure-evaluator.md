@@ -149,7 +149,7 @@ When adding a system evaluator, users can map the dataset columns to the evaluat
 
 Steps to add an evaluator:
 
-1. On the Evaluation Insights page, click the **+** button, and select the **Add evaluator** option.
+1. On the Evaluations page, click the **+** button, and select the **Add evaluator** option.
 
     <img src="../images/import_dataset_options.png" alt="Configure evaluator" title="Configure evaluator" style="border: 1px solid gray; zoom:80%;">
 
@@ -183,3 +183,12 @@ When setting up an AI evaluator, variable mapping is a crucial step. This is whe
 4. **Safety Evaluators**: For safety evaluators like Bias Detection or Toxicity, you may need to configure additional key-value pairs. These evaluators often provide binary (pass/fail) results, so map the relevant columns accordingly.
 
 By correctly mapping the variables, you ensure the evaluator receives the right data and produces accurate results.
+
+
+**Key Points:**
+
+* Evaluators are used to assess model performance by comparing its outputs against predefined criteria.
+
+* System evaluators are pre-built and cannot be modified, offering ready-to-use options for evaluating common aspects of model performance, such as quality and safety metrics.
+
+* Variable mapping is crucial when adding evaluators, as users must link the variables in the evaluator's prompt to the appropriate dataset columns to ensure accurate evaluation results.

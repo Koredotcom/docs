@@ -76,6 +76,7 @@ Steps to enable the Script Adherence Configuration:
     
             If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute. 
 
+
     * **Save**: Allows you to save the defined messages.
 
         At the agent account level, the agent can only check the following options defined by the supervisor or app owner or administrator in the Settings.

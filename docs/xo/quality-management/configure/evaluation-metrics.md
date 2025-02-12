@@ -53,7 +53,6 @@ The following table describes the Evaluation Metrics Measurement Types:
   <strong>Note</strong>: For **Dynamic**, you must configure at least one Trigger and one agent Answer utterance for the Adherence Type.
   
   For **Static**, you must configure at least one agent **Answer** utterance for **Adherence Type**.
-
 </td>
   </tr>
   <tr>
