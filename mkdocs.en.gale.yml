@@ -108,7 +108,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
@@ -197,6 +197,7 @@ nav:
     - Import Datasets: evaluation/import-dataset.md
     - Configure Evaluators: evaluation/configure-evaluator.md
     - Run Evaluations: evaluation/run-evaluation.md
+    - View Results: evaluation/view-evaluation-insight.md
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 

@@ -62,6 +62,7 @@ Steps to enable the Agent Score Card:
 1. Expand the **Quality AI** collapse icon to view the **Agent Score Card**.   
 <img src="../settings/images/sett-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
+
 2. Enable the **Agent Score Card** option.
 3. Click **Save** to save the settings.
 
@@ -89,7 +90,9 @@ Steps to Add Bookmarks:
 
 2. Enable the **Bookmarks** toggle option to add a new bookmark.
 3. Click the **Add Bookmark**. The following new **Bookmarks** row appears.  
+
 <img src="../settings/images/settings-new-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:100%;">
+
 
 4. Enter the **Bookmarks** name for the assigned interactions.
 5. Add **Color** for the newly added bookmarks.

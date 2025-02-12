@@ -114,7 +114,7 @@ markdown_extensions:
   - pymdownx.snippets
 
 copyright: |
-  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
+  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home: home.md
   - Platform:
@@ -422,13 +422,13 @@ nav:
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md
         - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md
       - Connectors: 
-        - Introduction: quality-management/connectors/connector-intro
-        - Amazon S3: quality-management/connectors/amazon-s3
+        - Introduction: quality-management/connectors/connector-intro.md
+        - Amazon S3: quality-management/connectors/amazon-s3.md
       - Analyze:
         - Dashboard:
-          - Dashboard Overview: quality-management/analyze/dashboard.md
+          - Supervisor Dashboard: quality-management/analyze/dashboard.md
           - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
@@ -475,7 +475,14 @@ nav:
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
     - Models Library:
       - LLM Integration: generative-ai-tools/models-library.md
-      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
+      - Kore.ai XO GPT Module: 
+        - Overview: generative-ai-tools/xo-gpt-module.md
+        - XO GPT Model Specifications:
+          - Model Building: generative-ai-tools/xogpt-model-specifications.md
+          - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
+          - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
+          - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
     - GenAI Features:

@@ -50,9 +50,12 @@ Follow these steps:
 
     2. Navigate interactions using adherence moments and violations. See [AI-Assisted Manual Audit](../quality-management/analyze/ai-assisted-manual-audit.md).
 
+
 9. Monitor performance:
 
     1. Use the Dashboard for individual QA progress and queue statistics.
 
     2. Utilize the Conversation Intelligence Dashboard for overall contact center performance.  
+
     See [Dashboard](../quality-management/analyze/dashboard.md).
+

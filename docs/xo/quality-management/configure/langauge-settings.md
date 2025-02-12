@@ -15,6 +15,7 @@ Steps to add a new language:
 <img src="../settings/langauge-settings/images/add-language.png" alt="new language" title="new language" style="border: 1px solid gray; zoom:60%;">
 
 2. Click the +**Add Language**. The following screen appears to select a language.  
+
 <img src="../settings/langauge-settings/images/add-lnew-anguage.png" alt="Add Language" title="Add Language" style="border: 1px solid gray; zoom:60%;">
 
 3. From the **Language** drop-down list, search a language name to add to the language list.

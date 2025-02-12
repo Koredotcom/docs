@@ -191,11 +191,7 @@ Syntax
 
 You can use the agentUtils.setQueue() method to set the conversations queue at any point leading up to the agent transfer. You can do this by using a [Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) within a bot action node in the XO Platform or a [Script Task](../node-types/script-task.md) node within a flow in Contact Center AI.
 
-```
-agentUtils.setQueue()</code
-```
-
-Example
+Examples
 
 ```
 agentUtils.setQueue(queueId);

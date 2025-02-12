@@ -74,6 +74,7 @@ The following table describes the best practices that are based on - By Question
 
 <li>Configurations with product specifics: 50-60% match.
 
+
 <strong>Note</strong>: Adjust these thresholds based on your specific use case and requirements.</li>
 </ul>
    </td>
