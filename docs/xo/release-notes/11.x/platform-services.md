@@ -21,7 +21,7 @@ Key benefits
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#configure-pre-built-llm-integration)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#configure-recently-released-pre-built-llm-integration)
 
 
 #### Answer Generation Guardrails
