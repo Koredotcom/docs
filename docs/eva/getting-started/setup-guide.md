@@ -39,7 +39,7 @@ Rate limits restrict user queries based on complexity and user category. Simple 
 
 ### Step 5: Configure Enterprise Knowledge
 
-The Enterprise Knowledge is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query. [Learn more](https://docs.kore.ai/ai-for-work/agents-apps/enterprise-knowledge/).
+The Enterprise Knowledge is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query. [Learn more](https://docs.kore.ai/ai-for-work/custom-agents/enterprise-knowledge/).
 
 ### Step 6: Publish Pre-built Agents to be Available for your Users
 
@@ -47,7 +47,7 @@ AI for Work provides a set of pre-built agents that perform specific tasks with 
 
 ### Step 7: Configure Agents and Applications As Per your Requirement
 
-Agents and applications can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](https://docs.kore.ai/ai-for-work/agents-apps/overview/).
+Agents and applications can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](https://docs.kore.ai/ai-for-work/custom-agents/overview/).
 
 ### Step 8: Invite your Users to AI for Work
 

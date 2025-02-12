@@ -117,20 +117,20 @@ nav:
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md    
     - Using AI for Work Assistant: getting-started/how-to-use.md        
   - Agents and Apps:
-    - Overview: agents-apps/overview.md
+    - Overview: custom-agents/overview.md
     - AI Agents: 
-      - Prompt Agents: agents-apps/prompt-agents.md 
-      - GALE Agents: agents-apps/gale-agents.md  
+      - Prompt Agents: custom-agents/prompt-agents.md 
+      - GALE Agents: custom-agents/gale-agents.md  
       - Bot Agents: 
-        - Import/Create: agents-apps/bot-agent.md
-        - Alert Task: agents-apps/alert-task.md
-        - Notify API: agents-apps/notify-bot-agent-api.md     
+        - Import/Create: custom-agents/bot-agent.md
+        - Alert Task: custom-agents/alert-task.md
+        - Notify API: custom-agents/notify-bot-agent-api.md     
     - AI Search: 
-      - RAG Agents: agents-apps/rag-agent.md
-      - Enterprise Knowledge: agents-apps/enterprise-knowledge.md 
-      - API Agents: agents-apps/api-agents.md 
+      - RAG Agents: custom-agents/rag-agent.md
+      - Enterprise Knowledge: custom-agents/enterprise-knowledge.md 
+      - API Agents: custom-agents/api-agents.md 
     - Agentic App: 
-      - Standard Apps: agents-apps/agentic-apps.md
+      - Standard Apps: custom-agents/agentic-apps.md
   - Pre-built Agents:
     - Overview: pre-built-agents/overview.md
   - Pre-built Solutions:

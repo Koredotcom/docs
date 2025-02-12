@@ -13,7 +13,7 @@ AI for Work setup consists of the following steps:
   - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
   - [Step 5: Configure Enterprise Knowledge](#step-5-configure-enterprise-knowledge)
   - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
-  - [Step 7: Configure Custom Agents As Per your Requirements](#step-7-configure-agents-apps-as-per-your-requirements)
+  - [Step 7: Configure Custom Agents As Per your Requirements](#step-7-configure-custom-agents-as-per-your-requirements)
   - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
 
 ## Step 1: Sign Up for a New AI for Work Account
@@ -54,7 +54,7 @@ by account administrators. [Learn more](/docs/ai-for-work/assistant-configuratio
 The Enterprise Knowledge is a pre-configured Search AI app available to all AI for Work
 accounts. It acts as a fallback, generating responses when no specific agents
 match the user's intent. It's also automatically available to users when no
-custom or specific agents are assigned to handle a user query.[Learn how to configure the Enterprise Knowledge](https://docs.kore.ai/ai-for-work/agents-apps/enterprise-knowledge/#enterprise-knowledge-configuration).
+custom or specific agents are assigned to handle a user query.[Learn how to configure the Enterprise Knowledge](https://docs.kore.ai/ai-for-work/custom-agents/enterprise-knowledge/#enterprise-knowledge-configuration).
 
 ## Step 6: Publish Pre-built Agents to be Available for your Users
 
@@ -69,7 +69,7 @@ through the Agent Store. [Learn more](/docs/ai-for-work/pre-built-agents/overvie
 Custom AI agents can be quickly set up to integrate with your workflows and
 systems. They can collect user input, retrieve data, connect to APIs, and
 execute complex tasks. [Learn
-more](/docs/ai-for-work/agents-apps/overview/).
+more](/docs/ai-for-work/custom-agents/overview/).
 
 ## Step 8: Invite your Users to AI for Work
 
