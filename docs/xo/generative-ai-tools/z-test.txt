@@ -353,3 +353,11 @@ The following table displays the Dynamic Conversation features and the supported
   | Custom LLM                   | ❌                        |
   | Kore.ai XO GPT               | ❌                        |
 
+- Kore.ai XO GPT Module: 
+        - Overview: generative-ai-tools/xo-gpt-module.md
+        - XO GPT Model Specifications:
+          - Model Building: generative-ai-tools/xogpt-model-specifications.md
+          - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
+          - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
+          - User Query Paraphrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md

@@ -1,11 +1,29 @@
 # GALE Agent
 
-The Workflow or GALE Agent allows users to build agents directly with the GALE platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of
-creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently.
+The Workflow or GALE Agent allows users to build agents directly with the GALE platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently. To learn more about GALE agent flow, click
+[here](https://docs.kore.ai/gale/agents/agents-flows/flows-overview/).
 
 The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the GALE platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
 
-##  Create a GALE Agent
+You can create a new agent or import an existing one.
+
+-   [Import existing workflow or GALE agent](#import-existing-gale-agent)
+
+-   [Create GALE agent](#create-gale-agent)
+
+# Import existing GALE agent
+
+To import an existing GALE agent:
+
+1.  Click the **Import Agent** button located in the upper-right
+    corner.![](images/import-gale.png)
+
+2.  Select the .ZIP file of the existing
+    agent.![](images/import-gale-agent.png)
+
+3.  Click **Import** to complete the process. The imported agent will appear on the Workflow Agents page.
+
+# Create GALE Agent
 
 To create a GALE Agent, follow the steps outlined below:
 
@@ -110,16 +128,28 @@ steps outlined below:
 6.  Click **Import** to add the cURL
 
 7.  Click **Run** to fetch the API details.  
-    ![](images/fetch.png)
+    ![](images/fetch-gale.png)
 
-8.  Once the API details are fetched, click
-    **Continue**.![](images/fetch_API.png)
+8.  After fetching the API details, enter the API key value. To get the API key:
 
-9.  The API response output displays all the keys received in the response.
+    1.  Navigate to the GALE Platform. On the **Agents** tab, click on the agent
+        that you want to integrate.
+
+    2.  In the left navigation, click **API Keys**, then select **Create new
+        key**.![](images/API-Key.png)
+
+    3.  In the popup window, click on the **Generate Key** button. Once the API
+        key is generated, click **Copy and Close** to copy the key and to exit.
+
+9.  In the API key value field, paste the key that you have copied from the GALE
+    Agent and click **Continue**.![](images/generate-key.png)
+
+
+10.  The API response output displays all the keys received in the response.
     These keys are used to map the specific value that should be shown to the
     end user.![](images/response.png)
 
-10.  Click **Continue** to move to the next step.
+11.  Click **Continue** to move to the next step.
 
 ###  <a id="preview">Step 3: Preview</a>
 
@@ -147,7 +177,7 @@ below to publish the GALE agent:
 
         -   **Everyone in the Account**: Make the agent available to all users.
 
-    -   **Enablement Type**: Define how users can enable or disable the agent:
+    -   **Enablement Type**: Define how end users can enable or disable the agent from the agent store.:
 
         -   **Always Enabled**: Users cannot disable the agent; it is always
             active.
@@ -165,7 +195,7 @@ To modify the workflow agent / GALE agent, follow these steps:
 1.  Navigate to the **Agents list** page and locate the agent you wish to
     modify.  
     
-    ![](images/modify_agent.png)
+    ![](images/modify_agent-gale.png)
 
 2.  Click the **three dots icon** next to the agent’s name. A menu with the
     following options will appear:
@@ -174,10 +204,19 @@ To modify the workflow agent / GALE agent, follow these steps:
 
     -   **Publish/Unpublish** – Change the agent's status.
 
+    -   **Export Agent** - The agent's data is packaged into a ZIP file for download, migration, or import into another system.
+
     -   **Delete** – Permanently remove the agent.
 
 3.  Click on the required option and continue to complete the modifications as
     needed.
+
+
+# Agent Option
+
+The agent options allow you to export, delete, and un-publish the agent.
+
+![](images/agent-option.png)
 
 ##  Manage Input and Output
 

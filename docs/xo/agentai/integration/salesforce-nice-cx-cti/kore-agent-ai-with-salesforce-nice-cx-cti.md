@@ -328,6 +328,13 @@ For on-prem, refer to the corresponding host.<strong> </strong>
   </tr>
 </table>
 
+## Architecture Diagrams
+### Chat
+<img src="../images/chat-architecture.png" alt="chat-architecture" title="chat-architecture" style="border: 1px solid gray; zoom:80%;">
+
+### Voice
+<img src="../images/voice-architecture.png" alt="voice-architecture" title="voice-architecture" style="border: 1px solid gray; zoom:80%;">
+
 ## Set up Salesforce-NICE CTI package
 
 Follow [this article](https://help.nice-incontact.com/content/agent/agentapplicationadministration/agentforsalesforce/installation.htm?TocPath=Agent%20Application%20Administration%7CAgent%20Application%20Administration%7CSalesforce%20Agent%20%7C_____3){:target="_blank"} to install and configure the NICE CTI package on your Salesforce account.
@@ -408,7 +415,7 @@ This app will be used in studio script.
 5. Select **NICE inContact** in the **CTI Provider** list.  
 <img src="../images/nice-incontact-13.png" alt="nice-incontact" title="nice-incontact" style="border: 1px solid gray; zoom:80%;">
 
-6. Select **Active,** and click **Save**.  
+6. Select **Active**, and click **Save**.  
 <img src="../images/active-save-14.png" alt="active-save" title="active-save" style="border: 1px solid gray; zoom:80%;">
 
 ### Set up AgentAssist Configuration

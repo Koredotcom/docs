@@ -35,7 +35,7 @@ You can import tasks and configurations of a specific assistant into a new or ex
 
 To import a Virtual Assistant, follow these steps:
 
-1. Open the assistant you want to export.
+1. Open the assistant you want to import.
 2. Select the **Deploy** tab from the left menu.
 3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page, select the **Import** tab.
@@ -73,11 +73,11 @@ To import a Virtual Assistant, follow these steps:
 
     <img src="../images/bm(4).png" alt="Incremental import" title="Incremental import" style="border:1px solid gray; zoom:60%;">
 
-    * **Bot Tasks**: Here, you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk, or Digital Forms.
+    * **Automation Tasks**: Here, you can select to import Tasks only (with or without comments), Dialog tasks, Digital Forms, Small Talk, or FAQs.
 
         !!! Note
 
-            If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
+            If you want to import one or more Automation Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
     * **NLP Data**: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
             
@@ -91,12 +91,12 @@ To import a Virtual Assistant, follow these steps:
 
         3. The imported Traits, Synonyms, and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.
 
-    * **Settings**: Bot Settings, Bot Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:  
+    * **Settings**: App Settings, App Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:  
 
         * Integrations
         * Prompts and Requests Library
         * Feature Mappings
-        * Safeguards
+        * Guardrails
         * DialogGPT (Conversation Types and Configurations) 
         
     * **Custom Dashboards**: This is useful in case you have created custom dashboards under the Analyze section and want to import them to the new VA as well. 
@@ -109,11 +109,11 @@ To import a Virtual Assistant, follow these steps:
             While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
 9. Click **Proceed** to start the import.
-10. After the import is completed, the following success message appears. Click **Done**.
+10. After the import is completed, a success message appears. Click **Done**.
     
     !!! Note
 
-        Bot import would fail if the assistant has been restored but not published after the restore. 
+        App import would fail if the assistant has been restored but not published after the restore. 
 
 ### Creating a New Assistant Using the Import Option
  
@@ -178,9 +178,9 @@ To import a VA while creating it, follow these steps:
    </td>
   </tr>
   <tr>
-   <td>Knowledge Graph, Bot Synonyms and Standard Responses
+   <td> App Synonyms and Standard Responses
    </td>
-   <td>Existing knowledge graph, VA synonyms, and standard responses in the target assistant are replaced with the imported ones.
+   <td>Existing VA synonyms, and standard responses in the target assistant are replaced with the imported ones.
    </td>
   </tr>
   <tr>
@@ -203,7 +203,7 @@ To import a VA while creating it, follow these steps:
    <br>
     – Keeps existing prompts, only adds new ones.
     <br>
-    – Replaces all feature mappings, custom instructions, safeguards, and DailogGPT.
+    – Replaces all feature mappings, custom instructions, Guardrail, and DailogGPT.
     <br>
     – Preserve existing integrations.
     <br>
@@ -227,7 +227,7 @@ You can export a VA’s definition and configuration using the Export option.
 When you export an assistant, it downloads a zipped file with the following parameters:
 
 * **appDefinition.json**: Includes metadata, tasks, VA and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – VA settings, variables, IVR settings- while exporting the assistant.
-* **config.json**: Includes VA settings, VA variables, and IVR settings.
+* **config.json**: Includes App settings, App variables, and IVR settings.
 * **Icon.png**: Includes the assistant icon.
 * **&lt;_Custom ScriptFile Name_.js> (if available)**: Includes a script file with JavaScript functions. When you upload this file, you can access the functions in the file from anywhere in the assistant.
 
@@ -237,7 +237,7 @@ When you export an assistant, it downloads a zipped file with the following para
 
 ### Export Modes
 
-You can export assistants in two modes: **Published** and **Latest Version**. Depending on the mode that is selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and VA settings in both the modes. Further individual Tasks can also be selected.
+You can export assistants in two modes: **Published** and **Latest Version**. Depending on the mode that is selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and VA settings in both modes. Further individual Tasks can also be selected.
 
 #### Published Mode
 
@@ -344,15 +344,15 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 #### Steps in Exporting the Assistant
 
 1. Open the assistant you want to export.
-2. Select **Deploy** tab from the left menu.
+2. Select the **Deploy** tab from the left menu.
 3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page, select the **Export** tab.
 5. In the Export tab, select either **Published** or **Latest Version** exporting mode.
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
 
-    <img src="../images/bm(10).png" alt=App export" title="App export" style="border:1px solid gray; zoom:60%;">
+    <img src="../images/bm(10).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
 
-7. For Tasks, you can further choose to export only select tasks. By default All Tasks are selected. Click the All Tasks link to open **Select Tasks** dialog to choose the tasks you want to export.
+7. For Automation Tasks, you can further choose to export only selected tasks. By default All Tasks are selected. 
 
     !!! note
 
@@ -368,17 +368,44 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 
 9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
-### Exported Bot Components
+### Exported App Components
 
 When you export a VA, the following components get exported, depending on your Latest or Published Mode selection:
 
 <table>
-  <tr>
-   <td colspan="2" ><strong>Tasks</strong>
+<tr>
+   <td colspan="2" ><strong>Flows</strong>
    </td>
   </tr>
   <tr>
-   <td>Tasks Only
+   <td>Start Flows
+   </td>
+   <td>
+<ul>
+
+<li>System-created conversational start flow for calls and chat
+</li>
+</ul>
+   </td>   
+  </tr>
+  <tr>
+   <td>Exis Flows
+   </td>
+   <td>
+<ul>
+
+<li>System Created Flow to handle No Agents Available in Voice and Chat
+<li>System-created flow to handle Out Of Operational Hours in Voice and Chat
+</li>
+</ul>
+   </td>  
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Automation Tasks</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Alert Tasks, Dialog Task, Digital Forms, FAQs,  Small Talks
    </td>
    <td>
 <ul>
@@ -392,18 +419,13 @@ When you export a VA, the following components get exported, depending on your L
 </ul>
    </td>
   </tr>
+  
   <tr>
-   <td>Knowledge Graph
-   </td>
-   <td>Knowledge Graph definition along with the associated synonyms and classes.
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>NLP Data</strong>
+   <td colspan="2" ><strong>Natural Language</strong>
    </td>
   </tr>
   <tr>
-   <td>NLP Settings
+   <td>NL Model
    </td>
    <td>The Advanced NLP Settings and Ignore words and Field memory. The Advanced NLP Settings ( Natural Language > Advanced Settings) include the following:
 <ul>
@@ -446,20 +468,20 @@ When you export a VA, the following components get exported, depending on your L
    </td>
   </tr>
   <tr>
-   <td>Bot Settings
+   <td>App Settings
    </td>
-   <td>The following information from the Bot Settings page:
+   <td>The following information from the App Settings page:
 <ul>
 
 <li>General Settings
 
-<li>Bot name, description, and VA synonyms for each enabled language
+<li>App name, description, and VA synonyms for each enabled language
 
-<li>Language selection time frame (Bot Settings > Language Management)
+<li>Language selection time frame (App Settings > Language Management)
 
 <li>Welcome message
 
-<li>Hold and Resume settings (Bot level)
+<li>Hold and Resume settings (App level)
 
 <li>Custom Script file
 
@@ -473,15 +495,15 @@ When you export a VA, the following components get exported, depending on your L
    </td>
   </tr>
   <tr>
-   <td>Bot Variables
+   <td>App Variables
    </td>
    <td>All the global and content variables present in the assistant, along with their values.
    </td>
   </tr>
   <tr>
-   <td>IVR settings
+   <td>Voice Call Properties
    </td>
-   <td>All the IVR settings for the assistant (Bot Settings > IVR settings).
+   <td> Configurations of all voice channels.
    </td>
   </tr>
   <tr>
@@ -497,15 +519,44 @@ When you export a VA, the following components get exported, depending on your L
 
 <li>Feature Mappings
 
-<li>Safeguards
+<li>Guardrails
 
 <li>DialogGPT (Conversation Types and Configurations)
 
 </li>
 </ul>
+</td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Custom Dashboard</strong>
    </td>
   </tr>
 
+ <tr>
+   <td colspan="2" ><strong>Agent AI Dashboard</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Agent Coaching
+   </td>
+   <td>
+<ul>
+<li>Agent coaching rules and their configurations
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Agent Playbook
+
+   </td>
+   <td>
+<ul>
+<li>Checklists and their configurations
+</li>
+</ul>
+   </td>
+  </tr>
 </table>
 
 ## Deleting an Assistant

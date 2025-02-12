@@ -47,14 +47,14 @@ The “Display additional comment” box appears in the Agent AI widget, only if
 
 ## **Customize Language for the Feedback Messages**
 
-You can select the display language of the feedback messages from the available list.
+The selected app's language appears by default as the feedback messages language. You can select the display language by selecting one fro the available list.
 
 ### **Steps to Change the Feedback Messages Language**
 
 1. Sign in to **XO Platform**.
 2. Go to **Agent AI** > **Configuration** > **Feedback Settings**.
 3. Click to expand any subsection – Dialog Task Feedback, Answers Feedback, FAQ Feedback, or Summary Feedback.
-4. Click the **language selection dropdown arrow** beside the Display additional comment box.
+4. Click the **language selection dropdown arrow** beside the **Display additional comment** box.
 5. Select a language, and click **Save**.
     <img src="../feedback-settings-images/change-feedback-message-language-6.png" alt="change-feedback-message-language" title="change-feedback-message-language" style="border: 1px solid gray; zoom:80%;">
 

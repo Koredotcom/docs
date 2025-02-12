@@ -114,7 +114,7 @@ Steps to edit or update the agent scorecard:
 Steps to delete the agent scorecard:
 
 1. Select any of the agent scorecards, and right-click on the vertical ellipse button. The following screen appears.  
-    <img src="./agent-scorecards/images/edit and delete-agent-scorecard.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="../agent-scorecards/images/edit and delete-agent-scorecard.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Click **Delete**. The following warning popup window appears.    
     <img src="../agent-scorecards/images/delete-agent-scorecard.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:70%;"> 

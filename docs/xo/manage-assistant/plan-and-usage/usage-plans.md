@@ -44,8 +44,30 @@ Here, you can find detailed information about your current plan and product usag
 <img src="../images/plan-information.png" alt="Nplan-information" title="plan-information" style="border: 1px solid gray;"/>
 
 ### Usage Trends
-Here, you can monitor the usage patterns of your App Interactions with customers.
 
+This section allows app users to access detailed billing information, helping them stay informed about their expenses and effectively track apps’ usage. The dashboard provides a consolidated view of cumulative billing data, including Billing sessions, voice sessions, and agent counts.
+
+* Billing Sessions: Total number of billing sessions completed, encompassing automation AI interactions and API requests.
+* Voice Sessions: Total number of voice-based interactions across products, including Speech-to-Text (STT), Text-to-Speech (TTS), and calls via the voice gateway.
+* Agent Count: Concurrent Agent Seats that the customers have subscribed to for the given time.
+
+Users can filter and view billing data for individual apps and refine the data further with date filters. They can select from predefined ranges such as 24 hours, 7 days, 30 days, or 90 days or set a custom date range.
+
+Billing metrics are shown using a graph or table, making it easy to understand usage patterns.
+
+Hovering over a data point displays a tooltip with the following details:
+
+* Date
+* Billing Sessions
+* Voice Sessions
+* Agent Count  
+
+ <img src="../images/usage-trend.png" alt="usage trend" title="usage trend" style="border: 1px solid gray;"/>
+
+!!!Note
+   
+      The agent count is not displayed for enterprise customers.
+         
 ## Payment Methods
 
 The following payment modes are available on the Payment page when you add funds to the Platform:

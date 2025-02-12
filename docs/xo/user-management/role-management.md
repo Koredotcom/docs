@@ -527,6 +527,14 @@ Make outbound emails if enabled for the account
    </td>
 </tr>
 <tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1121,6 +1129,14 @@ Make outbound emails if enabled for the account
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1694,6 +1710,14 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>No</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>No
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -2281,6 +2305,14 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>Yes</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -2872,6 +2904,14 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>No</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>No
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -3647,6 +3687,15 @@ Make outbound emails if enabled for the account
    <td>Yes
    <br>
 No</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>Yes
+   <br>
+   No</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>

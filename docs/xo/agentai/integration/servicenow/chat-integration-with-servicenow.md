@@ -17,7 +17,6 @@ This section outlines the essential components, credentials, and permissions req
     * ServiceNow: Admin Role
     * Kore XO Platform (Optional): Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
 
-
 ## Interaction between ServiceNow and Kore.ai Agent AI
 
 The following architecture diagram shows the interaction between ServiceNow and Agent AI:
@@ -77,11 +76,9 @@ Steps to resolve the error:
 * Go to **Update Set Review Problems**, and select all.
 * On the right-side, select **Accept remote update** from the **Action on selected rows…** drop-down list. 
 
-
     !!! note
 
         **Multi-language support** for Agent AI is available only with the **Update Set**.
-
 
 ### Step 2: Set Up Agent AI Application Configuration
 
@@ -106,7 +103,6 @@ This section details the steps to set up the Agent AI app configuration.
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
 
-
 6. Click **Submit**.
 
     !!! note
@@ -120,8 +116,9 @@ This section details the steps to set up the Agent AI app configuration.
 * For version 2 (v2) of Agent AI "https\://agentassist.kore.ai" (or the domain where the Agent AI is hosted), you should add this to the Agent AI URL.  
 Sample v2 URL: https\://<domain-name\>.kore.ai
 
-* For version 3 (v3), you must copy the Agent AI widget URL from the Agent AI or XO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).  
-Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+* For version 3 (v3), you must copy the Agent AI widget URL from the Agent UXO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. 
+
+    Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
 
 ### Step 3: Test the Integration
 
@@ -137,12 +134,10 @@ Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentas
 
 * **Agent:** Once the agent accepts the incoming chat, an Interaction Record page opens, and the **Agent AI by Kore** is the first icon on the Contextual side panel.
 
-
     * The agent gets a notification of the incoming chat.  
         <img src="../images/incoming-chat-notification.png" alt="incoming-chat-notification" title="incoming-chat-notification" style="border: 1px solid gray; zoom:80%;">
 
     * Once the agent accepts the chat, the Agent AI widget appears on the right Contextual side panel. 
-
 
         <img src="../images/agent-ai-contextual-panel.png" alt="agent-ai-contextual-panel" title="agent-ai-contextual-panel" style="border: 1px solid gray; zoom:80%;">
 

@@ -45,26 +45,27 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
         If the email address is already registered, the platform prompts you to sign-in and to enter the password.
   
+3. Enter all the other details to create the account and click **Sign up**.  
+    <img src="../images/create-an-account.png" alt="create-an-account" title="create-an-account" style="border: 1px solid gray; zoom:70%;">
 
-3. Enter all the other details to create the account.
 
     !!! note
+            
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
 
-4. On creating an account, a confirmation email is sent to the provided email address, with a verification link and a verification code, to sign in to the new account. 
+4. A confirmation email with a verification code is sent to the provided email address to finish the Sign-up process.
 
      <img src="../images/accplatform(2).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
    
-5. You can either click the **Verify Email** button or click/copy paste the verification URL in the browser. Upon verification, your account is created.
-6. You can also complete the verification using the 6 digit verification code sent to the registered email address. The code can be entered either on your web browser or the mobile device.
+5. Enter the verification code and click **Verify**.
+6. After verification, your account is created.  
 
-     <img src="../images/accplatform(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 !!! note
 
-    The platform sends reminder emails with the verification link and the code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verification link and code upon expiry of the old ones.
-
+    The platform sends reminder emails with the verification link and the code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verification link and code upon expiry of the old ones.  
     If the verification link or code expires or is invalid, the system displays a message to you, to request a new link and a code to complete the verification process.
- Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles.
+ 
+Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles.
 
  <img src="../images/accplatform(10).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
