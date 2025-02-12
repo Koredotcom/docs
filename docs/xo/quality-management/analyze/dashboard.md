@@ -15,14 +15,24 @@ You can access **Dashboard** by navigating to **Contact Center AI** > **Quality 
 
 This Dashboard lets you filter the data based on language, time period, and channel selected.
 
-### Date Range Filter
+### All Languages 
 
-You can filter data based on a selected date range.
-To filter by date range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
-<img src="../dashboard/images/calendar drop-down.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
+In this Quality AI Dashboard, you can filter and search by language across the dashboards and interaction listing pages to search and apply the language-specific metrics. These metrics are available based on the languages configured at the evaluation metric level under the **Configuration** > **Settings** > **Language Settings**. 
+ 
+<img src="./dashboard/images/language-filter.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:100%;">
 
+!!! note
 
-### Date Range Filter
+    By default, all languages are selected when the All Languages filter is applied. Only metrics configured for the selected languages are displayed under this filter.
+
+When any of the language filters are selected, the following widget metrics are updated:
+* Total Audits
+* Avg. Audits per Agent
+* Evaluation Score (Manual Vs Auto QA score)
+* Fail Statistics (Evaluation Form)
+* Performance Monitor (Evaluation Form) 
+
+### Date Range
 
 You can filter data based on a selected date range.
 To filter by date range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
@@ -37,7 +47,7 @@ This allows you to filter all agent interaction data by selecting the following 
 * **Last 90 Days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
 * **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
 
-### Channel Filter
+### Channel
 
 The Quality AI Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **All**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
 
