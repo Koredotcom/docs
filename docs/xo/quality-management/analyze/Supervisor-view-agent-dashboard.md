@@ -25,9 +25,7 @@ For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-
 
 ## Overview
 
-This displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat only).  
-
-The **Overview** tab of the supervisor’s view of the Agent Dashboard, specific to each agent, includes the following:
+The **Dashboard Overview** tab displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat). It provides the supervisor’s view of the Agent Dashboard specific to each agent, which includes the following: 
 
 * **Total Interactions**: This displays the total interactions completed by the agent during the selected time.     
     <img src="../agent-leaderboard/images/total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">

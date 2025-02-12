@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the agent Evaluation forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
+From a supervisor’s perspective, the **Dashboard Overview** presents a comprehensive 360-degree view of audit details, failure statistics, and performance monitoring for the agent Evaluation forms across daily, weekly, and monthly intervals. By default, it displays the daily report for all three categories, giving supervisors a quick and easy way to monitor quality standards at any given time.
 
 You can access **Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
@@ -13,7 +13,14 @@ You can access **Dashboard** by navigating to **Contact Center AI** > **Quality 
 
 ## Dashboard Filters
 
-This Dashboard allows you to filter the data by time period and specific channel.
+This Dashboard lets you filter the data based on language, time period, and channel selected.
+
+### Date Range Filter
+
+You can filter data based on a selected date range.
+To filter by date range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
+<img src="../dashboard/images/calendar drop-down.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
+
 
 ### Date Range Filter
 
@@ -67,7 +74,7 @@ Displays the total number of audits (progress score) pending and completed.
 * **Audit**: Click the **Audit** button, which directs you to the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
-For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining-audit-allocations/).
+For more information, see [Audit Allocations](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining-audit-allocations/).
 
 ### Evaluation Score 
 This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
