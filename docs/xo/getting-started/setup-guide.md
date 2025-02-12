@@ -1,8 +1,7 @@
 # Setup Guide
 
-The **Setup Guide** facilitates faster app building for platform users. It offers a guided, step-by-step process that provides a comprehensive overview of all XO features. 
-
-![alt_text](images/image1.png "image_tooltip")
+The **Setup Guide** facilitates faster app building for platform users. It offers a guided, step-by-step process that provides a comprehensive overview of all XO features.  
+ <img src="../images/setup-guide.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ## The Left Navigation Menu
 
@@ -39,7 +38,7 @@ The Left Navigation Menu available on the setup guide provides access to the fol
 3. Deploy
     1. Channels: Deploy your AI chatbot across multiple channels, including web, voice, and messengers. Configure the channels through which it will engage with the customers. 
 
-    2. Publish: Publishing your AI chatbot makes it live, activating all changes and updates. It also enables version control, allowing you to manage and track releases. [Learn more](https://koredotcom.github.io/docs/xo/deploy/publishing-bot/?h=publish).
+    2. Publish: Publishing your AI chatbot makes it live, activating all changes and updates. It also enables version control, allowing you to manage and track releases. [Learn more](../deploy/publishing-bot.md).
 
 4. Explore 
-	Analytics: Gain valuable insights into your AI chatbot’s performance and interactions through comprehensive analytics. The Kore.ai XO Platform offers various dashboards to track real-time data and assess how your virtual assistant is performing over time. [Learn more](https://docs.kore.ai/xo/administration/analytics/).
+	Analytics: Gain valuable insights into your AI chatbot’s performance and interactions through comprehensive analytics. The Kore.ai XO Platform offers various dashboards to track real-time data and assess how your virtual assistant is performing over time. [Learn more](../administration/analytics.md).
