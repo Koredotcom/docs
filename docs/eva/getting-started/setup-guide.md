@@ -9,7 +9,7 @@ AI for Work setup consists of the following steps:
     - [Step 2: Configure User Enrollments, SSO, and Service Accounts](#step-2-configure-user-enrollments-sso-and-service-accounts)
     - [Step 3: Configure LLM and Embedding Models](#step-3-configure-llm-and-embedding-models)
     - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
-    - [Step 5: Configure Default RAG](#step-5-configure-default-rag)
+    - [Step 5: Configure Enterprise Knowledge](#step-5-configure-enterprise-knowledge)
     - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
     - [Step 7: Configure Custom Agents As Per your Requirement](#step-7-configure-custom-agents-as-per-your-requirement)
     - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
@@ -37,9 +37,9 @@ To use Generative AI features in AI for Work, configure integration with either 
 
 Rate limits restrict user queries based on complexity and user category. Simple queries like small talk use 1 point each, while advanced queries involving knowledge integration or context use 3 points. There are two user categories: Moderate Users with default rate limits and Power Users with custom limits set by account administrators. [Learn more](https://docs.kore.ai/ai-for-work/assistant-configuration/rate-limit/).
 
-### Step 5: Configure Default RAG
+### Step 5: Configure Enterprise Knowledge
 
-The Default RAG is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query. [Learn more](https://docs.kore.ai/ai-for-work/custom-agents/default-rag/).
+The Enterprise Knowledge is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query. [Learn more](https://docs.kore.ai/ai-for-work/agents-apps/enterprise-knowledge/).
 
 ### Step 6: Publish Pre-built Agents to be Available for your Users
 
@@ -47,7 +47,7 @@ AI for Work provides a set of pre-built agents that perform specific tasks with 
 
 ### Step 7: Configure Custom Agents As Per your Requirement
 
-Custom AI agents can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](https://docs.kore.ai/ai-for-work/custom-agents/overview/).
+Custom AI agents can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. [Learn more](https://docs.kore.ai/ai-for-work/agents-apps/overview/).
 
 ### Step 8: Invite your Users to AI for Work
 
