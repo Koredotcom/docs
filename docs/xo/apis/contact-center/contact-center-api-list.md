@@ -38,6 +38,8 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Get a Specific Agent](../contact-center/get-a-specific-agent.md)                                               | To retrieve the details of a particular agent with the given stream Id and agent Id.                              | SmartAssist Analytics |
 | [Update a Specific Agent](../contact-center/update-a-specific-agent.md)                                         | To update the details of a particular agent with the given Stream Id and Agent Id.                                | SmartAssist Analytics |
 | [Delete a Specific Agent from a Particular Agent Group](../contact-center/delete-a-specific-agent-from-a-particular-agent-group.md) | To delete a particular agent with the given Stream Id and Agent Id.                                               | SmartAssist Analytics |
+| [Get the Agent ID Using the Custom ID](../contact-center/get-the-agent-id-using-custom-id.md)                                            | To get the Agent ID associated with a Custom ID (extension number).                                    | Configuration |
+| [Check Agent Availability Status](../contact-center/check-agent-availability-status.md)                                            | To check the availability of agents based on specified skill Ids, queue Ids, and agent Ids.                                    | Configuration |
 
 ### Skills APIs
 | API                                                                                                   | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |

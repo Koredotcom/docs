@@ -23,14 +23,19 @@ In this Quality AI Dashboard, you can filter and search by language across the d
 
 !!! note
 
-    By default, all languages are selected when the All Languages filter is applied. Only metrics configured for the selected languages are displayed under this filter.
+    By default, all languages are selected when the **All Languages** filter is applied. Only metrics configured for the selected languages are displayed under this filter.
 
 When any of the language filters are selected, the following widget metrics are updated:
 * Total Audits
+
 * Avg. Audits per Agent
+
 * Evaluation Score (Manual Vs Auto QA score)
+
 * Fail Statistics (Evaluation Form)
+
 * Performance Monitor (Evaluation Form) 
+
 
 ### Date Range
 
