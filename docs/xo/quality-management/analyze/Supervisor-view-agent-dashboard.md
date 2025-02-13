@@ -20,7 +20,7 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 
 Each agent has a dedicated dashboard accessible to both the agents and their supervisor. This dashboard displays high-level metrics for supervisors to review.
 
-The supervisor can filter by the desired languages, date range using the calendar, and agent interactions across all channels (Voice and Chat). See the [**Date Range**](../analyze/dashboard.md) and [**Channel**](../analyze/dashboard.md) dashboard filters for more information.
+The supervisor can filter by the desired languages, date range using the calendar, and agent interactions across all channels (Voice and Chat). See the [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel) dashboard filters for more information.
 
 ## Overview
 
@@ -77,7 +77,7 @@ The Coaching Assignments include the following items:
        
     * **Yet to start**: Interactions for an assignment are yet to start.
 
-        !!! note
+    !!! note
             
         This option is only visible for supervisors.
 

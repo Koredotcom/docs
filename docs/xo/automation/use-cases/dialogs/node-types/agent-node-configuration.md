@@ -476,13 +476,13 @@ The context object is used to get the entities and the parameters of tools.
   <tr>
    <td>Entities
    </td>
-   <td>context.AI_Assisted_Dialogs.GenAINodeName.entities.{entityName}
+   <td>{context.AI_Assisted_Dialogs.GenAINodeName.entities[x].{entityName}}
    </td>
   </tr>
   <tr>
    <td>Parameters
    </td>
-   <td>context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}
+   <td>{context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}}
    </td>
   </tr>
 </table>

@@ -27,8 +27,12 @@ Steps to add and configure the node:
     * **Value**: Select an appropriate variable or node as the value. Enter “{{context.” and select the node/variable from the list and then close the braces with “}}”.
     
         Example: `{{context.steps.summarization.output}}`
-        
+
         <img src="../images/end-node-success-output.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;">
+
+        !!! note
+
+            Adding at least one output variable is required for each end node.
 
     * If you want to show multiple outputs or messages, click **Add a Key** to add the key and value details for the same.
 
@@ -37,4 +41,8 @@ Steps to add and configure the node:
 !!! failure "Standard Error"
 
     When the value for the output variable is not defined, a list of unresolved outputs is displayed.
+
+
+
+
 

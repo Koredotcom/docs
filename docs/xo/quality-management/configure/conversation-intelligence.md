@@ -2,7 +2,7 @@
 
 The Settings allow you to make app-level changes to Conversation Intelligence.
 
-The Settings has the following two sections:
+The Settings has the following three sections:
 
 * Conversation Intelligence
 * Quality AI General Settings
@@ -32,6 +32,8 @@ Steps to enable the Conversation Intelligence:
 
 2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details.  
 <img src="../settings/images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
+
+By enabling this option, you can view the **Conversation Intelligence** feature displaying under the **Analyze** section.
 
 Steps to disable the **Conversation Intelligence** Dashboard:
 
@@ -68,11 +70,12 @@ Steps to enable the Script Adherence Configuration:
 
     * **Message**: Allows you to define specified attribute messages for the agent or user. You can add more than one message for the user for the same attribute and delete the defined messages.
 
+    <img src="../settings/conversation-intelligence/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
+
         !!! Note
     
-            If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute.
+            If you are enabling this message box, you must enter a message in the corresponding attribute warning message box. You need to save and proceed before moving on to the next attribute message. A warning message will appear if you fail to enter a message for the corresponding attribute. 
 
-    <img src="../settings/images/conv-warning-message.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
     * **Save**: Allows you to save the defined messages.
 

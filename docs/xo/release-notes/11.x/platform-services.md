@@ -21,7 +21,7 @@ Key benefits
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#configure-pre-built-llm-integration)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#configure-recently-released-pre-built-llm-integration)
 
 
 #### Answer Generation Guardrails
@@ -63,7 +63,7 @@ Metrics tracked
 
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#usage-trends)
 
-### Kore Voice Gateway (v0.9.3-rc4)
+### Kore Voice Gateway (v0.9.3-1)
 
 #### Audit Log for 'SIP Trunk Configuration' Changes and Proper Failure Reasons
 

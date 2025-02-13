@@ -10,7 +10,7 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 
 * **RAG Agents**: In AI for Work, RAG agents are implemented through **Search AI** applications that index content from various sources, allowing them to retrieve relevant information and generate precise responses to user queries. [Learn more](./rag-agent.md)
 
-* **Default RAG Agents**: Agents which are pre-configured **Search AI** app that acts as a backup system when specific agents can't handle user queries, providing general search capabilities without any specialized focus. [Learn more](./default-rag.md)
+* **Enterprise Knowledge Agents**: Agents which are pre-configured **Search AI** app that acts as a backup system when specific agents can't handle user queries, providing general search capabilities without any specialized focus. [Learn more](./enterprise-knowledge.md)
 
 * **API Agents**: API-based agents built by configured through a no-code builder. By connecting to external data sources, these agents fetch and deliver answers/data based on user queries through 3rd party API execution. [Learn more](./api-agents.md).
 

@@ -108,7 +108,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
@@ -127,7 +127,7 @@ nav:
         - Notify API: custom-agents/notify-bot-agent-api.md     
     - AI Search: 
       - RAG Agents: custom-agents/rag-agent.md
-      - Default RAG: custom-agents/default-rag.md 
+      - Enterprise Knowledge: custom-agents/enterprise-knowledge.md 
       - API Agents: custom-agents/api-agents.md 
     - Agentic App: 
       - Standard Apps: custom-agents/agentic-apps.md

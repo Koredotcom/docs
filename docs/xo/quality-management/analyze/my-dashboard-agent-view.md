@@ -49,6 +49,10 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
     <img src="../agent-dashboard/images/my-dashboard-number-of-fails.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
+## Coaching Insights
+
+The Coaching Insights feature highlights an agent's strengths and areas for improvement. The strongest attributes and opportunity areas are aggregated based on the selected scorecards. If the scorecard selection is updated, these insights are recalculated accordingly. When there are more than five strongest attributes or opportunity areas, a scroll option becomes available for viewing the complete list.
+
 * **Strongest Attributes**: This shows the top 5 attributes with scores of 80 or higher, ranked by a score assigned across the scorecards.
 
     <img src="../agent-dashboard/images/my-dashboard-strongest-attributes.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
@@ -57,7 +61,7 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
     <img src="../agent-dashboard/images/my-dashboard-opportunity-areas.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
 
-### Scorecard Trend
+## Scorecard Trend
 
 In this, the agents can view their performance trends from scorecards over various periods.
 
