@@ -29,7 +29,7 @@ The Left Navigation Menu available on the setup guide provides access to the fol
 2. Configure
     1. Style: Customize the look and feel of your AI chatbot to create a seamless and engaging experience for customers on your website. Explore various options to customize its appearance for personalization within the product.  
     
-    **Customization Options:**
+        **Customization Options:**
         * Style & Avatar
         * Welcome Screen
         * Chat Screen 
