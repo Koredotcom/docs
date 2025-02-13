@@ -27,7 +27,7 @@ The Left Navigation Menu available on the setup guide provides access to the fol
     3. Bot Actions: Bot Actions allow you to train your AI chatbot to perform specific tasks during conversations, providing a seamless and interactive user experience. You can select a template from the marketplace, or build your custom dialog using the DialogBuilder. 
 
 2. Configure
-    1. Style: Customize the look and feel of your AI chatbot to create a seamless and engaging experience for customers on your website. Explore various options to customize its appearance for personalization within the product.  
+    1. Style: Customize the look and feel of your AI chatbot to create a seamless and engaging experience for customers on your website. Explore various options to customize its appearance for personalization within the product.
     
         **Customization Options:**
         * Style & Avatar
