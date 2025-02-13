@@ -8,12 +8,6 @@ This document provides information on the feature updates and enhancements intro
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Agent Console
-
-#### Agent AI Localization
-
-Agent AI now supports English, French, Italian, Spanish, Japanese, Korean, and Chinese localization.
-
 ### Supervisor Console
 
 #### Monitor and Intervene in Bot-led Interactions
