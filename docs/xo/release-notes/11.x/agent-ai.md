@@ -21,7 +21,7 @@ The Agent AI widget’s load time has been optimized by removing synchronous API
 
 #### Ability to Pause or Resume Transcription
 
-Agent AI widget is now capable of honoring the pause and resume events transmitted from agent desktops to control the visibility of transcripts to agents within the Widget. [Learn more](./../../agentai/agent-experience/agent-assist-widget-v3.md)
+Agent AI widget is now capable of honoring the pause and resume events transmitted from agent desktops to control the visibility of transcripts to agents within the Widget. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md)
 
 #### Enhanced Input Box for Override, List View, Restart, and Search Bar fields
 
@@ -29,7 +29,7 @@ For improved navigation of longer entries, input text boxes of Override, List Vi
 
 #### On-demand Summary Generation
 
-Agents can now generate on-demand conversation summaries at any point during a conversation, up to 2 times per agent per conversation. This functionality is available even during agent transfers, allowing the receiving agent to regenerate a new summary and view the previous summary with timestamps. [Learn more](./../../agentai/agent-experience/agent-assist-widget-v3.md#generate-summary)
+Agents can now generate on-demand conversation summaries at any point during a conversation, up to 2 times per agent per conversation. This functionality is available even during agent transfers, allowing the receiving agent to regenerate a new summary and view the previous summary with timestamps. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md#generate-summary)
 
 ### Integrations
 
@@ -39,7 +39,7 @@ Genesys Middleware has been enhanced to support Base64-encoded values when passi
 
 #### Enhanced Salesforce Package includes Language Parameter
 
-The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more](https://docs.kore.ai/xo/agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti/#set-up-agentassist-configuration)
+The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](https://docs.kore.ai/xo/agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti/#set-up-agentassist-configuration)
 
 #### Multi-bot Support for Agent AI Integration with ServiceNow
 
