@@ -12,7 +12,7 @@ This section outlines the essential components, credentials, and permissions req
         * Configured to receive desktop chats
     * Agent AI Account
         * Enabled Web/Mobile channel
-        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
+        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **agent ai** > **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
 * Roles and Permissions:
     * ServiceNow: Admin Role
     * Kore XO Platform (Optional): Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
