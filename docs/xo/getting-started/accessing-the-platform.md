@@ -62,10 +62,10 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 !!! note
 
-    The platform sends reminder emails with the verification link and the code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verification link and code upon expiry of the old ones.  
-    If the verification link or code expires or is invalid, the system displays a message to you, to request a new link and a code to complete the verification process.
+    The platform sends reminder emails with the verification code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verificationcode upon expiry of the old ones.  
+    If the verification code expires or is invalid, the system displays a message to you, to request a new code to complete the verification process.
  
-Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles.
+Alternatively, you can sign up to the Kore.ai XO Platform using the Google or Microsoft Office.
 
  <img src="../images/accplatform(10).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -73,8 +73,7 @@ Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Micr
 
     Kore.ai XO Platform uses SAML-based authentication for completing the sign up and sign in flows.
 
-After signing up, users are guided through the onboarding process to create your first app. [Learn more](./guided-onboarding.md).
-
+After signing up, users are guided through the onboarding process to create your first app. [Learn more](../getting-started/guided-onboarding.md).
 
 ## Sign in to the Platform
 

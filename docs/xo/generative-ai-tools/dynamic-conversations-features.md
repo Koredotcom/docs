@@ -160,20 +160,20 @@ The following table displays the features and the supported models.
     |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
     |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
-    |Recently Released Pre-built LLM|✅|✅|❌|✅|❌|✅|
+    |Recently Released LLM|✅|✅|❌|✅|❌|✅|
     |Custom LLM|✅|✅|❌|✅|❌|✅|
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
 === "Search AI"
 
-    |Model|Answer Generation|Vector Generation|Query Rephrasing|
-    |:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|❌|
-    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|❌|
-    |Recently Released Pre-built LLM|✅|❌|❌|
-    |Custom LLM|✅|✅|❌|
-    |Kore.ai XO GPT|✅|✅|✅|
+    |Model|Answer Generation|Vector Generation|
+    |:----:|:----:|:----:|
+    |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
+    |Recently Released LLM|✅|❌|
+    |Custom LLM|✅|❌|
+    |Kore.ai XO GPT|✅|✅| 
 
 === "Agent AI"
 
