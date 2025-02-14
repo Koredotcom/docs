@@ -77,14 +77,11 @@ To create a new Bot Agent, follow these steps:
 
     3.  [Step 3: Preview](#preview)
 
-    4.  [Step 4: Publish Bot Agent](#publish)        
+    4.  [Step 4: Publish Bot Agent](#publish)
 
 ###   <a id="details">Step 1: Details and Purpose</a>
 
-Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables it to accurately recognize the
-agent’s capabilities and effectively utilize them to respond to user queries
-aligned with the specified intent. It is essential to clearly outline the
-specific use cases for which the agent is designed.
+Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables it to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed.
 ![](images/detail-purpose.png)
 
 ###  <a id="bot">Step 2: Add Bot </a>
@@ -94,16 +91,22 @@ on the Kore.ai platform with your system. To establish this connection, ensure
 that the webhook channel is enabled on the Kore.ai Virtual Assistant. Once
 activated, follow the integration steps to complete the process:
 
-1.  In the **Add Bot** enter the following:
+1. In the **Add Bot** enter the following:
+     
+     a. **Post URL**: This field is automatically populated with the necessary endpoint.
 
-    1.  Enter the **Bot client ID** you fetched from the Bot Webhook dialog.
+     b. **Access Token**: This field is automatically populated with the necessary endpoint.
 
-    2.  Enter the **Bot secret ID** you fetched from the Bot Webhook dialog.
+     c. **Webhook URL**: Enter the URL obtained from the Bot Webhook dialog. For detailed information about webhooks, [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).![](images/add-bot.png)
 
-    3.  Enter the **Webhook URL** that you have fetched from the Bot Webhook
-        dialog. [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).![](images/add-bot.png)
+     d. **Bot client ID** : Enter the client identifier retrieved from the Bot Webhook dialog.
 
-2.  Click **Connect account** to move to the next step.
+     e. **Bot secret ID**: Enter the secret identifier retrieved from the Bot Webhook dialog.
+
+2. Click **Connect account** to move to the next step.
+
+!!! note
+     While enabling Notify API, extract the **agent ID** from the **Post URL** field and use the **auth token** from **Access token** field.
 
 ##  <a id="preview">Step 3: Preview</a>
 
@@ -185,3 +188,7 @@ status update.
 
 ![](images/user-interaction_2.png)
 
+!!! note
+
+    * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within XO Bots.
+    * See [Notify](./notify-bot-agent-api.md) that allows developers to send interactive notifications to the users.

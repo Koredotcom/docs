@@ -1,6 +1,10 @@
 # Notify API
 
-The Notify API enables developers to send interactive notifications to AI for Work users. These notifications can include customizable response options and action buttons.
+The Notify API enables developers to send interactive notifications to AI for Work users. These notifications can include customizable response options and action buttons. 
+  
+!!! note
+
+    Applicable only for Bot Agents.
 
 <table>
   <tr>
@@ -26,7 +30,7 @@ The Notify API enables developers to send interactive notifications to AI for Wo
    </td>
    <td>authorization: &lt;authToken>
 <p>
-<strong><em>Note</em></strong>: The value of <strong>authorization </strong>will be the access token from the Bot agent settings page.
+<strong><em>Note</em></strong>: The value of <strong>authorization </strong>will be the access token from the Bot agent settings page. See <a href="https://docs.kore.ai/ai-for-work/custom-agents/bot-agent/">Bot Agents</a>
    </td>
   </tr>
   <tr>
@@ -52,7 +56,7 @@ The Notify API enables developers to send interactive notifications to AI for Wo
    </td>
    <td>Required
    </td>
-   <td>Environment URL, for example, https://AI-for-Work.kore.ai
+   <td>Environment URL, for example, https://work.kore.ai
    </td>
   </tr>
   <tr>
@@ -60,9 +64,9 @@ The Notify API enables developers to send interactive notifications to AI for Wo
    </td>
    <td>Required
    </td>
-   <td>This portion of the URL is a placeholder for the unique identifier of the specific agent.
+   <td>This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.
 <p>
-When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.
+ <strong><em>Note</em></strong>: Obtain the agent ID from the Post URL field while creating a bot agent. See <a href="https://docs.kore.ai/ai-for-work/custom-agents/bot-agent/">Bot Agents</a>
    </td>
   </tr>
 </table>
