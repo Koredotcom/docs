@@ -229,7 +229,7 @@ optional for POST
    </td>
    <td>optional
    </td>
-   <td>The number of messages to be skipped.
+   <td>The number of sessions to be skipped.
    </td>
   </tr>
   <tr>
@@ -379,7 +379,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td>optional
    </td>
-   <td>The number of messages to be skipped.
+   <td>The number of sessions to be skipped.
    </td>
   </tr>
   <tr>
