@@ -5,7 +5,7 @@ The API can upload a file to the local server for seamless usage in multimodal n
 The following file upload modes are supported:
 
 * [Mode 1 - Upload a single file as is](./upload-file-api.md/#mode-1-upload-a-single-file-as-is){:target="_blank"}: For files smaller than 25 MB.
-* [Mode 2 - Upload a file in chunks](./upload-file-api.md/#mode-2---upload-a-file-in-chunks){:target="_blank"}: For files larger than 25 MB.
+* [Mode 2 - Upload a file in chunks](./upload-file-api.md/#mode-2-upload-a-file-in-chunks){:target="_blank"}: For files larger than 25 MB.
 
 The following file extensions are currently supported:
 
@@ -167,8 +167,8 @@ curl --location 'https://gale.kore.ai/api/public/files' \
 This method requires three APIs to upload a large file. The key steps include:
 
 1. [Start the file upload session](./upload-file-api.md/#start-session-api){:target="_blank"}.
-2. [Upload in chunks](./upload-file-api.md/#upload-file-api){:target="_blank"}, and 
-3. [Merge the chunks to complete the process](./upload-file-api.md/#chunk-upload-api){:target="_blank"}.
+2. [Upload in chunks](./upload-file-api.md/#chunk-upload-api){:target="_blank"}, and 
+3. [Merge the chunks to complete the process](./upload-file-api.md/#complete-the-process){:target="_blank"}.
 
 ### Start Session API
 
