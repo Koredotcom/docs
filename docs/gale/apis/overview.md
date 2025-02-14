@@ -33,11 +33,10 @@ Otherwise, click **Create**.
 
 <img src="../images/management-api-keys.png" alt="management api keys" title="management api keys" style="border: 1px solid gray; zoom:75%;">
 
-4. In the **Create new API key** dialog, provide a name and click **Generate Key**.
-<img src="../images/create-new-api-key-form.png" alt="create a new api key" title="create a new api key" style="border: 1px solid gray; zoom:75%;">
-
-5. Once the key is successfully generated, click **Copy and Close** to copy the API key.
-<img src="../images/generate-new-secret-key.png" alt="copy api key" title="copy api key" style="border: 1px solid gray; zoom:75%;">
+<ol start="4"><li>In the <b>Create new API key</b> dialog, provide a name and click <b>Generate Key</b>.
+<img src="../images/create-new-api-key-form.png" alt="create a new api key" title="create a new api key" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Once the key is successfully generated, click <b>Copy and Close</b> to copy the API key.
+<img src="../images/generate-new-secret-key.png" alt="copy api key" title="copy api key" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ## List of APIs
 
