@@ -50,9 +50,11 @@ This section allows app users to access detailed billing information, helping th
 * Billing Sessions: Total number of billing sessions completed, encompassing automation AI interactions and API requests.
 * Voice Sessions: Total number of voice-based interactions across products, including Speech-to-Text (STT), Text-to-Speech (TTS), and calls via the Voice Gateway.
 * Agent Count: Concurrent Agent Seats that the customers have subscribed to for the given time.  
-!!!Note
+
+!!! note
    
-      The Agent Count is not displayed for enterprise customers.
+    The Agent Count is not displayed for enterprise customers.
+
 
 Users can filter and view billing data for individual apps and refine the data further with date filters. They can select from predefined ranges such as 24 hours, 7 days, 30 days, or 90 days or set a custom date range.
 
