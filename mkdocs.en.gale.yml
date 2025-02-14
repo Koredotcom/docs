@@ -201,6 +201,8 @@ nav:
   - APIs:
     - API Reference: 
       - Overview: apis/overview.md
+      - API List:
+        - File Upload API: apis/apis-list/upload-file-api.md
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 
