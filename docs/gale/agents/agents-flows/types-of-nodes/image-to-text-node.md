@@ -4,11 +4,11 @@ The **Image to Text** node in the agent builder processes an uploaded image and 
 
 A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../apis/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the agent endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
 
-<div class="admonition warning">
+<div class="admonition note">
 <p class="admonition-title">Important Considerations</p>
 <p><ul><li>The user can upload only one file at a time for processing.</li>
 <li>Except for image input handling, the OCR node functions like the existing Gen AI node.</li>
-<li>Sending images and related settings are handled by the <a href="../../../apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
+<li>Sending images and related settings are handled by the <a href="/gale/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
 <li>Image input preprocessing is supported in the following formats:</li>
 <ul><li>Binary, base64-encoded for Anthropic models.</li>
 <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
@@ -37,8 +37,8 @@ To add and configure the node, follow the steps below:
 
 5. Enter or select the following **General Settings**:
 
-* **Node Name**: Enter an appropriate name for the node. For example, “*InsuranceEvaluation*.”
-* Select a model from the list of configured models. 
+<ul><li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”</li>
+<li>Select a model from the list of configured models.</li></ul>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -67,5 +67,5 @@ To add and configure the node, follow the steps below:
 !!! Failure "Standard Error"
 
     When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.
-    
+
 
