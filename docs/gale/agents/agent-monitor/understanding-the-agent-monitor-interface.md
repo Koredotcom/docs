@@ -10,7 +10,7 @@ Both tabs include summary metrics at the top of the page, including total runs/r
 
 ## All Runs
 
-<img src="../images/agent_monitor_allruns_new.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/all-runs-dashboard.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The All runs tab provides the following information for each agent run:
 
@@ -24,7 +24,14 @@ The All runs tab provides the following information for each agent run:
 * **Nodes executed**: The total number of nodes executed in the run.
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
-* **API key**: The API key used to execute the agent. (This is the name provided in the **API keys** page when you created a new API key. If you did not provide a name, the system uses the default name ‘Secret Key’. You can have multiple API keys for a single agent.)
+* **Source**: Based on whether the agent/tool was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
+  * **Agentic App** - The name of the Agentic App used to run the agent/tool.
+   * **API Key**: The API key name used to execute the agent. (This is the name provided in the API keys page when you created a new API key. If you did not provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single agent).
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When there is a nested (multi-level) tool calling, the immediate tool (parent) is displayed as the source.</p>
+</div>
 
 You can also see the following metrics on the top of the page: 
 
