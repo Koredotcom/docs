@@ -41,7 +41,7 @@ Otherwise, click **Create**.
 
 ## List of APIs
 
-Currently, the following APIs are supported on GALE:
+Currently, the following APIs are available:
 
 <table>
   <tr>
