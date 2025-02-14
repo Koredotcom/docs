@@ -1,0 +1,132 @@
+# Overview
+
+GALE provides secured APIs to manage agents/tools, models, guardrails, prompts, files, and evaluations. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs at the appropriate endpoints.
+
+## API Key Authentication
+
+Public APIs require an API key for authentication and authorization. The account owner or admin can generate this key in the **Settings** console. 
+
+An API key serves as a unique identifier for the client or application accessing the API, ensuring security and access control. It helps:
+
+* **Authenticate requests** – Verify the identity of the client.
+* **Control access** – Restrict API usage based on permissions or rate limits.
+* **Monitor usage** – Track API calls for analytics, billing, or debugging.
+* **Prevent abuse** – Protect against unauthorized or excessive use.
+
+API keys are typically included in request headers or parameters to validate access.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each API key includes <b>created on</b> and <b>last used</b> dates to track its usage history.</p>
+</div>
+
+## How to Find the API Key?
+
+1. [Login](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE and [access](../settings/settings-overview.md/#access-settings-console){:target="_blank"} the **Settings** Console.
+
+2. On the left menu, click **Security & Control** -> **Management API keys**.
+
+3. Click the **Create API key** button if you are creating an API key for the first time.
+<img src="../images/access-create-api-keys.png" alt="create api key" title="create api key" style="border: 1px solid gray; zoom:75%;">
+
+Otherwise, click **Create**.
+
+<img src="../images/management-api-keys.png" alt="management api keys" title="management api keys" style="border: 1px solid gray; zoom:75%;">
+
+4. In the **Create new API key** dialog, provide a name and click **Generate Key**.
+<img src="../images/create-new-api-key-form.png" alt="create a new api key" title="create a new api key" style="border: 1px solid gray; zoom:75%;">
+
+5. Once the key is successfully generated, click **Copy and Close** to copy the API key.
+<img src="../images/generate-new-secret-key.png" alt="copy api key" title="copy api key" style="border: 1px solid gray; zoom:75%;">
+
+## List of APIs
+
+Currently, the following APIs are supported on GALE:
+
+<table>
+  <tr>
+   <td><strong>SCOPE</strong>
+   </td>
+   <td><strong>DESCRIPTION</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>File Upload</strong>
+   </td>
+   <td>To upload a small or large public file of the allowed format.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Import a New Tool (Agent)</strong>
+   </td>
+   <td>To import a new tool into the system.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Import to Existing Tool </strong>
+   </td>
+   <td>To import new configurations, datasets, or updates into an already existing tool within the system.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Export a Tool </strong>
+   </td>
+   <td>To export an existing tool's configuration and associated data, including its flow, for backup, sharing, or reuse.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Deploy a Tool</strong>
+   </td>
+   <td>To deploy a specific tool into an environment.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Undeploy a Tool</strong>
+   </td>
+   <td>To undeploy a specific tool from an environment.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Import a Model</strong>
+   </td>
+   <td>Import a model in chunks into the system.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Export a Model</strong>
+   </td>
+   <td>To export a trained AI model from the system.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Deploy a Model</strong>
+   </td>
+   <td>To deploy a model into the environment in the <strong><em>Ready to Deploy</em></strong> state and configure its parameters. The initial deployment must be done manually in the GALE account. Consecutive deployments must happen via the public API.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Undeploy a Model</strong>
+   </td>
+   <td>To undeploy a model from the environment.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Deploy Guardrails</strong>
+   </td>
+   <td>To deploy predefined guardrails into the system.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Undeploy Guardrails</strong>
+   </td>
+   <td>To undeploy predefined guardrails from the system.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Get Dock Status</strong>
+   </td>
+   <td>To check the status of an ongoing or completed job related to tools or models.
+   </td>
+  </tr>
+</table>
+
