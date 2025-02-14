@@ -130,6 +130,7 @@ nav:
         - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - Image to Text: agents/agents-flows/types-of-nodes/image-to-text-node.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
