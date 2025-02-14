@@ -50,7 +50,7 @@ Currently, the following APIs are available:
    </td>
   </tr>
   <tr>
-   <td><a href="../apis/apis-list/upload-file-api/" target="_blank">File Upload</a>
+   <td><a href="../apis-list/upload-file-api/" target="_blank">File Upload</a>
    </td>
    <td>To upload a small or large public file of the allowed format.
    </td>
