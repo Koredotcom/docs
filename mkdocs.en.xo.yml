@@ -429,7 +429,7 @@ nav:
       - Analyze:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
+          - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
           - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
@@ -444,8 +444,8 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/evaluation-metrics.md
+          - Evaluation Forms: quality-management/configure/evaluation-forms.md
+          - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
