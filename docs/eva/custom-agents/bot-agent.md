@@ -12,7 +12,7 @@ You can create a new agent or import an existing one.
 
 -   [Create a new bot agent](#create-a-new-bot-agent)
 
-# Import existing Bot Agent
+## Import existing Bot Agent
 
 To import an existing Bot Agent:
 
@@ -25,7 +25,7 @@ To import an existing Bot Agent:
 3.  Click **Import** to complete the process. The imported agent will appear on
     the Bot Agents page.
 
-## Create a New Bot Agent
+### Create a New Bot Agent
 
 You can create a new Bot agent to assist users in completing various tasks by
 utilizing the Bot created using the XO Platform. [Learn
@@ -79,12 +79,12 @@ To create a new Bot Agent, follow these steps:
 
     4.  [Step 4: Publish Bot Agent](#publish)
 
-### Step 1: Details and Purpose
+#### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables it to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed.
 ![](images/detail-purpose.png)
 
-### Step 2: Add Bot 
+#### Step 2: Add Bot 
 
 The Add Bot feature enables seamless integration of a virtual assistant created
 on the Kore.ai platform with your system. To establish this connection, ensure
@@ -106,9 +106,13 @@ activated, follow the integration steps to complete the process:
 2. Click **Connect account** to move to the next step.
 
 !!! note
-     While enabling Notify API, extract the **agent ID** from the **Post URL** field and use the **auth token** from **Access token** field.
 
-### Step 3: Preview
+    * While enabling Notify API, extract the **agent ID** from the **Post URL** field.
+     <img src="../images/Agent_ID.png" alt="AgentID" title="AgentID" style="border: 1px solid gray; zoom:70%;">
+    * Copy your **auth token** from **Access token** field.
+    <img src="../images/Auth_Token.png" alt="AuthToken" title="AuthToken" style="border: 1px solid gray; zoom:70%;">
+  
+#### Step 3: Preview
 
 In the **Preview** section, a sample of queries is displayed. If necessary, you
 can click the **+ Add Query** button to add any other queries. Click
@@ -116,7 +120,7 @@ can click the **+ Add Query** button to add any other queries. Click
 
 ![](images/preview_bot.png)
 
-### Step 4: Publish Bot Agent
+#### Step 4: Publish Bot Agent
 
 In the **Publish** section, you can publish the agent so the users can use it as
 required.
@@ -167,14 +171,14 @@ To modify the agent, follow these steps:
     needed.
 
 
-# Agent Option
+## Agent Option
 
 The agent options allow you to export, delete, and un-publish the agent.
 
 ![](images/agent_option_bot.png)
 
 
-# User Interaction
+## User Interaction
 
 Interacting with the Bot Agent is designed to simplify communication and task
 execution. Users can initiate a conversation by typing a command. The bot

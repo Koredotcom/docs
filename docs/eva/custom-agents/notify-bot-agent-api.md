@@ -6,70 +6,21 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 
     Applicable only for Bot Agents.
 
-<table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>Post
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td>https://{{host}}/api/public/agents/{agentId}/notify
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content type</strong>
-   </td>
-   <td>application/json
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td>authorization: &lt;authToken>
-<p>
-<strong><em>Note</em></strong>: The value of <strong>authorization </strong>will be the access token from the Bot agent settings page. See <a href="https://docs.kore.ai/ai-for-work/custom-agents/bot-agent/">Bot Agents</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>Notification
-   </td>
-  </tr>
-</table>
+| Method<br>           | Post<br>                                                                                                                                               |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Endpoint<br>         | https://{{host}}/api/public/agents/{agentId}/notify<br>                                                                                                |
+| Content type<br>     | application/json<br>                                                                                                                                   |
+| Authorization<br>    | authorization: &lt;authToken><br><br>Note: The value of authorization will be the access token from the Bot agent settings page. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot)    |
+| API Scope<br>        | Notification<br>                                                                                                                                       |
+
 
 ## Path Parameter
-<table>
-  <tr>
-   <td>Parameter
-   </td>
-   <td>Required/Optional
-   </td>
-   <td>Description
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Required
-   </td>
-   <td>Environment URL, for example, https://work.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td>agent ID
-   </td>
-   <td>Required
-   </td>
-   <td>This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.
-<p>
- <strong><em>Note</em></strong>: Obtain the agent ID from the Post URL field while creating a bot agent. See <a href="https://docs.kore.ai/ai-for-work/custom-agents/bot-agent/">Bot Agents</a>
-   </td>
-  </tr>
-</table>
+
+| Parameter<br>    | Required/Optional<br>    | Description<br>                                                                                                                                                                                                                                                                                                         |
+|------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| host<br>         | Required<br>             | Environment URL, for example, https://work.kore.ai<br>                                                                                                                                                                                                                                                                  |
+| agent ID<br>     | Required<br>             | This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> Note: Obtain the agent ID from the Post URL field while creating a bot agent. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot)    |
+
 
 ## Sample Request
 
