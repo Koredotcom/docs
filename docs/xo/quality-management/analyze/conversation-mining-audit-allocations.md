@@ -1,11 +1,11 @@
 # Audit Allocations
 
-The Audit Allocation feature of Conversation Mining helps you to create and assign allocations to auditors for manual quality scoring.
+The Audit Allocations feature of Conversation Mining helps you to create and assign allocations to auditors for manual quality scoring.
 
-You can access the Audit Allocation by going to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocation**.  
+You can access **Audit Allocations** by going to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Audit Allocation**.  
 <img src="../conversation-mining/images/conversation-mining-new-audit-allocations.png" alt="New Audit Allocations" title="New Audit Allocations" style="border: 1px solid gray; zoom:80%;">
 
-**Audit Allocations** has following key Items:
+The **Audit Allocations** has following key Items:
 
 * **Agent**: Shows the name of the Auditor.
 * **Actions**:  Allows auditors to assign the allocation to the desired bookmark for later reference.
