@@ -75,25 +75,24 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 
 ```
 
-curl --location --request POST 'https://{{host}}/api/1.1/public/agents/{agentId}/notify' \
---header 'authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJ1LTcyODBkODUwLWIzODktNTYwYy1iYzZkLWQ5ZWQ0N2YwODc4YyIsImFjY291bnRJZCI6ImFjLWExNmI4NjAzLTRjNGQtNTdiNy1hNmUyLWRkZjUzZmVlNGVmYiIsInR5cGUiOiJwZXJzb25hbCIsImlhdCI6MTcxMzc4ODkyMX0.1yArs2BMX83EPh8a1JAvBQkxVhhSU8g2nACUuSnIRdU' \
+curl --location --request POST 'https://work.kore.ai/api/1.1/public/agents/ag-4405269f-4510-5ae2-bcea-6d356yvsu01/notify' \
+--header 'authorization: EypCddcFH6sgaJJkWj6k-Wbz6meimT09RXbTYDnYB3FA8$' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "to": "user@example.com",   
+    "to": "john.doe@kore.com",
     "message": {
         "title": "Agent Update",
-        "body": "body text"
+        "body": "Notification description"
     },
     "category": "agent",
-    "icon": "https://{{host}}/kora/icons/integrations/r/32/default.png",
     "actions": [
         {
             "title": "LaptopRequest",
             "type": "postback",
             "utterance": "submit action 1",
             "payload": {
-                "transactionId": "tx-qwe2qxxx",
-                "sessionId": "s-rerexxxrt",
+                "transactionId": "tx-qwe2cd11",
+                "sessionId": "s-reryt21rt",
                 "event": "laptopRequest"
             }
         }
@@ -142,16 +141,6 @@ curl --location --request POST 'https://{{host}}/api/1.1/public/agents/{agentId}
    <td>Required
    </td>
    <td>Category of the notification (e.g., "agent")
-   </td>
-  </tr>
-  <tr>
-   <td>icon 
-   </td>
-   <td>string 
-   </td>
-   <td>Required
-   </td>
-   <td>URL of the notification icon
    </td>
   </tr>
   <tr>
@@ -230,25 +219,7 @@ curl --location --request POST 'https://{{host}}/api/1.1/public/agents/{agentId}
 
 ```
 {
-  "to": "user@example.com",
-  "message": {
-    "title": "Network Issue Troubleshooting",
-    "body": "Could you please describe the network issue you're experiencing and mention which device or service it's affecting?"
-  },
-  "category": "agent",
-  "icon": "https://{{host}}//icons/integrations/r/32/default.png",
-  "actions": [
-    {
-      "title": "Laptop",
-      "type": "postback",
-      "utterance": "Provide troubleshooting steps for network issue in Laptop",
-      "payload": {
-        "transactionId": "tx-adaxxxxx",
-        "sessionId": "s-da1313xxx",
-        "event": "laptopRequest"
-      }
-    }
-  ]
+    "notify": "success"
 }
 ```
 

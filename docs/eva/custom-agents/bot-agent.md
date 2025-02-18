@@ -79,12 +79,12 @@ To create a new Bot Agent, follow these steps:
 
     4.  [Step 4: Publish Bot Agent](#publish)
 
-###   <a id="details">Step 1: Details and Purpose</a>
+### Step 1: Details and Purpose
 
 Provide a suitable and unique name for the agent and describe its purpose. Defining the agent’s purpose enables it to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed.
 ![](images/detail-purpose.png)
 
-###  <a id="bot">Step 2: Add Bot </a>
+### Step 2: Add Bot 
 
 The Add Bot feature enables seamless integration of a virtual assistant created
 on the Kore.ai platform with your system. To establish this connection, ensure
@@ -108,7 +108,7 @@ activated, follow the integration steps to complete the process:
 !!! note
      While enabling Notify API, extract the **agent ID** from the **Post URL** field and use the **auth token** from **Access token** field.
 
-##  <a id="preview">Step 3: Preview</a>
+### Step 3: Preview
 
 In the **Preview** section, a sample of queries is displayed. If necessary, you
 can click the **+ Add Query** button to add any other queries. Click
@@ -116,7 +116,7 @@ can click the **+ Add Query** button to add any other queries. Click
 
 ![](images/preview_bot.png)
 
-###   <a id="publish">Step 4: Publish Bot Agent</a>
+### Step 4: Publish Bot Agent
 
 In the **Publish** section, you can publish the agent so the users can use it as
 required.
