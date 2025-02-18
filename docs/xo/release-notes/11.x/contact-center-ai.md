@@ -29,7 +29,7 @@ Hovering over an agent’s name in the agents' tab shows key details about the a
 
 ### Configuration
 
-### Support for Queue Name in agentUtils.setQueue
+#### Support for Queue Name in agentUtils.setQueue
 
 The `agentUtils.setQueue` function is enhanced with queue identification capabilities and improved error handling.
 
