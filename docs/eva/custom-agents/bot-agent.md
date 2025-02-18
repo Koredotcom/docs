@@ -105,13 +105,6 @@ activated, follow the integration steps to complete the process:
 
 2. Click **Connect account** to move to the next step.
 
-!!! note
-
-    * While enabling Notify API, extract the **agent ID** from the **Post URL** field.
-     <img src="../images/Agent_ID.png" alt="AgentID" title="AgentID" style="border: 1px solid gray; zoom:70%;">
-    * Copy your **auth token** from **Access token** field.
-    <img src="../images/Auth_Token.png" alt="AuthToken" title="AuthToken" style="border: 1px solid gray; zoom:70%;">
-  
 #### Step 3: Preview
 
 In the **Preview** section, a sample of queries is displayed. If necessary, you

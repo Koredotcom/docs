@@ -10,7 +10,7 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Endpoint<br>         | https://{{host}}/api/public/agents/{agentId}/notify<br>                                                                                                |
 | Content type<br>     | application/json<br>                                                                                                                                   |
-| Authorization<br>    | authorization: &lt;authToken><br><br>**Note**: The value of authorization will be the access token from the Bot agent settings page. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot)    |
+| Authorization<br>    | authorization: &lt;authToken><br><br>**Note**: The access token obtained from the Bot agent settings page will serve as the authorization token. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot)  <img src="../images/Auth_Token.png" alt="AuthToken" title="AuthToken" style="border: 1px solid gray; zoom:70%;"> |
 | API Scope<br>        | Notification<br>                                                                                                                                       |
 
 
@@ -19,8 +19,7 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 | Parameter<br>    | Required/Optional<br>    | Description<br>                                                                                                                                                                                                                                                                                                         |
 |------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | host<br>         | Required<br>             | Environment URL, for example, https://work.kore.ai<br>                                                                                                                                                                                                                                                                  |
-| agent ID<br>     | Required<br>             | This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> **Note**: Obtain the agent ID from the Post URL field while creating a bot agent. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot)    |
-
+| agent ID<br>     | Required<br>             | This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> **Note**: Obtain the agent ID from the Post URL field while creating a bot agent. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot) <img src="../images/Agent_ID.png" alt="AgentID" title="AgentID" style="border: 1px solid gray; zoom:70%;">   |
 
 ## Sample Request
 
