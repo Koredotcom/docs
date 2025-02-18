@@ -131,6 +131,7 @@ nav:
       - API Agents: custom-agents/api-agents.md 
     - Agentic App: 
       - Standard Apps: custom-agents/agentic-apps.md
+      - Advanced Apps: custom-agents/advanced-agentic-apps.md
   - Pre-built Agents:
     - Overview: pre-built-agents/overview.md
   - Pre-built Solutions:
