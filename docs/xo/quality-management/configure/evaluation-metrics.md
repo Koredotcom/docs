@@ -50,9 +50,9 @@ The following table describes the Evaluation Metrics Measurement Types:
    </td>
    <td>Select a preferred language from the drop-down list.
    </p>
-  <strong>Note</strong>: For **Dynamic**, you must configure at least one Trigger and one agent Answer utterance for the Adherence Type.
-  
-  For **Static**, you must configure at least one agent **Answer** utterance for **Adherence Type**.
+  <strong>Note</strong>: For <strong>Dynamic</strong>, you must configure at least one trigger and one agent <strong>Answer</strong> utterance for the <strong>Adherence Type</strong>.
+   </br>
+  For <strong>Static</strong>, you must configure at least one agent <strong>Answer</strong> utterance for the <strong>Adherence Type</strong>.
 </td>
   </tr>
   <tr>
@@ -68,7 +68,6 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td>Provides the following two types of adherences:
 
 <ul>
-
 <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
 
 To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.</li>
