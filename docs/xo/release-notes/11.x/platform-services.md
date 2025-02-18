@@ -10,7 +10,6 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 ### LLM & Generative AI
 
-
 #### Support for Recently Released Language Models in the Out-of-box Integration Framework 
 
 With this update, platform users can leverage the latest LLMs as soon as they become available. The XO Platform now enables the immediate addition of new language models as system models within the out-of-box Pre-built Integration framework.

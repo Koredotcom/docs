@@ -152,14 +152,6 @@ The following table displays the features and the supported models.
     |Amazon Bedrock|✅|✅|❌|✅|✅|
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
 
-=== "Search AI"
-
-    | Models  | Generating Similar Answer Suggestions |
-    |-------------------------------|:----:|
-    | Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4| ✅|
-    | OpenAI – <br>GPT 3.5 Turbo and GPT 4| ✅|
-
-
 === "Agent AI"
 
     |Models|Generating Opposite Utterance Suggestions|Generating Similar Utterance Suggestions|

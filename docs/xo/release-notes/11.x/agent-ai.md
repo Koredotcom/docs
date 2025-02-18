@@ -23,6 +23,7 @@ The Agent AI widget’s load time has been optimized by removing synchronous API
 
 Agent AI widget is now capable of honoring the pause and resume events transmitted from agent desktops to control the visibility of transcripts to agents within the Widget. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md)
 
+
 #### Enhanced Input Box for Override, List View, Restart, and Search Bar fields
 
 For improved navigation of longer entries, input text boxes of Override, List View, Restart, and Search Bar are now expanded to display up to three lines with a scroll bar.
