@@ -30,6 +30,8 @@ The upgrade journey involves user consent, downloading a bot backup, a multi-ste
 6. Test the new upgraded App, verify functionality, and assess the migration's impact.
 7. Once the duplicate bot works as expected, upgrade the original bot to XO v11.
 
+<hr>
+
 ##### Related Links
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)
