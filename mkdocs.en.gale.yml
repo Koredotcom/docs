@@ -203,10 +203,12 @@ nav:
     - API Reference: 
       - Overview: apis/overview.md
       - API List:
+        - Deploy a Tool API: apis/apis-list/deploy-a-tool.md
+        - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md
         - File Upload API: apis/apis-list/upload-file-api.md
         - Get Dock Status API: apis/apis-list/get-dock-status.md
-        - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md
-        - Undeploy Guardrails API: apis/apis-list/undeploy-guardrails.md
+        - Undeploy a Tool (Agent) API: apis/apis-list/undeploy-a-tool.md
+        - Undeploy Guardrails API: apis/apis-list/undeploy-guardrails.md             
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 

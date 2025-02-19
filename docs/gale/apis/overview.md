@@ -71,9 +71,9 @@ Currently, the following APIs are available:
    <td>To import new configurations, datasets, or updates into an already existing tool within the system.</td></tr>
   <tr><td>Export a Tool API</td>
    <td>To export an existing tool's configuration and associated data, including its flow, for backup, sharing, or reuse.</td></tr>
-  <tr><td>Deploy a Tool API</td>
+  <tr><td><a href="../apis-list/deploy-a-tool/" target="_blank">Deploy a Tool API</a></td>
    <td>To deploy a specific tool into an environment.</td></tr>
-  <tr><td>Undeploy a Tool API</td>
+  <tr><td><a href="../apis-list/undeploy-a-tool/" target="_blank">Undeploy a Tool API</a>
    <td>To undeploy a specific tool from an environment.</td></tr>
   <tr><td rowspan="4"><b>Manage a Model</b></td>
    <td>Import a Model API</td>

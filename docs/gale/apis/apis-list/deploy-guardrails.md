@@ -115,7 +115,7 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
    </td>
    <td>Name of the guardrail to deploy.
    </td>
-   <td>enum
+   <td>Enum
    </td>
    <td>Required
    </td>
