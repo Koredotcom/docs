@@ -50,11 +50,21 @@ Currently, the following APIs are available:
    </td>
   </tr>
   <tr>
-   <td><a href="../apis-list/upload-file-api/" target="_blank">File Upload</a>
+  <td colspan="2"><b>File Management</b></td></tr>
+  <tr>
+    <td><a href="../apis-list/upload-file-api/" target="_blank">File Upload</a>
    </td>
-   <td>To upload a small or large public file of the allowed format.
+   <td>To upload a small or large public file in the allowed format.
    </td>
   </tr>
+    <tr><td colspan="2"><b>View Process Status</b></td></tr>
+    <tr>
+   <td><a href="../apis-list/get-dock-status/" target="_blank">Get Dock Status</a>
+   </td>
+   <td>To check the status of an ongoing or completed job related to tools or models.
+   </td>
+  </tr>
+  <tr><td colspan="2"><b>Manage a Tool</b></td></tr>
   <tr>
    <td><strong>Import a New Tool (Agent)</strong>
    </td>
@@ -85,6 +95,7 @@ Currently, the following APIs are available:
    <td>To undeploy a specific tool from an environment.
    </td>
   </tr>
+  <tr><td colspan="2"><b>Manage a Model</b></td></tr>
   <tr>
    <td><strong>Import a Model</strong>
    </td>
@@ -109,6 +120,7 @@ Currently, the following APIs are available:
    <td>To undeploy a model from the environment.
    </td>
   </tr>
+  <tr><td colspan="2"><b>Manage Guardrails</b></td></tr>
   <tr>
    <td><strong>Deploy Guardrails</strong>
    </td>
@@ -121,13 +133,7 @@ Currently, the following APIs are available:
    <td>To undeploy predefined guardrails from the system.
    </td>
   </tr>
-  <tr>
-   <td><strong>Get Dock Status</strong>
-   </td>
-   <td>To check the status of an ongoing or completed job related to tools or models.
-   </td>
-  </tr>
-</table>
+  </table>
 
 
 
