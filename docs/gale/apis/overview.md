@@ -78,7 +78,7 @@ Currently, the following APIs are available:
   <tr><td rowspan="4"><b>Manage a Model</b></td>
    <td>Import a Model API</td>
    <td>Import a model in chunks into the system.</td></tr>
-  <tr><td>Export a Model API</td>
+  <tr><td><a href="../apis-list/export-a-model/" target="_blank">Export a Model API</a></td>
    <td>To export a trained AI model from the system.</td>
   </tr>
   <tr><td><a href="../apis-list/deploy-a-model/" target="_blank">Deploy a Model API</a></td>

@@ -34,7 +34,7 @@ The API response includes the **tool ID** and the **tool undeployment status**. 
 
 **Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
-## Query Parameters
+## Path Parameters
 
 <table>
   <tr>

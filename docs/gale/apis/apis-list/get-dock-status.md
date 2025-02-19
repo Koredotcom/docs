@@ -33,8 +33,7 @@ This API allows users to track the status of ongoing or completed jobs related t
 **Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 
-## Query Parameters
-
+## QPath Parameters
 
 <table>
   <tr>

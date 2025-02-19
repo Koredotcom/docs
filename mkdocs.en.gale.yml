@@ -207,6 +207,7 @@ nav:
         - Deploy a Model API: apis/apis-list/deploy-a-model.md
         - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md
         - Export a Tool API: apis/apis-list/export-a-tool.md
+        - Export a Model API: apis/apis-list/export-a-model.md
         - File Upload API: apis/apis-list/upload-file-api.md
         - Get Dock Status API: apis/apis-list/get-dock-status.md
         - Undeploy a Tool (Agent) API: apis/apis-list/undeploy-a-tool.md

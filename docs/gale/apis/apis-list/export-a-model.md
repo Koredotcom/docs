@@ -1,7 +1,8 @@
-# Undeploy a Model API
+# Export a Model API
 
-This API undeploys a model from the environment. The API response includes the **model ID** and the **model undeployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify successful model undeployment.
+This API exports a trained AI model from the system. Once initiated, the export process runs in the background. Use the <code>dockStatusId</code> from the API response to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and track the export status.
 
+Additionally, the response provides a **download URL**. Copy and paste this URL into a browser or API client to download the exported model’s file.
 
 <table>
   <tr>
@@ -13,7 +14,7 @@ This API undeploys a model from the environment. The API response includes the *
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><strong> </strong><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/undeploy</code>
+   <td><code>https://{<em>host</em>}/api/public/models/:{<em>modelId</em>}/export</code>
    </td>
   </tr>
   <tr>
@@ -56,9 +57,9 @@ This API undeploys a model from the environment. The API response includes the *
    </td>
   </tr>
   <tr>
-   <td><strong>modelId</strong>
+   <td>modelId
    </td>
-   <td>The unique identifier of the model to deploy.
+   <td>The unique identifier of the model you want to export.
    </td>
    <td>String
    </td>
@@ -67,30 +68,43 @@ This API undeploys a model from the environment. The API response includes the *
   </tr>
 </table>
 
+
+
 ## Sample Request
 
-```js
-curl --location --request POST 'https://dev-agent-platform.kore.ai/api/public/models/cm-20xxxxxf-0xx9-5xx0-8xx1-81xxxxxxxx80/undeploy' \
---header 'x-api-key: kg-axxxxxxx-xxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
+
 ```
+curl --location --request POST 'https://dev-axxxt-plxxxxrm.kore.ai/api/public/models/cm-9xxxxxxxxxxxxxxxxxx2/export' \
+--header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-xxx-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
+```
+
+
 
 ## Body Parameters
 
 No parameters are passed.
 
+
 ## Sample Response
 
-```js
+
+```
 {
-  "dock-statusId": "ds-d0xxxxxd-bxx9-5xx0-8xx5-5bxxxxxxxxx1",
-  "modelId": "cm-77xxxxxb-exx9-5xxc-8xx6-52xxxxxxxxx1",
-  "jobType": "MODELS",
-  "action": "UNDEPLOY",
-  "status": "SUCCESS"
+  "_id": "ds-fxxxxxx0-6xxf-5xxb-9xxf-ebxxxxxxxxx0",
+   "modelId": "cm-ddxxxxxb-0xxb-5xxe-bxx2-51xxxxxxxxx6",
+   "jobType": "MODELS",
+   "action": "EXPORT",
+   "status": "SUCCESS",
+   "percentageComplete": 100,
+   "response": {
+       "downloadUrl": "https://gale.kore.ai/api/v1/account/xxxxxx"
+  }
 }
 ```
 
+
 ## Response Parameters
+
 
 <table>
   <tr>
@@ -104,7 +118,7 @@ No parameters are passed.
   <tr>
    <td><strong>dockStatusId</strong>
    </td>
-   <td>The unique identifier to track the model undeployment status.
+   <td>The unique identifier to track the status of action. For example: import, export, deploy, etc.
    </td>
    <td>String
    </td>
@@ -120,7 +134,7 @@ No parameters are passed.
   <tr>
    <td><strong>jobType</strong>
    </td>
-   <td>Type of job being performed (“<em>MODELS</em>”).
+   <td>Type of job being performed.
    </td>
    <td>String
    </td>
@@ -128,7 +142,7 @@ No parameters are passed.
   <tr>
    <td><strong>action</strong>
    </td>
-   <td>The action performed on the model, i.e. “<em>UNDEPLOY</em>”).
+   <td>The action that is performed on the model.
    </td>
    <td>String
    </td>
@@ -136,9 +150,26 @@ No parameters are passed.
   <tr>
    <td><strong>status</strong>
    </td>
-   <td>The current status of the job ("<em>SUCCESS</em>", "<em>IN_PROGRESS</em>", or "<em>FAILED</em>").
+   <td>The current status of the job (<em>IN_PROGRESS</em>, <em>SUCCESS</em>, or <em>FAILED</em>).
+   </td>
+   <td>String
+   </td>
+  </tr>
+  <tr>
+   <td><strong>percentageComplete</strong>
+   </td>
+   <td>The percentage of the model export process that is complete.
+   </td>
+   <td>Number
+   </td>
+  </tr>
+  <tr>
+   <td><strong>downloadURL</strong>
+   </td>
+   <td>The URL to download the exported model file.
    </td>
    <td>String
    </td>
   </tr>
 </table>
+
