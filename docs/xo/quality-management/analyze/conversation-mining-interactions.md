@@ -1,19 +1,19 @@
-# Conversation Mining - Interactions
+# Overview
 
-The Conversation Mining feature allows you to drill-down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
+The Conversation Mining feature lets you focus on interactions of interest or those with the greatest potential for improvement, removing guesswork from manual evaluations and allowing you to concentrate on the most critical interactions.
 
 You can access Conversation Mining by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining**.  
 
 <img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
-The Conversation Mining has the following two sections:
+The Conversation Mining includes the following sections:
 
-* Interactions
-* Audit Allocations
+* **Interactions**: Enables viewing of scored interactions and applying filters for targeted reviews. 
+* **Audit Allocations**: Lets you create and assign allocations for auditors to perform manual quality scoring.
 
 ## Interactions
 
-Users can see scored interactions or evaluation information at a glance from Conversation Mining. Users can apply filters to focus on specific interactions or with high potential for improvement and save the filters for auditing purposes. Interactions visible on the conversation mining screen are limited to the user's assigned queues.
+You can see scored interactions or evaluation information at a glance from Conversation Mining. You can apply filters to focus on specific interactions or with high potential for improvement and save the filters for auditing purposes. Interactions visible on the conversation mining screen are limited to the user's assigned queues.
 
 The Conversation Mining interaction listing streamlines identifying specific interactions, saving time on manual reviews and enhancing decision-making and operational efficiency. You can customize the page by adding metadata and columns, improving oversight quality.  
 
@@ -26,7 +26,7 @@ You can access **Interactions** by navigating to **Contact Center AI** > **Quali
 
 The **Interactions** has following key Items:
 
-* **Agents**: Shows the agent who last participated in the interaction and has terminated this call. By hovering over the agents, the users can view the tagged topics and tagged intent.
+* **Agents**: Shows the agent who last participated in the interaction and has terminated this call. By hovering over the agents, you can view the tagged topics and tagged intent.
 
   * **Topic Tags**: Each interaction displays classified topics as tags. Hovering on this tag, shows all the relevant topics mentioned in that conversation.  
   <img src="../conversation-mining/images/conversation-interaction-topic-tags.png" alt="Topic Tags" title="Topic Tags" style="border: 1px solid gray; zoom:80%;">
@@ -34,7 +34,7 @@ The **Interactions** has following key Items:
   * **Intent Tags**: Each interaction shows classified intents as tags. Hovering on the intent tag, shows all the relevant intents mentioned in that conversation.  
   <img src="../conversation-mining/images/conversation-mining-interaction-intent-tags.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
-* **Actions**: Allows users to assign the interaction to the desired bookmark for later reference.
+* **Actions**: Allows you to assign the interaction to the desired bookmark for later reference.
 
     !!! Note
 
@@ -58,7 +58,7 @@ When you hover over the listed **Moments**, the following metrics are displayed:
 * **Violations**: Speech-based violations that occurred.
 * **Omissions**: Metrics not adhered to; including playbook steps, dialog tasks, and by question metrics.
 
-Clicking on an interaction opens the corresponding AI assisted manual audit page that allows the user to view the conversation history and the recording.    
+Clicking on an interaction opens the corresponding AI assisted manual audit page that allows you to view the conversation history and the recording.    
 <img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters Audit Page" title="Interactions Filters Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 Auditors can check the following near-miss scenarios by reviewing metrics on the audit screen:
@@ -71,7 +71,7 @@ Auditors can check the following near-miss scenarios by reviewing metrics on the
 
 ### Columns
 
-Allows users to filter the following default fields:
+Allows you to filter the following default fields:
 Supervisor Auditor Score: This shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
 
 * **Supervisor Auditor Score**: This shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
@@ -84,7 +84,7 @@ Supervisor Auditor Score: This shows the Supervisor Audited score if the interac
 
 ### Bookmarks
 
-Allows users to assign the interaction to a bookmark and displays all the bookmarks that a given interaction has been assigned to.  
+Allows you to assign the interaction to a bookmark and displays all the bookmarks that a given interaction has been assigned to.  
 <img src="../conversation-mining/images/conversation-mining-interaction-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:80%;">
 
 ### Date Range Selection
@@ -109,7 +109,7 @@ Clicking any interaction will navigate you to the AI Assisted manual audit scree
 
 ### Add New Filter
 
-This new filter interaction lets you to focus on those areas of interest or with high potential for improvement, which allows users to save them for audit assignments. This helps users to filter out the options and identify which particular interaction has gone wrong.
+This new filter interaction lets you to focus on those areas of interest or with high potential for improvement, which allows you to save them for audit assignments. This also helps you to filter out the options and identify which particular interaction has gone wrong.
 
 Steps to Add New Filter:
 
@@ -137,14 +137,14 @@ This provides an operational view of areas of interest where there is greater po
 
     !!! Note
 
-        The user can filter the **Agents**, based on the interactions that are part of the queues and the user is part of.
+        You can filter the **Agents**, based on the interactions that are part of the queues and the user is part of.
 
 5. From the **Agents** list, add the agent name based on the queue selected.  
 <img src="../conversation-mining/images/agents.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
-        The user can filter the **Agent Groups**, who are part of the queues, not based on agents in the agent group that are part of other queues.
+        You can filter the **Agent Groups**, who are part of the queues, not based on agents in the agent group that are part of other queues.
 
 6. Enable either of the following options:
     * **Average handling time**: Filters interactions based on the start and end of handling time range of interaction.    
@@ -225,7 +225,7 @@ This detects the number of escalations raised to the Supervisor by a customer.
 
 * **Metric Name**
 
-This filter allows you to view interactions based on a specific evaluation metric, which the user can filter by selecting Pass or Fail options. The selected metric appears as a tag below the input field, which you can remove by clicking the cross button to hide the Metric Qualification field. When you access the Conversation Mining page through the Adherence Heatmap, the filter settings are automatically applied.  
+This filter allows you to view interactions based on a specific evaluation metric, where you can filter by selecting Pass or Fail options. The selected metric appears as a tag below the input field, which you can remove by clicking the cross button to hide the Metric Qualification field. When you access the Conversation Mining page through the Adherence Heatmap, the filter settings are automatically applied.  
 <img src="../conversation-mining/images/metric-name.png" alt="Empathy Score" title="Empathy Score" style="border: 1px solid gray; zoom:80%;">
 
 **Metric Qualification** 
@@ -257,19 +257,19 @@ Once you Save Filter, you will get the following filters options to:
 
 * **Copy**
 
-    Allows the user to create another saved copy of the filter.
+    Allows you to create another saved copy of the filter.
 
 * **Mark as default**
 
-    Allows the user to apply the newly created filter as a default filter whenever the call mining tab is opened.
+    Allows you to apply the newly created filter as a default filter whenever the call mining tab is opened.
 
 * **Edit Filter**
 
-    Allows the user to edit a saved filter.
+    Allows you to edit a saved filter.
 
 * **Delete Filter**
 
-    Allows the user to delete the saved filter.
+    Allows you to delete the saved filter.
 
     <img src="../conversation-mining/images/conversation-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">
 
