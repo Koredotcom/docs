@@ -50,7 +50,7 @@ This API allows users to track the status of ongoing or completed jobs related t
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, https://gale.kore.ai
+   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
    </td>
    <td>String
    </td>
@@ -72,8 +72,8 @@ This API allows users to track the status of ongoing or completed jobs related t
 ## Sample Request
 
 ```js
-curl --location 'https://qa-gale.kore.ai/api/public/dock-status/ds-24xxxxx3-0xxc-5xx5-axx3-c19xxxxxxxx8' \
---header 'x-api-key: kg-abxxxxx7-5xx3-5xx8-bxxb-9xxxx''
+curl --location 'https://xx-gxxe.kore.ai/api/public/dock-status/ds-24xxxxx3-0xxc-5xx5-axx3-c19xxxxxxxx8' \
+--header 'x-api-key: kg-abxxxxx7-5xx3-5xx8-bxxb-9xxxx'
 ```
 
 ## Body Parameters
@@ -108,7 +108,7 @@ No parameters are passed.
   <tr>
    <td><b>_id</b>
    </td>
-   <td>Unique identifier for the dock status.
+   <td>The unique identifier for the dock status.
    </td>
    <td>String
    </td>
@@ -118,7 +118,7 @@ No parameters are passed.
   <tr>
    <td><b>toolId</b>
    </td>
-   <td>Unique identifier for the tool.
+   <td>The unique identifier for the tool.
    </td>
    <td>String
    </td>
