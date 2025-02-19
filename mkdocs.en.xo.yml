@@ -171,7 +171,9 @@ nav:
       - What's New:
         - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
-        - Current Limitations: release-notes/current-limitations.md      
+        - Migration Path for Existing Customers: getting-started/migration-path-xo10-to-xo11.md
+        - Current Limitations: release-notes/current-limitations.md  
+    
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md

@@ -142,4 +142,4 @@ The platform offers different plans, and you can choose the plan for each produc
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)
 * [Current Limitations](../release-notes/current-limitations.md)
-* [Migration Path for Existing Customers - Upgrade Journey](./whats-new-in-xo-platform.md#migration-path-for-existing-customers-upgrade-journey)
+* [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)
