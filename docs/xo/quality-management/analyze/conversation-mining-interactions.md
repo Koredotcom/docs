@@ -8,7 +8,7 @@ You can access Conversation Mining by navigating to **Contact Center AI** > **Qu
 
 The Conversation Mining includes the following sections:
 
-* **Interactions**: Enables viewing of scored interactions and applying filters for targeted reviews. 
+* **Interactions**: Enables you to view the scored interactions and applied filters for targeted reviews. 
 * **Audit Allocations**: Lets you create and assign allocations for auditors to perform manual quality scoring.
 
 ## Interactions
