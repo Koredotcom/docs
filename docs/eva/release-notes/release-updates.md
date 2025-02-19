@@ -38,17 +38,17 @@ This update includes new features and feature enhancements summarized below.
 * Search AI Connectors: We've expanded support to Search AI Connectors across multiple platforms and services. You can now index through these connectors in SearchAI app and see the results in AI for work.
 The latest release includes search connector support for the following services:
 
-   * Gmail
-   * Google Calendar
-   * Google Drive
-   * Outlook
-   * Outlook Calendar
-   * Slack
-   * Hubspot
-   * Jira
-   * BitBucket
-   * Zendesk
-   * Confluence
-   * Wordpress
+    * Gmail
+    * Google Calendar
+    * Google Drive
+    * Outlook
+    * Outlook Calendar
+    * Slack
+    * Hubspot
+    * Jira
+    * BitBucket
+    * Zendesk
+    * Confluence
+    * Wordpress
 
 <hr>
