@@ -420,11 +420,11 @@ nav:
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality Management:
-      - Overview: quality-management/about-quality-management.md   
-      - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md    
+      - Overview: quality-management/about-quality-management.md         
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
+      - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
       - Connectors: 
         - Introduction: quality-management/connectors/connector-intro.md
         - Amazon S3: quality-management/connectors/amazon-s3.md
@@ -436,6 +436,7 @@ nav:
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
+          - Overview: quality-management/analyze/conversation-mining-overview.md
           - Interactions: quality-management/analyze/conversation-mining-interactions.md 
           - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
