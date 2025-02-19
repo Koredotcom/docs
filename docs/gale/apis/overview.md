@@ -46,90 +46,52 @@ Currently, the following APIs are available:
   <tr>
    <td><strong>SCOPE</strong>
    </td>
+   <td><strong>API</strong>
+   </td>
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
   <tr>
-  <td colspan="2"><b>File Management</b></td></tr>
-  <tr>
-    <td><a href="../apis-list/upload-file-api/" target="_blank">File Upload</a>
+  <td><b>File Management</b></td>
+    <td><a href="../apis-list/upload-file-api/" target="_blank">File Upload API</a>
    </td>
    <td>To upload a small or large public file in the allowed format.
    </td>
   </tr>
-    <tr><td colspan="2"><b>View Process Status</b></td></tr>
-    <tr>
-   <td><a href="../apis-list/get-dock-status/" target="_blank">Get Dock Status</a>
+    <tr><td><b>View Process Status</b></td>
+     <td><a href="../apis-list/get-dock-status/" target="_blank">Get Dock Status API</a>
    </td>
    <td>To check the status of an ongoing or completed job related to tools or models.
    </td>
   </tr>
-  <tr><td colspan="2"><b>Manage a Tool</b></td></tr>
-  <tr>
-   <td><strong>Import a New Tool (Agent)</strong>
-   </td>
-   <td>To import a new tool into the system.
-   </td>
+  <tr><td rowspan="5"><b>Manage a Tool</b></td>
+    <td>Import a New Tool (Agent) API</td>
+   <td>To import a new tool into the system.</td></tr>
+    <tr><td>Import to Existing Tool API</td>
+   <td>To import new configurations, datasets, or updates into an already existing tool within the system.</td></tr>
+  <tr><td>Export a Tool API</td>
+   <td>To export an existing tool's configuration and associated data, including its flow, for backup, sharing, or reuse.</td></tr>
+  <tr><td>Deploy a Tool API</td>
+   <td>To deploy a specific tool into an environment.</td></tr>
+  <tr><td>Undeploy a Tool API</td>
+   <td>To undeploy a specific tool from an environment.</td></tr>
+  <tr><td rowspan="4"><b>Manage a Model</b></td>
+   <td>Import a Model API</td>
+   <td>Import a model in chunks into the system.</td></tr>
+  <tr><td>Export a Model API</td>
+   <td>To export a trained AI model from the system.</td>
   </tr>
-  <tr>
-   <td><strong>Import to Existing Tool </strong>
-   </td>
-   <td>To import new configurations, datasets, or updates into an already existing tool within the system.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Export a Tool </strong>
-   </td>
-   <td>To export an existing tool's configuration and associated data, including its flow, for backup, sharing, or reuse.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Deploy a Tool</strong>
-   </td>
-   <td>To deploy a specific tool into an environment.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Undeploy a Tool</strong>
-   </td>
-   <td>To undeploy a specific tool from an environment.
-   </td>
-  </tr>
-  <tr><td colspan="2"><b>Manage a Model</b></td></tr>
-  <tr>
-   <td><strong>Import a Model</strong>
-   </td>
-   <td>Import a model in chunks into the system.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Export a Model</strong>
-   </td>
-   <td>To export a trained AI model from the system.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Deploy a Model</strong>
-   </td>
+  <tr><td>Deploy a Model API</td>
    <td>To deploy a model into the environment in the <strong><em>Ready to Deploy</em></strong> state and configure its parameters. The initial deployment must be done manually in the GALE account. Consecutive deployments must happen via the public API.
    </td>
   </tr>
-  <tr>
-   <td><strong>Undeploy a Model</strong>
-   </td>
-   <td>To undeploy a model from the environment.
-   </td>
+  <tr><td>Undeploy a Model API</td>
+   <td>To undeploy a model from the environment.</td>
   </tr>
-  <tr><td colspan="2"><b>Manage Guardrails</b></td></tr>
-  <tr>
-   <td><strong>Deploy Guardrails</strong>
-   </td>
-   <td>To deploy predefined guardrails into the system.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Undeploy Guardrails</strong>
-   </td>
+  <tr><td rowspan="2"><b>Manage Guardrails</b></td>
+    <td>Deploy Guardrails API</td>
+   <td>To deploy predefined guardrails into the system.</td></tr>
+   <tr><td>Undeploy Guardrails API</td>
    <td>To undeploy predefined guardrails from the system.
    </td>
   </tr>
