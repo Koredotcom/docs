@@ -248,7 +248,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         3. Bot ID
         4. Agent AI Widget URL
         5. Bot Language Code - “en” is set as the default language. Refer to this [doc](https://docs.kore.ai/agentassist/set-up-agentassist/supported-languages/){:target="_blank"} to provide the language code for your bot's language.
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot. Refer to [Access Custom Data in Agent AI Bot](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} for instructions on how to access customdata in the bot. 
+    2. Custom Data: The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot. Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access customdata in the bot. 
  
         Include your data in the customdata object (one key-value pair per line). For example: 
 
