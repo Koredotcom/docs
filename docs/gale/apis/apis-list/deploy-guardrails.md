@@ -62,7 +62,7 @@ The API response includes the **model ID** and the **guardrail deployment status
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
+   <td>The environment URL. For example, <code>https://gale.kore.ai</code>.
    </td>
    <td>String
    </td>
@@ -111,9 +111,9 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
    </td>
   </tr>
   <tr>
-   <td>name
+   <td><b>name</b>
    </td>
-   <td>Name of the guardrail to deploy.
+   <td>The name of the guardrail you want to deploy.
    </td>
    <td>Enum
    </td>

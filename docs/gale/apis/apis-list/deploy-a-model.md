@@ -4,7 +4,6 @@ This API deploys an open-source or fine-tuned model in the ***Ready to Deploy***
 
 The API response includes the **model ID** and the **model deployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"}  and verify the successful deployment of the model.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -15,7 +14,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/deploy?modelType={modelType}</code>
+   <td><code>https://{<i>host</i>}/api/public/models/:{<i>modelId</i>}/deploy?modelType={<i>modelType</i>}</code>
    </td>
   </tr>
   <tr>
@@ -52,7 +51,7 @@ The API response includes the **model ID** and the **model deployment status**. 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL.
+   <td>The environment URL. For example, <code>https://gale.kore.ai</code>.
    </td>
    <td>String
    </td>
@@ -445,7 +444,7 @@ The following deployment parameters can be configured and passed in the body:
    </td>
   </tr>
   <tr>
-   <td>dockStatusId
+   <td><b>dockStatusId</b>
    </td>
    <td>The unique identifier for tracking the model deployment.
    </td>
@@ -453,7 +452,7 @@ The following deployment parameters can be configured and passed in the body:
    </td>
   </tr>
   <tr>
-   <td>guardrail
+   <td><b>guardrail</b>
    </td>
    <td>The model that was deployed.
    </td>
@@ -461,7 +460,7 @@ The following deployment parameters can be configured and passed in the body:
    </td>
   </tr>
   <tr>
-   <td>jobType
+   <td><b>jobType</b>
    </td>
    <td>Specifies the type of job (e.g., "<em>MODELS</em>").
    </td>
@@ -469,7 +468,7 @@ The following deployment parameters can be configured and passed in the body:
    </td>
   </tr>
   <tr>
-   <td>action
+   <td><b>action</b>
    </td>
    <td>Indicates the performed action ("<em>DEPLOY</em>").
    </td>
@@ -477,7 +476,7 @@ The following deployment parameters can be configured and passed in the body:
    </td>
   </tr>
   <tr>
-   <td>status
+   <td><b>status</b>
    </td>
    <td>Deployment status ("<em>SUCCESS</em>", "<em>IN_PROGRESS</em>", or "<em>FAILED</em>").
    </td>
