@@ -61,12 +61,15 @@ This section lets you enable or disable the Agent AI widget menus – **Assist H
 
 The disabled menus do not appear on the widget unless you enable them back.
 
-!!! note "Note"
+!!! note
     The **Dark Mode** and **Settings** menu symbols, appearing at the side-bottom of the menu section in the above screenshot, are not customizable. The Dark Mode symbol is the only button that is functional even in the preview mode of the widget.
 
 ## Assist Action Menu Layout
 
-This section lets you enable, disable, and customize the placement of the action buttons in the **Assist** tab. You can use the toggle to enable or disable the buttons and the drag-and-drop action to shuffle their position. The following screenshot shows all enabled action buttons with the **Restart** button position shuffled with the **Sentiment** button:  
-<img src="../widget-theming-layout-customization/assist-action-menu-layout-8.png" alt="assist-action-menu-layout" title="assist-action-menu-layout" style="border: 1px solid gray; zoom:80%;">
+This section lets you enable, disable, and customize the placement of the action buttons in the Assist tab. You can use the toggles to enable or disable the buttons and the drag-and-drop action to shuffle their positions. The following screenshot shows all enabled action buttons:  
+<img src="../widget-theming-layout-customization/assist-action-menu-layout.jpg" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
+
+To shuffle these action buttons, drag-and-drop their names under the **Assist Action Menu Layout > Icons Displayed** section. The following screenshot shows shuffling of the **Sentiment** button with the **Restart** button:  
+<img src="../widget-theming-layout-customization/assist-action-menu-shuffling.jpg" alt="assist-action-menu-shuffling" title="assist-action-menu-shuffling" style="border: 1px solid gray; zoom:80%;">
 
 

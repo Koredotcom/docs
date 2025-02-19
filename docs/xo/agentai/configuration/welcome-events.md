@@ -40,14 +40,15 @@ In this section, you can customize greeting messages at the beginning of the con
 2. Click to expand the **Configure Greeting Messages** section.
 3. Click the **toggle** button to enable it (if it’s in **Disabled** status).
 4. Select a channel – **Chat**,**Voice**, or **Email**.
-5. Click **+ Add Message** > **New Messages** to add a new greeting message.  
+5. Select a language. The app's language appears by default.
+6. Click **+ Add Message** > **New Messages** to add a new greeting message.  
    <img src="../welcome-events-images/adding-new-greeting-messages-2.png" alt="adding-new-greeting-messages" title="adding-new-greeting-messages" style="border: 1px solid gray; zoom:80%;"> 
-6. Enter the new greeting message in the **Message** box and click **Add**.  
+7. Enter the new greeting message in the **Message** box and click **Add**.  
    <img src="../welcome-events-images/configure-and-add-new-greeting-message-3.png" alt="configure-and-add-new-greeting-message" title="configure-and-add-new-greeting-message" style="border: 1px solid gray; zoom:60%;">
 
       The new greeting message gets added to the list of existing messages.
 
-7. Click **Copy from Chat** to copy existing messages in **Chat**.  
+8. Click **Copy from Chat** to copy existing messages in **Chat**.  
    <div class="admonition note">
    <p class="admonition-title">Note</p>
    <p><b>Copy from Voice</b> appears for the Chat channel and <b>Copy from Chat</b> appears for the Voice channel.</p></div>  
@@ -60,14 +61,14 @@ In this section, you can customize greeting messages at the beginning of the con
 
       All selected messages appear in the list of existing messages.
 
-8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.  
+9. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.  
 <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
-9. Click the **down-arrow** to change message language.
-10. Click the **edit** button against an existing message to modify it.
-11. Make the changes and click **Update**.
-12. Click the **delete** button against an existing message to delete it. On the **Delete Message** popup, click **Yes**.
-13. Click the **enable** or **disable** toggle against a message to enable or disable it.
-14. Click **Save**.
+10. Click the **down-arrow** to change message language.
+11. Click the **edit** button against an existing message to modify it.
+12. Make the changes and click **Update**.
+13. Click the **delete** button against an existing message to delete it. On the **Delete Message** popup, click **Yes**.
+14. Click the **enable** or **disable** toggle against a message to enable or disable it.
+15. Click **Save**.
 
 ### Priority Settings
 

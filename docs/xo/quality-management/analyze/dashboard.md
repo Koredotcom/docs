@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Dashboard overview provides a 360-degree view of audit details, failure statistics, and performance monitoring of the agent Evaluation forms on a daily, weekly, and monthly basis. It stores data for the past seven months. By default, the Dashboard displays the daily report for all three categories, offering a quick overview to monitor quality standards at any given point in time.
+From a supervisor’s perspective, the **Dashboard Overview** presents a comprehensive 360-degree view of audit details, failure statistics, and performance monitoring for the agent Evaluation forms across daily, weekly, and monthly intervals. By default, it displays the daily report for all three categories, giving supervisors a quick and easy way to monitor quality standards at any given time.
 
 You can access **Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Dashboard**.  
 <img src="../dashboard/images/qm-dashboard.png" alt="Quality Management Dashboard" title="Quality Management Dashboard" style="border: 1px solid gray; zoom:70%;">
@@ -13,9 +13,31 @@ You can access **Dashboard** by navigating to **Contact Center AI** > **Quality 
 
 ## Dashboard Filters
 
-This Dashboard allows you to filter the data by time period and specific channel.
+This Dashboard lets you filter the data based on language, time period, and channel selected.
 
-### Date Range Filter
+### All Languages 
+
+In this Quality AI Dashboard, you can filter and search by language across the dashboards and interaction listing pages to search and apply the language-specific metrics. These metrics are available based on the languages configured at the evaluation metric level under the **Configuration** > **Settings** > **Language Settings**. 
+ 
+<img src="../dashboard/images/language-filter.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:100%;">
+
+!!! note
+
+    By default, all languages are selected when the **All Languages** filter is applied. Only metrics configured for the selected languages are displayed under this filter.
+
+When any of the language filters are selected, the following widget metrics are updated:
+
+* Total Audits
+
+* Avg. Audits per Agent
+
+* Evaluation Score (Manual Vs Auto QA score)
+
+* Fail Statistics (Evaluation Form)
+
+* Performance Monitor (Evaluation Form) 
+
+### Date Range
 
 You can filter data based on a selected date range.
 To filter by date range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
@@ -30,7 +52,7 @@ This allows you to filter all agent interaction data by selecting the following 
 * **Last 90 Days**: All interaction data for the previous 90 days, (not including today), in the agent’s time zone.
 * **Custom Range**: All interaction data from the given date (12:00:00 AM to 11:59:59 PM), in the agent’s time zone, limited to **31** days.
 
-### Channel Filter
+### Channel
 
 The Quality AI Dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, and **All**. You can filter the performance metrics by channel, such as **Voice**, **Chat**, or **All** (Voice and Chat) conversations. The dashboard provides trends and graphs with daily, weekly, and monthly views, along with a distribution view.
 
@@ -67,7 +89,7 @@ Displays the total number of audits (progress score) pending and completed.
 * **Audit**: Click the **Audit** button, which directs you to the **Conversation Mining** > **Audit Allocations** feature, where you can easily start evaluating interactions.  
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
-For more information, see [Audit Allocation](https://docs.kore.ai/xo/quality-management/analyze/conversation-mining-audit-allocations/).
+For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md).
 
 ### Evaluation Score 
 This displays the trend of the average **Kore Evaluation Score** (Auto QA Score) alongside the average **Audit Score** (manual), allowing you to compare the consistency between system-generated evaluations and manual audits. 
@@ -99,7 +121,7 @@ This chart displays the trend view of the percentage of interactions with agent 
 
 !!! note
 
-    This **Agent Scorecard** tab only appears on the Dashboard if the widget option is enabled in the **Settings** of the [Quality Management](../configure/settings.md#quality-management).
+    This **Agent Scorecard** tab only appears on the Dashboard if the widget option is enabled in the **Settings** of the [Quality AI General Settings](../configure/quality-ai-general-settings.md).
 
 ## Performance Monitor
 

@@ -159,6 +159,7 @@ You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/a
 - Document Management
 - Facets
 
+
 ### Step 3: Preview
 
 Review the skills generated for the agent based on the purpose defined. The system uses

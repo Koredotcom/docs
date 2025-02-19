@@ -1,6 +1,5 @@
-# Supervisor View (Agent-specific Dashboard)
-
-The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
+# Agent-specific Dashboard
+This feature provides a personalized dashboard for each agent. The **Overview** tab of this supervisor’s agent-specific dashboard displays key metrics relevant to the agent, with data filtered by selected periods and channels (Voice or Chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance at an individual level.
 
 You can access the Supervisor view of the Agent-specific dashboard in the following ways:
 
@@ -21,13 +20,11 @@ You can access the Supervisor view of the Agent-specific dashboard in the follow
 
 Each agent has a dedicated dashboard accessible to both the agents and their supervisor. This dashboard displays high-level metrics for supervisors to review.
 
-For more information, see [Date Range Filter](../https:/docs.kore.ai/xo/quality-management/analyze/dashboard/#date-range-filter). 
+The supervisor can filter by the desired languages, date range using the calendar, and agent interactions across all channels (Voice and Chat). See the [**Date Range**](../analyze/dashboard.md/#date-range) and [**Channel**](../analyze/dashboard.md/#channel) dashboard filters for more information.
 
 ## Overview
 
-This displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat only).  
-
-The **Overview** tab of the supervisor’s view of the Agent Dashboard, specific to each agent, includes the following:
+The **Dashboard Overview** tab displays the selected agent’s dashboard metrics, calculated for that specific agent, time period, and channel (voice and chat). It provides the supervisor’s view of the Agent Dashboard specific to each agent, which includes the following: 
 
 * **Total Interactions**: This displays the total interactions completed by the agent during the selected time.     
     <img src="../agent-leaderboard/images/total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
@@ -46,6 +43,8 @@ The **Overview** tab of the supervisor’s view of the Agent Dashboard, specific
 
 * **No. of Fails**: This displays the total count of scorecard failures for the agent over a selected time.   
     <img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:100%;">
+
+**Coaching Insights**
 
 * **Strongest Attributes**: This displays the top 5 attributes with the highest scores from the scorecards assigned to the agent during the selected time, with each attribute having a score greater than 80, listed in descending order.    
     <img src="../agent-leaderboard/images/strongest-attributes.png" alt="Strongest Attributes" title="Strongest Attributes" style="border: 1px solid gray; zoom:80%;">
@@ -74,13 +73,19 @@ The Coaching Assignments include the following items:
     
     !!! note
             
-        This option is only visible to the supervisors.
+        This option is only visible for agents.
        
     * **Yet to start**: Interactions for an assignment are yet to start.
+
+    !!! note
+            
+        This option is only visible for supervisors.
 
     * **In Progress**: This displays the total number of interactions that have been clicked through for that coaching assignment.
 
     * **Completed**: All interactions clicked through for that assignment.
+
+For more detailed information, see [Coaching Assignments - Supervisor View](../coach/coaching-assignments-supervisor-view.md).  
 
 ### Scorecard Trend
 
@@ -89,7 +94,7 @@ This feature displays an agent's assigned scorecards and allows supervisors to t
 
 !!! Note
 
-    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the **Settings**.
+    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md).
 
 #### Avg. Scorecard Score
 

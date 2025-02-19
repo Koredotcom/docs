@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.10.0 February 12, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Analytics
+
+
+#### Analytics for DialogGPT
+
+DialogGPT's comprehensive analytics provide detailed tracking of user interactions, intent detection, and conversation outcomes, ensuring data-driven insights for continuous improvement. By leveraging analytics, the platform users can accurately evaluate DialogGPT's effectiveness and enhance conversational experiences.
+[Learn more :octicons-arrow-right-24:](../../analytics/automation/nlp-insights.md#dialoggpt-nlp-insights-analysis)
+
+
+### Export/Import
+
+
+#### Redesigned Export Interface for Improved User Experience
+
+The Import / Export interface has been redesigned to mirror the Publish layout. A new top-level "Flows" section and reorganized "Automation Tasks" improve component organization. The update maintains backward compatibility and provides clearer section names and descriptions for an intuitive, cohesive experience.
+[Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
+
+<hr>
+
 ## v11.9.1 January 25, 2025
 
 <u>Patch Release</u>

@@ -102,7 +102,9 @@ Using the **get ()** method, you can retrieve the root-level object for Enterpri
 
 The following types of session variables are available on the XO Platform:
 
-* **EnterpriseContext** – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code: 
+* **EnterpriseContext** – It is a namespace within the overall context object where platform users can store key-value pairs that are available to all assistants, sessions, and users within a workspace. It ensures consistent data availability for enterprise-wide use cases.  
+
+    For example, with a GitHub bot, a user may need to access one or more enterprise repositories. The repository data can be persisted in the EnterpriseContext using the **Gitrepository** key with the following JavaScript code:
 
     ```js
     var userRepository = {
@@ -111,6 +113,10 @@ The following types of session variables are available on the XO Platform:
     };
     EnterpriseContext.put('Gitrepository', userRepository, 200000);
     ```
+
+    !!!note
+     
+        Platform users must carefully assess what information should be stored in this namespace to avoid unnecessary data exposure.
 
 * **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 

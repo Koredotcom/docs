@@ -25,7 +25,7 @@ Steps to add a new language:
 
 Steps to disable a language:
 
-1. Select the **Status** toggle off to disable any of the languages, the following warning dialog box is displayed. 
+1. Select the **Status** toggle off to disable any of the languages, the following warning dialog box is displayed.  
 <img src="../settings/langauge-settings/images/disable-language.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:60%;">
 
 2. Click **Confirm** to disable the selected language.

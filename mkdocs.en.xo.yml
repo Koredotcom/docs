@@ -332,6 +332,7 @@ nav:
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - Monday: searchai/content-sources/connectors/monday.md
+                - MS Teams: searchai/content-sources/connectors/msteams.md
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
@@ -363,6 +364,7 @@ nav:
         - Retrieval Strategies: searchai/retrieval.md
         - Business Rules: searchai/business-rules.md
         - Answer Generation: searchai/answer-generation.md
+        - Search Results: searchai/search-results.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
@@ -446,9 +448,9 @@ nav:
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: 
-          - Conversation Intelligence: quality-management/configure/settings/conversation-intelligence.md
-          - Quality AI Genenal Settings: quality-management/configure/settings/quality-ai-general-settings.md
-          - Language Settings: quality-management/configure/settings/langauge-settings.md
+          - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
+          - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
+          - Language Settings: quality-management/configure//langauge-settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -618,6 +620,8 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
+    - Search AI:
+      - Answer Insights: analytics/searchai/answer-insights.md
     - GenAI Analytics:
       - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:

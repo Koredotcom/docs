@@ -53,7 +53,7 @@ For example: \b(yep|nah|ugh|meh|huh|dude|bro|yo|lol|rofl|lmao|lmfao)\b
 
 ## Guardrails and Features Support Matrix
 
-The Guardrails are currently available for the following features: **Agent Node** and **Rephrase Dialog Response**. They will gradually become available for the remaining features.
+The Guardrails are currently available for the following features: **Answer Generation**, **Agent Node**, and **Rephrase Dialog Response**. They will gradually become available for the remaining features.
 
 (✅ Supported | ❌ Not supported)
 
@@ -80,7 +80,18 @@ The Guardrails are currently available for the following features: **Agent Node*
     <td>LLM Output</td>
   </tr>
   <tr>
-    <td colspan="9"><strong>Dynamic Conversation Features</strong></td>
+    <td colspan="9"><strong>XO Platform Features</strong></td>
+  </tr>
+    <tr>
+    <td>Answer Generation</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>✅</td>
   </tr>
   <tr>
     <td>Agent Node</td>
@@ -170,7 +181,7 @@ The typical flow is as follows:
 
 
 
-1. The XO Platform generates a prompt based on the user input.
+1. The XO Platform generates a prompt based on the user input and conversation history.
 2. Enabled guardrails validate this prompt against defined safety and appropriateness rules.
 3. If the prompt passes all guardrails, it is sent to the LLM.
 4. The LLM's response is received by the XO Platform.
@@ -209,6 +220,10 @@ For example, the debug logs display two entries: one for the LLM input and anoth
 
 Fallback behavior lets the system determine the optimal course of action when the Guardrails are violated. Each feature has a different fallback behavior, which can be selected in the feature's advanced settings.
 
+### Fallback Behavior for Answer Generation
+
+By default, when the guardrail is violated, the system uses the “Trigger the Task Execution Failure Event” option.  
+<img src="../images/ansgen-fallback.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
 
 ### Fallback Behavior for Agent Node
 
@@ -233,5 +248,6 @@ Steps to change the fallback behavior:
 
 ### Fallback Behavior for Rephrase Dialog Response
 
-By default, when the guardrail is violated, the system uses the "Send the original prompt" option.  <img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+By default, when the guardrail is violated, the system uses the "Send the original prompt" option.  
+<img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
 

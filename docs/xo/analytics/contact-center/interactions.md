@@ -306,8 +306,18 @@ The transcripts tab also shows the call transfer stages:
 **User ID**: The agent’s user ID.  
 **Campaign Instance ID**: The campaign instance ID (for campaigns).
 
-Click the **Copy All** button to copy all the identifier details and start and end date timestamps (from the details tab).  
-<img src="../images/identifiers-uxo.png" alt="Identifiers Tab" title="Identifiers Tab" style="border: 1px solid gray; zoom:80%;">
+Click the **Copy All** button to copy all the identifier details (from the details tab) like:
+
+* Start Time
+* End time
+* Caller ID
+* Session ID
+* Channel User ID
+* Call Conversation ID
+* Agent Conversation ID
+* User ID
+* Caller
+* Callee
 
 ### Call Recording
 
