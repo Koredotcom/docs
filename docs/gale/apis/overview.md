@@ -64,8 +64,8 @@ Currently, the following APIs are available:
    <td>To check the status of an ongoing or completed job related to tools or models.
    </td>
   </tr>
-  <tr><td rowspan="5"><b>Manage a Tool</b></td>
-    <td>Import a New Tool (Agent) API</td>
+  <tr><td rowspan="5"><b>Manage a Tool (Agent)</b></td>
+    <td>Import a New Tool API</td>
    <td>To import a new tool into the system.</td></tr>
     <tr><td>Import to Existing Tool API</td>
    <td>To import new configurations, datasets, or updates into an already existing tool within the system.</td></tr>
@@ -89,7 +89,7 @@ Currently, the following APIs are available:
    <td>To undeploy a model from the environment.</td>
   </tr>
   <tr><td rowspan="2"><b>Manage Guardrails</b></td>
-    <td>Deploy Guardrails API</td>
+    <td><a href="./apis-list/deploy-guardrails/" target="_blank">Deploy Guardrails API</a></td>
    <td>To deploy predefined guardrails into the system.</td></tr>
    <tr><td>Undeploy Guardrails API</td>
    <td>To undeploy predefined guardrails from the system.

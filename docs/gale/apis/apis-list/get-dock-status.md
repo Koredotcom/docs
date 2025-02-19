@@ -30,7 +30,7 @@ This API allows users to track the status of ongoing or completed jobs related t
 </table>
 
 
-**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"} .
+**Where can I find the API key?** [Learn more](../overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 
 ## Query Parameters
@@ -112,7 +112,7 @@ No parameters are passed.
    </td>
    <td>String
    </td>
-   <td>e.g., ds-c6xxxxx5-dxxd-5xxf-9xxd-0xxxxx6xxxx8
+   <td>ds-c6xxxxx5-dxxd-5xxf-9xxd-0xxxxx6xxxx8
    </td>
   </tr>
   <tr>
@@ -122,7 +122,7 @@ No parameters are passed.
    </td>
    <td>String
    </td>
-   <td>e.g., a-8xxxxxbe-6xxe-5xx1-8xxc-bxxxxxx80xx6
+   <td>a-8xxxxxbe-6xxe-5xx1-8xxc-bxxxxxx80xx6
    </td>
   </tr>
   <tr>
