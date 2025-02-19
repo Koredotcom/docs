@@ -81,11 +81,11 @@ Currently, the following APIs are available:
   <tr><td>Export a Model API</td>
    <td>To export a trained AI model from the system.</td>
   </tr>
-  <tr><td>Deploy a Model API</td>
+  <tr><td><a href="../apis-list/deploy-a-model/" target="_blank">Deploy a Model API</a></td>
    <td>To deploy a model into the environment in the <strong><em>Ready to Deploy</em></strong> state and configure its parameters. The initial deployment must be done manually in the GALE account. Consecutive deployments must happen via the public API.
    </td>
   </tr>
-  <tr><td>Undeploy a Model API</td>
+  <tr><td><a href="../apis-list/undeploy-a-model/" target="_blank">Undeploy a Model API</a></td>
    <td>To undeploy a model from the environment.</td>
   </tr>
   <tr><td rowspan="2"><b>Manage Guardrails</b></td>
