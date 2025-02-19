@@ -89,9 +89,9 @@ Currently, the following APIs are available:
    <td>To undeploy a model from the environment.</td>
   </tr>
   <tr><td rowspan="2"><b>Manage Guardrails</b></td>
-    <td><a href="./apis-list/deploy-guardrails/" target="_blank">Deploy Guardrails API</a></td>
+    <td><a href="../apis-list/deploy-guardrails/" target="_blank">Deploy Guardrails API</a></td>
    <td>To deploy predefined guardrails into the system.</td></tr>
-   <tr><td>Undeploy Guardrails API</td>
+   <tr><td><a href="../apis-list/undeploy-guardrails/" target="_blank">Undeploy Guardrails API</a></td>
    <td>To undeploy predefined guardrails from the system.
    </td>
   </tr>

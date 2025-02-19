@@ -1,19 +1,9 @@
-# Deploy Guardrails API
+# Undeploy Guardrails API
 
-This API deploys predefined **guardrails** to enhance security, compliance, and content moderation in AI interactions. These guardrails act as filters or constraints to ensure safe and appropriate AI responses.
+This API removes the previously deployed guardrails that regulate AI interactions.
 
-Users can deploy a specific guardrail from a predefined set of options, including:
+Once undeployed, the guardrails become inactive. The API response includes the **model ID** and the **guardrail undeployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the guardrail undeployment status.
 
-* Anonymization
-* Ban Topics
-* Prompt Injection Prevention
-* Toxicity Detection
-* Bias Detection
-* Relevance Filtering
-
-Once deployed, the selected guardrail becomes active, regulating interactions within the environment.
-
-The API response includes the **model ID** and the **guardrail deployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the successful deployment of the guardrail.
 
 <table>
   <tr>
@@ -25,7 +15,7 @@ The API response includes the **model ID** and the **guardrail deployment status
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{<i>host</i>}/api/public/guardrails/deploy</code>
+   <td><code>https://{host}/api/public/guardrails/undeploy</code>
    </td>
   </tr>
   <tr>
@@ -88,12 +78,13 @@ The API response includes the **model ID** and the **guardrail deployment status
   </tr>
 </table>
 
+
 ## Sample Request
 
 ```js
-curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/deploy' \ 
---header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \ 
---header 'Content-Type: application/json' \ 
+curl --location 'https://dev-agent-platform.kore.ai/api/public/guardrails/undeploy' \
+--header 'x-api-key: kg-axxxxxxx-xxxx-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3' \
+--header 'Content-Type: application/json' \
 --data '{"name": "Ban topics"}'
 ```
 
@@ -111,11 +102,11 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
    </td>
   </tr>
   <tr>
-   <td>name
+   <td><strong>name</strong>
    </td>
-   <td>Name of the guardrail to deploy.
+   <td>Name of the guardrail you want to undeploy.
    </td>
-   <td>enum
+   <td>Enum
    </td>
    <td>Required
    </td>
@@ -126,11 +117,11 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
 
 ```js
 {
-  "dock-statusId": "ds-d0xxxxxd-bxx9-5xx0-8xx5-5bxxxxxxxxx1",
-  "modelId": "cm-77xxxxxb-exx9-5xxc-8xx6-5xxxxxxxxxx1",
-  "jobType": "GUARDRAILS",
-  "action": "DEPLOY",
-  "status": "SUCCESS"
+   "dockStatusId": "ds-exxxxxx7-2xx8-5xxc-axx7-caxxxxxxxxx1",
+   "toolId": "a-4xxxxxx9-fxx9-5xx7-axx7-9xxxxxxxxxxb",
+   "jobType": "GUARDRAILS",
+   "action": "DEPLOY",
+   "status": "SUCCESS"
 }
 ```
 
@@ -148,15 +139,15 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
   <tr>
    <td><strong>dockStatusId</strong>
    </td>
-   <td>The unique identifier to track the status of model deployment.
+   <td>The unique identifier to track the process status.
    </td>
    <td>String
    </td>
   </tr>
   <tr>
-   <td><strong>modelId</strong>
+   <td><strong>guardrail</strong>
    </td>
-   <td>The unique identifier for the model.
+   <td>The guardrail you want to undeploy.
    </td>
    <td>String
    </td>
@@ -164,7 +155,7 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
   <tr>
    <td><strong>jobType</strong>
    </td>
-   <td>Type of job being performed (e.g: "<i>GUARDRAIL</i>").
+   <td>Type of job being performed. (e.g., "<em>GUARDRAIL</em>").
    </td>
    <td>String
    </td>
@@ -172,7 +163,7 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
   <tr>
    <td><strong>action</strong>
    </td>
-   <td>The action performed on the model, i.e. "<i>DEPLOY</i>".
+   <td>The action performed on the guardrail, i.e. “<em>UNDEPLOY</em>.”.
    </td>
    <td>String
    </td>
@@ -180,10 +171,9 @@ curl --location 'https://dev-axxxxt-plxxxxxxm.kore.ai/api/public/guardrails/depl
   <tr>
    <td><strong>status</strong>
    </td>
-   <td>The current status of the job ("<i>SUCCESS</i>", "<i>IN_PROGRESS</i>", or "<i>FAILED</i>").
+   <td>The current status of the job ("<em>SUCCESS</em>", "<em>IN_PROGRESS</em>", or "<em>FAILED</em>").
    </td>
    <td>String
    </td>
   </tr>
 </table>
-

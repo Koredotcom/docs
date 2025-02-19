@@ -206,6 +206,7 @@ nav:
         - File Upload API: apis/apis-list/upload-file-api.md
         - Get Dock Status API: apis/apis-list/get-dock-status.md
         - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md
+        - Undeploy Guardrails API: apis/apis-list/undeploy-guardrails.md
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 
