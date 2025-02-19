@@ -40,7 +40,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 1. Follow the steps mentioned [here](https://docs.kore.ai/gale/agents/export-an-agent/#steps-to-export-an-agent) to export an agent.
 2. Open developer tools.
 3. Select the **Network** tab.
-<img src="../apis-list/images/developer-tools.png" alt="developer tools" title="developer tools" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/developer-tools.png" alt="developer tools" title="developer tools" style="border: 1px solid gray; zoom:60%;">
 4. Monitor the Export API to capture <code>toolId</code> and <code>callflowId</code>.
 
 
