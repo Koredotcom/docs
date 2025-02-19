@@ -2,9 +2,9 @@
 
 We're actively working to address the following limitations in XO v11. This list will be updated as improvements are made.
 
-* Universal Bots support is coming soon, likely by the end of January 2025. Universal Bots will use the DialogGPT module. We're also developing a smooth migration path for existing Universal Bots.
+* Universal Bots support is coming soon, likely by the end of March 2025. Universal Bots will use the DialogGPT module. We're also developing a smooth migration path for existing Universal Bots.
 
-* SmartAssist instance bot upgrade support is coming soon, likely by the end of February 2025.
+* SmartAssist instance bot upgrade support is coming soon, likely by the end of March 2025.
 
 * Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to XO v11.
 
