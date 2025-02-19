@@ -419,8 +419,8 @@ nav:
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
-    - Quality Management:
-      - Overview: quality-management/about-quality-management.md         
+    - Quality AI:
+      - Overview: quality-management/about-quality-ai.md         
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
