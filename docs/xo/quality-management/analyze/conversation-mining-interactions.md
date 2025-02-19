@@ -1,7 +1,6 @@
-# Interactions
+# Conversation Mining - Interactions
 
 The Conversation Mining feature allows you to drill-down to interactions that are of interest to you or interactions that have the most potential to improve enabling you to eliminate the guesswork from manual evaluations and focus your manual efforts solely on critical interactions.
-
 
 You can access Conversation Mining by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining**.  
 
@@ -12,15 +11,15 @@ The Conversation Mining has the following two sections:
 * Interactions
 * Audit Allocations
 
-!!! Note
-
-    Interactions are populated a few seconds after call termination. 
-
 ## Interactions
 
 Users can see scored interactions or evaluation information at a glance from Conversation Mining. Users can apply filters to focus on specific interactions or with high potential for improvement and save the filters for auditing purposes. Interactions visible on the conversation mining screen are limited to the user's assigned queues.
 
 The Conversation Mining interaction listing streamlines identifying specific interactions, saving time on manual reviews and enhancing decision-making and operational efficiency. You can customize the page by adding metadata and columns, improving oversight quality.  
+
+!!! Note
+
+    Interactions are populated a few seconds after call termination. 
 
 You can access **Interactions** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**. 
 <img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
