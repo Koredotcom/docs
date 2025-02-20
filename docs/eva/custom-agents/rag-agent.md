@@ -151,6 +151,8 @@ under the **Manage** tab. Refer to
 -   **Client Secret ID**: A secret key generated for secure interaction.
 
 -   **Search ID**: Unique identifier of the client generated in Search AI.
+  
+
 
 ### Step 3: Preview
 

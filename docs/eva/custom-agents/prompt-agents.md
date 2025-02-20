@@ -105,7 +105,9 @@ To configure user input, follow the steps outlined below:
 5.  In the parameter section,  parameter fields are prepopulated based on the agent’s purpose. Enter parameter details and click on  **+ Add field** if
     required.![](images/add_field_gpt.png)
 
-6.  Enter a name and any placeholder text in the **placeholder text** field.  
+6.  Enter a name and any text in the **placeholder text** field and in **Description**, enter a detailed description of the field to ensure automated field population when the LLM processes natural language queries and matches entities to their corresponding fields.
+
+    For example, if you need a field that captures organizational departments, rather just naming it as *Division*, include a description explaining that this field accepts internal department names, helping the LLM identify the department name from the user's query and pre-populate it in the *Division* field.  
     ![](images/placeholder_text_gpt.png)
 
 7.  Select the **Field type** from the list for each field. You can select a

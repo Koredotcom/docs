@@ -157,7 +157,7 @@ nav:
                 - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
-                - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
+                - SIP Trunk: channels/kore.ai-voice-gateway/sip-trunk.md
                 - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
@@ -330,6 +330,7 @@ nav:
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
@@ -341,7 +342,8 @@ nav:
                 - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md 
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md
+                - Shopify: searchai/content-sources/connectors/shopify.md
                 - Slab: searchai/content-sources/connectors/slab.md
                 - Slack: searchai/content-sources/connectors/slack.md
                 - Trello: searchai/content-sources/connectors/trello.md
@@ -419,12 +421,12 @@ nav:
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
-    - Quality Management:
-      - Overview: quality-management/about-quality-management.md   
-      - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md    
+    - Quality AI:
+      - Overview: quality-management/about-quality-ai.md         
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
+      - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
       - Connectors: 
         - Introduction: quality-management/connectors/connector-intro.md
         - Amazon S3: quality-management/connectors/amazon-s3.md
@@ -436,6 +438,7 @@ nav:
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
+          - Overview: quality-management/analyze/conversation-mining-overview.md
           - Interactions: quality-management/analyze/conversation-mining-interactions.md 
           - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
