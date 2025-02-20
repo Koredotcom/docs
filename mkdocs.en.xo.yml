@@ -157,7 +157,7 @@ nav:
                 - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
-                - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
+                - SIP Trunk: channels/kore.ai-voice-gateway/sip-trunk.md
                 - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
