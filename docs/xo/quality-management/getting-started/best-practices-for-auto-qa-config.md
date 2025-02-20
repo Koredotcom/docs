@@ -72,7 +72,7 @@ The following table describes the best practices that are based on - By Question
 
 <li>Configurations with company/brand names for policy: 70-80% match.</li>
 
-<li>Configurations with product specifics: 50-60% match.
+<li>Configurations with product specifics: 50-60% match. </br>
 
 
 <strong>Note</strong>: Adjust these thresholds based on your specific use case and requirements.</li>

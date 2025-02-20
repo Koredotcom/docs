@@ -206,9 +206,9 @@ Steps to configure a pre-built LLM using Dynamic Variables:
 5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
 <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 6. The Connection Status pop-up appears.
-    1. If a connection is successful, click **Save**.  
+    * If a connection is successful, click **Save**.  
     <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    2. If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
     <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
         !!! note
@@ -239,9 +239,9 @@ Steps to configure a recently released LLM using Dynamic Variables:
 7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
 <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 8. The Connection Status pop-up appears.
-    1. If a connection is successful, click **Save**.  
+    * If a connection is successful, click **Save**.  
     <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    2. If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
     <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
         !!! note
@@ -268,9 +268,9 @@ Steps to configure a Custom LLM using Dynamic Variables:
 5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
 <img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 6. The Testing Connection pop-up appears.
-    1. If a connection is successful, click **Save**.  
+    * If a connection is successful, click **Save**.  
     <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    2. If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
+    * If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
     <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
         !!! note

@@ -583,72 +583,13 @@ Download Script For Voice: [kore.ai_nicecti_sf_voice.XML](https://bitbucket.org/
 
 Open the Studio, import the above script, and customize as per the following table definition:
 
-<table>
-  <tr>
-   <td><strong>Node</strong>
-   </td>
-   <td><strong>Activity</strong>
-   </td>
-   <td><strong>Fields Updated</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Set Credentials
-   </td>
-   <td>Update the credentials to connect to Salesforce Org
-   </td>
-   <td>Salesforce_key (created in step <em><a href="#OAuth>“Enabling OAuth”</a></em>)
-<p>
-Salesforce_secret (created in step <em><a href="#OAuth>“Enabling OAuth”</a></em>)
-<p>
-Salesforce_username
-<p>
-Salesforce_password
-<p>
-<strong>Note:</strong> The password is your Salesforce password appended with your Security Token. Refer to <a href="https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5">this guide</a> for help.
-   </td>
-  </tr>
-  <tr>
-   <td>User Auth
-   </td>
-   <td>Configure Salesforce org credentials and generate oauth Token
-   </td>
-   <td>salesforceBaseURI
-<p>
-<strong>Note:</strong> You can get it by running the following curl:
-<p>
-curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=&lt;Salesforce Client ID>&client_secret=&lt;Salesforce Client_Secret>&username=&lt;Salesforce_Username>&password=&lt;Salesforce Password + Salesforce Security Token>’
-   </td>
-  </tr>
-  <tr>
-   <td>ReqAgent
-   </td>
-   <td>Update Skill for Agent Routing
-   </td>
-   <td>Skill and other attributes as needed
-   </td>
-  </tr>
-  <tr>
-   <td>Custom Data
-   </td>
-   <td>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.
-
-<p>Refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data in Agent AI Bot</a> for instructions on how to access custom data in the bot.</p>
-   </td>
-   <td>Include your data in the customdata object (one key-value pair per line). For example: 
-<li>customdata.agentName="Agent"</li>
-<li>customdata.agentID="{agentid}"</li>
-   </td>
-  </tr>
-  <tr>
-   <td>AgentAssist
-   </td>
-   <td>Map the AgentAssist Hub Instance
-   </td>
-   <td>Select the AgentAssist Hub app created in the above step.
-   </td>
-  </tr>
-</table>
+| **Node**       | **Activity**                                                    | **Fields Updated**                                                                                                      |
+|----------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| **Set Credentials**  | Update the credentials to connect to Salesforce Org           | Salesforce_key (created in step [“Enabling OAuth”](#OAuth))<br>Salesforce_secret (created in step [“Enabling OAuth”](#OAuth))<br>Salesforce_username<br>Salesforce_password<br>**Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5){:target="_blank"} for help. |
+| **User Auth**        | Configure Salesforce org credentials and generate oauth Token | salesforceBaseURI<br>**Note:** You can get it by running the following curl:<br><br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’` |
+| **ReqAgent**         | Update Skill for Agent Routing                                 | Skill and other attributes as needed                                                                                      |
+| **Custom Data**      | The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this custom data will be accessible in the UserContext of the bot.<br>Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the bot. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"` |
+| **AgentAssist**      | Map the AgentAssist Hub Instance                                | Select the AgentAssist Hub app created in the above step.                                                                  |
 
 **AgentAssist Hub Reference**:
 
@@ -672,71 +613,13 @@ Download Script For Chat: [kore.ai_nicecti_sf_chat.XML](https://bitbucket.org/ko
 
 Open the Studio, import the above script, and customize as per the following table definition:
 
-<table>
-  <tr>
-   <td><strong>Node</strong>
-   </td>
-   <td><strong>Activity</strong>
-   </td>
-   <td><strong>Fields Updated</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Salesforce Auth
-   </td>
-   <td>Update the credentials to connect to Salesforce Org
-   </td>
-   <td>
-<ul>
+| **Node**            | **Activity**                                                    | **Fields Updated**                                                                                                                                                                                                                                                                         |
+|---------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Salesforce Auth**  | Update the credentials to connect to Salesforce Org              | - salesforceBaseURI<br>  **Note:** You can get it by running the following curl:<br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’`<br>- salesforcekey (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforcesecret (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforceusername<br>- salesforcepassword<br> **Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5) for help. |
+| **ReqAgent**         | Update Skill for Agent Routing                                  | Skill and other attributes as needed                                                                                                                                                                                                                                                        |
+| **Custom Data**      | The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.<br> Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the bot. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"`                                                                                                            |
+| **AgentAssist**      | Map the AgentAssist Hub Instance                                 | Select the AgentAssist Hub App created in the above step.                                                                                                                                                                          |
 
-<li>salesforceBaseURI
-    <strong>Note:</strong> You can get it by running the following curl:
-<p>
-
-    curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=&lt;Salesforce Client ID>&client_secret=&lt;Salesforce Client_Secret>&username=&lt;Salesforce_Username>&password=&lt;Salesforce Password + Salesforce Security Token>’</li>
-
-<li>salesforcekey (created in the step <em><a href="#OAuth">“Enabling OAuth”</a></em>)</li>
-
-<li>salesforcesecret (created in the step <em><a href="#OAuth">“Enabling OAuth”</a></em>)</li>
-
-<li>salesforceusername</li>
-
-<li>salesforcepassword
-<p>
-
-    <strong>Note:</strong> The password is your Salesforce password appended with your Security Token. Refer to <a href="https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5">this guide</a> for help.</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>ReqAgent
-   </td>
-   <td>Update Skill for Agent Routing
-   </td>
-   <td>Skill and other attributes as needed
-   </td>
-  </tr>
-  <tr>
-  <td>Custom Data
-   </td>
-   <td>The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.
-<p>Refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data in Agent AI Bot</a> for instructions on how to access custom data in the bot.</p>
-   </td>
-   <td>Include your data in the customdata object (one key-value pair per line). For example: 
-<li>
-customdata.agentName="Agent"</li>
-<li>customdata.agentID="{agentid}"</li>
-   </td>
-  </tr>
-  <tr> 
-   <td>AgentAssist
-   </td>
-   <td>Map the AgentAssist Hub Instance
-   </td>
-   <td>Select the AgentAssist Hub App created in the above step.
-   </td>
-  </tr>
-</table>
 
 ## NICE Account setup for Incoming Phone Call/Chat
 

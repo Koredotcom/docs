@@ -16,6 +16,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Quality AI APIs](#quality-ai-apis)
 * [WFM APIs](#wfm-apis)
 * [Campaigns API](#campaigns-api)
+* [Hours of Operation API](#hours-of-operation-api)
 
 ### Analytics and Reporting APIs
 
@@ -135,4 +136,10 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API                | Description                                                                                                                                          | Associated App Scope |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| Send Outbound SMS  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
+| [Send Outbound SMS](../contact-center/send-outbound-sms.md)  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
+
+### Hours of Operation API
+
+| API                | Description                                                                                                                                          | Associated App Scope |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| [Hours of Operation](../contact-center/hours-of-operation.md) | To get the hours of operation by providing the orgId and queueId. | Configuration         |

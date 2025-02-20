@@ -171,7 +171,9 @@ nav:
       - What's New:
         - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
-        - Current Limitations: release-notes/current-limitations.md      
+        - Migration Path XO v10 to v11: getting-started/migration-path-xo10-to-xo11.md
+        - Current Limitations: release-notes/current-limitations.md  
+    
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
@@ -417,23 +419,24 @@ nav:
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
-    - Quality Management:
-      - Overview: quality-management/about-quality-management.md       
+    - Quality AI:
+      - Overview: quality-management/about-quality-ai.md         
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
-        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md
-        - AI Assisted Manual Audit: quality-management/getting-started/ai-assisted-manual-audit.md
+        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
+      - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
       - Connectors: 
         - Introduction: quality-management/connectors/connector-intro.md
         - Amazon S3: quality-management/connectors/amazon-s3.md
       - Analyze:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
+          - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
           - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
+          - Overview: quality-management/analyze/conversation-mining-overview.md
           - Interactions: quality-management/analyze/conversation-mining-interactions.md 
           - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
@@ -444,8 +447,8 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/evaluation-metrics.md
+          - Evaluation Forms: quality-management/configure/evaluation-forms.md
+          - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
@@ -467,6 +470,7 @@ nav:
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
+      - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md

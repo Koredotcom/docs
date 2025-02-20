@@ -20,12 +20,12 @@ The system optimizes manual review efforts and enhances agent performance feedba
         <img src="../images/conversation-mining.svg" style="zoom:200%;"></img>
         <kr-grid-title>Conversation Mining</kr-grid-title>
         <kr-grid-desc>Eliminate guesswork in manual evaluations. Use advanced filters to find interactions with the most potential for improvement and focus your manual efforts only on critical interactions.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining.md)
+        [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining-overview.md)        
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/ai-assistance.svg" style="zoom:200%;"></img>
         <kr-grid-title>AI-Assisted Manual Audits</kr-grid-title>
         <kr-grid-desc>Perform quick manual audits with AI-powered conversation analysis. Navigate key moments, including adherence, violations, and omissions. Provide precise feedback via comments to support agent development.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./analyze/ai-assisted-manual-audit.md)
+        [Learn more :octicons-arrow-right-24:](./ai-assisted-manual-audit.md)
     </kr-grid-item>
 </kr-grid>
