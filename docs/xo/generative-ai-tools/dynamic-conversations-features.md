@@ -157,7 +157,7 @@ The following table displays the features and the supported models.
 
     |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 3.5 Turbo and GPT 4|✅|✅|✅|✅|❌|✅*|
+    |Azure OpenAI – <br>GPT 4|✅|✅|✅|✅|❌|✅*|
     |Azure OpenAI – <br>GPT 4 Turbo and GPT 4o|✅|✅|❌|✅|❌|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|✅|✅|❌|✅*|
     |Recently Released LLM|✅|✅|❌|✅|❌|✅|
@@ -169,7 +169,7 @@ The following table displays the features and the supported models.
 
     |Model|Answer Generation|Vector Generation|
     |:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
+    |Azure OpenAI – <br>GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|
     |Recently Released LLM|✅|❌|
     |Custom LLM|✅|❌|
@@ -179,7 +179,6 @@ The following table displays the features and the supported models.
 
     |Model|Agent Response Rephrasing|
     |:----:|:----:|
-    |Azure OpenAI – GPT 3.5 Turbo|✅|
     |OpenAI – GPT 3.5 Turbo|✅|
 <hr>
 

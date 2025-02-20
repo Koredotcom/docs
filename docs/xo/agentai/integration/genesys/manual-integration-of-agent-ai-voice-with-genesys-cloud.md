@@ -67,7 +67,9 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
 7. In the **Application URL** field, enter the following structure; use the **OAuth ID** from [Step 1](#step-1-oauth-credential): [https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&lang=%7B%7BgcLangTag%7D%7D&environment=%7B%7BgcHostOrigin%7D%7D&genesysid=)&lt;genesys-oauth-Id>&x_passthru_metadata=<customData> 
 
     !!! note
-        The “x_passthru_metadata” is an optional query parameter that is necessary to pass custom data to Agent AI. The <customData> value can be a JWT token, JWE token, base64 encoded string or a URL-encoded JSON value. For more information on how to access and use custom data in the Agent AI bot, refer to [Access Custom Data](https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/){:target="_blank"} in Agent AI Bot. 
+        
+        The “x_passthru_metadata” is an optional query parameter that is necessary to pass custom data to Agent AI. The <customData> value can be a JWT token, JWE token, base64 encoded string or a URL-encoded JSON value. For more information on how to access and use custom data in the Agent AI bot, refer to [Access Custom Data](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} in Agent AI Bot. 
+
 8. Allow all permissions in **iFrame Sandbox Options** and **iFrame Feature/Permission Policy**.
 
 **iFrame Sandbox Options**:
