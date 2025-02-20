@@ -12,7 +12,9 @@ This update includes new features and feature enhancements summarized below.
 
 * Standard Agentic Apps: You can now organize multiple AI agents in sequence to automate and execute complex business tasks using predefined logic. Tasks and processes can be predefined, eliminating the need for end users to manually execute each step.
 [Learn more :octicons-arrow-right-24:](./../custom-agents/agentic-apps.md)
-   
+
+* Advanced Agentic Apps: You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/advanced-agentic-apps.md)
+
 
 **Feature Enhancements**
 
