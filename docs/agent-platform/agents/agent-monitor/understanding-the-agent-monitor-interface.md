@@ -1,0 +1,268 @@
+# Understanding Agent Monitor
+
+The Agent Monitor capabilities are shown on the following tabs:
+
+* **All runs**: It shows comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
+
+* **Model runs**: This tab shows specific data on Gen AI node run instances, focusing on endpoint calls made to Gen AI nodes within the agent.
+
+Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
+
+## All Runs
+
+<img src="../images/agent_monitor_allruns_new.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
+
+The All runs tab provides the following information for each agent run:
+
+* **Run ID**: The unique identifier for the flow.
+* **Status**: The current state of the request. It displays one of the following statuses:
+    * **In Progress**: The request is being processed.
+    * **Waiting**: The request is outside of GALE and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Success**: The request has been completed successfully.
+    * **Failed**: The request was not completed successfully.
+* **Response time**: The duration the agent takes to complete a request and provide an output.
+* **Nodes executed**: The total number of nodes executed in the run.
+* **Start time**: The time when the request is initiated.
+* **End time**: The time the response is received.
+* **API key**: The API key used to execute the agent. (This is the name provided in the **API keys** page when you created a new API key. If you did not provide a name, the system uses the default name ‘Secret Key’. You can have multiple API keys for a single agent.)
+
+You can also see the following metrics on the top of the page: 
+
+* **TOTAL RUNS**: The total number of agent runs. 
+* **RESPONSE TIME**: The average response time of all the agent runs. It is measured by the following two metrics:
+    * **P90**: This metric represents the response time below which 90% of the requests fall.
+    * **P99**: This metric represents the response time below which 99% of the requests fall.
+* **FAILURE RATE**: The percentage of failed runs.
+
+These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. 
+
+## 	Model Runs
+
+Each GenAI node in the agent is recorded as a separate request in the Model runs tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
+
+If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.
+
+<img src="../images/agent_monitor_model_runs.png" alt="Model runs" title="Model runs tab" style="border: 1px solid gray; zoom:80%;">
+
+The Model runs tab provides the following information for each Gen AI node call:
+
+* **Request ID**: The unique identifier of the GenAI node request.
+* **Status**: The current state of the request. It displays one of the following statuses: 
+    * **In Progress**: The request is being processed.
+    * **Waiting**: The request is outside of GALE and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Success**: The request has been completed successfully.
+    * **Failed**: The request was not completed successfully.
+* **Node name**: The name of the GenAI node.
+* **Model name**: The model that is used for the GenAI node.
+* **Response time**: The amount of time taken by the GenAI node to complete the request.
+* **Start time**: The time when the GenAI node has started its execution.
+* **End time**: The time when the GenAI node has completed its execution.
+
+You can also see the following metrics on the top of the page:
+
+* **TOTAL REQUESTS**: The total number of Gen AI node requests.
+* **RESPONSE TIME**: The average response time of all the GenAI node requests. It is measured by the following two metrics:
+    * **P90**: This metric represents the response time below which 90% of the requests fall.
+    * **P99**: This metric represents the response time below which 99% of the requests fall.
+* **FAILURE RATE**: The percentage of instances in which the Gen AI node has failed in execution.
+
+These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.
+
+## Viewing Detailed Run Information
+
+Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas. [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
+
+<img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
+
+The panel displays the following details:
+
+*  **Run ID/Request ID**: The unique identifier for the flow.
+* **Response Time**: The duration the agent takes to complete a request and provide an output.
+*  **Debug icon**: Clicking this icon displays the debug log details.
+*  **Input**: The Input section displays the input sent to the agent.
+*  **Flow log**: The flow log section displays the information of each node.
+    * **Success**: Displays the log as in the debug panel.
+    * **Failure**: Displays failure details as in the debug panel.
+
+        For GenAI nodes, when you expand the node you can see the information related to each node along with the scanner information.
+
+*  **Output section**: The Output section displays the agent's output (for successful runs). You can copy the output and view tokens.
+
+    <img src="../images/agent_monitor_viewing_run_information_detailed.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
+
+
+## Understanding the Impact of Timeouts on Agent Endpoints
+
+The impact of timeouts on agent endpoints depends on whether the process is synchronous (Sync) or asynchronous (Async). **Sync** requests are handled and fulfilled immediately, while **Async** requests may pause and show a ‘Waiting’ status until a response is received. If the response time is longer or the timeout is set to infinite, the system will wait indefinitely until the external system responds.
+
+Below are the four scenarios showing how timeouts affect the agent endpoint, along with the corresponding status on the Agent monitoring page:
+
+**Agent 'Sync' & API node 'Sync'**:
+
+* Request immediately fulfilled, no specific message to the endpoint.
+* 'In-progress' status while running.
+
+**Agent 'Sync' & API node 'Async' (API node timeout < Agent Sync timeout)**:
+
+* Agent API retrieves data, flow executes as 'In-progress' status, and the response is sent.
+* External requests: Agent execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when agent execution resumes.
+
+**Agent 'Async' & API node 'Sync'**:
+
+* Agent executes, and the response is sent to the callback URL.
+* 'In-progress' status while flow is running.
+
+**Agent 'Async' & API node 'Async' (API node timeout < Agent Async timeout OR both are set to infinite)**:
+
+* External requests: Agent execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when agent execution resumes.
+* If the external system tries the same callback URL again, it will be notified that the request has already been fulfilled.
+
+
+The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure an Agent](https://docs.kore.ai/gale/agents/configure-an-agent/) and [API Node](https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/).
+
+
+
+## Searching and Filtering Information
+
+### Manual Search
+
+Use the search box in the top right corner of the Agent monitor page to find specific runs or calls based on keywords.
+
+### Time-based Search
+
+Use the calendar option to search for runs or calls from a specific time period. You can  filter your search results by time period, whether it’s something from the last day, week, month, or year. 
+
+Steps to use the time-based search:
+
+1. Click the calendar button in the top right corner of the Agent monitor page.
+
+    <img src="../images/agent_monitor_calendar_selection.png" alt="calendar" title="Calendar" style="border: 1px solid gray; zoom:80%;">
+
+2. Select a predefined time range or set custom dates.
+
+    <img src="../images/agent_monitor_calendar_selection_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
+
+3. Click **Apply** to update the results.
+
+
+### Custom Filters
+
+Use the filter option to filter the information displayed in the Agent monitor dashboard by applying custom filters. These filters allow you to select specific columns, apply operators such as **Is** **Equal To** or **Is Not Equal To,** and then specify the desired value.
+
+You can also add multiple filters using AND/OR operators for more precise results.
+
+Steps to use the filters:
+
+1. Click the Filter icon.
+2. Click **+ Add filter**.
+
+    <img src="../images/agent_monitor_filtericon_new.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
+
+3. Select options for Column, Operator, and Value.
+
+    <img src="../images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
+
+4. Click **Apply**.
+
+## Agent Run Errors
+
+In the **All runs** section, any error that occurs via the endpoint during an agent run is displayed in a separate window for the specified *Run ID*.
+
+To view detailed error information, click on the corresponding agent run entry in the **Agent Monitor** dashboard.
+
+<img src="../images/agent-run-errors.png" alt="agent run errors" title="agent run errors" style="border: 1px solid gray; zoom:80%;">
+
+An error message includes the following information:
+
+* HTTP status code returned by the web server as a response.
+* A message describing the error.
+* Suggestions to verify and manage the error.
+
+### Error Categories
+
+The errors are classified as follows:
+
+* **Authorization:** An error that occurs during API key authorization of an agent.
+* **Data Validation:** Any discrepancy detected when validating input fields and API calls during an agent run.
+* **Content Filter:** Breaches of guardrail threshold limits during GenAI node execution.
+* **Internal Server Error:** Technical issues encountered with the internal server.
+* **Network**: Technical issues encountered with the network connectivity.
+
+### Error Scenarios 
+
+The table below lists the errors that can occur in the **Agent Monitoring** dashboard, including the error categories and HTTP status codes:
+
+
+<table>
+  <tr>
+   <td><strong>Error Scenario</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Category</strong>
+   </td>
+   <td><strong>HTTP Status Code</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Mandatory input field
+   </td>
+   <td>A mandatory input field is missing for the agent run.
+   </td>
+   <td rowspan="4" >Data Validation
+   </td>
+   <td rowspan="3" >400 Bad Request
+   </td>
+  </tr>
+  <tr>
+   <td>Invalid data type for input field
+   </td>
+   <td>An incorrect data type is provided for a field input.
+   </td>
+  </tr>
+  <tr>
+   <td>Empty Input Object
+   </td>
+   <td>A field input is missing a value or has an empty value.
+   </td>
+  </tr>
+  <tr>
+   <td>Large Request Payload
+   </td>
+   <td>The request payload exceeds the server's size limit.
+   </td>
+   <td>413 Payload Too Large
+   </td>
+  </tr>
+  <tr>
+   <td>Any Server side issues
+   </td>
+   <td>A technical issue caused the server to fail.
+   </td>
+   <td>Internal Server
+   </td>
+   <td>500 Internal Server Error
+   </td>
+  </tr>
+  <tr>
+   <td>Network Issues:- Request timeout on the server
+   </td>
+   <td>Temporary network or GALE server connection issue.
+   </td>
+   <td>Network
+   </td>
+   <td>408 Request Timeout
+   </td>
+  </tr>
+  <tr>
+   <td>Guardrail Failure
+   </td>
+   <td>The flow execution was aborted at the <strong>GenAI node</strong> due to a guardrail violation, as the risk score exceeded the threshold.
+   </td>
+   <td>Content Filter
+   </td>
+   <td>403 Forbidden
+   </td>
+  </tr>
+</table>
+

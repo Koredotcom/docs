@@ -1,0 +1,225 @@
+site_name: Kore ai Docs
+site_author: Kore ai Content Experience Team
+docs_dir: 'docs/agent-platform/'
+site_dir: 'site/agent-platform/'
+repo_name: Koredotcom/docs
+repo_url: https://github.com/Koredotcom/docs
+extra_css:
+    - stylesheets/extra_kore.css
+theme:
+  favicon: images/agent-platform_favicon.svg
+  name: material
+  custom_dir: overrides.en.agent-platform
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
+plugins:
+  - search:
+      lang: tr
+  - glightbox   
+extra:
+  version:
+    provider: mike
+  generator: false
+  analytics:
+    provider: google
+    property: G-560BYJFH0P
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-                       
+            Thanks for your feedback! Help us improve this page by
+            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - extra_js/feedback.js
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this Page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: |
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+nav:
+  - Home : home.md
+  - Getting Started: 
+    - agent-platform Overview: getting-started/introduction.md
+    - Accessing agent-platform: getting-started/sign-up-sign-in.md        
+    - Release Notes:
+      - Recent Updates: release-notes/recent-updates.md
+  - Agents: 
+    - About Agents: agents/overview.md
+    - Create an Agent: agents/create-a-new-agent.md
+    - Import an Agent: agents/import-an-agent.md
+    - Agent Flows:
+      - About Flows: agents/agents-flows/flows-overview.md
+      - About Tool Calling: agents/agents-flows/tool-calling.md
+      - Manage Flows: 
+        - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
+        - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+      - Types of Nodes: 
+        - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - API Node: agents/agents-flows/types-of-nodes/api-node.md
+        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: agents/agents-flows/types-of-nodes/docsearch-node.md        
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md 
+      - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
+    - Sharing & Permissions: 
+      - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
+    - Agent Endpoint: 
+      - Deploy an Agent: agents/deploy-an-agent.md
+    - Agent Monitor: 
+      - About Agent Monitor: agents/agent-monitor/about-agent-monitor.md
+      - Accessing Agent Monitor: agents/agent-monitor/accessing-agent-monitor.md
+      - Understanding Agent Monitor: agents/agent-monitor/understanding-the-agent-monitor-interface.md
+    - API Keys: 
+      - Create an API Key: agents/create-a-new-api-key.md 
+    - Guardrails: 
+      - About Guardrails: agents/guardrails/overview.md
+      - Add a Scanner: agents/guardrails/add-a-scanner.md
+      - Test Guardrail: agents/guardrails/test-guardrail.md
+      - Manage Guardrails: agents/guardrails/manage-guardrails.md
+    - Audit logs:
+      - Agent Audit Logs: agents/agent-audit-log.md
+    - Configurations:
+      - Configure an Agent: agents/configure-an-agent.md
+      - Export an Agent: agents/export-an-agent.md
+      - Import Agent as a Version: agents/import-an-agent/#import-agent-as-a-version
+  - Models: 
+    - About Models: models/overview.md 
+    - Fine-Tuned Models: 
+      - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - Model Settings:
+        - Overview: models/fine-tune-models/model-settings-overview.md
+        - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+        - API Keys: models/fine-tune-models/generate-an-api-key.md
+        - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
+      - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
+    - Open-Source Models:
+      - Import a model: models/open-source-models/importing-models.md
+      - Deploy a model:
+        - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+        - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - Model Optimization Techniques: models/open-source-models/model-optimization.md 
+      - Open-Source models overview: models/open-source-models/open-source-summary.md
+      - Model Settings:
+        - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+        - API Keys: models/open-source-models/generate-an-api-key-open-source.md
+        - Configurations: models/open-source-models/configure-your-open-source-model.md
+    - External Models: 
+      - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+      - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+  - Prompts: 
+    - About Prompt Studio: playground/about-prompt-studio.md
+    - Accessing Prompt Studio: playground/accessing-prompt-studio.md
+    - Using Prompt Studio: playground/using-prompt-studio.md
+    - Advanced Features: playground/advanced-features.md
+    - More Options on Prompt Studio: playground/options-prompt-canvas.md
+  - Data: 
+    - Manage Data: data/manage-datasets.md
+  - Evaluation: 
+    - Overview: evaluation/overview.md
+    - Create Projects: evaluation/create-project.md
+    - Create Evaluations: evaluation/create-evaluation.md
+    - Import Datasets: evaluation/import-dataset.md
+    - Configure Evaluators: evaluation/configure-evaluator.md
+    - Run Evaluations: evaluation/run-evaluation.md
+    - View Results: evaluation/view-evaluation-insight.md
+  - Settings:
+    - Overview: settings/settings-overview.md
+    - User Management: 
+      - Overview: settings/user-management/overview.md
+      - Users: settings/user-management/users.md
+      - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-a-user-to-your-account
+      - Add Users from Active Directory: settings/user-management/settings/active-directory.md
+      - Role Management: settings/user-management/role-management.md
+    - Integrations: 
+      - Enable Hugging Face: settings/integrations/enable-hugging-face.md
+      - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
+      - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
+    - Monitoring: 
+      - About Monitoring: settings/monitoring/overview.md
+      - Audit Logs: settings/monitoring/audit-logs.md
+      - Analytics:
+        - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
+        - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
+        - Model Traces: settings/monitoring/analytics/model-traces.md
+    - Security and Control:
+      - Single Sign On: settings/security-and-control/single-sign-on.md
+    - Billing:
+      - Billing and Usage: settings/billing/billing-and-usage.md
+      - Managing Usage Limits: settings/billing/managing-usage-limits.md
+      
