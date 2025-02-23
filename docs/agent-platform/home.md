@@ -1,6 +1,6 @@
 ---
 template: home/home.html
-title: GALE
+title: Agent Platform
 social:
   cards_layout_options:
     title: Documentation that simply works
