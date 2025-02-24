@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
-## v0.0.7 February 14, 2025
+## v0.7.0 February 14, 2025
 
 <u>Minor Release</u>
 
