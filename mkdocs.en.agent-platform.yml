@@ -112,8 +112,8 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - agent-platform Overview: getting-started/introduction.md
-    - Accessing agent-platform: getting-started/sign-up-sign-in.md        
+    - Platform Overview: getting-started/introduction.md
+    - Accessing the Platform: getting-started/sign-up-sign-in.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
   - Agentic Apps: 

@@ -1,4 +1,4 @@
-# Introducing All-new GALE Platform
+# Introducing All-new Agent Platform (Preview)
 
 GALE is a new platform for building LLM-powered AI agents. It offers tools to create Gen AI agents quickly. These agents can easily fit into your current systems and workflows. 
 
