@@ -116,7 +116,9 @@ nav:
     - Accessing agent-platform: getting-started/sign-up-sign-in.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
-  - Agents: 
+  - Agentic Apps: 
+    - Overview: agentic-apps/overview.md
+  - Tools: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
     - Import an Agent: agents/import-an-agent.md
