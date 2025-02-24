@@ -30,6 +30,10 @@ We're excited to introduce the preview version of Kore.ai's Agent Platform! This
 
 For complete details on accessing and using the platform, please refer to the <u>Platform Overview</u> and <u>Accessing the Platform</u> documents.
 
+## Sign up for Preview
+
+The preview program is now open and accepting applications. Please fill <u>this form</u> to get early access to the platform. We will review your application and share how to access the platform.
+
 ## Share Feedback
 
 We welcome your feedback to help enhance the platform! 
