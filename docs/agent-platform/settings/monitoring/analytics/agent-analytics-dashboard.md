@@ -279,7 +279,7 @@ The expanded views of all the widgets are shown below:
 
 <img src="../images/nodes-execution-expanded-view.png" alt="nodes execution expanded view" title="nodes execution expanded view" style="border: 1px solid gray; zoom:75%;">
 
-The **Agents Analysis Dashboard** offers custom and actionable insights through the various features highlighted in this post to streamline agents’ performance in your account. 
+The **Agents Analysis Dashboard** offers actionable insights that are customized for various features highlighted in this post to streamline agents’ performance in your account. 
 
 ## Related Information
 
