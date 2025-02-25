@@ -65,7 +65,7 @@ Currently, the following APIs are available:
    </td>
   </tr>
   <tr><td rowspan="5"><b>Manage a Tool (Agent)</b></td>
-    <td>Import a New Tool API</td>
+    <td><a href="../apis-list/import-a-new-tool/" target="_blank">Import a New Tool API</a></td>
    <td>To import a new tool into the system.</td></tr>
     <tr><td>Import to Existing Tool API</td>
    <td>To import new configurations, datasets, or updates into an already existing tool within the system.</td></tr>
