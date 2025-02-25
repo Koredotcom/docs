@@ -1,4 +1,4 @@
-# Kore.ai Agent Platform v0.1.0 - Preview Release
+# Kore.ai Agent Platform v0.1.0 (Preview)
 
 We're excited to introduce the preview version of Kore.ai's Agent Platform! This early access release allows you to explore our unified enterprise solution for building multi-agent AI applications before the official launch.
 
