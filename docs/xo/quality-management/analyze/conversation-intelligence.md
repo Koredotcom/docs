@@ -19,7 +19,7 @@ Users can access the **Conversation Intelligence** dashboard from **Contact Cent
 
 ## Filters
 
-You can use the filters to customize the Intelligence tab.
+You can use the filters to customize the **Conversation Intelligence** tab.
 
 ### Create a Filter
 
@@ -34,14 +34,16 @@ Steps to create a filter:
 3. On the **New Filter** window, select **Queues** or **Agents**. 
 <img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
-4. Select the list of options pertaining to **Queues** or **Agents**, as required.
-5. Click **Save & Apply**.
+4. Select the relevant options pertaining to **Queues** or **Agents**, as required.
+5. Click **Apply**.
    
     !!! Note
 
-        Clicking the **Apply** button does not save the filter.
+        Clicking **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently.
 
-6. Enter the **Filter Name**, and click **Save & Apply**.  
+    <img src="../conversation-intelligence/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:60%;">
+
+6. Click **Save & Apply** and enter the **Filter Name**.  
 
     !!! Note
 
@@ -49,9 +51,8 @@ Steps to create a filter:
 
     <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
 
-    A confirmation message is displayed.
-
-    <img src="../conversation-intelligence/images/filter-deleted-successfully.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:80%;">
+7. Enable the toggle switch to “Make this the default view” filter. The following successful confirmation message is displayed.
+    <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
 
 ### Saved Filters
 
@@ -178,7 +179,7 @@ Customer Satisfaction (CSAT) is a widely used metric for measuring and evaluatin
 
 ### Crutch Word Score
 
-This measures how frequently an agent uses crutch words during their speech. Crutch words are words or phrases that agents use as a filler or to give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances only.
+This measures how frequently an agent uses crutch words during their speech. These words or phrases are used as fillers by the agents that give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances and supports multilingual conversations, enhancing detection by identifying subtle crutch words. [Learn more](../configure/langauge-settings.md).
 
 ## Agent Performance Monitor
 
@@ -246,6 +247,7 @@ You can monitor and review historical data to assess customer experience. This i
 
 The following parameters can be monitored:
 
+* **All Languages**: Enables the multi-selection of languages from the All Languages drop-down menu, reflecting the languages chosen in the evaluation form. By default, all languages are pre-selected. Only the metrics corresponding to the selected languages are shown under this filter. Once the language filter is applied, the relevant language-specific interaction data is displayed in the **Sentiment Monitor** and **Customer Churn Monitor** widgets.
 * **Average Wait Time**: The average wait time is the total wait time for all customers in a specific period (for example, an hour) divided by the total number of customers served during that period.
 * **NPS Score**: The Net Promoter Score (NPS) measures customer loyalty and satisfaction. It is determined through a survey question that asks customers to rate, on a scale from 0 to 10, how likely they are to recommend the products or services to others.
 * **Churn Risk**: Churn risk refers to the rate at which customers stop using the services or products provided by the contact center and switch to a competitor or discontinue their engagement altogether. It indicates the loss of customers over a specific period.
@@ -283,6 +285,14 @@ Insights Mining displays the top 30 topics by volume and allows you to identify 
 <img src="../conversation-intelligence/images/insights-mining-default-screen.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 By default, this widget displays a blank screen without any data. Based on the date range and topic selected from the calendar, it pulls the required sentiment scores for interactions in bubbles.
+
+#### All Languages
+This enables multi-selection of languages from the **All Languages** drop-down menu, corresponding to the languages chosen in the evaluation form. By default, all languages are selected. Only the metrics configured for the chosen languages are shown under this filter. 
+
+ You can filter data by channel (All, Voice, Chat, Email). This filter affects the entire dashboard, except for agent occupancy, since occupancy per channel is not tracked.
+
+ Upon selection of any language and channel filter, the corresponding interaction sentiment scores along with bubble plotting visual representations are populated in the **Topics** and **Keyword Cloud & Emotions** for all widgets. 
+
 
 ### Topics 
 
