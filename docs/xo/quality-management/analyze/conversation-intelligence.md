@@ -44,14 +44,9 @@ Steps to create a filter:
     <img src="../conversation-intelligence/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:60%;">
 
 6. Click **Save & Apply** and enter the **Filter Name**.  
-
-    !!! Note
-
-        You can turn on the toggle to Make this the default view filter.
-
     <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
 
-7. Enable the toggle switch to “Make this the default view” filter. The following successful confirmation message is displayed.
+7. Enable the toggle switch to **Make this the default vie** filter. The following successful confirmation message is displayed.  
     <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
 
 ### Saved Filters
