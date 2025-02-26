@@ -31,23 +31,20 @@ Steps to create a filter:
 2. Click **+ Add New Filter**.  
 <img src="../conversation-intelligence/images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, select **Queues** or **Agents**. 
+3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**. 
 <img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
-4. Select the relevant options pertaining to **Queues** or **Agents**, as required.
-5. Click **Apply**.
-   
     !!! Note
 
-        Clicking **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently.
+        Clicking **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently. 
 
     <img src="../conversation-intelligence/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:60%;">
 
-6. Click **Save & Apply** and enter the **Filter Name**.  
+4. Under the **Save Filter** section, enter the Filter Name.
+5. Enable the toggle switch **Make this the default view** for the newly added filter or save filter, and click **Save & Apply**.  
     <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
-
-7. Enable the toggle switch to **Make this the default vie** filter. The following successful confirmation message is displayed.  
-    <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
+    
+A successful confirmation message is displayed.  
 
 ### Saved Filters
 
