@@ -102,11 +102,17 @@ Steps to edit a filter:
 2. Make the necessary changes, and click **Save & Apply**.  
     <img src="../conversation-intelligence/images/save-edit-filter.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:90%;">
 
-    A confirmation is displayed.
+    A successful confirmation message is displayed.
 
-## Time Selection
+## Clear Filters
 
-In this section, you can filter data by time range. By default, data is displayed for the current day (Today). Select a time range, and click **Apply**.  
+This filter displays only the analytics data for the current day's agent performance, customer experience, and interaction details. When applied, it removes all previously selected date ranges and focuses solely on today's data.
+
+<img src="../conversation-intelligence/images/clear-filter.png" alt="Clear Filters" title="Clear Filters" style="border: 1px solid gray; zoom:80%;">
+
+## Date and Time Range Selection
+
+In this section, you can filter data by date and time range. By default, data is displayed for the current day (Today). Select a specified date and time range, and click **Apply**.  
 
 <img src="../conversation-intelligence/images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
