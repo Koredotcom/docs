@@ -1,17 +1,12 @@
-# Import a New Tool API
+# Import to an Existing Tool API
 
-This API imports a new agent/tool by providing the necessary **file IDs**, ensuring all the necessary configurations, including the tool’s flow data, app definitions, and environment variables are correctly imported. After triggering the import, the response returns a <code>dockStatusId</code>. Use this ID to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the successful import of the tool.
+This API enables users to import configurations, datasets, or updates into an existing tool, allowing modifications without creating a new one. It ensures seamless integration by updating the tool with the provided tool data, flow data, and environment variables files.
 
-To import a tool, follow the steps below:
-
-1. **Upload Files**: Use the [File Upload API](./upload-file-api.md){:target="_blank"} to upload the files for the flow definition, app definition, and environment variables. [Learn more](https://docs.kore.ai/gale/agents/import-an-agent/#import-to-create-a-new-agent){:target="_blank"}. This API returns unique **file IDs** for each file. 
-2. **Import the Tool**: Call the [Import Tools API](./import-a-new-tool.md){:target="_blank"} using the retrieved **file IDs** along with the tool name.
-3. **Track import Status**: The API response returns a <code>dockStatusId</code> that helps monitor the import progress using the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"}.
+After triggering the import, the response returns a <code>dockStatusId</code>. Use this ID to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the status of the tool import process.
 
 <table>
   <tr>
-   <td>
-<strong>Method</strong>
+   <td><strong>Method</strong>
    </td>
    <td>POST
    </td>
@@ -19,7 +14,7 @@ To import a tool, follow the steps below:
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/public/tools/import</code>
+   <td><code>https://{host}/api/public/tools/:{toolId}/import</code>
    </td>
   </tr>
   <tr>
@@ -54,7 +49,18 @@ To import a tool, follow the steps below:
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://gale.kore.ai</code>
+   <td>The environment URL. For example, https://gale.kore.ai
+   </td>
+   <td>String
+   </td>
+   <td>Required
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>toolId</strong>
+   </td>
+   <td>The tool ID of the tool being imported 
    </td>
    <td>String
    </td>
@@ -66,14 +72,13 @@ To import a tool, follow the steps below:
 ## Sample Request
 
 ```js
-curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import' \
---header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9xxxxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fxxxxxxxxxxa' \
+curl --location 'https://staging-agent-platform.kore.ai/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xxxxxxxx5/import' \
+--header 'x-api-key: kg-90xxxxx5-9xxe-5xxf-9xx7-9f4xxxxxxxx4-55xxxxx4-axx9-4xx2-axx2-fbcxxxxxxxxa' \
 --header 'Content-Type: application/json' \
 --data '{
-    "toolDataFileId": "67bxxxxxxxxxxxxxxxxxxxxc",
-    "flowDataFileId": "67bxxxxxxxxxxxxxxxxxxxx2",
-    "envVariablesFileId": "67bxxxxxxxxxxxxxxxxxxxxx2",
-    "toolName":"Staging Agent"
+    "toolDataFileId": "67xxxxxxxxxxxxxxxxxxxxxc",
+    "flowDataFileId": "67xxxxxxxxxxxxxxxxxxxxxx2",
+    "envVariablesFileId": "67xxxxxxxxxxxxxxxxxxxxx2"
 }'
 ```
 
@@ -93,7 +98,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
   <tr>
    <td><strong>toolDataFileId</strong>
    </td>
-   <td>The <code>file ID</code> for the tool data file.
+   <td>The identifier for the tool data file being imported.
    </td>
    <td>String
    </td>
@@ -103,7 +108,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
   <tr>
    <td><strong>flowDataFileId</strong>
    </td>
-   <td>The <code>file ID</code> for the flow data file.
+   <td>The identifier for the flow data file.
    </td>
    <td>String
    </td>
@@ -113,17 +118,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
   <tr>
    <td><strong>envVariablesFileId</strong>
    </td>
-   <td>The<code> file ID </code>for the environment variables
-   </td>
-   <td>String
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td><strong>toolName</strong>
-   </td>
-   <td>The name of the tool.
+   <td>The identifier for the environment variables file.
    </td>
    <td>String
    </td>
@@ -140,7 +135,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
    "toolId": "{toolId}",
    "jobType": "TOOLS",
    "action": "IMPORT",
-   "status": "IN_PROGRESS"
+   "status": "SUCCESS"
 }
 ```
 
@@ -160,11 +155,11 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
   <tr>
    <td><strong>dockStatusId</strong>
    </td>
-   <td>The unique identifier to track the status of the import action. 
+   <td>The unique identifier to track the status of action. E.g. import, export, deploy, etc.
    </td>
    <td>String
    </td>
-   <td>E.g: ds-cxxxxxx5-dxxd-5xxf-9xxd-0xxxxx6c5xx8
+   <td>e.g., ds-c6xxxxx5-dxxd-5xxf-9xxd-0xxxxx6xxxx8
    </td>
   </tr>
   <tr>
@@ -174,7 +169,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
    </td>
    <td>String
    </td>
-   <td>e.g., a-8xxxxxxe-6xxe-5xx1-8xxc-b3xxxxx80xx6
+   <td>e.g., a-8xxxxxbe-6xxe-5xx1-8xxc-bxxxxxx80xx6
    </td>
   </tr>
   <tr>
@@ -190,7 +185,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
   <tr>
    <td><strong>action</strong>
    </td>
-   <td>The action that is performed on the tool/model.
+   <td>The action being performed on the tool/model.
    </td>
    <td>String
    </td>
@@ -204,7 +199,7 @@ curl --location 'https://staging-agexx-plaxxxxm.kore.ai/api/public/tools/import'
    </td>
    <td>String
    </td>
-   <td><em>IN_PROGRESS</em>, <em>SUCCESS</em>, or <em>FAILED</em>
+   <td><em>IN_PROGRESS</em>, <em>SUCCESS</em>, <em>FAILED</em>
    </td>
   </tr>
 </table>

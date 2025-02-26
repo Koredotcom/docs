@@ -67,7 +67,7 @@ Currently, the following APIs are available:
   <tr><td rowspan="5"><b>Manage a Tool (Agent)</b></td>
     <td><a href="../apis-list/import-a-new-tool/" target="_blank">Import a New Tool API</a></td>
    <td>To import a new tool into the system.</td></tr>
-    <tr><td>Import to an                                                                                                       Existing Tool API</td>
+    <tr><td><a href="../apis-list/import-to-an-existing-tool/" target="_blank">Import to an Existing Tool API</a></td>
    <td>To import new configurations, datasets, or updates into an already existing tool within the system.</td></tr>
   <tr><td><a href="../apis-list/export-a-tool/" target="_blank">Export a Tool API</a></td>
    <td>To export an existing tool's configuration and associated data, including its flow, for backup, sharing, or reuse.</td></tr>

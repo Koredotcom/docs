@@ -211,6 +211,7 @@ nav:
         - File Upload API: apis/apis-list/upload-file-api.md
         - Get Dock Status API: apis/apis-list/get-dock-status.md
         - Import a New Tool API: apis/apis-list/import-a-new-tool.md
+        - Import to an existing Tool API: apis/apis-list/import-to-an-existing-tool.md
         - Undeploy a Tool (Agent) API: apis/apis-list/undeploy-a-tool.md
         - Undeploy a Model API: apis/apis-list/undeploy-a-model.md
         - Undeploy Guardrails API: apis/apis-list/undeploy-guardrails.md             
