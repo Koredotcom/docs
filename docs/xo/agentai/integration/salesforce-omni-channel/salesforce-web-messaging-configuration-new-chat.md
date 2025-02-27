@@ -36,12 +36,10 @@ This document provides instructions on connecting your messaging channel to a we
 **Assign Permission Set License Agreement**
 
 Users must have the following Permissions Set License Agreement to be configured to attend the incoming chat request as an agent:  
-1. Go to **Setup** > **Users**, and click **Users**.  
+1. Go to **Setup** > **Users**, and click **Users**. 
 <img src="../images/setup-users-3.png" alt="setup-users" title="setup-users" style="border: 1px solid gray; zoom:80%;">
-
 2. Click a user name, and it opens up the **User Details** page.  
 <img src="../images/user-details-page-4.png" alt="user-details-page" title="user-details-page" style="border: 1px solid gray; zoom:80%;">
-
 3. Scroll down to the **Permission Set License Assignments** section, click **Edit Assignments**, and search for **Messaging User** and **Messaging for In-App and Web User**.
 4. Enable these two, and click **Save**.  
 <img src="../images/permission-set-license-assignments-5.png" alt="permission-set-license-assignments" title="permission-set-license-assignments" style="border: 1px solid gray; zoom:80%;">  
