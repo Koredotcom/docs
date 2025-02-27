@@ -2,7 +2,7 @@
 # Select and Deploy an Open-Source Model
 
 
-Currently, GALE supports thirty-plus open-source models and provides them as a service. If you select the Kore-hosted model, you can optimize it before deployment.
+Currently, Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Kore-hosted model, you can optimize it before deployment.
 
 To select and deploy a model, follow these steps:
 
@@ -86,7 +86,7 @@ To select and deploy a model, follow these steps:
   
 
 
-If you have selected optimization, the model optimization starts, and the status changes to “Optimization”. If not, the model is deployed. After deployment, the status changes to "Deployed." You can now use this model across GALE and externally.
+If you have selected optimization, the model optimization starts, and the status changes to “Optimization”. If not, the model is deployed. After deployment, the status changes to "Deployed." You can now use this model across Agent Platform and externally.
 
 Hover over the deployed model to view **more** icons (three dots) which provide access to the model **API endpoint** and **Configurations**. Selecting the API endpoint option shows the API endpoint, deployment history, API keys, and other details. Selecting the Configuration option allows you to add a description, tags, and deploy or delete the model.
 

@@ -4,7 +4,7 @@ You can deploy an open-source model by selecting the Hugging Face option in the 
 
 !!! note
 
-    GALE currently supports models compatible with Transformers library version lower than or equal to 4.43.1. Models that require a higher version of the Transformers library cannot be supported in GALE at this time.
+    Agent Platform currently supports models compatible with Transformers library version lower than or equal to 4.43.1. Models that require a higher version of the Transformers library cannot be supported in Agent Platform at this time.
 
 
 To deploy a model from Hugging Face, follow these steps:
@@ -30,7 +30,7 @@ To deploy a model from Hugging Face, follow these steps:
 
 1. In the **Import** model section:
 
-    * Select the **Hugging Face connection to use** from the drop-down list. For more information about How to enable Hugging Face in GALE, see [How to add a connection with Hugging Face](../../integrations/how-to-enable-hugging-face.md).
+    * Select the **Hugging Face connection to use** from the drop-down list. For more information about How to enable Hugging Face in Agent Platform, see [How to add a connection with Hugging Face](../../integrations/how-to-enable-hugging-face.md).
 
 
         <img src="../images/deploy-hugging-face-import-model-section.png" alt="Deploy Hugging Face Import Model Section" title="Deploy Hugging Face Import Model Section" style="border: 1px solid gray; zoom:80%;">

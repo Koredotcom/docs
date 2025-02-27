@@ -1,6 +1,6 @@
 # Add an External Model using API Integration
 
-You can connect an external model to GALE using API integration. This feature extends GALE's functionality by allowing you to bring in models from external sources.
+You can connect an external model to Agent Platform using API integration. This feature extends Agent Platform's functionality by allowing you to bring in models from external sources.
 
 ## Add an External Model
 
@@ -64,11 +64,11 @@ Steps to add an external model using API integration:
         Click the **Save as draft** to save the model and the status is saved as Draft.
     
 
-11. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the Gen AI node of the agent flow builder.
+11. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the Gen AI node of the tool flow builder.
 
 ## Manage Custom API Integrations
 
-Once the integration is successful and the inference toggle is ON, you can use the model across GALE. You can also turn the inferencing OFF if needed.
+Once the integration is successful and the inference toggle is ON, you can use the model across Agent Platform. You can also turn the inferencing OFF if needed.
 
 To manage an integration, click the three-dot icon corresponding to its name and choose from the following options:  
 

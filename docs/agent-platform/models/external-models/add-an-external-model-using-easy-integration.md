@@ -19,7 +19,7 @@ In this topic, you can see the process of adding the Claude-V1 model from the pr
 
     <img src="../images/easy-integration.png" alt="Easy Integration" title="Easy Integration" style="border: 1px solid gray; zoom:80%;">
 
-    A Pop-up with the list of all the Anthropic models that are supported in GALE is displayed.
+    A Pop-up with the list of all the Anthropic models that are supported in Agent Platform is displayed.
 
     <img src="../images/select-model.png" alt="Select Model" title="Select Model" style="border: 1px solid gray; zoom:80%;">
 
@@ -33,4 +33,4 @@ In this topic, you can see the process of adding the Claude-V1 model from the pr
 !!! note
 
     * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
-    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across GALE. If the toggle button is OFF, it means you cannot infer it anywhere in GALE. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
+    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across Agent Platform. If the toggle button is OFF, it means you cannot infer it anywhere in Agent Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
