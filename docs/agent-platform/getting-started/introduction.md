@@ -4,7 +4,7 @@ We are excited to announce the first version of Agent Platform, our enterprise-g
 
 The all-new Agent Platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while maintaining enterprise-grade security and governance. 
 
-## Comprehensive Capabilities
+### Comprehensive Capabilities
 
 The platform provides comprehensive and integrated capabilities across every stage of the AI lifecycle, from initial development to ongoing optimization. These capabilities empower organizations to scale and manage AI deployments efficiently.
 
@@ -36,7 +36,7 @@ The Agent Platform provides a scalable, resilient, and secure infrastructure whe
 ## Key Components
 The Platform's capabilities are powered by its key components that work together to deliver comprehensive automation solutions throughout your organization.
 
-<img src="./images/agent-platform-overview.png" alt="Agent Platform" title="Agent Platform">
+<img src="../images/agent-platform-overview.png" alt="Agent Platform" title="Agent Platform">
 
 * **Agentic Apps**: Build intelligent AI systems that work together autonomously. Create AI assistants that reason, plan actions, and collaborate as a team to handle complex business processes with human-like intelligence.
 
