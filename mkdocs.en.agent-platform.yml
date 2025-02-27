@@ -119,10 +119,10 @@ nav:
   - Agentic Apps: 
     - Overview: agentic-apps/overview.md
   - Tools: 
-    - About Agents: agents/overview.md
-    - Create an Agent: agents/create-a-new-agent.md
-    - Import an Agent: agents/import-an-agent.md
-    - Agent Flows:
+    - About Tools: agents/overview.md
+    - Create a Tool: agents/create-a-new-agent.md
+    - Import a Tool: agents/import-an-agent.md
+    - Tool Flows:
       - About Flows: agents/agents-flows/flows-overview.md
       - About Tool Calling: agents/agents-flows/tool-calling.md
       - Manage Flows: 
@@ -137,15 +137,15 @@ nav:
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
         - DocSearch Node: agents/agents-flows/types-of-nodes/docsearch-node.md        
         - End Node: agents/agents-flows/types-of-nodes/end-node.md 
-      - Agent Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
+      - Tool Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
-    - Agent Endpoint: 
-      - Deploy an Agent: agents/deploy-an-agent.md
-    - Agent Monitor: 
-      - About Agent Monitor: agents/agent-monitor/about-agent-monitor.md
-      - Accessing Agent Monitor: agents/agent-monitor/accessing-agent-monitor.md
-      - Understanding Agent Monitor: agents/agent-monitor/understanding-the-agent-monitor-interface.md
+    - Tool Endpoint: 
+      - Deploy a Tool: agents/deploy-an-agent.md
+    - Tool Monitor: 
+      - About Tool Monitor: agents/agent-monitor/about-agent-monitor.md
+      - Accessing Tool Monitor: agents/agent-monitor/accessing-agent-monitor.md
+      - Understanding Tool Monitor: agents/agent-monitor/understanding-the-agent-monitor-interface.md
     - API Keys: 
       - Create an API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
@@ -154,11 +154,11 @@ nav:
       - Test Guardrail: agents/guardrails/test-guardrail.md
       - Manage Guardrails: agents/guardrails/manage-guardrails.md
     - Audit logs:
-      - Agent Audit Logs: agents/agent-audit-log.md
+      - Tool Audit Logs: agents/agent-audit-log.md
     - Configurations:
-      - Configure an Agent: agents/configure-an-agent.md
-      - Export an Agent: agents/export-an-agent.md
-      - Import Agent as a Version: agents/import-an-agent/#import-agent-as-a-version
+      - Configure a Tool: agents/configure-an-agent.md
+      - Export a Tool: agents/export-an-agent.md
+      - Import Tool as a Version: agents/import-an-agent/#import-agent-as-a-version
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tuned Models: 

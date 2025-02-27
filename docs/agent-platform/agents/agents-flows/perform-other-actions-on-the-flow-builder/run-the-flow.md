@@ -1,4 +1,4 @@
-# Run Agent Flows
+# Run Tool Flows
 
 You can run and test a flow to see how it works in real time. When you run a flow, it generates a context object and stores it temporarily at the node level, allowing you to monitor progress through the debug log.
 
@@ -7,7 +7,7 @@ The output includes key information such as the start and end times, the total t
 
 **Steps to run the flow**:
 
-1. On the top right corner of the agent canvas, click the **Run flow** icon.
+1. On the top right corner of the tool canvas, click the **Run flow** icon.
 
     <img src="../images/run-the-flow.png" alt="Run the Flow" title="Run the Flow" style="border: 1px solid gray; zoom:80%;">
 
@@ -41,7 +41,7 @@ The debug log shows the following key details:
 * **Flow-level log details**: Get an overview of logs at the flow level, including initiation and progress.
 * **Node-level information**: For each flow initiation, detailed logs are provided for each node, which include the success or failure status.
 * **Node success/failure links**: Links to additional details if a node succeeds or fails.
-* **Tool calling details**: Provides detailed logs of any tools called during the agent flow's execution (available only for Gen AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.
+* **Tool calling details**: Provides detailed logs of any tools called during the tool flow's execution (available only for Gen AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.
 * **Node metrics**: For each node, the following metrics are available:
     * **Initiated On**: The timestamp for when the node was triggered.
     * **Executed On**: The timestamp for when the node execution was completed.
@@ -66,7 +66,7 @@ API nodes can be configured in either synchronous or asynchronous mode:
 * **Node paused at**: The timestamp when the node paused waiting for the asynchronous response.
 * **Node resumed at**: The timestamp is when the node resumes after receiving the response.
 * **Total wait time**: The total duration between the node pausing and resuming, indicating the time spent waiting for the API.
-* **Node processing time**: The time GALE spends processing the node after it resumes from the pause.
+* **Node processing time**: The time the platform spends processing the node after it resumes from the pause.
 
 
 #### Time Breakdown for Gen AI Nodes
@@ -74,4 +74,4 @@ API nodes can be configured in either synchronous or asynchronous mode:
 Similar to API nodes, Gen AI nodes also involve external service calls (for example, to AI models). For Gen AI nodes, the following two key timing metrics are shown  in the debug log:
 
 * **Node processing time**: The time taken by the node to complete the execution.
-* **LLM response time**: The time taken for the connected AI model to return a response to GALE's Gen AI node.
+* **LLM response time**: The time taken for the connected AI model to return a response to the Gen AI node.

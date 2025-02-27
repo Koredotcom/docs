@@ -1,4 +1,4 @@
-# Manage Nodes in Agent Flow
+# Manage Nodes in Tool Flow
 
 A flow consists of a sequence of nodes connected on the flow builder canvas. You can easily add nodes on the canvas, connect, rename, rearrange, and delete them as required.
 

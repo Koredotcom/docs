@@ -1,6 +1,6 @@
 # Create a New Version of the Flow
 
-You can save versions of your flows, restore older versions, and delete versions if needed. After you have deployed a flow, it will appear on the Agents page with the status 'Deployed'.
+You can save versions of your flows, restore older versions, and delete versions if needed. After you have deployed a flow, it will appear on the Tools page with the status 'Deployed'.
 
 **Steps to create a new version of the flow**:
 
