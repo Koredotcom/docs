@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - feedback
+---
+
 # Introducing All-new Agent Platform
 
 We are excited to announce the first version of Agent Platform, our enterprise-grade multi-agent orchestration platform. 
