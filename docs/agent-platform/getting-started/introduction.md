@@ -4,34 +4,25 @@ We are excited to announce the first version of Agent Platform, our enterprise-g
 
 The all-new Agent Platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while maintaining enterprise-grade security and governance. 
 
-### Comprehensive Capabilities
+## Comprehensive Capabilities
 
-The platform provides comprehensive and integrated capabilities across every stage of the AI lifecycle, from initial development to ongoing optimization. These capabilities empower organizations to scale and manage AI deployments efficiently.
+The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to efficiently scale and manage AI deployments.
 
-### Intelligent Automation
+* **Intelligent Automation**: At the core of the Agent Platform is its ability to enable Intelligent Agent Orchestration. Enterprises can create AI agents with advanced reasoning capabilities that collaborate to automate sophisticated business workflows. These agentic applications handle multifaceted processes with human-like intelligence, planning actions, and even learning from past behavior.
 
-At the core of the Agent Platform is its ability to enable Intelligent Agent Orchestration. Enterprises can create AI agents with advanced reasoning capabilities that collaborate to automate sophisticated business workflows. These agentic applications handle multifaceted processes with human-like intelligence, planning actions, and even learning from past behavior.
+* **Versatile Development Options**: The platform offers both low-code workflow tools and custom coding options, allowing teams to build AI solutions tailored to their needs. With an intuitive interface for business users and extensive SDKs for developers, cross-functional teams can efficiently connect agents to real-time data and business applications to execute tasks and run workflows.
 
-### Versatile Development Options
-The platform offers both low-code workflow tools and custom coding options, allowing teams to build AI solutions tailored to their needs. With an intuitive interface for business users and extensive SDKs for developers, cross-functional teams can efficiently connect agents to real-time data and business applications to execute tasks and run workflows.
+* **Flexible Model Management**: Agent Platform provides unparalleled flexibility in leveraging AI models. Organizations can fine-tune models for specific domains, deploy cutting-edge open-source options, or seamlessly integrate with external model providers. This model-agnostic approach ensures the best performance while maintaining control over the AI infrastructure.
 
-### Flexible Model Management
-Agent Platform provides unparalleled flexibility in leveraging AI models. Organizations can fine-tune models for specific domains, deploy cutting-edge open-source options, or seamlessly integrate with external model providers. This model-agnostic approach ensures the best performance while maintaining control over the AI infrastructure.
+* **Collaborative Prompt Engineering**: The integrated Prompt Studio enables teams to design, test, and optimize the instructions that guide agent behavior. With a library of curated prompts, collaborative tools, and version control, businesses can systematically experiment and deploy the most effective prompts across their organization.
 
-### Collaborative Prompt Engineering
-The integrated Prompt Studio enables teams to design, test, and optimize the instructions that guide agent behavior. With a library of curated prompts, collaborative tools, and version control, businesses can systematically experiment and deploy the most effective prompts across their organization.
+* **Comprehensive Security and Compliance**: Granular security controls are built into every layer of the platform. Sensitive data is anonymized, content guardrails are enforced, and role-based access ensures appropriate information sharing. With end-to-end encryption, secure integration protocols, and detailed audit trails, the Agent Platform enables responsible and compliant AI deployments.
 
-### Comprehensive Security and Compliance
-Granular security controls are built into every layer of the platform. Sensitive data is anonymized, content guardrails are enforced, and role-based access ensures appropriate information sharing. With end-to-end encryption, secure integration protocols, and detailed audit trails, the Agent Platform enables responsible and compliant AI deployments.
+* **Observability and Explainability**: With end-to-end tracing, businesses have complete visibility into the AI decision-making process. Detailed interaction logs, step-by-step breakdowns, and even real-time thought streaming help teams understand and troubleshoot agent performance.
 
-### Observability and Explainability
-With end-to-end tracing, businesses have complete visibility into the AI decision-making process. Detailed interaction logs, step-by-step breakdowns, and even real-time thought streaming help teams understand and troubleshoot agent performance.
+* **Continuous Evaluation and Optimization**: The platform's Evaluation Suite combines AI-powered analysis with human feedback to continuously monitor and improve agent performance. Custom scoring rubrics enable organizations to measure quality against their specific criteria. Extensive analytics capture usage patterns, conversation histories, and key metrics, helping optimize AI applications and demonstrate clear ROI.
 
-### Continuous Evaluation and Optimization
-The platform's Evaluation Suite combines AI-powered analysis with human feedback to continuously monitor and improve agent performance. Custom scoring rubrics enable organizations to measure quality against their specific criteria. Extensive analytics capture usage patterns, conversation histories, and key metrics, helping optimize AI applications and demonstrate clear ROI.
-
-### Enterprise-Ready Infrastructure
-The Agent Platform provides a scalable, resilient, and secure infrastructure whether deployed on-premise, in a private cloud, or through a hybrid model. It supports containerization, microservices, and API-driven architecture and can seamlessly integrate into an enterprise tech stack. Industrial-strength CI/CD pipelines and granular versioning allow organizations to implement rigorous testing and deployment processes across development, staging, and production environments.
+* **Enterprise-Ready Infrastructure**: The Agent Platform provides a scalable, resilient, and secure infrastructure whether deployed on-premise, in a private cloud, or through a hybrid model. It supports containerization, microservices, and API-driven architecture and can seamlessly integrate into an enterprise tech stack. Industrial-strength CI/CD pipelines and granular versioning allow organizations to implement rigorous testing and deployment processes across development, staging, and production environments.
 
 ## Key Components
 The Platform's capabilities are powered by its key components that work together to deliver comprehensive automation solutions throughout your organization.
