@@ -1,10 +1,10 @@
-# Create an Agent
+# Create a Tool
 
-You can create a new agent to leverage models, build flows, and later deploy it as an endpoint. You can start the agent creation journey from the Agents page. The page also allows you to manage your existing agents and view agents that have been shared with you by others.
+You can create a new tool to leverage models, build flows, and later deploy it as an endpoint. You can start the tool creation journey from the Tools page. The page also allows you to manage your existing tools and view the tools that have been shared with you by others.
 
-Steps to create an agent:
+Steps to create a tool:
 
-1. On the **Agents** page, click **Create new agent**. The **New agent** dialog box is displayed.  
-<img src="../images/audio-transcription-solution-agent.png" alt="Create a New Agent" title="Create a New Agent" style="border: 1px solid gray; zoom:60%;">
+1. On the **Tools** page, click **Create a new tool**. The **New tool** dialog box is displayed.  
+<img src="../images/agent_platform/create_a_new_tool_fill.png" alt="Create a New Tool" title="Create a New Tool" style="border: 1px solid gray; zoom:60%;">
 
-2. Enter a name and a brief description for the agent and click **Create**. The agent is created, and the **Agent Flow** option is displayed. You can start creating your agent flow now.
+2. Enter a name and a brief description for the tool and click **Create**. The tool is created, and the **Tool Flow** option is displayed. You can start creating your tool flow now.

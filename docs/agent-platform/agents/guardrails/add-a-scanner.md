@@ -10,7 +10,7 @@ In the following steps, you will learn how to add an input scanner. The steps to
 
 Steps to add a Scanner:
 
-1. Click **Agents** on the top navigation bar and select the desired agent.
+1. Click **Tools** on the top navigation bar and select the desired tool.
 
 2. Click **Guardrails** in the left navigation pane. The Guardrails page is displayed.  
 <img src="../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;">
