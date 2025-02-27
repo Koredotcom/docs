@@ -30,12 +30,12 @@ This document provides instructions on connecting your messaging channel to a we
 ## Enable Service Presence Status Access
 1. Enter **Profile** in the **quick find** box, and then select **Profiles**.
 2. Select **System Administrator**.
-3. Edit **Enable Service Presence Status Access**, and assign **Presence Status Available** – **Chat**,**On Break**, and **Busy**.  
+3. Edit **Enable Service Presence Status Access**, and assign **Presence Status Available** – **Chat**, **On Break**, and **Busy**.  
 <img src="../images/presence-status-available-2.png" alt="presence-status-available" title="presence-status-available" style="border: 1px solid gray; zoom:80%;">
 
 **Assign Permission Set License Agreement**
 
-Users must have the following Permissions Set License Agreement to be configured to attend the incoming chat request as an agent:
+Users must have the following Permissions Set License Agreement to be configured to attend the incoming chat request as an agent:  
 1. Go to **Setup** > **Users**, and click **Users**.  
 <img src="../images/setup-users-3.png" alt="setup-users" title="setup-users" style="border: 1px solid gray; zoom:80%;">
 
@@ -70,7 +70,7 @@ Users must have the following Permissions Set License Agreement to be configured
         1. It opens up a **Visualforce** page, and the bottom-right side of the page shows a chat popup button:  
         <img src="../images/chat-popup-button-11.png" alt="chat-popup-button" title="chat-popup-button" style="border: 1px solid gray; zoom:80%;">
 
-        2. Click this **chat popup** button, and it expands and opens up a chat window, where you as a user can initiate a conversation. (If you get any error message on the browser console, see the [Troubleshooting steps](#troubleshooting-with-setup).  
+        2. Click this **chat popup** button, and it expands and opens up a chat window, where you as a user can initiate a conversation. (If you get any error message on the browser console, see the [Troubleshooting steps](#troubleshooting-with-setup)).  
         <img src="../images/chat-window-12.png" alt="chat-window" title="chat-window" style="border: 1px solid gray; zoom:80%;">  
         3. Accept the chat in the **Salesforce Omni-Channel** inside the service console. Initially, it comes under the **New** tab.  
         <img src="../images/accept-chat-new-tab-13.png" alt="accept-chat-new-tab" title="accept-chat-new-tab" style="border: 1px solid gray; zoom:80%;">
@@ -81,7 +81,7 @@ Users must have the following Permissions Set License Agreement to be configured
 3. Start the conversation.  
 <img src="../images/start-conversation-15.png" alt="start-conversation" title="start-conversation" style="border: 1px solid gray; zoom:80%;">  
 
-<img src="../images/chat-conversation-16.png" alt="chat-conversation" title="chat-conversation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/chat-conversation-16.png" alt="chat-conversation" title="chat-conversation" style="border: 1px solid gray; zoom:80%;">
 
 ## Troubleshooting with Setup
 
