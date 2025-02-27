@@ -8,10 +8,10 @@ Account owners can invite users to collaborate on specific tools. Invited users 
 
 Steps to invite users to your Tool:
 
-1. Open the Tool - click **Tools** on the top navigation bar and click the specific Tool to open it.
+1. Click **Tools** on the top navigation bar and click the specific tool to open it.
 
 2. Click **Sharing & Permission** in the left navigation bar. The page lists the existing collaborators, if any.  
-<img src="../images/sharing-permission-invite.png" alt="Sharing and Permissions" title="Sharing and Permissions" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_platform/sharing_and_permission.png" alt="Sharing and Permissions" title="Sharing and Permissions" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Invite** to add users to your tool. The Invite Users dialog box is displayed.  
 
