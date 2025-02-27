@@ -15,7 +15,7 @@ This document provides instructions on connecting your messaging channel to a we
 
 ## Configure a Messaging Channel for Web Deployment
 1. Sign in to your organization–if you are in **Salesforce Classic**, switch to **Lightning Experience**.
-2. Follow this Salesforce documentation to configure your Embedded Service Deployment, [https://help.salesforce.com/configure_web_deployment](https://help.salesforce.com/s/articleView?id=service.miaw_configure_web_deployment_1.htm&type=5).
+2. Follow this Salesforce documentation to configure your Embedded Service Deployment, [https://help.salesforce.com/configure_web_deployment](https://help.salesforce.com/s/articleView?id=service.miaw_configure_web_deployment_1.htm&type=5){:target="_blank"}.
 
 ## Add the Omni-Channel Utility to your Lightning Application
 1. Go to **Lightning Experience** > **Setup**.
