@@ -10,16 +10,16 @@ The node can handle three types of conditions:
 
 !!! note
     
-    Due to security reasons, a condition can be called a maximum of 10 times in an agent flow. Exceeding this limit will result in an error.
+    Due to security reasons, a condition can be called a maximum of 10 times in a tool flow. Exceeding this limit will result in an error.
 
 
 ## Add and Configure a Condition Node
 
-Setting up a Condition node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Condition node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
-1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
+1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool flow page is displayed. 
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 

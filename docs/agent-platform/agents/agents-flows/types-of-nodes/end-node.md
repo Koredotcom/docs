@@ -1,14 +1,14 @@
 # End Node
 
-End nodes let you show the agent or flow's outputs on success or an error message on failure.   
+End nodes let you display the flow's outputs upon success or an error message in case of failure.
 
 ## Add and Configure an End Node
 
-Setting up an End node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an End node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
-1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
+1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed.
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 

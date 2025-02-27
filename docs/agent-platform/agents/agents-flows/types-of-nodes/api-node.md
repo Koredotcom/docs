@@ -4,11 +4,11 @@ API nodes let you connect to external systems and retrieve data by making SOAP o
 
 ## Add and Configure an API Node
 
-Setting up an API node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an API node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
-1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
+1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed. 
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 
@@ -26,7 +26,7 @@ Steps to add and configure the node:
 
         * **Asynchronous**: 
             * **Set timeout**: The allowed range is 30 to 300 seconds (5 minutes). The default is 60 seconds.
-            * **No timeout**: This allows the integration to wait indefinitely for the response without triggering a timeout error. It allows you to automate your processes, like approvals and checks, within your custom workflows before sending the response back. (Ensure you select the same "No timeout" setting for both the API node and the agent to prevent any timeouts.)
+            * **No timeout**: This allows the integration to wait indefinitely for the response without triggering a timeout error. It allows you to automate your processes, like approvals and checks, within your custom workflows before sending the response back. (Ensure you select the same "No timeout" setting for both the API node and the tool to prevent any timeouts.)
 
         The node will trigger a timeout error if the request is not completed within the selected time frame.
 
@@ -34,7 +34,7 @@ Steps to add and configure the node:
 
             * The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
             
-            * Timeout precedence: Agent timeout *is greater than* Node timeout *is greater than* Model timeout.
+            * Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
     * **Request Definition**: Define the service request details to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
     <img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">

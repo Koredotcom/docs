@@ -1,14 +1,14 @@
 # Gen AI Node
 
-Gen AI nodes let you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the agent flow.
+Gen AI nodes let you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow.
 
 ## Add and Configure a Gen AI Node
 
-Setting up a Gen AI node in an agent flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Gen AI node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
-1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
+1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed. 
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 
@@ -53,7 +53,7 @@ Steps to add and configure the node:
 
         !!! note 
 
-            Timeout precedence: Agent timeout *is greater than* Node timeout *is greater than* Model timeout.
+            Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
     * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
@@ -76,9 +76,9 @@ Steps to add and configure the node:
 
     !!! note
 
-        Tools are deployed Agents whose details are provided to the model. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in GALE**](./../tool-calling.md). 
+        Tools are deployed Agents whose details are provided to the model. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
 
-    1. **Add tools**: Click **Add Tools** to add a tool (deployed agent).
+    1. **Add tools**: Click **Add Tools** to add a tool.
     2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
     3. **Configure tool settings**:
         * In the Tool configuration section, configure the following:
@@ -102,4 +102,4 @@ The node’s output is stored in a context variable. You can access the variable
 
 !!! note
 
-    GALE can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
+    Agent Platform can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.

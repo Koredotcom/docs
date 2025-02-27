@@ -1,6 +1,6 @@
 # DocSearch Node
 
-The **DocSearch Node** in GALE's Agent Flow improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
+The **DocSearch Node** improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
 
 By connecting to your **Search AI** App, the DocSearch Node provides high-quality search results that are relevant to the current context. These results are delivered right inside the agent workflow.
 
