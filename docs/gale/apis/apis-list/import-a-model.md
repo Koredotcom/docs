@@ -10,7 +10,7 @@ The API imports a model in chunks into the GALE environment. The import process 
 
 ## Start Import Session
 
-The **Import Model - Start Session API** is executed in this step. The API initializes the import session and returns a <code>session ID</code> in the response which is used in the next two steps of the import process.
+The **Import Model - Start Session API** is executed in this step. The API initializes the import session and returns a <code>Session Id</code> in the response which is used in the next two steps of the import process.
 
 <table>
   <tr>
@@ -247,7 +247,7 @@ The **Import Model - Chunk Upload** API uploads a file chunk for model import. T
   <tr>
    <td><strong>sessionId</strong>
    </td>
-   <td>The session ID from the start import session API.
+   <td>The <code>Session Id</code> from the start import session API.
    </td>
    <td>String
    </td>
@@ -358,7 +358,7 @@ The information will be added soon.
   <tr>
    <td><strong>sessionId</strong>
    </td>
-   <td>The model import session id.
+   <td>The model import <code>Session Id</code>.
    </td>
    <td>String
    </td>
@@ -424,7 +424,7 @@ The **Import Model- Complete** API completes the model import process after all 
   <tr>
    <td><strong>sessionId</strong>
    </td>
-   <td>The <code>session id</code> from the <strong>Start Import Session</strong> API.
+   <td>The <code>Session Id</code> from the <strong>Start Import Session</strong> API.
    </td>
    <td>String
    </td>
