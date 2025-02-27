@@ -109,8 +109,7 @@ curl --location 'https://dev-agent-platform.kore.ai/api/public/tools/a-0xxxxxxxx
 
 ## Sample Response
 
-
-```
+```js
 {
    "dock-statusId": "ds-cxxxxxx8-exx2-5xx7-9xx6-30xxxxxxxxxe",
    "toolId": "a-49xxxxx9-fxx9-5xx7-axx7-9xxxxxxxxxxb",

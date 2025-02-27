@@ -72,8 +72,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 
 ## Sample Request
 
-
-```
+```js
 curl --location --request POST 'https://dev-axxxt-plxxxxrm.kore.ai/api/public/models/cm-9xxxxxxxxxxxxxxxxxx2/export' \
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-xxx-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxb-9xx5-cxxxxxxxxx3'
 ```
@@ -87,8 +86,7 @@ No parameters are passed.
 
 ## Sample Response
 
-
-```
+```js
 {
   "_id": "ds-fxxxxxx0-6xxf-5xxb-9xxf-ebxxxxxxxxx0",
    "modelId": "cm-ddxxxxxb-0xxb-5xxe-bxx2-51xxxxxxxxx6",

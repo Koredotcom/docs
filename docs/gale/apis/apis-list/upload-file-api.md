@@ -569,7 +569,7 @@ curl --location --request POST 'https://localhost/api/public/files/session/6exxx
 
 #### Body Parameters
 
-No parameters.
+No parameters are passed.
 
 #### Sample Response
 
