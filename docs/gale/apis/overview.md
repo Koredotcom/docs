@@ -76,7 +76,7 @@ Currently, the following APIs are available:
   <tr><td><a href="../apis-list/undeploy-a-tool/" target="_blank">Undeploy a Tool API</a>
    <td>To undeploy a specific tool from an environment.</td></tr>
   <tr><td rowspan="4"><b>Manage a Model</b></td>
-   <td>Import a Model API</td>
+   <td><a href="../apis-list/import-a-model/" target="_blank">Import a Model API</a></td>
    <td>Import a model in chunks into the system.</td></tr>
   <tr><td><a href="../apis-list/export-a-model/" target="_blank">Export a Model API</a></td>
    <td>To export a trained AI model from the system.</td>
@@ -96,7 +96,7 @@ Currently, the following APIs are available:
    </td>
   </tr>
   </table>
-  
+
 
 
 
