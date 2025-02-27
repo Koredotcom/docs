@@ -29,7 +29,6 @@ Each violation is displayed with a timestamp, allowing you to navigate directly 
 
     Violations are applicable only for voice channel interactions, not chat.
 
-
 ## Omission
 
 This section highlights instances where the agent failed to follow configured playbook steps or dialog tasks during the interaction. It specifically identifies:
@@ -107,7 +106,6 @@ This comprehensive audit panel facilitates efficient evaluation and ensures thor
 <img src="../ai-assist-manual-edit/images/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
 
 In the Chat History - Audit section, the evaluation form items determine performance levels through assigned scores, each with specific weights for the questions. The supervisor or auditor's role is to evaluate each question (using the options available in the evaluation form: **Yes/No/NA**). This process enables clear identification of strengths and areas for improvement, facilitating better coaching. Additionally, auditors can review the conversation for each question.
-
 
 ### Scoring Triggers
 

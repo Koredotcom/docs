@@ -37,13 +37,13 @@ When any of the language filters are selected, the following widget metrics are 
 
 * Performance Monitor (Evaluation Form) 
 
-### Date Range
+### Date and Time Range
 
-You can filter data based on a selected date range.
-To filter by date range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date range from the list, and click **Apply**.  
-<img src="../dashboard/images/calendar drop-down.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
+You can filter data based on a selected date and time range.
+To filter a range, click the Calendar drop-down list displayed in the top-right corner of your Dashboard page. Select a date and time range from the list, and click **Apply**.  
+<img src="../dashboard/images/date-range-filter.png" alt="Date Range calendar" title="Date Range calendar" style="border: 1px solid gray; zoom:100%;">
 
-This allows you to filter all agent interaction data by selecting the following date ranges:
+This allows you to filter all agent interaction data by selecting the following date with time ranges:
 
 * **Today**: All interaction data for this day, in the agent’s time zone.
 * **Yesterday**: All interaction data of the previous day, in the agent’s time zone.
