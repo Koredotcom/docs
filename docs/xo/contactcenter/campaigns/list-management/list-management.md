@@ -225,20 +225,6 @@ Steps to delete an API-integrated contact list:
 
 The contact list is deleted.
 
-#### API Integration
-
-Steps to delete an API-integrated contact list:
-
-
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
-<img src="../images/deleteapilist.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
-2. A confirmation message is displayed. Click **Delete**.  
-<img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
-The contact list is deleted.
-
-
 ## DNC Lists
 
 ### Create a DNC List
