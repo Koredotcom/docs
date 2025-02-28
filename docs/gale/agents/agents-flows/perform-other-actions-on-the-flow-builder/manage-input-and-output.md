@@ -28,36 +28,31 @@ Alternatively, you can click the **Start** node. The **Manage Input & Output** d
 
 3. In the **Name (key)** field, provide a name for the input variable. For example, Product_ID.
 
-4. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
+4. In the **Type** field, select a data type from the drop-down list - Text, Number, Boolean, JSON or Remote file.
 If you want to make the data type mandatory, then enable the **Mandatory** toggle.
 
-   *  If you select the **Text**, **Number**, or **Boolean** data types, the **Default value** field appears. You can enable the **Default value** field to set a default value for the input variable.
+<ul><li>If you select the <b>Text</b>, <b>Number</b>, or <b>Boolean</b> data types, the <b>Default value</b> field appears. You can enable the <b>Default value</b> field to set a default value for the input variable.</li>
+<li>If you select the <b>JSON</b> data type and enable <b>Default</b> Value, a code editor appears. You can define a JSON schema or format for the input parameter. This option allows you to set a default value for the specified field, and validate it against the designated data type. If the JSON is invalid, the system will display the relevant error message and execution will fail.
+   <img src="../images/json-code-screen.png" alt="json Input Variable" title="json Input Variable" style="border: 1px solid gray; zoom:50%;"></li>
+<li>If you select the <b>List of values (Enum)</b> data type, you can set predefined values that are allowed for agent input variables by clicking <b>Add Values +</b>.
+<img src="../images/enter-input-variable-window.png" alt="Enter Input Variable window" title="Enter Input Variable window" style="border: 1px solid gray; zoom:50%;"></li>
+<li>When you enable <b>Default value</b>, the defined values get listed in the dropdown for selection.
+<img src="../images/add-default-key-value.png" alt="add default key value" title="add default key value" style="border: 1px solid gray; zoom:50%;"></li>
 
-   * If you select the **JSON** data type and enable **Default** Value, a code editor appears. You can define a JSON schema or format for the input parameter. This option allows you to set a default value for the specified field, and validate it against the designated data type. If the JSON is invalid, the system will display the relevant error message and execution will fail.
-   <img src="../images/json-code-screen.png" alt="json Input Variable" title="json Input Variable" style="border: 1px solid gray; zoom:50%;">
-
-   * If you select the **List of values (Enum)** data type, you can set predefined values that are allowed for agent input variables by clicking **Add Values +**.
-  
-      <img src="../images/enter-input-variable-window.png" alt="Enter Input Variable window" title="Enter Input Variable window" style="border: 1px solid gray; zoom:50%;">
-
-      When you enable **Default** value, the defined values get listed in the dropdown for selection.
-
-      <img src="../images/add-default-key-value.png" alt="add default key value" title="add default key value" style="border: 1px solid gray; zoom:50%;">
-
-      The system validates the input against the defined enum values and provides an error message if an invalid value is provided. 
+The system validates the input against the defined enum values and provides an error message if an invalid value is provided.</ul> 
     
-    *  If you select the **Remote file** data type, the **File url timeout** field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
+<ul><li>If you select the <b>Remote file</b> data type, the <b>File url timeout</b> field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</li>
                           
-     <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;"></ul>
  
 5. Click **Save**. The input variable is displayed on the Input tab of the **Manage Input & Output** dialog.
-
 
 **Steps to add output variables**:
 
 1. On the top of the canvas of the Agents page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
 2. On the **Output** tab, click the **+ Add output variable** button. The **Enter output variable** dialog is displayed.
+
 <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:50%;">
 
 3. In the **Name (key)** field, provide a name for the output variable.
