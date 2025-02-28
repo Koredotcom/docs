@@ -118,7 +118,7 @@ Below are the four scenarios showing how timeouts affect the tool endpoint, alon
 * If the external system tries the same callback URL again, it will be notified that the request has already been fulfilled.
 
 
-The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure an Agent](https://docs.kore.ai/gale/agents/configure-an-agent/) and [API Node](https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/).
+The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure a tool](https://docs.kore.ai/gale/agents/configure-an-agent/) and [API Node](https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/).
 
 
 
@@ -247,7 +247,7 @@ The table below lists the errors that can occur in the **Tool Monitoring** dashb
   <tr>
    <td>Network Issues:- Request timeout on the server
    </td>
-   <td>Temporary network or GALE server connection issue.
+   <td>Temporary network or Agent Platform server connection issue.
    </td>
    <td>Network
    </td>

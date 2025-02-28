@@ -1,8 +1,8 @@
 # Export a Tool
 
-GALE offers the ability to export specific tool versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer tool configurations without compromising the integrity and security of the tool setup.
+Agent Platform offers the ability to export specific tool versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer tool configurations without compromising the integrity and security of the tool setup.
 
-When you export a tool, GALE automatically creates a *.zip* file named after the tool. For example, if the tool is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
+When you export a tool, Agent Platform automatically creates a *.zip* file named after the tool. For example, if the tool is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
 
 The exported package can be reimported to create a new tool or add it as a version to an existing one, ensuring seamless restoration.
 
@@ -24,7 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 2. Click **Tools** on the top menu.
 3. Select the relevant tab to view the tool.
 4. Click the required tool’s name to proceed further.
