@@ -46,6 +46,13 @@ The **Enterprise Knowledge** is meant for generic use rather than a specific int
     - **Search ID**: Unique identifier of the client generated in Search AI.
     <img src="../images/Default_RAG_2.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
+You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your XO platforms App's channel:
+
+- Answer Generation
+- Permission Entity Management
+- Document Management
+- Facets
+
 !!! note
 
     These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab. Refer to [this](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"} for more details.
