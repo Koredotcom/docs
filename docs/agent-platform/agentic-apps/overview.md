@@ -21,7 +21,7 @@ A single AI agent operates using a linear, rule-based approach, making it ideal 
 
 In contrast, the Agentic App represents a more advanced, purpose-driven solution. It employs multiple intelligent agents that collaborate dynamically to optimize task execution and decision-making. These agents are capable of reasoning, planning, and adapting in real-time, allowing for enhanced flexibility and efficiency in various scenarios. By integrating multiple intelligent agents, the Agentic App can navigate complex situations where traditional automation would fall short, ultimately driving better outcomes and increased operational efficiency.
 
-## Core Components of an Agentic App
+## Key Components of an Agentic App
 
 Agentic applications involve the following key components that enable autonomous decision-making and complex task execution. 
 
