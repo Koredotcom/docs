@@ -9,12 +9,12 @@ Setting up an agent involves defining its purpose, configuring its core function
 Agent profile consists of the following fields:
 
 **Name**: Choose a unique name that reflects your agent's core function and persona. It is good to have a name that is intuitive and indicative of its role. 
-<span style="color: light blue;">
-> Examples: 
-> * Credit Card Assistant for an agent that handles all queries related to credit cards. 
-> * Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
-> * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
-</span>
+
+Examples:
+* Credit Card Assistant for an agent that handles all queries related to credit cards. 
+* Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
+* Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
+
 ---
 
 **Description**: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to choose the most appropriate agent for a certain task. 
