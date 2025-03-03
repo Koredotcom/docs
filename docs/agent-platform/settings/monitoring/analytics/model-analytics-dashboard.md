@@ -272,6 +272,6 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 
 ## Related Links
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
+* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
 * **Monitoring: Agents Analytics Dashboard** - [Learn more](../analytics/agent-analytics-dashboard.md){:target="_blank"} about getting actionable insights into agents’ performance.

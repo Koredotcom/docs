@@ -283,7 +283,7 @@ The **Agents Analysis Dashboard** offers actionable and customized insights on t
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Agent Flow Change Logs](../../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to an agent's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for agents, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.

@@ -6,7 +6,7 @@ The Billing section helps you monitor and analyze your GALE platform expenses th
 
 Steps to access the Usage page:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your GALE account.
+1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your Agent Platform account.
 2. On the top navigation bar, click **Settings**.
 3. On the left navigation pane, click **Billing** > **Usage**.
 
