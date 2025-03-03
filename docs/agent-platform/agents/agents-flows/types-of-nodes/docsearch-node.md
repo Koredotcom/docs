@@ -98,10 +98,8 @@ Setting up a DocSearch node in an tool flow involves adding the node at the appr
 **Steps to add and configure the node**
 
 1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed.
-<img src="../images/access-agents-menu.png" alt="access agents menu" title="access agents menu" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Go to flow** to edit the in-development version of the flow.
-<img src="../images/go-to-flow-doc-search.png" alt="go to agent flow" title="go to agent flow" style="border: 1px solid gray; zoom:75%;">
 
 3. In the flow builder, click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
 <img src="../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
