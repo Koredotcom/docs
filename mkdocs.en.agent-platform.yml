@@ -120,6 +120,7 @@ nav:
     - Agent: agentic-apps/agent-overview.md
     - Create Agent: agentic-apps/create-agent.md
     - App Settings: agentic-apps/app-settings.md
+    - App Simulation and Testing: agentic-apps/app-testing.md
     - App Deployment: agentic-apps/app-deployment.md
     - App Analytics: agentic-apps/app-analytics.md
   - Tools: 

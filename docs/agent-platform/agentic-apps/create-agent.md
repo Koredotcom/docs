@@ -11,18 +11,20 @@ Agent profile consists of the following fields:
 **Name**: Choose a unique name that reflects your agent's core function and persona. It is good to have a name that is intuitive and indicative of its role. 
 
 Examples:
-* Credit Card Assistant for an agent that handles all queries related to credit cards. 
-* Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
-* Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
+
+    * Credit Card Assistant for an agent that handles all queries related to credit cards. 
+    * Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
+    * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
 **Description**: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to choose the most appropriate agent for a certain task. 
 
-Examples: 
-* Credit Card Assistant: An agent that handles all queries related to credit cards.
-* Leave Manager: An agent that manages all requests related to employee leaves in an organization.
-* Order Manager: Manages all the user requests related to order status, returns, and refunds. 
+Examples:
+
+    * Credit Card Assistant: An agent that handles all queries related to credit cards.
+    * Leave Manager: An agent that manages all requests related to employee leaves in an organization.
+    * Order Manager: Manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
@@ -32,7 +34,7 @@ Examples:
 
 **AI Model**: Select the AI model that the agent will use to perform its tasks. The LLM selected here is used by the agent for all the interactions with the user and to design the workflow required to complete a given task. If you haven't added an LLM before, [configure a model](https://docs.kore.ai/gale/models/external-models/add-an-external-model-using-easy-integration/) to use.
 
-You can choose a model based on the specific use case of the agent. If the agent is designed to generate code, select a model that excels in coding skills. 
+You can choose a model based on the specific use case of the agent. If the agent is designed to generate code, select a model that excels in coding skills.
 
 ---
 
@@ -83,7 +85,7 @@ Examples:
 
 **Actions** are the tasks that agents can perform. They are the basic building blocks of an agent's capabilities. The Actions are implemented using **Tools**. Tools are the executable functions that help an agent achieve its objectives.
 
-**Tools**are components that enable various actions to be carried out effectively. They function as specialized units that execute specific tasks. Actions rely on these tools, which incorporate domain-specific business logic to successfully complete their designated roles. These tools are capable of performing activities such as data retrieval, logical operations, and facilitating connections with external systems.
+**Tools** are components that enable various actions to be carried out effectively. They function as specialized units that execute specific tasks. Actions rely on these tools, which incorporate domain-specific business logic to successfully complete their designated roles. These tools are capable of performing activities such as data retrieval, logical operations, and facilitating connections with external systems.
 
 Examples:
 
