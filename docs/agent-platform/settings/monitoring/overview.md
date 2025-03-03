@@ -1,6 +1,6 @@
 # Monitoring
 
-The **Monitoring** module in GALE tracks events, actions, and changes across your account and linked users. It provides visibility into activities for modules such as roles, integrations, models, agents, users, datasets, guardrails, and playground. The monitoring system helps maintain your GALE account's security, compliance, and operational efficiency.
+The **Monitoring** module in Agent Platform tracks events, actions, and changes across your account and linked users. It provides visibility into activities for modules such as roles, integrations, models, agents, users, datasets, guardrails, and playground. The monitoring system helps maintain your Agent Platform account's security, compliance, and operational efficiency.
 
 <p><b>Best Practices</b></p>
 
