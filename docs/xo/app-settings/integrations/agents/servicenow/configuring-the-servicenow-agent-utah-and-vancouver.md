@@ -295,3 +295,8 @@ Follow these steps:
 !!! note
 
     This feature currently supports only the Utah and Vancouver versions.
+
+
+### Agent Transfer Status
+
+The XO platform now records the status of the agent transfer for ServiceNow in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
