@@ -20,7 +20,7 @@ The Agent node now features a "Jump-to-Node" transition option, enabling the cre
 * Supports transitions to both orphan nodes and sub-dialogs.
 * Ensures full backward compatibility with existing tool configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#jump-to-a-node-transition){:target="_blank"}.
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#jump-to-a-node-transition){:target="_blank"}
 
 ### Agent Transfer
 
@@ -28,7 +28,7 @@ The Agent node now features a "Jump-to-Node" transition option, enabling the cre
 
 The XO platform now records the status of the agent transfer for ServiceNow in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
 
-[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target="_blank"}
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#agent-transfer-status){:target="_blank"}
 
 <hr>
 

@@ -95,7 +95,7 @@ Define the following details for tool configuration:
     * **Jump to a Node**: You can jump to any node defined in the dialog. 
 
 
-#### Jump to a Node Transition
+##### **Jump to a Node Transition**
 
 The Jump-to-Node transition option enables the creation of sophisticated dialog workflows. It allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
 
