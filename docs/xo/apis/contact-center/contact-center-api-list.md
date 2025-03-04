@@ -10,6 +10,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Contacts Public APIs](#contacts-public-apis)
 * [Import/Export Data APIs](#importexport-data-apis)
 * [Call Recording API](#call-recording-api)
+* [Voicemail Recording API](#voicemail-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
 * [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
 * [Queue AI APIs](#queue-ai-apis)
@@ -85,13 +86,19 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Import/Save Data by Giving Details](../contact-center/import-or-save-data-by-giving-details.md)                     | To import/save data with the given accountId and orgId.                                              | SmartAssist Import and Export Feature |
 | [Export Data by Giving Details](../contact-center/export-data-by-giving-details.md)                                   | To export data with the given accountId and orgId.                                                   | SmartAssist Import and Export Feature |
 
-### Call Recording API
+### Call Recording APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Fetch Call Recording](../contact-center/fetch-call-recording.md)                                                   | To retrieve the recording of a specific call using either the user Id or session Id.                                             | SmartAssist Recordings |
 | [Fetch Call Recording (v2)](../contact-center/fetch-call-recording-(v2).md)                                         | This API facilitates the downloading of voice call recordings. The API provides an S3-hosted URL where the recording can be accessed. | SmartAssist Recordings |
 | [Delete Call Recording](../contact-center/delete-call-recording.md)                                                 | This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.        | Delete Recordings     |
+
+### Voicemail Recording API
+
+| API                                                                                               | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| [Fetch Voicemail Recording](../contact-center/fetch-voicemail-recording.md)                                                   | This API facilitates the downloading of voicemail recordings. The API provides an S3-hosted URL where the voicemail recording can be accessed.                                             | SmartAssist Voicemail |
 
 ### Outbound Calling API
 

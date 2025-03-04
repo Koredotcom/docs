@@ -42,7 +42,7 @@ Steps to configure a pre-built LLM:
 6. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
-## Recently Released LLM Integration
+## Provider's New LLM Integration
 
 The XO Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models do not include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
 
@@ -54,9 +54,9 @@ The XO Platform enables you to integrate newly launched language models into the
 * **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.
 
 
-### Configure Recently Released LLM Integration
+### Configure Provider's New LLM Integration
 
-Steps to configure a recently released LLM Integration:
+Steps to configure a Provider's New LLM Integration:
 
 1. Go to **Generative AI Tools > Models Library**.
 2. Click **Configure Now** for the Azure Open AI or Open AI or Anthropic. For example, Azure OpenAI.
@@ -218,7 +218,7 @@ Steps to configure a pre-built LLM using Dynamic Variables:
 7. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
-### Configure Recently Released LLM Integration using Dynamic Variables
+### Configure Provider's New LLM Integration using Dynamic Variables
 
 
 !!! note
@@ -226,7 +226,7 @@ Steps to configure a pre-built LLM using Dynamic Variables:
     * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
     * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
 
-Steps to configure a recently released LLM using Dynamic Variables:
+Steps to configure a Provider's New LLM using Dynamic Variables:
 
 1. Go to **Generative AI Tools** > **Models Library**.
 2. Choose the LLM you want to configure. For example, Azure OpenAI.
