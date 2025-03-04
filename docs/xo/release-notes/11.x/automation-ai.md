@@ -2,6 +2,36 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.11.0 March 04, 2025
+
+<u> Minor Release </u>
+
+### Build Agentic Experiences
+
+#### Agent Node Tool Calling Enhanced with Jump-to-Node Transition Capability
+
+The Agent node now features a "Jump-to-Node" transition option, enabling the creation of sophisticated dialog workflows. This enhancement allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
+
+**Key Updates**:
+
+* Added "Jump-to-Node" transition option for tools within the Agent node.
+* Enables seamless navigation to specified target nodes following tool execution.
+* Maintains complete session-level conversation history across all transitions.
+* Supports transitions to both orphan nodes and sub-dialogs.
+* Ensures full backward compatibility with existing tool configurations.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#jump-to-a-node-transition){:target="_blank"}.
+
+### Agent Transfer
+
+#### Service Now Agent Transfer Status
+
+The XO platform now records the status of the agent transfer for ServiceNow in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
+
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target="_blank"}
+
+<hr>
+
 ## v11.10.0 February 12, 2025
 
 <u> Minor Release </u>
