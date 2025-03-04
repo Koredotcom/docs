@@ -112,32 +112,31 @@ Steps to pull  the contacts using API Integration:
     <img src="../images/apiintegration.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **API Integration** to select to configure the API and add records to the contact list.  
-    <img src="../images/newlist.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/newlist.png" alt="New List" title="New List" style="border: 1px solid gray; zoom:80%;">
 
 4. Select the Method and enter the URL.  
-    <img src="../images/geturl.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/get-url.png" alt="Get URL" title="Get URL" style="border: 1px solid gray; zoom:80%;">
 
 5. Select the **Data Sync Interval** from the dropdown. Sync intervals ensure that updates in the database are reflected in the contact lists without a manual refresh. You can select an interval of up to 24 hours.  
-    <img src="../images/syncinterval.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/data-sync-interval.png" alt="Sync Interval" title="Sync Interval" style="border: 1px solid gray; zoom:80%;">
 
 6. Select the **Data Sync Mode**. You can choose from the following options:
     1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they will not be contacted again.
     2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again. 
 
-        <img src="../images/apisyncmodenew.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/apisyncmodenew.png" alt="Sync Mode" title="Sync Mode" style="border: 1px solid gray; zoom:80%;">
 
 7. Configure the authorization profile for the request.  
-    <img src="../images/auth.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/authorization.png" alt="Authorization" title="Authorization" style="border: 1px solid gray; zoom:80%;">
 
 8. If the header is selected in the Add to field, click the **Headers** tab and click the box “**Click here to add headers**”.  
-    <img src="../images/headers.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/header.png" alt="Headers" title="Headers" style="border: 1px solid gray; zoom:80%;">
 
 9. Enter the **Key-Value** pairs and click **Next**.  
-    <img src="../images/keyvalue.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/keyvalue-pairs.png" alt="Key-Value Pairs" title="Key-Value Pairs" style="border: 1px solid gray; zoom:80%;">
 
-10. Click **Test**. The response is displayed on the **Test Response** tab.  
-    <img src="../images/testresponse.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+10. Click **Validate**. The response is displayed.  
+    <img src="../images/validate.png" alt="Validate" title="Validate" style="border: 1px solid gray; zoom:70%;">
 
 11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
     * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John", you would enter "firstName" in the field mapping.
