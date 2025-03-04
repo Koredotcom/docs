@@ -2,6 +2,112 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.11.0 March 04, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Voice Gateway (v0.9.3-8)
+
+#### Spanish Language Support for ElevenLabs Text-to-Speech
+
+Added Spanish language support through ElevenLabs Text-to-Speech integration. This enhancement expands our language capabilities and provides users with high-quality Spanish voice synthesis options.
+
+The ElevenLabs TTS engine option is available in the following locations when Spanish language is selected:
+
+* Start Flow
+* Manage Preferences within the Voice Preferences section
+* Start node
+
+Voice Library Expansion
+
+* Added comprehensive Spanish/Latin American voice portfolio
+* All ElevenLabs Spanish voices are now available in the voice selection dropdown
+
+#### Voicemail Notification & Recording and Call Metadata Using the 'Utility’ Function
+
+A voicemail notification can be sent using the `voiceutils`, enabling automated customer notifications for voicemail events.
+
+* **message**: Before the voicemail is recorded, a customizable prompt, such as "Please leave your voicemail now," is played to customers.
+* **beepRequired**: It controls whether a beep sound plays after the prompt, signaling to customers that the voicemail recording is starting.
+* **transcriptionRequired**: Enables/disables automatic voicemail transcription. When enabled, it generates text transcription upon recording completion.
+* **notifyUrl**: Endpoint for receiving voicemail notifications.  \
+Format: `https://your-domain/endpoint`.
+* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/utility-functions.md#voicemails)
+
+#### Voicemail Recording API
+
+A new public API endpoint has been introduced to retrieve voicemail recordings. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/fetch-voicemail-recording.md)
+
+#### Simplified Parameter Updates for ASR/TTS Configuration
+
+When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md#channel-level-call-control)
+
+#### Improved Audio Handling During Hold State
+
+This update optimizes audio processing and storage during hold periods. The existing behavior remains unchanged for Consult calls, Conference calls, and Multi-party interactions.
+
+During hold periods, the system:
+
+* Suspends transcription generation for customer audio.
+* Suspends transcription generation for agent audio.
+* Automatically resumes transcription when the hold state ends.
+
+When a customer is on hold (self-initiated or agent-initiated):
+
+* Temporarily stops recording customer-side audio.
+* Temporarily stops recording agent-side audio.
+* Automatically resumes recording when the hold state ends.
+
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
+#### Answering Machine Detection (AMD) for Inbound Calls
+
+The AMD capability is extended to include inbound call detection, matching the existing functionality available for outbound calls. This feature enables the automatic detection of fax machines during inbound calls.
+
+The AMD detection can now be configured in Dialog Task (first node), Channel override templates, and Bot response configurations.
+
+#### Recording Control for Outbound Calls
+
+The Transcribe utility function now supports the following when integrated with external agent transfers via SIP Invite:
+
+* Start/Stop recording control
+* Pause/Resume functionality
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### SIP Trunk Availability Monitoring
+
+Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Show Multiple SIP URIs While Configuring SIP Trunk
+
+While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Display 'Call Control' Options During the Dialing Stage
+
+The Keypad and Mute options are accessible even when a call is being dialed. This enhancement ensures uninterrupted user interaction with IVR systems, even if the CALL_CONNECTED event and 200 OK status are not received from the AudioCodes SBC.
+
+Key benefits
+
+* Allow seamless IVR navigation without waiting for connection confirmation.
+* Reduce disruptions caused by delayed network responses.
+* Enhance agent experience by maintaining essential call controls at all times.
+
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
+
+#### Automatic Call Disconnection for Negative Balance
+
+Inbound calls to users with a negative balance will be automatically disconnected, and outbound calls will not be placed. Users can track failed inbound calls in the Interactions report and the Insights to Log tab, while outbound call attempts will trigger a toaster notification. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
+#### Audit Log for SIP Trunk Configuration Changes
+
+An audit log for all SIP Trunk configuration changes is maintained. This feature enables developers and administrators to track modifications, including who made the change and when.
+
+<hr>
+
 ## v11.10.0 February 12, 2025
 
 <u> Minor Release </u>

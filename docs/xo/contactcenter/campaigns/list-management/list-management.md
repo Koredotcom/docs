@@ -159,6 +159,70 @@ Steps to pull  the contacts using API Integration:
 
 12. Click **Save**. The contact list is fetched from the third-party database.
 
+#### Accessing Contact List Field Labels and Values
+
+Advanced SMS and Agentless Dialer Campaigns can use mapped and unmapped contact fields for enhanced personalization. The `UserSession` [context object](../../../automation/intelligence/context-object.md) provides access to all mapped and unmapped fields from Contact List records within Dialog Tasks and Experience Flows, ensuring seamless integration across workflows. Campaign managers can use these fields to build more effective SMS campaigns.
+
+#### Extracting Contact List Field Labels
+
+Steps to retrieve the label names of all available fields in a contact record:
+
+1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+2. Enter the following function in the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md).
+`{{JSON.stringify(context.session.UserSession.campaignUserInfo)}}`
+    1. You can get the labels from the [Transcripts](../../../analytics/contact-center/interactions.md#insights-to-logs) tab of the Interactions Dashboard.
+    2. You can also use the same function in the [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) to access the data.  
+
+        <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:80%;">
+
+3. Publish the bot to apply the changes. [Learn more](../../../deploy/publishing-bot.md).
+4. Run the campaign associated with the contact list for which you need the field label names.  
+    <img src="../images/run-campaign.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:80%;">
+
+5. On the **Interactions** page, click the desired Campaign's record to view transcriptions and access the string representation of all fields.  
+    <img src="../images/insights-to-logs (2).png" alt="Insights to Logs" title="Insights to Logs" style="border: 1px solid gray; zoom:80%;">
+
+##### Accessing the Contact List Fields Through Their Labels
+
+You can use the extracted labels to access specific contact list fields within your flow.
+
+**Example 1**: Using a Script Node (Experience Flow & Dialog Task)
+
+1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+2. In the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) or [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md), add the following JavaScript function to retrieve campaign user details:
+```
+const campaignUserInfo = context.session.UserSession.campaignUserInfo;
+```
+// Accessing all fields, including mapped and unmapped ones
+
+3. After retrieving the user information, implement custom logic as needed. In this example, the script extracts the user’s phone number and stores it in the context for use in future flows.
+```
+const number = campaignUserInfo.phoneNumber;
+```
+
+// Extracting the user’s phone number and assigning to a  variable
+
+```
+context.campaignUserInfoNumber=number;
+```
+
+// Storing the number in context for later use 
+
+
+```
+    if (number === "+919876543210") {
+     context.testingNumberValue="John"
+} else 
+	{
+    context.testingNumberValue="other"
+    }
+```
+
+**Example 2**: Accessing Fields in a Confirmation Node (Dialog Task)
+
+1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+2. Use the extracted field labels to define logic in a [Confirmation Node](../../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md). For example, you can validate the user’s response based on a specific contact field.  
+<img src="../images/confirmation-node.png" alt="Confirmation Node" title="Confirmation Node" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Contact List
 
