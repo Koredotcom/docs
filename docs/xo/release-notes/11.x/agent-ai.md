@@ -2,6 +2,66 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.11.0 March 4, 2025
+
+<u>Minor Release</u>
+
+### Widget Enhancements
+
+#### More Accurate Intent Extraction from Landing Summary
+
+This update has introduced a service node and a new tag-based approach to generate the landing summary (a concise summary) of the conversation. This summary is used internally to improve intent identification accuracy. It is generated after the Welcome Dialog task ends and is not visible to agents. However, the detailed summary from the message node continues to be visible to the agents. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/faq/agentai-faq.md).
+
+#### Search AI Timeout Configuration and Runtime Error
+
+The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-and-server-errors)
+
+#### API Call Notification for Dialog Tasks
+
+Agents now receive notifications when a dialog task makes an API call, indicating a waiting period. The notification disappears once a response is received. While the waiting message is displayed, agents can close the dialog task.
+
+#### Automatic Upgrade from Agent AI V2 to V3
+
+The legacy Agent AI V2 is automatically upgraded to the enhanced and backward-compatible V3, which offers improved functionality and continued compatibility with previous configurations.
+
+### UI Enhancement
+
+#### Introducing the Dialog Task Layout feature
+
+To enhance the management and customization of dialog tasks within the widget, Kore has introduced the **Dialog Task Layout** subsection under the **Widget Theming** section. The key features of this update are:
+
+* **Dialog Task Search**: Easily search for dialog task names, like searching a word within a web page.
+* **Dialog Task Grouping**: Group dialog tasks to better organize them.
+* **Dialog Task Sorting**: Sort dialog tasks in alphabetical order for better accessibility.
+
+!!! note
+
+    Dialog tasks not added to a group don’t appear at runtime. 
+[Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#dialog-task-layout)
+
+#### Interactive Language (App Language) option for Widget
+
+Kore has included a new option, **Interactive Language**, in the **Default Language for Agent AI Widget** drop-down list. Selecting this option adjusts the widget's localized text language to match the app's language. [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md/#steps-to-set-agent-ai-general-settings) 
+
+### Integrations
+
+#### Support for associating a Single Bot with Multiple Queues in Genesys Cloud CX
+
+To streamline bot management, improve efficiency, and reduce maintenance cost, Kore now provides the ability to associate a single bot with multiple Genesys Cloud CX queues.
+
+#### Offline Agent AI integration with F9
+
+Agent AI in Offline mode is now integrated with the Five9 Voice Channel.
+
+#### Agent AI Voice integration with CX Cloud from Genesys and Salesforce
+
+Kore Agent AI is now integrated with CX Cloud from Genesys and Salesforce.
+
+#### Agent AI Voice Integration with Salesforce Voice
+
+Agent AI Voice is now integrated with Salesforce default telephony, Amazon Connect.
+
+<hr>
 
 ## v11.10.0 February 12, 2025
 

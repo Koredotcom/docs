@@ -43,6 +43,16 @@ The following buttons are available in this section:
 * **Run with Agent’s input**: Click this button to run a Dialog Task with agent’s input. The agent can customize the content and decide whether to send a dialog or not. Selecting this option automatically moves you to the My Bot section.
 * **Spyglass icon**: After entering the search content, click the “spyglass” icon in the search bar or press the “Enter” key to search.
 
+#### Timeout and Server Errors
+The **Search** tab displays error messages for searches exceeding 10 seconds, dialog tasks not configured, and server issues.
+
+* Timeout/dialog tasks not configured:  
+<img src="../WidgetContentUpdate_3.3.0/timeout-first-time.png" alt="timeout-first-time" title="timeout-first-time" style="border: 1px solid gray; zoom:80%;">
+* Search failing for the second consecutive time:  
+<img src="../WidgetContentUpdate_3.3.0/timeout-second-time.png" alt="timeout-second-time" title="timeout-second-time" style="border: 1px solid gray; zoom:80%;">
+* Server errors:  
+<img src="../WidgetContentUpdate_3.3.0/server-error.png" alt="server-error" title="server-error" style="border: 1px solid gray; zoom:80%;">
+
 ### My Bot Tab
 
 My Bot functionality allows agents to run the entire automation by themselves. Agents provide inputs to the bot and obtain the desired results.

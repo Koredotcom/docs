@@ -461,6 +461,7 @@ nav:
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
+      - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Welcome Events: agentai/configuration/welcome-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
