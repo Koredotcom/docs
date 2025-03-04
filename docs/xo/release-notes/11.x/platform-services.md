@@ -8,6 +8,38 @@ This document provides information on the feature updates and enhancements intro
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
+### LLM & Generative AI
+
+#### Azure OpenAI GPT-4o Mini and OpenAI GPT-4o Mini Support
+
+The Platform now supports the GPT-4o mini model for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-supported-features) and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features) features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
+
+### Getting Started
+
+#### Optimized Workspace Switching Experience
+
+The "Browse Workspace" feature has been optimized for a faster and more responsive user experience. Users can easily switch between their existing workspaces, which they are part of, or browse for other workspaces in the same domain and request access to a workspace. 
+
+### Flows and Channels
+
+#### Voice-to-Chat Deflection
+
+The new Voice-to-Chat Deflection feature allows platform users to create conversation flows that seamlessly transition from voice interactions to chat-based interactions within the same context. This feature works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+
+Key changes
+
+* The "Deflect to Chat" option is added to the Dialog Builder's "Return to Flow" property with two deflection types - ‘Automation’ and ‘Agent Transfer’.
+* The Flow Builder now includes a dedicated "Deflect to Chat" connection path and node type to handle the transition from voice to chat.
+
+Key benefits
+
+* Enhanced customer experience through optimal channel selection.
+* Shorted resolution time by offering chat-based interactions when voice queues are long.
+
+Backward compatibility:
+
+* The feature is fully backward-compatible with existing voice implementations.
+
 ### Voice Gateway (v0.9.3-8)
 
 #### Spanish Language Support for ElevenLabs Text-to-Speech
