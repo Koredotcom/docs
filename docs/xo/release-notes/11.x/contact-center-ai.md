@@ -81,7 +81,7 @@ Key features
 * Live Data Updates: 60-second refresh cycle with real-time field updates
 * Fixed Layout Design: Standardized, non-customizable widget arrangement
 
-[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#accessing-the-contact-list-fields-through-their-labels)
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md)
 
 
 #### Interaction Details by Segment Report
