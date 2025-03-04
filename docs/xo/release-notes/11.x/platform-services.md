@@ -2,6 +2,139 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.11.0 March 04, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### LLM & Generative AI
+
+#### Azure OpenAI GPT-4o Mini and OpenAI GPT-4o Mini Support
+
+The Platform now supports the GPT-4o mini model for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-supported-features) and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features) features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
+
+### Getting Started
+
+#### Optimized Workspace Switching Experience
+
+The "Browse Workspace" feature has been optimized for a faster and more responsive user experience. Users can easily switch between their existing workspaces, which they are part of, or browse for other workspaces in the same domain and request access to a workspace. [Learn more :octicons-arrow-right-24:](../../getting-started/accessing-the-platform.md#join-a-workspace)
+
+### Flows and Channels
+
+#### Voice-to-Chat Deflection
+
+The new Voice-to-Chat Deflection feature allows platform users to create conversation flows that seamlessly transition from voice interactions to chat-based interactions within the same context. This feature works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+
+Key changes
+
+* The "Deflect to Chat" option is added to the Dialog Builder's "Return to Flow" property with two deflection types - ‘Automation’ and ‘Agent Transfer’.
+* The Flow Builder now includes a dedicated "Deflect to Chat" connection path and node type to handle the transition from voice to chat.
+
+Key benefits
+
+* Enhanced customer experience through optimal channel selection.
+* Shorted resolution time by offering chat-based interactions when voice queues are long.
+
+Backward compatibility:
+
+* The feature is fully backward-compatible with existing voice implementations.
+
+### Voice Gateway (v0.9.3-8)
+
+#### Spanish Language Support for ElevenLabs Text-to-Speech
+
+Added Spanish language support through ElevenLabs Text-to-Speech integration. This enhancement expands our language capabilities and provides users with high-quality Spanish voice synthesis options.
+
+The ElevenLabs TTS engine option is available in the following locations when Spanish language is selected:
+
+* Start Flow
+* Manage Preferences within the Voice Preferences section
+* Start node
+
+Voice Library Expansion
+
+* Added comprehensive Spanish/Latin American voice portfolio
+* All ElevenLabs Spanish voices are now available in the voice selection dropdown
+
+#### Voicemail Notification & Recording and Call Metadata Using the 'Utility’ Function
+
+A voicemail notification can be sent using the `voiceutils`, enabling automated customer notifications for voicemail events.
+
+* **message**: Before the voicemail is recorded, a customizable prompt, such as "Please leave your voicemail now," is played to customers.
+* **beepRequired**: It controls whether a beep sound plays after the prompt, signaling to customers that the voicemail recording is starting.
+* **transcriptionRequired**: Enables/disables automatic voicemail transcription. When enabled, it generates text transcription upon recording completion.
+* **notifyUrl**: Endpoint for receiving voicemail notifications.  \
+Format: `https://your-domain/endpoint`.
+* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/utility-functions.md#voicemails)
+
+#### Voicemail Recording API
+
+A new public API endpoint has been introduced to retrieve voicemail recordings. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/fetch-voicemail-recording.md)
+
+#### Simplified Parameter Updates for ASR/TTS Configuration
+
+When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md#channel-level-call-control)
+
+#### Improved Audio Handling During Hold State
+
+This update optimizes audio processing and storage during hold periods. The existing behavior remains unchanged for Consult calls, Conference calls, and Multi-party interactions.
+
+During hold periods, the system:
+
+* Suspends transcription generation for customer audio.
+* Suspends transcription generation for agent audio.
+* Automatically resumes transcription when the hold state ends.
+
+When a customer is on hold (self-initiated or agent-initiated):
+
+* Temporarily stops recording customer-side audio.
+* Temporarily stops recording agent-side audio.
+* Automatically resumes recording when the hold state ends.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+#### Answering Machine Detection (AMD) for Inbound Calls
+
+The AMD capability is extended to include inbound call detection, matching the existing functionality available for outbound calls. This feature enables the automatic detection of fax machines during inbound calls.
+
+The AMD detection can now be configured in Dialog Task (first node), Channel override templates, and Bot response configurations.
+
+#### Recording Control for Outbound Calls
+
+The Transcribe utility function now supports the following when integrated with external agent transfers via SIP Invite:
+
+* Start/Stop recording control
+* Pause/Resume functionality
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+
+#### SIP Trunk Availability Monitoring
+
+Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Show Multiple SIP URIs While Configuring SIP Trunk
+
+While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+
+#### Display 'Call Control' Options During the Dialing Stage
+
+The Keypad and Mute options are accessible even when a call is being dialed. This enhancement ensures uninterrupted user interaction with IVR systems, even if the CALL_CONNECTED event and 200 OK status are not received from the AudioCodes SBC.
+
+Key benefits
+
+* Allow seamless IVR navigation without waiting for connection confirmation.
+* Reduce disruptions caused by delayed network responses.
+* Enhance agent experience by maintaining essential call controls at all times.
+
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
+#### Audit Log for SIP Trunk Configuration Changes
+
+An audit log for all SIP Trunk configuration changes is maintained. This feature enables developers and administrators to track modifications, including who made the change and when.
+
+<hr>
+
 ## v11.10.0 February 12, 2025
 
 <u> Minor Release </u>
@@ -10,7 +143,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 ### LLM & Generative AI
 
-#### Support for Recently Released Language Models in the Out-of-box Integration Framework 
+#### Support for Provider's New LLM in the Out-of-box Integration Framework 
 
 With this update, platform users can leverage the latest LLMs as soon as they become available. The XO Platform now enables the immediate addition of new language models as system models within the out-of-box Pre-built Integration framework.
 
@@ -20,7 +153,7 @@ Key benefits
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#recently-released-llm-integration)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#providers-new-llm-integration)
 
 
 #### Answer Generation Guardrails
