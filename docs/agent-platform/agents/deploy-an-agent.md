@@ -34,10 +34,10 @@ Steps to deploy an tool:
 
 1. On the **Tools** tab, click the name of the tool that you want to deploy and then click **Tool endpoint** in the left navigation.
 2. The Tool endpoint page is displayed. Click **Deploy**.  
-<img src="../images/deploy-enpoint-page.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/agent_platform/tool_endpoint.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;">
 
 3. The tool is deployed and the **Sync** and **Async poll** endpoints are generated.  
-<img src="../images/sync-async-poll.gif" alt="Sync Async Poll" title="Sync Async Poll" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/sync-async-poll - Copy.gif" alt="Sync Async Poll" title="Sync Async Poll" style="border: 1px solid gray; zoom:70%;">
 
 4. If you want to generate an Async push endpoint for the tool, do the following:
     1. Click the **Async push** tab and click **Enable**/**Settings**.  
