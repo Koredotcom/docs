@@ -12,7 +12,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 #### Agent Channel Selection Control
 
-Introduced a channel selection dropdown that enables agents to choose their preferred interaction channel for incoming interactions from the following options:
+Added new permission that enables you to configure custom roles to select the interaction type for upcoming interactions from the following options:
 
 * Voice & Digital
 * Voice
