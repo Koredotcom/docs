@@ -10,8 +10,6 @@ Both tabs include summary metrics at the top of the page, including total runs/r
 
 ## All Runs
 
-<img src="../images/agent_monitor_allruns_new.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
-
 The All runs tab provides the following information for each tool run:
 
 * **Run ID**: The unique identifier for the flow.
@@ -41,8 +39,6 @@ These metrics are dependent on the selected date range, filters, and search crit
 Each GenAI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three GenAI nodes are used in a tool, three separate requests for each of the three GenAI nodes are displayed.
 
 If your tool currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.
-
-<img src="../images/agent_monitor_model_runs.png" alt="Model runs" title="Model runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The Model runs tab provides the following information for each Gen AI node call:
 

@@ -16,7 +16,7 @@ Steps to add a Scanner:
 <img src="../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;">
 
 3. In the Input Scanners section, click **Add Scanner**, select the required scanners from the pop-up list, and then click **Done**. 
-<img src="../images/add-scanners.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/add_a_scanner.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;">
 
     The selected scanners are added to the list.  
     <img src="../images/added-guardrails.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;">
