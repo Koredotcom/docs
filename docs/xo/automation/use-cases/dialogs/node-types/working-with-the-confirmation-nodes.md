@@ -144,6 +144,10 @@ The Confirmation node’s conditional transitions go beyond the If-Else expressi
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
+For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} article.
+
+<img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmaiton node - Connection properties" style="border:1px solid gray;zoom:70%;">
+
 The Connection Path property offers three default variants:
 
 1. Not Connected - No specific next node is defined
@@ -157,8 +161,3 @@ The Connection Path property offers three default variants:
 !!! Note
 
     Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
-
-
-For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} article.
-
-<img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmaiton node - Connection properties" style="border:1px solid gray;zoom:70%;">
