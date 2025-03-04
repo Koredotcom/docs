@@ -18,7 +18,7 @@ The Platform now supports the GPT-4o mini model for various [Co-Pilot](../../gen
 
 #### Optimized Workspace Switching Experience
 
-The "Browse Workspace" feature has been optimized for a faster and more responsive user experience. Users can easily switch between their existing workspaces, which they are part of, or browse for other workspaces in the same domain and request access to a workspace. 
+The "Browse Workspace" feature has been optimized for a faster and more responsive user experience. Users can easily switch between their existing workspaces, which they are part of, or browse for other workspaces in the same domain and request access to a workspace. [Learn more :octicons-arrow-right-24:](../../getting-started/accessing-the-platform.md#join-a-workspace)
 
 ### Flows and Channels
 
