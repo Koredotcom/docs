@@ -1266,7 +1266,7 @@ To add a custom role, follow the steps below:
 
 3. Follow the steps below in the **New Role** window:
 
-    * Enter **Role Name** & **Role Description**.
+    * Enter **Role Name** (should be unique) & **Role Description**.
     <img src="../images/enter-role-name-and-description.png" alt="enter role name and description" title="enter role name and description" style="border: 1px solid gray; zoom:80%;">
     * Select the **Role Type** from the dropdown.
     <img src="../images/select-role-type.png" alt="select role type" title="select role type" style="border: 1px solid gray; zoom:80%;">
@@ -1274,33 +1274,33 @@ To add a custom role, follow the steps below:
         * Enable/select the access level for module-wise permissions in the **Enable/Disable tool access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
         * If you select *Custom*, Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
-          * Create and Import Tool
-          * Models
-              * Add External models
-              * Fine-tune a model
-              * Delete a model
-              * Manage Deployment - deploy/undeploy
-              * Create an API key for a model
-              * Export model
-          * Prompts
-          * Settings
-              * Integrations
+            * Create and Import Tool
+            * Models
+                * Add External models
+                * Fine-tune a model
+                * Delete a model
+                * Manage Deployment - deploy/undeploy
+                * Create an API key for a model
+                * Export model
+            * Prompts
+            * Settings
+                * Integrations
                   * Weights and Biases
                   * Hugging Face
                   * S3 Bucket
-          * User Management
-              * Invite user
-              * Bulk import users
-              * Assign roles to users
-              * Directory Sync
-              * Manage admin roles
-              * Manage agent roles
-              * Remove users
-              * Manage user settings
-          * Security and Control Settings
-          * Manage Guardrail Models
-          * Monitoring
-          * Billing
+               * User Management
+                  * Invite user
+                  * Bulk import users
+                  * Assign roles to users
+                  * Directory Sync
+                  * Manage admin roles
+                  * Manage agent roles
+                  * Remove users
+                  * Manage user settings
+            * Security and Control Settings
+            * Manage Guardrail Models
+            * Monitoring
+            * Billing
 
           <img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;">       
 
@@ -1326,6 +1326,7 @@ To add a custom role, follow the steps below:
 <img src="../images/select-view-and-no-access.png" alt="select view and no access" title="select view and no access" style="border: 1px solid gray; zoom:80%;">       
 
 * Selecting **_Full_** for **Settings** automatically sets the access levels of **Integrations** and **User Management** to **_Full_**.
+
 <img src="../images/select-full-access.png" alt="select full access" title="select full access" style="border: 1px solid gray; zoom:80%;">
 
 Additionally, it automatically enables all the permissions for the following modules:
@@ -1367,18 +1368,13 @@ If you select **Role Type** as **_Tool_**, follow the steps below:
 
 * Select **_Custom_**, **_View_**, or **_Full_** for **Access**. [Learn more](../user-management/role-management.md/#access-levels){:target="_blank"}. 
 
-**_View_** is the default selection.
+**_Custom_** is the default selection.
 <img src="../images/access-options.png" alt="access options" title="access options" style="border: 1px solid gray; zoom:80%;">
                      
 * Set up the tool permissions as follows in the **Enable/Disable tool access** section:
-* If you select **_View_** for **Access**, permissions selection is automatically disabled.
-<img src="../images/view-access.png" alt="view access" title="view access" style="border: 1px solid gray; zoom:80%;">
-
+* If you select **_View_** for **Access**, all the permissions are automatically disabled.
 * If you select **_Full_** for **Access**, all the permissions are automatically enabled.
-<img src="../images/full-access.png" alt="full access" title="full access" style="border: 1px solid gray; zoom:80%;">
-
-* If you select **_Custom_** for **Access**, you can enable the required tool permissions and customize the role.                 
-<img src="../images/custom-access.png" alt="custom access" title="custom access" style="border: 1px solid gray; zoom:80%;">
+* If you select **_Custom_** for **Access**, you can select the required tool permissions to enable them and customize the role.                 
 
 4. Click **Create**.
 
