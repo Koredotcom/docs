@@ -15,3 +15,5 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 * **API Agents**: API-based agents built by configured through a no-code builder. By connecting to external data sources, these agents fetch and deliver answers/data based on user queries through 3rd party API execution. [Learn more](./api-agents.md).
 
 * **Standard Agentic Apps**: Allows multiple AI agents to execute sequentially in order to efficiently complete and automate complex operations. [Learn more](./agentic-apps.md).
+
+* **Advanced Agentic Apps**: AI-powered solutions that utilize Kore’s Agent platform to autonomously manage complex tasks and workflows. [Learn more](./advanced-agentic-apps.md).

@@ -116,6 +116,8 @@ nav:
     - Setup Guide: getting-started/setup-guide.md
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md    
     - Using AI for Work Assistant: getting-started/how-to-use.md        
+    - Release Notes:
+      - Release Updates: release-notes/release-updates.md
   - Custom Agents:
     - Overview: custom-agents/overview.md
     - AI Agents: 

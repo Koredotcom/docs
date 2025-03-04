@@ -145,6 +145,7 @@ The following table displays the features and the supported models.
 
     |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
     |:----:|:----:|:----:|:----:|:----:|:----:|
+
     |Azure OpenAI – <br>GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini* |✅|✅|❌|✅|✅|
     |Provider's New LLM**|✅|✅|❌|✅|✅|
