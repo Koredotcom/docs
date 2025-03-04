@@ -1,6 +1,6 @@
 # Zulip Connector
 
-**Zulip** is a team communication platform that organizes conversations using **topic-based **threading within **streams or channels**, ensuring structured and efficient discussions. **Search AI** enables message ingestion, making search fast and efficient across all conversations. 
+**Zulip** is a team communication platform that organizes conversations using **topic-based** threading within **streams or channels**, ensuring structured and efficient discussions. Search AI enables message ingestion, making search fast and efficient across all conversations. 
 
 <span style="text-decoration:underline;">Zulip Connector Specifications</span>
 

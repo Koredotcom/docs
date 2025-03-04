@@ -30,6 +30,18 @@ To enable efficient searching of your content managed by Salesforce, configure t
    <td>Knowledge articles managed by Salesforce.
    </td>
   </tr>
+  <tr>
+   <td>RACL Support
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Content Filtering
+   </td>
+   <td>Yes
+   </td>
+  </tr>
 </table>
 
 ## Prerequisites
@@ -92,7 +104,7 @@ The next step is to configure the Salesforce connector in SearchAI. Go to the **
   * **Cloud**- Production environment/instance
   * **Sandbox**- Test environment/instance. 
 
-![Authorization](images/salesforce/authorization.png "Authorization")
+![Authorization](images/salesforce/auth.png "Authorization")
 
 After the connection is successfully established, the connector is marked as **Connected**and is ready for content ingestion. You can ingest all the content available in your Salesforce account or filter content for ingestion. 
 
@@ -102,7 +114,7 @@ After the connection is successfully established, the connector is marked as **C
 
 Salesforce Connector allows selective ingestion of content. To set content filters, select **Sync Specific Content** and click on the **Configure** link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its value. 
 
-![Content Rules](images/salesforce/content-rule.png "Content Rules")
+![Content Rules](images/salesforce/filters.png "Content Rules")
 
 The most commonly used **Parameter** fields are listed in the dropdown. You can also add new parameters if the content supports those fields using the **+Add** option. 
 
@@ -161,4 +173,6 @@ Currently, the Search AI Connector does not support the following access control
 * Direct User Permissions – Custom access granted at an individual user level to override profile-based or permission-based restrictions.
 * Data Category-Based Access Control – Used primarily in Salesforce Knowledge, this method restricts access based on predefined data categories, ensuring that users can only view relevant knowledge articles.
 
-For each object in the Salesforce application, Search AI populates the **sys_racl** field with permission entities corresponding to the using **permission sets, Permission Set groups, and user profiles** that have access to an object. Use the Permission Entity APIs to associate users with the entities. 
+For each object in the Salesforce application, Search AI populates the **sys_racl** field with permission entities corresponding to the using **permission sets, Permission Set groups, and user profiles** that have access to an object. For some of the objects like Case, Opportunities, Tasks, Contacts, Accounts,  additionally, the owner email ID is also included in the sys_racl field. 
+
+Use the Permission Entity APIs to associate users with the entities. 
