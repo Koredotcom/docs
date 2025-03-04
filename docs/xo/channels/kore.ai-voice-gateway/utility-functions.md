@@ -506,6 +506,111 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
  //  All three message will be played in Sequence WIse (Text Message -> Audio File -> Text Message)
 ```
 
+### Voicemails
+
+**Use Cases**: 
+
+(a) When you need to configure voicemail settings and notifications for customer calls. 
+
+(b) When you need to receive transcriptions of voicemail messages. 
+
+(c) When you need to collect and process customer voicemail content with metadata.
+
+**Syntax**: `print(voiceUtils.voicemail(message, beepRequired, transcriptionRequired, notifyUrl, metaInfo))`
+
+**Header Syntax**:
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>The message played to the customer before the voicemail recording starts.
+   </td>
+   <td>string
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>beepRequired
+   </td>
+   <td>When true, plays a beep sound after the message to indicate the recording start. Default: false
+   </td>
+   <td>boolean
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>transcriptionRequired
+   </td>
+   <td>When true, generates text transcription of the voicemail. Default: false
+   </td>
+   <td>boolean
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>notifyUrl
+   </td>
+   <td>Client endpoint URL where voicemail notifications will be sent.
+   </td>
+   <td>string
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>metaInfo
+   </td>
+   <td>Additional metadata to include with the notification.
+   </td>
+   <td>object
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+```
+"metaInfo": {
+    "sessionId": "session123",
+    "userId": "user456",
+    "auth_token": "YOUR_SECURE_TOKEN"
+}
+```
+
+**Example**:
+
+```
+var message = "Please leave your voicemail after beep and hang up the call";
+var beepRequired=true;
+var transcriptionRequired=true;
+var notifyUrl={
+    "url": "https://puma-singular-regularly.ngrok-free.app",
+    "headers": {
+        "auth":"YOUR_SECURE_TOKEN",
+        'Accept': "application/json",
+        'Content-Type': 'application/json'
+    }
+};
+var metaInfo={
+    "newVar":context.session.opts.streamId
+}
+print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,metaInfo));
+```
+
 ## Raw Packet (JavaScript Code)
 
  It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code.

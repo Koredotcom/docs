@@ -86,7 +86,7 @@ The XO GPT Response Rephrasing Model offers several potential advantages for bus
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
 
-    **Guardrails:** XO GPT uses several key safety measures to ensure responsible and secure interactions:
+    **Guardrails**: XO GPT uses several key safety measures to ensure responsible and secure interactions:
 
     * Content Moderation: Detects and blocks harmful or inappropriate content.
     * Behavioral Guidelines: Maintains professionalism and appropriateness in responses.
@@ -94,7 +94,7 @@ Our model is designed to safeguard information by ensuring that no client or use
     * Input Validation: Ensures inputs are appropriate and comply with usage guidelines.
     * Usage Controls: Applies limits to prevent misuse and support responsible operation.
 
-    **AI Safety Measures:** XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
+    **AI Safety Measures**: XO GPT incorporates essential safety protocols to prevent harmful behaviors and maintain ethical standards:
 
     * Ethical Guidelines: Strict protocols ensure AI decisions align with ethical standards.
     * Bias Monitoring: Regular checks to prevent bias and ensure fairness in responses.
@@ -105,7 +105,7 @@ Our model is designed to safeguard information by ensuring that no client or use
 
     The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
-<img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer03.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 ### Use Cases
 
@@ -274,39 +274,11 @@ This section highlights the features, updates, and changes that vary between dif
 
 The following table summarizes the versions covered in this document:
 
+| Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
+|--------------|----------|------------------|---------------|----------------------|----------------------|
+| Version 1.0  | 99%      | 45               | 0.9           | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) |
 
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Accuracy
-   </td>
-   <td>Tokens / sec (TPS)
-   </td>
-   <td>Latency (secs)
-   </td>
-   <td>Benchmark Comparison
-   </td>
-   <td>Test Data & Results
-   </td>
-  </tr>
-  <tr>
-   <td>Version 1.0
-   </td>
-   <td>99%
-   </td>
-   <td>45
-   </td>
-   <td>0.9
-   </td>
-   <td>
 
-<a href="#benchmarks-summary">Benchmark summary</a>
-   </td>
-   <td><a href="../test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx">Test date and results spreadsheet</a>
-   </td>
-  </tr>
-</table>
 
 ### Version 1.0
 
@@ -530,14 +502,14 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
   </tr>
 </table>
 
-#### Benchmarks Summary
+#### Benchmarks Summary v1
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
 * Mistral-vanilla: An open-source large language model with 7 billion parameters, known for its strong performance despite its relatively small size.
 * GPT 4: OpenAI's advanced language model is known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
 
-<img src="../images/response01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/response01.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results V2.0](../test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) report.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results v1](../test-date-and-results/xogpt-response-rephrasing-v1.0.xlsx) report.

@@ -157,7 +157,7 @@ nav:
                 - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
-                - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
+                - SIP Trunk: channels/kore.ai-voice-gateway/sip-trunk.md
                 - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
@@ -330,9 +330,13 @@ nav:
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - Guru: searchai/content-sources/connectors/guru.md
+                - HelpScout: searchai/content-sources/connectors/helpscout.md
+                - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
+                - Miro: searchai/content-sources/connectors/miro.md
                 - Monday: searchai/content-sources/connectors/monday.md
                 - MS Teams: searchai/content-sources/connectors/msteams.md
                 - Notion: searchai/content-sources/connectors/notion.md
@@ -341,14 +345,17 @@ nav:
                 - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md 
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md
+                - Shopify: searchai/content-sources/connectors/shopify.md
                 - Slab: searchai/content-sources/connectors/slab.md
                 - Slack: searchai/content-sources/connectors/slack.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - Workday: searchai/content-sources/connectors/workday.md
+                - Wrike: searchai/content-sources/connectors/wrike.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
-                - Zendesk: searchai/content-sources/connectors/zendesk.md         
+                - Zendesk: searchai/content-sources/connectors/zendesk.md 
+                - Zulip: searchai/content-sources/connectors/zulip.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
@@ -384,13 +391,14 @@ nav:
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
       - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
-      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
-      - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
+      - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
+      - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
       - Advanced Settings:
         - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
-        - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
+        - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
         - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
@@ -459,6 +467,7 @@ nav:
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
+      - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Welcome Events: agentai/configuration/welcome-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
@@ -475,6 +484,7 @@ nav:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
       - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
+      - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
       - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md      
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
@@ -648,6 +658,7 @@ nav:
       - Reports:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
+      - Wallboards: analytics/contact-center/wallboards.md 
   - Administration:
     - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
