@@ -330,10 +330,13 @@ nav:
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - Guru: searchai/content-sources/connectors/guru.md
+                - HelpScout: searchai/content-sources/connectors/helpscout.md
                 - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
+                - Miro: searchai/content-sources/connectors/miro.md
                 - Monday: searchai/content-sources/connectors/monday.md
                 - MS Teams: searchai/content-sources/connectors/msteams.md
                 - Notion: searchai/content-sources/connectors/notion.md
@@ -349,8 +352,10 @@ nav:
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - Workday: searchai/content-sources/connectors/workday.md
+                - Wrike: searchai/content-sources/connectors/wrike.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
-                - Zendesk: searchai/content-sources/connectors/zendesk.md         
+                - Zendesk: searchai/content-sources/connectors/zendesk.md 
+                - Zulip: searchai/content-sources/connectors/zulip.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
