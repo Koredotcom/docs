@@ -195,7 +195,7 @@ The following table summarizes the scope for different system roles supported fo
 
 #### Custom Roles 
 
-The admin can add these roles at the account/tool level. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and tool levels.
+The admin can assign only **Account** and **Tool** role types to custom roles. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and tool levels.
 
 Organizations can tailor access levels to their specific needs and organizational structure. This customization helps assign only the required permissions to specific users and improve security through role-based access. 
 
@@ -232,8 +232,8 @@ A **Role Type** defines the module-wise scope and access level for the defined p
 
 Roles are auto-assigned by the system based on the following Role Types. Please refer to [this](./role-management.md/#system-defined-roles){:target="_blank"} table for more information on the roles.
 
-* **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to features at the account level like models, tools, other users, integrations, and security permissions.
-* **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to features at the tool level like tool creation, deployment, versioning, deletion, monitoring, API integration, experimentation, export, etc.
+* **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
+* **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
 * **Agentic App**: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features and configurations of autonomous AI applications that handle specialized business tasks and processes.
 
 **Account Role**
@@ -694,9 +694,9 @@ The following table summarizes the module-wise permissions and access levels for
     </td>
   </tr>
   <tr>
-   <td>Monitoring
+   <td><b>Monitoring</b>
    </td>
-   <td></td>
+   <td>All actions</td>
    <td>Yes
    </td>
    <td>Yes
@@ -708,9 +708,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Billing: Plans, invoice, subscribe & unsubscribe, token usage
+   <td><b>Billing: Plans, invoice, subscribe & unsubscribe, token usage</b>
    </td>
-   <td></td>
+   <td>All actions</td>
    <td>Yes
    </td>
    <td>No
@@ -721,9 +721,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Tool Management
+   <td><b>Tool Management</b>
    </td>
-   <td></td>
+   <td>All actions</td>
    <td>Yes
    </td>
    <td>Yes
@@ -1164,7 +1164,7 @@ The following table summarizes the module-wise permissions and access levels for
 
 ### Role Management Dashboard
 
-The **Role Management Dashboard** on the Settings console displays key information.
+The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the Agent Platform.
 
 To access the dashboard, follow the steps below:
 
@@ -1224,10 +1224,8 @@ To view the details of a [system-defined role](./role-management.md/#system-defi
 The following information is displayed:
 
 * Role Title along with Role Type.
-* Summary information on the role.
 * Role Name
 * Role Description
-* [Role Type](./role-management.md/#role-types){:target="_blank"}
 * Configuration panel to enable/disable access and set access levels for the listed permissions at the account/tool level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
 <img src="../images/module-wise-permissions-new.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;">
 
@@ -1274,16 +1272,36 @@ To add a custom role, follow the steps below:
     <img src="../images/select-role-type.png" alt="select role type" title="select role type" style="border: 1px solid gray; zoom:80%;">
     * Follow the steps below if you select **Role Type** as **_Account_**.
         * Enable/select the access level for module-wise permissions in the **Enable/Disable tool access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
-        * Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
+        * If you select *Custom*, Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
-          * Create Tools
-          * Models 
+          * Create and Import Tool
+          * Models
+              * Add External models
+              * Fine-tune a model
+              * Delete a model
+              * Manage Deployment - deploy/undeploy
+              * Create an API key for a model
+              * Export model
           * Prompts
-          * Integrations
+          * Settings
+              * Integrations
+                  * Weights and Biases
+                  * Hugging Face
+                  * S3 Bucket
           * User Management
+              * Invite user
+              * Bulk import users
+              * Assign roles to users
+              * Directory Sync
+              * Manage admin roles
+              * Manage agent roles
+              * Remove users
+              * Manage user settings
           * Security and Control Settings
           * Manage Guardrail Models
+          * Monitoring
           * Billing
+
           <img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;">       
 
        * Select the access level for **Models**, **Settings**, **Integrations**, and **User Management** from the following options:
@@ -1291,8 +1309,7 @@ To add a custom role, follow the steps below:
         * **Custom**: The users can select only the required permissions for the module to customize the role.
         * **View**: The users can only view the configured module permissions.
         * **No Access**: The user cannot view/customize the module permissions.
-        <img src="../images/select-access-for-modules.png" alt="select access for modules" title="select access for modules" style="border: 1px solid gray; zoom:80%;">
-    
+            
 **Important Considerations**
 
 * First, select the access level for **Models** to enable its permissions.
@@ -1313,40 +1330,38 @@ To add a custom role, follow the steps below:
 
 Additionally, it automatically enables all the permissions for the following modules:
 
-* Integrations (View is always enabled by default as it is the minimum required permission).
-* User Management
-* Security and Control Settings
-* Manage Guardrail Models
-* Billing
-<img src="../images/full-select-for-all-permissions.png" alt="full access" title="full access" style="border: 1px solid gray; zoom:80%;">
+   * Integrations (View is always enabled by default as it is the minimum required permission).
+   * User Management
+   * Security and Control Settings
+   * Manage Guardrail Models
+   * Monitoring
+   * Billing
+
 * Selecting **_No Access_** for **Settings** automatically sets the access levels of **Integrations** to **_View_** and **User Management** to **_No Access_**.
 <img src="../images/select-no-access.png" alt="no access" title="no access" style="border: 1px solid gray; zoom:80%;">
 
 Additionally, it disables all the permissions for the following modules:
 
-  * Integrations (The **View** permission is always enabled by default).
-  * User Management
-  * Security and Control Settings
-  * Manage Guardrail Models
-  * Billing
+   * Integrations (The **View** permission is always enabled by default).
+   * User Management
+   * Security and Control Settings
+   * Manage Guardrail Models
+   * Monitoring
+   * Billing
   
-  <img src="../images/disable-permissions.png" alt="disable permissions" title="disable permissions" style="border: 1px solid gray; zoom:80%;">
-
-Selecting **_Custom_** for **Settings** automatically sets the Integrations and User Management access levels to **_Custom_**.
-<img src="../images/select-custom.png" alt="select custom" title="select custom" style="border: 1px solid gray; zoom:80%;">
-
-You can enable the required permissions for the following modules:
+Selecting **_Custom_** for **Settings** automatically sets the **Integrations** and **User Management** access levels to **_Custom_** where you can select or unselect the listed permissions based on your requirement for the following modules:
 
 * Integrations
 * User Management
 * Security and Control Settings
 * Manage Guardrail Models
+* Monitoring
 * Billing
 
-<img src="../images/enable-access-level.png" alt="enable access level" title="enable access level" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/select-custom.png" alt="select custom" title="select custom" style="border: 1px solid gray; zoom:80%;">
 
 You can change **_Custom_** to **_Full_** or **_View_** for **Integrations** and **_Full_** or **_No Access_** for **User Management**.
-<img src="../images/change-access-level.png" alt="change access level" title="change access level" style="border: 1px solid gray; zoom:80%;">
+
 
 If you select **Role Type** as **_Tool_**, follow the steps below:
 
@@ -1392,15 +1407,12 @@ To update a role, follow the steps below:
 
     * Role Name
     * Role Description
-
-Reset the access levels for module-wise Permissions in the **Enable/disable tool access** section based on the role’s requirements.
+    * Access: Select either *Custom*, *Full*, or *View*.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <b>Role Type</b> field is disabled for editing.</p>
+<p>You cannot reset the access levels for module-wise Permissions in the <b>Enable/disable tool access</b> section.</p>
 </div> 
-
-<img src="../images/role-type-field-disabled.png" alt="role type disabled" title="role type disabled" style="border: 1px solid gray; zoom:80%;">
 
 <ol start="5"><li>Click <b>Update</b>.</li>
 <img src="../images/update-role-window.png" alt="update role window" title="update role window" style="border: 1px solid gray; zoom:80%;"></ol>
