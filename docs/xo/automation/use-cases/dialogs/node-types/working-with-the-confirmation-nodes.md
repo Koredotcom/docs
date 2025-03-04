@@ -22,8 +22,6 @@ Setting up a confirmation node in a dialog task involves the following steps:
     
     <img src="../images/confirmation-node-img1-add-node.png" alt="Add Confirmation node" title="Add Confirmation node" style="border:1px solid gray;zoom:70%;">
 
-
-
 ## Configure the Node
 
 ### Component Properties
@@ -145,6 +143,21 @@ The Confirmation node’s conditional transitions go beyond the If-Else expressi
 !!! Note
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
+
+The Connection Path property offers three default variants:
+
+1. Not Connected - No specific next node is defined
+2. End of Dialog - Explicitly ends the current dialog
+3. Return to Flow - Terminates the Dialog Task and returns control to the Flow Builder. The Flow Builder resumes from the next node.
+    * Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context.
+    It has two deflection types - ‘ Automation’ and ‘Agent Transfer’.  
+    <img src="../images/deflect-to-chat1.png" alt="Deflect to Chat" title="Deflect to Chat" style="border:1px solid gray;zoom:70%;">
+
+
+!!! Note
+
+    Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+
 
 For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} article.
 
