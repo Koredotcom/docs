@@ -92,7 +92,20 @@ Define the following details for tool configuration:
 * **Choose transition**: Define the behavior after tool execution:
     * **Default**: Send the response back to the LLM. It is mandatory to have a Response Path in this case.
     * **Exit Node**: Follow the transitions defined for the Agent Node.
-    * **Jump to a Node** (Coming soon): You can jump to any node defined in the dialog.
+    * **Jump to a Node**: You can jump to any node defined in the dialog. 
+
+
+**Jump to a Node Transition**
+
+The Jump-to-Node transition option enables the creation of sophisticated dialog workflows. It allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
+
+**Key Updates**:
+
+* Added "Jump-to-Node" transition option for tools within the Agent node.
+* Enables seamless navigation to specified target nodes following tool execution.
+* Maintains complete session-level conversation history across all transitions.
+* Supports transitions to both orphan nodes and sub-dialogs.
+* Ensures full backward compatibility with existing tool configurations.
 
 #### Rules
 
@@ -362,7 +375,7 @@ To add an Agent node prompt using JavaScript, follow the steps:
 <img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
-## Expected Output Structure
+### Expected Output Structure
 
 Defines the standardized format required by the XO Platform to process LLM responses effectively.
 
@@ -467,7 +480,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
 
 
 
-## Context Object
+### Context Object
 
 The context object is used to get the entities and the parameters of tools.
 
@@ -484,11 +497,16 @@ The context object is used to get the entities and the parameters of tools.
    </td>
    <td>{context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}}
    </td>
+   <tr>
+   <td>Bot Response Path
+   </td>
+   <td>{{context.AI_Assisted_Dialogs.bot_response.bot}}
+   </td>
   </tr>
 </table>
 
 
-## Dynamic Variables
+### Dynamic Variables
 
 The Dynamic Variables like Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
 

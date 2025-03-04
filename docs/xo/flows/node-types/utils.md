@@ -264,6 +264,21 @@ skillGroups: ["6390989f1d00e75d5df4xxxx"],
 })
 ```
 
+### Recording Control
+
+This function allows you to control the recording of the interactions. You can start, stop, pause, and resume recordings.
+
+Syntax: `agentUtils.setExternalAgentRecordingControl({record: "state"})`
+
+Examples:
+
+```
+agentUtils.setExternalAgentRecordingControl({record: "start"})
+agentUtils.setExternalAgentRecordingControl({record: "stop"})
+agentUtils.setExternalAgentRecordingControl({record: "pause"})
+agentUtils.setExternalAgentRecordingControl({record: "resume"})
+```
+
 ## userSessionUtils
 
 **Get**: Use this function to get the value associated within a key within the “userSession” object in the conversation context. You can get the value associated with the key using this script.

@@ -197,7 +197,9 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
 7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
-8. **Load Balanced Agent Routing**: This setting ensures a fair distribution of tasks among available agents with the necessary skills and language proficiency.
+8. **Additional Routing Configuration**: Administrators can select from the following routing options that complement existing routing configurations through queues.
+    * Fairer Workload distribution.
+    * Hold interaction in queue until the wait time expires.
 9. **Call Acceptance Behaviour**: This setting allows the call to be accepted while the connection message plays in the background instead of waiting for it to finish.
 These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
 10. **Blended Mode**: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.  
@@ -392,10 +394,14 @@ This feature allows agents to temporarily pause conversations that are awaiting 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
 
-## Load-Balanced Agent Routing
+## Additional Routing Configuration
 
-By default, the load-balanced agent routing functionality is disabled. Administrators can turn on the toggle to enable the functionality allowing the distribution of tasks more evenly and reducing the chances of agent overload, leading to better focus and potentially faster task completion times, decreasing wait times for tasks. and improve overall system performance.  
-<img src="../images/load-balanced-routing-toggle.png" alt="Load-Balanced Agent Routing" title="Load-Balanced Agent Routing" style="border: 1px solid gray; zoom:80%;">
+Administrators can select from the following routing options that complement existing routing configurations through queues.
+
+**Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
+
+**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability. 
+<img src="../images/additional-routing-configurations.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ## Call Acceptance Behaviour
 

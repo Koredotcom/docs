@@ -391,13 +391,14 @@ nav:
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
       - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
-      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
-      - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
+      - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
+      - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
       - Advanced Settings:
         - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
-        - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
+        - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
         - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
@@ -656,6 +657,7 @@ nav:
       - Reports:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
+      - Wallboards: analytics/contact-center/wallboards.md 
   - Administration:
     - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:
