@@ -49,10 +49,6 @@ Kore has included a new option, **Interactive Language**, in the **Default Langu
 
 To streamline bot management, improve efficiency, and reduce maintenance cost, Kore now provides the ability to associate a single bot with multiple Genesys Cloud CX queues.
 
-#### Offline Agent AI integration with F9
-
-Agent AI in Offline mode is now integrated with the Five9 Voice Channel.
-
 #### Agent AI Voice integration with CX Cloud from Genesys and Salesforce
 
 Kore Agent AI is now integrated with CX Cloud from Genesys and Salesforce.

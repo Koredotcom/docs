@@ -8,17 +8,17 @@ This document provides information on the feature updates and enhancements intro
 
 ### Salesforce Connector Enhancements
 
-The Salesforce Connector has been enhanced to support custom object ingestion in addition to the capability of ingesting default objects like Knowledge Articles, Cases, Documents, Opportunities, Leads, Contacts, Accounts, and Tasks. During configuration, users can select the type of content to be ingested, providing greater flexibility. Additionally, the filtering feature has been enhanced, allowing users to refine document ingestion based on specific fields.
+The Salesforce Connector has been enhanced to support custom object ingestion in addition to the capability of ingesting default objects like Knowledge Articles, Cases, Documents, Opportunities, Leads, Contacts, Accounts, and Tasks. During configuration, users can select the type of content to be ingested, providing greater flexibility. Additionally, the filtering feature has been enhanced, allowing users to refine document ingestion based on specific fields. [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/salesforce.md)
 
 ### New Search AI Connectors (Beta)
 
 Search AI extends support for five new connectors, enabling seamless content ingestion and retrieval from Guru, Miro, Help Scout, Wrike, and Zulip. These connectors enhance enterprise search by integrating knowledge from various collaboration and productivity platforms. The connectors also enable access control for the content that is ingested from the applications.
 
-* Guru – Ingests knowledge cards for centralized access to organizational information.
-* Miro – Enables searching the Miro boards.
-* HelpScout – Enables search across knowledge base articles.
-* Wrike – Provides access and searchability for tasks.
-* Zulip – Integrates messages from channels into search results and answers.
+* [Guru](./../../searchai/content-sources/connectors/guru.md) – Ingests knowledge cards for centralized access to organizational information.
+* [Miro](./../../searchai/content-sources/connectors/miro.md) – Enables searching the Miro boards.
+* [HelpScout](./../../searchai/content-sources/connectors/helpscout.md) – Enables search across knowledge base articles.
+* [Wrike](./../../searchai/content-sources/connectors/wrike.md) – Provides access and searchability for tasks.
+* [Zulip](./../../searchai/content-sources/connectors/zulip.md) – Integrates messages from channels into search results and answers.
 
 <hr>
 
