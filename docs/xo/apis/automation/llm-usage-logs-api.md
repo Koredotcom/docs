@@ -88,7 +88,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
 ## Sample Request
 
 ```json
-curl --location 'https://bots.kore.ai/api/1.1/public/bot/st-f3195ec3-72aa-5317-92a2-1dcb78ced6d3/getLLMUsageLogs' \
+curl --location 'https://bots.kore.ai/api/1.1/public/bot/st-f3195ec3-72aa-5317-92a2-1dcb78cxxxxx/getLLMUsageLogs' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data '{
