@@ -171,8 +171,6 @@ Use the Instance Properties to set user tags, timeout duration, and bot behavior
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
 
-<img src="../images/service-node-img9-connection-properties.png" alt="Service node - Connection properties" title="Service node - Connection properties" style="border:1px solid gray;zoom:70%;">
-
 The Connection Path property offers three default variants:
 
 1. Not Connected - No specific next node is defined

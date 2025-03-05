@@ -470,6 +470,7 @@ nav:
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
+      - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Welcome Events: agentai/configuration/welcome-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
@@ -501,8 +502,10 @@ nav:
           - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
           - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
           - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
+        - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
+      - Streaming Responses: generative-ai-tools/streaming-responses.md 
     - GenAI Features:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md

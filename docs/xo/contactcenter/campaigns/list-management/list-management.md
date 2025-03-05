@@ -181,7 +181,7 @@ Steps to retrieve the label names of all available fields in a contact record:
 5. On the **Interactions** page, click the desired Campaign's record to view transcriptions and access the string representation of all fields.  
     <img src="../images/insights-to-logs (2).png" alt="Insights to Logs" title="Insights to Logs" style="border: 1px solid gray; zoom:80%;">
 
-##### Accessing the Contact List Fields Through Their Labels
+#### Accessing the Contact List Fields Through Their Labels
 
 You can use the extracted labels to access specific contact list fields within your flow.
 

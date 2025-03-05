@@ -1,42 +1,48 @@
 # Conversation Mining - Interactions
 
-You can see scored interactions or evaluation information at a glance from Conversation Mining. You can apply filters to focus on specific interactions or with high potential for improvement and save the filters for auditing purposes. Interactions visible on the conversation mining screen are limited to the user's assigned queues.
 
-The Conversation Mining interaction listing streamlines identifying specific interactions, saving time on manual reviews and enhancing decision-making and operational efficiency. You can customize the page by adding metadata and columns, improving oversight quality.  
+This **Interactions** feature allows you to quickly view scored interactions or evaluation data. You can apply filters to highlight specific interactions or those with the greatest potential for improvement, and you can save these filters for auditing purposes. The interactions displayed on this page are limited to the user's assigned queues.
 
-You can access **Interactions** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**. 
+## Accessing Interactions
+
+You can access **Interactions** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
+
 
 !!! Note
 
     Interactions are populated a few seconds after call termination. 
 
-The **Conversation Mining - Interactions** tab includes the following items:
+## Interactions Dashboard Elements
 
-* **Agents**: Shows the agent who last engaged in the interaction and ended the call. Hovering over the agent reveals the tagged topics and intents.
+The **Interactions** dashboard includes the following elements:
 
-    * **Topic Tags**: Each interaction includes tags that represent classified topics. Hovering on this tag, shows all the relevant topics discussed in that conversation.
+* **Agents**: Shows the agent's name who last engaged in and ended the interaction. Hover over the agent’s name to view tagged topics and intents.
+
+    * **Topic Tags**: Displays classified topics for each interaction as tags. Hover over the tags to see all relevant topics discussed in that conversation.  
   <img src="../conversation-mining/images/conversation-interaction-topic-tags.png" alt="Topic Tags" title="Topic Tags" style="border: 1px solid gray; zoom:80%;">
 
-    * **Intent Tags**: Each interaction shows classified intents as tags. Hovering over an intent tag, shows all the relevant intents mentioned in that conversation.
+    * **Intent Tags**: Shows the classified intents of each interaction as tags. Hover over the Intent tags to see all relevant intents mentioned in that conversation.
   <img src="../conversation-mining/images/conversation-mining-interaction-intent-tags.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
 
-* **Actions**: You can assign the interaction to a  bookmark for later reference.
+* **Actions**: Allows you to assign the interaction to a bookmark for later reference.  
+<img src="../conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
+
 
     !!! Note
 
-        You must create bookmarks first from the [Settings](../configure/settings.md). 
+        To view and tag the bookmarks for future reference, you must create the required bookmarks during the [Settings](../configure/settings.md) configuration. 
 
-* **Queues**: Shows the queue where the system terminated the interaction.
+* **Queues**: Shows the queue where the system terminated during the interaction.
 
     !!!Note
 
-        The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction.
+        The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction. 
 
 * **Kore Evaluation Score**: Shows the Kore Evaluation score (Auto QA Score) for the interaction based on the relevant evaluation form.
-* **Supervisor Auditor Score**: Shows the Supervisor Audited score if the interaction is already audited or manually evaluated.
-* **Sentiment Score**: Shows the system-generated sentiment score for the interaction based on the context of what the customer sai.
-* **Moments**: Shows the Moments column counts for adherences, violations, and omissions related to the configured metrics of the interaction.  
+* **Sentiment Score**: Shows the system-generated sentiment score for the interaction based on the customer conversation context. 
+* **Supervisor Auditor Score**: Shows the Supervisor Audited score if the interaction is already audited or manually evaluated. 
+* **Moments**: Shows the **Moments** column counts for adherences, violations, and omissions related to the configured metrics of the interaction.  
 <img src="../conversation-mining/images/conversation-mining-moments.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
 When you hover over the listed **Moments**, the following metrics are displayed: 
@@ -45,7 +51,9 @@ When you hover over the listed **Moments**, the following metrics are displayed:
 * **Violations**: Speech-based violations that occurred.
 * **Omissions**: Metrics not adhered to; including playbook steps, dialog tasks, and by question metrics.
 
+
 Clicking on an interaction opens the corresponding AI-Assisted Manual Audit page, where you can view the conversation history and the recording. [Learn more](../ai-assisted-manual-audit.md){:target=”_blank”}.   
+
 <img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters Audit Page" title="Interactions Filters Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 Auditors can check the following near-miss scenarios by reviewing metrics on the audit screen:
@@ -63,6 +71,7 @@ Auditors can check the following near-miss scenarios by reviewing metrics on the
 ## Columns
 
 Allows you to filter the following default fields:
+
 
 * **Supervisor Auditor Score**: This shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
 
@@ -262,6 +271,3 @@ Once you Save Filter, you will get the following filters options to:
 * **Delete Filter**
 
     Allows you to delete the saved filter.
-
-    <img src="../conversation-mining/images/conversation-interaction-saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;">
-

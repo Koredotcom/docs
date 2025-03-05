@@ -95,22 +95,23 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
 ## Sample Request
 
 ```json
- --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy03ZWMxNmFjZS03ZGNmLTU3MjQtYjM5NS1hYTA4YmRmYTAwMzMifQ.n_Es9ZBsiCYzpzsfN4p4I1SlHK05gewJFyqAIngr4Qg' \
+curl --location 'https://bots.kore.ai/api/1.1/public/bot/st-f3195ec3-72aa-5317-92a2-1dcb78ced6d3/getLLMUsageLogs' \
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy03ZWMxNmFjZS03ZGNmLTU3MjQtYjM5NS1hYTA4YmRmYTAwMzMifQ.n_Es9ZBsiCYzpzsfN4p4I1SlHK05gewJFyqAIngr4Qg' \
 --header 'Content-Type: application/json' \
 --data '{
     "dateFrom": "2024-03-07",
-    "dateTo":"2024-03-09",
-    "limit":"1",
-    "skip" : "5",
+    "dateTo": "2024-04-26",
+    "limit": "50",
+    "skip": "5",
     "isDeveloper": true,
-    "channel" : "msteams",
-    "featureName" : ["dynamicEntity"],
-    "taskId" : "dg-d4924db4-b325-5b4d-ae51-aa5c7be41d4f",
-    "channelUserIds":["29:1gmw8z03rvk6njl6k7ohtdh2v9zubxiip7kvu1yiek_qri4grpmd0k_d1yjlpzbj40wk1am9dphqkoiwatzwttw"],
-    "userIds" : ["u-40b3eafc-a5aa-55f2-83e8-cf4d0fb1de07"],
-    "sort" : {
-        "field" : "Time Taken",
-        "order" : "desc"
+    "channel": ["msteams", "rtm"],
+    "featureName": ["dynamicEntity"],
+    "taskId": "dg-d4924db4-b325-5b4d-ae51-aa5c7be41d4f",
+    "channelUserIds": ["29:1gmw8z03rvk6njl6k7ohtdh2v9zubxiip7kvu1yiek_qri4grpmd0k_d1yjlpzbj40wk1am9dphqkoiwatzwttw"],
+    "userIds": ["u-40b3eafc-a5aa-55f2-83e8-cf4d0fb1de07"],
+    "sort": {
+        "field": "Time Taken",
+        "order": "asc"
     }
 }'
 ```
@@ -197,7 +198,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
    </td>
    <td>Optional
    </td>
-   <td>To sort the results.
+   <td>To sort the results by Time Taken in the specified order (asc or desc).
    </td>
   </tr>
 </table>

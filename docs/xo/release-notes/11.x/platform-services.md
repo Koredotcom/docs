@@ -40,6 +40,8 @@ Backward compatibility:
 
 * The feature is fully backward-compatible with existing voice implementations.
 
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md#connections-properties)
+
 ### Voice Gateway (v0.9.3-8)
 
 #### Spanish Language Support for ElevenLabs Text-to-Speech
@@ -64,7 +66,7 @@ A voicemail notification can be sent using the `voiceutils`, enabling automated 
 * **message**: Before the voicemail is recorded, a customizable prompt, such as "Please leave your voicemail now," is played to customers.
 * **beepRequired**: It controls whether a beep sound plays after the prompt, signaling to customers that the voicemail recording is starting.
 * **transcriptionRequired**: Enables/disables automatic voicemail transcription. When enabled, it generates text transcription upon recording completion.
-* **notifyUrl**: Endpoint for receiving voicemail notifications.  \
+* **notifyUrl**: Endpoint for receiving voicemail notifications.  
 Format: `https://your-domain/endpoint`.
 * **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/utility-functions.md#voicemails)
 

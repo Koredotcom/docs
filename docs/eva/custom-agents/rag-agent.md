@@ -63,7 +63,7 @@ You can create a new agent or import an existing one.
 
 -   [Create RAG agent](#create-rag-agents)
 
-# Import existing RAG agent
+### Import existing RAG agent
 
 To import an existing RAG agent:
 
@@ -76,7 +76,7 @@ To import an existing RAG agent:
 3.  Click **Import** to complete the process. The imported agent will appear on
     the RAG Agents page.
 
-# Create RAG Agents
+## Create RAG Agents
 
 ### Prerequisites
 
@@ -152,6 +152,12 @@ under the **Manage** tab. Refer to
 
 -   **Search ID**: Unique identifier of the client generated in Search AI.
   
+You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your XO platforms App's channel:
+
+- Answer Generation
+- Permission Entity Management
+- Document Management
+- Facets
 
 
 ### Step 3: Preview
@@ -184,7 +190,7 @@ Provide the following details for publishing the agent and click **Continue**.
     -   **User's Choice**: Users can choose whether to enable or disable the
         agent as needed.
 
-# Modify a RAG Agent
+## Modify a RAG Agent
 
 To modify the RAG agent, follow these steps:
 
@@ -209,13 +215,13 @@ To modify the RAG agent, follow these steps:
     needed.
 
 
-# Agent Option
+## Agent Option
 
 The agent options allow you to export, delete, and un-publish the agent.
 
 ![](images/agent-option-rag.png)
 
-# User Interaction
+## User Interaction
 
 Interacting with the RAG Agent ensures users get the information they need
 quickly and efficiently. Users can select the specific agent and start by typing

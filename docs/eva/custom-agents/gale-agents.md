@@ -11,7 +11,7 @@ You can create a new agent or import an existing one.
 
 -   [Create GALE agent](#create-gale-agent)
 
-# Import existing GALE agent
+## Import existing GALE agent
 
 To import an existing GALE agent:
 
@@ -23,7 +23,7 @@ To import an existing GALE agent:
 
 3.  Click **Import** to complete the process. The imported agent will appear on the Workflow Agents page.
 
-# Create GALE Agent
+## Create GALE Agent
 
 To create a GALE Agent, follow the steps outlined below:
 
@@ -212,7 +212,7 @@ To modify the workflow agent / GALE agent, follow these steps:
     needed.
 
 
-# Agent Option
+## Agent Option
 
 The agent options allow you to export, delete, and un-publish the agent.
 

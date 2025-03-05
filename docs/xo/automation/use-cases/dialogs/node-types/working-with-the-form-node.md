@@ -114,8 +114,6 @@ From the node’s **Connections** tab, you can determine the node in the dialog 
 
 For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 
-<img src="../images/form-node-img12-connection-properties.png" alt="Form node - Connection properties" title="Form node - Connection properties" style="border:1px solid gray;zoom:70%;">
-
 The Connection Path property offers three default variants:
 
 1. Not Connected - No specific next node is defined
