@@ -70,7 +70,7 @@ For detailed statistics on the total events and the runs executed by each node, 
 
 To generate and view the required tools analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
-### Agent-specific Metrics
+### Tool-specific Metrics
 
 The following metrics help analyze the performance of the selected tool and version in your account during the selected period:
 
@@ -279,7 +279,7 @@ The expanded views of all the widgets are shown below:
 
 <img src="../images/nodes-execution-expanded-view.png" alt="nodes execution expanded view" title="nodes execution expanded view" style="border: 1px solid gray; zoom:75%;">
 
-The **Agents Analysis Dashboard** offers actionable and customized insights on the tool performance metrics for various features in your account. 
+The **Tools Analysis Dashboard** offers actionable and customized insights on the tool performance metrics for various features in your account. 
 
 ## Related Information
 

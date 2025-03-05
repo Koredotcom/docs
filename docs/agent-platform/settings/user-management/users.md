@@ -151,7 +151,7 @@ The **Delete** feature removes a user you’re managing from your Agent Platform
 <p class="admonition-title">Important</p>
 <p>Only users included as Admin in the system with the required permissions can access the <b>Settings</b> Console.</p>
 <p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on Agent Platform. To rejoin your account, you must invite them again via email.</li>
-<li>You cannot delete users if they have created and manage agents in your account. The user must first remove all active agents before they can be deleted.</li></ul></p></div>
+<li>You cannot delete users if they have created and manage tools in your account. The user must first remove all active tools before they can be deleted.</li></ul></p></div>
 
 **Steps to delete a user**
 

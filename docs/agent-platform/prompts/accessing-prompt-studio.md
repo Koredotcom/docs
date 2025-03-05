@@ -58,7 +58,7 @@ The Start from Scratch option gives you complete flexibility to create custom pr
 
 Additionally, you can generate AI responses and incorporate templates from the prompt library to enhance your prompt creation process. This flexibility ensures you can tailor prompts to meet your specific needs effectively.
 
-For more information on how to create prompts on the prompts canvas, see [Using Prompt Studio](../playground/using-prompt-studio.md).
+For more information on how to create prompts on the prompts canvas, see [Using Prompt Studio](./using-prompt-studio.md).
 
 ## Prompt Library
 
@@ -84,9 +84,9 @@ Steps to create prompts from prompt library:
 4. Once you click **Use template**, the prompts will be copied to the prompt canvas. You can then customize the prompts as needed.
 
     <img src="../images/prompt_canvas_library.png" alt="Prompt library canvas" title="Prompt library canvas" style="border: 1px solid gray; zoom:30%;">
-
+  
 !!! note
 
     All the prompt templates are read-only, preventing direct editing of predefined prompts. You can edit the content only when you use the template in the prompt canvas.
 
-For more information on how to create prompts on the prompts canvas, see [Using Prompt Studio](../playground/using-prompt-studio.md).
+For more information on how to create prompts on the prompts canvas, see [Using Prompt Studio](./using-prompt-studio.md).
