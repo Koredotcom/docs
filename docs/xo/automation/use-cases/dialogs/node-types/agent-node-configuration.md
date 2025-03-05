@@ -95,7 +95,7 @@ Define the following details for tool configuration:
     * **Jump to a Node**: You can jump to any node defined in the dialog. 
 
 
-##### **Jump to a Node Transition**
+**Jump to a Node Transition**
 
 The Jump-to-Node transition option enables the creation of sophisticated dialog workflows. It allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
 
@@ -234,85 +234,101 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 Sample JavaScript
 
 ```
+
 let payloadFields = {
-"model": "gpt-4",
-"temperature": 0.73,
-"max_tokens": 1068,
-"top_p": 1,
-"frequency_penalty": 0,
-"presence_penalty": 0,
-"messages": [
-{
-"role": "system",
-"content": You are a virtual assistant representing an enterprise business, and so you have to act professionally at all times. You do not participate or respond to any abusive language or indulge in any conversation that does not represent enterprise business.\n ${System_Context} For the instructions that the user provides, you have to process the instructions. Here are the rules that you are supposed to follow: \n ${Business_Rules}\n and List of entities you need to capture from user are ${Required_Entities}. You need to capture all these entitites .\n If user has provided the required value for any of the required inputs, then do not prompt for it again.\n Generate appropriate prompt to the end user to collect the information\n In the output return JSON must containing {"bot"://next prompt , "conv_status": "ongoing" or "ended","entities":[] } \n - Use the same format for tool responses.\n When returning the result return a json format \n Once all the entities details are captured  AND No function/tool calls are pending AND No follow-up actions are needed then only generate conv_status as 'ended'. When the flow is to be continued or aAny required entity is still pending collection or A tool/function needs to be called or User input requires clarification, generate conv_status as 'ongoing' \n If any enitity is already captured do not ask user about it again.\n Keep the prompts and messages voice friendly in ${language}.\n If there are mutiple entities, return entitites in format of json of object in key values pairs.\n If any one of the below scenarios are met , generate conv_status as 'ended': ${Exit_Scenarios} conversation history string ${Conversation_History_String}
-},
-]
+  model: "claude-3-5-sonnet-20241022",
+  max_tokens: 8192,
+  system:`${System_Context}.
+
+                    ${Required_Entities && Required_Entities.length ?
+                    `**Entities Required for the Use Case*: You are instructed to collect the from the List: ${Required_Entities}
+                     **Entity Collection Rules**:
+                        - Do not Prompt the user if the any of entities data is already captured or available in the context`: ''}
+                    **Instructions To be Followed**:: ${Business_Rules}
+                    **Tone and Language**::  
+                       - Maintain a professional, helpful, and polite tone.  
+                       - Support multiple languages if applicable to cater to diverse users.
+
+                    **Output Format**::
+                        - You Should Always STRICTLY respond in a **STRINGIFIED JSON format** to ensure compatibility with downstream systems.
+                        - The response JSON must include the following keys:  
+                          - "bot": A string containing either:
+                            - A prompt to collect missing required information
+                            - A final response
+                          - "entities": An array of objects containing collected entities in format:
+                            [
+                              {
+                                "key1": "value1",
+                                "key2": "value2"
+                              }
+                            ]
+                          - **conv_status**: String indicating conversation status:
+                            - "ongoing": When conversation requires more information
+                            - "ended": When one of these conditions is met:
+                              - All required entities are collected
+                              - All required functions/tools executed successfully
+                              - Final response provided to user
+                              - when one of the Scenarios Met from ${Exit_Scenarios}.`,
+  messages: []
 };
 
+// Check if List_of_Tools exists and has length
 if (Tools_Definition && Tools_Definition.length) {
-    payloadFields.tools = Tools_Definition.map(tool_info => {
-        return {
-            type: "function",
-            function: tool_info
-        };
+  payloadFields.tools = Tools_Definition.map(tool_info => {
+      return {
+          name: tool_info.name,
+          description: tool_info.description,
+          input_schema: tool_info.parameters
+      };
+  });
+}
+
+// Map conversation history to context chat history
+let contextChatHistory = [];
+if (Conversation_History && Conversation_History.length) {
+    contextChatHistory = Conversation_History.map(function(entry) {
+      return {
+          role: entry.role === "tool" ? "user" : entry.role,
+          content: (typeof entry.content === "string") ? entry.content : entry.content.map(content => {
+              if (content.type === "tool-call") {
+                  return  {
+                        "type": "tool_use",
+                        "id": content.toolCallId,
+                        "name": content.toolName,
+                        "input": content.args
+                    }
+              }
+              else {
+                    return {
+                        "type": "tool_result",
+                        "tool_use_id": content.toolCallId,
+                        "content": content.result
+                    }
+              }
+          })
+      };
     });
 }
-let contextChatHistory = [];
-Conversation_History.forEach(function (entry) {
-
-    if (entry.role === "tool") {
-        entry.content.forEach(function (content) {
-            contextChatHistory.push({
-                role: 'tool',
-                content: content.result,
-                tool_call_id: content.toolCallId
-            });
-        });
-    } else if (entry.role === "user") {
-        contextChatHistory.push({
-            role: entry.role,
-            content: entry.content
-        })
-    }
-    else {
-        if (typeof entry.content === "string") {
-            contextChatHistory.push({
-                role: entry.role === "bot" ? "assistant" : entry.role,
-                content: entry.content
-            })
-        }
-        else {
-
-            contextChatHistory.push({
-                role: entry.role,
-                tool_calls: entry.content.map(function (content) {
-                    return {
-                        "id": content.toolCallId,
-                        "type": "function",
-                        "function": {
-                            "arguments": JSON.stringify(content.args),
-                            "name": content.toolName
-                        }
-                    }
-                })
-            })
-        }
-    }
-});
-
-payloadFields.messages.push(...contextChatHistory);
-context.payloadFields = payloadFields;
-
 // Push context chat history into messages
+payloadFields.messages.push(...contextChatHistory);
 
-// Add user input to messages
-// payloadFields.messages.push({
-//     role: "user",
-//     content: ${User_Input}
-// });
+ Add user input to messages
+ let lastMessage;
+ if (contextChatHistory && contextChatHistory.length) {
+     lastMessage = contextChatHistory[contextChatHistory.length-1];
+ }
+
+ if (!lastMessage || (lastMessage && lastMessage.role !== "tool")) {
+     payloadFields.messages.push({
+       role: "user",
+      content: `${User_Input}`
+     });
+ }
 
 // Assign payloadFields to context
 context.payloadFields = payloadFields;
+
+
 
 ```
 

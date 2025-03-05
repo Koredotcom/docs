@@ -92,7 +92,7 @@ When a customer is on hold (self-initiated or agent-initiated):
 * Temporarily stops recording agent-side audio.
 * Automatically resumes recording when the hold state ends.
 
-[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
 
 #### Answering Machine Detection (AMD) for Inbound Calls
 
@@ -128,11 +128,6 @@ Key benefits
 * Enhance agent experience by maintaining essential call controls at all times.
 
 [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
-
-
-#### Automatic Call Disconnection for Negative Balance
-
-Inbound calls to users with a negative balance will be automatically disconnected, and outbound calls will not be placed. Users can track failed inbound calls in the Interactions report and the Insights to Log tab, while outbound call attempts will trigger a toaster notification. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
 
 #### Audit Log for SIP Trunk Configuration Changes
 

@@ -12,7 +12,7 @@ This document provides information on the feature updates and enhancements intro
 
 The Agent node now features a "Jump-to-Node" transition option, enabling the creation of sophisticated dialog workflows. This enhancement allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
 
-**Key Updates**:
+Key Updates:
 
 * Added "Jump-to-Node" transition option for tools within the Agent node.
 * Enables seamless navigation to specified target nodes following tool execution.
@@ -20,7 +20,7 @@ The Agent node now features a "Jump-to-Node" transition option, enabling the cre
 * Supports transitions to both orphan nodes and sub-dialogs.
 * Ensures full backward compatibility with existing tool configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#jump-to-a-node-transition){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#tools){:target="_blank"}
 
 ### Agent Transfer
 

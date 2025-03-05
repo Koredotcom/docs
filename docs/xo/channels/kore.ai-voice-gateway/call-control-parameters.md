@@ -29,7 +29,7 @@ When updating language settings or modifying Automatic Speech Recognition (ASR) 
 
 For example, if a user has already configured the STT provider and language in the call control parameters and wants to add a new language, the system appends the new parameter while retaining the existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
 
-This behavior applies to both **Node-Level** and **Channel-Level** Call Control Parameters.
+This behavior applies to Session-Level Call Control Parameters.
 
 **Example**
 
