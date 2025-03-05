@@ -59,13 +59,13 @@ Steps to add an environment variable:
 
 5. Click **Save**. The created variable is listed on the **Create environment variable** dialog box.
 
-### Edit or Delete an Environment Variable
 
-Steps to edit or delete a variable:
+
+### Edit or Delete an Environment Variable
 
 Click the three dots icon corresponding to the Name of the variable to edit the details of the variable or Delete to delete a variable.
 
-    <img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;">
 
 ## Undeploy the Tool
 
