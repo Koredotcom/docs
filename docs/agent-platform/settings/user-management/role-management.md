@@ -182,7 +182,7 @@ The following table summarizes the scope for different system roles supported fo
     <tr>
    <td><strong>App Viewer</strong>
    </td>
-   <td>Users have basic view-only access to essential features of Agentic Apps including configurations, tools, agents, guardrails, and simulation capabilities.
+   <td>Users have basic view-only access to essential features of Agentic Apps including configurations, tools, guardrails, and simulation capabilities.
    </td>
   </tr>
       <tr>
@@ -1294,7 +1294,7 @@ To add a custom role, follow the steps below:
                   * Assign roles to users
                   * Directory Sync
                   * Manage admin roles
-                  * Manage agent roles
+                  * Manage tool roles
                   * Remove users
                   * Manage user settings
             * Security and Control Settings

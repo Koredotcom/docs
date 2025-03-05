@@ -47,7 +47,7 @@ You can test your connection after you provide the details to verify the accurac
 
 Once a connection is created and the integration of S3 Bucket is successful you can use the files in the Flow builder canvas.
 
-**To use the files in the agents flow builder, follow these steps**:
+**To use the files in the tools flow builder, follow these steps**:
 
 1. Create an **Input variable** with type **Remote File**. 
 

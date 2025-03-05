@@ -321,7 +321,7 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Agent</strong>: The request was sent to the model from an agent. <a href="https://docs.kore.ai/gale/agents/overview/" target="_blank">Learn more</a>.</li>
+<li><strong>Agent</strong>: The request was sent to the model from a tool. <a href="https://docs.kore.ai/gale/agents/overview/" target="_blank">Learn more</a>.</li>
 
 <li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/gale/playground/using-prompt-studio/" target="_blank">Learn more</a>.</li>
 
@@ -447,5 +447,5 @@ Displays the following model run metadata to analyze the model’s performance.
 * [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for agents, set limits, and track usage trends.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 

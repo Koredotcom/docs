@@ -6,7 +6,7 @@ Agent Platform’s comprehensive **Audit Logs** on the **Settings** console prov
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias. 
 
-Each log entry includes the following to provide actionable insights on account and agent-level activities:
+Each log entry includes the following to provide actionable insights on account and tool-level activities:
 
 - Event name and category.
 - The user who performed the action.
@@ -319,7 +319,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Agent created
    </td>
-   <td>Tracks the creation of an agent in the account.
+   <td>Tracks the creation of a tool in the account.
    </td>
    <td align="center">
    -
@@ -328,7 +328,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Agent deleted
    </td>
-   <td>Tracks the deletion of an agent in the account.
+   <td>Tracks the deletion of a tool in the account.
    </td>
    <td>
 <ul>
@@ -585,7 +585,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Role Changed
    </td>
-   <td>Tracks the change of an agent role for an account user by a user.
+   <td>Tracks the change of a tool role for an account user by a user.
    </td>
    <td rowspan="3" align="center">-
    </td>
@@ -593,13 +593,13 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Invited users
    </td>
-   <td>Tracks the invitation of one or more users to the account at the agent level.
+   <td>Tracks the invitation of one or more users to the account at the tool level.
    </td>
   </tr>
   <tr>
    <td>Removed Users
    </td>
-   <td>Tracks the removal of one or more users from the account at the agent level.
+   <td>Tracks the removal of one or more users from the account at the tool level.
    </td>
   </tr>
   </table>
@@ -624,13 +624,13 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
   <tr>
    <td>Agent Deployed</td>
-   <td>Tracks the agent deployments in the account.</td>
+   <td>Tracks the tool deployments in the account.</td>
    <td rowspan="2" align="center">-</td>
   </tr>
   <tr>
    <td>Agent Undeployed
    </td>
-   <td>Tracks the agent undeployments in the account.
+   <td>Tracks the tool undeployments in the account.
    </td>
   </tr>
   <tr>
@@ -648,7 +648,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Created
    </td>
-   <td>Tracks the agent version creation.
+   <td>Tracks the tool version creation.
    </td>
    <td rowspan="8" colspan="2" align="center">-
    </td>
@@ -656,7 +656,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Deleted
    </td>
-   <td>Tracks the agent version deletion.
+   <td>Tracks the tool version deletion.
    </td>
   </tr>
   <tr>
@@ -664,13 +664,13 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p>
  
    </td>
-   <td>Tracks the agent API Key creation.
+   <td>Tracks the tool API Key creation.
    </td>
   </tr>
   <tr>
    <td>API Key deleted
    </td>
-   <td>Tracks the agent API Key deletion.
+   <td>Tracks the tool API Key deletion.
    </td>
   </tr>
   <tr>
@@ -678,7 +678,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p>
  
    </td>
-   <td>Tracks the agent description update done.
+   <td>Tracks the tool description update done.
    </td>
   </tr>
   <tr>
@@ -686,7 +686,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p>
  
    </td>
-   <td>Tracks the agent name update done.
+   <td>Tracks the tool name update done.
    </td>
   </tr>
   <tr>
@@ -694,7 +694,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p>
  
    </td>
-   <td>Tracks the agent export done.
+   <td>Tracks the tool export done.
    </td>
   </tr>
   <tr>
@@ -997,7 +997,7 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 * [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Agent Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to an agent's flow.
+* [Agent Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 
 
 
