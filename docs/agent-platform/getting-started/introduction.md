@@ -47,7 +47,7 @@ The Platform's capabilities are powered by its key components that work together
 
 * **No-Code Development**: Accelerate AI application development through structured no-code tooling. Business teams can actively participate alongside technical staff, accelerating time to market and fostering collaboration.
 
-* **Extension SDKs**: The platform offers SDKs all the key components like for Agents, Tools, RAG, and Traces, enabling teams to quickly build custom components across the entire AI workflow that are compatible with the platform's security and governance frameworks.
+* **Extension SDKs**: The platform offers SDKs all the key components like for Agentic Apps, Tools, RAG, and Traces, enabling teams to quickly build custom components across the entire AI workflow that are compatible with the platform's security and governance frameworks.
 
 * **Enterprise-Grade CI/CD**: Deploy and manage AI applications with industrial-strength processes supporting multiple environments and granular versioning.
 
