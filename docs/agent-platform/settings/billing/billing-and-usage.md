@@ -1,6 +1,6 @@
 # About Billing
 
-The Billing section helps you monitor and analyze your Agent Platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, and guardrails to make data-driven decisions about your resource utilization.
+The Billing section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across agents, models, and guardrails to make data-driven decisions about your resource utilization.
 
 # Accessing Usage Information
 
