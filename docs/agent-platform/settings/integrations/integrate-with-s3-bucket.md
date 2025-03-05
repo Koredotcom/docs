@@ -43,7 +43,7 @@ You can test your connection after you provide the details to verify the accurac
         If the connection fails a red icon is displayed corresponding to the name of the connection on the Connections list.
 
 
-## **How to use files from the connected S3 Buckets in the Agent Flow Builder**
+## **How to use files from the connected S3 Buckets in the Tool Flow Builder**
 
 Once a connection is created and the integration of S3 Bucket is successful you can use the files in the Flow builder canvas.
 
