@@ -76,7 +76,7 @@ Steps to add and configure the node:
 
     !!! note
 
-        Tools are deployed Agents whose details are provided to the model. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+        When you attach tools to the GEN AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
 
     1. **Add tools**: Click **Add Tools** to add a tool.
     2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
