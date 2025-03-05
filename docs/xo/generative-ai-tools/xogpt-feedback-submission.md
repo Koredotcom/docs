@@ -54,7 +54,7 @@ Specify the context in which the error occurs, such as ‘Address Update’, ‘
 
 
 
-* When recurring issues are identified, submit a support ticket with the relevant sample set, identified patterns, and other helpful information for further analysis. 
+* When recurring issues are identified, [submit a support ticket](https://support.kore.ai/hc/en-us/requests) with the relevant sample set, identified patterns, and other helpful information for further analysis. 
 * Use the following format:
 
 <table>
