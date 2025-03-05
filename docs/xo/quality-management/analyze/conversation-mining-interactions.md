@@ -1,13 +1,13 @@
 # Conversation Mining - Interactions
 
-This **Interactions** feature allows you to quickly view scored interactions or evaluation data. You can apply filters to highlight specific interactions or those with the greatest potential for improvement, and you can save these filters for auditing purposes. The interactions displayed on this page are limited to the user's assigned queues.
 
-This **Interactions** page simplifies the process of identifying key interactions, reducing the time spent on manual reviews, and improving decision-making and operational efficiency. You can personalize the page by adding metadata and columns, which enhances oversight quality.
+This **Interactions** feature allows you to quickly view scored interactions or evaluation data. You can apply filters to highlight specific interactions or those with the greatest potential for improvement, and you can save these filters for auditing purposes. The interactions displayed on this page are limited to the user's assigned queues.
 
 ## Accessing Interactions
 
 You can access **Interactions** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
+
 
 !!! Note
 
@@ -27,6 +27,7 @@ The **Interactions** dashboard includes the following elements:
 
 * **Actions**: Allows you to assign the interaction to a bookmark for later reference.  
 <img src="../conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
+
 
     !!! Note
 
@@ -50,7 +51,9 @@ When you hover over the listed **Moments**, the following metrics are displayed:
 * **Violations**: Speech-based violations that occurred.
 * **Omissions**: Metrics not adhered to; including playbook steps, dialog tasks, and by question metrics.
 
+
 Clicking on an interaction opens the corresponding AI-Assisted Manual Audit page, where you can view the conversation history and the recording. [Learn more](../ai-assisted-manual-audit.md){:target=”_blank”}.   
+
 <img src="../conversation-mining/images/conversation-mining-interaction-filters.png" alt="Interactions Filters Audit Page" title="Interactions Filters Audit Page" style="border: 1px solid gray; zoom:80%;">
 
 Auditors can check the following near-miss scenarios by reviewing metrics on the audit screen:
@@ -68,6 +71,7 @@ Auditors can check the following near-miss scenarios by reviewing metrics on the
 ## Columns
 
 Allows you to filter the following default fields:
+
 
 * **Supervisor Auditor Score**: This shows the Supervisor Audited score if the interaction has already been audited/manually evaluated.
 
@@ -266,4 +270,4 @@ Once you Save Filter, you will get the following filters options to:
 
 * **Delete Filter**
 
-    Allows you to delete the saved filter.  
+    Allows you to delete the saved filter.

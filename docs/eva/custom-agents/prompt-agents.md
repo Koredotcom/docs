@@ -21,7 +21,7 @@ You can create a new agent or import an existing one.
 
 -   [Create a new prompt agent](#create-a-new-prompt-agent)
 
-# Import existing Prompt Agent
+## Import existing Prompt Agent
 
 To import an existing Prompt Agent:
 
