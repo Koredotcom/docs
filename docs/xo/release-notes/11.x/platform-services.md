@@ -40,6 +40,8 @@ Backward compatibility:
 
 * The feature is fully backward-compatible with existing voice implementations.
 
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md#connections-properties)
+
 ### Voice Gateway (v0.9.3-8)
 
 #### Spanish Language Support for ElevenLabs Text-to-Speech
