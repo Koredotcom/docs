@@ -57,9 +57,9 @@ These functions can be used in the Channel Override template inside Java script 
 
 **Use Cases**:
 
-(a) If you need to forcibly hang up the call from the bot during the flow or call.
+1. If you need to forcibly hang up the call from the bot during the flow or call.
 
-(b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
+2. This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
 
    **Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
 
@@ -209,7 +209,7 @@ Default:True
 **Example**:
 
 ```
-1) Using all the options
+1 Using all the options
 
 var message = "Transferring Call to xxxx number";
 var ReferTo = "+91xxxxxxxxxx";   // or sipUrl 
@@ -220,12 +220,12 @@ var headers: {
 
 print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 
-2) without Message and headers 
+2 without Message and headers 
 
 var message = "";
 print(voiceUtils.refer(message,ReferTo));
 
-3) With QueueCommand
+3 With QueueCommand
   var message = "" , headers = {}, referTo = "sip:test@5060"
 print(voiceUtils.refer(message,ReferTo,headers,false));
 ```
@@ -510,11 +510,11 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
 
 **Use Cases**: 
 
-(a) When you need to configure voicemail settings and notifications for customer calls. 
+1. When you need to configure voicemail settings and notifications for customer calls. 
 
-(b) When you need to receive transcriptions of voicemail messages. 
+2. When you need to receive transcriptions of voicemail messages. 
 
-(c) When you need to collect and process customer voicemail content with metadata.
+3. When you need to collect and process customer voicemail content with metadata.
 
 **Syntax**: `print(voiceUtils.voicemail(message, beepRequired, transcriptionRequired, notifyUrl, metaInfo))`
 
