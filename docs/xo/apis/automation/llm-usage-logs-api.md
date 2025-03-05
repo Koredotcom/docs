@@ -1,14 +1,7 @@
 
-
-
 # LLM and Generative AI Usage Logs API
 
 	
-
-		
-
-			
-
 This API lets you get the LLM & Generative AI Usage Logs for both Co-Pilot and Dynamic Conversation features.
 
 
@@ -96,7 +89,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
 
 ```json
 curl --location 'https://bots.kore.ai/api/1.1/public/bot/st-f3195ec3-72aa-5317-92a2-1dcb78ced6d3/getLLMUsageLogs' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy03ZWMxNmFjZS03ZGNmLTU3MjQtYjM5NS1hYTA4YmRmYTAwMzMifQ.n_Es9ZBsiCYzpzsfN4p4I1SlHK05gewJFyqAIngr4Qg' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data '{
     "dateFrom": "2024-03-07",
