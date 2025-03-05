@@ -1,8 +1,8 @@
-# Agents Analytics Dashboard
+# Tools Analytics Dashboard
 
 ## Overview
 
-The **Agents Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
+The **Tools Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
 
 It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../agents/agents-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
 
@@ -12,7 +12,7 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 * **Global timeline Filters** provide a comprehensive view of performance across all tools in your account. [Learn more](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
-* **Agent Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected tool and version. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
+* **Tool Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected tool and version. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
 
 * An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/agent-analytics-dashboard.md/#expanded-widget-view){:target="_blank"}.
 * Hovering over a data point on the **dynamic and interactive line graph** reveals the real-time information for that specific period, providing a focused view of tool performance.
@@ -31,20 +31,20 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 * Compare tool performance over time by analyzing successful versus failed runs, and identifying failure patterns.
 * Prioritize node execution based on rate limits subscription for your account.
 
-## Navigate to the Agents Analytics Dashboard
+## Navigate to the Tools Analytics Dashboard
 
-To access the **Agents Analytics** dashboard, follow the steps below:
+To access the **Tools Analytics** dashboard, follow the steps below:
 
 1. [Navigate](../../settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
-3. Click the **Agents Analytics** tab on the right-hand side screen.
-<img src="../images/agents-analytics-tab.png" alt="agent analytics tab" title="agent analytics tab" style="border: 1px solid gray; zoom:75%;">
+3. Click the **Tools Analytics** tab on the right-hand side screen.
+<img src="../images/agents-analytics-tab.png" alt="tools analytics tab" title="tools analytics tab" style="border: 1px solid gray; zoom:75%;">
 
-The system loads the **Agents Analytics** dashboard with data for the last 7 days, which is the **default time range selection**. You can select the required period to generate data.
+The system loads the **Tools Analytics** dashboard with data for the last 7 days, which is the **default time range selection**. You can select the required period to generate data.
 
 ## Key Performance Metrics
 
-The **Agents Analytics** Dashboard supports the following account and tool-specific metrics to provide actionable insights.
+The **Tools Analytics** Dashboard supports the following account and tool-specific metrics to provide actionable insights.
 
 ### Account-Level Metrics
 
@@ -52,11 +52,11 @@ The following metrics summarize the counts for tools, runs, and node executions 
 
 * **Number of tools**: The total number of tools deployed within your account during the selected period. This includes tools and all their versions managed by all the users of your account. 
 
-    To view data for a specific tool and its version deployed in your account, use the **Agent Performance** filters. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
+    To view data for a specific tool and its version deployed in your account, use the **ToolsPerformance** filters. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
 
 * **Number of runs**: The total count of success and failure tool flow runs or node executions completed by all deployed tools in your account during the specified period. 
 
-For detailed statistics on each status for the selected date/date range, see the **Agent Runs** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-runs){:target="_blank"}.
+For detailed statistics on each status for the selected date/date range, see the **Tool Runs** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-runs){:target="_blank"}.
 
 * **Number of times nodes are executed**: The event-driven execution counts for different node types during a tool run. 
 
@@ -68,17 +68,17 @@ For detailed statistics on the total events and the runs executed by each node, 
 
 <img src="../images/info-icon.png" alt="info icon" title="info icon" style="border: 1px solid gray; zoom:75%;">
 
-To generate and view the required tool analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+To generate and view the required tools analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
-### Agent-specific Metrics
+### Tool-specific Metrics
 
 The following metrics help analyze the performance of the selected tool and version in your account during the selected period:
 
-* **Agent Runs**: Depicts the success and failure trends of the tool flow runs the selected tool version executes.
-* **Avg. Agent Response Time**: Displays the selected tool version’s ART to the requests received during the selected period.
+* **Tool Runs**: Depicts the success and failure trends of the tool flow runs the selected tool version executes.
+* **Avg. Tool Response Time**: Displays the selected tool version’s ART to the requests received during the selected period.
 * **Nodes Execution**: Displays the event-based node execution graph for all the node types on a single day or across the selected date range. **Nodes are executed up to the rate limit threshold subscription for your account**.
 
-To view the required data, use the [Global Timeline Filters](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Agent Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}. 
+To view the required data, use the [Global Timeline Filters](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Tool Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}. 
 
 ## Global Timeline Filters
 
@@ -125,33 +125,33 @@ The other options you can select include:
 * **Last Year**: Displays data for the previous year from 1 January 2023 to 31 December 2023.
 <img src="../images/last-year.png" alt="last year" title="last year" style="border: 1px solid gray; zoom:75%;">
 
-## Agent Performance Filters
+## Tool Performance Filters
 
 The following widget-level filters apply exclusively to [tool-specific metrics](../analytics/agent-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. 
 
-* **Agent Name**: Select the deployed tool from the list to see the associated analytics data.
+* **Tool Name**: Select the deployed tool from the list to see the associated analytics data.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If two tools with the same name are deployed at different times, they appear in the list with their respective deployment timestamps.</p></div>
 
-<ul><li><b>Agent Version</b>: Choose the deployed tool’s version from the list. If your account contains multiple versions of the same tool, this feature provides targeted data for a specific version, such as testing or production.</li></ul>
+<ul><li><b>Tool Version</b>: Choose the deployed tool’s version from the list. If your account contains multiple versions of the same tool, this feature provides targeted data for a specific version, such as testing or production.</li></ul>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If no versions exist for a tool, the dropdown list is empty. By default, data for all tool versions is displayed unless a specific version is selected.</p></div>
 
-## Agent Performance Data Widgets
+## Tool Performance Data Widgets
 
-The **Agents Analytics** dashboard displays the widgets mentioned below to represent the [tool-specific performance metrics](../analytics/agent-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}. The graphs update automatically when a different tool version is selected.
+The **Tools Analytics** dashboard displays the widgets mentioned below to represent the [tool-specific performance metrics](../analytics/agent-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}. The graphs update automatically when a different tool version is selected.
 
 ### How it Works
 
 1. Select the required date/range in the [global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
-2. Select the **Agent Name** and (optional) **Agent Version**.
+2. Select the **Tool Name** and (optional) **Tool Version**.
 3. The widgets display an hourly graph for 24 hours on a single day and a daily graph for the respective metrics for a date range.
 
-### Agent Runs
+### Tool Runs
 
 This widget features two dynamic graphs illustrating successful and failed requests executed by the tool during the selected period in the [global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
 
@@ -164,7 +164,7 @@ This widget features two dynamic graphs illustrating successful and failed reque
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p><ul><li>The widget shows data only for the duration that the tool was deployed in your account. For instance, if Agent A was active for 4 days last week and undeployed for the next 3 days, selecting a 7-day view will display data solely for those 4 active days and the associated request times.</li>
+<p><ul><li>The widget shows data only for the duration that the tool was deployed in your account. For instance, if Tool A was active for 4 days last week and undeployed for the next 3 days, selecting a 7-day view will display data solely for those 4 active days and the associated request times.</li>
 <li>The graph will show curves only when requests are processed by the tool. If no requests are processed during an hour or day, no data points will appear.</li></ul></p></div>
 
 **Best Practices**
@@ -176,7 +176,7 @@ You can do the following to analyze tool performance:
 * **Real-Time Monitoring**: The widget allows you to monitor tool performance in real-time, enabling quick responses to sudden spikes in failures or performance drops.
 * **Comparative Assessment**: Evaluate the performance of different tool versions to determine the most effective option.
 
-### Avg. Agent Response Time
+### Avg. Tool Response Time
 
 This widget features a line graph illustrating the ART taken by the tool version to execute each request during the selected period in the [global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
 
@@ -249,12 +249,12 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 
 ## Expanded Widget View
 
-You can expand any widget on the **Agents Analytics Dashboard** for a drill down view of analytics trends. Each expanded view enables you to apply widget-level filters, offering a focused analysis of tool performance for that widget.
+You can expand any widget on the **Tools Analytics Dashboard** for a drill down view of analytics trends. Each expanded view enables you to apply widget-level filters, offering a focused analysis of tool performance for that widget.
 
 The widget-level filters include the following:
 
 * [Global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
-* [Agent Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}
+* [Tool Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -267,11 +267,11 @@ To expand a widget, hover over the top-right corner of the widget, and click the
 
 The expanded views of all the widgets are shown below:
 
-**Agent Runs**
+**Tool Runs**
 
-<img src="../images/agent-runs-expanded-view.png" alt="agent runs expanded view" title="agent runs expanded view" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/agent-runs-expanded-view.png" alt="tool runs expanded view" title="tool runs expanded view" style="border: 1px solid gray; zoom:75%;">
 
-**Avg. Agent Response Time**
+**Avg. Tool Response Time**
 
 <img src="../images/avg-art-expanded-view.png" alt="average art expanded view" title="average art expanded view" style="border: 1px solid gray; zoom:75%;">
 
@@ -279,12 +279,12 @@ The expanded views of all the widgets are shown below:
 
 <img src="../images/nodes-execution-expanded-view.png" alt="nodes execution expanded view" title="nodes execution expanded view" style="border: 1px solid gray; zoom:75%;">
 
-The **Agents Analysis Dashboard** offers actionable and customized insights on the tool performance metrics for various features in your account. 
+The **Tools Analysis Dashboard** offers actionable and customized insights on the tool performance metrics for various features in your account. 
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
-* [Agent Flow Change Logs](../../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
+* [Tool Flow Change Logs](../../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
