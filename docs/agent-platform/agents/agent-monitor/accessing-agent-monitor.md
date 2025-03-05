@@ -10,7 +10,7 @@ Steps to access the tool monitor page:
 
     <img src="../images/agent_monitor_new.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
 
-4. In the left navigation pane, click **Tool monitor**. The Agent monitor page is displayed.  
+4. In the left navigation pane, click **Tool monitor**. The Tool monitor page is displayed.  
 <img src="../images/agent_monitor_dashboard.png" alt="Agent monitor dashboard" title="Agent monitor dashboard" style="border: 1px solid gray; zoom:80%;">
 
 5. Click one of the following tabs to see the data for the deployed tools:

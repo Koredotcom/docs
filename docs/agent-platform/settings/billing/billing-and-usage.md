@@ -20,7 +20,7 @@ The Usage page displays the following tabs for billing and usage:
     * **Runs**: Shows current tool run usage against your total allocation.
     * **Model Credits**: Displays consumed credits versus total available credits.
     * **Usage Trend**: Visual representation of tool runs and model credit consumption over time.
-* **Agents**: Shows all tool activities and their operational status.
+* **Tools**: Shows all tool activities and their operational status.
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
 
@@ -41,28 +41,28 @@ The Overview tab summarizes expenses and usage patterns across your tools and mo
 
 * **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, in the below image, 301 out of 10,000 available tool runs have been utilized, indicating that 3.01% of the total capacity has been consumed.
 * **Model Credits**: This field displays the total model credit usage, showing the proportion of model credits used across all models compared to the total available credits. It also includes the credits used to host guardrails. For example, in the image below, 12,899 credits have been used out of a total allocation of 13,325 credits, indicating that 96.80% of your available model credits have been utilized.
-* **Usage trend**: It visually represents **Agent runs** and **Model credits** consumption over time. Use the Calendar feature to see the changes over time, for example, daily, weekly, monthly, or any custom dates.
+* **Usage trend**: It visually represents **Tool runs** and **Model credits** consumption over time. Use the Calendar feature to see the changes over time, for example, daily, weekly, monthly, or any custom dates.
 
  <img src="../images/overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:80%;">
 
  <img src="../images/usagetrend.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
 
 
-# Agents Usage
+# Tools Usage
 
-The Agents tab displays a comprehensive list of tools associated with the account. It includes only those tools that have been deployed at least once; it does not include ‘In development’ tools.  
+The Tools tab displays a comprehensive list of tools associated with the account. It includes only those tools that have been deployed at least once; it does not include ‘In development’ tools.  
 
 The following usage information is displayed on the tab:
 
-* **Total Agents**: The total number of tools in the account.
+* **Total Tools**: The total number of tools in the account.
 * **Total runs**: The total number of runs by all the tools.
-* **Agent name**: The name assigned to the tool.
+* **Tool name**: The name assigned to the tool.
 * **Runs**: The number of times the tool was inferred. 
 * **Owner Name**: The name of the user who created the tool.
 * **Last active on**: The date when the tool was last active.
 * **Status**: The tool's status - Deployed, Undeployed, or Deleted.
 
- <img src="../images/agents.png" alt="Billing Agents tab" title="Billing Agents tab" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/agents.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
 
 
 # Models Usage

@@ -24,7 +24,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
-<li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
+<li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Tool ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
 ## Account-Level Audit Logs
 
@@ -301,11 +301,11 @@ Additionally, you can set **custom filters** based on a specific category, event
 
   <table>
   <tr>
-     <td colspan="3" align="center"><strong>Category</strong>: Agents
+     <td colspan="3" align="center"><strong>Category</strong>: Tools
    </td>
    </tr>
   <tr>
-   <td colspan="3"><b>Metadata</b>: <strong><i>Agent ID</i></strong> and <strong><i>Agent Name</i></strong> are displayed for all the category events below.
+   <td colspan="3"><b>Metadata</b>: <strong><i>Tool ID</i></strong> and <strong><i>Tool Name</i></strong> are displayed for all the category events below.
    </td>
   </tr>
      <tr>
@@ -317,7 +317,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent created
+   <td>Tool created
    </td>
    <td>Tracks the creation of a tool in the account.
    </td>
@@ -326,7 +326,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent deleted
+   <td>Tool deleted
    </td>
    <td>Tracks the deletion of a tool in the account.
    </td>
@@ -563,11 +563,11 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
 </table>
 
-## Agent-Level Audit Logs
+## Tool-Level Audit Logs
 
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
-<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Agent ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
+<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Tool ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
 
 <table>
   <tr>
@@ -605,11 +605,11 @@ Additionally, you can set **custom filters** based on a specific category, event
   </table>
   <table>
   <tr>
-   <td colspan="4" align="center"><strong>Category</strong>: Agent Management
+   <td colspan="4" align="center"><strong>Category</strong>: Tool Management
    </td>
   </tr>
   <tr>
-   <td colspan="4" ><strong>Agent version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
+   <td colspan="4" ><strong>Tool version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
 <p style="text-align: center">
 <strong> </strong>
    </td>
@@ -623,12 +623,12 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent Deployed</td>
+   <td>Tool Deployed</td>
    <td>Tracks the tool deployments in the account.</td>
    <td rowspan="2" align="center">-</td>
   </tr>
   <tr>
-   <td>Agent Undeployed
+   <td>Tool Undeployed
    </td>
    <td>Tracks the tool undeployments in the account.
    </td>
@@ -674,7 +674,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent description updated
+   <td>Tool description updated
 <p>
  
    </td>
@@ -682,7 +682,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent name updated
+   <td>Tool name updated
 <p>
  
    </td>
@@ -690,7 +690,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Agent exported
+   <td>Tool exported
 <p>
  
    </td>
@@ -997,7 +997,7 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 * [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Agent Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Tool Flow Change Logs](../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 
 
 

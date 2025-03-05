@@ -7,7 +7,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
 6. [Security and Control: Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
 
 ## Levels of Users Management 
@@ -16,7 +16,7 @@ The **Settings** Console provides administrators comprehensive control and visib
 
 * **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
-* **Agent level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
+* **Tool level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
 
 This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
@@ -78,7 +78,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review Agent Performance Metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
+- Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 
@@ -187,7 +187,7 @@ The following modules and features are supported on the **Settings** Console:
    <li>Roles</li>
    <li>Integrations</li>
    <li>Models</li>
-   <li>Agents</li>
+   <li>Tools</li>
    <li>Users Management</li>
    <li>Prompts</li>
    <li>Dataset</li>
@@ -196,7 +196,7 @@ The following modules and features are supported on the **Settings** Console:
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
     <tr>
-   <td><b>Monitoring - Agent Analytics Dashboard</b></td>
+   <td><b>Monitoring - Tools Analytics Dashboard</b></td>
    <td>Get actionable insights into successful and failed tool runs, average tool response time, and drill down into nodes execution data to enable informed decisions on tool deployments, optimize their performance, and accelerate system efficiency.</td>
    <td><ul><li>Select a single date or date range to view periodic tool performance metrics.</li>
    <li>Make performance comparison between different tool versions.</li>
