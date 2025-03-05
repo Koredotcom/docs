@@ -17,4 +17,5 @@ Steps to deploy a scanner:
     !!! note
 
         If you no longer need a scanner, click the **Undeploy** button next to the scanner to remove it from the platform.
+        
 
