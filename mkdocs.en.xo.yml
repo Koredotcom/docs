@@ -318,6 +318,8 @@ nav:
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - BitBucket: searchai/content-sources/connectors/bitbucket.md
                 - Box: searchai/content-sources/connectors/box.md
+                - ClickUp: searchai/content-sources/connectors/clickup.md
+                - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
@@ -356,6 +358,7 @@ nav:
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
                 - Zulip: searchai/content-sources/connectors/zulip.md
+                - Zoom: searchai/content-sources/connectors/zoom.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md

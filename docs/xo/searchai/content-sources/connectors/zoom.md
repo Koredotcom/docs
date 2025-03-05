@@ -1,39 +1,3 @@
-<!-----
-
-
-
-Conversion time: 0.318 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β44
-* Wed Feb 26 2025 18:49:55 GMT-0800 (PST)
-* Source doc: Zoom Connector
-* This is a partial selection. Check to make sure intra-doc links work.
-* Tables are currently converted to HTML tables.
-
-WARNING:
-You have 4 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 0.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p>
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 # Zoom Connector
 
 Zoom is a versatile communication platform widely utilized for video conferencing, online meetings, webinars, and team collaboration. The integration of Search AI facilitates the ingestion of meeting content from the Zoom application, enabling users to search and access relevant data easily. This feature enhances productivity by allowing teams to quickly locate important discussions, decisions, and action items from past meetings.
@@ -113,6 +77,9 @@ Note that the summary is generated only if the Meeting Summary with AI Companion
 
 ## RACL Support in ZOOM
 
-In Zoom, all **meeting invitees** can access the **meeting summary and other metadata**. Hence, the `sys_racl` field includes both the **host's email address** and the **email addresses of all invitees**.
+In Zoom, all **meeting invitees** can access the **meeting summary and other metadata**. Hence, the `sys_racl` field includes the following:
 
-When a meeting is conducted using a **personal meeting link or by directly sharing the meeting link with the attendees**, the `sys_racl` field is set to `*`, which allows for broader access.
+* Host's email address
+* email addresses of all invitees
+
+When a meeting is conducted using a **personal meeting link** or by directly sharing the meeting link with the attendees, the `sys_racl` field is set to `*`, which allows broader access.
