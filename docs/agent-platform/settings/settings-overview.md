@@ -7,16 +7,16 @@ Agent Platform’s **Settings** console is a centralized management interface th
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
 6. [Security and Control: Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
 
 ## Levels of Users Management 
 
 The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.
 
-* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including agent creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
+* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
-* **Agent level**: User management within the Agent Platform is focused on agent management, emphasizing individual agent deployments and configurations. Each agent's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting agents, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
+* **Tool level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
 
 This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
@@ -42,10 +42,10 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Roles and Permissions**
 
-* View system-generated roles for <b>account</b> and <b>agent</b> role types.
+* View system-generated roles for <b>account</b> and <b>tool</b> role types.
 * Duplicate the roles and make custom changes.
 * View the enabled/disabled access controls for various modules and permissions for system roles.
-* Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
+* Add new custom roles for tool and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
 
 [Learn more](../settings/user-management/role-management.md){:target="_blank"} about this feature.
 
@@ -73,12 +73,12 @@ Integrate connections for [Weights & Biases](../settings/integrations/integrate-
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all agents. [Learn more](../agents/guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../agents/guardrails/manage-guardrails.md){:target="_blank"}.
 
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review Agent Performance Metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
+- Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 
@@ -112,7 +112,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Users Management</b></td>
-   <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, agents, and models.</p>
+   <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, tools, and models.</p>
 <p>Manage user settings for AD sync, profile visibility and configuration, and email notifications to users.</p></td>
 <td><p><strong>Users</strong></p>
 <ul>
@@ -129,14 +129,14 @@ The following modules and features are supported on the **Settings** Console:
 <li>Custom roles</li>
 </li>
 <li>Select one or multiple users to change access permissions or delete a user.</li>
-<li>Click a user entry to manage their profile, models, and agents, including modifying and deleting roles within each model or agent. A model or agent can be added for a specific role.</li></ul></ul>
+<li>Click a user entry to manage their profile, models, and tools, including modifying and deleting roles within each model or tool. A model or tool can be added for a specific role.</li></ul></ul>
 <p><strong>Role Management</strong></p>
 <ul>
 <li>A summarized view of the total roles available in the system and the number of system and custom roles are displayed.</li>
 <li>View, assign, and reassign system/ default or custom roles. <strong>You cannot edit or delete system roles.</strong></li>
 <li>Create a copy or duplicate of a system role as a custom role and manage its permissions and access levels.</li>
 <li>Add, delete, edit permissions’ access for, and duplicate custom roles.</li>
-<li>For agent and account role types, assign/unassign permissions and set access levels for various module aspects like agents, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
+<li>For tool and account role types, assign/unassign permissions and set access levels for various module aspects like tools, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
 </ul>
 
 <p><strong>Settings</strong></p>
@@ -164,7 +164,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Manage Guardrails</b></td>
-   <td>Deploy models to make them available for anomaly scanners in all the agents. 
+   <td>Deploy models to make them available for anomaly scanners in all the tools. 
    </td>
    <td>
 <ul>
@@ -173,7 +173,7 @@ The following modules and features are supported on the **Settings** Console:
 <li><strong>Ban Topics</strong>: Restricts sensitive and controversial topics like religion or corporate politics in prompts to maintain content moderation, enforce community guidelines, and ensure compliance with organizational policies.</li>
 <li><strong>Prompt Injection</strong>: Guards against attacks where malicious input is crafted to influence the behavior of a language model, causing it to generate harmful, misleading, or unintended responses using input sanitization, context control, role-based access, instruction clarity, and more.</li>
 <li><strong>Toxicity</strong>: Set up mechanisms to detect and manage toxic content, such as harmful, offensive, or abusive language. Implement warnings, content removal, or user-banning actions to prevent the dissemination of harmful content and maintain a safe and positive user environment.</li>
-<li><strong>Bias Detection</strong>: Ensure fairness and inclusivity by AI agents towards users through output evaluation for systematic prejudices or pre-defined biases and behavior and automatic neutralization of responses.</li>
+<li><strong>Bias Detection</strong>: Ensure fairness and inclusivity by AI tools towards users through output evaluation for systematic prejudices or pre-defined biases and behavior and automatic neutralization of responses.</li>
 <li><strong>Relevance</strong>: Ensure that prompt outputs are accurate to the input context, meet the user’s intent, and satisfy their query or need. The scanner provides a confidence score to indicate the degree of context relevance.
 </li>
 </ul>
@@ -181,13 +181,13 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Monitoring - Audit Logs</b></td>
-   <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and agent-level event logs.</td>
+   <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and tool-level event logs.</td>
    <td><ul><li>Select the date range and view periodic, event-based logs related to the following categories:</li>
    <ul><li>Login/Logout</li>
    <li>Roles</li>
    <li>Integrations</li>
    <li>Models</li>
-   <li>Agents</li>
+   <li>Tools</li>
    <li>Users Management</li>
    <li>Prompts</li>
    <li>Dataset</li>
@@ -196,14 +196,14 @@ The following modules and features are supported on the **Settings** Console:
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
     <tr>
-   <td><b>Monitoring - Agent Analytics Dashboard</b></td>
-   <td>Get actionable insights into successful and failed agent runs, average agent response time, and drill down into nodes execution data to enable informed decisions on agent deployments, optimize their performance, and accelerate system efficiency.</td>
-   <td><ul><li>Select a single date or date range to view periodic agent performance metrics.</li>
-   <li>Make performance comparison between different agent versions.</li>
+   <td><b>Monitoring - Tools Analytics Dashboard</b></td>
+   <td>Get actionable insights into successful and failed tool runs, average tool response time, and drill down into nodes execution data to enable informed decisions on tool deployments, optimize their performance, and accelerate system efficiency.</td>
+   <td><ul><li>Select a single date or date range to view periodic tool performance metrics.</li>
+   <li>Make performance comparison between different tool versions.</li>
    <li>Keep track of failed execution runs and investigate the reason for the same.</li>
-   <li>Monitor the average response times of agents for various requests.</li>
-   <li>Monitor node executions across different types and ensure agent flow runs stay within your account's rate limits.</li>
-   <li>Optimize agent performance with real-time metrics.</li></ul></td>
+   <li>Monitor the average response times of tools for various requests.</li>
+   <li>Monitor node executions across different types and ensure tool flow runs stay within your account's rate limits.</li>
+   <li>Optimize tool performance with real-time metrics.</li></ul></td>
   </tr>
       <tr>
    <td><b>Monitoring - Model Analytics Dashboard</b></td>

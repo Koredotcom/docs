@@ -24,7 +24,7 @@ Steps to enable and configure the asynchronous mode:
         3. Set the Asynchronous mode timeout duration: 
             * **Set timeout**: The allowed timeout range is 60 seconds to 600 seconds (10 minutes). The default is 180 Seconds (3 minutes). 
             * **No timeout**: This allows the tool to process the request without a time limit.  
-            <img src="../images/async-mode-configuration.png" alt="Async Mode Configuration" title="Async Mode Configuration" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/async-mode-configuration.png" alt="Async Mode Configuration" title="Async Mode Configuration" style="border: 1px solid gray; zoom:70%;">
         4. Click **Save**.
 
     !!! note 
@@ -59,13 +59,13 @@ Steps to add an environment variable:
 
 5. Click **Save**. The created variable is listed on the **Create environment variable** dialog box.
 
+
+
 ### Edit or Delete an Environment Variable
 
-Steps to edit or delete a variable:
+Click the three dots icon corresponding to the Name of the variable to edit the details of the variable or Delete to delete a variable.
 
-* Click the three dots icon corresponding to the Name of the variable to edit the details of the variable or Delete to delete a variable.
-
-    <img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;">
 
 ## Undeploy the Tool
 

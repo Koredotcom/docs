@@ -8,9 +8,10 @@ The Tool Monitor capabilities are shown on the following tabs:
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
-## All Runs
+<img src="../images/new_agent_monitor.png" alt="All runs and Model runs tabs" title="All runs and Model runs tabs" style="border: 1px solid gray; zoom:80%;">
 
-<img src="../images/agent_monitor_allruns_new.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
+
+## All Runs
 
 The All runs tab provides the following information for each tool run:
 
@@ -41,8 +42,6 @@ These metrics are dependent on the selected date range, filters, and search crit
 Each GenAI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three GenAI nodes are used in a tool, three separate requests for each of the three GenAI nodes are displayed.
 
 If your tool currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.
-
-<img src="../images/agent_monitor_model_runs.png" alt="Model runs" title="Model runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The Model runs tab provides the following information for each Gen AI node call:
 
@@ -136,11 +135,7 @@ Steps to use the time-based search:
 
 1. Click the calendar button in the top right corner of the Tool monitor page.
 
-    <img src="../images/agent_monitor_calendar_selection.png" alt="calendar" title="Calendar" style="border: 1px solid gray; zoom:80%;">
-
 2. Select a predefined time range or set custom dates.
-
-    <img src="../images/agent_monitor_calendar_selection_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply** to update the results.
 
@@ -155,13 +150,7 @@ Steps to use the filters:
 
 1. Click the Filter icon.
 2. Click **+ Add filter**.
-
-    <img src="../images/agent_monitor_filtericon_new.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">
-
 3. Select options for Column, Operator, and Value.
-
-    <img src="../images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;">
-
 4. Click **Apply**.
 
 ## Tool Run Errors
@@ -170,7 +159,6 @@ In the **All runs** section, any error that occurs via the endpoint during an to
 
 To view detailed error information, click on the corresponding tool run entry in the **Tool Monitor** dashboard.
 
-<img src="../images/agent-run-errors.png" alt="agent run errors" title="agent run errors" style="border: 1px solid gray; zoom:80%;">
 
 An error message includes the following information:
 

@@ -1,67 +1,58 @@
 # Role Management 
 
-GALE’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. 
+Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
 
-Thus, the roles can be classified based on role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+Thus, the roles can be classified based on the role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
 
-When you [invite](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}/add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
+When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
 **Key Points**
 
-1. **Master Admin Role**
+1. **App Owner**: When you create an Agentic App, you automatically become the app owner and are assigned this role which provides administrative access on all features and configurations across the Platform.
+
+2. **Master Admin Role**
 
     * When you [create an account](../../getting-started/sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
     * As the Master Admin, you have the highest level of access, allowing you to create, modify, and delete permissions for custom roles and manage users in your account.
 
-2. **Assigning Roles**
+3. **Assigning Roles**
 
     * Once a user joins your account, assign them a role based on their responsibilities and job functions. By default, the **Viewer** role is assigned to new users joining your account, providing the minimum level of account access required. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}. This role can be changed later in the **Settings** console. [Learn more](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
-3. **Default and Custom Roles**
+4. **Default and Custom Roles**
 
     * Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. [Learn more](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. 
 
-    GALE supports the following roles in the **Settings** console:
+    Agent Platform supports the following roles in the **Settings** console:
 
     * **Default Role**: A system-generated role with internally defined set of permissions and access levels. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
     * **Custom Role**: Allows you to customize permissions and access levels for your users. [Learn more](./role-management.md/#custom-roles){:target="_blank"}.
 
-4. **Role Management Benefits**
+5. **Role Management Benefits**
 
     * Enables better control over user actions in your account.
     * Facilitates updating roles when job functions or responsibilities change.
     * Ensures prompt revocation of access when a user leaves the organization or no longer requires access.
 
-## Account and Agent Level Features
+## Roles and Modules
 
-The features for which permissions and access levels are defined for a role include the following:
+The modules for which permissions and access levels can be defined for a role include the following:
 
-**Account Level**
-
-* Agents
+* Agentic Apps
+* Tools
 * Models
 * Prompts
+* Data
+* Evaluations/Evaluators
 * Settings including Integrations, User Management, Security and Control, Monitoring, Guardrails, and Billing.
 
-**Agent Level**
-
-* Create an agent version
-* Share/unshare agents/assign agent roles
-* Delete agent
-* Export Agent
-* Monitor Trace of an Agent
-* Edit Agent Workflow
-* Manage Agent Configuration
-* Manage deployment - deploy/undeploy
-* Manage guardrails configuration
-* Create/Delete an API key
-* Monitor Audit logs
+**Tool Level**
 
 To learn more about permissions and access levels around features, click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}.
 
-Access to account or agent-level permissions can either be disabled (no access) or enabled with **Full**, **Custom**, or **View** privileges. [Learn more](./role-management.md/#access-levels){:target="_blank"}.
+Access to module-level permissions can either be disabled (no access) or enabled with **Full**, **Custom**, or **View** privileges. [Learn more](./role-management.md/#access-levels){:target="_blank"}.
 
 ### Roles
 
@@ -69,23 +60,25 @@ A Role groups users according to their job functions, streamlining permission ma
 
 *Example*
 
-A **Master Admin** has complete control over the account's core functionalities such as models, agents, integrations, users, etc.
+A **Master Admin** has complete control over the account's core functionalities such as models, tools, integrations, users, etc.
 
-An **Agent Admin** has complete control over the core functionalities of agents, such as deployment, configuration, sharing, deletion, monitoring, etc.
+A **Tool Admin** has complete control over the core functionalities of tools, such as deployment, configuration, sharing, deletion, monitoring, etc.
 
-GALE supports the following roles:
+An **App Admin** has full access to almost all the core Platform features relating to Agentic Apps.
+
+Agent Platform supports the following roles:
 
 #### System-defined Roles
 
-Also called **Default** roles, these are inbuilt n the system at the account and agent levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and **cannot be modified** in the application. Also, system roles cannot be deleted.
+Also called **Default** roles, these are inbuilt in the system at the agentic app, account and tool levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and **cannot be modified** in the application. Also, system roles cannot be deleted.
 
-To modify a user's scope and permissions, you must add a [custom](./role-management.md/#custom-roles){:target="_blank"} account/agent-type role. [Learn more](./role-management.md/#add-a-role){:target="_blank"}.
+To modify a user's scope and permissions, you must add a [custom](./role-management.md/#custom-roles){:target="_blank"} agentic app/account/tool-type role. [Learn more](./role-management.md/#add-a-role){:target="_blank"}.
 
 System-defined, system-generated, or default roles provide baseline control over the core features and functionalities and streamline the user management process for administrators. 
 
-For example, The **Admin** role typically has full access to all agent/account features and functionalities within the system. Administrators have the highest privileges and can manage other users, configure settings, and perform administrative tasks.
+For example, The **Admin** role typically has full access to all tool/account features and functionalities within the system. Administrators have the highest privileges and can manage other users, configure settings, and perform administrative tasks.
 
-The following table summarizes the scope for different system roles supported for Account and Agent type:
+The following table summarizes the scope for different system roles supported for Account, Tool, and Agentic App types:
 
 <table>
   <tr>
@@ -101,7 +94,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Master Admin</strong>
    </td>
-   <td>Users have complete control over agent and model management, user administration, integrations, security settings, and access to all core features and functionalities.
+   <td>Users have complete control over tool and model management, user administration, integrations, security settings, and access to all core features and functionalities.
    </td>
   </tr>
   <tr>
@@ -113,7 +106,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create agents, add external models, and modify only S3 integration.
+   <td>Users can create tools, add external models, and modify only S3 integration.
    </td>
   </tr>
   <tr>
@@ -126,7 +119,7 @@ The following table summarizes the scope for different system roles supported fo
 
 <table>
   <tr>
-   <td colspan="2" ><strong>Agent</strong>
+   <td colspan="2" ><strong>Tool</strong>
    </td>
   </tr>
   <tr>
@@ -136,38 +129,77 @@ The following table summarizes the scope for different system roles supported fo
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Admin</strong>
+   <td><strong>Tool Admin</strong>
    </td>
-   <td>Users have complete control over agent management, versioning, sharing, deployment, deletion, configuration, monitoring, and API key creation.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Agent Manager</strong>
-   </td>
-   <td>Users have access to all the permissions except for agent deletion.
+   <td>Users have complete control over tool management, versioning, sharing, deployment, deletion, configuration, monitoring, and API key creation.
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Editor</strong>
+   <td><strong>Tool Manager</strong>
    </td>
-   <td>Users can create new versions and deploy, monitor, and export agents.
+   <td>Users have access to all the permissions except for tool deletion.
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Viewer</strong>
+   <td><strong>Tool Editor</strong>
    </td>
-   <td>Users can only view the node details and generate output in the agent.
+   <td>Users can create new versions and deploy, monitor, and export tools.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tool Viewer</strong>
+   </td>
+   <td>Users can only view the node details and generate output in the tool.
+   </td>
+  </tr>
+    <tr>
+   <td colspan="2" ><strong>Agentic App</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Role</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>App Owner</strong>
+   </td>
+   <td>Users have complete administrative access across all Platform features and configurations.
+   </td>
+  </tr>
+    <tr>
+   <td><strong>App Admin</strong>
+   </td>
+   <td>Users have full administrative access across most system features of Agentic Apps.</td>
+  </tr>
+  <tr>
+   <td><strong>App Developer</strong>
+   </td>
+   <td>Users have full access to core development features of Agentic Apps including configurations, tools, guardrails, and data.
+   </td>
+  </tr>
+    <tr>
+   <td><strong>App Viewer</strong>
+   </td>
+   <td>Users have basic view-only access to essential features of Agentic Apps including configurations, tools, guardrails, and simulation capabilities.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>App Tester</strong>
+   </td>
+   <td>Users have view-only access to most system features of Agentic Apps allowinng them to observe and test the functionalities.
    </td>
   </tr>
 </table>
 
 #### Custom Roles 
 
-The admin can add these roles at the account/agent level. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and agent levels.
+The admin can assign only **Account** and **Tool** role types to custom roles. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and tool levels.
 
 Organizations can tailor access levels to their specific needs and organizational structure. This customization helps assign only the required permissions to specific users and improve security through role-based access. 
 
-For example, a custom role, “_Banking Agent Conversation Moderator_,” can be customized for full access to agent guardrail configuration permission and no access to create and deploy an agent.
+For example, a custom role, “_Banking Tool Conversation Moderator_,” can be customized for full access to a tool guardrail configuration permission and no access to create and deploy a tool.
 
 #### Key Considerations
 
@@ -181,16 +213,16 @@ To proceed, you must first unassign the role or assign an alternative role to th
 
 ### Permissions
 
-A **Permission** is a specific action or a set of actions the user can perform for the assigned role on either agent or account types. Examples include creating an agent, adding an external model, adding a user, and assigning a role.
+A **Permission** is a specific action or a set of actions the user can perform for a module i.e., **Admin**, **Tool**, or **Evaluation** based on the defined access level (*Full*, *Edit*, or *View*), assigned role type (*Account*, *Tools*, or *Agentic Apps*) and role category (*Admin*, or *Tools*). An example includes the system providing *full* access to *create a tool version* to the *Tool Admin* role of the *tool* role type.
 
 ### Access Levels
 
-The Settings console supports two types of access: “_Yes_” indicates the user role has access to a module’s permission, and “_No_” means the user has no access. When the system/custom user role has access, the extent/level of access at the account or agent level is defined by the following presets: 
+The **Settings** console supports two types of access: “_Yes_” indicates the user role has access to a module’s permission, and “_No_” means the user has no access. When the system/custom user role has access, the extent/level of access at the account or tool level is defined by the following presets: 
 
-* **View**: The user can view the account and agent level but cannot edit or delete it.
-* **Custom**: The user can view, add, and edit account and agent data but not delete it.
-* **Full**: The user can view, add, edit, and delete account and agent data. 
-* **No Access**: The user cannot access the feature.
+* **View**: The user can only view the module feature but does not have the permission to edit or delete it.
+* **Custom**: The user can view, add, and edit the module data, but not delete it.
+* **Full**: The user can view, add, edit, and delete the module data. 
+* **No Access**: The user cannot access the module's features.
 
 [Learn more](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about Module-wise permissions and access levels.
 
@@ -198,16 +230,32 @@ The Settings console supports two types of access: “_Yes_” indicates the use
 
 A **Role Type** defines the module-wise scope and access level for the defined permissions and associated actions.
 
-The following Role Types are defined on GALE:
+Roles are auto-assigned by the system based on the following Role Types. Please refer to [this](./role-management.md/#system-defined-roles){:target="_blank"} table for more information on the roles.
 
-* **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to features at the account level like models, agents, other users, integrations, and security permissions.
-* **Agent**:  When a user is invited to an agent, they receive an Agent role. The role type manages access to features at the agent level like agent creation, deployment, versioning, deletion, monitoring, API integration, experimentation, export, etc.
+* **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
+* **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
+* **Agentic App**: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features and configurations of autonomous AI applications that handle specialized business tasks and processes.
 
-A user can have an Account role within the account and one or more Agent roles within different agents. Agent roles are determined at the agent level, and you can assign these roles to users who are invited to your agent.
+**Account Role**
+
+* The user who creates an Agent Platform account is assigned the *Master Admin* role by default.
+* The *Master Admin* can assign other account roles to users added to their account.
+
+**Tool Role**
+
+* The user who creates a tool is assigned the *Tool Admin* role by default.
+* The *Tool Admin* can assign other tool roles to users they invite to their tool.
+
+**Agentic App Role**
+
+* The user who creates an agentic app is assigned the *App Owner* role by default.
+* The *App Owner* can assign other Agentic App roles to users who have access to their agentic apps.
 
 ### Module-wise Permissions and Access Levels
 
-The following table summarizes the module-wise permissions and access levels for default admin, and agent roles.
+The following table summarizes the module-wise permissions and access levels for default admin, tool, and evaluation roles.
+
+<b>Admin Role</b>
 
 <table>
   <tr bgcolor="#ECECEC">
@@ -233,11 +281,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td><strong>Agents</strong>
+   <td rowspan="2"><strong>Tools</strong>
 <p>
 <strong> </strong>
    </td>
-   <td>Create an Agent
+   <td>Create a Tool
+   </td>
+   <td>Yes
+<p>
+ 
+   </td>
+   <td>Yes
+<p>
+ 
+   </td>
+   <td>Yes
+<p>
+ 
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+     <td>Tool Import
    </td>
    <td>Yes
 <p>
@@ -365,7 +431,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="6" ><strong>Prompts</strong>
+   <td rowspan="5" ><strong>Prompts</strong>
    </td>
    <td>Access to a Prompt
    </td>
@@ -416,19 +482,7 @@ The following table summarizes the module-wise permissions and access levels for
    <td>Yes
    </td>
   </tr>
-  <tr>
-   <td>Deploy/ Undeploy a guardrail (for all agents)
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
+    <tr>
    <td><strong>Access to Integrations</strong> (“Full” is the default access)
    </td>
    <td>Full
@@ -577,7 +631,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Manage Agent Roles (Create and edit Custom roles), assign/revoke users
+   <td>Manage Tool Roles (Create and edit Custom roles), assign/revoke users
    </td>
    <td>Yes
    </td>
@@ -612,19 +666,7 @@ The following table summarizes the module-wise permissions and access levels for
    <td>No
    </td>
   </tr>
-  <tr>
-   <td>Preferences
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
+    <tr>
    <td><strong>Manage User Settings (profile fields): </strong>Users with the permissions to manage user settings can bulk change permissions.
    </td>
    <td>Yes
@@ -637,23 +679,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="4" ><strong>Security and Control Settings</strong>
+   <td><strong>Security and Control Settings</strong>
    </td>
-   <td>View and update the Security and Control Settings for your account
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-<p>
- 
-   </td>
-  </tr>
-  <tr>
-   <td>Monitoring
+   <td>Create Management API Key.
    </td>
    <td>Yes
    </td>
@@ -663,76 +691,26 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>No
 <p>
- 
+    </td>
+  </tr>
+  <tr>
+   <td><b>Monitoring</b>
+   </td>
+   <td>All actions</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+<p>
    </td>
   </tr>
   <tr>
-   <td>Billing: Plans, invoice, subscribe & unsubscribe, token usage
+   <td><b>Billing: Plans, invoice, subscribe & unsubscribe, token usage</b>
    </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Management
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" ><strong>Guardrails</strong>
-   </td>
-   <td><strong>Access to guardrails at the account level</strong>
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Deploy/ Undeploy a guardrail (for all agents)
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="7" ><strong>Other Permissions</strong>
-   </td>
-   <td>Approve & publish agent deployment requests
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Configure and manage Single Sign On
-   </td>
+   <td>All actions</td>
    <td>Yes
    </td>
    <td>No
@@ -743,8 +721,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Initiate, enable & disable Kore.ai connector
+   <td><b>Tool Management</b>
    </td>
+   <td>All actions</td>
    <td>Yes
    </td>
    <td>Yes
@@ -755,11 +734,47 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>API Scopes for users, roles, and agents in your account.
+   <td rowspan="5"><strong>Evaluations</strong>
+   </td>
+   <td>Access</td>
+   <td>Full
+   </td>
+   <td>Custom
+   </td>
+   <td>Custom
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Create projects
    </td>
    <td>Yes
    </td>
    <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create Global Evaluators.</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Delete Global Evaluators
+   </td>
+   <td>Yes
+   </td>
+   <td>No
    </td>
    <td>No
    </td>
@@ -767,8 +782,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Manage Apps and Model Deployment requests approvals and publishing
-   </td>
+   <td>Edit Global Evaluators</td>
    <td>Yes
    </td>
    <td>Yes
@@ -778,32 +792,9 @@ The following table summarizes the module-wise permissions and access levels for
    <td>No
    </td>
   </tr>
-  <tr>
-   <td>Allow users to integrate
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Monitor agents and models on the GALE level
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-</table>
+  </table>
 
+<b>Tool Role</b>
 
 <table>
   <tr bgcolor="#ECECEC">
@@ -811,17 +802,17 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td rowspan="3" ><strong>Permission</strong>
    </td>
-   <td colspan="4" ><strong>Default Agent Role</strong>
+   <td colspan="4" ><strong>Default Tool Role</strong>
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Admin</strong>
+   <td><strong>Tool Admin</strong>
    </td>
-   <td><strong>Agent Manager</strong>
+   <td><strong>Tool Manager</strong>
    </td>
-   <td><strong>Agent Editor</strong>
+   <td><strong>Tool Editor</strong>
    </td>
-   <td><strong>Agent Viewer</strong>
+   <td><strong>Tool Viewer</strong>
    </td>
   </tr>
   <tr bgcolor="#ECECEC">
@@ -829,9 +820,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="9" ><strong>Agents</strong>
+   <td rowspan="10" ><strong>Tools</strong>
    </td>
-   <td><strong>Access to Agent </strong>(“Custom” is the default access for a custom role)
+   <td><strong>Access to Tool </strong>(“Custom” is the default access for a custom role)
    </td>
    <td>Full
    </td>
@@ -843,7 +834,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Create an Agent Version
+   <td>Create a Tool Version
    </td>
    <td>Yes
    </td>
@@ -855,7 +846,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Share Agents/ Unshare Agents/ Assign Agent Roles/ Remove users
+   <td>Import as a Version
    </td>
    <td>Yes
    </td>
@@ -867,7 +858,19 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Delete Agent
+   <td>Share Tools/ Unshare Tools/ Assign Tool Roles/ Remove users
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Delete Tool
    </td>
    <td>Yes
    </td>
@@ -879,7 +882,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Export Agent
+   <td>Export Tool
    </td>
    <td>Yes
    </td>
@@ -891,7 +894,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Monitoring Trace of an Agent
+   <td>Monitoring Trace of an Tool
    </td>
    <td>Yes
    </td>
@@ -903,7 +906,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Editing Agent Workflow
+   <td>Editing Tool Workflow
    </td>
    <td>Yes
    </td>
@@ -915,7 +918,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Agent configurations
+   <td>Tool configurations
    </td>
    <td>Yes
    </td>
@@ -982,13 +985,190 @@ The following table summarizes the module-wise permissions and access levels for
   </tr>
 </table>
 
+<b>Evaluation Role</b>
+
+<table>
+  <tr bgcolor="#ECECEC">
+   <td><strong>Permission</strong>
+   </td>
+   <td><strong>Full</strong>
+   </td>
+      <td><strong>Edit</strong>
+   </td>
+      <td><strong>View</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Edit a project.</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Share a project.</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>User management - invite/delete users from project</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Delete a project.</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create/delete custom evaluators</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create/rename evaluations</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+      <tr>
+   <td>Delete Evaluations</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Run an Evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Add, edit and delete evaluator columns and run evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create a custom evaluator</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Save as a global evaluator</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Export evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Automate evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Import rows</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Add, edit and delete evaluator columns and run evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Add production data(model traces)</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Run a prompt</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Table options(user specific)</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  </table>
+
 ### Role Management Dashboard
 
-The **Role Management Dashboard** on the Settings console displays key information.
+The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the Agent Platform.
 
 To access the dashboard, follow the steps below:
 
-1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE and click **Settings** on the top menu.
+1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to Agent Platform and click **Settings** on the top menu.
 2. Click **Users Management** > **Role Management** on the left menu.
 <img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
 
@@ -1004,7 +1184,7 @@ The **Role Management** dashboard displays the following:
 2. A Table view of the following system and custom role details:
 
     * **Role**: The name of the system-generated role or the custom role you have created.
-    * **Role Type**: The role type defines its scope, including **Account** or **Agent**.
+    * **Role Type**: The role type defines its scope, including **Account**, **Tool**, and **Agentic App**.
     * **Description**: This is the description of the role. System roles are predefined, while you must provide custom role descriptions. Hover over the description text to view the entire description.
     * **Created by**: For system-generated roles, _System_ is displayed. For custom roles, the name of the user who created the role is displayed, as shown in the image below. This user can be the account owner or another user in the admin’s account.
     <img src="../images/custom-and-system-roles.png" alt="custom and system roles" title="custom and system roles" style="border: 1px solid gray; zoom:80%;">
@@ -1044,11 +1224,9 @@ To view the details of a [system-defined role](./role-management.md/#system-defi
 The following information is displayed:
 
 * Role Title along with Role Type.
-* Summary information on the role.
 * Role Name
 * Role Description
-* [Role Type](./role-management.md/#role-types){:target="_blank"}
-* Configuration panel to enable/disable access and set access levels for the listed permissions at the agent/account level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
+* Configuration panel to enable/disable access and set access levels for the listed permissions at the account/tool level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
 <img src="../images/module-wise-permissions-new.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;">
 
 #### Duplicate System Role
@@ -1088,22 +1266,42 @@ To add a custom role, follow the steps below:
 
 3. Follow the steps below in the **New Role** window:
 
-    * Enter **Role Name** & **Role Description**.
+    * Enter **Role Name** (should be unique) & **Role Description**.
     <img src="../images/enter-role-name-and-description.png" alt="enter role name and description" title="enter role name and description" style="border: 1px solid gray; zoom:80%;">
     * Select the **Role Type** from the dropdown.
     <img src="../images/select-role-type.png" alt="select role type" title="select role type" style="border: 1px solid gray; zoom:80%;">
     * Follow the steps below if you select **Role Type** as **_Account_**.
-        * Enable/select the access level for module-wise permissions in the **Enable/Disable agent access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
-        * Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
+        * Enable/select the access level for module-wise permissions in the **Enable/Disable tool access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
+        * If you select *Custom*, Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
-          * Create Agents
-          * Models 
-          * Prompts
-          * Integrations
-          * User Management
-          * Security and Control Settings
-          * Manage Guardrail Models
-          * Billing
+            * Create and Import Tool
+            * Models
+                * Add External models
+                * Fine-tune a model
+                * Delete a model
+                * Manage Deployment - deploy/undeploy
+                * Create an API key for a model
+                * Export model
+            * Prompts
+            * Settings
+                * Integrations
+                  * Weights and Biases
+                  * Hugging Face
+                  * S3 Bucket
+               * User Management
+                  * Invite user
+                  * Bulk import users
+                  * Assign roles to users
+                  * Directory Sync
+                  * Manage admin roles
+                  * Manage tool roles
+                  * Remove users
+                  * Manage user settings
+            * Security and Control Settings
+            * Manage Guardrail Models
+            * Monitoring
+            * Billing
+
           <img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;">       
 
        * Select the access level for **Models**, **Settings**, **Integrations**, and **User Management** from the following options:
@@ -1111,8 +1309,7 @@ To add a custom role, follow the steps below:
         * **Custom**: The users can select only the required permissions for the module to customize the role.
         * **View**: The users can only view the configured module permissions.
         * **No Access**: The user cannot view/customize the module permissions.
-        <img src="../images/select-access-for-modules.png" alt="select access for modules" title="select access for modules" style="border: 1px solid gray; zoom:80%;">
-    
+            
 **Important Considerations**
 
 * First, select the access level for **Models** to enable its permissions.
@@ -1133,57 +1330,50 @@ To add a custom role, follow the steps below:
 
 Additionally, it automatically enables all the permissions for the following modules:
 
-* Integrations (View is always enabled by default as it is the minimum required permission).
-* User Management
-* Security and Control Settings
-* Manage Guardrail Models
-* Billing
-<img src="../images/full-select-for-all-permissions.png" alt="full access" title="full access" style="border: 1px solid gray; zoom:80%;">
+   * Integrations (View is always enabled by default as it is the minimum required permission).
+   * User Management
+   * Security and Control Settings
+   * Manage Guardrail Models
+   * Monitoring
+   * Billing
+
 * Selecting **_No Access_** for **Settings** automatically sets the access levels of **Integrations** to **_View_** and **User Management** to **_No Access_**.
 <img src="../images/select-no-access.png" alt="no access" title="no access" style="border: 1px solid gray; zoom:80%;">
 
 Additionally, it disables all the permissions for the following modules:
 
-  * Integrations (The **View** permission is always enabled by default).
-  * User Management
-  * Security and Control Settings
-  * Manage Guardrail Models
-  * Billing
+   * Integrations (The **View** permission is always enabled by default).
+   * User Management
+   * Security and Control Settings
+   * Manage Guardrail Models
+   * Monitoring
+   * Billing
   
-  <img src="../images/disable-permissions.png" alt="disable permissions" title="disable permissions" style="border: 1px solid gray; zoom:80%;">
-
-Selecting **_Custom_** for **Settings** automatically sets the Integrations and User Management access levels to **_Custom_**.
-<img src="../images/select-custom.png" alt="select custom" title="select custom" style="border: 1px solid gray; zoom:80%;">
-
-You can enable the required permissions for the following modules:
+Selecting **_Custom_** for **Settings** automatically sets the **Integrations** and **User Management** access levels to **_Custom_** where you can select or unselect the listed permissions based on your requirement for the following modules:
 
 * Integrations
 * User Management
 * Security and Control Settings
 * Manage Guardrail Models
+* Monitoring
 * Billing
 
-<img src="../images/enable-access-level.png" alt="enable access level" title="enable access level" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/select-custom.png" alt="select custom" title="select custom" style="border: 1px solid gray; zoom:80%;">
 
 You can change **_Custom_** to **_Full_** or **_View_** for **Integrations** and **_Full_** or **_No Access_** for **User Management**.
-<img src="../images/change-access-level.png" alt="change access level" title="change access level" style="border: 1px solid gray; zoom:80%;">
 
-If you select **Role Type** as **_Agent_**, follow the steps below:
+
+If you select **Role Type** as **_Tool_**, follow the steps below:
 
 * Select **_Custom_**, **_View_**, or **_Full_** for **Access**. [Learn more](../user-management/role-management.md/#access-levels){:target="_blank"}. 
 
-**_View_** is the default selection.
+**_Custom_** is the default selection.
 <img src="../images/access-options.png" alt="access options" title="access options" style="border: 1px solid gray; zoom:80%;">
                      
-* Set up the agent permissions as follows in the **Enable/Disable agent access** section:
-* If you select **_View_** for **Access**, permissions selection is automatically disabled.
-<img src="../images/view-access.png" alt="view access" title="view access" style="border: 1px solid gray; zoom:80%;">
-
+* Set up the tool permissions as follows in the **Enable/Disable tool access** section:
+* If you select **_View_** for **Access**, all the permissions are automatically disabled.
 * If you select **_Full_** for **Access**, all the permissions are automatically enabled.
-<img src="../images/full-access.png" alt="full access" title="full access" style="border: 1px solid gray; zoom:80%;">
-
-* If you select **_Custom_** for **Access**, you can enable the required agent permissions and customize the role.                 
-<img src="../images/custom-access.png" alt="custom access" title="custom access" style="border: 1px solid gray; zoom:80%;">
+* If you select **_Custom_** for **Access**, you can select the required tool permissions to enable them and customize the role.                 
 
 4. Click **Create**.
 
@@ -1193,7 +1383,7 @@ The new custom role is created and listed on the **Role Management** dashboard.
 
 #### Edit a Custom Role
 
-You can modify the role name, description, and access levels for account type or agent type roles’ permissions on the Settings console.
+You can modify the role name, description, and access levels for account type or tool type roles’ permissions on the Settings console.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1212,15 +1402,12 @@ To update a role, follow the steps below:
 
     * Role Name
     * Role Description
-
-Reset the access levels for module-wise Permissions in the **Enable/disable agent access** section based on the role’s requirements.
+    * Access: Select either *Custom*, *Full*, or *View*.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <b>Role Type</b> field is disabled for editing.</p>
+<p>You cannot reset the access levels for module-wise Permissions in the <b>Enable/disable tool access</b> section.</p>
 </div> 
-
-<img src="../images/role-type-field-disabled.png" alt="role type disabled" title="role type disabled" style="border: 1px solid gray; zoom:80%;">
 
 <ol start="5"><li>Click <b>Update</b>.</li>
 <img src="../images/update-role-window.png" alt="update role window" title="update role window" style="border: 1px solid gray; zoom:80%;"></ol>
@@ -1290,6 +1477,6 @@ Like a system role, you can duplicate a custom role, which copies the name, role
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other GALE admin features.
+* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Users Management** - [Learn more](../user-management/users.md){:target="_blank"} about managing users in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

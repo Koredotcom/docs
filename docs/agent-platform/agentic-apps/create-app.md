@@ -1,15 +1,15 @@
 # Create an Agentic App
 
-
-## **Prerequisites**
+## Prerequisite
 
 * **Set up LLM**: Before creating an Agentic app, ensure that an appropriate **Large Language Model (LLM)** is set up and configured for use.  This involves selecting a model, setting API keys, and ensuring integration with the application. Refer to the Model Library for easy integration of the LLM. 
 
-!!!note
+!!! note
+    
     Currently, the Agent Platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI LLMs. Custom integration is not supported. Ensure that the LLM used has tool-calling capabilities.
 
 
-## **Steps to Create an Agentic App**
+## Steps to Create an Agentic App
 
 1. **Creating a New Application**
     * Provide a name for the app that reflects its core function.

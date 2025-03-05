@@ -190,11 +190,11 @@ nav:
       - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
       - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
   - Prompts: 
-    - About Prompt Studio: playground/about-prompt-studio.md
-    - Accessing Prompt Studio: playground/accessing-prompt-studio.md
-    - Using Prompt Studio: playground/using-prompt-studio.md
-    - Advanced Features: playground/advanced-features.md
-    - More Options on Prompt Studio: playground/options-prompt-canvas.md
+    - About Prompt Studio: prompts/about-prompt-studio.md
+    - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
+    - Using Prompt Studio: prompts/using-prompt-studio.md
+    - Advanced Features: prompts/advanced-features.md
+    - More Options on Prompt Studio: prompts/options-prompt-canvas.md
   - Data: 
     - Manage Data: data/manage-datasets.md
   - Evaluation: 
@@ -221,7 +221,7 @@ nav:
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
-        - Agents Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
+        - Tools Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
     - Security and Control:
