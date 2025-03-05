@@ -1326,7 +1326,6 @@ To add a custom role, follow the steps below:
 <img src="../images/select-view-and-no-access.png" alt="select view and no access" title="select view and no access" style="border: 1px solid gray; zoom:80%;">       
 
 * Selecting **_Full_** for **Settings** automatically sets the access levels of **Integrations** and **User Management** to **_Full_**.
-
 <img src="../images/select-full-access.png" alt="select full access" title="select full access" style="border: 1px solid gray; zoom:80%;">
 
 Additionally, it automatically enables all the permissions for the following modules:

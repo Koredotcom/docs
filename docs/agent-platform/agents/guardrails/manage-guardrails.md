@@ -11,7 +11,6 @@ Steps to deploy a scanner:
 
 3. On the Manage guardrail models page, click the **Deploy** button next to the scanner you want to deploy.  
 
-
     The deployment process starts, and the status is displayed as **Deploying**. Once the scanner is deployed, it's available in the scanners list when a new scanner is added.
 
     !!! note

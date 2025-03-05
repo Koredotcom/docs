@@ -2,9 +2,6 @@
 
 The AI-Assisted Manual Audit feature streamlines interaction evaluation by automatically categorizing conversations into three key areas: moments of adherence, moments of violation, and omissions. By highlighting these critical elements, evaluators can quickly assess the quality of interactions, significantly reducing review time and improving efficiency in the quality assurance process.
 
-Users can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
-<img src="../ai-assist-manual-edit/images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
-
 You can access AI-Assisted Manual Audit by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **Conversation Mining** > **Interactions**.  
 <img src="../ai-assist-manual-edit/images/ai-assist-manual-audit-default.png" alt="AI Assited Manual Audit Page" title="AI Assited Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
 
@@ -28,7 +25,6 @@ Each violation is displayed with a timestamp, allowing you to navigate directly 
 !!! Note
 
     Violations are applicable only for voice channel interactions, not chat.
-
 
 ## Omission
 
@@ -107,7 +103,6 @@ This comprehensive audit panel facilitates efficient evaluation and ensures thor
 <img src="../ai-assist-manual-edit/images/ai-assist-audit.png" alt="Audit" title="Audit" style="border: 1px solid gray; zoom:80%;">
 
 In the Chat History - Audit section, the evaluation form items determine performance levels through assigned scores, each with specific weights for the questions. The supervisor or auditor's role is to evaluate each question (using the options available in the evaluation form: **Yes/No/NA**). This process enables clear identification of strengths and areas for improvement, facilitating better coaching. Additionally, auditors can review the conversation for each question.
-
 
 ### Scoring Triggers
 
