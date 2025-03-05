@@ -115,8 +115,20 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
 Click the Connections tab and set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/){:target="_blank"} for a detailed setup guide.  
 
-<img src="../images/dynamic-intent-node-img4.png" alt="Dynamic intent node - Connection properties" title="Dynamic intent node - Connection properties" style="border:1px solid gray;zoom:70%;">
+!!! Note
+
+    These conditions apply only for this instance and will not affect this node when used in any other dialog.  
+
+The Connection Path property offers three default variants:
+
+1. Not Connected - No specific next node is defined
+2. End of Dialog - Explicitly ends the current dialog
+3. Return to Flow - Terminates the Dialog Task and returns control to the Flow Builder. The Flow Builder resumes from the next node.
+    * Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context.
+    It has two deflection types - ‘ Automation’ and ‘Agent Transfer’.  
+    <img src="../images/deflect-to-chat1.png" alt="Deflect to Chat" title="Deflect to Chat" style="border:1px solid gray;zoom:70%;">
+
 
 !!! Note
 
-    These conditions apply only for this instance and will not affect this node when used in any other dialog.
+    Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
