@@ -8,6 +8,9 @@ The Tool Monitor capabilities are shown on the following tabs:
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
+<img src="../agent-monitor/images/new_agent_monitor.png" alt="All runs and Model runs tabs" title="All runs and Model runs tabs" style="border: 1px solid gray; zoom:80%;">
+
+
 ## All Runs
 
 The All runs tab provides the following information for each tool run:
@@ -156,7 +159,6 @@ In the **All runs** section, any error that occurs via the endpoint during an to
 
 To view detailed error information, click on the corresponding tool run entry in the **Tool Monitor** dashboard.
 
-<img src="../images/agent-run-errors.png" alt="agent run errors" title="agent run errors" style="border: 1px solid gray; zoom:60%;">
 
 An error message includes the following information:
 
