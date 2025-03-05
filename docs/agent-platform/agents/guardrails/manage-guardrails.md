@@ -7,7 +7,7 @@ Steps to deploy a scanner:
 1. Click **Settings** in the top navigation bar.
 
 2. In the left navigation pane, click **Manage Guardrails**.  
-<img src="../images/manage-guardrails.png" alt="Manage Guardrails" title="Manage Guardrails" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/manage-guardrails-new.png" alt="Manage Guardrails" title="Manage Guardrails" style="border: 1px solid gray; zoom:80%;">
 
 3. On the Manage guardrail models page, click the **Deploy** button next to the scanner you want to deploy.  
 
