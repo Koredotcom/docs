@@ -116,7 +116,13 @@ nav:
     - Platform Overview: getting-started/introduction.md
     - Accessing the Platform: getting-started/sign-up-sign-in.md          
     - Quick Start Tutorials:  
-      - Getting Started with Agentic Apps: getting-started/quick-start-tutorials/getting-started-with-agentic-apps.md
+      - Product Overview: getting-started/tutorials/agent-platform.md
+      - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
+      - Build a Workflow Tool: getting-started/tutorials/workflow-tool.md
+      - Model Studio: getting-started/tutorials/model-studio.md
+      - Prompt Studio: getting-started/tutorials/prompt-studio.md
+      - Evaluation: getting-started/tutorials/evaluation.md
+      - Build a Code Tool: getting-started/tutorials/build-code-tool.md 
   - Agentic Apps: 
     - Overview: agentic-apps/overview.md
     - Create Agentic App: agentic-apps/create-app.md
