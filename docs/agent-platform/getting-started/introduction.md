@@ -6,24 +6,15 @@ We are excited to announce the first version of Agent Platform, our enterprise-g
 
 The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to efficiently scale and manage AI deployments.
 
-* Advanced multi-agent orchestration for complex workflows.
-
+* End-to-end AI ecosystem for developing, deploying, and managing AI applications.
 * No-code interface for rapid development by technical and non-technical users.
-
-* Search and data connectors for Agentic RAG capabilities.
-
-* Prompt management and evaluation systems for optimizing AI behavior.
-
-* Enterprise-grade safety controls and comprehensive observability.
-
-* Standardized Agent Protocol for interoperability between AI systems.
-
-* Pre-built templates and solutions in the marketplace for accelerated development.
-
 * Extension SDKs for custom AI solutions.
-
+* Advanced multi-agent orchestration for complex workflows.
+* Search and data connectors for Agentic RAG capabilities.
+* Prompt management and evaluation systems for optimizing AI behavior.
+* Standardized Agent Protocol for interoperability between AI systems.
+* Pre-built templates and solutions in the marketplace for accelerated development.
 * Proven scalability and reliability for mission-critical applications.
-
 * Built-in compliance, audit trails, and security for reduced regulatory risk.
 
 
