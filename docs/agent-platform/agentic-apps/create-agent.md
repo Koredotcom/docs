@@ -107,6 +107,6 @@ There are **two types of tools** that can be used for Agent actions.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
 
-The agent platform offers a no code  builder for creating and managing tools. To learn more about Global tools, refer to [this](../agents/overview.md). 
+The agent platform offers a no code  builder for creating and managing tools. To learn more about Global tools, refer to [this](../tools/overview.md). 
 
 * **Custom/Inline Tools**: With **inline tools**, you can write and execute business logic directly within the system using **Python** or **JavaScript**, allowing seamless integration and automation of complex workflows. For more information on Tools, refer to [this](inline-tools.md).

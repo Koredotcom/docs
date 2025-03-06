@@ -1,6 +1,6 @@
 # About Billing
 
-The Billing section helps you monitor and analyze your GALE platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across agents, models, and guardrails to make data-driven decisions about your resource utilization.
+The Billing section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, and guardrails to make data-driven decisions about your resource utilization.
 
 # Accessing Usage Information
 
@@ -17,17 +17,17 @@ Steps to access the Usage page:
 The Usage page displays the following tabs for billing and usage:
 
 * **Usage**: Provides a high-level summary of your resource consumption:
-    * **Runs**: Shows current agent run usage against your total allocation.
+    * **Runs**: Shows current tool run usage against your total allocation.
     * **Model Credits**: Displays consumed credits versus total available credits.
-    * **Usage Trend**: Visual representation of agent runs and model credit consumption over time.
-* **Agents**: Shows all agent activities and their operational status.
+    * **Usage Trend**: Visual representation of tool runs and model credit consumption over time.
+* **Tools**: Shows all tool activities and their operational status.
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
 
 ## Best Practices
 
 * Regularly monitor your usage trends to optimize resource allocation.
-* Review agent and model performance to identify cost-saving opportunities.
+* Review tool and model performance to identify cost-saving opportunities.
 * Track guardrail deployment duration to manage hardware costs effectively.
 
 !!! note
@@ -37,32 +37,32 @@ The Usage page displays the following tabs for billing and usage:
 
 # Usage Overview
 
-The Overview tab summarizes expenses and usage patterns across your agents and models. The following usage information is displayed on the tab:
+The Overview tab summarizes expenses and usage patterns across your tools and models. The following usage information is displayed on the tab:
 
-* **Runs**: This field indicates the usage of agent runs, showing the proportion of capacity consumed compared to the total available runs. For example, in the below image, 301 out of 10,000 available agent runs have been utilized, indicating that 3.01% of the total capacity has been consumed.
+* **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, in the below image, 301 out of 10,000 available tool runs have been utilized, indicating that 3.01% of the total capacity has been consumed.
 * **Model Credits**: This field displays the total model credit usage, showing the proportion of model credits used across all models compared to the total available credits. It also includes the credits used to host guardrails. For example, in the image below, 12,899 credits have been used out of a total allocation of 13,325 credits, indicating that 96.80% of your available model credits have been utilized.
-* **Usage trend**: It visually represents **Agent runs** and **Model credits** consumption over time. Use the Calendar feature to see the changes over time, for example, daily, weekly, monthly, or any custom dates.
+* **Usage trend**: It visually represents **Tool runs** and **Model credits** consumption over time. Use the Calendar feature to see the changes over time, for example, daily, weekly, monthly, or any custom dates.
 
  <img src="../images/overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:80%;">
 
  <img src="../images/usagetrend.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
 
 
-# Agents Usage
+# Tools Usage
 
-The Agents tab displays a comprehensive list of agents associated with the account. It includes only those agents that have been deployed at least once; it does not include ‘In development’ agents.  
+The Tools tab displays a comprehensive list of tools associated with the account. It includes only those tools that have been deployed at least once; it does not include ‘In development’ tools.  
 
 The following usage information is displayed on the tab:
 
-* **Total Agents**: The total number of agents in the account.
-* **Total runs**: The total number of runs by all the agents.
-* **Agent name**: The name assigned to the agent.
-* **Runs**: The number of times the agent was inferred. 
-* **Owner Name**: The name of the user who created the agent.
-* **Last active on**: The date when the agent was last active.
-* **Status**: The agent's status - Deployed, Undeployed, or Deleted.
+* **Total Tools**: The total number of tools in the account.
+* **Total runs**: The total number of runs by all the tools.
+* **Tool name**: The name assigned to the tool.
+* **Runs**: The number of times the tool was inferred. 
+* **Owner Name**: The name of the user who created the tool.
+* **Last active on**: The date when the tool was last active.
+* **Status**: The tool's status - Deployed, Undeployed, or Deleted.
 
- <img src="../images/agents.png" alt="Billing Agents tab" title="Billing Agents tab" style="border: 1px solid gray; zoom:80%;">
+ <img src="../images/agents.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
 
 
 # Models Usage
