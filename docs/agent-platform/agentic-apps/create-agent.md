@@ -32,15 +32,24 @@ Agent profile consists of the following fields:
 
 ---
 
-**AI Model**: Select the AI model that the agent will use to perform its tasks. The LLM selected here is used by the agent for all the interactions with the user and to design the workflow required to complete a given task. If you haven't added an LLM before, [configure a model](https://docs.kore.ai/gale/models/external-models/add-an-external-model-using-easy-integration/) to use.
+**AI Model**: Select the AI model that the agent will use to perform its tasks. The model helps an Agent in the following:
 
-You can choose a model based on the specific use case of the agent. If the agent is designed to generate code, select a model that excels in coding skills.
+* Understanding and Processing User Input into structured data
+* Selecting the most appropriate action for the task
+* Tool calling 
+* Transforming results from agents into natural and contextual responses for the users.
+
+Refer to [this to configure a model](https://docs.kore.ai/gale/models/external-models/add-an-external-model-using-easy-integration/) to use.
+
+!!!tip
+    When choosing a model for your agent, consider its specific use case. For example, if the agent is designed for code generation, opt for a model that specializes in coding skills.
+
 
 ---
 
-## Tasks and Objectives
+## Agent Definition
 
-**Scope**: This section outlines the agent's role and the tasks it is capable of performing. The scope defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. By clearly establishing what the agent can do and how it should operate, this definition ensures that its goals are effectively aligned.
+**Scope**: This section outlines the agent's role and the tasks it can perform. The scope defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. Clearly establishing what the agent can do and how it should operate ensures that the goals are effectively aligned.   
 
 !!!abstract "Examples"
 

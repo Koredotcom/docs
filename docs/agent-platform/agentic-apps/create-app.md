@@ -13,30 +13,32 @@
 
 ## Steps to Create an Agentic App
 
+
+### Step 1: Creating a New Application
+
 Click on the **+New App** on the **Agentic Apps** page. 
 
-1. **Creating a New Application**
-    * Provide a name for the app that reflects its core function.
-    * Select an icon for the app.
-    * Write a description explaining its main features and goals. This will help to set the scope and context of the application and ensure the application does not respond to queries based on pre-trained knowledge.
-    * Choose an LLM model for the application.
+* Provide a name for the app that reflects its core function.
+* Select an icon for the app.
+* Write a description explaining its main features and goals. This will help to set the scope and context of the application and ensure the application does not respond to queries based on pre-trained knowledge.
+* Choose an LLM model for the application.
 
 ---
 
-2. **Defining Its Agents**
+### Step 2: Defining the Agents
 
-    * Configure agents with appropriate roles and responsibilities within the application. [Refer to this for the details on how to set up an agent.](agent-overview.md)
-
----
-
-3. **Testing the Behavior of the Agents**
-
-    * Simulate different scenarios to evaluate agent interactions and responses. [Refer to this to learn more about simulation and testing](app-testing.md)
+* Configure agents with appropriate roles and responsibilities within the application. [Refer to this for the details on how to set up an agent.](agent-overview.md)
 
 ---
 
-4. **Deploying the Application** 
+### Step 3: Testing the Behavior of the Agents
 
-    * Finalize configurations and deploy the app for end users. Refer to this to [learn more](app-deployment.md).
+* Simulate different scenarios to evaluate agent interactions and responses. [Refer to this to learn more about simulation and testing](app-testing.md)
+
+---
+
+### Step 4: Deploying the Application
+
+* Finalize configurations and deploy the app for end users. Refer to this to [learn more](app-deployment.md).
 
 ---
