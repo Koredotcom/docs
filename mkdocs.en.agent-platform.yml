@@ -6,6 +6,7 @@ repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
+    - overrides/stylesheets/test.css
 theme:
   favicon: images/agent-platform_favicon.svg
   name: material
@@ -117,12 +118,12 @@ nav:
   - Agentic Apps: 
     - Overview: agentic-apps/overview.md
     - Create Agentic App: agentic-apps/create-app.md
-    - Agent: agentic-apps/agent-overview.md
+    - Agent Overview: agentic-apps/agent-overview.md
     - Create Agent: agentic-apps/create-agent.md
     - App Settings: agentic-apps/app-settings.md
-    - App Simulation and Testing: agentic-apps/app-testing.md
-    - App Deployment: agentic-apps/app-deployment.md
-    - App Analytics: agentic-apps/app-analytics.md
+    - Simulation and Testing: agentic-apps/app-testing.md
+    - Deployment: agentic-apps/app-deployment.md
+    - Analytics: agentic-apps/app-analytics.md
   - Tools: 
     - About Tools: agents/overview.md
     - Create a Tool: agents/create-a-new-agent.md

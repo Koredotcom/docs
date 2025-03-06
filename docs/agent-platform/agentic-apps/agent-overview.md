@@ -2,16 +2,17 @@
 
 **Agents in an Agentic App** are specialized entities designed to perform tasks or actions aligned with specific goals autonomously. They function as self-contained units of intelligence, equipped with the knowledge and resources necessary to address a wide range of scenarios effectively.
 
-Example: In an HR assistant application, agents can be configured as follows. 
-
-* Leave Management Agent: Manages everything related to viewing or applying for leave 
-* Policy Enquiry Agent: Handles all the employee queries related to company policies.
-* Employee Directory Agent: Provides employee information. 
+!!!abstract "Example"
+    In an HR assistant application, agents can be configured as follows. 
+    
+    * Leave Management Agent: Manages everything related to viewing or applying for leave 
+    * Policy Enquiry Agent: Handles all the employee queries related to company policies.
+    * Employee Directory Agent: Provides employee information. 
 
 
 An **AI Agent** is an autonomous entity that perceives its environment, processes information, and takes actions to achieve specific goals. In an agentic AI application, an AI agent operates by interpreting user input or system triggers, selecting the most appropriate actions based on predefined capabilities, extracting and structuring relevant data for execution, and performing tasks, which may include interactions with other systems too. AI Agents leverage Large Language Models  to understand context, engage in user interactions, identify relevant entities, and support decision-making when required.
 
-## Features of an Agent 
+## Features of an Agent  
 
 
 1. **Unique Core Functions**: Each agent is assigned a distinct set of core functions tailored to its specific purpose. These functions define the agent's capabilities and the scope of tasks it can handle, ensuring that it remains focused and efficient in addressing its designated objectives.
