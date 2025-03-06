@@ -10,11 +10,11 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 **Key Features**
 
-* **Global timeline Filters** provide a comprehensive view of performance across all tools in your account. [Learn more](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+* **Global timeline Filters** provide a comprehensive view of performance across all tools in your account. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
-* **Tool Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected tool and version. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
+* **Tool Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected tool and version. [Learn more](../analytics/tools-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
 
-* An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/agent-analytics-dashboard.md/#expanded-widget-view){:target="_blank"}.
+* An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/tools-analytics-dashboard.md/#expanded-widget-view){:target="_blank"}.
 * Hovering over a data point on the **dynamic and interactive line graph** reveals the real-time information for that specific period, providing a focused view of tool performance.
 * You can obtain **hourly performance analysis** for a tool on a specific day or review **daily performance trends** when selecting a date range filter.
 * Click the **Refresh icon** shown below to ensure you have the latest dashboard data available to make informed decisions.
@@ -52,15 +52,15 @@ The following metrics summarize the counts for tools, runs, and node executions 
 
 * **Number of tools**: The total number of tools deployed within your account during the selected period. This includes tools and all their versions managed by all the users of your account. 
 
-    To view data for a specific tool and its version deployed in your account, use the **ToolsPerformance** filters. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
+    To view data for a specific tool and its version deployed in your account, use the **ToolsPerformance** filters. [Learn more](../analytics/tools-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}.
 
 * **Number of runs**: The total count of success and failure tool flow runs or node executions completed by all deployed tools in your account during the specified period. 
 
-For detailed statistics on each status for the selected date/date range, see the **Tool Runs** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-runs){:target="_blank"}.
+For detailed statistics on each status for the selected date/date range, see the **Tool Runs** widget. [Learn more](../analytics/tools-analytics-dashboard.md/#agent-runs){:target="_blank"}.
 
 * **Number of times nodes are executed**: The event-driven execution counts for different node types during a tool run. 
 
-For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
+For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/tools-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -68,7 +68,7 @@ For detailed statistics on the total events and the runs executed by each node, 
 
 <img src="../images/info-icon.png" alt="info icon" title="info icon" style="border: 1px solid gray; zoom:75%;">
 
-To generate and view the required tools analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+To generate and view the required tools analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
 ### Tool-specific Metrics
 
@@ -78,7 +78,7 @@ The following metrics help analyze the performance of the selected tool and vers
 * **Avg. Tool Response Time**: Displays the selected tool version’s ART to the requests received during the selected period.
 * **Nodes Execution**: Displays the event-based node execution graph for all the node types on a single day or across the selected date range. **Nodes are executed up to the rate limit threshold subscription for your account**.
 
-To view the required data, use the [Global Timeline Filters](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Tool Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}. 
+To view the required data, use the [Global Timeline Filters](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Tool Performance Filters](../analytics/tools-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}. 
 
 ## Global Timeline Filters
 
@@ -127,7 +127,7 @@ The other options you can select include:
 
 ## Tool Performance Filters
 
-The following widget-level filters apply exclusively to [tool-specific metrics](../analytics/agent-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. 
+The following widget-level filters apply exclusively to [tool-specific metrics](../analytics/tools-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. 
 
 * **Tool Name**: Select the deployed tool from the list to see the associated analytics data.
 
@@ -143,17 +143,17 @@ The following widget-level filters apply exclusively to [tool-specific metrics](
 
 ## Tool Performance Data Widgets
 
-The **Tools Analytics** dashboard displays the widgets mentioned below to represent the [tool-specific performance metrics](../analytics/agent-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}. The graphs update automatically when a different tool version is selected.
+The **Tools Analytics** dashboard displays the widgets mentioned below to represent the [tool-specific performance metrics](../analytics/tools-analytics-dashboard.md/#agent-specific-metrics){:target="_blank"}. The graphs update automatically when a different tool version is selected.
 
 ### How it Works
 
-1. Select the required date/range in the [global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+1. Select the required date/range in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 2. Select the **Tool Name** and (optional) **Tool Version**.
 3. The widgets display an hourly graph for 24 hours on a single day and a daily graph for the respective metrics for a date range.
 
 ### Tool Runs
 
-This widget features two dynamic graphs illustrating successful and failed requests executed by the tool during the selected period in the [global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
+This widget features two dynamic graphs illustrating successful and failed requests executed by the tool during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
 
 **Key Features**
 
@@ -178,7 +178,7 @@ You can do the following to analyze tool performance:
 
 ### Avg. Tool Response Time
 
-This widget features a line graph illustrating the ART taken by the tool version to execute each request during the selected period in the [global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
+This widget features a line graph illustrating the ART taken by the tool version to execute each request during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
 
 **Key Features**
 
@@ -217,7 +217,7 @@ You can do the following to analyze tool performance:
 
 ### Nodes Execution
 
-This widget displays a line graph showing the number of nodes (including all node types) executed for each event run during a tool flow for the selected tool version and period (as selected in the [Global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Nodes Executed**, while the X-axis shows the **Date**.
+This widget displays a line graph showing the number of nodes (including all node types) executed for each event run during a tool flow for the selected tool version and period (as selected in the [Global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Nodes Executed**, while the X-axis shows the **Date**.
 
 **Rate Limit**
 
@@ -233,7 +233,7 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <li>Hover over the required data point on the graph to view the following information:</li></ul>
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li>
 <ul><li>Start Node</li>
-<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/gen-ai-node/" target="_blank">GenAI Node</a></li>
+<li><a href="../../../tools/tool-flows/types-of-nodes/gen-ai-node.md" target="_blank">GenAI Node</a></li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/function-node/" target="_blank">Function Node</a></li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/condition-node/" target="_blank">Condition Node</a></li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/" target="_blank">API Node</a></li>
@@ -253,8 +253,8 @@ You can expand any widget on the **Tools Analytics Dashboard** for a drill down 
 
 The widget-level filters include the following:
 
-* [Global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
-* [Tool Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}
+* [Global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
+* [Tool Performance Filters](../analytics/tools-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>

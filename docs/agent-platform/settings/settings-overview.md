@@ -7,7 +7,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../tools/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
 6. [Security and Control: Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
 
 ## Levels of Users Management 
@@ -78,7 +78,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
+- Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 
@@ -90,7 +90,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 To access the **Settings** Console on Agent Platform, follow the steps below:
 
-1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to Agent Platform using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 
 2. Click **Settings** on the top menu.
 <img src="../images/settings-menu.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
@@ -154,10 +154,10 @@ The following modules and features are supported on the **Settings** Console:
    <td>Manage the configured easy and custom integrations and connections in one place.</td>
    <td>
 <ul>
-<li><strong>Hugging Face</strong>: Import exclusive and private models into Agent Platform from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="https://docs.kore.ai/gale/settings/integrations/enable-hugging-face/"> Learn more</a>.</li>
-<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="https://docs.kore.ai/gale/settings/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
+<li><strong>Hugging Face</strong>: Import exclusive and private models into Agent Platform from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="../settings/integrations/enable-hugging-face/"> Learn more</a>.</li>
+<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="../settings/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
 <li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. 
-<a href="https://docs.kore.ai/gale/settings/integrations/integrate-with-wandb/">Learn more</a>.
+<a href="../settings/integrations/integrate-with-wandb/">Learn more</a>.
 </li>
 </ul>
    </td>

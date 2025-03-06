@@ -221,7 +221,7 @@ nav:
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
-        - Tools Analytics Dashboard: settings/monitoring/analytics/agent-analytics-dashboard.md      
+        - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
     - Security and Control:
