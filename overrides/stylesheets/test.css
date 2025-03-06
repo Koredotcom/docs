@@ -1,0 +1,4 @@
+.md-typeset .admonition.abstract .admonition-title::before {
+       display: none; 
+	   content:"";
+}
