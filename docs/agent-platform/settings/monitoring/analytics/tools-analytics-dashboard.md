@@ -231,15 +231,15 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <li>The <b>Number of Nodes Executed</b> (Y-axis) is fixed and accommodates the maximum rate limit subscription.</li>
 <li>A red line highlights the maximum rate limit.</li>
 <li>Hover over the required data point on the graph to view the following information:</li></ul>
-<ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li>
+<ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li></ul>
 
-* Start Node
-* [GenAI Node](../../../tools/tool-flows/types-of-nodes/gen-ai-node.md){:target="_blank"}
-* [Function Node](../../../tools/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
-* [Condition Node](../../../tools/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
-* [API Node](../../../tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
-* [DocSearch Node](../../../tools/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
-* [End Node](../../../tools/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
+   * Start Node
+   * [GenAI Node](../../../tools/tool-flows/types-of-nodes/gen-ai-node.md){:target="_blank"}
+   * [Function Node](../../../tools/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
+   * [Condition Node](../../../tools/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
+   * [API Node](../../../tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"}
+   * [DocSearch Node](../../../tools/tool-flows/types-of-nodes/docsearch-node.md){:target="_blank"}
+   * [End Node](../../../tools/tool-flows/types-of-nodes/end-node.md){:target="_blank"}
 
 <p><b>Best Practices</b></p>
 
