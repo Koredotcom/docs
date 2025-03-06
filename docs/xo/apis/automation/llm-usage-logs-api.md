@@ -95,7 +95,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
 ## Sample Request
 
 ```json
-curl --location 'https://bots.kore.ai/api/1.1/public/bot/st-f3195ec3-72aa-5317-92a2-1dcb78ced6d3/getLLMUsageLogs' \
+curl --location 'https://{{host}}/1.1/public/bot/st-f3195ec3-72aa-5317-92/getLLMUsageLogs' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -107,7 +107,7 @@ curl --location 'https://bots.kore.ai/api/1.1/public/bot/st-f3195ec3-72aa-5317-9
     "channel": ["msteams", "rtm"],
     "featureName": ["dynamicEntity"],
     "taskId": "dg-d4924db4-xxxx-5b4d-ae51-aa5c7be4xxxx",
-    "channelUserIds": ["29:1gmw8z03rvk6njl6k7ohtdhxxxx7kvu1yiek_qri4grpmd0k_d1yjlpzbj40wk1am9dphqkoiwatzwttw"],
+    "channelUserIds": ["29:1gmwl6k7ohtdhxxxx7kvu1yiek_qri4grpmd0k_am9dpzwttw"],
     "userIds": ["u-40b3eafc-xxxx-55f2-83e8-cf4d0fbxxxx"],
     "sort": {
         "field": "Time Taken",
