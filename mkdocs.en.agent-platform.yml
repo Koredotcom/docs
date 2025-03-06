@@ -115,6 +115,8 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing the Platform: getting-started/sign-up-sign-in.md          
+    - Quick Start Tutorials:  
+      - Getting Started with Agentic Apps: getting-started/quick-start-tutorials/getting-started-with-agentic-apps.md
   - Agentic Apps: 
     - Overview: agentic-apps/overview.md
     - Create Agentic App: agentic-apps/create-app.md
