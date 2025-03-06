@@ -4,23 +4,28 @@ We are excited to announce the first version of Agent Platform, our enterprise-g
 
 ## Comprehensive Capabilities
 
-The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to efficiently scale and manage AI deployments.
+The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to develop, deploy, and manage AI applications efficiently.
 
-* Intelligent Agent Orchestration for automating complex workflows.
+* Advanced multi-agent orchestration for complex workflows.
 
-* Low-code and custom coding options for building tailored AI solutions.
+* No-code interface for rapid development by technical and non-technical users.
 
-* Flexible model management supporting fine-tuning, open-source, and external models.
+* Search and data connectors for Agentic RAG capabilities.
 
-* Collaborative prompt engineering with curated libraries and version control.
+* Prompt management and evaluation systems for optimizing AI behavior.
 
-* Robust security controls, encryption, audit trails, and compliance measures.
+* Enterprise-grade safety controls and comprehensive observability.
 
-* End-to-end observability and explainability of AI decision-making.
+* Standardized Agent Protocol for interoperability between AI systems.
 
-* Continuous evaluation and optimization using AI analysis and human feedback.
+* Pre-built templates and solutions in the marketplace for accelerated development.
 
-* Enterprise-grade infrastructure with containerization, CI/CD, and seamless integration.
+* Extension SDKs for custom AI solutions.
+
+* Proven scalability and reliability for mission-critical applications.
+
+* Built-in compliance, audit trails, and security for reduced regulatory risk.
+
 
 ## Key Components
 The Platform's capabilities are powered by its key components that work together to deliver comprehensive automation solutions throughout your organization.
