@@ -4,7 +4,7 @@
 
 The **Tools Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
 
-It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../agents/agents-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
+It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../tools/agents-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
 
 Key metrics are displayed intuitively using visually engaging graphs and dynamic widgets, which update based on the selected filters. 
 
@@ -284,7 +284,7 @@ The **Tools Analysis Dashboard** offers actionable and customized insights on th
 ## Related Information
 
 * [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
-* [Tool Flow Change Logs](../../../agents/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Tool Flow Change Logs](../../../tools/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.

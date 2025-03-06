@@ -15,7 +15,7 @@ Steps to add and configure the node:
 3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, drag the **API** node from the Assets panel onto the canvas.)
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
+<img src="./../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
 
 5. Enter or select the following information:
 
@@ -37,7 +37,7 @@ Steps to add and configure the node:
             * Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
     * **Request Definition**: Define the service request details to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
-    <img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+    <img src="./../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
         1. Select the request type from the list.
         2. Paste your API Endpoint URL or cURL in the text field.
         3. In the **Headers** tab, specify the details of the Key and Value pair. For example,
@@ -52,7 +52,7 @@ Steps to add and configure the node:
         6. Click **Save** at the top-right corner of the dialog.
 
 6. Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.  
-<img src="../images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;">
 
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. 
     

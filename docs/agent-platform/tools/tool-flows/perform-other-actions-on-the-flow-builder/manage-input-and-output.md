@@ -18,14 +18,14 @@ Once the input and output variables are defined, you can access these variables 
 
 1. On the top of the Tool flow canvas, click the **Manage I/O** button.
 Alternatively, you can click the **Start** node. The **Manage Input & Output** dialog is displayed.  
-<img src="../images/adding_input_output_variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/adding_input_output_variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;">
 
 
 2. On the **Input** tab, click the **+ Add input variable** button.
 
     The **Enter input variable** dialog is displayed.
 
-    <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;">
+    <img src="./../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;">
 
 3. In the **Name (key)** field, provide a name for the input variable. For example, Product_ID.
 
@@ -36,7 +36,7 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
     
     *  If you select the **Remote file** data type, the **File url timeout** field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
                           
-         <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
+         <img src="./../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;">
  
 5. Click **Save**. The input variable is displayed on the Input tab of the **Manage Input & Output** dialog.
 
@@ -46,7 +46,7 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 1. On the top of the canvas of the Tools page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
 2. On the **Output** tab, click the **+ Add output variable** button. The **Enter output variable** dialog is displayed.  
- <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:50%;">
+ <img src="./../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:50%;">
 
 3. In the **Name (key)** field, provide a name for the output variable.
 

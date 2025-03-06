@@ -2,7 +2,7 @@
 
 Using import functionality, you can create a new tool or add it as a version to an existing tool in your account. The import process preserves tool configuration while handling environment variables, errors, and role permissions.
 
-Creating a new tool involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported tool a unique name to avoid conflicts with existing tool. [Learn more](./import-an-agent.md/#import-to-create-a-new-agent){:target="_blank"}.
+Creating a new tool involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported tool a unique name to avoid conflicts with existing tool. [Learn more](./import-a-tool.md#import-to-create-a-new-agent){:target="_blank"}.
 
 When importing a tool version to a parent tool, the imported flow definition becomes the new in-dev version, overriding the flow, app definition, and environment variable files. The previous version is renamed and saved in the list, with optional backup of the current version available.
 
@@ -16,7 +16,7 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 
 To initiate a tool creation journey through the import functionality, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
+1. [Sign in](../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
 2. Click **Tools** on the top menu.
 3. Do one of the following based on your requirements:
 
@@ -70,7 +70,7 @@ When you import an tool as a version, you must upload all the following files:
 
 * **Flow definition file**: Upload the required **flow_definition.json** file from your local directory. The file includes the tool's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.
 * **App definition file**: Upload the required **app_definition.json** file, which includes general information about the tool version and guardrails.
-* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the tool. Any conflicts between environment variables in the parent tool and the imported version must be resolved. [Learn more](../agents/configure-an-agent.md/#manage-environment-variables){:target="_blank"}.
+* **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the tool. Any conflicts between environment variables in the parent tool and the imported version must be resolved. [Learn more](./configure-a-tool.md#manage-environment-variables){:target="_blank"}.
 
 ### Steps to Import a Tool
 
@@ -80,7 +80,7 @@ When you import an tool as a version, you must upload all the following files:
 
 To import a tool as a version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
+1. [Sign in](../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
 2. Click **Tools** on the top menu.
 3. Click the tool in the listing to proceed further.
 4. Click **Configurations** on the left menu.
@@ -143,7 +143,7 @@ To cancel the import process during the conflicting environment variables resolu
 
 ## Related Links
 
-* [Create a Tool](../agents/create-a-new-agent.md){:target="_blank"}- Create a new tool and configure its flow.
-* [Export a Tool](../agents/export-an-agent.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
-* [Deploy a Tool](../agents/deploy-an-agent.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
-* [Configure a Tool](../agents/configure-an-agent.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.
+* [Create a Tool](./create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
+* [Export a Tool](./export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
+* [Deploy a Tool](./deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
+* [Configure a Tool](./configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.

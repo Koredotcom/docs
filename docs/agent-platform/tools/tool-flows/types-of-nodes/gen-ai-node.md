@@ -15,7 +15,7 @@ Steps to add and configure the node:
 3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **Gen AI** from the pop-up menu. (Alternatively, drag the **Gen AI** node from the Assets panel onto the canvas.)  
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:20%;">
+<img src="./../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:20%;">
 
 5. Enter or select the following **General Settings**:
 
@@ -27,7 +27,7 @@ Steps to add and configure the node:
             * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
             Syntax: `{{context.variable_name}}`
             Example: `{{context.conversation}}`  
-        <img src="../images/write_your_own_prompt.png" alt="Write your own prompt" title="Write your own prompt" style="border: 1px solid gray; zoom:70%;">
+        <img src="./../images/write_your_own_prompt.png" alt="Write your own prompt" title="Write your own prompt" style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
@@ -38,7 +38,7 @@ Steps to add and configure the node:
         2. **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
             * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.
             * To edit the prompt, click the **Customize** option. The ‘Custom Prompt’ view is displayed, where the prompt from Prompt Studio will be populated in both the system and human prompt fields. You can then modify the prompt while preserving the selected version.  
-        <img src="../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
+        <img src="./../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
 
         !!! note
 
@@ -66,7 +66,7 @@ Steps to add and configure the node:
         * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
 
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
-        <img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
+        <img src="./../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
 
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
 
@@ -87,7 +87,7 @@ Steps to add and configure the node:
             * **Tool choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a tool call (Auto), or if a tool call is required every time (Required). The default setting is Auto.
             * **Parallel tool calls**: Select *True* to enable the model to execute multiple tool calls simultaneously. Select *False* if you want the model to execute tool calls sequentially, optimizing for the best possible outcome.  
         
-    <img src="../images/tool_calling_configuration.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/tool_calling_configuration.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
 
 8. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
 

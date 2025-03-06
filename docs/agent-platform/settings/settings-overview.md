@@ -6,7 +6,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
-5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
+5. [Manage Guardrails](../tools/guardrails/manage-guardrails.md){:target="_blank"} 
 6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
 6. [Security and Control: Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}
 
@@ -73,7 +73,7 @@ Integrate connections for [Weights & Biases](../settings/integrations/integrate-
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../agents/guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../tools/guardrails/manage-guardrails.md){:target="_blank"}.
 
 **Monitoring**
 

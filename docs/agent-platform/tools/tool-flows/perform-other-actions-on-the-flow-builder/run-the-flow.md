@@ -9,7 +9,7 @@ The output includes key information such as the start and end times, the total t
 
 1. On the top right corner of the tool canvas, click the **Run flow** icon.
 
-    <img src="../images/run-the-flow.png" alt="Run the Flow" title="Run the Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="./../images/run-the-flow.png" alt="Run the Flow" title="Run the Flow" style="border: 1px solid gray; zoom:80%;">
 
     The Run dialog opens, displaying the Input, Flow log, and Output sections.
 
@@ -17,14 +17,14 @@ The output includes key information such as the start and end times, the total t
     The debug log starts showing the output results as the flow executes.
 
 
-    <img src="../images/debug-icon.png" alt="Debug Icon" title="Debug Icon" style="border: 1px solid gray; zoom:80%;">
+    <img src="./../images/debug-icon.png" alt="Debug Icon" title="Debug Icon" style="border: 1px solid gray; zoom:80%;">
 
     
 3. View flow success or failure:
     * Successful Flow: If the flow completes successfully, you can copy the output results using the Copy icon. The overall runtime flow, showing the total execution time, is also displayed for reference.
     * Flow Errors: If errors occur, an error message will be displayed. Additionally, the output key will appear empty, and the output will be shown in JSON format, indicating a failure within the flow.  
 
-    <img src="../images/error-in-the-debug-report.png" alt="Error in the Debug Report" title="Error in the Debug Report" style="border: 1px solid gray; zoom:80%;">
+    <img src="./../images/error-in-the-debug-report.png" alt="Error in the Debug Report" title="Error in the Debug Report" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 

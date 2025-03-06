@@ -17,10 +17,10 @@ Steps to access the tool monitor page:
     * **All runs**
     * **Model runs**
 
-    For more information, see [Understanding Tool Monitor](../agent-monitor/understanding-the-agent-monitor-interface.md).
+    For more information, see [Understanding Tool Monitor](./understanding-the-agent-monitor-interface.md).
 
 6. Click each row for detailed information on each tool run or model run. A detailed view panel opens on the right.  
 
-    For more information, see [Viewing detailed run information](../agent-monitor/understanding-the-agent-monitor-interface.md#viewing-detailed-run-information).
+    For more information, see [Viewing detailed run information](./understanding-the-agent-monitor-interface.md#viewing-detailed-run-information).
 
-7. (Optional) To filter or search the list of runs or calls on the Tool monitor page, see [Searching and filtering](../agent-monitor/understanding-the-agent-monitor-interface.md#searching-and-filtering-information).
+7. (Optional) To filter or search the list of runs or calls on the Tool monitor page, see [Searching and filtering](./understanding-the-agent-monitor-interface.md#searching-and-filtering-information).
