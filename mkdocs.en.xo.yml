@@ -318,6 +318,8 @@ nav:
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - BitBucket: searchai/content-sources/connectors/bitbucket.md
                 - Box: searchai/content-sources/connectors/box.md
+                - ClickUp: searchai/content-sources/connectors/clickup.md
+                - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
@@ -356,6 +358,7 @@ nav:
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
                 - Zulip: searchai/content-sources/connectors/zulip.md
+                - Zoom: searchai/content-sources/connectors/zoom.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
@@ -499,8 +502,10 @@ nav:
           - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
           - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
           - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
+        - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
+      - Streaming Responses: generative-ai-tools/streaming-responses.md 
     - GenAI Features:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md

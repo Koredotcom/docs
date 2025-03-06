@@ -112,9 +112,7 @@ From the node’s **Connections** tab, you can determine the node in the dialog 
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
-
-<img src="../images/form-node-img12-connection-properties.png" alt="Form node - Connection properties" title="Form node - Connection properties" style="border:1px solid gray;zoom:70%;">
+For details on how to work with connection conditions, please see [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 
 The Connection Path property offers three default variants:
 

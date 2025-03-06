@@ -170,8 +170,8 @@ The following table displays the features and the supported models.
 
     |Model|Answer Generation|Vector Generation|Query Rephrasing|
     |:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|❌|
-    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|❌|❌|
+    |Azure OpenAI – <br>GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|❌|❌|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|❌|❌|
     |Provider's New LLM**|✅|❌|❌|
     |Custom LLM|✅|✅|❌|
     |Kore.ai XO GPT|✅|✅|✅|

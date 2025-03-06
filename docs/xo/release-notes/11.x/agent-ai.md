@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
-## v11.11.0 March 4, 2025
+## v11.11.0 March 04, 2025
 
 <u>Minor Release</u>
 
@@ -48,10 +48,6 @@ Kore has included a new option, **Interactive Language**, in the **Default Langu
 #### Support for associating a Single Bot with Multiple Queues in Genesys Cloud CX
 
 To streamline bot management, improve efficiency, and reduce maintenance cost, Kore now provides the ability to associate a single bot with multiple Genesys Cloud CX queues.
-
-#### Offline Agent AI integration with F9
-
-Agent AI in Offline mode is now integrated with the Five9 Voice Channel.
 
 #### Agent AI Voice integration with CX Cloud from Genesys and Salesforce
 
