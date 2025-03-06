@@ -24,7 +24,7 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
 * **Configurable Meta filters**
 
     * You can configure optional meta filters to narrow the search field with the query.
-    * If meta filters are not provided, the query is applied to all the documents uploaded to that connection. [Learn more](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"}.
+    * If meta filters are not provided, the query is applied to all the documents uploaded to that connection. [Learn more](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
 
 * **Redirection Capability**
 
@@ -47,9 +47,9 @@ By connecting to your **Search AI** App, the DocSearch Node provides high-qualit
 
 Configuring the DocSearch Node consists of the following steps:
 
-1. [Set up a Search AI application and the information source for Agent Platform integration](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in Agent Platform](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"}.
-3. [Add and configure the DocSearch node](./docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
+1. [Set up a Search AI application and the information source for Agent Platform integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
+2. [Link the Search AI application in Agent Platform](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 
 ## Step 1: Set up Search AI App
 
@@ -68,8 +68,8 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in Agent Platform**
 
-1. [Sign in](../../../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
-2. [Navigate](../../../settings/settings-overview.md#access-settings-console){:target="_blank"} to the **Settings** console.
+1. [Sign in](../../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
+2. [Navigate](../../../settings/settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** console.
 3. Click **Integrations** on the left navigation menu.
 4. Scroll down to **Search AI** and click **Link an App**.
 <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
@@ -113,7 +113,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 
 <ol start="5"><li>Enter an input variable for dynamic inputs or plaintext for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-gale" target="_blank">Step 2</a> on the Agent Platform integration page.
+<li>Select the <b>Search AI connection</b> you set up in <a href="https://agentplatform-kore.github.io/docs/agent-platform/tools/tool-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
 <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">
