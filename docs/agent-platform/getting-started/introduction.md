@@ -4,7 +4,7 @@ We are excited to announce the first version of Agent Platform, our enterprise-g
 
 ## Comprehensive Capabilities
 
-The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to develop, deploy, and manage AI applications efficiently.
+The Agent Platform offers comprehensive capabilities across the AI lifecycle, empowering organizations to efficiently scale and manage AI deployments.
 
 * Advanced multi-agent orchestration for complex workflows.
 
