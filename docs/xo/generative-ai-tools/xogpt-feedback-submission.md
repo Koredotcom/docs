@@ -1,7 +1,7 @@
 
 # XO GPT Feedback Submission
 
-We value your feedback to help refine and improve our XO GPT models. This guide explains how to provide effective feedback and outlines the steps we follow to incorporate it.
+We value your feedback to help refine and improve our XO GPT models. This document explains how to provide effective feedback and outlines the steps we follow to incorporate it.
 
 
 ## Providing Effective Feedback
@@ -39,7 +39,7 @@ To provide structured and actionable feedback, categorize the errors into types 
 
 ### Identify the Use Cases:
 
-Specify the context in which the error occurs, such as ‘Address Update’, ‘Medical Claim Processing’, ‘Customer Support Queries’ or ‘Financial Transactions’
+Specify the context in which the error occurs, such as ‘Address Update’, ‘Medical Claim Processing’, ‘Customer Support Queries’, or ‘Financial Transactions’.
 
 
 ### Lock Sample Sets for Evaluation:
@@ -50,11 +50,11 @@ Specify the context in which the error occurs, such as ‘Address Update’, ‘
 * Track new issues separately with fresh sample sets to avoid overlap.
 
 
-### Submit a Support Ticket:
+### Submit a Support Ticket
 
 
 
-* When recurring issues are identified, submit a support ticket with the relevant sample set, identified patterns, and other helpful information for further analysis. 
+* When recurring issues are identified, [submit a support ticket](https://support.kore.ai/hc/en-us/requests) with the relevant sample set, identified patterns, and other helpful information for further analysis. 
 * Use the following format:
 
 <table>
@@ -114,23 +114,15 @@ If you have any questions regarding data handling or standards, please contact o
 
 ## Feedback Workflow and Next Steps
 
-**Step 1:** Submit Feedback
+**Step 1:** Submit Feedback: Provide detailed feedback with relevant examples, context, and the expected output.
 
-Provide detailed feedback with relevant examples, context, and the expected output.
+**Step 2:** Analysis and Scope Definition: Our team will review the feedback to determine the scope of necessary improvements.
 
-**Step 2:** Analysis and Scope Definition
+**Step 3:** Data Collection (if required): We may request additional data from your end to improve the model's accuracy.
 
-Our team will review the feedback to determine the scope of necessary improvements.
-
-**Step 3:** Data Collection (if required)
-
-We may request additional data from your end to improve the model's accuracy.
-
-**Step 4:** Model Training and Refinement
-
-The model will be updated and fine-tuned based on the feedback and any new data provided.
+**Step 4:** Model Training and Refinement: The model will be updated and fine-tuned based on the feedback and any new data provided.
 
 
 ## Continuous Improvement Cycle
 
-We encourage ongoing feedback to refine and adapt the model as your business needs evolve. Every round of feedback should focus on new issues and use updated sample sets for accurate evaluations.
+We encourage ongoing feedback as your business needs evolve. Each feedback round should focus on new issues and use updated sample sets for accurate evaluations.

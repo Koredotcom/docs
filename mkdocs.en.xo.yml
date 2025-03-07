@@ -318,6 +318,8 @@ nav:
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - BitBucket: searchai/content-sources/connectors/bitbucket.md
                 - Box: searchai/content-sources/connectors/box.md
+                - ClickUp: searchai/content-sources/connectors/clickup.md
+                - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
@@ -355,7 +357,9 @@ nav:
                 - Wrike: searchai/content-sources/connectors/wrike.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
+                - Zoom: searchai/content-sources/connectors/zoom.md
                 - Zulip: searchai/content-sources/connectors/zulip.md
+
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
@@ -508,9 +512,9 @@ nav:
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
     - DialogGPT:
       - Overview: generative-ai-tools/dialog-gpt.md
-      - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
-      - DialogGPT FAQs: generative-ai-tools/dialog-gpt-faq.md  
-      - Rollout Plan: generative-ai-tools/dialog-gpt-upcoming-features.md
+      - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
+      - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
+      - Rollout Plan: generative-ai-tools/dgpt-upcoming-features.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
