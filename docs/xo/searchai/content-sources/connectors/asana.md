@@ -36,6 +36,10 @@ Note that sub-tasks and attachments are not supported.
   </tr>
 </table>
 
+## Prerequisites
+
+* Admin account with access to the required projects and tasks. 
+
 ## Authorization Support
 
 Search AI supports the **OAuth 2.0 authorization code grant type** to access the content on Asana. 
@@ -48,9 +52,9 @@ This requires creating a client application on the Asana application. Follow the
 * Go to the [Asana developer console](https://app.asana.com/). 
 * Create a new app and provide the basic details.  
 * Go to the OAuth page and enter the Redirect URL. Depending upon your region or the deployment, you can use one of the following URLs as the Redirect URL.
-* JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-* DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-* Prod Region Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+  * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
+  * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
+  * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 * Copy the client credentials for the app. These credentials are used to configure the Asana connector in Search AI.
 * Go to the Manage Distribution page and set the distribution method to ‘Any Workspace’. 
 * Save Changes. 
@@ -80,11 +84,11 @@ After the Search AI connector is successfully connected to the Asana application
 
 Asana Connector currently ingests only **Projects** and the **Tasks** associated with the projects into the Search AI application. 
 
-* For Projects, the following fields are fetched and added to the **content **field of the ingested content. 
+* For Projects, the following fields are fetched and added to the **content** field of the ingested content. 
     * Project Description
     * Project Owner
     * Completed
-* For Tasks, the following fields are provided in the **content **field of the ingested content.
+* For Tasks, the following fields are provided in the **content** field of the ingested content.
     * Task Description
     * Project
     * Completed
