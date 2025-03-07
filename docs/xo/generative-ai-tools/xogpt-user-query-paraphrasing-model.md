@@ -102,7 +102,7 @@ Our model is designed to safeguard information by ensuring that no client or use
 
     The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
-<img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer03.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 ### Use Cases
 
@@ -261,40 +261,10 @@ This section highlights the features, updates, and changes that vary across diff
 
 The following table summarizes the versions covered in this document:
 
+| Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
+|--------------|----------|------------------|---------------|----------------------|----------------------|
+| Version 1.0  | 97%      | 43               | 0.54          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx) |
 
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Accuracy
-   </td>
-   <td>Tokens / sec (TPS)
-   </td>
-   <td>Latency (secs)
-   </td>
-   <td>Benchmark Comparison
-   </td>
-   <td>Test Data & Results
-   </td>
-  </tr>
-  <tr>
-   <td>Version 1.0
-   </td>
-   <td>97%
-   </td>
-   <td>43
-   </td>
-   <td>0.54
-   </td>
-   <td>
-
-<a href="#benchmarks-summary">Benchmark summary</a>
-   </td>
-   <td><a href="../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx">Test date and results spreadsheet</a>
-
-   </td>
-  </tr>
-</table>
 
 
 
@@ -520,13 +490,13 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
   </tr>
 </table>
 
-### Benchmarks Summary
+### Benchmarks Summary v1
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
 * Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI.
 * GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI.
 
-<img src="../images/user01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/user01.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper [Test Data and Results V2.0](../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx) report.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. For a deeper dive into the evaluation process and results, refer to the [Test Data and Results v1](../test-date-and-results/xogpt-user-query-paraphrasing-v1.0.xlsx) report.

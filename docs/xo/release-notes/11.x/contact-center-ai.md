@@ -2,6 +2,100 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.11.0 March 04, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Console
+
+#### Agent Channel Selection Control
+
+Added new permission that enables you to configure custom roles to select the interaction type for upcoming interactions from the following options:
+
+* Voice & Digital
+* Voice
+* Digital  
+<img src="../images/channel-selection-dropdown.png" alt="Channel Selection" title="Channel Selection" style="border: 1px solid gray; zoom:80%;">
+
+Key Benefits:
+
+* Workload Control: Ability to focus on preferred interaction types.
+* Reduced Context Switching: Focus on a single channel at a time.
+* Improved Efficiency: Better management of interaction flow.
+* Clear Status: Visual indication of current channel selection.
+
+[Learn more :octicons-arrow-right-24:](../../console/managing-incoming-interactions.md#channel-selection)
+
+### Configuration
+
+#### Summarization with External Models in Contact Center AI
+
+Contact center admins can configure and integrate custom AI models, supporting additional languages and tailored summarization prompts.
+
+Key benefits
+
+* Contact Center Admins
+    * Configure external Gen AI models and define custom summarization prompts.
+    * Manage summarization across additional languages via custom models.
+    * Extend summarization capabilities beyond native Contact Center AI support.
+* Agents
+    * Leverage external AI models for more flexible and accurate conversation summaries.
+    * Ensure consistent summarization across multiple languages and use cases.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md)
+
+#### Enable/Disable Conversations to Wait Till Queue Timeout
+
+This configurable setting allows supervisors and admins to enable or disable the waitTillQTimeout property. This enhancement provides better control over how long conversations wait in the queue before transitioning to the no-agent-available flow.
+
+Key benefits
+
+* Provides greater flexibility in handling agent unavailability scenarios.
+* Ensures better visibility into waiting conversations, allowing supervisors to intervene.
+* Reduces missed interactions by notifying agents of potential SIP registration issues.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
+
+### Campaigns
+
+#### Full Access to Mapped and Unmapped Contact Fields in Campaigns
+
+All mapped and unmapped fields from Contact List records are now accessible in Dialog Tasks and Experience Flows via the `UserSession` context object. Developers can retrieve `metaInfo` data through the context object for seamless integration.
+
+Advanced SMS and Agentless Dialer Campaigns can use mapped and unmapped contact fields, enabling dynamic customer interactions. Campaign managers can utilize contact record fields in the `UserSession` context object to build more personalized SMS campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#accessing-the-contact-list-fields-through-their-labels)
+
+### Analytics
+
+#### Center-Wide Wallboards
+
+A new wallboard is introduced for comprehensive center-wide data visualization.
+
+Key features
+
+* New Tab Display: Dedicated browser tab view for wallboard display
+* Full-Screen Capability: Optimized for HDTV displays
+* Resolution: 4K support (3840 × 2160 pixels)
+* Aspect Ratio: 16:9
+* Live Data Updates: 60-second refresh cycle with real-time field updates
+* Fixed Layout Design: Standardized, non-customizable widget arrangement
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md)
+
+
+#### Interaction Details by Segment Report
+
+The Interaction Details by Segment Report is a comprehensive report that covers how all interactions were processed for each segment. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/interaction-details-by-segment.md)
+
+#### “Today” Added to Service Level Time-Period Filter
+
+**Monitor** > **Service Levels**
+
+The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#time-intervals)
+
+<hr>
+
 ## v11.10.0 February 12, 2025
 
 <u>Minor Release</u>

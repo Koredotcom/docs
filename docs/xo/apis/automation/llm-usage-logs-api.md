@@ -60,7 +60,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
     You can access records spanning up to a 90-day timeframe with one request.
 
 
-## **Query Parameters**
+## Query Parameters
 
 
 <table>
@@ -95,22 +95,23 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
 ## Sample Request
 
 ```json
- --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy03ZWMxNmFjZS03ZGNmLTU3MjQtYjM5NS1hYTA4YmRmYTAwMzMifQ.n_Es9ZBsiCYzpzsfN4p4I1SlHK05gewJFyqAIngr4Qg' \
+curl --location 'https://{{host}}/1.1/public/bot/st-f3195ec3-72aa-5317-92/getLLMUsageLogs' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data '{
     "dateFrom": "2024-03-07",
-    "dateTo":"2024-03-09",
-    "limit":"1",
-    "skip" : "5",
+    "dateTo": "2024-04-26",
+    "limit": "50",
+    "skip": "5",
     "isDeveloper": true,
-    "channel" : "msteams",
-    "featureName" : ["dynamicEntity"],
-    "taskId" : "dg-d4924db4-b325-5b4d-ae51-aa5c7be41d4f",
-    "channelUserIds":["29:1gmw8z03rvk6njl6k7ohtdh2v9zubxiip7kvu1yiek_qri4grpmd0k_d1yjlpzbj40wk1am9dphqkoiwatzwttw"],
-    "userIds" : ["u-40b3eafc-a5aa-55f2-83e8-cf4d0fb1de07"],
-    "sort" : {
-        "field" : "Time Taken",
-        "order" : "desc"
+    "channel": ["msteams", "rtm"],
+    "featureName": ["dynamicEntity"],
+    "taskId": "dg-d4924db4-xxxx-5b4d-ae51-aa5c7be4xxxx",
+    "channelUserIds": ["29:1gmwl6k7ohtdhxxxx7kvu1yiek_qri4grpmd0k_am9dpzwttw"],
+    "userIds": ["u-40b3eafc-xxxx-55f2-83e8-cf4d0fbxxxx"],
+    "sort": {
+        "field": "Time Taken",
+        "order": "asc"
     }
 }'
 ```
@@ -197,7 +198,7 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
    </td>
    <td>Optional
    </td>
-   <td>To sort the results.
+   <td>To sort the results by Time Taken in the specified order (asc or desc).
    </td>
   </tr>
 </table>
@@ -215,13 +216,13 @@ See<a href="../api-introduction/#generating-the-jwt-token"> How to generate the 
 "End Date": "2024-03-08T06:38:58.386Z",
 "Time Taken": 4378,
 "statusCode": 200,
-"Bot ID": "st-73bfdb2f-9101-55e6-b4c8-3f568a6ea8e0",
-"User ID": "u-40b3eafc-a5aa-55f2-83e8-cf4d0fb1de07",
+"Bot ID": "st-73bfdb2f-xxxx-55e6-b4c8-3f568a6exxxx",
+"User ID": "u-40b3eafc-xxxx-55f2-83e8-cf4d0fb1xxxx",
 "Feature Name ": "GenAI Node",
 "Model Name": "GPT-4",
 "Channel Name": "msteams",
 "Description": "Order pizza-GenAINode0002",
-"task Id": "dg-200ad1ff-8db8-5219-810e-4ee3800d212c",
+"task Id": "dg-200ad1ff-xxxx-5219-810e-4ee3800dxxxx",
 "Status": "Success",
 "Payload Details": {
 "Prompt Name": "Default",

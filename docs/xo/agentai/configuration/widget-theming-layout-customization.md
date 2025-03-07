@@ -72,4 +72,75 @@ This section lets you enable, disable, and customize the placement of the action
 To shuffle these action buttons, drag-and-drop their names under the **Assist Action Menu Layout > Icons Displayed** section. The following screenshot shows shuffling of the **Sentiment** button with the **Restart** button:  
 <img src="../widget-theming-layout-customization/assist-action-menu-shuffling.jpg" alt="assist-action-menu-shuffling" title="assist-action-menu-shuffling" style="border: 1px solid gray; zoom:80%;">
 
+## Dialog Task Layout
 
+The Dialog Task Layout section enables you to enhance the management and customization of dialog tasks within the widget. Here, you can arrange and group dialog tasks to display in the Library during runtime. Dialog tasks not added to a group don’t appear at runtime. The key features of this section are:
+
+* Dialog Task Search
+* Dialog Task Sorting
+* Dialog Task Grouping
+
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-layout-1.png" alt="dialog-task-layout" title="dialog-task-layout" style="border: 1px solid gray; zoom:80%;">
+
+### Dialog Task Search
+
+This feature lets you easily search for dialog tasks, like searching a word within a web page. To search for a dialog task:
+
+1. Click the “search” button on the top-right corner of the **Dialog Task Layout** section.
+2. Enter a few letters of the dialog task name. As you enter the letters, matching letters in the existing dialog tasks are highlighted, with the number of occurrences. Up and down arrows also appear to let you easily navigate to the intended dialog task. The following screenshot shows the search result of the letters “com,” along with the occurrence count and navigation arrows:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-search-2.png" alt="dialog-task-search" title="dialog-task-search" style="border: 1px solid gray; zoom:80%;">
+
+### Dialog Task Sorting
+
+This feature allows you to sort dialog tasks for improved accessibility. You can sort them alphabetically and reorder them by moving any dialog task up or down the list.
+
+* To sort dialog tasks alphabetically, click the **up** or **down arrow** at the top of the dialog task list:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-sorting-3.png" alt="dialog-task-sorting" title="dialog-task-sorting" style="border: 1px solid gray; zoom:80%;">
+
+* To reorder the list by moving a dialog task to the top or bottom, click the **up** or **down arrow** against a dialog task:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-reordering-4.png" alt="dialog-task-reordering" title="dialog-task-reordering" style="border: 1px solid gray; zoom:80%;">
+
+### Dialog Task Grouping
+
+This feature allows you to organize dialog tasks into groups. During group creation, up to five selected dialog tasks are displayed, with additional dialog tasks visible if “Show All” is clicked. Group names must be unique. A single dialog task can be associated with multiple groups. You can add, edit, and delete groups, as well as add, sort, and remove dialog tasks within a group.
+
+!!! note
+
+    Dialog tasks not added to a group don’t show up during runtime.
+
+
+### Adding a Dialog Task Group
+
+1. Click **+ Add Group** at the top-right corner of the **Dialog Task Layout** section.  
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-grouping-5.png" alt="dialog-task-grouping" title="dialog-task-grouping" style="border: 1px solid gray; zoom:80%;">
+2. Enter a unique name in the **Group Name** field.
+3. Click the **Add Dialog Task** field to display all the existing dialog tasks.
+4. Click to select the dialog task names. You can also click the “search” button to find a dialog task.
+5. Click **Apply** to complete the dialog tasks selection process.
+6. Click **Create**.  
+<img src="../widget-theming-layout-customization/dialog-task-layout/adding-group-6.png" alt="adding-group" title="adding-group" style="border: 1px solid gray; zoom:80%;">
+
+### Editing or Deleting a Dialog Task Group
+
+In this section, you can modify the Dialog Task Group name and add or remove dialog tasks from the group.
+
+1. To edit a Dialog Task Group, click the “edit” button against the Dialog Task Group name:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-group-editing-7.png" alt="dialog-group-editing" title="dialog-group-editing" style="border: 1px solid gray; zoom:80%;">
+
+2. Make all the required changes, and click **Save**.  
+<img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-group-saving-8.png" alt="dialog-task-group-saving" title="dialog-task-group-saving" style="border: 1px solid gray; zoom:80%;">
+3. To delete a Dialog Task Group, click the “delete” button against it:  
+<img src="../widget-theming-layout-customization/dialog-task-layout/group-deleting-9.png" alt="group-deleting" title="group-deleting" style="border: 1px solid gray; zoom:80%;">
+4. Click **Delete** in the confirmation window.
+
+### Add, Sort, and Delete dialog tasks from a Dialog Task Group
+
+This section explains the process of adding, removing, and sorting dialog tasks within a Dialog Task Group:
+
+1. To sort the dialog tasks alphabetically or reorder them, click the **up** and **down arrows** at the right-top corner of the Dialog Task Layout page and the arrows against the dialog task.
+2. To add or remove dialog tasks, click the “edit” button against the **Dialog Task Group**:
+    1. To add dialog tasks, click the **Add Dialog Task** dropdown list, and click to select the dialog tasks from the list.
+    2. To remove a dialog task, click the “cross” mark against it. You can also click **Clear All** to remove all the dialog tasks from the Dialog Task Group.  
+    <img src="../widget-theming-layout-customization/dialog-task-layout/dialog-task-removal-deletion-in-group-10.png" alt="dialog-task-removal-deletion-in-group" title="dialog-task-removal-deletion-in-group" style="border: 1px solid gray; zoom:80%;">
+
+    3. Click **Save** to end the process.

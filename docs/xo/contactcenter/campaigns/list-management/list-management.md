@@ -112,32 +112,31 @@ Steps to pull  the contacts using API Integration:
     <img src="../images/apiintegration.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **API Integration** to select to configure the API and add records to the contact list.  
-    <img src="../images/newlist.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/newlist.png" alt="New List" title="New List" style="border: 1px solid gray; zoom:80%;">
 
 4. Select the Method and enter the URL.  
-    <img src="../images/geturl.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/get-url.png" alt="Get URL" title="Get URL" style="border: 1px solid gray; zoom:80%;">
 
 5. Select the **Data Sync Interval** from the dropdown. Sync intervals ensure that updates in the database are reflected in the contact lists without a manual refresh. You can select an interval of up to 24 hours.  
-    <img src="../images/syncinterval.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/data-sync-interval.png" alt="Sync Interval" title="Sync Interval" style="border: 1px solid gray; zoom:80%;">
 
 6. Select the **Data Sync Mode**. You can choose from the following options:
     1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they will not be contacted again.
     2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again. 
 
-        <img src="../images/apisyncmodenew.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/apisyncmodenew.png" alt="Sync Mode" title="Sync Mode" style="border: 1px solid gray; zoom:80%;">
 
 7. Configure the authorization profile for the request.  
-    <img src="../images/auth.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/authorization.png" alt="Authorization" title="Authorization" style="border: 1px solid gray; zoom:80%;">
 
 8. If the header is selected in the Add to field, click the **Headers** tab and click the box “**Click here to add headers**”.  
-    <img src="../images/headers.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/header.png" alt="Headers" title="Headers" style="border: 1px solid gray; zoom:80%;">
 
 9. Enter the **Key-Value** pairs and click **Next**.  
-    <img src="../images/keyvalue.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/keyvalue-pairs.png" alt="Key-Value Pairs" title="Key-Value Pairs" style="border: 1px solid gray; zoom:80%;">
 
-10. Click **Test**. The response is displayed on the **Test Response** tab.  
-    <img src="../images/testresponse.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+10. Click **Validate**. The response is displayed.  
+    <img src="../images/validate.png" alt="Validate" title="Validate" style="border: 1px solid gray; zoom:70%;">
 
 11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
     * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John", you would enter "firstName" in the field mapping.
@@ -155,10 +154,74 @@ Steps to pull  the contacts using API Integration:
         You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields.  
             <img src="../images/fieldmapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-    * Ensure that the phone numbers are in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
+    * Ensure that the phone numbers are in E.164 format with Country Code, Area Code, Subscriber Number, and within double inverted quotes.
 
 12. Click **Save**. The contact list is fetched from the third-party database.
 
+#### Accessing Contact List Field Labels and Values
+
+Advanced SMS and Agentless Dialer Campaigns can use mapped and unmapped contact fields for enhanced personalization. The `UserSession` [context object](../../../automation/intelligence/context-object.md) provides access to all mapped and unmapped fields from Contact List records within Dialog Tasks and Experience Flows, ensuring seamless integration across workflows. Campaign managers can use these fields to build more effective SMS campaigns.
+
+#### Extracting Contact List Field Labels
+
+Steps to retrieve the label names of all available fields in a contact record:
+
+1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+2. Enter the following function in the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md).
+`{{JSON.stringify(context.session.UserSession.campaignUserInfo)}}`
+    1. You can get the labels from the [Transcripts](../../../analytics/contact-center/interactions.md#insights-to-logs) tab of the Interactions Dashboard.
+    2. You can also use the same function in the [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) to access the data.  
+
+        <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:80%;">
+
+3. Publish the bot to apply the changes. [Learn more](../../../deploy/publishing-bot.md).
+4. Run the campaign associated with the contact list for which you need the field label names.  
+    <img src="../images/run-campaign.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:80%;">
+
+5. On the **Interactions** page, click the desired Campaign's record to view transcriptions and access the string representation of all fields.  
+    <img src="../images/insights-to-logs (2).png" alt="Insights to Logs" title="Insights to Logs" style="border: 1px solid gray; zoom:80%;">
+
+#### Accessing the Contact List Fields Through Their Labels
+
+You can use the extracted labels to access specific contact list fields within your flow.
+
+**Example 1**: Using a Script Node (Experience Flow & Dialog Task)
+
+1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+2. In the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) or [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md), add the following JavaScript function to retrieve campaign user details:
+```
+const campaignUserInfo = context.session.UserSession.campaignUserInfo;
+```
+// Accessing all fields, including mapped and unmapped ones
+
+3. After retrieving the user information, implement custom logic as needed. In this example, the script extracts the user’s phone number and stores it in the context for use in future flows.
+```
+const number = campaignUserInfo.phoneNumber;
+```
+
+// Extracting the user’s phone number and assigning to a  variable
+
+```
+context.campaignUserInfoNumber=number;
+```
+
+// Storing the number in context for later use 
+
+
+```
+    if (number === "+919876543210") {
+     context.testingNumberValue="John"
+} else 
+	{
+    context.testingNumberValue="other"
+    }
+```
+
+**Example 2**: Accessing Fields in a Confirmation Node (Dialog Task)
+
+1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+2. Use the extracted field labels to define logic in a [Confirmation Node](../../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md). For example, you can validate the user’s response based on a specific contact field.  
+<img src="../images/confirmation-node.png" alt="Confirmation Node" title="Confirmation Node" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Contact List
 
@@ -224,20 +287,6 @@ Steps to delete an API-integrated contact list:
 
 
 The contact list is deleted.
-
-#### API Integration
-
-Steps to delete an API-integrated contact list:
-
-
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
-<img src="../images/deleteapilist.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
-2. A confirmation message is displayed. Click **Delete**.  
-<img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
-The contact list is deleted.
-
 
 ## DNC Lists
 
