@@ -82,12 +82,13 @@ The content field in the ingested content contains the name and description of t
 
 ## RACL Support 
 
-Miro boards can be shared using different access options. For each of the options, the sys_racl is populated as described below. 
+By default, when a board is created, it is automatically shared with the other members of the space, hence the sys_racl field is populated with **spaceID**. 
 
+Further, Miro boards can be shared using different access options. For each of the options, the sys_racl is populated as described below. 
 
-* **Share with specific users via email** - When users are directly added to a board, their email addresses are stored in the sys_racl field.
-* **Share with team members**  - If a board is shared with a team, the team ID is added to the sys_racl field.
-* **Everyone in the company**  -When a board is shared at the company level, the Organization ID is stored in the sys_racl field.
+* **Share with specific users via email** - When users are directly added to a board, their email addresses are stored in the sys_racl field. The members of a space also have default access to the boards within the space. So, along with **individual email addresses**, **the space ID** (also referred to as project ID in Miro) is stored in sys_racl as a permission entity. 
+* **Share with team members**  - If a board is shared with a team, the **team ID** is added to the sys_racl field. Since the space members are a subset of the team, when a board is shared with the team, sys_racl only contains team ID and spaceID is not added. 
+* **Everyone in the company**  -When a board is shared at the company level, the **Organization ID** is stored in the sys_racl field. Since the space members are a subset of the members of the organization, when a board is shared with the organization, sys_racl only contains organizationID and spaceID is not added. 
 * **Public Access**: The sys_racl field is set to *, allowing unrestricted access.
 
-TeamId and OrganizationID are added as permission entities. Use the Permission Entity APIs to associate users with the entities. 
+ProjectID, TeamID and OrganizationID are added as permission entities. Use the Permission Entity APIs to associate users with the entities. 
