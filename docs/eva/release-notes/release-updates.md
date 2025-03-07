@@ -6,7 +6,21 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</u>
 
-This update includes feature enhancements and bug fixes summarized below.
+This update includes new features, feature enhancements, and bug fixes summarized below.
+
+**New Feature**
+
+**Agentic App Support for Enterprise Knowledge**: Introduced Agentic App that now caters as a knowledge source to Enterprise Knowledge. This enhancement gives an option for you to choose between Search AI  or Agentic App to provide a more robust fallback mechanism when no specific agent matches a user query.
+
+Key Benefits:
+
+- Extended knowledge reach through API-driven connections.
+  
+- Improved fallback performance.
+  
+- Flexible configuration options (Search AI or Agentic App).
+
+[Learn more :octicons-arrow-right-24:](./../custom-agents/enterprise-knowledge.md)
 
 **Feature Enhancements**
 
@@ -26,7 +40,7 @@ This update includes feature enhancements and bug fixes summarized below.
 
 * Template Rendering Fix:  Fixed an issue where bot templates used to render duplicates when selected or clicked. The fix results in a cleaner and more predictable user interface.
   
-## v0.7.0 February 14, 2025
+## v1.7.0 February 14, 2025
 
 <u>Minor Release</u>
 
@@ -76,5 +90,3 @@ The latest release includes search connector support for the following services:
     * Zendesk
     * Confluence
     * Wordpress
-
-<hr>
