@@ -819,8 +819,8 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 To access and view audit logs, follow the steps below:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
-2. Navigate to the [Settings](https://galeadmin-kore.github.io/docs/gale/settings/settings-overview/#access-settings-console){:target="_blank"} console.
+1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
+2. Navigate to the [Settings](../../settings/settings-overview.md/#access-settings-console){:target="_blank"} console.
 3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
