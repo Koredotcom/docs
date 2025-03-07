@@ -278,3 +278,9 @@ You can run a proactive web campaign by clicking the **Play** button.
 <img src="../images/run-web-campaign.png" alt="Run Web Campaign Button" title="Run Web Campaign Button" style="border: 1px solid gray; zoom:80%;"> 
 
 When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
+
+## Proactive Web Campaign Plugin for the Kore.ai Web SDK
+
+The Proactive Web Campaign plugin extends the Kore.ai Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.
+
+For installation instructions, configuration options, and examples, refer to the README file in the GitHub repository: https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev/docs/plugins/proactive-web-campaign
