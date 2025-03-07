@@ -50,13 +50,13 @@ You can access the Proactive Web Campaigns by going to **Campaign Management** >
 3. Click the **Layout Design** tab. Under the **Message Header** click the **Edit** icon to enter the header **Text** and **Image** that can be used along with the displayed message, and click **Save**. By default, the message header is enabled.  
 <img src="../images/message-header.png" alt="Message Header" title="Message Header" style="border: 1px solid gray; zoom:80%;">
 
-4. Click the **Edit** icon and enter the message to be displayed to the website visitor. You can select the font size, make the text bold, italics, underline, select, add links,  text color, or add variables, and click **Save**.
+4. Click the **Edit** icon and enter the message to be displayed to the website visitor. You can select the font size, make the text bold, italics, underline, select, add links,  text color, or add variables, and click **Save**.  
 <img src="../images/messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:80%;">
 
 5. Click **+ Add Button** to add a new button.  
-<img src="../images/add-button.png" alt="Add Button" title="Add Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/add-button.png" alt="Add Button" title="Add Button" style="border: 1px solid gray; zoom:80%;">  
 Click the **Edit** icon to edit the details of an existing button. You can enter the Text for the button, select the Action performed on clicking the button, Background Colour, Text Colour for the button, and click **Save**.  
-<img src="../images/buttons.png" alt="Buttons" title="Buttons" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/buttons.png" alt="Buttons" title="Buttons" style="border: 1px solid gray; zoom:80%;">  
 The following options are available for the Actions:
     1. **Send to URL** - Selecting this option displays the URL field where the user will be redirected.
     2. **Send to Bot** - The conversation will be redirected to the bot.
@@ -283,4 +283,4 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 The Proactive Web Campaign plugin extends the Kore.ai Web SDK, enabling dynamic, rule-based interactions with website visitors. With this plugin, you can define campaigns that trigger actions like displaying messages or starting chats based on visitor behavior.
 
-For installation instructions, configuration options, and examples, refer to the README file in the GitHub repository: https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev/docs/plugins/proactive-web-campaign
+For installation instructions, configuration options, and examples, refer to the README file in the GitHub repository: https://github.com/Koredotcom/web-kore-sdk/tree/v3/dev/docs/plugins/proactive-web-campaign{:target="_blank"}
