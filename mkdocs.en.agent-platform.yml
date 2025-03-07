@@ -8,6 +8,9 @@ extra_css:
     - stylesheets/extra_kore.css
     - overrides/stylesheets/test.css
 theme:
+  icon:
+    admonition:
+      abstract: material/book
   favicon: images/agent-platform_favicon.svg
   name: material
   custom_dir: overrides.en.agent-platform

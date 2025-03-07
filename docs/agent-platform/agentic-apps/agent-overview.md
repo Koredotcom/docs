@@ -9,13 +9,18 @@
     * Policy Enquiry Agent: Handles all the employee queries related to company policies.
     * Employee Directory Agent: Provides employee information. 
 
-An Agent perceives the environment, processes information, and takes actions to achieve specific goals. In general, Agents operate by:
+An Agent perceives the environment, processes information, and takes actions to achieve specific goals. The main tasks of an agent are shown below. 
+
+<!--
+In general, Agents operations main by:
 
 * Interpreting user inputs to understand the requirements and tasks. 
 * Selecting the most appropriate action based on the predefined roles and capabilities of the defined actions.
 * Extracting, structuring, and processing data needed to execute tasks.
 * Invoking Tools via Tool-calling to complete the tasks.
-* Collaborate with other agents to perform complex tasks. 
+-->
+
+![Agent Operations](images/agent-operations.png "Agentic App Anatomy")
 
 ## Key Components of an Agent
 
@@ -29,7 +34,7 @@ Each agent is defined by its description, scope, actions, tools, and instruction
 
 **LLMs**: Agents use LLMs to understand the intent and interpret user queries, interact and engage with users, identify required entities to complete a task, design the workflow to execute a series of actions and support decision-making when required. 
 
-## Features of an Agent  
+## Key Features of an Agent  
 
 1. **Unique Core Functions**: Each agent is assigned a distinct set of core functions tailored to its specific purpose. These functions define the agent's capabilities and the scope of tasks it can handle, ensuring that it remains focused and efficient in addressing its designated objectives.
 2. **Defined Objectives and Responsibilities**: Agents operate within the boundaries of clearly outlined objectives and responsibilities. These objectives serve as guiding principles, ensuring the agent prioritizes tasks that align with the system's overarching goals or the user’s requests.

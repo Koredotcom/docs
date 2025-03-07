@@ -13,6 +13,10 @@
 
 ## Steps to Create an Agentic App
 
+Follow the steps listed below to create an Agentic App. 
+
+![Create App](images/app-creation-steps.png "Agentic App Creation")
+
 
 ### Step 1: Creating a New Application
 
