@@ -359,7 +359,6 @@ nav:
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
                 - Zoom: searchai/content-sources/connectors/zoom.md
                 - Zulip: searchai/content-sources/connectors/zulip.md
-
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md

@@ -120,9 +120,9 @@ To delete a rule, hover over the entry and click the **Delete** icon.
 
 ### Step 4: Schedule Automatic AD Sync
 
-To finish configuring your directory, schedule auto sync for your AD. Enabling auto sync is **_optional_** but highly recommended to keep your AD data on GALE up-to-date. 
+To finish configuring your directory, schedule auto sync for your AD. Enabling auto sync is **_optional_** but highly recommended to keep your AD data on Agent Platform up-to-date. 
 
-Auto sync will ensure that any changes in AD, such as user additions or deletions, are automatically reflected on GALE.
+Auto sync will ensure that any changes in AD, such as user additions or deletions, are automatically reflected on Agent Platform.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -204,7 +204,7 @@ When you set up AD sync for the first time, the following options appear under *
   <img src="../images/sync-history.png" alt="sync history" title="sync history" style="border: 1px solid gray; zoom:75%;">
 
 * **Manage directory sync**: Displays the **Configure Directory** window where you can edit the existing configurations.
-* **Reset**: Resets the AD sync configurations but retains the last sync data on GALE.
+* **Reset**: Resets the AD sync configurations but retains the last sync data on Agent Platform.
 * **Sync Status**: This information summary displays the date of last sync, the total number of users and organization units synchronized, and any errors/issues encountered during the process. 
 
 <div class="admonition note">

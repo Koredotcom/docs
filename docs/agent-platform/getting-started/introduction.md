@@ -1,6 +1,6 @@
 # Introducing All-new Agent Platform
 
-We are excited to announce the first version of Agent Platform, our enterprise-grade multi-agent orchestration platform. The all-new Agent Platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while maintaining enterprise-grade security and governance. 
+We are excited to announce the first version of Agent Platform, our enterprise-grade multi-tool orchestration platform. The all-new Agent Platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent tools across service, work, and process automation while maintaining enterprise-grade security and governance. 
 
 ## Comprehensive Capabilities
 
@@ -29,7 +29,7 @@ The Platform's capabilities are powered by its key components that work together
 
 * **Agentic Apps**: Build intelligent AI systems that work together autonomously. Create AI assistants that reason, plan actions, and collaborate as a team to handle complex business processes with human-like intelligence.
 
-* **Actions / Tools**: Connect your AI to real-world systems and data. With low-code and custom options, create tools that let AI agents interact with business systems.
+* **Actions / Tools**: Connect your AI to real-world systems and data. With low-code and custom options, create tools that let AI tools interact with business systems.
 
 * **Models**: Choose and optimize the right AI models for your needs. Fine-tune models for specific tasks, deploy open-source options, or connect to external providers while maintaining control.
 
@@ -43,11 +43,11 @@ The Platform's capabilities are powered by its key components that work together
 
 * **Analytics**: Track usage patterns and performance metrics through intuitive dashboards to optimize system performance and demonstrate ROI.
 
-* **Agent Protocol**: Standardize communication across AI systems with an API supporting multimodal content and real-time streaming. Allows integrating with agents built on external platforms with full support for request/response exchange, streaming of responses and logs. 
+* **Agent Protocol**: Standardize communication across AI systems with an API supporting multimodal content and real-time streaming. Allows integrating with tools built on external platforms with full support for request/response exchange, streaming of responses and logs. 
 
 * **No-Code Development**: Accelerate AI application development through structured no-code tooling. Business teams can actively participate alongside technical staff, accelerating time to market and fostering collaboration.
 
-* **Extension SDKs**: The platform offers SDKs all the key components like for Agents, Tools, RAG, and Traces, enabling teams to quickly build custom components across the entire AI workflow that are compatible with the platform's security and governance frameworks.
+* **Extension SDKs**: The platform offers SDKs all the key components like for Agentic Apps, Tools, RAG, and Traces, enabling teams to quickly build custom components across the entire AI workflow that are compatible with the platform's security and governance frameworks.
 
 * **Enterprise-Grade CI/CD**: Deploy and manage AI applications with industrial-strength processes supporting multiple environments and granular versioning.
 

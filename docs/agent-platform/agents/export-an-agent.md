@@ -28,8 +28,6 @@ To export an tool’s version, follow the steps below:
 2. Click **Tools** on the top menu.
 3. Select the relevant tab to view the tool.
 4. Click the required tool’s name to proceed further.
-<img src="../images/agents-export-access.png" alt="access agent" title="access agents" style="border: 1px solid gray; zoom:75%;">
-
 5. Click **Configurations** on the left navigation menu.
 6. Scroll down to the **Export tool** section. By default, the currently deployed version is selected in the dropdown.
 <img src="../images/export-agent.png" alt="export agent" title="export agent" style="border: 1px solid gray; zoom:75%;">
@@ -40,8 +38,6 @@ To export an tool’s version, follow the steps below:
 8. Click the **Export** button.
 
 The export process begins, and a success message is displayed after the tool validation is completed and the export process finishes.
-
-<img src="../images/exporting-in-progress.png" alt="export in progress" title="export in progress" style="border: 1px solid gray; zoom:75%;">
 
 <img src="../images/agent-export-success.png" alt="export success" title="export success" style="border: 1px solid gray; zoom:75%;">
 
