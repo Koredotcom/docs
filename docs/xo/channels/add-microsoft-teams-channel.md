@@ -179,6 +179,11 @@ To enable Proactive Notifications, follow these steps:
 
     ![add permissions](../images/MS_Team24.png "add permissions")
 
+    !!! note
+
+        * Apps generally don't need special permissions beyond standard app installation consents.
+        * For proactive notifications (App-initiated messages), where the app initiates messages to users without a preceding user action, developers must configure the app to have the permissions to send these messages, which may involve setting up specific app permissions or policies within the Teams admin center.
+
 10. Click on the **Grant admin consent** for > domain name> option to complete the granting of the permissions.
 11. Proceed to the **Certificates & secrets** section and select the **New client secret** option.
 12. Copy the **Value** of the newly created certificate and provide it on the **Configurations** tab of MS Teams Channel on the Kore.ai XO Platform.
