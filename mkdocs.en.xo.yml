@@ -357,8 +357,9 @@ nav:
                 - Wrike: searchai/content-sources/connectors/wrike.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
-                - Zulip: searchai/content-sources/connectors/zulip.md
                 - Zoom: searchai/content-sources/connectors/zoom.md
+                - Zulip: searchai/content-sources/connectors/zulip.md
+
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md

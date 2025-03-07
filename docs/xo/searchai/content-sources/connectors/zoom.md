@@ -54,10 +54,12 @@ Search AI uses server-to-server OAuth configuration to access Zoom APIs and fetc
 * Refer to [this ](https://developers.zoom.us/docs/internal-apps/create/)to create a server-to-server OAuth app. 
 * Select the following OAuth scopes while creating the app. 
     * user:read:list_users:admin
-    * user:read:user:admin 
-    * meeting:read:summary:admin 
-    * cloud_recording:read:list_recording_files:admin
-    * dashboard:read:list_meetings:admin
+    * cloud_recording:read:list_user_recordings:admin
+    * meeting:read:list_meetings:admin
+    * meeting:read:summary:admin
+    * meeting:read:meeting:admin
+    * dashboard:read:list_meetings:admin 
+    * user:read:user:admin
 *  Get your app credentials, including account ID, client ID, and client secret, on your [app details](https://developers.zoom.us/docs/internal-apps/create/) page.
 
 
