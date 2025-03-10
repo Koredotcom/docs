@@ -1,4 +1,4 @@
-# Setting up an Agent
+# Set up an Agent
 
 Setting up an agent involves defining its purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to allow it to take actions within a given scope. 
 
