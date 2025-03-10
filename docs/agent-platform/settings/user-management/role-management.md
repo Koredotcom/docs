@@ -12,7 +12,7 @@ When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/ad
 
 2. **Master Admin Role**
 
-    * When you [create an account](../../getting-started/sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
+    * When you [create an account](../../getting-started/sign-up-sign-in.md){:target="_blank"}, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
     * As the Master Admin, you have the highest level of access, allowing you to create, modify, and delete permissions for custom roles and manage users in your account.
 
@@ -1168,7 +1168,7 @@ The **Role Management** Dashboard displays key information related to system and
 
 To access the dashboard, follow the steps below:
 
-1. [Log in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to Agent Platform and click **Settings** on the top menu.
+1. [Log in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform and click **Settings** on the top menu.
 2. Click **Users Management** > **Role Management** on the left menu.
 <img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
 
@@ -1326,6 +1326,7 @@ To add a custom role, follow the steps below:
 <img src="../images/select-view-and-no-access.png" alt="select view and no access" title="select view and no access" style="border: 1px solid gray; zoom:80%;">       
 
 * Selecting **_Full_** for **Settings** automatically sets the access levels of **Integrations** and **User Management** to **_Full_**.
+
 <img src="../images/select-full-access.png" alt="select full access" title="select full access" style="border: 1px solid gray; zoom:80%;">
 
 Additionally, it automatically enables all the permissions for the following modules:

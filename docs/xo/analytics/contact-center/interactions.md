@@ -265,9 +265,7 @@ The transcripts tab also shows the call transfer stages:
 
 !!! Note
 
-    * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
-
-    * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
+    To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties)
 
 **DETAILS**: This tab shows the following details:
 
@@ -361,9 +359,7 @@ The following recording settings can be configured:
 
     !!! Note
 
-        * The system does not record or display customer speech during hold periods, regardless of who initiated the hold.  
-    
-        * If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
+        If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
 
 A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#call-recording-control).  
 <img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">  

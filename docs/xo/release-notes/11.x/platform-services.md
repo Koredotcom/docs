@@ -145,7 +145,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 ### LLM & Generative AI
 
-#### Support for Provider's New LLM in the Out-of-box Integration Framework 
+#### Support for Recently Released Language Models in the Out-of-box Integration Framework 
 
 With this update, platform users can leverage the latest LLMs as soon as they become available. The XO Platform now enables the immediate addition of new language models as system models within the out-of-box Pre-built Integration framework.
 
@@ -155,7 +155,7 @@ Key benefits
 * Create custom prompts for new models from scratch or by importing an existing prompt from another model.
 * Maintain platform security and authentication standards while eliminating integration delays.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#providers-new-llm-integration)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#recently-released-llm-integration)
 
 
 #### Answer Generation Guardrails

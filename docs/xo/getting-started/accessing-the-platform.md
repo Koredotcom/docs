@@ -161,7 +161,7 @@ Some of the common scenarios where you can join or sign up to a workspace includ
 
 ### Join a Workspace
 
-Before setting up your Workspace, sign up to the Kore.ai XO Platform.
+Before setting up your Workspace, you need to sign up to the Kore.ai XO Platform.
 
 If your email domain matches existing Workspaces within the XO Platform, then it means that your organization is already working on projects you may want to join. The Platform lists matching Workspaces and you can **Request Access** to them as soon as you sign up. If you are part of a team, but you are not managing it, then this is the recommended way to proceed.
 

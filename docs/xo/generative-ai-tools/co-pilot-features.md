@@ -160,9 +160,7 @@ The following table displays the features and the supported models.
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, and GPT 4o|✅|✅|
 <hr>
 
-\* The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts. 
 
-\** To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.
 
 
 

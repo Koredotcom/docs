@@ -138,8 +138,8 @@ used for answer generation. Provide the following details for integration.
 ![](images/configure.png)  
 
 These details are available in the **Search AI app** on the **Credentials** page
-under the **Manage** tab, click **Dev Tools** and choose **Web/Mobile SDK** tab. Refer to
-[this](https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/){:target="_blank"} for more details.
+under the **Manage** tab. Refer to
+[this](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"} for more details.
 
 -   **URL**: Select your Search AI instance where the application is hosted.
 

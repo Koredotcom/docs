@@ -84,7 +84,6 @@ This section helps configure general settings.
 
 In the General Settings section, You can enable the **Allow agent permissions** toggle to set the following:
 
-* Set the Agent Console as the default in Contact Center AI - Enable this option to set **Agent Console** as the default landing page. This Dynamic Navigation Control feature determines the appropriate landing page based on user permissions rather than hardcoded role names. 
 * Group
 * Custom ID
 * Agent Nick Name
@@ -199,7 +198,7 @@ You can add a group by following the steps below:
 <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
 
 2. The Invite User window displays. Here, you can configure the following:
-    1. **Name**:  Enter the name of the group you want to add. Refer to [Create a Group](../administration/user-management/managing-your-groups.md#creation).
+    1. **Name**: Enter a name for your group.
     2. **Role**: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
 
 3. Click the **Share Invites** button at the bottom of the New Groups window.

@@ -10,49 +10,7 @@ The section at the bottom left corner of the Agent Console displays new interact
 A system push notification accompanies new interactions, so you can see them even when the browser is minimized or the Agent Console is not in use. System notifications are supported for Chrome, Firefox, Chromium-based Microsoft Edge, and Safari. Each notification plays a sound, too.
 
 When the first notification is pushed, your browser will ask you to allow notifications from Contact Center AI. Please allow this if you want to receive such notifications or block if you do not. If you block these notifications, you will continue to hear the sound alert and will see the Next in Queue popup under your Conversation Tray when opening the Agent Console.  
-<img src="../images/new-interaction.png" alt="New Interaction" title="New Interaction" style="border: 1px solid gray; zoom:80%;">  
-
-## Channel Selection
-
-Agents can choose their preferred channel (digital or voice) for handling incoming interactions. This feature enables better workload management and clearer handling of interaction types.
-
-### Setting Your Preferred Channel
-
-1. Open the Agent Console and click the channel selection icon.
-2. Select one of the following options:
-    * **Voice & Digital**: Receive all interaction types (system default).
-    * **Digital**: Handle only digital interactions (chat, SMS, email).
-    * **Voice**: Handle only voice calls.  
-        <img src="../images/channel-selection-dropdown.png" alt="Channel Selecytion" title="Channel Selection" style="border: 1px solid gray; zoom:80%;"> 
-
-!!! Note
-
-    Channel selection is only available when blended mode is disabled.
-
-### How Channel Selection Works
-
-#### Voice & Digital Selection
-
-When you select Voice & Digital:
-
-* You'll receive both voice & digital interactions (voice, chat, SMS, email).
-* You can simultaneously handle both voice and chat interactions.
-
-#### Digital Selection
-
-When you select Digital:
-
-* You'll receive only digital interactions (chat, SMS, email).
-* Voice interactions will not be routed to you.
-* You must complete all digital interactions before switching to voice.
-
-#### Voice Selection
-
-When you select Voice:
-
-* You'll receive only voice calls.
-* Digital interactions will not be routed to you.
-* You must complete all voice interactions before switching to digital.
+<img src="../images/new-interaction.png" alt="New Interaction" title="New Interaction" style="border: 1px solid gray; zoom:80%;">
 
 ## Handling Incoming Interactions Based on Answer Mode
 

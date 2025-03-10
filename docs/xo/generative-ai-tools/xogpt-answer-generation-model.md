@@ -21,7 +21,7 @@ Implementing RAG-driven Q&A systems also presents challenges, such as ensuring t
 
 The XO GPT Model is a key component within our RAG framework. It is activated right after the retrieval phase. It takes the retrieved data and generates accurate, contextually relevant answers, ensuring the overall system delivers high-quality responses.
 
-<img src="../images/answer01.png" alt="XO GPT" title="RAG Framework" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer01.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 ### Key Assumptions
 
@@ -111,7 +111,7 @@ Our model is designed to safeguard information by ensuring that no client or use
 
     The exact performance, features, and language support may vary based on specific implementations and use cases. We recommend thorough testing in your specific environment to assess the model's suitability for your needs.
 
-<img src="../images/answer03.png" alt="XO GPT Benefits" title="XO GPT Benefits" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer03.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
 ### Use Cases
 
@@ -268,12 +268,57 @@ This section highlights the features, updates, and changes that vary between dif
 
 The following table summarizes the versions covered in this document:
 
-| Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison | Test Data & Results |
-|--------------|----------|------------------|---------------|----------------------|----------------------|
-| Version 2.0  | 96%      | 54               | 1.03          | [Benchmark Summary v2](#benchmarks-summary-v2) | [Test data and results v2](../test-date-and-results/xogpt-answer-generation-v2.0.xlsx) |
-| Version 1.0  | 94%      | 20               | 1.36          | [Benchmark Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) |
+<table>
+  <tr>
+   <td>Model Version
+   </td>
+   <td>Accuracy
+   </td>
+   <td>Tokens/sec (TPS)
+   </td>
+   <td>Latency (secs)
+   </td>
+   <td>Benchmark Comparison
+   </td>
+   <td>Test Data & Results
+   </td>
+  </tr>
+  <tr>
+   <td>Version 1.0
+   </td>
+   <td>94%
+   </td>
+   <td>20
+   </td>
+   <td>1.36
+   </td>
+   <td>
+
+<a href="#benchmarks-summary">Benchmark summary</a>
+   </td>
+   <td><a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >Version 2.0
+   </td>
+   <td rowspan="2" >96%
+   </td>
+   <td rowspan="2" >54
+   </td>
+   <td rowspan="2" >1.03
+   </td>
+   <td rowspan="2" >
 
 
+<a href="#benchmarks-summary">Benchmark summary</a>
+   </td>
+   <td rowspan="2" ><a href="../test-date-and-results/xogpt-answer-generation-v1.0.xlsx">Test date and results spreadsheet</a>
+   </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
 
 ### Version 2.0
 
@@ -284,7 +329,7 @@ We evaluate various community models that are suitable for the objective of resp
 
 <table>
   <tr>
-   <td>Base Model
+   <td> Base Model
    </td>
    <td>Developer
    </td>
@@ -574,7 +619,7 @@ To optimize the performance and efficiency of the model, we apply AWQ (Activatio
   </tr>
 </table>
 
-#### Benchmarks Summary v2
+#### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
@@ -583,9 +628,9 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * GPT 4o mini: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude 3.5 Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 
-<img src="../images/ans-gen-graphv2.png" alt="Benchmarks Summary" title="Benchmarks Summary" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results v2](../test-date-and-results/xogpt-answer-generation-v2.0.xlsx) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V2.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
 
 ### Version 1.0
 
@@ -809,7 +854,7 @@ As a pre-requisite, an Agent AI License is required, and the model is hosted on 
   </tr>
 </table>
 
-#### Benchmarks Summary v1
+#### Benchmarks Summary
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models: 
 
@@ -817,7 +862,7 @@ To compare and contrast the performance of the fine-tuned model, we have conside
 * GPT-40 mini: A large language model developed by OpenAI, known for its advanced capabilities across a wide range of tasks (note: there's no official "GPT 4o mini" version).
 * Claude-3-5-Sonnet: Part of the Claude 3 model family by Anthropic, designed to balance intelligence and speed for various tasks.
 
-<img src="../images/answer05.png" alt="Benchmarks Summary" title="Benchmarks Summary" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer05.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;">
 
-By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results v1](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
+By leveraging its strengths in performance, latency, and responsible AI principles, XO GPT is well-positioned as a high-performing language model. The [Test Data and Results V1.0](../test-date-and-results/xogpt-answer-generation-v1.0.xlsx) report provides a deeper dive into the evaluation process and results.
 

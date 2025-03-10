@@ -24,34 +24,6 @@ The call control section is Available In [Entity Node](../../automation/use-case
 
 For information on configuring the Call Control Parameters at the channel level, refer to [Define the Call Control Parameters](../smart-assist-gateway.md#step-4-define-the-call-control-parameters).
 
-## Update/Modify Parameters
-When updating language settings or modifying Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) parameters in Call Control Parameters, users can specify the updated field along with a minimal set of required parameters.
-
-For example, if a user has already configured the STT provider and language in the call control parameters and wants to add a new language, the system appends the new parameter while retaining the existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
-
-This behavior applies to Session-Level Call Control Parameters.
-
-**Example**
-
-**Existing Parameters:**
-
-```
-{
-  "sttProvider": "microsoft",
-  "sttLanguage": "en-IN"
-}
-```
-
-**Adding a New Language:**
-
-```
-{
-  "sttLanguage": "en-ES"
-}
-```
-
-In this scenario, the system retains the existing **sttProvider** and previously set **sttLanguage**, ensuring that only the new parameter is added without requiring users to re-enter unchanged values.
-
 ### Supported Speech Engines
 
 Kore.ai supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).

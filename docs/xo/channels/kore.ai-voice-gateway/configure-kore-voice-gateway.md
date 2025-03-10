@@ -6,7 +6,7 @@ Kore.ai Voice Gateway is a comprehensive voice automation solution that manages 
 
 You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
 
-Go to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
+Navigate to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
 <img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Phone Numbers
@@ -91,16 +91,16 @@ Under the SIP Trunk tab, you can configure the network IPs and domains, DID numb
 Steps to configure SIP Trunk:
 
 1. Click **Configure SIP Trunk**.  
-    <img src="../images/sip-numbers.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
 
 2. On the **Configure SIP Trunk** page, configure the following:
     1. **Product Selection**: Select the product for which the SIP Trunk is being configured. You can select from the following options:
         * Contact Center AI
         * Agent AI
-    2. **SIP URI**: This is a pre-configured field. A copy button allows you to copy the SIP URIs.
+    2. **SIP URI**: This is a pre-configured field.
     3. **Network**: To configure the Network, you can select one of the following:
         1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox.  
-            <img src="../images/sip-uri.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/sip-trunks-setup.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
 
         2. Under **Domain Name**, provide the following:
             1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](../kore.ai-voice-gateway/ips-ports-protocols.md).
@@ -117,10 +117,7 @@ Steps to configure SIP Trunk:
     7. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
     8. (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
     9. Under SIP Termination URI, enter the **IP Address**/**Domain Name**.
-    10. **Option Ping**: If selected, the system will regularly check whether the IP addresses are accessible. This option is selected by default.  
-        <img src="../images/option-ping.png" alt="Option Ping" title="Option Ping" style="border: 1px solid gray; zoom:80%;">
-    
-    11. Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
+    10. Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
         * X-AgentName: {{agentName}}
         * X-AgentPhoneNumber: {{agentPhoneNumber}}
         * X-AgentEmailID:  {{agentEmailId}}
@@ -131,17 +128,17 @@ Steps to configure SIP Trunk:
         * X-AgentFirstName: {{agentFirstName}}
         * X-AgentLastName: {{agentLastName}}
 
-    12. Click **Next**.  
+    11. Click **Next**.  
         <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;">
 
-    13. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
-    14. Click **Save**.  
+    12. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
+    13. Click **Save**.  
     <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:80%;">  
 
         Please wait for upto ten minutes after saving for the IPs to be whitelisted.  
         <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
-    15. The selected information appears on the SIP Numbers tab.  
+    14. The selected information appears on the SIP Numbers tab.  
         <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
 
 ### Attach Flow

@@ -100,7 +100,7 @@ This section lets you set up the general features of the Agent AI widget. Here, 
 
 * **Honor Bot Event** **– Intent not found**: Here, you can turn on or off the **Honor Bot Event – Intent not found** toggle. When turned on, the configured intent-not-found event triggers if Agent AI doesn’t understand the user’s intent.
 
-* **Default Language for Agent AI Widget**: In this section, you can select a language for the **Agent AI widget**. In runtime, the widget appears in the selected language. Also, you can enable a checkbox that allows agents to change the language in runtime. If this checkbox is disabled, agents can’t change the language.
+* **Default Language for Agent AI Widget**: In this section, you can select a language for the Agent AI widget. In runtime, the widget appears in the selected language. Also, you enable a checkbox that allows agents to change the language in run time. If this checkbox is disabled, agents can’t change the language.
 
 * **Dialog Task Display Name Configurations**: Here, you can set up the “trait” identification method that helps display appropriate trait-based Dialog Tasks for agents. This method helps display the “child”/sub Dialog Tasks if they are the most accurate match, based on customer interaction. To use the “trait” based Dialog Task display, admins must define a custom script logic in the Agent AI Settings page.
 
@@ -114,8 +114,7 @@ This section lets you set up the general features of the Agent AI widget. Here, 
     1. Click to select any or all of the components (**Documentation**, **FAQ**, and **Kore Academy**).
     2. Click to customize the default URLs of the **Documentation** and/or **FAQ** components.
 6. Enable or disable the **Honor Bot Event – Intent not found** toggle.
-7. Select a language from the list in the **Default Language for Agent AI Widget** section. Select **Interactive Language**, if you want the app’s language to appear as the widget’s default language.
-
+7. Select a language from the list in the **Default Language for Agent AI Widget** section.
     1. Select/clear the **Allow agents to switch between multiple available languages** field.
 8. Select **Default System Behavior** or **Advanced Mode** in the **Dialog Task Display Name Configurations** field.
     1. If you select **Advanced Mode**, a pop-up box to enter custom scripts appears.

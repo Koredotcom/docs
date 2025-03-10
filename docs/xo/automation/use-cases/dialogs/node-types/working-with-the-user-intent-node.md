@@ -94,18 +94,4 @@ If the Intent node you are working with does not represent the primary intent wi
 
     These conditions are applicable only for this instance and will not affect this node when being used in any other dialog.
 
-<img src="../images/add-intent-node-img6.png" alt="Intent node Connection properties" title="Intent node Connection properties" style="border:1px solid gray;zoom:70%;">  
-
-The Connection Path property offers three default variants:
-
-1. Not Connected - No specific next node is defined
-2. End of Dialog - Explicitly ends the current dialog
-3. Return to Flow - Terminates the Dialog Task and returns control to the Flow Builder. The Flow Builder resumes from the next node.
-    * Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context.
-    It has two deflection types - ‘ Automation’ and ‘Agent Transfer’.  
-    <img src="../images/deflect-to-chat1.png" alt="Deflect to Chat" title="Deflect to Chat" style="border:1px solid gray;zoom:70%;">
-
-
-!!! Note
-
-    Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+<img src="../images/add-intent-node-img6.png" alt="Intent node Connection properties" title="Intent node Connection properties" style="border:1px solid gray;zoom:70%;">
