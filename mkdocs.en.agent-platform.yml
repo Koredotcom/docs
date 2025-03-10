@@ -127,10 +127,11 @@ nav:
       - Evaluation: getting-started/tutorials/evaluation.md
       - Build a Code Tool: getting-started/tutorials/build-code-tool.md 
   - Agentic Apps: 
-    - Overview: agentic-apps/overview.md
+    - About Agentic Apps: agentic-apps/overview.md
     - Create Agentic App: agentic-apps/create-app.md
-    - Agent Overview: agentic-apps/agent-overview.md
-    - Create Agent: agentic-apps/create-agent.md
+    - Agents:
+      - Agent Overview: agentic-apps/agent-overview.md
+      - Create Agent: agentic-apps/create-agent.md
     - App Settings: agentic-apps/app-settings.md
     - Simulation and Testing: agentic-apps/app-testing.md
     - Deployment: agentic-apps/app-deployment.md
