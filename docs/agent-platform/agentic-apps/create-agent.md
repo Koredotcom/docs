@@ -45,7 +45,7 @@ Agent profile consists of the following fields:
 * Tool calling 
 * Transforming results from agents into natural and contextual responses for the users.
 
-Refer to [this to configure a model](https://docs.kore.ai/gale/models/external-models/add-an-external-model-using-easy-integration/) to use.
+For more information, see [Add an External Model](./../models/external-models/add-an-external-model-using-easy-integration.md/).
 
 !!!tip
     When choosing a model for your agent, consider its specific use case. For example, if the agent is designed for code generation, opt for a model that specializes in coding skills.
@@ -122,7 +122,7 @@ There are **two types of tools** that can be used for Agent actions.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
 
-The agent platform offers a no code  builder for creating and managing tools. To learn more about Global tools, refer to [this](../tools/overview.md). 
+The agent platform offers a no code  builder for creating and managing tools. For more information, see [About Tools](../tools/overview.md). 
 
-* **Custom/Inline Tools**: With **inline tools**, you can write and execute business logic directly within the system using **Python** or **JavaScript**, allowing seamless integration and automation of complex workflows. For more information on Tools, refer to [this](inline-tools.md).
+* **Custom/Inline Tools**: With **inline tools**, you can write and execute business logic directly within the system using **Python** or **JavaScript**, allowing seamless integration and automation of complex workflows. For more information, see [Inline Tools](inline-tools.md).
 
