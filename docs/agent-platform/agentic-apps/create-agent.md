@@ -2,13 +2,13 @@
 
 Setting up an agent involves defining its purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to allow it to take actions within a given scope. 
 
-![Agent Anatomy](images/agent-anatomy.png "Agentic App Anatomy")
+<img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 0px solid gray; zoom:65%;">
 
-To add a new agent to an app, go to the Agents page under the App and click **+New Agent**. 
+To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. 
 
 ![Add Agent](images/add-new-agent.png "Add Agent")
 
-Refer to the following for detailed instructions on the fields of an agent. 
+Enter or select the appropriate details for each fields as described below. 
 
 ## Agent Profile
 

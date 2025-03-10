@@ -128,14 +128,13 @@ nav:
       - Build a Code Tool: getting-started/tutorials/build-code-tool.md 
   - Agentic Apps: 
     - About Agentic Apps: agentic-apps/overview.md
-    - Create Agentic App: agentic-apps/create-app.md
+    - Create an Agentic App: agentic-apps/create-app.md
     - Agents:
       - Agent Overview: agentic-apps/agent-overview.md
-      - Create Agent: agentic-apps/create-agent.md
+      - Create an Agent: agentic-apps/create-agent.md
+    - App Simulation: agentic-apps/app-testing.md
+    - App Deployment: agentic-apps/app-deployment.md
     - App Settings: agentic-apps/app-settings.md
-    - Simulation and Testing: agentic-apps/app-testing.md
-    - Deployment: agentic-apps/app-deployment.md
-    - Analytics: agentic-apps/app-analytics.md
   - Tools: 
     - About Tools: tools/overview.md
     - Create a Tool: tools/create-a-new-tool.md

@@ -1,4 +1,3 @@
-
 # Inline Tools
 
 Inline tools are agent-specific functions designed to process user input based on predefined business logic. They enable real-time execution of custom actions within an agent, ensuring tailored responses and workflow automation. Inline tools use Javascript or Python code to process the input and generate the response.
