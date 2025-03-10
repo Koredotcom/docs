@@ -52,5 +52,3 @@ The latest release includes search connector support for the following services:
     * Zendesk
     * Confluence
     * Wordpress
-
-<hr>

@@ -18,9 +18,9 @@ Agent profile consists of the following fields:
 
 !!!abstract "Examples"
 
-    * Credit Card Assistant for an agent that handles all queries related to credit cards. 
-    * Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
-    * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
+* Credit Card Assistant for an agent that handles all queries related to credit cards. 
+* Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
+* Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
@@ -28,9 +28,9 @@ Agent profile consists of the following fields:
 
 !!!abstract "Examples"
 
-    * Credit Card Assistant: An agent that handles all queries related to credit cards.
-    * Leave Manager: An agent that manages all requests related to employee leaves in an organization.
-    * Order Manager: Manages all the user requests related to order status, returns, and refunds. 
+* Credit Card Assistant: An agent that handles all queries related to credit cards.
+* Leave Manager: An agent that manages all requests related to employee leaves in an organization.
+* Order Manager: Manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
