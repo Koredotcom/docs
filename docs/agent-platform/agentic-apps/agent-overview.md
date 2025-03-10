@@ -20,7 +20,7 @@ In general, Agents operations main by:
 * Invoking Tools via Tool-calling to complete the tasks.
 -->
 
-![Agent Operations](images/agent-operations.png "Agentic App Anatomy")
+![Agent Operations](images/agent-tasks.png "Agentic App Anatomy")
 
 ## Key Components of an Agent
 
