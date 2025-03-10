@@ -26,7 +26,7 @@ Key Benefits:
 
 * Kore Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Kore's Agent Platform, enabling seamless integration.
 
-* Enhanced Content Guardrails: Implemented comprehensive guardrails within AI for Work that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
+* Enhanced Content Safeguards: Implemented comprehensive guardrails within AI for Work that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
   
 * Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
 
