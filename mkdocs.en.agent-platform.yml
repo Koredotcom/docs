@@ -6,11 +6,7 @@ repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
-    - overrides/stylesheets/test.css
 theme:
-  icon:
-    admonition:
-      abstract: material/book
   favicon: images/agent-platform_favicon.svg
   name: material
   custom_dir: overrides.en.agent-platform
@@ -118,64 +114,64 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing the Platform: getting-started/sign-up-sign-in.md          
-    - Quick Start Tutorials:  
+    - Quick Start Tutorials:
       - Product Overview: getting-started/tutorials/agent-platform.md
       - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
       - Build a Workflow Tool: getting-started/tutorials/workflow-tool.md
       - Model Studio: getting-started/tutorials/model-studio.md
       - Prompt Studio: getting-started/tutorials/prompt-studio.md
       - Evaluation: getting-started/tutorials/evaluation.md
-      - Build a Code Tool: getting-started/tutorials/build-code-tool.md 
+      - Build a Code Tool: getting-started/tutorials/build-code-tool.md
   - Agentic Apps: 
     - About Agentic Apps: agentic-apps/overview.md
     - Create an Agentic App: agentic-apps/create-app.md
-    - Agents:
-      - Agent Overview: agentic-apps/agent-overview.md
+    - Agents: 
+      - About Agents: agentic-apps/agent-overview.md
       - Set up an Agent: agentic-apps/create-agent.md
     - App Simulation: agentic-apps/app-testing.md
     - App Deployment: agentic-apps/app-deployment.md
-    - App Settings: agentic-apps/app-settings.md
+    - App Settings: agentic-apps/app-settings.md        
   - Tools: 
-    - About Tools: tools/overview.md
-    - Create a Tool: tools/create-a-new-tool.md
-    - Import a Tool: tools/import-a-tool.md
+    - About Tools: agents/overview.md
+    - Create a Tool: agents/create-a-new-agent.md
+    - Import a Tool: agents/import-an-agent.md
     - Tool Flows:
-      - About Flows: tools/tool-flows/flows-overview.md
-      - About Tool Calling: tools/tool-flows/tool-calling.md
+      - About Flows: agents/agents-flows/flows-overview.md
+      - About Tool Calling: agents/agents-flows/tool-calling.md
       - Manage Flows: 
-        - Manage Nodes in Flows: tools/tool-flows/manage-flow-nodes.md
-        - Manage Input and Output: tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
-        - Run the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Create a Version of the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+        - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
+        - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
-        - Gen AI Node: tools/tool-flows/types-of-nodes/gen-ai-node.md
-        - API Node: tools/tool-flows/types-of-nodes/api-node.md
-        - Function Node: tools/tool-flows/types-of-nodes/function-node.md
-        - Condition Node: tools/tool-flows/types-of-nodes/condition-node.md
-        - DocSearch Node: tools/tool-flows/types-of-nodes/docsearch-node.md        
-        - End Node: tools/tool-flows/types-of-nodes/end-node.md 
-      - Tool Flow Change Log: tools/tool-flows/tool-canvas-change-log.md   
+        - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - API Node: agents/agents-flows/types-of-nodes/api-node.md
+        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: agents/agents-flows/types-of-nodes/docsearch-node.md        
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md 
+      - Tool Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
-      - Manage User Roles and Permissions:  tools/manage-user-roles-and-permissions.md
+      - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Tool Endpoint: 
-      - Deploy a Tool: tools/deploy-a-tool.md
+      - Deploy a Tool: agents/deploy-an-agent.md
     - Tool Monitor: 
-      - About Tool Monitor: tools/tool-monitor/about-tool-monitor.md
-      - Accessing Tool Monitor: tools/tool-monitor/accessing-tool-monitor.md
-      - Understanding Tool Monitor: tools/tool-monitor/understanding-the-tool-monitor-interface.md
+      - About Tool Monitor: agents/agent-monitor/about-agent-monitor.md
+      - Accessing Tool Monitor: agents/agent-monitor/accessing-agent-monitor.md
+      - Understanding Tool Monitor: agents/agent-monitor/understanding-the-agent-monitor-interface.md
     - API Keys: 
-      - Create an API Key: tools/create-a-new-api-key.md 
+      - Create an API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
-      - About Guardrails: tools/guardrails/overview.md
-      - Add a Scanner: tools/guardrails/add-a-scanner.md
-      - Test Guardrail: tools/guardrails/test-guardrail.md
-      - Manage Guardrails: tools/guardrails/manage-guardrails.md
+      - About Guardrails: agents/guardrails/overview.md
+      - Add a Scanner: agents/guardrails/add-a-scanner.md
+      - Test Guardrail: agents/guardrails/test-guardrail.md
+      - Manage Guardrails: agents/guardrails/manage-guardrails.md
     - Audit logs:
-      - Tool Audit Logs: tools/tool-audit-log.md
+      - Tool Audit Logs: agents/agent-audit-log.md
     - Configurations:
-      - Configure a Tool: tools/configure-a-tool.md
-      - Export a Tool: tools/export-a-tool.md
-      - Import Tool as a Version: tools/import-a-tool/#import-tool-as-a-version
+      - Configure a Tool: agents/configure-an-agent.md
+      - Export a Tool: agents/export-an-agent.md
+      - Import Tool as a Version: agents/import-an-agent/#import-agent-as-a-version
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tuned Models: 
