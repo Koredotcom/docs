@@ -1,8 +1,8 @@
-# App Deployment
+# Deployment
 
 When deploying an Agentic app, a unique endpoint is generated to facilitate interactions with the app from third-party applications. This documentation outlines the process of deployment and provides guidance on how to interact with the app using the web client and APIs.
 
-**Endpoint**: An API route that allows external applications to communicate with the Agentic app. This endpoint serves as the interface for making requests and receiving responses from this app. All the interactions with the app through this end point are synchronous. 
+**Endpoint**- An API route that allows external applications to communicate with the Agentic app. This endpoint serves as the interface for making requests and receiving responses from this app. All the interactions with the app through this end point are synchronous. 
 
 Deployment of the App generates a web client as well as a curl script.
 

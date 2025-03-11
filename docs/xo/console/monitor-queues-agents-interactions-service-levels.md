@@ -165,7 +165,10 @@ The following metrics and their total counts are displayed:
 * **Transferred**: Count of interactions an agent has transferred to a queue or another agent.
 * **Rejected**: Count of interactions explicitly rejected by an agent using the reject button.
 * **Unanswered**: Count of interactions assigned to an agent where the agent did not pick up the interaction within the acceptance timeout.  
-<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">
+
+The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Amber colour.  
+<img src="../images/channel-selection-and-agent-tab-details.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
+If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in amber for the supervisor.
 
 * Hovering over an agent’s name displays a pop-up with the following information:
 
@@ -411,6 +414,10 @@ In the Assign Conversation pop-up window, select Agent/Queue, select the agent o
     <img src="../images/interaction-filter.png" alt="Filter Options (Bot-Led Interactions Disabled)" title="Filter Options (Bot-Led Interactions Disabled)" style="border: 1px solid gray; zoom:80%;">  
     Select the **Status**, **Participants** (bot-led interactions enabled), **Skills**, **Queues**, **Channels**, **Type**, and **Language**.  
         <img src="../images/participant-filter.png" alt="Filter Options (Bot-Led Interactions Enabled)" title="Filter Options (Bot-Led Interactions Enabled)" style="border: 1px solid gray; zoom:80%;">  
+    
+    !!! Note
+
+        Bot-led interactions will not appear by default, even when bot-led interaction permission is enabled for a role. To view these interactions, supervisors must explicitly select 'Automation' or 'Automation/Agents' from the Participant filter. The default setting remains "Agent" regardless of permission settings to prevent supervisors from being overwhelmed with automation conversations. This keeps automation conversations hidden unless specifically requested while maintaining the flexibility to include them when needed.
 
     Select from the below available options:
     1. **Clear** – Clears the selection.  
@@ -491,8 +498,8 @@ You can clear the filters by clicking Clear Filters on the upper right corner.
 
 ## Time Intervals
 
-You can configure the service level targets for each channel type and measuring interval. The measuring intervals can be configured in 30-minute increments, with a minimum interval of 30 minutes and a maximum interval of 24 hours.  
-<img src="../images/time-intervals.png" alt="Time Intervals" title="Time Intervals" style="border: 1px solid gray; zoom:100%;">
+You can configure the service level targets for each channel type and measuring interval. The measuring intervals can be configured in 30-minute increments, with a minimum interval of 30 minutes and a maximum interval of 24 hours. You can also select Today, which displays all conversations from 12:00:00 AM (midnight) of the current day in the user's time zone.  
+<img src="../images/service-level-time-intervals.png" alt="Time Intervals" title="Time Intervals" style="border: 1px solid gray; zoom:100%;">
 
 ## Configure Service Levels
 

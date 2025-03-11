@@ -6,7 +6,7 @@ To get started navigating the XO Platform, [log into your account](https://platf
 
 ## Explore The Landing Page
 
-After you sign in, you are directed to the landing page, which is, essentially, your account homepage.
+After you sign in, you are directed to the landing page, which is, essentially, your account homepage. The appropriate landing page is based on user permissions.
 
  <img src="../images/ntp(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 

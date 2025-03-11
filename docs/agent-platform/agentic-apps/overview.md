@@ -6,10 +6,10 @@ An agentic application intelligently identifies and invokes the appropriate agen
 
 When a user submits a query, an orchestrator analyzes the input to:
 
-* Identify the most suitable agents for the task.
-* Create appropriate workflows.
-* Extract relevant entities from the input.
-* Pass these entities to the selected agents for execution.
+1. Identify the most suitable agents for the task
+2. Create appropriate workflows
+3. Extract relevant entities from the input
+4. Pass these entities to the selected agents for execution
 
 The agents then execute their specialized tasks and return responses, which are presented to the user. For complex queries, multiple agents may work together in sequence, with the output from one agent serving as input for another to complete the full processing chain.
 

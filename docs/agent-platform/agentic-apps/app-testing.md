@@ -1,4 +1,4 @@
-# App Simulation and Testing
+# Simulation and Testing
 
 Simulating and verifying the behavior of an Agentic application before it is deployed in the real world helps detect the accuracy of the response under different scenarios. This helps minimize errors, enhance user experience, and improve the effectiveness of the agent in the actual environment. 
 

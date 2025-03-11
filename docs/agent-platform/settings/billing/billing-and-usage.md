@@ -1,16 +1,16 @@
 # About Billing
 
-The Billing section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, and guardrails to make data-driven decisions about your resource utilization.
+The Billing section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across agents, models, and guardrails to make data-driven decisions about your resource utilization.
 
 # Accessing Usage Information
 
 Steps to access the Usage page:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md) to your Agent Platform account.
+1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your Agent Platform account.
 2. On the top navigation bar, click **Settings**.
 3. On the left navigation pane, click **Billing** > **Usage**.
 
-The Usage dashboard is displayed.
+    The Usage dashboard is displayed.
 
  <img src="../images/accessing_billing.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
 
