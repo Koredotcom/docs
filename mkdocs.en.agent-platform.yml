@@ -114,15 +114,23 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing the Platform: getting-started/sign-up-sign-in.md          
+  - Quick Start Tutorials:
+    - Product Overview: getting-started/tutorials/agent-platform.md
+    - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
+    - Build a Workflow Tool: getting-started/tutorials/workflow-tool.md
+    - Model Studio: getting-started/tutorials/model-studio.md
+    - Prompt Studio: /getting-started/tutorials/prompt-studio.md
+    - Evaluation: /getting-started/tutorials/evaluation.md
+    - Build a Code Tool: getting-started/tutorials/build-code-tool.md
   - Agentic Apps: 
-    - Overview: agentic-apps/overview.md
-    - Create Agentic App: agentic-apps/create-app.md
-    - Agent: agentic-apps/agent-overview.md
-    - Create Agent: agentic-apps/create-agent.md
-    - App Settings: agentic-apps/app-settings.md
-    - App Simulation and Testing: agentic-apps/app-testing.md
+    - About Agentic Apps: agentic-apps/overview.md
+    - Create an Agentic App: agentic-apps/create-app.md
+    - Agents: 
+      - About Agents: agentic-apps/agent-overview.md
+      - Set up an Agent: agentic-apps/create-agent.md
+    - App Simulation: agentic-apps/app-testing.md
     - App Deployment: agentic-apps/app-deployment.md
-    - App Analytics: agentic-apps/app-analytics.md
+    - App Settings: agentic-apps/app-settings.md        
   - Tools: 
     - About Tools: agents/overview.md
     - Create a Tool: agents/create-a-new-agent.md
