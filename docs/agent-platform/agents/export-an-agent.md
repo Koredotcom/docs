@@ -24,7 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Sign in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 2. Click **Tools** on the top menu.
 3. Select the relevant tab to view the tool.
 4. Click the required tool’s name to proceed further.
@@ -52,7 +52,7 @@ The exported package includes the following JSON files encapsulating the tool’
 
 * ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
-* ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](https://docs.kore.ai/gale/agents/configure-an-agent/#manage-environment-variables){:target="_blank"}.
+* ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
 
 <img src="../images/exported-files.png" alt="exported files" title="exported files" style="border: 1px solid gray; zoom:75%;">
 
