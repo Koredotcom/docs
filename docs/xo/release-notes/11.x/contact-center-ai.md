@@ -2,6 +2,155 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.11.0 March 04, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Console
+
+#### Agent Channel Selection Control
+
+Added new permission that enables you to configure custom roles to select the interaction type for upcoming interactions from the following options:
+
+* Voice & Digital
+* Voice
+* Digital  
+<img src="../images/channel-selection-dropdown.png" alt="Channel Selection" title="Channel Selection" style="border: 1px solid gray; zoom:80%;">
+
+Key Benefits:
+
+* Workload Control: Ability to focus on preferred interaction types.
+* Reduced Context Switching: Focus on a single channel at a time.
+* Improved Efficiency: Better management of interaction flow.
+* Clear Status: Visual indication of current channel selection.
+
+[Learn more :octicons-arrow-right-24:](../../console/managing-incoming-interactions.md#channel-selection)
+
+### Configuration
+
+#### Summarization with External Models in Contact Center AI
+
+Contact center admins can configure and integrate custom AI models, supporting additional languages and tailored summarization prompts.
+
+Key benefits
+
+* Contact Center Admins
+    * Configure external Gen AI models and define custom summarization prompts.
+    * Manage summarization across additional languages via custom models.
+    * Extend summarization capabilities beyond native Contact Center AI support.
+* Agents
+    * Leverage external AI models for more flexible and accurate conversation summaries.
+    * Ensure consistent summarization across multiple languages and use cases.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md)
+
+#### Enable/Disable Conversations to Wait Till Queue Timeout
+
+This configurable setting allows supervisors and admins to enable or disable the waitTillQTimeout property. This enhancement provides better control over how long conversations wait in the queue before transitioning to the no-agent-available flow.
+
+Key benefits
+
+* Provides greater flexibility in handling agent unavailability scenarios.
+* Ensures better visibility into waiting conversations, allowing supervisors to intervene.
+* Reduces missed interactions by notifying agents of potential SIP registration issues.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
+
+### Campaigns
+
+#### Full Access to Mapped and Unmapped Contact Fields in Campaigns
+
+All mapped and unmapped fields from Contact List records are now accessible in Dialog Tasks and Experience Flows via the `UserSession` context object. Developers can retrieve `metaInfo` data through the context object for seamless integration.
+
+Advanced SMS and Agentless Dialer Campaigns can use mapped and unmapped contact fields, enabling dynamic customer interactions. Campaign managers can utilize contact record fields in the `UserSession` context object to build more personalized SMS campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#accessing-the-contact-list-fields-through-their-labels)
+
+### Analytics
+
+#### Center-Wide Wallboards
+
+A new wallboard is introduced for comprehensive center-wide data visualization.
+
+Key features
+
+* New Tab Display: Dedicated browser tab view for wallboard display
+* Full-Screen Capability: Optimized for HDTV displays
+* Resolution: 4K support (3840 × 2160 pixels)
+* Aspect Ratio: 16:9
+* Live Data Updates: 60-second refresh cycle with real-time field updates
+* Fixed Layout Design: Standardized, non-customizable widget arrangement
+
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md)
+
+
+#### Interaction Details by Segment Report
+
+The Interaction Details by Segment Report is a comprehensive report that covers how all interactions were processed for each segment. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/interaction-details-by-segment.md)
+
+#### “Today” Added to Service Level Time-Period Filter
+
+**Monitor** > **Service Levels**
+
+The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#time-intervals)
+
+<hr>
+
+## v11.10.0 February 12, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Supervisor Console
+
+#### Monitor and Intervene in Bot-led Interactions
+
+This update includes new permissions, filtering options, and intervention capabilities to help supervisors monitor and manage bot-led conversations effectively.
+
+Key benefits
+
+* Greater visibility into bot-handled conversations.
+* Improved control over conversation routing.
+* Enhanced ability to maintain conversation quality.
+* Flexible filtering options for better workflow management.
+
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#manually-assign-a-bot-led-conversation-to-an-agent-or-queue)
+
+#### Quick Agent Information Pop-up on Monitor Tab
+
+Hovering over an agent’s name in the agents' tab shows key details about the agent, reducing the need to navigate multiple screens. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#agents)
+
+### Configuration
+
+#### Support for Queue Name in agentUtils.setQueue
+
+The `agentUtils.setQueue` function is enhanced with queue identification capabilities and improved error handling.
+
+* The function now accepts Queue IDs and Queue Names.
+* Direct ‘Queue ID’ resolution without additional API calls.
+* Added validation for queue names in numeric format.
+* A new error message for unsupported queue name formats.  
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-queue)
+
+### API
+
+#### Fetch Real-Time Agent Status Distribution
+
+Introduced a new API endpoint to fetch real-time agent status distribution. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/check-agent-availability-status.md)
+
+#### Fetch Agent ID Using Custom ID (Extension Number)
+
+Custom IDs can effectively retrieve agent IDs if mapped one-to-one. However, in scenarios where the organization has multiple agent IDs for the same custom ID, it will return an array of agent IDs. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-the-agent-id-using-custom-id.md)
+
+### Analytics
+
+#### Interaction Details Enhancement
+
+The 'Copy All' functionality in the Interaction Details tab now includes additional information fields: Timezone and Caller and Callee Numbers. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+<hr>
+
 ## v11.9.1 January 25, 2025
 
 <u>Patch Release</u>
@@ -962,7 +1111,7 @@ Administrators can now label outbound phone numbers (for example, Technical Supp
 
 #### PII Redaction: Consistency Between Instance and Automation Bots
 
-To ensure consistency, the instance bot also redacts data that the Automation bot redacts and vice versa. This applies to all channels.
+To ensure consistency, the instance bot also redacts data that the Automation bot redacts and vice versa. This applies to all channels. This change affects new transcripts created from this release onwards. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/pii-data-masking.md)
 
 ### Analytics and Reporting
 

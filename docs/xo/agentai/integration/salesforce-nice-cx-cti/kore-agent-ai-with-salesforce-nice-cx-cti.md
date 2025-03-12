@@ -328,6 +328,13 @@ For on-prem, refer to the corresponding host.<strong> </strong>
   </tr>
 </table>
 
+## Architecture Diagrams
+### Chat
+<img src="../images/chat-architecture.png" alt="chat-architecture" title="chat-architecture" style="border: 1px solid gray; zoom:80%;">
+
+### Voice
+<img src="../images/voice-architecture.png" alt="voice-architecture" title="voice-architecture" style="border: 1px solid gray; zoom:80%;">
+
 ## Set up Salesforce-NICE CTI package
 
 Follow [this article](https://help.nice-incontact.com/content/agent/agentapplicationadministration/agentforsalesforce/installation.htm?TocPath=Agent%20Application%20Administration%7CAgent%20Application%20Administration%7CSalesforce%20Agent%20%7C_____3){:target="_blank"} to install and configure the NICE CTI package on your Salesforce account.
@@ -408,7 +415,7 @@ This app will be used in studio script.
 5. Select **NICE inContact** in the **CTI Provider** list.  
 <img src="../images/nice-incontact-13.png" alt="nice-incontact" title="nice-incontact" style="border: 1px solid gray; zoom:80%;">
 
-6. Select **Active,** and click **Save**.  
+6. Select **Active**, and click **Save**.  
 <img src="../images/active-save-14.png" alt="active-save" title="active-save" style="border: 1px solid gray; zoom:80%;">
 
 ### Set up AgentAssist Configuration
@@ -418,11 +425,11 @@ This app will be used in studio script.
 <img src="../images/kore-agentassist-configuration-15.png" alt="kore-agentassist-configuration" title="kore-agentassist-configuration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the right-top corner of the page.
-4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
-   <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">  
-
-      <img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;">
-5. Select **Active** and click **Save**.
+4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
+<img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;"> 
+      * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the bot.  
+ <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
+ 5. Select **Active** and click **Save**.
 
 ### Configure NICE CTI Data in Salesforce
 
@@ -576,60 +583,13 @@ Download Script For Voice: [kore.ai_nicecti_sf_voice.XML](https://bitbucket.org/
 
 Open the Studio, import the above script, and customize as per the following table definition:
 
-<table>
-  <tr>
-   <td><strong>Node</strong>
-   </td>
-   <td><strong>Activity</strong>
-   </td>
-   <td><strong>Fields Updated</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Set Credentials
-   </td>
-   <td>Update the credentials to connect to Salesforce Org
-   </td>
-   <td>Salesforce_key (created in step <em><a href="#OAuth>“Enabling OAuth”</a></em>)
-<p>
-Salesforce_secret (created in step <em><a href="#OAuth>“Enabling OAuth”</a></em>)
-<p>
-Salesforce_username
-<p>
-Salesforce_password
-<p>
-<strong>Note:</strong> The password is your Salesforce password appended with your Security Token. Refer to <a href="https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5">this guide</a> for help.
-   </td>
-  </tr>
-  <tr>
-   <td>User Auth
-   </td>
-   <td>Configure Salesforce org credentials and generate oauth Token
-   </td>
-   <td>salesforceBaseURI
-<p>
-<strong>Note:</strong> You can get it by running the following curl:
-<p>
-curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=&lt;Salesforce Client ID>&client_secret=&lt;Salesforce Client_Secret>&username=&lt;Salesforce_Username>&password=&lt;Salesforce Password + Salesforce Security Token>’
-   </td>
-  </tr>
-  <tr>
-   <td>ReqAgent
-   </td>
-   <td>Update Skill for Agent Routing
-   </td>
-   <td>Skill and other attributes as needed
-   </td>
-  </tr>
-  <tr>
-   <td>AgentAssist
-   </td>
-   <td>Map the AgentAssist Hub Instance
-   </td>
-   <td>Select the AgentAssist Hub app created in the above step.
-   </td>
-  </tr>
-</table>
+| **Node**       | **Activity**                                                    | **Fields Updated**                                                                                                      |
+|----------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| **Set Credentials**  | Update the credentials to connect to Salesforce Org           | Salesforce_key (created in step [“Enabling OAuth”](#OAuth))<br>Salesforce_secret (created in step [“Enabling OAuth”](#OAuth))<br>Salesforce_username<br>Salesforce_password<br>**Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5){:target="_blank"} for help. |
+| **User Auth**        | Configure Salesforce org credentials and generate oauth Token | salesforceBaseURI<br>**Note:** You can get it by running the following curl:<br><br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’` |
+| **ReqAgent**         | Update Skill for Agent Routing                                 | Skill and other attributes as needed                                                                                      |
+| **Custom Data**      | The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this custom data will be accessible in the UserContext of the bot.<br>Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the bot. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"` |
+| **AgentAssist**      | Map the AgentAssist Hub Instance                                | Select the AgentAssist Hub app created in the above step.                                                                  |
 
 **AgentAssist Hub Reference**:
 
@@ -653,59 +613,13 @@ Download Script For Chat: [kore.ai_nicecti_sf_chat.XML](https://bitbucket.org/ko
 
 Open the Studio, import the above script, and customize as per the following table definition:
 
-<table>
-  <tr>
-   <td><strong>Node</strong>
-   </td>
-   <td><strong>Activity</strong>
-   </td>
-   <td><strong>Fields Updated</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Salesforce Auth
-   </td>
-   <td>Update the credentials to connect to Salesforce Org
-   </td>
-   <td>
-<ul>
+| **Node**            | **Activity**                                                    | **Fields Updated**                                                                                                                                                                                                                                                                         |
+|---------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Salesforce Auth**  | Update the credentials to connect to Salesforce Org              | - salesforceBaseURI<br>  **Note:** You can get it by running the following curl:<br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’`<br>- salesforcekey (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforcesecret (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforceusername<br>- salesforcepassword<br> **Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5) for help. |
+| **ReqAgent**         | Update Skill for Agent Routing                                  | Skill and other attributes as needed                                                                                                                                                                                                                                                        |
+| **Custom Data**      | The “customdata” object in the script can be used to pass information to the Agent AI Bot. During runtime, this customdata will be accessible in the UserContext of the bot.<br> Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the bot. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"`                                                                                                            |
+| **AgentAssist**      | Map the AgentAssist Hub Instance                                 | Select the AgentAssist Hub App created in the above step.                                                                                                                                                                          |
 
-<li>salesforceBaseURI
-    <strong>Note:</strong> You can get it by running the following curl:
-<p>
-
-    curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=&lt;Salesforce Client ID>&client_secret=&lt;Salesforce Client_Secret>&username=&lt;Salesforce_Username>&password=&lt;Salesforce Password + Salesforce Security Token>’</li>
-
-<li>salesforcekey (created in the step <em><a href="#OAuth">“Enabling OAuth”</a></em>)</li>
-
-<li>salesforcesecret (created in the step <em><a href="#OAuth">“Enabling OAuth”</a></em>)</li>
-
-<li>salesforceusername</li>
-
-<li>salesforcepassword
-<p>
-
-    <strong>Note:</strong> The password is your Salesforce password appended with your Security Token. Refer to <a href="https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5">this guide</a> for help.</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>ReqAgent
-   </td>
-   <td>Update Skill for Agent Routing
-   </td>
-   <td>Skill and other attributes as needed
-   </td>
-  </tr>
-  <tr>
-   <td>AgentAssist
-   </td>
-   <td>Map the AgentAssist Hub Instance
-   </td>
-   <td>Select the AgentAssist Hub App created in the above step.
-   </td>
-  </tr>
-</table>
 
 ## NICE Account setup for Incoming Phone Call/Chat
 

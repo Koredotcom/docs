@@ -1,11 +1,11 @@
-# Agent View (My Dashboard)
+# Agent Dashboard
 
 **My Dashboard** is the Agent Dashboard for agents’ view, which offers detailed insights into your activity and performance as an agent.
 
 Each agent has a personalized dashboard, which is accessible to both the agents. In this, the agents can view their performance through scorecards provided by their supervisors. This setup allows agents to take appropriate actions based on their performance metrics.
 
-You can view **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **My Dashboard**.  
-<img src="../agent-dashboard/images/coaching-assignments-agent-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
+You can access **My Dashboard** by navigating to **Contact Center AI** > **Quality AI** > **Analyze** > **My Dashboard**.  
+<img src="../agent-dashboard/images/my-dashboard-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 In this, you can filter all your interaction channels (Voice and SMS or both) by selecting the following date ranges:
 
@@ -49,6 +49,10 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
     <img src="../agent-dashboard/images/my-dashboard-number-of-fails.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
+## Coaching Insights
+
+The Coaching Insights feature highlights an agent's strengths and areas for improvement. The strongest attributes and opportunity areas are aggregated based on the selected scorecards. If the scorecard selection is updated, these insights are recalculated accordingly. When there are more than five strongest attributes or opportunity areas, a scroll option becomes available for viewing the complete list.
+
 * **Strongest Attributes**: This shows the top 5 attributes with scores of 80 or higher, ranked by a score assigned across the scorecards.
 
     <img src="../agent-dashboard/images/my-dashboard-strongest-attributes.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
@@ -57,7 +61,7 @@ The **Overview** of the Dashboard displays metrics for the chosen time and selec
 
     <img src="../agent-dashboard/images/my-dashboard-opportunity-areas.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:80%;">
 
-### Scorecard Trend
+## Scorecard Trend
 
 In this, the agents can view their performance trends from scorecards over various periods.
 

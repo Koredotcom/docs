@@ -471,6 +471,14 @@ Allow user to join a conversation
    </td>
 </tr>
 <tr>
+   <td><strong>Call Dialing Stage Settings</strong>
+   <br>
+Enable call controls during dialing by toggling the option in 'Outbound Dialer'
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td><strong>Voice Campaigns</strong>
    <br>
 Access to Voice campaigns under Campaigns module
@@ -522,6 +530,22 @@ Whose interactions should he have access to
    <td><strong>Outbound Email</strong>
    <br>
 Make outbound emails if enabled for the account
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
+   <br>
+Allow user to select their preferred channel for incoming interactions.
    </td>
    <td>Yes
    </td>
@@ -1072,6 +1096,14 @@ Allow user to join a conversation
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Call Dialing Stage Settings</strong>
+   <br>
+Enable call controls during dialing by toggling the option in 'Outbound Dialer'
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td><strong>Voice Campaigns</strong>
    <br>
 Access to Voice campaigns under Campaigns module
@@ -1119,6 +1151,22 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>Yes</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
+   <br>
+Allow user to select their preferred channel for incoming interactions.
+   </td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -1647,6 +1695,14 @@ Allow user to join a conversation
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Call Dialing Stage Settings</strong>
+   <br>
+Enable call controls during dialing by toggling the option in 'Outbound Dialer'
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td><strong>Voice Campaigns</strong>
    <br>
 Access to Voice campaigns under Campaigns module
@@ -1694,6 +1750,22 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>No</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
+   <br>
+Allow user to select their preferred channel for incoming interactions.
+   </td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -2234,6 +2306,14 @@ Allow user to join a conversation
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Call Dialing Stage Settings</strong>
+   <br>
+Enable call controls during dialing by toggling the option in 'Outbound Dialer'
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td><strong>Voice Campaigns</strong>
    <br>
 Access to Voice campaigns under Campaigns module
@@ -2281,6 +2361,22 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>Yes</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
+   <br>
+Allow user to select their preferred channel for incoming interactions.
+   </td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -2825,6 +2921,14 @@ Allow user to join a conversation
    <td>No</td>
 </tr>
 <tr>
+   <td><strong>Call Dialing Stage Settings</strong>
+   <br>
+Enable call controls during dialing by toggling the option in 'Outbound Dialer'
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td><strong>Voice Campaigns</strong>
    <br>
 Access to Voice campaigns under Campaigns module
@@ -2872,6 +2976,22 @@ Whose interactions should he have access to
 Make outbound emails if enabled for the account
    </td>
    <td>No</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
+   <br>
+Allow user to select their preferred channel for incoming interactions.
+   </td>
+   <td>No
+   </td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -3578,6 +3698,15 @@ Allow user to join a conversation
 No</td>
 </tr>
 <tr>
+   <td><strong>Call Dialing Stage Settings</strong>
+   <br>
+Enable call controls during dialing by toggling the option in 'Outbound Dialer'
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
    <td><strong>Voice Campaigns</strong>
    <br>
 Access to Voice campaigns under Campaigns module
@@ -3647,6 +3776,24 @@ Make outbound emails if enabled for the account
    <td>Yes
    <br>
 No</td>
+</tr>
+<tr>
+   <td><strong>Bot-led Interactions</strong>
+   <br>
+Access bot-driven interactions on the Monitor tab
+   </td>
+   <td>Yes
+   <br>
+   No</td>
+</tr>
+<tr>
+   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
+   <br>
+Allow user to select their preferred channel for incoming interactions.
+   </td>
+   <td>Yes
+   <br>
+   No</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>

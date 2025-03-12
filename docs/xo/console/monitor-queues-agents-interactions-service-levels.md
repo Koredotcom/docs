@@ -165,7 +165,19 @@ The following metrics and their total counts are displayed:
 * **Transferred**: Count of interactions an agent has transferred to a queue or another agent.
 * **Rejected**: Count of interactions explicitly rejected by an agent using the reject button.
 * **Unanswered**: Count of interactions assigned to an agent where the agent did not pick up the interaction within the acceptance timeout.  
-<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">
+
+The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Amber colour.  
+<img src="../images/channel-selection-and-agent-tab-details.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
+If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in amber for the supervisor.
+
+* Hovering over an agent’s name displays a pop-up with the following information:
+
+    * Agent status (for example, Available, Busy, Inactive).
+    * Agent Name and profile icon, email ID, phone number, role.
+    * Skills assigned to the agent.
+    * Queues the agent is associated with.
+    * Agent Groups the agent is part of.  
+        <img src="../images/agent-name-hover.png" alt="Agent Name Hover" title="Agents Name Hover" style="border: 1px solid gray; zoom:80%;">  
 
 * The load capacity indicator displays the agent’s overall load capacity. Hovering over the load shows the channel-wise load capacity—for example, Live Chat ⅔ (2 slots out of 3 defined slots are engaged).
 <img src="../images/load-capacity-indicator.png" alt="Load Capacity Indicator" title="Load Capacity Indicator" style="border: 1px solid gray; zoom:80%;">
@@ -372,13 +384,21 @@ You can view all live interactions on the Contact Center AI console. This view i
 
 ### Manually Assign Conversations to an Agent and Change Queue
 
-* Supervisors can assign conversations to an agent, and change queues for conversations. Click an on going conversation to view the Assign and Change Queue options.  
+Supervisors can assign conversations to an agent, and change queues for conversations. Click an Ongoing conversation to view the Assign and Change Queue options.  
 <img src="../images/manual-assign-change-queue.png" alt="Manually Assign/Change Queue" title="Manually Assign/Change Queue" style="border: 1px solid gray; zoom:80%;">
 
 Supervisors can also view an agent’s engagement metrics.  
 <img src="../images/interaction-dropdown.png" alt="Agent Engagement Metrics Dropdown" title="Agent Engagement Metrics Dropdown" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/engagement-metrics-agent.png" alt="Engagement Metrics" title="Engagement Metrics" style="border: 1px solid gray; zoom:80%;">
+
+### Manually Assign a Bot-led Conversation to an Agent or Queue
+
+Supervisors can assign bot-led conversations to an agent or a queue. To do so, click an Ongoing conversation and then click **Assign**.  
+<img src="../images/assign-button-bot-led-conversation.png" alt="Manually Assign/Change Queue (Bot-Led Conversation)" title="Manually Assign/Change Queue (Bot-Led Conversation)" style="border: 1px solid gray; zoom:80%;">
+
+In the Assign Conversation pop-up window, select Agent/Queue, select the agent or queue from the dropdown, mark as priority if required, turn on the message to customer toggle if you want to send a message to the customer, and click **Assign**.  
+<img src="../images/assign-bot-led-conversation.png" alt="Assign/Change Queue (Bot-Led Conversation)" title="Assign/Change Queue (Bot-Led Conversation)" style="border: 1px solid gray; zoom:80%;">
 
 ### Filters
 
@@ -390,8 +410,14 @@ Supervisors can also view an agent’s engagement metrics.
 2. Click **New Filter**.  
 <img src="../images/new-filter.png" alt="New Filter Button" title="New Filter Button" style="border: 1px solid gray; zoom:80%;">
 
-3. Select the Select the **Status**, **Agents**, **Skills**, **Queues**, **Channels**, **Type**, and **Language**.  
-    <img src="../images/interactions-filters.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:80%;">
+3. Select the **Status**, **Agents** (bot-led interactions disabled), **Skills**, **Queues**, **Channels**, **Type**, and **Language**.  
+    <img src="../images/interaction-filter.png" alt="Filter Options (Bot-Led Interactions Disabled)" title="Filter Options (Bot-Led Interactions Disabled)" style="border: 1px solid gray; zoom:80%;">  
+    Select the **Status**, **Participants** (bot-led interactions enabled), **Skills**, **Queues**, **Channels**, **Type**, and **Language**.  
+        <img src="../images/participant-filter.png" alt="Filter Options (Bot-Led Interactions Enabled)" title="Filter Options (Bot-Led Interactions Enabled)" style="border: 1px solid gray; zoom:80%;">  
+    
+    !!! Note
+
+        Bot-led interactions will not appear by default, even when bot-led interaction permission is enabled for a role. To view these interactions, supervisors must explicitly select 'Automation' or 'Automation/Agents' from the Participant filter. The default setting remains "Agent" regardless of permission settings to prevent supervisors from being overwhelmed with automation conversations. This keeps automation conversations hidden unless specifically requested while maintaining the flexibility to include them when needed.
 
     Select from the below available options:
     1. **Clear** – Clears the selection.  
@@ -405,7 +431,7 @@ Supervisors can also view an agent’s engagement metrics.
 
     A confirmation message is displayed and the filter is created.
 
-## Edit Filter
+#### Edit Filter
 
 Steps to edit a filter:
 
@@ -472,8 +498,8 @@ You can clear the filters by clicking Clear Filters on the upper right corner.
 
 ## Time Intervals
 
-You can configure the service level targets for each channel type and measuring interval. The measuring intervals can be configured in 30-minute increments, with a minimum interval of 30 minutes and a maximum interval of 24 hours.  
-<img src="../images/time-intervals.png" alt="Time Intervals" title="Time Intervals" style="border: 1px solid gray; zoom:100%;">
+You can configure the service level targets for each channel type and measuring interval. The measuring intervals can be configured in 30-minute increments, with a minimum interval of 30 minutes and a maximum interval of 24 hours. You can also select Today, which displays all conversations from 12:00:00 AM (midnight) of the current day in the user's time zone.  
+<img src="../images/service-level-time-intervals.png" alt="Time Intervals" title="Time Intervals" style="border: 1px solid gray; zoom:100%;">
 
 ## Configure Service Levels
 

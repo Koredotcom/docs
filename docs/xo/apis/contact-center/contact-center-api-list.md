@@ -10,12 +10,14 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Contacts Public APIs](#contacts-public-apis)
 * [Import/Export Data APIs](#importexport-data-apis)
 * [Call Recording API](#call-recording-api)
+* [Voicemail Recording API](#voicemail-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
 * [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
 * [Queue AI APIs](#queue-ai-apis)
 * [Quality AI APIs](#quality-ai-apis)
 * [WFM APIs](#wfm-apis)
 * [Campaigns API](#campaigns-api)
+* [Hours of Operation API](#hours-of-operation-api)
 
 ### Analytics and Reporting APIs
 
@@ -38,6 +40,8 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Get a Specific Agent](../contact-center/get-a-specific-agent.md)                                               | To retrieve the details of a particular agent with the given stream Id and agent Id.                              | SmartAssist Analytics |
 | [Update a Specific Agent](../contact-center/update-a-specific-agent.md)                                         | To update the details of a particular agent with the given Stream Id and Agent Id.                                | SmartAssist Analytics |
 | [Delete a Specific Agent from a Particular Agent Group](../contact-center/delete-a-specific-agent-from-a-particular-agent-group.md) | To delete a particular agent with the given Stream Id and Agent Id.                                               | SmartAssist Analytics |
+| [Get the Agent ID Using the Custom ID](../contact-center/get-the-agent-id-using-custom-id.md)                                            | To get the Agent ID associated with a Custom ID (extension number).                                    | Configuration |
+| [Check Agent Availability Status](../contact-center/check-agent-availability-status.md)                                            | To check the availability of agents based on specified skill Ids, queue Ids, and agent Ids.                                    | Configuration |
 
 ### Skills APIs
 | API                                                                                                   | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
@@ -82,13 +86,19 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Import/Save Data by Giving Details](../contact-center/import-or-save-data-by-giving-details.md)                     | To import/save data with the given accountId and orgId.                                              | SmartAssist Import and Export Feature |
 | [Export Data by Giving Details](../contact-center/export-data-by-giving-details.md)                                   | To export data with the given accountId and orgId.                                                   | SmartAssist Import and Export Feature |
 
-### Call Recording API
+### Call Recording APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Fetch Call Recording](../contact-center/fetch-call-recording.md)                                                   | To retrieve the recording of a specific call using either the user Id or session Id.                                             | SmartAssist Recordings |
 | [Fetch Call Recording (v2)](../contact-center/fetch-call-recording-(v2).md)                                         | This API facilitates the downloading of voice call recordings. The API provides an S3-hosted URL where the recording can be accessed. | SmartAssist Recordings |
 | [Delete Call Recording](../contact-center/delete-call-recording.md)                                                 | This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.        | Delete Recordings     |
+
+### Voicemail Recording API
+
+| API                                                                                               | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| [Fetch Voicemail Recording](../contact-center/fetch-voicemail-recording.md)                                                   | This API facilitates the downloading of voicemail recordings. The API provides an S3-hosted URL where the voicemail recording can be accessed.                                             | SmartAssist Voicemail |
 
 ### Outbound Calling API
 
@@ -133,4 +143,10 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API                | Description                                                                                                                                          | Associated App Scope |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| Send Outbound SMS  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
+| [Send Outbound SMS](../contact-center/send-outbound-sms.md)  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
+
+### Hours of Operation API
+
+| API                | Description                                                                                                                                          | Associated App Scope |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| [Hours of Operation](../contact-center/hours-of-operation.md) | To get the hours of operation by providing the orgId and queueId. | Configuration         |

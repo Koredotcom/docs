@@ -6,7 +6,7 @@ Kore.ai Voice Gateway is a comprehensive voice automation solution that manages 
 
 You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
 
-Navigate to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
+Go to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
 <img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Phone Numbers
@@ -91,16 +91,16 @@ Under the SIP Trunk tab, you can configure the network IPs and domains, DID numb
 Steps to configure SIP Trunk:
 
 1. Click **Configure SIP Trunk**.  
-    <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/sip-numbers.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
 
 2. On the **Configure SIP Trunk** page, configure the following:
     1. **Product Selection**: Select the product for which the SIP Trunk is being configured. You can select from the following options:
         * Contact Center AI
         * Agent AI
-    2. **SIP URI**: This is a pre-configured field.
+    2. **SIP URI**: This is a pre-configured field. A copy button allows you to copy the SIP URIs.
     3. **Network**: To configure the Network, you can select one of the following:
         1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox.  
-            <img src="../images/sip-trunks-setup.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/sip-uri.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
 
         2. Under **Domain Name**, provide the following:
             1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](../kore.ai-voice-gateway/ips-ports-protocols.md).
@@ -117,7 +117,10 @@ Steps to configure SIP Trunk:
     7. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
     8. (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
     9. Under SIP Termination URI, enter the **IP Address**/**Domain Name**.
-    10. Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
+    10. **Option Ping**: If selected, the system will regularly check whether the IP addresses are accessible. This option is selected by default.  
+        <img src="../images/option-ping.png" alt="Option Ping" title="Option Ping" style="border: 1px solid gray; zoom:80%;">
+    
+    11. Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
         * X-AgentName: {{agentName}}
         * X-AgentPhoneNumber: {{agentPhoneNumber}}
         * X-AgentEmailID:  {{agentEmailId}}
@@ -128,17 +131,17 @@ Steps to configure SIP Trunk:
         * X-AgentFirstName: {{agentFirstName}}
         * X-AgentLastName: {{agentLastName}}
 
-    11. Click **Next**.  
+    12. Click **Next**.  
         <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;">
 
-    12. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
-    13. Click **Save**.  
+    13. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
+    14. Click **Save**.  
     <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:80%;">  
 
         Please wait for upto ten minutes after saving for the IPs to be whitelisted.  
         <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
-    14. The selected information appears on the SIP Numbers tab.  
+    15. The selected information appears on the SIP Numbers tab.  
         <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
 
 ### Attach Flow
@@ -187,77 +190,105 @@ Steps to delete a SIP number:
 You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
     <img src="../images/voice-preferences.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
-### Text-to-Speech Engine
+Steps to configure Voice Preferences:
 
-Steps to configure the TTS engine:
+1. Select the following on the Voice Preferences window:
+    1. Language
+    2. Automatic Speech Recognition Engine (ASR)
+        1. ASR
+            You can choose between
+            * Microsoft Azure Speech Services,
+            * Google Cloud Speech-to-Text,
+            * Amazon Transcribe.
+        2. Dialect
+        3. Primary ASR Configuration (Advanced Setting)
+        4. Fallback ASR Configuration (Advanced Setting)
+    3. Text to Speech Engine (TTS)
+        1. TTS
+            You can choose between
+            * Microsoft Azure Speech Services,
+            * Google Cloud Text-to-Speech,
+            * AWS Amazon Polly,
+            * ElevenLabs,
+            * Whisper,
+            * PlayHT,
+            * Deepgram Text-to-speech.
+        2. Voice
+    4. Voice Preview
+        1. Sample Text: Enter Sample Text to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to adjust Playback Speed. Click the Play button next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its voice options. Select a different Voice Language if required.
+        2. Primary TTS Configuration (Advanced Setting)
+        3. Fallback TTS Configuration (Advanced Setting)
+2. Click **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.  
 
-1. In the Voice Preferences window, select a text-to-speech engine. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md#supported-speech-engines).
-2. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to change the **Playback Speed** and **Download** the voice preview.
-3. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each has its voice options.
-4. Select a different Voice Language if required.  
-    <img src="../images/tts-engine.gif" alt="TTS Engine" title="TTS Engine" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
 
-### Automated Speech Recognition Engine
-
-Steps to configure the ASR Engine:
-
-1. Select an **Automated Speech Recognition Engine**. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md#supported-speech-engines).
-2. Select the Dialect and click **Done** once you have completed configuring your voice preferences.  
-    <img src="../images/asr-engine.png" alt="ASR Engine" title="ASR Engine" style="border: 1px solid gray; zoom:80%;">
-
-    The set voice, language, and dialect apply to automated customer responses that use text-to-speech.
-
-#### List of Supported Dialects
+## List of Supported Dialects
 
 The following dialects are supported:
 
 <table>
   <tr>
-   <td>English (Australia)
-   </td>
-   <td>English (Nigeria)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Canada)
-   </td>
-   <td>English (Pakistan)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Ghana)
-   </td>
-   <td>English (Philippines)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Hong Kong)
-   </td>
-   <td>English (Singapore)
-   </td>
-  </tr>
-  <tr>
-   <td>English (India)
-   </td>
-   <td>English (South Africa)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Ireland)
-   </td>
-   <td>English (Tanzania)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Kenya)
-   </td>
-   <td>English (United Kingdom)
-   </td>
-  </tr>
-  <tr>
-   <td>English (New Zealand)
+   <td>
+    English (Australia)
    </td>
    <td>
+    English (Nigeria)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Canada)
+   </td>
+   <td>
+    English (Pakistan)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Ghana)
+   </td>
+   <td>
+    English (Philippines)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Hong Kong)
+   </td>
+   <td>
+    English (Singapore)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (India)
+   </td>
+   <td>
+    English (South Africa)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Ireland)
+   </td>
+   <td>
+    English (Tanzania)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Kenya)
+   </td>
+   <td>
+    English (United Kingdom)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (New Zealand)
+   </td>
+   <td>
+    English (United States)
    </td>
   </tr>
 </table>

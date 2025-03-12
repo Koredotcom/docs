@@ -18,12 +18,6 @@ Currently, the following prebuilt agents are available:
 * **Gmail** - It can get emails based on user queries fetching entities, send responses as emails, set individual emails as context, and ask for follow-ups.
 * **Drive** - It can fetch files based on user queries and filters, set individual files as context, and ask follow-up questions.
 
-## Pre-Built Prompt Agents
-
-* **Summarizer** - It helps to summarize content based on the provided material into selected summary formats.
-* **Mail Scribe** - It helps to draft emails based on the topic description.
-* **Translate** - It helps to translate uploaded files or pasted content into any language as requested. 
-
 ## Publish a Pre-Built Agent
 
 Administrators can publish the selected pre-built agents to be available for their users via the Agent Store. 

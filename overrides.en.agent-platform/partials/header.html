@@ -1,0 +1,312 @@
+<!-- Determine base classes -->
+{% set class = "md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+<style>
+  .md-header__option{
+    margin-bottom: 0px;
+  }
+  .nav-links{
+    display: flex;
+  }
+  .m-0{
+    margin: 0px;
+  }
+  .md-cstm-sele{
+    z-index: 30;
+  }
+  .md-cstm-sele .nav-item{
+    display: flex;
+    align-items: center;
+  }
+
+  .md-cstm-sele .nav-item span{
+    transform: rotate(90deg);
+  }
+  .md-select__list__cstm{
+    width: 160px;
+    padding: 8px;
+  }
+  .md-select__list__cstm .md-select__link{
+    font-size: 13px;
+  }
+  .md-more-links{
+    background-color: var(--md-primary-fg-color);
+    display: none;
+    text-align: center;
+  }
+  .md-more-links .nav-links{
+    justify-content: center;
+  }
+  .md-more-links .nav-item{
+    color: var(--md-primary-bg-color) !important;
+  }
+  .md-more-links .nav-item span{
+    border-radius: 100%;
+    height: 0.9rem;
+    transition: background-color .25s;
+    width: 0.9rem;
+    }
+    .md-more-links .nav-item span::after{
+      background-color: currentcolor;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    -webkit-mask-image: var(--md-nav-icon--next);
+    mask-image: var(--md-nav-icon--next);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: transform .25s;
+    vertical-align: -0.1rem;
+    width: 100%;
+    }
+  @media only screen and (max-device-width: 767px){
+   .md-d-none{
+    display: none;
+   }
+   .md-more-links{
+    display: block !important;
+   }
+  }
+  @media only screen and (max-device-width: 550px){
+   .md-header__button{
+     margin: 0px !important;
+   }
+   .logo .logo-img img{
+    width: 70px !important;
+   }
+   .md-header__title{
+    margin-left: 10px !important;
+   }
+   .logo-title{
+    font-size: 13px !important;
+   }
+  }
+</style>
+<!-- Header -->
+<header class="{{ class }}" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="{{ lang.t('header') }}"
+  >
+
+    <!-- Link to home -->
+    <!-- <a
+      href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
+      title="{{ config.site_name | e }}"
+      class="md-header__button md-logo"
+      aria-label="{{ config.site_name }}"
+      data-md-component="logo"
+    >
+      {% include "partials/logo.html" %}
+    </a> -->
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      {% include ".icons/material/menu" ~ ".svg" %}
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <!-- <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            {{ config.site_name }}
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            {% if page.meta and page.meta.title %}
+              {{ page.meta.title }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </span>
+        </div>
+      </div> -->
+      <!-- <h1>Kore ai test</h1> -->
+      <div class="logo">
+        <div class="logo-img">
+          <img width="228" height="58" src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2022/03/01074614/Kore.ai_logo-latest.svg" class="attachment-large size-large" alt="kore ai">
+          <span class="logo-title">DOCUMENTATION</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-links md-d-none">
+      <a class="nav-item" 
+        href="https://docs.kore.ai/agent-platform/getting-started/introduction/">Release Notes</a>
+
+      <!-- <a class="nav-item"
+          target="_blank" 
+          href="https://support.kore.ai/"
+      > -->
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Get Support
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  
+
+ 
+      
+    </div>
+
+    <!-- Color palette -->
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}
+        <form class="md-header__option" data-md-component="palette">
+          {% for option in config.theme.palette %}
+            {% set scheme  = option.scheme  | d("default", true) %}
+            {% set primary = option.primary | d("indigo", true) %}
+            {% set accent  = option.accent  | d("indigo", true) %}
+            <input
+              class="md-option"
+              data-md-color-media="{{ option.media }}"
+              data-md-color-scheme="{{ scheme | replace(' ', '-') }}"
+              data-md-color-primary="{{ primary | replace(' ', '-') }}"
+              data-md-color-accent="{{ accent | replace(' ', '-') }}"
+              {% if option.toggle %}
+                aria-label="{{ option.toggle.name }}"
+              {% else  %}
+                aria-hidden="true"
+              {% endif %}
+              type="radio"
+              name="__palette"
+              id="__palette_{{ loop.index }}"
+            />
+            {% if option.toggle %}
+              <label
+                class="md-header__button md-icon"
+                title="{{ option.toggle.name }}"
+                for="__palette_{{ loop.index0 or loop.length }}"
+                hidden
+              >
+                {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+              </label>
+            {% endif %}
+          {% endfor %}
+        </form>
+      {% endif %}
+    {% endif %}
+
+    <!-- Site language selector -->
+    {% if config.extra.alternate %}
+      <div class="md-header__option">
+        <div class="md-select md-cstm-sele">
+          {% set icon = config.theme.icon.alternate or "material/translate" %}
+          <button
+            class="md-header__button md-icon"
+            aria-label="{{ lang.t('select.language') }}"
+          >
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              {% for alt in config.extra.alternate %}
+                <li class="md-select__item">
+                  <a
+                    href="{{ alt.link | url }}"
+                    hreflang="{{ alt.lang }}"
+                    class="md-select__link"
+                  >
+                    {{ alt.name }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- Button to open search modal -->
+    {% if "material/search" in config.plugins %}
+      <label class="md-header__button md-icon" for="__search">
+        {% include ".icons/material/magnify.svg" %}
+      </label>
+
+      <!-- Search interface -->
+      {% include "partials/search.html" %}
+    {% endif %}
+
+  
+  </nav>
+   <nav class="md-more-links">
+    <div class="nav-links">
+      <a class="nav-item" 
+          href="https://docs.kore.ai/agent-platform/release-notes/recent-updates/">Release Notes</a>
+
+      <!-- <a class="nav-item"
+          target="_blank" 
+          href="https://support.kore.ai/"
+      > -->
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Get Support
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div> 
+      
+    </div>
+   </nav>
+  <!-- Navigation tabs (sticky) -->
+  {% if "navigation.tabs.sticky" in features %}
+    {% if "navigation.tabs" in features %}
+      {% include "partials/tabs.html" %}
+    {% endif %}
+  {% endif %}
+</header>

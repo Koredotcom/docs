@@ -25,7 +25,7 @@ To retrieve call volume details associated with a specified collection point for
    <td>Authorization
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
+<br>
 See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
    </td>
   </tr>

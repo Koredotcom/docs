@@ -12,7 +12,7 @@ The Search AI Node allows users to create meta filters with specific rules, enha
 ## Add the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the **Search AI Node**.
-2. Click **Gen AI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
+2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
 3. The **Search AI Node** window is displayed with the **Component Properties** tab selected by default.
 
 <img src="../images/search_ai_adding_node.png" alt="adding_node" title="adding_node" style="border:1px solid gray;zoom:70%;">
@@ -94,4 +94,19 @@ Use the Instance Properties to define any user tags that you want to set.
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions)
 
- <img src="../images/search_ai_connections_properties.png" alt="connections_properties" title="connections_properties" style="border:1px solid gray;zoom:70%;">
+ <img src="../images/search_ai_connections_properties.png" alt="connections_properties" title="connections_properties" style="border:1px solid gray;zoom:70%;">  
+
+ The Connection Path property offers three default variants:
+
+1. Not Connected - No specific next node is defined
+2. End of Dialog - Explicitly ends the current dialog
+3. Return to Flow - Terminates the Dialog Task and returns control to the Flow Builder. The Flow Builder resumes from the next node.
+    * Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context.
+    It has two deflection types - ‘ Automation’ and ‘Agent Transfer’.  
+    <img src="../images/deflect-to-chat1.png" alt="Deflect to Chat" title="Deflect to Chat" style="border:1px solid gray;zoom:70%;">
+
+
+!!! Note
+
+    Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
+

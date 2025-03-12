@@ -12,11 +12,10 @@ This section outlines the essential components, credentials, and permissions req
         * Configured to receive desktop chats
     * Agent AI Account
         * Enabled Web/Mobile channel
-        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
+        * Required bot credentials: Bot ID, Client ID, Client Secret, and Widget URL (Credential Location: Go to **agent ai** > **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**.)
 * Roles and Permissions:
     * ServiceNow: Admin Role
     * Kore XO Platform (Optional): Required only if you are doing an Agent Transfer from Kore XO Platform to ServiceNow. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](./../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
-
 
 ## Interaction between ServiceNow and Kore.ai Agent AI
 
@@ -77,11 +76,9 @@ Steps to resolve the error:
 * Go to **Update Set Review Problems**, and select all.
 * On the right-side, select **Accept remote update** from the **Action on selected rows…** drop-down list. 
 
-
     !!! note
 
         **Multi-language support** for Agent AI is available only with the **Update Set**.
-
 
 ### Step 2: Set Up Agent AI Application Configuration
 
@@ -106,7 +103,6 @@ This section details the steps to set up the Agent AI app configuration.
         
 5. **Language Code**: For any language other than English, select the language code from the drop-down list. The default language code is English (En).
 
-
 6. Click **Submit**.
 
     !!! note
@@ -120,8 +116,9 @@ This section details the steps to set up the Agent AI app configuration.
 * For version 2 (v2) of Agent AI "https\://agentassist.kore.ai" (or the domain where the Agent AI is hosted), you should add this to the Agent AI URL.  
 Sample v2 URL: https\://<domain-name\>.kore.ai
 
-* For version 3 (v3), you must copy the Agent AI widget URL from the Agent AI or XO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. For standalone Agent AI, refer to [Chat Channels](https://docs.kore.ai/agentassist/channels/chat/){:target=”_blank”}).  
-Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+* For version 3 (v3), you must copy the Agent AI widget URL from the Agent UXO v11 Channel configuration and paste it into the Agent AI URL field. (For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. 
+
+    Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
 
 ### Step 3: Test the Integration
 
@@ -137,12 +134,10 @@ Sample v3 URL: https\://<domain-name\>.kore.ai/koreagentassist-sdk-v3/UI/agentas
 
 * **Agent:** Once the agent accepts the incoming chat, an Interaction Record page opens, and the **Agent AI by Kore** is the first icon on the Contextual side panel.
 
-
     * The agent gets a notification of the incoming chat.  
         <img src="../images/incoming-chat-notification.png" alt="incoming-chat-notification" title="incoming-chat-notification" style="border: 1px solid gray; zoom:80%;">
 
     * Once the agent accepts the chat, the Agent AI widget appears on the right Contextual side panel. 
-
 
         <img src="../images/agent-ai-contextual-panel.png" alt="agent-ai-contextual-panel" title="agent-ai-contextual-panel" style="border: 1px solid gray; zoom:80%;">
 
@@ -189,3 +184,70 @@ From the integration perspective, along with all the features and capabilities o
 
 * **Conversation logs:** Agents or supervisors can check the chat transcript along with the Agent AI summary on the Interaction record page.  
 <img src="../images/conversation-logs.png" alt="send-copy-button" title="send-copy-button" style="border: 1px solid gray; zoom:80%;">
+
+## Multibot Solution with ServiceNow
+
+With the multibot solution in ServiceNow, you can configure multiple Agent AI bots which will be rendered when chat comes in different Servicenow queues.
+
+### Set Up Kore Agent AI in ServiceNow
+
+Obtain the update set .xml file from the Kore representative. Once you successfully commit the update set, follow the below steps:
+
+#### Add Agent AI Bot Configuration in the ServiceNow Custom Table
+
+1. Change your **ServiceNow** scope from **Global** to **Agent AI by kore.ai**.
+2. Go to **All** > **Filter** **navigator**, and search **Kore_configuration** > **kore-config-customtable**. 
+<img src="../images/koreconfig-customtable-1.png" alt="koreconfig-customtable" title="koreconfig-customtable" style="border: 1px solid gray; zoom:80%;"> 
+3. Click **New**.
+4. Add the **AgentAssist URL**, **Bot Id**, **Client Id**, **Client Secret**, **Language Code**, and **Queue Name** in the table fields.
+    1. **Language Code**: To select a language other than English, select the **language code** from the dropdown list. The default language code is English (En).
+    2. **Queue Name**: To configure the same Agent AI bot credentials for multiple queues, use comma-separated queue names (for example, customer_queue, sales_queue, service_queue).
+
+        !!! note
+            **Client Secret** and **AAToken** fields are masked for security reasons. The **AAtoken** field must be empty for the widget to load, it automatically populates at the runtime.
+
+5. Click **Submit**.  
+<img src="../images/koreconfig-new-record-2.png" alt="koreconfig-new-record" title="koreconfig-new-record" style="border: 1px solid gray; zoom:80%;">
+
+#### Additional Configuration for HR Agent Workspace (Optional)
+
+Follow this step only if you use the HR Agent Workspace to receive incoming chats in ServiceNow:
+
+1. Sign in to the **Servicenow** instance.
+2. Search in the **All** > **Filter** navigator.  
+<img src="../images/filter-navigator-3.png" alt="filter-navigator" title="filter-navigator" style="border: 1px solid gray; zoom:80%;">
+3. Go to **UI Builder** > **Experiences**.
+4. Filter with **HR Agent Workspace**, and open it.  
+<img src="../images/hragent-workspace-4.png" alt="hragent-workspace" title="hragent-workspace" style="border: 1px solid gray; zoom:80%;">
+5. Search with **Case SRP variant** (under the **Record** page).
+6. Create a copy of **Case SRP variant**, if the above one is read only.  
+<img src="../images/record-5.png" alt="record" title="record" style="border: 1px solid gray; zoom:80%;">
+7. Open the **Case SRP copy**, and add the **KoreaiWidget** component to the right sidebar. Follow the below steps:
+    1. Go to **Body** > **Resizable panes** > **right** > **Tab sidebar**
+    2. **Add** a new tab (preferably, select **start from an empty container**).  
+    <img src="../images/tab-sidebar-6.png" alt="tab-sidebar" title="tab-sidebar" style="border: 1px solid gray; zoom:80%;"> 
+    3. Drag that **TAB** to the top of the list.
+    4. Add **Kore AgentAI ui-component** to that TAB (search with **KoreaiWidget**).
+    5. Click that component to change its styles:
+        * Flex : Grow
+        * Alignment: Stretch
+        * Sizing (Width: 100%, Height: 100%, Min Height: 100%). Keep other properties empty.  
+        <img src="../images/component-style-change-7.png" alt="component-style-change" title="component-style-change" style="border: 1px solid gray; zoom:80%;">  
+    6. To render the widget vertically and take up the full height of the workspace, set the height of the parent TAB (Eg- KoreAA-HR) to 100%.  
+    <img src="../images/parent-tab-8.png" alt="parent-tab" title="parent-tab" style="border: 1px solid gray; zoom:80%;">
+
+##### Data Binding(sysId)
+
+1. Click the **KoreaiWidget** again. 
+2. Update **Config** > **sysId** as following:
+   * Change the input option to **Bind Data**.
+   * Type **@context.props.sysId** (you get an auto suggestion).  
+   <img src="../images/data-binding-9.png" alt="data-binding" title="data-binding" style="border: 1px solid gray; zoom:80%;">  
+   
+    !!! note
+        You need this step to dynamically send the sysId of the current interaction to the Kore Agent AI UI component. While this solution includes a fallback method in case the Data Binding step is skipped, we recommend this step for a more reliable and robust integration. Without it(Data Binding), concurrent chats handled by a single agent may lose context during page reloads or network latency.
+
+### No Widget for Inactive Conversation
+
+With the multibot solution, this additional feature is developed. If there is no active conversation, the following UI is visible to the agents:  
+<img src="../images/widget-unavailable-10.png" alt="widget-unavailable" title="widget-unavailable" style="border: 1px solid gray; zoom:80%;">

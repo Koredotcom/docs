@@ -80,6 +80,12 @@ The following table lists the fields on the Intent Fount tab with descriptions:
 If the intent has been identified through a Dialog Task, this column displays the task’s name. If the intent is answered using the Answer from Document feature, this column mentions <strong>Answer from Documents</strong>.
    </td>
   </tr>
+    <tr>
+   <td>Category
+   </td>
+   <td>The Fulfillment Types are Single Intent, Multi Intent, Small Talk, Conversation Event, and Generate Answer.
+   </td>
+  </tr>
   <tr>
    <td>Traits
    </td>
@@ -147,6 +153,12 @@ The following table lists the fields on the Intent Not Found tab with descriptio
    <td>Utterances
    </td>
    <td>The utterances that are not identified by the VA. The details on the tab are grouped by utterances based on similarity by default. To turn off grouping by utterance, click the <strong>Utterances </strong>header and disable the <strong>Group by Utterances</strong> option.
+   </td>
+  </tr>
+      <tr>
+   <td>Category
+   </td>
+   <td>The Fulfillment Types are Single Intent, Multi Intent, Small Talk, Conversation Event, and Generate Answer.
    </td>
   </tr>
   <tr>
@@ -739,7 +751,7 @@ Chat History provides visibility into the user information by capturing the foll
     The **X-Trace ID** is retained in the logs for 30 days. Once the **X-Trace ID** is expired, you see a tooltip message as ‘`X-Trace Id: Trace records for this message are not available`‘.
 
 
-The following user information details are displayed on the** Chat History **tab:
+The following user information details are displayed on the **Chat History** tab:
 
 
 <table>
@@ -935,6 +947,43 @@ The following user information details are displayed on the** Chat History **tab
 **Advanced Performance Details**
 
 Clicking a service or script or WebHook name opens the advanced details dialog for the service, which lists each instance of its run along with separate tabs for successful and failed runs. Analyzing the average response time of different runs gives you insights into any aberrations in the service or script execution. Click any row to open the JSON response associated with the service or script run.
+
+
+
+## DialogGPT NLP Insights Analysis
+
+DialogGPT Analytics provides structured insights into how the system processes user inputs, detects intents, qualifies responses, and orchestrates conversations. It allows users to monitor intent classification, chunk qualification, response generation, and chat history, improving tracking, debugging, and compliance.
+
+Analytics also includes the DialogGPT-ConversationOrchestrator model output Fulfillment Type as a category, enabling developers to filter user inputs by triggered intents and review NLP details for deeper analysis. By accessing detailed logs and performance data, users can fine-tune interactions, identify bottlenecks, and enhance response accuracy, ensuring continuous improvement in conversational experiences.
+
+
+### Query Rephrasing
+
+The system enhances user input through query rephrasing while preserving intent and improving recognition and response accuracy. It normalizes complex or ambiguous queries, correctly interprets synonymous variations, and enhances model comprehension by reducing inconsistencies.
+
+
+
+### Chunk Qualification
+
+After rephrasing the user input, the system evaluates multiple response sources to identify the most relevant response chunks. It filters responses from **Dialogs, Search, and FAQs**, ensuring accurate and contextually appropriate results.
+
+This section displays key details, including the model used, processed user input, processing time, number of qualified chunks, similarity thresholds, and proximity thresholds. Users can also view all qualified chunks for further analysis.  
+<img src="../images/gpt-chunk-qualification.png" alt="Chunk Qualification" title="Chunk Qualification" style="border: 1px solid gray; zoom:60%;">
+
+
+### Conversation Orchestrator
+
+After the system qualifies relevant response chunks, the **Conversation Orchestrator** determines the optimal fulfillment path for generating responses. It supports both **Single-Intent** and **Multiple-Intent** categorization, ensuring structured and contextually relevant replies.
+
+This section displays key details, including the model and prompt used, processing time, and matched intents. Users can also access the complete request and response logs for deeper analysis and troubleshooting.  
+<img src="../images/gpt-cononversation-orchestrator.png" alt="Conversation Orchestrator" title="Conversation Orchestrator" style="border: 1px solid gray; zoom:60%;">
+
+
+
+### Chat History
+
+The Chat History tab allows you to access the exact message or conversation for which the record is logged. It also shows the entire chat history of the user session, as well as the intent and intent category.  
+<img src="../images/gp-chathistory.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:60%;">
 
 
 ## Train the Virtual Assistant

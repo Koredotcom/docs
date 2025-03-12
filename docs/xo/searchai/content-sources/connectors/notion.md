@@ -44,8 +44,11 @@ SearchAI enables interaction with **Notion** through two authentication mechanis
 
     Generate the client credentials and an access token for this integration.  
 
-* **Internal Integration**: This method uses an internal integration token to establish a direct connection. While creating an internal integration, ensure that the following capabilities are enabled. 
-![Capabilities](images/notion/capabilities.png "Capabilities")
+* **Internal Integration**: This method uses an internal integration token to establish a direct connection. 
+    * Create your integration in the [integration’s settings page](https://www.notion.so/profile/integrations).
+    * While creating an internal integration, ensure that the following capabilities are enabled under the Configuration tab of the integration. ![Capabilities](images/notion/capabilities.png "Capabilities")
+    * Retrieve the integration token from this tab. This will be used for authentication of the API requests.
+
 
 !!! note
     Ensure that the Notion workspace pages are shared with the integration so that the content can be ingested into the SearchAI application. Refer to [this](https://www.notion.com/help/add-and-manage-connections-with-the-api#add-connections-to-pages) to learn more about enabling access to the integration.

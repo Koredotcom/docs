@@ -146,7 +146,7 @@ Follow these steps to add schema API:
 
 #### Label Selection
 
-The system displays sample records from imported data in JSON format. You must select a key to serve as the field label name for end users, as the default key may be difficult to understand. The chosen key applies to all corresponding fields in the dataset.
+The system displays fields of records from imported data in JSON format. You must select a key to serve as the field label name for end users, as the default key may be difficult to understand. The chosen key applies to all corresponding fields in the dataset.
 
 You should map or replace existing keys with more appropriate definitions. This process replaces original field names with user-defined labels when loading the Data API into the system. This ensures that field names are meaningful and easily interpretable within the business context.
 
@@ -276,7 +276,7 @@ Follow these steps to add field options:
 1. Click the **+** (Plus) icon in the field option for the field type Single Select or Multi Select.
 2. The options pop-up is displayed.
 <img src="../images/agent(4).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
-3. Enter the **Map Value** (Displayed to the user) and **Map Label** (sent to the API) for each priority.
+3. Enter the **Map Value** (Sent to the API) and **Map Label** (Displayed to the user) for each priority.
     1. If the schema API is mapped:
         1. Click **Map Value**, the JSON object is displayed.
         2. Select the field that will be passed to the API.
@@ -388,16 +388,24 @@ Follow these steps to configure the filters:
 
 1. The selected fields are auto-populated.
     * In the **Allow Query** column, select the fields on which you want to run a query. By default, all the fields are selected.
+    * Select the **Allow multiple values** checkbox for fields where you want to allow querying multiple values within a single request.
     * Select the **Mandatory** checkbox for fields that you want to make mandatory for a running query. This field is disabled if the respective Allow Query field is not selected.
     * Edit the **Field_Filter_Key** if required. This key is sent to the API. In a few cases, the field filter key differs when pushing data versus retrieving it. The populated keys are generated based on the API response.
     <img src="../images/image1.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
-2. Click **Configure**. The “Click the sample query to configure API documentation” message and sample query are displayed.
+2. Click **Configure** to generate sample queries based on the settings you configured in the **Field filters**. 
 <img src="../images/image2.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 3. Click **Upload API documentation**. The smart configuration pop-upload is displayed. Paste the API documentation and click **Save**. The query parameters are auto-populated.
 <img src="../images/image3.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 4. Click **Sample Query**. The extracted variables are displayed.
 <img src="../images/image4.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 5. Depending on the API type, perform the following.
+
+    In this step, users are expected to create an API payload using the entities extracted from the sample query provided above.
+
+    This payload will be utilized by the LLM, along with the entities and query, to generate a script. The generated script will be executed at runtime to dynamically create API payloads based on the user's queries. For each user query, the script will process the extracted entity variables and generate the corresponding API payload.
+
+    **Important**: The quality of the generated script will depend on the accuracy and completeness of the API payload provided by the user.
+
     * For a GET call, the "query parameters" section is displayed. Uploading the API documentation pre-fills this section. Click the query parameters section to edit the configuration and view the variable mapper. You add additional query parameters as needed.
     <img src="../images/image5.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
     * For a POST call, the "body" section is displayed. Uploading the API documentation pre-fills this section. Click the body section to edit the configuration and view the variable mapper.
@@ -410,7 +418,8 @@ Follow these steps to configure the filters:
 6. Scroll down and click **Run**. The configuration builder script is generated. This script runs on the sample query and displays the API response.
 <img src="../images/image7.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 7. Click **Run Queries** to execute/test all the generated queries. If all the queries are executed correctly, the success message is displayed. If not, the error message is displayed.<img src="../images/image8.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
-8. (Optional) To fix failed queries, click **Script** to view and edit them. You can proceed without fixing, but only successful queries will work after publishing. To learn more about the query, click it.
+8. (Optional) To fix failed queries, click **Script** to view and edit them. You can proceed without fixing, only successful and similar queries will work after publishing. To learn more about the script, click
+    [here](#writing-api-payloads-with-javascript).  
 <img src="../images/image14.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 9. Click **Continue**.
 
@@ -438,6 +447,361 @@ Example: An answering rule could be set up to respond with "contact sales" for a
 Click **Answering Rule** and enter the **Rule**. Click **Activate** and click **Continue**. 
 <img src="../images/image18.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
+## Writing API Payloads with JavaScript
+
+
+### Function Signature
+
+The script is actually an IIFE
+(<https://developer.mozilla.org/en-US/docs/Glossary/IIFE>), which is invoked for
+each query with three arguments: *headers*, *body*, and *queryParams*.
+
+
+
+```
+(function (headers, body, queryParams) {
+    
+    return { headers, queryParams, body }
+})(headers, body, queryParams);
+
+
+
+```
+
+
+
+**Note:** Avoid changing or editing the above function signature.
+
+All the 3 variables here (headers, body and queryParams) are pointing to the [data api's](#data-api) *header*, *body* and *queryParams*. you can manipulate them as per your need to prepare api payload.
+
+-   **queryParams**: The *queryParams* is an array, where each element is
+    expected to be an object.
+
+    ```
+        {
+        key : 'jql',
+        value : 'assigneee = currentUser()', 
+        enabled : true/false
+    }
+
+
+    ```
+
+-   If "enabled" is explicitly marked as false, the corresponding array element
+    will be ignored.
+
+-   **headers**: The structure is the same as queryParams.
+
+
+      ```
+        {
+            "key": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+        }
+
+
+
+      ```
+
+
+-   **body**: The body contains the actual JSON payload expected by the API. The example below represents the body payload expected by HubSpot to filter deals.
+
+
+      ```
+        {
+            "filterGroups": [
+                {
+                    "filters": [
+                        {
+                            "propertyName": "amount",
+                            "operator": "EQ",
+                            "value": 20000
+                        },
+                        {
+                            "propertyName": "hubspot_owner_id",
+                            "operator": "IN",
+                            "value": [
+                                "538262355"
+                            ]
+                        },
+                        {
+                            "propertyName": "pipeline",
+                            "operator": "EQ",
+                            "value": "default"
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                "dealname",
+                "hubspot_owner_id",
+                "amount",
+                "dealstage",
+                "pipeline",
+                "hs_priority",
+                "hs_updated_by_user_id"
+            ]
+        }
+
+
+
+      ```
+
+### Global Variable
+
+In addition to *headers*, *body*, and *queryParams*, you have access to a global variable called entities.
+
+The entities object contains extracted data from the query and is structured as follows:
+
+
+      ```
+           entities : {
+            fieldId : {
+                filterKey : fieldFilterKey, (which is there in filter field configuration)
+                dataType  : enum [text, number, date, singleSelect, multiselect, object, objectArray],
+                ...otherVariables 
+            }
+        }
+
+        Example : 
+
+        entities : {
+            creator : {
+                filterKey : creator
+                dataType  : object,
+                ...otherVariables
+            }
+        }
+
+
+
+     ```
+
+-   **fieldId**: A unique identifier for the field, which is same as the ID of
+    the selected field.
+
+-   **filterKey**: Corresponds to the filter key defined in the configuration.
+
+-   **dataType**: The data type of the entity, such as text, number, date,
+    singleSelect, etc.
+
+-   **otherVariables**: Additional variables that may be defined based on the
+    field configuration. It depends on both field configuration and data type.
+
+
+### Entity Examples
+
+####  Simple Query (Object, Text, SingleSelect, MultiSelect)
+
+Example Query: "Show all deals created by User"
+
+      ```
+
+    entities : {
+                fieldId : {
+                    filterKey : fieldFilterKey,
+                    dataType  : enum [text, number, date, singleSelect, multiselect, object, objectArray],
+                    value : 'extractedValue'
+                }
+            }
+
+            Example : 
+
+            query :- show all deals created by user
+            entities : {
+                creator : {
+                    filterKey : creator,
+                    dataType  : object,
+                    value : '080-998df-ffal-9090'
+                }
+            }
+
+
+
+
+    ```
+
+####  Range-Based Query (Date, Number)
+
+In this type of query, you can specify a "min", "max", or both, depending on
+the requirements of the query.
+
+Example Query: "Show all deals with amounts between 20,000 and 50,000"
+
+
+      ```
+
+        entities : {
+                fieldId : {
+                    filterKey : fieldFilterKey,
+                    dataType  : enum [number, date],
+                    min : 'minExtractedValue',
+                    max : 'maxExtractedValue',
+                    value : 'extractedValue'
+                }
+            }
+
+            Example : 
+
+            query :- show all deals whose amount is in between 20,000 to 50,000
+            entities : {
+                amount : {
+                    filterKey : amount,
+                    dataType  : number,
+                    min : 20000,
+                    max : 50000
+
+
+
+
+    ```
+
+Example Query: "Show all deals with an amount of 40,000"
+
+ ```
+
+             entities : {
+                amount : {
+                    filterKey : amount,
+                    dataType  : number,
+                    value : 40000
+                }
+            }
+ ```
+
+
+####  Multiple Value Fields (Allow Multiple Values)
+
+Example Query: "Show all Jira issues assigned to Prashanth Loka and Tanmay
+Agarwal**"**
+
+
+ ```
+
+    entities : {
+                fieldId : {
+                    filterKey : fieldFilterKey,
+                    dataType  : enum [text, number, date, singleSelect, multiselect, object, objectArray],
+                    values : [ 'extractedValue1', 'extractedValue2', .....]
+                }
+            }
+
+            EXAMPLE :
+
+            query:- show all jira issues assigned to prashanth loka and Tanmay agarwal.
+            entities : {
+                assignee : {
+                    filterKey : assignee,
+                    dataType  : object,
+                    values : [ '9f0990-009-lklkl', '9099-ff-kll-9090']
+                }
+            }
+
+ ```
+
+### Preparing the API Payload
+
+#### Script for POST Request
+
+The script below outlines how to prepare and send API payloads effectively for
+HubSpot integrations.
+
+```
+
+    (function (headers, body, queryParams) {
+
+  // Write your code here 
+  const filterGroups = { filters: [] };
+
+  for (const entityKey in entities) {
+
+    const entity = entities[entityKey];
+
+    if (entity.min) {
+      filterGroups.filters.push({
+        propertyName: entity.filterKey,
+        operator: 'GTE',
+        value: entity.min
+      });
+    }
+
+    if (entity.max) {
+      filterGroups.filters.push({
+        propertyName: entity.filterKey,
+        operator: 'LTE',
+        value: entity.max
+      });
+    }
+
+    if (entity.value) {
+      filterGroups.filters.push({
+        propertyName: entity.filterKey,
+        operator: 'EQ',
+        value: entity.value
+      });
+    }
+
+    if (entity.values.length > 0) {
+      filterGroups.filters.push({
+        propertyName: entity.filterKey,
+        operator: 'IN',
+        value: entity.values
+      });
+    }
+
+  }
+
+  body.filterGroups = [filterGroups];
+  body.properties = [
+    'dealname',
+    'hubspot_owner_id',
+    'amount',
+    'dealstage',
+    'pipeline',
+    'hs_priority',
+    'hs_updated_by_user_id'
+  ];
+  return { headers, queryParams, body }
+})(headers, body, queryParams);
+
+
+```
+
+#### Script for GET Request
+
+Here is a complete script to handle Jira queries using a GET request with filters provided in the query parameters.
+
+```
+
+(function (headers, body, queryParams) {
+  // Write your code here
+  const jqlParts = [];
+  for (const entityKey in entities) {
+    const entity = entities[entityKey];
+    if (entity.value) {
+      jqlParts.push(${entity.filterKey} = ${entity.value});
+    }
+    if (entity.values) {
+      const valuesString = entity.values.map(value => '${value}').join(', ');
+      jqlParts.push(${entity.filterKey} IN (${valuesString}));
+    }
+    if (entity.min) {
+      jqlParts.push(${entity.filterKey} >= ${entity.min});
+    }
+    if (entity.max) {
+      jqlParts.push(${entity.filterKey} <= ${entity.max});
+    }
+  }
+  const jqlQuery = jqlParts.join(' AND ');
+  queryParams.push({ key: 'jql', value: jqlQuery, enabled: true });
+  return { headers, queryParams, body }
+})(headers, body, queryParams);
+
+
+
+```
+
 
 
 ### Step 4.4: Sample Queries
@@ -454,10 +818,39 @@ You can manually add sample queries based on specific system requirements. This 
 
 ## Step 5: Publish
 
-When publishing the API agent, name the version and choose recipients - admins, selected user groups/users, or everyone in the account. Select authentication - user-based or admin-based. Review and edit steps before publishing. If you choose admin-based, admin tokens extract the data. If you choose user-based, user tokens extract the data. After publishing, the log shows the version name, publication date, and publisher. This process allows customized sharing and authentication while maintaining a published version record.
+In the **Publish** section, you can finalize and deploy your agent. Follow the steps outlined below to publish the data agent
 
-Select **Publish to** and **Authentication type**. Click **Publish**.
-
-The success message and the API agent are displayed on the Agents page.
 <img src="../images/image22.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
+1.  Provide the following details
+
+    -   **Published Version**: Select the version of the agent you are
+        publishing.
+
+    -   **Publish to**: Choose who will have access to the agent:
+
+        -   **Admins**: Restrict the agent to Admin users only.
+
+        -   **Selected User Groups/Users**: Specify individual users or groups.
+
+        -   **Everyone in the Account**: Make the agent available to all users.
+
+    -   **Authentication Type**: Select the type of authentication
+
+        -   **Admin based**: If you choose admin-based, admin tokens extract the
+            data.
+
+        -   **User based**: f you choose user-based, user tokens extract the
+            data
+
+2.  Click **Publish.** Once published, your agent is displayed in the Agent list
+    of the Admin console page.
+
+
+
+## User Interaction
+
+Interacting with the API Agent allows users to access important data quickly. With the no-code API Agent Builder, users can set up agents to connect to their existing systems and retrieve data through simple queries. For example, If a user asks "Get hotel data" or "Retrieve guest information", The API Agent processes these queries and returns the relevant data in a clear format.Users can also refine their queries for more specific information, such as "pull hotel database details" or "Display hotel info".
+![](images/user-interaction-1.png)
+
+![](images/user-interaction-2.png)

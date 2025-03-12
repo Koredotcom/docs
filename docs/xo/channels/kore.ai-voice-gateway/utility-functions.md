@@ -57,9 +57,9 @@ These functions can be used in the Channel Override template inside Java script 
 
 **Use Cases**:
 
-(a) If you need to forcibly hang up the call from the bot during the flow or call.
+1. If you need to forcibly hang up the call from the bot during the flow or call.
 
-(b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
+2. This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
 
    **Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
 
@@ -209,7 +209,7 @@ Default:True
 **Example**:
 
 ```
-1) Using all the options
+1 Using all the options
 
 var message = "Transferring Call to xxxx number";
 var ReferTo = "+91xxxxxxxxxx";   // or sipUrl 
@@ -220,12 +220,12 @@ var headers: {
 
 print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 
-2) without Message and headers 
+2 without Message and headers 
 
 var message = "";
 print(voiceUtils.refer(message,ReferTo));
 
-3) With QueueCommand
+3 With QueueCommand
   var message = "" , headers = {}, referTo = "sip:test@5060"
 print(voiceUtils.refer(message,ReferTo,headers,false));
 ```
@@ -504,6 +504,111 @@ An array of strings - Both audio URL and Message.
 Let message = ["this is First message", "https://audiofiile.wav" , "this is second Message"]
 
  //  All three message will be played in Sequence WIse (Text Message -> Audio File -> Text Message)
+```
+
+### Voicemails
+
+**Use Cases**: 
+
+1. When you need to configure voicemail settings and notifications for customer calls. 
+
+2. When you need to receive transcriptions of voicemail messages. 
+
+3. When you need to collect and process customer voicemail content with metadata.
+
+**Syntax**: `print(voiceUtils.voicemail(message, beepRequired, transcriptionRequired, notifyUrl, metaInfo))`
+
+**Header Syntax**:
+
+<table>
+  <tr>
+   <td><strong>Options</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>The message played to the customer before the voicemail recording starts.
+   </td>
+   <td>string
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>beepRequired
+   </td>
+   <td>When true, plays a beep sound after the message to indicate the recording start. Default: false
+   </td>
+   <td>boolean
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>transcriptionRequired
+   </td>
+   <td>When true, generates text transcription of the voicemail. Default: false
+   </td>
+   <td>boolean
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>notifyUrl
+   </td>
+   <td>Client endpoint URL where voicemail notifications will be sent.
+   </td>
+   <td>string
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>metaInfo
+   </td>
+   <td>Additional metadata to include with the notification.
+   </td>
+   <td>object
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+```
+"metaInfo": {
+    "sessionId": "session123",
+    "userId": "user456",
+    "auth_token": "YOUR_SECURE_TOKEN"
+}
+```
+
+**Example**:
+
+```
+var message = "Please leave your voicemail after beep and hang up the call";
+var beepRequired=true;
+var transcriptionRequired=true;
+var notifyUrl={
+    "url": "https://puma-singular-regularly.ngrok-free.app",
+    "headers": {
+        "auth":"YOUR_SECURE_TOKEN",
+        'Accept': "application/json",
+        'Content-Type': 'application/json'
+    }
+};
+var metaInfo={
+    "newVar":context.session.opts.streamId
+}
+print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,metaInfo));
 ```
 
 ## Raw Packet (JavaScript Code)

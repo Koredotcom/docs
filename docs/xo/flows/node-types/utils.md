@@ -21,13 +21,13 @@ Place `setCallFlowVariable("user_id", context.UserContext._id);` in a script nod
 You can access the child bot’s context in the following two ways:
 
 ```
-getChildBotContextById("st-924bd71e-247e-58ec-bfe4-81e0f8b3e0fc")
+getChildBotContextById("st-924bd71e-247e-58ec-bfe4-81e0f8b3xxxx")
 ```
 
 OR
 
 ```
-context.childBotsContext["st-924bd71e-247e-58ec-bfe4-81e0f8b3e0fc"]
+context.childBotsContext["st-924bd71e-247e-58ec-bfe4-81e0f8b3xxxx"]
 ```
 
 Example:
@@ -37,13 +37,13 @@ To access the child bot’s userId,
 _Get the complete child bot’s context and assign it to a variable:_
 
 ```
-varcbCtx = getChildBotContextById("st-924bd71e-247e-58ec-bfe4-81e0f8b3e0fc")
+varcbCtx = getChildBotContextById("st-924bd71e-247e-58ec-bfe4-81e0f8b3xxxx")
 ```
 
 OR
 
 ```
-var cbCtx  = context.childBotsContext["st-924bd71e-247e-58ec-bfe4-81e0f8b3e0fc"]
+var cbCtx  = context.childBotsContext["st-924bd71e-247e-58ec-bfe4-81e0f8b3xxxx"]
 ```
 
 _And access the properties from the variable_
@@ -118,8 +118,8 @@ agentUtils.setTransferPhoneNumber( {{phoneNumber}} )
 Example
 
 ```
-agentUtils.setTransferSipURI("sip:+123344234232@2.3.4.5:5060")
-agentUtils.setTransferPhoneNumber("+12345434567")
+agentUtils.setTransferSipURI("sip:+123344234000@2.3.4.5:5060")
+agentUtils.setTransferPhoneNumber("+12345434000")
 ```
 
 ### Set User Info
@@ -189,16 +189,15 @@ agentUtils.getBotLanguage()
 
 Syntax
 
-You can use the agentUtils.setQueue() method to set the conversations queue at any point leading up to the agent transfer. You can do this by using a [Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) within a bot action node in the XO Platform or a [Script Task](../node-types/script-task.md) node within a flow in Contact Center AI
+You can use the agentUtils.setQueue() method to set the conversations queue at any point leading up to the agent transfer. You can do this by using a [Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) within a bot action node in the XO Platform or a [Script Task](../node-types/script-task.md) node within a flow in Contact Center AI.
 
-```
-agentUtils.setQueue()</code
-```
-
-Example
+Examples
 
 ```
 agentUtils.setQueue(queueId);
+```
+```
+agentUtils.setQueue(queue name);
 ```
 
 ### Set Live Chat Agent Transfer
@@ -259,10 +258,25 @@ Example
 
 ```
 agentUtils.setAgentMatchingConditions({
-skills : ["63b2c180ab43c287acab1014"],
-agentGroups: ['ag-6b135b4-b03a-461d-b33d-dd5189cb4604'],
-skillGroups: ["6390989f1d00e75d5df4db35"],
+skills : ["63b2c180ab43c287acabxxxx"],
+agentGroups: ['ag-6b135b4-b03a-461d-b33d-dd5189cbxxxx'],
+skillGroups: ["6390989f1d00e75d5df4xxxx"],
 })
+```
+
+### Recording Control
+
+This function allows you to control the recording of the interactions. You can start, stop, pause, and resume recordings.
+
+Syntax: `agentUtils.setExternalAgentRecordingControl({record: "state"})`
+
+Examples:
+
+```
+agentUtils.setExternalAgentRecordingControl({record: "start"})
+agentUtils.setExternalAgentRecordingControl({record: "stop"})
+agentUtils.setExternalAgentRecordingControl({record: "pause"})
+agentUtils.setExternalAgentRecordingControl({record: "resume"})
 ```
 
 ## userSessionUtils

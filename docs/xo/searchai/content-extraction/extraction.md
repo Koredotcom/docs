@@ -74,6 +74,27 @@ This strategy is specially designed to extract data from tables and images in HT
 !!! note
     A strategy is automatically enabled as soon as it is created. However, creating a strategy does not automatically initiate the extraction process. Use the **Train** option to initiate the extraction process.   
 
+### Custom Extraction(Beta)
+
+The Custom Extraction feature in Search AI enables organizations to extract and process content from various sources in a flexible and customized manner. Instead of relying on predefined extraction rules, this feature allows integration with third-party services that apply their own processing logic and extract content as per their business requirements. 
+
+When content is ingested into Search AI, it is sent to an external third-party service for processing. The service analyzes, extracts, and structures the data into chunks, as expected in Search AI. The service sends the processed data back to Search AI using a callback API. Search AI then indexes the extracted content, making it readily available for search and retrieval. This approach ensures that content is processed according to specific business requirements, improving the accuracy and relevance of search results. 
+
+**Configuration**:
+
+Provide the configuration details of the service that is used for extracting chunks from the ingested content. 
+
+**Request**: 
+
+* Endpoint: Endpoint URL of the service where the ingested content is to be sent. 
+* Concurrency: The maximum number of API calls allowed per second to the service endpoint.
+* Headers: Include any additional information that needs to be sent with the request to the Endpoint URL. Some default headers will be added automatically and cannot be edited. You can add more headers as needed.
+* Request Body: Request body fields to be sent to the service endpoint. There are some default fields that are mandatory. You can add new parameters for additional inputs. 
+
+Click on **Test** to test the service's behavior with the given parameters. It sends a sample request to the service with the given request headers and body.
+
+Once the API is successfully invoked, you can see the generated response. If the service call fails, an error is thrown. If the API is successfully invoked, the response is sent back on the callback URL. This response is shown as the **Generated Response**. If the extracted chunks are a part of the response, the **Response Path** field can be used to provide the JSON path to the chunks. The Response Comparison section enables easy comparison of the actual response to that of the structure of the expected response. If the two do not match, it throws an error message. 
+
 ## Deleting a Strategy
 
 To delete an existing strategy, go to the corresponding strategy page and click on the **Delete** button. 

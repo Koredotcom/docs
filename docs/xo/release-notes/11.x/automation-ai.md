@@ -2,6 +2,62 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.11.0 March 04, 2025
+
+<u> Minor Release </u>
+
+### Build Agentic Experiences
+
+#### Agent Node Tool Calling Enhanced with Jump-to-Node Transition Capability
+
+The Agent node now features a "Jump-to-Node" transition option, enabling the creation of sophisticated dialog workflows. This enhancement allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
+
+Key Updates:
+
+* Added "Jump-to-Node" transition option for tools within the Agent node.
+* Enables seamless navigation to specified target nodes following tool execution.
+* Maintains complete session-level conversation history across all transitions.
+* Supports transitions to both orphan nodes and sub-dialogs.
+* Ensures full backward compatibility with existing tool configurations.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#tools){:target="_blank"}
+
+### Agent Transfer
+
+#### Service Now Agent Transfer Status
+
+The XO platform now records the status of the agent transfer for ServiceNow in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
+
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#agent-transfer-status){:target="_blank"}
+
+<hr>
+
+## v11.10.0 February 12, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Analytics
+
+
+#### Analytics for DialogGPT
+
+DialogGPT's comprehensive analytics provide detailed tracking of user interactions, intent detection, and conversation outcomes, ensuring data-driven insights for continuous improvement. By leveraging analytics, the platform users can accurately evaluate DialogGPT's effectiveness and enhance conversational experiences.
+[Learn more :octicons-arrow-right-24:](../../analytics/automation/nlp-insights.md#dialoggpt-nlp-insights-analysis)
+
+
+### Export/Import
+
+
+#### Redesigned Export Interface for Improved User Experience
+
+The Import / Export interface has been redesigned to mirror the Publish layout. A new top-level "Flows" section and reorganized "Automation Tasks" improve component organization. The update maintains backward compatibility and provides clearer section names and descriptions for an intuitive, cohesive experience.
+[Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
+
+<hr>
+
 ## v11.9.1 January 25, 2025
 
 <u>Patch Release</u>
@@ -76,7 +132,7 @@ Key updates
 #### OpenAI GPT-4o mini Support for DialogGPT
 The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient conversation management. These models are compact and optimized variants of the GPT-4 family, designed to deliver high efficiency in resource-constrained environments while maintaining advanced capabilities.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/conversation-orchestration.md)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md)
 
 
 ### Dialog Builder 

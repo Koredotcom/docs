@@ -9,7 +9,7 @@ The Agent AI Settings page has the following sections:
 
 ## Agent AI Channel-Specific Settings
 
-This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options. The following options toggles are available to select under this section:
+This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options. The following option toggles are available to select under this section:
 
 * **Proactive Mode**: This widget automates intent identification, entity extraction, and transcripts generation. It lets you have automatic (proactive) transcripts logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcripts logging. However, you can still use greetings, search bar, and MyBot automations. By default, this widget is enabled for all three channels.
     * The Assist tab/Run button remains in the disabled state. Only Run with agent’s input will be available.
@@ -61,7 +61,9 @@ This section lets you set your preferences based on the channels. It has three c
     * Select or clear the **Automatic Dialog Task Entity Extraction** option.
 7. Turn the toggle **on** or **off** against each widget, as required.
 8. Select an option under the **Conversation Transfer** section.
-9. Select or clear the **Submit** button under the **Auto Summarization** section.
+9. Enable or disable the **Auto Summarization** toggle.
+10. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
+11. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:
 
@@ -76,7 +78,7 @@ This section lets you set your preferences based on the channels. It has three c
         !!! note
             The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
 
-10. Click **Save** to save your settings.
+12. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings
@@ -98,7 +100,7 @@ This section lets you set up the general features of the Agent AI widget. Here, 
 
 * **Honor Bot Event** **– Intent not found**: Here, you can turn on or off the **Honor Bot Event – Intent not found** toggle. When turned on, the configured intent-not-found event triggers if Agent AI doesn’t understand the user’s intent.
 
-* **Default Language for Agent AI Widget**: In this section, you can select a language for the Agent AI widget. In runtime, the widget appears in the selected language. Also, you enable a checkbox that allows agents to change the language in run time. If this checkbox is disabled, agents can’t change the language.
+* **Default Language for Agent AI Widget**: In this section, you can select a language for the **Agent AI widget**. In runtime, the widget appears in the selected language. Also, you can enable a checkbox that allows agents to change the language in runtime. If this checkbox is disabled, agents can’t change the language.
 
 * **Dialog Task Display Name Configurations**: Here, you can set up the “trait” identification method that helps display appropriate trait-based Dialog Tasks for agents. This method helps display the “child”/sub Dialog Tasks if they are the most accurate match, based on customer interaction. To use the “trait” based Dialog Task display, admins must define a custom script logic in the Agent AI Settings page.
 
@@ -112,7 +114,8 @@ This section lets you set up the general features of the Agent AI widget. Here, 
     1. Click to select any or all of the components (**Documentation**, **FAQ**, and **Kore Academy**).
     2. Click to customize the default URLs of the **Documentation** and/or **FAQ** components.
 6. Enable or disable the **Honor Bot Event – Intent not found** toggle.
-7. Select a language from the list in the **Default Language for Agent AI Widget** section.
+7. Select a language from the list in the **Default Language for Agent AI Widget** section. Select **Interactive Language**, if you want the app’s language to appear as the widget’s default language.
+
     1. Select/clear the **Allow agents to switch between multiple available languages** field.
 8. Select **Default System Behavior** or **Advanced Mode** in the **Dialog Task Display Name Configurations** field.
     1. If you select **Advanced Mode**, a pop-up box to enter custom scripts appears.

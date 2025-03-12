@@ -114,7 +114,7 @@ markdown_extensions:
   - pymdownx.snippets
 
 copyright: |
-  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
+  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home: home.md
   - Platform:
@@ -146,6 +146,7 @@ nav:
             - Script Task: flows/node-types/script-task.md
             - Set Queue: flows/node-types/set-queue.md
             - Split: flows/node-types/split.md
+            - Script Nodes, Call Flows, Agent Utils, and userSessionUtils: flows/node-types/utils.md
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
@@ -156,7 +157,7 @@ nav:
                 - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
                 - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
                 - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
-                - SIP Transfer: channels/kore.ai-voice-gateway/sip-transfer.md
+                - SIP Trunk: channels/kore.ai-voice-gateway/sip-trunk.md
                 - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
             - Third-Party Voice:
@@ -170,7 +171,9 @@ nav:
       - What's New:
         - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
-        - Current Limitations: release-notes/current-limitations.md      
+        - Migration Path XO v10 to v11: getting-started/migration-path-xo10-to-xo11.md
+        - Current Limitations: release-notes/current-limitations.md  
+    
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
@@ -315,6 +318,8 @@ nav:
                 - Azure Storage: searchai/content-sources/connectors/azure.md
                 - BitBucket: searchai/content-sources/connectors/bitbucket.md
                 - Box: searchai/content-sources/connectors/box.md
+                - ClickUp: searchai/content-sources/connectors/clickup.md
+                - Coda: searchai/content-sources/connectors/coda.md
                 - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
                 - Custom Connector: searchai/content-sources/connectors/custom-connector.md
@@ -327,24 +332,33 @@ nav:
                 - GitHub: searchai/content-sources/connectors/github.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
+                - Guru: searchai/content-sources/connectors/guru.md
+                - HelpScout: searchai/content-sources/connectors/helpscout.md
+                - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
+                - Miro: searchai/content-sources/connectors/miro.md
                 - Monday: searchai/content-sources/connectors/monday.md
+                - MS Teams: searchai/content-sources/connectors/msteams.md
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
                 - Re:amaze: searchai/content-sources/connectors/reamaze.md
                 - Salesforce: searchai/content-sources/connectors/salesforce.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md 
+                - SharePoint: searchai/content-sources/connectors/sharepoint.md
+                - Shopify: searchai/content-sources/connectors/shopify.md
                 - Slab: searchai/content-sources/connectors/slab.md
                 - Slack: searchai/content-sources/connectors/slack.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - Workday: searchai/content-sources/connectors/workday.md
+                - Wrike: searchai/content-sources/connectors/wrike.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
-                - Zendesk: searchai/content-sources/connectors/zendesk.md         
+                - Zendesk: searchai/content-sources/connectors/zendesk.md 
+                - Zoom: searchai/content-sources/connectors/zoom.md
+                - Zulip: searchai/content-sources/connectors/zulip.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
@@ -362,6 +376,7 @@ nav:
         - Retrieval Strategies: searchai/retrieval.md
         - Business Rules: searchai/business-rules.md
         - Answer Generation: searchai/answer-generation.md
+        - Search Results: searchai/search-results.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
@@ -379,13 +394,14 @@ nav:
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
       - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
-      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
-      - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
+      - Widget Settings: contactcenter/configurations/widgets/configure-widgets.md
+      - Wallboards: contactcenter/configurations/wallboards/configure-wallboards.md
       - Advanced Settings:
         - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
-        - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
+        - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
         - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
@@ -414,19 +430,26 @@ nav:
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
-    - Quality Management:
-      - Overview: quality-management/about-quality-management.md      
-      - Setup Guide: quality-management/setup-guide.md
-      - Best Practices for Auto QA Configuration: quality-management/best-practices-for-auto-qa-config.md
+    - Quality AI:
+      - Overview: quality-management/about-quality-ai.md         
+      - Getting Started:     
+        - Setup Guide: quality-management/getting-started/setup-guide.md
+        - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
+      - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
+      - Connectors: 
+        - Introduction: quality-management/connectors/connector-intro.md
+        - Amazon S3: quality-management/connectors/amazon-s3.md
       - Analyze:
         - Dashboard:
-          - Dashboard Overview: quality-management/analyze/dashboard.md
-          - Supervisor View (Agent-specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
-          - Agent View (My Dashboard): quality-management/analyze/my-dashboard-agent-view.md                
+          - Supervisor Dashboard: quality-management/analyze/dashboard.md
+          - Supervisor View (Agent-Specific Dashboard): quality-management/analyze/Supervisor-view-agent-dashboard.md
+          - Agent Dashboard: quality-management/analyze/my-dashboard-agent-view.md                
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
-        - Conversation Mining: quality-management/analyze/conversation-mining.md
-        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+        - Conversation Mining: 
+          - Overview: quality-management/analyze/conversation-mining-overview.md
+          - Interactions: quality-management/analyze/conversation-mining-interactions.md 
+          - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
       - Coach:
           - Coaching Assignments: 
@@ -435,15 +458,19 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Configure Evaluation Forms: quality-management/configure/configure-evaluation-forms.md
-          - Configure Evaluation Metrics:  quality-management/configure/configure-evaluation-metrics.md
+          - Evaluation Forms: quality-management/configure/evaluation-forms.md
+          - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
           - Agent Scorecards: quality-management/configure/agent-scorecards.md
-        - Settings: quality-management/configure/settings.md        
+        - Settings: 
+          - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
+          - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
+          - Language Settings: quality-management/configure//langauge-settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
+      - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Welcome Events: agentai/configuration/welcome-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
@@ -455,27 +482,38 @@ nav:
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
+      - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
       - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
+      - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
       - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md      
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
     - Models Library:
       - LLM Integration: generative-ai-tools/models-library.md
-      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
+      - Kore.ai XO GPT Module: 
+        - Overview: generative-ai-tools/xo-gpt-module.md
+        - XO GPT Model Specifications:
+          - Model Building: generative-ai-tools/xogpt-model-specifications.md
+          - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
+          - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
+          - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
+        - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
+      - Streaming Responses: generative-ai-tools/streaming-responses.md 
     - GenAI Features:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
     - DialogGPT:
       - Overview: generative-ai-tools/dialog-gpt.md
-      - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
-      - DialogGPT FAQs: generative-ai-tools/dialog-gpt-faq.md  
-      - Rollout Plan: generative-ai-tools/dialog-gpt-upcoming-features.md
+      - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
+      - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
+      - Rollout Plan: generative-ai-tools/dgpt-upcoming-features.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
@@ -601,6 +639,8 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
+    - Search AI:
+      - Answer Insights: analytics/searchai/answer-insights.md
     - GenAI Analytics:
       - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:
@@ -623,6 +663,7 @@ nav:
       - Reports:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
+      - Wallboards: analytics/contact-center/wallboards.md 
   - Administration:
     - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:

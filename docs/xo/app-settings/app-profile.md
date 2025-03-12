@@ -33,7 +33,8 @@ Modify one or more of the settings described in the following table.
   <tr>
    <td>Icon
    </td>
-   <td>The icon image for the VA is displayed in the VA Builder, VAs Marketplace, and the end-user interface, as shown in the previous illustration. The image format must be <strong>.png </strong>and the best results can be obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
+   <td>The icon image for the app is displayed in the app Builder, and the end-user interface, as shown in the previous illustration.  
+   Users can choose an icon from the app icon dropdown and select a color from the available options. They can also upload a custom icon in <strong>PNG</strong> or <strong>JPG</strong>  format with a maximum size of <strong>80x80 pixels</strong>.
    </td>
   </tr>
   <tr>
