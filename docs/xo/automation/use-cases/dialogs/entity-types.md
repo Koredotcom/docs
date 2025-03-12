@@ -303,7 +303,7 @@ See here for a complete list of countries [https://www.nationsonline.org/oneworl
 
 !!!Note
        
-    Make sure inputs don’t include “&” or “()“. Avoid spaces around “-“. Use commas or “and” to separate items, as extra spaces, parentheses, and “&” can cause issues.
+    Ensure inputs don't contain special characters like ampersands "&" or parentheses "()". Avoid spaces around hyphens “-“. Use commas or "and" to separate list items, as parentheses, spaces around hyphens, and ampersands may prevent proper multi-item identification.
 
 ### Company Name or Organization Name
 
