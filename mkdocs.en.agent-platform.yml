@@ -146,12 +146,12 @@ nav:
       - Types of Nodes: 
         - Gen AI Node: tools/tool-flows/types-of-nodes/gen-ai-node.md
         - Image to Text Node: tools/tool-flows/types-of-nodes/image-to-text-node.md
-        - API Node: agents/agents-flows/types-of-nodes/api-node.md
-        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
-        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
-        - DocSearch Node: agents/agents-flows/types-of-nodes/docsearch-node.md        
-        - End Node: agents/agents-flows/types-of-nodes/end-node.md 
-      - Tool Flow Change Log: agents/agents-flows/agent-canvas-change-log.md   
+        - API Node: tools/tool-flows/types-of-nodes/api-node.md
+        - Function Node: tools/tool-flows/types-of-nodes/function-node.md
+        - Condition Node: tools/tool-flows/types-of-nodes/condition-node.md
+        - DocSearch Node: tools/tool-flows/types-of-nodes/docsearch-node.md        
+        - End Node: tools/tool-flows/types-of-nodes/end-node.md 
+      - Tool Flow Change Log: tools/tool-flows/agent-canvas-change-log.md   
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Tool Endpoint: 
