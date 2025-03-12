@@ -27,7 +27,7 @@ The All runs tab provides the following information for each tool run:
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
 * **Source**: Based on whether the tool was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
-   * **Agentic App** - The name of the Agentic App used to run the tool.
+    * **Agentic App** - The name of the Agentic App used to run the tool.
     * **API Key**: The API key name used to execute the tool. (This is the name provided in the API keys page when you created a new API key. If you did not provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single tool).
 
 <div class="admonition note">

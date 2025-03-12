@@ -2,8 +2,8 @@
 
 Tool flows allow you to define input and output variables, which become accessible as context objects throughout the execution of the flow.
 
-* Input Variables: The input variables provide initial data to the tool flow. 
-* Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the tool.
+* **Input Variables**: The input variables provide initial data to the tool flow. 
+* **Output Variables**: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the tool.
 
 ## Using Variables in the Tool Flow
 
