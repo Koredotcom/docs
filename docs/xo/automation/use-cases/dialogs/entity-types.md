@@ -301,6 +301,9 @@ See here for a complete list of countries [https://www.nationsonline.org/oneworl
   </tr>
 </table>
 
+!!!Note
+       
+    Make sure inputs don’t include “&” or “()“. Avoid spaces around “-“. Use commas or “and” to separate items, as extra spaces, parentheses, and “&” can cause issues.
 
 ### Company Name or Organization Name
 
