@@ -139,10 +139,10 @@ nav:
       - About Flows: tools/tool-flows/flows-overview.md
       - About Tool Calling: tools/tool-flows/tool-calling.md
       - Manage Flows: 
-        - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
+        - Manage Nodes in Flows: tools/tool-flows/manage-flow-nodes.md
         - Manage Input and Output: tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
-        - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+        - Run the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
         - Gen AI Node: tools/tool-flows/types-of-nodes/gen-ai-node.md
         - Image to Text Node: tools/tool-flows/types-of-nodes/image-to-text-node.md
