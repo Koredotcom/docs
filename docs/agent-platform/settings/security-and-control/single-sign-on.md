@@ -69,7 +69,7 @@ Agent Platform supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
+1. [Sign in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
 2. Click **Settings** on the top menu.
 3. Go to **Security & Control** > **Single Sign On** on the left navigation menu.
 
@@ -463,7 +463,7 @@ To configure SSO using OpenId Connect and Google, follow the steps below:
 
 ## Disable SSO
 
-Disabling SSO resets the protocol and provider selections you made when SSO was enabled. This removes the current configuration and reverts your account to the [default sign-in flow](../../getting-started/sign-up-sign-in.md){:target="_blank"}. SSO-based account access using the configured provider is disabled with this feature.
+Disabling SSO resets the protocol and provider selections you made when SSO was enabled. This removes the current configuration and reverts your account to the [default sign-in flow](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"}. SSO-based account access using the configured provider is disabled with this feature.
 
 However, you can still view the previously configured SSO parameters for a specific protocol and provider by clicking the **Enable SSO** tab.
 
@@ -534,7 +534,7 @@ When **SSO is disabled**, the user is taken through the default sign-in flow (em
 
 ## Default Sign-in Flow 
 
-As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-party provider. However, if your SSO security system fails or you forget your SSO credentials for your IDP, you can log into Agent Platform using either email sign-in or your default SSO provider. [Learn more](../../getting-started/sign-up-sign-in.md){:target="_blank"}.
+As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-party provider. However, if your SSO security system fails or you forget your SSO credentials for your IDP, you can log into Agent Platform using either email sign-in or your default SSO provider. [Learn more](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"}.
 
 ## Related Information
 

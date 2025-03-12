@@ -1,8 +1,8 @@
 # Image to Text (OCR) Node
 
-The **Image to Text** node in the agent builder processes an uploaded image and generates text responses based on the user’s prompt. It can provide descriptions, answer image-related questions, or extract text from the image. This node leverages external LLM models like OpenAI and Anthropic for image processing and text generation.
+The **Image to Text** node in the tool builder processes an uploaded image and generates text responses based on the user’s prompt. It can provide descriptions, answer image-related questions, or extract text from the image. This node leverages external LLM models like OpenAI and Anthropic for image processing and text generation.
 
-A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../apis/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the agent endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
+A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../apis/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the tool endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
 
 <div class="admonition note">
 <p class="admonition-title">Important Considerations</p>
@@ -23,11 +23,11 @@ To add and configure the node, follow the steps below:
 <p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a></p>
 </div>
 
-1. On the **Agents** tab, click the name of the agent to which you want to add the node. The **Agent Flow** page is displayed.
-<img src="../images/click-agent-name.png" alt="click agent name" title="click agent name" style="border: 1px solid gray; zoom:75%;">
+1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed.
+<img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Go to flow** to edit the in-development version of the flow.
-<img src="../images/access-af.png" alt="access agent flow" title="access agent flow" style="border: 1px solid gray; zoom:75%;">   
+<img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;">   
 
 3. In the flow builder, click the **+** icon for **Image to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Image to text**.
 <img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 1px solid gray; zoom:75%;">
@@ -45,7 +45,7 @@ To add and configure the node, follow the steps below:
 <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are currently supported.</p>
 </div>
 
-* Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the agent endpoint.
+* Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

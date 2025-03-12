@@ -10,22 +10,30 @@ Both tabs include summary metrics at the top of the page, including total runs/r
 
 <img src="../images/new_agent_monitor.png" alt="All runs and Model runs tabs" title="All runs and Model runs tabs" style="border: 1px solid gray; zoom:80%;">
 
-
 ## All Runs
 
-The All runs tab provides the following information for each tool run:
+<img src="../images/all-runs-dashboard.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
+
+The All runs tab provides the following information for each agent run:
 
 * **Run ID**: The unique identifier for the flow.
 * **Status**: The current state of the request. It displays one of the following statuses:
     * **In Progress**: The request is being processed.
-    * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Waiting**: The request is outside of GALE and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
     * **Failed**: The request was not completed successfully.
-* **Response time**: The duration the tool takes to complete a request and provide an output.
+* **Response time**: The duration the agent takes to complete a request and provide an output.
 * **Nodes executed**: The total number of nodes executed in the run.
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
-* **API key**: The API key used to execute the tool. (This is the name provided in the **API keys** page when you created a new API key. If you did not provide a name, the system uses the default name ‘Secret Key’. You can have multiple API keys for a single tool.)
+* **Source**: Based on whether the agent/tool was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
+   * **Agentic App** - The name of the Agentic App used to run the agent/tool.
+    * **API Key**: The API key name used to execute the agent. (This is the name provided in the API keys page when you created a new API key. If you did not provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single agent).
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When there is a nested (multi-level) tool calling, the immediate tool (parent) is displayed as the source.</p>
+</div>
 
 You can also see the following metrics on the top of the page: 
 
