@@ -218,7 +218,7 @@ nav:
     - API Reference: 
       - Overview: apis/overview.md
       - APIs List:
-        - Deploy a Tool (Agent) API: apis/apis-list/deploy-a-tool.md
+        - Deploy a Tool API: apis/apis-list/deploy-a-tool.md
         - Deploy a Model API: apis/apis-list/deploy-a-model.md
         - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md
         - Export a Tool API: apis/apis-list/export-a-tool.md
@@ -228,7 +228,7 @@ nav:
         - Import a New Tool API: apis/apis-list/import-a-new-tool.md
         - Import to an Existing Tool API: apis/apis-list/import-to-an-existing-tool.md
         - Import a Model API: apis/apis-list/import-a-model.md
-        - Undeploy a Tool (Agent) API: apis/apis-list/undeploy-a-tool.md
+        - Undeploy a Tool API: apis/apis-list/undeploy-a-tool.md
         - Undeploy a Model API: apis/apis-list/undeploy-a-model.md
         - Undeploy Guardrails API: apis/apis-list/undeploy-guardrails.md
   - Settings:
