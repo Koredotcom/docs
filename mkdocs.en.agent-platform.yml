@@ -145,6 +145,7 @@ nav:
         - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - Image to Text Node: agents/agents-flows/types-of-nodes/image-to-text.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
@@ -216,7 +217,7 @@ nav:
   - APIs:
     - API Reference: 
       - Overview: apis/overview.md
-      - API List:
+      - APIs List:
         - Deploy a Tool (Agent) API: apis/apis-list/deploy-a-tool.md
         - Deploy a Model API: apis/apis-list/deploy-a-model.md
         - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md

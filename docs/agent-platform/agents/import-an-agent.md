@@ -93,7 +93,7 @@ To import a tool as a version, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="https://docs.kore.ai/gale/agents/export-an-agent/" target="_blank">Learn more</a></p></div>
+<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="https://docs.kore.ai/agent-platform/agents/export-an-agent/" target="_blank">Learn more</a></p></div>
 
 If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.
 
