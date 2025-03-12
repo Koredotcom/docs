@@ -45,7 +45,7 @@ Providing the following information is optional:
 <img src="../images/agent_platform/click-import-new.png" alt="click import" title="click import" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Once the import is complete, the system will redirect you to the **Tool Flow** page, where you can access the new tool’s flow canvas by clicking **Go to flow**.
-<img src="../images/agent_platform/tool_flow.png" alt="agent flow page" title="agent flow page" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/agent_platform/tool_flow.png" alt="tool flow page" title="tool flow page" style="border: 1px solid gray; zoom:75%;">
 
 The imported tool is listed under **All tools** and **My tools** on the **Tools** dashboard.
 
@@ -85,7 +85,7 @@ To import a tool as a version, follow the steps below:
 3. Click the tool in the listing to proceed further.
 4. Click **Configurations** on the left menu.
 5. Scroll down to the **Import tool** section and click **Import**.
-    <img src="../images/agent_platform/import_tool_config.png" alt="import agent configuration" title="import agent configuration" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/agent_platform/import_tool_config.png" alt="import tool configuration" title="import tool configuration" style="border: 1px solid gray; zoom:75%;">
 
 6. (Optional) In the following dialog, select the **Back up your current tool** option to preserve the data of the version being replaced.
 
@@ -93,7 +93,7 @@ To import a tool as a version, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="https://docs.kore.ai/agent-platform/agents/export-an-agent/" target="_blank">Learn more</a></p></div>
+<p>Backing up automatically exports and saves the .zip package of the tool definition files to the designated location when the import is initiated. <a href="https://docs.kore.ai/agent-platform/tools/export-a-tool/" target="_blank">Learn more</a></p></div>
 
 If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.
 
@@ -143,7 +143,7 @@ To cancel the import process during the conflicting environment variables resolu
 
 ## Related Links
 
-* [Create a Tool](./create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
-* [Export a Tool](./export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
-* [Deploy a Tool](./deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
-* [Configure a Tool](./configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.
+* [Create a Tool](../tools/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
+* [Export a Tool](../tools/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
+* [Deploy a Tool](../tools/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
+* [Configure a Tool](../tools/configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.
