@@ -9,7 +9,8 @@ Search for the config you want to set and select or provide its values.
 ![Advanced Configurations](./images/home.png "Advanced Configurations")
 
 The following table lists the supported configurations. 
-| Configuration | Description |
+
+| **Configuration** | **Description** |
 | -------- | ------- |
 | [Re-Rank Chunks](reranking-chunks.md) | Used to select the reranking feature and select the Re-Ranker model.  |
 | [Re-Rank Chunk Fields](reranking-chunks.md) | Used to select the fields used to rerank the chunks.  |
