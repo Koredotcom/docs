@@ -215,22 +215,8 @@ nav:
     - Run Evaluations: evaluation/run-evaluation.md
     - View Results: evaluation/view-evaluation-insight.md
   - APIs:
-    - API Reference: 
-      - Overview: apis/overview.md
-      - APIs List:
-        - Deploy a Tool API: apis/apis-list/deploy-a-tool.md
-        - Deploy a Model API: apis/apis-list/deploy-a-model.md
-        - Deploy Guardrails API: apis/apis-list/deploy-guardrails.md
-        - Export a Tool API: apis/apis-list/export-a-tool.md
-        - Export a Model API: apis/apis-list/export-a-model.md
-        - File Upload API: apis/apis-list/upload-file-api.md
-        - Get Dock Status API: apis/apis-list/get-dock-status.md
-        - Import a New Tool API: apis/apis-list/import-a-new-tool.md
-        - Import to an Existing Tool API: apis/apis-list/import-to-an-existing-tool.md
-        - Import a Model API: apis/apis-list/import-a-model.md
-        - Undeploy a Tool API: apis/apis-list/undeploy-a-tool.md
-        - Undeploy a Model API: apis/apis-list/undeploy-a-model.md
-        - Undeploy Guardrails API: apis/apis-list/undeploy-guardrails.md
+    - About APIs: apis/overview.md
+    - APIs List: apis/overview/#apis-list
   - Settings:
     - Overview: settings/settings-overview.md
     - User Management: 

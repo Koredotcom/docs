@@ -38,7 +38,7 @@ Otherwise, click **Create**.
 <li>Once the key is successfully generated, click <b>Copy and Close</b> to copy the API key.
 <img src="../images/generate-new-secret-key.png" alt="copy api key" title="copy api key" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
-## List of APIs
+## APIs List
 
 Currently, the following APIs are available:
 
