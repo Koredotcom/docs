@@ -12,22 +12,19 @@ You can add scanners for both **input** and **output**. Refer to this to learn m
 
 The **Sharing and Permissions** page allows administrators to manage user roles and access levels within the application. It enables assigning permissions based on roles, ensuring secure and controlled access to the application and data. Users can be granted, modified, or revoked access based on their responsibilities. This ensures compliance, security, and efficient collaboration across teams.
 
-There are four types of user roles in an Agentic App. Depending on the roles, the users get access and permission to view or update agents in the application. 
+There are four types of user roles in an Agentic AI app. Depending on the roles, the users get access and permission to view or update agents in the application. 
 
+<table>
   <tr>
    <td>Role 
-
    </td>
    <td>Permissions
-
    </td>
-   <td>Key responsibilities
-
+   <td>Key Responsibilities
    </td>
   </tr>
   <tr>
-   <td>Agent Viewer
-
+   <td>App Owner
    </td>
    <td>
    </td>
@@ -35,8 +32,15 @@ There are four types of user roles in an Agentic App. Depending on the roles, th
    </td>
   </tr>
   <tr>
-   <td>Agent Editor
-
+   <td>App Admin
+   </td>
+   <td>Complete control  over the core functionalities of apps, such as deployment, configuration, sharing, deletion, monitoring, managing users etc.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>App Developer
    </td>
    <td>
    </td>
@@ -44,8 +48,7 @@ There are four types of user roles in an Agentic App. Depending on the roles, th
    </td>
   </tr>
   <tr>
-   <td>Agent Manager
-
+   <td>App Tester
    </td>
    <td>
    </td>
@@ -53,14 +56,18 @@ There are four types of user roles in an Agentic App. Depending on the roles, th
    </td>
   </tr>
   <tr>
-   <td>Agent Admin
-
+   <td>App Viewer
    </td>
    <td>
    </td>
    <td>
    </td>
   </tr>
+</table>
+
+### Invite Users 
+
+To share the app with users, click the **Invite** button. Add the email ID of the user or the group. Select an appropriate role for the user and send the invite. 
 
 
 ## Configurations

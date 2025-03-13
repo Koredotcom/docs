@@ -12,9 +12,9 @@ Agent profile consists of the following fields:
 
 Examples:
 
-    * Credit Card Assistant for an agent that handles all queries related to credit cards. 
-    * Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
-    * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
+* Credit Card Assistant for an agent that handles all queries related to credit cards. 
+* Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
+* Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
@@ -22,9 +22,9 @@ Examples:
 
 Examples:
 
-    * Credit Card Assistant: An agent that handles all queries related to credit cards.
-    * Leave Manager: An agent that manages all requests related to employee leaves in an organization.
-    * Order Manager: Manages all the user requests related to order status, returns, and refunds. 
+* Credit Card Assistant: An agent that handles all queries related to credit cards.
+* Leave Manager: An agent that manages all requests related to employee leaves in an organization.
+* Order Manager: Manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
@@ -100,5 +100,14 @@ Examples:
 
 There are **two types of tools** that can be used for Agent actions. 
 
-* **Global Tools**: Global tools are shared resources that multiple agents in an app can access to perform common operations efficiently. These tools ensure **consistency** and **reusability. The agent platform offers a no code  builder for creating and managing tools**. To learn more about Global tools, refer to [this](https://docs.kore.ai/gale/agents/overview/). 
+* **Global Tools**: Global tools are shared resources that multiple agents in an app can access to perform common operations efficiently. Global tools are predefined, reusable functions.These tools ensure **consistency** and **reusability**. Such tools are ideal for communicating with external systems, databases or performing a standard operation. 
+
+Example:
+
+   * Weather API: Retrieves live weather updates.
+   * Stock Market Tool: Fetches real-time stock prices.
+   * Database Query Tool: Accesses structured data from a company’s database.
+
+The agent platform offers a no code  builder for creating and managing tools. To learn more about Global tools, refer to [this](../agents/overview.md). 
+
 * **Custom/Inline Tools**: With **inline tools**, you can write and execute business logic directly within the system using **Python** or **JavaScript**, allowing seamless integration and automation of complex workflows. For more information on Tools, refer to this.

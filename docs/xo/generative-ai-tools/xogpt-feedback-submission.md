@@ -3,13 +3,10 @@
 
 We value your feedback to help refine and improve our XO GPT models. This document explains how to provide effective feedback and outlines the steps we follow to incorporate it.
 
-
 ## Providing Effective Feedback
 
 
 ### Assess Frequency of Occurrence:
-
-
 
 * Measure how often issues occur across a wide range of samples.
 * Prioritize issues that appear frequently, as they are more likely to affect overall model performance.
@@ -18,8 +15,6 @@ We value your feedback to help refine and improve our XO GPT models. This docume
 
 ### Identify Recurring Patterns:
 
-
-
 * Focus on issues that appear consistently rather than isolated or rare errors, unless the issue is critical.
 * Highlight any patterns for a more accurate evaluation of model behavior.
 
@@ -27,8 +22,6 @@ We value your feedback to help refine and improve our XO GPT models. This docume
 ### Categorize the Issues:
 
 To provide structured and actionable feedback, categorize the errors into types such as:
-
-
 
 * Misinterpretation: The model misunderstands the intent or meaning of the input.
 * Negation: The model incorrectly processes negation terms (e.g., "not," "never").
@@ -44,14 +37,11 @@ Specify the context in which the error occurs, such as ‘Address Update’, ‘
 
 ### Lock Sample Sets for Evaluation:
 
-
-
 * Once a problematic sample set is identified, use it for consistent testing and evaluation.
 * Track new issues separately with fresh sample sets to avoid overlap.
 
 
 ### Submit a Support Ticket
-
 
 
 * When recurring issues are identified, [submit a support ticket](https://support.kore.ai/hc/en-us/requests) with the relevant sample set, identified patterns, and other helpful information for further analysis. 

@@ -6,7 +6,7 @@ This document explains the script nodes, call flows, and supported utils with ex
 
 ### Context | Instance Bot
 
-All the instance bot’s `context.session` variables will be moved under context.
+All the instance bot’s `{{context.session}}` variables will be moved under context.
 
 Example:
 
