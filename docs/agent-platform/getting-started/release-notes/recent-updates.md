@@ -18,7 +18,7 @@ This update includes new features and feature enhancements summarized below.
 * Support for Open AI Whisper and Anthropic Claude Sonnet Vision: Agent Platform now supports the following external commercial models in its modules and workflows:
     * Open AI Whisper
     * Anthropic Claude Sonnet Vision
-* Support for ‘Stable Diffusion’: Agent Platform now supports the following variants of the Stable Diffusion open-source models in its modules and workflows:
+* Support for Stable Diffusion: Agent Platform now supports the following variants of the Stable Diffusion open-source models in its modules and workflows:
     * stable-diffusion-xl-base-1.0
     * stable-diffusion-2-1
     * stable-diffusion-v1-5
@@ -29,8 +29,12 @@ This update includes new features and feature enhancements summarized below.
     * Added support for running an API as an output column: Users can now integrate data from external sources using rows from the Evaluation Studio data table. For example, values from a row can be passed as input to a tool, which then generates a response by triggering an API call. This response is automatically populated into a new output column within Evaluation Studio.
 
 
-## **Feature Enhancements**
+**Feature Enhancements**
 
 * Tools export with automatic model linking: Improvements have been made to tool imports for better handling of linked models.
 * Guardrails model deployment support from file system: The deployment process for Guardrail models has been updated to read model paths directly from the file system instead of S3. The file system is now mounted to the Guardrails pods, enabling seamless deployment and testing of Guardrail models.
-* Multimodal input support using vLLM:Support added for models that process image & audio inputs. Supported models include *microsoft/Phi-3-vision-128k-instruct*, *microsoft/Phi-3.5-vision-instruct*, *meta-llama/Llama-3.2-11B-Vision-Instruct*, and *llava-hf/llava-1.5-7b-hf*.
+* Multimodal input support using vLLM: Support added for models that process image & audio inputs. Supported models include:
+    * *microsoft/Phi-3-vision-128k-instruct*
+    * *microsoft/Phi-3.5-vision-instruct*
+    * *meta-llama/Llama-3.2-11B-Vision-Instruct*
+    * *llava-hf/llava-1.5-7b-hf*
