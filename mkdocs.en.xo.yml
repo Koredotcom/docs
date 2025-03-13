@@ -383,6 +383,10 @@ nav:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
+    - Best Practices: 
+        - Data Ingestion: searchai/best-practices/data-ingestion.md
+        - Chunking Strategy: searchai/best-practices/chunking-strategy.md
+        - LLM Selection and Configuration: searchai/best-practices/llm-selection.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md 
     - Getting Started:

@@ -66,7 +66,7 @@ Configuring ServiceNow as a content source in SearchAI requires:
 
 ## Creating an OAuth application in Salesforce
 
-Login to the [Salesforce application](https://login.salesforce.com/). Click on the **Setup icon**and go to the Setup.
+Login to the [Salesforce application](https://login.salesforce.com/). Click on the **Setup icon** and go to the Setup.
 
 ![Salesforce Home](images/salesforce/salesforce-home.png "Home")
 
@@ -74,7 +74,7 @@ This will open the **Object Manager** home page as shown below.
 
 ![Object Manager](images/salesforce/object-manager.png "Object Manager")
 
-Go to the **App Manager**and click on **New Connected App**.
+Go to the **App Manager** and click on **New Connected App**.
 
 ![Create App](images/salesforce/create-app.png "Create New App")
 
@@ -82,14 +82,18 @@ Provide the details for the app. Provide basic information about the application
 
 ![App details](images/salesforce/app-details.png "App details")
 
-**Enable OAuth settings** for API Integration under the **API** section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment. 
+**Enable OAuth settings** for API Integration under the **API** section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment.
+
   * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
   * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
   * Prod Region Callback URLs: https://idp.kore.com/workflows/callback
 
 Select and add the following to the **Selected OAuth Scopes**. 
+  
   * Full access (full)
   * Perform requests at any time (refresh_token, offline_access)
+
+Note that currently, Search AI does not support the PKCE Salesforce feature; hence **disable the field ‘Require Proof Key for Code Exchange (PKCE).**
 
 Leave other settings as default and click **Save** and **Continue**. The summary page for the application will be displayed as shown below. 
 
@@ -101,12 +105,13 @@ Click **Manage Consumer Details** to generate the consumer ID and secret from th
 ## Configuring the Salesforce connector
 
 The next step is to configure the Salesforce connector in SearchAI. Go to the **Connectors** tab under **Sources** and select **Salesforce** from the list of available connectors. On the Authorization tab, enter a name for the connector, provide the Consumer ID and Consumer Secret Key, generated in the previous section, select the type of source, and click **Connect**. The field **Type** can take the following values:
-  * **Cloud**- Production environment/instance
-  * **Sandbox**- Test environment/instance. 
+
+* **Cloud**- Production environment/instance
+* **Sandbox**- Test environment/instance. 
 
 ![Authorization](images/salesforce/auth.png "Authorization")
 
-After the connection is successfully established, the connector is marked as **Connected**and is ready for content ingestion. You can ingest all the content available in your Salesforce account or filter content for ingestion. 
+After the connection is successfully established, the connector is marked as **Connected** and is ready for content ingestion. You can ingest all the content available in your Salesforce account or filter content for ingestion. 
 
 ![Content Filters](images/salesforce/content-filter.png "Content Filters")
 
