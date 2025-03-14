@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
-## v1.0.1 March 13, 2025
+## v1.0.1 March 17, 2025
 
 <u> Minor Release </u>
 
