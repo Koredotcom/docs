@@ -80,7 +80,7 @@ curl --location 'https://sxxxxx-agent-platform.kore.ai/api/public/files/session/
 }'
 ```
 
- ### Body Parameters
+### Body Parameters
 
 <table>
   <tr>
