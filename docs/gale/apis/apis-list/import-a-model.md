@@ -428,7 +428,7 @@ curl --location --request POST 'https://staging-agent-platform.kore.ai/api/publi
 
 ### Body Parameters
 
-No body parameters are passed.
+No parameters are passed.
 
 ### Sample Response
 
