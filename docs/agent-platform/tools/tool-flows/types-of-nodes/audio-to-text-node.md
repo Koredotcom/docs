@@ -110,11 +110,11 @@ To add and configure the node, follow the steps below:
 
 5. Enter or select the following **General Settings**:
     * **Node Name**: Enter an appropriate name for the node. For example, “*CustomerSupportConversation*.”
-    * Provide the input variable that is set for the node for the **Audio File** field.[Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-inputoutput-variables){:target="_blank"}.
+    * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-inputoutput-variables){:target="_blank"}.
     * Select a model from the list of configured models.
     * (Optional) Turn on the toggle for the following to enable the respective feature:
-       * **Translation**: Translate other languages supported by the model to English.
-       * **Timestamps**: The date and time at which each dialog was spoken.
+         * **Translation**: Translate other languages supported by the model to English.
+         * **Timestamps**: The date and time at which each dialog was spoken.
     * Provide the instructions that you want the model to follow for **Prompt**.  User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the recommended syntax: `{{context.variable_name}}`. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt using `{{context.conversation}}`. You may include simple instructions regarding the style of the transcription, correct words or proper nouns, in case the model could not figure out what the spoken word was, fix punctuations, add context, and more.
 
     <div class="admonition note">
@@ -130,8 +130,8 @@ To add and configure the node, follow the steps below:
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
 <img src="../images/configuration-set.png" alt="configurations tab" title="configurations tab" style="border: 1px solid gray; zoom:75%;">
 
-  * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
-  * **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the **Audio to Text** node.
+<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.</li>
+<li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
 
 <ol start="7"><li>Finally, <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/audio-to-text-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
 
@@ -139,7 +139,7 @@ To add and configure the node, follow the steps below:
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/){:target="_blank"}.
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-inputoutput-variables){:target="_blank"}.
 <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
 
 2. Select <b><i>Text</i></b> for the **Type** field in the **Enter input variable window** to define a text input variable.
