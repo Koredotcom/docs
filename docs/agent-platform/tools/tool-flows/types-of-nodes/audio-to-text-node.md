@@ -133,7 +133,7 @@ To add and configure the node, follow the steps below:
   * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
   * **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the **Audio to Text** node.
 
-<ol start="7"><li>Finally, <a href="https://www.w3schools.com" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
+<ol start="7"><li>Finally, <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/audio-to-text-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>
 
 ## Configure and Test the Flow for the Node
 
