@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.11.1 March 15, 2025
+
+<u>Patch Release</u>
+
+This update include only bug fixes.
+
+<hr>
+
 ## v11.11.0 March 04, 2025
 
 <u> Minor Release </u>
