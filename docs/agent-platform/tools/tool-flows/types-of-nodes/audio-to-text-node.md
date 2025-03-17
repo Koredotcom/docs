@@ -10,7 +10,10 @@ The **Audio to Text** node under **AI node** in the **Tool Builder** converts sp
 You can add audio input in one of the following ways:
 
 1. Manually select and upload an audio file in the allowed format.
-2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-inputoutput-variables){:target="_blank"}. You must provide the audio file URL when running the flow, as mentioned [here](../audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
+2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-inputoutput-variables){:target="_blank"}. 
+
+You must provide the audio file URL when running the flow, as mentioned [here](./audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
+
 <img src="../images/select-text-input-type.png" alt="select text type input" title="select text type input" style="border: 1px solid gray; zoom:75%;">
 
 
@@ -142,11 +145,13 @@ To add and configure the node, follow the steps below:
 ### Step 1: (Optional) Add Input Variable(s)
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-inputoutput-variables){:target="_blank"}.
+
 <img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 2. Select <b><i>Text</i></b> for the **Type** field in the **Enter input variable window** to define a text input variable.
 
 3. Click **Save**.
+
 <img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;">
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
@@ -156,6 +161,7 @@ Add all the required input variables to run the flow in the **Input** section of
 
 1. Click the **Output** tab for the **Start** node.
 2. Click **Add Output Variable**.
+
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter the value for **Name (key)** and select <b><i>String</i></b> for **Type** to generate the transcribed text output.
@@ -171,11 +177,13 @@ To run and test the flow, follow the steps below:
 <img src="../images/click-run-button.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
 2. (Optional) Add the value for **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
+
 <img src="../images/gen-output-audio-to-text.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Generate Output**.
 
 The **Debug** window generates the flow log and results, as shown below. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow.
+
 <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
 
 
