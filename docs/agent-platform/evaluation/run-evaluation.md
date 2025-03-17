@@ -42,7 +42,7 @@ During the evaluation, simply click the progress ring icon in the top corner to 
 
 <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
 
-#### **Why is this useful?**
+**Why is this useful?**
 
 1. **Real-time monitoring**: The progress feature updates in real time, showing the **elapsed time** and the **number of rows** being processed during the evaluation. This allows users to easily track progress and understand how far along the process is. 
 

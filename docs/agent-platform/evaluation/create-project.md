@@ -8,9 +8,9 @@ In Evaluation Studio, projects act as the core containers for organizing evaluat
 * **Collaboration**: Projects can be easily shared with collaborators, enabling seamless teamwork and collaborative model assessments. User invitations are limited to the project level; users cannot be invited at the evaluation level.
 * **Permissions**: Permissions determine who can create, view, or manage evaluations within the project. Permissions are applied consistently across all evaluations within a project. Once users are invited to a project and begin creating evaluations, they will have access to all evaluations within that project based on their role.
 
-## **Roles and Permissions in Evaluation Studio**
+## Roles and Permissions in Evaluation Studio
 
-In **Evaluation Studio**, roles and permissions help manage who can access and modify projects and evaluations.
+In Evaluation Studio, roles and permissions help manage who can access and modify projects and evaluations.
 
 **Key Roles:**
 
