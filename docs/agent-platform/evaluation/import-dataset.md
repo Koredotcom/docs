@@ -127,3 +127,4 @@ Steps to run an API:
 * Users can upload a dataset into the Evaluation Studio and run evaluations to measure model performance.
 * If importing data from production, carefully select the model, source, and date range to ensure you're importing the relevant data.
 * Running a prompt enables flexible data generation, allowing users to create customized data based on specific instructions.
+* Running an API enables users to integrate live data and model outputs from external APIs or deployed tools, enhancing flexibility in the evaluation process.

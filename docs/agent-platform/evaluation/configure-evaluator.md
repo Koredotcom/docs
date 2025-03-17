@@ -260,6 +260,6 @@ By correctly mapping the variables, you ensure the evaluator receives the right 
 
 * Evaluators are used to assess model performance by comparing its outputs against predefined criteria.
 
-* System evaluators are pre-built and cannot be modified, offering ready-to-use options for evaluating common aspects of model performance, such as quality and safety metrics.
+* System evaluators are pre-built and cannot be modified, offering ready-to-use options for evaluating common aspects of model performance, such as quality and safety metrics. Custom Evaluators  offer flexibility for users to create custom evaluators tailored to their specific needs.
 
 * Variable mapping is crucial when adding evaluators, as users must link the variables in the evaluator's prompt to the appropriate dataset columns to ensure accurate evaluation results.

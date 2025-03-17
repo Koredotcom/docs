@@ -48,3 +48,4 @@ Once the project is created successfully, the system will redirect you to the ne
 * Users can create, delete, and share projects.
 * Users can add evaluations under a project. When a project is deleted, all associated evaluations and datasets will be deleted as well.
 * Each project has an accessible evaluation section where users can manage multiple evaluations.
+* Projects enable seamless teamwork through collaboration, with permissions defining user access to create, view, or manage evaluations based on their role within the project.
