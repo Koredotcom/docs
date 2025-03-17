@@ -318,10 +318,10 @@ The supported models and their variants are given below:
 <img src="../images/image3.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;"></li>
 <li>Click <b>Deploy</b>.</li></ol>
 
-    !!! note
-
-        You will be charged for deployment and inferencing-related costs for each open-source model.  
-  
+      
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will be charged for deployment and inferencing-related costs for each open-source model. </p></div> 
 
 If you have selected optimization, the model optimization starts, and the status changes to “Optimization”. If not, the model is deployed. After deployment, the status changes to "Deployed." You can now use this model across Agent Platform and externally.
 
