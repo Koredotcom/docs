@@ -148,11 +148,10 @@ To add and configure the node, follow the steps below:
 
 <img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
-2. Select <b><i>Text</i></b> for the **Type** field in the **Enter input variable window** to define a text input variable.
+<ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable</b> window to define a text input variable.</li>
+<li>Click <b>Save</b>.</li>
 
-3. Click **Save**.
-
-<img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/select-text-type-input.png" alt="select text and save" title="select text and save" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
 
@@ -164,9 +163,9 @@ Add all the required input variables to run the flow in the **Input** section of
 
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
-3. Enter the value for **Name (key)** and select <b><i>String</i></b> for **Type** to generate the transcribed text output.
-4. Click **Save**. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/gen-ai-node/#access-the-gen-ai-nodes-output){:target="_blank"} about accessing the node’s output.
-<img src="../images/save-output-variable.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;">
+<ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the transcribed text output.</li>
+<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/gen-ai-node/#access-the-gen-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
+<img src="../images/save-output-variable.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 
 ### Step 3: Run the Flow
@@ -180,7 +179,7 @@ To run and test the flow, follow the steps below:
 
 <img src="../images/gen-output-audio-to-text.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Generate Output**.
+<ol start="3"><li>Click <b>Generate Output</b>.</li></ol>
 
 The **Debug** window generates the flow log and results, as shown below. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow.
 
