@@ -8,7 +8,7 @@ To add a new agent to an app, go to the Agents Apps page, choose the App, and th
 
 ![Add Agent](images/add-new-agent.png "Add Agent")
 
-Enter or select the appropriate details for each fields as described below. 
+Enter or select the appropriate details for each field as described below. 
 
 ## Agent Profile
 
@@ -18,9 +18,9 @@ Agent profile consists of the following fields:
 
 !!!abstract "Examples"
 
-* Credit Card Assistant for an agent that handles all queries related to credit cards. 
-* Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
-* Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
+    * Credit Card Assistant for an agent that handles all queries related to credit cards. 
+    * Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
+    * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
@@ -28,9 +28,9 @@ Agent profile consists of the following fields:
 
 !!!abstract "Examples"
 
-* Credit Card Assistant: An agent that handles all queries related to credit cards.
-* Leave Manager: An agent that manages all requests related to employee leaves in an organization.
-* Order Manager: Manages all the user requests related to order status, returns, and refunds. 
+    * Credit Card Assistant: An agent that handles all queries related to credit cards.
+    * Leave Manager: An agent that manages all requests related to employee leaves in an organization.
+    * Order Manager: Manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
@@ -97,32 +97,32 @@ They serve as a guide to ensure the agent operates within its scope and delivers
 
 ## Actions
 
-**Actions** are the tasks that agents can perform. They are the basic building blocks of an agent's capabilities. The Actions are implemented using **Tools**. Tools are the executable functions that help an agent achieve its objectives.
+Actions are the tasks that agents can perform. They are the basic building blocks of an agent's capabilities. The Actions are implemented using **Tools**. Tools are the executable functions that help an agent achieve its objectives.  Agent uses the tool-calling capabilities of the LLMs to invoke the most appropriate tool required to complete a given task. 
+
 
 **Tools** are components that enable various actions to be carried out effectively. They function as specialized units that execute specific tasks. Actions rely on these tools, which incorporate domain-specific business logic to successfully complete their designated roles. These tools are capable of performing activities such as data retrieval, logical operations, and facilitating connections with external systems.
 
 !!!abstract "Examples"
 
-    * Actions for a Leave Managing Agent might include:	
-        * Get leave balance that invokes an external API to get leave details.
-        * Apply leaves
-    * Actions for a Credit Card Assistant might include:
-        * Retrieve outstanding amount 
-        * Fetch the credit limit for the user 
-        * Initiate a bill payment
-        * Present last *n* transactions that might include retrieving data from a database. 
+    * Tools for a Leave Managing Agent might include:	
+        * Get leave balance tool that invokes an external API to get leave details.
+        * Leave application tool that gathers necessary information and applies leaves in the backend system.  
+    * Tools for a Credit Card Assistant might include:
+        * Retrieve outstanding amount - Fetches the due amount 
+        * Fetch credit limit - Fetches the maximum credit limit for the user 
+        * Initiate bill payment - Initiates bill payment process
+        * Find recent transactions - Present last *n* transactions that might include retrieving data from a database. 
 
 There are **two types of tools** that can be used for Agent actions. 
 
-* **Global Tools**: Global tools are shared resources that multiple agents in an app can access to perform common operations efficiently. Global tools are predefined, reusable functions.These tools ensure **consistency** and **reusability**. Such tools are ideal for communicating with external systems, databases or performing a standard operation. 
+* **Workflow Tools**: Workflow tools are shared resources that multiple agents in an app can access to perform common operations efficiently. Workflow tools are predefined, reusable functions that enable automation of complex processes by orchestrating multiple steps seamlessly. With workflow tools, you can implement complex tasks efficiently by defining the order of tasks within a tool to achieve a desired end goal. These tools ensure **consistency** and **reusability**. Such tools are ideal for communicating with external systems, databases or performing a standard operation.
 
 !!!abstract "Examples"
-    
+
     * Weather API: Retrieves live weather updates.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
 
-The agent platform offers a no code  builder for creating and managing tools. For more information, see [About Tools](../tools/overview.md). 
+The agent platform offers a no-code builder for creating and managing tools. For more information, see [About Tools](/docs/agent-platform/tools/overview.md).
 
-* **Custom/Inline Tools**: With **inline tools**, you can write and execute business logic directly within the system using **Python** or **JavaScript**, allowing seamless integration and automation of complex workflows. For more information, see [Inline Tools](inline-tools.md).
-
+* **Code Tools**: With **code tools**, you can write and execute business logic directly within the system using **JavaScript**, allowing seamless integration and automation of complex workflows. They enable automation of workflows by executing custom scripts as part of the operations. For more information, see [Code Tools](inline-tools.md).
