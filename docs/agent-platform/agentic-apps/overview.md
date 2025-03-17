@@ -1,4 +1,4 @@
-# Agentic Apps
+# About Agentic Apps
 
 Agentic Apps are autonomous systems that orchestrate multiple specialized AI agents working together to accomplish complex business objectives through collaboration and decision-making.
 
