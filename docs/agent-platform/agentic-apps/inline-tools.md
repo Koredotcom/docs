@@ -1,12 +1,14 @@
-# Inline Tools
+# Code Tools
 
-Inline tools are agent-specific functions designed to process user input based on predefined business logic. They enable real-time execution of custom actions within an agent, ensuring tailored responses and workflow automation. Inline tools use Javascript or Python code to process the input and generate the response.
+Code tools are agent-specific functions that process user input using a predefined business logic. They enable the completion of tasks by executing custom scripts as part of system operations, ensuring tailored responses. Code tools use Javascript code to process the input and generate the response.
+
 
 !!!abstract "Example"
     
-    * Custom processing of input before invoking an API
+    * SQL Query Processor - a tool that runs the SQL queries on a given database instance. 
 
-To create an inline tool, Click **+Create Tool** in the Actions page while creating the agent and provide the following details. 
+To create a code  tool, Click **+Create Tool** in the Tools page while creating the agent and select Code Tool. Provide the following details for the tool.
+ 
 
 **Name** 
 
@@ -22,6 +24,8 @@ Provide a **clear and detailed description** of the tool’s functionality. This
 * What the tool does.
 * When to use it.
 * How to use it.
+
+This field is used by the LLMs to identify when to invoke the tool. 
 
 ---
 **Added Parameters**
