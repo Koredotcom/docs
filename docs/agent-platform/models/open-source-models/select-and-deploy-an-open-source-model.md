@@ -15,11 +15,11 @@ To select and deploy a model, follow these steps:
     
       <img src="../images/image8.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
-      The supported models and their variants are given below:
+The supported models and their variants are given below:
 
-    <table>
-    <tr>
-    <td><strong>MODEL</strong>
+<table>
+<tr>
+<td><strong>MODEL</strong>
    </td>
    <td><strong>VARIANT</strong>
    </td>
@@ -285,7 +285,12 @@ To select and deploy a model, follow these steps:
     <img src="../images/image7.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
   
-  3. Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click **Next**. [Learn more](model-optimization.md).
+
+
+  
+
+
+3. Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click **Next**. [Learn more](model-optimization.md).
     * **Skip optimization**: It skips the model optimization.
     * **CTranslate2**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#ctranslate2). 
     * **vLLM**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#vllm).  
