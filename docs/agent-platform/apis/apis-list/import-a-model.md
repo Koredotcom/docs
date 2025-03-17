@@ -66,7 +66,19 @@ The **Import Model - Start Session API** is executed in this step. The API initi
 
 ### Sample Request
 
-The information will be added soon.
+```js
+curl --location 'https://sxxxxx-agent-platform.kore.ai/api/public/files/session/start' \
+--header 'x-api-key: kg-1xxxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacd8xxxx' \
+--header 'Content-Type: application/json' \
+--data '{
+    "fileContext": "model",
+    "totalChunks": 1,
+    "fileExtension": "tar",
+    "fileName": "sample-1.tar",
+    "fileSize": 1100,
+    "isAdapter": false
+}'
+```
 
 ### Body Parameters
 
@@ -259,10 +271,15 @@ The **Import Model - Chunk Upload** API uploads a file chunk for model import. T
 
 ### Sample Request
 
-The information will be added soon.
+```js
+curl --location 'https://staging-agent-platform.kore.ai/api/public/files/session/5cxxxxxb-5xx5-4xxa-bxx1-35xxxxxxxxxe' \
+--header 'x-api-key: kg-11xxxxx8-3xxf-5xxa-9xx7-0xxxxxxxxxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aacdxxxx' \
+--header 'Content-Type: application/json' \
+--form 'file=@"postman-cloud:///1exxxxx8-7xx4-4xx0-axx0-1dxxxxxxxxxd"' \
+--form 'chunkNumber="0"'
+```
 
 ### Body Parameters
-
 
 <table>
   <tr>
@@ -276,49 +293,19 @@ The information will be added soon.
    </td>
   </tr>
   <tr>
-   <td><strong>fileContext</strong>
+   <td><strong>file</strong>
    </td>
-   <td>The context of the file (e.g., <code>bulkImport</code>).
+   <td>The file being uploaded.
    </td>
-   <td>String
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>totalChunks</strong>
-   </td>
-   <td>The total number of chunks created for the file upload.
-   </td>
-   <td>Number
+   <td>File
    </td>
    <td>Required
    </td>
   </tr>
   <tr>
-   <td><strong>fileExtension</strong>
+   <td><strong>chunkNumber</strong>
    </td>
-   <td>The file extension based on the file type.
-   </td>
-   <td>String
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>fileName</strong>
-   </td>
-   <td>The file name.
-   </td>
-   <td>String
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>fileSize</strong>
-   </td>
-   <td>The size of the file.
+   <td>The uploaded chunk number.
    </td>
    <td>Number
    </td>
@@ -435,42 +422,14 @@ The **Import Model- Complete** API completes the model import process after all 
 
 ### Sample Request
 
-The information will be added soon.
+```js
+curl --location --request POST 'https://staging-agent-platform.kore.ai/api/public/files/session/5cxxxxxb-xxx5-4xxa-bxx1-35xxxxxxxxxe/complete' \
+--header 'x-api-key: kg-11xxxxx8-xxxf-5xxa-9xx7-07dxxxx3xxx2-c9xxxxx8-6xx7-4xx5-axx6-5c6aaxxxxxx'
+```
 
 ### Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-   <td><strong>REQUIRED/OPTIONAL</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>file</strong>
-   </td>
-   <td>The file being uploaded.
-   </td>
-   <td>File
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>chunkNumber</strong>
-   </td>
-   <td>The uploaded chunk number.
-   </td>
-   <td>Number
-   </td>
-   <td>Required
-   </td>
-  </tr>
-</table>
+No parameters are passed.
 
 ### Sample Response
 

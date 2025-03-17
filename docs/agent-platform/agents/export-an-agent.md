@@ -6,7 +6,7 @@ When you export a tool, Agent Platform automatically creates a *.zip* file named
 
 The exported package can be reimported to create a new tool or add it as a version to an existing one, ensuring seamless restoration.
 
-The [exported package](../agents/export-an-agent.md/#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
+The [exported package](../tools/export-a-tool.md/#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
 
 * Name and description
 * API, Condition, GenAI, and Script node configurations
@@ -24,7 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Sign in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 2. Click **Tools** on the top menu.
 3. Select the relevant tab to view the tool.
 4. Click the required tool’s name to proceed further.
@@ -52,7 +52,7 @@ The exported package includes the following JSON files encapsulating the tool’
 
 * ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
-* ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](https://docs.kore.ai/gale/agents/configure-an-agent/#manage-environment-variables){:target="_blank"}.
+* ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
 
 <img src="../images/exported-files.png" alt="exported files" title="exported files" style="border: 1px solid gray; zoom:75%;">
 
@@ -68,6 +68,6 @@ The file information is displayed as follows:
 
 ## Related Links
 
-* [Import a tool](../agents/import-an-agent.md){:target="_blank"} - Create a tool by importing configurations or add it as a version to an existing tool.
-* [Deploy a tool](../agents/deploy-an-agent.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for tool integration.
-* [Configure a tool](../agents/configure-an-agent.md){:target="_blank"} - Modify the tool's details, configure settings, or undeploy and delete it if unused.
+* [Import a tool](../tools/import-a-tool.md){:target="_blank"} - Create a tool by importing configurations or add it as a version to an existing tool.
+* [Deploy a tool](../tools/deploy-a-tool.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for tool integration.
+* [Configure a tool](../tools/configure-a-tool.md){:target="_blank"} - Modify the tool's details, configure settings, or undeploy and delete it if unused.

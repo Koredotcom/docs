@@ -113,7 +113,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 
 <ol start="5"><li>Enter an input variable for dynamic inputs or plaintext for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Select the <b>Search AI connection</b> you set up in <a href="https://agentplatform-kore.github.io/docs/agent-platform/tools/tool-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
+<li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/agent-platform/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
 <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">

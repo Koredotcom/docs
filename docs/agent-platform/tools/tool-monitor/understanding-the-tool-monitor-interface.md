@@ -10,22 +10,30 @@ Both tabs include summary metrics at the top of the page, including total runs/r
 
 <img src="../images/new_agent_monitor.png" alt="All runs and Model runs tabs" title="All runs and Model runs tabs" style="border: 1px solid gray; zoom:80%;">
 
-
 ## All Runs
+
+<img src="../images/all-runs-dashboard.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The All runs tab provides the following information for each tool run:
 
 * **Run ID**: The unique identifier for the flow.
 * **Status**: The current state of the request. It displays one of the following statuses:
     * **In Progress**: The request is being processed.
-    * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Waiting**: The request is outside of GALE and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
     * **Failed**: The request was not completed successfully.
 * **Response time**: The duration the tool takes to complete a request and provide an output.
 * **Nodes executed**: The total number of nodes executed in the run.
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
-* **API key**: The API key used to execute the tool. (This is the name provided in the **API keys** page when you created a new API key. If you did not provide a name, the system uses the default name ‘Secret Key’. You can have multiple API keys for a single tool.)
+* **Source**: Based on whether the tool was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
+    * **Agentic App** - The name of the Agentic App used to run the tool.
+    * **API Key**: The API key name used to execute the tool. (This is the name provided in the API keys page when you created a new API key. If you did not provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single tool).
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When there is a nested (multi-level) tool calling, the immediate tool (parent) is displayed as the source.</p>
+</div>
 
 You can also see the following metrics on the top of the page: 
 
@@ -69,7 +77,7 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 ## Viewing Detailed Run Information
 
-Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Tool flow canvas. [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
+Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Tool flow canvas. [Learn more](../tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"}.
 
 <img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
@@ -117,9 +125,7 @@ Below are the four scenarios showing how timeouts affect the tool endpoint, alon
 * If the external system tries the same callback URL again, it will be notified that the request has already been fulfilled.
 
 
-The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure a tool](https://docs.kore.ai/gale/agents/configure-an-agent/) and [API Node](https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/).
-
-
+The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see [Configure a tool](../configure-a-tool.md){:target="_blank"} and [API Node](../tool-flows/types-of-nodes/api-node.md){:target="_blank"}.
 
 ## Searching and Filtering Information
 
@@ -253,4 +259,5 @@ The table below lists the errors that can occur in the **Tool Monitoring** dashb
    </td>
   </tr>
 </table>
+
 

@@ -40,3 +40,4 @@ Each agent is defined by its description, scope, actions, tools, and instruction
 * **Defined Objectives and Responsibilities**: Agents operate within the boundaries of clearly outlined objectives and responsibilities. These objectives serve as guiding principles, ensuring the agent prioritizes tasks that align with the system's overarching goals or the user’s requests.
 * **Equipped with Tools and Knowledge**: To enable action-taking, agents are provisioned with specialized tools, resources, and domain-specific knowledge. Depending on the tasks they are expected to perform, this could include access to APIs, external databases, computational resources, or pre-trained models.
 * **Autonomy and Adaptability**: Agents are designed to act autonomously, interpreting input, analyzing situations, and deciding the best course of action. Their adaptability allows them to respond dynamically to changing conditions or unexpected challenges in pursuit of their goals.
+

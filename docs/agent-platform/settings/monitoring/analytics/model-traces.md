@@ -321,11 +321,11 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="https://docs.kore.ai/gale/agents/overview/" target="_blank">Learn more</a>.</li>
+<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="https://docs.kore.ai/agent-platformagents/overview/" target="_blank">Learn more</a>.</li>
 
-<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/gale/playground/using-prompt-studio/" target="_blank">Learn more</a>.</li>
+<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="https://docs.kore.ai/agent-platformplayground/using-prompt-studio/" target="_blank">Learn more</a>.</li>
 
-<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="https://docs.kore.ai/gale/models/open-source-models/generate-an-api-key-open-source/" target="_blank">Learn more</a>.</li>
+<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="https://docs.kore.ai/agent-platformmodels/open-source-models/generate-an-api-key-open-source/" target="_blank">Learn more</a>.</li>
 </ul>
    </td>
   </tr>
