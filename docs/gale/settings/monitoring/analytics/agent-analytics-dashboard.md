@@ -233,7 +233,7 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <li>Hover over the required data point on the graph to view the following information:</li></ul>
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li>
 <ul><li>Start Node</li>
-<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/gen-ai-node/" target="_blank">GenAI Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/ai-node/" target="_blank">GenAI Node</a></li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/function-node/" target="_blank">Function Node</a></li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/condition-node/" target="_blank">Condition Node</a></li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/" target="_blank">API Node</a></li>

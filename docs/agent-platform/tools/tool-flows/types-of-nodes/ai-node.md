@@ -1,10 +1,10 @@
-# Gen AI Node
+# AI Node
 
-Gen AI nodes let you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow.
+AI nodes let you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow.
 
-## Add and Configure a Gen AI Node
+## Add and Configure a AI Node
 
-Setting up a Gen AI node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a AI node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
@@ -12,10 +12,10 @@ Steps to add and configure the node:
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **Gen AI** from the pop-up menu. (Alternatively, drag the **Gen AI** node from the Assets panel onto the canvas.)  
+3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **AI** from the pop-up menu. (Alternatively, drag the **AI** node from the Assets panel onto the canvas.)  
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="./../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:20%;">
+<img src="./../images/configure-gen-ai-node.png" alt="Configure AI Node" title="Configure AI Node" style="border: 1px solid gray; zoom:20%;">
 
 5. Enter or select the following **General Settings**:
 
@@ -66,17 +66,17 @@ Steps to add and configure the node:
         * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
 
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
-        <img src="./../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
+        <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
+    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a AI node, Function node, Condition node, API node, or End node.
 
-    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the Gen AI node.
+    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
 
 7. To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
 
     !!! note
 
-        When you attach tools to the GEN AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+        When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
 
     1. **Add tools**: Click **Add Tools** to add a tool.
     2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
@@ -87,7 +87,7 @@ Steps to add and configure the node:
             * **Tool choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a tool call (Auto), or if a tool call is required every time (Required). The default setting is Auto.
             * **Parallel tool calls**: Select *True* to enable the model to execute multiple tool calls simultaneously. Select *False* if you want the model to execute tool calls sequentially, optimizing for the best possible outcome.  
         
-    <img src="./../images/tool_calling_configuration.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/tool_calling_configuration.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
 8. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
 
@@ -95,7 +95,7 @@ Steps to add and configure the node:
 
     When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.
 
-## Access the Gen AI Node’s Output
+## Access the AI Node’s Output
 
 The node’s output is stored in a context variable. You can access the variable using the following syntax:
 `{{context.steps.AINodeName.output}}`
