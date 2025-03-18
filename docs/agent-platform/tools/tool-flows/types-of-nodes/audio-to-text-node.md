@@ -135,7 +135,7 @@ To add and configure the node, follow the steps below:
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
 <img src="../images/connections-audio-to-text.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
 
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.</li>
+<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Audio to Text</b> node.</li></ul>
 
 <ol start="7"><li>Finally, <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/audio-to-text-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol>

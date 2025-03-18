@@ -42,7 +42,7 @@ Steps to add and configure the node:
 
         !!! note
 
-            Importing a Prompt with Variables: If you import a prompt from Prompt Studio with set variables, you can add the necessary variables in the ‘Map Variables’ field for that GenAI node.
+            Importing a Prompt with Variables: If you import a prompt from Prompt Studio with set variables, you can add the necessary variables in the ‘Map Variables’ field for that AI node.
 
             Importing a Prompt without Variables: If you import a prompt from Prompt Studio that does not have variables, you must customize the prompt and manually add the variables. In this case, the "Map Variables" field does not appear, as the imported prompt has no variables to map.
 
@@ -76,7 +76,7 @@ Steps to add and configure the node:
 
     !!! note
 
-        When you attach tools to the GEN AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each GenAI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+        When you attach tools to the GEN AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
 
     1. **Add tools**: Click **Add Tools** to add a tool.
     2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
@@ -98,7 +98,7 @@ Steps to add and configure the node:
 ## Access the Gen AI Node’s Output
 
 The node’s output is stored in a context variable. You can access the variable using the following syntax:
-`{{context.steps.GenAINodeName.output}}`
+`{{context.steps.AINodeName.output}}`
 
 !!! note
 

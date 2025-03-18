@@ -7,7 +7,7 @@ A sample use case involves an insurance company assessing vehicle damage to esti
 <div class="admonition note">
 <p class="admonition-title">Important Considerations</p>
 <p><ul><li>The user can upload only one file at a time for processing.</li>
-<li>Except for image input handling, the OCR node functions like the existing Gen AI node.</li>
+<li>Except for image input handling, the OCR node functions like the existing AI node.</li>
 <li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
 <li>Image input preprocessing is supported in the following formats:</li>
 <ul><li>Binary, base64-encoded for Anthropic models.</li>
@@ -59,7 +59,7 @@ To add and configure the node, follow the steps below:
 
 <ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
 <img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;"></li>
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.</li>
+<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.</li></ul>
 <li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.
 <img src="../images/click-run.png" alt="click run" title="click run" style="border: 1px solid gray; zoom:75%;"></li></ol>

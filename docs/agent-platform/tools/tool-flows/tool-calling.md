@@ -12,26 +12,26 @@ Tool calling helps the tool access additional resources, retrieve data, and perf
 
 ## How Tool Calling Works in Agent Platform
 
-In Agent Platform, the tool calling feature within the GenAI nodes expands the model’s capabilities by integrating additional tools for more efficient and precise task completion. Within a tool workflow, the GenAI node can invoke additional resources to complete tasks enhancing the node's capabilities beyond its internal functions.  
+In Agent Platform, the tool calling feature within the AI nodes expands the model’s capabilities by integrating additional tools for more efficient and precise task completion. Within a tool workflow, the AI node can invoke additional resources to complete tasks enhancing the node's capabilities beyond its internal functions.  
  
 The following outlines the typical steps involved in a tool calling process:
 
 1. **Input Data**: The model receives a query or input from the user.
-2. **Processing**: The model analyzes the request and determines which tools or additional resources are needed. It then maps the user's query to predefined tools configured in the GenAI node.
+2. **Processing**: The model analyzes the request and determines which tools or additional resources are needed. It then maps the user's query to predefined tools configured in the AI node.
 3. **Tool Call**: Agent Platform triggers the mapped tool with the necessary arguments.
 4. **Tool Execution**: The called tool performs its tasks, such as running a search, generating an image, or fetching specific information.
-5. **Output**: The tool's result is returned to the GenAI node, which may process it further or deliver the final output to the user. The model combines the results from the various tools and generates a cohesive, informative response for the user.
+5. **Output**: The tool's result is returned to the AI node, which may process it further or deliver the final output to the user. The model combines the results from the various tools and generates a cohesive, informative response for the user.
 
-### Using Multiple Tools in GenAI Nodes
+### Using Multiple Tools in AI Nodes
 
-In a single GenAI node, multiple tools can be called together to handle more complex tasks. Multiple tool calling refers to the model’s ability to interact with and use multiple tools or external systems in a single session. These tools can be called sequentially or in parallel, depending on the workflow.
+In a single AI node, multiple tools can be called together to handle more complex tasks. Multiple tool calling refers to the model’s ability to interact with and use multiple tools or external systems in a single session. These tools can be called sequentially or in parallel, depending on the workflow.
 
 * **Sequential tool calling**: Tools are triggered one after another, with each tool waiting for the previous one to finish. This ensures tasks are done in a specific order.
 For example, if a user asks for weather data for a city and a recommendation based on that data, the weather tool would run first, followed by the recommendation tool.
 * **Parallel tool calling**: Multiple tools are triggered simultaneously, allowing tasks to run in parallel speeding up the overall process. 
 For example, if a user requests weather information for various cities, the model can call weather APIs for all cities at once and retrieve data in parallel.
 
-This flexibility enables GenAI nodes to handle more complex workflows efficiently, combining the best of both approaches depending on the situation.
+This flexibility enables AI nodes to handle more complex workflows efficiently, combining the best of both approaches depending on the situation.
 
 
 ### **Use Case: Weather and travel advice for Paris**
@@ -77,7 +77,7 @@ The model now generates the tool call for Get Travel Advice based on the weather
     * `location: "Paris"`
     * `weather_condition: "Partly cloudy with light rain"`
 
-The model sends this information in the response body, and the GenAI node calls the Get Travel Advice tool.
+The model sends this information in the response body, and the AI node calls the Get Travel Advice tool.
 
 **Step 6: Tool Call 2 - Travel Recommendation tool**  
 The Get Travel Advice tool is triggered and returns:
@@ -111,7 +111,7 @@ The user receives the final output, which includes both the weather update and t
 
 ## Supported Models for Tool Calling
 
-Tool calling functionality is available when commercial models are added to a GenAI node. However, only specific commercial models support this feature. Currently, Kore-hosted and Hugging Face models do not support tool calling. 
+Tool calling functionality is available when commercial models are added to an AI node. However, only specific commercial models support this feature. Currently, Kore-hosted and Hugging Face models do not support tool calling. 
 
 Below is a list of models across various platforms that currently support tool calling in Agent Platform:
 

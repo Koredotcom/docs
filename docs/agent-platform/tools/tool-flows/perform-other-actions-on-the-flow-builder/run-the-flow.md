@@ -41,16 +41,16 @@ The debug log shows the following key details:
 * **Flow-level log details**: Get an overview of logs at the flow level, including initiation and progress.
 * **Node-level information**: For each flow initiation, detailed logs are provided for each node, which include the success or failure status.
 * **Node success/failure links**: Links to additional details if a node succeeds or fails.
-* **Tool calling details**: Provides detailed logs of any tools called during the tool flow's execution (available only for Gen AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.
+* **Tool calling details**: Provides detailed logs of any tools called during the tool flow's execution (available only for AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.
 * **Node metrics**: For each node, the following metrics are available:
     * **Initiated On**: The timestamp for when the node was triggered.
     * **Executed On**: The timestamp for when the node execution was completed.
     * **Total Time Taken**: The time it took for the node to complete execution.
-    * **Tokens**: The token usage during execution (available only for Gen AI nodes).
+    * **Tokens**: The token usage during execution (available only for AI nodes).
 
-### Time Metrics for API and Gen AI Nodes
+### Time Metrics for API and AI Nodes
 
-The debug log contains detailed API and Gen AI node time metrics. These metrics, available during both design time and run time, show how long each node takes to execute, including time spent processing and waiting for external API or AI responses. These metrics help you optimize flow performance by identifying bottlenecks in both internal processing and external service calls.
+The debug log contains detailed API and AI node time metrics. These metrics, available during both design time and run time, show how long each node takes to execute, including time spent processing and waiting for external API or AI responses. These metrics help you optimize flow performance by identifying bottlenecks in both internal processing and external service calls.
 
 #### Time Breakdown for API Nodes
 
@@ -69,9 +69,9 @@ API nodes can be configured in either synchronous or asynchronous mode:
 * **Node processing time**: The time the platform spends processing the node after it resumes from the pause.
 
 
-#### Time Breakdown for Gen AI Nodes
+#### Time Breakdown for AI Nodes
 
-Similar to API nodes, Gen AI nodes also involve external service calls (for example, to AI models). For Gen AI nodes, the following two key timing metrics are shown  in the debug log:
+Similar to API nodes, AI nodes also involve external service calls (for example, to AI models). For AI nodes, the following two key timing metrics are shown  in the debug log:
 
 * **Node processing time**: The time taken by the node to complete the execution.
-* **LLM response time**: The time taken for the connected AI model to return a response to the Gen AI node.
+* **LLM response time**: The time taken for the connected AI model to return a response to the AI node.
