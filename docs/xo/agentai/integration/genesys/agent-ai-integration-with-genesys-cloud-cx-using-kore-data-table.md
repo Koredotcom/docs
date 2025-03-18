@@ -24,16 +24,16 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 <p>
 Create an Interaction Widget in Genesys for Agent AI
    </td>
-   <td>[Agent AI URL](https://platform.kore.ai){:target="_blank"}</a>
+   <td><a href="https://platform.kore.ai" target="_blank">Agent AI URL</a>
    </td>
    <td>The domain of the Agent AI.
    </td>
    <td>
 <ul>
 
-<li>If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}</a></li>
+<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target="_blank">https://agentassist.kore.ai</a></li>
 
-<li>If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}</a></li>
+<li>If it is UXO, URL is <a href="https://platform.kore.ai" target="_blank">https://platform.kore.ai</a></li>
 
 <li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
 </ul>
@@ -48,7 +48,7 @@ Create an Interaction Widget in Genesys for Agent AI
 <p>
 <strong>Note: </strong>Only the default Client App is supported.
    </td>
-   <td>[https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/){:target="_blank"}</a>
+   <td><a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel" target="_blank">https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel</a>
    </td>
   </tr>
   <tr>
@@ -68,7 +68,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>Use this to pass sensitive information to Agent AI Bot.
    </td>
-   <td>[https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE](https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE){:target="_blank"}</a>
+   <td><a href="https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE" target="_blank">https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE</a>
    </td>
   </tr>
   <tr>
@@ -78,7 +78,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>The Interaction Widget is utilized for displaying the Agent AI iframe within the Genesys Agent Desktop.
    </td>
-   <td>[https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration/](https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration/){:target="_blank"}</a>
+   <td><a href="https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration" target="_blank">https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration</a>
    </td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ Create an Interaction Widget in Genesys for Agent AI
 <p>
 <code>"token":&lt;jwt token created using App's ClientId and ClientSecret>,</code>
 <p>
-<code>"qDelimiter":<a>Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name</a></code>
+<code>"qDelimiter":<a href="#qdl">Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name</a></code>
 <code>}</code>
 <p>
 <code>}</code>
@@ -179,7 +179,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
    <td>KvpConfig
    </td>
-   <td>The KVPs (Key value pairs) to be included in SecureCustomData. JSON object containing the necessary keys and xpath (paths to locate the value in Genesys Conversation API result JSON object). [https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId](https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId){:target="_blank"}
+   <td>The KVPs (Key value pairs) to be included in SecureCustomData. JSON object containing the necessary keys and xpath (paths to locate the value in Genesys Conversation API result JSON object). <a href="https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId" target="_blank">https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId</a>
 <p>
 <strong>Note: </strong>Optional Column. Required when you wish to send secure custom data to Agent AI.
    </td>
@@ -291,7 +291,7 @@ If a single bot is used for several queues, create a record and insert the queue
 Kore.ai matches the third-party queue name with the "QueueIdentifier" credential name in its bot credentials to render the appropriate bot.
 
 * Bot credentials are fetched based on Genesys desktop queue names. If the Genesys queue name is of the “&lt;QUEUEIDENTIFIER>&lt;QDELIMITER>XXXXX” format, for example “ALPHAINC_CUSTOMERSERVICE_16092024,” then:
-* QueueIdentifier = **ALPHAINC** and qDelimiter = “**_**”.
+* QueueIdentifier = **ALPHAINC** and <span id="qdl">qDelimiter</span> = “**_**”.
 * Update the QueueIdentifier in the Kore datatable.
 * Update the qDelimiter in the [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai) section.
 
