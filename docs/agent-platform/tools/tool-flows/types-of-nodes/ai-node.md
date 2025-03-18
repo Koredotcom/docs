@@ -1,18 +1,23 @@
 # AI Node
 
-AI nodes let you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow.
+AI nodes are multimodal nodes that let you leverage LLMs for specific use cases to handle multiple data types. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow. AI nodes are classified into the following types:
 
-## Add and Configure an AI Node
+* **Text to Text**: Generates text output like descriptions, summaries, stories, and more based on the given instructions. [Learn more](./ai-node.md/#add-and-configure-a-text-to-text-node){:target="_blank"}.
+* **Text to Image**: Generates an image based on the text instructions and keywords you provide. [Learn more](../types-of-nodes/text-to-image-node.md){:target="_blank"}.
+* **Audio to Text**: Converts the speech (multiple languages) in an audio file into text using text transcription. [Learn more](../types-of-nodes/audio-to-text-node.md){:target="_blank"}.
+* **Image to Text**: Converts an image into its text version, including its description, summary or other information based on the instructions you provide. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
 
-Setting up an AI node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+## Add and Configure a Text to Text Node
 
-Steps to add and configure the node:
+Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+
+**Steps**
 
 1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed. 
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **AI** from the pop-up menu. (Alternatively, drag the **AI** node from the Assets panel onto the canvas.)  
+3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **AI** > **Text to Text** from the pop-up menu. Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="./../images/configure-gen-ai-node.png" alt="Configure AI Node" title="Configure AI Node" style="border: 1px solid gray; zoom:20%;">
@@ -27,7 +32,6 @@ Steps to add and configure the node:
             * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
             Syntax: `{{context.variable_name}}`
             Example: `{{context.conversation}}`  
-        <img src="./../images/write_your_own_prompt.png" alt="Write your own prompt" title="Write your own prompt" style="border: 1px solid gray; zoom:70%;">
 
         !!! note
 
