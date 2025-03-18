@@ -81,18 +81,18 @@ To add and configure the node, follow the steps below:
 
 5. Enter or select the following **General Settings**:
 
-* **Node Name**: Enter an appropriate name for the node. For example, “*Christmasgreeting*.”
-* **Select Model**: Select the required variant of the Stable Diffusion model.
-* **Positive Prompt**: Enter the keywords for what needs to be generated in the image or what it should include. The model will generate along the lines of the details mentioned here and not consider the negative hints.
-* **Negative Prompt**: Enter the keywords for the elements the image should exclude.
+    * **Node Name**: Enter an appropriate name for the node. For example, “*Christmasgreeting*.”
+    * **Select Model**: Select the required variant of the Stable Diffusion model.
+    * **Positive Prompt**: Enter the keywords for what needs to be generated in the image or what it should include. The model will generate along the lines of the details mentioned here and not consider the negative hints.
+    * **Negative Prompt**: Enter the keywords for the elements the image should exclude.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
 
-* **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
-* **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
-* **Batch Count**: The number of images to be generated sequentially.
+  * **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
+  * **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
+  * **Batch Count**: The number of images to be generated sequentially.
 
     <img src="../images/properties-panel-text-to-image.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;">
 
@@ -102,8 +102,8 @@ To add and configure the node, follow the steps below:
 </div>
 
 
-6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
-<img src="../images/connection-text-to-image.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">
+<ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</li>
+<img src="../images/connection-text-to-image.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;"></ol>
 
 <ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Text to Image</b> node.</li>
@@ -122,7 +122,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 <div class="admonition warning">
 <p class="admonition-title">Dynamic Prompt Inputs</p>
-<p>Before you <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imagegenerated</i>” and pass it on in the prompt when you mention "<i>Generate a christmas greeting with instructions mentioned below</i>: <code>{{context.steps.Start.Imaggenerated}}</code>", as shown in the image below.</p></div>
+<p>Before you <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imaggenerated</i>” and pass it on in the prompt when you mention "<i>Generate an image based on the below description</i>: <code>{{context.steps.Start.Imaggenerated}}</code>", as shown in the image below.</p></div>
 
 <img src="../images/dynamic-prompt-input.png" alt="dynamic prompt input" title="dynamic prompt input" style="border: 1px solid gray; zoom:75%;"> 
 

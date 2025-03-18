@@ -10,7 +10,7 @@ Tool flows allow you to define input and output variables, which become accessib
 Once the input and output variables are defined, you can access these variables using the context object syntax and use them throughout the flow:
 
 * Input variables are available immediately after the Start node. These variables can be accessed using the following syntax: `context.steps.Start.inputVariable`
-* Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of a GenAI node using the following syntax: `{{context.steps.GenAInode.output}}`
+* Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of a AI node using the following syntax: `{{context.steps.AInode.output}}`
 
 ## Adding Input/Output Variables 
 
@@ -62,7 +62,7 @@ The system validates the input against the defined enum values and provides an e
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>Import</b> button is enabled when the required information is provided.</li>
-<li>GenAI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
+<li>AI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
 <li>If a type mismatch occurs, the endpoint still succeeds but includes a warning in the response along with the key name and the nature of the mismatch.</li>
 <li>If one or more keys fail validation, the response includes warnings for the failed keys and outputs for the valid ones.</li></ul></p></div>
 
