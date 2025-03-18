@@ -88,7 +88,7 @@ To add and configure the node, follow the steps below:
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
+<p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
 
   * **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
   * **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
