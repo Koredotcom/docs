@@ -1,109 +1,30 @@
-# AI Node
+# AI Node Overview
 
-AI nodes are multimodal nodes that let you leverage LLMs for specific use cases to handle multiple data types. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow. AI nodes are classified into the following types:
+AI nodes are multimodal components that utilize LLMs for specialized tasks, transforming workflows by supporting diverse file types. These nodes can process and generate various media formats, such as text, images, and audio, within a single workflow. Their adaptability enables developers to build dynamic systems that seamlessly handle and manipulate multiple data types.
 
-* **Text to Text**: Generates text output like descriptions, summaries, stories, and more based on the given instructions. [Learn more](./ai-node.md/#add-and-configure-a-text-to-text-node){:target="_blank"}.
-* **Text to Image**: Generates an image based on the text instructions and keywords you provide. [Learn more](../types-of-nodes/text-to-image-node.md){:target="_blank"}.
-* **Audio to Text**: Converts the speech (multiple languages) in an audio file into text using text transcription. [Learn more](../types-of-nodes/audio-to-text-node.md){:target="_blank"}.
-* **Image to Text**: Converts an image into its text version, including its description, summary or other information based on the instructions you provide. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
+Each AI node processes inputs and generates responses, which can be integrated into broader workflows within the tool flow. AI nodes are categorized into the following types:
 
-## Add and Configure a Text to Text Node
+1. **Text to Text Nodes**
 
-Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+     * Process textual input and generate textual output based on the given instructions.
+     * Used for tasks like summarization, translation, content generation, and chatbot interactions.
+     * Example: AI-powered documentation assistants, automated report generation. [Learn more](./ai-node.md/#add-and-configure-a-text-to-text-node){:target="_blank"}.
 
-**Steps**
+2. **Text to Image Nodes**
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed. 
+    * Convert textual descriptions into visual representations/relevant images based on the instructions and keywords you provide.
+    * Used for generating AI art, concept sketches, and synthetic images.
+    * Example: AI-driven design tools, creative content generation. [Learn more](../types-of-nodes/text-to-image-node.md){:target="_blank"}.
 
-2. Click **Go to flow** to edit the in-development version of the flow.
+3. **Audio to Text Nodes** 
 
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **AI** > **Text to Text** from the pop-up menu. Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
+    * Convert spoken words (in multiple languages) in an audio file into written text using text transcription. 
+    * Used in transcription, voice assistants, and speech analysis.
+    * Example: Automated meeting transcriptions, AI-driven voice command processing. [Learn more](../types-of-nodes/audio-to-text-node.md){:target="_blank"}.
 
-4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="./../images/configure-gen-ai-node.png" alt="Configure AI Node" title="Configure AI Node" style="border: 1px solid gray; zoom:20%;">
+4. **Image to Text Nodes**
 
-5. Enter or select the following **General Settings**:
+   * Extract meaningful text from images.
+   * Used for OCR (Optical Character Recognition), image captioning, and content analysis.
+   * Example: AI-powered document scanners, and accessibility tools. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
 
-    * **Node Name**: Enter an appropriate name for the node.
-
-    * **Prompt options**: Choose one of the following options:
-        1. **Write your own prompt**: If you select 'Write your own prompt’, follow these steps:
-            * **System Prompt**: Enter the system prompt for your use case. System prompts help you assign a role to the model. For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters".
-            * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
-            Syntax: `{{context.variable_name}}`
-            Example: `{{context.conversation}}`  
-
-        !!! note
-
-            System Prompts: These are instructions to guide how the model should respond. They define the overall behavior or tone of the model. For example: "You are a helpful assistant."   
-            Human Prompts: These are the questions or requests made by the user. They specify what the user wants the model to do or answer. For example: "Summarize this error log and tell me the likely cause of the issue."
-
-
-        2. **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
-            * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.
-            * To edit the prompt, click the **Customize** option. The ‘Custom Prompt’ view is displayed, where the prompt from Prompt Studio will be populated in both the system and human prompt fields. You can then modify the prompt while preserving the selected version.  
-        <img src="./../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
-
-        !!! note
-
-            Importing a Prompt with Variables: If you import a prompt from Prompt Studio with set variables, you can add the necessary variables in the ‘Map Variables’ field for that AI node.
-
-            Importing a Prompt without Variables: If you import a prompt from Prompt Studio that does not have variables, you must customize the prompt and manually add the variables. In this case, the "Map Variables" field does not appear, as the imported prompt has no variables to map.
-
-    * **Select Model**: Select a model from the list of configured models.
-    Note that when you choose a prompt from the prompt hub, it will also fetch the preferred model associated with that version if you specified one during the commit process
-
-    * **Timeout**: Select the timeout duration from the allowed range. The allowed range is 30 to 180 seconds (3 minutes). The default is 60 seconds (1 minute). The node triggers a timeout error if the request is not completed within the selected time frame.    
-
-        !!! note 
-
-            Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
-
-    * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
-
-        * **Temperature**: Controls the randomness of the model's responses. Higher values lead to more random outputs, while lower values result in more focused outputs.
-
-        * **Top p**: Controls the diversity of the model's output by considering only the top tokens whose cumulative probability exceeds a threshold. Higher values produce more diverse outputs, while lower values result in more deterministic outputs.
-
-        * **Top k**: Restricts the model from considering only the top k most probable next words when generating output. For example, if k=50, the model will randomly choose from the top 50 predictions at each step. This helps balance quality and diversity in the generated text. Higher top-k values encourage creativity and diversity, while lower values promote coherence and reliability.
-
-        * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
-
-6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
-        <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
-
-    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
-
-    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
-
-7. To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
-
-    !!! note
-
-        When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
-
-    1. **Add tools**: Click **Add Tools** to add a tool.
-    2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
-    3. **Configure tool settings**:
-        * In the Tool configuration section, configure the following:
-            * **Exit node execution after**: Specify the number of model calls to use as the exit criteria. For example, if you set this to 5 calls and the LLM continues making tool calls without providing a final answer, the system will exit to the failure path.
-        * In the Additional settings section, configure the following:
-            * **Tool choice**: Select *Auto* or *Required*. This option determines whether the model will automatically decide when to make a tool call (Auto), or if a tool call is required every time (Required). The default setting is Auto.
-            * **Parallel tool calls**: Select *True* to enable the model to execute multiple tool calls simultaneously. Select *False* if you want the model to execute tool calls sequentially, optimizing for the best possible outcome.  
-        
-    <img src="./../images/tool_calling_configuration.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
-
-8. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder and follow the onscreen instructions.
-
-!!! Failure "Standard Error"
-
-    When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.
-
-## Access the AI Node’s Output
-
-The node’s output is stored in a context variable. You can access the variable using the following syntax:
-`{{context.steps.AINodeName.output}}`
-
-!!! note
-
-    Agent Platform can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
