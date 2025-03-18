@@ -115,7 +115,7 @@ nav:
     - Platform Overview: getting-started/introduction.md
     - Accessing the Platform: getting-started/sign-up-sign-in.md          
     - Release Notes:
-      - Recent Updates: getting-started/release-notes/recent-updates.md
+      - Recent Updates: release-notes/recent-updates.md
     - Quick Start Tutorials:
       - Product Overview: getting-started/tutorials/agent-platform.md
       - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
