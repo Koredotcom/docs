@@ -164,7 +164,7 @@ Add all the required input variables to run the flow in the **Input** section of
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the transcribed text output.</li>
-<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/ai-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
+<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
 <img src="../images/save-output-variable.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 

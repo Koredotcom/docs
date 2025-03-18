@@ -8,7 +8,7 @@ Each AI node processes inputs and generates responses, which can be integrated i
 
      * Process textual input and generate textual output based on the given instructions.
      * Used for tasks like summarization, translation, content generation, and chatbot interactions.
-     * Example: AI-powered documentation assistants, automated report generation. [Learn more](./ai-node.md/#add-and-configure-a-text-to-text-node){:target="_blank"}.
+     * Example: AI-powered documentation assistants, automated report generation. [Learn more](../types-of-nodes/text-to-text-node.md){:target="_blank"}.
 
 2. **Text to Image Nodes**
 
