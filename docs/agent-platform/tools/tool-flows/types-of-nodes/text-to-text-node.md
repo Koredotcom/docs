@@ -24,7 +24,7 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
     * **Node Name**: Enter an appropriate name for the node.
 
     * **Prompt options**: Choose one of the following options:
-        1. **Write your own prompt**: If you select 'Write your own prompt’, follow these steps:
+        * **Write your own prompt**: If you select 'Write your own prompt’, follow these steps:
             * **System Prompt**: Enter the system prompt for your use case. System prompts help you assign a role to the model. For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters".
             * **Prompt**: Provide the instructions that you want the model to follow. You can use context variables as mentioned below. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the prompt.  
             Syntax: `{{context.variable_name}}`
@@ -36,7 +36,7 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
             Human Prompts: These are the questions or requests made by the user. They specify what the user wants the model to do or answer. For example: "Summarize this error log and tell me the likely cause of the issue."
 
 
-        2. **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
+        * **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
             * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.
             * To edit the prompt, click the **Customize** option. The ‘Custom Prompt’ view is displayed, where the prompt from Prompt Studio will be populated in both the system and human prompt fields. You can then modify the prompt while preserving the selected version.  
         <img src="./../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
@@ -69,9 +69,9 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
         <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
+    * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
 
-    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
+    * **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
 
 7. To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
 
@@ -79,9 +79,9 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 
         When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
 
-    1. **Add tools**: Click **Add Tools** to add a tool.
-    2. **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
-    3. **Configure tool settings**:
+    * **Add tools**: Click **Add Tools** to add a tool.
+    * **Select tools**: The Tools dialog displays a list of tools available in your account. Select the appropriate tools and click **Add tools**. Once added, the selected tools will appear on the Tools tab, indicating that they have been successfully attached.  
+    * **Configure tool settings**:
         * In the Tool configuration section, configure the following:
             * **Exit node execution after**: Specify the number of model calls to use as the exit criteria. For example, if you set this to 5 calls and the LLM continues making tool calls without providing a final answer, the system will exit to the failure path.
         * In the Additional settings section, configure the following:
