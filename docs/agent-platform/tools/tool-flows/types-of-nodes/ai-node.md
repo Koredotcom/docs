@@ -2,9 +2,9 @@
 
 AI nodes let you leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the tool flow.
 
-## Add and Configure a AI Node
+## Add and Configure an AI Node
 
-Setting up a AI node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up an AI node in an tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
 Steps to add and configure the node:
 
@@ -68,7 +68,7 @@ Steps to add and configure the node:
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
         <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
-    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a AI node, Function node, Condition node, API node, or End node.
+    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
 
     2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
 

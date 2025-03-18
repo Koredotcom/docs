@@ -59,7 +59,7 @@ To add and configure the node, follow the steps below:
 
 <ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
 <img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;"></li>
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a AI node, Function node, Condition node, API node, or End node.</li>
+<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.</li></ul>
 <li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.
 <img src="../images/click-run.png" alt="click run" title="click run" style="border: 1px solid gray; zoom:75%;"></li></ol>

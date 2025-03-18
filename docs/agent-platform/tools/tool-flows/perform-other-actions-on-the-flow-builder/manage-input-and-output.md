@@ -10,7 +10,7 @@ Tool flows allow you to define input and output variables, which become accessib
 Once the input and output variables are defined, you can access these variables using the context object syntax and use them throughout the flow:
 
 * Input variables are available immediately after the Start node. These variables can be accessed using the following syntax: `context.steps.Start.inputVariable`
-* Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of a AI node using the following syntax: `{{context.steps.AInode.output}}`
+* Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of an AI node using the following syntax: `{{context.steps.AInode.output}}`
 
 ## Adding Input/Output Variables 
 
