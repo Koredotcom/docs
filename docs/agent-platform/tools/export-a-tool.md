@@ -9,7 +9,7 @@ The exported package can be reimported to create a new tool or add it as a versi
 The [exported package](./export-an-agent.md#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
 
 * Name and description
-* API, Condition, GenAI, and Script node configurations
+* API, Condition, AI, and Script node configurations
 * Input/output variables and scanners
 * Environment variables
 * Sync/Async setup
@@ -50,7 +50,7 @@ The export process begins, and a success message is displayed after the tool val
 
 The exported package includes the following JSON files encapsulating the tool’s configuration data:
 
-* ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.
+* ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
 * ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
 

@@ -64,7 +64,7 @@ Steps to add an external model using API integration:
         Click the **Save as draft** to save the model and the status is saved as Draft.
     
 
-11. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the Gen AI node of the tool flow builder.
+11. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the AI node of the tool flow builder.
 
 ## Manage Custom API Integrations
 

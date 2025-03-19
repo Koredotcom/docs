@@ -27,7 +27,7 @@ To initiate a tool creation journey through the import functionality, follow the
 
 <ol start="4"><li>In the <b>Import tool</b> window, providing the following information is mandatory.</li>
 <ul><li><b>Tool Name</b>: Provide a unique tool name.</li>
-<li><b>Flow definition file</b>: Upload the required <b>flow_definition.json</b> file from your local directory. The file includes the tool's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.</li></ul></ol>
+<li><b>Flow definition file</b>: Upload the required <b>flow_definition.json</b> file from your local directory. The file includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.</li></ul></ol>
 
 Providing the following information is optional:
 
@@ -37,9 +37,9 @@ Providing the following information is optional:
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>Import</b> button is enabled when the required information is provided.</li>
-<li>GenAI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
-<li>The model name from the original tool is imported as a placeholder into the GenAI node's <b>Select Model</b> field. Later, you can assign a value from the available options.</li>
-<li>The values for <b>System Prompt</b>, <b>Prompt</b>, <b>Timeout</b>, and <b>Hyperparameters</b> are imported for the GenAI node.</li></ul></p></div>
+<li>AI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
+<li>The model name from the original tool is imported as a placeholder into the AI node's <b>Select Model</b> field. Later, you can assign a value from the available options.</li>
+<li>The values for <b>System Prompt</b>, <b>Prompt</b>, <b>Timeout</b>, and <b>Hyperparameters</b> are imported for the AI node.</li></ul></p></div>
 
 <ol start="5"><li>Click <b>Import</b>.</li>
 <img src="../images/agent_platform/click-import-new.png" alt="click import" title="click import" style="border: 1px solid gray; zoom:75%;"></ol>
@@ -54,7 +54,7 @@ The imported tool is listed under **All tools** and **My tools** on the **Tools*
 <p class="admonition-title">Important</p>
 <p><ul><li>The status of the imported tool is set to <b>In Development</b>.</li>
 <li>The node types, tool descriptions, input and output variables, scanners, and sync/async setup are kept intact during the import.</li>
-<li>If the GenAI node's model doesn't match any available models in the current account, the model field is kept empty, but all prompt definitions are imported.</li>
+<li>If the AI node's model doesn't match any available models in the current account, the model field is kept empty, but all prompt definitions are imported.</li>
 <li>API keys are not transferred during the import process.</li>
 <li>The imported tool cannot be shared with other users.</li></p></div>
 
@@ -68,7 +68,7 @@ Use the **Import** functionality under **Tools** > **Configurations** to add a t
 
 When you import an tool as a version, you must upload all the following files:
 
-* **Flow definition file**: Upload the required **flow_definition.json** file from your local directory. The file includes the tool's canvas definitions (node definitions) and GenAI node configurations, including prompts, hyperparameters, and timeout information.
+* **Flow definition file**: Upload the required **flow_definition.json** file from your local directory. The file includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
 * **App definition file**: Upload the required **app_definition.json** file, which includes general information about the tool version and guardrails.
 * **Environment variable file**: Upload the required **env_variables.json** file, which includes the environment variables set for the tool. Any conflicts between environment variables in the parent tool and the imported version must be resolved. [Learn more](./configure-a-tool.md#manage-environment-variables){:target="_blank"}.
 

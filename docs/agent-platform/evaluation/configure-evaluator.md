@@ -206,16 +206,13 @@ Steps to add an evaluator:
 
     <img src="../images/import_dataset_options.png" alt="Configure evaluator" title="Configure evaluator" style="border: 1px solid gray; zoom:80%;">
 
-The list of Quality and Safety evaluators are displayed.
+    The list of Quality and Safety evaluators are displayed.
 
-2. To add a custom evaluator, click ‘Add evaluator’.  
+2. To add a custom evaluator, click **Add evaluator**.  
 
     <img src="../images/add_custom_evaluator.png" alt="Add evaluator" title="Add evaluator" style="border: 1px solid gray; zoom:80%;">
 
 3. In the Custom evaluators dialog, fill in these details:  
-
-    <img src="../images/custom_eval_dialog.png" alt="Custom evaluator" title="Custom evaluator" style="border: 1px solid gray; zoom:80%;">  
-
 
     1. **Evaluator Name**: Enter a name for the evaluator.
     2. **Evaluator Type**: Select the category for the evaluator: **Quality** or **Safety**.
@@ -230,10 +227,11 @@ The list of Quality and Safety evaluators are displayed.
     8. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. [Learn more](https://agentplatform-kore.github.io/docs/agent-platform/evaluation/configure-evaluator/#mapping-variables-link-evaluator-prompts-to-your-dataset).
     9. **Output Type**: Select either **Score** or **Boolean** for the evaluator’s output.
     10. **Maximum Score**: If the output type is **Score**, specify the maximum score on the scale (For example, 1 to 10).
-    11. **Pass threshold**: If the output type is **Score**, set the minimum score required for an output to pass the evaluation. Choose either the ‘Greater than’ or ‘Less than’ option and then enter a threshold value (For example, from 1 to 5).
+    11. **Pass threshold**: If the output type is **Score**, set the minimum score required for an output to pass the evaluation. Choose either the ‘Greater than’ or ‘Less than’ option and then enter a threshold value (For example, from 1 to 5). These options help distinguish between positive and negative evaluators, allowing you to adjust the evaluation based on the desired outcome.
         * For **Positive Evaluators** (or evaluators where a higher score is better, such as Completeness), the output is considered "good" if the score exceeds the threshold. For example, if the Completeness evaluator returns a score greater than 2.5, the result will be marked green, indicating that it meets the expected quality level.
         * For **Negative Evaluators** (such as Toxicity, where a lower score is better), a score above the threshold indicates a problem. For example, if the Toxicity evaluator returns a score greater than 2.5, it will be marked red, signaling that the output contains undesirable levels of toxic content.
-    12. The ‘Greater than’ or ‘Less than’ options help distinguish between positive and negative evaluators, allowing you to adjust the evaluation based on the desired outcome
+
+
 4. Click **Save** to save the evaluator configuration.
 
     <img src="../images/custom_eval_dialog_filled1.png" alt="Custom evaluator" title="Custom evaluator" style="border: 1px solid gray; zoom:80%;"> 

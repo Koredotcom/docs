@@ -4,7 +4,7 @@ The Tool Monitor capabilities are shown on the following tabs:
 
 * **All runs**: It shows comprehensive data on all tool run instances and provides a comprehensive record of all the endpoint calls made to the tool. 
 
-* **Model runs**: This tab shows specific data on Gen AI node run instances, focusing on endpoint calls made to Gen AI nodes within the tool.
+* **Model runs**: This tab shows specific data on AI node run instances, focusing on endpoint calls made to AI nodes within the tool.
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
@@ -47,31 +47,31 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 ## 	Model Runs
 
-Each GenAI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three GenAI nodes are used in a tool, three separate requests for each of the three GenAI nodes are displayed.
+Each AI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three AI nodes are used in a tool, three separate requests for each of the three AI nodes are displayed.
 
-If your tool currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.
+If your tool currently does not have any AI nodes, this section will remain empty. Once you add AI nodes, the Model runs will begin to reflect here.
 
-The Model runs tab provides the following information for each Gen AI node call:
+The Model runs tab provides the following information for each AI node call:
 
-* **Request ID**: The unique identifier of the GenAI node request.
+* **Request ID**: The unique identifier of the AI node request.
 * **Status**: The current state of the request. It displays one of the following statuses: 
     * **In Progress**: The request is being processed.
     * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
     * **Failed**: The request was not completed successfully.
-* **Node name**: The name of the GenAI node.
-* **Model name**: The model that is used for the GenAI node.
-* **Response time**: The amount of time taken by the GenAI node to complete the request.
-* **Start time**: The time when the GenAI node has started its execution.
-* **End time**: The time when the GenAI node has completed its execution.
+* **Node name**: The name of the AI node.
+* **Model name**: The model that is used for the AI node.
+* **Response time**: The amount of time taken by the AI node to complete the request.
+* **Start time**: The time when the AI node has started its execution.
+* **End time**: The time when the AI node has completed its execution.
 
 You can also see the following metrics on the top of the page:
 
-* **TOTAL REQUESTS**: The total number of Gen AI node requests.
-* **RESPONSE TIME**: The average response time of all the GenAI node requests. It is measured by the following two metrics:
+* **TOTAL REQUESTS**: The total number of AI node requests.
+* **RESPONSE TIME**: The average response time of all the AI node requests. It is measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
-* **FAILURE RATE**: The percentage of instances in which the Gen AI node has failed in execution.
+* **FAILURE RATE**: The percentage of instances in which the AI node has failed in execution.
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.
 
@@ -91,7 +91,7 @@ The panel displays the following details:
     * **Success**: Displays the log as in the debug panel.
     * **Failure**: Displays failure details as in the debug panel.
 
-        For GenAI nodes, when you expand the node you can see the information related to each node along with the scanner information.
+        For AI nodes, when you expand the node you can see the information related to each node along with the scanner information.
 
 *  **Output section**: The Output section displays the tool's output (for successful runs). You can copy the output and view tokens.
 
@@ -178,7 +178,7 @@ The errors are classified as follows:
 
 * **Authorization:** An error that occurs during API key authorization of a tool.
 * **Data Validation:** Any discrepancy detected when validating input fields and API calls during a tool run.
-* **Content Filter:** Breaches of guardrail threshold limits during GenAI node execution.
+* **Content Filter:** Breaches of guardrail threshold limits during AI node execution.
 * **Internal Server Error:** Technical issues encountered with the internal server.
 * **Network**: Technical issues encountered with the network connectivity.
 
@@ -251,7 +251,7 @@ The table below lists the errors that can occur in the **Tool Monitoring** dashb
   <tr>
    <td>Guardrail Failure
    </td>
-   <td>The flow execution was aborted at the <strong>GenAI node</strong> due to a guardrail violation, as the risk score exceeded the threshold.
+   <td>The flow execution was aborted at the <strong>AI node</strong> due to a guardrail violation, as the risk score exceeded the threshold.
    </td>
    <td>Content Filter
    </td>
