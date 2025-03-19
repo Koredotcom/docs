@@ -24,7 +24,7 @@ Each AI node processes inputs and generates responses, which can be integrated i
 
 4. **Image to Text Nodes**
 
-   * Extract meaningful text from images.
-   * Used for OCR (Optical Character Recognition), image captioning, and content analysis.
-   * Example: AI-powered document scanners, and accessibility tools. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
+    * Extract meaningful text from images.
+    * Used for OCR (Optical Character Recognition), image captioning, and content analysis.
+    * Example: AI-powered document scanners, and accessibility tools. [Learn more](../types-of-nodes/image-to-text-node.md){:target="_blank"}.
 
