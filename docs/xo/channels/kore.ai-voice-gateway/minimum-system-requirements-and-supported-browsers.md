@@ -149,4 +149,4 @@ Allow traffic and whitelist the ports listed below in their respective firewalls
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 3.70.125.14<br>(or)<br>18.158.223.171 | [Learn more](https://docs.kore.ai/smartassist/firewall-rules/germany-de-firewall-rules/) |
+    | 3.70.125.14<br>(or)<br>18.158.223.171 | [Learn more](../kore.ai-voice-gateway/germany-firewall-rules.md) |
