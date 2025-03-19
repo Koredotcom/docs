@@ -12,9 +12,9 @@ Once the input and output variables are defined, you can access these variables 
 * Input variables are available immediately after the Start node. These variables can be accessed using the following syntax: `context.steps.Start.inputVariable`
 * Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of an AI node using the following syntax: `{{context.steps.AInode.output}}`
 
-## Adding Input/Output Variables 
+## Adding Input Variables 
 
-**Steps to add input variables**:
+Steps to add input variables:
 
 1. On the top of the Tool flow canvas, click the **Manage I/O** button.
 Alternatively, you can click the **Start** node. The **Manage Input & Output** dialog is displayed.  
@@ -48,16 +48,15 @@ If you want to make the data type mandatory, then enable the **Mandatory** toggl
 
     * If you select the **JSON** data type, a schema Box/JSON Editor appears, where you need to define the JSON schema for the input parameter. You must ensure to follow the supported JSON schema format standard as detailed here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}.
 
-        <img src="../images/json_schema.png" alt="defining json" title="defining json" style="border: 1px solid gray; zoom:50%;">
+        <img src="../images/json_schema.png" alt="defining json" title="defining json" style="border: 1px solid gray; zoom:60%;">
         
-        In the **Default Value** field, set a default value for the specified field and validate it against the designated data type, ensuring consistency with the defined JSON schema. You must ensure that the Default value matches the schema you’ve defined. If the JSON is invalid, the system will display the relevant error message and execution will fail.
-
-        <img src="../images/json-code-screen.png" alt="json Input Variable" title="json Input Variable" style="border: 1px solid gray; zoom:50%;">
+        In the **Default Value** field, set a default value for the specified field and validate it against the designated data type, ensuring consistency with the defined JSON schema. You must ensure that the default value matches the schema you’ve defined. If the JSON is invalid, the system will display the relevant error message and execution will fail.
 
 5. Click **Save**. The input variable is displayed on the Input tab of the **Manage Input & Output** dialog. 
   
+## Adding Output Variables 
 
-**Steps to add output variables**:
+Steps to add output variables:
 
 1. On the top of the canvas of the Tools page, click the **Manage I/O** button. The **Manage Input & Output** dialog is displayed.
 
