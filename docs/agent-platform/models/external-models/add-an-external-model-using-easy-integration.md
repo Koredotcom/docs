@@ -145,9 +145,9 @@ In this topic, you can see the process of adding the Claude-V1 model from the pr
 </table>
 
 <ol start="7"><li>Enter the respective <b>API key</b> you have received from the provider in the <b>API key</b> field and click <b>Confirm</b> to start the integration.</li>
-<img src="../images/api-key-for-model.png" alt="API Key for Model" title="API Key for Model" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/api-key-for-model.png" alt="API Key for Model" title="API Key for Model" style="border: 1px solid gray; zoom:80%;"></ol>
 
-The model is integrated and is listed in the External models list.</ol>
+The model is integrated and is listed in the External models list.
 
 !!! note
 
