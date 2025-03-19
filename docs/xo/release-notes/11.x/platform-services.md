@@ -2,6 +2,20 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.11.1 March 15, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Voice Gateway (v0.9.3-8)
+
+#### Enhanced Diagnostics for Comprehensive Participant Tracking and Quality Metrics
+
+The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
+
+<hr>
+
 ## v11.11.0 March 04, 2025
 
 <u> Minor Release </u>
