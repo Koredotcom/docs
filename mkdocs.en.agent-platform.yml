@@ -147,7 +147,7 @@ nav:
         - Create a Version of the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
         - AI Node: 
-          - Overview: tools/tool-flows/types-of-nodes/ai-node.md
+          - About AI Nodes: tools/tool-flows/types-of-nodes/ai-node.md
           - Text to Text Node: tools/tool-flows/types-of-nodes/text-to-text-node.md
           - Text to Image Node: tools/tool-flows/types-of-nodes/text-to-image-node.md
           - Audio to Text Node: tools/tool-flows/types-of-nodes/audio-to-text-node.md
