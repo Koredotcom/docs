@@ -234,7 +234,7 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li></ul>
 
    * Start Node
-   * [GenAI Node](../../../tools/tool-flows/types-of-nodes/gen-ai-node.md){:target="_blank"}
+   * [AI Node](../../../tools/tool-flows/types-of-nodes/ai-node.md){:target="_blank"}
    * [Function Node](../../../tools/tool-flows/types-of-nodes/function-node.md){:target="_blank"}
    * [Condition Node](../../../tools/tool-flows/types-of-nodes/condition-node.md){:target="_blank"}
    * [API Node](../../../tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"}

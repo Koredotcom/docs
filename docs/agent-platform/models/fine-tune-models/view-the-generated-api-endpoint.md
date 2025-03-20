@@ -22,7 +22,7 @@ You can use the deployed fine-tuned model in Agent Platform for the following us
 
 * In the Prompt Playground to compare prompts against commercial, open-source, or any other fine-tune model.
 
-* In a tool in the tool flow builder via the Gen AI Node.
+* In a tool in the tool flow builder via the AI Node.
 
 ## Deployment History
 
