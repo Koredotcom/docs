@@ -7,7 +7,7 @@ An agentic application intelligently identifies and invokes the appropriate agen
 When a user submits a query, an orchestrator analyzes the input to:
 
 * Identify the most suitable agents for the task.
-* Create appropriate workflows.
+* Create a plan on how to execute the task.
 * Extract relevant entities from the input.
 * Pass these entities to the selected agents for execution.
 
@@ -23,7 +23,7 @@ Agentic applications involve the following key components that enable autonomous
 
 The orchestrator manages the flow of operations and coordinates interactions between different agents and users. It ensures appropriate tasks are delegated to the right agents and that they work together effectively to achieve the broader goal. The orchestrator acts as a supervisor, resolving conflicts and handling complex workflows. It interprets user input, delegates tasks to appropriate agents, and verifies responses before presenting them to the user.
 
-For example, in a banking app, to transfer funds from savings to pay off a loan, the orchestrator first has the savings agent process the transfer, and then the loan agent updates the information and confirms. The orchestrator ensures both actions are completed successfully and in the correct order before confirming to the user.
+For example, in a banking app, to transfer funds from savings to pay off a loan, the orchestrator fetches the information from the loan agent for the amount to be paid, checks the savings account balance using transaction manager, and pays off the loan after confirming with the user. The orchestrator ensures both actions are completed successfully and in the correct order before confirming to the user.
 
 
 ### Agents

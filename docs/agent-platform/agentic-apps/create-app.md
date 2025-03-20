@@ -14,7 +14,7 @@ Creating an Agentic App consists of the following steps:
 ### Step 1: Create an Agentic App
 
 1. Click on the **+New App** on the **Agentic Apps** page. The Get Started wizard is displayed.  
-<img src="../images/create-a-new-app.png" alt="Create an Agentic App" title="Create an Agentic App" style="border: 1px solid gray;">
+![Create App](images/create-app-pw.png "Agentic App Creation")
 
 2. Enter or select the following details:
 
