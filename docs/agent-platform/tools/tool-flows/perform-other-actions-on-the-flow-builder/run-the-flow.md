@@ -48,11 +48,11 @@ The debug log shows the following key details:
     * **Total Time Taken**: The time it took for the node to complete execution.
     * **Tokens**: The token usage during execution (available only for AI nodes).
 
-### Time Metrics for API and AI Nodes
+## Time Metrics for API and AI Nodes
 
 The debug log contains detailed API and AI node time metrics. These metrics, available during both design time and run time, show how long each node takes to execute, including time spent processing and waiting for external API or AI responses. These metrics help you optimize flow performance by identifying bottlenecks in both internal processing and external service calls.
 
-#### Time Breakdown for API Nodes
+### Time Breakdown for API Nodes
 
 API nodes can be configured in either synchronous or asynchronous mode:
 
@@ -69,7 +69,7 @@ API nodes can be configured in either synchronous or asynchronous mode:
 * **Node processing time**: The time the platform spends processing the node after it resumes from the pause.
 
 
-#### Time Breakdown for AI Nodes
+### Time Breakdown for AI Nodes
 
 Similar to API nodes, AI nodes also involve external service calls (for example, to AI models). For AI nodes, the following two key timing metrics are shown  in the debug log:
 

@@ -6,7 +6,11 @@ Setting up an agent involves defining its purpose, configuring its core function
 
 To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. 
 
-![Add Agent](images/add-new-agent.png "Add Agent")
+![Add Agent](images/new-agent-pw1.png "Add Agent")
+
+You can also set up the agent during the app creation process. 
+
+![Add Agent](images/new-agent-pw.png "Add Agent")
 
 Enter or select the appropriate details for each field as described below. 
 
