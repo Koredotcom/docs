@@ -128,16 +128,19 @@ When conflicting environment variables are detected, it displays the following w
 1. Select the **Conflicting variables** tab.
 2. Select either **Overwrite** to replace the existing variable with the imported one or select **Keep existing**.
 3. Click **Proceed** to continue importing.
+<img src="../images/agent_platform/overwrite-or-keep.png" alt="import tool" title="import tool" style="border: 1px solid gray; zoom:50%;">
 
 **Editing Existing and Imported Variables**
 
 To resolve conflicts by editing either the existing or imported environment variables, select the relevant tab in the **Edit Environment Variable** window and follow the steps provided.
 
 1. Click the **Three-dots (Ellipsis)** icon of the required variable.
-2. Select **Edit**.
-3. Change the required values in the **Edit Variable** window.
-4. Click **Save**.
+2. Select **Edit**.  
+<img src="../images/agent_platform/edit-env-variable.png" alt="edit variable" title="edit variable" style="border: 1px solid gray; zoom:50%;">   
 
+3. Change the required values in the **Edit Variable** window.  
+4. Click **Save**.  
+<img src="../images/agent_platform/save-edit-variable.png" alt="save variable" title="save variable" style="border: 1px solid gray; zoom:50%;">  
 
 To cancel the import process during the conflicting environment variables resolution, click **Cancel** in the **Edit Environment Variable** window, and then click **Confirm**.
 
