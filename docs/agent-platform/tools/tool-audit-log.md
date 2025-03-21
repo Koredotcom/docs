@@ -23,7 +23,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 Steps to access and view tool audit logs:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your Agent Platform account.
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
 2. On the top navigation bar, click **Tools**.
 3. On the **All tools** page, click the desired tool.
 4. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 
