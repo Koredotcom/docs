@@ -46,7 +46,7 @@ Before integrating Agent AI with Salesforce Service Cloud Voice, the following p
 <img src="../images/salesforce-service-setup-10.png" alt="salesforce-service-setup" title="free text" style="border: 1px solid gray; zoom:80%;">
 
 14. Open the **AWS Connect** instance:  
-<img src="../images/image_11.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/aws-connect-instance-11.png" alt="aws-connect-instance" title="aws-connect-instance" style="border: 1px solid gray; zoom:80%;">
 
 15. Sign in to the **AWS Connect** instance, and click **Manage Phone numbers** > **Claim a number**.  
 <img src="../images/claim-a-phone-number-12.png" alt="claim-a-phone-number" title="claim-a-phone-number" style="border: 1px solid gray; zoom:80%;">
