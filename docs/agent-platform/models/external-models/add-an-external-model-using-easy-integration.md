@@ -153,3 +153,5 @@ The model is integrated and is listed in the External models list.
 
     * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
     * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across Agent Platform. If the toggle button is OFF, it means you cannot infer it anywhere in Agent Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
+
+    
