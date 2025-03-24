@@ -6,7 +6,7 @@ When you export a tool, Agent Platform automatically creates a *.zip* file named
 
 The exported package can be reimported to create a new tool or add it as a version to an existing one, ensuring seamless restoration.
 
-The [exported package](./export-an-agent.md#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
+The [exported package](https://docs.kore.ai/agent-platform/tools/export-a-tool/#exported-information){:target="_blank"} preserves the following tool configurations within JSON files:
 
 * Name and description
 * API, Condition, AI, and Script node configurations
@@ -24,7 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md#sign-in-to-gale){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. [Sign in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/){:target="_blank"}.
 2. Click **Tools** on the top menu.
 3. Select the relevant tab to view the tool.
 4. Click the required tool’s name to proceed further.
