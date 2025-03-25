@@ -73,6 +73,10 @@ For more information on RACL implementation in Search AI, refer to [this](./racl
 
 By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
 
+!!!note
+    Note that any files larger than 15MB in size will be skipped during the ingestion process.  Ensure that the files are within the size limit for proper ingestion. To increase this limit, [reach out to our support team](https://kore.ai/support/). 
+
+
 To initiate a sync operation manually, go to the **Configurations** tab in the Connector details and click on **Sync Now**. This initiates the sync operation immediately and ingests new or updated content from the application. 
 
 ![Manual Sync](../images/connectors/manual-sync.PNG "Manual Sync")

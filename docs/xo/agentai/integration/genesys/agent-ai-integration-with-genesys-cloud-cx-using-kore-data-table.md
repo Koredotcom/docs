@@ -24,16 +24,16 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 <p>
 Create an Interaction Widget in Genesys for Agent AI
    </td>
-   <td><a href="https://platform.kore.ai">Agent AI URL</a>
+   <td><a href="https://platform.kore.ai" target="_blank">Agent AI URL</a>
    </td>
    <td>The domain of the Agent AI.
    </td>
    <td>
 <ul>
 
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai">https://agentassist.kore.ai</a></li>
+<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target="_blank">https://agentassist.kore.ai</a></li>
 
-<li>If it is UXO, URL is <a href="https://platform.kore.ai">https://platform.kore.ai</a></li>
+<li>If it is UXO, URL is <a href="https://platform.kore.ai" target="_blank">https://platform.kore.ai</a></li>
 
 <li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
 </ul>
@@ -48,7 +48,7 @@ Create an Interaction Widget in Genesys for Agent AI
 <p>
 <strong>Note: </strong>Only the default Client App is supported.
    </td>
-   <td><a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/">https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/</a>
+   <td><a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel" target="_blank">https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel</a>
    </td>
   </tr>
   <tr>
@@ -68,7 +68,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>Use this to pass sensitive information to Agent AI Bot.
    </td>
-   <td><a href="https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE">https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE</a>
+   <td><a href="https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE" target="_blank">https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#JSON_Web_Encryption_JWE</a>
    </td>
   </tr>
   <tr>
@@ -78,7 +78,7 @@ Create an Interaction Widget in Genesys for Agent AI
    </td>
    <td>The Interaction Widget is utilized for displaying the Agent AI iframe within the Genesys Agent Desktop.
    </td>
-   <td><a href="https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration/">https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration/</a>
+   <td><a href="https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration" target="_blank">https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration</a>
    </td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ Create an Interaction Widget in Genesys for Agent AI
 <p>
 <code>"token":&lt;jwt token created using App's ClientId and ClientSecret>,</code>
 <p>
-<code>"qDelimiter":<a href="#bookmark=id.mt0drm3mzp3a">&lt;Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name></a></code>
+<code>"qDelimiter":<a href="#qdl">Paste the special character used in the queue name to distinguish the QueueIdentifier from the remaining part of the queue name</a></code>
 <code>}</code>
 <p>
 <code>}</code>
@@ -179,7 +179,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
    <td>KvpConfig
    </td>
-   <td>The KVPs (Key value pairs) to be included in SecureCustomData. JSON object containing the necessary keys and xpath (paths to locate the value in Genesys Conversation API result JSON object). (<a href="https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId-">https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId-</a>)
+   <td>The KVPs (Key value pairs) to be included in SecureCustomData. JSON object containing the necessary keys and xpath (paths to locate the value in Genesys Conversation API result JSON object). <a href="https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId" target="_blank">https://developer.genesys.cloud/devapps/api-explorer#get-api-v2-conversations--conversationId</a>
 <p>
 <strong>Note: </strong>Optional Column. Required when you wish to send secure custom data to Agent AI.
    </td>
@@ -257,82 +257,30 @@ For on-prem, refer to corresponding host<strong> </strong>
 This document provides detailed, step-by-step instructions for setting up the integration of the Agent AI widget in the Genesys environment.
 
 ## Activities on Kore Platform
-
-* 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Capture Bot information in Kore Data Table"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Capture Bot information in Kore Data Table](#heading=h.h1smegulrh4)
-* 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Access Custom Data and Secure Custom Data in Agent AI Bot"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Access Custom Data and Secure Custom Data in Agent AI Bot](#heading=h.lsfmibcptkpr)
+* [Capture Bot information in Kore Data Table](#capture-bot-information-in-kore-data-table) 
+* [Access Custom Data and Secure Custom Data in Agent AI Bot](#access-custom-data-and-secure-custom-data-in-agent-ai-bot)
 
 ## Activities on Genesys Cloud
-
-* 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Generate Oauth ID to enable Kore Services to Connect with Genesys"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Generate Oauth ID to enable Kore Services to Connect with Genesys](#heading=h.to0uqucnuydy)
-* 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create an Interaction Widget in Genesys for Agent AI"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create an Interaction Widget in Genesys for Agent AI](#heading=h.2zpabtm8c0t1)
-* 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Provide Interaction Widget Access to Agents"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Provide Interaction Widget Access to Agents](#heading=h.vsaqj1ujurmx)
-* 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create a Queue in Genesys"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create a Queue in Genesys](#heading=h.dkns5y422c00)
+* [Generate Oauth ID to enable Kore Services to Connect with Genesys](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys)
+* [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai)
+* [Provide Interaction Widget Access to Agents](#provide-interaction-widget-access-to-agents)
+* [Create a Queue in Genesys](#create-a-queue-in-genesys)
 
 ## Chat Setup
-
-* 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create/Update Architect Inbound Message Flow in Genesys for the Agent Queue"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create/Update Architect Inbound Message Flow in Genesys for the Agent Queue](#heading=h.y8z2a4xfhhhf)
-* 
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create Messenger Configuration"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create Messenger Configuration](#heading=h.36fotk17w5na)
-* 
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create Messenger Deployment"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create Messenger Deployment](#heading=h.q80q3gk8ewnv)
-* 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Steps to start a Chat Request Simulation"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Steps to start a Chat Request Simulation](#heading=h.7mevgwi3xqbw)
+* [Create/Update Architect Inbound Message Flow in Genesys for the Agent Queue](#createupdate-architect-inbound-message-flow-in-genesys-for-the-agent-queue)
+* [Create Messenger Configuration](#create-messenger-configuration)
+* [Create Messenger Deployment](#create-messenger-deployment)
+* [Steps to start a Chat Request Simulation](#steps-to-start-a-chat-request-simulation)
 
 ## Voice Setup
-
-* 
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "(Optional) Install Audiohook for Voice Streaming"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[(Optional) Install Audiohook for Voice Streaming](#heading=h.ydzg7bo3vl5y)
-* 
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create/Update an Architect Inbound Call Flow in Genesy for the Agent Queue"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create/Update an Architect Inbound Call Flow in Genesy for the Agent Queue](#heading=h.rb6j5ggb5uw8)
-* 
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Steps to start a Voice Request Simulation"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Steps to start a Voice Request Simulation](#heading=h.s260riz2kiip)
-
+* [(Optional) Install Audiohook for Voice Streaming](#optional-install-audiohook-for-voice-streaming)
+* [Create/Update an Architect Inbound Call Flow in Genesy for the Agent Queue](#createupdate-architect-inbound-call-flow-in-genesys-for-the-agent-queue)
+* [Steps to start a Voice Request Simulation](#steps-to-start-a-voice-request-simulation)
 
 ## **Prerequisites**
 
 * Genesys Administrator having access to Genesys Cloud account with Admin rights.
-* Kore Administrator having access to [Kore.ai](https://platform.kore.ai) Agent AI instance.
+* Kore Administrator having access to [Kore.ai](https://platform.kore.ai){:target="_blank"} Agent AI instance.
 
 ## **Capture Bot Information in Kore Data Table**
 
@@ -343,13 +291,9 @@ If a single bot is used for several queues, create a record and insert the queue
 Kore.ai matches the third-party queue name with the "QueueIdentifier" credential name in its bot credentials to render the appropriate bot.
 
 * Bot credentials are fetched based on Genesys desktop queue names. If the Genesys queue name is of the “&lt;QUEUEIDENTIFIER>&lt;QDELIMITER>XXXXX” format, for example “ALPHAINC_CUSTOMERSERVICE_16092024,” then:
-* QueueIdentifier = **ALPHAINC** and qDelimiter = “**_**”.
+* QueueIdentifier = **ALPHAINC** and <span id="qdl">qDelimiter</span> = “**_**”.
 * Update the QueueIdentifier in the Kore datatable.
-* Update the qDelimiter in the “*
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create an Interaction Widget in Genesys for Agent AI"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create an Interaction Widget in Genesys for Agent AI](#heading=h.2zpabtm8c0t1)” section.*
+* Update the qDelimiter in the [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai) section.
 
 !!! note
 
@@ -357,7 +301,7 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 
 ### How to create a New Data Table
 
-1. Sign in to Kore.ai [XO Platform](https://platform.kore.ai).
+1. Sign in to Kore.ai [XO Platform](https://platform.kore.ai){:target="_blank"}.
 2. Click **Data** > **Data Tables**.
 3. Click **New Table**.  
 <img src="../kore-data-table/new-table-4.png" alt="new-table" title="new-table" style="border: 1px solid gray; zoom:80%;">
@@ -372,19 +316,19 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 
         **Mandatory Columns**:
 
-            1. [QueueIdentifier](#bookmark=id.xhcoqvo488y) (unique identifier for the table)
-            2. BotId
-            3. ClientId
-            4. ClientSecret
-            5. AgentAssistWidgetURL
-            6. AudiohookEnabled
-            7. JWEPublicKey
+        * QueueIdentifier (unique identifier for the table)
+        * BotId
+        * ClientId
+        * ClientSecret
+        * AgentAssistWidgetURL
+        * AudiohookEnabled
+        * JWEPublicKey
 
         **Optional Columns**:
 
-            1. KvpConfig
-            2. Algorithm (HS256)
-            3. RSPrivatePem (Ignore/Not Supported)
+        * KvpConfig
+        * Algorithm (HS256)
+        * RSPrivatePem (Ignore/Not Supported)
 
     4. **Indexes** for the table. 
         * **Index Name** for reference.
@@ -402,7 +346,7 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
         
             You can also create new apps by clicking **Data** > **Apps** > **New App** in the home page:  
 
-            <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
+        <img src="../kore-data-table/apps-new-app-8.png" alt="apps-new-app" title="apps-new-app" style="border: 1px solid gray; zoom:80%;">
 
     7. **Process Assignments** (not applicable)
 5. Click **Create** to create the new data table.  
@@ -412,14 +356,14 @@ Kore.ai matches the third-party queue name with the "QueueIdentifier" credential
 
 Set up necessary permissions and app assignments and insert bot-specific data into the Data Table.
 
-1. Sign in to Kore.ai [XO Platform](http://platform.kore.ai).
+1. Sign in to Kore.ai [XO Platform](http://platform.kore.ai){:target="_blank"}.
 2. Click **Data** > **Apps**.
 3. Select the **App** with “write” access to the Data Table where you want to add information.  
 <img src="../kore-data-table/app-write-access-10.png" alt="app-write-access" title="app-write-access" style="border: 1px solid gray; zoom:80%;">
 
 4. Copy **Client ID** and **Client Secret** of the App.
-5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
-6. Insert the following data into the Data Table by following this [doc](https://docsinternal-kore.github.io/docs/xo/apis/automation/data-insert/). Use the JWT Token created in the previous step.
+5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+6. Insert the following data into the Data Table by following this [doc](./../../../apis/automation/data-insert.md){:target="_blank"}. Use the JWT Token created in the previous step.
 
     **API Body Payload Structure:**
     ```
@@ -443,93 +387,90 @@ Set up necessary permissions and app assignments and insert bot-specific data in
     * For a single queue, the QueueIdentifier value contains one queue name (for example, “Kore”). For multiple queues, it includes all the queue names separated by commas (for example, “Kore, KoreSupport”).
     * JWEPublicKey and KvpConfig value should be a stringified JSON object.
 
-
-    **Single Queue Example**  
+**Single Queue Example**  
 <img src="../kore-data-table/single-queue-example-11.png" alt="single-queue-example" title="single-queue-example" style="border: 1px solid gray; zoom:80%;">
 
-    **Multiple Queues Example**  
+**Multiple Queues Example**  
 <img src="../kore-data-table/multiple-queues-example-12.png" alt="multiple-queues-example" title="multiple-queues-example" style="border: 1px solid gray; zoom:80%;">
 
 ## **Generate Oauth ID to enable Kore Services to Connect with Genesys**
 
 **Steps to get Genesys OAuth ID**:  
+
 1. Sign in to **Genesys Cloud**. 
 2. Go to **Admin** > **Integrations** > **OAuth**.  
-<img src="../kore-data-table/single-queue-example-13.png" alt="single-queue-example" title="single-queue-example" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/single-queue-example-13.png" alt="single-queue-example" title="single-queue-example" style="border: 1px solid gray; zoom:80%;">  
 3. Click **Add Client**. 
 4. Enter the **app name**, **description**, and **token duration** in the **App Name**, **Description**, and **Token Duration** fields. 
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** section.  
-<img src="../kore-data-table/token-implicit-grant-14.png" alt="token-implicit-grant" title="token-implicit-grant" style="border: 1px solid gray; zoom:80%;">
-
-6. Add {[Agent AI URL](https://platform.kore.ai)}/koreaiaa-genesys/ in the **Authorized redirect URIs*** field. *
-7. Add the following list of scopes in the **Scope** section:
-* conversations
-* conversations:readonly
-* integrations
-* integrations:readonly
-* messaging
-* messaging-platform
-* messaging-platform:readonly
-* messaging:readonly
-* notifications
-* user-basic-info
-* web-chat
-* web-chat:readonly
+    <img src="../kore-data-table/token-implicit-grant-14.png" alt="token-implicit-grant" title="token-implicit-grant" style="border: 1px solid gray; zoom:80%;"> 
+6. Add {[Agent AI URL](https://platform.kore.ai)}/koreaiaa-genesys/ in the **Authorized redirect URIs** field. 
+7. Add the following list of scopes in the **Scope** section: 
+    * conversations
+    * conversations:readonly
+    * integrations
+    * integrations:readonly
+    * messaging
+    * messaging-platform
+    * messaging-platform:readonly
+    * messaging:readonly
+    * notifications
+    * user-basic-info
+    * web-chat
+    * web-chat:readonly
 
 <img src="../kore-data-table/authorized-redirect-uris-15.png" alt="authorized-redirect-uris" title="authorized-redirect-uris" style="border: 1px solid gray; zoom:80%;">
 
 After saving the configuration, you get the **Client Id** of the created OAuth client. Copy the ID and have it available for 
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Step 3"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Step 3](#heading=h.2zpabtm8c0t1).
-
+[Step 3](#create-an-interaction-widget-in-genesys-for-agent-ai).
 
 ## **Create an Interaction Widget in Genesys for Agent AI**
 
 Create a new Interaction Widget. This widget is hosted in the Genesys agent desktop and provides the Agent AI solution features to agents.
 
-**Steps to create an Interaction Widget**:
-1. Sign in to **Genesys Cloud**. 
-2. Click **Admin** > **Integrations**. 
-3. If you have not created an Interaction Widget for Agent AI, install a new **Interaction Widget** by clicking the **Integrations** tab on the right side of the page.  
-<img src="../kore-data-table/genesys-cloud-integrations-16.png" alt="genesys-cloud-integrations" title="genesys-cloud-integrations" style="border: 1px solid gray; zoom:80%;">
+**Steps to create an Interaction Widget**: 
 
-<img src="../kore-data-table/interaction-widget-17.png" alt="interaction-widget" title="interaction-widget" style="border: 1px solid gray; zoom:80%;">
+1. Sign in to **Genesys Cloud**. 
+
+2. Click **Admin** > **Integrations**. 
+
+3. If you have not created an Interaction Widget for Agent AI, install a new **Interaction Widget** by clicking the **Integrations** tab on the right side of the page.  
+    <img src="../kore-data-table/genesys-cloud-integrations-16.png" alt="genesys-cloud-integrations" title="genesys-cloud-integrations" style="border: 1px solid gray; zoom:80%;">
+
+    <img src="../kore-data-table/interaction-widget-17.png" alt="interaction-widget" title="interaction-widget" style="border: 1px solid gray; zoom:80%;">
 
 4. Name the **Interaction Widget** with a meaningful name, such as KoreaiAA Interaction Widget.
 5. Open the **Interaction Widget** by clicking the name.
 6. Go to the **Configuration** tab of the Interaction Widget.  
 <img src="../kore-data-table/interaction-widget-configuration-18.png" alt="interaction-widget-configuration" title="interaction-widget-configuration" style="border: 1px solid gray; zoom:80%;">
 
-7. In the **Application URL** field, enter the following structure: \
+7. In the **Application URL** field, enter the following structure:  
 <code>{[Agent AI URL](https://platform.kore.ai)}[/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://agentassist.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=)&lt;genesys-oauth-Id>&multibot=true&x_metadata=&lt;?x=%7B%22datatable%22%xxxxx>&x_passthru_metadata=&lt;Token></code>.
 
 !!! note
 
     x_passthru_metadata is an optional query parameter. This is required when you wish to pass custom data to Agent AI. 
 
-    The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON object. \
+The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON object. 
 
+1. For the **oauthId** value, use the **OAuth ID** from [Step 2](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys). 
 
-    1. For the **oauthId** value, use the **OAuth ID** from 
+2. Build **x_metadata**: 
 
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Step 2"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    1. Sign in to [Kore XO Platform](https://platform.kore.ai){:target="_blank"}. 
 
-[Step 2](#heading=h.to0uqucnuydy).
-    2. Build **x_metadata**:
-        1. Sign in to [Kore XO Platform](https://platform.kore.ai).
-        2. Click **Data** > **Data Tables,** and copy the **Data Table** name:  
-        <img src="../kore-data-table/copy-data-table-name-19.png" alt="copy-data-table-name" title="copy-data-table-name" style="border: 1px solid gray; zoom:80%;">
+    2. Click **Data** > **Data Tables,** and copy the **Data Table** name:  
+        <img src="../kore-data-table/copy-data-table-name-19.png" alt="copy-data-table-name" title="copy-data-table-name" style="border: 1px solid gray; zoom:80%;"> 
 
-        3. Click **Apps**, and click one of the app names that has “read” access:  
+    3. Click **Apps**, and click one of the app names that has “read” access:  
         <img src="../kore-data-table/click-apps-read-access-20.png" alt="click-apps-read-access" title="click-apps-read-access" style="border: 1px solid gray; zoom:80%;">
 
-        4. Copy the **Client ID** and **Client Secret** values.  
+    4. Copy the **Client ID** and **Client Secret** values.  
         <img src="../kore-data-table/client-id-client-secret-values-21.png" alt="client-id-client-secret-values" title="client-id-client-secret-values" style="border: 1px solid gray; zoom:80%;">
 
-        5. Create a **JWT Token** using the **Client ID** and **Client Secret** by following this [doc](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token).
-        6. Generate a **JSON object** with the specified structure, and then convert it into a URL-encoded string:
+    5. Create a **JWT Token** using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token). 
+
+    6. Generate a **JSON object** with the specified structure, and then convert it into a URL-encoded string:
 
         ```
         {
@@ -541,17 +482,17 @@ Create a new Interaction Widget. This widget is hosted in the Genesys agent desk
         }
         Website for url encoding - urlencoder
         ```
-
             Reference:  
-            <img src="./kore-data-table/java-script-demo-22.png" alt="java-script-demo" title="java-script-demo" style="border: 1px solid gray; zoom:80%;">
+            <img src="../kore-data-table/java-script-demo-22.png" alt="java-script-demo" title="java-script-demo" style="border: 1px solid gray; zoom:80%;">
 
-        7. Copy the URL-encoded string and paste it against the **x_metadata** value.
-8. Allow all permissions in **iFrame Sandbox Options** and **iFrame Feature/Permission Policy**: \
- \
-**iFrame Sandbox Options**: allow-forms,allow-modals,allow-popups,allow-presentation,allow-same-origin,allow-scripts,allow-downloads. \
- \
-**iFrame Feature/Permission Policy**: camera,microphone,geolocation,clipboard-write,display-capture,fullscreen. \
- \
+    7. Copy the URL-encoded string and paste it against the **x_metadata** value. 
+
+8. Allow all permissions in **iFrame Sandbox Options** and **iFrame Feature/Permission Policy**: 
+ 
+**iFrame Sandbox Options**: allow-forms,allow-modals,allow-popups,allow-presentation,allow-same-origin,allow-scripts,allow-downloads. 
+
+**iFrame Feature/Permission Policy**: camera,microphone,geolocation,clipboard-write,display-capture,fullscreen. 
+
 **Communication Type Filtering**: chat and call.
 
 ## Provide Interaction Widget access to agents
@@ -565,8 +506,9 @@ An Interaction Widget uses Group Membership to determine who can view it on the 
 1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
 2. Name the Group as **KoreAA-Agents** or similar to distinguish it.
 3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
-4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](https://docs.kore.ai/agentassist/uncategorized/agentassist-integration-in-genesys-manual-steps/#Step_2_Interaction_Widget). 
-5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option. \
+4. Go back to the **Integrations** section and open the **Interaction Widget** created in [Step 2](./../../integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md/#step-2-interaction-widget){:target="_blank"}. 
+5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
+
 You may also utilize Queue Filtering (optional).  
 <img src="../kore-data-table/group-filtering-23.png" alt="group-filtering" title="group-filtering" style="border: 1px solid gray; zoom:80%;">
 
@@ -590,7 +532,7 @@ You may also utilize Queue Filtering (optional).
 
 ## Create a Queue in Genesys
 
-1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/).
+1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin > Contact Center >** **Queues**, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
 3. Click **Create Queue**. An empty page to create a new queue appears on the right side of the page.  
 <img src="../kore-data-table/create-queue-25.png" alt="create-queue" title="create-queue" style="border: 1px solid gray; zoom:80%;">
@@ -608,7 +550,7 @@ You may also utilize Queue Filtering (optional).
 
 To stream audio to third-party services, follow the below steps:
 
-1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/).
+1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin > Contact Center >** **Queues**, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
 3. Click the intended queue name.
 4. Click the **Voice** tab.
@@ -621,11 +563,11 @@ To stream audio to third-party services, follow the below steps:
 
 ### Create/Update Architect Inbound Message Flow in Genesys for the Agent Queue
 
-This step is essential for managing incoming messages to the Genesys platform. When a chat is initiated from the [web chat messenger](https://developer.genesys.cloud/devapps/web-chat-messenger), it first gets directed to this inbound message flow.
+This step is essential for managing incoming messages to the Genesys platform. When a chat is initiated from the [web chat messenger](https://developer.genesys.cloud/devapps/web-chat-messenger){:target="_blank"}, it first gets directed to this inbound message flow.
 
 #### Steps to create a chat architect flow
 
-1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/directory/#/login-oauth).
+1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/directory/#/login-oauth){:target="_blank"}.
 2. Go to **Admin** > **Architect** > **Architect**.
 3. Click the **three dots** next to **Flows: Inbound Call**, and select **Inbound Message**.  
 <img src="../kore-data-table/inbound-message-28.png" alt="inbound-message" title="inbound-message" style="border: 1px solid gray; zoom:80%;">
@@ -642,7 +584,7 @@ This step is essential for managing incoming messages to the Genesys platform. W
 
 Before using web messaging, you must configure it in Genesys Cloud. To configure Web or Mobile Messaging in your organization, follow these steps:
 
-1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/).
+1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Configurations**.
 3. Click **New Configuration**.  
 <img src="../kore-data-table/messanger-new-configuration-31.png" alt="messanger-new-configuration" title="messanger-new-configuration" style="border: 1px solid gray; zoom:80%;">
@@ -655,8 +597,9 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 
     !!! note
 
-    The same language should be configured in the **Kore Agent AI** bot.  
-<img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;">
+        The same language should be configured in the **Kore Agent AI** bot.  
+
+    <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;">
 
 * Under **Select Default Language**, click the **Select language** list and choose the default language.  
 <img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
@@ -673,7 +616,7 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 
 To deploy the Messenger snippet to your website, follow these steps:
 
-1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/).
+1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Deployments**.
 3. Click **New Deployment**.  
 <img src="../kore-data-table/new-messenger-deployment-36.png" alt="new-messenger-deployment" title="new-messenger-deployment" style="border: 1px solid gray; zoom:80%;">
@@ -697,13 +640,13 @@ To deploy the Messenger snippet to your website, follow these steps:
     
         Once the above mentioned website page loads, the messenger window appears.  
 
-        <img src="../kore-data-table/messenger-window-38.png" alt="messenger-window" title="messenger-window" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/messenger-window-38.png" alt="messenger-window" title="messenger-window" style="border: 1px solid gray; zoom:80%;">
 
 ## **(Optional) Install Audiohook for Voice Streaming**
 
 The final step is to install Audiohook for voice streaming, if using Kore-managed Transcriptions.
 
-1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/)**.
+1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}**.
 2. Go to **Admin**> **Integrations** > **Integrations**.
 3. Enter “audiohook” in the search bar.  
 <img src="../kore-data-table/audiohook-39.png" alt="audiohook" title="audiohook" style="border: 1px solid gray; zoom:80%;">
@@ -727,11 +670,10 @@ wss://{**Kore Voice Gateway(KVG)**}[/audiosocket/genesys/?sipuri=xxx&token=xxx&b
 6. Get **sipuri=sip:&lt;sip-string>** from **Agent AI** > **Flows & Channels** > **Voice** **Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Product Selection** > **Agent AI**.  
 <img src="../kore-data-table/configure-sip-trunk-42.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;">
 
-7. Use the following reference from **Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret ** (for token generation).  
+7. Use the following reference from **Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
 <img src="../kore-data-table/web-mobile-client-43.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">
 
-
-Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token) to generate the token (token= &lt;token>.)
+Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)
 
 8. Add credentials in the **Credentials** tab.
 9. Use the **ClientID** and **ClientSecret** of the bot you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
@@ -739,13 +681,13 @@ Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://d
 
 10. Click **Save**.
 
-## **Create/Update Architect Inbound Call Flow in Genesys for the Agent Queue**
+## Create/Update Architect Inbound Call Flow in Genesys for the Agent Queue
 
 When a call comes to a Genesys number, it passes through an architect flow. If you do not have an ACD architect flow for the queue, create one by following this section.
 
 #### Steps to create a call architect flow
 
-1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/).
+1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Architect** > **Architect**.  
 <img src="../kore-data-table/genesys-architect-45.png" alt="genesys-architect" title="genesys-architect" style="border: 1px solid gray; zoom:80%;">
 
@@ -767,17 +709,17 @@ Custom Data and Secure Custom Data can be accessed in Welcome Events in Agent AI
 
 Custom Data can be accessed as {{context.session.UserContext.customData.internalMetaData.&lt;key>}}.
 
-Follow [this doc](https://docsinternal-kore.github.io/docs/xo/agentai/agent-experience/access-custom-data-in-agent-ai/) for the detailed steps on how to access Custom Data.
+Follow [this doc](./../../agent-experience/access-custom-data-in-agent-ai.md) for the detailed steps on how to access Custom Data.
 
 Secure Custom Data can be accessed as {{context.session.UserContext.secureCustomData.&lt;key>}}.
 
-Follow the same steps of [this doc](https://docsinternal-kore.github.io/docs/xo/agentai/agent-experience/access-custom-data-in-agent-ai/) for the detailed information on how to access Secure Custom Data, with the exception of the path being {{context.session.UserContext.secureCustomData.&lt;key>}}.
+Follow the same steps of [this doc](./../../agent-experience/access-custom-data-in-agent-ai.md) for the detailed information on how to access Secure Custom Data, with the exception of the path being {{context.session.UserContext.secureCustomData.&lt;key>}}.
 
 !!! note
 
     If a URL-encoded JSON is provided in the “x_passthru_metadata”, you must use the JavaScript option in the Message node. Then, parse the value of *context.session.UserContext.customData.internalMetaData* before accessing its content.
 
-**Example:**
+**Example**:
 
 var cd = JSON.parse(context.sessiinternalMetaDataon.UserContext.customData.internalMetaData);
 
@@ -787,12 +729,15 @@ print(cd.&lt;key>);
 
 ### Steps to start a Chat Request Simulation
 
-1. Sign in to [Genesys Developer Applications](https://developer.genesys.cloud/devapps/web-chat-messenger).  
-!!! note
-    To start chat simulation, you must have access to the Genesys Developer portal (an account with Genesys).  
-        <img src="../kore-data-table/chat-simulation-48.png" alt="chat-simulation" title="chat-simulation" style="border: 1px solid gray; zoom:80%;"> 
+1. Sign in to [Genesys Developer Applications](https://developer.genesys.cloud/devapps/web-chat-messenger){:target="_blank"}.  
 
-2. Click **Web Messenger,** select the **Deployments,** and then click **Start Chat** to initiate the chat request.  
+    !!! note
+
+        To start chat simulation, you must have access to the Genesys Developer portal (an account with Genesys).  
+
+    <img src="../kore-data-table/chat-simulation-48.png" alt="chat-simulation" title="chat-simulation" style="border: 1px solid gray; zoom:80%;"> 
+
+2. Click **Web Messenger**, select the **Deployments**, and then click **Start Chat** to initiate the chat request.  
 <img src="../kore-data-table/chat-simulation-web-messenger-49.png" alt="chat-simulation-web-messenger" title="chat-simulation-web-messenger" style="border: 1px solid gray; zoom:80%;">
 
 3. Enter a message on the **Message Us** window, and then click the **Send** icon.  
@@ -805,14 +750,10 @@ print(cd.&lt;key>);
 
 ### Steps to start a Voice Request Simulation
 
-1. In **Call Routing**, assign the **Architect flow** created in **
-
-<p id="gdcalert68" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Step-4"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert69">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Step-4](#heading=h.5g3j6tx7ohg0)** to a Genesys Phone Number.  
+1. In **Call Routing**, assign the **Architect flow** created in **[Step-4](#steps-to-create-a-call-architect-flow)** to a Genesys Phone Number.  
 <img src="../kore-data-table/call-routing-52.png" alt="call-routing" title="call-routing" style="border: 1px solid gray; zoom:80%;">  
 
-<img src="../kore-data-table/create-call-route-53.png" alt="create-call-route" title="create-call-route" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/create-call-route-53.png" alt="create-call-route" title="create-call-route" style="border: 1px solid gray; zoom:80%;">
 
 2. Initiate a call using this Genesys Phone Number.
 3. A new call notification appears on the Genesys Agent Desktop. Accept the conversation by clicking the **Answer** button on the left panel.
@@ -825,20 +766,16 @@ To streamline call handling and improve efficiency, the Agent AI widget can now 
 
 To enable this:
 
-1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/)**.
-2. Click **Admin.**
+1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}**.
+2. Click **Admin**.
 3. Click **Panel Manager** under the **Contact Center** section. This opens the **Default Contextual Panel**.
-4. Select the interaction widget name in both **Voice **and **Web Messaging **field dropdown lists (refer to step-4 of 
-
-<p id="gdcalert72" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create an Interaction Widget in Genesys for Agent AI"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert73">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create an Interaction Widget in Genesys for Agent AI](#heading=h.2zpabtm8c0t1)).
+4. Select the interaction widget name in both **Voice** and **Web Messaging** field dropdown lists (refer to step-4 of [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai)).
 5. Click **Save**.  
-<img src="./kore-data-table/default-contextual-panel-55.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
+<img src="../kore-data-table/default-contextual-panel-55.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
 
 Also, for backward compatibility of the feature, add an additional query param(**defaultwidget=true**) to the Kore Interaction Widget URL.
 
-Example: [https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=)&lt;genesys-oauth-Id>**&defaultwidget=true**
+Example: [https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=](https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&lang={{gcLangTag}}&environment={{gcHostOrigin}}&genesysid=){:target="_blank"}&lt;genesys-oauth-Id>**&defaultwidget=true**
 
 !!! note
 
