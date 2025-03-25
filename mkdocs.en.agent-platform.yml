@@ -244,7 +244,7 @@ nav:
         - Model Traces: settings/monitoring/analytics/model-traces.md
     - Security and Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
-    - Billing:-
+    - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
       
