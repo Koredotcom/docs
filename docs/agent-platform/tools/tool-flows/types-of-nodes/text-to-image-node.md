@@ -17,7 +17,7 @@ The key node inputs include:
 3. The **Aspect Ratio**, including the width and height of the image. The **maximum limit is  2048 x 2048**, depending on the GPU specifications.
 4. The number of **Steps** to improve the image generation. Each step includes enhancements or improvements that align the output as closely as possible with the positive prompt instructions. This ensures that the generated image meets expectations by refining details, adjusting parameters, and optimizing quality while maintaining relevance to the intended prompt.
 
-<div class="admonition warning">
+<div class="admonition note">
 <p class="admonition-title">Important</p>
 <p>Image generation depends on the number of steps in the process. While more steps add details, they also increase generation time and may cause the model to hallucinate, leading to deviations from the prompt instructions. To balance quality and efficiency, a maximum of 25-30 steps is recommended, minimizing unnecessary details (noise) and hallucinations in the final output.</p>
 </div>
@@ -86,7 +86,7 @@ To add and configure the node, follow the steps below:
     * **Positive Prompt**: Enter the keywords for what needs to be generated in the image or what it should include. The model will generate along the lines of the details mentioned here and not consider the negative hints.
     * **Negative Prompt**: Enter the keywords for the elements the image should exclude.
 
-    <div class="admonition warning" bgcolor="blue">
+    <div class="admonition note">
     <p class="admonition-title">Important</p>
     <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
 
@@ -120,7 +120,7 @@ For the configured inputs, the following image is generated.
 
 After adding and configuring the node as mentioned [here](./text-to-image-node.md/#steps-to-add-and-configure-the-node){:target="_blank"}, follow the steps below to test the flow.
 
-<div class="admonition warning">
+<div class="admonition note">
 <p class="admonition-title">Dynamic Prompt Inputs</p>
 <p>Before you <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">run the flow</a>, provide clear instructions for the model to follow using the <b>input variable(s)</b> you add in the following step with the help of <b>context variables</b>. Context variables add dynamic values to the prompt instructions that the model will follow. The recommended syntax is: <code>{{context.variable_name}}</code>. For example, you can store the generated image URL in a variable named “<i>Imaggenerated</i>” and pass it on in the prompt when you mention "<i>Generate an image based on the below description</i>: <code>{{context.steps.Start.Imaggenerated}}</code>", as shown in the image below.</p></div>
 
@@ -129,6 +129,7 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 ### Step 1: (Optional) Add Input Variable(s)
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/){:target="_blank"}.
+
 <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable window</b> to define a text input variable.</li>
@@ -142,6 +143,7 @@ Add all the required input variables to run the flow in the **Input** section of
 
 1. Click the **Output** tab for the **Start** node.
 2. Click **Add Output Variable**.
+
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.</li>
