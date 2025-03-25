@@ -27,7 +27,7 @@ Once the evaluation is created successfully, the system will redirect the user t
     * **Delete**: Use this option to delete the evaluation.
 
 
-**Key Points:**
+## Key Highlights
 
 * Evaluations acts as a container or folder, organizing datasets within a project.
 * Users can create multiple evaluations within a project to efficiently organize and manage different datasets.
