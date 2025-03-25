@@ -2,7 +2,7 @@
 
 In Evaluation Studio, projects act as the core containers for organizing evaluations. Each project can store multiple evaluations, and each evaluation contains a distinct dataset.
 
-**Key Features:**
+### Key Features
 
 * **Project Management**: Users can create, rename, and delete projects as needed. When a project is deleted, all associated evaluations and datasets are also removed, ensuring a clean slate.
 * **Collaboration**: Projects can be easily shared with collaborators, enabling seamless teamwork and collaborative model assessments. User invitations are limited to the project level; users cannot be invited at the evaluation level.
@@ -43,7 +43,7 @@ Once the project is created successfully, the system will redirect you to the ne
     <img src="../images/project_threedots.png" alt="Create project" title="Create project" style="border: 1px solid gray; zoom:80%;"> 
 
 
-**Key Points:**
+## Key Highlights
 
 * Users can create, delete, and share projects.
 * Users can add evaluations under a project. When a project is deleted, all associated evaluations and datasets will be deleted as well.
