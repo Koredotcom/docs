@@ -23,29 +23,34 @@ The Platform's capabilities are powered by its key components that work together
 
 <img src="../images/agent-platform-overview.png" alt="Agent Platform" title="Agent Platform">
 
-* **Agentic Apps**: Build intelligent AI systems that work together autonomously. Create AI assistants that reason, plan actions, and collaborate as a team to handle complex business processes with human-like intelligence.
+* **Multi-Agent Orchestration** provides a low-code platform with declarative agent programming for reasoning, planning, action, and reflection, along with end-to-end streaming on voice and chat interactions.
 
-* **Actions / Tools**: Connect your AI to real-world systems and data. With low-code and custom options, create tools that let AI tools interact with business systems.
+* **Actions / Tools** offer workflow and custom-code tools with support for JavaScript and Python functions, plus pre-built integrations with popular applications.
 
-* **Models**: Choose and optimize the right AI models for your needs. Fine-tune models for specific tasks, deploy open-source options, or connect to external providers while maintaining control.
+* **Search / RAG** (Retrieval-Augmented Generation) includes 100+ pre-built data agents with built-in role based access, AI powered extraction and enrichment, as well as hybrid, agentic, and context aware retrieval.
 
-* **Prompts**: The Prompt Studio helps create, test, and manage instructions that control AI model responses. Collaborate, experiment, and deploy optimized prompts.
+* **Interaction Context** enables end-to-end state management of the interaction, conversation context enrichment using short and long term memory, and synchronous and asynchronous execution with human-in-the-loop.
 
-* **AI Safety**: Protect sensitive information and control AI outputs. Anonymize private data, establish content guardrails, and control access based on user roles for responsible, compliant AI use.
+* **Models** allows fine-tuning and optimizing the right AI models for your needs as well as deploying open source models and integration with external models.
 
-* **Evaluation**: Measure and improve AI performance systematically through custom scoring criteria using AI models as evaluators.
+* **Prompts** includes a prompts library, collaboration and experimentation features, and version & deploy capabilities.
 
-* **Observability**: Gain complete visibility into AI system operations with end-to-end tracing, explainable AI, and thought streaming.
+* **Evaluation** helps measure and improve AI performance systematically through custom scoring criteria using AI and human evaluations and continuous monitoring.
 
-* **Analytics**: Track usage patterns and performance metrics through intuitive dashboards to optimize system performance and demonstrate ROI.
+* **AI Safety** ensures anonymization of PII and sensitive info, input and output guardrails, and role based access controls to data.
 
-* **Agent Protocol**: Standardize communication across AI systems with an API supporting multimodal content and real-time streaming. Allows integrating with tools built on external platforms with full support for request/response exchange, streaming of responses and logs. 
+* **Analytics** captures usage logs of models and agents, session logs and conversation history, and metrics and dashboards.
 
-* **No-Code Development**: Accelerate AI application development through structured no-code tooling. Business teams can actively participate alongside technical staff, accelerating time to market and fostering collaboration.
+* **Observability** enables end-to-end tracing of the orchestration, explainability of reasoning and actions, and support for streaming of thoughts.
 
-* **Extension SDKs**: The platform offers SDKs all the key components like for Agentic Apps, Tools, RAG, and Traces, enabling teams to quickly build custom components across the entire AI workflow that are compatible with the platform's security and governance frameworks.
+* **Agent Protocol** provides an end-to-end API with support for multimodal content, streaming, and external agent integration.
 
-* **Enterprise-Grade CI/CD**: Deploy and manage AI applications with industrial-strength processes supporting multiple environments and granular versioning.
+* **SDKs** are available for Agents, Tools, RAG, and Traces with standardized interfaces and a managed infrastructure.
 
-* **Collaboration and Governance**: Work together securely with multi-user collaboration, customizable roles and permissions, and detailed audit logs.
+* **Enterprise Grade CI/CD** supports granular versioning with the ability to deploy multiple logical environments (for example, QA, UAT, Prod).
+
+* **Collaboration and Audit** enables multi-user collaboration with customizable roles and comprehensive audit logs.
+
+* **Marketplace** provides prebuilt templates for agents and tools for multiple domains and use cases.
+
 <hr>
