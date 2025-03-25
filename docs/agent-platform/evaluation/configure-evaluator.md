@@ -221,7 +221,8 @@ Steps to add an evaluator:
     5. **Model Configuration**: Select the appropriate model hyperparameters such as Temperature, Output token limit, Top P etc.
     6. **Prompt**: Enter the prompt that will guide the model in evaluating the input/output. You can also click ‘Template’ to use built-in evaluator templates, which you can then customize as needed.  
 
-        **Note**: Do not specify the format of the score in the prompt. The format is automatically determined by the selected output type (Score or Boolean). If there is a mismatch between the output type and the score format, an error may occur.  
+        !!! note
+            Do not specify the format of the score in the prompt. The format is automatically determined by the selected output type (Score or Boolean). If there is a mismatch between the output type and the score format, an error may occur.  
 
     7. **Save as a Global Evaluator**: Check this box to save the evaluator as a global evaluator. This will add the custom evaluator to the global evaluator page. The global evaluator will also appear on the project-level evaluator page for other users to access and use, without affecting the original evaluator.
     8. **Map variables**: Map the variables in the prompt to the corresponding columns in your imported dataset. This ensures the evaluator uses the right data for its analysis. [Learn more](https://agentplatform-kore.github.io/docs/agent-platform/evaluation/configure-evaluator/#mapping-variables-link-evaluator-prompts-to-your-dataset).
@@ -254,10 +255,10 @@ When setting up an AI evaluator, variable mapping is a crucial step. This is whe
 By correctly mapping the variables, you ensure the evaluator receives the right data and produces accurate results.
 
 
-**Key Points:**
+## Key Highlights
 
 * Evaluators are used to assess model performance by comparing its outputs against predefined criteria.
 
-* System evaluators are pre-built and cannot be modified, offering ready-to-use options for evaluating common aspects of model performance, such as quality and safety metrics. Custom Evaluators  offer flexibility for users to create custom evaluators tailored to their specific needs.
+* System evaluators are pre-built and cannot be modified, offering ready-to-use options for evaluating common aspects of model performance, such as quality and safety metrics. Custom evaluators  offer flexibility for users to create custom evaluators tailored to their specific needs.
 
 * Variable mapping is crucial when adding evaluators, as users must link the variables in the evaluator's prompt to the appropriate dataset columns to ensure accurate evaluation results.

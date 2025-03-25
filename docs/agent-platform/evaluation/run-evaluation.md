@@ -44,11 +44,11 @@ During the evaluation, simply click the progress ring icon in the top corner to 
 
 **Why is this useful?**
 
-1. **Real-time monitoring**: The progress feature updates in real time, showing the **elapsed time** and the **number of rows** being processed during the evaluation. This allows users to easily track progress and understand how far along the process is. 
+1. **Real-time monitoring**: The progress feature updates in real time, showing the **elapsed time** and the **number of rows** being processed during the evaluation. This allows users to easily track progress and understand how far along the process is.
 
-2. **Visibility into evaluation status**: Users can instantly see the status of the evaluation, whether it is **in progress**, **stopped**, or **completed**. This helps in determining if further action is needed, or if the evaluation completed successfully. 
+2. **Visibility into evaluation status**: Users can instantly see the status of the evaluation, whether it is **stopped**, **in progress**, or **completed**. This helps in determining if further action is needed, or if the evaluation completed successfully.
 
-3. **Efficient management**: The progress bar provides clear feedback, ensuring that users know exactly when the evaluation has started, how much has been completed, and when it is finished.
+3. **Efficient management**: The progress ring lets users know exactly when the evaluation has started, how much has been completed, and when it is finished.
 
 4. **Handling interruptions**: If the evaluation is stopped for any reason, users can view how much work was completed before the stop and can easily restart the evaluation. The system tracks both elapsed time and row count, and when restarted, resets to reflect the new process, ensuring a seamless continuation of the task.
 
