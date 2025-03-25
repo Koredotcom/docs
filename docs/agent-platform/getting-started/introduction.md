@@ -25,19 +25,19 @@ The Platform's capabilities are powered by its key components that work together
 
 * **Multi-Agent Orchestration** provides a low-code platform with declarative agent programming for reasoning, planning, action, and reflection, along with end-to-end streaming on voice and chat interactions.
 
-* **Actions / Tools** offer workflow and custom-code tools with support for JavaScript and Python functions, plus pre-built integrations with popular applications.
+* **Actions / Tools** offer workflow and custom-code tools with support for JavaScript and Python functions, as well as pre-built integrations with popular applications.
 
-* **Search / RAG** (Retrieval-Augmented Generation) includes 100+ pre-built data agents with built-in role based access, AI powered extraction and enrichment, as well as hybrid, agentic, and context aware retrieval.
+* **Search / RAG** (Retrieval-Augmented Generation) includes 100+ pre-built data agents with built-in role-based access, AI-powered extraction and enrichment, and hybrid, agentic, and context-aware retrieval.
 
-* **Interaction Context** enables end-to-end state management of the interaction, conversation context enrichment using short and long term memory, and synchronous and asynchronous execution with human-in-the-loop.
+* **Interaction Context** enables end-to-end state management of the interaction, conversation context enrichment using short—and long-term memory, and synchronous and asynchronous execution with human-in-the-loop.
 
-* **Models** allows fine-tuning and optimizing the right AI models for your needs as well as deploying open source models and integration with external models.
+* **Models** allow fine-tuning and optimizing models, deploying open-source models, and integrating with external models.
 
-* **Prompts** includes a prompts library, collaboration and experimentation features, and version & deploy capabilities.
+* **Prompts** includes a prompts library, collaboration and experimentation features, and versioning and deployment capabilities.
 
 * **Evaluation** helps measure and improve AI performance systematically through custom scoring criteria using AI and human evaluations and continuous monitoring.
 
-* **AI Safety** ensures anonymization of PII and sensitive info, input and output guardrails, and role based access controls to data.
+* **AI Safety** ensures anonymization of PII and sensitive information, input and output guardrails, and role-based access controls to data.
 
 * **Analytics** captures usage logs of models and agents, session logs and conversation history, and metrics and dashboards.
 
@@ -49,7 +49,7 @@ The Platform's capabilities are powered by its key components that work together
 
 * **Enterprise Grade CI/CD** supports granular versioning with the ability to deploy multiple logical environments (for example, QA, UAT, Prod).
 
-* **Collaboration and Audit** enables multi-user collaboration with customizable roles and comprehensive audit logs.
+* **Collaboration and Audit** enable multi-user collaboration with customizable roles and comprehensive audit logs.
 
 * **Marketplace** provides prebuilt templates for agents and tools for multiple domains and use cases.
 
