@@ -27,7 +27,7 @@ The key node inputs include:
 
 ### Processing Models
 
-The **Agent Platform** uses the following variants of the **Stable Diffusion** model for image-to-text conversion:
+The **Agent Platform** uses the following variants of the **Stable Diffusion** model for text-to-image conversion:
 
 * stabilityai/stable-diffusion-xl-base-1.0
 * stabilityai/stable-diffusion-2-1
@@ -86,20 +86,20 @@ To add and configure the node, follow the steps below:
     * **Positive Prompt**: Enter the keywords for what needs to be generated in the image or what it should include. The model will generate along the lines of the details mentioned here and not consider the negative hints.
     * **Negative Prompt**: Enter the keywords for the elements the image should exclude.
 
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
+    <div class="admonition warning" bgcolor="blue">
+    <p class="admonition-title">Important</p>
+    <p>User prompts define specific questions or requests for the model to follow and generate results. You can use input variables you add in <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-1-optional-add-input-variables" target="_blank">this</a> step to add dynamic inputs to the prompt in the recommended syntax:<code>{{context.variable_name}}</code> before you run and test the flow. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Learn more</a>.</p></div>
 
-  * **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
-  * **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
-  * **Batch Count**: The number of images to be generated sequentially.
+    * **Aspect Ratio**: Define the dimensions of the image in pixels for width and height.
+    * **Steps**: Add the number of times the model will go back to the image and add more details/enhancements to get it as close to the prompt as possible. 25-30 steps are recommended for any image generation. Increasing the steps might add unwanted elements or model hallucinations and increase the time of generation.
+    * **Batch Count**: The number of images to be generated sequentially.
 
     <img src="../images/properties-panel-text-to-image.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition warning">
-<p class="admonition-title">Standard Error</p>
-<p>When the Model is not selected, the prompt details are not provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p>
-</div>
+  <div class="admonition warning" bgcolor="blue">
+  <p class="admonition-title">Standard Error</p>
+  <p>When the Model is not selected, the prompt details are not provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p>
+  </div>
 
 
 <ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</li>
@@ -128,15 +128,12 @@ After adding and configuring the node as mentioned [here](./text-to-image-node.m
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/){:target="_blank"}. 
-
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/){:target="_blank"}.
 <img src="../images/add-input-variable-text-to-image.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
-2. Select <b><i>Text</i></b> for the **Type** field in the **Enter input variable window** to define a text input variable.
-
-3. Click **Save**. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-text-node/#access-the-ai-nodes-output){:target="_blank"} about accessing the node’s output.
-
-<img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
+<ol start="2"><li>Select <b><i>Text</i></b> for the <b>Type</b> field in the <b>Enter input variable window</b> to define a text input variable.</li>
+<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/text-to-text-node/#access-the-ai-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.</li>
+<img src="../images/select-text-for-input.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node.
 
@@ -145,7 +142,6 @@ Add all the required input variables to run the flow in the **Input** section of
 
 1. Click the **Output** tab for the **Start** node.
 2. Click **Add Output Variable**.
-
 <img src="../images/click-add-output-variable.png" alt="click add output variable" title="click add output variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <b><i>String</i></b> for <b>Type</b> to generate the image URL.</li>
