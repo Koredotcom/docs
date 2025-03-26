@@ -65,6 +65,10 @@ Campaign managers can read, fetch, and display column and corresponding field va
 
 To retrieve user information from the context, specifically the user details from the uploaded CSV, we need to extract all the fields present in the CSV. This requires configuring the script node to capture the data from the context and store it in a variable. This allows us to use and modify the data throughout the entire workflow.
 
+!!! Note
+
+    The character limit for each field is 300 characters.
+
 Steps to query the CSV fields in the start flow-node:
 
 1. Use the following code to retrieve the data from the context.
