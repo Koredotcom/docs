@@ -2,6 +2,38 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
+## v1.8.0 March 26, 2025
+
+<u>Major Release</u>
+
+This update includes new features, feature enhancements, and bug fixes summarized below.
+
+**New Features**
+
+**Introducing Workspaces**: Workspaces is a new enterprise solution designed to streamline how organizations deploy and manage AI capabilities across their operations.
+
+Key Features:
+
+* Granular access controls and centralized governance enable secure management of workspace creation and deletion, ensuring clear boundaries between departments.
+* A tiered permission system offers precise control over access, ensuring that team members have the appropriate level of access for their roles and responsibilities.
+* Control agent visibility and target specific user groups or the entire organization. Tailor each workspace with different allowed agent types to maintain information boundaries and ensure compliance.
+* The default workspace within every account includes pre-built solutions optimized for HR, IT, Recruitment, and Analytics, enabling immediate productivity.
+
+**Introducing Agent Sharing**: Agent Sharing enables teams to collaborate and manage agents more effectively within their workspace.
+
+Key Features:
+
+* Fine-grained permission controls allow precise customization of access and collaboration.
+* Flexible collaboration options enable teams to work together seamlessly.
+* Transparent agent management ensures visibility and accountability.
+
+**Improvements and Bug Fixes**
+
+* User Management: Refined user permissions to ensure access is limited to authorized sections and improved template visibility and management for more precise user role-based access control.
+* Email Templates: Fixed formatting inconsistencies to enhance visual consistency and readability.
+* Bot Agent Handoff: Implemented UI/UX improvements for a more intuitive and seamless customer interaction process and eliminated friction points during agent transitions to create a smoother support experience.
+* Search AI Integration: Enhanced deep integration capabilities with the SearchAI App and fixed navigation issues from the Enterprise Knowledge Page.
+
 ## v1.7.1 March 6, 2025
 
 <u>Minor Release</u>
