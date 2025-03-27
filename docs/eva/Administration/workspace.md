@@ -33,7 +33,7 @@ Workspaces in AI for Work deliver the perfect balance of innovation and governan
 
 ## Workspace Creation
 
-Workspaces are created freely by any member. However, administrators exclusively manage agent publish settings and the list of allowed agents, controlling the publishing parameters and the application ecosystem within the workspace.
+Workspaces can only be created by an administrator, the workspace owner can build a workspace, but only administrators have exclusive authority over agent publish settings and the list of approved agents.
 
 Initiate workspace creation through either:
 
@@ -62,7 +62,7 @@ When creating a workspace, admin must provide:
 <img src="../images/workspace_4.png" alt="admin-console" title="workspaces2" style="border: 1px solid gray; zoom:80%;">
 
 * **Agent Publish Settings**: Publishing controls determine to whom the agents can be published within a workspace, allowing for precise audience targeting and information security. The system defaults to making agents available to all workspace users. For wider distribution, additional options exist:
-    * Everyone in the Account toggle allows agents to be published to all users in the organization. Only administrators can modify publishing settings for workspaces. When the toggle is disabled, any agents previously set to publish to everyone will automatically be unpublished to maintain security.
+    * Everyone in the Account toggle allows agents to be published to all users in the organization. Only administrators can modify publishing settings for workspaces.
     * User Group toggle allows to select specific user groups who should receive access to agents.
 
 !!! note

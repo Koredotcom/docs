@@ -135,7 +135,7 @@ nav:
       - Standard Apps: custom-agents/agentic-apps.md
       - Advanced Apps: custom-agents/advanced-agentic-apps.md
     - Agent Management:
-      - Manage: Agent-management/manage.md
+      - Agent Options: agent-management/agent-options.md
   - Pre-built Agents:
     - Overview: pre-built-agents/overview.md
   - Pre-built Solutions:

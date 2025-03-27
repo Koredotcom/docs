@@ -19,6 +19,8 @@ Key Features:
 * Control agent visibility and target specific user groups or the entire organization. Tailor each workspace with different allowed agent types to maintain information boundaries and ensure compliance.
 * The default workspace within every account includes pre-built solutions optimized for HR, IT, Recruitment, and Analytics, enabling immediate productivity.
 
+[Learn more :octicons-arrow-right-24:](./../Administration/workspace.md)
+
 **Introducing Agent Sharing**: Agent Sharing enables teams to collaborate and manage agents more effectively within their workspace.
 
 Key Features:
@@ -26,6 +28,8 @@ Key Features:
 * Fine-grained permission controls allow precise customization of access and collaboration.
 * Flexible collaboration options enable teams to work together seamlessly.
 * Transparent agent management ensures visibility and accountability.
+
+[Learn more :octicons-arrow-right-24:](./../custom-agents/manage.md)
 
 **Improvements and Bug Fixes**
 
