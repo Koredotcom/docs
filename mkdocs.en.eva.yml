@@ -134,6 +134,8 @@ nav:
     - Agentic App: 
       - Standard Apps: custom-agents/agentic-apps.md
       - Advanced Apps: custom-agents/advanced-agentic-apps.md
+    - Agent Management:
+      - Agent Options: custom-agents/agent-options.md
   - Pre-built Agents:
     - Overview: pre-built-agents/overview.md
   - Pre-built Solutions:
@@ -146,7 +148,9 @@ nav:
     - Dashboard View: analytics/dashboard-view.md
     - Data View: analytics/data-view.md
   - Administration:
-    - Overview: admin-overview.md
+    - Overview: Administration/admin-overview.md
+    - Workspace: Administration/workspace.md
+    - Account Hub: Administration/account-hub.md
     - Assist Configuration:
       - LLM Configuration: assistant-configuration/llm-configuration.md
       - Business Rules: assistant-configuration/business-rules.md
