@@ -2,7 +2,7 @@
 
 Steps to access Prompts:
 
-1. [Sign in](https://galeadmin-kore.github.io/docs/gale/getting-started/sign-up-sign-in/#sign-in-to-gale) to your Agent Platform account.
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
 2. On the top navigation bar, click **Prompts**.
 
     <img src="../images/new_prompt.png" alt="Prompts landing page" title="Prompts landing page" style="border: 1px solid gray; zoom:80%;">

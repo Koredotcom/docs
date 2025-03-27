@@ -38,6 +38,8 @@ Key Features:
 * Bot Agent Handoff: Implemented UI/UX improvements for a more intuitive and seamless customer interaction process and eliminated friction points during agent transitions to create a smoother support experience.
 * Search AI Integration: Enhanced deep integration capabilities with the SearchAI App and fixed navigation issues from the Enterprise Knowledge Page.
 
+<hr>
+
 ## v1.7.1 March 6, 2025
 
 <u>Minor Release</u>
@@ -76,6 +78,8 @@ Key Benefits:
 
 * Template Rendering Fix:  Fixed an issue where bot templates used to render duplicates when selected or clicked. The fix results in a cleaner and more predictable user interface.
   
+<hr>
+
 ## v1.7.0 February 14, 2025
 
 <u>Minor Release</u>
@@ -126,3 +130,5 @@ The latest release includes search connector support for the following services:
     * Zendesk
     * Confluence
     * Wordpress
+
+<hr>

@@ -1,11 +1,11 @@
-# Overview
+# About Evaluation Studio
 
-Evaluation Studio is a comprehensive tool in Agent Platform for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.
+Evaluation Studio is a comprehensive tool in Agent Platform for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators or create custom evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. Additionally, Evaluation Studio fosters collaboration and sharing, allowing teams to work together on projects, share evaluation results, and collectively analyze model performance. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.
 
 
 ## Key Features
 
-1. **Project-based Organization:** Projects serve as folders for evaluations. Users can create multiple evaluations under a project, and each evaluation contains a dataset. Users can create, rename, and delete projects.
+1. **Project-based Organization:** Projects serve as folders for evaluations. Users can create, manage, and share projects that serve as containers for evaluations. Each project can include multiple evaluations, and users can easily add, rename, or delete them.
 2. **Flexible Dataset Handling and Import:** Evaluation Studio supports importing data through CSV files (with input-output pairs or input data) and production data from deployed model traces.
 3. **Streamlined Evaluation Process**: Evaluate model performance based on out-of-the-box evaluators such as groundness, coherence, toxicity, etc. Users can run evaluations on datasets, with results helping identify areas for model improvement.
 4. **Flexibility for Different Data Scenarios**: Evaluation Studio supports various evaluation scenarios:
@@ -20,8 +20,9 @@ Evaluation Studio is an essential tool for managing, evaluating, and optimizing 
 
 1. **Streamlined Workflow:** Evaluation Studio captures the model evaluation through datasets with various pre-built evaluators. Users can manage projects, upload data, perform evaluations, and track results, all in one place.
 2. **Customizability:** Users can define evaluation criteria that suit their specific needs. The platform adapts to different evaluation scenarios, from simple to complex use cases.
-3. **Continuous Improvement:** Regular evaluations allow users to track model performance over time, ensuring that models are updated or fine-tuned as needed for ongoing optimization.
-4. **Seamless Integration**: Evaluation Studio is designed to integrate with production models seamlessly. It supports importing data from deployed models and exporting custom trace data in the studio to be further analyzed.
+3. **Collaboration**: Projects can be shared with collaborators, supporting team-based evaluation and model testing in a centralized environment.
+4. **Continuous Improvement:** Regular evaluations allow users to track model performance over time, ensuring that models are updated or fine-tuned as needed for ongoing optimization.
+5. **Seamless Integration**: Evaluation Studio is designed to integrate with production models seamlessly. It supports importing data from deployed models and exporting custom trace data in the studio to be further analyzed.
 
 
 ## User Experience Overview

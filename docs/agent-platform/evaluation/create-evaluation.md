@@ -2,7 +2,7 @@
 
 Evaluations are central components within a project where users can test model performance against datasets. Each evaluation resides within a project and includes one dataset.
 
-The addition of a dedicated evaluations folder under Projects eliminates the need to rename uploaded datasets according to the evaluation use case. Users can directly name the evaluation itself.
+The addition of a dedicated evaluations folder under Projects eliminates the need to rename uploaded datasets according to the evaluation use case. Users can directly name the evaluation.
 
 Evaluations provide flexible testing across different scenarios, supporting complete or incomplete CSV data such as input-output columns or handling missing outputs by later generating through a user-defined model. Once datasets are imported and mapped with the evaluators, users can run evaluations to gain insights into their model's performance, helping identify areas needing improvement.
 
@@ -27,7 +27,7 @@ Once the evaluation is created successfully, the system will redirect the user t
     * **Delete**: Use this option to delete the evaluation.
 
 
-**Key Points:**
+## Key Highlights
 
 * Evaluations acts as a container or folder, organizing datasets within a project.
 * Users can create multiple evaluations within a project to efficiently organize and manage different datasets.

@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.11.1 March 15, 2025
+
+<u>Patch Release</u>
+
+This update include only bug fixes.
+
+<hr>
+
 ## v11.11.0 March 04, 2025
 
 <u> Minor Release </u>
@@ -132,7 +140,7 @@ Key updates
 #### OpenAI GPT-4o mini Support for DialogGPT
 The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient conversation management. These models are compact and optimized variants of the GPT-4 family, designed to deliver high efficiency in resource-constrained environments while maintaining advanced capabilities.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/conversation-orchestration.md)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md)
 
 
 ### Dialog Builder 

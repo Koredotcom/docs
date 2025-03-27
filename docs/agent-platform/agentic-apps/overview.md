@@ -1,4 +1,4 @@
-# Agentic Apps
+# About Agentic Apps
 
 Agentic Apps are autonomous systems that orchestrate multiple specialized AI agents working together to accomplish complex business objectives through collaboration and decision-making.
 
@@ -6,10 +6,10 @@ An agentic application intelligently identifies and invokes the appropriate agen
 
 When a user submits a query, an orchestrator analyzes the input to:
 
-1. Identify the most suitable agents for the task
-2. Create appropriate workflows
-3. Extract relevant entities from the input
-4. Pass these entities to the selected agents for execution
+* Identify the most suitable agents for the task.
+* Create a plan on how to execute the task.
+* Extract relevant entities from the input.
+* Pass these entities to the selected agents for execution.
 
 The agents then execute their specialized tasks and return responses, which are presented to the user. For complex queries, multiple agents may work together in sequence, with the output from one agent serving as input for another to complete the full processing chain.
 
@@ -23,7 +23,7 @@ Agentic applications involve the following key components that enable autonomous
 
 The orchestrator manages the flow of operations and coordinates interactions between different agents and users. It ensures appropriate tasks are delegated to the right agents and that they work together effectively to achieve the broader goal. The orchestrator acts as a supervisor, resolving conflicts and handling complex workflows. It interprets user input, delegates tasks to appropriate agents, and verifies responses before presenting them to the user.
 
-For example, in a banking app, to transfer funds from savings to pay off a loan, the orchestrator first has the savings agent process the transfer, and then the loan agent updates the information and confirms. The orchestrator ensures both actions are completed successfully and in the correct order before confirming to the user.
+For example, in a banking app, to transfer funds from savings to pay off a loan, the orchestrator fetches the information from the loan agent for the amount to be paid, checks the savings account balance using transaction manager, and pays off the loan after confirming with the user. The orchestrator ensures both actions are completed successfully and in the correct order before confirming to the user.
 
 
 ### Agents

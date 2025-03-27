@@ -217,9 +217,7 @@ nav:
         - Entity Types: automation/use-cases/dialogs/entity-types.md
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
-        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md 
-        - Custom Authentication via Service Nodes: automation/use-cases/dialogs/implementing-custom-authentication.md
-        - 2-way SSL for Service Nodes: automation/use-cases/dialogs/enabling-2-way-ssl-for-service-nodes.md       
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md      
       - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
@@ -357,8 +355,8 @@ nav:
                 - Wrike: searchai/content-sources/connectors/wrike.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
-                - Zulip: searchai/content-sources/connectors/zulip.md
                 - Zoom: searchai/content-sources/connectors/zoom.md
+                - Zulip: searchai/content-sources/connectors/zulip.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
@@ -382,6 +380,10 @@ nav:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
+    - Best Practices: 
+        - Data Ingestion: searchai/best-practices/data-ingestion.md
+        - Chunking Strategy: searchai/best-practices/chunking-strategy.md
+        - LLM Selection and Configuration: searchai/best-practices/llm-selection.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md 
     - Getting Started:
@@ -485,10 +487,13 @@ nav:
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
+      - Agent AI Integration with Genesys Cloud CX using Kore Data Table: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx-using-kore-data-table.md
       - NICE MAX: agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
       - Kore Agent AI with Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
       - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
-      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md      
+      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md
+      - Agent AI Integration with Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
+      - Agent AI Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md     
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
@@ -511,9 +516,9 @@ nav:
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
     - DialogGPT:
       - Overview: generative-ai-tools/dialog-gpt.md
-      - Conversation Orchestration: generative-ai-tools/conversation-orchestration.md
-      - DialogGPT FAQs: generative-ai-tools/dialog-gpt-faq.md  
-      - Rollout Plan: generative-ai-tools/dialog-gpt-upcoming-features.md
+      - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
+      - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
+      - Rollout Plan: generative-ai-tools/dgpt-upcoming-features.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       

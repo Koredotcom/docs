@@ -1,0 +1,5 @@
+# About Agents (OLD)
+
+By leveraging AI technology, agents can automate processes, streamline workflows, and generate valuable insights. Integrating these applications seamlessly into existing systems and workflows is the key to maximizing their benefits. For example, creating an agent for deal summarization can help businesses quickly extract essential information from complex contracts or agreements, saving time and reducing the risk of human error. Similarly, an agent for auto email generation can automate routine communication tasks, freeing up employees to focus on more strategic activities.
+
+Agents can be accessed using an API key, enabling their easy integration with other enterprise applications that allow for seamless data exchange and interoperability across different systems, enhancing overall connectivity and functionality.

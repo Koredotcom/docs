@@ -1,6 +1,6 @@
 # Explore Other Actions to Perform in the Prompt Playground
 
-You can also perform other actions on the prompt page and use it for your reference. You can view the history of your experiment and restore the version of the prompt you like, export prompt data, and copy the experiment as a prompt or as an Gen AI node.
+You can also perform other actions on the prompt page and use it for your reference. You can view the history of your experiment and restore the version of the prompt you like, export prompt data, and copy the experiment as a prompt or as an AI node.
 
 <img src="../images/explore-other-options.png" alt="Explore other Options" title="Explore other Options" style="border: 1px solid gray; zoom:80%;">
 
@@ -12,7 +12,7 @@ You can copy a prompt experiment and use it for your reference for easy access t
 You have 2 options to copy your prompt experiment:
 
 * **Copy as a Prompt**: If you select the copy as a prompt option, then the user prompt, the few shot examples, and the system prompt are all copied. 
-* **Copy as Gen AI node**: If you select the copy as Gen AI node option, then along with the user prompt, the few shot examples, and the system prompt, the bookmarked model and the settings applied to the model are also copied. Once it is copied you can paste it as an Gen AI node in the Flow builder canvas. 
+* **Copy as AI node**: If you select the copy as AI node option, then along with the user prompt, the few shot examples, and the system prompt, the bookmarked model and the settings applied to the model are also copied. Once it is copied you can paste it as an AI node in the Flow builder canvas. 
 
 Steps to copy a prompt:
 
@@ -22,7 +22,7 @@ Steps to copy a prompt:
     <img src="../images/copy-a-prompt.png" alt="Copy a Prompt" title="Copy a Prompt" style="border: 1px solid gray; zoom:80%;">
 
 
-* Click **as prompt** or **as Gen AI node** as per your requirement and the experiment is copied.
+* Click **as prompt** or **as AI node** as per your requirement and the experiment is copied.
 
 
 ## Restore a Prompt Version using the History
