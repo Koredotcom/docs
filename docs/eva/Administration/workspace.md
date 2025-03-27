@@ -67,7 +67,7 @@ When creating a workspace, admin must provide:
 
 !!! note
 
-    The settings configured within the Agent Publishing section will directly affect the permissions necessary to successfully deploy and publish an agent. Refer to [this](./) for more details.
+    The settings configured within the Agent Publishing section will directly affect the permissions necessary to successfully deploy and publish an agent.
 
 * **Allowed Agent/Apps**: Workspaces can be configured to allow specific types of agents:
     * By default, all agent types are permitted.

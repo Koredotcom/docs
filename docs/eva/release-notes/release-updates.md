@@ -29,7 +29,7 @@ Key Features:
 * Flexible collaboration options enable teams to work together seamlessly.
 * Transparent agent management ensures visibility and accountability.
 
-[Learn more :octicons-arrow-right-24:](./../custom-agents/manage.md)
+[Learn more :octicons-arrow-right-24:](./../custom-agents/agent-options.md)
 
 **Improvements and Bug Fixes**
 
