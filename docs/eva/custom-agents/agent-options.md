@@ -1,7 +1,8 @@
 # Agent Management
 
 
-## Modifying an Agent
+
+**Modifying an Agent**
 
 Make changes to your agent’s configuration and settings as needed.
 
