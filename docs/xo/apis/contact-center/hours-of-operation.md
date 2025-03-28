@@ -20,10 +20,11 @@ To get the hours of operation by providing the `orgId` and `queueId`.
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/public/organizations/{{orgId}}/operationshours/{{queueId}}' \
+curl --location --request GET 'https://{{host}}/agentassist/api/public/organizations/{{orgId}}/operationshours/{{queueId}}' \
 --header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --header 'accountId: <accountId>'
+--header 'Iid: <Iid>'
 ```
 
 ## Headers
@@ -32,7 +33,7 @@ curl --location 'https://{{host}}/agentassist/api/public/organizations/{{orgId}}
 |-----------|---------------|---------------------|
 | accountId | The account ID associated with the API request. | required |
 | auth | JWT token for authentication. | required |
-| iid | The appId or streamId | required |
+| Iid | The appId or streamId | required |
 
 ## Sample Response
 
