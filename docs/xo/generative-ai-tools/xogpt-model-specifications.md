@@ -1,10 +1,5 @@
 
-
-
-
 # Kore.ai XO GPT Model Specification
-
-<br>
 
 ## XO GPT Model - Live Versions
 
@@ -22,7 +17,7 @@ The following XO GPT Live Models are available for various supported features.
 
 The model-building process consists of several key stages that form the backbone of AI system development.
 
-<img src="./images/answer04.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer04.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 ### Data Collection
 
@@ -101,7 +96,7 @@ The model is regularly reviewed, updated, and retrained to stay effective and re
 
 #### Model Expansion
 
-* **Multilingual Proficiency**: New languages beyond English, French, Spanish, Japanese, Turkish, and German will be introduced as Beta models and refined through expert feedback.
+* **Multilingual Proficiency**: New languages beyond English, French, Spanish, Japanese, Turkish, and German will be introduced and refined through expert feedback.
 * **New Summary Templates**: Custom templates like Stepwise and PRA (Problem-Resolution-Action) will be developed on demand.
 
 Executing the roadmap depends on adapting to technological advancements and market demands and overcoming potential challenges in priorities and implementation.
