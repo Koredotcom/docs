@@ -1,10 +1,5 @@
 
-
-
-
 # Kore.ai XO GPT Model Specification
-
-<br>
 
 ## XO GPT Model - Live Versions
 
@@ -22,7 +17,7 @@ The following XO GPT Live Models are available for various supported features.
 
 The model-building process consists of several key stages that form the backbone of AI system development.
 
-<img src="./images/answer04.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer04.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 
 ### Data Collection
 
