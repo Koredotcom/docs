@@ -44,7 +44,7 @@ This glossary lists the key terms and concepts related to the Kore.ai’s XO Pla
 
 **Bot Builder Tool** – A web-based Bot Builder, part of the Kore.ai XO Platform, that allows enterprises to customize VA use cases, channels, tasks, security, and more. It also provides a framework in which developers can design, test, and deploy VAs in a consistent process at scale.
 
-**Bot context** – User or task information that is captured at the bot leve and can be used in context with some or all of the users of that bot.
+**Bot context** – User or task information that is captured at the bot level and can be used in context with some or all of the users of that bot.
 
 		
 

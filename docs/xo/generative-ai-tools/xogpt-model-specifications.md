@@ -101,7 +101,7 @@ The model is regularly reviewed, updated, and retrained to stay effective and re
 
 #### Model Expansion
 
-* **Multilingual Proficiency**: New languages beyond English, French, Spanish, Japanese, Turkish, and German will be introduced as Beta models and refined through expert feedback.
+* **Multilingual Proficiency**: New languages beyond English, French, Spanish, Japanese, Turkish, and German will be introduced and refined through expert feedback.
 * **New Summary Templates**: Custom templates like Stepwise and PRA (Problem-Resolution-Action) will be developed on demand.
 
 Executing the roadmap depends on adapting to technological advancements and market demands and overcoming potential challenges in priorities and implementation.
