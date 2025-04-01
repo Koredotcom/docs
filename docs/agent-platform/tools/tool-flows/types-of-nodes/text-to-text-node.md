@@ -14,7 +14,7 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 
 2. Click **Go to flow** to edit the in-development version of the flow.
 
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **AI** > **Text to Text** from the pop-up menu. Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
+3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **AI** > **Text to Text** from the pop-up menu. Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
 
 4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="../images/configure-gen-ai-node.png" alt="Configure AI Node" title="Configure AI Node" style="border: 1px solid gray; zoom:75%;">
@@ -55,6 +55,11 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
         !!! note 
 
             Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
+
+    * **Response JSON schema**:  Define a JSON schema for structured responses. Use the toggle to provide the JSON schema for the model’s response.  
+    This step is optional and can be enabled if the model supports the response format.
+    By default, the response format is ‘text’ if no schema is provided. Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, anyOf.  
+    Ensure the schema follows the standard outlined in: Defining JSON schema. Invalid or mismatched schemas will trigger errors, highlighted in red, and shown in the error log. You must resolve these errors before proceeding.
 
     * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
