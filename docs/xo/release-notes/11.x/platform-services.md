@@ -1122,7 +1122,7 @@ Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLM
 
 In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation){:target="_blank"}
 
-#### Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
+#### Kore.ai XO GPT Supports Vector Generation and Answer Generation
 
 Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
 

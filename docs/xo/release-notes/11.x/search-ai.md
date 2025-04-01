@@ -18,7 +18,7 @@ This update include only bug fixes.
 
 The Salesforce Connector has been enhanced to support custom object ingestion in addition to the capability of ingesting default objects like Knowledge Articles, Cases, Documents, Opportunities, Leads, Contacts, Accounts, and Tasks. During configuration, users can select the type of content to be ingested, providing greater flexibility. Additionally, the filtering feature has been enhanced, allowing users to refine document ingestion based on specific fields. [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/salesforce.md)
 
-### New Search AI Connectors (Beta)
+### New Search AI Connectors
 
 Search AI extends support for five new connectors, enabling seamless content ingestion and retrieval from Guru, Miro, Help Scout, Wrike, and Zulip. These connectors enhance enterprise search by integrating knowledge from various collaboration and productivity platforms. The connectors also enable access control for the content that is ingested from the applications.
 
@@ -38,7 +38,7 @@ Search AI extends support for five new connectors, enabling seamless content ing
 
 The Custom LLM feature now supports Vector Generation in Search AI, allowing users to leverage custom embedding models for improved accuracy and relevance. Users can define custom requests, pre-processors, and post-processors, specify input and output keys, and seamlessly integrate with existing features. Search AI triggers vector generation during indexing and user query processing, while the document browser displays embedding status and allows filtering. This enhancement provides greater control, customization, and monitoring capabilities for delivering tailored search experiences.
 
-### Custom Extraction (Beta)
+### Custom Extraction
 
 The new Custom Extraction feature in Search AI enables a tailored approach to extracting content from sources. It sends ingested content to a third-party service, which processes and returns the extracted data in a structured chunk format. This enhances flexibility in handling diverse content extraction needs and ensures improved data retrieval and indexing within Search AI.
 
@@ -250,13 +250,13 @@ Search AI chunk browser is now enhanced to make it more user-friendly, providing
 
 Search AI can now extract content from complex HTML tables using the Layout-Aware Extraction Strategy, enhancing its ability to accurately capture and process data from table structures. This improvement ensures more reliable data extraction and accurate information retrieval from tabular content.
 
-### Support for New Connectors (Beta)
+### Support for New Connectors
 
-SearchAI now extends support for data ingestion from a broader range of knowledge bases and enterprise applications through connectors, including Airtable, HubSpot, GitLab, GitHub, Jira, Monday, Notion, and Slack. This expansion allows users to seamlessly integrate and ingest content from these platforms, enhancing the versatility of the data sources.
+Search AI now extends support for data ingestion from a broader range of knowledge bases and enterprise applications through connectors, including Airtable, HubSpot, GitLab, GitHub, Jira, Monday, Notion, and Slack. This expansion allows users to seamlessly integrate and ingest content from these platforms, enhancing the versatility of the data sources.
 
 ### Sharepoint Site Support Enhancement
 
-SearchAI now supports ingesting content from up to 6,000 sites from Sharepoint using the connector. This enhancement allows users to seamlessly access and search through a large volume of data, ensuring better search capabilities and improving the information retrieval process across the organization.
+Search AI now supports ingesting content from up to 6,000 sites from Sharepoint using the connector. This enhancement allows users to seamlessly access and search through a large volume of data, ensuring better search capabilities and improving the information retrieval process across the organization.
 
 ### Support for Re-Rankers 
 
@@ -308,7 +308,7 @@ The Answer Generation API now allows for more details about the answer in the re
 
 Search AI now displays error messages to users when the answer generation process fails. These errors may occur for various reasons, such as an invalid OpenAI key or the absence of relevant chunks. This feature ensures users are promptly informed of any issues, facilitating quicker resolution.
 
-### Layout Aware Content Extraction Strategy (Beta)
+### Layout Aware Content Extraction Strategy
 
 Search AI introduces an advanced way of extracting content from documents (PDF and DOCX) by detecting the objects in the document using a combination of OCR technology, layout detection models, and layout awareness rules. This advanced strategy can accurately extract content from tables, graphs, and charts in the documents.
 
