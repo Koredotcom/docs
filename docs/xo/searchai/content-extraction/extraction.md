@@ -45,7 +45,7 @@ The Text Extraction Model combines natural language processing (NLP) and machine
     *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. The optimal number depends on the nature of the content. Smaller chunks might be used for detailed, granular tasks, whereas larger chunks might be necessary for understanding context​​.
     * **Chunk Overlap**: Number of tokens that should overlap between two consecutive chunks.
 
-### **Layout Aware Extraction (BETA)**
+### Layout Aware Extraction
 
 Layout-aware chunk extraction is a strategy used to extract data by considering the content's layout and structure. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. Configuring the strategy according to specific layout requirements makes it possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes. 
 
@@ -74,7 +74,7 @@ This strategy is specially designed to extract data from tables and images in HT
 !!! note
     A strategy is automatically enabled as soon as it is created. However, creating a strategy does not automatically initiate the extraction process. Use the **Train** option to initiate the extraction process.   
 
-### Custom Extraction(Beta)
+### Custom Extraction
 
 The Custom Extraction feature in Search AI enables organizations to extract and process content from various sources in a flexible and customized manner. Instead of relying on predefined extraction rules, this feature allows integration with third-party services that apply their own processing logic and extract content as per their business requirements. 
 
