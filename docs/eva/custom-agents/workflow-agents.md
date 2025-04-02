@@ -158,7 +158,9 @@ you can add additional queries by clicking the **+ Add Query** button. Once
 you're ready, click **Continue** to proceed to the next
 step.![](images/preview_gale.png)
 
-###    <a id="publish">Step 4: Publish your agent and define access permissions and enablement.
+###    <a id="publish">Step 4: Publish
+
+Publish your agent and define access permissions and enablement.
 
 **Specify publishing details**:
 

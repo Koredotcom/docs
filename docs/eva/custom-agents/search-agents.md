@@ -169,7 +169,9 @@ capabilities.
 
 ![](images/preview.png)
 
-### Step 4: Publish your agent and define access permissions and enablement.
+### Step 4: Publish
+
+Publish your agent and define access permissions and enablement.
 
 **Specify publishing details**:
 
