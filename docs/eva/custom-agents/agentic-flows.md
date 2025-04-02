@@ -1,27 +1,27 @@
-# Standard Agentic Apps
+# Agentic Flows
 
-Standard Agentic applications enable the sequential execution of multiple AI agents to accomplish and automate complex tasks efficiently using AI agents. These applications streamline workflows by automating interactions and decision-making processes based on predefined logic and user input.
+Agentic Flowlications enable the sequential execution of multiple AI agents to accomplish and automate complex tasks efficiently using AI agents. These applications streamline workflows by automating interactions and decision-making processes based on predefined logic and user input.
 
-## Creating Standard Agentic app
+## Creating Agentic Flow
 
-Follow these steps to create a new Standard Agentic app:
+Follow these steps to create a new Agentic Flow:
 
 1. Access the Admin Console
-    * Navigate to **Agents and Apps** in the left pane.
-    * Select **Standard Apps** to view the list of existing applications.
+    * Navigate to **AI Agents** in the left pane.
+    * Select **Agentic Flow** to view the list of existing applications.
     <img src="../images/Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 2. Initiate Agent Creation
-    * Click **+Create Agent** on the Standard Agentic app page.
-    * The **Prompt Standard App Creation Wizard** guides you through the setup process.
+    * Click **+Create Agent** on the Agentic Flow page.
+    * The **Prompt Agentic Flow Creation Wizard** guides you through the setup process.
     <img src="../images/Agentic_App_2.png" alt="Admin Creation" title="Admin Creation" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 1: Details and Purpose
 
-Define your app's name and purpose for optimal performance.
+Define your agent's name and purpose for optimal performance.
 
-* **App Name**: Enter a unique and meaningful name for your app.
-* **Purpose**: Defines the intended functionality of the app for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate application.  
+* **agent Name**: Enter a unique and meaningful name for your agent.
+* **Purpose**: Defines the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate application.  
 <img src="../images/Agentic_App_3.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -30,7 +30,7 @@ Define your app's name and purpose for optimal performance.
 
 ### Step 2: Build Agentic Flow
 
-Customize the app's workflow using a prompt-based interface.
+Customize the agent's workflow using a prompt-based interface.
 
 1. **Prompt**: A default prompt is auto-generated based on the agent’s purpose. This prompt can be customized using variables. Based on the defined purpose, the system automatically generates the necessary workflow steps to complete the task. For example, in a financial advisor workflow, performing research, checking who owns the shares, and deciding to sell or hold shares based on research.  
 <img src="../images/Agentic_App_4.png" alt="Prompt" title="Prompt" style="border: 1px solid gray; zoom:70%;">
@@ -46,7 +46,7 @@ Customize the app's workflow using a prompt-based interface.
 
 ### Step 3: Preview
 
-The **Preview** section displays sample queries to test the app’s behavior.
+The **Preview** section displays sample queries to test the agent’s behavior.
 
 1. Click **+Add Query** to input additional test queries.
 2. Once validated, click **Continue** to move to the final step.  
@@ -54,64 +54,35 @@ The **Preview** section displays sample queries to test the app’s behavior.
 
 ### Step: 4 Publish
 
-Publish your app and define access permissions and enablement.
+### Step 4: Publish
 
-To deploy the Standard Agentic app, complete the following steps:
+Publish your agent and define access permissions and enablement.
 
 **Specify publishing details**:
 
-* **Published Version**: Select the appropriate version for deployment.
 * **Publish To**: Define access permissions:
-    * **Admins**: Restrict usage to Admin users.
-    * **Selected User Groups/Users**: Grant access to specific users or groups.
-    * **Everyone in the Account**: Make the app available to all users.
-* **Enablement Type**: Configure how users interact with the app:
-    * **Always Enabled**: The app remains active and cannot be disabled.
-    * **Users Choice**: Users can enable or disable the app as needed.
+    * **Everyone in the Account**: Make the agent available to all users.
+    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+* **Enablement Type**: Configure how users interact with the agent:
+    * **Always Enabled**: The agent remains active and cannot be disabled.
+    * **Users Choice**: Users can enable or disable the agent as needed.
 
-<img src="../images/Agentic_App_8.png" alt="Publish" title="Publish" style="border: 1px solid gray; zoom:70%;">
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 **Finalize deployment**:
 
-* Click **Publish** to make the agent available. The app appears in the **Standard App List** on the Admin Console page.
-
-## Modifying an Standard Agentic app
-
-Make changes to your app's configuration and settings as needed.
-
-To edit an existing Standard Agentic app:
-
-1. Navigate to the **Standard Agentic app list** page and locate the app you wish to modify.
-<img src="../images/Agentic_App_9.png" alt="Modifying an Standard Agentic app" title="Modifying an Standard Agentic app" style="border: 1px solid gray; zoom:70%;">
-
-2. Click **three dots icon** next to the app’s name. A menu with the following options will appear:
-    * **Edit**: Open and modify the app's details.
-    * **Publish/Unpublish**: Change the app's status.
-    * **Delete**: Permanently remove the app.
-3. Select the required option and continue to complete the modifications as needed.
-
-## Agent Options
-
-Manage your app's deployment, data, and availability post-publication. Agent options are enabled after publishing your Standard Agentic application. You can perform the following actions on published apps:
-
-* **Export Agent**: Download agent configuration and associated data.
-* **Delete Agent**: Permanently remove the application.
-* **Unpublish Agent**: Revert agent to draft status, making it unavailable for production use.
-  
-!!! Caution
-
-     Exercise caution when using delete or unpublish options, these actions directly impact your application's functionality.
+* Click **Publish** to make the agent available. The agent appears in the **Agentic Flow List** on the Admin Console page.
 
 ## Example Implementation: Finance Advisor
 
-### Accessing the Finance Advisor App
+### Accessing the Finance Advisor agent
 
 1. Locate the Finance Advisor:
     * Enter "Finance Advisor" in the search box at the **Home** page. The search results will display a matching application.  
     <img src="../images/Agentic_App_10.png" alt="Finance Advisor" title="Finance Advisor" style="border: 1px solid gray; zoom:70%;">
 
 2. Review flow Configuration:
-    * Upon accessing the Finance Advisor app, you will see a structured sequence of agent flows.
+    * Upon accessing the Finance Advisor agent, you will see a structured sequence of agent flows.
     * Each flow represents a specific stage of financial analysis.
     * Options available for each flow:
         * **Add**: Include new analysis steps

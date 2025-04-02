@@ -2,13 +2,8 @@
 
 The  Admin Console of **AI for Work** is a centralized management interface for administrators to configure, monitor, and manage system settings, including:
 
-* Dashboard
-* Assist Configuration
-* User Management
-* AI Search
-* Pre Built Solutions
-* AI Agents
-* Security
+* [Workspace](./workspace.md)
+* [Account Hub](./account-hub.md)
 
 ## Prerequisites
 
@@ -26,6 +21,5 @@ To access the **Admin Console** on **AI for Work**, follow the steps below:
 2. Click **Admin Console** under your user account menu.  
 <img src="../images/admin-console.png" alt="admin-console" title="admin-console" style="border: 1px solid gray; zoom:80%;">
 
-3. The system redirects to the **Dashboard** page under the **Admin Console**.  
+1. The system redirects to the **Workspace** page.  
 <img src="../images/dashboard.png" alt="dashboard" title="dashboard" style="border: 1px solid gray; zoom:80%;">  
-

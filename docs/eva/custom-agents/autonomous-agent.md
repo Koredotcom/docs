@@ -1,25 +1,25 @@
-# Advanced Agentic Apps
+# Autonomous Agents
 
-Advanced Agentic Apps are AI-powered applications that leverage Kore’s Agent platform to autonomously manage complex business tasks and workflows. These applications can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
+Autonomous Agents are AI-powered applications that leverage Kore’s Agent platform to autonomously manage complex business tasks and workflows. These applications can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
 
-## Creating Agentic App
+## Creating Autonomous Agent
 
-The creation of a new Advanced Agentic App follows a structured, four-step process designed to ensure proper configuration and deployment.
+The creation of a new Advanced Autonomous Agent follows a structured, four-step process designed to ensure proper configuration and deployment.
 
 Follow these steps to create a new Agentic Advanced App:
 
 1. Access the Admin Console:
-    * Navigate to **Agents and Apps** in the left pane.
-    * Under Agentic Apps, select **Advanced Apps** to view the list of existing applications. 
+    * Navigate to **AI Agents** in the left pane.
+    * Select **Autonomous Agents** to view the list of existing applications. 
 2. Initiate Agent Creation:
-    * Click **+Create Agent** on the Agentic App page.
+    * Click **+Create Agent** on the Autonomous Agents page.
     * The **App Creation Wizard** guides you through the setup process.
     <img src="../images/Advance_Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 3. Details and Purpose: Define your app's name and purpose for optimal performance.
     * **Icon**:Choose from the predefined icon library or upload a custom icon.
     * **Agent Name**: Enter a unique and meaningful name for your app.
     * **Purpose of app**: Define the intended functionality of the app for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate application.
-4. Configure Agentic App: The configuration step establishes the technical foundation of your app through API integration.  
+4. Configure Autonomous Agent: The configuration step establishes the technical foundation of your app through API integration.  
 
      Define API fields as per the details below:
 
@@ -48,7 +48,7 @@ Follow these steps to create a new Agentic Advanced App:
      <img src="../images/Advance_Agentic_App_3.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 
-6. Publish: Publish your app and define access permissions and enablement. To deploy the Agentic App, specify publishing details:
+6. Publish: Publish your app and define access permissions and enablement. To deploy the Autonomous Agent, specify publishing details:
      * **Published Version**: Select the appropriate version for deployment.
      * **Publish To**: Define access permissions:
          * **Admins**: Restrict usage to admin users.
@@ -70,31 +70,10 @@ To import an existing Advanced App:
 2. Select the .ZIP file of the existing app.
 3. Click **Import** to complete the process. The imported agent will appear on the Advanced App page.
 
-## Modifying an Advanced Agentic app
-
-Make changes to your app's configuration and settings as needed.
-
-To edit an existing Advanced Agentic app:
-
-1. Navigate to the **Advanced Agentic app list** page and locate the app you wish to modify.
-2. Click **three dots icon** next to the app’s name. A menu with the following options will appear:
-    1. **Edit**: Open and modify the app's details.
-    2. **Publish/Unpublish**: Change the app's status.
-    3. **Delete**: Permanently remove the app.
-3. Select the required option and continue to complete the modifications as needed.
-
-## Agent Options
-
-Manage your app's deployment, data, and availability post-publication. Agent options are enabled after publishing your Advanced Agentic application. You can perform the following actions on published apps:
-
-* **Export Agent**: Download agent configuration and associated data.
-* **Delete Agent**: Permanently remove the application.
-* **Unpublish Agent**: Revert agent to draft status, making it unavailable for production use.
-
 ## Usage
 
-Advanced Agentic Apps integrate seamlessly with the Kore Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an app from the **Compose bar > Agents > Apps tab**. Here's how they operate in practice:
+Autonomous Agents integrate seamlessly with the Kore Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an app from the **Compose bar > Agents > Apps tab**. Here's how they operate in practice:
 
-When deployed, the Agentic App appears as an interactive application within the AI Work interface. As shown in the example screenshot, users can engage in natural conversations with the app to accomplish specific tasks. The app understands the context, process requests, and provides relevant responses based on its configured capabilities.
+When deployed, the Autonomous Agent appears as an interactive application within the AI Work interface. As shown in the example screenshot, users can engage in natural conversations with the app to accomplish specific tasks. The app understands the context, process requests, and provides relevant responses based on its configured capabilities.
 
 <img src="../images/Advance_Agentic_App_5.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
