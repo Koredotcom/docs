@@ -226,6 +226,10 @@ Whenever a SIP Trunk or Phone Number configuration fails—whether during the se
 
 The user input's Personal Identifiable Information (PII) data will be masked in the debug logs.
 
+### General Availability of a Key Feature
+
+We are announcing the general availability (GA) of the [DialogGPT Module](./../../generative-ai-tools/dialog-gpt.md) to all our users. 
+
 <hr>
 
 ## v11.9.1 January 25, 2025

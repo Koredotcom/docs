@@ -81,6 +81,16 @@ The revamped connector experience makes it easier to discover and configure inte
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
 
+### General Availability of Key Features
+
+We are announcing the general availability (GA) of the following important features to all our users: 
+
+* [RACL support in connectors](./../../searchai/content-sources/racl-support.md) 
+* [Custom Extraction](./../../searchai/content-extraction/extraction.md#custom-extraction) 
+* [Layout Aware Extraction](./../../searchai/content-extraction/extraction.md#layout-aware-extraction)
+* [Reranking Chunks](./../../searchai/advanced-configurations/reranking-chunks.md)
+
+
 <hr>
 
 ## v11.9.1 January 25, 2025
