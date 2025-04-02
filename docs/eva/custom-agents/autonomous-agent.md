@@ -48,19 +48,21 @@ Follow these steps to create a new Agentic Advanced App:
      <img src="../images/Advance_Agentic_App_3.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 
-6. Publish: Publish your app and define access permissions and enablement. To deploy the Autonomous Agent, specify publishing details:
-     * **Published Version**: Select the appropriate version for deployment.
-     * **Publish To**: Define access permissions:
-         * **Admins**: Restrict usage to admin users.
-         * **Selected User Groups/Users**: Grant access to specific users or groups.
-         * **Everyone in the Account**: Make the app available to all users.
-     * **Enablement Type**: Configure how users interact with the app:
-         * **Always Enabled**: The app remains active and cannot be disabled.
-         * **Users Choice**: Users can enable or disable the app as needed.
-         <img src="../images/Advance_Agentic_App_4.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
+6. Publish: Publish your agent and define access permissions and enablement.
+
+**Specify publishing details**:
+
+* **Publish To**: Define access permissions:
+    * **Everyone in the Account**: Make the agent available to all users.
+    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+* **Enablement Type**: Configure how users interact with the agent:
+    * **Always Enabled**: The agent remains active and cannot be disabled.
+    * **Users Choice**: Users can enable or disable the agent as needed.
+
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 
-7 Click **Publish** to make the agent available. The app appears in the **Advanced App List** on the Admin Console page.
+7. Click **Publish** to make the agent available. The app appears in the **Advanced App List** on the Admin Console page.
 
 ## Import existing Advanced App
 

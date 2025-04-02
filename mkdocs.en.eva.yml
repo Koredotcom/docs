@@ -126,7 +126,7 @@ nav:
       - Prompt Agents: custom-agents/prompt-agents.md 
       - API Agents: custom-agents/api-agents.md 
       - Search Agents: custom-agents/search-agents.md
-      - Agentic Flows: custom-agents/agent-flows.md
+      - Agentic Flows: custom-agents/agentic-flows.md
       - Autonomous Agents: custom-agents/autonomous-agent.md      
     - Other Agents: 
       - Bot Agents: 

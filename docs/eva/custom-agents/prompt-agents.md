@@ -250,12 +250,6 @@ To modify the Prompt agent, follow these steps:
 3.  Click on the required option and continue to complete the modifications as
     needed.
 
-## Agent Option
-
-The agent options allow you to export, delete, and un-publish the agent.
-
-![](images/agent_option.png)
-
 
 ## User Interaction
 

@@ -52,7 +52,6 @@ The **Preview** section displays sample queries to test the agent’s behavior.
 2. Once validated, click **Continue** to move to the final step.  
 <img src="../images/Agentic_App_7.png" alt="Preview" title="Preview" style="border: 1px solid gray; zoom:70%;">
 
-### Step: 4 Publish
 
 ### Step 4: Publish
 
