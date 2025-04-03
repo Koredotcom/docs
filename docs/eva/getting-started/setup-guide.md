@@ -2,15 +2,16 @@
 
 This setup guide helps administrators quickly configure the AI for Work for their users. Learn how to sign up, set up, configure, and invite users to AI for Work.
 
-AI for Work setup consists of the following steps: 
-    - [Step 1: Sign Up for a New AI for Work Account](#step-1-sign-up-for-a-new-ai-for-work-account)
-    - [Step 2: Configure User Enrollments, SSO, and Service Accounts](#step-2-configure-user-enrollments-sso-and-service-accounts)
-    - [Step 3: Configure LLM and Embedding Models](#step-3-configure-llm-and-embedding-models)
-    - [Step 4: Configure Rate Limit for User Queries](#step-4-configure-rate-limit-for-user-queries)
-    - [Step 5: Configure Enterprise Knowledge](#step-5-configure-enterprise-knowledge)
-    - [Step 6: Publish Pre-built Agents to be Available for your Users](#step-6-publish-pre-built-agents-to-be-available-for-your-users)
-    - [Step 7: Configure Agents and Applications As Per your Requirement](#step-7-configure-agents-and-applications-as-per-your-requirement)
-    - [Step 8: Invite your Users to AI for Work](#step-8-invite-your-users-to-ai-for-work)
+AI for Work setup consists of the following steps:
+
+- Step 1: Sign Up for a New AI for Work Account
+- Step 2: Configure User Enrollments, SSO, and Service Accounts
+- Step 3: Configure LLM and Embedding Models
+- Step 4: Configure Rate Limit for User Queries
+- Step 5: Configure Enterprise Knowledge
+- Step 6: Publish Pre-built Agents to be Available for your Users
+- Step 7: Configure Agents and Applications As Per your Requirement
+- Step 8: Invite your Users to AI for Work
 
 ### Step 1: Sign Up for a New AI for Work Account
 
