@@ -25,11 +25,148 @@ Using the Conversations with Things framework, a conversation design methodology
 
 The framework provides a structured approach to designing conversational experiences, ensuring that virtual assistants maintain consistency, align with user expectations, and create meaningful interactions.
 
+## Types of Prompts
+
+The Agent Node supports two prompt versions: **V1 (Legacy)** and **V2 (Enhanced)**. Each version offers different approaches to handling system prompts, entity management, and tool-based orchestration. Choosing the right prompt version depends on factors such as execution style, exit scenario handling, and integration needs.
+
+The table below highlights the key differences between **V1 and V2 prompts**, helping you determine the best fit for your use case.
 
 
-##### Streaming vs. Regular Prompts: Key Differences
+<table>
+  <tr>
+   <td><strong>Feature</strong>
+   </td>
+   <td><strong>V1 Prompts (Legacy)</strong>
+   </td>
+   <td><strong>V2 Prompts (Enhanced)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Execution Model</strong>
+   </td>
+   <td>Entity-based execution, manual transitions
+   </td>
+   <td>Tool-based execution, automated transitions
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Exit Scenarios</strong>
+   </td>
+   <td>Manually defined within the prompt
+   </td>
+   <td>Managed dynamically via the Exit Orchestration Tool
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Entity Handling</strong>
+   </td>
+   <td>Explicit entity collection required
+   </td>
+   <td>No explicit entity collection
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tool Integration</strong>
+   </td>
+   <td>No tool execution
+   </td>
+   <td>Supports default and custom tools
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Response Structure</strong>
+   </td>
+   <td>Structured, predefined formats
+   </td>
+   <td>Flexible, natural response generation
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Runtime Behavior</strong>
+   </td>
+   <td>Follows predefined transitions, no tool calls
+   </td>
+   <td>Calls tools dynamically based on context
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Post-Processor Scripts</strong>
+   </td>
+   <td>Not required
+   </td>
+   <td>Mandatory for execution
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Import/Export Behavior</strong>
+   </td>
+   <td>Switching from V2 to V1 maintains entity structures; V2 import overwrites
+   </td>
+   <td>Version conflict warning when importing V2 into V1
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Availability</strong>
+   </td>
+   <td>Works with all configurations
+   </td>
+   <td>Available only in JavaScript
+   </td>
+  </tr>
+</table>
 
-#####  Structural Differences
+
+### When to Use V1 Prompts
+
+
+
+* Requires explicit entity handling to manually define business rules and exit scenarios.
+* Works best in workflows that rely on structured, entity-based execution rather than tool-based orchestration.
+* Provides a stable, legacy system without additional tool integration for exit scenarios.
+* Ensures backward compatibility with existing bot configurations that do not support V2.
+* Does not require post-processor scripts as part of the execution. 
+
+
+
+### When to Use V2 Prompts
+
+
+
+* Leverages a tool-based architecture for a more automated and structured conversation flow.
+* Supports integration with both default and custom tools, including the Exit Orchestration Tool.
+* Eliminates explicit entity collection and streamlines exit scenario management.
+* Enables dynamic execution where the language model determines when to trigger tools based on context.
+* Ensures structured execution with mandatory post-processor scripts.
+* Allows for a flexible, natural response format without strict JSON structure constraints.
+
+
+
+### Use Case Scenarios
+
+For a more practical approach, the differences through scenarios can make the comparison more engaging.
+
+
+* Scenario 1: Maintaining a Legacy Bot 
+
+  A banking bot that has predefined customer verification steps and strict entity collection. 
+  
+  Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
+
+* Scenario 2: Automating Customer Support 
+  
+  An AI assistant that dynamically suggests troubleshooting steps based on customer queries. 
+
+  Uses **V2 prompts** because it needs tool integration and dynamic execution. 
+
+* Scenario 3: Handling a Mixed Workflow 
+
+  A chatbot for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
+  Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
+
+
+### Streaming vs. Regular Prompts
+
+####  Structural Differences
 
 
 <table>
@@ -133,181 +270,37 @@ The framework provides a structured approach to designing conversational experie
 
 
 
-##### Implementation Differences
-1. Format Requirements:
-    * Both require responses to include conv_status , bot response, and collected entities
-    * Streaming prompts must structure this content for incremental delivery
-2. Error Handling:
-    * Regular prompts can be fully validated before delivery
-    * Streaming prompts require careful prompt engineering as corrections cannot be made mid-stream
-3. Analytics:
-    * Streaming responses include additional metrics like TTFT (Time to First Token)
-    * Response Duration for streaming measures time from first to last token
+#### Implementation Differences
 
-##### When to Choose Streaming vs. Regular Prompts
+* Format Requirements:
+  * Both require responses to include conv_status , bot response, and collected entities
+  * Streaming prompts must structure this content for incremental delivery
+* Error Handling:
+  * Regular prompts can be fully validated before delivery
+  * Streaming prompts require careful prompt engineering as corrections cannot be made mid-stream
+* Analytics:
+  * Streaming responses include additional metrics like TTFT (Time to First Token)
+  * Response Duration for streaming measures time from first to last token
+
+#### When to Choose Streaming vs. Regular Prompts
 
 Use Streaming When:
 
-* Real-time interaction is critical
-* Responses are expected to be lengthy
-* Voice-based applications would benefit from incremental speech
-* User experience would benefit from immediate feedback
+* Real-time interaction is critical.
+* Responses are expected to be lengthy.
+* Voice-based applications would benefit from incremental speech.
+* User experience would benefit from immediate feedback.
 
 Use Regular Prompts When:
 
-* Post-processing is needed
-* Content moderation or guardrails are required
+* Post-processing is needed.
+* Content moderation or guardrails are required.
 * Tool calls are necessary for the Agent Node
-* Interception of responses (with BotKit) is needed
-* Complete response validation must occur before delivery
+* Interception of responses (with BotKit) is needed.
+* Complete response validation must occur before delivery.
 * Implementing the appropriate prompt type based on your specific use case and requirements will ensure optimal performance and user experience.
 
-## Types of Prompts
 
-
-The Agent Node supports two prompt versions: **V1 (Legacy)** and **V2 (Enhanced)**. Each version offers different approaches to handling system prompts, entity management, and tool-based orchestration. Choosing the right prompt version depends on factors such as execution style, exit scenario handling, and integration needs.
-
-The table below highlights the key differences between **V1 and V2 prompts**, helping you determine the best fit for your use case.
-
-
-<table>
-  <tr>
-   <td><strong>Feature</strong>
-   </td>
-   <td><strong>V1 Prompts (Legacy)</strong>
-   </td>
-   <td><strong>V2 Prompts (Enhanced)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Execution Model</strong>
-   </td>
-   <td>Entity-based execution, manual transitions
-   </td>
-   <td>Tool-based execution, automated transitions
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Exit Scenarios</strong>
-   </td>
-   <td>Manually defined within the prompt
-   </td>
-   <td>Managed dynamically via the Exit Orchestration Tool
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Entity Handling</strong>
-   </td>
-   <td>Explicit entity collection required
-   </td>
-   <td>No explicit entity collection
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tool Integration</strong>
-   </td>
-   <td>No tool execution
-   </td>
-   <td>Supports default and custom tools
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Response Structure</strong>
-   </td>
-   <td>Structured, predefined formats
-   </td>
-   <td>Flexible, natural response generation
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Runtime Behavior</strong>
-   </td>
-   <td>Follows predefined transitions, no tool calls
-   </td>
-   <td>Calls tools dynamically based on context
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Post-Processor Scripts</strong>
-   </td>
-   <td>Not required
-   </td>
-   <td>Mandatory for execution
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Import/Export Behavior</strong>
-   </td>
-   <td>V1 to V1 maintains entity structures; V2 import overwrites
-   </td>
-   <td>Version conflict warning when importing V2 into V1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Availability</strong>
-   </td>
-   <td>Works with all configurations
-   </td>
-   <td>Available only in JavaScript
-   </td>
-  </tr>
-</table>
-
-
-
-### **When to use which prompt**
-
-
-#### **Choose V1 Prompts if you need:**
-
-
-
-* A **legacy-compatible** system without tool integration. \
-
-* **Manual control** over exit scenarios and entity handling. \
-
-* A **structured, entity-driven execution** model. \
-
-* **Predefined response formats** that follow current system behavior. \
-
-
-
-#### **Choose V2 Prompts if you need:**
-
-
-
-* **Automated tool-based orchestration** with dynamic execution. \
-
-* **Exit scenarios managed by the Exit Orchestration Tool** instead of manual rules. \
-
-* **Flexible, natural responses** without strict entity enforcement. \
-
-* **Integration with both default and custom tools** for structured execution. \
-
-* **Post-processor script support** for enhanced control over execution. \
-
-
-
-### **Use Case Scenarios**
-
-If you want a more **real-world approach**, presenting the differences with **scenarios** can be more engaging:
-
-
-
-* **Scenario 1: Maintaining a Legacy Bot \
-** *A banking bot that has predefined customer verification steps and strict entity collection. \
-*
-    * Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. \
-
-* **Scenario 2: Automating Customer Support \
-** *An AI assistant that dynamically suggests troubleshooting steps based on customer queries. \
-*
-    * Uses **V2 prompts** because it needs tool integration and dynamic execution. \
-
-* **Scenario 3: Handling a Mixed Workflow \
-** *A chatbot for insurance claims processing that requires predefined data collection but also uses external tools for verification. \
-*
-    * Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. \
 
 
 ## Custom Prompt for Agent Node
@@ -334,10 +327,10 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 === "Sample JavaScript V1"
 
   ```
-  let payloadFields = {
-  model: "claude-3-5-sonnet-20241022",
-  max_tokens: 8192,
-  system:`${System_Context}.
+    let payloadFields = {
+    model: "claude-3-5-sonnet-20241022",
+    max_tokens: 8192,
+    system:`${System_Context}.
 
                     ${Required_Entities && Required_Entities.length ?
                     `**Entities Required for the Use Case*: You are instructed to collect the from the List: ${Required_Entities}
@@ -369,74 +362,72 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
                               - Final response provided to user
                               - when one of the Scenarios Met from ${Exit_Scenarios}.`,
     messages: []
-  };
+    };
 
-  // Check if List_of_Tools exists and has length
-  if (Tools_Definition && Tools_Definition.length) {
-    payloadFields.tools = Tools_Definition.map(tool_info => {
-        return {
-            name: tool_info.name,
-            description: tool_info.description,
-            input_schema: tool_info.parameters
-        };
-    });
-  }
-
-  // Map conversation history to context chat history
-  let contextChatHistory = [];
-  if (Conversation_History && Conversation_History.length) {
-      contextChatHistory = Conversation_History.map(function(entry) {
-        return {
-            role: entry.role === "tool" ? "user" : entry.role,
-            content: (typeof entry.content === "string") ? entry.content : entry.content.map(content => {
-                if (content.type === "tool-call") {
-                    return  {
-                          "type": "tool_use",
-                          "id": content.toolCallId,
-                          "name": content.toolName,
-                          "input": content.args
-                      }
-                }
-                else {
-                      return {
-                          "type": "tool_result",
-                          "tool_use_id": content.toolCallId,
-                          "content": content.result
-                      }
-                }
-            })
-        };
+    // Check if List_of_Tools exists and has length
+    if (Tools_Definition && Tools_Definition.length) {
+      payloadFields.tools = Tools_Definition.map(tool_info => {
+          return {
+              name: tool_info.name,
+              description: tool_info.description,
+              input_schema: tool_info.parameters
+          };
       });
-  }
-  // Push context chat history into messages
-  payloadFields.messages.push(...contextChatHistory);
+    }
 
-  Add user input to messages
-  let lastMessage;
-  if (contextChatHistory && contextChatHistory.length) {
-      lastMessage = contextChatHistory[contextChatHistory.length-1];
-  }
+    // Map conversation history to context chat history
+    let contextChatHistory = [];
+    if (Conversation_History && Conversation_History.length) {
+        contextChatHistory = Conversation_History.map(function(entry) {
+          return {
+              role: entry.role === "tool" ? "user" : entry.role,
+              content: (typeof entry.content === "string") ? entry.content : entry.content.map(content => {
+                  if (content.type === "tool-call") {
+                      return  {
+                            "type": "tool_use",
+                            "id": content.toolCallId,
+                            "name": content.toolName,
+                            "input": content.args
+                        }
+                  }
+                  else {
+                        return {
+                            "type": "tool_result",
+                            "tool_use_id": content.toolCallId,
+                            "content": content.result
+                        }
+                  }
+              })
+          };
+        });
+    }
+    // Push context chat history into messages
+    payloadFields.messages.push(...contextChatHistory);
 
-  if (!lastMessage || (lastMessage && lastMessage.role !== "tool")) {
-      payloadFields.messages.push({
-        role: "user",
-        content: `${User_Input}`
-      });
-  }
+    Add user input to messages
+    let lastMessage;
+    if (contextChatHistory && contextChatHistory.length) {
+        lastMessage = contextChatHistory[contextChatHistory.length-1];
+    }
 
-  // Assign payloadFields to context
-  context.payloadFields = payloadFields;
+    if (!lastMessage || (lastMessage && lastMessage.role !== "tool")) {
+        payloadFields.messages.push({
+          role: "user",
+          content: `${User_Input}`
+        });
+    }
 
+    // Assign payloadFields to context
+    context.payloadFields = payloadFields;
   ```
+
 
 === "Sample JavaScript V2"
 
   ```
-  // Ensure to assign the JSON object to the context variable `context.payloadFields` for further processing. Example: context.payloadFields = jsonObject //
-  // Importing this template will also import its associated post-processor, which will be available in the post-processor section. //
-
-
-  let payloadFields = {
+    // Ensure to assign the JSON object to the context variable `context.payloadFields` for further processing. Example: context.payloadFields = jsonObject //
+    // Importing this template will also import its associated post-processor, which will be available in the post-processor section. //
+   let payloadFields = {
       model: "gpt-4o",
       temperature: 0.73,
       max_tokens: 1068,
@@ -487,59 +478,60 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
               `
           }
       ]
-  };
+   };
 
-  if (Tools_Definition && Tools_Definition.length) {
-      payloadFields.tools = Tools_Definition.map(tool_info => {
-          return {
-              type: "function",
-              function: tool_info
-          };
-      });
-  }
+    if (Tools_Definition && Tools_Definition.length) {
+        payloadFields.tools = Tools_Definition.map(tool_info => {
+            return {
+                type: "function",
+                function: tool_info
+            };
+        });
+    }
 
-  let contextChatHistory = [];
+    let contextChatHistory = [];
 
-  Conversation_History.forEach(function (entry) {
-      if (entry.role === "tool") {
-          entry.content.forEach(function (content) {
-              contextChatHistory.push({
-                  role: "tool",
-                  content: content.result,
-                  tool_call_id: content.toolCallId
-              });
-          });
-      } else if (entry.role === "user") {
-          contextChatHistory.push({
-              role: entry.role,
-              content: entry.content
-          });
-      } else {
-          if (typeof entry.content === "string") {
-              contextChatHistory.push({
-                  role: entry.role === "bot" ? "assistant" : entry.role,
-                  content: entry.content
-              });
-          } else {
-              contextChatHistory.push({
-                  role: entry.role,
-                  tool_calls: entry.content.map(function (content) {
-                      return {
-                          id: content.toolCallId,
-                          type: "function",
-                          function: {
-                              arguments: JSON.stringify(content.args),
-                              name: content.toolName
-                          }
-                      };
-                  })
-              });
-          }
-      }
-  });
+    Conversation_History.forEach(function (entry) {
+        if (entry.role === "tool") {
+            entry.content.forEach(function (content) {
+                contextChatHistory.push({
+                    role: "tool",
+                    content: content.result,
+                    tool_call_id: content.toolCallId
+                });
+            });
+        } else if (entry.role === "user") {
+            contextChatHistory.push({
+                role: entry.role,
+                content: entry.content
+            });
+        } else {
+            if (typeof entry.content === "string") {
+                contextChatHistory.push({
+                    role: entry.role === "bot" ? "assistant" : entry.role,
+                    content: entry.content
+                });
+            } else {
+                contextChatHistory.push({
+                    role: entry.role,
+                    tool_calls: entry.content.map(function (content) {
+                        return {
+                            id: content.toolCallId,
+                            type: "function",
+                            function: {
+                                arguments: JSON.stringify(content.args),
+                                name: content.toolName
+                            }
+                        };
+                    })
+                });
+            }
+        }
+    });
 
-  payloadFields.messages.push(...contextChatHistory);
-  context.payloadFields = payloadFields;
+    payloadFields.messages.push(...contextChatHistory);
+    context.payloadFields = payloadFields;
+
 
   ```
 <hr>

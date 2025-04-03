@@ -11,13 +11,6 @@ The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to
 
 ## Benefits
 
-1. Contextual Interactions
-2. Granular Intent Identification
-3. Entity Collections
-4. Autonomous Actions - Tools
-5. How agent node is a proxy for autonomous agent
-
-
 * **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making bot interactions more natural and user-friendly.
 * **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
 * **Multilingual Support**: The Agent Node supports both English and non-English bot languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
@@ -32,18 +25,18 @@ The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to
 
 #### Model Configuration
 
-The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon Bedrock, and Custom LLM. To learn more, see [Model and Supported Features](../../../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features).
+The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon Bedrock, and Custom LLM. To learn more, see [Model and Supported Features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features).
 
 
 #### Prompt Setup
 
-To leanr more, see [Agen Node Prompt Setup](prompt-setup.md)
+To learn more, see [Agen Node Prompt Setup](prompt-setup.md).
 
 
 
 #### Configure Agent Node 
 
-By default, the Agent Node is disabled. Enable the node from **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**. [Learn more](../../../../generative-ai-tools/dynamic-conversations-features.md/#agent-node).
+By default, the Agent Node is disabled. Enable the node from **Generative AI Tools** > **GenAI Features**. [Learn more](../../generative-ai-tools/dynamic-conversations-features.md/#agent-node).
 
 Add the node to a dialog task and configure the node's properties and tool calling capabilities.  
 
