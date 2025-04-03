@@ -2,9 +2,7 @@
 
 This setup guide helps administrators quickly configure the AI for Work for their users. Learn how to sign up, set up, configure, and invite users to AI for Work.
 
-AI for Work setup consists of the following steps:
-
-- [AI for Work Setup Guide](#ai-for-work-setup-guide)
+AI for Work setup consists of the following steps: 
     - [Step 1: Sign Up for a New AI for Work Account](#step-1-sign-up-for-a-new-ai-for-work-account)
     - [Step 2: Configure User Enrollments, SSO, and Service Accounts](#step-2-configure-user-enrollments-sso-and-service-accounts)
     - [Step 3: Configure LLM and Embedding Models](#step-3-configure-llm-and-embedding-models)
