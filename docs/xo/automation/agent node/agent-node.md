@@ -94,6 +94,10 @@ To define a pre-processor script, click **Define Script**, add the script you wa
 
 ###### Entities
 
+!!! note
+
+    Entity collection is applicable only for V2 Prompts.
+    
 Specify the entities to be collected by LLM during runtime. In the Entities section, click **+ Add**, enter an **Entity Name,** and select the **Entity Type** from the drop-down list.
 
 Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types){:target="_blank"} for more information.

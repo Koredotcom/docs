@@ -1,7 +1,8 @@
 
 # Agent Node Prompt Setup
 
-Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered bots to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables bots to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality
+Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered bots to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables bots to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
+
 To ensure consistency and alignment across interactions, apply prompt engineering techniques to define:
 
 Context Definition
@@ -161,6 +162,152 @@ Use Regular Prompts When:
 * Complete response validation must occur before delivery
 * Implementing the appropriate prompt type based on your specific use case and requirements will ensure optimal performance and user experience.
 
+## Types of Prompts
+
+
+The Agent Node supports two prompt versions: **V1 (Legacy)** and **V2 (Enhanced)**. Each version offers different approaches to handling system prompts, entity management, and tool-based orchestration. Choosing the right prompt version depends on factors such as execution style, exit scenario handling, and integration needs.
+
+The table below highlights the key differences between **V1 and V2 prompts**, helping you determine the best fit for your use case.
+
+
+<table>
+  <tr>
+   <td><strong>Feature</strong>
+   </td>
+   <td><strong>V1 Prompts (Legacy)</strong>
+   </td>
+   <td><strong>V2 Prompts (Enhanced)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Execution Model</strong>
+   </td>
+   <td>Entity-based execution, manual transitions
+   </td>
+   <td>Tool-based execution, automated transitions
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Exit Scenarios</strong>
+   </td>
+   <td>Manually defined within the prompt
+   </td>
+   <td>Managed dynamically via the Exit Orchestration Tool
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Entity Handling</strong>
+   </td>
+   <td>Explicit entity collection required
+   </td>
+   <td>No explicit entity collection
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tool Integration</strong>
+   </td>
+   <td>No tool execution
+   </td>
+   <td>Supports default and custom tools
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Response Structure</strong>
+   </td>
+   <td>Structured, predefined formats
+   </td>
+   <td>Flexible, natural response generation
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Runtime Behavior</strong>
+   </td>
+   <td>Follows predefined transitions, no tool calls
+   </td>
+   <td>Calls tools dynamically based on context
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Post-Processor Scripts</strong>
+   </td>
+   <td>Not required
+   </td>
+   <td>Mandatory for execution
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Import/Export Behavior</strong>
+   </td>
+   <td>V1 to V1 maintains entity structures; V2 import overwrites
+   </td>
+   <td>Version conflict warning when importing V2 into V1
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Availability</strong>
+   </td>
+   <td>Works with all configurations
+   </td>
+   <td>Available only in JavaScript
+   </td>
+  </tr>
+</table>
+
+
+
+### **When to use which prompt**
+
+
+#### **Choose V1 Prompts if you need:**
+
+
+
+* A **legacy-compatible** system without tool integration. \
+
+* **Manual control** over exit scenarios and entity handling. \
+
+* A **structured, entity-driven execution** model. \
+
+* **Predefined response formats** that follow current system behavior. \
+
+
+
+#### **Choose V2 Prompts if you need:**
+
+
+
+* **Automated tool-based orchestration** with dynamic execution. \
+
+* **Exit scenarios managed by the Exit Orchestration Tool** instead of manual rules. \
+
+* **Flexible, natural responses** without strict entity enforcement. \
+
+* **Integration with both default and custom tools** for structured execution. \
+
+* **Post-processor script support** for enhanced control over execution. \
+
+
+
+### **Use Case Scenarios**
+
+If you want a more **real-world approach**, presenting the differences with **scenarios** can be more engaging:
+
+
+
+* **Scenario 1: Maintaining a Legacy Bot \
+** *A banking bot that has predefined customer verification steps and strict entity collection. \
+*
+    * Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. \
+
+* **Scenario 2: Automating Customer Support \
+** *An AI assistant that dynamically suggests troubleshooting steps based on customer queries. \
+*
+    * Uses **V2 prompts** because it needs tool integration and dynamic execution. \
+
+* **Scenario 3: Handling a Mixed Workflow \
+** *A chatbot for insurance claims processing that requires predefined data collection but also uses external tools for verification. \
+*
+    * Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. \
 
 
 ## Custom Prompt for Agent Node
@@ -184,11 +331,10 @@ When you configure pre and post-processor scripts at both node and prompt levels
 
 Let’s review a sample prompt written in Javascript and follow the step-by-step instructions to create a custom prompt. 
 
-Sample JavaScript V1
+=== "Sample JavaScript V1"
 
-```
-
-let payloadFields = {
+  ```
+  let payloadFields = {
   model: "claude-3-5-sonnet-20241022",
   max_tokens: 8192,
   system:`${System_Context}.
@@ -222,182 +368,183 @@ let payloadFields = {
                               - All required functions/tools executed successfully
                               - Final response provided to user
                               - when one of the Scenarios Met from ${Exit_Scenarios}.`,
-  messages: []
-};
+    messages: []
+  };
 
-// Check if List_of_Tools exists and has length
-if (Tools_Definition && Tools_Definition.length) {
-  payloadFields.tools = Tools_Definition.map(tool_info => {
-      return {
-          name: tool_info.name,
-          description: tool_info.description,
-          input_schema: tool_info.parameters
-      };
-  });
-}
-
-// Map conversation history to context chat history
-let contextChatHistory = [];
-if (Conversation_History && Conversation_History.length) {
-    contextChatHistory = Conversation_History.map(function(entry) {
-      return {
-          role: entry.role === "tool" ? "user" : entry.role,
-          content: (typeof entry.content === "string") ? entry.content : entry.content.map(content => {
-              if (content.type === "tool-call") {
-                  return  {
-                        "type": "tool_use",
-                        "id": content.toolCallId,
-                        "name": content.toolName,
-                        "input": content.args
-                    }
-              }
-              else {
-                    return {
-                        "type": "tool_result",
-                        "tool_use_id": content.toolCallId,
-                        "content": content.result
-                    }
-              }
-          })
-      };
-    });
-}
-// Push context chat history into messages
-payloadFields.messages.push(...contextChatHistory);
-
- Add user input to messages
- let lastMessage;
- if (contextChatHistory && contextChatHistory.length) {
-     lastMessage = contextChatHistory[contextChatHistory.length-1];
- }
-
- if (!lastMessage || (lastMessage && lastMessage.role !== "tool")) {
-     payloadFields.messages.push({
-       role: "user",
-      content: `${User_Input}`
-     });
- }
-
-// Assign payloadFields to context
-context.payloadFields = payloadFields;
-
-
-
-```
-
-Sample JavaScript V2
-
-```
-// Ensure to assign the JSON object to the context variable `context.payloadFields` for further processing. Example: context.payloadFields = jsonObject //
-// Importing this template will also import its associated post-processor, which will be available in the post-processor section. //
-
-
-let payloadFields = {
-    model: "gpt-4o",
-    temperature: 0.73,
-    max_tokens: 1068,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-    messages: [
-        {
-            role: "system",
-            content: `You are a professional virtual assistant representing an enterprise business. Maintain a professional demeanor at all times and focus exclusively on business-related conversations. Do not engage with abusive language or non-business topics.
-
-            ${System_Context}
-
-            When processing user instructions, adhere to the following guidelines:
-
-            ${Business_Rules}
-
-            COMMUNICATION GUIDELINES:
-            - Communicate in clear, friendly, professional language in ${language}
-            - Generate appropriate prompts to collect necessary information from users
-            - Use available tools to complete requested tasks efficiently
-            - Before concluding interactions, verify if users require additional assistance
-
-            TOOL USAGE:
-            - Follow each tool's specific description and requirements precisely
-            - Leverage appropriate tools for task completion as needed
-
-            ERROR HANDLING PROTOCOL:
-            1. Invalid Inputs
-               • Provide clear, specific error messages
-               • Guide users to correct input format
-               • Include examples when helpful for clarity
-
-            2. Tool Failures
-               • Display user-friendly error notifications
-               • Offer alternative solutions or retry options
-               • Preserve all previously collected valid data
-
-            3. Business Rule Violations
-               • Clearly explain the specific violation
-               • Guide users toward compliant alternatives
-               • Maintain all valid data already collected
-
-            4. Premature Exit Requests
-               • Confirm user's intention to end interaction
-               • Save progress where applicable
-               • Execute end_orchestration() upon confirmation
-            `
-        }
-    ]
-};
-
-if (Tools_Definition && Tools_Definition.length) {
+  // Check if List_of_Tools exists and has length
+  if (Tools_Definition && Tools_Definition.length) {
     payloadFields.tools = Tools_Definition.map(tool_info => {
         return {
-            type: "function",
-            function: tool_info
+            name: tool_info.name,
+            description: tool_info.description,
+            input_schema: tool_info.parameters
         };
     });
-}
+  }
 
-let contextChatHistory = [];
+  // Map conversation history to context chat history
+  let contextChatHistory = [];
+  if (Conversation_History && Conversation_History.length) {
+      contextChatHistory = Conversation_History.map(function(entry) {
+        return {
+            role: entry.role === "tool" ? "user" : entry.role,
+            content: (typeof entry.content === "string") ? entry.content : entry.content.map(content => {
+                if (content.type === "tool-call") {
+                    return  {
+                          "type": "tool_use",
+                          "id": content.toolCallId,
+                          "name": content.toolName,
+                          "input": content.args
+                      }
+                }
+                else {
+                      return {
+                          "type": "tool_result",
+                          "tool_use_id": content.toolCallId,
+                          "content": content.result
+                      }
+                }
+            })
+        };
+      });
+  }
+  // Push context chat history into messages
+  payloadFields.messages.push(...contextChatHistory);
 
-Conversation_History.forEach(function (entry) {
-    if (entry.role === "tool") {
-        entry.content.forEach(function (content) {
-            contextChatHistory.push({
-                role: "tool",
-                content: content.result,
-                tool_call_id: content.toolCallId
-            });
-        });
-    } else if (entry.role === "user") {
-        contextChatHistory.push({
-            role: entry.role,
-            content: entry.content
-        });
-    } else {
-        if (typeof entry.content === "string") {
-            contextChatHistory.push({
-                role: entry.role === "bot" ? "assistant" : entry.role,
-                content: entry.content
-            });
-        } else {
-            contextChatHistory.push({
-                role: entry.role,
-                tool_calls: entry.content.map(function (content) {
-                    return {
-                        id: content.toolCallId,
-                        type: "function",
-                        function: {
-                            arguments: JSON.stringify(content.args),
-                            name: content.toolName
-                        }
-                    };
-                })
-            });
-        }
-    }
-});
+  Add user input to messages
+  let lastMessage;
+  if (contextChatHistory && contextChatHistory.length) {
+      lastMessage = contextChatHistory[contextChatHistory.length-1];
+  }
 
-payloadFields.messages.push(...contextChatHistory);
-context.payloadFields = payloadFields;
+  if (!lastMessage || (lastMessage && lastMessage.role !== "tool")) {
+      payloadFields.messages.push({
+        role: "user",
+        content: `${User_Input}`
+      });
+  }
 
-```
+  // Assign payloadFields to context
+  context.payloadFields = payloadFields;
+
+  ```
+
+=== "Sample JavaScript V2"
+
+  ```
+  // Ensure to assign the JSON object to the context variable `context.payloadFields` for further processing. Example: context.payloadFields = jsonObject //
+  // Importing this template will also import its associated post-processor, which will be available in the post-processor section. //
+
+
+  let payloadFields = {
+      model: "gpt-4o",
+      temperature: 0.73,
+      max_tokens: 1068,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+      messages: [
+          {
+              role: "system",
+              content: `You are a professional virtual assistant representing an enterprise business. Maintain a professional demeanor at all times and focus exclusively on business-related conversations. Do not engage with abusive language or non-business topics.
+
+              ${System_Context}
+
+              When processing user instructions, adhere to the following guidelines:
+
+              ${Business_Rules}
+
+              COMMUNICATION GUIDELINES:
+              - Communicate in clear, friendly, professional language in ${language}
+              - Generate appropriate prompts to collect necessary information from users
+              - Use available tools to complete requested tasks efficiently
+              - Before concluding interactions, verify if users require additional assistance
+
+              TOOL USAGE:
+              - Follow each tool's specific description and requirements precisely
+              - Leverage appropriate tools for task completion as needed
+
+              ERROR HANDLING PROTOCOL:
+              1. Invalid Inputs
+                • Provide clear, specific error messages
+                • Guide users to correct input format
+                • Include examples when helpful for clarity
+
+              2. Tool Failures
+                • Display user-friendly error notifications
+                • Offer alternative solutions or retry options
+                • Preserve all previously collected valid data
+
+              3. Business Rule Violations
+                • Clearly explain the specific violation
+                • Guide users toward compliant alternatives
+                • Maintain all valid data already collected
+
+              4. Premature Exit Requests
+                • Confirm user's intention to end interaction
+                • Save progress where applicable
+                • Execute end_orchestration() upon confirmation
+              `
+          }
+      ]
+  };
+
+  if (Tools_Definition && Tools_Definition.length) {
+      payloadFields.tools = Tools_Definition.map(tool_info => {
+          return {
+              type: "function",
+              function: tool_info
+          };
+      });
+  }
+
+  let contextChatHistory = [];
+
+  Conversation_History.forEach(function (entry) {
+      if (entry.role === "tool") {
+          entry.content.forEach(function (content) {
+              contextChatHistory.push({
+                  role: "tool",
+                  content: content.result,
+                  tool_call_id: content.toolCallId
+              });
+          });
+      } else if (entry.role === "user") {
+          contextChatHistory.push({
+              role: entry.role,
+              content: entry.content
+          });
+      } else {
+          if (typeof entry.content === "string") {
+              contextChatHistory.push({
+                  role: entry.role === "bot" ? "assistant" : entry.role,
+                  content: entry.content
+              });
+          } else {
+              contextChatHistory.push({
+                  role: entry.role,
+                  tool_calls: entry.content.map(function (content) {
+                      return {
+                          id: content.toolCallId,
+                          type: "function",
+                          function: {
+                              arguments: JSON.stringify(content.args),
+                              name: content.toolName
+                          }
+                      };
+                  })
+              });
+          }
+      }
+  });
+
+  payloadFields.messages.push(...contextChatHistory);
+  context.payloadFields = payloadFields;
+
+  ```
+<hr>
+
+
 
 ### Add Custom Prompt
 The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
@@ -411,6 +558,7 @@ To add an Agent node prompt using JavaScript, follow the steps:
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
 3. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**. 
 4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
+5. In the Request section, you can either create a request from scratch or import the existing prompt from the Library to modify as needed. 
 5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables).  
 <img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
