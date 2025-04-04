@@ -19,7 +19,7 @@ The Automation Node has been enhanced with two levels of autonomy based on your 
 
 
 * **Orchestrated Autonomy**: Structured conversation flows powered by DialogGPT’s intent identification. This option expands the capabilities of the app to act as a universal app and allows you to link one or more automation apps, streamlining orchestration and enabling dynamic routing. 
-* **Full Autonomy**: Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths
+* **Full Autonomy**: Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths.
 
 
 ### Parent App and Linked Apps
@@ -27,7 +27,7 @@ The Automation Node has been enhanced with two levels of autonomy based on your 
 
 
 * The **Parent App** independently manages its own dialogs, FAQs, and Knowledge base and orchestrates the dialogs and FAQs of its linked apps. It uses DialogGPT to dynamically route user input to the appropriate linked app based on detected intents.
-* **Linked Apps** are the apps connected to the parent app. They contribute their dialogs, FAQs, and Knowledgebase to support the parent app's intent resolution and orchestration.
+* **Linked Apps** are the apps connected to the parent app. They contribute their dialogs, and FAQs to support the parent app's intent resolution and orchestration.
 
 For example, imagine you have four apps: App1, App2, App3, and App4. When you link App2, App3, and App4 to App1, App1 becomes the parent app, while App2, App3, and App4 function as the standard/linked apps.
 
@@ -74,33 +74,31 @@ The Universal App leverages DialogGPT and Language Models (LLM) to understand us
     * When a user enters a query, DialogGPT converts it into an embedding.
     * DialogGPT compares the user-input embedding with the stored embeddings to find the most semantically similar chunks.
 3. Intent Identification:
-    * The user input and the most relevant chunks are sent to the Language Model (LLM).
+    * The user input and the most relevant chunks are sent to the LLM.
     * The LLM analyzes this information to identify the most appropriate intent behind the user's query.
 4. Fulfillment and Response: Based on the identified intent, the Universal App determines the appropriate fulfillment type and generates a response. This can involve:
-    * Executing a dialog
-    * Providing an answer from FAQs or knowledge documents
-    * Handling multiple intents
-    * Clarifying ambiguous intents by asking the user for more information
-    * Engaging in small talk when appropriate
+    * Executing a dialog.
+    * Providing an answer from FAQs or knowledge documents.
+    * Handling multiple intents.
+    * Clarifying ambiguous intents by asking the user for more information.
+    * Engaging in small talk when appropriate.
 
 
 ## Setting Up a Universal App
 
-The Automation Node allows you to link multiple apps within your accessible workspace. An app can be linked only if it contains at least one dialog.
+The Automation Node allows you to link multiple apps within your accessible workspace. An app can be linked only if it contains at least one dialog. To configure a universal app functionality, you must have access to at least two apps within the same workspace.
 
-To configure a universal app functionality, you must have access to at least two apps within the same workspace.
-
-Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](../generative-ai-tools/dialog-gpt/#how-to-enable-dialoggpt). To learn more about supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration/#model-configurations).
+Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](../generative-ai-tools/dialog-gpt/#how-to-enable-dialoggpt). To explore supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration/#model-configurations).
 
 Step to set up a Universal App:
 
 
 
-1. Navigate to **Flows & Channels** > **Flows** > **Start Flows** > **Welcome Chat Flow**. Click the Automation Node.  
+1. Navigate to **Flows & Channels** > **Flows** > **Start Flows** > **Welcome Chat Flow**. Click the **Automation Node**.  
 <img src="../images/ua2.png" alt="Universal App" title="Universal App" style="border: 1px solid gray; zoom:80%;"> 
 
 2. On the Component Properties tab, select Conversation Management Approach as **Orchestrated Autonomy**.
-3. In the Automation AI Options section, select **Use GenAI to route to linked apps dynamically**. If DialogGPT is disabled, follow the onscreen instructions to enable it.
+3. In the Automation AI Options section, select **Use GenAI to dynamically route to linked apps**. If DialogGPT is disabled, follow the onscreen instructions to enable it.
 4. Click **+Link Apps**. The available apps to link are displayed.  
 <img src="../images/ua1.png" alt="Universal App" title="Universal App" style="border: 1px solid gray; zoom:80%;"> 
 5. Select the app(s) and click **Save**. The success message is displayed.
@@ -114,7 +112,9 @@ Step to set up a Universal App:
 
 ### Publishing Universal App Functionality
 
-Publishing the Universal App functionality with DialogGPT follows a structured process for which the parent app generates two indexes, i.e. Configured App Index and Published App Index. Keeping the configured and published indexes in sync is essential for maintaining seamless functionality. To learn more about the In-development and Published app, see [Publication Statuses](../deploy/publishing-bot.md).
+Publishing the Universal App functionality with DialogGPT follows a structured process for which the parent app generates two indexes, i.e. Configured App Index and Published App Index. Keeping the configured and published indexes in sync is essential for maintaining seamless functionality.
+
+To learn more about the In-development and Published app, see [Publication Statuses](../deploy/publishing-bot.md).
 
 !!! Note
 

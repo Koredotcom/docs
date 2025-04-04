@@ -1,11 +1,13 @@
 
 # Agent Node Prompt Setup
 
+## Overview
+
 Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered bots to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables bots to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
 
 To ensure consistency and alignment across interactions, apply prompt engineering techniques to define:
 
-Context Definition
+Context Definition:
 
 * Specify the bot’s role (e.g., chatbot or voice assistant) and the communication channel it operates within (text-based or voice-based).
 * Outline the expected response length, preferred level of verbosity, and formality of responses.
@@ -421,7 +423,6 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
     context.payloadFields = payloadFields;
   ```
 
-
 === "Sample JavaScript V2"
 
   ```
@@ -531,8 +532,6 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 
     payloadFields.messages.push(...contextChatHistory);
     context.payloadFields = payloadFields;
-
-
   ```
 <hr>
 
@@ -544,17 +543,18 @@ The process involves creating a new prompt in the Prompts Library and writing th
 
 For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
 
-To add an Agent node prompt using JavaScript, follow the steps:
+#### Add V1 Custom Prompt
+
+To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library**.
 2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
 3. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**. 
-4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable. 
-5. In the Request section, you can either create a request from scratch or import the existing prompt from the Library to modify as needed. 
-5. In the Request section, click **Start from Scratch**. [Learn more](#dynamic-variables).  
-<img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
-
+4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable.
+5. In the Request section, in the Advanced Configuration, select Prompt Version 1 from the drop-down list.
 6. Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
+7. You can either create a request from scratch or import the existing prompt from the Library to modify as needed. For example, click **Start from Scratch**. [Learn more](#dynamic-variables).  
+<img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
@@ -607,10 +607,58 @@ To add an Agent node prompt using JavaScript, follow the steps:
 <img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
+#### Add V2 Custom Prompt
+
+To add an Agent Node V2 prompt, follow the steps:
+
+
+1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
+2. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**.
+3. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided during model integration and are not editable. 
+4. In the Request section, in the Advanced Configuration, select **Prompt Version 2** from the drop-down list. The Switch Version pop-up is displayed. Click **Proceed**. Currently, the Stream Response is not supported for Prompt version 2.
+5. You can either create a Prompt from scratch or import the existing prompt template from the Library to modify as needed. For example, click** Import from Prompts and Requests Library**. The V2 prompt templates are displayed.
+6. Select the **Feature**, **Model**, and Prompt **Template -** **V2** from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
+7. Click **Confirm** to get it imported into the Javascript body. 
+8. (Optional) To add a Pre-Processor Script, click **Configure**. On the Pre-Processor Script pop-up, enter the Script and click **Save**.
+9. Enter the Sample Context Values and click **Test**. To know more about context values, see[ Dynamic Variables](#dynamic-variables).  
+<img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
+
+    You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
+<img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
+
+10. The Actual Response is displayed.
+11. To edit the Post-Processor Script, click **Modify**. On the Pre-Processor Script pop-up, enter the Script and click **Save & Teat**. The response path keys are updated based on the post-processor script.
+  
+    !!! note
+
+        Post-Processor Script is mandatory with using V2 prompt.
+
+12. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
+13. Enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
+14. Click **Test**. The Key Mapping pop-up appears.
+    * If all the key mapping is correct, close the pop-up and go to step 15.  
+    <img src="../images/keymappingright.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+    * If the key mapping, actual response, and expected response structures are mismatched, click **Configure** to write the post-processor script.  
+    <img src="../images/key-map.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
+<img src="../images/promptinlibrary.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+
+16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
+<img src="../images/selectpromptv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+
+
+
+
+
+ 
+
+
 ### Expected Output Structure
 
 Defines the standardized format required by the XO Platform to process LLM responses effectively.
 
+#### Expected Output Structure - V1 Prompt
 
 <table border="1">
   <thead>
@@ -621,7 +669,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
   </thead>
   <tbody>
     <tr>
-      <td>Text Response Format</td>
+      <td>Text Response Format </td>
       <td>
         <pre>
 {
@@ -634,7 +682,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
       </td>
     </tr>
     <tr>
-      <td>Conversation Status Format</td>
+      <td>Conversation Status Format </td>
       <td>
         <pre>
 {
@@ -647,7 +695,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
       </td>
     </tr>
     <tr>
-      <td>Virtual Assistant Response Format</td>
+      <td>Virtual Assistant Response Format </td>
       <td>
         <pre>
 {
@@ -673,7 +721,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
       </td>
     </tr>
     <tr>
-      <td>Tool Response Format</td>
+      <td>Tool Response Format </td>
       <td>
         <pre>
 {
@@ -687,7 +735,7 @@ Defines the standardized format required by the XO Platform to process LLM respo
       </td>
     </tr>
     <tr>
-      <td>Post-Processor Script Format</td>
+      <td>Post-Processor Script Format </td>
       <td>
         <pre>
 {
@@ -705,11 +753,124 @@ Defines the standardized format required by the XO Platform to process LLM respo
       </pre>
       </td>
     </tr>
+    
   </tbody>
 </table>
 
 
+#### Expected Output Structure - V2 Prompt
 
+<h3>Tool Request Format - V2 Prompts</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Format Type</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Custom Tools Format</td>
+    <td>
+      <pre>{
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2isho",
+  "toolName": "get_delivery_date",
+  "args": {
+    "order_id": "123456"
+  }
+}</pre>
+    </td>
+  </tr>
+  <tr>
+    <td>Default - Entity Collection Tool</td>
+    <td>
+      <pre>{
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2ishi",
+  "toolName": "collect_entities",
+  "args": {
+    "PatientName": "Deeksha S"
+  }
+}</pre>
+    </td>
+  </tr>
+  <tr>
+    <td>Default - End Orchestration Tool</td>
+    <td>
+      <pre>{
+  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2iswe",
+  "toolName": "end_orchestration",
+  "args": {
+    "conv_status": "Conversation status to be 'ended'."
+  }
+}</pre>
+    </td>
+  </tr>
+  <tr>
+    <td>Post-Processor Script Format</td>
+    <td>
+      <pre>let scriptResponse = {};
+let tools = [];
+
+if (llmResponse.choices[0].message.content) {
+  scriptResponse.bot = llmResponse.choices[0].message.content;
+}
+
+if (llmResponse.choices[0].message.tool_calls?.length) {
+  tools = llmResponse.choices[0].message.tool_calls.map(tc => ({
+    toolCallId: tc.id,
+    toolName: tc.function.name,
+    args: tc.function.arguments
+  }));
+}
+
+scriptResponse.tools = tools;
+return JSON.stringify(scriptResponse);</pre>
+    </td>
+  </tr>
+  <tr>
+    <td>Conversation History with Inclusion of Tools</td>
+    <td>
+      <pre>[
+  {
+    "role": "user",
+    "content": "Hi. I want to schedule an appointment with Dr. Emily"
+  },
+  {
+    "role": "assistant",
+    "content": "I can help you with that! First, I need to gather some information to schedule your appointment with Dr. Emily.\n\nCould you please provide me with your name and phone number?"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "tool-call",
+        "toolCallId": "call_nsadN6SYIyCpaPLE7QPo4WoI",
+        "toolName": "collect_entities",
+        "args": {
+          "name": "Deeksha",
+          "phone number": "9176858150"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "content": [
+      {
+        "type": "tool-result",
+        "toolCallId": "call_nsadN6SYIyCpaPLE7QPo4WoI",
+        "toolName": "collect_entities",
+        "result": "{\"PatientName\":\"Deeksha\", \"phonenumber\":\"9176858150\"}",
+        "status": "Success"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": "I have successfully collected the following information:\n\n- Patient Name: Deeksha\n- Patient Phone Number: 1234567\n- Doctor Name: Dr. Emily\n\nNow, could you please provide me with your preferred date and time for the appointment?"
+  }
+]</pre>
+    </td>
+  </tr>
+</table>
 
 
 ### Context Object
@@ -736,6 +897,33 @@ The context object is used to get the entities and the parameters of tools.
    </td>
   </tr>
 </table>
+
+
+### Output Keys 
+
+
+<table>
+  <tr>
+   <td><strong>Variable Name</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>LLM_Text_Response_Path
+   </td>
+   <td>The key within the LLM response payload which gives the virtual assistant’s response that should be displayed to the end-user during user-bot conversation.
+   </td>
+  </tr>
+  <tr>
+   <td>LLM_Tool_Response_Path
+   </td>
+   <td>The key within the LLM response payload which the Platform should consider when the model is expecting to call a specific tool/tools.
+   </td>
+  </tr>
+</table>
+
+
 
 
 ### Dynamic Variables
