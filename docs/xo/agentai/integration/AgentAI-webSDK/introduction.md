@@ -12,14 +12,14 @@ Before using the SDK, generate the following:
 
 To generate the above identifiers, follow these steps:
 
-1. Navigate to the [AgentAssist Configuration](https://agentassist.kore.ai/) page.
+1. Navigate to the [AgentAssist Configuration](https://agentassist.kore.ai/){:target="_blank"} page.
 2. Open the **Automations** section.
 3. Create a new bot or import an existing one.
 4. Once the bot is created or imported, its details will be displayed under the **Channels** section of the **Configuration** page.
 
 Generate a JWT **(JSON Web Token)** using the above identifiers.
 
-<img src="../images/web-sdk01.png" alt="web-sdk-channel" title="web-sdk-channel" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/web-sdk01.png" alt="web-sdk-channel" title="web-sdk-channel" style="border: 1px solid gray; zoom:100%;"> 
 
 ## Getting Started
 
