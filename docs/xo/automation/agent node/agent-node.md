@@ -42,7 +42,7 @@ Add the node to a dialog task and configure the node's properties and tool calli
 
 ##### Add Agent Node to a Dialog Task
 
-Steps to add an Agent node to a Dialog Task:
+Steps to add an Agent Node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
 2. You can add the Agent Node just like any other node. You can find it in the main list of nodes.  

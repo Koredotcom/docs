@@ -320,7 +320,7 @@ When you configure pre and post-processor scripts at both node and prompt levels
 
 !!! note
 
-    Node-level pre and post-processor scripts support [App Functions](../../../../app-settings/dev-tools/reusing-bot-functions-custom-script-file.md) in addition to content, context, and environment variables.
+    Node-level pre and post-processor scripts support [App Functions](../../app-settings/dev-tools/reusing-bot-functions-custom-script-file.md) in addition to content, context, and environment variables.
 
 
 
@@ -541,20 +541,21 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. Once the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
 
 
-For more information on Custom Prompt, see [Prompts and Requests Library](../../../../generative-ai-tools/prompts-library.md).
+For more information on Custom Prompt, see [Prompts and Requests Library](../../generative-ai-tools/prompts-library.md).
 
 #### Add V1 Custom Prompt
 
 To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
-1. Go to **Generative AI Tools** > **Prompts Library**.
-2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
+1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
 3. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**. 
 4. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided while model integration and are not editable.
-5. In the Request section, in the Advanced Configuration, select Prompt Version 1 from the drop-down list.
+5. In the Request section, in the Advanced Configuration, select Prompt Version 1 from the drop-down list.  
+<img src="../images/v1dropdown.png" alt="Select Prompt" title="Select Prompt Version" style="border: 1px solid gray; zoom:70%;">
+
 6. Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
 7. You can either create a request from scratch or import the existing prompt from the Library to modify as needed. For example, click **Start from Scratch**. [Learn more](#dynamic-variables).  
-<img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/v1toolcall.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
@@ -579,9 +580,10 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**.
 12. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.  
-<img src="../images/essentialkeys.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/essentialkeysv1.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 
 13. Enter the **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
+
 14. Click **Test**. The Key Mapping pop-up appears.
     1. If all the key mapping is correct, close the pop-up and go to step 15.  
     <img src="../images/keymappingright.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
@@ -615,10 +617,21 @@ To add an Agent Node V2 prompt, follow the steps:
 1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
 2. Enter the **prompt name**. In the **feature** dropdown, select **Agent Node** and select the **model**.
 3. The Configuration section consists of End-point URLs, Authentication, and Header values required to connect to a large language model. These are auto-populated based on the input provided during model integration and are not editable. 
-4. In the Request section, in the Advanced Configuration, select **Prompt Version 2** from the drop-down list. The Switch Version pop-up is displayed. Click **Proceed**. Currently, the Stream Response is not supported for Prompt version 2.
-5. You can either create a Prompt from scratch or import the existing prompt template from the Library to modify as needed. For example, click** Import from Prompts and Requests Library**. The V2 prompt templates are displayed.
-6. Select the **Feature**, **Model**, and Prompt **Template -** **V2** from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
-7. Click **Confirm** to get it imported into the Javascript body. 
+4. In the Request section, in the Advanced Configuration, select **Prompt Version 2** from the drop-down list. The Switch Version pop-up is displayed. Click **Proceed**.  
+<img src="../images/v2dropdown.png" alt="Select Prompt" title="Select Prompt Version" style="border: 1px solid gray; zoom:70%;">
+
+5. Currently, the Stream Response is not supported for Prompt version 2.
+5. You can either create a Prompt from scratch or import the existing prompt template from the Library to modify as needed. For example, click **Import from Prompts and Requests Library**. The V2 prompt templates are displayed.  
+<img src="../images/v2toolcall.png" alt="Import from Prompts and Requests Library" title="Import from Prompts and Requests Library" style="border: 1px solid gray; zoom:70%;">
+
+    !!! note
+
+        Importing the V2 prompt template also imports the post-processor automatically.
+
+6. Select the **Feature**, **Model**, and Prompt **Template - V2** from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.  
+<img src="../images/selectv2template.png" alt="Select V2 Prompt Template" title="Select V2 Prompt Template" style="border: 1px solid gray; zoom:70%;">
+
+7. Click **Confirm** to get it imported into the Javascript body. Modify the prompt as required.
 8. (Optional) To add a Pre-Processor Script, click **Configure**. On the Pre-Processor Script pop-up, enter the Script and click **Save**.
 9. Enter the Sample Context Values and click **Test**. To know more about context values, see[ Dynamic Variables](#dynamic-variables).  
 <img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
@@ -627,22 +640,24 @@ To add an Agent Node V2 prompt, follow the steps:
 <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
 <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
-10. The Actual Response is displayed.
+10. The Actual Response is displayed.  
+<img src="../images/essentialkeysv2.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+
 11. To edit the Post-Processor Script, click **Modify**. On the Pre-Processor Script pop-up, enter the Script and click **Save & Teat**. The response path keys are updated based on the post-processor script.
   
     !!! note
 
-        Post-Processor Script is mandatory with using V2 prompt.
+        Post-Processor Script is mandatory when using V2 prompt.
 
 12. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 13. Enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality.
 14. Click **Test**. The Key Mapping pop-up appears.
     * If all the key mapping is correct, close the pop-up and go to step 15.  
-    <img src="../images/keymappingright.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/keymappingright.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
     * If the key mapping, actual response, and expected response structures are mismatched, click **Configure** to write the post-processor script.  
-    <img src="../images/key-map.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/v2key-map.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/promptinlibrary.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/promptinlibraryv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
 <img src="../images/selectpromptv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
@@ -758,9 +773,8 @@ Defines the standardized format required by the XO Platform to process LLM respo
 </table>
 
 
-#### Expected Output Structure - V2 Prompt
+#### Tool Request Format - V2 Prompt
 
-<h3>Tool Request Format - V2 Prompts</h3>
 
 <table border="1" cellpadding="6" cellspacing="0">
   <tr>
