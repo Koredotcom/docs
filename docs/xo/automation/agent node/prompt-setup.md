@@ -604,10 +604,10 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
         2. The expected LLM response structure is displayed. If the LLM response is not aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/promptinlibrary.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
-<img src="../images/selectprompt.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/selectv1.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
     If the default prompt is selected, the system will display a warning that “Tools calling functionality requires custom prompts with streaming disabled.  
 <img src="../images/errornote.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
@@ -662,10 +662,10 @@ To add an Agent Node V2 prompt, follow the steps:
     * If the key mapping, actual response, and expected response structures are mismatched, click **Configure** to write the post-processor script.  
     <img src="../images/v2key-map.png" alt="Key Mapping" title="Key Mapping" style="border: 1px solid gray; zoom:70%;">
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/promptinlibraryv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
-<img src="../images/selectpromptv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/selectv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
 
