@@ -113,63 +113,23 @@ can click the **+ Add Query** button to add any other queries. Click
 
 ![](images/preview_bot.png)
 
-#### Step 4: Publish Bot Agent
+#### Step 4: Publish your agent and define access permissions and enablement.
 
-In the **Publish** section, you can publish the agent so the users can use it as
-required.
+**Specify publishing details**:
 
--   Enter the **Published version** number.
+* **Publish To**: Define access permissions:
+    * **Everyone in the Account**: Make the agent available to all users.
+    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+* **Enablement Type**: Configure how users interact with the agent:
+    * **Always Enabled**: The agent remains active and cannot be disabled.
+    * **Users Choice**: Users can enable or disable the agent as needed.
 
--   Select the option to **Publish to** either Admins, Selected users, or
-    Everyone in the account.
-
--   **Enablement Type**: Define how end users can enable or disable the agent
-    from the agent store.
-
-    -   **Always Enabled:** Users cannot disable the agent; it is always active.
-
-    -   **User's Choice:** Users can choose whether to enable or disable the
-        agent as needed
-
-    ![](images/publish_bot.png)
-
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 The user can see this agent in the **Agents list** on the **Agents** page.
 
 **Note**: On the Agents list page, you can click the three dots icon
 corresponding to the agent's name and publish the agent later if necessary.
-
-##  Modify a Bot Agent Details
-
-You can change the form if required.
-
-To modify the agent, follow these steps:
-
-1.  Navigate to the Agents list page and locate the agent you wish to
-    modify.![](images/export_bot.png)
-
-2.  Click the three dots icon next to the agent’s name. A menu with the
-    following options will appear:
-
-    -  **Edit** – Open and modify the agent's details.
-
-    -  **Publish/Unpublish** – Change the agent's status.
-
-    -  **Export Agent** - The agent's data is packaged into a ZIP file for
-        download, migration, or import into another system.
-
-    -  **Delete** – Permanently remove the agent.
-
-3.  Click on the required option and continue to complete the modifications as
-    needed.
-
-
-## Agent Option
-
-The agent options allow you to export, delete, and un-publish the agent.
-
-![](images/agent_option_bot.png)
-
 
 ## User Interaction
 
