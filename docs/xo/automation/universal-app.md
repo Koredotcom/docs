@@ -27,7 +27,7 @@ The Automation Node has been enhanced with two levels of autonomy based on your 
 
 
 * The **Parent App** independently manages its own dialogs, FAQs, and Knowledge base and orchestrates the dialogs and FAQs of its linked apps. It uses DialogGPT to dynamically route user input to the appropriate linked app based on detected intents.
-* **Linked Apps** are the apps connected to the parent app. They contribute their dialogs, and FAQs to support the parent app's intent resolution and orchestration.
+* **Linked Apps** are the apps connected to the parent app. They contribute their dialogs and FAQs to support the parent app's intent resolution and orchestration.
 
 For example, imagine you have four apps: App1, App2, App3, and App4. When you link App2, App3, and App4 to App1, App1 becomes the parent app, while App2, App3, and App4 function as the standard/linked apps.
 
@@ -88,7 +88,7 @@ The Universal App leverages DialogGPT and Language Models (LLM) to understand us
 
 The Automation Node allows you to link multiple apps within your accessible workspace. An app can be linked only if it contains at least one dialog. To configure a universal app functionality, you must have access to at least two apps within the same workspace.
 
-Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](../generative-ai-tools/dialog-gpt/#how-to-enable-dialoggpt). To explore supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration/#model-configurations).
+Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](../generative-ai-tools/dialog-gpt/#how-to-enable-dialoggpt). To explore supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations).
 
 Step to set up a Universal App:
 

@@ -3,6 +3,8 @@
 
 ## Overview
 
+This article provides a comprehensive overview of how to implement and optimize LLM-based bots in Kore.ai using the Agent Node, focusing on prompt engineering techniques to refine bot behavior and improve the user experience.
+
 Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered bots to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables bots to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
 
 To ensure consistency and alignment across interactions, apply prompt engineering techniques to define:
@@ -545,6 +547,8 @@ For more information on Custom Prompt, see [Prompts and Requests Library](../../
 
 #### Add V1 Custom Prompt
 
+For details, see [When to use V1 Prompt.](#when-to-use-v1-prompts)
+
 To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 1. Go to **Generative AI Tools** > **Prompts Library** and click **+ New Prompt**.
@@ -611,6 +615,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 #### Add V2 Custom Prompt
 
+For details, see [When to use V2 Prompt.](#when-to-use-v2-prompts)
 To add an Agent Node V2 prompt, follow the steps:
 
 
@@ -1015,7 +1020,7 @@ Keys
    </td>
   </tr>
   <tr>
-   <td>{{Collected_Entities}} Optional
+   <td>{{Collected_Entities}} Optional <br>(Applicable only to V1 Prompt)
    </td>
    <td>List of entities and their values collected by the LLM. This is an object with an entity name as the key and the value as LLM collected value.
    </td>
