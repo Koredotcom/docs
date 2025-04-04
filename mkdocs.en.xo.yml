@@ -438,9 +438,6 @@ nav:
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
       - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
-      - Connectors: 
-        - Introduction: quality-management/connectors/connector-intro.md
-        - Amazon S3: quality-management/connectors/amazon-s3.md
       - Analyze:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
@@ -460,9 +457,12 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Evaluation Forms: quality-management/configure/evaluation-forms.md
-          - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-          - Agent Scorecards: quality-management/configure/agent-scorecards.md
+            - Evaluation Forms: quality-management/configure/evaluation-forms.md
+            - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
+        - Agent Scorecards: quality-management/configure/agent-scorecards.md
+        - Connectors: 
+            - Introduction: quality-management/connectors/connector-intro.md
+            - Amazon S3: quality-management/connectors/amazon-s3.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
