@@ -8,7 +8,7 @@ This document provides information on the feature updates and enhancements intro
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Voice Gateway (v0.9.3-8)
+### Voice Gateway
 
 #### Added New Call Control Parameters to Support Deepgram
 
