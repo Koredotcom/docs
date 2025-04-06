@@ -42,10 +42,6 @@ Twilio numbers that are inactive for over three months will be deleted automatic
 * Start Flows page
 * Voice Gateway page
 
-#### Support for OpenAI RealTime API - Agentic App
-
-The XO Platform now integrates real-time voice capabilities with the Agent Platform through Kore Voice Gateway's OpenAI RealTime API support. This enhancement extends the existing integration to enable seamless, natural voice interactions with autonomous agents, allowing for more responsive conversations when using the Agent Platform's capabilities. The update includes real-time voice streaming through Kore Voice Gateway, channel-aware orchestration and agent prompts, direct agent invocation for voice interactions when appropriate, and voice streaming from XO to users based on agent responses.
-
 <hr>
 
 ## v11.11.1 March 15, 2025
