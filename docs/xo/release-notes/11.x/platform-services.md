@@ -14,9 +14,9 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 New call control parameters are added for Deepgram ASR integration. Developers can now configure three additional parameters to improve transcription quality:
 
-* **smart_format**: Enables automatic numbers, dates, and punctuation formatting for more readable transcriptions.
-* **filler_words**: Controls whether filler words (um, uh, like) appear in transcriptions.
-* **keyterm**: Allows you to improve the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90 percent.
+* `smart_format`: Enables automatic numbers, dates, and punctuation formatting for more readable transcriptions.
+* `filler_words`: Controls whether filler words (um, uh, like) appear in transcriptions.
+* `keyterm`: Allows you to improve the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90 percent.
 These parameters are available in the call control parameters section when configuring experience flows. They give developers more control over transcription output without requiring additional setup. Learn more.
 
 #### Updated TTS Selection for OpenAI TTS
@@ -34,13 +34,6 @@ When 'AWS Amazon Polly' is selected as the Text-to-Speech (TTS) engine, users ca
 * Flows & Channels → Start Flows,
 * Start Node in a Start Flow,
 * Kore Voice Gateway → Voice Preferences → Manage
-
-#### Delete Inactive Twilio Numbers
-
-Twilio numbers that are inactive for over three months will be deleted automatically. App Owner and App Developer roles will receive email notifications 7 days before and after deletion. A notification will also be displayed at the following locations:
-
-* Start Flows page
-* Voice Gateway page
 
 <hr>
 
