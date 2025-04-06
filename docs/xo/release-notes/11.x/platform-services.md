@@ -2,6 +2,52 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Voice Gateway (v0.9.3-8)
+
+#### Added New Call Control Parameters to Support Deepgram
+
+New call control parameters are added for Deepgram ASR integration. Developers can now configure three additional parameters to improve transcription quality:
+
+* **smart_format**: Enables automatic numbers, dates, and punctuation formatting for more readable transcriptions.
+* **filler_words**: Controls whether filler words (um, uh, like) appear in transcriptions.
+* **keyterm**: Allows you to improve the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90 percent.
+These parameters are available in the call control parameters section when configuring experience flows. They give developers more control over transcription output without requiring additional setup. Learn more.
+
+#### Updated TTS Selection for OpenAI TTS
+
+Updated the text-to-speech provider name from "Whisper" to "OpenAI TTS" for improved clarity and brand alignment. This change affects three key locations: Start Flow, Voice Preferences, and Start Node's general settings. Learn more.
+
+#### Configurable Answering Machine Detection (AMD) for Inbound Calls
+
+An Answering Machine Detection (AMD) flag is added in the Experience Flows, allowing selective enablement for inbound calls. This flag, located under ‘Start Flow’ → ‘Answering Machine Detection (AMD)’, prevents unnecessary AMD processing and reduces latency. When enabled, the system detects answering machines in incoming calls and stores results in context variables for use in Dialog/Experience flows. This option is exclusive to Voice Start Flows. A checkbox allows users to automatically disconnect the call upon machine detection, streamlining call handling based on business needs. Learn more.
+
+#### Expanded Amazon Polly Voice Selection in TTS Dropdown
+
+When 'AWS Amazon Polly' is selected as the Text-to-Speech (TTS) engine, users can now access the full list of generative voices available for AWS Amazon Polly. These voices can be selected at the following locations:
+
+* Flows & Channels → Start Flows,
+* Start Node in a Start Flow,
+* Kore Voice Gateway → Voice Preferences → Manage
+
+#### Delete Inactive Twilio Numbers
+
+Twilio numbers that are inactive for over three months will be deleted automatically. App Owner and App Developer roles will receive email notifications 7 days before and after deletion. A notification will also be displayed at the following locations:
+
+* Start Flows page
+* Voice Gateway page
+
+#### Support for OpenAI RealTime API - Agentic App
+
+The XO Platform now integrates real-time voice capabilities with the Agent Platform through Kore Voice Gateway's OpenAI RealTime API support. This enhancement extends the existing integration to enable seamless, natural voice interactions with autonomous agents, allowing for more responsive conversations when using the Agent Platform's capabilities. The update includes real-time voice streaming through Kore Voice Gateway, channel-aware orchestration and agent prompts, direct agent invocation for voice interactions when appropriate, and voice streaming from XO to users based on agent responses.
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u> Patch Release </u>

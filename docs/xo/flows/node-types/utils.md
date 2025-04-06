@@ -279,6 +279,89 @@ agentUtils.setExternalAgentRecordingControl({record: "pause"})
 agentUtils.setExternalAgentRecordingControl({record: "resume"})
 ```
 
+### Enable/Disable Transcripts and Recordings for Kore Contact Center AI
+
+Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Kore CCAI Desktop. You can use these functions to:
+
+* Control transcript availability during agent transfers
+* Control recording generation during agent transfers
+* Apply both controls simultaneously when needed
+
+#### Disabling Transcripts
+
+To disable transcripts before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentTranscribe({transcribe: false});
+```
+
+* Transcripts will not be accessible to the agent on both the 'Live Interaction' and 'Interactions' pages.
+* The following note will appear near the transcripts widget on the 'Interactions' page: \
+“Note: Certain parts of this call were not transcribed due to the applied transcription settings”.
+
+#### Disabling Recordings
+
+To disable recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentRecordingControl({record: "stop"});
+```
+
+* Recordings will not be generated for that agent interaction.
+* The following note will appear near the recording widget on the 'Interactions' page:  
+ “**Note**: Certain parts of this call were not recorded due to the applied recording settings.”  
+
+ !!! Note
+
+    If recordings are disabled at the global account level, the existing note content will be displayed instead.
+
+#### Disabling Both Transcripts and Recordings
+
+To disable both transcripts and recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentTranscribe({transcribe: false});
+agentUtils.setAgentRecordingControl({record: "stop"});
+```
+
+* Combines the effects of both individual controls as described above
+
+**Example**:
+
+Below is an example of how to disable both transcripts and recordings before transferring to an agent:
+
+```
+// In a script node before agent transfer
+try {
+  // Disable transcripts for the agent
+  agentUtils.setAgentTranscribe({transcribe: false});
+
+
+  // Disable recording for the agent interaction
+  agentUtils.setAgentRecordingControl({record: "stop"});
+
+
+  // Now proceed with agent transfer
+  // Your agent transfer code here...
+
+
+} catch (error) {
+  console.error("Error setting agent controls:", error);
+}
+```
+
+!!! Notes
+
+    * These controls should be applied before initiating the agent transfer.
+    * The functionality works specifically with transfers to Kore Agent Desktop.
+    * The controls affect only the specified agent interaction, not the entire conversation.
+
 ## userSessionUtils
 
 **Get**: Use this function to get the value associated within a key within the “userSession” object in the conversation context. You can get the value associated with the key using this script.

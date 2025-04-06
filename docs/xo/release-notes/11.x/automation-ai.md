@@ -2,6 +2,18 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+### API
+
+#### Call ID Support in getSessions API
+
+The getSessions API has been updated to accept callId as an optional query parameter. When provided with a valid callId, the API returns the corresponding session details, matching the functionality already available in the Conversation History API. [Learn more :octicons-arrow-right-24:](../../apis/automation/get-sessions-history.md)
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u>Patch Release</u>
