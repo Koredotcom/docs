@@ -3,7 +3,7 @@
 **Dispositions** represent a label that agents assign to the outcome of a conversation. In Contact Center AI, you can create **disposition sets** to organize **disposition codes** according to your business requirements.
 
 To reach this feature, go to **Contact Center AI > AGENT & SUPERVISORS > Dispositions**.
-<img src="../images/dispositions-page.png" alt="
+<img src="../images/dispositions-screen.png" alt="
 Dispositions Page" title="Dispositions Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Disposition Sets
@@ -11,7 +11,7 @@ Dispositions Page" title="Dispositions Page" style="border: 1px solid gray; zoom
 A Disposition Set is a group of disposition codes that you can assign to queues or agent groups to collect information at the end of a conversation. The disposition codes within a set act as fields that agents must populate when ending an interaction.
 
 The Dispositions section opens with the **Disposition Sets** tab preselected.
-<img src="../images/disposition-sets.png" alt="
+<img src="../images/disposition-sets-tab.png" alt="
 Disposition Sets Tab" title="Disposition Sets Tab" style="border: 1px solid gray; zoom:80%;">
 
 The **Resolution** Disposition Set comes prebuilt. Administrators can enable/disable and edit the resolution disposition set. [Learn more](#edit-a-disposition-set).
@@ -32,14 +32,15 @@ Within the Disposition Sets section, you can perform the following:
     2. **Actions**: This column lists the _Edit_ option for custom sets,
     3. **Description**: A short description of the Disposition Set,
     4. **Codes**: Lists the number of codes contained within a set,
-    5. **Status**: Lists whether the set is enabled or disabled.
+    5. **Dispositions**: Whether the disposition is Required/Optional.
+    6. **Status**: Lists whether the set is enabled or disabled.
 
 ### Add a Disposition Set
 
 To add a new Disposition Set, follow these steps:
 
 1. Under _Dispositions > Disposition Sets_, click **Add Set**.
-<img src="../images/add-set.png" alt="
+<img src="../images/add-set-button.png" alt="
 Add Set Button" title="Add Set Button" style="border: 1px solid gray; zoom:80%;">
 
 2. In the New Disposition Set window, configure the following:
@@ -67,22 +68,41 @@ To assign a code:
 1. Click **Add Code**.
 2. **Search for and select** the desired code from the list of available codes.
 
-To delete a code, click the **Delete** (bin) icon on the right.
+Click the **Delete** (bin) icon on the right to delete a code.
+
+To notify supervisors:
+
+1. Click the **Notify** tab.
+
+    !!! Note
+
+        This tab appears only if email/toast alerts are enabled.
+
+2. Click Add Supervisor.
+3. Search for and select the supervisor from the list of supervisors. 
+
+Click the Delete (bin) icon on the right to delete a supervisor. 
+
+##### Email/Toast Alerts
+
+* If a disposition set contains only one disposition code with alerts enabled, the system triggers a notification when that code is tagged in a conversation with the provision to go to the interactions tab.
+* When multiple disposition codes within the set have alerts enabled, a single notification will be sent, tagging one of the selected disposition codes. Notification criteria remain the same for email and toast notifications.
+* A secondary notification email can be enabled. The supervisor will receive the notification in their configured email.
 
 #### Enable or Disable a Set
 
-By default, new Disposition Sets are enabled. Turn off the toggle if you want to disable a Disposition Code.
+By default, new Disposition Sets are enabled. Turn off the toggle if you want to disable a Disposition Set.
 <img src="../images/new-disposition-set-enabled.png" alt="Enable New Disposition Set" title="Enable New Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 Click **Create** when ready. Below is a short demo that shows you how to add a new Disposition Set.
-<img src="../images/add-disposition-set.gif" alt="Add New Disposition Set" title="Add New Disposition Set" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/disposition-process.gif" alt="Add New Disposition Set" title="Add New Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Disposition Set
 
-To edit a Disposition Set, follow these steps: 
+To edit a Disposition Set, follow these steps:
 
 1. Click the **Edit** icon corresponding to the set you want to edit.
-<img src="../images/edit-button.png" alt="Edit a Disposition Set" title="Edit a Disposition Set" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-set.png" alt="Edit a Disposition Set" title="Edit a Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 2. In the _Edit Disposition Set_ window, make the required changes and click **Save**.
 

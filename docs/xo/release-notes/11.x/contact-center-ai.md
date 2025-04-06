@@ -12,7 +12,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 #### Agent Console Search Functionality
 
-The Agent Console's search functionality allows agents to quickly find active customer conversations using phone numbers, emails, or names. Located in the conversation tray, it shows results as you type and lets you click to open conversations. Enabled by default for all agents, this enhancement reduces handling time and improves efficiency with no setup required.
+The Agent Console's search functionality allows agents to quickly find active customer conversations using phone numbers, emails, or names. Located in the conversation tray, it shows results as you type and lets you click to open conversations. Enabled by default for all agents, this enhancement reduces handling time and improves efficiency with no setup required. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#search-conversations)
 
 #### Disposition Alerts for Supervisor Attention
 
@@ -21,6 +21,8 @@ Supervisors will receive real-time alerts when disposition codes requiring super
 * Proactive in-platform notifications for flagged dispositions.
 * Automated email alerts are sent to their registered UXO platform email.
 * Multi-language support, with emails and notifications translated based on the conversation language.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes)
 
 #### Independent Widget Loading
 
@@ -169,7 +171,6 @@ Key features
 * Fixed Layout Design: Standardized, non-customizable widget arrangement
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md)
-
 
 #### Interaction Details by Segment Report
 

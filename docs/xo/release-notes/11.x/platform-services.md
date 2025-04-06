@@ -22,7 +22,7 @@ New call control parameters have been added to improve transcription quality whe
 
 #### Updated TTS Selection for OpenAI TTS
 
-The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node.
+The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences)
 
 #### Configurable Answering Machine Detection (AMD) for Inbound Calls
 

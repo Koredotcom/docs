@@ -26,6 +26,24 @@ Color codes help in easy identification and better readability of conversations 
 * New email conversations in the conversations tray.
 <img src="../images/new-email.png" alt="New Email Notification" title="New Email Notification" style="border: 1px solid gray; zoom:50%;">
 
+## Search Conversations
+
+The Search functionality allows agents to find customer conversations by phone number, email, or name. Located on the left side of the Agent Console within the conversation tray, this feature improves efficiency and reduces case handling time.  
+<img src="../images/search-bar-tray.png" alt="Conversation Tray Search Bar" title="Conversation Tray Search Bar" style="border: 1px solid gray; zoom:80%;">  
+
+### Using the Search Functionality
+
+* Start typing a phone number, email address, or customer name in the search field, and matching results will appear automatically. Click any result to open that conversation.  
+<img src="../images/search-name.png" alt="Search Name" title="Search Name" style="border: 1px solid gray; zoom:80%;">  
+
+* A "No results found" message is displayed if no matches exist.  
+<img src="../images/no-results.png" alt="No Results" title="No Results" style="border: 1px solid gray; zoom:80%;">  
+
+!!! Notes
+
+    * The search functionality supports names in all languages configured in the system.
+    * This feature is enabled by default for all agents and only returns active conversations based on your input.
+
 ## Conversation Information
 
 This section displays data about the conversations you are handling.
