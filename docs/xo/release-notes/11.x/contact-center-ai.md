@@ -38,6 +38,8 @@ Agents can view past call details for both Inbound and Outbound calls in the Cal
 * A comprehensive view of previous interactions helps agents understand customer context.
 * Voice call conversation volleys are displayed through the conversation transcript, ensuring quick access to past discussions.
 
+[Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#history)
+
 ### Configuration
 
 #### Total Digital Conversation Limit
