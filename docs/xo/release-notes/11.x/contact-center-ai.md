@@ -40,7 +40,7 @@ Agents can view past call details for both Inbound and Outbound calls in the Cal
 
 #### Total Digital Conversation Limit
 
-The Total Digital Conversation Limit improves agent workload management across all digital channels. When enabled, this unified limit automatically marks agents as "system busy" once they reach their combined conversation threshold, regardless of channel type.
+The Total Digital Conversation Limit improves agent workload management across all digital channels. When enabled, this unified limit automatically marks agents as "system busy" once they reach their combined conversation threshold, regardless of channel type. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#total-digital-conversation-limit)
 
 #### AgentUtils: Transcript and Recording Controls for Agent Desktop
 

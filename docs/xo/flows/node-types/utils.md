@@ -281,7 +281,7 @@ agentUtils.setExternalAgentRecordingControl({record: "resume"})
 
 ### Enable/Disable Transcripts and Recordings for Kore Contact Center AI
 
-Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Kore CCAI Desktop. You can use these functions to:
+Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Contact Center AI Desktop. You can use these functions to:
 
 * Control transcript availability during agent transfers
 * Control recording generation during agent transfers
@@ -298,8 +298,8 @@ agentUtils.setAgentTranscribe({transcribe: false});
 ```
 
 * Transcripts will not be accessible to the agent on both the 'Live Interaction' and 'Interactions' pages.
-* The following note will appear near the transcripts widget on the 'Interactions' page: \
-“Note: Certain parts of this call were not transcribed due to the applied transcription settings”.
+* The following note will appear near the transcripts widget on the 'Interactions' page:  
+“**Note**: Certain parts of this call were not transcribed due to the applied transcription settings”.
 
 #### Disabling Recordings
 
@@ -349,10 +349,6 @@ try {
 
   // Now proceed with agent transfer
   // Your agent transfer code here...
-
-
-} catch (error) {
-  console.error("Error setting agent controls:", error);
 }
 ```
 
