@@ -10,22 +10,22 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 ### Voice Gateway
 
-#### Added New Call Control Parameters to Support Deepgram
+#### New Call Control Parameters to Support Deepgram
 
-New call control parameters are added for Deepgram ASR integration. Developers can now configure three additional parameters to improve transcription quality:
+New call control parameters have been added to improve transcription quality when Deepgram ASR is used. The parameters can be configured directly in the call control section of experience flows, allowing users greater control over transcription output.
 
 * `smart_format`: Enables automatic numbers, dates, and punctuation formatting for more readable transcriptions.
 * `filler_words`: Controls whether filler words (um, uh, like) appear in transcriptions.
 * `keyterm`: Allows you to improve the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90 percent.
-These parameters are available in the call control parameters section when configuring experience flows. They give developers more control over transcription output without requiring additional setup. Learn more.
+These parameters are available in the call control parameters section when configuring experience flows. They give developers more control over transcription output without requiring additional setup.
 
 #### Updated TTS Selection for OpenAI TTS
 
-Updated the text-to-speech provider name from "Whisper" to "OpenAI TTS" for improved clarity and brand alignment. This change affects three key locations: Start Flow, Voice Preferences, and Start Node's general settings. Learn more.
+The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node.
 
 #### Configurable Answering Machine Detection (AMD) for Inbound Calls
 
-An Answering Machine Detection (AMD) flag is added in the Experience Flows, allowing selective enablement for inbound calls. This flag, located under ‘Start Flow’ → ‘Answering Machine Detection (AMD)’, prevents unnecessary AMD processing and reduces latency. When enabled, the system detects answering machines in incoming calls and stores results in context variables for use in Dialog/Experience flows. This option is exclusive to Voice Start Flows. A checkbox allows users to automatically disconnect the call upon machine detection, streamlining call handling based on business needs. Learn more.
+The Experience Flows now include an Answering Machine Detection (AMD) option ('Start Flow' → 'Answering Machine Detection (AMD)'), which can be selectively enabled for inbound calls. The flag helps reduce latency by preventing unnecessary AMD processing. When enabled, the system will detect answering machines in incoming calls and store the results in context variables that can be used in Dialog/Experience flows. This feature is only available for Voice Start Flows and includes a checkbox that allows users to automatically disconnect calls upon machine detection, streamlining call handling based on specific business requirements.
 
 #### Expanded Amazon Polly Voice Selection in TTS Dropdown
 
