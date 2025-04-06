@@ -14,10 +14,9 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 New call control parameters have been added to improve transcription quality when Deepgram ASR is used. The parameters can be configured directly in the call control section of experience flows, allowing users greater control over transcription output.
 
-* `smart_format`: Enables automatic numbers, dates, and punctuation formatting for more readable transcriptions.
-* `filler_words`: Controls whether filler words (um, uh, like) appear in transcriptions.
-* `keyterm`: Allows you to improve the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90 percent.
-These parameters are available in the call control parameters section when configuring experience flows. They give developers more control over transcription output without requiring additional setup.
+* `smart_format`: Enables automatic formatting of numbers, dates, and punctuation for improved readability.
+* `filler_words`: Controls the inclusion of filler words (um, uh, like) in transcriptions.
+* `keyterm`: Boosts the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90%.
 
 #### Updated TTS Selection for OpenAI TTS
 
