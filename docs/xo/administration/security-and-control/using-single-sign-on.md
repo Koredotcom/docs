@@ -180,7 +180,9 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
                 * Bot Builder Access
                 * New Bot Creation
                 * Manage Data Tables and Views
-    7. **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
+                
+    7. **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests. 
+    
         
 
 

@@ -883,7 +883,7 @@ When disabled, the platform generates a strict pattern that does ‘exact matchi
 
 ### Suppress_Fallback_On_TaskFulfilment
 
-This feature enables users to prevent the platform from processing additional user input after a dialog ends with a **fulfilled** end reason, especially in scenarios where the **“End of Task”** event is **disabled** in the Virtual Assistant configuration.
+This feature enables users to prevent the platform from processing additional user input after a dialog ends with a **fulfilled** end reason, especially in scenarios where the **End of Task** event is **disabled** in the Virtual Assistant configuration.
 
 This allows users (especially those leveraging **BotKit** for task orchestration) to maintain precise control over dialog closures without unintended **Intent Not Found** triggers.
 
