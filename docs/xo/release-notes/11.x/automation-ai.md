@@ -108,6 +108,8 @@ This update include only bug fixes.
 
 <u> Minor Release </u>
 
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
 ### Build Agentic Experiences
 
 #### Agent Node Tool Calling Enhanced with Jump-to-Node Transition Capability
@@ -150,7 +152,6 @@ DialogGPT's comprehensive analytics provide detailed tracking of user interactio
 
 
 ### Export/Import
-
 
 #### Redesigned Export Interface for Improved User Experience
 
