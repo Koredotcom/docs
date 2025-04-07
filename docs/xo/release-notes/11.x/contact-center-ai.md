@@ -12,7 +12,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 #### Agent Console Search Functionality
 
-The Agent Console's search functionality allows agents to quickly find active customer conversations using phone numbers, emails, or names. Located in the conversation tray, it shows results as you type and lets you click to open conversations. Enabled by default for all agents, this enhancement reduces handling time and improves efficiency with no setup required. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#search-conversations)
+The Agent Console's search functionality allows agents to quickly find active customer conversations using phone numbers, emails, or names. Located in the conversation tray, it shows results as agents type and lets them click to open conversations. Enabled by default for all agents, this enhancement reduces handling time and improves efficiency with no setup required. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#search-conversations)
 
 #### Disposition Alerts for Supervisor Attention
 
@@ -26,16 +26,20 @@ Supervisors will receive real-time alerts when disposition codes requiring super
 
 #### Independent Widget Loading
 
-Custom widgets load independently of conversation selection, enabling agents to access and interact with widgets. This enhancement allows:
+Custom widgets can now load independent of conversation selection, enabling agents to access and interact with widgets. This enhancement allows:
+
 * Automatic widget availability upon console load, even without an active conversation.
 * A persistent widget until explicitly closed or refreshed.
 * Dynamic updates for widgets are dependent on conversation context, ensuring seamless transitions when a conversation is selected.
 * Support for proactive workflows, allowing agents to initiate actions or access data before engaging with customers.
 
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/widgets/configure-widgets.md#load-widgets-without-conversations)
+
 #### Call History for Inbound and Outbound Calls
 
 Agents can view past call details for both Inbound and Outbound calls in the Call History section of the Agent Console. This enhancement provides:
-* A comprehensive view of previous interactions helps agents understand customer context.
+
+* A comprehensive view of previous interactions, helps agents understand customer context.
 * Voice call conversation volleys are displayed through the conversation transcript, ensuring quick access to past discussions.
 
 [Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#history)
@@ -48,7 +52,7 @@ The Total Digital Conversation Limit improves agent workload management across a
 
 #### AgentUtils: Transcript and Recording Controls for Agent Desktop
 
-Bot developers can control transcript visibility and recording generation on the Agent Desktop through script nodes before agent transfers.
+App developers can control transcript visibility and recording generation on the Agent Desktop through script nodes before agent transfers.
 
 Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hidden from agents with appropriate notifications displayed.
 
