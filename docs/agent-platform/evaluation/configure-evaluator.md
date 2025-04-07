@@ -6,7 +6,7 @@ For example, an evaluator can be set up to assess content completeness. It takes
 
 ## Types of Evaluators
 
-In Evaluation Studio, there are two primary types of evaluators: AI Evaluators and Human Evaluators.
+In Evaluation Studio, there are two primary types of evaluators: **AI evaluators** and **Human evaluators**.
 
 ### AI Evaluators
 
@@ -22,7 +22,7 @@ There are two types of AI evaluators:
     Users can access all the available system evaluators through the global Evaluators page located at the project level. Simply click the Evaluators tab, located next to the Projects tab. This page provides an overview of available evaluators that can be applied to datasets for evaluation.
 
 
-System Evaluators are grouped into two categories: **Quality**, **Safety**, and **RAGAS** Evaluators.
+System Evaluators are grouped into three categories: **Quality**, **Safety**, and **RAGAS** evaluators.
 
 #### **Quality Metrics**
 
@@ -153,9 +153,9 @@ Below are the key safety metrics and the components required in the dataset to u
 
 #### **RAGAS Evaluators**
 
-RAGAS Evaluators serve as system evaluators within Evaluation Studio, playing a crucial role in assessing the performance of RAG (Retrieval-Augmented Generation) pipelines. These evaluators assess both the accuracy of the answer and the relevance of the contexts used.
+RAGAS evaluators serve as system evaluators within Evaluation Studio, playing a crucial role in assessing the performance of RAG (Retrieval-Augmented Generation) pipelines. These evaluators assess both the accuracy of the answer and the relevance of the contexts used.
 
-For example, when a user query is processed, the pipeline returns an answer along with the contexts from which the answer was derived. RAGAS Evaluators evaluate the quality of both the answer and the retrieved contexts, ensuring a thorough evaluation of the model’s performance.
+For example, when a user query is processed, the pipeline returns an answer along with the contexts from which the answer was derived. RAGAS evaluators evaluate the quality of both the answer and the retrieved contexts, ensuring a thorough evaluation of the model’s performance.
 
 Users can fine-tune the evaluation process by adjusting key parameters to meet specific needs. While the evaluation prompts themselves cannot be modified, as their results directly impact the final score calculation, users have the flexibility to adjust the following parameters:
 
@@ -163,7 +163,7 @@ Users can fine-tune the evaluation process by adjusting key parameters to meet s
 * **Pass Threshold**: Users can modify the threshold required for a pass based on the evaluation criteria.
 * **Variables in the Prompt**: Users can attach variables depending on the specific metric being used, such as ground_truth, retrieved_contexts, user_input.
 
-Below are the current set of evaluators supported by RAGAS includes and the components required in the dataset to use these evaluators:
+Below are the current list of RAGAS evaluators and the components required in the dataset to use these evaluators:
 
 <table>
   <tr>
@@ -173,22 +173,22 @@ Below are the current set of evaluators supported by RAGAS includes and the comp
   </tr>
   <tr>
     <td style="width: 150px;">Context Precision</td>
-    <td>It measures the proportion of the relevant chunks and the total number of chunks retrieved for the given user input.</td>
+    <td>This metric measures the proportion of the relevant chunks and the total number of chunks retrieved for the given user input.</td>
     <td>Input<br>Response<br>Retrieved context</td>
   </tr>
   <tr>
     <td style="width: 150px;">Context Recall</td>
-    <td>With a reference context in mind, it evaluates whether the retrieved context is sufficient to address the user input. Higher recall indicates that fewer significant chunks are omitted.</td>
+    <td>Considering a reference context, this metric evaluates whether the retrieved context is sufficient to address the user input. Higher recall indicates that fewer significant chunks are omitted.</td>
     <td>Input<br>Response<br>Retrieved context<br>Reference answer</td>
   </tr>
   <tr>
     <td style="width: 150px;">Context Entity Recall</td>
-    <td>Considering a reference context, it evaluates the number of common entities present in the retrieved context in relation to the total number of entities in that reference context.</td>
+    <td>Considering a reference context, this metric evaluates the number of common entities present in the retrieved context in relation to the total number of entities in that reference context.</td>
     <td>Retrieved context<br>Reference answer</td>
   </tr>
   <tr>
     <td style="width: 150px;">Noise Sensitivity</td>
-    <td>Considering a reference context, it provides the proportion of incorrect claims in the total number of retrieved claims.</td>
+    <td>Considering a reference context, this metric provides the proportion of incorrect claims in the total number of retrieved claims.</td>
     <td>Input<br>Response<br>Retrieved context<br>Reference answer</td>
   </tr>
   <tr>

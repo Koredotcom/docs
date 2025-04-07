@@ -2,7 +2,7 @@
 
 Tools can automate processes, streamline workflows, generate insights, and produce outputs such as deal summaries or emails. The tool builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
 
-### Key Features
+## Key Features
 
 * **Tool Flow**: A visual no-code/low-code builder for creating and managing tool flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. [Learn more](./create-a-new-tool.md).
 
