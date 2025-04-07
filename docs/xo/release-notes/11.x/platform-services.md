@@ -8,6 +8,13 @@ This document provides information on the feature updates and enhancements intro
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
+### Admin Console
+
+#### SSO Compatibility Improvement
+
+The Platform has introduced a new configuration option to enhance Single Sign-On (SSO) compatibility and resolve authentication issues caused by the RequestedAuthnContext parameter in SAML requests. This ensures seamless integration with various identity providers, including Azure AD.  
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md#saml)
+
 ### Voice Gateway
 
 #### New Call Control Parameters to Support Deepgram
