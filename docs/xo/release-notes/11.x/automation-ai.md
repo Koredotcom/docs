@@ -6,6 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
 ### Agentic Experience 
 
 #### Seamless Integration with Agentic Apps for Multi-agent Orchestration
