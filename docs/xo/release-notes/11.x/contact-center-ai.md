@@ -4,9 +4,9 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.12.0 April 05, 2025
 
-<u>Minor Release</u>
+<u> Minor Release </u>
 
-This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Agent Console
 
