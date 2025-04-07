@@ -33,117 +33,84 @@ The framework provides a structured approach to designing conversational experie
 
 The Agent Node supports two prompt versions: **V1 (Legacy)** and **V2 (Enhanced)**. Each version offers different approaches to handling system prompts, entity management, and tool-based orchestration. Choosing the right prompt version depends on factors such as execution style, exit scenario handling, and integration needs.
 
-The table below highlights the key differences between **V1 and V2 prompts**, helping you determine the best fit for your use case.
-
-
-<table>
-  <tr>
-   <td><strong>Feature</strong>
-   </td>
-   <td><strong>V1 Prompts (Legacy)</strong>
-   </td>
-   <td><strong>V2 Prompts (Enhanced)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Execution Model</strong>
-   </td>
-   <td>Entity-based execution, manual transitions
-   </td>
-   <td>Tool-based execution, automated transitions
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Exit Scenarios</strong>
-   </td>
-   <td>Manually defined within the prompt
-   </td>
-   <td>Managed dynamically via the Exit Orchestration Tool
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Entity Handling</strong>
-   </td>
-   <td>Explicit entity collection required
-   </td>
-   <td>No explicit entity collection
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tool Integration</strong>
-   </td>
-   <td>No tool execution
-   </td>
-   <td>Supports default and custom tools
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Response Structure</strong>
-   </td>
-   <td>Structured, predefined formats
-   </td>
-   <td>Flexible, natural response generation
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Runtime Behavior</strong>
-   </td>
-   <td>Follows predefined transitions, no tool calls
-   </td>
-   <td>Calls tools dynamically based on context
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Post-Processor Scripts</strong>
-   </td>
-   <td>Not required
-   </td>
-   <td>Mandatory for execution
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Import/Export Behavior</strong>
-   </td>
-   <td>Switching from V2 to V1 maintains entity structures; V2 import overwrites
-   </td>
-   <td>Version conflict warning when importing V2 into V1
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Availability</strong>
-   </td>
-   <td>Works with all configurations
-   </td>
-   <td>Available only in JavaScript
-   </td>
-  </tr>
-</table>
-
-
-### When to Use V1 Prompts
 
 
 
-* Requires explicit entity handling to manually define business rules and exit scenarios.
-* Works best in workflows that rely on structured, entity-based execution rather than tool-based orchestration.
-* Provides a stable, legacy system without additional tool integration for exit scenarios.
-* Ensures backward compatibility with existing bot configurations that do not support V2.
-* Does not require post-processor scripts as part of the execution. 
+### Version 1 (Legacy Framework)
+
+Version 1 supports both JSON and JavaScript modes. It is suitable for straightforward tasks and enables both tool calling and text generation. Choose Version 1 when:
 
 
 
-### When to Use V2 Prompts
+* Only text generation is required, and JSON mode is preferred.
+* Tool calling and text generation are both needed in JavaScript mode.
+* Full control is needed over how responses are parsed using response keys. 
 
 
 
-* Leverages a tool-based architecture for a more automated and structured conversation flow.
-* Supports integration with both default and custom tools, including the Exit Orchestration Tool.
-* Eliminates explicit entity collection and streamlines exit scenario management.
-* Enables dynamic execution where the language model determines when to trigger tools based on context.
-* Ensures structured execution with mandatory post-processor scripts.
-* Allows for a flexible, natural response format without strict JSON structure constraints.
+#### JSON Mode
+
+JSON mode supports text generation only.
 
 
+
+* Define dynamic input keys that the platform automatically populates during runtime.
+* Provide test values to validate the prompt structure.
+* Configure the following output keys:
+    * **Text Response Path** – Identifies the location of the AI response in the JSON payload.
+    * **Virtual Assistant Response** – Specifies the response key to display to the end user.
+    * **Exit Scenarios** – Indicates when the conversation should end.
+    * **Collected Entities** – Captures specific values from the AI response.
+
+If additional processing is needed, add a post-processor script to transform the LLM output as required for the platform. When a post-processor is used, the returned output must include the exact keys defined in the configuration.
+
+
+#### JavaScript Mode
+
+JavaScript mode is recommended when:
+
+
+* Tool calling is required.
+* Access to the full conversation history as an array is necessary.
+* More advanced prompt logic is needed.
+
+The prompt structure and output configuration follow the same pattern as in JSON mode. Ensure that both the prompt and the post-processor handle conversation history and tool interactions as expected.
+
+
+### Version 2 (Tool-Calling Framework)
+
+Version 2 supports only JavaScript mode and is built entirely around tool calling. Choose Version 2 when:
+
+
+
+* Higher accuracy and structured responses are required.
+* Entity collection and tool invocation must be fully integrated.
+* Simplified configuration and improved maintainability are priorities.
+
+Prompt creation in Version 2 eliminates the need to configure multiple output keys. The platform requires only:
+
+
+
+* **Text Response Path** – Identifies the plain text response path.
+* **Tool Call Request** – Indicates when the model intends to invoke a tool. 
+
+
+The platform no longer requires configuration for **Virtual Assistant Response**, **Exit Scenarios**, or **Collected Entities**. These behaviors are now handled directly within the tools.
+
+
+#### Entity Collection in Version 2
+
+Entity collection is integrated into the tool framework. For example, a custom tool such as `ScheduleMeeting` can define parameters like date, time, and location. The language model extracts these values as part of the tool invocation.
+
+This design simplifies configuration and improves entity extraction accuracy.
+
+
+#### Tool Types in Version 2
+
+
+
+* **System tool** – Includes predefined functionality such as `End_Orchestration`, which handles the end of the interaction.
+* **Custom tools** – Defined based on specific business requirements.
 
 ### Use Case Scenarios
 
