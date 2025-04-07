@@ -2,6 +2,62 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.12.0 April 05, 2025
+<u> Minor Release </u>
+
+### Agentic RAG architecture
+
+Search AI now features an Agentic RAG architecture that leverages LLMs to improve query understanding and generate optimized retrieval queries for more accurate responses. This system uses autonomous agents to break down complex queries, enable preprocessing, and facilitate multi-step retrieval. The following agents process a user query sequentially to enhance it for effective retrieval and answer generation. 
+
+* Query Rephrasing Agent: Refines the user query by understanding the context and intent, using the previous conversation. 
+* Query Transformation Agent: Identifies key terms and removes noise from the query for better retrieval. 
+* Result Type Classification Agent: Determines whether the user's query requires a direct answer and search results or only a list of search results in the response.
+* Metadata Extractor Agent: Extracts the source and fields from user queries and maps them to standard fields of the source, which helps to apply appropriate filters and enhance retrieval accuracy.
+
+### Exclude Stage in Document Workbench
+
+Search AI now offers an **Exclude Stage in the Document Workbench** to restrict chunk generation from extracted content. This feature provides greater control over content processing, allowing users to exclude unnecessary content, thereby improving search relevance and reducing processing time. Learn more.
+
+### Enhanced SharePoint Integration with restricted permissions
+
+To address security concerns and provide more controlled access, SearchAI now supports **<code>Sites.Selected</code>** permission for SharePoint integration. This limits access to only the specific site collections explicitly granted by administrators. This is implemented by introducing the **OAuth Client credentials grant type** auth mechanism for SharePoint Integration. Learn more.
+
+
+### Channel Aware response formatting
+
+Search AI now supports **Channel-Aware Response Formatting** to deliver a more engaging and seamless user experience across digital and voice channels. The default prompt has been updated to generate channel-appropriate responses that vary as per the mode of interaction. For voice channels, responses are concise and free of complex formatting, ensuring clear and effective communication. In contrast, digital channels benefit from well-structured responses with enhanced formatting for improved readability and user engagement. Learn more.
+
+
+### Enhanced Multilingual Support
+
+Search AI now offers expanded multilingual support with the addition of the **Ukrainian** language to enhance the customer experience. Users can:
+
+
+* Add and organize content in multiple languages.
+* Understand and interpret queries in supported languages.
+* Search and deliver answers and results in the same language as the user query.
+
+
+### Secure One-Time URLs for Uploaded Documents
+
+To enhance security, the citations or references in the search results and answers will now have one-time-use URLs, which **expire after a single** **use or within 15 minutes**, whichever occurs first. This feature applies to all uploaded documents and is enabled by default. It ensures controlled and temporary access to cited documents and aims to prevent the unauthorized sharing of URLs. Learn more.
+
+
+### New Search AI Connectors
+
+Search AI extends support for eight new connectors, enabling seamless content ingestion and retrieval from PagerDuty, Figma, LumApps, Zoho CRM, TestRail, DataDog, Jenkins, and Zeplin. These connectors enhance enterprise search by integrating knowledge from various collaboration and productivity platforms. They also enable access control for the content ingested from the applications. Listed below are the connectors and the type of content that can be ingested from the corresponding applications. 
+
+* DataDog - Metrics, Dashboard, and Monitors
+* Figma– Figma Files
+* Jenkins - Dashboard, Builds, Jobs, and Plugins
+* LumApps - Pages, News, Custom Objects, and Community Posts
+* PagerDuty– Ingests Escalation Policies and Schedules
+* TestRail - Test cases 
+* Zeplin - Screens
+* Zoho CRM - Leads, Accounts, Contacts, and Deals
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u>Patch Release</u>
