@@ -1117,7 +1117,7 @@ v1  or v2
    </td>
   </tr>
   <tr>
-   <td>deepgramSmartFormatting
+   <td>deepgramSmartFormat
    </td>
    <td>Boolean
    </td>
@@ -1127,6 +1127,30 @@ v1  or v2
 Deepgram's Smart Format feature applies additional formatting to transcripts to optimize them for human readability.
 
 Smart Format capabilities vary between models. When Smart Format is turned on, Deepgram will always apply the best-available formatting for your chosen combination of model, model option, and language.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramFillerWords
+   </td>
+   <td>Boolean
+   </td>
+   <td>
+   </td>
+   <td>When Filler Words is turned on,  Deepgram can transcribe interruptions in the audio, like "uh" and "um".
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>deepgramkeyterm
+   </td>
+   <td>String
+   </td>
+   <td>
+   </td>
+   <td>Keyterm Prompting allows you to improve your Keyword Recall Rate (KRR) for important key terms or phrases by up to 90%
    </td>
    <td>
    </td>

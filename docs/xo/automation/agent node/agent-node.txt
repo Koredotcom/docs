@@ -1,22 +1,15 @@
 # Agent Node
 
+      - Agent Node:
+        - Overview: automation/agent node/agent-node.md
+        - Prompt Setup: automation/agent node/prompt-setup.md
 
 ## Overview
 
-The XO platform enables businesses to build intelligent, AI-powered bots that leverage Large Language Models (LLMs) to enhance conversations. Using the Agent Node feature, you can integrate LLMs like OpenAI’s GPT models into your chatbot or phone-based Intelligent Virtual Assistant (IVA). This enables fluid, context-aware, and intelligent interactions that surpass traditional NLP-based bots.
 
-This article provides a comprehensive overview of how to implement and optimize LLM-based bots in Kore.ai using the Agent Node, focusing on prompt engineering techniques to refine bot behavior and improve the user experience.
-
-The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to create sophisticated and versatile bots capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
+The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to build AI-powered, sophisticated, and versatile virtual assistants capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
 ## Benefits
-
-1. Contextual Interactions
-2. Granular Intent Identification
-3. Entity Collections
-4. Autonomous Actions - Tools
-5. How agent node is a proxy for autonomous agent
-
 
 * **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making bot interactions more natural and user-friendly.
 * **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
@@ -32,28 +25,28 @@ The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to
 
 #### Model Configuration
 
-The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon Bedrock, and Custom LLM. To learn more, see [Model and Supported Features](../../../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features).
+The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon Bedrock, and Custom LLM. To learn more, see [Model and Supported Features](../../generative-ai-tools/genai-features.md#model-and-supported-features---automation-ai).
 
 
 #### Prompt Setup
 
-To leanr more, see [Agen Node Prompt Setup](prompt-setup.md)
+To learn more, see [Agen Node Prompt Setup](prompt-setup.md).
 
 
 
 #### Configure Agent Node 
 
-By default, the Agent Node is disabled. Enable the node from **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**. [Learn more](../../../../generative-ai-tools/dynamic-conversations-features.md/#agent-node).
+By default, the Agent Node is disabled. To enable the node, see [Enable GenAI Feature](../../generative-ai-tools/genai-features.md#enable-feature).
 
 Add the node to a dialog task and configure the node's properties and tool calling capabilities.  
 
 ##### Add Agent Node to a Dialog Task
 
-Steps to add an Agent node to a Dialog Task:
+Steps to add an Agent Node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
 2. You can add the Agent Node just like any other node. You can find it in the main list of nodes.  
-<img src="../images/canvas-GenAI Node.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/canvas-agentnode.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
 ##### Component Properties
@@ -85,7 +78,7 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 ###### Pre-Processor Script
 
 
-This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md#configure-the-node){:target="_blank"}.
 
 To define a pre-processor script, click **Define Script**, add the script you want to execute, and click **Save**. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.
 
@@ -94,9 +87,13 @@ To define a pre-processor script, click **Define Script**, add the script you wa
 
 ###### Entities
 
+!!! note
+
+    Entity collection is applicable only for V1 Prompts.
+    
 Specify the entities to be collected by LLM during runtime. In the Entities section, click **+ Add**, enter an **Entity Name,** and select the **Entity Type** from the drop-down list.
 
-Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types){:target="_blank"} for more information.
+Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../automation/use-cases/dialogs/entity-types.md){:target="_blank"} for more information.
 
 <img src="../images/entitiesv2.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -159,10 +156,10 @@ There is a 250-character limit to the Rules field, and you can add a maximum of 
 
 Example Business Rules:
 
-* Policy_number must be exactly 10 digits
-* Incident_date must be within the last 30 days from current date
-* claim_type must be one of: auto, home, health, life
-* All required entities must be collected before submission
+* Policy_number must be exactly 10 digits.
+* Incident_date must be within the last 30 days from current date.
+* claim_type must be one of: auto, home, health, life.
+* All required entities must be collected before submission.
 
 
 
@@ -187,7 +184,7 @@ Common Exit Scenarios:
 
 ###### Post-Processor Script
 
-This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../working-with-the-script-node/#configure-the-node){:target="_blank"}.
+This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md#configure-the-node){:target="_blank"}.
 
 **Important Considerations**
 
@@ -234,11 +231,11 @@ This applies only to String and Description entities: Select one of these option
 To define the interruption handling at this node. You can select from the below options:
 
 * **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
-* **Customize for this node**: You can customize the **Interruptions Behavior** settings by selecting this option and configuring it. You can choose whether to allow interruptions or not, or to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
+* **Customize for this node**: You can customize the **Interruptions Behavior** settings by selecting this option and configuring it. You can choose whether to allow interruptions or not, or to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../automation/intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
 
 **Custom Tags**
 
-Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
+Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
 
 <img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
 
@@ -249,7 +246,7 @@ Add Custom Meta Tags to the conversation flow to profile VA-user conversations a
 
     If the node is at the bottom of the sequence, then only the connection property is visible.
 
-Define the transition conditions from this node. These conditions apply only to this instance and will not affect this node’s use in any other dialog. For a detailed setup guide, See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
+Define the transition conditions from this node. These conditions apply only to this instance and will not affect this node’s use in any other dialog. For a detailed setup guide, See [Adding IF-Else Conditions to Node Connections](../../automation/use-cases/dialogs/node-connections/nodes-conditions.md){:target="_blank"} for a detailed setup guide.
 
 The Connection Path property offers three default variants:
 

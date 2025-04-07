@@ -15,7 +15,7 @@ This API retrieves the conversation sessions created. It returns information suc
    <td><strong>Endpoint</strong>
    </td>
    <td><code>https://{{host}}/api/public/bot/{{BotID}}/getSessions?containmentType={{containmentType}}</code>
-<p>
+<br>
 and <code>https://{{host}}/api/public/getSessions?containmentType={{containmentType}}</code>for BAC
    </td>
   </tr>
@@ -29,7 +29,7 @@ and <code>https://{{host}}/api/public/getSessions?containmentType={{containmentT
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
+<br>
 See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
@@ -48,11 +48,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
-
-
 ## Path Parameters
-
-
 <table>
   <tr>
    <td><strong>PARAMETER</strong>
@@ -74,10 +70,10 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
   <tr>
    <td>containmentType
-<p>
+<br>
 <strong>(introduced in ver9.0)</strong>
    </td>
-   <td>Use to filter the results based on the type of the session i.e Self-service vs. Drop-off vs. Agent Transfer \
+   <td>Use to filter the results based on the type of the session, that is, Self-service vs. Drop-off vs. Agent Transfer
 Valid values:
 <ul>
 
@@ -141,6 +137,19 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{BotId}}/getSes
      }
 ```
 
+**For specific call Ids**
+
+```
+curl --location POST 'https://{{host}}/api/public/bot/{{BotId}}/getSessions?callId={{callId}}' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "skip": 0,
+    "limit": 100,
+    "dateFrom": "2025-03-17",
+    "dateTo": "2025-03-19"
+}'
+```
 
 ## Request Body Parameters
 
@@ -174,7 +183,7 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{BotId}}/getSes
    <td>limit
    </td>
    <td>The number of messages to be shown on each page.
-<p>
+<br>
 The latest sessions are returned first; the sessions are returned in descending order of start time.
    </td>
    <td>Optional
@@ -184,10 +193,10 @@ The latest sessions are returned first; the sessions are returned in descending 
    <td>dateFrom
    </td>
    <td>Takes the date format yyyy-mm-dd
-<p>
+<br>
 (or) yyyy-mm-ddThh:mm:ss.msZ
-<p>
-eg:2019-04-01 (or) 2019-04-01T13:25:58.515Z. If not provided, calculated as 7 days behind <em>dataTo</em>.
+<br>
+For example, 2019-04-01 (or) 2019-04-01T13:25:58.515Z. If not provided, calculated as 7 days behind <em>dataTo</em>.
    </td>
    <td>Optional
    </td>
@@ -196,10 +205,10 @@ eg:2019-04-01 (or) 2019-04-01T13:25:58.515Z. If not provided, calculated as 7 da
    <td>dateTo
    </td>
    <td>Takes the date format yyyy-mm-dd
-<p>
+<br>
 (or) yyyy-mm-ddThh:mm:ss.msZ
-<p>
-eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 days from <em>dateFrom</em>. If <em>dateFrom</em> is also not provided then set to <strong>Today</strong>.
+<br>
+For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 days from <em>dateFrom</em>. If <em>dateFrom</em> is also not provided then set to <strong>Today</strong>.
 <ul>
 
 <li>The <strong>dateTo</strong> or <strong>dateFrom</strong> parameter accepts the YYYY-MM-DD date format. The time format is considered as a GMT zone in the API endpoint via Sessions API.
@@ -221,7 +230,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
   </tr>
   <tr>
    <td>sessionType
-<p>
+<br>
 (introduced in v8.0)
    </td>
    <td>Type to filter the conversations – can be:
@@ -238,11 +247,11 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
   </tr>
   <tr>
    <td>sessionId
-<p>
+<br>
 (introduced in v10.1.3)
    </td>
    <td>An array of session IDs to filter the conversations. It can have a maximum of 50 session IDs. (Duplicate session IDs are ignored, but they are counted.)
-<p>
+<br>
 <strong>Note</strong>: If you use ‘sessionId’ in the Body, other parameters/filters are ignored.
    </td>
    <td>Optional
@@ -252,6 +261,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 
 
 !!!Note
+    
     The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
 
 
@@ -291,7 +301,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
      "noOfTasksExecuted": 0
    }
   ]
-]
+}
 ```
 
 **For _selfService_ sessions**
@@ -391,7 +401,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 ```
 
 
-**For one or more session Ids
+**For one or more session Ids**
 
 ```json
 {
@@ -427,6 +437,56 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
 
 ```
 
+**For specific Call Ids**
+
+```
+{
+    "total": 1,
+    "moreAvailable": false,
+    "sessions": [
+        {
+            "sessionId": "67d97c8fd495b147d9c3xxxx",
+            "botId": "st-89cf14ef-145e-5263-994e-5d757325xxxx",
+            "channel": "korevg",
+            "userId": "u-c3c0b243-becc-5cce-a845-f681a62dxxxx",
+            "start_time": "2025-03-18T14:00:47.505Z",
+            "end_time": "2025-03-18T14:01:37.518Z",
+            "session_lang": [
+                "en"
+            ],
+            "sessionType": "interactive",
+            "isDeveloper": false,
+            "sessionStatus": "closed",
+            "tags": {
+                "userTags": [],
+                "sessionTags": [
+                    {
+                        "value": "1",
+                        "name": "welcomeMessageTwilio"
+                    },
+                    {
+                        "value": "+1123456789",
+                        "name": "callerNumber"
+                    },
+                    {
+                        "value": "1",
+                        "name": "voiceAgentTransferStart"
+                    },
+                    {
+                        "value": "1",
+                        "name": "audioCodesCallDisconnect"
+                    }
+                ],
+                "altText": []
+            },
+            "noOfMessagesExchanged": 4,
+            "noOfTasksExecuted": 1,
+            "containmentType": "agent"
+        },
+    ]
+}
+```
+
 ## Response Body Parameters
 
 
@@ -441,7 +501,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calculated as 7 d
    <td>total
    </td>
    <td>The total number of records identified as per the API request parameters. The response will include a maximum of X records. If more than X records are identified, then the ‘moreAvailable’ field in the response will have the value as ‘True’.
-<p>
+<br>
 It is recommended to programmatically iterate the request by dynamically updating the values of the ‘skip’ and ‘limit’ parameters in the request.
    </td>
   </tr>
@@ -449,7 +509,7 @@ It is recommended to programmatically iterate the request by dynamically updatin
    <td>moreAvailable
    </td>
    <td>Indicates if the API has returned all the records or if more are available, based on the pagination criteria.
-<p>
+<br>
 <strong>True</strong> if more records are available. <strong>False</strong> if there are no more records to be retrieved.
    </td>
   </tr>

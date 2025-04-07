@@ -31,7 +31,7 @@ Steps to create a filter:
 2. Click **+ Add New Filter**.  
 <img src="../conversation-intelligence/images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**. 
+3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**.  
 <img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note

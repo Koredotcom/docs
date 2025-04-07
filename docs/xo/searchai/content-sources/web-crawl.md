@@ -30,7 +30,7 @@ Provide details of the crawl configuration on the **Configuration** tab and clic
 This validates the configuration provided and by default, automatically initiates the crawl process after validation.
 ![Automate Crawling](../images/automatic-crawl.PNG "Automate Crawling")
 
-You can choose to run the crawl in the background which allows you to perform other tasks on the application. Alternatively, you can also schedule the crawler to run at specific times in the future.
+You can choose to run the crawl in the background, which allows you to perform other tasks on the application. Alternatively, you can also schedule the crawler to run at specific times in the future.
 ![Schedule Crawling](../images/schedule-crawl.PNG "Schedule Crawling")
 
 ### Crawl Configuration
@@ -44,9 +44,11 @@ You can choose to run the crawl in the background which allows you to perform ot
     2. **Upload Sitemap** – Provide a list of sitemaps as a CSV file and a Base URL. The base URL is used to validate the URLs in the sitemaps.  It crawls through all the web pages listed in each sitemap in the CSV file, for which the URL matches the Base URL. If a URL in the sitemap does not match the base URL, the crawler skips that URL and does not crawl it. The crawl options are used to refine the URLs further for crawling. You can use the sample sitemap CSV to learn the format of the CSV file. 
     3. **Upload URL**– Provide a list of URLs to crawl in the form of a CSV file and a base URL. The base URL is used to validate the URLs in the CSV file.  In this case, the crawler goes through all the pages listed in the CSV file that match the Base URL. The URLs that match the base URL are crawled, and those that do not match are skipped. The crawl options are used to refine the URLs further for crawling. In this case, crawl depth and max URL crawl options are not required.  Use the *Sample URL CSV* to learn about the format of the CSV file.
 
-**Crawl depth** – Each website contains multiple levels of the hierarchy of pages and subpages. The source URL is considered to be at the top of the hierarchy, and other pages linked to the source URL create nested layers. Crawl depth refers to the maximum number of nested levels that the crawler should go to. Set to 0 to indicate no limit. If no value is provided for the field, the default crawl depth is set to 5. 
+**Crawl depth** – Each website contains multiple levels of the hierarchy of pages and subpages. The source URL is considered at the top of the hierarchy, and other pages linked to the URL create nested layers. Crawl depth refers to the maximum number of nested levels the crawler should reach. This field can take values between 1 and 5. If no value is provided for the field, the default crawl depth is set to 5. 
 
-**Max URL Limit** - This field refers to the maximum number of URLs to crawl. Set to 0 to indicate no limit. If no value is provided, this field uses the default value of 10.
+
+**Max URL Limit** - This field refers to the maximum number of URLs to crawl. This field can take any integer value between 1 and 10,000. If no value is provided, the default value is 10. 
+
 
 **Advanced Crawl Configuration** - This section provides advanced configurations to optimize the crawling process and filter the web pages to be crawled. 
 

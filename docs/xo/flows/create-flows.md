@@ -174,6 +174,20 @@ This configuration ensures that user interactions remain seamless and informativ
 
         Only flows that have been published will be available for selection in the dropdowns.
 
+#### Answering Machine Detection
+
+The Answering Machine Detection (AMD) feature provides intelligent call handling capabilities for voice-based communication flows by detecting whether a human or an answering machine answers an incoming call.
+
+When enabled, the system detects Answering Machine Detection (AMD) from incoming calls and stores the result in context variables accessible through `context.session.UserSession`. 
+
+Selecting the Disconnect the call after detecting a machine checkbox automatically terminates the call upon machine detection.
+
+!!! Note
+
+    This is applicable only to voice flows.
+
+<img src="../images/answering-machine-detection.png" alt="Answering Machine Detection" title="Answering Machine Detection" style="border: 1px solid gray; zoom:80%;">
+
 #### Chat
 
 Selecting chat will display all the chat channels configured in the channels section. The displayed values include:

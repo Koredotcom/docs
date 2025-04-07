@@ -2,7 +2,94 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
-## v11.11.1 March 15, 2025
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Agent Console Search Functionality
+
+The Agent Console's search functionality allows agents to quickly find active customer conversations using phone numbers, emails, or names. Located in the conversation tray, it shows results as agents type and lets them click to open conversations. Enabled by default for all agents, this enhancement reduces handling time and improves efficiency with no setup required. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#search-conversations)
+
+#### Disposition Alerts for Supervisor Attention
+
+Supervisors will receive real-time alerts when disposition codes requiring supervision or unresolved issues are tagged in a conversation. This feature ensures prompt action and user follow-up. When Disposition Alerts are enabled, supervisors receive:
+
+* Proactive in-platform notifications for flagged dispositions.
+* Automated email alerts are sent to their registered UXO platform email.
+* Multi-language support, with emails and notifications translated based on the conversation language.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes)
+
+#### Independent Widget Loading
+
+Custom widgets can now load independent of conversation selection, enabling agents to access and interact with widgets. This enhancement allows:
+
+* Automatic widget availability upon console load, even without an active conversation.
+* A persistent widget until explicitly closed or refreshed.
+* Dynamic updates for widgets are dependent on conversation context, ensuring seamless transitions when a conversation is selected.
+* Support for proactive workflows, allowing agents to initiate actions or access data before engaging with customers.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/widgets/configure-widgets.md#load-widgets-without-conversations)
+
+#### Call History for Inbound and Outbound Calls
+
+Agents can view past call details for both Inbound and Outbound calls in the Call History section of the Agent Console. This enhancement provides:
+
+* A comprehensive view of previous interactions, helps agents understand customer context.
+* Voice call conversation volleys are displayed through the conversation transcript, ensuring quick access to past discussions.
+
+[Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#history)
+
+### Configuration
+
+#### Total Digital Conversation Limit
+
+The Total Digital Conversation Limit improves agent workload management across all digital channels. When enabled, this unified limit automatically marks agents as "system busy" once they reach their combined conversation threshold, regardless of channel type. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#total-digital-conversation-limit)
+
+#### AgentUtils: Transcript and Recording Controls for Agent Desktop
+
+App developers can control transcript visibility and recording generation on the Agent Desktop through script nodes before agent transfers.
+
+Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hidden from agents with appropriate notifications displayed.
+
+Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
+
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#enabledisable-transcripts-and-recordings-for-kore-contact-center-ai)
+
+### Campaigns
+
+#### Emergency SMS Campaigns
+
+Campaign Managers can run or rerun SMS campaigns as ‘Emergency’ for urgent communication. Users can choose Run to execute campaigns based on priority or Run as Emergency to bypass schedules and process immediately at full capacity. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#run-as-emergency)
+
+#### Enhanced API Call Tracking and Contact Data Storage in Logs
+
+Campaign managers can view detailed API call logs for contact lists, including Date and Time, Contact List Name, Campaign Name, Status, and Description, ensuring better tracking of API activity. Additionally, all contacts fetched via API calls are stored and made available as downloadable files, enabling users to debug potential issues efficiently. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#logs)
+
+#### Dynamic API Key Handling for Contact Import in List Management
+
+Campaign managers can now get the API key value from environment variables (plain or encrypted) when adding contacts through API integration in List Management. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration)
+
+### Analytics
+
+#### Skill Metrics Daily Report
+
+The Skill Metrics Daily Report provides a daily summary of performance based on conversation skills. This report groups data by Skill and Day, with no grouping by channel or direction. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/skill-metrics-daily-report.md)
+
+#### Enhanced Sorting for Queues, Agents, and Interactions
+
+Supervisors and agents can sort Queues, Agents, and Interaction tabs to manage workloads efficiently. This enhancement provides:
+
+* Sort in ascending and descending order for key columns.
+* Persistent sorting across periodic 5-second data refreshes.
+* Sort within active filters, ensuring relevance.
+* Automatic reordering when multiple items share the same sorting metric, prioritizing by arrival time.
+
+<hr>
 
 <u> Patch Release </u>
 
@@ -90,7 +177,6 @@ Key features
 * Fixed Layout Design: Standardized, non-customizable widget arrangement
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md)
-
 
 #### Interaction Details by Segment Report
 
