@@ -5,7 +5,9 @@ This document provides information on the feature updates and enhancements intro
 ## v11.12.0 April 05, 2025
 <u> Minor Release </u>
 
-### Agentic RAG architecture
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Agentic RAG Architecture
 
 Search AI now features an Agentic RAG architecture that leverages LLMs to improve query understanding and generate optimized retrieval queries for more accurate responses. This system uses autonomous agents to break down complex queries, enable preprocessing, and facilitate multi-step retrieval. The following agents process a user query sequentially to enhance it for effective retrieval and answer generation. 
 
@@ -18,12 +20,12 @@ Search AI now features an Agentic RAG architecture that leverages LLMs to improv
 
 Search AI now offers an **Exclude Stage in the Document Workbench** to restrict chunk generation from extracted content. This feature provides greater control over content processing, allowing users to exclude unnecessary content, thereby improving search relevance and reducing processing time. Learn more.
 
-### Enhanced SharePoint Integration with restricted permissions
+### Enhanced SharePoint Integration with Restricted Permissions
 
 To address security concerns and provide more controlled access, SearchAI now supports **<code>Sites.Selected</code>** permission for SharePoint integration. This limits access to only the specific site collections explicitly granted by administrators. This is implemented by introducing the **OAuth Client credentials grant type** auth mechanism for SharePoint Integration. Learn more.
 
 
-### Channel Aware response formatting
+### Channel Aware Response Formatting
 
 Search AI now supports **Channel-Aware Response Formatting** to deliver a more engaging and seamless user experience across digital and voice channels. The default prompt has been updated to generate channel-appropriate responses that vary as per the mode of interaction. For voice channels, responses are concise and free of complex formatting, ensuring clear and effective communication. In contrast, digital channels benefit from well-structured responses with enhanced formatting for improved readability and user engagement. Learn more.
 
@@ -70,6 +72,8 @@ This update include only bug fixes.
 
 <u> Minor Release </u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
 ### Salesforce Connector Enhancements
 
 The Salesforce Connector has been enhanced to support custom object ingestion in addition to the capability of ingesting default objects like Knowledge Articles, Cases, Documents, Opportunities, Leads, Contacts, Accounts, and Tasks. During configuration, users can select the type of content to be ingested, providing greater flexibility. Additionally, the filtering feature has been enhanced, allowing users to refine document ingestion based on specific fields. [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/salesforce.md)
@@ -89,6 +93,8 @@ Search AI extends support for five new connectors, enabling seamless content ing
 ## v11.10.0 February 12, 2025
 
 <u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Custom Embeddings Support for Enhanced Vector Generation
 
@@ -169,7 +175,7 @@ This update include only bug fixes.
 
 <u>Patch Release</u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Content Transformation
 
@@ -201,7 +207,7 @@ To leverage the potential of the LLM capabilities, Search AI has now increased t
 
 <u> Minor Release </u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Comprehensive Analytics Logs
 
@@ -243,7 +249,7 @@ The Get Permission Entity API has been enhanced to provide more comprehensive in
 
 <u> Minor Release </u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Support for Custom Connector
 
