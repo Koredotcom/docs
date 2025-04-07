@@ -198,4 +198,81 @@ This parameter enables granular control over content accessibility by explicitly
 
    </td>
   </tr>
+
+  <tr>
+   <td>customData</td>
+   <td>No </td>
+   <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc.
+   </td>
+  </tr>
 </table>
+
+
+<!-----
+
+
+
+Conversion time: 0.341 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β44
+* Mon Apr 07 2025 05:55:31 GMT-0700 (PDT)
+* Source doc: Answer API
+* This is a partial selection. Check to make sure intra-doc links work.
+* Tables are currently converted to HTML tables.
+----->
+
+
+
+## Example of Using Custom Data Request parameter
+
+
+
+1. To pass user information.
+
+```json
+ "customData": {
+       "userContext": {
+             "userName": "Rajagopalan",
+             "userId": "john.smith@kore.com",
+             "emailId": "john.smith@kore.com"
+          }
+   }
+```
+
+
+2. To pass user location
+
+```json
+"customData": {
+   "userContext": {
+   "location": "Germany"
+    }
+}
+```
+
+
+3. To pass the previous conversation as context to the **Query Rephrasing Agent.**
+
+```json
+"customData": {
+  "previousConversation": [
+  {
+  "query": "What is the leave policy for America?",
+  "answer": "The leave policy in the U.S. varies by employer, but the Family and Medical Leave Act (FMLA) allows eligible employees to take up to 12 weeks of unpaid leave for certain family and medical reasons. Paid leave policies depend on the employer."
+  },
+  {
+  "query": "How do I reset my company email password?",
+  "answer": "You can reset your company email password by visiting the IT support portal and selecting 'Forgot Password.' Follow the instructions to reset your password. If you need further assistance, contact the IT helpdesk."
+  }]
+}
+```
