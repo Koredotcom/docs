@@ -2,7 +2,7 @@
 
 ----->
 
-# Raw Data APIv2
+# Raw Data API v2
 
 This updated version of the Raw Data API offers the following additional conversation data for deeper insights into AgentAssist interactions and conversation flows:
 
@@ -15,6 +15,12 @@ This updated version of the Raw Data API offers the following additional convers
 * Name of the queue involved in the conversation
 * Number of times an agent uses the scroll up and scroll down buttons
 * Names of the URLs an agent clicks 
+* Total number of words or phrases suggested to the agent
+* Total number of words or phrases accepted by the agent
+* Total number of words or phrases entered by the agent
+* Total number of words suggested for correction by the agent
+* Total number of auto-corrected words accepted by the agent
+
 
 
 <table>
@@ -96,2100 +102,1430 @@ curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/s
 
 ## **Sample Response**
 
-{
-
-
-    "numResults": 2,
-
-
-    "data": [
-
-
-        {
-
-
-            "conversationID": "atesta-lyfhbnlb",
-
-
-            "botSessionID": "668e2f45f037fc2ab99aee54",
-
-
-            "channel": "chat",
-
-
-            "segmentID": "ac-350a3c0-1c9e-4684-920b-5479607dbc55",
-
-
-            "segmentStartTime": "2024-07-10T06:49:45.556Z",
-
-
-            "segmentEndTime": "2024-07-10T06:52:51.435Z",
-
-
-            "agent": {
-
-
-                "agentId": "agentID1"
-
-
-            },
-
-
-            "tags": [],
-
-
-            "agentActions": [
-
-
-                {
-
-
-                    "actionType": "SearchBarEntry",
-
-
-                    "action": {
-
-
-                        "searchPhrase": "Return string to the given question using the provided Content and source_name in no particular order as references and use 'source_name' to improve the answer relevance for a given question and also provide citations using ' chunk_id ' to the 'Content' from which you answered the question.",
-
-
-                        "typingStartTime": "2024-07-10T06:52:36.447Z",
-
-
-                        "executionStartTime": "2024-07-10T06:52:36.871Z",
-
-
-                        "displayTime": "2024-07-10T06:52:40.359Z",
-
-
-                        "countDisplayedAnswers": {
-
-
-                            "countDialogTasks": 0,
-
-
-                            "countFaqs": 0,
-
-
-                            "countWebPages": 5,
-
-
-                            "countFiles": 0,
-
-
-                            "countAnswers": 1,
-
-
-                            "countFromNonNativeDataSource": 0
-
-
-                        },
-
-
-                        "suggestions": {
-
-
-                            "answers": [
-
-
-                                {
-
-
-                                    "positionId": "dg-0iwjlizvjal",
-
-
-                                    "content": "Some of the uses of HTML links include connecting web pages, navigating between different pages or resources, and specifying the destination URL using the href attribute . CVS Health offers on-site COVID-19 testing solutions for organizations, schools, and event hosts to ensure safety and continuity . The Board of Directors determines the location of annual and special meetings, allowing shareholders to attend in person or via remote communication . Thomas M. Moriarty, an executive at CVS Health, plays a crucial role in the company's brand strategy, external affairs, legal, and regulatory functions ",
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "tile": "HTML Links Hyperlinks - GeeksforGeeks",
-
-
-                                            "url": "https://www.geeksforgeeks.org/html-links/"
-
-
-                                        },
-
-
-                                        {
-
-
-                                            "tile": "Return Ready by CVS Health | COVID-19 testing for businesses & colleges | CVS Health",
-
-
-                                            "url": "https://www.cvshealth.com/covid-19/return-ready"
-
-
-                                        },
-
-
-                                        {
-
-
-                                            "tile": "Test data for search :",
-
-
-                                            "url": "https://rajiv-kore.atlassian.net/wiki/spaces/MW/pages/393217"
-
-
-                                        },
-
-
-                                        {
-
-
-                                            "tile": "Thomas M. Moriarty | CVS Health",
-
-
-                                            "url": "https://www.cvshealth.com/about-cvs-health/leadership/thomas-moriarty"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "internalFlag": false
-
-
-                                }
-
-
-                            ],
-
-
-                            "web": [
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "HTML Links Hyperlinks - GeeksforGeeks",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhtml-links%2F&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-c3f81b5d-91bd-40b7-bde5-3a3d31d61602&hId=752daacd5e91ffbc0418746ed95cb7293d55f7459fcb6369b421e6f992fd6e80"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "HTML Links Hyperlinks Last Updated : 15 May, 2024 HTML links, or hyperlinks, connect web pages. They’re created using the <a> tag with the href attribute, which specifies the destination URL. Users can click on links to navigate between different pages or resources. Note: A hyperlink can be represen",
-
-
-                                    "positionId": "dg-w1kynwisgq"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Return Ready by CVS Health | COVID-19 testing for businesses & colleges | CVS Health",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fcovid-19%2Freturn-ready&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-73f15dc0-4643-466f-bc55-465935046ae0&hId=c1cd32c9c1726257267a026fa6bc6e4df4d997573b50b276ed8847ab304f7e4b"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "Skip to main content Let us help you find what you're looking for Standard search Return Ready by CVS Health® On-site COVID-19 testing solutions to help organizations, schools and event hosts bring people back together safely. Return Ready rapid on-site testing solutions Providing employers, schools",
-
-
-                                    "positionId": "dg-dtdwsh2nt"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Multicultural products and services | CVS Health",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fabout-cvs-health%2Fdiversity%2Fmulticultural-products-and-services&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-1840c763-30ae-48de-8b49-08c55ccbfe57&hId=44d9b410bb709176d3494c855d2621a601267dd775d6fd422bbec1c50db93d37"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "Skip to main content Let us help you find what you're looking for Standard search Multicultural products and services Every day, millions of people shop in our stores, fill their prescriptions through our mail order pharmacy, or visit one of our MinuteClinics. These customers, clients and patients c",
-
-
-                                    "positionId": "dg-ku9jwfzj21"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "12 Crystal-Clear FAQ Page Examples & How to Make Your Own",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fblog.hubspot.com%2Fservice%2Ffaq-page&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-25930548-2cac-40b6-909e-babc1d268293&hId=6d3e690d6a90e16630e5ecd19893fe0a8da6f02af3669beda3eb1b7b37a93e97"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "20 Customer Success Interview Questions to Ask Your Next CandidateCustomer Experience ROI: How to Convince Leadership It's Worth ItHow HubSpot Created Its Customer Journey Map11 Customer Service & Support Metrics You Must TrackHow to Create an Effective Customer Journey Map [Examples + Template]What",
-
-
-                                    "positionId": "dg-58ewdhwn4fj"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Veterans | CVS Health",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fabout-cvs-health%2Fdiversity%2Fveterans&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-c06b2e8b-b01e-4b12-9ae2-fe2404e7dd8c&hId=978e142babba6c87c25a6d264edf3fc4fe33cbd668610df5f567e4de9918cac5"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "Skip to main content Let us help you find what you're looking for Standard search Veterans CVS Health recognizes the value of military service and knows that our veterans’ skills and experience are unparalleled. With millions of service members transitioning out of the military over the next few yea",
-
-
-                                    "positionId": "dg-yhpkp2x3r7"
-
-
-                                }
-
-
-                            ],
-
-
-                            "confluencecloud": [
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Test data for search :",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Frajiv-kore.atlassian.net%2Fwiki%2Fspaces%2FMW%2Fpages%2F393217&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-24569f4f-0993-4586-aa8a-965a3a90b50d&hId=c2a18158c124d2614f3c761998864876d231256ed6391160be5a67ae1a455e0b"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "<span class=\"highlightText\">You</span> can easily export this as a pdf by clicking the ... menu in the upper righthand corner.I. INCORPORATION. It is recognized that (“Corporation”) is a duly organized corporation authorized to do business in the State of (&amp;quot;State of Formation&amp;quot;) by its Articles of Incorporation or similar registered documents.II. STATE LAW. The Corporation is organized under the <span class=\"highlightText\">relevant</span> laws of the State of Formation (“Statutes”), and except as otherwise <span class=\"highlightText\">provided</span> herein, the Statutes shall apply to the governance of the Corporation.III. PURPOSE. The purpose of the Corporation is to engage in any lawful activity for <span class=\"highlightText\">which</span> corporations may be formed.IV. ANNUAL MEETING. Meetings of Shareholders shall be held at the principal office of the Corporation or at such other place that may be determined <span class=\"highlightText\">from</span> time to time by the Board of Directors of the Corporation. The purpose of the annual meeting shall be to elect the Board of Directors, officers and decide on any other business activities and&#x2F;or corporate decisions.An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within days after proper notice has been made.V. SPECIAL MEETINGS. Unless otherwise proscribed by statute, special meetings of the Shareholders may be called by: (check all that apply)President (or Chief Executive Officer).% of the Board of Directors.% of the Shareholders.Other. After a special meeting has been called, the Board of Directors shall decide its time and place within days after the special meeting has been called.VI. PLACE OF MEETINGS. Annual and special meetings shall be determined by the Board of Directors. By default, such meetings shall take place at the principal office of the Corporation. Shareholders of all classes and series may attend any meeting of the Corporation.Such meetings may be attended: (check all that apply)In-person at the Corporation’s principal office.Via remote communication, the method to be determined by the Board of Directors.Other. All communication methods shall offer each attending Shareholder the right to be present, vote on business matters, and provide their consent or dissent for any actionable item.VII. DISSOLUTION. The Corporation may only be dissolved in the following ways: (check all that apply)% vote by the Board of Directors.% vote by the Shareholders.Other. VIII. NOTICE OF MEETINGS. Written notice shall be provided to each Shareholder of any meeting that such Shareholder is permitted to take action in the form of a vote and&#x2F;or offer their consent or dissent for any actionable item. Such written notice shall detail the time, place, remote access (if available), and in the case of a special meeting, the purpose or purposes for which the meeting is called. Unless otherwise provided by law, written notice of any meeting shall be given not less than ten (10) days and no more than sixty (60) days before the date of the meeting.Notice of any meeting can be sent to the Shareholders by the following method(s): (check all that apply):E-Mail.Mailing Address via United States Mail (postage paid by the Corporation).Fax.Hand-Delivered.Other. IX. QUORUM. A quorum, which represents the required number of individuals to be present to hold an annual or special meeting, shall be: (check all that apply)% of the Board of Directors being present.% of the Shareholders being present.Other. Upon meeting the requirements of the quorum, the attending individuals of the meeting shall be able to take action and make decisions for the Corporation.X. ACTIONS OF THE CORPORATION. Actions made on behalf of the Corporation must be: (check one)Made with a Meeting ONLY. Any action required to be taken or which may be taken at any meeting, whether annual or special, must be taken with a meeting, in accordance with these Bylaws.Can be Made WITHOUT a Meeting. Any action required to be taken or which may be taken at any meeting, whether annual or special, may be taken without a meeting, without prior notice, and without a vote, if consent is in writing, setting forth the action so taken, and shall be signed by the holders of outstanding shares having not less than the minimum number of votes that would be necessary to take such action at a meeting at which all Shareholders entitled to vote were present and voted.XI. CORPORATE SEAL. The Corporation shall: (check one)HAVE a Corporate Seal. The corporate seal shall be in such form that the Board of Directors shall approve. NOT HAVE a Corporate Seal.XII. EXECUTION OF DOCUMENTS. All contracts, checks, drafts, demands for money, notes, and other legal instruments or rights of any nature of the Corporation may be signed by: (check all that apply)Board of Directors.Chairperson.President.Treasurer.Secretary.Other. XIII. INDEMNIFICATION. Subject to any applicable statute, any Director or Officer of the Corporation shall: (check one)BE INDEMNIFIED and held harmless by the Corporation to the fullest extent of the law. This includes, but is not limited to, a party to any action, suit, or proceeding, by reason of the fact of being a testator or intestate representative, is or was a Director, Officer, Agent, or Employee of the Corporation. The Corporation shall provide reasonable expenses, including attorney’s fees, actually and necessarily incurred in connection with such action, suit, or proceeding. Notwithstanding the foregoing, no indemnification shall be made by the Corporation of any judgment or other final determination, if the acts were committed in bad faith or were the result of active or deliberate fraud, dishonesty, or clear and gross negligence.NOT BE INDEMNIFIED or held harmless in any way by the Corporation.XIV. AMENDMENTS. These Bylaws may be amended by: (check all that apply):% vote of the Board of Directors.% vote of the Shareholders.Other. XV. STOCK CERTIFICATES. The Corporation may provide shares of stock: (check one)WITH CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates. Upon written request to the Secretary, a Shareholder may request certified stock certificates as provided by the Board of Directors.WITHOUT CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates.XVI. DIRECTORS. The Corporation shall be managed by Directors, who together constitute the Board of Directors.Nomination. The Board of Directors shall be elected by the Shareholders at the annual meeting by the vote of Shareholders holding of record in the aggregate at least a plurality of the shares of stock of the Corporation present in person or by proxy and entitled to vote at the annual meeting of Shareholders. Each Director serving a term of years unless removed by the Shareholders or upon the Director’s resignation.Quorum. It is required that a majority of the Board of Directors be present to be considered a quorum.Regular Meetings. By resolution and after the annual meeting, the Board of Directors may provide a time and place to meet without notice other than that resolution.Special Meetings. Special meetings may be demanded by any Officer or Director of the Corporation. Such demand must be made by submitting written notice via the United States Postal Service and by providing at least five (5) days notice.Remote Communication. One or more Directors may participate in meetings of the Board or a committee of the Board by any communication, including video-conference, by means of which all participating Directors can simultaneously hear each other during the meeting. Participation in this manner shall constitute presence in person at such meeting.Conflict of Interest. If any vote, either during a regular meeting, special meeting, or any other Corporate action takes place and a Director has a conflict of interest, such interest shall not invalidate their vote.Board of Director Actions. A majority of the total number of Board of Directors shall constitute a quorum for the transaction of all business matters. The act of a majority of Directors present at any meeting at which a quorum is present shall be considered an action taken by the entire Board of Directors, except as provided by law, the Articles of Incorporation, or these Bylaws. Each Director present shall have one vote, irrespective of the number of shares of stock, if any, he or she may hold.Removal. Any Director or the entire Board of Directors may be removed, at any time, with or without cause, by the holders of a majority of the voting stock of the Corporation, by such Shareholders attending a meeting for such purpose.Vacancies. Except as otherwise provided by law, any vacancy in the Board of Directors occurring by reason of an increase in the authorized number of Directors or by reason of the death, withdrawal, removal, disqualification, inability to act, or resignation of a Director shall be filled by the majority of Directors then in office. The successor shall serve the unexpired portion of the term of his or her predecessor. Any Director may resign at any time by giving written notice to the Board or the Secretary.Committees. The Board of Directors, by resolution, may create one or more committees, each consisting of one or more Directors. Each such committee shall serve at the pleasure of the Board. All provisions under the Statutes and these Bylaws relating to meetings, action without meetings, notice, and waiver of notice, quorum, and voting requirements of the Board of Directors shall apply to such committees and their members.Consent in Lieu of Meetings. Any action required or permitted to be taken at any meeting of the Board of Directors, or of any committee thereof, may be taken without a meeting of all members of the Board or committee, as the case may be, should there be consent thereto in writing, with such writing or writings to be filed with the minutes of the proceedings of the Board or committee.Compensation. The Board of Directors shall have the authority to fix the compensation of Directors. A fixed sum and expenses of attendance may be allowed for each regular or special meeting of the Board, including their services as a member of committees of the Board.XVII. CONFLICT OF INTEREST. A Director of the Corporation has a conflict of interest if the Director has an existing or potential business, financial or personal interest or holds an elected or appointed position that could impair or might reasonably appear to impair the exercise of independent, unbiased judgment in the discharge of his or her responsibilities to the Corporation. A conflict will be deemed to exist if the business, financial or personal interest or elected or appointed position is held by the Director or by a family member (spouse, parent, siblings, children or another close relative), or any organization in which the Director; or family member as defined, is an officer, Director, employee, trustee or material stockholder. If the Director in question disputes as to whether a conflict of interest is present, the matter shall be decided by a majority vote of the Board of Directors.XVIII. OFFICERS. The officers of the Corporation shall be a Chairperson, a President, a Secretary, and a Treasurer, and such other officers as the Board may from time to time appoint, including one or more Vice Presidents and such other officers as it deems advisable. Each such officer shall exercise such powers and perform such duties as shall be set forth herein and such other powers and duties as may be specified from time to time by the Board of Directors. The officers of the Corporation shall be elected by the Board of Directors. Each of the Chairperson, President, and&#x2F;or any Vice Presidents may have powers that are only delegated to them by the Board of Directors.Chairperson. The Chairperson shall have overall responsibility and authority for management and operations of the Corporation and shall preside at all meetings of the Board of Directors and Shareholders and shall ensure that all orders and resolutions of the Board of Directors and Shareholders are implemented.President. The President shall be the chief operating officer of the Corporation and shall have full responsibility and authority for management of the day-to-day operations of the Corporation. The President shall be an ex-officio member of all committees and shall have the general powers and duties of management and supervision usually vested in the office of President of a corporation.Treasurer. The Treasurer shall be the chief financial officer of the Corporation and shall have responsibility for the custody of the corporate funds and securities, to keep full and accurate records and accounts of receipts and disbursements in books belonging to the Corporation and shall keep the monies of the Corporation in a separate account in the name of the Corporation. The Treasurer shall provide to the President and Directors, at the regular meetings of the Board, or whenever requested by the Board, an account of all financial transactions and of the financial condition of the Corporation.Secretary. The Secretary shall attend all meetings of the Board and all meetings of the shareholders and shall act as clerk thereof and record all the votes of the Corporation and the minutes of all its transactions in a book to be kept for that purpose and shall perform like duties for all committees of the Board of Directors when required. The Secretary shall give, or cause to be given, a notice of all meetings of the shareholders and special meetings of the Board of Directors, and shall perform such other duties as may be prescribed by the Board of Directors or President, and under whose supervision the Secretary shall be. The Secretary shall maintain the records, minutes, and seal of the Corporation and may attest any instruments signed by any other officer of the Corporation.The officers of the Corporation shall hold office until their successors are chosen and have qualified or until their earlier resignation or removal. Any officer or agent elected or appointed by the Board may be removed at any time, with or without cause, by the affirmative vote of a majority of the Board of Directors. Any vacancy occurring in any office as a result of death, resignation, removal, or otherwise shall be filled for the unexpired portion of the term by a majority vote of the Board of Directors. Any and all compensation of officers of the Corporation shall be fixed by the Board of Directors.XIX. LIST OF SHAREHOLDERS. The officer of the Corporation who has charge of the stock ledger of the Corporation shall prepare and make, at least ten (10) days before any meeting of Shareholders, a complete list of the Shareholders entitled to vote at the meeting, arranged alphabetically, and showing the address of each Shareholder and the number of shares held by each Shareholder. The list shall be open to the examination of any Shareholder for any purpose germane to the meeting, during ordinary business hours, for a period of at least ten (10) days before the meeting, either at a mutually agrees upon location or where the meeting is to be held. The list shall also be produced and kept available at the time and place of the meeting, for the entire duration of the meeting, and can be inspected by any shareholder present at the meeting.XX. CERTIFICATION. The original, or a copy of these bylaws, as amended or otherwise altered to date, certified by the Secretary, shall be kept at the Corporation&#x27;s principal executive office and shall be open to inspection by the stockholders of the Corporation, at all reasonable times during office hours.By the signature below, these bylaws are hereby certified to be a complete and correct copy of the above-named Corporation, duly adopted by the initial Board of Directors on .ByDatehttps:&#x2F;&#x2F;esign.com&#x2F;Print nameTitleByhttps:&#x2F;&#x2F;esign.com&#x2F;DatePrint nameTitleByDatePrint nameTitlehttps:&#x2F;&#x2F;esign.com&#x2F;",
-
-
-                                    "positionId": "dg-8o8nwt2btw"
-
-
-                                }
-
-
-                            ]
-
-
-                        }
-
-
-                    },
-
-
-                    "used": [
-
-
-                        {
-
-
-                            "targetType": "Answer",
-
-
-                            "target": {
-
-
-                                "positionId": "dg-0iwjlizvjal",
-
-
-                                "title": "Some of the uses of HTML",
-
-
-                                "status": "send",
-
-
-                                "displayTime": "2024-07-10T06:52:44.932Z",
-
-
-                                "showmoreClicked": false,
-
-
-                                "internalInfoClicked": false,
-
-
-                                "answerLinkClicked": []
-
-
-                            }
-
-
-                        }
-
-
-                    ]
-
-
-                }
-
-
-            ],
-
-
-            "proActiveSuggestions": [
-
-
-                {
-
-
-                    "displayTime": "2024-07-10T06:50:46.513Z",
-
-
-                    "utterance": "hi",
-
-
-                    "countDisplayedAnswers": {
-
-
-                        "countDialogTasks": 0,
-
-
-                        "countFaqs": 0,
-
-
-                        "countWebPages": 0,
-
-
-                        "countFiles": 0,
-
-
-                        "countAnswers": 0,
-
-
-                        "countFromNonNativeDataSource": 0
-
-
-                    },
-
-
-                    "suggestions": {},
-
-
-                    "used": []
-
-
-                },
-
-
-                {
-
-
-                    "displayTime": "2024-07-10T06:50:56.797Z",
-
-
-                    "utterance": "i want to cancel order",
-
-
-                    "countDisplayedAnswers": {
-
-
-                        "countDialogTasks": 1,
-
-
-                        "countFaqs": 0,
-
-
-                        "countWebPages": 1,
-
-
-                        "countFiles": 0,
-
-
-                        "countAnswers": 1,
-
-
-                        "countFromNonNativeDataSource": 0
-
-
-                    },
-
-
-                    "suggestions": {
-
-
-                        "dialogs": [
-
-
-                            {
-
-
-                                "name": "cancel Pizza"
-
-
-                            }
-
-
-                        ],
-
-
-                        "answers": [
-
-
-                            {
-
-
-                                "positionId": "dg-77ha3vvvlx",
-
-
-                                "content": "- To cancel the order, open the ··· menu and select Delete.\n[source_name: confluence_data, chunk_id: chk-1]",
-
-
-                                "sources": [
-
-
-                                    {}
-
-
-                                ],
-
-
-                                "internalFlag": false
-
-
-                            }
-
-
-                        ],
-
-
-                        "web": [
-
-
-                            {
-
-
-                                "sources": [
-
-
-                                    {
-
-
-                                        "title": "Multicultural products and services | CVS Health",
-
-
-                                        "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fabout-cvs-health%2Fdiversity%2Fmulticultural-products-and-services&requestId=fsh-2f457ec6-94b3-5da4-b497-9a4212ab0629&contentId=fc-1840c763-30ae-48de-8b49-08c55ccbfe57&hId=a6029ef8813d678bf3ed746e358b617ae496737aba342d53b7ec898bcf2275f2"
-
-
-                                    }
-
-
-                                ],
-
-
-                                "content": "Skip to main content Let us help you find what you're looking for Standard search Multicultural products and services Every day, millions of people shop in our stores, fill their prescriptions through our mail order pharmacy, or visit one of our MinuteClinics. These customers, clients and patients c",
-
-
-                                "positionId": "dg-97ltdjavxv"
-
-
-                            }
-
-
-                        ],
-
-
-                        "confluencecloud": [
-
-
-                            {
-
-
-                                "sources": [
-
-
-                                    {
-
-
-                                        "title": "Test data for search :",
-
-
-                                        "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Frajiv-kore.atlassian.net%2Fwiki%2Fspaces%2FMW%2Fpages%2F393217&requestId=fsh-2f457ec6-94b3-5da4-b497-9a4212ab0629&contentId=fc-24569f4f-0993-4586-aa8a-965a3a90b50d&hId=218655d0f90af3bad15ad7fde31d1d360a83b7eb17b03bd01060b9ff5fba4dbe"
-
-
-                                    }
-
-
-                                ],
-
-
-                                "content": " You can easily export this as a pdf by clicking the ... menu in the upper righthand corner.I. INCORPORATION. It is recognized that (“Corporation”) is a duly organized corporation authorized to do business in the State of (&quot;State of Formation&quot;) by its Articles of Incorporation or similar registered documents.II. STATE LAW. The Corporation is organized under the relevant laws of the State of Formation (“Statutes”), and except as otherwise provided herein, the Statutes shall apply to the governance of the Corporation.III. PURPOSE. The purpose of the Corporation is to engage in any lawful activity for which corporations may be formed.IV. ANNUAL MEETING. Meetings of Shareholders shall be held at the principal office of the Corporation or at such other place that may be determined from time to time by the Board of Directors of the Corporation. The purpose of the annual meeting shall be to elect the Board of Directors, officers and decide on any other business activities and/or corporate decisions.An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within days after proper notice has been made.V. SPECIAL MEETINGS. Unless otherwise proscribed by statute, special meetings of the Shareholders may be called by: (check all that apply)President (or Chief Executive Officer).% of the Board of Directors.% of the Shareholders.Other. After a special meeting has been called, the Board of Directors shall decide its time and place within days after the special meeting has been called.VI. PLACE OF MEETINGS. Annual and special meetings shall be determined by the Board of Directors. By default, such meetings shall take place at the principal office of the Corporation. Shareholders of all classes and series may attend any meeting of the Corporation.Such meetings may be attended: (check all that apply)In-person at the Corporation’s principal office.Via remote communication, the method to be determined by the Board of Directors.Other. All communication methods shall offer each attending Shareholder the right to be present, vote on business matters, and provide their consent or dissent for any actionable item.VII. DISSOLUTION. The Corporation may only be dissolved in the following ways: (check all that apply)% vote by the Board of Directors.% vote by the Shareholders.Other. VIII. NOTICE OF MEETINGS. Written notice shall be provided to each Shareholder of any meeting that such Shareholder is permitted to take action in the form of a vote and/or offer their consent or dissent for any actionable item. Such written notice shall detail the time, place, remote access (if available), and in the case of a special meeting, the purpose or purposes for which the meeting is called. Unless otherwise provided by law, written notice of any meeting shall be given not less than ten (10) days and no more than sixty (60) days before the date of the meeting.Notice of any meeting can be sent to the Shareholders by the following method(s): (check all that apply):E-Mail.Mailing Address via United States Mail (postage paid by the Corporation).Fax.Hand-Delivered.Other. IX. QUORUM. A quorum, which represents the required number of individuals to be present to hold an annual or special meeting, shall be: (check all that apply)% of the Board of Directors being present.% of the Shareholders being present.Other. Upon meeting the requirements of the quorum, the attending individuals of the meeting shall be able to take action and make decisions for the Corporation.X. ACTIONS OF THE CORPORATION. Actions made on behalf of the Corporation must be: (check one)Made with a Meeting ONLY. Any action required to be taken or which may be taken at any meeting, whether annual or special, must be taken with a meeting, in accordance with these Bylaws.Can be Made WITHOUT a Meeting. Any action required to be taken or which may be taken at any meeting, whether annual or special, may be taken without a meeting, without prior notice, and without a vote, if consent is in writing, setting forth the action so taken, and shall be signed by the holders of outstanding shares having not less than the minimum number of votes that would be necessary to take such action at a meeting at which all Shareholders entitled to vote were present and voted.XI. CORPORATE SEAL. The Corporation shall: (check one)HAVE a Corporate Seal. The corporate seal shall be in such form that the Board of Directors shall approve. NOT HAVE a Corporate Seal.XII. EXECUTION OF DOCUMENTS. All contracts, checks, drafts, demands for money, notes, and other legal instruments or rights of any nature of the Corporation may be signed by: (check all that apply)Board of Directors.Chairperson.President.Treasurer.Secretary.Other. XIII. INDEMNIFICATION. Subject to any applicable statute, any Director or Officer of the Corporation shall: (check one)BE INDEMNIFIED and held harmless by the Corporation to the fullest extent of the law. This includes, but is not limited to, a party to any action, suit, or proceeding, by reason of the fact of being a testator or intestate representative, is or was a Director, Officer, Agent, or Employee of the Corporation. The Corporation shall provide reasonable expenses, including attorney’s fees, actually and necessarily incurred in connection with such action, suit, or proceeding. Notwithstanding the foregoing, no indemnification shall be made by the Corporation of any judgment or other final determination, if the acts were committed in bad faith or were the result of active or deliberate fraud, dishonesty, or clear and gross negligence.NOT BE INDEMNIFIED or held harmless in any way by the Corporation.XIV. AMENDMENTS. These Bylaws may be amended by: (check all that apply):% vote of the Board of Directors.% vote of the Shareholders.Other. XV. STOCK CERTIFICATES. The Corporation may provide shares of stock: (check one)WITH CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates. Upon written request to the Secretary, a Shareholder may request certified stock certificates as provided by the Board of Directors.WITHOUT CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates.XVI. DIRECTORS. The Corporation shall be managed by Directors, who together constitute the Board of Directors.Nomination. The Board of Directors shall be elected by the Shareholders at the annual meeting by the vote of Shareholders holding of record in the aggregate at least a plurality of the shares of stock of the Corporation present in person or by proxy and entitled to vote at the annual meeting of Shareholders. Each Director serving a term of years unless removed by the Shareholders or upon the Director’s resignation.Quorum. It is required that a majority of the Board of Directors be present to be considered a quorum.Regular Meetings. By resolution and after the annual meeting, the Board of Directors may provide a time and place to meet without notice other than that resolution.Special Meetings. Special meetings may be demanded by any Officer or Director of the Corporation. Such demand must be made by submitting written notice via the United States Postal Service and by providing at least five (5) days notice.Remote Communication. One or more Directors may participate in meetings of the Board or a committee of the Board by any communication, including video-conference, by means of which all participating Directors can simultaneously hear each other during the meeting. Participation in this manner shall constitute presence in person at such meeting.Conflict of Interest. If any vote, either during a regular meeting, special meeting, or any other Corporate action takes place and a Director has a conflict of interest, such interest shall not invalidate their vote.Board of Director Actions. A majority of the total number of Board of Directors shall constitute a quorum for the transaction of all business matters. The act of a majority of Directors present at any meeting at which a quorum is present shall be considered an action taken by the entire Board of Directors, except as provided by law, the Articles of Incorporation, or these Bylaws. Each Director present shall have one vote, irrespective of the number of shares of stock, if any, he or she may hold.Removal. Any Director or the entire Board of Directors may be removed, at any time, with or without cause, by the holders of a majority of the voting stock of the Corporation, by such Shareholders attending a meeting for such purpose.Vacancies. Except as otherwise provided by law, any vacancy in the Board of Directors occurring by reason of an increase in the authorized number of Directors or by reason of the death, withdrawal, removal, disqualification, inability to act, or resignation of a Director shall be filled by the majority of Directors then in office. The successor shall serve the unexpired portion of the term of his or her predecessor. Any Director may resign at any time by giving written notice to the Board or the Secretary.Committees. The Board of Directors, by resolution, may create one or more committees, each consisting of one or more Directors. Each such committee shall serve at the pleasure of the Board. All provisions under the Statutes and these Bylaws relating to meetings, action without meetings, notice, and waiver of notice, quorum, and voting requirements of the Board of Directors shall apply to such committees and their members.Consent in Lieu of Meetings. Any action required or permitted to be taken at any meeting of the Board of Directors, or of any committee thereof, may be taken without a meeting of all members of the Board or committee, as the case may be, should there be consent thereto in writing, with such writing or writings to be filed with the minutes of the proceedings of the Board or committee.Compensation. The Board of Directors shall have the authority to fix the compensation of Directors. A fixed sum and expenses of attendance may be allowed for each regular or special meeting of the Board, including their services as a member of committees of the Board.XVII. CONFLICT OF INTEREST. A Director of the Corporation has a conflict of interest if the Director has an existing or potential business, financial or personal interest or holds an elected or appointed position that could impair or might reasonably appear to impair the exercise of independent, unbiased judgment in the discharge of his or her responsibilities to the Corporation. A conflict will be deemed to exist if the business, financial or personal interest or elected or appointed position is held by the Director or by a family member (spouse, parent, siblings, children or another close relative), or any organization in which the Director; or family member as defined, is an officer, Director, employee, trustee or material stockholder. If the Director in question disputes as to whether a conflict of interest is present, the matter shall be decided by a majority vote of the Board of Directors.XVIII. OFFICERS. The officers of the Corporation shall be a Chairperson, a President, a Secretary, and a Treasurer, and such other officers as the Board may from time to time appoint, including one or more Vice Presidents and such other officers as it deems advisable. Each such officer shall exercise such powers and perform such duties as shall be set forth herein and such other powers and duties as may be specified from time to time by the Board of Directors. The officers of the Corporation shall be elected by the Board of Directors. Each of the Chairperson, President, and/or any Vice Presidents may have powers that are only delegated to them by the Board of Directors.Chairperson. The Chairperson shall have overall responsibility and authority for management and operations of the Corporation and shall preside at all meetings of the Board of Directors and Shareholders and shall ensure that all orders and resolutions of the Board of Directors and Shareholders are implemented.President. The President shall be the chief operating officer of the Corporation and shall have full responsibility and authority for management of the day-to-day operations of the Corporation. The President shall be an ex-officio member of all committees and shall have the general powers and duties of management and supervision usually vested in the office of President of a corporation.Treasurer. The Treasurer shall be the chief financial officer of the Corporation and shall have responsibility for the custody of the corporate funds and securities, to keep full and accurate records and accounts of receipts and disbursements in books belonging to the Corporation and shall keep the monies of the Corporation in a separate account in the name of the Corporation. The Treasurer shall provide to the President and Directors, at the regular meetings of the Board, or whenever requested by the Board, an account of all financial transactions and of the financial condition of the Corporation.Secretary. The Secretary shall attend all meetings of the Board and all meetings of the shareholders and shall act as clerk thereof and record all the votes of the Corporation and the minutes of all its transactions in a book to be kept for that purpose and shall perform like duties for all committees of the Board of Directors when required. The Secretary shall give, or cause to be given, a notice of all meetings of the shareholders and special meetings of the Board of Directors, and shall perform such other duties as may be prescribed by the Board of Directors or President, and under whose supervision the Secretary shall be. The Secretary shall maintain the records, minutes, and seal of the Corporation and may attest any instruments signed by any other officer of the Corporation.The officers of the Corporation shall hold office until their successors are chosen and have qualified or until their earlier resignation or removal. Any officer or agent elected or appointed by the Board may be removed at any time, with or without cause, by the affirmative vote of a majority of the Board of Directors. Any vacancy occurring in any office as a result of death, resignation, removal, or otherwise shall be filled for the unexpired portion of the term by a majority vote of the Board of Directors. Any and all compensation of officers of the Corporation shall be fixed by the Board of Directors.XIX. LIST OF SHAREHOLDERS. The officer of the Corporation who has charge of the stock ledger of the Corporation shall prepare and make, at least ten (10) days before any meeting of Shareholders, a complete list of the Shareholders entitled to vote at the meeting, arranged alphabetically, and showing the address of each Shareholder and the number of shares held by each Shareholder. The list shall be open to the examination of any Shareholder for any purpose germane to the meeting, during ordinary business hours, for a period of at least ten (10) days before the meeting, either at a mutually agrees upon location or where the meeting is to be held. The list shall also be produced and kept available at the time and place of the meeting, for the entire duration of the meeting, and can be inspected by any shareholder present at the meeting.XX. CERTIFICATION. The original, or a copy of these bylaws, as amended or otherwise altered to date, certified by the Secretary, shall be kept at the Corporation's principal executive office and shall be open to inspection by the stockholders of the Corporation, at all reasonable times during office hours.By the signature below, these bylaws are hereby certified to be a complete and correct copy of the above-named Corporation, duly adopted by the initial Board of Directors on .ByDatehttps://esign.com/Print nameTitleByhttps://esign.com/DatePrint nameTitleByDatePrint nameTitlehttps://esign.com/",
-
-
-                                "positionId": "dg-e7pr73egel"
-
-
-                            }
-
-
-                        ]
-
-
-                    },
-
-
-                    "used": [
-
-
-                        {
-
-
-                            "targetType": "DialogTask",
-
-
-                            "target": {
-
-
-                                "positionId": "dg-z1jbkr4wn2",
-
-
-                                "name": "cancel Pizza",
-
-
-                                "runType": "assist",
-
-
-                                "status": "completed",
-
-
-                                "startTime": "2024-07-10T06:51:02.050Z",
-
-
-                                "endTime": "2024-07-10T06:51:19.753Z",
-
-
-                                "suggestionsCount": {
-
-
-                                    "tellCustomer": 1,
-
-
-                                    "askCustomer": 4,
-
-
-                                    "tellUsed": 0,
-
-
-                                    "askUsed": 2
-
-
-                                }
-
-
-                            }
-
-
-                        }
-
-
-                    ]
-
-
-                },
-
-
-                {
-
-
-                    "displayTime": "2024-07-10T06:51:44.013Z",
-
-
-                    "utterance": "yes",
-
-
-                    "countDisplayedAnswers": {
-
-
-                        "countDialogTasks": 0,
-
-
-                        "countFaqs": 0,
-
-
-                        "countWebPages": 0,
-
-
-                        "countFiles": 0,
-
-
-                        "countAnswers": 1,
-
-
-                        "countFromNonNativeDataSource": 0
-
-
-                    },
-
-
-                    "suggestions": {
-
-
-                        "answers": [
-
-
-                            {
-
-
-                                "positionId": "dg-dlt1zfqtat",
-
-
-                                "content": "- Yes, the President shall be an ex-officio member of all committees and have general powers and duties of management and supervision usually vested in the office of President of a corporation.\n- Yes, the Treasurer shall be the chief financial officer of the Corporation and have responsibility for the custody of corporate funds and securities.\n- Yes, the Secretary shall attend all meetings of the Board and shareholders, act as clerk, record votes, and perform like duties for all committees when required. ",
-
-
-                                "sources": [
-
-
-                                    {
-
-
-                                        "tile": "Test data for search :",
-
-
-                                        "url": "https://rajiv-kore.atlassian.net/wiki/spaces/MW/pages/393217"
-
-
-                                    }
-
-
-                                ],
-
-
-                                "internalFlag": false
-
-
-                            }
-
-
-                        ]
-
-
-                    },
-
-
-                    "used": []
-
-
-                }
-
-
-            ]
-
-
-        },
-
-
-        {
-
-
-            "conversationID": "atesta-lyfhbnlb",
-
-
-            "botSessionID": "668e2f45f037fc2ab99aee54",
-
-
-            "channel": "chat",
-
-
-            "segmentID": "ac-db81a26-1691-4294-b289-c757b7d9a442",
-
-
-            "segmentStartTime": "2024-07-10T06:49:45.556Z",
-
-
-            "segmentEndTime": "2024-07-10T06:57:56.503Z",
-
-
-            "agent": {
-
-
-                "agentId": "agentID1"
-
-
-            },
-
-
-            "tags": [],
-
-
-            "agentActions": [],
-
-
-            "proActiveSuggestions": []
-
-
-        }
-
-
-    ],
-
-
-    "hasMore": false
-
-
-}
- 
-Response Body Parameters
-PARAMETER
-TYPE AND FORMAT
-DESCRIPTION AND EXAMPLE
-numResults
-integer
-number of results sent in this response
-hasMore
-boolean (True / False)
-if there are any more pages left with results.
-Example: “false” without the double-quotes
-data
-array of segment objects
-Each segment is a part of a conversation that is driven by one primary agent.
-data[].conversationID
-–
-unique id of the conversation – from customer
-data[].botSessionID
-alphanumeric string
-unique id of the session – from Kore.
-Example: “667fc3b587b5fd0fbf97d4de”
-data[].channel
-string
-channel name – from customer.
-Example: “chat”
-data[].segmentID
-type-prefixed uuid
-unique id of the segment, prefixed by “ac” – from Kore.
-Example: “ac-de166b2-1e14-4141-9061-9bca0203b068”
-data[].agent
-object
-object containing data of the primary agent servicing this portion (aka segment) of the conversation.
-All data is optional (except agentID), and comes from the customer via the process API
-data[].agent.firstName
-string
-agent’s first name – from customer.
-Example: “John”
-data[].agent.lastName
-string
-agent’s last name – from customer.
-Example: “Smith”
-data[].agent.email
-string of valid email address
-agent’s email address – from customer.
-Example: “john.smith@example.com”
-data[].agent.name
-string
-agent name – from customer.
-Example: “John Smith”
-data[].agent.agentId
-string
-unique id of the agent- from customer.
-Example: “jsmith01”
-data[].tags
-array of tag objects
-Each tag is one created by bot developers at various points in the Dialog.
-All tags emitted by the bot at any point during this portion of the conversation will be returned here.
-data[].tags[].type
-type of tag
-can be a message-level tag,a session-level or a user-level tag.
-Example: one of “user”,”message”, “session”
-data[].tags[].name
-string
-key value of the tag – from the client’s bot developer
-data[].tags[].value
-string
-value of the tag – from the client’s bot developer
-data[].tags[].messageID
-type-prefixed uuid
-uuid of the message (prefix: “ms”) that emitted this tag – from Kore.
-Example: “ms-de166b2-1e14-4141-9061-9bca0203b068”
-data[].tags[].createdAt
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-UTC-based time when this tag was emitted.
-Example: “2024-06-29T08:37:35.937Z”
-data[].segmentStartTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-UTC-based time when this portion of the conversation began.
-Example: “2024-06-29T08:37:35.937Z”
-data[].segmentEndTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-UTC-based time when this portion of the conversation end.
-Example: “2024-06-29T08:37:35.937Z”
-data[].agentActions
-array of objects
-array of objects each of which denotes an Agent’s action, which can be:
-1. Attempt to Search via Search Bar
-2. Running a DialogTask from the Library opening in Search bar
-data[].agentActions[].actionType
-string
-type of Agent’s action.
-Example: one of “SearchBarEntry”, “LibrarySelection”
-data[].agentActions[].action
-object
-object containing data related to an Agent’s attempt to search.
-Will be of type SearchBarEntry.
-data[].agentActions[].used
-array of objects
-objects detailing which of the SearchBarEntries or the DialogTasks
-were used – as in Sent, Copied, Executed, given Feedback, or had their links clicked
-data[].agentActions[].used[].targetType
-string
-specifies the type of object used by the agent.
-Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPage”, “GeneralDataSource”
-data[].agentActions[].used[].target
-object
-object containing details of use of any DialogTask or data source
-data[].proActiveSuggestions
-array of objects
-objects containing suggestions given proactively by Agent AI.
-These can be:
-1. Suggestions given proactively based on Customer’s latest utterance
-2. Suggestions given proactively based on preshown text, such as Summary.
-data[].proActiveSuggestions[].utterance
-string
-entire utterance by the end Customer – redacted if redaction is enabled.
-Example: “What is my account balance?”
-data[].proActiveSuggestions[].suggestions
-Suggestion object
-each Suggestion by Agent AI, whether it is a DialogTask, an Answer, FAQ, Article or any other
-data[].proActiveSuggestions[].displayTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this list of suggestions was displayed (UTC).
-Example: “2024-06-29T08:37:35.937Z”
-data[].proActiveSuggestions[].countDisplayedAnswers
-object
-contains counts of all displayed suggestions by type
-data[].proActiveSuggestions[].countDisplayedAnswers.countDialogTasks
-integer
-Number of DialogTasks suggested
-data[].proActiveSuggestions[].countDisplayedAnswers.countFaqs
-integer
-Number of Faqs suggested
-data[].proActiveSuggestions[].countDisplayedAnswers.countAnswers
-integer
-Number of Answers suggested
-data[].proActiveSuggestions[].countDisplayedAnswers.countFiles
-integer
-Number of Files suggested
-data[].proActiveSuggestions[].countDisplayedAnswers.countWebPages
-integer
-Number of Web pages suggested
-data[].proActiveSuggestions[].countDisplayedAnswers.countFromNonNativeDataSource
-integer
-Number of suggestions from non-native data sources
-data[].proActiveSuggestions[].used
-array of objects
-objects detailing which of the suggestions were used – as in Sent, Copied, Executed, given Feedback, or had their links clicked
-data[].proActiveSuggestions[].used[].targetType
-string
-specifies the type of object used by the agent.
-Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPage”, “GeneralDataSource”
-data[].proActiveSuggestions[].used[].target
-object
-object containing details of use of any DialogTask or data source
-SearchBarEntry
-object
-This details an action by the Agent – when he enters text on the Search Bar.
-SearchBarEntry.searchPhrase
-
-
-
-
-SearchBarEntry.typingStartTime
-
-
-
-
-SearchBarEntry.executionStartTime
-
-
-
-
-SearchBarEntry.displayTime
-
-
-
-
-SearchBarEntry.countDisplayedAnswers
-object
-contains counts of all displayed suggestions by type
-SearchBarEntry.countDisplayedAnswers.countDialogTasks
-integer
-Number of DialogTasks suggested
-SearchBarEntry.countDisplayedAnswers.countFaqs
-integer
-Number of Faqs suggested
-SearchBarEntry.countDisplayedAnswers.countAnswers
-integer
-Number of Answers suggested
-SearchBarEntry.countDisplayedAnswers.countFiles
-integer
-Number of Files suggested
-SearchBarEntry.countDisplayedAnswers.countWebPages
-integer
-Number of Web pages suggested
-SearchBarEntry.countDisplayedAnswers.countFromNonNativeDataSource
-integer
-Number of suggestions from non-native data sources
-SearchBarEntry.suggestions
-Suggestion object
-each Suggestion by Agent AI, whether it is a DialogTask, an Answer, FAQ, Article or any other
-DialogTask
-object
-This object is shown in a used array when a DialogTask is run.
-DialogTask.name
-string
-name of the DialogTask – from the client’s bot developer.
-Example: “Cancel account”
-DialogTask.runType
-string
-How did the agent run it? Using the “Run” button, or the “Run with Agent input” button.
-Example: one of “RunAssist”, “RunWithAgentInput”
-DialogTask.status
-string
-Outcome of the DialogTask.
-Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, “Error”
-DialogTask.SuggestionsCount
-object
-count of suggestions made by DialogTask by ask/tell prompt type.
-DialogTask.SuggestionsCount.askSuggestions
-integer
-count of suggestions that prompt with “Ask Customer”
-DialogTask.SuggestionsCount.tellSuggestions
-integer
-count of suggestions that prompt with “Tell Customer”
-DialogTask.SuggestionsCount.askUsed
-integer
-count of “Ask” suggestions that were sent or copied over to Customer
-DialogTask.SuggestionsCount.tellUsed
-integer
-count of “Tell” suggestions that were sent or copied over to Customer
-DialogTask.startTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this DialogTask began to run
-Example: “2024-06-29T08:37:35.937Z”
-DialogTask.endTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this DialogTask ended its run.
-Example: “2024-06-29T08:37:35.937Z”
-DialogTask.feedback
-object
-feedback given by Agent to this DialogTask
-faq
-object
-this object is shown in a used array when an faq Q&A pair is used
-faq.title
-string
-Title of the FAQ Q&A pair.
-Example: “FAQ 3.2”
-faq.status
-string
-How was it used? Sent or Copied?
-Example: one of “Sent”, “Copied”
-faq.usedTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this FAQ was sent or copied.
-Example: “2024-06-29T08:37:35.937Z”
-answer
-object
-this object is shown in a used array when an Answer from Search AI is used
-answer.status
-string
-shows if the Answer has been Sent or Copied. If not sent or copied, but used otherwise, it will be blank. “Used Otherwise” means its “Show more” may have been clicked, one of its links may have been clicked, or the Agent gave feedback to it.
-Example: one of “Sent”, “Copied”, or blank
-answer.usedTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this Answer was sent or copied. If not, it will be blank.
-Example: “2024-06-29T08:37:35.937Z”
-answer.showMoreClicked
-boolean (True / False)
-if the Show More button for this answer was clicked.
-Example: “false” without the double-quotes
-answer.answerLinkClicked
-array of URL links
-links in the Answer clicked by the Agent.
-Example: [“http://www.google.com“]
-answer.internalInfoMoreClicked
-boolean (True / False)
-if the Show More button for this answer was clicked.
-Example: “false” without the double-quotes
-answer.positionId
-type-prefixed uuid
-prefixed by “dg-“, a position ID referring to a displayed suggestion in the “suggestions” object.
-Example: “dg-3id77hn44k”
-answer.feedback
-object
-feedback given by Agent to this Answer
-webpage
-object
-this object is shown in a used array when a webpage is used by the Agent
-webpage.url
-string – URL
-URL of the webpage
-webpage.status
-string
-How was it used? Sent or Copied?
-Example: one of “Sent”, “Copied”
-webpage.usedTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this webpage was sent or copied.
-Example: “2024-06-29T08:37:35.937Z”
-file
-object
-this object is shown in a used array when a file is used by the Agent
-file.path
-string – filepath
-path of the file.
-Example: “/home/docs/configuration_parameters.doc”
-file.status
-string
-How was it used? Sent or Copied?
-Example: one of “Sent”, “Copied”
-file.usedTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this file was sent or copied.
-Example: “2024-06-29T08:37:35.937Z”
-general-data-source
-object
-this object is shown in a used array when a non-native data source is used by the Agent
-general-data-source.connector
-string
-name of the data source.
-Example: “MSSharepoint”
-general-data-source.uri
-URI
-URI of the resource.
-Example: “https://TestServer/TestSite/Reports/Doc/Company%20Sales.rdl“
-general-data-source.status
-string
-How was it used? Sent or Copied?
-Example: one of “Sent”, “Copied”
-general-data-source.usedTime
-Date: YYYY-MM-DDTHH24:mm:SS.NNNZ
-time at which this resource was sent or copied.
-Example: “2024-06-29T08:37:35.937Z”
-feedback
-object
-contains feedback from an Agent to certain suggestions.
-feedback.response
-string
-The Agent can choose Thumbs Up or Down.
-Example: one of “up”, “down”
-feedback.reasonCode
-array of strings
-the Agent may choose multiple reason codes, and these are configurable.
-Example: [“Wrong Intent”, “Missed Context”]
-feedback.comment
-string
-freeform textual feedback from the Agent.
-Example: “This is not the correct Dialog. The customer said ‘Cancel account’, and the Dialog is about renewal”.
-suggestions
-object
-containing all displayed suggestions, whether from a SearchBarEntry action by the Agent or a proActiveSuggestion triggered by a Customer’s utterance
-suggestions.dialogs
-array of objects
-each object contains the particulars of a DialogTask displayed to Agent
-suggestions.dialogs[].name
-string
-name of the DialogTask – from the client’s bot developer.
-Example: “Cancel Account”
-suggestions.answers
-array of objects
-each object contains details of an Answer displayed
-suggestions.answers[].content
-string
-Generated Answer content.
-Example: “A potentially very long answer that may be generated by an LLM”.
-suggestions.answers[].positionId
-type-prefixed uuid
-prefixed by “dg-“, this field acts as a key for this particular answer, later referred to by an Answer object in a used array.
-Example: “dg-3id77hn44k”
-suggestions.answers[].sources
-array of objects
-array of source links from which the Answer was generated.
-suggestions.answers[].sources[].title
-string
-Title of the page linked, that was one of the sources for the Answer.
-Example: AWS EC2 On-demand pricing
-suggestions.answers[].sources[].url
-string – URL
-The link itself.
-Example: “https://aws.amazon.com/ec2/pricing/on-demand/“
-suggestions.answers[].internalFlag
-boolean (True / False)
-Example: “false” without the double-quotes
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-----
-
-
-
-
-
-
-Conversion time: 4.905 seconds.
-
-
-
-
-Using this Markdown file:
-
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-
-Conversion notes:
-
-
-* Docs to Markdown version 1.0β36
-* Wed Jul 10 2024 04:22:25 GMT-0700 (PDT)
-* Source doc: Untitled document
-* Tables are currently converted to HTML tables.
------>
-
-
-
-
-
-
-```
-https://{{host}}/agentassist/api/v1/public/{{streamid}}/v2/agentassistinteractions?from=YYYY-MM-DD-HH24:mm:SS&to=YYYY-MM-DD-HH24:mm:SS&offset=NNNNN&limit=0..100
-
-
-curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-dcbbc63bdede/v2/agentassistinteractions?from=2024-07-10T06%3A49%3A45&to=2024-07-10T07%3A06%3A25' \
---header 'accountId: 65433af84e520234494caa86' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTE5ZjA0NzU0LWQ4MzQtNTgxOC04NzE0LWYyNGZlYzYxODgxNyJ9.DEVT2UGCTjryY_bDVGmun4-Vcp_R9-b0iRonWaB-MMA'
-```
-
-
-
-
-
-
-## **Sample Response**
-
 
 
 
 ```
 {
 
-
     "numResults": 2,
-
 
     "data": [
 
-
         {
 
+            "conversationID": "atesta-m8r0ii4o",
 
-            "conversationID": "atesta-lyfhbnlb",
-
-
-            "botSessionID": "668e2f45f037fc2ab99aee54",
-
+            "botSessionID": "67e4f9805622dd06277cdfc8",
 
             "channel": "chat",
 
+            "segmentID": "ac-9c35de2-14b3-472e-bebc-3b5d0da928ec",
 
-            "segmentID": "ac-350a3c0-1c9e-4684-920b-5479607dbc55",
+            "segmentStartTime": "2025-03-27T07:08:47.597Z",
 
+            "segmentEndTime": "2025-03-27T07:10:36.738Z",
 
-            "segmentStartTime": "2024-07-10T06:49:45.556Z",
+            "countScrollUp": 3,
 
-
-            "segmentEndTime": "2024-07-10T06:52:51.435Z",
-
+            "countScrollDn": 2,
 
             "agent": {
 
-
-                "agentId": "agentID1"
-
+                "agentId": "a-m8r0iiln"
 
             },
 
-
-            "tags": [],
-
-
-            "agentActions": [
-
+            "tags": [
 
                 {
 
+                    "type": "message",
 
-                    "actionType": "SearchBarEntry",
+                    "name": "MessageKey",
 
+                    "value": "MessageKeyVALUE",
 
-                    "action": {
+                    "messageID": "ms-50f37525-736d-5182-8a54-94711d442730",
 
+                    "createdAt": "2025-03-27T07:08:49.286Z"
 
-                        "searchPhrase": "Return string to the given question using the provided Content and source_name in no particular order as references and use 'source_name' to improve the answer relevance for a given question and also provide citations using ' chunk_id ' to the 'Content' from which you answered the question.",
+                },
 
+                {
 
-                        "typingStartTime": "2024-07-10T06:52:36.447Z",
+                    "type": "session",
 
+                    "name": "SessionKey",
 
-                        "executionStartTime": "2024-07-10T06:52:36.871Z",
+                    "value": "SessionKeyVALUE",
 
-
-                        "displayTime": "2024-07-10T06:52:40.359Z",
-
-
-                        "countDisplayedAnswers": {
-
-
-                            "countDialogTasks": 0,
-
-
-                            "countFaqs": 0,
-
-
-                            "countWebPages": 5,
-
-
-                            "countFiles": 0,
-
-
-                            "countAnswers": 1,
-
-
-                            "countFromNonNativeDataSource": 0
-
-
-                        },
-
-
-                        "suggestions": {
-
-
-                            "answers": [
-
-
-                                {
-
-
-                                    "positionId": "dg-0iwjlizvjal",
-
-
-                                    "content": "Some of the uses of HTML links include connecting web pages, navigating between different pages or resources, and specifying the destination URL using the href attribute . CVS Health offers on-site COVID-19 testing solutions for organizations, schools, and event hosts to ensure safety and continuity . The Board of Directors determines the location of annual and special meetings, allowing shareholders to attend in person or via remote communication . Thomas M. Moriarty, an executive at CVS Health, plays a crucial role in the company's brand strategy, external affairs, legal, and regulatory functions ",
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "tile": "HTML Links Hyperlinks - GeeksforGeeks",
-
-
-                                            "url": "https://www.geeksforgeeks.org/html-links/"
-
-
-                                        },
-
-
-                                        {
-
-
-                                            "tile": "Return Ready by CVS Health | COVID-19 testing for businesses & colleges | CVS Health",
-
-
-                                            "url": "https://www.cvshealth.com/covid-19/return-ready"
-
-
-                                        },
-
-
-                                        {
-
-
-                                            "tile": "Test data for search :",
-
-
-                                            "url": "https://rajiv-kore.atlassian.net/wiki/spaces/MW/pages/393217"
-
-
-                                        },
-
-
-                                        {
-
-
-                                            "tile": "Thomas M. Moriarty | CVS Health",
-
-
-                                            "url": "https://www.cvshealth.com/about-cvs-health/leadership/thomas-moriarty"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "internalFlag": false
-
-
-                                }
-
-
-                            ],
-
-
-                            "web": [
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "HTML Links Hyperlinks - GeeksforGeeks",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhtml-links%2F&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-c3f81b5d-91bd-40b7-bde5-3a3d31d61602&hId=752daacd5e91ffbc0418746ed95cb7293d55f7459fcb6369b421e6f992fd6e80"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "HTML Links Hyperlinks Last Updated : 15 May, 2024 HTML links, or hyperlinks, connect web pages. They're created using the <a> tag with the href attribute, which specifies the destination URL. Users can click on links to navigate between different pages or resources. Note: A hyperlink can be represen",
-
-
-                                    "positionId": "dg-w1kynwisgq"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Return Ready by CVS Health | COVID-19 testing for businesses & colleges | CVS Health",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fcovid-19%2Freturn-ready&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-73f15dc0-4643-466f-bc55-465935046ae0&hId=c1cd32c9c1726257267a026fa6bc6e4df4d997573b50b276ed8847ab304f7e4b"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "Skip to main content Let us help you find what you're looking for Standard search Return Ready by CVS Health® On-site COVID-19 testing solutions to help organizations, schools and event hosts bring people back together safely. Return Ready rapid on-site testing solutions Providing employers, schools",
-
-
-                                    "positionId": "dg-dtdwsh2nt"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Multicultural products and services | CVS Health",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fabout-cvs-health%2Fdiversity%2Fmulticultural-products-and-services&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-1840c763-30ae-48de-8b49-08c55ccbfe57&hId=44d9b410bb709176d3494c855d2621a601267dd775d6fd422bbec1c50db93d37"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "Skip to main content Let us help you find what you're looking for Standard search Multicultural products and services Every day, millions of people shop in our stores, fill their prescriptions through our mail order pharmacy, or visit one of our MinuteClinics. These customers, clients and patients c",
-
-
-                                    "positionId": "dg-ku9jwfzj21"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "12 Crystal-Clear FAQ Page Examples & How to Make Your Own",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fblog.hubspot.com%2Fservice%2Ffaq-page&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-25930548-2cac-40b6-909e-babc1d268293&hId=6d3e690d6a90e16630e5ecd19893fe0a8da6f02af3669beda3eb1b7b37a93e97"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "20 Customer Success Interview Questions to Ask Your Next CandidateCustomer Experience ROI: How to Convince Leadership It's Worth ItHow HubSpot Created Its Customer Journey Map11 Customer Service & Support Metrics You Must TrackHow to Create an Effective Customer Journey Map [Examples + Template]What",
-
-
-                                    "positionId": "dg-58ewdhwn4fj"
-
-
-                                },
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Veterans | CVS Health",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fabout-cvs-health%2Fdiversity%2Fveterans&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-c06b2e8b-b01e-4b12-9ae2-fe2404e7dd8c&hId=978e142babba6c87c25a6d264edf3fc4fe33cbd668610df5f567e4de9918cac5"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "Skip to main content Let us help you find what you're looking for Standard search Veterans CVS Health recognizes the value of military service and knows that our veterans' skills and experience are unparalleled. With millions of service members transitioning out of the military over the next few yea",
-
-
-                                    "positionId": "dg-yhpkp2x3r7"
-
-
-                                }
-
-
-                            ],
-
-
-                            "confluencecloud": [
-
-
-                                {
-
-
-                                    "sources": [
-
-
-                                        {
-
-
-                                            "title": "Test data for search :",
-
-
-                                            "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Frajiv-kore.atlassian.net%2Fwiki%2Fspaces%2FMW%2Fpages%2F393217&requestId=fsh-00918eb8-8436-5106-9aa0-d67d26eddea9&contentId=fc-24569f4f-0993-4586-aa8a-965a3a90b50d&hId=c2a18158c124d2614f3c761998864876d231256ed6391160be5a67ae1a455e0b"
-
-
-                                        }
-
-
-                                    ],
-
-
-                                    "content": "<span class=\"highlightText\">You</span> can easily export this as a pdf by clicking the ... menu in the upper righthand corner.I. INCORPORATION. It is recognized that ("Corporation") is a duly organized corporation authorized to do business in the State of (&amp;quot;State of Formation&amp;quot;) by its Articles of Incorporation or similar registered documents.II. STATE LAW. The Corporation is organized under the <span class=\"highlightText\">relevant</span> laws of the State of Formation ("Statutes"), and except as otherwise <span class=\"highlightText\">provided</span> herein, the Statutes shall apply to the governance of the Corporation.III. PURPOSE. The purpose of the Corporation is to engage in any lawful activity for <span class=\"highlightText\">which</span> corporations may be formed.IV. ANNUAL MEETING. Meetings of Shareholders shall be held at the principal office of the Corporation or at such other place that may be determined <span class=\"highlightText\">from</span> time to time by the Board of Directors of the Corporation. The purpose of the annual meeting shall be to elect the Board of Directors, officers and decide on any other business activities and&#x2F;or corporate decisions.An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within days after proper notice has been made.V. SPECIAL MEETINGS. Unless otherwise proscribed by statute, special meetings of the Shareholders may be called by: (check all that apply)President (or Chief Executive Officer).% of the Board of Directors.% of the Shareholders.Other. After a special meeting has been called, the Board of Directors shall decide its time and place within days after the special meeting has been called.VI. PLACE OF MEETINGS. Annual and special meetings shall be determined by the Board of Directors. By default, such meetings shall take place at the principal office of the Corporation. Shareholders of all classes and series may attend any meeting of the Corporation.Such meetings may be attended: (check all that apply)In-person at the Corporation's principal office.Via remote communication, the method to be determined by the Board of Directors.Other. All communication methods shall offer each attending Shareholder the right to be present, vote on business matters, and provide their consent or dissent for any actionable item.VII. DISSOLUTION. The Corporation may only be dissolved in the following ways: (check all that apply)% vote by the Board of Directors.% vote by the Shareholders.Other. VIII. NOTICE OF MEETINGS. Written notice shall be provided to each Shareholder of any meeting that such Shareholder is permitted to take action in the form of a vote and&#x2F;or offer their consent or dissent for any actionable item. Such written notice shall detail the time, place, remote access (if available), and in the case of a special meeting, the purpose or purposes for which the meeting is called. Unless otherwise provided by law, written notice of any meeting shall be given not less than ten (10) days and no more than sixty (60) days before the date of the meeting.Notice of any meeting can be sent to the Shareholders by the following method(s): (check all that apply):E-Mail.Mailing Address via United States Mail (postage paid by the Corporation).Fax.Hand-Delivered.Other. IX. QUORUM. A quorum, which represents the required number of individuals to be present to hold an annual or special meeting, shall be: (check all that apply)% of the Board of Directors being present.% of the Shareholders being present.Other. Upon meeting the requirements of the quorum, the attending individuals of the meeting shall be able to take action and make decisions for the Corporation.X. ACTIONS OF THE CORPORATION. Actions made on behalf of the Corporation must be: (check one)Made with a Meeting ONLY. Any action required to be taken or which may be taken at any meeting, whether annual or special, must be taken with a meeting, in accordance with these Bylaws.Can be Made WITHOUT a Meeting. Any action required to be taken or which may be taken at any meeting, whether annual or special, may be taken without a meeting, without prior notice, and without a vote, if consent is in writing, setting forth the action so taken, and shall be signed by the holders of outstanding shares having not less than the minimum number of votes that would be necessary to take such action at a meeting at which all Shareholders entitled to vote were present and voted.XI. CORPORATE SEAL. The Corporation shall: (check one)HAVE a Corporate Seal. The corporate seal shall be in such form that the Board of Directors shall approve. NOT HAVE a Corporate Seal.XII. EXECUTION OF DOCUMENTS. All contracts, checks, drafts, demands for money, notes, and other legal instruments or rights of any nature of the Corporation may be signed by: (check all that apply)Board of Directors.Chairperson.President.Treasurer.Secretary.Other. XIII. INDEMNIFICATION. Subject to any applicable statute, any Director or Officer of the Corporation shall: (check one)BE INDEMNIFIED and held harmless by the Corporation to the fullest extent of the law. This includes, but is not limited to, a party to any action, suit, or proceeding, by reason of the fact of being a testator or intestate representative, is or was a Director, Officer, Agent, or Employee of the Corporation. The Corporation shall provide reasonable expenses, including attorney's fees, actually and necessarily incurred in connection with such action, suit, or proceeding. Notwithstanding the foregoing, no indemnification shall be made by the Corporation of any judgment or other final determination, if the acts were committed in bad faith or were the result of active or deliberate fraud, dishonesty, or clear and gross negligence.NOT BE INDEMNIFIED or held harmless in any way by the Corporation.XIV. AMENDMENTS. These Bylaws may be amended by: (check all that apply):% vote of the Board of Directors.% vote of the Shareholders.Other. XV. STOCK CERTIFICATES. The Corporation may provide shares of stock: (check one)WITH CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates. Upon written request to the Secretary, a Shareholder may request certified stock certificates as provided by the Board of Directors.WITHOUT CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates.XVI. DIRECTORS. The Corporation shall be managed by Directors, who together constitute the Board of Directors.Nomination. The Board of Directors shall be elected by the Shareholders at the annual meeting by the vote of Shareholders holding of record in the aggregate at least a plurality of the shares of stock of the Corporation present in person or by proxy and entitled to vote at the annual meeting of Shareholders. Each Director serving a term of years unless removed by the Shareholders or upon the Director's resignation.Quorum. It is required that a majority of the Board of Directors be present to be considered a quorum.Regular Meetings. By resolution and after the annual meeting, the Board of Directors may provide a time and place to meet without notice other than that resolution.Special Meetings. Special meetings may be demanded by any Officer or Director of the Corporation. Such demand must be made by submitting written notice via the United States Postal Service and by providing at least five (5) days notice.Remote Communication. One or more Directors may participate in meetings of the Board or a committee of the Board by any communication, including video-conference, by means of which all participating Directors can simultaneously hear each other during the meeting. Participation in this manner shall constitute presence in person at such meeting.Conflict of Interest. If any vote, either during a regular meeting, special meeting, or any other Corporate action takes place and a Director has a conflict of interest, such interest shall not invalidate their vote.Board of Director Actions. A majority of the total number of Board of Directors shall constitute a quorum for the transaction of all business matters. The act of a majority of Directors present at any meeting at which a quorum is present shall be considered an action taken by the entire Board of Directors, except as provided by law, the Articles of Incorporation, or these Bylaws. Each Director present shall have one vote, irrespective of the number of shares of stock, if any, he or she may hold.Removal. Any Director or the entire Board of Directors may be removed, at any time, with or without cause, by the holders of a majority of the voting stock of the Corporation, by such Shareholders attending a meeting for such purpose.Vacancies. Except as otherwise provided by law, any vacancy in the Board of Directors occurring by reason of an increase in the authorized number of Directors or by reason of the death, withdrawal, removal, disqualification, inability to act, or resignation of a Director shall be filled by the majority of Directors then in office. The successor shall serve the unexpired portion of the term of his or her predecessor. Any Director may resign at any time by giving written notice to the Board or the Secretary.Committees. The Board of Directors, by resolution, may create one or more committees, each consisting of one or more Directors. Each such committee shall serve at the pleasure of the Board. All provisions under the Statutes and these Bylaws relating to meetings, action without meetings, notice, and waiver of notice, quorum, and voting requirements of the Board of Directors shall apply to such committees and their members.Consent in Lieu of Meetings. Any action required or permitted to be taken at any meeting of the Board of Directors, or of any committee thereof, may be taken without a meeting of all members of the Board or committee, as the case may be, should there be consent thereto in writing, with such writing or writings to be filed with the minutes of the proceedings of the Board or committee.Compensation. The Board of Directors shall have the authority to fix the compensation of Directors. A fixed sum and expenses of attendance may be allowed for each regular or special meeting of the Board, including their services as a member of committees of the Board.XVII. CONFLICT OF INTEREST. A Director of the Corporation has a conflict of interest if the Director has an existing or potential business, financial or personal interest or holds an elected or appointed position that could impair or might reasonably appear to impair the exercise of independent, unbiased judgment in the discharge of his or her responsibilities to the Corporation. A conflict will be deemed to exist if the business, financial or personal interest or elected or appointed position is held by the Director or by a family member (spouse, parent, siblings, children or another close relative), or any organization in which the Director; or family member as defined, is an officer, Director, employee, trustee or material stockholder. If the Director in question disputes as to whether a conflict of interest is present, the matter shall be decided by a majority vote of the Board of Directors.XVIII. OFFICERS. The officers of the Corporation shall be a Chairperson, a President, a Secretary, and a Treasurer, and such other officers as the Board may from time to time appoint, including one or more Vice Presidents and such other officers as it deems advisable. Each such officer shall exercise such powers and perform such duties as shall be set forth herein and such other powers and duties as may be specified from time to time by the Board of Directors. The officers of the Corporation shall be elected by the Board of Directors. Each of the Chairperson, President, and&#x2F;or any Vice Presidents may have powers that are only delegated to them by the Board of Directors.Chairperson. The Chairperson shall have overall responsibility and authority for management and operations of the Corporation and shall preside at all meetings of the Board of Directors and Shareholders and shall ensure that all orders and resolutions of the Board of Directors and Shareholders are implemented.President. The President shall be the chief operating officer of the Corporation and shall have full responsibility and authority for management of the day-to-day operations of the Corporation. The President shall be an ex-officio member of all committees and shall have the general powers and duties of management and supervision usually vested in the office of President of a corporation.Treasurer. The Treasurer shall be the chief financial officer of the Corporation and shall have responsibility for the custody of the corporate funds and securities, to keep full and accurate records and accounts of receipts and disbursements in books belonging to the Corporation and shall keep the monies of the Corporation in a separate account in the name of the Corporation. The Treasurer shall provide to the President and Directors, at the regular meetings of the Board, or whenever requested by the Board, an account of all financial transactions and of the financial condition of the Corporation.Secretary. The Secretary shall attend all meetings of the Board and all meetings of the shareholders and shall act as clerk thereof and record all the votes of the Corporation and the minutes of all its transactions in a book to be kept for that purpose and shall perform like duties for all committees of the Board of Directors when required. The Secretary shall give, or cause to be given, a notice of all meetings of the shareholders and special meetings of the Board of Directors, and shall perform such other duties as may be prescribed by the Board of Directors or President, and under whose supervision the Secretary shall be. The Secretary shall maintain the records, minutes, and seal of the Corporation and may attest any instruments signed by any other officer of the Corporation.The officers of the Corporation shall hold office until their successors are chosen and have qualified or until their earlier resignation or removal. Any officer or agent elected or appointed by the Board may be removed at any time, with or without cause, by the affirmative vote of a majority of the Board of Directors. Any vacancy occurring in any office as a result of death, resignation, removal, or otherwise shall be filled for the unexpired portion of the term by a majority vote of the Board of Directors. Any and all compensation of officers of the Corporation shall be fixed by the Board of Directors.XIX. LIST OF SHAREHOLDERS. The officer of the Corporation who has charge of the stock ledger of the Corporation shall prepare and make, at least ten (10) days before any meeting of Shareholders, a complete list of the Shareholders entitled to vote at the meeting, arranged alphabetically, and showing the address of each Shareholder and the number of shares held by each Shareholder. The list shall be open to the examination of any Shareholder for any purpose germane to the meeting, during ordinary business hours, for a period of at least ten (10) days before the meeting, either at a mutually agrees upon location or where the meeting is to be held. The list shall also be produced and kept available at the time and place of the meeting, for the entire duration of the meeting, and can be inspected by any shareholder present at the meeting.XX. CERTIFICATION. The original, or a copy of these bylaws, as amended or otherwise altered to date, certified by the Secretary, shall be kept at the Corporation&#x27;s principal executive office and shall be open to inspection by the stockholders of the Corporation, at all reasonable times during office hours.By the signature below, these bylaws are hereby certified to be a complete and correct copy of the above-named Corporation, duly adopted by the initial Board of Directors on .ByDatehttps:&#x2F;&#x2F;esign.com&#x2F;Print nameTitleByhttps:&#x2F;&#x2F;esign.com&#x2F;DatePrint nameTitleByDatePrint nameTitlehttps:&#x2F;&#x2F;esign.com&#x2F;",
-
-
-                                    "positionId": "dg-8o8nwt2btw"
-
-
-                                }
-
-
-                            ]
-
-
-                        }
-
-
-                    },
-
-
-                    "used": [
-
-
-                        {
-
-
-                            "targetType": "Answer",
-
-
-                            "target": {
-
-
-                                "positionId": "dg-0iwjlizvjal",
-
-
-                                "title": "Some of the uses of HTML",
-
-
-                                "status": "send",
-
-
-                                "displayTime": "2024-07-10T06:52:44.932Z",
-
-
-                                "showmoreClicked": false,
-
-
-                                "internalInfoClicked": false,
-
-
-                                "answerLinkClicked": []
-
-
-                            }
-
-
-                        }
-
-
-                    ]
-
+                    "createdAt": "2025-03-27T07:08:48.096Z"
 
                 }
-
 
             ],
 
+            "summary": {
 
-            "proActiveSuggestions": [
+                "summaryId": "smr-adab467-72e9-4ec5-8d7a-2aabd1ab2bb0",
 
+                "participant": {
 
-                {
+                    "identity": "a-m8r0iiln",
 
+                    "type": "AGENT",
 
-                    "displayTime": "2024-07-10T06:50:46.513Z",
+                    "startTime": [],
 
-
-                    "utterance": "hi",
-
-
-                    "countDisplayedAnswers": {
-
-
-                        "countDialogTasks": 0,
-
-
-                        "countFaqs": 0,
-
-
-                        "countWebPages": 0,
-
-
-                        "countFiles": 0,
-
-
-                        "countAnswers": 0,
-
-
-                        "countFromNonNativeDataSource": 0
-
-
-                    },
-
-
-                    "suggestions": {},
-
-
-                    "used": []
-
+                    "endTime": []
 
                 },
 
+                "type": "final",
 
-                {
+                "summary": "",
 
+                "editedSummary": "We're sorry, but there was a problem generating the summary for this conversation. Please create your own summary",
 
-                    "displayTime": "2024-07-10T06:50:56.797Z",
+                "isError": **true**,
 
+                "isDisabled": **false**,
 
-                    "utterance": "i want to cancel order",
+                "isEdited": **true**,
 
+                "exeStartTime": 1743059436693,
 
-                    "countDisplayedAnswers": {
+                "positionId": "dg-5rp9haf9nn",
 
+                "sumSubTime": 1743059460053,
 
-                        "countDialogTasks": 1,
+                "time": 23.36,
 
+                "feedback": {
 
-                        "countFaqs": 0,
+                    "response": "Down",
 
+                    "reasonCode": [],
 
-                        "countWebPages": 1,
-
-
-                        "countFiles": 0,
-
-
-                        "countAnswers": 1,
-
-
-                        "countFromNonNativeDataSource": 0
-
-
-                    },
-
-
-                    "suggestions": {
-
-
-                        "dialogs": [
-
-
-                            {
-
-
-                                "name": "cancel Pizza"
-
-
-                            }
-
-
-                        ],
-
-
-                        "answers": [
-
-
-                            {
-
-
-                                "positionId": "dg-77ha3vvvlx",
-
-
-                                "content": "- To cancel the order, open the ··· menu and select Delete.\n[source_name: confluence_data, chunk_id: chk-1]",
-
-
-                                "sources": [
-
-
-                                    {}
-
-
-                                ],
-
-
-                                "internalFlag": false
-
-
-                            }
-
-
-                        ],
-
-
-                        "web": [
-
-
-                            {
-
-
-                                "sources": [
-
-
-                                    {
-
-
-                                        "title": "Multicultural products and services | CVS Health",
-
-
-                                        "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.cvshealth.com%2Fabout-cvs-health%2Fdiversity%2Fmulticultural-products-and-services&requestId=fsh-2f457ec6-94b3-5da4-b497-9a4212ab0629&contentId=fc-1840c763-30ae-48de-8b49-08c55ccbfe57&hId=a6029ef8813d678bf3ed746e358b617ae496737aba342d53b7ec898bcf2275f2"
-
-
-                                    }
-
-
-                                ],
-
-
-                                "content": "Skip to main content Let us help you find what you're looking for Standard search Multicultural products and services Every day, millions of people shop in our stores, fill their prescriptions through our mail order pharmacy, or visit one of our MinuteClinics. These customers, clients and patients c",
-
-
-                                "positionId": "dg-97ltdjavxv"
-
-
-                            }
-
-
-                        ],
-
-
-                        "confluencecloud": [
-
-
-                            {
-
-
-                                "sources": [
-
-
-                                    {
-
-
-                                        "title": "Test data for search :",
-
-
-                                        "url": "https://searchassist-pilot.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Frajiv-kore.atlassian.net%2Fwiki%2Fspaces%2FMW%2Fpages%2F393217&requestId=fsh-2f457ec6-94b3-5da4-b497-9a4212ab0629&contentId=fc-24569f4f-0993-4586-aa8a-965a3a90b50d&hId=218655d0f90af3bad15ad7fde31d1d360a83b7eb17b03bd01060b9ff5fba4dbe"
-
-
-                                    }
-
-
-                                ],
-
-
-                                "content": " You can easily export this as a pdf by clicking the ... menu in the upper righthand corner.I. INCORPORATION. It is recognized that ("Corporation") is a duly organized corporation authorized to do business in the State of (&quot;State of Formation&quot;) by its Articles of Incorporation or similar registered documents.II. STATE LAW. The Corporation is organized under the relevant laws of the State of Formation ("Statutes"), and except as otherwise provided herein, the Statutes shall apply to the governance of the Corporation.III. PURPOSE. The purpose of the Corporation is to engage in any lawful activity for which corporations may be formed.IV. ANNUAL MEETING. Meetings of Shareholders shall be held at the principal office of the Corporation or at such other place that may be determined from time to time by the Board of Directors of the Corporation. The purpose of the annual meeting shall be to elect the Board of Directors, officers and decide on any other business activities and/or corporate decisions.An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within days after proper notice has been made.V. SPECIAL MEETINGS. Unless otherwise proscribed by statute, special meetings of the Shareholders may be called by: (check all that apply)President (or Chief Executive Officer).% of the Board of Directors.% of the Shareholders.Other. After a special meeting has been called, the Board of Directors shall decide its time and place within days after the special meeting has been called.VI. PLACE OF MEETINGS. Annual and special meetings shall be determined by the Board of Directors. By default, such meetings shall take place at the principal office of the Corporation. Shareholders of all classes and series may attend any meeting of the Corporation.Such meetings may be attended: (check all that apply)In-person at the Corporation's principal office.Via remote communication, the method to be determined by the Board of Directors.Other. All communication methods shall offer each attending Shareholder the right to be present, vote on business matters, and provide their consent or dissent for any actionable item.VII. DISSOLUTION. The Corporation may only be dissolved in the following ways: (check all that apply)% vote by the Board of Directors.% vote by the Shareholders.Other. VIII. NOTICE OF MEETINGS. Written notice shall be provided to each Shareholder of any meeting that such Shareholder is permitted to take action in the form of a vote and/or offer their consent or dissent for any actionable item. Such written notice shall detail the time, place, remote access (if available), and in the case of a special meeting, the purpose or purposes for which the meeting is called. Unless otherwise provided by law, written notice of any meeting shall be given not less than ten (10) days and no more than sixty (60) days before the date of the meeting.Notice of any meeting can be sent to the Shareholders by the following method(s): (check all that apply):E-Mail.Mailing Address via United States Mail (postage paid by the Corporation).Fax.Hand-Delivered.Other. IX. QUORUM. A quorum, which represents the required number of individuals to be present to hold an annual or special meeting, shall be: (check all that apply)% of the Board of Directors being present.% of the Shareholders being present.Other. Upon meeting the requirements of the quorum, the attending individuals of the meeting shall be able to take action and make decisions for the Corporation.X. ACTIONS OF THE CORPORATION. Actions made on behalf of the Corporation must be: (check one)Made with a Meeting ONLY. Any action required to be taken or which may be taken at any meeting, whether annual or special, must be taken with a meeting, in accordance with these Bylaws.Can be Made WITHOUT a Meeting. Any action required to be taken or which may be taken at any meeting, whether annual or special, may be taken without a meeting, without prior notice, and without a vote, if consent is in writing, setting forth the action so taken, and shall be signed by the holders of outstanding shares having not less than the minimum number of votes that would be necessary to take such action at a meeting at which all Shareholders entitled to vote were present and voted.XI. CORPORATE SEAL. The Corporation shall: (check one)HAVE a Corporate Seal. The corporate seal shall be in such form that the Board of Directors shall approve. NOT HAVE a Corporate Seal.XII. EXECUTION OF DOCUMENTS. All contracts, checks, drafts, demands for money, notes, and other legal instruments or rights of any nature of the Corporation may be signed by: (check all that apply)Board of Directors.Chairperson.President.Treasurer.Secretary.Other. XIII. INDEMNIFICATION. Subject to any applicable statute, any Director or Officer of the Corporation shall: (check one)BE INDEMNIFIED and held harmless by the Corporation to the fullest extent of the law. This includes, but is not limited to, a party to any action, suit, or proceeding, by reason of the fact of being a testator or intestate representative, is or was a Director, Officer, Agent, or Employee of the Corporation. The Corporation shall provide reasonable expenses, including attorney's fees, actually and necessarily incurred in connection with such action, suit, or proceeding. Notwithstanding the foregoing, no indemnification shall be made by the Corporation of any judgment or other final determination, if the acts were committed in bad faith or were the result of active or deliberate fraud, dishonesty, or clear and gross negligence.NOT BE INDEMNIFIED or held harmless in any way by the Corporation.XIV. AMENDMENTS. These Bylaws may be amended by: (check all that apply):% vote of the Board of Directors.% vote of the Shareholders.Other. XV. STOCK CERTIFICATES. The Corporation may provide shares of stock: (check one)WITH CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates. Upon written request to the Secretary, a Shareholder may request certified stock certificates as provided by the Board of Directors.WITHOUT CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates.XVI. DIRECTORS. The Corporation shall be managed by Directors, who together constitute the Board of Directors.Nomination. The Board of Directors shall be elected by the Shareholders at the annual meeting by the vote of Shareholders holding of record in the aggregate at least a plurality of the shares of stock of the Corporation present in person or by proxy and entitled to vote at the annual meeting of Shareholders. Each Director serving a term of years unless removed by the Shareholders or upon the Director's resignation.Quorum. It is required that a majority of the Board of Directors be present to be considered a quorum.Regular Meetings. By resolution and after the annual meeting, the Board of Directors may provide a time and place to meet without notice other than that resolution.Special Meetings. Special meetings may be demanded by any Officer or Director of the Corporation. Such demand must be made by submitting written notice via the United States Postal Service and by providing at least five (5) days notice.Remote Communication. One or more Directors may participate in meetings of the Board or a committee of the Board by any communication, including video-conference, by means of which all participating Directors can simultaneously hear each other during the meeting. Participation in this manner shall constitute presence in person at such meeting.Conflict of Interest. If any vote, either during a regular meeting, special meeting, or any other Corporate action takes place and a Director has a conflict of interest, such interest shall not invalidate their vote.Board of Director Actions. A majority of the total number of Board of Directors shall constitute a quorum for the transaction of all business matters. The act of a majority of Directors present at any meeting at which a quorum is present shall be considered an action taken by the entire Board of Directors, except as provided by law, the Articles of Incorporation, or these Bylaws. Each Director present shall have one vote, irrespective of the number of shares of stock, if any, he or she may hold.Removal. Any Director or the entire Board of Directors may be removed, at any time, with or without cause, by the holders of a majority of the voting stock of the Corporation, by such Shareholders attending a meeting for such purpose.Vacancies. Except as otherwise provided by law, any vacancy in the Board of Directors occurring by reason of an increase in the authorized number of Directors or by reason of the death, withdrawal, removal, disqualification, inability to act, or resignation of a Director shall be filled by the majority of Directors then in office. The successor shall serve the unexpired portion of the term of his or her predecessor. Any Director may resign at any time by giving written notice to the Board or the Secretary.Committees. The Board of Directors, by resolution, may create one or more committees, each consisting of one or more Directors. Each such committee shall serve at the pleasure of the Board. All provisions under the Statutes and these Bylaws relating to meetings, action without meetings, notice, and waiver of notice, quorum, and voting requirements of the Board of Directors shall apply to such committees and their members.Consent in Lieu of Meetings. Any action required or permitted to be taken at any meeting of the Board of Directors, or of any committee thereof, may be taken without a meeting of all members of the Board or committee, as the case may be, should there be consent thereto in writing, with such writing or writings to be filed with the minutes of the proceedings of the Board or committee.Compensation. The Board of Directors shall have the authority to fix the compensation of Directors. A fixed sum and expenses of attendance may be allowed for each regular or special meeting of the Board, including their services as a member of committees of the Board.XVII. CONFLICT OF INTEREST. A Director of the Corporation has a conflict of interest if the Director has an existing or potential business, financial or personal interest or holds an elected or appointed position that could impair or might reasonably appear to impair the exercise of independent, unbiased judgment in the discharge of his or her responsibilities to the Corporation. A conflict will be deemed to exist if the business, financial or personal interest or elected or appointed position is held by the Director or by a family member (spouse, parent, siblings, children or another close relative), or any organization in which the Director; or family member as defined, is an officer, Director, employee, trustee or material stockholder. If the Director in question disputes as to whether a conflict of interest is present, the matter shall be decided by a majority vote of the Board of Directors.XVIII. OFFICERS. The officers of the Corporation shall be a Chairperson, a President, a Secretary, and a Treasurer, and such other officers as the Board may from time to time appoint, including one or more Vice Presidents and such other officers as it deems advisable. Each such officer shall exercise such powers and perform such duties as shall be set forth herein and such other powers and duties as may be specified from time to time by the Board of Directors. The officers of the Corporation shall be elected by the Board of Directors. Each of the Chairperson, President, and/or any Vice Presidents may have powers that are only delegated to them by the Board of Directors.Chairperson. The Chairperson shall have overall responsibility and authority for management and operations of the Corporation and shall preside at all meetings of the Board of Directors and Shareholders and shall ensure that all orders and resolutions of the Board of Directors and Shareholders are implemented.President. The President shall be the chief operating officer of the Corporation and shall have full responsibility and authority for management of the day-to-day operations of the Corporation. The President shall be an ex-officio member of all committees and shall have the general powers and duties of management and supervision usually vested in the office of President of a corporation.Treasurer. The Treasurer shall be the chief financial officer of the Corporation and shall have responsibility for the custody of the corporate funds and securities, to keep full and accurate records and accounts of receipts and disbursements in books belonging to the Corporation and shall keep the monies of the Corporation in a separate account in the name of the Corporation. The Treasurer shall provide to the President and Directors, at the regular meetings of the Board, or whenever requested by the Board, an account of all financial transactions and of the financial condition of the Corporation.Secretary. The Secretary shall attend all meetings of the Board and all meetings of the shareholders and shall act as clerk thereof and record all the votes of the Corporation and the minutes of all its transactions in a book to be kept for that purpose and shall perform like duties for all committees of the Board of Directors when required. The Secretary shall give, or cause to be given, a notice of all meetings of the shareholders and special meetings of the Board of Directors, and shall perform such other duties as may be prescribed by the Board of Directors or President, and under whose supervision the Secretary shall be. The Secretary shall maintain the records, minutes, and seal of the Corporation and may attest any instruments signed by any other officer of the Corporation.The officers of the Corporation shall hold office until their successors are chosen and have qualified or until their earlier resignation or removal. Any officer or agent elected or appointed by the Board may be removed at any time, with or without cause, by the affirmative vote of a majority of the Board of Directors. Any vacancy occurring in any office as a result of death, resignation, removal, or otherwise shall be filled for the unexpired portion of the term by a majority vote of the Board of Directors. Any and all compensation of officers of the Corporation shall be fixed by the Board of Directors.XIX. LIST OF SHAREHOLDERS. The officer of the Corporation who has charge of the stock ledger of the Corporation shall prepare and make, at least ten (10) days before any meeting of Shareholders, a complete list of the Shareholders entitled to vote at the meeting, arranged alphabetically, and showing the address of each Shareholder and the number of shares held by each Shareholder. The list shall be open to the examination of any Shareholder for any purpose germane to the meeting, during ordinary business hours, for a period of at least ten (10) days before the meeting, either at a mutually agrees upon location or where the meeting is to be held. The list shall also be produced and kept available at the time and place of the meeting, for the entire duration of the meeting, and can be inspected by any shareholder present at the meeting.XX. CERTIFICATION. The original, or a copy of these bylaws, as amended or otherwise altered to date, certified by the Secretary, shall be kept at the Corporation's principal executive office and shall be open to inspection by the stockholders of the Corporation, at all reasonable times during office hours.By the signature below, these bylaws are hereby certified to be a complete and correct copy of the above-named Corporation, duly adopted by the initial Board of Directors on .ByDatehttps://esign.com/Print nameTitleByhttps://esign.com/DatePrint nameTitleByDatePrint nameTitlehttps://esign.com/",
-
-
-                                "positionId": "dg-e7pr73egel"
-
-
-                            }
-
-
-                        ]
-
-
-                    },
-
-
-                    "used": [
-
-
-                        {
-
-
-                            "targetType": "DialogTask",
-
-
-                            "target": {
-
-
-                                "positionId": "dg-z1jbkr4wn2",
-
-
-                                "name": "cancel Pizza",
-
-
-                                "runType": "assist",
-
-
-                                "status": "completed",
-
-
-                                "startTime": "2024-07-10T06:51:02.050Z",
-
-
-                                "endTime": "2024-07-10T06:51:19.753Z",
-
-
-                                "suggestionsCount": {
-
-
-                                    "tellCustomer": 1,
-
-
-                                    "askCustomer": 4,
-
-
-                                    "tellUsed": 0,
-
-
-                                    "askUsed": 2
-
-
-                                }
-
-
-                            }
-
-
-                        }
-
-
-                    ]
-
-
-                },
-
-
-                {
-
-
-                    "displayTime": "2024-07-10T06:51:44.013Z",
-
-
-                    "utterance": "yes",
-
-
-                    "countDisplayedAnswers": {
-
-
-                        "countDialogTasks": 0,
-
-
-                        "countFaqs": 0,
-
-
-                        "countWebPages": 0,
-
-
-                        "countFiles": 0,
-
-
-                        "countAnswers": 1,
-
-
-                        "countFromNonNativeDataSource": 0
-
-
-                    },
-
-
-                    "suggestions": {
-
-
-                        "answers": [
-
-
-                            {
-
-
-                                "positionId": "dg-dlt1zfqtat",
-
-
-                                "content": "- Yes, the President shall be an ex-officio member of all committees and have general powers and duties of management and supervision usually vested in the office of President of a corporation.\n- Yes, the Treasurer shall be the chief financial officer of the Corporation and have responsibility for the custody of corporate funds and securities.\n- Yes, the Secretary shall attend all meetings of the Board and shareholders, act as clerk, record votes, and perform like duties for all committees when required. ",
-
-
-                                "sources": [
-
-
-                                    {
-
-
-                                        "tile": "Test data for search :",
-
-
-                                        "url": "https://rajiv-kore.atlassian.net/wiki/spaces/MW/pages/393217"
-
-
-                                    }
-
-
-                                ],
-
-
-                                "internalFlag": false
-
-
-                            }
-
-
-                        ]
-
-
-                    },
-
-
-                    "used": []
-
+                    "comment": "end of summary"
 
                 }
 
+            },
+
+            "agentActions": [
+
+                {
+
+                    "actionType": "SearchBarEntry",
+
+                    "action": {
+
+                        "searchPhrase": "Healthcare System in India, Healthcare India - IBEF",
+
+                        "typingStartTime": "2025-03-27T07:10:02.278Z",
+
+                        "executionStartTime": "2025-03-27T07:10:22.234Z",
+
+                        "displayTime": "2025-03-27T07:10:25.419Z",
+
+                        "suggestionsShown": [
+
+                            "tech are using the wrng worlkss  teh",
+
+                            "teh are using wrnog workds for the tesnsig",
+
+                            "Healthcare System in India, Healthcare India - IBEF"
+
+                        ],
+
+                        "suggestionUsed": 1,
+
+                        "phraseInput": "health teh ",
+
+                        "correctionsPresented": 5,
+
+                        "correctionsAccepted": 0,
+
+                        "countDisplayedAnswers": {
+
+                            "countDialogTasks": 0,
+
+                            "countFaqs": 4,
+
+                            "countWebPages": 5,
+
+                            "countFiles": 2,
+
+                            "countAnswers": 0,
+
+                            "countFromNonNativeDataSource": 0
+
+                        },
+
+                        "suggestions": {
+
+                            "faqs": [
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Which Insurance Companies offer Health Insurance Policies in India?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "Which Insurance Companies offer Health Insurance Policies in India?",
+
+                                    "positionId": "dg-r74fpqb3at",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Resend OTP",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "Resend OTP",
+
+                                    "positionId": "dg-9d54h4frdq",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "What is AYUSH Hospital?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "What is AYUSH Hospital?",
+
+                                    "positionId": "dg-cxd507th16",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "What is AYUSH Treatment? Whether AYUSH Treatment is allowed in all Health Insurance Policies?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "What is AYUSH Treatment? Whether AYUSH Treatment is allowed in all Health Insurance Policies?",
+
+                                    "positionId": "dg-6xl89hve93h",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                }
+
+                            ],
+
+                            "web": [
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Healthcare System in India, Healthcare India - IBEF",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fhealthcare-india&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-00b44114-9bde-44ae-8084-9bb999676e8c&hId=955b136584ad076fd0309d69a6e3f3377e0920e960140f2cbdc955ca934d1c50"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-ia5xj3w1yd",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Healthcare in India - Wikipedia",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHealthcare_in_India&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-6a06e2f8-90d0-4786-95bc-e8a27c3ff07e&hId=9f48681f49da231e23e26f724b14982af0fab99e37481748b2270f90e7e6b7f7"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-vhmrypq1wj",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "India's Ayush Industry & National AYUSH Mission | IBEF",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fayush&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-9a13b295-68c5-4557-94ba-81b6b7f07e90&hId=5aa0dcbff3bcac7296ea50804593759ffa5e2bda8f19abea62c626442657b2c0"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-mtzuxnhj55l",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Banking in India: Growth, Trends, and Opportunities | IBEF",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fbanking-india&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-22a47b6a-e277-4a0a-9461-b4d5a2892fa2&hId=80e6d5170e6c1fd3dba566ba55dbcc1e33cdd8fc46c6fc5649504140851ac1f4"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-zhx6h4ouktk",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Indian Agriculture Sector, Farming in India | IBEF",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fagriculture-india&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-ce79586c-3d4e-48a4-899c-7b149f2e5341&hId=8123ccc5b0412d4d6d3bee33e7ec97756c566921ad3a30907748426ade275aa6"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-5vvxexjlll",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                }
+
+                            ],
+
+                            "file": [
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "PM",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fnha.gov.in%2FPM-JAY&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-5a9dc6d5-3eef-5401-94e8-713cf93ea19d&hId=b5806f5bfd92daf057022b418ea1b84043eb18a6d28050117f56671925bdc19f"
+
+                                        }
+
+                                    ],
+
+                                    "content": "flag [img&#x2F;resources&#x2F;flag.jpg] भारत सरकार GOVERNMENT OF &lt;span class=\"highlightText\">INDIA&lt;/span> [https:&#x2F;&#x2F;www.mygov.in&#x2F;] * 14555 [tel:14555] * Screen Reader Access [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;screen_reader] * Skip to main content * &#x2F;sitemap.xml * https:&#x2F;&#x2F;www.facebook.com&#x2F;AyushmanBharatGoI * https:&#x2F;&#x2F;twitter.com&#x2F;ayushmannha * https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCkd7w2rww0HQB4lZ-l3dB6g * https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;ayushmanbharatgoi&#x2F; * https:&#x2F;&#x2F;www.instagram.com&#x2F;ayushmanbharatnha&#x2F; * Quora image [img&#x2F;gallery&#x2F;quora.png] [https:&#x2F;&#x2F;www.quora.com&#x2F;profile&#x2F;Ayushman-Bharat-9?ch=3&amp;share=25d97ee9&amp;srid=bdecg] * A+ [javascript:;] * A [javascript:;] * A- [javascript:;] NHA [img&#x2F;resources&#x2F;logo.svg] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] IYC [img&#x2F;resources&#x2F;iyc.png] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] NATIONAL HEALTH AUTHORITY PM-JAY [img&#x2F;resources&#x2F;pmjay.png] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * index.php * Home [https:&#x2F;&#x2F;nha.gov.in&#x2F;] * About Us * NHA [NHA.php] * Who&#x27;s who [Whos-who.php] * PM-JAY [PM-JAY.php] * ABDM [NDHM.php] * PM-JAY [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * ABDM [https:&#x2F;&#x2F;ndhm.gov.in&#x2F;] * Blog [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;Blogs-list] * Connect with Us * Careers [Careers.php] * Contact Us [Contact-Us.php] * Tenders and Procurement [Tenders-Procurement.php] * Circulars [circulars.php] * PMJAY Dashboard [https:&#x2F;&#x2F;dashboard.pmjay.gov.in&#x2F;pmj&#x2F;#&#x2F;] * ABDM Dashboard [https:&#x2F;&#x2F;dashboard.abdm.gov.in&#x2F;abdm&#x2F;] * PMJAY for 70+ * Enrol for PMJAY for 70+ [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * List of Empanelled Hospitals [https:&#x2F;&#x2F;hem.nha.gov.in&#x2F;search] * FAQs [img&#x2F;resources&#x2F;English_FAQs_related_to_the_benefits_for_senior_citizens.pdf] * How to Make Ayushman Card [https:&#x2F;&#x2F;youtube.com&#x2F;playlist?list=PLYcj0BpCoCc4yDCm7A4xxsjkg4gmxnWre&amp;si=6B2-_rj9TFB0fA-k] * Give a Missed Call [missedcall.php] * Am I Eligible [img&#x2F;resources&#x2F;am-i-eligible.png] [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * find1 [img&#x2F;resources&#x2F;find1.png] [https:&#x2F;&#x2F;hospitals.pmjay.gov.in&#x2F;Search&#x2F;empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew] * Grievance Portal [img&#x2F;resources&#x2F;grivence.png] [https:&#x2F;&#x2F;cgrms.pmjay.gov.in&#x2F;GRMS&#x2F;] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;MAP&#x2F;images&#x2F;icons&#x2F;inner_bg2.png] ABOUT PRADHAN MANTRI JAN AROGYA YOJANA (PM-JAY) * Home [index.php] * About Pradhan Mantri Jan Arogya Yojana (PM-JAY) * About Ayushman Bharat * Background * Criteria&#x2F;Coverage * Implementation * Financing * Hospital Empanelment * Packages and Rates * IT System * Awareness * Support Systems * Convergence AYUSHMAN BHARAT Ayushman Bharat, a flagship scheme of Government of India, was launched as",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "NLM",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3093249%2F&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-3137891f-fc01-5678-ba83-c6d6aaa910de&hId=bd9e0969b148275c4ce053ddc2c6b8a4bba1e21e1f6833cb6ef7cee9e023ed9b"
+
+                                        }
+
+                                    ],
+
+                                    "content": "Skip to main content [/static/img/us_flag.svg] An official website of the United States government Here's how you know Here's how you know [/static/img/icon-dot-gov.svg] Official websites use .gov A .gov website belongs to an official government organization in the United States. [/static/img/icon-https.svg] Secure .gov websites use HTTPS A lock ( Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. NCBI home page [/static/img/ncbi-logos/nih-nlm-ncbi--white.svg] [https://www.ncbi.nlm.nih.gov/] Search Log in * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] * Log out Search… Search NCBI Primary site navigation Close [/static/img/usa-icons/close.svg] Search Search [data:] Logged in as: * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] Log in Search PMC Full-Text Archive Search in PMC Search [/static/img/usa-icons-bg/search--white.svg] * Advanced Search [https://www.ncbi.nlm.nih.gov/pmc/advanced/] * Journal List [/journals/] * User Guide [/about/userguide/] * * https://doi.org/10.1016/S0140-6736(10)61894-6 * pdf/nihms292456.pdf * * * PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer [/about/disclaimer/] | PMC Copyright Notice [/about/copyright/] NIHPA Author Manuscripts logo [https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-nihpa.png] Lancet . Author manuscript; available in PMC: 2011 May 12. Published in final edited form as: Lancet. 2011 Jan 10;377(9764):505–515. doi: 10.1016/S0140-6736(10)61894-6 [https://doi.org/10.1016/S0140-6736(10)61894-6] * Search in PMC [https://www.ncbi.nlm.nih.gov/pmc/?term=%22Lancet%22%5Bjour%5D] * Search in PubMed [https://pubmed.ncbi.nlm.nih.gov/?term=%22Lancet%22%5Bjour%5D] * View in NLM Catalog [https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Lancet%22%5BTitle%20Abbreviation%5D] * Add to search [?term=%22Lancet%22%5Bjour%5D] HEALTH CARE AND EQUITY IN INDIA Yarlini Balarajan [https://pubmed.ncbi.nlm.nih.gov/?term=%22Ba",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                }
+
+                            ]
+
+                        }
+
+                    },
+
+                    "used": []
+
+                }
+
+            ],
+
+            "proActiveSuggestions": [
+
+                {
+
+                    "utterance": "purchase TV",
+
+                    "countDisplayedAnswers": {
+
+                        "countDialogTasks": 0,
+
+                        "countFaqs": 0,
+
+                        "countWebPages": 0,
+
+                        "countFiles": 0,
+
+                        "countAnswers": 0,
+
+                        "countFromNonNativeDataSource": 0
+
+                    },
+
+                    "used": [
+
+                        {
+
+                            "targetType": "DialogTask",
+
+                            "target": {
+
+                                "positionId": "dg-3afuyhf79k",
+
+                                "name": "purchase TV",
+
+                                "runType": "assist",
+
+                                "status": "completed",
+
+                                "startTime": "2025-03-27T07:08:49.339Z",
+
+                                "endTime": "2025-03-27T07:09:40.284Z",
+
+                                "suggestionsCount": {
+
+                                    "tellCustomer": 1,
+
+                                    "askCustomer": 2,
+
+                                    "tellUsed": 0,
+
+                                    "askUsed": 0
+
+                                },
+
+                                "linksClicked": []
+
+                            },
+
+                            "feedback": {
+
+                                "response": "Up",
+
+                                "reasonCode": [],
+
+                                "comment": ""
+
+                            }
+
+                        }
+
+                    ]
+
+                },
+
+                {
+
+                    "displayTime": "2025-03-27T07:09:43.222Z",
+
+                    "utterance": "{\"type\":\"template\",\"payload\":{\"template_type\":\"quick_replies\",\"text\":\"Which TV would you like to buy ?\",\"quick_replies\":[{\"content_type\":\"text\",\"title\":\"Samsung\",\"payload\":\"Samsung\"},{\"content_type\":\"text\",\"title\":\"Sansui\",\"payload\":\"Sansui\"},{\"content_type\":\"text\",\"title\":\"LG\",\"payload\":\"LG\"},{\"content_type\":\"text\",\"title\":\"Onida\",\"payload\":\"Onida\"},{\"content_type\":\"text\",\"title\":\"Lava\",\"payload\":\"Lava\"}]}}",
+
+                    "countDisplayedAnswers": {
+
+                        "countDialogTasks": 1,
+
+                        "countFaqs": 0,
+
+                        "countWebPages": 0,
+
+                        "countFiles": 0,
+
+                        "countAnswers": 0,
+
+                        "countFromNonNativeDataSource": 0
+
+                    },
+
+                    "suggestions": {
+
+                        "dialogs": [
+
+                            {
+
+                                "name": "purchase TV"
+
+                            }
+
+                        ]
+
+                    },
+
+                    "used": []
+
+                }
 
             ]
 
-
         },
-
 
         {
 
+            "conversationID": "one",
 
-            "conversationID": "atesta-lyfhbnlb",
-
-
-            "botSessionID": "668e2f45f037fc2ab99aee54",
-
+            "botSessionID": "67e4faec5622dd06277ce9a6",
 
             "channel": "chat",
 
+            "segmentID": "ac-71373a9-7ed4-44ed-add2-bb87b4d853ce",
 
-            "segmentID": "ac-db81a26-1691-4294-b289-c757b7d9a442",
+            "segmentStartTime": "2025-03-27T07:14:52.453Z",
 
+            "segmentEndTime": "2025-03-27T07:17:03.479Z",
 
-            "segmentStartTime": "2024-07-10T06:49:45.556Z",
+            "countScrollUp": 2,
 
-
-            "segmentEndTime": "2024-07-10T06:57:56.503Z",
-
+            "countScrollDn": 1,
 
             "agent": {
 
-
-                "agentId": "agentID1"
-
+                "agentId": "a-m8r0qfq8"
 
             },
 
+            "tags": [
 
-            "tags": [],
+                {
 
+                    "type": "message",
 
-            "agentActions": [],
+                    "name": "MessageKey",
 
+                    "value": "MessageKeyVALUE",
 
-            "proActiveSuggestions": []
+                    "messageID": "ms-48d4e698-a58f-5614-8dac-7b64830d266c",
 
+                    "createdAt": "2025-03-27T07:14:54.054Z"
 
-        }
+                },
 
+                {
 
-    ],
+                    "type": "session",
 
+                    "name": "SessionKey",
 
-    "hasMore": false
+                    "value": "SessionKeyVALUE",
 
+                    "createdAt": "2025-03-27T07:14:52.901Z"
 
-}
+                }
+
+            ],
+
+            "summary": {
+
+                "summaryId": "smr-36447c3-6b19-4031-b308-0a16ba70cdb9",
+
+                "participant": {
+
+                    "identity": "a-m8r0qfq8",
+
+                    "type": "AGENT",
+
+                    "startTime": [],
+
+                    "endTime": []
+
+                },
+
+                "type": "final",
+
+                "summary": "The customer initiated the conversation by requesting to check their account balance. The agent confirmed they could assist and asked for the account number. The customer provided the account number, and the agent successfully retrieved and shared the account balance with the customer.",
+
+                "editedSummary": "",
+
+                "isError": **false**,
+
+                "isDisabled": **false**,
+
+                "isEdited": **false**,
+
+                "time": 3.724,
+
+                "exeStartTime": 1743059823434,
+
+                "positionId": "dg-g7jtkdzfn3",
+
+                "sumSubTime": 1743059827158,
+
+                "feedback": {
+
+                    "response": "Up",
+
+                    "reasonCode": [],
+
+                    "comment": ""
+
+                }
+
+            },
+
+            "agentActions": [
+
+                {
+
+                    "actionType": "SearchBarEntry",
+
+                    "action": {
+
+                        "searchPhrase": "the health ",
+
+                        "typingStartTime": "2025-03-27T07:15:56.154Z",
+
+                        "executionStartTime": "2025-03-27T07:16:20.916Z",
+
+                        "displayTime": "2025-03-27T07:16:23.527Z",
+
+                        "suggestionsShown": [
+
+                            "Healthcare System in India, Healthcare India - IBEF",
+
+                            "Which Insurance Companies offer Health Insurance Policies in India?",
+
+                            "Whether pre-existing diseases are covered under a health insurance policy?"
+
+                        ],
+
+                        "suggestionUsed": 0,
+
+                        "phraseInput": "the health",
+
+                        "correctionsPresented": 0,
+
+                        "correctionsAccepted": 0,
+
+                        "countDisplayedAnswers": {
+
+                            "countDialogTasks": 0,
+
+                            "countFaqs": 5,
+
+                            "countWebPages": 5,
+
+                            "countFiles": 2,
+
+                            "countAnswers": 0,
+
+                            "countFromNonNativeDataSource": 0
+
+                        },
+
+                        "suggestions": {
+
+                            "faqs": [
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "What is Health Insurance Business?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "What is Health Insurance Business?",
+
+                                    "positionId": "dg-ocauktyzxr",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "How Cost of pre-insurance health checkup is treated by Life, General and Health Insurers:",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "How Cost of pre-insurance health checkup is treated by Life, General and Health Insurers:",
+
+                                    "positionId": "dg-de62u38hqm",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "What is the maximum age at entry for taking a Health Insurance policy? Whether Health Insurance is available lifelong once taken a policy?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "What is the maximum age at entry for taking a Health Insurance policy? Whether Health Insurance is available lifelong once taken a policy?",
+
+                                    "positionId": "dg-gvh4kxduz4",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Are there any principles on charging premium for Health Insurance coverage?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "Are there any principles on charging premium for Health Insurance coverage?",
+
+                                    "positionId": "dg-0tfd1rmvx5",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Whether pre-existing diseases are covered under a health insurance policy?",
+
+                                            "url": "",
+
+                                            "sourceType": "searchassist"
+
+                                        }
+
+                                    ],
+
+                                    "content": "Whether pre-existing diseases are covered under a health insurance policy?",
+
+                                    "positionId": "dg-46e9q4qbtu",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                }
+
+                            ],
+
+                            "web": [
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Healthcare in India - Wikipedia",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHealthcare_in_India&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-6a06e2f8-90d0-4786-95bc-e8a27c3ff07e&hId=30122dfa0b72cdab55da0510bfd66f1aa35a9d21360139e68dcac9c97d914579"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-1t7l31zscl",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Healthcare System in India, Healthcare India - IBEF",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fhealthcare-india&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-00b44114-9bde-44ae-8084-9bb999676e8c&hId=fa59bff40db0b1a2c4b7c09105a39b74ba54f1a10dc966fef3ecca0af51898eb"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-qsszke3j3d",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Wikipedia:Contents - Wikipedia",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3AContents&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-1760b4b0-e054-4fc3-a923-3b95753054a8&hId=d1cfaa3793de681a6ebad627658ed148720743724ddd17cffad120ab3a8e9a82"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-2y86t0d3s6",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "India's Ayush Industry & National AYUSH Mission | IBEF",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fayush&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-9a13b295-68c5-4557-94ba-81b6b7f07e90&hId=7346e1f933e36977a8ae8d9783bfd44ddb2c5f02e12cbecbff7584c8ec6d8880"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-gwthaiix84",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "Wikipedia:Community portal - Wikipedia",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3ACommunity_portal&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-bf4bd8f3-cc7a-4576-998c-ea48c3e81c13&hId=3a9d3d5134bf24896d929efe396c8b3e4d69051db46a5c00439769654df9b19f"
+
+                                        }
+
+                                    ],
+
+                                    "content": "",
+
+                                    "positionId": "dg-aeb7kjnub",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                }
+
+                            ],
+
+                            "file": [
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "PM",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fnha.gov.in%2FPM-JAY&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-5a9dc6d5-3eef-5401-94e8-713cf93ea19d&hId=f8fd33572eeb20cd65b7866fb184fbb911c18f9888ee2ae277402afac1d6490d"
+
+                                        }
+
+                                    ],
+
+                                    "content": "flag [img&#x2F;resources&#x2F;flag.jpg] भारत सरकार GOVERNMENT OF INDIA [https:&#x2F;&#x2F;www.mygov.in&#x2F;] * 14555 [tel:14555] * Screen Reader Access [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;screen_reader] * Skip to main content * &#x2F;sitemap.xml * https:&#x2F;&#x2F;www.facebook.com&#x2F;AyushmanBharatGoI * https:&#x2F;&#x2F;twitter.com&#x2F;ayushmannha * https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCkd7w2rww0HQB4lZ-l3dB6g * https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;ayushmanbharatgoi&#x2F; * https:&#x2F;&#x2F;www.instagram.com&#x2F;ayushmanbharatnha&#x2F; * Quora image [img&#x2F;gallery&#x2F;quora.png] [https:&#x2F;&#x2F;www.quora.com&#x2F;profile&#x2F;Ayushman-Bharat-9?ch=3&amp;share=25d97ee9&amp;srid=bdecg] * A+ [javascript:;] * A [javascript:;] * A- [javascript:;] NHA [img&#x2F;resources&#x2F;logo.svg] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] IYC [img&#x2F;resources&#x2F;iyc.png] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] NATIONAL &lt;span class=\"highlightText\">HEALTH&lt;/span> AUTHORITY PM-JAY [img&#x2F;resources&#x2F;pmjay.png] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * index.php * Home [https:&#x2F;&#x2F;nha.gov.in&#x2F;] * About Us * NHA [NHA.php] * Who&#x27;s who [Whos-who.php] * PM-JAY [PM-JAY.php] * ABDM [NDHM.php] * PM-JAY [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * ABDM [https:&#x2F;&#x2F;ndhm.gov.in&#x2F;] * Blog [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;Blogs-list] * Connect with Us * Careers [Careers.php] * Contact Us [Contact-Us.php] * Tenders and Procurement [Tenders-Procurement.php] * Circulars [circulars.php] * PMJAY Dashboard [https:&#x2F;&#x2F;dashboard.pmjay.gov.in&#x2F;pmj&#x2F;#&#x2F;] * ABDM Dashboard [https:&#x2F;&#x2F;dashboard.abdm.gov.in&#x2F;abdm&#x2F;] * PMJAY for 70+ * Enrol for PMJAY for 70+ [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * List of Empanelled Hospitals [https:&#x2F;&#x2F;hem.nha.gov.in&#x2F;search] * FAQs [img&#x2F;resources&#x2F;English_FAQs_related_to_the_benefits_for_senior_citizens.pdf] * How to Make Ayushman Card [https:&#x2F;&#x2F;youtube.com&#x2F;playlist?list=PLYcj0BpCoCc4yDCm7A4xxsjkg4gmxnWre&amp;si=6B2-_rj9TFB0fA-k] * Give a Missed Call [missedcall.php] * Am I Eligible [img&#x2F;resources&#x2F;am-i-eligible.png] [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * find1 [img&#x2F;resources&#x2F;find1.png] [https:&#x2F;&#x2F;hospitals.pmjay.gov.in&#x2F;Search&#x2F;empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew] * Grievance Portal [img&#x2F;resources&#x2F;grivence.png] [https:&#x2F;&#x2F;cgrms.pmjay.gov.in&#x2F;GRMS&#x2F;] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;MAP&#x2F;images&#x2F;icons&#x2F;inner_bg2.png] ABOUT PRADHAN MANTRI JAN AROGYA YOJANA (PM-JAY) * Home [index.php] * About Pradhan Mantri Jan Arogya Yojana (PM-JAY) * About Ayushman Bharat * Background * Criteria&#x2F;Coverage * Implementation * Financing * Hospital Empanelment * Packages and Rates * IT System * Awareness * Support Systems * Convergence AYUSHMAN BHARAT Ayushman Bharat, a flagship scheme of Government of India, was launched as",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                },
+
+                                {
+
+                                    "sources": [
+
+                                        {
+
+                                            "title": "NLM",
+
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3093249%2F&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-3137891f-fc01-5678-ba83-c6d6aaa910de&hId=f4ac9a56d3759aa3ec75c768cfb2c7dff73879dd4bec6169adc1438f20d7d545"
+
+                                        }
+
+                                    ],
+
+                                    "content": "Skip to main content [/static/img/us_flag.svg] An official website of the United States government Here's how you know Here's how you know [/static/img/icon-dot-gov.svg] Official websites use .gov A .gov website belongs to an official government organization in the United States. [/static/img/icon-https.svg] Secure .gov websites use HTTPS A lock ( Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. NCBI home page [/static/img/ncbi-logos/nih-nlm-ncbi--white.svg] [https://www.ncbi.nlm.nih.gov/] Search Log in * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] * Log out Search… Search NCBI Primary site navigation Close [/static/img/usa-icons/close.svg] Search Search [data:] Logged in as: * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] Log in Search PMC Full-Text Archive Search in PMC Search [/static/img/usa-icons-bg/search--white.svg] * Advanced Search [https://www.ncbi.nlm.nih.gov/pmc/advanced/] * Journal List [/journals/] * User Guide [/about/userguide/] * * https://doi.org/10.1016/S0140-6736(10)61894-6 * pdf/nihms292456.pdf * * * PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer [/about/disclaimer/] | PMC Copyright Notice [/about/copyright/] NIHPA Author Manuscripts logo [https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-nihpa.png] Lancet . Author manuscript; available in PMC: 2011 May 12. Published in final edited form as: Lancet. 2011 Jan 10;377(9764):505–515. doi: 10.1016/S0140-6736(10)61894-6 [https://doi.org/10.1016/S0140-6736(10)61894-6] * Search in PMC [https://www.ncbi.nlm.nih.gov/pmc/?term=%22Lancet%22%5Bjour%5D] * Search in PubMed [https://pubmed.ncbi.nlm.nih.gov/?term=%22Lancet%22%5Bjour%5D] * View in NLM Catalog [https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Lancet%22%5BTitle%20Abbreviation%5D] * Add to search [?term=%22Lancet%22%5Bjour%5D] HEALTH CARE AND EQUITY IN INDIA Yarlini Balarajan [https://pubmed.ncbi.nlm.nih.gov/?term=%22Ba",
+
+                                    "appInfo": {
+
+                                        "appName": "Prod SA",
+
+                                        "featureFlag": "external",
+
+                                        "product": "searchai",
+
+                                        "_id": "67d2bf2595de4b4d5bb32e84",
+
+                                        "displayLines": 4
+
+                                    }
+
+                                }
+
+                            ]
+
+                        }
+
+                    },
+
+                    "used": [
+
+                        {
+
+                            "targetType": "faq",
+
+                            "positionId": "dg-ocauktyzxr",
+
+                            "target": {
+
+                                "title": "What is Health Insurance Business?"
+
+                            },
+
+                            "feedback": {
+
+                                "response": "Up",
+
+                                "reasonCode": [],
+
+                                "comment": ""
+
+                            }
+
+                        }
+
+                    ]
+
+                }
+
+            ],
+
+            "proActiveSuggestions": [
+
+                {
+
+                    "utterance": "purchase TV",
+
+                    "countDisplayedAnswers": {
+
+                        "countDialogTasks": 0,
+
+                        "countFaqs": 0,
+
+                        "countWebPages": 0,
+
+                        "countFiles": 0,
+
+                        "countAnswers": 0,
+
+                        "countFromNonNativeDataSource": 0
+
+                    },
+
+                    "used": [
+
+                        {
+
+                            "targetType": "DialogTask",
+
+                            "target": {
+
+                                "positionId": "dg-vfi5an2rka",
+
+                                "name": "purchase TV",
+
+                                "runType": "assist",
+
+                                "status": "completed",
+
+                                "startTime": "2025-03-27T07:14:54.124Z",
+
+                                "endTime": "2025-03-27T07:15:04.231Z",
+
+                                "suggestionsCount": {
+
+                                    "tellCustomer": 1,
+
+                                    "askCustomer": 2,
+
+                                    "tellUsed": 0,
+
+                                    "askUsed": 0
+
+                                },
+
+                                "linksClicked": []
+
+                            },
+
+                            "feedback": {
+
+                                "response": "Down",
+
+                                "reasonCode": [
+
+                                    "Time Taking"
+
+                                ],
+
+                                "comment": "Time taking feed back clicked thumbs downfor the dialog in the assist tab"
+
+                            }
+
+                        }
+
+                    ]
+
+                },
+
+                {
+
+                    "displayTime": "2025-03-27T07:15:07.120Z",
+
+                    "utterance": "{\"type\":\"template\",\"payload\":{\"template_type\":\"quick_replies\",\"text\":\"Which TV would you like to buy ?\",\"quick_replies\":[{\"content_type\":\"text\",\"title\":\"Samsung\",\"payload\":\"Samsung\"},{\"content_type\":\"text\",\"title\":\"Sansui\",\"payload\":\"Sansui\"},{\"content_type\":\"text\",\"title\":\"LG\",\"payload\":\"LG\"},{\"content_type\":\"text\",\"title\":\"Onida\",\"payload\":\"Onida\"},{\"content_type\":\"text\",\"title\":\"Lava\",\"payload\":\"Lava\"}]}}",
+
+                    "countDisplayedAnswers": {
+
+                        "countDialogTasks": 1,
+
+                        "countFaqs": 0,
+
+                        "countWebPages": 0,
+
+                        "countFiles": 0,
+
+                        "countAnswers": 0,
+
+                        "countFromNonNativeDataSource": 0
+
+                    },
+
+                    "suggestions": {
+
+                        "dialogs": [
+
+                            {
+
+                                "name": "purchase TV"
+
+                            }
+
+                        ]
+
+                    },
+
+                    "used": []
+
+                }
+
+            ]
+
+        },
+
+        {
+
+ 
+
 ```
 
 
@@ -2201,8 +1537,6 @@ curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/s
 
 
 ## **Response Body Parameters**
-
-
 
 
 <table>
@@ -2609,33 +1943,73 @@ Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPag
   <tr>
    <td>SearchBarEntry.searchPhrase
    </td>
-   <td>
+   <td>string
    </td>
-   <td>
+   <td>The search query entered by the agent. Example: "Return string to the given question using the provided Content and source_name..."
    </td>
   </tr>
   <tr>
    <td>SearchBarEntry.typingStartTime
    </td>
-   <td>
+   <td>string
    </td>
-   <td>
+   <td>Timestamp of when typing started. Example: "2024-07-10T06:52:36.447Z"
    </td>
   </tr>
   <tr>
    <td>SearchBarEntry.executionStartTime
    </td>
-   <td>
+   <td>string
    </td>
-   <td>
+   <td>Timestamp of when the search execution began. Example: "2024-07-10T06:52:36.871Z"
    </td>
   </tr>
   <tr>
    <td>SearchBarEntry.displayTime
    </td>
-   <td>
+   <td>string
    </td>
-   <td>
+   <td>Timestamp of when the search results were displayed. Example: "2024-07-10T06:52:40.359Z"
+   </td>
+  </tr>
+  <tr>
+   <td>suggestionsShown
+   </td>
+   <td>Array of Strings
+   </td>
+   <td>List of suggestions shown during the agent action. Example: ["tech are using the wrng worlkss teh", "teh are using wrnog workds for the tesnsig", "Healthcare System in India, Healthcare India - IBEF"]
+   </td>
+  </tr>
+  <tr>
+   <td>suggestionUsed
+   </td>
+   <td>integer
+   </td>
+   <td>The number of suggestions used by the agent. Example: 1
+   </td>
+  </tr>
+  <tr>
+   <td>phraseInput
+   </td>
+   <td>string
+   </td>
+   <td>The phrases entered by the agent. Example: “health teh”
+   </td>
+  </tr>
+    <tr>
+   <td>correctionsPresented
+   </td>
+   <td>integer
+   </td>
+   <td>The number of corrections presented to the agent. Example: 5
+   </td>
+  </tr>
+      <tr>
+   <td>correctionsAccepted
+   </td>
+   <td>integer
+   </td>
+   <td>The number of corrections accepted by the agent. Example: 0
    </td>
   </tr>
   <tr>

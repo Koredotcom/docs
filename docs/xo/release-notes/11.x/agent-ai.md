@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</u>
 
-This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### UI Enhancements
 
@@ -52,7 +52,7 @@ This update includes only bug fixes.
 
 <u>Minor Release</u>
 
-This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Widget Enhancements
 
@@ -111,7 +111,7 @@ Agent AI Voice is now integrated with Salesforce default telephony, Amazon Conne
 
 <u>Minor Release</u>
 
-This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### UI Enhancements
 
@@ -165,7 +165,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-This update includes enhancement and bug fixes. The key enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Search AI Configuration
 
