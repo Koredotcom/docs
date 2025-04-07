@@ -123,7 +123,7 @@ After detecting these additional synonyms, the **Confirmation** node extracts â€
 
 ### IVR Properties
 
-Use  the **IVR properties** tab on the Confirmation Node to define the initial prompts, timeout prompts, no match prompts, and error prompts with customization for the retries behavior, input mode, grammar settings for Global and Node level use cases, prompts, and call behavior parameters for this node to use in IVR Channel. These settings are defined at the Confirmation Node level. For more information, read the [Voice Call Properties](../../../../../channels/call-properties){:target="_blank"} article.
+Use  the **IVR properties** tab on the Confirmation Node to define the initial prompts, timeout prompts, no match prompts, and error prompts with customization for the retries behavior, input mode, grammar settings for Global and Node level use cases, prompts, and call behavior parameters for this node to use in IVR Channel. These settings are defined at the Confirmation Node level. For more information, read the [Voice Call Properties](../node-types/voice-call-properties.md){:target="_blank"} article.
 
 !!! Note
 

@@ -2,6 +2,28 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### LLM & Generative AI
+
+#### Unified Generative AI and LLM Interface
+
+This update introduces a new unified interface for Generative AI and LLM capabilities, logically organized features under product categories (Automation AI, Search AI, Agent AI), and a search bar for quick feature discovery.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md)
+
+### Admin Console
+
+#### SSO Compatibility Improvement
+
+The Platform has introduced a new configuration option to enhance Single Sign-On (SSO) compatibility and resolve authentication issues caused by the RequestedAuthnContext parameter in SAML requests. This ensures seamless integration with various identity providers, including Azure AD.  
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md#saml)
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u> Patch Release </u>
@@ -225,6 +247,10 @@ Whenever a SIP Trunk or Phone Number configuration fails—whether during the se
 #### Mask PII Data in Debug Logs
 
 The user input's Personal Identifiable Information (PII) data will be masked in the debug logs.
+
+### General Availability of a Key Feature
+
+We are announcing the general availability (GA) of the [DialogGPT Module](./../../generative-ai-tools/dialog-gpt.md) to all our users. 
 
 <hr>
 
@@ -1122,7 +1148,7 @@ Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLM
 
 In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation){:target="_blank"}
 
-#### Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
+#### Kore.ai XO GPT Supports Vector Generation and Answer Generation
 
 Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
 

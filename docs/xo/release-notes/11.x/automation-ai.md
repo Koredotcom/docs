@@ -2,6 +2,100 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Agentic Experience 
+
+#### Seamless Integration with Agentic Apps for Multi-agent Orchestration
+
+The fully autonomous Agentic Apps can now be easily integrated with the XO Platform. The integration simplifies the creation of highly contextual, self-service automation experiences using multi-agent orchestration powered by Agentic Apps.
+
+Key features
+
+* Choice between "Orchestrated Autonomy" or "Full Autonomy" based automation capabilities.
+* Agentic Apps provide full support for any of the digital and voice channels enabled via the XO Platform. 
+
+### DialogGPT
+
+#### Support for Dynamic Routing Capability Powered by DialogGPT
+
+The Platform now supports Dynamic Routing capability powered by DialogGPT. This capability allows teams to independently develop and manage automation apps for their various functions and then link them to a common app. More importantly, it enables businesses to provide a single, unified interface to the end users instead of a separate interface for each function. 
+
+The orchestration is powered by DialogGPT, which provides context-aware, intelligent, and dynamic routing.  
+
+Key features
+
+* Link Multiple Apps via Automation Node: The Automation Node in Experience Flows has been enhanced to support linking multiple apps and using DialogGPT for intent identification.
+* Indexing Linked App Content: Dialog and FAQ chunks from linked apps are indexed in the parent app after linking. Search AI knowledge is supported only in the parent app by default.
+* Embedding-Based Matching: User input and content from linked apps (dialogs, FAQs, search documents) are converted into embeddings with metadata. The platform then retrieves the top-matching chunks based on semantic similarity.
+* LLM-Powered Intent Resolution: An LLM resolves the shortlisted chunks and determines the winning intent. It could be an Intent, Multiple Intents, Answers, FAQs, Conversation Intents, Ambiguous Intents, or Small Talk.
+* Automated Event Handling: Default platform-provided event handlers are triggered based on the fulfillment type, ensuring smooth user interactions and dialog execution.
+* Clarifying Questions for Ambiguous Intents: When ambiguous intents are detected, clarifying questions are triggered for disambiguation
+* Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification.  
+[Learn more :octicons-arrow-right-24:](../../automation/dynamic-routing.md)
+
+#### Introducing XO GPT - DialogGPT Model
+
+XO GPT is a powerful DialogGPT model hosted by Kore.ai, exclusively fine-tuned for handling complex conversations. It enhances contextual understanding and response coherence, generating fluent and contextually relevant answers. This results in smoother conversational flow, increased user engagement, greater control over data, and faster response times.  [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md#features-supported-by-the-module)
+
+
+#### Updates to Multi-Intent Orchestration
+
+Users can now customize the predefined Multi-Intent fulfillment dialog for greater control and flexibility when the Conversation Orchestrator detects multiple intents in a user’s utterance.  [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#intent-events)
+ 
+### Agent Node Enhancement
+
+#### Enhanced Agent Node with V2 Prompt and Tool Calling
+
+In this update, Agent Node introduces a new version to fully take advantage of the Tool Calling capability of advanced AI Models. The new version (v2) orchestrates the Agent Node using the Tool Calling construct to collect entities, instruct business rules, and perform user-defined custom actions.
+
+ Key enhancements
+
+* Tool-Based Orchestration:
+    * Exit Scenarios as Default Tools: Automate exit scenarios without setup using the Exit Orchestration Tool
+    * Custom Tools: Integrate tools for specific business needs
+    * Simplified Entity Handling: V2 removes explicit entity collection, reducing configuration complexity
+    * Expanded Tool Calling: Handles entity collection and exit scenarios via tool calling
+* V2 Prompts and Templates:
+    * Flexible Version Selection: Choose between V1 (Legacy) and V2 (Enhanced) prompts based on your requirements.
+    * Customizable Templates: For faster implementation, use pre-built JavaScript-based V2 prompt templates as custom prompts with both system and custom models.
+    * V2 Features:
+        * Natural language responses without rigid JSON constraints, enabling more fluid conversations.
+        * Mandatory output keys (Text Response Path and Tool Response Path) for consistent data handling.
+        * Includes post-processor scripts to ensure smooth execution and maintainability.
+
+### NLP
+
+#### Suppressing "Intent Not Found" Event When Dialog Ends as "Fulfilled"
+
+The platform incorrectly used to trigger "Intent Not Found" events after successfully completed dialogs, specifically when dialogs ended with Entity or Confirmation nodes, followed by Script or Service nodes.
+A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfilment) has been added that prevents unwanted events when the "End of Task" event is disabled and the Dialog has ended with a "fulfilled" status. This ensures smooth conversation flows for BotKit implementations, handles dialog completion, and prevents disruptions in multi-assistant routing scenarios. 
+[Learn more :octicons-arrow-right-24:](../../automation/natural-language/nlu-configurations/engine-tuning.md#suppress_fallback_on_taskfulfilment)
+
+### Channels
+
+#### WhatsApp Native Integration using Meta’s Cloud API
+
+The XO Platform now offers native integration with WhatsApp Business via Meta's Cloud API. This integration eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account.
+
+Key features
+
+* Seamless management of templates, catalogs, conversational flows, and payments.
+* Simplified account linking and configuration through Meta's developer platform.
+* Enhanced operational efficiency and customer satisfaction.
+
+### API
+
+#### Call ID Support in getSessions API
+
+The getSessions API has been updated to accept callId as an optional query parameter. When provided with a valid callId, the API returns the corresponding session details, matching the functionality already available in the Conversation History API. [Learn more :octicons-arrow-right-24:](../../apis/automation/get-sessions-history.md)
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u>Patch Release</u>
@@ -13,6 +107,8 @@ This update include only bug fixes.
 ## v11.11.0 March 04, 2025
 
 <u> Minor Release </u>
+
+This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
 ### Build Agentic Experiences
 
@@ -57,11 +153,17 @@ DialogGPT's comprehensive analytics provide detailed tracking of user interactio
 
 ### Export/Import
 
-
 #### Redesigned Export Interface for Improved User Experience
 
 The Import / Export interface has been redesigned to mirror the Publish layout. A new top-level "Flows" section and reorganized "Automation Tasks" improve component organization. The update maintains backward compatibility and provides clearer section names and descriptions for an intuitive, cohesive experience.
 [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
+### General Availability of Key Features
+
+We are announcing the general availability (GA) of the following important features to all our users: 
+
+* [XO GPT Module](./../../generative-ai-tools/xo-gpt-module.md)
+* [Intent Discovery](./../../automation/tools/intent-discovery.md)
 
 
 <hr>
@@ -94,7 +196,7 @@ Key changes
 
 <u> Minor Release </u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Build Agentic Experiences
 
@@ -187,7 +289,7 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 ### DialogGPT, an Agentic Orchestration for Intelligent Conversations
 
-DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is in beta and is supported only for English conversations.    
+DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is supported for English conversations only.    
 
 Key Capabilities
 

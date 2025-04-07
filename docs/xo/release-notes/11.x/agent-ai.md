@@ -2,6 +2,44 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.12.0 April 5, 2025
+
+<u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+
+### UI Enhancements
+
+#### Search Support in Conversation Logs
+
+The Conversation Logs section now includes a search field to let you find conversations by Conversation ID.
+
+#### Gen AI integration in Agent Coaching
+
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
+
+### Integration Enhancements
+
+#### Agent AI Support for Outbound Emails and Offline Mode in Genesys Cloud CX
+
+Agent AI in Genesys Cloud CX now supports outbound emails, enabling you to draft AI-assisted responses. It also supports offline modes with limited real-time API calls.
+
+#### End-of-Call Event Independent of Salesforce Platform Events
+
+The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now receives the End-of-Call events independently, without relying on the Salesforce Platform Events.
+
+#### Agent AI Integration with NICE Agent Desktop
+
+Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget.
+
+### API Enhancements
+
+#### Tracking Auto-suggested Choices and Corrections in the Agent AI Raw Data API
+
+The Raw Data API now includes the suggestionsShown, suggestionUsed, phraseInput, correctionsPresented, and correctionsAccepted parameters to help assess the effectiveness of auto-suggested choices and corrections and identify areas for improvement.
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u>Patch Release</u>
@@ -13,6 +51,8 @@ This update includes only bug fixes.
 ## v11.11.0 March 4, 2025
 
 <u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Widget Enhancements
 
@@ -71,6 +111,8 @@ Agent AI Voice is now integrated with Salesforce default telephony, Amazon Conne
 
 <u>Minor Release</u>
 
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+
 ### UI Enhancements
 
 #### Language Dropdown Automatically Adjusts to the App's Language
@@ -123,7 +165,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update includes enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Search AI Configuration
 
@@ -157,7 +199,7 @@ Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-rig
 
 <u> Patch Release </u>
 
-This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
+This update includes minor enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
 ### Multi-lingual Support
 The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
@@ -334,6 +376,7 @@ The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI feat
 <hr>
 
 ## v11.6.0 September 28, 2024
+
 <u> Minor Release </u>
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
@@ -650,7 +693,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-Key features and enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Agent AI Widget Updates
 

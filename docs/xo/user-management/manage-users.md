@@ -98,7 +98,7 @@ This section helps configure the chat and voice settings.
 In the Chat & Voice section, you can configure the following:
 
 * Turn on **Enable chat** toggle to set:
-   1. Capacity by Channel Type - Maximum handling capacity for individual channels. (You can select maximum 15 conversations for each channel type).
+   1. Capacity by Channel Type - Maximum handling capacity for individual channels. (You can select maximum 15 conversations for each channel type). The total digital conversation limit should be configured within minimum and maximum limits. When an agent reaches the total digital conversation limit, they will be automatically marked as "system busy" and will not be assigned any new digital conversations until they complete ongoing conversations and free up session slots.  
    2. Language Support - Supported languages and their proficiency level. (Novice, Average, Good, or Expert)
    3. Widget Features - Attachments and emojis in live chat.
 
@@ -107,7 +107,7 @@ In the Chat & Voice section, you can configure the following:
   2. Select the supported languages and their proficiency level.
 
 * Turn on **Enable Voice Mail** toggle to set the count of voice mails callers can leave in a queue.
-<img src="../images/chat-and-voice.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/chat-and-voice-limits.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">
 
 ### Queues & Skills
 

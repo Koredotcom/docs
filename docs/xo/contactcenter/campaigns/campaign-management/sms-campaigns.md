@@ -13,6 +13,7 @@ On this page, the following details of the SMS campaigns are shown in a table:
 * **Priority** - Priority of the campaign from 1 to 5 (1 being the lowest). The default priority is 5.
 * **Status** - Status of the campaign.
     * **Ready**: When a manual campaign is saved and ready to run.
+    * **Run as Emergency**: The campaign runs immediately, overriding any schedule and calling hours.
     * **Active**: The campaign is started and running.
     * **Paused**: The campaign is paused.
     * **Rerun**: Rerun the campaign.
@@ -98,14 +99,42 @@ Steps to delete an SMS campaign:
 
 ## Run SMS Campaigns
 
-Running an SMS campaign changes the campaign status to **Active** and sends the configured message to the numbers in the contact lists.
+Running an SMS campaign changes the campaign status to **Active** and sends the configured message to the numbers in the contact lists. Campaigns run based on their configured priority.
 
 Steps to run an SMS Campaign:
 
-1. You can run a voice campaign by clicking the **Play** button.  
-    <img src="../images/play-button.png" alt="Play Button" title="Play Button" style="border: 1px solid gray; zoom:80%;">  
+1. Click the **Play** button and then click **Run**.  
+    <img src="../images/run-button.png" alt="Run Button" title="Run Button" style="border: 1px solid gray; zoom:70%;">  
 
     When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
+
+## Run as Emergency
+
+The campaign runs immediately, overriding any schedule and calling hours. It uses the available SMS capacity and starts instantly, regardless of whether contacts are listed or API-integrated. This campaign processes first at full capacity, followed by other high-priority campaigns and schedules. After completion, the schedule changes to manual if it was previously scheduled.
+
+Steps to run an Emergency SMS Campaign:
+
+1. Click the **Play** button and then click **Run as Emergency**.  
+    <img src="../images/run-as-emergency.png" alt="Run as Emergency" title="Run as Emergency" style="border: 1px solid gray; zoom:70%;">
+
+2. A pop-up alert appears. Click **Confirm** to proceed.  
+    <img src="../images/emergency-campaign-alert.png" alt="Emergency Campaign Confirmation" title="Emergency Campaign Confirmation" style="border: 1px solid gray; zoom:70%;">
+
+3. A warning appears at the top, and a warning icon is displayed next to the campaign name.  
+<img src="../images/emergency-campaign-run.png" alt="Warning Notification" title="Warning Notification" style="border: 1px solid gray; zoom:70%;">  
+
+    An emergency campaign cannot be paused or resumed; it can only be stopped and rerun. Users can manually stop an active emergency campaign. If rerun, the campaign resumes and completes sending SMS.
+
+    If the contact list is a **.csv file**, the emergency campaign ends after sending an SMS to all contacts. If the contact list is **API-integrated**, the user must manually stop the campaign.
+
+    Only one emergency campaign can run per workspace or account. If a user clicks **Run as Emergency** for another campaign, the system checks for an ongoing emergency campaign and displays a warning if one is in progress.  
+    <img src="../images/currently-active-campaign-alert.png" alt="Alert Notification" title="Alert Notification" style="border: 1px solid gray; zoom:70%;">  
+
+    !!! Notes
+
+        * A user cannot run or rerun an ongoing active campaign as an emergency. To do so, they must stop the ongoing campaign and rerun it as an emergency.
+        * A non-emergency campaign, once paused, can only be resumed as a non-emergency campaign.
+        * If an error occurs during the API pull of contacts, ongoing campaigns remain active and are not impacted.
 
 ## Stop an SMS Campaign
 

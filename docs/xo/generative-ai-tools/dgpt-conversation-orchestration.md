@@ -30,7 +30,12 @@ The XO Platform supports **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding** 
 
 
 * **Conversation Management**: 
-Currently, **OpenAI GPT-4o**, **OpenAI GPT-4o mini**, and **Azure OpenAI GPT-4o** models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine. Support for the major commercial models will be available in the upcoming months. However, you can always bring your own model via the custom LLM integration route.  
+The supported LLMs assist in detecting user intent and creating execution plans. You can configure advanced settings such as Temperature, Max Tokens, and Conversation History Length. The default settings are sufficient for most use cases. Support for major commercial models will be introduced in the coming months. However, you can always integrate your own model through the custom LLM integration option. Conversation Management currently supports the following LLMs:
+    * OpenAI GPT-4o
+    * OpenAI GPT-4o mini
+    * Azure OpenAI GPT-4o
+    * XO GPT – DialogGPT
+  
 
 To configure the model and settings, click **Settings**. Select the model, adjust the settings if necessary, and click **Save**.
 
@@ -50,6 +55,8 @@ The following is the intent event fulfillment behavior.
     * Present Qualified Intents (Default): Display a list of intents for the user to select or respond to. The task chosen (Dialog, FAQ, or Answer) is triggered.
     * Execute Dialog task: Select the dialog task to execute.
 * **Answer Generation**: This event handles user inputs that need answers generated from Search AI documents. When Knowledge from Search AI is enabled in DialogGPT, the system activates the Answer Generation event and adds the default event handler to the bot.
+
+* **Multiple Intents**: Define Multi-Intent fulfillment logic when the Conversation Orchestrator detects multiple intents in a user’s utterance. Users can modify the predefined Multi-Intent fulfillment dialog, gaining greater control and flexibility. By default, the platform executes the predefined dialog (Multiintent) to handle the Multi-Intent event.
 
 To manage an intent, click the respective settings. Define the event configuration, use the toggle to enable/disable the intent type, and click save.
 

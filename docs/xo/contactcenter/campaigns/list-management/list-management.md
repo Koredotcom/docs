@@ -157,8 +157,11 @@ Steps to pull  the contacts using API Integration:
         ```
         You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields.  
             <img src="../images/fieldmapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
-
     * Ensure that the phone numbers are in E.164 format with Country Code, Area Code, Subscriber Number, and within double inverted quotes.
+
+    !!! Note
+
+        You can get the API key value from environment variables (plain or encrypted) when adding contacts.
 
 12. Click **Save**. The contact list is fetched from the third-party database.
 
@@ -241,8 +244,7 @@ Steps to edit a contact list from the local drive:
 
     !!! Note
 
-        You can only append a contact list; you cannot edit an existing contact list.
-
+        You can only append a contact list; you cannot edit an existing contact list.  
 
 #### API Integration
 
@@ -258,8 +260,7 @@ Steps to  edit an API-integrated contact list:
     <img src="../images/editapisyncmode.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
 4. Make changes to the mapping fields (if required) and click **Save**.  
-    <img src="../images/editapimapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/editapimapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">  
 
 ### Delete a Contact List
 
@@ -275,7 +276,7 @@ Steps to delete a contact list from the local drive:
         You cannot delete a contact list if it is associated with any campaign.
 
 2. A confirmation message is displayed. Click **Delete**.  
-    <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">  
 
 The contact list is deleted.
 
@@ -288,7 +289,6 @@ Steps to delete an API-integrated contact list:
 
 2. A confirmation message is displayed. Click **Delete**.  
     <img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
 
 The contact list is deleted.
 
@@ -355,3 +355,51 @@ Steps to delete a DNC list:
     <img src="../images/delete-dnc-list-confirmation.png" alt="Delete DNC List Confirmation" title="Delete DNC List Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 The DNC list is deleted.
+
+## Logs
+
+When contact logs are fetched using API, the information is stored in the logs.
+
+### Accessing the Logs
+
+Campaign Managers can access the logs by going to:
+
+**Contact Center AI** > **Campaigns** > **List Management** > **Logs**.  
+    <img src="../images/logs-tab.png" alt="Logs Tab" title="Logs Tab" style="border: 1px solid gray; zoom:80%;">  
+
+The following information is available on the logs page:  
+<img src="../images/logs-details.png" alt="Logs Tab" title="Logs Tab" style="border: 1px solid gray; zoom:80%;">
+
+* **Date & Time** - The date and time when the API call was made to the contact lists. For example, 30 Mar, 2025 10:54 AM.
+* **Contact Lists** - Names of the contact lists. For example, Credit card customers.
+* **Campaigns** - Names of the campaigns. For example, Premium card holders.
+* **Status** - The status of the campaign (Completed/Failed).
+* **Description** - Description of the campaign status. For example, Successfully fetched 100 contact records.
+* **Export** - Export the contacts fetched through API as a JSON text file.
+
+### Search and Date Filter
+
+Users can search for records using the following:  
+<img src="../images/search.png" alt="Search" title="Search" style="border: 1px solid gray; zoom:60%;">
+
+* Contact List Name
+* Campaign Name
+* Description
+* Status
+
+The date filter enables users to filter the logs based on the selected dates and time. The following options are available:  
+<img src="../images/calendar.png" alt="Calendar" title="Calendar" style="border: 1px solid gray; zoom:80%;">
+
+* Today (default selection)
+* Yesterday
+* Last 7 Days
+* Last 28 Days
+* Last 90 Days
+* Custom Range
+
+You can set a time duration filter for the selected dates to retrieve records within the specified period.
+
+## Refresh Logs
+
+When you click the refresh button, the data updates based on the current search phrase and time filters.  
+<img src="../list-management/images/refresh.png" alt="Logs Tab" title="Logs Tab" style="border: 1px solid gray; zoom:80%;">

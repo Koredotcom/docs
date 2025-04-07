@@ -201,9 +201,11 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
     * Fairer Workload distribution.
     * Hold interaction in queue until the wait time expires.
 10. **Enable Dial Tone Until Agent Connects**: This setting plays a dial tone to the customer until the connection with the agent is established after the user hears connected tone.
-These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
+These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.
 
-    <img src="../images/agent-settings-page.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
+11. Total Digital Conversation Limit: This setting prevents digital overload by limiting the total number of active conversations across all channels.  
+
+    <img src="../images/agent-settings.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -412,3 +414,9 @@ Administrators can select from the following routing options that complement exi
 
 By default, the enable dial tone until agent connects functionality is disabled. Administrators can turn on the toggle and click Save to enable the functionality. When enabled, a dial tone is played to the customer until the connection with the agent is established after the user hears a connected tone.  
 <img src="../images/enable-dial-tone.png" alt="Enable Dial Tone Until Agents Connect" title="Enable Dial Tone Until Agents Connect" style="border: 1px solid gray; zoom:80%;">
+
+## Total Digital Conversation Limit
+
+This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md#chat--voice).
+When the Total digital conversation limit is reached,  an agent will move to System Busy status. This setting is disabled by default.  
+<img src="../images/total-digital-conversations-enable.png" alt="Enable Total Digital Conversations Limit" title="Enable Total Digital Conversations Limit" style="border: 1px solid gray; zoom:80%;">

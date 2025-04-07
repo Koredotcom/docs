@@ -4,7 +4,7 @@
 
 To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM or Kore.ai XO GPT Module.
 
-Review the model and feature support matrix for the [Co-Pilot features](./co-pilot-features.md#model-and-supported-features) and [Dynamic Conversation features](./dynamic-conversations-features.md#model-and-supported-features).
+Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
 
 ## Pre-built LLM Integration
@@ -39,7 +39,7 @@ Steps to configure a pre-built LLM:
         You can save the configuration with an unsuccessful connection.
 
 
-6. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+6. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 
 ## Provider's New LLM Integration
@@ -131,7 +131,7 @@ Steps to Integrate a Custom LLM:
 ## Amazon Bedrock LLM Integration Framework
 
 
-XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across Co-Pilot and Dynamic Conversations features. While Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only use the model with the help of custom prompts.
+XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
 !!! note
 
@@ -176,7 +176,7 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
 
 !!! note
 
-    Co-Pilot features can use content and environment variables. Dynamic Conversations features can use content, context, and environment variables.
+    Runtime features can use content and environment variables. Designtime features can use content, context, and environment variables.
 
 
 ### Key Advantages
@@ -215,7 +215,7 @@ Steps to configure a pre-built LLM using Dynamic Variables:
 
             You can save the configuration with an unsuccessful connection.
 
-7. The configured model is listed in the Models Library. The next step is to enable [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+7. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 
 ### Configure Provider's New LLM Integration using Dynamic Variables
@@ -305,7 +305,8 @@ Steps to configure an Amazon Bedrock LLM using Dynamic Variables:
 
 ## Kore.ai XO GPT Integration
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation and Answer Generation.
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation, Answer Generation, and DialogGPT - Conversation Orchestration.
+
 
 
 ### Enable Kore.ai XO GPT Integration
@@ -313,10 +314,7 @@ Steps to enable Kore.ai XO GPT Models.
 
 1. Go to **Generative AI Tools** > **Models Library**.
 
-2. Click **Enable Now** for Kore.ai XO GPT.  <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
-
-    If you have already configured a model, click **+ New Model > Kore.ai XO GPT**.
-    <img src="../images/xogpt2.png" alt="XO GPT" title="XO GPT" style="border: 1px solid gray; zoom:70%;">
+2. Click **Enable Now** for Kore.ai XO GPT. If you have already configured a model, click **+ New Model > Kore.ai XO GPT**.  <img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
    
  
 3. On the **Models** tab, toggle on the models as required.
@@ -324,12 +322,11 @@ Steps to enable Kore.ai XO GPT Models.
 
 
 
-4. Read the Policy Guidelines, select the checkbox, and click Save.
-5. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changes to X/Y models configured, where X is the number of the model(s) configured, and Y is the number of model(s) supported.
-<img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
+4. Read the Policy Guidelines, select the checkbox, and click **Save**.
+5. The Configuration successful message is displayed, and the XO GPT is listed in the Models Library. 
 
 
-6. You can now use these models in [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+6. You can now use these models in [GenAI Features](genai-features.md).
 
 
 ## Reset/Delete the Configured LLM Integration
