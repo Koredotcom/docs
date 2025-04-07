@@ -8,7 +8,7 @@ This document provides information on the feature updates and enhancements intro
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Voice Gateway
+### Call Control Parameters
 
 #### New Call Control Parameters to Support Deepgram
 
@@ -20,13 +20,17 @@ New call control parameters have been added to improve transcription quality whe
 
 [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md#common-asr-parameters)
 
-#### Updated TTS Selection for OpenAI TTS
-
-The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences)
+### Flows
 
 #### Configurable Answering Machine Detection (AMD) for Inbound Calls
 
 The Experience Flows now include an Answering Machine Detection (AMD) option ('Start Flow' → 'Answering Machine Detection (AMD)'), which can be selectively enabled for inbound calls. The flag helps reduce latency by preventing unnecessary AMD processing. When enabled, the system will detect answering machines in incoming calls and store the results in context variables that can be used in Dialog/Experience flows. This feature is only available for Voice Start Flows and includes a checkbox that allows users to automatically disconnect calls upon machine detection, streamlining call handling based on specific business requirements. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#answering-machine-detection)
+
+### Automatic Speech Recognition and Text-to-Speech
+
+#### Updated TTS Selection for OpenAI TTS
+
+The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences)
 
 #### Expanded Amazon Polly Voice Selection in TTS Dropdown
 
