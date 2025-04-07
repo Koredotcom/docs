@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Agent Console
 
