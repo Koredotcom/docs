@@ -4,7 +4,7 @@ Conversation Orchestration in DialogGPT allows you to define and manage Conversa
 This flexible system gives developers complete control over conversation management, ensuring the accuracy, relevance, and efficiency of user interactions.
 
 
-<img src="./images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Conversation Types
 

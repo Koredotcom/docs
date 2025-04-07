@@ -2,6 +2,42 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.12.0 April 5, 2025
+
+<u>Minor Release</u>
+
+### UI Enhancements
+
+#### Search Support in Conversation Logs
+
+The Conversation Logs section now includes a search field to let you find conversations by Conversation ID.
+
+#### Gen AI integration in Agent Coaching
+
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
+
+### Integration Enhancements
+
+#### Agent AI Support for Outbound Emails and Offline Mode in Genesys Cloud CX
+
+Agent AI in Genesys Cloud CX now supports outbound emails, enabling you to draft AI-assisted responses. It also supports offline modes with limited real-time API calls.
+
+#### End-of-Call Event Independent of Salesforce Platform Events
+
+The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now receives the End-of-Call events independently, without relying on the Salesforce Platform Events.
+
+#### Agent AI Integration with NICE Agent Desktop
+
+Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget.
+
+### API Enhancements
+
+#### Tracking Auto-suggested Choices and Corrections in the Agent AI Raw Data API
+
+The Raw Data API now includes the suggestionsShown, suggestionUsed, phraseInput, correctionsPresented, and correctionsAccepted parameters to help assess the effectiveness of auto-suggested choices and corrections and identify areas for improvement.
+
+<hr>
+
 ## v11.11.1 March 15, 2025
 
 <u>Patch Release</u>
