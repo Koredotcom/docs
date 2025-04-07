@@ -186,7 +186,10 @@ nav:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
-    - Use Cases: 
+    - Use Cases:
+      - Agent Node:
+        - Overview: automation/agent node/agent-node.md
+        - Prompt Setup: automation/agent node/prompt-setup.md
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
@@ -285,7 +288,8 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md   
+        - Feedback Survey: manage-assistant/feedbacksurvey.md
+      - Dynamic Routing: automation/dynamic-routing.md     
     - How To:
       - Marketplace Integration:
         - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
@@ -524,9 +528,7 @@ nav:
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
       - Streaming Responses: generative-ai-tools/streaming-responses.md 
-    - GenAI Features:
-      - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
-      - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - GenAI Features: generative-ai-tools/genai-features.md
     - DialogGPT:
       - Overview: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md

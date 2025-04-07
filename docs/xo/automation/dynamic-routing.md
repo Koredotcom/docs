@@ -1,10 +1,11 @@
 
 
-# Universal App Using DialogGPT
+# Dynamic Routing Capability Powered by DialogGPT
 
-A universal app serves as a single entry point for users to access multiple specialized bots. It acts as a central hub that intelligently routes user queries to the most appropriate underlying app based on the user's intent.
 
-You can expand the functionality of your XO11 app to encompass the capabilities of a Universal App by linking it to one or more other apps using the Automation Node within Flows. This feature is powered by DialogGPT, an intelligent agentic orchestrator leveraging Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs).
+A Dynamic Routing serves as a single entry point for users to access multiple specialized bots. It acts as a central hub that intelligently routes user queries to the most appropriate underlying app based on the user's intent.
+
+You can expand the functionality of your XO11 app to encompass the Dynamic Routing capabilities by linking it to one or more other apps using the Automation Node within Flows. This feature is powered by DialogGPT, an intelligent agentic orchestrator leveraging Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs).
 
 DialogGPT significantly improves the accuracy of intent detection and eliminates the traditional requirement for extensive utterance-based training. DialogGPT intelligently analyzes user input, taking into account the conversation history and current context, to route the request to the most relevant linked app during runtime. 
 
@@ -18,7 +19,7 @@ The Automation Node has been enhanced with two levels of autonomy based on your 
 
 
 
-* **Orchestrated Autonomy**: Structured conversation flows powered by DialogGPT’s intent identification. This option expands the capabilities of the app to act as a universal app and allows you to link one or more automation apps, streamlining orchestration and enabling dynamic routing. 
+* **Orchestrated Autonomy**: Structured conversation flows powered by DialogGPT’s intent identification expand the app’s Dynamic Routing capabilities, allowing you to link multiple automation apps to streamline orchestration. 
 * **Full Autonomy**: Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths.
 
 
@@ -38,7 +39,7 @@ Once you link apps in the Automation Node, they remain associated with other flo
 
 ### App Indexes
 
-The Universal App maintains two key indexes:
+The Dynamic Routing maintains two key indexes:
 
 
 
@@ -60,9 +61,9 @@ DialogGPT is an advanced Intent Detection and Conversation Management module tha
 * Resolution of ambiguous intents through clarifying questions.
 
 
-## How the Universal App Works
+## How the Dynamic Routing Works
 
-The Universal App leverages DialogGPT and Language Models (LLM) to understand user queries, identify intents, and provide relevant responses by dynamically routing requests to the appropriate linked app. Here's an overview of how it works:
+The Dynamic Routing leverages DialogGPT and Language Models (LLM) to understand user queries, identify intents, and provide relevant responses by dynamically routing requests to the appropriate linked app. Here's an overview of how it works:
 
 
 
@@ -76,7 +77,7 @@ The Universal App leverages DialogGPT and Language Models (LLM) to understand us
 3. Intent Identification:
     * The user input and the most relevant chunks are sent to the LLM.
     * The LLM analyzes this information to identify the most appropriate intent behind the user's query.
-4. Fulfillment and Response: Based on the identified intent, the Universal App determines the appropriate fulfillment type and generates a response. This can involve:
+4. Fulfillment and Response: Based on the identified intent, the Dynamic Routing determines the appropriate fulfillment type and generates a response. This can involve:
     * Executing a dialog.
     * Providing an answer from FAQs or knowledge documents.
     * Handling multiple intents.
@@ -84,35 +85,35 @@ The Universal App leverages DialogGPT and Language Models (LLM) to understand us
     * Engaging in small talk when appropriate.
 
 
-## Setting Up a Universal App
+## Setting Up a Dynamic Routing
 
-The Automation Node allows you to link multiple apps within your accessible workspace. An app can be linked only if it contains at least one dialog. To configure a universal app functionality, you must have access to at least two apps within the same workspace.
+The Automation Node allows you to link multiple apps within your accessible workspace. An app can be linked only if it contains at least one dialog. To configure a Dynamic Routing functionality, you must have access to at least two apps within the same workspace.
 
 Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](../generative-ai-tools/dialog-gpt/#how-to-enable-dialoggpt). To explore supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations).
 
-Step to set up a Universal App:
+Step to set up a Dynamic Routing:
 
 
 
 1. Navigate to **Flows & Channels** > **Flows** > **Start Flows** > **Welcome Chat Flow**. Click the **Automation Node**.  
-<img src="../images/ua2.png" alt="Universal App" title="Universal App" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/ua2.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
 
 2. On the Component Properties tab, select Conversation Management Approach as **Orchestrated Autonomy**.
 3. In the Automation AI Options section, select **Use GenAI to dynamically route to linked apps**. If DialogGPT is disabled, follow the onscreen instructions to enable it.
 4. Click **+Link Apps**. The available apps to link are displayed.  
-<img src="../images/ua1.png" alt="Universal App" title="Universal App" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/ua1.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
 5. Select the app(s) and click **Save**. The success message is displayed.
 6. Click **Manage** if you want to link/unlink the apps.  
-<img src="../images/ua3.png" alt="Universal App" title="Universal App" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/ua3.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
 
 
 
 ## Managing App Updates
 
 
-### Publishing Universal App Functionality
+### Publishing Dynamic Routing Functionality
 
-Publishing the Universal App functionality with DialogGPT follows a structured process for which the parent app generates two indexes, i.e. Configured App Index and Published App Index. Keeping the configured and published indexes in sync is essential for maintaining seamless functionality.
+Publishing the Dynamic Routing functionality with DialogGPT follows a structured process for which the parent app generates two indexes, i.e. Configured App Index and Published App Index. Keeping the configured and published indexes in sync is essential for maintaining seamless functionality.
 
 To learn more about the In-development and Published app, see [Publication Statuses](../deploy/publishing-bot.md).
 
@@ -138,7 +139,7 @@ If you add or update dialogs or FAQs in the parent app or link a new app to it, 
 
 
 
-* Ensure DialogGPT is enabled before setting up the Universal App.
+* Ensure DialogGPT is enabled before setting up the Dynamic Routing.
 * Publish linked apps before publishing the parent app.
 * Use "Sync Updates" and re-publish apps whenever you make changes to keep indexes in sync.
 
