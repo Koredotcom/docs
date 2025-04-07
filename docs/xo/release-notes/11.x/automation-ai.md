@@ -196,7 +196,7 @@ Key changes
 
 <u> Minor Release </u>
 
-This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Build Agentic Experiences
 
