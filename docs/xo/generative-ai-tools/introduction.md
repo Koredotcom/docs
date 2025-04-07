@@ -47,15 +47,12 @@ The Integration of Generative AI and LLM enables the following features:
     
 
 * Automation AI - Runtime features:
-
     * **Agent Node**: This feature lets you build AI-powered bots using LLMs, Tool calling, and generative AI. It supports entity collection, context handling, multilingual conversations, and external integrations—enabling dynamic, human-like interactions for employees and customers.
     * **Prompt Node:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
     * **Repeat Responses**: Use LLM to reiterate the last bot responses when the Repeat Bot Response event is triggered.
     * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual bot responses.
     * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
-
     * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
-
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
 * Search AI Features:
@@ -64,7 +61,6 @@ The Integration of Generative AI and LLM enables the following features:
 
 * Agent AI Features:
     * **Agent Response Rephrasing**: Agents will be able to use the below chosen LLM to rephrase their responses.
-
     * **Generating Opposite Utterance Suggestions**: Use LLM models for generating opposite utterances during design time.
     * **Generating Similar Answer Suggestions**: Use LLM models for generating similar answers during design time based on semantic similarity.
     * **Generating Similar Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity.

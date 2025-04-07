@@ -103,7 +103,7 @@ Step to set up a Dynamic Routing:
 4. Click **+Link Apps**. The available apps to link are displayed.  
 <img src="../images/ua1.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
 5. Select the app(s) and click **Save**. The success message is displayed.
-6. Click **Manage** if you want to link/unlink the apps.  
+6. To link more app, click **+Link App**. To unlink the apps, click unlink icon next to the app.  
 <img src="../images/ua3.png" alt="Dynamic Routing" title="Dynamic Routing" style="border: 1px solid gray; zoom:80%;"> 
 
 
