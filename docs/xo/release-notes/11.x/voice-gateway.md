@@ -1,4 +1,4 @@
-# Voice Gateway
+# Voice Gateway Updates
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of XO v11.x releases.
 
