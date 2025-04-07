@@ -12,13 +12,15 @@ This update include enhancement and bug fixes. The key enhancement included in t
 
 #### Unified Generative AI and LLM Interface
 
-This update introduces a new unified interface for Generative AI and LLM capabilities, logically organized features under product categories (Automation AI, Search AI, Agent AI), and a search bar for quick feature discovery.
+This update introduces a new unified interface for Generative AI and LLM capabilities, logically organized features under product categories (Automation AI, Search AI, Agent AI), and a search bar for quick feature discovery.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md)
 
 ### Admin Console
 
 #### SSO Compatibility Improvement
 
-The Platform has introduced a new configuration option to enhance Single Sign-On (SSO) compatibility and resolve authentication issues caused by the RequestedAuthnContext parameter in SAML requests. This ensures seamless integration with various identity providers, including Azure AD.  [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md#saml)
+The Platform has introduced a new configuration option to enhance Single Sign-On (SSO) compatibility and resolve authentication issues caused by the RequestedAuthnContext parameter in SAML requests. This ensures seamless integration with various identity providers, including Azure AD.  
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md#saml)
 
 <hr>
 
