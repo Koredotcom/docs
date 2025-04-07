@@ -179,14 +179,18 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
-        - Platform Services: release-notes/11.x/platform-services.md    
+        - Platform Services: release-notes/11.x/platform-services.md 
+        - Voice Gateway: release-notes/11.x/voice-gateway.md  
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
-    - Use Cases: 
+    - Use Cases:
+      - Agent Node:
+        - Overview: automation/agent node/agent-node.md
+        - Prompt Setup: automation/agent node/prompt-setup.md
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
@@ -285,7 +289,8 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md   
+        - Feedback Survey: manage-assistant/feedbacksurvey.md
+      - Dynamic Routing: automation/dynamic-routing.md     
     - How To:
       - Marketplace Integration:
         - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
@@ -438,9 +443,6 @@ nav:
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
       - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
-      - Connectors: 
-        - Introduction: quality-management/connectors/connector-intro.md
-        - Amazon S3: quality-management/connectors/amazon-s3.md
       - Analyze:
         - Dashboard:
           - Supervisor Dashboard: quality-management/analyze/dashboard.md
@@ -460,9 +462,12 @@ nav:
           - Coaching Monitor: quality-management/coach/coaching-monitor.md        
       - Configure:
         - Evaluation Criteria:
-          - Evaluation Forms: quality-management/configure/evaluation-forms.md
-          - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
-          - Agent Scorecards: quality-management/configure/agent-scorecards.md
+            - Evaluation Forms: quality-management/configure/evaluation-forms.md
+            - Evaluation Metrics: quality-management/configure/evaluation-metrics.md
+        - Agent Scorecards: quality-management/configure/agent-scorecards.md
+        - Connectors: 
+            - Introduction: quality-management/connectors/connector-intro.md
+            - Amazon S3: quality-management/connectors/amazon-s3.md
         - Settings: 
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
@@ -524,9 +529,7 @@ nav:
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
       - Streaming Responses: generative-ai-tools/streaming-responses.md 
-    - GenAI Features:
-      - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
-      - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - GenAI Features: generative-ai-tools/genai-features.md
     - DialogGPT:
       - Overview: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md

@@ -105,7 +105,7 @@ For example, double-click the "content" key in the JSON structure and click **Sa
 12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 <img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
  
-13. Now proceed to enable[ Co-Pilot](co-pilot-features.md) and[ Dynamic Conversations](dynamic-conversations-features.md) features.
+13. Now proceed to enable [GenAI Features](genai-features.md).
 
 		
 

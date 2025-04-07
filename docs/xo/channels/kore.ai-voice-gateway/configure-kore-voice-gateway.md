@@ -210,7 +210,7 @@ Steps to configure Voice Preferences:
             * Google Cloud Text-to-Speech,
             * AWS Amazon Polly,
             * ElevenLabs,
-            * Whisper,
+            * OpenAI TTS,
             * PlayHT,
             * Deepgram Text-to-speech.
         2. Voice

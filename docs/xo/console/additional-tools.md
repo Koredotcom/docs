@@ -38,7 +38,7 @@ For instructions on customizing the User Info widget, refer to the [Set User Inf
 
 ## History
 
-The Conversation History widget shows the complete record of a customer’s past interactions. It displays the following details:
+The Conversation History widget shows both inbound and outbound call records, using phone numbers as unique identifiers to link all historical transcripts when new conversations begin. Audio files in messages include download links for the streams. Regular agent-user conversations display as back-and-forth transcripts in the interaction tab. The History widget persists as long as transcripts remain in the database. Clicking any tile shows the complete transcript for that specific interaction. It displays the following details:
 
 * Date, year, and time of the conversation.
 * The total duration of the interaction.
@@ -48,7 +48,11 @@ The Conversation History widget shows the complete record of a customer’s past
     * Duration
     * Wait time
     * Final status
-    <img src="../images/history.png" alt="History" title="History" style="border: 1px solid gray; zoom:70%;">
+    * Direction (Inbound/Outbound)  
+        <img src="../images/history-tab.png" alt="History" title="History" style="border: 1px solid gray; zoom:70%;">
+
+* Clicking the conversation displays the transcript.  
+<img src="../images/transcript.png" alt="Transcript" title="Transcript" style="border: 1px solid gray; zoom:70%;">
 
 ## Internal Chat with Other Agents or Supervisors
 

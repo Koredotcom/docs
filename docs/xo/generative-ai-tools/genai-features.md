@@ -7,9 +7,9 @@ The Generative AI features improve design-time and runtime capabilities, acceler
 
 By default, all the features are disabled. To enable the feature, select the model, prompt, and then toggle the status to enable it. You can also change the model, its prompts, and the respective settings.
 		
+### Enable Feature
 
 Steps to enable the feature:
-
 
 
 1. Navigate to **Generative AI Tools** > **GenAI Features**.  
@@ -108,7 +108,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 ## Automation AI Features
 
 
-### Model and Supported Features
+### Model and Supported Features - Automation AI
 
 The following table displays the features and the supported models. 
 
@@ -530,7 +530,7 @@ If you select Create without use cases when creating a bot, the system won’t p
 
 ## Search AI Features
 
-### Model and Supported Features
+### Model and Supported Features - Search AI
 
 The following table displays the features and the supported models. 
 
@@ -563,7 +563,7 @@ To learn more about the feature, see [Rephrase User Query](#rephrase-user-query)
 
 ## Agent AI Features
 
-### Model and Supported Features
+### Model and Supported Features - Agent AI
 
 The following table displays the features and the supported models. 
 

@@ -51,6 +51,8 @@ DialogGPT triggers the resolved intent with the appropriate fulfillment action. 
 
 ## How to Enable DialogGPT
 
+Before proceeding, ensure that the LLM powering the DialogGPT is successfully integrated. For more details on supported models, refer to the [Model Configurations](dgpt-conversation-orchestration.md#model-configurations) and see the [LLM Integration](models-library.md) documentation.
+
 Steps:
 
 1. Navigate to **Generative AI Tools** > **DialogGPT**.  
