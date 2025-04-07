@@ -1,5 +1,5 @@
 # Advanced NLP Configurations
-You can fine-tune intent detection for each language enabled for your Virtual Assistant (VA). To perform this action, follow the below steps:
+You can fine-tune intent detection for each language enabled for your Virtual Assistant (VA). To perform this action, follow the steps below:
 
 1. On the left pane, click **Natural Language** > **NLU Config**.
 2. In the **Engine Tuning** section, you can perform engine tuning by customizing
@@ -611,6 +611,22 @@ Disable
    <td>
    </td>
   </tr>
+     <tr bgcolor="#FAFAFA">
+   <td><a href="#suppress_fallback_on_taskfulfilment
+">Suppress_Fallback_On_TaskFulfilment
+</a>
+   </td>
+   <td>When enabled, it prevents fallback triggers by ignoring residual user input after a dialog ends with the "fulfilled" reason, specifically when the "End of Task" event is disabled.
+   </td>
+   <td>FM
+   </td>
+   <td>Enable,
+<br>
+Disable (default)
+   </td>
+   <td>
+   </td>
+  </tr>
 </table>
 
 ## **Machine Learning Engine Settings**
@@ -864,6 +880,12 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 The [FM Engine configuration](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
+
+### Suppress_Fallback_On_TaskFulfilment
+
+This feature enables users to prevent the platform from processing additional user input after a dialog ends with a **fulfilled** end reason, especially in scenarios where the **“End of Task”** event is **disabled** in the Virtual Assistant configuration.
+
+This allows users (especially those leveraging **BotKit** for task orchestration) to maintain precise control over dialog closures without unintended **Intent Not Found** triggers.
 
 ## **Spell Correction settings**
 
