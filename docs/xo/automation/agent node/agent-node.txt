@@ -1,5 +1,8 @@
 # Agent Node
 
+      - Agent Node:
+        - Overview: automation/agent node/agent-node.md
+        - Prompt Setup: automation/agent node/prompt-setup.md
 
 ## Overview
 
