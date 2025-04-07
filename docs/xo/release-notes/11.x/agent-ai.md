@@ -6,6 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release</u>
 
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+
 ### UI Enhancements
 
 #### Search Support in Conversation Logs
@@ -49,6 +51,8 @@ This update includes only bug fixes.
 ## v11.11.0 March 4, 2025
 
 <u>Minor Release</u>
+
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Widget Enhancements
 
@@ -107,6 +111,8 @@ Agent AI Voice is now integrated with Salesforce default telephony, Amazon Conne
 
 <u>Minor Release</u>
 
+This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
+
 ### UI Enhancements
 
 #### Language Dropdown Automatically Adjusts to the App's Language
@@ -159,7 +165,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update includes enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Search AI Configuration
 
@@ -193,7 +199,7 @@ Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-rig
 
 <u> Patch Release </u>
 
-This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
+This update includes minor enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
 ### Multi-lingual Support
 The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
@@ -370,6 +376,7 @@ The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI feat
 <hr>
 
 ## v11.6.0 September 28, 2024
+
 <u> Minor Release </u>
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
@@ -686,7 +693,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-Key features and enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Agent AI Widget Updates
 
