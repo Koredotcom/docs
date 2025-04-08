@@ -19,10 +19,13 @@ Steps to add an external model using API integration:
 5. Enter a **Model name** and **Model endpoint URL** in the respective fields.  
 <img src="../images/custom-api-integration-general-details.png" alt="Custom API Integration General Details" title="Custom API Integration General Details" style="border: 1px solid gray; zoom:80%;">
 
-6. In the **Headers** section, specify the headers such as **Key** and **Value** that need to be sent along with the request payload. 
+6. Select the **Authorization profile** you want to use with the request payload from the configured options on the **Settings** console. [Learn more](../../settings/security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. To proceed without authentication, choose ***None*** which is the default selection.
+<img src="../external-models/images/set-auth-profile-parameter.png" alt="set auth profile" title="set auth profile" style="border: 1px solid gray; zoom:80%;">
+
+7. In the **Headers** section, specify the headers such as **Key** and **Value** that need to be sent along with the request payload. 
 <img src="../images/custom-api-integration-headers.png" alt="Custom API Integration Headers" title="Custom API Integration Headers" style="border: 1px solid gray; zoom:80%;">
 
-7. Configure **Variables**:
+8. Configure **Variables**:
 
     * **Prompt variable**: The Prompt variable is set to mandatory by default. You can Turn ON the toggle for the System prompt and examples if required.
         <img src="../images/custom-api-integration-prompt-variable.png" alt="Custom API Integration Prompt Variable" title="Custom API Integration Prompt Variable" style="border: 1px solid gray; zoom:80%;">
@@ -33,17 +36,17 @@ Steps to add an external model using API integration:
         * The Add custom variable dialog is displayed. Enter the **Variable name** and **Display name**, and select the **Data type**.  
     <img src="../images/add-custom-variable.png" alt="Add Custom Variable" title="Add Custom Variable" style="border: 1px solid gray; zoom:60%;">
 
-8. In the **Body** section, add the request body of the model you are trying to connect with. Ensure the body is in the correct format, as shown in the screenshot below; otherwise, the API testing won't work.  
+9. In the **Body** section, add the request body of the model you are trying to connect with. Ensure the body is in the correct format, as shown in the screenshot below; otherwise, the API testing won't work.  
 <img src="../images/custom-api-integration-body.png" alt="Custom API Integration Body" title="Custom API Integration Body" style="border: 1px solid gray; zoom:80%;">
 
-9. In the **Test response** section, provide a test response from the model:
+10. In the **Test response** section, provide a test response from the model:
     * Click **Test** under the **Test** section on the **Custom API Integration** dialog.
    The **Sample Input** dialog is displayed.  
    <img src="../images/test-sample.png" alt="Test Sample" title="Test Sample" style="border: 1px solid gray; zoom:60%;">
 
     * Enter a **Prompt**, **Sample prompt**, and **Examples** in the respective fields.
 
-10. Once the response is generated after the Test, you can configure the **JSON path** to capture the Output path, Input tokens, and Output tokens.
+11. Once the response is generated after the Test, you can configure the **JSON path** to capture the Output path, Input tokens, and Output tokens.
     * **Output Path**: The output path refers to the location or key within an LLM response (often a JSON object) where the model's main output or answer is stored. This path helps you identify and extract the relevant information from the response, especially when working with complex data structures.
     
         For example, “choices[0].message.content” indicates the output path in the sample response displayed in the following screenshot:
@@ -64,7 +67,7 @@ Steps to add an external model using API integration:
         Click the **Save as draft** to save the model and the status is saved as Draft.
     
 
-11. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the AI node of the tool flow builder.
+12. Click **Confirm** to save the details. Your external model is now listed in the External model list. It can be used in the playground and the AI node of the tool flow builder.
 
 ## Manage Custom API Integrations
 

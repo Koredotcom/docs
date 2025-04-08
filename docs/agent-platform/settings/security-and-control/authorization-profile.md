@@ -65,7 +65,7 @@ If the mandatory fields are left blank, validation error messages appear, as sho
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authentication process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user. For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-additional-field" target="_blank">Add Additional Field</a> section.</p>
+<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authentication process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user.</p>
 </div>
     
 <ol start="7"><li>(Optional) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">Add Authorization Field</a> section.</li>
