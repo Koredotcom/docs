@@ -91,7 +91,7 @@ A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfilment) has b
 
 #### WhatsApp Native Integration using Meta’s Cloud API
 
-The XO Platform now offers native integration with WhatsApp Business via Meta's Cloud API. This integration eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account.
+The XO Platform now offers native integration with WhatsApp Business via Meta's Cloud API. This integration eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account.  [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md)
 
 Key features
 
