@@ -107,1437 +107,363 @@ curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/s
 
 ```
 {
-
     "numResults": 2,
-
     "data": [
-
         {
-
-            "conversationID": "atesta-m8r0ii4o",
-
-            "botSessionID": "67e4f9805622dd06277cdfc8",
-
+            "conversationID": "c-2a9096d-d0de-4854-8e79-43a34b7xxxxx",
+            "botSessionID": "67d7f84f378b8876829xxxxx",
             "channel": "chat",
-
-            "segmentID": "ac-9c35de2-14b3-472e-bebc-3b5d0da928ec",
-
-            "segmentStartTime": "2025-03-27T07:08:47.597Z",
-
-            "segmentEndTime": "2025-03-27T07:10:36.738Z",
-
-            "countScrollUp": 3,
-
-            "countScrollDn": 2,
-
+            "segmentID": "ac-c9e2cb2-4bcc-4b8d-a3ba-3be14bexxxxx",
+            "segmentStartTime": "2025-03-17T10:25:05.060Z",
+            "segmentEndTime": "2025-03-17T10:25:45.454Z",
+            "queueInfo": {
+                "queueId": "qu-42ca9c1-e2ad-4d32-8bb7-002534cxxxxx",
+                "queueName": "Default Queue"
+            },
+            "countScrollUp": 0,
+            "countScrollDn": 0,
             "agent": {
-
-                "agentId": "a-m8r0iiln"
-
+                "agentName": "smartAssist UAT",
+                "agentId": "u-34c7ca6b-4c3d-5a13-9551-6aa4cd8xxxxx"
             },
-
-            "tags": [
-
-                {
-
-                    "type": "message",
-
-                    "name": "MessageKey",
-
-                    "value": "MessageKeyVALUE",
-
-                    "messageID": "ms-50f37525-736d-5182-8a54-94711d442730",
-
-                    "createdAt": "2025-03-27T07:08:49.286Z"
-
-                },
-
-                {
-
-                    "type": "session",
-
-                    "name": "SessionKey",
-
-                    "value": "SessionKeyVALUE",
-
-                    "createdAt": "2025-03-27T07:08:48.096Z"
-
-                }
-
-            ],
-
-            "summary": {
-
-                "summaryId": "smr-adab467-72e9-4ec5-8d7a-2aabd1ab2bb0",
-
-                "participant": {
-
-                    "identity": "a-m8r0iiln",
-
-                    "type": "AGENT",
-
-                    "startTime": [],
-
-                    "endTime": []
-
-                },
-
-                "type": "final",
-
-                "summary": "",
-
-                "editedSummary": "We're sorry, but there was a problem generating the summary for this conversation. Please create your own summary",
-
-                "isError": **true**,
-
-                "isDisabled": **false**,
-
-                "isEdited": **true**,
-
-                "exeStartTime": 1743059436693,
-
-                "positionId": "dg-5rp9haf9nn",
-
-                "sumSubTime": 1743059460053,
-
-                "time": 23.36,
-
-                "feedback": {
-
-                    "response": "Down",
-
-                    "reasonCode": [],
-
-                    "comment": "end of summary"
-
-                }
-
-            },
-
+            "tags": [],
             "agentActions": [
-
                 {
-
                     "actionType": "SearchBarEntry",
-
                     "action": {
-
-                        "searchPhrase": "Healthcare System in India, Healthcare India - IBEF",
-
-                        "typingStartTime": "2025-03-27T07:10:02.278Z",
-
-                        "executionStartTime": "2025-03-27T07:10:22.234Z",
-
-                        "displayTime": "2025-03-27T07:10:25.419Z",
-
-                        "suggestionsShown": [
-
-                            "tech are using the wrng worlkss  teh",
-
-                            "teh are using wrnog workds for the tesnsig",
-
-                            "Healthcare System in India, Healthcare India - IBEF"
-
-                        ],
-
-                        "suggestionUsed": 1,
-
-                        "phraseInput": "health teh ",
-
-                        "correctionsPresented": 5,
-
-                        "correctionsAccepted": 0,
-
-                        "countDisplayedAnswers": {
-
-                            "countDialogTasks": 0,
-
-                            "countFaqs": 4,
-
-                            "countWebPages": 5,
-
-                            "countFiles": 2,
-
-                            "countAnswers": 0,
-
-                            "countFromNonNativeDataSource": 0
-
-                        },
-
-                        "suggestions": {
-
-                            "faqs": [
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Which Insurance Companies offer Health Insurance Policies in India?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "Which Insurance Companies offer Health Insurance Policies in India?",
-
-                                    "positionId": "dg-r74fpqb3at",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Resend OTP",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "Resend OTP",
-
-                                    "positionId": "dg-9d54h4frdq",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "What is AYUSH Hospital?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "What is AYUSH Hospital?",
-
-                                    "positionId": "dg-cxd507th16",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "What is AYUSH Treatment? Whether AYUSH Treatment is allowed in all Health Insurance Policies?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "What is AYUSH Treatment? Whether AYUSH Treatment is allowed in all Health Insurance Policies?",
-
-                                    "positionId": "dg-6xl89hve93h",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                }
-
-                            ],
-
-                            "web": [
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Healthcare System in India, Healthcare India - IBEF",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fhealthcare-india&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-00b44114-9bde-44ae-8084-9bb999676e8c&hId=955b136584ad076fd0309d69a6e3f3377e0920e960140f2cbdc955ca934d1c50"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-ia5xj3w1yd",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Healthcare in India - Wikipedia",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHealthcare_in_India&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-6a06e2f8-90d0-4786-95bc-e8a27c3ff07e&hId=9f48681f49da231e23e26f724b14982af0fab99e37481748b2270f90e7e6b7f7"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-vhmrypq1wj",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "India's Ayush Industry & National AYUSH Mission | IBEF",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fayush&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-9a13b295-68c5-4557-94ba-81b6b7f07e90&hId=5aa0dcbff3bcac7296ea50804593759ffa5e2bda8f19abea62c626442657b2c0"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-mtzuxnhj55l",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Banking in India: Growth, Trends, and Opportunities | IBEF",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fbanking-india&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-22a47b6a-e277-4a0a-9461-b4d5a2892fa2&hId=80e6d5170e6c1fd3dba566ba55dbcc1e33cdd8fc46c6fc5649504140851ac1f4"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-zhx6h4ouktk",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Indian Agriculture Sector, Farming in India | IBEF",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fagriculture-india&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-ce79586c-3d4e-48a4-899c-7b149f2e5341&hId=8123ccc5b0412d4d6d3bee33e7ec97756c566921ad3a30907748426ade275aa6"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-5vvxexjlll",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                }
-
-                            ],
-
-                            "file": [
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "PM",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fnha.gov.in%2FPM-JAY&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-5a9dc6d5-3eef-5401-94e8-713cf93ea19d&hId=b5806f5bfd92daf057022b418ea1b84043eb18a6d28050117f56671925bdc19f"
-
-                                        }
-
-                                    ],
-
-                                    "content": "flag [img&#x2F;resources&#x2F;flag.jpg] भारत सरकार GOVERNMENT OF &lt;span class=\"highlightText\">INDIA&lt;/span> [https:&#x2F;&#x2F;www.mygov.in&#x2F;] * 14555 [tel:14555] * Screen Reader Access [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;screen_reader] * Skip to main content * &#x2F;sitemap.xml * https:&#x2F;&#x2F;www.facebook.com&#x2F;AyushmanBharatGoI * https:&#x2F;&#x2F;twitter.com&#x2F;ayushmannha * https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCkd7w2rww0HQB4lZ-l3dB6g * https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;ayushmanbharatgoi&#x2F; * https:&#x2F;&#x2F;www.instagram.com&#x2F;ayushmanbharatnha&#x2F; * Quora image [img&#x2F;gallery&#x2F;quora.png] [https:&#x2F;&#x2F;www.quora.com&#x2F;profile&#x2F;Ayushman-Bharat-9?ch=3&amp;share=25d97ee9&amp;srid=bdecg] * A+ [javascript:;] * A [javascript:;] * A- [javascript:;] NHA [img&#x2F;resources&#x2F;logo.svg] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] IYC [img&#x2F;resources&#x2F;iyc.png] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] NATIONAL HEALTH AUTHORITY PM-JAY [img&#x2F;resources&#x2F;pmjay.png] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * index.php * Home [https:&#x2F;&#x2F;nha.gov.in&#x2F;] * About Us * NHA [NHA.php] * Who&#x27;s who [Whos-who.php] * PM-JAY [PM-JAY.php] * ABDM [NDHM.php] * PM-JAY [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * ABDM [https:&#x2F;&#x2F;ndhm.gov.in&#x2F;] * Blog [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;Blogs-list] * Connect with Us * Careers [Careers.php] * Contact Us [Contact-Us.php] * Tenders and Procurement [Tenders-Procurement.php] * Circulars [circulars.php] * PMJAY Dashboard [https:&#x2F;&#x2F;dashboard.pmjay.gov.in&#x2F;pmj&#x2F;#&#x2F;] * ABDM Dashboard [https:&#x2F;&#x2F;dashboard.abdm.gov.in&#x2F;abdm&#x2F;] * PMJAY for 70+ * Enrol for PMJAY for 70+ [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * List of Empanelled Hospitals [https:&#x2F;&#x2F;hem.nha.gov.in&#x2F;search] * FAQs [img&#x2F;resources&#x2F;English_FAQs_related_to_the_benefits_for_senior_citizens.pdf] * How to Make Ayushman Card [https:&#x2F;&#x2F;youtube.com&#x2F;playlist?list=PLYcj0BpCoCc4yDCm7A4xxsjkg4gmxnWre&amp;si=6B2-_rj9TFB0fA-k] * Give a Missed Call [missedcall.php] * Am I Eligible [img&#x2F;resources&#x2F;am-i-eligible.png] [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * find1 [img&#x2F;resources&#x2F;find1.png] [https:&#x2F;&#x2F;hospitals.pmjay.gov.in&#x2F;Search&#x2F;empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew] * Grievance Portal [img&#x2F;resources&#x2F;grivence.png] [https:&#x2F;&#x2F;cgrms.pmjay.gov.in&#x2F;GRMS&#x2F;] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;MAP&#x2F;images&#x2F;icons&#x2F;inner_bg2.png] ABOUT PRADHAN MANTRI JAN AROGYA YOJANA (PM-JAY) * Home [index.php] * About Pradhan Mantri Jan Arogya Yojana (PM-JAY) * About Ayushman Bharat * Background * Criteria&#x2F;Coverage * Implementation * Financing * Hospital Empanelment * Packages and Rates * IT System * Awareness * Support Systems * Convergence AYUSHMAN BHARAT Ayushman Bharat, a flagship scheme of Government of India, was launched as",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "NLM",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3093249%2F&requestId=fsh-d3151f01-dd6d-5e3f-9229-956019b4343d&contentId=fc-3137891f-fc01-5678-ba83-c6d6aaa910de&hId=bd9e0969b148275c4ce053ddc2c6b8a4bba1e21e1f6833cb6ef7cee9e023ed9b"
-
-                                        }
-
-                                    ],
-
-                                    "content": "Skip to main content [/static/img/us_flag.svg] An official website of the United States government Here's how you know Here's how you know [/static/img/icon-dot-gov.svg] Official websites use .gov A .gov website belongs to an official government organization in the United States. [/static/img/icon-https.svg] Secure .gov websites use HTTPS A lock ( Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. NCBI home page [/static/img/ncbi-logos/nih-nlm-ncbi--white.svg] [https://www.ncbi.nlm.nih.gov/] Search Log in * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] * Log out Search… Search NCBI Primary site navigation Close [/static/img/usa-icons/close.svg] Search Search [data:] Logged in as: * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] Log in Search PMC Full-Text Archive Search in PMC Search [/static/img/usa-icons-bg/search--white.svg] * Advanced Search [https://www.ncbi.nlm.nih.gov/pmc/advanced/] * Journal List [/journals/] * User Guide [/about/userguide/] * * https://doi.org/10.1016/S0140-6736(10)61894-6 * pdf/nihms292456.pdf * * * PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer [/about/disclaimer/] | PMC Copyright Notice [/about/copyright/] NIHPA Author Manuscripts logo [https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-nihpa.png] Lancet . Author manuscript; available in PMC: 2011 May 12. Published in final edited form as: Lancet. 2011 Jan 10;377(9764):505–515. doi: 10.1016/S0140-6736(10)61894-6 [https://doi.org/10.1016/S0140-6736(10)61894-6] * Search in PMC [https://www.ncbi.nlm.nih.gov/pmc/?term=%22Lancet%22%5Bjour%5D] * Search in PubMed [https://pubmed.ncbi.nlm.nih.gov/?term=%22Lancet%22%5Bjour%5D] * View in NLM Catalog [https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Lancet%22%5BTitle%20Abbreviation%5D] * Add to search [?term=%22Lancet%22%5Bjour%5D] HEALTH CARE AND EQUITY IN INDIA Yarlini Balarajan [https://pubmed.ncbi.nlm.nih.gov/?term=%22Ba",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                }
-
-                            ]
-
-                        }
-
-                    },
-
-                    "used": []
-
-                }
-
-            ],
-
-            "proActiveSuggestions": [
-
-                {
-
-                    "utterance": "purchase TV",
-
-                    "countDisplayedAnswers": {
-
-                        "countDialogTasks": 0,
-
-                        "countFaqs": 0,
-
-                        "countWebPages": 0,
-
-                        "countFiles": 0,
-
-                        "countAnswers": 0,
-
-                        "countFromNonNativeDataSource": 0
-
-                    },
-
-                    "used": [
-
-                        {
-
-                            "targetType": "DialogTask",
-
-                            "target": {
-
-                                "positionId": "dg-3afuyhf79k",
-
-                                "name": "purchase TV",
-
-                                "runType": "assist",
-
-                                "status": "completed",
-
-                                "startTime": "2025-03-27T07:08:49.339Z",
-
-                                "endTime": "2025-03-27T07:09:40.284Z",
-
-                                "suggestionsCount": {
-
-                                    "tellCustomer": 1,
-
-                                    "askCustomer": 2,
-
-                                    "tellUsed": 0,
-
-                                    "askUsed": 0
-
-                                },
-
-                                "linksClicked": []
-
-                            },
-
-                            "feedback": {
-
-                                "response": "Up",
-
-                                "reasonCode": [],
-
-                                "comment": ""
-
-                            }
-
-                        }
-
-                    ]
-
-                },
-
-                {
-
-                    "displayTime": "2025-03-27T07:09:43.222Z",
-
-                    "utterance": "{\"type\":\"template\",\"payload\":{\"template_type\":\"quick_replies\",\"text\":\"Which TV would you like to buy ?\",\"quick_replies\":[{\"content_type\":\"text\",\"title\":\"Samsung\",\"payload\":\"Samsung\"},{\"content_type\":\"text\",\"title\":\"Sansui\",\"payload\":\"Sansui\"},{\"content_type\":\"text\",\"title\":\"LG\",\"payload\":\"LG\"},{\"content_type\":\"text\",\"title\":\"Onida\",\"payload\":\"Onida\"},{\"content_type\":\"text\",\"title\":\"Lava\",\"payload\":\"Lava\"}]}}",
-
-                    "countDisplayedAnswers": {
-
-                        "countDialogTasks": 1,
-
-                        "countFaqs": 0,
-
-                        "countWebPages": 0,
-
-                        "countFiles": 0,
-
-                        "countAnswers": 0,
-
-                        "countFromNonNativeDataSource": 0
-
-                    },
-
-                    "suggestions": {
-
-                        "dialogs": [
-
-                            {
-
-                                "name": "purchase TV"
-
-                            }
-
-                        ]
-
-                    },
-
-                    "used": []
-
-                }
-
-            ]
-
-        },
-
-        {
-
-            "conversationID": "one",
-
-            "botSessionID": "67e4faec5622dd06277ce9a6",
-
-            "channel": "chat",
-
-            "segmentID": "ac-71373a9-7ed4-44ed-add2-bb87b4d853ce",
-
-            "segmentStartTime": "2025-03-27T07:14:52.453Z",
-
-            "segmentEndTime": "2025-03-27T07:17:03.479Z",
-
-            "countScrollUp": 2,
-
-            "countScrollDn": 1,
-
-            "agent": {
-
-                "agentId": "a-m8r0qfq8"
-
-            },
-
-            "tags": [
-
-                {
-
-                    "type": "message",
-
-                    "name": "MessageKey",
-
-                    "value": "MessageKeyVALUE",
-
-                    "messageID": "ms-48d4e698-a58f-5614-8dac-7b64830d266c",
-
-                    "createdAt": "2025-03-27T07:14:54.054Z"
-
-                },
-
-                {
-
-                    "type": "session",
-
-                    "name": "SessionKey",
-
-                    "value": "SessionKeyVALUE",
-
-                    "createdAt": "2025-03-27T07:14:52.901Z"
-
-                }
-
-            ],
-
-            "summary": {
-
-                "summaryId": "smr-36447c3-6b19-4031-b308-0a16ba70cdb9",
-
-                "participant": {
-
-                    "identity": "a-m8r0qfq8",
-
-                    "type": "AGENT",
-
-                    "startTime": [],
-
-                    "endTime": []
-
-                },
-
-                "type": "final",
-
-                "summary": "The customer initiated the conversation by requesting to check their account balance. The agent confirmed they could assist and asked for the account number. The customer provided the account number, and the agent successfully retrieved and shared the account balance with the customer.",
-
-                "editedSummary": "",
-
-                "isError": **false**,
-
-                "isDisabled": **false**,
-
-                "isEdited": **false**,
-
-                "time": 3.724,
-
-                "exeStartTime": 1743059823434,
-
-                "positionId": "dg-g7jtkdzfn3",
-
-                "sumSubTime": 1743059827158,
-
-                "feedback": {
-
-                    "response": "Up",
-
-                    "reasonCode": [],
-
-                    "comment": ""
-
-                }
-
-            },
-
-            "agentActions": [
-
-                {
-
-                    "actionType": "SearchBarEntry",
-
-                    "action": {
-
-                        "searchPhrase": "the health ",
-
-                        "typingStartTime": "2025-03-27T07:15:56.154Z",
-
-                        "executionStartTime": "2025-03-27T07:16:20.916Z",
-
-                        "displayTime": "2025-03-27T07:16:23.527Z",
-
-                        "suggestionsShown": [
-
-                            "Healthcare System in India, Healthcare India - IBEF",
-
-                            "Which Insurance Companies offer Health Insurance Policies in India?",
-
-                            "Whether pre-existing diseases are covered under a health insurance policy?"
-
-                        ],
-
-                        "suggestionUsed": 0,
-
-                        "phraseInput": "the health",
-
+                        "searchPhrase": "how to cancel pizza",
+                        "typingStartTime": "2025-03-17T10:25:16.664Z",
+                        "executionStartTime": "2025-03-17T10:25:21.823Z",
+                        "displayTime": "2025-03-17T10:25:24.379Z",
+                        "suggestionsShown": [],
                         "correctionsPresented": 0,
-
                         "correctionsAccepted": 0,
-
                         "countDisplayedAnswers": {
-
-                            "countDialogTasks": 0,
-
-                            "countFaqs": 5,
-
-                            "countWebPages": 5,
-
-                            "countFiles": 2,
-
+                            "countDialogTasks": 1,
+                            "countFaqs": 0,
+                            "countWebPages": 0,
+                            "countFiles": 0,
                             "countAnswers": 0,
-
                             "countFromNonNativeDataSource": 0
-
                         },
-
                         "suggestions": {
-
-                            "faqs": [
-
+                            "dialogs": [
                                 {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "What is Health Insurance Business?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "What is Health Insurance Business?",
-
-                                    "positionId": "dg-ocauktyzxr",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "How Cost of pre-insurance health checkup is treated by Life, General and Health Insurers:",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "How Cost of pre-insurance health checkup is treated by Life, General and Health Insurers:",
-
-                                    "positionId": "dg-de62u38hqm",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "What is the maximum age at entry for taking a Health Insurance policy? Whether Health Insurance is available lifelong once taken a policy?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "What is the maximum age at entry for taking a Health Insurance policy? Whether Health Insurance is available lifelong once taken a policy?",
-
-                                    "positionId": "dg-gvh4kxduz4",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Are there any principles on charging premium for Health Insurance coverage?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "Are there any principles on charging premium for Health Insurance coverage?",
-
-                                    "positionId": "dg-0tfd1rmvx5",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Whether pre-existing diseases are covered under a health insurance policy?",
-
-                                            "url": "",
-
-                                            "sourceType": "searchassist"
-
-                                        }
-
-                                    ],
-
-                                    "content": "Whether pre-existing diseases are covered under a health insurance policy?",
-
-                                    "positionId": "dg-46e9q4qbtu",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
+                                    "name": "cancel Pizza"
                                 }
-
-                            ],
-
-                            "web": [
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Healthcare in India - Wikipedia",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHealthcare_in_India&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-6a06e2f8-90d0-4786-95bc-e8a27c3ff07e&hId=30122dfa0b72cdab55da0510bfd66f1aa35a9d21360139e68dcac9c97d914579"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-1t7l31zscl",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Healthcare System in India, Healthcare India - IBEF",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fhealthcare-india&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-00b44114-9bde-44ae-8084-9bb999676e8c&hId=fa59bff40db0b1a2c4b7c09105a39b74ba54f1a10dc966fef3ecca0af51898eb"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-qsszke3j3d",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Wikipedia:Contents - Wikipedia",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3AContents&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-1760b4b0-e054-4fc3-a923-3b95753054a8&hId=d1cfaa3793de681a6ebad627658ed148720743724ddd17cffad120ab3a8e9a82"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-2y86t0d3s6",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "India's Ayush Industry & National AYUSH Mission | IBEF",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fayush&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-9a13b295-68c5-4557-94ba-81b6b7f07e90&hId=7346e1f933e36977a8ae8d9783bfd44ddb2c5f02e12cbecbff7584c8ec6d8880"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-gwthaiix84",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "Wikipedia:Community portal - Wikipedia",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3ACommunity_portal&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-bf4bd8f3-cc7a-4576-998c-ea48c3e81c13&hId=3a9d3d5134bf24896d929efe396c8b3e4d69051db46a5c00439769654df9b19f"
-
-                                        }
-
-                                    ],
-
-                                    "content": "",
-
-                                    "positionId": "dg-aeb7kjnub",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                }
-
-                            ],
-
-                            "file": [
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "PM",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fnha.gov.in%2FPM-JAY&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-5a9dc6d5-3eef-5401-94e8-713cf93ea19d&hId=f8fd33572eeb20cd65b7866fb184fbb911c18f9888ee2ae277402afac1d6490d"
-
-                                        }
-
-                                    ],
-
-                                    "content": "flag [img&#x2F;resources&#x2F;flag.jpg] भारत सरकार GOVERNMENT OF INDIA [https:&#x2F;&#x2F;www.mygov.in&#x2F;] * 14555 [tel:14555] * Screen Reader Access [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;screen_reader] * Skip to main content * &#x2F;sitemap.xml * https:&#x2F;&#x2F;www.facebook.com&#x2F;AyushmanBharatGoI * https:&#x2F;&#x2F;twitter.com&#x2F;ayushmannha * https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCkd7w2rww0HQB4lZ-l3dB6g * https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;ayushmanbharatgoi&#x2F; * https:&#x2F;&#x2F;www.instagram.com&#x2F;ayushmanbharatnha&#x2F; * Quora image [img&#x2F;gallery&#x2F;quora.png] [https:&#x2F;&#x2F;www.quora.com&#x2F;profile&#x2F;Ayushman-Bharat-9?ch=3&amp;share=25d97ee9&amp;srid=bdecg] * A+ [javascript:;] * A [javascript:;] * A- [javascript:;] NHA [img&#x2F;resources&#x2F;logo.svg] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] IYC [img&#x2F;resources&#x2F;iyc.png] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] NATIONAL &lt;span class=\"highlightText\">HEALTH&lt;/span> AUTHORITY PM-JAY [img&#x2F;resources&#x2F;pmjay.png] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * index.php * Home [https:&#x2F;&#x2F;nha.gov.in&#x2F;] * About Us * NHA [NHA.php] * Who&#x27;s who [Whos-who.php] * PM-JAY [PM-JAY.php] * ABDM [NDHM.php] * PM-JAY [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * ABDM [https:&#x2F;&#x2F;ndhm.gov.in&#x2F;] * Blog [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;Blogs-list] * Connect with Us * Careers [Careers.php] * Contact Us [Contact-Us.php] * Tenders and Procurement [Tenders-Procurement.php] * Circulars [circulars.php] * PMJAY Dashboard [https:&#x2F;&#x2F;dashboard.pmjay.gov.in&#x2F;pmj&#x2F;#&#x2F;] * ABDM Dashboard [https:&#x2F;&#x2F;dashboard.abdm.gov.in&#x2F;abdm&#x2F;] * PMJAY for 70+ * Enrol for PMJAY for 70+ [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * List of Empanelled Hospitals [https:&#x2F;&#x2F;hem.nha.gov.in&#x2F;search] * FAQs [img&#x2F;resources&#x2F;English_FAQs_related_to_the_benefits_for_senior_citizens.pdf] * How to Make Ayushman Card [https:&#x2F;&#x2F;youtube.com&#x2F;playlist?list=PLYcj0BpCoCc4yDCm7A4xxsjkg4gmxnWre&amp;si=6B2-_rj9TFB0fA-k] * Give a Missed Call [missedcall.php] * Am I Eligible [img&#x2F;resources&#x2F;am-i-eligible.png] [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * find1 [img&#x2F;resources&#x2F;find1.png] [https:&#x2F;&#x2F;hospitals.pmjay.gov.in&#x2F;Search&#x2F;empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew] * Grievance Portal [img&#x2F;resources&#x2F;grivence.png] [https:&#x2F;&#x2F;cgrms.pmjay.gov.in&#x2F;GRMS&#x2F;] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;MAP&#x2F;images&#x2F;icons&#x2F;inner_bg2.png] ABOUT PRADHAN MANTRI JAN AROGYA YOJANA (PM-JAY) * Home [index.php] * About Pradhan Mantri Jan Arogya Yojana (PM-JAY) * About Ayushman Bharat * Background * Criteria&#x2F;Coverage * Implementation * Financing * Hospital Empanelment * Packages and Rates * IT System * Awareness * Support Systems * Convergence AYUSHMAN BHARAT Ayushman Bharat, a flagship scheme of Government of India, was launched as",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                },
-
-                                {
-
-                                    "sources": [
-
-                                        {
-
-                                            "title": "NLM",
-
-                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3093249%2F&requestId=fsh-3ee85986-9719-5f2f-af67-490b279bd14c&contentId=fc-3137891f-fc01-5678-ba83-c6d6aaa910de&hId=f4ac9a56d3759aa3ec75c768cfb2c7dff73879dd4bec6169adc1438f20d7d545"
-
-                                        }
-
-                                    ],
-
-                                    "content": "Skip to main content [/static/img/us_flag.svg] An official website of the United States government Here's how you know Here's how you know [/static/img/icon-dot-gov.svg] Official websites use .gov A .gov website belongs to an official government organization in the United States. [/static/img/icon-https.svg] Secure .gov websites use HTTPS A lock ( Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. NCBI home page [/static/img/ncbi-logos/nih-nlm-ncbi--white.svg] [https://www.ncbi.nlm.nih.gov/] Search Log in * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] * Log out Search… Search NCBI Primary site navigation Close [/static/img/usa-icons/close.svg] Search Search [data:] Logged in as: * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] Log in Search PMC Full-Text Archive Search in PMC Search [/static/img/usa-icons-bg/search--white.svg] * Advanced Search [https://www.ncbi.nlm.nih.gov/pmc/advanced/] * Journal List [/journals/] * User Guide [/about/userguide/] * * https://doi.org/10.1016/S0140-6736(10)61894-6 * pdf/nihms292456.pdf * * * PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer [/about/disclaimer/] | PMC Copyright Notice [/about/copyright/] NIHPA Author Manuscripts logo [https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-nihpa.png] Lancet . Author manuscript; available in PMC: 2011 May 12. Published in final edited form as: Lancet. 2011 Jan 10;377(9764):505–515. doi: 10.1016/S0140-6736(10)61894-6 [https://doi.org/10.1016/S0140-6736(10)61894-6] * Search in PMC [https://www.ncbi.nlm.nih.gov/pmc/?term=%22Lancet%22%5Bjour%5D] * Search in PubMed [https://pubmed.ncbi.nlm.nih.gov/?term=%22Lancet%22%5Bjour%5D] * View in NLM Catalog [https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Lancet%22%5BTitle%20Abbreviation%5D] * Add to search [?term=%22Lancet%22%5Bjour%5D] HEALTH CARE AND EQUITY IN INDIA Yarlini Balarajan [https://pubmed.ncbi.nlm.nih.gov/?term=%22Ba",
-
-                                    "appInfo": {
-
-                                        "appName": "Prod SA",
-
-                                        "featureFlag": "external",
-
-                                        "product": "searchai",
-
-                                        "_id": "67d2bf2595de4b4d5bb32e84",
-
-                                        "displayLines": 4
-
-                                    }
-
-                                }
-
                             ]
-
                         }
-
                     },
-
-                    "used": [
-
-                        {
-
-                            "targetType": "faq",
-
-                            "positionId": "dg-ocauktyzxr",
-
-                            "target": {
-
-                                "title": "What is Health Insurance Business?"
-
-                            },
-
-                            "feedback": {
-
-                                "response": "Up",
-
-                                "reasonCode": [],
-
-                                "comment": ""
-
-                            }
-
-                        }
-
-                    ]
-
-                }
-
-            ],
-
-            "proActiveSuggestions": [
-
-                {
-
-                    "utterance": "purchase TV",
-
-                    "countDisplayedAnswers": {
-
-                        "countDialogTasks": 0,
-
-                        "countFaqs": 0,
-
-                        "countWebPages": 0,
-
-                        "countFiles": 0,
-
-                        "countAnswers": 0,
-
-                        "countFromNonNativeDataSource": 0
-
-                    },
-
-                    "used": [
-
-                        {
-
-                            "targetType": "DialogTask",
-
-                            "target": {
-
-                                "positionId": "dg-vfi5an2rka",
-
-                                "name": "purchase TV",
-
-                                "runType": "assist",
-
-                                "status": "completed",
-
-                                "startTime": "2025-03-27T07:14:54.124Z",
-
-                                "endTime": "2025-03-27T07:15:04.231Z",
-
-                                "suggestionsCount": {
-
-                                    "tellCustomer": 1,
-
-                                    "askCustomer": 2,
-
-                                    "tellUsed": 0,
-
-                                    "askUsed": 0
-
-                                },
-
-                                "linksClicked": []
-
-                            },
-
-                            "feedback": {
-
-                                "response": "Down",
-
-                                "reasonCode": [
-
-                                    "Time Taking"
-
-                                ],
-
-                                "comment": "Time taking feed back clicked thumbs downfor the dialog in the assist tab"
-
-                            }
-
-                        }
-
-                    ]
-
-                },
-
-                {
-
-                    "displayTime": "2025-03-27T07:15:07.120Z",
-
-                    "utterance": "{\"type\":\"template\",\"payload\":{\"template_type\":\"quick_replies\",\"text\":\"Which TV would you like to buy ?\",\"quick_replies\":[{\"content_type\":\"text\",\"title\":\"Samsung\",\"payload\":\"Samsung\"},{\"content_type\":\"text\",\"title\":\"Sansui\",\"payload\":\"Sansui\"},{\"content_type\":\"text\",\"title\":\"LG\",\"payload\":\"LG\"},{\"content_type\":\"text\",\"title\":\"Onida\",\"payload\":\"Onida\"},{\"content_type\":\"text\",\"title\":\"Lava\",\"payload\":\"Lava\"}]}}",
-
-                    "countDisplayedAnswers": {
-
-                        "countDialogTasks": 1,
-
-                        "countFaqs": 0,
-
-                        "countWebPages": 0,
-
-                        "countFiles": 0,
-
-                        "countAnswers": 0,
-
-                        "countFromNonNativeDataSource": 0
-
-                    },
-
-                    "suggestions": {
-
-                        "dialogs": [
-
-                            {
-
-                                "name": "purchase TV"
-
-                            }
-
-                        ]
-
-                    },
-
                     "used": []
-
                 }
-
-            ]
-
+            ],
+            "proActiveSuggestions": []
         },
-
         {
-
- 
-
+            "conversationID": "c-9bde871-c8c1-413a-a09d-ee3d42dxxxxx",
+            "botSessionID": "67d80421900b47b9f6exxxxx",
+            "channel": "chat",
+            "segmentID": "ac-79964b1-ec26-4cc8-91a5-eda38c3xxxxx",
+            "segmentStartTime": "2025-03-17T11:15:06.624Z",
+            "segmentEndTime": "2025-03-17T11:15:39.000Z",
+            "queueInfo": {
+                "queueId": "qu-42ca9c1-e2ad-4d32-8bb7-002534cxxxxx",
+                "queueName": "Default Queue"
+            },
+            "countScrollUp": 0,
+            "countScrollDn": 0,
+            "agent": {
+                "agentName": "smartAssist UAT",
+                "agentId": "u-34c7ca6b-4c3d-5a13-9551-6aa4cd8xxxxx"
+            },
+            "tags": [],
+            "agentActions": [
+                {
+                    "actionType": "SearchBarEntry",
+                    "action": {
+                        "searchPhrase": "Healthcare System in India, Healthcare India - IBEF",
+                        "typingStartTime": "2025-03-17T11:15:09.481Z",
+                        "executionStartTime": "2025-03-17T11:15:14.103Z",
+                        "displayTime": "2025-03-17T11:15:17.460Z",
+                        "suggestionsShown": [],
+                        "correctionsPresented": 0,
+                        "correctionsAccepted": 0,
+                        "countDisplayedAnswers": {
+                            "countDialogTasks": 0,
+                            "countFaqs": 4,
+                            "countWebPages": 5,
+                            "countFiles": 2,
+                            "countAnswers": 0,
+                            "countFromNonNativeDataSource": 0
+                        },
+                        "suggestions": {
+                            "faqs": [
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Which Insurance Companies offer Health Insurance Policies in India?",
+                                            "url": "",
+                                            "sourceType": "searchassist"
+                                        }
+                                    ],
+                                    "content": "Which Insurance Companies offer Health Insurance Policies in India?",
+                                    "positionId": "dg-pglquh2pbx",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Resend OTP",
+                                            "url": "",
+                                            "sourceType": "searchassist"
+                                        }
+                                    ],
+                                    "content": "Resend OTP",
+                                    "positionId": "dg-9i39irwiag",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "What is AYUSH Hospital?",
+                                            "url": "",
+                                            "sourceType": "searchassist"
+                                        }
+                                    ],
+                                    "content": "What is AYUSH Hospital?",
+                                    "positionId": "dg-xjzy6n95kg",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "What is AYUSH Treatment? Whether AYUSH Treatment is allowed in all Health Insurance Policies?",
+                                            "url": "",
+                                            "sourceType": "searchassist"
+                                        }
+                                    ],
+                                    "content": "What is AYUSH Treatment? Whether AYUSH Treatment is allowed in all Health Insurance Policies?",
+                                    "positionId": "dg-utfi6fjtiw",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                }
+                            ],
+                            "web": [
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Healthcare System in India, Healthcare India - IBEF",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fhealthcare-india&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-00b44114-9bde-44ae-8084-9bb999676e8c&hId=adb4d5297729eeabf1b91cb37730608a2f5ed1ab70ac734a5057759dd44d24a2"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-gnoieglx7c",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Healthcare in India - Wikipedia",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHealthcare_in_India&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-6a06e2f8-90d0-4786-95bc-e8a27c3ff07e&hId=fb3b87d5ae285811204207f2ea0318e590484a2112de2f7849ce548f57c6ddce"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-9mwsqx833e",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "India's Ayush Industry & National AYUSH Mission | IBEF",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fayush&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-9a13b295-68c5-4557-94ba-81b6b7f07e90&hId=42f45f215adc41b9ba75f1d2d0437135725d4e48f2914d04f1bb3260e53f46b9"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-1rsi3f2n2u",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Banking in India: Growth, Trends, and Opportunities | IBEF",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fbanking-india&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-22a47b6a-e277-4a0a-9461-b4d5a2892fa2&hId=4978329e71ccb3ad3e8a3451ea088187241c6a85e0044855fc0201755dae472e"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-3q2p1mvk4m",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf07xxxxx",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Indian Agriculture Sector, Farming in India | IBEF",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fagriculture-india&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-ce79586c-3d4e-48a4-899c-7b149f2e5341&hId=f4fecdefb080376d137e983bec18f0fee315b448cc3e5ad2fe5aa70127feecf0"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-vdumairrvv",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf0767fc4",
+                                        "displayLines": 4
+                                    }
+                                }
+                            ],
+                            "file": [
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "PM",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fnha.gov.in%2FPM-JAY&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-5a9dc6d5-3eef-5401-94e8-713cf93ea19d&hId=860db2eb281f6984a42fc235a9bb99250bb9b61804012bc49d428f98e5402e02"
+                                        }
+                                    ],
+                                    "content": "flag [img&#x2F;resources&#x2F;flag.jpg] भारत सरकार GOVERNMENT OF <span class=\"highlightText\">INDIA</span> [https:&#x2F;&#x2F;www.mygov.in&#x2F;] * 14555 [tel:14555] * Screen Reader Access [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;screen_reader] * Skip to main content * &#x2F;sitemap.xml * https:&#x2F;&#x2F;www.facebook.com&#x2F;AyushmanBharatGoI * https:&#x2F;&#x2F;twitter.com&#x2F;ayushmannha * https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCkd7w2rww0HQB4lZ-l3dB6g * https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;ayushmanbharatgoi&#x2F; * https:&#x2F;&#x2F;www.instagram.com&#x2F;ayushmanbharatnha&#x2F; * Quora image [img&#x2F;gallery&#x2F;quora.png] [https:&#x2F;&#x2F;www.quora.com&#x2F;profile&#x2F;Ayushman-Bharat-9?ch=3&amp;share=25d97ee9&amp;srid=bdecg] * A+ [javascript:;] * A [javascript:;] * A- [javascript:;] NHA [img&#x2F;resources&#x2F;logo.svg] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] IYC [img&#x2F;resources&#x2F;iyc.png] [https:&#x2F;&#x2F;nha.gov.in&#x2F;] NATIONAL HEALTH AUTHORITY PM-JAY [img&#x2F;resources&#x2F;pmjay.png] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * index.php * Home [https:&#x2F;&#x2F;nha.gov.in&#x2F;] * About Us * NHA [NHA.php] * Who&#x27;s who [Whos-who.php] * PM-JAY [PM-JAY.php] * ABDM [NDHM.php] * PM-JAY [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;] * ABDM [https:&#x2F;&#x2F;ndhm.gov.in&#x2F;] * Blog [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;Blogs-list] * Connect with Us * Careers [Careers.php] * Contact Us [Contact-Us.php] * Tenders and Procurement [Tenders-Procurement.php] * Circulars [circulars.php] * PMJAY Dashboard [https:&#x2F;&#x2F;dashboard.pmjay.gov.in&#x2F;pmj&#x2F;#&#x2F;] * ABDM Dashboard [https:&#x2F;&#x2F;dashboard.abdm.gov.in&#x2F;abdm&#x2F;] * PMJAY for 70+ * Enrol for PMJAY for 70+ [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * List of Empanelled Hospitals [https:&#x2F;&#x2F;hem.nha.gov.in&#x2F;search] * FAQs [img&#x2F;resources&#x2F;English_FAQs_related_to_the_benefits_for_senior_citizens.pdf] * How to Make Ayushman Card [https:&#x2F;&#x2F;youtube.com&#x2F;playlist?list=PLYcj0BpCoCc4yDCm7A4xxsjkg4gmxnWre&amp;si=6B2-_rj9TFB0fA-k] * Give a Missed Call [missedcall.php] * Am I Eligible [img&#x2F;resources&#x2F;am-i-eligible.png] [https:&#x2F;&#x2F;beneficiary.nha.gov.in&#x2F;] * find1 [img&#x2F;resources&#x2F;find1.png] [https:&#x2F;&#x2F;hospitals.pmjay.gov.in&#x2F;Search&#x2F;empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew] * Grievance Portal [img&#x2F;resources&#x2F;grivence.png] [https:&#x2F;&#x2F;cgrms.pmjay.gov.in&#x2F;GRMS&#x2F;] [https:&#x2F;&#x2F;pmjay.gov.in&#x2F;MAP&#x2F;images&#x2F;icons&#x2F;inner_bg2.png] ABOUT PRADHAN MANTRI JAN AROGYA YOJANA (PM-JAY) * Home [index.php] * About Pradhan Mantri Jan Arogya Yojana (PM-JAY) * About Ayushman Bharat * Background * Criteria&#x2F;Coverage * Implementation * Financing * Hospital Empanelment * Packages and Rates * IT System * Awareness * Support Systems * Convergence AYUSHMAN BHARAT Ayushman Bharat, a flagship scheme of Government of India, was launched as",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf0767fc4",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "NLM",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3093249%2F&requestId=fsh-93c6b49f-84dc-5bd5-b55a-170b7666f7b4&contentId=fc-3137891f-fc01-5678-ba83-c6d6aaa910de&hId=9d86cc8e9fe2aded095a80f10584d78a2c1ba78a53c780156a7be7539552f35a"
+                                        }
+                                    ],
+                                    "content": "Skip to main content [/static/img/us_flag.svg] An official website of the United States government Here's how you know Here's how you know [/static/img/icon-dot-gov.svg] Official websites use .gov A .gov website belongs to an official government organization in the United States. [/static/img/icon-https.svg] Secure .gov websites use HTTPS A lock ( Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. NCBI home page [/static/img/ncbi-logos/nih-nlm-ncbi--white.svg] [https://www.ncbi.nlm.nih.gov/] Search Log in * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] * Log out Search… Search NCBI Primary site navigation Close [/static/img/usa-icons/close.svg] Search Search [data:] Logged in as: * Dashboard [https://www.ncbi.nlm.nih.gov/myncbi/] * Publications [https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/] * Account settings [https://www.ncbi.nlm.nih.gov/account/settings/] Log in Search PMC Full-Text Archive Search in PMC Search [/static/img/usa-icons-bg/search--white.svg] * Advanced Search [https://www.ncbi.nlm.nih.gov/pmc/advanced/] * Journal List [/journals/] * User Guide [/about/userguide/] * * https://doi.org/10.1016/S0140-6736(10)61894-6 * pdf/nihms292456.pdf * * * PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer [/about/disclaimer/] | PMC Copyright Notice [/about/copyright/] NIHPA Author Manuscripts logo [https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-nihpa.png] Lancet . Author manuscript; available in PMC: 2011 May 12. Published in final edited form as: Lancet. 2011 Jan 10;377(9764):505–515. doi: 10.1016/S0140-6736(10)61894-6 [https://doi.org/10.1016/S0140-6736(10)61894-6] * Search in PMC [https://www.ncbi.nlm.nih.gov/pmc/?term=%22Lancet%22%5Bjour%5D] * Search in PubMed [https://pubmed.ncbi.nlm.nih.gov/?term=%22Lancet%22%5Bjour%5D] * View in NLM Catalog [https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Lancet%22%5BTitle%20Abbreviation%5D] * Add to search [?term=%22Lancet%22%5Bjour%5D] HEALTH CARE AND EQUITY IN INDIA Yarlini Balarajan [https://pubmed.ncbi.nlm.nih.gov/?term=%22Ba",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf0767fc4",
+                                        "displayLines": 4
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "used": []
+                },
+                {
+                    "actionType": "SearchBarEntry",
+                    "action": {
+                        "searchPhrase": "tech",
+                        "typingStartTime": "2025-03-17T11:15:22.258Z",
+                        "executionStartTime": "2025-03-17T11:15:26.600Z",
+                        "displayTime": "2025-03-17T11:15:28.630Z",
+                        "suggestionsShown": [],
+                        "correctionsPresented": 0,
+                        "correctionsAccepted": 0,
+                        "countDisplayedAnswers": {
+                            "countDialogTasks": 0,
+                            "countFaqs": 0,
+                            "countWebPages": 2,
+                            "countFiles": 0,
+                            "countAnswers": 0,
+                            "countFromNonNativeDataSource": 0
+                        },
+                        "suggestions": {
+                            "web": [
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Wikipedia:Community portal - Wikipedia",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3ACommunity_portal&requestId=fsh-68c23375-5fa5-53e9-92fb-6849d8fbd165&contentId=fc-bf4bd8f3-cc7a-4576-998c-ea48c3e81c13&hId=a8a1c6d72033531d6606bf3e33cc456432a8c2324aba6d955fbe3b9187a8e53b"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-f6y2w65hix",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf0767fc4",
+                                        "displayLines": 4
+                                    }
+                                },
+                                {
+                                    "sources": [
+                                        {
+                                            "title": "Banking in India: Growth, Trends, and Opportunities | IBEF",
+                                            "url": "https://searchassist.kore.ai/searchassistapi/redirect?rurl=https%3A%2F%2Fwww.ibef.org%2Findustry%2Fbanking-india&requestId=fsh-68c23375-5fa5-53e9-92fb-6849d8fbd165&contentId=fc-22a47b6a-e277-4a0a-9461-b4d5a2892fa2&hId=d2b14bb16e7ffc694d65100e255c7aad8ebc83b55d9b4563ea6949888b8ff513"
+                                        }
+                                    ],
+                                    "content": "",
+                                    "positionId": "dg-hinwmkj0fm",
+                                    "appInfo": {
+                                        "appName": "Internal",
+                                        "featureFlag": "external",
+                                        "product": "searchai",
+                                        "_id": "6789be1a3fa7c53cf0767fc4",
+                                        "displayLines": 4
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "used": []
+                }
+            ],
+            "proActiveSuggestions": []
+        }
+    ],
+    "hasMore": false
+}
 ```
 
-
-
-
- 
-
-
-
-
 ## **Response Body Parameters**
-
 
 <table>
   <tr>

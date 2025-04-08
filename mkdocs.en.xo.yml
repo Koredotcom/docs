@@ -187,6 +187,9 @@ nav:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
+    - Agent Node:
+        - Overview: automation/agent node/agent-node.md
+        - Prompt Setup: automation/agent node/prompt-setup.md
     - Use Cases:
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 

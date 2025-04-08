@@ -93,6 +93,8 @@ Supervisors and agents can sort Queues, Agents, and Interaction tabs to manage w
 
 <hr>
 
+## v11.11.1 March 15, 2025
+
 <u> Patch Release </u>
 
 This update include only bug fixes.
