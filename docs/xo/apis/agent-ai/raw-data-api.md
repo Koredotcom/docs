@@ -21,8 +21,6 @@ This updated version of the Raw Data API offers the following additional convers
 * Total number of words suggested for correction by the agent
 * Total number of auto-corrected words accepted by the agent
 
-
-
 <table>
   <tr>
    <td>Method 
