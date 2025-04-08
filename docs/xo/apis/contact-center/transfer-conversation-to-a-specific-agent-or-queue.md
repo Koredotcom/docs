@@ -4,7 +4,7 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 
 | **Method**   | POST                                                                                      |
 |----------|-------------------------------------------------------------------------------------------|
-| **Endpoint**| [https://{{host}}/agentassist/api/v1/public/%7BstreamID%7D/assign-conversation](https://{{host}}/agentassist/api/v1/public/{streamID}/assign-conversation) |
+| **Endpoint**| [https://{{host}}/agentassist/api/v1/public/{{streamID}}/assign-conversation](https://{{host}}/agentassist/api/v1/public/{streamID}/assign-conversation) |
 | **Content Type** | `application/json`                                                                          |
 | **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Routing                                                                                   |
@@ -33,7 +33,7 @@ Here is the HTML table converted to Markdown format:
 **Transfer to Agent**:
 
 ```
-curl --location 'http://localhost/agentassist/api/v1/public/st-a0ec5267-a58a-5fbb-ab0e-e27ebc35xxxx/assign-conversation' \
+curl --location 'http://host/agentassist/api/v1/public/st-a0ec5267-a58a-5fbb-ab0e-e27ebc35xxxx/assign-conversation' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUwZmViYWEzLTc0M2YtNTViMy04OTU2LTcxOGU5NmY2YmI5MCJ9.
 W42GSwz5ibjk_vAx5Ukr_Q5Q4-O_zGn_jPmZuN8xxxx' \
 --header 'accountid: 650d9eb6da96d0bc0d23xxxx' \

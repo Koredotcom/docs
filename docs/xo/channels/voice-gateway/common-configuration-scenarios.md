@@ -1,14 +1,14 @@
 # Common Configuration Scenarios in Voice Gateway
 
-Kore.ai Voice Gateway offers several essential configuration options to customize and optimize voice interactions. These configurations enable administrators to fine-tune voice interactions, manage response delays, and create more natural conversational experiences across different languages and use cases.
+Voice Gateway offers several essential configuration options to customize and optimize voice interactions. These configurations enable administrators to fine-tune voice interactions, manage response delays, and create more natural conversational experiences across different languages and use cases.
 
-The common configuration scenarios include: 
+The common configuration scenarios include:
 
-* Speech engine configuration (ASR/TTS) at global, experience flow, and node levels. 
+* Speech engine configuration (ASR/TTS) at global, experience flow, and node levels.
 * Continuous ASR for handling digit strings and identifiers.
 * Bot delay management for response timing.
 * Barge-in controls for handling user interruptions.
-* Automated language detection for multilingual support. 
+* Automated language detection for multilingual support.
 
 
 ## Configure ASR/TTS
@@ -125,7 +125,7 @@ If the bot takes time to respond to a message, you can configure VoiceAI Connect
 
 ### Handle Bot Delay After User Input
 
-The delay is only applied when Kore VG sends a response to the bot and is waiting for the bot's reply. This includes delays at the Entity Node, Confirmation Node, or Message Node with an "On Intent" (User-Bot delay).  
+The delay is only applied when Voice Gateway sends a response to the bot and is waiting for the bot's reply. This includes delays at the Entity Node, Confirmation Node, or Message Node with an "On Intent" (User-Bot delay).  
 <img src="../images/handle-bot-delay.png" alt="Handle Bot Delay" title="Handle Bot Delay" style="border: 1px solid gray; zoom:80%;">
 
 If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
@@ -165,7 +165,7 @@ The following table lists the bot parameters that are used to configure this fea
    <td>Number
    </td>
    <td>IDefines the timeout (in milliseconds) for the bot response before the call is disconnected.
-If no response is received when the timeout expires, Kore VG Will disconnect the Call.
+If no response is received when the timeout expires, Voice Gateway Will disconnect the Call.
 The default is 30 Sec (that is, timeout for bot response).
    </td>
    <td>Yes
@@ -178,7 +178,7 @@ The default is 30 sec
    <td>Number
    </td>
    <td>Defines the timeout (in milliseconds) before a prompt is played to the user.
-If no input is received from the bot when this timeout expires, Kore VG can either play a textual prompt (see the botNoInputSpeech parameter) or an audio file (see the botNoInputUrl parameter) to the user.
+If no input is received from the bot when this timeout expires, Voice Gateway can either play a textual prompt (see the botNoInputSpeech parameter) or an audio file (see the botNoInputUrl parameter) to the user.
    </td>
    <td>Yes
    </td>
@@ -190,7 +190,7 @@ If no input is received from the bot when this timeout expires, Kore VG can eith
    </td>
    <td>Defines the maximum number of recurring timeouts (configured by the botNoInputTimeoutMS parameter) for bot response.
 If this parameter is configured, the timer will be triggered again after playing the no-bot input prompt to the user.
-For example, if the parameter is set to 2, the timeout is set to 1000 ms, and no response is received from the bot, Kore VG  will play the prompt 2 times.
+For example, if the parameter is set to 2, the timeout is set to 1000 ms, and no response is received from the bot, Voice Gateway  will play the prompt 2 times.
    </td>
    <td>Yes
    </td>
@@ -233,7 +233,7 @@ Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](http
 
 ### Handle Delay Between Two Message Nodes
 
-Kore VG can only handle delays when it sends a response to the bot and waits for the bot's reply. If a delay occurs, Kore VG can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Kore VG won’t be aware of the delay, and the bot developer must handle it manually.
+Voice Gateway can only handle delays when it sends a response to the bot and waits for the bot's reply. If a delay occurs, Voice Gateway can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Voice Gateway won’t be aware of the delay, and the bot developer must handle it manually.
 
 If a Service Node is placed between two Message nodes (delay observed between two Message nodes):
 This must be managed manually, as the gateway has already received a command to play a message and is not waiting for user input. The gateway will not initiate a delay timer and will wait for the next bot message.

@@ -3,10 +3,10 @@ You can fine-tune intent detection for each language enabled for your Virtual As
 
 1. On the left pane, click **Natural Language** > **NLU Config**.
 2. In the **Engine Tuning** section, you can perform engine tuning by customizing
-    * The Fundamental Meaning model – [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){target="_blank"}.
-    * Machine Learning model – [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations){target="_blank"}.
-    * Knowledge Graph – [Learn more](/docs/xo/automation/knowledge-ai/knowledge-graph-training/#thresholds-configurations){target="_blank"}.
-    * Ranking & Resolver engine – [Learn more](/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration){target="_blank"}.
+    * The Fundamental Meaning model – [Learn more](../training/fundamental-meaning.md){target="_blank"}.
+    * Machine Learning model – [Learn more](../training/machine-learning-engine.md){target="_blank"}.
+    * Knowledge Graph – [Learn more](../../knowledge-ai/knowledge-graph-training.md){target="_blank"}.
+    * Ranking & Resolver engine – [Learn more](../training/ranking-and-resolver.md){target="_blank"}.
 
 Apart from these, under the **Advanced NLP Configurations** section, there are advanced settings that you can use for specific use cases and requirements.
 
@@ -616,7 +616,7 @@ Disable
 ">Suppress_Fallback_On_TaskFulfilment
 </a>
    </td>
-   <td>When enabled, it prevents fallback triggers by ignoring residual user input after a dialog ends with the "fulfilled" reason, specifically when the "End of Task" event is disabled.
+   <td>When enabled, this prevents the platform from triggering the Fallback or Intent Not Found event if a dialog ends with a 'fulfilled' reason and the “End of Task” event is turned off.
    </td>
    <td>FM
    </td>
@@ -883,9 +883,9 @@ When disabled, the platform generates a strict pattern that does ‘exact matchi
 
 ### Suppress_Fallback_On_TaskFulfilment
 
-This feature enables users to prevent the platform from processing additional user input after a dialog ends with a **fulfilled** end reason, especially in scenarios where the **End of Task** event is **disabled** in the Virtual Assistant configuration.
+This feature allows users to stop the platform from triggering a Fallback or Intent Not Found event when a dialog ends with a 'fulfilled' end reason and the **End of Task** event is disabled in the Automation App definition.
 
-This allows users (especially those leveraging **BotKit** for task orchestration) to maintain precise control over dialog closures without unintended **Intent Not Found** triggers.
+This helps platform users (especially those using BotKit to trigger tasks dynamically at the end of a dialog) maintain better control and avoid unexpected **Intent Not Found** triggers.
 
 ## **Spell Correction settings**
 

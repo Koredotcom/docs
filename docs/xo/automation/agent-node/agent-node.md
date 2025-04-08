@@ -1,19 +1,14 @@
 # Agent Node
 
-      - Agent Node:
-        - Overview: automation/agent node/agent-node.md
-        - Prompt Setup: automation/agent node/prompt-setup.md
-
-## Overview
 
 
 The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to build AI-powered, sophisticated, and versatile virtual assistants capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
 ## Benefits
 
-* **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making bot interactions more natural and user-friendly.
+* **Entity Collection**: The Agent Node simplifies the process of gathering entities within a conversation, reducing the need for multiple entity nodes. This streamlined approach enhances the user experience by making virtual assistance interactions more natural and user-friendly.
 * **System Context, Business Rules, and Exit Scenarios**: The Agent Node incorporates system context, business rules, and predefined exit scenarios to ensure accurate and relevant responses. This contextual intelligence helps guide the conversation, handle various user inputs effectively, and maintain alignment with enterprise business rules.
-* **Multilingual Support**: The Agent Node supports both English and non-English bot languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
+* **Multilingual Support**: The Agent Node supports both English and non-English virtual assistance languages, enabling platform users to create virtual assistants that cater to a diverse user base and facilitate multilingual interactions.
 * **Configuration Flexibility**: The Agent Node can be configured like any other node in the XO Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 * **Tool Calling**: Tool calling is the ability to identify when external functions are needed, select appropriate ones, invoke them with correct parameters, process their outputs, and incorporate the results into responses.
 
@@ -45,7 +40,7 @@ Add the node to a dialog task and configure the node's properties and tool calli
 Steps to add an Agent Node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
-2. You can add the Agent Node just like any other node. You can find it in the main list of nodes.  
+2. You can add the **Agent Node** just like any other node. You can find it in the main list of nodes.  
 <img src="../images/canvas-agentnode.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -235,7 +230,7 @@ To define the interruption handling at this node. You can select from the below 
 
 **Custom Tags**
 
-Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
+Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.
 
 <img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
 
@@ -285,7 +280,7 @@ During runtime, the node behaves as follows:
     * The responses required to prompt/inform the user are automatically generated based on the conversation context.
     * The platform drives the conversation until all the defined entities are captured.
 3. **Contextual Intents**
-    * Contextual intents (Dialog or FAQs) recognized from user input continue to be honored according to the Interruption Settings defined in the bot definition.
+    * Contextual intents (Dialog or FAQs) recognized from user input continue to be honored according to the Interruption Settings defined in the virtual assistance definition.
     * Post completion of the contextual intents, the flows can return to the Agent Node.
 4. **Language Model Decision**: The language model analyzes the processed user input and decides whether to respond with generated text or call a tool:
     * **Text Response**: If the language model determines that a text response is appropriate, it generates the response and sends it to the XO Platform. The platform then renders this response to the user.
@@ -324,21 +319,25 @@ Here's a step-by-step explanation of the execution captured in the debug logs:
 12. The `FundsTransfer` tool completes execution, and the Agent Node captures the updated conversation history array in the request-response details.
 13. The XO Platform exits the Agent node.
 
-## Best Practices (WIP)
+## Best Practices
+
+To view recommended guidelines for using the agent node, see [Best Practices](best-practices.md).
+
+## FAQs
+
+To view commonly asked questions about the agent node, see [FAQs](faqs.md).
+
+## Agent Node - Video Library
+
+You can access the various Agent Node videos from the **Automation** > **Dialogs** > **Agent Node** > **Component Properties**.  
+<img src="../images/agentnode-videos.png" alt="Automation Node" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
 
 
-## FAQs (WIP)
+Click **Watch Full Video Library** to view the following videos:
 
-
-## Use Case Examples (Videos) (WIP)
-
-* Transfer Money
-* Appointment Scheduling
-* Setting Up Agent Node
-* Agent Node Components
-* Prompt Creation
-* Model Configuration
-* Tools in Agent Node
-* Custom Prompts
-
-
+* Setting Up Agent Node: Step-by-step guide to creating and configuring your first Agent Node.
+* Agent Node Components: Detailed overview of the core elements that make up an Agent Node.
+* Prompt Creation: Step-by-step guide on how to craft effective prompts for your node.
+* Model Configuration: Discover how to integrate custom and system models with the Agent Node.
+* Tools in Agent Node: Learn how to create and configure a Code Tool that your Agent Node can use.
+* Custom Prompts: Understanding how to craft different versions of prompts compatible with both system and custom models.

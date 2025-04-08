@@ -150,16 +150,16 @@ nav:
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
-            - Kore.ai Voice Gateway: 
-              - Configure Gateway: channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md
+            - Voice Gateway: 
+              - Configure Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
-                - Call Control Parameters: channels/kore.ai-voice-gateway/call-control-parameters.md
-                - Speech Synthesis Markup Language (SSML): channels/kore.ai-voice-gateway/ssml.md
-                - Utility Functions: channels/kore.ai-voice-gateway/utility-functions.md
-                - Common Scenarios: channels/kore.ai-voice-gateway/common-configuration-scenarios.md
-                - SIP Trunk: channels/kore.ai-voice-gateway/sip-trunk.md
-                - IPs, Ports, and Protocols: channels/kore.ai-voice-gateway/ips-ports-protocols.md
-                - Troubleshooting: channels/kore.ai-voice-gateway/troubleshooting.md
+                - Call Control Parameters: channels/voice-gateway/call-control-parameters.md
+                - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
+                - Utility Functions: channels/voice-gateway/utility-functions.md
+                - Common Scenarios: channels/voice-gateway/common-configuration-scenarios.md
+                - SIP Trunk: channels/voice-gateway/sip-trunk.md
+                - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
+                - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -173,7 +173,6 @@ nav:
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
         - Migration Path XO v10 to v11: getting-started/migration-path-xo10-to-xo11.md
         - Current Limitations: release-notes/current-limitations.md  
-    
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
@@ -187,6 +186,9 @@ nav:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
+    - Agent Node:
+        - Overview: automation/agent-node/agent-node.md
+        - Prompt Setup: automation/agent-node/prompt-setup.md
     - Use Cases:
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -197,9 +199,6 @@ nav:
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
-          - Agent Node:
-            - Overview: automation/use-cases/dialogs/node-types/genai-node-v2.md
-            - Configure the Node: automation/use-cases/dialogs/node-types/agent-node-configuration.md
           - Prompt Node: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
@@ -338,6 +337,7 @@ nav:
                 - HelpScout: searchai/content-sources/connectors/helpscout.md
                 - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
+                - Jenkins: searchai/content-sources/connectors/jenkins.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - LumApps: searchai/content-sources/connectors/lumapps.md
