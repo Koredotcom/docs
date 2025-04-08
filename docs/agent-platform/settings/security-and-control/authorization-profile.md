@@ -52,19 +52,16 @@ To add a new Auth profile, you must first set up the required auth fields with t
 Otherwise, click **Add new auth**.
 <img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
 
-3. In the **New Authorization Mechanism** dialog, select *oauth v2* for **Authorization Type**. 
-<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;">  
-
-4. In the **Identity Provider Name** field, enter a name for the authorization type, which is mandatory.
-<img src="../images/identity-provider.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:75%;">
-
-5. Provide the values for the mandatory OAuth2 authorization fields. For details, refer to the [Define Authorization Fields](../security-and-control/authorization-profile.md/#define-authorization-fields){:target="_blank"} section. 
+<ol start="3"><li>In the <b>New Authorization Mechanism</b> dialog, select <i>oauth v2</i> for <b>Authorization Type</b>. 
+<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;"></li>  
+<li>In the <b>Identity Provider Name</b> field, enter a name for the authorization type, which is mandatory.
+<img src="../images/identity-provider.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Provide the values for the mandatory OAuth2 authorization fields. For details, refer to the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#define-authorization-fields" target="_blank">Define Authorization Fields</a> section. 
 
 If the mandatory fields are left blank, validation error messages appear, as shown below.
 
-<img src="../images/form-validation-errors.png" alt="validation errors" title="validation errors" style="border: 1px solid gray; zoom:75%;">
-
-6. (Optional) Click **+ Add Additional Field** to add additional fields for authentication. 
+<img src="../images/form-validation-errors.png" alt="validation errors" title="validation errors" style="border: 1px solid gray; zoom:75%;"></li>
+<li>(Optional) Click <b>+ Add Additional Field</b> to add additional fields for authentication. See the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-additional-field" target="_blank">Add Additional Field</a> section.</li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -221,13 +218,13 @@ Example: <code>read_profile</code>.
    <td>
     The endpoint where a client application sends a request to obtain a new <strong>access token</strong> using a <strong>refresh token</strong> (whenever the access token expires). Example: <code>https://auth.networks.com/oauth/access</code>
 
-<strong>Note</strong>: When the <strong>Refresh Token URL</strong> or refresh token expires, the following happens:
+<p><strong>Note</strong>: When the <strong>Refresh Token URL</strong> or refresh token expires, the following happens:
 <ul>
 
 <li>The auth profile starts failing everywhere it is used.</li>
 
 <li>The user will receive an email to reconfigure a new URL or refresh token to ensure continuous and uninterrupted service.</li>
-</ul>
+</ul></p>
    </td>
    <td>Optional
    </td>
