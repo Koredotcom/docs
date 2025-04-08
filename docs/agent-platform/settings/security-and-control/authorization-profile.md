@@ -246,7 +246,7 @@ These fields are used to collect additional authentication details from end user
 
 To add additional fields, follow the steps below:
 
-1. Click **+ Add Additional Field** in the **New Authorization Mechanism** window and enter one or more key/value pairs.
+1. Click **+ Add Additional Field** in the **New Authorization Mechanism** window and enter one or more key-value pairs.
 
     <img src="../images/add-additional-field-click.png" alt="add additional field" title="add additional field" style="border: 1px solid gray; zoom:75%;">
 
