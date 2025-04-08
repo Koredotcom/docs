@@ -12,7 +12,7 @@ Context Definition:
 
 * Specify the virtual assistance’s role (e.g., virtual assistance or voice assistant) and the communication channel it operates within (text-based or voice-based).
 * Outline the expected response length, preferred level of verbosity, and formality of responses.
-* Provide a structured interaction goal, detailing the bot’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
+* Provide a structured interaction goal, detailing the virtual assistance’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
 * Indicate the company or service the virtual assistance represents, ensuring that brand voice, terminology, and industry-specific nuances are reflected in responses.
 * Define whether the virtual assistance should proactively offer assistance, clarify ambiguous inputs, or wait for explicit user queries before responding.
 
@@ -24,7 +24,7 @@ Using the Conversations with Things framework, a conversation design methodology
 * Level of personification: Decide how human-like the virtual assistance should be, ranging from a fully automated assistant to a more personable, engaging entity.
 * Power dynamics in user interactions: Establish whether the virtual assistance takes a directive approach (authoritative) or a supportive role (collaborative) in assisting users.
 * Character traits: Identify core attributes of the virtual assistance personality, such as professionalism, friendliness, or humor, to ensure consistency in interactions.
-* Tone and key behavioral traits: Set the bot’s communication style, including formality, friendliness, and how it responds to user inquiries.
+* Tone and key behavioral traits: Set the virtual assistance’s communication style, including formality, friendliness, and how it responds to user inquiries.
 
 The framework provides a structured approach to designing conversational experiences, ensuring that virtual assistants maintain consistency, align with user expectations, and create meaningful interactions.
 

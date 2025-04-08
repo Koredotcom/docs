@@ -327,7 +327,7 @@ To view recommended guidelines for using the agent node, see [Best Practices](..
 
 To view commonly asked questions about the agent node, see [FAQs](../../../agent-node/faqs.md).
 
-## Use Case Examples
+## Agent Node - Video Library
 
 You can access the various Agent Node videos from the **Automation** > **Dialogs** > **Agent Node** > **Component Properties**.  
 <img src="../images/agentnode-videos.png" alt="Automation Node" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
