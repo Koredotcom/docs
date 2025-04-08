@@ -466,11 +466,9 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
     - Business
     - Requirements
     - Overview  
-
-<img src="../images/App-details.png" alt="App-details" title="App-details" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/App-details.png" alt="App-details" title="App-details" style="border: 1px solid gray; zoom:70%;">
 
 4. On the app in the app dashboard, Click on your created app.  
-
 <img src="../images/Apps.png" alt="Apps" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
 
 #### Step 2: Retrieve App ID & App Secret
@@ -478,9 +476,9 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 1. Go to your **App Dashboard**.
 2. Click on the **App Settings** tab.
 3. Under **App Settings**, select **Basic**.
-4. Find and Copy the **App ID** and **App Secret ID** and paste it as required in the **Step 4**.
-   **Note:** Ensure that you enter details in all required columns. Without all the required fields, your app will not be approved by Meta.
+4. Find and Copy the **App ID** and **App Secret ID** and paste it as required in the **Step 4** 
 
+    **Note:** Ensure that you enter details in all required columns. Without all the required fields, your app will not be approved by Meta.  
    <img src="../images/App-settings-basic.png" alt="App-settings-basic" title="App-settings-basic" style="border: 1px solid gray; zoom:70%;">
 
 #### Step 3: Configure the Callback URL
@@ -488,8 +486,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 1. Click **Add product** under the Products section on the left navigation bar.
 
     **Note:** Note that the **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
-
-<img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">
 
 2. Now, click the **Settings** tab of Facebook Login for Business.  
 <img src="../images/Facebook-settings.png" alt="Facebook-settings" title="Facebook-settings" style="border: 1px solid gray; zoom:70%;">
@@ -531,5 +528,8 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 3. Click **Verify and save**.
 4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle button.
 
-   **Note:** Kore recommends you to select the latest version of the messaging app while subscribing.  
-   <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
+    !!! note: 
+        
+        Kore recommends you to select the latest version of the messaging app while subscribing.
+        
+    <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
