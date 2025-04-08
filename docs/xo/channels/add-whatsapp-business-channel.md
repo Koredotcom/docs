@@ -529,7 +529,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 <img src="../images/Verify-save.png" alt="Verify-save" title="Verify-save" style="border: 1px solid gray; zoom:70%;">
     
 3. Click **Verify and save**.
-4. Now, from the Webhook fields, subscribe for the **messages** by enabling the toggle button.
+4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle button.
 
    **Note:** Kore recommends you to select the latest version of the messaging app while subscribing.  
    <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
