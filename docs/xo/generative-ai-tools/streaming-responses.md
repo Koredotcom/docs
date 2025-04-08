@@ -9,7 +9,7 @@ Streaming responses in large language models (LLMs) enable real-time, incrementa
 
 ## Current Capabilities
 
-We support the voice-based channel [Kore Voice Gateway](../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md) for GenAI features, including Agent Node, with PlayHT as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
+We support the voice-based channel [Kore Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md) for GenAI features, including Agent Node, with PlayHT as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
 
 
 ### Benefits of Streaming
@@ -123,9 +123,9 @@ Ensure that the streamed response follows the platform's required format:
     * Enabling streaming disables the “Exit Scenario”, “Virtual Assistant Response”, “Collected Entities”, and “Tool Call Request” (for Agent Node) fields.
 
 
-## Configure Kore Voice Gateway
+## Configure Voice Gateway
 
-Streaming is currently supported only by the Kore Voice Gateway channel. To configure it, see Configure [Kore Voice Gateway](../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md).
+Streaming is currently supported only by the Kore Voice Gateway channel. To configure it, see Configure [Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md).
 
 After configuring the settings, enable LLM streaming in the Contact Center. Navigate to **Contact Center AI** > **Contact Center** > **Configurations** > **Advanced Settings** > **LLM Streaming**, then turn on the toggle for **real-time LLM response streaming**.  
 <img src="../images/enable-streaming.png" alt="Enable Streaming" title="Enable Streaming" style="border: 1px solid gray; zoom:70%;">

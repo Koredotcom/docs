@@ -3,10 +3,10 @@ You can fine-tune intent detection for each language enabled for your Virtual As
 
 1. On the left pane, click **Natural Language** > **NLU Config**.
 2. In the **Engine Tuning** section, you can perform engine tuning by customizing
-    * The Fundamental Meaning model – [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){target="_blank"}.
-    * Machine Learning model – [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations){target="_blank"}.
-    * Knowledge Graph – [Learn more](/docs/xo/automation/knowledge-ai/knowledge-graph-training/#thresholds-configurations){target="_blank"}.
-    * Ranking & Resolver engine – [Learn more](/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration){target="_blank"}.
+    * The Fundamental Meaning model – [Learn more](../training/fundamental-meaning.md){target="_blank"}.
+    * Machine Learning model – [Learn more](../training/machine-learning-engine.md){target="_blank"}.
+    * Knowledge Graph – [Learn more](../../knowledge-ai/knowledge-graph-training.md){target="_blank"}.
+    * Ranking & Resolver engine – [Learn more](../training/ranking-and-resolver.md){target="_blank"}.
 
 Apart from these, under the **Advanced NLP Configurations** section, there are advanced settings that you can use for specific use cases and requirements.
 

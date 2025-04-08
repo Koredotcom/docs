@@ -54,7 +54,7 @@ In this scenario, the system retains the existing **sttProvider** and previously
 
 ### Supported Speech Engines
 
-Kore.ai supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
+Voice Gateway supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
 
 <table>
   <tr>
@@ -211,7 +211,7 @@ Any ASR transcript with a confidence score below 0.5 will be ignored, and the sy
   <tr>
    <td>Hints with Phrase level hintsboost
 This is an additional feature present in allowing a boost factor to be specified at the phrase level
-Kore VG
+Voice Gateway
 Key = hints
    </td>
    <td> Array Of Objects
@@ -850,7 +850,7 @@ v1  or v2
    </td>
    <td>
    </td>
-   <td>Deepgram API key to authenticate with (overrides setting in Kore VG portal).
+   <td>Deepgram API key to authenticate with (overrides setting in Voice Gateway portal).
    </td>
    <td>
    </td>
@@ -1252,9 +1252,9 @@ Text will be played twice
   </tr>
 </table>
 
-## TTS Options in Kore VG
+## TTS Options in Voice Gateway
 
-Kore VG now supports a `ttsOptions` parameter that allows bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
+Voice Gateway now supports a `ttsOptions` parameter that allows bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
 
 !!! Note
 
@@ -1512,7 +1512,7 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
 <strong>   “ttsFallbackVoiceName”: “en-US-AmberNeural”</strong><br>
 <strong>Notes: <br>The NODE at which you use FallBack call control parameters, at the same node Primary Recognizer and Synthesizer is NECESSARY to pass.</strong>
 <strong>The best practice is to keep the same ASR Engine in Fallback with a different Label.</strong>
-<strong>If the current provider fails, Kore VG will pick a fallback provider. Similarly, we can add a Fallback for the TTS Provider.</strong><br>
+<strong>If the current provider fails, Voice Gateway will pick a fallback provider. Similarly, we can add a Fallback for the TTS Provider.</strong><br>
 <strong>Fallback properties will be applied at the session level.</strong>
    </td>
   </tr>
@@ -1523,7 +1523,7 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
    </td>
    <td>
    </td>
-   <td>Uniquely identify ASR engine in Kore VG.
+   <td>Uniquely identify ASR engine in Voice Gateway.
    </td>
    <td>
    </td>
@@ -1535,7 +1535,7 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
    </td>
    <td>
    </td>
-   <td>If fallback is enabled in Kore VG at the application level, then in case of any error the switch will happen of ASR to fallback configuration, it is recommended to have a fallback to the same vendor with a different region. 
+   <td>If fallback is enabled in Voice Gateway at the application level, then in case of any error the switch will happen of ASR to fallback configuration, it is recommended to have a fallback to the same vendor with a different region. 
    </td>
    <td>
    </td>
@@ -1571,7 +1571,7 @@ Do not use this in Channel Over-rider Script. It is meant to be used only throug
    </td>
    <td>
    </td>
-   <td>Uniquely identify TTS engine in Kore VG
+   <td>Uniquely identify TTS engine in Voice Gateway
    </td>
    <td>
    </td>
@@ -1662,7 +1662,7 @@ Microsoft Azure Introduces one ASR Property that works the same way as Continuou
    <td colspan="5" >
 <h4><strong>Barge-IN</strong></h4>
 
-The Barge-In feature controls Kore VG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.<br>
+The Barge-In feature controls Voice Gateway behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.<br>
 <strong>Note: </strong>Barge-in Will be applied at the Node level. 
    </td>
   </tr>
@@ -1719,7 +1719,7 @@ Similar to Barge-in.
    </td>
    <td>Define the maximum wait time to receive user input
 If userNoInputTimeoutMS = 0
-Kore VG will wait for an infinite time for User Input.
+Voice Gateway will wait for an infinite time for User Input.
 Defines the maximum time (in milliseconds) that VoiceAI Connect waits for input from the user.
    </td>
    <td>userNoInputTimeoutMS = 20000
@@ -1732,7 +1732,7 @@ Defines the maximum time (in milliseconds) that VoiceAI Connect waits for input 
    </td>
    <td>ALL
    </td>
-   <td>Defines the timeout that Kore VG waits for the user to press another digit before it sends all the digits to the bot.
+   <td>Defines the timeout that Voice Gateway waits for the user to press another digit before it sends all the digits to the bot.
    </td>
    <td>
    </td>

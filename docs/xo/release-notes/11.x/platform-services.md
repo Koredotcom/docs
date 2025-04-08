@@ -104,7 +104,7 @@ A voicemail notification can be sent using the `voiceutils`, enabling automated 
 * **transcriptionRequired**: Enables/disables automatic voicemail transcription. When enabled, it generates text transcription upon recording completion.
 * **notifyUrl**: Endpoint for receiving voicemail notifications.  
   Format: `https://your-domain/endpoint`
-* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/utility-functions.md#voicemails)
+* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions.md#voicemails)
 
 #### Voicemail Recording API
 
@@ -112,7 +112,7 @@ A new public API endpoint has been introduced to retrieve voicemail recordings. 
 
 #### Simplified Parameter Updates for ASR/TTS Configuration
 
-When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md#channel-level-call-control)
+When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#channel-level-call-control)
 
 #### Improved Audio Handling During Hold State
 
@@ -149,11 +149,11 @@ The Transcribe utility function now supports the following when integrated with 
 
 #### SIP Trunk Availability Monitoring
 
-Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 #### Show Multiple SIP URIs While Configuring SIP Trunk
 
-While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 #### Display 'Call Control' Options During the Dialing Stage
 

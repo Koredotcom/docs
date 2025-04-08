@@ -93,6 +93,8 @@ Supervisors and agents can sort Queues, Agents, and Interaction tabs to manage w
 
 <hr>
 
+## v11.11.1 March 15, 2025
+
 <u> Patch Release </u>
 
 This update include only bug fixes.
@@ -290,7 +292,7 @@ Key benefits
 
 #### Deepgram TTS Support
 
-This update includes Deepgram TTS support to complement their existing ASR integration. Deepgram is now available as a TTS option when configuring [Start Flows](../../flows/create-flows.md#create-a-start-flow) and [Voice Preferences](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences).
+This update includes Deepgram TTS support to complement their existing ASR integration. Deepgram is now available as a TTS option when configuring [Start Flows](../../flows/create-flows.md#create-a-start-flow) and [Voice Preferences](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences).
 
 All Deepgram voices can be selected, and Deepgram TTS can be set using call control parameters. This enables the use of Deepgram TTS across the Kore.ai XO platform, with existing flows working successfully using Deepgram voices.
 
@@ -453,11 +455,11 @@ To enhance the flexibility and compatibility of the SIP Trunk configuration, two
 Key updates
 
 * E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
-* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 #### Microsoft Teams Integration for Inbound and Outbound Calls
 
-In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 <hr>
 
@@ -626,7 +628,7 @@ Each tracked detail includes the following:
 
 #### Wait Time for IP Whitelisting While Configuring SIP Transfer
 
-Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-numbers)
 
 #### Session and Node Level Call Control Parameters
 
@@ -635,7 +637,7 @@ Developers can now apply Call Control Parameters at the **Session** or **Node** 
 * **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
 * **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md)
 
 #### SIP REFER Handling and Transcript Enhancements
 
