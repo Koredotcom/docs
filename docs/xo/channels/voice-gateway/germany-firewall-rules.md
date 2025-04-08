@@ -39,7 +39,7 @@
 
 <table>
   <tr>
-   <td rowspan="4" >Kore SBC
+   <td rowspan="4" >Voice Gateway SBC
    </td>
    <td>TCP
    </td>
@@ -89,7 +89,7 @@
    </td>
   </tr>
   <tr>
-   <td>Kore Web URL
+   <td>Voice Gateway Web URL
    </td>
    <td>TCP
    </td>
@@ -121,7 +121,7 @@
 <table>
   <tr>
    <td colspan="6" >
-<h2><strong>Kore SBC</strong></h2>
+<h2><strong>Voice Gateway SBC</strong></h2>
 
    </td>
   </tr>
