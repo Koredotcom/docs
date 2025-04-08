@@ -1,6 +1,6 @@
 # IPs, Ports, and Protocols
 
-This document contains all the region wise IPs, ports, and protocols for Kore Voice Gateway. It is useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](../kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup).
+This document contains all the region wise IPs, ports, and protocols for Voice Gateway. It is useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](./configure-voice-gateway.md#sip-trunk-setup).
 
 ## Regions
 

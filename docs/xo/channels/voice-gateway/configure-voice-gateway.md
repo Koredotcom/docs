@@ -1,13 +1,13 @@
-# Kore Voice Gateway
+# Voice Gateway
 
-Kore.ai Voice Gateway is a comprehensive voice automation solution that manages inbound call automation for Contact Center AI. It integrates with existing voice systems or uses Kore.ai's native voice processing capabilities, enabling seamless transitions between automated and human interactions within the XO Platform.
+Voice Gateway is a comprehensive voice automation solution that manages inbound call automation for Contact Center AI. It integrates with existing voice systems or uses the native voice processing capabilities, enabling seamless transitions between automated and human interactions within the XO Platform.
 
-## Configure Kore Voice Gateway
+## Configure Voice Gateway
 
 You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
 
-Go to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**.  
-<img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
+Go to **Automation AI** > **Flows & Channels** > **Channels** > **Voice Gateway**.  
+<img src="../images/kore-vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Phone Numbers
 
@@ -103,7 +103,7 @@ Steps to configure SIP Trunk:
             <img src="../images/sip-uri.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;">
 
         2. Under **Domain Name**, provide the following:
-            1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](../kore.ai-voice-gateway/ips-ports-protocols.md).
+            1. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./ips-ports-protocols.md).
             2. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
                 <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">  
 
@@ -295,7 +295,7 @@ The following dialects are supported:
 
 ### Voice Call Properties
 
-Voice call properties are fundamental aspects that define the quality and reliability of communication over Kore.ai Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
+Voice call properties are fundamental aspects that define the quality and reliability of communication over Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
 
 You can configure the voice call properties by going to the Voice Preferences tab and clicking **Configure** on the **Voice Call Properties** section.  
     <img src="../images/configure-voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:80%;">
@@ -331,7 +331,7 @@ Specify the intent (dialog) to handle the call termination event from the dropdo
 
 #### Call Control Parameters
 
-Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](../../channels/kore.ai-voice-gateway/call-control-parameters.md).  
+Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./call-control-parameters.md).  
     <img src="../images/add-parameter.png" alt="Add Parameter" title="Add Parameter" style="border: 1px solid gray; zoom:80%;">
 
 #### Timeout Prompt
@@ -341,7 +341,7 @@ Define prompt to be played when user input is not received within the time-out p
 
 #### Barge-in
 
-Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled. [Learn more](../../channels/kore.ai-voice-gateway/common-configuration-scenarios.md#barge-in).  
+Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled. [Learn more](./common-configuration-scenarios.md#barge-in).  
     <img src="../images/barge-in.png" alt="Barge In" title="Barge In" style="border: 1px solid gray; zoom:80%;">
 
 #### Timeout
