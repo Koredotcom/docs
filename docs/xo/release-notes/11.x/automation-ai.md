@@ -19,6 +19,17 @@ Key features
 * Choice between "Orchestrated Autonomy" or "Full Autonomy" based automation capabilities.
 * Agentic Apps provide full support for any of the digital and voice channels enabled via the XO Platform. 
 
+#### Simplified Integration to Support for Real-time Voice Interactions
+
+The platform's new integration framework simplifies the enablement of real-time voice interactions using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for your customers.
+
+Key features
+
+* Two-way real-time voice streaming through Kore Voice Gateway to power the conversation automation using state-of-the-art AI models.
+
+* Dedicated orchestrator to define the voice experiences and controls. 
+
+
 ### DialogGPT
 
 #### Support for Dynamic Routing Capability Powered by DialogGPT
