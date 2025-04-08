@@ -18,7 +18,7 @@ New call control parameters have been added to improve transcription quality whe
 * `filler_words`: Controls the inclusion of filler words (um, uh, like) in transcriptions.
 * `keyterm`: Boosts the Keyword Recall Rate (KRR) for important keyterms or phrases by up to 90%.
 
-[Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md#common-asr-parameters)
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#common-asr-parameters)
 
 ### Flows
 
@@ -30,7 +30,7 @@ The Experience Flows now include an Answering Machine Detection (AMD) option ('S
 
 #### Updated TTS Selection for OpenAI TTS
 
-The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences)
+The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences)
 
 #### Expanded Amazon Polly Voice Selection in TTS Dropdown
 

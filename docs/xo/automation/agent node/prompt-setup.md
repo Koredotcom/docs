@@ -1,7 +1,6 @@
 
 # Agent Node Prompt Setup
 
-## Overview
 
 This article provides a comprehensive overview of how to implement and optimize LLM-based bots in Kore.ai using the Agent Node, focusing on prompt engineering techniques to refine bot behavior and improve the user experience.
 
@@ -514,7 +513,7 @@ For more information on Custom Prompt, see [Prompts and Requests Library](../../
 
 #### Add V1 Custom Prompt
 
-For details, see [When to use V1 Prompt.](#when-to-use-v1-prompts)
+For details, see [When to use V1 Prompt.](#version-1-legacy-framework)
 
 To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
@@ -582,7 +581,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 #### Add V2 Custom Prompt
 
-For details, see [When to use V2 Prompt.](#when-to-use-v2-prompts)
+For details, see [When to use V2 Prompt.](#version-2-tool-calling-framework)
 To add an Agent Node V2 prompt, follow the steps:
 
 
@@ -916,7 +915,7 @@ The context object is used to get the entities and the parameters of tools.
 
 The Dynamic Variables like Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
 
-[Learn more](../../../../app-settings/variables/using-bot-variables.md).
+[Learn more](../../app-settings/variables/using-bot-variables.md).
 
 <table>
   <tr>

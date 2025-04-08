@@ -1,5 +1,13 @@
 # Adding the WhatsApp Business Messaging Channel
 
+Kore allows you to integrate your whatsapp business app using the following messaging resources:
+
+- [Infobip](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-infobip-application)
+- [Gupshup](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-gupshup-application)
+- [Karix](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-karix-application)
+- [Netcore](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-netcore-application)
+- [WhatsApp Cloud API](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-meta-cloud-api)
+
 ## Adding the WhatsApp Channel using Infobip Application
 
 To complete this procedure, you must already have an **Infobip** account. This is one of the messaging providers for enabling **WhatsApp Business Messaging** on the Kore Platform.
@@ -351,7 +359,7 @@ On the WhatsApp Business Messaging platform, follow the below steps:
 
 Netcore CE uses API endpoints from [CPaaS](https://email.netcorecloud.com/){:target="_blank"} to connect with WhatsApp. To enable, WhatsApp through Netcore on the Kore.ai Platform, you must provide the WhatsApp phone number and API key in the **Channel Configurations** section and the Platform’s Webhook URL for the API callback in the CPaaS portal.
 
-**Prerequisites**
+### Prerequisites
 
 * An active WhatsApp Business account for your enterprise.
 * An active CPaSS account with WhatsApp **enabled**.
@@ -422,3 +430,98 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 
 
 The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
+
+## Adding the WhatsApp Channel Using Meta Cloud API
+
+This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account. 
+
+To enable WhatsApp integration on the Kore.ai Platform, you must provide the WhatsApp phone number and API key in the Channel Configurations section and the Platform’s Webhook URL for the API callback in the CPaaS portal.
+
+**Key features**
+
+- Seamless management of templates, catalogs, conversational flows, and payments.
+- Simplified account linking and configuration through Meta's developer platform.
+- Enhanced operational efficiency and customer satisfaction.
+
+### Prerequisites
+
+- Active WhatsApp Business account for your enterprise.
+- Active CPaSS account with WhatsApp enabled.
+
+### Configuration Steps
+
+To configure and enable WhatsApp Native integration via Cloud API, pursue the following steps:
+
+#### Step 1: Create your app
+
+1. Log in to the [Meta Developer Portal](https://developers.facebook.com/) and click the **Apps** button.  
+<img src="../images/App-button.png" alt="App-button" title="App-button" style="border: 1px solid gray; zoom:70%;">
+
+2. Now, click **Create App** to create a new app or select an existing app.  
+<img src="../images/create-app.png" alt="create-app" title="create-app" style="border: 1px solid gray; zoom:70%;">
+
+3. Enter the details in the following tabs as per your business needs and click **Next** to create a WhatsApp Business Account (WABA):
+    - App details
+    - Use cases
+    - Business
+    - Requirements
+    - Overview  
+
+<img src="../images/App-details.png" alt="App-details" title="App-details" style="border: 1px solid gray; zoom:70%;">
+
+4. On the app in the app dashboard, Click on your created app.  
+<img src="../images/Apps.png" alt="Apps" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
+
+#### Step 2: Retrieve App ID & App Secret
+
+1. Go to your **App Dashboard**.
+2. Click on the **App Settings** tab.
+3. Under **App Settings**, select **Basic**.
+4. Find and Copy the **App ID** and **App Secret ID** and paste it as required in the **Step 4**.
+   **Note:** Ensure that you enter details in all required columns. Without all the required fields, your app will not be approved by Meta.
+
+   <img src="../images/App-settings-basic.png" alt="App-settings-basic" title="App-settings-basic" style="border: 1px solid gray; zoom:70%;">
+
+#### Step 3: Configure the Callback URL
+
+1. Click **Add product** under the Products section on the left navigation bar.
+
+   **Note:** Note that the **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
+   <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">  
+2. Now, click the **Settings** tab of Facebook Login for Business.  
+<img src="../images/Facebook-settings.png" alt="Facebook-settings" title="Facebook-settings" style="border: 1px solid gray; zoom:70%;">
+
+3. On the Settings page, enter the Valid OAuth Redirect URLs from the **XO Platform Configuration Page** as follows:
+    a. Login to the XO platform Bot builder section.
+    b. Select the **WhatsApp Business messaging app**.
+    c. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
+    <img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
+
+    d. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
+    **Note:** Kore recommends you verify the Callback URL using the Redirect URL Validator to ensure the accuracy of the path URL.  
+    <img src="../images/Validauth-redirecturl.png" alt="Validauth-redirecturl" title="Validauth-redirecturl" style="border: 1px solid gray; zoom:70%;">
+
+#### Step 4: Retrieve the Phone number ID and App ID
+
+1. Click **API Setup** under the **WhatsApp** section in the left navigation bar.
+2. Paste the following information as copied in the **Step 2** to the XO Platform Bot builder Configuration Page:
+    - Phone Number ID
+    - App ID
+    - App Secret ID
+
+    <img src="../images/Phone-app-secrets.png" alt="Phone-app-secrets" title="Phone-app-secrets" style="border: 1px solid gray; zoom:70%;">
+
+#### Step 5: Verify the Webhook URL and Token
+
+1. From the **XO Platform Bot builder Configuration Page**, copy the **URL** and **Token**.
+   **Note:** Kore recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
+   <img src="../images/verify-call-back.png" alt="verify-call-back" title="verify-call-back" style="border: 1px solid gray; zoom:70%;">
+
+2. Paste them in the **Callback URL** and **Verify token** respectively of the **Configuration** section under the **WhatsApp** section in the left navigation bar.  
+<img src="../images/Verify-save.png" alt="Verify-save" title="Verify-save" style="border: 1px solid gray; zoom:70%;">
+    
+3. Click **Verify and save**.
+4. Now, from the Webhook fields, subscribe for the **messages** by enabling the toggle button.
+
+   **Note:** Kore recommends you to select the latest version of the messaging app while subscribing.  
+   <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">

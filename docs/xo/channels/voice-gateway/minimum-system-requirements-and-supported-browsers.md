@@ -94,7 +94,7 @@ Still, the customer will be required to update browser versions if an issue is i
     * Grant permissions and allow access to the camera and microphone when prompted by the browser.
     * Turn off the pop-up blocker, and allow a separate WebRTC window to open.
     * Grant permissions and allow users to share their screen, a specific window, or the entire desktop when prompted.
-    * Allow Transport Layer Security (TLS) v.1.2 protocol (Kore.AI doesn’t support TLS versions 1.0, 1.1, and 1.3).
+    * Allow Transport Layer Security (TLS) v.1.2 protocol (TLS versions 1.0, 1.1, and 1.3 are not supported).
     * Do not minimize the active call tab or window. If you minimize the active window, then the client stops working properly.  
     For example, you may experience a delay when you answer a call or are unable to answer a call. Restore the minimized window for the client to function properly.
     * Chrome updates automatically. Versions of Chrome are only an issue if the customer’s IT department restricts automatic updates.

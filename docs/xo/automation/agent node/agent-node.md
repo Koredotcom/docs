@@ -1,10 +1,8 @@
 # Agent Node
 
-      - Agent Node:
-        - Overview: automation/agent node/agent-node.md
-        - Prompt Setup: automation/agent node/prompt-setup.md
 
-## Overview
+
+
 
 
 The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to build AI-powered, sophisticated, and versatile virtual assistants capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
@@ -45,7 +43,7 @@ Add the node to a dialog task and configure the node's properties and tool calli
 Steps to add an Agent Node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
-2. You can add the Agent Node just like any other node. You can find it in the main list of nodes.  
+2. You can add the **Agent Node** just like any other node. You can find it in the main list of nodes.  
 <img src="../images/canvas-agentnode.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -235,7 +233,7 @@ To define the interruption handling at this node. You can select from the below 
 
 **Custom Tags**
 
-Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
+Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.
 
 <img src="../images/instancev2.png" alt="Instance Properties" title="Instance Properties" style="border: 1px solid gray; zoom:70%;">
 
@@ -324,13 +322,18 @@ Here's a step-by-step explanation of the execution captured in the debug logs:
 12. The `FundsTransfer` tool completes execution, and the Agent Node captures the updated conversation history array in the request-response details.
 13. The XO Platform exits the Agent node.
 
-## Best Practices (WIP)
+## Best Practices
 
+To view recommended guidelines for using the agent node, see [Best Practices](best-practices.md).
 
-## FAQs (WIP)
+## FAQs
 
+To view commonly asked questions about the agent node, see [FAQs](faqs.md).
 
-## Use Case Examples (Videos) (WIP)
+## Use Case Examples
+
+You can access the various Agent Node videos from the **Automation** > **Dialogs** > **Agent Node** > **Component Properties**. Click **Watch Full Video Library** to view all the available videos.
+<img src="../images/agentnode-videos.png" alt="Automation Node" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
 
 * Transfer Money
 * Appointment Scheduling

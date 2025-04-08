@@ -407,7 +407,7 @@ Administrators can select from the following routing options that complement exi
 
 **Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
 
-**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability. 
+**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.  
 <img src="../images/additional-routing-configurations.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ## Enable Dial Tone Until Agent Connects
@@ -417,6 +417,11 @@ By default, the enable dial tone until agent connects functionality is disabled.
 
 ## Total Digital Conversation Limit
 
-This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md#chat--voice).
+This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md#chat--voice).  
+
+!!! Note
+
+    You can set the total conversation limit for a user only from the User section. This setting is not available in the user profile under the Monitor tab.  
+
 When the Total digital conversation limit is reached,  an agent will move to System Busy status. This setting is disabled by default.  
 <img src="../images/total-digital-conversations-enable.png" alt="Enable Total Digital Conversations Limit" title="Enable Total Digital Conversations Limit" style="border: 1px solid gray; zoom:80%;">
