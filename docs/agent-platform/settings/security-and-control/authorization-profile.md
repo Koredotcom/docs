@@ -7,14 +7,14 @@ Managing Auth profiles on the Agent Platform allows developers to:
 * **Define Rules**, including authentication methods and requirements, such as passwords, additional fields, and custom authorization fields.
 * **Secure Access** to authorized users or systems only.
 * **Reuse profiles** across multiple endpoints or applications for consistency and efficiency.
-* [Test and validate ](../security-and-control/authorization-profile.md/#){:target="_blank"} the connection to ensure user identity information and authentication tokens are securely passed to external services.
+* [Test and validate](../security-and-control/authorization-profile.md/#test-the-auth-profile){:target="_blank"} the connection to ensure user identity information and authentication tokens are securely passed to external services.
 
 ## Access Authorization Profile
 
 To access the feature, follow the steps below:
 
-1. [Sign in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/) to your Agent Platform account.
-2. [Navigate](https://docs.kore.ai/agent-platform/settings/settings-overview/#access-settings-console) to the **Settings** console.
+1. [Sign in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/){:target="_blank"} to your Agent Platform account.
+2. [Navigate](https://docs.kore.ai/agent-platform/settings/settings-overview/#access-settings-console){:target="_blank"} to the **Settings** console.
 3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
 <img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
 
@@ -52,7 +52,6 @@ To add a new Auth profile, you must first set up the required auth fields with t
 Otherwise, click **Add new auth**.
 <img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
 
-
 3. In the **New Authorization Mechanism** dialog, select *oauth v2* for **Authorization Type**. 
 <img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;">  
 
@@ -69,10 +68,10 @@ If the mandatory fields are left blank, validation error messages appear, as sho
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authentication process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user. For more information, see the <a href="https://www.w3schools.com" target="_blank">Add Additional Field</a> section.</p>
+<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authentication process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user. For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-additional-field" target="_blank">Add Additional Field</a> section.</p>
 </div>
     
-<ol start="7"><li>(Optional) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. For more information, see the <a href="https://www.w3schools.com" target="_blank">Add Authorization Field</a> section.</li>
+<ol start="7"><li>(Optional) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">Add Authorization Field</a> section.</li>
 <li>Click <b>Save new Auth</b>.</li>
 <img src="../images/save-new-auth.png" alt="save new auth" title="save new auth" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -203,7 +202,7 @@ Example: <code>read_profile</code>.
    <td><strong>Additional Fields</strong>
    </td>
    <td>
-    Refer <a href="https://www.w3schools.com" target="_blank">here</a>.
+    Refer <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-additional-field" target="_blank">here</a>.
    </td>
    <td>Optional
    </td>
@@ -212,7 +211,7 @@ Example: <code>read_profile</code>.
    <td><strong>Authorization Fields</strong>
    </td>
    <td>
-    Refer <a href="https://www.w3schools.com" target="_blank">here</a>.</td>
+    Refer <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">here</a>.</td>
    <td>Optional
    </td>
   </tr>
