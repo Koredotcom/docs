@@ -1,8 +1,6 @@
 # Agent Node
 
-      - Agent Node:
-        - Overview: automation/agent node/agent-node.md
-        - Prompt Setup: automation/agent node/prompt-setup.md
+
 
 ## Overview
 
@@ -327,8 +325,9 @@ Here's a step-by-step explanation of the execution captured in the debug logs:
 ## Best Practices (WIP)
 
 
-## FAQs (WIP)
+## FAQs
 
+To view commonly asked questions about the agent node, see [FAQs](an-faq.md).
 
 ## Use Case Examples (Videos) (WIP)
 
