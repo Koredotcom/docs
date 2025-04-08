@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Search Support in Conversation Logs
 
-The Conversation Logs section now includes a search field to let you find conversations by Conversation ID.
+The Conversation Logs section now includes a search field to let you find conversations by Conversation ID. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md)
 
 #### Gen AI integration in Agent Coaching
 
@@ -26,7 +26,7 @@ Agent AI in Genesys Cloud CX now supports outbound emails, enabling you to draft
 
 #### End-of-Call Event Independent of Salesforce Platform Events
 
-The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now receives the End-of-Call events independently, without relying on the Salesforce Platform Events.
+The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now receives the End-of-Call events independently, without relying on the Salesforce Platform Events. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md)
 
 #### Agent AI Integration with NICE Agent Desktop
 
@@ -36,7 +36,7 @@ Agent AI is integrated with NICE Agent Desktop.  This integration supports all A
 
 #### Tracking Auto-suggested Choices and Corrections in the Agent AI Raw Data API
 
-The Raw Data API now includes the suggestionsShown, suggestionUsed, phraseInput, correctionsPresented, and correctionsAccepted parameters to help assess the effectiveness of auto-suggested choices and corrections and identify areas for improvement.
+The Raw Data API now includes the suggestionsShown, suggestionUsed, phraseInput, correctionsPresented, and correctionsAccepted parameters to help assess the effectiveness of auto-suggested choices and corrections and identify areas for improvement. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md)
 
 <hr>
 

@@ -1,8 +1,7 @@
-## Overview
+The **Conversation Logs** is a library of all conversations agents have with their customers. It lets you access and review past interactions, indicates whether the conversation summary has been edited, and provides access to the original summary for comparison.
 
-The Conversation Logs feature provides access to the records of past agent-customer interactions. It includes detailed information like date, time, channel, and duration of each conversation. You can review the auto-generated conversation summary, any edited summaries, and the original conversation for comparisons. Additionally, you can filter this record by today, yesterday, the past 7 days, the past 28 days, the past 90 days, or a custom date range for effective data retrieval and analysis.
-
-### Steps to access the Conversation Logs
+## Accessing the Conversation Logs
+Steps to access the Conversation Logs:
 
 1. Sign in to **UXO**.
 2. Go to **Agent AI** > **Analytics** > **Agent AI Logs**. It displays the conversation records of today.  
@@ -27,13 +26,15 @@ The Conversation Logs feature provides access to the records of past agent-custo
     3. The following image displays the error message for failed summary generation and the agent entered summary:  
     <img src="../conversation_logs/failed-summary-generation-and-agent-entered-summary-5.png" alt="failed-summary-generation-and-agent-entered-summary" title="failed-summary-generation-and-agent-entered-summary" style="border: 1px solid gray; zoom:80%;">
 
-### Filter Conversation Logs
+## Filter Conversation Logs
+
+You can view the conversation logs of a specific period by applying the **Date & Time** filters. By default, the calendar is set to "Today," which shows the conversation logs of the present date. You can also find a specific conversation by entering the **Conversation ID** in the search box.
 
 Use the Date & Time filters to view the conversation logs for a specific period. By default, the calendar shows Today.
 
-Steps to filter the conversation logs:
+Steps to filter conversation:
 
-1. Click the **Calendar** button on the right upper corner.  
+1. Click the **Calendar** button in the right-upper corner.  
 <img src="../conversation_logs/calendar-button-conversation-logs-6.png" alt="calendar-button-conversation-logs" title="calendar-button-conversation-logs" style="border: 1px solid gray; zoom:80%;">
 
 2. Select from the following options:
@@ -42,3 +43,15 @@ Steps to filter the conversation logs:
     <img src="../conversation_logs/calendar-date-and-time-range-7.png" alt="calendar-date-and-time-range" title="calendar-date-and-time-range" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply**.
+
+### Search by Conversation ID
+
+Each conversation in the **Conversation Logs** has a unique **Conversation ID**. Use this ID to quickly find a specific conversation without scrolling or filtering.
+
+**Steps to search through the Conversation ID:**
+
+1. Go to **Conversation Logs**.
+2. Locate the **Search by Conv ID** search box in the upper-right corner of the page.
+3. Enter the **Conversation ID** value in the search box.
+4. Press the **Enter** key.  
+<img src="../conversation_logs/conversation-id.png" alt="conversation-id" title="conversation-id" style="border: 1px solid gray; zoom:80%;">

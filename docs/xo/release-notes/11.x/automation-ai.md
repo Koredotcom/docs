@@ -19,6 +19,8 @@ Key features
 * Choice between "Orchestrated Autonomy" or "Full Autonomy" based automation capabilities.
 * Agentic Apps provide full support for any of the digital and voice channels enabled via the XO Platform. 
 
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md)
+
 #### Simplified Integration to Support for Real-time Voice Interactions
 
 The platform's new integration framework simplifies the enablement of real-time voice interactions using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for your customers.

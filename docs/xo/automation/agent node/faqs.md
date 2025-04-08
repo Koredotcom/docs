@@ -1,7 +1,7 @@
 
 
 
-# Agent Node: Frequently Asked Questions (FAQs)
+# Agent Node: Frequently Asked Questions
 
 
 ## Language Models
