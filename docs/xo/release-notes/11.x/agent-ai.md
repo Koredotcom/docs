@@ -8,7 +8,11 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### UI Enhancement
+### UI Enhancements
+
+#### Gen AI Integration in Agent Coaching
+
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
 
 #### Search Support in Conversation Logs
 
