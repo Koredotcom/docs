@@ -96,6 +96,30 @@ Currently, Search AI offers two types of stages for transformation at this step.
     }
     ctx.total_pages = temp_total_pages;
     ```
+
+3. Exclude Documents Stage
+
+The **Exclude Stage** in the Document Workbench allows you to **filter out unnecessary or irrelevant content** before it is ingested into Search AI. If a document is not required for search, you can create custom filters at this stage to prevent its ingestion. By excluding irrelevant documents, you can:
+
+* Reduce unnecessary chunk generation
+* Improve search accuracy by minimizing the risk of generating incorrect or irrelevant results.
+* Enhance indexing efficiency by focusing on valuable and relevant content.
+
+Define filters for the documents to be excluded using the Primary Conditions. 
+
+
+
+* Field - Select the document field on which the condition should be applied (e.g., creation date, file type).
+* Operator - Choose the comparison operator (e.g., greater than, less than, equals).
+* Value - Specify the value that the selected field should be compared against.
+
+    For instance, If you want to exclude documents created before a specific date (e.g., outdated files that may not be relevant for users), you can:
+
+* Select **Created On** as the field.
+* Choose **less than** as the operator.
+* Enter the **cutoff date** as the value.
+
+
 ## Stages available for different Extraction Strategies
 
 
@@ -130,13 +154,23 @@ Currently, Search AI offers two types of stages for transformation at this step.
    <td>NA
    </td>
   </tr>
+   <tr>
+   <td>Exclude Documents
+   </td>
+   <td>Yes
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
 </table>
 
 
 
 ## Adding a New Stage
 
-To add a new stage, click the **+New Stage** link in the left, configure the stage as required and click on **Save**.  By default, when a stage is added, it is enabled. Hence, the transformation process through the stage happens on the next application training. 
+To add a new stage, click the **+New Stage** link on the left, configure the stage as required and click on **Save**.  By default, when a stage is added, it is enabled. Hence, the transformation process through the stage happens on the next application training. 
 
 ![alt_text](./images/add-stage.png "image_tooltip")
 

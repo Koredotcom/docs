@@ -89,6 +89,8 @@ Supervisors and agents can sort Queues, Agents, and Interaction tabs to manage w
 * Sort within active filters, ensuring relevance.
 * Automatic reordering when multiple items share the same sorting metric, prioritizing by arrival time.
 
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
+
 <hr>
 
 <u> Patch Release </u>

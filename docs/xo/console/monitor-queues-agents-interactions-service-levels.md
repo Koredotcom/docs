@@ -17,24 +17,25 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
 
 In this section, you can see all the queues to which you are assigned. The number of conversations waiting to be picked up, the number of already engaged conversations, and a summary of agents assigned to a particular queue along with their current status. In addition to the above details, the supervisor can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.
 
+Clicking the sort icon allows you to sort the columns in ascending/descending order. The default sorting is by Queue Name.
+
 To monitor the agents:
 
 * On the **Monitor** tab, click the **Queue** tab.  
-<img src="../images/queues-page.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
 
 * On the left menu, click a queue that you want to view.  
-<img src="../images/queue-column.png" alt="Queue Column" title="Queue Column" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/queue-name.png" alt="Queue Name" title="Queue Name" style="border: 1px solid gray; zoom:80%;">
 
 * The queue screen appears as shown below:  
 <img src="../images/queue-details.png" alt="Queue Details" title="Queue Details" style="border: 1px solid gray; zoom:80%;">
 
 * Click the agent name. The detailed screen of the agent conversation opens up on the right.  
 
-    **Chat**:  
-    <img src="../images/agent-details.png" alt="Agent Conversation Details" title="Agent Conversation Details" style="border: 1px solid gray; zoom:70%;">  
+    **Chat**, **Messaging**, and **Voice**:  
 
-    **Email**:  
-    <img src="../images/email-details.png" alt="Email Details" title="Email Details" style="border: 1px solid gray; zoom:80%;"> 
+    The assigned agent’s name is shown immediately upon assignment, even if the agent has not yet sent a response.  
+    <img src="../images/queue-detail.png" alt="Queue Information" title="Queue Information" style="border: 1px solid gray; zoom:70%;">
 
 ### Filter
 
@@ -159,6 +160,12 @@ When a call is converted to a voicemail, it can be viewed in the Monitor tab. Su
 
 You can check agent details and monitor and intervene in ongoing conversations. The agents in this section are restricted to those assigned to the same queues as you. A list of conversations currently being handled by the agents is displayed with parameters such as state, load, first response, average response, AHT, etc.
 
+Clicking the sort icon allows you to sort the columns in ascending or descending order. The default sorting is by State.
+
+!!! Note
+
+    Sorting is unavailable for automation interactions. Removing offline agents improves performance when sorting by load, but offline agents will not be visible in this mode.
+
 The following metrics and their total counts are displayed:
 
 * **Completed**: Count of interactions completed and closed by the agent.
@@ -166,8 +173,8 @@ The following metrics and their total counts are displayed:
 * **Rejected**: Count of interactions explicitly rejected by an agent using the reject button.
 * **Unanswered**: Count of interactions assigned to an agent where the agent did not pick up the interaction within the acceptance timeout.  
 
-The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Amber colour.  
-<img src="../images/channel-selection-and-agent-tab-details.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
+The channel selection status appears on the Agents tab beside the Agent’s name. Active channels appear in Green and the disabled channels appear in Amber color.  
+<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">  
 If an agent selects a channel and logs out at the end of the day, the previously selected channel persists when the agent starts a new session. Active channels appear in green, while disabled channels appear in amber for the supervisor.
 
 * Hovering over an agent’s name displays a pop-up with the following information:
@@ -268,13 +275,15 @@ Steps to edit a filter:
 
 ### Auto Refresh When Filters are Applied
 
-When a supervisor applies a filter, the page automatically refreshes at fixed intervals to maintain real-time data accuracy. For example, any changes in the status of agents are reflected after the auto-refresh, ensuring the data is up-to-date.
+When a supervisor applies a filter, the page refreshes at fixed intervals to ensure real-time data accuracy. For example, changes in agent status appear after the auto-refresh, keeping the data up to date.
+The page refreshes every 10 seconds to update data changes. Supervisors can pause updates by clicking the **Pause** button.  
+<img src="../images/pause-button.png" alt="Pause Refresh" title="Pause refresh" style="border: 1px solid gray; zoom:80%;">  
 
-When filters are applied, the page refreshes every 5 seconds to update any changes in the data.  
-<img src="../images/auto-refresh.png" alt="Auto Refresh" title="Auto Refresh" style="border: 1px solid gray; zoom:80%;"> 
+Clicking the **Play** button resumes updates.  
+<img src="../images/resume-button.png" alt="Resume Refresh" title="Resume refresh" style="border: 1px solid gray; zoom:80%;">  
 
-A confirmation is displayed once the refresh is completed and the updated data is shown.  
-<img src="../images/refreshed-filters.png" alt="Filters Refreshed" title="Filters Refreshed" style="border: 1px solid gray; zoom:80%;"> 
+A confirmation is displayed once the refresh is completed, and the updated data is shown.  
+<img src="../images/filter-updated.png" alt="Filter Updated" title="Filter Updated" style="border: 1px solid gray; zoom:80%;">  
 
 !!! Note
 
@@ -379,8 +388,8 @@ Steps to Listen and Whisper Voice Conversations:
 
 ## Interactions
 
-You can view all live interactions on the Contact Center AI console. This view includes only interactions that involve agent transfers. A summary of the interactions view is shown below:  
-<img src="../images/interactions-tab.png" alt="Interactions Tab" title="Interactions Tab" style="border: 1px solid gray; zoom:80%;">
+You can view all live interactions on the Contact Center AI console. This view includes only interactions that involve agent transfers.  Clicking the sort icon allows you to sort the columns in ascending/descending order. A summary of the interactions view is shown below:  
+<img src="../images/interactions-tabs.png" alt="Interactions Tab" title="Interactions Tab" style="border: 1px solid gray; zoom:80%;">
 
 ### Manually Assign Conversations to an Agent and Change Queue
 
