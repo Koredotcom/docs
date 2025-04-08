@@ -10,7 +10,7 @@ When updating settings such as adding, updating, deleting phone numbers, or modi
 Before the bot publishing fails, open the Inspect tab in your browser. In the Network tab, search for the dockstatus API. You will see multiple APIs with the name dockstatus. When the bot publishing failure message appears, open the most recent dockstatus API.  
 <img src="../images/inspect-element-page.png" alt="Inspect" title="Inspect" style="border: 1px solid gray; zoom:40%;">
 
-In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the Kore Support team.  
+In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK status is displayed as "status": "FAILURE", you can report the issue to the Support team.  
 <img src="../images/dockstatus-api.jpg" alt="Dockstatus" title="Dockstatus" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent Transfer is Not Working
@@ -32,6 +32,6 @@ If a request is not being assigned to an available agent and the bot is respondi
     In case of issues, check the **WebSocket Connection** and **Registration** in the console (Agent Desktop) to ensure everything is properly connected and functioning.  
       <img src="../images/network-connection.png" alt="Websocket Connection" title="Websocket Connection" style="border: 1px solid gray; zoom:80%;">
 
-    In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Kore VG are connected.
+    In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Voice Gateway are connected.
 
-    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Kore VG. You can report this to the Kore Support team.
+    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Voice Gateway. You can report this to the Support team.
