@@ -25,7 +25,7 @@ To monitor the agents:
 <img src="../images/queues-tab.png" alt="Queues Tab" title="Queues Tab" style="border: 1px solid gray; zoom:80%;">
 
 * On the left menu, click a queue that you want to view.  
-<img src="../images/queue-name.png" alt="Queue Column" title="Queue Column" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/queue-name.png" alt="Queue Name" title="Queue Name" style="border: 1px solid gray; zoom:80%;">
 
 * The queue screen appears as shown below:  
 <img src="../images/queue-details.png" alt="Queue Details" title="Queue Details" style="border: 1px solid gray; zoom:80%;">
