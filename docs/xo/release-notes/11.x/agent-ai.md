@@ -8,15 +8,11 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### UI Enhancements
+### UI Enhancement
 
 #### Search Support in Conversation Logs
 
 The Conversation Logs section now includes a search field to let you find conversations by Conversation ID. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md)
-
-#### Gen AI integration in Agent Coaching
-
-Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
 
 ### Integration Enhancements
 
