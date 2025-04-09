@@ -60,7 +60,7 @@ Steps to edit a previously added phone number:
     <img src="../images/update-phone-number.png" alt="Update Phone Number" title="Update Phone Number" style="border: 1px solid gray; zoom:80%;">
 
 2. On the Forward to Phone Number page, click **Change**.  
-    <img src="../images/change-button.png" alt="Change Button" title="Change Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/change-button.png" alt="Change Button" title="Change Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Make the necessary edits and click **Done**.
 4. A success confirmation message is displayed when the phone number is updated.
@@ -91,7 +91,7 @@ Under the SIP Trunk tab, you can configure the network IPs and domains, DID numb
 Steps to configure SIP Trunk:
 
 1. Click **Configure SIP Trunk**.  
-    <img src="../images/sip-numbers.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;">
 
 2. On the **Configure SIP Trunk** page, configure the following:
     1. **Product Selection**: Select the product for which the SIP Trunk is being configured. You can select from the following options:
@@ -132,29 +132,29 @@ Steps to configure SIP Trunk:
         * X-AgentLastName: {{agentLastName}}
 
     12. Click **Next**.  
-        <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:70%;">
 
     13. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
     14. Click **Save**.  
-    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:70%;">  
 
         Please wait for upto ten minutes after saving for the IPs to be whitelisted.  
         <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
     15. The selected information appears on the SIP Numbers tab.  
-        <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/sip-trunk-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
 
 ### Attach Flow
 
 Steps to attach a flow to the SIP Number:
 
 1. Click **+ Attach Flow**. Hovering over the link icon displays "**No Flow Attached**".  
-    <img src="../images/attach-flow-sip.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/attach-sip-flow.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:80%;">
 
 2. Select a **Start Flow** to add to individual numbers and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 
 3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays "**Configured**".  
-    <img src="../images/flow-attached-sip.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/sip-flow-attached.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:80%;">
 
 #### Edit a SIP Number
 
@@ -164,10 +164,10 @@ Steps to edit a previously added SIP number:
     <img src="../images/update-sip-number.png" alt="Update Button SIP Number" title="Update Button SIP Number" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the necessary changes on the Transfer from IVR page, and click **Next**.  
-    <img src="../images/edit-sip-transfer.png" alt="Edit SIP Number" title="Edit Button SIP Number" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-sip-transfer.png" alt="Edit SIP Number" title="Edit Button SIP Number" style="border: 1px solid gray; zoom:70%;">
 
 3. Make the necessary changes on the Forward to Phone Number page, and click **Save**.  
-    <img src="../images/edit-forward-to-phone-number-page.png" alt="Edit Forward to Phone Number" title="Edit Forward to Phone Number" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-forward-to-phone-number-page.png" alt="Edit Forward to Phone Number" title="Edit Forward to Phone Number" style="border: 1px solid gray; zoom:70%;">
 
 4. A success confirmation message is displayed when the phone number is updated.
 
@@ -188,7 +188,7 @@ Steps to delete a SIP number:
 ## Voice Preferences
 
 You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
-    <img src="../images/voice-preferences.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/voice-preference.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
 Steps to configure Voice Preferences:
 
@@ -298,10 +298,10 @@ The following dialects are supported:
 Voice call properties are fundamental aspects that define the quality and reliability of communication over Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
 
 You can configure the voice call properties by going to the Voice Preferences tab and clicking **Configure** on the **Voice Call Properties** section.  
-    <img src="../images/configure-voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:80%;">
 
 The Voice Call Properties window is displayed.  
-    <img src="../images/voice-call-properties-window.png" alt="Voice Call Properties Window" title="Voice Call Properties Window" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/voice-call-properties-window.png" alt="Voice Call Properties Window" title="Voice Call Properties Window" style="border: 1px solid gray; zoom:70%;">
 
 #### End of Task Behavior
 
