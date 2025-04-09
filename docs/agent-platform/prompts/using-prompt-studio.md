@@ -24,11 +24,12 @@ For assistance, you can click "Generate prompt" to help expand your prompt into 
 
     <img src="../images/promptcanvas_human_prompt.png" alt="Human prompt" title="Human prompt" style="border: 1px solid gray; zoom:80%;">
 
-3. In the **Response JSON schema** field, define a JSON schema for structured responses.  
+3. In the **Response JSON schema** field, you can define a JSON schema to structure the model's responses.
 
-    You can define a response format for the model’s response when writing a prompt. 
-    This step is optional and is driven by the model selection. It can be enabled if the selected model supports the response format. If the model does not natively support the specified format, the schema is sent with the prompt, allowing the model to decide whether to respond in the requested format. By default, if no schema is provided, the response format is "text". Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, anyOf.
-    Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. Invalid or mismatched schemas will trigger errors, which will be shown in the error log. You must resolve these errors before proceeding.
+    This step is optional and depends on the selected model. If the chosen model supports the response format, you can use this feature. If not, the schema will be included with the prompt, allowing the model to determine whether it can respond in the requested format. By default, if no schema is provided, the model will respond with plain text.
+
+    Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.
+
 
     <img src="../images/prompts_json.png" alt="JSON schema" title="JSON schema" style="border: 1px solid gray; zoom:80%;">
 
