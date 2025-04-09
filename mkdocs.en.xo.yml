@@ -151,7 +151,7 @@ nav:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
             - Voice Gateway: 
-              - Configure Gateway: channels/voice-gateway/configure-voice-gateway.md
+              - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
                 - Call Control Parameters: channels/voice-gateway/call-control-parameters.md
                 - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
@@ -187,8 +187,15 @@ nav:
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - Agent Node:
-        - Overview: automation/agent-node/agent-node.md
+        - Overview and Configuration: automation/agent-node/working-with-agent-node.md
         - Prompt Setup: automation/agent-node/prompt-setup.md
+        - Quick Start Tutorials:
+          - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
+          - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
+          - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
+          - Model Configuration: automation/agent-node/tutorials/model-configuration.md
+          - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
+          - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
     - Use Cases:
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 

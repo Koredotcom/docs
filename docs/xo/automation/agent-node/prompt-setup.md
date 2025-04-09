@@ -634,12 +634,6 @@ To add an Agent Node V2 prompt, follow the steps:
 <img src="../images/selectv2.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
 
 
-
-
-
- 
-
-
 ### Expected Output Structure
 
 Defines the standardized format required by the XO Platform to process LLM responses effectively.
@@ -760,18 +754,6 @@ Defines the standardized format required by the XO Platform to process LLM respo
   "toolName": "get_delivery_date",
   "args": {
     "order_id": "123456"
-  }
-}</pre>
-    </td>
-  </tr>
-  <tr>
-    <td>Default - Entity Collection Tool</td>
-    <td>
-      <pre>{
-  "toolCallId": "call_q5yiBbnXPhEPqkpzsLv2ishi",
-  "toolName": "collect_entities",
-  "args": {
-    "PatientName": "Deeksha S"
   }
 }</pre>
     </td>
