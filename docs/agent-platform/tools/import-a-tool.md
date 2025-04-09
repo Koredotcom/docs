@@ -1,6 +1,8 @@
-# Import a Tool 
+# Import a Tool
 
 Using import functionality, you can create a new tool or add it as a version to an existing tool in your account. The import process preserves tool configuration while handling environment variables, errors, and role permissions.
+
+When a tool is imported, its prompts, properties, and linked tools with their configurations are carried over. This ensures that the tool works seamlessly in the new system. Additionally, any models present in the exported tool — specifically external and open-source models — will be automatically linked and integrated. If any child tools are missing or there are conflicts, the system will notify you.
 
 Creating a new tool involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported tool a unique name to avoid conflicts with existing tool. [Learn more](../tools/import-a-tool.md/#import-to-create-a-new-tool){:target="_blank"}.
 
@@ -11,6 +13,18 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Users with only <b>Viewer</b> permissions cannot import a tool.</p></div>
+
+## Best Practices
+
+* **Export the tool first**: Always export the current tool version before importing. This ensures you have all the necessary configurations.
+
+* **Check the environment and load dependencies**: Ensure the new environment is set up with all required dependencies such as models, linked tools, and other configurations before importing. This helps ensure compatibility and smooth functionality after the import.
+    * Verify that the correct model is already available in the new environment.
+    * Ensure any linked tools are already present in the new environment, by the same name as it is preferred for auto-linking.
+    * Check environment variables and configuration files to prevent any mismatches.
+
+* **Import the parent tool and version**: After verifying the dependencies in the new environment, import the parent tool and any associated versions. Ensure there are no conflicts with existing tools.
+
 
 ## Import to Create a New Tool 
 

@@ -126,11 +126,17 @@ To add and configure the node, follow the steps below:
     <p class="admonition-title">Note</p>
     <p>Whisper models process up to <b>224 tokens</b> in the input prompt and ignore any input exceeding this limit.</p>
     </div>
-
+                
     <div class="admonition warning">
     <p class="admonition-title">Standard Error</p>
     <p>When the Model is not selected, the prompt details are not provided, or both, the error message “<i>Proper data needs to be provided in the LLM node</i>” is displayed.</p>
     </div>
+
+    * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
+    You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
+    Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. 
+    If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.   
+
 
 6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions. 
 <img src="../images/connections-audio-to-text.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;">

@@ -56,10 +56,10 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 
             Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
-    * **Response JSON schema**:  Define a JSON schema for structured responses. Use the toggle to provide the JSON schema for the model’s response.  
-    This step is optional and can be enabled if the model supports the response format.
-    By default, the response format is ‘text’ if no schema is provided. Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, anyOf.  
-    Ensure the schema follows the standard outlined in: Defining JSON schema. Invalid or mismatched schemas will trigger errors, highlighted in red, and shown in the error log. You must resolve these errors before proceeding.
+    * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
+        You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
+        Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. 
+        If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.
 
     * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
@@ -71,12 +71,13 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 
         * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
 
-6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.  
-        <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
+6. Click the **Connections** icon and select the **Go to Node** for success and failure conditions.
 
     * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.
 
     * **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
+
+        <img src="./../images/gen-ai-connections.png" alt="AI Actions" title="AI Actions" style="border: 1px solid gray; zoom:70%;">
 
 7. To add tools, click the **Tool Calling** icon. When you select a model that supports tool calling, the ‘*Tool calling available*’ tab is displayed in the Properties panel. You can configure tool calling settings from this tab.
 

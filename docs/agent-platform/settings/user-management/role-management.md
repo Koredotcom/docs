@@ -100,7 +100,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Admin</strong>
    </td>
-   <td>Users have access to all the permissions except model deletion, billing, and Kore connector.
+   <td>Users have access to all the permissions except model deletion, billing, and connectors.
    </td>
   </tr>
   <tr>

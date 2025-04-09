@@ -2,7 +2,7 @@
 
 Models Studio empowers you to enhance base models by fine-tuning them directly within the product using your enterprise's proprietary data. This allows you to create customized models tailored to your specific needs. You can also seamlessly integrate models from external sources and open-source models, expanding the range of available models to address your unique requirements.
 
-### Key Features
+## Key Features
 
 * **Fine-tuned model**: Customize existing models to suit your specific requirements. [Learn more](../models/fine-tune-models/create-a-fine-tuned-model.md).
 

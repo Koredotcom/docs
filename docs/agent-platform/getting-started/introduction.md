@@ -30,9 +30,6 @@ The component employs a hybrid approach to retrieval, combining multiple methods
 
 It provides comprehensive management of the interaction state throughout its entire lifecycle. It tracks and maintains the context of each interaction, ensuring a seamless and coherent user experience. By keeping a record of previous interactions, user preferences, and relevant data, the component enables agents to maintain continuity and provide contextually appropriate responses.
 
-The component uses short-term memory (recent dialog history) and long-term knowledge (broader knowledge base) to enhance conversation context and enable more natural and intelligent agent responses.
-It supports both real-time and offline processing. Synchronous mode allows for live interactions, while asynchronous mode handles tasks that require longer processing or human intervention. Human-in-the-loop ensures accuracy and compliance.
-
 ### Models
 
 The component offers a comprehensive set of capabilities for managing and leveraging AI models within the agent platform. It provides the flexibility to fine-tune and optimize models specifically for different domains or use cases. This allows organizations to adapt models to their unique requirements, improving performance and accuracy in specific contexts. 
@@ -74,7 +71,7 @@ To further enhance transparency and understanding, the component supports the st
 
 ### Agent Protocol
 
-The component establishes a solid foundation for agent communication and collaboration using an end-to-end API with support for multimodal content, real-time streaming, and external agent integration. 
+The component establishes a solid foundation for agent communication and collaboration using an end-to-end API, with support for multimodal content, real-time streaming, and external agent integration. 
 
 It enables agents to understand and generate diverse types of data, process information in real-time, and seamlessly integrate with external systems. This comprehensive protocol empowers organizations to build sophisticated agent-based solutions that can interact with users and other agents in a natural and efficient manner, ultimately enhancing the overall user experience and driving better outcomes.
 
