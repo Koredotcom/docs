@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
-## v1.0.2 April 5, 2025
+## v1.0.2 April 05, 2025
 
 <u> Minor Release </u>
 
@@ -141,7 +141,7 @@ Prompt Studio now supports structured output, allowing users to define a JSON sc
 Platform users can now set up an Authorization Profile using OAuth v2 in the Settings console to define the attributes for robust, customisable,, and reliable user authentication and authorization. This enables secure and confidential access to external models via custom APIs and API and AI nodes for Tools.
 
 
-<font size="4">Feature Enhancement</font>
+<font size="4">Feature Enhancements</font>
 
 * Upgraded the TRL version of ml-training-service to support DPO RLHF fine-tuning, ensuring seamless functionality with custom parameters.
 
