@@ -151,7 +151,7 @@ nav:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
             - Voice Gateway: 
-              - Configure Gateway: channels/voice-gateway/configure-voice-gateway.md
+              - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
                 - Call Control Parameters: channels/voice-gateway/call-control-parameters.md
                 - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md

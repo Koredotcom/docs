@@ -6,8 +6,8 @@ Voice Gateway is a comprehensive voice automation solution that manages inbound 
 
 You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
 
-Go to **Automation AI** > **Flows & Channels** > **Channels** > **Voice Gateway**.  
-<img src="../images/kore-vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
+Go to **The Product (For example, Automation AI/ Contact Center AI)** > **Flows & Channels** > **Channels** > **Voice Gateway**.  
+<img src="..//images/vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Phone Numbers
 
@@ -21,20 +21,20 @@ Steps to buy a new phone number:
 <img src="../images/buy-new-phone-number.png" alt="Buy New Phone Number" title="Buy New Phone Number" style="border: 1px solid gray; zoom:80%;">
 
 2. You can configure a custom local or toll-free number by clicking **Get New Phone Number** on the **Phone Number** window.  
-<img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/buy-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:80%;">
 
     1. Select the Select the **Country**.
     2. Select either the **Local** or **Toll-Free Number** option.
     3. Select the **State**.
     4. Enter the **Area Code**.
     5. After the above fields are configured, Contact Center AI displays the monthly fee and the operational charge per minute.  
-        <img src="../images/get-new-phone-number-details.png" alt="Get New Phone Number Details" title="Get New Phone Number Details" style="border: 1px solid gray; zoom:100%;">
+        <img src="../images/get-new-phone-number-details.png" alt="Get New Phone Number Details" title="Get New Phone Number Details" style="border: 1px solid gray; zoom:70%;">
 
 3. Configure an available number with the following steps:
 
     1. Click the **Get Number** button.
     2. On the Forward to Phone Number page, select whether the number will be reserved for Inbound Calls, Outbound Calls, or both, and click **Done**.  
-        <img src="../images/forward-to-phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/forward-to-phone-number.png" alt="Forward To Phone Number" title="Forward To Phone Number" style="border: 1px solid gray; zoom:70%;">
     3. A success confirmation message is displayed, and the phone number is added.
     4. You can now call this number to test your Use Cases.
     5. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
@@ -44,13 +44,13 @@ Steps to buy a new phone number:
 Steps to attach a flow to the phone number:
 
 1. Click **+ Attach Flow**. Hovering over the pie icon displays "**No Flow Attached**".  
-    <img src="../images/attach-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/attach-a-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:80%;">
 
 2. Select a **Start Flow** you want to add to this number and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).  
     <img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:80%;">
 
 3. The attached flow appears. Hovering over the pie icon displays "**Configured**".  
-    <img src="../images/voice-flow-attached.png" alt="Voice Flow Configured" title="Voice Flow Configured" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/flow-is-attached.png" alt="Voice Flow Configured" title="Voice Flow Configured" style="border: 1px solid gray; zoom:80%;">
 
 #### Edit a Phone Number
 
