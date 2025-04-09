@@ -56,9 +56,10 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 
             Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
-    * **Response JSON schema**:  Define a JSON schema for structured responses. Use the toggle to provide the JSON schema for the model’s response. This step is optional and is driven by the model selection. It can be enabled if the selected model supports the response format. By default, the response format is ‘text’ if no schema is provided. Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, anyOf.  
-    Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}.   
-    Invalid or mismatched schemas will trigger errors, which will be shown in the error log. You must resolve these errors before proceeding.
+    * **Response JSON schema**:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   
+        You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
+        Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: [Defining JSON schema](../perform-other-actions-on-the-flow-builder/defining-json.md){:target="_blank"}. 
+        If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.
 
     * **Model Configurations**: Use hyperparameters to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
