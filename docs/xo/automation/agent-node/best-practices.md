@@ -1,6 +1,6 @@
 
 
-# Agent Node: Best Practices Guide
+# Agent Node: Best Practices
 
 
 ## Model Selection and Configuration

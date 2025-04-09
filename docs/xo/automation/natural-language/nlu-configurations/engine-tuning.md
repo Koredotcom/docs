@@ -616,7 +616,7 @@ Disable
 ">Suppress_Fallback_On_TaskFulfilment
 </a>
    </td>
-   <td>When enabled, it prevents fallback triggers by ignoring residual user input after a dialog ends with the "fulfilled" reason, specifically when the "End of Task" event is disabled.
+   <td>When enabled, this prevents the platform from triggering the Fallback or Intent Not Found event if a dialog ends with a 'fulfilled' reason and the “End of Task” event is turned off.
    </td>
    <td>FM
    </td>
@@ -883,9 +883,9 @@ When disabled, the platform generates a strict pattern that does ‘exact matchi
 
 ### Suppress_Fallback_On_TaskFulfilment
 
-This feature enables users to prevent the platform from processing additional user input after a dialog ends with a **fulfilled** end reason, especially in scenarios where the **End of Task** event is **disabled** in the Virtual Assistant configuration.
+This feature allows users to stop the platform from triggering a Fallback or Intent Not Found event when a dialog ends with a 'fulfilled' end reason and the **End of Task** event is disabled in the Automation App definition.
 
-This allows users (especially those leveraging **BotKit** for task orchestration) to maintain precise control over dialog closures without unintended **Intent Not Found** triggers.
+This helps platform users (especially those using BotKit to trigger tasks dynamically at the end of a dialog) maintain better control and avoid unexpected **Intent Not Found** triggers.
 
 ## **Spell Correction settings**
 

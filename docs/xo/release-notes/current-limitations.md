@@ -13,4 +13,3 @@ We're actively working to address the following limitations in XO v11. This list
 * [What's New in XO v11](../getting-started/whats-new-in-xo-platform.md)
 * [Key Differences - XO v11 vs. v10](../getting-started/key-differences-between-xo11-and-xo10.md)
 * [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)
-

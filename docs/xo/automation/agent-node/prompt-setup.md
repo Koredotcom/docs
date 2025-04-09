@@ -1,31 +1,30 @@
 
 # Agent Node Prompt Setup
 
-## Overview
 
-This article provides a comprehensive overview of how to implement and optimize LLM-based bots in Kore.ai using the Agent Node, focusing on prompt engineering techniques to refine bot behavior and improve the user experience.
+This article provides a comprehensive overview of how to implement and optimize LLM-based virtual assistance in Kore.ai using the Agent Node, focusing on prompt engineering techniques to refine virtual assistance behavior and improve the user experience.
 
-Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered bots to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables bots to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
+Prompt engineering is the art and science of crafting clear, effective instructions for LLM-powered virtual assistance to optimize their performance. By thoughtfully designing the System Context, developers can precisely control how the model communicates, ensure it follows specific guidelines, and refine its processing of user inputs. This strategic approach enables virtual assistance to deliver responses that are more accurate, contextually appropriate, and aligned with the intended user experience.Defining Context and Personality.
 
 To ensure consistency and alignment across interactions, apply prompt engineering techniques to define:
 
 Context Definition:
 
-* Specify the bot’s role (e.g., chatbot or voice assistant) and the communication channel it operates within (text-based or voice-based).
+* Specify the virtual assistance’s role (e.g., virtual assistance or voice assistant) and the communication channel it operates within (text-based or voice-based).
 * Outline the expected response length, preferred level of verbosity, and formality of responses.
-* Provide a structured interaction goal, detailing the bot’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
-* Indicate the company or service the bot represents, ensuring that brand voice, terminology, and industry-specific nuances are reflected in responses.
-* Define whether the bot should proactively offer assistance, clarify ambiguous inputs, or wait for explicit user queries before responding.
+* Provide a structured interaction goal, detailing the virtual assistance’s primary function, such as customer support, appointment scheduling, or troubleshooting guidance.
+* Indicate the company or service the virtual assistance represents, ensuring that brand voice, terminology, and industry-specific nuances are reflected in responses.
+* Define whether the virtual assistance should proactively offer assistance, clarify ambiguous inputs, or wait for explicit user queries before responding.
 
 Personality Definition 
 
 Using the Conversations with Things framework, a conversation design methodology outlined in the book Conversations with Things, define:
 
-* Interaction goals: Define what the bot aims to achieve in conversations, such as assisting users, answering questions, or guiding them through processes.
-* Level of personification: Decide how human-like the bot should be, ranging from a fully automated assistant to a more personable, engaging entity.
-* Power dynamics in user interactions: Establish whether the bot takes a directive approach (authoritative) or a supportive role (collaborative) in assisting users.
-* Character traits: Identify core attributes of the bot's personality, such as professionalism, friendliness, or humor, to ensure consistency in interactions.
-* Tone and key behavioral traits: Set the bot’s communication style, including formality, friendliness, and how it responds to user inquiries.
+* Interaction goals: Define what the virtual assistance aims to achieve in conversations, such as assisting users, answering questions, or guiding them through processes.
+* Level of personification: Decide how human-like the virtual assistance should be, ranging from a fully automated assistant to a more personable, engaging entity.
+* Power dynamics in user interactions: Establish whether the virtual assistance takes a directive approach (authoritative) or a supportive role (collaborative) in assisting users.
+* Character traits: Identify core attributes of the virtual assistance personality, such as professionalism, friendliness, or humor, to ensure consistency in interactions.
+* Tone and key behavioral traits: Set the virtual assistance’s communication style, including formality, friendliness, and how it responds to user inquiries.
 
 The framework provides a structured approach to designing conversational experiences, ensuring that virtual assistants maintain consistency, align with user expectations, and create meaningful interactions.
 
@@ -117,9 +116,9 @@ This design simplifies configuration and improves entity extraction accuracy.
 For a more practical approach, the differences through scenarios can make the comparison more engaging.
 
 
-* Scenario 1: Maintaining a Legacy Bot 
+* Scenario 1: Maintaining a Legacy virtual assistance 
 
-  A banking bot that has predefined customer verification steps and strict entity collection. 
+  A banking virtual assistance that has predefined customer verification steps and strict entity collection. 
   
   Uses **V1 prompts** because it requires explicit entity handling and manual exit scenarios. 
 
@@ -131,7 +130,7 @@ For a more practical approach, the differences through scenarios can make the co
 
 * Scenario 3: Handling a Mixed Workflow 
 
-  A chatbot for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
+  A virtual assistance for insurance claims processing that requires predefined data collection but also uses external tools for verification. 
   Uses **V1 prompts** for entity collection but considers **V2 prompts** for automation and integration with external tools. 
 
 
@@ -244,7 +243,7 @@ For a more practical approach, the differences through scenarios can make the co
 #### Implementation Differences
 
 * Format Requirements:
-  * Both require responses to include conv_status , bot response, and collected entities
+  * Both require responses to include conv_status , virtual assistance response, and collected entities
   * Streaming prompts must structure this content for incremental delivery
 * Error Handling:
   * Regular prompts can be fully validated before delivery
@@ -514,7 +513,7 @@ For more information on Custom Prompt, see [Prompts and Requests Library](../../
 
 #### Add V1 Custom Prompt
 
-For details, see [When to use V1 Prompt.](#when-to-use-v1-prompts)
+For details, see [When to use V1 Prompt.](#version-1-legacy-framework)
 
 To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
@@ -582,7 +581,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 #### Add V2 Custom Prompt
 
-For details, see [When to use V2 Prompt.](#when-to-use-v2-prompts)
+For details, see [When to use V2 Prompt.](#version-2-tool-calling-framework)
 To add an Agent Node V2 prompt, follow the steps:
 
 
@@ -877,7 +876,7 @@ The context object is used to get the entities and the parameters of tools.
    <td>{context.AI_Assisted_Dialogs.GenAINodeName.active_tool_args.{parameterName}}
    </td>
    <tr>
-   <td>Bot Response Path
+   <td>Virtual Assistance Response Path
    </td>
    <td>{{context.AI_Assisted_Dialogs.bot_response.bot}}
    </td>
@@ -898,7 +897,7 @@ The context object is used to get the entities and the parameters of tools.
   <tr>
    <td>LLM_Text_Response_Path
    </td>
-   <td>The key within the LLM response payload which gives the virtual assistant’s response that should be displayed to the end-user during user-bot conversation.
+   <td>The key within the LLM response payload which gives the virtual assistant’s response that should be displayed to the end-user during user-virtual assistance conversation.
    </td>
   </tr>
   <tr>
@@ -916,7 +915,7 @@ The context object is used to get the entities and the parameters of tools.
 
 The Dynamic Variables like Context, Environment, and Content variables can now be used in pre-processor scripts, post-processor scripts, and custom prompts.
 
-[Learn more](../../../../app-settings/variables/using-bot-variables.md).
+[Learn more](../../app-settings/variables/using-bot-variables.md).
 
 <table>
   <tr>
