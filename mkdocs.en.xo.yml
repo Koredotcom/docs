@@ -193,7 +193,7 @@ nav:
           - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
           - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
           - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
-          - Model Configuration: automation/agent-node/tutorials/model-configurations.md
+          - Model Configuration: automation/agent-node/tutorials/model-configuration.md
           - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
           - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
     - Use Cases:
