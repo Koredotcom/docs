@@ -16,13 +16,19 @@ Search AI now features an Agentic RAG architecture that leverages LLMs to improv
 * Result Type Classification Agent: Determines whether the user's query requires a direct answer and search results or only a list of search results in the response.
 * Metadata Extractor Agent: Extracts the source and fields from user queries and maps them to standard fields of the source, which helps to apply appropriate filters and enhance retrieval accuracy.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/rag-agents.md)
+
 ### Exclude Stage in Document Workbench
 
-Search AI now offers an **Exclude Stage in the Document Workbench** to restrict chunk generation from extracted content. This feature provides greater control over content processing, allowing users to exclude unnecessary content, thereby improving search relevance and reducing processing time. Learn more.
+Search AI now offers an **Exclude Stage in the Document Workbench** to restrict chunk generation from extracted content. This feature provides greater control over content processing, allowing users to exclude unnecessary content, thereby improving search relevance and reducing processing time. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
 ### Enhanced SharePoint Integration with Restricted Permissions
 
-To address security concerns and provide more controlled access, SearchAI now supports **<code>Sites.Selected</code>** permission for SharePoint integration. This limits access to only the specific site collections explicitly granted by administrators. This is implemented by introducing the **OAuth Client credentials grant type** auth mechanism for SharePoint Integration. Learn more.
+To address security concerns and provide more controlled access, SearchAI now supports **<code>Sites.Selected</code>** permission for SharePoint integration. This limits access to only the specific site collections explicitly granted by administrators. This is implemented by introducing the **OAuth Client credentials grant type** auth mechanism for SharePoint Integration. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/sharepoint.md)
 
 
 ### Channel Aware Response Formatting
@@ -39,24 +45,28 @@ Search AI now offers expanded multilingual support with the addition of the **Uk
 * Understand and interpret queries in supported languages.
 * Search and deliver answers and results in the same language as the user query.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/language-support.md)
+
 
 ### Secure One-Time URLs for Uploaded Documents
 
-To enhance security, the citations or references in the search results and answers will now have one-time-use URLs, which **expire after a single** **use or within 15 minutes**, whichever occurs first. This feature applies to all uploaded documents and is enabled by default. It ensures controlled and temporary access to cited documents and aims to prevent the unauthorized sharing of URLs. Learn more.
+To enhance security, the citations or references in the search results and answers will now have one-time-use URLs, which **expire after a single** **use or within 15 minutes**, whichever occurs first. This feature applies to all uploaded documents and is enabled by default. It ensures controlled and temporary access to cited documents and aims to prevent the unauthorized sharing of URLs. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/advanced-configurations/single-use-URLs.md)
 
 
 ### New Search AI Connectors
 
 Search AI extends support for eight new connectors, enabling seamless content ingestion and retrieval from PagerDuty, Figma, LumApps, Zoho CRM, TestRail, DataDog, Jenkins, and Zeplin. These connectors enhance enterprise search by integrating knowledge from various collaboration and productivity platforms. They also enable access control for the content ingested from the applications. Listed below are the connectors and the type of content that can be ingested from the corresponding applications. 
 
-* DataDog - Metrics, Dashboard, and Monitors
-* Figma– Figma Files
-* Jenkins - Dashboard, Builds, Jobs, and Plugins
-* LumApps - Pages, News, Custom Objects, and Community Posts
-* PagerDuty– Ingests Escalation Policies and Schedules
-* TestRail - Test cases 
-* Zeplin - Screens
-* Zoho CRM - Leads, Accounts, Contacts, and Deals
+* [DataDog](./../../searchai/content-sources/connectors/datadog.md) - Metrics, Dashboard, and Monitors
+* [Figma](./../../searchai/content-sources/connectors/figma.md)– Figma Files
+* [Jenkins](./../../searchai/content-sources/connectors/jenkins.md) - Dashboard, Builds, Jobs, and Plugins
+* [LumApps](./../../searchai/content-sources/connectors/lumapps.md) - Pages, News, Custom Objects, and Community Posts
+* [PagerDuty](./../../searchai/content-sources/connectors/pagerduty.md)– Ingests Escalation Policies and Schedules
+* [TestRail](./../../searchai/content-sources/connectors/testrail.md) - Test cases 
+* [Zeplin](./../../searchai/content-sources/connectors/zeplin.md) - Screens
+* [Zoho CRM](./../../searchai/content-sources/connectors/zoho.md) - Leads, Accounts, Contacts, and Deals
 
 <hr>
 

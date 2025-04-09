@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
-## v11.12.0 April 5, 2025
+## v11.12.0 April 05, 2025
 
 <u>Minor Release</u>
 
@@ -10,13 +10,13 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 ### UI Enhancements
 
+#### Gen AI Integration in Agent Coaching
+
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
+
 #### Search Support in Conversation Logs
 
 The Conversation Logs section now includes a search field to let you find conversations by Conversation ID. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md)
-
-#### Gen AI integration in Agent Coaching
-
-Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
 
 ### Integration Enhancements
 
