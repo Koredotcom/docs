@@ -153,6 +153,8 @@ Platform users can now set up an Authorization Profile using OAuth v2 in the Set
 * Fixed an issue where the output JSON in the model traces for the Whisper model in the Audio-To-Text node was returning null.
 
 
+<hr>
+
 
 ## v1.0.1 March 14, 2025
 
