@@ -21,7 +21,6 @@ Key benefits
 * Ability to combine and orchestrate cross-platform agent capabilities.
 
 
-
 **Integration with XO Platform**
 
 Agent Platform now seamlessly integrates with the XO Platform. This integration simplifies the creation of highly contextual, self-service automation experiences from XO using multi-agent orchestration powered by Agentic Apps.
@@ -42,7 +41,6 @@ Key features
 * Real-time Voice Streaming: Enables real-time voice interactions when the Kore Voice Gateway is selected as the channel.
 * Voice Streaming to Users: Supports streaming voice responses to users in real-time based on agent responses.
 * Model and Prompt Selection: Provides options to select supported AI models and prompts specific to voice interactions.
-
 
 
 **Enhanced Tool Integration and Management**
@@ -67,7 +65,6 @@ Key features
 * Flexible Agent Selection: When creating application versions, users can choose from the current draft, previous versions, or specific versions of agents and tools, ensuring optimal compatibility and performance.
 * Unified Version Tracking: Agent versions automatically align with application versions, simplifying tracking and management of complex, multi-component systems.
 * Seamless Environment Management: Effortlessly deploy and manage different versions of applications across development, testing, and production environments, ensuring consistency and reliability.
-
 
 
 **Enhanced Tool Tracing and Logs**
@@ -130,15 +127,14 @@ CTranslate2 (CT2) models have been optimized to reduce latency and enhance perfo
 
 **Structured Output in Prompt Studio**
 
-Prompt Studio now supports structured output, allowing users to define a JSON schema for model responses when writing prompts. This optional feature can be enabled if the model supports the specified format, and if not, the schema is sent with the prompt for the model to determine the response format.
-    Supported schema types include String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Currently, the JSON schema from the prompt template cannot be persisted to the AI node. We are working on adding capabilities to support structured output across various impact areas on the platform, and this feature will be included in the next release.
+Prompt Studio now supports structured output, allowing users to define a JSON schema for model responses when writing prompts. This optional feature can be enabled if the model supports the specified format, and if not, the schema is sent with the prompt for the model to determine the response format. Supported schema types include String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Currently, the JSON schema from the prompt template cannot be persisted to the AI node. We are working on adding capabilities to support structured output across various impact areas on the platform, and this feature will be included in the next release.
 
 
 <font size="4">Settings</font>
 
 **Introducing OAuth2 Authorization**
 
-Platform users can now set up an Authorization Profile using OAuth v2 in the Settings console to define the attributes for robust, customisable,, and reliable user authentication and authorization. This enables secure and confidential access to external models via custom APIs and API and AI nodes for Tools.
+Platform users can now set up an Authorization Profile using OAuth v2 in the Settings console to define the attributes for robust, customizable,, and reliable user authentication and authorization. This enables secure and confidential access to external models via custom APIs and API and AI nodes for Tools.
 
 
 <font size="4">Feature Enhancements</font>
@@ -155,12 +151,19 @@ Platform users can now set up an Authorization Profile using OAuth v2 in the Set
 
 <hr>
 
+## v1.0.1 March 22, 2025
 
-## v1.0.1 March 14, 2025
+<u> Patch Release </u>
 
-<u> Minor Release </u>
+This update includes only bug fixes.
 
-This update includes new features and feature enhancements summarized below.
+<hr>
+
+## v1.0 March 14, 2025
+
+<u> Major Release </u>
+
+This update includes new features and enhancements summarized below.
 
 **New Features**
 
