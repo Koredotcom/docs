@@ -1,13 +1,12 @@
 # Agent Real-time Coaching
 
 ## Introduction
-Contact center agents are often under pressure to provide better customer experiences. Dealing with high call volumes and complex conversations can make it challenging for agents to meet or exceed customer expectations without sufficient support, guidance, and tools.
 
-The Real-time Agent Coaching feature enables real-time coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur.
+Contact center agents often handle high call volumes and complex conversations, making it difficult to consistently meet customer expectations without the right support, guidance, and tools. The **Real-Time Agent Coaching** feature helps supervisors support agents by analyzing utterances and speech patterns during calls.
 
-As a contact center supervisor, you can view triggered utterances, including the frequency of their occurrence, and evaluate how well agents follow the recommended actions within a specific time frame. You can also review speech patterns such as cross talks, dead air, and speech speed to help agents optimize their communication style.
+You can configure triggers—such as specific utterances and speech patterns—for Agent AI to provide real-time coaching, including on-screen hints, nudges, or manager notifications. You can track triggered utterances, review their frequency over time, and assess how well agents follow recommended actions. You can also analyze speech patterns—such as cross talk, dead air, and speaking speed—to help agents improve communication.
 
-This document is meant for the contact center supervisors and explains everything about the Real-time Agent Coaching feature, including rules, associated triggers, and actions.
+This guide is meant for the Contact Center supervisors and explains everything about the Real-time Agent Coaching feature, including rules, triggers, and actions.
 
 ## Rules
 
@@ -163,17 +162,20 @@ Trigger setting is essential to rule creation. You can’t have a rule without a
 
 * Utterance Triggers
 * Speech Analysis Triggers
+* Gen AI Utterances
 
 ### Utterance Triggers
-Utterances are inputs from either the customers or the agents. In Utterance Triggers, you set up conditions like input from the customer or agent, the number of times the input came, and the time frame within which the input came to set off the trigger.
+Utterances are inputs from customers and agents. In Utterance Triggers, you set up conditions like input from customers or agents, the number of times the input came, and the time frame within which the input came to set off the trigger.
 
 #### Steps to set up Utterance Triggers:
 1. Go to the rule trigger creation page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule). 
 2. Under **When**, click the **+ Add a trigger** button.
-3. Select **Utterance**.
+3. Select **Utterance**.  
+   <img src="../agent-coaching-images/select-utterance.png" alt="select-utterance" title="select-utterance" style="border: 1px solid gray; zoom:80%;"> 
+
 4. Click **{select person}**.
 5. Select either **Agent** or **Customer**.
-6. Click **set utterances**.
+6. Click **{set utterances}**.
 7. Enter an utterance that the user (customer or agent) may use in the **Utterances** box.
 8. Select the utterance you have entered.
     * There may be other matching utterances the AI suggests:
@@ -218,7 +220,6 @@ This feature analyzes the speech pattern or event of both the customer and the a
 
 #### Steps to set up Speech Analysis Triggers
 1. Select **Speech Analysis** after clicking **When**> **+Add a trigger**.
-    <img src="../agent-coaching-images/speech-analysis-trigger-selection-14.png" alt="speech-analysis-trigger-selection" title="speech-analysis-trigger-selection" style="border: 1px solid gray; zoom:80%;">
 2. Click **{speech type}** and select a type for analysis.
     <img src="../agent-coaching-images/speech-type-trigger-15.png" alt="speech-type-trigger" title="speech-type-trigger" style="border: 1px solid gray; zoom:80%;"> 
     * If you select **Cross Talk**, the following screen appears:
@@ -281,6 +282,21 @@ This feature analyzes the speech pattern or event of both the customer and the a
 
             2. Enter time in minutes and press the **Enter** key.
                <img src="../agent-coaching-images/talk-ratio-in-between-by-time-35.png" alt="talk-ratio-in-between-by-time" title="talk-ratio-in-between-by-time" style="border: 1px solid gray; zoom:80%;">
+
+### Gen AI Utterances
+
+This feature analyzes real-time customer-agent conversations to trigger rules. Here, you can configure AI-powered prompts as triggers. When a customer or agent responds with an utterance that matches a configured prompt, the rule gets triggered. This section explains the steps to set up the Gen AI Utterances feature.
+
+#### Steps to set up Gen AI Utterances
+
+1. Select **Gen AI Utterances** after clicking **When…** > **+Add a Trigger**.
+2. Click **{select person}**, and select **Agent** or **Customer**.
+3. Click {**set prompt}** to enter a prompt to match the user’s (customer or agent) response in the **Enter Prompt** box.  
+   <img src="../agent-coaching-images/enter-prompt-box.png" alt="enter-prompt" title="enter-prompt" style="border: 1px solid gray; zoom:80%;">
+
+4. Click the **tick** mark to save the prompt.
+5. Click **1 time** to select the frequency.
+6. Click **In conversation** to select a time frame.
 
 **Coaching Rule:**
 <table>
@@ -449,7 +465,7 @@ You have two types of adherences to choose from:
 For practical examples of this feature, refer to steps 7-8 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions).
 
 ### Nudge Agent
-The Nudge Agent actions are the small messages that pop up on the agent’s screen while communicating with the customers. They are disappearing messages, which stay on the agent’s screen for 5 seconds. The agent can close these messages anytime after their appearance. Through these messages, you either compliment the agents for a good job or direct them to take other appropriate actions to serve the customers in the best way possible. Here are the following four nudges that you can choose from:
+The Nudge Agent actions are the small messages that pop up on the agent’s screen while communicating with customers. These are disappearing messages that stay on the agent’s screen for five seconds. Agents can close these messages anytime after their appearance. Through these messages, you either compliment the agents for a good job or direct them to take other appropriate actions to serve the customers in the best way possible. You can use Gen AI to generate nudge messages based on your prompt. Here are the four nudges to select from:
 
 * Positive
 
@@ -469,9 +485,12 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
 4. Click **{Choose}** to select one of the sentiment messages, as displayed in the following screen:
    <img src="../agent-coaching-images/then-do-nudge-type-42.png" alt="then-do-nudge-type" title="then-do-nudge-type" style="border: 1px solid gray; zoom:80%;"> 
 
-5. Click **{Choose}** to enter a message, as displayed in the following screen:
-   <img src="../agent-coaching-images/nudge-message-43.png" alt="nudge-message" title="nudge-message" style="border: 1px solid gray; zoom:80%;">
-6. Enter a message in the **Nudge Message** box, and then click the **tick** mark to save it.
+5. Click **{Choose}** to enter a message, as displayed in the following screenshot:  
+   <img src="../agent-coaching-images/enter-nudge-message.png" alt="nudge-message" title="nudge-message" style="border: 1px solid gray; zoom:80%;"> 
+    1. Select the **Use Gen AI Output** option to enter a Gen AI-powered nudge message that generates messages based on your prompt.
+    2. Add a fallback nudge message that shows up, if Gen AI fails to generate a nudge message based on your prompt.  
+    <img src="../agent-coaching-images/genai-nudge-message-fallback-message.png" alt="genai-nudge-message-fallback-message" title="genai-nudge-message-fallback-message" style="border: 1px solid gray; zoom:80%;">
+6. Click the **tick** mark to save it.
 7. Click **+Add Adherence** to set an adherence for the agent.
    <img src="../agent-coaching-images/nudge-add-adherence-44.png" alt="nudge-add-adherence" title="nudge-add-adherence" style="border: 1px solid gray; zoom:80%;"> 
 8. Select **Utterance** in the **Choose a Trigger** window.
@@ -512,7 +531,7 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
          <img src="../agent-coaching-images/critical-nudge-widget-55.png" alt="critical-nudge-widget" title="critical-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
 ### Hint Agent
-The Hint Agent actions are small pop-up messages that advise agents to take further action. They appear on the agent’s screen while communicating with the customers and may or may not auto-close based on how you set them. Through these messages, you also compliment the agents for a good job. Here are the four hint types that you can choose from:
+The Hint Agent actions are small pop-up messages that advise agents to take further action. They appear on the agent’s screen while communicating with the customers and may or may not auto-close, based on how you set them. Through these messages, you also compliment the agents for a good job. You can use Gen AI to generate the title and message body based on your prompt. Here are the four hint types that you can choose from:
 
 * Positive
 
@@ -529,11 +548,18 @@ The Hint Agent actions are small pop-up messages that advise agents to take furt
 <img src="../agent-coaching-images/then-do-hint-agent-56.png" alt="then-do-hint-agent" title="then-do-hint-agent" style="border: 1px solid gray; zoom:80%;"> 
 4. Click **{Choose}** and select one of the message types, as highlighted in the following screenshot:
 <img src="../agent-coaching-images/then-do-hint-type-57.png" alt="then-do-hint-type" title="then-do-hint-type" style="border: 1px solid gray; zoom:80%;"> 
-5. Click **{Choose}** to enter the title of your message, as highlighted in the following screenshot:
-<img src="../agent-coaching-images/then-do-hint-agent-message-title-58.png" alt="then-do-hint-agent-message-title" title="then-do-hint-agent-message-title" style="border: 1px solid gray; zoom:80%;">
+5. Click **{Choose}** to enter the title of your message. 
+Select the **Use Gen AI Output** option to:
+        1. Enter a Gen AI-powered title, which generates titles based on your prompt.  
+           <img src="../agent-coaching-images/hint-message-title.png" alt="hint-message-title" title="hint-message-title" style="border: 1px solid gray; zoom:80%;">
+        2. Enter a fallback title (up to 42 characters) that appears, if Gen AI fails to generate a title.  
+           <img src="../agent-coaching-images/genai-hint-fallback-title.png" alt="genai-hint-fallback-title" title="genai-hint-fallback-title" style="border: 1px solid gray; zoom:80%;">
 6. Click the **tick** mark after entering the title.
-7. Click **{Choose}** to enter the body of your message, as highlighted in the following screenshot:
-<img src="../agent-coaching-images/then-do-hint-agent-message-body-59.png" alt="then-do-hint-agent-message-body" title="then-do-hint-agent-message-body" style="border: 1px solid gray; zoom:80%;">
+7. Click **{Choose}** to enter the body of your message.  
+   Select the **Gen AI Output** option to:
+        1. Enter a Gen AI-powered message body, which generates a message based on this prompt.
+        2. Enter a fallback message body (up to 300 characters) that appears, if Gen AI fails to generate a message based on your prompt.  
+           <img src="../agent-coaching-images/genai-hint-message-fallback-message.png" alt="genai-hint-message-fallback-message" title="genai-hint-message-fallback-message" style="border: 1px solid gray; zoom:80%;">
 8. Click the **tick** mark after entering the body of your message.
 9. Click **{Choose}** to select the display option of your message, as highlighted in the following screenshot:
 <img src="../agent-coaching-images/then-do-hint-agent-message-display-option-60.png" alt="then-do-hint-agent-message-display-option" title="then-do-hint-agent-message-display-option" style="border: 1px solid gray; zoom:80%;">
