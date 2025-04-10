@@ -133,10 +133,7 @@ To set up a new connection, click **+ New Connection**. This will redirect you t
 
 <p><b>Managing Errors</b></p>
 
-  <div class="admonition note">
-   <p class="admonition-title">Note</p>
-   <p>Appropriate canvas-level errors are displayed (in the error log) when you add a new node. You can view and fix the errors by clicking the <b>warning</b> icon.</p>
-   </div>
+Appropriate canvas-level errors are displayed (in the error log) when you add a new node. You can view and fix the errors by clicking the <b>warning</b> icon.
 
    <img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
