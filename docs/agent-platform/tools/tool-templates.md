@@ -96,8 +96,8 @@ To access a tool template, follow the steps below:
    * Developer, last updated timestamp, the language used, and the number of installations.
    * Install button
 
-<ol start="7"><li>Click <b>Install</b> to connect to the Kore marketplace and import the tool template, including its preconfigured flow. 
-<img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></li></ol>
+<ol start="7"><li>Click <b>Install</b> to connect to the Kore marketplace and import the tool template, including its preconfigured flow.</li>
+<img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
 
 The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
 
@@ -164,7 +164,6 @@ To delete a tool template, follow the steps below:
    <img src="../images/proceed-to-delete.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
 
 3. Click **Delete** in the confirmation dialog.
-
    <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
 
 <div class="admonition note">
