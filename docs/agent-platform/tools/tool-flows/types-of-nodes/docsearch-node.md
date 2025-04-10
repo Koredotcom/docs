@@ -129,7 +129,9 @@ To set up a new connection, click **+ New Connection**. This will redirect you t
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>If you do not provide any meta filters, the query is applied to all the documents uploaded to that connection.</li>
-<li>The filters can be a context variable in the flow depending on the builder’s requirement.</li></ul></p></div> 
+<li>The filters can be a context variable in the flow depending on the builder’s requirement.</li></ul></p></div>
+
+<p><b>Managing Errors</b></p>
 
   <div class="admonition note">
    <p class="admonition-title">Note</p>
