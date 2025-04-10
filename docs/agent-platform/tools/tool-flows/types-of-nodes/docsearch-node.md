@@ -143,9 +143,9 @@ To run and test the flow, follow the steps below:
 <ol start="3"><li>Click <b>Generate Output</b>.</li>
 <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;"></ol>
 
-The **Debug** window generates the flow log for each node in the flow and the results in the **Output** window. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow.
+The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow.
 
-Use the extracted chunks from the generated output, as required to further build the tool flow.
+Use the extracted chunks from the output saved in the context variable to continue building the tool flow as needed.
 
 ## Related Links
 
