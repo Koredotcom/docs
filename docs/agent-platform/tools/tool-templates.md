@@ -80,13 +80,12 @@ To access a tool template, follow the steps below:
 
    <img src="../images/tools-template-nav.png" alt="tools template section" title="tools template section" style="border: 1px solid gray; zoom:60%;">
 
-4. Scroll down to the **Tools** section.
-5. Select the required **Categories** and **Tasks** from the left filter to view the relevant templates.
-<img src="../images/select-category-tasks.png" alt="select category and task" title="select category and task" style="border: 1px solid gray; zoom:60%;">
+<ol start="4"><li>Scroll down to the <b>Tools</b> section.</li>
+<li>Select the required <b>Categories</b> and <b>Tasks</b> from the left filter to view the relevant templates.
+<img src="../images/select-category-tasks.png" alt="select category and task" title="select category and task" style="border: 1px solid gray; zoom:60%;"></li>
+<li>Click the required template to view its information window.
 
-6. Click the required template to view its information window.
-
-   The window includes the following details:
+   The window includes the following details:</li></ol>
 
    * Tool Template Name 
    * Template description
@@ -97,8 +96,8 @@ To access a tool template, follow the steps below:
    * Developer, last updated timestamp, the language used, and the number of installations.
    * Install button
 
-7. Click **Install** to connect to the Kore marketplace and import the tool template, including its preconfigured flow. 
-<img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;">
+<ol start="7"><li>Click <b>Install</b> to connect to the Kore marketplace and import the tool template, including its preconfigured flow. 
+<img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></li></ol>
 
 The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
 
@@ -133,22 +132,6 @@ To modify your tool's general details, such as its name and description, asynchr
 
 3. Perform the required action on the page like tool renaming or [deletion](../tools/tool-templates.md/#delete-a-tool-template){:target="_blank"}. 
 
-### Delete a Tool Template
-
-To delete a tool template, follow the steps below:
-
-1. Scroll down to the **Delete tool** section on the **Configurations** page.
-2. Click **Proceed to delete**.
-   <img src="../images/proceed-to-delete.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
-
-3. Click **Delete** in the confirmation dialog.
-
-   <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Deleting the tool is irreversible and removes all the associated data.</p></div>
-
 ### View and Manage Tool Flow
 
 Once you install a tool template, you can access its prebuilt flow and modify it based on your business requirements. To access the [tool flow](https://docs.kore.ai/agent-platform/tools/tool-flows/flows-overview/){:target="_blank"}, follow the steps below:
@@ -170,4 +153,21 @@ Once you install a tool template, you can access its prebuilt flow and modify it
    Each node available on the prebuilt flow canvas is automatically mapped to the relevant node type. You can view the node configurations on the **General Settings** panel, as shown below.
    <img src="../images/node-mapping.png" alt="node mapping" title="node mapping" style="border: 1px solid gray; zoom:75%;">
 
-3. [Manage nodes and their configurations](https://docs.kore.ai/agent-platform/tools/tool-flows/manage-flow-nodes/) in the flow, [edit input and output](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/), and [run the flow](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/) as required to customize the tool flow. To view the changes made to the tool flow, use the change log. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/tool-canvas-change-log/). 
+<ol start="3"><li><a href="https://docs.kore.ai/agent-platform/tools/tool-flows/manage-flow-nodes/" target="_blank">Manage nodes and their configurations</a> in the flow, <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/" target="_blank">edit input and output</a>, and <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/" target="_blank">run the flow</a> as required to customize the tool flow. To view the changes made to the tool flow, use the change log. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/tool-canvas-change-log/" target="_blank">Learn more</a>.</li></ol>
+
+### Delete a Tool Template
+
+To delete a tool template, follow the steps below:
+
+1. Scroll down to the **Delete tool** section on the **Configurations** page.
+2. Click **Proceed to delete**.
+   <img src="../images/proceed-to-delete.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
+
+3. Click **Delete** in the confirmation dialog.
+
+   <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Deleting the tool is irreversible and removes all the associated data.</p></div>
+
