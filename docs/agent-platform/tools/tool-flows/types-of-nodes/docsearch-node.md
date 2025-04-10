@@ -112,7 +112,7 @@ Setting up a DocSearch node in an tool flow involves adding the node at the appr
 Alternatively, click the node and change the value for **Node Name** in the configuration panel.
 <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="5"><li>Enter an input variable for <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">dynamic inputs</a> or plaintext for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
+<ol start="5"><li>Enter an input variable for <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">dynamic inputs</a> or plain text for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/agent-platform/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
 <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
@@ -130,6 +130,13 @@ To set up a new connection, click **+ New Connection**. This will redirect you t
 <p class="admonition-title">Note</p>
 <p><ul><li>If you do not provide any meta filters, the query is applied to all the documents uploaded to that connection.</li>
 <li>The filters can be a context variable in the flow depending on the builder’s requirement.</li></ul></p></div> 
+
+  <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>Appropriate canvas-level errors are displayed (in the error log) when you add a new node. You can view and fix the errors by clicking the <b>warning</b> icon.</p>
+   </div>
+
+   <img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
 ## Step 4: Test the Flow
 
