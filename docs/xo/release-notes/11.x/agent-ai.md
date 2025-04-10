@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
-## v11.12.0 April 5, 2025
+## v11.12.0 April 05, 2025
 
 <u>Minor Release</u>
 

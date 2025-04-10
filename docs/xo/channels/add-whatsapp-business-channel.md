@@ -1,6 +1,6 @@
 # Adding the WhatsApp Business Messaging Channel
 
-Kore allows you to integrate your whatsapp business app using the following messaging resources:
+The platform allows you to enable your WhatsApp business app using the following messaging partners:
 
 - [Infobip](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-infobip-application)
 - [Gupshup](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-gupshup-application)
@@ -437,7 +437,7 @@ This integration uses Meta’s Cloud API for WhatsApp Business messaging that el
 
 To enable WhatsApp integration on the Kore.ai Platform, you must provide the WhatsApp phone number and API key in the Channel Configurations section and the Platform’s Webhook URL for the API callback in the CPaaS portal.
 
-**Key features**
+**Key features:**
 
 - Seamless management of templates, catalogs, conversational flows, and payments.
 - Simplified account linking and configuration through Meta's developer platform.
@@ -466,8 +466,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
     - Business
     - Requirements
     - Overview  
-
-<img src="../images/App-details.png" alt="App-details" title="App-details" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/App-details.png" alt="App-details" title="App-details" style="border: 1px solid gray; zoom:70%;">
 
 4. On the app in the app dashboard, Click on your created app.  
 <img src="../images/Apps.png" alt="Apps" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
@@ -477,27 +476,33 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 1. Go to your **App Dashboard**.
 2. Click on the **App Settings** tab.
 3. Under **App Settings**, select **Basic**.
-4. Find and Copy the **App ID** and **App Secret ID** and paste it as required in the **Step 4**.
-   **Note:** Ensure that you enter details in all required columns. Without all the required fields, your app will not be approved by Meta.
+4. Find and Copy the **App ID** and **App Secret ID** and paste it as required in the **Step 4** 
 
+    **Note:** Ensure that you enter details in all required columns. Without all the required fields, your app will not be approved by Meta.  
    <img src="../images/App-settings-basic.png" alt="App-settings-basic" title="App-settings-basic" style="border: 1px solid gray; zoom:70%;">
 
 #### Step 3: Configure the Callback URL
 
 1. Click **Add product** under the Products section on the left navigation bar.
 
-   **Note:** Note that the **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
-   <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">  
+    **Note:** Note that the **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
+    <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">
+
 2. Now, click the **Settings** tab of Facebook Login for Business.  
 <img src="../images/Facebook-settings.png" alt="Facebook-settings" title="Facebook-settings" style="border: 1px solid gray; zoom:70%;">
 
 3. On the Settings page, enter the Valid OAuth Redirect URLs from the **XO Platform Configuration Page** as follows:
+
     a. Login to the XO platform Bot builder section.
+
     b. Select the **WhatsApp Business messaging app**.
+
     c. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
+    
     <img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
 
     d. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
+
     **Note:** Kore recommends you verify the Callback URL using the Redirect URL Validator to ensure the accuracy of the path URL.  
     <img src="../images/Validauth-redirecturl.png" alt="Validauth-redirecturl" title="Validauth-redirecturl" style="border: 1px solid gray; zoom:70%;">
 
@@ -521,7 +526,10 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 <img src="../images/Verify-save.png" alt="Verify-save" title="Verify-save" style="border: 1px solid gray; zoom:70%;">
     
 3. Click **Verify and save**.
-4. Now, from the Webhook fields, subscribe for the **messages** by enabling the toggle button.
+4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle button.
 
-   **Note:** Kore recommends you to select the latest version of the messaging app while subscribing.  
-   <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
+    !!! note: 
+        
+        Kore recommends you to select the latest version of the messaging app while subscribing.
+        
+    <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">

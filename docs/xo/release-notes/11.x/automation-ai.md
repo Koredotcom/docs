@@ -81,6 +81,8 @@ In this update, Agent Node introduces a new version to fully take advantage of t
         * Mandatory output keys (Text Response Path and Tool Response Path) for consistent data handling.
         * Includes post-processor scripts to ensure smooth execution and maintainability.
 
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/prompt-setup.md#types-of-prompts)
+
 ### NLP
 
 #### Suppressing "Intent Not Found" Event When Dialog Ends as "Fulfilled"
