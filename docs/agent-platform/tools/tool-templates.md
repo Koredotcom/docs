@@ -164,6 +164,7 @@ To delete a tool template, follow the steps below:
    <img src="../images/proceed-to-delete.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
 
 3. Click **Delete** in the confirmation dialog.
+
    <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
 
 <div class="admonition note">
