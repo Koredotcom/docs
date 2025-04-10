@@ -29,7 +29,7 @@ Tool templates are the foundation for building AI tools. They provide a structur
 
 ## Tools Library Marketplace 
 
-The **Tools Library Marketplace** offers more than 50 prebuilt tool templates for the following categories and AI tasks:
+The **Tools Library Marketplace** offers more than 50 prebuilt tool templates for the following categories and AI tasks the associated LLM should perform:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -89,7 +89,7 @@ To access a tool template, follow the steps below:
 
    * Tool Template Name 
    * Template description
-   * Categories the tool belongs to and the compatible ML model.
+   * Categories the tool belongs to and the compatible LLM model.
    * Configuration status
    * Prebuilt tool flow preview
    * Related or similar templates.
