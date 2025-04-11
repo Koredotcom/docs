@@ -1,6 +1,6 @@
 # Adding the WhatsApp Business Messaging Channel
 
-Kore allows you to integrate your whatsapp business app using the following messaging resources:
+The platform allows you to enable your WhatsApp business app using the following messaging partners:
 
 - [Infobip](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-infobip-application)
 - [Gupshup](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-gupshup-application)

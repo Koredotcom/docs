@@ -46,22 +46,29 @@ Select how you want to handle user conversations based on your business needs an
 
 **Automation AI Options**
 
-
 * **Default Routing**: Select an app whose Automation AI configurations you want to use.
     1. **Run based on User Input**: Select this option to take a user input and let the virtual assistance decide what to do based on the intent recognized in the user utterance.
         * **Your Message to User**:  The message that will be displayed to the customer. Select the message type from the drop-down list and type your message. Click **+ Add Another** to add another message.
     2. **Run a Specific Dialog**: Select this option to run a specific dialog. The selected dialog will be executed when this node is triggered. Click the **Dialog** dropdown to select a dialog. 
 * **Use GenAI to dynamically route to linked apps**: To link apps, see Dynamic Routing Capability Powered by DialogGPT.
 
-**Full Autonomy**: Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths. [Learn More](https://docs.kore.ai/agent-platform/agentic-apps/overview/).
+**Full Autonomy**: Enable Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths.
 
+**Agentic App Configurations**
+
+* **Connect Agentic App:** Select an existing  Agentic App or create a new one tailored to your specific needs. For more information, see [Create an Agentic App.](https://docs.kore.ai/agent-platform/agentic-apps/create-app/)
+
+* **Target Environment:** Select the appropriate environment where your app will be deployed. This setting applies only to the execution after the flow is published. The target environment must be created within the Agentic App.
+
+* **Real-time Voice Interactions:** Enable **Real-time Voice Interactions** powered by multi-modal language models for seamless, low-latency, and context-aware conversations. 
+This feature allows users to engage in two-way voice streaming through the **Kore Voice Gateway**, enhancing automation with AI models. A dedicated orchestrator manages and defines the voice experience and its flow.  
+
+<img src="../images/full-autonomy.png" alt="Full Autonomy" title="Full Autonomy" style="border: 1px solid gray; zoom:70%;">
 
 ### Connection Rules
 
 Define the connection rule for the success or failure of the first dialog and the Agent Transfer.  
 <img src="../images/connection-rules.png" alt="Automation Node" title="Connection Rules" style="border: 1px solid gray; zoom:70%;">
-
-
 
 * **On Success of First Dialog**:
     * **Continue Automation until completion**: Choose the node from the drop-down list to which you want to direct the flow.
@@ -71,15 +78,10 @@ Define the connection rule for the success or failure of the first dialog and th
     * **Exit Automation**: Choose the node from the drop-down list to which you want to direct the flow.
 * **On Agent Transfer**: If automation has been handed off for agent transfer, select the node from the drop-down list to which you want to direct the flow.
 
-
-
-
 ### Error Handling
 
 Use this section to handle system errors during customer interactions.  
 <img src="../images/error-handling.png" alt="Automation Node" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
-
-
 
 * **Your Message to User**: The message that will be displayed to the customer. Select the message type from the drop-down list and type your message. Click **+ Add Another** to add another message.
 * **Go to node**: Select the node to which you want to direct the error-handling flow and define the system behavior.

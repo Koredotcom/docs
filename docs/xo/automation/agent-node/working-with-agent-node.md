@@ -326,18 +326,3 @@ To view recommended guidelines for using the agent node, see [Best Practices](be
 ## FAQs
 
 To view commonly asked questions about the agent node, see [FAQs](faqs.md).
-
-## Agent Node - Video Library
-
-You can access the various Agent Node videos from the **Automation** > **Dialogs** > **Agent Node** > **Component Properties**.  
-<img src="../images/agentnode-videos.png" alt="Automation Node" title="Component Properties" style="border: 1px solid gray; zoom:70%;">
-
-
-Click **Watch Full Video Library** to view the following videos:
-
-* Setting Up Agent Node: Step-by-step guide to creating and configuring your first Agent Node.
-* Agent Node Components: Detailed overview of the core elements that make up an Agent Node.
-* Prompt Creation: Step-by-step guide on how to craft effective prompts for your node.
-* Model Configuration: Discover how to integrate custom and system models with the Agent Node.
-* Tools in Agent Node: Learn how to create and configure a Code Tool that your Agent Node can use.
-* Custom Prompts: Understanding how to craft different versions of prompts compatible with both system and custom models.

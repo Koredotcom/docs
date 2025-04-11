@@ -31,6 +31,7 @@ Key features
 
 * Dedicated orchestrator to define the voice experiences and controls. 
 
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#conversation-management-approach)
 
 ### DialogGPT
 
