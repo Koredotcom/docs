@@ -161,7 +161,7 @@ This update includes only bug fixes.
 
 ## v1.0 March 14, 2025
 
-<u> Major Release </u>
+<u> Minor Release </u>
 
 This update includes new features and enhancements summarized below.
 
