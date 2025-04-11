@@ -189,6 +189,13 @@ nav:
     - Agent Node:
         - Overview and Configuration: automation/agent-node/working-with-agent-node.md
         - Prompt Setup: automation/agent-node/prompt-setup.md
+        - Quick Start Tutorials:
+          - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
+          - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
+          - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
+          - Model Configuration: automation/agent-node/tutorials/model-configuration.md
+          - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
+          - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
     - Use Cases:
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
