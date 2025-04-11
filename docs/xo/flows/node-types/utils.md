@@ -279,7 +279,7 @@ agentUtils.setExternalAgentRecordingControl({record: "pause"})
 agentUtils.setExternalAgentRecordingControl({record: "resume"})
 ```
 
-### Enable/Disable Transcripts and Recordings for Kore Contact Center AI
+### Enable/Disable Transcripts and Voice Recordings for Kore Contact Center AI
 
 Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Contact Center AI Desktop. You can use these functions to:
 
