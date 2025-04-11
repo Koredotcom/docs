@@ -156,7 +156,14 @@ The **Debug** window displays the flow log and execution status of each node on 
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
-<p>The answer (extracted chunks) from the node can be accessed via the context variable in the format <code>{{context.steps.<<<b>nodename</b>>>.response.response.answer}}</code> and used in building the tool flow as needed. For example, <code>{{context.steps.DocSearchAgentMarketing.response.response.answer}}</code>.</p></div>
+<p>The answer
+(extracted chunks) from the node can be accessed via the context variable (key) in the output path. This key is dynamic and depends on the API response. The
+format is <code>{{context.steps.<<<b>nodename</b>>>.dynamic
+path}}</code>. For example, it
+could be <code>context.steps.DocSearch.response.response.answer</code> in one case or <code>context.steps.DocSearch.response.response.response.answer</code> in another.
+
+Check the sample response from SearchAI to find the correct key that holds the content.
+Use that key in your tool flow. You may also need to extract multiple chunks from different keys.</p></div>
 
 ## Related Links
 
