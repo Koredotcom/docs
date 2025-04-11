@@ -151,7 +151,9 @@ To run and test the flow, follow the steps below:
 
 The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow.
 
-Use the extracted chunks from the output saved in the context variable to continue building the tool flow as needed.
+<div class="admonition note">
+<p class="admonition-title">Accessing the Output</p>
+<p>The answer (extracted chunks) from the node can be accessed via the context variable in the format <code>{{context.steps.<<<b>nodename</b>>>.response.response.answer}}</code> and used in building the tool flow as needed. For example, <code>{{context.steps.DocSearchMarketing.response.response.answer}}</code>.</p></div>
 
 ## Related Links
 
