@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Gen AI Integration in Agent Coaching
 
-Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-realtime-coaching.md)
 
 #### Search Support in Conversation Logs
 
