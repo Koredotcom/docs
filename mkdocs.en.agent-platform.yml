@@ -136,6 +136,7 @@ nav:
   - Tools: 
     - About Tools: tools/overview.md
     - Create a Tool: tools/create-a-new-tool.md
+    - Tool Templates: tools/tool-templates.md
     - Import a Tool: tools/import-a-tool.md
     - Tool Flows:
       - About Flows: tools/tool-flows/flows-overview.md

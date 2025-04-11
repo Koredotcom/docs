@@ -4,7 +4,7 @@ Tools can automate processes, streamline workflows, generate insights, and produ
 
 ### Key Features
 
-* **Tool Flow**: A visual no-code/low-code builder for creating and managing tool flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a tool](./create-a-new-tool.md){target="_blank"} from scratch, [import an existing tool](./import-a-tool.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](./tool-templates.md){target="_blank"} available in the marketplace.
+* **Tool Flow**: A visual no-code/low-code builder for creating and managing tool flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a tool](./create-a-new-tool.md){target="_blank"} from scratch, [import an existing tool](./import-a-tool.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](../tools/tool-templates.md){target="_blank"} available in the marketplace.
 
 * **Sharing & Permissions**: Account owners can invite users to collaborate on specific Tools. Invited users can access the Models and Data modules for the invited account and see only the Tools they are invited to. [Learn more](./manage-user-roles-and-permissions.md).
 
