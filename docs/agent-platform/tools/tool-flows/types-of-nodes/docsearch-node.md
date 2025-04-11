@@ -112,7 +112,10 @@ Setting up a DocSearch node in an tool flow involves adding the node at the appr
 Alternatively, click the node and change the value for **Node Name** in the configuration panel.
 <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="5"><li>Enter an input variable for <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">dynamic inputs</a> or plain text for hard-coded inputs in the <b>Query</b> field. This field captures the user’s search query.
+<ol start="5"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
+<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
+
+<p>You can also add plain text for hard-coded inputs like "<i>What does the Mckinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Select the <b>Search AI connection</b> you set up in <a href="https://docs.kore.ai/agent-platform/agents/agents-flows/types-of-nodes/docsearch-node/#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Agent Platform integration page.
 <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;"></li></ol>
@@ -153,7 +156,7 @@ The **Debug** window displays the flow log and execution status of each node on 
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>
-<p>The answer (extracted chunks) from the node can be accessed via the context variable in the format <code>{{context.steps.<<<b>nodename</b>>>.response.response.answer}}</code> and used in building the tool flow as needed. For example, <code>{{context.steps.DocSearchMarketing.response.response.answer}}</code>.</p></div>
+<p>The answer (extracted chunks) from the node can be accessed via the context variable in the format <code>{{context.steps.<<<b>nodename</b>>>.response.response.answer}}</code> and used in building the tool flow as needed. For example, <code>{{context.steps.DocSearchAgentMarketing.response.response.answer}}</code>.</p></div>
 
 ## Related Links
 
