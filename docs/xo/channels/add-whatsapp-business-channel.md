@@ -495,13 +495,15 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
     a. Login to the XO platform Bot builder section.
 
-    b. Select the **WhatsApp Business messaging app**.
+    b. Now, select the **Flow & Channels > Digital > All**.
 
-    c. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
+    c. Now, Select the **WhatsApp Business messaging app** from the list apps.
+
+    d. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
     
     <img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
 
-    d. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
+    e. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
 
     **Note:** Kore recommends you verify the Callback URL using the Redirect URL Validator to ensure the accuracy of the path URL.  
     <img src="../images/Validauth-redirecturl.png" alt="Validauth-redirecturl" title="Validauth-redirecturl" style="border: 1px solid gray; zoom:70%;">
