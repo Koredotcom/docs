@@ -174,7 +174,7 @@ To integrate your GupShup service using the WBM channel to the Kore.ai XO Platfo
 
 
 
-### Step 2(c): Configure the Callback URL/Webhook URL
+### Step 2 (c): Configure the Callback URL/Webhook URL
 
 To link to your bot on the Kore.ai Platform to receive inbound messages/events, you must configure the **Callback/Webhook URL** on your **GupShup WhatsApp Dashboard**.
 
@@ -183,7 +183,7 @@ To set up the **Callback URL**, follow the steps below:
 
 1. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
 2. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
-3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.
+3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.  
 <img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Navigate to your **GupShup WhatsApp Dashboard**.
