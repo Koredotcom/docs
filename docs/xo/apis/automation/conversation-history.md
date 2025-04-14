@@ -390,7 +390,7 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td><strong>REQUIRED/OPTIONAL</strong>
    </td>
-   <td>TYPE
+   <td><strong>TYPE</strong>
    </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
@@ -680,7 +680,7 @@ Default direction is forward.
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
-   <td>TYPE
+   <td><strong>TYPE</strong>
    </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
