@@ -497,7 +497,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
     c. Now, from the left navigation pane, select the **Flow & Channels > Digital > All**.
 
-    d. Now, Select the **WhatsApp Business messaging app** from the list apps.
+    d. Now, Select the **WhatsApp Business messaging app** from the listed apps.
 
     e. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
     
