@@ -211,6 +211,8 @@ Version 2:
    </td>
    <td><strong>REQUIRED/OPTIONAL</strong>
    </td>
+   <td><strong>TYPE</strong>
+   </td>
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
@@ -221,6 +223,9 @@ Version 2:
 <p>
 optional for POST
    </td>
+   <td>String
+   </td>
+   </td>
    <td>The ID of the user whose conversation history to access. Can be user email id or enterprise assigned unique id.
    </td>
   </tr>
@@ -229,6 +234,8 @@ optional for POST
    </td>
    <td>optional
    </td>
+   <td>Number
+   </td>   
    <td>The number of sessions to be skipped.
    </td>
   </tr>
@@ -237,6 +244,8 @@ optional for POST
    </td>
    <td>optional
    </td>
+   <td>Number
+   </td>   
    <td>The number of messages to be shown on each page.
    </td>
   </tr>
@@ -244,6 +253,8 @@ optional for POST
    <td>channelType
    </td>
    <td>optional
+   </td>
+   <td>String   
    </td>
    <td>Channel type name for which you want to see the interactions; the default is “rtm” .
 <p>
@@ -315,6 +326,8 @@ Accepted channel types are:
    </td>
    <td>optional
    </td>
+   <td>Date
+   </td>   
    <td>Accepts the yyyy-mm-dd date format.
 <p>
 (or) yyyy-mm-ddThh:mm:ss.msZ
@@ -329,6 +342,8 @@ eg:2019-04-01 (or) 2019-04-01T13:25:58.515ZIf not provided, calculated as 7 days
    </td>
    <td>optional
    </td>
+   <td>Date
+   </td>   
    <td>Accepts the yyyy-mm-dd date format.
 <p>
 (or) yyyy-mm-ddThh:mm:ss.msZ
@@ -343,6 +358,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td>optional
    </td>
+   <td>Boolean
+   </td>   
    <td>Accepts true or false. If the value is true then the agent info is fetched and put in the author object of the agent. If the value is false or the field is not provided then agent info is not passed in the response.
    </td>
   </tr>
@@ -351,6 +368,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td>optional
    </td>
+   <td>
+   </td>   
    <td>A specific Session-Id if known. <a href="../get-sessions-history/">Refer here to obtain the session id.</a>
    </td>
   </tr>
@@ -371,6 +390,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td><strong>REQUIRED/OPTIONAL</strong>
    </td>
+   <td>TYPE
+   </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
@@ -379,6 +400,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td>optional
    </td>
+   <td>
+   </td>   
    <td>The number of sessions to be skipped.
    </td>
   </tr>
@@ -387,6 +410,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td>optional
    </td>
+   <td>Number
+   </td>   
    <td>The number of messages to be shown on each page.
    </td>
   </tr>
@@ -395,6 +420,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    </td>
    <td>optional
    </td>
+   <td>Boolean
+   </td>   
    <td>Takes string values - "true" or "false". Specifies the direction of the messages to be retrieved.
 <ul>
 
@@ -409,7 +436,9 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
    <td>msgId
    </td>
    <td>optional
-   </td>
+   </td>   
+   <td>String
+   </td>   
    <td>A specific Message-Id if known. This would fetch the records starting from that message either forward or backward depending upon the direction (see below) requested.
 <p>
 In case only the specific conversation is required, set the limit to 1
@@ -422,6 +451,8 @@ In case only the specific conversation is required, set the limit to 1
    </td>
    <td>optional
    </td>
+   <td>Boolean
+   </td>   
    <td>Whether to include the trace ID in the response. A trace ID is a unique ID assigned to each incoming message.  Possible values of the parameter:
 <ul>
 
@@ -437,6 +468,8 @@ In case only the specific conversation is required, set the limit to 1
    </td>
    <td>optional when msgId is given
    </td>
+   <td>Number
+   </td>   
    <td>
 <ul>
 
@@ -455,6 +488,8 @@ Default direction is forward.
    </td>
    <td>optional
    </td>
+   <td>Array
+   </td>   
    <td>A specific Session-Id if known. <a href="../get-sessions-history/">Refer here to obtain the session id.</a>
    </td>
   </tr>
@@ -463,6 +498,8 @@ Default direction is forward.
    </td>
    <td>optional
    </td>
+   <td>Object
+   </td>   
    <td>Meta tags to filter the conversations.
    </td>
   </tr>
@@ -471,6 +508,8 @@ Default direction is forward.
    </td>
    <td>optional
    </td>
+   <td>Boolean
+   </td>   
    <td>Accepts true or false. If the value is true then the agent info is fetched and put in the author object of the agent. If the value is false or the field is not provided then agent info is not passed in the response.
    </td>
   </tr>
@@ -641,12 +680,16 @@ Default direction is forward.
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
+   <td>TYPE
+   </td>   
    <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
   <tr>
    <td>total
    </td>
+   <td>Number
+   </td>   
    <td>The total number of records identified as per the API request parameters. The response will include a maximum of X records. If more than X records are identified, then the ‘moreAvailable’ field in the response will have the value as ‘True’.
 <p>
 It is recommended to programmatically iterate the request by dynamically updating the values of the ‘skip’ and ‘limit’ parameters in the request.
@@ -655,6 +698,8 @@ It is recommended to programmatically iterate the request by dynamically updatin
   <tr>
    <td>moreAvailable
    </td>
+   <td>Boolean
+   </td>   
    <td>Indicates if the API has returned all the records or if more are available, based on the pagination criteria.
 <p>
 <strong>True</strong> if more records are available. <strong>False</strong> if there are no more records to be retrieved.
@@ -663,24 +708,32 @@ It is recommended to programmatically iterate the request by dynamically updatin
   <tr>
    <td>icon
    </td>
+   <td>URL
+   </td>   
    <td>The URL of the bot logo.
    </td>
   </tr>
   <tr>
    <td>messages
    </td>
+   <td>Array
+   </td>   
    <td>Contains complete information about the message.
    </td>
   </tr>
   <tr>
    <td>messages._id
    </td>
+   <td>String
+   </td>   
    <td>The unique identifier for the message record.
    </td>
   </tr>
   <tr>
    <td>messages.traceId
    </td>
+   <td>String
+   </td>   
    <td>A unique identifier associated with each incoming message.
 <p>
 <strong>Note</strong>: The <strong>Trace ID</strong> is retained in the logs for 30 days. Once the <strong>Trace ID</strong> is expired, you see a tooltip message as ‘<code>Trace Id: Trace records for this message are not available</code>‘.
@@ -689,240 +742,320 @@ It is recommended to programmatically iterate the request by dynamically updatin
   <tr>
    <td>messages.type
    </td>
+   <td>String
+   </td>   
    <td>The message type – incoming (user input) or outgoing (bot response).
    </td>
   </tr>
   <tr>
    <td>messages.status
    </td>
+   <td>String
+   </td>   
    <td>Processing status of the message: received, queued, in progress, delivered, or pending.
    </td>
   </tr>
   <tr>
    <td>messages.lmodifiedOn
    </td>
+   <td>Date
+   </td>   
    <td>The last modified time for the record.
    </td>
   </tr>
   <tr>
    <td>messages.createdBy
    </td>
+   <td>String
+   </td>   
    <td>The user ID of the end user who was chatting with the bot.
    </td>
   </tr>
   <tr>
    <td>messages.channels
    </td>
+   <td>Array
+   </td>   
    <td>The channels object provides additional information about the channel through which the conversation was initiated.
    </td>
   </tr>
   <tr>
    <td>messages.channels.type
    </td>
+   <td>String
+   </td>   
    <td>Name of the channel through which the conversation is initiated. The default is ‘rtm’.
    </td>
   </tr>
   <tr>
    <td>messages.channels.channelUId
    </td>
+   <td>String
+   </td>   
    <td>The end-user’s identity provided by the channel.
    </td>
   </tr>
   <tr>
    <td>messages.components
    </td>
+   <td>Array
+   </td>   
    <td>Additional information about the message record.
    </td>
   </tr>
   <tr>
    <td>messages.components._id
    </td>
+   <td>String
+   </td>   
    <td>The unique id of the component.
    </td>
   </tr>
   <tr>
    <td>messages.components.cT
    </td>
+   <td>String
+   </td>   
    <td>Type of the user input (component type): text, audio, video, image, attachment, contact, task, filelink, location, email, alert, action, timeline, meeting, error, upgrade, NLResponse, or contextUpdate.
    </td>
   </tr>
   <tr>
    <td>messages.components.data
    </td>
+   <td>Object
+   </td>   
    <td>The data object.
    </td>
   </tr>
   <tr>
    <td>messages.components.data.text
    </td>
+   <td>String
+   </td>   
    <td>The message shown to the user or the bot, depending on the message type.
    </td>
   </tr>
   <tr>
    <td>messages.components.thumbnails
    </td>
+   <td>Object
+   </td>   
    <td>The thumbnails object.
    </td>
   </tr>
   <tr>
    <td>messages.components.thumbnails._id
    </td>
+   <td>String
+   </td>   
    <td>The unique id of the thumbnails.
    </td>
   </tr>
   <tr>
    <td>messages.components.thumbnails.width
    </td>
+   <td>Number
+   </td>   
    <td>The width of the thumbnails.
    </td>
   </tr>
   <tr>
    <td>messages.components.thumbnails.height
    </td>
+   <td>Number
+   </td>    
    <td>The height of the thumbnails.
    </td>
   </tr>
   <tr>
    <td>messages.components.thumbnails.size
    </td>
+   <td>Number
+   </td>    
    <td>The size of the thumbnails.
    </td>
   </tr>
   <tr>
    <td>messages.components.thumbnails.url
    </td>
+   <td>URL
+   </td>    
    <td>The URL of the thumbnails.
    </td>
   </tr>
   <tr>
    <td>messages.botId
    </td>
+   <td>String
+   </td>    
    <td>Bot ID or Stream ID.
    </td>
   </tr>
   <tr>
    <td>messages.orgId
    </td>
+   <td>String
+   </td>    
    <td>The organization ID to which the bot belongs to.
    </td>
   </tr>
   <tr>
    <td>messages.accountId
    </td>
+   <td>String
+   </td>    
    <td>The account id to which the bot belongs to.
    </td>
   </tr>
   <tr>
    <td>messages.isBB
    </td>
+   <td>Number
+   </td>    
    <td>Informs whether the conversation was initiated from the Bot Builder; 1 for Yes, 0 for No.
    </td>
   </tr>
   <tr>
    <td>messages.isD
    </td>
+   <td>Number
+   </td>    
    <td>Informs whether the conversation was initiated by a developer; 1 for Yes, 0 for No.
    </td>
   </tr>
   <tr>
    <td>messages.lang
    </td>
+   <td>String
+   </td>    
    <td>The conversation’s language.
    </td>
   </tr>
   <tr>
    <td>messages.ms
    </td>
+   <td>Number
+   </td>    
    <td>Message source; enum[0,1,2,3]; 0-task alert, 1-text, 2-task(action), and 3-others.
    </td>
   </tr>
   <tr>
    <td>messages.chnl
    </td>
+   <td>String
+   </td>    
    <td>The end user’s conversation channel.
    </td>
   </tr>
   <tr>
    <td>messages.createdOn
    </td>
+   <td>Date
+   </td>    
    <td>The record creation date.
    </td>
   </tr>
   <tr>
    <td>messages.timestampValue
    </td>
+   <td>Number
+   </td>    
    <td>The creation date converted into the timestamp format.
    </td>
   </tr>
   <tr>
    <td>messages.__v
    </td>
+   <td>
+   </td>   
    <td>The field is used for internal purposes. No specific significance.
    </td>
   </tr>
   <tr>
    <td>messages.resourceid
    </td>
+   <td>
+   </td>    
    <td>The field is used for internal purposes. No specific significance.
    </td>
   </tr>
   <tr>
    <td>messages.tags
    </td>
+   <td>Object
+   </td>    
    <td>Meta tags to filter the conversations.
    </td>
   </tr>
   <tr>
    <td>messages.tags.messageTags
    </td>
+   <td>Array
+   </td>    
    <td>Message tags object; custom tags added to the message in the conversation.
    </td>
   </tr>
   <tr>
    <td>messages.tags.messageTags.value
    </td>
+   <td>Midex(User defined)
+   </td>    
    <td>Tag’s value.
    </td>
   </tr>
   <tr>
    <td>messages.tags.messageTags.name
    </td>
+   <td>String
+   </td>   
    <td>Tag’s name.
    </td>
   </tr>
   <tr>
    <td>messages.tags.userTags
    </td>
+   <td>Array
+   </td>   
    <td>User tags object; custom tags added to the user’s profile information.
    </td>
   </tr>
   <tr>
    <td>messages.tags.userTags.value
    </td>
+   <td>Midex(User defined)
+   </td>     
    <td>Tag’s value.
    </td>
   </tr>
   <tr>
    <td>messages.tags.userTags.name
    </td>
+   <td>String
+   </td>   
    <td>Tag’s name.
    </td>
   </tr>
   <tr>
    <td>messages.tags.sessionTags
    </td>
+   <td>Array
+   </td>   
    <td>Session tags object; custom tags added to the conversation session.
    </td>
   </tr>
   <tr>
    <td>messages.tags.sessionTags.value
    </td>
+   <td>Midex(User defined)
+   </td>   
    <td>Tag’s value.
    </td>
   </tr>
   <tr>
    <td>messages.tags.sessionTags.name
    </td>
+   <td>String
+   </td>    
    <td>Tag’s name.
    </td>
   </tr>
