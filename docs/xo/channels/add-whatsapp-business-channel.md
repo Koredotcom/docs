@@ -1,12 +1,12 @@
 # Adding the WhatsApp Business Messaging Channel
 
-The platform allows you to enable your WhatsApp business app using the following messaging partners:
+Users can select any of the following messaging partners to enable WhatsApp Business messaging:
 
 - [Infobip](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-infobip-application)
 - [Gupshup](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-gupshup-application)
 - [Karix](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-karix-application)
 - [Netcore](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-netcore-application)
-- [WhatsApp Cloud API](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-meta-cloud-api)
+- [WhatsApp Cloud API (native integration support)](../channels/add-whatsapp-business-channel.md#adding-the-whatsapp-channel-using-meta-cloud-api)
 
 ## Adding the WhatsApp Channel using Infobip Application
 
@@ -23,16 +23,18 @@ Steps to configure **Infobip**:
     * Follow the instructions for steps 2 and 3 shown in the image below.
     <img src="../images/whatsapp1.png" alt="infobib integration" title="infobib integration" style="border: 1px solid gray; zoom:70%;">
 
-    * Alternatively, add the number shown on the screen of the Infobip sender to your WhatsApp contacts.  <img src="../images/whatsapp2.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
+    * Alternatively, add the number shown on the screen of the Infobip sender to your WhatsApp contacts.  
+    <img src="../images/whatsapp2.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
         The mobile number should have the country code preceded by a plus (+) sign to activate the Infobip and WhatsApp connections.
 
-4. Once the number is associated, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.  <img src="../images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
+4. Once the number is associated, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.  
+<img src="../images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
 
 
-5. Click the **ellipses** icon under **Action** and select **Edit Configuration**.
+5. Click the **ellipses** icon under **Action** and select **Edit Configuration**.  
 <img src="../images/whatsapp4.png" alt="edit infobib configuration" title="edit infobib configuration" style="border: 1px solid gray; zoom:70%;">
 
 6. On the **Edit Configuration** page, click the **edit** icon, add the **URL for incoming messages** (copy the Webhook URL from the Kore Platform under **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations** tab) and click **Back**.
@@ -117,22 +119,22 @@ The important steps in completing this channel enablement are as follows:
 
 The first step in the WhatsApp Messaging Channel integration is to create a GupShup application, To create an app, follow the steps below:
 
-1. Log in to the [GupShup portal](https://www.gupshup.io/whatsapp/dashboard) and navigate to the **Dashboard → WhatsApp** section.
+1. Log in to the [GupShup portal](https://www.gupshup.io/whatsapp/dashboard) and navigate to the **Dashboard → WhatsApp** section.  
 <img src="../images/whatsapp12.png" alt="save gupshup application" title="save gupshup application" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the **+ Create App** button.
+2. Click the **+ Create App** button.  
 <img src="../images/whatsapp13.png" alt="create gupshup app" title="create gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 
-3. On the **Create App** screen, click **Access API** to select the app type.
+3. On the **Create App** screen, click **Access API** to select the app type.  
 <img src="../images/whatsapp14.png" alt="access gupshup api" title="access gupshup api" style="border: 1px solid gray; zoom:70%;">
 
 
-4. Provide a unique name for the application and click **Submit**.
+4. Provide a unique name for the application and click **Submit**.  
 <img src="../images/whatsapp15.png" alt="submit gupshup app" title="submit gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 
-5. For **_Step 2: Onboard your Users_**, click **Next**.
+5. For **_Step 2: Onboard your Users_**, click **Next**.  
 <img src="../images/whatsapp16.png" alt="onboard gupshup " title="onboard gupshup " style="border: 1px solid gray; zoom:70%;">
 
 
@@ -141,7 +143,7 @@ The first step in the WhatsApp Messaging Channel integration is to create a GupS
 To send messages to your GupShup users on the WhatsApp Business Messaging Channel, follow the steps below:
 
 
-### Step 2a: Create a new WhatsApp Business Account
+### Step 2(a): Create a new WhatsApp Business Account
 
 Once you have created a GupShup app, you need to create a **WABA** to set up the integration with a number. To create a WABA, follow the steps below:
 
@@ -152,20 +154,17 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 <img src="../images/whatsapp17.png" alt="enable gupshup app" title="enable gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Let’s Get Started** window, select the **New Number** option under **Managed onboarding with Gupshup**.
-4. Click **Proceed**.
+4. Click **Proceed**.  
 <img src="../images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
 
+5. Enter your details to set up your WhatsApp Business account and click **Next**.
+6. Follow all the instructions on the screen to **Setup the WhatsApp Account, Get WhatsApp Approvals**, and **Complete Verification**.
+7. Once the account is verified with your _Facebook Business ID_, the **WABA ID**, **Mobile number**, and **Password** are displayed.
 
-1. Enter your details to set up your WhatsApp Business account and click **Next**.
-2. Follow all the instructions on the screen to **Setup the WhatsApp Account, Get WhatsApp Approvals**, and **Complete Verification**.
-3. Once the account is verified with your _Facebook Business ID_, the **WABA ID**, **Mobile number**, and **Password** are displayed.
 
-
-### Step 2b: Set up the WABA Parameters on the Platform
+### Step 2(b): Set up the WABA Parameters on the Platform
 
 To integrate your GupShup service using the WBM channel to the Kore.ai XO Platform, follow the steps below:
-
-
 
 1. Copy the **Mobile number**, **WABA ID**, and the **Password** from the GupShup WhatsApp Dashboard.
 2. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
@@ -175,7 +174,7 @@ To integrate your GupShup service using the WBM channel to the Kore.ai XO Platfo
 
 
 
-### Step 2c: Configure the Callback URL/Webhook URL
+### Step 2 (c): Configure the Callback URL/Webhook URL
 
 To link to your bot on the Kore.ai Platform to receive inbound messages/events, you must configure the **Callback/Webhook URL** on your **GupShup WhatsApp Dashboard**.
 
@@ -184,7 +183,8 @@ To set up the **Callback URL**, follow the steps below:
 
 1. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
 2. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
-3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.  <img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
+3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.  
+<img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Navigate to your **GupShup WhatsApp Dashboard**.
 5. Click the **Settings** icon for your app of type **Access API**.
@@ -192,7 +192,7 @@ To set up the **Callback URL**, follow the steps below:
 
 6. On the **Settings** page, scroll down to the **Test Access API and set callback URL** section.
 7. Click the **Callback URL / Link your Bot** tab.
-8. Turn on the toggle switch and paste the **Webhook URL** you copied from the Bot Builder in the **Enter your Callback URL** input field.
+8. Turn on the toggle switch and paste the **Webhook URL** you copied from the Bot Builder in the **Enter your Callback URL** input field.  
 <img src="../images/whatsapp22.png" alt="test gupshup api" title="test gupshup api" style="border: 1px solid gray; zoom:70%;">
 
 9. Click **Set**.
@@ -219,7 +219,7 @@ This feature is available under **Channels & Flows** > **Channels** > **Digital*
 <img src="../images/whatsapp23.png" alt="secure gupshup integration" title="secure gupshup integration" style="border: 1px solid gray; zoom:70%;">
 
 
-**How it Works**
+**How it Works:**
 
 When **Associate an App** is enabled, the following happens:
 
@@ -288,9 +288,7 @@ The Kore.ai XO Platform supports public APIs for the integration and utilization
 
 The XO Platform supports WhatsApp Pay, a digital payment service that enables instant money transfers between banks through mobile devices using the Unified Payments Interface (UPI) system for the GupShup channel. GupShup, as a WhatsApp Business integration provider, supports outbound message types **Order Details [Text]** and **Order Status** templates, which are also supported on the XO Platform via APIs.
 
-**How it Works**
-
-
+**How it Works:**
 
 1. When the end user completes the transaction using the WhatsApp Pay template rendered on the WhatsApp channel, the Platform receives an inbound message.
 2. The Inbound message is in the form of a JSON Object containing payment details and their respective status.
@@ -333,7 +331,6 @@ To integrate **Karix** to your _WhatsApp Business Messaging_ channel and enable 
 
     To complete this procedure, you must already have a _Karix_ account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
 
-
 ### Prerequisites
 
 1. Gather the following details from the **Karix support team**.
@@ -341,7 +338,6 @@ To integrate **Karix** to your _WhatsApp Business Messaging_ channel and enable 
     * Account Key
     * From
 2. Copy the _Webhook URL_ from the **Kore.ai Platform** and share it with the **Karix support team**. The Karix support team will need to configure this URL on their platform for a successful handshake between _Kore.ai_ and _Karix_.
-
 
 ### Configuration Steps
 
@@ -365,11 +361,9 @@ Netcore CE uses API endpoints from [CPaaS](https://email.netcorecloud.com/){:tar
 * An active CPaSS account with WhatsApp **enabled**.
 * Selecting **Opt-in** is compulsory for WhatsApp communication, although there is a provision for bypassing Opt-in if necessary. [Learn more](https://cedocs.netcorecloud.com/docs/whatsapp#opt-in-mechanism-for-whatsapp){:target="_blank"}.
 
-
 ### Configuration Steps
 
 To configure and enable WhatsApp using Netcore, follow the steps below:
-
 
 ### Step 1: Get the API Key
 
@@ -402,17 +396,21 @@ To begin WhatsApp integration via Netcore, copy the API Key from Netcore to the 
 
 Next, set up the Webhook URL on Netcore for callback from the channel by following the steps below:
 
-1. On the XO Platform, navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations** page. 
-<img src="../images/access-whatsapp-business.png" alt="xo platform sinch configurations" title="xo platform sinch configurations" style="border: 1px solid gray; zoom:75%;">
+1. Login to the [XO platform](https://platform.kore.ai/builder/home).
+2. From the home page, select the **App** you wish to integrate.
+3. Now, from the left navigation pane, select the **Flow & Channels > Digital > All**.
+4. Now, Select the **WhatsApp Business messaging app** from the list apps.
+5. From the pop-up, under the Configurations, select the **Netcore** from the Messaging Partner drop-down.  
+<img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
 
-2. Copy the **Webhook URL**.
+6. Copy the **Webhook URL**.  
 <img src="../images/copy-webhook-url-netcore.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:75%;">
 
-3. [Login](https://email.netcorecloud.com/){:target="_blank"} to your Netcore account using CPaaS.
-4. On the left navigation menu, click **Settings**.
-5. Scroll down to the **Webhook Integration** section.
-6. Under **Incoming webhook**, paste the webhook URL copied from the Platform.
-7. Turn on the **Status** switch to enable the webhook.
+7. [Login](https://email.netcorecloud.com/){:target="_blank"} to your Netcore account using CPaaS.
+8. On the left navigation menu, click **Settings**.
+9. Scroll down to the **Webhook Integration** section.
+10. Under **Incoming webhook**, paste the webhook URL copied from the Platform.
+11. Turn on the **Status** switch to enable the webhook.
 <img src="../images/webhook-integration-netcore.png" alt="enable webhook" title="enable webhook" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 3: Enable the Channel
@@ -431,7 +429,7 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 
 The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
 
-## Adding the WhatsApp Channel Using Meta Cloud API
+## Adding the WhatsApp Channel Using Meta Cloud API (Native Integration Support)
 
 This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account. 
 
@@ -493,17 +491,19 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 3. On the Settings page, enter the Valid OAuth Redirect URLs from the **XO Platform Configuration Page** as follows:
 
-    a. Login to the XO platform Bot builder section.
+    a. Login to the [XO platform](https://platform.kore.ai/builder/home).
 
-    b. Now, select the **Flow & Channels > Digital > All**.
+    b. From the home page, select the **App** you wish to integrate.
 
-    c. Now, Select the **WhatsApp Business messaging app** from the list apps.
+    c. Now, from the left navigation pane, select the **Flow & Channels > Digital > All**.
 
-    d. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
+    d. Now, Select the **WhatsApp Business messaging app** from the listed apps.
+
+    e. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
     
     <img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
 
-    e. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
+    f. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
 
     **Note:** Kore recommends you verify the Callback URL using the Redirect URL Validator to ensure the accuracy of the path URL.  
     <img src="../images/Validauth-redirecturl.png" alt="Validauth-redirecturl" title="Validauth-redirecturl" style="border: 1px solid gray; zoom:70%;">
