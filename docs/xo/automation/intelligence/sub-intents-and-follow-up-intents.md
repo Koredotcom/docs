@@ -10,8 +10,8 @@ The XO Platform offers **Sub Intents** that are defined at the task level, and a
 
 There are three ways to define Sub Intents:
 
-* **Add an Intent Node within the Dialog Task** – This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/){target="_blank"}.
-* **Use an existing Dialog Task** – This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/){target="_blank"}.
+* **Add an Intent Node within the Dialog Task** – This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](../use-cases/dialogs/node-types/working-with-the-user-intent-node.md){target="_blank"}.
+* **Use an existing Dialog Task** – This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](../use-cases/dialogs/node-types/working-with-the-dialog-node.md){target="_blank"}.
 * **As linked Tasks** – The above two options are used when the sub intent is part of the dialog flow. For cases where the sub intent can be invoked by the user anywhere within the dialog, use the **Manage Sub Intents** and Exceptions option.
 
 ## Linked Task Exceptions 
