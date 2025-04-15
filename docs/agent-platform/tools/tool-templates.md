@@ -138,7 +138,8 @@ Once you install a tool template, you can access its prebuilt flow and modify it
 
 1. Click the required tool template on the <b>Tools</b> dashboard.
 2. Click **Go to Flow**.
-<img src="../images/go-to-flow-automatic-grading.png" alt="go to flow" title="go to flow" style="border: 1px solid gray; zoom:75%;">
+
+      <img src="../images/go-to-flow-automatic-grading.png" alt="go to flow" title="go to flow" style="border: 1px solid gray; zoom:75%;">
 
   The prebuilt flow is displayed on the canvas.
 
@@ -163,7 +164,8 @@ To delete a tool template, follow the steps below:
    <img src="../images/proceed-to-delete.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
 
 3. Click **Delete** in the confirmation dialog.
-<img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
+
+      <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
