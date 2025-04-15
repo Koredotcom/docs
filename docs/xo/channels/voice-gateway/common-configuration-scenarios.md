@@ -10,7 +10,6 @@ The common configuration scenarios include:
 * Barge-in controls for handling user interruptions.
 * Automated language detection for multilingual support.
 
-
 ## Configure ASR/TTS
 
 Speech Engines (ASR/TTS engines) can be configured at various levels in SmartAssist or the XO Platform.
@@ -121,7 +120,7 @@ TTS - Not Required
 
 ### Handling Bot Delay
 
-If the bot takes time to respond to a message, you can configure VoiceAI Connect to take action.
+If the bot takes time to respond to a message, you can configure Voice Gateway to take action.
 
 ### Handle Bot Delay After User Input
 
