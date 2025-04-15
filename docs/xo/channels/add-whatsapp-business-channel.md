@@ -429,7 +429,7 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 
 The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
 
-## Adding the WhatsApp Channel Using Meta Cloud API (Native Integration Support)
+## Adding the WhatsApp Channel Using Meta Cloud API
 
 This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account. 
 
@@ -452,7 +452,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 #### Step 1: Create your app
 
-1. Log in to the [Meta Developer Portal](https://developers.facebook.com/) and click the **Apps** button.  
+1. Log in to the [Meta Developer Portal](https://developers.facebook.com/){:target="_blank"} and click the **Apps** button.  
 <img src="../images/App-button.png" alt="App-button" title="App-button" style="border: 1px solid gray; zoom:70%;">
 
 2. Now, click **Create App** to create a new app or select an existing app.  
@@ -491,16 +491,13 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 3. On the Settings page, enter the Valid OAuth Redirect URLs from the **XO Platform Configuration Page** as follows:
 
-    a. Login to the [XO platform](https://platform.kore.ai/builder/home).
+    a. Login to the [XO platform](https://platform.kore.ai/builder/home){:target="_blank"}.
 
     b. From the home page, select the **App** you wish to integrate.
 
-    c. Now, from the left navigation pane, select the **Flow & Channels > Digital > All**.
+    c. In the left navigation, select the **Flow & Channels** and then click **Digital** > **All** > **WhatsApp Business Messaging**.
 
-    d. Now, Select the **WhatsApp Business messaging app** from the listed apps.
-
-    e. From the pop-up, under the Configurations, select the **WhatsApp Cloud API** from the Messaging Partner drop-down.  
-    
+    d. On the **Configurations** tab, select the **WhatsApp Cloud API** from the Messaging Partner list.  
     <img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
 
     f. Copy the **Callback URL** from the **XO Platform Configuration Page** and paste it into the Valid OAuth Redirect URLs of App Setting page of Meta developer page.
