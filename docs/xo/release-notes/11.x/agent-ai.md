@@ -30,7 +30,7 @@ The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now recei
 
 #### Agent AI Integration with NICE Agent Desktop
 
-Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget.
+Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md)
 
 ### API Enhancements
 
