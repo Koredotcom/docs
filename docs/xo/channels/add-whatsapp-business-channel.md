@@ -398,19 +398,18 @@ Next, set up the Webhook URL on Netcore for callback from the channel by followi
 
 1. Login to the [XO platform](https://platform.kore.ai/builder/home).
 2. From the home page, select the **App** you wish to integrate.
-3. Now, from the left navigation pane, select the **Flow & Channels > Digital > All**.
-4. Now, Select the **WhatsApp Business messaging app** from the list apps.
-5. From the pop-up, under the Configurations, select the **Netcore** from the Messaging Partner drop-down.  
+3. From the left navigation pane, select the **Flow & Channels > Digital > All > WhatsApp Business messaging**.
+4. From the pop-up, under the Configurations, select the **Netcore** from the Messaging Partner drop-down.  
 <img src="../images/messaging-dropdown.png" alt="messaging-dropdown" title="messaging-dropdown" style="border: 1px solid gray; zoom:70%;">
 
-6. Copy the **Webhook URL**.  
+5. Copy the **Webhook URL**.  
 <img src="../images/copy-webhook-url-netcore.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:75%;">
 
-7. [Login](https://email.netcorecloud.com/){:target="_blank"} to your Netcore account using CPaaS.
-8. On the left navigation menu, click **Settings**.
-9. Scroll down to the **Webhook Integration** section.
-10. Under **Incoming webhook**, paste the webhook URL copied from the Platform.
-11. Turn on the **Status** switch to enable the webhook.
+6. [Login](https://email.netcorecloud.com/){:target="_blank"} to your Netcore account using CPaaS.
+7. On the left navigation menu, click **Settings**.
+8. Scroll down to the **Webhook Integration** section.
+9. Under **Incoming webhook**, paste the webhook URL copied from the Platform.
+10. Turn on the **Status** switch to enable the webhook.
 <img src="../images/webhook-integration-netcore.png" alt="enable webhook" title="enable webhook" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 3: Enable the Channel
