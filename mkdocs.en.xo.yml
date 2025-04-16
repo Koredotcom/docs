@@ -2,6 +2,7 @@ site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
 docs_dir: 'docs/xo/'
 site_dir: 'site/xo/'
+site_url: https://docs.kore.ai/xo/
 repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
