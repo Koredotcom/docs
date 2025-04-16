@@ -59,7 +59,7 @@ configuration and scope:
 
 You can create a new agent or import an existing one.
 
--   [Import existing workflow or GALE agent](#import-existing-rag-agent)
+-   [Import existing RAG agent](#import-existing-rag-agent)
 
 -   [Create RAG agent](#create-rag-agents)
 

@@ -1,10 +1,12 @@
+# Autonomous Agents
+
+Autonomous Agents are AI-powered applications that leverage Kore’s Agent platform to autonomously manage complex business tasks and workflows. These applications can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
+
 - [Autonomous Agents](#autonomous-agents)
   - [Creating Autonomous Agent](#creating-autonomous-agent)
   - [Import existing Advanced App](#import-existing-advanced-app)
   - [Usage](#usage)
-# Autonomous Agents
 
-Autonomous Agents are AI-powered applications that leverage Kore’s Agent platform to autonomously manage complex business tasks and workflows. These applications can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
 
 ## Creating Autonomous Agent
 
