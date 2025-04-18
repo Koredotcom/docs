@@ -2,6 +2,7 @@ site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
 docs_dir: 'docs/eva/'
 site_dir: 'site/ai-for-work/'
+site_url: https://docs.kore.ai/ai-for-work/
 repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
@@ -112,10 +113,10 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Overview: getting-started/introduction.md   
-    - Setup Guide: getting-started/setup-guide.md
-    - Accessing AI for Work: getting-started/accessing-ai-for-work.md    
-    - Using AI for Work Assistant: getting-started/how-to-use.md        
+    - Overview: getting-started/introduction.md
+    - Accessing AI for Work: getting-started/accessing-ai-for-work.md
+    - Setup Guide: getting-started/setup-guide.md 
+    - Using AI for Work Assistant: getting-started/how-to-use.md
     - Release Notes:
       - Release Updates: release-notes/release-updates.md
   - Custom Agents:
@@ -162,9 +163,8 @@ nav:
       - Manage Groups: user-management/managing-your-groups.md
     - Security: 
       - SSO: security/sso.md
-      - IP Restriction: security/ip-restriction.md
       - Domain Management: security/domain-management.md
-      - Kore Connector: security/kore-connector.md
+      - Connector: security/kore-connector.md
       - Service Accounts: security/service-accounts.md
     - APIs:  
       - Authorization: APIs/authorization.md

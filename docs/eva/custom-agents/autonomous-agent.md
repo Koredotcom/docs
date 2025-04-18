@@ -1,29 +1,29 @@
 # Autonomous Agents
 
-Autonomous Agents are AI-powered applications that leverage Kore’s Agent platform to autonomously manage complex business tasks and workflows. These applications can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
+Autonomous Agents are AI-powered agents that leverage Kore’s Agent platform to autonomously manage complex business tasks and workflows. These agents can rapidly respond to evolving business requirements and circumstances in real time by employing adaptive algorithms for dynamic decision-making. They can significantly increase your organization's operational efficiency and decision-making capabilities by integrating artificial intelligence with business process automation.
 
 ## Creating Autonomous Agent
 
-The creation of a new Advanced Autonomous Agent follows a structured, four-step process designed to ensure proper configuration and deployment.
+The creation of a new Autonomous Agent follows a structured, four-step process designed to ensure proper configuration and deployment.
 
-Follow these steps to create a new Agentic Advanced App:
+Follow these steps to create a new Autonomous Agent:
 
 1. Access the Admin Console:
     * Navigate to **AI Agents** in the left pane.
-    * Select **Autonomous Agents** to view the list of existing applications. 
+    * Select **Autonomous Agents** to view the list of existing agents.
 2. Initiate Agent Creation:
     * Click **+Create Agent** on the Autonomous Agents page.
-    * The **App Creation Wizard** guides you through the setup process.
+    * The **Agent Creation Wizard** guides you through the setup process.
     <img src="../images/Advance_Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
-3. Details and Purpose: Define your app's name and purpose for optimal performance.
+3. Details and Purpose: Define your agent's name and purpose for optimal performance.
     * **Icon**:Choose from the predefined icon library or upload a custom icon.
-    * **Agent Name**: Enter a unique and meaningful name for your app.
-    * **Purpose of app**: Define the intended functionality of the app for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate application.
-4. Configure Autonomous Agent: The configuration step establishes the technical foundation of your app through API integration.  
+    * **Agent Name**: Enter a unique and meaningful name for your agent.
+    * **Purpose of agent**: Define the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate agent.
+4. Configure Autonomous Agent: The configuration step establishes the technical foundation of your agent through API integration.  
 
      Define API fields as per the details below:
 
-     * **URL**: Enter the endpoint URL of the app obtained from the Agentic Platform.
+     * **URL**: Enter the endpoint URL of the agent obtained from the Agentic Platform.
   
      * **Method**: Enter the type of request you want to make.
   
@@ -38,13 +38,13 @@ Follow these steps to create a new Agentic Advanced App:
      Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration:
 
      1. Click **Curl Import** to open the import interface.
-     1. Paste your CURL command into the text box.
-     1. Click **Import** to extract API details.
+     2. Paste your CURL command into the text box.
+     3. Click **Import** to extract API details.
      <img src="../images/Advance_Agentic_App_2.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-5. Preview: The **Preview** section displays sample queries to test the app’s behavior.
+5. Preview: The **Preview** section displays sample queries to test the agent’s behavior.
      1. Click **+Add Query** to input additional test queries.
-     1. Once validated, click **Continue** to move to the final step.
+     2. Once validated, click **Continue** to move to the final step.
      <img src="../images/Advance_Agentic_App_3.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -59,23 +59,20 @@ Follow these steps to create a new Agentic Advanced App:
     * **Always Enabled**: The agent remains active and cannot be disabled.
     * **Users Choice**: Users can enable or disable the agent as needed.
 
-Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
+7. Click **Publish** to make the agent available. The agent appears in the **Autonomous Agent List** on the Admin Console page.
 
+## Import existing Autonomous Agent
 
-7. Click **Publish** to make the agent available. The app appears in the **Advanced App List** on the Admin Console page.
-
-## Import existing Advanced App
-
-To import an existing Advanced App:
+To import an existing Autonomous Agent:
 
 1. Click the **Import** **Agent** button located in the upper-right corner.
-2. Select the .ZIP file of the existing app.
-3. Click **Import** to complete the process. The imported agent will appear on the Advanced App page.
+2. Select the .ZIP file of the existing agent.
+3. Click **Import** to complete the process. The imported agent will appear on the Autonomous Agent page.
 
 ## Usage
 
-Autonomous Agents integrate seamlessly with the Kore Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an app from the **Compose bar > Agents > Apps tab**. Here's how they operate in practice:
+Autonomous Agents integrate seamlessly with the Kore Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an agent from the **Compose bar > Agents > agent tab**. Here's how they operate in practice:
 
-When deployed, the Autonomous Agent appears as an interactive application within the AI Work interface. As shown in the example screenshot, users can engage in natural conversations with the app to accomplish specific tasks. The app understands the context, process requests, and provides relevant responses based on its configured capabilities.
+When deployed, the Autonomous Agent appears as an interactive agent within the AI Work interface. As shown in the example screenshot, users can engage in natural conversations with the agent to accomplish specific tasks. The agent understands the context, process requests, and provides relevant responses based on its configured capabilities.
 
 <img src="../images/Advance_Agentic_App_5.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">

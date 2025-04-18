@@ -1,19 +1,19 @@
-# GALE Agent
+# Workflow Agent
 
-The Workflow or GALE Agent allows users to build agents directly with the GALE platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently. To learn more about GALE agent flow, click
+The Workflow Agent allows users to integrate tools in Agent platform to deliver precise, contextually relevant responses to user queries in real time. This streamlined approach simplifies the process of creating intelligent agents, enabling businesses to deploy solutions quickly and efficiently. To learn more about Workflow agent flow, click
 [here](https://docs.kore.ai/gale/agents/agents-flows/flows-overview/).
 
-The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the GALE platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
+The Agent leverages APIs and combines retrieval and generation techniques to provide accurate and contextually relevant answers to user queries. These highly configurable agents allow users to select and fine-tune models from various options within the Workflow platform. Once configured, these agents dynamically adapt to user inputs, providing real-time, intelligent responses.
 
 You can create a new agent or import an existing one.
 
--   [Import existing workflow or GALE agent](#import-existing-gale-agent)
+-   [Import existing Workflow agent](#import-existing-gale-agent)
 
--   [Create GALE agent](#create-gale-agent)
+-   [Create Workflow agent](#create-gale-agent)
 
-## Import existing GALE agent
+## Import existing Workflow agent
 
-To import an existing GALE agent:
+To import an existing Workflow agent:
 
 1.  Click the **Import Agent** button located in the upper-right
     corner.![](images/import-gale.png)
@@ -23,22 +23,22 @@ To import an existing GALE agent:
 
 3.  Click **Import** to complete the process. The imported agent will appear on the Workflow Agents page.
 
-## Create GALE Agent
+## Create Workflow Agent
 
-To create a GALE Agent, follow the steps outlined below:
+To create a Workflow Agent, follow the steps outlined below:
 
-1.  In the **Admin Console**, click **AI Agents** from the left pane, and then select **GALE Agents**. A list of available workflow agents will be
+1.  In the **Admin Console**, click **AI Agents** from the left pane, and then select **Workflow Agents**. A list of available workflow agents will be
     displayed.![](images/AI_agent_gale.png)
 
 2.  On the Workflow Agents page, click **+Create
     Agent**.![](images/create_agent.png)
 
-3.  The **Workflow** / **GALE Agent creation** wizard will take you
+3.  The **Workflow** / **Workflow Agent creation** wizard will take you
     through the following steps:
 
     1.   [Step 1: Define the purpose of the Agent](#details)
 
-    2.   [Step 2: Configure GALE Flow](#configure)
+    2.   [Step 2: Configure Workflow Flow](#configure)
 
     3.   [Step 3: Peview the Agent configuration](#preview)
 
@@ -59,35 +59,35 @@ related to any cross-sell or upsell product.
 ![](images/detail_and_purpose_gale.png)
 
 
-###   <a id="configure">Step 2: Configure GALE Flow</a>
+###   <a id="configure">Step 2: Configure Workflow Flow</a>
 
-You must integrate **GALE Flow** with the **GALE** platform and create a
+You must integrate **Workflow Flow** with the **Workflow** platform and create a
 channel. To set up a channel and complete the integration process, follow the
 steps outlined below:
 
-1.  In the Define GALE API section, select between **Sync Mode** and **Async
+1.  In the Define Workflow API section, select between **Sync Mode** and **Async
     Mode**, depending on the requirements of your interactions.
 
     1.  **Sync Mode**: In sync mode, users receive immediate responses. This
         mode doesn’t require a POST URL or access token, making it simple for
         quick interactions. However, sync mode includes a 60-second timeout, so
-        it’s best suited for gale workflow that can be completed within that
+        it’s best suited for workflow that can be completed within that
         timeframe.
 
     2.  **Async Mode:** In async mode, the setup is more flexible and is ideal
         for cases that may take longer than 60 seconds. This mode requires a
-        POST URL and the agent’s access token to be specified in the GALE agent
-        endpoint. Once the agent completes its process, GALE posts the response
+        POST URL and the agent’s access token to be specified in the Workflow agent
+        endpoint. Once the agent completes its process, Workflow posts the response
         back to the specified endpoint.
 
     ![](images/config_galeFlow.png)
 
 2.  For Async Mode, enter the **POST URL** and **Access
     token**.![](images/async.png)  
-    To configure async mode with the GALE Platform, copy the **POST URL** and
+    To configure async mode with the Workflow Platform, copy the **POST URL** and
     **Access Token** from the agent, then follow the steps outlined below.
 
-    1.  Navigate to the GALE Platform. Open the agent you want to add the
+    1.  Navigate to the Workflow Platform. Open the agent you want to add the
         channels to.
 
     2.  On the **Agents** tab, click the name of the agent that you want to
@@ -111,7 +111,7 @@ steps outlined below:
     ![](images/import_url_input.png)To get the curl, follow the
     steps outlined below:
 
-    1.  Navigate to the GALE Platform. Open the agent you want to add the
+    1.  Navigate to the Workflow Platform. Open the agent you want to add the
         channels to.
 
     2.  On the **Agents** tab, click the name of the agent that you want to
@@ -123,7 +123,7 @@ steps outlined below:
         mode.![](images/curl.png)
 
 5.  In the **Import URL,**  paste the **cURL**  that you have fetched from the
-    GALE Agent.![](images/import_url.png)
+    Workflow Agent.![](images/import_url.png)
 
 6.  Click **Import** to add the cURL
 
@@ -132,7 +132,7 @@ steps outlined below:
 
 8.  After fetching the API details, enter the API key value. To get the API key:
 
-    1.  Navigate to the GALE Platform. On the **Agents** tab, click on the agent
+    1.  Navigate to the Workflow Platform. On the **Agents** tab, click on the agent
         that you want to integrate.
 
     2.  In the left navigation, click **API Keys**, then select **Create new
@@ -141,7 +141,7 @@ steps outlined below:
     3.  In the popup window, click on the **Generate Key** button. Once the API
         key is generated, click **Copy and Close** to copy the key and to exit.
 
-9.  In the API key value field, paste the key that you have copied from the GALE
+9.  In the API key value field, paste the key that you have copied from the Workflow
     Agent and click **Continue**.![](images/generate-key.png)
 
 
@@ -175,7 +175,7 @@ Note: The publishing options are defined in the Workspace settings. For addition
 
 ##  Manage Input and Output
 
-In GALE, Agent Flows provide a structured way to manage input and output
+In Workflow, Agent Flows provide a structured way to manage input and output
 variables that control data flow and context throughout the agent's execution.
 
 -   **Input Variables:** The input variables provide initial data to the agent
@@ -185,7 +185,7 @@ variables that control data flow and context throughout the agent's execution.
     derived values from the flow. You must define output variables to capture
     the results you want to return from the agent.
 
-Once input and output variables are defined in the GALE Flow, they become
+Once input and output variables are defined in the Workflow Flow, they become
 accessible throughout the flow and will be automatically displayed in “AI for
 Work”. This makes it easy to view and manage the data exchange between the agent
 and the connected platform.
@@ -198,7 +198,7 @@ output.](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-
 
 ##  User Interaction with Sync and Async Flows
 
-The end-user experience varies between sync and async flows in the GALE Agent,
+The end-user experience varies between sync and async flows in the Workflow Agent,
 offering flexibility in response times and delivery methods.
 
 In **sync mode**, users can expect immediate responses. After selecting the
