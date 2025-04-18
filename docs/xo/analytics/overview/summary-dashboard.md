@@ -12,18 +12,13 @@ The Summary dashboard gives a snapshot of the Virtual Assistant’s conversation
 2. Click **Summary** under the **Overview** section of the **Analytics** panel. The Summary dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
-
-!!! note
-
-    The Summary/Overview dashboard is available only post-9.3 release, i.e. post-July 24, 2022.
-
 ### Summary Dashboard Components
 
 Once users start interacting with your assistant, you can view the following details in the Summary dashboard:
 
-* **Conversations Dashboard**: Displays the key virtual assistant metrics and insights into the usage and containment of the conversations. You can view the conversations’ trend with the breakup of self-service, drop-off, and agent transfers. Learn more.
-* **Users Dashboard**: Displays trend-based analytics data on new and returning users. Learn more.
-* **Performance Dashboard**: Provides insights on the NLP and execution performance of the virtual assistants including intent identification rate, goal completion rate, service, and script execution rates. Learn more.
+* **Conversations Dashboard**: Displays the key virtual assistant metrics and insights into the usage and containment of the conversations. You can view the conversations’ trend with the breakup of self-service, drop-off, and agent transfers. [Learn more](../overview/conversations-dashboard.md).
+* **Users Dashboard**: Displays trend-based analytics data on new and returning users. [Learn more](../overview/users-dashboard.md).
+* **Performance Dashboard**: Provides insights on the NLP and execution performance of the virtual assistants including intent identification rate, goal completion rate, service, and script execution rates. [Learn more](../automation/performance-dashboard.md).
 
 ### Filter Criteria
 
