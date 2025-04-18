@@ -611,7 +611,7 @@ Disable
    <td>
    </td>
   </tr>
-     <tr bgcolor="#FAFAFA">
+   <tr bgcolor="#FAFAFA">
    <td><a href="#suppress_fallback_on_taskfulfilment
 ">Suppress_Fallback_On_TaskFulfilment
 </a>
@@ -623,6 +623,22 @@ Disable
    <td>Enable,
 <br>
 Disable (default)
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><a href="#Manage Account-based FM">Manage Account-based FM</a>
+   </td>
+   <td>Choose whether the system should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
+   </td>
+   <td> Custom
+<br>
+(FM) 
+   </td>
+   <td>Enable,
+<br>
+Disable
    </td>
    <td>
    </td>
@@ -886,6 +902,28 @@ When disabled, the platform generates a strict pattern that does ‘exact matchi
 This feature allows users to stop the platform from triggering a Fallback or Intent Not Found event when a dialog ends with a 'fulfilled' end reason and the **End of Task** event is disabled in the Automation App definition.
 
 This helps platform users (especially those using BotKit to trigger tasks dynamically at the end of a dialog) maintain better control and avoid unexpected **Intent Not Found** triggers.
+
+### Manage Account-based FM
+
+The **FM_Manage_Account_Enabled** flag is a configurable setting that controls the execution when a user says “**Manage My Account**”.
+
+By default, when a user provides a **Manage My Account** or similar utterance, the system automatically triggers the standard response for managing accounts. However, in certain cases, this automatic response may conflict with custom workflows or user journeys, for example, in an **Automation AI App **that includes use cases related to managing accounts, where account-specific user inputs might unintentionally activate the standard response.
+
+To offer greater flexibility, this flag enables or disables the standard behavior:
+
+* **True:** The system triggers the standard "Manage My Account" response.  
+ <img src="../nlu-configurations/images/manage-account-based-fm-true.png" alt="manage-account-based-fm-true" title="manage-account-based-fm-true" style="border: 1px solid gray; zoom:80%;">
+
+* **False:** The standard response is suppressed, allowing the platform to detect any UseCase or task that matches with **Manage My Account.**  
+<img src="../nlu-configurations/images/manage-account-based-fm-false.png" alt="manage-account-based-fm-false" title="manage-account-based-fm-false" style="border: 1px solid gray; zoom:80%;">
+
+This flag acts as a hidden advanced NLP setting and provides an option to **disable the triggering of the "Manage My Account" standard response**. 
+
+This is a **Custom** configuration. To enable, follow these steps:
+
+1. **Add Custom**
+2. Enter name as *FM_Manage_Account_Enabled*
+3. Enter the value as *enabled* or *disabled*
 
 ## **Spell Correction settings**
 
