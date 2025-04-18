@@ -98,8 +98,8 @@ It provides a comprehensive library of pre-built Agents, Tools, and extensions a
 ## Deciding the Right Paradigm or Approach
 
 When selecting the appropriate paradigm for your use case, consider the following factors:
-Level of autonomy required.
 
+* Level of autonomy required.
 * Complexity of the tasks and decision-making.
 * Need for contextual understanding and adaptability.
 * Degree of structure and predictability in the interaction flow.
