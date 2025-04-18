@@ -1,6 +1,6 @@
 # Agentic Flows
 
-Agentic Flowlications enable the sequential execution of multiple AI agents to accomplish and automate complex tasks efficiently using AI agents. These applications streamline workflows by automating interactions and decision-making processes based on predefined logic and user input.
+Agentic Flow enables the sequential execution of multiple AI agents to accomplish and automate complex tasks efficiently using AI agents. These flows streamline workflows by automating interactions and decision-making processes based on predefined logic and user input.
 
 ## Creating Agentic Flow
 
@@ -8,7 +8,7 @@ Follow these steps to create a new Agentic Flow:
 
 1. Access the Admin Console
     * Navigate to **AI Agents** in the left pane.
-    * Select **Agentic Flow** to view the list of existing applications.
+    * Select **Agentic Flow** to view the list of existing flows.
     <img src="../images/Agentic_App_1.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 2. Initiate Agent Creation
@@ -21,7 +21,7 @@ Follow these steps to create a new Agentic Flow:
 Define your agent's name and purpose for optimal performance.
 
 * **agent Name**: Enter a unique and meaningful name for your agent.
-* **Purpose**: Defines the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate application.  
+* **Purpose**: Defines the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate flow.  
 <img src="../images/Agentic_App_3.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -33,16 +33,13 @@ Define your agent's name and purpose for optimal performance.
 Customize the agent's workflow using a prompt-based interface.
 
 1. **Prompt**: A default prompt is auto-generated based on the agent’s purpose. This prompt can be customized using variables. Based on the defined purpose, the system automatically generates the necessary workflow steps to complete the task. For example, in a financial advisor workflow, performing research, checking who owns the shares, and deciding to sell or hold shares based on research.  
-<img src="../images/Agentic_App_4.png" alt="Prompt" title="Prompt" style="border: 1px solid gray; zoom:70%;">
 2. Click **Get Flow** to review.
 3. Customize your flow as needed:
     * To add a step: Click **+ Add** button above or below any existing step.
     * To edit or delete a step: Hover on the step and find options to either edit or delete the step.
-    <img src="../images/Agentic_App_5.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
     * To reorder steps: Drag and drop steps to the desired position.
 4. Click **Run** to execute all configured steps sequentially.
 5. Click **Continue** to proceed to the next step.  
-<img src="../images/Agentic_App_6.png" alt="Build Agentic Flow" title="Build Agentic Flow" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 3: Preview
 
@@ -50,8 +47,6 @@ The **Preview** section displays sample queries to test the agent’s behavior.
 
 1. Click **+Add Query** to input additional test queries.
 2. Once validated, click **Continue** to move to the final step.  
-<img src="../images/Agentic_App_7.png" alt="Preview" title="Preview" style="border: 1px solid gray; zoom:70%;">
-
 
 ### Step 4: Publish
 
@@ -66,7 +61,9 @@ Publish your agent and define access permissions and enablement.
     * **Always Enabled**: The agent remains active and cannot be disabled.
     * **Users Choice**: Users can enable or disable the agent as needed.
 
-Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
+!!! note
+
+    The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 **Finalize deployment**:
 
@@ -77,7 +74,7 @@ Note: The publishing options are defined in the Workspace settings. For addition
 ### Accessing the Finance Advisor agent
 
 1. Locate the Finance Advisor:
-    * Enter "Finance Advisor" in the search box at the **Home** page. The search results will display a matching application.  
+    * Enter "Finance Advisor" in the search box at the **Home** page. The search results will display a matching flow.  
     <img src="../images/Agentic_App_10.png" alt="Finance Advisor" title="Finance Advisor" style="border: 1px solid gray; zoom:70%;">
 
 2. Review flow Configuration:
