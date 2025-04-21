@@ -51,7 +51,8 @@ Steps to import a dataset:
     * **Add an evaluator**: Add a quality or safety evaluator to the dataset.
     * **Add human feedback**: Manually input feedback for model outputs.
 
-    You can also filter the data (text, numeric, boolean), sort it, adjust row heights, and customize columns (hide/show). Applied filters and sorting states are clearly indicated and dynamically affect evaluation insights.
+    You can also filter the data (text, numeric, boolean), sort it, adjust row heights, and customize columns (hide/show). Filtering is limited to score columns to help with focused analysis. Applied filters and sorting states are clearly indicated and dynamically affect evaluation insights.
+    
 
 
 
