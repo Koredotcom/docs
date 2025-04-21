@@ -2,6 +2,20 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.12.1 April 19, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### API
+
+#### Control Transcription API
+
+The API lets you control the transcription session of a bot conversation. You can end an ongoing transcription session with a valid conversationId and appropriate authentication tokens. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
+
+<hr>
+
 ## v11.12.0 April 05, 2025
 
 <u>Minor Release</u>
