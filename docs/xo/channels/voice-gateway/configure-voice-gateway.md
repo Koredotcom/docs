@@ -17,10 +17,7 @@ This option helps add, edit, or delete a local or toll-free phone number to whic
 
 Steps to buy a new phone number:
 
-1. Click the **Phone Numbers** tab and click **Buy New Phone Number**.  
-<img src="../images/buy-new-phone-number.png" alt="Buy New Phone Number" title="Buy New Phone Number" style="border: 1px solid gray; zoom:80%;">
-
-2. You can configure a custom local or toll-free number by clicking **Get New Phone Number** on the **Phone Number** window.  
+1. Click the **Phone Numbers** tab and click **Buy New Phone Number**. You can configure a custom local or toll-free number by clicking **Get New Phone Number** on the **Phone Number** window.  
 <img src="../images/buy-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:80%;">
 
     1. Select the Select the **Country**.
