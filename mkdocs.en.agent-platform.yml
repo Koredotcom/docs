@@ -2,6 +2,7 @@ site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
 docs_dir: 'docs/agent-platform/'
 site_dir: 'site/agent-platform/'
+site_url: https://docs.kore.ai/agent-platform/
 repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:

@@ -2,6 +2,82 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+
+## v1.0.3 April 18, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+
+<font size="4">Tools</font>
+
+**OAuth2 Support in API Node**
+
+Users can now select an existing authorization profile from the Auth tab when configuring an API node, allowing a secure connection to third-party services using the saved authentication settings. By default, ‘None’ is selected, allowing users to proceed without choosing a profile for authentication.
+
+**Support for New Integration Node**
+
+Agent Platform introduces the Integration node in Tool Flow to help users connect to supported third-party services and perform specific actions for different use cases. It supports form-based and JSON configuration for easy, no-code integration into automation flows.
+
+
+<font size="4">Models</font>
+
+**Real-Time Model Support**
+
+Support for real-time models (gpt-4o-realtime-preview, gpt-4o-mini-realtime-preview) via API key integration has been added. These models can now be added through the Models module and used within the Agentic Apps section. Support for other modules will be added in future updates.
+
+
+
+<font size="4">Evaluation</font>
+
+**New Table Features in Evaluation Studio**
+
+A new table option has been added to make working with data easier in Evaluation Studio. Users can now filter and sort columns, adjust row heights, and hide or show columns to create a personalized view.
+
+
+<font size="4">Settings</font>
+
+**Custom Connection Integration with OAuth 2.0**
+
+Users can now select preconfigured custom OAuth 2.0 auth profiles to preauthorize a connection. These profiles automatically populate the required parameters, such as Scopes, Refresh URLs, and more. Once a custom auth profile is selected, no further authentication is needed for the external integration.
+
+**Centralized Integrations Management**
+
+A dedicated Integrations section has been added to manage all external service integrations on the Agent Platform. Users can now go to Settings → Integrations to:
+
+* View all supported integrations in one place.
+* Search and filter integrations by category and authorization type.
+* View key details, including supported authentication mechanisms, descriptions, and connection names.
+* Easily switch between grid and list views.
+* Add and set up a new connection, including the pre-authorization credentials to access the service securely.
+* Test a configured connection and fix any errors.
+* Edit, delete, enable, or disable a connection.
+
+
+
+<font size="4">Feature Enhancements</font>
+
+**Structured Output Support Across Modules**
+
+The platform has added support for response JSON schemas across the modules, enhancing how structured outputs are handled in settings, models, tools, prompts, and agentic apps. The update ensures full backward compatibility, allowing existing users to add schemas to their current setups without any disruption.
+
+* Trace & Monitor Responses: Response JSON schemas are now captured in model traces and monitoring, with token usage tracked for better insights.
+* Save & Reuse with Templates: You can save prompts with attached schemas as templates and reuse them directly in AI nodes—no need to redefine.
+* Seamless Sharing & Import/Export: Shared prompts retain their schemas, and exports now include schema details. Imports restore schema data automatically.
+* Customize with Flexibility: Schemas can be added or edited directly in AI nodes, and templates or Prompt hub selections auto-load the schema.
+* Consistency Across Tools: Cloned and scoped tools in Agentic Apps preserve schemas, and flow change logs now capture schema-related updates.
+
+
+
+<font size="4">Bug Fixes</font>
+
+* Fixed an issue where StableDiffusion models were not automatically undeployed after 1 hour. Models now undeploy as expected after the set time.
+
+
+<hr>
+
+
 ## v1.0.2 April 05, 2025
 
 <u> Minor Release </u>

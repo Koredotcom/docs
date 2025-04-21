@@ -76,9 +76,9 @@ To access a tool template, follow the steps below:
 3. If you are adding your first tool, click **Tool templates**.
 <img src="../images/first-tool-teplate.png" alt="first tool" title="first tool" style="border: 1px solid gray; zoom:60%;">
 
-   Otherwise, click either the **All Tools** or **My Tools** tab. Then, click **Tool Templates** to access the Tools library/Marketplace.
+      Otherwise, click either the **All Tools** or **My Tools** tab. Then, click **Tool Templates** to access the Tools library/Marketplace.
 
-   <img src="../images/tools-template-nav.png" alt="tools template section" title="tools template section" style="border: 1px solid gray; zoom:60%;">
+      <img src="../images/tools-template-nav.png" alt="tools template section" title="tools template section" style="border: 1px solid gray; zoom:60%;">
 
 <ol start="4"><li>Scroll down to the <b>Tools</b> section.</li>
 <li>Select the required <b>Categories</b> and <b>Tasks</b> from the left filter to view the relevant templates.
@@ -138,8 +138,8 @@ Once you install a tool template, you can access its prebuilt flow and modify it
 
 1. Click the required tool template on the <b>Tools</b> dashboard.
 2. Click **Go to Flow**.
-   
-   <img src="../images/go-to-flow-automatic-grading.png" alt="go to flow" title="go to flow" style="border: 1px solid gray; zoom:75%;">
+
+      <img src="../images/go-to-flow-automatic-grading.png" alt="go to flow" title="go to flow" style="border: 1px solid gray; zoom:75%;">
 
   The prebuilt flow is displayed on the canvas.
 
@@ -165,7 +165,7 @@ To delete a tool template, follow the steps below:
 
 3. Click **Delete** in the confirmation dialog.
 
-   <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
+      <img src="../images/delete-tool-confirm.png" alt="delete tool confirm" title="delete tool confirm" style="border: 1px solid gray; zoom:75%;">  
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
