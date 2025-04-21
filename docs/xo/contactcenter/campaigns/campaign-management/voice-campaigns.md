@@ -36,7 +36,7 @@ The following details of the voice campaigns are shown in a table:
 
     !!! Note
 
-        The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable.
+        The Campaigns module is only available on accounts configured with Voice Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Voice Gateway, then the Campaigns module is unavailable.
 
 ### Agentless Dialer
 

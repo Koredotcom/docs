@@ -2,6 +2,20 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of XO v11.x releases.
 
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### SIP Trunk
+
+#### Accurate Caller Number in SIP Headers
+
+When a call is transferred to an agent from a third-party desktop, the caller number set in the script node is passed through SIP headers instead of the DID number. This ensures accurate caller identification on external agent tools. This enhancement is currently applicable only for Experience Flow-based call transfers. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
+
+<hr>
+
 ## v11.12.0 April 05, 2025
 
 <u> Minor Release </u>

@@ -119,7 +119,7 @@ Steps to configure SIP Trunk:
     9. Under SIP Termination URI, enter the **IP Address**/**Domain Name**.
     10. **Option Ping**: If selected, the system will regularly check whether the IP addresses are accessible. This option is selected by default.  
         <img src="../images/option-ping.png" alt="Option Ping" title="Option Ping" style="border: 1px solid gray; zoom:80%;">
-    
+
     11. Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
         * X-AgentName: {{agentName}}
         * X-AgentPhoneNumber: {{agentPhoneNumber}}
@@ -130,6 +130,10 @@ Steps to configure SIP Trunk:
         * X-QueueName:  {{agentQueue}}
         * X-AgentFirstName: {{agentFirstName}}
         * X-AgentLastName: {{agentLastName}}
+
+        !!! Note
+
+            The caller number specified in the [Script Task](../../flows/node-types/script-task.md) is passed through the SIP headers when a third-party desktop application transfers the call to an agent.
 
     12. Click **Next**.  
         <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:70%;">

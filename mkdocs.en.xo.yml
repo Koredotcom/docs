@@ -407,7 +407,7 @@ nav:
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md 
     - Getting Started:
-      - Minimum System and Browser Requirements: channels/kore.ai-voice-gateway/minimum-system-requirements-and-supported-browsers.md
+      - Minimum System and Browser Requirements: channels/voice-gateway/minimum-system-requirements-and-supported-browsers.md
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
