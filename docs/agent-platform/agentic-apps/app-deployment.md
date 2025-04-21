@@ -46,11 +46,11 @@ The app versioning system ensures version consistency, stable releases, and stre
 
 **If you choose Deploy:**
 
-1. The **Deploy to Environment** dialog opens. \
+1. The **Deploy to Environment** dialog opens.
 
-2. Select the **Environment** and **App Version** from the dropdowns. \
+2. Select the **Environment** and **App Version** from the dropdowns.
 
-3. Click **Proceed** to deploy. \
+3. Click **Proceed** to deploy.  
    <img src="../images/deploy-to-environment.png" alt="Deploy to environment" title="Deploy to environment" style="border: 1px solid gray; zoom:40%;">
 
 **If you choose Preview:**
@@ -99,7 +99,7 @@ The Environments feature enables users to configure separate deployment environm
 1. Go to the **Environments** page.
 
 2. Click **+ New Environment**.  
-   <img src="../images/new-environment.png" alt="New environment" title="New environment" style="border: 1px solid gray; zoom:40%;">
+   <img src="../images/new-environment.png" alt="New environment" title="New environment" style="border: 1px solid gray; zoom:70%;">
 
 
 3. Enter the **Name**, **Description**, and select the **App Version**.
@@ -115,20 +115,15 @@ Once created, the Environments page is displayed, listing the draft and the crea
 * A **Draft** environment for ongoing deployment.
 
 * The new environment tile.  
-   <img src="../images/environments.png" alt="Environment tiles" title="Environments tiles" style="border: 1px solid gray; zoom:40%;">
+   <img src="../images/environments.png" alt="Environment tiles" title="Environments tiles" style="border: 1px solid gray; zoom:70%;">
 
 Click the environment to access:
 
-* **Linked App Version: **To switch app versions, click **Change**, select the desired version from the list, and then click **Deploy**.
-
-* A **Web Client URL.**
-* A **cURL script** for testing or API access.
-* **Delete Environment**: This function handles the removal of an environment with user confirmation, ensuring associated configurations are cleaned up, endpoints are deactivated, and resources are released. Audit logs and usage statistics are preserved for future reference.
-
-**Web Client Details**: See the URL the agent platform generates to start interacting with the app.  
-   <img src="../images/web-client-details.png" alt="Web client details" title="Web client details" style="border: 1px solid gray; zoom:40%;">
-
-**API Interaction**: Use the curl script to interact with the app through the code. Construct your API requests in accordance with the given specifications. Refer to this to learn more about the APIs.
+* **Linked App Version:** To switch app versions, click **Change**, select the desired version from the list, and then click **Deploy**.
+* **Web Client Details:** See the URL the agent platform generates to start interacting with the app.
+* **cURL script:** Use the curl script to interact with the app through the code. Construct your API requests in accordance with the given specifications. Refer to this to learn more about the APIs.
+* **Delete Environment:** This function handles the removal of an environment with user confirmation, ensuring associated configurations are cleaned up, endpoints are deactivated, and resources are released. Audit logs and usage statistics are preserved for future reference.  
+   <img src="../images/web-client-details.png" alt="Web client details" title="Web client details" style="border: 1px solid gray; zoom:80%;">
 
 ## API Keys
 
