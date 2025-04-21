@@ -63,13 +63,13 @@ The app versioning system ensures version consistency, stable releases, and stre
 ### Restore
 
 Restoring a version reverts the current draft to a previously saved state. It replaces the existing draft with the selected version, removes any agents not included in that version, and retains the complete version history for traceability.  
-   <img src="../images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:40%;">
+   <img src="../images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
 
 ### Delete
 
 Handles the removal of an app version while performing dependency checks to ensure no linked agents or tools are impacted.
 
-   <img src="../images/delete-version.png" alt="Delete version" title="Delete version" style="border: 1px solid gray; zoom:40%;">
+   <img src="../images/delete-version.png" alt="Delete version" title="Delete version" style="border: 1px solid gray; zoom:70%;">
 
 ## Environment
 
