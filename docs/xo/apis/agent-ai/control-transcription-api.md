@@ -12,7 +12,7 @@ This API is used to control the transcription session of a bot conversation. It 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/1.1/public/bot/{{botid}}/control/transcription?conversationId={conversationId}</code>
+   <td><code>https://{{host}}/api/1.1/public/bot/{{botid}}/control/transcription?conversationId={{conversationId}}</code>
    </td>
   </tr>
   <tr>
