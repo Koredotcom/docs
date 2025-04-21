@@ -14,7 +14,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **OAuth2 Support in API Node**
 
-Users can now select an existing authorization profile from the Auth tab when configuring an API node, allowing a secure connection to a third-party services using the saved authentication settings. By default, ‘None’ is selected, allowing users to proceed without choosing a profile for authentication.
+Users can now select an existing authorization profile from the Auth tab when configuring an API node, allowing a secure connection to third-party services using the saved authentication settings. By default, ‘None’ is selected, allowing users to proceed without choosing a profile for authentication.
 
 **Support for New Integration Node**
 
@@ -52,14 +52,13 @@ A dedicated Integrations section has been added to manage all external service i
 * Easily switch between grid and list views.
 * Add and set up a new connection, including the pre-authorization credentials to access the service securely.
 * Test a configured connection and fix any errors.
-* Edit and delete a connection.
-* Enable or disable a connection.
+* Edit, delete, enable, or disable a connection.
 
 
 
 <font size="4">Feature Enhancements</font>
 
-**Support For Structured Output Across Modules**
+**Structured Output Support Across Modules**
 
 The platform has added support for response JSON schemas across the modules, enhancing how structured outputs are handled in settings, models, tools, prompts, and agentic apps. The update ensures full backward compatibility, allowing existing users to add schemas to their current setups without any disruption.
 
@@ -67,7 +66,7 @@ The platform has added support for response JSON schemas across the modules, enh
 * Save & Reuse with Templates: You can save prompts with attached schemas as templates and reuse them directly in AI nodes—no need to redefine.
 * Seamless Sharing & Import/Export: Shared prompts retain their schemas, and exports now include schema details. Imports restore schema data automatically.
 * Customize with Flexibility: Schemas can be added or edited directly in AI nodes, and templates or Prompt hub selections auto-load the schema.
-* Consistency Across Tools: Cloned and scoped tools in Agentic Apps preserve schemas, and flow change logs now capture schema-related update
+* Consistency Across Tools: Cloned and scoped tools in Agentic Apps preserve schemas, and flow change logs now capture schema-related updates.
 
 
 
