@@ -1377,7 +1377,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
 <code>Language : “en-IN”,</code><br>
 <code>voiceName :”‘en-IN-Wavenet-A”</code><br>
 <code>}</code><br>
-<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG/SmartAssist application</strong><br>
+<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or Voice Gateway</strong><br>
 <strong>Note: Provider Properties will be Applied at the Session Level</strong>
    </td>
   </tr>

@@ -1,29 +1,28 @@
-# Accessing the Platform
+# Accessing AI for Service (XO)
 
-Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents.
+AI for Service (XO) is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents.
 
-The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations.
-
-This post takes you through the basics you need to know to successfully access the Kore.ai’s Experience Optimization Platform.
+It offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations.
 
 ## Supported Browsers
 
 Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is not supported.
 
-## Access the XO Platform
+## Accessing AI for Service (XO)
 
-To access the Platform, visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
+Visit the [Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
 
-You can sign up for Kore.ai XO Platform in any of the following two ways:
+You can sign up for AI for Service in any of the following two ways:
 
-* **Create a new account**: The Kore.ai’s XO Platform allows any user to sign up for the platform using their email address. You can sign up to create a personal account or even take the lead in setting up your enterprise’s account in Kore.ai. After you sign up for the account, you automatically become the account’s Admin, which allows you to invite other users to the account.
+* **Create a new account**: You can sign up for the platform using your email address. You can sign up to create a personal account or even take the lead in setting up your enterprise’s account in Kore.ai. After you sign up for the account, you automatically become the account’s Admin, which allows you to invite other users to the account.
+
 * **Join an existing enterprise account:** If your enterprise is already on Kore.ai, you can become a part of the account in one of the following ways:
     * Your enterprise account’s Apps Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
     * You can sign up using your enterprise email account and you are prompted to either join the enterprise network or create your own personal account.
 
 !!! note "Important Points"
 
-    * The XO Platform offers two types of workspaces/accounts:
+    * AI for Service (XO) offers two types of workspaces/accounts:
         * Standard Workspace: Every new workspace is created as a Standard Workspace by default.
         * Enterprise Workspace: A Standard Workspace can be upgraded to an Enterprise Workspace by a Kore.ai representative.  
     * Workspaces or accounts are interchangeably used.
@@ -36,9 +35,9 @@ You can sign up for Kore.ai XO Platform in any of the following two ways:
 
 ## New Account Sign-up
 
-To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
+To sign up for a new account on the Platform, follow these steps:
 
-1. Visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}.
+1. Visit the [Homepage](https://platform.kore.ai/){:target="_blank"}.
 2. On the Sign-up page, enter your work email ID in the **Email ID** field.
 
     !!! note
@@ -65,25 +64,25 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
     The platform sends reminder emails with the verification code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verificationcode upon expiry of the old ones.  
     If the verification code expires or is invalid, the system displays a message to you, to request a new code to complete the verification process.
  
-Alternatively, you can sign up to the Kore.ai XO Platform using the Google or Microsoft Office.
+Alternatively, you can sign up to the Platform using the Google or Microsoft Office.
 
  <img src="../images/accplatform(10).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 
-    Kore.ai XO Platform uses SAML-based authentication for completing the sign up and sign in flows.
+    The Platform uses SAML-based authentication for completing the sign up and sign in flows.
 
 After signing up, users are guided through the onboarding process to create your first app. [Learn more](../getting-started/guided-onboarding.md).
 
 ## Sign in to the Platform
 
-The Kore.ai XO Platform allows you to sign in to your account using your registered email ID and password.
+The Platform allows you to sign in to your account using your registered email ID and password.
 
-With Single Sign-on (SSO), you can sign in securely (after authentication) by using just one set of credentials. Now, the Kore.ai XO Platform offers an additional layer of security beyond username and password during account sign-in with **Two-Factor Authentication (2FA)**. Enabling 2FA prompts for a security code verification after you’ve entered your username and password.
+With Single Sign-on (SSO), you can sign in securely (after authentication) by using just one set of credentials. Now, the Platform offers an additional layer of security beyond username and password during account sign-in with **Two-Factor Authentication (2FA)**. Enabling 2FA prompts for a security code verification after you’ve entered your username and password.
 
 ## The Platform Landing Page
 
-After you sign in to Kore.ai’s XO Platform, you are directed to the landing page. From this page you can access various offerings as follows:
+After you sign in to the Platform, you are directed to the landing page. From this page you can access various offerings as follows:
 
 * **Apps and Related Options** - Lists all the available apps. You can filter the apps by Pinned, Shared, My Apps, or All apps.   
 * **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps.Thus taking care of your data needs, without having to depend on external services.
@@ -99,7 +98,7 @@ After you sign in to Kore.ai’s XO Platform, you are directed to the landing pa
 
 Account administrators can add other enterprise users to the App account by inviting them from the Apps Admin portal.
 
-To invite users to your Kore.ai XO Platform account, follow these steps:
+To invite users to your Kore.ai Platform account, follow these steps:
 
 1. Sign in to the **Apps Admin** **portal**, at [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}. 
 
@@ -124,11 +123,11 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
 
 !!! note
     
-    At this point, the user can only access virtual assistants built in this account and cannot build virtual assistants from the XO Platform for this account.
+    At this point, the user can only access virtual assistants built in this account and cannot build virtual assistants from the Platform for this account.
 
-## Give Access to the XO Platform
+## Give Access to the Platform
 
-After a user is invited to an account, the administrator can enable the XO Platform access to these users. To give XO Platform access to an account user, follow these steps:
+After a user is invited to an account, the administrator can enable the Platform access to these users. To give Platform access to an account user, follow these steps:
 
 1. Sign in to the Apps Admin portal at [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
 2. On the left pane, select **User Management > Users**.
@@ -141,11 +140,11 @@ After a user is invited to an account, the administrator can enable the XO Platf
 
 !!! note
 
-    The XO Platform access provided for an account gives permission to build and manage apps only in that account.
+    The Platform access provided for an account gives permission to build and manage apps only in that account.
 
 ## Using Workspace
 
-**Workspaces** are a way to organize people productively, while everyone is part of your wider team of Virtual Assistant developers. In the Kore.ai XO Platform, Workspaces are created when setting up your Kore.ai XO Platform account, and if you choose to use SSO.
+**Workspaces** are a way to organize people productively, while everyone is part of your wider team of Virtual Assistant developers. In the Platform, Workspaces are created when setting up your Kore.ai XO Platform account, and if you choose to use SSO.
 
 Team members can join one or multiple Workspaces, or they can create their own. It’s easy to browse Workspaces within the same organization and to switch between them. Here is how it works.
 

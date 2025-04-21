@@ -1,6 +1,23 @@
 # Automation AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
+
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### DialogGPT
+
+#### Amazon Bedrock Support for DialogGPT
+
+DialogGPT now supports Amazon Bedrock models, providing large enterprises with a flexible and versatile solution for efficient conversation management. This enhancement allows users to experiment with and utilize various models through a single integration, using custom prompts to optimize their experience.
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
+
+
+<hr>
 
 ## v11.12.0 April 05, 2025
 
