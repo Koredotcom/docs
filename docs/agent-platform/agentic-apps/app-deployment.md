@@ -70,7 +70,7 @@ Restoring a version reverts the current draft to a previously saved state. It re
 Handles the removal of an app version while performing dependency checks to ensure no linked agents or tools are impacted.  
    <img src="../images/delete-version.png" alt="Delete version" title="Delete version" style="border: 1px solid gray; zoom:70%;">
 
-## Deploy the App in an Environment
+## Deploy the App Version in an Environment
 
 The Environments feature enables users to configure separate deployment environments for their agents, supporting multiple environments, including development, testing, staging, and production, throughout the application development and deployment lifecycle. Each environment has its isolated configurations.
 
