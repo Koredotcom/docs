@@ -47,8 +47,11 @@ Steps to import a dataset:
 
 6. Click the **+** button on the Evaluations page to access additional dataset actions:
     * **Run a prompt**: Run a prompt by selecting model name and configurations.
+    * **Run an API**: Run an API call using specified endpoint and parameters to fetch content from external APIs or deployed tools.
     * **Add an evaluator**: Add a quality or safety evaluator to the dataset.
+    * **Add human feedback**: Manually input feedback for model outputs.
 
+    You can also filter the data (text, numeric, boolean), sort it, adjust row heights, and customize columns (hide/show). Applied filters and sorting states are clearly indicated and dynamically affect evaluation insights.
 
 
 
