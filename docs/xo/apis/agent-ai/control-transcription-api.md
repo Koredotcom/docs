@@ -42,7 +42,6 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | `action`      | The control action to be performed. In this case, the value must be `"end"` to terminate the transcription session.                              | Required    |
 
-
 ## Sample Response
 
 ```
