@@ -91,7 +91,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 ```
 curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-f43ecf1xxxxx/control/transcription?conversationId=CAe8a34d2556235bcf0cbc51e98bbxxxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiYXBwSWQiOiJjcy05YWRkYzIzNS0xOTQwLTUzYTMtYWVlNS02Mjk5ZDkzMjMwMGQifQ.ilf5lAo3AFX0cmTYQskZJytOWOrnFmBCScOVTk6xxxx' \
+--header 'auth: {{JWT_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer xxxxOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiYXBwSWQiOiJjcy0zMWVhZDc5Zi0xNDhlLTVmZDUtOTdlNC1mZmI0ZmZjY2FhOTAifQ.b4eBlpjTEkywayWzmgXf-PeKC-6-suxxxxx' \
 --data '{
