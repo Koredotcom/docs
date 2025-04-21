@@ -9,44 +9,42 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes new features, enhancements, and bug fixes summarized below.
 
-<font size="4">Agentic Apps</font>
-
-
-
-
 
 <font size="4">Tools</font>
 
-**OAuth2 support in API node**
+**OAuth2 Support in API Node**
 
- Users can now select an existing authorization profile from the Auth tab when configuring an API node, allowing a secure connection to a third-party service using the saved authentication settings. By default, ‘None’ is selected, allowing users to proceed without choosing a profile for authentication.
+Users can now select an existing authorization profile from the Auth tab when configuring an API node, allowing a secure connection to a third-party services using the saved authentication settings. By default, ‘None’ is selected, allowing users to proceed without choosing a profile for authentication.
 
+**Support for New Integration Node**
+
+Agent Platform introduces the Integration node in Tool Flow to help users connect to supported third-party services and perform specific actions for different use cases. It supports form-based and JSON configuration for easy, no-code integration into automation flows.
 
 
 <font size="4">Models</font>
 
-**Real-time model support**
+**Real-Time Model Support**
 
-Added support for real-time models (gpt-4o-realtime-preview, gpt-4o-mini-realtime-preview) via API key integration. These models can now be added through the Models module and used within the Agentic Apps section. Support in other modules will be added in future updates.
+Support for real-time models (gpt-4o-realtime-preview, gpt-4o-mini-realtime-preview) via API key integration has been added. These models can now be added through the Models module and used within the Agentic Apps section. Support for other modules will be added in future updates.
 
 
 
 <font size="4">Evaluation</font>
 
-**New table features in Evaluation Studio**
+**New Table Features in Evaluation Studio**
 
-A new table option has been added to make working with data easier in Evaluation Studio. Users can now filter and sort columns, adjust row heights, hide or show columns, and rearrange evaluator columns to create a personalized view.
+A new table option has been added to make working with data easier in Evaluation Studio. Users can now filter and sort columns, adjust row heights, and hide or show columns to create a personalized view.
 
 
 <font size="4">Settings</font>
 
-**Custom connection integration with OAuth 2.0**
+**Custom Connection Integration with OAuth 2.0**
 
-Users can now select preconfigured custom OAuth 2.0 auth profiles to preauthorize a connection. These profiles automatically populate the required parameters, such as Scopes, Refresh URLs, and more, during setup. Once a custom auth profile is selected, no further authentication is needed for the external integration.
+Users can now select preconfigured custom OAuth 2.0 auth profiles to preauthorize a connection. These profiles automatically populate the required parameters, such as Scopes, Refresh URLs, and more. Once a custom auth profile is selected, no further authentication is needed for the external integration.
 
-**Centralized integrations for Agent Platform**
+**Centralized Integrations Management**
 
-A dedicated section has been added to manage all external service integrations on the Agent Platform. Users can now go to Settings → Integrations to:
+A dedicated Integrations section has been added to manage all external service integrations on the Agent Platform. Users can now go to Settings → Integrations to:
 
 * View all supported integrations in one place.
 * Search and filter integrations by category and authorization type.
@@ -61,7 +59,7 @@ A dedicated section has been added to manage all external service integrations o
 
 <font size="4">Feature Enhancements</font>
 
-**Support for structured output across modules**
+**Support For Structured Output Across Modules**
 
 The platform has added support for response JSON schemas across the modules, enhancing how structured outputs are handled in settings, models, tools, prompts, and agentic apps. The update ensures full backward compatibility, allowing existing users to add schemas to their current setups without any disruption.
 
