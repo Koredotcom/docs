@@ -129,7 +129,7 @@ Click the environment to see its details and manage it:
 
 The Webclient Script provides a simple integration method for embedding the Agentic app within your existing website. It provides users with a smooth, native experience without redirecting them to another site.
 
-### Key features and benefits 
+### Key Features and Benefits 
 
 * **Single-Script Integration:** Add the application with just one `<script>` tag.
 * **Seamless User Experience:** Users can interact directly with the app within your website.
