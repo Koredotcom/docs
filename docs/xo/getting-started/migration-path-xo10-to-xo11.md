@@ -10,7 +10,7 @@ The upgrade journey involves user consent, downloading a bot backup, a multi-ste
 * Confirm that you own the bot you plan to upgrade to XO v11.
 * Verify the bot exists in XO v10 and is fully functional.
 * Ensure you have permission to duplicate and upgrade bots on XO v10.
-* Ensure that "Automate Deployment Requests" is enabled in the “Deployment Request” section of the XO10 Admin Console. Refer to [Automate Deployment Requests](https://developer.kore.ai/docs/bots/bot-admin/bots-management/bot-management/#Preferences).
+* Ensure that "Automate Deployment Requests" is enabled in the “Deployment Request” section of the XO10 Admin Console. Refer to [Automate Deployment Requests](https://developer.kore.ai/docs/bots/bot-admin/bots-management/bot-management/#Preferences){:target="_blank"}.
 * Familiarize yourself with the changes introduced in XO v11, including updated event handling and deprecated features.
 * Only XO v10 bots are eligible for XO v11 Apps platform upgrades. Bots from the SmartAssist instance and Automation bots linked to SmartAssist are not supported for migration. 
 
