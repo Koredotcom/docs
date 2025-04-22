@@ -34,6 +34,7 @@ The supported LLMs assist in detecting user intent and creating execution plans.
     * OpenAI GPT-4o
     * OpenAI GPT-4o mini
     * Azure OpenAI GPT-4o
+    * Amazon Bedrock
     * XO GPT – DialogGPT
   
 

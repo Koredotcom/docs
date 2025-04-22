@@ -1,20 +1,15 @@
 # Conversations Dashboard
 The Conversations Dashboard provides insights into how conversations are handled by your virtual assistant (VA). It shows how many conversations were successfully answered by the VA, how many were transferred to agents, and how many were incomplete. You can also view other metrics, such as the trend of conversation sessions, the conversation path analysis, the session distribution by channel, and the VA’s engagement grouped by self-service, drop-off, and agent transfer sessions.
 
-!!! note
-
-    The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
-
 **To view the Conversations dashboard, follow the steps**:
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports.
-2. Click **Conversations Dashboard** under the **Automation** section of the **Analytics** panel. The Overview dashboard is displayed on the right side of the page.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
+2. Click **Conversations Dashboard** under the **Overview** section of the **Analytics** panel. The Conversation dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
   <img src="../images/conversation-sessions.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;"> 
   
-
 The Conversations Dashboard is organized into four categories based on the conversation behavior, explained below.
 
 
@@ -23,7 +18,6 @@ The Conversations Dashboard is organized into four categories based on the conve
 Conversation Sessions display the total number of conversations between the virtual assistant and a user in a specific period of time. The session starts when a user sends a message and ends when the user indicates that the problem is solved, abandons the chat, or reaches the agent transfer node. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.
 
 <img src="../images/conversation-sessions.png" alt="Conversation Sessions"  title="Conversation Sessions" style="border: 1px solid gray; zoom:100%;">
-
 
 ## Self-service Rate
 

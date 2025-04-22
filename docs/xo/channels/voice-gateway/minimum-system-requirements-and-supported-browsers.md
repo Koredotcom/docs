@@ -84,7 +84,7 @@ The following web browsers are supported for use with XO Contact Center Agent an
 * Chrome — Requires a current major release or one previous version.
 * Microsoft Edge Chromium — Requires current release.
 
-Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well.  
+Version recommendations are made based on the outcomes of internal testing. The software may work without issues on older browser versions as well.
 Still, the customer will be required to update browser versions if an issue is identified due to browser version mismatches.
 
 !!! Note
