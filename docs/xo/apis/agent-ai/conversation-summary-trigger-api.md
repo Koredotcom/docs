@@ -26,7 +26,7 @@ This API triggers a conversation summary event in the Agent AI system. It is use
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="../automation/api-introduction.md/#generating-the-jwt-token">How to generate the JWT Token</a>.
+See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)</a>.
    </td>
   </tr>
 </table>

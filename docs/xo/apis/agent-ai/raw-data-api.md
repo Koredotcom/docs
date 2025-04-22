@@ -45,7 +45,7 @@ This updated version of the Raw Data API offers the following additional convers
    </td>
    <td>auth: {{JWT}}
 <p>
-See <a href="../automation/api-introduction.md/#generating-the-jwt-token">How to generate the JWT Token</a>.
+See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)</a>.
    </td>
   </tr>
   <tr>
@@ -99,9 +99,6 @@ curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/s
 * auth (required): Authentication token in the format Bearer &lt;token>.
 
 ## **Sample Response**
-
-
-
 
 ```
 {
@@ -592,13 +589,13 @@ curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/s
             "countScrollUp": 0,
             "countScrollDn": 0,
             "agent": {
-                "agentId": "3f4ff148-6759-4b80-934c-edf0b1147e91"
+                "agentId": "3f4ff148-6759-4b80-934c-edf0b11xxxxx"
             },
             "tags": [],
             "summary": {
-                "summaryId": "smr-ee39c23-6a09-464d-8584-9c8ab6672b4b",
+                "summaryId": "smr-ee39c23-6a09-464d-8584-9c8ab66xxxxx",
                 "participant": {
-                    "identity": "3f4ff148-6759-4b80-934c-edf0b1147e91",
+                    "identity": "3f4ff148-6759-4b80-934c-edf0b11xxxxx",
                     "name": "Jayasri thota",
                     "type": "agent"
                 },
