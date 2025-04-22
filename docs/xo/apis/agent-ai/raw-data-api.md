@@ -21,75 +21,26 @@ This updated version of the Raw Data API offers the following additional convers
 * Total number of words suggested for correction by the agent
 * Total number of auto-corrected words accepted by the agent
 
-<table>
-  <tr>
-   <td>Method 
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamid}}/v2/agentassistinteractions?from=YYYY-MM-DD-HH24:mm:SS&to=YYYY-MM-DD-HH24:mm:SS&offset=NNNNN&limit=0..100</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td>application/json
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization 
-   </td>
-   <td>auth: {{JWT}}
-<p>
-See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>AgentAssist Analytics
-   </td>
-  </tr>
-</table>
+| **Field**        | **Value**                                                                                                                                                                                                                       |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Method           | GET                                                                                                                                                                                                                             |
+| Endpoint         | `https://{{host}}/agentassist/api/v1/public/{{streamid}}/v2/agentassistinteractions?from=YYYY-MM-DD-HH24:mm:SS&to=YYYY-MM-DD-HH24:mm:SS&offset=NNNNN&limit=0..100`                                                             |
+| Content Type     | application/json                                                                                                                                                                                                                |
+| Authorization    | auth: {{JWT}}<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)                                                                                                              |
+| API Scope        | AgentAssist Analytics                                                                                                                                                                                                           |
 
 ## **Query Parameters**
 
-<table>
-  <tr>
-   <td>PARAMETER
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td>MANDATE
-   </td>
-  </tr>
-  <tr>
-   <td>from
-   </td>
-   <td>Start date and time of the interactions in YYYY-MM-DD HH24:mm:SS format.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td>to
-   </td>
-   <td>End date and time of the interactions in YYYY-MM-DD HH24:mm:SS format.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                                 | **MANDATE** |
+|---------------|----------------------------------------------------------------------------------|-------------|
+| `from`        | Start date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.      | Required    |
+| `to`          | End date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.        | Required    |
 
 ## **Sample Request**
 
 ```
-curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-dcbbc63bdede/v2/agentassistinteractions?from=2024-07-10T06%3A49%3A45&to=2024-07-10T07%3A06%3A25' \
---header 'accountId: 65433af84e520234494caa86' \
+curl --location '{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-dcbbc63xxxxx/v2/agentassistinteractions?from=2024-07-10T06%3A49%3A45&to=2024-07-10T07%3A06%3A25' \
+--header 'accountId: 65433af84e520234494xxxxx' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTE5ZjA0NzU0LWQ4MzQtNTgxOC04NzE0LWYyNGZlYzYxODgxNyJ9.DEVT2UGCTjryY_bDVGmun4-Vcp_R9-b0iRonWaB-xxx'
 ```
 
@@ -647,7 +598,7 @@ curl --location 'https://staging-agentassist.kore.ai/agentassist/api/v1/public/s
    </td>
    <td>if there are any more pages left with results.
 <p>
-Example: “false” without the double-quotes
+Example: "false" without the double-quotes
    </td>
   </tr>
   <tr>
@@ -673,7 +624,7 @@ Example: “false” without the double-quotes
    </td>
    <td>unique id of the session – from Kore.
 <p>
-Example: “667fc3b587b5fd0fbf97d4de”
+Example: "667fc3b587b5fd0fbf97d4de"
    </td>
   </tr>
   <tr>
@@ -683,7 +634,7 @@ Example: “667fc3b587b5fd0fbf97d4de”
    </td>
    <td>channel name – from customer.
 <p>
-Example: “chat”
+Example: "chat"
    </td>
   </tr>
   <tr>
@@ -691,9 +642,9 @@ Example: “chat”
    </td>
    <td>type-prefixed uuid
    </td>
-   <td>unique id of the segment, prefixed by “ac” – from Kore.
+   <td>unique id of the segment, prefixed by "ac" – from Kore.
 <p>
-Example: “ac-de166b2-1e14-4141-9061-9bca0203b068”
+Example: "ac-de166b2-1e14-4141-9061-9bca0203b068"
    </td>
   </tr>
   <tr>
@@ -711,9 +662,9 @@ All data is optional (except agentID), and comes from the customer via the proce
    </td>
    <td>String
    </td>
-   <td>agent’s first name – from customer.
+   <td>agent's first name – from customer.
 <p>
-Example: “John”
+Example: "John"
    </td>
   </tr>
   <tr>
@@ -721,9 +672,9 @@ Example: “John”
    </td>
    <td>String
    </td>
-   <td>agent’s last name – from customer.
+   <td>agent's last name – from customer.
 <p>
-Example: “Smith”
+Example: "Smith"
    </td>
   </tr>
   <tr>
@@ -731,9 +682,9 @@ Example: “Smith”
    </td>
    <td>String of valid email address
    </td>
-   <td>agent’s email address – from customer.
+   <td>agent's email address – from customer.
 <p>
-Example: “john.smith@example.com”
+Example: "john.smith@example.com"
    </td>
   </tr>
   <tr>
@@ -743,7 +694,7 @@ Example: “john.smith@example.com”
    </td>
    <td>agent name – from customer.
 <p>
-Example: “John Smith”
+Example: "John Smith"
    </td>
   </tr>
   <tr>
@@ -753,7 +704,7 @@ Example: “John Smith”
    </td>
    <td>unique id of the agent- from customer.
 <p>
-Example: “jsmith01”
+Example: "jsmith01"
    </td>
   </tr>
   <tr>
@@ -773,7 +724,7 @@ All tags emitted by the bot at any point during this portion of the conversation
    </td>
    <td>can be a message-level tag,a session-level or a user-level tag.
 <p>
-Example: one of “user”,”message”, “session”
+Example: one of "user","message", "session"
    </td>
   </tr>
   <tr>
@@ -781,7 +732,7 @@ Example: one of “user”,”message”, “session”
    </td>
    <td>String
    </td>
-   <td>key value of the tag – from the client’s bot developer
+   <td>key value of the tag – from the client's bot developer
    </td>
   </tr>
   <tr>
@@ -789,7 +740,7 @@ Example: one of “user”,”message”, “session”
    </td>
    <td>String
    </td>
-   <td>value of the tag – from the client’s bot developer
+   <td>value of the tag – from the client's bot developer
    </td>
   </tr>
   <tr>
@@ -797,9 +748,9 @@ Example: one of “user”,”message”, “session”
    </td>
    <td>type-prefixed uuid
    </td>
-   <td>uuid of the message (prefix: “ms”) that emitted this tag – from Kore.
+   <td>uuid of the message (prefix: "ms") that emitted this tag – from Kore.
 <p>
-Example: “ms-de166b2-1e14-4141-9061-9bca0203b068”
+Example: "ms-de166b2-1e14-4141-9061-9bca0203b068"
    </td>
   </tr>
   <tr>
@@ -809,7 +760,7 @@ Example: “ms-de166b2-1e14-4141-9061-9bca0203b068”
    </td>
    <td>UTC-based time when this tag was emitted.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -819,7 +770,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>UTC-based time when this portion of the conversation began.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -829,7 +780,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>UTC-based time when this portion of the conversation end.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -837,7 +788,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>Array of objects
    </td>
-   <td>array of objects each of which denotes an Agent’s action, which can be:
+   <td>array of objects each of which denotes an Agent's action, which can be:
 <p>
 1. Attempt to Search via Search Bar
 <p>
@@ -849,9 +800,9 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>String
    </td>
-   <td>type of Agent’s action.
+   <td>type of Agent's action.
 <p>
-Example: one of “SearchBarEntry”, “LibrarySelection”
+Example: one of "SearchBarEntry", "LibrarySelection"
    </td>
   </tr>
   <tr>
@@ -859,7 +810,7 @@ Example: one of “SearchBarEntry”, “LibrarySelection”
    </td>
    <td>Object
    </td>
-   <td>object containing data related to an Agent’s attempt to search.
+   <td>object containing data related to an Agent's attempt to search.
 <p>
 Will be of type SearchBarEntry.
    </td>
@@ -881,7 +832,7 @@ were used – as in Sent, Copied, Executed, given Feedback, or had their links c
    </td>
    <td>specifies the type of object used by the agent.
 <p>
-Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPage”, “GeneralDataSource”
+Example: one of "DialogTask", "FAQ", "Answer", "File", "WebPage", "GeneralDataSource"
    </td>
   </tr>
   <tr>
@@ -901,7 +852,7 @@ Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPag
 <p>
 These can be:
 <p>
-1. Suggestions given proactively based on Customer’s latest utterance
+1. Suggestions given proactively based on Customer's latest utterance
 <p>
 2. Suggestions given proactively based on preshown text, such as Summary.
    </td>
@@ -913,7 +864,7 @@ These can be:
    </td>
    <td>entire utterance by the end Customer – redacted if redaction is enabled.
 <p>
-Example: “What is my account balance?”
+Example: "What is my account balance?"
    </td>
   </tr>
   <tr>
@@ -931,7 +882,7 @@ Example: “What is my account balance?”
    </td>
    <td>time at which this list of suggestions was displayed (UTC).
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1005,7 +956,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>specifies the type of object used by the agent.
 <p>
-Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPage”, “GeneralDataSource”
+Example: one of "DialogTask", "FAQ", "Answer", "File", "WebPage", "GeneralDataSource"
    </td>
   </tr>
   <tr>
@@ -1077,7 +1028,7 @@ Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPag
    </td>
    <td>String
    </td>
-   <td>The phrases entered by the agent. Example: “health teh”
+   <td>The phrases entered by the agent. Example: "health teh"
    </td>
   </tr>
     <tr>
@@ -1173,9 +1124,9 @@ Example: one of “DialogTask”, “FAQ”, “Answer”, “File”, “WebPag
    </td>
    <td>String
    </td>
-   <td>name of the DialogTask – from the client’s bot developer.
+   <td>name of the DialogTask – from the client's bot developer.
 <p>
-Example: “Cancel account”
+Example: "Cancel account"
    </td>
   </tr>
   <tr>
@@ -1183,9 +1134,9 @@ Example: “Cancel account”
    </td>
    <td>String
    </td>
-   <td>How did the agent run it? Using the “Run” button, or the “Run with Agent input” button.
+   <td>How did the agent run it? Using the "Run" button, or the "Run with Agent input" button.
 <p>
-Example: one of “RunAssist”, “RunWithAgentInput”
+Example: one of "RunAssist", "RunWithAgentInput"
    </td>
   </tr>
   <tr>
@@ -1195,7 +1146,7 @@ Example: one of “RunAssist”, “RunWithAgentInput”
    </td>
    <td>Outcome of the DialogTask.
 <p>
-Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, “Error”
+Example: one of "Completed", "PrematurelyTerminated", "TimedOut", "Error"
    </td>
   </tr>
   <tr>
@@ -1211,7 +1162,7 @@ Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, �
    </td>
    <td>Integer
    </td>
-   <td>Count of suggestions that prompt with “Ask Customer”
+   <td>Count of suggestions that prompt with "Ask Customer"
    </td>
   </tr>
   <tr>
@@ -1219,7 +1170,7 @@ Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, �
    </td>
    <td>Integer
    </td>
-   <td>Count of suggestions that prompt with “Tell Customer”
+   <td>Count of suggestions that prompt with "Tell Customer"
    </td>
   </tr>
   <tr>
@@ -1227,7 +1178,7 @@ Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, �
    </td>
    <td>Integer
    </td>
-   <td>Count of “Ask” suggestions that were sent or copied over to Customer
+   <td>Count of "Ask" suggestions that were sent or copied over to Customer
    </td>
   </tr>
   <tr>
@@ -1235,7 +1186,7 @@ Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, �
    </td>
    <td>Integer
    </td>
-   <td>Count of “Tell” suggestions that were sent or copied over to Customer
+   <td>Count of "Tell" suggestions that were sent or copied over to Customer
    </td>
   </tr>
   <tr>
@@ -1245,7 +1196,7 @@ Example: one of “Completed”, “PrematurelyTerminated”, “TimedOut”, �
    </td>
    <td>Time at which this DialogTask began to run
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1255,7 +1206,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>Time at which this DialogTask ended its run.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1281,7 +1232,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>Title of the FAQ Q&A pair.
 <p>
-Example: “FAQ 3.2”
+Example: "FAQ 3.2"
    </td>
   </tr>
   <tr>
@@ -1291,7 +1242,7 @@ Example: “FAQ 3.2”
    </td>
    <td>How was it used? Sent or Copied?
 <p>
-Example: one of “Sent”, “Copied”
+Example: one of "Sent", "Copied"
    </td>
   </tr>
   <tr>
@@ -1301,7 +1252,7 @@ Example: one of “Sent”, “Copied”
    </td>
    <td>Time at which this FAQ was sent or copied.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1317,9 +1268,9 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>String
    </td>
-   <td>Shows if the Answer has been Sent or Copied. If not sent or copied, but used otherwise, it will be blank. “Used Otherwise” means its “Show more” may have been clicked, one of its links may have been clicked, or the Agent gave feedback to it.
+   <td>Shows if the Answer has been Sent or Copied. If not sent or copied, but used otherwise, it will be blank. "Used Otherwise" means its "Show more" may have been clicked, one of its links may have been clicked, or the Agent gave feedback to it.
 <p>
-Example: one of “Sent”, “Copied”, or blank
+Example: one of "Sent", "Copied", or blank
    </td>
   </tr>
   <tr>
@@ -1329,7 +1280,7 @@ Example: one of “Sent”, “Copied”, or blank
    </td>
    <td>Time at which this Answer was sent or copied. If not, it will be blank.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1339,7 +1290,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>If the Show More button for this answer was clicked.
 <p>
-Example: “false” without the double-quotes
+Example: "false" without the double-quotes
    </td>
   </tr>
   <tr>
@@ -1349,7 +1300,7 @@ Example: “false” without the double-quotes
    </td>
    <td>Links in the Answer clicked by the Agent.
 <p>
-Example: [“<a href="http://www.google.com/">http://www.google.com</a>“]
+Example: ["<a href="http://www.google.com/">http://www.google.com</a>"]
    </td>
   </tr>
   <tr>
@@ -1359,7 +1310,7 @@ Example: [“<a href="http://www.google.com/">http://www.google.com</a>“]
    </td>
    <td>If the Show More button for this answer was clicked.
 <p>
-Example: “false” without the double-quotes
+Example: "false" without the double-quotes
    </td>
   </tr>
   <tr>
@@ -1367,9 +1318,9 @@ Example: “false” without the double-quotes
    </td>
    <td>type-prefixed uuid
    </td>
-   <td>Prefixed by “dg-“, a position ID referring to a displayed suggestion in the “suggestions” object.
+   <td>Prefixed by "dg-", a position ID referring to a displayed suggestion in the "suggestions" object.
 <p>
-Example: “dg-3id77hn44k”
+Example: "dg-3id77hn44k"
    </td>
   </tr>
   <tr>
@@ -1403,7 +1354,7 @@ Example: “dg-3id77hn44k”
    </td>
    <td>How was it used? Sent or Copied?
 <p>
-Example: one of “Sent”, “Copied”
+Example: one of "Sent", "Copied"
    </td>
   </tr>
   <tr>
@@ -1413,7 +1364,7 @@ Example: one of “Sent”, “Copied”
    </td>
    <td>Time at which this webpage was sent or copied.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1431,7 +1382,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>Path of the file.
 <p>
-Example: “/home/docs/configuration_parameters.doc”
+Example: "/home/docs/configuration_parameters.doc"
    </td>
   </tr>
   <tr>
@@ -1441,7 +1392,7 @@ Example: “/home/docs/configuration_parameters.doc”
    </td>
    <td>How was it used? Sent or Copied?
 <p>
-Example: one of “Sent”, “Copied”
+Example: one of "Sent", "Copied"
    </td>
   </tr>
   <tr>
@@ -1451,7 +1402,7 @@ Example: one of “Sent”, “Copied”
    </td>
    <td>Time at which this file was sent or copied.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1469,7 +1420,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>Name of the data source.
 <p>
-Example: “MSSharepoint”
+Example: "MSSharepoint"
    </td>
   </tr>
   <tr>
@@ -1479,7 +1430,7 @@ Example: “MSSharepoint”
    </td>
    <td>URI of the resource.
 <p>
-Example: “<a href="https://testserver/TestSite/Reports/Doc/Company%20Sales.rdl">https://TestServer/TestSite/Reports/Doc/Company%20Sales.rdl</a>“
+Example: "<a href="https://testserver/TestSite/Reports/Doc/Company%20Sales.rdl">https://TestServer/TestSite/Reports/Doc/Company%20Sales.rdl</a>"
    </td>
   </tr>
   <tr>
@@ -1489,7 +1440,7 @@ Example: “<a href="https://testserver/TestSite/Reports/Doc/Company%20Sales.rdl
    </td>
    <td>How was it used? Sent or Copied?
 <p>
-Example: one of “Sent”, “Copied”
+Example: one of "Sent", "Copied"
    </td>
   </tr>
   <tr>
@@ -1499,7 +1450,7 @@ Example: one of “Sent”, “Copied”
    </td>
    <td>time at which this resource was sent or copied.
 <p>
-Example: “2024-06-29T08:37:35.937Z”
+Example: "2024-06-29T08:37:35.937Z"
    </td>
   </tr>
   <tr>
@@ -1517,7 +1468,7 @@ Example: “2024-06-29T08:37:35.937Z”
    </td>
    <td>The Agent can choose Thumbs Up or Down.
 <p>
-Example: one of “up”, “down”
+Example: one of "up", "down"
    </td>
   </tr>
   <tr>
@@ -1527,7 +1478,7 @@ Example: one of “up”, “down”
    </td>
    <td>The Agent may choose multiple reason codes, and these are configurable.
 <p>
-Example: [“Wrong Intent”, “Missed Context”]
+Example: ["Wrong Intent", "Missed Context"]
    </td>
   </tr>
   <tr>
@@ -1537,7 +1488,7 @@ Example: [“Wrong Intent”, “Missed Context”]
    </td>
    <td>freeform textual feedback from the Agent.
 <p>
-Example: “This is not the correct Dialog. The customer said ‘Cancel account’, and the Dialog is about renewal”.
+Example: "This is not the correct Dialog. The customer said 'Cancel account', and the Dialog is about renewal".
    </td>
   </tr>
   <tr>
@@ -1545,7 +1496,7 @@ Example: “This is not the correct Dialog. The customer said ‘Cancel account�
    </td>
    <td>Object
    </td>
-   <td>containing all displayed suggestions, whether from a SearchBarEntry action by the Agent or a proActiveSuggestion triggered by a Customer’s utterance
+   <td>containing all displayed suggestions, whether from a SearchBarEntry action by the Agent or a proActiveSuggestion triggered by a Customer's utterance
    </td>
   </tr>
   <tr>
@@ -1561,9 +1512,9 @@ Example: “This is not the correct Dialog. The customer said ‘Cancel account�
    </td>
    <td>String
    </td>
-   <td>name of the DialogTask – from the client’s bot developer.
+   <td>name of the DialogTask – from the client's bot developer.
 <p>
-Example: “Cancel Account”
+Example: "Cancel Account"
    </td>
   </tr>
   <tr>
@@ -1581,7 +1532,7 @@ Example: “Cancel Account”
    </td>
    <td>Generated Answer content.
 <p>
-Example: “A potentially very long answer that may be generated by an LLM”.
+Example: "A potentially very long answer that may be generated by an LLM".
    </td>
   </tr>
   <tr>
@@ -1589,9 +1540,9 @@ Example: “A potentially very long answer that may be generated by an LLM”.
    </td>
    <td>type-prefixed uuid
    </td>
-   <td>Prefixed by “dg-“, this field acts as a key for this particular answer, later referred to by an Answer object in a used array.
+   <td>Prefixed by "dg-", this field acts as a key for this particular answer, later referred to by an Answer object in a used array.
 <p>
-Example: “dg-3id77hn44k”
+Example: "dg-3id77hn44k"
    </td>
   </tr>
   <tr>
@@ -1619,8 +1570,8 @@ Example: AWS EC2 On-demand pricing
    </td>
    <td>The link itself.
 <p>
-Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.amazon.com/ec2/pricing/on-demand/
-</a>“
+Example: "<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.amazon.com/ec2/pricing/on-demand/
+</a>"
 </p>
    </td>
   </tr>
@@ -1629,7 +1580,7 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
    </td>
    <td>Boolean (True / False)
    </td>
-   <td>Example: “false” without the double-quotes
+   <td>Example: "false" without the double-quotes
    </td>
   </tr>
   <tr>
@@ -1643,7 +1594,7 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
    </td>
    <td>Unique name and ID number of the queue involved in the conversation.
    <P>
-   Example: “CreditCard”, “qu-2335c1-8et33-33535-133535”
+   Example: "CreditCard", "qu-2335c1-8et33-33535-133535"
     </P>
    </td>
   </tr>
@@ -1662,7 +1613,7 @@ Example: “<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.
    </td>
    <td>List of the URL/s an agent clicks with   timestamps during a conversation.
    <p>
-   Example: “https://www.apple.com/in/”, 2024-12-17T11:04:37.163Z
+   Example: "https://www.apple.com/in/", 2024-12-17T11:04:37.163Z
     </p>
    </td>
   </tr>
