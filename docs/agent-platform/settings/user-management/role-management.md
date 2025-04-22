@@ -94,8 +94,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Master Admin</strong>
    </td>
-   <td>Users have complete control over tool and model management, user administration, integrations, security settings, and access to all core features and functionalities.
-   </td>
+   <td>Users have complete control over tool and model management, and access to all the core features and functionalities of the Settings console.</td>
   </tr>
   <tr>
    <td><strong>Admin</strong>
@@ -106,8 +105,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create tools, add external models, and modify only S3 integration.
-   </td>
+   <td>Users can create tools, add external models, and modify only specific integrations.</td>
   </tr>
   <tr>
    <td><strong>Viewer</strong>
@@ -495,9 +493,21 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="4" ><strong>Integrations</strong>
+   <td rowspan="6" ><strong>Integrations</strong>
    </td>
-   <td>Weights & Biases
+   <td>Access
+   </td>
+   <td>Full
+   </td>
+   <td>Full
+   </td>
+   <td>Custom
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Delete an Integration
    </td>
    <td>Yes
    </td>
@@ -509,7 +519,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Hugging Face
+   <td>Test an Integration
    </td>
    <td>Yes
    </td>
@@ -521,25 +531,37 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>AWS S3 Bucket
+   <td>Update an Integration
    </td>
    <td>Yes
    </td>
    <td>Yes
    </td>
-   <td>No
+   <td>Yes
    </td>
    <td>No
    </td>
   </tr>
   <tr>
-   <td>SearchAssist
+   <td>Create an Integration
+   </td>
+   <td>Yes
    </td>
    <td>Yes
    </td>
    <td>Yes
    </td>
    <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Disable an Integration
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
    </td>
    <td>No
    </td>
