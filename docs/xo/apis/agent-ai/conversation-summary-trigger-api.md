@@ -1,3 +1,4 @@
+# Conversation Summary Trigger API
 
 This API triggers a conversation summary event in the Agent AI system. It is used to send event data related to a conversation to the specified bot.
 
@@ -25,7 +26,7 @@ This API triggers a conversation summary event in the Agent AI system. It is use
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)</a>.
    </td>
   </tr>
 </table>
@@ -62,7 +63,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ### Sample Request
 
 ```
-curl --location 'https://huddl-agentassist-dev.kore.ai/agentassist/api/v1/hooks/st-c04e225f-a30b-5a0a-9524-a60ebdba290e' \
+curl --location 'https://huddl-agentassist-dev.kore.ai/agentassist/api/v1/hooks/st-c04e225f-a30b-5a0a-9524-a60ebdbxxxxx' \
 
 --header 'Content-Type: application/json' \
 
@@ -72,7 +73,7 @@ curl --location 'https://huddl-agentassist-dev.kore.ai/agentassist/api/v1/hooks/
 
    "conversationId": "atesta-m03shn6u1",
 
-   "botId": "st-c04e225f-a30b-5a0a-9524-a60ebdba290e",
+   "botId": "st-c04e225f-a30b-5a0a-9524-a60ebdbxxxxx",
 
    "events": [
 
@@ -182,3 +183,4 @@ curl --location 'https://huddl-agentassist-dev.kore.ai/agentassist/api/v1/hooks/
 {
     "STATUS": "OK"
 }
+```
