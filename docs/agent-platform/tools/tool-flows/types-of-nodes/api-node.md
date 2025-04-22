@@ -37,18 +37,19 @@ Steps to add and configure the node:
             * Timeout precedence: Tool timeout *is greater than* Node timeout *is greater than* Model timeout.
 
     * **Request Definition**: Define the service request details to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
-    <img src="./../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/api-node-edit-req.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
         1. Select the request type from the list.
         2. Paste your API Endpoint URL or cURL in the text field.
-        3. In the **Headers** tab, specify the details of the Key and Value pair. For example,
+        3. In the **Auth** section, select the required **Auth Profile** from the list of configured profiles to enable user authentication for the node. [Learn more](../../../settings/security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. If authentication is not required, select **None** (the default option).
+        4. In the **Headers** tab, specify the details of the Key and Value pair. For example,
         Key: Content-Type
         Value: application/json
-        4. The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
+        5. The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
             * application/x-www-form-urlencoded: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.
             * application/json: Transmits data between servers and web applications using JSON format without processing.
             * application/xml: Sends XML payload for SOAP services using POST methods, with the option to include node values.
             * Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables.
-        5. Click the **Test** button at the top-right corner of the dialog. The API response is displayed on the **Response** tab.
+        6. Click the **Test** button at the top-right corner of the dialog. The API response is displayed on the **Response** tab.
         6. Click **Save** at the top-right corner of the dialog.
 
 6. Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.  

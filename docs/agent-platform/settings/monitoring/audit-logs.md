@@ -133,7 +133,7 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    </tr>
   <tr>
-  <td colspan="3"><b>Metadata</b>: <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, and <b><i>Integration Type</i></b> are displayed for all the category events below.</td></tr>
+  <td colspan="3"><b>Metadata</b>: <b><i>IP Address</i></b>, <b><i>Integration Name</i></b>, <b><i>Integration ID</i></b>, <b><i>Integration Type</i></b>, and <b><i>User ID</i></b> are displayed for all the category events below.</td></tr>
         <tr>
    <td><strong>Event</strong>
    </td>
@@ -147,13 +147,24 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
    <td>Tracks integrations added to the account.
    </td>
-   <td rowspan="2" align="center">-</td>
+   <td rowspan="4" align="center">-</td>
    </tr>
   <tr>
    <td>Integration deleted
    </td>
    <td>Tracks integration deletions in the account.
    </td>
+  </tr>
+    <tr>
+   <td>Integration disabled
+   </td>
+   <td>Tracks the disabling of an integration in the account.
+   </td>
+  </tr>
+      <tr>
+   <td>Integration edited
+   </td>
+   <td>Tracks the modification of an integration’s configuration data in the account.</td>
   </tr>
   </table>
 
@@ -343,7 +354,51 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   </table>
-
+<table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Tools Flow Management: Integration Node</td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <b>User ID</b>, <b>IP Address</b>, <b>Agent ID</b>, <b>Node name</b>, <b>Node ID</b>, and <b>Node Type</b> are displayed for all the category events below.
+   </td>
+  </tr>
+     <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Connection added
+   </td>
+   <td>Tracks the creation of a connection for an integration node.</td>
+   <td align="center" rowspan="5">
+   -
+   </td>
+  </tr>
+  <tr>
+   <td>Connection Modified
+   </td>
+   <td>Tracks the change of the selected connection for an integration node.</td>
+  </tr>
+    <tr>
+   <td>Action Added
+   </td>
+   <td>Tracks the addition of an action for the selected connection and its configuration.</td>
+  </tr>
+      <tr>
+   <td>Action Changed
+   </td>
+   <td>Tracks the change of the selected action.</td>
+  </tr>
+   <tr>
+   <td>Action Edited
+   </td>
+   <td>Tracks the modification of action parameters for the defined action.</td>
+  </tr>
+  </table>
   <table>
     <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Users Management
