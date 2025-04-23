@@ -466,7 +466,7 @@ nav:
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
-          - About Conversation Mining: quality-management/analyze/conversation-mining-overview.md
+          - Introduction: quality-management/analyze/conversation-mining-overview.md
           - Interactions: quality-management/analyze/conversation-mining-interactions.md 
           - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
