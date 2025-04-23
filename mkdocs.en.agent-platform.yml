@@ -115,7 +115,6 @@ nav:
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
-    - Key Concepts:
     - Quick Start Tutorials:
       - Video Tutorials: 
         - Product Overview: getting-started/tutorials/agent-platform.md
@@ -132,9 +131,7 @@ nav:
       - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
-    - Overview and Concepts:
-    - Orchestration:
-    - AI Agents:
+    - Agentic Apps:
      - About Agentic Apps: agentic-apps/overview.md
      - Create an Agentic App: agentic-apps/create-app.md
      - Agents: 
@@ -185,10 +182,6 @@ nav:
       - Configure a Tool: tools/configure-a-tool.md
       - Export a Tool: tools/export-a-tool.md
       - Import Tool as a Version: tools/import-a-tool/#import-tool-as-a-version
-    - Search AI:
-    - Training & Testing AI Agents:
-    - App Settings and Configurations:
-    - Deploying Agents:
   - Core AI Capabilities: 
     - Models: 
       - About Models: models/overview.md 
@@ -229,20 +222,13 @@ nav:
       - Configure Evaluators: evaluation/configure-evaluator.md
       - Run Evaluations: evaluation/run-evaluation.md
       - View Results: evaluation/view-evaluation-insight.md
-    - AI Safety & Governance:
-     - Guardrails: 
+    - AI Safety & Governance: 
       - About Guardrails: tools/guardrails/overview.md
       - Add a Scanner: tools/guardrails/add-a-scanner.md
       - Test Guardrail: tools/guardrails/test-guardrail.md
       - Manage Guardrails: tools/guardrails/manage-guardrails.md
-  - Marketplace: 
-    - Overview:
-    - Finding Agents:
-    - Finding Tools:
-    - Finding Pro-Code Extensions (SDKs):
   - Administration: 
-    - Overview:
-      - About Settings: settings/settings-overview.md
+    - About Settings: settings/settings-overview.md
     - User Management:
       - Overview: settings/user-management/overview.md
       - Users: settings/user-management/users.md
@@ -261,14 +247,13 @@ nav:
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
     - Security & Control:
-        - Single Sign On: settings/security-and-control/single-sign-on.md
-        - Authorization Profile: settings/security-and-control/authorization-profile.md
+      - Single Sign On: settings/security-and-control/single-sign-on.md
+      - Authorization Profile: settings/security-and-control/authorization-profile.md
     - Billing:
-        - Billing and Usage: settings/billing/billing-and-usage.md
-        - Managing Usage Limits: settings/billing/managing-usage-limits.md
+      - Billing and Usage: settings/billing/billing-and-usage.md
+      - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
-        - Manage Data: data/manage-datasets.md
-  - API & SDK: 
-    - APIs:
-      - About APIs: apis/overview.md
-      - APIs List: apis/overview/#apis-list
+      - Manage Data: data/manage-datasets.md
+  - APIs: 
+    - About Agent Platform APIs: apis/overview.md
+    - APIs List: apis/overview/#apis-list
