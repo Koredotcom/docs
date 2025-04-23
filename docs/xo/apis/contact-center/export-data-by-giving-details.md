@@ -28,8 +28,8 @@ cbf-bf31-a395bdb1xxxx/importSmartAssistFunctionalities?accountId=6297011e24f30b5
 --header 'Accept: application/json, text/plain, */*' 
 --header 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' 
 --header 'AccountId: 63e0f303560867d78313xxxx' 
---header 'Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy05N2IwNDZlMy
-1jYzA3LTVhMDEtYmYwNS1jYmZhNzAzMmFlY2IifQ.xv4hGyyqH9JAN8iPIMaxNgOqgr_2gfQGohu3aTCGGjI' 
+--header 'Authorization: bearer xxxxbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy05N2IwNDZlMy
+1jYzA3LTVhMDEtYmYwNS1jYmZhNzAzMmFlY2IifQ.xv4hGyyqH9JAN8iPIMaxNgOqgr_2gfQGohu3aTCxxxx' 
 --header 'Cache-Control: no-cache' 
 --header 'Connection: keep-alive' 
 --header 'Content-Type: application/json;charset=UTF-8' 
@@ -49,5 +49,74 @@ KcWr4dd_hZwCYl0D6jciR1IETqzZsThTNBEmams3MWY'
 
 ## Sample Response
 
-The response will be an array of objects.
-[{},{}]
+```
+[
+    {
+        "_id": "6666a49c085d6b9b1905xxxx",
+        "name": "Default SkillGroup",
+        "description": "Default SkillGroup(Auto Created).",
+        "status": "ACTIVE",
+        "color": "#D2000D",
+        "skills": [
+            {
+                "_id": "6666a49c085d6b9b1905xxxx",
+                "name": "Default Skill",
+                "isDefault": true,
+                "description": "Default Skill(Auto Created).",
+                "status": "ACTIVE",
+                "lname": "default skill",
+                "iId": "st-25c28277-bf42-5309-af41-15f8eb7exxxx",
+                "createdByAId": "a-b6697a9-2c4c-4931-8798-161d0590xxxx"
+            }
+        ],
+        "lname": "default skillgroup",
+        "isDefault": true,
+        "iId": "st-25c28277-bf42-5309-af41-15f8eb7exxxx",
+        "createdByAId": "a-b6697a9-2c4c-4931-8798-161d0590xxxx",
+        "agentGroups": [],
+        "agents": []
+    },
+    {
+        "_id": "67dbb2d456aec476d255xxxx",
+        "name": "Default SkillGroup1",
+        "description": "Default SkillGroup(Auto Created).",
+        "status": "ACTIVE",
+        "color": "#D2000D",
+        "skills": [
+            {
+                "_id": "67dbb2d456aec476d255xxxx",
+                "name": "Default Skill",
+                "isDefault": true,
+                "description": "Default Skill(Auto Created).",
+                "status": "ACTIVE",
+                "lname": "default skill",
+                "iId": "st-25c28277-bf42-5309-af41-15f8eb7exxxx",
+                "createdByAId": "a-b6697a9-2c4c-4931-8798-161d0590xxxx"
+            }
+        ],
+        "lname": "default skillgroup1",
+        "isDefault": true,
+        "iId": "st-25c28277-bf42-5309-af41-15f8eb7exxxx",
+        "createdByAId": "a-b6697a9-2c4c-4931-8798-161d0590xxxx",
+        "agentGroups": [],
+        "agents": []
+    }
+]
+```
+
+## Response Parameters
+
+| **Parameter**         | **Type**     | **Description**                                                                 |
+|-------------------|----------|-----------------------------------------------------------------------------|
+| `_id`             | String   | Unique identifier of the skill group or skill.                              |
+| `name`            | String   | Name of the skill group or skill.                                           |
+| `description`     | String   | Description of the skill group or skill.                                    |
+| `status`          | String   | Current status (for example, `ACTIVE`).                                            |
+| `color`           | String   | Hex code representing the skill group’s color. (Skill Group only)           |
+| `skills`          | Array    | List of skill objects associated with the skill group.                      |
+| `isDefault`       | Boolean  | Indicates whether the skill group or skill is the default.                  |
+| `lname`           | String   | Lowercase version of the name.                                              |
+| `iId`             | String   | Stream or application id. For example, st-25c28277-bf42-5309-af41-15f8eb7exxxx                         |
+| `createdByAId`    | String   | Identifier of the agent who created the skill group or skill.               |
+| `agentGroups`     | Array    | List of agent group identifiers. (Skill Group only)                         |
+| `agents`          | Array    | List of agent identifiers. (Skill Group only)                               |

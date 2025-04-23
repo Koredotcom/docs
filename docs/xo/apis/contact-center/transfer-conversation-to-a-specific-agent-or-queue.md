@@ -1,6 +1,6 @@
 # Transfer Conversation To a Specific Agent or Queue
 
-To retrieve the recording of a specific call using either the `userId` or `sessionId`.To transfer a conversation to a specific agent with the given `botSessionId` and `aId` (agent Id) or queue using the `queueId`. Specific messages based on success or failure to transfer conversation are posted to the given `callbackUrl`.
+To retrieve the recording of a specific call using either the `userId` or `sessionId`.To transfer a conversation to a specific agent with the given `botSessionId` and `aId` (agent Id) or queue using the `queueId`. Specific messages based on success or failure to transfer conversation are posted to the given `callbackUrl`. The `callbackUrl` helps track whether the transfer request succeeds or fails. This enables efficient handling of conversation transfers.
 
 | **Method**   | POST                                                                                      |
 |----------|-------------------------------------------------------------------------------------------|
