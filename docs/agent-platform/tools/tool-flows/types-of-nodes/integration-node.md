@@ -100,7 +100,7 @@ Then, select another action in the **Change Action** window.
 <img src="../images/select-action-change.png" alt="select action" title="select action" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Caution</p>
 <p>If you change or replace the existing action, any configuration changes made to the previous action will be lost.</p>
 </div>
 
@@ -111,7 +111,8 @@ The new action replaces the existing one for the connection. Please configure th
 To modify the parameters for an action, follow the steps below:
 
 1. Click the **Edit** icon.
-<img src="../images/edit-action.png" alt="edit action" title="edit action" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/edit-action.png" alt="edit action" title="edit action" style="border: 1px solid gray; zoom:75%;">
 
 2. Modify the required values and click **Save**.
 
@@ -135,7 +136,8 @@ After adding and configuring the node as mentioned [here](../types-of-nodes/inte
 ### Step 1: (Optional) Add Input Variable(s)
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md){:target="_blank"}.
-<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
 
 2. In the **Enter input variable** window, select the appropriate **data type** for the **Type** field to define the input variable.
 3. Click **Save**. 
@@ -150,7 +152,8 @@ Add all the required input variables to run the flow in the **Input** section of
 
 1. Click the **Start** node and select the **Output** tab.
 2. Click **Add Output Variable**.
-<img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter the value for **Name (key)** and select ***String*** for **Type**.
 4. Click **Save**. [Learn more](../types-of-nodes/integration-node.md/#access-the-nodes-output){:target="_blank"} about accessing the node’s output.
@@ -171,8 +174,9 @@ To run and test the flow, follow the steps below:
 <img src="../images/click-run-flow.png" alt="click run flow" title="click run flow" style="border: 1px solid gray; zoom:75%;">
 
 2. (Optional) Add the value for the **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
-3. Click **Generate Output**. 
-<img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
+3. Click **Generate Output**.
+
+   <img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
  
 
 The **Debug** window generates the flow log and output from the inputs provided. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
