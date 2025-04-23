@@ -44,22 +44,25 @@ If you have your App ready with you then you can use “Automation” Node in th
 
 You must configure **Transfer from IVR** to transfer a call from ZCC to Kore. Follow the steps below to make this configuration:
 
-Go to Kore.ai **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway,** and select **SIP Numbers** > **Configure SIP Transfer**.
+Go to **Flows & Channels** > **Channels** > **Voice Gateway**, and select **SIP Numbers** > **Configure SIP Trunk**.
 <img src="../images/transfer-from-ivr-2.png" alt="transfer-from-ivr" title="transfer-from-ivr" style="border: 1px solid gray; zoom:80%;">
 
 1. Select **Contact Center AI.** The **SIP URI** field auto populates and will be used to transfer the call from ZCC to Kore Voice Automation.
-2. Add the **Domain** name from Zoom in the **Fully Qualified Domain Name** field in Kore SIP Transfer.
-3. Add the **DID Number** from Zoom. (Note that this number will be used to identify the bot and flow for a call received from Zoom on Kore.)
-4. Click **Next**.
-5. Select **Inbound** **Calls** and **Outbound Calls**.  
+2. Copy the **Domain** name from the **Zoom Connector App** > **Configuration Details** and add it in the **Fully Qualified Domain Name** field.
+3. Select **srv** from the **DNS Resolve Method (Optional)** list.
+4. Copy the **DID Number** from the **Zoom Connector App** > **Configuration Details** and add it in the **DID Number** field.
+5. Select **TLS** from the **SIP Transport Type** list.
+6. Select **Pad Crypto**.
+7. Click **Next**.
+8. Select **Inbound** **Calls** and **Outbound Calls**.  
 <img src="../images/forward-to-phone-number-3.png" alt="forward-to-phone-number" title="forward-to-phone-number" style="border: 1px solid gray; zoom:80%;">
 
-6. Click **Save**.  
+9. Click **Save**.  
 
     !!! note
         Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
-7. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/#attach-flow).  
+10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/#attach-flow).  
 <img src="../images/koreai-voice-gateway-4.png" alt="koreai-voice-gateway" title="koreai-voice-gateway" style="border: 1px solid gray; zoom:80%;">
 
 ## Step 3: Agent Transfer Configuration
