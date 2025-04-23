@@ -189,7 +189,7 @@ nav:
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - Agent Node:
-        - Overview and Configuration: automation/agent-node/working-with-agent-node.md
+        - Agent Node Overview and Configuration: automation/agent-node/working-with-agent-node.md
         - Prompt Setup: automation/agent-node/prompt-setup.md
         - Quick Start Tutorials:
           - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
@@ -687,7 +687,7 @@ nav:
       - NLP Insights: analytics/automation/nlp-insights.md
       - Task Execution Logs: analytics/automation/task-execution-logs.md
       - Custom Dashboard:
-        - Introduction: analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md
+        - About Custom Dashboard: analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md
         - Custom Meta Tags: analytics/automation/custom-dashboard/custom-meta-tags.md
         - Create Custom Dashboard: analytics/automation/custom-dashboard/create-custom-dashboard.md
         - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
@@ -699,7 +699,7 @@ nav:
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:
-        - Introduction: analytics/contact-center/reports/introduction-to-reports.md
+        - Introduction to Reports: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
       - Wallboards: analytics/contact-center/wallboards.md 
   - Administration:
