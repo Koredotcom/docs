@@ -110,10 +110,9 @@ The new action replaces the existing one for the connection. Please configure th
 
 To modify the parameters for an action, follow the steps below:
 
-1. Click the **Edit** icon.
-<img src="../images/edit-action.png" alt="edit action" title="edit action" style="border: 1px solid gray; zoom:75%;">
-
-2. Modify the required values and click **Save**.
+<ol><li>Click the <b>Edit</b> icon.
+<img src="../images/edit-action.png" alt="edit action" title="edit action" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Modify the required values and click <b>Save</b>.</li></ol>
 
 ### View the JSON Code
 
@@ -134,14 +133,14 @@ After adding and configuring the node as mentioned [here](../types-of-nodes/inte
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
-
-2. In the **Enter input variable** window, select the appropriate **data type** for the **Type** field to define the input variable.
-3. Click **Save**. 
+<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a>
+<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;"></li>
+<li>In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.</li>
+<li>Click <b>Save</b>.</li>
 
 Add all the required input variables to run the flow in the **Input** section of the **Start** node. 
 
-<img src="../images/add-input-var-integration.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-input-var-integration.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Step 2: Add Output Variable(s)
 
@@ -152,9 +151,9 @@ This step is required because the **Start node** must have at least one **output
 
 <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;">
 
-3. Enter the value for **Name (key)** and select ***String*** for **Type**.
-4. Click **Save**. [Learn more](../types-of-nodes/integration-node.md/#access-the-nodes-output){:target="_blank"} about accessing the node’s output.
-<img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;">
+<ol start="3"><li>Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.</li>
+<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/integration-node/#access-the-nodes-output" target="_blank">Learn more</a>about accessing the node’s output.
+<img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Step 3: Run the Flow
 
