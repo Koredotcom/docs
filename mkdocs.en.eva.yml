@@ -113,7 +113,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Overview: getting-started/introduction.md
+    - Introduction: getting-started/introduction.md
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md
     - Setup Guide: getting-started/setup-guide.md 
     - Using AI for Work Assistant: getting-started/how-to-use.md
@@ -149,7 +149,7 @@ nav:
     - Dashboard View: analytics/dashboard-view.md
     - Data View: analytics/data-view.md
   - Administration:
-    - Administration Overview: Administration/admin-overview.md
+    - Admin Console Overview: Administration/admin-overview.md
     - Workspace: Administration/workspace.md
     - Account Hub: Administration/account-hub.md
     - Assist Configuration:
