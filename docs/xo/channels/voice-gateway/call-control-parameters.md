@@ -1744,7 +1744,7 @@ Defines the maximum time (in milliseconds) that VoiceAI Connect waits for input 
    </td>
    <td>ALL
    </td>
-   <td>Defines a special DTMF "submit" digit that when received from the user, KoreVg immediately sends all the collected digits to the bot (as a DTMF message), without waiting for the timeout to expire or for the maximum number of expected digits.
+   <td>Defines a special DTMF "submit" digit that when received from the user, Voice Gateway immediately sends all the collected digits to the bot (as a DTMF message), without waiting for the timeout to expire or for the maximum number of expected digits.
    </td>
    <td>
    </td>

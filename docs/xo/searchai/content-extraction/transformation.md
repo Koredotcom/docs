@@ -10,6 +10,7 @@ Search AI allows you to add multiple different types of stages to the transforma
 
 1. Field Mapping 
 2. Custom Script
+3. Exclude Documents
 
 
 ## Benefits
@@ -99,25 +100,25 @@ Currently, Search AI offers two types of stages for transformation at this step.
 
 3. Exclude Documents Stage
 
-The **Exclude Stage** in the Document Workbench allows you to **filter out unnecessary or irrelevant content** before it is ingested into Search AI. If a document is not required for search, you can create custom filters at this stage to prevent its ingestion. By excluding irrelevant documents, you can:
+    The **Exclude Stage** in the Document Workbench allows you to **filter out unnecessary or irrelevant content** before it is ingested into Search AI. If a document is not required for search, you can create custom filters at this stage to prevent its ingestion. By excluding irrelevant documents, you can:
 
-* Reduce unnecessary chunk generation
-* Improve search accuracy by minimizing the risk of generating incorrect or irrelevant results.
-* Enhance indexing efficiency by focusing on valuable and relevant content.
+    * Reduce unnecessary chunk generation
+    * Improve search accuracy by minimizing the risk of generating incorrect or irrelevant results.
+    * Enhance indexing efficiency by focusing on valuable and relevant content.
 
-Define filters for the documents to be excluded using the Primary Conditions. 
+    Define filters for the documents to be excluded using the Primary Conditions. 
 
 
 
-* Field - Select the document field on which the condition should be applied (e.g., creation date, file type).
-* Operator - Choose the comparison operator (e.g., greater than, less than, equals).
-* Value - Specify the value that the selected field should be compared against.
+    * Field - Select the document field on which the condition should be applied (e.g., creation date, file type).
+    * Operator - Choose the comparison operator (e.g., greater than, less than, equals).
+    * Value - Specify the value that the selected field should be compared against.
 
-    For instance, If you want to exclude documents created before a specific date (e.g., outdated files that may not be relevant for users), you can:
+        For instance, If you want to exclude documents created before a specific date (e.g., outdated files that may not be relevant for users), you can:
 
-* Select **Created On** as the field.
-* Choose **less than** as the operator.
-* Enter the **cutoff date** as the value.
+    * Select **Created On** as the field.
+    * Choose **less than** as the operator.
+    * Enter the **cutoff date** as the value.
 
 
 ## Stages available for different Extraction Strategies
