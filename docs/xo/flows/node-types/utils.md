@@ -315,9 +315,9 @@ agentUtils.setAgentRecordingControl({record: "stop"});
 * The following note will appear near the recording widget on the 'Interactions' page:  
  “**Note**: Certain parts of this call were not recorded due to the applied recording settings.”  
 
- !!! Note
+    !!! Note
 
-    If recordings are disabled at the global account level, the existing note content will be displayed instead.
+        If recordings are disabled at the global account level, the existing note content will be displayed instead.
 
 #### Disabling Both Transcripts and Recordings
 
