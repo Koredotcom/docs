@@ -4,19 +4,13 @@ The **Conversation History** dashboard allows you to review the transcripts of p
 
 The **Advanced Conversation Analytics** feature provides a more detailed view of the conversation, including events and custom tags, which can help you better understand the interaction between the customer and the virtual assistant. Custom Tags can be reused across conversations for training purposes and for identifying areas where the virtual assistant could improve.
 
-!!! note
-
-    The **Conversations History** Dashboard is available only post the 9.3 release, i.e. post-July 24, 2022.
-
-
 **To view the Conversations History dashboard, follow the steps**: 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
+1.  Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/navigating-to-conversations-history-dashboard.png" alt="Navigating to Conversations History Dashboard" title="Navigating to Conversations History Dashboard" style="border: 1px solid gray; zoom:80%;">
 
-
-2. Click the **Conversations History dashboard** under the **Automation** section of the **Analytics** panel. The **Conversations History dashboard** is displayed on the right side of the page.
+2. Click the **Conversations History dashboard** under the **Overview** section of the **Analytics** panel. The **Conversations History dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
 
@@ -29,7 +23,6 @@ The **Filter Views** page is the preface or landing page displayed when you clic
 * Access the **Conversations History Dashboard** for the selected preset.
 
 <img src="../images/filters-view-page.png" alt="Filters View Page" title="Filters View Page" style="border: 1px solid gray; zoom:80%;">
-
 
 ### Prebuilt Filters for Conversations History
 

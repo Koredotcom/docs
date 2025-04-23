@@ -183,7 +183,7 @@ nav:
         - Platform Services: release-notes/11.x/platform-services.md 
         - Voice Gateway: release-notes/11.x/voice-gateway.md  
   - Automation AI: 
-    - Overview: automation/about-automation-ai.md
+    - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
@@ -200,11 +200,11 @@ nav:
           - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
     - Use Cases:
       - Dialog Tasks:
-        - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
+        - About Dialog Tasks: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
         - Node Types:
-          - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md
+          - About Nodes: automation/use-cases/dialogs/node-types/nodes-transitions.md
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
@@ -230,7 +230,7 @@ nav:
       - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
-        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+        - About Digital Skills: automation/use-cases/digital-skills/digital-skills-overview.md
         - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
@@ -238,9 +238,9 @@ nav:
       - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
       - Context Object: automation/intelligence/context-object.md  
     - Knowledge AI:
-        - Overview: automation/knowledge-ai/knowledge-ai-introduction.md
+        - About Knowledge AI: automation/knowledge-ai/knowledge-ai-introduction.md
         - Knowledge Graph (KG):
-          - Introduction: automation/knowledge-ai/knowledge-graph-overview.md
+          - About KG: automation/knowledge-ai/knowledge-graph-overview.md
           - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
           - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
           - Manage KG: automation/knowledge-ai/manage-faqs.md
@@ -251,13 +251,13 @@ nav:
             - Auto-Generate KG: automation/knowledge-ai/generate-a-knowledge-graph.md
           - KG Analysis: automation/knowledge-ai/knowledge-graph-analysis.md    
     - Natural Language:
-      - Overview: automation/natural-language/nlp-introduction.md
+      - About NLP: automation/natural-language/nlp-introduction.md
       - NLP Optimization: automation/natural-language/training/optimizing-bots.md
       - NLP Guidelines: automation/natural-language/nlp-guidelines.md   
       - Training:
-        - Overview: automation/natural-language/training/nlp-training-overview.md
+        - About NLP Training: automation/natural-language/training/nlp-training-overview.md
         - ML Engine:
-          - Overview: automation/natural-language/training/machine-learning-engine.md
+          - The ML Engine: automation/natural-language/training/machine-learning-engine.md
           - Model Validation: automation/natural-language/training/model-validation.md
         - FM Engine: automation/natural-language/training/fundamental-meaning.md
         - KG Engine: automation/knowledge-ai/knowledge-graph-training.md
@@ -269,10 +269,10 @@ nav:
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
     - Conversation Intelligence:
-      - Overview: automation/intelligence/intelligence-overview.md
+      - About Intelligence: automation/intelligence/intelligence-overview.md
       - Context Management: automation/intelligence/context-management.md
       - Events: 
-        - Overview: automation/intelligence/event-overview.md
+        - About Events: automation/intelligence/event-overview.md
         - Intent Events: automation/intelligence/event-handling.md
         - Conversation Events: automation/intelligence/conversation-management/conversation-events.md 
         - Sentiment Events: 
@@ -283,7 +283,7 @@ nav:
         - Manage Interruptions: automation/intelligence/conversation-management/manage-interruptions.md
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
-      - Overview: automation/testing/test-and-debug-overview.md
+      - About Test and Debug: automation/testing/test-and-debug-overview.md
       - Test (Talk to Bot): automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
