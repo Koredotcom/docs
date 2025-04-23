@@ -49,7 +49,7 @@ To add and configure the Integration node, follow the steps below:
 5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
 
     <div class="admonition note">
-    <p class="admonition-title">Prerequisite</p>
+    <p class="admonition-title">Note</p>
     <p>The node uses the service provider’s name by default. You can rename the node if needed.</p>
 </div>
 
@@ -78,11 +78,11 @@ To add and configure the Integration node, follow the steps below:
 </li>
 <li>Click the <b>Connections</b> icon and select <b>Go to Node</b> for success and failure conditions.</li>
 <ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
-<li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.</li>
-<img src="../images/success-failure-flow.png" alt="node flow" title="node flow" style="border: 1px solid gray; zoom:75%;">
-</ul>
+<li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the AI node.
+<img src="../images/success-failure-flow.png" alt="node flow" title="node flow" style="border: 1px solid gray; zoom:75%;"></li>
+</ul></ol>
 
-The node connects to the service using the selected connection and performs the configured action when the flow is run.</ol>
+The node connects to the service using the selected connection and performs the configured action when the flow is run.
 
 The **next step** is to configure and test the flow for the node. [Learn more](../types-of-nodes/integration-node.md/#configure-and-test-the-flow-for-the-node){:target="_blank"}.
 
