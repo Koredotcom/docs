@@ -150,7 +150,7 @@ This step is required because the **Start node** must have at least one **output
 <li>Click <b>Add Output Variable</b>.</li>
 <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.</li>
-<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/integration-node/#access-the-nodes-output" target="_blank">Learn more</a>about accessing the node’s output.
+<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/integration-node/#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
 <img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Step 3: Run the Flow
