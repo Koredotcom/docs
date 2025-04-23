@@ -277,9 +277,8 @@ nav:
 
   - Getting Started: 
     - Platform Overview: getting-started/introduction.md
-    - Accessing Agent Platform: getting-started/sign-up-sign-in.md
-    - Key Concepts:
-    - Quick Start Tutorials:
+    - Accessing the Platform: getting-started/sign-up-sign-in.md   
+    - Quick Start Resources: 
       - Video Tutorials: 
         - Product Overview: getting-started/tutorials/agent-platform.md
         - Create an Agentic App: getting-started/tutorials/create-agentic-app.md
