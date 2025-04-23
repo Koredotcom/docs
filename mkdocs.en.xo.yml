@@ -406,7 +406,7 @@ nav:
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md
         - LLM Selection and Configuration: searchai/best-practices/llm-selection.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center-ai.md 
+    - About Contact Center AI: contactcenter/about-contact-center-ai.md 
     - Getting Started:
       - Minimum System and Browser Requirements: channels/voice-gateway/minimum-system-requirements-and-supported-browsers.md
     - Agent and Supervisors: 
@@ -442,7 +442,7 @@ nav:
       - Manage Layout: console/manage-layout.md
       - Monitor: console/monitor-queues-agents-interactions-service-levels.md
     - Campaigns:  
-      - Overview: contactcenter/campaigns/about-campaigns.md
+      - About Campaigns: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
       - Campaign Management:
         - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
@@ -453,7 +453,7 @@ nav:
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
     - Quality AI:
-      - Overview: quality-management/about-quality-ai.md         
+      - About Quality AI: quality-management/about-quality-ai.md         
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
@@ -466,7 +466,7 @@ nav:
         - Adherence Heatmap: quality-management/analyze/adherence-heatmap.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
         - Conversation Mining: 
-          - Overview: quality-management/analyze/conversation-mining-overview.md
+          - About Conversation Mining: quality-management/analyze/conversation-mining-overview.md
           - Interactions: quality-management/analyze/conversation-mining-interactions.md 
           - Audit Allocations: quality-management/analyze/conversation-mining-audit-allocations.md
         - Agent Leaderboard: quality-management/analyze/agent-leaderboard.md            
@@ -488,7 +488,7 @@ nav:
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
           - Language Settings: quality-management/configure//langauge-settings.md
   - Agent AI:
-    - Overview: agentai/about-agent-ai.md           
+    - About Agent AI: agentai/about-agent-ai.md           
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
