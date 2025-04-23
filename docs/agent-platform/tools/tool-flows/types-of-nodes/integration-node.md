@@ -111,7 +111,6 @@ The new action replaces the existing one for the connection. Please configure th
 To modify the parameters for an action, follow the steps below:
 
 1. Click the **Edit** icon.
-   
 <img src="../images/edit-action.png" alt="edit action" title="edit action" style="border: 1px solid gray; zoom:75%;">
 
 2. Modify the required values and click **Save**.
@@ -135,9 +134,7 @@ After adding and configuring the node as mentioned [here](../types-of-nodes/inte
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
-
-<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;">
 
 2. In the **Enter input variable** window, select the appropriate **data type** for the **Type** field to define the input variable.
 3. Click **Save**. 
@@ -152,6 +149,7 @@ This step is required because the **Start node** must have at least one **output
 
 1. Click the **Start** node and select the **Output** tab.
 2. Click **Add Output Variable**.
+
 <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter the value for **Name (key)** and select ***String*** for **Type**.
