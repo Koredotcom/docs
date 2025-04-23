@@ -279,7 +279,7 @@ agentUtils.setExternalAgentRecordingControl({record: "pause"})
 agentUtils.setExternalAgentRecordingControl({record: "resume"})
 ```
 
-### Enable/Disable Transcripts and Voice Recordings for Kore Contact Center AI
+### Enable/Disable Transcripts and Voice Call Recordings for Contact Center AI
 
 Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Contact Center AI Desktop. You can use these functions to:
 
@@ -289,7 +289,7 @@ Using these functions, bot developers can control whether transcripts and record
 
 #### Disabling Transcripts
 
-To disable transcripts before initiating an agent transfer:
+To disable voice call recordings before initiating an agent transfer:
 
 Syntax:
 
@@ -311,13 +311,10 @@ Syntax:
 agentUtils.setAgentRecordingControl({record: "stop"});
 ```
 
-* Recordings will not be generated for that agent interaction.
+* Voice call recordings will not be generated for that agent interaction.
 * The following note will appear near the recording widget on the 'Interactions' page:  
  “**Note**: Certain parts of this call were not recorded due to the applied recording settings.”  
-
-    !!! Note
-
-        If recordings are disabled at the global account level, the existing note content will be displayed instead.
+* If recordings are disabled at the global account level, the existing note content will be displayed instead.
 
 #### Disabling Both Transcripts and Recordings
 

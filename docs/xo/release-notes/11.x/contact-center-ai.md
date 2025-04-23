@@ -64,13 +64,13 @@ Agents can view past call details for both Inbound and Outbound calls in the Cal
 
 The Total Digital Conversation Limit improves agent workload management across all digital channels. When enabled, this unified limit automatically marks agents as "system busy" once they reach their combined conversation threshold, regardless of channel type. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#total-digital-conversation-limit)
 
-#### AgentUtils: Transcript and Voice Recording Controls for Agent Desktop
+#### AgentUtils: Transcript and Voice Call Recording Controls for Agent Desktop
 
-App developers can control transcript visibility and recording generation on the Agent Desktop through script nodes before agent transfers.
+App developers can control transcript visibility and voice call recording generation on the Agent Desktop through script nodes before agent transfers.
 
 Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hidden from agents with appropriate notifications displayed.
 
-Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
+Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents voice call recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
 
 [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#enabledisable-transcripts-and-recordings-for-kore-contact-center-ai)
 
