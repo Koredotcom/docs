@@ -82,7 +82,7 @@ To add and configure the Integration node, follow the steps below:
 <img src="../images/success-failure-flow.png" alt="node flow" title="node flow" style="border: 1px solid gray; zoom:75%;">
 </ul>
 
-The node connects to the service using the selected connection and performs the configured action when the flow is run. 
+The node connects to the service using the selected connection and performs the configured action when the flow is run.</ol>
 
 The **next step** is to configure and test the flow for the node. [Learn more](../types-of-nodes/integration-node.md/#configure-and-test-the-flow-for-the-node){:target="_blank"}.
 
