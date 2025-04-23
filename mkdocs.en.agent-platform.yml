@@ -131,15 +131,14 @@ nav:
       - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
-    - Agentic Apps:
-     - About Agentic Apps: agentic-apps/overview.md
-     - Create an Agentic App: agentic-apps/create-app.md
-     - Agents: 
+    - About Agentic Apps: agentic-apps/overview.md
+    - Create an Agentic App: agentic-apps/create-app.md
+    - Agents: 
       - About Agents: agentic-apps/agent-overview.md
       - Set up an Agent: agentic-apps/create-agent.md
-     - App Simulation: agentic-apps/app-testing.md
-     - App Deployment: agentic-apps/app-deployment.md
-     - App Settings: agentic-apps/app-settings.md     
+    - App Simulation: agentic-apps/app-testing.md
+    - App Deployment: agentic-apps/app-deployment.md
+    - App Settings: agentic-apps/app-settings.md     
     - Tools: 
      - About Tools: tools/overview.md
      - Create a Tool: tools/create-a-new-tool.md
