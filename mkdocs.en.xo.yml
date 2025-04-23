@@ -401,6 +401,7 @@ nav:
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
         - Multilingual Support: searchai/language-support.md
+        - User Feedback Handling: searchai/feedback.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md

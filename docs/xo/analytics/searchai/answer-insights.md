@@ -43,7 +43,7 @@ Click on a query record to see a list of answers generated each time the query w
 
 Click on any answer record to view additional details. The information is displayed in three tabs:
 
-**Overview**: Displays the query, the generated answer, and metadata such as when and how the query was posted.
+**Overview**: Displays the query, the generated answer, and metadata such as when and how the query was posted. It also shows the feedback given by the user on the answer. 
 
 ![Answer Insights](images/detailed-answer.png "Answer Details")
 

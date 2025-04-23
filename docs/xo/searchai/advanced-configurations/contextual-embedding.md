@@ -28,9 +28,9 @@ To view the contextual content added to the chunks, go to the chunk viewer and s
 
 Go to **Advanced Configuration** and set **Contextual Embeddings** to True. 
 
-!!!note
- * If documents are ingested **after** enabling contextual embeddings, contextual information will be automatically added to the generated chunks during the ingestion process. 
- * If content was **already ingested** before enabling contextual embeddings, you must **retrain the application** to update the existing chunks with contextual information.
+**Note**
+* If documents are ingested **after** enabling contextual embeddings, contextual information will be automatically added to the generated chunks during the ingestion process. 
+* If content was **already ingested** before enabling contextual embeddings, you must **retrain the application** to update the existing chunks with contextual information.
 
 ![Contextual Embedding](images/setting.png "Contextual Embedding")
 

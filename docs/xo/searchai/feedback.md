@@ -31,4 +31,4 @@ Click View Details link for any of the answers to view the user comments along w
 ![alt_text](images/feedback/feedback-comments.png "Feedback")
 
 
-To capture the feedback via the APIs, use the Feedback API.  
+To capture the feedback via the APIs, use the [Feedback API](../apis/searchai/feedback.md).  
