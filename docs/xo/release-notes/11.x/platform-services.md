@@ -1,6 +1,14 @@
 # Platform Services Updates
 
-This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
+
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
 
 ## v11.12.0 April 05, 2025
 
@@ -258,7 +266,7 @@ We are announcing the general availability (GA) of the [DialogGPT Module](./../.
 
 <u> Patch Release </u>
 
-This update include only bug fixes.
+This update includes only bug fixes.
 
 <hr>
 

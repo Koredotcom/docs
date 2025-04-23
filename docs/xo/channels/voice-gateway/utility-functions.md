@@ -1,6 +1,6 @@
 # Utility Functions in Voice Gateway
 
-Kore.ai Voice Gateway offers two utility libraries to manage call handling and transfers - Agent Utils and Voice Utils. These utilities provide comprehensive control over call flows, including features like SIP transfers, audio control, DTMF handling, and custom header management. Together, they offer flexible options for implementing both complex agent-assisted scenarios and straightforward external transfers.
+Voice Gateway offers two utility libraries to manage call handling and transfers - Agent Utils and Voice Utils. These utilities provide comprehensive control over call flows, including features like SIP transfers, audio control, DTMF handling, and custom header management. Together, they offer flexible options for implementing both complex agent-assisted scenarios and straightforward external transfers.
 
 ## Agent Utils (SmartAssist/Contact Center Library)
 
@@ -129,7 +129,7 @@ The system will first play the message, then hang up the call and transmit the h
         var message = "Call completed";
         var headers : {
 
-        	`"X-Reason"` `:` `"Call hangup from Kore side"`
+        	`"X-Reason"` `:` `"Call hangup from system side"`
         }
 
         print(voiceUtils.hangup(message,headers));
@@ -215,7 +215,7 @@ var message = "Transferring Call to xxxx number";
 var ReferTo = "+91xxxxxxxxxx";   // or sipUrl 
 
 var headers: {
-	"X-Reason" : "Call Received from Kore"
+	"X-Reason" : "Call Received from ABC"
 }
 
 print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
@@ -615,8 +615,8 @@ print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,
 
  It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code.
 
-If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Kore Support Team.
+If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Support Team.
 
 !!! note
 
-    The Kore platform does not perform design-time validation of message overrides; they are passed as is, increasing the likelihood of errors.
+    The platform does not perform design-time validation of message overrides; they are passed as is, increasing the likelihood of errors.

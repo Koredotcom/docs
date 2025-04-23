@@ -1,8 +1,17 @@
 # Search AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
 
 ## v11.12.0 April 05, 2025
+
 <u> Minor Release </u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.

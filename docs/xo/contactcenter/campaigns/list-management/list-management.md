@@ -67,7 +67,7 @@ To retrieve user information from the context, specifically the user details fro
 
 !!! Note
 
-    The character limit for each field is 300 characters.
+    The table supports up to 150 columns, with a maximum of 300 characters per column.
 
 Steps to query the CSV fields in the start flow-node:
 

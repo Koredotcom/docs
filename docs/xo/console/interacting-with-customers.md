@@ -766,7 +766,7 @@ To transfer a conversation to another agent:
 
 !!! Note
 
-    If the customer ends the chat before the agent completes the transfer, Contact Center AI will drop the transfer, and the conversation will not be assigned to any queue or agent. Kore WebSdk v1.0 supports this feature only for chat conversations.
+    If the customer ends the chat before the agent completes the transfer, Contact Center AI will drop the transfer, and the conversation will not be assigned to any queue or agent. WebSdk v1.0 supports this feature only for chat conversations.
 
 **Transfer to External Contacts**
 
@@ -916,7 +916,7 @@ When the agent types a response during a chat conversation with a customer, the 
 
 Do the following to enable the typing indicator for chat conversations:
 
-1. To integrate Kore.ai bots chat capability into custom applications, install WebSDK 2.0 on your server. WebSDK 2.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11) for additional information on installing WebSDK 2.0.
+1. To integrate bots chat capability into custom applications, install WebSDK 2.0 on your server. WebSDK 2.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11) for additional information on installing WebSDK 2.0.
 2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 2.0. The Agent Desktop plugin allows the user to interact with the agent through the bot and supports the following features:
 
     * Audio Calling
@@ -986,7 +986,7 @@ This status is not available for selection by an agent.
 
 If no agents are logged in, conversations will wait in the queue till the maximum wait time specified for the queue.
 After the queue max timeout occurs, the "[no agents available](../contactcenter/flows-and-routing/conditional-flows.md#no-agents-available-flow)" flow is triggered. This is enabled at the account level for new accounts and applies to all channels.
-For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Kore Support.
+For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Support.
 
 ## CSAT Survey
 

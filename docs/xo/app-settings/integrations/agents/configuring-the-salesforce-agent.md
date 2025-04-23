@@ -12,6 +12,8 @@ Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction fo
 
 ## Configuration
 
+Before configuring a Salesforce agent, users must be enabled with the **Service Cloud User** licence to ensure all options are displaying for them in the customize section of the left navigation.
+
 To configure the Salesforce agent, follow the instructions in the sections below.
 
 

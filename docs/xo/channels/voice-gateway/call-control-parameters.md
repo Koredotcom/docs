@@ -1377,7 +1377,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
 <code>Language : “en-IN”,</code><br>
 <code>voiceName :”‘en-IN-Wavenet-A”</code><br>
 <code>}</code><br>
-<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or koreVG/SmartAssist application</strong><br>
+<strong>For applying the below parameters we always have to use the STT engine as Recognizer otherwise the default is applied that was set as bot level or Voice Gateway</strong><br>
 <strong>Note: Provider Properties will be Applied at the Session Level</strong>
    </td>
   </tr>
@@ -1744,7 +1744,7 @@ Defines the maximum time (in milliseconds) that VoiceAI Connect waits for input 
    </td>
    <td>ALL
    </td>
-   <td>Defines a special DTMF "submit" digit that when received from the user, KoreVg immediately sends all the collected digits to the bot (as a DTMF message), without waiting for the timeout to expire or for the maximum number of expected digits.
+   <td>Defines a special DTMF "submit" digit that when received from the user, Voice Gateway immediately sends all the collected digits to the bot (as a DTMF message), without waiting for the timeout to expire or for the maximum number of expected digits.
    </td>
    <td>
    </td>

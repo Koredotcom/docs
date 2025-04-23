@@ -8,7 +8,7 @@
 * 64-bit operating system (Windows 11 or higher, MacOS Monterey or higher).
 * At least 8 GB of RAM (16 GB RAM is recommended).
 * 50 GB of free hard disk space.
-* Network Interface Card (NIC) with 1 Gbps.
+* Network Interface Card (NIC) with 1 Gigabytes per second (Gbps).
 
 The software may also work on any desktop operating system that meets the other system requirements and can install a supported web browser, such as Linux and Chrome OS. Still, it has not been tested and certified for all such combinations.
 
@@ -19,7 +19,7 @@ The software may also work on any desktop operating system that meets the other 
 * We recommend that each computer includes antimalware protection.
 
     !!! Note
-    
+
         Some antivirus software runs real-time inspection on HTTPS and audio packets, and may lower the audio quality of WebRTC.
 
 ## Web Browser Requirements
@@ -84,7 +84,7 @@ The following web browsers are supported for use with XO Contact Center Agent an
 * Chrome — Requires a current major release or one previous version.
 * Microsoft Edge Chromium — Requires current release.
 
-Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well.  
+Version recommendations are made based on the outcomes of internal testing. The software may work without issues on older browser versions as well.
 Still, the customer will be required to update browser versions if an issue is identified due to browser version mismatches.
 
 !!! Note
@@ -113,7 +113,7 @@ In Microsoft Edge, you can disable sleep mode for specific sites.
 3. Click **Settings**. The Settings tab appears.
 4. Click **System and performance**.
 5. Under **Never put these sites to sleep**, click Add. The **Add** a site dialog appears.
-6. Type your region domain in the **Site** box using this format **[*].domain**. For example, **[*.]kore.ai**.
+6. Type your region domain in the **Site** box using this format **[*].domain**. For example, **[*.]domain.com**.
 7. Click **Add**.
 
 #### Google Chrome
@@ -126,7 +126,7 @@ In Google Chrome, you can disable sleep mode for specific sites.
 4. Click **Performance**.
 5. On the Memory tile, locate the **Always keep these sites active** setting and click **Add**. The Add Sites dialog appears.
 6. Click **Add Sites manually**.
-7. Type your region domain in the Site box. For example, **platform.kore.ai**.
+7. Type your region domain in the Site box. For example, **domain.com**.
 8. Click **Add**.
 
 ## Firewall Requirements
@@ -137,16 +137,16 @@ Allow traffic and whitelist the ports listed below in their respective firewalls
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 3.224.189.218<br>(or)<br>35.174.41.205 | [Learn more](../kore.ai-voice-gateway/us-firewall-rules.md) |
+    | 3.224.189.218<br>(or)<br>35.174.41.205 | [Learn more](../voice-gateway/us-firewall-rules.md) |
 
 === "REGION – Japan (JP)"
 
     | SBC IP Address                        | Firewall Rules                                                                 |  
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 35.76.183.247<br>(or)<br>54.248.11.38 | [Learn more](../kore.ai-voice-gateway/japan-firewall-rules.md) |
+    | 35.76.183.247<br>(or)<br>54.248.11.38 | [Learn more](../voice-gateway/japan-firewall-rules.md) |
 
 === "Region - Germany (DE)"
 
     | SBC IP Address                        | Firewall Rules                                                                 |
     |---------------------------------------|--------------------------------------------------------------------------------|
-    | 3.70.125.14<br>(or)<br>18.158.223.171 | [Learn more](../kore.ai-voice-gateway/germany-firewall-rules.md) |
+    | 3.70.125.14<br>(or)<br>18.158.223.171 | [Learn more](../voice-gateway/germany-firewall-rules.md) |

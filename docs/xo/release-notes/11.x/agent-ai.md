@@ -1,6 +1,20 @@
 # Agent AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
+
+## v11.12.1 April 19, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### API
+
+#### Control Transcription API
+
+The API lets you control the transcription session of a bot conversation. You can end an ongoing transcription session with a valid conversationId and appropriate authentication tokens. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
+
+<hr>
 
 ## v11.12.0 April 05, 2025
 
@@ -12,7 +26,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Gen AI Integration in Agent Coaching
 
-Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks.
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-realtime-coaching.md)
 
 #### Search Support in Conversation Logs
 
@@ -30,7 +44,7 @@ The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now recei
 
 #### Agent AI Integration with NICE Agent Desktop
 
-Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget.
+Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md)
 
 ### API Enhancements
 

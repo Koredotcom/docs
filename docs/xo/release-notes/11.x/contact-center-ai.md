@@ -1,6 +1,20 @@
 # Contact Center AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
+
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### Configuration
+
+#### Deflection Flow Node Added
+
+The voice channel now supports a new Deflection Flow node, allowing for the seamless continuation of existing Deflect to Chat configurations within SmartAssist experience flows. This new node, found in Start and Conditional Voice flows, supports both default and custom flows while preserving original chat deflection behaviors. To utilize this deflection flow, users must upgrade from SmartAssist to XO v11, which includes Automation AI. [Learn more :octicons-arrow-right-24:](../../flows/node-types/deflection-flow.md)
+
+<hr>
 
 ## v11.12.0 April 05, 2025
 
@@ -50,13 +64,13 @@ Agents can view past call details for both Inbound and Outbound calls in the Cal
 
 The Total Digital Conversation Limit improves agent workload management across all digital channels. When enabled, this unified limit automatically marks agents as "system busy" once they reach their combined conversation threshold, regardless of channel type. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#total-digital-conversation-limit)
 
-#### AgentUtils: Transcript and Recording Controls for Agent Desktop
+#### AgentUtils: Transcript and Voice Call Recording Controls for Agent Desktop
 
-App developers can control transcript visibility and recording generation on the Agent Desktop through script nodes before agent transfers.
+App developers can control transcript visibility and voice call recording generation on the Agent Desktop through script nodes before agent transfers.
 
 Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hidden from agents with appropriate notifications displayed.
 
-Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
+Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents voice call recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
 
 [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#enabledisable-transcripts-and-recordings-for-kore-contact-center-ai)
 
