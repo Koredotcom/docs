@@ -1,7 +1,7 @@
 
 # Explore Generative AI Features with Free Tokens
 
-Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to AI-driven tools like Co-pilot and dynamic conversations without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. 
+Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to AI-driven features without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. 
 
 !!! note
 
@@ -20,7 +20,7 @@ These tokens use OpenAI GPT-4o model from Azure by Kore.ai's enterprise account,
 
 ## Features You Can Explore with Free Tokens
 
-### Copilot Features
+### Designtime Features
 
 * **Automatic Dialog Generation**: Create complete dialog flows automatically based on minimal input.
 
@@ -39,7 +39,7 @@ These tokens use OpenAI GPT-4o model from Azure by Kore.ai's enterprise account,
 [Learn More](../co-pilot-features/)
 
 
-### Dynamic Features
+### Runtime Features
 
 * **Answer Generation**: Automatically generate accurate and contextually appropriate answers.
 
