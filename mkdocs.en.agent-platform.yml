@@ -113,7 +113,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Platform Overview: getting-started/introduction.md
+    - Agent Platform Overview: getting-started/introduction.md
     - Accessing the Platform: getting-started/sign-up-sign-in.md   
     - Quick Start Resources: 
       - Video Tutorials: 
