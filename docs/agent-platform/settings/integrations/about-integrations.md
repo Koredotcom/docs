@@ -48,10 +48,8 @@ The features supported on the Integrations page include:
 <img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;">
 
 
-* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, and Bearer. Refer [here](../integrations/about-integrations.md/#overview){:target="_blank"} for more details.
-
-   Select the required option(s) and click **Apply** to view the relevant integrations.
-   <img src="../images/select-category-integration.png" alt="select auth" title="select auth" style="border: 1px solid gray; zoom:75%;">
+* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, and Bearer. Refer to the [overview](../integrations/about-integrations.md/#overview){:target="_blank"} section for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
+<img src="../images/select-category-integration.png" alt="select auth" title="select auth" style="border: 1px solid gray; zoom:75%;">
 
 * **List View**: Click this icon to view the available integration options as a list with the following information:
     * **Connection Name**: The service provider’s name.
@@ -78,13 +76,9 @@ To add a connection or configure an integration, follow the steps below:
 
      **Case 2**: To select an existing/connected provider, click the **Connected** tab, and click the required provider.
 
-3. Click **Add Connection** on the next page.
-
-   **Case 1: New Integration**
-   <img src="../images/add-new-conn.png" alt="add connection" title="add connection" style="border: 1px solid gray; zoom:75%;">
-
-   **Case 2: Connected Integration**
-   <img src="../images/connected-integration-add.png" alt="connected integration" title="connected integration" style="border: 1px solid gray; zoom:75%;">
+3. Click **Add Connection** on the next page or the integrations listing page.
+<img src="../images/add-new-conn.png" alt="add connection" title="add connection" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/connected-integration-add.png" alt="connected integration" title="connected integration" style="border: 1px solid gray; zoom:75%;">
 
 4. The Configuration window is displayed, where you must enter the following information:
     * **Connection Name**: A unique name to identify the integration.
@@ -102,7 +96,7 @@ To add a connection or configure an integration, follow the steps below:
 
         **OAuth2**
 
-        * Provide the connection name and select the configured **Auth Profile** from the list in the **Custom** window to associate it with the integration for authentication. [Learn more](https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-profile){:target="_blank"} about setting up auth profiles in your account. If no auth profiles are configured, you can add one by selecting **+ Create new** and following the steps mentioned [here](https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/){:target="_blank"}.
+        * Provide the connection name and select the configured **Auth Profile** from the list in the **Custom** window to associate it with the integration for authentication. [Learn more](https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-profile){:target="_blank"} about setting up auth profiles in your account. If no auth profiles are configured, you can add one by selecting **+ Create new** and following the steps mentioned [here](https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-profile){:target="_blank"}.
         * **Custom auth** allows you to use your custom-configured authentication flow by selecting an **Auth Profile** on the Agent Platform, instead of using third-party authentication.
         * Once an Auth Profile is selected, all its credentials are fetched and automatically populate the corresponding fields such as **Redirect URL**, **Scopes**, **Base URL**, and more.
         * You don’t need to re-authenticate as long as the **authorization profile** remains in your account (i.e., it hasn’t been deleted).
@@ -132,12 +126,11 @@ To add a connection or configure an integration, follow the steps below:
       <p>For other Authentication types, such as OAuth1, retrieve the required values from the admin console of your account on the provider’s site to configure the integration.</p>
       </div>
 
-<ol start="5"><li>Click <b>Save</b>.</li></ol>
-
+<ol start="5"><li>Click <b>Save</b>.</li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <b>Save</b> button will not appear until all required inputs have been provided.</p>
-</div>
+</div></ol>
 
 Once the connection is set up, a success message is displayed.
 
@@ -164,12 +157,10 @@ You will be redirected to the following page, where all the connections for the 
     * Click **Test** to validate the connection.
     * Click **Save**.
 
-
 ## Manage Connected Integrations
 
 You can view, edit, delete, and perform additional actions with connected integrations to your account in the **Connected** section.
 <img src="../images/click-connected-tab.png" alt="click connected tab" title="click connected tab" style="border: 1px solid gray; zoom:75%;">
-
 ### View Summary
 
 Once you click the integration in the **Connected** section, the list of configured connections is displayed with the following information:
@@ -188,7 +179,7 @@ Once you click the integration in the **Connected** section, the list of configu
 To edit the configuration for a connection, follow the steps below:
 
 <div class="admonition note">
-<p class="admonition-title">Important</p>
+<p class="admonition-title">Note</p>
 <p>You cannot modify the connection name.</p>
 </div>
 
