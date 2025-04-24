@@ -237,6 +237,7 @@ nav:
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
     - Integrations:
+      - About Integrations: settings/integrations/about-integrations.md
       - Enable Hugging Face: settings/integrations/enable-hugging-face.md
       - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
