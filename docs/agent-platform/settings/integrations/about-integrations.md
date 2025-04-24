@@ -210,11 +210,10 @@ To delete an integration, follow the steps below:
 
 5. Click **Delete** in the confirmation dialog.
 
-<div class="admonition warning">
-<p class="admonition-title">Caution</p>
-<p>This action is irreversible and will remove all associations of the connection from the Agent Platform.</p>
-</div>
-<img src="../images/delete-connection.png" alt="delete connection" title="delete connection" style="border: 1px solid gray; zoom:75%;">
+  <div class="admonition warning">
+  <p class="admonition-title">Caution</p>
+  <p>This action is irreversible and will remove all associations of the connection from the Agent Platform.</p></div>
+  <img src="../images/delete-connection.png" alt="delete connection" title="delete connection" style="border: 1px solid gray; zoom:75%;">
 
 A success message appears, and the connection is removed from the system.
 
