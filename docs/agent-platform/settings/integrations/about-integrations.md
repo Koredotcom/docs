@@ -80,13 +80,11 @@ To add a connection or configure an integration, follow the steps below:
 
 3. Click **Add Connection** on the next page.
 
-**Case 1: New Integration**
+   **Case 1: New Integration**
+   <img src="../images/add-new-conn.png" alt="add connection" title="add connection" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/add-new-conn.png" alt="add connection" title="add connection" style="border: 1px solid gray; zoom:75%;">
-
-**Case 2: Connected Integration**
-
-<img src="../images/connected-integration-add.png" alt="connected integration" title="connected integration" style="border: 1px solid gray; zoom:75%;">
+   **Case 2: Connected Integration**
+   <img src="../images/connected-integration-add.png" alt="connected integration" title="connected integration" style="border: 1px solid gray; zoom:75%;">
 
 4. The Configuration window is displayed, where you must enter the following information:
     * **Connection Name**: A unique name to identify the integration.
@@ -124,17 +122,17 @@ To add a connection or configure an integration, follow the steps below:
         **API**
 
         * When you select this type, you must enter the **API Key** or **Access Token** for the service provider. 
-       * Additional field inputs may be required based on the specific parameters needed to configure the provider.
-       * You can retrieve (copy and paste) these values from the admin console > Settings section of your account on the provider’s site.
-       * Click **Test** to validate the connection.  A success message is displayed once the connection is set up.
-       <img src="../images/test-validation.png" alt="test validation" title="test validation" style="border: 1px solid gray; zoom:75%;">
+        * Additional field inputs may be required based on the specific parameters needed to configure the provider.
+        * You can retrieve (copy and paste) these values from the admin console > Settings section of your account on the provider’s site.
+        * Click **Test** to validate the connection.  A success message is displayed once the connection is set up.
+        <img src="../images/test-validation.png" alt="test validation" title="test validation" style="border: 1px solid gray; zoom:75%;">
 
       <div class="admonition note">
       <p class="admonition-title">Note</p>
       <p>For other Authentication types, such as OAuth1, retrieve the required values from the admin console of your account on the provider’s site to configure the integration.</p>
       </div>
 
-<ol start="5"><li>Click <b>Save</b>.       The <b>Save</b> button will not appear until all required inputs have been provided.</li></ol>
+<ol start="5"><li>Click <b>Save</b>.</li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -162,9 +160,9 @@ You will be redirected to the following page, where all the connections for the 
     <img src="../images/view-connection-error.png" alt="view error" title="view error" style="border: 1px solid gray; zoom:75%;">
 
 * **Resolve the error**
-   * Use the **Edit** functionality to provide the correct credentials in the configuration window.
-   * Click **Test** to validate the connection.
-   * Click **Save**.
+    * Use the **Edit** functionality to provide the correct credentials in the configuration window.
+    * Click **Test** to validate the connection.
+    * Click **Save**.
 
 
 ## Manage Connected Integrations
@@ -203,7 +201,8 @@ To edit the configuration for a connection, follow the steps below:
 5. In the configuration window, modify the required fields in the **Authorization Details** section.
 6. (Optional) Click **Test** to validate the connection.
 7. Click **Save**.
-<img src="../images/save-edited-integration.png" alt="save edited integration" title="save edited integration" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/save-edited-integration.png" alt="save edited integration" title="save edited integration" style="border: 1px solid gray; zoom:75%;">
 
 A success message is displayed once the connection is updated.
 <img src="../images/edit-success-msg.png" alt="edit success message" title="edit success message" style="border: 1px solid gray; zoom:75%;">
