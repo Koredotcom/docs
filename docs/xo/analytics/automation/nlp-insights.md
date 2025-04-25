@@ -740,7 +740,7 @@ Chat History provides visibility into the user information by capturing the foll
  * **User Profile**: Provides a 360-degree view of the user and their usage metrics.
 * **User Conversation Sessions**: Lists all the sessions of the user in the given period with the selected utterance section expanded.
 * **Go to Selected Utterance**: When you click this icon, the selected utterance is highlighted in orange (see the preceding screenshot).
-* **X-Trace ID**– A unique ID assigned to each incoming message. The Id is also included in all the logs maintained by the Platform.
+* **X-Trace ID**– A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform.
 * **K-Trace ID** – This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
 
 When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message Id** associated with the message.
