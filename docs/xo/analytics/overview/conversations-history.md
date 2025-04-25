@@ -900,21 +900,21 @@ The Enriched Chat Transcript is visible on the Chat History panel.
        
             <img src="../images/chat-history-2.png" alt="Chat History 2" title="Chat History 2" style="border: 1px solid gray; zoom:80%;">
 
-        * X-Trace ID – A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform. 
-        * K-Trace ID – This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
+        * X-Trace Id – A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform. 
+        * K-Trace Id – This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
 
         When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message ID** associated with the message.
         
         <img src="../images/chat-history-3.png" alt="Chat History 3" title="Chat History 3" style="border: 1px solid gray; zoom:80%;">
 
-        * Click the **Message Id** to view the **X-Trace ID** and **K-Trace ID** associated with a message in the Chat History.
+        * Click the **Message Id** to view the **X-Trace Id** and **K-Trace Id** associated with a message in the Chat History.
         
         <img src="../images/xtraceid2.png" alt="Chat History 4" title="Chat History 4" style="border: 1px solid gray; zoom:80%;">
 
 
 !!! note
 
-    The **X-Trace ID** and **K-Trace ID** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
+    The **X-Trace Id** and **K-Trace Id** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
 
 ### Define Alternate Text for JavaScript Messages
 
