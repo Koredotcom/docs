@@ -20,7 +20,7 @@ Follow these steps:
 
     1. Enable Conversation Intelligence, Auto QA, and Bookmarks in Quality AI Settings. See [Conversation Intelligence](../analyze/conversation-intelligence.md){:target=”_blank”}.
 
-    2. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling Gen AI Co-pilot Features](https://docs.kore.ai/xo/generative-ai-tools/co-pilot-features){:target=”_blank”}.
+    2. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling GenAI Features](https://docs.kore.ai/xo/generative-ai-tools/genai-features/){:target=”_blank”}.
 
 4. Create Evaluation Metrics:
 

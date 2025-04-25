@@ -401,6 +401,7 @@ nav:
     - FAQs:
         - Automatic vs Manual Training: searchai/application-training.md
         - Multilingual Support: searchai/language-support.md
+        - User Feedback Handling: searchai/feedback.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md
@@ -424,7 +425,6 @@ nav:
         - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
-        - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
