@@ -751,7 +751,7 @@ When you hover over the message, the info icon appears. Click the **Info** icon 
 
 !!! note
 
-    The **X-Trace ID** and **K-Trace ID** is retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
+    The **X-Trace ID** and **K-Trace ID** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
 
 
 The following user information details are displayed on the **Chat History** tab:
