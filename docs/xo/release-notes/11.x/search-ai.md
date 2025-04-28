@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
-This release includes some enhancements and bug fixes. The key updates are listed below.
+This release includes some enhancements and bug fixes. The key updates are summarized below.
 
 ### User Feedback Support 
 
