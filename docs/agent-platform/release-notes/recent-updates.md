@@ -12,7 +12,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Knowledge Integration with Agent Platform**
 
-The Agent Platform now integrates with AI for Service (XO) search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as **Knowledge Tools**. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
+The Agent Platform now integrates with AI for Service (XO) search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
 
 Key features
 
@@ -23,7 +23,7 @@ Key features
 
 **Export and Import Agentic Apps, Agents, and Tools**
 
-Agent Platform now supports both importing and exporting of **application configurations, agent definitions, and tool setups**. This feature simplifies the process of reusing, sharing, and backing up components across different workspaces and environments. Users can export components in a standardized format and later import them to quickly replicate configurations, reducing manual effort and ensuring consistency across different deployment environments. 
+Agent Platform now supports both importing and exporting of application configurations, agent definitions, and tool setups. This feature simplifies the process of reusing, sharing, and backing up components across different workspaces and environments. Users can export components in a standardized format and later import them to quickly replicate configurations, reducing manual effort and ensuring consistency across different deployment environments. 
 
 Key features
 
@@ -34,7 +34,7 @@ Key features
 
 **Add Tools from Library, Marketplace, or File**
 
-Users can now easily enhance the applications by importing tools from three sources: the **enterprise** **library**, the **marketplace**, or by **importing from a file**. This flexible tool's addition capability simplifies application development, encourages the reuse of existing resources, and accelerates the process. It also promotes consistency by allowing teams to standardize tool usage across applications and environments. 
+Users can now easily enhance the applications by importing tools from three sources: the enterprise library, the marketplace, or by importing from a file. This flexible tool's addition capability simplifies application development, encourages the reuse of existing resources, and accelerates the process. It also promotes consistency by allowing teams to standardize tool usage across applications and environments. 
 
 
 **Support for Attaching Files During Interaction**
@@ -51,7 +51,7 @@ Key features
 
 **Support for System Events**
 
-The Agent Platform now supports handling key system events, including **welcome events, agent handoff, and end-of-conversation** events. This enhancement enables the platform to effectively manage critical stages of a conversation, including initiation, closure, error handling, and scenarios that require human intervention. By offering more control over conversation flow, this feature significantly improves the user experience. 
+The Agent Platform now supports handling key system events, including welcome events, agent handoff, and end-of-conversation events. This enhancement enables the platform to effectively manage critical stages of a conversation, including initiation, closure, error handling, and scenarios that require human intervention. By offering more control over conversation flow, this feature significantly improves the user experience. 
 
 Key features 
 

@@ -147,10 +147,10 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 <img src="../images/example_text.png" alt="Edit body" title="Edit body" style="border: 1px solid gray; zoom:60%;">
 <img src="../images/test_button.png" alt="Test button" title="Test button" style="border: 1px solid gray; zoom:60%;">
 
-8. **Test the API call and view the response**: Click **Test** to trigger the API. The system uses the first row of your dataset to verify the API setup and displays the response in the **Response** tab. For example, if you are running a summarization tool, you should see the generated summary output based on the input text. 
-<img src="..images/summary_response.png" alt="Response tab" title="Response tab" style="border: 1px solid gray; zoom:60%;">
+8. **Test the API call and view the response**: Click **Test** to trigger the API. The system uses the first row of your dataset to verify the API setup and displays the response in the **Response** tab. For example, if you are running a summarization tool, you should see the generated summary output based on the input text.  
+<img src="../images/summary_response.png" alt="Response tab" title="Response tab" style="border: 1px solid gray; zoom:60%;">
 
-    **Note**: The **Test** option enables you to preview the JSON response structure. After testing, carefully review the response to identify the correct output path, which you’ll need to specify as the **JSON Output Path** in the following step.
+    The **Test** option enables you to preview the JSON response structure. After testing, carefully review the response to identify the correct output path, which you’ll need to specify as the **JSON Output Path** in the following step.
 
 9. **Define JSON output path:** Click the **JSON output path** tab, and specify the path to extract the required field from the API response.  
 
