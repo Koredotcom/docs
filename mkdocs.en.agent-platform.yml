@@ -139,7 +139,7 @@ nav:
     - App Simulation: agentic-apps/app-testing.md
     - Deployment:
       - App Deployment: agentic-apps/app-deployment.md
-      - Integrate and Manage a Deployed App: agentic-apps/integrate-and-manage-a-deployed-app.md    
+      - Integrate and Manage a Deployed App: agentic-apps/integrate-and-manage-a-deployed-app.md   
     - App Settings: agentic-apps/app-settings.md     
     - Tools: 
       - About Tools: tools/overview.md
