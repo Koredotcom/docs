@@ -1,6 +1,6 @@
-# Audit Logs
+# Track Events and Actions For a Tool
 
-Agent Platform’s comprehensive Audit Logs provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+Agent Platform’s comprehensive Audit Logs provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities for a Tool in your account.
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias.
 

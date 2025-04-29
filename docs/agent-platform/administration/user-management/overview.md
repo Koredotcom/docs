@@ -1,4 +1,4 @@
-# Users Management
+# Manage Account Users
 
 The **Users Management** module is crucial for handling user-related activities within your organization. This module provides capabilities for the following:
 

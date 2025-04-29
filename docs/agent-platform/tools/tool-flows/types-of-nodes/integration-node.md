@@ -1,4 +1,4 @@
-# Integration Node
+# Integration Node - Automate Third-party Integrations
 
 The **Integration node** allows you to connect to a third-party service provider within the Tool Flow using the configured connection and auth method from the **Settings** console. [Learn more](../../../settings/integrations/about-integrations.md){:target="_blank"}.
 

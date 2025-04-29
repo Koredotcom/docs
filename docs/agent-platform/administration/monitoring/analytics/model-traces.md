@@ -1,4 +1,4 @@
-# Model Traces 
+# Model Runs Data
 
 The **Model Traces** feature offers a comprehensive view of model performance across runs, enabling tracking of request-level data and key metrics. With features for filtering, searching, and exporting data, it supports precise analysis and troubleshooting, ensuring optimal performance and efficient resource usage. These insights help proactively address issues, supporting informed decision-making and streamlined operations.
 
