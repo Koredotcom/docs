@@ -1,4 +1,4 @@
-# Manage Guardrails
+# Deploy and Manage Guardrails 
 
 To use input and output scanners in Agent Platform, you need to deploy them first. Once deployed, a scanner will be available across all your tools on the platform.
 
