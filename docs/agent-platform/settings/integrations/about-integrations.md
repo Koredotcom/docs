@@ -1,4 +1,4 @@
-# About Integrations
+# Integration with Third-party Services
 
 ## Overview
 
@@ -22,15 +22,10 @@ The Agent Platform supports over 120 integrations across various categories. Eac
 
 ## Access Integrations
 
-To access the feature, follow the steps below:
-
-1. [Access](https://docs.kore.ai/agent-platform/settings/settings-overview/#access-settings-console){:target="_blank"} the **Settings** console after signing in to your account.
-2. Click **Integrations** on the left navigation menu.
+To access the feature, [navigate](https://docs.kore.ai/agent-platform/settings/settings-overview/#access-settings-console){:target="_blank"} to the **Settings** console and click **Integrations** on the left navigation menu.
 <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
-The Integrations page is displayed with  [these](../integrations/about-integrations.md/#features){:target="_blank"} features.
-
-## Features
+## Key Features
 
 The features supported on the Integrations page include:
 
@@ -48,7 +43,7 @@ The features supported on the Integrations page include:
 <img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;">
 
 
-* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, and Bearer. Refer to the [overview](../integrations/about-integrations.md/#overview){:target="_blank"} section for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
+* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, and Bearer. Refer to the introduction section of this page for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
 <img src="../images/select-category-integration.png" alt="select auth" title="select auth" style="border: 1px solid gray; zoom:75%;">
 
 * **List View**: Click this icon to view the available integration options as a list with the following information:
@@ -60,7 +55,7 @@ The features supported on the Integrations page include:
 <img src="../images/tile-view.png" alt="tile view" title="tile view" style="border: 1px solid gray; zoom:75%;">
 
 
-## Add Connection
+## Add Connection to Set Up Integration
 
 To add a connection or configure an integration, follow the steps below:
 
@@ -139,7 +134,7 @@ You will be redirected to the following page, where all the connections for the 
 
 ### Manage Connection Errors
 
-* During or after setting up a connection, errors may occur while testing. These errors are often caused by invalid credentials provided during the configuration (add connection step). 
+* During or after setting up a connection, errors may occur while testing. These errors are often caused by invalid credentials provided during the configuration ([add a connection](../../settings/integrations/about-integrations.md/#add-connection-to-set-up-integration){:target="_blank"} step). 
 
 * **View the error**
     * Navigate to the **Connected** section.

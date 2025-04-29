@@ -1,6 +1,4 @@
-# Model Analytics Dashboard
-
-## Overview
+# Model Performance Data
 
 The **Model Analytics Dashboard** is a comprehensive analysis and monitoring solution that provides unified performance tracking for [fine-tuned](../../../models/fine-tune-models/create-a-fine-tuned-model.md){:target="_blank"}, [open-source](../../../models/open-source-models/configure-your-open-source-model.md){:target="_blank"}, and [external models](../../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} in your account. The dashboard measures and visualizes key performance indicators for the selected period, including:
 

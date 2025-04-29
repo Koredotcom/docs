@@ -1,4 +1,4 @@
-# Audio To Text Node
+# Audio To Text Node - Automate Transcriptions
 
 ## Overview
 

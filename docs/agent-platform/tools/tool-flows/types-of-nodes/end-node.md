@@ -1,4 +1,4 @@
-# End Node
+# End Node - Automate Workflow Completion 
 
 End nodes let you display the flow's outputs upon success or an error message in case of failure.
 
@@ -6,7 +6,7 @@ End nodes let you display the flow's outputs upon success or an error message in
 
 Setting up an End node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
 
-Steps to add and configure the node:
+**Steps**
 
 1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed.
 

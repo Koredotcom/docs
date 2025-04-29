@@ -1,6 +1,6 @@
-# Function Node
+# Function Node - Automate Script Executions
 
-Function nodes let you write custom scripts using JavaScript or Python to process context variables or other variables used in the tool flow.
+A **Function** node lets you write custom scripts using JavaScript or Python to process context variables or other variables used in the tool flow.
 
 ## Add and Configure a Function Node
 

@@ -1,4 +1,4 @@
-# Manage Single Sign On for Account Access
+# Manage Single Sign On for Account Sign In
 
 Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
 

@@ -1,4 +1,4 @@
-# DocSearch Node
+# DocSearch Node - Automate Info Search and Retrieval
 
 The **DocSearch Node** improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
 

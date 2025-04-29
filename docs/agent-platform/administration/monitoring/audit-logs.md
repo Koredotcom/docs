@@ -1,6 +1,4 @@
-# Audit Logs
-
-## Overview
+# Account Audit Logs - Track Events and Actions 
 
 Agent Platform’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 

@@ -1,6 +1,4 @@
-# About Integrations
-
-## Overview
+# Integration with Third-party Services
 
 The **Integrations** feature allows you to connect the Agent Platform to third-party services and use their features seamlessly within your account. This extends the platform’s capabilities to leverage these services and build high-quality AI applications. Once you add a connection for an integration, you can link it to the **Integration node** in the Tool Flow canvas. This allows you to seamlessly use third-party services while building your tool automation. [Learn more](../../tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
@@ -12,27 +10,22 @@ The Agent Platform supports over 120 integrations across various categories. Eac
     * **Scopes**: Permissions tied to the token (e.g., "read email", "write files").
     * **Expires**: Tokens often have a time limit for security.
     * **Refresh Token**: A token used to get a new access token when the old one expires.
-    * **Bearer**: **API authentication** where the client sends a **token** (called a *bearer token*) in the request header to access protected resources after a successful login or authorization (usually via OAuth 2.0). The server checks the token to verify if the request is allowed.
+* **Bearer**: **API authentication** where the client sends a **token** (called a *bearer token*) in the request header to access protected resources after a successful login or authorization (usually via OAuth 2.0). The server checks the token to verify if the request is allowed.
 
-    <div class="admonition note">
-    <p class="admonition-title">Note</p>
-    <p><ul><li>Other authentication methods supported for specific integrations include <b>Basic</b>, <b>Basic with JWT</b>, <b>OAuth1</b>, and <b>custom authentication</b> defined by the service provider.</li>
-    <li>Some providers may support <b>multiple authentication methods</b>, allowing flexibility based on your integration needs</li></ul></p>
-    </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><ul><li>Other authentication methods supported for specific integrations include <b>Basic</b>, <b>Basic with JWT</b>, <b>OAuth1</b>, and <b>custom authentication</b> defined by the service provider.</li>
+<li>Some providers may support <b>multiple authentication methods</b>, allowing flexibility based on your integration needs</li></ul></p>
+</div>
 
 ## Access Integrations
 
-To access the feature, follow the steps below:
-
-1. [Access](https://docs.kore.ai/agent-platform/settings/settings-overview/#access-settings-console){:target="_blank"} the **Settings** console after signing in to your account.
-2. Click **Integrations** on the left navigation menu.
+To access the feature, [navigate](https://docs.kore.ai/agent-platform/administration/settings-overview/#access-settings-console){:target="_blank"} to the **Settings** console and click **Integrations** on the left navigation menu.
 <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
-The Integrations page is displayed with  [these](../integrations/about-integrations.md/#features){:target="_blank"} features.
+## Key Features
 
-## Features
-
-The features supported on the Integrations page include:
+The features supported on the **Integrations** page include:
 
 * **All Integrations and Connected Tabs**
 
@@ -59,10 +52,9 @@ The features supported on the Integrations page include:
 * **Tile View**: This is the default view. Click this icon to view all the integrations as individual cards.
 <img src="../images/tile-view.png" alt="tile view" title="tile view" style="border: 1px solid gray; zoom:75%;">
 
+## Add a Connection to Set Up Integration
 
-## Add Connection
-
-To add a connection or configure an integration, follow the steps below:
+To add a connection and configure an integration, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -139,7 +131,7 @@ You will be redirected to the following page, where all the connections for the 
 
 ### Manage Connection Errors
 
-* During or after setting up a connection, errors may occur while testing. These errors are often caused by invalid credentials provided during the configuration (add connection step). 
+* During or after setting up a connection, errors may occur while testing. These errors are often caused by invalid credentials provided during the configuration ([add a connection](../../administration/integrations/about-integrations.md/#add-a-connection-to-set-up-integration){:target="_blank"} step). 
 
 * **View the error**
     * Navigate to the **Connected** section.

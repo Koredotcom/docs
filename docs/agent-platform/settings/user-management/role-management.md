@@ -1,4 +1,4 @@
-# Role Management 
+# Role-Based Access Control and Account Management
 
 Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
 

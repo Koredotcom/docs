@@ -1,4 +1,4 @@
-# About Settings
+# Settings Console for Account Admins
 
 Agent Platform’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage Agent Platform’s system configurations to manage the following:
 
