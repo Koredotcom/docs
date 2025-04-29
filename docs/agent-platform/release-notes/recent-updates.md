@@ -43,10 +43,10 @@ Agentic Apps now enable real-time document sharing during user interactions. Use
 
 Key features
 
-* Intuitive Interface
+* Intuitive Interface.
 * Support for PDF document formats.
-* Multiple file upload capability 
-* Progress indicators for uploading and processing documents
+* Multiple file upload capability.
+* Progress indicators for uploading and processing documents.
 
 
 **Support for System Events**
@@ -62,13 +62,12 @@ Key features
 
 **Session Meta Memory Store for Contextual Prompts**
 
-This release of Agent Platform introduces enhanced memory capabilities, enabling developers to access session-level information within the application and use it directly in the prompts for agents and supervisors.  With this feature, developers can design more contextual, intelligent, and personalized conversational experiences by dynamically using session-specific data stored in the default system memory store, *sessionMeta*. This data is retained for the duration of a session and is automatically cleared once the session ends. 
+The Platform has introduced enhanced memory capabilities, enabling developers to access session-level information within the application and use it directly in the prompts for agents and supervisors.  With this feature, developers can design more contextual, intelligent, and personalized conversational experiences by dynamically using session-specific data stored in the default system memory store, *sessionMeta*. This data is retained for the duration of a session and is automatically cleared once the session ends. 
 
-Key Highlights
+Key benefits
 
 * Reduced repetitive inputs from users by using key details from the memory stores.
 * Seamless personalization across interactions. 
-
 
 
 <font size="4">Feature Enhancements</font>
