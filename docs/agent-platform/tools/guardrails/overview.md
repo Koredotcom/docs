@@ -1,4 +1,4 @@
-# About Guardrails
+# Guardrails for Safety, Compliance, and Relevance
 
 Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) are appropriate and align with standards. You can deploy various guardrail models and use them to scan the inputs or prompts and output results. The scanners ensure responsible AI interactions while generating responses.
 

@@ -1,4 +1,4 @@
-# Users
+# Invite and Manage Account Users 
 
 The **Users** feature simplifies account administration through centralized tools for inviting, importing, and managing users. The tools work together to streamline user administration and ensure efficient collaboration, access control, and status monitoring.
 
