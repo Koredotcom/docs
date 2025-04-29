@@ -1,4 +1,4 @@
-# Image to Text (OCR) Node
+# Image to Text Node - Automate OCR 
 
 The **Image to Text** node in the tool builder processes an uploaded image and generates text responses based on the user’s prompt. It can provide descriptions, answer image-related questions, or extract text from the image. This node leverages external LLM models like OpenAI and Anthropic for image processing and text generation.
 

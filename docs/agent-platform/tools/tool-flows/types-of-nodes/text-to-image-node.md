@@ -1,4 +1,4 @@
-# Text to Image Node
+# Text to Image Node - Automate Image Generation
 
 ## Overview
 

@@ -229,31 +229,31 @@ nav:
       - Test Guardrail: tools/guardrails/test-guardrail.md
       - Manage Guardrails: tools/guardrails/manage-guardrails.md
   - Administration: 
-    - About Settings: settings/settings-overview.md
+    - About Settings: administration/settings-overview.md
     - User Management:
-      - Overview: settings/user-management/overview.md
-      - Users: settings/user-management/users.md
+      - Overview: administration/user-management/overview.md
+      - Users: administration/user-management/users.md
       - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-a-user-to-your-account
-      - Add Users from Active Directory: settings/user-management/settings/active-directory.md
-      - Role Management: settings/user-management/role-management.md
+      - Add Users from Active Directory: administration/user-management/settings/active-directory.md
+      - Role Management: administration/user-management/role-management.md
     - Integrations:
       - About Integrations: administration/integrations/about-integrations.md
-      - Enable Hugging Face: settings/integrations/enable-hugging-face.md
-      - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
-      - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
+      - Enable Hugging Face: administration/integrations/enable-hugging-face.md
+      - Integrate with S3 Bucket: administration/integrations/integrate-with-s3-bucket.md
+      - Integrate with Weights & Biases: administration/integrations/integrate-with-wandb.md
     - Monitoring: 
-      - About Monitoring: settings/monitoring/overview.md
-      - Audit Logs: settings/monitoring/audit-logs.md
+      - About Monitoring: administration/monitoring/overview.md
+      - Audit Logs: administration/monitoring/audit-logs.md
       - Analytics:
-        - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
-        - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
-        - Model Traces: settings/monitoring/analytics/model-traces.md
+        - Tools Analytics Dashboard: administration/monitoring/analytics/tools-analytics-dashboard.md      
+        - Model Analytics Dashboard: administration/monitoring/analytics/model-analytics-dashboard.md
+        - Model Traces: administration/monitoring/analytics/model-traces.md
     - Security & Control:
-      - Single Sign On: settings/security-and-control/single-sign-on.md
-      - Authorization Profile: settings/security-and-control/authorization-profile.md
+      - Single Sign On: administration/security-and-control/single-sign-on.md
+      - Authorization Profile: administration/security-and-control/authorization-profile.md
     - Billing:
-      - Billing and Usage: settings/billing/billing-and-usage.md
-      - Managing Usage Limits: settings/billing/managing-usage-limits.md
+      - Billing and Usage: administration/billing/billing-and-usage.md
+      - Managing Usage Limits: administration/billing/managing-usage-limits.md
     - Data: 
       - Manage Data: data/manage-datasets.md
   - APIs: 
