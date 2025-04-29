@@ -137,7 +137,9 @@ nav:
       - About Agents: agentic-apps/agent-overview.md
       - Set up an Agent: agentic-apps/create-agent.md
     - App Simulation: agentic-apps/app-testing.md
-    - App Deployment: agentic-apps/app-deployment.md
+    - Deployment: agentic-apps/app-deployment.md
+      - App Deployment: agentic-apps/app-deployment.md
+      - Integrate and Manage a Deployed App: agentic-apps/integrate-and-manage-a-deployed-app.md    
     - App Settings: agentic-apps/app-settings.md     
     - Tools: 
       - About Tools: tools/overview.md
