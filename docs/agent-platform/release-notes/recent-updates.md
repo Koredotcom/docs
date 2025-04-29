@@ -2,6 +2,84 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.0.4 April 26, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Agentic Apps</font>
+
+**Knowledge Integration with Agent Platform**
+
+The Agent Platform now integrates with AI for Service (XO) search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as **Knowledge Tools**. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
+
+Key features
+
+* Users can create a new Search AI app or link it to an existing app in the same workspace, streamlining knowledge management.
+* Users can link one or more knowledge bases to the Agentic app, enabling access to various sources. 
+* Agents can access the most up-to-date and relevant knowledge to deliver more accurate responses to user queries.
+
+
+**Export and Import Agentic Apps, Agents, and Tools**
+
+Agent Platform now supports both importing and exporting of **application configurations, agent definitions, and tool setups**. This feature simplifies the process of reusing, sharing, and backing up components across different workspaces and environments. Users can export components in a standardized format and later import them to quickly replicate configurations, reducing manual effort and ensuring consistency across different deployment environments. 
+
+Key features
+
+* Standardized export format ensures consistency.
+* A dependency-based import process where the platform follows an order of importing Tools, followed by Agents, and then the App config. This ensures that all components are successfully imported. If any step fails, the process is fully rolled back to maintain system integrity.
+* Easy export and import streamlines deployment and accelerates setup across environments, saving time and minimizing errors.
+
+
+**Add Tools from Library, Marketplace, or File**
+
+Users can now easily enhance the applications by importing tools from three sources: the **enterprise** **library**, the **marketplace**, or by **importing from a file**. This flexible tool's addition capability simplifies application development, encourages the reuse of existing resources, and accelerates the process. It also promotes consistency by allowing teams to standardize tool usage across applications and environments. 
+
+
+**Support for Attaching Files During Interaction**
+
+Agentic Apps now enable real-time document sharing during user interactions. Users can upload documents directly through the chat interface, allowing AI Agents to analyze and extract relevant information. This enables personalized and contextual responses without requiring users to provide the content directly. 
+
+Key features
+
+* Intuitive Interface
+* Support for PDF document formats.
+* Multiple file upload capability 
+* Progress indicators for uploading and processing documents
+
+
+**Support for System Events**
+
+The Agent Platform now supports handling key system events, including **welcome events, agent handoff, and end-of-conversation** events. This enhancement enables the platform to effectively manage critical stages of a conversation, including initiation, closure, error handling, and scenarios that require human intervention. By offering more control over conversation flow, this feature significantly improves the user experience. 
+
+Key features 
+
+* The release supports three system events: welcome events, agent handoffs, and end-of-conversation events. Users can enable or disable these events as needed, offering greater flexibility. 
+* System events are applied consistently across all agents within an agent-based app, ensuring uniform behavior throughout the platform. 
+* Users can customize the data passed during agent handoff or end-of-conversation events. This customization enables apps to modify behaviors based on specific scenarios.
+
+
+**Session Meta Memory Store for Contextual Prompts**
+
+This release of Agent Platform introduces enhanced memory capabilities, enabling developers to access session-level information within the application and use it directly in the prompts for agents and supervisors.  With this feature, developers can design more contextual, intelligent, and personalized conversational experiences by dynamically using session-specific data stored in the default system memory store, *sessionMeta*. This data is retained for the duration of a session and is automatically cleared once the session ends. 
+
+Key Highlights
+
+* Reduced repetitive inputs from users by using key details from the memory stores.
+* Seamless personalization across interactions. 
+
+
+<font size="4">Security Enhancements</font>
+
+Resolved an Open Redirect vulnerability in the login flow by validating and encoding redirect URLs, mitigating risks of phishing attacks, session hijacking, and XSS execution through manipulated return URLs.
+
+
+<font size="4">Feature Enhancements</font>
+
+Optimized the performance of prompt update and GET endpoints, resulting in significantly faster response times and enhanced overall system responsiveness.
+
+<hr>
 
 ## v1.0.3 April 18, 2025
 
@@ -178,6 +256,11 @@ Key features
 * Ability to launch the application directly within enterprise websites.
 * Customizable configuration options.
 * Seamless authentication and session management.
+
+**AI Agent’s Thought Streaming**
+
+Agent Platform now introduces thought streaming that provides insights into the AI Agent’s reasoning and planning process behind its decisions and actions. This enables users to understand how the agent analyzes, decides, and responds to the user's query. Thought Streaming promotes transparency, helps build trust, and improves overall engagement. 
+Real-time insights into the decision process also serve as a tool to identify issues and improve performance.
 
 
 <font size="4">Tools</font>
