@@ -11,7 +11,7 @@ Versioning, environments, and the deployment process are critical to managing ap
 1. **Deploying App to an Environment** – Releasing a selected version to a chosen environment. 
 1. **Accessing the deployed app** via a unique URL or API for integration or user interaction.
 
-   <img src="../images/app-deployment-overview.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/app-deployment-overview.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:90%;">
 
 !!! note
  
