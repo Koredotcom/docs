@@ -144,8 +144,8 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 <img src="../images/paste_api_key.png" alt="Auth header" title="Auth header" style="border: 1px solid gray; zoom:80%;">
 
 7. **Configure the API body:** Click the **Body** tab. Under the `"input"` key, replace `{{example_text}}` with your input column name. For example, `{{Input}}`.
-<img src="../images/example_text.png" alt="Edit body" title="Edit body" style="border: 1px solid gray; zoom:60%;">
-<img src="../images/test_button.png" alt="Test button" title="Test button" style="border: 1px solid gray; zoom:60%;">
+<img src="../core-ai/evaluation/images/example_text.png" alt="Edit body" title="Edit body" style="border: 1px solid gray; zoom:60%;">
+<img src="../core-ai/evaluation/images/test_button.png" alt="Test button" title="Test button" style="border: 1px solid gray; zoom:60%;">
 
 8. **Test the API call and view the response**: Click **Test** to trigger the API. The system uses the first row of your dataset to verify the API setup and displays the response in the **Response** tab. For example, if you are running a summarization tool, you should see the generated summary output based on the input text.  
 <img src="../images/summary_response.png" alt="Response tab" title="Response tab" style="border: 1px solid gray; zoom:60%;">
