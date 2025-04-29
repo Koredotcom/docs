@@ -125,6 +125,47 @@ This functionality enhances the evaluation process by providing greater flexibil
 5. **Attach evaluators and evaluate the output:** Once the content is added as a column, you can attach evaluators (e.g., Coherence, Toxicity, Bias Detection) to assess the output. Then run the evaluation, and the evaluators will analyze the API-generated data, providing insights into the quality and performance of the content.
 
 
+### Example Workflow for Running an API
+
+Follow this example to set up and run an API call inside Evaluation Studio:
+
+1. **Create and deploy a tool:** Set up your tool and deploy it in Agent Platform.
+2. **Copy the tool endpoint:** From the **Tool Endpoint** tab, copy the deployed API's URL.  
+<img src="../images/tool_endpoint.png" alt="Copy tool endpoint" title="Copy tool endpoint" style="border: 1px solid gray; zoom:80%;">
+
+3. **Upload a dataset:** In Evaluation Studio, upload a dataset containing only the input columns.
+4. **Initiate ‘Run an API’:** Click the **+** button, select **Run an API**, add a column name, and paste the copied endpoint URL in the **Request URL** field.
+<img src="../images/run_api_paste_curl.png" alt="Run an API" title="Run an API" style="border: 1px solid gray; zoom:80%;">
+
+5. **Generate API key:** Go back to the tool, navigate to the **API Keys** tab, create a new key, and copy it.
+<img src="../images/create_api_key.png" alt="Generate API key" title="Generate API key" style="border: 1px solid gray; zoom:80%;">
+
+6. **Set the authorization header:** In Evaluation Studio, in the **Headers** tab, paste the copied API key in the Value field for the Key `x-api-key`.
+<img src="../images/paste_api_key.png" alt="Auth header" title="Auth header" style="border: 1px solid gray; zoom:80%;">
+
+7. **Configure the API body:** Click the **Body** tab. Under the `"input"` key, replace `{{example_text}}` with your input column name. For example, `{{Input}}`.
+<img src="../images/example_text.png" alt="Edit body" title="Edit body" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/test_button.png" alt="Test button" title="Test button" style="border: 1px solid gray; zoom:60%;">
+
+8. **Test the API call and view the response**: Click **Test** to trigger the API. The system uses the first row of your dataset to verify the API setup and displays the response in the **Response** tab. For example, if you are running a summarization tool, you should see the generated summary output based on the input text.  
+<img src="../images/summary_response.png" alt="Response tab" title="Response tab" style="border: 1px solid gray; zoom:60%;">
+
+    The **Test** option enables you to preview the JSON response structure. After testing, carefully review the response to identify the correct output path, which you’ll need to specify as the **JSON Output Path** in the following step.
+
+9. **Define JSON output path:** Click the **JSON output path** tab, and specify the path to extract the required field from the API response.  
+
+    For example, if the API response structure is  
+    `"output": { "Summarization": "(generated output)" }`,  enter `output.Summarization` as the path.
+
+    <img src="../images/output.summary.png" alt="Output path" title="Output path" style="border: 1px solid gray; zoom:80%;">
+
+10. **Run the API call:** After successful testing, click **Run** to fetch outputs for all the dataset rows. A new column will be added with the populated API responses/results.
+
+    <img src="../images/populating_responses.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:80%;">
+
+
+✅ **Tip:** Make sure the column name exactly matches the input column in your dataset to dynamically send each row's input to the API.
+
 
 
 ## Key Highlights
