@@ -70,10 +70,6 @@ Key Highlights
 * Seamless personalization across interactions. 
 
 
-<font size="4">Security Enhancements</font>
-
-Resolved an Open Redirect vulnerability in the login flow by validating and encoding redirect URLs, mitigating risks of phishing attacks, session hijacking, and XSS execution through manipulated return URLs.
-
 
 <font size="4">Feature Enhancements</font>
 
