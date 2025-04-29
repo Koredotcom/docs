@@ -1,7 +1,5 @@
 # Tool Performance Data
 
-## Overview
-
 The **Tools Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
 
 It provides valuable insights into metrics such as successful or failed tool runs, **Average Response Times (ART)** to requests, and event-based node executions for all node types. [Learn more](../../../tools/tool-flows/manage-flow-nodes.md){:target="_blank"} about managing nodes in a tool flow.
