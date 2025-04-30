@@ -131,10 +131,9 @@ A maximum of three months date period is allowed
 
 ## Sample Request
 
-Dialog Builder API scope 
-`curl --location --request POST 'https://{{HOST}}/api/public/bot/{{botId}}/getBillingSessionsDetails' \`
-
+* For Dialog Builder API scope 
 ```
+`curl --location --request POST 'https://{{HOST}}/api/public/bot/{{botId}}/getBillingSessionsDetails' \`
 --header 'auth: {{Auth Token}}' \
 --header 'content-type: application/json' \
 --data-raw '{
@@ -146,10 +145,9 @@ Dialog Builder API scope
 
 ```
 
-For Admin API scope 
-`curl --location --request POST 'https://{{HOST}}/api/public/bots/getBillingSessionsDetails' \`
-
+* For Admin API scope 
 ```
+`curl --location --request POST 'https://{{HOST}}/api/public/bots/getBillingSessionsDetails' \`
 --header 'auth: {{Auth Token}}' \
 --header 'content-type: application/json' \
 --data-raw '{
