@@ -153,16 +153,17 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 
     The **Test** option enables you to preview the JSON response structure. After testing, carefully review the response to identify the correct output path, which you’ll need to specify as the **JSON Output Path** in the following step. 
 
-    <img src="../images/summary_response.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/summary_response.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
 
 9. **Define JSON output path:** Click the **JSON output path** tab, and specify the path to extract the required field from the API response.  
 
-    For example, if the API response structure is  
-`"output": { "Summarization": "(generated output)" }`,  
-  you should enter `output.Summarization` as the JSON output path.
+    For example, if the API response structure is the following:
+
+    `"output": { "Summarization": "(generated output)" }`
+
+    you should enter output.Summarization as the JSON output path.
 
     <img src="../images/output.summary.png" alt="JSON output path" title="JSON output path" style="border: 1px solid gray; zoom:50%;">
-    
 
 10. **Run the API call:** After successful testing, click **Run** to fetch outputs for all the dataset rows. A new column will be added with the populated API responses/results.
 
