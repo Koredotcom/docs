@@ -108,8 +108,6 @@ curl --location 'https://{{HOST}}/api/public/bot/{{botId}}/billingsessionsummary
        
     Use the POST method to set filters, then use the following GET method to retrieve the billing session summary.
 
-**Note:** Use the POST method to set filters, then use the following GET method to retrieve the billing session summary:
-
 
 ### Sample GET Method Request for the Bot Builder API Scope
 
