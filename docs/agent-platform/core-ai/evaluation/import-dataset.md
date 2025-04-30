@@ -156,7 +156,8 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 9. **Define JSON output path:** Click the **JSON output path** tab, and specify the path to extract the required field from the API response.  
 
     For example, if the API response structure is  
-`"output": { "Summarization": "(generated output)" }`,  you should enter `output.Summarization` as the JSON output path.
+`"output": { "Summarization": "(generated output)" }`,  
+  you should enter `output.Summarization` as the JSON output path.
 
     <img src="../images/summary_response.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:60%;">
     
