@@ -234,8 +234,7 @@ nav:
     - About Settings: administration/settings-overview.md
     - User Management:
       - Overview: administration/user-management/overview.md
-      - Users: administration/user-management/users.md
-      - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-a-user-to-your-account
+      - User Management: administration/user-management/users.md
       - Add Users from Active Directory: administration/user-management/settings/active-directory.md
       - Role Management: administration/user-management/role-management.md
     - Integrations:
