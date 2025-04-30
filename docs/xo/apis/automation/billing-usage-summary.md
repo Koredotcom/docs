@@ -118,8 +118,6 @@ curl --location 'https://{{HOST}}/api/public/bot/{{botId}}/billingsessionsummary
 --header 'content-type: application/json'
 ```
 
-
-
 ### Sample POST Method Request for the Admin API (BAC) scope
 
 
