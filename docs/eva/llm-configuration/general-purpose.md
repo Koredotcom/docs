@@ -1,10 +1,6 @@
-# LLM Configuration
 
-To use Generative AI features with AI for Work, you must configure the integration with a pre-built or custom LLM. By leveraging LLM and Generative AI capabilities, AI for work can create intelligent, human-like conversational experiences for your end-users.
+# General Purpose
 
-## General Purpose 
-
-### Pre-built LLM Integration
 
 AI for work offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. You can effortlessly tap into these services' core capabilities using pre-configured prompts and APIs.
 
@@ -17,17 +13,17 @@ Steps to configure a pre-built LLM:
 1. Go to **Admin Console > Assist configuration > General purpose**.  
 <img src="../images/general-purpose-llm.png" alt="general-purpose-llm" title="general-purpose-llm" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **New** and choose the LLM you want to configure from the dropdown.  
+1. Click **New** and choose the LLM you want to configure from the dropdown.  
 <img src="../images/general-purpose-llm-new.png" alt="general-purpose-llm" title="general-purpose-llm" style="border: 1px solid gray; zoom:80%;">
 
-3. Enter authorization details like **Integration Name** and **API Key**. Select **Model Name** from drop down. 
-4. Read the **Policy Guidelines**, select the checkbox, and click **Save**.  
+1. Enter authorization details like **Integration Name** and **API Key**. Select **Model Name** from drop down. 
+2. Read the **Policy Guidelines**, select the checkbox, and click **Save**.  
 <img src="../images/open-ai.png" alt="open-ai" title="open-ai" style="border: 1px solid gray; zoom:80%;">
 
-5. The configured model is listed in the **General LLM Integrations**.  
+1. The configured model is listed in the **General LLM Integrations**.  
 <img src="../images/configured-model.png" alt="configured-model" title="configured-model" style="border: 1px solid gray; zoom:80%;">  
 
-### Custom LLM Integration
+## Custom LLM Integration
 
 AI for work enables enterprises to power up their virtual assistants with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves.
 
