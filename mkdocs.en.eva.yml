@@ -117,6 +117,7 @@ nav:
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md
     - Setup Guide: getting-started/setup-guide.md 
     - Using AI for Work Assistant: getting-started/how-to-use.md
+    - Marketplace: getting-started/marketplace.md
     - Release Notes:
       - Release Updates: release-notes/release-updates.md
   - Custom Agents:
@@ -152,21 +153,26 @@ nav:
     - Admin Console Overview: Administration/admin-overview.md
     - Workspace: Administration/workspace.md
     - Account Hub: Administration/account-hub.md
-    - Assist Configuration:
-      - LLM Configuration: assistant-configuration/llm-configuration.md
-      - Business Rules: assistant-configuration/business-rules.md
-      - Email Template: assistant-configuration/email-template.md
-      - Rate Limit: assistant-configuration/rate-limit.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md
       - Manage Groups: user-management/managing-your-groups.md
+    - LLM Configuration:
+      - General Purpose: llm-configuration/general-purpose.md
+      - Business Rules: llm-configuration/business-rules.md
+    - Assist Configuration:
+      - Email Template: assistant-configuration/email-template.md
+      - Rate Limit: assistant-configuration/rate-limit.md
     - Security: 
       - SSO: security/sso.md
       - Domain Management: security/domain-management.md
       - Connector: security/kore-connector.md
       - Service Accounts: security/service-accounts.md
+      - Data Settings: security/data-settings.md
+    - Audit Log:
+      - Audit Log Management: audit-log/audit-log-management.md
+      - Audit Log API: audit-log/audit-log-api.md
     - APIs:  
       - Authorization: APIs/authorization.md
-      - Audit Log API: APIs/audit-log-api.md
+      
       
