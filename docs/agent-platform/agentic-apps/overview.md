@@ -8,7 +8,7 @@ Agentic Apps are composed of several key components that enable autonomous decis
 
 ![Anatomy](images/anatomy.png "Agentic App Anatomy")
 
-### Orchestrators
+### Orchestrator
 
 The orchestrator is the brain of the agentic app. It manages agent interactions, task delegation, and workflow execution to achieve the app's goals.
 
