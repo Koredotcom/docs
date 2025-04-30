@@ -17,7 +17,7 @@ This API provides a summary of the billing usage specific to an account or bot f
 <p>
 For Dialog Builder: <code>https://{{host}}/api/public/bot/{{BotID}}/billingsessionsummary</code>
 <p>
-For BAC: <code><a href="https://{{host}}/api/public/billingsessionsummary">https://{{host}}/api/public/billingsessionsummary</a>   
+For BAC: <code><a href="https://{{host}}/api/public/billingsessionsummary">https://{{host}}/api/public/billingsessionsummary</a>  
 
 </code><strong>Important</strong>: First, use the POST method to set filters, then use the following GET method to retrieve the billing session summary.
 

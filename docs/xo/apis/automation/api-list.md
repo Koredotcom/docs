@@ -86,6 +86,8 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Debug Logs](./fetch-debug-logs.md) | To get debug logs of a specific conversation. | Debug Logs | NA  |
 | [Get ChangeLogs](./get-change-logs.md) | To get the list of changes made to the assistant definition for a given date period. | Logs History | Logs > Bot Audit Logs |
 | [Sessions History](./get-sessions-history.md) | To retrieve the conversation sessions created. | Bot Sessions | Bot Analytics > Bot Sessions |
+| [Billing Sessions](./billing-session.md) | To retrieves the list of individual billing sessions created for an app so that you can review them for correctness and reconciliation. | Billing Sessions | Billing > Usage > Billing Sessions |
+| [Billing Usage Summary](./billing-usage-summary.md) | To get a summary of the billing usage specific to an account or bot for a given period. | Billing Sessions | Billing > Usage > Billing Sessions |
 | [Get Dashboard Widget Data](./get-dashboard-widget-data.md) | To get the data result of a widget from a specific Custom Dashboard added to an assistant. | Custom Reports | Custom Reports > Custom Reports |
 | [Get Analytics](./get-analytics.md) | To extract the metrics data related to the intent detection and task performance using API | Metrics | NA  |
 | [Task Execution-based Containment Report](./task-execution-based-containment-report.md) | To extract task execution details (including success and failure status) across all the conversation sessions of the virtual assistant in the selected timeframe for Drop-off, Self-service, and Agent Hand-off containment types using API. | Metrics | NA  |
