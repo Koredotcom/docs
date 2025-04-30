@@ -131,16 +131,16 @@ nav:
       - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
-    - About Agentic Apps: agentic-apps/overview.md
-    - Create an Agentic App: agentic-apps/create-app.md
+    - About Agentic Apps: ai-agents/agentic-apps/overview.md
+    - Create an Agentic App: ai-agents/agentic-apps/create-app.md
     - Agents: 
-      - About Agents: agentic-apps/agent-overview.md
-      - Set up an Agent: agentic-apps/create-agent.md
-      - App Simulation: agentic-apps/app-testing.md
+      - About Agents: ai-agents/agentic-apps/agent-overview.md
+      - Set up an Agent: ai-agents/agentic-apps/create-agent.md
+      - App Simulation: ai-agents/agentic-apps/app-testing.md
       - App Deployment:
-        - Deploy an App Version: agentic-apps/app-deployment.md
-        - Access Deployed Version: agentic-apps/access-deployed-version.md
-      - App Settings: agentic-apps/app-settings.md     
+        - Deploy an App Version: ai-agents/agentic-apps/app-deployment.md
+        - Access Deployed Version: ai-agents/agentic-apps/access-deployed-version.md
+      - App Settings: ai-agents/agentic-apps/app-settings.md     
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
       - Create a Tool: ai-agents/tools/create-a-new-tool.md
@@ -185,7 +185,7 @@ nav:
         - Export a Tool: ai-agents/tools/export-a-tool.md
         - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
   - Core AI Capabilities: 
-    - About Core AI Capabilities: core-ai/overview-core-ai.md
+    - About Core AI Capabilities: core-ai/models/overview.md 
     - Models: 
       - About Models: core-ai/models/overview.md 
       - Fine-Tuned Models: 
@@ -226,10 +226,10 @@ nav:
       - Run Evaluations: core-ai/evaluation/run-evaluation.md
       - View Results: core-ai/evaluation/view-evaluation-insight.md
     - AI Safety & Governance: 
-      - About Guardrails: core-ai/tools/guardrails/overview.md
-      - Add a Scanner: core-ai/tools/guardrails/add-a-scanner.md
-      - Test Guardrail: core-ai/tools/guardrails/test-guardrail.md
-      - Manage Guardrails: core-ai/tools/guardrails/manage-guardrails.md
+      - About Guardrails: core-ai/guardrails/overview.md
+      - Add a Scanner: core-ai/guardrails/add-a-scanner.md
+      - Test Guardrail: core-ai/guardrails/test-guardrail.md
+      - Manage Guardrails: core-ai/guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/settings-overview.md
     - User Management:
