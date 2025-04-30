@@ -185,7 +185,7 @@ nav:
         - Export a Tool: ai-agents/tools/export-a-tool.md
         - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
   - Core AI Capabilities: 
-    - About Core AI Capabilities: core-ai/models/overview.md
+    - About Core AI Capabilities: core-ai/overview-core-ai.md
     - Models: 
       - About Models: core-ai/models/overview.md 
       - Fine-Tuned Models: 
