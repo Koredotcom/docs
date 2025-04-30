@@ -139,11 +139,11 @@ The following table displays the features and the supported models.
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
 <hr>
 
-\^  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.
+\^  *Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.*
 
-\* The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts. 
+\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
 
-\** To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.
+\** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
 
 ### Agent Node
 
@@ -545,9 +545,9 @@ The following table displays the features and the supported models.
 |Custom LLM|✅|✅|❌|
 |Kore.ai XO GPT|✅|✅|✅|
 
-\* The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts. 
+\* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
 
-\** To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.
+\** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
 
 ### Answer Generation
 

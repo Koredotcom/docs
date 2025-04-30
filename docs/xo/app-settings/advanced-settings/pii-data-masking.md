@@ -147,4 +147,4 @@ In LLM interactions, the platform maintains the conversation context by anonymiz
 
 !!! note
 
-    Data anonymization is automatically applied to all the Dynamic Conversation features except the GenAI node.
+    Data anonymization is automatically applied to all the runtime features except the Agent node.
