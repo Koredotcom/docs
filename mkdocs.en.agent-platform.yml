@@ -136,98 +136,100 @@ nav:
     - Agents: 
       - About Agents: agentic-apps/agent-overview.md
       - Set up an Agent: agentic-apps/create-agent.md
-    - App Simulation: agentic-apps/app-testing.md
-    - App Deployment: agentic-apps/app-deployment.md
-    - App Settings: agentic-apps/app-settings.md     
+      - App Simulation: agentic-apps/app-testing.md
+      - App Deployment:
+        - Deploy an App Version: agentic-apps/app-deployment.md
+        - Access Deployed Version: agentic-apps/access-deployed-version.md
+      - App Settings: agentic-apps/app-settings.md     
     - Tools: 
-      - About Tools: tools/overview.md
-      - Create a Tool: tools/create-a-new-tool.md
-      - Tool Templates: tools/tool-templates.md
-      - Import a Tool: tools/import-a-tool.md
+      - About Tools: ai-agents/tools/overview.md
+      - Create a Tool: ai-agents/tools/create-a-new-tool.md
+      - Tool Templates: ai-agents/tools/tool-templates.md
+      - Import a Tool: ai-agents/tools/import-a-tool.md
       - Tool Flows:
-        - About Flows: tools/tool-flows/flows-overview.md
-        - About Tool Calling: tools/tool-flows/tool-calling.md
+        - About Flows: ai-agents/tools/tool-flows/flows-overview.md
+        - About Tool Calling: ai-agents/tools/tool-flows/tool-calling.md
         - Manage Flows: 
-          - Manage Nodes in Flows: tools/tool-flows/manage-flow-nodes.md
-          - Manage Input and Output: tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
-          - Run the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-          - Create a Version of the Flow: tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+          - Manage Nodes in Flows: ai-agents/tools/tool-flows/manage-flow-nodes.md
+          - Manage Input and Output: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+          - Run the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+          - Create a Version of the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
         - Types of Nodes: 
           - AI Node: 
-            - About AI Nodes: tools/tool-flows/types-of-nodes/ai-node.md
-            - Text to Text Node: tools/tool-flows/types-of-nodes/text-to-text-node.md
-            - Text to Image Node: tools/tool-flows/types-of-nodes/text-to-image-node.md
-            - Audio to Text Node: tools/tool-flows/types-of-nodes/audio-to-text-node.md
-            - Image to Text Node: tools/tool-flows/types-of-nodes/image-to-text-node.md
-          - Integration Node: tools/tool-flows/types-of-nodes/integration-node.md
-          - API Node: tools/tool-flows/types-of-nodes/api-node.md
-          - Function Node: tools/tool-flows/types-of-nodes/function-node.md
-          - Condition Node: tools/tool-flows/types-of-nodes/condition-node.md
-          - DocSearch Node: tools/tool-flows/types-of-nodes/docsearch-node.md        
-          - End Node: tools/tool-flows/types-of-nodes/end-node.md 
-        - Tool Flow Change Log: tools/tool-flows/tool-canvas-change-log.md  
+            - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
+            - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
+            - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
+            - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
+            - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
+          - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
+          - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
+          - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
+          - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
+          - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md        
+          - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
+        - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md  
       - Sharing & Permissions: 
-        - Manage User Roles and Permissions:  tools/manage-user-roles-and-permissions.md
+        - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
       - Tool Endpoint: 
-        - Deploy a Tool: tools/deploy-a-tool.md
+        - Deploy a Tool: ai-agents/tools/deploy-a-tool.md
       - Tool Monitor: 
-        - About Tool Monitor: tools/tool-monitor/about-tool-monitor.md
-        - Accessing Tool Monitor: tools/tool-monitor/accessing-tool-monitor.md
-        - Understanding Tool Monitor: tools/tool-monitor/understanding-the-tool-monitor-interface.md
+        - About Tool Monitor: ai-agents/tools/tool-monitor/about-tool-monitor.md
+        - Accessing Tool Monitor: ai-agents/tools/tool-monitor/accessing-tool-monitor.md
+        - Understanding Tool Monitor: ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface.md
       - API Keys: 
-        - Create an API Key: tools/create-a-new-api-key.md 
+        - Create an API Key: ai-agents/tools/create-a-new-api-key.md 
       - Audit logs:
-        - Tool Audit Logs: tools/tool-audit-log.md
+        - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
       - Configurations:
-        - Configure a Tool: tools/configure-a-tool.md
-        - Export a Tool: tools/export-a-tool.md
-        - Import Tool as a Version: tools/import-a-tool/#import-tool-as-a-version
+        - Configure a Tool: ai-agents/tools/configure-a-tool.md
+        - Export a Tool: ai-agents/tools/export-a-tool.md
+        - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
   - Core AI Capabilities: 
-    - About Core AI Capabilities: models/overview.md
+    - About Core AI Capabilities: core-ai/overview-core-ai.md
     - Models: 
-      - About Models: models/overview.md 
+      - About Models: core-ai/models/overview.md 
       - Fine-Tuned Models: 
-        - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
-        - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+        - Create a Model: core-ai/models/fine-tune-models/create-a-fine-tuned-model.md
+        - Deploy a Model: core-ai/models/fine-tune-models/deploy-a-fine-tuned-model.md
         - Model Settings:
-          - Overview: models/fine-tune-models/model-settings-overview.md
-          - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
-          - API Keys: models/fine-tune-models/generate-an-api-key.md
-          - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
-        - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
+          - Overview: core-ai/models/fine-tune-models/model-settings-overview.md
+          - Model Endpoint: core-ai/models/fine-tune-models/view-the-generated-api-endpoint.md
+          - API Keys: core-ai/models/fine-tune-models/generate-an-api-key.md
+          - Configurations: core-ai/models/fine-tune-models/configure-your-fine-tuned-model.md
+        - Export a Model: core-ai/models/fine-tune-models/export-your-fine-tuned-model.md
       - Open-Source Models:
-        - Import a model: models/open-source-models/importing-models.md
+        - Import a model: core-ai/models/open-source-models/importing-models.md
         - Deploy a model:
-          - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
-          - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
-        - Model Optimization Techniques: models/open-source-models/model-optimization.md 
-        - Open-Source models overview: models/open-source-models/open-source-summary.md
+          - Deploy an Open-Source Model: core-ai/models/open-source-models/select-and-deploy-an-open-source-model.md
+          - Deploy a Hugging Face Model: core-ai/models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+        - Model Optimization Techniques: core-ai/models/open-source-models/model-optimization.md 
+        - Open-Source models overview: core-ai/models/open-source-models/open-source-summary.md
         - Model Settings:
-          - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
-          - API Keys: models/open-source-models/generate-an-api-key-open-source.md
-          - Configurations: models/open-source-models/configure-your-open-source-model.md
+          - Model Endpoint: core-ai/models/open-source-models/view-the-generated-api-endpoint.md
+          - API Keys: core-ai/models/open-source-models/generate-an-api-key-open-source.md
+          - Configurations: core-ai/models/open-source-models/configure-your-open-source-model.md
       - External Models: 
-        - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
-        - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+        - Add a Model using Easy Integration: core-ai/models/external-models/add-an-external-model-using-easy-integration.md
+        - Add a Model using API Integration: core-ai/models/external-models/add-an-external-model-using-api-integration.md
     - Prompts:
-      - About Prompt Studio: prompts/about-prompt-studio.md
-      - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
-      - Using Prompt Studio: prompts/using-prompt-studio.md
-      - Advanced Features: prompts/advanced-features.md
-      - More Options on Prompt Studio: prompts/options-prompt-canvas.md
+      - About Prompt Studio: core-ai/prompts/about-prompt-studio.md
+      - Accessing Prompt Studio: core-ai/prompts/accessing-prompt-studio.md
+      - Using Prompt Studio: core-ai/prompts/using-prompt-studio.md
+      - Advanced Features: core-ai/prompts/advanced-features.md
+      - More Options on Prompt Studio: core-ai/prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: evaluation/overview.md
-      - Create Projects: evaluation/create-project.md
-      - Create Evaluations: evaluation/create-evaluation.md
-      - Import Datasets: evaluation/import-dataset.md
-      - Configure Evaluators: evaluation/configure-evaluator.md
-      - Run Evaluations: evaluation/run-evaluation.md
-      - View Results: evaluation/view-evaluation-insight.md
+      - About Evaluation Studio: core-ai/evaluation/overview.md
+      - Create Projects: core-ai/evaluation/create-project.md
+      - Create Evaluations: core-ai/evaluation/create-evaluation.md
+      - Import Datasets: core-ai/evaluation/import-dataset.md
+      - Configure Evaluators: core-ai/evaluation/configure-evaluator.md
+      - Run Evaluations: core-ai/evaluation/run-evaluation.md
+      - View Results: core-ai/evaluation/view-evaluation-insight.md
     - AI Safety & Governance: 
-      - About Guardrails: tools/guardrails/overview.md
-      - Add a Scanner: tools/guardrails/add-a-scanner.md
-      - Test Guardrail: tools/guardrails/test-guardrail.md
-      - Manage Guardrails: tools/guardrails/manage-guardrails.md
+      - About Guardrails: core-ai/tools/guardrails/overview.md
+      - Add a Scanner: core-ai/tools/guardrails/add-a-scanner.md
+      - Test Guardrail: core-ai/tools/guardrails/test-guardrail.md
+      - Manage Guardrails: core-ai/tools/guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/settings-overview.md
     - User Management:
@@ -255,7 +257,7 @@ nav:
       - Billing and Usage: administration/billing/billing-and-usage.md
       - Managing Usage Limits: administration/billing/managing-usage-limits.md
     - Data: 
-      - Manage Data: data/manage-datasets.md
+      - Manage Data: administration/data/manage-datasets.md
   - APIs: 
     - About Agent Platform APIs: apis/overview.md
     - APIs List: apis/overview/#apis-list
