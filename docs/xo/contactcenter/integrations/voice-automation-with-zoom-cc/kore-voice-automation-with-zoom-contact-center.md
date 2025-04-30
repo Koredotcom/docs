@@ -17,14 +17,14 @@ Here’s a general overview of how voice virtual assistant interactions work on 
 
 Please ensure you have the following before enabling this channel:
 
-* A Zoom App Marketplace Developer account. Don’t have an account? Sign up [here](https://marketplace.zoom.us/).
-* Developer access to the XO Platform. Need Developer Access? [Contact us](https://kore.ai/contact-us/).
+* A Zoom App Marketplace Developer account. Don’t have an account? Sign up [here](https://marketplace.zoom.us/){:target="_blank"}.
+* Developer access to the XO Platform. Need Developer Access? [Contact us](https://kore.ai/contact-us/){:target="_blank"}.
 
 ## Setting up Zoom Contact Center
 
 The important steps to set up the ZCC channel are summarized below:
 
-1. Associate an App within an experience flow. [Know more](../../../flows/navigate-the-flow-designer.md).
+1. Associate an App within an experience flow. [Know more](../../../flows/navigate-the-flow-designer.md){:target="_blank"}.
 2. Configure “Transfer from IVR.”
 3. Configure “Agent Transfer.”
 4. Create a Bot Connector instance on Zoom App Marketplace to associate a virtual assistant. 
@@ -33,12 +33,12 @@ The important steps to set up the ZCC channel are summarized below:
 ## Architecture Diagram
 <img src="../images/architecture-diagram-1.png" alt="architecture-diagram" title="architecture-diagram" style="border: 1px solid gray; zoom:80%;">
 
-## Step 1: Associate an App within an experience flow. [Know more](../../../flows/create-flows.md)
+## Step 1: Associate an App within an experience flow. [Know more](../../../flows/create-flows.md){:target="_blank"}
 
-If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore IVA. Read more [here](../../../flows/node-types/automation.md).
+If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore IVA. Read more [here](../../../flows/node-types/automation.md){:target="_blank"}.
 
 !!! note
-    If you are using the older version “SmartAssist,” then use this [link](../../../flows/create-flows.md).
+    If you are using the older version “SmartAssist,” then use this [link](../../../flows/create-flows.md){:target="_blank"}.
 
 ## Step 2: Configure “Transfer from IVR”
 
@@ -62,14 +62,14 @@ Go to **Flows & Channels** > **Channels** > **Voice Gateway**, and select **SIP 
     !!! note
         Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
-10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md/#attach-flow).  
+10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md/#attach-flow){:target="_blank"}.  
 <img src="../images/koreai-voice-gateway-4.png" alt="koreai-voice-gateway" title="koreai-voice-gateway" style="border: 1px solid gray; zoom:80%;">
 
 ## Step 3: Agent Transfer Configuration
 
 After the customer interacts with Kore’s IVA, you can perform agent transfer from Kore IVA to ZCC through one of the following two approaches:
 
-* Agent Transfer Node in Flow. [Read here ](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md)
+* Agent Transfer Node in Flow. [Read here ](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}
 * Agent Transfer Node in a Dialog Task
 
 ### 3.1 Agent Transfer Node in Experience Flow
@@ -89,7 +89,7 @@ After the customer interacts with Kore’s IVA, you can perform agent transfer f
 
 ### 3.2 Agent Transfer Node in a Dialog Task
 
-Zoom users can also invoke agent transfer from the Dialog Task using a message node. Read more [here](../../../getting-started/virtual-assistants-overview.md) on Kore Automation / Dialog task.
+Zoom users can also invoke agent transfer from the Dialog Task using a message node. Read more [here](../../../getting-started/virtual-assistants-overview.md){:target="_blank"} on Kore Automation / Dialog task.
 
 Add the following code on the message node for agent transfer:
 
@@ -131,7 +131,7 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 
 ## Step 4: Create a Connection from ZCC to Kore IVA - Transfer from IVR (SIP Transfer)
 
-1. Sign in to [Zoom App Marketplace](https://marketplace.zoom.us/apps) as an Admin.
+1. Sign in to [Zoom App Marketplace](https://marketplace.zoom.us/apps){:target="_blank"} as an Admin.
 
 2. Select **App Types** > **Connectors** from the left navigation filter menu, and navigate to the **Connectors** page, or simply type “kore.ai” in the **Search** field.  
 <img src="../images/koreai-virtual-assistant-8.png" alt="koreai-virtual-assistant" title="koreai-virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
@@ -205,7 +205,7 @@ This section explains the process of fetching the details and summary of the con
     14.1 Close the message that confirms publishing of your Virtual Assistant.  
     <img src="../images/closing-va-publishing-confirmation-message-22.png" alt="closing-va-publishing-confirmation-message" title="closing-va-publishing-confirmation-message" style="border: 1px solid gray; zoom:80%;">
 
-15. Copy the **curl** from the [Conversation Details and Summary API](../../../apis/automation/conversation-details-and-summary.md).
+15. Copy the **curl** from the [Conversation Details and Summary API](../../../apis/automation/conversation-details-and-summary.md){:target="_blank"}.
 16. Go to **Postman**, paste the **curl** copied from the API, and then:
 
     16.1 Replace the **botID** with the **Bot ID** value copied from **UXO**. \
@@ -236,6 +236,6 @@ Follow these steps to get the **botID**:
      16.2.4 On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
         <img src="../images/insights-to-logs-sessionid-26.png" alt="insights-to-logs-sessionid" title="insights-to-logs-sessionid" style="border: 1px solid gray; zoom:80%;">
 
-    16.3 Generate and copy the **JWT token** by following [this document](../../../apis/automation/api-introduction.md/#generating-the-jwt-token).
+    16.3 Generate and copy the **JWT token** by following [this document](../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
 
 17. Run the modified **curl** to get the conversation details and summary of a session.

@@ -425,7 +425,6 @@ nav:
         - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
-        - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
