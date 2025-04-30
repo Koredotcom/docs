@@ -121,7 +121,7 @@ nav:
     - Release Notes:
       - Release Updates: release-notes/release-updates.md
   - Custom Agents:
-    - About Custom Agents: custom-agents/about-custom-agents.md
+    - About Custom Agents: custom-agents/overview.md
     - Enterprise Knowledge: 
       - Source: custom-agents/enterprise-knowledge.md
     - AI Agents: 
@@ -139,20 +139,20 @@ nav:
     - Agent Management:
       - Agent Options: custom-agents/agent-options.md
   - Pre-built Agents:
-    - About Pre-built Agents: pre-built-agents/about-pre-built-agents.md
+    - About Pre-built Agents: pre-built-agents/overview.md
   - Pre-built Solutions:
-    - About Pre-built Solution: pre-built-solutions/about-pre-built-solutions.md
+    - About Pre-built Solution: pre-built-solutions/overview.md
     - IT Assist: pre-built-solutions/itassist.md
     - HR Assist: pre-built-solutions/hrassist.md
     - Recruit Assist: pre-built-solutions/recruitassist.md
   - Analytics: 
-    - Analytics Overview: analytics/analytics-overview.md
+    - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
     - Data View: analytics/data-view.md
   - Administration:
-    - Admin Console Overview: Administration/admin-overview.md
-    - Workspace: Administration/workspace.md
-    - Account Hub: Administration/account-hub.md
+    - Admin Console Overview: administration/overview.md
+    - Workspace: administration/workspace.md
+    - Account Hub: administration/account-hub.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md

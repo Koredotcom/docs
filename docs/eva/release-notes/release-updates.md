@@ -98,7 +98,7 @@ Key Features:
 * Control agent visibility and target specific user groups or the entire organization. Tailor each workspace with different allowed agent types to maintain information boundaries and ensure compliance.
 * The default workspace within every account includes pre-built solutions optimized for HR, IT, Recruitment, and Analytics, enabling immediate productivity.
 
-[Learn more :octicons-arrow-right-24:](./../Administration/workspace.md)
+[Learn more :octicons-arrow-right-24:](../administration/workspace.md)
 
 **Introducing Agent Sharing**
 
@@ -198,7 +198,7 @@ You can now leverage non-deterministic AI algorithms to autonomously manage comp
 
 * API Agent: API agent now supports multi-value parameters that allow querying multiple values within a single request. [Learn more :octicons-arrow-right-24:](./../custom-agents/api-agents.md#step-43-query-filters)
 
-* Audit Log: Audit Logs feature is now available through our API for administrators. Administrators can access and manage all audit log data through the API, ensuring complete visibility into system activities. A dedicated UI for Audit Logs is under active development and will be released soon. [Learn more :octicons-arrow-right-24:](./../APIs/audit-log-api.md)
+* Audit Log: Audit Logs feature is now available through our API for administrators. Administrators can access and manage all audit log data through the API, ensuring complete visibility into system activities. A dedicated UI for Audit Logs is under active development and will be released soon. [Learn more :octicons-arrow-right-24:](../apis/audit-log-api.md)
 
 * Citations: All agents now include clear citation and action buttons, ensuring consistency across the platform. Previously, Calendar, Contact, and Bot agents lacked citation. This update ensures that all agents are now fully cited with actionable buttons.
 
