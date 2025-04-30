@@ -1,4 +1,4 @@
-# Secure Account Access using Auth Profiles
+# Secure Account Access Using Authorization Profiles
 
 The Agent Platform enables secure and efficient authentication when integrating with external web services. By configuring an **Authorization (Auth) Profile**, users can manage access control while ensuring data protection and regulatory compliance. Whether connecting to an [external/commercial model using a custom API](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-api-integration/){:target="_blank"} or setting up a tool integration via the [AI](https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/ai-node/){:target="_blank"} or [API node](https://docs.kore.ai/agent-platform/tools/tool-flows/types-of-nodes/api-node/){:target="_blank"}, the platform provides a structured framework for managing authentication flows, simplifying security configurations, enhancing access control, and ensuring seamless identity verification across different services.
 
