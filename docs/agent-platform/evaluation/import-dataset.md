@@ -149,7 +149,7 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 
 
 8. **Test the API call and view the response**: Click **Test** to trigger the API. The system uses the first row of your dataset to verify the API setup and displays the response in the **Response** tab. For example, if you are running a summarization tool, you should see the generated summary output based on the input text.  
-<img src="..images/output.summary.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/output.summary.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:60%;">
 
     The **Test** option enables you to preview the JSON response structure. After testing, carefully review the response to identify the correct output path, which you’ll need to specify as the **JSON Output Path** in the following step.
 
@@ -158,7 +158,7 @@ Follow this example to set up and run an API call inside Evaluation Studio:
     For example, if the API response structure is  
 `"output": { "Summarization": "(generated output)" }`,  you should enter `output.Summarization` as the JSON output path.
 
-    <img src="../core-ai/evaluation/images/summary_response.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/summary_response.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:60%;">
     
 
 10. **Run the API call:** After successful testing, click **Run** to fetch outputs for all the dataset rows. A new column will be added with the populated API responses/results.

@@ -218,13 +218,13 @@ nav:
       - Advanced Features: prompts/advanced-features.md
       - More Options on Prompt Studio: prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: evaluation/overview.md
-      - Create Projects: evaluation/create-project.md
-      - Create Evaluations: evaluation/create-evaluation.md
-      - Import Datasets: evaluation/import-dataset.md
-      - Configure Evaluators: evaluation/configure-evaluator.md
-      - Run Evaluations: evaluation/run-evaluation.md
-      - View Results: evaluation/view-evaluation-insight.md
+      - About Evaluation Studio: core-ai/evaluation/overview.md
+      - Create Projects: core-ai/evaluation/create-project.md
+      - Create Evaluations: core-ai/evaluation/create-evaluation.md
+      - Import Datasets: core-ai/evaluation/import-dataset.md
+      - Configure Evaluators: core-ai/evaluation/configure-evaluator.md
+      - Run Evaluations: core-ai/evaluation/run-evaluation.md
+      - View Results: core-ai/evaluation/view-evaluation-insight.md
     - AI Safety & Governance: 
       - About Guardrails: tools/guardrails/overview.md
       - Add a Scanner: tools/guardrails/add-a-scanner.md
