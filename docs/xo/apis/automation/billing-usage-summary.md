@@ -476,3 +476,4 @@ Possible values:
 "averageSessions": 2
 }
 }
+```
