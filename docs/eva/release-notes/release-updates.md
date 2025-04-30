@@ -14,7 +14,7 @@ This update includes new features, feature enhancements, and bug fixes summarize
 
 AI for Work home page has been redesigned with a focus on visual and navigational enhancements. The new layout prioritizes recently used agents, aiming to boost efficiency and minimize time spent on workflow management.
 
-The user interface includes: a left panel that can be toggled, a top-right section for **Help**, **Notifications**, and **User Profiles**. Panels adjust automatically based on search queries and browsing history. 
+The user interface includes: a left panel that can be toggled, a top-right section for **Help**, **Notifications**, and **User Profiles**. Panels adjust automatically based on search queries and browsing history.
 
 Key features
 
@@ -34,6 +34,8 @@ The Kore’s Marketplace now features AI for Work, a comprehensive collection of
 
 AI for Work in the Marketplace features two main categories: **Apps** (complex, multi-functional AI solutions combining agents for comprehensive workflows) and **Agents** (standalone AI components for specific tasks). The first version introduces Agentic flows in applications, starting with **Prompt Agents** that provide instant text replies.
 
+[Learn more :octicons-arrow-right-24:](./../getting-started/marketplace.md)
+
 **Introducing the Audit Log**
 
 The new **Audit Log** system tracks user activity across the platform, providing administrators and team members with a comprehensive record of all administrative and operational actions.
@@ -44,12 +46,16 @@ Audit Log System captures activities across three distinct locations:
 * **Workspace Logs** document all activities within specific workspace environments, creating accountability for team-specific actions. All workspace collaborators can access these logs.
 * **Agent Logs** capture granular activity details, tracking all interactions and modifications related to specific agents. Users with edit access or ownership permissions can access these logs.
 
+[Learn more :octicons-arrow-right-24:](./../audit-log/audit-log-management.md)
+
 **Introducing Account Data Settings**
 
 The Admin Console now features **Data Settings**, giving complete control over the data lifecycle. This includes managing Conversation Data Storage and Data Retention Period.
 
 * **Conversation Data Storage**: Users can choose whether to store end-user conversation data in logs.
 * **Data Retention Period**: Users can choose a default 7-year data retention period or a custom period using numeric input and a dropdown for time units. Data older than the selected period is permanently deleted.
+
+[Learn more :octicons-arrow-right-24:](./../security/data-settings.md)
 
 **Enhancements**
 
