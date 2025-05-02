@@ -1,6 +1,7 @@
 # Set up an Agent
 
-Setting up an agent involves defining its purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to allow it to take actions within a given scope. 
+Setting up an agent involves defining its intended purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to govern its actions within specified boundaries.
+
 
 <img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 0px solid gray; zoom:65%;">
 
@@ -22,13 +23,13 @@ Agent profile consists of the following fields:
 
 !!!abstract "Examples"
 
-    * Credit Card Assistant for an agent that handles all queries related to credit cards. 
-    * Leave Manager for an agent that manages all requests related to employee leaves in an organization. 
+    * Credit Card Assistant for an agent that handles all queries related to credit cards.
+    * Leave Manager for an agent that manages all requests related to employee leaves in an organization.
     * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
 
 ---
 
-**Description**: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to choose the most appropriate agent for a certain task. 
+**Description**: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to select the most suitable agent for a specific task.
 
 !!!abstract "Examples"
 
@@ -59,7 +60,7 @@ For more information, see [Add an External Model](./../models/external-models/ad
 
 ## Agent Definition
 
-**Scope**: This section outlines the agent's role and the tasks it can perform. The scope defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. Clearly establishing what the agent can do and how it should operate ensures that the goals are effectively aligned.   
+**Scope**: This section outlines the agent's role and the tasks it can perform. The scope defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. Clearly establishing what the agent can do and how it should operate ensures that the goals are effectively aligned.  
 
 !!!abstract "Examples"
 
@@ -78,7 +79,7 @@ For more information, see [Add an External Model](./../models/external-models/ad
 
 ---
 
-**Instructions**: Instructions for an agent are a set of directives or rules that define how an agent should behave, respond to inputs, and complete tasks effectively, aligning with the application's overall goal. Instructions can be used to define an agent's boundaries or provide specifications on how to interact with users. 
+**Instructions**: Instructions for an agent are a set of directives or rules that define how an agent should behave, respond to inputs, and complete tasks effectively, aligning with the application's overall goal. Instructions can be used to define an agent's boundaries or provide specifications on how to interact with users.
 
 They serve as a guide to ensure the agent operates within its scope and delivers accurate and consistent results.
 
@@ -99,12 +100,22 @@ They serve as a guide to ensure the agent operates within its scope and delivers
 
 ---
 
-## Actions
+## Knowledge
 
-Actions are the tasks that agents can perform. They are the basic building blocks of an agent's capabilities. The Actions are implemented using **Tools**. Tools are the executable functions that help an agent achieve its objectives.  Agent uses the tool-calling capabilities of the LLMs to invoke the most appropriate tool required to complete a given task. 
+Agent Platform provides powerful search functionality across diverse content sources using\the **Search AI** application, which supports Retrieval-Augmented Generation (RAG)-based search across enterprise knowledge bases, document repositories, FAQs, and external systems. This advanced RAG-driven integration empowers autonomous agents to deliver accurate, context-aware, and timely responses by leveraging relevant information from connected knowledge sources.
 
+You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries. Each Search AI app can be integrated with multiple content sources. 
 
-**Tools** are components that enable various actions to be carried out effectively. They function as specialized units that execute specific tasks. Actions rely on these tools, which incorporate domain-specific business logic to successfully complete their designated roles. These tools are capable of performing activities such as data retrieval, logical operations, and facilitating connections with external systems.
+Refer to [this](about-knowledge.md) to learn more about Knowledge Integration with agents. 
+
+---
+## Tools
+
+**Tools** are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments.
+
+In an agentic architecture, **Actions** represent the discrete tasks an agent can execute. These actions are made possible by **Tools**, which encapsulate the domain-specific logic and capabilities needed to accomplish specific objectives. Tools serve as the operational backbone of actions, providing the necessary interfaces and execution that translate an agent’s intent into meaningful outcomes.
+
+Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
 
 !!!abstract "Examples"
 
@@ -117,16 +128,47 @@ Actions are the tasks that agents can perform. They are the basic building block
         * Initiate bill payment - Initiates bill payment process
         * Find recent transactions - Present last *n* transactions that might include retrieving data from a database. 
 
-There are **two types of tools** that can be used for Agent actions. 
+There are **two types of tools** that agents can use.
 
-* **Workflow Tools**: Workflow tools are shared resources that multiple agents in an app can access to perform common operations efficiently. Workflow tools are predefined, reusable functions that enable automation of complex processes by orchestrating multiple steps seamlessly. With workflow tools, you can implement complex tasks efficiently by defining the order of tasks within a tool to achieve a desired end goal. These tools ensure **consistency** and **reusability**. Such tools are ideal for communicating with external systems, databases or performing a standard operation.
 
-!!!abstract "Examples"
 
-    * Weather API: Retrieves live weather updates.
-    * Stock Market Tool: Fetches real-time stock prices.
-    * Database Query Tool: Accesses structured data from a company’s database.
+* **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They are best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
-The agent platform offers a no-code builder for creating and managing tools. For more information, see [About Tools](/docs/agent-platform/tools/overview.md).
+    **Examples**
 
-* **Code Tools**: With **code tools**, you can write and execute business logic directly within the system using **JavaScript**, allowing seamless integration and automation of complex workflows. They enable automation of workflows by executing custom scripts as part of the operations. For more information, see [Code Tools](inline-tools.md).
+* Weather API: Retrieves live weather updates.
+* Stock Market Tool: Fetches real-time stock prices.
+* Database Query Tool: Accesses structured data from a company’s database.
+
+    For more information, see [About Tools](https://agentplatform-kore.github.io/docs/agent-platform/tools/overview/).
+
+* **Code Tools**: **Code Tools** are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python **code, allowing seamless integration and automation of complex workflows.
+
+    For more information, see [Inline Tools](https://agentplatform-kore.github.io/docs/agent-platform/agentic-apps/inline-tools/).
+
+
+
+### Adding a Tool to Agent
+
+You can enhance an agent's capabilities by **creating a new tool** or **importing an existing one** from the tool library.
+
+
+
+* **New tools** are custom-built within the context of a specific app and are not shared across other apps.
+
+* **Imported tools** act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.
+
+To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool** or **Code Tool**.
+
+For a **Workflow Tool**, enter the tool's **name** and **description**, then click **Create**. The tool will be added to your app. Next, go to the **Agent's Tools** page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool.
+
+![Create App](images/addtool1.png "Agentic App Creation")
+
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ](inline-tools.md)for details on creating a new code tool, along with an example. 
+
+
+### Importing a Tool
+
+You can import an existing tool into your app. When you import a tool, a **new instance** is created specifically for that app. You can use it as is or **customize it** to better fit your requirements.
+
+To make changes, simply select the tool from the library and open it to **modify the flow** as needed.
