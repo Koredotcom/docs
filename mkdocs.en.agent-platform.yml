@@ -139,18 +139,18 @@ nav:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up an Agent: ai-agents/agentic-apps/create-agent.md
       - Manage Agents: ai-agents/agentic-apps/manage-agent.md
-      - External Agents: ai-agents/agentic-apps/external-agent.md
+      - External Agents: ai-agents/agentic-apps/external-agents.md
     - Knowledge Integration:
       - About Knowledge: ai-agents/agentic-apps/about-knowledge.md
-      - Manage Knowledge Base: ai-agents/agentic-apps/manage-knowledge-tool.md
+      - Manage Knowledge Base: ai-agents/agentic-apps/manage-knowledge-tools.md
     - App Settings:
-      - Events: ai-agents/agentic-apps/events.md
-      - Configurations: ai-agents/agentic-apps/app-configurations.md
-      - Guardrails: ai-agents/agentic-apps/guardrails.md
-      - Sharing & Permissions: ai-agents/agentic-apps/sharing-permissions.md
+      - Events: ai-agents/agentic-apps/settings/events.md
+      - Configurations: ai-agents/agentic-apps/settings/app-configurations.md
+      - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
+      - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
     - Simulation & Testing: ai-agents/agentic-apps/app-testing.md
     - Deployment: 
-      - Versioning & Environments: ai-agents/agentic-apps/deployment.md
+      - Versioning & Environments: ai-agents/agentic-apps/app-deployment.md
       - API Integration: ai-agents/agentic-apps/api-integration.md
       - Web SDK Integration: ai-agents/agentic-apps/web-sdk-integration.md
     - Import & Export: 
