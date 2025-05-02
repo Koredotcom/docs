@@ -172,3 +172,5 @@ To create a **Code tool**, click on Code Tool and configure the details of the t
 You can import an existing tool into your app. When you import a tool, a **new instance** is created specifically for that app. You can use it as is or **customize it** to better fit your requirements.
 
 To make changes, simply select the tool from the library and open it to **modify the flow** as needed.
+
+Use [this example as a reference or starting point](agent-creation-example.md) when building your own agent.
