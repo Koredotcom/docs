@@ -143,5 +143,7 @@ The following is the response format expected by the Proxy agent:
 Where,
 
 * **output** is the response from the external agent. 
+
 * **debug** is the debug information.
+
 * **sessionInfo objects** contain session-related information. While streaming, a series of output events is sent, each with part of the total output. Ultimately, the entire output, stitched together under sessionInfo, is sent as a single unit.

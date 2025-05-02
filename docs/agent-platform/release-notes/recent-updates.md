@@ -1,6 +1,6 @@
 # Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
+This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
 ## v1.0.4 April 26, 2025
 
