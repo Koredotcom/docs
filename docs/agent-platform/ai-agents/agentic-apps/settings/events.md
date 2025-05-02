@@ -7,6 +7,7 @@ Events are system-triggered and occur at specific points in the conversation. Th
 Currently, Agent Platform supports the following three system events:
 
 1. **Welcome Event**
+
     The Welcome Event is triggered automatically when a new session begins with the application. It is used to deliver personalized greetings and establish the initial context, helping users understand the app's capabilities. This event is triggered only once per session, at the start of the interaction.
 
     By default, the event is in the Disabled state.

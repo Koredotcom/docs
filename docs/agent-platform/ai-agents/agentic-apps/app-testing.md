@@ -8,6 +8,7 @@ The Simulate section provides an interactive interface that allows users to subm
 Users can also pass contextual information to the agent through attachments. [Learn More](attachment-support-in-user-interactions.md).
 
 **Query Input**: Enter your query in the designated input field to initiate the simulation.
+
 **Response Display**: The agent's response is displayed, providing immediate feedback on the input provided.
 **Processing Timeline**: The right pane displays a chronological timeline that details the processing of the user query. It helps you trace the flow of execution and understand the contribution of each component involved in generating a response. The highlights of the timeline:
 
