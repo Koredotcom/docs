@@ -2,13 +2,13 @@
 
 The **Image to Text** node in the tool builder processes an uploaded image and generates text responses based on the user’s prompt. It can provide descriptions, answer image-related questions, or extract text from the image. This node leverages external LLM models like OpenAI and Anthropic for image processing and text generation.
 
-A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../apis/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the tool endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
+A sample use case involves an insurance company assessing vehicle damage to estimate compensation and verify customer claims. The **Image to Text** node processes the uploaded image of the damaged vehicle, analyzes the extent of the damage, and helps determine repair costs. The [File Upload API](../../../api-and-sdk/apis-list/upload-file-api.md){:target="_blank"} generates the file source (URL) at the tool endpoint, which is required as input for the node. Any publicly accessible URLs (public repositories) can also be used for the File Source.
 
 <div class="admonition note">
 <p class="admonition-title">Important Considerations</p>
 <p><ul><li>The user can upload only one file at a time for processing.</li>
 <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
-<li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
+<li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/api-and-sdk/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
 <li>Image input preprocessing is supported in the following formats:</li>
 <ul><li>Binary, base64-encoded for Anthropic models.</li>
 <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>
@@ -20,7 +20,7 @@ To add and configure the node, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a></p>
+<p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a></p>
 </div>
 
 1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed.

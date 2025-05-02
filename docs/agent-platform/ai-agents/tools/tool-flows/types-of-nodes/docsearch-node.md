@@ -1,4 +1,4 @@
-# DocSearch Node
+# DocSearch Node - Automate Info Search and Retrieval
 
 The **DocSearch Node** improves how information is found and processed. It uses advanced searching called Retrieval Augmented Generation (RAG). 
 
@@ -113,7 +113,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="5"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
-<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
+<p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
 
 <p>You can also add plain text for hard-coded inputs like "<i>What does the Mckinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
 <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;"></li>
@@ -152,7 +152,7 @@ To run and test the flow, follow the steps below:
 <ol start="3"><li>Click <b>Generate Output</b>.</li>
 <img src="../images/input-and-generate-output-docsearch.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;"></ol>
 
-The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](https://docs.kore.ai/agent-platform/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/){:target="_blank"} about running the tool flow.
+The **Debug** window displays the flow log and execution status of each node on the canvas, starting from the **Start** node to the **End** node, along with the result shown in the **Output** window. [Learn more](../../../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
 
 <div class="admonition note">
 <p class="admonition-title">Accessing the Output</p>

@@ -5,7 +5,7 @@ The Agent Platform offers a comprehensive suite of AI capabilities designed to e
 
 ## Models
 
-Models Studio enables enterprises to tailor foundational language models to their domain-specific needs. With built-in tools for fine-tuning, external model integration, and deployment management, users can enhance base models using proprietary datasets or bring in commercial and open-source models to diversify and strengthen AI capabilities.  [Learn more :octicons-arrow-right-24:](https://docs.kore.ai/agent-platform/models/overview/){:target="_blank"}.
+Models Studio enables enterprises to tailor foundational language models to their domain-specific needs. With built-in tools for fine-tuning, external model integration, and deployment management, users can enhance base models using proprietary datasets or bring in commercial and open-source models to diversify and strengthen AI capabilities.  [Learn more :octicons-arrow-right-24:](https://docs.kore.ai/agent-platform/core-ai/models/overview/){:target="_blank"}.
 
 * Fine-tune models with your enterprise data.
 * Import 30+ open-source models or connect to providers like OpenAI, Anthropic, Cohere, and Google.
