@@ -22,8 +22,12 @@ To import Agentic Apps or agents in an agentic app, take the following steps.
 
     <img src="../images/config-files.png" alt="Config file for importing" title="Config file for importing" style="border: 0px solid gray; zoom:65%;">
 
-* If the file format is correct and no errors are found, the application is configured using the JSON file.  \
-**Note:** Importing a configuration will overwrite all existing settings in the target application.
+* If the file format is correct and no errors are found, the application is configured using the JSON file.
+
+!!! note
+
+    Importing a configuration will overwrite all existing settings in the target application.
+
 * The status of the import can also be seen under the Import Logs. 
 * Review and validate the imported apps or agents. 
 
