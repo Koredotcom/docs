@@ -285,7 +285,7 @@ The supported models and their variants are given below:
     <img src="../images/image7.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
   
-<ol start="3"><li>Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click <b>Next</b>. <a href="https://docs.kore.ai/agent-platform/models/open-source-models/model-optimization/" target="_blank">Learn more</a>.</li></ol>
+<ol start="3"><li>Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click <b>Next</b>. <a href="https://docs.kore.ai/agent-platform/core-ai/models/open-source-models/model-optimization/" target="_blank">Learn more</a>.</li></ol>
 
 * **Skip optimization**: It skips the model optimization.
 * **CTranslate2**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#ctranslate2). 

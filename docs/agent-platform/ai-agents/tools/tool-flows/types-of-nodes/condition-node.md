@@ -1,4 +1,4 @@
-# Condition Node
+# Condition Node - Automate Conditional Flows
 
 Condition nodes let you create branches in a workflow, directing actions based on whether certain conditions are met. This helps control the flow’s execution.
 

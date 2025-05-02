@@ -1,4 +1,4 @@
-# API Node
+# API Node - Automate API Calls
 
 API nodes let you connect to external systems and retrieve data by making SOAP or REST API calls. You can configure the APIs and pass the necessary parameters to fetch the required information.
 

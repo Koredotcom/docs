@@ -1,6 +1,4 @@
-# Text to Text Node
-
-## Overview
+# Text to Text Node - Automate Text Transformation
 
 The **Text to Text** node under the **AI node** in the **Tool Builder** converts the text description (including keywords) you provide into the required text output within a single workflow. You can define what the output text should include and exclude, for example, the writing style, tonality, context, and more using the prompt. This multimodal capability enables developers to efficiently handle and integrate text content in the required format.
 

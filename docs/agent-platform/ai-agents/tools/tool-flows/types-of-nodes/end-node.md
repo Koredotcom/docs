@@ -1,4 +1,4 @@
-# End Node
+# End Node - Automate Workflow Completion
 
 End nodes let you display the flow's outputs upon success or an error message in case of failure.
 
