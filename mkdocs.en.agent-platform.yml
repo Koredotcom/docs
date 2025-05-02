@@ -126,7 +126,7 @@ nav:
         - Build a Code Tool: getting-started/tutorials/build-code-tool.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
-    - AI Offerings:
+    - Kore.ai Business Solutions:
       - AI for Service: https://docs.kore.ai/xo/home/
       - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
       - AI for Process: https://kore.ai/ai-for-process/  
@@ -149,7 +149,7 @@ nav:
     - App Deployment: 
       - Deploy an App Version: ai-agents/agentic-apps/app-deployment.md
       - Access Deployed Version: ai-agents/agentic-apps/access-deployed-version.md
-    - Import & Export: 
+    - App Import & Export: 
       - Import App: ai-agents/agentic-apps/import.md
       - Export App and Agents: ai-agents/agentic-apps/export.md
     - Tools: 
