@@ -93,6 +93,8 @@ Learn More.
 
 To remove the knowledge tool from the Agentic app, go to the Knowledge page and unlink the knowledge tool.
 
+   <img src="../images/unlinking-the-knowledge-base.png" alt="Unlinking the Knowledge Base" title="Unlinking the Knowledge Base" style="border: 1px solid gray; zoom:90%;">
+
 ## Manage Content in Search AI
 
 To update the content in the search AI application or edit any configurations, use the **Manage Content **option to navigate to the corresponding Search AI app. Learn More.
