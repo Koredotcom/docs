@@ -117,3 +117,12 @@ A Banking Assistant built as an Agentic App demonstrates how multiple specialize
 * Each agent utilizes tools with built-in business logic to complete specific tasks.
 
 This approach ensures an organized, automated, and scalable banking solution.
+
+<hr>
+
+#### Related Links
+
+* [About AI Agents](../../ai-agents/agent-overview.md)
+* [Create an Agentic App](../../ai-agents/agentic-apps/create-app.md)
+* [Set up AI Agents](../../ai-agents/create-agent.md)
+* [Configure Tools for Agents](../../ai-agents/tools/overview.md)

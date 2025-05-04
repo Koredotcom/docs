@@ -21,6 +21,7 @@ The Supervisor Pattern is an effective method for orchestrating multi-agent syst
 ## Core Architecture and Functionality
 
 The Supervisor Pattern implements a systematic workflow with clearly defined stages:
+
 <img src="../../ai-agents/images/supervisor-pattern.png" alt="Supervisor Pattern Architecture" title="Supervisor Pattern Architecture">
 
 1. **User Input Reception**:
