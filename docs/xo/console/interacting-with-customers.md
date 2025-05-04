@@ -905,6 +905,10 @@ This section displays the live interaction summary with the following details:
 
 After accepting the conversation, all interactions by the agent are displayed below the arrival summary. If generating the arrival summary takes time, a loading indicator appears until the summary is ready. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
 
+!!! Note
+
+    When sentiment analysis is configured but no utterances are available to analyze, the Sentiment field in the arrival summary displays "Unavailable" instead of remaining blank.
+
 ### Refreshing Bot-Customer Interactions
 
 A reload button appears at the top of the conversation transcript when the bot-customer conversation transcript is missing. Clicking Reload displays the missing information.  
