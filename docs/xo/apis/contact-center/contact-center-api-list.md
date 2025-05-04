@@ -84,7 +84,9 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | API                                                                                               | DESCRIPTION                                                                                           | ASSOCIATED APP SCOPE            |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|--------------------------------|
 | [Import/Save Data by Giving Details](../contact-center/import-or-save-data-by-giving-details.md)                     | To import/save data with the given accountId and orgId.                                              | SmartAssist Import and Export Feature |
+| [Import/Save Data by Giving Details (v2)](../contact-center/import-or-save-data-by-giving-details-v2.md)                     | To import/save data with the given accountId and orgId.                                              | SmartAssist Import and Export Feature |
 | [Export Data by Giving Details](../contact-center/export-data-by-giving-details.md)                                   | To export data with the given accountId and orgId.                                                   | SmartAssist Import and Export Feature |
+| [Export Data by Giving Details (v2)](../contact-center/export-data-by-giving-details-v2.md)                                   | To export data with the given accountId and orgId.                                                   | SmartAssist Import and Export Feature |
 
 ### Call Recording APIs
 
