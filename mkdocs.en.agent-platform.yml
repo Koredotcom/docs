@@ -193,7 +193,7 @@ nav:
         - Configure a Tool: ai-agents/tools/configure-a-tool.md
         - Export a Tool: ai-agents/tools/export-a-tool.md
         - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
-    - App Testing:
+    - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Deployment: 
       - Deploy an App Version: ai-agents/agentic-apps/app-deployment.md
