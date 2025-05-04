@@ -50,7 +50,7 @@ Agent profile consists of the following fields:
 * Tool calling 
 * Transforming results from agents into natural and contextual responses for the users.
 
-For more information, see [Add an External Model](./../models/external-models/add-an-external-model-using-easy-integration.md/).
+For more information, see [Add an External Model](./../core-ai/models/external-models/add-an-external-model-using-easy-integration.md/).
 
 !!!tip
     When choosing a model for your agent, consider its specific use case. For example, if the agent is designed for code generation, opt for a model that specializes in coding skills.
@@ -106,7 +106,7 @@ Agent Platform provides powerful search functionality across diverse content sou
 
 You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries. Each Search AI app can be integrated with multiple content sources. 
 
-Refer to [this](../knowledge/about-knowledge.md) to learn more about Knowledge Integration with agents. 
+[Learn more](./../ai-agents/knowledge/about-knowledge.md) about Knowledge integration with agents. 
 
 ---
 ## Tools
@@ -140,11 +140,11 @@ There are **two types of tools** that agents can use.
 * Stock Market Tool: Fetches real-time stock prices.
 * Database Query Tool: Accesses structured data from a company’s database.
 
-    For more information, see [About Tools](https://agentplatform-kore.github.io/docs/agent-platform/tools/overview/).
+    For more information, see [About Tools](./../ai-agents/tools/overview.md).
 
 * **Code Tools**: **Code Tools** are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python **code, allowing seamless integration and automation of complex workflows.
 
-    For more information, see [Inline Tools](https://agentplatform-kore.github.io/docs/agent-platform/agentic-apps/inline-tools/).
+    For more information, see [Inline Tools](./../agentic-apps/inline-tools.md).
 
 
 
@@ -164,7 +164,7 @@ For a **Workflow Tool**, enter the tool's **name** and **description**, then cli
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ](inline-tools.md)for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ](./../agentic-apps/inline-tools.md)for details on creating a new code tool, along with an example. 
 
 
 ### Importing a Tool
@@ -173,4 +173,4 @@ You can import an existing tool into your app. When you import a tool, a **new i
 
 To make changes, simply select the tool from the library and open it to **modify the flow** as needed.
 
-Use [this example as a reference or starting point](agent-creation-example.md) when building your own agent.
+Use [this example as a reference or starting point](./../ai-agents/agent-creation-example.md) when building your own agent.
