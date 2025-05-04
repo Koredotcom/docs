@@ -1,0 +1,47 @@
+# Multi-Agent System
+
+**A multi-agent system** (MAS) is a general approach where multiple autonomous software agents interact and coordinate to solve complex problems. The agents collaborate to achieve system-level goals that would be challenging for any single agent to accomplish alone.
+
+**An agentic app** (or agentic AI) provides a robust framework for developing sophisticated multi-agent systems. The app integrates and orchestrates multiple specialized AI agents to deliver intelligent, adaptive solutions to complex problems. The agentic framework enables complexity management, promotes flexibility, allows for scalability, and encourages the reuse of components when creating advanced AI applications.
+
+## Key Concepts
+
+* **AI Agents**: Autonomous, task-focused software entities that perform specific functions. They are the building blocks of agentic apps. [Learn more](./../ai-agents/agent-overview.md).
+
+* **Agentic App**: Higher-level systems that coordinate multiple AI agents to solve complex problems with greater autonomy, adaptability, and reasoning than individual agents. [Learn more](./../ai-agents/agentic-apps/agentic-app-overview.md).
+
+## Advantages Over Single-Agent System
+
+| **Feature**   | **Multi-Agent System**   | **Single-Agent System**         |
+| ------------- | ------------------------ | ------------------------------- |
+| Capability    | Plan, Decide, and Adapt  | Linear, rule-based              |
+| Task Handling | Distributed, specialized | Centralized, general            |
+| Scalability   | Easily scalable          | Limited scalability             |
+| Robustness    | High (fault-tolerant)    | Lower (single point of failure) |
+| Flexibility   | Highly adaptable         | Less adaptable                  |
+| Efficiency    | Parallel, collaborative  | Sequential, isolated            |
+
+## Role of the Orchestrator
+
+The orchestrator is a critical component that manages the overall multi-agent system workflow and coordinates agent interactions:
+
+* Breaks down tasks and delegates to appropriate agents.
+
+* Resolves conflicts between agents.
+
+* Facilitates communication, manages context, and data sharing.
+
+* Monitors performance and optimizes agent allocation.
+
+* Enables system-wide adaptability.
+
+* Detects and handles errors and failures.
+
+<hr>
+
+#### Related Links
+
+* Create your first Agentic App
+* Set up AI Agents
+* Configure Tools for Agents 
+

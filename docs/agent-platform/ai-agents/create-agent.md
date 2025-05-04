@@ -106,7 +106,7 @@ Agent Platform provides powerful search functionality across diverse content sou
 
 You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries. Each Search AI app can be integrated with multiple content sources. 
 
-Refer to [this](about-knowledge.md) to learn more about Knowledge Integration with agents. 
+Refer to [this](../knowledge/about-knowledge.md) to learn more about Knowledge Integration with agents. 
 
 ---
 ## Tools

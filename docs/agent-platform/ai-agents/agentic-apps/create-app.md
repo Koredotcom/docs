@@ -44,6 +44,6 @@ See [Simulate and Test the App](app-testing.md).
 
 ### Step 4: Deploy the App
 
-Finalize configurations and deploy the app for end users. See [App Deployment](app-deployment.md).
+Finalize configurations and deploy the app for end users. See [App Deployment](deployment/app-deployment.md).
 
 ---
