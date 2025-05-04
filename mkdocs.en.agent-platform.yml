@@ -133,7 +133,7 @@ nav:
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
     - About Agentic Apps: ai-agents/agentic-apps/agentic-app-overview.md
-    - About Agents: ai-agents/agent-overview.md
+    - About AI gents: ai-agents/agent-overview.md
     - About Dialog Agents: dialog-agents/about-dialog-agent.md
     - Orchestration:
       - Supervisor Pattern: ai-agents/supervisor-pattern.md
