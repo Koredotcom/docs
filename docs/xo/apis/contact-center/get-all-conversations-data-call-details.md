@@ -92,196 +92,20 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 
 ```
 {
-    "numResults": 8,
+    "numResults": 10,
     "data": [
         {
-            "sessionId": "68107faf981a60bec4ecxxxx",
-            "channel": "Web/Mobile Client",
-            "sessionStartTime": "2025-04-29T07:28:47",
-            "sessionEndTime": "2025-04-29T07:30:03",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92c4xxxx",
-            "userId": "u-84d5c758-bc74-5b3c-be52-9e03a975xxxx",
-            "channelSpecificUserId": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/fb22cfaf-0aad-4edd-8c34-0ab83d4f2239ffb22b8a-c181-404e-a94f-1a0c3ba9xxxx",
-            "orgId": "o-7a16e627-73c6-5679-ae9f-bbf9e611xxxx",
-            "smartStatus": "CLOSED AT BOT",
-            "reason": "",
-            "disconnectingEvent": "",
-            "finalStatus": "BotResolved",
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
-            ]
-        },
-        {
-            "sessionId": "6810802154d679c1ba71xxxx",
-            "channel": "Web/Mobile Client",
-            "sessionStartTime": "2025-04-29T07:30:41",
-            "sessionEndTime": "2025-04-29T07:30:57",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92cxxxxx",
-            "userId": "u-4b3e721c-6957-584b-9ed1-820d187axxxx",
-            "channelSpecificUserId": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/27993142-f2b6-472e-8c32-e3972e3345855a53b18d-219a-4703-a145-bc77eba6xxxx",
-            "orgId": "o-7a16e627-73c6-5679-ae9f-bbf9e611xxxx",
-            "smartStatus": "CLOSED AT BOT",
-            "reason": "",
-            "disconnectingEvent": "",
-            "finalStatus": "Dropped",
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
-            ]
-        },
-        {
-            "sessionId": "6810de4d54d679c1ba74xxxx",
-            "channel": "Web/Mobile Client",
-            "sessionStartTime": "2025-04-29T14:12:29",
-            "sessionEndTime": "2025-04-29T14:12:30",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92c4xxxx",
-            "userId": "u-55d76d60-988c-5a04-b7e9-f766504fxxxx",
-            "channelSpecificUserId": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/44e4fbe3-6c22-4815-8975-b6bd1a9dd337583e764d-f139-473d-846b-97cd2385xxxx",
-            "orgId": "o-7a16e627-73c6-5679-ae9f-bbf9e611xxxx",
-            "smartStatus": "CLOSED AT BOT",
-            "reason": "",
-            "disconnectingEvent": "",
-            "finalStatus": "Dropped",
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
-            ]
-        },
-        {
-            "sessionId": "6810e09ae757dc47061cxxxx",
-            "channel": "Voice",
-            "sessionStartTime": "2025-04-29T14:22:18",
-            "sessionEndTime": "2025-04-29T14:22:18",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92cxxxx",
-            "userId": "u-cd511a7d-6d26-596f-982b-c497c193xxxx",
-            "channelSpecificUserId": null,
-            "orgId": "o-7a16e627-73c6-5679-ae9f-bbf9e611xxxx",
-            "smartStatus": "CLOSED AT BOT",
-            "reason": "",
-            "disconnectingEvent": "",
-            "finalStatus": "BotResolved",
-            "automationBotIDs": []
-        },
-        {
-            "conversationId": "c-ddc1672-b58c-4229-aab0-513ee089xxxx",
-            "sessionId": "6810de4ef0a9b8634751xxxx",
-            "channel": "Web/Mobile Client",
+            "conversationId": "c-43bc8a3-782e-436a-a646-755ad98exxxx",
+            "sessionId": "673b3fd91959d414cb74xxxx",
+            "channel": "telegram",
             "isVoicemail": "NO",
             "Direction": "Inbound",
-            "finalStatus": "USER ABANDONED",
-            "smartStatus": "ABANDONED WITH AGENT",
-            "reason": "Resolution",
-            "disconnectingEvent": "User Hangup",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92c4xxxx",
-            "dispositions": [
-                "System Generated"
-            ],
-            "dispositionRemarks": [
-                "The customer requested to speak with an agent. The bot acknowledged the request and transferred the customer to an available agent. The agent greeted the customer and asked how they could assist. The agent then offered to continue the conversation using a form. The conversation ended due to inactivity, and the customer was invited to start a new conversation if further assistance was needed. The customer also requested a CSAT Rating, but no further details were provided."
-            ],
-            "metaInfo": {
-                "workinghours": {
-                    "workdays": "mon,tue,wed,thu,fri",
-                    "workstart": "8:00 AM",
-                    "workend": "5:00 PM"
-                },
-                "profImage": "https://cdn-icons-png.flaticon.com/512/4017/4017991.png",
-                "profColour": "#40e0d0",
-                "jTitle": "",
-                "dept": "",
-                "activationStatus": "active",
-                "firstName": "David",
-                "lastName": "Williams",
-                "orgId": "o-33749baa-f662-5ae8-b506-4b3bf787xxxx",
-                "_id": "u-605ae6f4-4a7d-5419-ad7c-2397f26dxxxxx",
-                "identities": [
-                    {
-                        "val": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/f6c5d1df-27e2-4492-be52-33e24bc3cfafe0cda29d-6825-47d5-a2ac-0f1d588axxxx",
-                        "type": "mapped"
-                    }
-                ],
-                "agentTransferConfig": {
-                    "automationBotId": "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx",
-                    "dialog_tone": [],
-                    "lastIntentName": "WelcomeDialog",
-                    "skillsIds": [],
-                    "overrideAgents": false
-                },
-                "email": "david.williams@example.com",
-                "phoneNumber": "+911234567890",
-                "category": "ie",
-                "hostDomain": "https://xyz.com",
-                "os": "Mac OS"
-            },
-            "sessionStartTime": "2025-04-29T14:12:30",
-            "sessionEndTime": "2025-04-29T14:19:23",
-            "channelSpecificUserId": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/f6c5d1df-27e2-4492-be52-33e24bc3cfafe0cda29d-6825-47d5-a2ac-0f1d588axxxx",
-            "userId": "u-605ae6f4-4a7d-5419-ad7c-2397f26dxxxx",
-            "destinations": [
-                {
-                    "destinationType": "QueueEntry",
-                    "queueId": "qu-79e051d-9351-4cdb-ac2b-8599a49xxxx",
-                    "queueName": "Default Queue",
-                    "EnterTime": "2025-04-29T14:12:38",
-                    "nonRespondingAgents": [
-                        {
-                            "agentId": "u-da4b3f26-fbd0-5524-b599-114ba962xxxx",
-                            "agentNotes": [],
-                            "destinationType": "AgentSegment",
-                            "email": "stagingsmartassist_savg_agent2@mailinator.com",
-                            "name": "Steve Marsh",
-                            "assignedAt": "2025-04-29T14:12:39",
-                            "nonResponseEvent": "Ignored"
-                        },
-                        {
-                            "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
-                            "agentNotes": [
-                                "The customer requested to speak with an agent. The virtual assistant acknowledged the request and transferred the customer to an available agent. The agent greeted the customer and asked how they could assist. The agent then thanked the customer for contacting them and wished them a great day. The conversation ended due to inactivity, with the customer expressing a desire to provide a CSAT Rating.",
-                                "The customer requested to speak with an agent. The bot acknowledged the request and transferred the customer to an available agent. The agent greeted the customer and asked how they could assist. The agent then offered to continue the conversation using a form. The conversation ended due to inactivity, and the customer was invited to start a new conversation if further assistance was needed. The customer also requested a CSAT Rating, but no further details were provided."
-                            ],
-                            "destinationType": "AgentSegment",
-                            "email": "stagingsmartassist_savg@mailinator.com",
-                            "name": "Nick Thomas",
-                            "assignedAt": "2025-04-29T14:15:03",
-                            "nonResponseEvent": "Supervisor Reassigned"
-                        }
-                    ]
-                },
-                {
-                    "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
-                    "agentNotes": [
-                        "The customer requested to speak with an agent. The virtual assistant acknowledged the request and transferred the customer to an available agent. The agent greeted the customer and asked how they could assist. The agent then thanked the customer for contacting them and wished them a great day. The conversation ended due to inactivity, with the customer expressing a desire to provide a CSAT Rating.",
-                        "The customer requested to speak with an agent. The bot acknowledged the request and transferred the customer to an available agent. The agent greeted the customer and asked how they could assist. The agent then offered to continue the conversation using a form. The conversation ended due to inactivity, and the customer was invited to start a new conversation if further assistance was needed. The customer also requested a CSAT Rating, but no further details were provided."
-                    ],
-                    "destinationType": "AgentSegment",
-                    "status": "Answered",
-                    "firstResponseTime": "2025-04-29T14:16:23",
-                    "firstResponseDuration": 31,
-                    "interactionEndTime": "2025-04-29T14:19:23",
-                    "interactionDuration": 211,
-                    "afterCallWorkDuration": 92,
-                    "afterCallWorkEndTime": "2025-04-29T14:20:54",
-                    "ConsultingAgents": [],
-                    "JoinedUsers": [],
-                    "email": "stagingsmartassist_savg@mailinator.com",
-                    "name": "Nick Thomas",
-                    "acceptedTime": "2025-04-29T14:15:52",
-                    "assignedAt": "2025-04-29T14:15:44"
-                }
-            ],
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
-            ]
-        },
-        {
-            "conversationId": "c-74961cd-7a0c-4d6b-ae89-bd64e599xxxx",
-            "sessionId": "6810de4bd1414717b4e1xxxx",
-            "channel": "Web/Mobile Client",
-            "isVoicemail": "NO",
-            "Direction": "Inbound",
+            "skills": [],
             "finalStatus": "CLOSED",
             "smartStatus": "TERMINATED",
-            "reason": "DROP-OFF",
+            "Reason": "NO AGENTS AVAILABLE",
             "disconnectingEvent": "System Hangup",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92c4xxxx",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
             "dispositions": [
                 "DROP-OFF"
             ],
@@ -294,280 +118,928 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "workstart": "8:00 AM",
                     "workend": "5:00 PM"
                 },
-                "profImage": "https://cdn-icons-png.flaticon.com/512/4017/4017991.png",
-                "profColour": "#ff0000",
-                "jTitle": "",
-                "dept": "",
-                "activationStatus": "active",
-                "firstName": "Bill",
-                "lastName": "Wilson",
-                "orgId": "o-33749baa-f662-5ae8-b506-4b3bf787xxxx",
-                "_id": "u-4f6c6ca7-79ea-5dbb-9ce3-fa2f57f7xxxx",
-                "identities": [
-                    {
-                        "val": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/f18861ab-f4b3-43d5-b555-c33fe12bcc12561e155f-62e2-40e2-91e4-278becf4xxxx",
-                        "type": "mapped"
-                    }
-                ],
-                "agentTransferConfig": {
-                    "automationBotId": "st-158b642c-80ee-56fe-b996-a0cb4af62bc0",
-                    "dialog_tone": [],
-                    "lastIntentName": "WelcomeDialog",
-                    "skillsIds": [],
-                    "overrideAgents": false
-                },
-                "email": "bill.wilson@example.com",
-                "phoneNumber": "+919989732143",
-                "category": "i18n",
-                "hostDomain": "https://staging-bots.korebots.com",
-                "os": "Mac OS"
-            },
-            "sessionStartTime": "2025-04-29T14:12:27",
-            "sessionEndTime": "2025-04-29T14:42:58",
-            "channelSpecificUserId": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/f18861ab-f4b3-43d5-b555-c33fe12bcc12561e155f-62e2-40e2-91e4-278becf4xxxx",
-            "userId": "u-4f6c6ca7-79ea-5dbb-9ce3-fa2f57f7xxxx",
-            "destinations": [
-                {
-                    "destinationType": "QueueEntry",
-                    "queueId": "qu-79e051d-9351-4cdb-ac2b-8599a493xxxx",
-                    "queueName": "Default Queue",
-                    "EnterTime": "2025-04-29T14:12:36",
-                    "nonRespondingAgents": [
-                        {
-                            "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
-                            "agentNotes": [],
-                            "destinationType": "AgentSegment",
-                            "email": "stagingsmartassist_savg@mailinator.com",
-                            "name": "Nick Thomas",
-                            "assignedAt": "2025-04-29T14:12:37",
-                            "nonResponseEvent": "Ignored"
-                        },
-                        {
-                            "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
-                            "agentNotes": [],
-                            "destinationType": "AgentSegment",
-                            "email": "stagingsmartassist_savg@mailinator.com",
-                            "name": "Nick Thomas",
-                            "assignedAt": "2025-04-29T14:15:03",
-                            "nonResponseEvent": "Ignored"
-                        },
-                        {
-                            "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
-                            "agentNotes": [],
-                            "destinationType": "AgentSegment",
-                            "email": "stagingsmartassist_savg@mailinator.com",
-                            "name": "Nick Thomas",
-                            "assignedAt": "2025-04-29T14:18:13",
-                            "nonResponseEvent": "Ignored"
-                        },
-                        {
-                            "agentId": "u-da4b3f26-fbd0-5524-b599-114ba962xxxx",
-                            "agentNotes": [],
-                            "destinationType": "AgentSegment",
-                            "email": "stagingsmartassist_savg_agent2@mailinator.com",
-                            "name": "Steve Marsh",
-                            "assignedAt": "2025-04-29T14:23:13",
-                            "nonResponseEvent": "Ignored"
-                        }
-                    ]
-                }
-            ],
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
-            ]
-        },
-        {
-            "conversationId": "c-ca68e8c-223e-490a-959d-e7550ab5xxxx",
-            "sessionId": "6810dacbf020770ab6b6xxxx",
-            "channel": "Voice",
-            "isVoicemail": "NO",
-            "Direction": "Inbound",
-            "finalStatus": "CLOSED",
-            "smartStatus": "CLOSED",
-            "reason": "Resolved",
-            "disconnectingEvent": "Agent Closed",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92c4xxxx",
-            "dispositions": [
-                "Resolved"
-            ],
-            "dispositionRemarks": [
-                "The customer initiated a conversation with the virtual assistant MasterBot. The assistant offered various options, including weather forecasts, balance checks, company stock values, and flight status updates. The customer requested to speak with an agent, and the virtual assistant acknowledged the request, asking the customer to hold while connecting to an available agent. The agent then joined the conversation and greeted the customer."
-            ],
-            "metaInfo": {
-                "caller": "+19876543210",
-                "callee": "+1234567890",
-                "callerHost": "50.19.121.248",
-                "userId": "u-cd511a7d-6d26-596f-982b-c497c193xxxx",
-                "dialedNumber": "+1234567890",
-                "agentTransferConfig": {
-                    "automationBotId": "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx",
-                    "dialog_tone": [],
-                    "lastIntentName": "WelcomeDialog",
-                    "accountId": "6656d31f165174bd532fxxxx",
-                    "skillsIds": [],
-                    "overrideAgents": false
-                },
-                "workinghours": {
-                    "workdays": "mon,tue,wed,thu,fri",
-                    "workstart": "8:00 AM",
-                    "workend": "5:00 PM"
-                },
-                "profImage": "https://cdn-icons-png.flaticon.com/512/4017/4017991.png",
-                "profColour": "#ff0000",
-                "jTitle": "",
-                "dept": "",
-                "activationStatus": "active",
-                "firstName": "Jackson",
-                "lastName": "Smith",
-                "orgId": "o-33749baa-f662-5ae8-b506-4b3bf787xxxx",
-                "_id": "u-cd511a7d-6d26-596f-982b-c497c193xxxx",
-                "identities": [
-                    {
-                        "val": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/6ca1d209-5e4a-4d4c-83fe-1a2b4ee8xxxx",
-                        "type": "mapped"
-                    },
-                    {
-                        "val": "6656d31f165174bd532fxxxx/korevg/6ca1d209-5e4a-4d4c-83fe-1a2b4ee8xxxx",
-                        "type": "mapped"
-                    }
-                ],
-                "email": "jackson.smith@example.com",
-                "phoneNumber": "+919876543210",
-                "category": "$location",
-                "transcribeConfig": {
-                    "transcribe": true
-                }
-            },
-            "sessionStartTime": "2025-04-29T13:57:31",
-            "sessionEndTime": "2025-04-29T13:59:00",
-            "channelSpecificUserId": "6656d31f165174bd532fxxxx/korevg/6ca1d209-5e4a-4d4c-83fe-1a2b4ee8xxxx",
-            "userId": "u-cd511a7d-6d26-596f-982b-c497c193xxxx",
-            "destinations": [
-                {
-                    "destinationType": "QueueEntry",
-                    "queueId": "qu-79e051d-9351-4cdb-ac2b-8599a493xxxx",
-                    "queueName": "Default Queue",
-                    "EnterTime": "2025-04-29T13:58:04",
-                    "respondingAgent": {
-                        "agentId": "u-da4b3f26-fbd0-5524-b599-114ba962xxxx",
-                        "agentNotes": [
-                            "The customer initiated a conversation with the virtual assistant MasterBot. The assistant offered various options, including weather forecasts, balance checks, company stock values, and flight status updates. The customer requested to speak with an agent, and the virtual assistant acknowledged the request, asking the customer to hold while connecting to an available agent. The agent then joined the conversation and greeted the customer."
-                        ],
-                        "destinationType": "AgentSegment",
-                        "status": "Answered",
-                        "firstResponseTime": "2025-04-29T13:58:14",
-                        "firstResponseDuration": 0,
-                        "interactionEndTime": "2025-04-29T13:59:42",
-                        "interactionDuration": 88,
-                        "afterCallWorkDuration": 3,
-                        "afterCallWorkEndTime": "2025-04-29T13:59:42",
-                        "ConsultingAgents": [],
-                        "JoinedUsers": [
-                            {
-                                "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
-                                "email": "stagingsmartassist_savg@mailinator.com",
-                                "name": "Nick Thomas",
-                                "joinedAt": "2025-04-29T13:58:45",
-                                "end": "2025-04-29T13:59:09"
-                            }
-                        ],
-                        "email": "stagingsmartassist_savg_agent2@mailinator.com",
-                        "name": "Steve Marsh",
-                        "acceptedTime": "2025-04-29T13:58:14",
-                        "assignedAt": "2025-04-29T13:58:05"
-                    }
-                }
-            ],
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
-            ]
-        },
-        {
-            "conversationId": "c-0b689a4-9395-4bbe-9761-d798b636xxxx",
-            "sessionId": "68108126d1414717b4dexxxx",
-            "channel": "Web/Mobile Client",
-            "isVoicemail": "NO",
-            "Direction": "Inbound",
-            "finalStatus": "CLOSED",
-            "smartStatus": "CLOSED",
-            "reason": "Resolution",
-            "disconnectingEvent": "Agent Closed",
-            "botId": "st-d76e4023-ba1e-52af-a144-248e92c4xxxx",
-            "dispositions": [
-                "System Generated"
-            ],
-            "dispositionRemarks": [
-                "The customer initiated a conversation with the virtual assistant to show their checking account balance. The assistant provided the balance of $4000 and then transferred the conversation to a live agent upon the customer's request. The agent joined the conversation and greeted the customer, inquiring how they could assist further. The conversation ended with the agent closing it and inviting the customer to reach out again if needed, along with a request for a CSAT Rating."
-            ],
-            "metaInfo": {
-                "workinghours": {
-                    "workdays": "mon,tue,wed,thu,fri",
-                    "workstart": "8:00 AM",
-                    "workend": "5:00 PM"
-                },
-                "profImage": "https://cdn-icons-png.flaticon.com/512/4017/4017991.png",
+                "profImage": "no-avatar",
                 "profColour": "#add8e6",
                 "jTitle": "",
                 "dept": "",
                 "activationStatus": "active",
-                "firstName": "Bill",
-                "lastName": "Wilson",
-                "orgId": "o-33749baa-f662-5ae8-b506-4b3bf787xxxx",
-                "_id": "u-f4721018-9c79-5a35-8780-980affd4xxxx",
+                "firstName": "",
+                "lastName": "",
+                "orgId": "o-2b41857b-a1cb-5862-8faf-e3d99c3axxxx",
+                "_id": "u-6a6e1f08-491f-5248-b2e9-c721c618xxxx",
+                "customData": {
+                    "isAgentAssistOnly": true,
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "experience": "CHAT"
+                },
                 "identities": [
                     {
-                        "val": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/ba76cc92-ac77-46ab-8ea1-72035469b5799d33afb1-62b6-44e8-ab15-02327f6dxxxx",
+                        "val": "66bc4a29bdaafdb08461xxxx/telegram/518737xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-add30cc-39ac-438e-99c3-05239bc5xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-c5b72da-3e86-443a-8d29-e45dc07bxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-53eb348-c3b5-49d9-b274-015b7eacxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-ded65d7-97e5-4017-a66a-aaab914cxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-6c19755-3193-483e-aaed-72ed6c36xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-6d020d6-633e-4c19-ad26-8840dc76xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-6614204-6216-4aeb-b8e5-858aec75xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-c26610c-053c-4366-8b38-e51c4cd5xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-cd28511-78e1-462a-ad18-e6e34a47xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-593ac3d-c76e-4dc8-a505-6244684axxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-4db5ea3-e4b9-4ec0-a671-de3c938exxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-51990b2-183b-4e96-b2c8-4b81a21exxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-576295e-e2b4-4628-9c83-647deea5xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-55cbe1e-a8d0-46ba-b680-5a58480exxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-9eb2992-d115-4d3a-9b91-3c70aca9xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-557c0bc-3962-4c76-b889-70210ee6xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-31dcaad-27e6-4ab6-b69a-8bcb0cd4xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb0846xxxx/agentassist/c-e53657e-2847-4421-b513-571a085axxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-1a0db71-1213-411e-bd95-747b7b8dxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-9698929-aa22-4180-9211-15119284xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-d955841-cd1d-465b-b672-b2dc6232xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-01622a4-1523-4ad4-a4a8-de854c6cxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb0846xxxxx/agentassist/c-1c51025-9e3c-4129-88e9-061b8e49xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-b0ab874-80a9-4e53-8756-85303cdcxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-a6cbdb1-3325-4321-974c-0edb7158xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-e9d9add-c5ab-4b3e-8249-83be26d9xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-42c5b94-be70-4273-a767-43e26a41xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-c6038b0-95bc-4db7-8300-8311a26dxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-925152c-e69c-44c8-8ca8-d6baa7a2xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-aa1a4b1-a15d-44b3-8e67-42977d27xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-22b93ce-9d05-447a-9414-59e96435xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-9a675b0-46ba-4614-bedd-2687e976xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-524a935-9a86-4685-a5c9-c8099730xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-605a23a-9a39-4cba-ab98-9edcc428xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-b58e876-b9b5-4b7a-a72d-09b9d5abxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-2a19554-652b-477b-a66b-5428c3caxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-15e52a8-86d9-46c9-a0ee-397cb5c6xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-31d04b5-5226-4c16-928d-c15329eaxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-21e29a0-ca11-45d4-8766-2ba650bexxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-d688385-6bc7-4208-95e4-88d68577xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-bdc6330-8322-421c-9081-0e4b9b24xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-2b02018-1231-4e90-8596-8074cd72xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-548744b-6e9d-4277-80d6-ad57e0c5xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-875e62b-9a4c-461d-8623-6abb210exxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-aa7601a-c70a-4204-a803-c3ed25bdxxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-c402c65-e8ba-414e-b939-6a1b3d27xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-a2602dc-52ca-4486-8e3d-2e1b1660xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461xxxx/agentassist/c-b6e0416-8c0b-4c19-bcd2-396bc320xxxx",
                         "type": "mapped"
                     }
                 ],
                 "agentTransferConfig": {
-                    "automationBotId": "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx",
-                    "dialog_tone": [],
-                    "lastIntentName": "WelcomeDialog",
                     "skillsIds": [],
-                    "overrideAgents": false
+                    "overrideAgents": false,
+                    "overrideValues": [],
+                    "assistEvents": {
+                        "startEvent": {
+                            "isEnabled": false
+                        }
+                    },
+                    "lastIntentName": "ConnectToAgent",
+                    "automationBotId": "st-bdc0f473-406d-59bd-bd15-0d1b80afxxxx"
                 },
-                "email": "bill.wilson@example.com",
-                "phoneNumber": "+919876543210",
-                "category": "i18n",
-                "hostDomain": "https://staging-bots.korebots.com",
-                "os": "Mac OS"
+                "hostDomain": "uat-az.korebots.com"
             },
-            "sessionStartTime": "2025-04-29T07:35:02",
-            "sessionEndTime": "2025-04-29T07:41:22",
-            "channelSpecificUserId": "cs-6e448742-1784-56ef-ad0a-7891d9ecxxxx/ba76cc92-ac77-46ab-8ea1-72035469b5799d33afb1-62b6-44e8-ab15-02327f6dxxxx",
-            "userId": "u-f4721018-9c79-5a35-8780-980affd4xxxx",
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "",
+                "CustomerLastName": "",
+                "CustomerEmail": ""
+            },
+            "sessionStartTime": "2024-11-18T18:53:37",
+            "sessionEndTime": "2024-11-18T18:56:39",
+            "channelSpecificUserId": "66bc4a29bdaafdb08461xxxx/agentassist/c-b6e0416-8c0b-4c19-bcd2-396bc320xxxx",
+            "userId": "u-6a6e1f08-491f-5248-b2e9-c721c618xxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
-                    "queueId": "qu-4ad35b9-d966-459a-ac25-821341dbxxxx",
-                    "queueName": "ISTQueue",
-                    "EnterTime": "2025-04-29T07:36:24",
+                    "queueId": "qu-04e6978-6011-49d6-929d-cd715080xxxx",
+                    "queueName": "Default Queue",
+                    "EnterTime": "2024-11-18T18:53:38"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-d521a77-eec5-4b5c-ba58-ab868457xxxx",
+            "sessionId": "673b2b6abfc7023ab2f0xxxx",
+            "channel": "Jones ",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Closed",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-390b0c73-6b06-5656-a3b1-58746515xxxx",
+                "firstName": "john.doe@abc.com",
+                "lastName": "",
+                "emailId": "john.doe@abc.com",
+                "agentTransferConfig": {
+                    "overrideAgents": false
+                }
+            },
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "john.doe@abc.com",
+                "CustomerLastName": "",
+                "CustomerEmail": "john.doe@abc.com"
+            },
+            "sessionStartTime": "2024-11-18T17:26:26",
+            "sessionEndTime": "2024-11-18T17:26:54",
+            "userId": "u-390b0c73-6b06-5656-a3b1-58746515xxxx",
+            "destinations": [
+                {
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "agentNotes": [],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "interactionEndTime": "2024-11-18T17:27:28",
+                    "interactionDuration": 33,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "uataug14th@mailinator.com",
+                    "name": "UATAug14th 01",
+                    "acceptedTime": "2024-11-18T17:26:54",
+                    "assignedAt": "2024-11-18T17:26:54"
+                },
+                {
+                    "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
+                    "agentNotes": [
+                        "The customer requested to speak with an agent. The agent provided a response 
+with incomplete or gibberish text."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "firstResponseTime": "2024-11-18T17:27:44",
+                    "firstResponseDuration": 11,
+                    "interactionEndTime": "2024-11-18T17:36:43",
+                    "interactionDuration": 550,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "newrole01@mailinator.com",
+                    "name": "New Role 01",
+                    "acceptedTime": "2024-11-18T17:27:33",
+                    "assignedAt": "2024-11-18T17:27:29"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-01c1e11-85a2-463d-aa74-37ba3cb3xxxx",
+            "sessionId": "673b2b05bfc7023ab2f0xxxx",
+            "channel": "Jones ",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Closed",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-2d7bc531-3c0e-53bb-85dd-399ba65axxxx",
+                "firstName": "jane.doe@abc.com",
+                "lastName": "",
+                "emailId": "jane.doe@abc.com",
+                "agentTransferConfig": {
+                    "overrideAgents": false
+                }
+            },
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "jane.doe@abc.com",
+                "CustomerLastName": "",
+                "CustomerEmail": "jane.doe@abc.com"
+            },
+            "sessionStartTime": "2024-11-18T17:24:45",
+            "sessionEndTime": "2024-11-18T17:25:16",
+            "userId": "u-2d7bc531-3c0e-53bb-85dd-399ba65axxxx",
+            "destinations": [
+                {
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "agentNotes": [],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "interactionEndTime": "2024-11-18T17:25:28",
+                    "interactionDuration": 12,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "uataug14th@mailinator.com",
+                    "name": "UATAug14th 01",
+                    "acceptedTime": "2024-11-18T17:25:16",
+                    "assignedAt": "2024-11-18T17:25:16"
+                },
+                {
+                    "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
+                    "agentNotes": [
+                        "The customer requested to speak with an agent. The agent acknowledged the request 
+and asked the customer to hold while connecting them with the appropriate department."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "interactionEndTime": "2024-11-18T17:25:49",
+                    "interactionDuration": 16,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "newrole01@mailinator.com",
+                    "name": "New Role 01",
+                    "acceptedTime": "2024-11-18T17:25:34",
+                    "assignedAt": "2024-11-18T17:25:29"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-185d9c5-9ac3-4313-8073-8697b2a6xxxx",
+            "sessionId": "673b29739514b2f61d0fxxxx",
+            "channel": "Voice",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Hangup",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "caller": "+1234567890",
+                "callee": "+1987654321",
+                "callerHost": "50.19.121.248",
+                "userId": "u-4c44560b-2906-58f0-94bb-e88b2ffbxxxx",
+                "dialedNumber": "+1987654321",
+                "agentTransferConfig": {
+                    "skillsIds": [],
+                    "overrideAgents": false,
+                    "overrideValues": [],
+                    "assistEvents": {
+                        "startEvent": {
+                            "isEnabled": false
+                        }
+                    },
+                    "lastIntentName": "ConnectToAgent",
+                    "automationBotId": "st-bdc0f473-406d-59bd-bd15-0d1b80afxxxx",
+                    "accountId": "66bc4a29bdaafdb08461xxxx"
+                },
+                "workinghours": {
+                    "workdays": "mon,tue,wed,thu,fri",
+                    "workstart": "8:00 AM",
+                    "workend": "5:00 PM"
+                },
+                "profImage": "no-avatar",
+                "profColour": "#00008b",
+                "jTitle": "",
+                "dept": "",
+                "activationStatus": "active",
+                "firstName": "",
+                "lastName": "",
+                "orgId": "o-2b41857b-a1cb-5862-8faf-e3d99c3axxxx",
+                "_id": "u-4c44560b-2906-58f0-94bb-e88b2ffbxxxx",
+                "identities": [
+                    {
+                        "val": "cs-96d71a16-075b-5212-9988-9c70ebeee6e9/65cb65e5-70ca-4cfb-8a67-dc9ed519xxxx",
+                        "type": "mapped"
+                    },
+                    {
+                        "val": "66bc4a29bdaafdb08461b9f1/korevg/65cb65e5-70ca-4cfb-8a67-dc9ed519xxxx",
+                        "type": "mapped"
+                    }
+                ]
+            },
+            "customerinfo": {
+                "CustomerPhone": "+1234567890",
+                "CenterPhone": "+1987654321",
+                "CustomerFirstName": "",
+                "CustomerLastName": "",
+                "CustomerEmail": ""
+            },
+            "sessionStartTime": "2024-11-18T17:18:03",
+            "sessionEndTime": "2024-11-18T17:20:01",
+            "channelSpecificUserId": "66bc4a29bdaafdb08461b9f1/korevg/65cb65e5-70ca-4cfb-8a67-dc9ed519xxxx",
+            "userId": "u-4c44560b-2906-58f0-94bb-e88b2ffbxxxx",
+            "destinations": [
+                {
+                    "destinationType": "QueueEntry",
+                    "queueId": "qu-04e6978-6011-49d6-929d-cd715080xxxx",
+                    "queueName": "Default Queue",
+                    "EnterTime": "2024-11-18T17:18:04",
                     "respondingAgent": {
-                        "agentId": "u-f4937b89-aa70-58ce-a414-0a23b377xxxx",
+                        "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
                         "agentNotes": [
-                            "The customer initiated a conversation with the virtual assistant to show their checking account balance. The assistant provided the balance of $4000 and then transferred the conversation to a live agent upon the customer's request. The agent joined the conversation and apologized for the wait. The customer did not provide further assistance, and the agent closed the conversation. The conversation ended with the customer requesting a CSAT Rating but no further action was taken.",
-                            "The customer initiated a conversation with the virtual assistant to show their checking account balance. The assistant provided the balance of $4000 and then transferred the conversation to a live agent upon the customer's request. The agent joined the conversation and greeted the customer, inquiring how they could assist further. The conversation ended with the agent closing it and inviting the customer to reach out again if needed, along with a request for a CSAT Rating."
+                            "The customer requested to be transferred to an agent. The bot acknowledged the request 
+and informed the customer that it would be transferred to an available agent. The agent greeted the customer, 
+but no further conversation was mentioned by the customer."
                         ],
                         "destinationType": "AgentSegment",
                         "status": "Answered",
-                        "firstResponseTime": "2025-04-29T07:37:08",
-                        "firstResponseDuration": 24,
-                        "interactionEndTime": "2025-04-29T07:41:21",
-                        "interactionDuration": 276,
-                        "afterCallWorkDuration": 32,
-                        "afterCallWorkEndTime": "2025-04-29T07:41:53",
-                        "ConsultingAgents": [],
+                        "firstResponseTime": "2024-11-18T17:18:20",
+                        "firstResponseDuration": 0,
+                        "interactionEndTime": "2024-11-18T17:20:04",
+                        "interactionDuration": 104,
+                        "holdDuration": 57,
+                        "ConsultingAgents": [
+                            {
+                                "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                                "email": "uataug14th@mailinator.com",
+                                "name": "UATAug14th 01",
+                                "acceptedTime": "2024-11-18T17:18:55",
+                                "assignedAt": "2024-11-18T17:18:41",
+                                "consultingEndTime": "2024-11-18T17:19:57"
+                            }
+                        ],
                         "JoinedUsers": [],
-                        "email": "stagingsmartassist_savg@mailinator.com",
-                        "name": "Nick Thomas",
-                        "acceptedTime": "2025-04-29T07:36:44",
-                        "assignedAt": "2025-04-29T07:36:35"
+                        "email": "newrole01@mailinator.com",
+                        "name": "New Role 01",
+                        "acceptedTime": "2024-11-18T17:18:20",
+                        "assignedAt": "2024-11-18T17:18:05"
                     }
                 }
             ],
-            "automationBotIDs": [
-                "st-158b642c-80ee-56fe-b996-a0cb4af6xxxx"
+            "userleveltags": [],
+            "sessionleveltags": [
+                {
+                    "name": "audioCodesCallDisconnect",
+                    "value": "1"
+                },
+                {
+                    "name": "callerNumber",
+                    "value": "+1234567890"
+                },
+                {
+                    "name": "voiceAgentTransferStart",
+                    "value": "1"
+                },
+                {
+                    "name": "welcomeMessageTwilio",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "conversationId": "c-66a640e-4b8c-4262-a5c8-22a93659xxxx",
+            "sessionId": "673b2833bfc7023ab2f0xxxx",
+            "channel": "Voice",
+            "isVoicemail": "NO",
+            "Direction": "Outbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Hangup",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-6e2706a7-266a-5339-aa1f-8599b8eaxxxx",
+                "firstName": "",
+                "lastName": "",
+                "caller": "+234567890",
+                "callee": "+919876543210",
+                "countryCode": "91",
+                "dialedNumber": "+1234567890",
+                "endUserNumber": "+919876543210",
+                "agentTransferConfig": {
+                    "overrideAgents": false
+                }
+            },
+            "customerinfo": {
+                "CustomerPhone": "+1234567890",
+                "CenterPhone": "+919876543210",
+                "CustomerFirstName": "",
+                "CustomerLastName": "",
+                "CustomerEmail": ""
+            },
+            "sessionStartTime": "2024-11-18T17:12:43",
+            "sessionEndTime": "2024-11-18T17:13:29",
+            "userId": "u-6e2706a7-266a-5339-aa1f-8599b8eaxxxx",
+            "destinations": [
+                {
+                    "destinationType": "QueueEntry",
+                    "queueId": "qu-04e6978-6011-49d6-929d-cd715080xxxx",
+                    "respondingAgent": {
+                        "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                        "agentNotes": [],
+                        "destinationType": "AgentSegment",
+                        "status": "Answered",
+                        "interactionEndTime": "2024-11-18T17:13:06",
+                        "interactionDuration": 23,
+                        "ConsultingAgents": [],
+                        "JoinedUsers": [],
+                        "email": "uataug14th@mailinator.com",
+                        "name": "UATAug14th 01",
+                        "acceptedTime": "2024-11-18T17:12:43",
+                        "assignedAt": "2024-11-18T17:12:43"
+                    }
+                },
+                {
+                    "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
+                    "agentNotes": [
+                        "The customer requested to speak with an agent. The agent responded with just."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "firstResponseTime": "2024-11-18T17:13:12",
+                    "firstResponseDuration": 0,
+                    "interactionEndTime": "2024-11-18T17:13:29",
+                    "interactionDuration": 18,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "newrole01@mailinator.com",
+                    "name": "New Role 01",
+                    "acceptedTime": "2024-11-18T17:13:12",
+                    "assignedAt": "2024-11-18T17:13:08"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": [
+                {
+                    "name": "audioCodesCallDisconnect",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "conversationId": "c-c613d89-2c52-400d-9e0a-d85804e1xxxx",
+            "sessionId": "673b2813bfc7023ab2f0xxxx",
+            "channel": "Jones ",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "TRANSIENT_OPEN",
+            "smartStatus": "",
+            "Reason": "",
+            "disconnectingEvent": "",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-8292e5ee-9187-5853-8b79-17b263f0xxxx",
+                "firstName": "",
+                "lastName": ""
+            },
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "",
+                "CustomerLastName": "",
+                "CustomerEmail": ""
+            },
+            "sessionStartTime": "2024-11-18T17:12:11",
+            "sessionEndTime": "2024-11-18T17:12:11",
+            "userId": "u-8292e5ee-9187-5853-8b79-17b263f0xxxx",
+            "destinations": [
+                {
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "agentNotes": [],
+                    "destinationType": "AgentSegment",
+                    "email": "uataug14th@mailinator.com",
+                    "name": "UATAug14th 01",
+                    "assignedAt": "2024-11-18T17:12:11"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-e43cac4-a406-4583-8a6b-3d2e11eaxxxx",
+            "sessionId": "673b27debfc7023ab2f0xxxx",
+            "channel": "Jones ",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Closed",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-2d7bc531-3c0e-53bb-85dd-399ba65axxxx",
+                "firstName": "john.doe@abc.com",
+                "lastName": "",
+                "emailId": "john.doe@abc.com"
+            },
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "jane.doe@abc.com",
+                "CustomerLastName": "",
+                "CustomerEmail": "jane.doe@abc.com"
+            },
+            "sessionStartTime": "2024-11-18T17:11:18",
+            "sessionEndTime": "2024-11-18T17:11:47",
+            "userId": "u-2d7bc531-3c0e-53bb-85dd-399ba65axxxx",
+            "destinations": [
+                {
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "agentNotes": [
+                        "The customer requested to speak with an agent. The agent acknowledged the request 
+and asked the customer to hold while connecting them with the appropriate department."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "interactionEndTime": "2024-11-18T17:12:00",
+                    "interactionDuration": 13,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "uataug14th@mailinator.com",
+                    "name": "UATAug14th 01",
+                    "acceptedTime": "2024-11-18T17:11:47",
+                    "assignedAt": "2024-11-18T17:11:47"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-e190a93-aa89-4933-95b9-d6dedc5axxxx",
+            "sessionId": "673b264cbfc7023ab2f0xxxx",
+            "channel": "Jones ",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Closed",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-390b0c73-6b06-5656-a3b1-58746515xxxx",
+                "firstName": "john.doe@abc.com",
+                "lastName": "",
+                "emailId": "john.doe@abc.com",
+                "agentTransferConfig": {
+                    "overrideAgents": false
+                }
+            },
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "jane.doe@abc.com",
+                "CustomerLastName": "",
+                "CustomerEmail": "jane.doe@abc.com"
+            },
+            "sessionStartTime": "2024-11-18T17:04:36",
+            "sessionEndTime": "2024-11-18T17:06:10",
+            "userId": "u-390b0c73-6b06-5656-a3b1-58746515xxxx",
+            "destinations": [
+                {
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "agentNotes": [],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "interactionEndTime": "2024-11-18T17:05:15",
+                    "interactionDuration": 7,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "uataug14th@mailinator.com",
+                    "name": "UATAug14th 01",
+                    "acceptedTime": "2024-11-18T17:05:09",
+                    "assignedAt": "2024-11-18T17:05:09"
+                },
+                {
+                    "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
+                    "agentNotes": [
+                        "The customer initiated a conversation with the agent, who responded with standard greetings. 
+The customer did not mention any specific issues or requests during the conversation. 
+The conversation ended without the customer or agent raising any problems or requesting any action."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "firstResponseTime": "2024-11-18T17:05:28",
+                    "firstResponseDuration": 8,
+                    "interactionEndTime": "2024-11-18T17:06:58",
+                    "interactionDuration": 98,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "newrole01@mailinator.com",
+                    "name": "New Role 01",
+                    "acceptedTime": "2024-11-18T17:05:20",
+                    "assignedAt": "2024-11-18T17:05:16"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-8741e16-0d99-4da2-9222-d863c400xxxx",
+            "sessionId": "673b2420bfc7023ab2f0xxxx",
+            "channel": "Jones ",
+            "isVoicemail": "NO",
+            "Direction": "Inbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Closed",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-390b0c73-6b06-5656-a3b1-58746515xxxx",
+                "firstName": "john.doe@abc.com",
+                "lastName": "",
+                "emailId": "john.doe@abc.com",
+                "agentTransferConfig": {
+                    "overrideAgents": false
+                }
+            },
+            "customerinfo": {
+                "CustomerPhone": "",
+                "CenterPhone": "",
+                "CustomerFirstName": "jane.doe@abc.com",
+                "CustomerLastName": "",
+                "CustomerEmail": "jane.doe@abc.com"
+            },
+            "sessionStartTime": "2024-11-18T16:55:20",
+            "sessionEndTime": "2024-11-18T16:57:51",
+            "userId": "u-390b0c73-6b06-5656-a3b1-58746515xxxx",
+            "destinations": [
+                {
+                    "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                    "agentNotes": [],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "interactionEndTime": "2024-11-18T16:56:33",
+                    "interactionDuration": 39,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "uataug14th@mailinator.com",
+                    "name": "UATAug14th 01",
+                    "acceptedTime": "2024-11-18T16:55:54",
+                    "assignedAt": "2024-11-18T16:55:54"
+                },
+                {
+                    "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
+                    "agentNotes": [
+                        "The customer initiated a conversation with the agent, but the conversation was brief 
+and did not contain any specific issues or requests. The customer did not provide any specific details about their 
+problem or request. The agent's responses were brief and included generic greetings and phrases. 
+There was no clear resolution or action taken in the conversation."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "firstResponseTime": "2024-11-18T16:57:08",
+                    "firstResponseDuration": 28,
+                    "interactionEndTime": "2024-11-18T17:00:54",
+                    "interactionDuration": 254,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "newrole01@mailinator.com",
+                    "name": "New Role 01",
+                    "acceptedTime": "2024-11-18T16:56:40",
+                    "assignedAt": "2024-11-18T16:56:34"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": []
+        },
+        {
+            "conversationId": "c-504a3dc-4252-4b29-986c-4c4cbccaxxxx",
+            "sessionId": "673b22bfbfc7023ab2f0xxxx",
+            "channel": "Voice",
+            "isVoicemail": "NO",
+            "Direction": "Outbound",
+            "skills": [],
+            "finalStatus": "CLOSED",
+            "smartStatus": "CLOSED",
+            "Reason": "",
+            "disconnectingEvent": "Agent Hangup",
+            "botId": "st-4b6a22d1-b8e5-533d-8020-93f847a9xxxx",
+            "dispositions": [],
+            "dispositionRemarks": [],
+            "metaInfo": {
+                "userId": "u-a81d05ce-d4d9-5a20-bca7-89fa8b6exxxx",
+                "firstName": "",
+                "lastName": "",
+                "caller": "+1234567890",
+                "callee": "+919876543210",
+                "countryCode": "91",
+                "dialedNumber": "+1234567890",
+                "endUserNumber": "+919876543210",
+                "agentTransferConfig": {
+                    "overrideAgents": false
+                }
+            },
+            "customerinfo": {
+                "CustomerPhone": "+1234567890",
+                "CenterPhone": "+919876543210",
+                "CustomerFirstName": "",
+                "CustomerLastName": "",
+                "CustomerEmail": ""
+            },
+            "sessionStartTime": "2024-11-18T16:49:27",
+            "sessionEndTime": "2024-11-18T16:50:30",
+            "userId": "u-a81d05ce-d4d9-5a20-bca7-89fa8b6exxxx",
+            "destinations": [
+                {
+                    "destinationType": "QueueEntry",
+                    "queueId": "qu-04e6978-6011-49d6-929d-cd715080xxxx",
+                    "respondingAgent": {
+                        "agentId": "u-0b7f0d22-4311-5555-9ed6-861c9231xxxx",
+                        "agentNotes": [],
+                        "destinationType": "AgentSegment",
+                        "status": "Answered",
+                        "firstResponseTime": "2024-11-18T16:49:41",
+                        "firstResponseDuration": 14,
+                        "interactionEndTime": "2024-11-18T16:50:02",
+                        "interactionDuration": 35,
+                        "ConsultingAgents": [],
+                        "JoinedUsers": [],
+                        "email": "uataug14th@mailinator.com",
+                        "name": "UATAug14th 01",
+                        "acceptedTime": "2024-11-18T16:49:27",
+                        "assignedAt": "2024-11-18T16:49:27"
+                    }
+                },
+                {
+                    "agentId": "u-13034353-c9bc-53c8-845d-f8ce869fxxxx",
+                    "agentNotes": [
+                        "The customer initiated the conversation with a greeting. The agent responded with a similar 
+greeting, but did not provide any specific assistance or information. The conversation ended abruptly without the customer 
+or agent mentioning an issue or requesting a resolution."
+                    ],
+                    "destinationType": "AgentSegment",
+                    "status": "Answered",
+                    "firstResponseTime": "2024-11-18T16:50:14",
+                    "firstResponseDuration": 0,
+                    "interactionEndTime": "2024-11-18T16:50:30",
+                    "interactionDuration": 16,
+                    "ConsultingAgents": [],
+                    "JoinedUsers": [],
+                    "email": "newrole01@mailinator.com",
+                    "name": "New Role 01",
+                    "acceptedTime": "2024-11-18T16:50:14",
+                    "assignedAt": "2024-11-18T16:50:05"
+                }
+            ],
+            "userleveltags": [],
+            "sessionleveltags": [
+                {
+                    "name": "audioCodesCallDisconnect",
+                    "value": "1"
+                }
             ]
         }
     ]
@@ -625,4 +1097,3 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | QueueEntry.nonRespondingAgent.assignedAt   | YYYY-MM-DDTHH:mm: SS                      | The time when this agent was assigned this contact.                                              | 2023-01-10 2:25:54                                                                          |
 | userleveltags                              | array of tag objects                     | All user-level tags associated with this session                                                 | {“name”: “accountnum”,”value”: “121413243141234132” }                                       |
 | sessionleveltags                           |      array of tag objects                                    | All session-level tags associated with this session                                              |                                                                                             |
-| automationBotIDs                           |  array of string                                        | Contains one or more IDs of the automation bots invoked during the session. Each ID represents a specific automation bot that processed part of the user interaction.                                             |                                                                                       st-158b642c-80ee-56fe-b996-a0cb4af6xxxx      |
