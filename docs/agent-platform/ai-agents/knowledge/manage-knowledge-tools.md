@@ -4,7 +4,7 @@ A Knowledge Tool connects your Agentic application to a **Search AI application*
 
 ## Create a Knowledge Tool
 
-You can either create a new Search AI application from the Agentic application or link an existing Search AI application. This can be done  
+You can either create a new Search AI application from the Agentic application or link an existing Search AI application.
 
 To associate the agentic application with a knowledge tool, open the application and navigate to the **Knowledge** page. This page displays all existing Knowledge Tools in the agentic app.
 
@@ -23,7 +23,7 @@ This is used when linking the agentic application to a pre-existing Search AI ap
 
 **Steps**
 
-On the following page, provide the configuration details of the Knowledge Tool. 
+On the **Knowledge** page, provide the configuration details of the Knowledge Tool. 
 
 **Knowledge Base Name** - Unique name used to identify the knowledge tool in the agentic application. 
 

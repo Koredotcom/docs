@@ -1,4 +1,4 @@
-# About Agents
+# About AI Agents
 
 **Agents in an Agentic App** are specialized entities designed to perform tasks or actions aligned with specific goals autonomously. They function as self-contained units of intelligence, equipped with the knowledge and resources necessary to address a wide range of scenarios effectively.
 

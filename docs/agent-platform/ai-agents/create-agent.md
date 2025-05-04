@@ -1,4 +1,4 @@
-# Set up an Agent
+# Set up an AI Agent
 
 Setting up an agent involves defining its intended purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to govern its actions within specified boundaries.
 

@@ -13,6 +13,6 @@ Example
 
 If an AI agent is configured to provide information about a company’s product offerings and the relevant content is available on the company’s public website. By using Search AI, the agent can set up a knowledge tool that indexes the website’s content. When users ask questions such as “What are the AI Solutions offered by the company?”, the agent uses the knowledge tool to retrieve and present accurate information directly from the indexed content, ensuring responses are both relevant and up to date.
 
-Points to Note:
+!!! note
 
-Knowledge Tools are common across an agentic app.
+    Knowledge Tools are common across an agentic app.
