@@ -202,7 +202,7 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
   - Core AI Capabilities: 
-    - About Core AI Capabilities: core-ai/models/overview.md 
+    - About Core AI Capabilities: core-ai/overview-core-ai.md 
     - Models: 
       - About Models: core-ai/models/overview.md 
       - Fine-Tuned Models: 
