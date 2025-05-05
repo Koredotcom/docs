@@ -5,7 +5,7 @@ The Simulate section provides an interactive interface that allows users to subm
 
    <img src="../images/simulation.png" alt="Agentic App Simulation" title="Agentic App Simulation" style="border: 1px solid gray; zoom:90%;">
 
-Users can also pass contextual information to the agent through attachments. [Learn More](attachment-support-in-user-interactions.md).
+Users can also pass contextual information to the agent through attachments. [Learn More](attachment-support.md).
 
 **Query Input**: Enter your query in the designated input field to initiate the simulation.
 

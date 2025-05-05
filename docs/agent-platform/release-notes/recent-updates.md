@@ -20,6 +20,8 @@ Key features
 * Users can link one or more knowledge bases to the Agentic app, enabling access to various sources. 
 * Agents can access the most up-to-date and relevant knowledge to deliver more accurate responses to user queries.
 
+[Learn more :octicons-arrow-right-24:](./../ai-agents/knowledge/about-knowledge.md)
+
 
 **Export and Import Agentic Apps, Agents, and Tools**
 
@@ -31,11 +33,13 @@ Key features
 * A dependency-based import process where the platform follows an order of importing Tools, followed by Agents, and then the App config. This ensures that all components are successfully imported. If any step fails, the process is fully rolled back to maintain system integrity.
 * Easy export and import streamlines deployment and accelerates setup across environments, saving time and minimizing errors.
 
+[Learn more :octicons-arrow-right-24:](./../ai-agents/agentic-apps/import.md)
 
 **Add Tools from Library, Marketplace, or File**
 
 Users can now easily enhance the applications by importing tools from three sources: the enterprise library, the marketplace, or by importing from a file. This flexible tool's addition capability simplifies application development, encourages the reuse of existing resources, and accelerates the process. It also promotes consistency by allowing teams to standardize tool usage across applications and environments. 
 
+[Learn more :octicons-arrow-right-24:](./../ai-agents/create-agent.md)
 
 **Support for Attaching Files During Interaction**
 
@@ -48,6 +52,8 @@ Key features
 * Multiple file upload capability.
 * Progress indicators for uploading and processing documents.
 
+[Learn more :octicons-arrow-right-24:](./../ai-agents/agentic-apps/attachment-support.md)
+
 
 **Support for System Events**
 
@@ -59,6 +65,7 @@ Key features
 * System events are applied consistently across all agents within an agent-based app, ensuring uniform behavior throughout the platform. 
 * Users can customize the data passed during agent handoff or end-of-conversation events. This customization enables apps to modify behaviors based on specific scenarios.
 
+[Learn more :octicons-arrow-right-24:](./../ai-agents/agentic-apps/settings/events.md)
 
 **Session Meta Memory Store for Contextual Prompts**
 

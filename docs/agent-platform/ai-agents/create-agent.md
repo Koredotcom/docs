@@ -166,11 +166,20 @@ For a **Workflow Tool**, enter the tool's **name** and **description**, then cli
 
 To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ](./../agentic-apps/inline-tools.md)for details on creating a new code tool, along with an example. 
 
-
 ### Importing a Tool
 
-You can import an existing tool into your app. When you import a tool, a **new instance** is created specifically for that app. You can use it as is or **customize it** to better fit your requirements.
+You can easily **import an existing tool** into your Agentic app to accelerate development and reuse existing tools. When a tool is imported:
 
-To make changes, simply select the tool from the library and open it to **modify the flow** as needed.
+* A **new instance** of the tool is created, specifically scoped to the app.
+* This instance of the tool is independent of the original, and can be customized without affecting the source tool or its use in other apps.
+* You can use it as it is if it already meets your needs, or modify it to align with your app’s specific use cases.
+
+Tools can be imported from a variety of sources:
+
+* **File**: Import tools that have been exported previously or shared in file formats(JSON format).
+* **Library**: Use existing tools from the shared repository of reusable tools existing in the platform.
+* **Marketplace**: Access a tool from a catalog of publicly shared tools.
+
+To make changes, simply select the tool and open it to **modify the flow** as needed.
 
 Use [this example as a reference or starting point](./../ai-agents/agent-creation-example.md) when building your own agent.
