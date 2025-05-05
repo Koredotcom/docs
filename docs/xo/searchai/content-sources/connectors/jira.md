@@ -42,7 +42,7 @@ Create an Atlassian account with access to all the content to be indexed.
 
 ## Set up Jira
 
-Search AI interacts with Jira through the APIs. Hence, to set up integration, create an **API token** with the Atlassian account. Follow the instructions in this [documentation](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) for step-by-step instructions. 
+Search AI interacts with Jira through the APIs. Hence, to set up integration, create an **API token** with the Atlassian account. Follow the instructions in this [documentation](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/){target="_blank"} for step-by-step instructions. 
 
 ## Configure Jira Connector in SearchAI 
 

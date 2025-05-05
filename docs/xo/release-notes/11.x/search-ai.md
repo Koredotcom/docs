@@ -2,6 +2,36 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.13.0 May 3, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Image-Based Document Extraction
+
+Search AI now supports image-based extraction for complex PDF documents using Vision embeddings. This feature is especially useful for rich-layout PDFs. Each page is converted into an image, and VDR embeddings are generated to capture the visual structure and textual content. This enables accurate and intelligent retrieval from visually complex documents, significantly improving search relevance. Currently, this capability is supported only for PDF files. Learn more.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md)
+
+### Enhanced Connector UI
+
+With this release, Search AI introduces a new and improved experience for configuring connectors, making it easier to manage data sources and providing complete control over the type of data ingested and processed, improving the connector configuration experience.
+
+Key enhancements
+
+* Streamlined Configuration: Set up connectors intuitively with improved navigation and layout. 
+* Flexible Field Mapping: Gain enhanced visibility and control over how source fields are mapped to the Search AI schema, use the post-processing script to customize mappings, and refer to a detailed field mapping guide that includes schema requirements and sample API responses.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
+
+
+### Support for Simulator in Document Workbench
+
+Search AI now includes a **Simulator for Content Transformation Stages in the Extraction Module**, enabling users to preview and validate how the configured stages affect the ingested data before vectorization. This helps ensure cleaner, more contextual, and optimized data for AI models. The simulator enhances data quality by allowing users to test and refine transformations, improving search results' accuracy and relevance. [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
+
+<hr>
+
 ## v11.12.1 April 19, 2025
 
 <u> Patch Release </u>
