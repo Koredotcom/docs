@@ -134,28 +134,23 @@ There are **two types of tools** that agents can use.
 
 * **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They are best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
-    **Examples**
+!!!abstract "Examples"
+    * Weather API: Retrieves live weather updates.
+    * Stock Market Tool: Fetches real-time stock prices.
+    * Database Query Tool: Accesses structured data from a company’s database.
 
-* Weather API: Retrieves live weather updates.
-* Stock Market Tool: Fetches real-time stock prices.
-* Database Query Tool: Accesses structured data from a company’s database.
+For more information, see [About Tools](./../ai-agents/tools/overview.md).
 
-    For more information, see [About Tools](./../ai-agents/tools/overview.md).
+* **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
 
-* **Code Tools**: **Code Tools** are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python **code, allowing seamless integration and automation of complex workflows.
-
-    For more information, see [Inline Tools](./../agentic-apps/inline-tools.md).
-
+    For more information, see [Code Tools](./agentic-apps/inline-tools.md).
 
 
 ### Adding a Tool to Agent
 
 You can enhance an agent's capabilities by **creating a new tool** or **importing an existing one** from the tool library.
 
-
-
 * **New tools** are custom-built within the context of a specific app and are not shared across other apps.
-
 * **Imported tools** act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.
 
 To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool** or **Code Tool**.
@@ -164,7 +159,7 @@ For a **Workflow Tool**, enter the tool's **name** and **description**, then cli
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ](./../agentic-apps/inline-tools.md)for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ]())for details on creating a new code tool, along with an example. 
 
 ### Importing a Tool
 
