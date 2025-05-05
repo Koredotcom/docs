@@ -26,22 +26,35 @@ To retrieve the raw data for all conversations in a very detailed view. The days
 ## Sample Request
 
 ```
-curl --location 'https://uat-agentassist-az.korebots.com/agentassist/api/public/analytics/account/66bc4a29bdaafdb08461xxxx/
-v2/interactiondetails?offset=0&limit=100' \
+curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/v2/calldetails?offset=0&limit=200' \
 --header 'authority: staging-smartassist.kore.ai' \
 --header 'accept: application/json, text/plain, /' \
---header 'accountid: 66bc4a29bdaafdb08461xxxx' \
+--header 'accept-language: en-US,en;q=0.9' \
+--header 'accountid: {{accountId}}' \
+--header 'app-language: en' \
+--header 'authorization: {{YOUR_JWT_TOKEN}}' \
+--header 'bot-language: en' \
 --header 'content-type: application/json;charset=UTF-8' \
+--header 'cookie: _gcl_au=1.11502438879.1669621549; hubspotutk=ef24820cc39323476019ea81d073xxxx; __hssrc=1; _hjSessionUser_1992177=eyJpZCI6ImYxYWQ2MWUyLTUxODItNWJjMy05ZGI1LWU1ZjE2ZmViYTE5YiIsImNyZWF0ZWQiOjE2Njk2MjE1NDk1NDgsImV4aXN0aW5nIjp0cnxxxx==; __hstc=59894770.ef24820cc39323476019ea81d073bc01.1669621552766.1670332174995.1670395535267.15; _ga=GA1.2.174434293.1669621538; _ga_JW3PWR1JKY=GS1.11670419410.15.01670419410.0.0.0; mp_7888bdd5fedfd65f44bb9a3100fa9e80_mixpanel=%7B%22distinct_id%22%3A%20%22184f0fdd19c11-0ccd03f799cfb8-26021151-e1000-184f0fdd19da01%22%2C%22%24device_id%22%3A%20%22184f0fdd19c11-0ccd03f799cfb8-26021151-e1000-184f0fdd19da01%2xxxx' \
+--header 'referer: https://staging-smartassist.kore.ai/smartassist/config/queues' \
+--header 'sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"' \
+--header 'sec-ch-ua-mobile: ?0' \
+--header 'sec-ch-ua-platform: "Windows"' \
+--header 'sec-fetch-dest: empty' \
+--header 'sec-fetch-mode: cors' \
+--header 'sec-fetch-site: same-origin' \
+--header 'smartassist: true' \
+--header 'state: configured' \
+--header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36' \
 --header 'x-request-id: 5912cf37-667a-484e-b075-2c42114dxxxx' \
+--header 'x-timezone: Asia/Calcutta' \
 --header 'x-timezone-offset: -330' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTE3MzUwOGUxLTI5ZjItNWU5MC05NTM
-yLTEyMmVjNmI5NDFlMSJ9.rHNRMrmljmodyFXGsJQgoayI34jBixaWI7ClRARxxxx' \
+--header 'auth: xxxxbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy01ZDEwMjRlNi1iNzYyLTU3NWYtYTdmNi1hOGRmNjFmMjYxYTIifQ.rqdn1c1Fz7dN8sedyskKg7V2Vw-TOWo0-nC_sGqxxxx' \
+--header 'accountId: 6656d31f165174bd532fxxxx' \
 --data '{
-"startDate":"2024-11-13",
-"endDate":"2024-11-18",
-"selectedFields": ["userleveltags", "sessionleveltags", "customerinfo", "skills"],
-"isAutomation": false,
-"timeZoneOffset":-330
+"startDate":"2025-04-28T04:13:17.098Z",
+"endDate":"2025-04-30T00:13:17.098Z",
+"timeZoneOffset":0
 }'
 ```
 
@@ -1083,4 +1096,4 @@ or agent mentioning an issue or requesting a resolution."
 | QueueEntry.nonRespondingAgent.email        | email                                    | Agent’s email address                                                                            | di.oscannlain@example.com                                                                   |
 | QueueEntry.nonRespondingAgent.assignedAt   | YYYY-MM-DDTHH:mm: SS                      | The time when this agent was assigned this contact.                                              | 2023-01-10 2:25:54                                                                          |
 | userleveltags                              | array of tag objects                     | All user-level tags associated with this session                                                 | {“name”: “accountnum”,”value”: “121413243141234132” }                                       |
-| sessionleveltags                           |                                          | All session-level tags associated with this session                                              |                                                                                             |
+| sessionleveltags                           |      array of tag objects                                    | All session-level tags associated with this session                                              |                                                                                             |

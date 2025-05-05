@@ -44,6 +44,11 @@ The Search functionality allows agents to find customer conversations by phone n
     * The search functionality supports names in all languages configured in the system.
     * This feature is enabled by default for all agents and only returns active conversations based on your input.
 
+## Customer Sentiment
+
+Digital conversations display the customer's real-time sentiment. This enables agents to handle conversations better. For example, a customer may be unhappy because they have been waiting for a response from an agent for a long time.  
+    <img src="../images/sentiment-conversation-tray.png" alt="Sentiment" title="Sentiment" style="border: 1px solid gray; zoom:80%;"> 
+
 ## Conversation Information
 
 This section displays data about the conversations you are handling.
