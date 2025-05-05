@@ -196,8 +196,8 @@ nav:
     - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Deployment: 
-      - Deploy an App Version: ai-agents/agentic-apps/app-deployment.md
-      - Access Deployed Version: ai-agents/agentic-apps/access-deployed-version.md
+      - Deploy an App Version: ai-agents/agentic-apps/deployment/app-deployment.md
+      - Access Deployed Version: ai-agents/agentic-apps/deployment/access-deployed-version.md
       - App Import & Export: 
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
