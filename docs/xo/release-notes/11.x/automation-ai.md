@@ -28,18 +28,21 @@ Key benefits
 * Deliver more relevant and contextually appropriate responses to end users.
 * Configurable confidence thresholds aligned with their specific use case needs.
 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#zero-shot-model)
+
+
 
 #### Pre-built and Custom Models Support for Rephrase User Query 
 
 The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
 
 Users can optionally provide the `Conversation_history` key to specify the number of previous conversation messages to send to the LLM for improved contextual understanding.
-
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#model-and-supported-features---automation-ai)
 
 #### Expanded PII Settings at the Agent Node Level
 
 The XO platform now supports the detection and protection of Personally Identifiable Information (PII) at the Agent Node level. Users can choose whether to send redacted or original values to the language model, giving them more control over data exposure.
-
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/data-anonymization.md)
 
 ### Conversation Testing
 
@@ -52,6 +55,7 @@ Conversation Testing now supports including tags and descriptions in the JSON fi
 #### Failed ServiceNow Agent Transfer Notification 
 
 The platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#failed-agent-transfer-notification)
 
 <hr>
 
