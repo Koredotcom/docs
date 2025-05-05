@@ -118,11 +118,11 @@ The following table displays the features and the supported models.
 
     |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 4|✅|✅|✅|✅|❌|✅^|
-    |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|❌|✅|
-    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|✅|✅|❌|✅^|
-    |Provider's New LLM**|✅|✅|❌|✅|❌|✅|
-    |Custom LLM|✅|✅|❌|✅|❌|✅|
+    |Azure OpenAI – <br>GPT 4|✅|✅|✅|✅|✅|✅^|
+    |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
+    |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|✅|✅|✅|✅^|
+    |Provider's New LLM**|✅|✅|❌|✅|✅|✅|
+    |Custom LLM|✅|✅|❌|✅|✅|✅|
     |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
@@ -219,7 +219,7 @@ When this feature is disabled, the Rephrase Response section is not visible with
 
 ### Rephrase User Query
 
-This feature uses the[ Kore.ai XO GPT Model](xo-gpt-module.md). This model helps improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing user conversation.
+This feature helps improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing user conversation.
 
 When a user intent and entity are split across multiple utterances or through the conversation, the feature enriches the user query by rephrasing the user’s multiple queries during runtime. This enriched user query contains all the conversation details so the bot can understand the actual meaning behind a user’s utterance. This enriched user query is fed to the natural language, improving accuracy by improving intent identification and entity extraction.
 
@@ -263,9 +263,10 @@ User: What about the interest rates of both loans?
 The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
 
 #### Conversation History Length
-This setting allows you to specify the number of recent messages sent to the Kore.ai XO GPT model as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. You can set any value greater than 1. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. The default value is 10.
-You can access the Conversation History Length from **Repharse User Query** > **Advanced Settings**.
-<img src="../images/ruq-ad.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
+This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. The default value is 5. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. 
+You can access the Conversation History Length from **Repharse User Query** > **Advanced Settings**.  
+
+<img src="../images/conv-history.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
 
 ### Zero-shot ML Model
 
