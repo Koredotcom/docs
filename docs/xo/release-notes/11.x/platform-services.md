@@ -20,7 +20,7 @@ Previously, the User Management menu option was accessible via the product switc
 
 To enhance access control and improve user experience, this release introduces a reorganized and granular permissions model for XO v11. The updated framework addresses limitations in the previous system by implementing fine-grained permissions for the App Owner role and removing obsolete controls.
 
-**Key Enhancements**
+Key enhancements
 
 * **Create New User Role**: Only App Owners can access the *Create New User Role* menu. This menu is hidden from all other user roles.
 * **Billing Module**: App Owners can access the *Billing* module. This menu is hidden from all other user roles.
@@ -28,7 +28,7 @@ To enhance access control and improve user experience, this release introduces a
 * **App Profile Modification**: Only App Owners can edit the *App Profile*. Other users can view the page but cannot modify any fields.
 * **Delete App**: Only App Owners can delete the app. No other users can access this option. No new permission is required, but access is restricted to App Owners only.
 
-**Key Benefits**
+Key benefits
 
 * **Improved Security**: Fine-grained controls limit access to critical actions, reducing the risk of over-privileged use.
 * **Streamlined User Experience**: The reorganized permissions layout simplifies navigation and improves clarity for App Owners.

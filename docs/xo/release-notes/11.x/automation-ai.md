@@ -31,7 +31,6 @@ Key benefits
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#zero-shot-model)
 
 
-
 #### Pre-built and Custom Models Support for Rephrase User Query 
 
 The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
