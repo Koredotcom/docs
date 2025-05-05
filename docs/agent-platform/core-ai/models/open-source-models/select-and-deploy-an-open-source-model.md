@@ -275,7 +275,7 @@ The supported models and their variants are given below:
 
 
   * If you choose to **Import from Hugging Face**, select the **Hugging Face connection** type from the dropdown and paste the **model name**.
-   For more information about connecting to your Hugging Face account, see[ How to Connect to your Hugging Face Account](../../settings/integrations/enable-hugging-face.md).
+    For more information about connecting to your Hugging Face account, see [How to Connect to your Hugging Face Account](../../../administration/integrations/enable-hugging-face.md).
 
     !!! note
 
