@@ -126,21 +126,30 @@ nav:
         - Build a Code Tool: getting-started/tutorials/build-code-tool.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
-    - AI Offerings:
+    - Business Solutions:
       - AI for Service: https://docs.kore.ai/xo/home/
       - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
-    - About Agentic Apps: ai-agents/agentic-apps/overview.md
-    - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-    - Agents: 
-      - About Agents: ai-agents/agentic-apps/agent-overview.md
-      - Set up an Agent: ai-agents/agentic-apps/create-agent.md
-      - App Simulation: ai-agents/agentic-apps/app-testing.md
-      - App Deployment:
-        - Deploy an App Version: ai-agents/agentic-apps/app-deployment.md
-        - Access Deployed Version: ai-agents/agentic-apps/access-deployed-version.md
-      - App Settings: ai-agents/agentic-apps/app-settings.md     
+    - Multi-Agent System: ai-agents/multi-agent-system.md
+    - About Agentic Apps: ai-agents/agentic-apps/agentic-app-overview.md
+    - About AI Agents: ai-agents/agent-overview.md
+    - About Dialog Agents: dialog-agents/about-dialog-agent.md
+    - Orchestration:
+      - Supervisor: ai-agents/supervisor-pattern.md
+      - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
+    - Multi-Agent Application:
+      - Create an Agentic App: ai-agents/agentic-apps/create-app.md
+      - Set up an Agent: ai-agents/create-agent.md
+      - Connect External Agents: ai-agents/external-agents.md
+      - App Settings:
+        - Events: ai-agents/agentic-apps/settings/events.md
+        - Configurations: ai-agents/agentic-apps/settings/app-configurations.md
+        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
+        - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
+    - Knowledge:
+      - About Knowledge: ai-agents/knowledge/about-knowledge.md
+      - Manage Knowledge Base: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
       - Create a Tool: ai-agents/tools/create-a-new-tool.md
@@ -184,8 +193,16 @@ nav:
         - Configure a Tool: ai-agents/tools/configure-a-tool.md
         - Export a Tool: ai-agents/tools/export-a-tool.md
         - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+    - App Simulation:
+      - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
+    - App Deployment: 
+      - Deploy an App Version: ai-agents/agentic-apps/deployment/app-deployment.md
+      - Access Deployed Version: ai-agents/agentic-apps/deployment/access-deployed-version.md
+      - App Import & Export: 
+        - Import App: ai-agents/agentic-apps/import.md
+        - Export App and Agents: ai-agents/agentic-apps/export.md    
   - Core AI Capabilities: 
-    - About Core AI Capabilities: core-ai/models/overview.md 
+    - About Core AI Capabilities: core-ai/overview-core-ai.md 
     - Models: 
       - About Models: core-ai/models/overview.md 
       - Fine-Tuned Models: 

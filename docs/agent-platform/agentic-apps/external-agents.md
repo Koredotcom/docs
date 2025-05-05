@@ -1,4 +1,4 @@
-# Proxy Agent Architecture for Unified AI Ecosystems
+# Connect with External Agents
 
 Enterprises often utilize AI agents built on diverse platforms, resulting in a multi-vendor environment. To unify these disparate agents without requiring extensive rebuilding, the Agent Platform offers a central integration layer based on a proxy agent architecture.
 
