@@ -18,11 +18,13 @@ Voice Gateway now preserves the original format of SIP header names (specificall
 
 #### Support for Emma Voice in IVR Channel
 
-The IVR channel now supports additional Emma voice options under the Microsoft Azure TTS provider. Users can select the following voices at the Start Flow, the first node of the Start Flow, and Voice Preferences settings:  
+The IVR channel now supports additional Emma voice options under the Microsoft Azure TTS provider. Users can select the following voices at the Start Flow, the first node of the Start Flow, and Voice Preferences settings:
+
 * en-US-EmmaMultilingualNeural (Female)  
 * en-US-EmmaNeural (Female)  
 * en-US-Emma:DragonHDLatestNeural (Female)  
 * en-US-Emma2:DragonHDLatestNeural (Female)  
+
 This enhancement ensures greater flexibility and consistency in voice experience across IVR flows.
 
 #### LLM Streaming Support for Additional TTS Providers
