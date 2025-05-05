@@ -143,10 +143,13 @@ Agents can make outbound calls to the customers as follows:
 
 3. Agents can dial the outbound calls in two ways:
 
-    1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the Call button to place the outbound call.  
-        <img src="../images/dialer-country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+    1. Enter the phone number with the country code, and click the Call button to place the outbound call.  
+        <img src="../images/global-dialpad.png" alt="Global Dialpad" title="Global Dialpad" style="border: 1px solid gray; zoom:60%;">
 
-    2. Enter the phone number without the country code and click the Call button to place the outbound call. The following scenarios are possible:
+    2. Select the country code from the dropdown, enter the phone number without the country code, and click the Call button to place the outbound call.  
+        <img src="../images/country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">  
+
+        The following scenarios are possible:
 
         1. A user enters “123124”:
 
