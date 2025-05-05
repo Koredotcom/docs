@@ -56,7 +56,7 @@ Search AI provides out-of-the-box support for ingesting data from a range of thi
 |45.| [Shortcut](./shortcut.md) <br />  Shortcut is typically used for agile project management and software development tracking.| Cloud                  | Stories  | No                   | Yes              |
 |46.| [Slab](./slab.md) <br />Slab is a knowledge management platform to create, organize, and share internal documentation in a collaborative environment.      | Cloud                  |Posts   | No                   | Yes              |
 |47.| [Slack](./slack.md) <br />Slack is a communication and collaboration platform.    | Cloud                  |Slack messages    | No                   | Yes              |
-|48.| [Teamwork]()<br />Teamwork is a project management and team collaboration tool. | Cloud                  | Projects, Tasks, Users | No                   | Yes              |
+|48.| [Teamwork]()<br />Teamwork is a project management and team collaboration tool. | Cloud                  | Tasks | No                   | Yes              |
 |49.| [TestRail](./testrail.md)<br />TestRail is a test management tool to create, organize, and track test cases, runs, and results. | Cloud                  | Test cases | No                   | Yes              |
 |50.| [Trello](./trello.md)<br />Trello is a task management tool to organize projects with visual boards, lists, and cards, enabling collaboration and tracking   | Cloud                  | Boards, Cards | No                   | Yes              |
 |51.| [WordPress](./wordpress.md)<br />WordPress is a widely used content management system for creating websites and blogs.   | Cloud                  | pages, posts                                        | No                   |Yes              |
