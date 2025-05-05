@@ -133,8 +133,8 @@ After adding and configuring the node as mentioned [here](../types-of-nodes/inte
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a></li>
-<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;"></ol>
+<ol><li>Click the <b>Input</b> tab of the <b>Start</b> node, and click <b>Add Input Variable</b> to configure the input for the flow’s test run. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Learn more</a>
+<img src="../images/start-node-io.png" alt="start node io" title="start node io" style="border: 1px solid gray; zoom:75%;"></li></ol>
 <ol start="2"><li>In the <b>Enter input variable</b> window, select the appropriate data type for the <b>Type</b> field to define the input variable.</li>
 <li>Click <b>Save</b>.</li></ol>
 
@@ -169,7 +169,6 @@ To run and test the flow, follow the steps below:
 
 2. (Optional) Add the value for the **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
 3. Click **Generate Output**.
-
    <img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
  
 
