@@ -2,6 +2,69 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.13.0 May 03, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Real-time Sentiment Capture and Visualization
+
+The Agent Console now displays real-time sentiment updates and a clickable graph visualizing emotional shifts over time, enabling agents to respond more quickly and empathetically during live conversations, enhancing the customer experience with actionable insights into sentiment trends as they occur. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md)
+
+#### Voice Issue Reporting Enhancement
+
+The Console and Monitor tabs now include an enhanced 'Help' menu with a 'Report Voice Issue for Current Call' function. This allows agents and supervisors to report voice problems easily via a standardized form. The system collects issue details and logs upon submission, sends internal notifications, and confirms the report. 
+
+#### Improved Global Dialing Using Outbound Dialer
+
+The outbound dialer widget now displays "Enter your phone number with country code" when the Global option is selected. It guides agents to include the country code and prevent failed call attempts due to missing country codes. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
+#### Show 'Unavailable' in Arrival Summary When Sentiment Is Missing
+
+When sentiment analysis is configured but no utterances are available to analyze, the Sentiment field in the arrival summary will now display "Unavailable" instead of remaining blank. This ensures users are informed that sentiment is intentionally missing due to a lack of conversational data, not an error. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#arrival-summary)
+
+### Configuration
+
+#### Bulk Export for Standard Responses
+
+Admins and supervisors can now export all standard responses as a single CSV file using the new Export option available on the Standard Response configuration page. This enhancement simplifies compliance and validation processes by removing the need for manual effort and retaining essential metadata, such as user ID, category, last modified date, auto-expire status, description, skill match, and agent group match. The file downloads automatically through the browser and remains accessible only to authorized users, ensuring secure and controlled access. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md)
+
+#### Email CSAT Configuration
+
+The Email CSAT Configuration now allows administrators to enable or disable surveys for email conversations. Administrators can configure the Request & Gratitude message and Survey Frequency. The “Advanced Survey Conditions” section allows administrators to toggle survey triggers for no agent availability and outside business hours. These updates offer greater flexibility in configuring CSAT surveys for email communications. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/surveys/configure-surveys.md#chat-call-and-email-experience)
+
+### Analytics
+
+#### Interactions Page: Call Status Update for AMD Detected Calls
+
+Supervisors can now view updated call statuses for calls disconnected after being identified as a machine through AMD detection.
+
+* Interactions Page: The following information will be displayed
+    * Status: Completed,
+    * Mode: Machine Detected. 
+* Insights to Logs tab:  
+    * Status: Completed (Closed),
+    * Mode: Machine Detected, 
+    * Reason: Machine Detected, 
+    * Disconnecting Event: System,
+    * Smart Status: Closed.  
+This enhancement provides a clearer understanding of why calls are disconnected after machine detection. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md)
+
+#### Monitor: Queue Filters and Agent Name Display
+
+Supervisors can now use quick filters in the Queue tab to easily segment conversations by state, such as those waiting in a queue or with the agent, for faster action. Two predefined quick filters will be enabled by default and displayed as tags. Users can edit, delete, or add up to four custom quick filters (five total, including the default). This functionality extends to Agents and Interactions tabs, without predefined templates. Additionally, agent names now appear for conversations pending acceptance, ensuring consistent information display and improving visibility for quicker decision-making. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
+
+### API
+
+#### Updated API Endpoint Naming for Export/Import
+
+The public Export and Import APIs now use corrected endpoint names that follow proper naming conventions. This change ensures clarity, consistency, and easier integration for developers using these APIs. Existing functionality remains unchanged; only endpoint paths have been updated for accuracy and clarity. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#importexport-data-apis)
+
+<hr>
+
 ## v11.12.1 April 19, 2025
 
 <u> Patch Release </u>

@@ -95,6 +95,26 @@ Click on **Test** to test the service's behavior with the given parameters. It s
 
 Once the API is successfully invoked, you can see the generated response. If the service call fails, an error is thrown. If the API is successfully invoked, the response is sent back on the callback URL. This response is shown as the **Generated Response**. If the extracted chunks are a part of the response, the **Response Path** field can be used to provide the JSON path to the chunks. The Response Comparison section enables easy comparison of the actual response to that of the structure of the expected response. If the two do not match, it throws an error message. 
 
+### Markdown Extraction 
+
+The Markdown Strategy is a document extraction approach that transforms each page of a source document into a structured Markdown format before further processing. This strategy is particularly effective in preserving the semantic structure of the original content. Extracting and converting content to **Markdown** provides structured and cleaner data for indexing and retrieval.
+
+Currently, it can only be used for extraction from PDF files.
+
+
+### Image-Based Document Extraction
+
+**Image-Based Document Extraction** is designed to handle complex PDF files, particularly those containing non-textual layouts such as forms, tables, or visually rich content that may not be fully captured through standard text extraction methods. In this approach, each page of the PDF is first converted into an image. This preserves the visual structure, layout, and contextual relationships that may be lost during plain text extraction.
+
+These page images are then processed using a **VDR embedding model**, which generates embeddings that capture both the textual and visual semantics of the content. This allows for a more accurate and comprehensive representation of the document, significantly improving search and retrieval performance in systems where layout and structure are essential.
+
+Alongside the visual embedding, the contents of each pages are extracted into a standard chunk format.  Each extracted chunk includes an additional field, page_image_url, which references the corresponding page image.
+
+Currently, it can only be used for extraction from PDF files.
+
+!!! note
+    To enable indexing using visual embeddings, select the **image-based embedding model** in the **Vector Configuration** page.
+
 ## Deleting a Strategy
 
 To delete an existing strategy, go to the corresponding strategy page and click on the **Delete** button. 

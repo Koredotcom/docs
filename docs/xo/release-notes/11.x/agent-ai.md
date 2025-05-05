@@ -2,6 +2,58 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.13.0 May 03, 2025
+
+<u>Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Widget Enhancements
+
+#### Custom Tab in the Agent AI widget
+
+This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually.
+
+#### Introduction of Conversation Events and Automatic Dialog Task Execution on End-of-Conversation Trigger
+
+In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to "Conversation Events". The Conversation Events section allows you to configure events that automatically trigger at the beginning and end of a conversation. You can configure the following events: 
+
+* **Welcome Events**: Pre-configured greeting messages and dialog tasks that automatically trigger when a conversation is assigned to an agent in the Agent AI widget.  
+* **Exit Events**: Pre-configured dialog task or conversation summary that automatically runs when the end-of-conversation event triggers. 
+!!! note
+
+    You can enable either the dialog task or the conversation summary for the Exit Events section.
+
+#### Improved Search Functionality in Library
+
+Search functionality automatically updates the library list to match the search query. The library displays relevant words and phrases as agents type in real time. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab)
+
+### Integration Enhancements
+
+#### Five9 Chat Integration with Agent AI
+
+The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window.
+
+#### Updated Salesforce Package and support for new Salesforce Live Chat for new organizations
+
+The updated Salesforce package includes the following: 
+
+* Agent Assist is replaced with Agent AI in all configuration screens.  
+* Updated Agent AI logo.  
+* The Agent AI widget loads in full-screen mode for Omni-Channel Voice and Genesys CTI.
+
+#### Outbound Call Support for Agent AI Integration with Salesforce NICE CTI
+
+The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights.
+
+### API Enhancements
+
+#### Tracking Conversation Summary Existence and Display to Agents in the Agent AI Raw Data API
+
+The Raw Data API now includes the ```isWelcomeMsgRead``` parameter to confirm whether a conversation summary exists and whether agents have read or scrolled through it. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md)
+
+<hr>
+
 ## v11.12.1 April 19, 2025
 
 <u>Patch Release</u>

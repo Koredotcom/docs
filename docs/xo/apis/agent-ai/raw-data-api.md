@@ -20,6 +20,7 @@ This updated version of the Raw Data API offers the following additional convers
 * Total number of words or phrases entered by the agent
 * Total number of words suggested for correction by the agent
 * Total number of auto-corrected words accepted by the agent
+* Conversation Summary existence and agents reading or scrolling through it.
 
 | **Field**        | **Value**                                                                                                                                                                                                                       |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,6 +65,7 @@ curl --location '{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-d
             "segmentEndTime": "2025-03-27T07:10:36.738Z",
             "countScrollUp": 3,
             "countScrollDn": 2,
+            "isWelcomeMsgRead": False
             "agent": {
                 "agentId": "a-m8r0iiln"
             },
@@ -400,6 +402,7 @@ curl --location '{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-d
             "segmentEndTime": "2025-03-27T09:58:54.181Z",
             "countScrollUp": 1,
             "countScrollDn": 2,
+            "isWelcomeMsgRead": True
             "agent": {
                 "agentId": "a-m8r6h92k"
             },
@@ -539,6 +542,7 @@ curl --location '{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-d
             "segmentEndTime": "2025-03-27T10:28:25.093Z",
             "countScrollUp": 0,
             "countScrollDn": 0,
+            "isWelcomeMsgRead": True
             "agent": {
                 "agentId": "3f4ff148-6759-4b80-934c-edf0b11xxxxx"
             },
@@ -1604,6 +1608,16 @@ Example: "<a href="https://aws.amazon.com/ec2/pricing/on-demand/">https://aws.am
    <td>Integer
    </td>
    <td>Number of times an agent clicks the scroll up and/or scroll down buttons.
+   </td>
+  </tr>
+  <tr>
+   <td>isWelcomeMsgRead
+   </td>
+   <td>Boolean (True/False)
+   </td>
+   <td>Conveys whether the Welcome Message has been read:
+        - **True**: Message has been read.
+        - **False**: Message has not been read.
    </td>
   </tr>
   <tr>

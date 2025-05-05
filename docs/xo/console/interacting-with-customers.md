@@ -130,7 +130,7 @@ The outbound dialer has the following functionalities:
 * Validation and Error Handling: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.  
     <img src="../images/invalid-phone-number.png" alt="Invalid Phone Number" title="Invalid Phone Number" style="border: 1px solid gray; zoom:70%;">  
 
-* Enable Call Controls during ringing: Turning on this toggle allows agents to use the call control features (mute, hold, keypad, transfer) when the call is in the dialing phase. To enable this functionality, refer to the [Permissions](../user-management/role-management.md#permissions) section.
+* Enable Call Controls during ringing: Turning on this toggle allows agents to use the call control features (mute, hold, keypad, transfer) when the call is in the dialing phase. To enable this functionality, refer to the [Permissions](../user-management/role-management.md#permissions) section.  
     <img src="../images/enable-call-controls-during-ringing.png" alt="Enable Call Controls During Ringing" title="Enable Call Controls During Ringing" style="border: 1px solid gray; zoom:70%;"> 
 
 Agents can make outbound calls to the customers as follows:
@@ -143,10 +143,13 @@ Agents can make outbound calls to the customers as follows:
 
 3. Agents can dial the outbound calls in two ways:
 
-    1. Enter the phone number with the country code, and the country’s flag will appear automatically on the left. Click the Call button to place the outbound call.  
-        <img src="../images/dialer-country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+    1. Enter the phone number with the country code, and click the Call button to place the outbound call.  
+        <img src="../images/global-dialpad.png" alt="Global Dialpad" title="Global Dialpad" style="border: 1px solid gray; zoom:60%;">
 
-    2. Enter the phone number without the country code and click the Call button to place the outbound call. The following scenarios are possible:
+    2. Select the country code from the dropdown, enter the phone number without the country code, and click the Call button to place the outbound call.  
+        <img src="../images/country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">  
+
+        The following scenarios are possible:
 
         1. A user enters “123124”:
 
@@ -905,6 +908,10 @@ This section displays the live interaction summary with the following details:
 
 After accepting the conversation, all interactions by the agent are displayed below the arrival summary. If generating the arrival summary takes time, a loading indicator appears until the summary is ready. After an agent transfer, Agent 2 will see the entire summary of the prior conversation, displayed immediately after the last message from Agent 1.
 
+!!! Note
+
+    When sentiment analysis is configured but no utterances are available to analyze, the Sentiment field in the arrival summary displays "Unavailable" instead of remaining blank.
+
 ### Refreshing Bot-Customer Interactions
 
 A reload button appears at the top of the conversation transcript when the bot-customer conversation transcript is missing. Clicking Reload displays the missing information.  
@@ -924,7 +931,15 @@ Do the following to enable the typing indicator for chat conversations:
     * Co-browse
     * Screen Sharing
 
-    Refer to the[ installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
+    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
+
+## Real Time Sentiment Capture
+
+Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md).  
+<img src="../images/console-sentiment.png" alt="Sentiment" title="Sentiment" style="border: 1px solid gray; zoom:80%;">  
+
+When agents click the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses promptly, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  
+<img src="../images/sentiment-analysis-graph.png" alt="Sentiment Graph" title="Sentiment Graph" style="border: 1px solid gray; zoom:80%;"> 
 
 ## Stacked Messages, Timestamp, and Read Status
 

@@ -1,7 +1,5 @@
 # Agent Real-time Coaching
 
-## Introduction
-
 Contact center agents often handle high call volumes and complex conversations, making it difficult to consistently meet customer expectations without the right support, guidance, and tools. The **Real-Time Agent Coaching** feature helps supervisors support agents by analyzing utterances and speech patterns during calls.
 
 You can configure triggers—such as specific utterances and speech patterns—for Agent AI to provide real-time coaching, including on-screen hints, nudges, or manager notifications. You can track triggered utterances, review their frequency over time, and assess how well agents follow recommended actions. You can also analyze speech patterns—such as cross talk, dead air, and speaking speed—to help agents improve communication.
