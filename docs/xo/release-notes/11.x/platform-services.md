@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Enhanced User Management Accessibility
 
-Previously, the User Management menu option was accessible via the product switcher and Contact Center AI. Now it is located in the left navigation of Automation AI, Search AI, and Agent AI, providing uniform access and improving user experience across the primary modules. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#manage-users).
+Previously, the User Management menu option was accessible via the product switcher and Contact Center AI. Now it is located in the left navigation of Automation AI, Search AI, and Agent AI, providing uniform access and improving user experience across the primary modules. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#manage-users)
 
 ### Role Management
 
