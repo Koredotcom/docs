@@ -314,7 +314,9 @@ When you enable **ZSM network type** for an existing bot, the system does not id
     For more descriptive intent names like _“I want to place an order”_ and _“Will I be able to place an order?”_, the system considers the punctuation and the case (upper or lower) to identify the intent.
 
 
+!!! Note
 
+    The Zero-shot Threshold and Zero-shot Definitive Score apply only to zero-shot v2 prompts.
 
 **Zero-shot Threshold**
 
@@ -326,11 +328,13 @@ Zero-shot Threshold defines the criteria for qualifying a probability score of a
 
 **Zero-shot Definitive Score**
 
+Set the threshold score for definite matches between 80-100%. The default value is 95%. If the probability score exceeds 95%, the intent is classified as a Definite Match or Perfect Match.
+
 !!! note
 
     The zero-shot score is considered if the LLM score is less than it.
 
-Set the threshold score for definite matches between 80-100%. The default value is 95%. If the probability score exceeds 95%, the intent is classified as a Definite Match or Perfect Match.
+
 
 
 **Enable the Zero-Shot Model Network Type**
