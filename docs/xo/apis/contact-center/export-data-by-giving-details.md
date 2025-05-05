@@ -2,6 +2,10 @@
 
 To get exported data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with account Id and orgId.
 
+!!! Note
+
+    This version will be deprecated soon. Please use [Version 2](../contact-center/export-data-by-giving-details-v2.md) of this API.
+
 | **PARAMETER** | **DESCRIPTION**                                                                                                          | **TYPE**         |
 |---------------|--------------------------------------------------------------------------------------------------------------------------|------------------|
 | **Method**        | GET                                                                                                                      |                  |

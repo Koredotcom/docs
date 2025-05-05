@@ -33,9 +33,9 @@ The widget consists of four tabs–Search, My Bot, Assist, Transcript (for Voice
 
 ### Search Tab
 
-This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on agent interactions. Agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the “Run with Agent input” button, the dialog moves to the My Bot section, and you can run the dialog from there.
+This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities, wherein agents can search Dialog Tasks, frequently asked questions (FAQ), Generative AI answers, web pages, files, and more. The content in this section automatically updates based on agent interactions. Agents can scroll through the list to view all available automations. Selecting the “Run with Agent input” button moves the Dialog Task to the **My Bot** section, where it can be executed. The search functionality automatically updates the library list to match the search query. As you type, relevant words and phrases appear in real time.
 
-<img src="../WidgetContentUpdate_3.3.0/search-tab.png" alt="updated-search-bar" title="updated-search-bar" style="border: 1px solid gray; zoom:80%;">
+<img src="../WidgetContentUpdate_3.3.0/updated-search-functionality.png" alt="updated-search-functionality" title="updated-search-functionality" style="border: 1px solid gray; zoom:80%;">
 
 The following buttons are available in this section:
 
@@ -43,7 +43,7 @@ The following buttons are available in this section:
 * **Run with Agent’s input**: Click this button to run a Dialog Task with agent’s input. The agent can customize the content and decide whether to send a dialog or not. Selecting this option automatically moves you to the My Bot section.
 * **Spyglass icon**: After entering the search content, click the “spyglass” icon in the search bar or press the “Enter” key to search.
 
-#### Timeout and Server Errors
+#### Timeout, Server Errors, and No Search Results
 The **Search** tab displays error messages for searches exceeding 10 seconds, dialog tasks not configured, and server issues.
 
 * Timeout/dialog tasks not configured:  
@@ -52,6 +52,10 @@ The **Search** tab displays error messages for searches exceeding 10 seconds, di
 <img src="../WidgetContentUpdate_3.3.0/timeout-second-time.png" alt="timeout-second-time" title="timeout-second-time" style="border: 1px solid gray; zoom:80%;">
 * Server errors:  
 <img src="../WidgetContentUpdate_3.3.0/server-error.png" alt="server-error" title="server-error" style="border: 1px solid gray; zoom:80%;">
+* Dialog Tasks not found:  
+<img src="../WidgetContentUpdate_3.3.0/dialog-tasks-not-found.png" alt="dialog-tasks-not-found" title="dialog-tasks-not-found" style="border: 1px solid gray; zoom:80%;">
+* No matching search results:  
+<img src="../WidgetContentUpdate_3.3.0/no-matching-search-results.png" alt="no-matching-search-results" title="no-matching-search-results" style="border: 1px solid gray; zoom:80%;">
 
 ### My Bot Tab
 

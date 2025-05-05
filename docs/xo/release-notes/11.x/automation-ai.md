@@ -2,6 +2,63 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.13.0 May 03, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### LLM & Generative AI
+
+#### Zero-Shot Intent Detection with LLM-Generated Confidence Scores
+
+The Zero-Shot Intent Detection has been improved to utilize genuine confidence scores from LLM instead of fixed values. This enhancement creates a more equitable intent qualification by allowing Zero-Shot intents to compete with those from other engines (FM, Knowledge Graph) based on their actual confidence score.
+
+Key enhancements
+
+* The system now utilizes genuine confidence metrics from the language model for each identified intent, replacing previously hardcoded scores.
+* A configurable "ML Threshold" setting (default 0.7, range 0-1) has been introduced. Zero-shot intents must exceed this threshold to be considered valid.
+* Threshold-based filtering ensures that only high-confidence intents are sent to the Ranking & Resolver.
+* The default V2 prompt is enhanced with a Conversation History slider parameter.
+* LLM now receives intents, descriptions, conversation history, and the threshold score for processing.
+
+Key benefits
+
+* Leverages the full potential of the platform's diverse intent recognition capabilities.
+* Deliver more relevant and contextually appropriate responses to end users.
+* Configurable confidence thresholds aligned with their specific use case needs.
+
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#zero-shot-model)
+
+
+
+#### Pre-built and Custom Models Support for Rephrase User Query 
+
+The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
+
+Users can optionally provide the `Conversation_history` key to specify the number of previous conversation messages to send to the LLM for improved contextual understanding.
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#model-and-supported-features---automation-ai)
+
+#### Expanded PII Settings at the Agent Node Level
+
+The XO platform now supports the detection and protection of Personally Identifiable Information (PII) at the Agent Node level. Users can choose whether to send redacted or original values to the language model, giving them more control over data exposure.
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/data-anonymization.md)
+
+### Conversation Testing
+
+#### Support for Tags and Descriptions of Test Suite
+
+Conversation Testing now supports including tags and descriptions in the JSON file for test cases, enabling faster creation and easier reuse of test cases to improve usability and accelerate test case management. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#create-test-suite)
+
+### Agent Transfer
+
+#### Failed ServiceNow Agent Transfer Notification 
+
+The platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#failed-agent-transfer-notification)
+
+<hr>
+
 ## v11.12.1 April 19, 2025
 
 <u> Patch Release </u>
@@ -15,7 +72,6 @@ This update includes enhancements and bug fixes. The key enhancement included in
 DialogGPT now supports Amazon Bedrock models, providing large enterprises with a flexible and versatile solution for efficient conversation management. This enhancement allows users to experiment with and utilize various models through a single integration, using custom prompts to optimize their experience.
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
-
 
 <hr>
 

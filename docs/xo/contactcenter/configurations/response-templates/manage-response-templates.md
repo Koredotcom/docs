@@ -3,7 +3,7 @@
 Response Templates are predefined (“canned”) messages that agents can use to speed up their delivery of information during customer interactions: welcome messages, salutations, notifications, and more. Response Templates are organized into groups and may be assigned to agents according to skills or agent groups.
 
 To access this feature, go to **Contact Center AI** > **CONFIGURATIONS** > **Response Templates**.
-<img src="../images/response-templates-page.png" alt="
+<img src="../images/response templates.png" alt="
 Response Templates Page" title="Response Templates Page" style="border: 1px solid gray; zoom:80%;">
 
 ## The Response Templates Live Board
@@ -161,3 +161,15 @@ To delete a response, follow these steps:
 !!! Note
 
     You cannot restore deleted Response Templates. Agents will no longer see deleted responses in the console. Please proceed with caution.
+
+## Export Standard Responses
+
+Export standard responses functionality is a secure and efficient method to export standard responses for compliance and validation. A bulk export mechanism enables Administrators and Supervisors to export responses in bulk, eliminating manual copy-pasting. It supports compliance teams in efficient review and validation while ensuring controlled access by restricting export capabilities to authorized users.
+
+Steps to export standard responses in bulk:
+
+1. Click Download Response Templates.  
+    <img src="../images/download-button.png" alt="Download Button" title="Download Button" style="border: 1px solid gray; zoom:80%;">
+
+2. A notification is displayed, and the response templates are downloaded as a CSV file.
+    <img src="../images/download-success.png" alt="Download Success" title="Download Success" style="border: 1px solid gray; zoom:80%;">

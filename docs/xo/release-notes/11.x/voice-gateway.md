@@ -2,6 +2,37 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.13.0 May 03, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### SIP Trunk
+
+#### SIP Header Format Preservation in Voice Automation Transfers
+
+Voice Gateway now preserves the original format of SIP header names (specifically User-to-User headers—UUI) when sending them back to third-party contact centers during inbound call transfers to Voice Automation. The change applies to SIP Refer and SIP Invite methods in UUI Data Settings, agentutils/voiceutils functions in Automation AI, and channel override templates.
+
+### Text to Speech (TTS)
+
+#### Support for Emma Voice in IVR Channel
+
+The IVR channel now supports additional Emma voice options under the Microsoft Azure TTS provider. Users can select the following voices at the Start Flow, the first node of the Start Flow, and Voice Preferences settings:
+
+* en-US-EmmaMultilingualNeural (Female)  
+* en-US-EmmaNeural (Female)  
+* en-US-Emma:DragonHDLatestNeural (Female)  
+* en-US-Emma2:DragonHDLatestNeural (Female)  
+
+This enhancement ensures greater flexibility and consistency in voice experience across IVR flows.
+
+#### LLM Streaming Support for Additional TTS Providers
+
+LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
+
+<hr>
+
 ## v11.12.1 April 19, 2025
 
 <u> Patch Release </u>
