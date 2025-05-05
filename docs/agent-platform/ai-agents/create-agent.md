@@ -159,7 +159,7 @@ For a **Workflow Tool**, enter the tool's **name** and **description**, then cli
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ]())for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page ]() for details on creating a new code tool, along with an example. 
 
 ### Importing a Tool
 
