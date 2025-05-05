@@ -6,9 +6,9 @@ App deployment is the process of moving an application version from development 
 
 Versioning, environments, and the deployment process are critical to managing application releases. This process typically involves the following steps:
 
-1. **Creating an Application Version** – Building and packaging the application code into a deployable version. Versioning is the practice of assigning unique names or numbers to each iteration of an application.
+1. **Creating an Application Version** - Building and packaging the application code into a deployable version. Versioning is the practice of assigning unique names or numbers to each iteration of an application.
 1. **Creating an Environment** - Environments help isolate configurations, ensuring that updates and tests do not impact end users while maintaining separate app configurations across the various stages of development.
-1. **Deploying App to an Environment** – Releasing a selected version to a chosen environment. 
+1. **Deploying App to an Environment** - Releasing a selected version to a chosen environment. 
 1. **Accessing the deployed app** via a unique URL or API for integration or user interaction.
 
    <img src="../../images/app-deployment-overview.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:90%;">
