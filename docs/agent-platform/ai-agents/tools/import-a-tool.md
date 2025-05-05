@@ -30,7 +30,7 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 
 To initiate a tool creation journey through the import functionality, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
+1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
 2. Click **Tools** on the top menu.
 3. Do one of the following based on your requirements:
 
