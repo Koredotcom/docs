@@ -713,6 +713,19 @@ Access to agent dashboard
 </tr>
 </table>
 
+App Owners have exclusive access to several high-level administrative features within the application. The following permissions are implicitly granted to App Owners and are not available to any other user roles:
+
+* **Create New User Role**: Only App Owners can access the *Create New User Role* menu. This feature is completely hidden from all other user roles. 
+
+* **Billing Module Access**: App Owners have access to the *Billing* module. This menu is not visible to any other users. 
+
+* **Activation of Free Tokens**: App Owners can activate *free tokens*. No other user roles have access to this functionality, and no additional permissions are required. 
+
+* **App Profile Modification**: Only App Owners can edit the *App Profile*. While other users may view the profile, they are restricted from making any changes. 
+
+* **Delete App**: Only App Owners have the ability to delete the app. This critical action is restricted to them, with no need for additional permissions.
+
+
 ### APP DEVELOPER
 
 <table>
