@@ -1246,6 +1246,12 @@ Text will be played twice
    <td>PlayHt, Deepgram, ElevenLabs, Whisper
    </td>
    <td>It is used to tune the TTS.
+   <br>
+   <strong>Note</strong>: Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:  
+   <code>ttsProvider = playht</code>
+<code>ttsLanguage = en-US</code>  
+<code>ttsOptions = {"voice_engine": "PlayDialog"}</code>
+<code>voiceName = <respective voice name></code>
    </td>
    <td>
    </td>
