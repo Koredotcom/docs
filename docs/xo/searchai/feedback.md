@@ -2,10 +2,6 @@
 
 The feedback mechanism in Search AI plays a crucial role in evaluating and improving the quality of answers delivered by the application. It allows end users to express their satisfaction with a response through a simple thumbs up or thumbs down action, which can be captured either via the Web SDK or through the public API.
 
-!!!note
-    Currently, feedback mechanism can be enabled only for the answers and not search results. 
-
-
 ## Enabling Feedback Mechanism
 
 To enable the feedback mechanism in answers displayed in the web SDK, go to the **Answer Generation** page and enable the **Feedback Configuration**. 

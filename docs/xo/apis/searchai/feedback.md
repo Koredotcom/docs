@@ -87,7 +87,7 @@ This API is used to capture user feedback and store it within Search AI, where i
   <tr>
    <td>feedbackLevel
    </td>
-   <td>Since the feedback mechanism is enabled for only Answers currently, this field can take the following value only. 
+   <td>Currently, this field can take the following value only. 
 <ul>
 
 <li>smartAnswer</li>

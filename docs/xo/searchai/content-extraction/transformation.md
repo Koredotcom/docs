@@ -65,7 +65,7 @@ Currently, Search AI offers two types of stages for transformation at this step.
 
 2. Custom Script Stage
 
-    Custom Script Stage offers the flexibility to implement custom changes to the content, allowing you to process the data according to your specific business needs. For example, if you wish to prepend the title of all the content extracted from a particular source, you can write a **Painless script** to do the same. 
+    Custom Script Stage offers the flexibility to implement custom changes to the content, allowing you to process the data according to your specific business needs. For example, if you wish to prepend the title of all the content extracted from a particular source, you can write a **JavaScript** to do the same. 
     
     Use the following properties to configure this stage.
 
@@ -123,49 +123,69 @@ Currently, Search AI offers two types of stages for transformation at this step.
 
 ## Stages available for different Extraction Strategies
 
-
 <table>
   <tr>
    <td>
    </td>
-   <td>Text Extraction
+   <td>Field Mapping 
    </td>
-   <td>Advanced HTML Extraction
-   </td>
-   <td>Layout Aware Extraction
-   </td>
-  </tr>
-  <tr>
-   <td>Field Mapping
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
    <td>Custom Script
    </td>
+   <td>Exclude Documents
+   </td>
+  </tr>
+  <tr>
+   <td>Text Extraction
+   </td>
    <td>Yes
    </td>
    <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Advanced HTML Extraction
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Layout Aware Extraction
+   </td>
+   <td>NA
+   </td>
+   <td>NA
    </td>
    <td>NA
    </td>
   </tr>
-   <tr>
-   <td>Exclude Documents
+  <tr>
+   <td>Markdown Extraction
    </td>
-   <td>Yes
+   <td>NA 
    </td>
-   <td>
+   <td>NA 
    </td>
-   <td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>Image-based Document Extraction
+   </td>
+   <td>NA
+   </td>
+   <td>NA 
+   </td>
+   <td>NA
    </td>
   </tr>
 </table>
+
 
 
 
@@ -174,6 +194,19 @@ Currently, Search AI offers two types of stages for transformation at this step.
 To add a new stage, click the **+New Stage** link on the left, configure the stage as required and click on **Save**.  By default, when a stage is added, it is enabled. Hence, the transformation process through the stage happens on the next application training. 
 
 ![alt_text](./images/add-stage.png "image_tooltip")
+
+## Testing the Stage
+
+You can test content transformation logic within the **Document Workbench** using the **Simulate** option. This opens a simulator that allows you to validate any of the configured transformation stages. This simulation helps verify and debug stage transformations before applying them to production data.
+
+To begin testing:
+
+* Select the specific stage you want to test.
+* Choose the number of documents you wish to run the test on.
+
+
+Once executed, the transformed content is displayed in the **Chunk Viewer**. The output is a JSON object, named after the corresponding transformation stage. If any errors occur during the transformation process, they will be captured and listed under the simulate_errors object within the JSON output.
+
 
 ## Enabling/Disabling a Stage
 
