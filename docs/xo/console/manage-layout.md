@@ -285,4 +285,4 @@ Click Report voice issue for the current call to display a pop-up with the follo
 3. Click **Submit**. A notification appears, and a pop-up is displayed.  
     <img src="../images/report-submitted.png" alt="Confirmation Message" title="Confirmation Message" style="border: 1px solid gray; zoom:70%;">  
 
-    A report is sent by mail to the communications team to analyze the issue. Click Done to close the Window or click Download Logs to export the logs.
+    Click **Done** to close the Window or click **Download Logs** to export the logs. The communications team receives a report by mail to analyze the issue.
