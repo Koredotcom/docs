@@ -35,8 +35,11 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 
 
         * **Choose a prompt from prompt hub:** If you select ‘Choose a prompt from prompt hub’, follow these steps:
-            * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.
+            * Select your desired prompt and specific version from the **Prompt** and **Version** drop-down lists. Once selected, the prompt automatically populates in the **Prompt** field.  
+            If the selected prompt version includes a defined response schema, it will be automatically loaded. Additionally, if the prompt was saved as a template with a schema, that schema will also be loaded when the template is selected.
+    
             * To edit the prompt, click the **Customize** option. The ‘Custom Prompt’ view is displayed, where the prompt from Prompt Studio will be populated in both the system and human prompt fields. You can then modify the prompt while preserving the selected version.  
+
         <img src="./../images/choose_prompt_with_variables_fields.png" alt="Choose a prompt" title="Choose a prompt" style="border: 1px solid gray; zoom:70%;">      
 
         !!! note
