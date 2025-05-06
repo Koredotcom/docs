@@ -51,7 +51,7 @@ Supervisors can now view updated call statuses for calls disconnected after bein
     * Reason: Machine Detected, 
     * Disconnecting Event: System,
     * Smart Status: Closed.  
-This enhancement provides a clearer understanding of why calls are disconnected after machine detection. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md)
+This enhancement provides a clearer understanding of why calls are disconnected after machine detection. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#answering-machine-detection)
 
 #### Monitor: Queue Filters and Agent Name Display
 
