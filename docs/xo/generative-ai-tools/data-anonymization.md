@@ -12,4 +12,17 @@ In LLM interactions, the platform maintains the conversation context by anonymiz
 
 !!! note
 
-    Data anonymization is automatically applied to all the runtime features except the Agent node.
+    Data anonymization is automatically applied to all the runtime features.
+
+
+
+
+## De-identification of PII Data
+
+The XO platform now supports the detection and protection of Personally Identifiable Information (PII) at the Agent Node level. Users can choose whether to send redacted or original values to the language model, giving them more control over data exposure.
+
+
+
+* Do not de-identify PII data when making LLM calls: If selected, the platform sends the original PII values to the LLM without redaction or masking.
+
+* Use original values of PII data in service calls (Coming Soon): The platform sends original PII values to the service nodes or SearchAI nodes, as configured at the Agent Node level or globally in PII Settings.

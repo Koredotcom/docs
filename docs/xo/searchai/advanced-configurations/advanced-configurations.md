@@ -17,4 +17,3 @@ The following table lists the supported configurations.
 | [Maximum Re-Rank Chunks](reranking-chunks.md) | Used to set the maximum number of chunks to be sent for reranking.  |
 | [Enable Exact KNN Matching](knn-matching.md) | Used to enable the Exact KNN Matching.   |
 | [Single-Use URLs for Uploaded Documents](single-use-URLs.md) | Used to enable secure and temporary access to uploaded documents.   |
-| [Contextual Embeddings](contextual-embedding.md) | Used to enable adding contextual content as prefix to chunks.   |

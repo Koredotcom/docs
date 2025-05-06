@@ -27,7 +27,9 @@ The Dynamic Routing maintains two key indexes:
 
 ## Full Autonomy
 
-Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths. [Learn More](https://docs.kore.ai/agent-platform/agentic-apps/overview/).
+Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. 
+It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
+ [Learn More](https://docs.kore.ai/agent-platform/agentic-apps/overview/).
 
 ## Configure Automation Node
 
@@ -61,7 +63,8 @@ Select how you want to handle user conversations based on your business needs an
 * **Target Environment:** Select the appropriate environment where your app will be deployed. This setting applies only to the execution after the flow is published. The target environment must be created within the Agentic App.
 
 * **Real-time Voice Interactions:** Enable **Real-time Voice Interactions** powered by multi-modal language models for seamless, low-latency, and context-aware conversations. 
-This feature allows users to engage in two-way voice streaming through the **Kore Voice Gateway**, enhancing automation with AI models. A dedicated orchestrator manages and defines the voice experience and its flow.  
+This feature allows users to engage in two-way voice streaming through the **Kore Voice Gateway**, enhancing automation with AI models. 
+When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in Agent Platform to add voice capabilities to the application. 
 
 <img src="../images/full-autonomy.png" alt="Full Autonomy" title="Full Autonomy" style="border: 1px solid gray; zoom:70%;">
 

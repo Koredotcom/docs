@@ -268,15 +268,25 @@ You can access the Conversation History Length from **Repharse User Query** > **
 
 <img src="../images/conv-history.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
 
-### Zero-shot ML Model
+### Zero-shot Model
+
+!!! note
+
+    The Zero-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
 
 This feature help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
 
 For the Zero-shot model feature, the XO Platform offers two template prompts for every supported model of Open AI and Azure Open AI. The template prompts are “Default” and “Zero-Shot-V2”. The “Zero-Shot-V2” is the advanced version of the “Default” template and is selected by default as you select the model. You can import both templates and create a custom prompt using them.
 
-!!! note
+#### Conversation History Length
 
-    The Zero-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
+!!! Note
+
+    The conversation history length applies only to zero-shot v2 prompts.
+
+This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and virtual assistant (VA) messages. The default value is 10. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. You can access the Conversation History Length from feature **Advanced Settings**.  
+
+<img src="../images/zsm-as.png" alt="Conversation History Length" title="Conversation History Length" style="border: 1px solid gray; zoom:70%;">
 
 **Usage**
 

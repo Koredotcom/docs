@@ -241,13 +241,13 @@ You can choose between the following types. Based on the selection additional co
     The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering, and other natural language tasks. The model is trained and optimized for greater-than-word length text, such as sentences, phrases, or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is the variable-length English text and the output is a 512-dimensional vector.
 
 * **KAEN** (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, [Learn more](https://arxiv.org/pdf/1505.00853.pdf){:target="_blank"}).
-* **Zero-Shot Model**: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.
+* **Zero-Shot Model (ZSM)**: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.
 * **Few-shot Model (Kore.ai Hosted Embeddings)**: Helps define more number of granular intents that describe the user’s intention in the utterance more accurately with limited training requirement.
 
 ### Zero-Shot Model
 
 
-The XO platform allows users to create a Natural Language Understanding (NLU) model to use in a virtual assistant. The **Zero-Shot (ZSM) Model** allows developers to quickly create the model without needing training data. 
+The XO platform allows users to create a Natural Language Understanding (NLU) model to use in a virtual assistant. The **Zero-Shot Model (ZSM)** allows developers to quickly create the model without needing training data. 
 
 Instead, it relies on a pre-trained language model and a logic learning machine (LLM) to identify the intention of a user through the utterance based on semantic similarity. 
 
@@ -267,15 +267,13 @@ Thus, the intents have to be defined very well. This approach is well-suited for
     * ZSM works well when the virtual assistant has good intent coverage.
     * Utterances are required to train entities.
     * Intent names and user utterances will be shared with OpenAI.
-    * Bot Designer should enable the integration with **OpenAI** by providing the **API Key**.
     * When using ZSM, dialog intents and FAQs need to be treated the same.
     * The **ZSM network type** applies only to the ML engine and not the FM, KG, and Traits engines. The Platform continues to use Patterns for Intent matching by the FM engine.
     * There is no option to tweak the training if something does not work.
-    * ZSM is available in the bot-level model configuration and not in the dialog intent model.
+    * ZSM is available in the app-level model configuration and not in the dialog intent model.
     * Multiple intent models are not supported when **Zero-Shot** is enabled.
-    * Bot Synonyms and stop words are not used for intent detection.
+    * App Synonyms and stop words are not used for intent detection.
     * When ZSM is enabled, all the matches from the ML engine are definite.
-    * The **Definite Score** is changed to 80% by default for ZSM based on the NLP performance and accuracy.
     * Only the **_Incorrect Patterns_** and **_Wrong Entity Annotation_** goal-driven validations are enabled when **_Zero-Shot Model_** is enabled.
 
 **How it works**
@@ -315,14 +313,43 @@ When you enable **ZSM network type** for an existing bot, the system does not id
 
     For more descriptive intent names like _“I want to place an order”_ and _“Will I be able to place an order?”_, the system considers the punctuation and the case (upper or lower) to identify the intent.
 
+
+!!! Note
+
+    The Zero-shot Threshold and Zero-shot Definitive Score apply only to zero-shot v2 prompts.
+
+**Zero-shot Threshold**
+
+Zero-shot Threshold defines the criteria for qualifying a probability score of an intent to be a possible match. The default value is set to 0.7. This means that any intent that scores >0.7 is considered as a qualified Intent. Intents scoring <0.7 are rejected.
+
+!!! note
+
+    Apps created after the v11.13 release use a default threshold value of 0.7, while apps created before this release use a default threshold value of 0.6.
+
+**Zero-shot Definitive Score**
+
+Set the threshold score for definite matches between 80-100%. The default value is 95%. If the probability score exceeds 95%, the intent is classified as a Definite Match or Perfect Match.
+
+!!! note
+
+    The zero-shot score is considered if the LLM score is less than it.
+
+
+
+
 **Enable the Zero-Shot Model Network Type**
 
 To enable the **ZSM** model, follow the steps below:
 
-1. Navigate to **Natural Language > NLU Config > Machine Learning**.
-2. Select **_Zero-Shot Model_** in the dropdown list for **Network Type**, and click **Save**.
+1. Navigate to **Virtual Assitance** > **Natural Language** > **NLU Config** > **Engine Tuning** >  **Machine Learning**.
+2. Select **Zero-Shot Model** in the dropdown list for **Network Type**, and click **Save**.  
+<img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
 
-    <img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
+3. Select the check box to **Agree to share the intent names, descriptions, and user utterances with the LLM**. Click **Confirm**. The success message is displayed.  
+<img src="../images/zsm-confirm.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
+
+4. (Optional) Adjust the Zero-shot threshold and Zero-shot Definitive Score as required.  
+<img src="../images/zsm-threshold.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
 
 **Testing the Utterance**
 

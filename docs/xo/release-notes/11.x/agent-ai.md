@@ -6,6 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release </u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
 ### Widget Enhancements
 
 #### Custom Tab in the Agent AI widget

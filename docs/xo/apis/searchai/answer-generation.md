@@ -161,10 +161,10 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
   <tr>
    <td>IncludeMetaDataAnswers</td>
    <td>No </td>
-   <td>This field can fetch specific chunk metadata fields in the response along with the default fields.The requested fields are returned as part of the **graph_answer **field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value.
+   <td>This field can fetch specific chunk metadata fields in the response along with the default fields.The requested fields are returned as part of the <b>graph_answer</b> field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value.
    
    For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
-   
+      
    "IncludeMetaDataAnswers": ["chunkMeta.author", “subtitle”]. 
    
    Note that for metadata fields, use the field name along with the root name, such as chunkMeta.&lt;x>, as shown in the above example. 
@@ -208,31 +208,6 @@ This parameter enables granular control over content accessibility by explicitly
 </table>
 
 
-<!-----
-
-
-
-Conversion time: 0.341 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β44
-* Mon Apr 07 2025 05:55:31 GMT-0700 (PDT)
-* Source doc: Answer API
-* This is a partial selection. Check to make sure intra-doc links work.
-* Tables are currently converted to HTML tables.
------>
-
-
-
 ## Example of Using Custom Data Request parameter
 
 
@@ -242,7 +217,7 @@ Conversion notes:
 ```json
  "customData": {
        "userContext": {
-             "userName": "Rajagopalan",
+             "userName": "John",
              "userId": "john.smith@kore.com",
              "emailId": "john.smith@kore.com"
           }

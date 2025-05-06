@@ -2,7 +2,8 @@
 
 The XO Platform provides role-based user access to features. As such, Roles designate the users’ permissions and access level. The Role Management section lets you create and customize permissions for each.
 
-You can find the **Users** section on the left navigation menu of the products or via the product switcher by going to **Manage** > **Users** > **Manage Users**.
+You can find the **Users** section on the left navigation menu of the products or via the product switcher by going to **Manage** > **Users** > **Manage Users**.  
+
 <img src="../images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
 ## The Role Management Live Board
