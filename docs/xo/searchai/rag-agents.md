@@ -52,7 +52,7 @@ The **Query Transformation Agent** identifies key terms within a query, removing
 * **Refined Query:** *"Kore.ai work-from-home policy details."*
 * **Boosting Applied:** Documents containing these terms in the **title or content** are ranked higher.
 
-4. Metadata Extractor Agent
+### 4. Metadata Extractor Agent
 
 The Metadata Extractor **Agent** extracts relevant sources and fields from a query, maps them to structured data, and applies filters or boosts for accurate retrieval. This agent ensures the system applies appropriate filters to refine the results.
 
