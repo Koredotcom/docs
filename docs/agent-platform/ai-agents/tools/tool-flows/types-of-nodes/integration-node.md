@@ -43,7 +43,7 @@ To add and configure the Integration node, follow the steps below:
 3. In the flow builder, click **Integration** > **+ New Integration** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **Integration** in the pop-up menu.
 <img src="../images/add-int-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
-4. In the **Integration** window, either search for the required service or select from the listed options.
+4. In the **Integration** window, either search for the required service or select from the listed options. [Learn more](../../../../administration/integrations/about-integrations.md/#supported-integrations){:target="_blank"} about the supported integrations.
 <img src="../images/integrations-list.png" alt="integrations list" title="integrations list" style="border: 1px solid gray; zoom:75%;">
 
 5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
