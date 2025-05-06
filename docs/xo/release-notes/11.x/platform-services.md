@@ -35,6 +35,8 @@ To enhance access control and improve user experience, this release introduces a
 * **Operational Efficiency**: Default settings and intuitive labels make permission management faster and easier for App Owners.
 * **Future Scalability**: A modular, cleaner framework supports easier integration of future features and potential role expansions.
 
+[Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#app-owner)
+
 <hr>
 
 ## v11.12.1 April 19, 2025
