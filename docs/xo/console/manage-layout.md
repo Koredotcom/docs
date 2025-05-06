@@ -247,3 +247,42 @@ The **Chat** feature is used for internal communication between agents and super
 
 Clicking the **Chat** icon opens a new display to view the available agents, search for a particular agent, see chat history, and call the agent.  
 <img src="../images/internal-chat.png" alt="Internal Chat" title="Internal Chat" style="border: 1px solid gray; zoom:60%;">
+
+## Help
+
+The purpose of Help is to assist users in understanding and effectively using the interface by providing contextual guidance, instructions, and troubleshooting tips directly within the application.
+
+The Help icon is located in the top right corner.  
+<img src="../images/help-icon.png" alt="Help Icon" title="Help Icon" style="border: 1px solid gray; zoom:60%;">
+
+Click the help icon to view the following support options.
+
+* [Introduction to Kore.ai XO Platform](https://platform.kore.ai/builder/app/console)
+* [Help & Documentation](https://docs.kore.ai/xo/home/)
+* [Community](https://community.kore.ai/)
+* [What's New in v11.x.x](./../getting-started/whats-new-in-xo-platform.md)
+* [Contact Us](https://support.kore.ai)
+* [Academy](https://academy.kore.ai/)
+* [Submit a Request](https://kore.canny.io/)
+* Report voice issue for current call - When an agent faces any problem related to the agent console, they can report an issue.  
+    <img src="../images/support-options.png" alt="Support Options" title="Support Options" style="border: 1px solid gray; zoom:60%;">
+
+### Reporting Issues for Voice Calls
+
+Click **Report voice issue for the current call** to display a pop-up with the following information:
+
+1. Select the category of the issue from the following options, and select the issue from the available options:
+
+    * Audio Clarity
+    * Connection Problems
+    * Voice Transmission
+    * Other Issues (Please specify below)  
+        <img src="../images/report-issue-window.png" alt="Report Issue Window" title="Report Issue Window" style="border: 1px solid gray; zoom:70%;">
+
+2. Add a brief description of the issue and upload a screenshot.  
+    <img src="../images/description-screenshot.png" alt="Description and Screenshot" title="Description and Screenshot" style="border: 1px solid gray; zoom:70%;">
+
+3. Click **Submit**. A notification appears, and a pop-up is displayed.  
+    <img src="../images/report-submitted.png" alt="Confirmation Message" title="Confirmation Message" style="border: 1px solid gray; zoom:70%;">  
+
+    Click **Done** to close the Window or click **Download Logs** to export the logs. The communications team receives a report by mail to analyze the issue.

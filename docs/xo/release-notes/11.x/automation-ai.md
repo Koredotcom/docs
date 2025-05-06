@@ -17,7 +17,7 @@ The Zero-Shot Intent Detection has been improved to utilize genuine confidence s
 Key enhancements
 
 * The system now utilizes genuine confidence metrics from the language model for each identified intent, replacing previously hardcoded scores.
-* A configurable "ML Threshold" setting (default 0.7, range 0-1) has been introduced. Zero-shot intents must exceed this threshold to be considered valid.
+* A configurable "Zero-shot Threshold" setting (default 0.7, range 0-1) has been introduced. Zero-shot intents must exceed this threshold to be considered valid.
 * Threshold-based filtering ensures that only high-confidence intents are sent to the Ranking & Resolver.
 * The default V2 prompt is enhanced with a Conversation History slider parameter.
 * LLM now receives intents, descriptions, conversation history, and the threshold score for processing.
@@ -31,13 +31,12 @@ Key benefits
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#zero-shot-model)
 
 
-
 #### Pre-built and Custom Models Support for Rephrase User Query 
 
 The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
 
 Users can optionally provide the `Conversation_history` key to specify the number of previous conversation messages to send to the LLM for improved contextual understanding.
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#model-and-supported-features---automation-ai)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai-model-feature-matrix)
 
 #### Expanded PII Settings at the Agent Node Level
 

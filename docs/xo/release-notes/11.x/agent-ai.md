@@ -6,11 +6,13 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Minor Release </u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
 ### Widget Enhancements
 
 #### Custom Tab in the Agent AI widget
 
-This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually.
+This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#widget-menu-layout)
 
 #### Introduction of Conversation Events and Automatic Dialog Task Execution on End-of-Conversation Trigger
 
