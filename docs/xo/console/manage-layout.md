@@ -269,7 +269,7 @@ Click the help icon to view the following support options.
 
 ### Reporting Issues for Voice Calls
 
-Click Report voice issue for the current call to display a pop-up with the following information:
+Click **Report voice issue for the current call** to display a pop-up with the following information:
 
 1. Select the category of the issue from the following options, and select the issue from the available options:
 

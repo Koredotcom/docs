@@ -1159,104 +1159,15 @@ Smart Format capabilities vary between models. When Smart Format is turned on, D
 
 ### Common TTS Parameters
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Supporting STT/ TTS</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Examples</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>disableTtsCache
-   </td>
-   <td>Boolean
-   </td>
-   <td>ALL
-   </td>
-   <td>Using cache for calling TTS engine if same statement or word found.
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>ttsEnhancedVoice
-   </td>
-   <td>String
-   </td>
-   <td>AWS
-   </td>
-   <td>Amazon Polly has four voice engines that convert input text into life-like speech. These include Generative, Long-form, Neural, and Standard. To use an Amazon Polly voice
-   </td>
-   <td>Examples
-    standard" , 
-"   neural",
-   "generative",
- "  long-form"
-   </td>
-  </tr>
-  <tr>
-   <td>ttsGender
-   </td>
-   <td>String
-MALE, FEMALE, NEUTRAL
-   </td>
-   <td> Google
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>ttsLoop
-   </td>
-   <td>Number / String
-   </td>
-   <td>ALL
-   </td>
-   <td>The <strong>ttsLoop</strong> parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When <strong>ttsLoop</strong> is enabled, the specified TTS message will be played multiple times in a loop, which is useful in scenarios where you want to ensure the message is heard clearly, or when the user might need more time to process the information.
-   </td>
-   <td>Example - ttsLoop = 2
-Text will be played twice
-   </td>
-  </tr>
-  <tr>
-   <td>earlyMedia
-   </td>
-   <td>Boolean
-   </td>
-   <td>ALL
-   </td>
-   <td>The <strong>Early Media</strong> parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected. This feature is typically employed in telecommunication systems, allowing messages to be played while the call is still in the "early" phase, meaning before the recipient answers the call.
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>ttsOptions
-   </td>
-   <td>Object
-   </td>
-   <td>PlayHt, Deepgram, ElevenLabs, Whisper
-   </td>
-   <td>It is used to tune the TTS.
-   <br>
-   <strong>Note</strong>: Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:  
-   <code>ttsProvider = playht</code>
-<code>ttsLanguage = en-US</code>  
-<code>ttsOptions = {"voice_engine": "PlayDialog"}</code>
-<code>voiceName = <respective voice name></code>
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
+| Parameter        | Type                 | Supporting STT/ TTS                   | Description                                                                                                                                                                                                                       | Examples                                       |
+|------------------|----------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| disableTtsCache  | Boolean              | ALL                                   | Using cache for calling TTS engine if same statement or word found.                                                                                                                                                              |                                                |
+| ttsEnhancedVoice | String               | AWS                                   | Amazon Polly has four voice engines that convert input text into life-like speech. These include Generative, Long-form, Neural, and Standard. To use an Amazon Polly voice                                                      | "standard", "neural", "generative", "long-form" |
+| ttsGender        | String (MALE, FEMALE, NEUTRAL) | Google                                |                                                                                                                                                                                                                                   |                                                |
+| ttsLoop          | Number / String      | ALL                                   | The `ttsLoop` parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message will be played multiple times in a loop.       | Example - `ttsLoop = 2`<br>Text will be played twice |
+| earlyMedia       | Boolean              | ALL                                   | The **Early Media** parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected.                                                                             |                                                |
+| ttsOptions       | Object               | PlayHt, Deepgram, ElevenLabs, Whisper | It is used to tune the TTS.<br>**Note**: Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:<br>`ttsProvider = playht`<br>`ttsLanguage = en-US`<br>`ttsOptions = {"voice_engine": "PlayDialog"}`<br>`voiceName = <respective voice name>` |                                                |
+
 
 ## TTS Options in Voice Gateway
 
