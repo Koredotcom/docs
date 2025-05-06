@@ -260,7 +260,7 @@ Click the help icon to view the following support options.
 * [Introduction to Kore.ai XO Platform](https://platform.kore.ai/builder/app/console)
 * [Help & Documentation](https://docs.kore.ai/xo/home/)
 * [Community](https://community.kore.ai/)
-* [What's New in v11.x.x](../../xo/getting-started/whats-new-in-xo-platform.md)
+* [What's New in v11.x.x](./../getting-started/whats-new-in-xo-platform.md)
 * [Contact Us](https://support.kore.ai)
 * [Academy](https://academy.kore.ai/)
 * [Submit a Request](https://kore.canny.io/)
