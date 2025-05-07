@@ -138,7 +138,7 @@ nav:
     - Orchestration:
       - Supervisor: ai-agents/supervisor-pattern.md
       - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
-    - Build Multi-Agent App:
+    - Multi-Agent App:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up an Agent: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
