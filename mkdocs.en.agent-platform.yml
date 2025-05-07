@@ -138,7 +138,7 @@ nav:
     - Orchestration:
       - Supervisor: ai-agents/supervisor-pattern.md
       - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
-    - Multi-Agent Application:
+    - Build Multi-Agent App:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up an Agent: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
@@ -148,8 +148,8 @@ nav:
         - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
     - Knowledge:
-      - About Knowledge: ai-agents/knowledge/about-knowledge.md
-      - Manage Knowledge Base: ai-agents/knowledge/manage-knowledge-tools.md
+      - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
+      - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
       - Create a Tool: ai-agents/tools/create-a-new-tool.md
