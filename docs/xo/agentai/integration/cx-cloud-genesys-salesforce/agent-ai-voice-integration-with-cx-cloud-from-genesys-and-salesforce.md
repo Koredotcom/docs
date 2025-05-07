@@ -127,7 +127,7 @@ This section explains the post-installation steps of Agent AI integration with S
 ### Enable Kore Agent AI Package Features
 
 1. Click the **App Launcher** icon, and search with **Kore** in the search field.
-2. Click **Kore AgentAssist Feature Configuration** from the suggestions list.  
+2. Click **Kore Agent AI Feature Configuration** from the suggestions list.  
 <img src="../images/kore-agent-assist-feature-configuration-15.png" alt="kore-agent-assist-feature-configuration" title="kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;"> 
 3. Click the **New** button on the top-right, and select the features in the package you want to use. 
 
@@ -143,8 +143,8 @@ This section explains the post-installation steps of Agent AI integration with S
 
 ### Set up Widget Configuration
 
-1. Click the **App Launcher** icon on the top-left, and type **Kore AgentAssist Configuration** in the search bar.
-2. Click **Kore AgentAssist Configuration** from the suggestions list.  
+1. Click the **App Launcher** icon on the top-left, and type **Kore Agent AI Configuration** in the search bar.
+2. Click **Kore Agent AI Configuration** from the suggestions list.  
 <img src="../images/open-agent-assist-configuration-18.png" alt="open-agent-assist-configuration" title="open-agent-assist-configuration" style="border: 1px solid gray; zoom:80%;"> 
 	
 3. Click the **New** button for providing configurations.  
@@ -156,7 +156,7 @@ This section explains the post-installation steps of Agent AI integration with S
 
     !!! note
 
-        In the AgentAssist URL field, use the URL from **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** of your Agent AI instance.  
+        In the Agent AI URL field, use the URL from **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** of your Agent AI instance.  
 
     <img src="../images/web-mobile-client-21.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">  
 
@@ -283,3 +283,6 @@ If you are using Kore-managed transcriptions, the final step is to install Audio
 <img src="../images/ending-a-call-44.png" alt="ending-a-call" title="ending-a-call" style="border: 1px solid gray; zoom:80%;">  
 
 9. A pop-up window shows the conversation summary. To save it in Salesforce, click the **Submit** button.
+10. On submitting the summary, it gets stored inside one of the custom objects. To access the summary, search inside **App Launcher** > **Kore NonCTI AgentAI Conversation Summary**.  
+<img src="../images/kore-noncti-agentai-conversation-summary-45.png" alt="kore-noncti-agentai-conversation-summary" title="kore-noncti-agentai-conversation-summary" style="border: 1px solid gray; zoom:80%;">  
+
