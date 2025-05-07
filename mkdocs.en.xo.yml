@@ -494,7 +494,7 @@ nav:
       - Agent Playbook: agentai/agent-experience/playbook.md
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
-        - Welcome Events: agentai/configuration/welcome-events.md
+        - Conversation Events: agentai/configuration/conversation-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md

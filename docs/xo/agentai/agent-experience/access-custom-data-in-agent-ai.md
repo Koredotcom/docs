@@ -13,7 +13,7 @@ To access custom data in the Welcome Event section, follow these steps:
 3. Click **Agent AI** > **Configurations** > **Welcome Events**.
 4. Click to expand the **Configure Greeting Messages** section on the **Welcome Event** page.  
 <img src="../access-custom-data-images/configure-greeting-messages.png" alt="configure-greeting-messages" title="configure-greeting-messages" style="border: 1px solid gray; zoom:80%;">  
-5. Click the **edit** button against a message where you want to access custom data. (If you don’t have any greeting messages, add a new one by following the [Welcome Event](./../configuration/welcome-events.md){:target="_blank"} doc.)
+5. Click the **edit** button against a message where you want to access custom data. (If you don’t have any greeting messages, add a new one by following the [Welcome Event](../configuration/conversation-events.md){:target="_blank"} doc.)
 6. Access your custom data in the **Message** field, as highlighted in the following screenshot:  
 <img src="../access-custom-data-images/edit-welcome-message.png" alt="edit-welcome-message" title="edit-welcome-message" style="border: 1px solid gray; zoom:80%;">
 
