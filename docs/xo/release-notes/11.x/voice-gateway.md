@@ -31,6 +31,12 @@ This enhancement ensures greater flexibility and consistency in voice experience
 
 LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
 
+### Phone Numbers
+
+#### Auto-Deletion of Inactive Twilio Phone Numbers
+
+Twilio phone numbers with no inbound or outbound activity, including test flows, that have been inactive for over 90 days will be automatically deleted and removed from the UI across the Phone Number Purchase screen, Experience Flows, and Outbound Dialer Widget. If a deleted number receives an inbound call, the bot will play the message: “Can’t place the call right now, please try later.” A notification on the Phone Numbers page (visible only to Administrators and App Owners/App Developers) informs users of this policy. The page also includes updated text about auto-deletion, and eligible users will receive email notifications 7 days before and on the day of deletion.
+
 <hr>
 
 ## v11.12.1 April 19, 2025
