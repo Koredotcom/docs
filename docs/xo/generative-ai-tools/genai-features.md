@@ -105,10 +105,10 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
     ![alt_text](images/image1-8.png  )
 	
 
-## Automation AI Features
+## Automation AI
 
 
-### Model and Supported Features - Automation AI
+### Automation AI Model Feature Matrix
 
 The following table displays the features and the supported models. 
 
@@ -116,7 +116,7 @@ The following table displays the features and the supported models.
 
 === "Automation AI - Runtime Features"
 
-    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query|Zero-shot ML Model|
+    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query#|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI – <br>GPT 4|✅|✅|✅|✅|✅|✅^|
     |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
@@ -144,6 +144,8 @@ The following table displays the features and the supported models.
 \* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
 
 \** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
+
+\# *The XO platform does not provide system prompts for the Rephrase User Query feature when you use OpenAI or Azure OpenAI models. To use this feature with these LLMs, you must create a custom prompt.*
 
 ### Agent Node
 
@@ -539,9 +541,9 @@ If you select Create without use cases when creating a bot, the system won’t p
 		
 
 
-## Search AI Features
+## Search AI
 
-### Model and Supported Features - Search AI
+### Search AI Model Feature Matrix
 
 The following table displays the features and the supported models. 
 
@@ -572,9 +574,9 @@ This feature helps create vector embeddings for all the ingested data in the Sea
 
 To learn more about the feature, see [Rephrase User Query](#rephrase-user-query).
 
-## Agent AI Features
+## Agent AI
 
-### Model and Supported Features - Agent AI
+### Agent AI Model Feature Matrix
 
 The following table displays the features and the supported models. 
 

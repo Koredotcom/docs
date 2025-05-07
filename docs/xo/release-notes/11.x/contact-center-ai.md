@@ -16,7 +16,7 @@ The Agent Console now displays real-time sentiment updates and a clickable graph
 
 #### Voice Issue Reporting Enhancement
 
-The Console and Monitor tabs now include an enhanced 'Help' menu with a 'Report Voice Issue for Current Call' function. This allows agents and supervisors to report voice problems easily via a standardized form. The system collects issue details and logs upon submission, sends internal notifications, and confirms the report. 
+The Console and Monitor tabs now include an enhanced 'Help' menu with a 'Report Voice Issue for Current Call' function. This allows agents and supervisors to report voice problems easily via a standardized form. The system collects issue details and logs upon submission, sends internal notifications, and confirms the report. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#reporting-issues-for-voice-calls)
 
 #### Improved Global Dialing Using Outbound Dialer
 
@@ -51,7 +51,7 @@ Supervisors can now view updated call statuses for calls disconnected after bein
     * Reason: Machine Detected, 
     * Disconnecting Event: System,
     * Smart Status: Closed.  
-This enhancement provides a clearer understanding of why calls are disconnected after machine detection. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md)
+This enhancement provides a clearer understanding of why calls are disconnected after machine detection. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#answering-machine-detection)
 
 #### Monitor: Queue Filters and Agent Name Display
 
