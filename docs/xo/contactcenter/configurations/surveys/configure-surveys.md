@@ -55,7 +55,7 @@ The Chat, Call, and Email Experience tabs provide access to the following featur
 
 * Click the **Chat Experience**, **Call Experience**, or **Email Experience** tabs.
 * Enable the **Chat Experience**, **Call Experience**, or **Email Experience** to request customers to take the survey.
-* Configure the **Request** and **Gratitude Messages** that appear to customers before and after they take the survey.
+* Configure the **Request Message** and add a **Gratitude Message** that will appear to customers before and after they take the survey.
     * Choose the message language, type the message in, then click **Done**.  
     <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:80%;">
 * Set the Survey Frequency by configuring the following options:
