@@ -20,9 +20,9 @@ In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to 
 
 * **Welcome Events**: Pre-configured greeting messages and dialog tasks that automatically trigger when a conversation is assigned to an agent in the Agent AI widget.  
 * **Exit Events**: Pre-configured dialog task or conversation summary that automatically runs when the end-of-conversation event triggers. 
-!!! note
 
-    You can enable either the dialog task or the conversation summary for the Exit Events section.  
+    !!! note
+        You can enable either the dialog task or the conversation summary for the Exit Events section.  
 [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/conversation-events.md)
 
 #### Improved Search Functionality in Library
