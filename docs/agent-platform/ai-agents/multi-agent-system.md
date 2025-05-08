@@ -1,8 +1,8 @@
 # Multi-Agent System
 
-**A multi-agent system** (MAS) is a general approach where multiple autonomous software agents interact and coordinate to solve complex problems. The agents collaborate to achieve system-level goals that would be challenging for any single agent to accomplish alone.
+**A Multi-Agent System** (MAS) is a general approach where multiple autonomous software agents interact and coordinate to solve complex problems. The agents collaborate to achieve system-level goals that would be challenging for any single agent to accomplish alone.
 
-**An agentic app** (or agentic AI) provides a robust framework for developing sophisticated multi-agent systems. The app integrates and orchestrates multiple specialized AI agents to deliver intelligent, adaptive solutions to complex problems. The agentic framework enables complexity management, promotes flexibility, allows for scalability, and encourages the reuse of components when creating advanced AI applications.
+**An Agentic App** (or Agentic AI) provides a robust framework for developing sophisticated multi-agent systems. The app integrates and orchestrates multiple specialized AI agents to deliver intelligent, adaptive solutions to complex problems. The agentic framework enables complexity management, promotes flexibility, allows for scalability, and encourages the reuse of components when creating advanced AI applications.
 
 ## Key Concepts
 
