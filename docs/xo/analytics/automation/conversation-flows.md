@@ -1,6 +1,6 @@
 # Conversation Flows
 
-Conversation Flows is a visual representation of the user journey. The user interactions with the virtual assistants are analyzed by the platform to provide insights into the commonly used intents, paths traversed, and drop-off points. xyz
+Conversation Flows is a visual representation of the user journey. The user interactions with the virtual assistants are analyzed by the platform to provide insights into the commonly used intents, paths traversed, and drop-off points.
 
 
 !!! note
@@ -18,7 +18,7 @@ The Conversation Flows provides the following views:
 
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/conversation-flows-dashboard.png" alt="Conversation Flows Dashboard" title="Conversation Flows Dashboard" style="border: 1px solid gray; zoom:80%;">
 
