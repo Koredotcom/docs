@@ -16,7 +16,6 @@ For example, an e-Commerce company requiring insights on user trend-based data f
 **To view the Users dashboard, follow the steps**: 
 
 
-
 1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/users-dashboard.png" alt="Users Dashboard" title="Users Dashboard" style="border: 1px solid gray; zoom:80%;">
@@ -53,7 +52,7 @@ The key components of the Users Dashboard are:
 
     **Users Trend Summary**: This panel displays the real-time counts of the **Total Unique Users**, **New Users**, **Avg. Total Unique Users Per Day**, and **Avg. New Users Per Day**.
 
-The increment/decrement of the above user metrics’ counts is displayed as percentage values.
+    The increment/decrement of the above user metrics’ counts is displayed as percentage values.
 
 
 * **Returning Users**: Displays the graph for the day-wise returning users (in percentage) for the selected dates and other filters. Here, Day 0 is the first time a user interacts with the virtual assistant. The returning users % is calculated for the consecutive days for the selected period. For example, in the following image, the number of users is 100% on Day 0 (first interaction) and 0% on Day 1 since none of the users who have already interacted with the virtual assistant have initiated a conversation on the same channel/browser. 
@@ -64,7 +63,7 @@ The increment/decrement of the above user metrics’ counts is displayed as perc
     <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
 
 
-    * **Cohort Analysis**: This data visualization chart plots the weekly **new users** and the **percentage of returning users** based on the formula **_(Returning Users/New Users)*100_** on consecutive days to determine the retention rate. The Users Dashboard displays the Day N retention of daily, weekly, or monthly cohorts, within a customizable range of dates. For example, if you’re looking at the retention of daily cohorts acquired from July 13 to July 20, 2022, based on the filters selected, and the actual users returning on Day 2, the following **Cohort Analysis Chart** is displayed:
+* **Cohort Analysis**: This data visualization chart plots the weekly **new users** and the **percentage of returning users** based on the formula **_(Returning Users/New Users)*100_** on consecutive days to determine the retention rate. The Users Dashboard displays the Day N retention of daily, weekly, or monthly cohorts, within a customizable range of dates. For example, if you’re looking at the retention of daily cohorts acquired from July 13 to July 20, 2022, based on the filters selected, and the actual users returning on Day 2, the following **Cohort Analysis Chart** is displayed:
 
 
 

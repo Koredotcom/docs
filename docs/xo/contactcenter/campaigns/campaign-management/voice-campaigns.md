@@ -124,6 +124,90 @@ Dispositions are displayed to the agent when the call ends.
 
 A campaign automatically ends once all numbers are connected. If a call is not connected, the dialing rules, such as retry waiting periods are checked. The number is redialed after all other records have been attempted. The maximum number of attempts for each contact is set. For example, If a contact's max attempt is 1, it won't be retried. If it's 2, the contact is marked as Retry = yes and will be retried as per the configured logic.
 
+### Filters
+
+Campaign Managers can create, duplicate, mark as default, delete and edit filters for the campaigns.
+
+#### Create a Filter
+
+Steps to create a filter:
+
+1. Click **Filters** in the top right corner.  
+    <img src="../images/filters-dropdown.png" alt="Filters" title="Filters" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **+ Add New Filter**.  
+    <img src="../images/add-new-filter.png" alt="Add Filter" title="Add Filter" style="border: 1px solid gray; zoom:70%;">
+
+3. Select the **Status**, **Priority**, and **Dialing Mode**, and choose their respective sub-filters.  
+    <img src="../images/filter-by-voice.png" alt="Filter by" title="Filter by" style="border: 1px solid gray; zoom:70%;">
+
+    Select from the available options below:
+    1. **Clear All**– Clears all selections.
+    2. **Save & Apply** – Saves the filter, and it appears when selected.
+    3. **Apply** – Applied for one instance and not saved.
+
+4. Click **Save & Apply**.
+
+5. On the pop-up window, enter a name  (up to 20 characters) for the filter and click **Save & Apply**.  
+        <img src="../images/save-filter-voice.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:70%;">  
+
+    Turn on the **Make this the default view toggle** to view the filter as the default filter on the voice campaigns tab.  
+        <img src="../images/default-view-voice.png" alt="Default View" title="Default View" style="border: 1px solid gray; zoom:70%;"> 
+
+6. Click the **Filters** dropdown to view Saved Filters. Hover over the saved filter to view the following options:
+    1. Duplicate
+    2. Mark as Default
+    3. Delete
+    4. Edit  
+        <img src="../images/saved-filters-voice-campaign.png" alt="Saved Filter Options" title="Saved Filter Options" style="border: 1px solid gray; zoom:70%;"> 
+
+#### Duplicate a Filter
+
+Steps to duplicate a Filter:
+
+1. Click **Duplicate**.  
+    <img src="../images/duplicate-voice.png" alt="Duplicate" title="Duplicate" style="border: 1px solid gray; zoom:70%;">
+
+2. Enter a name for the duplicate filter and click **Save**.  
+    <img src="../images/rename-filter-voice.png" alt="Rename Filter" title="Rename Filter" style="border: 1px solid gray; zoom:70%;">
+
+    A notification appears, creating the duplicate filter with the same attributes as the original filter.  
+        <img src="../images/duplicate-filter-voice.png" alt="Duplicate Filter" title="Duplicate Filter" style="border: 1px solid gray; zoom:70%;">
+
+#### Mark as Default
+
+Step to mark a filter as default:
+
+1. Click **Mark as Default**.  
+    <img src="../images/mark-as-default-voice.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:70%;">
+
+    A notification appears, and the filter is marked as default.  
+        <img src="../images/default-voice.png" alt="Default" title="Default" style="border: 1px solid gray; zoom:70%;">
+
+    !!! Note
+
+        Clicking the Mark as Default again will un-mark the filter.
+
+#### Delete a Filter
+
+Steps to delete a filter:
+
+1. Click **Delete**.  
+    <img src="../images/delete-voice.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Delete** on the confirmation pop-up. The Filter is deleted.  
+    <img src="../images/confimation-delete-voice.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:70%;">
+
+#### Edit a Filter
+
+Steps to edit a filter:
+
+1. Click **Edit**.  
+    <img src="../images/edit-voice.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
+
+2. Make the necessary changes and click **Save & Apply**. A confirmation is displayed, and the filter is updated.  
+    <img src="../images/save-edited-filter-voice.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:70%;">
+
 ### Create Voice Campaigns
 
 Steps to create Voice campaigns:

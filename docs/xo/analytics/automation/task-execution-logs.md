@@ -6,7 +6,7 @@ The **Task Execution Logs** feature helps you gain in-depth insights into the ta
 
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
     
     <img src="../images/navigating-to-task-execution-logs.png" alt="Navigating to Task Execution Logs" title="Navigating to Task Execution Logs" style="border: 1px solid gray; zoom:80%;">
 

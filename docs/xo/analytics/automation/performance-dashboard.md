@@ -16,11 +16,6 @@ After you publish a Virtual Assistant (VA), you can monitor its performance usin
     <img src="../images/performance-dashboard.png" alt="Performance Dashboard" title="Performance Dashboard" style="border: 1px solid gray; zoom:100%;">
 
 
-!!! note
-
-    The Performance dashboard is available only post-9.2 release, i.e. post April 09, 2022.
-
-
 ## Performance Dashboard Metrics
 
 The Performance Dashboard provides insights to understand the virtual assistant’s NLP performance and integration metrics. The Performance Dashboard is categorized into four categories to identify how a virtual assistant performs. These categories are mentioned below:

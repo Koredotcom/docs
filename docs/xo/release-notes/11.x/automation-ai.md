@@ -297,7 +297,6 @@ Tool Calling enables Agent Node (previously GenAI Node) to interact with your bu
 Key updates
 
 * Tool calling integration with business applications and external data.
-* New tools repository for managing custom and system integrations.
 * Direct connection between tools and actions (scripts, service Search AI, Webhooks).
 * Prompts include tool definitions and context for decision-making.
 

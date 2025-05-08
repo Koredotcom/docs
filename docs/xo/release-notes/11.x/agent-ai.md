@@ -33,7 +33,7 @@ Search functionality automatically updates the library list to match the search 
 
 #### Five9 Chat Integration with Agent AI
 
-The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window.
+The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/five9/agentai-chat-integration-with-five9.md)
 
 #### Updated Salesforce Package and support for new Salesforce Live Chat for new organizations
 
