@@ -48,7 +48,7 @@ Set up retrieval and answer generation strategies to deliver the most accurate a
 * [Query Processing to improve retrieval relevance](https://docs.kore.ai/xo/searchai/rag-agents/){:target="_blank"}: Leverages LLM to enhance and clarify user queries by understanding the context and user intent. Also identifies key terms within a query and removes noise from the user query. This helps improve query understanding and retrieval accuracy. 
 * [Answer Generation configuration](https://docs.kore.ai/xo/searchai/answer-generation/){:target="_blank"}: Define how responses are composed based on retrieved content. You can configure whether the response should be extractive (directly from content) or generative (summarized and rephrased). For generative answers, configure further properties for optimized results. 
 
-[Learn More](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}.
+[Learn more about Search AI](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}.
 
 
 ### An Example Scenario
