@@ -147,7 +147,6 @@ Key updates to products and features are summarized below. Click the correspondi
     It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
     [Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
     
-    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md/)
 
 
 
@@ -197,6 +196,9 @@ Key updates to products and features are summarized below. Click the correspondi
 
     Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
     <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+
+    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md/)
+
 
 
 
