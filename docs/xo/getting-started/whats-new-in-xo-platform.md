@@ -133,8 +133,21 @@ Key updates to products and features are summarized below. Click the correspondi
     [Learn more :octicons-arrow-right-24:](../automation/dynamic-routing.md)
 
 
+    ## LLM and Generative AI Framework
 
+    ### Guardrails
 
+    Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
+
+    Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
+    [Learn more :octicons-arrow-right-24:](../generative-ai-tools/guardrails.md)
+
+    ### Monitoring
+
+    It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
+    [Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
+    
+    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md/)
 
 
 
@@ -185,21 +198,7 @@ Key updates to products and features are summarized below. Click the correspondi
     Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
     <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
 
-    ## LLM and Generative AI Framework
 
-    ### Guardrails
-
-    Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
-
-    Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
-    [Learn more :octicons-arrow-right-24:](../generative-ai-tools/guardrails.md)
-
-    ### Monitoring
-
-    It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
-    [Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
-    
-    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md/)
 
 === "Search AI"
 
