@@ -13,8 +13,6 @@ The NLP Insights feature helps you gain in-depth insights into the analytics dat
 
 The **NLP Insights** page shows the specific information in the following sections:
 
-
-
 * Intent Found: Number of identified intents
 * Intent Not Found: Number of unidentified intents
 * Unhandled Utterances: Number of unhandled utterances
