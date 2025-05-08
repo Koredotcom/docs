@@ -16,7 +16,6 @@ For example, an e-Commerce company requiring insights on user trend-based data f
 **To view the Users dashboard, follow the steps**: 
 
 
-
 1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/users-dashboard.png" alt="Users Dashboard" title="Users Dashboard" style="border: 1px solid gray; zoom:80%;">
