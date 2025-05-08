@@ -154,10 +154,10 @@ The following modules and features are supported on the **Settings** Console:
    <td>Manage the configured easy and custom integrations and connections in one place.</td>
    <td>
 <ul>
-<li><strong>Hugging Face</strong>: Import exclusive and private models into Agent Platform from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="../administration/integrations/enable-hugging-face/"> Learn more</a>.</li>
-<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="../administration/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
+<li><strong>Hugging Face</strong>: Import exclusive and private models into Agent Platform from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="../../administration/integrations/enable-hugging-face/"> Learn more</a>.</li>
+<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="../../administration/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
 <li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. 
-<a href="../administration/integrations/integrate-with-wandb/">Learn more</a>.
+<a href="../../administration/integrations/integrate-with-wandb/">Learn more</a>.
 </li>
 </ul>
    </td>
