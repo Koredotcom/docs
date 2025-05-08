@@ -195,6 +195,8 @@ nav:
         - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
     - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
+    - App Analytics:
+      - Sessions and Traces: ai-agents/agentic-apps/app-analytics.md
     - App Deployment: 
       - Deploy an App Version: ai-agents/agentic-apps/deployment/app-deployment.md
       - Access Deployed Version: ai-agents/agentic-apps/deployment/access-deployed-version.md

@@ -7,8 +7,6 @@ Agent Platform provides detailed traces and logs to analyze the execution of an 
 
 A trace represents the lifecycle of a single request to the Agentic app. It captures all relevant events, actions, and outputs involved in handling a task, making it easier to monitor and debug workflows. Each trace can contain multiple observations to log the individual steps of the process. Each observation can be of one of the following types. 
 
-
-
 * Event: Captures a specific occurrence (e.g., an API call or user action).
 * Span: Represents a timed operation (e.g., execution time of a function).
 * Generation: Stores AI-generated content or responses (e.g., LLM outputs).
