@@ -140,7 +140,7 @@ nav:
       - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up an Agent: ai-agents/create-agent.md
+      - Set up Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
