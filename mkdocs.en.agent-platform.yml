@@ -203,6 +203,7 @@ nav:
       - App Import & Export: 
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
+      - Audit Logs: ai-agents/agentic-apps/audit-logs.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview-core-ai.md 
     - Models: 

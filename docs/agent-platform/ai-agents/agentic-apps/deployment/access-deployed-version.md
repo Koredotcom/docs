@@ -32,21 +32,3 @@ API Key is required to authenticate the requests sent to the Agentic App via API
 
 * Go to the API Keys page and create a new API key.
 * Provide a name for the key and click Generate Key. This will create a unique key. Keep it confidential. For security reasons, you will not be able to view this key again once you navigate away from the page.
-
-## Track User Activity with Audit Logs
-
-Audit logs provide a comprehensive record of all changes made across the account by different users. These logs are essential for tracking user activity, ensuring compliance, and pinpointing any unauthorized modifications, which enhances the overall security and accountability within the system.
-
-Each log entry includes the following to provide actionable insights on account and tool-level activities:
-
-* Event name and category.
-* The user who performed the action.
-* Date and time of the event.
-* Detailed description of the action.
-
-To export the audit logs, follow the steps below:
-
-* Go to the **Audit Logs** page and click the **Export** icon next to the **Filter By** icon.
-* .CSV file is downloaded. The file can be found in the configured location in your system.
-
-   <img src="../images/audit-log.png" alt="Embed code" title="Embed code" style="border: 1px solid gray; zoom:80%;">

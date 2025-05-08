@@ -10,6 +10,7 @@ Users can also pass contextual information to the agent through attachments. [Le
 **Query Input**: Enter your query in the designated input field to initiate the simulation.
 
 **Response Display**: The agent's response is displayed, providing immediate feedback on the input provided.
+
 **Processing Timeline**: The right pane displays a chronological timeline that details the processing of the user query. It helps you trace the flow of execution and understand the contribution of each component involved in generating a response. The highlights of the timeline:
 
 * Displays the query execution in chronological order, starting from the user's input to the final output.
