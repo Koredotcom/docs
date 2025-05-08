@@ -1,6 +1,6 @@
 # Integration Node - Automate Third-party Integrations
 
-The **Integration node** allows you to connect to a third-party service provider within the Tool Flow using the configured connection and auth method from the **Settings** console. [Learn more](../../../settings/integrations/about-integrations.md){:target="_blank"}.
+The **Integration node** allows you to connect to a third-party service provider within the Tool Flow using the configured connection and auth method from the **Settings** console. [Learn more](../../../../administration/integrations/about-integrations.md){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -31,7 +31,7 @@ You can configure the required action parameters directly in the UI, or view and
 <img src="../images/no-connection.png" alt="no connection" title="no connection" style="border: 1px solid gray; zoom:75%;">
 
 
-To add a connection, click **+ Add Connection**. The system redirects to **Settings** > **Integrations** page. Follow the steps here to complete the process.
+To add a connection, click **+ Add Connection**. The system redirects to **Settings** > **Integrations** page. Follow the steps [here](../../../../administration/integrations/about-integrations.md/#add-a-connection-to-set-up-integration){:target="_blank"} to complete the process.
 
 
 To add and configure the Integration node, follow the steps below:
@@ -43,7 +43,7 @@ To add and configure the Integration node, follow the steps below:
 3. In the flow builder, click **Integration** > **+ New Integration** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **Integration** in the pop-up menu.
 <img src="../images/add-int-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
-4. In the **Integration** window, either search for the required service or select from the listed options.
+4. In the **Integration** window, either search for the required service or select from the listed options. [See](../../../../administration/integrations/about-integrations.md/#supported-integrations){:target="_blank"} the list of supported pre-built integrations.
 <img src="../images/integrations-list.png" alt="integrations list" title="integrations list" style="border: 1px solid gray; zoom:75%;">
 
 5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
@@ -169,7 +169,7 @@ To run and test the flow, follow the steps below:
 
 2. (Optional) Add the value for the **Input Variable** if you have configured it to test the flow. Otherwise, go directly to the next step.
 3. Click **Generate Output**.
-
+   
    <img src="../images/click-generate-op.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
  
 

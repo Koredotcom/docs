@@ -15,9 +15,7 @@ Currently, Agent Platform supports the following three system events:
     To enable and configure the Welcome event, follow these steps:
 
     * Click on the edit icon and enable the event status.  
-    * Under Actions, configure the greeting message using the Send Message to User option that users see when a new session starts. You can either use AI to generate the message or provide a custom message.
-
-    <img src="../images/welcome-events.png" alt="Welcome Event" title="Welcome Event" style="border: 1px solid gray; zoom:90%;">
+    * Under Actions, configure the greeting message using the **Send Message to User** option that users see when a new session starts. You can either use AI to generate the message or provide a custom message. <img src="../images/welcome-events.png" alt="Welcome Event" title="Welcome Event" style="border: 1px solid gray; zoom:90%;">
 
 1. **Agent Handoff**
 
@@ -29,8 +27,8 @@ Currently, Agent Platform supports the following three system events:
     Send Message to User: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. 
     * **Session Management**: Specify how the session should be handled after the event occurs, during a human handoff.
     * **Keep Alive**: Maintain the current session even after this event.
-    * **Terminate Session**: End the session once the event is triggered.
-
+    * **Terminate Session**: End the session once the event is triggered. 
+    
     <img src="../images/agent-handoff.png" alt="Agent Handoff" title="Agent Handoff" style="border: 1px solid gray; zoom:90%;">
 
 1. **End of Conversation Event**
@@ -42,13 +40,13 @@ Currently, Agent Platform supports the following three system events:
     To enable and configure the event,
     
     * Click on the edit icon and enable the event status.  
-    * The description field indicates how to identify the end of conversation and trigger this event. 
+    * The Description field indicates how to identify the end of conversation and trigger this event. 
     * Under Actions, configure the event using the following fields. 
-        * Send Session Information: Define one or more fields to capture key details from the conversation and store them in session memory. For example, you can save an interaction summary at the end of a session. Specify the field name and describe the expected content. The system uses the context to populate these fields automatically using the LLM and saves them in the session.
+        * **Send Session Information**: Define one or more fields to capture key details from the conversation and store them in session memory. For example, you can save an interaction summary at the end of a session. Specify the field name and describe the expected content. The system uses the context to populate these fields automatically using the LLM and saves them in the session.
         You can add one or more fields to save session information.
-        * Send Message to User: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. 
-        * Session Management: Specify how the session should be handled after the event occurs.
-            * Keep Alive: Maintain the current session even after this event.
-            * Terminate Session: End the session once the event is triggered.
+        * **Send Message to User**: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. 
+        * **Session Management**: Specify how the session should be handled after the event occurs.
+            * **Keep Alive**: Maintain the current session even after this event.
+            * **Terminate Session**: End the session once the event is triggered.
 
         <img src="../images/end-of-conversation.png" alt="End of Conversation Event" title="End of Conversation Event" style="border: 1px solid gray; zoom:90%;">
