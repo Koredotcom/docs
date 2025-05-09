@@ -69,6 +69,10 @@ When you create or modify a report schedule, the interface displays the option t
 
 Campaign Managers can create, duplicate, mark as default, delete and edit filters for Voice, SMS, and Proactive Web Campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
 
+#### API Integrated Contacts for Voice Campaigns
+
+Campaign Managers can now configure voice campaigns using API-based contacts for any of the supported dialing modes—Agentless, Progressive, or Preview—enabling streamlined integration with external systems. Additionally, attaching a contact list to a campaign using an API sync configuration establishes a real-time connection with a third-party database, ensuring the campaign accesses up-to-date contact information directly from the external source. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration)
+
 ### API
 
 #### Updated API Endpoint Naming for Export/Import
