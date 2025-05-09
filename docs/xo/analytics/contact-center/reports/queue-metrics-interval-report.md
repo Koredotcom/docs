@@ -12,12 +12,14 @@ Steps to generate the Queue Metrics Interval Report:
 4. Select the **Time Period**.
 5. Select the **Data Filters**.
 6. Select Report Generation and choose from the following options:
-    1. Schedule
-        1. Run On Demand
-        2. Schedule
-    2. Select Format
-        1. CSV
-    3. Send To (single email address or a mailing list)
+    * Schedule
+        * Run On Demand
+        * Schedule
+            * You can create up to six schedules (only one schedule if you select Hourly).  
+                <img src="../images/schedule-options.png" alt="Schedule Options" title="Schedule Options" style="border: 1px solid gray; zoom:70%;">
+    * Select Format
+        * CSV
+    * Send To (single email address or a mailing list)
 7. Click **Create**.  
 <img src="../images/create-report-queue-metrics-interval.png" alt="Create Report" title="Create Report" style="border: 1px solid gray; zoom:70%;">
 

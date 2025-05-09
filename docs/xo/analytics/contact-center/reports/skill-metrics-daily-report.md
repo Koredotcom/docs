@@ -12,26 +12,28 @@ To generate a Skill Metrics Daily Report:
 4. Select a **Time Period**.
 5. Select **Data Filters** (Direction, Channels, Skills).
 6. Select Report Generation and choose from the following options:
-    1. Schedule
+    * Schedule
         * Run On Demand
         * Schedule
-    2. Select Format
+            * You can create up to six schedules (only one schedule if you select Hourly).  
+                <img src="../images/schedule-options.png" alt="Schedule Options" title="Schedule Options" style="border: 1px solid gray; zoom:70%;">
+    * Select Format
         * CSV
-    3. Send To (single email address or mailing list)
+    * Send To (single email address or mailing list)
 7. Click **Create**.  
     <img src="../images/create-report-skills-metrics.png" alt="Create Report" title="Create Report" style="border: 1px solid gray; zoom:70%;">
 
-8. An instance of the Skill Metrics Daily Report is generated.  
+8. An instance of the Skill Metrics Daily Report is generated.    
     <img src="../images/report-created-skill-metrics.png" alt="Report Created" title="Report Created" style="border: 1px solid gray; zoom:70%;">
 
-9. Click the **Run** icon next to the instance of the report.  
+9. Click the **Run** icon next to the instance of the report.    
     <img src="../images/run-skill-metrics-report.png" alt="Run Report" title="Run Report" style="border: 1px solid gray; zoom:70%;">  
 
     While generating reports, you have two options: Run On Demand and Schedule.  
     **Run On Demand**: While creating a new report or editing an existing report, the schedule of the report can be set to run on demand.  
     **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later, then it will automatically be generated on the scheduled day and time without the need to click Run.
 
-10. Click the CSV icon and generate the output of that report, as shown below.  
+10. Click the CSV icon and generate the output of that report, as shown below.    
 <img src="../images/csv-skill-metrics.png" alt="Generate Output" title="Generate Output" style="border: 1px solid gray; zoom:70%;">  
 
     !!! Note

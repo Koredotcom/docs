@@ -15,15 +15,19 @@ Steps to generate the Queue Chat Metrics Report:
     * Schedule
         * Run On Demand
         * Schedule
+        * Run On Demand
+        * Schedule
+            * You can create up to six schedules (only one schedule if you select Hourly).  
+                <img src="../images/schedule-options.png" alt="Schedule Options" title="Schedule Options" style="border: 1px solid gray; zoom:70%;">
     * Select Format
         * PDF
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. The Queue Chat Metrics Interval Report is generated.
+8. The Queue Chat Metrics Interval Report is generated.  
 <img src="../images/queue-chat-metrics-interval-report-created.png" alt="Queue Chat Metrics Interval Report Created" title="Queue Chat Metrics Interval Report Created" style="border: 1px solid gray; zoom:100%;">
 
-9. Click the **Run** icon next to the instance of the report.
+9. Click the **Run** icon next to the instance of the report.  
 <img src="../images/run-queue-chat-metrics-interval-report.png" alt="Run Queue Chat Metrics Interval Report" title="Run Queue Chat Metrics Interval Report" style="border: 1px solid gray; zoom:100%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
@@ -32,14 +36,14 @@ While generating reports you have two options, Run On Demand and Schedule.
 
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
-10. Click the **PDF/Page** icon and generate the output of that report, as shown below.
+10. Click the **PDF/Page** icon and generate the output of that report, as shown below.  
 <img src="../images/pdf-queue-chat-metrics-interval-report.png" alt="Queue Chat Metrics Interval Report PDF" title="Queue Chat Metrics Interval Report PDF" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
 
         The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
-The Queue Chat Metrics Interval Report is generated and is available for download.
+The Queue Chat Metrics Interval Report is generated and is available for download.  
 <img src="../images/queue-chat-metrics-interval-report-output.png" alt="Queue Chat Metrics Interval Report Output" title="Queue Chat Metrics Interval Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Queue Chat Metrics Interval Report
