@@ -17,7 +17,7 @@ Steps to generate the Queue Chat Metrics Report:
         * Schedule
         * Run On Demand
         * Schedule
-            * You can create up to six schedules (only one schedule if you select Hourly).  
+            * You can create up to six schedules (only one if you select Hourly).  
                 <img src="../images/schedule-options.png" alt="Schedule Options" title="Schedule Options" style="border: 1px solid gray; zoom:70%;">
     * Select Format
         * PDF

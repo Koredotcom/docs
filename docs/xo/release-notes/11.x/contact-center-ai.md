@@ -61,7 +61,7 @@ Supervisors can now use quick filters in the Queue tab to easily segment convers
 
 Contact Center supervisors can now configure multiple schedule-and-frequency combinations for a single report. The platform supports a maximum of six combinations per report.
 
-When you create or modify a report schedule, the interface displays the option to add multiple schedule-and-frequency entries—up to the allowed limit. This enhancement improves flexibility in scheduling report deliveries based on your specific requirements. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/reports-list.md)
+When you create or modify a report schedule, the interface displays the option to add multiple schedule and frequency entries—up to the allowed limit. This enhancement improves flexibility in scheduling report deliveries based on your specific requirements. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/reports-list.md)
 
 ### Campaigns
 
