@@ -11,14 +11,6 @@
 
 An Agent perceives the environment, processes information, and takes actions to achieve specific goals. The main tasks of an agent are shown below. 
 
-<!--
-In general, Agents operations main by:
-
-* Interpreting user inputs to understand the requirements and tasks. 
-* Selecting the most appropriate action based on the predefined roles and capabilities of the defined actions.
-* Extracting, structuring, and processing data needed to execute tasks.
-* Invoking Tools via Tool-calling to complete the tasks.
--->
 
 ![Agent Operations](images/agent-tasks.png "Agentic App Anatomy")
 

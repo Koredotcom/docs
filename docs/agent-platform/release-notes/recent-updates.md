@@ -20,7 +20,7 @@ Key features
 * Users can link one or more knowledge bases to the Agentic app, enabling access to various sources. 
 * Agents can access the most up-to-date and relevant knowledge to deliver more accurate responses to user queries.
 
-[Learn more :octicons-arrow-right-24:](./../ai-agents/knowledge/about-knowledge.md)
+[Learn more :octicons-arrow-right-24:](../ai-agents/knowledge/overview.md)
 
 
 **Export and Import Agentic Apps, Agents, and Tools**
