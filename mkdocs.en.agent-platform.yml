@@ -132,9 +132,9 @@ nav:
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
-    - About Agentic Apps: ai-agents/agentic-apps/agentic-app-overview.md
-    - About AI Agents: ai-agents/agent-overview.md
-    - About Dialog Agents: dialog-agents/about-dialog-agent.md
+    - About Agentic Apps: ai-agents/agentic-apps/overview.md
+    - About AI Agents: ai-agents/overview.md
+    - About Dialog Agents: dialog-agents/overview.md
     - Orchestration:
       - Supervisor: ai-agents/supervisor-pattern.md
       - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
@@ -148,7 +148,7 @@ nav:
         - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
     - Knowledge:
-      - About Knowledge: ai-agents/knowledge/about-knowledge.md
+      - About Knowledge: ai-agents/knowledge/overview.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
@@ -232,7 +232,7 @@ nav:
         - Add a Model using Easy Integration: core-ai/models/external-models/add-an-external-model-using-easy-integration.md
         - Add a Model using API Integration: core-ai/models/external-models/add-an-external-model-using-api-integration.md
     - Prompts:
-      - About Prompt Studio: core-ai/prompts/about-prompt-studio.md
+      - About Prompt Studio: core-ai/prompts/overview.md
       - Accessing Prompt Studio: core-ai/prompts/accessing-prompt-studio.md
       - Using Prompt Studio: core-ai/prompts/using-prompt-studio.md
       - Advanced Features: core-ai/prompts/advanced-features.md
