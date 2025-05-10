@@ -37,6 +37,6 @@ Each agent is defined by its description, scope, actions, tools, and instruction
 
 #### Related Links
 
-* [Create an Agentic App](./../ai-agents/agentic-apps/create-app.md)
-* [Set up AI Agents](./../ai-agents/create-agent.md)
-* [Configure Tools for Agents](./../ai-agents/tools/overview.md)
+* [Create an Agentic App](./agentic-apps/create-app.md)
+* [Set up AI Agents](./create-agent.md)
+* [Configure Tools for Agents](./tools/overview.md)
