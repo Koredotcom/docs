@@ -13,7 +13,7 @@ Models Studio enables enterprises to tailor foundational language models to thei
 
 ## Prompt Studio
 
-Prompt Studio is a workspace for developing, experimenting with, and optimizing prompts. It supports multi-model testing, template-driven design, and version control, helping teams find the best-performing prompt configurations through an iterative process. Whether testing open-source or fine-tuned models, Prompt Studio accelerates prompt refinement and deployment. [Learn more :octicons-arrow-right-24:](./../core-ai/prompts/about-prompt-studio.md)
+Prompt Studio is a workspace for developing, experimenting with, and optimizing prompts. It supports multi-model testing, template-driven design, and version control, helping teams find the best-performing prompt configurations through an iterative process. Whether testing open-source or fine-tuned models, Prompt Studio accelerates prompt refinement and deployment. [Learn more :octicons-arrow-right-24:](./prompts/overview.md)
 
 * Compare prompts across different models in real time.
 * Use 65+ prebuilt templates or build from scratch.
