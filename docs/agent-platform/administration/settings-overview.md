@@ -8,7 +8,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 4. [Easy Integration](../core-ai/models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../core-ai/models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../core-ai/guardrails/manage-guardrails.md){:target="_blank"} 
 6. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](../administration/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../administration/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../administration/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
-6. [Security and Control: Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}
+7. **Security and Control**: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Levels of Users Management 
 
@@ -69,7 +69,7 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Integrate pre-built third-party service connections that can be custom-configured and pre-authorized for secure access. Once configured, these connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../administration/integrations/about-integrations.md){:target="_blank"}.
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../administration/integrations/about-integrations.md){:target="_blank"}.
 
 **Guardrails**
 
@@ -85,6 +85,8 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Security and Control**
 
 - Enable or disable **Single Sign-On (SSO)** for your account and other users to streamline authentication and enhance password security. [Learn more](../administration/security-and-control/single-sign-on.md){:target="_blank"}.
+- Set up authorization profiles that enable your tools, models, and AI agents to access external web services securely. [Learn more](../administration/security-and-control/authorization-profile.md){:target="_blank"}.
+- Create and manage API keys to authenticate and authorize access to Agent Platform's API endpoints. [Learn more](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -151,7 +153,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Integrations</b></td>
-   <td>Manage 130+ third-party pre-built integrations in one place</td>
+   <td>Manage 130+ pre-built integrations for third-party services in one place</td>
    <td>
 <ul>
 <li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
@@ -228,6 +230,13 @@ The following modules and features are supported on the **Settings** Console:
       <td><ul><li>Configure and enable SSO for the available IdP providers.</li>
 <li>Disable SSO for the required account users.</li>
 <li>Exclude specific users from the SSO requirement to provide an alternative way to access their accounts.</li></ul></td>
+  </tr>
+     <tr>
+   <td><b>Security and Control - Authorization Profile</b></td>
+   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the Agent Platform, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
+      <td><ul><li>Set up new authorization field for your authorization profiles.</li>
+<li>Configure the required auth parameters, including additional auth fields.</li>
+<li>Edit or delete existing auth profiles.</li></ul></td>
   </tr>
 </table>
 
