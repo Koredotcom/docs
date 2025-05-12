@@ -5,10 +5,10 @@ Agent Platform’s **Settings** console is a centralized management interface th
 1. [Users](../administration/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../administration/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../administration/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
-4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
-5. [Manage Guardrails](../tools/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
-6. [Security and Control: Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}
+4. [Easy Integration](../core-ai/models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../core-ai/models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
+5. [Manage Guardrails](../core-ai/guardrails/manage-guardrails.md){:target="_blank"} 
+6. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](../administration/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../administration/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../administration/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
+7. **Security and Control**: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Levels of Users Management 
 
@@ -69,11 +69,11 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Integrate connections for [Weights & Biases](../administration/integrations/integrate-with-wandb.md){:target="_blank"}, [AWS S3 Bucket](../administration/integrations/integrate-with-s3-bucket.md){:target="_blank"}, and [Hugging Face](../administration/integrations/enable-hugging-face.md){:target="_blank"} using API or App credentials. 
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../administration/integrations/about-integrations.md){:target="_blank"}.
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../tools/guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../core-ai/guardrails/manage-guardrails.md){:target="_blank"}.
 
 **Monitoring**
 
@@ -85,6 +85,8 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Security and Control**
 
 - Enable or disable **Single Sign-On (SSO)** for your account and other users to streamline authentication and enhance password security. [Learn more](../administration/security-and-control/single-sign-on.md){:target="_blank"}.
+- Set up authorization profiles that enable your tools, models, and AI agents to access external web services securely. [Learn more](../administration/security-and-control/authorization-profile.md){:target="_blank"}.
+- Create and manage API keys to authenticate and authorize access to Agent Platform's API endpoints. [Learn more](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -151,14 +153,13 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Integrations</b></td>
-   <td>Manage the configured easy and custom integrations and connections in one place.</td>
+   <td>Manage 130+ pre-built integrations for third-party services in one place</td>
    <td>
 <ul>
-<li><strong>Hugging Face</strong>: Import exclusive and private models into Agent Platform from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="../../administration/integrations/enable-hugging-face/"> Learn more</a>.</li>
-<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="../../administration/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
-<li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. 
-<a href="../../administration/integrations/integrate-with-wandb/">Learn more</a>.
-</li>
+<li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
+<li>Pre-authorize the connection using the required auth method.</li>
+<li>Add authorization credentials to secure the connection when users interact with the tool.</li>
+<li>Use the configured connection in the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/integration-node/" target="_blank">Integration node</a> to seamlessly access third-party services while building the Tool flow.</li>
 </ul>
    </td>
   </tr>
@@ -229,6 +230,13 @@ The following modules and features are supported on the **Settings** Console:
       <td><ul><li>Configure and enable SSO for the available IdP providers.</li>
 <li>Disable SSO for the required account users.</li>
 <li>Exclude specific users from the SSO requirement to provide an alternative way to access their accounts.</li></ul></td>
+  </tr>
+     <tr>
+   <td><b>Security and Control - Authorization Profile</b></td>
+   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the Agent Platform, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
+      <td><ul><li>Set up new authorization field for your authorization profiles.</li>
+<li>Configure the required auth parameters, including additional auth fields.</li>
+<li>Edit or delete existing auth profiles.</li></ul></td>
   </tr>
 </table>
 

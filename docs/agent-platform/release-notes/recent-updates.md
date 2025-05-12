@@ -2,6 +2,64 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.5 May 9, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Evaluation</font>
+
+**Agentic Evaluation**
+
+Introducing Agentic Evaluation, a framework for analyzing the real-world performance of agentic AI applications. It enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools operate in production. This feature provides visibility into how your system reasons, acts, and interacts with users over time, enabling data-driven improvements. Scoring interactions across the agentic workflow helps identify strengths, surface inefficiencies, and drive continuous improvement at scale.
+
+Key capabilities
+
+* Model Trace Analysis: Import and filter app sessions and traces by app version, environment and date range.
+* Multi-Level Scoring: Evaluate performance at the session and trace levels.
+* Evaluator Library: Apply built-in evaluators to assess reasoning quality, action effectiveness, and goal alignment.
+* Interactive Scorecards and Trace Trees: Visualize agent behavior, drill into sessions, and explore full execution paths.
+* Actionable Insights: Identify deviations, redundant interactions, or suboptimal tool usage to guide iteration.
+
+**Search AI Integration in Evaluation Studio**
+
+The new Search AI integration within Model Evaluation enables users to enrich their evaluation datasets with retrieval-augmented answers and supporting contexts. This functionality allows users to run a pre-configured Search AI connection across dataset inputs to fetch RAG answers and relevant context chunks. These results can be evaluated using the available evaluators. The workflow supports a seamless process from configuring the connection to reviewing answer quality and refining evaluation datasets.
+
+<font size="4">Models</font>
+
+**Support for google/gemma-3-12b-it in Open-Source Models**
+
+Added support for the google/gemma-3-12b-it model as part of the open-source models library. This model is now available for integration into Agentic Apps, offering users increased flexibility and performance. The Gemma 3.12b model is accessible via open-source connections, enabling seamless deployment and improved application compatibility.
+
+
+<font size="4">Settings</font>
+
+**Support for Enhanced Custom Scripting**
+
+This release introduces a powerful custom scripting capability that makes it easier for users to upload, configure, and deploy their own scripts. Customers can now run complex scripts without facing previous limitations around file input and output, network access, or limited library support.
+A new Manage Custom Scripts section is now available in Settings, with role-based visibility and permissions. Users can create and manage scripts based on their access level, and function nodes will support executing these custom scripts.
+
+Key benefits
+
+* Simplified script deployment with an intuitive wizard.
+* No more file and network limitations — run your custom scripts with full flexibility.
+* Customizable runtime settings for improved performance.
+* Efficient management of deployed scripts, including status tracking and API key management.
+
+**New custom roles for Agentic apps in Settings**
+
+The 'Create agentic apps' permission is now available to the admin user with the Account role type.
+A new role type, ‘App’, enables users to configure, develop, and deploy agentic apps. It supports relevant permissions and access levels across different modules for app owners, admins, developers, testers, and viewers.
+
+**Integrations – Audit Logs, Roles, and Permissions**
+
+The Agent Platform now generates audit logs for the Integrations module in the Settings console, allowing admin users to track events such as adding, disabling, editing, and deleting third-party integrations.
+Permissions and access levels for creating, deleting, updating, testing, and disabling Integrations are now defined for account-level roles such as Master Admin, Admin, Member, and Viewer.
+
+
+<hr>
+
 ## v1.0.4 April 26, 2025
 
 <u> Minor Release </u>
