@@ -12,14 +12,14 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Agentic Evaluation**
 
-Introducing Agentic Evaluation, a framework for analyzing the real-world performance of agentic AI applications. It enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools operate in production. This feature provides visibility into how your system reasons, acts, and interacts with users over time, enabling data-driven improvements. Scoring interactions across the agentic workflow helps identify strengths and surface inefficiencies, and drive continuous improvement at scale.
+Introducing Agentic Evaluation, a framework for analyzing the real-world performance of agentic AI applications. It enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools operate in production. This feature provides visibility into how your system reasons, acts, and interacts with users over time, enabling data-driven improvements. Scoring interactions across the agentic workflow helps identify strengths, surface inefficiencies, and drive continuous improvement at scale.
 
 Key capabilities
 
 * Production Data Analysis: Import and filter real user sessions by app version, environment and date range.
 * Multi-Level Scoring: Evaluate performance at the session and trace levels.
 * Evaluator Library: Apply built-in evaluators to assess reasoning quality, action effectiveness, and goal alignment.
-* Interactive Scorecards & Trace Trees: Visualize agent behavior, drill into sessions, and explore full execution paths.
+* Interactive Scorecards and Trace Trees: Visualize agent behavior, drill into sessions, and explore full execution paths.
 * Actionable Insights: Identify deviations, redundant interactions, or suboptimal tool usage to guide iteration.
 
 **Search AI Integration in Evaluation Studio**
@@ -38,7 +38,7 @@ Added support for the google/gemma-3-12b-it model as part of the open-source mod
 **Support for Enhanced Custom Scripting**
 
 This release introduces a powerful custom scripting capability that makes it easier for users to upload, configure, and deploy their own scripts. Customers can now run complex scripts without facing previous limitations around file input and output, network access, or limited library support.
-A new Manage Custom Scripts section is also now available in Settings, with role-based visibility and permissions. Users can create and manage scripts based on their access level, and function nodes now support executing these custom scripts.
+A new Manage Custom Scripts section is now available in Settings, with role-based visibility and permissions. Users can create and manage scripts based on their access level, and function nodes now support executing these custom scripts.
 
 Key benefits
 
