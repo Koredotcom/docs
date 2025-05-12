@@ -141,10 +141,10 @@ Steps to create a filter:
 3. Select the **Status**, **Priority**, and **Dialing Mode**, and choose their respective sub-filters.  
     <img src="../images/filter-by-voice.png" alt="Filter by" title="Filter by" style="border: 1px solid gray; zoom:70%;">
 
-    Select from the available options below:
-    1. **Clear All**– Clears all selections.
-    2. **Save & Apply** – Saves the filter, and it appears when selected.
-    3. **Apply** – Applied for one instance and not saved.
+    Select from the available options below:  
+    1. **Clear All**– Clears all selections.  
+    2. **Save & Apply** – Saves the filter, and it appears when selected.  
+    3. **Apply** – Applied for one instance and not saved.  
 
 4. Click **Save & Apply**.
 

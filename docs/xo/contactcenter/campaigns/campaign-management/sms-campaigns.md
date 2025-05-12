@@ -41,10 +41,10 @@ Steps to create a filter:
 3. Select the **Status** and **Priority**, and choose their respective sub-filters.  
     <img src="../images/filter-by-sms.png" alt="Filter by" title="Filter by" style="border: 1px solid gray; zoom:70%;">
 
-    Select from the available options below:
-    1. **Clear All**– Clears all selections.
-    2. **Save & Apply** – Saves the filter, and it appears when selected.
-    3. **Apply** – Applied for one instance and not saved.
+    Select from the available options below:  
+    1. **Clear All**– Clears all selections.  
+    2. **Save & Apply** – Saves the filter, and it appears when selected.  
+    3. **Apply** – Applied for one instance and not saved.  
 
 4. Click **Save & Apply**.
 
@@ -82,7 +82,7 @@ Step to mark a filter as default:
     <img src="../images/mark-as-default-sms.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:70%;">
 
     A notification appears, and the filter is marked as default.  
-        <img src="..//images/default-view-sms.png" alt="Default" title="Default" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/default-web.png" alt="Default" title="Default" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -93,20 +93,20 @@ Step to mark a filter as default:
 Steps to delete a filter:
 
 1. Click **Delete**.  
-    <img src="../images/delete-sms.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-web.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Delete** on the confirmation pop-up. The Filter is deleted.  
-    <img src="../images/confimation-delete-sms.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/confimation-delete-web.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:70%;">
 
 #### Edit a Filter
 
 Steps to edit a filter:
 
 1. Click **Edit**.  
-    <img src="../images/edit-sms.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-web.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
 
 2. Make the necessary changes and click **Save & Apply**. A confirmation is displayed, and the filter is updated.  
-    <img src="../images/save-edited-filter-sms.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/save-edited-filter-web.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:70%;">
 
 ## Create SMS Campaigns
 

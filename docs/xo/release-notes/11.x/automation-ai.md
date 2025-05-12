@@ -12,11 +12,11 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Zero-Shot Intent Detection with LLM-Generated Confidence Scores
 
-The Zero-Shot Intent Detection has been improved to utilize genuine confidence scores from LLM instead of fixed values. This enhancement creates a more equitable intent qualification by allowing Zero-Shot intents to compete with those from other engines (FM, Knowledge Graph) based on their actual confidence score.
+The enhanced Zero-shot intent detection feature uses the confidence scores provided by the AI models to identify the definitive and probable intents, making it easy to compare them with the intents identified by the other NLU engines.
 
 Key enhancements
 
-* The system now utilizes genuine confidence metrics from the language model for each identified intent, replacing previously hardcoded scores.
+* The system now utilizes confidence metrics from the language model for each identified intent, replacing previously hardcoded scores.
 * A configurable "Zero-shot Threshold" setting (default 0.7, range 0-1) has been introduced. Zero-shot intents must exceed this threshold to be considered valid.
 * Threshold-based filtering ensures that only high-confidence intents are sent to the Ranking & Resolver.
 * The default V2 prompt is enhanced with a Conversation History slider parameter.
@@ -40,7 +40,7 @@ Users can optionally provide the `Conversation_history` key to specify the numbe
 
 #### Expanded PII Settings at the Agent Node Level
 
-The XO platform now supports the detection and protection of Personally Identifiable Information (PII) at the Agent Node level. Users can choose whether to send redacted or original values to the language model, giving them more control over data exposure.
+PII detection and protection are now available at the Agent Node level. Users can select whether to send redacted values to the language model for enhanced privacy control. The data is redacted based on the patterns defined in the global PII settings.
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/data-anonymization.md)
 
 ### Conversation Testing
