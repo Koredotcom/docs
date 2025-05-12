@@ -3,7 +3,7 @@
 
 
 Currently, Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Kore-hosted model, you can optimize it before deployment.  
-   For more information on the list of models supported see [Supported models](../open-source-models/select-and-deploy-an-open-source-model.md#supported-models).
+   For more information on the list of models supported, see [Supported models](../open-source-models/select-and-deploy-an-open-source-model.md#supported-models).
 
 To select and deploy a model, follow these steps:
 
@@ -75,7 +75,7 @@ Hover over the deployed model to view **more** icons (three dots) which provide 
 
 <img src="../images/image4.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
-### Re-deploy a Deployed Model
+#### Re-deploy a Deployed Model
 
 After the initial deployment, if you wish to update the model’s parameters, hardware, or both, you must redeploy the updated model.
 
@@ -94,13 +94,14 @@ To re-deploy a deployed model, follow these steps:
 The supported models and their variants are given below:
 
 <table>
-<tr>
+
+  </tr>
 <td><strong>MODEL</strong>
    </td>
    <td><strong>VARIANT</strong>
-   </td>
-  </tr>
+   </td
   <tr>
+</tr>
    <td><strong>Amazon</strong>
    </td>
    <td>amazon/MistralLite
@@ -307,32 +308,16 @@ The supported models and their variants are given below:
 </ul>
    </td>
   </tr>
-  <tr>
-   <td><strong>Stability AI</strong>
-   </td>
-   <td>
-<ul>
-
-<li>stabilityai/stable-diffusion-2-1</li>
-
-<li>stabilityai/stable-diffusion-xl-base-1.0</li>
-
-<li>stabilityai/stable-diffusion-xl-base-1.0</li>
-
-<li> stabilityai/stable-diffusion-2-1</li>
-
-
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
+    <tr>
    <td><strong>Stable Diffusion</strong>
    </td>
    <td>
 <ul>
 
-<li>stable-diffusion-v1-5/stable-diffusion-v1-5
+
+<li>stabilityai/stable-diffusion-xl-base-1.0</li>
+
+<li>stabilityai/stable-diffusion-2-1</li>
 
 <li>stable-diffusion-v1-5/stable-diffusion-v1-5
 
