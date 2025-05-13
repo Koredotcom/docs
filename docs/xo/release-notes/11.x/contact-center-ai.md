@@ -57,6 +57,22 @@ This enhancement provides a clearer understanding of why calls are disconnected 
 
 Supervisors can now use quick filters in the Queue tab to easily segment conversations by state, such as those waiting in a queue or with the agent, for faster action. Waiting for Agents is now a quick filter option. Two predefined quick filters will be enabled by default and displayed as tags. Users can edit, delete, or add up to four custom quick filters (five total, including the default). This functionality extends to Agents and Interactions tabs, without predefined templates. Additionally, agent names now appear for conversations pending acceptance, ensuring consistent information display and improving visibility for quicker decision-making. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
 
+#### Reports: Support for Multiple Schedule-and-Frequency Combinations
+
+Contact Center supervisors can now configure multiple schedule-and-frequency combinations for a single report. The platform supports a maximum of six combinations per report.
+
+When you create or modify a report schedule, the interface displays the option to add multiple schedule and frequency entries—up to the allowed limit. This enhancement improves flexibility in scheduling report deliveries based on your specific requirements. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/reports-list.md)
+
+### Campaigns
+
+#### Create and Apply Filters in Voice, SMS, and Proactive Web Campaigns
+
+Campaign Managers can create, duplicate, mark as default, delete and edit filters for Voice, SMS, and Proactive Web Campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
+
+#### API Integrated Contacts for Voice Campaigns
+
+Campaign Managers can now configure voice campaigns using API-based contacts for any of the supported dialing modes—Agentless, Progressive, or Preview—enabling streamlined integration with external systems. Additionally, attaching a contact list to a campaign using an API sync configuration establishes a real-time connection with a third-party database, ensuring the campaign accesses up-to-date contact information directly from the external source. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration)
+
 ### API
 
 #### Updated API Endpoint Naming for Export/Import

@@ -12,12 +12,16 @@ To generate Interaction Details by Segment Report:
 4. Select a **Time Period**.
 5. Select **Data Filters**.
 6. Select **Report Generation** and choose from the following options:
+    * Schedule
+        * Run On Demand
         * Schedule
-            * Run On Demand
-            * Schedule
-        * Select Format
-            * CSV
-        * Send To (single email address or a mailing list)
+        * Run On Demand
+        * Schedule
+            * You can create up to six schedules (only one if you select Hourly).  
+                <img src="../images/schedule-options.png" alt="Schedule Options" title="Schedule Options" style="border: 1px solid gray; zoom:70%;">
+    * Select Format
+        * CSV
+    * Send To (single email address or a mailing list)
 7. Click **Create**.  
     <img src="../images/segment-create-new-report.png" alt="Create Report" title="Create Report" style="border: 1px solid gray; zoom:100%;">
 
