@@ -2,8 +2,8 @@
 
 The  Admin Console of **AI for Work** is a centralized management interface for administrators to configure, monitor, and manage system settings, including:
 
-* [Workspace](./workspace.mdion/workspace.md)
-* [Account Hub](./account-hub.mdn/account-hub.md)
+* [Workspace](../Administration/workspace.mdion/workspace.md)
+* [Account Hub](../Administration/account-hub.mdn/account-hub.md)
 
 ## Prerequisites
 

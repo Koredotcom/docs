@@ -124,7 +124,7 @@ can click the **+ Add Query** button to add any other queries. Click
     * **Always Enabled**: The agent remains active and cannot be disabled.
     * **Users Choice**: Users can enable or disable the agent as needed.
 
-Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration_old/workspace.md).
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 The user can see this agent in the **Agents list** on the **Agents** page.
 
