@@ -150,9 +150,9 @@ nav:
     - Dashboard View: analytics/dashboard-view.md
     - Data View: analytics/data-view.md
   - Administration:
-    - Admin Console Overview: administration/overview.md
-    - Workspace: administration/workspace.md
-    - Account Hub: administration/account-hub.md
+    - Admin Console Overview: Administration/overview.md
+    - Workspace: Administration/workspace.md
+    - Account Hub: Administration/account-hub.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing your users.md
