@@ -9,7 +9,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 5. [Manage Custom Scripts](){:target="_blank"}
 6. [Manage Guardrails](../core-ai/guardrails/manage-guardrails.md){:target="_blank"} 
 7. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](../administration/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../administration/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../administration/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
-8. **Security and Control**: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
+8. Security and Control: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Levels of Users Management 
 
