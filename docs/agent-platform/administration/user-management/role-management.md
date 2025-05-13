@@ -814,6 +814,96 @@ The following table summarizes the module-wise permissions and access levels for
    <td>No
    </td>
   </tr>
+   <tr>
+   <td rowspan="8"><strong>Manage Custom Scripts</strong>
+   </td>
+   <td>Access</td>
+   <td>Full
+   </td>
+   <td>Custom
+   </td>
+   <td>Custom
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Import New Custom Script
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Deploy/Re-deploy custom script</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Undeploy Custom Script
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Delete Custom Script</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Export Project</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  <td>No</td>
+   </tr>
+     <tr>
+   <td>Overview and Other Details</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  <td>Yes</td>
+   </tr>
+       <tr>
+   <td>Create/Delete an API Key</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  <td>No
+   </td>
+   </tr>
   </table>
 
 <b>Tool Role</b>
