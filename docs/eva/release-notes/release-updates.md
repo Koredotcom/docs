@@ -174,11 +174,11 @@ This update includes new features and feature enhancements summarized below.
 **Standard Agentic Apps**
 
 You can now organize multiple AI agents in sequence to automate and execute complex business tasks using predefined logic. Tasks and processes can be predefined, eliminating the need for end users to manually execute each step.
-[Learn more :octicons-arrow-right-24:](./../custom-agents/agentic-apps.md)
+[Learn more :octicons-arrow-right-24:](./../custom-agents/agentic-flows.md)
 
 **Advanced Agentic Apps**
 
-You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/advanced-agentic-apps.md)
+You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/autonomous-agent.md)
 
 
 **Feature Enhancements**
@@ -198,7 +198,7 @@ You can now leverage non-deterministic AI algorithms to autonomously manage comp
 
 * API Agent: API agent now supports multi-value parameters that allow querying multiple values within a single request. [Learn more :octicons-arrow-right-24:](./../custom-agents/api-agents.md#step-43-query-filters)
 
-* Audit Log: Audit Logs feature is now available through our API for administrators. Administrators can access and manage all audit log data through the API, ensuring complete visibility into system activities. A dedicated UI for Audit Logs is under active development and will be released soon. [Learn more :octicons-arrow-right-24:](../apis/audit-log-api.md)
+* Audit Log: Audit Logs feature is now available through our API for administrators. Administrators can access and manage all audit log data through the API, ensuring complete visibility into system activities. A dedicated UI for Audit Logs is under active development and will be released soon. [Learn more :octicons-arrow-right-24:](../audit-log/audit-log-api.md)
 
 * Citations: All agents now include clear citation and action buttons, ensuring consistency across the platform. Previously, Calendar, Contact, and Bot agents lacked citation. This update ensures that all agents are now fully cited with actionable buttons.
 
