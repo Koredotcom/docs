@@ -20,7 +20,7 @@ Oversee all workspaces from a single interface with visibility into:
 * Activity timestamps showing recent usage
 * Tools for creating new workspaces
 
-[Workspace Management](../Administration/workspace.md)
+[Workspace Management](./workspace.md)
 
 ### User Management
 
