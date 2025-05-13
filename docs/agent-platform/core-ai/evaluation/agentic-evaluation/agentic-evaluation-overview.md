@@ -9,7 +9,7 @@ Using a suite of automated evaluators, Agentic Evaluation scores AI agent behavi
 The Agentic Evaluation framework supports a range of evaluation types that collectively provide a comprehensive view of AI agent behavior. These evaluations span from high-level outcomes to step-by-step decision-making, helping users diagnose issues, measure effectiveness, and optimize Agentic app performance. For more information on the different types of evaluators, see [Types of Evaluators](./evaluate-production-data.md#types-of-evaluators).
 
 
-## **Key Features of Agentic Evaluation**
+## Key Features
 
 Agentic Evaluation enables you to analyze real-world performance of deployed Agentic apps using production data. It helps ensure your supervisors, agents, and tools are working together efficiently and delivering high-quality outcomes.
 
