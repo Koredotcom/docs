@@ -827,7 +827,7 @@ Publish your agent and define access permissions and enablement.
     * **Always Enabled**: The agent remains active and cannot be disabled.
     * **Users Choice**: Users can enable or disable the agent as needed.
 
-Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../administration/workspace.md).
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration_old/workspace.md).
 
 ## User Interaction
 

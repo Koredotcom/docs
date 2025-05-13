@@ -98,7 +98,7 @@ Key Features:
 * Control agent visibility and target specific user groups or the entire organization. Tailor each workspace with different allowed agent types to maintain information boundaries and ensure compliance.
 * The default workspace within every account includes pre-built solutions optimized for HR, IT, Recruitment, and Analytics, enabling immediate productivity.
 
-[Learn more :octicons-arrow-right-24:](../administration/workspace.md)
+[Learn more :octicons-arrow-right-24:](../Administration_old/workspace.md)
 
 **Introducing Agent Sharing**
 
