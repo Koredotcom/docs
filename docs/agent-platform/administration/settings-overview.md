@@ -5,10 +5,11 @@ Agent Platform’s **Settings** console is a centralized management interface th
 1. [Users](../administration/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../administration/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../administration/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
-4. [Easy Integration](../core-ai/models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../core-ai/models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
-5. [Manage Guardrails](../core-ai/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](../administration/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../administration/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../administration/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
-7. **Security and Control**: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
+4. [Integrations](../administration/integrations/about-integrations.md){:target="_blank"} 
+5. [Manage Custom Scripts](){:target="_blank"}
+6. [Manage Guardrails](../core-ai/guardrails/manage-guardrails.md){:target="_blank"} 
+7. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](../administration/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../administration/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../administration/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
+8. **Security and Control**: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Levels of Users Management 
 
@@ -70,6 +71,32 @@ Additionally, you can do the following:
 **Integrations**
 
 Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../administration/integrations/about-integrations.md){:target="_blank"}.
+
+**Manage Custom Scripts**
+
+Use the script wizard in the **Settings**  console to upload a script definition file in the supported format, configure it, and import a custom script. Once configured, you can deploy the script to make it available for use across the platform.
+
+You can also:
+
+- Un-deploy, export, or delete a script as needed.
+
+- Re-deploy the script after updates or changes.
+
+- Use the script in multiple locations across the Agent Platform, such as in the **Function node** of a tool automation flow.
+
+Other capabilities include:
+
+- View configuration and deployment details in the script's Overview page.
+
+- Track deployment history and monitor version changes.
+
+- Check deployment status and take actions like re-deploying, exporting, or deleting.
+
+- Create and manage API keys to securely access the script’s API endpoint.
+
+- View and copy endpoint code for use in external systems or integrations.
+
+- Select and execute the script from the Function node when building automation flows.
 
 **Guardrails**
 
@@ -153,13 +180,27 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Integrations</b></td>
-   <td>Manage 130+ pre-built integrations for third-party services in one place</td>
+   <td>Manage 130+ pre-built integrations for third-party services in one place.</td>
    <td>
 <ul>
 <li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
 <li>Pre-authorize the connection using the required auth method.</li>
 <li>Add authorization credentials to secure the connection when users interact with the tool.</li>
 <li>Use the configured connection in the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/integration-node/" target="_blank">Integration node</a> to seamlessly access third-party services while building the Tool flow.</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <tr>
+   <td><b>Manage Custom Scripts</b></td>
+   <td>Import custom scripts with reusable functions that can be invoked from anywhere in the platform using gVisor container capabilities.</td>
+   <td>
+<ul>
+<li>Import a custom script by configuring its general details, uploading the script file in the allowed format, and providing the runtime settings, and resource allocation (hardware and memory) details.</li>
+<li>Review and deploy the custom script into the platform.</li>
+<li>Perform actions like re-deploy, delete, export and more on the deployed scripts based on the current status.</li>
+<li>View and manage the Overview, Deployment history, Endpoint, and API Keys pages for the script.</li>
+<li>Select and execute the configured custom script through the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/" target="_blank">Function node</a> of the Tools flow.</li>
 </ul>
    </td>
   </tr>
