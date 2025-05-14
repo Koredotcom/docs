@@ -30,7 +30,7 @@ To sign up for a new account, contact the [Kore.ai sales team](https://kore.ai/c
 
 ### Step 3: Configure LLM and Embedding Models
 
-To use Generative AI features in AI for Work, configure integration with either a pre-built or custom Large Language Model (LLM). Pre-built integrations with platforms like Azure OpenAI, OpenAI, and Anthropic offer seamless setup, while the bring-your-own (BYO) framework supports external or self-hosted models for custom configurations. [Learn more](../assistant-configuration/llm-configuration.md).
+To use Generative AI features in AI for Work, configure integration with either a pre-built or custom Large Language Model (LLM). Pre-built integrations with platforms like Azure OpenAI, OpenAI, and Anthropic offer seamless setup, while the bring-your-own (BYO) framework supports external or self-hosted models for custom configurations. [Learn more](../llm-configuration/general-purpose.md).
 
 ### Step 4: Configure Rate Limit for User Queries
 
