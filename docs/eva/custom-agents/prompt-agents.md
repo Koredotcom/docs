@@ -131,12 +131,14 @@ To configure user input, follow the steps outlined below:
     format as in the Sample JD template file.”
     ![](images/Knowledge_gpt.png)
 
-    **Note**: If the file size exceeds the context size limitation, it impacts the models, and an error message is displayed along with a list of models. Only a limited amount of information is used as context for generation. However, when the file limit is exceeded, all uploaded knowledge files are referenced for answering but not for generation.
+    !!! note
+
+        If the file size exceeds the context size limitation, it impacts the models, and an error message is displayed along with a list of models. Only a limited amount of information is used as context for generation. However, when the file limit is exceeded, all uploaded knowledge files are referenced for answering but not for generation.
 
 2.  Select the model required from the **Model selection** drop-down list, which
     displays all the integrated
     models. To know more about model integration, click
-    [here](/ai-for-work/assistant-configuration/llm-configuration/).
+    [here](../llm-configuration/general-purpose.md#custom-llm-integration).
     ![](images/model.png)
 
 3. Toggle the **Show to users** button to display this prompt to the user. After switching the toggle to ON, you can choose between **Read-only** or **Editable** modes.
@@ -225,7 +227,7 @@ reports, or insights, based on the data within the
 file.![](images/userinteaction_fileUpload.png)
 
 When multi-response is enabled, users can use this feature by selecting the
-**Additional Response** option. Each prompt is preconfigured, but can be
+**Additional Response** option. Each prompt is pre-configured, but can be
 customized to meet specific requirements using a dropdown menu. Users have the
 flexibility to define the input source for each response, either by using the
 **initial input** or by selecting the output from a previous response as input
