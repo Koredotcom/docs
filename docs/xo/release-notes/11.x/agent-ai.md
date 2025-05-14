@@ -45,7 +45,7 @@ The updated Salesforce package includes the following:
 
 #### Outbound Call Support for Agent AI Integration with Salesforce NICE CTI
 
-The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights.
+The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md)
 
 ### API Enhancements
 
