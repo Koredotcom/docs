@@ -4,7 +4,7 @@ Before running any evaluations, you need to create a project in Evaluation Studi
 
 !!! note
 
-    Projects are scoped to a single Agentic app. All evaluations related to that app will remain within this project. You can continue to import more sessions to the same project as needed. However, projects are limited to sessions from the same app version and environment.
+    Projects are scoped to a single Agentic app. All evaluations related to that app will remain part of this project. You can continue to import more sessions to the same project as needed. However, projects are limited to sessions from the same app version and environment.
 
 **Steps to create a new project:**
 

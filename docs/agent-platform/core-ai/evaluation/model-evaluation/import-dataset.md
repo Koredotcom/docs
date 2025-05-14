@@ -48,6 +48,7 @@ Steps to import a dataset:
 6. Click the **+** button on the Evaluations page to access additional dataset actions:
     * **Run a prompt**: Run a prompt by selecting model name and configurations.
     * **Run an API**: Run an API call using specified endpoint and parameters to fetch content from external APIs or deployed tools.
+    * **Run Search AI**: Retrieve answers and context chunks using a pre-configured Search AI integration, useful for evaluating retrieval-augmented generation (RAG) systems.
     * **Add an evaluator**: Add a quality or safety evaluator to the dataset.
     * **Add human feedback**: Manually input feedback for model outputs.
 
@@ -171,6 +172,71 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 
 
 ✅ **Tip:** Make sure the column name exactly matches the input column in your dataset to dynamically send each row's input to the API.
+
+
+## Running Search AI
+
+The Run Search AI option in Evaluation Studio enables users to import evaluation datasets through retrieval-augmented generation (RAG). By leveraging a pre-configured and validated Search AI integration, you can automatically retrieve answers along with supporting context chunks for each input row. This workflow is particularly useful for evaluating RAG systems, knowledge-grounded agents, and other use cases where contextual accuracy is critical.
+
+Once Search AI is executed, Evaluation Studio adds two new columns—Answers and Retrieved Contexts—to the dataset. These outputs can be:
+
+* Evaluated using built-in or custom evaluators,
+* Compared against manually entered ground truth data,
+* Inspected row by row to assess how well the system retrieves and leverages relevant information.
+
+This functionality helps users test how effectively their RAG system uses external knowledge to generate reliable, grounded responses.
+
+**Key Benefits**
+
+* Import RAG pipelines: Seamlessly integrate your retrieval-augmented (RAG) workflows using only pre-validated Search AI connections for reliable setup and execution.
+* Evaluate with custom criteria: Apply custom evaluators to assess the performance and quality of your RAG pipelines based on specific requirements.
+
+
+**Steps to run Search AI:**
+
+1. **Initiate Search AI connection**: Click the **“+”** icon in Evaluation Studio and select **Run Search AI**.
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+2. **Select a pre-configured connection**: In the **Connection name** field, select a Search AI connection. Only integrations that are pre-configured and successfully tested via the **Integrations** page will appear in the dropdown.
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+3. **Map the input column**: In the **Map Variables** section, specify the input column to use for querying the retrieval system. 
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+4. **Apply meta filters (Optional)**: Set Meta filters to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. [Learn more](https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters). 
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+5. **Test the connection**: Click **Test** to verify the SearchAI connection. The response from the connection will be displayed in the **Response** tab of the properties panel.
+The Response tab shows whether the first-row query is returning an answer, allowing the user to verify if the SearchAI connection is functioning correctly.
+
+6. **Run Search AI**: Click Run to execute the retrieval process. Evaluation Studio populates two new columns:
+
+    * **Answers**– RAG responses based on the retrieved context.
+    * **Retrieved Contexts**– Supporting text chunks used to generate the answer.
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+    In the **Retrieved Contexts** column, click the **Show JSON** link to open the Response JSON schema. In the opened JSON, retrieved contexts appear under the `chunkText` key. The number of entries under `chunkText` corresponds to the number of retrieved chunks for that row.
+
+    To understand the context used for a given answer, inspect the values under the `chunkText` key in the response JSON.
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+7. **Attach Evaluators:** Once the Search AI columns are populated, you can attach any built-in or custom evaluators to the Answers or Retrieved Contexts columns. Click the **“+”** icon and select **Add Evaluator**.
+ 
+    !!! note
+
+        The **RAGAS evaluators** are specifically designed to test RAG systems. It is advisable to attach them as evaluators and run an evaluation to thoroughly assess the RAG pipeline's performance. 
+
+
+    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+
+8. **Review Results**: Navigate through the enriched dataset to inspect Search AI outputs. Use Evaluation Studio’s filtering, sorting, and analysis tools to assess the quality of retrieved contexts and generated answers. You can evaluate how well Search AI retrieves relevant information, how grounded the responses are, and identify opportunities for improvement.
+
 
 
 
