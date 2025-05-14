@@ -21,6 +21,7 @@ DialogGPT operates through a structured three-step process:
 
 <img src="../images/dialoggpt-process.png" alt="DialogGPT Orchestration" title="DialogGPT Orchestration">
 
+
 1. **User Input and Chunk Shortlisting**:
     
     * Processes user input and conversation history.
