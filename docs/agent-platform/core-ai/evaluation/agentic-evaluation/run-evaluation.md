@@ -1,3 +1,5 @@
 # Run the Evaluation
 
 Once sessions are imported and you have added evaluators, click **Run Evaluation** to apply the selected evaluators to the selected sessions or traces. The system runs all applicable evaluators, processes the data, and computes scores for each relevant session or trace segment. Evaluation results are displayed in the session grid, with each evaluator contributing one or more dedicated column.
+
+<img src="../agentic-evaluation/images/run_evaluation.png" alt="Create project" title="Create project" style="border: 1px solid gray; zoom:80%;">

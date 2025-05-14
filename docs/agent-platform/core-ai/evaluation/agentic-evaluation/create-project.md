@@ -9,8 +9,16 @@ Before running any evaluations, you need to create a project in Evaluation Studi
 **Steps to create a new project:**
 
 1. Log in to the Agent Platform and go to Evaluation Studio.
-2. In the left-hand pane, click **Agentic Evaluation.**
-3. Click **Create Project**.
+2. In the left-hand pane, click **Agentic Evaluation**.
+
+    <img src="../agentic-evaluation/images/create_project.png" alt="Create project" title="Create project" style="border: 1px solid gray; zoom:80%;">
+
+3. Click **New Project**.
     1. Enter a name for your project.
     2. Select the Agentic app for which you are creating the project.
+
+    <img src="../agentic-evaluation/images/project_dialog.png" alt="New project dialog" title="New project dialog" style="border: 1px solid gray; zoom:80%;">
+
 4. On the Project Overview page, click **Session Evaluation** under the **Observability** tab to begin setting up your evaluation.
+
+    <img src="../agentic-evaluation/images/create_evaluation.png" alt="New project dialog" title="New project dialog" style="border: 1px solid gray; zoom:80%;">
