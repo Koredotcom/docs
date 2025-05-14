@@ -7,7 +7,7 @@ Each evaluator tile represents a specific evaluator and is updated based on the 
 * **Pass**: The output meets the evaluation criteria (e.g., no bias, no toxicity)
 * **Fail**: The output does not meet the evaluation criteria (e.g., contains bias, contains toxicity).
 
-    <img src="../images/bias.png" alt="Evaluator" title="Evaluator" style="border: 1px solid gray; zoom:50%;">
+    <img src="../../images/bias.png" alt="Evaluator" title="Evaluator" style="border: 1px solid gray; zoom:50%;">
 
 **Quality evaluators** like Groundness, Query Relevance, Coherence, Fluency, Paraphrasing, and Completeness generally use *Continuous Scoring*. This method uses a numerical scale (e.g., 1-5 or 1-10). When you set a threshold, records above the threshold are marked as 'Pass', and those below the threshold are marked as 'Fail'.
 
