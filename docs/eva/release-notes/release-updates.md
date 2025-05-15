@@ -1,4 +1,4 @@
-# Release Notes
+# AI for Work Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
