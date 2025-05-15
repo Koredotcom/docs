@@ -12,7 +12,7 @@ Each project contains an Evaluations section, which is visible and accessible on
 
 Steps to create an evaluation:
 
-1. Navigate to Evaluation Studio.
+1. Navigate to Model Evaluation.
 2. Click the **Projects** tab, and click the row of the project you want.
 3. To create an evaluation, click **Create evaluation**.
     <img src="../../images/create_evaluation.png" alt="Create evaluation" title="Create evaluation" style="border: 1px solid gray; zoom:80%;"> 

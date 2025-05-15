@@ -27,7 +27,7 @@ Agentic Evaluation enables you to analyze the real-world performance of deployed
 * **Informed Decision Making:** Use evaluation data to prioritize fixes, redesign workflows, or refine prompts and tools.
 * **Stronger Agentic Design**: Gain visibility into how supervisors, agents, and tools interact, allowing you to design more robust, reliable, and context-aware agentic applications.
 
-## Agentic Evaluation User Experience Overview
+## Agentic Evaluation User Journey
 
 The following outlines the key actions at each stage of the Agentic Evaluation user journey in Agent Platform:
 

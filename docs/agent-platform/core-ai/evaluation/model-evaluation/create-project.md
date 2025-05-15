@@ -25,7 +25,7 @@ In Evaluation Studio, roles and permissions help manage who can access and modif
 
 Steps to create a new project:
 
-1. Navigate to Evaluation Studio.
+1. Navigate to Model Evaluation.
 2. On the Projects tab, click **New Project**.
 <img src="../../images/project.png" alt="Projects" title="Projects" style="border: 1px solid gray; zoom:80%;"> 
 

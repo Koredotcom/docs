@@ -9,7 +9,7 @@ Before running any evaluations, you need to create a project in Evaluation Studi
 **Steps to create a new project:**
 
 1. Log in to the Agent Platform and go to Evaluation Studio.
-2. In the left-hand pane, click **Agentic Evaluation**.
+2. In the left pane, click **Agentic Evaluation**.
 
     <img src="../../agentic-evaluation/images/create_project.png" alt="Create project" title="Create project" style="border: 1px solid gray; zoom:80%;">
 
