@@ -248,7 +248,7 @@ nav:
         - Run Evaluations: core-ai/evaluation/model-evaluation/run-evaluation.md
         - View Results: core-ai/evaluation/model-evaluation/view-evaluation-insight.md
       - Agentic Evaluation:
-        - About Agentic Evaluation: core-ai/evaluation/agentic-evaluation/agentic-evaluation-overview.md
+        - About Agentic Evaluation: core-ai/evaluation/agentic-evaluation/overview.md
         - Create Projects: core-ai/evaluation/agentic-evaluation/create-project.md
         - Create Evaluations: core-ai/evaluation/agentic-evaluation/create-evaluation.md
         - Import Datasets: core-ai/evaluation/agentic-evaluation/import-production-data.md

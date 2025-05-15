@@ -196,19 +196,18 @@ This functionality helps users test how effectively their RAG system uses extern
 
 1. **Initiate Search AI connection**: Click the **“+”** icon in Evaluation Studio and select **Run Search AI**.
 
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/run_searchai.png" alt="Run Search AI" title="Run Search AI" style="border: 1px solid gray; zoom:80%;">
 
 2. **Select a pre-configured connection**: In the **Connection name** field, select a Search AI connection. Only integrations that are pre-configured and successfully tested via the **Integrations** page will appear in the dropdown.
 
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/select_connection.png" alt="Select connection" title="Select connection" style="border: 1px solid gray; zoom:80%;">
 
 3. **Map the input column**: In the **Map Variables** section, specify the input column to use for querying the retrieval system. 
 
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/input.png" alt="Map input column" title="Map input column" style="border: 1px solid gray; zoom:80%;">
 
 4. **Apply meta filters (Optional)**: Set Meta filters to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. [Learn more](https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters). 
 
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
 
 5. **Test the connection**: Click **Test** to verify the SearchAI connection. The response from the connection will be displayed in the **Response** tab of the properties panel.
 The Response tab shows whether the first-row query is returning an answer, allowing the user to verify if the SearchAI connection is functioning correctly.
@@ -218,13 +217,13 @@ The Response tab shows whether the first-row query is returning an answer, allow
     * **Answers**– RAG responses based on the retrieved context.
     * **Retrieved Contexts**– Supporting text chunks used to generate the answer.
 
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/answers_ret_contexts.png" alt="Answers and Retrieved Contexts" title="Answers and Retrieved Contexts" style="border: 1px solid gray; zoom:80%;">
 
     In the **Retrieved Contexts** column, click the **Show JSON** link to open the Response JSON schema. In the opened JSON, retrieved contexts appear under the `chunkText` key. The number of entries under `chunkText` corresponds to the number of retrieved chunks for that row.
 
     To understand the context used for a given answer, inspect the values under the `chunkText` key in the response JSON.
 
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/show_json.png" alt="JSON chunk text" title="JSON chunk text" style="border: 1px solid gray; zoom:80%;">
 
 7. **Attach Evaluators:** Once the Search AI columns are populated, you can attach any built-in or custom evaluators to the Answers or Retrieved Contexts columns. Click the **“+”** icon and select **Add Evaluator**.
  
@@ -232,12 +231,9 @@ The Response tab shows whether the first-row query is returning an answer, allow
 
         The **RAGAS evaluators** are specifically designed to test RAG systems. It is advisable to attach them as evaluators and run an evaluation to thoroughly assess the RAG pipeline's performance. 
 
-
-    <img src="../images/eval_progress_final.png" alt="Evaluation progress" title="Evaluation progress" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/ragas.jpg" alt="RAGAS evaluators" title="RAGAS evaluators" style="border: 1px solid gray; zoom:80%;">
 
 8. **Review Results**: Navigate through the enriched dataset to inspect Search AI outputs. Use Evaluation Studio’s filtering, sorting, and analysis tools to assess the quality of retrieved contexts and generated answers. You can evaluate how well Search AI retrieves relevant information, how grounded the responses are, and identify opportunities for improvement.
-
-
 
 
 
