@@ -5,14 +5,14 @@ List Management section consist of essential contact details for the campaigns. 
 1. **Contact Lists**: Contact lists contain vital information about individuals, enabling targeted and effective communication. It is a collection of names, and contact numbers necessary for running a campaign.
 2. **DNC (Do Not Contact) Lists**: These are contacts who have opted for "Do Not Contact" (DNC) or have registered on the national DNC facility, indicating their preference not to receive unsolicited calls. The DNC Lists Contacts count comprises contacts from both uploaded CSV files and contacts added directly through the bot or agent.
 
-You can view the lists by going to **Contact Center** > **Campaigns** > **List Management**.
+You can view the lists by going to **Contact Center** > **Campaigns** > **List Management**.  
 <img src="../images/contact-lists-main-page.png" alt="List Management Page" title="List Management Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Contact Lists
 
 To view the Contact Lists, click the **Contact Lists** tab.
 
-The following details are displayed in Contact Lists:
+The following details are displayed in Contact Lists:  
 <img src="../images/contact-lists-table.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:80%;">
 
 * **Contact Lists** - Name of the list. For example, Contact List 1.
@@ -32,10 +32,10 @@ Contacts can be uploaded in two ways:
 
 Steps to add a contact list from the local drive:
 
-1. Click **+ New Contact List**.
+1. Click **+ New Contact List**.  
     <img src="../images/new-contact-list-button.png" alt="New Contact List Button" title="New Contact List Button" style="border: 1px solid gray; zoom:80%;">
 
-2. On the **New Contact List** pop-up window, enter the **Name**, **Description** and select **Local Drive** from the Source dropdown.
+2. On the **New Contact List** pop-up window, enter the **Name**, **Description** and select **Local Drive** from the Source dropdown.  
     <img src="../images/localdrive.png" alt="Name and Description of Contact List" title="Name and Description of Contact List" style="border: 1px solid gray; zoom:80%;">
 
 3. Select a CSV file from the local drive and upload the CSV file.
@@ -43,7 +43,6 @@ Steps to add a contact list from the local drive:
     !!! Note
 
         Phone numbers in the CSV should be in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
-
 
 4. Select the **Mapping Fields** and click **Save**.  
     <img src="../images/mapping-fields-contact-list.png" alt="Mapping Fields" title="Mapping Fields" style="border: 1px solid gray; zoom:80%;">
@@ -78,12 +77,12 @@ let userInfo = context?.campaignUserInfo;
 setCallFlowVariable('userInfo', userInfo);
     `  
     <img src="../images/script-task.png" alt="MScript Task" title="Script Task" style="border: 1px solid gray; zoom:80%;">  
-The user information is stored in the userInfo variable and saved in the `callFlowVariable` for future use.
+    The user information is stored in the userInfo variable and saved in the `callFlowVariable` for future use.
 
 2. The userInfo data can be used depending on the use case. For example, if we want to create a message to play when calling a customer, we can add the following in a message node:
 
     `
-hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on the phoneNumber {{context.userInfo.phoneNumber}} is {{context.userInfo.balance}}, please recharge before the due date {{context.userInfo.dueDate}} {{context.userInfo.month}}
+hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on the phoneNumber {{context.userInfo.phoneNumber}} is {{context.userInfo.balance}}, please recharge before the due date {{context.userInfo.dueDate}} {{context.userInfo.month}}  
     `
     <img src="../images/script-task-customized.png" alt="Customized Script Task" title="Customized script Task" style="border: 1px solid gray; zoom:80%;">  
 
@@ -126,8 +125,7 @@ Steps to pull  the contacts using API Integration:
 
 6. Select the **Data Sync Mode**. You can choose from the following options:
     1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they will not be contacted again.
-    2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again. 
-
+    2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again.  
         <img src="../images/apisyncmodenew.png" alt="Sync Mode" title="Sync Mode" style="border: 1px solid gray; zoom:80%;">
 
 7. Configure the authorization profile for the request.  
@@ -178,7 +176,6 @@ Steps to retrieve the label names of all available fields in a contact record:
 `{{JSON.stringify(context.session.UserSession.campaignUserInfo)}}`
     1. You can get the labels from the [Transcripts](../../../analytics/contact-center/interactions.md#insights-to-logs) tab of the Interactions Dashboard.
     2. You can also use the same function in the [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) to access the data.  
-
         <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:80%;">
 
 3. Publish the bot to apply the changes. [Learn more](../../../deploy/publishing-bot.md).
@@ -236,10 +233,10 @@ context.campaignUserInfoNumber=number;
 
 Steps to edit a contact list from the local drive:
 
-1. Click the **Edit** icon beside the contact list name.
+1. Click the **Edit** icon beside the contact list name.  
     <img src="../images/edit-call-list-button.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Upload the call list and click **Save** when the list is appended.
+2. Upload the call list and click **Save** when the list is appended.  
     <img src="../images/append-contact-list.png" alt="Append Contact List" title="Append Contact List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -300,7 +297,7 @@ To create a DNC List, click the **DNC Lists** tab.
 
 Steps to create a new DNC list:
 
-1. Click **+ New DNC List**.
+1. Click **+ New DNC List**.  
 <img src="../images/new-dnc-list.png" alt="New DNC List" title="New DNC List" style="border: 1px solid gray; zoom:80%;">
 
 2. On the **New DNC List** pop-up window, enter the **Name** and **Description** of the list.
@@ -310,7 +307,7 @@ Steps to create a new DNC list:
 
         As of now, the default DNC List Type is Internal.
 
-3. Click **Select a CSV file to upload** a CSV file.
+3. Click **Select a CSV file to upload** a CSV file.  
 <img src="../images/upload-dnc-call-list.png" alt="Upload DNC List" title="DeUpload DNC List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -320,7 +317,7 @@ Steps to create a new DNC list:
 4. The file upload progress is displayed.  
 <img src="../images/dnc-list-progress.png" alt="DNC List Upload Progress" title="DNC List Upload Progress" style="border: 1px solid gray; zoom:80%;">
 
-5. Select the **Mapping Fields** and click **Next**.
+5. Select the **Mapping Fields** and click **Next**.  
 <img src="../images/dnc-list-mapping-fields.png" alt="DNC List Mapping Fields" title="DNC List Mapping Fields" style="border: 1px solid gray; zoom:80%;">
 
 The DNC List is created.
@@ -329,14 +326,14 @@ The DNC List is created.
 
 Steps to edit a DNC list:
 
-1. Click the **Edit** button.
+1. Click the **Edit** button.  
     <img src="../images/edit-dnc-list-button.png" alt="Edit DNC List Button" title="Edit DNC List Button" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         You cannot delete a DNC list when it is "In use".
 
-2. Upload the DNC list and click **Save** when the list is appended.
+2. Upload the DNC list and click **Save** when the list is appended.  
     <img src="../images/edit-dnc-list.png" alt="Edit DNC List" title="Edit DNC List" style="border: 1px solid gray; zoom:80%;">
 
 ### Delete a DNC List
@@ -351,10 +348,10 @@ Steps to delete a DNC list:
 
         You cannot delete a DNC list when it is "In use".
 
-2. A confirmation message is displayed. Click **Delete**.
+2. A confirmation message is displayed. Click **Delete**.  
     <img src="../images/delete-dnc-list-confirmation.png" alt="Delete DNC List Confirmation" title="Delete DNC List Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-The DNC list is deleted.
+    The DNC list is deleted.
 
 ## Logs
 
@@ -402,4 +399,4 @@ You can set a time duration filter for the selected dates to retrieve records wi
 ## Refresh Logs
 
 When you click the refresh button, the data updates based on the current search phrase and time filters.  
-<img src="../list-management/images/refresh.png" alt="Logs Tab" title="Logs Tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/refresh.png" alt="Logs Tab" title="Logs Tab" style="border: 1px solid gray; zoom:80%;">
