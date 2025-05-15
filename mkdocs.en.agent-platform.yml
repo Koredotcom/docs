@@ -138,6 +138,7 @@ nav:
     - Orchestration:
       - Supervisor: ai-agents/supervisor-pattern.md
       - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
+      - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up Agents: ai-agents/create-agent.md
