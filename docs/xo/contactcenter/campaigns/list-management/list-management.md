@@ -51,7 +51,7 @@ Steps to add a contact list from the local drive:
 
         Phone Number is mandatory for voice campaigns.
 
-5. The Contact List is created.
+    The Contact List is created.
 
 #### Dynamic Retrieval and Reflection of CSV Column Values
 
@@ -275,7 +275,7 @@ Steps to delete a contact list from the local drive:
 2. A confirmation message is displayed. Click **Delete**.  
     <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">  
 
-The contact list is deleted.
+    The contact list is deleted.
 
 #### API Integration
 
@@ -287,7 +287,7 @@ Steps to delete an API-integrated contact list:
 2. A confirmation message is displayed. Click **Delete**.  
     <img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
-The contact list is deleted.
+    The contact list is deleted.
 
 ## DNC Lists
 
@@ -320,7 +320,7 @@ Steps to create a new DNC list:
 5. Select the **Mapping Fields** and click **Next**.  
 <img src="../images/dnc-list-mapping-fields.png" alt="DNC List Mapping Fields" title="DNC List Mapping Fields" style="border: 1px solid gray; zoom:80%;">
 
-The DNC List is created.
+    The DNC List is created.
 
 ### Edit a DNC List
 
