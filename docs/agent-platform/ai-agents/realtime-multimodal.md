@@ -1,4 +1,4 @@
-# Realtime Multimodal: AI Agents & Models Orchestration
+# Realtime Multimodal - AI Agents and Models Orchestration
 
 Realtime multimodal orchestration coordinates AI agents and models dynamically. It processes and responds to various data types like text, audio, images, and video in real-time. This allows for smooth, context-aware interactions and automated tasks. It integrates different modalities and manages complex workflows among AI components.
 

@@ -1,4 +1,4 @@
-# Supervisor: AI Agents Orchestration
+# Supervisor - AI Agents Orchestration
 
 The Supervisor Pattern is an architectural approach for designing agentic applications where a central orchestrator serves as a supervisor to manage and coordinate multiple specialized AI agents. This pattern efficiently handles complex tasks by decomposing them into smaller subtasks and delegating them to the appropriate, specialized agents, thereby creating a structured, hierarchical workflow.
 
