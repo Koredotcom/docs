@@ -2,7 +2,7 @@
 
 Node groups are primarily used for defining a group of nodes. Note that it is not a part of the dialog flow.  
 
-[Refer here](../../using-the-dialog-builder-tool/#node-groups){:target="_blank"} for advantages of grouping Nodes in a sequence.
+[Refer here](../../using-the-dialog-builder-tool/#node-groups){:target="_blank"} for advantages of grouping nodes in a sequence.
 
 ## Add a Node Group
 

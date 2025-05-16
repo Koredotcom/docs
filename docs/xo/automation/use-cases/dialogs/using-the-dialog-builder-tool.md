@@ -528,7 +528,7 @@ You can see the following visual customization options for a sequence by right-c
 
 * **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.  
 
-  [Refer here](#node-groups) for details on grouping of Nodes in a sequence
+  [Refer here](#node-groups) for details on grouping of nodes in a sequence
 
 ### Connector Arrows
 
