@@ -2,7 +2,7 @@
 
 Realtime multimodal orchestration coordinates AI agents and models dynamically. It processes and responds to various data types like text, audio, images, and video in real-time. This allows for smooth, context-aware interactions and automated tasks. It integrates different modalities and manages complex workflows among AI components.
 
-Traditional AI systems can handle only one input type. However, Multimodal orchestration allows AI systems to understand, interpret, and generate responses using diverse data streams simultaneously. This is essential for applications like conversational AI agents, customer service AI chatbots, and digital assistants that engage users across different channels and formats.
+Traditional AI systems can handle only one input type. However, Multimodal orchestration enables AI systems to understand, interpret, and generate responses using diverse data streams simultaneously. This is essential for applications like conversational AI agents, customer service AI chatbots, and digital assistants that engage users across different channels and formats.
 
 ## Key Benefits and Capabilities
 
