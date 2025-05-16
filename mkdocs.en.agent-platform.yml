@@ -278,5 +278,9 @@ nav:
     - Data: 
       - Manage Data: administration/data/manage-datasets.md
   - APIs: 
-    - About Agent Platform APIs: apis/overview.md
-    - APIs List: apis/overview/#apis-list
+    - Agentic Apps:
+      - About Agentic App APIs: apis/agentic-apps/overview.md
+      - API List: apis/agentic-apps/overview/#api-list
+    - Tools:
+      - About Tools APIs: apis/overview.md
+      - API List: apis/overview/#apis-list
