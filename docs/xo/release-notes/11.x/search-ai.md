@@ -30,6 +30,14 @@ Key enhancements
 
 Search AI now includes a **Simulator for Content Transformation Stages in the Extraction Module**, enabling users to preview and validate how the configured stages affect the ingested data before vectorization. This helps ensure cleaner, more contextual, and optimized data for AI models. The simulator enhances data quality by allowing users to test and refine transformations, improving search results' accuracy and relevance. [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
+### New Search AI Connectors
+
+Search AI extends support for two new connectors, enabling seamless content ingestion and retrieval from Teamwork and Opsgenie applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
+
+In addition to the new connectors, the capabilities of several existing connectors have been expanded, enabling them to ingest additional content types from their respective platforms. This enhancement significantly increases the volume and variety of searchable content.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/connector-directory.md)
+
 <hr>
 
 ## v11.12.1 April 19, 2025
