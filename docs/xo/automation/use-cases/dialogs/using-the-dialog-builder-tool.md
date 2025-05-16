@@ -526,7 +526,9 @@ You can see the following visual customization options for a sequence by right-c
 
     <img src="../images/using-dialog-builder-custom-colors.png" alt="Custom colors" title="Custom colors" style="border:1px solid gray; zoom:65%;">
 
-* **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.
+* **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.  
+
+  [Refer here](#node-groups) for details on grouping of Nodes in a sequence
 
 ### Connector Arrows
 
@@ -614,7 +616,21 @@ Click here to [learn more.](#node-groups)
 
 ## Node Groups
 
-You can use group nodes to improve the user experience with follow-ups and digressions and amend entity values.
+Node groups are primarily used for defining a group of nodes. 
+
+**Advantages of grouping Nodes in a sequence**
+
+* Grouping nodes allows for automatic back-to-back transitions between consecutive nodes. 
+
+*  Complex conversation flows can be broken down into logical groups, each responsible for a specific function, making the design easier to manage and understand. 
+
+*  Inputs and outputs can be handled at the group level, allowing users to focus on group interfaces without needing to manage every node. 
+
+*  Groups help maintain a clean and structured flow, which is useful in large or multi-functional bots. 
+
+*  Node groups support better handling of follow-ups, digressions, and amending entity values.
+
+### Create the Node Group
 
 To create node groups, follow the below steps:
 
