@@ -205,6 +205,8 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
+    - Integrations:
+      - AI for Service(XO): ai-agents/integrate-with-xo.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
