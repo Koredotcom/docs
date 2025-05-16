@@ -206,7 +206,7 @@ nav:
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
   - Core AI Capabilities: 
-    - About Core AI Capabilities: core-ai/overview-core-ai.md 
+    - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
       - About Models: core-ai/models/overview.md 
       - Model Factory: 
@@ -241,7 +241,7 @@ nav:
       - Advanced Features: core-ai/prompts/advanced-features.md
       - More Options on Prompt Studio: core-ai/prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: core-ai/evaluation/evaluation-studio-overview.md
+      - About Evaluation Studio: core-ai/evaluation/overview.md
       - Model Evaluation: 
         - About Model Evaluation: core-ai/evaluation/model-evaluation/overview.md
         - Create Projects: core-ai/evaluation/model-evaluation/create-project.md
