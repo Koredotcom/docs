@@ -132,15 +132,16 @@ nav:
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
-    - About Agentic Apps: ai-agents/agentic-apps/agentic-app-overview.md
-    - About AI Agents: ai-agents/agent-overview.md
-    - About Dialog Agents: dialog-agents/about-dialog-agent.md
+    - About Agentic Apps: ai-agents/agentic-apps/overview.md
+    - About AI Agents: ai-agents/overview.md
+    - About Dialog Agents: dialog-agents/overview.md
     - Orchestration:
       - Supervisor: ai-agents/supervisor-pattern.md
       - DialogGPT: ai-agents/dialoggpt-dialog-agent-orchestration.md    
-    - Multi-Agent App:
+      - Realtime Multimodal: ai-agents/realtime-multimodal.md
+    - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up an Agent: ai-agents/create-agent.md
+      - Set up Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
@@ -148,7 +149,7 @@ nav:
         - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
     - Knowledge:
-      - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
+      - About Knowledge: ai-agents/knowledge/overview.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
@@ -232,19 +233,30 @@ nav:
         - Add a Model using Easy Integration: core-ai/models/external-models/add-an-external-model-using-easy-integration.md
         - Add a Model using API Integration: core-ai/models/external-models/add-an-external-model-using-api-integration.md
     - Prompts:
-      - About Prompt Studio: core-ai/prompts/about-prompt-studio.md
+      - About Prompt Studio: core-ai/prompts/overview.md
       - Accessing Prompt Studio: core-ai/prompts/accessing-prompt-studio.md
       - Using Prompt Studio: core-ai/prompts/using-prompt-studio.md
       - Advanced Features: core-ai/prompts/advanced-features.md
       - More Options on Prompt Studio: core-ai/prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: core-ai/evaluation/overview.md
-      - Create Projects: core-ai/evaluation/create-project.md
-      - Create Evaluations: core-ai/evaluation/create-evaluation.md
-      - Import Datasets: core-ai/evaluation/import-dataset.md
-      - Configure Evaluators: core-ai/evaluation/configure-evaluator.md
-      - Run Evaluations: core-ai/evaluation/run-evaluation.md
-      - View Results: core-ai/evaluation/view-evaluation-insight.md
+      - About Evaluation Studio: core-ai/evaluation/evaluation-studio-overview.md
+      - Model Evaluation: 
+        - About Model Evaluation: core-ai/evaluation/model-evaluation/overview.md
+        - Create Projects: core-ai/evaluation/model-evaluation/create-project.md
+        - Create Evaluations: core-ai/evaluation/model-evaluation/create-evaluation.md
+        - Import Datasets: core-ai/evaluation/model-evaluation/import-dataset.md
+        - Configure Evaluators: core-ai/evaluation/model-evaluation/configure-evaluator.md
+        - Run Evaluations: core-ai/evaluation/model-evaluation/run-evaluation.md
+        - View Results: core-ai/evaluation/model-evaluation/view-evaluation-insight.md
+      - Agentic Evaluation:
+        - About Agentic Evaluation: core-ai/evaluation/agentic-evaluation/overview.md
+        - Create Projects: core-ai/evaluation/agentic-evaluation/create-project.md
+        - Create Evaluations: core-ai/evaluation/agentic-evaluation/create-evaluation.md
+        - Import Datasets: core-ai/evaluation/agentic-evaluation/import-production-data.md
+        - Configure Evaluators: core-ai/evaluation/agentic-evaluation/evaluate-production-data.md
+        - Run Evaluations: core-ai/evaluation/agentic-evaluation/run-evaluation.md
+        - View Results: core-ai/evaluation/agentic-evaluation/view-evaluation-result.md
+        - Analyze Evaluations: core-ai/evaluation/agentic-evaluation/analyze-evaluation.md
     - AI Safety & Governance: 
       - About Guardrails: core-ai/guardrails/overview.md
       - Add a Scanner: core-ai/guardrails/add-a-scanner.md

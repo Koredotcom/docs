@@ -122,7 +122,7 @@ This approach ensures an organized, automated, and scalable banking solution.
 
 #### Related Links
 
-* [About AI Agents](../../ai-agents/agent-overview.md)
-* [Create an Agentic App](../../ai-agents/agentic-apps/create-app.md)
-* [Set up AI Agents](../../ai-agents/create-agent.md)
-* [Configure Tools for Agents](../../ai-agents/tools/overview.md)
+* [About AI Agents](../overview.md)
+* [Create an Agentic App](./create-app.md)
+* [Set up AI Agents](../create-agent.md)
+* [Configure Tools for Agents](../tools/overview.md)

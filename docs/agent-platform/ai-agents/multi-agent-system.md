@@ -1,14 +1,14 @@
 # Multi-Agent System
 
-**A multi-agent system** (MAS) is a general approach where multiple autonomous software agents interact and coordinate to solve complex problems. The agents collaborate to achieve system-level goals that would be challenging for any single agent to accomplish alone.
+**A Multi-Agent System** (MAS) is a general approach where multiple autonomous software agents interact and coordinate to solve complex problems. The agents collaborate to achieve system-level goals that would be challenging for any single agent to accomplish alone.
 
-**An agentic app** (or agentic AI) provides a robust framework for developing sophisticated multi-agent systems. The app integrates and orchestrates multiple specialized AI agents to deliver intelligent, adaptive solutions to complex problems. The agentic framework enables complexity management, promotes flexibility, allows for scalability, and encourages the reuse of components when creating advanced AI applications.
+**An Agentic App** (or Agentic AI) provides a robust framework for developing sophisticated multi-agent systems. The app integrates and orchestrates multiple specialized AI agents to deliver intelligent, adaptive solutions to complex problems. The agentic framework enables complexity management, promotes flexibility, allows for scalability, and encourages the reuse of components when creating advanced AI applications.
 
 ## Key Concepts
 
-* **AI Agents**: Autonomous, task-focused software entities that perform specific functions. They are the building blocks of agentic apps. [Learn more](./../ai-agents/agent-overview.md).
+* **AI Agents**: Autonomous, task-focused software entities that perform specific functions. They are the building blocks of agentic apps. [Learn more](./overview.md).
 
-* **Agentic App**: Higher-level systems that coordinate multiple AI agents to solve complex problems with greater autonomy, adaptability, and reasoning than individual agents. [Learn more](./../ai-agents/agentic-apps/agentic-app-overview.md).
+* **Agentic App**: Higher-level systems that coordinate multiple AI agents to solve complex problems with greater autonomy, adaptability, and reasoning than individual agents. [Learn more](./agentic-apps/overview.md).
 
 ## Advantages Over Single-Agent System
 

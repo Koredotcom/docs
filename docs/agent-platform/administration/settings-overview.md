@@ -5,10 +5,11 @@ Agent Platform’s **Settings** console is a centralized management interface th
 1. [Users](../administration/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../administration/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../administration/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
-4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
-5. [Manage Guardrails](../tools/guardrails/manage-guardrails.md){:target="_blank"} 
-6. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](./monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](./monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
-6. [Security and Control: Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}
+4. [Integrations](../administration/integrations/about-integrations.md){:target="_blank"} 
+5. [Manage Custom Scripts](){:target="_blank"}
+6. [Manage Guardrails](../core-ai/guardrails/manage-guardrails.md){:target="_blank"} 
+7. [Monitoring](../administration/monitoring/overview.md){:target="_blank"}: [Audit Logs](../administration/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../administration/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../administration/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../administration/monitoring/analytics/model-traces.md){:target="_blank"}. 
+8. Security and Control: [Single Sign On](../administration/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../administration/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Levels of Users Management 
 
@@ -69,11 +70,37 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Integrate connections for [Weights & Biases](../administration/integrations/integrate-with-wandb.md){:target="_blank"}, [AWS S3 Bucket](../administration/integrations/integrate-with-s3-bucket.md){:target="_blank"}, and [Hugging Face](../administration/integrations/enable-hugging-face.md){:target="_blank"} using API or App credentials. 
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../administration/integrations/about-integrations.md){:target="_blank"}.
+
+**Manage Custom Scripts**
+
+Use the script wizard in the **Settings**  console to upload a script definition file in the supported format, configure it, and import a custom script. Once configured, you can deploy the script to make it available for use across the platform.
+
+You can also:
+
+- Un-deploy, export, or delete a script as needed.
+
+- Re-deploy the script after updates or changes.
+
+- Use the script in multiple locations across the Agent Platform, such as in the **Function node** of a tool automation flow.
+
+Other capabilities include:
+
+- View configuration and deployment details in the script's Overview page.
+
+- Track deployment history and monitor version changes.
+
+- Check deployment status and take actions like re-deploying, exporting, or deleting.
+
+- Create and manage API keys to securely access the script’s API endpoint.
+
+- View and copy endpoint code for use in external systems or integrations.
+
+- Select and execute the script from the Function node when building automation flows.
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../tools/guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../core-ai/guardrails/manage-guardrails.md){:target="_blank"}.
 
 **Monitoring**
 
@@ -85,6 +112,8 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Security and Control**
 
 - Enable or disable **Single Sign-On (SSO)** for your account and other users to streamline authentication and enhance password security. [Learn more](../administration/security-and-control/single-sign-on.md){:target="_blank"}.
+- Set up authorization profiles that enable your tools, models, and AI agents to access external web services securely. [Learn more](../administration/security-and-control/authorization-profile.md){:target="_blank"}.
+- Create and manage API keys to authenticate and authorize access to Agent Platform's API endpoints. [Learn more](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -111,10 +140,10 @@ The following modules and features are supported on the **Settings** Console:
    </td>
   </tr>
   <tr>
-   <td><b>Users Management</b></td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/user-management/overview/" target="_blank">Users Management</a></td>
    <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, tools, and models.</p>
 <p>Manage user settings for AD sync, profile visibility and configuration, and email notifications to users.</p></td>
-<td><p><strong>Users</strong></p>
+<td><p><a href="https://docs.kore.ai/agent-platform/administration/user-management/users/" target="_blank">Users</a></p>
 <ul>
 <li>All users across your enterprise network accounts are listed here.</li> 
 <li>A summarized view of the total invited users, active, inactive, and locked users is displayed.</li>
@@ -130,7 +159,7 @@ The following modules and features are supported on the **Settings** Console:
 </li>
 <li>Select one or multiple users to change access permissions or delete a user.</li>
 <li>Click a user entry to manage their profile, models, and tools, including modifying and deleting roles within each model or tool. A model or tool can be added for a specific role.</li></ul></ul>
-<p><strong>Role Management</strong></p>
+<p><a href="https://docs.kore.ai/agent-platform/administration/user-management/role-management/" target="_blank">Role Management</a></p>
 <ul>
 <li>A summarized view of the total roles available in the system and the number of system and custom roles are displayed.</li>
 <li>View, assign, and reassign system/ default or custom roles. <strong>You cannot edit or delete system roles.</strong></li>
@@ -139,7 +168,7 @@ The following modules and features are supported on the **Settings** Console:
 <li>For tool and account role types, assign/unassign permissions and set access levels for various module aspects like tools, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
 </ul>
 
-<p><strong>Settings</strong></p>
+<p><a href="https://docs.kore.ai/agent-platform/administration/user-management/settings/active-directory/" target="_blank">Settings</a></p>
 <ul>
 <li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to Agent Platform seamlessly. Enable automatic data sync between the AD and Agent Platform daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across Agent Platform. Select profile fields and allow edits by the end user.
@@ -150,20 +179,33 @@ The following modules and features are supported on the **Settings** Console:
    </td>
   </tr>
   <tr>
-   <td><b>Integrations</b></td>
-   <td>Manage the configured easy and custom integrations and connections in one place.</td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/integrations/about-integrations/" target="_blank">Integrations</a></td>
+   <td>Manage 130+ pre-built integrations for third-party services in one place.</td>
    <td>
 <ul>
-<li><strong>Hugging Face</strong>: Import exclusive and private models into Agent Platform from a vast repository of pre-trained models for various NLP tasks such as text classification, translation, summarization, question answering, and more.<a href="../administration/integrations/enable-hugging-face/"> Learn more</a>.</li>
-<li><strong>AWS S3 Bucket</strong>: Establish a connection and import files seamlessly from the required bucket. <a href="../administration/integrations/integrate-with-s3-bucket/">Learn more</a>.</li>
-<li><strong>Weights and Biases</strong>: Monitor fine-tuning model performance in WandB Console. 
-<a href="../administration/integrations/integrate-with-wandb/">Learn more</a>.
-</li>
+<li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
+<li>Pre-authorize the connection using the required auth method.</li>
+<li>Add authorization credentials to secure the connection when users interact with the tool.</li>
+<li>Use the configured connection in the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/integration-node/" target="_blank">Integration node</a> to seamlessly access third-party services while building the Tool flow.</li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><b>Manage Guardrails</b></td>
+   <tr>
+   <td><b>Manage Custom Scripts</b></td>
+   <td>Import custom scripts with reusable functions that can be invoked from anywhere in the platform using gVisor container capabilities.</td>
+   <td>
+<ul>
+<li>Import a custom script by configuring its general details, uploading the script file in the allowed format, and providing the runtime settings, and resource allocation (hardware and memory) details.</li>
+<li>Review and deploy the custom script into the platform.</li>
+<li>Perform actions like re-deploy, delete, export and more on the deployed scripts based on the current status.</li>
+<li>View and manage the Overview, Deployment history, Endpoint, and API Keys pages for the script.</li>
+<li>Select and execute the configured custom script through the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/" target="_blank">Function node</a> of the Tools flow.</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><a href="https://docs.kore.ai/agent-platform/core-ai/guardrails/overview/" target="_blank">Manage Guardrails</a></td>
    <td>Deploy models to make them available for anomaly scanners in all the tools. 
    </td>
    <td>
@@ -180,7 +222,7 @@ The following modules and features are supported on the **Settings** Console:
  </td>
   </tr>
   <tr>
-   <td><b>Monitoring - Audit Logs</b></td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/monitoring/audit-logs/" target="_blank">Monitoring - Audit Logs</a></td>
    <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and tool-level event logs.</td>
    <td><ul><li>Select the date range and view periodic, event-based logs related to the following categories:</li>
    <ul><li>Login/Logout</li>
@@ -196,7 +238,7 @@ The following modules and features are supported on the **Settings** Console:
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
     <tr>
-   <td><b>Monitoring - Tools Analytics Dashboard</b></td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/monitoring/analytics/tools-analytics-dashboard/" target="_blank">Monitoring - Tools Analytics Dashboard</a></td>
    <td>Get actionable insights into successful and failed tool runs, average tool response time, and drill down into nodes execution data to enable informed decisions on tool deployments, optimize their performance, and accelerate system efficiency.</td>
    <td><ul><li>Select a single date or date range to view periodic tool performance metrics.</li>
    <li>Make performance comparison between different tool versions.</li>
@@ -206,7 +248,7 @@ The following modules and features are supported on the **Settings** Console:
    <li>Optimize tool performance with real-time metrics.</li></ul></td>
   </tr>
       <tr>
-   <td><b>Monitoring - Model Analytics Dashboard</b></td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/monitoring/analytics/model-analytics-dashboard/" target="_blank">Monitoring - Model Analytics Dashboard</a></td>
    <td>Review and monitor key performance indicators for open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance, as well as optimal performance.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based model performance metrics.</li>
 <li>Analyze credit consumption for deployment and fine-tuning requests, and monitor model replica generation within subscription limits to ensure optimal usage.</li>
@@ -215,7 +257,7 @@ The following modules and features are supported on the **Settings** Console:
    <li>Optimize model performance with access to real-time metrics.</li></ul></td>
   </tr>
         <tr>
-   <td><b>Monitoring - Model Traces</b></td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/monitoring/analytics/model-traces/" target="_blank">Monitoring - Model Traces</a></td>
    <td>Review and monitor key performance indicators for each run executed by different versions of the open-source, fine-tuned, and external models deployed in your account to ensure regulatory and ethical compliance, as well as optimal performance.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based run performance metrics.</li>
       <li>Analyze failed runs by exporting performance metrics into a <i>csv</i> file and identify failure patterns.</li>
@@ -224,11 +266,18 @@ The following modules and features are supported on the **Settings** Console:
    <li>Analyze requests, model outputs, response times, and sources to gain performance insights, diagnose errors, and optimize usage and experience.</li></ul></td>
   </tr>
    <tr>
-   <td><b>Security and Control - Single Sign On</b></td>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/security-and-control/single-sign-on/" target="_blank">Security and Control - Single Sign On</a></td>
    <td>By centralizing authentication for your enterprise account users, SSO enhances user convenience and strengthens security through streamlined password management. SSO helps improve efficiency, reduce password fatigue, and safeguard sensitive information.</td>
       <td><ul><li>Configure and enable SSO for the available IdP providers.</li>
 <li>Disable SSO for the required account users.</li>
 <li>Exclude specific users from the SSO requirement to provide an alternative way to access their accounts.</li></ul></td>
+  </tr>
+     <tr>
+   <td><a href="https://docs.kore.ai/agent-platform/administration/security-and-control/authorization-profile/" target="_blank">Security and Control - Authorization Profile</a></td>
+   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the Agent Platform, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
+      <td><ul><li>Set up new authorization field for your authorization profiles.</li>
+<li>Configure the required auth parameters, including additional auth fields.</li>
+<li>Edit or delete existing auth profiles.</li></ul></td>
   </tr>
 </table>
 

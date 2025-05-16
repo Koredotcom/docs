@@ -1,4 +1,4 @@
-# DialogGPT: Dialog Agents Orchestration
+# DialogGPT - Dialog Agents Orchestration
 
 DialogGPT is an intelligent orchestration engine that enables Dialog Agents to engage in natural, fluid conversations at scale. It autonomously manages the entire conversation flow from intent identification to fulfillment, allowing the agents to handle complex interactions without requiring extensive training data. The engine seamlessly balances predefined business rules with dynamic, context-aware responses. It leverages advanced text embeddings and generative models to interpret user input and determine the most appropriate path to fulfill each unique request.
 
@@ -19,7 +19,8 @@ DialogGPT intelligently recognizes and processes tasks based on their names and 
 
 DialogGPT operates through a structured three-step process:
 
-<img src="../../ai-agents/images/dialog-gpt-orchestration-process.png" alt="DialogGPT Orchestration" title="DialogGPT Orchestration">
+<img src="../images/dialog-gpt-process.png" alt="DialogGPT Orchestration" title="DialogGPT Orchestration">
+
 
 1. **User Input and Chunk Shortlisting**:
     

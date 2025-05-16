@@ -1,12 +1,10 @@
-# Supervisor: AI Agents Orchestration
+# Supervisor - AI Agents Orchestration
 
 The Supervisor Pattern is an architectural approach for designing agentic applications where a central orchestrator serves as a supervisor to manage and coordinate multiple specialized AI agents. This pattern efficiently handles complex tasks by decomposing them into smaller subtasks and delegating them to the appropriate, specialized agents, thereby creating a structured, hierarchical workflow.
 
 The pattern provides a structured framework for building complex agentic systems that require coordination between multiple specialized components. Its hierarchical approach enables efficient task management while maintaining a transparent chain of command through the central orchestrator. The pattern is particularly effective for scenarios that require diverse expertise across multiple domains, where a single agent would struggle to maintain in-depth knowledge across all the necessary areas of specialization.
 
-## Key Benefits
-
-The Supervisor Pattern is an effective method for orchestrating multi-agent systems. It provides centralized control, modularity, and scalability. A supervisor agent delegates tasks and manages communication among the agents. This allows organizations to develop robust, efficient, and easily expandable multi-agent solutions.
+## Key Capabilities
 
 * **Modularity**: The pattern enables a design where each agent specializes in a specific domain or task, resulting in a more efficient and scalable system.
 
@@ -54,4 +52,4 @@ The Supervisor Pattern implements a systematic workflow with clearly defined sta
     * The orchestrator synthesizes a unified response from the combined results of the agents.
     * Delivers the final output to the user.
 
-[Learn more](./../ai-agents/agentic-apps/agentic-app-overview.md) - how this pattern is used for orchestrating multiple AI Agents by the Agent Platform.
+[Learn more](./agentic-apps/overview.md) - how this pattern is used for orchestrating multiple AI Agents by the Agent Platform.
