@@ -4,7 +4,7 @@ Once a virtual assistant is published, it is important to understand and analyze
 
 **To view the Conversation Insights dashboard, follow the steps**: 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+1.  Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/conversation-insights-dashboards.png" alt="Conversation Insights Dashboards" title="Conversation Insights Dashboards" style="border: 1px solid gray; zoom:60%;">
 

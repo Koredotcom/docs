@@ -20,9 +20,10 @@ In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to 
 
 * **Welcome Events**: Pre-configured greeting messages and dialog tasks that automatically trigger when a conversation is assigned to an agent in the Agent AI widget.  
 * **Exit Events**: Pre-configured dialog task or conversation summary that automatically runs when the end-of-conversation event triggers. 
-!!! note
 
-    You can enable either the dialog task or the conversation summary for the Exit Events section.
+    !!! note
+        You can enable either the dialog task or the conversation summary for the Exit Events section.  
+[Learn more :octicons-arrow-right-24:](./../../agentai/configuration/conversation-events.md)
 
 #### Improved Search Functionality in Library
 
@@ -32,7 +33,7 @@ Search functionality automatically updates the library list to match the search 
 
 #### Five9 Chat Integration with Agent AI
 
-The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window.
+The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/five9/agentai-chat-integration-with-five9.md)
 
 #### Updated Salesforce Package and support for new Salesforce Live Chat for new organizations
 
@@ -44,7 +45,7 @@ The updated Salesforce package includes the following:
 
 #### Outbound Call Support for Agent AI Integration with Salesforce NICE CTI
 
-The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights.
+The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md)
 
 ### API Enhancements
 

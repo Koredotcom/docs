@@ -17,12 +17,14 @@ In LLM interactions, the platform maintains the conversation context by anonymiz
 
 
 
+
+
+
 ## De-identification of PII Data
 
 The XO platform now supports the detection and protection of Personally Identifiable Information (PII) at the Agent Node level. Users can choose whether to send redacted or original values to the language model, giving them more control over data exposure.
 
 
+* De-identify PII data when sending a request to the LLM: If selected, the platform sends redacted or masked values to the LLM. The data is redacted based on the patterns defined in the global PII settings.
 
-* Do not de-identify PII data when making LLM calls: If selected, the platform sends the original PII values to the LLM without redaction or masking.
-
-* Use original values of PII data in service calls (Coming Soon): The platform sends original PII values to the service nodes or SearchAI nodes, as configured at the Agent Node level or globally in PII Settings.
+* Use original values of PII data when sending a request to LLM (Coming Soon): If selected, the platform sends original values to the LLM.

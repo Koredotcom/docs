@@ -2,7 +2,6 @@
 # Streaming Responses 
 
 
-## Introduction
 
 Streaming responses in large language models (LLMs) enable real-time, incremental output generation. Instead of waiting for the entire response to be computed, the model starts transmitting pieces of the output as they become available. This approach not only reduces latency and enhances user interaction but also fosters a sense of immediate connection, mirroring real-time communication. Streaming is particularly beneficial in applications requiring dynamic updates, such as conversational AI, speech-to-text systems, and real-time content-generation tools. 
 

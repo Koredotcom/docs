@@ -8,17 +8,13 @@ Custom Dashboards are available along with the other out-of-the-box dashboards i
 
 **Follow these steps to build Custom Dashboards**:
 
-
-
 1. Identify the data points that you need to capture for deriving the metrics, based on your business requirements and needs.
 2. Define suitable Custom Meta Tags to emit these data points in the Bot definition. To know how to add custom meta tags to your Virtual Assistant (VA), see here.
 3. Design widgets, preview, and update the dashboard with these widgets.
 
 **To view the Custom Dashboard dashboard, follow the steps**: 
 
-
-
-1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 <img src="./../images/navigate-to-custom-dashboard.png" alt="Navigate to Custom Dashboard" title="Navigate to Custom Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Custom Dashboards** under the **Automation** section of the **Analytics** panel. The **Custom Dashboards dashboard** is displayed on the right side of the page.
@@ -29,12 +25,9 @@ Custom Dashboards are available along with the other out-of-the-box dashboards i
 * Each widget in the dashboard must be associated with a dataset.
 * You need to define a query to extract the required data to be displayed in a widget.
 
-
 ## Add Custom Dashboards
 
 You can add one or more Dashboards by providing basic details of the Dashboard.
-
-
 
 * To add a new dashboard, click on the kabab icon on the top right and select the **New Dashboard** option. Enter the name of the dashboard. You can edit the name of the dashboard anytime.
 * By default, each custom dashboard comes with a Date Filter, allowing you to filter the records for all the widgets in the dashboard. You can choose between 24 hours, 7 Days, and a custom date range. You can also configure and add custom filters, allowing you to filter all the widgets within the dashboard. See Create Custom Filters for Custom Dashboard to know more.

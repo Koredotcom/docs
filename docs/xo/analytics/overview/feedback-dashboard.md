@@ -12,15 +12,10 @@ This dashboard displays graphs and charts derived from real-time feedback data f
 * The overall score for the given period and its trend.
 * The comprehensive feedback results with an option to export the results for review.
 
-!!! note
-
-    The **Feedback Dashboard** is available in Release 10.0.0 (January 2023).
-
-
 
 **To view the Feedback dashboard, follow the steps**: 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/navigate-to-feedback-dashboard.png" alt="Navigate to Feedback Dashboard" title="Navigate to Feedback Dashboard" style="border: 1px solid gray; zoom:80%;">
 
@@ -31,8 +26,6 @@ This dashboard displays graphs and charts derived from real-time feedback data f
 ## Dashboard Filters
 
 The **Feedback Dashboard** displays analytics data on the **Feedback Survey responses** from customers based on the following filters:
-
-
 
 *  **Date**: Indicates the date range to filter the conversation sessions and capture the survey feedback responses.
 

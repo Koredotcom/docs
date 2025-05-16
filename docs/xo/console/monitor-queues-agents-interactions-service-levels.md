@@ -60,14 +60,14 @@ To monitor the agents:
         3. **Apply** – Applied for one instance and not saved.
 4. Click **Save & Apply**.
 
-5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
+5. On the pop-up window, enter a name (up to 20 characters) for the filter and click **Save & Apply**.  
 <img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
 
     A confirmation message is displayed and the filter is saved.
 
 6. Click Saved Filters. By default, the system shows the following:
 
-    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected, and the Make as Default option is enabled.  
+    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected. These filters are editable and can be deleted.  
         <img src="../images/default-filters.png" alt="Default Filters" title="Default Filters" style="border: 1px solid gray; zoom:80%;"> 
     * You can select up to four quick filters. Quick filters appear along with unsaved filters.
     * If a filter is set as the default but not selected as a quick filter, the system still treats it as a quick filter.
@@ -233,14 +233,14 @@ If an agent selects a channel and logs out at the end of the day, the previously
 
 4. Click **Save & Apply**.  
 
-5. On the pop-up window, enter a name for the filter and click Save & Apply.  
+5. On the pop-up window, enter a name (up to 20 characters) for the filter and click Save & Apply.  
 <img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">  
 
     A confirmation message is displayed and the filter is saved.
 
 6. Click Saved Filters. By default, the system shows the following:
 
-    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected, and the Make as Default option is enabled.  
+    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected. These filters are editable and can be deleted.  
         <img src="../images/agents-default-filters.png" alt="Default Filters" title="Default Filters" style="border: 1px solid gray; zoom:80%;"> 
     * You can select up to four quick filters. Quick filters appear along with unsaved filters.
     * If a filter is set as the default but not selected as a quick filter, the system still treats it as a quick filter.
@@ -448,14 +448,14 @@ In the Assign Conversation pop-up window, select Agent/Queue, select the agent o
 
 4. Click **Save & Apply**.
 
-5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
+5. On the pop-up window, enter a name (up to 20 characters) for the filter and click **Save & Apply**.  
     <img src="../images/save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:80%;">
 
     A confirmation message is displayed and the filter is created.
 
 6. Click Saved Filters. By default, the system shows the following:
 
-    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected, and the Make as Default option is enabled.  
+    * The Waiting with Agents and Waiting in Queue quick filters are pre-selected. These filters are editable and can be deleted.  
         <img src="../images/interactions-default-filters.png" alt="Default Filters" title="Default Filters" style="border: 1px solid gray; zoom:80%;"> 
     * You can select up to four quick filters. Quick filters appear along with unsaved filters.
     * If a filter is set as the default but not selected as a quick filter, the system still treats it as a quick filter.
