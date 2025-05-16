@@ -18,7 +18,7 @@ Traditional AI systems can handle only one input type. However, Multimodal orche
 
 The core architecture of a Realtime Multimodal Orchestration system typically includes the following components and workflow:
 
-<img src="../images/realtime-multimodal-ai.png" alt="Realtime Multimodal AI" title="Realtime Multimodal AI" style="align: center; zoom:60%;">
+<img src="../images/realtime-multimodal-ai.png" alt="Realtime Multimodal AI" title="Realtime Multimodal AI" style="zoom:70%;">
 
 
 1. **Input Layer**: The system captures data from various sources, such as spoken queries (audio), written text, uploaded images, or live video feeds. Each input type is processed by specialized models (e.g., NLP for text, computer vision for images, ASR for audio).
