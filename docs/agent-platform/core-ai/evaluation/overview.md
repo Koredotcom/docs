@@ -6,7 +6,7 @@ By supporting both model-level and agentic evaluation, Evaluation Studio provide
 
 ### Model Evaluation
 
-Model Evaluation enables you to assess the performance of large language models (LLMs) using configurable quality and safety metrics. You can upload datasets with input-output pairs, apply built-in or custom evaluators, and analyze model effectiveness through visual scoring, thresholds, and collaborative projects. This type of evaluation is ideal for fine-tuning, comparing, and validating models before or after deployment. [Learn more :octicons-arrow-right-24:](../evaluation/model-evaluation/overview.md)
+Model Evaluation enables you to assess the performance of large language models (LLMs) using configurable quality and safety metrics. You can upload datasets with input-output pairs, apply built-in or custom evaluators, and analyze model effectiveness through visual scoring, thresholds, and collaborative projects. This type of evaluation is ideal for fine-tuning, comparing, and validating models before or after deployment. [Learn more :octicons-arrow-right-24:](./model-evaluation/overview.md)
 
 ### Agentic Evaluation
 
