@@ -205,33 +205,37 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
+    - Integrations:
+      - AI for Service (XO): ai-agents/integrate-with-xo.md
   - Core AI Capabilities: 
-    - About Core AI Capabilities: core-ai/overview-core-ai.md 
+    - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
       - About Models: core-ai/models/overview.md 
-      - Fine-Tuned Models: 
-        - Create a Model: core-ai/models/fine-tune-models/create-a-fine-tuned-model.md
-        - Deploy a Model: core-ai/models/fine-tune-models/deploy-a-fine-tuned-model.md
-        - Model Settings:
-          - Overview: core-ai/models/fine-tune-models/model-settings-overview.md
-          - Model Endpoint: core-ai/models/fine-tune-models/view-the-generated-api-endpoint.md
-          - API Keys: core-ai/models/fine-tune-models/generate-an-api-key.md
-          - Configurations: core-ai/models/fine-tune-models/configure-your-fine-tuned-model.md
-        - Export a Model: core-ai/models/fine-tune-models/export-your-fine-tuned-model.md
-      - Open-Source Models:
-        - Import a model: core-ai/models/open-source-models/importing-models.md
-        - Deploy a model:
-          - Deploy an Open-Source Model: core-ai/models/open-source-models/select-and-deploy-an-open-source-model.md
-          - Deploy a Hugging Face Model: core-ai/models/open-source-models/deploy-an-imported-model-from-hugging-face.md
-        - Model Optimization Techniques: core-ai/models/open-source-models/model-optimization.md 
-        - Open-Source models overview: core-ai/models/open-source-models/open-source-summary.md
-        - Model Settings:
-          - Model Endpoint: core-ai/models/open-source-models/view-the-generated-api-endpoint.md
-          - API Keys: core-ai/models/open-source-models/generate-an-api-key-open-source.md
-          - Configurations: core-ai/models/open-source-models/configure-your-open-source-model.md
-      - External Models: 
-        - Add a Model using Easy Integration: core-ai/models/external-models/add-an-external-model-using-easy-integration.md
-        - Add a Model using API Integration: core-ai/models/external-models/add-an-external-model-using-api-integration.md
+      - Model Factory: 
+        - Fine-Tuned Models: 
+          - Create a Model: core-ai/models/fine-tune-models/create-a-fine-tuned-model.md
+          - Deploy a Model: core-ai/models/fine-tune-models/deploy-a-fine-tuned-model.md
+          - Model Settings:
+            - Overview: core-ai/models/fine-tune-models/model-settings-overview.md
+            - Model Endpoint: core-ai/models/fine-tune-models/view-the-generated-api-endpoint.md
+            - API Keys: core-ai/models/fine-tune-models/generate-an-api-key.md
+            - Configurations: core-ai/models/fine-tune-models/configure-your-fine-tuned-model.md
+          - Export a Model: core-ai/models/fine-tune-models/export-your-fine-tuned-model.md
+      - Model Hub:
+        - Open-Source Models:
+          - Import a model: core-ai/models/open-source-models/importing-models.md
+          - Deploy a model:
+            - Deploy an Open-Source Model: core-ai/models/open-source-models/select-and-deploy-an-open-source-model.md
+            - Deploy a Hugging Face Model: core-ai/models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+          - Model Optimization Techniques: core-ai/models/open-source-models/model-optimization.md 
+          - Open-Source models overview: core-ai/models/open-source-models/open-source-summary.md
+          - Model Settings:
+            - Model Endpoint: core-ai/models/open-source-models/view-the-generated-api-endpoint.md
+            - API Keys: core-ai/models/open-source-models/generate-an-api-key-open-source.md
+            - Configurations: core-ai/models/open-source-models/configure-your-open-source-model.md
+        - External Models: 
+          - Add a Model using Easy Integration: core-ai/models/external-models/add-an-external-model-using-easy-integration.md
+          - Add a Model using API Integration: core-ai/models/external-models/add-an-external-model-using-api-integration.md
     - Prompts:
       - About Prompt Studio: core-ai/prompts/overview.md
       - Accessing Prompt Studio: core-ai/prompts/accessing-prompt-studio.md
@@ -239,7 +243,7 @@ nav:
       - Advanced Features: core-ai/prompts/advanced-features.md
       - More Options on Prompt Studio: core-ai/prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: core-ai/evaluation/evaluation-studio-overview.md
+      - About Evaluation Studio: core-ai/evaluation/overview.md
       - Model Evaluation: 
         - About Model Evaluation: core-ai/evaluation/model-evaluation/overview.md
         - Create Projects: core-ai/evaluation/model-evaluation/create-project.md
@@ -290,5 +294,9 @@ nav:
     - Data: 
       - Manage Data: administration/data/manage-datasets.md
   - APIs: 
-    - About Agent Platform APIs: apis/overview.md
-    - APIs List: apis/overview/#apis-list
+    - Agentic Apps:
+      - About Agentic App APIs: apis/agentic-apps/overview.md
+      - API List: apis/agentic-apps/overview/#api-list
+    - Tools:
+      - About Tools APIs: apis/overview.md
+      - API List: apis/overview/#apis-list
