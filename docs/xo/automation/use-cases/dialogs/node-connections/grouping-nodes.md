@@ -1,9 +1,8 @@
 # Sub-Intent Scoping Using Node Groups
 
-Node groups are primarily used for defining a group of nodes. Note that it is not a part of the dialog flow.
+Node groups are primarily used for defining a group of nodes. Note that it is not a part of the dialog flow.  
 
-Node groups can be used to improve the user experience with follow-ups, digressions, and amending entity values. For a use case example, [refer here](../../../../../how-tos/build-a-banking-assistant/deploy-the-assistant/intent-scoping-using-group-node){:target="_blank"}.
-
+[Refer here](../../using-the-dialog-builder-tool/#node-groups){:target="_blank"} for advantages of grouping nodes in a sequence.
 
 ## Add a Node Group
 

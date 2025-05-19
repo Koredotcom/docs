@@ -94,7 +94,7 @@ For example: sip:savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -115,7 +115,7 @@ For example: sip:savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -178,7 +178,7 @@ For example: sip:savg-sbc1.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -272,7 +272,7 @@ For example: sip:usw-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -293,7 +293,7 @@ For example: sip:usw-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -357,7 +357,7 @@ For example: sip:usw-savg-sbc1.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -453,7 +453,7 @@ For example: sip:au-prod-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -474,7 +474,7 @@ For example: sip:au-prod-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -538,7 +538,7 @@ For example: sip:au-prod-savg-sbc1.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -634,7 +634,7 @@ For example: sip:ind-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -655,7 +655,7 @@ For example: sip:ind-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -715,7 +715,7 @@ For example: sip:ind-savg-sbc1.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -811,7 +811,7 @@ For example: sip:eu-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -832,7 +832,7 @@ For example: sip:eu-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -896,7 +896,7 @@ For example: sip:eu-savg-sbc1.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -992,7 +992,7 @@ For example: sip:de-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -1013,7 +1013,7 @@ For example: sip:de-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -1077,7 +1077,7 @@ For example: sip:de-savg-sbc1.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -1173,7 +1173,7 @@ For example: sip:jp-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -1194,7 +1194,7 @@ For example: sip:jp-savg-sbc2.kore.ai:5060
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>
@@ -1256,7 +1256,7 @@ For example: sip:jp-savg-sbc2.kore.ai:443
   <tr>
    <td><strong>RTP Ports</strong>
    </td>
-   <td>10000 to 60000
+   <td>6000-65535
    </td>
   </tr>
 </table>

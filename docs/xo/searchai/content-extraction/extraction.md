@@ -34,7 +34,7 @@ You can also use the logical **AND operator** to apply multiple rules to filter 
 
 **Extraction Model**: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. We currently support the following extraction models.
 
-### **Text Extraction Model**
+### Text Extraction Model
 
 The Text Extraction Model combines natural language processing (NLP) and machine learning techniques. It is based on the concept of tokenization, where the text is segmented into smaller units. The model undergoes training to identify and extract the most suitable chunks relevant to the search queries.
 
@@ -58,9 +58,10 @@ The layout-aware extraction method identifies objects in documents by combining 
 ![Layout Aware](../images/layout-aware-templates.png "Layout Aware Templates")
 Configure the strategy as per your needs and click the **Save** button. 
 
-### **Advanced HTML Extraction**
+### Advanced HTML Extraction
 
-This strategy is specially designed to extract data from tables and images in HTML files along with textual content. 
+This strategy is specially designed to extract data from tables and images in HTML files along with textual content.  If a video is present, the video itself is included in the extracted chunk and displayed whenever that chunk contributes to an answer, but the video transcript is not extracted or used for generating responses.
+
 
 **Configuration**: 
 

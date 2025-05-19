@@ -53,23 +53,11 @@ Steps to create an email address in the Kore domain:
 
 3. Click **Save.**
 4. A success message is displayed and the email address is created.  
-    <img src="../images/kore-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/kore-email-created.png" alt="Email Address Created" title="Email Address Created" style="border: 1px solid gray; zoom:80%;">  
 
-### Attach a Flow to a Kore Domain Email Address
+    !!! Note
 
-Steps to attach a flow to an email address in the Kore domain:
-
-1. Go to **Flows & Channels** > **FLOWS** > **Start Flows**.  
-    <img src="../images/start-flow.png" alt="Start Flows" title="Start Flows" style="border: 1px solid gray; zoom:80%;">
-
-2. Click the ellipsis icon (**⋮**) beside the flow you want to attach to the email and click **Update**.  
-    <img src="../images/update-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
-
-3. Select the email address and click **Update**.  
-    <img src="../images/attach-email.png" alt="Add Email" title="Add Email" style="border: 1px solid gray; zoom:50%;">
-
-4. A success message is displayed and the flow is attached to the email.  
-    <img src="../images/flow-attached.png" alt="Flow Attached" title="Flow Attached" style="border: 1px solid gray; zoom:80%;">
+        The option to link a flow directly from the Email Channels list is excluded. Users would need to return to the Experience Flows section, locate the linked flow, and publish it again for any changes to take effect. This option is omitted to maintain a consistent user experience and avoid unnecessary steps.
 
 ### Publish Kore Domain Email Addresses
 

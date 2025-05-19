@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.13.1 May 17, 2025
+
+<u>Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Integration Enhancements
+
+#### Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls
+
+The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
+
+#### AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware
+
+The Genesys Middleware has been enhanced to monitor changes in the *MemberID* and *CustomContactReasonID* fields within the Genesys Interaction Participant Data. This improvement allows the AgentAssist widget to display the most up-to-date context during active interactions, enabling contact center agents to provide more accurate and relevant support to customers.
+
+<hr>
+
 ## v11.13.0 May 03, 2025
 
 <u>Minor Release </u>
@@ -45,7 +63,7 @@ The updated Salesforce package includes the following:
 
 #### Outbound Call Support for Agent AI Integration with Salesforce NICE CTI
 
-The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights.
+The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md)
 
 ### API Enhancements
 
@@ -158,7 +176,7 @@ To enhance the management and customization of dialog tasks within the widget, K
 
 Kore has included a new option, **Interactive Language**, in the **Default Language for Agent AI Widget** drop-down list. Selecting this option adjusts the widget's localized text language to match the app's language. [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md/#steps-to-set-agent-ai-general-settings) 
 
-### Integrations
+### Integration Enhancements
 
 #### Support for associating a Single Bot with Multiple Queues in Genesys Cloud CX
 
