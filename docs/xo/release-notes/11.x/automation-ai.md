@@ -2,6 +2,45 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+
+
+## v11.13.1 May 17, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Transfer
+
+#### Salesforce MIAW Integration for Agent Transfer
+
+AI for Service now includes a new Salesforce agent transfer integration: Messaging for In-App and Web (MIAW). This is in addition to the current Salesforce Live Chat. While existing users can still use Live Chat with their current settings, MIAW will be the default for new integrations. MIAW offers a personalized, asynchronous, and persistent messaging experience. As Salesforce is retiring Live Chat on February 14, 2026, transitioning to MIAW is highly recommended for ongoing support and access to the newest features.
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md)
+
+
+
+
+### Security Vulnerability Fixes
+
+As part of the recent upgrade, the XO Platform addresses potential security vulnerabilities that may affect Natural Language Processing (NLP) in apps you configure for the Dutch language.
+
+In rare cases, the app may not correctly recognize certain user utterances, which can reduce response accuracy.
+
+Recommended Action:
+
+To maintain optimal performance and ensure the security integrity of your Dutch language apps, follow these steps:
+
+1. Update training data: Expand training phrases to cover a wider range of user inputs. 
+2. Retrain the app: Use the updated data to retrain the app’s NLP models for improved intent recognition. 
+3. Republish the app: Republish the app to deploy the updated models to your production environment. 
+
+These steps help restore and maintain high recognition accuracy and consistent responsiveness in your Dutch language apps.
+
+
+
+
+<hr>
+
 ## v11.13.0 May 03, 2025
 
 <u> Minor Release </u>
