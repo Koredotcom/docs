@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+
+
+## v11.13.1 May 17, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Transfer
+
+#### New Salesforce Integration Option for Agent Transfer
+
+AI for Service now includes a new Salesforce agent transfer integration: Messaging for In-App and Web (MIAW). This is in addition to the current Salesforce Live Chat. While existing users can still use Live Chat with their current settings, new integrations will use MIAW by default. MIAW offers a personalized, asynchronous, and persistent messaging experience. As Salesforce is retiring Live Chat on February 14, 2026, transitioning to MIAW is highly recommended for ongoing support and access to the newest features.
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md)
+
+
+<hr>
+
 ## v11.13.0 May 03, 2025
 
 <u> Minor Release </u>
