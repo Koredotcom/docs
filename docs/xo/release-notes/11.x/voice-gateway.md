@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.13.1 May 17, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.13.0 May 03, 2025
 
 <u> Minor Release </u>
