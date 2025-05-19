@@ -201,13 +201,16 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
     2. App URL: {<a href="#agentai">[Agent AI URL]</a>}/integrations/nice/iframe/?params={scriptparams}
     3. App Title: Kore Agent AI (change as needed)
     4. Participants: Both  
+
         <img src="../configuration-5.png" alt="configuration" title="configuration" style="border: 1px solid gray; zoom:80%;"> 
 
     5. Audio Relay Endpoint: {<a href="#kvg">[Kore Voice Gateway</a>(KVG)]}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&lt;DNS>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true
         * **Bot SIP URI**: **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Agent AI** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
+
             <img src="../configure-sip-trunk_6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
 
         * **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
+
             <img src="../web-mobile-client_7.png" alt="web-mobile-client" title="free text" style="border: 1px solid gray; zoom:80%;"> 
 
         * Token: Create a **JSON Web Token** on [jwt.io](jwt.io){:target="_blank"} with the following details:
@@ -223,6 +226,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 3. Click **File** > **Import from File**.
 4. Select the **downloaded script** for chat / voice.
 5. Double-click the **Generate iframe params** tile.  
+
     <img src="../generate-iframe-params-8.png" alt="generate-iframe-params" title="generate-iframe-params" style="border: 1px solid gray; zoom:80%;"> 
 
     <img src="../iframe-param-code-9.png" alt="iframe-param-code" title="iframe-param-code" style="border: 1px solid gray; zoom:80%;"> 
@@ -248,12 +252,15 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
                 Refer to [Manage Access Keys](https://help.nice-incontact.com/content/admin/security/manageaccesskeys.htm){:target="_blank"} to create NICE CX API Access Key and NICE CX API Access Key Secret. 
 
 7. Double-click the **Agent Assist** tile.  
+
     <img src="../agent-assist-tile-10.png" alt="agent-assist-tile" title="agent-assist-tile" style="border: 1px solid gray; zoom:80%;"> 
 
 8. Select the **checkbox** against the Agent Assist instance you created in the above step.  
+
     <img src="../agent-assist-instance-11.png" alt="agent-assist-instance" title="agent-assist-instance" style="border: 1px solid gray; zoom:80%;"> 
 
 9. Click **Yes**.  
+
     <img src="../agent-assist-app-12.png" alt="agent-assist-app" title="agent-assist-app" style="border: 1px solid gray; zoom:80%;"> 
 
 10. After selecting **Agent Assist**, click the **Close** button on the bottom-right corner of the page.  
@@ -266,29 +273,36 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 On the **NICE Incontact** home page, click the **application launcher** button, and select **ACD**.
 
 **Create a Campaign**  
+
 <img src="../create-a-campaign-13.png" alt="create-a-campaign" title="create-a-campaign" style="border: 1px solid gray; zoom:80%;"> 
 
 **Create a Skill**  
+
 <img src="../create-a-skill-14.png" alt="create-a-skill" title="create-a-skill" style="border: 1px solid gray; zoom:80%;"> 
 
 For Custom Script, select the NICE Studio Script created in the previous step.
 
 **Create a Disposition**  
+
 <img src="../create-a-disposition-15.png" alt="create-a-disposition" title="create-a-disposition" style="border: 1px solid gray; zoom:80%;"> 
 
 ## Outbound Call Simulation
 
 1. Go to the **NICE** home page.
 2. Click **Application Launcher** > **MAX**.  
+
     <img src="../integrated-softphone-16.png" alt="integrated-softphone" title="integrated-softphone" style="border: 1px solid gray; zoom:80%;"> 
 3. Select **Integrated Softphone,** and click **Connect**.
 4. Change the status to **Available**.  
+
     <img src="../available-status-17.png" alt="available-status" title="available-status" style="border: 1px solid gray; zoom:80%;"> 
 
 5. Click on **New** at the bottom left of the screen.  
+
     <img src="../new-contact-18.png" alt="new-contact" title="new-contact" style="border: 1px solid gray; zoom:80%;"> 
 
 6. Enter the number in the search bar and click on **Call** and select the outbound skill created in the previous step.  
+
     <img src="../new-call-19.png" alt="new-call" title="new-call" style="border: 1px solid gray; zoom:80%;"> 
 
 7. When the call is accepted by the customer, Agent AI widget will be loaded automatically. 
@@ -297,9 +311,11 @@ For Custom Script, select the NICE Studio Script created in the previous step.
     <img src="../widget-21.png" alt="widget" title="widget" style="border: 1px solid gray; zoom:80%;"> 
 
 8. Click **Hang Up** to disconnect the call.  
+
     <img src="../hang-up-call-22.png" alt="hang-up-call" title="hang-up-call" style="border: 1px solid gray; zoom:80%;"> 
 
 9. Click **Hang Up** again to confirm disconnection of the call.
     1. The Call **summary** pop-up gets triggered at the end of the call session.
 10. Select the **disposition,** and click **Save & Close**.  
+
     <img src="../summary-23.png" alt="summary" title="summary" style="border: 1px solid gray; zoom:80%;"> 
