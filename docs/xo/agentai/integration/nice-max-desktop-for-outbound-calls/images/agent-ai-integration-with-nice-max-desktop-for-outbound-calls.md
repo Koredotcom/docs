@@ -1,4 +1,4 @@
-This document provides step-by-step instructions for integrating the Kore.ai Agent AI widget into the NICE MAX Desktop environment. This integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agent-experience/agent-assist-widget-v3.md){:target="_blank"},Transcription, along with end-of-call summary and Custom Data passing (such as agent name and ID) to the Agent AI widget.
+This document provides step-by-step instructions for integrating the Kore.ai Agent AI widget into the NICE MAX Desktop environment. This integration enables key Agent AI features such as Automation, [Agent Coaching](./../../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../../agent-experience/agent-assist-widget-v3.md){:target="_blank"},Transcription, along with end-of-call summary and Custom Data passing (such as agent name and ID) to the Agent AI widget.
 
 ## Shared Responsibilities
 
@@ -18,7 +18,7 @@ This document provides step-by-step instructions for integrating the Kore.ai Age
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
 * Agent Assist Hub enabled for your account. Contact your NICE CX representative. Note this requires an extra license cost.
 * Access to Kore AgentAssist application and familiarity with creating and configuring an AgentAssist Bot.
-* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Configure Voice Channel](./../../../channels/voice-gateway/configure-voice-gateway.md){:target="_blank"} and [Chat Channel](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough.
+* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Configure Voice Channel](./../../../../channels/voice-gateway/configure-voice-gateway.md){:target="_blank"} and [Chat Channel](./../../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough.
 
 ## **Definitions**
 
@@ -216,7 +216,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         * Token: Create a **JSON Web Token** on [jwt.io](jwt.io){:target="_blank"} with the following details:
             * Payload: {“appId”: &lt;Bot Client ID>}
             * Header: {“alg”: “HS256″,”typ”: “JWT”}
-            * Secret: Bot Client Secret.
+            * Secret: Bot Client Secret. 
+
 9. Click **Create**.
 
 ### Step 2: NICE CX Studio > Import Outbound Voice Script and Configure Parameters
@@ -292,7 +293,8 @@ For Custom Script, select the NICE Studio Script created in the previous step.
 2. Click **Application Launcher** > **MAX**.  
 
     <img src="../integrated-softphone-16.png" alt="integrated-softphone" title="integrated-softphone" style="border: 1px solid gray; zoom:80%;"> 
-3. Select **Integrated Softphone,** and click **Connect**.
+
+3. Select **Integrated Softphone,** and click **Connect**. 
 4. Change the status to **Available**.  
 
     <img src="../available-status-17.png" alt="available-status" title="available-status" style="border: 1px solid gray; zoom:80%;"> 
