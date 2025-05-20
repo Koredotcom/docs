@@ -198,7 +198,7 @@ This functionality helps users test how effectively their RAG system uses extern
 
     <img src="../../images/run_searchai.png" alt="Run Search AI" title="Run Search AI" style="border: 1px solid gray; zoom:80%;">
 
-2. **Select a pre-configured connection**: In the **Connection name** field, select a Search AI connection. Only integrations that are pre-configured and successfully tested via the **Integrations** page will appear in the dropdown.
+2. **Select a pre-configured connection**: In the **Connection name** field, select a Search AI connection. Only integrations that are pre-configured and successfully tested via the **Integrations** page will appear in the dropdown. For more information on setting up a Search AI connection, see [Setting up Search AI](../../../ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app).
 
     <img src="../../images/select_connection.png" alt="Select connection" title="Select connection" style="border: 1px solid gray; zoom:80%;">
 
@@ -219,9 +219,7 @@ The Response tab shows whether the first-row query is returning an answer, allow
 
     <img src="../../images/answers_ret_contexts.png" alt="Answers and Retrieved Contexts" title="Answers and Retrieved Contexts" style="border: 1px solid gray; zoom:80%;">
 
-    In the **Retrieved Contexts** column, click the **Show JSON** link to open the Response JSON schema. In the opened JSON, retrieved contexts appear under the `chunkText` key. The number of entries under `chunkText` corresponds to the number of retrieved chunks for that row.
-
-    To understand the context used for a given answer, inspect the values under the `chunkText` key in the response JSON.
+    In the **Retrieved Contexts** column, click the **Show JSON** link to open the Response JSON schema. In the opened JSON, retrieved contexts appear under the `chunkText` key. The number of entries under `chunkText` corresponds to the number of retrieved chunks for that row. To understand the context used for a given answer, inspect the values under the `chunkText` key in the response JSON.
 
     <img src="../../images/show_json.png" alt="JSON chunk text" title="JSON chunk text" style="border: 1px solid gray; zoom:80%;">
 
@@ -244,3 +242,4 @@ The Response tab shows whether the first-row query is returning an answer, allow
 * If importing data from production, carefully select the model, source, and date range to ensure you're importing the relevant data.
 * Running a prompt enables flexible data generation, allowing users to create customized data based on specific instructions.
 * Running an API enables users to integrate live data and model outputs from external APIs or deployed tools, enhancing flexibility in the evaluation process.
+* Running Search AI enables users to evaluate RAG systems by retrieving answers and supporting context using validated Search AI integrations.
