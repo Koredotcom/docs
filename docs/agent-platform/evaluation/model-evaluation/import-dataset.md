@@ -198,7 +198,7 @@ This functionality helps users test how effectively their RAG system uses extern
 
     <img src="../../images/run_searchai.png" alt="Run Search AI" title="Run Search AI" style="border: 1px solid gray; zoom:80%;">
 
-2. **Select a pre-configured connection**: In the **Connection name** field, select a Search AI connection. Only integrations that are pre-configured and successfully tested via the **Integrations** page will appear in the dropdown. For more information on setting up a Search AI connection, see [Setting up Search AI](../../../ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app).
+2. **Select a pre-configured connection**: In the **Connection name** field, select a Search AI connection. Only integrations that are pre-configured and successfully tested via the **Integrations** page will appear in the dropdown. For more information on setting up a Search AI connection, see [Setting up Search AI](../../ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app).
 
     <img src="../../images/select_connection.png" alt="Select connection" title="Select connection" style="border: 1px solid gray; zoom:80%;">
 

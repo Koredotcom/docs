@@ -20,7 +20,7 @@ To select and deploy a model, follow these steps:
 
 
   * If you choose to **Import from Hugging Face**, select the **Hugging Face connection** type from the dropdown and paste the **model name**.
-    For more information about connecting to your Hugging Face account, see [How to Connect to your Hugging Face Account](../../../administration/integrations/enable-hugging-face.md).
+    For more information about connecting to your Hugging Face account, see [How to Connect to your Hugging Face Account](../../administration/integrations/enable-hugging-face.md).
 
     !!! note
 
@@ -29,8 +29,7 @@ To select and deploy a model, follow these steps:
 
     <img src="../images/image7.png" alt=" " title=" " style="border: 1px solid gray; zoom:80%;">
 
-  
-<ol start="3"><li>Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click <b>Next</b>. <a href="https://docs.kore.ai/agent-platform/core-ai/models/open-source-models/model-optimization/" target="_blank">Learn more</a>.</li></ol>
+3.Based on the selected Kore-hosted model, the Optimization section is displayed. Choose the optimization option as required and then click **Next**. [Learn more](../open-source-models/model-optimization.md).
 
 * **Skip optimization**: It skips the model optimization.
 * **CTranslate2**: Select Quantization from the dropdown menu if applicable. [Learn more](model-optimization.md#ctranslate2). 

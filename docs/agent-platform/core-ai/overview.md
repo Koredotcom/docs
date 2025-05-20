@@ -4,7 +4,7 @@ The Agent Platform offers a comprehensive suite of AI capabilities designed to e
 
 ## Models
 
-Models Studio enables enterprises to tailor foundational language models to their domain-specific needs. With built-in tools for fine-tuning, external model integration, and deployment management, users can enhance base models using proprietary datasets or bring in commercial and open-source models to diversify and strengthen AI capabilities.  [Learn more :octicons-arrow-right-24:](./models/overview.md).
+Models Studio enables enterprises to tailor foundational language models to their domain-specific needs. With built-in tools for fine-tuning, external model integration, and deployment management, users can enhance base models using proprietary datasets or bring in commercial and open-source models to diversify and strengthen AI capabilities.  [Learn more :octicons-arrow-right-24:](../models/overview.md).
 
 * Fine-tune models with your enterprise data.
 * Import 30+ open-source models or connect to providers like OpenAI, Anthropic, Cohere, and Google.
@@ -13,7 +13,7 @@ Models Studio enables enterprises to tailor foundational language models to thei
 
 ## Prompt Studio
 
-Prompt Studio is a workspace for developing, experimenting with, and optimizing prompts. It supports multi-model testing, template-driven design, and version control, helping teams find the best-performing prompt configurations through an iterative process. Whether testing open-source or fine-tuned models, Prompt Studio accelerates prompt refinement and deployment. [Learn more :octicons-arrow-right-24:](./prompts/overview.md)
+Prompt Studio is a workspace for developing, experimenting with, and optimizing prompts. It supports multi-model testing, template-driven design, and version control, helping teams find the best-performing prompt configurations through an iterative process. Whether testing open-source or fine-tuned models, Prompt Studio accelerates prompt refinement and deployment. [Learn more :octicons-arrow-right-24:](../prompts/overview.md)
 
 * Compare prompts across different models in real time.
 * Use 65+ prebuilt templates or build from scratch.
@@ -22,7 +22,7 @@ Prompt Studio is a workspace for developing, experimenting with, and optimizing 
 
 ## Evaluation Studio
 
-Evaluation Studio provides a structured environment to analyze and benchmark the performance of LLMs using diverse datasets and scoring methods. Users can apply built-in evaluators or define custom evaluators to assess outputs for coherence, factual accuracy, safety, and more. Results are visualized and tracked across evaluation sessions for continuous improvement. [Learn more :octicons-arrow-right-24:](./evaluation/overview.md).
+Evaluation Studio provides a structured environment to analyze and benchmark the performance of LLMs using diverse datasets and scoring methods. Users can apply built-in evaluators or define custom evaluators to assess outputs for coherence, factual accuracy, safety, and more. Results are visualized and tracked across evaluation sessions for continuous improvement. [Learn more :octicons-arrow-right-24:](../evaluation/overview.md).
 
 * Evaluate models using prebuilt or custom evaluators (e.g., coherence, toxicity).
 * Import datasets from production or offline sources.
@@ -31,7 +31,7 @@ Evaluation Studio provides a structured environment to analyze and benchmark the
 
 ## Guardrails
 
-Guardrails are safeguards that ensure AI-generated responses from large language models (LLMs) are appropriate, safe, and aligned with organizational or regulatory standards. They enforce safety, privacy, and contextual relevance by scanning both inputs and outputs using a configurable set of scanners to detect issues such as prompt injection, offensive language, bias, and more. Guardrails play a critical role in maintaining ethical compliance and trust in AI-driven applications.  [Learn more :octicons-arrow-right-24:](./guardrails/overview.md).
+Guardrails are safeguards that ensure AI-generated responses from large language models (LLMs) are appropriate, safe, and aligned with organizational or regulatory standards. They enforce safety, privacy, and contextual relevance by scanning both inputs and outputs using a configurable set of scanners to detect issues such as prompt injection, offensive language, bias, and more. Guardrails play a critical role in maintaining ethical compliance and trust in AI-driven applications.  [Learn more :octicons-arrow-right-24:](../guardrails/overview.md).
 
 * Built-in scanners for toxicity, prompt injection, bias detection, and PII anonymization.
 * Define acceptable topic boundaries using ban-topic rules and regex patterns.
