@@ -4,7 +4,7 @@ The Agent Platform offers a comprehensive suite of AI capabilities designed to e
 
 ## Models
 
-Models Studio enables enterprises to tailor foundational language models to their domain-specific needs. With built-in tools for fine-tuning, external model integration, and deployment management, users can enhance base models using proprietary datasets or bring in commercial and open-source models to diversify and strengthen AI capabilities.  [Learn more :octicons-arrow-right-24:](../models/overview.md).
+Models Studio enables enterprises to tailor foundational language models to their domain-specific needs. With built-in tools for fine-tuning, external model integration, and deployment management, users can enhance base models using proprietary datasets or bring in commercial and open-source models to diversify and strengthen AI capabilities.  [Learn more :octicons-arrow-right-24:](../models/overview.md)
 
 * Fine-tune models with your enterprise data.
 * Import 30+ open-source models or connect to providers like OpenAI, Anthropic, Cohere, and Google.
@@ -22,7 +22,7 @@ Prompt Studio is a workspace for developing, experimenting with, and optimizing 
 
 ## Evaluation Studio
 
-Evaluation Studio provides a structured environment to analyze and benchmark the performance of LLMs using diverse datasets and scoring methods. Users can apply built-in evaluators or define custom evaluators to assess outputs for coherence, factual accuracy, safety, and more. Results are visualized and tracked across evaluation sessions for continuous improvement. [Learn more :octicons-arrow-right-24:](../evaluation/overview.md).
+Evaluation Studio provides a structured environment to analyze and benchmark the performance of LLMs using diverse datasets and scoring methods. Users can apply built-in evaluators or define custom evaluators to assess outputs for coherence, factual accuracy, safety, and more. Results are visualized and tracked across evaluation sessions for continuous improvement. [Learn more :octicons-arrow-right-24:](../evaluation/overview.md)
 
 * Evaluate models using prebuilt or custom evaluators (e.g., coherence, toxicity).
 * Import datasets from production or offline sources.
