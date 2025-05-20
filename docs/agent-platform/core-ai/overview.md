@@ -31,7 +31,7 @@ Evaluation Studio provides a structured environment to analyze and benchmark the
 
 ## Guardrails
 
-Guardrails are safeguards that ensure AI-generated responses from large language models (LLMs) are appropriate, safe, and aligned with organizational or regulatory standards. They enforce safety, privacy, and contextual relevance by scanning both inputs and outputs using a configurable set of scanners to detect issues such as prompt injection, offensive language, bias, and more. Guardrails play a critical role in maintaining ethical compliance and trust in AI-driven applications.  [Learn more :octicons-arrow-right-24:](../guardrails/overview.md).
+Guardrails are safeguards that ensure AI-generated responses from large language models (LLMs) are appropriate, safe, and aligned with organizational or regulatory standards. They enforce safety, privacy, and contextual relevance by scanning both inputs and outputs using a configurable set of scanners to detect issues such as prompt injection, offensive language, bias, and more. Guardrails play a critical role in maintaining ethical compliance and trust in AI-driven applications.  [Learn more :octicons-arrow-right-24:](../guardrails/overview.md)
 
 * Built-in scanners for toxicity, prompt injection, bias detection, and PII anonymization.
 * Define acceptable topic boundaries using ban-topic rules and regex patterns.
