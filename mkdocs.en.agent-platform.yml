@@ -132,9 +132,9 @@ nav:
       - AI for Process: https://kore.ai/ai-for-process/  
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
-    - About Agentic Apps: ai-agents/agentic-apps/overview.md
-    - About AI Agents: ai-agents/overview.md
-    - About Dialog Agents: dialog-agents/overview.md
+    - Agentic Apps: ai-agents/agentic-apps/overview.md
+    - AI Agents: ai-agents/overview.md
+    - Dialog Agents: dialog-agents/overview.md
     - Orchestration:
       - Supervisor: ai-agents/supervisor.md
       - DialogGPT: dialog-agents/dialoggpt.md
