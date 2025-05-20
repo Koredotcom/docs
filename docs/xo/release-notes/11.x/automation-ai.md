@@ -22,7 +22,7 @@ AI for Service now includes a new Salesforce agent transfer integration: Messagi
 
 ### Security Vulnerability Fixes
 
-As part of the recent upgrade, the XO Platform addresses potential security vulnerabilities that may affect Natural Language Processing (NLP) in apps you configure for the Dutch language.
+As part of the recent upgrade, the XO Platform addresses potential security vulnerabilities that may affect Natural Language Processing (NLP) in apps you configure for the **Dutch** language.
 
 In rare cases, the app may not correctly recognize certain user utterances, which can reduce response accuracy.
 
@@ -30,12 +30,11 @@ Recommended Action:
 
 To maintain optimal performance and ensure the security integrity of your Dutch language apps, follow these steps:
 
-1. Update training data: Expand training phrases to cover a wider range of user inputs. 
-2. Retrain the app: Use the updated data to retrain the app’s NLP models for improved intent recognition. 
-3. Republish the app: Republish the app to deploy the updated models to your production environment. 
+1. [Update training data](../../automation/natural-language/training/machine-learning-engine.md#adding-machine-learning-utterances): Expand training phrases to cover a wider range of user inputs. 
+2. [Retrain the app](../../automation/natural-language/training/machine-learning-engine.md#training-your-assistant): Use the updated data to retrain the app’s NLP models for improved intent recognition. 
+3. [Republish the app](../../deploy/publishing-bot.md): Republish the app to deploy the updated models to your production environment. 
 
 These steps help restore and maintain high recognition accuracy and consistent responsiveness in your Dutch language apps.
-
 
 
 
