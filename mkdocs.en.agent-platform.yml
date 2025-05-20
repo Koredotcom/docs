@@ -210,62 +210,62 @@ nav:
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
-      - About Models: core-ai/models/overview.md 
+      - About Models: models/overview.md 
       - Model Factory: 
         - Fine-Tuned Models: 
-          - Create a Model: core-ai/models/fine-tune-models/create-a-fine-tuned-model.md
-          - Deploy a Model: core-ai/models/fine-tune-models/deploy-a-fine-tuned-model.md
+          - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
+          - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
           - Model Settings:
-            - Overview: core-ai/models/fine-tune-models/model-settings-overview.md
-            - Model Endpoint: core-ai/models/fine-tune-models/view-the-generated-api-endpoint.md
-            - API Keys: core-ai/models/fine-tune-models/generate-an-api-key.md
-            - Configurations: core-ai/models/fine-tune-models/configure-your-fine-tuned-model.md
-          - Export a Model: core-ai/models/fine-tune-models/export-your-fine-tuned-model.md
+            - Overview: models/fine-tune-models/model-settings-overview.md
+            - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+            - API Keys: models/fine-tune-models/generate-an-api-key.md
+            - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
+          - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
       - Model Hub:
         - Open-Source Models:
-          - Import a model: core-ai/models/open-source-models/importing-models.md
+          - Import a model: models/open-source-models/importing-models.md
           - Deploy a model:
-            - Deploy an Open-Source Model: core-ai/models/open-source-models/select-and-deploy-an-open-source-model.md
-            - Deploy a Hugging Face Model: core-ai/models/open-source-models/deploy-an-imported-model-from-hugging-face.md
-          - Model Optimization Techniques: core-ai/models/open-source-models/model-optimization.md 
-          - Open-Source models overview: core-ai/models/open-source-models/open-source-summary.md
+            - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+            - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+          - Model Optimization Techniques: models/open-source-models/model-optimization.md 
+          - Open-Source models overview: models/open-source-models/open-source-summary.md
           - Model Settings:
-            - Model Endpoint: core-ai/models/open-source-models/view-the-generated-api-endpoint.md
-            - API Keys: core-ai/models/open-source-models/generate-an-api-key-open-source.md
-            - Configurations: core-ai/models/open-source-models/configure-your-open-source-model.md
+            - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+            - API Keys: models/open-source-models/generate-an-api-key-open-source.md
+            - Configurations: models/open-source-models/configure-your-open-source-model.md
         - External Models: 
-          - Add a Model using Easy Integration: core-ai/models/external-models/add-an-external-model-using-easy-integration.md
-          - Add a Model using API Integration: core-ai/models/external-models/add-an-external-model-using-api-integration.md
+          - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+          - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
     - Prompts:
-      - About Prompt Studio: core-ai/prompts/overview.md
-      - Accessing Prompt Studio: core-ai/prompts/accessing-prompt-studio.md
-      - Using Prompt Studio: core-ai/prompts/using-prompt-studio.md
-      - Advanced Features: core-ai/prompts/advanced-features.md
-      - More Options on Prompt Studio: core-ai/prompts/options-prompt-canvas.md
+      - About Prompt Studio: prompts/overview.md
+      - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
+      - Using Prompt Studio: prompts/using-prompt-studio.md
+      - Advanced Features: prompts/advanced-features.md
+      - More Options on Prompt Studio: prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: core-ai/evaluation/overview.md
+      - About Evaluation Studio: evaluation/overview.md
       - Model Evaluation: 
-        - About Model Evaluation: core-ai/evaluation/model-evaluation/overview.md
-        - Create Projects: core-ai/evaluation/model-evaluation/create-project.md
-        - Create Evaluations: core-ai/evaluation/model-evaluation/create-evaluation.md
-        - Import Datasets: core-ai/evaluation/model-evaluation/import-dataset.md
-        - Configure Evaluators: core-ai/evaluation/model-evaluation/configure-evaluator.md
-        - Run Evaluations: core-ai/evaluation/model-evaluation/run-evaluation.md
-        - View Results: core-ai/evaluation/model-evaluation/view-evaluation-insight.md
+        - About Model Evaluation: evaluation/model-evaluation/overview.md
+        - Create Projects: evaluation/model-evaluation/create-project.md
+        - Create Evaluations: evaluation/model-evaluation/create-evaluation.md
+        - Import Datasets: evaluation/model-evaluation/import-dataset.md
+        - Configure Evaluators: evaluation/model-evaluation/configure-evaluator.md
+        - Run Evaluations: evaluation/model-evaluation/run-evaluation.md
+        - View Results: evaluation/model-evaluation/view-evaluation-insight.md
       - Agentic Evaluation:
-        - About Agentic Evaluation: core-ai/evaluation/agentic-evaluation/overview.md
-        - Create Projects: core-ai/evaluation/agentic-evaluation/create-project.md
-        - Create Evaluations: core-ai/evaluation/agentic-evaluation/create-evaluation.md
-        - Import Datasets: core-ai/evaluation/agentic-evaluation/import-production-data.md
-        - Configure Evaluators: core-ai/evaluation/agentic-evaluation/evaluate-production-data.md
-        - Run Evaluations: core-ai/evaluation/agentic-evaluation/run-evaluation.md
-        - View Results: core-ai/evaluation/agentic-evaluation/view-evaluation-result.md
-        - Analyze Evaluations: core-ai/evaluation/agentic-evaluation/analyze-evaluation.md
+        - About Agentic Evaluation: evaluation/agentic-evaluation/overview.md
+        - Create Projects: evaluation/agentic-evaluation/create-project.md
+        - Create Evaluations: evaluation/agentic-evaluation/create-evaluation.md
+        - Import Datasets: evaluation/agentic-evaluation/import-production-data.md
+        - Configure Evaluators: evaluation/agentic-evaluation/evaluate-production-data.md
+        - Run Evaluations: evaluation/agentic-evaluation/run-evaluation.md
+        - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
+        - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md
     - AI Safety & Governance: 
-      - About Guardrails: core-ai/guardrails/overview.md
-      - Add a Scanner: core-ai/guardrails/add-a-scanner.md
-      - Test Guardrail: core-ai/guardrails/test-guardrail.md
-      - Manage Guardrails: core-ai/guardrails/manage-guardrails.md
+      - About Guardrails: guardrails/overview.md
+      - Add a Scanner: guardrails/add-a-scanner.md
+      - Test Guardrail: guardrails/test-guardrail.md
+      - Manage Guardrails: guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/settings-overview.md
     - User Management:

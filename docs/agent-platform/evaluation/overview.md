@@ -1,42 +1,14 @@
 # About Evaluation Studio
 
-Evaluation Studio is a comprehensive tool in Agent Platform for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators or create custom evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. Additionally, Evaluation Studio fosters collaboration and sharing, allowing teams to work together on projects, share evaluation results, and collectively analyze model performance. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.
+Evaluation Studio is a unified workspace for evaluating AI system performance across two primary areas: **Model Evaluation** and **Agentic Evaluation**. It enables users to systematically assess both the quality of large language model (LLM) outputs and the behavior of agentic applications in real-world scenarios.
 
+By supporting both model-level and agentic evaluation, Evaluation Studio provides a comprehensive foundation for improving LLM quality and agentic application behavior. Whether you're validating prompt effectiveness, debugging tool chains, or auditing full workflows, Evaluation Studio enables scalable, data-driven iteration—helping you build safer, more reliable, and higher-performing AI systems.
 
-## Key Features
+### Model Evaluation
 
-1. **Project-based Organization:** Projects serve as folders for evaluations. Users can create, manage, and share projects that serve as containers for evaluations. Each project can include multiple evaluations, and users can easily add, rename, or delete them.
-2. **Flexible Dataset Handling and Import:** Evaluation Studio supports importing data through CSV files (with input-output pairs or input data) and production data from deployed model traces.
-3. **Streamlined Evaluation Process**: Evaluate model performance based on out-of-the-box evaluators such as groundness, coherence, toxicity, etc. Users can run evaluations on datasets, with results helping identify areas for model improvement.
-4. **Flexibility for Different Data Scenarios**: Evaluation Studio supports various evaluation scenarios:
-    1. **One Input, One Output**: Simple, straightforward evaluations.
-    2. **One Input, Multiple Outputs**: Assess multiple outputs from a single input.
-    3. **Input Only**: Generate outputs  with your production model when only input data is available.
+Model Evaluation enables you to assess the performance of large language models (LLMs) using configurable quality and safety metrics. You can upload datasets with input-output pairs, apply built-in or custom evaluators, and analyze model effectiveness through visual scoring, thresholds, and collaborative projects. This type of evaluation is ideal for fine-tuning, comparing, and validating models before or after deployment. [Learn more :octicons-arrow-right-24:](./model-evaluation/overview.md)
 
+### Agentic Evaluation
 
-## Why Use Evaluation Studio?
+Agentic Evaluation is designed to assess how effectively an agentic application performs in production. You can import app sessions and trace data, then run multi-level evaluations to understand how well the agentic app achieves goals, adheres to workflows, utilizes tools and handles various other tasks and interactions. Agentic Evaluation enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools operate in production. This helps uncover coordination issues, workflow failures, and opportunities for optimization. [Learn more :octicons-arrow-right-24:](./agentic-evaluation/overview.md)
 
-Evaluation Studio is an essential tool for managing, evaluating, and optimizing Large Language Models. It simplifies the process of model evaluation and provides flexible options for data import and analysis. This makes it an invaluable resource for data scientists, machine learning engineers, and teams working on model development and optimization.
-
-1. **Streamlined Workflow:** Evaluation Studio captures the model evaluation through datasets with various pre-built evaluators. Users can manage projects, upload data, perform evaluations, and track results, all in one place.
-2. **Customizability:** Users can define evaluation criteria that suit their specific needs. The platform adapts to different evaluation scenarios, from simple to complex use cases.
-3. **Collaboration**: Projects can be shared with collaborators, supporting team-based evaluation and model testing in a centralized environment.
-4. **Continuous Improvement:** Regular evaluations allow users to track model performance over time, ensuring that models are updated or fine-tuned as needed for ongoing optimization.
-5. **Seamless Integration**: Evaluation Studio is designed to integrate with production models seamlessly. It supports importing data from deployed models and exporting custom trace data in the studio to be further analyzed.
-
-
-## User Experience Overview
-
-The following outlines the key actions at each stage of the Evaluation Studio user journey:
-
-1. [**Create a project**](./create-project.md): Log in to Agent Platform, go to Evaluation Studio, and create a project.
-
-2. [**Create an evaluation**](./create-evaluation.md): Create an evaluation for your project.
-
-3. [**Import a dataset**](./import-dataset.md): Upload your dataset (e.g., CSV) for evaluation.
-
-4. [**Configure evaluators**](./configure-evaluator.md): Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
-
-5. [**Run an evaluation**](./run-evaluation.md): Trigger the evaluation based on your dataset and selected evaluators.
-
-6. [**View evaluation results**](./view-evaluation-insight.md): Review the evaluator tiles in the Evaluation Insights section, where results are shown visually with color-coded indicators (e.g., green/red). Assess model performance by examining visual cues and scores.
