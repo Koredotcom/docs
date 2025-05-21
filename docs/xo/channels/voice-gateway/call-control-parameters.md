@@ -1166,7 +1166,7 @@ Smart Format capabilities vary between models. When Smart Format is turned on, D
 | ttsGender        | String (MALE, FEMALE, NEUTRAL) | Google                                |                                                                                                                                                                                                                                   |                                                |
 | ttsLoop          | Number / String      | ALL                                   | The `ttsLoop` parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message will be played multiple times in a loop.       | Example - `ttsLoop = 2`<br>Text will be played twice |
 | earlyMedia       | Boolean              | ALL                                   | The **Early Media** parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected.                                                                             |                                                |
-| ttsOptions       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It is used to tune the TTS.<br>**Note**: Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:<br>`ttsProvider = playht`<br>`ttsLanguage = en-US`<br>`ttsOptions = {"voice_engine": "PlayDialog"}`<br>`voiceName = <respective voice name>` |                                                |
+| ttsOptions       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It is used to tune the TTS.|                                                |
 
 
 ## TTS Options in Voice Gateway
@@ -1191,6 +1191,18 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 * `quality`: Sets the quality of the audio output.
 * `speed`: Controls the playback speed.
 * `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Allow further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
+* `Voice_engine`: The voice engine used to synthesize the voice.
+
+   !!! Note
+
+      Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
+
+      `ttsProvider = playht`  
+      `ttsLanguage = en-US`  
+      `ttsOptions = {"voice_engine": "PlayDialog"}`  
+      `voiceName = <respective voice name>` 
+      
+      Defaults to PlayDialog
 
 #### Deepgram
 
