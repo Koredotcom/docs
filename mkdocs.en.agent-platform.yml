@@ -292,7 +292,7 @@ nav:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
-      - Manage Data: administration/data/manage-datasets.md
+      - Manage Data: settings/data/manage-datasets.md
   - APIs: 
     - Agentic Apps:
       - About Agentic App APIs: apis/agentic-apps/overview.md
