@@ -1,4 +1,4 @@
-# Invite and Manage Account Users 
+# Invite and Manage Account Users
 
 The **Users** feature simplifies account administration through centralized tools for inviting, importing, and managing users. The tools work together to streamline user administration and ensure efficient collaboration, access control, and status monitoring.
 
@@ -31,7 +31,7 @@ The dashboard displays user counts by status:
 
 <img src="../images/users-count.png" alt="users count" title="users count" style="border: 1px solid gray; zoom:75%;">
 
-It also shows detailed user information, including name, email, role, and status. For information on default system roles, click [here](../user-management/role-management.md/#system-defined-roles){:target="_blank"}.
+It also shows detailed user information, including name, email, role, and status. For information on default system roles, click [here](../user-management/role-management.md#system-defined-roles){:target="_blank"}.
 
 ## Add a New User
 
@@ -42,11 +42,11 @@ The  **Settings** Console provides two ways to add a new user to the system:
 
 ### Invite (Email Invitation)
 
-Click [here](../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"} to see the step-by-step instructions on how to add a user via email invitation.
+Click [here](../user-management/users.md#invite-and-manage-account-users){:target="_blank"} to see the step-by-step instructions on how to add a user via email invitation.
 
 ### Resend Invite
 
-Invitations expire after 15 days. You can send a new email invitation to the user. [Learn more](../../getting-started/sign-up-sign-in.md/#resend-email-invitation){:target="_blank"}.
+Invitations expire after 15 days. You can send a new email invitation to the user. [Learn more](../../getting-started/sign-up-sign-in.md# /#resend-email-invitation){:target="_blank"}.
 
 ### Import (Bulk Import)
 
@@ -237,7 +237,7 @@ The role is updated for the selected users.
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
 

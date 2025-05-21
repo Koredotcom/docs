@@ -1,6 +1,6 @@
-# Authorization Profile
+# Secure Account Access Using Authorization Profiles
 
-The Agent Platform enables secure and efficient authentication when integrating with external web services. By configuring an **Authorization (Auth) Profile**, users can manage access control while ensuring data protection and regulatory compliance. Whether connecting to an [external/commercial model using a custom API](https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/){:target="_blank"} or setting up a tool integration via the [AI](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/ai-node/){:target="_blank"} or [API node](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/api-node/){:target="_blank"}, the platform provides a structured framework for managing authentication flows, simplifying security configurations, enhancing access control, and ensuring seamless identity verification across different services.
+The Agent Platform enables secure and efficient authentication when integrating with external web services. By configuring an **Authorization (Auth) Profile**, users can manage access control while ensuring data protection and regulatory compliance. Whether connecting to an [external/commercial model using a custom API](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/){:target="_blank"} or setting up a tool integration via the [AI](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/ai-node/){:target="_blank"} or [API node](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/api-node/){:target="_blank"}, the platform provides a structured framework for managing authentication flows, simplifying security configurations, enhancing access control, and ensuring seamless identity verification across different services.
 
 Managing Auth profiles on the Agent Platform allows developers to:
 
@@ -14,7 +14,7 @@ Managing Auth profiles on the Agent Platform allows developers to:
 To access the feature, follow the steps below:
 
 1. [Sign in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/){:target="_blank"} to your Agent Platform account.
-2. [Navigate](https://docs.kore.ai/agent-platform/settings/settings-overview/#access-settings-console){:target="_blank"} to the **Settings** console.
+2. Navigate to the **Settings** console.
 3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
 <img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
 

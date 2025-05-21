@@ -1,6 +1,4 @@
-# Tools Analytics Dashboard
-
-## Overview
+# Tools Performance Analytics
 
 The **Tools Analytics Dashboard** offers a unified and comprehensive tool for tracking and analyzing the performance of the deployed tools and their specific versions within your account.
 
@@ -35,7 +33,7 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 To access the **Tools Analytics** dashboard, follow the steps below:
 
-1. [Navigate](../../settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. Navigate to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Tools Analytics** tab on the right-hand side screen.
 <img src="../images/agents-analytics-tab.png" alt="tools analytics tab" title="tools analytics tab" style="border: 1px solid gray; zoom:75%;">
@@ -285,7 +283,7 @@ The **Tools Analysis Dashboard** offers actionable and customized insights on th
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
+* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
 * [Tool Flow Change Logs](../../../tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.

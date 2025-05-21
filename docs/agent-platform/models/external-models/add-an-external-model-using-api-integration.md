@@ -19,7 +19,7 @@ Steps to add an external model using API integration:
 5. Enter a **Model name** and **Model endpoint URL** in the respective fields.  
 <img src="../images/custom-api-integration-general-details.png" alt="Custom API Integration General Details" title="Custom API Integration General Details" style="border: 1px solid gray; zoom:80%;">
 
-6. Select the **Authorization profile** you want to use with the request payload from the configured options on the **Settings** console. [Learn more](../../settings/security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. To proceed without authentication, choose ***None*** which is the default selection.
+6. Select the **Authorization profile** you want to use with the request payload from the configured options on the **Settings** console. [Learn more](../../administration/security-and-control/authorization-profile.md) about Auth Profiles. To proceed without authentication, choose ***None*** which is the default selection.
 <img src="../images/set-auth-profile-parameter.png" alt="set auth profile" title="set auth profile" style="border: 1px solid gray; zoom:80%;">
 
 7. In the **Headers** section, specify the headers such as **Key** and **Value** that need to be sent along with the request payload. 

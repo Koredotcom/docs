@@ -1,4 +1,4 @@
-# Managing Usage Limits
+# Account Limits and Notifications
 
 When users create an account with Agent Platform, they receive free credits - 75 model credits and 10,000 tool runs by default. The model credits are used for model inference and setting guardrails, while tool runs are consumed when inferring tools. Once the free credits are fully exhausted, users will no longer be able to perform these actions. To continue using Agent Platform’s services after the free credits are exhausted, users must add credits to their account by contacting Agent Platform support.
 

@@ -1,4 +1,4 @@
-# Manage Single Sign On for Account Access
+# Manage Single Sign On for Account Sign In
 
 Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
 
@@ -208,7 +208,7 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 <ul><li><b>SAML</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#okta-configuration" target="_blank">Okta</a>, <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#saml" target="_blank">Learn more</a>.</li>
 <li><b>WS-Federation</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#other-configuration" target="_blank">Other</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
+<li><b>OpenId connect</b>: <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/#google-configuration" target="_blank">Google</a>. <a href="https://docs.kore.ai/agent-platform/administration/security-and-control/single-sign-on/#openid-connect-configuration" target="_blank">Learn more</a>.</li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
@@ -538,5 +538,5 @@ As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-par
 
 ## Related Information
 
-* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Accessing Agent Platform](../../getting-started/sign-up-sign-in.md){:target="_blank"}- Sign up on Agent Platform, create an account, and sign in.

@@ -1,4 +1,4 @@
-# Monitoring
+# Analyze Account-level Performance
 
 The **Monitoring** module in Agent Platform tracks events, actions, and changes across your account and linked users. It provides visibility into activities for modules such as roles, integrations, models, tools, users, datasets, guardrails, and playground. The monitoring system helps maintain your Agent Platform account's security, compliance, and operational efficiency.
 
