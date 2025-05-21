@@ -1191,18 +1191,18 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 * `quality`: Sets the quality of the audio output.
 * `speed`: Controls the playback speed.
 * `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Allow further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
-* `Voice_engine`: The voice engine used to synthesize the voice.
+* `Voice_engine`: The voice engine used to synthesize the voice. It defaults to PlayDialog.
 
    !!! Note
 
-      Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
+         Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
 
-      `ttsProvider = playht`  
-      `ttsLanguage = en-US`  
-      `ttsOptions = {"voice_engine": "PlayDialog"}`  
-      `voiceName = <respective voice name>` 
+         `ttsProvider = playht`  
+         `ttsLanguage = en-US`  
+         `ttsOptions = {"voice_engine": "PlayDialog"}`  
+         `voiceName = <respective voice name>` 
       
-      Defaults to PlayDialog
+      
 
 #### Deepgram
 
