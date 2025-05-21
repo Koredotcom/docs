@@ -1,6 +1,6 @@
-# About Billing
+# Manage Account Billing and Usage
 
-The Billing section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, and guardrails to make data-driven decisions about your resource utilization.
+The **Billing** section helps you monitor and analyze your Agent platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, and guardrails to make data-driven decisions about your resource utilization.
 
 # Accessing Usage Information
 
@@ -69,7 +69,7 @@ The following usage information is displayed on the tab:
 
 The Models tab displays a comprehensive list of open-source models in the account and the computational cost of storing, fine-tuning, and hosting each model.
 
-<img src="../images/models.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/models-1.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
 
 The following usage information is displayed on the tab:
 

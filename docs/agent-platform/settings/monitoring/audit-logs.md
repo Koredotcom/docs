@@ -1,6 +1,4 @@
-# Audit Logs
-
-## Overview
+# Audit Logs - Track Account-level User Actions and Events
 
 Agent Platform’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
@@ -875,7 +873,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 To access and view audit logs, follow the steps below:
 
 1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
-2. Navigate to the [Settings](../../settings/settings-overview.md/#access-settings-console){:target="_blank"} console.
+2. Navigate to the [Settings](../../administration/overview.md#access-settings-console){:target="_blank"} console.
 3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
@@ -1049,10 +1047,10 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 
 ## Related Information
 
-* [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Tool Flow Change Logs](../../tools/agents-flows/agent-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 
 
 
