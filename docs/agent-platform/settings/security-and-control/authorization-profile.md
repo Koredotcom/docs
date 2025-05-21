@@ -14,7 +14,7 @@ Managing Auth profiles on the Agent Platform allows developers to:
 To access the feature, follow the steps below:
 
 1. [Sign in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/){:target="_blank"} to your Agent Platform account.
-2. [Navigate](https://docs.kore.ai/agent-platform/administration/overview#access-settings-console){:target="_blank"} to the **Settings** console.
+2. Navigate to the **Settings** console.
 3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
 <img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
 

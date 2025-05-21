@@ -34,7 +34,7 @@ The **Model Analytics Dashboard** is a comprehensive analysis and monitoring sol
 
 To access the **Model Analytics** dashboard, follow the steps below:
 
-1. [Navigate](../../settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. Navigate to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Model Analytics** tab on the right-hand side screen.
 <img src="../images/model-analysis-dashboard-access.png" alt="model analytics dashboard" title="model analytics dashboard" style="border: 1px solid gray; zoom:75%;">
@@ -270,6 +270,6 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 
 ## Related Links
 
-* **Settings Console** - [Learn more](../../settings-overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
 * **Monitoring: Tools Analytics Dashboard** - [Learn more](../analytics/tools-analytics-dashboard.md){:target="_blank"} about getting actionable insights into tools’ performance.

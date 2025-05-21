@@ -1,6 +1,6 @@
 # Active Directory: Configuring Automatic User Data Synchronization
 
-By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the [Settings](../../settings-overview.md){:target="_blank"} console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. 
+By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the Settings console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. 
 
 Moreover, the automatic synchronization (auto sync) feature ensures that Settings always has the most up-to-date user information, even reflecting deleted and modified records in the AD.
 
@@ -226,4 +226,4 @@ For a **failed** sync, you will receive the following email:
 
 An alternative way to add users to your account (without using AD sync) is to invite them via email. [Learn more](../../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}.
 
-To learn more about other administrator features on the **Settings** Console, click [here](../../settings-overview.md){:target="_blank"}.
+To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.

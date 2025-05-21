@@ -47,7 +47,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 To access the **Model Traces**, follow the steps below:
 
-1. [Navigate](../../settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. Navigate to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Model Traces**.
 3. If this is your first time accessing the feature, select the desired model from the dropdown menu shown below.
 <img src="../images/get-started-model-traces.png" alt="get started with model traces" title="get started with model traces" style="border: 1px solid gray; zoom:75%;">
@@ -444,7 +444,7 @@ Displays the following model run metadata to analyze the model’s performance.
 
 ## Related Information
 
-* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
