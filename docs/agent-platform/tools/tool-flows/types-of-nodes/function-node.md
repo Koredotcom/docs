@@ -138,7 +138,7 @@ Once you define the input variables, you must [add the output variable(s)](../ty
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p><ul><li>You can use the <b>Start</b> node’s input variables as context variables in the script editor to accept dynamic values and generate the output. To refer to the input variable, follow the syntax mentioned <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">here</a>.</li>
+<p><ul><li>You can use the <b>Start</b> node’s input variables as context variables in the script editor to accept dynamic values and generate the output. To refer to the input variable, follow the syntax mentioned <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/#syntaxes-for-the-context-input" target="_blank">here</a>.</li>
 <li>Once you run the node’s flow, the result gets stored in the output variable of the <b>Start</b> node. Additionally, this key is mapped to the <b>End</b> node, where you can define its value.</li>
 <img src="../images/output-variable-start-node.png" alt="end node key" title="end node key" style="border: 1px solid gray; zoom:75%;"></ul></p></div>
 
