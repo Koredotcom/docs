@@ -126,6 +126,7 @@ To run the flow for static inputs, follow the steps below:
 To run the flow for dynamic inputs, follow the steps below:
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables){:target="_blank"}.
+
 <img src="../images/add-input-variable-button.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="2"><li>Add the <b>Name(key)</b> value, select the data type for <b>Type</b>, and provide a description in the <b>Enter input variable</b> window. For example, in the banking flow, to get the sum of two balances, one in Q3 and the other in Q4, you must define two input variables, “<i>Q3balance</i>” and “<i>Q4balance</i>,” as shown below.
