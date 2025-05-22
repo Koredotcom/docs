@@ -126,12 +126,11 @@ To run the flow for dynamic inputs, follow the steps below:
 
 1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables){:target="_blank"}.
 
-<img src="../images/add-input-variable-button.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/add-input-variable-button.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
-2. Add the **Name(key)** value, select the data type for **Type**, and provide a description in the **Enter input variable** window. For example, in the banking flow, to get the sum of two balances, one in Q3 and the other in Q4, you must define two input variables, “*Q3balance*” and “*Q4balance*,” as shown below.
-<img src="../images/add-input-vars-function-node.png" alt="add input var" title="add input var" style="border: 1px solid gray; zoom:75%;">
-
-3. Click **Save**.
+<ol start="2"><li>Add the <b>Name(key)</b> value, select the data type for <b>Type</b>, and provide a description in the <b>Enter input variable</b> window. For example, in the banking flow, to get the sum of two balances, one in Q3 and the other in Q4, you must define two input variables, “<i>Q3balance</i>” and “<i>Q4balance</i>,” as shown below.
+<img src="../images/add-input-vars-function-node.png" alt="add input var" title="add input var" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Click <b>Save</b>.</li></ol>
 
 Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}.
 
@@ -147,13 +146,12 @@ To define the output variable, follow the steps below:
 
 1. Select the **Start** node and click the **Output** tab.
 
-<img src="../images/output-tab.png" alt="output tab" title="output tab" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/output-tab.png" alt="output tab" title="output tab" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Add Output Variable**.
-3. Enter the value for **Name (key)** and select the data type for **Type**.
-4. Click **Save**.
-
-<img src="../images/save-output-variable-window.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;">  
+<ol start="2"><li>Click <b>Add Output Variable</b>.</li>
+<li>Enter the value for <b>Name (key)</b> and select the data type for <b>Type</b>.</li>
+<li>Click <b>Save</b>.</li>
+<img src="../images/save-output-variable-window.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Run the Flow
 
@@ -203,3 +201,4 @@ The recommended syntax to fetch dynamic variables using Python in the context in
 For example, `context["steps"]["Start"]["Q3balance"]`
 
 The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
+
