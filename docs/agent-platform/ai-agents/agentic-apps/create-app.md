@@ -2,11 +2,7 @@
 
 Prerequisites:
 
-<<<<<<< HEAD
 * Add an AI Model that supports tool-calling capabilities. The Agent Platform currently supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
-=======
-* Add an AI Model that supports tool-calling capabilities. The Agent Platform currently supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md).
->>>>>>> 67c23c51873986b0320d227fed4c614db295b2c8
 
 ## Steps to Create an Agentic App
 
