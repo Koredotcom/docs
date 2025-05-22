@@ -165,7 +165,7 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 
 1. Navigate to **Conversation Intelligence > Events**.
 2. Turn on the toggle to enable the to enable the **Repeat Bot Response Event**.
-<img src="../images/repeat-bot-responses-window.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/repeat-bot-responses-toggle.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Manage Utterance** to review the pre-trained utterances that are added to the VA by default.
 <img src="../images/manage-utterances-event.png" alt="manage utterances" title="manage utterances" style="border: 1px solid gray; zoom:75%;">

@@ -38,49 +38,67 @@ The XO GPT Response Rephrasing Model offers several potential advantages for bus
 
     For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For instance, with an average of 120 input tokens for user-bot conversation and 10,000 daily interactions, where each response averages 40 tokens, the cost comparison between models is as follows:
 
-  <table>
-    <tr>
-    <td>
-  <strong>Model Name</strong>
-    </td>
-    <td><strong>Input Cost / MTok</strong>
-    </td>
-    <td><strong>Output Cost / MTok</strong>
-    </td>
-    <td><strong>Total Cost / Annum</strong>
-    </td>
-    </tr>
-    <tr>
-    <td>GPT-4 Turbo
-    </td>
-    <td>$30
-    </td>
-    <td>$60
-    </td>
-    <td><strong>$657,000</strong>
-    </td>
-    </tr>
-    <tr>
-    <td>GPT-4
-    </td>
-    <td>$10
-    </td>
-    <td>$30
-    </td>
-    <td><strong>$262,800</strong>
-    </td>
-    </tr>
-    <tr>
-    <td>GPT-4o Mini
-    </td>
-    <td>$0.15
-    </td>
-    <td>$0.6
-    </td>
-    <td><strong>$4,599</strong>
-    </td>
-    </tr>
-  </table>
+
+<table>
+  <tr>
+   <td><strong>Model Name</strong>
+   </td>
+   <td><strong>Input Cost / MTok</strong>
+   </td>
+   <td><strong>Output Cost / MTok</strong>
+   </td>
+   <td><strong>Input Cost / Annum</strong>
+   </td>
+   <td><strong>Output Cost / Annum</strong>
+   </td>
+   <td><strong>Total Cost / Annum</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>GPT-4 Turbo
+   </td>
+   <td>$30
+   </td>
+   <td>$60
+   </td>
+   <td>$13,140
+   </td>
+   <td>$8,760
+   </td>
+   <td>$21,900
+   </td>
+  </tr>
+  <tr>
+   <td>GPT-4
+   </td>
+   <td>$10
+   </td>
+   <td>$30
+   </td>
+   <td>$4,380
+   </td>
+   <td>$4,380
+   </td>
+   <td>$8,760
+   </td>
+  </tr>
+  <tr>
+   <td>GPT-4o Mini
+   </td>
+   <td>$0.15
+   </td>
+   <td>$0.60
+   </td>
+   <td>$65.70
+   </td>
+   <td>$87.60
+   </td>
+   <td>$153.30
+   </td>
+  </tr>
+</table>
+
+
 
 
 * **Enhanced Data Security and Safety**

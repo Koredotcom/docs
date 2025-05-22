@@ -3,7 +3,7 @@
 Surveys let you send customers a satisfaction survey after they interact with your business.
 
 To access surveys, go to **Contact Center AI** > **CONFIGURATIONS** > **Surveys**.  
-<img src="../images/surveys-page.png" alt="Surveys Page" title="Surveys Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/survey-page.png" alt="Surveys Page" title="Surveys Page" style="border: 1px solid gray; zoom:80%;">
 
 ## How Surveys Work
 
@@ -47,31 +47,31 @@ Under General Information, provide information for the following mandatory field
 
 * Survey Name: The name by which to identify the survey.
 * Description: A short description of the survey.
-<img src="../images/general-information-section.png" alt="General Information Section" title="General Information Section" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/general-information.png" alt="General Information Section" title="General Information Section" style="border: 1px solid gray; zoom:80%;">
 
-## Chat and Call Experience
+## Chat, Call, and Email Experience
 
-The Chat Experience and Call Experience tabs provide access to the following features:
+The Chat, Call, and Email Experience tabs provide access to the following features:
 
-* Click the **Chat Experience** or **Call Experience** tab.
-* Enable the Chat Experience or Call Experience to request customers to take the survey during an agent chat session.
-* Edit the Request Message and Gratitude Messages to display to customers before and after taking the survey.
+* Click the **Chat Experience**, **Call Experience**, or **Email Experience** tabs.
+* Enable the **Chat Experience**, **Call Experience**, or **Email Experience** to request customers to take the survey.
+* Configure the **Request Message** and add a **Gratitude Message** that will appear to customers before and after they take the survey.
     * Choose the message language, type the message in, then click **Done**.  
-    <img src="../images/request-messages.gif" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:80%;">
 * Set the Survey Frequency by configuring the following options:
     * **Show to Everyone** – Select this option to make the survey visible to all the customers.
     * **Show to Every nth User** – Select this option to make the survey visible to every _nth_ user. For example, if you enter 2 in the input textbox, the survey will appear to every second customer.
     * **Agents can Trigger** – This will let the agents trigger the survey.
 * Toggle on Enable at the top right to ensure the survey is active.
 * Click **Done** to begin sending it to customers. If you do not want to do so, leave the survey disabled.  
-<img src="../images/chat-experience.png" alt="Configure Chat Experience" title="Configure Chat Experience" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/complete-survey.png" alt="Configure Chat Experience" title="Configure Chat Experience" style="border: 1px solid gray; zoom:80%;">
 
 ## Edit a Survey
 
 Steps to edit a survey:
 
 1. In the Surveys section, click the **Survey Name** or the **Edit** icon.
-<img src="../images/edit-suvey.png" alt="Edit a Survey" title="Edit a Survey" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-survey.png" alt="Edit a Survey" title="Edit a Survey" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the required changes in the survey window, then click **Done**.
 
@@ -81,7 +81,7 @@ Steps to delete a survey:
 
 1. In the Surveys section, click the **Survey Name** or the **Edit** icon.
 2. In the survey configuration window, click the **Delete** (bin) button on the left side of the bottom toolbar.  
-<img src="../images/delete-survey.png" alt="Delete a Survey" title="Delete a Survey" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/delete-surveys.png" alt="Delete a Survey" title="Delete a Survey" style="border: 1px solid gray; zoom:80%;">
 3. Confirm your choice.
 
 !!! Note

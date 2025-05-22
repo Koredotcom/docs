@@ -2,7 +2,7 @@
 
 The XO Platform provides role-based user access to features. As such, Roles designate the users’ permissions and access level. The Role Management section lets you create and customize permissions for each.
 
-You can find the **Users** section on the left menu by going to **Manage** > **Users** > **Role Management**.  
+You can find the **Users** section on the left navigation menu of the products or via the product switcher by going to **Manage** > **Users** > **Manage Users**.  
 <img src="../images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
 ## The Role Management Live Board
@@ -47,7 +47,7 @@ The table below shows the permissions available within the XO Platform and their
    <br>
 Create and manage dialog, action, alert, information, and flow tasks.
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Create and manage dialog, action, alert, information, and flow tasks.
    <br>
 Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@ Manage natural language training data (utterances, patterns, synonyms etc.), con
    <br>
 Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ Manage knowledge collection and associated training (Questions, Alternate Questi
    <br>
 Manage Batch Testing and Conversation Testing.
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -79,7 +79,7 @@ Manage Batch Testing and Conversation Testing.
    <br>
 Manage Bot Owners and co-developers of a bot.
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -87,7 +87,7 @@ Manage Bot Owners and co-developers of a bot.
    <br>
 Manage General Settings, Language Management, Authorization Profiles, PII Settings, IVR Settings, Bot Variables, Bot Versions etc.
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -103,7 +103,7 @@ View and export dashboard data
    <br>
 Manage custom dashboards, widgets, and definitions
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -111,7 +111,7 @@ Manage custom dashboards, widgets, and definitions
    <br>
 View and Create Scenes
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -159,7 +159,7 @@ Upgrade a bot by importing a new bot definition file or restoring a version
    <br>
 Manage Intent Discovery
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -167,7 +167,7 @@ Manage Intent Discovery
    <br>
 Create and manage FAQs and conversations
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -195,7 +195,7 @@ Access to the automations tab and XO Platform
    <br>
 Create and manage waiting experiences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -203,7 +203,7 @@ Create and manage waiting experiences
    <br>
 Create and manage hours of operation
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@ Create and manage hours of operation
    <br>
 Create and manage queues
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -219,7 +219,7 @@ Create and manage queues
    <br>
 Create and manage experience flows
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -227,7 +227,7 @@ Create and manage experience flows
    <br>
 No ability to manage default flow properties
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -235,7 +235,7 @@ No ability to manage default flow properties
    <br>
 Configure global transfer rules for chat/voice
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@ Configure global transfer rules for chat/voice
    <br>
 Manage the accessibility of agent playbook feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -251,7 +251,7 @@ Manage the accessibility of agent playbook feature
    <br>
 Define AgentAssist Widgets accessibility to Agents
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ Define AgentAssist Widgets accessibility to Agents
    <br>
 Manage the accessibility of real-time coaching feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ Manage the accessibility of real-time coaching feature
    <br>
 Manage the accessibility of service level feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -279,7 +279,7 @@ Manage the accessibility of service level feature
    <br>
 Create and manage agent status types
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -287,7 +287,7 @@ Create and manage agent status types
    <br>
 Modify global agent settings
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -295,7 +295,7 @@ Modify global agent settings
    <br>
 Create and manage agent skills & skill groups
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -311,7 +311,7 @@ Manage the visibility of the customer's sentiment captured in the agent console
    <br>
 Create and manage agent groups
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -339,7 +339,7 @@ Access and use the agent desktop console
    <br>
 Create and manage custom widgets
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -347,7 +347,7 @@ Create and manage custom widgets
    <br>
 Create and manage surveys
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -355,7 +355,7 @@ Create and manage surveys
    <br>
 Create and manage dispositions
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ Define My Dashboard accessibility to Agents
    <br>
 Create and manage standard responses
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -419,7 +419,7 @@ Access to dashboard
    <br>
 Create and manage secure forms
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -459,7 +459,7 @@ Access to the monitor tab for live interactions
    <br>
 Create, view, and run reports
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -483,7 +483,7 @@ Enable call controls during dialing by toggling the option in 'Outbound Dialer'
    <br>
 Access to Voice campaigns under Campaigns module
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -491,7 +491,7 @@ Access to Voice campaigns under Campaigns module
    <br>
 Access to Proactive Web campaigns under Campaigns module
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -499,7 +499,7 @@ Access to Proactive Web campaigns under Campaigns module
    <br>
 Access to SMS campaigns under the Campaigns module
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -559,7 +559,7 @@ Allow user to select their preferred channel for incoming interactions.
    <br>
 Manage communication channels
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -567,7 +567,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -575,7 +575,7 @@ Manage account-level billing preferences
    <br>
 Manage API setup and configuration
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -583,7 +583,7 @@ Manage API setup and configuration
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -591,7 +591,7 @@ Manage ASR/TTS voice preferences
    <br>
 Manage the accessibility of agent playbook feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -607,7 +607,7 @@ Can Manage WFM Configurations.
    <br>
 Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -615,7 +615,7 @@ Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    <br>
 Define Agent AI Widgets accessibility to Agents
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -623,7 +623,7 @@ Define Agent AI Widgets accessibility to Agents
    <br>
 Manage the accessibility of real time coaching feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -659,7 +659,7 @@ Allow user to Access and Manage AgentAI Module
    <br>
 Enable and disable access for Auto QA
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -667,7 +667,7 @@ Enable and disable access for Auto QA
    <br>
 Configuration and view access to conversational Intelligence
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -675,7 +675,7 @@ Configuration and view access to conversational Intelligence
    <br>
 Creation and edit access to evaluation forms and evaluation metrics
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -683,7 +683,7 @@ Creation and edit access to evaluation forms and evaluation metrics
    <br>
 Access to create and assign interactions for audit to other users
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -691,7 +691,7 @@ Access to create and assign interactions for audit to other users
    <br>
 Access to scored interactions, submit audits & QA dashboard
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -699,7 +699,7 @@ Access to scored interactions, submit audits & QA dashboard
    <br>
 Access to agent scorecards & interactions
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -711,6 +711,19 @@ Access to agent dashboard
    </td>
 </tr>
 </table>
+
+App Owners have exclusive access to several high-level administrative features within the application. The following permissions are implicitly granted to App Owners and are not available to any other user roles:
+
+* **Create New User Role**: Only App Owners can access the *Create New User Role* menu. This feature is completely hidden from all other user roles. 
+
+* **Billing Module Access**: App Owners have access to the *Billing* module. This menu is not visible to any other users. 
+
+* **Activation of Free Tokens**: App Owners can activate *free tokens*. No other user roles have access to this functionality, and no additional permissions are required. 
+
+* **App Profile Modification**: Only App Owners can edit the *App Profile*. While other users may view the profile, they are restricted from making any changes. 
+
+* **Delete App**: Only App Owners have the ability to delete the app. This critical action is restricted to them, with no need for additional permissions.
+
 
 ### APP DEVELOPER
 
@@ -724,28 +737,28 @@ Access to agent dashboard
    <br>
 Create and manage dialog, action, alert, information, and flow tasks.
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Natural Language</strong>
    <br>
 Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Knowledge Graph</strong>
    <br>
 Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Testing</strong>
    <br>
 Manage Batch Testing and Conversation Testing.
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Bot Developers</strong>
@@ -759,7 +772,7 @@ Manage Bot Owners and co-developers of a bot.
    <br>
 Manage General Settings, Language Management, Authorization Profiles, PII Settings, IVR Settings, Bot Variables, Bot Versions etc.
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Dashboard</strong>
@@ -773,14 +786,14 @@ View and export dashboard data
    <br>
 Manage custom dashboards, widgets, and definitions
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Storyboard</strong>
    <br>
 View and Create Scenes
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Bot Builder API Scopes</strong>
@@ -822,14 +835,14 @@ Upgrade a bot by importing a new bot definition file or restoring a version
    <br>
 Manage Intent Discovery
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Use Case Management</strong>
    <br>
 Create and manage FAQs and conversations
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Automations DashBoard</strong>
@@ -854,70 +867,70 @@ Access to the automations tab and XO Platform
    <br>
 Create and manage waiting experiences
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Hours of Operation</strong>
    <br>
 Create and manage hours of operation
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Queue Settings</strong>
    <br>
 Create and manage queues
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Flow Management</strong>
    <br>
 Create and manage experience flows
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Default Flows</strong>
    <br>
 No ability to manage default flow properties
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Transfer Routing Rules</strong>
    <br>
 Configure global transfer rules for chat/voice
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Playbook - Configuration</strong>
    <br>
 Manage the accessibility of agent playbook feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>AgentAssist Settings</strong>
    <br>
 Define AgentAssist Widgets accessibility to Agents
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Coaching - Configuration</strong>
    <br>
 Manage the accessibility of real-time coaching feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Service Level - Configuration</strong>
    <br>
 Manage the accessibility of service level feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>User Management</strong>
@@ -928,21 +941,21 @@ Manage the accessibility of service level feature
    <br>
 Create and manage agent status types
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Settings</strong>
    <br>
 Modify global agent settings
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Skill Management</strong>
    <br>
 Create and manage agent skills & skill groups
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Visibility of Captured Sentiment</strong>
@@ -956,7 +969,7 @@ Manage the visibility of the customer's sentiment captured in the agent console
    <br>
 Create and manage agent groups
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Change User Role</strong>
@@ -981,21 +994,21 @@ Access and use the agent desktop console
    <br>
 Create and manage custom widgets
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Survey Management</strong>
    <br>
 Create and manage surveys
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Disposition Management</strong>
    <br>
 Create and manage dispositions
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Interactions</strong>
@@ -1016,7 +1029,7 @@ Define My Dashboard accessibility to Agents
    <br>
 Create and manage standard responses
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Internal Chat</strong>
@@ -1051,7 +1064,7 @@ Access to dashboard
    <br>
 Create and manage secure forms
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Secure Form Data View</strong>
@@ -1086,7 +1099,7 @@ Access to the monitor tab for live interactions
    <br>
 Create, view, and run reports
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Join Conversation</strong>
@@ -1108,21 +1121,21 @@ Enable call controls during dialing by toggling the option in 'Outbound Dialer'
    <br>
 Access to Voice campaigns under Campaigns module
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Proactive Web Campaigns</strong>
    <br>
 Access to Proactive Web campaigns under Campaigns module
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>SMS Campaigns</strong>
    <br>
 Access to SMS campaigns under the Campaigns module
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Direct Outward Dialing</strong>
@@ -1177,7 +1190,7 @@ Allow user to select their preferred channel for incoming interactions.
    <br>
 Manage communication channels
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1185,7 +1198,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1193,7 +1206,7 @@ Manage account-level billing preferences
    <br>
 Manage API setup and configuration
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1201,7 +1214,7 @@ Manage API setup and configuration
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1209,7 +1222,7 @@ Manage ASR/TTS voice preferences
    <br>
 Manage the accessibility of agent playbook feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1225,7 +1238,7 @@ Can Manage WFM Configurations.
    <br>
 Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1233,7 +1246,7 @@ Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    <br>
 Define Agent AI Widgets accessibility to Agents
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1241,7 +1254,7 @@ Define Agent AI Widgets accessibility to Agents
    <br>
 Manage the accessibility of real time coaching feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
    <td colspan="2" ><strong>Other Modules</strong>
@@ -1421,14 +1434,14 @@ Upgrade a bot by importing a new bot definition file or restoring a version
    <br>
 Manage Intent Discovery
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Use Case Management</strong>
    <br>
 Create and manage FAQs and conversations
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Automations DashBoard</strong>
@@ -1453,70 +1466,70 @@ Access to the automations tab and XO Platform
    <br>
 Create and manage waiting experiences
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Hours of Operation</strong>
    <br>   
 Create and manage hours of operation
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Queue Settings</strong>
    <br>
 Create and manage queues
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Flow Management</strong>
    <br>
 Create and manage experience flows
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Default Flows</strong>
    <br>
 No ability to manage default flow properties
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Transfer Routing Rules</strong>
    <br>
 Configure global transfer rules for chat/voice
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Playbook - Configuration</strong>
    <br>
 Manage the accessibility of agent playbook feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>AgentAssist Settings</strong>
    <br>
 Define AgentAssist Widgets accessibility to Agents
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Coaching - Configuration</strong>
    <br>
 Manage the accessibility of real-time coaching feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Service Level - Configuration</strong>
    <br>
 Manage the accessibility of service level feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>User Management</strong>
@@ -1527,21 +1540,21 @@ Manage the accessibility of service level feature
    <br>
 Create and manage agent status types
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Settings</strong>
    <br>
 Modify global agent settings
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Skill Management</strong>
    <br>
 Create and manage agent skills & skill groups
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Visibility of Captured Sentiment</strong>
@@ -1555,7 +1568,7 @@ Manage the visibility of the customer's sentiment captured in the agent console
    <br>
 Create and manage agent groups
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Change User Role</strong>
@@ -1580,21 +1593,21 @@ Access and use the agent desktop console
    <br>
 Create and manage custom widgets
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Survey Management</strong>
    <br>
 Create and manage surveys
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Disposition Management</strong>
    <br>
 Create and manage dispositions
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Interactions</strong>
@@ -1615,7 +1628,7 @@ Define My Dashboard accessibility to Agents
    <br>
 Create and manage standard responses
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Internal Chat</strong>
@@ -1650,7 +1663,7 @@ Access to dashboard
    <br>
 Create and manage secure forms
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Secure Form Data View</strong>
@@ -1685,7 +1698,7 @@ Access to the monitor tab for live interactions
    <br>
 Create, view, and run reports
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Join Conversation</strong>
@@ -1776,7 +1789,7 @@ Allow user to select their preferred channel for incoming interactions.
    <br>
 Manage communication channels
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1784,7 +1797,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1792,7 +1805,7 @@ Manage account-level billing preferences
    <br>
 Manage API setup and configuration
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1800,7 +1813,7 @@ Manage API setup and configuration
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1808,7 +1821,7 @@ Manage ASR/TTS voice preferences
    <br>
 Manage the accessibility of agent playbook feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1832,7 +1845,7 @@ Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    <br>
 Define Agent AI Widgets accessibility to Agents
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -1840,7 +1853,7 @@ Define Agent AI Widgets accessibility to Agents
    <br>
 Manage the accessibility of real time coaching feature
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
    <td colspan="2" ><strong>Other Modules</strong>
@@ -2078,7 +2091,7 @@ Create and manage hours of operation
    <br>
 Create and manage queues
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Flow Management</strong>
@@ -2127,7 +2140,7 @@ Manage the accessibility of real-time coaching feature
    <br>
 Manage the accessibility of service level feature
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>User Management</strong>
@@ -2138,21 +2151,21 @@ Manage the accessibility of service level feature
    <br>
 Create and manage agent status types
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Agent Settings</strong>
    <br>
 Modify global agent settings
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Skill Management</strong>
    <br>
 Create and manage agent skills & skill groups
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Visibility of Captured Sentiment</strong>
@@ -2166,7 +2179,7 @@ Manage the visibility of the customer's sentiment captured in the agent console
    <br>
 Create and manage agent groups
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Change User Role</strong>
@@ -2191,7 +2204,7 @@ Access and use the agent desktop console
    <br>
 Create and manage custom widgets
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Survey Management</strong>
@@ -2261,7 +2274,7 @@ Access to dashboard
    <br>
 Create and manage secure forms
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Secure Form Data View</strong>
@@ -2296,7 +2309,7 @@ Access to the monitor tab for live interactions
    <br>
 Create, view, and run reports
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Join Conversation</strong>
@@ -2318,21 +2331,21 @@ Enable call controls during dialing by toggling the option in 'Outbound Dialer'
    <br>
 Access to Voice campaigns under Campaigns module
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Proactive Web Campaigns</strong>
    <br>
 Access to Proactive Web campaigns under Campaigns module
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>SMS Campaigns</strong>
    <br>
 Access to SMS campaigns under the Campaigns module
    </td>
-   <td>Full Access</td>
+   <td>Full</td>
 </tr>
 <tr>
    <td><strong>Direct Outward Dialing</strong>
@@ -2411,7 +2424,7 @@ Manage API setup and configuration
    <br>
 Manage ASR/TTS voice preferences
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -2435,7 +2448,7 @@ Can Manage WFM Configurations.
    <br>
 Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -2500,7 +2513,7 @@ Configuration and view access to conversational Intelligence
    <br>
 Creation and edit access to evaluation forms and evaluation metrics
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -2508,7 +2521,7 @@ Creation and edit access to evaluation forms and evaluation metrics
    <br>
 Access to create and assign interactions for audit to other users
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -2516,7 +2529,7 @@ Access to create and assign interactions for audit to other users
    <br>
 Access to scored interactions, submit audits & QA dashboard
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -2524,7 +2537,7 @@ Access to scored interactions, submit audits & QA dashboard
    <br>
 Access to agent scorecards & interactions
    </td>
-   <td>Full Access
+   <td>Full
    </td>
 </tr>
 <tr>
@@ -3164,7 +3177,7 @@ Access to agent dashboard
    <br>
 Create and manage dialog, action, alert, information, and flow tasks.
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3175,7 +3188,7 @@ No</td>
    <br>
 Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3186,7 +3199,7 @@ No</td>
    <br>
 Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3197,7 +3210,7 @@ No</td>
    <br>
 Manage Batch Testing and Conversation Testing.
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3208,7 +3221,7 @@ No</td>
    <br>
 Manage Bot Owners and co-developers of a bot.
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3219,7 +3232,7 @@ No</td>
    <br>
 Manage General Settings, Language Management, Authorization Profiles, PII Settings, IVR Settings, Bot Variables, Bot Versions etc.
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br> 
@@ -3239,7 +3252,7 @@ No</td>
    <br>
 Manage custom dashboards, widgets, and definitions
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3250,7 +3263,7 @@ No</td>
    <br>
 View and Create Scenes
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3306,7 +3319,7 @@ No</td>
    <br>
 Manage Intent Discovery
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
 <br>
@@ -3321,7 +3334,7 @@ Create and manage FAQs and conversations
    <br>
 None
 <br>  
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Automations DashBoard</strong>
@@ -3354,7 +3367,7 @@ Create and manage waiting experiences
    <br>
 None
 <br> 
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Hours of Operation</strong>
@@ -3365,7 +3378,7 @@ Create and manage hours of operation
    <br> 
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Queue Settings</strong>
@@ -3376,7 +3389,7 @@ Create and manage queues
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Flow Management</strong>
@@ -3387,7 +3400,7 @@ Create and manage experience flows
    <br>  
 None
 <br> 
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Default Flows</strong>
@@ -3398,7 +3411,7 @@ No ability to manage default flow properties
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Transfer Routing Rules</strong>
@@ -3409,7 +3422,7 @@ Configure global transfer rules for chat/voice
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Agent Playbook - Configuration</strong>
@@ -3418,7 +3431,7 @@ Manage the accessibility of agent playbook feature
    </td>
    <td>None
    <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>AgentAssist Settings</strong>
@@ -3429,7 +3442,7 @@ Define AgentAssist Widgets accessibility to Agents
    <br> 
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Agent Coaching - Configuration</strong>
@@ -3440,7 +3453,7 @@ Manage the accessibility of real-time coaching feature
    <br> 
 None
 <br> 
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Service Level - Configuration</strong>
@@ -3451,7 +3464,7 @@ Manage the accessibility of service level feature
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>User Management</strong>
@@ -3466,7 +3479,7 @@ Create and manage agent status types
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Agent Settings</strong>
@@ -3477,7 +3490,7 @@ Modify global agent settings
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Skill Management</strong>
@@ -3488,7 +3501,7 @@ Create and manage agent skills & skill groups
    <br> 
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Visibility of Captured Sentiment</strong>
@@ -3508,7 +3521,7 @@ Create and manage agent groups
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Change User Role</strong>
@@ -3541,7 +3554,7 @@ Create and manage custom widgets
    <br>
 None
 <br> 
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Survey Management</strong>
@@ -3552,7 +3565,7 @@ Create and manage surveys
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Disposition Management</strong>
@@ -3563,7 +3576,7 @@ Create and manage dispositions
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Interactions</strong>
@@ -3592,7 +3605,7 @@ Create and manage standard responses
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Internal Chat</strong>
@@ -3639,7 +3652,7 @@ Create and manage secure forms
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Secure Form Data View</strong>
@@ -3686,7 +3699,7 @@ Create, view, and run reports
    <br>
 View & Run
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Join Conversation</strong>
@@ -3715,7 +3728,7 @@ Access to Voice campaigns under Campaigns module
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Proactive Web Campaigns</strong>
@@ -3726,7 +3739,7 @@ Access to Proactive Web campaigns under Campaigns module
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>SMS Campaigns</strong>
@@ -3737,7 +3750,7 @@ Access to SMS campaigns under the Campaigns module
    <br>
 None
 <br>
-Full Access</td>
+Full</td>
 </tr>
 <tr>
    <td><strong>Direct Outward Dialing</strong>
@@ -3806,7 +3819,7 @@ Manage communication channels
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3817,7 +3830,7 @@ Manage account-level billing preferences
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3828,7 +3841,7 @@ Manage API setup and configuration
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3839,7 +3852,7 @@ Manage ASR/TTS voice preferences
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3848,7 +3861,7 @@ Manage ASR/TTS voice preferences
 Manage the accessibility of agent playbook feature
    </td>
    <td>None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3868,7 +3881,7 @@ Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3879,7 +3892,7 @@ Define Agent AI Widgets accessibility to Agents
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3890,7 +3903,7 @@ Manage the accessibility of real time coaching feature
    </td>
    <td>View<br>
    None<br>
-   Full Access
+   Full
    </td>
 </tr>
 <tr>
@@ -3929,7 +3942,7 @@ No</td>
    <br>
 Enable and Disable access for Auto QA
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 No</td>
 </tr>
@@ -3940,7 +3953,7 @@ Configuration and view access to conversational Intelligence
    </td>
    <td>View
    <br>
-Full Access
+Full
    <br>
 No</td>
    </td>
@@ -3950,7 +3963,7 @@ No</td>
    <br>
 Creation and edit access to evaluation forms and evaluation metrics
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 View
    <br>
@@ -3962,7 +3975,7 @@ No</td>
    <br>
 Access to create and assign interactions for audit to other users
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 No</td>
 </tr>
@@ -3971,7 +3984,7 @@ No</td>
    <br>
 Access to scored interactions, submit audits & QA dashboard
    </td>
-   <td>Full Access
+   <td>Full
    <br>
 No</td>
 </tr>

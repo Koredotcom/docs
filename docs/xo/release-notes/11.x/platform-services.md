@@ -1,6 +1,90 @@
 # Platform Services Updates
 
-This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
+
+
+## v11.13.1 May 17, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
+
+## v11.13.0 May 03, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### User Management
+
+#### Enhanced User Management Accessibility
+
+Previously, the User Management menu option was accessible via the product switcher and Contact Center AI. Now it is located in the left navigation of Automation AI, Search AI, and Agent AI, providing uniform access and improving user experience across the primary modules. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#manage-users)
+
+### Role Management
+
+#### Enhanced Permissions Framework for App Owners
+
+The Platform has strengthened security and updated system roles by restricting certain critical administrative functions to App Owners only, ensuring sensitive app functions are protected while maintaining a streamlined experience for other user roles.
+
+The following permissions are implicitly available only to App Owners and are not available to any other user roles:
+
+* Billing Module Access
+* Activation of Free Tokens
+* Create New User Role
+* App Profile Modification
+* Delete App
+
+
+[Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#app-owner)
+
+<hr>
+
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
+
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### LLM & Generative AI
+
+#### Unified Generative AI and LLM Interface
+
+This update introduces a new unified interface for Generative AI and LLM capabilities, logically organized features under product categories (Automation AI, Search AI, Agent AI), and a search bar for quick feature discovery.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md)
+
+### Admin Console
+
+#### SSO Compatibility Improvement
+
+The Platform has introduced a new configuration option to enhance Single Sign-On (SSO) compatibility and resolve authentication issues caused by the RequestedAuthnContext parameter in SAML requests. This ensures seamless integration with various identity providers, including Azure AD.  
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md#saml)
+
+<hr>
+
+## v11.11.1 March 15, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+### Voice Gateway (v0.9.3-8)
+
+#### Enhanced Diagnostics for Comprehensive Participant Tracking and Quality Metrics
+
+The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
+
+<hr>
 
 ## v11.11.0 March 04, 2025
 
@@ -68,7 +152,7 @@ A voicemail notification can be sent using the `voiceutils`, enabling automated 
 * **transcriptionRequired**: Enables/disables automatic voicemail transcription. When enabled, it generates text transcription upon recording completion.
 * **notifyUrl**: Endpoint for receiving voicemail notifications.  
   Format: `https://your-domain/endpoint`
-* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/utility-functions.md#voicemails)
+* **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions.md#voicemails)
 
 #### Voicemail Recording API
 
@@ -76,7 +160,7 @@ A new public API endpoint has been introduced to retrieve voicemail recordings. 
 
 #### Simplified Parameter Updates for ASR/TTS Configuration
 
-When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md#channel-level-call-control)
+When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#channel-level-call-control)
 
 #### Improved Audio Handling During Hold State
 
@@ -113,11 +197,11 @@ The Transcribe utility function now supports the following when integrated with 
 
 #### SIP Trunk Availability Monitoring
 
-Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 #### Show Multiple SIP URIs While Configuring SIP Trunk
 
-While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 #### Display 'Call Control' Options During the Dialing Stage
 
@@ -212,13 +296,17 @@ Whenever a SIP Trunk or Phone Number configuration fails—whether during the se
 
 The user input's Personal Identifiable Information (PII) data will be masked in the debug logs.
 
+### General Availability of a Key Feature
+
+We are announcing the general availability (GA) of the [DialogGPT Module](./../../generative-ai-tools/dialog-gpt.md) to all our users. 
+
 <hr>
 
 ## v11.9.1 January 25, 2025
 
 <u> Patch Release </u>
 
-This update include only bug fixes.
+This update includes only bug fixes.
 
 <hr>
 
@@ -1108,7 +1196,7 @@ Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLM
 
 In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation){:target="_blank"}
 
-#### Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
+#### Kore.ai XO GPT Supports Vector Generation and Answer Generation
 
 Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
 

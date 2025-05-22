@@ -335,3 +335,9 @@ Follow these steps:
 ### Agent Transfer Status
 
 The XO platform now records the status of the agent transfer in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
+
+### Failed Agent Transfer Notification
+
+The XO platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
+
+Default message: *No agents are available to handle your request. Please try again later*.

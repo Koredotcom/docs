@@ -54,12 +54,9 @@ Refer to [this](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_ma
 
 Go to the **Authorization page** of the Connector, provide the following configuration fields, and click **Connect**. 
 
-
-
 * **Name**- Unique name for the connector.
 * **Access Key**- Key generated in the above step.
 * **Secret** - Secret generated in the above step. 
-* **Host URL** - Amazon S3 domain name like https://s3.eu-north-1.amazonaws.com
 * **Region** -  The region of your account. 
 
 
@@ -68,3 +65,6 @@ Go to the **Authorization page** of the Connector, provide the following configu
 After successfully connecting the Search AI connector to the Amazon S3 account, go to the **Configuration** tab and set up content synchronization. For immediate sync, use the **Sync Now** option and the **Schedule Sync** option to set up a scheduler to sync the content in the future. 
 
 Upon sync, Search AI ingests all the files (in supported formats) from the buckets accessible to the user used to log into the connector. This content is then accessible to all the users of Search AI. 
+
+!!!note
+  All the buckets from which content is to be ingested should be in the same region.

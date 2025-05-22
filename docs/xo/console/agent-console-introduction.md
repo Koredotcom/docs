@@ -23,7 +23,7 @@ The Agent Console is an agent’s primary working area consisting of the followi
 2. Incoming Interactions (Next Customer notification)
 3. Live Interaction Pane
 4. Additional Tools (Agent AI Widget, History, Actions, Responses, User Info). The layout and components can be customized. [Learn more](../console/manage-layout.md).
-<img src="../images/console-layout.png" alt="Console Layout" title="Console Layout" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/console-layout.png" alt="Console Layout" title="Console Layout" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent Features
 
