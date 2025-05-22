@@ -68,7 +68,7 @@ In customer service, the node transcribes calls, which helps analyze conversatio
 
 ### Important Considerations
 
-* Audio uploads and settings are handled by the [File Upload API](https://docs.kore.ai/agent-platform/api-and-sdk/apis-list/upload-file-api/){:target="_blank"}.
+* Audio uploads and settings are handled by the [File Upload API](https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -92,7 +92,7 @@ To add and configure the node, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a>.</p>
+<p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a>.</p>
 </div>
 
 
