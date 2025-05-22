@@ -11,4 +11,4 @@ Steps to create a tool:
 
 !!! note "Pro Tip"
 
-    Another way to add a tool is to install a preconfigured and ready-to-use <b>template</b> from the Tools Library or marketplace and customize the tool flow for your business use case. [Learn More](../ai-agents/tools/tool-templates.md)
+    Another way to add a tool is to install a preconfigured and ready-to-use template from the Tools Library or marketplace and customize the tool flow for your business use case. [Learn More](../ai-agents/tools/tool-templates.md).
