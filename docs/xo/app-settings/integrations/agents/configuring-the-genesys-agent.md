@@ -12,8 +12,9 @@ Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction fo
 
 The XO Platform supports the following Genesys integration methods for agent transfer:
 
-* **WebChat (Legacy)**: Provides real-time, session-based conversations that end when the user leaves the site or closes the chat. Lacks conversation history and continuity, making it harder to maintain context or follow up effectively.
-* **WebMessaging**: Delivers persistent, asynchronous conversations that resume seamlessly across visits and devices. Enhances customer engagement with bot and agent support, while giving agents complete visibility into the customer journey.
+* **WebChat**: Genesys WebChat allows agents to engage in real-time, text-based conversations with customers, similar to instant messaging. The system routes chat requests based on agent skills, availability, or queue rules. Agents can handle multiple chats at once, depending on configuration. During a chat, agents can use canned responses, follow scripts, and request supervisor assistance. When escalation or specialized support is needed, agents can transfer the active chat to another agent or queue without interrupting the customer experience.
+
+* **Web Messaging**: Genesys Web Messaging supports asynchronous and real-time conversations with a persistent chat history. Agents can view the full customer journey, respond across sessions, and use features like quick replies and rich media. When needed, agents can transfer the ongoing conversation to another agent or queue without losing context, ensuring a seamless and consistent experience.
 
 
 ## Current Limitations of WebMessaging
