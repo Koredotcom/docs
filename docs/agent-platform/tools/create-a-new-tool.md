@@ -11,6 +11,6 @@ Steps to create a tool:
 
 <div class="admonition note">
 <p class="admonition-title">Pro Tip</p>
-<p>Another way to add a tool is to install a preconfigured and ready-to-use <b>template</b> from the Tools Library or marketplace and customize the tool flow for your business use case. <a href="https://docs.kore.ai/agent-platform/tools/tool-templates/" target="_blank">Learn more</a>.
+<p>Another way to add a tool is to install a preconfigured and ready-to-use <b>template</b> from the Tools Library or marketplace and customize the tool flow for your business use case. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-templates/">Learn more</a>.
 </div>
 
