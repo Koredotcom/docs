@@ -326,15 +326,15 @@ By default, the Allow Agent to Pause/Resume feature is disabled. However, admins
 By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for virtual assistants (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/advanced-settings/handling-sensitive-data.md).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" title="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
+Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
+Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console){:target="_blank"} > Analytics > [Audit Report page](../../../administration/analytics.md){:target="_blank"}.
 
 ## Transfers
 
 ### Transfer to External Contacts
 
-If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions) to learn more.  
+If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers

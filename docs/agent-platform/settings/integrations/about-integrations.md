@@ -20,7 +20,7 @@ The Agent Platform supports over 120 integrations across various categories. Eac
 
 ## Access Integrations
 
-To access the feature, [navigate](./../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** console and click **Integrations** on the left navigation menu.
+To access the feature, [navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** console and click **Integrations** on the left navigation menu.
 <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
 ## Key Features
