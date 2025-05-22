@@ -254,3 +254,34 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 7. Copy the Developer Name for future use.  
 <img src="../images/miaw3.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
 <img src="../images/miaw4.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
+
+
+#### Step 5: Enable the Salesforce Agent
+
+1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
+2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
+
+   
+
+4. On the Configurations tab, select **Messaging for In-App and Web(MIAW)** and enter the following credentials for the Salesforce Agent:
+    * **Organization ID**: The Organization ID for Salesforce, which was previously copied.
+    * **Organization Base URL**: The Deployment ID for Salesforce, which was previously copied.
+    * **Developer Name**: The Button ID for Salesforce, which was previously copied.  
+    <img src="../images/miaw.png" alt="Agent credentials" title="Agent credentials" style="border: 1px solid gray;zoom:80%;"/>
+
+6. If you want to make Salesforce the default agent, enable the **Default Agent System for all bot channels** option.
+
+    !!! Note
+    
+        This option is available only when multiple agents are configured for your VA.
+
+7. You can customize the channel mapping by clicking the **Manage**.
+
+8. Click Manage to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+
+    <img src="../images/miaw-map.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
+
+9. After mapping channels, click **Done**.
+10. Click **Save** to enable the Salesforce agent.
+11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
