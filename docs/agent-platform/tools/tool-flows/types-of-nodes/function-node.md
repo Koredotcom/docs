@@ -61,7 +61,7 @@ After adding and configuring the node as mentioned [here](https://docs.kore.ai/a
 
 ### Step 1: Define and Test the Function Code
 
-To define the logic and flow of the script executed by the node, use the script editor as follows:
+To define the logic and flow of the script, follow the steps below:
 
 1. In the **Define a Script** window, click the **Expand** icon to view and edit your code in the script editor.
 <img src="../images/define-a-script-window.png" alt="define a script window" title="define a script window" style="border: 1px solid gray; zoom:80%;">
@@ -121,11 +121,12 @@ To run the flow for static inputs, follow the steps below:
 1. [Add/edit your script](../types-of-nodes/function-node.md/#step-1-define-and-test-the-function-code){:target="_blank"} in the editor by defining static variables. [Learn more](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"}.
 2. Click the **Run Flow** button at the top-right corner of the flow builder.
 
-### Dynamic Values
+### Dynamic Inputs
 
 To run the flow for dynamic inputs, follow the steps below:
 
-1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/){:target="_blank"}.
+1. Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables){:target="_blank"}.
+
 <img src="../images/add-input-variable-button.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 
 2. Add the **Name(key)** value, select the data type for **Type**, and provide a description in the **Enter input variable** window. For example, in the banking flow, to get the sum of two balances, one in Q3 and the other in Q4, you must define two input variables, “*Q3balance*” and “*Q4balance*,” as shown below.
@@ -146,11 +147,13 @@ Once you define the input variables, you must [add the output variable(s)](../ty
 To define the output variable, follow the steps below:
 
 1. Select the **Start** node and click the **Output** tab.
+
 <img src="../images/output-tab.png" alt="output tab" title="output tab" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Add Output Variable**.
 3. Enter the value for **Name (key)** and select the data type for **Type**.
 4. Click **Save**.
+
 <img src="../images/save-output-variable-window.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;">  
 
 ### Run the Flow
@@ -162,6 +165,7 @@ To run and test the flow, follow the steps below:
 
 2. (Optional) Provide input to test the flow if you have configured it in the **Start** node. Otherwise, go directly to the next step.
 3. Click **Generate Output**.
+
 <img src="../images/generate-output-function-node.png" alt="generate output" title="generate output" style="border: 1px solid gray; zoom:75%;">  
 
 
@@ -182,7 +186,7 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 ## Context Variables for Dynamic Inputs
 
-Before you [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-values){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
+Before you [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
 
 
 ## Syntaxes for the Context Input
@@ -199,5 +203,5 @@ The recommended syntax to fetch dynamic variables using Python in the context in
 
 For example, `context["steps"]["Start"]["Q3balance"]`
 
-The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-values){:target="_blank"}.
+The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
 
