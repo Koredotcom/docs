@@ -81,15 +81,6 @@ See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs
 
         Sandbox may not respond as expected if you use different values.
 
-Once you have enabled the IVR channel, configure the **Telephony Welcome Event** in IVR Settings. This plays a welcome message for users when they connect to the VA through the IVR channel.
-
-Steps to configure Telephony Welcome Event:
-
-1. Under the **Build** tab, select **Intelligence > Events**.
-2. Select the **Use Voice Call Properties** option to open the voice settings section.
-3. Under the **Initial Prompts** text field, enter the message that needs to be played when the user connects to the VA. To know more about other configuration fields, see the [Voice Call Properties: Dialog Node Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings]) section.
-![initial prompts](../images/IVR-8.png "initial prompts")
-
 #### Sandbox Configuration
 
 !!! note

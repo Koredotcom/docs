@@ -194,13 +194,10 @@ If an uploaded JSON file exceeds the configured size limit of 2 MB, an error is 
 <img src="../images/ct-create-test-suite-file-size-error.png" alt="JSON file size error" title="JSON file size error" style="border: 1px solid gray;zoom:50%;"/> 
 
 
-###  Validate Test Suite
+###  Validate and Create Test Suite
 
 The platform processes the uploaded file to simulate the conversation flow and capture all the metadata at each test case. When validating the test suite, there is an option to go back to Conversation testing while the test suite is being validated in the background.
 
 The steps to validate test suites are the same as in Record Test suite Flow. See [Validate Test Suite](#validate-test-suite) for more information. To understand more about testing the sequence of nodes and capturing metadata, see Capture Test Suite Metadata under [Validate Test Suite](#validate-test-suite).
 
-
-### Create Test Suite
-
-The steps to create a test suite are the same as in Record Test suite Flow. See [Record Test Suite](#record-test-suite) to know more.
+The steps to create a test suite are the same as in Record Test suite Flow. See [Create Test Suite](#create-test-suite) to know more.

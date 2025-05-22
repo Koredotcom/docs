@@ -34,7 +34,7 @@ Search AI supports Basic Auth with dotCMS. Hence to enable Search AI to interact
 
 Go to the **Connectors** tab under the **Sources** and select **DotCMS**.
 
-![Connector Home](../images/dotcms/connector-home.png "Connector Home")
+![Connector Home](images/dotcms/connector-home.png "Connector Home")
 
 
 On the **Authorization** page, provide the following information to enable SearchAI to establish a connection with dotCMS. 
@@ -73,7 +73,7 @@ On the **Authorization** page, provide the following information to enable Searc
   </tr>
 </table>
 
-![Connector Authorization](../images/dotcms/authorization.png "Authorization")
+![Connector Authorization](images/dotcms/authorization.png "Authorization")
 
 Click **Connect**. This will initiate the authorization process for the connector.  
 
@@ -89,7 +89,7 @@ Go to the **Configuration** tab and select the content to be ingested. You can c
 
 DotCMS connector allows you to set up rules to selectively ingest content from the application. To define such rules, select **Sync Specific Content** and click on the **Configure** link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its values. 
 
-![Content Filters](../images/dotcms/content-filters.png "Content Filters")
+![Content Filters](images/dotcms/content-filters.png "Content Filters")
 
 The **Parameter** field refers to the system property used to filter the content. By default, Search AI offers the following parameters but you can add any of the properties that you use for your content. Refer to [this for more information on available System Properties in dotCMS](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties).
 
@@ -104,11 +104,11 @@ The **Operator** field can take different values depending upon the parameter se
 The **value** field is used for providing the value of the parameter.
 
 For instance, you can ingest all the content of Base Type as ‘Page’ using the following rule. 
-![Content Filters](../images/dotcms/example1.png "Content Filters")
+![Content Filters](images/dotcms/example1.png "Content Filters")
 
 Similarly, to selectively ingest only the live pages in a certain language, you can configure the rule as shown below.
 
-![Content Filters](../images/dotcms/example2.png "Content Filters")
+![Content Filters](images/dotcms/example2.png "Content Filters")
 
 !!! Note
     * You can define more than one condition to choose different types of content from the connector using the OR operator. 
@@ -123,8 +123,8 @@ You can trigger a **manual sync** or **schedule an automatic sync** operation fo
 
 To perform a manual sync operation at any time, click the Sync Now button. This ingests all the updates from the dotCMS account available at that time. 
 
-![Content Sync](../images/dotcms/sync-now.png "Content Sync")
+![Content Sync](images/dotcms/sync-now.png "Content Sync")
 
 You can also set up automatic sync in the background at a specific time or at regular intervals. Regular sync ensures that the content in the Search AI application is always up to date and also saves time for an admin to perform manual sync. To enable automatic sync, enable the **Schedule Sync** option and select the date, time, and frequency of sync.
 
-![Content Sync](../images/dotcms/schedule-sync.png "Content Sync")
+![Content Sync](images/dotcms/schedule-sync.png "Content Sync")

@@ -36,7 +36,7 @@ Airtable combines the functionality of a spreadsheet and a database, making it a
 
 ## Authorization Support
 
-SearchAI supports authentication using** personal access tokens an**d **OAuth access tokens** for integration with Airtable. 
+SearchAI supports authentication using **personal access tokens** and **OAuth access tokens** for integration with Airtable. 
 
 
 ## Airtable Configuration 

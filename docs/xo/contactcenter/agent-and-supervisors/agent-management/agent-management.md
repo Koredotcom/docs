@@ -195,15 +195,17 @@ Go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management** > *
 4. **Transfers**: This section lets you define settings related to External Transfers, Skill Match, and Transfer Destination Control.
 5. **Skill Modification**: You can decide if the agents can modify skills attached to a conversation.
 6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
-6. **Auto Logout & Auto Close Conversation**: Administrators can configure this setting to specify a period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode.
 7. **Snooze**: This setting allows agents to temporarily pause conversations that are waiting for a reply from the customer’s end or any necessary action or item on the agent’s side.
-8. **Additional Routing Configuration**: Administrators can select from the following routing options that complement existing routing configurations through queues.
+8. **Blended Agents**: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.
+9. **Additional Routing Configuration**: Administrators can select from the following routing options that complement existing routing configurations through queues.
     * Fairer Workload distribution.
     * Hold interaction in queue until the wait time expires.
-9. **Call Acceptance Behaviour**: This setting allows the call to be accepted while the connection message plays in the background instead of waiting for it to finish.
-These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.  
-10. **Blended Mode**: The Blended Mode enables agents to handle voice and digital interactions simultaneously. It is designed to optimize agent capacity, improve efficiency, and align with modern contact center best practices.  
-    <img src="../images/agent-settings-tab.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
+10. **Enable Dial Tone Until Agent Connects**: This setting plays a dial tone to the customer until the connection with the agent is established after the user hears connected tone.
+These settings are grouped and presented as closed groups when first opening the Settings screen. Click any group to view its corresponding options.
+
+11. Total Digital Conversation Limit: This setting prevents digital overload by limiting the total number of active conversations across all channels.  
+
+    <img src="../images/agent-settings.png" alt="Agent Settings Page" title="Agent Settings Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Answer Mode
 
@@ -328,7 +330,7 @@ By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. How
 
 Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console){:target="_blank"} > Analytics > [Audit Report page](../../../administration/analytics.md){:target="_blank"}.
+Changes to the Call Recording Control settings are logged on the [Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
 ## Transfers
 
@@ -394,21 +396,32 @@ This feature allows agents to temporarily pause conversations that are awaiting 
 By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">
 
+## Blended Agents
+
+Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
+<img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
+
 ## Additional Routing Configuration
 
 Administrators can select from the following routing options that complement existing routing configurations through queues.
 
 **Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
 
-**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability. 
+**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.  
 <img src="../images/additional-routing-configurations.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
-## Call Acceptance Behaviour
+## Enable Dial Tone Until Agent Connects
 
-By default, the call acceptance behaviour functionality is disabled. Administrators can turn on the toggle to enable the functionality, allowing the call to be accepted while the connection message plays in the background instead of waiting for it to finish, enhancing agent efficiency and reducing call handling time by enabling immediate call acceptance without waiting for the connection message to finish.  
-<img src="../images/call-acceptance-behaviour.png" alt="Call Acceptance Behavior" title="Call Acceptance Behavior" style="border: 1px solid gray; zoom:80%;">
+By default, the enable dial tone until agent connects functionality is disabled. Administrators can turn on the toggle and click Save to enable the functionality. When enabled, a dial tone is played to the customer until the connection with the agent is established after the user hears a connected tone.  
+<img src="../images/enable-dial-tone.png" alt="Enable Dial Tone Until Agents Connect" title="Enable Dial Tone Until Agents Connect" style="border: 1px solid gray; zoom:80%;">
 
-## Blended Agents
+## Total Digital Conversation Limit
 
-Administrators can turn on the toggle to enable the functionality, allowing agents to handle both voice and digital interactions concurrently, optimizing agent capacity, improving efficiency, and aligning with modern contact center best practices. By default, the blended agents functionality is disabled. For more information on the changes when blended mode is enabled see [Key Changes with Blended Mode](../agent-management/agent-management.md#key-changes-with-blended-mode).  
-<img src="../images/blended-agents-toggle.png" alt="Blended Agents Toggle" title="Blended Agents Toggle" style="border: 1px solid gray; zoom:80%;">
+This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md#chat--voice).  
+
+!!! Note
+
+    You can set the total conversation limit for a user only from the User section. This setting is not available in the user profile under the Monitor tab.  
+
+When the Total digital conversation limit is reached,  an agent will move to System Busy status. This setting is disabled by default.  
+<img src="../images/total-digital-conversations-enable.png" alt="Enable Total Digital Conversations Limit" title="Enable Total Digital Conversations Limit" style="border: 1px solid gray; zoom:80%;">

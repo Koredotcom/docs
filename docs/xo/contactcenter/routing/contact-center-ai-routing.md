@@ -84,6 +84,10 @@ Contact Center AI determines the best-suited agent for a conversation based on:
 
 Agents are ranked based on these parameters. The best agent is selected from this ranking. Alternatively, a **Load balanced routing** method can be employed for simpler environments, which focuses solely on skill eligibility within a queue.
 
+!!! Note
+
+    If an agent is marked as a preferred agent, the interaction will wait until the preferred agent’s timeout period expires before routing to standard agents.
+
 ## Key Benefits
 
 * **Efficient Handling**: Reduces wait times by intelligently matching conversations with suitable agents.

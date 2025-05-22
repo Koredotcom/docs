@@ -143,6 +143,7 @@ You can also define the _Synonyms_ and _Patterns_ as with any other entity.
 * Make sure that the sub-entities are not part of the dialog flow in the task using the composite entity.
 * If the sub-entity allows multi-items, the parent composite entity accepts only one value for the sub-entity and not a list.
 * Normally, the NLP engine can identify and map user input to the correct sub-entity. However, when PII (Personal Identifiable Information) masking is applied to sensitive data, the NLP engine cannot interpret the masked input, making it impossible to determine which sub-entity (e.g., phone number or email address) the data corresponds to.
+* The names of entities used in a composite entity must not start with a number.
 
 ## Passing Values
 

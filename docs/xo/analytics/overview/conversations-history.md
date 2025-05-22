@@ -4,19 +4,13 @@ The **Conversation History** dashboard allows you to review the transcripts of p
 
 The **Advanced Conversation Analytics** feature provides a more detailed view of the conversation, including events and custom tags, which can help you better understand the interaction between the customer and the virtual assistant. Custom Tags can be reused across conversations for training purposes and for identifying areas where the virtual assistant could improve.
 
-!!! note
-
-    The **Conversations History** Dashboard is available only post the 9.3 release, i.e. post-July 24, 2022.
-
-
 **To view the Conversations History dashboard, follow the steps**: 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
+1.  Click **Analytics** on the left navigation pane. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/navigating-to-conversations-history-dashboard.png" alt="Navigating to Conversations History Dashboard" title="Navigating to Conversations History Dashboard" style="border: 1px solid gray; zoom:80%;">
 
-
-2. Click the **Conversations History dashboard** under the **Automation** section of the **Analytics** panel. The **Conversations History dashboard** is displayed on the right side of the page.
+2. Click the **Conversations History dashboard** under the **Overview** section of the **Analytics** panel. The **Conversations History dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
 
@@ -29,7 +23,6 @@ The **Filter Views** page is the preface or landing page displayed when you clic
 * Access the **Conversations History Dashboard** for the selected preset.
 
 <img src="../images/filters-view-page.png" alt="Filters View Page" title="Filters View Page" style="border: 1px solid gray; zoom:80%;">
-
 
 ### Prebuilt Filters for Conversations History
 
@@ -907,18 +900,21 @@ The Enriched Chat Transcript is visible on the Chat History panel.
        
             <img src="../images/chat-history-2.png" alt="Chat History 2" title="Chat History 2" style="border: 1px solid gray; zoom:80%;">
 
-        * X-Trace ID – A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform. When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message ID** associated with the message.
-        
-            <img src="../images/chat-history-3.png" alt="Chat History 3" title="Chat History 3" style="border: 1px solid gray; zoom:80%;">
+        * X-Trace Id – A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform. 
+        * K-Trace Id – This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
 
-        * Click the **Message Id** to view the **X-Trace ID** associated with a message in the Chat History.
+        When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message ID** associated with the message.
         
-            <img src="../images/xtraceid2.png" alt="Chat History 4" title="Chat History 4" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/chat-history-3.png" alt="Chat History 3" title="Chat History 3" style="border: 1px solid gray; zoom:80%;">
+
+        * Click the **Message Id** to view the **X-Trace Id** and **K-Trace Id** associated with a message in the Chat History.
+        
+        <img src="../images/xtraceid2.png" alt="Chat History 4" title="Chat History 4" style="border: 1px solid gray; zoom:80%;">
 
 
 !!! note
 
-    The **X-Trace ID** is retained in the logs for 30 days. Once the **X-Trace ID** is expired, you see a tooltip message as ‘`X-Trace Id: Trace records for this message are not available`.
+    The **X-Trace Id** and **K-Trace Id** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
 
 ### Define Alternate Text for JavaScript Messages
 

@@ -94,16 +94,20 @@ The following **Entity Types** are specified for an entity node.
 
 ### Address
 
-Captures addresses written in the standard US and Germany address formats. For example, 200 E Main ST Pheonix AZ 85123 USA. The complete address is captured as a string: “200 E Main ST Pheonix AZ 85123 USA.” In addition to this string, the Address entities like [City](#city), [Country](#country), and [Zip Code](#zip-code) also provide the full formatted address that has been captured.
+Captures addresses written in the standard US and Germany address formats. For example, 200 E Main ST Pheonix AZ USA 85123. The complete address is captured as a string: “200 E Main ST Pheonix AZ USA 85123.” In addition to this string, the Address entities like [City](#city), [Country](#country), and [Zip Code](#zip-code) also provide the full formatted address that has been captured.
 
 ```
 "entities":
 {
-"AddressEntity": "200 E Main ST Pheonix AZ 85123 USA"
+"AddressEntity": "200 E Main ST Pheonix AZ USA 85123"
 }
 ```
 
-For other country addresses, the platform captures strings that end with a recognizable city or country name. For more details, please refer to the [City entity.](#city)
+For other country addresses, the platform captures strings that end with a recognizable city or country name.  
+**Address Format:**
+*Street Name, City (mandatory), Country (mandatory), Zip Code*
+
+For more details, please refer to the [City entity.](#city)
 
 
 ### Airport
@@ -301,6 +305,9 @@ See here for a complete list of countries [https://www.nationsonline.org/oneworl
   </tr>
 </table>
 
+!!!Note
+       
+    Ensure inputs don't contain special characters like ampersands "&" or parentheses "()". Avoid spaces around hyphens “-“. Use commas or "and" to separate list items, as parentheses, spaces around hyphens, and ampersands may prevent proper multi-item identification.
 
 ### Company Name or Organization Name
 

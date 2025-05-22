@@ -14,16 +14,17 @@ To get the hours of operation by providing the `orgId` and `queueId`.
 | **Parameter** | **Description** | **Type** |
 |-------------|---------------|------------|
 | host | Environment URL, for example, https://platform.kore.ai | string, required |
-| orgId | The unique identifier of the organization. | string, required |
+| orgId | The unique identifier of the organization. <br> In the application, navigate to any screen and check the API response to locate the orgId. <br> After accessing the application, open the browser’s developer tools using **F12**, **Ctrl+Shift+J** (Windows/Linux), or **Cmd+Opt+J** (macOS). Alternatively, right-click on the page and select **Inspect** or **Inspect Element**, or use the browser’s menu to access the developer tab.| string, required |
 | queueId | The unique identifier of the queue. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/public/organizations/{{orgId}}/operationshours/{{queueId}}' \
+curl --location --request GET 'https://{{host}}/agentassist/api/public/organizations/{{orgId}}/operationshours/{{queueId}}' \
 --header 'auth: <token>' \
 --header 'Content-Type: application/json' \
 --header 'accountId: <accountId>'
+--header 'Iid: <Iid>'
 ```
 
 ## Headers
@@ -32,7 +33,7 @@ curl --location 'https://{{host}}/agentassist/api/public/organizations/{{orgId}}
 |-----------|---------------|---------------------|
 | accountId | The account ID associated with the API request. | required |
 | auth | JWT token for authentication. | required |
-| iid | The appId or streamId | required |
+| Iid | The appId or streamId | required |
 
 ## Sample Response
 

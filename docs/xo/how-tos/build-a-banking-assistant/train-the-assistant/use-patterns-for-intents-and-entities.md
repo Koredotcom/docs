@@ -356,9 +356,9 @@ Add a space before closing the angular bracket
    <td><b>!abc</b>
 
    </td>
-   <td>Indicates the word/concept “abc” should not exist anywhere in the user utterance after this token
+   <td>Indicates the word/concept “abc” should not exist anywhere in the user utterance.
 
-No space between ! and word/concept
+No space between ! and word/concept.
 
    </td>
    <td>
@@ -391,7 +391,7 @@ No space between ! and word/concept
    <td><b>!!abc</b>
 
    </td>
-   <td>The very next word/concept should not be “abc”
+   <td>The very next word/concept should not be “abc”.
 
 No space between !! and word/concept.
 

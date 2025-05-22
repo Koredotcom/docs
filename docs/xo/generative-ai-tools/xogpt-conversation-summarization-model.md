@@ -36,49 +36,68 @@ The XO GPT summarization  model offers several potential advantages for business
 
     For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. Following is an illustration with GPT-4 models. (Note: actual costs could vary based on token usage). For an average of 250 input tokens and 1,000 daily conversation summaries, each averaging 120 tokens, the cost comparison across models is as follows:
 
-  <table>
-    <tr>
-    <td>
-  <strong>Model Name</strong>
-    </td>
-    <td><strong>Input Cost / MTok</strong>
-    </td>
-    <td><strong>Output Cost / MTok</strong>
-    </td>
-    <td><strong>Total Cost / Annum</strong>
-    </td>
-    </tr>
-    <tr>
-    <td>GPT-4 Turbo
-    </td>
-    <td>$30
-    </td>
-    <td>$60
-    </td>
-    <td><strong>$160,965</strong>
-    </td>
-    </tr>
-    <tr>
-    <td>GPT-4
-    </td>
-    <td>$10
-    </td>
-    <td>$30
-    </td>
-    <td><strong>$66,795</strong>
-    </td>
-    </tr>
-    <tr>
-    <td>GPT-4o Mini
-    </td>
-    <td>$0.15
-    </td>
-    <td>$0.6
-    </td>
-    <td><strong>$1,199</strong>
-    </td>
-    </tr>
-  </table>
+
+
+<table>
+  <tr>
+   <td><strong>Model Name</strong>
+   </td>
+   <td><strong>Input Cost / MTok</strong>
+   </td>
+   <td><strong>Output Cost / MTok</strong>
+   </td>
+   <td><strong>Input Cost / Annum</strong>
+   </td>
+   <td><strong>Output Cost / Annum</strong>
+   </td>
+   <td><strong>Total Cost / Annum</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>GPT-4 Turbo
+   </td>
+   <td>$30
+   </td>
+   <td>$60
+   </td>
+   <td>$2,738
+   </td>
+   <td>$2,628
+   </td>
+   <td>$5,366
+   </td>
+  </tr>
+  <tr>
+   <td>GPT-4
+   </td>
+   <td>$10
+   </td>
+   <td>$30
+   </td>
+   <td>$913
+   </td>
+   <td>$1,314
+   </td>
+   <td>$2,227
+   </td>
+  </tr>
+  <tr>
+   <td>GPT-4o Mini
+   </td>
+   <td>$0.15
+   </td>
+   <td>$0.60
+   </td>
+   <td>$13.69
+   </td>
+   <td>$26.28
+   </td>
+   <td>$39.97
+   </td>
+  </tr>
+</table>
+
+
 
 * **Enhanced Data Security and Safety**
 Our model is designed to safeguard information by ensuring that no client or user data is utilized for model retraining. Our systems are robust enough to handle both client and user data securely.
