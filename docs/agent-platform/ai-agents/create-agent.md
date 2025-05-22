@@ -50,7 +50,11 @@ Agent profile consists of the following fields:
 * Tool calling 
 * Transforming results from agents into natural and contextual responses for the users.
 
+<<<<<<< HEAD
 For more information, see [Add an External Model](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
+=======
+For more information, see [Add an External Model](../models/external-models/add-an-external-model-using-easy-integration.md).
+>>>>>>> 67c23c51873986b0320d227fed4c614db295b2c8
 
 !!!tip
     When choosing a model for your agent, consider its specific use case. For example, if the agent is designed for code generation, opt for a model that specializes in coding skills.
