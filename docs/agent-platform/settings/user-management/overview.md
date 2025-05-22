@@ -22,9 +22,9 @@ It also supports various administrative features influenced by the roles and per
 
 For example, a *Master Admin* role is assigned by default to the account owner. Similarly, a *Tool Admin* role is assigned to a user who creates a tool and has complete control over it.
 
-**Users Management** operates on two distinct levels discussed [here](../../administration/overview.md#levels-of-users-management){:target="_blank"}.
+**Users Management** operates on two distinct levels discussed [here](../../administration/overview.md/#levels-of-users-management){:target="_blank"}.
 
-Once you invite a user or import users data, you can change their roles, assign/unassign permissions, delete users. and do more using the [Roles Management](./role-management.md){:target="_blank"} and [Users](./users.md){:target="_blank"} features on the **Settings** console.
+Once you invite a user or import users data, you can change their roles, assign/unassign permissions, delete users. and do more using the [Roles Management](../../settings/user-management/role-management.md){:target="_blank"} and [Users](./users.md){:target="_blank"} features on the **Settings** console.
 
 ## Related Information
 

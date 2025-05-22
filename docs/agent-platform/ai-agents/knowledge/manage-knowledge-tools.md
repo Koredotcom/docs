@@ -67,7 +67,7 @@ Click **Create**. This action creates a new Search AI application within the sam
 **Next Steps**:  Navigate to the Search AI application and configure it for answer generation as required. 
 
 * [Set extraction strategies.](https://docs.kore.ai/xo/searchai/content-extraction/etl/){:target="_blank"} 
-* [Ingest Content.](https://docs.kore.ai/xo/searchai/content-sources/introduction/) {:target="_blank"}
+* [Ingest Content.](https://docs.kore.ai/xo/searchai/content-sources/introduction/){:target="_blank"}
 * [Set Retrieval Strategies.](https://docs.kore.ai/xo/searchai/retrieval/){:target="_blank"}
 * [Configure answer generation.](https://docs.kore.ai/xo/searchai/answer-generation/){:target="_blank"}
 

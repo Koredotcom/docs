@@ -50,7 +50,7 @@ The following metrics summarize the counts for tools, runs, and node executions 
 
 * **Number of tools**: The total number of tools deployed within your account during the selected period. This includes tools and all their versions managed by all the users of your account. 
 
-    To view data for a specific tool and its version deployed in your account, use the **ToolsPerformance** filters. [Learn more](../analytics/tools-analytics-dashboard.md/#tool-performance-filters){:target="_blank"}.
+    To view data for a specific tool and its version deployed in your account, use the **Tools Performance** filters. [Learn more](../analytics/tools-analytics-dashboard.md/#tool-performance-filters){:target="_blank"}.
 
 * **Number of runs**: The total count of success and failure tool flow runs or node executions completed by all deployed tools in your account during the specified period. 
 
@@ -283,7 +283,7 @@ The **Tools Analysis Dashboard** offers actionable and customized insights on th
 
 ## Related Information
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
+* [Settings Console](../../../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}- Learn more about other Tool Platform admin features.
 * [Tool Flow Change Logs](../../../tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
 * [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
