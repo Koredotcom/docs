@@ -716,9 +716,8 @@ To add an API secret key, follow these steps:
    
    <img src="../images/generate-secret-key.png" alt="generate secret key" title="generate secret key" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="5"><li>Click <b>Copy and Close</b>.</li></ol>
-   
-   <img src="../images/create-new-api-copy.png" alt="create new api copy" title="create new api copy" style="border: 1px solid gray; zoom:75%;">  
+<ol start="5"><li>Click <b>Copy and Close</b>.</li>   
+<img src="../images/create-new-api-copy.png" alt="create new api copy" title="create new api copy" style="border: 1px solid gray; zoom:75%;"></ol>  
  
 <div class="admonition note">
 <p class="admonition-title">Important</p>
@@ -740,7 +739,7 @@ To delete an API key, follow the steps below:
 
 3. Click **Delete** in the confirmation window.
 
-   <img src="../images/delete-api-key.png" alt="delete api key" title="delete api key" style="border: 1px solid gray; zoom:75%;">  
+       <img src="../images/delete-api-key.png" alt="delete api key" title="delete api key" style="border: 1px solid gray; zoom:75%;">  
 
 A success message is displayed, and the API key is removed from the list. 
 
