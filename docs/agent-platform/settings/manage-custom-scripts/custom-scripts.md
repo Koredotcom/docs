@@ -133,10 +133,12 @@ Refer to the sample project file for the best practices.
 
 Access environment variables in your scripts as follows:
 
-**Python**: `import os
-             os.getenv('<key_name>')`
+**Python**: <p><code>import os</code></p>
+             <p><code>os.getenv('<key_name>')</code></p>
 
-**JavaScript**: `process.env.<key_name>`
+**JavaScript**: 
+
+`process.env.<key_name>`
 
 ### Step 2: Runtime Settings
 
