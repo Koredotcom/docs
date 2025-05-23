@@ -167,17 +167,17 @@ Configure **Runtime variables** (environment variables and execution timeout) to
 On this page, you define scaling parameters (minimum and maximum replicas) and hardware requirements to ensure the script performs optimally under varying loads and to customize the deployment. The key steps include:
 
 1. Set limits for auto-scaling to ensure optimal performance by defining the following **Scaling parameters**:
-* **Min and Max Replicas**: Defines the minimum and maximum number of pods per service that can be created for the service to handle increased load. 
+    * **Min and Max Replicas**: Defines the minimum and maximum number of pods per service that can be created for the service to handle increased load. 
 
-    <div class="admonition note">
-    <p class="admonition-title">Note</p>
-    <p><ul><li>The allowed range for both parameters is between 1 and 10.</li>
-    <li>The default value is 1.</li></ul></p>
-    </div>
+       <div class="admonition note">
+       <p class="admonition-title">Note</p>
+       <p><ul><li>The allowed range for both parameters is between 1 and 10.</li>
+       <li>The default value is 1.</li></ul></p>
+       </div>
 
-* **Min replica** should be lower than the **Max Replica**.
-* **Average Compute Utilization**: A metric based on which scaling of the service happens. Indicates average compute utilization in percentage per pod. The **default value is 75**, and the **allowed range is between 1 and 100**.
-* Select the required **hardware** for the deployment. The unit is **No. of vCPUs with memory**. The profiles are virtualized for standardization. The available profiles are listed below:
+     * **Min replica** should be lower than the **Max Replica**.
+     * **Average Compute Utilization**: A metric based on which scaling of the service happens. Indicates average compute utilization in percentage per pod. The **default value is 75**, and the **allowed range is between 1 and 100**.
+     * Select the required **hardware** for the deployment. The unit is **No. of vCPUs with memory**. The profiles are virtualized for standardization. The available profiles are listed below:
 
 <table>
   <tr>
@@ -485,8 +485,8 @@ This action lets you undeploy the script from all its deployed locations on the 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>An undeployed script can be redeployed. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/#syntaxes-for-the-context-input" target="_blank">Learn more</a>.</li>
-<li>Once a script is redeployed, its data and configurations are restored.  You can edit the script name and other parameters in the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/#syntaxes-for-the-context-input" target="_blank">deployment flow</a>.</li></ul></p></div>
+<p><ul><li>An undeployed script can be redeployed. <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#redeploy-script" target="_blank">Learn more</a>.</li>
+<li>Once a script is redeployed, its data and configurations are restored. You can edit the script name and other parameters in the <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#import-and-deploy-a-custom-script" target="_blank">deployment flow</a>.</li></ul></p></div>
 
 
 To undeploy, follow the steps below on the **Manage Custom Scripts** page:
@@ -499,11 +499,11 @@ To undeploy, follow the steps below on the **Manage Custom Scripts** page:
    <img src="../images/proceed-to-undeploy.png" alt="proceed to undeploy" title="proceed to undeploy" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="2"><li>Click <b>Undeploy</b> in the confirmation window.</li>
-<img src="../images/undeploy-script-confirmation.png" alt="undeploy script confirm" title="undeploy script confirm" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/undeploy-script-confirmation.png" alt="undeploy script confirm" title="undeploy script confirm" style="border: 1px solid gray; zoom:75%;"></ol>
 
-A success message is displayed, and the script’s status changes to <b>>Ready to Deploy</b>.</li>
+A success message is displayed, and the script’s status changes to <b>Ready to Deploy</b>.</li>
 <img src="../images/ready-to-deploy-success.png" alt="ready to deploy" title="ready to deploy" style="border: 1px solid gray; zoom:75%;">
-</ol>
+
 
 To see when **undeploy** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"}. 
 
@@ -526,11 +526,11 @@ To delete, follow the steps below on the **Manage Custom Scripts** page:
    <img src="../images/proceed-to-delete-script.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
 
 <ol start="2"><li>Click <b>Delete</b> in the confirmation window.</li> 
-<img src="../images/delete-the-script.png" alt="delete the script" title="delete the script" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/delete-the-script.png" alt="delete the script" title="delete the script" style="border: 1px solid gray; zoom:75%;"></ol>
 
 A success message is displayed, and the script is permanently removed. 
 
-<img src="../images/delete-script-confirmation.png" alt="script deletion" title="script deletion" style="border: 1px solid gray; zoom:75%;"></ol>
+<img src="../images/delete-script-confirmation.png" alt="script deletion" title="script deletion" style="border: 1px solid gray; zoom:75%;">
  
 To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"}.
 
@@ -695,7 +695,7 @@ Agent Platform provides secure access to deployed scripts through authenticated 
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can create API keys for a script regardless of its <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/#syntaxes-for-the-context-input" target="_blank">deployment status</a>. The keys can be used once the script is successfully deployed.</p>
+<p>You can create API keys for a script regardless of its <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#view-deployed-scripts-and-their-statuses" target="_blank">deployment status</a>. The keys can be used once the script is successfully deployed.</p>
 </div>
 
 ### Create an API Key
@@ -769,8 +769,9 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     * In the **Auth Profiles** section, select the required option from the list of configured profiles to enable user authentication for the node. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/settings/security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. 
     
-       If authentication is not required, select **None** (the default option).
-    * In the **Headers** tab, specify the Key and Value pair details. For example, Key: Content-Type Value: application/json
+    If authentication is not required, select **None** (the default option).
+
+    * In the **Headers** tab, specify the Key and Value pair details. For example, **Key**: *Content-Type* **Value**: *application/json*.
     * The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
         * **application/x-www-form-urlencoded**: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.
         * **application/json**: Transmits data between servers and web applications using JSON format without processing.
@@ -785,4 +786,4 @@ To add a deployed custom script via the endpoint into the API node, follow the s
     
     * **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
     * **API Node** - [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
-    
+
