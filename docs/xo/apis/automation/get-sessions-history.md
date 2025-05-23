@@ -137,7 +137,9 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{BotId}}/getSes
      }
 ```
 
-**For specific call Ids**
+**For specific external call Ids**
+
+These external call Ids are provided by the 3rd party agent desktops we have integrated with and are distinct from the actual call IDs
 
 ```
 curl --location POST 'https://{{host}}/api/public/bot/{{BotId}}/getSessions?callId={{callId}}' \
@@ -280,11 +282,9 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
   </tr>
 </table>
 
-
 !!!Note
     
     The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
-
 
 ## Sample Response
 
@@ -387,9 +387,7 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
 }
 ```
 
-
 **For _agent_ sessions**
-
 
 
 ```
@@ -420,7 +418,6 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
   ]
 }
 ```
-
 
 **For one or more session Ids**
 
@@ -458,7 +455,7 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
 
 ```
 
-**For specific Call Ids**
+**For specific external Call Ids**
 
 ```
 {
