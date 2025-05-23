@@ -1,4 +1,4 @@
-# Deploy, Manage, and Execute Custom Scripts for Tool Automation
+# Deploy, Execute, and Manage Custom Scripts for Tool Automation
 
 The Agent Platform now allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
 
@@ -262,7 +262,13 @@ The summary table displays the following fields:
 
 * **Script Name**: The name provided by the user.
 * **Status**: The current deployment status of the script.
-<img src="../images/deployment-statuses.png" alt="all statuses" title="all statuses" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/deployment-statuses.png" alt="all statuses" title="all statuses" style="border: 1px solid gray; zoom:75%;">
+
+* **Added by**: The user who added the custom script.
+* **Updated on**: The timestamp when an action (deployment, re-deployment, or undeployment) was done on the script.
+* **Action**: Perform actions on the script like undeploy, delete, or export. Refer [here](../manage-custom-scripts/custom-scripts.md/#actions){:target="_blank"} for more information.
+
+### Information on Script Deployment Statuses
 
 The following table illustrates the various statuses and the actions that can be performed from the Overview, Deployment History, Endpoint, and API Keys pages.
 
@@ -447,10 +453,6 @@ The following table illustrates the various statuses and the actions that can be
   </tr>
 </table>
 
-* **Added by**: The user who added the custom script.
-* **Updated on**: The timestamp when an action (deployment, re-deployment, or undeployment) was done on the script.
-* **Action**: Perform actions on the script like undeploy, delete, or export. Refer [here](../manage-custom-scripts/custom-scripts.md/#actions){:target="_blank"} for more information.
-
 **Key Considerations**
 
 * Every time an action is taken for a script, the **Updated on** field captures the latest timestamp.
@@ -471,7 +473,7 @@ Downloads the *.Zip* folder of the project to the user’s local system. To expo
    Alternatively, click the deployed script entry and select **Export** on the **Overview** page.
    <img src="../images/click-export-script.png" alt="export script" title="export script" style="border: 1px solid gray; zoom:75%;">
 
-To see when **Export** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"}.
+To see when **Export** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -505,7 +507,7 @@ A success message is displayed, and the script’s status changes to <b>Ready to
 <img src="../images/ready-to-deploy-success.png" alt="ready to deploy" title="ready to deploy" style="border: 1px solid gray; zoom:75%;">
 
 
-To see when **undeploy** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"}. 
+To see when **undeploy** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}. 
 
 #### Delete Script
 
@@ -532,7 +534,7 @@ A success message is displayed, and the script is permanently removed.
 
 <img src="../images/delete-script-confirmation.png" alt="script deletion" title="script deletion" style="border: 1px solid gray; zoom:75%;">
  
-To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"}.
+To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
 
 
 #### Redeploy Script
@@ -566,7 +568,7 @@ The information available on this page includes the configurations you have set 
 * [Runtime Settings](../manage-custom-scripts/custom-scripts.md/#step-2-runtime-settings){:target="_blank"} 
 * [Resource Allocation](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} 
 
-The [actions](../manage-custom-scripts/custom-scripts.md/#actions){:target="_blank"} you can perform on the script on the **Overview** page depend on the assigned status. See the table [here](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"} for more details.
+The [actions](../manage-custom-scripts/custom-scripts.md/#actions){:target="_blank"} you can perform on the script on the **Overview** page depend on the assigned status. See the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"} for more details.
 
 <img src="../images/overview-script-deployment.png" alt="overview" title="overview" style="border: 1px solid gray; zoom:75%;">  
 
@@ -581,7 +583,7 @@ The **Deployment History** page helps view key information about the script’s 
 * Deployment history information is only available for the statuses “**Deployed**,” “**Deployment Failed**,” “**Deploying**,” and “**Ready to Deploy**.”  
 * For the “**Draft**” status, the following window is displayed.
 
-  <img src="../images/draft-action.png" alt="draft action" title="draft action" style="border: 1px solid gray; zoom:75%;">  
+     <img src="../images/draft-action.png" alt="draft action" title="draft action" style="border: 1px solid gray; zoom:75%;">  
 
 Click **Deploy custom script** and follow the steps for 
 [import and deploy](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"}.
@@ -705,7 +707,6 @@ To add an API secret key, follow these steps:
 1. Navigate to the **API Keys** page.
 2. Click **Create a New API Key** or **Create New Key**.
    <img src="../images/create-a-new-api-key.png" alt="create a new api key" title="create a new api key" style="border: 1px solid gray; zoom:75%;">  
-
    <img src="../images/click-create-new-key.png" alt="create new key" title="create new key" style="border: 1px solid gray; zoom:75%;">  
  
 3. Enter a unique name for the key. By default, “**Secret Key**” is displayed, which you can change.
@@ -713,7 +714,7 @@ To add an API secret key, follow these steps:
    
    <img src="../images/generate-secret-key.png" alt="generate secret key" title="generate secret key" style="border: 1px solid gray; zoom:75%;">
 
-5. Click **Copy and Close**.
+<ol start="5"><li>Click <b>Copy and Close</b>.</li></ol>
    
    <img src="../images/create-new-api-copy.png" alt="create new api copy" title="create new api copy" style="border: 1px solid gray; zoom:75%;">  
  
@@ -767,7 +768,7 @@ To add a deployed custom script via the endpoint into the API node, follow the s
     * Paste it in the text field of the **Edit Request** page.
     <img src="../images/curl-edit-request.png" alt="curl link" title="curl link" style="border: 1px solid gray; zoom:75%;"> 
 
-    * In the **Auth Profiles** section, select the required option from the list of configured profiles to enable user authentication for the node. [Learn more](https://docs.kore.ai/agent-platform/ai-agents/tools/settings/security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. 
+    * In the **Auth Profiles** section, select the required option from the list of configured profiles to enable user authentication for the node. [Learn more](../security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. 
     
     If authentication is not required, select **None** (the default option).
 
