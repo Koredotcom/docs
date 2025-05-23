@@ -6,7 +6,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
-5. [Manage Custom Scripts](){:target="_blank"}
+5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
 6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
 8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
@@ -191,8 +191,8 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <tr>
-   <td><b>Manage Custom Scripts</b></td>
-   <td>Import custom scripts with reusable functions that can be invoked from anywhere in the platform using gVisor container capabilities.</td>
+   <td><a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/" target="_blank">Manage Custom Scripts</a></td>
+   <td>Import custom scripts with reusable functions that can be invoked from anywhere in the platform using isolated container capabilities.</td>
    <td>
 <ul>
 <li>Import a custom script by configuring its general details, uploading the script file in the allowed format, and providing the runtime settings, and resource allocation (hardware and memory) details.</li>
