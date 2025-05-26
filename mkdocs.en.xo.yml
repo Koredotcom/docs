@@ -121,7 +121,6 @@ nav:
   - Platform:
     - About AI for Service: getting-started/about-xo-platform.md    
     - Getting Started:
-      - Benefits of AI for Service (XO) v11: getting-started/benefits-ai-service-xo-v11.md
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
@@ -176,6 +175,8 @@ nav:
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
         - Migration Path XO v10 to v11: getting-started/migration-path-xo10-to-xo11.md
         - Current Limitations: release-notes/current-limitations.md  
+      - Migration:
+        - Benefits of AI for Service (XO) v11: getting-started/benefits-ai-service-xo-v11.md
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
