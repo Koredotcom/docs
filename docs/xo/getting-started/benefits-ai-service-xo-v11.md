@@ -2,7 +2,7 @@
 
 ## Unified Conversation Session
 
-Previously, integrations were possible using APIs or Webhooks with standalone Kore.ai products such as Bots Platform, SmartAssist, Search Assist, and Agent Assist. However, conversations remained fragmented, lacking a unified session that captured the entire interaction. Users had to refer to the Bots Platform to analyze automation-related conversations, while agent-related analytics required access to the SmartAssist Platform, and so on.
+Earlier, integrations were possible using APIs or Webhooks with standalone Kore.ai products such as Bots Platform, SmartAssist, Search Assist, and Agent Assist. However, conversations remained fragmented, lacking a unified session that captured the entire interaction. Users had to refer to the Bots Platform to analyze automation-related conversations, while agent-related analytics required access to the SmartAssist Platform, and so on.
 
 With XO11, conversations are now unified across modules, enabling seamless tracking of an end-to-end customer interaction within a single session. This streamlined approach enhances analytics, simplifies cross-module data retrieval, and improves workflow efficiency. 
 
