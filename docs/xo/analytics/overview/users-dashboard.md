@@ -6,7 +6,6 @@ This dashboard displays the trends of total users interacting with the virtual a
 
 For example, an e-Commerce company requiring insights on user trend-based data for their mobile app can use the Users Dashboard to determine the following:
 
-
 * The new users, existing users, and returning users of their app.
 * The active users over a specific period.
 * The new and returning users on a specific day, week, or month.
