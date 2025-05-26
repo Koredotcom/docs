@@ -327,7 +327,7 @@ Users should start creating an App with any one Product and later can enable/add
   </tr>
   <tr>
    <td>
-<h4>GenAI & LLM</h4>
+<h4>GenAI and LLM</h4>
 
 
    </td>
