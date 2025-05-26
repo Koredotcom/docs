@@ -493,7 +493,7 @@ nav:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
-      - Migration: agentai/migration/migration-from-agent-ai-xo-v10-to-v11.md
+      - Migration: agentai/migration/agent-ai-migration-from-xo-v10-to-v11.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
