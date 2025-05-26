@@ -1,4 +1,4 @@
-# Migration Path for Existing Customers - Upgrade Journey
+# XO v10 to v11 Upgrade Journey
 
 Users will see a banner on the current bots.kore.ai platform prompting them to try the new XO v11 platform at platform.kore.ai, which is the new home for existing bots and creating XO v11 apps with enhanced capabilities. Existing bots open in the old UI on platform.kore.ai and have the same functionality, such as creating dialogs, configurations, publishing, etc. Also, a banner appears inside the bot, allowing users to upgrade it to an XO v11 app.
 
