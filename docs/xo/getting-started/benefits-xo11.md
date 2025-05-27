@@ -76,7 +76,7 @@ With features like Experience Flows for channel-specific welcome experiences, co
 
 ### Feature Comparison
 
-The following section provides a summary of key differences between v10 and v11 versions of the XO Platform.
+The following section provides a summary of key differences between v10 and v11 versions of the XO Platform. 
 
 <table>
   <tr>
