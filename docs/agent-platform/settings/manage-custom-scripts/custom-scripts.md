@@ -177,51 +177,51 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
 
          <table>
   <tr>
-   <td><strong>Price per Hour</strong>
-   </td>
    <td><strong>Hardware configuration</strong>
    </td>
    <td><strong>Actual CPU Core and Memory Available</strong>
    </td>
+   <td><strong>Price per Hour</strong>
+   </td>
   </tr>
   <tr>
-   <td>0.144
-   </td>
    <td>2 vCPUs with 8GB memory
    </td>
    <td>1.5 vCPUs with 6.5GB memory
    </td>
+      <td>0.144
+   </td>
   </tr>
   <tr>
-   <td>0.288
-   </td>
    <td>4 vCPUs with 16GB memory
    </td>
    <td>3.5 vCPUs with 13.5GB memory
    </td>
+      <td>0.288
+   </td>
   </tr>
   <tr>
-   <td>0.07698
-   </td>
    <td>1 vCPU with 2GB memory
    </td>
    <td>0.7 vCPUs with 1.1GB memory
    </td>
+      <td>0.07698
+   </td>
   </tr>
   <tr>
-   <td>0.15396
-   </td>
    <td>2 vCPUs with 4GB memory
    </td>
    <td>1.5 vCPUs with 2.5GB memory
    </td>
+      <td>0.15396
+   </td>
   </tr>
   <tr>
-   <td>0.30792
-   </td>
    <td>4 vCPUs with 8GB memory
    </td>
    <td>3.5 vCPUs with 6GB memory
+   </td>
+      <td>0.30792
    </td>
   </tr>
 </table>
