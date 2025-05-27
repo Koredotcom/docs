@@ -1,4 +1,8 @@
-# Introduction
+# XO GPT: DialogGPT Model
+
+<br>
+
+## Introduction
 
 The intent detection model leverages Large Language Models (LLMs) to predict user intent within multi-turn conversations accurately. It identifies the winning intent(s) by taking the RAG-qualified topics from dialogs, FAQs, knowledge bases, conversation history, the dialog context, and the query to determine the winning intent. The XO GPT - DialogGPT Model explicitly trained for the intent detection task improves precision in intent matching and enables more seamless, context-aware interactions.
 
@@ -913,11 +917,11 @@ We evaluate various community models that are suitable for response generation a
    </td>
    <td>Multi-lingual
    </td>
-   <td>
+   <td>July, 2024 
    </td>
-   <td>
+   <td>Static 
    </td>
-   <td>
+   <td>December 2023
    </td>
   </tr>
 </table>
