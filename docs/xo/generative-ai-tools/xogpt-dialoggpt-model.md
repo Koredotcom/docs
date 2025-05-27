@@ -31,7 +31,7 @@ Below is the assumption and scope defined for the XO GPT – DialogGPT model dev
 The XO GPT - DialogGPT model offers several potential advantages for users:
 
 * **Consistent and Accurate**
-XO-GPT Intent Identification model ensures accurate intent identification for every user input for a seamless conversational experience for the user. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found .
+XO-GPT Intent Identification model ensures accurate intent identification for every user input for a seamless conversational experience for the user. Detailed benchmarking results, including latency and accuracy metrics compared to other models, can be found [here](#model-benchmarks).
 
 * **Cost-Effective Performance**
 For customers in the Enterprise Tier, XO GPT completely eliminates the commercial models’ usage costs. The following is an illustration of GPT -4 models. (Note: actual costs could vary based on token usage). For instance, assuming an average of 1,000 input tokens per user utterance without search and 5,000 with search, across 50,000 daily utterances - and with each response averaging 10 output tokens—the cost comparison between models is as follows:
@@ -882,11 +882,7 @@ The following table summarizes the versions covered in this document:
    </td>
    <td>1.57
    </td>
-   <td>
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Benchmark Summary v1"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.531umuu1r0ni">Benchmark Summary v1</a>
+   <td>[Benchmarks Summary v1](#benchmarks-summary-v1)
    </td>
    <td><a href="https://docs.google.com/spreadsheets/u/0/d/1gQdLwM73LceDuVrLra8bj8akqcOL70QkZeU6p52xQ_8/edit">Test data and results v1</a>
    </td>
