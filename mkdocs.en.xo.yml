@@ -546,6 +546,7 @@ nav:
           - Model Building: generative-ai-tools/xogpt-model-specifications.md
           - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
           - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - DialogGPT Model: generative-ai-tools/xogpt-dgpt-model.md
           - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
           - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
         - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md

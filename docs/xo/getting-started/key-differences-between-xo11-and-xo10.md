@@ -89,8 +89,8 @@ All the configurations applicable across the app have been moved to a separate m
 ## Shared LLM & Generative Settings for All Products
 
 All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.
-[Learn more](../app-settings/generative-ai-tools/introduction.md#key-features)  
-<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
+[Learn more](../generative-ai-tools/introduction.md)  
+<img src="../images/ais-llm.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
 
 ## Global User Management
 
