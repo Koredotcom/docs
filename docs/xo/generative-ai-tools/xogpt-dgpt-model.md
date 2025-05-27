@@ -311,7 +311,7 @@ The model is critical in ensuring contextually relevant and goal-oriented intera
 
 Sample Input
 
-**Conversation History - **
+**Conversation History -**
 
 [
 
@@ -329,7 +329,7 @@ Sample Input
 
 **Active Dialog Context - **{}
 
-**Dialog Chunks - **
+**Dialog Chunks -**
 
 [
 
@@ -367,7 +367,7 @@ Sample Input
 
 ]
 
-**FAQ Chunks - **
+**FAQ Chunks -**
 
 [
 
@@ -389,7 +389,7 @@ Sample Input
 
 ]
 
-**Knowledge Chunks - **
+**Knowledge Chunks -**
 
 [
 
@@ -425,7 +425,7 @@ Output:
 
 Sample Input
 
-**Conversation History - **
+**Conversation History -**
 
 [
 
