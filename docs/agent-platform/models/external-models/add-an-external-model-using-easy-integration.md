@@ -21,9 +21,29 @@ In this topic, you can see the process of adding the Claude-V1 model from the pr
 
     A Pop-up with the list of all the Anthropic models that are supported in Agent Platform is displayed.
 
+    For more information on the list of models supported, see [Supported models](../external-models/add-an-external-model-using-easy-integration.md#supported-models).
+
     <img src="../images/select-model.png" alt="Select Model" title="Select Model" style="border: 1px solid gray; zoom:80%;">
 
-6. Select the required **Model** from the options listed below and click **Next**.
+6. Select the required **Model** from the options listed and click **Next**.
+
+7. Enter the respective <b>API key</b> you have received from the provider in the **API key** field and click **Confirm** to start the integration.
+
+   <img src="../images/api-key-for-model.png" alt="API Key for Model" title="API Key for Model" style="border: 1px solid gray; zoom:80%;"></ol>
+
+The model is integrated and is listed in the External models list.
+
+!!! note
+
+    * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
+    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across Agent Platform. If the toggle button is OFF, it means you cannot infer it anywhere in Agent Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
+
+    
+
+## Supported Models
+
+Here is the list of all the Anthropic models supported in Agent Platform.
+
 
 <table>
   <tr>
@@ -143,15 +163,3 @@ In this topic, you can see the process of adding the Claude-V1 model from the pr
    </td>
   </tr>
 </table>
-
-<ol start="7"><li>Enter the respective <b>API key</b> you have received from the provider in the <b>API key</b> field and click <b>Confirm</b> to start the integration.</li>
-<img src="../images/api-key-for-model.png" alt="API Key for Model" title="API Key for Model" style="border: 1px solid gray; zoom:80%;"></ol>
-
-The model is integrated and is listed in the External models list.
-
-!!! note
-
-    * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
-    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across Agent Platform. If the toggle button is OFF, it means you cannot infer it anywhere in Agent Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
-
-    
