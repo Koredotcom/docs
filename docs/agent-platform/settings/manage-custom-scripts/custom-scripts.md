@@ -108,26 +108,20 @@ To ensure your custom script runs correctly within the platform, follow these gu
 
 **Main Entry Point Required**
 
-Your project must include a `main.py` (for Python) or `main.js` (for JavaScript) file at the root of the archive. This file serves as the main entry point for the service. Only the functions defined in this file will be exposed for execution via API endpoints or tool integrations.
+Your project must include a `main.py` (for Python) or `main.js` (for JavaScript) at the root directory of the archive file. This file serves as the main entrypoint for the service. Only the functions defined in this file will be exposed for execution via API endpoints or tool integrations.
 
 **Support for Modular Code**
 
-You can organize your code into multiple files for better structure and maintainability. Use additional files for helper functions or reusable logic, and import them into `main.py` or `main.js`. 
-
-<div class="admonition note">
-<p class="admonition-title">Important</p>
-<p>Only functions in the main file are exposed externally.</p>
-</div>
+You can organize your code across multiple files for better structure and maintainability. However, keep in mind that only functions in `main.py`/`main.js` will be exposed. Additional files can be used for helper functions or reusable logic, which can be imported into the main file.
 
 **Custom Dependencies (Optional)**
 
-* If your code relies on external packages, include a **requirements.txt** (for Python) or **package.json** (for JavaScript) in the root directory.
-* These files are optional and should only be added if external dependencies are needed.
+If your code depends on specific packages, include a `requirements.txt` (for Python) or `package.json` (for JavaScript) file at the root directory in your project. These are optional, only include them if your code has external dependencies.
 
 **Use Relative Imports**
 
-* When importing between files in your project, always use relative imports. 
-Refer to the sample project file for the best practices.
+When importing between files in your project, make sure to use relative imports. Refer to the provided sample files for examples.
+
 
 **Use of Environment Variables**
 
@@ -177,52 +171,57 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
        <li>The default value is 1.</li></ul></p>
        </div>
 
-     * **Min replica** should be lower than the **Max Replica**.
-     * **Average Compute Utilization**: A metric based on which scaling of the service happens. Indicates average compute utilization in percentage per pod. The **default value is 75**, and the **allowed range is between 1 and 100**.
+     * **Min replica** should be lower than or equal to the **Max Replica**.
+     * **Average Compute Utilization**: A metric based on which scaling of the service happens. Indicates average compute utilization in percentage per pod. The **default value is 75**, and the **allowed range is between 1 and 100**. This metric is disabled when **Min replica** and **Max replica** are the same.
      * Select the required **hardware** for the deployment. The unit is **No. of vCPUs with memory**. The profiles are virtualized for standardization. The available profiles are listed below:
 
-<table>
+         <table>
   <tr>
-   <td>
-<strong>No. of vCPUs with Memory</strong>
+   <td><strong>Price per Hour</strong>
    </td>
-   <td><strong>Actual Provisioned with Memory</strong>
+   <td><strong>Hardware configuration</strong>
+   </td>
+   <td><strong>Actual CPU Core and Memory Available</strong>
    </td>
   </tr>
   <tr>
-   <td>1 vCPU with 2 GB memory <strong>(Default) </strong>
+   <td>0.144
    </td>
-   <td>0.7 vCPU / 1.1 GB
+   <td>2 vCPUs with 8GB memory
    </td>
-  </tr>
-  <tr>
-   <td>2 vCPU with 4 GB memory
-<p>
- 
-   </td>
-   <td>1.5 vCPU / 2.5 GB
+   <td>1.5 vCPUs with 6.5GB memory
    </td>
   </tr>
   <tr>
-   <td>2 vCPU with 8 GB memory
-<p>
- 
+   <td>0.288
    </td>
-   <td> 1.5 vCPU / 6.5 GB
+   <td>4 vCPUs with 16GB memory
    </td>
-  </tr>
-  <tr>
-   <td>4 vCPU with 8 GB memory
-   </td>
-   <td>3.5 vCPU / 6 GB
+   <td>3.5 vCPUs with 13.5GB memory
    </td>
   </tr>
   <tr>
-   <td>4 vCPU with 16 GB memory
-<p>
- 
+   <td>0.07698
    </td>
-   <td>3.5 vCPU / 13.5 GB
+   <td>1 vCPU with 2GB memory
+   </td>
+   <td>0.7 vCPUs with 1.1GB memory
+   </td>
+  </tr>
+  <tr>
+   <td>0.15396
+   </td>
+   <td>2 vCPUs with 4GB memory
+   </td>
+   <td>1.5 vCPUs with 2.5GB memory
+   </td>
+  </tr>
+  <tr>
+   <td>0.30792
+   </td>
+   <td>4 vCPUs with 8GB memory
+   </td>
+   <td>3.5 vCPUs with 6GB memory
    </td>
   </tr>
 </table>

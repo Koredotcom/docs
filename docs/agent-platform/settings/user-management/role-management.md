@@ -567,7 +567,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="12" ><strong>Users Management</strong>
+   <td rowspan="11" ><strong>Users Management</strong>
    </td>
    <td>Access
    </td>
@@ -701,9 +701,19 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td><strong>Security and Control Settings</strong>
+   <td rowspan="5"><strong>Security and Control</strong>
    </td>
-   <td>Create Management API Key.
+   <td>Access
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No</td>
+   <td>No</td>
+  </tr>
+  <tr>
+   <td>Create API App
    </td>
    <td>Yes
    </td>
@@ -712,8 +722,43 @@ The following table summarizes the module-wise permissions and access levels for
    <td>No
    </td>
    <td>No
-<p>
-    </td>
+   </td>
+  </tr>
+  <tr>
+   <td>Delete API App
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Update API App
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Create or Delete an API Key
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
   </tr>
   <tr>
    <td><b>Monitoring</b>
@@ -1006,7 +1051,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Monitoring Trace of an Tool
+   <td>Monitoring Trace of a Tool
    </td>
    <td>Yes
    </td>
