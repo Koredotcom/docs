@@ -10,7 +10,7 @@ For every user query, the Retrieval Engine shortlists relevant chunks from the p
 
 <img src="../images/answer01.png" alt="XO GPT" title="RAG Framework" style="border: 1px solid gray; zoom:70%;">
 
-## Challenges with Commercial Models
+### Challenges with Commercial Models
 
 * **Latency**: The time consumed by the commercial LLMs to process and return a response can be significant, especially when dealing with high volumes of requests or real-time applications. This impacts the user experience.
 * **Cost**: Commercial models often have a per-request cost, and it rises with high scale usages. This makes managing costs difficult, especially for large-scale deployments.
@@ -19,14 +19,14 @@ For every user query, the Retrieval Engine shortlists relevant chunks from the p
 * **Limited Control**: There is minimal control over the internal workings of commercial models, making it difficult to correct or refine their behavior when they generate incorrect or undesirable outputs.
 * **Compliance and Regulatory Constraints**: Certain industries have stringent compliance and regulatory requirements that may not be fully supported by commercial LLM providers, complicating their use in those sectors.
 
-## Key Assumptions
+### Key Assumptions
 
 Below is the assumption and scope defined for the XO GPT – DialogGPT model development:
 
 * Scope: Designed to support only text and voice-based conversations.
 * Assumption: All required inputs from the pipeline will be available for the model to generate the expected output.
 
-## Benefits of XO GPT - DialogGPT Model
+### Benefits of XO GPT - DialogGPT Model
 
 The XO GPT - DialogGPT model offers several potential advantages for users:
 
@@ -172,7 +172,7 @@ Use existing
 
 <img src="../images/answer03.png" alt="XO GPT Benefits" title="XO GPT Benefits" style="border: 1px solid gray; zoom:70%;">
 
-## Use Cases
+### Use Cases
 
 The table presents various use cases or scenarios used to train the XO-GPT Intent Identification model. The model is designed to identify relevant chunks using the available contextual information. This facilitates improved intent accuracy with faster response time. LLM solutions enable conversations to achieve the human-like interaction users expect.
 
@@ -209,7 +209,7 @@ The table presents various use cases or scenarios used to train the XO-GPT Inten
   </tr>
 </table>
 
-## Sample Outputs
+### Sample Outputs
 
 The DialogGPT model is a core component of the DialogGPT’s Conversation Management. It is designed to analyze user queries and generate structured responses tailored to the specific conversation types enabled within the system. It handles:
 
@@ -848,50 +848,23 @@ Output:
 
     When a bot has PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input is not available for intent identification, which may impact the model's ability to recognize user intents accurately.
 
-# XO GPT - Model Building Process
+## XO GPT - Model Building Process
 
 The model-building process consists of several key stages that form the backbone of AI system development. To learn more, see the [Model Building Process](https://docs.kore.ai/xo/generative-ai-tools/xogpt-model-specifications/#xo-gpt---model-building-process).
 
-# Model Benchmarks
+## Model Benchmarks
 
 This section highlights the features, updates, and changes that vary across different versions of the Intent Identification Model. It provides version-specifics, which can help identify what is unique to each version.
 
 The following table summarizes the versions covered in this document:
 
-<table>
-  <tr>
-   <td>Model Version
-   </td>
-   <td>Accuracy
-   </td>
-   <td>Tokens/sec (TPS)
-   </td>
-   <td>Latency (secs)
-   </td>
-   <td>Benchmark Comparison
-   </td>
-   <td>Test Data & Results
-   </td>
-  </tr>
-  <tr>
-   <td>Version 1.0
-   </td>
-   <td>95.8
-   </td>
-   <td>35.1
-   </td>
-   <td>1.57
-   </td>
-   <td>[Benchmarks Summary v1](#benchmarks-summary-v1)
-   </td>
-   <td><a href="https://docs.google.com/spreadsheets/u/0/d/1gQdLwM73LceDuVrLra8bj8akqcOL70QkZeU6p52xQ_8/edit">Test data and results v1</a>
-   </td>
-  </tr>
-</table>
+| Model Version | Accuracy | Tokens/sec (TPS) | Latency (secs) | Benchmark Comparison       | Test Data & Results  |
+|---------------|----------|------------------|----------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Version 1.0   | 95.8     | 35.1             | 1.57           | [Benchmarks Summary v1](#benchmarks-summary-v1) | [Test data and results v1](../test-date-and-results/xogpt-dailoggpt-v1.0.xlsx) |
 
-## Version 1.0
+### Version 1.0
 
-### Model Choice
+#### Model Choice
 
 We evaluate various community models that are suitable for response generation and fine-tune with our proprietary data described in the previous section. One or more candidate models are used throughout the training and evaluation phase. The model that performs better in accuracy, safety, latency, etc., will be deployed. We continue to evaluate the models as part of ongoing improvements and may choose to use a different base model in the newer model versions. Currently, we are using [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) as one of the base models for fine-tuning and deployment.
 
@@ -926,7 +899,7 @@ We evaluate various community models that are suitable for response generation a
   </tr>
 </table>
 
-#### Fine-tuning Parameters
+##### Fine-tuning Parameters
 
 <table>
   <tr>
@@ -1083,7 +1056,7 @@ We evaluate various community models that are suitable for response generation a
   </tr>
 </table>
 
-#### General Parameters
+##### General Parameters
 
 The model is hosted on infrastructure with 2 A10 GPUs. Some of the other general fine-tuning parameters include the following:
 
@@ -1170,7 +1143,7 @@ The model is hosted on infrastructure with 2 A10 GPUs. Some of the other general
   </tr>
 </table>
 
-### Benchmarks Summary v1
+#### Benchmarks Summary v1
 
 To compare and contrast the performance of the fine-tuned model, we have considered the following other models:
 
