@@ -311,12 +311,13 @@ The model is critical in ensuring contextually relevant and goal-oriented intera
   </tr>
 </table>
 
-**Example 1 [ambiguous_intents]**
+**Example 1: ambiguous_intents**
 
 Sample Input
 
-**Conversation History -**
+**Conversation History**
 
+```python
 [
 
 "Bot: Hello! How can I assist you today?"
@@ -330,11 +331,13 @@ Sample Input
 "Bot: Thank you. Let me check the availability of healthcare providers for that date and time. You are booked for a virtual consultation on October 15th at 3 PM. Is there anything else I can help you with today?"
 
 ]
+```
 
-**Active Dialog Context - **{}
+**Active Dialog Context**
 
-**Dialog Chunks -**
+**Dialog Chunks**
 
+```json
 [
 
 {
@@ -370,9 +373,11 @@ Sample Input
 }
 
 ]
+```
 
-**FAQ Chunks -**
+**FAQ Chunks**
 
+```json
 [
 
 {
@@ -392,9 +397,11 @@ Sample Input
 }
 
 ]
+```
 
-**Knowledge Chunks -**
+**Knowledge Chunks**
 
+```json
 [
 
 {
@@ -412,7 +419,7 @@ Sample Input
 }
 
 ]
-
+```
 
 ```
 User Query - I want to consult a doctor online. How do I do it?
@@ -425,12 +432,13 @@ Output:
 }
 ```
 
-**Example 2 [multiple_intents]**
+**Example 2: multiple_intents**
 
 Sample Input
 
-**Conversation History -**
+**Conversation History**
 
+```
 [
 
 'Bot: Welcome to our banking service! How may I assist you today?', 
@@ -438,11 +446,13 @@ Sample Input
 'User: Hi, I'm interested in some financial products.',
 
 'Bot: Certainly! I'd be happy to help. What specific financial products are you interested in?']
+```
 
-**Active Dialog Context** - {}
+**Active Dialog Context**
 
-**Dialog Chunks** - 
+**Dialog Chunks**
 
+```
 [
 
 {
@@ -494,9 +504,11 @@ Sample Input
 }
 
 ]
+```
 
-**FAQ Chunks** - 
+**FAQ Chunks**
 
+```
 [
 
 {
@@ -548,9 +560,11 @@ Sample Input
 }
 
 ]
+```
 
-**Knowledge Chunks** - 
+**Knowledge Chunks**
 
+```
 [
 
 {
@@ -582,7 +596,7 @@ Sample Input
 }
 
 ]
-
+```
 
 ```
 User Query - I want to apply for a credit card and a home loan.
@@ -596,10 +610,11 @@ Output:
 }
 ```
 
-**Example 3 [single_intent]**
+**Example 3: single_intent**
 
-**Conversation History** - 
+**Conversation History**
 
+```
 [
 
 'Bot: Hello! How can I assist you with your banking needs today?'
@@ -613,13 +628,17 @@ Output:
 'Bot: Got it. How much would you like to pay for each bill, and how often?'
 
 ]
+```
 
-**Active Dialog Context** - 
+**Active Dialog Context**
 
+```python
 {'dialog_name': 'Set Payments', 'description': 'Set up automatic payments for bills or subscriptions. Set up my monthly rent payment to be automatic. is the sample user utterance.', 'current_node': {'name': 'payment_amount_and_frequency', 'type': 'entity'}}
+```
 
-**Dialog Chunks** -
+**Dialog Chunks**
 
+```
 [
 
 {
@@ -655,10 +674,11 @@ Output:
 }
 
 ]
+```
 
-**FAQ Chunks** - []
+**FAQ Chunks**
 
-**Knowledge Chunks** - []
+**Knowledge Chunks**
 
 
 ```
@@ -672,18 +692,23 @@ Output:
 }
 ```
 
-**Example 4 [system_intent]**
+**Example 4: system_intent**
 
-Conversation History - 
+**Conversation History**
 
+```python
 ['Bot: Hello! Welcome to ABC Bank. How can I assist you today?', 'User: Hi, I'd like to open a new account.', 'Bot: Great! We offer savings, current, and fixed deposit accounts. Which type of account would you like to open?', 'User: I would like to open a savings account.', 'Bot: To open a savings account, we will need some personal information and specific documents. Could you please provide your full name and contact details?', 'User: Sure, my name is John Doe, and my contact number is 123-456-7890.', 'Bot: Thank you, John. We also need you to submit a few documents, such as proof of your ID and proof of address. Do you have these documents ready?', 'User: Yes, I have my passport and a utility bill.', 'Bot: Perfect. Lastly, can you let us know the initial deposit amount you would like to make?']
+```
 
-Active Dialog Context - 
+**Active Dialog Context**
 
+```python
 {'dialog_name': 'Open Account', 'description': 'Assist users in the process of opening a new bank account. I would like to open a new savings account.is the sample user utterance.', 'current_node': {'name': 'initial_deposit_amount', 'type': 'entity'}}
+```
 
-Dialog Chunks - 
+**Dialog Chunks**
 
+```json
 [
 
 {
@@ -703,9 +728,11 @@ Dialog Chunks -
 }
 
 ]
+```
 
-FAQ Chunks - 
+**FAQ Chunks**
 
+```json
 [
 
 {
@@ -725,8 +752,12 @@ FAQ Chunks -
 }
 
 ]
+```
 
-Knowledge Chunks - [
+**Knowledge Chunks**
+
+```json
+[
 
 {
 
@@ -743,7 +774,7 @@ Knowledge Chunks - [
 }
 
 ]
-
+```
 
 ```
 User Query - The branch code is 00123.
@@ -756,20 +787,25 @@ Output:
 }
 ```
 
-**Example 5 [conversation_intent]**
+**Example 5: conversation_intent**
 
-Conversation History - 
+**Conversation History** 
 
+```python
 ['Bot: Hello! How can I assist you today in managing your HR tasks?', "User: change supervisor",
 
 'Bot: I understand you want to update the reporting structure. Could you please provide me with the name of the employee whose supervisor you would like to change?']
+```
 
-Active Dialog Context - 
+**Active Dialog Context**
 
+```
 {'dialog_name': 'Supervisor Change', 'description': "This intent allows the manager to reassign employee's direct supervisor. It ensures that reporting structures are kept up-to-date and reflects organizational changes efficiently. It is exclusively for updating reporting structures.", 'current_node': {'name': 'employee_name', 'type': 'entity'}}
+```
 
-Dialog Chunks - 
+**Dialog Chunks** 
 
+```
 [
 
 {
@@ -789,9 +825,11 @@ Dialog Chunks -
 }
 
 ]
+```
 
-FAQ Chunks -
+**FAQ Chunks**
 
+```json
 [
 
 {
@@ -811,9 +849,11 @@ FAQ Chunks -
 }
 
 ]
+```
 
-Knowledge Chunks - 
+**Knowledge Chunks**
 
+```dotnetcli
 [
 
 {
@@ -831,7 +871,7 @@ Knowledge Chunks -
 }
 
 ]
-
+```
 
 ```
 User Query - I need to pause this for a moment.
