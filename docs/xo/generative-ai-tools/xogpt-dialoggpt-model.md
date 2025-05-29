@@ -421,7 +421,7 @@ Sample Input
 ]
 ```
 
-```
+```json
 User Query - I want to consult a doctor online. How do I do it?
 
 Output:
@@ -438,7 +438,7 @@ Sample Input
 
 **Conversation History**
 
-```
+```python
 [
 
 'Bot: Welcome to our banking service! How may I assist you today?', 
@@ -452,7 +452,7 @@ Sample Input
 
 **Dialog Chunks**
 
-```
+```json
 [
 
 {
@@ -508,7 +508,7 @@ Sample Input
 
 **FAQ Chunks**
 
-```
+```json
 [
 
 {
@@ -564,7 +564,7 @@ Sample Input
 
 **Knowledge Chunks**
 
-```
+```json
 [
 
 {
@@ -598,7 +598,7 @@ Sample Input
 ]
 ```
 
-```
+```json
 User Query - I want to apply for a credit card and a home loan.
 
 Output:
@@ -614,7 +614,7 @@ Output:
 
 **Conversation History**
 
-```
+```python
 [
 
 'Bot: Hello! How can I assist you with your banking needs today?'
@@ -638,7 +638,7 @@ Output:
 
 **Dialog Chunks**
 
-```
+```json
 [
 
 {
@@ -680,8 +680,7 @@ Output:
 
 **Knowledge Chunks**
 
-
-```
+```json
 User Query - As of now, I need to update my mailing address.
 
 Output:
@@ -776,7 +775,7 @@ Output:
 ]
 ```
 
-```
+```json
 User Query - The branch code is 00123.
 
 Output:
@@ -853,7 +852,7 @@ Output:
 
 **Knowledge Chunks**
 
-```dotnetcli
+```
 [
 
 {
