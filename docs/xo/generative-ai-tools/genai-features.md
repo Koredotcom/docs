@@ -195,7 +195,7 @@ This feature uses LLM to reiterate the recent bot responses when the Repeat Resp
 
 
 
-### Rephrase Dialog Responses
+### Rephrase Responses
 
 This feature sends all User Prompts, Error Prompts, and Bot Responses to the Generative AI along with the conversation context, which depends on the configured number of user inputs. Responses are rephrased in English or the selected Non-English Bot Language based on the context and user emotion, providing a more empathetic, natural, and contextual conversation experience to the end-user. You can give instructions (additional instructions) in English or any other bot language you select.
 

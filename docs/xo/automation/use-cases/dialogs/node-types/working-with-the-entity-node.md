@@ -57,9 +57,8 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
             
             <img src="../images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
-6. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Entity nodes, this feature helps rephrase the responses entered under _User Prompts_ and _Error Prompts_. To see this feature in your node’s Component Properties, please first enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../generative-ai-tools/dynamic-conversations-features.md#feature-details){:target="_blank"}. This feature is disabled by default for each node. Turn on the toggle to enable Rephrase Responses. You can configure the **number of previous user inputs** to determine how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
-    
-    <img src="../images/entity-node-img5.png" alt="Entity node - Rephrase responses" title="Entity node - Rephrase responses" style="border:1px solid gray;zoom:70%;">
+6. Toggle [Rephrase Responses](../../../../generative-ai-tools/genai-features.md#rephrase-responses) to rewrite VA replies using AI based on conversation, context, and user emotions. [Learn more](../../../../generative-ai-tools/genai-features.md#change-settings-for-a-pre-built-model).  
+<img src="../images/re-responses.png" alt="Rephrase Responses" title="Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 7. Under **Redaction of PII Data**, you can configure how the value of this entity is presented if it is identified as PII data and used in defining any messages or responses:
 
