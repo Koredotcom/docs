@@ -52,6 +52,21 @@ _And access the properties from the variable_
 var userId = cbCtx.UserContext._id
 ```
 
+### Context| Identify Returning Contact Center AI (CCAI) Customers Within 24 Hours
+
+This context variable identifies whether a CCAI customer is a returning caller within 24 hours of the previous call. It applies to both digital and voice channels.
+
+Syntax (Digital):
+
+`context.session.BotUserSession.isReturn24hCC`
+
+Syntax (Voice):
+
+`{{JSON.stringify(context.session.UserSession.isRepeatedVoiceUser)}}`
+
+* The value is set to `true,` if the same user contacts the contact center within **24 hours** of their previous interaction.
+* The value is set to `false` for first-time or non-returning users.
+
 ## Content Variables
 
 You can access the content variables defined in the instance bot by giving the “content” keyword followed by the period operator and the variable name.

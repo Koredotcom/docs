@@ -12,13 +12,13 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Repeat User Identification for Voice Channel
 
-Repeat user identification is extended to the Voice Channel. This enhancement enables consistent recognition of returning users across all communication channels using predefined identifiers. It enhances routing accuracy and personalization in voice interactions while providing unified insights into user behavior for administrators, supervisors, and contact center operations teams.
+Repeat user identification is extended to the Voice Channel. This enhancement enables consistent recognition of returning users across all communication channels using predefined identifiers. It enhances routing accuracy and personalization in voice interactions while providing unified insights into user behavior for administrators, supervisors, and contact center operations teams. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#context-identify-returning-contact-center-ai-ccai-customers-within-24-hours)
 
 ### Call Control Parameters
 
 #### Support for ‘Speed’ Parameter in Elevenlabs TTS
 
-The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output.
+The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#elevenlabs)
 
 ### Text to Speech (TTS)
 
