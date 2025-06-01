@@ -173,6 +173,9 @@ Use the Instance Properties to determine whether to make the entity value mandat
     * **Interruptions Behavior**: To define the interruption handling at this node. You can select from the below options:
         * **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
         * **Customize for this node:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it . You can choose whether to allow interruptions or not, or whether to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
+    * **Analytics-Containment Type:**Select one of the below options to determine how to treat user-abandoned conversations.
+        * **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
+        * **Customize for this node:** You can customize the **Containment Type** for this node by selecting this. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
     
     * **Precedence** (Applies to all Entity types except _String_ and _Description): When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent over Entity** or **Entity over Intent** options. For example, if a Flight Booking VA prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you get to define how the bot responds in such cases; pick the entity and add the intent to the Follow-up Intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
 

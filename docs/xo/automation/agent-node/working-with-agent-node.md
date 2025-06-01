@@ -228,6 +228,12 @@ To define the interruption handling at this node. You can select from the below 
 * **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
 * **Customize for this node**: You can customize the **Interruptions Behavior** settings by selecting this option and configuring it. You can choose whether to allow interruptions or not, or to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../automation/intelligence/conversation-management/manage-interruptions.md){:target="_blank"} article for more information.
 
+**Analytics-Containment Type:**   
+
+Select one of the below options to determine how to treat user-abandoned conversations.
+* **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
+* **Customize for this node:** You can customize the **Containment Type** for this node by selecting this. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
+
 **Custom Tags**
 
 Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions.  See [Custom Meta Tags](../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"} for details.

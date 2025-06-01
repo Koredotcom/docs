@@ -97,6 +97,10 @@ In the **Variable Namespaces** section, associate the variable namespaces to exe
     1. **Use the task level ‘Interruptions Behavior’ setting**: The bot refers to the Interruptions Behavior settings set at the dialog task level.
     2. **Customize for this node option:** You can customize the Interruptions Behavior settings for this node by selecting this option and configuring the same. For more information, refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
 
+3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
+    1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
+    2. **Customize for this node:** You can customize the **Containment Type** for this node by selecting this. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
+
 3. Under the **Custom Tags** section, add tags to build custom profiles of your bot conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 

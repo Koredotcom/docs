@@ -102,6 +102,9 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
     
     1. **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the Interruptions Behavior settings set at the dialog task level.
     2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
+3. **Analytics-Containment Type:** Select one of the below options to determine how to treat user-abandoned conversations.
+    1. **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
+    2. **Customize for this node:** You can customize the **Containment Type** for this node by selecting this. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
 
 3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the bot responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
     
