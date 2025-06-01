@@ -60,10 +60,6 @@ A new boolean property—“Replace Customer Email/Phone in Interactions Dashboa
 
 A new Skills filter is now available in the wallboards. Positioned immediately after the Queues filter, this multi-select field allows supervisors to select one or more skills to refine the data shown. When skills are selected, the wallboard displays conversations associated with the chosen skills, in combination with other active filters. If no skills are selected, the wallboard presents data without applying a skills-based filter, maintaining existing behavior. Learn more.
 
-#### New Status and Reason for Campaign Calls
-
-New status and reason values—already in use for Manual Outbound calls—are now extended to Campaign Outbound calls to ensure consistency across reporting and analytics. These updated values are applied across multiple areas, including the Interactions Dashboard (both list and detailed views), export files, the Interactions Detail Report, the Interactions Report by Segment, and the Interactions Details API v2. This enhancement enables accurate tracking and analysis of campaign call outcomes.
-
 ### Campaigns
 
 #### Validation Checks for Campaign-Linked Phone Numbers in SMS and Voice Channels
