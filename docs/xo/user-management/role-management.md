@@ -1198,7 +1198,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full
+   <td>None
    </td>
 </tr>
 <tr>
@@ -1797,7 +1797,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full
+   <td>None
    </td>
 </tr>
 <tr>
