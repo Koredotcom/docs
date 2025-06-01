@@ -26,7 +26,7 @@ The ‘Assign’ button is now disabled for supervisors when a call is in the co
 
 #### Identification of Returning Customers Within 24 Hours
 
-A new context variable, `isReturn24h`, is now available. This variable is automatically set to ‘true’ if a user contacts the center within 24 hours of their previous interaction. Accessible from the beginning of the call flow, the variable allows for customized greetings, routing, and escalation strategies for repeat callers. Administrators can leverage this variable in Split Nodes, Start Flows, Conditional Flows, Exit Flows, and Dialogs to streamline workflows, minimize user frustration, and accelerate issue resolution. To provide a better understanding of repeat interactions, a new **'Returning Users'** column has been added to the Queue Performance dashboard and the Queue Metrics Summary Report (CSV).
+A new context variable, `isReturn24h`, is now available. This variable is automatically set to ‘true’ if a user contacts the center within 24 hours of their previous interaction. Accessible from the beginning of the call flow, the variable allows for customized greetings, routing, and escalation strategies for repeat callers. Administrators can leverage this variable in Split Nodes, Start Flows, Conditional Flows, Exit Flows, and Dialogs to streamline workflows, minimize user frustration, and accelerate issue resolution. To provide a better understanding of repeat interactions, a new **'Returning Users'** column has been added to the Queue Performance dashboard and the Queue Metrics Summary Report (CSV). [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#context-identify-returning-contact-center-ai-ccai-customers-within-24-hours)
 
 #### Translation Support for Internal Chats
 
