@@ -233,7 +233,7 @@ To define the interruption handling at this node. You can select from the below 
 Select one of the below options to determine how to treat user-abandoned conversations.
 
 * **Use task-level default settings:** This refers to the Containment Type settings set at the dialog level.
-* **Customize for this node:** You can customize the **Containment Type** for this node by selecting this. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
+* **Customize for this node:** You can customize the Containment Type for this node by selecting this option. You can choose whether to Self Service or Drop-off in case of user-abandoned conversations.
 
 **Custom Tags**
 
