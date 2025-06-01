@@ -37,15 +37,11 @@ This release introduces multi-user support for the Webhook channel via a secure 
 
 Key Features:
 
-
-
 * The new Public API enables sending proactive messages to multiple users in a single call.
 * API access is protected with JWT-based authentication.
 * Ensures system stability through per-client rate limits.
 
 Key Benefits:
-
-
 
 * Send messages to multiple recipients in one API call.
 * Integrate outbound notifications from any system with webhook configuration.
@@ -66,19 +62,15 @@ The platform now supports language-specific configuration of voice call properti
 
 Key Changes:
 
-
-
 * Platform users can now define unique voice call properties as per the enabled language.
 * When a new language is added to a bot, existing voice properties from the selected base language are auto-copied to the new language.
 * When adding new components, voice property fields will remain **empty by default** across all languages, allowing independent language-specific configuration.
 
-
 ### Role Management
 
+#### Enhanced Permissions for the Billing Module
 
-#### Enhanced Permissions Framework for App Owners
-
-The Platform has strengthened security by restricting the Billing Module to App Owners and users with custom roles. This ensures sensitive functions are protected while maintaining a streamlined experience for other user roles.
+The Platform has strengthened security by restricting the Billing Module to App Owners and users with custom roles. This ensures sensitive functions are protected while maintaining a streamlined experience for other user roles. [Learn more:octicons-arrow-right-24:](../../user-management/role-management.md)
 
 
 <hr>

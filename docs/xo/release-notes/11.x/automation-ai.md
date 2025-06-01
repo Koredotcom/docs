@@ -63,8 +63,7 @@ The platform now supports Genesys WebMessaging integration for agent transfer, i
 
 To improve the accuracy of containment metrics in Analytics, users can now manage how conversations are categorized at the node level. A "Containment Type" option has been introduced within the Instance Properties of Entity, Confirmation, Message, and Agent Nodes. This new setting allows direct classification of conversations as ‘Self-Serve’ or ‘Drop-Off’ in Instance Properties, ensuring accurate exit tracking at optional stages and more reliable Analytics metrics.
 
-This Setting overrides the dialog-level settings for containment type. The default option would be the dialog-level settings.
-
+This Setting overrides the dialog-level settings for containment type. The default option would be the dialog-level settings. [Learn more:octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#instance-properties)
 
 <hr>
 
