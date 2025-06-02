@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 #### Manual PII Redaction
 
-Agents can quickly redact or mask sensitive data, minimizing the risk of storing or exposing PII and aiding compliance with data privacy regulations. Role-based permissions enable supervisors to control access to redaction, ensuring that only authorized users can perform these actions.
+Agents can quickly redact or mask sensitive data, minimizing the risk of storing or exposing PII and aiding compliance with data privacy regulations. Role-based permissions enable supervisors to control access to redaction, ensuring that only authorized users can perform these actions. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#manual-pii-redaction)
 
 #### Supervisor Support Request
 
@@ -30,7 +30,7 @@ A new context variable, `isReturn24h`, is now available. This variable is automa
 
 #### Translation Support for Internal Chats
 
-Internal chat translation between supervisors and agents is now available to support multilingual contact centers. This feature automatically translates conversations, allowing agents and supervisors to view both original and translated messages. Supervisors and Agents can apply their preferred language settings configured in the dashboard or monitor. Administrators can control this functionality by enabling or disabling internal chat translation within the translation engine settings. This update extends the existing translation capabilities to internal communications, ensuring effective multilingual interactions and consistency.
+Internal chat translation between supervisors and agents is now available to support multilingual contact centers. This feature automatically translates conversations, allowing agents and supervisors to view both original and translated messages. Supervisors and Agents can apply their preferred language settings configured in the dashboard or monitor. Administrators can control this functionality by enabling or disabling internal chat translation within the translation engine settings. This update extends the existing translation capabilities to internal communications, ensuring effective multilingual interactions and consistency. [Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#translate-internal-chats)
 
 ### Flows
 

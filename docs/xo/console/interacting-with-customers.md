@@ -501,33 +501,57 @@ There are two ways to secure the agent form:
 
 1. The entire form is secured by turning on a toggle at [form creation](../contactcenter/configurations/agent-forms/configure-agent-forms.md#create-an-agent-form). In this case, the **view** icon appears to view masked data in the header with the agent form text.
 All headers are visible, and only submitted data is masked.  
-<img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
 
 2. Only specific fields are masked, retaining the redaction as per the configuration for that field. The data is unmasked when the agent clicks the unmask button.  
-<img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
 
 Steps to share an Agent Form:
 
 1. Click the **Agent Form** icon.  
-<img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
 
 2. Select the form and click **Send Form**.  
-<img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
 
 3. The form is sent to the customer and the status of the form on the live interaction pane shows **Sent**.  
-<img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
 
 4. A message is displayed on the console once the customer submits the form and the status of the form shows Filled. Clicking the form/View Form on the confirmation message displays the form.  
-<img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
 
 5. Click the **Unmask** icon to view the fields (applicable if mask is enabled during form creation).  
-<img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
 
     The agent form fields are displayed.  
     <img src="../images/unmasked-details.png" alt="Unmasked Form" title="Unmasked Form" style="border: 1px solid gray; zoom:70%;">
 
     The demonstration below shows how you can share an agent form with a customer and view the filled form.  
     <img src="../images/agent-forms-demo.gif" alt="Agent Forms Demo" title="Agent Forms Demo" style="border: 1px solid gray; zoom:70%;">
+
+## Manual PII Redaction
+
+During live chat sessions, the manual redaction feature enables agents to remove or mask sensitive information, including Personally Identifiable Information (PII). This capability allows agents to respond immediately to accidental disclosures and helps prevent the storage or exposure of sensitive data, supporting compliance with data privacy regulations. Administrators can configure this functionality from [Permissions](../user-management/role-management.md#permissions).
+
+Steps to manually redact PII data:
+
+1. Highlight the text you want to redact. The **Redact Data** option appears.  
+    <img src="../images/highlight-text.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:70%;">
+2. Click **Redact Data**.  
+    <img src="../images/redact-data-button.png" alt="Redact Data Button" title="Redact Data Button" style="border: 1px solid gray; zoom:70%;">
+3. In the confirmation prompt, click **Redact Data** again.  
+    <img src="../images/confirmation.png" alt="Redact Data Confirmation" title="Redact Data Confirmation" style="border: 1px solid gray; zoom:70%;">  
+    The selected text is redacted.  
+    <img src="../images/redacted.png" alt="Redacted" title="Redacted" style="border: 1px solid gray; zoom:70%;">  
+    The following demonstration illustrates this process.  
+    <img src="../images/redact-data.gif" alt="redaction Demo" title="Redaction Demo" style="border: 1px solid gray; zoom:70%;">  
+
+!!! Note
+
+    * Agents can select and redact only one user message at a time. They can select multiple lines within that message.
+    * Manual redaction applies to all digital channels except email.
+    * This feature does not support redacting messages in the user's console.
+    * Redaction applies to plain text, even if the text is already redacted.
 
 ## Snooze
 

@@ -551,6 +551,14 @@ Allow user to select their preferred channel for incoming interactions.
    </td>
 </tr>
 <tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1182,6 +1190,13 @@ Allow user to select their preferred channel for incoming interactions.
    </td>
 </tr>
 <tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   </td>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1780,6 +1795,13 @@ Allow user to select their preferred channel for incoming interactions.
    <td>Yes
    </td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>No
+   </td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -2391,6 +2413,13 @@ Allow user to select their preferred channel for incoming interactions.
    <td>Yes
    </td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   </td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -3006,6 +3035,13 @@ Allow user to select their preferred channel for incoming interactions.
    <td>No
    </td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>No
+   </td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -3808,6 +3844,14 @@ Allow user to select their preferred channel for incoming interactions.
    <br>
    No</td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   <br>
+   No</td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
