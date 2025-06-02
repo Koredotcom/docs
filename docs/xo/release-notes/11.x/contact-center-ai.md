@@ -42,7 +42,7 @@ To prevent execution issues where flows unexpectedly return to the welcome messa
 
 #### Expanded Alert Configuration: From Service Levels to General System Events
 
-The alert system now supports general system events, including exporting the Interaction Details Report, dashboard data, or segment-based reports. This update expands the service level configuration into a flexible alerting framework that covers operational metrics and system events. Admins and supervisors can monitor user activities to ensure compliance, while contact center operations teams gain improved visibility and quicker response to critical or unusual events.
+The alert system now supports general system events, including exporting the Interaction Details Report, dashboard data, or segment-based reports. This update expands the service level configuration into a flexible alerting framework that covers operational metrics and system events. Admins and supervisors can monitor user activities to ensure compliance, while contact center operations teams gain improved visibility and quicker response to critical or unusual events. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md#general-alerts)
 
 #### Display Industry Standard MOS and Jitter Values in Diagnostics Page
 
