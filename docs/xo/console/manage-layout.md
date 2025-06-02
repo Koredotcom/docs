@@ -29,7 +29,7 @@ Steps to manage notifications:
     <img src="../images/settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 3. Notifications can be managed for the following:  
-    <img src="../images/notification-preferences.png" alt="Notification Preferences" title="Notification Preferences" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/notification-preference.png" alt="Notification Preferences" title="Notification Preferences" style="border: 1px solid gray; zoom:70%;">
 
     !!! Notes
 
