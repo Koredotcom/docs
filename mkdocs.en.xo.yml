@@ -432,7 +432,8 @@ nav:
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
         - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
         - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
-    - Flows and Routing:
+    - Performance Management:
+      - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts/manage-slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
