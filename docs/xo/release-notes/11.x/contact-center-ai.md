@@ -36,7 +36,7 @@ Internal chat translation between supervisors and agents is now available to sup
 
 #### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration
 
-To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly.
+To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly. [Learn more :octicons-arrow-right-24:](../../flows/node-types/agent-transfer.md#general-settings)
 
 ### Analytics
 
@@ -50,7 +50,7 @@ The Diagnostics page now displays industry-standard values for MOS and Jitter wi
 
 #### Default FLAC Format for Downloaded Call Recordings Across All OS Platforms
 
-Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools.
+Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
 #### Interactions Dashboard: Customer Column Data Replaced with User ID
 

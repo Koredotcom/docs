@@ -355,6 +355,9 @@ The following recording settings can be configured:
 
         <img src="../images/download-as-separate-files.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
+    The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
+    <img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
 
