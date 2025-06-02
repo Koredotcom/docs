@@ -58,7 +58,7 @@ A new boolean property—“Replace Customer Email/Phone in Interactions Dashboa
 
 #### Skills Filter Added to Wallboards
 
-A new Skills filter is now available in the wallboards. Positioned immediately after the Queues filter, this multi-select field allows supervisors to select one or more skills to refine the data shown. When skills are selected, the wallboard displays conversations associated with the chosen skills, in combination with other active filters. If no skills are selected, the wallboard presents data without applying a skills-based filter, maintaining existing behavior. Learn more.
+A new Skills filter is now available in the wallboards. Positioned immediately after the Queues filter, this multi-select field allows supervisors to select one or more skills to refine the data shown. When skills are selected, the wallboard displays conversations associated with the chosen skills, in combination with other active filters. If no skills are selected, the wallboard presents data without applying a skills-based filter, maintaining existing behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/wallboards/configure-wallboards.md#create-a-wallboard)
 
 ### Campaigns
 
