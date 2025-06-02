@@ -11,7 +11,7 @@ The following XO GPT Live Models are available for various supported features.
 | Conversation Summarization Model | Conversation Summarization | [Version 2.0](../generative-ai-tools/xogpt-conversation-summarization-model.md#version-20)   | Mistral 7B Instruct v0.2 | English, French, Spanish, German, Japanese, Turkish |  US <br><br>   DE   <br><br> JP  | 19th Dec 2024 <br> 20th Dec 2024 <br> 20th Dec 2024 ||                             
 | Response Rephrasing Model     | Rephrase Dialog Responses    | [Version 1.0](../generative-ai-tools/xogpt-response-rephrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  |  US <br><br>   DE             | 1st Jun 2024 <br>   3rd Sep 2024    |
 | User Query Paraphrasing Model | Rephrase User Query          | [Version 1.0](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md#version-10)   | Mistral 7B Instruct v0.2 | English                                  |  US <br><br>   DE              | 1st Jun 2024 <br>   3rd Sep 2024     |
-
+|DialogGPT Model |DialogGPT - Conversation Orchestration| [Version 1.1](xogpt-dialoggpt-model.md) |Llama-3.1-8B-Instruct|English, French, Spanish, German| US <br><br> DE | 26th May, 2025 <br> 26th May, 2025|
 
 ## XO GPT - Model Building Process
 
@@ -85,6 +85,7 @@ This section highlights the features, updates, and changes that vary between dif
 
 * To view the Answer Generation Model benchmarking details, click [here](../generative-ai-tools/xogpt-answer-generation-model.md).
 * To view the Conversation Summary Model benchmarking details, click [here](../generative-ai-tools/xogpt-conversation-summarization-model.md).
+* To view the DialogGPT Model benchmarking details, click [here](xogpt-dialoggpt-model.md).
 * To view the Response Rephrasing Model benchmarking details, click [here](../generative-ai-tools/xogpt-response-rephrasing-model.md).
 * To view the User Query Paraphrasing Model benchmarking details, click [here](../generative-ai-tools/xogpt-user-query-paraphrasing-model.md).
 

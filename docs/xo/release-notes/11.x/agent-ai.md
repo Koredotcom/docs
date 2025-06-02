@@ -2,6 +2,48 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.14.0 May 31, 2025
+
+### Widget Enhancements
+
+#### Agentic Copilot in the Agent AI Widget
+
+The Agentic Copilot feature lets you configure an Agentic app that autonomously manages end-to-end customer interactions. At runtime, agents can edit or override the app’s suggestions and enter their own content.
+
+#### Configuration of Agentic Apps
+
+The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, enabling multiple Agentic apps simultaneously.
+
+The **Agent AI Settings** > **Agent AI Channel Specific Settings** section now includes the Agentic Copilot settings. You can enable or disable Agentic Copilot, select an Agentic App, select or clear the **Allow auto send Message** button, and set a delay timer (up to 10 seconds) for auto send messages.
+
+#### Improved Visual Cue for Dialog Selection During Runtime
+
+Hovering over a dialog in the dialog library (Search, Assist, and custom tabs) highlights the entire row, indicating the corresponding “Run” button for the dialog task.
+
+#### Transcript Visibility restricted to Call Joining Time
+
+For voice conversations, transcript view is now restricted to the time an agent joins a call. Agents can’t access the transcripts of prior conversations.
+
+### SDK Enhancements
+
+#### Improved Transcript Handling in SDK
+
+The SDK now includes the **isFromSocket**,**timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
+
+### API Enhancement
+
+#### Raw Data API tracks After-Call-Work
+
+The Raw Data API now continues to collect data even after the End of Conversation event is received. This helps track the agent’s After-Call-Work in offline Agent AI mode.
+
+### Integration Enhancement
+
+#### Integration with Amazon Connect supports Agent AI v3 and XO11
+
+The Agent AI integration with Amazon Connect supports Agent AI v3 and XO11.
+
+<hr>
+
 ## v11.13.1 May 17, 2025
 
 <u>Patch Release </u>

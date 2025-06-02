@@ -2,6 +2,77 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.14.0 May 31, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Migration
+
+#### Migration of Universal Bots from XO10 Bot to XO11 Automation Apps
+
+XO10 Universal Bots act as orchestrators that route user inputs to linked Standard Bots for intent handling. In XO11, this orchestration is supported within a Standard App via **DialogGPT**, eliminating the need for a separate Universal Bot construct.
+
+This release introduces a guided migration path to help users seamlessly transition XO10 Universal Bots into the XO11 framework.
+
+
+### Channels
+
+
+#### Repeat Bot Response Event now supports SmartAssist Gateway Channel
+
+The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice.
+
+
+### APIs
+
+
+#### Support for Proactive Notifications for Webhook Channel via Public API
+
+Proactive notifications allow businesses to initiate outbound messages to users based on specific conditions or events. While this feature is already supported for channels like MS Teams and Slack, its capabilities for the Webhook channel have been limited to single-user notifications via endpoint-based configurations.
+
+This release introduces multi-user support for the Webhook channel via a secure public API, enabling businesses to trigger scalable outbound communication from any external system.
+
+**Key Features**
+
+* The new Public API enables sending proactive messages to multiple users in a single call.
+* API access is protected with JWT-based authentication.
+* Ensures system stability through per-client rate limits.
+
+**Key Benefits**
+
+* Send messages to multiple recipients in one API call.
+* Integrate outbound notifications from any system with webhook configuration.
+* Granular logging improves tracking and debugging of each notification.
+[Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
+
+#### Debug Logs API now supports additional SMS Channels
+
+The AI for Service Debug Logs API has expanded SMS channel support to include SMS, Twilio SMS, and Genesys Cloud CX Messaging channels, in addition to the existing WebSDK, IVR, IVR AudioCodes, and Voice Gateway.
+
+
+### Voice Call Properties
+
+
+#### Support for Language-specific Voice Call Properties
+
+The platform now supports language-specific configuration of voice call properties, including prompts and grammar, across IVR-supported components, enabling seamless multilingual IVR bot experiences.
+
+**Key Changes**
+
+* Platform users can now define unique voice call properties as per the enabled language.
+* When a new language is added to a bot, existing voice properties from the selected base language are auto-copied to the new language.
+* When adding new components, voice property fields will remain **empty by default** across all languages, allowing independent language-specific configuration.
+
+### Role Management
+
+#### Enhanced Permissions for the Billing Module
+
+The Platform has strengthened security by restricting the Billing Module to App Owners and users with custom roles. This ensures sensitive functions are protected while maintaining a streamlined experience for other user roles. [Learn more:octicons-arrow-right-24:](../../user-management/role-management.md)
+
+
+<hr>
 
 ## v11.13.1 May 17, 2025
 

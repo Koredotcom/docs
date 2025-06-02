@@ -2,7 +2,6 @@
 
 To fetch the conversation details and conversation summary between the bot and the user or the user and the agent. This API supports pagination. You can specify skip and limit parameters to retrieve a certain number of messages at a time.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -36,10 +35,7 @@ To fetch the conversation details and conversation summary between the bot and t
   </tr>
 </table>
 
-
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -68,10 +64,7 @@ To fetch the conversation details and conversation summary between the bot and t
   </tr>
 </table>
 
-
-
 ## Sample Request
-
 
 ```json
 curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exxx8d-7021-5f2b-bf6c-8a1xxxxxb0/conversationDetails' \
@@ -83,10 +76,7 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
 }'
 ```
 
-
-
 ## Request Body Parameters
-
 
 <table>
   <tr>
@@ -118,8 +108,7 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-86exx
    </td>
    <td>Required
    </td>
-   <td>A unique “sessionId” or “callId” of the bot for which you want to fetch the details.
-    Use “sessionId” or “callId” to get the conversation details between the user and the bot.
+   <td>Use a unique 'sessionId' or 'callId' to fetch the conversation details between the user and the bot. The 'callId' refers to the external call identifier provided by third-party agent desktops integrated with our platform, and it is different from the internal system-generated call IDs.
 
    </td>
   </tr>
