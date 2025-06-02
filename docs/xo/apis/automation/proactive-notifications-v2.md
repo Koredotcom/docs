@@ -1,4 +1,4 @@
-Proactive Notifications API v2
+# Proactive Notifications API v2
 
 The Proactive Notifications API V2 enables sending various types of messages to users via `IVR` and `Hangout` channels. 
 
@@ -127,7 +127,6 @@ Sends a non-personalized message to multiple users.
 ]
 ```
 
-
 **Custom Message**
 
 Sends a personalized message if `customMessage` is specified; otherwise, uses the main message.
@@ -189,7 +188,6 @@ Personalizes the message using dynamic parameters.
 
 **hangoutchat**:
 
-
 ```
 "identities": [
   { "spaceId": "AAQAPWibMjE", "parameters": { "name": "Charlie", "refId": "XYZ-789" } },
@@ -201,7 +199,6 @@ Personalizes the message using dynamic parameters.
 **Template-Based Message**
 
 Uses templates with optional parameter substitution.
-
 
 ```
 {
@@ -219,11 +216,9 @@ Uses templates with optional parameter substitution.
 }
 ```
 
-
 **Channel-Specific Adjustments:**
 
 **hangoutchat**:
-
 
 ```
 "identities": [
@@ -232,10 +227,7 @@ Uses templates with optional parameter substitution.
 ]
 ```
 
-
-
-## **Body Parameters**
-
+## Body Parameters
 
 <table>
   <tr>
@@ -320,9 +312,7 @@ Uses templates with optional parameter substitution.
   </tr>
 </table>
 
-
 **Identities Array**
-
 
 <table>
   <tr>
@@ -358,10 +348,7 @@ Uses templates with optional parameter substitution.
   </tr>
 </table>
 
-
-
-## **Sample Response**
-
+## Sample Response
 
 ```
 {
@@ -382,3 +369,4 @@ Uses templates with optional parameter substitution.
    "requestedTime": "2025-05-22T05:37:56.693Z",
    "__v": 0
 }
+```
