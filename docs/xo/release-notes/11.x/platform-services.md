@@ -10,7 +10,6 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 ### Migration
 
-
 #### Migration of Universal Bots from XO10 Bot to XO11 Automation Apps
 
 XO10 Universal Bots act as orchestrators that route user inputs to linked Standard Bots for intent handling. In XO11, this orchestration is supported within a Standard App via **DialogGPT**, eliminating the need for a separate Universal Bot construct.
@@ -35,18 +34,18 @@ Proactive notifications allow businesses to initiate outbound messages to users 
 
 This release introduces multi-user support for the Webhook channel via a secure public API, enabling businesses to trigger scalable outbound communication from any external system.
 
-Key Features:
+**Key Features**
 
 * The new Public API enables sending proactive messages to multiple users in a single call.
 * API access is protected with JWT-based authentication.
 * Ensures system stability through per-client rate limits.
 
-Key Benefits:
+**Key Benefits**
 
 * Send messages to multiple recipients in one API call.
 * Integrate outbound notifications from any system with webhook configuration.
 * Granular logging improves tracking and debugging of each notification.
-
+[Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
 #### Debug Logs API now supports additional SMS Channels
 
@@ -60,7 +59,7 @@ The AI for Service Debug Logs API has expanded SMS channel support to include SM
 
 The platform now supports language-specific configuration of voice call properties, including prompts and grammar, across IVR-supported components, enabling seamless multilingual IVR bot experiences.
 
-Key Changes:
+**Key Changes**
 
 * Platform users can now define unique voice call properties as per the enabled language.
 * When a new language is added to a bot, existing voice properties from the selected base language are auto-copied to the new language.
