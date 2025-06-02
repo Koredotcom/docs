@@ -16,7 +16,7 @@ Agents can quickly redact or mask sensitive data, minimizing the risk of storing
 
 #### Supervisor Support Request
 
-Agents can now directly request supervisor support from their console during a conversation, providing context and clarity. These requests can be sent to specific supervisors or groups (all or skill-based). Only logged-in and available supervisors will be notified and see the support message in their internal chat. Permissions govern agents' ability to send requests and supervisors' ability to receive notifications, enabling adaptable support management.
+Agents can now directly request supervisor support from their console during a conversation, providing context and clarity. These requests can be sent to specific supervisors or groups (all or skill-based). Only logged-in and available supervisors will be notified and see the support message in their internal chat. Permissions govern agents' ability to send requests and supervisors' ability to receive notifications, enabling adaptable support management. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#request-supervisor-support)
 
 #### Disable ‘Assign’ Button for Supervisors During Call Connection Stage
 
@@ -46,7 +46,7 @@ The alert system now supports general system events, including exporting the Int
 
 #### Display Industry Standard MOS and Jitter Values in Diagnostics Page
 
-The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards.
+The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
 
 #### Default FLAC Format for Downloaded Call Recordings Across All OS Platforms
 
@@ -54,7 +54,7 @@ Voice call recordings downloaded from the Interactions page will now be in the .
 
 #### Interactions Dashboard: Customer Column Data Replaced with User ID
 
-A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment.
+A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md)
 
 #### Skills Filter Added to Wallboards
 
