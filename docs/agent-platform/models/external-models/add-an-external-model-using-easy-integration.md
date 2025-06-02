@@ -42,24 +42,6 @@ The model is integrated and is listed in the External models list.
 
 
 
-## Integrate a Model via Amazon Bedrock using Easy Integration
-
-Steps to add a model via Amazon Bedrock using easy integration:
-
-1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
-2. Click the **External models** tab on the **Models** page.
-
-    <img src="../images/navigating-to-external-models.png" alt="Navigating to External Models" title="Navigating to External Models" style="border: 1px solid gray; zoom:80%;">
-
-3. Click **Add a model** under the **External models** tab. The **Add an external model** dialog is displayed.
-
-    <img src="../images/add-external-model-easy-integration.png" alt="Add External Model Easy Integration" title="Add External Model Easy Integration" style="border: 1px solid gray; zoom:60%;">
-
-4. Select the **Easy integration** option to integrate models from Amazon Bedrock and click **Next**.
-
-5. 
-
-
 
 
 
