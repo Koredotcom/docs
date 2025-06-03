@@ -83,7 +83,7 @@ Extend your current apps:
     * Choose the target app from the list
     * Click Proceed > **Import**
 
-    <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:50%;">
+    <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:30%;">
 
 ## Testing and Deployment
 
