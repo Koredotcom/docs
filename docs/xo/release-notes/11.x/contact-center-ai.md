@@ -74,7 +74,7 @@ List views for Campaigns, Contacts, DNC lists, and Templates now support paginat
 
 #### Voice Automation NiceCX (CX One) – SIP Integration with XO v11
 
-The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11.
+The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
 
 <hr>
 
