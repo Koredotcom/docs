@@ -1,9 +1,10 @@
 # Voice Call Properties
 
-You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/IVR-integration.md), [Twilio](../../../../channels/add-twilio-voice-channel.md), [IVR-AudioCodes](../../../../channels/ivr-audio-codes.md), [kore.ai Voice Gateway](../../../../channels/voice-gateway/configure-voice-gateway.md) etc and publish the VA on those channels.
+You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/IVR-integration.md), [Twilio](../../../../channels/add-twilio-voice-channel.md), [IVR-AudioCodes](../../../../channels/ivr-audio-codes.md), [kore.ai Voice Gateway](../../../../channels/voice-gateway/configure-voice-gateway.md), etc and publish the VA on those channels.
+
+Any component with voice call capabilities supports language-specific values for prompts and grammar. Users can define voice call properties using the enabled language. When a new language is added to a bot, existing voice properties from the selected base language are auto-copied to the new language.
 
 There are some Voice Properties you can configure to streamline the user experience across the above-mentioned channels. These configurations can be done at multiple levels:
-
 
 * VA level – at the time of channel enablement;
 * Component level – once you enable the voice properties at the VA level, then you can define the behavior for various components like:

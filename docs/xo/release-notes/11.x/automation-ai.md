@@ -12,13 +12,11 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 ### DialogGPT
 
-
 #### Comprehensive Batch Testing Framework for DialogGPT-based Apps
 
 The comprehensive testing framework provides a systematic approach to test and enhance orchestration accuracy across all conversation types. It offers flexible test creation methods (manual, bulk upload, history, real-time) and assesses utterances across the retrieval and LLM pipeline. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
 
 Key features
-
 
 * End-to-End Pipeline Testing: Processes each utterance through the full retrieval and LLM workflow, mirroring real-world behavior to uncover issues static testing might miss.
 * Model Configuration Flexibility: Supports testing across different combinations of embedding models and LLMs to identify the most effective configuration for your app.
@@ -31,17 +29,13 @@ Key features
 
 Automation app linking is now centralized for easier access under **Flow & Channels > Manage Automation**. This unified interface offers quick access to **Chat** and **Voice** flows, displaying key routing details such as Flow Name, Automation Node, Routing Mode, and Channel. The integrated search bar enables easy filtering of results and efficient management of routing configurations.
 
-
 ### LLM & Generative AI
-
 
 #### Enhanced Response Rephrasing for All Message Types
 
 The Response Rephrasing feature has been significantly expanded and enhanced to deliver more natural, consistent virtual assistant interactions across all response formats. This expansion now supports both structured content and traditional message types, while introducing new configuration options for granular tone control.
 
 Key improvements
-
-
 
 * Enhanced Content Support: Processes Standard Responses, Events, FAQs, and structured formats (JSON/JavaScript). Maintains original functionality with improved linguistic quality using the new Default-V2 prompt framework.
 * Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language.
@@ -66,7 +60,6 @@ To improve the accuracy of containment metrics in Analytics, users can now manag
 This Setting overrides the dialog-level settings for containment type. The default option would be the dialog-level settings. [Learn more:octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#instance-properties)
 
 <hr>
-
 
 ## v11.13.1 May 17, 2025
 

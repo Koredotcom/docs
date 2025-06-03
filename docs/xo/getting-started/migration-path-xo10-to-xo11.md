@@ -49,7 +49,7 @@ The migration process for a **Universal Bot** follows the same steps as a standa
 **Configure DialogGPT**
 
  An embedding model, BGEM3, is selected by default.  
- <img src="../images/univeral-bot-migration.png" alt="univeral-bot-migration" title="univeral-bot-migration"style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/univeral-bot-migration.png" alt="univeral-bot-migration" title="univeral-bot-migration"style="border: 1px solid gray; zoom:50%;">
 
 When the user initiates migration, the key components being migrated are:
 

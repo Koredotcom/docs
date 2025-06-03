@@ -62,6 +62,8 @@ The platform now supports language-specific configuration of voice call properti
 * Platform users can now define unique voice call properties as per the enabled language.
 * When a new language is added to a bot, existing voice properties from the selected base language are auto-copied to the new language.
 * When adding new components, voice property fields will remain **empty by default** across all languages, allowing independent language-specific configuration.
+[Learn more:octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md)
+
 
 ### Role Management
 
