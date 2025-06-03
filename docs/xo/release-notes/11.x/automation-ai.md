@@ -52,7 +52,7 @@ Key improvements
 The platform now supports Genesys WebMessaging integration for agent transfer, in addition to the existing WebChat option. While existing users can still use WebChat with their current settings, WebMessaging will be the default for new integrations. As Genesys is retiring WebChat on June 10, 2025, transitioning to WebMessaging is highly recommended for ongoing support and access to the latest features.  
 [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md)
 
-### Dialog Builder
+### Analytics
 
 
 #### Node-level Control to Classify Conversations as Self-serve / Drop-off

@@ -34,21 +34,15 @@ To prevent execution issues where flows unexpectedly return to the welcome messa
 
 #### Support for Proactive Notifications for Webhook Channel via Public API
 
-Proactive notifications allow businesses to initiate outbound messages to users based on specific conditions or events. While this feature is already supported for channels like MS Teams and Slack, its capabilities for the Webhook channel have been limited to single-user notifications via endpoint-based configurations.
+The Proactive Notifications feature for Webhook Channel has been enhanced to support multi-user messaging using a public API, enabling businesses to send outbound messages to multiple recipients simultaneously.
 
-This release introduces multi-user support for the Webhook channel via a secure public API, enabling businesses to trigger scalable outbound communication from any external system.
+Key features
 
-**Key Features**
+* Multi-user messaging in a single API call.
+* JWT-based authentication for secure access.
+* Per-client rate limiting for system stability.
+* Granular logging for improved tracking and debugging.
 
-* The new Public API enables sending proactive messages to multiple users in a single call.
-* API access is protected with JWT-based authentication.
-* Ensures system stability through per-client rate limits.
-
-**Key Benefits**
-
-* Send messages to multiple recipients in one API call.
-* Integrate outbound notifications from any system with webhook configuration.
-* Granular logging improves tracking and debugging of each notification.
 [Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
 #### Debug Logs API now supports additional SMS Channels
