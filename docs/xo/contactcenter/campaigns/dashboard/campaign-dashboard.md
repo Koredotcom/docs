@@ -3,7 +3,7 @@
 The campaign dashboard allows campaign managers to track the progress and other essential metrics related to campaigns.
 
 To access dashboards, go to **Contact Center AI** > **Campaigns** > **Dashboard**.
-<img src="../images/dashboard-main-page.png" alt="Dashboard Page" title="Dashboard Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/dashboard-pagination.png" alt="Dashboard Page" title="Dashboard Page" style="border: 1px solid gray; zoom:80%;">
 
 The following details related to campaigns are displayed on the dashboard:
 
@@ -11,7 +11,7 @@ The following details related to campaigns are displayed on the dashboard:
 2. **Campaign type** - Agentless (Voice campaigns only)
 3. **Progress** - Progress of the campaign. For example: 3 of 10.
 4. **Status** - Ready, Active, Paused, Rerun, or Completed.
-5. **Campaign Start Date and Time** - Date and Time when the campaign started. For example: Started on Sep 29<sup>th</sup>, 2023 11:03 am
+5. **Campaign Start Date and Time** - Date and Time when the campaign started. For example: Started on Sep 29, 2023 11:03 am
 
 Clicking any campaign displays detailed information related to the selected campaign.
 

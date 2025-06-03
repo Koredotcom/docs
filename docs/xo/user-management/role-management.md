@@ -455,6 +455,22 @@ Access to the monitor tab for live interactions
    </td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -1103,6 +1119,22 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -1707,6 +1739,22 @@ Publish custom layouts for account-wide use
 Access to the monitor tab for live interactions
    </td>
    <td>Yes</td>
+</tr>
+<tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
    <td><strong>Reports</strong>
@@ -2325,6 +2373,22 @@ Publish custom layouts for account-wide use
 Access to the monitor tab for live interactions
    </td>
    <td>Yes</td>
+</tr>
+<tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
 </tr>
 <tr>
    <td><strong>Reports</strong>
@@ -2947,6 +3011,22 @@ Publish custom layouts for account-wide use
 Access to the monitor tab for live interactions
    </td>
    <td>No</td>
+</tr>
+<tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>No
+   </td>
 </tr>
 <tr>
    <td><strong>Reports</strong>
@@ -3721,6 +3801,24 @@ No</td>
    <td><strong>Monitor Console</strong>
    <br>
 Access to the monitor tab for live interactions
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
    </td>
    <td>Yes
    <br>

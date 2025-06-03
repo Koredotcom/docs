@@ -16,7 +16,7 @@ Agents can quickly redact or mask sensitive data, minimizing the risk of storing
 
 #### Supervisor Support Request
 
-Agents can now directly request supervisor support from their console during a conversation, providing context and clarity. These requests can be sent to specific supervisors or groups (all or skill-based). Only logged-in and available supervisors will be notified and see the support message in their internal chat. Permissions govern agents' ability to send requests and supervisors' ability to receive notifications, enabling adaptable support management.
+Agents can now directly request supervisor support from their console during a conversation, providing context and clarity. These requests can be sent to specific supervisors or groups (all or skill-based). Only logged-in and available supervisors will be notified and see the support message in their internal chat. Permissions govern agents' ability to send requests and supervisors' ability to receive notifications, enabling adaptable support management. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#request-supervisor-support)
 
 #### Disable ‘Assign’ Button for Supervisors During Call Connection Stage
 
@@ -36,39 +36,39 @@ Internal chat translation between supervisors and agents is now available to sup
 
 #### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration
 
-To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly.
+To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly. [Learn more :octicons-arrow-right-24:](../../flows/node-types/agent-transfer.md#general-settings)
 
 ### Analytics
 
 #### Expanded Alert Configuration: From Service Levels to General System Events
 
-The alert system now supports general system events, including exporting the Interaction Details Report, dashboard data, or segment-based reports. This update expands the service level configuration into a flexible alerting framework that covers operational metrics and system events. Admins and supervisors can monitor user activities to ensure compliance, while contact center operations teams gain improved visibility and quicker response to critical or unusual events.
+The alert system now supports general system events, including exporting the Interaction Details Report, dashboard data, or segment-based reports. This update expands the service level configuration into a flexible alerting framework that covers operational metrics and system events. Admins and supervisors can monitor user activities to ensure compliance, while contact center operations teams gain improved visibility and quicker response to critical or unusual events. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md#general-alerts)
 
 #### Display Industry Standard MOS and Jitter Values in Diagnostics Page
 
-The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards.
+The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
 
 #### Default FLAC Format for Downloaded Call Recordings Across All OS Platforms
 
-Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools.
+Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
 #### Interactions Dashboard: Customer Column Data Replaced with User ID
 
-A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment.
+A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md)
 
 #### Skills Filter Added to Wallboards
 
-A new Skills filter is now available in the wallboards. Positioned immediately after the Queues filter, this multi-select field allows supervisors to select one or more skills to refine the data shown. When skills are selected, the wallboard displays conversations associated with the chosen skills, in combination with other active filters. If no skills are selected, the wallboard presents data without applying a skills-based filter, maintaining existing behavior. Learn more.
+A new Skills filter is now available in the wallboards. Positioned immediately after the Queues filter, this multi-select field allows supervisors to select one or more skills to refine the data shown. When skills are selected, the wallboard displays conversations associated with the chosen skills, in combination with other active filters. If no skills are selected, the wallboard presents data without applying a skills-based filter, maintaining existing behavior. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/wallboards/configure-wallboards.md#create-a-wallboard)
 
 ### Campaigns
 
 #### Validation Checks for Campaign-Linked Phone Numbers in SMS and Voice Channels
 
-Improved validation prevents deletion of phone numbers or flows linked to active, paused, scheduled, or existing SMS and Voice campaigns. Users see warnings showing the count of linked campaigns and flows. Deletion of phone numbers or queues used by campaigns is restricted, with error messages guiding users to remove links first. SMS channels now support both Simple and Advanced messaging in Inbound-Outbound mode. Additionally, deleting voice flows or queues tied to campaigns is blocked, ensuring campaigns cannot run without the required phone numbers or queues.
+Improved validation prevents deletion of phone numbers or flows linked to active, paused, scheduled, or existing SMS and Voice campaigns. Users see warnings showing the count of linked campaigns and flows. Deletion of phone numbers or queues used by campaigns is restricted, with error messages guiding users to remove links first. SMS channels now support both Simple and Advanced messaging in Inbound-Outbound mode. Additionally, deleting voice flows or queues tied to campaigns is blocked, ensuring campaigns cannot run without the required phone numbers or queues. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md#configure-sms-channel)
 
 #### Pagination and Sorting in Campaigns, Contacts, DNC Lists, and Templates
 
-List views for Campaigns, Contacts, DNC lists, and Templates now support pagination and sorting, improving navigation and data management. Campaign Managers see the total number of items, the current range displayed on each page (for example, 1–50 of 250), and can easily navigate using next, previous, or direct page number selection. The interface allows filtering and sorting by Last Updated date to quickly access recent changes, while campaigns support sorting by priority to focus on high- or low-priority items. Each page displays up to 50 items for easier browsing. After applying filters or making updates, users remain on the current page to maintain context. These enhancements streamline the management of large data sets across the platform.
+List views for Campaigns, Contacts, DNC lists, and Templates now support pagination and sorting, improving navigation and data management. Campaign Managers see the total number of items, the current range displayed on each page (for example, 1–50 of 250), and can easily navigate using next, previous, or direct page number selection. The interface allows filtering and sorting by Last Updated date to quickly access recent changes, while campaigns support sorting by priority to focus on high- or low-priority items. Each page displays up to 50 items for easier browsing. After applying filters or making updates, users remain on the current page to maintain context. These enhancements streamline the management of large data sets across the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#voice-campaigns)
 
 ### Integration
 

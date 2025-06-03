@@ -50,7 +50,36 @@ Steps for SMS Channel Configuration:
 
             !!! Note
 
-                You should add at least one phone number to save the configurations. There should not be any duplicate numbers. The configuration would differ based on the selection.
+                * You should add at least one phone number to save the configurations. There should not be any duplicate numbers. The configuration would differ based on the selection.
+                * You cannot delete a phone number that is linked to one or more active campaigns and flows. To delete a phone number, first unlink it from the flows and ensure the campaign is no longer active.
 
 6. Click **Save**. The SMS channel is configured.  
 <img src="../images/sms-channel-configured.png" alt="SMS Channel Configured" title="SMS Channel Configured" style="border: 1px solid gray; zoom:80%;">
+
+## Disable or Delete Configured SMS Channel
+
+### Disable the Configured SMS Channel
+
+Steps to disable the SMS Channel:
+
+1. Click the Ellipsis (**⋮**) and then click **Disable**.  
+    <img src="../images/ellipsis.png" alt="Disable SMS Channel" title="Disable SMS Channel" style="border: 1px solid gray; zoom:70%;">
+
+2. A notification is displayed, and the SMS channel is disabled on confirmation.
+
+    !!! Note
+
+        The SMS channel cannot be disabled if there are active SMS campaigns or flows attached to the channel.
+
+### Delete the Configured SMS Channel
+
+Steps to delete the configured SMS Channel:
+
+1. Click the Ellipsis (**⋮**) and then click **Delete**.  
+    <img src="../images/ellipsis.png" alt="Disable SMS Channel" title="Disable SMS Channel" style="border: 1px solid gray; zoom:70%;">
+
+2. A notification is displayed, and the SMS channel is deleted on confirmation.
+
+    !!!Note
+
+        The SMS channel cannot be deleted if there are active SMS campaigns or flows attached to the channel.

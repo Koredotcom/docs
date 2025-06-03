@@ -13,6 +13,10 @@ To view the Interactions dashboard, follow the steps:
      * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
     * LANGUAGE (Icon): The language of the conversation.
     * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
+
+    If the Replace Customer column data with User ID functionality is enabled, the Customer column displays the User ID. [Learn more](../../contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md).  
+    <img src="../images/user-id-column.png" alt="User ID Column" title="User ID Column" style="border: 1px solid gray; zoom:80%;">  
+
 * ACTIONS: You can download recordings and transcripts, and copy the following Identifiers:
     * User ID
     * Session ID
@@ -354,6 +358,9 @@ The following recording settings can be configured:
     * **Download as separate files**: If you choose this option, you can select the files and download them.  
 
         <img src="../images/download-as-separate-files.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+
+    The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
+    <img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
 * Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
@@ -711,7 +718,7 @@ The bottom bar chart visualizes call metrics over time. The x-axis shows timesta
 ### Agents
 
 The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of interactions and assists with troubleshooting issues. The following data points are shown on this tab:  
-<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/mos-jitter.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
 
 <table>
   <tr>
@@ -765,13 +772,13 @@ The Agents tab provides comprehensive call information for agents and supervisor
   <tr>
    <td>MOS (min, max, average)
    </td>
-   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call.
+   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call. Hovering over the tooltip displays the industry standard value.
    </td>
   </tr>
   <tr>
    <td>Jitter (min, max, average)
    </td>
-   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing.
+   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing. Hovering over the tooltip displays the industry standard value.
    </td>
   </tr>
   <tr>

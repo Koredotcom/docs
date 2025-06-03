@@ -958,6 +958,27 @@ Do the following to enable the typing indicator for chat conversations:
 
     Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
 
+## Request Supervisor Support
+
+Agents can send requests to the appropriate supervisors for assistance. The supervisor receives a notification and can take necessary actions to resolve the issue. Administrators can configure this functionality from [Permissions](../user-management/role-management.md#permissions)
+
+Steps to request supervisor assistance:
+
+1. Click the ellipsis (**⋮**) at the top right corner of the Live Interaction pane, and click **Request Supervisor Support**.  
+    <img src="../images/ellipsis-button.png" alt="Request Supervisor Support" title="Request Supervisor Support" style="border: 1px solid gray; zoom:70%;"> 
+
+2. The agent can request support from a specific supervisor or multiple supervisors. The supervisor list displays either all supervisors or only those assigned to the relevant skill.  
+    <img src="../images/supervisor-select.png" alt="Select Supervisor" title="Select Supervisor" style="border: 1px solid gray; zoom:70%;">
+
+3. A notification is displayed, and the request is sent to supervisors who are logged in to the platform and have their status set to Available.  
+    <img src="../images/success-message.png" alt="Success Message" title="Success Message" style="border: 1px solid gray; zoom:70%;">
+
+4. A notification is displayed to the supervisor. Supervisors can manage the notifications [Learn more](../console/manage-layout.md#notifications).  
+    <img src="../images/agents-page.png" alt="Supervisor Notification" title="Supervisor Notification" style="border: 1px solid gray; zoom:70%;">
+
+5. The Internal Chat window appears after accepting the agent’s request. The supervisor can support the agent on the internal chat.  
+    <img src="../images/supervisor-internal-chat.png" alt="Supervisor Internal Chat" title="Supervisor Internal Chat" style="border: 1px solid gray; zoom:70%;">
+
 ## Real Time Sentiment Capture
 
 Agents can view customers' real-time sentiments during digital conversations on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md).  

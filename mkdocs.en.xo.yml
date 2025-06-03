@@ -430,7 +430,10 @@ nav:
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
-    - Flows and Routing:
+        - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
+        - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
+    - Performance Management:
+      - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts/manage-slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
