@@ -187,7 +187,7 @@ Permissions to files and pages in SharePoint include **site-level permissions** 
 
 ### Site-level Permissions
 
-There are **two membership groups** in SharePoint: **Office 365** ** groups and **SharePoint Security groups**. These groups grant different access to your site. Users using both groups receive access permissions.
+There are **two membership groups** in SharePoint: **Office 365** groups and **SharePoint Security groups**. These groups grant different access to your site. Users using both groups receive access permissions.
 
 You can view the **Office 365 Group Membership** for a site here. 
 
@@ -213,9 +213,9 @@ Every site has three default SharePoint permission levels, which differ in the a
 
 ### Handling of Site Permissions in SearchAI
 
-Corresponding to the **Office 365 Group Membership group, a permission entity** is created in the SearchAI application. **All the users added to this group are automatically added to this permission entity in SearchAI. However, if there are email groups added here, the members of the group should be added to the permission entity manually using the Permission Entity APIs.**
+Corresponding to the **Office 365 Group Membership group, a permission entity** is created in the SearchAI application. **All the users added to this group are automatically added to this permission entity in SearchAI. However, if there are email groups added here, the members of the group should be added to the permission entity manually using the [Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md).**
 
-Similarly, corresponding to the **SharePoint Security Groups, three permission entities** are created in the SearchAI application. The users in these groups should be manually added to the corresponding permission entities using the Permission Entity APIs.  
+Similarly, corresponding to the **SharePoint Security Groups, three permission entities** are created in the SearchAI application. The users in these groups should be manually added to the corresponding permission entities using the [Permission Entity API](../../../apis/searchai/permission-entity-apis.md).  
 
 Therefore, in the sourceACL field, you will see four permission entities corresponding to the site permissions. 
 
@@ -235,4 +235,8 @@ The owner can also share a file with all the domain or organization members.
 
 * When a file is shared with a specific user, the user is automatically added to the sourceACL field of the corresponding files during ingestion. 
 * When a file is shared with a user group, the groupId is used to create a permission entity that can be used to resolve individual users. 
-* When a file is shared with a specific domain, the domain name is stored as a permission entity in the sourceACL field. SearchAI automatically compares the user email IDs with the domain name during answer generation. If there is a match, access to the files is granted.  
+* When a file is shared with a specific domain, the domain name is stored as a permission entity in the sourceACL field. SearchAI automatically compares the user email IDs with the domain name during answer generation. If there is a match, access to the files is granted. 
+
+### Related Pages
+* [Learn About Access Control in Search AI](../racl-support.md)
+* [Associate users with permission Entities using Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md).
