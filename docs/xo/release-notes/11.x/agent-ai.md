@@ -38,9 +38,9 @@ The Raw Data API now continues to collect data even after the End of Conversatio
 
 ### Integration Enhancement
 
-#### Integration with Amazon Connect supports Agent AI v3 and AI for Service (XO) v11.
+#### Amazon Connect Integration supports Agent AI v3 and AI for Service
 
-The Agent AI integration with Amazon Connect supports Agent AI v3 and AI for Service.
+The Agent AI integration with Amazon Connect supports Agent AI v3 and AI for Service (XO) v11.
 
 <hr>
 
