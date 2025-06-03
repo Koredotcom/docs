@@ -28,7 +28,7 @@ For voice conversations, transcript view is now restricted to the time an agent 
 
 #### Improved Transcript Handling in SDK
 
-The SDK now includes the **isFromSocket**,**timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
+The SDK now includes the **isFromSocket**, **timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
 
 ### API Enhancement
 
