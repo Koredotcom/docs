@@ -31,7 +31,7 @@ This API is used to capture user feedback and store it within Search AI, where i
   <tr>
    <td>API Scope
    </td>
-   <td>Answer Insights
+   <td>Feedback for Search AI
    </td>
   </tr>
 </table>

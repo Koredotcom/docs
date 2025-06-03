@@ -121,7 +121,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    </td>
   </tr>
   <tr>
-   <td>metaFilter
+   <td>metaFilters
    </td>
    <td>No
    </td>
