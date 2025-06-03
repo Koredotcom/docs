@@ -47,7 +47,7 @@ Extend your current apps:
         * Included agents and tools
         * Developer information and supported languages
     
-       <img src="../images/app-information-window.png" alt="App Information Window" title="App Information Window" style="border: 1px solid gray; zoom:80%;">
+       <img src="../images/app-information-window.png" alt="App Information Window" title="App Information Window" style="border: 1px solid gray; zoom:60%;">
 
 3. **Install the App**
     * Click **Install App**
@@ -76,7 +76,7 @@ Extend your current apps:
         * Model compatibility
         * Language support
 
-       <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:80%;">
+       <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:60%;">
 
 3. **Import to Your App**
     * Click **Select Tools > Install**
