@@ -36,18 +36,16 @@ The Response Rephrasing feature has been significantly expanded and enhanced to 
 Key improvements
 
 * Enhanced Content Support: Processes Standard Responses, Events, FAQs, and JSON/JavaScript templates. It retains the core rephrasing capability with the new Default-V2 prompt framework.
-* Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language.* 
+* Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language. 
 
 [Learn more:octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#rephrase-responses)
 
 
 ### Agent Transfer
 
-
 #### Genesys WebMessaging Integration for Agent Transfer
 
-The platform now supports Genesys WebMessaging integration for agent transfer, in addition to the existing WebChat option. While existing users can still use WebChat with their current settings, WebMessaging will be the default for new integrations. As Genesys is retiring WebChat on June 10, 2025, transitioning to WebMessaging is highly recommended for ongoing support and access to the latest features.  
-[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md)
+The platform now supports Genesys WebMessaging integration for agent transfer, in addition to the existing WebChat option. While existing users can still use WebChat with their current settings, WebMessaging will be the default for new integrations. As Genesys is retiring WebChat on June 10, 2025, transitioning to WebMessaging is highly recommended for ongoing support and access to the latest features. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md)
 
 ### Analytics
 
