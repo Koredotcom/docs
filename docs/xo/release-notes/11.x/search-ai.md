@@ -22,7 +22,7 @@ Key enhancements
 * Optimized JavaScript Crawling & Memory Management with reduced resource usage. 
 * Enhanced Sitemap Processing with asynchronous sitemap fetching and application of crawl depth limits and URL filters at the fetch stage for faster processing.
 * Default Exclude Tags like header, footer, script, style, form, iframe, noscript, etc., to improve content relevance.
-*Improved Error Handling in case of crawl failures and timeouts. 
+* Improved Error Handling in case of crawl failures and timeouts. 
 
 Existing applications will continue to use the current crawler. 
 
