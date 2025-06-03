@@ -13,7 +13,7 @@ The Marketplace is your centralized repository for discovering and deploying pre
 
 ## Usage Approaches
 
-### 1. Deploy Complete Apps
+### Deploy Complete Apps
 
 Start with a fully functional agentic app:
 
@@ -21,7 +21,7 @@ Start with a fully functional agentic app:
 * Deploy as-is for immediate value.
 * Customize agents and tools to fit specific requirements.
 
-### 2. Enhance Existing Apps
+### Enhance Existing Apps
 
 Extend your current apps:
 
@@ -37,11 +37,11 @@ Extend your current apps:
 
     <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
 
-2. Browse by category and select an agent to view its capabilities, associated tools, model compatibility, and language support.
+2. Browse by category and select an app to view its capabilities, associated tools, model compatibility, and language support.
 
        <img src="../images/app-information-window.png" alt="App Information Window" title="App Information Window" style="border: 1px solid gray; zoom:60%;">
 
-3. Select required tools from dropdown menus, click **Install App** and proceed to import.
+3. Select required tools from dropdown menus, click **Install App > Proceed to Import**.
 
        <img src="../images/proceed-to-import.png" alt="Install the app" title="Install the app" style="border: 1px solid gray; zoom:80%;">
 
@@ -56,7 +56,8 @@ Extend your current apps:
     <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 
 2. Browse by category and select an agent to view its capabilities, associated tools, model compatibility, and language support.
-       <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:50%;">
+
+    <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:50%;">
 
 3. Click **Select Tools > Install**, choose the target app, and proceed with **Import**.
 
