@@ -99,26 +99,6 @@ userSessionUtils.put('sipHeaders', headers);
 
 <img src="../images/flow-script.png" alt="Script Task" title="Script Task" style="border: 1px solid gray; zoom:70%;">   
 
-* A bot action with Script Node is used to extract the headers in a bot.  
-    <img src="../images/bot-action-script.png" alt="Bot action-Script Node" title="Bot action-Script Node" style="border: 1px solid gray; zoom:70%;">  
-    <img src="../images/dialog-script.png" alt="Script Definition" title="Script Definition" style="border: 1px solid gray; zoom:70%;">  
-
-    ```
-    const headers = context.session.UserSession.SIPHeaders;
-    if(headers) { let contactId = headers.find(o => o.name === 
-    'X-ExternalCallId'); if(contactId && contactId .value) {
-    koreDebugger.log('Inbound SIP Contact ID: ' +
-    contactId.value); BotUserSession.put("ContactId", 
-    contactId.value); 
-    }}
-    ```
-
-* The BotUserSession is used to save the SIP header value as **ContactId** and trigger the [Signal API](https://developer.niceincontact.com/API/AdminAPI#/Contacts/Signal%20a%20Contact).
-
-    !!! Note
-    
-        If the bot triggers the Signal API to transfer to a live agent or to end the conversation, the call must end from Kore, or the user should be disconnected from the Kore bot and SmartAssist flow.
-
 ## NICE CXone Authentication
 
 The following parameters are required for authenticating before calling any **CXOne** API:
@@ -174,10 +154,10 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 
 ### Fetch the SIP Headers in the Bot
 
-* A Script Node is used to extract the headers in a bot.  
-    <img src="../images/script-node.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:100%;">  
+* A bot action with Script Node is used to extract the headers in a bot.  
+    <img src="../images/bot-action-script.png" alt="Bot action-Script Node" title="Bot action-Script Node" style="border: 1px solid gray; zoom:70%;">  
     <img src="../images/script.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:70%;">  
-
+  
     ```
     const headers = context.session.UserSession.sipHeaders;
     if(headers) {
@@ -191,8 +171,8 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 * The BotUserSession is used to save the SIP header value as **ContactId** and trigger the [Signal API](https://developer.niceincontact.com/API/AdminAPI#/Contacts/Signal%20a%20Contact).
 
     !!! Note
-
-        If the bot triggers the Signal API to transfer to a live agent or to end the conversation, the call must end from Kore, or the user should be disconnected from the Kore bot and Contact Center AI flow.
+    
+        If the bot triggers the Signal API to transfer to a live agent or to end the conversation, the call must end from Kore, or the user should be disconnected from the Kore bot and SmartAssist flow.
 
 ### Trigger the Signal API on Kore Bot
 

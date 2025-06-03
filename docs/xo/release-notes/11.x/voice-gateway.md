@@ -39,6 +39,12 @@ You can now connect SIP Trunk from third-party desktops to Agent AI through “A
 
 You can now enable or disable call recordings for third-party Agent Desktop integrations in the “Configure SIP Trunk” page. These recorded calls can be accessed through a public API. To enable it, go to **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.
 
+### Integration
+
+#### Voice Automation NiceCX (CX One) – SIP Integration with XO v11
+
+The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
+
 <hr>
 
 ## v11.13.1 May 17, 2025

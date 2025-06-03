@@ -23,6 +23,11 @@ This release introduces a guided migration path to help users seamlessly transit
 
 The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/conversation-events.md#repeat-bot-response-event)
 
+### Flows
+
+#### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration
+
+To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly. [Learn more :octicons-arrow-right-24:](../../flows/node-types/agent-transfer.md#general-settings)
 
 ### APIs
 
