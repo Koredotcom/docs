@@ -41,6 +41,8 @@ Key improvements
 * Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language.
 * Consistency Enhancements: Unified tone management across local and global responses. Preserves functionality in structured content during linguistic transformation. Backward compatible with existing prompts while enabling custom V2 prompts.
 
+[Learn more:octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#rephrase-responses)
+
 
 ### Agent Transfer
 

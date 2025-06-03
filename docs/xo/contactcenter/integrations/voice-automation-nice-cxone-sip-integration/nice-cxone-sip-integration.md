@@ -86,7 +86,7 @@ ACD configuration includes
 
 ## XO 11 Configuration
 
-* A flow should be configured with a app on XO 11.  
+* A flow should be configured with an app on XO 11.  
 In the Script Task window, add the following code to pass the headers to the bot before the Run Automation action.  
 
 ```

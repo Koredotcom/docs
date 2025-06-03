@@ -21,7 +21,7 @@ This release introduces a guided migration path to help users seamlessly transit
 
 #### Repeat Bot Response Event now supports SmartAssist Gateway Channel
 
-The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice.
+The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/conversation-events.md#repeat-bot-response-event)
 
 
 ### APIs
@@ -48,7 +48,7 @@ This release introduces multi-user support for the Webhook channel via a secure 
 
 #### Debug Logs API now supports additional SMS Channels
 
-The AI for Service Debug Logs API has expanded SMS channel support to include SMS, Twilio SMS, and Genesys Cloud CX Messaging channels, in addition to the existing WebSDK, IVR, IVR AudioCodes, and Voice Gateway.
+The AI for Service Debug Logs API has expanded SMS channel support to include SMS, Twilio SMS, and Genesys Cloud CX Messaging channels, in addition to the existing WebSDK, IVR, IVR AudioCodes, and SmartAssist Gateway. [Learn more:octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
 
 
 ### Voice Call Properties
