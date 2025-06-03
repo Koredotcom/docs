@@ -6,6 +6,11 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
+### API Stage in Document Workbench
+
+Search AI now features a new **API stage in the Content Transformation process** within the Extraction Module. This enhancement allows users to leverage external services for content transformation. Users can specify a custom POST API endpoint along with the necessary headers and request body to send extracted content for enrichment before chunking. This integration facilitates seamless collaboration with third-party tools, enabling the extraction, classification, and transformation of metadata and content.
+
+
 ### New and Improved Web Crawler
 
 Search AI now includes a new and improved web crawler, designed for better performance and higher-quality content extraction. 
