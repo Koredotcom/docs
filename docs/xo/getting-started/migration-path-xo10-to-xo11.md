@@ -25,10 +25,10 @@ In XO v10, we have two variants of Bots: Standard Bot and Universal Bot. The mig
 2. Log in to the [XO11 Platform](https://platform.kore.ai).
 3. Check if the XO10 bots are available on the platform.
 4. Open the duplicate Bot and click **upgrade now** on the banner.  
-<img src="../images/upgrade-banner.png" alt="upgrade-banner" title="upgrade-banner">
+<img src="../images/upgrade-banner.png" alt="upgrade-banner" title="upgrade-banner"style="border: 1px solid gray; zoom:70%;">
 
 5. Follow the guided upgrade journey to upgrade the duplicate Bot to the XO11 App.  
-<img src="../images/upgrading-guide.png" alt="upgrading-guide" title="upgrading-guide"> 
+<img src="../images/upgrading-guide.png" alt="upgrading-guide" title="upgrading-guide"style="border: 1px solid gray; zoom:70%;"> 
 
 6. Test the new upgraded App, verify functionality, and assess the migration's impact.
 7. Once the duplicate bot works as expected, upgrade the original bot to XO v11.
@@ -49,7 +49,7 @@ The migration process for a **Universal Bot** follows the same steps as a standa
 **Configure DialogGPT**
 
  An embedding model, BGEM3, is selected by default.  
- <img src="../images/univeral-bot-migration.png" alt="univeral-bot-migration" title="univeral-bot-migration"> 
+ <img src="../images/univeral-bot-migration.png" alt="univeral-bot-migration" title="univeral-bot-migration"style="border: 1px solid gray; zoom:70%;">
 
 When the user initiates migration, the key components being migrated are:
 
