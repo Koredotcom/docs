@@ -76,14 +76,14 @@ Extend your current apps:
         * Model compatibility
         * Language support
 
-       <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:60%;">
+       <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:50%;">
 
 3. **Import to Your App**
     * Click **Select Tools > Install**
     * Choose the target app from the list
     * Click Proceed > **Import**
 
-    <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:50%;">
 
 ## Testing and Deployment
 
