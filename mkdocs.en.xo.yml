@@ -289,11 +289,14 @@ nav:
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
       - Test (Talk to Bot): automation/testing/talk-to-bot.md
-      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
-      - Regression Testing: 
-        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: automation/testing/regression-testing/batch-testing.md
-        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
+      - DialogGPT based Apps:
+        - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
+      - NLP based Apps:
+        - Utterance Testing - NLP: automation/testing/testing-your-bot-with-nlp.md 
+        - Regression Testing: 
+          - Health and Monitoring - NLP: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
+          - Batch Testing - NLP: automation/testing/regression-testing/batch-testing.md
+          - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:

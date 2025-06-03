@@ -112,6 +112,9 @@ Accepted channel types are:
 <li>ivrVoice
 <li>audiocodes
 <li>smartassist
+<li>genericsms
+<li>twilio
+<li>genesys
 </li>
 </ul>
    </td>
