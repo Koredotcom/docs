@@ -13,13 +13,14 @@ You can view the lists by going to **Contact Center** > **Campaigns** > **List M
 To view the Contact Lists, click the **Contact Lists** tab.
 
 The following details are displayed in Contact Lists:  
-<img src="../images/contact-lists-table.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/contact-list-page-updated.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:80%;">
 
 * **Contact Lists** - Name of the list. For example, Contact List 1.
 * **Actions** - Edit and Delete lists.
 * **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
 * **Contacts** - Shows the total count of contacts in the list. For example, 288.
 * **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
+* **Last Updated** - The date when the contact list was last updated. Default sorting is based on the last updated date.
 
 ### Create a Contact List
 
@@ -291,17 +292,27 @@ Steps to delete an API-integrated contact list:
 
 ## DNC Lists
 
-### Create a DNC List
+To view the DNC Lists, click the **DNC Lists** tab.
 
-To create a DNC List, click the **DNC Lists** tab.
+The following details are displayed in DNC Lists:
+<img src="../images/dnc-list-page.png" alt="DNC List Page" title="DNC List Page" style="border: 1px solid gray; zoom:80%;">
+
+* **DNC Lists** - Name of the list. For example, DNC List 1.
+* **Actions** - Edit and Delete lists.
+* **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
+* **Contacts** - Shows the total count of contacts in the list. For example, 288.
+* **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
+* **Last Updated** - The date when the contact list was last updated. Default sorting is based on the last updated date.
+
+### Create a DNC List
 
 Steps to create a new DNC list:
 
 1. Click **+ New DNC List**.  
-<img src="../images/new-dnc-list.png" alt="New DNC List" title="New DNC List" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new-dnc-list.png" alt="New DNC List" title="New DNC List" style="border: 1px solid gray; zoom:80%;">
 
 2. On the **New DNC List** pop-up window, enter the **Name** and **Description** of the list.
-<img src="../images/dnc-list-name-description.png" alt="Name and Description DNC List" title="Name and Description DNC List" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/dnc-list-name-description.png" alt="Name and Description DNC List" title="Name and Description DNC List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -341,7 +352,6 @@ Steps to edit a DNC list:
 Steps to delete a DNC list:
 
 1. Click the **Edit** icon beside the DNC list name and click the **Delete** icon at the bottom left corner of the edit window.  
-
     <img src="../images/delete-dnc-list.png" alt="Delete DNC List" title="Delete DNC List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note

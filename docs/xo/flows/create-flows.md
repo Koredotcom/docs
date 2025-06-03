@@ -33,7 +33,7 @@ Steps to create a Start Flow:
 
 1. In the left navigation, go to **Flows & Channels** > **FLOWS**.
 2. Click **+ New Start Flow**.  
-<img src="../images/new-start-flow.png" alt="New Start Flow" title="New Start Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new-start-flow.png" alt="New Start Flow" title="New Start Flow" style="border: 1px solid gray; zoom:80%;">
 
 3. In the New Start Flow window, provide inputs for the following fields:
     1. **Start Flow Name**: This name will help identify the flow.
@@ -43,10 +43,10 @@ Steps to create a Start Flow:
 ### Voice
 
 1. Selecting this option displays the list of phone numbers available within your account. Select a number to map to the start flow.
-<img src="../images/voice-channel-phone-number.png" alt="Phone Number" title="Phone Number" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/voice-channel-phone-number.png" alt="Phone Number" title="Phone Number" style="border: 1px solid gray; zoom:100%;">
 
 2. If you have not added any number to your account, click **Purchase a phone number**.  
-<img src="../images/purchase-phone-number.png" alt="Purchase a Phone Number" title="Purchase a Phone Number" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/purchase-phone-number.png" alt="Purchase a Phone Number" title="Purchase a Phone Number" style="border: 1px solid gray; zoom:100%;">
 
     * The _Phone Number_ window is displayed as shown below. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:  
     <img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
@@ -114,12 +114,12 @@ The following options are available:
 
 * **Bot No Input Speech**: Enter the text that the bot will say when triggered by the no input timeout.
 * **Bot No Input URL**: Enter a valid audio URL. The bot will play the audio file from this URL when triggered by the no-input timeout.  
-<img src="../images/interaction-types.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/interaction-types.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
 
 ###### Bot No Input Retries
 
 * Specifies the number of times to perform the no input actions, with a "Bot No Input Timeout" duration between each retry.  
-<img src="../images/retries.png" alt="Bot No Input Retries" title="Bot No Input Retries" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/retries.png" alt="Bot No Input Retries" title="Bot No Input Retries" style="border: 1px solid gray; zoom:80%;">
 
 ###### Bot No Input Give Up Timeout
 
@@ -162,13 +162,13 @@ The following options are available:
 This configuration ensures that user interactions remain seamless and informative, even during unexpected system delays or failures.
 
 * Select an **Exit Flow** (Optional): When the exit event is triggered, the published version of the selected flow will be executed. You can either select the default _Exit Flow_ or one that you have created yourself.
-<img src="../images/exit-flow.png" alt="Exit Flow" title="Exit Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/exit-flow.png" alt="Exit Flow" title="Exit Flow" style="border: 1px solid gray; zoom:80%;">
 
 * Select a **No Agents Available Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered, but no agents are available, or the conversation exceeds the maximum waiting time in the queue. You can either select the default _No Agents Available Flow_ or one that you have created yourself.
-<img src="../images/no-agents-available-flow.png" alt="No Agents Available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/no-agents-available-flow.png" alt="No Agents Available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;">
 
 * Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours. You can either select the default _Out-of-Hours Flow_ or one that you have created yourself.
-<img src="../images/out-of-hours-flow.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/out-of-hours-flow.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -204,16 +204,16 @@ Selecting chat will display all the chat channels configured in the channels sec
 
 1. **All**: Selecting it selects the Web/Mobile Client and any other services available within your account for the chat flow.
 2. **Web/Mobile Client**: The web client is the front-end component of any conversational AI system or application that communicates with a server and is accessed by the end-user on a desktop or mobile device.  
-<img src="../images/chat-channels.png" alt="Chat Channels" title="Chat Channels" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/chat-channels.png" alt="Chat Channels" title="Chat Channels" style="border: 1px solid gray; zoom:80%;">
 
 3. Under Advanced Settings, you can enable **Prompt Overrides at Input Nodes**. When this feature is enabled, unprocessed user inputs will be passed to the first input node encountered in the flow without returning the actual prompt stored against the input node. This is useful for scenarios where a conversation ends and is then restarted by the user. For example, the user will not see the first “Welcome Message” again, as they would when starting a new conversation. Instead, they will receive a relevant reply to the utterance.
-<img src="../images/prompt-overrides-at-input-nodes.png" alt="Prompt Overrides at Input Nodes" title="Prompt Overrides at Input Nodes" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/prompt-overrides-at-input-nodes.png" alt="Prompt Overrides at Input Nodes" title="Prompt Overrides at Input Nodes" style="border: 1px solid gray; zoom:80%;">
 
 4. Select a **No Agents Available Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered, but no agents are available, or the conversation exceeds the maximum waiting time in the queue.
-<img src="../images/no-agents-available-flow-chat.png" alt="No Agents available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/no-agents-available-flow-chat.png" alt="No Agents available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;">
 
 5. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours.
-<img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -226,13 +226,13 @@ Selecting chat will display all the chat channels configured in the channels sec
 Selecting SMS will display all the phone numbers configured in the channels section.
 
 1. Select a phone number to map to the start flow.  
-<img src="../images/select-number.png" alt="Select Number" title="Select Number" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/select-number.png" alt="Select Number" title="Select Number" style="border: 1px solid gray; zoom:80%;">
 
 2. Select a **No Agents Available Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered, but no agents are available, or the conversation exceeds the maximum waiting time in the queue.
-<img src="../images/no-agents-available-flow-chat.png" alt="No Agents available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/no-agents-available-flow-chat.png" alt="No Agents available Flow" title="No Agents Available Flow" style="border: 1px solid gray; zoom:80%;">
 
 3. Select an **Out-of-Hours Flow** (Optional): The published version of the selected flow will be executed when an agent transfer is triggered outside the queue's working hours.
-<img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/out-of-hours-flow-chat.png" alt="Out of Hours Flow" title="Out of Hours Flow" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -243,24 +243,25 @@ Selecting SMS will display all the phone numbers configured in the channels sect
 Steps to edit a start flow:
 
 1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
-<img src="../images/update-start-flow.png" alt="Update Start Flow" title="Update Start Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/update-start-flow.png" alt="Update Start Flow" title="Update Start Flow" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the changes and click **Update**.
-<img src="../images/edit-flow-experience.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-flow-experience.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete a Start Flow
 
 Steps to delete a start flow:
 
 1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
-<img src="../images/delete-start-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/delete-start-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation is displayed. Click **Delete**.
-<img src="../images/confirm-delete.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/confirm-delete.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
-        You cannot delete default start flows.
+        * You cannot delete default start flows.
+        * You cannot delete a flow that is linked to an active campaign. Please remove the flow from the campaign before attempting to delete it.
 
 ## Create an Exit Flow
 
@@ -268,7 +269,7 @@ Steps to create an Exit Flow:
 
 1. In the left navigation, go to **Flows & Channels** > **FLOWS**.
 2. Click **+ New Exit Flow**.
-<img src="../images/new-exit-flow.png" alt="New Exit Flow" title="New Exit Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new-exit-flow.png" alt="New Exit Flow" title="New Exit Flow" style="border: 1px solid gray; zoom:80%;">
 
 3. In the New Exit Flow window, provide inputs for the following fields:
     1. **Exit Flow Name**: This name will help identify the flow.
@@ -283,20 +284,20 @@ Steps to create an Exit Flow:
 Steps to edit an exit flow:
 
 1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
-<img src="../images/update-exit-flow.png" alt="Update Exit Flow" title="Update Exit Flow" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/update-exit-flow.png" alt="Update Exit Flow" title="Update Exit Flow" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the changes and click **Update**.
-<img src="../images/update-button-exit-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/update-button-exit-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete an Exit Flow
 
 Steps to delete an exit flow:
 
 1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
-<img src="../images/delete-exit-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/delete-exit-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation is displayed. Click **Delete**.
-<img src="../images/confirm-delete-exit-flow.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/confirm-delete-exit-flow.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:80%;">
 
 ## Navigate the Flow Designer
 

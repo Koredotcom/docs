@@ -26,7 +26,7 @@ The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ par
 
 Four new English voices—Helena, Electra, Thalia, and Vesta (a slower, senior-friendly option)—are now available in the Deepgram TTS integration. Bot developers can select any of these voices to enhance the user experience and tailor voice interactions to specific audience needs. These additions offer greater flexibility in voice customization, enhancing caller engagement.
 
-### Updated SIP Trunk Configuration
+### SIP Trunk
 
 #### Updated SIP Trunk Configuration for Third-Party Desktop Integration through AudioSocket
 
@@ -34,7 +34,6 @@ You can now connect SIP Trunk from third-party desktops to Agent AI through “A
 
 * **Select the SIP Trunk connection method**: Select a connection method.
 * **Connection URL (Generate URL)**: Automatically generate a URL and copy it to configure in the third-party agent desktop.
-* **Record calls**: Enable this feature to record all calls through the selected SIP Trunk.
 
 #### Enable Call Recordings via SIPREC for Third-Party Agent Desktops
 

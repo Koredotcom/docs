@@ -24,6 +24,15 @@ On this page, the following details of the SMS campaigns are shown in a table:
 
 To run SMS campaigns, you must configure the SMS channel first. [Learn more](../../../channels/add-sms-channel.md).
 
+## Sorting Order
+
+The default sort is based on the **Run Time**.
+
+Users can also sort based on **Priority**.
+
+* Ascending (↑): Priority 5 → 1
+* Descending (↓): Priority 1 → 5
+
 ## Filters
 
 Campaign Managers can create, duplicate, mark as default, delete and edit filters for the campaigns.
