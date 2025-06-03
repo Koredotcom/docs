@@ -65,4 +65,19 @@ As an agent, you can initiate an Internal Chat conversation if you face a challe
     <img src="../images/internal-chat-window.png" alt="Internal Chat Window" title="RInternal Chat Window" style="border: 1px solid gray; zoom:70%;">
 
 3. You can now use the internal chat to call and message another agent and send attachments.
-    <img src="../images/call-button.png" alt="Internal Chat to Call" title="RInternal Chat to Call" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/call-button.png" alt="Internal Chat to Call" title="Internal Chat to Call" style="border: 1px solid gray; zoom:70%;">
+
+### Translate Internal Chats
+
+Contact Center administrators can enable translation for agents' internal chats. [Learn more](../contactcenter/configurations/advanced-settings/translation-configurations.md).
+
+Steps to translate Internal chats:
+
+1. Click the **Translate** button.  
+    <img src="../images/translate-button.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the language for chat translation. Click **Mark as Default** to set it as the default translation language.  
+    <img src="../images/translation-language.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:70%;">  
+
+    The internal chat translates into the selected language.  
+    <img src="../images/text-translated.png" alt="Text Translated" title="Text Translated" style="border: 1px solid gray; zoom:70%;">

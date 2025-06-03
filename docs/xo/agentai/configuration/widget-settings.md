@@ -134,11 +134,11 @@ Steps:
 2. Go to **Widget Settings** > **Agent AI General Settings**.
 3. Turn the **Auto Correct** toggle on or off, as required.
 4. Select or clear the **Use Custom Dictionary** option.
-5. Upload your customized list of words.
-
+5. Upload your customized list of words. 
     !!! Note
 
-        You can download the present list of words, if already uploaded.
+        You can download the present list of words, if already uploaded. 
+
 6. Click **Save**.
 
 Agents can enable or disable the Auto Correct toggle by using the following steps:

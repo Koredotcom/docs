@@ -350,8 +350,8 @@ It is similar to Continuous ASR, the Only Difference is  Continuous ASR is handl
    </td>
    <td>String (Enum)
 It can be either
-1) AtStart,
-2) Continuous
+1. AtStart,
+2. Continuous
    </td>
    <td>
    </td>
@@ -1185,6 +1185,7 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
 * `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/speech-synthesis/voice-settings).
+* `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values below 1 will slow down the speech, while values above 1 will speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
 
 #### PlayHT
 
