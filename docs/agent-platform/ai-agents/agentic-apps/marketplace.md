@@ -33,55 +33,32 @@ Extend your current apps:
 
 ### Installing a Complete App
 
-1. **Access the Marketplace**
-    * Click **Explore marketplace** on the [Agentic Apps](https://agent-platform.kore.ai/apps) page
-    * Or navigate directly to the [Marketplace](https://kore.ai/marketplace/).
+1. Access the Marketplace on the [Agentic Apps](https://agent-platform.kore.ai/apps) page or navigate directly to the [Marketplace](https://kore.ai/marketplace/).
 
     <img src="../images/marketplace.png" alt="Access the Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
 
-2. **Browse and Select**
-    * Filter by category (Benefits Management, Customer Success, IT, Marketing, Sales, etc.)
-    * Click any app to preview:
-        * Template description and capabilities
-        * Compatible LLM models
-        * Included agents and tools
-        * Developer information and supported languages
-    
+2. Browse by category and select an agent to view its capabilities, associated tools, model compatibility, and language support.
+
        <img src="../images/app-information-window.png" alt="App Information Window" title="App Information Window" style="border: 1px solid gray; zoom:60%;">
 
-3. **Install the App**
-    * Click **Install App**
-    * Select the required tools from the dropdown menus.
-    * Click **Proceed to Import**.
+3. Select required tools from dropdown menus, click **Install App** and proceed to import.
+
        <img src="../images/proceed-to-import.png" alt="Install the app" title="Install the app" style="border: 1px solid gray; zoom:80%;">
 
-4. **Complete Setup**
+4. **Setup is completed**:
     * The app, agents, and tools are created in your workspace.
     * (Optional) Connect to Search AI for knowledge base integration. [Learn more about Knowledge Tool Integration](https://docs.kore.ai/agent-platform/ai-agents/knowledge/overview/).
 
 ### Enhancing an Existing App
 
-1. **Select Your App**
-    * Navigate to [Agentic Apps](https://agent-platform.kore.ai/apps)
-    * Choose an existing app
-    * Click **Explore Marketplace**
+1. Navigate to [Agentic Apps](https://agent-platform.kore.ai/apps), choose an existing app and click **Explore Marketplace**.
 
     <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 
-2. **Choose Components**
-    * Browse by category
-    * Select an agent to view:
-        * Agent capabilities and scope
-        * Associated tools
-        * Model compatibility
-        * Language support
-
+2. Browse by category and select an agent to view its capabilities, associated tools, model compatibility, and language support.
        <img src="../images/agent-creation.png" alt="Agent details window" title="Agent details window" style="border: 1px solid gray; zoom:50%;">
 
-3. **Import to Your App**
-    * Click **Select Tools > Install**
-    * Choose the target app from the list
-    * Click Proceed > **Import**
+3. Click **Select Tools > Install**, choose the target app, and proceed with **Import**.
 
     <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:30%;">
 
