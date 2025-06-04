@@ -84,7 +84,7 @@ These events trigger on receiving **_opt-in_** or **_opt-out_** requests from us
 
 ## Repeat Bot Response Event
 
-The **Repeat Bot Response** event is triggered to repeat the last bot response when certain predefined or custom-trained utterances are detected in voice channels such as IVR, Audiocodes, or Twilio Voice. 
+The **Repeat Bot Response** event is triggered to repeat the last bot response when certain predefined or custom-trained utterances are detected in voice channels such as IVR, Audiocodes, Twilio Voice and SmartAssist Gateway. 
 
 To enable this event, the developer must define the context object as a precondition for triggering the event. This context object contains the specific set of utterances that should be recognized to repeat the bot’s most recent or last response.
 
