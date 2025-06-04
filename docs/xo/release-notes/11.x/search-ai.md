@@ -36,7 +36,7 @@ Search AI answer generation APIs (v1 and v2) now support optional fields in the 
 
 ### Enhanced Multilingual Support
 
-Search AI now offers expanded multilingual support with the addition of Spanish and Dutch to enhance the customer experience. Users can:
+Search AI now offers expanded multilingual support with the addition of Spanish to enhance the customer experience. Users can:
 
 * Add and organize content in multiple languages.
 * Understand and interpret queries in supported languages.
