@@ -127,7 +127,7 @@ This enhancement provides a clearer understanding of why calls are disconnected 
 
 #### Monitor: Queue Filters and Agent Name Display
 
-Supervisors can now use quick filters in the Queue tab to easily segment conversations by state, such as those waiting in a queue or with the agent, for faster action. Waiting for Agents is now a quick filter option. Two predefined quick filters will be enabled by default and displayed as tags. Users can edit, delete, or add up to four custom quick filters (five total, including the default). This functionality extends to Agents and Interactions tabs, without predefined templates. Additionally, agent names now appear for conversations pending acceptance, ensuring consistent information display and improving visibility for quicker decision-making. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
+Supervisors can now use quick filters in the Queue tab to easily segment conversations by state, such as those waiting in a queue or with the agent, for faster action. Waiting for Agents is now a quick filter option. Two predefined quick filters will be enabled by default and displayed as tags. Users can edit, delete, or add up to four custom quick filters (five total, including the default). This functionality extends to Agents and Interactions tabs, without predefined templates. Additionally, agent names now appear for conversations pending acceptance, ensuring consistent information display and improving visibility for quicker decision-making. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#queues)
 
 #### Reports: Support for Multiple Schedule-and-Frequency Combinations
 
@@ -254,7 +254,7 @@ Supervisors and agents can sort Queues, Agents, and Interaction tabs to manage w
 * Sort within active filters, ensuring relevance.
 * Automatic reordering when multiple items share the same sorting metric, prioritizing by arrival time.
 
-[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#queues)
 
 <hr>
 
@@ -355,7 +355,7 @@ The Interaction Details by Segment Report is a comprehensive report that covers 
 
 **Monitor** > **Service Levels**
 
-The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#time-intervals)
+The "Today" option is added to the time-period filter dropdown. Selecting "Today" displays all values based on conversations retrieved from the user's current day, starting from 12:00:00 AM midnight, according to the user's system time zone. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#time-intervals)
 
 <hr>
 
@@ -378,11 +378,11 @@ Key benefits
 * Enhanced ability to maintain conversation quality.
 * Flexible filtering options for better workflow management.
 
-[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#manually-assign-a-bot-led-conversation-to-an-agent-or-queue)
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#manually-assign-a-bot-led-conversation-to-an-agent-or-queue)
 
 #### Quick Agent Information Pop-up on Monitor Tab
 
-Hovering over an agent’s name in the agents' tab shows key details about the agent, reducing the need to navigate multiple screens. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#agents)
+Hovering over an agent’s name in the agents' tab shows key details about the agent, reducing the need to navigate multiple screens. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#agents)
 
 ### Configuration
 
@@ -438,7 +438,7 @@ A new status indicator at the top of the Agent Console shows the connection stat
 When a supervisor shifts focus away from the current conversation, a Listen Banner appears in the Monitor Tab. This ensures supervisors can monitor other conversations without being tied to one conversation.
 
 A restriction message ensures supervisors confirm before leaving the monitor tab during an active Listen or Whisper session, preventing unintentional interruptions.
-The feature enhances supervisor flexibility while maintaining oversight during live conversations. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#listen-and-whisper-voice-calls)
+The feature enhances supervisor flexibility while maintaining oversight during live conversations. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#listen-and-whisper-voice-calls)
 
 ### Configuration
 
@@ -491,7 +491,7 @@ Key benefits
 
 #### Improved Supervisor Monitoring with Callback and Voicemail Filters
 
-Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md)
+Supervisors can now improve their monitoring efficiency using specific filters for callback and voicemail interactions in the Monitor tab, with a new callback icon for better visibility. Filters can be combined with existing agent, queue, and status filters. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md)
 
 ### Configuration
 
@@ -1015,7 +1015,7 @@ The Interactions tab now displays active call-back requests and ongoing interact
 **Supervisor Actions**:
 
 * **Assigning Call-Backs to Agents**: Supervisors can manually assign call-back requests to available agents, streamlining the process and reducing wait times.
-* **Queue Management**: Supervisors can change the queue for a call-back request, optimizing resource allocation and prioritizing customer interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#interactions)
+* **Queue Management**: Supervisors can change the queue for a call-back request, optimizing resource allocation and prioritizing customer interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#interactions)
 
 <hr>
 
@@ -1358,11 +1358,11 @@ The Monitor tab displays metrics relevant to rejection in the Agents and Interac
 **Monitor** > **Agents**
 
 * The Agents sub-tab now includes counts for rejected and unanswered interactions.
-* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#agents)
+* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#agents)
 
 **Monitor** > **Interactions**
 
-* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#manually-assign-conversations-to-an-agent-and-change-queue)
+* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#manually-assign-conversations-to-an-agent-and-change-queue)
 
 ### Configuration
 
@@ -1391,7 +1391,7 @@ Administrators and Supervisors with access to Dashboard > Interactions can now v
 Automatic refresh for filters applied in the Monitor tabs at fixed intervals is implemented to ensure real-time data accuracy.
 
 * Filtered data on Monitor tabs is updated at the specified interval, reflecting real-time changes.
-* New interactions are not immediately added to filtered results but appear after the 5-second update interval. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#auto-refresh-when-filters-are-applied)
+* New interactions are not immediately added to filtered results but appear after the 5-second update interval. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-and-interactions.md#auto-refresh-when-filters-are-applied)
 
 ### Kore Voice Gateway
 
