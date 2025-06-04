@@ -61,43 +61,6 @@ The Connectors are available under the Content Section. There are two tabs that 
 
 To set up a new connector, select the application connector from All connectors and provide the configuration details. Choose it from the list of supported connectors and enter the configuration details.  For comprehensive instructions on setting up connectors, refer to the [specific connector documentation](connectors/connector-directory.md).
 
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see useful information and inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 1
-
-Conversion time: 0.896 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β44
-* Mon May 05 2025 04:26:02 GMT-0700 (PDT)
-* Source doc: Connectors
-* This is a partial selection. Check to make sure intra-doc links work.
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 1.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 **Setup Steps**
 
 **Step 1: Authentication**: Provide the necessary authentication details (OAuth credentials, API keys, tokens, etc) to establish connection with the external application. 

@@ -2,8 +2,6 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
-
-
 ## v11.14.0 May 31, 2025
 
 <u> Minor Release </u>
@@ -12,28 +10,24 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 ### DialogGPT
 
+#### Evaluation of DialogGPT
 
-#### Comprehensive Batch Testing Framework for DialogGPT-based Apps
-
-The comprehensive testing framework provides a systematic approach to test and enhance orchestration accuracy across all conversation types. It offers flexible test creation methods (manual, bulk upload, history, real-time) and assesses utterances across the retrieval and LLM pipeline. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
+The Batch Testing feature now provides a comprehensive evaluation framework to validate and enhance orchestration accuracy across all conversation types. It offers flexible test creation methods (manual and bulk upload) and assesses utterances across the retrieval and intent detection pipeline. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
 
 Key features
 
-
-* End-to-End Pipeline Testing: Processes each utterance through the full retrieval and LLM workflow, mirroring real-world behavior to uncover issues static testing might miss.
-* Model Configuration Flexibility: Supports testing across different combinations of embedding models and LLMs to identify the most effective configuration for your app.
+* End-to-End Orchestration Testing: Processes each utterance through the full retrieval and LLM workflow, mirroring real-world behavior to uncover issues static testing might miss.
+* Model Configuration Flexibility: Supports testing across different combinations of LLMs and model configurations to identify the most effective configuration for your app.
 * Granular Performance Insights: Measure accuracy, precision, recall, and F1 score across all conversation types, including Dialogs, FAQs, Knowledge, and Conversation Intents.
 * Lifecycle Support: Enables batch testing for both in-development and published apps, supporting validation at any stage of the deployment lifecycle.
 
 [Learn more:octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
 
-#### Improved Dynamic Routing Discoverability
+#### Improved App Routing Discoverability
 
-Automation app linking is now centralized for easier access under **Flow & Channels > Manage Automation**. This unified interface offers quick access to **Chat** and **Voice** flows, displaying key routing details such as Flow Name, Automation Node, Routing Mode, and Channel. The integrated search bar enables easy filtering of results and efficient management of routing configurations.
-
+Automation app linking is now centralized for easier access under **Flow & Channels > Manage Automation**. This unified interface provides a quick view of **Chat** and **Voice** flows, displaying key routing details, including Flow Name, Automation Node, Routing Mode, and Channel. The integrated search bar enables easy filtering of results and efficient management of routing configurations.
 
 ### LLM & Generative AI
-
 
 #### Enhanced Response Rephrasing for All Message Types
 
@@ -41,22 +35,19 @@ The Response Rephrasing feature has been significantly expanded and enhanced to 
 
 Key improvements
 
+* Enhanced Content Support: Processes Standard Responses, Events, FAQs, and JSON/JavaScript templates. It retains the core rephrasing capability with the new Default-V2 prompt framework.
+* Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language. 
 
-
-* Enhanced Content Support: Processes Standard Responses, Events, FAQs, and structured formats (JSON/JavaScript). Maintains original functionality with improved linguistic quality using the new Default-V2 prompt framework.
-* Granular Control: Configure globally or at the component level (User, Error, Bot Prompts). Select specific response elements (messages, confirmations, entity values) for rephrasing with emotionally intelligent language.
-* Consistency Enhancements: Unified tone management across local and global responses. Preserves functionality in structured content during linguistic transformation. Backward compatible with existing prompts while enabling custom V2 prompts.
+[Learn more:octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#rephrase-responses)
 
 
 ### Agent Transfer
 
-
 #### Genesys WebMessaging Integration for Agent Transfer
 
-The platform now supports Genesys WebMessaging integration for agent transfer, in addition to the existing WebChat option. While existing users can still use WebChat with their current settings, WebMessaging will be the default for new integrations. As Genesys is retiring WebChat on June 10, 2025, transitioning to WebMessaging is highly recommended for ongoing support and access to the latest features.  
-[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md)
+The platform now supports Genesys WebMessaging integration for agent transfer, in addition to the existing WebChat option. While existing users can still use WebChat with their current settings, WebMessaging will be the default for new integrations. As Genesys is retiring WebChat on June 10, 2025, transitioning to WebMessaging is highly recommended for ongoing support and access to the latest features. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md)
 
-### Dialog Builder
+### Analytics
 
 
 #### Node-level Control to Classify Conversations as Self-serve / Drop-off
@@ -66,7 +57,6 @@ To improve the accuracy of containment metrics in Analytics, users can now manag
 This Setting overrides the dialog-level settings for containment type. The default option would be the dialog-level settings. [Learn more:octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#instance-properties)
 
 <hr>
-
 
 ## v11.13.1 May 17, 2025
 

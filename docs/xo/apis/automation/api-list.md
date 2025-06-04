@@ -32,7 +32,9 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Update a Language Configuration](./language-updation.md) | To update the configuration of an existing language for a virtual assistant. | Languages Configuration. | API Scopes > Language Settings |
 | [Change the Default language ](../automation/change-default-language.md) | To change the default language of the app.| Languages Configuration. | API Scopes > Language Settings |
 | [Proactive Notification](./proactive-notifications.md) | To send proactive notifications to the configured channel. | NA  | Channel Management > Proactive Messages |
+| [Proactive Notification V2](./proactive-notifications-v2.md) | To send proactive notifications to users via IVR and Hangout channels. | NA  | Channel Management > Proactive Messages |
 | [Proactive Notification Status](./proactive-notifications-status.md) | To send proactive notifications to the configured channel. | NA  | Channel Management > Proactive Messages |
+| [Proactive Notification Status V2](./proactive-notification-status-v2.md) | To fetch the status of a proactive notification triggered via the async webhook channel. | NA  | Channel Management > Proactive Messages |
 | [Publish Bot](./publish-bot.md) | To initiate a bot publish request. | NA  | Bot Publish > Publish |
 | [Bot Publish Status](./bot-publish-status.md) | Gets the publish status of the ongoing assistant or the last completed status request of the assistant. | NA  | Bot Publish > Publish |
 | [Bot Variables Import](./bot-variables-import.md) | To import global and content variables into the assistant. | Import Variables | NA  |

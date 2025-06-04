@@ -53,13 +53,13 @@ Search AI uses server-to-server OAuth configuration to access Zoom APIs and fetc
 
 * Refer to [this ](https://developers.zoom.us/docs/internal-apps/create/)to create a server-to-server OAuth app. 
 * Select the following OAuth scopes while creating the app. 
-    * user:read:list_users:admin
-    * cloud_recording:read:list_user_recordings:admin
-    * meeting:read:list_meetings:admin
+    * cloud_recording:read:list_recording_files:admin 
     * meeting:read:summary:admin
     * meeting:read:meeting:admin
-    * dashboard:read:list_meetings:admin 
+    * meeting:read:list_summaries:admin
+    * report:read:list_meeting_participants:admin
     * user:read:user:admin
+
 *  Get your app credentials, including account ID, client ID, and client secret, on your [app details](https://developers.zoom.us/docs/internal-apps/create/) page.
 
 
@@ -79,9 +79,6 @@ Note that the summary is generated only if the Meeting Summary with AI Companion
 
 ## RACL Support in ZOOM
 
-In Zoom, all **meeting invitees** can access the **meeting summary and other metadata**. Hence, the `sys_racl` field includes the following:
+In Zoom, all **meeting invitees** can access the **meeting summary and other metadata**. Hence, the `sys_racl` field includes both the **host's email address** and the **email addresses of all invitees and participants**.
 
-* Host's email address
-* email addresses of all invitees
-
-When a meeting is conducted using a **personal meeting link** or by directly sharing the meeting link with the attendees, the `sys_racl` field is set to `*`, which allows broader access.
+When a meeting is conducted using a **personal meeting link or by directly sharing the meeting** **link with the attendees**, the `sys_racl` field is set to **the host's email address**.

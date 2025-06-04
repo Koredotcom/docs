@@ -177,6 +177,7 @@ nav:
       - Migration:
         - Benefits of XO v11: getting-started/benefits-xo11.md
         - Automation AI Migration: getting-started/migration-path-xo10-to-xo11.md
+        - Benefits of Contact Center AI (CCAI): getting-started/benefits-of-contact-center-ai.md
         - Contact Center AI Migration: getting-started/ccai-migration-from-xo10-to-xo11.md
         - Agent AI Migration: getting-started/agent-ai-migration-from-xo10-to-xo11.md
       - Recent Updates:
@@ -289,11 +290,14 @@ nav:
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
       - Test (Talk to Bot): automation/testing/talk-to-bot.md
-      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
-      - Regression Testing: 
-        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: automation/testing/regression-testing/batch-testing.md
-        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
+      - DialogGPT based Apps:
+        - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
+      - NLP based Apps:
+        - Utterance Testing - NLP: automation/testing/testing-your-bot-with-nlp.md 
+        - Regression Testing: 
+          - Health and Monitoring - NLP: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
+          - Batch Testing - NLP: automation/testing/regression-testing/batch-testing.md
+          - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
@@ -432,7 +436,8 @@ nav:
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
         - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
         - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
-    - Flows and Routing:
+    - Performance Management:
+      - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
@@ -446,7 +451,7 @@ nav:
       - Interacting With Customers: console/interacting-with-customers.md
       - Additional Tools: console/additional-tools.md
       - Manage Layout: console/manage-layout.md
-      - Monitor: console/monitor-queues-agents-interactions-service-levels.md
+      - Monitor: console/monitor-queues-agents-and-interactions.md
     - Campaigns:  
       - About Campaigns: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
@@ -501,7 +506,7 @@ nav:
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
-        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - Linked Services: agentai/configuration/linked-services.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
@@ -650,6 +655,7 @@ nav:
           - Kore Voice Automation:
             - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
+            - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

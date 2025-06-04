@@ -121,7 +121,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    </td>
   </tr>
   <tr>
-   <td>metaFilter
+   <td>metaFilters
    </td>
    <td>No
    </td>
@@ -176,21 +176,25 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    <td>No </td>
    <td>Array of RACL values
 
-This field specifies the **RACL (Role-Based Access Control List)** values to be used to determine accessible content. It can include both **user identities** (e.g., email addresses) and **permission entity IDs( **e.g., user groups).
+This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities<strong> (e.g., email addresses) and <strong>permission entity IDs </strong>(e.g., user groups).
 
 When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response.
 
-For instance, if raclEntityIds: [
+For instance,
+
+<pre>
+raclEntityIds: [
 
 “123234”, // Permission Entity ID
 
 “[user@example.com](mailto:user@example.com)” // User Identity
 
-]
+]</pre>
 
-* Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.
-* The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".
-
+<ul>
+<li>Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.</li>
+<li> The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".</li>
+</ul>
 This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings.
 
 “raclEntityIds” takes precendence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present we will only honor that. 
@@ -205,6 +209,48 @@ This parameter enables granular control over content accessibility by explicitly
    <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc.
    </td>
   </tr>
+   <tr>
+
+   <td>dynamicPromptSelection </td>
+   <td> No </td>
+   <td>Specifies the prompt and model to be used to generate the answer in this API call. If not provided, the API will use the default model and prompt configured at the application level.
+
+This field accepts the following three parameters:
+
+
+
+* **integrationName:** Specifies the name of the GenAI provider. Supported values include:
+    * "openai"
+    * "azure"
+    * "korexo"
+    * custom integration name (must exactly match the name defined in the configuration)
+* **model**: Name of the specific LLM model to be used for answer generation. This must match the model name defined in the GenAI configuration exactly.
+* **promptName**: Name of the prompt to be used to generate the answer. Use "Default" to apply the default prompt configured in the application.
+
+**Example:**
+<pre>
+"dynamicPromptSelection" : {
+
+     "integrationName" : "openai",
+     "model" : "GPT-3.5 Turbo",
+     "promptName" : "testprompt"
+
+}</pre>
+
+**Note:**
+
+* This field is optional. If omitted, the system uses the default model and prompt configured at the application level.
+* All values, integrationName, model, and promptName, are **case sensitive**.
+* Ensure that the specified model and prompt are correctly **configured and published under GenAI settings.**
+* When using a **custom LLM**, the integrationName must match the exact name defined in the custom integration settings.
+* To use the **default prompt configured in the application**, set promptName as “Default”.
+* Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.
+* For Kore XO GPT (korexo):
+    * The model must be set to "XO-GPT".
+    * The prompt must be "Default" (custom prompts are not supported).
+   </td>
+   
+   </tr>
 </table>
 
 

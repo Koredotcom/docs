@@ -8,13 +8,13 @@ This document provides information on the feature updates and enhancements intro
 
 #### Agentic Copilot in the Agent AI Widget
 
-The Agentic Copilot feature lets you configure an Agentic app that autonomously manages end-to-end customer interactions. At runtime, agents can edit or override the app’s suggestions and enter their own content.
+The Agentic Copilot feature lets you configure an Agentic app that autonomously manages end-to-end customer interactions. At runtime, agents can edit or override the app’s suggestions and enter their own content. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)
 
 #### Configuration of Agentic Apps
 
-The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, enabling multiple Agentic apps simultaneously.
+The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, allowing multiple Agentic apps simultaneously. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/linked-services.md)
 
-The **Agent AI Settings** > **Agent AI Channel Specific Settings** section now includes the Agentic Copilot settings. You can enable or disable Agentic Copilot, select an Agentic App, select or clear the **Allow auto send Message** button, and set a delay timer (up to 10 seconds) for auto send messages.
+The **Agent AI Settings** > **Agent AI Channel Specific Settings** section now includes the Agentic Copilot settings. You can enable or disable Agentic Copilot, select an Agentic App, select or clear the **Allow auto send Message** button, and set a delay timer (up to 10 seconds) for auto send messages. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md)
 
 #### Improved Visual Cue for Dialog Selection During Runtime
 
@@ -22,25 +22,25 @@ Hovering over a dialog in the dialog library (Search, Assist, and custom tabs) h
 
 #### Transcript Visibility restricted to Call Joining Time
 
-For voice conversations, transcript view is now restricted to the time an agent joins a call. Agents can’t access the transcripts of prior conversations.
+For voice conversations, transcript view is now restricted to the time an agent joins a call. Agents can’t access the transcripts of prior conversations. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md)
 
 ### SDK Enhancements
 
 #### Improved Transcript Handling in SDK
 
-The SDK now includes the **isFromSocket**,**timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
+The SDK now includes the **isFromSocket**, **timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
 
 ### API Enhancement
 
 #### Raw Data API tracks After-Call-Work
 
-The Raw Data API now continues to collect data even after the End of Conversation event is received. This helps track the agent’s After-Call-Work in offline Agent AI mode.
+The Raw Data API now continues to collect data even after the End of Conversation event is received. This helps track the agent’s After-Call-Work in offline Agent AI mode. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
 
 ### Integration Enhancement
 
-#### Integration with Amazon Connect supports Agent AI v3 and XO11
+#### Amazon Connect Integration Supports Agent AI v3 and AI for Service
 
-The Agent AI integration with Amazon Connect supports Agent AI v3 and XO11.
+The Agent AI integration with Amazon Connect supports Agent AI v3 and AI for Service (XO) v11.
 
 <hr>
 
