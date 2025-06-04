@@ -32,6 +32,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 --header 'Authorization: Bearer xxxxOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiYXBwSWQiOiJjcy0zMWVhZDc5Zi0xNDhlLTVmZDUtOTdlNC1mZmI0ZmZjY2FhOTAifQ.b4eBlpjTEkywayWzmgXf-PeKC-6-suxxxxx' \
 --data '{
     "action": "end"
+    "agentId": "<AgentID>"
 }
 '
 ```
@@ -41,6 +42,12 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 | **Parameter** | **Description**                                                                                                                                   | **Mandate** |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | `action`      | The control action to be performed. In this case, the value must be `"end"` to terminate the transcription session.                              | Required    |
+
+| Parameter | Description | Mandate |
+|-----------|-------------|---------|
+| `action` | The control actions to be performed. <br><br>**Available actions:**<br>`start` – Start the transcription session.<br>```{ "action": "start"`, `"agentId": "<Agent ID>" }```<br><br>`pause` – Pause the transcription session.<br>`{ "action": "pause"`, `"agentId": "<Agent ID>"`, `"handover": true }`<br><br>`resume` – Resume the transcription session after a pause.<br>`{ "action": "resume"`, `"agentId": "<Agent ID>" }`<br><br>`end` – Terminate the transcription session.<br>`{ "action": "end"`, `"agentId": "<Agent ID>" }` | Required |
+| `agentId` | An array of `agentId` values. <br>Example: <br>```["u-9d9cc5f8-ac46-5c0e-9986-21270989xxxx"]``` | Required |
+| `handover` | Indicates whether a conversation has been transferred to another agent (used with the `pause` action). <br><br>`true` – The agent transfers the call (e.g., cold transfer) and sends the "pause" event.<br>`false` – A normal hold by the agent (e.g., for consultation). | Required |
 
 ## Sample Response
 
