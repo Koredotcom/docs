@@ -12,7 +12,7 @@ The Agentic Copilot feature lets you configure an Agentic app that autonomously 
 
 #### Configuration of Agentic Apps
 
-The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, enabling multiple Agentic apps simultaneously.
+The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, allowing multiple Agentic apps simultaneously.
 
 The **Agent AI Settings** > **Agent AI Channel Specific Settings** section now includes the Agentic Copilot settings. You can enable or disable Agentic Copilot, select an Agentic App, select or clear the **Allow auto send Message** button, and set a delay timer (up to 10 seconds) for auto send messages.
 
