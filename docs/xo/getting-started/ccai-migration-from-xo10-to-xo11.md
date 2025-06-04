@@ -148,7 +148,7 @@ Steps to initiate the upgrade to XO v11:
     <img src="../images/upgrade-success.png" alt="Upgrade Successful" title="Upgrade Successful" style="border: 1px solid gray; zoom:70%;">
 
     By default, the Send Email to SmartAssist users option is selected. When the app owner clicks Finish, an email informing users about the upgrade is sent to them. Clicking **Visit Documentation Portal** redirects the user to the [XO v11 documentation page](https://docs.kore.ai/xo/home/).  
-    <img src="../email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 

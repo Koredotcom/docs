@@ -34,7 +34,7 @@ The updated SIP Trunk Configuration for Agent AI now provides easier integration
 
 * **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).
 
-* **WebSockets Audio Streaming**: For cloud-native platforms (e.g., Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment.
+* **WebSockets Audio Streaming**: For cloud-native platforms (for example, Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment.
 
 #### Enable Call Recordings via SIPREC for Third-Party Agent Desktops
 
