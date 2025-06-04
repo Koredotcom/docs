@@ -34,7 +34,7 @@ The SDK now includes the **isFromSocket**, **timestampValue**, and **messsageId*
 
 #### Raw Data API tracks After-Call-Work
 
-The Raw Data API now continues to collect data even after the End of Conversation event is received. This helps track the agent’s After-Call-Work in offline Agent AI mode.
+The Raw Data API now continues to collect data even after the End of Conversation event is received. This helps track the agent’s After-Call-Work in offline Agent AI mode. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
 
 ### Integration Enhancement
 

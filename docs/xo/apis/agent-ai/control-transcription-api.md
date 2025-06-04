@@ -33,7 +33,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 --data '{
     "action": "start"
     "agentId": "<AgentID>"
-    }
+}
 '
 ```
 **For pause action**
