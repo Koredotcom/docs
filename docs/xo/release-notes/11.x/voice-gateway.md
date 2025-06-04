@@ -34,7 +34,7 @@ The updated SIP Trunk Configuration for Agent AI now provides easier integration
 
 * **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).
 
-* **WebSockets Audio Streaming**: For cloud-native platforms (e.g., Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment.
+* **WebSockets Audio Streaming**: For cloud-native platforms (for example, Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment.
 
 #### Enable Call Recordings via SIPREC for Third-Party Agent Desktops
 
@@ -42,9 +42,9 @@ You can now enable or disable call recordings for third-party Agent Desktop inte
 
 ### Integration
 
-#### Voice Automation NiceCX (CX One) – SIP Integration with XO v11
+#### Voice Automation NiceCX (CX One) – SIP Integration with AI for Service
 
-The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
+The Voice Automation NiceCX (CX One) – SIP Integration is now supported in AI for Service. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
 
 <hr>
 

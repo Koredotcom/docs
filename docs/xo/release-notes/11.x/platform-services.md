@@ -16,6 +16,12 @@ XO10 Universal Bots act as orchestrators that route user inputs to linked Standa
 
 This release introduces a guided migration path to help users seamlessly transition XO10 Universal Bots into the XO11 framework. [Learn more:octicons-arrow-right-24:](../../getting-started/migration-path-xo10-to-xo11.md#upgrade-journey-steps-for-universal-bots)
 
+### Channels
+
+#### Repeat Bot Response Event now supports SmartAssist Gateway Channel
+
+The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/conversation-events.md#repeat-bot-response-event)
+
 ### Flows
 
 #### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration

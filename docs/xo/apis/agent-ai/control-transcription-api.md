@@ -33,7 +33,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 --data '{
     "action": "start"
     "agentId": "<AgentID>"
-    }
+}
 '
 ```
 **For pause action**
@@ -75,11 +75,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 ```
 ## Body Parameters
 
-| **Parameter** | **Description**                                                                                                                                   | **Mandate** |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| `action`      | The control action to be performed. In this case, the value must be `"end"` to terminate the transcription session.                              | Required    |
-
-| Parameter | Description | Mandate |
+| **Parameter** | **Description** | **Mandate** |
 |-----------|-------------|---------|
 | `action` | The control actions to be performed. <br><br>**Available actions:**<br>`start` – Start the transcription session.<br> `pause`– Pause the transcription session.<br>`resume` – Resume the transcription session after a pause.<br>`end` – Terminate the transcription session.<br> | Required |
 | `agentId` | An array of `agentId` values. <br>Example: <br>```["u-9d9cc5f8-ac46-5c0e-9986-21270989xxxx"]``` | Required |
