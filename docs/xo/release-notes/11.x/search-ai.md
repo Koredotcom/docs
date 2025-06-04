@@ -44,10 +44,6 @@ Search AI now offers expanded multilingual support with the addition of Spanish 
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/language-support.md)
 
-### New Toolkit in Dev Tools
-
-Search AI introduces a dedicated **toolkit** that offers all available relevant resources in a centralized location. The toolkit includes references to various utilities, such as extraction tools, evaluators, and SDKs. This enhancement provides a unified hub for easier discovery and access to the platform utilities.
-
 <hr>
 
 ## v11.13.1 May 17, 2025
