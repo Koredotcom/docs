@@ -14,46 +14,35 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 XO10 Universal Bots act as orchestrators that route user inputs to linked Standard Bots for intent handling. In XO11, this orchestration is supported within a Standard App via **DialogGPT**, eliminating the need for a separate Universal Bot construct.
 
-This release introduces a guided migration path to help users seamlessly transition XO10 Universal Bots into the XO11 framework.
+This release introduces a guided migration path to help users seamlessly transition XO10 Universal Bots into the XO11 framework. [Learn more:octicons-arrow-right-24:](../../getting-started/migration-path-xo10-to-xo11.md#upgrade-journey-steps-for-universal-bots)
 
+### Flows
 
-### Channels
+#### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration
 
-
-#### Repeat Bot Response Event now supports SmartAssist Gateway Channel
-
-The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice.
-
+To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly. [Learn more :octicons-arrow-right-24:](../../flows/node-types/agent-transfer.md#general-settings)
 
 ### APIs
 
-
 #### Support for Proactive Notifications for Webhook Channel via Public API
 
-Proactive notifications allow businesses to initiate outbound messages to users based on specific conditions or events. While this feature is already supported for channels like MS Teams and Slack, its capabilities for the Webhook channel have been limited to single-user notifications via endpoint-based configurations.
+The Proactive Notifications feature for Webhook Channel has been enhanced to support multi-user messaging using a public API, enabling businesses to send outbound messages to multiple recipients simultaneously.
 
-This release introduces multi-user support for the Webhook channel via a secure public API, enabling businesses to trigger scalable outbound communication from any external system.
+Key features
 
-**Key Features**
+* Multi-user messaging in a single API call.
+* JWT-based authentication for secure access.
+* Per-client rate limiting for system stability.
+* Granular logging for improved tracking and debugging.
 
-* The new Public API enables sending proactive messages to multiple users in a single call.
-* API access is protected with JWT-based authentication.
-* Ensures system stability through per-client rate limits.
-
-**Key Benefits**
-
-* Send messages to multiple recipients in one API call.
-* Integrate outbound notifications from any system with webhook configuration.
-* Granular logging improves tracking and debugging of each notification.
 [Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
 #### Debug Logs API now supports additional SMS Channels
 
-The AI for Service Debug Logs API has expanded SMS channel support to include SMS, Twilio SMS, and Genesys Cloud CX Messaging channels, in addition to the existing WebSDK, IVR, IVR AudioCodes, and Voice Gateway.
+The AI for Service Debug Logs API has expanded SMS channel support to include SMS, Twilio SMS, and Genesys Cloud CX Messaging channels, in addition to the existing WebSDK, IVR, IVR AudioCodes, and SmartAssist Gateway. [Learn more:octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
 
 
 ### Voice Call Properties
-
 
 #### Support for Language-specific Voice Call Properties
 
@@ -64,13 +53,14 @@ The platform now supports language-specific configuration of voice call properti
 * Platform users can now define unique voice call properties as per the enabled language.
 * When a new language is added to a bot, existing voice properties from the selected base language are auto-copied to the new language.
 * When adding new components, voice property fields will remain **empty by default** across all languages, allowing independent language-specific configuration.
+[Learn more:octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md)
+
 
 ### Role Management
 
 #### Enhanced Permissions for the Billing Module
 
 The Platform has strengthened security by restricting the Billing Module to App Owners and users with custom roles. This ensures sensitive functions are protected while maintaining a streamlined experience for other user roles. [Learn more:octicons-arrow-right-24:](../../user-management/role-management.md)
-
 
 <hr>
 

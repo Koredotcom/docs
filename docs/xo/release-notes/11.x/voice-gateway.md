@@ -26,19 +26,25 @@ The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ par
 
 Four new English voices—Helena, Electra, Thalia, and Vesta (a slower, senior-friendly option)—are now available in the Deepgram TTS integration. Bot developers can select any of these voices to enhance the user experience and tailor voice interactions to specific audience needs. These additions offer greater flexibility in voice customization, enhancing caller engagement.
 
-### Updated SIP Trunk Configuration
+### SIP Trunk Configuration
 
-#### Updated SIP Trunk Configuration for Third-Party Desktop Integration through AudioSocket
+#### Updated SIP Trunk Configuration for Agent AI with Third-Party Desktops
 
-You can now connect SIP Trunk from third-party desktops to Agent AI through “AudioSocket”, which doesn’t need IP authentication. To enable the “AudioSocket” protocol, the following new fields are added:
+The updated SIP Trunk Configuration for Agent AI now provides easier integration with third-party agent desktops, such as Genesys, NICE, and Talkdesk. It offers two methods for accessing real-time audio streaming:
 
-* **Select the SIP Trunk connection method**: Select a connection method.
-* **Connection URL (Generate URL)**: Automatically generate a URL and copy it to configure in the third-party agent desktop.
-* **Record calls**: Enable this feature to record all calls through the selected SIP Trunk.
+* **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).
+
+* **WebSockets Audio Streaming**: For cloud-native platforms (e.g., Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment.
 
 #### Enable Call Recordings via SIPREC for Third-Party Agent Desktops
 
 You can now enable or disable call recordings for third-party Agent Desktop integrations in the “Configure SIP Trunk” page. These recorded calls can be accessed through a public API. To enable it, go to **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.
+
+### Integration
+
+#### Voice Automation NiceCX (CX One) – SIP Integration with XO v11
+
+The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
 
 <hr>
 

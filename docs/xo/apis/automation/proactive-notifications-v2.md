@@ -11,7 +11,7 @@ Proactive notification includes:
 
 !!!Note 
 
-    Webhook Proactive Notifications only support to Asynchronous V2 version.
+    Webhook Proactive Notifications only support Asynchronous V2 version.
 
 
 <table>
@@ -129,7 +129,7 @@ Sends a non-personalized message to multiple users.
 
 **Custom Message**
 
-Sends a personalized message if `customMessage` is specified; otherwise, uses the main message.
+Sends a personalized message if `customMessage` is specified, else uses the main message.
 
 
 ```

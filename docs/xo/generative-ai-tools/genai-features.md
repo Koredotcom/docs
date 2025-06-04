@@ -116,7 +116,7 @@ The following table displays the features and the supported models.
 
 === "Automation AI - Runtime Features"
 
-    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Dialog Responses|Rephrase User Query#|Zero-shot ML Model|
+    |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Responses|Rephrase User Query#|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI – <br>GPT 4|✅|✅|✅|✅|✅|✅^|
     |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
@@ -197,25 +197,38 @@ This feature uses LLM to reiterate the recent bot responses when the Repeat Resp
 
 ### Rephrase Responses
 
-This feature sends all User Prompts, Error Prompts, and Bot Responses to the Generative AI along with the conversation context, which depends on the configured number of user inputs. Responses are rephrased in English or the selected Non-English Bot Language based on the context and user emotion, providing a more empathetic, natural, and contextual conversation experience to the end-user. You can give instructions (additional instructions) in English or any other bot language you select.
+
+The Response Rephrasing feature in AI for Service improves virtual assistant conversations by making them more natural, human-like, and emotionally intelligent. It supports rephrasing for both standard and structured content types, including JSON and JavaScript, and gives you flexible control over which parts of a conversation to rephrase.
+
+The system sends all User Prompts, Error Prompts, and Bot Responses—along with the conversation context, to the LLM. Responses are rephrased in English or the selected app language, using contextual and emotional cues to create a more empathetic and natural user experience.
+
+The Default_V2 system prompt introduces support for advanced content formats and a wider range of response types, enabling more natural and consistent outputs. This prompt is available exclusively with the OpenAI GPT-4o model. Starting with the v10.14 release, all newly created custom prompts use the V2 format by default. Existing custom prompts remain fully functional and require no modifications.
+
+
+#### Node Level Configuration
+
+Enable this option to send User Prompts, Error Prompts, and Bot Responses from Message, Entity, and Confirmation nodes to the LLM for rephrasing. This setting is off by default, allowing you to configure rephrasing at the node level. You can add instructions in English or any other supported app language.  
+<img src="../images/rr-nodelevel.png" alt="Rephrase Responses" title="Rephrase Responses" style="border: 1px solid gray; zoom:70%;">
 
 
 
+#### Feature Level Advance Settings
 
-
-<img src="../images/dcf(1).gif" alt="Rephrase Dialog Responses" title="Rephrase Dialog Responses" style="border: 1px solid gray; zoom:70%;">
-
-**Usage**
-
-When configuring a Message, Entity, or Confirmation node, you can enable the **Rephrase Response** feature (disabled by default). This lets you set the number of user inputs sent to OpenAI/Anthropic Claude-1 based on the selected model as context for rephrasing the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous. 5 responses are sent as context.
-
-When this feature is disabled, the Rephrase Response section is not visible within your node’s Component Properties.
+Use the Advanced Settings panel to configure how the system rephrases responses using the LLM. These global settings help maintain tonal consistency and generate more natural, context-aware outputs throughout the conversation. When enabled, you can choose which types of responses to send to the LLM for rephrasing.
 
 
 
+* **Messages, Entities, and Confirmation Nodes**: Allows you to enable or disable rephrasing.
+    * **Rephrase at Node Level**: Applies rephrasing only to individual nodes where rephrasing is explicitly enabled.
+    * **Rephrase All**: Applies rephrasing to all Message, Entity, and Confirmation nodes, regardless of their individual settings. If a node doesn’t have specific settings, the system uses the global or feature-level advanced settings such as model and prompt. Nodes with defined configurations continue to use their assigned settings.
+* **Standard Responses**: Enables rephrasing for all Standard Responses across the app.
+* **Events**: Enables rephrasing for all event-based responses across the app.
+* **FAQs**: Enables rephrasing for all FAQ responses across the app.  
+<img src="../images/rr-featurelevel.png" alt="Rephrase Responses" title="Rephrase Responses" style="border: 1px solid gray; zoom:70%;">
 
 
-![alt_text](images/dcf(3).png  )
+For more settings, see [Change Settings for a Pre-built Model](#change-settings-for-a-pre-built-model).
+
 
 
 

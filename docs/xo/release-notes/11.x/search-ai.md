@@ -12,8 +12,6 @@ Search AI now features a new **API stage in the Content Transformation process**
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
-
-
 ### New and Improved Web Crawler
 
 Search AI now includes a new and improved web crawler, designed for better performance and higher-quality content extraction. 
@@ -25,7 +23,7 @@ Key enhancements
 * Optimized JavaScript Crawling & Memory Management with reduced resource usage. 
 * Enhanced Sitemap Processing with asynchronous sitemap fetching and application of crawl depth limits and URL filters at the fetch stage for faster processing.
 * Default Exclude Tags like header, footer, script, style, form, iframe, noscript, etc., to improve content relevance.
-*Improved Error Handling in case of crawl failures and timeouts. 
+* Improved Error Handling in case of crawl failures and timeouts. 
 
 Existing applications will continue to use the current crawler. 
 
@@ -45,7 +43,6 @@ Search AI now offers expanded multilingual support with the addition of Spanish 
 * Search and deliver answers and results in the same language as the user query.
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/language-support.md)
-
 
 ### New Toolkit in Dev Tools
 

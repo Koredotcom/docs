@@ -32,12 +32,6 @@ A new context variable, `isReturn24h`, is now available. This variable is automa
 
 Internal chat translation between supervisors and agents is now available to support multilingual contact centers. This feature automatically translates conversations, allowing agents and supervisors to view both original and translated messages. Supervisors and Agents can apply their preferred language settings configured in the dashboard or monitor. Administrators can control this functionality by enabling or disabling internal chat translation within the translation engine settings. This update extends the existing translation capabilities to internal communications, ensuring effective multilingual interactions and consistency. [Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#translate-internal-chats)
 
-### Flows
-
-#### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration
-
-To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly. [Learn more :octicons-arrow-right-24:](../../flows/node-types/agent-transfer.md#general-settings)
-
 ### Analytics
 
 #### Expanded Alert Configuration: From Service Levels to General System Events
@@ -64,17 +58,11 @@ A new Skills filter is now available in the wallboards. Positioned immediately a
 
 #### Validation Checks for Campaign-Linked Phone Numbers in SMS and Voice Channels
 
-Improved validation prevents deletion of phone numbers or flows linked to active, paused, scheduled, or existing SMS and Voice campaigns. Users see warnings showing the count of linked campaigns and flows. Deletion of phone numbers or queues used by campaigns is restricted, with error messages guiding users to remove links first. SMS channels now support both Simple and Advanced messaging in Inbound-Outbound mode. Additionally, deleting voice flows or queues tied to campaigns is blocked, ensuring campaigns cannot run without the required phone numbers or queues.
+Improved validation prevents deletion of phone numbers or flows linked to active, paused, scheduled, or existing SMS and Voice campaigns. Deletion of phone numbers or queues used by campaigns is restricted, with error messages guiding users to remove links first. SMS channels now support both Simple and Advanced messaging in Inbound-Outbound mode. Additionally, deleting voice flows or queues tied to campaigns is blocked, ensuring campaigns cannot run without the required phone numbers or queues. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md#configure-sms-channel)
 
 #### Pagination and Sorting in Campaigns, Contacts, DNC Lists, and Templates
 
-List views for Campaigns, Contacts, DNC lists, and Templates now support pagination and sorting, improving navigation and data management. Campaign Managers see the total number of items, the current range displayed on each page (for example, 1–50 of 250), and can easily navigate using next, previous, or direct page number selection. The interface allows filtering and sorting by Last Updated date to quickly access recent changes, while campaigns support sorting by priority to focus on high- or low-priority items. Each page displays up to 50 items for easier browsing. After applying filters or making updates, users remain on the current page to maintain context. These enhancements streamline the management of large data sets across the platform.
-
-### Integration
-
-#### Voice Automation NiceCX (CX One) – SIP Integration with XO v11
-
-The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11.
+List views for Campaigns, Contacts, DNC lists, and Templates now support pagination and sorting, improving navigation and data management. Campaign Managers see the total number of items, the current range displayed on each page (for example, 1–50 of 250), and can easily navigate using next, previous, or direct page number selection. The interface allows filtering and sorting by Last Updated date to quickly access recent changes, while campaigns support sorting by priority to focus on high- or low-priority items. Each page displays up to 50 items for easier browsing. After applying filters or making updates, users remain on the current page to maintain context. These enhancements streamline the management of large data sets across the platform. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#voice-campaigns)
 
 <hr>
 

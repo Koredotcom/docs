@@ -71,13 +71,16 @@ Steps to delete an existing phone number:
 1. Click the ellipsis (**︙**) and select **Delete**.  
     <img src="../images/delete-phone-number.png" alt="Delete Phone Number" title="Delete Phone Number" style="border: 1px solid gray; zoom:80%;">
 
-2. The following pop-up is displayed. Click **Delete** to confirm your choice.  
-    <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
+2. Click **Delete** to confirm your choice.  
 
 3. Alternatively, click **Update**, go to the **Forward to Phone Number** window, and click **Remove**. You will need to confirm your choice.  
     <img src="../images/remove-phone-number.png" alt="Remove Phone Number" title="Remove Phone Number" style="border: 1px solid gray; zoom:80%;">
 
 4. A success confirmation message is displayed once the phone number is deleted.
+
+    !!! Note
+
+        The phone number cannot be deleted if there are active voice campaigns or flows attached to the channel.
 
 ### SIP Trunk Setup
 
