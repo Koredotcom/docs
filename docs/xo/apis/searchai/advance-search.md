@@ -94,6 +94,31 @@ This API enables you to retrieve answers and search results related to a specifi
    <td>No
    </td>
   </tr>
+    <tr>
+   <td>metaFilters
+   </td>
+  
+   <td>This parameter can be used to define rules to filter out the results from the Answer Index before using them for generating the answer. This parameter takes an array of rules with conditions. For instance, to use only web pages to answer a query, set the filters as shown below.
+   
+  <pre>
+   <code>
+    "metaFilters": [
+        {
+        "condition": "AND",
+        "rules": [
+            {
+            "fieldName": "sourceType",
+            "fieldValue": [
+                "web"
+            ],
+            "operator": "contains"
+            }]
+        }]
+    </pre>
+   </td> <td>No
+   </td>
+  </tr>
+
   <tr>
    <td>isFacetsEnable
    </td>
@@ -110,6 +135,135 @@ This API enables you to retrieve answers and search results related to a specifi
    <td>No
    </td>
   </tr>
+   <tr>
+   <td>raclEntityIds</td>
+  
+   <td>Array of RACL values
+
+This field specifies the <strong>RACL (Role-Based Access Control List)</strong> values to be used to determine accessible content. It can include both <strong>user identities<strong> (e.g., email addresses) and <strong>permission entity IDs </strong>(e.g., user groups).
+
+When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response.
+
+For instance,
+
+<pre>
+raclEntityIds: [
+
+“123234”, // Permission Entity ID
+
+“[user@example.com](mailto:user@example.com)” // User Identity
+
+]</pre>
+
+<ul>
+<li>Content with a sys_racl field that includes either "123234" or "user@example.com" will be accessible.</li>
+<li> The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com".</li>
+</ul>
+This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings.
+
+“raclEntityIds” takes precendence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present we will only honor that. 
+
+
+   </td>
+    <td>No </td>
+  </tr>
+
+  <tr>
+
+   <td>dynamicPromptSelection
+
+   </td>
+   <td>Specifies the prompt and model to be used to generate the answer in this API call. If not provided, the API will use the default model and prompt configured at the application level.
+
+This field accepts the following three parameters:
+
+
+
+* **integrationName:** Specifies the name of the GenAI provider. Supported values include:
+    * "openai"
+    * "azure"
+    * "korexo"
+    * custom integration name (must exactly match the name defined in the configuration)
+* **model**: Name of the specific LLM model to be used for answer generation. This must match the model name defined in the GenAI configuration exactly.
+* **promptName**: Name of the prompt to be used to generate the answer. Use "Default" to apply the default prompt configured in the application.
+
+**Example:**
+<pre>
+"dynamicPromptSelection" : {
+
+     "integrationName" : "openai",
+     "model" : "GPT-3.5 Turbo",
+     "promptName" : "testprompt"
+
+}</pre>
+
+**Note:**
+
+* This field is optional. If omitted, the system uses the default model and prompt configured at the application level.
+* All values, integrationName, model, and promptName, are **case sensitive**.
+* Ensure that the specified model and prompt are correctly **configured and published under GenAI settings.**
+* When using a **custom LLM**, the integrationName must match the exact name defined in the custom integration settings.
+* To use the **default prompt configured in the application**, set promptName as “Default”.
+* Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.
+* For Kore XO GPT (korexo):
+    * The model must be set to "XO-GPT".
+    * The prompt must be "Default" (custom prompts are not supported).
+   </td>
+   <td>
+No
+
+   </td>
+   </tr>
+   <tr>
+   <td> includeMetaDataAnswers</td>
+<td>This field can fetch specific chunk metadata fields in the response along with the default fields. The requested fields are returned as part of the graph_answer field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value. For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
+
+"IncludeMetaDataAnswers": ["chunkMeta.author", “subtitle”]. 
+
+Note that for metadata fields, use the field name along with the root name, such as chunkMeta.<x>, as shown in the above example.
+</td>
+<td>No</td>
+</tr>
+
+<tr>
+   <td>
+
+```
+raclEntityIds
+```
+
+
+   </td>
+   <td>Array of RACL values.
+
+This field specifies the **RACL (Role-Based Access Control List)** values to be used to determine accessible content. It can include both **user identities** (e.g., email addresses) and **permission entity IDs**(e.g., user groups).
+
+When raclEntityIds is passed in the API request, Search AI exclusively uses the provided values in raclEntityIds to identify accessible content. No additional mapping between user identities and permission entities is performed to resolve content accessibility. For each value in raclEntityIds, only the content where the sys_racl field contains a matching value will be accessible in the response. 
+
+For instance, if raclEntityIds: [ “123234”, // Permission Entity ID “[user@example.com](mailto:user@example.com)” // User Identity ] 
+
+
+
+* Content with a sys_racl field that includes "123234" or "user@example.com" will be accessible. 
+* The API will not perform additional lookups to identify content accessible to other related permission entities for "user@example.com". 
+
+This parameter enables granular control over content accessibility by explicitly specifying allowed entities. It ensures strict adherence to the provided values without relying on broader permission mappings. 
+
+“raclEntityIds” takes precedence over any key set to use via RACL resolver API. So even if that is configured whenever “raclEntityIds” is present, we will only honor that.
+
+   </td>
+   <td>No
+
+   </td>
+   </tr>
+
+   <tr>
+   <td> includeChunksInResponse </td>
+<td>This can be set to true or false. When set to true, the response will also include a list of qualified chunks. The chunk information is stored in the response's chunk_result field.</td>
+<td>No</td>
+
+
+   </tr>
 </table>
 
 **Sample Request**

@@ -119,7 +119,50 @@ Currently, Search AI offers two types of stages for transformation at this step.
     * Select **Created On** as the field.
     * Choose **less than** as the operator.
     * Enter the **cutoff date** as the value.
+4. API Stage
 
+    This stage allows you to invoke an external API to modify, enrich, or analyze content during the transformation stage. When the API Stage is configured, the system sends the content to the specified external API. The transformed content received in the API response can be saved in any content field for further processing or indexing.
+
+    This can be particularly useful for enriching documents with metadata via custom models or using external summarization or translation pipelines to add a summary of the content. 
+
+
+### Configuration 
+
+* Endpoint: The URL to which the content should be sent (must be a POST endpoint).
+* Headers: Key-value pairs to be sent to the API as headers ( for authentication and other required headers)
+* Request Body: Content to be sent to the API.  To pass content fields in the request , use the following format **{{field_name}}**. During a request to the API, this is dynamically replaced with the value of the field. For instance, in the following example where a request is sent to Open AI for extracting metadata from the source, {{content}} is replaced with the actual value of the content field for the doc under processing. 
+
+```
+{
+  "model": "gpt-4o-mini",
+  "temperature": 0.3,
+  "max_tokens": 650,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an expert at extracting metadata from a document for augmenting existing data. Extract metadata from the document and return it in a structured format."
+    },
+    {
+      "role": "user",
+      "content": "{{content}}"
+    }
+  ]
+}
+```
+### Testing and Mapping API Response
+
+Click the **Test** button to send a request to the configured API. The **Response** tab displays the data returned by the API. You can map fields from this response to **Search AI schema fields**.
+
+Refer to the [default field mappings documentation] for a list of fields extracted from the source (based on the standard Search AI schema) and available for mapping.
+
+![alt_text](images/map-fields.png "image_tooltip")
+
+
+### Points to Note:
+
+* Only POST APIs are currently supported.
+* Only Sync APIs are currently supported. 
+* You can map one or more API response fields to the Search AI schema fields corresponding to the doc. 
 
 ## Stages available for different Extraction Strategies
 
@@ -185,9 +228,6 @@ Currently, Search AI offers two types of stages for transformation at this step.
    </td>
   </tr>
 </table>
-
-
-
 
 ## Adding a New Stage
 
