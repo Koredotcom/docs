@@ -12,7 +12,7 @@ The Agentic Copilot feature lets you configure an Agentic app that autonomously 
 
 #### Configuration of Agentic Apps
 
-The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, enabling multiple Agentic apps simultaneously.
+The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, allowing multiple Agentic apps simultaneously.
 
 The **Agent AI Settings** > **Agent AI Channel Specific Settings** section now includes the Agentic Copilot settings. You can enable or disable Agentic Copilot, select an Agentic App, select or clear the **Allow auto send Message** button, and set a delay timer (up to 10 seconds) for auto send messages.
 
@@ -28,7 +28,7 @@ For voice conversations, transcript view is now restricted to the time an agent 
 
 #### Improved Transcript Handling in SDK
 
-The SDK now includes the **isFromSocket**,**timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
+The SDK now includes the **isFromSocket**, **timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
 
 ### API Enhancement
 
@@ -38,9 +38,9 @@ The Raw Data API now continues to collect data even after the End of Conversatio
 
 ### Integration Enhancement
 
-#### Integration with Amazon Connect supports Agent AI v3 and XO11
+#### Amazon Connect Integration Supports Agent AI v3 and AI for Service
 
-The Agent AI integration with Amazon Connect supports Agent AI v3 and XO11.
+The Agent AI integration with Amazon Connect supports Agent AI v3 and AI for Service (XO) v11.
 
 <hr>
 

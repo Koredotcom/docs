@@ -10,6 +10,7 @@ This document provides information on the feature updates and enhancements intro
 
 Search AI now features a new **API stage in the Content Transformation process** within the Extraction Module. This enhancement allows users to leverage external services for content transformation. Users can specify a custom POST API endpoint along with the necessary headers and request body to send extracted content for enrichment before chunking. This integration facilitates seamless collaboration with third-party tools, enabling the extraction, classification, and transformation of metadata and content.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
 ### New and Improved Web Crawler
 
@@ -22,7 +23,7 @@ Key enhancements
 * Optimized JavaScript Crawling & Memory Management with reduced resource usage. 
 * Enhanced Sitemap Processing with asynchronous sitemap fetching and application of crawl depth limits and URL filters at the fetch stage for faster processing.
 * Default Exclude Tags like header, footer, script, style, form, iframe, noscript, etc., to improve content relevance.
-*Improved Error Handling in case of crawl failures and timeouts. 
+* Improved Error Handling in case of crawl failures and timeouts. 
 
 Existing applications will continue to use the current crawler. 
 
@@ -30,13 +31,18 @@ Existing applications will continue to use the current crawler.
 
 Search AI answer generation APIs (v1 and v2) now support optional fields in the request to specify the **prompt** and **model** for generating answers. This enhancement enables dynamic selection of LLM configurations, allowing users to tailor responses based on context, use case, or audience.
 
+[Learn more :octicons-arrow-right-24:](./../../apis/searchai/advance-search.md)
+
+
 ### Enhanced Multilingual Support
 
-Search AI now offers expanded multilingual support with the addition of Spanish and Dutch to enhance the customer experience. Users can:
+Search AI now offers expanded multilingual support with the addition of Spanish to enhance the customer experience. Users can:
 
 * Add and organize content in multiple languages.
 * Understand and interpret queries in supported languages.
 * Search and deliver answers and results in the same language as the user query.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/language-support.md)
 
 ### New Toolkit in Dev Tools
 
