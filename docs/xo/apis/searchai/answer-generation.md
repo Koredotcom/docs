@@ -209,6 +209,48 @@ This parameter enables granular control over content accessibility by explicitly
    <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc.
    </td>
   </tr>
+   <tr>
+
+   <td>dynamicPromptSelection </td>
+   <td> No </td>
+   <td>Specifies the prompt and model to be used to generate the answer in this API call. If not provided, the API will use the default model and prompt configured at the application level.
+
+This field accepts the following three parameters:
+
+
+
+* **integrationName:** Specifies the name of the GenAI provider. Supported values include:
+    * "openai"
+    * "azure"
+    * "korexo"
+    * custom integration name (must exactly match the name defined in the configuration)
+* **model**: Name of the specific LLM model to be used for answer generation. This must match the model name defined in the GenAI configuration exactly.
+* **promptName**: Name of the prompt to be used to generate the answer. Use "Default" to apply the default prompt configured in the application.
+
+**Example:**
+<pre>
+"dynamicPromptSelection" : {
+
+     "integrationName" : "openai",
+     "model" : "GPT-3.5 Turbo",
+     "promptName" : "testprompt"
+
+}</pre>
+
+**Note:**
+
+* This field is optional. If omitted, the system uses the default model and prompt configured at the application level.
+* All values, integrationName, model, and promptName, are **case sensitive**.
+* Ensure that the specified model and prompt are correctly **configured and published under GenAI settings.**
+* When using a **custom LLM**, the integrationName must match the exact name defined in the custom integration settings.
+* To use the **default prompt configured in the application**, set promptName as “Default”.
+* Since you cannot add a new prompt for Kore XO GPT, set prompt=”Default”.
+* For Kore XO GPT (korexo):
+    * The model must be set to "XO-GPT".
+    * The prompt must be "Default" (custom prompts are not supported).
+   </td>
+   
+   </tr>
 </table>
 
 
