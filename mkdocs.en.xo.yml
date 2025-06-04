@@ -506,7 +506,7 @@ nav:
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
-        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - Linked Services: agentai/configuration/linked-services.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md

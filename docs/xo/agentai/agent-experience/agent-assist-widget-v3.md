@@ -20,6 +20,7 @@ The following features are available in the Agent AI widget:
 * **Image or file attachment**: Allows image or file attachments during live conversations.
 * **Theme selection**: Allows customization of the widget appearance by letting you select a Dark or Light theme.
 * **In-line Digital Form**: Lets you easily collect customer information during live conversations.
+* **Agentic Copilot**: The Agentic Copilot runs end-to-end conversations autonomously with Agents supervising the conversations. Agents can cancel, override, or edit the Agentic conversations, as needed. 
 
 <img src="../widget-images/agent-assist-widget-v3-appearance.png" alt="agent-assist-widget-v3-appearance.png" title="agent-assist-widget-v3-appearance.png" style="border: 1px solid gray; zoom:80%;">
 
@@ -72,13 +73,14 @@ My bot functionality can be used in multiple circumstances (but not limited to):
 
 ### Assist Tab
 
-The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, a “bulb” icon (if there is a Dynamic Playbook match), and a summary generation button. For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
+The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Agentic Copilot messages, Dialog Tasks, Playbooks, Agent Coaching progression, a “bulb” icon (if there is a Dynamic Playbook match), and a summary generation button. For these features to be available, they should be configured on your device. This tab accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file. It also features the "up" and "down" arrow buttons to scroll to the first and last messages in the Assist tab (these buttons appear only after the messages in the Assist tab are large enough to require a scroll bar). 
 
 <img src="../widget-images/assist-tab.jpg" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">  
 
 The Assist tab facilitates the following:
 
 * Guide agents through conversations by providing the best response suggestions.
+* Display Agentic Copilot messages.
 * Automatic retrieval of information from knowledge base (KB) based on user intent.
 * Provide structured training and coaching to agents.
 * Run bot for customers based on customer-provided information.
@@ -93,8 +95,20 @@ The Assist tab facilitates the following:
 
 The Assist tab features the following:
 
- * **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
- * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
+* **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
+* **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
+- **Agentic Copilot messages**: The messages appear with a “Sending” button that delays up to 10 seconds (based on the time set in the Set message delay before auto send field of the **Agent AI Widget Settings** section). During this time, Agents can click “x” beside the “sending” button to cancel auto send and then manually send or copy the messages. The following screenshot shows the auto send functionality button in progress along with the “Override” button:  
+<img src="../widget-images/agentic-app-in-widget.png" alt="agentic-app-in-widget" title="agentic-app-in-widget" style="border: 1px solid gray; zoom:80%;"> 
+
+   * To cancel auto sending, click “x” beside the “sending” button:  
+    <img src="../widget-images/agentic-app-messages.png" alt="agentic-app-messages" title="agentic-app-messages" style="border: 1px solid gray; zoom:80%;"> 
+
+       * Click the “copy” icon to copy the message to the “chat response” field.
+       * Click the “Send” button to send the message manually.
+       * Click “Override” to discard the Agentic prompt and enter your own response manually.
+       * To stop/resume the “auto send” function, click the “stop/resume” icon in the top-right corner of the Agent AI widget, next to the “pause/resume” icon.
+       * To pause or resume the Agentic app function, click the “pause/resume” icon in the top-right corner of the Agent AI widget. 
+
 * **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
 * **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
 * **Up/down arrow buttons**: These buttons appear only after the messages in the Assist tab are large enough to require a scroll bar. Click the **up** and **down** arrows to go to the first and last messages respectivly.
