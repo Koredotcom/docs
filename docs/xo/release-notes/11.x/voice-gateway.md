@@ -2,6 +2,52 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.14.0 May 31, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Channels
+
+#### Repeat User Identification for Voice Channel
+
+Repeat user identification is extended to the Voice Channel. This enhancement enables consistent recognition of returning users across all communication channels using predefined identifiers. It enhances routing accuracy and personalization in voice interactions while providing unified insights into user behavior for administrators, supervisors, and contact center operations teams. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#context-identify-returning-contact-center-ai-ccai-customers-within-24-hours)
+
+### Call Control Parameters
+
+#### Support for ‘Speed’ Parameter in Elevenlabs TTS
+
+The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#elevenlabs)
+
+### Text to Speech (TTS)
+
+#### Added New Deepgram TTS Voices
+
+Four new English voices—Helena, Electra, Thalia, and Vesta (a slower, senior-friendly option)—are now available in the Deepgram TTS integration. Bot developers can select any of these voices to enhance the user experience and tailor voice interactions to specific audience needs. These additions offer greater flexibility in voice customization, enhancing caller engagement.
+
+### SIP Trunk Configuration
+
+#### Updated SIP Trunk Configuration for Agent AI with Third-Party Desktops
+
+The updated SIP Trunk Configuration for Agent AI now provides easier integration with third-party agent desktops, such as Genesys, NICE, and Talkdesk. It offers two methods for accessing real-time audio streaming:
+
+* **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).
+
+* **WebSockets Audio Streaming**: For cloud-native platforms (e.g., Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment.
+
+#### Enable Call Recordings via SIPREC for Third-Party Agent Desktops
+
+You can now enable or disable call recordings for third-party Agent Desktop integrations in the “Configure SIP Trunk” page. These recorded calls can be accessed through a public API. To enable it, go to **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.
+
+### Integration
+
+#### Voice Automation NiceCX (CX One) – SIP Integration with XO v11
+
+The Voice Automation NiceCX (CX One) – SIP Integration is now supported in XO v11. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
+
+<hr>
+
 ## v11.13.1 May 17, 2025
 
 <u> Patch Release </u>

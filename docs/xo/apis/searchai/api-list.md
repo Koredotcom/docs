@@ -15,5 +15,5 @@ The following table lists the APIs available for Search AI, which allows users t
 | [Connector APIs](./connector-apis.md) | To list details of the configured connectors | Permission Entity Management |
 | [Answer Insights](./answer-insights.md) | To initiate the export of answer insights data to a file | Answer Insights |
 | [Jobs](./jobs.md) | To get the details of a job | Answer Insights |
-| [Feedback](./feedback.md) | To share the feedback on an answer | Answer Insights |
+| [Feedback](./feedback.md) | To share the feedback on an answer | Feedback for Search AI |
 

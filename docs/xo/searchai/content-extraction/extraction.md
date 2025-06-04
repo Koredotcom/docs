@@ -100,7 +100,8 @@ Once the API is successfully invoked, you can see the generated response. If the
 
 The Markdown Strategy is a document extraction approach that transforms each page of a source document into a structured Markdown format before further processing. This strategy is particularly effective in preserving the semantic structure of the original content. Extracting and converting content to **Markdown** provides structured and cleaner data for indexing and retrieval.
 
-Currently, it can only be used for extraction from PDF files.
+Currently, it can only be used for extraction from **PDF files**, uploaded directly, or ingested via connectors.
+
 
 
 ### Image-Based Document Extraction
@@ -109,9 +110,9 @@ Currently, it can only be used for extraction from PDF files.
 
 These page images are then processed using a **VDR embedding model**, which generates embeddings that capture both the textual and visual semantics of the content. This allows for a more accurate and comprehensive representation of the document, significantly improving search and retrieval performance in systems where layout and structure are essential.
 
-Alongside the visual embedding, the contents of each pages are extracted into a standard chunk format.  Each extracted chunk includes an additional field, page_image_url, which references the corresponding page image.
+Alongside the visual embedding, the contents of each page are extracted into a standard chunk format.  Each extracted chunk includes an additional field, page_image_url, which references the corresponding page image.
 
-Currently, it can only be used for extraction from PDF files.
+Currently, it can only be used for extraction from **PDF files**, uploaded directly, or ingested via connectors.
 
 !!! note
     To enable indexing using visual embeddings, select the **image-based embedding model** in the **Vector Configuration** page.

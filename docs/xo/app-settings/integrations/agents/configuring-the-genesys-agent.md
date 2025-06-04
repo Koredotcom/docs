@@ -38,7 +38,7 @@ To configure the agent, follow these steps:
 
 
 1. Log in to your Genesys Cloud account. The login URL will be visible in your browser’s address bar e.g., [https://login.mypurecloud.com](https://login.mypurecloud.com/).
-2. Copy the URL and keep it for future use..
+2. Copy the URL and keep it for future use.
 3. Alternatively, you can also get your region-specific “Genesys Cloud login URL” by referring to this [Genesys Cloud region URL's info](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/#tab2).
 
 
@@ -101,7 +101,7 @@ To configure the agent, follow these steps:
 
 1. Navigate to Admin > Message > Messenger Configurations and click New Configuration.
 2. Enter a name and description, then under Labels & Languages Support, choose the supported languages and set the default language.
-3. In the Apps tab, set Conversation Disconnect to *Display conversation status and disconnect session* and click Save.
+3. In the Apps tab, set Conversation Disconnect to *Display conversation status and disconnect session*, and click Save.
 4. Navigate to Admin > Message > Messenger Deployments and click Create New Deployment.
 5. Enter a deployment name, select the Messenger configuration you have created, and for Supported Content Profile, choose WebMessaging Legacy Default.
 6. Set domain restrictions as needed.
@@ -126,7 +126,7 @@ To configure the agent, follow these steps:
 
 
 
-1. Log in to the Kore.ai XO Platform:[ https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder).
+1. Log in to the Kore.ai XO Platform:[ https://platform.kore.ai/builder/home](https://bots.kore.ai/botbuilder).
 2. Select a Virtual Assistant for which you want to configure the Genesys agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click **Genesys**. 
 

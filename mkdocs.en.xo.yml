@@ -175,9 +175,10 @@ nav:
         - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
         - Current Limitations: release-notes/current-limitations.md  
       - Migration:
-        - Benefits of XO11: getting-started/benefits-ai-service-xo-v11.md
-        - Migration from v10 to v11: getting-started/migration-path-xo10-to-xo11.md
-        - Migration for Agent AI: agentai/migration/agent-ai-migration-from-xo-v10-to-v11.md
+        - Benefits of XO v11: getting-started/benefits-xo11.md
+        - Automation AI Migration: getting-started/migration-path-xo10-to-xo11.md
+        - Contact Center AI Migration: getting-started/ccai-migration-from-xo10-to-xo11.md
+        - Agent AI Migration: getting-started/agent-ai-migration-from-xo10-to-xo11.md
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
@@ -288,11 +289,14 @@ nav:
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
       - Test (Talk to Bot): automation/testing/talk-to-bot.md
-      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
-      - Regression Testing: 
-        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: automation/testing/regression-testing/batch-testing.md
-        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
+      - DialogGPT based Apps:
+        - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
+      - NLP based Apps:
+        - Utterance Testing - NLP: automation/testing/testing-your-bot-with-nlp.md 
+        - Regression Testing: 
+          - Health and Monitoring - NLP: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
+          - Batch Testing - NLP: automation/testing/regression-testing/batch-testing.md
+          - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
@@ -429,7 +433,10 @@ nav:
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
-    - Flows and Routing:
+        - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
+        - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
+    - Performance Management:
+      - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts/manage-slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
@@ -546,6 +553,7 @@ nav:
           - Model Building: generative-ai-tools/xogpt-model-specifications.md
           - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
           - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - DialogGPT Model: generative-ai-tools/xogpt-dialoggpt-model.md
           - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
           - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
         - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
@@ -646,6 +654,7 @@ nav:
           - Kore Voice Automation:
             - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
+            - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

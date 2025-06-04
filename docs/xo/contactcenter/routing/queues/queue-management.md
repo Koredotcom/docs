@@ -47,8 +47,8 @@ This section displays the following:
 ### Add a Queue
 
 1. At the top-right corner of the Configuration page, Click **New Queue**.
-2. In the **New Queue** window, you can set up the queue as follows:
-<img src="../images/new-queue-button.png" alt="New Queue Button" title="New Queue Button" style="border: 1px solid gray; zoom:80%;">
+2. In the **New Queue** window, you can set up the queue as follows:  
+    <img src="../images/new-queue-button.png" alt="New Queue Button" title="New Queue Button" style="border: 1px solid gray; zoom:80%;">
     1. With **Simple Routing**, you can configure the Queue Settings and Assignments;  
     2. With **Advanced Routings**, you can configure the Queue Settings, Assignments, Preferred Agents, and Skills.
 
@@ -59,24 +59,24 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 1. The **Name** by which to identify the queue;
 2. A short **Description** of the queue (optional);
 3. **Hours of Operation**: Select from the available [Hours of Operation](../../configurations/hours-of-operation/manage-hours-of-operation.md).
-<img src="../images/queue-settings.png" alt="Queue Settings" title="Queue Settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/queue-settings.png" alt="Queue Settings" title="Queue Settings" style="border: 1px solid gray; zoom:70%;">
 
 4. **Transfer Rules:** This feature lets you limit the agents’ ability to transfer from one queue to another. If this feature is enabled, you can select the specific queues to which agents can transfer customers. If disabled, agents can transfer to any queue from the current one. Turn on the Transfer Rules toggle, select a Queue and click **Done**.  
-<img src="../images/transfer-rules.png" alt="Transfer Rules" title="Transfer Rules" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/transfer-rules.png" alt="Transfer Rules" title="Transfer Rules" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
         If the customer ends the chat before the completion of a transfer, then the transfer will be dropped, and the interaction will not be assigned to any queue or agent. This feature only applies to chat conversations and is available if you are using Kore WebSdk v1.0.
 
 5. **Maximum Wait Time**: Specify the maximum time a conversation should wait in the queue before the default _No available agent_ flow handles it.
-<img src="../images/maximum-wait-time.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/maximum-wait-time.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
 6. **After Call Work (ACW)** You can enable or disable ACW.
 
     **ACW Enabled**
 
     1. **Immediate Slot Release**: The slot becomes available immediately when the conversation ends. Agents can finalize the disposition at their convenience.
-    <img src="../images/immediate-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/immediate-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
     2. **Timed Slot Release**: Agents are required to complete the disposition within a pre-set time duration, during which the slot will remain occupied. A default 30-second timer appears by default, which administrators can modify. The configurable time duration ranges between a minimum of 10 seconds and a maximum of 15 minutes. If the timer field is blank, an alert message is displayed to enter a timeout value ranging between 10 seconds and 15 minutes for the timed slot release.
 
@@ -84,10 +84,10 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
         <img src="../images/timed-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
     3. **Indefinite Slot Release**: If selected, the slot remains occupied until the agent submits the disposition.  
-    <img src="../images/indefinite-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/indefinite-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
 7. **Advanced Routing**: If enabled, preferred agents and skill dropoffs will be available if you enable this option.  
-<img src="../images/advanced-routing.png" alt="Advanced Routing" title="Advanced Routing" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/advanced-routing.png" alt="Advanced Routing" title="Advanced Routing" style="border: 1px solid gray; zoom:100%;">
 
 8. Click **Save**.
 
@@ -100,18 +100,18 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 Follow these steps to assign agents to a queue:
 
 1. Click **Add Agent**;  
-<img src="../images/add-agent-button.png" alt="Add Agent Button" title="Add Agent Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-agent-button.png" alt="Add Agent Button" title="Add Agent Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the checkbox next to an agent’s name to select it and click **Done**. You can use the _Search_ field at the top of the list to find a specific person.  
-<img src="../images/agent-name-select.png" alt="Assign Agents" title="Assign Agents" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/agent-name-select.png" alt="Assign Agents" title="Assign Agents" style="border: 1px solid gray; zoom:70%;">
 
 #### Assign Agent Groups
 
 1. Click **Add Agent Group**;  
-<img src="../images/add-agent-group-button.png" alt="Add Agent Group Button" title="Assign Agent Group Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-agent-group-button.png" alt="Add Agent Group Button" title="Assign Agent Group Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the checkbox next to the name of a group to select it and click **Done**. You can use the _Search_ field at the top of the list to find a specific group.
-<img src="../images/assign-agent-groups.png" alt="Assign Agent Group" title="Add Agent Group" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/assign-agent-groups.png" alt="Assign Agent Group" title="Add Agent Group" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -122,18 +122,18 @@ Follow these steps to assign agents to a queue:
 In the **Preferred** tab, you can assign preferred agents to the queue.
 
 1. Under **Preferred Agents**, find the agent you need in the list. You can use the _Search_ field for this purpose. Select the corresponding **Preferred** checkbox to set the agent as preferred.  
-<img src="../images/preferred-agents.png" alt="Preferred Agents Tab" title="Preferred Agents Tab" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/preferred-agents.png" alt="Preferred Agents Tab" title="Preferred Agents Tab" style="border: 1px solid gray; zoom:70%;">
 
 2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.  
-<img src="../images/advanced-settings.png" alt="Advanced Settings" title="Advanced Settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/advanced-settings.png" alt="Advanced Settings" title="Advanced Settings" style="border: 1px solid gray; zoom:70%;">
 
 #### Skills
 
 1. In the **Skills** tab, search for a specific skill to assign to the Queue.
-<img src="../images/skill-requirement-expiration.png" alt="Assign Skill" title="Assign Skill" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/skill-requirement-expiration.png" alt="Assign Skill" title="Assign Skill" style="border: 1px solid gray; zoom:70%;">
 
 2. Choose whether you want the skill to expire and set the time for this. Once a skill assignment expires, the conversation routes to other assigned skills.
-<img src="../images/skill-expire-duration.png" alt="Skill Requirement Expiration" title="Skill Requirement Expiration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/skill-expire-duration.png" alt="Skill Requirement Expiration" title="Skill Requirement Expiration" style="border: 1px solid gray; zoom:70%;">
 
     When you are ready to save the Queue, click **Create**. The new Queue is then listed among your available queues. You must configure at least the _Settings_ and _Assignment_ tabs to save a queue.
     <img src="../images/create-queue.png" alt="Create Queue" title="Create Queue" style="border: 1px solid gray; zoom:70%;">
@@ -141,7 +141,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 ## Edit a Queue
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.
-<img src="../images/edit-queue-button.png" alt="Edit Queue Button" title="Edit Queue Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-queue-button.png" alt="Edit Queue Button" title="Edit Queue Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Make the required changes and click **Save**.
 
@@ -151,14 +151,15 @@ To delete a queue, follow these steps:
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.
 2. Click the **Delete (bin)** button on the bottom left side.
-<img src="../images/delete-queue-button.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-queue-button.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Delete** to confirm your choice.  
-<img src="../images/confirm-delete.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/confirm-delete.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
-        Deleting a queue means that all corresponding routing rules are removed.
+        * Deleting a queue means that all corresponding routing rules are removed.
+        * The queue cannot be deleted if an active campaign associated with it is running. Please ensure that all campaigns are inactive before attempting to delete them.
 
 ## Assign a Conversation to a Queue
 
