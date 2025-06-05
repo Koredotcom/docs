@@ -53,6 +53,9 @@ This enhancement offers greater flexibility and model diversity for building pow
 
 Agentic Apps now offers a configuration to enable or disable Thought streaming. This gives greater control over what users see during execution. In addition, this update also introduces the ability to customize the thought prompt, allowing developers to define how internal reasoning or system insights are generated and presented. This enhancement helps in tailoring the agent's behavior and is specifically very useful for debugging. 
 
+**Document Upload Limits**
+
+The Agent Platform now supports configurable document upload limits within the platform. Developers can define restrictions on the maximum number of files that the users can upload, the maximum file size, and the maximum token limit for each file. Files exceeding the token threshold are automatically ignored. This ensures more efficient, controlled, and optimized ingestion of contextual information.
 
 <font size="4">Models</font>
 
