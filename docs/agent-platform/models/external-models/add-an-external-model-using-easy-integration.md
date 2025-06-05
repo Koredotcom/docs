@@ -73,7 +73,13 @@ Here is the list of all the external models supported in Agent Platform.
 
 <li>claude-2.1</li>
 
-<li>Claude-2.0</li>
+<li>claude-2.0</li>
+
+<li>claude-3-7-sonnet-20250219</li>
+
+<li>claude-3-5-sonnet-20241022</li>
+
+<li>claude-3-5-haiku-20241022</li>
 
 <li>Claude Sonnet Vision (Available only for the<strong> Image-to-tex</strong>t node, No <strong>Prompt Studio</strong> support).</li>
 </ul>
@@ -160,6 +166,14 @@ Here is the list of all the external models supported in Agent Platform.
 <li>gpt-4-1106-preview</li>
 
 <li>gpt-4</li>
+
+<li>gpt-4.1-2025-04-14</li>
+
+<li>gpt-4.1-mini-2025-04-14</li>
+
+<li>gpt-4.1-nano-2025-04-14</li>
+
+<li>gpt-4.5-preview-2025-02-27</li>
 
 <li>Whisper-1</li>
 

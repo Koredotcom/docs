@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
-## v1.0.6 May 29, 2025
+## v1.0.6 June 5, 2025
 
 <u> Minor Release </u>
 
