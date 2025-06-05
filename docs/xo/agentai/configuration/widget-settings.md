@@ -16,13 +16,19 @@ This section lets you set your preferences based on the channels. It has three c
     * The Playbook feature functions as follows:
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
         * For Primary playbooks, the automatic adherence or automatic tick-off does not happen.
-        * If the Playbook widget is also disabled, the default landing page is “My Bot”.
-* **Agent Coaching**: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only.
+        * If the Playbook widget is also disabled, the default landing page is “My Bot”. 
+
+* **Agent Coaching**: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only. 
+
 * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
 
-    If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
+    If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels. 
 
-* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My Bot, and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
+* **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select an app, select to auto send messages, and set a timer (up to 10 seconds) for auto sending messages. 
+
+* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My Bot, and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection. 
+
+* **Control Transcript Visibility between Agents** (for **Voice** channel): This feature restricts the transcript visibility to the time an agent joins a call. When enabled, transcripts from earlier parts of the conversation are not visible to the transferred agents.
 
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
 
@@ -60,10 +66,18 @@ This section lets you set your preferences based on the channels. It has three c
 6. Turn the toggle **on** or **off** against the **Proactive Mode** widget.
     * Select or clear the **Automatic Dialog Task Entity Extraction** option.
 7. Turn the toggle **on** or **off** against each widget, as required.
-8. Select an option under the **Conversation Transfer** section.
-9. Enable or disable the **Auto Summarization** toggle.
-10. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
-11. Select or clear the **Submit** button under the **Auto Summarization** section.
+8. For the **Agentic Copilot** feature: 
+    1. Select a language from the language list.
+    2. Click the toggle to Enable/Disable the Agentic Copilot feature.
+    3. Select an app from the **Select Agentic App** list.
+    4. Click to select the **Allow auto send Message** field.
+    5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 10 seconds. 
+    <img src="../widget-settings-images/agentic-copilot-setting.png" alt="agentic-copilot-setting" title="agentic-copilot-setting" style="border: 1px solid gray; zoom:80%;"> 
+
+9. Select an option under the **Conversation Transfer** section.
+10. Enable or disable the **Auto Summarization** toggle.
+11. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
+12. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:
 
@@ -78,7 +92,7 @@ This section lets you set your preferences based on the channels. It has three c
         !!! note
             The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
 
-12. Click **Save** to save your settings.
+13. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings
