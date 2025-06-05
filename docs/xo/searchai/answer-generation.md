@@ -17,7 +17,7 @@ This section is used to configure the type of answers to be presented to the use
 
 1. **Extractive Answers**: The topmost chunk retrieved in response to the user query is directly presented to the user as answers. The extractive answers are exact content retrieved from the chunks without any change in text. Provide the following configurations for extractive answers.
     * **Response Length**- This is the expected length of the answer, in tokens.
-2. **Generative Answers**: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. [Integrate LLM](generative-ai-tools/models-library/) and [Enable Answer Generation](https://docs.kore.ai/xo/generative-ai-tools/dynamic-conversations-features/#answer-generation) in the Generative AI Tools configuration. 
+2. **Generative Answers**: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. [Integrate LLM](../generative-ai-tools/models-library.md) and [Enable Answer Generation](../generative-ai-tools/genai-features.md) in the Generative AI Tools configuration. 
 
 **Chunk Configurations**
 
