@@ -203,6 +203,6 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 
 ### Code Snippets
 
-[Main Script SIP Main](../voice-automation-nice-cxone-sip-integration/scripts/sip-main.pdf)
+[Main Script](../voice-automation-nice-cxone-sip-integration/scripts/sip-main.pdf)
 
-[Spawn Script SIP Spawn](../voice-automation-nice-cxone-sip-integration/scripts/sip-spawn.pdf)
+[Spawn Script](../voice-automation-nice-cxone-sip-integration/scripts/sip-spawn.pdf)
