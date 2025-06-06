@@ -28,3 +28,24 @@ Users can also pass contextual information to the agent through attachments. [Le
 This detailed layout enables users to quickly grasp the system's processing, enhancing understanding of how queries are processed and responses are generated.
 
    <img src="../images/flow-diagram.png" alt="Flow Diagram" title="Flow Diagram" style="border: 1px solid gray; zoom:80%;">
+
+### Authorization Process for Agent Tools
+
+If the **Auth Profiles** configured for the agent’s tools require user authorization, the request is shown at the **start of the session**.
+
+The system evaluates whether the authorization has already been completed. 
+
+
+
+* **If already authorized:** The status is shown as **"Authorized"** (as displayed in the image), and the agent proceeds with responding to the user's query. \
+
+* **If not authorized:** The user is prompted to **authorize access** before the agent can proceed further. A secure redirect URL will be presented for the user to complete the authorization process.
+
+**Note:** Until authorization is completed, the agent will not be able to execute the required actions due to lack of access to protected services. In this situation, the tool will fail and return errors. If more than one authorization is required, all of them are listed in the table at the beginning of the interaction. 
+
+
+#### **Example**
+
+In the following example, the agent requires access to Google services and the status indicates that the user has already completed the auth process. 
+
+![alt_text](images/auth.png)

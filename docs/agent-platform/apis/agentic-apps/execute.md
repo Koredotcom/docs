@@ -183,9 +183,9 @@ Once a file is added to the includeFiles list, it remains associated with the se
   <tr>
    <td>metadata
    </td>
-   <td>
+   <td>Allows users to pass metadata information. This data is set to the sessionMeta memory and is available for the duration of the session. 
    </td>
-   <td>
+   <td>No
    </td>
   </tr>
 </table>
@@ -333,6 +333,25 @@ If debug is enabled, the response has additional information as shown below.
 ```
 
 
+**Note**: If any tool used by an agent requires OAuth authorization, the API response for the initial request (when a new session starts) will include a special event of type `IDP_Redirect`. This event contains a URL the user must visit to complete the authorization. If the required authorization is not completed, the associated tools will return an error upon invocation.
+
+```
+"events": [
+        {
+            "type": "IDP_Redirect",
+            "content": {
+                "auth_profiles": [
+                    {
+                        "url": "https://agent-platform.kore.ai/r/396c63515671634648357955",
+                        "idpName": "Google",
+                        "isAuthorized": false,
+                        "sso_type": "oauth2"
+                    }
+                ]
+            }
+        }
+    ]
+```
 
 ### Execution Modes
 

@@ -182,6 +182,42 @@ Returns the details of the newly created session, which are essential for managi
   </tr>
 </table>
 
+**Note:** When a new session is initiated, and the application requires permissions for OAuth authorization from the user, the API response includes a special event of type `IDP_Redirect`.
+
+This event provides a URL that the user must visit to complete the authorization process. If the required authorization is not completed, the associated tools will return an error upon invocation.
+
+
+ ```json
+{
+    "messageId": "msg-260f4d3c-5b8c-4056-af97-11317fc28c8d",
+    "events": [
+        {
+            "type": "IDP_Redirect",
+            "content": {
+                "auth_profiles": [
+                    {
+                        "url": "https://agent-platform.kore.ai/r/396c63515671634648357955",
+                        "idpName": "Google",
+                        "isAuthorized": false,
+                        "sso_type": "oauth2"
+                    }
+                ]
+            }
+        }
+    ],
+    "sessionInfo": {
+        "status": "idle",
+        "userReference": "s-b8987503-696b-4111-a006-49c0cbcf0fb9",
+        "sessionReference": "s-b8987503-696b-4111-a006-49c0cbcf0fb9",
+        "userId": "u-f5e5e830-70d4-53d6-8034-86bfa765c04a",
+        "sessionId": "s-54f40bda-1505-4f9e-b38e-88d39ea36d58",
+        "runId": "r-41ad20e0-6295-4f0e-9b04-e51875356107",
+        "appId": "aa-c31cccce-d0bf-4db5-a177-7ff45941c2d8",
+        "attachments": []
+    }
+}
+```
+
 
 
 ## **List Sessions**
