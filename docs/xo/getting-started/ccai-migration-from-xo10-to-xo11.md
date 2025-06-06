@@ -324,3 +324,7 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 | AgentAssist settings                   | Moved to the AgentAI module. [Learn more](../agentai/configuration/widget-settings.md) |
 | SearchAssist                           | Moved to the AgentAI module. [Learn more](../agentai/configuration/linked-services.md) |
 | Advanced settings                      | Moved to Contact Center AI > Configurations > Advanced Settings. [Learn more](../contactcenter/configurations/advanced-settings/handling-sensitive-data.md) |
+
+!!! Note
+
+        SmartAssist is nearing its end-of-life. All new Contact Center features will be developed exclusively on XO v11. Existing users must migrate to ensure uninterrupted service and continued feature access.
