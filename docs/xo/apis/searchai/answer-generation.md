@@ -161,10 +161,10 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
   <tr>
    <td>IncludeMetaDataAnswers</td>
    <td>No </td>
-   <td>This field can fetch specific chunk metadata fields in the response along with the default fields.The requested fields are returned as part of the **graph_answer **field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value.
+   <td>This field can fetch specific chunk metadata fields in the response along with the default fields.The requested fields are returned as part of the <b>graph_answer</b> field in the response. If a metadata field listed in this object does not exist, the field is returned in the response with a null value.
    
    For instance, to fetch the author name(a metadata field) and subtitle(a custom field) additionally from the chunks, include the following in the request payload. 
-   
+      
    "IncludeMetaDataAnswers": ["chunkMeta.author", “subtitle”]. 
    
    Note that for metadata fields, use the field name along with the root name, such as chunkMeta.&lt;x>, as shown in the above example. 
@@ -198,4 +198,56 @@ This parameter enables granular control over content accessibility by explicitly
 
    </td>
   </tr>
+
+  <tr>
+   <td>customData</td>
+   <td>No </td>
+   <td>Custom data to be sent in the request. This data can be used to further process or filter the search results in the application. This can also be used to pass previous conversations as context or to set user context like user identity, location, etc.
+   </td>
+  </tr>
 </table>
+
+
+## Example of Using Custom Data Request parameter
+
+
+
+1. To pass user information.
+
+```json
+ "customData": {
+       "userContext": {
+             "userName": "John",
+             "userId": "john.smith@kore.com",
+             "emailId": "john.smith@kore.com"
+          }
+   }
+```
+
+
+2. To pass user location
+
+```json
+"customData": {
+   "userContext": {
+   "location": "Germany"
+    }
+}
+```
+
+
+3. To pass the previous conversation as context to the **Query Rephrasing Agent.**
+
+```json
+"customData": {
+  "previousConversation": [
+  {
+  "query": "What is the leave policy for America?",
+  "answer": "The leave policy in the U.S. varies by employer, but the Family and Medical Leave Act (FMLA) allows eligible employees to take up to 12 weeks of unpaid leave for certain family and medical reasons. Paid leave policies depend on the employer."
+  },
+  {
+  "query": "How do I reset my company email password?",
+  "answer": "You can reset your company email password by visiting the IT support portal and selecting 'Forgot Password.' Follow the instructions to reset your password. If you need further assistance, contact the IT helpdesk."
+  }]
+}
+```

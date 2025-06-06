@@ -9,7 +9,7 @@
 
 			
 
-This API lets you get the LLM & Generative AI Usage Logs for both Co-Pilot and Dynamic Conversation features.
+This API lets you get the LLM & Generative AI Usage Logs for GenAI features.
 
 
 <table>

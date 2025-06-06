@@ -11,14 +11,14 @@ Steps to generate and manage your key:
 
 1.  Click on the profile icon located in the lower-left corner of the admin
     dashboard and select **My profile**.  
-    ![](images/dashboard_profile.png)
+    ![](../apis/images/dashboard_profile.png)
 
     Alternatively, you can also retrieve the key from the **My Profile** section
     of the application, located in the upper-right corner of the
-    homepage.![](images/app_profile.png)
+    homepage.![](../apis/images/app_profile.png)
 
 2.  Navigate to the Personal API Key section and click on
-    it.![](images/my_profile.png)
+    it.![](../apis/images/my_profile.png)
 
 3.  Once generated, you can:
 
@@ -27,7 +27,7 @@ Steps to generate and manage your key:
     -   Regenerate the key.
 
     -   Delete the key if it is no longer
-        needed.![](images/api_key.png)
+        needed.![](../apis/images/api_key.png)
 
 ### Using the Personal API Key
 

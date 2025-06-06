@@ -35,10 +35,10 @@ Once the Dashboard is configured for the listed scenarios, it looks like the fol
 
 In this dialog, we have included a Script node to add Custom Meta Tag, TransferValue, based upon the amount transferred. The following script is used:
 
+```
 
 `if(context.entities.TransferAmount[0].amount > 50000){`
 
-```
    tags.addSessionLevelTag("TransferValue", "HighValue");
 }
 
@@ -47,10 +47,10 @@ tags.addSessionLevelTag("TransferValue","MediumValue");
 
 if(context.entities.TransferAmount[0].amount > 0)
 
-```
 `tags.addSessionLevelTag("TransferValue","LowValue");
 `
 
+```
 
 <img src="./../images/transfer-funds-add-scripts.png" alt="Transfer Funds Add Scripts" title="Transfer Funds Add Scripts" style="border: 1px solid gray; zoom:80%;">
 

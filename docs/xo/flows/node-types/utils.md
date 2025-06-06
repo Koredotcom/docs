@@ -6,7 +6,7 @@ This document explains the script nodes, call flows, and supported utils with ex
 
 ### Context | Instance Bot
 
-All the instance bot’s `context.session` variables will be moved under context.
+All the instance bot’s `{{context.session}}` variables will be moved under context.
 
 Example:
 
@@ -278,6 +278,82 @@ agentUtils.setExternalAgentRecordingControl({record: "stop"})
 agentUtils.setExternalAgentRecordingControl({record: "pause"})
 agentUtils.setExternalAgentRecordingControl({record: "resume"})
 ```
+
+### Enable/Disable Transcripts and Voice Call Recordings for Contact Center AI
+
+Using these functions, bot developers can control whether transcripts and recordings are available to agents during transfers to the Contact Center AI Desktop. You can use these functions to:
+
+* Control transcript availability during agent transfers
+* Control recording generation during agent transfers
+* Apply both controls simultaneously when needed
+
+#### Disabling Transcripts
+
+To disable voice call recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentTranscribe({transcribe: false});
+```
+
+* Transcripts will not be accessible to the agent on both the 'Live Interaction' and 'Interactions' pages.
+* The following note will appear near the transcripts widget on the 'Interactions' page:  
+“**Note**: Certain parts of this call were not transcribed due to the applied transcription settings”.
+
+#### Disabling Recordings
+
+To disable recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentRecordingControl({record: "stop"});
+```
+
+* Voice call recordings will not be generated for that agent interaction.
+* The following note will appear near the recording widget on the 'Interactions' page:  
+ “**Note**: Certain parts of this call were not recorded due to the applied recording settings.”  
+* If recordings are disabled at the global account level, the existing note content will be displayed instead.
+
+#### Disabling Both Transcripts and Recordings
+
+To disable both transcripts and recordings before initiating an agent transfer:
+
+Syntax:
+
+```
+agentUtils.setAgentTranscribe({transcribe: false});
+agentUtils.setAgentRecordingControl({record: "stop"});
+```
+
+* Combines the effects of both individual controls as described above
+
+**Example**:
+
+Below is an example of how to disable both transcripts and recordings before transferring to an agent:
+
+```
+// In a script node before agent transfer
+try {
+  // Disable transcripts for the agent
+  agentUtils.setAgentTranscribe({transcribe: false});
+
+
+  // Disable recording for the agent interaction
+  agentUtils.setAgentRecordingControl({record: "stop"});
+
+
+  // Now proceed with agent transfer
+  // Your agent transfer code here...
+}
+```
+
+!!! Notes
+
+    * These controls should be applied before initiating the agent transfer.
+    * The functionality works specifically with transfers to Kore Agent Desktop.
+    * The controls affect only the specified agent interaction, not the entire conversation.
 
 ## userSessionUtils
 

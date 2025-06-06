@@ -1,10 +1,143 @@
 # Agent AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
-## v11.11.0 March 04, 2025
+## v11.13.1 May 17, 2025
+
+<u>Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Integration Enhancements
+
+#### Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls
+
+The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
+
+#### AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware
+
+The Genesys Middleware has been enhanced to monitor changes in the *MemberID* and *CustomContactReasonID* fields within the Genesys Interaction Participant Data. This improvement allows the AgentAssist widget to display the most up-to-date context during active interactions, enabling contact center agents to provide more accurate and relevant support to customers.
+
+<hr>
+
+## v11.13.0 May 03, 2025
+
+<u>Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Widget Enhancements
+
+#### Custom Tab in the Agent AI widget
+
+This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#widget-menu-layout)
+
+#### Introduction of Conversation Events and Automatic Dialog Task Execution on End-of-Conversation Trigger
+
+In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to "Conversation Events". The Conversation Events section allows you to configure events that automatically trigger at the beginning and end of a conversation. You can configure the following events: 
+
+* **Welcome Events**: Pre-configured greeting messages and dialog tasks that automatically trigger when a conversation is assigned to an agent in the Agent AI widget.  
+* **Exit Events**: Pre-configured dialog task or conversation summary that automatically runs when the end-of-conversation event triggers. 
+
+    !!! note
+        You can enable either the dialog task or the conversation summary for the Exit Events section.  
+[Learn more :octicons-arrow-right-24:](./../../agentai/configuration/conversation-events.md)
+
+#### Improved Search Functionality in Library
+
+Search functionality automatically updates the library list to match the search query. The library displays relevant words and phrases as agents type in real time. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab)
+
+### Integration Enhancements
+
+#### Five9 Chat Integration with Agent AI
+
+The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/five9/agentai-chat-integration-with-five9.md)
+
+#### Updated Salesforce Package and support for new Salesforce Live Chat for new organizations
+
+The updated Salesforce package includes the following: 
+
+* Agent Assist is replaced with Agent AI in all configuration screens.  
+* Updated Agent AI logo.  
+* The Agent AI widget loads in full-screen mode for Omni-Channel Voice and Genesys CTI.
+
+#### Outbound Call Support for Agent AI Integration with Salesforce NICE CTI
+
+The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md)
+
+### API Enhancements
+
+#### Tracking Conversation Summary Existence and Display to Agents in the Agent AI Raw Data API
+
+The Raw Data API now includes the ```isWelcomeMsgRead``` parameter to confirm whether a conversation summary exists and whether agents have read or scrolled through it. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md)
+
+<hr>
+
+## v11.12.1 April 19, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### API
+
+#### Control Transcription API
+
+The API lets you control the transcription session of a bot conversation. You can end an ongoing transcription session with a valid conversationId and appropriate authentication tokens. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
+
+<hr>
+
+## v11.12.0 April 05, 2025
 
 <u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### UI Enhancements
+
+#### Gen AI Integration in Agent Coaching
+
+Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-realtime-coaching.md)
+
+#### Search Support in Conversation Logs
+
+The Conversation Logs section now includes a search field to let you find conversations by Conversation ID. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md)
+
+### Integration Enhancements
+
+#### Agent AI Support for Outbound Emails and Offline Mode in Genesys Cloud CX
+
+Agent AI in Genesys Cloud CX now supports outbound emails, enabling you to draft AI-assisted responses. It also supports offline modes with limited real-time API calls.
+
+#### End-of-Call Event Independent of Salesforce Platform Events
+
+The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now receives the End-of-Call events independently, without relying on the Salesforce Platform Events. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md)
+
+#### Agent AI Integration with NICE Agent Desktop
+
+Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md)
+
+### API Enhancements
+
+#### Tracking Auto-suggested Choices and Corrections in the Agent AI Raw Data API
+
+The Raw Data API now includes the suggestionsShown, suggestionUsed, phraseInput, correctionsPresented, and correctionsAccepted parameters to help assess the effectiveness of auto-suggested choices and corrections and identify areas for improvement. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md)
+
+<hr>
+
+## v11.11.1 March 15, 2025
+
+<u>Patch Release</u>
+
+This update includes only bug fixes.
+
+<hr>
+
+## v11.11.0 March 4, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Widget Enhancements
 
@@ -43,7 +176,7 @@ To enhance the management and customization of dialog tasks within the widget, K
 
 Kore has included a new option, **Interactive Language**, in the **Default Language for Agent AI Widget** drop-down list. Selecting this option adjusts the widget's localized text language to match the app's language. [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md/#steps-to-set-agent-ai-general-settings) 
 
-### Integrations
+### Integration Enhancements
 
 #### Support for associating a Single Bot with Multiple Queues in Genesys Cloud CX
 
@@ -62,6 +195,8 @@ Agent AI Voice is now integrated with Salesforce default telephony, Amazon Conne
 ## v11.10.0 February 12, 2025
 
 <u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### UI Enhancements
 
@@ -115,7 +250,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Search AI Configuration
 
@@ -149,7 +284,7 @@ Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-rig
 
 <u> Patch Release </u>
 
-This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
+This update includes minor enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
 ### Multi-lingual Support
 The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
@@ -326,6 +461,7 @@ The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI feat
 <hr>
 
 ## v11.6.0 September 28, 2024
+
 <u> Minor Release </u>
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
@@ -642,7 +778,7 @@ This update includes bug fixes.
 
 <u>Minor Release</u>
 
-Key features and enhancements included in this release are summarized below.
+This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 ### Agent AI Widget Updates
 

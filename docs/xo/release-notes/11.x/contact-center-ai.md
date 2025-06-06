@@ -1,6 +1,206 @@
 # Contact Center AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
+
+## v11.13.1 May 17, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
+
+## v11.13.0 May 03, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Real-time Sentiment Capture and Visualization
+
+The Agent Console now displays real-time sentiment updates and a clickable graph visualizing emotional shifts over time, enabling agents to respond more quickly and empathetically during live conversations, enhancing the customer experience with actionable insights into sentiment trends as they occur. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/real-time-sentiment-analysis.md)
+
+#### Voice Issue Reporting Enhancement
+
+The Console and Monitor tabs now include an enhanced 'Help' menu with a 'Report Voice Issue for Current Call' function. This allows agents and supervisors to report voice problems easily via a standardized form. The system collects issue details and logs upon submission, sends internal notifications, and confirms the report. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#reporting-issues-for-voice-calls)
+
+#### Improved Global Dialing Using Outbound Dialer
+
+The outbound dialer widget now displays "Enter your phone number with country code" when the Global option is selected. It guides agents to include the country code and prevent failed call attempts due to missing country codes. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
+
+#### Show 'Unavailable' in Arrival Summary When Sentiment Is Missing
+
+When sentiment analysis is configured but no utterances are available to analyze, the Sentiment field in the arrival summary will now display "Unavailable" instead of remaining blank. This ensures users are informed that sentiment is intentionally missing due to a lack of conversational data, not an error. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#arrival-summary)
+
+### Configuration
+
+#### Bulk Export for Standard Responses
+
+Admins and supervisors can now export all standard responses as a single CSV file using the new Export option available on the Standard Response configuration page. This enhancement simplifies compliance and validation processes by removing the need for manual effort and retaining essential metadata, such as user ID, category, last modified date, auto-expire status, description, skill match, and agent group match. The file downloads automatically through the browser and remains accessible only to authorized users, ensuring secure and controlled access. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/response-templates/manage-response-templates.md)
+
+#### Email CSAT Configuration
+
+The Email CSAT Configuration now allows administrators to enable or disable surveys for email conversations. Administrators can configure the Request & Gratitude message and Survey Frequency. The “Advanced Survey Conditions” section allows administrators to toggle survey triggers for no agent availability and outside business hours. These updates offer greater flexibility in configuring CSAT surveys for email communications. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/surveys/configure-surveys.md#chat-call-and-email-experience)
+
+### Analytics
+
+#### Interactions Page: Call Status Update for AMD Detected Calls
+
+Supervisors can now view updated call statuses for calls disconnected after being identified as a machine through AMD detection.
+
+* Interactions Page: The following information will be displayed
+    * Status: Completed,
+    * Mode: Machine Detected. 
+* Insights to Logs tab:  
+    * Status: Completed (Closed),
+    * Mode: Machine Detected, 
+    * Reason: Machine Detected, 
+    * Disconnecting Event: System,
+    * Smart Status: Closed.  
+This enhancement provides a clearer understanding of why calls are disconnected after machine detection. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#answering-machine-detection)
+
+#### Monitor: Queue Filters and Agent Name Display
+
+Supervisors can now use quick filters in the Queue tab to easily segment conversations by state, such as those waiting in a queue or with the agent, for faster action. Waiting for Agents is now a quick filter option. Two predefined quick filters will be enabled by default and displayed as tags. Users can edit, delete, or add up to four custom quick filters (five total, including the default). This functionality extends to Agents and Interactions tabs, without predefined templates. Additionally, agent names now appear for conversations pending acceptance, ensuring consistent information display and improving visibility for quicker decision-making. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
+
+#### Reports: Support for Multiple Schedule-and-Frequency Combinations
+
+Contact Center supervisors can now configure multiple schedule-and-frequency combinations for a single report. The platform supports a maximum of six combinations per report.
+
+When you create or modify a report schedule, the interface displays the option to add multiple schedule and frequency entries—up to the allowed limit. This enhancement improves flexibility in scheduling report deliveries based on your specific requirements. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/reports-list.md)
+
+### Campaigns
+
+#### Create and Apply Filters in Voice, SMS, and Proactive Web Campaigns
+
+Campaign Managers can create, duplicate, mark as default, delete and edit filters for Voice, SMS, and Proactive Web Campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md)
+
+#### API Integrated Contacts for Voice Campaigns
+
+Campaign Managers can now configure voice campaigns using API-based contacts for any of the supported dialing modes—Agentless, Progressive, or Preview—enabling streamlined integration with external systems. Additionally, attaching a contact list to a campaign using an API sync configuration establishes a real-time connection with a third-party database, ensuring the campaign accesses up-to-date contact information directly from the external source. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration)
+
+### API
+
+#### Updated API Endpoint Naming for Export/Import
+
+The public Export and Import APIs now use corrected endpoint names that follow proper naming conventions. This change ensures clarity, consistency, and easier integration for developers using these APIs. Existing functionality remains unchanged; only endpoint paths have been updated for accuracy and clarity. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#importexport-data-apis)
+
+<hr>
+
+## v11.12.1 April 19, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### Configuration
+
+#### Deflection Flow Node Added
+
+The voice channel now supports a new Deflection Flow node, allowing for the seamless continuation of existing Deflect to Chat configurations within SmartAssist experience flows. This new node, found in Start and Conditional Voice flows, supports both default and custom flows while preserving original chat deflection behaviors. To utilize this deflection flow, users must upgrade from SmartAssist to XO v11, which includes Automation AI. [Learn more :octicons-arrow-right-24:](../../flows/node-types/deflection-flow.md)
+
+<hr>
+
+## v11.12.0 April 05, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Agent Console Search Functionality
+
+The Agent Console's search functionality allows agents to quickly find active customer conversations using phone numbers, emails, or names. Located in the conversation tray, it shows results as agents type and lets them click to open conversations. Enabled by default for all agents, this enhancement reduces handling time and improves efficiency with no setup required. [Learn more :octicons-arrow-right-24:](../../console/conversation-tray.md#search-conversations)
+
+#### Disposition Alerts for Supervisor Attention
+
+Supervisors will receive real-time alerts when disposition codes requiring supervision or unresolved issues are tagged in a conversation. This feature ensures prompt action and user follow-up. When Disposition Alerts are enabled, supervisors receive:
+
+* Proactive in-platform notifications for flagged dispositions.
+* Automated email alerts are sent to their registered UXO platform email.
+* Multi-language support, with emails and notifications translated based on the conversation language.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-codes)
+
+#### Independent Widget Loading
+
+Custom widgets can now load independent of conversation selection, enabling agents to access and interact with widgets. This enhancement allows:
+
+* Automatic widget availability upon console load, even without an active conversation.
+* A persistent widget until explicitly closed or refreshed.
+* Dynamic updates for widgets are dependent on conversation context, ensuring seamless transitions when a conversation is selected.
+* Support for proactive workflows, allowing agents to initiate actions or access data before engaging with customers.
+
+[Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/widgets/configure-widgets.md#load-widgets-without-conversations)
+
+#### Call History for Inbound and Outbound Calls
+
+Agents can view past call details for both Inbound and Outbound calls in the Call History section of the Agent Console. This enhancement provides:
+
+* A comprehensive view of previous interactions, helps agents understand customer context.
+* Voice call conversation volleys are displayed through the conversation transcript, ensuring quick access to past discussions.
+
+[Learn more :octicons-arrow-right-24:](../../console/additional-tools.md#history)
+
+### Configuration
+
+#### Total Digital Conversation Limit
+
+The Total Digital Conversation Limit improves agent workload management across all digital channels. When enabled, this unified limit automatically marks agents as "system busy" once they reach their combined conversation threshold, regardless of channel type. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#total-digital-conversation-limit)
+
+#### AgentUtils: Transcript and Voice Call Recording Controls for Agent Desktop
+
+App developers can control transcript visibility and voice call recording generation on the Agent Desktop through script nodes before agent transfers.
+
+Using `agentUtils.setAgentTranscribe({transcribe:false})`, transcripts can be hidden from agents with appropriate notifications displayed.
+
+Using `agentUtils.setAgentRecordingControl({record: "stop"})` prevents voice call recording generation with corresponding notices. These functions can be used individually or together for complete control over agent interaction documentation.  
+
+[Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#enabledisable-transcripts-and-recordings-for-kore-contact-center-ai)
+
+### Campaigns
+
+#### Emergency SMS Campaigns
+
+Campaign Managers can run or rerun SMS campaigns as ‘Emergency’ for urgent communication. Users can choose Run to execute campaigns based on priority or Run as Emergency to bypass schedules and process immediately at full capacity. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/sms-campaigns.md#run-as-emergency)
+
+#### Enhanced API Call Tracking and Contact Data Storage in Logs
+
+Campaign managers can view detailed API call logs for contact lists, including Date and Time, Contact List Name, Campaign Name, Status, and Description, ensuring better tracking of API activity. Additionally, all contacts fetched via API calls are stored and made available as downloadable files, enabling users to debug potential issues efficiently. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#logs)
+
+#### Dynamic API Key Handling for Contact Import in List Management
+
+Campaign managers can now get the API key value from environment variables (plain or encrypted) when adding contacts through API integration in List Management. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration)
+
+### Analytics
+
+#### Skill Metrics Daily Report
+
+The Skill Metrics Daily Report provides a daily summary of performance based on conversation skills. This report groups data by Skill and Day, with no grouping by channel or direction. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/skill-metrics-daily-report.md)
+
+#### Enhanced Sorting for Queues, Agents, and Interactions
+
+Supervisors and agents can sort Queues, Agents, and Interaction tabs to manage workloads efficiently. This enhancement provides:
+
+* Sort in ascending and descending order for key columns.
+* Persistent sorting across periodic 5-second data refreshes.
+* Sort within active filters, ensuring relevance.
+* Automatic reordering when multiple items share the same sorting metric, prioritizing by arrival time.
+
+[Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#queues)
+
+<hr>
+
+## v11.11.1 March 15, 2025
+
+<u> Patch Release </u>
+
+This update include only bug fixes.
+
+<hr>
 
 ## v11.11.0 March 04, 2025
 
@@ -82,7 +282,6 @@ Key features
 * Fixed Layout Design: Standardized, non-customizable widget arrangement
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md)
-
 
 #### Interaction Details by Segment Report
 
@@ -194,7 +393,7 @@ Key benefits
 
 #### Deepgram TTS Support
 
-This update includes Deepgram TTS support to complement their existing ASR integration. Deepgram is now available as a TTS option when configuring [Start Flows](../../flows/create-flows.md#create-a-start-flow) and [Voice Preferences](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#voice-preferences).
+This update includes Deepgram TTS support to complement their existing ASR integration. Deepgram is now available as a TTS option when configuring [Start Flows](../../flows/create-flows.md#create-a-start-flow) and [Voice Preferences](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences).
 
 All Deepgram voices can be selected, and Deepgram TTS can be set using call control parameters. This enables the use of Deepgram TTS across the Kore.ai XO platform, with existing flows working successfully using Deepgram voices.
 
@@ -357,11 +556,11 @@ To enhance the flexibility and compatibility of the SIP Trunk configuration, two
 Key updates
 
 * E.164 Syntax Checkbox: Adds '+' prefix to DID numbers during origination attempts to comply with E.164 formatting standards.
-* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+* DTMF Types Dropdown: Choose from the following DTMF signaling methods for SIP Trunk - RFC 2833 (Default option) or Tones. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 #### Microsoft Teams Integration for Inbound and Outbound Calls
 
-In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup)
+In the SIP Trunk configuration page, the MS Teams option is added under the Network field to support SIP trunk directly to Microsoft Teams for both inbound and outbound calls. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 <hr>
 
@@ -530,7 +729,7 @@ Each tracked detail includes the following:
 
 #### Wait Time for IP Whitelisting While Configuring SIP Transfer
 
-Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-numbers)
+Users must wait for at least 10 minutes after saving their IPs to be whitelisted while configuring SIP Transfer. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-numbers)
 
 #### Session and Node Level Call Control Parameters
 
@@ -539,7 +738,7 @@ Developers can now apply Call Control Parameters at the **Session** or **Node** 
 * **Session-Level Parameters**: Add the prefix “`session.`" to apply parameters throughout the session (for example, “`session.ttsprovider`”).
 * **Node-Level Parameters**: Add the prefix “`node.`" to apply parameters only at a specific node (for example, “`node.ttsprovider`”).
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/kore.ai-voice-gateway/call-control-parameters.md)
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md)
 
 #### SIP REFER Handling and Transcript Enhancements
 

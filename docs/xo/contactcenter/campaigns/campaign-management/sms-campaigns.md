@@ -13,6 +13,7 @@ On this page, the following details of the SMS campaigns are shown in a table:
 * **Priority** - Priority of the campaign from 1 to 5 (1 being the lowest). The default priority is 5.
 * **Status** - Status of the campaign.
     * **Ready**: When a manual campaign is saved and ready to run.
+    * **Run as Emergency**: The campaign runs immediately, overriding any schedule and calling hours.
     * **Active**: The campaign is started and running.
     * **Paused**: The campaign is paused.
     * **Rerun**: Rerun the campaign.
@@ -22,6 +23,90 @@ On this page, the following details of the SMS campaigns are shown in a table:
 * **Schedule** - Start and End date when the campaign is scheduled to run.
 
 To run SMS campaigns, you must configure the SMS channel first. [Learn more](../../../channels/add-sms-channel.md).
+
+## Filters
+
+Campaign Managers can create, duplicate, mark as default, delete and edit filters for the campaigns.
+
+### Create a Filter
+
+Steps to create a filter:
+
+1. Click **Filters** in the top right corner.  
+    <img src="../images/filters-dropdown.png" alt="Filters" title="Filters" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **+ Add New Filter**.  
+    <img src="../images/add-new-filter.png" alt="Add Filter" title="Add Filter" style="border: 1px solid gray; zoom:70%;">
+
+3. Select the **Status** and **Priority**, and choose their respective sub-filters.  
+    <img src="../images/filter-by-sms.png" alt="Filter by" title="Filter by" style="border: 1px solid gray; zoom:70%;">
+
+    Select from the available options below:  
+    1. **Clear All**– Clears all selections.  
+    2. **Save & Apply** – Saves the filter, and it appears when selected.  
+    3. **Apply** – Applied for one instance and not saved.  
+
+4. Click **Save & Apply**.
+
+5. On the pop-up window, enter a name  (up to 20 characters) for the filter and click **Save & Apply**.  
+        <img src="../images/save-filter-sms.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:70%;">  
+
+    Turn on the **Make this the default view toggle** to view the filter as the default filter on the voice campaigns tab.  
+        <img src="../images/default-view-sms.png" alt="Default View" title="Default View" style="border: 1px solid gray; zoom:70%;"> 
+
+6. Click the **Filters** dropdown to view Saved Filters. Hover over the saved filter to view the following options:
+    1. Duplicate
+    2. Mark as Default
+    3. Delete
+    4. Edit  
+        <img src="../images/saved-filters-sms-campaign.png" alt="Saved Filter Options" title="Saved Filter Options" style="border: 1px solid gray; zoom:70%;"> 
+
+#### Duplicate a Filter
+
+Steps to duplicate a Filter:
+
+1. Click **Duplicate**.  
+    <img src="../images/duplicate-sms.png" alt="Duplicate" title="Duplicate" style="border: 1px solid gray; zoom:70%;">
+
+2. Enter a name for the duplicate filter and click **Save**.  
+    <img src="../images/rename-filter-sms.png" alt="Rename Filter" title="Rename Filter" style="border: 1px solid gray; zoom:70%;">
+
+    A notification appears, creating the duplicate filter with the same attributes as the original filter.  
+        <img src="../images/duplicate-filter-sms.png" alt="Duplicate Filter" title="Duplicate Filter" style="border: 1px solid gray; zoom:70%;">
+
+#### Mark as Default
+
+Step to mark a filter as default:
+
+1. Click **Mark as Default**.  
+    <img src="../images/mark-as-default-sms.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:70%;">
+
+    A notification appears, and the filter is marked as default.  
+        <img src="../images/default-web.png" alt="Default" title="Default" style="border: 1px solid gray; zoom:70%;">
+
+    !!! Note
+
+        Clicking the Mark as Default again will un-mark the filter.
+
+#### Delete a Filter
+
+Steps to delete a filter:
+
+1. Click **Delete**.  
+    <img src="../images/delete-web.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Delete** on the confirmation pop-up. The Filter is deleted.  
+    <img src="../images/confimation-delete-web.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:70%;">
+
+#### Edit a Filter
+
+Steps to edit a filter:
+
+1. Click **Edit**.  
+    <img src="../images/edit-web.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
+
+2. Make the necessary changes and click **Save & Apply**. A confirmation is displayed, and the filter is updated.  
+    <img src="../images/save-edited-filter-web.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:70%;">
 
 ## Create SMS Campaigns
 
@@ -98,14 +183,42 @@ Steps to delete an SMS campaign:
 
 ## Run SMS Campaigns
 
-Running an SMS campaign changes the campaign status to **Active** and sends the configured message to the numbers in the contact lists.
+Running an SMS campaign changes the campaign status to **Active** and sends the configured message to the numbers in the contact lists. Campaigns run based on their configured priority.
 
 Steps to run an SMS Campaign:
 
-1. You can run a voice campaign by clicking the **Play** button.  
-    <img src="../images/play-button.png" alt="Play Button" title="Play Button" style="border: 1px solid gray; zoom:80%;">  
+1. Click the **Play** button and then click **Run**.  
+    <img src="../images/run-button.png" alt="Run Button" title="Run Button" style="border: 1px solid gray; zoom:70%;">  
 
     When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
+
+## Run as Emergency
+
+The campaign runs immediately, overriding any schedule and calling hours. It uses the available SMS capacity and starts instantly, regardless of whether contacts are listed or API-integrated. This campaign processes first at full capacity, followed by other high-priority campaigns and schedules. After completion, the schedule changes to manual if it was previously scheduled.
+
+Steps to run an Emergency SMS Campaign:
+
+1. Click the **Play** button and then click **Run as Emergency**.  
+    <img src="../images/run-as-emergency.png" alt="Run as Emergency" title="Run as Emergency" style="border: 1px solid gray; zoom:70%;">
+
+2. A pop-up alert appears. Click **Confirm** to proceed.  
+    <img src="../images/emergency-campaign-alert.png" alt="Emergency Campaign Confirmation" title="Emergency Campaign Confirmation" style="border: 1px solid gray; zoom:70%;">
+
+3. A warning appears at the top, and a warning icon is displayed next to the campaign name.  
+<img src="../images/emergency-campaign-run.png" alt="Warning Notification" title="Warning Notification" style="border: 1px solid gray; zoom:70%;">  
+
+    An emergency campaign cannot be paused or resumed; it can only be stopped and rerun. Users can manually stop an active emergency campaign. If rerun, the campaign resumes and completes sending SMS.
+
+    If the contact list is a **.csv file**, the emergency campaign ends after sending an SMS to all contacts. If the contact list is **API-integrated**, the user must manually stop the campaign.
+
+    Only one emergency campaign can run per workspace or account. If a user clicks **Run as Emergency** for another campaign, the system checks for an ongoing emergency campaign and displays a warning if one is in progress.  
+    <img src="../images/currently-active-campaign-alert.png" alt="Alert Notification" title="Alert Notification" style="border: 1px solid gray; zoom:70%;">  
+
+    !!! Notes
+
+        * A user cannot run or rerun an ongoing active campaign as an emergency. To do so, they must stop the ongoing campaign and rerun it as an emergency.
+        * A non-emergency campaign, once paused, can only be resumed as a non-emergency campaign.
+        * If an error occurs during the API pull of contacts, ongoing campaigns remain active and are not impacted.
 
 ## Stop an SMS Campaign
 

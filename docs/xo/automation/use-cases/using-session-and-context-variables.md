@@ -143,6 +143,7 @@ The following types of session variables are available on the XO Platform:
     * **UserContext.get(“identities”)** – Alternate user IDs, if defined.
         * `val` – The alternate ID
         * `type` – The type of alternate ID.
+    * **context.session.UserContext.customData** - To access the custom data passed through the web SDK.
 
     For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables.
 
@@ -192,6 +193,7 @@ The following types of session variables are available on the XO Platform:
     };
     BotUserSession.put('DestinationLocation', destlocation, '20000');
     ```
+You can fetch custom data from the BotUserSession with path - **session.BotUserSession.channels[0].botInfo.customData**
 
 ## Standard Keys
 

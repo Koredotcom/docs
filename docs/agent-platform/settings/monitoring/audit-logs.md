@@ -127,6 +127,80 @@ Additionally, you can set **custom filters** based on a specific category, event
 
   <table>
   <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: App API Key
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <b>IP address</b> and <b>User Id</b> are displayed for all the events.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+          <td>App API Key created
+   </td>
+   <td>Tracks the creation of an App API key.
+   </td>
+   <td rowspan="2" align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>App API key deleted
+   </td>
+   <td>Tracks the deletion of an App API key.
+   </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: API App
+   </td>
+   </tr>
+  <tr>
+   <td colspan="3"><b>Metadata</b>: <b>App id</b>, <b>IP address</b> and <b>User Id</b> are displayed for all the events.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>API App created
+   </td>
+   <td>Tracks the creation of an API app.
+   </td>
+   <td rowspan="3" align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>API App deleted
+   </td>
+   <td>Tracks the deletion of an API app.
+   </td>
+  </tr>
+    <tr>
+   <td>API App updated
+   </td>
+   <td>Tracks the updation/changes of an API app.
+   </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Integrations
    </td>
    </tr>

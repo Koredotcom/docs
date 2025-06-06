@@ -34,7 +34,7 @@ You can also use the logical **AND operator** to apply multiple rules to filter 
 
 **Extraction Model**: Select the extraction model from the drop-down menu. The extraction model defines the technique applied to break down large pieces of textual information into manageable chunks. We currently support the following extraction models.
 
-### **Text Extraction Model**
+### Text Extraction Model
 
 The Text Extraction Model combines natural language processing (NLP) and machine learning techniques. It is based on the concept of tokenization, where the text is segmented into smaller units. The model undergoes training to identify and extract the most suitable chunks relevant to the search queries.
 
@@ -45,7 +45,7 @@ The Text Extraction Model combines natural language processing (NLP) and machine
     *  **Tokens**: Maximum number of tokens that can be present in a chunk. This field can take a maximum value of 1000. The optimal number depends on the nature of the content. Smaller chunks might be used for detailed, granular tasks, whereas larger chunks might be necessary for understanding context​​.
     * **Chunk Overlap**: Number of tokens that should overlap between two consecutive chunks.
 
-### **Layout Aware Extraction (BETA)**
+### Layout Aware Extraction
 
 Layout-aware chunk extraction is a strategy used to extract data by considering the content's layout and structure. This method allows for the customization of data extraction based on the specific layout or format of the content, which can improve the precision of the extracted information. Configuring the strategy according to specific layout requirements makes it possible to extract chunks of data more effectively, aligning the strategy to the document characteristics. This provides flexibility and granular control over the extraction process, ultimately leading to more accurate and relevant data retrieval for answer generation or other purposes. 
 
@@ -58,9 +58,10 @@ The layout-aware extraction method identifies objects in documents by combining 
 ![Layout Aware](../images/layout-aware-templates.png "Layout Aware Templates")
 Configure the strategy as per your needs and click the **Save** button. 
 
-### **Advanced HTML Extraction**
+### Advanced HTML Extraction
 
-This strategy is specially designed to extract data from tables and images in HTML files along with textual content. 
+This strategy is specially designed to extract data from tables and images in HTML files along with textual content.  If a video is present, the video itself is included in the extracted chunk and displayed whenever that chunk contributes to an answer, but the video transcript is not extracted or used for generating responses.
+
 
 **Configuration**: 
 
@@ -74,7 +75,7 @@ This strategy is specially designed to extract data from tables and images in HT
 !!! note
     A strategy is automatically enabled as soon as it is created. However, creating a strategy does not automatically initiate the extraction process. Use the **Train** option to initiate the extraction process.   
 
-### Custom Extraction(Beta)
+### Custom Extraction
 
 The Custom Extraction feature in Search AI enables organizations to extract and process content from various sources in a flexible and customized manner. Instead of relying on predefined extraction rules, this feature allows integration with third-party services that apply their own processing logic and extract content as per their business requirements. 
 
@@ -94,6 +95,26 @@ Provide the configuration details of the service that is used for extracting chu
 Click on **Test** to test the service's behavior with the given parameters. It sends a sample request to the service with the given request headers and body.
 
 Once the API is successfully invoked, you can see the generated response. If the service call fails, an error is thrown. If the API is successfully invoked, the response is sent back on the callback URL. This response is shown as the **Generated Response**. If the extracted chunks are a part of the response, the **Response Path** field can be used to provide the JSON path to the chunks. The Response Comparison section enables easy comparison of the actual response to that of the structure of the expected response. If the two do not match, it throws an error message. 
+
+### Markdown Extraction 
+
+The Markdown Strategy is a document extraction approach that transforms each page of a source document into a structured Markdown format before further processing. This strategy is particularly effective in preserving the semantic structure of the original content. Extracting and converting content to **Markdown** provides structured and cleaner data for indexing and retrieval.
+
+Currently, it can only be used for extraction from PDF files.
+
+
+### Image-Based Document Extraction
+
+**Image-Based Document Extraction** is designed to handle complex PDF files, particularly those containing non-textual layouts such as forms, tables, or visually rich content that may not be fully captured through standard text extraction methods. In this approach, each page of the PDF is first converted into an image. This preserves the visual structure, layout, and contextual relationships that may be lost during plain text extraction.
+
+These page images are then processed using a **VDR embedding model**, which generates embeddings that capture both the textual and visual semantics of the content. This allows for a more accurate and comprehensive representation of the document, significantly improving search and retrieval performance in systems where layout and structure are essential.
+
+Alongside the visual embedding, the contents of each pages are extracted into a standard chunk format.  Each extracted chunk includes an additional field, page_image_url, which references the corresponding page image.
+
+Currently, it can only be used for extraction from PDF files.
+
+!!! note
+    To enable indexing using visual embeddings, select the **image-based embedding model** in the **Vector Configuration** page.
 
 ## Deleting a Strategy
 

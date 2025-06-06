@@ -43,7 +43,7 @@ To import a Virtual Assistant, follow these steps:
 
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
-        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** fields, and upload the _appDefinition.json_ and _config.json_ files, respectively.
+        2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** fields, and upload the _appDefinition.json_ and _config.json_ files, respectively.
         3. Optionally, upload the custom script file from the imported assistant, if any. The file size is limited to 500kb.
         
         <img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;">
@@ -73,6 +73,7 @@ To import a Virtual Assistant, follow these steps:
 
     <img src="../images/bm(4).png" alt="Incremental import" title="Incremental import" style="border:1px solid gray; zoom:60%;">
 
+    * **Flows**: Here you can select the flows to be imported. 
     * **Automation Tasks**: Here, you can select to import Tasks only (with or without comments), Dialog tasks, Digital Forms, Small Talk, or FAQs.
 
         !!! Note
@@ -100,6 +101,9 @@ To import a Virtual Assistant, follow these steps:
         * DialogGPT (Conversation Types and Configurations) 
         
     * **Custom Dashboards**: This is useful in case you have created custom dashboards under the Analyze section and want to import them to the new VA as well. 
+
+    * **Agent AI Dashboards**: Here you can select the Agent coaching rules, Checklists, and their configurations.
+
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
         <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;">
@@ -364,7 +368,7 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
     * Dialog linked as part of sub-intent / interruption settings;
     * Any other scenario where a dialog execution could fail if a dependent task is not included;
 
-        <img src="../images/bm(1).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
+        <img src="../images/bm(12).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
 
 9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
@@ -559,39 +563,7 @@ When you export a VA, the following components get exported, depending on your L
   </tr>
 </table>
 
-## Deleting an Assistant
+## Related Links
 
-You cannot delete a VA if any of the tasks are Published. Once you publish a task, the Bots Admin must approve and assign it to users. The developer cannot delete assigned tasks. To delete a published task, the Bots Admin needs to suspend the task. Also, you cannot delete a VA if it is part of a published flow. You must delete the flow or remove the assistant from the flow before attempting to delete it.
-
-To delete a Virtual Assistant:
-
-1. Open the assistant you want to delete.
-2. Select the **Deploy** tab from the top menu.
-3. From the left navigation under the **Bot Management** menu, click **Delete Bot**.
-<img src="../images/bm(6).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
-
-!!! warning
-
-    All the configurations will be lost and there is no way to restore your assistant after deletion. Please exercise caution when using this feature.
-
-## Viewing the Change Log
-
-After creating a VA, you may need to edit it for various reasons such as changing its settings, adding tasks, enabling channels, and add flows. To track all the changes made to a VA, you can view the **Change Logs**, which show a chronological list of modifications to your assistant. It consists of all the changes from the initial save of your assistant to the last update. To view the changelog for a VA, follow these steps:
-
-1. Select **App Settings** from the left side menu.
-2. From the left menu click **Change Logs**.
-
-    <img src="../images/bm(2).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
-
-3. On the Change Logs page, you will notice the following;
-    * The list is sorted in reverse chronological order.
-    * Each page displays the ten most recent changes and the name of the user that made the change, followed by the change synopsis, and the timestamp of the applied change.
-    * Logs of the Publish Event are consolidated for all selected tasks, with the tasks listed in case all tasks are not selected for publishing along with the Publish Comments.
-
-Following actions can be performed on the logs:
-
-* Using the **search** text box, you can enter any text and the platform will search for that text in the change description and the logs fulfilling the search criteria would be displayed.
-* The **filter** option can be used to filter based on:
-    * Developer Name collaborating on the assistant;
-    * Date Range either past 24 hrs, past 7 days, or custom date by specifying the start and end date. By default,  changes from all developers in the past 24 hours would be displayed.
-* The **export** icon can be used to Export the changelog in CSV format. The logs displayed after applying the search and filter criteria would be downloaded.
+   [Deleting an App](../app-settings/delete-app.md)  
+   [Viewing the Change Log](../app-settings/change-logs.md) 

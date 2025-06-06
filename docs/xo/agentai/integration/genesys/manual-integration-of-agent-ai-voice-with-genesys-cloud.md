@@ -246,3 +246,10 @@ For the configured App, ensure at least one Dialog Task has been configured for 
 
 You can find the necessary information in **Flows & Channels** > **Digital** > **Web/Mobile Client**.
 <img src="../images/jwt-app-details-26.png" alt="jwt-app-details" title="jwt-app-details" style="border: 1px solid gray; zoom:80%;">
+
+## Support for Agent Transfer
+
+The Agent AI widget supports both **Cold** and **Warm Transfers**:
+
+* **Cold Transfer**: A cold transfer occurs when one agent hands over a conversation to another, applicable across **Voice**, **Chat**, and **Email** channels. A new conversation summary is generated for the receiving agent and added to Agent-1’s **Assist** tab, along with feedback options. Agent-2 can modify the summary feedback for **Voice** and **Email** channels.
+* **Warm Transfer**: A warm transfer is like a conference call between two agents, applicable to **Voice** and **Chat** channels. During the transfer, Agent-2 can modify the **Summary Feedback**. However, the **Run**, **Override**, **Send**, **Copy**, **Terminate**, **Restart**, and **List View** buttons remain disabled until Agent-1 disconnects from the call.

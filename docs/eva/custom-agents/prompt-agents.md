@@ -46,8 +46,7 @@ To create a new Prompt Agent, follow these steps:
     select **Prompt Agents**. A list of available prompt agents will be
     displayed.![](images/AI_agent.png)
 
-2.  On the Prompt Agents page, click **+Create**
-    Agent.![](images/create_agents.png)
+2.  On the Prompt Agents page, click **+Create Agent**
 
 3.  The **Prompt Agent creation** wizard will take you through the following
     steps:
@@ -199,62 +198,18 @@ step.![](images/preview.png)
 
 ### <a id="publish">Step 4: Publish Prompt Agent</a>
 
-In the **Publish** section, you can finalize and deploy your Prompt
-agent.![](images/publish.png) Follow the steps outlined
-below to publish the Prompt agent
+Publish your agent and define access permissions and enablement.
 
-1.  Provide the following details
+**Specify publishing details**:
 
-    -   **Published Version**: Select the version of the agent you are
-        publishing.
+* **Publish To**: Define access permissions:
+    * **Everyone in the Account**: Make the agent available to all users.
+    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+* **Enablement Type**: Configure how users interact with the agent:
+    * **Always Enabled**: The agent remains active and cannot be disabled.
+    * **Users Choice**: Users can enable or disable the agent as needed.
 
-    -   **Publish to**: Choose who will have access to the agent:
-
-        -   **Admins**: Restrict the agent to Admin users only.
-
-        -   **Selected User Groups/Users**: Specify individual users or groups.
-
-        -   **Everyone in the Account**: Make the agent available to all users.
-
-    -   **Enablement Type**: Define how end users can enable or disable the agent from agent store:
-
-        -   **Always Enabled**: Users cannot disable the agent; it is always
-            active.
-
-        -   **User's Choice**: Users can choose whether to enable or disable the
-            agent as needed.
-
-2.  Click **Publish.** Once published, your agent is displayed in the Agent list
-    of the Admin console page.
-
-## Modify a Prompt Agent
-
-To modify the Prompt agent, follow these steps:
-
-1.  Navigate to the **Agents list** page and locate the agent you wish to
-    modify.
-
-2.  Click the **three dots icon** next to the agent’s name. A menu with the
-    following options will appear:
-
-    -   **Edit** – Open and modify the agent's details.
-
-    -   **Publish/Unpublish** – Change the agent's status.
-
-    -   **Export Agent** : The agent's data is packaged into a ZIP file for download, migration, or import into another system.
-
-    -   **Delete** – Permanently remove the agent.
-
-    ![](images/modify.png)
-
-3.  Click on the required option and continue to complete the modifications as
-    needed.
-
-## Agent Option
-
-The agent options allow you to export, delete, and un-publish the agent.
-
-![](images/agent_option.png)
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 
 ## User Interaction

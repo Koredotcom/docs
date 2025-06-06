@@ -4,11 +4,10 @@ Interactions store the bot interactions. You can use the logs to review your bot
 
 To view the Interactions dashboard, follow the steps:
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
-2. Click **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard is displayed on the right side of the page.  
-<img src="../images/navigation-interactions-report.png" alt="Navigation Interactions Report" title="Navigation Interactions Report" style="border: 1px solid gray; zoom:80%;">
+1. Go to **CONTACT CENTER AI** > **Analytics** > **Interactions**.  
+    <img src="../images/interactions-page.png" alt="Interactions Page" title="Interactions Page" style="border: 1px solid gray; zoom:80%;">
 
-3. On this page, the following details of the logs are displayed in a table:
+2. On this page, the following details of the logs are displayed in a table:
 
   * CUSTOMER: The contact who initiated the conversation.
      * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
@@ -255,13 +254,13 @@ Icons beside the Insights to Logs header show the Direction (inbound or outbound
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 **TRANSCRIPT**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
-<img src="../images/transcript-tab.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
+<img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
 
 The transcripts tab also shows the call transfer stages:
 
 * **User transferred to Agent** - When the Automation transfers the voice call to Agent.
 * **User transferred to Automation** - When the Agent transfers the voice call back to Automation.  
-<img src="../images/transfer-stages.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/transfer-stage.png" alt="Transfer Stages" title="Transfer Stages" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
@@ -285,8 +284,8 @@ The transcripts tab also shows the call transfer stages:
 **Notes**: Notes added to the conversation (view only)  
 **Snooze Count**: Number of times the conversation was snoozed  
 **Snooze Duration**: Duration for which the conversation was snoozed  
-**Session-level tags**: Session-level tags assigned to the conversation.    
-<img src="../images/details-tab-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
+**Session-level tags**: Session-level tags assigned to the conversation.  
+<img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
 **USER**: This tab shows the following details:
 
@@ -296,7 +295,7 @@ The transcripts tab also shows the call transfer stages:
 **Channel User ID**: The user ID of the conversation channel.  
 **User ID**: Agent’s user ID.  
 **User-level tags**: User-level tags assigned to the conversation.  
-<img src="../images/user-tab.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/user-insights-to-logs.png alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
 **IDENTIFIERS**: This tab shows the following details:
 
@@ -404,7 +403,7 @@ List of recording status and messages:
   <tr>
    <td>partial_download_failed
    </td>
-   <td>Unable to fetch the recording. Please click the button below to retry. \
+   <td>Unable to fetch the recording. Please click the button below to retry.
 <strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. Please contact your administrator’ message appears.
    </td>
   </tr>
@@ -413,7 +412,7 @@ List of recording status and messages:
    </td>
    <td>Unable to fetch the recording. Please click the button below to retry.
 <p>
-<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue. 
+<strong>Note</strong>: A “Fetch Again” button appears. Users can click this button three times. If it still fails, ‘Media generation failed due to some technical issue.
    </td>
   </tr>
   <tr>
@@ -430,24 +429,363 @@ List of recording status and messages:
 
 Diagnostics is located at the top right corner of the Insights to Logs.
 
-<img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">
-
 !!! Note
 
     This option is available only for voice interactions.
 
-Clicking **Diagnostics** shows the following tabs:
+<img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">  
 
-**Flow**:
+Clicking Diagnostics shows the following tabs:
 
-<img src="../images/flow-tab.png" alt="Flow" title="Flow" style="border: 1px solid gray; zoom:80%;">
+### Flow
 
-**Quality of Service (QoS)**:
+The Flow tab provides a detailed timeline of call signaling and media flow between endpoints. This interface displays the sequence of SIP messages and RTCP packets exchanged during a call, allowing Agents and Supervisors to track the complete communication flow and troubleshoot connection issues.  
+<img src="../images/flow-tab.png" alt="Flow Tab" title="Flow Tab" style="border: 1px solid gray; zoom:70%;">  
 
-<img src="../images/qos-tab.png" alt="QoS" title="QoS" style="border: 1px solid gray; zoom:80%;">
+The top row displays the IP addresses of all endpoints involved in the communication.
 
-You can export the report in the following formats:
+Example:
+
+* 50.19.12.248
+* 172.31.11.64
+* 172.31.11.62
+* 172.31.11.64
+
+**SIP Message Flow**
+
+The interface shows SIP signaling messages exchanged between endpoints:
+
+1. **INVITE**
+    * Direction: 50.19.12.248 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+2. **100 (Trying)**
+    * Direction: 172.31.11.64 to 50.19.12.248
+    * Port: 5060 ← 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+3. **200 (OK)**
+    * Direction: 172.31.11.64 to 50.19.12.248
+    * Port: 5060 ← 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+4. **ACK**
+    * Direction: 50.19.12.248 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
+The interface also shows RTCP media packets exchanged between endpoints:
+
+1. **RTCP (First packet)**
+    * Direction: 172.31.11.62 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+2. **RTCP (Second packet)**
+    * Direction: 172.31.11.62 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: INVITE sip: +12513254563@domain...
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
+**How to Use**
+
+1. **Track Call Setup**: Follow the initial INVITE, 100 Trying, 200 OK, and ACK sequence to verify proper call establishment.
+2. **Analyze Response Times**: Note the timestamps to identify any delays in message processing.
+3. **Monitor Media Flow**: Review RTCP packets to ensure media is flowing properly between endpoints.
+4. **Identify Issues**: Look for missing messages or unexpected responses that might indicate connection problems.
+5. **Export Data**: Use the export options to save the communication flow for further analysis.
+
+### QoS (Quality of Service) 
+The QoS tab provides detailed network metrics for call monitoring and troubleshooting. It offers comprehensive data visualization of network performance indicators to help Agents and Supervisors analyze call quality.  
+<img src="../images/qos-tab.png" alt="QoS Tab" title="QoS Tab" style="border: 1px solid gray; zoom:70%;">  
+
+**Packets**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Packets
+   </td>
+   <td>Minimum number of packets transmitted (320)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Packets
+   </td>
+   <td>Average number of packets transmitted (249.25)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Packets
+   </td>
+   <td>Maximum number of packets transmitted (602)
+   </td>
+  </tr>
+</table>
+
+**Octets**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Octets
+   </td>
+   <td>Minimum number of octets/bytes transmitted (238047)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Octets
+   </td>
+   <td>Average number of octets/bytes transmitted (238047)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Octets
+   </td>
+   <td>Maximum number of octets/bytes transmitted (802234)
+   </td>
+  </tr>
+</table>
+
+**Highest_Seq_No**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Highest_Seq_No
+   </td>
+   <td>Minimum sequence number (2)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Highest_Seq_No
+   </td>
+   <td>Average sequence number (249625)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Highest_Seq_No
+   </td>
+   <td>Maximum sequence number (435756)
+   </td>
+  </tr>
+</table>
+
+**IA (Inter Arrival) Jitter**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. IA Jitter
+   </td>
+   <td>Minimum inter-arrival jitter (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. IA Jitter
+   </td>
+   <td>Average inter-arrival jitter (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. IA Jitter
+   </td>
+   <td>Maximum inter-arrival jitter (4)
+   </td>
+  </tr>
+</table>
+
+**LSR (Last Sender Report)**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. LSR
+   </td>
+   <td>Minimum last sender report (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. LSR
+   </td>
+   <td>Average last sender report (3445503.34)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. LSR
+   </td>
+   <td>Maximum last sender report (3445503.34)
+   </td>
+  </tr>
+</table>
+
+**MOS (Mean Opinion Score)**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. MOS
+   </td>
+   <td>Minimum Mean Opinion Score (4.34)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. MOS
+   </td>
+   <td>Average Mean Opinion Score (2.32)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. MOS
+   </td>
+   <td>Maximum Mean Opinion Score (5.74)
+   </td>
+  </tr>
+</table>
+
+**Packets_Lost**
+
+<table>
+  <tr>
+   <td><strong>Metric</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Min. Packets_Lost
+   </td>
+   <td>Minimum number of lost packets (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg. Packets_Lost
+   </td>
+   <td>Average number of lost packets (0)
+   </td>
+  </tr>
+  <tr>
+   <td>Max. Packets_Lost
+   </td>
+   <td>Maximum number of lost packets (1)
+   </td>
+  </tr>
+</table>
+
+The interface displays IP connection information in expandable rows, showing source and destination IP addresses (for example, 172.31.11.62 → 172.31.11.62).
+
+The bottom bar chart visualizes call metrics over time. The x-axis shows timestamps (2024-04-15), and the y-axis represents metric values from 0 to 100.
+
+### Agents
+
+The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of interactions and assists with troubleshooting issues. The following data points are shown on this tab:  
+<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
+
+<table>
+  <tr>
+   <td>Field Name
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>Participant Name
+   </td>
+   <td>Name identifier of the person involved in the call. External Agents are marked with an "External Agent" tag.
+   </td>
+  </tr>
+  <tr>
+   <td>Call Status
+   </td>
+   <td>Indicates whether the participant is currently "In-Call" or has "Left" the call.
+   </td>
+  </tr>
+  <tr>
+   <td>Start Timestamp
+   </td>
+   <td>Date and time when the participant joined the call.
+   </td>
+  </tr>
+  <tr>
+   <td>End Timestamp
+   </td>
+   <td>Date and time when the participant left the call. Displays "NA" for participants currently in the call.
+   </td>
+  </tr>
+  <tr>
+   <td>Average MOS (Mean Operating Score)
+   </td>
+   <td>MOScore average value represents the participant's overall call quality.
+   </td>
+  </tr>
+  <tr>
+   <td>Call Exit Reason
+   </td>
+   <td>Categorized reason why the participant left the call (for example, "Disconnected", "Transfer", "Call Ended").
+   </td>
+  </tr>
+  <tr>
+   <td>Call Exit Description
+   </td>
+   <td>Detailed explanation providing additional context about why the participant exited the call.
+   </td>
+  </tr>
+  <tr>
+   <td>MOS (min, max, average)
+   </td>
+   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call.
+   </td>
+  </tr>
+  <tr>
+   <td>Jitter (min, max, average)
+   </td>
+   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing.
+   </td>
+  </tr>
+  <tr>
+   <td>Packets Lost (min, max, average)
+   </td>
+   <td>The minimum, maximum, and average count of data packets that failed to reach their destination.
+   </td>
+  </tr>
+</table>
+
+### Export
+
+You can export the following reports:
 
 * Export PCAP
 * Export TEXT.  
-    <img src="../images/export-option.png" alt="Export Option" title="Export Option" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/export.png" alt="Export Reports" title="Export Reports" style="border: 1px solid gray; zoom:80%;"> 

@@ -103,3 +103,7 @@ The node’s output is stored in a context variable. You can access the variable
 !!! note
 
     GALE can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
+
+## Image to Text (OCR) Node
+
+To learn more about this AI node type, click [here](./image-to-text-node.md){:target="_blank"}.

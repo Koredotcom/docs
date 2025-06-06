@@ -62,13 +62,6 @@ You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/a
 - Document Management
 - Facets
 
-You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your XO platforms App's channel:
-
-- Answer Generation
-- Permission Entity Management
-- Document Management
-- Facets
-
 !!! note
 
     These details are available in the **Search AI app** on the **Credentials** page under the **Manage** tab. Refer to [this](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"} for more details.

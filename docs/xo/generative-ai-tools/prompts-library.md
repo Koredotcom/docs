@@ -41,7 +41,7 @@ To add a new prompt, follow the steps:
 
     ![alt_text](images/prl(3).png  )
 
-5. In the Request section, you can either create a request from scratch or import the existing prompt from the Library to modify as needed. 
+5. In the Request section, you can either create a Prompt from scratch or import the existing prompt from the Library to modify as needed. 
     ![alt_text](images/prl(9).png  )
     1. To import an existing prompt, do the following:
         1. Click **Import from Prompts and Requests Library**. All the newly added/custom prompts and prompts related to the pre-built LLM are displayed without integrating them.
@@ -105,7 +105,7 @@ For example, double-click the "content" key in the JSON structure and click **Sa
 12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
 <img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
  
-13. Now proceed to enable[ Co-Pilot](co-pilot-features.md) and[ Dynamic Conversations](dynamic-conversations-features.md) features.
+13. Now proceed to enable [GenAI Features](genai-features.md).
 
 		
 

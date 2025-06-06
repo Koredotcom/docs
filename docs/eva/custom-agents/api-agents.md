@@ -802,8 +802,6 @@ Here is a complete script to handle Jira queries using a GET request with filter
 
 ```
 
-
-
 ### Step 4.4: Sample Queries
 
 Sample queries are automatically generated based on the system's purpose and actions. These queries serve as quick references and starting points for users interacting with the API agent.
@@ -818,35 +816,18 @@ You can manually add sample queries based on specific system requirements. This 
 
 ## Step 5: Publish
 
-In the **Publish** section, you can finalize and deploy your agent. Follow the steps outlined below to publish the data agent
+Publish your agent and define access permissions and enablement.
 
-<img src="../images/image22.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
+**Specify publishing details**:
 
-1.  Provide the following details
+* **Publish To**: Define access permissions:
+    * **Everyone in the Account**: Make the agent available to all users.
+    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+* **Enablement Type**: Configure how users interact with the agent:
+    * **Always Enabled**: The agent remains active and cannot be disabled.
+    * **Users Choice**: Users can enable or disable the agent as needed.
 
-    -   **Published Version**: Select the version of the agent you are
-        publishing.
-
-    -   **Publish to**: Choose who will have access to the agent:
-
-        -   **Admins**: Restrict the agent to Admin users only.
-
-        -   **Selected User Groups/Users**: Specify individual users or groups.
-
-        -   **Everyone in the Account**: Make the agent available to all users.
-
-    -   **Authentication Type**: Select the type of authentication
-
-        -   **Admin based**: If you choose admin-based, admin tokens extract the
-            data.
-
-        -   **User based**: f you choose user-based, user tokens extract the
-            data
-
-2.  Click **Publish.** Once published, your agent is displayed in the Agent list
-    of the Admin console page.
-
-
+Note: The publishing options are defined in the Workspace settings. For additional information, [Workspace](../Administration/workspace.md).
 
 ## User Interaction
 

@@ -26,7 +26,134 @@ Key updates to products and features are summarized below. Click the correspondi
     
     Key Automation AI updates are summarized below.
 
+    
+    ## Advanced AI Capabilities
+
+    The platform has introduced several Advanced AI Capabilities that simplify building agentic experiences. Users can create more natural and personalized virtual assistant conversations while streamlining their development workflow.
+
+
+    ### DialogGPT, an Agentic Orchestration for Intelligent Conversations
+
+    DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. 
+
+    Key Capabilities
+
+
+
+    * Autonomous Decision Making: Independently analyzes inputs and determines execution paths.
+    * Zero-Shot Intent Detection: Utilizes RAG and LLMs to accurately identify intents without requiring training data.
+    * Ambiguity Resolution: Efficiently resolves unclear intents through real-time clarification.
+    * Multi-Intent Processing: Recognizes and manages multiple intents within a single query.
+    * Conversational Nuance Management: Handles pauses, repetitions, and restarts naturally.
+    * Dynamic Response Generation: Creates contextually appropriate responses based on user data and history.
+    * Model Flexibility: Supports various model options, including commercial, custom, or Kore.ai's XO GPT models.
+    * Granular Intent Resolution: Refines broad queries into specific, actionable intents using domain knowledge.
+    * Universal App Capability: Powers the universal app (bot) capabilities with intelligent and dynamic routing to the appropriate agent.
+
+    Key Benefits
+
+
+
+    * Greater Accuracy: The system better understands what customers request, even when requests are complex or industry-specific. Combining a broad understanding with detailed knowledge of your business can help extract the correct information and make smarter decisions about how to help.
+    * Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
+    * Improved Customer Experience: Virtual assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
+
+    [Learn more :octicons-arrow-right-24:](../generative-ai-tools/dialog-gpt.md)
+
+
+    ### Enhanced Agent Node with V2 Prompt and Tool Calling
+
+    Agent Node (previously GenAI Node) has been enhanced to take full advantage of the Tool Calling capability of advanced AI Models. The latest version (v2) orchestrates the Agent Node using the Tool Calling construct to collect entities, instruct business rules, and perform user-defined custom actions.
+
+    Key enhancements
+
+
+
+    * Tool-Based Orchestration:
+        * Exit Scenarios as Default Tools: Automate exit scenarios without setup using the Exit Orchestration Tool.
+        * Custom Tools: Integrate tools for specific business needs.
+        * Simplified Entity Handling: V2 removes explicit entity collection, reducing configuration complexity.
+        * Expanded Tool Calling: Handles entity collection and exit scenarios via tool calling.
+    * V2 Prompts and Templates:
+        * Flexible Version Selection: Choose V1 (Legacy) or V2 (Enhanced) prompts based on your requirements.
+        * Customizable Templates: For faster implementation, use pre-built JavaScript-based V2 prompt templates as custom prompts with both system and custom models.
+
+    [Learn more :octicons-arrow-right-24:](../automation/agent-node/prompt-setup.md#types-of-prompts)
+
+
+    ### Build Agentic Experience with DialogGPT and Agent Node
+
+    Tool Calling enables the new Agent Node to interact with your business applications. Users can define tools, connect multiple actions, and incorporate external data into the conversation context. DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Users can combine these features to deliver seamless agentic experiences for your customers and employees.
+
+    Key features 
+
+
+
+    * Tool calling integration with business applications and external data.
+    * Direct connection between tools and actions (scripts, service, or Search AI).
+    * Prompts include tool definitions and context for decision-making.
+
+    [Learn more :octicons-arrow-right-24:](../automation/agent-node/working-with-agent-node.md#tools)
+ 
+
+
+    ### Seamless Integration with Agentic Apps for Multi-agent Orchestration
+
+    The fully autonomous Agentic Apps, powered by the Kore.ai Agent Platform, can now easily integrate with the XO Platform. The Agent Platform-powered automation independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
+
+    Key features
+
+
+
+    * Choice between "Orchestrated Autonomy" (powered by DialogGPT) or "Full Autonomy" (Powered by the Agent Platform) based on automation capabilities.
+    * Agentic Apps fully supports any digital and voice channels enabled via the XO Platform.
+
+    [Learn more :octicons-arrow-right-24:](../flows/node-types/automation.md)
+
+
+    ### Support for Dynamic Routing Capability Powered by DialogGPT
+
+    The Platform now supports Dynamic Routing capability powered by DialogGPT. This capability allows teams to develop and manage automation apps for various functions independently and then link them to a standard app. More importantly, it enables businesses to provide a single, unified interface to the end users instead of a separate interface for each function.
+
+    The orchestration is powered by DialogGPT, which provides context-aware, intelligent, and dynamic routing.
+
+    Key features
+
+
+
+    * Link Multiple Apps via Automation Node: The Automation Node in Experience Flows has been enhanced to support linking multiple apps and using DialogGPT for intent identification.
+    * Indexing Linked App Content: Dialog and FAQ chunks from linked apps are indexed in the parent app after linking. Search AI knowledge is supported only by default in the parent app.
+    * Embedding-Based Matching: User input and content from linked apps (dialogs, FAQs, search documents) are converted into embeddings with metadata. The platform then retrieves the top-matching chunks based on semantic similarity.
+    * LLM-Powered Intent Resolution: An LLM resolves the shortlisted chunks and determines the winning intent. It could be an Intent, Multiple Intents, Answers, FAQs, Conversation Intents, Ambiguous Intents, or Small Talk.
+    * Automated Event Handling: Default platform-provided event handlers are triggered based on the fulfillment type, ensuring smooth user interactions and dialog execution.
+    * Clarifying Questions for Ambiguous Intents: When ambiguous intents are detected, clarifying questions are triggered for disambiguation
+    * Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification.
+
+    
+    [Learn more :octicons-arrow-right-24:](../automation/dynamic-routing.md)
+
+
+    ## LLM and Generative AI Framework
+
+    ### Guardrails
+
+    Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
+
+    Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
+    [Learn more :octicons-arrow-right-24:](../generative-ai-tools/guardrails.md)
+
+    ### Monitoring
+
+    It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
+    [Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
+    
+
+
+
+
+
     ## All-new Dialog Builder
+    
 
     The all-new dialog builder is super intuitive, user-friendly, and visually appealing.
 
@@ -70,21 +197,10 @@ Key updates to products and features are summarized below. Click the correspondi
     Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
     <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
 
-    ## LLM and Generative AI Framework
-
-    ### Guardrails
-
-    Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
-
-    Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
-    [Learn more :octicons-arrow-right-24:](../generative-ai-tools/guardrails.md)
-
-    ### Monitoring
-
-    It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
-    [Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
-    
     [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md/)
+
+
+
 
 === "Search AI"
 

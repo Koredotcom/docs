@@ -69,7 +69,7 @@ In customer service, the node transcribes calls, which helps analyze conversatio
 
 ### Important Considerations
 
-* Audio uploads and settings are handled by the [File Upload API](https://docs.kore.ai/agent-platform/api-and-sdk/apis-list/upload-file-api/){:target="_blank"}.
+* Audio uploads and settings are handled by the [File Upload API](https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

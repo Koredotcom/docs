@@ -6,10 +6,10 @@ Agent Platform’s **Settings** console is a centralized management interface th
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
-5. [Manage Custom Scripts](){:target="_blank"}
+5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
 6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
-8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [Management API Keys](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
+8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Levels of Users Management 
 
@@ -17,7 +17,7 @@ The **Settings** Console provides administrators comprehensive control and visib
 
 * **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
-* **Tool level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
+* **Tool level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API apps and keys.
 
 This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
@@ -113,7 +113,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 - Enable or disable **Single Sign-On (SSO)** for your account and other users to streamline authentication and enhance password security. [Learn more](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 - Set up authorization profiles that enable your tools, models, and AI agents to access external web services securely. [Learn more](../settings/security-and-control/authorization-profile.md){:target="_blank"}.
-- Create and manage API keys to authenticate and authorize access to Agent Platform's API endpoints. [Learn more](../apis/overview.md/#how-to-find-the-api-key){:target="_blank"}.
+- Create and manage API-scoped apps and keys to securely authenticate and authorize access to specific endpoints based on selected scopes. [Learn more](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -191,8 +191,8 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <tr>
-   <td><b>Manage Custom Scripts</b></td>
-   <td>Import custom scripts with reusable functions that can be invoked from anywhere in the platform using gVisor container capabilities.</td>
+   <td><a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/" target="_blank">Manage Custom Scripts</a></td>
+   <td>Import custom scripts with reusable functions that can be invoked from anywhere in the platform using isolated container capabilities.</td>
    <td>
 <ul>
 <li>Import a custom script by configuring its general details, uploading the script file in the allowed format, and providing the runtime settings, and resource allocation (hardware and memory) details.</li>
@@ -277,6 +277,15 @@ The following modules and features are supported on the **Settings** Console:
       <td><ul><li>Set up new authorization field for your authorization profiles.</li>
 <li>Configure the required auth parameters, including additional auth fields.</li>
 <li>Edit or delete existing auth profiles.</li></ul></td>
+  </tr>
+  <tr>
+   <td><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/api-scopes/" target="_blank">Security and Control - API Scopes</a></td>
+   <td>Create and manage API-scoped apps, assign API keys, and select scopes to control access to specific endpoints. Restrict access to authorized users and prevent unauthorized use across the Agent Platform.</td>
+      <td><ul><li>Create an API app.</li>
+      <li>Select the required API scopes while configuring the app.</li>
+<li>Generate one or more API keys to provide secure access for authorized users.</li>
+<li>Copy API keys for use or delete them when no longer needed.</li>
+<li>Edit or delete the app as required.</li></ul></td>
   </tr>
 </table>
 
