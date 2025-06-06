@@ -191,7 +191,7 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 
 !!! Note
 
-    We extract the ContactId from the SIP headers and add it to the BotUserSession as {{context.session.BotUserSession.ContactId}}. This value is accessed to initiate the signal API trigger. The p1 parameter is configured as “AgentHandoff” to facilitate transferring the user to an agent.  
+    We extract the ContactId from the SIP headers and add it to the BotUserSession as `{{context.session.BotUserSession.ContactId}}`. This value is accessed to initiate the signal API trigger. The p1 parameter is configured as “AgentHandoff” to facilitate transferring the user to an agent.  
 
 <img src="../images/post-signal-api.png" alt="Post Signal API" title="Post Signal API" style="border: 1px solid gray; zoom:70%;">  
 
