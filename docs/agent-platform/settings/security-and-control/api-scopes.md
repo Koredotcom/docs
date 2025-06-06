@@ -15,7 +15,7 @@ Users can select specific scopes for managing tools, models, and guardrails. Thi
 
 Users can rename an app, modify its selected scopes, or delete the app as needed. Once the admin defines or updates the API scopes, the changes are applied platform-wide, ensuring consistent and controlled access to the APIs wherever they are used. 
 
-For more information on roles and permissions for API-scoped apps, please refer here.
+For more information on roles and permissions for API-scoped apps, please refer [here](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}.
 
 
 ## Use Case: Scoped API Access for Banking Departments
@@ -43,61 +43,61 @@ The following API scopes are available for this feature.
   <tr>
    <td>Deploy Tool
    </td>
-   <td>Deploy a specific tool into an environment. It allows the user to control the deployment process either synchronously or asynchronously. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-a-tool/">Learn more</a>.
+   <td>Deploy a specific tool into an environment. It allows the user to control the deployment process either synchronously or asynchronously. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-a-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Undeploy Tool
    </td>
-   <td>Undeploy a tool that is deployed in an environment. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/undeploy-a-tool/">Learn more</a>.
+   <td>Undeploy a tool that is deployed in an environment. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/undeploy-a-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Deploy Model
    </td>
-   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-a-model/">Learn more</a>.
+   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Undeploy Model
    </td>
-   <td>Undeploy a model from the environment. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/undeploy-a-model/">Learn more</a>.
+   <td>Undeploy a model from the environment. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/undeploy-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Import Model
    </td>
-   <td> Import a model in chunks into the Agent Platform environment. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/import-a-model/">Learn more</a>.
+   <td> Import a model in chunks into the Agent Platform environment. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/import-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Import Tool
    </td>
-   <td>Import a new tool into the system. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/import-a-new-tool/">Learn more</a>.
+   <td>Import a new tool into the system. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/import-a-new-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Export Model
    </td>
-   <td>Export a trained AI model from the system. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/export-a-model/">Learn more</a>.
+   <td>Export a trained AI model from the system. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/export-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Export Tool
    </td>
-   <td>Export a tool's configuration and associated data.<a href="https://docs.kore.ai/agent-platform/apis/apis-list/export-a-tool/"> Learn more</a>.
+   <td>Export a tool's configuration and associated data.<a href="https://docs.kore.ai/agent-platform/apis/apis-list/export-a-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Deploy Guardrails
    </td>
-   <td>Deploy predefined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-guardrails/">Learn more</a>.
+   <td>Deploy predefined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="https://docs.kore.ai/agent-platform/apis/apis-list/deploy-guardrails/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Undeploy Guardrails
    </td>
-   <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="https://docs.kore.ai/agent-platform/apis/apis-list/undeploy-guardrails/"> Learn more</a>.
+   <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="https://docs.kore.ai/agent-platform/apis/apis-list/undeploy-guardrails/" target="_blank" target="_blank"> Learn more</a>.
    </td>
   </tr>
 </table>
@@ -154,7 +154,7 @@ This step is necessary to complete the app creation process. To create an API Ke
 A success message is displayed once the key is copied.
 
 <div class="admonition note">
-<p class="admonition-title">Important</p>
+<p class="admonition-title">Important information on API Keys</p>
 <p>For security reasons, the API key is only shown once and is not stored or displayed again. Copy and save it in a secure location for future reference.</p>
 <p><b>What Happens If You Lose It?</b></p>
 <p>You’ll need to revoke the old key and <b>generate a new one</b>. This could disrupt services if the key is in use.</p>
@@ -196,6 +196,7 @@ To edit an API app, follow the steps below:
            <img src="../images/hover-delete-api-key.png" alt="access delete icon" title="access delete icon" style="border: 1px solid gray; zoom:75%;">
 
          * Click **Delete** in the confirmation window.
+            
             <img src="../images/del-api-key.png" alt="delete api keys" title="delete api keys" style="border: 1px solid gray; zoom:75%;">
             
             <div class="admonition warning">
@@ -219,6 +220,7 @@ To delete an API app, follow the steps below:
    <img src="../images/delete-api-app-icon.png" alt="access delete" title="access delete" style="border: 1px solid gray; zoom:105%;">
 
 2. Click **Delete** in the confirmation window.
+
    <img src="../images/delete-api-app.png" alt="delete api app" title="delete api app" style="border: 1px solid gray; zoom:55%;">
 
     A success message is displayed, and the app is removed from the list. 
