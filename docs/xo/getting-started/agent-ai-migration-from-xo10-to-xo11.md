@@ -1,9 +1,63 @@
 # Agent AI Migration from XO v10 to XO v11
 
-XO v11 offers a unified, AI-powered platform with enhanced capabilities, improved usability, and a superior user experience. Migrating from Agent AI XO v10 to v11 ensures continued access to innovation, as all future updates will be available exclusively on XO v11.
+This guide provides step-by-step instructions on upgrading your Agent AI account to the new XO v11 platform. The upgrade process includes a streamlined transition to XO v11.
 
-For more information on benefits and upgrade journey, refer to [Agent AI Migration to XO v11](https://docs.kore.ai/agentassist/getting-started/migration-from-agent-ai-xo-v10-to-agent-ai-xo-v11/){:target="_blank"}</a>.
+## Prerequisites
 
-!!! note
+* A valid Agent AI account.
+* Only a user with Bot Owner access can upgrade the Agent AI account.
 
-    Existing Agent AI customers on XO v10 will be notified of the Agent AI end-of-life cycle. Transitioning to XO v11 will ensure uninterrupted service and access to the latest features.
+## What Will Change
+
+### Bot to an App on XO v11
+
+The bot system is transitioning to a consolidated app in the XO11 application. Agent AI bot and child bots will become individual Apps on XO v11.
+
+## Upgrade Journey from Agent AI v10 to Agent AI XO v11
+
+### Upgrade Notification
+
+Steps to initiate the upgrade to XO v11:
+
+1. Sign in to **Agent AI** > **Configurations**. A notification is displayed at the top of the screen:  
+<img src="../images/agent-ai-configurations_1.png" alt="agent-ai-configurations" title="free text" style="border: 1px solid gray; zoom:80%;"> 
+
+2. Click **Go to XO11** to initiate the upgrade. 
+
+    !!! note
+        Only bot owners can upgrade the Agent AI bots and child bots. 
+
+3. Sign in to [XO v11](https://platform.kore.ai/) using your Agent AI credentials.  
+<img src="../images/xo11-signing-in_2.png" alt="xo11-signing-in" title="xo11-signing-in" style="border: 1px solid gray; zoom:80%;"> 
+
+4. All apps (Agent AI and automation bots) are displayed. Click the **Agent AI bot** to upgrade to an App in XO v11.  
+<img src="../images/upgrading-app-to-xo11_3.png" alt="upgrading-app-to-xo11" title="upgrading-app-to-xo11" style="border: 1px solid gray; zoom:80%;"> 
+
+5. A pop-up appears with options as **Why Upgrade?**, **Attention!**, and **Upgrade**. Click **Continue**.  
+<img src="../images/continue-to-upgrade-popup_4.png" alt="continue-to-upgrade-popup" title="continue-to-upgrade-popup" style="border: 1px solid gray; zoom:80%;">  
+
+6. Review the guidelines, download and backup your Agent AI bot, and click **Start Upgrade**.   
+    <img src="../images/start-upgrade_5.png" alt="start-upgrade" title="start-upgrade" style="border: 1px solid gray; zoom:80%;"> 
+
+    The backup contains only the bot definition. 
+
+7. A progress bar is displayed. Click **Finish** on completion.  
+<img src="../images/finish-upgrade_6.png" alt="finish-upgrade" title="finish-upgrade" style="border: 1px solid gray; zoom:80%;"> 
+
+8. A success message is displayed. In XO11, the Agent AI bot is upgraded to an app.  
+<img src="../images/upgrade-success-message_7.png" alt="upgrade-success-message" title="upgrade-success-message" style="border: 1px solid gray; zoom:80%;">  
+
+### Upgrade Failure
+
+If there is an error during the upgrade, the system stops the upgrade and lets you revert it.
+
+1. An error notification appears on the upgrade window.  
+<img src="../images/upgrade-error-message_8.png" alt="upgrade-error-message" title="upgrade-error-message" style="border: 1px solid gray; zoom:80%;"> 
+
+2. Click **Revert Upgrade**. You will be redirected to the XO v11 home page.  
+<img src="../images/revert-upgrade_9.png" alt="revert-upgrade" title="revert-upgrade" style="border: 1px solid gray; zoom:80%;"> 
+
+## Related Links
+
+* [Migration Path for Existing Customers - Upgrade Journey](./../getting-started/migration-path-xo10-to-xo11.md)
+* [Upgrade Accounts from SmartAssist to XO v11](./../getting-started/ccai-migration-from-xo10-to-xo11.md)

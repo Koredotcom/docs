@@ -437,6 +437,30 @@ Users should start creating an App with any one Product and later can enable/add
 
 ## Benefits of Contact Center AI (CCAI)
 
+
+
+
+## Agent AI
+
+* **Additional Capabilities**: Enhanced Contact Center with additional capabilities in Quality Management, Campaign Management, and Case Management with additional top-ups. 
+* Access to Search AI will be available to authorized users based on additional licenses. 
+* Enhanced user experience for the Agents and Supervisors. 
+* Improved conversational experience and human-like conversations using the GenerativeAI capabilities - Auto Summarization, GenAI node powered Dialog tasks, Sentiment Analysis, Answers through Knowledge AI, Playbooks and Coaching design time, and Gen AI powered runtime Coaching hints. 
+    * **Auto Summarization**: GenAI powered summarization, with the added ability to configure models through Prompt Library for better control.
+    * **GenAI node powered Dialog tasks**: Uses commercial models to power dialogs/workflows in Agent AI.
+    * **Sentiment Analysis**: Choose between XO or commercial LLMs to detect and show customer sentiment to agents in Real-Time.
+    * **Answers through Knowledge AI**: Choose between commercial models or bring your own through custom LLM endpoint.
+    * **Playbooks and Coaching design time**: Improve Playbooks and Realtime Coaching creation by suggesting similar utterances powered by commercial OpenAI model.
+    * **GenAI powered Runtime Coaching hints** using commercial LLM models. 
+* **Enhanced Collaboration**: Brand-new experience for building Dialog Tasks and Flows. 
+* **Comprehensive Analytics**: Detailed insights into user conversations categorized by each product through extensive analytics. 
+* XO v11 has enhanced features, improved usability, and a better customer experience. All future updates will be available exclusively on this platform. 
+
+    !!! note
+        All existing clients will be communicated about the XO v10 Agent AI End-of-Life cycle. 
+
+* **Integrated Experience**: Integrated advantages of Contact Center AI (CCAI), Automation AI, Search AI, and Agent AI in a single app.
+
 ### Why Upgrade to XO v11?
 
 1. **Integrated Experience**: Integrated advantages of Contact Center AI (CCAI), Automation AI, Search AI, and Agent AI in a single app.
