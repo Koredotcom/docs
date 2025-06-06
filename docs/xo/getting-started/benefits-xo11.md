@@ -441,18 +441,18 @@ Users should start creating an App with any one Product and later can enable/add
 
 * **Additional Capabilities**: Enhanced Contact Center with additional capabilities in Campaign Management, Quality Management, and Case Management with additional top-ups.
 
-* Access to Agent AI and Search AI will be available to authorized users upon purchase of additional licenses.
+* Enhanced Dialog Tasks and Flows building experience.
 
 * Enhanced user experience for the Agents and Supervisors.
 
-* Improved conversational experience and human-like conversations using the GenerativeAI capabilities.
+* Improved conversational experience and human-like conversations using the Generative AI capabilities. 
 
-* **Enhanced Collaboration**: Brand-new experience for building Dialog Tasks and Flows.
+* Access to Agent AI and Search AI is available to users based on additional licenses.
 
 
 ## Agent AI
 
-* Access to Search AI will be available to authorized users based on additional licenses. 
+* Access to Search AI based on additional licenses.
 * Enhanced user experience for the Agents and Supervisors. 
 * Improved conversational experience and human-like conversations using the GenerativeAI capabilities - Auto Summarization, GenAI node powered Dialog tasks, Sentiment Analysis, Answers through Knowledge AI, Playbooks and Coaching design time, and Gen AI powered runtime Coaching hints. 
     * **Auto Summarization**: GenAI powered summarization, with the added ability to configure models through Prompt Library for better control.

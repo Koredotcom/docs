@@ -2,14 +2,14 @@
 
 This document provides step-by-step instructions for upgrading your Agent AI account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
 
-## Prerequisites
+**Prerequisites**
 
 * A valid Agent AI account.
 * Only a user with Bot Owner access can upgrade the Agent AI account.
 
 ## What Will Change
 
-### Bot to an App on XO v11
+### Bot to App Transition
 
 The bot system is transitioning to a consolidated app in the XO11 application. Agent AI bot and child bots will become individual Apps on XO v11.
 

@@ -2,12 +2,12 @@
 
 This document provides step-by-step instructions for upgrading your SmartAssist/Contact Center AI (CCAI) account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
 
-## Prerequisites
+**Prerequisites**
 
 * A valid SmartAssist account.
 * The user with Bot Owner access can only upgrade the SmartAssist account.
 
-## Pre-Upgrade Checklist
+**Pre-Upgrade Checklist**
 
 * Download reports that are not supported in the XO v11. 
 Agent Login Logout Details Report – If you need data from this report, go to SmartAssist, rerun the report before the upgrade, and download the reports. 
@@ -18,7 +18,7 @@ Agent Login Logout Details Report – If you need data from this report, go to S
 
 ## What Will Change
 
-### Bot to an App on XO v11
+### Bot to App Transition
 
 The bot system is transitioning to a consolidated app in the XO11 application. SmartAssist Instance bot and child bots will become individual Apps on XO v11.
 
