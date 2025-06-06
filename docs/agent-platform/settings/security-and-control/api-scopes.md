@@ -221,6 +221,6 @@ To delete an API app, follow the steps below:
 
 2. Click **Delete** in the confirmation window.
 
-   <img src="../images/delete-api-app.png" alt="delete api app" title="delete api app" style="border: 1px solid gray; zoom:55%;">
+      <img src="../images/delete-api-app.png" alt="delete api app" title="delete api app" style="border: 1px solid gray; zoom:55%;">
 
-    A success message is displayed, and the app is removed from the list. 
+A success message is displayed, and the app is removed from the list.
