@@ -20,6 +20,7 @@ Key benefits
 * Efficient Memory Management: The Memories page enables easy viewing, filtering, and management of memory stores, enhancing the user experience and operational efficiency.
 * Traceability & Accountability: With built-in audit logging, all changes to memory stores are tracked, ensuring accountability and allowing users to monitor modifications, deletions, and creations.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/memory-stores.md)
 
 **Read and Write Support for Memory Stores in Code Tools**
 
@@ -29,26 +30,19 @@ Code tools in Agentic Apps can now access and manage persistent memory, enabling
 * Enable stateful interactions by persisting and updating context.
 * Enhance agent flexibility by leveraging custom data persistence throughout execution.
 
-
-**Response Streaming Support for External Agents**
-
-The Agent Platform now supports response streaming from external agents, providing developers with greater flexibility and control over how responses are delivered to users. Proxy agents can now respond to users through two distinct modes:
-
-* Orchestrator Mode (Default): Responses flow through the orchestrator using the existing supervisor pattern.
-* Direct Mode: Responses stream directly from proxy agents to users, enabling:
-    * Native streaming support from external platforms, when available.
-    * Reduced latency by eliminating intermediate processing steps.
-
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/memory-stores.md)
 
 **Thought Streaming Configurations**
 
 Agentic Apps now offers a configuration to enable or disable Thought streaming. This gives greater control over what users see during execution. Additionally, this update introduces the ability to customize the thought prompt, enabling developers to define how internal reasoning or system insights are generated and presented. This enhancement helps tailor the agent's behavior and is particularly useful for debugging. 
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md)
 
 **Document Upload Limits**
 
 The Agent Platform now supports configurable document upload limits within the platform. Developers can define restrictions on the maximum number of files that the users can upload, the maximum file size, and the maximum token limit for each file. Files exceeding the token threshold are automatically ignored. This ensures more efficient, controlled, and optimized ingestion of contextual information.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md)
 
 <font size="4">No-code and Pro-code Tools</font>
 
@@ -56,6 +50,8 @@ The Agent Platform now supports configurable document upload limits within the p
 **MCP Server Integration for Tool Calling**
 
 The Agent Platform now supports integration with MCP (Model Context Protocol) servers, enabling seamless access to external tools. With this enhancement, admins can configure MCP servers and make tools available to agents for invocation during runtime workflows.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/mcp-tools.md)
 
 
 **Improved Handling of Large Context Objects in Python Script Node**
@@ -75,6 +71,8 @@ Agentic Apps now supports Google's Gemini LLM in addition to OpenAI, Anthropic, 
 * Maintaining full compatibility with routing logic and tool-calling workflows.
 
 This enhancement offers greater flexibility and model diversity for building powerful, context-aware agents.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/supported-models.md)
 
 
 **Support for the Latest OpenAI and Anthropic Models**
@@ -110,12 +108,17 @@ Users can add empty, inline-editable columns in model evaluations to manually in
 
 Agentic Apps now support OAuth profile-based authorization. For agent actions that need authenticated access to external services, users are prompted to authorize the connection through OAuth. It enables seamless, secure, and user-specific access to data and services while maintaining proper authentication standards and overall integration reliability.
 
+[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/overview.md)
+
+
 <font size="4">Other Improvements</font>
 
 
 **Enhanced Workspace Switcher**
 
 The Workspace switcher in the Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.
+
+[Learn more :octicons-arrow-right-24:](../settings/workspace-mgmt.md)
 
 
 <hr>
