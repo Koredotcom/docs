@@ -10,26 +10,18 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 <font size="4">Multi-Agent Orchestration</font>
 
-**New Memory Store for Contextual Agent Interactions**
+**Memory Stores for Contextual Interactions with Read/Write support via Code Tools**
 
-The Agent Platform now features a dedicated Memory Store, enabling persistent conversation context to power richer, more personalized agent interactions. The new Memories page allows admins and users to view and manage existing memory stores. The page provides an organized list of memory stores, including key information such as access type, retention policy, and schema details. Users can interact with the memory stores through a detailed view and easily navigate between entries. Additionally, it supports the creation, modification, and deletion of memory stores with proper safeguards and audit logs.
+Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences,conversation history, or custom data.
 
-Key benefits
+**Key Benefits**:
 
-* Enhanced Personalization: Captures and persists conversation context, enabling agents to provide more personalized and context-aware interactions.
-* Efficient Memory Management: The Memories page enables easy viewing, filtering, and management of memory stores, enhancing the user experience and operational efficiency.
-* Traceability & Accountability: With built-in audit logging, all changes to memory stores are tracked, ensuring accountability and allowing users to monitor modifications, deletions, and creations.
+* Stateful Interactions: Maintain and update contextual data.
+* Personalized Experiences: Store user-specific data to tailor responses and behavior.
+* Flexible Data Management: Access, modify, and persist custom data within the agent's execution flow.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/memory-stores.md)
 
-**Read and Write Support for Memory Stores in Code Tools**
-
-Code tools in Agentic Apps can now access and manage persistent memory, enabling stateful operations across conversations and sessions.
-
-* Build personalized, dynamic applications with seamless access to memory.
-* Enable stateful interactions by persisting and updating context.
-* Enhance agent flexibility by leveraging custom data persistence throughout execution.
-
+Memory Stores support three access levels: **user-level, session-specific, and app-level**, offering flexible scope control based on your needs.
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/memory-stores.md)
 
 **Thought Streaming Configurations**

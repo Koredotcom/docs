@@ -1,7 +1,7 @@
 
-# Supported AI Models
+# Supported LLM Models in Agentic Apps
 
-
+Following is the list of external models supported in Agentic Apps. 
 <table>
   <tr>
    <td>Model Provider
