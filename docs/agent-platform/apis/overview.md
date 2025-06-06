@@ -24,19 +24,15 @@ API keys are typically included in request headers or parameters to validate acc
 
 1. [Login](../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform and [access](../settings/settings-overview.md#access-settings-console){:target="_blank"} the **Settings** Console.
 
-2. On the left menu, click **Security & Control** -> **Management API keys**.
+2. On the left menu, click **Security & Control** -> **API Scopes**.
 
-3. Click the **Create API key** button if you are creating an API key for the first time.
-<img src="../images/access-create-api-keys.png" alt="create api key" title="create api key" style="border: 1px solid gray; zoom:75%;">
+3. Create an API app and include all the required scopes, and the API keys as mentioned [here](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
-Otherwise, click **Create**.
+<div class="admonition note">
+<p class="admonition-title">Important</p>
+<p>You can copy the API key only once. Save the key in a secure location for future reference.</p>
+</div>
 
-<img src="../images/management-api-keys.png" alt="management api keys" title="management api keys" style="border: 1px solid gray; zoom:75%;">
-
-<ol start="4"><li>In the <b>Create new API key</b> dialog, provide a name and click <b>Generate Key</b>.
-<img src="../images/create-new-api-key-form.png" alt="create a new api key" title="create a new api key" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Once the key is successfully generated, click <b>Copy and Close</b> to copy the API key.
-<img src="../images/generate-new-secret-key.png" alt="copy api key" title="copy api key" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ## APIs List
 
