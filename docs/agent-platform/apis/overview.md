@@ -20,7 +20,7 @@ API keys are typically included in request headers or parameters to validate acc
 <p>Each API key includes <b>created on</b> and <b>last used</b> dates to track its usage history.</p>
 </div>
 
-## How to Find the API Key?
+## How to Create the API Key?
 
 1. [Login](../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform and [access](../settings/settings-overview.md#access-settings-console){:target="_blank"} the **Settings** Console.
 
