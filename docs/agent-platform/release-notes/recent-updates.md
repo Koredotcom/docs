@@ -14,7 +14,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences,conversation history, or custom data.
 
-**Key Benefits**:
+Key benefits
 
 * Stateful Interactions: Maintain and update contextual data.
 * Personalized Experiences: Store user-specific data to tailor responses and behavior.
@@ -67,7 +67,7 @@ This enhancement offers greater flexibility and model diversity for building pow
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/supported-models.md)
 
 
-**Support for the Latest OpenAI and Anthropic Models**
+**Support for the Latest OpenAI and Anthropic Models as External Models**
 
 Added support for the latest models from OpenAI and Anthropic, including:
 
