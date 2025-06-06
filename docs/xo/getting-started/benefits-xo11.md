@@ -45,7 +45,7 @@ Key Capabilities:
 
 With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their virtual assistants provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 
-### Seamless Integration Search Module - RAG Capabilities
+### Seamless Integration With Search Module - RAG Capabilities
 
 Powered by large language models (LLMs), Search AI provides accurate, context-aware answers, significantly improving the user experience. Integrate a variety of data sources—such as web crawlers, structured data, documents, catalogues, and knowledge repositories—to create a comprehensive answer index. Customize and enrich content to meet specific business needs and boost user engagement.
 
