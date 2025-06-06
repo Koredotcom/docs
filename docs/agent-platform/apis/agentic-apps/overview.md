@@ -125,3 +125,65 @@ The above session resolution steps are summarized using the flow chart below.
 
 ![Session Resolution using Identify fields](images/session-resolution.png "Session resolution")
 
+## Authorization Process for API Calls
+
+If an agent in an Agentic App includes tools that require authorization to execute APIs, the platform ensures that the necessary authorizations are completed before any API calls are made during the agent’s execution.
+
+**When OAuth Authorization is Required**
+
+At the **first invocation** of the session (via the **Session** or **Execute API**), if any required authorization is pending, the API will return a response containing a special event type: **IDP_Redirect**. This indicates that the user needs to complete an authorization flow before the agent can proceed. The response includes:
+
+* An IDP_Redirect event. 
+* A URL for the user to complete the authorization process. 
+* The identity provider (IDP) name and the authentication method.
+
+Sample Response
+
+
+```json
+{
+    "messageId": "msg-260f4d3c-5b8c-4056-af97-11317fc28c8d",
+    "events": [
+        {
+            "type": "IDP_Redirect",
+            "content": {
+                "auth_profiles": [
+                    {
+                        "url": "https://agent-platform.kore.ai/r/396c63515671634648357955",
+                        "idpName": "Google",
+                        "isAuthorized": false,
+                        "sso_type": "oauth2"
+                    }
+                ]
+            }
+        }
+    ],
+    "output": [
+        {
+            "type": "text",
+            "content": "Hello! How can I assist you today with HR, Finance, or IT queries?"
+        }
+    ],
+    "sessionInfo": {
+        "status": "idle",
+        "userReference": "s-b8987503-696b-4111-a006-49c0cbcf0fb9",
+        "sessionReference": "s-b8987503-696b-4111-a006-49c0cbcf0fb9",
+        "userId": "u-f5e5e830-70d4-53d6-8034-86bfa765c04a",
+        "sessionId": "s-54f40bda-1505-4f9e-b38e-88d39ea36d58",
+        "runId": "r-41ad20e0-6295-4f0e-9b04-e51875356107",
+        "appId": "aa-c31cccce-d0bf-4db5-a177-7ff45941c2d8",
+        "attachments": []
+    }
+}
+```
+
+
+**Next Steps**
+
+* Go to the URL in the events object and complete the authorization. 
+* Reinvoke the API after successful authorization. 
+
+**Important Notes**
+
+* Authorization is only required once per user (across sessions) or until the token expires.
+* If one or more authorizations are pending, all of them must be completed before continuing. If the required authorization is not completed, the associated tools will return an error upon invocation.

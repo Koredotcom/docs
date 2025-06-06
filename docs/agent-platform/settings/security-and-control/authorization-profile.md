@@ -1,13 +1,21 @@
 # Secure Account Access Using Authorization Profiles
 
-The Agent Platform enables secure and efficient authentication when integrating with external web services. By configuring an **Authorization (Auth) Profile**, users can manage access control while ensuring data protection and regulatory compliance. Whether connecting to an [external/commercial model using a custom API](https://docs.kore.ai/agent-platform/models/external-models/add-an-external-model-using-easy-integration/){:target="_blank"} or setting up a tool integration via the [AI](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/ai-node/){:target="_blank"} or [API node](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/api-node/){:target="_blank"}, the platform provides a structured framework for managing authentication flows, simplifying security configurations, enhancing access control, and ensuring seamless identity verification across different services.
+The Agent Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring **Authorization (Auth) Profiles**, users can enforce access control policies while ensuring data privacy and regulatory compliance.
 
-Managing Auth profiles on the Agent Platform allows developers to:
+Whether connecting to external or commercial models via custom APIs or integrating tools through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.
 
-* **Define Rules**, including authentication methods and requirements, such as passwords, additional fields, and custom authorization fields.
-* **Secure Access** to authorized users or systems only.
-* **Reuse profiles** across multiple endpoints or applications for consistency and efficiency.
-* [Test and validate](../security-and-control/authorization-profile.md/#test-the-auth-profile){:target="_blank"} the connection to ensure user identity information and authentication tokens are securely passed to external services.
+Key capabilities of managing Auth Profiles on the Agent Platform include:
+
+
+
+* **Defining Authorization Rules**
+Specify auth methods and requirements, such as passwords, token fields, and custom authorization parameters.
+* **Securing Access**
+Ensure only authorized users or systems can connect to external services, protecting sensitive data from unauthorized access.
+* **Profile Reusability** 
+Reuse Auth Profiles across multiple integrations and endpoints for consistency, reduced configuration effort, and streamlined maintenance.
+* **Connection Testing and Validation**
+Verify that identity and authorization tokens are correctly passed to external services, ensuring the integration is secure and functional.
 
 ## Access Authorization Profile
 
@@ -26,7 +34,7 @@ You can enable a single auth profile or create custom profiles tailored for acce
 
 ### OAuth V2
 
-OAuth 2.0 (OAuth2) is a standard authorization framework that enables applications to obtain limited, secure, and token-based access to a user’s account on an HTTP service, such as Google, Facebook, or GitHub, without exposing the user's credentials. It supports multiple grant types, uses scopes for permissions, and enables long-term access with refresh tokens, making it ideal for API authentication.
+OAuth 2.0 (OAuth2) is a standard authorization framework that enables applications to obtain limited, secure, and token-based access to a user’s account on an HTTP service, such as Google, Facebook, or GitHub without exposing the user's credentials. It supports multiple grant types, uses scopes for permissions, and enables long-term access with refresh tokens, making it ideal for API authentication.
 
 ### Key Features
 
@@ -36,7 +44,7 @@ OAuth 2.0 (OAuth2) is a standard authorization framework that enables applicatio
 
 * **Scope-Based Access Control** – Users can grant apps limited permissions (e.g., read-only access). 
 
-* **Refresh Token Support** – Enables seamless re-authentication without requiring user login. 
+* **Refresh Token Support** –  Enables seamless re-authorization without requiring user login. 
 
 * **Third-Party & Scalable Integration** – Widely adopted for API authentication, allowing secure third-party access (e.g., "*Sign in with Google*").
 
@@ -61,11 +69,11 @@ Otherwise, click **Add new auth**.
 If the mandatory fields are left blank, validation error messages appear, as shown below.
 
 <img src="../images/form-validation-errors.png" alt="validation errors" title="validation errors" style="border: 1px solid gray; zoom:75%;"></li>
-<li>(Optional) Click <b>+ Add Additional Field</b> to add additional fields for authentication. See the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-additional-field" target="_blank">Add Additional Field</a> section.</li></ol>
+<li>(Optional) Click <b>+ Add Additional Field</b> to add additional fields for authorization. See the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-additional-field" target="_blank">Add Additional Field</a> section.</li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authentication process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user.</p>
+<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authorization process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user.</p>
 </div>
     
 <ol start="7"><li>(Optional) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. For more information, see the <a href="https://docs.kore.ai/agent-platform/settings/security-and-control/authorization-profile/#add-authorization-field" target="_blank">Add Authorization Field</a> section.</li>
@@ -130,7 +138,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    <td><strong>Client ID</strong>
    </td>
    <td>
-    A unique identifier assigned that helps the authorization server recognize the application making authentication or API access requests. It helps in the following:
+    A unique identifier assigned that helps the authorization server recognize the application making authorization or API access requests. It helps in the following:
 <ul>
 
 <li>Used in <strong>OAuth flows</strong> to obtain access tokens</li>
@@ -165,7 +173,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    <td><strong>Subdomain(aka tenancy URL)</strong>
    </td>
    <td>
-    A unique URL assigned to a specific tenant (organization, customer, or user group) within a multi-tenant system. It is used to differentiate and isolate data, authentication, and access for each tenant. You must select one of the following options based on your auth profile:
+    A unique URL assigned to a specific tenant (organization, customer, or user group) within a multi-tenant system. It is used to differentiate and isolate data, authorization, and access for each tenant. You must select one of the following options based on your auth profile:
 <ul>
 
 <li>No, this tool and all of its tasks do not have tenancy URLs.</li>
@@ -233,7 +241,7 @@ Example: <code>read_profile</code>.
    <td><strong>Auth Error Status Code</strong>
    </td>
    <td>
-    When authentication or authorization fails in OAuth 2.0, the server returns an HTTP status code along with an error message to indicate the issue.
+    When authorization fails in OAuth 2.0, the server returns an HTTP status code along with an error message to indicate the issue.
    </td>
    <td>Optional
    </td>
@@ -242,7 +250,8 @@ Example: <code>read_profile</code>.
 
 ## Add Additional Field
 
-These fields are used to collect additional authentication details from end users and allow you to incorporate extra security measures, such as a **PIN code**, **device ID**, or other authentication factors, alongside the standard credentials. By customizing the authorization input fields, you can enhance security and align the authentication process with your specific business or compliance needs.
+These fields are used to collect additional authorization details from end users and allow you to incorporate extra security measures, such as a PIN code, device ID, or other parameters, alongside the standard credentials. By customizing the authorization input fields, you can enhance security and align the authorization process with your specific business or compliance needs.
+
 
 To add additional fields, follow the steps below:
 
@@ -293,7 +302,8 @@ The new field is added to the additional fields list. You can edit or delete thi
 
 ## Add Authorization Field
 
-Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure secure authentication and access control in APIs, particularly for token-based authentication in the Agent Platform.
+Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in the Agent Platform.
+
 
 To add auth fields, follow the steps below:
 
@@ -315,10 +325,10 @@ To add auth fields, follow the steps below:
   <tr>
    <td>Field Type
    </td>
-   <td>Defines how authentication data is sent and verified in an API request within the Agent Platform for token-based authentication. The supported types include:
+   <td>Defines how authorization data is sent and verified in an API request within the Agent Platform for token-based authorization. The supported types include:
 <ul>
 
-<li><strong>Header</strong>: Used to send authentication credentials, such as API tokens.</li>
+<li><strong>Header</strong>: Used to send authorization credentials, such as API tokens.</li>
 
 <li><strong>Payload</strong>: Used in <code>POST</code> or <code>PUT</code> requests, sending credentials in the request body.</li>
 
@@ -396,7 +406,7 @@ You can either edit the configured values of an auth profile or delete it from t
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p>The <b>Authorization Type</b> and <b>Name</b> fields cannot be edited, but all authentication parameters can be modified.</p>
+<p>The <b>Authorization Type</b> and <b>Name</b> fields cannot be edited, but all other parameters can be modified.</p>
 </div>
 
 A success message appears when the auth profile information is updated.

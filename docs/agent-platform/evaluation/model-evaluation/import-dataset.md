@@ -223,13 +223,15 @@ The Response tab shows whether the first-row query is returning an answer, allow
 
     <img src="../../images/show_json.png" alt="JSON chunk text" title="JSON chunk text" style="border: 1px solid gray; zoom:80%;">
 
-7. **Attach Evaluators:** Once the Search AI columns are populated, you can attach any built-in or custom evaluators to the Answers or Retrieved Contexts columns. Click the **“+”** icon and select **Add Evaluator**.
- 
+7. **Attach Evaluators:** Once the Search AI columns are populated, you can attach any built-in or custom evaluators to the Answers or Retrieved Contexts columns. Click the **“+”** icon and select **Add Evaluator**.  
+
     !!! note
 
         The **RAGAS evaluators** are specifically designed to test RAG systems. It is advisable to attach them as evaluators and run an evaluation to thoroughly assess the RAG pipeline's performance. 
 
     <img src="../../images/ragas.jpg" alt="RAGAS evaluators" title="RAGAS evaluators" style="border: 1px solid gray; zoom:80%;">
+
+    Users can add an empty column, which is inline-editable and supports both text and numeric values, for manually inputting ground truth in RAGAS evaluations.
 
 8. **Review Results**: Navigate through the enriched dataset to inspect Search AI outputs. Use Evaluation Studio’s filtering, sorting, and analysis tools to assess the quality of retrieved contexts and generated answers. You can evaluate how well Search AI retrieves relevant information, how grounded the responses are, and identify opportunities for improvement.
 

@@ -2,6 +2,120 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.6 June 5, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Memory Stores for Contextual Interactions with Read/Write support via Code Tools**
+
+Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences, conversation history, or custom data.
+
+Key benefits
+
+* Stateful Interactions: Maintain and update contextual data to ensure accurate and consistent information.
+* Personalized Experiences: Store user-specific data to tailor responses and behavior.
+* Flexible Data Management: Access, modify, and persist custom data within the agent's execution flow.
+
+
+Memory Stores support three access levels: **user-level, session-specific, and app-level**, offering flexible scope control based on your needs.
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/memory-stores.md)
+
+**Thought Streaming Configurations**
+
+Agentic Apps now offers a configuration to enable or disable Thought streaming. This gives greater control over what users see during execution. Additionally, this update introduces the ability to customize the thought prompt, enabling developers to define how internal reasoning or system insights are generated and presented. This enhancement helps tailor the agent's behavior and is particularly useful for debugging. 
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md)
+
+**Document Upload Limits**
+
+The Agent Platform now supports configurable document upload limits within the platform. Developers can define restrictions on the maximum number of files that the users can upload, the maximum file size, and the maximum token limit for each file. Files exceeding the token threshold are automatically ignored. This ensures more efficient, controlled, and optimized ingestion of contextual information.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md)
+
+<font size="4">No-code and Pro-code Tools</font>
+
+
+**MCP Server Integration for Tool Calling**
+
+The Agent Platform now supports integration with MCP (Model Context Protocol) servers, enabling seamless access to external tools. With this enhancement, admins can configure MCP servers and make tools available to agents for invocation during runtime workflows.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/mcp-tools.md)
+
+
+**Improved Handling of Large Context Objects in Python Script Node**
+
+The script execution flow in the Python script node has been updated to prevent passing the context object via command-line arguments. The new implementation ensures reliable handling of large context objects without impacting overall service functionality.
+
+
+<font size="4">AI Engineering Tools</font>
+
+
+**Support for Gemini Models in Agentic Apps**
+
+Agentic Apps now supports Google's Gemini LLM in addition to OpenAI, Anthropic, and Azure OpenAI models. This integration expands the platform’s capabilities by:
+
+* Enabling multimodal intelligence powered by Google’s advanced LLM.
+* Supporting both Agent and Supervisor roles.
+* Maintaining full compatibility with routing logic and tool-calling workflows.
+
+This enhancement offers greater flexibility and model diversity for building powerful, context-aware agents.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/supported-models.md)
+
+
+**Support for the Latest OpenAI and Anthropic Models as External Models**
+
+Added support for the latest models from OpenAI and Anthropic, including:
+
+* OpenAI: gpt-4.5-preview, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
+* Anthropic: claude-3-5-sonnet, claude-3-5-haiku, claude-3-7-sonnet
+
+You can now use these models with configurable settings, such as temperature, top_p, and token limits, which are specific to each model. This update provides you with more flexibility and access to the latest LLM capabilities within your apps.
+
+
+**Open Source Multimodal Support: Text+Image to Text Inference**
+
+Added pipeline support for multimodal inference (text+image → text) for open-source models. This update supports both optimized (vLLM) and non-optimized execution paths, enabling flexibility in deployment. The updated API contract now accepts multimodal inputs, ensuring seamless integration across environments.
+
+Supported models include llama-3.2-vision, phi-3-vision, phi-3.5-vision, and llava-1.5-7b.
+
+
+**Improved Agentic Evaluation with Timeline View for Session Evaluators**
+
+You can now easily track conversations with the Agentic app using the new timeline format, which clearly marks distinct dates in chat transcripts, making it ideal for following extended conversations that span multiple days.
+
+
+**Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
+
+Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+
+**OAuth Profile-Based Authorization Support**
+
+Agentic Apps now support OAuth profile-based authorization. For agent actions that need authenticated access to external services, users are prompted to authorize the connection through OAuth. It enables seamless, secure, and user-specific access to data and services while maintaining proper authentication standards and overall integration reliability.
+
+[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/overview.md)
+
+
+<font size="4">Other Improvements</font>
+
+
+**Enhanced Workspace Switcher**
+
+The Workspace switcher in the Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.
+
+[Learn more :octicons-arrow-right-24:](../settings/workspaces/workspace-mgmt.md)
+
+
+<hr>
+
+
 ## v1.0.5 May 9, 2025
 
 <u> Minor Release </u>

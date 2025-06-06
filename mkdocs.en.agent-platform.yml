@@ -142,12 +142,15 @@ nav:
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up Agents: ai-agents/create-agent.md
-      - Connect External Agents: ai-agents/external-agents.md
       - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
         - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
+      - Memory Stores: ai-agents/agentic-apps/memory-stores.md
+      - Connect External Agents: ai-agents/external-agents.md
+      - Integrate with MCP server: ai-agents/agentic-apps/mcp-tools.md
+      - Supported AI Models: ai-agents/agentic-apps/supported-models.md
     - Knowledge:
       - About Knowledge: ai-agents/knowledge/overview.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
@@ -268,6 +271,7 @@ nav:
       - Manage Guardrails: guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/overview.md
+    - About Workspaces: settings/workspaces/workspace-mgmt.md
     - User Management:
       - Overview: settings/user-management/overview.md
       - User Management: settings/user-management/users.md
@@ -278,6 +282,8 @@ nav:
       - Enable Hugging Face: settings/integrations/enable-hugging-face.md
       - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
+    - Manage Custom Scripts:
+      - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
@@ -288,6 +294,7 @@ nav:
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md
+      - API Scopes: settings/security-and-control/api-scopes.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md

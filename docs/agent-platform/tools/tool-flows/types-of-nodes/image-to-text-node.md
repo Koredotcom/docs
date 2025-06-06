@@ -8,7 +8,7 @@ A sample use case involves an insurance company assessing vehicle damage to esti
 <p class="admonition-title">Important Considerations</p>
 <p><ul><li>The user can upload only one file at a time for processing.</li>
 <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
-<li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/api-and-sdk/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
+<li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
 <li>Image input preprocessing is supported in the following formats:</li>
 <ul><li>Binary, base64-encoded for Anthropic models.</li>
 <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul></p>

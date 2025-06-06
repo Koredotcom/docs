@@ -4,7 +4,7 @@ The **Integration node** allows you to connect to a third-party service provider
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>You must add at least one connection to configure the node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#add-connection" target="_blank">Learn more</a>.</li>
+<p><ul><li>You must add at least one connection to configure the node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#add-a-connection-to-set-up-integration" target="_blank">Learn more</a>.</li>
 <li>Make sure the selected connection is tested under <b>Settings</b> > <b>Integrations</b> before using it in the node. <a href="https://docs.kore.ai/agent-platform/settings/integrations/about-integrations/#test-connection" target="_blank">Learn more</a>.</li></ul></p>
 </div>
 
@@ -150,7 +150,7 @@ This step is required because the **Start node** must have at least one **output
 <li>Click <b>Add Output Variable</b>.</li>
 <img src="../images/add-op-var.png" alt="add output variable" title="add output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 <ol start="3"><li>Enter the value for <b>Name (key)</b> and select <i>String</i> for <b>Type</b>.</li>
-<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/integration-node/" target="_blank">Learn more</a> about accessing the node’s output.
+<li>Click <b>Save</b>. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/integration-node/#access-the-nodes-output" target="_blank">Learn more</a> about accessing the node’s output.
 <img src="../images/output-variable.png" alt="op variable" title="op variable" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Step 3: Run the Flow

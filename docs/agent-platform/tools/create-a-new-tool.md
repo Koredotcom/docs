@@ -9,8 +9,6 @@ Steps to create a tool:
 
 2. Enter a name and a brief description for the tool and click **Create**. The tool is created, and the **Tool Flow** option is displayed. You can start creating your tool flow now.
 
-<div class="admonition note">
-<p class="admonition-title">Pro Tip</p>
-<p>Another way to add a tool is to install a preconfigured and ready-to-use <b>template</b> from the Tools Library or marketplace and customize the tool flow for your business use case. <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-templates/">Learn more</a>.
-</div>
+!!! note "Pro Tip"
 
+    Another way to add a tool is to install a preconfigured and ready-to-use template from the Tools Library or marketplace and customize the tool flow for your business use case. [Learn More](../ai-agents/tools/tool-templates.md).
