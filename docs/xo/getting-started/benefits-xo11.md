@@ -1,4 +1,4 @@
-# Benefits of XO v11
+# Benefits of AI for Service (XO) v11
 
 XO v11 represents a significant evolution in the Kore.ai platform, offering transformative benefits that address the limitations of fragmented conversational experiences while introducing cutting-edge AI capabilities. This major upgrade delivers a unified, intelligent, and collaborative platform that fundamentally enhances how organizations build, manage, and deploy conversational AI solutions.
 
@@ -45,7 +45,7 @@ Key Capabilities:
 
 With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their virtual assistants provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 
-### Seamless Integration Search Module - RAG Capabilities
+### Seamless Integration With Search Module - RAG Capabilities
 
 Powered by large language models (LLMs), Search AI provides accurate, context-aware answers, significantly improving the user experience. Integrate a variety of data sources—such as web crawlers, structured data, documents, catalogues, and knowledge repositories—to create a comprehensive answer index. Customize and enrich content to meet specific business needs and boost user engagement.
 
@@ -434,3 +434,33 @@ Users should start creating an App with any one Product and later can enable/add
    </td>
   </tr>
 </table>
+
+## Contact Center AI
+
+* **Integrated Experience**: Integrated advantages of Contact Center AI (CCAI), Automation AI, Search AI, and Agent AI in a single app.
+
+* **Additional Capabilities**: Enhanced Contact Center with additional capabilities in Campaign Management, Quality Management, and Case Management with additional top-ups.
+
+* Enhanced Dialog Tasks and Flows building experience.
+
+* Enhanced user experience for the Agents and Supervisors.
+
+* Improved conversational experience and human-like conversations using the Generative AI capabilities. 
+
+* Access to Agent AI and Search AI is available to users based on additional licenses.
+
+
+## Agent AI
+
+* Access to Search AI based on additional licenses.
+* Enhanced user experience for the Agents and Supervisors. 
+* Improved conversational experience and human-like conversations using the GenerativeAI capabilities - Auto Summarization, GenAI node powered Dialog tasks, Sentiment Analysis, Answers through Knowledge AI, Playbooks and Coaching design time, and Gen AI powered runtime Coaching hints. 
+    * **Auto Summarization**: GenAI powered summarization, with the added ability to configure models through Prompt Library for better control.
+    * **GenAI node powered Dialog tasks**: Uses commercial models to power dialogs/workflows in Agent AI.
+    * **Sentiment Analysis**: Choose between XO or commercial LLMs to detect and show customer sentiment to agents in Real-Time.
+    * **Answers through Knowledge AI**: Choose between commercial models or bring your own through custom LLM endpoint.
+    * **Playbooks and Coaching design time**: Improve Playbooks and Realtime Coaching creation by suggesting similar utterances powered by commercial OpenAI model.
+    * **GenAI powered Runtime Coaching hints** using commercial LLM models. 
+* **Enhanced Collaboration**: Brand-new experience for building Dialog Tasks and Flows. 
+* **Comprehensive Analytics**: Detailed insights into user conversations categorized by each product through extensive analytics. 
+* **Integrated Experience**: Integrated advantages of Contact Center AI (CCAI), Automation AI, Search AI, and Agent AI in a single app.

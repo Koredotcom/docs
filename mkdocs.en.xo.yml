@@ -176,10 +176,9 @@ nav:
         - Current Limitations: release-notes/current-limitations.md  
       - Migration:
         - Benefits of XO v11: getting-started/benefits-xo11.md
-        - Automation AI Migration: getting-started/migration-path-xo10-to-xo11.md
-        - Benefits of Contact Center AI (CCAI): getting-started/benefits-of-contact-center-ai.md
-        - Contact Center AI Migration: getting-started/ccai-migration-from-xo10-to-xo11.md
-        - Agent AI Migration: getting-started/agent-ai-migration-from-xo10-to-xo11.md
+        - Automation AI: getting-started/migration-path-xo10-to-xo11.md
+        - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
+        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md
       - Recent Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md

@@ -1,15 +1,13 @@
-# Contact Center AI Migration from XO v10 to XO v11
+# Contact Center AI Migration from XO v10 to v11
 
-## Overview
+This document provides step-by-step instructions for upgrading your SmartAssist/Contact Center AI (CCAI) account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
 
-This guide provides step-by-step instructions on upgrading your SmartAssist / Contact Center AI (CCAI) account to the new XO v11. The upgrade process includes a streamlined transition to XO v11.
-
-## Prerequisites
+**Prerequisites**
 
 * A valid SmartAssist account.
 * The user with Bot Owner access can only upgrade the SmartAssist account.
 
-## Pre-Upgrade Checklist
+**Pre-Upgrade Checklist**
 
 * Download reports that are not supported in the XO v11. 
 Agent Login Logout Details Report – If you need data from this report, go to SmartAssist, rerun the report before the upgrade, and download the reports. 
@@ -20,7 +18,7 @@ Agent Login Logout Details Report – If you need data from this report, go to S
 
 ## What Will Change
 
-### Bot to an App on XO v11
+### Bot to App Transition
 
 The bot system is transitioning to a consolidated app in the XO11 application. SmartAssist Instance bot and child bots will become individual Apps on XO v11.
 
@@ -324,3 +322,7 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 | AgentAssist settings                   | Moved to the AgentAI module. [Learn more](../agentai/configuration/widget-settings.md) |
 | SearchAssist                           | Moved to the AgentAI module. [Learn more](../agentai/configuration/linked-services.md) |
 | Advanced settings                      | Moved to Contact Center AI > Configurations > Advanced Settings. [Learn more](../contactcenter/configurations/advanced-settings/handling-sensitive-data.md) |
+
+!!! Note
+
+        SmartAssist is nearing its end-of-life. All new Contact Center features will be developed exclusively on XO v11. Existing users must migrate to ensure uninterrupted service and continued feature access.
