@@ -30,7 +30,7 @@ API keys are typically included in request headers or parameters to validate acc
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p>You can copy the API key only once. Save the key in a secure location for future reference.</p>
+<p>You can copy the API key only once and must not lose it. Save the key in a secure location for future use.</p>
 </div>
 
 
