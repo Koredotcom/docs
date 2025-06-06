@@ -1,6 +1,6 @@
-# Agent AI Migration from XO v10 to XO v11
+# Agent AI Migration from XO v10 to v11
 
-This guide provides step-by-step instructions on upgrading your Agent AI account to the new XO v11 platform. The upgrade process includes a streamlined transition to XO v11.
+This document provides step-by-step instructions for upgrading your Agent AI account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ If there is an error during the upgrade, the system stops the upgrade and lets y
 2. Click **Revert Upgrade**. You will be redirected to the XO v11 home page.  
 <img src="../images/revert-upgrade_9.png" alt="revert-upgrade" title="revert-upgrade" style="border: 1px solid gray; zoom:80%;"> 
 
-## Related Links
+#### Related Links
 
 * [Migration Path for Existing Customers - Upgrade Journey](./../getting-started/migration-path-xo10-to-xo11.md)
 * [Upgrade Accounts from SmartAssist to XO v11](./../getting-started/ccai-migration-from-xo10-to-xo11.md)

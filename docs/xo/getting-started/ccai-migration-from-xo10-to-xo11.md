@@ -1,8 +1,6 @@
-# Contact Center AI Migration from XO v10 to XO v11
+# Contact Center AI Migration from XO v10 to v11
 
-## Overview
-
-This guide provides step-by-step instructions on upgrading your SmartAssist / Contact Center AI (CCAI) account to the new XO v11. The upgrade process includes a streamlined transition to XO v11.
+This document provides step-by-step instructions for upgrading your SmartAssist/Contact Center AI (CCAI) account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
 
 ## Prerequisites
 
