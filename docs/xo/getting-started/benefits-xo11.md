@@ -45,7 +45,7 @@ Key Capabilities:
 
 With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their virtual assistants provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 
-### Seamless Integration Search Module - RAG Capabilities
+### Seamless Integration With Search Module - RAG Capabilities
 
 Powered by large language models (LLMs), Search AI provides accurate, context-aware answers, significantly improving the user experience. Integrate a variety of data sources—such as web crawlers, structured data, documents, catalogues, and knowledge repositories—to create a comprehensive answer index. Customize and enrich content to meet specific business needs and boost user engagement.
 
@@ -434,3 +434,14 @@ Users should start creating an App with any one Product and later can enable/add
    </td>
   </tr>
 </table>
+
+## Benefits of Contact Center AI (CCAI)
+
+### Why Upgrade to XO v11?
+
+1. **Integrated Experience**: Integrated advantages of Contact Center AI (CCAI), Automation AI, Search AI, and Agent AI in a single app.
+2. **Additional Capabilities**: Enhanced Contact Center with additional capabilities in Campaign Management, Quality Management, and Case Management with additional top-ups.
+3. Access to Agent AI and Search AI will be available to authorized users upon purchase of additional licenses.
+4. Enhanced user experience for the Agents and Supervisors.
+5. Improved conversational experience and human-like conversations using the GenerativeAI capabilities.
+6. **Enhanced Collaboration**: Brand-new experience for building Dialog Tasks and Flows.

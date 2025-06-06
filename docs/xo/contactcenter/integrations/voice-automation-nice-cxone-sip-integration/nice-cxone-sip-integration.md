@@ -188,11 +188,12 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
     ```
     https://api-{cluster}.NICE-incontact.com/incontactapi/services/v28.0/interactions/{{context.session.BotUserSession.ContactId}}/signal?p1=AgentHandoff&p3={{context.session.BotUserSession.conversationSessionId}}  
     ```
-    !!! Note
-    
-        We extract the ContactId from the SIP headers and add it to the BotUserSession as {{context.session.BotUserSession.ContactId}}. This value is accessed to initiate the signal API trigger. The p1 parameter is configured as “AgentHandoff” to facilitate transferring the user to an agent.  
 
-    <img src="../images/post-signal-api.png" alt="Post Signal API" title="Post Signal API" style="border: 1px solid gray; zoom:70%;">  
+!!! Note
+
+    We extract the ContactId from the SIP headers and add it to the BotUserSession as `{{context.session.BotUserSession.ContactId}}`. This value is accessed to initiate the signal API trigger. The p1 parameter is configured as “AgentHandoff” to facilitate transferring the user to an agent.  
+
+<img src="../images/post-signal-api.png" alt="Post Signal API" title="Post Signal API" style="border: 1px solid gray; zoom:70%;">  
 
 6. Click the **Headers** tab.
 7. Enter “**Authorization**” as the Key and `"Bearer{{context.RestAPICall.response.body.access_token}}"` as the value.  
@@ -202,6 +203,6 @@ Configure a dialog task in Bot Builder to transition the request to NICE CXOne o
 
 ### Code Snippets
 
-[Main Script SIP Main](../voice-automation-nice-cxone-sip-integration/scripts/sip-main.pdf)
+[Main Script](../voice-automation-nice-cxone-sip-integration/scripts/sip-main.pdf)
 
-[Spawn Script SIP Spawn](../voice-automation-nice-cxone-sip-integration/scripts/sip-spawn.pdf)
+[Spawn Script](../voice-automation-nice-cxone-sip-integration/scripts/sip-spawn.pdf)
