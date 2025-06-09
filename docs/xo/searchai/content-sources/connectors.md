@@ -124,7 +124,7 @@ You can verify the permissions imported in the ingested content in the <code>sys
 field in the JSON view of the corresponding content.
 
 
-For more information on RACL implementation in Search AI, refer to [this](./racl-support.md). 
+For more information on RACL implementation in Search AI, refer to [this](racl-support.md). 
 
 
 ## Sync and Ingest Content
@@ -177,7 +177,7 @@ The automatic sync can be scheduled as a one-time activity or to be performed at
 
 To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. 
 
-![Recurring Sync](../images/connectors/recurrent-sync.PNG "Recurring Sync")
+![Recurring Sync](images/connectors/recurrent-sync.PNG "Recurring Sync")
 
 To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
 

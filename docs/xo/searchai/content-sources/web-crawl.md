@@ -11,27 +11,27 @@ Websites usually provide detailed information about an organization's products a
 
 To manage the data ingested through web pages or to add new web sources, go to the **Websites** page under the **Content** section.
 
-![Web Crawl](../images/web-crawl-home.png "Web Crawl")
+![Web Crawl](images/web-crawl-home.png "Web Crawl")
 
 ## Adding a new web crawler for a web source
 
 To add a new web source, click **+Web Crawl**.
 
-![Adding Web Source](../images/add-web-crawl.png "Add Web Source")
+![Adding Web Source](images/add-web-crawl.png "Add Web Source")
 
 Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click **+Web Crawl** on the top right to add a new web domain for crawling.
 
-![Add new web source](../images/existing-webcrawls.png "add a new web source")
+![Add new web source](images/existing-webcrawls.png "add a new web source")
 
 Provide details of the crawl configuration on the **Configuration** tab and click **Save & Crawl**.
 
-![Web Crawl Configuration](../images/add-web-config-page.png "Web Crawl Configuration")
+![Web Crawl Configuration](images/add-web-config-page.png "Web Crawl Configuration")
 
 This validates the configuration provided and by default, automatically initiates the crawl process after validation.
-![Automate Crawling](../images/automatic-crawl.PNG "Automate Crawling")
+![Automate Crawling](images/automatic-crawl.PNG "Automate Crawling")
 
 You can choose to run the crawl in the background, which allows you to perform other tasks on the application. Alternatively, you can also schedule the crawler to run at specific times in the future.
-![Schedule Crawling](../images/schedule-crawl.PNG "Schedule Crawling")
+![Schedule Crawling](images/schedule-crawl.PNG "Schedule Crawling")
 
 ### Crawl Configuration
 
@@ -75,11 +75,11 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
     * **Crawl everything** – Use this option when all the URLs in the domain specified by the Crawl Source are to be crawled. By default, when a new domain is added, this option is used, and all the URLs in the domain are used.
     * **Crawl everything except specific URLs** – Use this option when all the URLs except the blocked URLs are to be crawled. You can add rules to identify the blocked URLs, like _block if URL_ _contains or doesn’t contain _a specific term or if the_ URL is equal to_ a specific URL, as shown below. Select the condition from the drop-down list and specify its values in the text box on the right. 
         
-    ![Crawl Everything except specific URL](../images/URL-exclude-conditions.png "Crawl specific URLs")
+    ![Crawl Everything except specific URL](images/URL-exclude-conditions.png "Crawl specific URLs")
 
     * **Crawl only specific URLs** – Use this option when only selected URLs that satisfy a given condition are to be crawled. For example, if only the blog section is to be crawled, you can set the rule as _Allow if URL contains “blog”_.
         
-    ![Crawl Only Specific URLs](../images/URL-include-conditions.png "crawl only specific URLs")
+    ![Crawl Only Specific URLs](images/URL-include-conditions.png "crawl only specific URLs")
         
     You can use any of the following types of conditions to choose the URLs:
     * **Equals to** - when the URL exactly matches the given value.
@@ -91,7 +91,7 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
             
     You can **add any number of rules** to selectively choose the URLs from the web domain in the above two options. 
         
-    ![Number of rules](../images/multiple-include-conditions.png "number of rules")
+    ![Number of rules](images/multiple-include-conditions.png "number of rules")
 
 * **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for recrawling the web domain at regular intervals.  
 
@@ -105,7 +105,7 @@ To set a schedule, enter the following:
 Search AI web crawling supports the two types of authentication - **Basic Authentication** and **Form-based Authentication**. Both are simple authentication schemes built into the HTTP protocol that are used to protect web resources. Although both mechanisms use a username and password to authenticate the client, the difference is in the way both are implemented. Basic Authentication uses an HTTP header to provide the username and password when making a request to the server. Whereas Form-based authentication uses standard HTML form fields to pass the username and password values to the server via a POST request. Depending on the authentication mechanism supported by the web domain, choose the authentication method from the drop-down menu. 
 
 **Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields.
-    ![Basic Auth](../images/basic-auth.png "Basic Auth")
+    ![Basic Auth](images/basic-auth.png "Basic Auth")
     <table>
     <tr>
     <td><strong>Field</strong>
@@ -221,7 +221,7 @@ You can edit the configuration for any crawl source at any time. This can be use
 
 Any changes made to the configuration become effective either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  
 
-To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the **Configuration** tab. ![Update a web source](../images/update-websource.png "Updating a web source")
+To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the **Configuration** tab. ![Update a web source](images/update-websource.png "Updating a web source")
 
 ## View execution status and crawled pages
 
@@ -232,41 +232,41 @@ Crawling a web domain takes time, depending on the crawl options set for the sou
  
 This information can be very useful for understanding the data retrieved from the web source.
 
-![Crawled pages](../images/crawled-pages_logs.png "crawled pages")
+![Crawled pages](images/crawled-pages_logs.png "crawled pages")
 
 It lists the pages crawled in the last update, the user who initiated the crawl, and the URL of the crawled page. You can also recrawl a given page or delete it using the actions for the page. 
-![Page actions](../images/pages-actions.png "page actions")
+![Page actions](images/pages-actions.png "page actions")
 
 You can also go to the detailed view of a given page and take these actions as shown below. 
-![Page Details](../images/page-details.png "page details")
+![Page Details](images/page-details.png "page details")
 
 Additionally, to view how the page is stored in the application, click on the **View JSON** button. 
-![JSON View](../images/json-view.png "json view")
+![JSON View](images/json-view.png "json view")
 
 To view the execution status and logs, go to the **Executions** tab for the source.
-![Execution status](../images/execution-status.png "execution status")
+![Execution status](images/execution-status.png "execution status")
 
 It shows the current status of the web crawl, the timestamp of the most recent crawl, and the corresponding logs.
 
 ## Recrawling a web source
 
 Recrawling is required to keep up with the changes in the source. You can either schedule recrawling of the website at regular intervals using the scheduler or you can manually perform a recrawl operation as and when required. To manually recrawl a web source, click the **recrawl** action against the name of the source.
-![Recrawl Web Source](../images/recrawl-webpage.png "recrawl web source")
+![Recrawl Web Source](images/recrawl-webpage.png "recrawl web source")
 
-You can also use the Re-Crawl on the configuration page of the web source. ![Recrawl](../images/recrawl-websource-via-config-page.png "recrawl")
+You can also use the Re-Crawl on the configuration page of the web source. ![Recrawl](images/recrawl-websource-via-config-page.png "recrawl")
 
 
-You can also recrawl selected pages of the source when you know the specific pages that have been updated. This can avoid the unnecessary crawling of the whole source. Go to the **Pages** tab of the source and click the **Recrawl** link under **Actions** for the page to be crawled.![Recrawl a page](../images/page-actions.png "recrawl a page")
+You can also recrawl selected pages of the source when you know the specific pages that have been updated. This can avoid the unnecessary crawling of the whole source. Go to the **Pages** tab of the source and click the **Recrawl** link under **Actions** for the page to be crawled.![Recrawl a page](images/page-actions.png "recrawl a page")
 
 Whenever a web page is recrawled, all the existing chunks corresponding to the content are deleted and recreated.
 
 ## Deleting an existing web crawler
 
 When a resource is no longer required and you do not want the information to appear in the answers, delete the source from the application. To do so, go to the **Web Crawl page** that lists all the existing sources and click the delete link for the source you want to delete.
-![Delete Web Source](../images/delete-webpage.png "delete web source")
+![Delete Web Source](images/delete-webpage.png "delete web source")
 
 You can also delete one or more of the crawled pages individually from the source without deleting the source. To do so, go to the **Pages** tab for the selected source and click the **Delete** link under **Actions** for the page to be removed.
-![Delete a page](../images/delete-pages.png "delete page")
+![Delete a page](images/delete-pages.png "delete page")
 
 !!!note
     Note that if a specific page is deleted manually as explained above and the web source is recrawled, the page reappears in the crawled pages list unless the crawl options are modified to disable the crawling of this page( like adding it in the exclude list). 
@@ -276,14 +276,14 @@ You can also delete one or more of the crawled pages individually from the sourc
 There can be various scenarios when the application either fails to crawl a web page or successfully crawls the page but does not index the web page’s content and, hence, does not return the expected results. 
 
 Whenever the application fails to validate the crawl configuration provided and is unable to initiate the crawling process, the details of the error are displayed as shown below.
-![Error Reporting](../images/validation-error.PNG "Error Reporting")
+![Error Reporting](images/validation-error.PNG "Error Reporting")
 
 If the web crawl fails while running in the background, you can see the crawl errors in the status field as shown below. Hovering over the info icon gives you more details about the error.
-![Error Reporting](../images/webcrawl-list-error-status.PNG "Error Reporting")
+![Error Reporting](images/webcrawl-list-error-status.PNG "Error Reporting")
 
 Hovering over the info icon gives you more details about the error. 
 
-Below are some of the most common error scenarios. Refer to [this list](../web-crawl-errors) for an exact list of errors, potential causes, and the next steps to take. For any specific queries or issues, please [contact us](https://kore.ai/).
+Below are some of the most common error scenarios. Refer to [this list](web-crawl-errors.md) for an exact list of errors, potential causes, and the next steps to take. For any specific queries or issues, please [contact us](https://kore.ai/).
 
 1.**Web Crawl Failure:**
 
