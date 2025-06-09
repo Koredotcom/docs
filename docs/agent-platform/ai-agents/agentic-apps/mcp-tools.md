@@ -7,14 +7,14 @@ MCP follows a client-server architecture, where:
 * MCP server exposes specific capabilities through the standardized Model Context Protocol.
 * The host or MCP client(in this case, Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent workflows.
 
-[Learn More.](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
+<a href="https://docs.anthropic.com/en/docs/agents-and-tools/mcp" target="_blank">Learn More</a>
 
 Agentic Apps enable seamless integration with the MCP server, allowing the apps to use the tools hosted by the MCP server. 
 
 **Key Points:**
 
 * Currently, only **tool discovery and invocation** from MCP servers is supported. 
-* The integration between Agent Platform and the MCP server is **static** in nature. Any updates to the MCP server (like changes in tool definitions or additions) require manual reconfiguration with the MCP server. Dynamic updates are not supported. 
+* Currently, dynamic updates from the MCP server such as changes to tool definitions or newly added tools, are not automatically reflected in the Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates.  
 * Currently, only **SSE-based MCP server endpoint configurations** are supported.
 
 
