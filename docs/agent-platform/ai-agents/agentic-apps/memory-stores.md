@@ -164,25 +164,21 @@ projections: fields of the JSON document object used to identify the document fr
 
 **Examples**:
 
+  1. To fetch the complete employee record from the store defined above, use the following 
+    ```
+    memory.get_content("employee_details")
+    ```
+    
+  2. To fetch the first name of the employee from the store, use:
+    ```
+    memory.get_content("employee",{"firstname":1})
+    ```
+    Here, `{"firstname": 1}` is a **projection object**, indicating that only the `firstname` field should be included in the result.
 
-
-1. To fetch the complete employee record from the store defined above, use the following 
-
-```
-	memory.get_content("employee_details")
-```
-2. To fetch the first name of the employee from the store, use:
-
-```
-memory.get_content("employee",{"firstname":1})
-```
-Here, `{"firstname": 1}` is a **projection object**, indicating that only the `firstname` field should be included in the result.
-
-3. To fetch both first name and location (subset of the complete record), use:
-
-```
-memory.get_content("employee", {"name": 1, "preflanguage": 1})
-```
+  3. To fetch both first name and location (subset of the complete record), use:
+    ```
+    memory.get_content("employee", {"name": 1, "preflanguage": 1})
+    ```
 
 ### Writing to Memory Store
 
@@ -199,30 +195,25 @@ where,
 store_name: the technical name of the store. 
 data_object:  A JSON object representing the fields to write or update in the memory store.
 
-Note: 
+**Note**
+  * Records are stored based on the memory store’s access context: **session**, **user**, or **application**. 
+  * Fields not included in the update are retained as-is.
 
-* Records are stored based on the memory store’s access context: **session**, **user**, or **application**. 
-* Fields not included in the update are retained as-is.
+**Examples**
 
-**Examples**:
+  1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does not already exist, the following method will create a new record and set the firstname as John. 
+  ``` 
+  memory.set_content("employee",{"firstname":"John"})
+  ```
+  If, however, a record exists but the firstname is different, this method will overwrite the first name in the same record.
 
-
-
-1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does not already exist, the following method will create a new record and set the firstname as John. 
-
-```
-memory.set_content("employee",{"firstname":"John"})
-```
-If, however, a record exists but the firstname is different, this method will overwrite the first name in the same record. 
-
-2. To update multiple fields, specify the fields to be updated in the data_object. 
-
-```
-memory.set_content("employee", {
-  "firstname": "John",
-  "preflanguage": "English"
-})
-```
+  2. To update multiple fields, specify the fields to be updated in the data_object. 
+  ```
+  memory.set_content("employee", {
+    "firstname": "John",
+    "preflanguage": "English"
+  })
+  ```
 
 ### Deleting Content from Memory Store
 
@@ -232,7 +223,6 @@ To delete a record from the memory store, use the following format. Depending on
 ```
 memory.delete_content(<store_name>)
 ```
-
 
 Where, store_name: technical name of the memory store from which content is to be deleted. 
 
