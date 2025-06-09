@@ -226,17 +226,16 @@ Concepts are clusters of related and synonymous terms that you want to be consid
 * Allowed characters in concept name are:
     * a to z and A-Z
     * 1 to 9
-    * _ (underscore)
 * At least one alphabet symbol must follow the ~.
 * Must not start or end with a _ (underscore).
 * Concepts are case insensitive. i.e ~myConcept is the same as ~myconcept
 
 Examples for allowed concept names:
 
-* ~my_concept
+* ~myconcept
 * ~Sample
 * ~test123
-* ~my_new_concept
+* ~mynewconcept
 
 Examples of invalid concepts names:
 
