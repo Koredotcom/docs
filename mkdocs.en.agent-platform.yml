@@ -271,6 +271,7 @@ nav:
       - Manage Guardrails: guardrails/manage-guardrails.md
   - Administration: 
     - About Settings: administration/overview.md
+    - About Workspaces: settings/workspaces/workspace-mgmt.md
     - User Management:
       - Overview: settings/user-management/overview.md
       - User Management: settings/user-management/users.md

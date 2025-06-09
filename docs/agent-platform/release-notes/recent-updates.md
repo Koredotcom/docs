@@ -12,11 +12,11 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Memory Stores for Contextual Interactions with Read/Write support via Code Tools**
 
-Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences,conversation history, or custom data.
+Agent Platform now supports persistent **Memory Stores** to retain contextual data, enabling more personalized and intelligent agent interactions. These stores can be directly accessed within prompts and programmatically managed via code tools to support dynamic, stateful behavior. The memory stores can be used to maintain user preferences, conversation history, or custom data.
 
-**Key Benefits**:
+Key benefits
 
-* Stateful Interactions: Maintain and update contextual data.
+* Stateful Interactions: Maintain and update contextual data to ensure accurate and consistent information.
 * Personalized Experiences: Store user-specific data to tailor responses and behavior.
 * Flexible Data Management: Access, modify, and persist custom data within the agent's execution flow.
 
@@ -67,7 +67,7 @@ This enhancement offers greater flexibility and model diversity for building pow
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/supported-models.md)
 
 
-**Support for the Latest OpenAI and Anthropic Models**
+**Support for the Latest OpenAI and Anthropic Models as External Models**
 
 Added support for the latest models from OpenAI and Anthropic, including:
 
@@ -110,7 +110,7 @@ Agentic Apps now support OAuth profile-based authorization. For agent actions th
 
 The Workspace switcher in the Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.
 
-[Learn more :octicons-arrow-right-24:](../settings/workspace-mgmt.md)
+[Learn more :octicons-arrow-right-24:](../settings/workspaces/workspace-mgmt.md)
 
 
 <hr>

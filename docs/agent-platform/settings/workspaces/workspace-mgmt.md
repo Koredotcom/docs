@@ -13,13 +13,13 @@ Points to Note:
 
 The current workspace is displayed at the top right corner in the Agent Platform UI. 
 
-![alt_text](images/workspace/home.png "Workspace")
+![alt_text](images/home.png "Workspace")
 
 ## Switching between Workspaces
 
 Clicking the workspace name opens a drop-down list of all accessible workspaces.
 
-![alt_text](images/workspace/switcher.png "image_tooltip")
+![alt_text](images/switcher.png "image_tooltip")
 
 
 Click on **Browse all Workspaces** to view the complete list of workspaces.  On switching between workspaces, 
