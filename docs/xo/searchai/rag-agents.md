@@ -92,7 +92,22 @@ By default, this enables all the RAG agents. All the agents use the model config
 ![alt_text](images/agentic-rag/enabled.png "image_tooltip")
 
 
-To change the model and prompt settings or to enable or disable a particular agent, go to the **Gen AI features** under **Generative AI Tools** and make appropriate settings. 
+To change the model and prompt settings or to enable or disable a particular agent, go to the [**Gen AI features**](../generative-ai-tools/genai-features.md#search-ai-model-feature-matrix) under **Generative AI Tools** and make appropriate settings. 
+
+The following table displays the supported models for each of the agents. 
+
+(✅ Supported | ❌ Not supported)
+
+| Model     | Metadata Extractor Agent     | Query Rephrase Agent (for Advanced Search API)     | Query Transformation  Agent   | Result Type Classification  Agent  |
+|---|---|---|---|---|
+| Azure OpenAI -   GPT 4, GPT 4 Turbo     |  ❌     | ❌     | ❌     | ❌     |
+| Azure OpenAI - GPT 4o, and GPT-4o mini*     |  ✅     | ✅     | ✅     | ✅     |
+| OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo     | ❌     | ❌     | ❌     | ❌     |
+| OpenAI -   GPT 4o, and GPT-4o mini*     | ✅     | ✅     | ✅     | ✅     |
+| Custom LLM     |  ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     | ✅   (If underlying llm is GPT 4o / GPT 4o mini)     |
+| Kore.ai XO GPT     | ❌     | ❌     | ❌     | ❌     |
+| Amazon Bedrock     | ❌     | ❌     | ❌     | ❌     |
+
 
 
 ## Testing the Agentic RAG feature
@@ -101,7 +116,7 @@ To test the performance of the agents, use the **Test** option on the Agentic RA
 
 ![alt_text](images/agentic-rag/debug.png "image_tooltip")
 
-## Points to Note:
+## Points to Note
 
 When implementing Agentic RAG to enhance query accuracy, keep the following points in mind:
 
