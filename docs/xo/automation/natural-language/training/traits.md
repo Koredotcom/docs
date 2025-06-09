@@ -63,12 +63,13 @@ The following key features can be leveraged when defining Traits:
     
 3. Once added, **Train** the assistant for the Traits to be detected from user utterances.
 
-!!! Key Considerations
+!!! note "Key Considerations"
 
     * You can add language-specific traits in the case of multi-lingual assistants.
     * When a trait name is modified, ensure that all the rules defined using that trait are corrected. This has to be done manually, the Platform will not handle it automatically.
     * The trait name must be unique in a group.
     * Traits with the same name can be present in multiple groups, but distinguishing them in trait rules or trait detection results is difficult.
+    * For trait names, only spaces and underscores ("_") are supported as special characters. No other special characters are allowed.
 
 ## The ML Model for Traits
 
