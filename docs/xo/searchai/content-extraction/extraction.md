@@ -68,9 +68,13 @@ This strategy is specially designed to extract data from tables and images in HT
 **Chunk Method Template**: Choose the appropriate template for content extraction.
 
 * **General**: This template identifies different components and classes within an HTML document and generates chunks based on them. Tables and images present between the content are also extracted and stored as chunks, which are then used to present answers to users.
+!!!note
+    Documents with content shorter than 60 characters are skipped when using General template. 
+
 * **Token-Based:** This template generates chunks based on the token size configuration. Any images present between the content are also extracted and stored in the chunk.
-* **Tokens**:  The number of tokens to be present in each chunk. This value can vary between 100 and 1000 and the default value is 300. 
-* **Chunk Overlap**: The number of tokens that can overlap between adjacent chunks. This field can take values between 10 and 100. 
+
+    * **Tokens**:  The number of tokens to be present in each chunk. This value can vary between 100 and 1000 and the default value is 300. 
+    * **Chunk Overlap**: The number of tokens that can overlap between adjacent chunks. This field can take values between 10 and 100. 
 
 !!! note
     A strategy is automatically enabled as soon as it is created. However, creating a strategy does not automatically initiate the extraction process. Use the **Train** option to initiate the extraction process.   
