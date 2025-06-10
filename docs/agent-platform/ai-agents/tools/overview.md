@@ -7,14 +7,14 @@ Powered by the tool invocation capabilities of large language models (LLMs), age
 For example, a ‘Leave Managing Agent’ might include tools like:
 
 * Get Leave Balance tool - Invokes an external API to retrieve leave details.
-* Leave Application tool - Gathers necessary information and applies leaves in the backend system. \
+* Leave Application tool - Gathers necessary information and applies leaves in the backend system. 
 
 Similarly, a ‘Credit Card Assistant’ might include tools like:
 
 * Retrieve Outstanding Amount tool - Fetches the current due amount.
 * Fetch Credit Limit tool - Retrieves the user's maximum credit limit.
 * Initiate Bill Payment tool - Initiates the bill payment process.
-* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database. \
+* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database. 
 
 ## Types of Tools
 
