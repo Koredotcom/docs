@@ -325,4 +325,13 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 
 !!! Note
 
-        SmartAssist is nearing its end-of-life. All new Contact Center features will be developed exclusively on XO v11. Existing users must migrate to ensure uninterrupted service and continued feature access.
+    SmartAssist is nearing its end-of-life. All new Contact Center features will be developed exclusively on XO v11. Existing users must migrate to ensure uninterrupted service and continued feature access.
+
+<hr>
+
+
+ **Related Links**
+
+* [What's New in XO v11](./whats-new-in-xo-platform.md)
+* [Current Limitations](../release-notes/current-limitations.md)
+* [Key Differences Between XO v11 and v10](../getting-started/key-differences-between-xo11-and-xo10.md)

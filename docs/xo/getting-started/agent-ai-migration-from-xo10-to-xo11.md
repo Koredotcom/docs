@@ -57,7 +57,10 @@ If there is an error during the upgrade, the system stops the upgrade and lets y
 2. Click **Revert Upgrade**. You will be redirected to the XO v11 home page.  
 <img src="../images/revert-upgrade_9.png" alt="revert-upgrade" title="revert-upgrade" style="border: 1px solid gray; zoom:80%;"> 
 
-#### Related Links
+<hr>
 
-* [Migration Path for Existing Customers - Upgrade Journey](./../getting-started/migration-path-xo10-to-xo11.md)
-* [Upgrade Accounts from SmartAssist to XO v11](./../getting-started/ccai-migration-from-xo10-to-xo11.md)
+ **Related Links**
+
+* [What's New in XO v11](./whats-new-in-xo-platform.md)
+* [Current Limitations](../release-notes/current-limitations.md)
+* [Key Differences Between XO v11 and v10](../getting-started/key-differences-between-xo11-and-xo10.md)
