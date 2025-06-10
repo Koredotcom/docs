@@ -4,3 +4,4 @@ Code Tools are custom, agent-specific functions designed to process user input a
 
 Example: SQL Query Processor — a tool that executes SQL queries on a specified database instance.
 
+For more information on creating code tools, see [Create a code tool](../tools/create-a-code-tool.md).
