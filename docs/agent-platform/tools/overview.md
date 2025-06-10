@@ -7,14 +7,14 @@ Powered by the tool invocation capabilities of large language models (LLMs), age
 For example, a ‘Leave Managing Agent’ might include tools like:
 
 * Get Leave Balance tool - Invokes an external API to retrieve leave details.
-* Leave Application tool - Gathers necessary information and applies leaves in the backend system. \
+* Leave Application tool - Gathers necessary information and applies leaves in the backend system.
 
 Similarly, a ‘Credit Card Assistant’ might include tools like:
 
 * Retrieve Outstanding Amount tool - Fetches the current due amount.
 * Fetch Credit Limit tool - Retrieves the user's maximum credit limit.
 * Initiate Bill Payment tool - Initiates the bill payment process.
-* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database. \
+* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database.
 
 ## Types of Tools
 
@@ -32,7 +32,7 @@ Examples:
 * Stock Market tool: Fetches real-time stock prices.
 * Database Query tool: Accesses structured data from a company’s database.
 
-For more information on Workflow tools, see [Workflow Tools](../tools/workflow-tools.md).
+For more information, see [Workflow Tools](../tools/workflow-tools.md).
 
 
 ### Code Tools
@@ -46,16 +46,14 @@ Examples:
 * SQL Query Processor – Executes SQL queries on a specified database.
 * Custom Validator – Validates inputs using custom logic before proceeding.
 
-For more information, see [Code Tools](../tools/code-tools.md).
+For more information, see [Code Tools](../ai-agents/tools/code-tools.md).
 
 
 ### MCP Tools
 
 MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.
 
-Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code.  Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. 
-
-Because MCP Tools are centrally managed, they support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents.
+Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code.  Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because MCP Tools are centrally managed, they support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents.
 
 **Best suited for:** Seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
 

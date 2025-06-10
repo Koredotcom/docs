@@ -200,10 +200,10 @@ nav:
           - Export a Tool: ai-agents/tools/export-a-tool.md
           - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
       - Code tools: 
-        - Overview: ai-agents/tools/workflow-tools.md
+        - Overview: ai-agents/tools/code-tools.md
         - Create a Tool: ai-agents/tools/create-a-new-tool.md
       - MCP tools: 
-        - Overview: ai-agents/tools/workflow-tools.md
+        - Overview: ai-agents/tools/mcp-tools.md
         - Create a Tool: ai-agents/tools/create-a-new-tool.md    
     - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
