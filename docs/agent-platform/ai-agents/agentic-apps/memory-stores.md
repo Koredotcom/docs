@@ -20,7 +20,7 @@ To set up Memory store, provide the following details.
 
 **Basic Information**
 
-**Name**: Provide a user-friendly name for the store. 
+**Name**: Provide a user-friendly name for the store. Once a store is created, this name can be updated but it does not change the technical name of the store. 
 
 **Technical Name**: Provide a unique name for the store. This name **cannot be modified** after the store is created. Note that this name should not have any special characters or spaces. This is the name that is used within prompts and code tools to refer to the memory store. 
 
@@ -132,52 +132,49 @@ Field-name: name of the field as defined in the schema of the memory store.
 
 ## Accessing Memory Stores from Code Tools
 
+Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts and code tools**, but can be **updated or deleted via code tools only**.
+
+* A Memory store can be **referenced in code tools using its technical name only.**
+* *sessionMeta* cannot be manipulated via code tools. 
+
+### Supported Languages
+
+Memory operations can be performed using **JavaScript** or **Python** in code tools.
 
 
-* Memory stores can be accessed within the agent and orchestrator prompts and in the code tools. However, they can be manipulated only via the code tools. 
-* Memory stores are referenced using the technical name of the store. 
-* *sessionMeta*, by default, populates the session information in the sessionInfo object within the store. The sessionInfo object contains the following fields.
-    * sessionId
-    * appId
-    * sessionReference
-    * userReference
-    * userId
-    * runId
-* Memory stores can be accessed from code tools using either **JavaScript** or **Python**. The format remains the same for both. 
+* In **JavaScript**, memory methods are **async** and return a **Promise**. Use them with **await** keyword. 
+* In **Python**, methods are **synchronous** and return values directly. 
 
 
 ### Reading from Memory Store
 
 Use the following format to access a memory store in the code tools and retrieve either the complete record or specific fields using **projections**. 
 
-
 ```
 memory.get_content(<store_name>,<projections>)
 ```
 
+**Parameters:**
 
-Where, 
+* **store_name**: *(string)* The technical name of the memory store.
+* **projections** *(optional)*: JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
 
-store_name: The technical name of the store. 
-
-projections: fields of the JSON document object used to identify the document from the store. This is optional. If projection is omitted, the complete record is returned. 
-
-**Examples**:
+**Javascript Examples**:
 
   1. To fetch the complete employee record from the store defined above, use the following 
     ```
-    memory.get_content("employee_details")
+    await memory.get_content("employee_details")
     ```
     
   2. To fetch the first name of the employee from the store, use:
     ```
-    memory.get_content("employee",{"firstname":1})
+    await memory.get_content("employee",{"firstname":1})
     ```
-    Here, `{"firstname": 1}` is a **projection object**, indicating that only the `firstname` field should be included in the result.
+  Here, `{"firstname": 1}` is a **projection object**, indicating that only the `firstname` field should be included in the result.
 
   3. To fetch both first name and location (subset of the complete record), use:
     ```
-    memory.get_content("employee", {"name": 1, "preflanguage": 1})
+    await memory.get_content("employee", {"name": 1, "preflanguage": 1})
     ```
 
 ### Writing to Memory Store
@@ -190,26 +187,25 @@ Use the following format to create or update a record in the memory store. This 
 ```
 memory.set_content(<store_name>,<data_object>)
 ```
-
-where, 
-store_name: the technical name of the store. 
-data_object:  A JSON object representing the fields to write or update in the memory store.
+**Parameters:**
+* store_name(string): the technical name of the store. 
+* data_object:  A JSON object representing the fields to write or update in the memory store.
 
 **Note**
   * Records are stored based on the memory store’s access context: **session**, **user**, or **application**. 
   * Fields not included in the update are retained as-is.
 
-**Examples**
+**Javascript Examples**
 
   1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does not already exist, the following method will create a new record and set the firstname as John. 
   ``` 
-  memory.set_content("employee",{"firstname":"John"})
+  await memory.set_content("employee",{"firstname":"John"})
   ```
   If, however, a record exists but the firstname is different, this method will overwrite the first name in the same record.
 
   2. To update multiple fields, specify the fields to be updated in the data_object. 
   ```
-  memory.set_content("employee", {
+  await memory.set_content("employee", {
     "firstname": "John",
     "preflanguage": "English"
   })
@@ -219,20 +215,21 @@ data_object:  A JSON object representing the fields to write or update in the me
 
 To delete a record from the memory store, use the following format. Depending on the access type of the store, the following method will delete the record corresponding to the session, user, or application. 
 
-
 ```
 memory.delete_content(<store_name>)
 ```
 
-Where, store_name: technical name of the memory store from which content is to be deleted. 
+**Parameters**
 
-**Example**
+* store_name: the technical name of the memory store from which content is to be deleted.
+
+**Javascript Example**
 
 To delete the employee details from the store. 
 
 
 ```
-memory.delete_content("employee")
+await memory.delete_content("employee")
 ```
 
 
