@@ -6,7 +6,7 @@ The application supports various chunk-generation strategies. You can select and
 
 To view the strategies defined in an application or to make any changes, go to the **Extract** page under the **Index** tab. 
 
-![Extraction Strategy](../images/extract-home.png "Extraction Strategy")
+![Extraction Strategy](images/extract-home.png "Extraction Strategy")
 
 By default, every application has a **Default Strategy** configured to perform Text-based Extraction on all types of data ingested from different sources. 
 
@@ -14,10 +14,10 @@ By default, every application has a **Default Strategy** configured to perform T
 
 To add a new extraction strategy, click on the **+Add Strategy** button.
 
-![Add a new Strategy](../images/add-strategy.png "Add a new Strategy")
+![Add a new Strategy](images/add-strategy.png "Add a new Strategy")
 Enter the strategy details on the following page. 
 
-![Strategy Details](./images/extraction-page.png "Strategy Details")
+![Strategy Details](images/extraction-page.png "Strategy Details")
 
 **Strategy Name**: Enter a unique name for the strategy for identification. 
 
@@ -28,7 +28,7 @@ Enter the strategy details on the following page.
 
 You can also use the logical **AND operator** to apply multiple rules to filter the data on which a particular extraction strategy is to be applied. For instance, to select all the SearchAI marketing material (assuming, available as PDF files in a given directory), you can define the source as shown below.
 
-![Source filters](../images/source-filters.png "Source Filters")
+![Source filters](images/source-filters.png "Source Filters")
 
 **Define Chunk Strategy**: This field specifies the chunk strategy and its configuration for the selected source.
 
@@ -55,7 +55,7 @@ The layout-aware extraction method identifies objects in documents by combining 
 
 * **General:** Use the **General** template to extract content from **complex PDFs and docx** files, including tables and images. 
 
-![Layout Aware](../images/layout-aware-templates.png "Layout Aware Templates")
+![Layout Aware](images/layout-aware-templates.png "Layout Aware Templates")
 Configure the strategy as per your needs and click the **Save** button. 
 
 ### Advanced HTML Extraction
@@ -128,20 +128,20 @@ To delete an existing strategy, go to the corresponding strategy page and click 
 !!! note
     Deleting a strategy does not affect the existing chunks.
 
-![Deleting a strategy](./images/delete-extraction-strategy.png "Deleting a strategy")
+![Deleting a strategy](images/delete-extraction-strategy.png "Deleting a strategy")
 
 ## Enabling/ Disabling a Strategy
 
 By default, as soon as a strategy is created, it is enabled. You can also temporarily disable a strategy for testing purposes to evaluate alternative extraction strategies or when it is no longer needed. You can do so from the strategy page. 
 
-![Disable a strategy](./images/disable-extraction-strategy.png "Disable a strategy")
+![Disable a strategy](images/disable-extraction-strategy.png "Disable a strategy")
 
 ## Using Multiple Extraction Strategies
 
 When more than one strategy is defined in a given application, the strategies are applied to the data based on their priority or sequence in the list. For example, if two strategies are defined - one for the web pages and the other one (default strategy) that applies to all types of content, the sequence decides the strategy to be used for a given content type. If the default strategy is at the top, it will extract chunks from all the sources, and the other strategy will not be used. If, on the other hand, the strategy for web pages is on top, it will be applied first and extract the chunks from the web pages, followed by the extraction of chunks from all other sources using the default extraction strategy.  
 
-![Multiple Strategies](../images/multiple-strategies.png "Multiple Strategies")
+![Multiple Strategies](images/multiple-strategies.png "Multiple Strategies")
 
 To **change the sequence** of the strategies, drag and drop the strategy up or down as required.
 
-![Moving Strategies](../images/moving-strategies.png "Moving Strategies")
+![Moving Strategies](images/moving-strategies.png "Moving Strategies")

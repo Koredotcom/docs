@@ -11,7 +11,7 @@ Search AI allows you to **upload one or more files or directories from the local
 
 Go to the **Sources** page and click the **Directory** tab. This lists all the directories configured as content sources.
 
-![Directory Home](../images/directory/documents-home.png "directory home")
+![Directory Home](images/directory/documents-home.png "directory home")
 
 For each directory, it lists the number of files present in it, its owner, the timestamp of the last update made to it, and the status of file uploads to it. By default, the **Default Directory** always exists. You can upload files to this default directory or create new directories and upload files to those directories. 
 

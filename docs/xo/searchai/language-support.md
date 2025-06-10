@@ -21,59 +21,29 @@ The following matrix shows the extraction strategies supported for different lan
 
    </td>
   </tr>
+  
   <tr>
-   <td>English
-
-   </td>
-   <td>All
-
-   </td>
-   <td>All
-
-   </td>
+   <td>English</td>
+   <td>All</td>
+   <td>All</td>
   </tr>
+
   <tr>
-   <td>Ukrainian
-
-   </td>
-   <td>All
-
-   </td>
-   <td>All
-
-   </td>
+   <td>Ukrainian</td>
+   <td>All</td>
+   <td>Vector Retrieval</td>
   </tr>
+
   <tr>
-   <td>Japanese
-
-   </td>
-   <td>Text Extraction
-
-   </td>
-   <td>
-   </td>
+   <td>Spanish</td>
+   <td>Text, Markdown, and Image-based Extraction </td>
+   <td>Vector Retrieval</td>
   </tr>
+
   <tr>
-   <td>Spanish
-
-   </td>
-   <td>Text, Markdown, and Image-based Extraction
-
-   </td>
-   <td>All
-
-   </td>
-  </tr>
-  <tr>
-   <td>Russian
-
-   </td>
-   <td>Text, Markdown, and Image-based Extraction
-
-   </td>
-   <td>All
-
-   </td>
+   <td>Russian  </td>
+   <td>Text, Markdown, and Image-based Extraction</td>
+   <td>Vector Retrieval</td>
   </tr>
 </table>
 

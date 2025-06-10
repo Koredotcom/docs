@@ -5,27 +5,27 @@ Search AI empowers you to efficiently manage and utilize vast amounts of data fr
 
 ### Step 1: Content Ingestion
 
-Search AI allows you to ingest content in different formats and from various sources. You can upload files, crawl web pages, and also connect to third-party applications for content ingestion. Users can now use this ingested data to quickly and easily locate all pertinent information in a user-friendly format without having to seek it through many sources. [Learn more about the supported content sources and how to ingest content into Search AI](../content-sources/introduction).
+Search AI allows you to ingest content in different formats and from various sources. You can upload files, crawl web pages, and also connect to third-party applications for content ingestion. Users can now use this ingested data to quickly and easily locate all pertinent information in a user-friendly format without having to seek it through many sources. [Learn more about the supported content sources and how to ingest content into Search AI](content-sources/introduction.md).
 
 
 ### Step 2: Chunk Extraction
 
-Chunk extraction aims to segment the content to preserve its semantic structure and facilitate relevant and efficient answer generation. Search AI supports Text-based extraction and Rule-based extraction. Based on the characteristics of the content and the requirements, you can define one or more extraction strategies on the **Extraction** page. To learn more about the strategies and how to define them, refer to the detailed documentation [here](../content-extraction/extraction). You can view and enhance the generated chunks using the [**Chunk Browser**](../chunk-browser).
+Chunk extraction aims to segment the content to preserve its semantic structure and facilitate relevant and efficient answer generation. Search AI supports Text-based extraction and Rule-based extraction. Based on the characteristics of the content and the requirements, you can define one or more extraction strategies on the **Extraction** page. To learn more about the strategies and how to define them, refer to the detailed documentation [here](content-extraction/extraction.md). You can view and enhance the generated chunks using the [**Chunk Browser**](chunk-browser.md).
 
 
 ### Step 3: Content Enhancement 
 
-The chunks generated using the extraction strategies can be further enhanced for specific requirements using the **Workbench** tool. Workbench allows updates, additions, exclusions, and other custom operations on the fields using Workbench Stages. Find more information [here](../workbench/introduction). 
+The chunks generated using the extraction strategies can be further enhanced for specific requirements using the **Workbench** tool. Workbench allows updates, additions, exclusions, and other custom operations on the fields using Workbench Stages. Find more information [here](workbench/introduction.md). 
 
 
 ### Step 4: Index Configuration
 
-Search AI gives you the flexibility to choose the vector model and the fields used for generating embeddings. Choose your preferred model from the supported models for vector generation. Find more information [here](../index-configuration). 
+Search AI gives you the flexibility to choose the vector model and the fields used for generating embeddings. Choose your preferred model from the supported models for vector generation. Find more information [here](index-configuration.md). 
 
 
 ### Step 5: Answer Configuration
 
-To generate Answers, configure the chunk retrieval strategy for your application and integrate Search AI with your preferred LLM. For more information on the supported configuration, refer to [this](../answer-configuration). 
+To generate Answers, configure the chunk retrieval strategy for your application and integrate Search AI with your preferred LLM. For more information on the supported configuration, refer to [this](answer-configuration.md). 
 
 
 ### Step 6: Train 
@@ -45,7 +45,7 @@ The following configuration enables the integration of Search AI with Automation
 
 **Answers Configuration**:
 Go to the **App Profile** under **App Settings** in the Automation AI module and enable the Answers feature.
-![Enabling Answers](../images/enable-answers.png "Enabling Answers")
+![Enabling Answers](images/enable-answers.png "Enabling Answers")
 
 Use the following options to configure the use of Search AI. 
 
