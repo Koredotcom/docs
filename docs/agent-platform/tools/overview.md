@@ -1,21 +1,67 @@
 # About Tools
 
-Tools can automate processes, streamline workflows, generate insights, and produce outputs such as deal summaries or emails. The tool builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
+Tools are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments.
 
-### Key Features
+Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
 
-* **Tool Flow**: A visual no-code/low-code builder for creating and managing tool flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a tool](./create-a-new-tool.md){target="_blank"} from scratch, [import an existing tool](./import-a-tool.md){target="_blank"}, or [access prebuilt tool flows using the tool templates](../tools/tool-templates.md){target="_blank"} available in the marketplace.
+For example, a ‘Leave Managing Agent’ might include tools like:
 
-* **Sharing & Permissions**: Account owners can invite users to collaborate on specific Tools. Invited users can access the Models and Data modules for the invited account and see only the Tools they are invited to. [Learn more](./manage-user-roles-and-permissions.md).
+* Get Leave Balance tool - Invokes an external API to retrieve leave details.
+* Leave Application tool - Gathers necessary information and applies leaves in the backend system. \
 
-* **Tool Endpoint**: After building and testing your tool flow, you can deploy it. Once deployed, you'll receive an API endpoint for your tool, which you can use to integrate it with other systems. [Learn more](./deploy-a-tool.md).
+Similarly, a ‘Credit Card Assistant’ might include tools like:
 
-* **API Keys**: Create API keys for your deployed tools to access them from external systems securely. Share these keys only with trusted users. [Learn more](./create-a-new-api-key.md).
+* Retrieve Outstanding Amount tool - Fetches the current due amount.
+* Fetch Credit Limit tool - Retrieves the user's maximum credit limit.
+* Initiate Bill Payment tool - Initiates the bill payment process.
+* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database. \
 
-* **Tool Monitor**: Track and analyze your tools' performance across multiple runs gaining a comprehensive, time-based view of tool activities to optimize your AI operations. [Learn more](./agent-monitor/about-agent-monitor.md).
+## Types of Tools
 
-* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](./guardrails/add-a-scanner.md).
+The Agent platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
 
-* **Audit Logs**: Track the audit logs of all activities within your tool flows and quickly troubleshoot issues with real-time event tracking. [Learn more](./tool-audit-log.md).
+### Workflow Tools
 
-* **Configurations**: Manage your tool's general details, define reusable values and configurations using environment variables, and undeploy the tool. [Learn more](./configure-a-tool.md).
+Workflow Tools provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. They support both synchronous and asynchronous execution modes, enabling rapid development and reliable task automation without writing any code.
+
+**Best suited for:** Scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
+
+Examples:
+
+* Weather API tool: Retrieves live weather updates.
+* Stock Market tool: Fetches real-time stock prices.
+* Database Query tool: Accesses structured data from a company’s database.
+
+For more information on Workflow tools, see [Workflow Tools](../tools/workflow-tools.md).
+
+
+### Code Tools
+
+Code Tools provide maximum flexibility by enabling agents to run custom JavaScript or Python code. These tools are ideal for handling dynamic logic, conditional processing, or integrations that cannot be captured through pre-defined workflows. Code Tools support synchronous execution and are ideal when precision, extensibility, or complex algorithms are required.
+
+**Best suited for:** Advanced use cases involving business-specific logic, data transformation, or interaction with complex systems.
+
+Examples:
+
+* SQL Query Processor – Executes SQL queries on a specified database.
+* Custom Validator – Validates inputs using custom logic before proceeding.
+
+For more information, see [Code Tools](../tools/code-tools.md).
+
+
+### MCP Tools
+
+MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.
+
+Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code.  Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. 
+
+Because MCP Tools are centrally managed, they support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents.
+
+**Best suited for:** Seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
+
+Examples:
+
+* Enterprise HR Toolset (MCP) – A suite of HR tools exposed via MCP.
+* Remote Invoice Processor – Executes billing operations through a secure MCP endpoint.
+
+For more information, see [MCP Tools](../tools/mcp-tools.md).
