@@ -88,7 +88,8 @@ This option is useful when transferring calls to Contact Center AI from a toll-f
 
 Under the SIP Trunk tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.
 
-Agent Assist supports real-time audio streaming through two primary methods:  
+Agent Assist supports real-time audio streaming through two primary methods: 
+
 * **SIPREC (SIP Recording)**: Agent Assist acts as a SIPREC server, receiving duplicated audio streams from the contact center platform or a Session Border Controller (SBC). 
 
 * **WebSocket Audio Streaming**: For cloud-native platforms like Genesys AudioHook, Agent Assist subscribes to real-time audio feeds over secure WebSocket connections.
