@@ -329,7 +329,6 @@ Roles in Contact Center AI have additional access; for details, refer to [Role M
 
 <hr>
 
-
  **Related Links**
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)

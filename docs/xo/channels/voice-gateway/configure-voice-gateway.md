@@ -1,19 +1,15 @@
-# Voice Gateway
+# Getting Started and Basic Configuration
 
 Voice Gateway is a comprehensive voice automation solution that manages inbound call automation for Contact Center AI. It integrates with existing voice systems or uses the native voice processing capabilities, enabling seamless transitions between automated and human interactions within the XO Platform.
 
-## Configure Voice Gateway
-
-You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.
+This section covers the fundamental steps required to set up and configure your Voice Gateway for basic operation.
 
 Go to **The Product (For example, Automation AI/ Contact Center AI)** > **Flows & Channels** > **Channels** > **Voice Gateway**.  
-<img src="..//images/vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/vg-page.png" alt="Voice Gateway Page" title="Voice Gateway Page" style="border: 1px solid gray; zoom:80%;">
 
-### Phone Numbers
+## Initial Setup
 
-This option helps add, edit, or delete a local or toll-free phone number to which Contact Center AI forwards incoming customer calls at a contact center.
-
-#### Buy New Phone Number
+### Buy New Phone Number
 
 Steps to buy a new phone number:
 
@@ -36,7 +32,7 @@ Steps to buy a new phone number:
     4. You can now call this number to test your Use Cases.
     5. When ready to go live, forward the calls you receive to this phone number or use this number as your customer support number.
 
-#### Attach Flow
+### Attach Flow
 
 Steps to attach a flow to the phone number:
 
@@ -49,7 +45,7 @@ Steps to attach a flow to the phone number:
 3. The attached flow appears. Hovering over the pie icon displays "**Configured**".  
     <img src="../images/flow-is-attached.png" alt="Voice Flow Configured" title="Voice Flow Configured" style="border: 1px solid gray; zoom:80%;">
 
-#### Edit a Phone Number
+### Edit a Phone Number
 
 Steps to edit a previously added phone number:
 
@@ -62,7 +58,7 @@ Steps to edit a previously added phone number:
 3. Make the necessary edits, and click **Done**.
 4. A success confirmation message is displayed when the phone number is updated.
 
-#### Delete a Phone Number
+### Delete a Phone Number
 
 Deleting a phone number means stopping all services associated with it. If you remove a phone number and want to add it back later, you may be unable to do so if another user has selected it.
 
@@ -94,7 +90,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
 
 * **WebSocket Audio Streaming**: For cloud-native platforms like Genesys AudioHook, Agent Assist subscribes to real-time audio feeds over secure WebSocket connections.
 
-#### Steps to configure SIP Trunk
+### Steps to configure SIP Trunk
 
 1. Click **Configure SIP Trunk**.  
     <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;"> 
@@ -174,10 +170,9 @@ Agent Assist supports real-time audio streaming through two primary methods:
                 * X-AgentNickName: {{agentNickName}}
                 * X-QueueName: {{agentQueue}}
                 * X-AgentFirstName: {{agentFirstName}}
-                * X-AgentLastName: {{agentLastName}}
+                * X-AgentLastName: {{agentLastName}}  
+                <img src="../images/agentai-siprec-selection.png" alt="agentai-siprec-selection" title="agentai-siprec-selection" style="border: 1px solid gray; zoom:70%;">
 
-                <img src="../images/agentai-siprec-selection.png" alt="agentai-siprec-selection" title="agentai-siprec-selection" style="border: 1px solid gray; zoom:100%;">
-                                    
         * <span id="websocket">If you select **WebSocket**:</span>
 
             * **Connection URL (Generate URL)**: Copy the auto-generated URL and paste it into your third-party desktop configuration settings. 
@@ -210,7 +205,7 @@ Steps to attach a flow to the SIP Number:
 3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays "**Configured**".  
     <img src="../images/sip-flow-attached.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:80%;">
 
-#### Edit a SIP Number
+### Edit a SIP Number
 
 Steps to edit a previously added SIP number:
 
@@ -225,7 +220,7 @@ Steps to edit a previously added SIP number:
 
 4. A success confirmation message is displayed when the phone number is updated.
 
-#### Delete a SIP Number
+### Delete a SIP Number
 
 Deleting a SIP number means stopping all services associated with it.
 
@@ -241,7 +236,7 @@ Steps to delete a SIP number:
 
 ## Voice Preferences
 
-You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
+This section outlines the steps to configure Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) for your Voice Gateway. You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.  
     <img src="../images/voice-preference.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;">
 
 Steps to configure Voice Preferences:
@@ -276,9 +271,51 @@ Steps to configure Voice Preferences:
 
     <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
 
-## List of Supported Dialects
+### Configure ASR (Automatic Speech Recognition)
 
-The following dialects are supported:
+#### Configure Primary and Fallback ASR/TTS
+
+ASR/TTS Fallback functionality can be implemented at various levels within the system, such as the application level, experience flow level, or even the call control parameter level. This mechanism ensures that if there is an error or failure with the primary ASR (Automatic Speech Recognition) or TTS (Text-to-Speech) service, the system will automatically switch to a secondary, or fallback, ASR/TTS configuration. By doing this, the fallback prevents interruptions in the service and ensures a seamless user experience, regardless of issues with the primary configuration.
+
+* For optimal performance, it’s advised to configure the fallback with the same vendor in a different region/label.
+
+**Location 1 - Global Setting**
+
+In SmartAssist: **Configurations** > **System Setup** > **Language & Speech** > **Voice Preferences** > **Show Advanced Settings**.  
+<img src="../images/show-advanced-settings.png" alt="Show Advanced Settings" title="Show Advanced Settings" style="border: 1px solid gray; zoom:80%;">
+
+**Location 2 - Call Control Parameters**
+
+In SmartAssist: **Automation** > **Select bot** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
+<img src="../images/call-control-parameters.png" alt="Call Control Parameters" title="Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
+
+**Location 3 - Experience Flows**
+
+In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experience Flow** > **Speech Recognition Engine (ASR/TTS)** > **Show Advanced Settings**.  
+<img src="../images/experience-flows-advanced-settings.png" alt="Experience Flows" title="Experience flows" style="border: 1px solid gray; zoom:80%;">  
+
+<img src="../images/edit-experience-flows.png" alt="Edit Experience Flows" title="Edit Experience Flows" style="border: 1px solid gray; zoom:80%;">
+
+**Location 4 - Start Node in Experience Flow**  
+<img src="../images/start-node.png" alt="Start Node" title="Start Node" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/start-node-experience-flow.png" alt="Start Node - Experience Flow" title="Start Node - Experience Flow" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+      
+      * This feature is available only in ‘SmartAssist’ and not implemented in ‘XO11’. We will implement it in the next releases. 
+      * For now, you can add Primary & Fallback ASR/TTS from the same vendor only.
+         * Example: If you have selected the ‘Microsoft Azure Speech Services’ vendor as the ASR, you can enter a label name from the Microsoft vendor itself, such as ‘my_azure-US’.
+         * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
+         * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
+         * Both Primary and Fallback ASR/TTS configurations should be available in VG Speech Services otherwise you will not be able to configure in SmartAssist.
+         * The Credential Status of the Speech services configured in VG should be verified. If credential status is failed then ASR/TTS conversations will fail.
+      * In Call control parameters, 
+         * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
+         * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes.
+
+### Supported Languages and Dialects
+
+The following languages and dialects are supported:
 
 <table>
   <tr>
@@ -347,9 +384,9 @@ The following dialects are supported:
   </tr>
 </table>
 
-### Voice Call Properties
+## Voice Call Properties (Account Level)
 
-Voice call properties are fundamental aspects that define the quality and reliability of communication over Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
+This section describes global voice call properties that apply to your entire Voice Gateway setup. Voice call properties are fundamental aspects that define the quality and reliability of communication over Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
 
 You can configure the voice call properties by going to the Voice Preferences tab and clicking **Configure** on the **Voice Call Properties** section.  
     <img src="../images/voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:80%;">
@@ -357,7 +394,7 @@ You can configure the voice call properties by going to the Voice Preferences ta
 The Voice Call Properties window is displayed.  
     <img src="../images/voice-call-properties-window.png" alt="Voice Call Properties Window" title="Voice Call Properties Window" style="border: 1px solid gray; zoom:70%;">
 
-#### End of Task Behavior
+### End of Task Behavior
 
 Define the bot's behavior when reaching the end of a task. You can choose the following actions:
 
@@ -365,7 +402,7 @@ Define the bot's behavior when reaching the end of a task. You can choose the fo
 * Terminate Call  
     <img src="../images/end-of-task-behavior.png" alt="End of Task Behavior" title="End of Task Behavior" style="border: 1px solid gray; zoom:80%;">
 
-#### Event Configuration
+### Event Configuration
 
 Define how to proceed when this event is detected. You can choose the following actions:
 
@@ -378,32 +415,27 @@ Define how to proceed when this event is detected. You can choose the following 
 * **Show Message**: Click **+ Add Response**, enter the message to be displayed when the event is detected, and click **Done**.  
     <img src="../images/add-response.png" alt="Add Response" title="Add Response" style="border: 1px solid gray; zoom:80%;">
 
-#### Call Termination Handler
+### Call Termination Handler
 
 Specify the intent (dialog) to handle the call termination event from the dropdown.  
     <img src="../images/call-termination-handler.png" alt="Call Termination Handler" title="Call Termination Handler" style="border: 1px solid gray; zoom:80%;">
 
-#### Call Control Parameters
-
-Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. [Learn more](./call-control-parameters.md).  
-    <img src="../images/add-parameter.png" alt="Add Parameter" title="Add Parameter" style="border: 1px solid gray; zoom:80%;">
-
-#### Timeout Prompt
+### Timeout Prompt
 
 Define prompt to be played when user input is not received within the time-out period.  
     <img src="../images/timeout-prompt.png" alt="Timeout Prompt" title="Timeout Prompt" style="border: 1px solid gray; zoom:80%;">
 
-#### Barge-in
+### Barge-in
 
 Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled. [Learn more](./common-configuration-scenarios.md#barge-in).  
     <img src="../images/barge-in.png" alt="Barge In" title="Barge In" style="border: 1px solid gray; zoom:80%;">
 
-#### Timeout
+### Timeout
 
 Define the maximum wait time to receive user input. The maximum wait time is 60 seconds.  
     <img src="../images/timeout.png" alt="Timeout" title="Timeout" style="border: 1px solid gray; zoom:80%;">
 
-#### No. of Retries
+### No. of Retries
 
 Define the maximum number of retries allowed.  
     <img src="../images/no-of-retries.png" alt="No.of Retries" title="No.of Retries" style="border: 1px solid gray; zoom:80%;">
