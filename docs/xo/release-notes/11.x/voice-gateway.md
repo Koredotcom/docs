@@ -30,7 +30,7 @@ Four new English voices—Helena, Electra, Thalia, and Vesta (a slower, senior-f
 
 #### Updated SIP Trunk Configuration for Agent AI with Third-Party Desktops
 
-The updated SIP Trunk Configuration for Agent AI now provides easier integration with third-party agent desktops, such as Genesys, NICE, and Talkdesk. It offers two methods for accessing real-time audio streaming:
+The updated SIP Trunk Configuration for Agent AI now provides easier integration with third-party agent desktops, such as Genesys, NICE, and Talkdesk. It offers two methods for accessing real-time audio streaming: 
 
 * **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).
 

@@ -75,7 +75,7 @@ When the user initiates migration, the key components being migrated are:
 <hr>
 
 
-##### Related Links
+ **Related Links**
 
 * [What's New in XO v11](./whats-new-in-xo-platform.md)
 * [Current Limitations](../release-notes/current-limitations.md)
