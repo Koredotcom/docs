@@ -59,8 +59,8 @@ ACD configuration includes
 
 ## Kore SIP Trunk Configuration
 
-1. [SIP Trunk Setup](../../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#sip-trunk-setup).
-2. [Attach Flow](../../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway.md#attach-flow-1).
+1. [SIP Trunk Setup](../../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup).
+2. [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md#attach-a-flow).
 
 ## Configuration in CXOne Studio
 
@@ -84,7 +84,7 @@ ACD configuration includes
             <img src="../images/place-calls.png" alt="Placecall" title="Placecall" style="border: 1px solid gray; zoom:60%;">  
             <img src="../images/sip-number.png" alt="SIP Number" title="SIP Number" style="border: 1px solid gray; zoom:60%;">
 
-## XO 11 Configuration
+## XO11 Configuration
 
 * A flow should be configured with an app on XO 11.  
 In the Script Task window, add the following code to pass the headers to the bot before the Run Automation action.  
