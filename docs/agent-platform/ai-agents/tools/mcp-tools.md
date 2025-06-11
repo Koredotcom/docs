@@ -1,4 +1,4 @@
-# MCP Overview
+# About MCP Tools
 
 The Model Context Protocol is an open standard that provides a way for AI models to interact with external tools, data, and services. It simplifies integration by creating a universal interface for AI to communicate with different systems. It acts as a universal connector. 
 

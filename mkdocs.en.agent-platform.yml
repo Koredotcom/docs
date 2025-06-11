@@ -153,8 +153,8 @@ nav:
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
-      - Workflow tools: 
-        - Overview: ai-agents/tools/workflow-tools.md
+      - Workflow Tools: 
+        - About Workflow Tools: ai-agents/tools/workflow-tools.md
         - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
         - Tool Templates: ai-agents/tools/tool-templates.md
         - Import a Tool: ai-agents/tools/import-a-tool.md
@@ -196,11 +196,11 @@ nav:
           - Configure a Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
           - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
-      - Code tools: 
-        - Overview: ai-agents/tools/code-tools.md
+      - Code Tools: 
+        - About Code Tools: ai-agents/tools/code-tools.md
         - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
-      - MCP tools: 
-        - Overview: ai-agents/tools/mcp-tools.md
+      - MCP Tools: 
+        - About MCP Tools: ai-agents/tools/mcp-tools.md
         - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
     - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
