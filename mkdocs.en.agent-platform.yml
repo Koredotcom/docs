@@ -60,8 +60,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+            Thanks for your feedback!           
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -142,61 +141,67 @@ nav:
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up Agents: ai-agents/create-agent.md
-      - App Settings:
-        - System Events: ai-agents/agentic-apps/settings/events.md
-        - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
-        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
-        - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
-      - Memory Stores: ai-agents/agentic-apps/memory-stores.md
       - Connect External Agents: ai-agents/external-agents.md
-      - Integrate with MCP server: ai-agents/agentic-apps/mcp-tools.md
-      - Supported AI Models: ai-agents/agentic-apps/supported-models.md
+      - Agent Memory: ai-agents/agentic-apps/memory-stores.md
     - Knowledge:
       - About Knowledge: ai-agents/knowledge/overview.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
-      - Create a Tool: ai-agents/tools/create-a-new-tool.md
-      - Tool Templates: ai-agents/tools/tool-templates.md
-      - Import a Tool: ai-agents/tools/import-a-tool.md
-      - Tool Flows:
-        - About Flows: ai-agents/tools/tool-flows/flows-overview.md
-        - About Tool Calling: ai-agents/tools/tool-flows/tool-calling.md
-        - Manage Flows: 
-          - Manage Nodes in Flows: ai-agents/tools/tool-flows/manage-flow-nodes.md
-          - Manage Input and Output: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
-          - Run the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-          - Create a Version of the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
-        - Types of Nodes: 
-          - AI Node: 
-            - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
-            - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
-            - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
-            - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
-            - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
-          - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
-          - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
-          - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
-          - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
-          - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md        
-          - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
-        - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md  
-      - Sharing & Permissions: 
-        - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
-      - Tool Endpoint: 
-        - Deploy a Tool: ai-agents/tools/deploy-a-tool.md
-      - Tool Monitor: 
-        - About Tool Monitor: ai-agents/tools/tool-monitor/about-tool-monitor.md
-        - Accessing Tool Monitor: ai-agents/tools/tool-monitor/accessing-tool-monitor.md
-        - Understanding Tool Monitor: ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface.md
-      - API Keys: 
-        - Create an API Key: ai-agents/tools/create-a-new-api-key.md 
-      - Audit logs:
-        - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
-      - Configurations:
-        - Configure a Tool: ai-agents/tools/configure-a-tool.md
-        - Export a Tool: ai-agents/tools/export-a-tool.md
-        - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+      - Workflow Tools: 
+        - About Workflow Tools: ai-agents/tools/workflow-tools.md
+        - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
+        - Tool Templates: ai-agents/tools/tool-templates.md
+        - Import a Tool: ai-agents/tools/import-a-tool.md
+        - Tool Flows:
+          - About Flows: ai-agents/tools/tool-flows/flows-overview.md
+          - About Tool Calling: ai-agents/tools/tool-flows/tool-calling.md
+          - Manage Flows: 
+            - Manage Nodes in Flows: ai-agents/tools/tool-flows/manage-flow-nodes.md
+            - Manage Input and Output: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+            - Run the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+            - Create a Version of the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+          - Types of Nodes: 
+            - AI Node: 
+              - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
+              - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
+              - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
+              - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
+              - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
+            - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
+            - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
+            - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
+            - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
+            - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md        
+            - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
+          - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md    
+        - Sharing & Permissions: 
+          - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
+        - Tool Endpoint: 
+          - Deploy a Tool: ai-agents/tools/deploy-a-tool.md
+        - Tool Monitor: 
+          - About Tool Monitor: ai-agents/tools/tool-monitor/about-tool-monitor.md
+          - Accessing Tool Monitor: ai-agents/tools/tool-monitor/accessing-tool-monitor.md
+          - Understanding Tool Monitor: ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface.md
+        - API Keys: 
+          - Create an API Key: ai-agents/tools/create-a-new-api-key.md 
+        - Audit logs:
+          - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
+        - Configurations:
+          - Configure a Tool: ai-agents/tools/configure-a-tool.md
+          - Export a Tool: ai-agents/tools/export-a-tool.md
+          - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
+      - Code Tools: 
+        - About Code Tools: ai-agents/tools/code-tools.md
+        - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
+      - MCP Tools: 
+        - About MCP Tools: ai-agents/tools/mcp-tools.md
+        - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
+    - App Settings:
+        - System Events: ai-agents/agentic-apps/settings/events.md
+        - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
+        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
+        - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
     - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Analytics:
@@ -239,6 +244,7 @@ nav:
         - External Models: 
           - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
           - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+      - Supported Models: ai-agents/agentic-apps/supported-models.md        
     - Prompts:
       - About Prompt Studio: prompts/overview.md
       - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
