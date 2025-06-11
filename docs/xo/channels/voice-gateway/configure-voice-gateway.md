@@ -193,7 +193,7 @@ Agent Assist supports real-time audio streaming through two primary methods:
 6. The selected information appears on the SIP Numbers tab.  
 <img src="../images/sip-trunk-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
 
-### Attach Flow
+### Attach a Flow
 
 Steps to attach a flow to the SIP Number:
 
