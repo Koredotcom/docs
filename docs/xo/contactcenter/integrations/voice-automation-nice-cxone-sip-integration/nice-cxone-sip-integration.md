@@ -60,7 +60,7 @@ ACD configuration includes
 ## Kore SIP Trunk Configuration
 
 1. [SIP Trunk Setup](../../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup).
-2. [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md#attach-flow-1).
+2. [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md#attach-flow).
 
 ## Configuration in CXOne Studio
 
