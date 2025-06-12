@@ -11,7 +11,7 @@ Proactive notification includes:
 
 !!!Note 
 
-    Webhook Proactive Notifications only support Asynchronous V2 version.
+    Webhook Proactive Notifications only support Asynchronous V2.
 
 
 <table>
