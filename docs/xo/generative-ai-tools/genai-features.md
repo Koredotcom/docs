@@ -118,7 +118,6 @@ The following table displays the features and the supported models.
 
     |Model|Agent Node|Prompt Node|Repeat Responses|Rephrase Responses|Rephrase User Query#|Zero-shot ML Model|
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 4|✅|✅|✅|✅|✅|✅^|
     |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|✅|✅|✅|✅^|
     |Provider's New LLM**|✅|✅|❌|✅|✅|✅|
@@ -131,7 +130,7 @@ The following table displays the features and the supported models.
 
     |Models|Automatic Dialog Generation|Conversation Test Case Suggestions|Conversation Summary|NLP Batch Test Case Suggestions|Training Utterance Suggestions|
     |:----:|:----:|:----:|:----:|:----:|:----:|
-    |Azure OpenAI – <br>GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|
+    |Azure OpenAI – <br>GPT 4 Turbo, GPT 4o, and GPT-4o mini*|✅|✅|❌|✅|✅|
     |OpenAI – <br>GPT 3.5 Turbo, GPT 4, GPT 4 Turbo, GPT 4o, and GPT-4o mini* |✅|✅|❌|✅|✅|
     |Provider's New LLM**|✅|✅|❌|✅|✅|
     |Custom LLM|✅|✅|✅|✅|✅|
@@ -139,7 +138,7 @@ The following table displays the features and the supported models.
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
 <hr>
 
-\^  *Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.*
+
 
 \* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini do not include system prompts, but they can be used with custom prompts.* 
 
