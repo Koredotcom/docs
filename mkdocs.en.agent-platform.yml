@@ -215,6 +215,7 @@ nav:
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
     - Powered Solutions:
       - AI for Service (XO): ai-agents/ai-for-service.md
+      - AI for Work: ai-agents/ai-for-work.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
