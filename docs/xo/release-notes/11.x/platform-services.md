@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.14.1 June 14, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### App Language
+
+#### German Language Support for Apps (Beta) 
+
+The platform has enabled German language selection for the App, allowing platform users to access the app in their native language.
+
+Key updates
+
+* The Language selection dropdown has been added to Profile, Login, and Signup pages.
+* The "BETA" tag indicates the feature's beta status.
+* Dynamic translation of UI elements and content based on the selected language.
+
+### APIs
+
+#### Proactive Notifications Support for Google Hangouts Channel
+
+To enhance user engagement and extend platform capabilities, **proactive notification support for Google Hangouts** is introduced. Proactive notifications enable the platform to push relevant updates to users without requiring them to initiate interaction with the bot first. 
+
+<hr>
+
 ## v11.14.0 May 31, 2025
 
 <u> Minor Release </u>
