@@ -59,7 +59,7 @@ The Users section includes the features in the table below.
 You can add a user to Contact Center AI by following the steps below:
 
 1. Click **Invite Users**.  
-<img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:100%;">
+  <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:80%;">
 
 2. The Invite User window displays. Here, you can configure the following:
     1. **Email**: Enter the users email ID.
@@ -70,13 +70,16 @@ You can add a user to Contact Center AI by following the steps below:
        * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](./role-management.md#permissions) for details.
     5. **Attributes**: You can edit the user details or delete the users.
 
+Disabled users are displayed with a “Disabled” tag beside their name. Contact Center permissions are disabled when a new user invite is sent by a user whose Contact Center access is disabled.  
+<img src="../images/user-page-diabled-user.png" alt="Disabled User" title="Disabled User" style="border: 1px solid gray; zoom:80%;">
+
 ## Attributes
 
 In the user attributes window, configure the following:
 
 * _(Optional)_ Profile Picture: Upload the user’s profile picture here.
 * Edit the user’s first, last names, email ID, role, and phone number.  
-<img src="../images/user-attributes.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/user-attributes.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
 
 ### General Settings
 
@@ -107,7 +110,7 @@ In the Chat & Voice section, you can configure the following:
   2. Select the supported languages and their proficiency level.
 
 * Turn on **Enable Voice Mail** toggle to set the count of voice mails callers can leave in a queue.
-<img src="../images/chat-and-voice-limits.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/chat-and-voice-limits.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">
 
 ### Queues & Skills
 
@@ -120,7 +123,7 @@ To assign queues to a user, follow these steps:
 1. Type in a queue name in the search field, then select the one you need from the list. The list only contains queues that are already created. To add a queue, see [Add Queues](../contactcenter/routing/queues/queue-management.md#add-a-queue).
 2. Once you select a queue, it will be added to the user’s list of assigned queues. If you have more than one queue assigned to the same user, you can select or deselect the queues to assign; and set queues as _Preferred_. Queues set as such will take priority over others when the user receives incoming queries.
 3. You can remove a skill by clicking the **Delete** (bin) button next to it.  
-<img src="../images/select-queues.png" alt="Select Queues" title="Select Queues" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/select-queues.png" alt="Select Queues" title="Select Queues" style="border: 1px solid gray; zoom:70%;">
 
 #### Skills
 
@@ -131,7 +134,7 @@ To assign skills to a user, follow these steps:
 1. Type in a skill name in the search field, and select it from the dropdown list to add it to the user’s skill list. The list only contains skills that are already created. To add more skills, see [Add Skills](../contactcenter/routing/skills/skill-management.md#add-a-skill).
 2. Once you select a skill, choose the proficiency level  (_Novice, Average, Good,_ or _Expert_).
 3. You can remove a skill by clicking the **Delete** (bin) button next to it.
-<img src="../images/select-skills.png" alt="Select Skills" title="Select Skills" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/select-skills.png" alt="Select Skills" title="Select Skills" style="border: 1px solid gray; zoom:70%;">
 
 ## Save a User
 
@@ -151,16 +154,19 @@ To save the user, click the **Invite User** button at the bottom of the New User
 To edit a user, follow these steps:
 
 1. On the Manage Users page, click the **Ellipsis** icon (⋮) corresponding to the user you want to edit.
-<img src="../images/edit-user.png" alt="Edit User" title="Edit User" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/edit-user.png" alt="Edit User" title="Edit User" style="border: 1px solid gray; zoom:70%;">
 2. On the User Attributes window, make the necessary edits.
 3. Click **Update Changes**.
+
+    Disabled users can edit only the Name, Phone Number, and Role fields of other users.  
+      <img src="../images/user-attributes-disabled-user.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
 
 ## Promote As Owner
 
 To promote a user to owner, follow these steps:
 
 1. On the Manage Users page, click the **Ellipsis** icon (⋮) corresponding to the user you want to promote to owner.  
-<img src="../images/promote-as-owner.png" alt="Promote As Owner" title="Promote As Owner" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/promote-as-owner.png" alt="Promote As Owner" title="Promote As Owner" style="border: 1px solid gray; zoom:70%;">
 
 2. On the Promote app owner pop-up window, select the role and click **Save**.
 
@@ -169,10 +175,10 @@ To promote a user to owner, follow these steps:
 To change the app owner, follow these steps:
 
 1. On the Manage Users page, click the **Ellipsis** icon (**⋮**) corresponding to the App Owner.
-<img src="../images/change-owner-button.png" alt="Change Owner Button" title="Change Owner Button" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/change-owner-button.png" alt="Change Owner Button" title="Change Owner Button" style="border: 1px solid gray; zoom:70%;">
 
 2. On the Promote app owner pop-up window, select the role and click **Save**.  
-<img src="../images/change-app-owner.png" alt="Change App Owner" title="Change App Owner" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/change-app-owner.png" alt="Change App Owner" title="Change App Owner" style="border: 1px solid gray; zoom:70%;">
 
 ## Delete a User
 
@@ -180,7 +186,7 @@ To delete a user, follow these steps:
 
 1. On the Manage Users page, click the **Ellipsis** icon (**⋮**) corresponding to the user you want to delete.
 2. Click **Delete**.  
-<img src="../images/delete-user.png" alt="Delete User" title="Delete User" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/delete-user.png" alt="Delete User" title="Delete User" style="border: 1px solid gray; zoom:70%;">
 
 3. You will be asked to confirm your choice.
 
@@ -196,11 +202,11 @@ To delete a user, follow these steps:
 You can add a group by following the steps below:
 
 1. Click **Invite Users**.  
-<img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
 
 2. The Invite User window displays. Here, you can configure the following:
     1. **Name**:  Enter the name of the group you want to add. Refer to [Create a Group](../administration/user-management/managing-your-groups.md#creation).
     2. **Role**: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
 
 3. Click the **Share Invites** button at the bottom of the New Groups window.
-<img src="../images/share-group-invite.png" alt="Share Invites" title="Share Invites" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/share-group-invite.png" alt="Share Invites" title="Share Invites" style="border: 1px solid gray; zoom:70%;">
