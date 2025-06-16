@@ -2,7 +2,7 @@
 
 Jira is typically used for issue tracking and agile project management, enabling teams to plan, track, and coordinate tasks through customizable workflows.
 
-Search AI enables easy integration with Jira to ingest, index, and search through the** issues, dashboards and filters. **This ensures efficient search and retrieval, improving accessibility to content from JIRA.
+Search AI enables easy integration with Jira to ingest, index, and search through the **issues, dashboards and filters.** This ensures efficient search and retrieval, improving accessibility to content from JIRA.
 
 **<span style="text-decoration:underline;">JIRA Connector Specifications</span>**
 
@@ -39,7 +39,7 @@ Search AI enables easy integration with Jira to ingest, index, and search throug
 ## Setup guide
 
 
-## Prerequisites
+### Prerequisites
 
 An Atlassian account with admin access. This account will be used to fetch content and find the access permissions on the indexed content. 
 
@@ -115,10 +115,11 @@ Ingested content from Jira into Search AI includes three object types—Issues, 
     * doc_created_by_name: name of the user who created the filter
     * doc_source_type:  Always ‘filter’ for this object type. 
 
-!!!note
-  * All timestamps are stored in UTC.
-  * The **doc_source_type **field distinguishes the type of Jira content.
-  * Issue comments are concatenated together as comments. Individual comment metadata is not indexed.
+Note:
+
+* All timestamps are stored in UTC.
+* The **doc_source_type** field distinguishes the type of Jira content.
+* Issue comments are concatenated together as comments. Individual comment metadata is not indexed.
 
 
 ## Content Filtering
@@ -130,7 +131,7 @@ Go to **Manage Content** page and select the **Object Type** that defines the ty
 ![Manage Content](images/jira/manage-content.png "Manage Content")
 
 
-Further you can set **ingestion filters **to select specific content. Select Ingest filtered content and click on** Edit Configuration** link.
+Further you can set **ingestion filters** to select specific content. Select Ingest filtered content and click on **Edit Configuration** link.
 
 There are two types of filters - **Standard Filters and Advanced Filters.**
 
