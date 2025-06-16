@@ -1725,7 +1725,7 @@ To add a connection and configure an integration, follow the steps below:
 
         **OAuth2**
 
-        * Provide the connection name and select the configured **Auth Profile** from the list in the **Custom** window to associate it with the integration for authentication. [Learn more](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"} about setting up auth profiles in your account. If no auth profiles are configured, you can add one by selecting **+ Create new** and following the steps mentioned [here](../security-and-control/authorization-profile.md#add-authorization-profile)){:target="_blank"}.
+        * Provide the connection name and select the configured **Auth Profile** from the list in the **Custom** window to associate it with the integration for authentication. [Learn more](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"} about setting up auth profiles in your account. If no auth profiles are configured, you can add one by selecting **+ Create new** and following the steps mentioned [here](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"}.
         * **Custom auth** allows you to use your custom-configured authentication flow by selecting an **Auth Profile** on the Agent Platform, instead of using third-party authentication.
         * Once an Auth Profile is selected, all its credentials are fetched and automatically populate the corresponding fields such as **Redirect URL**, **Scopes**, **Base URL**, and more.
         * You don’t need to re-authenticate as long as the **authorization profile** remains in your account (i.e., it hasn’t been deleted).
