@@ -24,7 +24,7 @@ Key updates
 
 ### Channels
 
-#### Proactive Notifications Support for Google Hangouts Channel
+#### Proactive Notifications Support for Google Hangouts
 
 The platform now supports proactive notifications for Google Hangouts, enabling it to push relevant updates to users without requiring them first to initiate interaction with the bot. This feature enhances user engagement by delivering timely information directly to users. [Learn more :octicons-arrow-right-24:](../../channels/add-google-chat.md#step-4-configure-the-hangouts-chat-channel)
 
