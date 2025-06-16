@@ -167,3 +167,17 @@ There are two ways to assign a conversation to a queue:
 
 1. Using the [Set Queue](../../../flows/node-types/set-queue.md) node within an experience flow.
 2. Using the [agentUtils.setQueue()](../../../flows/node-types/utils.md#set-queue) method.
+
+## When the Contact Center Permission is Disabled
+
+Users with full user management access can restrict selected users from participating in contact center interactions until they complete mandatory tasks or meet other requirements. Once disabled, the user cannot access contact center functionalities or appear in agent status lists. However, users can still access Automation AI, Agent AI, or Search AI, based on their assigned roles and permissions. Disabled users are identified by a “Disabled” tag in user management and agent selection lists, but they do not populate active analytics dashboards. This supports seamless permission control while preserving user visibility and data integrity.
+
+A pop-up message appears upon clicking queues.  
+<img src="../images/ccai-disabled-message-queue.png" alt="Disabled Message" title="Disabled Message" style="border: 1px solid gray; zoom:70%;">  
+A disabled tag is displayed beside the user.  
+
+!!!Note
+
+    Agent permissions cannot be disabled if the agent is the only member of the queue or is currently engaged in an active conversation.
+
+<img src="../images/ccai-user-diabled-new-queue.png" alt="User Disabled New Queue" title="User Disabled New Queue" style="border: 1px solid gray; zoom:70%;"> 
