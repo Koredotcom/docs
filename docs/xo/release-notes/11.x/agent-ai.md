@@ -14,6 +14,8 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 Agentic Copilot responses in the Agent AI widget now support Markdown templates, enabling clear and structured outputs with code blocks, headers, emphasis, hyperlinks, bold and italic text, and lists.
 
+<hr>
+
 ## v11.14.0 May 31, 2025
 
 <u>Minor Release</u>
