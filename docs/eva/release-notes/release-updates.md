@@ -2,6 +2,102 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
+## v1.9.1 June 16, 2025
+
+<u>Major Release</u>
+
+This update includes new features, feature enhancements, and bug fixes summarized below.
+
+**New Features**
+
+**Guardrails Security Framework**
+
+Introducing **Guardrails**, a robust security framework designed for enterprise-level AI interactions. This new feature automatically safeguards sensitive data and enforces content policies, providing comprehensive data protection and content filtering. Ensure compliance and security across all your AI workflows with Guardrails.
+
+Key Benefits
+
+* Protect sensitive customer data from exposure in logs and analytics.
+* Meet data protection requirements with automated  PII (personally identifiable information) detection and handling.
+* Maintain brand safety and policy compliance through customizable topic restrictions.
+* Validate configurations before deployment with comprehensive testing tools.
+
+[Learn more :octicons-arrow-right-24:](../assistant-configuration/guardrails.md)
+
+**AI Query Pipeline Orchestration**
+
+Introducing **Orchestration Settings**, a powerful pipeline management system that gives you complete control over your AI query processing workflow. This feature enables you to customize and optimize your AI interactions by selectively activating only the components you need, ensuring efficient resource utilization.
+
+Key Benefits
+
+* Activate only required pipeline components to optimize performance and reduce processing overhead.
+* Eliminate unnecessary AI processing steps while maintaining full functionality.
+* Adapt AI behavior to specific use cases and organizational requirements.
+* Unified management interface with intelligent component synchronization.
+
+[Learn more :octicons-arrow-right-24:](../assistant-configuration/orchestration-settings.md)
+
+**Enhancements**
+
+**Conversation Data Storage Controls**
+
+The **Data Settings** now offer enhanced controls for **Conversation Data Storage**, providing granular privacy management.
+
+The **Do not store conversation data** setting is upgraded with three flexible control levels:
+
+* All Agents (universal privacy).
+* All Agents Except Selected Agents (default privacy with strategic exceptions).
+* Only Selected Agents (targeted privacy for specific needs like compliance).
+
+**Agent Layout Enhancements**
+
+The agent creation and management interface has been redesigned for a more intuitive user experience and improved version control.
+
+Key enhancements
+
+* Streamlined navigation with a dedicated agent page and simplified header.
+* Improved action menu with primary actions like share and publish and secondary actions like export and audit log.
+* Enhanced dual version system with draft and published versions for efficient change management.
+* Improved user experience with clear status indicators, progressive feature enablement, simplified publishing, and protection against accidental changes.
+
+**Multiple File Upload Support**
+
+Enhanced the prompt agent builder interface with comprehensive file upload options across all parameter types.
+
+Key enhancements
+
+* Added **Multiple files** toggle option in the Upload File field, enabling agent creators to configure multi-file support.
+* Introduced **Upload files** option in Text field parameters, allowing users to select single or multiple files as needed.
+* Users can now upload up to 5 files simultaneously when interacting with configured prompt agents.
+
+**Skip Form Display Functionality**
+
+Introduced an intelligent form display system that automatically detects query completeness and optimizes the user experience accordingly.
+
+Key enhancements
+
+* Added **Skip Form Display** toggle option for agent creators, enabling automatic form bypass when appropriate.
+* The Skip Form Display feature includes intelligent conflict prevention with Multi-Response functionality, displaying informational messages when incompatible settings are selected.
+* Implemented smart query analysis that identifies when all required entities are present in the initial request.
+* Enhanced form logic to display input forms only when mandatory fields are missing from the user query.
+
+!!! note
+
+    Form is presented only when mandatory fields are missing, ensuring users can provide necessary information
+
+**Responsive Design Enhancement**
+
+Eliminated the disruptive minimum resolution warning dialog that previously appeared when window size was reduced. The application now maintains full functionality with seamless scrolling capabilities across all screen sizes, providing users with uninterrupted access to features regardless of viewport dimensions.
+
+**User Management Updates**
+
+Administrators can now edit user profile information directly from the user details interface. This enhancement allows admins to modify first and last names efficiently, streamlining the user data management workflow and improving administrative control over user accounts.
+
+**Bug Fixes**
+
+**System Stability Improvements**
+
+Resolved critical chart rendering issues and fixed application crashes that occurred during follow-up question interactions. These fixes significantly enhance system reliability and ensure a smoother user experience when working with data visualizations and conversational features.
+
 ## v1.9.0 April 30, 2025
 
 <u>Major Release</u>
