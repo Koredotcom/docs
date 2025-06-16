@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancement included in
 
 #### Wildcard Pattern Matching for DID Assignment
 
-Wildcard pattern matching for DID assignment is now supported in SIP trunk configurations, streamlining large-scale deployments and reducing manual effort. Administrators can use patterns like 123* to map multiple similar DIDs to SIP trunks and experience flows, eliminating the need to list each DID individually. Incoming calls are matched against these patterns, and the system triggers the associated experience flow. If multiple patterns match, the system selects the one with the most specific match (the highest number of matching digits). This enhancement improves routing accuracy and supports rapid, error-free configuration. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
+Wildcard pattern matching for DID assignment is now supported in SIP trunk configurations, streamlining large-scale deployments and reducing manual effort. Administrators can use patterns like 123* to map multiple similar DIDs to SIP trunks and experience flows, eliminating the need to list each DID individually. Incoming calls are matched against these patterns, and the system triggers the associated experience flow. If multiple patterns match, the system selects the one with the most specific match (the highest number of matching digits). This enhancement improves routing accuracy and supports rapid, error-free configuration. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#steps-to-configure-sip-trunk)
 <hr>
 
 ## v11.14.0 May 31, 2025
