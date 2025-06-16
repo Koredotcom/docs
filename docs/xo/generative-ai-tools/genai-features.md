@@ -106,7 +106,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 
 
-## Automation AI Features
+## Automation GenAI Features
 
 Learn more about [Automation GenAI Features](genai-features-automationai.md).
 
@@ -114,7 +114,7 @@ Learn more about [Automation GenAI Features](genai-features-automationai.md).
 
 Learn more about [Search GenAI Features](genai-features-searchai.md).
 
-## Agent AI Features
+## Agent GenAI Features
 
 Learn more about [Agent GenAI Features](genai-features-agentai.md).
 
