@@ -20,6 +20,8 @@ Key updates
 * The "BETA" tag indicates the feature's beta status.
 * Dynamic translation of UI elements and content based on the selected language.
 
+[Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
+
 ### APIs
 
 #### Proactive Notifications Support for Google Hangouts Channel
