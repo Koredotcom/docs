@@ -1,0 +1,519 @@
+# Supported AI Models on Agent Platform
+
+The Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Kore-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
+
+## Supported AI Models for Agents and Supervisors
+
+Agentic Apps supports Agent and Supervisor orchestration with the most widely used models from providers such as OpenAI, Azure OpenAI, Anthropic, and Google.
+
+
+<table>
+  <tr>
+   <td>Model Provider
+   </td>
+   <td>Model Variant
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI</td>
+   <td>
+<ul>
+
+<li>open ai-gpt-4o</li>
+<li>open ai-gpt-4o-mini</li>
+<li>open ai-gpt-3.5-turbo</li>
+<li>open ai-gpt-4</li>
+<li>open ai-gpt-4-0125-preview</li>
+<li>open ai-gpt-4-1106-preview</li>
+<li>open ai-gpt-4-turbo-preview</li>
+<li>open ai-gpt-4-0613</li>
+<li>open ai-gpt-3.5-turbo-1106</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI
+   </td>
+   <td>
+    <ul>
+    <li>azure open ai-gpt-4</li>
+    <li>azure open ai-gpt-3.5-turbo</li>
+    <li>azure open ai-gpt-4o</li>
+    <li>azure open ai-gpt-4o-mini</li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Anthropic</td>
+   <td>
+    <ul>
+    <li>anthropic-claude-3-5-sonnet</li>
+    <li>anthropic-claude-3-haiku</li>
+    <li>anthropic-claude-3-sonnet</li>
+    <li>anthropic-claude-3-opus</li>
+    </ul>
+   </td>
+  </tr>
+ 
+  <tr>
+   <td>Google
+   </td>
+   <td>
+<ul>
+
+<li>gemini-1.5-flash-latest</li>
+</ul>
+   </td>
+  </tr>
+</table>
+
+
+
+### Models with Real-Time Voice Support
+
+While Agent and Supervisor Orchestration is supported for most commonly used LLMs, Real-Time Voice is currently available only with selected models that offer advanced voice capabilities.
+
+<table>
+  <tr>
+   <td>Model Provider
+   </td>
+   <td>Model Variant
+   </td>
+  </tr>
+  <tr>
+   <td >OpenAI
+   </td>
+   <td >
+    <ul>
+    <li>open ai-gpt-4o-realtime-preview</li>
+    <li>open ai-gpt-4o-mini-realtime-preview</li>
+    </ul>
+   </td>
+  </tr>
+</table>
+
+
+## Supported Open-Source Models
+
+Agent Platform currently supports over thirty open-source models and provides them as a service. Kore-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
+
+The supported models and their variants are given below:
+
+<table>
+
+  </tr>
+<td><strong>Model Provider</strong>
+   </td>
+   <td><strong>Model Variant</strong>
+   </td
+  <tr>
+</tr>
+   <td><strong>Amazon</strong>
+   </td>
+   <td>amazon/MistralLite
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Argilla</strong>
+   </td>
+   <td>
+<ul>
+
+<li>argilla/notus-7b-v1</li>
+
+<li>argilla/notux-8x7b-v1</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>DeepSeek</strong>
+   </td>
+   <td>
+<ul>
+<li>deepseek-ai/DeepSeek-R1-Distill-Llama-8B</li>
+<li>deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B</li>
+<li>deepseek-ai/DeepSeek-R1-Distill-Qwen-14B</li>
+<li>deepseek-ai/DeepSeek-R1-Distill-Qwen-7B</li>
+</ul>
+   </td>
+  </tr>
+
+  <tr>
+   <td><strong>Eleutherai</strong>
+   </td>
+   <td>
+<ul>
+
+<li>EleutherAI/gpt-j-6b</li>
+
+<li>EleutherAI/gpt-neo-1.3B</li>
+
+<li>EleutherAI/gpt-neo-125m</li>
+
+<li>EleutherAI/gpt-neo-2.7B</li>
+
+<li>EleutherAI/gpt-neox-20b</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Facebook</strong>
+   </td>
+   <td>
+<ul>
+
+<li>facebook/opt-1.3b</li>
+
+<li>facebook/opt-2.7b</li>
+
+<li>facebook/opt-350m</li>
+
+<li>facebook/opt-6.7b</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Google</strong>
+   </td>
+   <td>
+<ul>
+
+<li>google/flan-t5-base</li>
+
+<li>google/flan-t5-large</li>
+
+<li>google/flan-t5-small</li>
+
+<li>google/flan-t5-xl</li>
+
+<li>google/flan-t5-xxl</li>
+
+<li>google/gemma-2-27b-it</li>
+
+<li>google/gemma-2-9b-it</li>
+
+<li>google/gemma-2b</li>
+
+<li>google/gemma-2b-it</li>
+
+<li>google/gemma-3-12b-it</li>
+
+<li>google/gemma-7b</li>
+
+<li>google/gemma-7b-it</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Helsinki-nlp</strong>
+   </td>
+   <td>Helsinki-NLP/opus-mt-es-en
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Huggingfaceh4</strong>
+   </td>
+   <td>
+<ul>
+
+<li>HuggingFaceH4/zephyr-7b-alpha</li>
+
+<li>HuggingFaceH4/zephyr-7b-beta</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Meta-llama</strong>
+   </td>
+   <td>
+<ul>
+
+<li>meta-llama/Llama-2-13b-hf</li>
+
+<li>meta-llama/Llama-2-7b-hf</li>
+
+<li>meta-llama/Llama-3.2-1B</li>
+
+<li>meta-llama/Llama-3.2-1B-Instruct</li>
+
+<li>meta-llama/Llama-3.2-3B</li>
+
+<li>meta-llama/Llama-3.2-3B-Instruct</li>
+
+<li>meta-llama/Meta-Llama-3-8B</li>
+
+<li>meta-llama/Meta-Llama-3-8B-Instruct</li>
+
+<li>meta-llama/Meta-Llama-3.1-8B</li>
+
+<li>meta-llama/Meta-Llama-3.1-8B-Instruct</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Microsoft</strong>
+   </td>
+   <td>
+<ul>
+
+<li>microsoft/phi-1</li>
+
+<li>microsoft/phi-1_5</li>
+
+<li>microsoft/phi-2</li>
+
+<li>microsoft/Phi-3-medium-128k-instruct</li>
+
+<li>microsoft/Phi-3-medium-4k-instruct</li>
+
+<li>microsoft/Phi-3-mini-128k-instruct</li>
+
+<li>microsoft/Phi-3-mini-4k-instruct</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Mistralai</strong>
+   </td>
+   <td>
+<ul>
+
+<li>mistralai/Mistral-7B-Instruct-v0.1</li>
+
+<li>mistralai/Mistral-7B-Instruct-v0.2</li>
+
+<li>mistralai/Mistral-7B-Instruct-v0.3</li>
+
+<li>mistralai/Mistral-7B-v0.1</li>
+
+<li>mistralai/Mistral-Nemo-Instruct-2407</li>
+
+<li>mistralai/Mixtral-8x7B-Instruct-v0.1</li>
+
+<li>mistralai/Mixtral-8x7B-v0.1</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>OpenAI</strong>
+   </td>
+   <td>GPT2
+   </td>
+  </tr>
+  <tr>
+   <td><strong>OpenAI Community</strong>
+   </td>
+   <td>
+<ul>
+
+<li>openai-community/gpt2-large</li>
+
+<li>openai-community/gpt2-medium</li>
+
+<li>openai-community/gpt2-xl</li>
+</ul>
+   </td>
+  </tr>
+    <tr>
+   <td><strong>Stable Diffusion</strong>
+   </td>
+   <td>
+<ul>
+
+
+<li>stabilityai/stable-diffusion-xl-base-1.0</li>
+
+<li>stabilityai/stable-diffusion-2-1</li>
+
+<li>stable-diffusion-v1-5/stable-diffusion-v1-5
+
+<p>
+<strong>Note</strong>: </li>
+<li>Stable Diffusion is not available in the Prompt Studio.</li>
+<li>This variant is allowed only in the text-to-image node and no other node.</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>T5</strong>
+   </td>
+   <td>
+<ul>
+
+<li>t5-base</li>
+
+<li>t5-large</li>
+
+<li>t5-small</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tiiuae</strong>
+   </td>
+   <td>
+<ul>
+
+<li>tiiuae/falcon-40b</li>
+
+<li>tiiuae/falcon-40b-instruct</li>
+
+<li>tiiuae/falcon-7b</li>
+
+<li>tiiuae/falcon-7b-instruct</li>
+
+<li>tiiuae/falcon-rw-1b</li>
+
+</ul>
+   </td>
+  </tr>
+</table>
+
+
+
+## Supported External Models for Easy Integration
+
+With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models within flows, tools, or agents.
+
+Here is the list of all the external models supported in Agent Platform:
+
+
+<table>
+  <tr>
+   <td><strong>Model Provider</strong>
+   </td>
+   <td><strong>Model Variant</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Anthropic
+   </td>
+   <td>
+<ul>
+
+<li>claude-3-5-sonnet-20240620</li>
+
+<li>claude-3-haiku-20240307</li>
+
+<li>claude-3-opus-20240229</li>
+
+<li>claude-3-sonnet-20240229</li>
+
+<li>claude-2.1</li>
+
+<li>claude-2.0</li>
+
+<li>claude-3-7-sonnet-20250219</li>
+
+<li>claude-3-5-sonnet-20241022</li>
+
+<li>claude-3-5-haiku-20241022</li>
+
+<li>Claude Sonnet Vision (Available only for the<strong> Image-to-tex</strong>t node, No <strong>Prompt Studio</strong> support).</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Azure Open AI
+   </td>
+   <td>
+<ul>
+
+<li>GPT-4</li>
+
+<li>GPT-3.5-Turbo</li>
+
+<li>GPT-4o-Mini</li>
+
+<li>GPT-4o</li>
+
+<li>O1-Mini</li>
+
+<li>O1</li>
+
+<li>O3-Mini</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Cohere
+   </td>
+   <td>
+<ul>
+
+<li>command-light-nightly</li>
+
+<li>command-light</li>
+
+<li>command</li>
+
+<li>command-nightly</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Google
+   </td>
+   <td>
+<ul>
+
+<li>gemini-1.5-flash-latest</li>
+
+<li>gemini-1.5-pro</li>
+
+<li>gemini-1.0-pro</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Open AI
+   </td>
+   <td>
+<ul>
+
+<li>gpt-4o</li>
+
+<li>gpt-4o-mini</li>
+
+<li>gpt-3.5-turbo</li>
+
+<li>gpt-3.5-turbo-1106</li>
+
+<li>gpt-4-0613</li>
+
+<li>o1-preview</li>
+
+<li>o1-mini</li>
+
+<li>o3-mini</li>
+
+<li>gpt-4-0125-preview</li>
+
+<li>gpt-4-turbo-preview</li>
+
+<li>gpt-4-1106-preview</li>
+
+<li>gpt-4</li>
+
+<li>gpt-4.1-2025-04-14</li>
+
+<li>gpt-4.1-mini-2025-04-14</li>
+
+<li>gpt-4.1-nano-2025-04-14</li>
+
+<li>gpt-4.5-preview-2025-02-27</li>
+
+<li>Whisper-1</li>
+
+<li>Whisper (Available only for the <strong>Audio-to-text</strong> node, No <strong>Prompt Studio</strong> support.)</li>
+</ul>
+   </td>
+  </tr>
+</table>
+
+
+
+
+
+
+

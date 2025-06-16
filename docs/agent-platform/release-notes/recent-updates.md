@@ -50,6 +50,12 @@ The Agent Platform now supports integration with MCP (Model Context Protocol) se
 
 The script execution flow in the Python script node has been updated to prevent passing the context object via command-line arguments. The new implementation ensures reliable handling of large context objects without impacting overall service functionality.
 
+**OAuth Profile-Based Authorization Support**
+
+Agentic Apps now support OAuth profile-based authorization. For agent actions that need authenticated access to external services, users are prompted to authorize the connection through OAuth. It enables seamless, secure, and user-specific access to data and services while maintaining proper authentication standards and overall integration reliability.
+
+[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/overview.md)
+
 
 <font size="4">AI Engineering Tools</font>
 
@@ -92,16 +98,6 @@ You can now easily track conversations with the Agentic app using the new timeli
 **Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
 
 Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
-
-<font size="4">AI Safety, Security, and Governance</font>
-
-
-**OAuth Profile-Based Authorization Support**
-
-Agentic Apps now support OAuth profile-based authorization. For agent actions that need authenticated access to external services, users are prompted to authorize the connection through OAuth. It enables seamless, secure, and user-specific access to data and services while maintaining proper authentication standards and overall integration reliability.
-
-[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/overview.md)
-
 
 <font size="4">Other Improvements</font>
 
