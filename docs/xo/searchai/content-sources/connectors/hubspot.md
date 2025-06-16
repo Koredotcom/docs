@@ -58,7 +58,7 @@ Go to the ***Connectors*** page and select **HubSpot**.  On the **Authentication
 
 * **Name**: Unique name for the connector
 * **Authentication**: Currently authentication via **Private App is supported.**
-* **API Key: **Provide the** Access Token** generated in the HubSpot account. 
+* **API Key:** Provide the **Access Token** generated in the HubSpot account. 
 
 
 ## Content Ingestion
