@@ -118,7 +118,9 @@ Agent Assist supports real-time audio streaming through two primary methods:
         * (Optional) The **E.164 Syntax** is selected by default. Selecting this option prepends a + before the DID number.  
         <img src="../images/e-164.png" alt="E-164 Syntax" title="E-164-Syntax" style="border: 1px solid gray; zoom:80%;">  
 
-        * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
+        * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) that route calls to your existing telephone lines. You can configure SIP trunks by entering DID numbers using wildcard patterns (for example, `123*`) to automatically handle multiple similar DIDs without listing each one individually. If two wildcard patterns are configured for different experience flows within an application, and a caller dials a number that matches both patterns, the system triggers the experience flow associated with the pattern that matches the most digits.  
+        Example:  
+        If the DID numbers `7896*` and `789654*` are mapped to Experience Flow 1 and Experience Flow 2, and a caller dials `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
         * **DTMF Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
         * Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are *TCP*, *UDF*, and *TLS*.
         * (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.

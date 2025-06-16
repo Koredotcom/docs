@@ -90,17 +90,19 @@ To associate an App, follow the below steps:
 7. (Only for Webhook v2.0) In the **Synchronous** mode, by default, the **Enable the Polling for Webhook v2** option is selected.
 <img src="../images/webhook.jpg" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
-
 8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling.
 
     !!! note
 
         This option is available only in Webhook v2.0. [Learn more](#webhook-v20).
 
-9. Select **Yes** to **Enable Channel**.
+9. In the **ASynchronous** mode, enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.  
+<img src="../images/webhook_proactive_notification.png" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
-10. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.  
-<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
+10. Select **Yes** to **Enable Channel**.
+
+11. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.  
+<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">  
 
 
 

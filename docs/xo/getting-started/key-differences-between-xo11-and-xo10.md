@@ -3,9 +3,9 @@ hide:
   - feedback
   - toc  
 ---
-# Key Differences Between XO v11 and v10
+# Key Differences Between AI for Service (XO) v11 and v10
 
-Key differences Between XO v11 and v10 are summarized below.
+Key differences are summarized below.
 
 ## Key Navigation Changes
 
