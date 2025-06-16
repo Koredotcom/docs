@@ -38,6 +38,11 @@ Within this area, you can:
 * Toggle between _Tile View_ or _List View_.
 * Create a New App or import an existing App.
 
+!!!note
+
+    By default, only three apps are displayed in the app list. To find a specific app, click "View All" or enter the app name in the search bar.
+
+
 ## Explore The XO Platform
 
 The following sections describe the menu options that are available once you open any virtual assistant from your account.
