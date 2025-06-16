@@ -2,6 +2,24 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+
+
+## v11.14.1 June 14, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+### Agent Transfer
+
+#### Genesys Agent Integration Supports Attachment Sharing
+
+Users can now share files with live agents to provide additional context and facilitate more efficient issue resolution. Previously supported only in the ServiceNow integration, this feature is now available in Genesys. Currently, Genesys supports attachment sharing only through the WebSDK channel.
+
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#attachment-sharing-with-live-agent)
+
+<hr>
+
 ## v11.14.0 May 31, 2025
 
 <u> Minor Release </u>

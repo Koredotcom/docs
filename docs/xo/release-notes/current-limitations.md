@@ -4,8 +4,7 @@ We're actively working to address the following limitations in AI for Service (X
 
 * Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to v11.
 
-* The App language (display language) is available only in English, Japanese (Beta), and Korean (Beta). 
-
+* The App language (display language) is available in English, Japanese (Beta), Korean (Beta), and German (Beta).
 <hr>
 
 ##### Related Links

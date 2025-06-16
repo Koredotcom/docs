@@ -11,7 +11,8 @@ The **Monitor** tab lets you monitor live conversations between agents and custo
     !!! Note
 
         Your Monitor access is restricted to the Queues that you are assigned to.
-
+4. A pop-up message appears when the user clicks the **Monitor** tab if the Contact Center Permissions are disabled for them.  
+    <img src="../images/monitor-tab-disabled-user.png" alt="Disabled User" title="Disabled User" style="border: 1px solid gray; zoom:80%;">
 ## Queues
 
 In this section, you can see all the queues to which you are assigned. The number of conversations waiting to be picked up, the number of already engaged conversations, and a summary of agents assigned to a particular queue along with their current status. In addition to the above details, the supervisor can see the average wait time, max wait time (an indicator of peak load handling capacity), and drop-off rate.

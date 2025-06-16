@@ -12,7 +12,7 @@ Review the model and feature support matrix for the [GenAI Features](genai-featu
 The XO Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompt templates and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the XO platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
 
-### Configure Pre-built LLM Integration
+**Configure Pre-built LLM Integration**
 
 Steps to configure a pre-built LLM:
 
@@ -47,14 +47,14 @@ Steps to configure a pre-built LLM:
 The XO Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models do not include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
 
 
-### Key Benefits
+**Key Benefits**
 
 * **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
 * **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
 * **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.
 
 
-### Configure Provider's New LLM Integration
+**Configure Provider's New LLM Integration**
 
 Steps to configure a Provider's New LLM Integration:
 
@@ -91,7 +91,7 @@ The XO Platform now enables enterprises to power up their virtual assistants wit
     The Kore.ai XO Platform offers generative AI features for English and non-English NLU and VA languages.
 
 
-### Configure Custom LLM Integration
+**Configure Custom LLM Integration**
 
 You can integrate a custom LLM and build your Prompts and Requests Library for specific features.
 
@@ -138,7 +138,7 @@ XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This i
     Before starting the integration process, ensure you have the necessary permissions and access to the IAM role and Amazon Bedrock resources in your AWS account. For more information, see [Policies and Permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
 
 
-### Configure Amazon Bedrock LLM Integration
+**Configure Amazon Bedrock LLM Integration**
 
 Steps to integrate an Amazon Bedrock:
 
@@ -179,7 +179,7 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
     Runtime features can use content and environment variables. Designtime features can use content, context, and environment variables.
 
 
-### Key Advantages
+**Key Advantages**
 
 **Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
 
@@ -188,120 +188,120 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
 **Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
 
 
-### Configure Pre-built LLM Integration using Dynamic Variables
 
-!!! note
-
-    * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
-    * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
-
-Steps to configure a pre-built LLM using Dynamic Variables:
+=== "Pre-built LLM"
 
 
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Choose the LLM you want to configure. For example, Azure OpenAI.
-3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. Toggle the required **model** and enter the variable for **Deployment ID**.  
-<img src="../images/azurellmdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
-<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-6. The Connection Status pop-up appears.
-    * If a connection is successful, click **Save**.  
-    <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    !!! note
 
-        !!! note
+        * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
+        * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
 
-            You can save the configuration with an unsuccessful connection.
+    Steps to configure a pre-built LLM using Dynamic Variables:
 
-7. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Choose the LLM you want to configure. For example, Azure OpenAI.
+    3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. Toggle the required **model** and enter the variable for **Deployment ID**.  
+    <img src="../images/azurellmdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+    5. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
+    <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    6. The Connection Status pop-up appears.
+        * If a connection is successful, click **Save**.  
+        <img src="../images/callsuccpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+        <img src="../images/callfailpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
 
+            !!! note
 
-### Configure Provider's New LLM Integration using Dynamic Variables
+                You can save the configuration with an unsuccessful connection.
 
-
-!!! note
-
-    * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
-    * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
-
-Steps to configure a Provider's New LLM using Dynamic Variables:
-
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Choose the LLM you want to configure. For example, Azure OpenAI.
-3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. 
-4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, and variable for **Deployment ID**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.  
-<img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-5. Click **Add Model**. The current model is saved to the available models list with a custom tag. Toggle on the **model**. If you want to add more models, perform step 4.  
-<img src="../images/azuredynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-6. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
-<img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-8. The Connection Status pop-up appears.
-    * If a connection is successful, click **Save**.  
-    <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
-        !!! note
-
-            You can save the configuration with an unsuccessful connection.
-
-9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
-
-
-### Configure Custom LLM Integration using Dynamic Variables
-
-!!! note
-
-    For Custom LLM, you can configure Endpoint, Authorization, and Headers fields as dynamic variables.
-
-Steps to configure a Custom LLM using Dynamic Variables:
-
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Custom LLM**.
-3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for the **Endpoint** and **Headers**.  
-<img src="../images/customdynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-
-5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
-<img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-6. The Testing Connection pop-up appears.
-    * If a connection is successful, click **Save**.  
-    <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-    * If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
-    <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
-
-        !!! note
-
-            You can save the configuration with an unsuccessful connection.
-
-7. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
+    7. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 
 
-### Configure Amazon Bedrock LLM Integration using Dynamic Variables 
-
-!!! note
-
-    For Amazon Bedrock integration, you can configure IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, and Headers fields as dynamic variables.
-
-Steps to configure an Amazon Bedrock LLM using Dynamic Variables:
-
-1. Go to **Generative AI Tools** > **Models Library**.
-2. Click **Amazon Bedrock**.
-3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional).  
-<img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
-4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
-5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.  
-<img src="../images/abr5.png" alt="Amazon Bedrock" title=" " style="border: 1px solid gray; zoom:70%;">
-6. On a successful connection, the save option is enabled. 
-7. Click **Save**. The configuration successful message is displayed.
-8. The next step is to add[ Prompts](prompts-library.md).
+=== "Provider's New LLM"
 
 
+    !!! note
 
+        * For Azure OpenAI, you can set the API Key, Sub-Domain, and Model Deployment IDs as dynamic variables.
+        * For OpenAI and Anthropic, only the API Key can be configured as a dynamic variable.
+
+    Steps to configure a Provider's New LLM using Dynamic Variables:
+
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Choose the LLM you want to configure. For example, Azure OpenAI.
+    3. On the **Authorization** tab, enter the variable for **API Key** and the **User Sub Doman**. 
+    4. In the **Models** section, click **+ Add**. Enter the **Model ID**, **Model Display Name**, model **Description**, and variable for **Deployment ID**. The Model ID is assigned by the LLM provider, while the Model Display Name is user-defined and used across the platform after integration is enabled.  
+    <img src="../images/rrazureaddmodel.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    5. Click **Add Model**. The current model is saved to the available models list with a custom tag. Toggle on the **model**. If you want to add more models, perform step 4.  
+    <img src="../images/azuredynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    6. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+    7. Enter the sample values for the **API Key**, **User Sub Domain**, and **Deployment ID** on the test connection pop-up. You can also save the sample values using the check box. Click **Save**.  
+    <img src="../images/llmsampletestingdv1.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    8. The Connection Status pop-up appears.
+        * If a connection is successful, click **Save**.  
+        <img src="../images/callsuccaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+        * If a connection fails, hover over the warning icon to view the error. Click **Cancel** to go back to the previous step and update the details.  
+        <img src="../images/callfailaddpre.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+            !!! note
+
+                You can save the configuration with an unsuccessful connection.
+
+    9. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
+
+
+=== "Custom LLM"
+
+    !!! note
+
+        For Custom LLM, you can configure Endpoint, Authorization, and Headers fields as dynamic variables.
+
+    Steps to configure a Custom LLM using Dynamic Variables:
+
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Click **Custom LLM**.
+    3. On the **Configuration** tab, enter the details like **Integration Name** and **Model Name**. Enter the variable for the **Endpoint** and **Headers**.  
+    <img src="../images/customdynamic.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+
+    5. Enter the sample values for the endpoints and header values. Enter the test payload and then click **Test** to check the connection. You can also save the sample values and test payload using the check box.  
+    <img src="../images/customvariable.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+    6. The Testing Connection pop-up appears.
+        * If a connection is successful, click **Save**.  
+        <img src="../images/customcallsucc.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+        * If a connection fails, hover over the warning icon to view the error.Click **Cancel** to go back to the previous step and update the details.  
+        <img src="../images/customcallfail.png" alt="Dynamic Variables" title=" " style="border: 1px solid gray; zoom:70%;">
+
+            !!! note
+
+                You can save the configuration with an unsuccessful connection.
+
+    7. The configured model is listed in the Models Library. The next step is to add [Prompts](prompts-library.md).
+
+
+
+=== "Amazon Bedrock" 
+
+    !!! note
+
+        For Amazon Bedrock integration, you can configure IAM Role ARN, Amazon STS API, Amazon Resource Name (ARN), Endpoint, and Headers fields as dynamic variables.
+
+    Steps to configure an Amazon Bedrock LLM using Dynamic Variables:
+
+    1. Go to **Generative AI Tools** > **Models Library**.
+    2. Click **Amazon Bedrock**.
+    3. On the **Authorization** tab, enter details like **Integration** **Name** and **Model Name**. Then, enter the variable for **AM Role ARN**, **Amazon STS API**, **Amazon Resource Name (ARN)**, **Endpoint**, and **Headers** (optional).  
+    <img src="../images/abr4.png" alt="Amazon Bedrock" title="Amazon Bedrock Test Payload" style="border: 1px solid gray; zoom:70%;">
+    4. Read the **Policy Guidelines**, select the checkbox, and click **Next**.
+    5. On the **Testing** tab, enter the sample values for the variables. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message.  
+    <img src="../images/abr5.png" alt="Amazon Bedrock" title=" " style="border: 1px solid gray; zoom:70%;">
+    6. On a successful connection, the save option is enabled. 
+    7. Click **Save**. The configuration successful message is displayed.
+    8. The next step is to add[ Prompts](prompts-library.md).
+<hr>
 
 ## Kore.ai XO GPT Integration
 
@@ -309,7 +309,8 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 
 
 
-### Enable Kore.ai XO GPT Integration
+**Enable Kore.ai XO GPT Integration**
+
 Steps to enable Kore.ai XO GPT Models.
 
 1. Go to **Generative AI Tools** > **Models Library**.
