@@ -19,7 +19,8 @@ Supervisors and admins with full user management access can now disable contact 
 * Marks users with a "disabled" tag in user management and search results.
 * Excludes users from active lists and assignments.
 
-When supervisors attempt to add disabled users to a list, the system displays the "disabled" tag. Analytics data remains unchanged, but excludes information from users who are disabled. Once a user is disabled or deleted, they are removed from the agent node and all related configurations. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#add-a-user)
+When supervisors attempt to add disabled users to a list, the system displays the "disabled" tag. Analytics data remains unchanged, but excludes information from users who are disabled. Once a user is disabled or deleted, they are removed from the agent node and all related configurations.  
+[Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#add-a-user)
 
 <hr>
 
