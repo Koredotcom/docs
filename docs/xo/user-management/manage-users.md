@@ -70,7 +70,7 @@ You can add a user to Contact Center AI by following the steps below:
        * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](./role-management.md#permissions) for details.
     5. **Attributes**: You can edit the user details or delete the users.
 
-Disabled users are displayed with a “Disabled” tag beside their name. Contact Center permissions are disabled when a new user invite is sent by a user whose Contact Center access is disabled.  
+Disabled users are displayed with a “Disabled” tag beside their name. Contact Center permissions are disabled when a new user invite is sent by a user whose Contact Center permission is disabled.  
 <img src="../images/user-page-diabled-user.png" alt="Disabled User" title="Disabled User" style="border: 1px solid gray; zoom:80%;">
 
 ## Attributes
