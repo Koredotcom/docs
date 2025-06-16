@@ -188,7 +188,9 @@ Ensure all necessary variables are set up before configuring the LLM. For more d
 **Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
 
 
+
 ### Configure Pre-built LLM Integration using Dynamic Variables
+
 
 !!! note
 
@@ -216,6 +218,7 @@ Steps to configure a pre-built LLM using Dynamic Variables:
             You can save the configuration with an unsuccessful connection.
 
 7. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
+
 
 
 ### Configure Provider's New LLM Integration using Dynamic Variables

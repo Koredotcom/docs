@@ -22,8 +22,6 @@ The XO Platform supports the following Genesys integration methods for agent tra
 As of now, the following features are not supported and will be available in upcoming release:
 
 * Resuming the same Interaction again
-* File Attachments
-* Metadata Transfer
 * Rich Media Messaging
 
 
@@ -170,4 +168,109 @@ To verify the data exchange between Kore.ai’s VA and Genesys agent, follow the
 6. Now, the connection between the Genesys agent and the user has been established, and the conversation continues.
 
     <img src="../images/configuring-the-genesys-agent-img5.png" alt="Connection established between Genesys agent and user" title="Connection established between Genesys agent and user" style="border: 1px solid gray;">
+
+
+
+
+
+## Additional Capabilities
+
+
+### Metadata or User Information Transfer
+
+The XO platform introduces a dedicated agent metadata object to streamline the transfer of context during agent hand-offs.
+
+For the Genesys agent integration, the metadata object is named **GenesysMetaData**. Developers can use the built-in utility function **agentUtils.setMetaInfo** to set the metadata they want to pass to the agent. This function can be used wherever the platform supports JavaScript, offering flexibility to inject context at various points in the conversation flow. This ensures agents receive all relevant information when a conversation is transferred.
+
+
+#### How to Pass Metadata in the Genesys Agent System
+
+Before executing the agent transfer node in the platform, developers should populate the metadata object with any relevant information they want to pass to the agent.
+
+For instance, if you need to include an employee’s “Employee ID” and “Department” in the metadata, you can use a script to extract these details from the conversation context. When employee data is collected through entities, you can dynamically assign these values to the metadata object by referencing the relevant context properties. 
+
+**Sample Script on how you can set the metadata using a Script node:**
+
+The platform allows you to assign both fixed (static) and variable (dynamic) values to the metadata.
+
+```
+let metaData = {
+
+  "EmployeeID": context.entities.EmployeeID,
+
+  "Department": context.entities.Department
+
+};
+
+agentUtils.setMetaInfo("GenesysMetaData", JSON.stringify(metaData));
+
+```
+
+<img src="../images/genesys2.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+
+#### How to Access the Metadata in the Genesys Agent System
+
+Once the Agent Transfer process begins, the metadata you’ve passed will be stored in the Participant Data section. To view this metadata in the Genesys Agent Desktop, go to Admin > Performance > Workspace > Interactions > [Select the Interaction] > Participant Data.
+
+
+<img src="../images/genesys5.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+If you want to use the metadata by mapping it to attributes or flow variables before transferring the interaction to an agent, you can utilize the GetParticipantData action within the Architect Message Inbound flow, before the Transfer to the ACD node.
+
+
+
+* Add the GetParticipantData action before the Transfer to the ACD node in the Architect Message Inbound Flow.
+* In the GetParticipant Data action, create flow variables and then map the relevant metadata attributes to these flow variables.
+* Then, reference these flow variables as needed in the Transfer to the ACD node to ensure the metadata is properly utilized during the agent transfer.
+
+
+
+<img src="../images/genesys4.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+
+
+<img src="../images/genesys3.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+
+
+<img src="../images/genesys6.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+
+### Dynamic Queue Handling
+
+Dynamic Queue Handling in Genesys Cloud enables organizations to intelligently route customer interactions to the most appropriate queue in real-time, based on the current context and metadata of each conversation. Instead of statically assigning every interaction to a fixed queue, dynamic queue handling enables the system to evaluate factors such as customer details, issue type, language preference, or priority, and then determine the most suitable queue for handling that specific interaction.
+
+To enable dynamic queue handling in Genesys Cloud, the queue name should be included as part of the metadata transferred from your platform during the agent hand-off. This queue name can be dynamically set by the developer based on the specific use case or routing logic required for each interaction.
+
+Follow These Steps:
+
+
+
+1. Pass the QueueName as part of the metadata when initiating the transfer from your platform to Genesys.
+2. In the Genesys Architect Inbound Message Flow, add a 'Get Participant Data' action before the 'Transfer to ACD' node to retrieve the QueueName from the metadata and assign it to a flow variable.
+
+    !!! note
+
+        Ensure that the attributeName matches the exact key used in the platform’s metadata. For clarification, you can refer to the screenshots below.
+
+3. In the Transfer to ACD node, set the Queue Name field to Expression and use the FindQueue() function with the flow variable to dynamically resolve the target queue.
+4. This configuration enables dynamic routing of conversations to the appropriate queue based on the metadata, offering flexibility in queue assignment according to your business logic.
+
+
+<img src="../images/genesys1.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+
+<img src="../images/genesys8.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
+
+
+
+
+<img src="../images/genesys7.png" alt="Genesys Agent" title="Genesys Agent" style="border: 1px solid gray;">
 
