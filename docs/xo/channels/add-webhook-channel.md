@@ -96,12 +96,13 @@ To associate an App, follow the below steps:
 
         This option is available only in Webhook v2.0. [Learn more](#webhook-v20).
 
-9. In the **ASynchronous** mode, enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
+9. In the **ASynchronous** mode, enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.  
+<img src="../images/webhook_proactive_notification.png" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
 10. Select **Yes** to **Enable Channel**.
 
-10. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.  
-<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
+11. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.  
+<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">  
 
 
 
