@@ -1,6 +1,17 @@
 # Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+## v11.14.1 June 14, 2025
+
+<u> Patch Release </u>
+
+### Enhanced Date Filtering for Jira Connector
+The Jira connector now supports **customizable date filters**, offering users greater control over data ingestion. Users can now define custom date ranges for data ingestion as part of standard filters, allowing the retrieval of Jira content beyond the default three-month window.  Once configured, the connector automatically syncs and ingests data for the specified time frame, allowing for more targeted, relevant, and flexible data extraction based on specific requirements. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/jira.md)
+
+
+<hr>
 
 ## v11.14.0 May 31, 2025
 

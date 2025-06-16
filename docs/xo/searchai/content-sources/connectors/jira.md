@@ -134,17 +134,24 @@ Further you can set **ingestion filters **to select specific content. Select Ing
 
 There are two types of filters - **Standard Filters and Advanced Filters.**
 
-![Filters](images/jira/ingestion-filters.png "Filters")
+![Filters](images/jira/date-filter.png "Filters")
+
+**Standard Filters**
+
+Use **Standard filters** to ingest selected objects from specific projects. You can select one or more projects.  Once a project is selected, all items of the selected object type within that project will be ingested.
+
+You can also define a **date range** for ingestion using the built-in calendar selector. This allows you to limit the data to a specific time frame based on your requirements.
 
 
-Jira connector offers Standard filters to ingest selected objects from the specific projects. You can select one or more projects.  By applying this filter, every object of the selected type in the chosen projects will be ingested.
+**Advanced Filters**
 
-Alternatively, you can set up advanced filters to select content by specifying field-based rules. Like selecting specific type of issues from a given project as shown below. 
+Advanced Filters allow more granular control by letting you define **field-based rules**. For example, you can configure filters to ingest only specific types of issues from a particular project.
+ 
 
 ![Advanced Filters](images/jira/advanced-filter.png "Advanced Filters")
 
 
-Choose from commonly used fields in the dropdown or enter any valid Jira field name for your instance. Note that the field name should match the field name for the selected object in  your JIra instance. 
+Choose from commonly used fields in the dropdown or enter any valid Jira field name for your instance. Note that the field name should match the field name for the selected object in your Jira instance. 
 
 **Filter Precedence & Scope**
 
