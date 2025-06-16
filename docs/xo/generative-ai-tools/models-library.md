@@ -330,7 +330,7 @@ Steps to enable Kore.ai XO GPT Models.
 6. You can now use these models in [GenAI Features](genai-features.md).
 
 
-## Reset/Delete the Configured LLM Integration
+## Reset or Delete LLM Integration
 
 If not using a configured LLM, you can reset/delete the LLM-specific integration using the **Reset Configuration/Delete** option. You can reset the pre-built integration and delete the custom integrations.
 
