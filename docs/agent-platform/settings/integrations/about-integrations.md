@@ -194,8 +194,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>AWS S3 Bucket
    </td>
-   <td> \
- Connect to your users' AWS S3 bucket set.
+   <td> Connect to your users' AWS S3 bucket set.
    </td>
    <td> 1
    </td>
