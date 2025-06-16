@@ -2,7 +2,23 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.14.1 June 14, 2025
+
+<u>Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+### Widget Enhancement
+
+#### Agentic Copilot Response Supports Markdown Templates
+
+Agentic Copilot responses in the Agent AI widget now support Markdown templates, enabling clear and structured outputs with code blocks, headers, emphasis, hyperlinks, bold and italic text, and lists.
+
 ## v11.14.0 May 31, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 ### Widget Enhancements
 
