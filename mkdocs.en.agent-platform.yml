@@ -213,7 +213,7 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
-    - Powered Solutions:
+    - Business Solutions:
       - AI for Service (XO): ai-agents/ai-for-service.md
       - AI for Work: ai-agents/ai-for-work.md
   - Core AI Capabilities: 
