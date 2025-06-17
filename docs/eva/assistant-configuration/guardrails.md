@@ -10,7 +10,7 @@ Guardrails is an advanced security and compliance framework designed to protect 
 
 Get started with Guardrails in four simple steps to secure your AI interactions and protect sensitive data:
 
-1. Navigate to the Guardrails section in **Account Hub. 
+1. Navigate to the Guardrails section in **Account Hub.
 
 <img src="../images/guardrails-account.png" alt="guardrails-account" title="guardrails-account" style="border: 1px solid gray; zoom:80%;">
 
@@ -18,8 +18,7 @@ Get started with Guardrails in four simple steps to secure your AI interactions 
 3. Set up content restrictions appropriate for your organization.
 4. Validate configurations using the integrated testing suite.
 
-
-### Understanding the Interface Layout
+## Understanding the Interface Layout
 
 The Guardrails interface is organized into three main sections:
 
@@ -27,11 +26,11 @@ The Guardrails interface is organized into three main sections:
 * Ban Topics: Content restriction configuration.
 * Testing Suite: Validation and performance analysis.
 
-#### PII Settings
+### PII Settings
 
 The PII Settings component provides comprehensive protection for personally identifiable information through intelligent detection and flexible handling options.
 
-##### Pre-configured Detection Rules
+#### Pre-configured Detection Rules
 
 * **Email Address**: Automatic detection of email patterns across various formats.
 * **Universal Phone Numbers**: Recognition of domestic and international phone number formats.
@@ -40,7 +39,7 @@ The PII Settings component provides comprehensive protection for personally iden
 
 <img src="../images/PII-Settings.png" alt="PII-Settings" title="PII-Settings" style="border: 1px solid gray; zoom:80%;">
 
-##### Add or Update Rule
+#### Add or Update Rule
 
 Create custom detection patterns using regular expressions:
 
@@ -56,7 +55,7 @@ Create custom detection patterns using regular expressions:
 * **Static Replacement**: Substitution with predefined safe text.
 * **Masking**: Replacement with placeholder characters (e.g., **** or XXX).
 
-#### Ban Topics Configuration
+### Ban Topics Configuration
 
 The Ban Topics system centrally manages content restrictions for all organizational AI interactions, ensuring consistent enforcement and simplified governance. By dynamically modifying input prompts in real-time, it prevents AI models from engaging with prohibited topics, guaranteeing acceptable AI output and maintaining a secure, compliant AI environment.
 
@@ -68,7 +67,7 @@ The Ban Topics system offers a flexible and user-friendly configuration manageme
 * **Custom Prompt Development:** The Ban Topics system offers the flexibility to create custom prompts, acknowledging that standard solutions may not always suffice. This capability allows organizations to establish detailed and context-aware content limitations, offering methods for tackling specific compliance needs or internal regulations.
 * **Enable/Disable Functionalities:** Administrators can easily enable or disable both built-in and custom prompt content restrictions as needed for organizational changes or testing.
 
-#### Testing Framework
+### Testing Framework
 
 The integrated testing suite provides validation and performance analysis for all guardrail configurations. Testing involves using an isolated environment to conduct full or targeted validation of PII rules and banned topics. Test inputs can be managed manually, AI-driven, or through batch tests and boundary condition testing. Test outcomes are analyzed through individual rule analysis, impact status, process duration, and output. Additionally, users can preview data sanitization visually.
 

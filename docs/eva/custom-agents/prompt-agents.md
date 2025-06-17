@@ -91,7 +91,7 @@ To configure user input, follow the steps outlined below:
     ![](images/add_context_gpt.png)
 
 2.  Enter context name and any placeholder text in the **placeholder text**
-    field if required. The placeholder text will appear in the form field before the end user provides input. 
+    field if required. The placeholder text will appear in the form field before the end user provides input.
     ![](images/context_field_gpt.png)
 
 3.  Select the **Field type** from the list for each field. You can select a
@@ -185,11 +185,13 @@ Once you add multiple prompts, the prompt option will appear under the prompt se
 
 To allow users to generate multiple responses,
 
-1.  Enable the **Allow users to generate multiple responses** toggle button in
+1. Enable the **Allow users to generate multiple responses** toggle button in
     the output settings.  
-    ![](images/output_setings.png)
 
-2.  Click **Continue** to move to the next step.
+2. Enable **Skip Form Display** to automatically bypass forms. This feature intelligently prevents conflicts with Multi-Response and shows messages for incompatible settings. Smart query analysis now identifies when all required entities are present initially, and forms will only appear if mandatory fields are missing.
+ ![](images/output_setings.png)
+
+3. Click **Continue** to move to the next step.
 
 ### <a id="preview">Step 3: Preview</a>
 
