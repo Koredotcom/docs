@@ -140,7 +140,7 @@ nav:
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up Agents: ai-agents/create-agent.md
+      - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
     - Knowledge:
