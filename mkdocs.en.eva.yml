@@ -162,8 +162,8 @@ nav:
     - Assist Configuration:
       - Email Template: assistant-configuration/email-template.md
       - Rate Limit: assistant-configuration/rate-limit.md
-      - Guardrails: guardrails/rate-limit.md
-      - Orchestration Settings: orchestration-settings/rate-limit.md
+      - Guardrails: assistant-configuration/guardrails.md
+      - Orchestration Settings: assistant-configuration/orchestration-settings.md
     - Security: 
       - SSO: security/sso.md
       - Domain Management: security/domain-management.md
