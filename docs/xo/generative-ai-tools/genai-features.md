@@ -106,15 +106,42 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 
 
-## Automation GenAI Features
+## Automation AI - GenAI Features
 
-Learn more about [Automation GenAI Features](genai-features-automationai.md).
+- Agent Node  
+- Automatic Dialog Generation  
+- Conversation Summary  
+- Conversation Test Case Suggestions  
+- Few-shot ML Model  
+- NLP Batch Test Case Suggestions  
+- Prompt Node  
+- Repeat Responses  
+- Rephrase Responses  
+- Rephrase User Query  
+- Training Utterance Suggestions  
+- Use Case Suggestions  
+- Zero-shot ML Model
 
-## Search GenAI Features
 
-Learn more about [Search GenAI Features](genai-features-searchai.md).
 
-## Agent GenAI Features
+Learn more about [Automation AI - GenAI Features](genai-features-automationai.md).
 
-Learn more about [Agent GenAI Features](genai-features-agentai.md).
+## Search AI - GenAI Features
+
+- Answer Generation  
+- Metadata Extractor Agent  
+- Query Rephrase for Advanced Search API  
+- Query Transformation  
+- Result Type Classification  
+- Vector Generation
+
+Learn more about [Search AI - GenAI Features](genai-features-searchai.md).
+
+## Agent AI - GenAI Features
+
+* Agent Response Rephrasing
+* Generating Opposite Utterance Suggestions
+* Generating Similar Utterance Suggestions
+
+Learn more about [Agent AI - GenAI Features](genai-features-agentai.md).
 

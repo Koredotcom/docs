@@ -561,9 +561,9 @@ nav:
       - Streaming Responses: generative-ai-tools/streaming-responses.md 
     - GenAI Features: 
       - About GenAI Features: generative-ai-tools/genai-features.md
-      - Automation GenAI Features: generative-ai-tools/genai-features-automationai.md
-      - Search GenAI Features: generative-ai-tools/genai-features-searchai.md
-      - Agent GenAI Features: generative-ai-tools/genai-features-agentai.md
+      - Automation AI - GenAI Features: generative-ai-tools/genai-features-automationai.md
+      - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
+      - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
