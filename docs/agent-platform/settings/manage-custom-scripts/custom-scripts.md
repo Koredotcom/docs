@@ -181,7 +181,7 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
    </td>
    <td><strong>Actual CPU Core and Memory Available</strong>
    </td>
-   <td><strong>Price per Hour</strong>
+   <td><strong>Credits per Hour</strong>
    </td>
   </tr>
   <tr>
