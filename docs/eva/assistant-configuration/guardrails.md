@@ -49,11 +49,10 @@ Create custom detection patterns using regular expressions:
 <img src="../images/Regex-Selection.png" alt="Regex-Selection" title="Regex-Selection" style="border: 1px solid gray; zoom:80%;">
 
 * **Action**: Choose how to display redacted data to non-authorized users.
+     * *Redaction*: Complete removal of sensitive data from text.
+     * *Static Replacement*: Substitution with predefined safe text.
+     * *Masking*: Replacement with placeholder characters (e.g., **** or XXX).
 <img src="../images/action.png" alt="action" title="action" style="border: 1px solid gray; zoom:80%;">
-
-* **Redaction**: Complete removal of sensitive data from text.
-* **Static Replacement**: Substitution with predefined safe text.
-* **Masking**: Replacement with placeholder characters (e.g., **** or XXX).
 
 ### Ban Topics Configuration
 

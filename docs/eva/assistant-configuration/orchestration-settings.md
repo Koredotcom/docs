@@ -43,7 +43,7 @@ Guardrail Enforcement provides automated security policy application across all 
 * **Centralized Control**: All enable or disable actions are managed through the dedicated [Guardrails](./guardrails.md) interface.
 * **Automatic Synchronization**: Cannot be manually toggled within **Orchestration Settings**.
 
-#### Small Talk Handling
+### Small Talk Handling
 
 Small Talk Handling enables AI systems to engage in casual, contextual conversations that improve user experience and interaction quality.
 
