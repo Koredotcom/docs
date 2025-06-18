@@ -67,49 +67,11 @@ These functions can be used in the Channel Override template inside Java script 
 
    **Header syntax**:
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>message
-   </td>
-   <td>Message to play before Hangup.
-   </td>
-   <td>String
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Headers
-   </td>
-   <td>an object containing SIP headers to include in the BYE request.
-   </td>
-   <td>Object
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>queueCommand
-   </td>
-   <td>If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately.
-   </td>
-   <td>Boolean
-   </td>
-   <td>No
-By default True
-   </td>
-  </tr>
-</table>
+| **Options**    | **Description**                                                                                                     | **Type**  | **Required**        |
+|----------------|---------------------------------------------------------------------------------------------------------------------|-----------|----------------------|
+| message        | Message to play before Hangup.                                                                                      | String    | No                   |
+| Headers        | An object containing SIP headers to include in the BYE request.                                                     | Object    | No                   |
+| queueCommand   | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean   | No (Default: True)   |
 
 `````
 "headers": { \
@@ -152,59 +114,12 @@ message - Optional (Send Empty Message),  referTo - Required, headers - Optional
 
 **Syntax**: `print(voiceUtils.refer(message,ReferTo,headers,queueCommand))`
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>message
-   </td>
-   <td>Play Message before Transferring a call to Agent
-   </td>
-   <td>String
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td>ReferTo
-   </td>
-   <td>A SIP URI or a phone number/user identifier
-   </td>
-   <td>String
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>headers
-   </td>
-   <td>Additional SIP headers to include in the response
-   </td>
-   <td>Object
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td>queueCommand
-   </td>
-   <td>If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately.
-   </td>
-   <td>Boolean
-   </td>
-   <td>NA
-Default:True
-   </td>
-  </tr>
-</table>
+| **Options**    | **Description**                                                                                                     | **Type**  | **Required**           |
+|----------------|---------------------------------------------------------------------------------------------------------------------|-----------|-------------------------|
+| message        | Play message before transferring a call to agent.                                                                  | String    | NA                      |
+| ReferTo        | A SIP URI or a phone number/user identifier.                                                                       | String    | Yes                     |
+| headers        | Additional SIP headers to include in the response.                                                                 | Object    | NA                      |
+| queueCommand   | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean   | NA (Default: True)      |
 
 **Example**:
 
@@ -236,69 +151,14 @@ The SIP Invite initiates a conference call. The bot's leg remains active after t
 
 **Syntax**: `print(voiceUtils.invite(message, callerId, target,headers,queueCommand))`
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Message
-   </td>
-   <td>Message to play before Transferring the call to a Third Party.
-   </td>
-   <td>String
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>CallerId
-   </td>
-   <td>The inbound caller's phone number, which is displayed to the number that was dialed. The caller ID must be a valid E.164 number.
-   </td>
-   <td>String containing phone number with country code (Bot Number)
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Target
-   </td>
-   <td>The target property specifies the call destinations.
-   </td>
-   <td>String (SIP URI)
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Headers
-   </td>
-   <td>Additional SIP headers to include in the response
-   </td>
-   <td>Object
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td>QueueCommand
-   </td>
-   <td>If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately.
-   </td>
-   <td>Boolean
-   </td>
-   <td>No
-Default: True
-   </td>
-  </tr>
-</table>
+| **Options**     | **Description**                                                                                                     | **Type**                                      | **Required**        |
+|------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------|
+| Message          | Message to play before transferring the call to a third party.                                                     | String                                         | No                   |
+| CallerId         | The inbound caller's phone number, which is displayed to the number that was dialed. The caller ID must be a valid E.164 number. | String containing phone number with country code (Bot Number) | Yes                  |
+| Target           | The target property specifies the call destinations.                                                              | String (SIP URI)                               | Yes                  |
+| Headers          | Additional SIP headers to include in the response.                                                                | Object                                         | NA                   |
+| QueueCommand     | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean                                        | No (Default: True)   |
+
 
 **Example**:
 
@@ -324,28 +184,10 @@ Killing the previous prompt with the current Message.
 
 The “Message” parameter is Optional.
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Descriptions</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Message
-   </td>
-   <td>Kill the previous command and play the configured message.
-   </td>
-   <td>String
-   </td>
-   <td>NA
-   </td>
-  </tr>
-</table>
+| **Options** | **Descriptions**                                     | **Type** | **Required** |
+|-------------|------------------------------------------------------|----------|--------------|
+| Message     | Kill the previous command and play the configured message. | String   | NA           |
+
 
 !!! note
 
@@ -372,39 +214,10 @@ This function is used to send DTMF digits from the bot. The digits are sent as R
 
 When one bot interacts with another bot and tries to give DTMF Input.  
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>dtmf
-   </td>
-   <td>String
-   </td>
-   <td>A string containing a sequence of DTMF digits (0-9,*,#).
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>duration
-   </td>
-   <td>Number
-   </td>
-   <td>The length of each digit, in milliseconds, Defaults to 500.
-   </td>
-   <td>No
-Default value: 500
-   </td>
-  </tr>
-</table>
+| **Options** | **Type** | **Description**                                                             | **Required**            |
+|-------------|----------|------------------------------------------------------------------------------|--------------------------|
+| dtmf        | String   | A string containing a sequence of DTMF digits (0-9, *, #).                   | Yes                      |
+| duration    | Number   | The length of each digit, in milliseconds. Defaults to 500.                 | No (Default value: 500)  |
 
 **Example**:
 
@@ -419,44 +232,12 @@ print(voiceUtils.sendDTMF(dtmf,duration))
 
 The pause command waits silently for a specified number of seconds. Play is Optional; If you pass the message, it will play after the pause.
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>length
-   </td>
-   <td>number (Seconds)
-For example, 4.
-The default is 3 seconds.
-   </td>
-   <td>Number of seconds to wait before continuing the app.
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>message
-   </td>
-   <td>string or an array of strings containing a URL and string.
- [“This is the message”, “https://text.wav”]
-   </td>
-   <td>Play the message after executing the pause time.
-   </td>
-   <td>No
-   </td>
-  </tr>
-</table>
+| **Options** | **Type**                                                                 | **Description**                                       | **Required** |
+|-------------|--------------------------------------------------------------------------|--------------------------------------------------------|--------------|
+| length      | number (seconds) — for example, `4`. Default is 3 seconds.               | Number of seconds to wait before continuing the app.   | Yes          |
+| message     | string or array of strings containing a URL and string. <br>Example: `["This is the message", "https://text.wav"]` | Play the message after executing the pause time.       | No           |
 
 **Example:**
-
 
 `\`
 `let` `length` `=` `4,`
@@ -474,29 +255,9 @@ The message can be either a single string or an array of strings that includes b
 
 **Syntax**: `print(voiceUtils.play(message))`
 
-<table>
-  <tr>
-   <td><strong>Option</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>message
-   </td>
-   <td>To play text messages and audio URLs.
-   </td>
-   <td>String - Only message
-An array of strings - Both audio URL and Message.
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-</table>
+| **Option** | **Description**                            | **Type**                                                                 | **Required** |
+|------------|---------------------------------------------|--------------------------------------------------------------------------|--------------|
+| message    | To play text messages and audio URLs.       | `String` – Only message<br>`Array of strings` – Both audio URL and message. | Yes          |
 
 **Example**:
 
@@ -520,68 +281,13 @@ Let message = ["this is First message", "https://audiofiile.wav" , "this is seco
 
 **Header Syntax**:
 
-<table>
-  <tr>
-   <td><strong>Options</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>message
-   </td>
-   <td>The message played to the customer before the voicemail recording starts.
-   </td>
-   <td>string
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>beepRequired
-   </td>
-   <td>When true, plays a beep sound after the message to indicate the recording start. Default: false
-   </td>
-   <td>boolean
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>transcriptionRequired
-   </td>
-   <td>When true, generates text transcription of the voicemail. Default: false
-   </td>
-   <td>boolean
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>notifyUrl
-   </td>
-   <td>Client endpoint URL where voicemail notifications will be sent.
-   </td>
-   <td>string
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>metaInfo
-   </td>
-   <td>Additional metadata to include with the notification.
-   </td>
-   <td>object
-   </td>
-   <td>No
-   </td>
-  </tr>
-</table>
+| **Options**             | **Description**                                                                 | **Type**   | **Required** |
+|--------------------------|----------------------------------------------------------------------------------|------------|--------------|
+| message                  | The message played to the customer before the voicemail recording starts.       | string     | Yes          |
+| beepRequired             | When true, plays a beep sound after the message to indicate the recording start. Default: false | boolean    | No           |
+| transcriptionRequired    | When true, generates text transcription of the voicemail. Default: false        | boolean    | No           |
+| notifyUrl                | Client endpoint URL where voicemail notifications will be sent.                 | string     | Yes          |
+| metaInfo                 | Additional metadata to include with the notification.                           | object     | No           |
 
 ```
 "metaInfo": {

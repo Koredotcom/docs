@@ -11,7 +11,7 @@ The following table displays the features and the supported models.
 
 |Model|Agent Response Rephrasing|Generating Opposite Utterance Suggestions|Generating Similar Utterance Suggestions|
 |:----:|:----:|:----:|:----:|
-|Azure OpenAI – GPT 4|❌|✅|✅|
+|Azure OpenAI – GPT 3.5 Turbo|❌|✅|✅|
 |OpenAI – GPT 3.5 Turbo|✅| ✅|✅|
 |OpenAI – <br>GPT 4, GPT 4 Turbo, and GPT 4o|❌|✅|✅|
 

@@ -315,6 +315,10 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
          * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
          * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes.
 
+### Supported ASR, TTS, and Voice Biometrics Providers
+
+Voice Gateway supports integration with third party ASR, TTS, and Voice Biometrics providers. [Learn more](../voice-gateway/third-party-asr-tts-support.md)
+
 ### Supported Languages and Dialects
 
 The following languages and dialects are supported:

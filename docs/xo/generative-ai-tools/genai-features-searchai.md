@@ -10,7 +10,7 @@ The following table displays the features and the supported models.
 
 | Model     | Answer Generation     | Vector Generation     | Metadata Extractor Agent     | Query Rephrase for Advanced Search API     | Query Transformation     | Result Type Classification     |
 |---|---|---|---|---|---|---|
-| Azure OpenAI -   GPT 4, GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     |
+| Azure OpenAI - GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     |
 | Azure OpenAI - GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     |
 | OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo     | ✅     | ❌     | ❌     | ❌     | ❌     | ❌     |
 | OpenAI -   GPT 4o, and GPT-4o mini*     | ✅     | ❌     | ✅     | ✅     | ✅     | ✅     |
