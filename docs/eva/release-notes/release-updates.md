@@ -8,7 +8,7 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-<font size="5">New Features</font>
+<p style="color: #2A52BE"><font size="4.25">New Features</font></p>
 
 **Guardrails Security Framework**
 
@@ -36,7 +36,7 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../assistant-configuration/orchestration-settings.md)
 
-<font size="5">Feature Enhancements</font>
+<p style="color: #2A52BE"><font size="4.25">Feature Enhancements</font></p>
 
 **Conversation Data Storage Controls**
 
@@ -80,10 +80,6 @@ Key enhancements
 * Implemented smart query analysis that identifies when all required entities are present in the initial request.
 * Enhanced form logic to display input forms only when mandatory fields are missing from the user query.
 
-!!! note
-
-    Form is presented only when mandatory fields are missing, ensuring users can provide necessary information
-
 **Responsive Design Enhancement**
 
 Eliminated the disruptive minimum resolution warning dialog that previously appeared when window size was reduced. The application now maintains full functionality with seamless scrolling capabilities across all screen sizes, providing users with uninterrupted access to features regardless of viewport dimensions.
@@ -92,7 +88,7 @@ Eliminated the disruptive minimum resolution warning dialog that previously appe
 
 Administrators can now edit user profile information directly from the user details interface. This enhancement allows admins to modify first and last names efficiently, streamlining the user data management workflow and improving administrative control over user accounts.
 
-<font size="5">Bug Fixes</font>
+<p style="color: #2A52BE"><font size="4.25">Bug Fixes</font></p>
 
 **System Stability Improvements**
 
@@ -104,7 +100,7 @@ Resolved critical chart rendering issues and fixed application crashes that occu
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-<font size="5">New Features</font>
+<p style="color: #2A52BE"><font size="4.25">New Features</font></p>
 
 **New Homepage Experience**
 
@@ -153,7 +149,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 [Learn more :octicons-arrow-right-24:](./../security/data-settings.md)
 
-<font size="5">Feature Enhancements</font>
+<p style="color: #2A52BE"><font size="4.25">Feature Enhancements</font></p>
 
 **Impovised Enterprise Knowledge Agent**:
 
@@ -164,7 +160,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 **Database Migration**: Migrated from Trina DB to ClickHouse to improve application performance when processing attachment-based queries.
 
-<font size="5">Bug Fixes</font>
+<p style="color: #2A52BE"><font size="4.25">Bug Fixes</font></p>
 
 **Search Connector**:
 
@@ -181,7 +177,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-<font size="5">New Features</font>
+<p style="color: #2A52BE"><font size="4.25">New Features</font></p>
 
 **Introducing Workspaces**
 
@@ -209,7 +205,7 @@ Key Features:
 [Learn more :octicons-arrow-right-24:](./../custom-agents/agent-options.md)
 
 
-<font size="5">Feature Enhancements and Bug Fixes</font>
+<p style="color: #2A52BE"><font size="4.25">Feature Enhancements and Bug Fixes</font></p>
 
 * User Management: Refined user permissions to ensure access is limited to authorized sections and improved template visibility and management for more precise user role-based access control.
 * Email Templates: Fixed formatting inconsistencies to enhance visual consistency and readability.
@@ -224,7 +220,7 @@ Key Features:
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-<font size="5">New Feature</font>
+<p style="color: #2A52BE"><font size="4.25">New Features</font></p>
 
 **Agentic App Support for Enterprise Knowledge**
 
@@ -240,7 +236,7 @@ Key Benefits:
 
 [Learn more :octicons-arrow-right-24:](./../custom-agents/enterprise-knowledge.md)
 
-<font size="5">Feature Enhancements</font>
+<p style="color: #2A52BE"><font size="4.25">Feature Enhancements</font></p>
 
 * Kore Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Kore's Agent Platform, enabling seamless integration.
 
@@ -249,7 +245,7 @@ Key Benefits:
 * Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
 
 
-<font size="5">Bug Fixes</font>
+<p style="color: #2A52BE"><font size="4.25">Bug Fixes</font></p>
 
 * cURL Import Enhancement: Improved the cURL import functionality for agentic apps, allowing users to seamlessly modify request body during the import process.
   
@@ -267,7 +263,7 @@ Key Benefits:
 
 This update includes new features and feature enhancements summarized below.
 
-<font size="5">New Feature</font>
+<p style="color: #2A52BE"><font size="4.25">New Features</font></p>
 
 **Standard Agentic Apps**
 
@@ -278,8 +274,7 @@ You can now organize multiple AI agents in sequence to automate and execute comp
 
 You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/autonomous-agent.md)
 
-
-<font size="5">Feature Enhancements</font>
+<p style="color: #2A52BE"><font size="4.25">Features Enhancements</font></p>
 
 * Bot Response Notification System: Bot agent interaction experience has been enhanced with an intelligent notification system for improved user engagement.
 

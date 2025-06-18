@@ -1,6 +1,6 @@
 # Domain Management
 
-This document provides instructions on managing domains within your Kore.ai account. Domain management allows administrators to configure primary and child domains, enabling controlled access to the account via organization SSO for verified domains.
+This document provides instructions on managing domains within your account. Domain management allows administrators to configure primary and child domains, enabling controlled access to the account via organization SSO for verified domains.
 
 The **Primary Domain** is the main domain associated with your account, and it is listed by default. Users cannot edit or delete the primary domain.
 
