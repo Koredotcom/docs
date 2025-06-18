@@ -119,7 +119,9 @@ Alongside the visual embedding, the contents of each page are extracted into a s
 Currently, it can only be used for extraction from **PDF files**, uploaded directly, or ingested via connectors.
 
 !!! note
-    To enable indexing using visual embeddings, select the **image-based embedding model** in the **Vector Configuration** page.
+
+   * To enable indexing using visual embeddings, make sure to select the  **image-based embedding model** in the **Vector Configuration** page.
+   * **Answer generation is not supported by Kore XO GPT** when extraction is performed using Image-based extraction strategy.
 
 ## Deleting a Strategy
 

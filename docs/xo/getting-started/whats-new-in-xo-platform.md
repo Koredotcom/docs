@@ -3,16 +3,16 @@ hide:
   - feedback
   - toc  
 ---
-# What's New in XO v11
-Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
+# What's New in AI for Service (XO) v11
+Learn about the new features and enhancements included in AI for Service (XO) v11.
 
 ## All-new Experience Optimization Platform
-The Kore.ai Experience Optimization (XO) Platform helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
+AI for Service helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
 
 Built for security and scalability, the platform uses a no-code interface that lets businesses build intelligent virtual assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
 
 ## Comprehensive Suite of Products and Services
-The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
+The unified platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
 **Key Products, Features, and Services Offered by the XO Platform:**
 
@@ -86,7 +86,6 @@ Key updates to products and features are summarized below. Click the correspondi
     Tool Calling enables the new Agent Node to interact with your business applications. Users can define tools, connect multiple actions, and incorporate external data into the conversation context. DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Users can combine these features to deliver seamless agentic experiences for your customers and employees.
 
     Key features 
-
 
 
     * Tool calling integration with business applications and external data.
@@ -439,7 +438,7 @@ Key updates to products and features are summarized below. Click the correspondi
 
 Flows act as entry points for conversations received through channel adapters. For each channel, a unique Welcome Flow is linked to define the user experience. Out of the box, there are predefined Welcome Chat Flow and Welcome Voice Flow options. Flows contain nodes like message nodes to greet users, script nodes to run JavaScript, IVR nodes for voice experience, and more.
 
-For bots being upgraded to XO v11, existing On-connect and Welcome events (like Welcome Event, Facebook Welcome Event, etc.) will be retained. These will be present in the Start Flows (Welcome Chat Flow) as an option called "Use existing event configurations". Users can either honor the existing events or choose to execute the Welcome Chat/Voice Flow by turning off those events.
+For bots being upgraded to v11, existing On-connect and Welcome events (like Welcome Event, Facebook Welcome Event, etc.) will be retained. These will be present in the Start Flows (Welcome Chat Flow) as an option called "Use existing event configurations". Users can either honor the existing events or choose to execute the Welcome Chat/Voice Flow by turning off those events.
 
 #### 2. Dialog Builder Upgrade
 
@@ -458,7 +457,7 @@ Based on this configuration, NLP will route user utterances to either Automation
 
 #### 4. Addition of Contact Center AI
 
-While upgrading a bot to an XO v11 app, default Contact Center AI components are automatically created behind the scenes: default queue, conditional flows, skill group, agent group, and hours of operation.
+While upgrading a bot to v11 app, default Contact Center AI components are automatically created behind the scenes: default queue, conditional flows, skill group, agent group, and hours of operation.
 For standard accounts, these defaults are accessible only if the Contact Center AI product is activated within that app. If not activated, users are prompted for a free trial when clicking  Contact Center AI from the product switcher.
 
 For enterprise accounts having a Contact Center AI license, the product and defaults will automatically be available in all apps.
@@ -479,7 +478,7 @@ During the bot-to-app upgrade, the following default Agent AI components are cre
 
 #### 7. User Role Management Module
 
-When upgrading a bot to an XO v11 app, several changes to user roles and permissions occur —updated role names aligned to "App," consolidation of permissions, the addition of new system roles like Agent/Supervisor, and the ability for App Owners to create new account roles.
+When upgrading a bot to v11 app, several changes to user roles and permissions occur —updated role names aligned to "App," consolidation of permissions, the addition of new system roles like Agent/Supervisor, and the ability for App Owners to create new account roles.
 
 System Roles:
 
@@ -507,18 +506,18 @@ All accounts start as Standard, with billing managed at the app level. Users can
 
 Enterprise accounts are upgraded from Standard by Kore.ai based on signed agreements. Billing is then handled at the account level, with access provided to the signed products and custom limits.
 
-When upgrading bots to XO v11 apps:
+When upgrading bots to v11 apps:
 
-* Standard accounts retain their existing XO v10 trial period, provisions (2000 sessions, 2000 voice minutes, 10,000 Search requests), and pay per app.
+* Standard accounts retain their existing v10 trial period, provisions (2000 sessions, 2000 voice minutes, 10,000 Search requests), and pay per app.
 * Enterprise accounts continue accessing their pre-purchased products and custom limits.
 
 #### 9. Addition of Marketplace
 
-With the upgrade to XO v11, users will gain access to a new Marketplace. Here, they can install Dialog Templates and Actions, enable pre-built integrations, and browse various categories for available templates.
+With the upgrade to v11, users will gain access to a new Marketplace. Here, they can install Dialog Templates and Actions, enable pre-built integrations, and browse various categories for available templates.
 
 #### 10. Addition of Setup Guide
 
-After upgrading to the XO v11 platform, a new "Setup Guide" option will be available. This feature provides a step-by-step guide to help new users quickly set up their Virtual Assistant.
+After upgrading to v11, a new "Setup Guide" option will be available. This feature provides a step-by-step guide to help new users quickly set up their Virtual Assistant.
 
 #### 11. Implicit Publishing of the App
 
@@ -526,12 +525,12 @@ During the upgrade, the bot goes through an automated publishing process:
 
 1. The current in-development version is published to check for errors.
     * If errors are found, the upgrade is stopped, and the user is notified.
-2. Assuming no errors, the new XO v11 features are added to the bot.
-3. Finally, the upgraded bot, now an XO v11 app with the new capabilities, is published again.
+2. Assuming no errors, the new v11 features are added to the bot.
+3. Finally, the upgraded bot, now a v11 app with the new capabilities, is published again.
 
 <hr>
 ##### Related Links
 
-* [Key Differences - XO v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
+* [Key Differences - v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
 * [Current Limitations](../release-notes/current-limitations.md)
 * [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)
