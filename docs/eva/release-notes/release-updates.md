@@ -8,7 +8,7 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Features**
+<font size="5">New Features</font>
 
 **Guardrails Security Framework**
 
@@ -36,7 +36,7 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../assistant-configuration/orchestration-settings.md)
 
-**Enhancements**
+<font size="5">Feature Enhancements</font>
 
 **Conversation Data Storage Controls**
 
@@ -92,7 +92,7 @@ Eliminated the disruptive minimum resolution warning dialog that previously appe
 
 Administrators can now edit user profile information directly from the user details interface. This enhancement allows admins to modify first and last names efficiently, streamlining the user data management workflow and improving administrative control over user accounts.
 
-**Bug Fixes**
+<font size="5">Bug Fixes</font>
 
 **System Stability Improvements**
 
@@ -104,7 +104,7 @@ Resolved critical chart rendering issues and fixed application crashes that occu
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Features**
+<font size="5">New Features</font>
 
 **New Homepage Experience**
 
@@ -153,7 +153,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 [Learn more :octicons-arrow-right-24:](./../security/data-settings.md)
 
-**Enhancements**
+<font size="5">Feature Enhancements</font>
 
 **Impovised Enterprise Knowledge Agent**:
 
@@ -164,7 +164,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 **Database Migration**: Migrated from Trina DB to ClickHouse to improve application performance when processing attachment-based queries.
 
-**Bug Fixes**
+<font size="5">Bug Fixes</font>
 
 **Search Connector**:
 
@@ -181,7 +181,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Features**
+<font size="5">New Features</font>
 
 **Introducing Workspaces**
 
@@ -208,7 +208,8 @@ Key Features:
 
 [Learn more :octicons-arrow-right-24:](./../custom-agents/agent-options.md)
 
-**Improvements and Bug Fixes**
+
+<font size="5">Feature Enhancements and Bug Fixes</font>
 
 * User Management: Refined user permissions to ensure access is limited to authorized sections and improved template visibility and management for more precise user role-based access control.
 * Email Templates: Fixed formatting inconsistencies to enhance visual consistency and readability.
@@ -223,7 +224,7 @@ Key Features:
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Feature**
+<font size="5">New Feature</font>
 
 **Agentic App Support for Enterprise Knowledge**
 
@@ -239,7 +240,7 @@ Key Benefits:
 
 [Learn more :octicons-arrow-right-24:](./../custom-agents/enterprise-knowledge.md)
 
-**Feature Enhancements**
+<font size="5">Feature Enhancements</font>
 
 * Kore Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Kore's Agent Platform, enabling seamless integration.
 
@@ -247,7 +248,8 @@ Key Benefits:
   
 * Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
 
-**Bug Fixes**
+
+<font size="5">Bug Fixes</font>
 
 * cURL Import Enhancement: Improved the cURL import functionality for agentic apps, allowing users to seamlessly modify request body during the import process.
   
@@ -265,7 +267,7 @@ Key Benefits:
 
 This update includes new features and feature enhancements summarized below.
 
-**New Feature**
+<font size="5">New Feature</font>
 
 **Standard Agentic Apps**
 
@@ -277,7 +279,7 @@ You can now organize multiple AI agents in sequence to automate and execute comp
 You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/autonomous-agent.md)
 
 
-**Feature Enhancements**
+<font size="5">Feature Enhancements</font>
 
 * Bot Response Notification System: Bot agent interaction experience has been enhanced with an intelligent notification system for improved user engagement.
 
