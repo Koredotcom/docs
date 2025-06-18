@@ -35,8 +35,8 @@ For example, *“This is to inform you that your model credits are getting low. 
 Users can easily track their usage and know when to take action. A **Clock** icon on the top right of the page visually represents credit usage. Click to view the following usage summary information:
 
 * The unique **Account ID** for the user or account. Click the **Copy** icon to copy and share this ID with the backend team for further debugging an issue in the account.
-* **Credits**: The **Total allocation** and **remaining** credits available in the account for the usage of models, guardrails, and custom scripts.
-* **Tool Runs**: The **Total allocation** and **remaining** tool runs available in the account for the usage of the tools automation flow.
+* **Credits**: The *Total allocation* and *remaining credits* available in the account for the usage of models, guardrails, and custom scripts.
+* **Tool Runs**: The *Total allocation* and *remaining tool runs* available in the account for the usage of the tools automation flow.
   <img src="../images/account-id-display.png" alt="account id" title="account id" style="border: 1px solid gray; zoom:75%;">
 
 To view detailed information on billing and usage, click **Manage billing**. [Learn more](https://docs.kore.ai/agent-platform/settings/billing/billing-and-usage/){:target="_blank"}. 
