@@ -10,7 +10,7 @@ Steps to access the Usage page:
 2. On the top navigation bar, click **Settings**.
 3. On the left navigation pane, click **Billing** > **Usage**.
 
-The Usage dashboard appears as shown below.
+The **Usage** dashboard appears as shown below.
 
  <img src="../images/access-usage.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
 
@@ -45,7 +45,7 @@ The Usage page displays the following tabs for billing and usage:
 
 The **Overview** tab summarizes expenses and usage patterns across your tools, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
 
-* **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, in the below image, 301 out of 10,000 available tool runs have been utilized, indicating that 3.01% of the total capacity has been consumed.
+* **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, if 45 out of 10,000 available tool runs have been utilized, indicating that 0.45% of the total capacity has been consumed.
 * **Credits**: This field displays the total credit usage, showing the proportion of credits used across models, guardrails, and custom scripts compared to the total available credits. It also includes the credits used to host guardrails. For example, if 212 credits have been used out of a total allocation of 300 credits, indicating that 70.72% of your available model credits have been utilized.
 * **Usage trend**: This visual representation shows tool runs, models, guardrails, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
 
