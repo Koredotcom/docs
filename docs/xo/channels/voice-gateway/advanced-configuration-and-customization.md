@@ -2,10 +2,6 @@
 
 This section delves into more advanced configurations and customization options for your Voice Gateway, including node-level settings and utility functions.
 
-## IVR Properties (To be Added)
-
-## Channel Override Templates (To be Added)
-
 ## Utility Functions in Voice Gateway
 
 Voice Gateway offers two utility libraries to manage call handling and transfers - Agent Utils and Voice Utils. These utilities provide comprehensive control over call flows, including features like SIP transfers, audio control, DTMF handling, and custom header management. Together, they offer flexible options for implementing both complex agent-assisted scenarios and straightforward external transfers.
