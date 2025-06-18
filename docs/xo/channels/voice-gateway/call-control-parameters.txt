@@ -52,104 +52,20 @@ This behavior applies to Session-Level Call Control Parameters.
 
 In this scenario, the system retains the existing **sttProvider** and previously set **sttLanguage**, ensuring that only the new parameter is added without requiring users to re-enter unchanged values.
 
-### Supported Speech Engines
+### Supported Speech Engines (ASR/TTS)
 
 Voice Gateway supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
 
-<table>
-  <tr>
-   <td><strong>Speech Engine</strong>
-   </td>
-   <td><strong>ASR Name</strong>
-   </td>
-   <td><strong>TTS Name</strong>
-   </td>
-   <td><strong>Supported Environment</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Microsoft Azure
-   </td>
-   <td>microsoft
-   </td>
-   <td>microsoft
-   </td>
-   <td>On Premise<br>
-Cloud
-   </td>
-  </tr>
-  <tr>
-   <td>Google
-   </td>
-   <td>google
-   </td>
-   <td>google
-   </td>
-   <td>On-Premise<br>
-Cloud
-   </td>
-  </tr>
-  <tr>
-   <td>Nvidia (Riva)
-   </td>
-   <td>nvidia
-   </td>
-   <td>nvidia
-   </td>
-   <td>On-Premise
-   </td>
-  </tr>
-  <tr>
-   <td>Amazon (AWS)
-   </td>
-   <td>aws
-   </td>
-   <td>polly
-   </td>
-   <td>Cloud
-   </td>
-  </tr>
-  <tr>
-   <td>Deepgram
-   </td>
-   <td>deepgram
-   </td>
-   <td>deepgram
-   </td>
-   <td>Cloud
-   </td>
-  </tr>
-  <tr>
-   <td>Elevenlabs
-   </td>
-   <td>Not Supported
-   </td>
-   <td>elevenlabs
-   </td>
-   <td>Cloud
-   </td>
-  </tr>
-  <tr>
-   <td>Whisper
-   </td>
-   <td>Not Supported
-   </td>
-   <td>whisper
-   </td>
-   <td>Cloud
-   </td>
-  </tr>
-  <tr>
-   <td>Ami voice
-   </td>
-   <td>amivoice
-   </td>
-   <td>
-   </td>
-   <td>Cloud
-   </td>
-  </tr>
-</table>
+| **Speech Engine**    | **ASR Name**     | **TTS Name**    | **Supported Environment**     |
+|----------------------|------------------|------------------|-------------------------------|
+| Microsoft Azure      | microsoft         | microsoft         | On Premise, Cloud             |
+| Google               | google            | google            | On-Premise, Cloud             |
+| Nvidia (Riva)        | nvidia            | nvidia            | On-Premise                    |
+| Amazon (AWS)         | aws               | polly             | Cloud                         |
+| Deepgram             | deepgram          | deepgram          | Cloud                         |
+| Elevenlabs           | Not Supported     | elevenlabs        | Cloud                         |
+| Whisper              | Not Supported     | whisper           | Cloud                         |
+| Ami voice            | amivoice          |                   | Cloud                         |
 
 ### Common ASR Parameters
 

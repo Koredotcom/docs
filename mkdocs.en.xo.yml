@@ -154,10 +154,9 @@ nav:
             - Voice Gateway: 
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
-                - Call Control Parameters: channels/voice-gateway/call-control-parameters.md
+                - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
                 - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
                 - Utility Functions: channels/voice-gateway/utility-functions.md
-                - Common Scenarios: channels/voice-gateway/common-configuration-scenarios.md
                 - SIP Trunk: channels/voice-gateway/sip-trunk.md
                 - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/voice-gateway/troubleshooting.md
