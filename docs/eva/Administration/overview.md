@@ -10,8 +10,8 @@ The  Admin Console of **AI for Work** is a centralized management interface for 
 To sign up for an Admin account, you must meet the following requirements:
 
 * A valid email address.
-* A validated Kore.ai user account. 
-* Authorization to control the Admin account. 
+* A validated user account.
+* Authorization to control the Admin account.
 
 ## Access Admin Console
 

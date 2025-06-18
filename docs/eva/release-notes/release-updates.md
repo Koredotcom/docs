@@ -14,7 +14,7 @@ This update includes new features, feature enhancements, and bug fixes summarize
 
 Introducing **Guardrails**, a robust security framework designed for enterprise-level AI interactions. This new feature automatically safeguards sensitive data and enforces content policies, providing comprehensive data protection and content filtering. Ensure compliance and security across all your AI workflows with Guardrails.
 
-Key Benefits
+Key benefits
 
 * Protect sensitive customer data from exposure in logs and analytics.
 * Meet data protection requirements with automated  PII (personally identifiable information) detection and handling.
@@ -27,7 +27,7 @@ Key Benefits
 
 Introducing **Orchestration Settings**, a powerful pipeline management system that gives you complete control over your AI query processing workflow. This feature enables you to customize and optimize your AI interactions by selectively activating only the components you need, ensuring efficient resource utilization.
 
-Key Benefits
+Key benefits
 
 * Activate only required pipeline components to optimize performance and reduce processing overhead.
 * Eliminate unnecessary AI processing steps while maintaining full functionality.

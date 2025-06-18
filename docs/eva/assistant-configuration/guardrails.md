@@ -66,7 +66,7 @@ The Ban Topics system offers a flexible and user-friendly configuration manageme
 * **Custom Prompt Development:** The Ban Topics system offers the flexibility to create custom prompts, acknowledging that standard solutions may not always suffice. This capability allows organizations to establish detailed and context-aware content limitations, offering methods for tackling specific compliance needs or internal regulations.
 * **Enable/Disable Functionalities:** Administrators can easily enable or disable both built-in and custom prompt content restrictions as needed for organizational changes or testing.
 
-### Testing Framework
+### Testing Guardrail
 
 The integrated testing suite provides validation and performance analysis for all guardrail configurations. Testing involves using an isolated environment to conduct full or targeted validation of PII rules and banned topics. Test inputs can be managed manually, AI-driven, or through batch tests and boundary condition testing. Test outcomes are analyzed through individual rule analysis, impact status, process duration, and output. Additionally, users can preview data sanitization visually.
 
