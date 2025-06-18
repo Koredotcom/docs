@@ -156,7 +156,6 @@ nav:
               - Advanced Topics:
                 - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
                 - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
-                - Utility Functions: channels/voice-gateway/utility-functions.md
                 - SIP Trunk: channels/voice-gateway/sip-trunk.md
                 - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
                 - Troubleshooting: channels/voice-gateway/troubleshooting.md
