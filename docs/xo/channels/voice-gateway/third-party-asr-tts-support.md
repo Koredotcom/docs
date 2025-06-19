@@ -9,7 +9,7 @@ Kore supports the following third-party service providers for [ASR services](../
 | Google                | [Google Cloud](https://cloud.google.com/speech-to-text)                                              | ✅                            | ✅                      |
 | Azure                 | [Azure AI Services](https://azure.microsoft.com/en-us/products/ai-services/ai-speech/#Features)      | ✅                            | ✅                      |
 | Deepgram              | [Speech to text](https://deepgram.com/product/transcription)                                         | ✅                            | ❌                      |
-| Advanced Media        | [AmiVoice](https://www.advanced-media.co.jp/english/aboutus/amivoice)                                | ✅                            | ✅                      |
+| Advanced Media        | [AmiVoice](https://www.advanced-media.co.jp/english/aboutus/amivoice)                                | ❌                            | ✅                      |
 | Amazon Transcribe     | [Amazon Transcribe](https://aws.amazon.com/pm/transcribe/)                                           | ✅                            | ❌                      |
 | AmiVoice              | [AmiVoice Cloud Platform](https://acp.amivoice.com/amivoice/)                                        | ✅                            | ✅                      |
 
