@@ -502,7 +502,7 @@ This action lets you undeploy the script from all its deployed locations on the 
 <p><ul><li>An undeployed script can be redeployed. <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#redeploy-script" target="_blank">Learn more</a>.</li>
 <li>Once a script is redeployed, its data and configurations are restored. You can edit the script name and other parameters in the <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#import-and-deploy-a-custom-script" target="_blank">deployment flow</a>.</li>
 <li>The message “<i>No custom scripts deployed yet</i>” is displayed for the <b>Function</b> node if there are no deployed scripts.</li>
-<li>A script does not appear in the <b>Script</b> dropdown list for the <b>Function</b> node as long as its status is not set to “<i>Deployed</i>.”</li>
+<li>A script does not appear in the <b>Script</b> dropdown list for the <b>Function</b> node if it is not deployed.</li>
 </ul></p></div>
 
 
