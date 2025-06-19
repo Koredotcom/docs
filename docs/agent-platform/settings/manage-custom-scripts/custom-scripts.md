@@ -4,7 +4,8 @@ The Agent Platform now allows admins to import, deploy, and manage custom script
 
 A powerful script deployment wizard enables users to easily upload, configure, and deploy custom scripts in isolated containers. By leveraging container isolation, this feature enhances security while providing flexibility in configuring runtime and scaling settings.
 
-Once deployed, these scripts can be run via the [API node’s](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/api-node/){:target="_blank"} endpoint when bulding the tool flow.
+Once deployed, these scripts can be run via the [API node’s](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/api-node/){:target="_blank"} endpoint when bulding the tool flow. Additionally, the custom scripts can be embedded in the [Function node](){:target="_blank"} of the tool automation flow and executed when the node flow is run.
+
 
 On the **Manage Custom Scripts** page, admins can upload a complete script project file, including all definitions and logic, without writing any code in the function node. This allows them to seamlessly port their code or project from a local system into the product and start using it immediately.
 
@@ -248,6 +249,16 @@ The following message is displayed when the script deployment progresses, and th
 Once the script is deployed successfully, the following message is displayed, and the status changes to “*Deployed*”. 
 <img src="../images/deployed-success.png" alt="deployed success" title="deployed success" style="border: 1px solid gray; zoom:75%;">
 
+**Email Notification**
+
+After a custom script is deployed, a confirmation email with the subject line "*Custom script deployed successfully - API Endpoint Available*" is sent to the admin. The following information  for the account is also displayed:
+
+* Credits remaining for the account 
+
+* Total allocation
+
+   <img src="../images/deployment-email.png" alt="deployed success" title="deployed success" style="border: 1px solid gray; zoom:75%;">
+
 ## View Deployed Scripts and their Statuses
 
 Once a script is deployed or saved as a draft, a table listing all scripts and their statuses becomes available on the **Manage Custom Scripts** page. This allows users to monitor deployment progress and take necessary actions as follows:
@@ -487,9 +498,12 @@ To see when **Export** is available, please refer to the table [here](../manage-
 This action lets you undeploy the script from all its deployed locations on the platform.
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Key Considerations</p>
 <p><ul><li>An undeployed script can be redeployed. <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#redeploy-script" target="_blank">Learn more</a>.</li>
-<li>Once a script is redeployed, its data and configurations are restored. You can edit the script name and other parameters in the <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#import-and-deploy-a-custom-script" target="_blank">deployment flow</a>.</li></ul></p></div>
+<li>Once a script is redeployed, its data and configurations are restored. You can edit the script name and other parameters in the <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/#import-and-deploy-a-custom-script" target="_blank">deployment flow</a>.</li>
+<li>The message “<i>No custom scripts deployed yet</i>” is displayed for the <b>Function</b> node if there are no deployed scripts.</li>
+<li>A script does not appear in the <b>Script</b> dropdown list for the <b>Function</b> node as long as its status is not set to “<i>Deployed</i>.”</li>
+</ul></p></div>
 
 
 To undeploy, follow the steps below on the **Manage Custom Scripts** page:
@@ -509,6 +523,16 @@ A success message is displayed, and the script’s status changes to <b>Ready to
 
 
 To see when **undeploy** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}. 
+
+**Email Notification**
+
+After a custom script is undeployed, a confirmation email with the subject line "*Your custom script has been undeployed successfully*" is sent to the admin. The following information  for the account is also displayed:
+
+* Credits remaining for the account 
+
+* Total allocation
+
+   <img src="../images/undeploy-email.png" alt="undeployed success" title="undeployed success" style="border: 1px solid gray; zoom:75%;">
 
 #### Delete Script
 
