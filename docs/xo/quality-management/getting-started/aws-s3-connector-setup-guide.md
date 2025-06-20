@@ -145,9 +145,7 @@ Complete the following checklist before starting the configuration:
 
     !!! note
 
-        For mono recordings, you must provide the following two separate audio files:
-
-**IMPORTANT**: For mono recordings, you must provide the following two separate audio files:
+        For mono recordings, you must have two separate audio files.
 
 1. **Supported** (Two clean mono files)
 
@@ -155,7 +153,7 @@ Complete the following checklist before starting the configuration:
 
 * └── conv-123456-customer.wav (customer audio only)`
 
-**Not Supported** (Single mixed mono file)  
+2. **Not Supported** (Single mixed mono file)  
 
 * └── conv-123456-mixed.wav (both speakers mixed)
 
@@ -173,13 +171,13 @@ Single mixed mono files significantly reduce transcription accuracy without prop
 
 #### AWS Requirements
 
-Your AWS environment needs:
+Your AWS environment must have:
 
-* **S3 Bucket**: With an organized folder structure for audio/chat files.
-* **Authentication**: Access keys or an IAM role with read permissions
+* **S3 Bucket**: An organized folder structure for audio/chat files.
+* **Authentication**: Access keys or an IAM role with read permissions.
 * **Network Access**: HTTPS URLs for all audio files.
 
-**Required IAM Permissions**:
+**Required IAM Permissions**
 
 ```json
 
@@ -200,8 +198,9 @@ Your AWS environment needs:
 
 ### Platform Prerequisites
 
-* **User Management**: All agents/supervisors onboarded with valid email addresses
-* **Queue Configuration**: Service queues are pre-configured for mapping
+* **User Management**: All agents/supervisors onboarded with valid email addresses.
+
+* **Queue Configuration**: Service queues are pre-configured for mapping.
 
 ## Configuration Schemas
 
@@ -303,7 +302,7 @@ Your AWS environment needs:
    </td>
    <td>String
    </td>
-   <td><a href="https://s3.amazonaws.com/bucket/conv-123456.wav">https://s3.amazonaws.com/bucket/conv-123456.wav</a>
+   <td><a href="https://s3.amazonaws.com/bucket/conv-123456.wav</a>
    </td>
    <td>HTTPS accessible URL
    </td>
@@ -469,7 +468,7 @@ Your AWS environment needs:
    </td>
    <td>String
    </td>
-   <td><a href="https://s3.amazonaws.com/bucket/conv-123456-agent.wav">https://s3.amazonaws.com/bucket/conv-123456-agent.wav</a>
+   <td><a href="https://s3.amazonaws.com/bucket/conv-123456-agent.wav</a>
    </td>
    <td>URL to agent stream recording file
    </td>
@@ -480,8 +479,8 @@ Your AWS environment needs:
    <td>Required
    </td>
    <td>String
-   </td>
-   <td><a href="https://s3.amazonaws.com/bucket/conv-123456-agent.wav">https://s3.amazonaws.com/bucket/conv-123456-agent.wav</a>
+   </td>   
+   <td><a href="https://s3.amazonaws.com/bucket/conv-123456-agent.wav</a>
    </td>
    <td>URL to customer stream recording file
    </td>
@@ -760,9 +759,10 @@ Your AWS environment needs:
     }
   ]
 }
+
 ```
 
-#### Chat Scripts (Live Chat Interactions):
+#### Chat Scripts (Live Chat Interactions)
 
 **Configuration**: `recordingType = transcription and channelType = chat`
 
@@ -891,11 +891,15 @@ Your AWS environment needs:
   </tr>
 </table>
 
-    **Note**: Chat scripts include real-time messaging interactions from various platforms, including web chat, WhatsApp, Facebook Messenger, and so on.
+    !!! Note
+
+        Chat scripts include real-time messaging interactions from various platforms, including web chat, WhatsApp, Facebook Messenger, and so on.
 
 ### JSON Transcript Schema
 
 #### Chat Transcript Format
+
+```json
 
 {
   "1": {
@@ -909,7 +913,10 @@ Your AWS environment needs:
     "text": "I need help with my account balance.",
     "timestamp": 1749562253142,
     "userId": "customer_12345"
-  },
+  }
+}
+
+```
 
 **Required Fields**:
 
@@ -918,7 +925,9 @@ Your AWS environment needs:
 * `timestamp`: Unix timestamp in milliseconds
 * `userId`: Participant identifier
 
-**Note**: For conversations involving transfers across agents and queues, use the `queueId `of the queue where the conversation ended, and the `agentEmail `of the agent who terminated the conversation. 
+    !!! Note
+
+        For conversations involving transfers across agents and queues, use the `queueId` of the queue where the conversation ended, and the `agentEmail` of the agent who terminated the conversation.
 
 ## Step-by-Step Configuration
 
@@ -926,136 +935,122 @@ Your AWS environment needs:
 
 #### Option 1: Unified Path Structure
 
-s3://your-bucket/conversations/
-
-├── metadata.csv                    # All interaction metadata
-
-├── audio/
-
-│   ├── conv-123456.wav            # Stereo recording
-
-│   ├── conv-123457-agent.wav      # Mono - agent only
-
-│   ├── conv-123457-customer.wav   # Mono - customer only  
-
-│   └── conv-123458.wav            # Stereo recording
-
-├── chat/
-
-│   ├── chat-123459.json           # Chat transcript
-
-│   └── chat-123460.json           # Chat transcript
-
-└── test.csv                       # Required for validation
+<img src="../getting-started/images/unified-path-structure.png" alt="unified path" title="unified path" style="border: 1px solid gray; zoom:60%;">
 
 #### Option 2: Separate Paths
 
-s3://your-bucket/
-
-├── voice-interactions/
-
-│   ├── voice_metadata.csv
-
-│   ├── recordings/
-
-│   │   ├── conv-123456.wav        # Stereo
-
-│   │   ├── conv-123457-agent.wav  # Mono agent
-
-│   │   └── conv-123457-customer.wav # Mono customer  
-
-│   └── test.csv
-
-└── chat-interactions/
-
-    ├── chat_metadata.csv
-
-    ├── transcripts/
-
-    │   ├── chat-123459.json
-
-    │   └── chat-123460.json
-
-    └── test.csv
+<img src="../getting-started/images/separate-path-structure.png" alt="separate path" title="separate path" style="border: 1px solid gray; zoom:60%;">
 
 ### Validation Checkpoint (Data Preparation)
 
 **Verify your S3 setup**:
 
-* All audio files are accessible via HTTPS URLs
-* CSV files contain the required fields with correct headers
-* Mono recordings have separate agent/customer files
-* The `test.csv` file exists in each configured folder before the configuration
-* File sizes under 50MB each
+* All audio files are accessible via HTTPS URLs.
+
+* CSV files contain the required fields with correct headers.
+
+* Mono recordings have separate agent/customer files.
+
+* The `test.csv` file exists in each configured folder before the configuration.
+
+* File sizes under 50MB each.
 
 ### Step 2: Platform Configuration
 
-1. Navigate to **Connector Setup. **
+1. Navigate to **Connector Setup**.
+
 2. Navigate to **Contact Center AI** > **Quality AI** > **Configure** > **Connectors**.
-3. Click **+ Add Connector** > **Amazon S3** > **Connect. **
-4. Configure the following **Basic Configuration. \
-**
-    * **Name**: Enter a descriptive connector name
-    * **AWS Region**: Select your S3 bucket region
-    * **Auth Type**: Choose the authentication method
-5. Configure the **Authentication Setup (For Access Keys)**.** \
-**
+
+3. Click **+ Add Connector** > **Amazon S3** > **Connect**.
+
+4. Configure the following **Basic Configuration**. 
+
+    * **Name**: Enter a descriptive connector name.
+
+    * **AWS Region**: Select your S3 bucket region.
+
+    * **Auth Type**: Choose the authentication method.
+
+5. Configure the **Authentication Setup (For Access Keys)**.
+
     * Enter **Access key **and **Secret key**.
+
 6.  Configure the **IAM Role**. 
-    * Enter the IAM Role ARN 
-7. Configure the following two **Folder Paths. **
-1. **Unified Path:**
+    * Enter the IAM Role ARN. 
+
+7. Configure the following two **Folder Paths. 
+
+   a. **Unified Path:**
+
     * Unified Voice and Chat Path 
-    * **Folder Path**: *s3://your-bucket/conversations/*
-2. **Separate Paths**:
-    * Separate Voice and Chat Path 
-    * **Voice Path**: *s3://your-bucket/voice-interactions/*
-    * **Chat Path**: *s3://your-bucket/chat-interactions/*
+
+    * **Folder Path**: *s3://your-bucket/conversations/
+
+   b. **Separate Paths**:
+
+    * Separate Voice and Chat Path
+
+    * **Voice Path**: *s3://your-bucket/voice-interactions/
+
+    * **Chat Path**: *s3://your-bucket/chat-interactions/
 
 ### Validation Checkpoint (Connection Setup)
 
 **Test your configuration**:
 
 1. Click the **Test** tab in the connector configuration.
+
 2. Expected results:
-    * **Authentication**: Connected successfully
-    * **File Path Access**: S3 bucket accessible
-    * **File Format**: CSV format validated
-    * **Metadata Validation**: Required fields confirmed
 
-**If any checks fail**:
+    * **Authentication**: Connected successfully.
 
-* **Authentication**: Verify credentials and IAM permissions
-* **File Access**: Check bucket name, region, and folder paths, and ensure file URLs are accessible
-* **Format/Metadata**: Ensure the `test.csv` exists with proper structure, and the column headers and timestamps should match the specified formats 
+    * **File Path Access**: S3 bucket accessible.
+
+    * **File Format**: CSV format validated.
+
+    * **Metadata Validation**: Required fields confirmed.
+
+    **If any checks fail**:
+
+    * **Authentication**: Verify credentials and IAM permissions.
+
+    * **File Access**: Check bucket name, region, and folder paths, and ensure file URLs are accessible.
+
+    * **Format/Metadata**: Ensure the `test.csv` exists with proper structure, and the column headers and timestamps should match the specified formats. 
 
 ### Step 3: Queue Mapping & Scheduling
 
-1. **Configure Queue Mapping \
-**
-    1. Navigate to the **Queue** tab.
-    2. Map CSV `queueId `values to **Quality AI Express **queues.
-    3. Ensure exact string matches.
-2. **Set Processing Schedule \
-**
-    4. Navigate to the **Schedule** tab.
+1. **Configure Queue Mapping**
+
+    a. Navigate to the **Queue** tab.
+
+    b. Map CSV `queueId `values to **Quality AI Express** queues.
+
+    c. Ensure exact string matches.
+
+2. **Set Processing Schedule**
+
+    a. Navigate to the **Schedule** tab.
+
         * **Interval**: Choose frequency (minutes/hours/days). 
+
         * **Start Time**: Set initial run time (UTC timezone).
-    5. Click **Save** to activate.
+
+    b. Click **Save** to activate.
 
 ### Validation Checkpoint (Final Configuration)
 
-**Verify complete setup**:
+**Verify Complete Setup**:
 
-* Queue mappings saved and validated
-* Processing schedule configured and active
-* The first ingestion job appears in the **Log** tab
-* No error messages in processing logs
+* Queue mappings saved and validated.
+* Processing schedule configured and active.
+* The first ingestion job appears in the **Log** tab.
+* No error messages in processing logs.
 
-**Success indicators**:
+**Success Indicators**:
 
-* Conversations appear in **Quality AI Express **dashboards
-* Analytics data populates for ingested interactions
+* Conversations appear in **Quality AI Express dashboards**.
+* Analytics data populates for ingested interactions.
 
 ## Troubleshooting Guide
 
@@ -1133,8 +1128,8 @@ s3://your-bucket/
   </tr>
 </table>
 
-### File AccessAcces
+### File Access
 
-### Performance Expectations
+#### Performance Expectations
 
 * 3-5 minutes per conversation, depending on conversation duration, ASR transcription latency (for voice), and LLM response latency.
