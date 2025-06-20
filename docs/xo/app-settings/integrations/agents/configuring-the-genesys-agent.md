@@ -248,6 +248,11 @@ Dynamic Queue Handling in Genesys Cloud enables organizations to intelligently r
 
 To enable dynamic queue handling in Genesys Cloud, the queue name should be included as part of the metadata transferred from your platform during the agent hand-off. This queue name can be dynamically set by the developer based on the specific use case or routing logic required for each interaction.
 
+!!! note
+
+    The Entity node supports dynamic queue names with underscores (_) only when Auto Correct is off. We recommend either avoiding underscores in the queue name or turning Auto-Correct off in the Entity node.
+
+
 Follow These Steps:
 
 

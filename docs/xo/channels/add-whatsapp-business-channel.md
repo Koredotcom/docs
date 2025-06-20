@@ -425,12 +425,11 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 
     <img src="../images/enable-channel-netcore.png" alt="enable netcore" title="enable netcore" style="border: 1px solid gray; zoom:75%;">
 
-
 The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
 
 ## Adding the WhatsApp Channel Using Meta Cloud API
 
-This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account. 
+This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account.
 
 To enable WhatsApp integration on the Kore.ai Platform, you must provide the WhatsApp phone number and API key in the Channel Configurations section and the Platform’s Webhook URL for the API callback in the CPaaS portal.
 
@@ -439,11 +438,6 @@ To enable WhatsApp integration on the Kore.ai Platform, you must provide the Wha
 - Seamless management of templates, catalogs, conversational flows, and payments.
 - Simplified account linking and configuration through Meta's developer platform.
 - Enhanced operational efficiency and customer satisfaction.
-
-### Prerequisites
-
-- Active WhatsApp Business account for your enterprise.
-- Active CPaSS account with WhatsApp enabled.
 
 ### Configuration Steps
 
@@ -526,7 +520,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 3. Click **Verify and save**.
 4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle button.
 
-    !!! note: 
+    !!! note:
         
         Kore recommends you to select the latest version of the messaging app while subscribing.
         

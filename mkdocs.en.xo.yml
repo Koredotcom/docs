@@ -464,6 +464,9 @@ nav:
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
+      - Quality Express:     
+        - Quality AI Express: quality-management/getting-started/quality-ai-express.md
+        - AWS S3 Connector Setup Guide: quality-management/getting-started/aws-s3-connector-setup-guide.md      
       - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
       - Analyze:
         - Dashboard:
