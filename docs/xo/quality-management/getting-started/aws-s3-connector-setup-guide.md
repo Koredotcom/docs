@@ -131,14 +131,19 @@ Complete the following checklist before starting the configuration:
 ### Field Name Key Differences by Type
 
 * **Stereo Voice**: Uses `recordingUrl`, `agentChannel`, `customerChannel`.
+
 * **Mono Voice**: Uses `agentRecordings` + `customerRecordings` (both required in the same row).
+
 * **Voice Transcripts**: Uses `transcriptUrl`.
+
 * **Chat Scripts**: Uses `chatScriptUrl`.
+
 * **Provider Field**: All types use `asrProvider` (not `asProvider`).
 
 ### Authentication Methods
 
 * **Access Keys**: Simple setup, good for single integrations.
+
 * **IAM Roles**: Enterprise-grade security, recommended for production.
 
 ## Mono Recording Requirements (Critical)
@@ -149,13 +154,13 @@ Complete the following checklist before starting the configuration:
 
 1. **Supported** (Two clean mono files)
 
-* ├── conv-123456-agent.wav (agent audio only)
+    * ├── conv-123456-agent.wav (agent audio only)
 
-* └── conv-123456-customer.wav (customer audio only)`
+    * └── conv-123456-customer.wav (customer audio only)`
 
 2. **Not Supported** (Single mixed mono file)  
 
-* └── conv-123456-mixed.wav (both speakers mixed)
+    * └── conv-123456-mixed.wav (both speakers mixed)
 
 **Impact of Mixed Mono Audio on Accuracy** 
 
@@ -163,7 +168,7 @@ Single mixed mono files significantly reduce transcription accuracy without prop
 
 ### Data Flow Architecture
 
-<img src="../getting-started/images/architecture.png" alt="architecture" title="architecture" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/architecture.png" alt="architecture" title="architecture" style="border: 1px solid gray; zoom:60%;">
 
 ## Setup Process
 
@@ -891,9 +896,9 @@ Your AWS environment must have:
   </tr>
 </table>
 
-    !!! Note
+!!! Note
 
-        Chat scripts include real-time messaging interactions from various platforms, including web chat, WhatsApp, Facebook Messenger, and so on.
+    Chat scripts include real-time messaging interactions from various platforms, including web chat, WhatsApp, Facebook Messenger, and so on.
 
 ### JSON Transcript Schema
 
@@ -925,9 +930,9 @@ Your AWS environment must have:
 * `timestamp`: Unix timestamp in milliseconds
 * `userId`: Participant identifier
 
-    !!! Note
+  !!! Note
 
-        For conversations involving transfers across agents and queues, use the `queueId` of the queue where the conversation ended, and the `agentEmail` of the agent who terminated the conversation.
+      For conversations involving transfers across agents and queues, use the `queueId` of the queue where the conversation ended, and the `agentEmail` of the agent who terminated the conversation.
 
 ## Step-by-Step Configuration
 
@@ -935,11 +940,11 @@ Your AWS environment must have:
 
 #### Option 1: Unified Path Structure
 
-<img src="../getting-started/images/unified-path-structure.png" alt="unified path" title="unified path" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/unified-path-structure.png" alt="unified path" title="unified path" style="border: 1px solid gray; zoom:60%;">
 
 #### Option 2: Separate Paths
 
-<img src="../getting-started/images/separate-path-structure.png" alt="separate path" title="separate path" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/separate-path-structure.png" alt="separate path" title="separate path" style="border: 1px solid gray; zoom:60%;">
 
 ### Validation Checkpoint (Data Preparation)
 
@@ -982,17 +987,17 @@ Your AWS environment must have:
 
    a. **Unified Path:**
 
-    * Unified Voice and Chat Path 
+      * Unified Voice and Chat Path 
 
-    * **Folder Path**: *s3://your-bucket/conversations/
+      * **Folder Path**: *s3://your-bucket/conversations/
 
    b. **Separate Paths**:
 
-    * Separate Voice and Chat Path
+      * Separate Voice and Chat Path
 
-    * **Voice Path**: *s3://your-bucket/voice-interactions/
+     * **Voice Path**: *s3://your-bucket/voice-interactions/
 
-    * **Chat Path**: *s3://your-bucket/chat-interactions/
+      * **Chat Path**: *s3://your-bucket/chat-interactions/
 
 ### Validation Checkpoint (Connection Setup)
 
