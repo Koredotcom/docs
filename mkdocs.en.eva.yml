@@ -167,7 +167,6 @@ nav:
     - Security: 
       - SSO: security/sso.md
       - Domain Management: security/domain-management.md
-      - Connector: security/kore-connector.md
       - Service Accounts: security/service-accounts.md
       - Data Settings: security/data-settings.md
     - Audit Log:
