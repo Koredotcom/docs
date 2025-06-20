@@ -982,7 +982,7 @@ json
 
 5. Configure the **Authentication Setup (For Access Keys)**.
 
-    * Enter **Access key ** and **Secret key**.
+    * Enter **Access key** and **Secret key**.
 
 6.  Configure the **IAM Role**. 
     * Enter the IAM Role ARN. 
