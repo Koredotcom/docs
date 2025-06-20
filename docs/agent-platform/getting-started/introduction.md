@@ -1,6 +1,6 @@
-# All-new Kore.ai Agent Platform
+# Introduction to Kore.ai Agent Platform
 
-We are excited to announce the all-new Kore.ai Agent Platform, our enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
+The all-new Kore.ai Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
 
 The Agent Platform supports two distinct paradigms for building intelligent AI applications:
 

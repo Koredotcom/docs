@@ -140,7 +140,7 @@ nav:
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up Agents: ai-agents/create-agent.md
+      - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
     - Knowledge:
@@ -213,8 +213,9 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
-    - Integrations:
-      - AI for Service (XO): ai-agents/integrate-with-xo.md
+    - Business Solutions:
+      - AI for Service (XO): ai-agents/ai-for-service.md
+      - AI for Work: ai-agents/ai-for-work.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
@@ -244,7 +245,7 @@ nav:
         - External Models: 
           - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
           - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
-      - Supported Models: ai-agents/agentic-apps/supported-models.md        
+      - Supported Models: models/supported-models.md        
     - Prompts:
       - About Prompt Studio: prompts/overview.md
       - Accessing Prompt Studio: prompts/accessing-prompt-studio.md

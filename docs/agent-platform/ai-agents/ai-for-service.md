@@ -1,23 +1,23 @@
-# Integrating AI for Service with Agent Platform
+# AI for Service with Agent Platform
 
-AI for Service (XO) is a no-code virtual assistant builder that delivers personalized, multilingual conversations across channels. Agent Platform provides end-to-end development, deployment, and advanced multi-agent orchestration for scalable agentic apps at the enterprise level. 
+AI for Service is a no-code virtual assistant builder that delivers personalized, multilingual conversations across channels. Agent Platform offers comprehensive end-to-end development, deployment, and advanced multi-agent orchestration for scalable agentic applications at the enterprise level.
 
-Agent Platform seamlessly integrates with the XO platform to create a powerfully unified solution for service scenarios. By deploying agentic apps through XO, organizations gain the combined advantages of XO's conversation optimization capabilities and the Agent Platform's sophisticated multi-agent orchestration. The XO platform's channel management, conversation analytics, and journey optimization perfectly complement the Agent Platform's agentic capabilities, creating an end-to-end solution that automates complex service interactions and continuously optimizes them based on real-time performance data. Organizations leveraging both platforms together can rapidly deploy intelligent service solutions that evolve and improve over time, driving higher customer satisfaction while reducing operational costs.
+Agent Platform works seamlessly with AI for Service to create a powerful, unified solution for service scenarios. By deploying agentic apps through AI for Service, organizations gain the combined advantages of AI for Service's conversation optimization capabilities and Agent Platform's sophisticated multi-agent orchestration. AI for Service's channel management, conversation analytics, and journey optimization perfectly complement Agent Platform's agentic capabilities, creating an end-to-end solution that automates complex service interactions and continuously optimizes them based on real-time performance data. Organizations leveraging both platforms together can rapidly deploy intelligent service solutions that evolve and improve over time, driving higher customer satisfaction while reducing operational costs.
 
 
 ## Prerequisites
 
-* XO and Agent Platform applications must be in the same workspace for integration.
-* Ensure that the relevant channel flows (e.g., chat, voice) are set up in XO.
+* AI for Service and Agent Platform applications must be in the same workspace for connection.
+* Ensure that the relevant channel flows (e.g., chat, voice) are set up in AI for Service.
 
 
-## Integration Steps
+## Configure an Agentic App in AI for Service
 
-Integration is achieved by configuring the **Automation Node** within the Experience Flow of the desired communication channel.
+Users can create or select an existing app and configure it using the **Automation Node** within an Experience Flow of the desired communication channel in AI for Service.
 
 **Steps**:
 
-1. Navigate to the **Start Flows** in the XO application.
+1. Navigate to the **Start Flows** in the AI for Service application.
 
     For every interaction across a channel, a welcome flow is designed that defines the end-to-end customer experience for each communication channel.  Go to the welcome flow of the desired communication channel.  ![alt_text](./images/integration/xo/flows.png "image_tooltip")
 
@@ -28,10 +28,10 @@ Integration is achieved by configuring the **Automation Node** within the Experi
 
 3. **Configure the Automation Node.**
 
-    Open the settings for the Automation Node. Under Autonomy Level for Automation AI, select **Full Autonomy.** This setting enables integration with the Agentic Apps in the same workspace as that of the XO application. The Agentic Apps offer fully autonomous AI Agents that adapt dynamically to the user's interactions.  ![alt_text](./images/integration/xo/autonomy.png "image_tooltip")
+    Open the settings for the Automation Node. Under Autonomy Level for Automation AI, select **Full Autonomy.** This setting enables integration with the Agentic Apps in the same workspace as that of AI for Service. The Agentic Apps offer fully autonomous AI Agents that adapt dynamically to the user's interactions.  ![alt_text](./images/integration/xo/autonomy.png "image_tooltip")
 
 
-    Provide the Agentic App Configurations:
+    Provide the following Agentic App Configurations:
 
     1. **Agentic App**: Select the app to be integrated that will handle all the interactions on the given communication channel. The dropdown lists all the existing Agentic Apps in the same workspace. You can also create an Agentic App from scratch. 
 
