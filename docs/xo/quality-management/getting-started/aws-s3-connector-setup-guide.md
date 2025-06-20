@@ -148,19 +148,19 @@ Complete the following checklist before starting the configuration:
 
 ## Mono Recording Requirements (Critical)
 
-    !!! note
+!!! note
 
-        For mono recordings, you must have two separate audio files.
+    For mono recordings, you must have two separate audio files.
 
 1. **Supported** (Two clean mono files)
 
-    * ├── conv-123456-agent.wav (agent audio only)
+    * ``` conv-123456-agent.wav ``` (agent audio only)
 
-    * └── conv-123456-customer.wav (customer audio only)`
+    * ``` conv-123456-customer.wav ```(customer audio only)`
 
 2. **Not Supported** (Single mixed mono file)  
 
-    * └── conv-123456-mixed.wav (both speakers mixed)
+    * ``` conv-123456-mixed.wav ``` (both speakers mixed)
 
 **Impact of Mixed Mono Audio on Accuracy** 
 
@@ -179,13 +179,15 @@ Single mixed mono files significantly reduce transcription accuracy without prop
 Your AWS environment must have:
 
 * **S3 Bucket**: An organized folder structure for audio/chat files.
+
 * **Authentication**: Access keys or an IAM role with read permissions.
+
 * **Network Access**: HTTPS URLs for all audio files.
 
 **Required IAM Permissions**
 
-```json
-
+json
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -376,7 +378,7 @@ Your AWS environment must have:
 
 #### Mono Voice Recordings
 
-**Configuration**: `recordingType = mono and channelType = voice`
+**Configuration**: `recordingType = mono` and `channelType = voice`
 
 **Critical**: Mono recordings require **two separate CSV entries** and **two audio files** per conversation.
 
@@ -542,7 +544,7 @@ Your AWS environment must have:
 
 #### Voice Transcripts (Pre-transcribed Audio)
 
-**Configuration**: `recordingType = transcription and channelType = voice`
+**Configuration**: `recordingType = transcription` and `channelType = voice`
 
 **Use Case**: When you have pre-transcribed audio files and need to skip the speech-to-text processing.
 
@@ -681,16 +683,17 @@ Your AWS environment must have:
   </tr>
 </table>
 
-    !!! Note
+!!! note
 
-        This format is for organizations that have already transcribed their voice recordings and need to import the text for analysis without re-processing the audio.
+    This format is for organizations that have already transcribed their voice recordings and need to import the text for analysis without re-processing the audio.
+
 
 ### JSON Transcript Schema
 
 #### Voice Transcript Format
 
-```json
-
+json
+```
 {
   "recognizedPhrases": [
     {
@@ -736,13 +739,12 @@ Your AWS environment must have:
     }
   ]
 }
-
 ```
 
 **Required Fields**:
 
-```json
-
+json
+```
 {
   "recognizedPhrases": [
     {
@@ -764,12 +766,11 @@ Your AWS environment must have:
     }
   ]
 }
-
 ```
 
 #### Chat Scripts (Live Chat Interactions)
 
-**Configuration**: `recordingType = transcription and channelType = chat`
+**Configuration**: `recordingType = transcription` and `channelType = chat`
 
 **Use Case**: For live chat interactions from web chat, messaging platforms, or chat-based customer service.
 
@@ -904,8 +905,8 @@ Your AWS environment must have:
 
 #### Chat Transcript Format
 
-```json
-
+json
+```
 {
   "1": {
     "type": "AGENT",
@@ -920,19 +921,22 @@ Your AWS environment must have:
     "userId": "customer_12345"
   }
 }
-
 ```
 
 **Required Fields**:
 
-* `type`: "`AGENT`", "`USER`", or "`SYSTEM`"
+* `type`: `AGENT`, `USER`, or `SYSTEM`
+
 * `text`: Message content
+
 * `timestamp`: Unix timestamp in milliseconds
+
 * `userId`: Participant identifier
 
-  !!! Note
+!!! note
 
-      For conversations involving transfers across agents and queues, use the `queueId` of the queue where the conversation ended, and the `agentEmail` of the agent who terminated the conversation.
+    For conversations involving transfers across agents and queues, use the `queueId` of the queue where the conversation ended, and the `agentEmail` of the agent who terminated the conversation.
+
 
 ## Step-by-Step Configuration
 
@@ -978,26 +982,26 @@ Your AWS environment must have:
 
 5. Configure the **Authentication Setup (For Access Keys)**.
 
-    * Enter **Access key **and **Secret key**.
+    * Enter **Access key ** and **Secret key**.
 
 6.  Configure the **IAM Role**. 
     * Enter the IAM Role ARN. 
 
-7. Configure the following two **Folder Paths. 
+7. Configure the following two **Folder Paths**. 
 
-   a. **Unified Path:**
-
+    a. **Unified Path:**
+        
       * Unified Voice and Chat Path 
 
-      * **Folder Path**: *s3://your-bucket/conversations/
+      * **Folder Path**: s3://your-bucket/conversations/
 
-   b. **Separate Paths**:
+    b. **Separate Paths**: 
 
-      * Separate Voice and Chat Path
+      * Separate Voice and Chat Path 
 
-     * **Voice Path**: *s3://your-bucket/voice-interactions/
-
-      * **Chat Path**: *s3://your-bucket/chat-interactions/
+      * **Voice Path**: s3://your-bucket/voice-interactions/
+      
+      * **Chat Path**: s3://your-bucket/chat-interactions/
 
 ### Validation Checkpoint (Connection Setup)
 
@@ -1037,9 +1041,9 @@ Your AWS environment must have:
 
     a. Navigate to the **Schedule** tab.
 
-        * **Interval**: Choose frequency (minutes/hours/days). 
+      * **Interval**: Choose frequency (minutes/hours/days). 
 
-        * **Start Time**: Set initial run time (UTC timezone).
+      * **Start Time**: Set initial run time (UTC timezone).
 
     b. Click **Save** to activate.
 
