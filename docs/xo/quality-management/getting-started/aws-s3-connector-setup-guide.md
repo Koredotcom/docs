@@ -143,17 +143,21 @@ Complete the following checklist before starting the configuration:
 
 ## Mono Recording Requirements (Critical)
 
-**IMPORTANT**: For mono recordings, you MUST provide the following **two separate audio files**:
+    !!! note
 
-**SUPPORTED**: Two clean mono files
+        For mono recordings, you must provide the following two separate audio files:
 
-├── conv-123456-agent.wav (agent audio only)
+**IMPORTANT**: For mono recordings, you must provide the following two separate audio files:
 
-└── conv-123456-customer.wav (customer audio only)`
+1. **Supported** (Two clean mono files)
 
-**NOT SUPPORTED**: Single mixed mono file  
+* ├── conv-123456-agent.wav (agent audio only)
 
-└── conv-123456-mixed.wav    (both speakers mixed)
+* └── conv-123456-customer.wav (customer audio only)`
+
+**Not Supported** (Single mixed mono file)  
+
+* └── conv-123456-mixed.wav (both speakers mixed)
 
 **Impact of Mixed Mono Audio on Accuracy** 
 

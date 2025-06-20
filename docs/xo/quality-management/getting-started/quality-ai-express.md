@@ -253,7 +253,7 @@ Quality AI Express integrates with your existing contact center through:
 * **Voice Transcripts**: Pre-transcribed audio conversations.
 * **Metadata**: CSV files containing conversation details and participant information.
 
-For detailed technical specifications and implementation guidance, see [AWS S3 Connector Setup Guide](../getting-started/aws-s3-connector-setup-guide.md).{:target=”_blank”}
+For detailed technical specifications and implementation guidance, <a href="../getting-started/aws-s3-connector-setup-guide.md" target="_blank">Learn more about AWS S3 Connector Setup Guide.</a>
 
 ## Getting Started
 
