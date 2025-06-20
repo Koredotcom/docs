@@ -3,58 +3,58 @@
 
 ## Overview
 
-The AWS S3 Connector allows you to ingest conversation recordings and chatscripts/transcripts from a configured S3 folder periodically with a customizable schedule into Quality AI Express, allowing you to use the tool with 3rd-party Contact Center as a Service (CCaaS) solutions.
+The AWS S3 Connector allows you to ingest conversation recordings and chatscripts/transcripts from a configured S3 folder periodically with a customizable schedule into Quality AI Express, allowing you to use the tool with third-party Contact Center as a Service (CCaaS) solutions.
 
 ### What You Will Need
 
-* S3 bucket with read permissions
+* S3 bucket with read permissions.
 * CSV metadata files with conversation details
-* Audio files (WAV/MP3) or chat transcripts (JSON)
-* Quality AI Express platform access
+* Audio files (WAV/MP3) or chat transcripts (JSON).
+* Quality AI Express platform access.
 
 ### 5-Minute Setup
 
-1. **Enable Quality AI Express** in platform settings
-2. **Upload test.csv** to your S3 folder with sample data
-3. **Configure the S3 connector** with bucket credentials and paths
-4. **Run validation tests** to verify connectivity
-5. **Set processing schedule** and monitor via logs
+1. **Enable Quality AI Express** in platform settings.
+2. **Upload test.csv** to your S3 folder with sample data.
+3. **Configure the S3 connector** with bucket credentials and paths.
+4. **Run validation tests** to verify connectivity.
+5. **Set processing schedule** and monitor via logs.
 
 ### Critical Requirements
 
-* **Stereo Audio**: Single file with agent (left) + customer (right) channels
-* **Mono Audio (Two separate files)**: One agent-only; one customer-only
-* **Timestamps**: ISO 8601 format with UTC timezone (YYYY-MM-DDTHH:MM:SSZ)
-* **Agent Emails**: Must exactly match platform user accounts
+* **Stereo Audio**: Single file with agent (left) + customer (right) channels.
+* **Mono Audio (Two separate files)**: One agent-only; one customer-only.
+* **Timestamps**: ISO 8601 format with UTC timezone (YYYY-MM-DDTHH:MM:SSZ).
+* **Agent Emails**: Must exactly match platform user accounts.
 
-**Need more details?** Continue to the[ Detailed Setup Guide](https://claude.ai/chat/9e9ccf26-f774-4a0f-9106-6a71ed5c45e1#detailed-setup-guide) below.
+**Need more details?** See the following Detailed Setup Process.
 
 ## Prerequisites
 
-Complete this checklist before starting the configuration:
+Complete the following checklist before starting the configuration:
 
 ### AWS Environment Setup
 
-* S3 bucket created in your preferred region
-* IAM user/role configured with read-only S3 permissions
-* Bucket folder structure planned (unified vs separate paths)
-* Test audio/chat files prepared for validation
+* S3 bucket created in your preferred region.
+* IAM user/role configured with read-only S3 permissions.
+* Planned bucket folder structure (unified vs separate paths).
+* Test audio/chat files prepared for validation.
 
 ### Platform Prerequisites
 
-* The Quality AI Express feature is enabled in settings
-* All agents onboarded with correct email addresses
-* Service queues are configured and ready for mapping
-* The user has **Integrations & Extensions** permissions
+* The Quality AI Express feature is enabled in settings.
+* All agents onboarded with correct email addresses.
+* Service queues are configured and ready for mapping.
+* The user has **Integrations & Extensions** permissions.
 
 ### Data Validation
 
-* Audio files in WAV or MP3 format (max 50MB each)
-* Audio split into separate agent/customer files, with one recording each (**For mono recordings**)
-* All timestamps follow ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ)
-* Recording URLs accessible via HTTPS
-* CSV files contain all required metadata fields
-* Create `test.csv` file with sample data
+* Audio files in WAV or MP3 format (maximum 50MB each).
+* Audio split into separate agent/customer files, with one recording each (**For mono recordings**).
+* All timestamps follow ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
+* All recording URLs are accessible via HTTPS.
+* CSV files contain all required metadata fields.
+* Create `test.csv` file with sample data.
 
 ## Quick Reference
 
@@ -125,69 +125,59 @@ Complete this checklist before starting the configuration:
 
 ### Minimum Required CSV Fields
 
-conversationId, queueId, agentEmail, conversationStartTime, conversationEndTime,
-recordingType, channelType, [recordingUrl/agentRecordings+customerRecordings/transcriptUrl/chatScriptUrl]
+`conversationId`, `queueId`, `agentEmail`, `conversationStartTime`, `conversationEndTime`,
+`recordingType`, `channelType`, [`recordingUrl`/`agentRecordings+customerRecordings`/`transcriptUrl`/`chatScriptUrl`]
 
 ### Field Name Key Differences by Type
 
-* **Stereo Voice**: Uses `recordingUrl`, `agentChannel`, `customerChannel`
-* **Mono Voice**: Uses `agentRecordings` + `customerRecordings` (both required in the same row)
-* **Voice Transcripts**: Uses `transcriptUrl`
-* **Chat Scripts**: Uses `chatScriptUrl`
-* **Provider Field**: All types use `asrProvider` (not `asProvider`)
+* **Stereo Voice**: Uses `recordingUrl`, `agentChannel`, `customerChannel`.
+* **Mono Voice**: Uses `agentRecordings` + `customerRecordings` (both required in the same row).
+* **Voice Transcripts**: Uses `transcriptUrl`.
+* **Chat Scripts**: Uses `chatScriptUrl`.
+* **Provider Field**: All types use `asrProvider` (not `asProvider`).
 
 ### Authentication Methods
 
-* **Access Keys**: Simple setup, good for single integrations
-* **IAM Roles**: Enterprise-grade security, recommended for production
+* **Access Keys**: Simple setup, good for single integrations.
+* **IAM Roles**: Enterprise-grade security, recommended for production.
 
-## Critical: Mono Recording Requirements
+## Mono Recording Requirements (Critical)
 
-**IMPORTANT**: For mono recordings, you MUST provide **two separate audio files**:
+**IMPORTANT**: For mono recordings, you MUST provide the following **two separate audio files**:
 
 **SUPPORTED**: Two clean mono files
 
-├── conv-123456-agent.wav    (agent audio only)
+├── conv-123456-agent.wav (agent audio only)
 
-└── conv-123456-customer.wav (customer audio only)
+└── conv-123456-customer.wav (customer audio only)`
 
 **NOT SUPPORTED**: Single mixed mono file  
 
 └── conv-123456-mixed.wav    (both speakers mixed)
 
-**Why Mixed Mono Audio Lowers Accuracy?** 
+**Impact of Mixed Mono Audio on Accuracy** 
 
 Single mixed mono files significantly reduce transcription accuracy without proper speaker diarization. Clean separation is essential for quality analytics.
 
-## Data Flow Architecture
+### Data Flow Architecture
 
-[S3 Bucket] → [S3 Connector] → [Quality AI Express] → [Analytics Dashboard]
+<img src="../getting-started/images/architecture.png" alt="architecture" title="architecture" style="border: 1px solid gray; zoom:60%;">
 
-     ↑              ↑                    ↑                     ↑
+## Setup Process
 
-┌─────────┐  ┌─────────────┐    ┌─────────────────┐  ┌─────────────────┐
+### Prerequisites
 
-│ Audio + │  │ Validation  │    │ Transcription + │  │ • Quality Score │
-
-│ Metadata│  │ + Ingestion │    │ Analysis        │  │ • Sentiment     │
-
-│ Files   │  │             │    │                 │  │ • Topics        │
-
-└─────────┘  └─────────────┘    └─────────────────┘  └─────────────────┘
-
-# Setup Process
-
-## Prerequisites
-
-### AWS Requirements
+#### AWS Requirements
 
 Your AWS environment needs:
 
-* **S3 Bucket**: With an organized folder structure for audio/chat files
+* **S3 Bucket**: With an organized folder structure for audio/chat files.
 * **Authentication**: Access keys or an IAM role with read permissions
-* **Network Access**: HTTPS URLs for all audio files
+* **Network Access**: HTTPS URLs for all audio files.
 
 **Required IAM Permissions**:
+
+```json
 
 {
     "Version": "2012-10-17",
@@ -202,6 +192,7 @@ Your AWS environment needs:
         }
     ]
 }
+```
 
 ### Platform Prerequisites
 
@@ -210,12 +201,11 @@ Your AWS environment needs:
 
 ## Configuration Schemas
 
-
 ### CSV Metadata Formats
 
 #### Stereo Voice Recordings
 
-**Configuration**: `recordingType = "`stereo`"` AND `channelType = "`voice`"`
+**Configuration**: `recordingType` = `stereo` and `channelType` = `voice`
 
 <table>
   <tr>
@@ -378,9 +368,9 @@ Your AWS environment needs:
 
 #### Mono Voice Recordings
 
-**Configuration**:` recordingType = `"mono" AND `channelType = "`voice`"`
+**Configuration**: `recordingType = mono and channelType = voice`
 
-**CRITICAL**: Mono recordings require **two separate CSV entries** and **two audio files** per conversation.
+**Critical**: Mono recordings require **two separate CSV entries** and **two audio files** per conversation.
 
 <table>
   <tr>
@@ -544,9 +534,9 @@ Your AWS environment needs:
 
 #### Voice Transcripts (Pre-transcribed Audio)
 
-**Configuration**: `recordingType = "transcription"` AND `channelType = "voice"`
+**Configuration**: `recordingType = transcription and channelType = voice`
 
-**Use Case**: When you have pre-transcribed audio files and want to skip the speech-to-text processing.
+**Use Case**: When you have pre-transcribed audio files and need to skip the speech-to-text processing.
 
 <table>
   <tr>
@@ -683,73 +673,94 @@ Your AWS environment needs:
   </tr>
 </table>
 
-    **Note**: This format is for organizations that have already transcribed their voice recordings and need to import the text for analysis without re-processing the audio.
+    !!! Note
+
+        This format is for organizations that have already transcribed their voice recordings and need to import the text for analysis without re-processing the audio.
 
 ### JSON Transcript Schema
 
 #### Voice Transcript Format
 
+```json
+
 {
-      "recognizedPhrases": [
+  "recognizedPhrases": [
+    {
+      "recognitionStatus": "Success",
+      "channel": 0,
+      "offset": "PT14S",
+      "duration": "PT2.4S",
+      "offsetInTicks": 140000000.0,
+      "durationInTicks": 24000000.0,
+      "durationMilliseconds": 2400,
+      "offsetMilliseconds": 14000,
+      "nBest": [
         {
-            "recognitionStatus": "Success",
-            "channel": 0,
-            "offset": "PT14S",
-            "duration": "PT2.4S",
-            "offsetInTicks": 140000000.0,
-            "durationInTicks": 24000000.0,
-            "durationMilliseconds": 2400,
-            "offsetMilliseconds": 14000,
-            "nBest": [
-                {
-                    "confidence": 0.8205426,
-                    "lexical": "yes one four three four two six",
-                    "itn": "yes 143426",
-                    "maskedITN": "yes one four three four two six",
-                    "display": "Yes, 143426.",
-                    "words": [
-                        {
-                            "word": "yes",
-                            "offset": "PT14S",
-                            "duration": "PT0.32S",
-                            "offsetInTicks": 140000000.0,
-                            "durationInTicks": 3200000.0,
-                            "durationMilliseconds": 320,
-                            "offsetMilliseconds": 14000,
-                            "confidence": 0.51653963
-                        },
-                        {
-                            "word": "one",
-                            "offset": "PT14.32S",
-                            "duration": "PT0.2S",
-                            "offsetInTicks": 143200000.0,
-                            "durationInTicks": 2000000.0,
-                            "durationMilliseconds": 200,
-                            "offsetMilliseconds": 14320,
-                            "confidence": 0.65166444
-                        }
+          "confidence": 0.8205426,
+          "lexical": "yes one four three four two six",
+          "itn": "yes 143426",
+          "maskedITN": "yes one four three four two six",
+          "display": "Yes, 143426.",
+          "words": [
+            {
+              "word": "yes",
+              "offset": "PT14S",
+              "duration": "PT0.32S",
+              "offsetInTicks": 140000000.0,
+              "durationInTicks": 3200000.0,
+              "durationMilliseconds": 320,
+              "offsetMilliseconds": 14000,
+              "confidence": 0.51653963
+            },
+            {
+              "word": "one",
+              "offset": "PT14.32S",
+              "duration": "PT0.2S",
+              "offsetInTicks": 143200000.0,
+              "durationInTicks": 2000000.0,
+              "durationMilliseconds": 200,
+              "offsetMilliseconds": 14320,
+              "confidence": 0.65166444
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+```
 
 **Required Fields**:
 
+```json
+
 {
-      "recognizedPhrases": [
+  "recognizedPhrases": [
+    {
+      "channel": 0,
+      "offsetInTicks": 140000000.0,
+      "nBest": [
         {
-            "channel": 0,
-            "offsetInTicks": 140000000.0,
-            "nBest": [
-                {
-                    "lexical": "yes one four three four two six",
-                    "words": [
-                        {
-                            "word": "yes",
-                            "offsetInTicks": 140000000.0,
-                            "durationInTicks": 3200000.0,
-                            "confidence": 0.51653963
-                        }
+          "lexical": "yes one four three four two six",
+          "words": [
+            {
+              "word": "yes",
+              "offsetInTicks": 140000000.0,
+              "durationInTicks": 3200000.0,
+              "confidence": 0.51653963
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
-#### Chat Scripts (Live Chat Interactions)
+#### Chat Scripts (Live Chat Interactions):
 
-**Configuration**: `recordingType = "transcription"` AND `channelType = "chat"`
+**Configuration**: `recordingType = transcription and channelType = chat`
 
 **Use Case**: For live chat interactions from web chat, messaging platforms, or chat-based customer service.
 
