@@ -2,6 +2,162 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+
+## v1.0.7 June 20, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Preferred Agent Support**
+
+The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance.
+
+**Improved User Interface**
+
+The Agentic App interface has been redesigned to deliver a more consistent and informative user experience across all listing pages. These enhancements provide developers with essential information upfront, reducing navigation overhead and improving workflow efficiency.
+
+Key improvements
+
+* Enhanced listing pages - Consistent design across Agents, Tools, and Knowledge listings with comprehensive information displayed directly on list views.
+* Reduced navigation - Access critical details without drilling into individual items, streamlining the browsing experience.
+* Redesigned App Profile page - Improved layout and information architecture for better app overview and management.
+* Enhanced Configurations page - Optimized organization and presentation of configuration options.
+
+
+**Enhanced Playground Experience**
+
+The simulate feature in the Agent platform has been transformed into Playground, featuring enhanced capabilities. This new experience provides developers and testers with a robust environment for building, debugging, and validating agent behavior more effectively.
+
+Key features
+
+* Chat History: View and manage past sessions to track interactions over time.
+* Resume Sessions: Resume previous conversations from where they were left off.
+* Improved user interface: Intuitive interface updates, including the ability to easily copy messages.
+* Clear agent identification in thought streaming.
+
+
+**Import/Export Enhancements**
+
+The import/export feature now supports MCP server configurations and Memory Stores. This enhancement enables users to include these elements during import and export, simplifying migrations and reducing manual work for more comprehensive deployments across various environments.
+
+
+**Typeahead Support for Memory Access**
+
+The Agent Platform now includes intelligent type-ahead functionality across Code Tool and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
+
+
+<font size="4">No-code and Pro-code Tools</font>
+
+**Parallel Execution in Workflow Builder**
+
+The Agent Platform now supports parallel execution within the workflow builder. You can create and trigger multiple branches simultaneously in a single flow — a major upgrade alongside traditional sequential execution.
+
+Key benefits
+
+* Improved Performance: Run branches concurrently to reduce total execution time.
+* Faster Workflows: Significantly lowers overall runtime.
+* Simplified Design: Ideal for independent tasks like multi-channel actions or parallel data operations.
+* Easier Debugging: Outputs are grouped by branch in logs for clear visibility and troubleshooting.
+
+Note: Backward connections are no longer supported in the workflow builder. Existing deployed workflows will continue to run as they are. New workflows cannot include backward connections. Exporting and re-importing workflows with such connections will cause execution failures.
+
+
+**Revamped Code Tools Design**
+
+The Code Tools design page has been redesigned to streamline development workflows and improve productivity. The updated interface offers a more intuitive experience, featuring enhanced parameter support and an optimized layout for faster iteration.
+
+Key improvements
+
+* Object parameter type - Accept structured JSON input alongside existing string and number types.
+* Side-by-side layout - View parameters, code editor, and output simultaneously without scrolling.
+* Enhanced usability - Streamlined interface reduces context switching and accelerates development cycles.
+
+
+**MCP Tool Execution and Validation**
+
+The Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for full agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
+
+Key features
+
+* Direct tool execution - Test individual MCP tools immediately after configuration without creating full agents.
+* Dynamic input forms - Provide sample data through automatically generated parameter forms.
+* Real-time results - View execution output instantly.
+
+
+<font size="4">AI Engineering Tools</font>
+
+**AWS Bedrock Models Integration**
+
+Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to invoke the Bedrock models reliably.
+
+Key benefits
+
+* Direct access to AWS Bedrock models via a secure, customer-managed setup.
+* Built-in validation, testing, and draft-saving for seamless configuration.
+* Automated credential management ensures secure and uninterrupted access to models.
+
+
+**Export Evaluation Tables to CSV**
+
+Evaluation Studio now supports CSV export for evaluation tables from the three-dot menu, preserving all column data, scores, and footer metrics (e.g., pass%, fail%, avg, min, max).
+
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+
+**Pre-authorize Integration using Basic Auth**
+
+Agent Platform now supports Basic Authentication for pre-authorizing third-party integrations. Admins need to set up the connection once using the *API Key* and *Secret*. After that, users don’t need to re-authenticate unless the connection expires.
+
+Key benefits
+
+* Easy to implement using a secure API Key and Secret.
+* User-agnostic—it doesn’t maintain sessions or track user identity. Each request is treated independently.
+* The same credentials remain valid until the connection expires, eliminating the need for re-authentication.
+
+
+<font size="4">Other Improvements</font>
+
+**Display Account ID for an Account**
+
+The *Account ID* is now visible in the usage summary section, making it easy to share with the support team for debugging or adding credits.
+
+
+**Usage Trend and Credits Calculation for Guardrails and Custom Scripts**
+
+The Agent Platform now shows usage data for Guardrails and Custom Scripts under Billing Usage. Admins can view module-wise credit allocation, usage, and balance using pie charts, line graphs, and other key metrics. Usage trends across linked accounts help track credit usage, negative balances, limits, and billing adjustments for the selected period.
+
+
+**Added Instructions for Structured Output**
+
+To improve usability, sample JSON schema instructions for structured output are now visible in the AI nodes and Prompt Studio. Users can now view the expected format directly in the UI pop-ups, making prompt creation easier and more consistent.
+
+
+**Execute Function Node Using Custom Code or Script Function**
+
+The Function node now allows admins to configure and execute custom functions using the following two methods:
+
+* Write Code: Admins can utilize the integrated code editor to write and run either static or dynamic code, with immediate access to output and logs.
+* Custom Function: Admins can select a particular function from an already deployed script or an imported project. This option offers several capabilities:
+    * Dynamic configuration and execution of input parameters through context objects.
+    * Mapping of selected function's input arguments to static or dynamic values.
+    * The ability to add or remove input arguments as needed.
+    * Testing of script and function configurations with varied input values.
+    * Execution of the script as part of the tool's automation workflow, generating a debug log that includes custom function specifics like script name, function name, and tool parameters.
+
+Note: By default, all arguments passed to the function are currently sent as '*string*'. If your function requires other data types, please handle the necessary conversions within your custom script. Support for input type validation and native data types will be available soon.
+
+
+
+
+<hr>
+
+
+
+
 ## v1.0.6 June 5, 2025
 
 <u> Minor Release </u>
