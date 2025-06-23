@@ -1760,7 +1760,8 @@ To add a connection and configure an integration, follow the steps below:
       * When you select this auth type, you must provide the required configuration values. For example, an **Amplitude** project requires an *API key* and *API secret*.
       * You can retrieve (copy and paste) these values from the *Admin console* of your account on the provider’s site.
       * Click **Test** to validate the connection. A success message is displayed once the connection is set up.
-        <img src="../images/basic-auth-set-up.png" alt="test validation for basic auth" title="test validation for basic auth" style="border: 1px solid gray; zoom:75%;">
+
+         <img src="../images/basic-auth-set-up.png" alt="test validation for basic auth" title="test validation for basic auth" style="border: 1px solid gray; zoom:75%;">
 
 
 <ol start="5"><li>Click <b>Save</b>.</li>
