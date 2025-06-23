@@ -61,6 +61,14 @@ Key enhancements
 * Enhanced dual version system with draft and published versions for efficient change management.
 * Improved user experience with clear status indicators, progressive feature enablement, simplified publishing, and protection against accidental changes.
 
+**Compose Bar Query Scope**
+
+The compose bar now features Work, AI Model, and Web scope selection buttons, allowing users to direct queries to specific knowledge sources. Users can easily switch between these options, with visual feedback confirming the selected scope.
+
+* **Work Button**: Directs queries to enterprise knowledge repositories.
+* **AI Model Button**: Retrieves answers from the configured AI model.
+* **Web AI**: Provides answers from the configured AI model, enhanced by web search capabilities.
+
 **Multiple File Upload Support**
 
 Enhanced the prompt agent builder interface with comprehensive file upload options across all parameter types.
