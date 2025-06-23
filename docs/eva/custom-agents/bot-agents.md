@@ -87,8 +87,8 @@ Provide a suitable and unique name for the agent and describe its purpose. Defin
 #### Step 2: Add Bot 
 
 The Add Bot feature enables seamless integration of a virtual assistant created
-on the Kore.ai platform with your system. To establish this connection, ensure
-that the webhook channel is enabled on the Kore.ai Virtual Assistant. Once
+on the platform with your system. To establish this connection, ensure
+that the webhook channel is enabled on the Virtual Assistant. Once
 activated, follow the integration steps to complete the process:
 
 1. In the **Add Bot** enter the following:

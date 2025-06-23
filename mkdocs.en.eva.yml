@@ -60,8 +60,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+            Thanks for your feedback!            
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -163,10 +162,11 @@ nav:
     - Assist Configuration:
       - Email Template: assistant-configuration/email-template.md
       - Rate Limit: assistant-configuration/rate-limit.md
+      - Guardrails: assistant-configuration/guardrails.md
+      - Orchestration Settings: assistant-configuration/orchestration-settings.md
     - Security: 
       - SSO: security/sso.md
       - Domain Management: security/domain-management.md
-      - Connector: security/kore-connector.md
       - Service Accounts: security/service-accounts.md
       - Data Settings: security/data-settings.md
     - Audit Log:

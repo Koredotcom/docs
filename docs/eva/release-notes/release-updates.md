@@ -1,6 +1,108 @@
-# Release Notes
+# AI for Work Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
+
+## v1.9.1 June 21, 2025
+
+<u>Major Release</u>
+
+This update includes new features, feature enhancements, and bug fixes summarized below.
+
+</font></p><font size="4">New Features</font>
+
+**Guardrails Security Framework**
+
+Introducing **Guardrails**, a robust security framework designed for enterprise-level AI interactions. This new feature automatically safeguards sensitive data and enforces content policies, providing comprehensive data protection and content filtering. Ensure compliance and security across all your AI workflows with Guardrails.
+
+Key benefits
+
+* Protect sensitive customer data from exposure in logs and analytics.
+* Meet data protection requirements with automated  PII (personally identifiable information) detection and handling.
+* Maintain brand safety and policy compliance through customizable topic restrictions.
+* Validate configurations before deployment with comprehensive testing tools.
+
+[Learn more :octicons-arrow-right-24:](../assistant-configuration/guardrails.md)
+
+**AI Query Pipeline Orchestration**
+
+Introducing **Orchestration Settings**, a powerful pipeline management system that gives you complete control over your AI query processing workflow. This feature enables you to customize and optimize your AI interactions by selectively activating only the components you need, ensuring efficient resource utilization.
+
+Key benefits
+
+* Activate only required pipeline components to optimize performance and reduce processing overhead.
+* Eliminate unnecessary AI processing steps while maintaining full functionality.
+* Adapt AI behavior to specific use cases and organizational requirements.
+* Unified management interface with intelligent component synchronization.
+
+[Learn more :octicons-arrow-right-24:](../assistant-configuration/orchestration-settings.md)
+
+<font size="4">Feature Enhancements</font>
+
+**Conversation Data Storage Controls**
+
+The **Data Settings** now offer enhanced controls for **Conversation Data Storage**, providing granular privacy management.
+
+The **Do not store conversation data** setting is upgraded with three flexible control levels:
+
+* All Agents (universal privacy).
+* All Agents Except Selected Agents (default privacy with strategic exceptions).
+* Only Selected Agents (targeted privacy for specific needs like compliance).
+
+[Learn more :octicons-arrow-right-24:](../security/data-settings.md)
+
+**Agent Layout Enhancements**
+
+The agent creation and management interface has been redesigned for a more intuitive user experience and improved version control.
+
+Key enhancements
+
+* Streamlined navigation with a dedicated agent page and simplified header.
+* Improved action menu with primary actions like share and publish and secondary actions like export and audit log.
+* Enhanced dual version system with draft and published versions for efficient change management.
+* Improved user experience with clear status indicators, progressive feature enablement, simplified publishing, and protection against accidental changes.
+
+**Compose Bar Query Scope**
+
+The compose bar now features Work, AI Model, and Web scope selection buttons, allowing users to direct queries to specific knowledge sources. Users can easily switch between these options, with visual feedback confirming the selected scope.
+
+* **Work Button**: Directs queries to enterprise knowledge repositories.
+* **AI Model Button**: Retrieves answers from the configured AI model.
+* **Web AI**: Provides answers from the configured AI model, enhanced by web search capabilities.
+
+**Multiple File Upload Support**
+
+Enhanced the prompt agent builder interface with comprehensive file upload options across all parameter types.
+
+Key enhancements
+
+* Added **Multiple files** toggle option in the Upload File field, enabling agent creators to configure multi-file support.
+* Introduced **Upload files** option in Text field parameters, allowing users to select single or multiple files as needed.
+* Users can now upload up to 5 files simultaneously when interacting with configured prompt agents.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/prompt-agents.md)
+
+**Skip Form Display Functionality**
+
+Introduced an intelligent form display system that automatically detects query completeness and optimizes the user experience accordingly.
+
+Key enhancements
+
+* Added **Skip Form Display** toggle option for agent creators, enabling automatic form bypass when appropriate.
+* The Skip Form Display feature includes intelligent conflict prevention with Multi-Response functionality, displaying informational messages when incompatible settings are selected.
+* Implemented smart query analysis that identifies when all required entities are present in the initial request.
+* Enhanced form logic to display input forms only when mandatory fields are missing from the user query.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/prompt-agents)
+
+**User Management Updates**
+
+Administrators can now edit user profile information directly from the user details interface. This enhancement allows admins to modify first and last names efficiently, streamlining the user data management workflow and improving administrative control over user accounts.
+
+<font size="4">Bug Fixes</font>
+
+**System Stability Improvements**
+
+Resolved critical chart rendering issues and fixed application crashes that occurred during follow-up question interactions. These fixes significantly enhance system reliability and ensure a smoother user experience when working with data visualizations and conversational features.
 
 ## v1.9.0 April 30, 2025
 
@@ -8,7 +110,7 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Features**
+<font size="4">New Features</font>
 
 **New Homepage Experience**
 
@@ -28,9 +130,9 @@ Key features
     * Hovering displays controls to rename or delete threads.
     * **Today** section is instantly updated with new chats.
 
-**Introducing AI for Work to Kore’s Marketplace**
+**Introducing AI for Work to Marketplace**
 
-The Kore’s Marketplace now features AI for Work, a comprehensive collection of intelligent agents designed to enhance productivity and streamline workflows. This central hub allows users to easily discover, understand, and implement various AI-powered work agents tailored to specific needs.
+The  Marketplace now features AI for Work, a comprehensive collection of intelligent agents designed to enhance productivity and streamline workflows. This central hub allows users to easily discover, understand, and implement various AI-powered work agents tailored to specific needs.
 
 AI for Work in the Marketplace features two main categories: **Apps** (complex, multi-functional AI solutions combining agents for comprehensive workflows) and **Agents** (standalone AI components for specific tasks). The first version introduces Agentic flows in applications, starting with **Prompt Agents** that provide instant text replies.
 
@@ -57,7 +159,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 [Learn more :octicons-arrow-right-24:](./../security/data-settings.md)
 
-**Enhancements**
+<font size="4">Feature Enhancements</font>
 
 **Impovised Enterprise Knowledge Agent**:
 
@@ -68,7 +170,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 **Database Migration**: Migrated from Trina DB to ClickHouse to improve application performance when processing attachment-based queries.
 
-**Bug Fixes**
+<font size="4">Bug Fixes</font>
 
 **Search Connector**:
 
@@ -85,7 +187,7 @@ The Admin Console now features **Data Settings**, giving complete control over t
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Features**
+<font size="4">New Features</font>
 
 **Introducing Workspaces**
 
@@ -112,7 +214,8 @@ Key Features:
 
 [Learn more :octicons-arrow-right-24:](./../custom-agents/agent-options.md)
 
-**Improvements and Bug Fixes**
+
+<font size="4">Features and Bug Fixes</font>
 
 * User Management: Refined user permissions to ensure access is limited to authorized sections and improved template visibility and management for more precise user role-based access control.
 * Email Templates: Fixed formatting inconsistencies to enhance visual consistency and readability.
@@ -127,7 +230,7 @@ Key Features:
 
 This update includes new features, feature enhancements, and bug fixes summarized below.
 
-**New Feature**
+<font size="4">New Features</font>
 
 **Agentic App Support for Enterprise Knowledge**
 
@@ -143,15 +246,16 @@ Key Benefits:
 
 [Learn more :octicons-arrow-right-24:](./../custom-agents/enterprise-knowledge.md)
 
-**Feature Enhancements**
+<font size="4">Feature Enhancements</font>
 
-* Kore Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Kore's Agent Platform, enabling seamless integration.
+* Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Agent Platform, enabling seamless integration.
 
 * Enhanced Content Safeguards: Implemented comprehensive guardrails within AI for Work that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
   
 * Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
 
-**Bug Fixes**
+
+<font size="4">Bug Fixes</font>
 
 * cURL Import Enhancement: Improved the cURL import functionality for agentic apps, allowing users to seamlessly modify request body during the import process.
   
@@ -169,7 +273,7 @@ Key Benefits:
 
 This update includes new features and feature enhancements summarized below.
 
-**New Feature**
+<font size="4">New Features</font>
 
 **Standard Agentic Apps**
 
@@ -178,10 +282,10 @@ You can now organize multiple AI agents in sequence to automate and execute comp
 
 **Advanced Agentic Apps**
 
-You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/autonomous-agent.md)
+You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. 
+[Learn more :octicons-arrow-right-24:](./../custom-agents/autonomous-agent.md)
 
-
-**Feature Enhancements**
+<font size="4">Features Enhancements</font>
 
 * Bot Response Notification System: Bot agent interaction experience has been enhanced with an intelligent notification system for improved user engagement.
 
