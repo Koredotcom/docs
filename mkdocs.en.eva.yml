@@ -142,8 +142,7 @@ nav:
   - Pre-built Solutions:
     - About Pre-built Solution: pre-built-solutions/overview.md
     - IT Assist: pre-built-solutions/itassist.md
-    - HR Assist: pre-built-solutions/hrassist.md
-    - Recruit Assist: pre-built-solutions/recruitassist.md
+    - HR Assist: pre-built-solutions/hrassist.md    
   - Analytics: 
     - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
