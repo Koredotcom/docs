@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
-## v1.9.1 June 21, 2025
+## v1.9.2 June 21, 2025
 
 <u>Major Release</u>
 
@@ -103,6 +103,28 @@ Administrators can now edit user profile information directly from the user deta
 **System Stability Improvements**
 
 Resolved critical chart rendering issues and fixed application crashes that occurred during follow-up question interactions. These fixes significantly enhance system reliability and ensure a smoother user experience when working with data visualizations and conversational features.
+
+## v1.9.1 May 19, 2025
+
+<u>Minor Release</u>
+
+This update includes feature enhancements summarized below.
+
+<font size="4">Feature Enhancements</font>
+
+**Autonomous Agent Capabilities**
+
+* Improved handling of authentication challenges for autonomous agents, providing reliable authentication flows during automated operations.
+* Autonomous agents now support processing and handling file attachments, enabling seamless document workflows and expanded automation capabilities.
+* Added support for asynchronous communication channels, allowing agents to operate across multiple channels simultaneously without blocking operations.
+
+**Intelligent Chat Naming**
+
+Conversation titles are now automatically generated, reflecting user intent and search queries. This enhancement improves the organization and retrieval of conversations.
+
+**Advanced Intent Recognition**
+
+Enhanced the orchestrator's intent identification capabilities with improved accuracy and response time, enabling better understanding of user requests and precise task routing.
 
 ## v1.9.0 April 30, 2025
 
@@ -253,7 +275,6 @@ Key Benefits:
 * Enhanced Content Safeguards: Implemented comprehensive guardrails within AI for Work that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
   
 * Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
-
 
 <font size="4">Bug Fixes</font>
 
