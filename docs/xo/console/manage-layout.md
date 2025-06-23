@@ -41,10 +41,11 @@ Steps to manage notifications:
 
 ### Repeat Notifications
 
-Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:
-* Minimize missed interactions.
-* Improve response times.
-* Enhance overall customer satisfaction and SLA compliance.
+Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:  
+
+* Minimize missed interactions.  
+* Improve response times.  
+* Enhance overall customer satisfaction and SLA compliance.  
 
 #### Enable Repeat Notifications
 
