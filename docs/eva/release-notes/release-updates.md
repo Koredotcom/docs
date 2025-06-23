@@ -48,6 +48,8 @@ The **Do not store conversation data** setting is upgraded with three flexible c
 * All Agents Except Selected Agents (default privacy with strategic exceptions).
 * Only Selected Agents (targeted privacy for specific needs like compliance).
 
+[Learn more :octicons-arrow-right-24:](../security/data-settings.md)
+
 **Agent Layout Enhancements**
 
 The agent creation and management interface has been redesigned for a more intuitive user experience and improved version control.
@@ -69,6 +71,8 @@ Key enhancements
 * Introduced **Upload files** option in Text field parameters, allowing users to select single or multiple files as needed.
 * Users can now upload up to 5 files simultaneously when interacting with configured prompt agents.
 
+[Learn more :octicons-arrow-right-24:](../custom-agents/prompt-agents.md)
+
 **Skip Form Display Functionality**
 
 Introduced an intelligent form display system that automatically detects query completeness and optimizes the user experience accordingly.
@@ -80,9 +84,7 @@ Key enhancements
 * Implemented smart query analysis that identifies when all required entities are present in the initial request.
 * Enhanced form logic to display input forms only when mandatory fields are missing from the user query.
 
-**Responsive Design Enhancement**
-
-Eliminated the disruptive minimum resolution warning dialog that previously appeared when window size was reduced. The application now maintains full functionality with seamless scrolling capabilities across all screen sizes, providing users with uninterrupted access to features regardless of viewport dimensions.
+[Learn more :octicons-arrow-right-24:](../custom-agents/prompt-agents)
 
 **User Management Updates**
 
