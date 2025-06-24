@@ -25,9 +25,9 @@ Before configuring external Gen AI models, ensure you have:
 2. Turn on the LLM based Conversation Summary toggle.
 3. Select your preferred summarization method:
     * OOTB (Out-of-the-box) Kore Summarisation (Default)
-    * Using the model configured inside the GenAI framework  
+    * Using the model configured in the GenAI framework  
 
-        <img src="../images/conversation-summary-options.png" alt="Conversation Summary Options" title="Conversation Summary Options" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/options-conversation-summary.png" alt="Conversation Summary Options" title="Conversation Summary Options" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
