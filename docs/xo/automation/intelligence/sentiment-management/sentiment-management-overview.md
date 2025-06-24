@@ -32,10 +32,6 @@ The following parameters can be configured for a sentiment event:
     * Define the range to be considered for each of these tones, the range can be between -3 to +3. [Learn more](../../../automation/intelligence/sentiment-management/tone-analysis.md).
     * When multiple emotions are selected, the event is triggered when **ALL** the tone rules are met. In case you want the event to trigger when any tone rule is met, add them as separate rules.
 
-!!!note
-
-    Post v8.1, the Platform can identify the emojis in user utterance and set the tone accordingly.
-
 <img src="../images/add-sentiment-based-event.png" alt="add sentiment based event" title="add sentiment based event" style="border: 1px solid gray; zoom:75%;">
 
 ## Event Flow
@@ -66,7 +62,6 @@ If the configuration is set to ***Run a Script*** and a sentiment is detected:
     * On-Intent Message Node- Sentiment executes first, then moves into the else condition.
 
 If the configuration is set to ***Initiate a Task*** and a sentiment is detected:
-
 
 1. Small talks-  Sentiment executes first, followed by the configured dialog.
 2. Dialog - Sentiment executes first, followed by the configured dialog.
