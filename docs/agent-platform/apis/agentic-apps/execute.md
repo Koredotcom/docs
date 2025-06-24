@@ -188,6 +188,30 @@ Once a file is added to the includeFiles list, it remains associated with the se
    <td>No
    </td>
   </tr>
+  <tr>
+  <td>invoke</td>
+  <td>This field allows direct invocation of a specific agent within the application, bypassing the orchestrator. It is particularly useful when the client knows exactly which agent should handle the request.
+  
+  The invoke field accepts an array of task objects. Each task object must include:
+  <ul>
+  <li><strong>type</strong>: Set this to "agent" to specify the task as an agent invocation.</li>
+  <li><strong>name</strong>: The name of the agent you want to invoke.</li>
+  </ul>
+  
+  Example - To invoke a ‘PolicyFinder’ Agent in the app, use the following.
+  <pre>
+  "invoke": {
+    "tasks": [
+      {
+        "type": "agent",
+        "name": "PolicyFinder"
+      }
+    ]
+  }
+  </pre>
+  </td>
+  <td>No</td>
+  </tr>
 </table>
 
 
@@ -333,7 +357,7 @@ If debug is enabled, the response has additional information as shown below.
 ```
 
 
-**Note**: If any tool used by an agent requires OAuth authorization, the API response for the initial request (when a new session starts) will include a special event of type `IDP_Redirect`. This event contains a URL the user must visit to complete the authorization. If the required authorization is not completed, the associated tools will return an error upon invocation.
+**Note**: If any tool used by an agent requires OAuth authorization, the API response for the initial request (when a new session starts) will include a special event of type `IDP_Redirect`. This event contains a URL that the user must visit to complete the authorization. If the required authorization is not completed, the associated tools will return an error upon invocation.
 
 ```
 {

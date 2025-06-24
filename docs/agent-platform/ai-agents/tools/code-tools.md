@@ -1,7 +1,16 @@
 # About Code Tools
 
-Code Tools are custom, agent-specific functions designed to process user input and execute business logic through scripts. They enable agents to perform complex or specialized tasks by running JavaScript or Python code, generating tailored responses as part of system operations.
+Code tools are specialized functions that process user input based on predefined business logic. They are designed to help agents complete tasks by executing custom scripts as part of their regular operations. This ensures that responses are tailored to the user's specific needs. 
 
-Example: SQL Query Processor — a tool that executes SQL queries on a specified database instance.
+Code tools offer fine-grained control over how data is handled or external services are accessed. They're useful when agent decisions require logic, computations, or dynamic API interactions that go beyond static rules. 
 
-For more information on creating code tools, see [Create a code tool](../tools/create-a-code-tool.md).
+**Supported languages**: Code tools can be designed using **JavaScript** and **Python** to process the input data and generate the appropriate output.  
+
+
+## Example Use Case: SQL Query Processor
+
+This tool is designed to run SQL queries on a specified database instance. It leverages Supabase APIs to dynamically execute SQL queries, allowing for flexible and efficient data retrieval and manipulation. 
+
+**Example prompt:** “Show me all customer orders from last week.”
+
+The tool will convert the input into a query and return results dynamically by calling a Supabase RPC endpoint.
