@@ -43,7 +43,7 @@ The Agent Platform now supports configurable document upload limits within the p
 
 The Agent Platform now supports integration with MCP (Model Context Protocol) servers, enabling seamless access to external tools. With this enhancement, admins can configure MCP servers and make tools available to agents for invocation during runtime workflows.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/mcp-tools.md)
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/mcp-tools.md)
 
 
 **Improved Handling of Large Context Objects in Python Script Node**

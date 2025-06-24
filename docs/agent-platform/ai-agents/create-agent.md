@@ -143,7 +143,7 @@ For more information, see [About Tools](./../ai-agents/tools/overview.md).
 
 * **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
 
-    For more information, see [Code Tools](./agentic-apps/inline-tools.md).
+    For more information, see [Code Tools](tools/code-tools.md).
 
 
 ### Adding a Tool to Agent
@@ -159,7 +159,7 @@ For a **Workflow Tool**, enter the tool's **name** and **description**, then cli
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](agentic-apps/code-tools.md) for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md) for details on creating a new code tool, along with an example. 
 
 ### Importing a Tool
 
