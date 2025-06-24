@@ -1,5 +1,3 @@
-# Agentic App Interface Overview
-
 ## Overview
 
 The Overview section provides a structured summary of your app with linked agents, tools, and knowledge bases, organized into four main sections for improved navigation and usability.
