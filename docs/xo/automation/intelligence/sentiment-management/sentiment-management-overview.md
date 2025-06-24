@@ -50,6 +50,33 @@ Emotion tones are continuously updated whenever a message is received from the u
 * In case of a conflict between a sentiment event and direct intent invocation by the user, sentiment event is given precedence.
 * When tone criteria for two or more sentiment events are satisfied at the same instance, then the Platform prefers the sentiment event with the highest order of precedence used in defining the events.
 
+**Sentiment Analysis Behavior Overview**
+
+When a sentiment event is enabled, the platform evaluates each user input to determine if the sentiment should be triggered. If so, the sentiment event executes first, followed by processing the user input.
+
+If the configuration is set to ***Run a Script*** and a sentiment is detected:
+
+1. Smalltalks- Sentiment executes first, Smalltalk gets stuck, and doesn’t proceed.
+2. Dialog - Sentiment executes first, followed by the dialog execution.
+3. Execution Flow: Sentiment executes first, followed by fallback logic.
+4. At Different nodes: 
+
+    * Entity Node - Sentiment executes first, then an error prompt is triggered.
+    * Confirmation Node - Sentiment executes first, followed by the confirmation node prompt.
+    * On-Intent Message Node- Sentiment executes first, then moves into the else condition.
+
+If the configuration is set to ***Initiate a Task*** and a sentiment is detected:
+
+
+1. Small talks-  Sentiment executes first, followed by the configured dialog.
+2. Dialog - Sentiment executes first, followed by the configured dialog.
+3. Execution Flow: Sentiment executes first, followed by the configured dialog.
+4. At Different nodes:
+
+    *  Entity Node - Sentiment executes first, then the connected dialog executes, reaching the end of both the parent and configured dialog.
+    * Confirmation Node - Sentiment executes first, then the connected dialog executes, reaching the end of both the parent and configured dialog.
+    * On-Intent Message Node- Sentiment executes first,  then the connected dialog executes, reaching the end of both the parent and configured dialog.
+
 ## Reset Tone
 
 By default, sentiment values are reset at the beginning of every user conversation session.
