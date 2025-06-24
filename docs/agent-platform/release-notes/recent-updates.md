@@ -26,6 +26,7 @@ Key improvements
 * Redesigned App Profile page - Improved layout and information architecture for better app overview and management.
 * Enhanced Configurations page - Optimized organization and presentation of configuration options.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
 
 **Enhanced Playground Experience**
 
