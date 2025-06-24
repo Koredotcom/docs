@@ -40,7 +40,7 @@ Define the **input parameters** required by the tool to perform its task. For ea
 
 * **Name:** A unique identifier for the parameter.
 * **Description:** Explains the parameter’s purpose to help the agent extract relevant data from user input.
-* **Type:** The expected data type. The following types are currently supported: **string, number, boolean, and object**.
+* **Type:** The expected data type. The following types are currently supported: **string, number, boolean, and object**. Adhere to the schema shown under Sample Schema for Object type of parameters. 
 * **isMandatory**: Indicates whether this input parameter is mandatory or not. 
 
 **Example for SQL Query Processor**:
