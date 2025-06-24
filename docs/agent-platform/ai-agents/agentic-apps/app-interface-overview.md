@@ -1,8 +1,8 @@
-# Agentic App Interface Overview
+# Agentic App Interface
 
 The Overview section provides a structured summary of your app with linked agents, tools, and knowledge bases, organized into four main sections for improved navigation and usability.
 
-### Key Highlights:
+### Key Highlights
 
 * **App Summary** displays essential app details with an **Edit** option for configuration changes.
 * **The Agents** section shows the autonomous agents of the app. The list shows up to three agents with icons, names, descriptions, and linked tools.
@@ -18,7 +18,7 @@ The **Agent Listing Page** displays all agents associated with the Agentic app a
 
 [Learn more about how to create an agent](https://docs.kore.ai/agent-platform/ai-agents/create-agent/).
 
-### Key Highlights:
+### Key Highlights
 
 * Each agent card shows the connected tools with identifiable icons.
 * Highlights **proxy agents** with an external icon and hover tooltips revealing connected apps.
@@ -33,7 +33,7 @@ The **Tools listing page** provides a structured view of available tools with cl
 
 [Learn more about Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/overview/).
 
-### Key Highlights:
+### Key Highlights
 
 * Displays total count categorized under **Workflow**, **Code**, and **MCP.**
 * Displays the **Workflow tool status** as **Draft** or **Deployed.**
@@ -49,7 +49,7 @@ The **Knowledge listing page** provides a structured view of all knowledge bases
 
 [Learn more about Knowledge](https://docs.kore.ai/agent-platform/ai-agents/knowledge/overview/).
 
-### Key Highlights:
+### Key Highlights
 
 * Displays the **total number of knowledge bases** in the section header.
 * Maintains a **dedicated section** separate from other tool types, ensuring clarity and consistency in navigation.
