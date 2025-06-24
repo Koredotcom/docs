@@ -128,9 +128,7 @@ Powered by the tool invocation capabilities of large language models (LLMs), age
         * Initiate bill payment - Initiates bill payment process
         * Find recent transactions - Present last *n* transactions that might include retrieving data from a database. 
 
-There are **two types of tools** that agents can use.
-
-
+There are **three types of tools** that agents can use.
 
 * **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They are best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
@@ -139,12 +137,15 @@ There are **two types of tools** that agents can use.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
 
-For more information, see [About Tools](./../ai-agents/tools/overview.md).
+For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md).
 
 * **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
 
     For more information, see [Code Tools](tools/code-tools.md).
 
+* **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.  Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they are centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They are best suited for seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
+
+For more information, see [MCP Tools](tools/mcp-tools.md).
 
 ### Adding a Tool to Agent
 
