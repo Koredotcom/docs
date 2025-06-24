@@ -6,11 +6,9 @@ Navigate to the **Tools** section of the app and click on **Add Tool**. Click on
 
 ![alt_text](images/mcp/home.png "Add tool")
 
-
 Provide the MCP server configuration on the following page. 
 
 ![alt_text](images/mcp/mcp-config.png "MCP Config")
-
 
 **Name**- Provide a unique name for the MCP server. 
 

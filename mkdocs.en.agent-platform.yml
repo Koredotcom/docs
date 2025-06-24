@@ -60,8 +60,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+            Thanks for your feedback!           
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -141,23 +140,17 @@ nav:
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up Agents: ai-agents/create-agent.md
-      - App Settings:
-        - System Events: ai-agents/agentic-apps/settings/events.md
-        - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
-        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
-        - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
+      - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
-      - Supported LLM Models: ai-agents/agentic-apps/supported-models.md
     - Knowledge:
       - About Knowledge: ai-agents/knowledge/overview.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
-      - Workflow tools: 
-        - Overview: ai-agents/tools/workflow-tools.md
-        - Create a Tool: ai-agents/tools/create-a-new-tool.md
+      - Workflow Tools: 
+        - About Workflow Tools: ai-agents/tools/workflow-tools.md
+        - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
         - Tool Templates: ai-agents/tools/tool-templates.md
         - Import a Tool: ai-agents/tools/import-a-tool.md
         - Tool Flows:
@@ -198,12 +191,17 @@ nav:
           - Configure a Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
           - Import Tool as a Version: ai-agents/tools/import-a-tool/#import-tool-as-a-version
-      - Code tools: 
-        - Overview: ai-agents/tools/code-tools.md
-        - Create a Tool: ai-agents/tools/create-a-code-tool.md
-      - MCP tools: 
-        - Overview: ai-agents/tools/mcp-tools.md
-        - Create a Tool: ai-agents/tools/create-an-mcp-tool.md    
+      - Code Tools: 
+        - About Code Tools: ai-agents/tools/code-tools.md
+        - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
+      - MCP Tools: 
+        - About MCP Tools: ai-agents/tools/mcp-tools.md
+        - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
+    - App Settings:
+        - System Events: ai-agents/agentic-apps/settings/events.md
+        - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
+        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
+        - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
     - App Simulation:
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Analytics:
@@ -215,8 +213,9 @@ nav:
         - Import App: ai-agents/agentic-apps/import.md
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
-    - Integrations:
-      - AI for Service (XO): ai-agents/integrate-with-xo.md
+    - Business Solutions:
+      - AI for Service (XO): ai-agents/ai-for-service.md
+      - AI for Work: ai-agents/ai-for-work.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
@@ -246,6 +245,7 @@ nav:
         - External Models: 
           - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
           - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+      - Supported Models: models/supported-models.md        
     - Prompts:
       - About Prompt Studio: prompts/overview.md
       - Accessing Prompt Studio: prompts/accessing-prompt-studio.md

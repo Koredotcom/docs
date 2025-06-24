@@ -1,4 +1,4 @@
-# Workflow Tools
+# About Workflow Tools
 
 Workflow Tools can automate processes, streamline workflows, generate insights, and produce outputs such as deal summaries or emails. The tool builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
 

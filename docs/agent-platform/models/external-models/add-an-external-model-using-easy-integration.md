@@ -2,6 +2,7 @@
 
 Easily integrate models from popular providers like OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock using the Easy Integration option in Agent Platform.
 
+
 ## Integrate a Model from Anthropic using Easy Integration
 
 Steps to add the Anthropic Claude-V1 model using easy integration:
@@ -22,7 +23,7 @@ Steps to add the Anthropic Claude-V1 model using easy integration:
 
     A pop-up with the list of all the Anthropic models that are supported in Agent Platform is displayed.
     
-    For more information on the list of external models supported, see [Supported models](../external-models/add-an-external-model-using-easy-integration.md#supported-models).
+    For more information on the list of external models supported, see [Supported models](../supported-models.md).
 
     <img src="../images/select-model.png" alt="Select Model" title="Select Model" style="border: 1px solid gray; zoom:80%;">
 

@@ -30,19 +30,23 @@ For example, *“This is to inform you that your model credits are getting low. 
 
     Billing usage is tracked and displayed on the Billing Usage page. This page displays tool runs and model credit consumption, allowing users to easily track and adjust their usage as necessary.
     
+## Credit Usage Summary
+
+Users can easily track their usage and know when to take action. A **Clock** icon on the top right of the page visually represents credit usage. Click to view the following usage summary information:
+
+* The unique **Account ID** for the user or account. Click the **Copy** icon to copy and share this ID with the backend team for further debugging an issue in the account.
+* **Credits**: The *Total allocation* and *remaining credits* available in the account for the usage of models, guardrails, and custom scripts.
+* **Tool Runs**: The *Total allocation* and *remaining tool runs* available in the account for the usage of the tools automation flow.
+  <img src="../images/account-id-display.png" alt="account id" title="account id" style="border: 1px solid gray; zoom:75%;">
+
+To view detailed information on billing and usage, click **Manage billing**. [Learn more](https://docs.kore.ai/agent-platform/settings/billing/billing-and-usage/){:target="_blank"}. 
 
 
-## Credit Usage Indicator
-
-Users can easily track their usage and know when to take action. At the top right corner of the application, a round pie chart icon visually represents credit usage.
-
-<img src="../images/managing_usage_color_coding.png" alt="Credit usage indicator" title="Credit usage indicator" style="border: 1px solid gray; zoom:80%;">
-
-As credits are consumed, the pie ring icon fills up or depletes to indicate how much of the available credits have been used. The icon's color dynamically changes based on your credit usage, providing a clear visual indicator of your remaining balance.
+As credits are consumed, the dynamic pie chart indicates how much of the available credits have been used. The icon's color dynamically changes based on your credit usage, providing a clear visual indicator of your remaining balance.
 
 * **Green (Good Balance)**: The icon is mostly or fully green, indicating that more than 75% of credits are available and the user has a healthy credit balance.
 * **Yellow/Orange (Moderate Usage)**: As credits are used, the icon turns yellow or orange, indicating that 25% - 75% of credits remain and that the user is using a moderate amount of credits.
 * **Red (Low Credits)**: The icon turns red when less than 25% of credits remain, warning the user to add credits soon to avoid disruption.
 * **Triangle Icon (Credits Exhausted)**: When credits are fully depleted, the icon changes to a triangle (associated with a warning), indicating that no credits are left. Users must add credits to resume services like model deployments or tool runs.
 
-For help with adding credits or managing your account, contact Agent Platform Support.
+For help with adding credits or managing your account, [contact](https://kore.ai/support/){:target="_blank"} Agent Platform Support.
