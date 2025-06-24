@@ -5,14 +5,14 @@
 Contact center administrators can integrate external Gen AI models to enhance conversation summarization capabilities. This feature enables you to:
 
 * Use custom models for conversation summarization
-* Support additional languages not natively available in CCAI
+* Support additional languages not natively available in Contact Center AI (CCAI)
 * Create customized summarization prompts
 
 ## Prerequisites
 
 Before configuring external Gen AI models, ensure you have:
 
-* Access to the XO11 platform
+* Access to AI for Service (XO Platform)
 * Administrative privileges
 * Gen AI connector provided by the platform team
 * A configured external Gen AI model
@@ -37,7 +37,7 @@ Before configuring external Gen AI models, ensure you have:
 
 To set up a custom summarization model:
 
-1. Access the GenAI & LLM on the XO11 Platform.
+1. Access the GenAI & LLM on AI for Service .
 2. Configure your external Gen AI model. [Learn more](../../../generative-ai-tools/introduction.md).
 3. Define custom prompts for your specific summarization needs.
 
