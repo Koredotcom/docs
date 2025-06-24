@@ -210,7 +210,7 @@ A sales assistant agent uses a sequential pattern to assess and score leads. Fir
 1. Hover over the existing node, click the **blue + icon,** and then choose **Add New** or **Add Existing**. 
 The selected node is added and connected in sequence.
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/blue_plus_icon.png" alt="Blue plus icon" title="Blue plus icon" style="border: 1px solid gray; zoom:80%;">
 
 **Option 3: Use the Connections Panel**
 
@@ -221,7 +221,7 @@ The selected node is added and connected in sequence.
     * Connect to an existing, unused node.
 4. A sequential connection is automatically created and reflected on the canvas.
 
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/sequential_connection.png" alt="Sequential connection" title="Sequential connection" style="border: 1px solid gray; zoom:80%;">
 
 **Key Considerations**
 
@@ -249,19 +249,19 @@ Flow Builder supports several ways to structure parallel logic, depending on how
 A single node branches out to multiple child nodes, each running independently.
 *Use this when tasks can occur simultaneously without any dependencies.*
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/simple_parallel.png" alt="Simple parallel" title="Simple parallel" style="border: 1px solid gray; zoom:80%;">
 
 * **Nested Parallel**
 A parallel branch contains its own parallel branches. 
 *Useful for multi-step logic where each level does independent work.
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/nested_parallel.png" alt="Nested parallel" title="Nested parallel" style="border: 1px solid gray; zoom:80%;">
 
 * **Conditional + Parallel**
 Combine condition nodes with parallel execution. Based on logic (e.g., if/else), different sets of parallel branches are triggered.
 *Example: If status is "new", run onboarding tasks in parallel. If "existing", skip them.*
 
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/conditional_parallel.png" alt="Conditional parallel" title="Conditional parallel" style="border: 1px solid gray; zoom:80%;">
 
 **Steps to create a parallel connection:**
 
@@ -276,7 +276,7 @@ You can design parallel execution using either the Canvas or the Connections Pan
 
 The selected node is added, and a connection line is automatically drawn between the nodes.
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="./conditional_parallel.png" alt="Parallel Connection" title="Parallel Connection" style="border: 1px solid gray; zoom:80%;">
 
 
 **Option 2: Drag-to-Connect on the canvas**
@@ -301,11 +301,11 @@ Nodes that are already connected will be disabled.
 ![alt_text](images/image3.png "image_tooltip")
 
 
-**Important**
+!!! important
 
-* **Max Outgoing Connections**: You can create up to **10 outgoing connections** from a single node. After that, new connection options are disabled.
-* **No Duplicate Connections**: You can’t connect the same node more than once from the same parent. The system automatically prevents duplicate connections from a single branch.
-* **No Backward Loops**: You cannot connect a node to another node that appears earlier in the flow. The system blocks such connections and displays an error message to prevent unintended logic cycles and ensure stable, predictable flow execution. Existing deployed flows with backward connections will continue to run, but exporting and re-importing them will cause execution to break, as backward loops are no longer supported in the current Flow Builder.
+    * **Max Outgoing Connections**: You can create up to **10 outgoing connections** from a single node. After that, new connection options are disabled.
+    * **No Duplicate Connections**: You can’t connect the same node more than once from the same parent. The system automatically prevents duplicate connections from a single branch.
+    * **No Backward Loops**: You cannot connect a node to another node that appears earlier in the flow. The system blocks such connections and displays an error message to prevent unintended logic cycles and ensure stable, predictable flow execution. Existing deployed flows with backward connections will continue to run, but exporting and re-importing them will cause execution to break, as backward loops are no longer supported in the current Flow Builder.
 
 **Key Considerations**
 
@@ -330,7 +330,7 @@ You can also manage connections from the Configuration Panel:
 2. In the Connections tab, click the Delete icon next to the connection you want to remove.
 3. The connection is deleted instantly from both the panel and the canvas.
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/delete_icon.png" alt="Delete icon" title="Delete icon" style="border: 1px solid gray; zoom:80%;">
 
 ## Common Issues and How to Resolve Them
 
@@ -378,7 +378,6 @@ You can also manage connections from the Configuration Panel:
 </table>
 
 
-
 ## Tips for Better Flow Design
 
 * Use **parallel** structures to speed up independent tasks.
@@ -402,7 +401,7 @@ In sequential flows, node execution is logged in the exact order of operation in
 * Each node appears one after another based on the flow sequence.
 * This view helps track the step-by-step progression of the flow and isolate issues in linear flows.
 
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/sequential_log.png" alt="Sequential log" title="Sequential log" style="border: 1px solid gray; zoom:80%;">
 
 ### View Parallel Execution in Logs
 
@@ -414,7 +413,7 @@ When a flow includes parallel branches, the Debug Logs panel helps you trace eac
 * Branches are labeled (for example, A, B, C) to show separate paths.
 * You can expand or collapse each branch to view or hide its details.
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/parallel_log.png" alt="Parallel log" title="Parallel log" style="border: 1px solid gray; zoom:80%;">
 
 **Behavior**
 

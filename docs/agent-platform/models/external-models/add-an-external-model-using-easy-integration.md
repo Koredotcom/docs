@@ -42,219 +42,66 @@ The model is integrated and is listed in the External models list.
 
 ## Integrate a Model from Amazon Bedrock
 
-Use this procedure to connect and configure Amazon Bedrock models within the platform by setting up credentials, model details, and testing your integration.
+You can easily connect Amazon Bedrock models to the Kore Agent Platform using a guided setup flow. This process enables secure role-based access using your own AWS credentials.
+
+!!! important
+
+    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS system (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Kore Agent Platform’s AWS principal (or a designated IAM role in a Kore AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md).
+
 
 Steps to add Amazon Bedrock models using easy integration:
 
-1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
-2. Click the **External models** tab on the **Models** page.
+<font size="4">**1. Start the Integration**</font> 
 
-![alt_text](images/image1.png "image_tooltip")
+1. Click **Models** in the top navigation bar of the application.
+2. Go to the **External Models** tab.
+3. Click **Add a model**. The *Add an external model* dialog appears.
+4. Select **Easy integration** and click **Next**.
+5. Choose **AWS Bedrock** and click **Next**.
 
-3. Click **Add a model** under the **External models** tab. The **Add an external model** dialog is displayed.
+<font size="4">**2. Configure the Integration**</font> 
 
-![alt_text](images/image2.png "image_tooltip")
+In the AWS Bedrock dialog, configure the following:
 
-4. Select the **Easy integration** option to integrate models from Amazon Bedrock and click **Next**.
-5. Select **AWS Bedrock** to integrate with and click **Next**.
+* **Credentials**: 
+    * **Identity Access Management (IAM) Role ARN**: Enter the full ARN of your IAM role that has permission to invoke Amazon Bedrock models. This role allows secure cross-account access following least-privilege principles. For more information, see [Setting Up Credentials and Trust Policy (IAM Role & STS)](./configuring-aws.md#step-1-setting-up-credentials-and-trust-policy-iam-role--sts).
+    * **Amazon STS Link**: Provide the STS endpoint URL for the region where the IAM role resides.
+    * **Trusted Principal ARN (Kore Platform)**: Use the ARN provided by Kore to allow the platform to assume your role.
 
-![alt_text](images/image3.png "image_tooltip")
+* **Model Details**: 
+    * **Model name:** Enter a custom name to identify this model internally within your workflows.
+    * **Model ID**: Enter the Model ID or Endpoint ID of the Amazon Bedrock model you want to use. For more information, see [Finding the Right Model ID and Region](./configuring-aws.md#step-2-finding-the-right-model-id-and-region).
+    * **Region**: Specify the AWS region where the Bedrock model is deployed.
 
-6. In the AWS Bedrock dialog, configure the following:
+* **Headers (Optional)**: Provide any additional information to include with the HTTP request. Use this if your model requires custom headers for configuration or authentication.
+For example: "Content-Type": "application/json"
 
-Credentials
-Model Details
-Headers
-VAriables
-Body
-Test Response
+* **Variables (Optional):** Define the input variables that will be used within your request payload. These are used to bind dynamic input values to your payload structure.
+For example: {{prompt}}, {{system.prompt}}
 
-
-
-## Configuring Amazon Bedrock Models
-
-To ensure secure cross-account access, this setup follows the principle of **least privilege**. You must create an IAM Role that grants only the required permissions to invoke Bedrock models and explicitly trusts the platform to assume this role via AWS STS.
-
-To integrate your Bedrock models, you will need to:
-
-1. Set up IAM credentials and a trust policy to allow access.
-2. Provide the correct Model ID and deployment region.
-3. Test the configuration and map the output.
-
-
-### Step 1. Setting Up Credentials and Trust Policy (IAM Role & STS)
-
-**1. Create the IAM Role in Your AWS Account**
-
-Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf. 
-
-You can follow the IAM role creation setup in the [AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
-
-For best practices on setting up IAM policies for Bedrock, see the
-[AWS policy examples guide](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html). 
-
-Assign the necessary permissions to the role. An example IAM policy is shown below:
-
-```
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "bedrock:InvokeModel",
-        "bedrock:ListFoundationModels"
-      ],
-      "Resource": "*"
-    }
-  ]
-}
-```
-
-**2. Set the Trust Policy in Your AWS Account**
-
-Set the trust policy to allow the platform to assume the IAM role. Replace <kore-arn> with the AWS account ID provided by the platform.
-
-```
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Principal": {
-        "AWS": "<kore-arn>"
-      },
-      "Action": "sts:AssumeRole"
-    }
-  ]
-}
-```
-
-For private/on-prem deployments, the trust policy should point to your internal AWS IAM role.
-
-**3. Set the STS Endpoint**
-
-Use the STS endpoint for the region where your IAM role resides.
-
-You can find the full list of STS endpoints in the [AWS documentation](https://docs.aws.amazon.com/general/latest/gr/sts.html). 
-
+* **Body**: Provide a sample JSON request body for invoking the model. Use the defined variable placeholders {{variableName}} (e.g., {{prompt}})  to bind input fields dynamically.
 For example:
 
 ```
-https://sts.us-east-1.amazonaws.com/
-```
-
-Ensure the STS region matches the region of your IAM role — **not necessarily the region of the model**. 
-
-### Step 2. Finding the Right Model ID and Region
-
-Amazon Bedrock supports different model ID formats depending on how the model is deployed. This section outlines how to find the correct values for each case.
-
-**1. Base Foundation Models**
-
-If you're using base foundation models provided by Bedrock, you can use their standard model IDs directly. Refer to the complete list in the [AWS Documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html).
-
-
-**2. Marketplace-Deployed Models**
-
-If you’ve subscribed to a model through the AWS Marketplace:
-
-1. Go to **Bedrock Console → Model Access → Subscriptions**.
-2. Locate the **Model ARN** or a Marketplace Model ID. For example:
-   ```
-   arn:aws:bedrock:us-east-1::foundation-model/your-model-id
-   ```
-3. Enter only the model name part (after `foundation-model/`) into the **Model ID** field.
-
-**3. Models with Inference Profiles (Provisioned Throughput)**
-
-For models that do not support on-demand throughput (like Claude 3), you must create a Provisioned Throughput inference configuration.
-
-1. Go to the **Bedrock Console > Provisioned Throughput**.
-2. Select or create an **inference configuration**.
-3. Copy the **Inference ARN** or ID. For example:
-   ```
-   bedrock:provisioned-model-inference/my-throughput-id
-   ```
-4. Use the `my-throughput-id` value in the **Model ID** field.
-
-
-### Step 3. Test and Map the Model
-
-Once you’ve provided credentials and model details, you can test your configuration and map model responses.
-
-**1. Define Prompt Variables**
-
-In the Prompt Variables section, add any variables used in your request payload.
-
-For example:
-
-* `prompt`: user input
-* `system.prompt`: system instructions
-
-
-**2. Define Request Body**
-
-Use {{variableName}} to bind input fields dynamically.
-
-Example payload:
-
-```
 {
-  "prompt": "{{prompt}}",
-  "max_tokens": 200,
-  "temperature": 0.8
+      "prompt": "{{prompt}}",
+      "max_tokens": 200,
+      "temperature": 0.7
 }
 ```
 
-**3. Test the Configuration**
+   **Note:** The structure of the request body should follow the model-specific API schema. Use only supported parameters for the selected Amazon Bedrock model.
 
-1. Provide test values for the input variables.
-2. Click **Test** to invoke the model.
-3. Review the raw response.
+<font size="4">**3. Testing the Configuration**</font> 
 
-**Note**: If the call fails, ensure the IAM Role, STS endpoint, and model ID are valid .
+* **Test Response**: Provide sample values for your variables and click **Test** to invoke the model and preview the response.
+* **Configure JSON Path**: Define JSON paths to extract relevant output fields (for example, response text, token usage) from the model response.
 
-**4. Map Output Fields**
+<font size="4">**4. Finalize the Configuration**</font> 
 
-Configure JSON Paths to extract:
+* Click **Save as draft** to store the configuration without activating it.
+* Or, click **Confirm** to finalize and add the model connection.
 
-* Model output (e.g., response text)
-* Input and output token counts
-
-Example:
-
-<table>
-  <tr>
-   <td><strong>Field</strong>
-   </td>
-   <td><strong>JSONPath</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Output Text
-   </td>
-   <td><code>$.output.text</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Input Token Count
-   </td>
-   <td><code>$.usage.input_tokens</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Output Token Count
-   </td>
-   <td><code>$.usage.output_tokens</code>
-   </td>
-  </tr>
-</table>
-
-
-
-
-
-
+Once completed, your model appears in the **External Models** tab. You can now reference this model in your **Prompts** and **Tools** across the platform.
 
 
