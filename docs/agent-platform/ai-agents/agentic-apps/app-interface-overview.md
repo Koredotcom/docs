@@ -46,6 +46,7 @@ The **Tools listing page** provides a structured view of available tools with cl
 ## Knowledge Listing Page
 
 The **Knowledge listing page** provides a structured view of all knowledge bases, offering clear visibility into their count, linked agents, and accessibility from a unified section.
+
 [Learn more about Knowledge](https://docs.kore.ai/agent-platform/ai-agents/knowledge/overview/).
 
 ### Key Highlights:
