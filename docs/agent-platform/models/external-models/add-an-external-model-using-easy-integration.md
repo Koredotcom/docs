@@ -69,8 +69,6 @@ In the AWS Bedrock dialog, configure the following:
 * **Credentials**: 
     * **Identity Access Management (IAM) Role ARN**: Enter the full ARN of your IAM role that has permission to invoke Amazon Bedrock models. This role allows secure cross-account access following least-privilege principles.  
     For more information, see [Setting Up Credentials and Trust Policy (IAM Role & STS)](./configuring-aws.md#step-1-setting-up-credentials-and-trust-policy-iam-role--sts).
-    * **Amazon STS Link**: Provide the STS endpoint URL for the region where the IAM role resides.
-    * **Trusted Principal ARN (Kore Platform)**: Use the ARN provided by Kore to allow the platform to assume your role.
 
 * **Model Details**: 
     * **Model name:** Enter a custom name to identify this model internally within your workflows.
