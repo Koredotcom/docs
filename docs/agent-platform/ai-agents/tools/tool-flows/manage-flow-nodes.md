@@ -2,7 +2,7 @@
 
 A flow consists of a sequence of nodes connected on the flow builder canvas. You can easily add nodes to the canvas, connect them, rename, rearrange, and delete them as needed.
 
-The Tool Flow builder lets you visually design workflows by arranging and connecting nodes on a canvas. 
+The Tool Flow builder lets you visually design workflows by arranging and connecting nodes on a canvas.
 
 This page covers how to:
 
@@ -14,7 +14,7 @@ This page covers how to:
 
 ## Add Nodes
 
-Every new flow begins with a **Start** node, which is automatically placed on the canvas by default. This node acts as the entry point and must be connected to at least one other node to form a valid flow. 
+Every new flow begins with a **Start** node, which is automatically placed on the canvas by default. This node acts as the entry point and must be connected to at least one other node to form a valid flow.
 
 To ensure the tool functions properly, all nodes must be connected—directly or indirectly—to the Start node. If any initial nodes are not linked to the Start node, the flow may malfunction or fail to execute as expected. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
 
@@ -65,7 +65,7 @@ Optional layout options:
 
 ## Connect Nodes
 
-In Flow Builder, node connections determine how tasks flow from one node to another—either sequentially or through multiple parallel branches.
+In Flow Builder, node connections determine how tasks flow from one node to another — either sequentially or through multiple parallel branches.
 
 You can create and manage connections in the following ways:
 
@@ -190,10 +190,10 @@ These execution patterns define how tasks run across a workflow—either one aft
 
 ### Designing Sequential Flows
 
-In a sequential structure, nodes execute one after another in a defined order. Each node begins only after the previous one finishes, making this structure ideal when tasks are interdependent. 
+In a sequential structure, nodes execute one after another in a defined order. Each node begins only after the previous one finishes, making this structure ideal when tasks are interdependent.
 
 *Example Scenario: Lead Qualification Flow*
-A sales assistant agent uses a sequential pattern to assess and score leads. First, it fetches CRM data, then analyzes engagement history, and finally generates a lead score—all in order. Each task depends on the output of the previous one. 
+A sales assistant agent uses a sequential pattern to assess and score leads. First, it fetches CRM data, then analyzes engagement history, and finally generates a lead score—all in order. Each task depends on the output of the previous one.
  
 **Steps to create a sequential connection:**
 
@@ -201,13 +201,13 @@ A sales assistant agent uses a sequential pattern to assess and score leads. Fir
 
 1. Hover over the **blue + icon** or **grey connector dot** on the source node.
 2. Click and **drag a line** to the destination node.
-3. A connection line is drawn between the nodes, with an arrow indicating the direction of the node connection. 
+3. A connection line is drawn between the nodes, with an arrow indicating the direction of the node connection.
 
 <img src="./../images/connect-nodes.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
 
 **Option 2: Use the Blue + Icon**
 
-1. Hover over the existing node, click the **blue + icon,** and then choose **Add New** or **Add Existing**. 
+1. Hover over the existing node, click the **blue + icon,** and then choose **Add New** or **Add Existing**.
 The selected node is added and connected in sequence.
 
 <img src="../images/blue_plus_icon.png" alt="Blue plus icon" title="Blue plus icon" style="border: 1px solid gray; zoom:80%;">
@@ -230,7 +230,7 @@ The selected node is added and connected in sequence.
 * On the canvas, sequential connections are shown with single, linear paths.
 * Node interactions—such as hover, select, or drag—will always result in downstream execution behavior.
 * Logs display outputs in the exact order in which nodes are triggered, making it easier to debug or validate the logic.
-* Only one connection can exist per outcome (On Success or On Failure) in a sequential flow. Any additional connections will be treated as parallel branches. 
+* Only one connection can exist per outcome (On Success or On Failure) in a sequential flow. Any additional connections will be treated as parallel branches.
 
 ### Designing Parallel Flows
 
@@ -238,7 +238,7 @@ In a parallel flow, multiple branches run at the same time from the same parent 
 
 Flow Builder supports parallel execution to help you build faster and more flexible workflows—great for multi-channel actions, or when several tasks need to happen at once.
 
-*Example Scenario: Content Distribution Flow* 
+*Example Scenario: Content Distribution Flow*
 In a marketing automation workflow, once a campaign is approved, the workflow triggers multiple parallel nodes to publish content to LinkedIn, Twitter, and Email. Each platform-specific task runs independently but starts simultaneously.
 
 **Parallel Design Patterns**
@@ -276,7 +276,7 @@ You can design parallel execution using either the Canvas or the Connections Pan
 
 The selected node is added, and a connection line is automatically drawn between the nodes.
 
-<img src="./conditional_parallel.png" alt="Parallel Connection" title="Parallel Connection" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/blue_icon_parallel.png" alt="Blue icon" title="Blue icon" style="border: 1px solid gray; zoom:80%;">
 
 
 **Option 2: Drag-to-Connect on the canvas**
@@ -286,7 +286,7 @@ The selected node is added, and a connection line is automatically drawn between
 3. A connection line is drawn between the nodes, with an arrow indicating the direction of the node connection. 
 4. To form a fork for parallel execution, repeat the process by adding and connecting more nodes from the same parent.
 
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/parallel_dragtoconnect.png" alt="Drag to connect" title="Drag to connect" style="border: 1px solid gray; zoom:80%;">
 
 
 **Option 3: Use the Connections Panel**
@@ -298,7 +298,8 @@ Nodes that are already connected will be disabled.
 4. Click **+ Parallel Node** to add more branches.
 5. As soon as you select a node, it’s added as a parallel path. A connection line appears on the canvas to reflect the update.
 
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/parallel_connections_panel.png" alt="Drag to connect" title="Drag to connect" style="border: 1px solid gray; zoom:80%;">
+
 
 
 !!! important
@@ -320,9 +321,10 @@ Nodes that are already connected will be disabled.
 To delete a connection between nodes:
 
 1. Click the arrow/line between two nodes.
-2. Click the Delete icon.
-3. The nodes remain on the canvas but are no longer linked.
-4. Deleting a connection breaks the flow until the nodes are reconnected.
+2. Click the Delete icon. The nodes remain on the canvas but are no longer linked.
+3. Deleting a connection breaks the flow until the nodes are reconnected.
+
+<img src="../images/delete_connection.png" alt="Delete icon" title="Delete icon" style="border: 1px solid gray; zoom:80%;">
 
 You can also manage connections from the Configuration Panel:
 
