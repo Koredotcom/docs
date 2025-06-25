@@ -2,7 +2,6 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
-
 ## v1.0.7 June 20, 2025
 
 <u> Minor Release </u>
@@ -13,7 +12,8 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Preferred Agent Support**
 
-The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
+The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. 
+[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
 
 **Improved User Interface**
 
@@ -24,7 +24,7 @@ Key improvements
 * Enhanced listing pages - Consistent design across Agents, Tools, and Knowledge listings with comprehensive information displayed directly on list views.
 * Reduced navigation - Access critical details without drilling into individual items, streamlining the browsing experience.
 * Redesigned App Profile page - Improved layout and information architecture for better app overview and management.
-* Enhanced Configurations page - Optimized organization and presentation of configuration options. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
+* Enhanced Configurations page - Optimized organization and presentation of configuration options. 
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
 
@@ -38,12 +38,12 @@ Key features
 * Resume Sessions: Resume previous conversations from where they were left off.
 * Improved user interface: Intuitive interface updates, including the ability to easily copy messages.
 * Clear agent identification in thought streaming.
+
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
 
 **Import/Export Enhancements**
 
 The import/export feature now supports MCP server configurations and Memory Stores. This enhancement enables users to include these elements during import and export, simplifying migrations and reducing manual work for more comprehensive deployments across various environments.
-
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/export.md)
 
 
@@ -78,6 +78,7 @@ Key improvements
 * Object parameter type - Accept structured JSON input alongside existing string and number types.
 * Side-by-side layout - View parameters, code editor, and output simultaneously without scrolling.
 * Enhanced usability - Streamlined interface reduces context switching and accelerates development cycles.
+
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md)
 
 **MCP Tool Execution and Validation**
@@ -156,13 +157,7 @@ The Function node now allows admins to configure and execute custom functions us
 
 Note: By default, all arguments passed to the function are currently sent as '*string*'. If your function requires other data types, please handle the necessary conversions within your custom script. Support for input type validation and native data types will be available soon.
 
-
-
-
 <hr>
-
-
-
 
 ## v1.0.6 June 5, 2025
 
