@@ -18,7 +18,7 @@ This configuration is used when users upload documents during interactions as co
 
 
 
-* **File Limit**: Maximum number of files a user can upload. This can take a maximum value of **10. **
+* **File Limit**: Maximum number of files a user can upload. This can take a maximum value of **10**.
 * **Max File Size**: Maximum size of each file, up to **10 MB**. 
 * **Max Tokens**: Specifies the maximum combined size of all uploaded files, measured in tokens. This value can be set up to **150,000 tokens**. If the total token size of all files exceeds this threshold, files may be partially processed.
 
