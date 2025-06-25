@@ -13,6 +13,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 **Preferred Agent Support**
 
 The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. 
+
 [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
 
 **Improved User Interface**
