@@ -52,7 +52,7 @@ When a sentiment event is enabled, the platform evaluates each user input to det
 
 If the configuration is set to ***Run Script*** and a sentiment is detected:
 
-1. Smalltalks - Sentiment executes first, but Smalltalk gets stuck and doesn’t proceed.
+1. Smalltalks - Sentiment executes first, followed by the small talk execution.
 2. Dialog - Sentiment executes first, followed by the dialog execution.
 3. Execution Flow - Sentiment executes first, followed by fallback logic.
 4. At Different nodes: 
@@ -63,7 +63,7 @@ If the configuration is set to ***Run Script*** and a sentiment is detected:
 
 If the configuration is set to ***Initiate Task*** and a sentiment is detected:
 
-1. Small talks -  Sentiment executes first, followed by the configured dialog.
+1. Small talks -  Sentiment executes first, followed by the small talk execution.
 2. Dialog - Sentiment executes first, followed by the configured dialog.
 3. Execution Flow - Sentiment executes first, followed by the configured dialog.
 4. At Different nodes:
