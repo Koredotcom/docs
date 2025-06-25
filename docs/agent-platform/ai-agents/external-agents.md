@@ -17,9 +17,9 @@ The External Agents connected in the Agent platform must adhere to the Kore Agen
 
 ### Enabling External Agents
 
-Go to the **Configurations** page of the app and enable External Agents as shown below.
+Go to the app's **Overview** page. Click the edit icon at the top right of the App Profile section and enable **External Agents** as shown below. 
 
-   <img src="../images/external-agent.png" alt="External Agent" title="External Agent" style="border: 1px solid gray; zoom:80%;">
+![Enable External Agent](images/externalagents/enable-externalagent.png "Enable External Agent")
 
 ### Configuring the External Agent
 

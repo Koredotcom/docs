@@ -132,10 +132,11 @@ There are **three types of tools** that agents can use.
 
 * **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They are best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
-    !!!abstract "Examples"
-    * Weather API: Retrieves live weather updates.
-    * Stock Market Tool: Fetches real-time stock prices.
-    * Database Query Tool: Accesses structured data from a company’s database.
+!!!abstract "Examples"
+
+ * Weather API: Retrieves live weather updates.
+ * Stock Market Tool: Fetches real-time stock prices.
+ * Database Query Tool: Accesses structured data from a company’s database.
 
     For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md).
 
@@ -154,7 +155,7 @@ You can enhance an agent's capabilities by **creating a new tool** or **importin
 * **New tools** are custom-built within the context of a specific app and are not shared across other apps.
 * **Imported tools** act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.
 
-To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool** or **Code Tool**.
+To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool**, **Code Tool** or **MCP Tool**.
 
 For a **Workflow Tool**, enter the tool's **name** and **description**, then click **Create**. The tool will be added to your app. Next, go to the **Agent's Tools** page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool.
 
