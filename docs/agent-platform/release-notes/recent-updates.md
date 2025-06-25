@@ -26,6 +26,7 @@ Key improvements
 * Redesigned App Profile page - Improved layout and information architecture for better app overview and management.
 * Enhanced Configurations page - Optimized organization and presentation of configuration options. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
 
 **Enhanced Playground Experience**
 
@@ -66,6 +67,7 @@ Key benefits
 
 Note: Backward connections are no longer supported in the workflow builder. Existing deployed workflows will continue to run as they are. New workflows cannot include backward connections. Exporting and re-importing workflows with such connections will cause execution failures.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/manage-flow-nodes.md)
 
 **Revamped Code Tools Design**
 
@@ -102,6 +104,7 @@ Key benefits
 * Built-in validation, testing, and draft-saving for seamless configuration.
 * Automated credential management ensures secure and uninterrupted access to models.
 
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-amazon-bedrock)
 
 **Export Evaluation Tables to CSV**
 
