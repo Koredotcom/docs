@@ -25,3 +25,24 @@ For example, for **Bias Detection**:
 * **0 (Fail)**: The text contains bias. 
 
 Thus, Evaluation Studio displays the evaluation results using a simple pass/fail system, providing a clear and concise assessment of model performance.
+
+
+## Export Evaluation Results
+
+You can export the evaluation table to a CSV file for offline analysis or further use. The export includes all relevant data and summary metrics.
+
+**To export an evaluation:**
+
+1. Go to **Evaluation Studio** and open your desired project.
+2. Select the **evaluation** you want to export.
+3. Click the **three-dot menu** at the top-right corner of the evaluation table.
+4. Select **Export**.
+
+The CSV file will include:
+
+* All column data and score values.
+* Footer metrics, including:
+    * Boolean columns: pass%, fail%
+    * Score columns: pass%, fail%, average, min, max
+
+**Note:** The exported CSV file follows the same format and structure used across the platform for consistency.

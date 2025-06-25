@@ -187,13 +187,16 @@ Use the following format to create or update a record in the memory store. This 
 ```
 memory.set_content(<store_name>,<data_object>)
 ```
+
 **Parameters:**
+
 * store_name(string): the technical name of the store. 
 * data_object:  A JSON object representing the fields to write or update in the memory store.
 
 **Note**
-  * Records are stored based on the memory store’s access context: **session**, **user**, or **application**. 
-  * Fields not included in the update are retained as-is.
+
+* Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
+* Fields not included in the update are retained as-is.
 
 **Javascript Examples**
 

@@ -2,7 +2,7 @@
 
 The **Integrations** feature allows you to connect the Agent Platform to third-party services and use their features seamlessly within your account. This extends the platform’s capabilities to leverage these services and build high-quality AI applications. Once you add a connection for an integration, you can link it to the **Integration node** in the Tool Flow canvas. This allows you to seamlessly use third-party services while building your tool automation. [Learn more](../../tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
-The Agent Platform supports over 120 integrations across various categories. Each integration is secured by an authorization mechanism supported by the third-party service, which validates the user’s identity before accessing account resources, such as apps or files. The three primary auth methods supported for integrations include:
+The Agent Platform supports over 120 integrations across various categories. Each integration is secured by an authorization mechanism supported by the third-party service, which validates the user’s identity before accessing account resources, such as apps or files. The primary auth methods supported for integrations include:
 
 * **API**: A simple token is passed in the request (usually in headers or query parameters) to authenticate the user or app trying to access an API.
 * **OAuth2**: Uses the OAuth2 industry-standard authorization framework to grant limited access to resources on a service without sharing passwords. The auth method uses the following concepts:
@@ -11,6 +11,7 @@ The Agent Platform supports over 120 integrations across various categories. Eac
     * **Expires**: Tokens often have a time limit for security.
     * **Refresh Token**: A token used to get a new access token when the old one expires.
 * **Bearer**: **API authentication** where the client sends a **token** (called a *bearer token*) in the request header to access protected resources after a successful login or authorization (usually via OAuth 2.0). The server checks the token to verify if the request is allowed.
+* **Basic Auth**: The client sends a username and password in the request header. The server checks the credentials and either allows the request or returns a 401 Unauthorized error if they’re invalid. The user stays authenticated as long as the connection is active. This method doesn’t track user sessions, credentials are sent with every request. The Agent Platform supports **Basic Auth** for Service Now, Freshdesk, Snowflake,Amplitude, and Mixpanel integrations.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -41,7 +42,7 @@ The features supported on the **Integrations** page include:
 <img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;">
 
 
-* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, and Bearer. Refer to the [overview](../integrations/about-integrations.md#add-a-connection-to-set-up-integration){:target="_blank"} section for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
+* **Authorization Dropdown List**: The available types for authentication methods are API, OAuth2, Bearer, and Basic Auth. Refer to the [overview](../integrations/about-integrations.md#add-a-connection-to-set-up-integration){:target="_blank"} section for more details. Select the required option(s) and click **Apply** to view the relevant integrations.
 <img src="../images/select-category-integration.png" alt="select auth" title="select auth" style="border: 1px solid gray; zoom:75%;">
 
 * **List View**: Click this icon to view the available integration options as a list with the following information:
@@ -1711,14 +1712,14 @@ To add a connection and configure an integration, follow the steps below:
 4. The Configuration window is displayed, where you must enter the following information:
     * **Connection Name**: A unique name to identify the integration.
     * **Authorization Details** 
-        * Configure the required authorization details in this section to securely connect to the tool and access external services. A provider may support more than one auth type. In this case, you must select the authentication type you want to set up for the integration, such as *OAuth2*, *Bearer Token*, or *API*.
+        * Configure the required authorization details in this section to securely connect to the tool and access external services. A provider may support more than one auth type. In this case, you must select the authentication type you want to set up for the integration, such as *OAuth2*, *Bearer Token*, *Basic Auth*, or *API*.
 
         <div class="admonition note">
         <p class="admonition-title">Note</p>
         <p>You are allowed to select only one auth type for a connection.</p>
         </div>
 
-        * The **Pre-authorize the integration** option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as *OAuth2* or *Bearer* from the available options to configure the credentials. 
+        * The **Pre-authorize the integration** option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as *OAuth2*, *Bearer*, or *Basic Auth* from the available options to configure the credentials. 
 
         * Based on the selected authorization method, the relevant configuration fields automatically appear under each corresponding authorization type.
 
@@ -1753,6 +1754,15 @@ To add a connection and configure an integration, follow the steps below:
       <p class="admonition-title">Note</p>
       <p>For other Authentication types, such as OAuth1, retrieve the required values from the admin console of your account on the provider’s site to configure the integration.</p>
       </div>
+
+      **Basic Auth**
+
+      * When you select this auth type, you must provide the required configuration values. For example, an **Amplitude** project requires an *API key* and *API secret*.
+      * You can retrieve (copy and paste) these values from the *Admin console* of your account on the provider’s site.
+      * Click **Test** to validate the connection. A success message is displayed once the connection is set up.
+
+         <img src="../images/basic-auth-set-up.png" alt="test validation for basic auth" title="test validation for basic auth" style="border: 1px solid gray; zoom:75%;">
+
 
 <ol start="5"><li>Click <b>Save</b>.</li>
 <div class="admonition note">
@@ -1796,7 +1806,7 @@ Once you click the integration in the **Connected** section, the list of configu
 * **Connection Name**: The unique name provided during the connection setup.
 * **Added By**: The name of the admin/account user who added the connection.
 * **Authorization Details**: *Pre-authorize* is displayed.
-* **Integration Type**: API, OAuth2, Bearer, etc., based on the type used.
+* **Integration Type**: API, OAuth2, Bearer, Basic Auth, etc., based on the type used.
 * **Added on**: The date when the connection was added.
 * **Action**: Allows you to test the connection or enable/disable it.
 

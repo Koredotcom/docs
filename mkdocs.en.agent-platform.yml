@@ -139,6 +139,7 @@ nav:
       - DialogGPT: dialog-agents/dialoggpt.md
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:
+      - Agentic App Interface: ai-agents/agentic-apps/app-interface-overview.md     
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md
@@ -185,7 +186,7 @@ nav:
           - Understanding Tool Monitor: ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface.md
         - API Keys: 
           - Create an API Key: ai-agents/tools/create-a-new-api-key.md 
-        - Audit logs:
+        - Audit Logs:
           - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
         - Configurations:
           - Configure a Tool: ai-agents/tools/configure-a-tool.md

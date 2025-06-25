@@ -16,7 +16,7 @@ To import Agentic Apps or agents in an agentic app, take the following steps.
 * Go to the Import Logs tab.
 * Click the Import button.
 
-    <img src="../images/import-agent.png" alt="Import Agent" title="Import Agent" style="border: 0px solid gray; zoom:80%;">
+    <img src="../images/import-agent.png" alt="Import Agent" title="Import Agent" style="border: 1px solid gray; zoom:80%;">
 
 * Upload the config file to use for importing and click Proceed.
 

@@ -128,23 +128,25 @@ Powered by the tool invocation capabilities of large language models (LLMs), age
         * Initiate bill payment - Initiates bill payment process
         * Find recent transactions - Present last *n* transactions that might include retrieving data from a database. 
 
-There are **two types of tools** that agents can use.
-
-
+There are **three types of tools** that agents can use.
 
 * **Workflow Tools**: **Workflow Tools** provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They are best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
 !!!abstract "Examples"
-    * Weather API: Retrieves live weather updates.
-    * Stock Market Tool: Fetches real-time stock prices.
-    * Database Query Tool: Accesses structured data from a company’s database.
 
-For more information, see [About Tools](./../ai-agents/tools/overview.md).
+ * Weather API: Retrieves live weather updates.
+ * Stock Market Tool: Fetches real-time stock prices.
+ * Database Query Tool: Accesses structured data from a company’s database.
+
+    For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md).
 
 * **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
 
-    For more information, see [Code Tools](./agentic-apps/inline-tools.md).
+    For more information, see [Code Tools](tools/code-tools.md).
 
+* **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.  Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they are centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They are best suited for seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
+
+    For more information, see [MCP Tools](tools/mcp-tools.md).
 
 ### Adding a Tool to Agent
 
@@ -153,13 +155,13 @@ You can enhance an agent's capabilities by **creating a new tool** or **importin
 * **New tools** are custom-built within the context of a specific app and are not shared across other apps.
 * **Imported tools** act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.
 
-To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool** or **Code Tool**.
+To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool**, **Code Tool** or **MCP Tool**.
 
 For a **Workflow Tool**, enter the tool's **name** and **description**, then click **Create**. The tool will be added to your app. Next, go to the **Agent's Tools** page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool.
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](agentic-apps/code-tools.md) for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md) for details on creating a new code tool, along with an example. 
 
 ### Importing a Tool
 
