@@ -415,7 +415,7 @@ When a flow includes parallel branches, the Debug Logs panel helps you trace eac
 * Branches are labeled (for example, A, B, C) to show separate paths.
 * You can expand or collapse each branch to view or hide its details.
 
-<img src="../images/parallel_log.png" alt="Parallel log" title="Parallel log" style="border: 1px solid gray; zoom:80%;">
+
 
 **Behavior**
 

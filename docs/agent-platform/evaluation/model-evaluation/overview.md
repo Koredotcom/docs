@@ -40,3 +40,6 @@ The following outlines the key actions at each stage of the Model Evaluation use
 5. [**Run an evaluation**](./run-evaluation.md): Trigger the evaluation based on your dataset and selected evaluators.
 
 6. [**View evaluation results**](./view-evaluation-insight.md): Review the evaluator tiles in the Evaluation Insights section, where results are shown visually with color-coded indicators (e.g., green/red). Assess model performance by examining visual cues and scores.
+
+7. [**Export evaluation results**](./view-evaluation-insight.md#export-evaluation-results):
+After reviewing the results, you can export the evaluation table in CSV format using the three-dot menu. The export includes all column and score data, as well as footer metrics like pass%, fail%, average, min, and max.
