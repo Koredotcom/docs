@@ -4,7 +4,7 @@ A **Function** node lets you write and execute custom scripts using JavaScript o
 
 ## Add and Configure a Function Node
 
-Setting up a Function node includes adding the node at the appropriate location in the flow and configuring its properties.
+Setting up a Function node includes adding it at the appropriate location in the flow and configuring its properties.
 
 Steps to add and configure the node:
 
@@ -94,7 +94,7 @@ To write a custom function code from scratch (define its logic and flow), follow
 
 #### Context Variables for Dynamic Inputs
 
-Before you [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
+Before you [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
 
 #### Syntaxes for the Context Input
 
@@ -142,7 +142,7 @@ To run the flow for dynamic inputs, follow the steps below:
 <img src="../images/add-input-vars-function-node.png" alt="add input var" title="add input var" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click <b>Save</b>.</li></ol>
 
-Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}.
+Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
