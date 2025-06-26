@@ -26,7 +26,7 @@ You can add nodes to the canvas in three ways:
     * **Add new node** – Instantly places a new node on the canvas and connects it.
     * **Add existing node** – Allows you to select a previously added node.
 
-  <img src="./../images/add-a-new-node.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;">
+  <img src="../images/start_node_new.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;">
 
 ## Rename Nodes
 
@@ -38,8 +38,7 @@ To rename a node:
 
 Use clear, descriptive names to make your flow easy to understand. For example, Rename a generic “Function Node” to something meaningful like “Validate Email Input”.
 
-
-<img src="./../images/rename-a-node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/rename_node_new.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete Nodes
 
@@ -55,7 +54,7 @@ You can rearrange nodes for visual clarity without affecting their logical conne
 To move a node, click and drag the node to the desired location on the canvas.
 Only the selected node will move—connected lines will automatically adjust to maintain the connection, while other nodes remain fixed.
 
-<img src="./../images/rearrange-a-node.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/rearrange-a-node-new.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;">
 
 Optional layout options:
 
@@ -203,7 +202,7 @@ A sales assistant agent uses a sequential pattern to assess and score leads. Fir
 2. Click and **drag a line** to the destination node.
 3. A connection line is drawn between the nodes, with an arrow indicating the direction of the node connection.
 
-<img src="./../images/connect-nodes.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/connect-nodes-new.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
 
 **Option 2: Use the Blue + Icon**
 
@@ -415,7 +414,7 @@ When a flow includes parallel branches, the Debug Logs panel helps you trace eac
 * Branches are labeled (for example, A, B, C) to show separate paths.
 * You can expand or collapse each branch to view or hide its details.
 
-
+<img src="../images/debug_log_new.png" alt="Parallel log" title="Parallel log" style="border: 1px solid gray; zoom:80%;">
 
 **Behavior**
 

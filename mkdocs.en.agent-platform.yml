@@ -138,8 +138,7 @@ nav:
       - Supervisor: ai-agents/supervisor.md
       - DialogGPT: dialog-agents/dialoggpt.md
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
-    - Build AI Agents:
-      - Agentic App Interface: ai-agents/agentic-apps/app-interface-overview.md     
+    - Build AI Agents:   
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
       - Set up AI Agents: ai-agents/create-agent.md
       - Connect External Agents: ai-agents/external-agents.md

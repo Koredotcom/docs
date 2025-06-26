@@ -2,6 +2,18 @@
 
 A Knowledge Tool connects your Agentic application to a **Search AI application** within the **same workspace.** This integration enables the agent to retrieve accurate, context-aware responses by leveraging indexed content.
 
+## Knowledge Page
+
+The **Knowledge** page provides a structured view of all knowledge bases, offering clear visibility into their count, linked agents, and accessibility from a unified section.
+
+Key highlights
+
+* Displays the **total number of knowledge bases** in the section header.
+* Shows clear empty-state actions to guide first-time users: **Create from Scratch** and **Create from Existing Sources**.
+* Ensures knowledge bases are easily discoverable and manageable.
+
+<img src="../images/knowledge-listing-page.png" alt="Knowledge Listing Page" title="Knowledge Listing Page" style="zoom:70%; border: 1px solid gray;">
+
 ## Create a Knowledge Tool
 
 You can either create a new Search AI application from the Agentic application or link an existing Search AI application.
