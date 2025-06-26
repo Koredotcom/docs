@@ -205,13 +205,19 @@ Agents can initiate Consult calls, Conference calls, and Warm Transfer voice cal
 
 #### Consult Call
 
-Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call. Consult functionality will not be available if the conversation is being transferred to a queue.
+Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call.
 
 The agent chosen for consultation must be available and have zero load occupation. If an agent is brought in for consultation, their slots remain occupied throughout the consultation and conference call.
 
 During the consult call, the system automatically places the customer on hold, allowing internal agents to communicate with each other. All calls are recorded if recording is enabled. Calls can be transferred to external agents by pre-saving their phone numbers through an API.
 
 The initiating agent can switch to the original customer call if needed, and vice versa, using the Swap functionality. The initiating agent can merge the two calls, converting them into a conference call.
+
+##### Consult Call to a Queue (Voice Channel Only)
+
+The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent selects a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the agent chosen remains available at the time of connection.
+
+During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
 
 #### Conference Call
 
