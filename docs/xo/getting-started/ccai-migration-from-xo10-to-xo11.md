@@ -127,7 +127,7 @@ Steps to initiate the upgrade to XO v11:
     Click **Continue**.  
         <img src="../images/upgrade-screen.png" alt="SmartAssist Bot" title="SmartAssist Bot" style="border: 1px solid gray; zoom:70%;">
 
-7. Download & backup your bot, and click **Start Upgrade**. The following configuration data is downloaded:  
+7. The Include Agent Configuration checkbox is selected by default. It includes agent profile data, agent group assignments, agent-to-skill mappings, agent-to-experience flows, and agent-to-queue mappings.Click **Download & backup your bot**, and click **Start Upgrade**. The following configuration data is downloaded:  
     1. Instance-bot configurations.
     2. Agent-related information (for example, agent mapping to queues and agent groups).
     3. Experience flow and channel configurations
@@ -136,7 +136,7 @@ Steps to initiate the upgrade to XO v11:
         2. Digital forms,
         3. Conversation status control configurations,
         4. All other relevant SmartAssist configurations.  
-        <img src="../images/caution-screen.png" alt="Download Bot Config" title="Download Bot Config" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/include-agent-config.png" alt="Download Bot Config" title="Download Bot Config" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 

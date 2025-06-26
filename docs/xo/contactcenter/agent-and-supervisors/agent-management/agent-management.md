@@ -407,8 +407,12 @@ Administrators can select from the following routing options that complement exi
 
 **Fairer Workload distribution**: When enabled, this feature distributes tasks evenly across agents, which reduces overload, improves focus, and can decrease completion times.
 
-**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.  
-<img src="../images/additional-routing-configurations.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+**Hold interaction in queue until the wait time expires**: When enabled, interactions remain in the queue till the set queue max timeout, regardless of agent availability.
+
+**Omit Language in Routing**: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
+
+When disabled (Default), the system includes language as a routing criterion along with skill, proficiency, availability, and other parameters.  
+<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ## Enable Dial Tone Until Agent Connects
 
