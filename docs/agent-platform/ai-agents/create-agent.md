@@ -7,7 +7,7 @@ Setting up an agent involves defining its intended purpose, configuring its core
 
 ## Agents Page
 
-The **Agent** page displays all agents associated with the Agentic app as individual cards, providing clear visibility into each agent's connected tools and configuration status. It shows the total number of agents in the app.
+The **Agents** page displays all agents associated with the Agentic app as individual cards, providing clear visibility into each agent's connected tools and configuration status. It shows the total number of agents in the app.
 
 Key highlights
 
