@@ -78,7 +78,7 @@ In the AWS Bedrock dialog, configure the following:
 * **Headers (Optional)**: Provide any additional information to include with the HTTP request. Use this if your model requires custom headers for configuration or authentication.  
 For example: "Content-Type": "application/json"
 
-* **Variables (Optional):** Define the input variables that will be used within your request payload. These are used to bind dynamic input values to your payload structure.  
+* **Variables:** In the Prompt Variables section, define any input variables that will be used within your request payload. These are used to bind dynamic input values to your payload structure.  
 For example: {{prompt}}, {{system.prompt}}
 
 * **Body**: Provide a sample JSON request body for invoking the model. Use the defined variable placeholders {{variableName}} (such as {{prompt}})  to bind input fields dynamically.
@@ -92,9 +92,9 @@ For example:
       }
       ```
 
-      **Note:** The structure of the request body should follow the model-specific API schema. Use only supported parameters for the selected Amazon Bedrock model.
+    **Note**: The structure of the request body should follow the model-specific API schema. Use only supported parameters for the selected Amazon Bedrock model.
 
-<font size="4">**3. Testing the Configuration**</font> 
+<font size="4">**3. Test the Configuration**</font> 
 
 * **Test Response**: Provide sample values for your variables and click **Test** to invoke the model and preview the response.
 * **Configure JSON Path**: Define JSON paths to extract relevant output fields (for example, response text, token usage) from the model response.
