@@ -4,6 +4,18 @@ Tools are foundational components that empower agents to perform purposeful acti
 
 Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
 
+The **Tools listing page** provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
+
+Key Highlights
+
+* Displays total count categorized under **Workflow**, **Code**, and **MCP.**
+* Displays the **Workflow tool status** as **Draft** or **Deployed.**
+* Lists up to five linked agents per tool, with **a 'Load** **more'** option for additional agents.
+* Provide empty-state CTAs: **Import** and **New Tool** for Workflow tools, **New Tool** for Code tools, **Import** and **Link Tool** for MCP tools.
+* **Import Tool** and **New Tool** CTAs are located at the top right for easy access.
+
+<img src="../images/tools-listing-page.png" alt="Tools Listing Page" title="Tools Listing Page" style="zoom:70%; border: 1px solid gray;">
+
 For example, a ‘Leave Managing Agent’ might include tools like:
 
 * Get Leave Balance tool - Invokes an external API to retrieve leave details.

@@ -1,5 +1,17 @@
 # Create an Agentic App
 
+The Overview section provides a structured summary of your app with linked agents, tools, and knowledge bases, organized into four main sections for improved navigation and usability.
+
+Key Highlights
+
+* **App Summary** displays essential app details with an **Edit** option for configuration changes.
+* **The Agents** section shows the autonomous agents of the app. The list shows up to three agents with icons, names, descriptions, and linked tools.
+* **The Tools** section lists the tools associated with the agents in the Agentic app.
+* **The Knowledge** section displays knowledge bases associated with the Agentic app.
+* All sections use **"Load more"** functionality instead of traditional pagination.
+
+<img src="../images/overview.png" alt="Overview" title="Overview" style="zoom:70%; border: 1px solid gray;">
+
 Prerequisites:
 
 * Add an AI Model that supports tool-calling capabilities. The Agent Platform currently supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
@@ -9,7 +21,6 @@ Prerequisites:
 Creating an Agentic App consists of the following steps: 
 
 ![Create App](images/steps-app-creation.png "Agentic App Creation")
-
 
 ### Step 1: Create an Agentic App
 
