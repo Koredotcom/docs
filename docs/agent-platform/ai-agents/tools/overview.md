@@ -16,21 +16,6 @@ Similarly, a ‘Credit Card Assistant’ might include tools like:
 * Initiate Bill Payment tool - Initiates the bill payment process.
 * Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database.
 
-## Tools page
-
-The **Tools page** provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
-
-Key Highlights
-
-* Displays total count categorized under **Workflow**, **Code**, and **MCP.**
-* Displays the **Workflow tool status** as **Draft** or **Deployed.**
-* Lists up to five linked agents per tool, with **a 'Load** **more'** option for additional agents.
-* Provide empty-state CTAs: **Import** and **New Tool** for Workflow tools, **New Tool** for Code tools, **Import** and **Link Tool** for MCP tools.
-* **Import Tool** and **New Tool** CTAs are located at the top right for easy access.
-
-<img src="../images/tools-listing-page.png" alt="Tools Listing Page" title="Tools Listing Page" style="zoom:70%; border: 1px solid gray;">
-
-
 ## Types of Tools
 
 The Agent platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
@@ -80,3 +65,16 @@ Examples:
 * Remote Invoice Processor – Executes billing operations through a secure MCP endpoint.
 
 For more information, see [MCP Tools](../tools/mcp-tools.md).
+
+## Tools Page
+
+The **Tools** page provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
+
+Key highlights
+
+* Displays total count categorized under **Workflow**, **Code**, and **MCP.**
+* Displays the **Workflow tool status** as **Draft** or **Deployed.**
+* Provide empty-state CTAs: **Import** and **New Tool** for Workflow tools, **New Tool** for Code tools, **Import** and **Link Tool** for MCP tools.
+* **Import Tool** and **New Tool** CTAs are located at the top right for easy access.
+
+<img src="../images/tools-listing-page.png" alt="Tools Listing Page" title="Tools Listing Page" style="zoom:70%; border: 1px solid gray;">
