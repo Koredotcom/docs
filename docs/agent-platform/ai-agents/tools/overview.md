@@ -4,7 +4,21 @@ Tools are foundational components that empower agents to perform purposeful acti
 
 Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
 
-The **Tools listing page** provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
+For example, a ‘Leave Managing Agent’ might include tools like:
+
+* Get Leave Balance tool - Invokes an external API to retrieve leave details.
+* Leave Application tool - Gathers necessary information and applies leaves in the backend system. 
+
+Similarly, a ‘Credit Card Assistant’ might include tools like:
+
+* Retrieve Outstanding Amount tool - Fetches the current due amount.
+* Fetch Credit Limit tool - Retrieves the user's maximum credit limit.
+* Initiate Bill Payment tool - Initiates the bill payment process.
+* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database.
+
+## Tools page
+
+The **Tools page** provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
 
 Key Highlights
 
@@ -16,17 +30,6 @@ Key Highlights
 
 <img src="../images/tools-listing-page.png" alt="Tools Listing Page" title="Tools Listing Page" style="zoom:70%; border: 1px solid gray;">
 
-For example, a ‘Leave Managing Agent’ might include tools like:
-
-* Get Leave Balance tool - Invokes an external API to retrieve leave details.
-* Leave Application tool - Gathers necessary information and applies leaves in the backend system. 
-
-Similarly, a ‘Credit Card Assistant’ might include tools like:
-
-* Retrieve Outstanding Amount tool - Fetches the current due amount.
-* Fetch Credit Limit tool - Retrieves the user's maximum credit limit.
-* Initiate Bill Payment tool - Initiates the bill payment process.
-* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database. 
 
 ## Types of Tools
 
