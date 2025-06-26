@@ -1,4 +1,4 @@
-# Function Node - Automate Function Executions
+# Function Node - Automate Function Execution
 
 A **Function** node lets you write and execute custom scripts using JavaScript or Python, or use custom functions within a script you have imported and deployed within the tools automation flow.
 
