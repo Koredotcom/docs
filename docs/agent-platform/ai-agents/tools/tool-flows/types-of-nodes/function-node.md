@@ -40,9 +40,9 @@ Steps to add and configure the node:
 
     You can see compilation and runtime errors, if any, during the execution of the script/node.
 
-## Executing the Function
+## Define and Execute a Function For The Node
 
-The node provides two options to set up and execute its function:
+The node provides two options to define and execute its function:
 
 ### Using Write Code
 
@@ -127,7 +127,7 @@ To run the flow for static inputs, follow the steps below:
 <p>In this case, you do not need to add input variables using the <b>Start</b> node.</p>
 </div>
 
-1. [Add/edit your script](../types-of-nodes/function-node.md/#step-1-define-and-test-the-function-code){:target="_blank"} in the editor by defining static variables. [Learn more](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"}.
+1. Manually enter the required static input arguments and their values in the script editor. [Learn more](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"}.
 2. Click the **Run Flow** button at the top-right corner of the flow builder.
 
 ### Dynamic Inputs
@@ -142,7 +142,7 @@ To run the flow for dynamic inputs, follow the steps below:
 <img src="../images/add-input-vars-function-node.png" alt="add input var" title="add input var" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click <b>Save</b>.</li></ol>
 
-Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}.
+Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#step-2-add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
