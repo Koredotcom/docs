@@ -215,9 +215,10 @@ The initiating agent can switch to the original customer call if needed, and vic
 
 ##### Consult Call to a Queue (Voice Channel Only)
 
-The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent selects a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the agent chosen remains available at the time of connection.
+The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent chooses a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the chosen agent remains available at the time of connection.
 
-During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
+During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention. 
+
 
 #### Conference Call
 
