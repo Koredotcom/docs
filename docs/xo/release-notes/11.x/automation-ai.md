@@ -928,7 +928,7 @@ Key benefits:
 * Flexible viewing: Filter option for targeted log analysis.
 * Optimized performance: Lazy loading for efficient log rendering.
 
-<font size="4"> Rephrased User Query Details in the Context Object
+<font size="4">Rephrased User Query Details in the Context Object</font>
 
 The platform now includes the Rephrased User Query in the context object, making it available for downstream tasks. This enhancement improves intent detection, entity extraction, and search accuracy by providing enriched user input by incorporating contextual signals. Platform users can now leverage rephrased queries for dialog execution and API calls to Search AI.
 
@@ -1001,7 +1001,7 @@ Date fields on digital forms now have a clear ('x') icon, which allows users to 
 
 Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#attachment-sharing-with-live-agent){:target="_blank"}.
 
-<font size="4"> Capability to Handle Agent Fallback Errors
+<font size="4">Capability to Handle Agent Fallback Errors</font>
 
 The platform has introduced a new "Agent Transfer fallback response" to improve user experience during agent transfers. Instead of leaving the conversation idle, the platform can now inform users with an appropriate response that can be configured in the app definition. This feature allows for clearer communication and better handling of technical issues during agent transfers. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/standard-responses.md#errors-warnings){:target="_blank"}.
 
