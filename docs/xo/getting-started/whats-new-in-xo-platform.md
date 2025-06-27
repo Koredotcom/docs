@@ -529,6 +529,17 @@ During the upgrade, the bot goes through an automated publishing process:
 3. Finally, the upgraded bot, now a v11 app with the new capabilities, is published again.
 
 <hr>
+
+## XO v11 Limitations
+
+We're actively working to address the following limitations in AI for Service (XO) v11. This list will be updated as improvements are made.
+
+* Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to v11.
+
+* The App language (display language) is available in English, Japanese (Beta), Korean (Beta), and German (Beta).
+
+<hr>
+
 ##### Related Links
 
 * [Key Differences - v11 vs. v10](./key-differences-between-xo11-and-xo10.md)

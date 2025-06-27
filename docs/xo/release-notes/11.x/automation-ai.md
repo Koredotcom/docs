@@ -3,16 +3,15 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
-
 ## v11.14.1 June 14, 2025
 
 <u> Patch Release </u>
 
 This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
 
-### Agent Transfer
+<font size="4">Agent Transfer</font>
 
-#### Genesys Agent Integration Supports Attachment Sharing
+**Genesys Agent Integration Supports Attachment Sharing**
 
 Users can now share files with live agents to provide additional context and facilitate more efficient issue resolution. Previously supported only in the ServiceNow integration, this feature is now available in Genesys. Currently, Genesys supports attachment sharing only through the WebSDK channel.
 
@@ -26,9 +25,9 @@ Users can now share files with live agents to provide additional context and fac
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### DialogGPT
+<font size="4">DialogGPT</font>
 
-#### Evaluation of DialogGPT
+**Evaluation of DialogGPT**
 
 The Batch Testing feature now provides a comprehensive evaluation framework to validate and enhance orchestration accuracy across all conversation types. It offers flexible test creation methods (manual and bulk upload) and assesses utterances across the retrieval and intent detection pipeline. It also supports different model configurations and provides comprehensive performance metrics for both development and production environments.
 
@@ -41,13 +40,13 @@ Key features
 
 [Learn more:octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
 
-#### Improved App Routing Discoverability
+**Improved App Routing Discoverability**
 
 Automation app linking is now centralized for easier access under **Flow & Channels > Manage Automation**. This unified interface provides a quick view of **Chat** and **Voice** flows, displaying key routing details, including Flow Name, Automation Node, Routing Mode, and Channel. The integrated search bar enables easy filtering of results and efficient management of routing configurations.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Enhanced Response Rephrasing for All Message Types
+**Enhanced Response Rephrasing for All Message Types**
 
 The Response Rephrasing feature has been significantly expanded and enhanced to deliver more natural, consistent virtual assistant interactions across all response formats. This expansion now supports both structured content and traditional message types, while introducing new configuration options for granular tone control.
 
@@ -59,16 +58,16 @@ Key improvements
 [Learn more:octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#rephrase-responses)
 
 
-### Agent Transfer
+<font size="4">Agent Transfer</font>
 
-#### Genesys WebMessaging Integration for Agent Transfer
+**Genesys WebMessaging Integration for Agent Transfer**
 
 The platform now supports Genesys WebMessaging integration for agent transfer, in addition to the existing WebChat option. While existing users can still use WebChat with their current settings, WebMessaging will be the default for new integrations. As Genesys is retiring WebChat on June 10, 2025, transitioning to WebMessaging is highly recommended for ongoing support and access to the latest features. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md)
 
-### Analytics
+<font size="4">Analytics</font>
 
 
-#### Node-level Control to Classify Conversations as Self-serve / Drop-off
+**Node-level Control to Classify Conversations as Self-serve / Drop-off**
 
 To improve the accuracy of containment metrics in Analytics, users can now manage how conversations are categorized at the node level. A "Containment Type" option has been introduced within the Instance Properties of Entity, Confirmation, Message, and Agent Nodes. This new setting allows direct classification of conversations as ‘Self-Serve’ or ‘Drop-Off’ in Instance Properties, ensuring accurate exit tracking at optional stages and more reliable Analytics metrics.
 
@@ -82,17 +81,15 @@ This Setting overrides the dialog-level settings for containment type. The defau
 
 This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
 
-### Agent Transfer
+<font size="4">Agent Transfer</font>
 
-#### Salesforce MIAW Integration for Agent Transfer
+**Salesforce MIAW Integration for Agent Transfer**
 
 AI for Service now includes a new Salesforce agent transfer integration: Messaging for In-App and Web (MIAW). This is in addition to the current Salesforce Live Chat. While existing users can still use Live Chat with their current settings, MIAW will be the default for new integrations. MIAW offers a personalized, asynchronous, and persistent messaging experience. As Salesforce is retiring Live Chat on February 14, 2026, transitioning to MIAW is highly recommended for ongoing support and access to the newest features.
 [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md)
 
 
-
-
-### Security Vulnerability Fixes
+<font size="4">Security Vulnerability Fixes</font>
 
 As part of the recent upgrade, the XO Platform addresses potential security vulnerabilities that may affect Natural Language Processing (NLP) in apps you configure for the **Dutch** language.
 
@@ -118,9 +115,9 @@ These steps help restore and maintain high recognition accuracy and consistent r
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Zero-Shot Intent Detection with LLM-Generated Confidence Scores
+**Zero-Shot Intent Detection with LLM-Generated Confidence Scores**
 
 The enhanced Zero-shot intent detection feature uses the confidence scores provided by the AI models to identify the definitive and probable intents, making it easy to compare them with the intents identified by the other NLU engines.
 
@@ -141,27 +138,27 @@ Key benefits
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#zero-shot-model)
 
 
-#### Pre-built and Custom Models Support for Rephrase User Query 
+**Pre-built and Custom Models Support for Rephrase User Query** 
 
 The Rephrase User Query feature now supports both Pre-built and Custom Models, in addition to Kore.ai XO GPT. To use these models, users must create a custom prompt.
 
 Users can optionally provide the `Conversation_history` key to specify the number of previous conversation messages to send to the LLM for improved contextual understanding.
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md#automation-ai-model-feature-matrix)
 
-#### Expanded PII Settings at the Agent Node Level
+**Expanded PII Settings at the Agent Node Level**
 
 PII detection and protection are now available at the Agent Node level. Users can select whether to send redacted values to the language model for enhanced privacy control. The data is redacted based on the patterns defined in the global PII settings.
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/data-anonymization.md)
 
-### Conversation Testing
+<font size="4">Conversation Testing</font>
 
-#### Support for Tags and Descriptions of Test Suite
+**Support for Tags and Descriptions of Test Suite**
 
 Conversation Testing now supports including tags and descriptions in the JSON file for test cases, enabling faster creation and easier reuse of test cases to improve usability and accelerate test case management. [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#create-test-suite)
 
-### Agent Transfer
+<font size="4">Agent Transfer</font>
 
-#### Failed ServiceNow Agent Transfer Notification 
+**Failed ServiceNow Agent Transfer Notification**
 
 The platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
 [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#failed-agent-transfer-notification)
@@ -174,9 +171,9 @@ The platform now displays a default, non-editable message to users when a Servic
 
 This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
 
-### DialogGPT
+<font size="4">DialogGPT</font>
 
-#### Amazon Bedrock Support for DialogGPT
+**Amazon Bedrock Support for DialogGPT**
 
 DialogGPT now supports Amazon Bedrock models, providing large enterprises with a flexible and versatile solution for efficient conversation management. This enhancement allows users to experiment with and utilize various models through a single integration, using custom prompts to optimize their experience.
 
@@ -190,9 +187,9 @@ DialogGPT now supports Amazon Bedrock models, providing large enterprises with a
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Agentic Experience 
+<font size="4">Agentic Experience</font> 
 
-#### Seamless Integration with Agentic Apps for Multi-agent Orchestration
+**Seamless Integration with Agentic Apps for Multi-agent Orchestration**
 
 The fully autonomous Agentic Apps can now be easily integrated with the XO Platform. The integration simplifies the creation of highly contextual, self-service automation experiences using multi-agent orchestration powered by Agentic Apps.
 
@@ -203,7 +200,7 @@ Key features
 
 [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md)
 
-#### Simplified Integration to Support for Real-time Voice Interactions
+**Simplified Integration to Support for Real-time Voice Interactions**
 
 The platform's new integration framework simplifies the enablement of real-time voice interactions using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for your customers.
 
@@ -215,9 +212,9 @@ Key features
 
 [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#conversation-management-approach)
 
-### DialogGPT
+<font size="4">DialogGPT</font>
 
-#### Support for Dynamic Routing Capability Powered by DialogGPT
+**Support for Dynamic Routing Capability Powered by DialogGPT**
 
 The Platform now supports Dynamic Routing capability powered by DialogGPT. This capability allows teams to independently develop and manage automation apps for their various functions and then link them to a common app. More importantly, it enables businesses to provide a single, unified interface to the end users instead of a separate interface for each function. 
 
@@ -234,18 +231,18 @@ Key features
 * Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification.  
 [Learn more :octicons-arrow-right-24:](../../automation/dynamic-routing.md)
 
-#### Introducing XO GPT - DialogGPT Model
+**Introducing XO GPT - DialogGPT Model**
 
 XO GPT is a powerful DialogGPT model hosted by Kore.ai, exclusively fine-tuned for handling complex conversations. It enhances contextual understanding and response coherence, generating fluent and contextually relevant answers. This results in smoother conversational flow, increased user engagement, greater control over data, and faster response times.  [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md#features-supported-by-the-module)
 
 
-#### Updates to Multi-Intent Orchestration
+**Updates to Multi-Intent Orchestration**
 
 Users can now customize the predefined Multi-Intent fulfillment dialog for greater control and flexibility when the Conversation Orchestrator detects multiple intents in a user’s utterance.  [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#intent-events)
  
-### Agent Node Enhancement
+<font size="4">Agent Node Enhancement</font>
 
-#### Enhanced Agent Node with V2 Prompt and Tool Calling
+**Enhanced Agent Node with V2 Prompt and Tool Calling**
 
 In this update, Agent Node introduces a new version to fully take advantage of the Tool Calling capability of advanced AI Models. The new version (v2) orchestrates the Agent Node using the Tool Calling construct to collect entities, instruct business rules, and perform user-defined custom actions.
 
@@ -266,17 +263,17 @@ In this update, Agent Node introduces a new version to fully take advantage of t
 
 [Learn more :octicons-arrow-right-24:](../../automation/agent-node/prompt-setup.md#types-of-prompts)
 
-### NLP
+<font size="4">NLP</font>
 
-#### Suppressing "Intent Not Found" Event When Dialog Ends as "Fulfilled"
+**Suppressing "Intent Not Found" Event When Dialog Ends as "Fulfilled"**
 
 The platform incorrectly used to trigger "Intent Not Found" events after successfully completed dialogs, specifically when dialogs ended with Entity or Confirmation nodes, followed by Script or Service nodes.
 A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfilment) has been added that prevents unwanted events when the "End of Task" event is disabled and the Dialog has ended with a "fulfilled" status. This ensures smooth conversation flows for BotKit implementations, handles dialog completion, and prevents disruptions in multi-assistant routing scenarios. 
 [Learn more :octicons-arrow-right-24:](../../automation/natural-language/nlu-configurations/engine-tuning.md#suppress_fallback_on_taskfulfilment)
 
-### Channels
+<font size="4">Channels</font>
 
-#### WhatsApp Native Integration using Meta’s Cloud API
+**WhatsApp Native Integration using Meta’s Cloud API**
 
 The XO Platform now offers native integration with WhatsApp Business via Meta's Cloud API. This integration eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account.  [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md)
 
@@ -286,9 +283,9 @@ Key features
 * Simplified account linking and configuration through Meta's developer platform.
 * Enhanced operational efficiency and customer satisfaction.
 
-### API
+<font size="4">API</font>
 
-#### Call ID Support in getSessions API
+**Call ID Support in getSessions API**
 
 The getSessions API has been updated to accept callId as an optional query parameter. When provided with a valid callId, the API returns the corresponding session details, matching the functionality already available in the Conversation History API. [Learn more :octicons-arrow-right-24:](../../apis/automation/get-sessions-history.md)
 
@@ -308,9 +305,9 @@ This update include only bug fixes.
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Build Agentic Experiences
+<font size="4">Build Agentic Experiences</font>
 
-#### Agent Node Tool Calling Enhanced with Jump-to-Node Transition Capability
+**Agent Node Tool Calling Enhanced with Jump-to-Node Transition Capability**
 
 The Agent node now features a "Jump-to-Node" transition option, enabling the creation of sophisticated dialog workflows. This enhancement allows for dynamic branching based on tool execution results, significantly streamlining the design of complex conversation flows.
 
@@ -324,9 +321,9 @@ Key Updates:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md#tools){:target="_blank"}
 
-### Agent Transfer
+<font size="4">Agent Transfer</font>
 
-#### Service Now Agent Transfer Status
+**Service Now Agent Transfer Status**
 
 The XO platform now records the status of the agent transfer for ServiceNow in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
 
@@ -340,23 +337,22 @@ The XO platform now records the status of the agent transfer for ServiceNow in b
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Analytics
+<font size="4">Analytics</font>
 
-
-#### Analytics for DialogGPT
+**Analytics for DialogGPT**
 
 DialogGPT's comprehensive analytics provide detailed tracking of user interactions, intent detection, and conversation outcomes, ensuring data-driven insights for continuous improvement. By leveraging analytics, the platform users can accurately evaluate DialogGPT's effectiveness and enhance conversational experiences.
 [Learn more :octicons-arrow-right-24:](../../analytics/automation/nlp-insights.md#dialoggpt-nlp-insights-analysis)
 
 
-### Export/Import
+<font size="4">Export/Import</font>
 
-#### Redesigned Export Interface for Improved User Experience
+**Redesigned Export Interface for Improved User Experience
 
 The Import / Export interface has been redesigned to mirror the Publish layout. A new top-level "Flows" section and reorganized "Automation Tasks" improve component organization. The update maintains backward compatibility and provides clearer section names and descriptions for an intuitive, cohesive experience.
 [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
 
-### General Availability of Key Features
+<font size="4">General Availability of Key Features</font>
 
 We are announcing the general availability (GA) of the following important features to all our users: 
 
@@ -372,9 +368,9 @@ We are announcing the general availability (GA) of the following important featu
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Agent Node
+<font size="4">Agent Node</font>
 
-#### Pre and Post Processor Support at the Node Level for Custom Prompts
+**Pre and Post Processor Support at the Node Level for Custom Prompts**
 
 Agent Node now supports configuring pre and post-processor scripts at the node level for custom prompts, in addition to the existing prompt-level script support. This enables platform users to reuse the same custom prompt across multiple nodes while customizing the processing logic, input variables, and output keys for each specific use case.
 
@@ -396,11 +392,11 @@ Key changes
 
 This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
-### Build Agentic Experiences
+<font size="4">Build Agentic Experiences</font>
 
 This release introduces new features that simplify building agentic experiences. Create more natural and personalized virtual assistant conversations while streamlining your development workflow.
 
-#### Function or Tool Calling Support in Agent Node
+**Function or Tool Calling Support in Agent Node**
 
 Tool Calling enables Agent Node (previously GenAI Node) to interact with your business applications. You can define accessible tools, connect multiple actions, and incorporate external data into the conversation context. The recently launched DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Combine these features to deliver seamless agentic experiences for your customers and employees. 
 
@@ -420,11 +416,12 @@ Key benefits
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md#tools)
 
 
-#### GenAI Node and Prompt Node Renaming
+**GenAI Node and Prompt Node Renaming**
 The GenAI Node has been renamed the Agent Node to reflect its agentic experiences and tool-calling capabilities, while the GenAI Prompt Node has been renamed the Prompt Node.
 
-### DialogGPT
-#### DialogGPT App Lifecycle Management
+<font size="4">DialogGPT</font>
+
+**DialogGPT App Lifecycle Management**
 DialogGPT has been integrated into the app lifecycle to centralize configuration management, ensuring consistency and scalability.
 
 Key updates
@@ -436,15 +433,15 @@ Key updates
 
 [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
 
-#### OpenAI GPT-4o mini Support for DialogGPT
+**OpenAI GPT-4o mini Support for DialogGPT**
 The Platform now supports OpenAI GPT-4o mini models in DialogGPT for efficient conversation management. These models are compact and optimized variants of the GPT-4 family, designed to deliver high efficiency in resource-constrained environments while maintaining advanced capabilities.
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md)
 
 
-### Dialog Builder 
+<font size="4">Dialog Builder</font> 
 
-#### Enhanced Sticky Notes for Intuitive Note-Taking Experience 
+**Enhanced Sticky Notes for Intuitive Note-Taking Experience** 
 The redesigned notes feature works like familiar sticky notes, making it easier and more intuitive to capture and organize your thoughts.
 
 Key updates
@@ -457,7 +454,7 @@ Key updates
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
 
 
-#### Upgraded Bookmarks for Better Visual Organization 
+**Upgraded Bookmarks for Better Visual Organization**
 The enhanced bookmarks feature improves organization and collaboration capabilities.
 
 Key updates
@@ -484,7 +481,7 @@ This update includes bug fixes.
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### DialogGPT, an Agentic Orchestration for Intelligent Conversations
+<font size="4">DialogGPT, an Agentic Orchestration for Intelligent Conversations</font>
 
 DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is supported for English conversations only.    
 
@@ -514,9 +511,9 @@ The implementation of DialogGPT is planned in three phases:
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
 
-### Dialog Builder  
+<font size="4">Dialog Builder</font>  
 
-#### Property Panel Enhancements for List of Items Configuration
+**Property Panel Enhancements for List of Items Configuration**
 
 The property panel has been updated with a redesigned interface for configuring "List of Items" properties, including both enumerated and lookup types. 
 
@@ -527,7 +524,7 @@ Key Improvements
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/entity-types.md#list-of-items-enumerated)
 
-#### Rich Text Formatting for Prompts
+**Rich Text Formatting for Prompts**
 
 A new rich text editor has been added to all prompt areas in the platform, including User Prompts, Bot Responses, and Error Prompts. The editor allows platform users to easily format text using a convenient markup toolbar, enhancing readability and improving the user experience for content creators and end users. Double-click or select any text in the detailed prompt editor to invoke the toolbar.
 
@@ -542,9 +539,9 @@ Formatted text is rendered properly across all supported channels, and the featu
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#configure-the-user-prompt)
 
-### Knowledge AI 
+<font size="4">Knowledge AI</font> 
 
-#### Get FAQs API Enhancement
+**Get FAQs API Enhancement**
 
 The **Get FAQs API** has been enhanced to support two sets of parameters, providing more flexible retrieval options while ensuring backward compatibility:
 
@@ -569,9 +566,9 @@ This update includes bug fixes.
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Conversation Testing
+<font size="4">Conversation Testing</font>
 
-#### Support for Preprocessor Script
+**Support for Preprocessor Script**
 
 The new Preprocessor Script for Conversation Testing lets platform users control preconditions during conversation testing. Users can run custom scripts before the recording, validation, and execution phases.
 
@@ -582,9 +579,9 @@ Key features:
 * Data Management: Control session context by modifying data, simulating external systems, and tracking changes through secure execution.  
 [Learn more :octicons-arrow-right-24:](../../automation/testing/regression-testing/conversation-testing/create-a-test-suite.md#pre-processor-script)
 
-### Dialog Builder
+<font size="4">Dialog Builder</font>
 
-#### Auto Save Option in JavaScript Editor
+**Auto Save Option in JavaScript Editor**
 
 The JavaScript editor in Dialog Builder now allows users to enable auto save to automatically save changes while writing the code. Users can enable auto-save with a single click, and the changes will automatically be saved after one second of inactivity. They can view the last saved timestamp and use this feature across all Dialog Builder script editors.
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/prompt-editor.md#javascript-prompts-or-responses)
@@ -596,8 +593,9 @@ The JavaScript editor in Dialog Builder now allows users to enable auto save to 
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Knowledge AI
-#### FAQ Conditional Responses
+<font size="4">Knowledge AI</font>
+
+**FAQ Conditional Responses**
 
 The FAQ feature has been enhanced to provide more contextually relevant answers. Platform users can now define conditions for each FAQ response, allowing for dynamic answer selection based on specific criteria. 
 
@@ -627,10 +625,9 @@ Backward compatibility:
 
 This update includes enhancements and bug fixes.
 
-### Dialog Builder
+<font size="4">Dialog Builder</font>
 
-#### **PII Redaction in API Responses (Service Node)**
-
+**PII Redaction in API Responses (Service Node)**
 
 The platform now supports the redaction of sensitive/PII information in responses from external services. Users can select specific parts of API responses for PII scanning and apply suitable redaction patterns.  
 
@@ -658,8 +655,9 @@ Key benefits:
 
 This update include minor enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Dialog Builder
-#### Error Handling for Service Nodes
+<font size="4">Dialog Builder</font>
+
+**Error Handling for Service Nodes**
 
 Service Node’s error handling capability is enhanced to provide greater control over non-timeout error scenarios. It allows platform users to customize dialog execution when API calls fail for reasons other than timeouts.
 
@@ -679,9 +677,9 @@ Key updates:
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Dialog Builder
+<font size="4">Dialog Builder</font>
 
-#### Introducing Search AI Node
+**Introducing Search AI Node**
 
 The platform has introduced a new Search AI node in the dialog builder. The node empowers platform users to integrate advanced search capabilities directly into dialog flows, improving the accuracy and relevance of AI responses in complex, multi-topic environments.
 
@@ -707,7 +705,7 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md){:target="_blank"}
 
-#### Real-time Collaboration in Dialog Builder 
+**Real-time Collaboration in Dialog Builder** 
 
 This update transforms the Dialog Builder into a collaborative workspace, allowing multiple users to view, discuss, and seamlessly transition between editing roles. 
 
@@ -724,14 +722,14 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
 
-#### Redesigned Property Panel for Dialog Builder Nodes
+**Redesigned Property Panel for Dialog Builder Nodes**
 
 The redesigned property panel for Dialog Builder nodes was introduced in the previous release. It provides a fluid experience with better organization of the elements, easier discoverability of the options, and a new theme. The remaining second-level UI elements have also been updated to match the new theme.
 
 
-### Dialogs
+<font size="4">Dialogs</font>
 
-#### Manage Components Search Enhancement 
+**Manage Components Search Enhancement** 
 
 The improved search functionality in the Manage Components page allows platform users to find components more easily, regardless of whether they remember a component's technical name or display name.
 
@@ -746,9 +744,9 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/managing-dialogs.md#dialog-components){:target="_blank"}
 
-### Digital Forms
+<font size="4">Digital Forms</font>
 
-#### Field Validations using Post Processor Script
+**Field Validations using Post Processor Script**
 
 The platform now supports custom field validations in Digital Forms using a post-processor script. It allows platform users to create complex, custom validation rules using JavaScript, improving data collection accuracy and user experience.
 
@@ -781,9 +779,9 @@ Backward Compatibility:
 
 This update includes bug fixes and minor enhancements.
 
-### Entity Node
+<font size="4">Entity Node</font>
 
-#### Transient Entity Feature for Enhanced Data Privacy
+**Transient Entity Feature for Enhanced Data Privacy**
 
 The platform has introduced a "Transient Entity" feature for the Entity node. It allows platform users to ensure that sensitive user inputs do not persist after a conversation session ends.
 
@@ -813,9 +811,9 @@ We are working to fix these issues in the next release:
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#configure-the-node){:target="_blank"}
 
 
-### Dialog Builder
+<font size="4">Dialog Builder</font>
 
-#### Real-time Collaboration in Dialog Builder
+**Real-time Collaboration in Dialog Builder**
 
 The platform now enables real-time collaboration in the dialog builder. It allows team members to work together seamlessly, enhancing efficiency and productivity in dialog development.
 
@@ -839,7 +837,7 @@ Key benefits:
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
 
 
-#### Redesigned Property Panel for Dialog Builder Nodes
+**Redesigned Property Panel for Dialog Builder Nodes**
 
 The redesigned property panel for Dialog Builder nodes provides a fluid experience with better organization of the elements, easier discoverability of the options, and a new theme.
 
@@ -856,9 +854,9 @@ Key benefits:
 * Easier navigation and reduced cognitive load for users.
 * Consistent experience across different devices.
 
-### Digital Forms
+<font size="4">Digital Forms</font>
 
-#### Field Validations using Regex
+**Field Validations using Regex**
 
 The platform now supports Regex-based field validations in Digital Forms, enhancing data collection capabilities.
 
@@ -876,9 +874,9 @@ Key benefits:
 [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
 
 
-### Agent Transfer
+<font size="4">Agent Transfer</font>
 
-#### Enhanced Agent Chat History Link
+**Enhanced Agent Chat History Link**
 
 The platform has improved the functionality of chat history links provided to agents during conversation transfers. The access limit for these links has been increased from 5 to 10 times, allowing supervisors to better audit them. Additionally, the links now display the specific conversation that prompted the transfer, providing more relevant context to agents.
 
@@ -897,9 +895,9 @@ Backward compatibility:
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-### Virtual Assistant
+<font size="4">Virtual Assistant</font>
 
-#### Timeout Settings Moved to Instance Properties for Service Node
+**Timeout Settings Moved to Instance Properties for Service Node**
 The timeout settings for the Service Node have been moved from Component Properties to Instance Properties. 
 
 Key benefits:
@@ -913,7 +911,7 @@ Backward compatibility:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md#instance-properties){:target="_blank"}
 
-#### Enhanced Debug Logs
+**Enhanced Debug Logs**
 The platform now groups debug logs by user utterance and bot response in a chat-like structure to improve clarity and efficiency in tracing conversation flow for platform users.
 
 Key updates:
@@ -930,7 +928,7 @@ Key benefits:
 * Flexible viewing: Filter option for targeted log analysis.
 * Optimized performance: Lazy loading for efficient log rendering.
 
-### Rephrased User Query Details in the Context Object
+<font size="4"> Rephrased User Query Details in the Context Object
 
 The platform now includes the Rephrased User Query in the context object, making it available for downstream tasks. This enhancement improves intent detection, entity extraction, and search accuracy by providing enriched user input by incorporating contextual signals. Platform users can now leverage rephrased queries for dialog execution and API calls to Search AI.
 
@@ -967,9 +965,9 @@ This update includes bug fixes.
 
 Key features and enhancements included in this release are summarized below.
 
-### Virtual Assistant
+<font size="4">Virtual Assistant</font>
 
-#### Dynamic Values for Timeout Duration in Voice Call Properties
+**Dynamic Values for Timeout Duration in Voice Call Properties**
 
 This update enables dynamic timeout settings for voice calls via environment variables. Users can now manage timeouts across multiple components without manual adjustments. This approach enhances consistency, reduces errors, and simplifies voice call property management.
 
@@ -979,31 +977,31 @@ The users now have two options for setting timeout durations:
 
 * **Environment Variable**: Select any environment variable from a drop-down list or use a search bar to find a specific variable. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings){:target="_blank"}
 
-### NLU
+<font size="4">NLU</font>
 
-#### Ability to Import ML Utterances from One Language to Another (without Translation)
+**Ability to Import ML Utterances from One Language to Another (without Translation)**
 
 The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances){:target="_blank"}
 
 The ability to automatically translate the copied utterances in the target language will be available soon. 
 
-#### Improvements to Zip Code Entities
+**Improvements to Zip Code Entities**
 
 The  Zip Code entity has been enhanced to identify wild cards like “ “ and “-”. For example, “1 2 3 45” is identified as “12345”. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/entity-types.md#zip-code){:target="_blank"}
 
-### Digital Forms 
+<font size="4">Digital Forms</font> 
 
-#### Option to Clear Default Date During Design Time
+**Option to Clear Default Date During Design Time**
 
 Date fields on digital forms now have a clear ('x') icon, which allows users to easily remove the default date value.
 
-### Agent Transfer 
+<font size="4">Agent Transfer</font> 
 
-#### Attachment Sharing Between Users and Live Agents
+**Attachment Sharing Between Users and Live Agents**
 
 Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#attachment-sharing-with-live-agent){:target="_blank"}.
 
-### Capability to Handle Agent Fallback Errors
+<font size="4"> Capability to Handle Agent Fallback Errors
 
 The platform has introduced a new "Agent Transfer fallback response" to improve user experience during agent transfers. Instead of leaving the conversation idle, the platform can now inform users with an appropriate response that can be configured in the app definition. This feature allows for clearer communication and better handling of technical issues during agent transfers. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/standard-responses.md#errors-warnings){:target="_blank"}.
 
@@ -1023,9 +1021,9 @@ This update includes bug fixes.
 
 Key features and enhancements included in this release are summarized below.
 
-### Digital Forms
+<font size="4">Digital Forms</font>
 
-#### Preprocessor Script Support for Digital Forms
+**Preprocessor Script Support for Digital Forms**
 
 The Digital Forms module now provides the ability to dynamically configure the form definition and behavior. The newly introduced Preprocessor configuration allows updating the form definition dynamically using JavaScript. The platform executes this preprocessor during the runtime and delivers the form definition to the channel. The preprocessor can use the environment, content, and context variables. 
 
@@ -1041,13 +1039,13 @@ The koreUtil library has been extended with the "getFormDefinition" function to 
 
 This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor. [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#configuration-setup-using-pre-processor-script){:target="_blank"}
 
-### SDK Configuration
+<font size="4">SDK Configuration</font>
 
-#### Customize Virtual Assistant’s Theme & Design
+**Customize Virtual Assistant’s Theme & Design**
 
 The platform now supports customizing the Virtual Assistant's look and feel with the new Theme and Design feature. This includes changes to welcome text, buttons, colors, chat windows, and sound themes to match their needs. A real-time preview pane shows changes instantly and makes it easy to make any adjustments before deploying the updated design. [Learn more :octicons-arrow-right-24:](./../../channels/add-web-mobile-client.md#virtual-assistant-theme--design){:target="_blank"}
 
-#### Enhanced Panels & Widgets
+**Enhanced Panels & Widgets**
 
 The platform now supports the Panels and Widgets feature according to the selected Theme and Design of the Web SDK. [Learn more :octicons-arrow-right-24:](./../../automation/use-cases/digital-skills/digital-views.md){:target="_blank"}
 
@@ -1067,22 +1065,183 @@ This update includes bug fixes.
 
 Key features and enhancements included in this release are summarized below.
 
-### Dialog Builder
+<font size="4">Dialog Builder</font>
 
-#### Enhancement to the Comments Functionality
+**Enhancement to the Comments Functionality**
 
 The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#notes-comments-and-bookmarks){:target="_blank"}
 
-### Digital Forms
+<font size="4">Digital Forms</font>
 
 * Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs. [Learn more :octicons-arrow-right-24:](/docs/xo/automation/use-cases/digital-skills/digital-forms/#component-properties){:target="_blank"}
 * Digital Forms Date Picker Supports Japanese: The digital form’s Date Picker now supports the Japanese language if the bot language is Japanese.
 
-### Export/Import
+<font size="4">Export/Import</font>
 
-#### Enable App Import Functionality using Zip File Upload
+**Enable App Import Functionality using Zip File Upload**
 
 Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps. [Learn more :octicons-arrow-right-24:](../../manage-assistant/bot-management.md#steps-in-importing-to-an-existing-assistant){:target="_blank"}
 
 The corresponding APIs have also been updated to support this change: Import New VA and Import Existing VA.
 
+<hr>
+
+## v11.0.0 March 30, 2024
+
+<u>Major Release</u>
+
+Key features and enhancements included in this release are summarized below.
+
+<font size="4">Advanced AI Capabilities</font>
+
+The platform has introduced several Advanced AI Capabilities that simplify building agentic experiences. Users can create more natural and personalized virtual assistant conversations while streamlining their development workflow.
+
+
+**DialogGPT, an Agentic Orchestration for Intelligent Conversations**
+
+DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from virtual assistants. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. 
+
+Key Capabilities
+
+* Autonomous Decision Making: Independently analyzes inputs and determines execution paths.
+* Zero-Shot Intent Detection: Utilizes RAG and LLMs to accurately identify intents without requiring training data.
+* Ambiguity Resolution: Efficiently resolves unclear intents through real-time clarification.
+* Multi-Intent Processing: Recognizes and manages multiple intents within a single query.
+* Conversational Nuance Management: Handles pauses, repetitions, and restarts naturally.
+* Dynamic Response Generation: Creates contextually appropriate responses based on user data and history.
+* Model Flexibility: Supports various model options, including commercial, custom, or Kore.ai's XO GPT models.
+* Granular Intent Resolution: Refines broad queries into specific, actionable intents using domain knowledge.
+* Universal App Capability: Powers the universal app (bot) capabilities with intelligent and dynamic routing to the appropriate agent.
+
+Key Benefits
+
+* Greater Accuracy: The system better understands what customers request, even when requests are complex or industry-specific. Combining a broad understanding with detailed knowledge of your business can help extract the correct information and make smarter decisions about how to help.
+* Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
+* Improved Customer Experience: Virtual assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
+
+[Learn more :octicons-arrow-right-24:](../generative-ai-tools/dialog-gpt.md)
+
+
+**Enhanced Agent Node with V2 Prompt and Tool Calling**
+
+Agent Node (previously GenAI Node) has been enhanced to take full advantage of the Tool Calling capability of advanced AI Models. The latest version (v2) orchestrates the Agent Node using the Tool Calling construct to collect entities, instruct business rules, and perform user-defined custom actions.
+
+Key enhancements
+
+
+
+* Tool-Based Orchestration:
+     * Exit Scenarios as Default Tools: Automate exit scenarios without setup using the Exit Orchestration Tool.
+    * Custom Tools: Integrate tools for specific business needs.
+    * Simplified Entity Handling: V2 removes explicit entity collection, reducing configuration complexity.
+    * Expanded Tool Calling: Handles entity collection and exit scenarios via tool calling.
+* V2 Prompts and Templates:
+    * Flexible Version Selection: Choose V1 (Legacy) or V2 (Enhanced) prompts based on your requirements.
+    * Customizable Templates: For faster implementation, use pre-built JavaScript-based V2 prompt templates as custom prompts with both system and custom models.
+
+[Learn more :octicons-arrow-right-24:](../automation/agent-node/prompt-setup.md#types-of-prompts)
+
+
+**Build Agentic Experience with DialogGPT and Agent Node**
+
+Tool Calling enables the new Agent Node to interact with your business applications. Users can define tools, connect multiple actions, and incorporate external data into the conversation context. DialogGPT manages conversation orchestration, while Agent Node with Tool Calling creates more natural interactions. Users can combine these features to deliver seamless agentic experiences for your customers and employees.
+
+Key features 
+
+* Tool calling integration with business applications and external data.
+* Direct connection between tools and actions (scripts, service, or Search AI).
+* Prompts include tool definitions and context for decision-making.
+
+[Learn more :octicons-arrow-right-24:](../automation/agent-node/working-with-agent-node.md#tools)
+ 
+**Seamless Integration with Agentic Apps for Multi-agent Orchestration**
+
+The fully autonomous Agentic Apps, powered by the Kore.ai Agent Platform, can now easily integrate with the XO Platform. The Agent Platform-powered automation independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
+
+Key features
+
+* Choice between "Orchestrated Autonomy" (powered by DialogGPT) or "Full Autonomy" (Powered by the Agent Platform) based on automation capabilities.
+* Agentic Apps fully supports any digital and voice channels enabled via the XO Platform.
+
+[Learn more :octicons-arrow-right-24:](../flows/node-types/automation.md)
+
+
+**Support for Dynamic Routing Capability Powered by DialogGPT**
+
+The Platform now supports Dynamic Routing capability powered by DialogGPT. This capability allows teams to develop and manage automation apps for various functions independently and then link them to a standard app. More importantly, it enables businesses to provide a single, unified interface to the end users instead of a separate interface for each function.
+
+The orchestration is powered by DialogGPT, which provides context-aware, intelligent, and dynamic routing.
+
+Key features
+
+* Link Multiple Apps via Automation Node: The Automation Node in Experience Flows has been enhanced to support linking multiple apps and using DialogGPT for intent identification.
+* Indexing Linked App Content: Dialog and FAQ chunks from linked apps are indexed in the parent app after linking. Search AI knowledge is supported only by default in the parent app.
+* Embedding-Based Matching: User input and content from linked apps (dialogs, FAQs, search documents) are converted into embeddings with metadata. The platform then retrieves the top-matching chunks based on semantic similarity.
+* LLM-Powered Intent Resolution: An LLM resolves the shortlisted chunks and determines the winning intent. It could be an Intent, Multiple Intents, Answers, FAQs, Conversation Intents, Ambiguous Intents, or Small Talk.
+* Automated Event Handling: Default platform-provided event handlers are triggered based on the fulfillment type, ensuring smooth user interactions and dialog execution.
+* Clarifying Questions for Ambiguous Intents: When ambiguous intents are detected, clarifying questions are triggered for disambiguation
+* Simplified Training: There is no need for training utterances or invocation phrases for bot qualification. However, providing complete dialog descriptions is required for more accurate intent identification.
+
+    
+[Learn more :octicons-arrow-right-24:](../automation/dynamic-routing.md)
+
+
+<font size="4">LLM and Generative AI Framework</font>
+
+**Guardrails**
+
+Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
+
+Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
+[Learn more :octicons-arrow-right-24:](../generative-ai-tools/guardrails.md)
+
+**Monitoring**
+
+It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
+[Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
+    
+<font size="4">All-new Dialog Builder</font>
+    
+The all-new dialog builder is super intuitive, user-friendly, and visually appealing.
+
+**Intuitive Graphical User Interface**
+
+The all-new intuitive graphical user interface allows users to design conversational flows by dragging and dropping components onto a canvas. This simplifies the process of constructing dialogues, allowing users to visually structure and customize interactions between the AI system and users. It empowers developers and non-technical users alike to design and create conversational flows effortlessly. 
+
+* **Free-flow Designing** empowers users to easily design the flow without worrying too much about the logic at the beginning. The ability to easily connect nodes without having to fully define the transition rule. The transition rule can start with a simple description and can be enforced at the later stages while testing/publishing.
+* **Infinite Canvas** allows designers to logically arrange the flow (based on purpose, objective, etc.) as needed, making it easy for them to review and audit the flows.
+* **Customizable Connectors** featuring options for color, width, and style to enhance clarity, readability, and emphasis.
+* **Seamless drag and drop** of nodes for a smooth experience.  
+<img src="../images/xo-platform-Graphic-user-interface.png" alt="Graphical User Interface" title="Graphical User Interface" style="border: 1px solid gray; zoom:70%;">
+
+**Node Categorization**
+
+A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.  
+<img src="../images/xo-platform-AutomationAI-nodecategorisation.png" alt="Node Categorization" title="Node Categorization" style="border: 1px solid gray; zoom:70%;">
+
+**Sequencing**
+
+Enhance organization through the grouping of nodes into coherent sequences. Align nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. Provide the ability to clearly read and write the key information like name type, prompts/messages, and transition conditions. Enhance visibility and distinguishability by customizing sequences with color codes. 
+<img src="../images/xo-platform-AutomationAI-sequencing.png" alt="Sequencing" title="Sequencing" style="border: 1px solid gray; zoom:70%;">
+
+**Universal Search**
+
+The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.  
+<img src="../images/xo-platform-AutomationAI-Universal Search.png" alt="Universal Search" title="Universal Search" style="border: 1px solid gray; zoom:70%;">
+
+**Comments**
+
+Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.  
+<img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+
+**Bookmarks**
+
+Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.  
+<img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
+
+**Notes**
+
+Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
+<img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+
+<hr>
