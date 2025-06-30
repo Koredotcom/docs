@@ -80,7 +80,7 @@ The Platform allows you to sign in to your account using your registered email I
 
 With Single Sign-on (SSO), you can sign in securely (after authentication) by using just one set of credentials. Now, the Platform offers an additional layer of security beyond username and password during account sign-in with **Two-Factor Authentication (2FA)**. Enabling 2FA prompts for a security code verification after you’ve entered your username and password.
 
-## The Platform Landing Page
+## AI for Service Landing Page
 
 After you sign in to the Platform, you are directed to the landing page. From this page you can access various offerings as follows:
 
