@@ -250,7 +250,7 @@ To enable dynamic queue handling in Genesys Cloud, the queue name should be incl
 
 !!! note
 
-    The Entity node supports dynamic queue names with underscores (_) only when Auto Correct is off. We recommend either avoiding underscores in the queue name or turning Auto-Correct off in the Entity node.
+    The queue name in the Entity node accepts underscores (_) only when Auto Correct is turned off. We recommend either avoiding underscores in the queue name or turning off Auto Correct in the Entity node to ensure dynamic queuing works as expected.
 
 
 Follow These Steps:
