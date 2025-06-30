@@ -13,15 +13,16 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Configurable Search AI Retrieval Settings**
 
-DialogGPT now allows users to configure chunk limits for Search AI retrieval, controlling the number of chunks sent to the language model for response generation. This feature optimizes token consumption and response times while providing precise control over the balance between context depth and performance.
+DialogGPT now allows users to configure chunk limits for Search AI retrieval, controlling the number of chunks sent to the language model for response generation. This feature optimizes token consumption and response times while providing precise control over the balance between context depth and performance. [Learn more:octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
 
 **Enhanced Discoverability for Automation Node Settings**
 
-The Automation Node’s routing settings have been relocated to Flow & Channels > Automation Routing > Routing Modes for better accessibility and visibility. This streamlined navigation enables users to quickly configure key settings, including Autonomy Level (Orchestrated Autonomy or Full Autonomy), Automation AI options, Agentic App Configurations, Connection Rules, and Error Prompts.
+The Automation Node’s routing settings have been relocated to Flow & Channels > Automation Routing > Routing Modes for better accessibility and visibility. This streamlined navigation enables users to quickly configure key settings, including Autonomy Level (Orchestrated Autonomy or Full Autonomy), Automation AI options, Agentic App Configurations, Connection Rules, and Error Prompts. [Learn more:octicons-arrow-right-24:](../../flows/automation-routing.md)
 
 **Batch Testing Now Supports Multi-App Routing for Universal Apps**
 
-The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed. 
+The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed.
+
 
 **Enhancement of Batch Testing Public APIs to support creation and management of test suites**
 
@@ -39,11 +40,14 @@ Key enhancements
 
 * User-Controlled Session End: End-users can now conclude live agent sessions using a configurable keyword. This provides users with more control over their experience and helps reduce unnecessary agent occupancy.
 
-* Customizable Standard Responses: Default system messages displayed during handoffs and live chats, including wait times, agent join alerts, and session closure prompts, can now be customized. This ensures a consistent, branded experience aligned with user expectations.
+* Customizable Standard Responses: Default system messages displayed during handoffs and live chats, including wait times, agent join alerts, and session closure prompts, can now be customized. This ensures a consistent, branded experience aligned with user expectations. 
+
+[Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#additional-capabilities)
+
 
 **User-Bot Conversation Summary for Live Agent Transfers**
 
-The Platform now enhances agent transfers by sending a conversation summary of the end-user and bot chat to the live agent during the transfer. This enhancement streamlines agent handoff by presenting a concise, GenAI-generated summary alongside the existing chat history link, eliminating the need for agents to navigate away from the chat window or open new pages to understand the conversation context.
+The Platform now enhances agent transfers by sending a conversation summary of the end-user and bot chat to the live agent during the transfer. This enhancement streamlines agent handoff by presenting a concise, GenAI-generated summary alongside the existing chat history link, eliminating the need for agents to navigate away from the chat window or open new pages to understand the conversation context. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#user-bot-chat-conversation-summary-to-live-agents)
 
 <font size="4">API</font>
 
