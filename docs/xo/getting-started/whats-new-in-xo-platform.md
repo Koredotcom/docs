@@ -6,7 +6,7 @@ hide:
 # What's New in AI for Service (XO v11)
 Learn about the new features and enhancements included in AI for Service (XO) v11.
 
-## All-new Experience Optimization Platform
+## All-new AI for Service Platform
 AI for Service helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
 
 Built for security and scalability, the platform uses a no-code interface that lets businesses build intelligent virtual assistants. These assistants use large language models to hold natural conversations in multiple languages across various channels.
