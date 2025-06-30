@@ -59,9 +59,9 @@ The Code Tools design page has been redesigned to streamline development workflo
 
 Key improvements
 
-* Object parameter type - Accept structured JSON input alongside existing string and number types.
-* Side-by-side layout - View parameters, code editor, and output simultaneously without scrolling.
-* Enhanced usability - Streamlined interface reduces context switching and accelerates development cycles.
+* Object parameter type: Accept structured JSON input alongside existing string and number types.
+* Side-by-side layout: View parameters, code editor, and output simultaneously without scrolling.
+* Enhanced usability: Streamlined interface reduces context switching and accelerates development cycles.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md)
 
@@ -71,9 +71,9 @@ The Agent Platform now enables direct testing of MCP tools during the design pha
 
 Key features
 
-* Direct tool execution - Test individual MCP tools immediately after configuration without creating full agents.
-* Dynamic input forms - Provide sample data through automatically generated parameter forms.
-* Real-time results - View execution output instantly.
+* Direct tool execution: Test individual MCP tools immediately after configuration without creating full agents.
+* Dynamic input forms: Provide sample data through automatically generated parameter forms.
+* Real-time results: View execution output instantly.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/configure-mcp-server.md)
 
