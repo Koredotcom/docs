@@ -1,6 +1,6 @@
-# Outbound Calling API (Kore.ai Voice Gateway)
+# Outbound Calling API (Voice Gateway)
 
-Outbound calls can be made to external customers using Kore.ai Voice Gateway. The answering machine detection feature can be enabled on outbound calls to indicate whether a person or a machine has answered a call.
+Outbound calls can be made to external customers using Voice Gateway. The answering machine detection feature can be enabled on outbound calls to indicate whether a person or a machine has answered a call.
 
 When the dialed call is answered, the answering machine detection feature starts listening to the outbound call, and after a short period, sends an indication of whether a person or a machine has answered the call.
 
@@ -35,7 +35,9 @@ The application triggers an outbound call using an HTTP POST request to the endp
 |                     | - “tel:911234567890” with the country code                                                                                                               |                  |
 |                     | - “sip:1234567890@1.23.345.678:1234”                                                                                                                    |                  |
 | caller              | User part for the caller ID of the outbound call. It is the experience flow number in Contact Center AI.                                                | string, required |
-| notifyurl           | Absolute URL of the dialer application where Kore.ai Voice Gateway sends notifications. If not provided, no notifications are sent.                     | string, optional |
+| notifyurl           | Absolute URL of the dialer application where Voice Gateway sends notifications. If not provided, no notifications are sent.                     | string, optional |
+| notifyHeaders           | If these are included in the API payload, these headers will be sent along with AMD notifications to the specified notifyUrl.                     | object, optional |
+| timeoutInMs           | This provides improved control over how long the system should wait for the recipient to answer.                    | number, optional |
 | trunk               | The trunk is a carrier for the account. If not provided, It will pick the default carrier for that account.                                             | string, optional |
 | metadata            | Data to be sent to the bot (can be used to provide information to the bot about the call, such as the name of the target).                            | object, optional |
 | timers              | An object containing various timeout properties. [Learn more](../contact-center/outbound-calling-kore-ai-vg.md#timers-configuration) | object, optional |
@@ -55,36 +57,43 @@ The application triggers an outbound call using an HTTP POST request to the endp
 | `timers.greetingCompletionTimeoutMs`      | Silence in milliseconds to wait for during greeting before returning amd_machine_stopped_speaking. | no, default=2000  |
 | `timers.noSpeechTimeoutMs`                | Time in milliseconds to wait for a speech before returning amd_no_speech_detected.                 | no, default=5000  |
 
-### Sample Request
+### Outbound Calling API Sample Request
 
 ```
 curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialout' \
 --header 'Format: application/json' \
---header 'auth: {{JWT_TOKEN}}'
-{
-   "bot": "st-e38782ff-0d89-52e9-5678769a49fdexxxx",
-   "target": "tel:911234567890",
-   "caller": "+127061657882",
-   "trunk": "TRUNK",
-   "timers": {
-       "noSpeechTimeoutMs": 12000,
-       "decisionTimeoutMs": 15000,
-       "toneTimeoutMs": 10000,
-       "greetingCompletionTimeoutMs": 10000
-   },
-   "thresholdWordCount": 4,
-   "machineDetection": "detect",
-   "notifyurl": "https://de8a-115-114-88-222.ngrok-free.app/notify",
-   "metadata": {
-       "jobPosition": "Software Engineer",
-       "userName": "John Doe",
-       "companyName": "abc corporation",
-       "jobLocation": "USA"
-   }
-}
+--header 'auth: {{JWT_TOKEN}}' \
+--data-raw '{
+  "bot": "st-e38782ff-0d89-52e9-5678769a49fdexxxx",
+  "target": "tel:911234567890",
+  "caller": "+127061657882",
+  "trunk": "TRUNK",
+  "timers": {
+    "noSpeechTimeoutMs": 12000,
+    "decisionTimeoutMs": 15000,
+    "toneTimeoutMs": 20000,
+    "greetingCompletionTimeoutMs": 10000
+  },
+  "timeoutInMs": 60000,
+  "thresholdWordCount": 4,
+  "machineDetection": "detect",
+  "notifyurl": "https://de8a-115-114-88-222.ngrok-free.app/notify",
+  "notifyHeaders": {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "x-channel-type": "X42_IVR",
+    "event-type": "x42-ivr-voice-voice-interactions"
+  },
+  "metadata": {
+    "jobPosition": "Software Engineer",
+    "userName": "John Doe",
+    "companyName": "abc corporation",
+    "jobLocation": "USA"
+  }
+}'
 ```
 
-### Sample Response
+### Outbound Calling API Sample Response
 
 ```
 {
@@ -95,95 +104,103 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:/smartassist/dialou
 
 ## 2. Receiving Call Status Notifications
 
-To receive call status notifications using the `notifyUrl` property on the dial-out request.
+To receive call status notifications, we can use the ‘notifyUrl’ property on the dial-out request.
 
-When this property is set, Kore.ai Voice Gateway sends an HTTP POST request to the specified URL.
+When this property is set, the Voice Gateway sends an HTTP POST request to the specified URL.
 
-!!! Note
+Previously, the API supported notifications only for two call events: **Answered-Completed** or **Failed**. Now, we’ve expanded this to include all Answering Machine Detection (AMD) events during the call progress.
 
-    Only the final call status is sent, indicating whether the call is completed, failed, busy, no-answer, or temporarily unavailable. Intermediate statuses are not shared.
+* By default, all AMD events (for example, `amd_machine_detected`, `amd_machine_stopped_speaking`, `amd_stopped`, etc.) are sent automatically.
+* To avoid receiving all AMD events, you can opt out by setting `amdEventsSubscription: []` in the Dialout API payload.
 
-### Sample Response
+### NotifyURL Sample Response
 
 ```
-POST /notify HTTP/1.1
-Host: 892c-115-114-88-222.ngrok-free.app
-User-Agent: abc
 {
-"conversationId": "29e2d933-527e-429c-95b9-ba4f7c7bxxxx",
-"reasonCode": "caller-disconnected",
-"status": "completed",
-"reason": "200 OK",
-"duration": 14,
-"machinedetection": "amd_human_detected",
-"callconnecttime": "5/8/2023,11:32:49AM",
-"callDisconnectTime": "5/8/2023,11:33:03AM"
-},
-POST /notify HTTP/1.1
-Host: 892c-115-114-88-222.ngrok-free.app
-User-Agent: abc
+   "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
+   "reason": "200 OK",
+   "reasonCode": "OK",
+   "callConnectTime": "2025-06-26T12:49:17.600Z",
+   "ringDurationInMS": 3381,
+   "connectDurationInMS": 4343,
+   "status": "Answered"
+}
 {
-"conversationId": "29e2d933-527e-429c-95b9-ba4f7c7bxxxx",
-"reasonCode": "SAVG-disconnected",
-"status": "completed",
-"reason": "200 OK",
-"duration": 14,
-"machinedetection": "amd_machine_detected",
-"callconnecttime": "5/8/2023,11:32:49AM",
-"callDisconnectTime": "5/8/2023,11:33:03AM"
-},
-POST /notify HTTP/1.1
-Host: 892c-115-114-88-222.ngrok-free.app
-User-Agent: abc
+   "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
+   "reason": "200 OK",
+   "reasonCode": "OK",
+   "callConnectTime": "2025-06-26T12:49:21.761Z",
+   "ringDurationInMS": 3381,
+   "connectDurationInMS": 4343,
+   "status": "Call-In-Progress",
+   "machineDetection": "amd_machine_detected"
+}
+
+
 {
-"conversationId": "4e010fea-cd93-47a0-a548-36d5f621xxxx",
-"reasonCode": "caller-disconnected",
-"status": "completed",
-"reason": "200 OK",
-"duration": 10,
-"machinedetection": "disabled",
-"callconnecttime": "5/8/2023,11:29:55AM",
-"callDisconnectTime": "5/8/2023,11:30:05AM"
-},
-POST /notify HTTP/1.1
-Host: 892c-115-114-88-222.ngrok-free.app
-User-Agent: abc
+    "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
+    "reason": "200 OK",
+    "reasonCode": "OK",
+    "callConnectTime": "2025-06-26T12:49:31.103Z",
+    "ringDurationInMS": 3381,
+    "connectDurationInMS": 4343,
+    "status": "Call-In-Progress",
+    "machineDetection": "amd_stopped"
+}
 {
-"conversationId": "305ae3c4-b527-4bfd-ad75-9b6abdaaxxxx",
-"status": "failed",
-"reason": "503 Service Unavailable",
-"machinedetection": "disconnect",
-"callconnecttime": "5/8/2023,11:31:30AM",
-"reasonCode": "Service Unavailable",
-"callDisconnectTime": "5/8/2023,11:31:30AM"
-},
-POST /notify HTTP/1.1
-Host: 892c-115-114-88-222.ngrok-free.app
-User-Agent: abc
+    "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
+    "reason": "200 OK",
+    "reasonCode": "OK",
+    "callConnectTime": "2025-06-26T12:49:31.092Z",
+    "ringDurationInMS": 3381,
+    "connectDurationInMS": 4343,
+    "status": "Call-In-Progress",
+    "machineDetection": "amd_machine_stopped_speaking"
+}
 {
-"conversationId": "80af8588-31c7-4877-a798-a3603c30xxxx",
-"status": "failed",
-"reason": "486 Busy Here",
-"machinedetection": "disconnect",
-"callconnecttime": "5/8/2023,11:36:33AM",
-"reasonCode": "Busy Here",
-"callDisconnectTime": "5/8/2023,11:36:33AM"
-},
-POST /notify HTTP/1.1
-Host: 892c-115-114-88-222.ngrok-free.app
-User-Agent: abc
+    "conversationId": "433a9a58-44eb-4c56-bb3e-ab2415f0xxxx",
+    "reason": "200 OK",
+    "reasonCode": "bot-disconnected",
+    "callConnectTime": "2025-06-26T12:49:17.609Z",
+    "ringDurationInMS": 3381,
+    "connectDurationInMS": 4343,
+    "status": "completed",
+    "callDuration": 109,
+    "machineDetection": "amd_machine_detected",
+    "sessionId": "685d41cd54d09f7f699axxxx",
+    "callDisconnectTime": "2025-06-26T12:51:07.151Z"
+}
 {
-"conversationId": "40a95de6-949a-4403-b735-233daxxxx",
-"status": "failed",
-"reason": "480 Temporarily Unavailable",
-"machinedetection": "disconnect",
-"callconnecttime": "5/8/2023,11:37:46AM",
-"reasonCode": "Temporarily Unavailable",
-"callDisconnectTime": "5/8/2023,11:37:46AM"
+    "conversationId": "00721e4f-bcbe-4965-ba3f-b24aec5bxxxx",
+    "reason": "486 Busy Here",
+    "reasonCode": "Busy Here",
+    "callConnectTime": "2025-06-26T13:00:13.374Z",
+    "ringDurationInMS": 15255,
+    "connectDurationInMS": 17204,
+    "status": "Failed",
+    "callDisconnectTime": "2025-06-26T13:00:13.374Z"
 }
 ```
+### notifyHeaders
 
-## Response Body Parameters
+* You can now include notifyHeaders in the API payload. These custom headers will be passed along with the AMD notifications to the specified notifyUrl.
+* This enhancement provides flexibility to send additional metadata or authentication information with your callbacks.
+* Example Headers List (including both default and notifyHeaders)
+    * Accept: /
+    * Accept-Encoding: br, gzip, deflate
+    * Accept-Language: *
+    * Authorization: Basic a29yZS5haTp6dkw3JDckaUJxSjQyxxxx
+    * Content-Length: 1495
+    * Content-Type: application/json
+    * Host: reptile-fitting-wolf.ngrok-free.app
+    * SAVG-Signature: t=1750947610,v1=2bdbc3c37371dcd9cf62ef637624a4e7eff42ebeb4e5c100c83b7146422bxxxx
+    * Sec-Fetch-Mode: cors
+    * User-Agent: node
+    * X-Forwarded-For: 23.21.52.56
+    * X-Forwarded-Host: reptile-fitting-wolf.ngrok-free.app
+    * X-Forwarded-Proto: https
+
+### Response Body Parameters
 
 | **PARAMETER**          | **DESCRIPTION**                                                                                                                                                              | **TYPE**             |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
@@ -204,6 +221,8 @@ User-Agent: abc
 | callconnecttime    | The time when the call was connected (when the end-user picked up the phone).                                                                                             | string, required |
 | callDisconnecttime | The time when the call was disconnected.                                                                                                                                 | string, required |
 | duration           | The duration of the call from connectTime to the end of the call in seconds.                                                                                               | string, required |
+| ringDurationInMs           | **Ringing to Connection Delay** – It is the time between when the call starts ringing and when the other person answers and the call connects.                                                                                               | number, required |
+| connectDurationInMs          | **Dial to Connection Delay** – This is the time elapsed from when the caller dials to when the call is answered and connected.                                                                                               | number, required |
 | machinedetection   | This property is included when answering machine detection is enabled (`machineDetection` is configured to “disconnect”) and detected, and the call ends. It provides the detection reason: | string, required |
 |                    | - `amd_human_detected`: A human is speaking.                                                                                                                              |                  |
 |                    | - `amd_machine_detected`: A machine is speaking.                                                                                                                           |                  |
@@ -213,3 +232,34 @@ User-Agent: abc
 |                    | - `amd_tone_detected`: A beep was detected.                                                                                                                               |                  |
 |                    | - `amd_error`: An error has occurred.                                                                                                                                     |                  |
 |                    | - `amd_stopped`: Answering machine detection was stopped.                                                                                                                  |                  |
+
+## 3. Accessing AMD Values Using Context Variables
+
+These values will be available in the context and can help design more effective bot flows based on call behavior during Answering Machine Detection. You can access them using:
+
+* `context.session.UserSession.amdInfo`
+    * Contains the following values (some may be optional or unavailable)
+        * `amdEvents` (all AMD-related events)
+        * `amdGreeting` (amd_machine_detected related message)
+        * `amdReason` (reason for amd_machine_detected)
+        * `amdRingDurationInMs` (difference between call-in-progress and ringing/early-media)
+        * `amdConnectDurationInMs` (difference between call-in-progress and trying)
+
+* `context.session.UserSession.amd`
+    * Contains the following values (some may be optional or unavailable)
+        * amd_human_detected: A human is speaking.
+        * amd_machine_detected: A machine is speaking.
+        * amd_no_speech_detected: No speech was detected.
+        * amd_decision_timeout: No decision was made in the time given.
+        * amd_machine_stopped_speaking: A machine has completed the greeting.
+        * amd_tone_detected: A beep was detected.
+        * amd_error: An error has occurred.
+        * amd_stopped: Answering machine detection was stopped.
+
+## 4. Interaction Status Logs
+
+Machine Detection Flag
+
+* When the machineDetection parameter is set to disconnect, and the system detects a machine using either `amd_machine_detected` or `amd_tone_detected`, the call will be marked as `machineDetected` in the Interactions page under the Status column.  
+    <img src="../images/status.png" alt="Status" title="Status" style="border: 1px solid gray; zoom:70%;"> 
+* This helps you easily identify and track calls that were disconnected due to machine detection.

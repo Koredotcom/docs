@@ -37,10 +37,10 @@ It intelligently manages context, retrieves relevant information, and orchestrat
 ### General Settings
 
 Enter the name for the automation node and select a conversation management approach.  
-<img src="../images/general-settings.png" alt="Automation Node" title="General Settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/orchestrated-autonomy.png" alt="Automation Node" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 
 
-#### Conversation Management Approach
+#### Autonomy Level for Automation AI
 
 Select how you want to handle user conversations based on your business needs and process complexity.
 
@@ -58,14 +58,13 @@ Select how you want to handle user conversations based on your business needs an
 
 **Agentic App Configurations**
 
-* **Connect Agentic App:** Select an existing  Agentic App or create a new one tailored to your specific needs. For more information, see [Create an Agentic App.](https://docs.kore.ai/agent-platform/agentic-apps/create-app/)
+* **Agentic App:** Select an existing  Agentic App or create a new one tailored to your specific needs. For more information, see [Create an Agentic App.](https://docs.kore.ai/agent-platform/agentic-apps/create-app/)
 
-* **Target Environment:** Select the appropriate environment where your app will be deployed. This setting applies only to the execution after the flow is published. The target environment must be created within the Agentic App.
+* **Environment:** Select the appropriate environment where your app will be deployed. This setting applies only to the execution after the flow is published. The environment must be created within the Agentic App.
 
 * **Real-time Voice Interactions:** Enable **Real-time Voice Interactions** powered by multi-modal language models for seamless, low-latency, and context-aware conversations. 
 This feature allows users to engage in two-way voice streaming through the **Kore Voice Gateway**, enhancing automation with AI models. 
-When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in Agent Platform to add voice capabilities to the application. 
-
+When real-time voice interaction is enabled, Kore Voice Gateway uses the underlying models configured in Agent Platform to add voice capabilities to the application.  
 <img src="../images/full-autonomy.png" alt="Full Autonomy" title="Full Autonomy" style="border: 1px solid gray; zoom:70%;">
 
 ### Connection Rules

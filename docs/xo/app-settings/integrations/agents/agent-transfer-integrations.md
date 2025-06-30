@@ -149,6 +149,18 @@ When the platform transfers a user conversation to a live agent, the agent recei
     Links generated after the v11.4.1 release can be accessed 10 times.
 
 
+## User-Bot Chat Conversation Summary to Live Agents
+
+When the platform transfers a user to a live agent, it sends an AI-generated summary of the user-bot conversation directly to the agent window, along with the chat history link. This helps agents quickly understand the conversation context before interacting with the user.
+
+By default, the feature is disabled. To enable, go to the dialog task and open the agent transfer node. In the Instance Properties panel, enable the Conversation Summary toggle for that node. Ensure that GenAI - [Conversation Summarization](../../../generative-ai-tools/genai-features.md) feature is enabled.
+
+!!! note
+
+    The Conversation Summary applies to each agent transfer node. If the same Agent Transfer node is used in multiple dialogs, you need to configure the flag individually for each instance.
+
+
+
 
 ## Attachment Sharing with Live Agent
 
