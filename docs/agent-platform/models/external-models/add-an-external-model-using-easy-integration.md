@@ -46,7 +46,7 @@ You can easily connect Amazon Bedrock models to the Agent Platform using a guide
 
 !!! important
 
-    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS system (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Kore Agent Platform’s AWS principal (or a designated IAM role in a Kore AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md){:target="_blank"}.
+    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS account (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Kore Agent Platform’s AWS principal (or a designated IAM role in a Kore AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md){:target="_blank"}.
 
 
 Steps to add Amazon Bedrock models using easy integration:
