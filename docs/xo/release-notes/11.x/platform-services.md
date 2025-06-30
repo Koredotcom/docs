@@ -4,7 +4,9 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.15.0 June 30, 2025
 
-<u> Minor Release </u>
+<u> Minor Release </u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 <font size="4">Audit Logs</font>
 
@@ -52,8 +54,6 @@ Key features
 * JWT-based authentication for secure access.
 * Per-client rate limiting for system stability.
 * Granular logging for improved tracking and debugging.
-
-
 
 <hr>
 
