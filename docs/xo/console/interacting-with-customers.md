@@ -76,6 +76,7 @@ The following table lists scenarios with expected results in case of a network f
 | If the resend icon is clicked            | The message is sent again.                                                                                                      |
 | If the conversation is terminated        | The Resend icon does not appear.                                                                                                |
 | If the page is refreshed                 | The undelivered messages do not appear.                                                                                         |
+
 ## Audio and Video Calls with Customers
 
 Agents can request the customer for an audio or video call during the chat conversation if required. Clicking the **Audio** or **Video Call** icon initiates a call.  
@@ -83,7 +84,8 @@ Agents can request the customer for an audio or video call during the chat conve
 
 !!! Note
 
-    The initial interaction and the phone call interaction must be closed separately, with corresponding dispositions.
+    * Accounts using Voice Gateway and AudioCodes can access the video call option. 
+    * Agents must close the chat interaction and the audio/video call separately, each with its own disposition.
 
 ### Manual Outbound Call
 
@@ -217,8 +219,7 @@ The initiating agent can switch to the original customer call if needed, and vic
 
 The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent chooses a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the chosen agent remains available at the time of connection.
 
-During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention. 
-
+During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
 
 #### Conference Call
 
@@ -272,9 +273,9 @@ Following the consult or conference call, the initiating agent can proceed with 
    <td>A conference call cannot be initiated during an ongoing consult call.
    </td>
    <td>When the agent and user are on call and the agent initiates a consult with the Supervisor:
-    a) If the consult is merged, then a conference is not allowed.
+    (a) If the consult is merged, then a conference is not allowed.
 <br>
-    b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
+    (b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
    </td>
   </tr>
   <tr>
@@ -843,18 +844,6 @@ When a caller disconnects, agents can either call back or end the call. If an ag
 
 The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
 
-### Timer After Caller Disconnects a Voice Call
-
-When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#auto-logout--auto-close-conversation).
-
-**Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
-<img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  
-
-**Timer when the caller disconnects during a conference call**: A depleting timer is displayed on the live interaction pane, with options to close or rejoin the conference call.  
-<img src="../images/end-conference-call.png" alt="End Conference Call Button" title="End Conference Call Button" style="border: 1px solid gray; zoom:80%;">  
-
-The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
-
 ### After Call Work (ACW)
 
 If ACW is enabled, then the conversations are managed based on the ACW configuration:
@@ -916,6 +905,22 @@ Dispositions can be assigned in two ways:
         * **Custom**: Administrators can [create custom disposition codes](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
     * Optionally, type a **Description** of your reason for selecting the disposition.
     * Click **_Close_** to close the conversation.
+
+### Translate Conversations in Real Time
+
+Agents can translate conversations in real time on the live interaction pane. Administrators can enable this functionality from [Translation Configurations](../contactcenter/configurations/advanced-settings/translation-configurations.md).
+
+Steps to translate real-time conversations:
+
+1. Click the **Translate** button at the top right corner of the live interaction pane.  
+    <img src="../images/translate-option.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the language from the dropdown. Click **Mark as Default** to make it the default language for translation.  
+    <img src="../images/select-language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
+
+3. The conversation is translated into the selected language.  
+    <img src="../images/translated-conversation.png" alt="Translated Conversation" title="Translated Conversation" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../images/summary.png" alt="Summary" title="Summary" style="border: 1px solid gray; zoom:70%;">
 
 ## Information Provided to Agents and Customers During Live Interactions
 

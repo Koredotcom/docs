@@ -353,11 +353,11 @@ The following recording settings can be configured:
 
     * **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
 
-        <img src="../images/download-as-single-file.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
+        <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
 
     * **Download as separate files**: If you choose this option, you can select the files and download them.  
 
-        <img src="../images/download-as-separate-files.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
     The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
     <img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
