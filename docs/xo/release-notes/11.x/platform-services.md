@@ -27,20 +27,24 @@ The automatic phone number provisioning feature, introduced during app creation,
 Key benefits
 
 * Improves resource efficiency by provisioning phone numbers only when needed.
-* Simplifies the onboarding experience.
+* Simplifies the onboarding experience.  
+
+[Learn more:octicons-arrow-right-24:](../../getting-started/guided-onboarding.md)
 
 
 <font size="4">Channels</font>
 
 **Retirement of Skype**
 
-Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform. 
+Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform.  
+[Learn more:octicons-arrow-right-24:](../../channels/add-skype-channel.md)
 
 <font size="4">Rebranding</font>
 
 **Renaming of Platform Components**
 
-As part of the revised product strategy, the XO Platform is being repositioned as AI for Service, aligning it with the broader product suite (AI for Work and AI for Process). This change accurately reflects the platform’s core value proposition and enhances brand consistency across all products.
+As part of the revised product strategy, the XO Platform is being repositioned as AI for Service, aligning it with the broader product suite (AI for Work and AI for Process). This change accurately reflects the platform’s core value proposition and enhances brand consistency across all products.  
+[Learn more:octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md)
 
 <font size="4">APIs</font>
 
