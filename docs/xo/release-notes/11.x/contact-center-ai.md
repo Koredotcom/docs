@@ -117,7 +117,8 @@ The Outbound Calling API has been enhanced to improve AMD handling and support c
 * AMD Parameter Support: All AMD detection variables (`amd_human_detected`, `amd_machine_detected`, `amd_tone_detected`, etc.) are now available in both the context object and notify URL payload for use in Bot Builder.
 * Greeting Message in Context: The detected greeting message is now passed in the context for use in bot flows.
 * `greetingCompletionTimeoutMs` Handling: The timeout now functions correctly, preventing message cutoffs after `amd_machine_detected`.
-* Custom Notify URL Headers: The Dialout API now supports custom headers in the notify URL, enabling customers to receive enriched event data.
+* Custom Notify URL Headers: The Dialout API now supports custom headers in the notify URL, enabling customers to receive enriched event data.  
+[Learn more:octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg.md)
 
 <hr>
 
