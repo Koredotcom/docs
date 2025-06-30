@@ -8,11 +8,12 @@ This document provides information on the feature updates and enhancements intro
 
 <font size="4">Widget Enhancements</font>
 
-**Agentic Copilot Enhancements**
+**Agentic Copilot Enhancements**  
 
-Agentic Copilot now offers enhanced configuration features along with improved runtime capabilities.
+Agentic Copilot now offers enhanced configuration features along with improved runtime capabilities. 
 
 Configuration Updates:  
+
 * Welcome Events: When Agentic Copilot is enabled, this section displays the message: *Agentic Copilot is enabled, and it will run after the execution of the enabled Welcome Events*.  
 * On the Widget Settings > Agent AI Channel Specific Settings page, the Allow auto send Message timer is extended to 60 seconds.  
 * On the Linked Services > Agentic Configuration page, an Agentic app that is currently in use shows an "in use" status and can’t be deleted.  
@@ -22,6 +23,7 @@ Configuration Updates:
     * The X-Api Key has been renamed to API Key.  
 
 Runtime Updates:  
+
 * After executing the enabled Welcome Events, the widget displays that Agentic Copilot is actively listening to your conversation and is ready to assist with an automatic message.  
 * For customer messages outside the Agentic app's defined scope, the widget displays a message indicating it is not trained to handle them.  
 * When multiple Agentic responses are generated with the ‘Allow auto send Message’ option enabled:  
@@ -31,15 +33,17 @@ Runtime Updates:
 
 **Adding Agent AI V3 Features to SDK**  
 The following Agent AI v3 features have been added to the latest SDK:  
+
 * Custom Tab creation in the Agent AI widget.  
 * Input Box Expansion for the **Override**, **List View**, **Restart**, and **Search Bar** fields.  
 * Hover effect for dialogs.  
 * Agentic Copilot integration. 
 
 **Controlling Transcripts' Visibility for Transferred Agents**  
-Agent-to-agent call transfers now limit transcript visibility to the current agent only, with control options via public APIs or agent entry/exit events, except in warm transfers and conference calls, where all participants can view shared transcripts.
+Agent-to-agent call transfers now limit transcript visibility to the current agent only, with control options via public APIs or agent entry/exit events, except in warm transfers and conference calls, where all participants can view shared transcripts. 
 
 The **Control Transcript Visibility between Agents** widget offers two options:  
+
 * Use public APIs to control transcription via the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md) or  
 * Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits).
 
