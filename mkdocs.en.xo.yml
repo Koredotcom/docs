@@ -174,8 +174,8 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
-        - Platform Services: release-notes/11.x/platform-services.md 
-        - Voice Gateway: release-notes/11.x/voice-gateway.md 
+        - Voice Gateway: release-notes/11.x/voice-gateway.md
+        - Platform Services: release-notes/11.x/platform-services.md          
       - Upgrade Guides:
         - Benefits of XO v11: getting-started/benefits-xo11.md
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md

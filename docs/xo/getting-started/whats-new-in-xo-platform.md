@@ -12,6 +12,8 @@ The unified platform offers a comprehensive suite of products, features, and ser
 
 <img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
 
+<hr>
+
 Key updates to products and features are summarized below.
 
 ### Automation AI
@@ -56,10 +58,7 @@ Key Search AI (Answers) capabilities are summarized below.
 
     Search AI uses **Advanced RAG technologies** to deliver accurate, context-aware answers by intelligently combining information retrieval and generative AI. It is built on an end-to-end process: 
 
-   * **Chunk Browser**: The Chunk Browser provides a tool for observing the extracted chunks from the source data. It gives insight into the extraction process's output and enables subsequent actions like editing and rectifying the chunks. 
-
-
-    ### Expanded Connectivity and High-Speed Crawling 
+    * **Chunk Browser**: The Chunk Browser provides a tool for observing the extracted chunks from the source data. It gives insight into the extraction process's output and enables subsequent actions like editing and rectifying the chunks. 
 
     * **Index Configuration**: Indexing is the process of generating vectors or embeddings from the extracted chunks and creating a knowledge Index that can be used to generate answers. Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into vectors. The XO platform supports various embedding models, such as MPNet, LaBSE, and e5, and allows you to choose a model according to your specific needs.  
     <img src="../images/xo-platform-Index.png" alt="Index" title="Index" style="border: 1px solid gray; zoom:70%;">
