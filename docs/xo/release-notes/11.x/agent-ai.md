@@ -2,6 +2,74 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.15.0 June 30, 2025
+
+<u>Minor Release</u>
+
+<font size="4">Widget Enhancements</font>
+
+**Agentic Copilot Enhancements**
+
+Agentic Copilot now offers enhanced configuration features along with improved runtime capabilities.
+
+**Configuration Updates**
+
+* Welcome Events: When Agentic Copilot is enabled, this section displays the message: *Agentic Copilot is enabled, and it will run after the execution of the enabled Welcome Events*.
+* On the Widget Settings > Agent AI Channel Specific Settings page, the Allow auto send Message timer is extended to 60 seconds.
+* On the Linked Services > Agentic Configuration page, an Agentic app that is currently in use shows an "in use" status and can’t be deleted.
+* On the Agentic Configurations > App Information page:
+    * The Agentic App Name field now has a 50-character limit.
+    * The App ID of the Agentic Platform is now renamed to App ID.
+    * The X-Api Key has been renamed to API Key.
+
+**Runtime Updates**
+
+* After executing the enabled Welcome Events, the widget displays that Agentic Copilot is actively listening to your conversation and is ready to assist with an automatic message.
+* For customer messages outside the Agentic app's defined scope, the widget displays a message indicating it is not trained to handle them.
+* When multiple Agentic responses are generated with the ‘Allow auto send Message’ option enabled:
+    * The timer for each message starts only after the previous message is sent.
+    * If the view does not auto-scroll to the latest message, an arrow icon appears in the bottom-right corner, indicating the number of Agentic messages stacked below.
+* To regenerate a failed response, double-click the corresponding customer message.
+
+**Adding Agent AI V3 Features to SDK**
+The following Agent AI v3 features have been added to the latest SDK:
+* Custom Tab creation in the Agent AI widget.
+* Input Box Expansion for the **Override**, **List View**, **Restart**, and **Search Bar** fields.
+* Hover effect for dialogs.
+* Agentic Copilot integration.
+
+**Controlling Transcripts' Visibility for Transferred Agents**
+Agent-to-agent call transfers now limit transcript visibility to the current agent only, with control options via public APIs or agent entry/exit events, except in warm transfers and conference calls, where all participants can view shared transcripts.
+
+The Control Transcript Visibility between Agents widget offers two options: 
+
+* Use public APIs to control transcription (via the [Control Transcription API](https://docs.kore.ai/agentassist/api/control-transcription-api/)) or 
+* Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits).
+
+**Support for Custom LLMs in Third-Party Agent Desktops for Disposition Summary Generation**
+Third-party agent desktops can now generate Disposition Summaries using a custom LLM. To enable this, go to **Agent AI **>** Generative AI Tools **>** GenAI Features **>** All Products,** and select a model under the **Conversation Summary** section.
+
+**Embedded Agent AI App Supports Bot Configurations**
+Users can manage bot configuration parameters (for example, QueueIdentifier, custom data) directly within the Third Party Configuration section of an embedded Agent AI app. This streamlines the process by dynamically generating iframe URLs for third-party CCaaS/CRM platforms, removing the necessity for a separate configuration on the third-party desktop. To set this up, go to Agent AI > Configuration > System Setup > Third-Party Configuration. 
+
+<font size="4">API Enhancement</font>
+
+**New Filters for the Raw Data API**
+To improve data segmentation, streamline reporting, and support scalable data pipelines, the Raw Data API now supports the following filters: Agent ID, Channel, Session ID, and Conversation ID filters.
+
+<font size="4">Integration Enhancements</font>
+
+**SIPREC Transcription Trigger Enhancement**
+SIPREC transcription now uses event-based triggers and starts only after the call connection is established. It excludes non-conversational audio, such as ringing tones and hold music, which reduces ASR costs, prevents timeouts, and improves efficiency.
+
+**Call Transcript Timestamps from Amazon Connect**
+Salesforce Amazon Connect now includes accurate timestamps in call transcripts. This helps the Agent Coaching and Playbook modules deliver guidance at the right moments, both during and after the call.
+
+**Flag-based Agent AI SDK Integration with Genesys Cloud CX**
+The Agent AI SDK is now integrated into the middleware using a flag-based approach, allowing customers to choose between iframe or SDK integration. Users selecting the SDK can customize their Agent AI experience, including UI changes, event listeners, and behavior.
+
+<hr>
+
 ## v11.14.1 June 14, 2025
 
 <u>Patch Release </u>

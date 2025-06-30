@@ -1,7 +1,7 @@
 # Agent Transfer Integrations
 
 
-## Introduction
+
 
 Kore.ai’s Agent Transfer allows you to configure the most popular integrations to hand over conversations seamlessly without the need to use BotKit. These agent transfer integrations are hosted by the Kore.ai XO Platform, and there is no need to host any custom BotKit.
 

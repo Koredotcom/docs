@@ -2,6 +2,65 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.15.0 June 30, 2025
+
+<u> Minor Release </u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Audit Logs</font>
+
+**Audit Logs for Agent Profile Updates**
+
+Enhanced the User Management audit logs to capture all agent profile-related actions, including create, update, delete, activate/deactivate, and role or privilege changes. Each log entry includes a timestamp, the user who performed the action, and the target user's details. The system also logs failed or unauthorized attempts. These updates improve traceability, support compliance, and ensure complete visibility into user management activities. Learn more.
+
+**App-to-App Communication Enabled for New Apps**
+
+App-to-app communication is now supported for newly created apps, enabling one app to call flows, dialogs, automation nodes, and script nodes from another. This allows the reuse of logic, such as queue or skill assignments, using functions like setQueue() or setSkill() across apps. They can be referenced from dialogs or scripts when designing flows in a different app.
+
+<font size="4">Getting Started</font>
+
+**Removal of auto purchase of Phone number in the App creation process**
+
+The automatic phone number provisioning feature, introduced during app creation, has been removed. Users will now have the flexibility to manually provide a phone number for voice channel testing if needed via the channel configuration section.
+
+Key benefits
+
+* Improves resource efficiency by provisioning phone numbers only when needed.
+* Simplifies the onboarding experience.  
+
+[Learn more:octicons-arrow-right-24:](../../getting-started/guided-onboarding.md)
+
+
+<font size="4">Channels</font>
+
+**Retirement of Skype**
+
+Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform.  
+[Learn more:octicons-arrow-right-24:](../../channels/add-skype-channel.md)
+
+<font size="4">Rebranding</font>
+
+**Renaming of Platform Components**
+
+As part of the revised product strategy, the XO Platform is being repositioned as AI for Service, aligning it with the broader product suite (AI for Work and AI for Process). This change accurately reflects the platform’s core value proposition and enhances brand consistency across all products.  
+[Learn more:octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md)
+
+<font size="4">APIs</font>
+
+**Support for Proactive Notifications for WhatsApp via Public API**
+
+The Proactive Notifications feature for WhatsApp has been enhanced to support multi-user messaging using a public API, enabling businesses to send outbound messages to multiple recipients simultaneously.
+
+Key features
+
+* Multi-user messaging in a single API call.
+* JWT-based authentication for secure access.
+* Per-client rate limiting for system stability.
+* Granular logging for improved tracking and debugging.
+
+<hr>
+
 ## v11.14.1 June 14, 2025
 
 <u> Patch Release </u>
@@ -829,7 +888,8 @@ Key benefits:
 
 <font size="4">Marketplace</font>
 
-**Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**
+**Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**  
+
 The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node-v2.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
 
 <hr>
@@ -851,18 +911,21 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 <font size="4">LLM and Generative AI</font>
 
-**Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**
+**Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
+
 The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
 
 * GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
 
-**Apps Versioning for GenAI & LLM**
+**Apps Versioning for GenAI & LLM**  
+
 The platform now includes GenAI and LLM settings in app versioning, including Model Integrations, Custom Prompts, Feature & Model Prompt mapping, and Safeguards. It allows platform users to manage and track GenAI & LLM configuration changes across different bot/app versions, enhancing control and customization of GenAI features. 
 
 <font size="4">Analytics</font>
 
-**Enhanced Rate Limit API Response** 
+**Enhanced Rate Limit API Response**  
+
 This update helps API users understand which specific rate limit they've hit, allowing them to plan their request strategies more effectively and reduce errors in API usage.
 
 Specific error messages:
@@ -910,7 +973,8 @@ Key updates:
 
 <font size="4">Channels</font>
 
-**Customizable VXML Error Threshold in IVR Voice Call Properties**
+**Customizable VXML Error Threshold in IVR Voice Call Properties**  
+
 This update removes the restriction of having a fixed VXML Error Threshold at the environment level that applies to all bots, with no option for customization. Platform users now have the flexibility to set the number of retries at the bot level, tailoring it to the specific needs of their system.
 
 Key updates:
@@ -1078,7 +1142,8 @@ Key features and enhancements included in this release are summarized below.
 
 <font size="4">LLM & Generative AI Framework</font>
 
-**OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**
+**OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
+
 The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"}.
 
 * GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.

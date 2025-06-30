@@ -1,12 +1,68 @@
 # Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+## v11.15.0 June 30, 2025
+
+<font size="4">Multi-Vector Search</font> 
+
+Search AI introduces Multi-vector Search that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
+
+For example, consider a document utilizing a dual-vector approach for information retrieval. One vector, generated from the document's content and title, captures detailed context. The other vector, derived from questions related to the content, anticipates user inquiries. By appropriately weighting these vectors, retrieval efficiency is significantly enhanced. This is because the vectors encompass various content aspects, such as title, content, and derived questions, resulting in improved alignment with diverse user queries.
+
+
+<font size="4">Enhanced Multilingual Support</font>
+
+Search AI now supports over 100 languages, enabling a seamless multilingual experience across content ingestion, query understanding, and result delivery. Users can:
+
+* Add and organize content in these languages.
+* Understand and interpret queries in these languages.
+* Search and deliver answers and results in the same language as the user query.
+
+Additional enhancements include:
+
+* **Markdown extraction support** for Hungarian, German, and Chinese, improving the accuracy of content parsing in these languages.
+* **Image-based extraction** and **Advanced HTML extraction** are now supported for German, enabling richer parsing of complex and visually structured documents.
+
+
+<font size="4">API Stage in Document Workbench</font>
+
+Search AI now features a new **API stage** in the **Chunk Enrichment** process. This enhancement allows users to leverage external services for content transformation. Users can specify a custom POST API endpoint along with the necessary headers and request body to send chunks for enrichment. This integration facilitates seamless collaboration with third-party tools, enabling the classification, tagging, or enhancement of metadata for the chunks. 
+
+<font size="4">Enhanced Export API</font>
+
+The **Analytics Export Public API** now supports additional filtering parameters, providing more granular control over exported data. These new filters work in conjunction with the existing group and filter date-based keys to enable more targeted analytics exports.
+
+With this enhancement, you can now include the following optional filter in the API request payload:
+
+* **eventTypes**: Filter data by user feedback events such as 'thumbsUp' or 'thumbsDown'.
+
+<font size="4">New Connector Support in Search AI </font>
+
+Search AI introduces out-of-the-box connectors for the following platforms. These connectors enable seamless content ingestion from both cloud and self-hosted environments, expanding integration flexibility across enterprise systems.
+
+* Confluence Data Center
+* xMatters
+* Jira On-Prem
+* JFrog On-Prem
+* GitHub On-Prem
+
+
+<font size="4">Enhancements to Existing Connectors</font>
+
+Search AI now offers improved capabilities through enhancements to existing connectors:
+
+* **Zoom Connector**: Added support for advanced filters to refine content retrieval.
+* **LumApps Connector**: Now supports fetching and indexing attachments, enhancing search coverage and relevance.
+
+</hr>
+
 ## v11.14.1 June 14, 2025
 
 <u> Patch Release </u>
 
-### Enhanced Date Filtering for Jira Connector
-The Jira connector now supports **customizable date filters**, offering users greater control over data ingestion. Users can now define custom date ranges for data ingestion as part of standard filters.  Once configured, the connector automatically syncs and ingests data for the specified time frame, allowing for more targeted, relevant, and flexible data extraction based on specific requirements. 
+<font size="4">Enhanced Date Filtering for Jira Connector</font>
+
+The Jira connector now supports **customizable date filters**, offering users greater control over data ingestion. Users can now define custom date ranges for data ingestion as part of standard filters. Once configured, the connector automatically syncs and ingests data for the specified time frame, allowing for more targeted, relevant, and flexible data extraction based on specific requirements. 
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/jira.md)
 
@@ -17,13 +73,13 @@ The Jira connector now supports **customizable date filters**, offering users gr
 
 <u> Minor Release </u>
 
-### API Stage in Document Workbench
+<font size="4">API Stage in Document Workbench</font>
 
 Search AI now features a new **API stage in the Content Transformation process** within the Extraction Module. This enhancement allows users to leverage external services for content transformation. Users can specify a custom POST API endpoint along with the necessary headers and request body to send extracted content for enrichment before chunking. This integration facilitates seamless collaboration with third-party tools, enabling the extraction, classification, and transformation of metadata and content.
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
-### New and Improved Web Crawler
+<font size="4">New and Improved Web Crawler</font>
 
 Search AI now includes a new and improved web crawler, designed for better performance and higher-quality content extraction. 
 
@@ -38,14 +94,14 @@ Key enhancements
 
 Existing applications will continue to use the current crawler. 
 
-### Dynamic Prompt and Model Selection in Answer Generation APIs
+<font size="4">Dynamic Prompt and Model Selection in Answer Generation APIs</font>
 
 Search AI answer generation APIs (v1 and v2) now support optional fields in the request to specify the **prompt** and **model** for generating answers. This enhancement enables dynamic selection of LLM configurations, allowing users to tailor responses based on context, use case, or audience.
 
 [Learn more :octicons-arrow-right-24:](./../../apis/searchai/advance-search.md)
 
 
-### Enhanced Multilingual Support
+<font size="4">Enhanced Multilingual Support</font>
 
 Search AI now offers expanded multilingual support with the addition of Spanish to enhance the customer experience. Users can:
 
@@ -71,13 +127,13 @@ This update includes only bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Image-Based Document Extraction
+<font size="4">Image-Based Document Extraction</font>
 
 Search AI now supports image-based extraction for complex PDF documents using Vision embeddings. This feature is especially useful for rich-layout PDFs. Each page is converted into an image, and VDR embeddings are generated to capture the visual structure and textual content. This enables accurate and intelligent retrieval from visually complex documents, significantly improving search relevance. Currently, this capability is supported only for PDF files. Learn more.
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md)
 
-### Enhanced Connector UI
+<font size="4">Enhanced Connector UI</font>
 
 With this release, Search AI introduces a new and improved experience for configuring connectors, making it easier to manage data sources and providing complete control over the type of data ingested and processed, improving the connector configuration experience.
 
@@ -89,11 +145,11 @@ Key enhancements
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
 
 
-### Support for Simulator in Document Workbench
+<font size="4">Support for Simulator in Document Workbench</font>
 
 Search AI now includes a **Simulator for Content Transformation Stages in the Extraction Module**, enabling users to preview and validate how the configured stages affect the ingested data before vectorization. This helps ensure cleaner, more contextual, and optimized data for AI models. The simulator enhances data quality by allowing users to test and refine transformations, improving search results' accuracy and relevance. [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
-### New Search AI Connectors
+<font size="4">New Search AI Connectors</font>
 
 Search AI extends support for two new connectors, enabling seamless content ingestion and retrieval from Teamwork and Opsgenie applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
 
@@ -109,13 +165,13 @@ In addition to the new connectors, the capabilities of several existing connecto
 
 This release includes some enhancements and bug fixes. The key updates are summarized below.
 
-### Support for Sending Complete documents to LLM
+<font size="4">Support for Sending Complete documents to LLM</font>
 
 Search AI now introduces Document-Level Processing, a new configuration that enables sending full documents, alongside relevant chunks, to the LLM for more accurate and context-rich responses. When enabled, Search AI identifies the most relevant chunks and automatically includes their complete associated documents, all within a defined token budget.
 
 This feature is especially beneficial for complex queries that require critical information to be distributed across multiple parts of a document. By providing the LLM with a more comprehensive context, it significantly enhances the quality of the generated answers.
 
-### User Feedback Support 
+<font size="4">User Feedback Support </font>
 
 Search AI now includes a built-in feedback mechanism that allows users to rate the quality of answers by providing a thumbs-up or thumbs-down. This helps in capturing valuable user sentiment, enabling continuous evaluation and improvement of the responses generated by the system. Feedback can be submitted via the Web SDK or through the public API. 
 
@@ -127,7 +183,7 @@ Search AI now includes a built-in feedback mechanism that allows users to rate t
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Agentic RAG Architecture
+<font size="4">Agentic RAG Architecture</font>
 
 Search AI now features an Agentic RAG architecture that leverages LLMs to improve query understanding and generate optimized retrieval queries for more accurate responses. This system uses autonomous agents to break down complex queries, enable preprocessing, and facilitate multi-step retrieval. The following agents process a user query sequentially to enhance it for effective retrieval and answer generation. 
 
@@ -138,25 +194,25 @@ Search AI now features an Agentic RAG architecture that leverages LLMs to improv
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/rag-agents.md)
 
-### Exclude Stage in Document Workbench
+<font size="4">Exclude Stage in Document Workbench</font>
 
 Search AI now offers an **Exclude Stage in the Document Workbench** to restrict chunk generation from extracted content. This feature provides greater control over content processing, allowing users to exclude unnecessary content, thereby improving search relevance and reducing processing time. 
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/transformation.md)
 
-### Enhanced SharePoint Integration with Restricted Permissions
+<font size="4">Enhanced SharePoint Integration with Restricted Permissions</font>
 
 To address security concerns and provide more controlled access, SearchAI now supports **<code>Sites.Selected</code>** permission for SharePoint integration. This limits access to only the specific site collections explicitly granted by administrators. This is implemented by introducing the **OAuth Client credentials grant type** auth mechanism for SharePoint Integration. 
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/sharepoint.md)
 
 
-### Channel Aware Response Formatting
+<font size="4">Channel Aware Response Formatting</font>
 
 Search AI now supports **Channel-Aware Response Formatting** to deliver a more engaging and seamless user experience across digital and voice channels. The default prompt has been updated to generate channel-appropriate responses that vary as per the mode of interaction. For voice channels, responses are concise and free of complex formatting, ensuring clear and effective communication. In contrast, digital channels benefit from well-structured responses with enhanced formatting for improved readability and user engagement. Learn more.
 
 
-### Enhanced Multilingual Support
+<font size="4">Enhanced Multilingual Support</font>
 
 Search AI now offers expanded multilingual support with the addition of the **Ukrainian** language to enhance the customer experience. Users can:
 
@@ -168,14 +224,14 @@ Search AI now offers expanded multilingual support with the addition of the **Uk
 [Learn more :octicons-arrow-right-24:](./../../searchai/language-support.md)
 
 
-### Secure One-Time URLs for Uploaded Documents
+<font size="4">Secure One-Time URLs for Uploaded Documents</font>
 
 To enhance security, the citations or references in the search results and answers will now have one-time-use URLs, which **expire after a single** **use or within 15 minutes**, whichever occurs first. This feature applies to all uploaded documents and is enabled by default. It ensures controlled and temporary access to cited documents and aims to prevent the unauthorized sharing of URLs. 
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/advanced-configurations/single-use-URLs.md)
 
 
-### New Search AI Connectors
+<font size="4">New Search AI Connectors</font>
 
 Search AI extends support for eight new connectors, enabling seamless content ingestion and retrieval from PagerDuty, Figma, LumApps, Zoho CRM, TestRail, DataDog, Jenkins, and Zeplin. These connectors enhance enterprise search by integrating knowledge from various collaboration and productivity platforms. They also enable access control for the content ingested from the applications. Listed below are the connectors and the type of content that can be ingested from the corresponding applications. 
 
@@ -204,11 +260,11 @@ This update include only bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Salesforce Connector Enhancements
+<font size="4">Salesforce Connector Enhancements</font>
 
 The Salesforce Connector has been enhanced to support custom object ingestion in addition to the capability of ingesting default objects like Knowledge Articles, Cases, Documents, Opportunities, Leads, Contacts, Accounts, and Tasks. During configuration, users can select the type of content to be ingested, providing greater flexibility. Additionally, the filtering feature has been enhanced, allowing users to refine document ingestion based on specific fields. [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/salesforce.md)
 
-### New Search AI Connectors
+<font size="4">New Search AI Connectors</font>
 
 Search AI extends support for five new connectors, enabling seamless content ingestion and retrieval from Guru, Miro, Help Scout, Wrike, and Zulip. These connectors enhance enterprise search by integrating knowledge from various collaboration and productivity platforms. The connectors also enable access control for the content that is ingested from the applications.
 
@@ -226,17 +282,17 @@ Search AI extends support for five new connectors, enabling seamless content ing
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Custom Embeddings Support for Enhanced Vector Generation
+<font size="4">Custom Embeddings Support for Enhanced Vector Generation</font>
 
 The Custom LLM feature now supports Vector Generation in Search AI, allowing users to leverage custom embedding models for improved accuracy and relevance. Users can define custom requests, pre-processors, and post-processors, specify input and output keys, and seamlessly integrate with existing features. Search AI triggers vector generation during indexing and user query processing, while the document browser displays embedding status and allows filtering. This enhancement provides greater control, customization, and monitoring capabilities for delivering tailored search experiences.
 
-### Custom Extraction
+<font size="4">Custom Extraction</font>
 
 The new Custom Extraction feature in Search AI enables a tailored approach to extracting content from sources. It sends ingested content to a third-party service, which processes and returns the extracted data in a structured chunk format. This enhances flexibility in handling diverse content extraction needs and ensures improved data retrieval and indexing within Search AI.
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#custom-extractionbeta)
 
-### Answer Insights
+<font size="4">Answer Insights</font>
 
 The new Answer Insights feature provides comprehensive data about each query-response interaction, enabling a better understanding of system performance and easier troubleshooting.
 
@@ -249,7 +305,7 @@ Key features
 
 [Learn more :octicons-arrow-right-24:](./../../analytics/searchai/answer-insights.md)
 
-### Search Results and Facets
+<font size="4">Search Results and Facets</font>
 
 The new Search Results feature, along with faceted search capabilities, allows retrieving and displaying multiple search results ranked by relevance for each query. 
 
@@ -261,19 +317,19 @@ Key changes
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/search-results.md)
 
-### Introducing Connector Ingestion Logs for Greater Visibility
+<font size="4">Introducing Connector Ingestion Logs for Greater Visibility</font>
 
 Search AI now provides Connector Ingestion Logs, providing file-level status information (successful, failed, or skipped) and pop-ups with error details. Users can now easily identify and troubleshoot issues, understand the actual content available, and re-sync connectors to ensure up-to-date content. The update also improves tracking capabilities and record document sizes in Search AI. 
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
 
-### New Connector Experience: Discover and Configure with Ease
+<font size="4">New Connector Experience: Discover and Configure with Ease</font>
 
 The revamped connector experience makes it easier to discover and configure integrations. The new Configured and All Connectors tabs provide a more informative and intuitive interface, with improved search functionality for quick access to connector configuration. These enhancements streamline the process of connecting data sources and leveraging the unified search capabilities.
 
 [Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md)
 
-### General Availability of Key Features
+<font size="4">General Availability of Key Features</font>
 
 We are announcing the general availability (GA) of the following important features to all our users: 
 
@@ -307,7 +363,7 @@ This update include only bug fixes.
 
 This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
-### Content Transformation
+<font size="4">Content Transformation</font>
 
 Search AI introduces an ETL tool, empowering users to enrich content immediately after extraction and before vectorization. This feature enhances data quality by enabling users to fix errors and enrich data while preserving essential relationships and context between sections of the original document during enrichment.
 
@@ -318,11 +374,11 @@ This tool offers flexibility and control through enrichment stages that can be a
 
 This enrichment process ensures high-quality input for improved answers.
 
-### Change Logs
+<font size="4">Change Logs</font>
 
 SearchAI introduces a comprehensive **Change Logs** feature to track and manage application updates made by all team members. Users can search logs by user, export them in CSV format, and access them through public APIs. This feature ensures transparency and simplifies auditing and troubleshooting by providing a centralized view of all changes.
 
-### Chunk Size Configuration
+<font size="4">Chunk Size Configuration</font>
 
 To leverage the potential of the LLM capabilities, Search AI has now increased the chunk size and the maximum number of tokens sent to the LLM. This update ensures that the LLM receives sufficient context for more accurate and comprehensive answer generation.
 
@@ -339,19 +395,19 @@ To leverage the potential of the LLM capabilities, Search AI has now increased t
 
 This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
-### Comprehensive Analytics Logs
+<font size="4">Comprehensive Analytics Logs</font>
 
 The new Answer Insights feature provides enhanced visibility into query-response interactions, aiding developers and analysts in debugging, performance improvement, and response quality assessment. 
 
-### Enhanced API Support
+<font size="4">Enhanced API Support</font>
 
 Search AI now provides expanded API functionality, enabling users to manage content, retrieve chunks, Ingest new content, and Train the application. This enhancement provides greater control and flexibility for application developers.
 
-### Enhancement for Hybrid Retrieval Search
+<font size="4">Enhancement for Hybrid Retrieval Search</font>
 
 Search AI now automates query optimization by removing stop words from user queries when using the Hybrid retrieval strategy. This enhancement improves retrieval accuracy, delivering more relevant and precise search results without requiring manual adjustments.
 
-### Public API to fetch the List of Connectors
+<font size="4">Public API to fetch the List of Connectors</font>
 
 Search AI now includes a Public API that allows users to retrieve a list of all connectors configured in the application. This addition allows developers to manage connectors programmatically, enhancing productivity.
 
@@ -363,13 +419,13 @@ Search AI now includes a Public API that allows users to retrieve a list of all 
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Advanced Search API Enhancement 
+<font size="4">Advanced Search API Enhancement </font>
 The Answer Generation API has been enhanced to support passing permission entity IDs, enabling refined and secure search responses. This update provides control over content access and ensures that users receive answers tailored to their permissions.
 
-### Introduction of Get Content API
+<font size="4">Introduction of Get Content API</font>
 Search AI introduces a new API that enables users to retrieve a document's content, metadata, or both using its ID. This enhancement simplifies access to document data and improves the overall content retrieval experience. 
 
-### Permission Entity API Enhancement
+<font size="4">Permission Entity API Enhancement</font>
 The Get Permission Entity API has been enhanced to provide more comprehensive information. The update adds the entity type and source type to the existing permission entity details in the response. This enhancement helps developers gain deeper insights into permission entities, streamlining integration efforts.
 
 
@@ -381,19 +437,19 @@ The Get Permission Entity API has been enhanced to provide more comprehensive in
 
 This update include enhancement and bug fixes. The key enhancements included in this release are summarized below.
 
-### Support for Custom Connector
+<font size="4">Support for Custom Connector</font>
 
 Search AI now supports content ingestion from any application using the Custom Content Connector. This connector utilizes the application's REST APIs to ingest content facilitated through the Custom Connector Service. Additionally, Search AI enables access control for content ingested via the Custom Connector, ensuring secure access. This feature enhances flexibility by seamlessly integrating various applications, even without pre-built connectors.
 
-### Advanced Filters for ServiceNow and SharePoint Connector
+<font size="4">Advanced Filters for ServiceNow and SharePoint Connector</font>
 
 Search AI now supports advanced content filtering within the ServiceNow and SharePoint connectors, enabling users to refine the scope of ingested data from the repositories. This functionality allows administrators to apply specific criteria to select only relevant records or knowledge articles to make searchable. By filtering content based on attributes like status, category, and custom fields, organizations can tailor search responses to meet specific user needs, improving search accuracy.
 
-### Ingesting Documents with Attachments in the Confluence Server
+<font size="4">Ingesting Documents with Attachments in the Confluence Server</font>
 
 Search AI now supports ingesting Confluence Server documents with attachments, streamlining content indexing and retrieval. Users can include documents as attachments with Confluence knowledge articles. The primary content and its attachments are searchable and accessible, enhancing content discoverability and maximizing the accessibility of embedded knowledge. 
 
-### Enhanced Multi-Modal Content Preview
+<font size="4">Enhanced Multi-Modal Content Preview</font>
 
 End-users and developers can now seamlessly preview content within answers and the chunk browser. This enhanced viewing experience includes zoom functionality for tables and images, allowing users to thoroughly examine complex data and visual content. When content contains multiple images, a new carousel interface presents them in an elegant slideshow format, enabling effortless navigation through all visual assets. This integrated preview system streamlines the user experience by making all content immediately accessible and interactive within the natural workflow.
 
@@ -406,7 +462,7 @@ End-users and developers can now seamlessly preview content within answers and t
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Public APIs for Ingesting Structured Data
+<font size="4">Public APIs for Ingesting Structured Data</font>
 
 Search AI introduces public APIs to automate the ingestion and indexing of structured data within the application. Structured data, organized in predefined formats, enables more accurate and relevant search outcomes. This enhancement provides seamless integration for structured data, improving search accuracy and content accessibility.
 
@@ -418,11 +474,11 @@ Search AI introduces public APIs to automate the ingestion and indexing of struc
 
 This update includes enhancements and bug fixes.
 
-### Structured Data as a Source Type
+<font size="4">Structured Data as a Source Type</font>
 
 SearchAI now enables the ingestion and indexing of structured data in JSON format using the JSON connector, providing greater flexibility in handling complex data. This feature allows users to seamlessly process and search through structured datasets for more efficient and accurate results.
 
-### Retrieve Chunk Metadata through Advanced Search API
+<font size="4">Retrieve Chunk Metadata through Advanced Search API</font>
 
 This enhancement to the Advanced Search API allows users to specify and include custom metadata fields in the generated answers. The API response can now be customized to fetch user-defined metadata fields for each chunk in addition to the default fields, providing a more customized and detailed output.
 
@@ -432,7 +488,7 @@ This enhancement to the Advanced Search API allows users to specify and include 
 
 <u> Patch Release </u>
 
-### Advanced Content Extraction from Web Pages
+<font size="4">Advanced Content Extraction from Web Pages</font>
 
 With this release, Search AI introduces advanced support for extracting content from images and tables embedded in web pages. Using advanced extraction technologies, Search AI can now analyze and extract text from image files and complex, structured tables, providing a more comprehensive approach to processing web-based content. This enhancement significantly enhances the application’s ability to index and search diverse content formats.
 
@@ -444,27 +500,27 @@ With this release, Search AI introduces advanced support for extracting content 
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Content Browser
+<font size="4">Content Browser</font>
 
 Search AI chunk browser is now enhanced to make it more user-friendly, providing a detailed view of the extracted content and making it easier to edit. Additionally, you can now view tables directly in the browser. 
 
-### Extraction of Complex Tables from HTML
+<font size="4">Extraction of Complex Tables from HTML</font>
 
 Search AI can now extract content from complex HTML tables using the Layout-Aware Extraction Strategy, enhancing its ability to accurately capture and process data from table structures. This improvement ensures more reliable data extraction and accurate information retrieval from tabular content.
 
-### Support for New Connectors
+<font size="4">Support for New Connectors</font>
 
 Search AI now extends support for data ingestion from a broader range of knowledge bases and enterprise applications through connectors, including Airtable, HubSpot, GitLab, GitHub, Jira, Monday, Notion, and Slack. This expansion allows users to seamlessly integrate and ingest content from these platforms, enhancing the versatility of the data sources.
 
-### Sharepoint Site Support Enhancement
+<font size="4">Sharepoint Site Support Enhancement</font>
 
 Search AI now supports ingesting content from up to 6,000 sites from Sharepoint using the connector. This enhancement allows users to seamlessly access and search through a large volume of data, ensuring better search capabilities and improving the information retrieval process across the organization.
 
-### Support for Re-Rankers 
+<font size="4">Support for Re-Rankers </font>
 
 Search AI now offers advanced re-ranking capabilities to improve the quality and relevance of retrieved content significantly. Re-ranking is a crucial second step in the search process that refines initial results for greater accuracy. Enable and configure re-ranking models, like Cross Encoder, BGE, or MixedBread re-rankers, to reorder the chunks provided by the first-stage retriever, ensuring more relevant and accurate answers. 
 
-### Enhanced Search AI Navigation 
+<font size="4">Enhanced Search AI Navigation </font>
 
 The latest version of Search AI offers a simplified interface that is easy to use and intuitive to navigate. The newer design enhances usability and productivity. 
 
@@ -476,7 +532,7 @@ The latest version of Search AI offers a simplified interface that is easy to us
 
 This update includes bug fixes and minor enhancements.
 
-### Search AI Menu Update
+<font size="4">Search AI Menu Update</font>
 
 The "Answers" menu is renamed "Search Configurations" across the product, aligning with the revised product naming convention. 
 
@@ -494,23 +550,23 @@ Key updates:
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-### Source Ingestion Logs
+<font size="4">Source Ingestion Logs</font>
 
 Search AI now maintains comprehensive logs for the content ingested through web crawling. These logs include status codes, sizes, and other necessary details for each page ingested or skipped during the crawling process. Detailed logs help the administrators monitor the ingestion process and promptly identify and resolve issues. 
 
-### Detailed Error Messages for Web Crawl Failures
+<font size="4">Detailed Error Messages for Web Crawl Failures</font>
 
 Search AI now provides detailed error messages for web crawl failures, along with recommended actions to take. This enhancement aids in quick troubleshooting and rectification of issues.
 
-### Answer Generation API Enhancement
+<font size="4">Answer Generation API Enhancement</font>
 
 The Answer Generation API now allows for more details about the answer in the response. You can get detailed information about the qualified chunks for the query in response, along with the answer to the query. This can be particularly useful to orchestrate complex use cases.
 
-### Answer Generation Errors
+<font size="4">Answer Generation Errors</font>
 
 Search AI now displays error messages to users when the answer generation process fails. These errors may occur for various reasons, such as an invalid OpenAI key or the absence of relevant chunks. This feature ensures users are promptly informed of any issues, facilitating quicker resolution.
 
-### Layout Aware Content Extraction Strategy
+<font size="4">Layout Aware Content Extraction Strategy</font>
 
 Search AI introduces an advanced way of extracting content from documents (PDF and DOCX) by detecting the objects in the document using a combination of OCR technology, layout detection models, and layout awareness rules. This advanced strategy can accurately extract content from tables, graphs, and charts in the documents.
 
@@ -530,11 +586,11 @@ This update includes bug fixes.
 
 Key features and enhancements included in this release are summarized below.
 
-### Support for Filtered Content Ingestion from third-party applications
+<font size="4">Support for Filtered Content Ingestion from third-party applications</font>
 
 Search AI now extends support for content ingestion from a wider variety of third-party applications, including Confluence Cloud, Azure Storage, Salesforce, Oracle Knowledge, and dotCMS, in addition to the existing connectors. The connectors now offer customizable filters that give platform users the flexibility to selectively ingest data, allowing for precise and targeted indexing and enhancing the search index's efficiency and accuracy.
 
-### Advanced Web Crawl Configurations
+<font size="4">Advanced Web Crawl Configurations</font>
 
 Search AI now offers advanced web crawl capabilities that allow platform users to remove redundant sections of a web page while indexing. Also, for JavaScript-rendered pages, the users can now introduce a delay after which the crawler starts indexing the page, allowing all dynamic content to load properly. These enhancements provide greater control and precision in web crawling, leading to a more efficient and accurate search experience.
 
@@ -546,11 +602,11 @@ Search AI now offers advanced web crawl capabilities that allow platform users t
 
 Key features and enhancements included in this release are summarized below.
 
-###  Automated Content Syncing and Training with Connectors
+<font size="4"> Automated Content Syncing and Training with Connectors</font>
 
 Search AI now offers the capability to schedule automatic content syncing from third-party applications using connectors. The data is automatically ingested, and the application is trained with the new data, ensuring that the content is always up to date.
 
-###  Enhanced Web Crawl Error Reporting
+<font size="4"> Enhanced Web Crawl Error Reporting</font>
 
 The enhanced web crawl error reporting feature in Search AI provides detailed information about crawl failures, enabling quick identification and resolution of issues. 
 
@@ -563,11 +619,11 @@ The enhanced web crawl error reporting feature in Search AI provides detailed in
 
 Key features and enhancements included in this release are summarized below.
 
-###  Support for Hybrid Chunk Retrieval Strategy
+<font size="4"> Support for Hybrid Chunk Retrieval Strategy</font>
 
 Search AI now supports the Hybrid Chunk Retrieval strategy, which leverages both keyword-based and semantic search techniques to deliver more precise and contextually appropriate answers. This improvement ensures that users receive high-quality responses tailored to their queries, enhancing the overall search experience.
 
-###  Chunk Order Configuration 
+<font size="4"> Chunk Order Configuration </font>
 
 Search AI now allows adding relevant chunks in your preferred order within the prompt. The order of the chunks in the prompt can affect the performance depending upon the LLM limitations of context retention, prompt lengths, and attention mechanism. By allowing users to configure the chunk order, SearchAI ensures that relevant data is prioritized, improving the generated responses' quality and reliability.
 
@@ -579,7 +635,7 @@ Search AI now allows adding relevant chunks in your preferred order within the p
 
 This update includes feature enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
-### Extended Connector Support
+<font size="4">Extended Connector Support</font>
 
 In addition to the existing ServiceNow connector, Search AI now supports more knowledge base connectors, including Zendesk, Confluence Server, Google Drive, and Dropbox. The new connectors make it easier to integrate Search AI with these platforms, helping users quickly find and access information to boost productivity. [Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors.md)
 
@@ -591,6 +647,6 @@ In addition to the existing ServiceNow connector, Search AI now supports more kn
 
 This update includes feature enhancements and bug fixes. Key feature included in this release is summarized below.
 
-### Business Rules Support
+<font size="4">Business Rules Support</font>
 
 Business Rules Support allows users to define custom rules that modify the answers provided by the AI search system. By using contextual data specific to their needs, users can create tailored rules to refine the AI's responses. The system also suggests relevant context variables dynamically to assist in defining these rules. [Learn more :octicons-arrow-right-24:](../../searchai/business-rules.md)
