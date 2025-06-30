@@ -3083,7 +3083,7 @@ Users can make direct outward calls
    <br>
 Decide which queues are available for access in the Monitor
    </td>
-   <td>None</td>
+   <td>Self</td>
 </tr>
 <tr>
    <td><strong>Dashboard Content</strong>
@@ -3902,7 +3902,7 @@ Decide which queues are available for access in the Monitor
    </td>
    <td>All
    <br>
-Self
+Self</td>
 <br>
 None</td>
 </tr>

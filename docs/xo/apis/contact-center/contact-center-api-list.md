@@ -106,7 +106,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API                                                                                               | DESCRIPTION                                                                                                 | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------|
-| [Outbound Calling (Kore.ai VG)](./outbound-calling-kore-ai-vg.md)                                               | To trigger an outbound call and receive call status notifications.                                           | SmartAssist Dialout  |
+| [Outbound Calling (Kore.ai VG)](./outbound-calling-vg.md)                                               | To trigger an outbound call and receive call status notifications.                                           | SmartAssist Dialout  |
 
 ### Transfer Conversation to a Specific Agent or Queue API
 

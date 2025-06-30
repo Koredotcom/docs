@@ -2,7 +2,7 @@
 
 !!! important
 
-    The Google Assistant Conversational Actions will be sunsetted on June 13, 2023. For details, see [Conversational Actions sunset](https://developers.google.com/assistant/ca-sunset/).
+    The Google Assistant Conversational Actions will be deprecated on June 13, 2023. For details, see [Conversational Actions sunset](https://developers.google.com/assistant/ca-sunset/).
 
 
 ## Requirements

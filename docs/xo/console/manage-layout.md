@@ -41,10 +41,11 @@ Steps to manage notifications:
 
 ### Repeat Notifications
 
-Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:
-* Minimize missed interactions.
-* Improve response times.
-* Enhance overall customer satisfaction and SLA compliance.
+Repeated notifications for incoming interactions at configurable intervals can be enabled to ensure prompt attention to incoming conversations and transfers. This helps to:  
+
+* Minimize missed interactions.  
+* Improve response times.  
+* Enhance overall customer satisfaction and SLA compliance.  
 
 #### Enable Repeat Notifications
 
@@ -61,6 +62,22 @@ Steps to enable repeat notifications for incoming interactions:
 <img src="../images/duration-dropdown.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Save** to update the notification settings.
+
+#### Incoming Call Notification From Speaker When Headphones Are Connected
+
+Agents can receive incoming calls and interaction notification sounds through their system speakers or monitor, even when a headset is connected. The conversation audio continues through the headset or default system audio device, ensuring clear separation between alert sounds and ongoing communication.
+
+This option appears only when the ‘Incoming Interactions’ permission is enabled. Learn more.
+
+It affects notifications for voice calls, consult calls, chats, and other events under the Incoming Interactions category.
+
+When enabled, the notification sound plays on both the system speaker and the headset.  
+<img src="../images/notification-enabled.png" alt="Enabled Notification" title="Enabled Notification" style="border: 1px solid gray; zoom:70%;">
+
+When disabled (default), the sound follows the default audio route (usually the headset).  
+<img src="../images/disabled-default.png" alt="Disbaled Notification" title="Disabled Notification" style="border: 1px solid gray; zoom:70%;">
+
+Users can customize this setting based on their preference for alert audibility.
 
 ## User Diagnostics
 
@@ -127,17 +144,22 @@ Steps to check your video device:
 
         If you don't see your video, select another camera. If the camera is not part of your computer, check your settings to ensure your system recognizes it.
 
-**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and hardware access through a loopback connection to our telephony infrastructure.
+**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and server reachability through a loopback connection to our telephony infrastructure.
 
-**Connectivity and Bandwidth Tests**: This test verifies hardware access and establishes a loopback connection to the telephony infrastructure to assess the client's network connectivity.
+**Connectivity, Bandwidth, and Server Reachability Tests**: Users can run a connectivity test to verify STUN/TURN results, ensuring their network supports real-time communication. They can also initiate a test call that sends a static audio stream and returns metrics such as jitter, packet loss, and MOS, helping to assess call reachability and audio quality.
 
-Steps to perform the connectivity and bandwidth tests:
+Administrators can view detailed test results to diagnose and resolve connectivity or audio issues efficiently.
 
-1. Click **Start Test**. The progress is displayed.  
-<img src="../images/start-test.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
+Steps to perform the connectivity, bandwidth, and server reachability tests:
 
-2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.  
-<img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
+1. Click **Start Test**.  
+    <img src="../images/start-tests.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:70%;">
+
+    The progress is displayed.  
+    <img src="../images/test-progress.png" alt="Test Progress" title="Test Progress" style="border: 1px solid gray; zoom:70%;">
+
+2. Once the test is completed, the detailed test results are displayed. You can copy the result by clicking **Copy Results**.  
+<img src="../images/test-result.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:70%;">
 
 ## Connection Handling
 

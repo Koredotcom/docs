@@ -2,15 +2,84 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.15.0 June 30, 2025
+
+<u>Minor Release</u>
+
+<font size="4">Widget Enhancements</font>
+
+**Agentic Copilot Enhancements**  
+
+Agentic Copilot now offers enhanced configuration features along with improved runtime capabilities. 
+
+Configuration Updates:  
+
+* Welcome Events: When Agentic Copilot is enabled, this section displays the message: *Agentic Copilot is enabled, and it will run after the execution of the enabled Welcome Events*.  
+* On the Widget Settings > Agent AI Channel Specific Settings page, the Allow auto send Message timer is extended to 60 seconds.  
+* On the Linked Services > Agentic Configuration page, an Agentic app that is currently in use shows an "in use" status and can’t be deleted.  
+* On the Agentic Configurations > App Information page:  
+    * The Agentic App Name field now has a 50-character limit.   
+    * The App ID of the Agentic Platform is now renamed to App ID.  
+    * The X-Api Key has been renamed to API Key.  
+
+Runtime Updates:  
+
+* After executing the enabled Welcome Events, the widget displays that Agentic Copilot is actively listening to your conversation and is ready to assist with an automatic message.  
+* For customer messages outside the Agentic app's defined scope, the widget displays a message indicating it is not trained to handle them.  
+* When multiple Agentic responses are generated with the ‘Allow auto send Message’ option enabled:  
+    * The timer for each message starts only after the previous message is sent.  
+    * If the view does not auto-scroll to the latest message, an arrow icon appears in the bottom-right corner, indicating the number of Agentic messages stacked below.  
+* To regenerate a failed response, double-click the corresponding customer message.  
+
+**Adding Agent AI V3 Features to SDK**  
+The following Agent AI v3 features have been added to the latest SDK:  
+
+* Custom Tab creation in the Agent AI widget.  
+* Input Box Expansion for the **Override**, **List View**, **Restart**, and **Search Bar** fields.  
+* Hover effect for dialogs.  
+* Agentic Copilot integration. 
+
+**Controlling Transcripts' Visibility for Transferred Agents**  
+Agent-to-agent call transfers now limit transcript visibility to the current agent only, with control options via public APIs or agent entry/exit events, except in warm transfers and conference calls, where all participants can view shared transcripts. 
+
+The **Control Transcript Visibility between Agents** widget offers two options:  
+
+* Use public APIs to control transcription via the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md) or  
+* Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits).
+
+**Support for Custom LLMs in Third-Party Agent Desktops for Disposition Summary Generation**  
+Third-party agent desktops can now generate Disposition Summaries using a custom LLM. To enable this, go to **Agent AI** > **Generative AI Tools** > **GenAI Features** > **All Products**, and select a model under the **Conversation Summary** section.
+
+**Embedded Agent AI App Supports Bot Configurations**  
+Users can manage bot configuration parameters (for example, QueueIdentifier, custom data) directly within the Third Party Configuration section of an embedded Agent AI app. This streamlines the process by dynamically generating iframe URLs for third-party CCaaS/CRM platforms, removing the necessity for a separate configuration on the third-party desktop. To set this up, go to **Agent AI** > **Configuration** > **System Setup** > **Third-Party Configuration**. 
+
+<font size="4">API Enhancement</font>
+
+**New Filters for the Raw Data API**  
+To improve data segmentation, streamline reporting, and support scalable data pipelines, the Raw Data API now supports the following filters: Agent ID, Channel, Session ID, and Conversation ID filters.
+
+<font size="4">Integration Enhancements</font>
+
+**SIPREC Transcription Trigger Enhancement**  
+SIPREC transcription now uses event-based triggers and starts only after the call connection is established. It excludes non-conversational audio, such as ringing tones and hold music, which reduces ASR costs, prevents timeouts, and improves efficiency.
+
+**Call Transcript Timestamps from Amazon Connect**  
+Salesforce Amazon Connect now includes accurate timestamps in call transcripts. This helps the Agent Coaching and Playbook modules deliver guidance at the right moments, both during and after the call.
+
+**Flag-based Agent AI SDK Integration with Genesys Cloud CX**  
+The Agent AI SDK is now integrated into the middleware using a flag-based approach, allowing customers to choose between iframe or SDK integration. Users selecting the SDK can customize their Agent AI experience, including UI changes, event listeners, and behavior.
+
+<hr>
+
 ## v11.14.1 June 14, 2025
 
 <u>Patch Release </u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Widget Enhancement
+<font size="4">Widget Enhancement</font>
 
-#### Agentic Copilot Response Supports Markdown Templates
+**Agentic Copilot Response Supports Markdown Templates**
 
 Agentic Copilot responses in the Agent AI widget now support Markdown templates, enabling clear and structured outputs with code blocks, headers, emphasis, hyperlinks, bold and italic text, and lists.
 
@@ -22,41 +91,41 @@ Agentic Copilot responses in the Agent AI widget now support Markdown templates,
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Widget Enhancements
+<font size="4">Widget Enhancements</font>
 
-#### Agentic Copilot in the Agent AI Widget
+**Agentic Copilot in the Agent AI Widget**
 
 The Agentic Copilot feature lets you configure an Agentic app that autonomously manages end-to-end customer interactions. At runtime, agents can edit or override the app’s suggestions and enter their own content. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)
 
-#### Configuration of Agentic Apps
+**Configuration of Agentic Apps**
 
 The “Answers Configuration” section is renamed to “Linked Services” to support configurations for both Search AI and Agentic apps, allowing multiple Agentic apps simultaneously. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/linked-services.md)
 
 The **Agent AI Settings** > **Agent AI Channel Specific Settings** section now includes the Agentic Copilot settings. You can enable or disable Agentic Copilot, select an Agentic App, select or clear the **Allow auto send Message** button, and set a delay timer (up to 10 seconds) for auto send messages. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md)
 
-#### Improved Visual Cue for Dialog Selection During Runtime
+**Improved Visual Cue for Dialog Selection During Runtime**
 
 Hovering over a dialog in the dialog library (Search, Assist, and custom tabs) highlights the entire row, indicating the corresponding “Run” button for the dialog task.
 
-#### Transcript Visibility restricted to Call Joining Time
+**Transcript Visibility restricted to Call Joining Time**
 
 For voice conversations, transcript view is now restricted to the time an agent joins a call. Agents can’t access the transcripts of prior conversations. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md)
 
-### SDK Enhancements
+<font size="4">SDK Enhancements</font>
 
-#### Improved Transcript Handling in SDK
+**Improved Transcript Handling in SDK**
 
 The SDK now includes the **isFromSocket**, **timestampValue**, and **messsageId** fields to improve clarity and reliability in transcript handling. These enhancements enable you to track, sort, and filter transcripts more effectively during runtime, including instances of disconnections and reconnections.
 
-### API Enhancement
+<font size="4">API Enhancement</font>
 
-#### Raw Data API tracks After-Call-Work
+**Raw Data API tracks After-Call-Work**
 
 The **Raw Data API** is extended to capture agent activities during After Call Work (ACW) in offline mode, beyond the End of Conversation event, with data collection continuing until session timeout. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
 
-### Integration Enhancement
+<font size="4">Integration Enhancement</font>
 
-#### Amazon Connect Integration Supports Agent AI v3 and AI for Service
+**Amazon Connect Integration Supports Agent AI v3 and AI for Service**
 
 The Agent AI integration with Amazon Connect supports Agent AI v3 and AI for Service (XO) v11.
 
@@ -68,13 +137,13 @@ The Agent AI integration with Amazon Connect supports Agent AI v3 and AI for Ser
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Integration Enhancements
+<font size="4">Integration Enhancements</font>
 
-#### Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls
+**Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls**
 
 The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
 
-#### AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware
+**AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware**
 
 The Genesys Middleware has been enhanced to monitor changes in the *MemberID* and *CustomContactReasonID* fields within the Genesys Interaction Participant Data. This improvement allows the AgentAssist widget to display the most up-to-date context during active interactions, enabling contact center agents to provide more accurate and relevant support to customers.
 
@@ -86,13 +155,13 @@ The Genesys Middleware has been enhanced to monitor changes in the *MemberID* an
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Widget Enhancements
+<font size="4">Widget Enhancements</font>
 
-#### Custom Tab in the Agent AI widget
+**Custom Tab in the Agent AI widget**
 
 This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#widget-menu-layout)
 
-#### Introduction of Conversation Events and Automatic Dialog Task Execution on End-of-Conversation Trigger
+**Introduction of Conversation Events and Automatic Dialog Task Execution on End-of-Conversation Trigger**
 
 In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to "Conversation Events". The Conversation Events section allows you to configure events that automatically trigger at the beginning and end of a conversation. You can configure the following events: 
 
@@ -103,17 +172,17 @@ In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to 
         You can enable either the dialog task or the conversation summary for the Exit Events section.  
 [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/conversation-events.md)
 
-#### Improved Search Functionality in Library
+**Improved Search Functionality in Library**
 
 Search functionality automatically updates the library list to match the search query. The library displays relevant words and phrases as agents type in real time. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab)
 
-### Integration Enhancements
+<font size="4">Integration Enhancements</font>
 
-#### Five9 Chat Integration with Agent AI
+**Five9 Chat Integration with Agent AI**
 
 The Five9 Chat integration with Agent AI embeds the Agent AI widget within the Five9 agent desktop. This integration provides agents with real-time assistance, intent identification, sentiment analysis, and chat summaries. The two-way communication between Five9 Chat and Agent AI enables seamless data exchange, allowing agents to send or copy responses directly from Agent AI to the Five9 chat window. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/five9/agentai-chat-integration-with-five9.md)
 
-#### Updated Salesforce Package and support for new Salesforce Live Chat for new organizations
+**Updated Salesforce Package and support for new Salesforce Live Chat for new organizations**
 
 The updated Salesforce package includes the following: 
 
@@ -121,13 +190,13 @@ The updated Salesforce package includes the following:
 * Updated Agent AI logo.  
 * The Agent AI widget loads in full-screen mode for Omni-Channel Voice and Genesys CTI.
 
-#### Outbound Call Support for Agent AI Integration with Salesforce NICE CTI
+**Outbound Call Support for Agent AI Integration with Salesforce NICE CTI**
 
 The Agent AI integration with Salesforce NICE CTI now supports outbound calls, apart from providing AI-driven assistance, automation, sentiment analysis, live transcription, call summaries, performance tracking, and coaching insights. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md)
 
-### API Enhancements
+<font size="4">API Enhancements</font>
 
-#### Tracking Conversation Summary Existence and Display to Agents in the Agent AI Raw Data API
+**Tracking Conversation Summary Existence and Display to Agents in the Agent AI Raw Data API**
 
 The Raw Data API now includes the ```isWelcomeMsgRead``` parameter to confirm whether a conversation summary exists and whether agents have read or scrolled through it. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md)
 
@@ -139,9 +208,9 @@ The Raw Data API now includes the ```isWelcomeMsgRead``` parameter to confirm wh
 
 This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
 
-### API
+<font size="4">API</font>
 
-#### Control Transcription API
+**Control Transcription API**
 
 The API lets you control the transcription session of a bot conversation. You can end an ongoing transcription session with a valid conversationId and appropriate authentication tokens. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/control-transcription-api.md)
 
@@ -153,33 +222,33 @@ The API lets you control the transcription session of a bot conversation. You ca
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### UI Enhancements
+<font size="4">UI Enhancements</font>
 
-#### Gen AI Integration in Agent Coaching
+**Gen AI Integration in Agent Coaching**
 
 Agent Coaching is now powered by Generative AI, improving coaching rule triggers, actions, and adherence checks. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-realtime-coaching.md)
 
-#### Search Support in Conversation Logs
+**Search Support in Conversation Logs**
 
 The Conversation Logs section now includes a search field to let you find conversations by Conversation ID. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md)
 
-### Integration Enhancements
+<font size="4">Integration Enhancements</font>
 
-#### Agent AI Support for Outbound Emails and Offline Mode in Genesys Cloud CX
+**Agent AI Support for Outbound Emails and Offline Mode in Genesys Cloud CX**
 
 Agent AI in Genesys Cloud CX now supports outbound emails, enabling you to draft AI-assisted responses. It also supports offline modes with limited real-time API calls.
 
-#### End-of-Call Event Independent of Salesforce Platform Events
+**End-of-Call Event Independent of Salesforce Platform Events**
 
 The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now receives the End-of-Call events independently, without relying on the Salesforce Platform Events. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md)
 
-#### Agent AI Integration with NICE Agent Desktop
+**Agent AI Integration with NICE Agent Desktop**
 
 Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md)
 
-### API Enhancements
+<font size="4">API Enhancements</font>
 
-#### Tracking Auto-suggested Choices and Corrections in the Agent AI Raw Data API
+**Tracking Auto-suggested Choices and Corrections in the Agent AI Raw Data API**
 
 The Raw Data API now includes the suggestionsShown, suggestionUsed, phraseInput, correctionsPresented, and correctionsAccepted parameters to help assess the effectiveness of auto-suggested choices and corrections and identify areas for improvement. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md)
 
@@ -199,27 +268,27 @@ This update includes only bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Widget Enhancements
+<font size="4">Widget Enhancements</font>
 
-#### More Accurate Intent Extraction from Landing Summary
+**More Accurate Intent Extraction from Landing Summary**
 
 This update has introduced a service node and a new tag-based approach to generate the landing summary (a concise summary) of the conversation. This summary is used internally to improve intent identification accuracy. It is generated after the Welcome Dialog task ends and is not visible to agents. However, the detailed summary from the message node continues to be visible to the agents. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/faq/agentai-faq.md).
 
-#### Search AI Timeout Configuration and Runtime Error
+**Search AI Timeout Configuration and Runtime Error**
 
 The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-and-server-errors)
 
-#### API Call Notification for Dialog Tasks
+**API Call Notification for Dialog Tasks**
 
 Agents now receive notifications when a dialog task makes an API call, indicating a waiting period. The notification disappears once a response is received. While the waiting message is displayed, agents can close the dialog task.
 
-#### Automatic Upgrade from Agent AI V2 to V3
+**Automatic Upgrade from Agent AI V2 to V3**
 
 The legacy Agent AI V2 is automatically upgraded to the enhanced and backward-compatible V3, which offers improved functionality and continued compatibility with previous configurations.
 
-### UI Enhancement
+<font size="4">UI Enhancement</font>
 
-#### Introducing the Dialog Task Layout feature
+**Introducing the Dialog Task Layout feature**
 
 To enhance the management and customization of dialog tasks within the widget, Kore has introduced the **Dialog Task Layout** subsection under the **Widget Theming** section. The key features of this update are:
 
@@ -232,21 +301,21 @@ To enhance the management and customization of dialog tasks within the widget, K
     Dialog tasks not added to a group don’t appear at runtime. 
 [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#dialog-task-layout)
 
-#### Interactive Language (App Language) option for Widget
+**Interactive Language (App Language) option for Widget**
 
 Kore has included a new option, **Interactive Language**, in the **Default Language for Agent AI Widget** drop-down list. Selecting this option adjusts the widget's localized text language to match the app's language. [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md/#steps-to-set-agent-ai-general-settings) 
 
-### Integration Enhancements
+<font size="4">Integration Enhancements</font>
 
-#### Support for associating a Single Bot with Multiple Queues in Genesys Cloud CX
+**Support for associating a Single Bot with Multiple Queues in Genesys Cloud CX**
 
 To streamline bot management, improve efficiency, and reduce maintenance cost, Kore now provides the ability to associate a single bot with multiple Genesys Cloud CX queues.
 
-#### Agent AI Voice integration with CX Cloud from Genesys and Salesforce
+**Agent AI Voice integration with CX Cloud from Genesys and Salesforce**
 
 Kore Agent AI is now integrated with CX Cloud from Genesys and Salesforce.
 
-#### Agent AI Voice Integration with Salesforce Voice
+**Agent AI Voice Integration with Salesforce Voice**
 
 Agent AI Voice is now integrated with Salesforce default telephony, Amazon Connect.
 
@@ -258,41 +327,41 @@ Agent AI Voice is now integrated with Salesforce default telephony, Amazon Conne
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### UI Enhancements
+<font size="4">UI Enhancements</font>
 
-#### Language Dropdown Automatically Adjusts to the App's Language
+**Language Dropdown Automatically Adjusts to the App's Language**
 
 The language dropdown in Welcome Events, Widget Settings, and Feedback Settings now automatically adjusts to match the app's language.
 
-### Widget Enhancements
+<font size="4">Widget Enhancements</font>
 
-#### Load Time Reduction of Agent AI Widget
+**Load Time Reduction of Agent AI Widget**
 
 The Agent AI widget’s load time has been optimized by removing synchronous API calls for settings and preferences before establishing the socket connection. These configurations are now received asynchronously using a socket event, significantly improving initial load performance.
 
-#### Ability to Pause or Resume Transcription
+**Ability to Pause or Resume Transcription**
 
 Agent AI widget is now capable of honoring the pause and resume events transmitted from agent desktops to control the visibility of transcripts to agents within the Widget. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md)
 
-#### Enhanced Input Box for Override, List View, Restart, and Search Bar fields
+**Enhanced Input Box for Override, List View, Restart, and Search Bar fields**
 
 For improved navigation of longer entries, input text boxes of Override, List View, Restart, and Search Bar are now expanded to display up to three lines with a scroll bar.
 
-#### On-demand Summary Generation
+**On-demand Summary Generation**
 
 Agents can now generate on-demand conversation summaries at any point during a conversation, up to 2 times per agent per conversation. This functionality is available even during agent transfers, allowing the receiving agent to regenerate a new summary and view the previous summary with timestamps. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md#generate-summary)
 
-### Integrations
+<font size="4">Integrations</font>
 
-#### Enhanced Genesys Middleware to Support Base64 Encoded Value
+**Enhanced Genesys Middleware to Support Base64 Encoded Value**
 
 Genesys Middleware has been enhanced to support Base64-encoded values when passing the *x_passthru_metadata* parameter to Agent AI. This enhancement resolves the issues with SSO token decryption. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md)
 
-#### Enhanced Salesforce Package includes Language Parameter
+**Enhanced Salesforce Package includes Language Parameter**
 
 The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](https://docs.kore.ai/xo/agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti/#set-up-agentassist-configuration)
 
-#### Multi-bot Support for Agent AI Integration with ServiceNow
+**Multi-bot Support for Agent AI Integration with ServiceNow**
 
 Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md/#multibot-solution-with-servicenow)
 
@@ -312,9 +381,9 @@ This update includes bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Search AI Configuration
+<font size="4">Search AI Configuration</font>
 
-#### Inbuilt and External Search AI App
+**Inbuilt and External Search AI App**
 
 This update introduced flexible Search AI configuration to choose built-in functionality or custom Search AI apps:
 
@@ -322,19 +391,19 @@ This update introduced flexible Search AI configuration to choose built-in funct
 * Use Search AI Configurations from the current app: Uses the in-built Search AI app that comes with the current XO11 app.
 * Link Search AI Configurations from a different app: Users can configure up to three customized Search AI apps.
 
-### Widget Settings
+<font size="4">Widget Settings</font>
 
-#### Auto-corrections for the Search tab
+**Auto-corrections for the Search tab**
 
 The new auto-correct feature for the Search tab allows admins to control spelling corrections through Widget Settings, including custom dictionary management. While admins can enable/disable it globally, agents can toggle it individually in Settings, with agent preferences taking priority. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#auto-corrections-for-the-search-tab)
 
-#### Enhanced Dialog Task Entity Extraction
+**Enhanced Dialog Task Entity Extraction**
 
 The Proactive Mode toggle has been enhanced to include the “Automatic Dialog Task Entity Extraction” option. This option automatically extracts entities from user messages during dialog task execution. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#agent-ai-channel-specific-settings)
 
-### Integration
+<font size="4">Integration</font>
 
-#### ServiceNow Chat Integration
+**ServiceNow Chat Integration**
 
 Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-right-24:](../../agentai/integration/servicenow/chat-integration-with-servicenow.md){:target="_blank"}
 
@@ -346,7 +415,7 @@ Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-rig
 
 This update includes minor enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
-### Multi-lingual Support
+<font size="4">Multi-lingual Support</font>
 The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
 
 <hr>
@@ -357,13 +426,13 @@ The Agent AI integration with ServiceNow now supports multiple languages. Agents
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Widget Enhancements
+<font size="4">Widget Enhancements</font>
 
-#### Auto-Scroll for Transcript Tab
+**Auto-Scroll for Transcript Tab**
 The Transcript tab is now updated with the "auto-scroll" functionality, wherein the system automatically navigates to the last message for new utterances. Agents can manually scroll up and down to read through the content.  
 <img src="../images/auto-scroll-transcript-tab.png" alt="auto-scroll-transcript-tab" title="auto-scroll-transcript-tab" style="border: 1px solid gray; zoom:80%;">
 
-#### Enhanced Language Support for Localization
+**Enhanced Language Support for Localization**
 The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
 
 * HT - Haitian Creole
@@ -379,56 +448,56 @@ The Greeting Messages, Widget Content, Layout Customization, and Negative Feedba
 * TH - Thai
 * PT_PT - Portuguese (European)
 
-#### Clickable Spyglass icon on the Search bar
+**Clickable Spyglass icon on the Search bar**
 
 The **Spyglass** icon on the Agent AI widget’s **Search** bar is now clickable. Users can search by pressing the **Enter** key or clicking the **Spyglass** icon.  
 <img src="../images/spy-glass-icon-search-tab.png" alt="spy-glass-icon" title="spy-glass-icon" style="border: 1px solid gray; zoom:80%;">
 
-#### Run Dialog Task Enhancement
+**Run Dialog Task Enhancement**
 In the Agent AI widget, Dialog Tasks now display the **Run with Agent Input** button as an icon next to the Run button. Agents can click this icon to customize the Dialog Task content and decide whether to send the dialog.
 
-#### Rate Limit on Socket Connections from Agent AI
+**Rate Limit on Socket Connections from Agent AI**
 To prevent system overload, crashes, or slowdowns and ensure optimal performance, Kore.ai has implemented a rate limit on sockets. The rate limit on sockets are:
 
 * Message Limit: This limit is 500 messages per socket per minute. If exceeded, a 1-minute cooldown will be activated, during which no messages can be sent. A rate_limit event will notify users of the retry time.
 * Conversation Limit: Each conversation is limited to 10 parallel socket connections. If this limit is surpassed, additional connections are disconnected until one of the existing connections is closed.
 * Agent Conversation Socket Limit: No specific limit on socket connections per agent exists.
 
-#### Summarization Support for Japanese
+**Summarization Support for Japanese**
 The Agent AI widget now supports conversation summarization in Japanese.
 
-### Integration Enhancements
+<font size="4">Integration Enhancements</font>
 
-#### Genesys Agent AI integration with Genesys Desktop Application
+**Genesys Agent AI integration with Genesys Desktop Application**
 The Genesys Agent AI solution (Agent AI widget) now works with the Genesys Desktop Application. [Learn more :octicons-arrow-right-24:](https://docs.kore.ai/agentassist/integration/agent-ai-integration-with-genesys-cloud-cx/){:target="_blank"}.
 
-#### Enhanced Language Support for NICE MAX Desktop
+**Enhanced Language Support for NICE MAX Desktop**
 The Agent AI integration with NICE MAX Desktop now supports multiple languages, allowing agents to interact with the Agent AI widget in their preferred language.
 
-#### Support for passing Custom Data
+**Support for passing Custom Data**
 Agent AI integration with NICE CTI on Salesforce allows agents to pass custom data (such as name and department) into the Agent AI widget via the NICE CTI scripts. This integration enhances personalization and context-awareness in customer interactions, improving customer satisfaction and operational efficiency.
 
-#### Security Enhancement to Prevent Agent Impersonation
+**Security Enhancement to Prevent Agent Impersonation**
 Kore.ai has implemented a security enhancement for the Agent AI widget to prevent data breaches and unauthorized actions. The widget’s URL, which previously accepted a modifiable **conversationID** query parameter, now prevents the impersonation of legitimate agents. This update mitigates the risk of unauthorized access via **JWT token** misuse and **iframe link** inspection.
 
-#### AgentAssist Chat Integration with ServiceNow
+**AgentAssist Chat Integration with ServiceNow**
 AgentAssist is now integrated with ServiceNow, allowing agents to access the features for a seamless chat experience within the ServiceNow environment.
 
-### API Enhancements
+<font size="4">API Enhancements</font>
 
-#### Raw Data API Enhancements
+**Raw Data API Enhancements**
 The Raw Data API is updated to include the following:
 
 * Queue Details: This parameter, “queueInfo,” contains the “queueId” and “queueName” information.
 * Scroll Up and Scroll Down counts: The “countScrollUp” and “countScrollDn” parameters show the number of times an agent clicks the “up” and “down” arrows to scroll up or down in the widget.
 * Links Clicked / Redirects: The “linksClicked” parameter shows the URL and the timestamp when a link was clicked.
 
-#### Chat History API Includes Agent Messages
+**Chat History API Includes Agent Messages**
 The Chat or [Conversation Details and Summary API](https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/){:target="_blank"} now includes Agent messages to help generate the complete conversation summary for those who use the Chat History API to access conversations.
 
-### UI Enhancement
+<font size="4">UI Enhancement</font>
 
-#### Enhanced Language Support for XO v11
+**Enhanced Language Support for XO v11**
 For localization, the XO v11 App now supports Japanese and Korean languages.
 
 <hr>
@@ -439,13 +508,13 @@ For localization, the XO v11 App now supports Japanese and Korean languages.
 
 This update includes minor enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Widget Enhancement
-#### Agent AI for Outbound Calls
+<font size="4">Widget Enhancement</font>
+**Agent AI for Outbound Calls**
 
 Agent AI is now available for both inbound and outbound calls.
 
-### Integration Enhancement
-#### Default Kore Agent AI Interaction Widget for Genesys
+<font size="4">Integration Enhancement</font>
+**Default Kore Agent AI Interaction Widget for Genesys**
 
 To streamline call handling and improve efficiency, the Agent AI widget now supports Genesys' default pop-up window. The widget automatically opens upon receiving a call or message.
 
@@ -457,9 +526,9 @@ To streamline call handling and improve efficiency, the Agent AI widget now supp
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Widget Enhancements
+<font size="4">Widget Enhancements</font>
 
-#### Extended Language Support for Localization
+**Extended Language Support for Localization**
 
 The Greeting Messages, Widget Content, Layout Customization, and Negative Feedback Reasons now support the following additional languages:
 
@@ -474,7 +543,7 @@ The Greeting Messages, Widget Content, Layout Customization, and Negative Feedba
 * FA - Persian
 * UR - Urdu
 
-#### Enhanced Access Control for Search AI
+**Enhanced Access Control for Search AI**
 
 Agent AI now allows restricted access for targeted users by configuring up to three Search AI apps with the following scopes: 
 
@@ -489,17 +558,17 @@ Agent AI now allows restricted access for targeted users by configuring up to th
 * Auto-Suggestions can be configured for only one Search AI app.
 * Knowledge AI settings are available only when selecting either Internal or External Answers.
 
-#### Decommissioning of Agent AI Widget v2
+**Decommissioning of Agent AI Widget v2**
 
 The widget v2 will be decommissioned by the end of November 2024. A banner has been added in the Voice and Chat channels to notify users that Agent AI widget v2 will be decommissioned. Please upgrade to v3 for continued support.
 
-### Integration Enhancements
+<font size="4">Integration Enhancements</font>
 
-#### Summary Support for NICE MAX Desktop
+**Summary Support for NICE MAX Desktop**
 
 Agents using NICE MAX Desktop now receive a concise summary at the end of a chat or voice session. This summary highlights key points and identifies action items, allowing agents to review important information quickly. [Learn more :octicons-arrow-right-24:](../../agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md){:target="_blank"}.
 
-#### Multibot Support for Agent AI Voice in Genesys
+**Multibot Support for Agent AI Voice in Genesys**
 
 Previously limited to a single bot and a department-specific approach, the solution has now been upgraded to support multiple bots and a queue-based functionality. This enhancement enables Genesys Cloud CX to offer a more flexible and scalable solution for businesses seeking to leverage AI to improve agent efficiency and customer satisfaction across multiple departments.
 
@@ -510,11 +579,11 @@ Previously limited to a single bot and a department-specific approach, the solut
 <u> Patch Release </u>
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Enhanced NICE MAX Desktop Integration
+<font size="4">Enhanced NICE MAX Desktop Integration</font>
 
 The Agent AI integration with NICE CX MAX Desktop now supports passing custom data to the Agent AI Widget and is compatible with XO v11. [Learn more :octicons-arrow-right-24:](../../agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md){:target="_blank"}
 
-### Enhanced Salesforce-NICE CTI Integration
+<font size="4">Enhanced Salesforce-NICE CTI Integration</font>
 
 The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI features, including automation, transcription, intent identification, Agent Coaching, Agent Playbooks, Sentiment Analysis, and end-of-call summaries. This results in improved personalization and operational efficiency.
 
@@ -526,16 +595,16 @@ The Agent AI integration with Salesforce-NICE CTI now supports all Agent AI feat
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### “Thumbs-down”/Negative Feedback Reasons Comment Box Updated
+<font size="4">“Thumbs-down”/Negative Feedback Reasons Comment Box Updated</font>
 
 The placeholder text in the comment box is now labeled “Tell us more…” instead of “Add additional comments here.”  
 <img src="../images/negative-feedback-reason-comment-box.png" alt="negative-feedback-reason-comment-box" title="negative-feedback-reason-comment-box" style="border: 1px solid gray; zoom:80%;">
 
-### Summarization in Spanish
+<font size="4">Summarization in Spanish</font>
 
 For Spanish conversations, auto-summarization is now available in the Spanish language.
 
-### Error Message Configuration
+<font size="4">Error Message Configuration</font>
 
 The error message display pattern in the Agent AI widget has been updated to help agents view and understand issues without unnecessary redundancy.
 
@@ -551,7 +620,7 @@ When a single error message is triggered during dialog task execution, the **Ass
 When multiple (different) error messages are triggered, they are all displayed in the **Assist** tab, with a count indicating the total number of error messages.  
 <img src="../images/multiple-error-messages.png" alt="multiple-error-messages" title="multiple-error-messages" style="border: 1px solid gray; zoom:80%;">
 
-### Enhanced Raw Data API
+<font size="4">Enhanced Raw Data API</font>
 
 The [Raw Data API](https://docs.kore.ai/agentassist/api/raw-data-api-v2/){:target="_blank"} is enhanced to retrieve and store summary feedback, reasons, and comments.
 
@@ -569,7 +638,7 @@ This update includes bug fixes.
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Agent AI Conversation Logs
+<font size="4">Agent AI Conversation Logs</font>
 
 This update introduces a comprehensive Conversation Logs feature for reviewing past agent-customer interactions. It provides a powerful tool for managers and quality assurance teams to review, analyze, and improve agent-customer interactions over time.
 
@@ -583,7 +652,7 @@ Key updates:
 
 * **Flexible Filtering Options**: Today, Yesterday, Past 7 days, Past 28 days, Past 90 days, and Custom date range.
 
-### Expandable and Collapsible Table Templates in the Widget
+<font size="4">Expandable and Collapsible Table Templates in the Widget</font>
 
 This update allows agents to manage their workspace more efficiently by controlling the display of table templates, leading to a more organized and personalized view of information.
 
@@ -594,13 +663,13 @@ Key updates:
 * **User Control**: Agents can adjust table visibility as needed.  
 <img src="../images/expandable-collapsible-content.png" alt="expandable-collapsible-content" title="expandable-collapsible-content" style="border: 1px solid gray; zoom:80%;">
 
-### Enabling Server-Side Triggering of Conversation Summary in Agent AI
+<font size="4">Enabling Server-Side Triggering of Conversation Summary in Agent AI</font>
 
 Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API.
 
 [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/conversation-summary-trigger-api.md){:target="_blank"}
 
-### Introduction of Additional languages for Agent AI
+<font size="4">Introduction of Additional languages for Agent AI</font>
 
 For localization, feedback, and greetings, Agent AI now supports 33 languages, including Indian, Dutch, and other major languages. It significantly broadens Agent AI’s accessibility and user-friendliness across different linguistic markets, enabling more effective communication and interaction with a global user base.
 
@@ -617,7 +686,7 @@ Key updates:
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-### Widget Landing Tab
+<font size="4">Widget Landing Tab</font>
 
 The location of the Widget Landing Tab settings is changed in this update:
 
@@ -626,7 +695,7 @@ The location of the Widget Landing Tab settings is changed in this update:
 
 This change consolidates widget customization options, making it easier for users to configure the landing tab along with other layout settings.
 
-### OAuth Credential Update for Genesys
+<font size="4">OAuth Credential Update for Genesys</font>
 
 The **Authorized Redirect URI** in the Genesys Middleman App is updated to ensure seamless integration of Agent AI with XO v11:
 
@@ -640,40 +709,40 @@ The **Authorized Redirect URI** in the Genesys Middleman App is updated to ensur
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-### Search AI Configuration Moved from Account to Bot Level
+<font size="4">Search AI Configuration Moved from Account to Bot Level</font>
 
 The Search AI Configuration data is now saved at the bot level instead of the account level.
 
-### Enhanced Scroll Functionality in the Widget
+<font size="4">Enhanced Scroll Functionality in the Widget</font>
 
 In the Agent AI widget, the **Assist** and the **My Bot** tabs now contain “up” and “down” arrow buttons at the top and the bottom to let you scroll to the first and last messages. These buttons appear after the messages in the **Assist** tab are large enough to require a scroll bar.  
 <img src="../images/enhanced-scroll-functionality-1.png" alt="enhanced-scroll-functionality" title="enhanced-scroll-functionality" style="border: 1px solid gray; zoom:80%;">
 
-### Agent AI Enabled Dialog Tasks for Playbook Step Adherence and Triggers
+<font size="4">Agent AI Enabled Dialog Tasks for Playbook Step Adherence and Triggers</font>
 
 To improve the usability and relevance of the Playbooks module, Agent AI now restricts the selection of dialog tasks specified only for the Playbook’s designated channel. This dialog task selection applies during trigger point creation for Dynamic Playbooks and Step Adherence within Primary Playbooks.  
 <img src="../images/agent-ai-enabled-dialog-tasks-2.png" alt="agent-ai-enabled-dialog-tasks" title="agent-ai-enabled-dialog-tasks" style="border: 1px solid gray; zoom:80%;">
 
-### Feedback Reason and Comment on Summarization
+<font size="4">Feedback Reason and Comment on Summarization</font>
 
 The Agent AI widget's Summary feature now offers enhanced feedback capabilities for auto-generated summaries. Agents can provide more specific and actionable feedback by selecting a reason from up to five customizable messages and adding optional comments. Administrators can edit these messages, turn the comment box on or off, and choose the feedback language. This improved feedback system allows agents to pinpoint issues with summaries more accurately, contributing to the continuous improvement of the auto-summarization feature's accuracy and relevance over time. [Learn More :octicons-arrow-right-24:](../../agentai/configuration/feedback-settings.md){:target="_blank"} 
 <img src="../images/feedback-reason-3.png" alt="feedback-reason" title="feedback-reason" style="border: 1px solid gray; zoom:80%;">
 
-### Language-specific Summarization
+<font size="4">Language-specific Summarization</font>
 
 The Agent AI widget now supports language-specific summarization for third-party agent desktops. Admins can customize the language of automatically generated conversation summaries by selecting the **Custom Dialog Task** option in the **Auto Summarization Model** section. After choosing a preferred language, the system displays a configured dialog task for that language. The summary is then generated based on this language-specific task, allowing for more accurate and culturally appropriate summaries across different languages.  
 <img src="../images/language-specific-summarization-4.png" alt="language-specific-summarization" title="language-specific-summarization" style="border: 1px solid gray; zoom:80%;">
 
-### View Summary from Any Active Tab
+<font size="4">View Summary from Any Active Tab</font>
 
 The Agent AI widget now displays summaries more flexibly across all active tabs. When an agent closes a conversation, the summary appears on whichever tab they're currently viewing, not just the Assist tab. This change supports the widget's customizable layout feature, allowing agents to see summaries even if they've rearranged or removed certain tabs. For example, a summary can now pop up on the Search tab, enhancing the widget's versatility and ensuring agents always have access to important conversation summaries regardless of their current view.
 
-### Widget Layout Customization (Beta)
+<font size="4">Widget Layout Customization (Beta)</font>
 
 The Agent AI widget now offers channel-specific layout customization in beta. Users can adjust language settings, menu labels, visibility controls for messages, dialog task timelines, and assist message types. The feature also allows customization of widget menu layout, assist action menu, landing tab settings, and "More" menu behavior. This flexibility enables tailoring the widget to specific channel needs and preferences. While the preview function is still in beta and may not fully reflect the final widget experience, it provides a close reference for customization options. [Learn More :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md){:target="_blank"}  
 <img src="../images/widget-layout-customization-5.png" alt="widget-layout-customization" title="widget-layout-customization" style="border: 1px solid gray; zoom:80%;">
 
-### Entry/Exit Event Support in Third-Party Integration
+<font size="4">Entry/Exit Event Support in Third-Party Integration</font>
 
 Integration with third-party applications lets Agent AI capture and process events like entry, exit, and internalTransfer between agents to ensure smooth transition and improved user experience. Currently, these events are only supported by Genesys. 
 
@@ -693,15 +762,15 @@ This update includes bug fixes.
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-### Summarization Service Optimization
+<font size="4">Summarization Service Optimization</font>
 
 The Conversation Summary generation process has been updated to handle short, long, and abrupt endings of conversations. For long conversations, the maximum limit is set to 8000 tokens (approximately 6000 words).
 
-### Improved Widget Search Experience
+<font size="4">Improved Widget Search Experience</font>
 
 The widget search bar has been improved for a better user experience. It now shows "Ask a question" as placeholder text with a search icon on the right. As users type in the bar, the placeholder disappears, and the search icon changes to a close (X) icon, which makes it easy to clear the text.
 
-### Dashboard Updates
+<font size="4">Dashboard Updates</font>
 
 Agent AI dashboard is enhanced with new suggestion relevance metrics and reorganized customer inquiry insights.
 
@@ -712,17 +781,17 @@ Agent AI dashboard is enhanced with new suggestion relevance metrics and reorgan
 
 <img src="../images/updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
 
-### Attachment Support in Widget
+<font size="4">Attachment Support in Widget</font>
 
 Agent AI now accepts file or image attachments during live conversations. 
 
 If the file or image is not automatically detected, you can override and manually attach the file. To maintain system efficiency, attachments are limited to one file at a time and must not exceed 25 MB in size.
 
-### Dark Theme for Agent AI Widget
+<font size="4">Dark Theme for Agent AI Widget</font>
 
 Agents can now customize the widget appearance by selecting a theme. To select it, go to the widget’s **Settings** section and select **Dark** or **Light**.
 
-### In-line Digital Form
+<font size="4">In-line Digital Form</font>
 
 Agent AI has introduced in-line digital forms in the **Assist** tab, making it easier to collect customer information during live conversations. Configure the forms with dialog tasks to use this feature and select "Open inline form" in the **Web/Mobile SDK Form Behavior** setting.
 
@@ -732,7 +801,7 @@ Agent AI has introduced in-line digital forms in the **Assist** tab, making it e
 
 <img src="../images/inline-form.png" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
 
-### Streamlined Conversation Summary Management
+<font size="4">Streamlined Conversation Summary Management</font>
 
 Conversation Summary management has been improved to enhance usability and tracking.
 
@@ -746,7 +815,7 @@ Conversation Summary management has been improved to enhance usability and track
 * If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".  
 <img src="../images/summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
 
-### Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
+<font size="4">Enabling Channel-Specific Automations and Managing Appearance in the Widget Library</font>
 
 Agent AI lets you configure channel-specific dialog tasks across all communication channels - Chat, Voice, and Email. You can also specify whether these dialog tasks appear in the list or only when searched in the widget’s library (**Search** tab). These preferences can be set while creating or editing a dialog task and are available under the **Triggers & Permissions** tab.
 <img src="../images/triggers-and-permissions.png" alt="triggers-and-permissions" title="free text" style="border: 1px solid gray; zoom:80%;">
@@ -759,7 +828,7 @@ Agent AI lets you configure channel-specific dialog tasks across all communicati
 
 **Disabled**: The dialog task doesn’t appear on the list but remains searchable via the “Ask a question” search bar in the **Search** tab.
 
-### Agent AI Raw Data API v2
+<font size="4">Agent AI Raw Data API v2</font>
 
 This updated version of the Raw Data API offers the following additional conversation data for deeper insights into Agent AI interactions and conversation flows:
 
@@ -785,14 +854,14 @@ This update includes bug fixes.
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
-### Auto-scroll Agent AI Widget Content
+<font size="4">Auto-scroll Agent AI Widget Content</font>
 
 The **Auto-Scroll Assist Tab Content toggle** lets you manage the scrolling functionality of content in the Assist tab. Agents can enable/disable this toggle in the **AgentAssist widget** > **Settings** tab.
 <img src="../images/autoscroll-settings-tab.png" alt="autoscroll-settings-tab" title="autoscroll-settings-tab" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/autoscroll-enabled-disabled-1.png" alt="autoscroll-enabled-disabled" title="autoscroll-enabled-disabled" style="border: 1px solid gray; zoom:80%;">
 
-### Entity-Based Summarization
+<font size="4">Entity-Based Summarization</font>
 
 Dialog tasks having “message nodes” didn’t let users customize the Conversation Summary. Hence, to let users customize the Conversation Summary, “message nodes” are replaced with “entity nodes”. To utilize this capability, admins must create dialog tasks with entity nodes and select these dialog tasks in the **Agent AI** > **Configuration** > **Widget Settings** > **AgentAssist Channel Specific Settings** > **Auto Summarization** > **Auto Summarization Model** > **Custom Dialog Task** section.
 
@@ -800,7 +869,7 @@ Dialog tasks having “message nodes” didn’t let users customize the Convers
 
 For Conversation Summary customization, select a dialog task with “entity node” in the **Custom Dialog Task** field.
 
-### Warm Transfer
+<font size="4">Warm Transfer</font>
 
 Agent AI has introduced the **Warm Transfer** feature to customize the transfer functionality of the Agent AI widget. This feature specifically caters to third-party configurations, where appropriate transfer events are transmitted.
 
@@ -812,7 +881,7 @@ The **Warm Transfer** feature can be defined as a conference call between two ag
 
 * **Configure Dialog Task**
 
-### Negative Feedback Settings
+<font size="4">Negative Feedback Settings</font>
 
 For better processing and accurate identification of reasons for receiving a “thumbs down”, Admins can now configure a list of negative feedback messages for agents to select. They can also include a comment box for agents to add additional comments. Admins decide whether these two options appear in the widget after agents select the “thumbs down” icon at the end of a Dialog Task and after each answer and FAQ. Additionally, Admins can change the language of the feedback messages by selecting one from the available language list.
 
@@ -840,14 +909,14 @@ This update includes bug fixes.
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
-### Agent AI Widget Updates
+<font size="4">Agent AI Widget Updates</font>
 
-#### No Results Found and No Dialog Tasks Enabled Messages
+**No Results Found and No Dialog Tasks Enabled Messages**
 
 The Agent AI widget now shows the “No Search Result Found. Could you rephrase your question or ask something else?” message when an agent’s search query on the search bar doesn’t show any results.
 If no dialog tasks are configured for an account, the message “No dialog tasks enabled for library” appears in the Library/Search tab.
 
-#### Updates to the Override Mode of the Agent AI widget
+**Updates to the Override Mode of the Agent AI widget**
 
 **Override Mode Off**
         
@@ -861,14 +930,14 @@ If no dialog tasks are configured for an account, the message “No dialog tasks
 * Introduced the Cross and Check icons.
 * The “keyboard” icon is replaced with the “agent” icon to indicate agent input.
 
-### Agent AI Configuration with OpenAI GPT-3.5
+<font size="4">Agent AI Configuration with OpenAI GPT-3.5</font>
 
 For enhanced Real-time Coaching and Playbooks performance, the AgentAI configuration is now upgraded from OpenAI GPT 3.0 to OpenAI GPT 3.5. OpenAI GPT 3.5 delivers more accurate and context-aware responses, thereby enhancing Real-time Coaching effectiveness and Playbooks quality.
 
-### Feedback Mechanism for Answers
+<font size="4">Feedback Mechanism for Answers</font>
 In an effort to constantly improve the accuracy and helpfulness of answers displayed on the AgentAI widget, Kore has introduced a feedback mechanism for agents. Agents can now click the “thumbs up” or “thumbs down” icon displayed with every answer to indicate positive or negative feedback. This feedback data will help train Agent AI to provide more accurate answers.
 
-### SearchAssist Configuration Page Updates
+<font size="4">SearchAssist Configuration Page Updates</font>
 
 The SearchAssist Configuration page inside Agent AI has been updated with the following changes:
 
@@ -877,14 +946,14 @@ The SearchAssist Configuration page inside Agent AI has been updated with the fo
 * As soon as a user lands on the configuration page, the following hint is displayed: “Ensure that the domain URL does not contain "https://" and does not have a forward slash "/" at the end.” 
 * If a user enters incorrect values in the configuration page, the following error message is displayed: “Error establishing connection.
 
-### Conversation Transfer Experience (Third-Party Agent Desktop)
+<font size="4">Conversation Transfer Experience (Third-Party Agent Desktop)</font>
 
 Agent AI has introduced the Conversation Transfer feature to customize the transfer functionality of the Agent AI widget. This feature is applicable only to the third-party configurations where appropriate transfer events are transmitted. The Cold Transfer type applies to all three channels - Chat, Voice, and Email and has the following options to choose from:
 * Scroll up to the First Message
 * Continue from the Last Message
 * Configure Dialog Task
 
-### Configure your own Auto Summarization Model (Third-Party Agent Desktop)
+<font size="4">Configure your own Auto Summarization Model (Third-Party Agent Desktop)</font>
 
 Agent AI has introduced the **Auto Summarization Model** widget to customize the automatic summarization process. You can now select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets you select a “dialog task with a single message node” to automatically generate the conversation summary. This is applicable only to third-party agent desktops.
 
@@ -903,7 +972,7 @@ The Agent AI widget's Assist tab now displays an updated Summary that includes t
 
 After submission, the summary appears under the “.ai CONVERSATION SUMMARY” title with a **Copy** button at the bottom-right corner.
 
-### Updated Summarization Feature
+<font size="4">Updated Summarization Feature</font>
 
 Agent AI has improved the Summarization feature of its widget. The latest version comes up with improved summary accuracy and advanced handling of various scenarios in conversations between agents and users. Currently, this update is available only for the US PROD environment and supports English. It is not yet available for DE, JP, EU, AU, and IND environments.  
 
@@ -914,16 +983,16 @@ Agent AI has improved the Summarization feature of its widget. The latest versio
 * Handling Incomplete Summaries: The new model handles incomplete summaries more effectively, providing more comprehensive and useful insights even when the conversation is not fully concluded.
 * Handling Longer Calls: The new model handles longer calls extending up to 20 minutes. The previous model would generate incomplete summaries for such extended conversations.
 
-### Agent Coaching Updates
+<font size="4">Agent Coaching Updates</font>
 
 In Agent Coaching > Utterance Trigger section, **Anytime in conversation** is now a default selection for the “in conversation” field.
 
-### Dashboard Updates
+<font size="4">Dashboard Updates</font>
 
-#### Enhanced Agent Feedback Functionality
+**Enhanced Agent Feedback Functionality**
 
 The AgentAI dashboard has been updated to include a detailed summary of Agent Feedback for dialog tasks, including "Not Helpful" feedback and additional comments. Users can now get a detailed view of the “Not Helpful” feedback with Responses, Additional Comments, and Counts.
 
-#### Average Widget Usage (Third-Party Agent Desktop)
+**Average Widget Usage (Third-Party Agent Desktop)**
 
 The Dashboard has been updated to include the Average Widget Usage feature. This feature gives a graphical representation of the average amount of time agents spend on the AgentAI widget.
