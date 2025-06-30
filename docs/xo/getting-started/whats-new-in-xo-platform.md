@@ -542,6 +542,5 @@ We're actively working to address the following limitations in AI for Service (X
 
 ##### Related Links
 
-* [Key Differences - v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
-* [Current Limitations](../release-notes/current-limitations.md)
+* [Key UI Differences - v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
 * [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)
