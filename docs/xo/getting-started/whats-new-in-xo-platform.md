@@ -203,51 +203,66 @@ Key updates to products and features are summarized below. Click the correspondi
 
 === "Search AI"
 
-    Kore.ai’s SearchAssist capabilities are now available under Search AI on the XO Platform. Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. Add multiple data sources for building your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. By combining Automation AI (Use Cases) and Search AI (Answers), businesses can create an exceptional, seamless conversational experience for their users.
+    **Search AI** is an enterprise-grade platform that combines advanced search, retrieval, and generative AI to deliver accurate, context-aware answers across a wide range of content sources. It is designed to handle complex queries, unstructured data, and varied use cases with high precision and flexibility. It offers AI-driven search precision and flexible integration, making it ideal for enterprises seeking intelligent knowledge discovery and automation. By combining Automation AI (Use Cases) and Search AI (Answers), businesses can create an exceptional, seamless conversational experience for their users.
 
-    Key Search AI (Answers) capabilities are summarized below. 
+    Key Capabilities of Search AI include:
 
-    ### Content Extraction Strategies
 
-    To generate answers using the source data, the ingested data is segmented into smaller segments or chunks to understand better, organize, and efficiently retrieve the most relevant set of data when required. Selecting the most appropriate strategy requires considering several factors, like the type of content, the embedding model to store chunks, the expected length and complexity of user queries and answers, etc.
+    ### Smart Answer Generation
 
-    The application supports various chunk-generation strategies. You have the flexibility to select and customize the strategies based on the format and structure of the ingested data or as per the answers required. You can configure multiple strategies to apply to different types of content. This improves the precision of answers by aligning the strategy to the document characteristics and gives you flexibility and granular control over the answers generated.  
-    <img src="../images/xo-platform-Content-Extraction- Strategies.png" alt="Content Extraction Strategies" title="Content Extraction Strategies" style="border: 1px solid gray; zoom:70%;">
+    Search AI uses **Advanced RAG technologies** to deliver accurate, context-aware answers by intelligently combining information retrieval and generative AI. It is built on an end-to-end process: 
 
-    #### Chunk Browser
+    **Content ingestion -> Extraction ->Indexing -> Retrieval -> Answer Generation. ** \
+    The platform efficiently ingests content from various sources, applies advanced extraction techniques to understand complex formats, and uses sophisticated indexing and retrieval methods to identify the most relevant information. This information is then passed to a Large Language Model to generate clear, human-like responses. Search AI supports flexible LLM integration, enabling enterprises to utilize built-in models, third-party providers (such as OpenAI or Azure), or even bring their custom or fine-tuned LLMs.
 
-    The Chunk Browser provides a tool for observing the extracted chunks from the source data. It gives insight into the extraction process's output and enables subsequent actions like editing and rectifying the chunks. 
+    To further enhance response quality, Search AI uses **Agentic RAG Architecture** to optimize query interpretation and retrieval. By combining autonomous agent capabilities with RAG, it can break down complex queries, retrieve targeted knowledge from specific sources, and generate highly contextual answers.
 
-    * **Observation and Verification:** You can use the Chunk Browser to inspect and verify the extracted chunks. This step is crucial for ensuring the correctness of the extraction process, the accuracy of the chunks generated, and the preservation of data.  
-    <img src="../images/xo-platform-Chunk Browser.png" alt="Chunk Browser" title="Chunk Browser" style="border: 1px solid gray; zoom:70%;">
 
-    * **Editing of Chunks**: You can edit the chunk information directly within the browser interface. This capability can help you add any missed information, edit inaccurate information, or simply enrich the extracted information.  
-    <img src="../images/xo-platform-Chunk Viewer.png" alt="Chunk Viewer" title="Chunk Viewer" style="border: 1px solid gray; zoom:70%;">
+    ### Expanded Connectivity and High-Speed Crawling 
 
-    #### Index Configuration
+    Search AI provides a robust and flexible content ingestion framework that enables enterprises to integrate data from diverse sources seamlessly. This ensures quick access to accurate information and simplifies the discovery of relevant answers.
 
-    Indexing is the process of generating vectors or embeddings from the extracted chunks and creating a knowledge Index that can be used to generate answers. Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into vectors. The XO platform supports various embedding models, such as MPNet, LaBSE, and e5, and allows you to choose a model according to your specific needs.  
-    <img src="../images/xo-platform-Index.png" alt="Index" title="Index" style="border: 1px solid gray; zoom:70%;">
+    * **Connector Ecosystem**: Supports **60+ out-of-the-box connectors** to ingest structured content from popular CRMs, CMSs, cloud storage platforms, productivity suites, and collaboration tools like Salesforce, SharePoint, Google Drive, Confluence, and more.
 
-    ### Answer Generation Strategies
+    * **Web Content Integration**: Advanced **web crawling** capabilities designed to handle **complex site structures** and **dynamically loaded content**, ensuring reliable and efficient indexing of online information. 
 
-    Search AI uses LLM to generate answers from the ingested chunks. The efficacy of the response depends on the Chunk Retrieval method and the Answer Generation configuration.
+    * **File & Folder Support**: Easily ingest files in various formats (PDF, DOCX, TXT, etc.) from local or cloud-based storage—ideal for processing structured and unstructured documents at scale.
 
-    #### Chunk Retrieval Strategy
 
-    Choose the preferred chunk retrieval strategy for retrieving answer chunks from the answer index for a given query. Search AI supports **Vector Retrieval**, which uses cosine similarity scores, and **Hybrid Retrieval**, which considers patterns and structures in the text. The choice between using vector retrieval and hybrid retrieval depends on various factors, including the nature of the data, the specific requirements of the application, and the available resources.  
-    <img src="../images/xo-platform-Chunk Retrieval.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+    ### Advanced Content Extraction 
 
-    * **Vector Retrieval**: In this type of retrieval, we compute the cosine similarity between the query vector and each chunk vector at the time of query, and the resulting scores are used to filter and sort the results. The score ranges from 0 to 1, where 0 indicates no match, and 1 represents a complete match.
-    * **Hybrid Retrieval**: In this type of retrieval, multiple approaches are used to find the most relevant chunk corresponding to the query.
+    Once ingested, Search AI offers a powerful and customizable **extraction strategy framework** that adapts to different content formats, structures, and enterprise needs. This ensures that meaningful data is extracted accurately and efficiently for search. Supported extraction strategies include:
 
-    #### Answers Generation
+    * Text Extraction Model
+    * Layout Aware Extraction
+    * Advanced HTML Extraction
+    * Custom Extraction
+    * Markdown Extraction
+    * Image-Based Document Extraction
 
-    Configure the type of answers to be presented to the users:
 
-    * **Extractive Answers**: The topmost chunk retrieved in response to the user query is directly presented to the user as answers. The extractive answers are exact content retrieved from the chunks without any change in text.
-    * **Generative Answers**: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. Use the following fields to configure Generative Answers.  
-    <img src="../images/xo-platform-Generative Answers.png" alt="Generative Answer" title="Generative Answer" style="border: 1px solid gray; zoom:70%;">
+    ### Flexible Content Enrichment
+
+    Search AI features an intuitive and powerful enrichment framework through its **Workbench** tool, enabling teams to transform and refine extracted content before it is indexed. This is accomplished through a series of steps known as stages. The enrichment process is essential for ensuring high-quality, contextually rich data that drives accurate responses. 
+
+    The workbench can be used for **Metadata injection, noise reduction, or custom business-specific updates.**
+
+
+    ### Vector Generation
+
+    Search AI includes a highly optimized vector generation pipeline to convert processed content into dense embeddings, enabling advanced semantic search and RAG workflows. 
+
+    * Generate high-quality, context-aware vector representations using advanced embedding models for accurate semantic retrieval.
+    * Leverage VDR embeddings to create vectors from image-based or visually structured documents.
+    * Configure which content fields are used for embedding, allowing flexible and targeted vectorization based on your data structure and retrieval needs.
+
+
+    ### Advanced Content Retrieval 
+
+    Search AI provides powerful, intelligent retrieval capabilities, ensuring users receive the most relevant and context-aware responses. Key technologies include:
+
+    * **Hybrid RAG:** Utilizes a **hybrid retrieval method based on RAG Fusion**, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results.
+    * **Semantic-Powered Search:** Replaces traditional keyword-based retrieval with **semantic search**, enabling the system to understand the intent and context behind a query. This provides **deeper, more relevant results** tailored to user needs.
 
     ### Search vs. Automation Setting
 
