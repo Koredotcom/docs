@@ -166,24 +166,21 @@ nav:
               - AudioCodes: channels/ivr-audio-codes.md
               - IVR: channels/IVR-integration.md
       - Glossary: getting-started/glossary/concepts-and-terminology.md      
-    - Release Notes:
+    - Release Updates:
       - Release Communication: release-notes/release-communications.md
-      - What's New:
-        - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
-        - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
-        - Current Limitations: release-notes/current-limitations.md  
-      - Migration:
-        - Benefits of XO v11: getting-started/benefits-xo11.md
-        - Automation AI: getting-started/migration-path-xo10-to-xo11.md
-        - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
-        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md
-      - Recent Updates:
+      - What's New in AI for Service (XO v11.x): getting-started/whats-new-in-xo-platform.md        
+      - Release Notes:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
         - Platform Services: release-notes/11.x/platform-services.md 
-        - Voice Gateway: release-notes/11.x/voice-gateway.md  
+        - Voice Gateway: release-notes/11.x/voice-gateway.md 
+      - Upgrade Guides:
+        - Benefits of XO v11: getting-started/benefits-xo11.md
+        - Automation AI: getting-started/migration-path-xo10-to-xo11.md
+        - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
+        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md       
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
