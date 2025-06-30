@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.15.0 June 30, 2025
 
-<u>Minor Release</u>
+<u> Minor Release </u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
@@ -12,7 +12,8 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Real-Time Translation in Agent Console**
 
-Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center. [Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
+Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center.  
+[Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
 
 **Queue-Based Consult Call for Voice Channel**
 
@@ -94,7 +95,7 @@ These APIs enable the management of contacts in Contact Lists programmatically.
 Introduced APIs for complete Campaign lifecycle management. These APIs can be used to:
 
 * Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic.
-* Retrieve all stored properties of a campaign using its Campaign ID. Learn more.
+* Retrieve all stored properties of a campaign using its Campaign ID. 
 * Remove a campaign using its Campaign ID.
 
 These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types. Campaigns created via API remain fully accessible and manageable through the UI.
@@ -103,8 +104,8 @@ These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types
 
 Added support for managing Contact Lists via public APIs, including a new type: `"API-Passive"`. These APIs can be used to:
 
-* Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`. Learn more.
-* Retrieve all metadata for contact lists (excluding contact data). Learn more.
+* Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`. 
+* Retrieve all metadata for contact lists (excluding contact data). 
 * Delete a contact list along with all its contacts.
 
 These APIs enable users to automate contact list creation and management without requiring the use of the UI.
@@ -1613,7 +1614,7 @@ Voice Gateway now integrates with AmiVoice, a Japanese Automatic Speech Recognit
  
 <hr>
 
-## v11.2 June 01, 2024
+## v11.2.0 June 01, 2024
 
 <u>Patch Release</u>
 
