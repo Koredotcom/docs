@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.15.0 June 30, 2025
 
-<u> Minor Release </u>
+<u>Minor Release</u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Real-Time Translation in Agent Console**
 
-Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center. Learn more. [Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
+Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center. [Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
 
 **Queue-Based Consult Call for Voice Channel**
 
