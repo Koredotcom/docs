@@ -8,9 +8,9 @@ This document provides information on the feature updates and enhancements intro
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### App Language
+<font size="4">App Language</font>
 
-#### German Language Support for Apps (Beta) 
+**German Language Support for Apps (Beta)** 
 
 The platform has enabled German language selection for the App, allowing platform users to access the app in their native language.
 
@@ -22,9 +22,9 @@ Key updates
 
 [Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
 
-### Channels
+<font size="4">Channels</font>
 
-#### Proactive Notifications Support for Google Hangouts
+**Proactive Notifications Support for Google Hangouts**
 
 The platform now supports proactive notifications for Google Hangouts, enabling it to push relevant updates to users without requiring them first to initiate interaction with the bot. This feature enhances user engagement by delivering timely information directly to users. [Learn more :octicons-arrow-right-24:](../../channels/add-google-chat.md#step-4-configure-the-hangouts-chat-channel)
 
@@ -36,29 +36,29 @@ The platform now supports proactive notifications for Google Hangouts, enabling 
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Migration
+<font size="4">Migration</font>
 
-#### Migration of Universal Bots from XO10 Bot to XO11 Automation Apps
+**Migration of Universal Bots from XO10 Bot to XO11 Automation Apps**
 
 XO10 Universal Bots act as orchestrators that route user inputs to linked Standard Bots for intent handling. In XO11, this orchestration is supported within a Standard App via **DialogGPT**, eliminating the need for a separate Universal Bot construct.
 
 This release introduces a guided migration path to help users seamlessly transition XO10 Universal Bots into the XO11 framework. [Learn more:octicons-arrow-right-24:](../../getting-started/migration-path-xo10-to-xo11.md#upgrade-journey-steps-for-universal-bots)
 
-### Channels
+<font size="4">Channels</font>
 
-#### Repeat Bot Response Event now supports SmartAssist Gateway Channel
+**Repeat Bot Response Event now supports SmartAssist Gateway Channel**
 
 The platform now supports the SmartAssist Gateway channel for the Repeat Bot Response event. This allows end-users to ask the virtual assistant to repeat its recent responses during a conversation. This support is in addition to the existing voice channels: IVR, AudioCodes, and Twilio Voice. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/conversation-events.md#repeat-bot-response-event)
 
-### Flows
+<font size="4">Flows</font>
 
-#### Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration
+**Agent Transfer Node: Restriction on Prompting Tasks and Dialog Configuration**
 
 To prevent execution issues where flows unexpectedly return to the welcome message, the Agent Transfer node now includes a note clarifying supported dialog types. When selecting a specific dialog within this node, only preprocessing tasks should be used, not prompting tasks. Prompting tasks, such as those containing entity nodes, can interrupt the flow and prevent the Agent Transfer from executing correctly. [Learn more :octicons-arrow-right-24:](../../flows/node-types/agent-transfer.md#general-settings)
 
-### APIs
+<font size="4">APIs</font>
 
-#### Support for Proactive Notifications for Webhook Channel via Public API
+**Support for Proactive Notifications for Webhook Channel via Public API**
 
 The Proactive Notifications feature for Webhook Channel has been enhanced to support multi-user messaging using a public API, enabling businesses to send outbound messages to multiple recipients simultaneously.
 
@@ -71,14 +71,14 @@ Key features
 
 [Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
-#### Debug Logs API now supports additional SMS Channels
+**Debug Logs API now supports additional SMS Channels**
 
 The AI for Service Debug Logs API has expanded SMS channel support to include SMS, Twilio SMS, and Genesys Cloud CX Messaging channels, in addition to the existing WebSDK, IVR, IVR AudioCodes, and SmartAssist Gateway. [Learn more:octicons-arrow-right-24:](../../apis/automation/fetch-debug-logs.md)
 
 
-### Voice Call Properties
+<font size="4">Voice Call Properties</font>
 
-#### Support for Language-specific Voice Call Properties
+**Support for Language-specific Voice Call Properties**
 
 The platform now supports language-specific configuration of voice call properties, including prompts and grammar, across IVR-supported components, enabling seamless multilingual IVR bot experiences.
 
@@ -90,9 +90,9 @@ The platform now supports language-specific configuration of voice call properti
 [Learn more:octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md)
 
 
-### Role Management
+<font size="4">Role Management</font>
 
-#### Enhanced Permissions for the Billing Module
+**Enhanced Permissions for the Billing Module**
 
 The Platform has strengthened security by restricting the Billing Module to App Owners and users with custom roles. This ensures sensitive functions are protected while maintaining a streamlined experience for other user roles. [Learn more:octicons-arrow-right-24:](../../user-management/role-management.md)
 
@@ -112,15 +112,15 @@ This update includes only bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### User Management
+<font size="4">User Management</font>
 
-#### Enhanced User Management Accessibility
+**Enhanced User Management Accessibility**
 
 Previously, the User Management menu option was accessible via the product switcher and Contact Center AI. Now it is located in the left navigation of Automation AI, Search AI, and Agent AI, providing uniform access and improving user experience across the primary modules. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#manage-users)
 
-### Role Management
+<font size="4">Role Management</font>
 
-#### Enhanced Permissions Framework for App Owners
+**Enhanced Permissions Framework for App Owners**
 
 The Platform has strengthened security and updated system roles by restricting certain critical administrative functions to App Owners only, ensuring sensitive app functions are protected while maintaining a streamlined experience for other user roles.
 
@@ -151,16 +151,16 @@ This update includes only bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Unified Generative AI and LLM Interface
+**Unified Generative AI and LLM Interface**
 
 This update introduces a new unified interface for Generative AI and LLM capabilities, logically organized features under product categories (Automation AI, Search AI, Agent AI), and a search bar for quick feature discovery.  
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md)
 
-### Admin Console
+<font size="4">Admin Console</font>
 
-#### SSO Compatibility Improvement
+**SSO Compatibility Improvement**
 
 The Platform has introduced a new configuration option to enhance Single Sign-On (SSO) compatibility and resolve authentication issues caused by the RequestedAuthnContext parameter in SAML requests. This ensures seamless integration with various identity providers, including Azure AD.  
 [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md#saml)
@@ -173,9 +173,9 @@ The Platform has introduced a new configuration option to enhance Single Sign-On
 
 This update includes enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Voice Gateway (v0.9.3-8)
+<font size="4">Voice Gateway (v0.9.3-8)</font>
 
-#### Enhanced Diagnostics for Comprehensive Participant Tracking and Quality Metrics
+**Enhanced Diagnostics for Comprehensive Participant Tracking and Quality Metrics**
 
 The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
 
@@ -187,21 +187,21 @@ The Agents tab provides Agents and Supervisors with comprehensive call analytics
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Azure OpenAI GPT-4o Mini and OpenAI GPT-4o Mini Support
+**Azure OpenAI GPT-4o Mini and OpenAI GPT-4o Mini Support**
 
 The Platform now supports the GPT-4o mini model for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-supported-features) and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-supported-features) features. The model provides similar responses to GPT-4o at a lower cost and latency, balancing performance and efficiency for real-time applications. The integration does not include system prompts, but it can be used with custom prompts.
 
-### Getting Started
+<font size="4">Getting Started</font>
 
-#### Optimized Workspace Switching Experience
+**Optimized Workspace Switching Experience**
 
 The "Browse Workspace" feature has been optimized for a faster and more responsive user experience. Users can easily switch between their existing workspaces, which they are part of, or browse for other workspaces in the same domain and request access to a workspace. [Learn more :octicons-arrow-right-24:](../../getting-started/accessing-the-platform.md#join-a-workspace)
 
-### Flows and Channels
+<font size="4">Flows and Channels</font>
 
-#### Voice-to-Chat Deflection
+**Voice-to-Chat Deflection**
 
 The new Voice-to-Chat Deflection feature allows platform users to create conversation flows that seamlessly transition from voice interactions to chat-based interactions within the same context. This feature works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).
 
@@ -221,9 +221,9 @@ Backward compatibility:
 
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md#connections-properties)
 
-### Voice Gateway (v0.9.3-8)
+<font size="4">Voice Gateway (v0.9.3-8)</font>
 
-#### Spanish Language Support for ElevenLabs Text-to-Speech
+**Spanish Language Support for ElevenLabs Text-to-Speech**
 
 Added Spanish language support through ElevenLabs Text-to-Speech integration. This enhancement expands our language capabilities and provides users with high-quality Spanish voice synthesis options.
 
@@ -238,7 +238,7 @@ Voice Library Expansion
 * Added comprehensive Spanish/Latin American voice portfolio
 * All ElevenLabs Spanish voices are now available in the voice selection dropdown
 
-#### Voicemail Notification & Recording and Call Metadata Using the 'Utility’ Function
+**Voicemail Notification & Recording and Call Metadata Using the 'Utility’ Function**
 
 A voicemail notification can be sent using the `voiceutils`, enabling automated customer notifications for voicemail events.
 
@@ -249,15 +249,15 @@ A voicemail notification can be sent using the `voiceutils`, enabling automated 
   Format: `https://your-domain/endpoint`
 * **metaInfo**: Customizable metadata included in notifications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions.md#voicemails)
 
-#### Voicemail Recording API
+**Voicemail Recording API**
 
 A new public API endpoint has been introduced to retrieve voicemail recordings. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/fetch-voicemail-recording.md)
 
-#### Simplified Parameter Updates for ASR/TTS Configuration
+**Simplified Parameter Updates for ASR/TTS Configuration**
 
 When modifying language settings or ASR/TTS parameters in Call Control Parameters, users can now specify the fields to be updated using the minimal required parameters. The system retains all existing parameters. This simplified approach applies to Node-Level and Channel-Level Call Control Parameters, reducing redundancy and streamlining the configuration process. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#channel-level-call-control)
 
-#### Improved Audio Handling During Hold State
+**Improved Audio Handling During Hold State**
 
 This update optimizes audio processing and storage during hold periods. The existing behavior remains unchanged for Consult calls, Conference calls, and Multi-party interactions.
 
@@ -275,13 +275,13 @@ When a customer is on hold (self-initiated or agent-initiated):
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
 
-#### Answering Machine Detection (AMD) for Inbound Calls
+**Answering Machine Detection (AMD) for Inbound Calls**
 
 The AMD capability is extended to include inbound call detection, matching the existing functionality available for outbound calls. This feature enables the automatic detection of fax machines during inbound calls.
 
 The AMD detection can now be configured in Dialog Task (first node), Channel override templates, and Bot response configurations.
 
-#### Recording Control for Outbound Calls
+**Recording Control for Outbound Calls**
 
 The Transcribe utility function now supports the following when integrated with external agent transfers via SIP Invite:
 
@@ -290,15 +290,15 @@ The Transcribe utility function now supports the following when integrated with 
 
 [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
-#### SIP Trunk Availability Monitoring
+**SIP Trunk Availability Monitoring**
 
 Added an "Option Ping" checkbox in the SIP Trunk configuration for outbound calls that enables automatic verification of SIP Termination IP address accessibility. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
-#### Show Multiple SIP URIs While Configuring SIP Trunk
+**Show Multiple SIP URIs While Configuring SIP Trunk**
 
 While configuring the SIP trunk, multiple SIP URIs are now displayed for Contact Center AI and Agent AI. Users can view the list of SIP URIs configured by the Kore backend team and copy them to update third-party applications. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
-#### Display 'Call Control' Options During the Dialing Stage
+**Display 'Call Control' Options During the Dialing Stage**
 
 The Keypad and Mute options are accessible even when a call is being dialed. This enhancement ensures uninterrupted user interaction with IVR systems, even if the CALL_CONNECTED event and 200 OK status are not received from the AudioCodes SBC.
 
@@ -310,7 +310,7 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
 
-#### Audit Log for SIP Trunk Configuration Changes
+**Audit Log for SIP Trunk Configuration Changes**
 
 An audit log for all SIP Trunk configuration changes is maintained. This feature enables developers and administrators to track modifications, including who made the change and when.
 
@@ -322,9 +322,9 @@ An audit log for all SIP Trunk configuration changes is maintained. This feature
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Support for Provider's New LLM in the Out-of-box Integration Framework 
+**Support for Provider's New LLM in the Out-of-box Integration Framework**
 
 With this update, platform users can leverage the latest LLMs as soon as they become available. The XO Platform now enables the immediate addition of new language models as system models within the out-of-box Pre-built Integration framework.
 
@@ -336,17 +336,16 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#providers-new-llm-integration)
 
-
-#### Answer Generation Guardrails
+**Answer Generation Guardrails**
 
 The platform now supports answer generation guardrails to ensure the safety and appropriateness of answers generated by LLMs. Input guardrails check the user input, and Output guardrails verify the generated answer prior to sharing it with users.
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
 
 
-### Getting Started
+<font size="4">Getting Started</font>
 
-#### Simplified Onboarding Journey and Customizable App Icons 
+**Simplified Onboarding Journey and Customizable App Icons** 
 
 The XO Platform now offers a streamlined onboarding experience with simplified product selection, an improved signup flow, and an easy-to-follow Quick Start & Setup Guide. These changes help platform users get started faster, focus on what matters, and see value sooner.
 
@@ -354,9 +353,9 @@ In addition, the platform allows users to personalize their app icons. They can 
 
 [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md)
 
-### Billing & Payments
+<font size="4">Billing & Payments</font>
 
-#### Usage Trends Enhancements for Improved Billing Insights
+**Usage Trends Enhancements for Improved Billing Insights**
 
 The Usage Trends section now includes a new Billing Session Widget. This widget provides key metrics to help app users easily understand and manage their apps’ usage.
 
@@ -376,9 +375,9 @@ Metrics tracked
 
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md#usage-trends)
 
-### Kore Voice Gateway (v0.9.3-1)
+<font size="4">Kore Voice Gateway (v0.9.3-1)</font>
 
-#### Audit Log for 'SIP Trunk Configuration' Changes and Proper Failure Reasons
+**Audit Log for 'SIP Trunk Configuration' Changes and Proper Failure Reasons**
 
 The audit logs now record the following information when the SIP trunk configuration is updated.
 
@@ -387,11 +386,11 @@ The audit logs now record the following information when the SIP trunk configura
 
 Whenever a SIP Trunk or Phone Number configuration fails—whether during the setup of a new one or deletion of an existing one—the system displays the relevant failure reasons.
 
-#### Mask PII Data in Debug Logs
+**Mask PII Data in Debug Logs**
 
 The user input's Personal Identifiable Information (PII) data will be masked in the debug logs.
 
-### General Availability of a Key Feature
+<font size="4">General Availability of a Key Feature</font>
 
 We are announcing the general availability (GA) of the [DialogGPT Module](./../../generative-ai-tools/dialog-gpt.md) to all our users. 
 
@@ -411,9 +410,9 @@ This update includes only bug fixes.
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Enhanced Usage Logs for Guardrails
+**Enhanced Usage Logs for Guardrails**
 
 The Usage Logs now provide more comprehensive insights into guardrails performance and token consumption. These insights enable platform users to better track and analyze the effectiveness of their configured guardrails, identify patterns in breaches, optimize costs, and streamline the debugging process.
 
@@ -427,14 +426,15 @@ Key enhancements
 [Learn more :octicons-arrow-right-24:](../../analytics/genai-analytics/llm-usage-logs.md)
 
 
-#### Optimized Conversation Context Management
+**Optimized Conversation Context Management**
 
 The platform has introduced a Redis-based caching solution to significantly improve conversation context management. This enhancement optimizes the storage and retrieval of conversation history for LLM interactions, reducing latency and resource usage while maintaining context integrity.
 
 
-### Admin Console
+<font size="4">Admin Console</font>
 
-#### Enhanced Get Bots API
+**Enhanced Get Bots API**  
+
 The Get Bots API now includes crucial authentication and security metadata for each bot, enabling better management and auditing.
 
 Key updates
@@ -450,10 +450,11 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../../apis/automation/get-bots.md)
 
-### App Settings
+<font size="4">App Settings</font>
 
 
-#### Auto-Save for App Profile Settings
+**Auto-Save for App Profile Settings**  
+
 The platform now ensures consistent Auto-Save behavior across all configurations in the App Profile menu of the App Settings page. This update aligns the App Settings page with other areas of the platform, such as the Property Panel and NLP Training Configurations, offering users a seamless and intuitive experience.
 
 Key updates
@@ -466,9 +467,10 @@ Key updates
 [Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md)
 
 
-### App Language
+<font size="4">App Language</font>
 
-#### Japanese and Korean Language Support in the App (Beta)
+**Japanese and Korean Language Support in the App (Beta)**  
+
 The platform has enabled Japanese and Korean language selection for the App, allowing platform users to access the app in their native language.
 
 Key updates
@@ -501,9 +503,9 @@ This update includes bug fixes.
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Zero-Shot Enhancements
+**Zero-Shot Enhancements**
 
 The Zero-Shot intent detection model has been significantly enhanced to improve contextual understanding and intent-matching accuracy, addressing challenges related to large intent sets and false positives. 
 
@@ -518,14 +520,14 @@ Key Updates
 These enhancements significantly improve the Zero-Shot model's ability to accurately identify intents, particularly in complex or nuanced conversational scenarios, while maintaining compatibility with existing configurations.  
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#zero-shot-ml-model)
 
-#### Rephrase User Query feature is now extended to Search AI
+**Rephrase User Query feature is now extended to Search AI**
 
 The platform now supports contextual rephrasing of user input for Search AI. The feature is available using the XO GPT model.  
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-user-query)
 
-### Bot Admin Console
+<font size="4">Bot Admin Console</font>
 
-#### Consolidated Billing Session Widget
+**Consolidated Billing Session Widget**
 
 The Bot Admin Console now includes a Billing Session Widget, providing admins with a consolidated view of key billing metrics across all apps in their workspace. This graphical widget displays:
 
@@ -535,9 +537,9 @@ The Bot Admin Console now includes a Billing Session Widget, providing admins wi
 
 [Learn more :octicons-arrow-right-24:](../../administration/billing.md#usage)
 
-### App Settings
+<font size="4">App Settings</font>
 
-#### Change Log Improvements: Module Field and Detailed Views
+**Change Log Improvements: Module Field and Detailed Views**
 
 The Change Logs feature has been updated to provide better context and more detailed information about configuration changes made within XO 11.
 
@@ -564,9 +566,9 @@ This update includes bug fixes.
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### Amazon Bedrock Integration
+**Amazon Bedrock Integration**
 
 XO Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the XO Platform. The users can create custom prompts for their specific use cases and use the connected models across all Co-Pilot and Dynamic Conversations features. Note that while Amazon Bedrock is available as an OOB integration, XO Platform does not provide any system prompts or templates. Users can only make use of the model with the help of custom prompts.
 
@@ -592,9 +594,9 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#amazon-bedrock-llm-integration-framework)
 
-### Channels
+<font size="4">Channels</font>
 
-#### Netcore WhatsApp Business Integration
+**Netcore WhatsApp Business Integration**
 
 The Platform now supports WhatsApp business messaging using Netcore as a new channel. This integration enables businesses to connect their WhatsApp Business account through Netcore to send text, media, and interactive messages using Virtual Assistants.
 
@@ -606,9 +608,9 @@ Key features:
 
 * Secure Interactions: Built-in end-to-end encryption for secure message delivery.
 
-#### Email Management Enhancements
+**Email Management Enhancements**
 
-##### Domain Configuration
+ **Domain Configuration**
 
 The enhanced email configuration options allow users to configure both Kore and custom domain email addresses to maintain brand consistency:
 
@@ -620,7 +622,7 @@ Key updates:
  
 * Attach experience flows to specific addresses.
 
-##### Email Blacklisting
+ **Email Blacklisting**
 
 The new Email Blacklist option helps protect your email reputation with administrator controls.
 
@@ -634,9 +636,9 @@ Key features:
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
-### Web SDK
+<font size="4">Web SDK</font>
 
-#### Webchat Theme Enhancement
+**Webchat Theme Enhancement**
 
 The XO Platform's Webchat interface now offers enhanced theme management capabilities. The users can preview themes before applying them and customize them to match their brand requirements.
 
@@ -660,8 +662,9 @@ Backward compatibility:
 
 This update include enhancement and bug fixes. The key enhancement included in this release is summarized below.
 
-### Bot Admin Console
-#### Enhanced Audit Report
+<font size="4">Bot Admin Console</font>
+
+**Enhanced Audit Report**
 
 The Audit Report is enhanced to provide better user tracking and accountability. A user email column is added to the audit logs table along with the existing user name as a unique identifier and is also included in the exported audit report. Column names are updated for consistency across the UI and exported files. These enhancements allow for more precise identification of users who made changes, improving traceability and simplifying troubleshooting processes.
 
@@ -677,9 +680,9 @@ Backward compatibility: User email will be available only for new audit entries,
 
 This update includes enhancements and bug fixes.
 
-### LLM & Generative AI
+<font size="4">LLM & Generative AI</font>
 
-#### **Dynamic Variables for LLM Integration** 
+**Dynamic Variables for LLM Integration** 
 
 XO Platform now supports dynamic variables for integration with Language Models. It allows platform users to use content, context, and environment variables when configuring system and custom LLMs. It helps create more adaptable and secure virtual assistants that can easily adjust to different needs and settings.
 
@@ -699,7 +702,7 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/models-library.md#llm-integration-using-dynamic-variables)
 
-#### **Enhanced Guardrails Framework for GenAI**
+**Enhanced Guardrails Framework for GenAI**
 
 This update significantly improves the Guardrails framework, enhancing safety and reliability in GenAI deployments. With optimized screening, better reporting, and broader LLM support, platform users can create more secure and effective AI solutions while improving overall system performance.
 
@@ -723,17 +726,17 @@ Backward compatibility:
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/guardrails.md)
 
-#### **Enhanced PII Protection in LLM Interactions**
+**Enhanced PII Protection in LLM Interactions**
 
 XO Platform now protects sensitive data in LLM calls by adding placeholders. For example, phone numbers are replaced with "[Phone Number]". This enhances privacy and security, reducing the risk of exposing personal information to external LLM services.
 
-#### **Terminology Updates for Improved Clarity**
+**Terminology Updates for Improved Clarity**
 
 This update includes an important terminology change on the platform:
 
 * Zero-shot Model Naming Consistency: Standardized the name to 'Zero-shot Model' across the platform, eliminating confusion caused by inconsistent naming; for example, ‘Zero-shot Model with OpenAI’ was used under ML > Network Type.
 
-### Getting Started
+<font size="4">Getting Started</font>
 
 This update includes significant enhancements to the initial user experience, focusing on three key areas: onboarding, signup process, and workspace management. These enhancements make it easier for users to navigate through the initial setup of their Apps, ensuring a smoother start with our platform's AI-powered features.
 
@@ -754,9 +757,9 @@ Workspace Invite UI:
 * Redesigned for a more intuitive and efficient experience.
 * Modern, cohesive look aligned with overall platform design.
 
-### Channels
+<font size="4">Channels</font>
 
-#### **Sinch Conversational API Integration**
+**Sinch Conversational API Integration**
 
 XO Platform now supports **Sinch** as a new channel. Sinch offers a new omnichannel integration that allows developers to enable virtual assistant interactions across multiple channels, eliminating the need to set up and manage each channel individually.
 
@@ -776,9 +779,9 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-sinch-channel.md)
 
-### Web SDK
+<font size="4">Web SDK</font>
 
-#### **Enhanced Webchat Configuration - From SDK to UI**
+**Enhanced Webchat Configuration - From SDK to UI**
 
 Previously, configuring certain Webchat features required SDK modifications. This update brings key SDK Webchat functionalities into the user interface, allowing for a more unified and user-friendly approach to bot customization.
 
@@ -800,9 +803,9 @@ Backward compatibility:
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-web-mobile-client.md#virtual-assistant-theme--design)
 
-### App Settings
+<font size="4">App Settings</font>
 
-#### **Change Default App Language via API**
+**Change Default App Language via API**
 
 The XO platform now allows users to update the default language of their existing apps using a public API, providing greater flexibility and control over their chatbot configurations.
 
@@ -824,9 +827,9 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../apis/automation/change-default-language.md)
 
-### Marketplace
+<font size="4">Marketplace</font>
 
-#### **Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**
+**Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**
 The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node-v2.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
 
 <hr>
@@ -846,18 +849,20 @@ This update includes bug fixes.
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 
-### LLM and Generative AI
-#### Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
+<font size="4">LLM and Generative AI</font>
+
+**Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**
 The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
 
 * GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
 
-#### Apps Versioning for GenAI & LLM
+**Apps Versioning for GenAI & LLM**
 The platform now includes GenAI and LLM settings in app versioning, including Model Integrations, Custom Prompts, Feature & Model Prompt mapping, and Safeguards. It allows platform users to manage and track GenAI & LLM configuration changes across different bot/app versions, enhancing control and customization of GenAI features. 
 
-### Analytics
-#### Enhanced Rate Limit API Response 
+<font size="4">Analytics</font>
+
+**Enhanced Rate Limit API Response** 
 This update helps API users understand which specific rate limit they've hit, allowing them to plan their request strategies more effectively and reduce errors in API usage.
 
 Specific error messages:
@@ -867,9 +872,9 @@ Specific error messages:
 
 [Learn more :octicons-arrow-right-24:](../../apis/automation/rate-limit.md){:target="_blank"}
 
-### App Management
+<font size="4">App Management</font>
 
-#### App Deletion Feature Update 
+**App Deletion Feature Update** 
 
 The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycles while maintaining data security and user accountability.
 
@@ -903,8 +908,9 @@ Key updates:
 [Learn more :octicons-arrow-right-24:](../../app-settings/delete-app.md){:target="_blank"}
 
 
-### Channels
-#### Customizable VXML Error Threshold in IVR Voice Call Properties
+<font size="4">Channels</font>
+
+**Customizable VXML Error Threshold in IVR Voice Call Properties**
 This update removes the restriction of having a fixed VXML Error Threshold at the environment level that applies to all bots, with no option for customization. Platform users now have the flexibility to set the number of retries at the bot level, tailoring it to the specific needs of their system.
 
 Key updates:
@@ -920,8 +926,7 @@ Backward Compatibility:
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#voice-call-settings-field-reference){:target="_blank"}
     
 
-
-#### Update or Delete Delivered Bot Messages in MS Teams
+**Update or Delete Delivered Bot Messages in MS Teams**
 
 Bot messages in Microsoft Teams can now be updated or deleted even after they have been delivered to users. This feature provides greater flexibility and control, allowing platform users to disable or remove template messages after a user has taken action on them.
 
@@ -939,16 +944,16 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#ms-teams-chat-features){:target="_blank"}
 
-### Getting Started
+<font size="4">Getting Started</font>
 
-#### Enhanced Workspace Switcher Experience 
+**Enhanced Workspace Switcher Experience**
 
 The enhanced Workspace Switcher has a more cohesive, modern experience, making workspace switching more intuitive and efficient for platform users.  
 <img src="../images/workspace_switcher.png" alt="workspace_switcher" title="workspace_switcher" style="border: 1px solid gray; zoom:100%;">
 
 [Learn more :octicons-arrow-right-24:](../../getting-started/accessing-the-platform.md#using-workspace){:target="_blank"}
 
-#### New Signup Journey Update for Custom Setup
+**New Signup Journey Update for Custom Setup**
 
 This update helps bridge the gap in the new user Signing up using the Custom Onboarding journey for both Automation AI and Contact Center AI. This Custom Onboarding Journey now automatically triggers a new App creation process, improving the overall onboarding experience.
 
@@ -973,9 +978,9 @@ Key updates:
 
 This update includes bug fixes and minor enhancements.
 
-### LLM and Generative AI
+<font size="4">LLM and Generative AI</font>
 
-#### Multi-language Support for System and Custom LLMs
+**Multi-language Support for System and Custom LLMs**
 
 The platform now supports all bot languages for both system and custom LLMs.
 
@@ -992,7 +997,7 @@ Key benefits:
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/introduction.md){:target="_blank"}
 
-#### Custom LLM Framework Update for GenAI Node
+**Custom LLM Framework Update for GenAI Node**
 
 The platform has significantly enhanced the GenAI Node’s custom prompt creation flow. It now supports dynamic variables in the prompt definition, gives full control over the prompt structure, and dynamically defines prompt definitions using JavaScript. These updates provide greater flexibility, better conversation context control, and more sophisticated prompt engineering capabilities, allowing platform users to create more advanced and tailored GenAI applications with improved custom LLM integrations.
 
@@ -1005,9 +1010,9 @@ Key updates:
 [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/genai-node-v2.md){:target="_blank"}
 
 
-### App Settings
+<font size="4">App Settings</font>
 
-#### Update App Name Post-Publication
+**Update App Name Post-Publication**
 
 Administrators or workspace owners can now modify an app’s name even after publishing it. This helps keep app names current and relevant without disrupting system operations or user experiences.
 
@@ -1019,9 +1024,9 @@ Key updates:
 
 [Learn more :octicons-arrow-right-24:](../../app-settings/app-profile.md#app-profile){:target="_blank"}
 
-### Channels
+<font size="4">Channels</font>
 
-#### MS Teams Modal Dialog Support
+**MS Teams Modal Dialog Support**
 
 The platform now supports Microsoft Teams Modal Dialogs, enhancing the interactive capabilities of virtual assistants deployed on the MS Teams channel. This support allows platform users to handle the 'Invoke' action-type messages used by MS Teams for Modal Dialogs.
 
@@ -1044,9 +1049,9 @@ Backward compatibility:
 [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md){:target="_blank"}
 
 
-### Admin Console
+<font size="4">Admin Console</font>
 
-#### IP Address Restriction Enhancement
+**IP Address Restriction Enhancement**
 
 The Admin Console now supports Regex patterns for IP address restrictions. The regex support makes it easier for administrators to manage access across extensive IP ranges.
 
@@ -1071,16 +1076,17 @@ Key benefits:
 
 Key features and enhancements included in this release are summarized below.
 
-### LLM & Generative AI Framework
+<font size="4">LLM & Generative AI Framework</font>
 
-#### OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features
+**OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**
 The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"}.
 
 * GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o is an advanced multimodal model that can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
 
-### Admin Console
-#### Usage Information for Enterprise Accounts
+<font size="4">Admin Console</font>
+
+**Usage Information for Enterprise Accounts**
 
 Enterprise users can now view consolidated usage data for all their Bots and Apps in the Bot Admin Console. 
 
@@ -1093,9 +1099,9 @@ Key updates:
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/plan-and-usage/usage-plans.md){:target="_blank"}
 
 
-### Deploy Management
+<font size="4">Deploy Management</font>
 
-#### Import, Export, and Publish GenAI and LLM Settings
+**Import, Export, and Publish GenAI and LLM Settings**
 
 A new 'GenAI and LLM' option is now available under the 'Settings' section for Import, Export, and Publish operations. 
 
@@ -1135,19 +1141,19 @@ Backward compatibility:
 These changes aim to streamline the deployment and management of GenAI and LLM features across multiple bots and ensure the seamless operation of runtime features for end-users. [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md){:target="_blank"}
 
 
-### Channels
+<font size="4">Channels</font>
 
-#### SMS Channel Configuration
+ **SMS Channel Configuration**
 
 The Platform now offers SMS channel configuration for various service providers. The SMS Channel enables customer communication via text messages. It supports inbound, outbound, or bidirectional messaging on the digital platform. This addition empowers businesses to conduct SMS campaigns and expand their customer communication options. [Learn more :octicons-arrow-right-24:](../../channels/add-sms-channel.md){:target="_blank"}
 
-#### Instagram Channel Support
+**Instagram Channel Support**
 
 The XO Platform has added Instagram as a new channel option. Users can enable and deploy their virtual assistants on Instagram. [Learn more :octicons-arrow-right-24:](../../channels/add-instagram-channel.md){:target="_blank"}
 
-### APIs
+<font size="4">APIs</font>
 
-#### SDK Push Notifications Management APIs
+**SDK Push Notifications Management APIs**
 
 The platform has introduced a new set of SDK Notifications APIs to enhance control over push notifications for mobile devices using the Web/Mobile SDK channel.
 
@@ -1167,7 +1173,7 @@ Key benefits:
 [Learn more :octicons-arrow-right-24:](./../../apis/automation/manage-sdk-push-notifications.md){:target="_blank"}
 
 
-#### Public API for SSO Configuration Management 
+**Public API for SSO Configuration Management**
 
 The platform has introduced public APIs for managing Single Sign-On (SSO) configurations. This new API complements existing bot creation and publishing APIs, allowing for a more comprehensive automation of account setup processes. It significantly enhances the platform's capabilities for enterprise customers who require frequent audits or automated deployments.
 
@@ -1203,16 +1209,16 @@ This update includes bug fixes.
 
 <u> Patch Release </u>
 
-### LLM & Generative AI Framework
+<font size="4">LLM & Generative AI Framework</font>
 
-#### Free LLM Tokens for Generative AI Features
+**Free LLM Tokens for Generative AI Features**
 
 Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to AI-driven tools like Co-pilot and dynamic conversations without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. This is available only for the apps created in the Standard workspaces/accounts.  
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/llm-tokens.md){:target="_blank"}
 
-### Channels
+<font size="4">Channels</font>
 
-#### Discontinuation of the Google Business Messages Channel
+**Discontinuation of the Google Business Messages Channel**
 Google announced the discontinuation of the Google Business Messages channel from July 31, 2024. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there.  
 For more details, refer to the [Google announcement](https://developers.google.com/business-communications/business-messages/resources/release-notes/update-on-gbm?hl=en){:target="_blank"}.
 
@@ -1232,9 +1238,9 @@ This update includes bug fixes.
 
 Key features and enhancements included in this release are summarized below.
 
-### LLM & Generative AI Framework
+<font size="4">LLM & Generative AI Framework</font>
 
-#### Improved Discoverability of Generative AI Tools
+**Improved Discoverability of Generative AI Tools**
 
 The platform has made it easier to discover and manage the Generative AI capabilities across products. The new Generative AI menu will be available in the primary navigation bar of Automation AI, Search AI, and Agent AI products. 
 
@@ -1250,14 +1256,14 @@ Key updates include:
 * Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.  
  <img src="../images/genai-product-level-filters.png" alt="Filter by Product" title="Filter by Product" style="border: 1px solid gray; zoom:100%;"> 
 
-#### Introducing Custom Prompts for Pre-built Models
+**Introducing Custom Prompts for Pre-built Models**
 
 The platform now supports custom prompts for the prebuilt LLM integrations. This will be in addition to the current support of default prompts. This new capability delivers a consistent prompt engineering experience across custom and pre-built models, making crafting the prompts for various features easy.
 <img src="../images/custom-prompt-for-prebuilt-models.png" alt="Custom Prompts" title="Custom Prompts" style="border: 1px solid gray; zoom:100%;"> 
 
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md){:target="_blank"}
 
-#### Answers Module Details in the Debug Logs
+**Answers Module Details in the Debug Logs**
 
 The Debug Logs presented while testing the app now include detailed logs for the responses from the Search AI product. This includes information on the various stages, response times, and LLM outputs. This enhancement streamlines testing, improves debugging and provides deeper insights into the Search AI performance.  
 <img src="../images/dubug-logs-in-answers.png" alt="Debug Logs" title="Debug Logs" style="border: 1px solid gray; zoom:100%;"> 
@@ -1280,29 +1286,29 @@ This update includes bug fixes.
 
 Key features and enhancements included in this release are summarized below.
 
-### LLM and Generative AI
+<font size="4">LLM and Generative AI</font>
     
-#### Custom LLM Integration Support for Rephrase Dialog Responses  
+**Custom LLM Integration Support for Rephrase Dialog Responses** 
 
 Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
 [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses){:target="_blank"}
 
-#### Custom LLM Integration Support for Answer Generation 
+**Custom LLM Integration Support for Answer Generation**
 
 In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation){:target="_blank"}
 
-#### Kore.ai XO GPT Supports Vector Generation and Answer Generation
+**Kore.ai XO GPT Supports Vector Generation and Answer Generation**
 
 Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
 
-### Flows & Channels
+<font size="4">Flows & Channels</font>
 
-#### Updated Default Start Flow
+**Updated Default Start Flow**
 
 All fields of the default Start Flows can now be edited except the associated channel.  
 [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#the-start-flows){:target="_blank"}
 
-#### Support for Thread Handling for Virtual Assistants in Slack Channels
+**Support for Thread Handling for Virtual Assistants in Slack Channels**
 
 The Platform now offers native support for threaded conversations in the Slack channel. Users can initiate a new thread from any message within a Slack channel or direct message group.
 
