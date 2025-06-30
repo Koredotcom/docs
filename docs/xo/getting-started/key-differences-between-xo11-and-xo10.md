@@ -140,6 +140,5 @@ The platform offers different plans, and you can choose the plan for each produc
 
 ##### Related Links
 
-* [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Current Limitations](../release-notes/current-limitations.md)
+* [What's New in AI for Service (XO v11)](./whats-new-in-xo-platform.md)
 * [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)

@@ -57,7 +57,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Social Channels
 
-|[Facebook<br>Messenger](./add-facebook-messenger-channel.md)     <br> [![](./images/logo26-fb-messenger.png)](./add-facebook-messenger-channel.md)|[Instagram](./add-instagram-channel.md)   <br>  <br> [![](./images/insta-logo.png)](./add-instagram-channel.md) |[Line](./add-line-messenger-channel.md) <br>  <br>   [![](./images/logo27-line.png)](./add-line-messenger-channel.md)||[Twitter](./add-twitter-channel.md)<br><br>[![](./images/logo30-twitter.png)](./add-twitter-channel.md)|
+|[Facebook<br>Messenger](./add-facebook-messenger-channel.md)     <br> [![](./images/logo26-fb-messenger.png)](./add-facebook-messenger-channel.md)|[Instagram](./add-instagram-channel.md)   <br>  <br> [![](./images/insta-logo.png)](./add-instagram-channel.md)|[Line](./add-line-messenger-channel.md) <br>  <br>   [![](./images/logo27-line.png)](./add-line-messenger-channel.md) |[Twitter](./add-twitter-channel.md)<br><br>[![](./images/logo30-twitter.png)](./add-twitter-channel.md)|
 |:--------:|:----:|:----:|:----:|:----:|
 [**Telegram**](./add-telegram-channel.md)   <br>  <br> [![](./images/logo29-telegram.png)](./add-telegram-channel.md) |[**WeChat**](./add-wechat-channel.md)   <br> <br>  [![](./images/logo31-we-chat.png)](./add-wechat-channel.md)| 
 
