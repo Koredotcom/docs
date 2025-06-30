@@ -884,7 +884,8 @@ Key benefits:
 
 <font size="4">Marketplace</font>
 
-**Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**
+**Deprecation of Azure OpenAI and OpenAI from Marketplace Integrations**  
+
 The Prebuilt Dialog Templates using OpenAI and Azure OpenAI are discontinued. These templates were originally provided to explore the art of possibility when LLMs were relatively new. However, they used older models that the model providers no longer support. Our customers are already exploring the full power of GenAI-powered conversational experiences using the [GenAI Node](../../automation/use-cases/dialogs/node-types/genai-node-v2.md) and [GenAI Prompt](../../automation/use-cases/dialogs/node-types/genai-prompt.md) node.
 
 <hr>
@@ -906,18 +907,21 @@ This update includes enhancements and bug fixes. Key enhancements included in th
 
 <font size="4">LLM and Generative AI</font>
 
-**Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**
+**Azure OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
+
 The Platform now supports two new Azure OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"} Features:
 
 * GPT-4 Turbo: It’s a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
 * GPT-4o: It’s the most advanced multimodal model, which can accept both text and images as input, offering improved efficiency and cost-effectiveness compared to GPT-4 Turbo.
 
-**Apps Versioning for GenAI & LLM**
+**Apps Versioning for GenAI & LLM**  
+
 The platform now includes GenAI and LLM settings in app versioning, including Model Integrations, Custom Prompts, Feature & Model Prompt mapping, and Safeguards. It allows platform users to manage and track GenAI & LLM configuration changes across different bot/app versions, enhancing control and customization of GenAI features. 
 
 <font size="4">Analytics</font>
 
-**Enhanced Rate Limit API Response** 
+**Enhanced Rate Limit API Response**  
+
 This update helps API users understand which specific rate limit they've hit, allowing them to plan their request strategies more effectively and reduce errors in API usage.
 
 Specific error messages:
@@ -965,7 +969,8 @@ Key updates:
 
 <font size="4">Channels</font>
 
-**Customizable VXML Error Threshold in IVR Voice Call Properties**
+**Customizable VXML Error Threshold in IVR Voice Call Properties**  
+
 This update removes the restriction of having a fixed VXML Error Threshold at the environment level that applies to all bots, with no option for customization. Platform users now have the flexibility to set the number of retries at the bot level, tailoring it to the specific needs of their system.
 
 Key updates:
@@ -1133,7 +1138,8 @@ Key features and enhancements included in this release are summarized below.
 
 <font size="4">LLM & Generative AI Framework</font>
 
-**OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**
+**OpenAI GPT-4 Turbo and GPT-4o Support for LLM & Generative AI Features**  
+
 The Platform now supports two new OpenAI models for various [Co-Pilot](../../generative-ai-tools/co-pilot-features.md#model-and-feature-support-matrix){:target="_blank"} and [Dynamic Conversations features](../../generative-ai-tools/dynamic-conversations-features.md#model-and-feature-support-matrix){:target="_blank"}.
 
 * GPT-4 Turbo is a high-speed, accurate model ideal for real-time applications like chatbots, virtual assistants, and content generation.
