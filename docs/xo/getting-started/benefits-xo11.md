@@ -1,4 +1,4 @@
-# Benefits of AI for Service (XO) v11
+# Benefits of AI for Service (XO v11)
 
 XO v11 represents a significant evolution in the Kore.ai platform, offering transformative benefits that address the limitations of fragmented conversational experiences while introducing cutting-edge AI capabilities. This major upgrade delivers a unified, intelligent, and collaborative platform that fundamentally enhances how organizations build, manage, and deploy conversational AI solutions.
 

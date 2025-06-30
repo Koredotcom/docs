@@ -70,7 +70,7 @@ Steps:
 4. In the **Model Configuration** section, select the **Model** that can be used to generate the embeddings.  
 The embeddings model settings will apply only to Dialogs and FAQs. For Knowledge from Search AI, the settings in the Search AI app will apply.
 5. (Optional) click Show Advanced Settings to view and adjust the Similarity Threshold and Proximity Threshold. In most cases, the default settings work fine.
-6. (Only if Knowledge from Search AI is selected in step no 3 ) Define the maximum number of chunks to be shortlisted from Search AI. These chunks will be sent to the LLM for answer generation. The default value is 5. Click "Go to Search AI" to access the Search AI retrieval settings.
+6. (Only if Knowledge from Search AI is selected in step no 2 ) Define the maximum number of chunks to be shortlisted from Search AI. These chunks will be sent to the LLM for answer generation. The default value is 5. Click "Go to Search AI" to access the Search AI retrieval settings.
 7. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which will determine the user intent and the execution plan.
 7. (Optional) click Show Advanced Settings to view and set the Temperature, Max Tokens, and Conversation History Length. In most cases, the default settings work fine.
 8. Click **Enable DialogGPT**. The DialogGPT home page is displayed.  

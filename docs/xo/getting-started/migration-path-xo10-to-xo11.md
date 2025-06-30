@@ -77,6 +77,6 @@ When the user initiates migration, the key components being migrated are:
 
  **Related Links**
 
-* [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Current Limitations](../release-notes/current-limitations.md)
-* [Key Differences Between XO v11 and v10](../getting-started/key-differences-between-xo11-and-xo10.md)
+* [What's New in AI for Service (XO v11)](./whats-new-in-xo-platform.md)
+* [Current Limitations](../getting-started/whats-new-in-xo-platform.md#xo-v11-limitations)
+* [Key UI Differences Between XO v11 and v10](../getting-started/key-differences-between-xo11-and-xo10.md)
