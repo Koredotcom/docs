@@ -32,7 +32,7 @@ Key Capabilities
 
 DialogGPT and enhanced RAG (Retrieval-Augmented Generation) capabilities enable zero-training intent detection, contextual understanding, and intelligent conversation management. The new Agent Node with tool calling brings sophisticated LLM-powered interactions that can dynamically handle complex tasks and integrate with external systems.
 
-**DialogGPT**
+<font size="4">DialogGPT</font>
 
 DialogGPT introduces a new paradigm shift in Intent Detection and  Conversation Management. It addresses these challenges by leveraging advanced techniques like embedding-based retrieval combined with Generative AI models and improving intent detection and conversation handling with zero training.
 
