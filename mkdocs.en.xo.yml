@@ -148,6 +148,7 @@ nav:
             - Set Queue: flows/node-types/set-queue.md
             - Split: flows/node-types/split.md
             - Script Nodes, Call Flows, Agent Utils, and userSessionUtils: flows/node-types/utils.md
+        - Automation Routing: flows/automation-routing.md
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:

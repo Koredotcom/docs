@@ -63,6 +63,22 @@ Steps to enable repeat notifications for incoming interactions:
 
 3. Click **Save** to update the notification settings.
 
+#### Incoming Call Notification From Speaker When Headphones Are Connected
+
+Agents can receive incoming calls and interaction notification sounds through their system speakers or monitor, even when a headset is connected. The conversation audio continues through the headset or default system audio device, ensuring clear separation between alert sounds and ongoing communication.
+
+This option appears only when the ‘Incoming Interactions’ permission is enabled. Learn more.
+
+It affects notifications for voice calls, consult calls, chats, and other events under the Incoming Interactions category.
+
+When enabled, the notification sound plays on both the system speaker and the headset.  
+<img src="../images/notification-enabled.png" alt="Enabled Notification" title="Enabled Notification" style="border: 1px solid gray; zoom:70%;">
+
+When disabled (default), the sound follows the default audio route (usually the headset).  
+<img src="../images/disabled-default.png" alt="Disbaled Notification" title="Disabled Notification" style="border: 1px solid gray; zoom:70%;">
+
+Users can customize this setting based on their preference for alert audibility.
+
 ## User Diagnostics
 
 User diagnostics systematically assesses and analyzes network connectivity and device permissions to identify issues, optimize service delivery, and enhance user satisfaction. Using real-time monitoring, this tool helps resolve problems efficiently, improving agent performance, and ensuring a seamless customer experience.
