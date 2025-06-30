@@ -2,6 +2,61 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.15.0 June 30, 2025
+
+<u> Minor Release </u>
+
+<font size="4">Audit Logs</font>
+
+**Audit Logs for Agent Profile Updates**
+
+Enhanced the User Management audit logs to capture all agent profile-related actions, including create, update, delete, activate/deactivate, and role or privilege changes. Each log entry includes a timestamp, the user who performed the action, and the target user's details. The system also logs failed or unauthorized attempts. These updates improve traceability, support compliance, and ensure complete visibility into user management activities. Learn more.
+
+**App-to-App Communication Enabled for New Apps**
+
+App-to-app communication is now supported for newly created apps, enabling one app to call flows, dialogs, automation nodes, and script nodes from another. This allows the reuse of logic, such as queue or skill assignments, using functions like setQueue() or setSkill() across apps. They can be referenced from dialogs or scripts when designing flows in a different app.
+
+<font size="4">Getting Started</font>
+
+**Removal of auto purchase of Phone number in the App creation process**
+
+The automatic phone number provisioning feature, introduced during app creation, has been removed. Users will now have the flexibility to manually provide a phone number for voice channel testing if needed via the channel configuration section.
+
+Key benefits
+
+* Improves resource efficiency by provisioning phone numbers only when needed.
+* Simplifies the onboarding experience.
+
+
+<font size="4">Channels</font>
+
+**Retirement of Skype**
+
+Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform. 
+
+<font size="4">Rebranding</font>
+
+**Renaming of Platform Components**
+
+As part of the revised product strategy, the XO Platform is being repositioned as AI for Service, aligning it with the broader product suite (AI for Work and AI for Process). This change accurately reflects the platform’s core value proposition and enhances brand consistency across all products.
+
+<font size="4">APIs</font>
+
+**Support for Proactive Notifications for WhatsApp via Public API**
+
+The Proactive Notifications feature for WhatsApp has been enhanced to support multi-user messaging using a public API, enabling businesses to send outbound messages to multiple recipients simultaneously.
+
+Key features
+
+* Multi-user messaging in a single API call.
+* JWT-based authentication for secure access.
+* Per-client rate limiting for system stability.
+* Granular logging for improved tracking and debugging.
+
+
+
+<hr>
+
 ## v11.14.1 June 14, 2025
 
 <u> Patch Release </u>

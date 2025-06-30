@@ -444,7 +444,7 @@ Follow these steps:
 
 
 
-1. Log in to Platform and navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** > **Salesforce**.
+1. Log in to Platform and navigate to App Settings > Integrations > Agent Transfer > Chat > Salesforce.
 2. On the Configurations tab, select **Messaging for In-App and Web(MIAW)** and enter the following credentials for the Salesforce Agent:
     * **Organization ID**: The Organization ID for Salesforce, copied before.
     * **Organization Base URL**: The Deployment ID for Salesforce, copied before.
@@ -457,7 +457,7 @@ Follow these steps:
     <img src="../images/miaw-metadata9.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
 
-3. Click **Save**.
+3. Click Save.
 4. Go to the Dialogflow and insert a Script Node before the Agent Transfer Node.
 5. Use the sample script to configure the metadata to be transferred in the key-value pair. 
 
@@ -530,17 +530,17 @@ Follow these steps:
 Follow these steps: 
 
 
-1. Navigate to **Process Automation > Flows**.
+1. Navigate to Process Automation > Flows.
 2. Locate and click the configured flow for the Messaging Channel, or create a new flow and configure it. 
    <img src="../images/miaw-metadata11.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
-3. In the Toolbox, click **New Resource**. Select the Resource Type, API Name, Data Type, and Availability Flow. Click **Done**.
+3. In the Toolbox, click New Resource. Select the Resource Type, API Name, Data Type, and Availability Flow. Click Done.
 
     !!! note
 
         Ensure the flow variable matches the API name of your custom Messaging Session field. This enables seamless metadata transfer from the Platform to Salesforce, providing agents with complete context. 
 
-4. Click **Update Records** and set the field values for the messaging session records.  
+4. Click Update Records and set the field values for the messaging session records.  
 <img src="../images/miaw-metadata4.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
-5. Save the updated record as a New version and then click **Activate**.
+5. Save the updated record as a New version and then click Activate.

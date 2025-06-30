@@ -3,6 +3,56 @@
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
 
+
+## v11.15.0 June 30, 2025
+
+<u> Minor Release </u>
+
+<font size="4">DialogGPT</font>
+
+**Configurable Search AI Retrieval Settings**
+
+DialogGPT now allows users to configure chunk limits for Search AI retrieval, controlling the number of chunks sent to the language model for response generation. This feature optimizes token consumption and response times while providing precise control over the balance between context depth and performance.
+
+**Enhanced Discoverability for Automation Node Settings**
+
+The Automation Node’s routing settings have been relocated to Flow & Channels > Automation Routing > Routing Modes for better accessibility and visibility. This streamlined navigation enables users to quickly configure key settings, including Autonomy Level (Orchestrated Autonomy or Full Autonomy), Automation AI options, Agentic App Configurations, Connection Rules, and Error Prompts.
+
+**Batch Testing Now Supports Multi-App Routing for Universal Apps**
+
+The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed. 
+
+**Enhancement of Batch Testing Public APIs to support creation and management of test suites**
+
+As part of the ongoing Batch Testing support for DialogGPT, several enhancements are being introduced to the public APIs. These changes ensure compatibility with new test formats, support for Universal Bots (Multi-App Routing), and maintain flexibility to handle both NLP-based and DialogGPT-based applications.
+
+<font size="4">Agent Transfer</font>
+
+**Salesforce MIAW Agent Integration Enhancements**
+
+The Salesforce MIAW Agent has been updated with new features to enhance live support experiences. These improvements aim to better prepare agents, empower end-users, and ensure consistent brand communication.
+
+Key enhancements
+
+* Metadata Transfer: Essential context, including usernames, conversation summaries, case IDs, and session details, is now automatically transferred from AI for Service to Salesforce during agent handoffs. This provides agents with immediate access to relevant information, reducing the need for users to repeat details and thereby accelerating issue resolution.
+
+* User-Controlled Session End: End-users can now conclude live agent sessions using a configurable keyword. This provides users with more control over their experience and helps reduce unnecessary agent occupancy.
+
+* Customizable Standard Responses: Default system messages displayed during handoffs and live chats, including wait times, agent join alerts, and session closure prompts, can now be customized. This ensures a consistent, branded experience aligned with user expectations.
+
+**User-Bot Conversation Summary for Live Agent Transfers**
+
+The Platform now enhances agent transfers by sending a conversation summary of the end-user and bot chat to the live agent during the transfer. This enhancement streamlines agent handoff by presenting a concise, GenAI-generated summary alongside the existing chat history link, eliminating the need for agents to navigate away from the chat window or open new pages to understand the conversation context.
+
+<font size="4">API</font>
+
+**Call ID Support in the getMessage API**
+
+To improve access to bot-user conversation history for voice interactions, the `getMessage` API now accepts `callId` as an optional query parameter, in addition to the existing `sessionId`. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing.
+
+
+<hr>
+
 ## v11.14.1 June 14, 2025
 
 <u> Patch Release </u>
@@ -1244,7 +1294,7 @@ Bookmarks allow users to organize and reference important information. Users can
 Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
 <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
 
-<font size="4">Additional features in XO v11
+<font size="4">Additional features in XO v11</font>
 
 **Addition of Flows**
 
