@@ -299,7 +299,7 @@ The Salesforce Agent integration supports metadata transfer for agent context, u
 
 Allow end-users to end live agent sessions using a configurable keyword set in the Script node. The platform displays this keyword during agent handoff, giving users more control over their interactions and helping reduce agent occupancy when the session is no longer needed.
 
-For example, in the following script, ““endagentchat” is the keyword displayed to the end user to end the agent session.
+For example, in the following script, “endagentchat” is the keyword displayed to the end user to end the agent session.
 
 ``` json
 let miawMetaInfo = {};
@@ -451,7 +451,7 @@ Follow these steps:
 
         !!! note
 
-            If your base URL is `koreaiinc.my.salesforce.com`, enter it as https://koreaiinc.my.salesforce-srct.com.
+            If your base URL is `koreaiinc.my.salesforce.com`, enter it as `https://koreaiinc.my.salesforce-srct.com`.
 
     * **Developer Name**: The developer's name, copied before.  
     <img src="../images/miaw-metadata9.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
