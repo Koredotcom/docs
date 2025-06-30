@@ -1119,7 +1119,7 @@ Key Benefits
 * Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
 * Improved Customer Experience: Virtual assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
 
-[Learn more :octicons-arrow-right-24:](../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
 
 
 **Enhanced Agent Node with V2 Prompt and Tool Calling**
@@ -1278,7 +1278,7 @@ For enterprise accounts having a Contact Center AI license, the product and defa
 
 The Campaigns Module is unavailable immediately after the bot-to-app upgrade. For Standard accounts, users can activate Proactive Web Campaigns by purchasing a paid Contact Center AI subscription. For Enterprise accounts,  the Campaigns Module is automatically enabled once they subscribe to the Contact Center AI product.
 
-#### 6. Addition of Agent AI
+**Addition of Agent AI**
 
 Agent AI is not available by default for standard accounts. Users must first have an Automation AI subscription, and then Agent AI can be added as a paid add-on. Users interested in only Agent AI without Automation AI must contact the sales team to initiate the process.
 
@@ -1331,7 +1331,7 @@ With the upgrade to v11, users will gain access to a new Marketplace. Here, they
 
 After upgrading to v11, a new "Setup Guide" option will be available. This feature provides a step-by-step guide to help new users quickly set up their Virtual Assistant.
 
-#### 11. **Implicit Publishing of the App**
+**Implicit Publishing of the App**
 
 During the upgrade, the bot goes through an automated publishing process:
 
