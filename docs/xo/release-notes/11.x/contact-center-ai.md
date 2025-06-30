@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.15.0 June 30, 2025
 
-<u> Minor Release </u>
+<u>Minor Release</u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
