@@ -150,7 +150,9 @@ There are approximately 25 HTTP Status codes defined by default for a VA or task
   <img src="../images/app-prof-img4-general-settings-error-messages-setup-actions.png" alt="Action on Error" title="Action on Error" style="border: 1px solid gray;zoom:50%;"/>   
 
   7. In the **Message** field (available only for the default messages), enter the text message displayed to the end-user.
+
   8. In the **Error Recurrence** field, specify the number of consecutive error codes must be returned before the action is executed. By default, the **Error Recurrence** field is set to ” 1 “.
+  
   9. Click **Add** to save and close the **Setup Error Message** dialog for your custom error message.
 
 To create a new HTTP Status code, click **Add Error Message**, define the fields for your new code as described in the preceding section, and then click **Add.**
