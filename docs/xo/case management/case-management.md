@@ -8,11 +8,11 @@ This document helps you to configure Case Management in the XO11 Platform to eff
 
 The case management dashboard provides role-specific insights to support effective operations and performance tracking across different user roles. 
 
-The following Process flow diagram describes the critical stages involved in the case management.
+The following process flow diagram describes the critical stages involved in the case management.
 
 <img src="../images/process-flow-diagram.png" alt="Process Flow" title="Process Flow" style="border: 1px solid gray;zoom:50%;"/>
 
-The following are the key components of the process flow:
+Following are the key components of the process flow:
 
 * **Customer Contact**: Customer contact to reach out for an issue that serves as the initial point of interaction. 
 
