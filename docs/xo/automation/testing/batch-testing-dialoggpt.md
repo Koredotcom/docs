@@ -109,6 +109,7 @@ Follow these steps:
     !!! Note
 
         The embedding model cannot be changed. For testing purposes, the DialogGPT embedding model is used.
+
 4. Click **Run Test** to start batch test execution. 
 5. Once a batch test is completed, the results are displayed.
 

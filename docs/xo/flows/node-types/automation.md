@@ -29,7 +29,7 @@ The Dynamic Routing maintains two key indexes:
 
 Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths. This flow leverages Agentic Apps to dynamically understand, plan, and execute actions based on user queries without relying on defined workflows. 
 It intelligently manages context, retrieves relevant information, and orchestrates multi-step tasks to deliver accurate and personalized responses.
- [Learn More](https://docs.kore.ai/agent-platform/agentic-apps/overview/).
+ [Learn More](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/overview/).
 
 ## Configure Automation Node
 
@@ -58,7 +58,7 @@ Select how you want to handle user conversations based on your business needs an
 
 **Agentic App Configurations**
 
-* **Agentic App:** Select an existing  Agentic App or create a new one tailored to your specific needs. For more information, see [Create an Agentic App.](https://docs.kore.ai/agent-platform/agentic-apps/create-app/)
+* **Agentic App:** Select an existing  Agentic App or create a new one tailored to your specific needs. For more information, see [Create an Agentic App.](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/create-app/)
 
 * **Environment:** Select the appropriate environment where your app will be deployed. This setting applies only to the execution after the flow is published. The environment must be created within the Agentic App.
 
