@@ -88,7 +88,8 @@ This API enables users to retrieve the execution status (`active`, `paused`, `st
 These APIs enable the management of contacts in Contact Lists programmatically.
 
 * The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/add-contacts-to-contact-list.md)
-* The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/get-contact-list-details.md)
+* The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.  
+[Learn more:octicons-arrow-right-24:](../../apis/contact-center/get-contact-list-details.md)
 
 **Create, Retrieve, and Delete Campaigns**
 
