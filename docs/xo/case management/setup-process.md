@@ -104,17 +104,17 @@ The following sections provide the setup process of the case management, enable 
 
     1. Navigate to the **User Management**> **Manage Users**.
 
-        <img src="images/user-mgt.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/user-mgt.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
 
     2. Under the **Manage Users**, right-click to edit any of the existing users.
 
-        <img src="images/manage-users-edit.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/manage-users-edit.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
 
-    3. Click on the three vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button, and click **Edit.**
+    3. Click on the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button, and click **Edit.**
 
     4. In the **User Attributes** page, select **Cases**.
 
-       <img src="images/attribute-edit-cases.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
+       <img src="../images/attribute-edit-cases.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
 
 5. Turn on the **Enable Case** toggle button to configure the **Maximum Case Handling Capacity** of the agent.
 

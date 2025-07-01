@@ -28,7 +28,7 @@ Steps to access fields:
 
 1. Access case management **Fields** by navigating to **Contact Center AI** > **Case Management** > **Configuration** > **Fields**.
 
-    <img src="images/config-fields.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/config-fields.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Fields** from the left navigation panel in Case Management. 
 
@@ -40,11 +40,11 @@ Steps to add a new field:
 
 1. On the **Fields** page, click **+ New Field**. 
 
-    <img src="images/new-field-create.png" alt="New Field" title="New Field" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-field-create.png" alt="New Field" title="New Field" style="border: 1px solid gray; zoom:70%;">
 
 2. On the **New Field** page, complete the **General Settings** sections sequence.
 
-    <img src="images/general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 
 #### General Settings
 
@@ -66,7 +66,7 @@ Steps to add a new field:
 
 1. In the **Data Settings**, add the **Default Value** (based on the field format), and click **Save**. 
 
-    <img src="images/data-settings.png" alt="Data Settings" title="Data Settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/data-settings.png" alt="Data Settings" title="Data Settings" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -78,7 +78,7 @@ Steps to add a new field:
 
 Validation Settings options vary by field format. ****Radio Button**, **Dropdown**, and **Checkbox** fields display the **Default Error Message** option, while other formats show only **Validate** and **Validation Rule**.
 
-<img src="images/validation-settings.png" alt="Validation Settings" title="Validation Settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/validation-settings.png" alt="Validation Settings" title="Validation Settings" style="border: 1px solid gray; zoom:70%;">
 
 1. In the **Default Error Message**, enter an **Error Message** to display if validation fails.
 
@@ -96,9 +96,9 @@ Validation Settings options vary by field format. ****Radio Button**, **Dropdown
 
 Steps to edit fields:
 
-1. On the **Fields** page, click the vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the Custom fields added. 
+1. On the **Fields** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the Custom fields added. 
 
-    <img src="images/edit-fields.png" alt="Edit Fields" title="Edit Fields" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-fields.png" alt="Edit Fields" title="Edit Fields" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -106,7 +106,7 @@ Steps to edit fields:
 
 2. Click **Edit** to open the edit **Field** page.
 
-    <img src="images/edit-field-page.png" alt="Edit Field Page" title="Edit Field Page" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-field-page.png" alt="Edit Field Page" title="Edit Field Page" style="border: 1px solid gray; zoom:70%;">
 
 3. Modify the required fields in **General Settings**, **Data Settings**, and **Validation Settings**.
 
@@ -116,13 +116,13 @@ Steps to edit fields:
 
 Steps to delete fields:
 
-1. On the **Fields** page, click the vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the required fields.
+1. On the **Fields** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the required fields.
 
-    <img src="images/delete-fileds.png" alt="Delete Field Page" title="Delete Field Page" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-fileds.png" alt="Delete Field Page" title="Delete Field Page" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Delete** to confirm. the following warning pop-up dialog box appears.
     
-    <img src="images/delete-confirm.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-confirm.png" alt="Delete Warning" title="Delete Warning" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -138,7 +138,7 @@ Steps to access **Task Templates**:
 
 Access case management **Task Templates** by navigating to **Contact Center AI** > **Case Management** > **Configuration**> **Task Templates**.
 
-<img src="images/task-templates.png" alt="Task Templates" title="Task Templates" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/task-templates.png" alt="Task Templates" title="Task Templates" style="border: 1px solid gray; zoom:70%;">
 
 The **Task Templates** page displays the following items:
 
@@ -162,7 +162,7 @@ Steps to create a new task template:
 
 1. On the **Task Templates** page, click **+ New Task Template**. 
 
-    <img src="images/task-templates.png" alt="New Task Templates" title="New Task Templates" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/task-templates.png" alt="New Task Templates" title="New Task Templates" style="border: 1px solid gray; zoom:70%;">
 
 2. On the following **New Task Template** page, complete the **Basic Information** section sequence.
 
@@ -170,7 +170,7 @@ Steps to create a new task template:
 
     A task is a form that back-office employees or agents use to complete work on a Case.
 
-    <img src="images/new-task-template-basic-info.png" alt="New Task Template Basic Info" title="New Task Template Basic Info" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-task-template-basic-info.png" alt="New Task Template Basic Info" title="New Task Template Basic Info" style="border: 1px solid gray; zoom:70%;">
 
 1. Enter a **Name** for the task template that distinguishes it from others.
 
@@ -180,23 +180,23 @@ Steps to create a new task template:
 
     * **Unassigned**: By default, when a case is created with this configuration, it is not assigned to any individual.
 
-        <img src="images/default-assignee-unassigned.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/default-assignee-unassigned.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;">
 
     * **Queues**: As an administrator, you can create custom queues for agents to handle specific tasks, such as one contact center agents for conversations and another for back-office agents.
 
-        <img src="images/default-assignee-queue.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/default-assignee-queue.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:70%;">
 
     * **Individual Agent**: Assign to a specific agent automatically.
 
-        <img src="images/individual-agent.png" alt="Individual Agent" title="Individual Agent" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/individual-agent.png" alt="Individual Agent" title="Individual Agent" style="border: 1px solid gray; zoom:70%;">
 
     * **Task Creator**: Assign the task to you if you have created it.
 
-        <img src="images/task-creator.png" alt="Task Creator" title="Task Creator" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/task-creator.png" alt="Task Creator" title="Task Creator" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Next** to move to the **New Task Template - Add Fields** page.
 
-    <img src="images/new-task-template-basic-info.png" alt="New Task Template" title="New Task Template" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-task-template-basic-info.png" alt="New Task Template" title="New Task Template" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -210,7 +210,7 @@ Steps to add fields:
 
 1. Click **+ Add Fields** to add **Custom** fields to the new task template.
 
-    <img src="images/edit-add-fields.png" alt="Custom" title="Custom" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-add-fields.png" alt="Custom" title="Custom" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -218,23 +218,23 @@ Steps to add fields:
 
 2. Click **Create** to finalize the task template.
 
-    <img src="images/add-fields-create.png" alt="Create" title="Create" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-fields-create.png" alt="Create" title="Create" style="border: 1px solid gray; zoom:70%;">
 
 ### Edit Task Templates
 
 Steps to edit new task:
 
-1. On the **Task Templates** page, click the vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the Custom task template. 
+1. On the **Task Templates** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the Custom task template. 
 
-    <img src="images/edit-task-template.png" alt="Edit Task Template" title="Edit Task Template" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-task-template.png" alt="Edit Task Template" title="Edit Task Template" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Edit** to modify the basic information as required.
 
-    <img src="images/edit-basic-info.png" alt="Edit Basic Info" title="Edit Basic Info" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-basic-info.png" alt="Edit Basic Info" title="Edit Basic Info" style="border: 1px solid gray; zoom:70%;">
 
 3. Modify the required fields or add new fields if needed.
 
-    <img src="images/edit-add-fields.png" alt="Modify" title="Modify" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-add-fields.png" alt="Modify" title="Modify" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Update** to save changes.
 
@@ -242,13 +242,13 @@ Steps to edit new task:
 
 Steps to delete task template:
 
-1. On the **Task Templates** page, click the vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the Custom task template. 
+1. On the **Task Templates** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the Custom task template. 
 
-<img src="images/delete-task-template.png" alt="Delete Task Template" title="Delete Task Template" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-task-template.png" alt="Delete Task Template" title="Delete Task Template" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Delete** to **confirm**.
 
-    <img src="images/delete-confirm.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-confirm.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -266,7 +266,7 @@ Steps to access case templates:
 
 1. Access case management **Case Templates** by navigating to **Contact Center AI** > **Case Management** > **Configuration**> **Case Templates**.
 
-    <img src="images/case-templates.png" alt="Case Template" title="Case Template" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/case-templates.png" alt="Case Template" title="Case Template" style="border: 1px solid gray; zoom:70%;">
 
     The **Case Templates** include the following attributes:
 
@@ -292,7 +292,7 @@ Steps to create a new case template**:
 
 1. On the **Case Templates** page, click **+ New Case Template**. 
 
-    <img src="images/case-templates-creation.png" alt="New Case Template" title="New Case Template" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/case-templates-creation.png" alt="New Case Template" title="New Case Template" style="border: 1px solid gray; zoom:70%;">
 
 2. In the **New Case** panel, complete the following sections in sequence.
 
@@ -300,7 +300,7 @@ Steps to create a new case template**:
 
     A case template is a form that agents see and refer to for different types of customer issues. It can be used to configure and manage the case effectively. 
 
-    <img src="images/new-case-basic-inf.png" alt="Basic Information" title="Basic Information" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-basic-inf.png" alt="Basic Information" title="Basic Information" style="border: 1px solid gray; zoom:70%;">
 
     a. Enter a **Name** for the new case type for easy identification. 
     
@@ -314,11 +314,11 @@ Steps to create a new case template**:
 
     * **Unassigned**: By default, the new case is not automatically assigned upon creation.
         
-        <img src="images/unassigned.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;"> 
+        <img src="../images/unassigned.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;"> 
             
     * **Queues**: Administrators can create queues for specific agent groups and assign them to a particular case. Customize queues or use defaults, such as creating one for contact center agents and another for back office employees.
 
-        <img src="images/new-case-queues.png" alt="Case Creator" title="Case Creator" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/new-case-queues.png" alt="Case Creator" title="Case Creator" style="border: 1px solid gray; zoom:70%;">
             
         !!! Note
 
@@ -326,15 +326,15 @@ Steps to create a new case template**:
 
         * **Individual Agent**: The cases automatically get assigned to a specific individual agent.         
 
-            <img src="images/new-case-individual-agent.png" alt="Individual Agent" title="Individual Agent" style="border: 1px solid gray; zoom:70%;"> 
+            <img src="../images/new-case-individual-agent.png" alt="Individual Agent" title="Individual Agent" style="border: 1px solid gray; zoom:70%;"> 
 
         * **Case Creator**: The cases assigned to the user who has created and initiated the task.
 
-            <img src="images/new-case-creator.png" alt="Case Creator" title="Case Creator" style="border: 1px solid gray; zoom:70%;">
+            <img src="../images/new-case-creator.png" alt="Case Creator" title="Case Creator" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Next** to proceed to the following **Case Fields** page.    
 
-    <img src="images/add-case-fields.png" alt="Case Fields" title="Case Fields" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-case-fields.png" alt="Case Fields" title="Case Fields" style="border: 1px solid gray; zoom:70%;">
 
 #### Case Fields
 
@@ -348,7 +348,7 @@ Steps to add fields:
 
 1. Click **+ Add Fields** to include Custom fields.
 
-    <img src="images/add-case-fields.png" alt="Add Fields" title="Add Fields" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-case-fields.png" alt="Add Fields" title="Add Fields" style="border: 1px solid gray; zoom:70%;">
 
 2. For each field, specify:
 
@@ -362,7 +362,7 @@ Steps to add fields:
 
 3. Click **Next** to proceed to the **Task** page.
 
-    <img src="images/new-case-next.png" alt="New Case Task" title="New Case Task" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-next.png" alt="New Case Task" title="New Case Task" style="border: 1px solid gray; zoom:70%;">
 
 #### Task
 
@@ -376,39 +376,39 @@ Task refers to a specific action or set of actions completed as part of managing
 
 4. Click **Create**. 
 
-   <img src="images/new-case-task.png" alt="Add Task" title="Add Task" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/new-case-task.png" alt="Add Task" title="Add Task" style="border: 1px solid gray; zoom:70%;">
 
 ### Edit Case Templates
 
 Steps to edit new case template:
 
-1. On the **Case Templates** page, click the three vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the custom case templates. 
+1. On the **Case Templates** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the custom case templates. 
 
-   <img src="images/edit-case-temlate.png" alt="Edit Case Template" title="Edit Case Template" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/edit-case-temlate.png" alt="Edit Case Template" title="Edit Case Template" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to modify **Basic Information**, **Name**, and **Description**, and click **Next**.
 
-   <img src="images/edit-basic-info-case.png" alt="Modify basic Info" title="Edit Case Fields" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/edit-basic-info-case.png" alt="Modify basic Info" title="Edit Case Fields" style="border: 1px solid gray; zoom:70%;">
 
 3. Modify **Case Fields** (**Field Name**, **Type**, **Validation**, or **Action**), and click **Next**.
 
-   <img src="images/case-fields-edit.png" alt="Edit Case Fields" title="Edit Case Fields" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/case-fields-edit.png" alt="Edit Case Fields" title="Edit Case Fields" style="border: 1px solid gray; zoom:70%;">
 
 4. Modify **Task** Fields (**Custom Task**, **Add Task,** or **+Add Task**) in the **Task Name** search list to add new fields if required, and click **Update** to save changes.
 
-   <img src="images/edit-task-case.png" alt="Modify Task" title="Modify Task" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/edit-task-case.png" alt="Modify Task" title="Modify Task" style="border: 1px solid gray; zoom:70%;">
 
 ### Delete Case Templates
 
 Steps to delete the case template:
 
-1. On the **Case Templates** page, click the three vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button. 
+1. On the **Case Templates** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button. 
 
-   <img src="images/delete-case-confirm.png" alt="Delete Case Template" title="Delete Case Template" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/delete-case-confirm.png" alt="Delete Case Template" title="Delete Case Template" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Delete** to confirm. When you delete this, the following warning popup dialog box appears.
 
-   <img src="images/delete-case-template.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/delete-case-template.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
 
 ## Status Configuration
 
@@ -424,7 +424,7 @@ There are two main categories of statuses:
 
 Access case management **Status** by navigating to **Contact Center AI** > **Case Management** > **Configuration** > **Status**.
 
-   <img src="images/new-status-access.png" alt="New Status" title="New Status" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/new-status-access.png" alt="New Status" title="New Status" style="border: 1px solid gray; zoom:70%;">
 
 ### Manage Existing Status
 
@@ -436,13 +436,13 @@ Steps to add a new status:
 
 1. On the **Status** page, click **+ New Status**.    
 
-   <img src="images/new-status-access.png" alt="Status" title="Status" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/new-status-access.png" alt="Status" title="Status" style="border: 1px solid gray; zoom:70%;">
 
 2. In the **New Status** panel, do the following:
 
     1. Enter the **Name** for the status.
 
-    <img src="images/new-status-fields.png" alt="New Status" title="New Status" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-status-fields.png" alt="New Status" title="New Status" style="border: 1px solid gray; zoom:70%;">
 
     2. From the **Status Type** dropdown, select one of the following:
 
@@ -472,13 +472,13 @@ Steps to add a new status:
 
 Steps to edit or delete a custom status:
 
-1. On the **Status** page, click the three vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the existing status tasks. 
+1. On the **Status** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the existing status tasks. 
 
-    <img src="images/edit-status-edit.png" alt="Status" title="Status" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-status-edit.png" alt="Status" title="Status" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit**. The following **Edit Status** dialog page appears.
 
-    <img src="images/edit-status-fields.png" alt="Edit Status" title="Edit Status" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-status-fields.png" alt="Edit Status" title="Edit Status" style="border: 1px solid gray; zoom:70%;">
 
 3. Turn on the **Enabled** toggle switch to make it available for agents.
 
@@ -488,13 +488,13 @@ Steps to edit or delete a custom status:
 
 Steps to delete status:
 
-1. On the **Status** page, click the three vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the existing status fields. 
+1. On the **Status** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the existing status fields. 
 
-    <img src="images/edit-status-delete.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-status-delete.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Delete** to confirm.
 
-    <img src="images/delete-status.png" alt="Delete Status" title="Delete Status" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-status.png" alt="Delete Status" title="Delete Status" style="border: 1px solid gray; zoom:70%;">
 
 ## Priority Configuration
 
@@ -510,7 +510,7 @@ There are two main categories of priorities:
 
 Access case management **Priority** by navigating to **Contact Center AI** > **Case Management**> **Configuration**> **Priority**. 
 
-<img src="images/new-priority- access.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/new-priority- access.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:70%;">
 
 ### Manage Existing Priorities
 
@@ -522,13 +522,13 @@ Steps to add a new priority:
 
 1. On the **Priority** page, click **+ New Priority**.
 
-    <img src="images/new-priority- access.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-priority- access.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:70%;">
 
 2. In the **New Priority** page, do the following:
 
     a. Enter the **Name** for the priority.    
 
-    <img src="images/new-priority-enabled.png" alt="New Priority" title="New Priority" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-priority-enabled.png" alt="New Priority" title="New Priority" style="border: 1px solid gray; zoom:70%;">
 
     b. Add a **Description** to provide context or explanation for the priority's purpose.
 
@@ -552,13 +552,13 @@ Steps to add a new priority:
 
 Steps to edit Custom priority cases:
 
-1. On the **Priority** page, click the three vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the existing priority tasks. 
+1. On the **Priority** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the existing priority tasks. 
 
-    <img src="images/new-priority-enabled.png" alt="New Priority" title="New Priority" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-priority-enabled.png" alt="New Priority" title="New Priority" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit**. 
     
-    <img src="images/edit-priority.png" alt="Edit Priority" title="Edit Priority" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/edit-priority.png" alt="Edit Priority" title="Edit Priority" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save** to edit the required fields.
 
@@ -566,10 +566,10 @@ Steps to edit Custom priority cases:
 
 Steps to delete the Custom priority status of cases:
 
-1. On the **Priority** page, click the vertical ellipsis (<img src="images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the existing status fields.     
+1. On the **Priority** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the existing status fields.     
 
-    <img src="images/delete-priority.png" alt="Edit Priority" title="Edit Priority" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-priority.png" alt="Edit Priority" title="Edit Priority" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Delete** to remove the custom priority cases.
 
-    <img src="images/delete-custom-priority.png" alt="Delete Priority" title="Delete Priority" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/delete-custom-priority.png" alt="Delete Priority" title="Delete Priority" style="border: 1px solid gray; zoom:70%;">

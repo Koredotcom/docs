@@ -16,7 +16,7 @@ This section displays the overview of all cases that an agent has efficiently ha
 
 Access manage cases by navigating to **Contact Center AI** > **Case Management**> **Manage Cases**> **Cases**.
 
-<img src="images/accessing-cases.png" alt="Cases" title="Cases" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/accessing-cases.png" alt="Cases" title="Cases" style="border: 1px solid gray; zoom:70%;">
 
 Each case in the system includes the following details:
 
@@ -54,11 +54,11 @@ To create a new case:
 
 1. Access cases by navigating to **Contact Center AI** > **Case Management** > **Manage Cases** > **Cases**. The unresolved cases page displays.
     
-    <img src="images/manage-cases-new-case.png" alt="Create Cases" title="Create Cases" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/manage-cases-new-case.png" alt="Create Cases" title="Create Cases" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **+ New Case**. the New Case dialog box is displayed with a default Case Number assigned.
 
-    <img src="images/new-case-managecase.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-managecase.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **Requested by** field, enter the name of the customer.
 
@@ -90,23 +90,23 @@ A supervisor can view various cases created under the following menu items:
 
 * **Unresolved**: Cases that are still active (work-in-progress) and not yet resolved or closed.
 
-    <img src="images/unresolved-cases.png" alt="Unresolved" title="Unresolved" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/unresolved-cases.png" alt="Unresolved" title="Unresolved" style="border: 1px solid gray; zoom:70%;">
 
 * **Unassigned**: Cases that are identified but not yet assigned to a case manager or team member.
 
-    <img src="images/unassigned-cases.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/unassigned-cases.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;">
 
 * **All Cases**: Displays a comprehensive view of all cases within the system, regardless of their status.
 
-    <img src="images/manage-all-cases.png" alt="All Cases" title="All Cases" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/manage-all-cases.png" alt="All Cases" title="All Cases" style="border: 1px solid gray; zoom:70%;">
 
 * **My Cases**: Cases that are assigned to the agent or back office employee.
 
-    <img src="images/all-cases-my-cases.png" alt="My Cases" title="My Cases" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/all-cases-my-cases.png" alt="My Cases" title="My Cases" style="border: 1px solid gray; zoom:70%;">
 
 * **Closed**: Cases that are completed and closed.
     
-    <img src="images/manage-all-cases-closed.png" alt="Closed" title="Closed" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/manage-all-cases-closed.png" alt="Closed" title="Closed" style="border: 1px solid gray; zoom:70%;">
 
 * **Search Cases**: Search for cases based on various field values (for example, case ID, status, priority).
 
@@ -116,19 +116,19 @@ A supervisor can view various cases created under the following menu items:
 
         The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved **cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
 
-    <img src="images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
     The following is one example of an **Unresolved** Case page details that includes:
 
 * **Description**: Displays a summary of the service request issue.
 
-    <img src="images/case-details-desc.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/case-details-desc.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
 * **Tasks**: Displays the number of tasks created against a case assigned to an agent, which includes the unique task ID, task name, agent name, task status, and task priority level. 
 
     *  **Add New Task:** Allows you to add new tasks related to a case.
 
-        <img src="images/add-comments.png" alt="Case Details" title="Case Details" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images//case-task.png" alt="Case Details" title="Case Details" style="border: 1px solid gray; zoom:70%;">
 
     * **Custom:** This message appears when the **Custom Task** checkbox option is enabled for agents about a case while creating **Case Templates**. 
 
@@ -136,155 +136,104 @@ A supervisor can view various cases created under the following menu items:
 
     * **Add Comments**: Shows the comment box related to an activity entered by the supervisor or agent.        
 
-        <img src="images/add-comments.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Add Comment and Send as Email:** Allows you to add a comment and send as an email (along with the email address) before saving it to the comment.
 
-        <img src="images/activity-comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/activity-comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Email:** Displays the email and standard response template to add the required details of the case.
 
-        <img src="images/save-send-email.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/save-send-email.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **File attachment:** Displays the image or file attachment icons to support the case when you click the attachment icon.
 
         
-
-<p id="gdcalert81" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image81.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert82">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image81.png "image_tooltip")
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 
     * **Standard Responses:** Displays the predefined text signatures to quickly select and send to the customers.
 
-        
-
-<p id="gdcalert82" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image82.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert83">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image82.png "image_tooltip")
-
+        <p id="gdcalert82" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image82.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert83">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     * **Edit Comments**: Displays you to edit the entered comment related to the case.
-
-        
-
-<p id="gdcalert83" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image83.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert84">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image83.png "image_tooltip")
+       
+       <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 
     * **Format**: Displays formatting icons to edit your email content, such as bold, italic, ordered list, and so on.
 
-
-<p id="gdcalert84" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image84.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert85">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image84.png "image_tooltip")
-
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Events**: Displays the associated events related to the cases and tasks.
 
-        
-<p id="gdcalert85" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image85.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert86">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image85.png "image_tooltip")
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 
     * **Case Details:** Displays the information where the agent can view the following case details of a case, such as:
+
         * **Status:** Displays the current status of the case.
+
         * **Priority:** Displays the priority level of the case.
+
         * **Assignee:** Displays the name of the agent that the case is assigned to or handled by.
+
         * **Reporter:** Displays the name of the user who has assigned the case.
+
         * **Customer:** Displays the customer's name.
+
         * **Due Date:** Displays the date and time when the case is due.
-
-            
-
-<p id="gdcalert86" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image86.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert87">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+           
+            <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 
-![alt_text](images/image86.png "image_tooltip")
+    * **More Information:** Displays the additional details about the case, such as:
 
-
-    * **More Information:** Displays the additional details about the case, such as: 
         * **Last Updated by:** Displays the user name who has last updated the case.
+
         * **Last Updated On:** Displays the last updated date and year of the case.
+
         * **Created by:** Displays the user who has created the case.
+
         * **Requested by:** Displays the user name who has made the service request.
+
         * **Created On:** Displays the service request date and year that the case was created.
+
         * **Channel:**: Displays the channel mode (Voice or Web/Mobile Client) of the case.
- 
 
-<p id="gdcalert87" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image87.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert88">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image87.png "image_tooltip")
-
-
+            <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
        **Note:** As an agent, you can manually update the case status based on progress or updates received from back office employees and other agents. For instance, you can create additional tasks to address any outstanding issues if the case is not marked as **Closed**.
-
 
 ### Transfer or Update Cases
 
 The agent can transfer a case to another agent by selecting the **Assignee **from the drop-down list.
 
-<p id="gdcalert88" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image88.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert89">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image88.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Update or Resolve Case Status
 
 Under the case details section, select the **Resolve** from the status drop-down list.
 
-<p id="gdcalert89" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image89.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert90">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image89.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard > My Cases > Closed**.
 
-
-<p id="gdcalert90" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image90.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert91">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image90.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 **Note:** You can view the status of all closed cases on the Dashboard and MANAGE CASES, see [Analyze Case Management](https://docs.google.com/document/u/0/d/1ndy96LGvktcgJhp1hhCaxLsX959EnPQ8TwOWGzZ4j0U/edit).
 
-
-<p id="gdcalert91" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image91.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert92">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image91.png "image_tooltip")
-
+   <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 Ensure all required actions and activities associated with the task are completed and changed to resolve with a proper comment before closing the case.
-
-
-<p id="gdcalert92" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image92.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert93">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image92.png "image_tooltip")
-
+       
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 Review the case to ensure that all aspects of the requested issue are addressed and resolved satisfactorily. 
 
 Ensure all processes and tasks are completed before marking the case and all associated tasks as **Resolved**, and then change the status of the case to **Closed**.
 
-<p id="gdcalert93" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image93.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert94">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image93.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ## Manage Tasks
 
@@ -296,25 +245,27 @@ In case management, you can configure and manage task assignment rules for newly
 
 In this, you (agent) can do the following:
 
-* View and update all required fields in the assigned task (active or inactive)
-* Provide comments on the task for tracking progress and providing context
-* Change the status of the task to the next level upon completion
-* Assign the task to itself, and can transfer the task to another agent or to another back office employee
-* Select another agent from the list and reassign the task
-* View all details of the task assigned to them, including any previous comments and status changes
-* Create, edit, or delete tasks until the case is closed
+* View and update all required fields in the assigned task (active or inactive).
+
+* Provide comments on the task for tracking progress and providing context.
+
+* Change the status of the task to the next level upon completion.
+
+* Assign the task to itself, and can transfer the task to another agent or to another back office employee.
+
+* Select another agent from the list and reassign the task.
+
+* View all details of the task assigned to them, including any previous comments and status changes.
+
+* Create, edit, or delete tasks until the case is closed.
 
 **Note:** When a task is transferred to a new assigned agent or updated by the agent, all the task-related notification is sent by the system to the agent.
-
 
 #### Task Notifications
 
 Agents are notified through the case management system (Console) when any new tasks are assigned. 
 
-<p id="gdcalert94" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image94.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert95">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image94.png "image_tooltip")
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 #### Access Tasks
 
@@ -322,50 +273,47 @@ Select **Tasks** in the left navigation panel of Case Management. This page show
 
 You can access Manage Tasks by navigating to **Contact Center AI > Case Management > Manage Cases > Tasks**.
 
-<p id="gdcalert95" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image95.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert96">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image95.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 Agent can view the following menu items for the **Tasks**:
 
-
 * **Unresolved**: Tasks that are still active (work-in-progress) and not yet resolved or closed. 
 
-
-<p id="gdcalert96" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image96.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert97">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image96.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     All the **Tasks** include the following list of items:
 
-    * **ID:** Displays the task ID.
-    * **Case ID:** Displays the case ID.
-    * **Title:** Displays the task title. 
-    * **Status:** Displays the task status.
-    * **Priority:** Displays the priority level of the task.
-    * **ETA:** Displays the estimated time for an agent to take action or complete the assigned task.
-    * **Last Updated:** Displays the last date of the updated task.
-    * **Assignee:** Displays the name of the agent to whom the task is assigned. This option is not available for **Unresolved**, **Unassigned**, **All Tasks**, **My Tasks**, and **Closed**.
+    * **ID**: Displays the task ID.
+
+    * **Case ID**: Displays the case ID.
+
+    * **Title**: Displays the task title. 
+
+    * **Status**: Displays the task status.
+
+    * **Priority**: Displays the priority level of the task.
+
+    * **ETA**: Displays the estimated time for an agent to take action or complete the assigned task.
+
+    * **Last Updated**: Displays the last date of the updated task.
+
+    * **Assignee**: Displays the name of the agent to whom the task is assigned. This option is not available for **Unresolved**, **Unassigned**, **All Tasks**, **My Tasks**, and **Closed**.
 
 **Note:** The agent can easily switch between custom tasks and task templates.
 
+* **My Tasks**: Tasks that are assigned to the agent or back office employee.
 
+* **Closed**: Tasks that are closed.
 
-* **My Tasks:** Tasks that are assigned to the agent or back office employee.
-* **Closed:** Tasks that are closed.
-* **Search Tasks:** Enables searching for specific tasks based on field values or content (for example, case ID, status, priority, keywords in task descriptions or notes).
+* **Search Tasks**: Enables searching for specific tasks based on field values or content (for example, case ID, status, priority, keywords in task descriptions or notes).
 
     **Note:** The agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
 
 A supervisor can view the following menu items for the tasks:
 
-* **Unassigned:** Tasks that are identified and not assigned yet to a case manager or team member.
-* **All Tasks:** A comprehensive view that includes all tasks within the system, regardless of their status.
+* **Unassigned**: Tasks that are identified and not assigned yet to a case manager or team member.
 
+* **All Tasks**: A comprehensive view that includes all tasks within the system, regardless of their status.
 
 #### Add New Task
 
@@ -373,36 +321,28 @@ Steps to **Add New Task**:
 
 1. Click any of the cases from the **Tasks** page to create a new task.
 
-
-<p id="gdcalert97" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image97.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert98">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image97.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+ Add New Task**. By default, the New Task dialog box is displayed with a default Task Number assigned.	
  
-
-<p id="gdcalert98" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image98.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert99">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image98.png "image_tooltip")
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the Task Type for the related case from the drop-down list provided.
+
 4. Select a **Due Date** to complete the task.
+
 5. Enter a case** Description** based on the conversation case summary.
-6. Enter a case **Title **based on the issue raised by the customer.
+
+6. Enter a case **Title** based on the issue raised by the customer.
+
 7. Select the task **Priority (Critical, High, Medium, Low)** from the drop-down list.
 8. By default, the **Status** is set to **Open**.
+
 9. Click **Save**. A success message of the task creation is displayed, and a new custom task is created and assigned to the agent.
 
 **Note:** All the red asterisk (*) marked fields are mandatory to fill up.
 
-<p id="gdcalert99" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image99.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert100">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image99.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 #### View Tasks Components
 
@@ -410,58 +350,53 @@ This page shows the task description, task details, current status, and activity
 
 Click any existing unresolved tasks to expand and view detailed information, and the following page appears.
 
-
-<p id="gdcalert100" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image100.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert101">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image100.png "image_tooltip")
-
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 The above page includes the following list of items:
 
-* **Description:** Displays the allotted task description.
-* **Activity:** Displays the specific actions taken to manage a task.
-    * **Comments:** Displays the comments related to that activity received by the supervisor or entered by the agent.
-    * **Edit Comments:** Allows you to edit the entered comments related to the task.
-    * **Delete:** Displays the delete icon option to delete your comment.
-    * **Attach Image or File:** Displays the image or file attached to the case.
-    * **Events:** Displays the associated events to that activity.
+* **Description**: Displays the allotted task description.
 
+* **Activity**: Displays the specific actions taken to manage a task.
 
-<p id="gdcalert101" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image101.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert102">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    * **Comments**: Displays the comments related to that activity received by the supervisor or entered by the agent.
 
+    * **Edit Comments**: Allows you to edit the entered comments related to the task.
 
-![alt_text](images/image101.png "image_tooltip")
+    * **Delete**: Displays the delete icon option to delete your comment.
 
+    * **Attach Image or File**: Displays the image or file attached to the case.
+
+    * **Events**: Displays the associated events to that activity.
+
+        <img src="images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Task Details:** Displays the following task details information, such as:
-    * **Status:** Displays the status mode of the task.
-    * **Priority:** Displays the priority level of the task.
-    * **Assignee:** Displays the name of the agent to whom the task is assigned.
-    * **Reporter:** Displays the name of the user who has assigned the task.
-    * **Due Date:** Displays the date and time by which the task is to be completed.
-    * **Sample:** Displays the sample documents attached for this task.
 
-        
+    * **Status**: Displays the status mode of the task.
 
-<p id="gdcalert102" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image102.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert103">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    * **Priority**: Displays the priority level of the task.
 
+    * **Assignee**: Displays the name of the agent to whom the task is assigned.
 
-![alt_text](images/image102.png "image_tooltip")
+    * **Reporter**: Displays the name of the user who has assigned the task.
 
+    * **Due Date**: Displays the date and time by which the task is to be completed.
 
-* **More Information:** Displays additional details about the task, such as:
-    * **Last Updated by:** Displays the user name who has last updated the task.
-    * **Last Updated On:** Displays the last updated date and year of the task.
-    * **Created by:** Displays the user who has created the task.
-    * **Created On:** Displays the task request date and year that it is created.
+    * **Sample**: Displays the sample documents attached for this task.
 
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-<p id="gdcalert103" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image103.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert104">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+* **More Information**: Displays additional details about the task, such as:
 
+    * **Last Updated by**: Displays the user name who has last updated the task.
 
-![alt_text](images/image103.png "image_tooltip")
+    * **Last Updated On**: Displays the last updated date and year of the task.
 
+    * **Created by**: Displays the user who has created the task.
+
+    * **Created On**: Displays the task request date and year that it is created.
+
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 #### Transfer Task
 
@@ -469,38 +404,23 @@ An agent can transfer a task to another agent by selecting the Assignee from the
 
 **Task Assignment**
 
-* **Assignee Allocation:** Allotment of the task to the appropriate agent based on expertise, workload, and availability.
+* **Assignee Allocation**: Allotment of the task to the appropriate agent based on expertise, workload, and availability.
     
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-<p id="gdcalert104" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image104.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert105">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image104.png "image_tooltip")
-
-
-* **Set Priorities:** Set priority levels (High, Medium, Low, Emergency, and so on) for each task to focus efforts where they are most needed.
+* **Set Priorities**: Set priority levels (High, Medium, Low, Emergency, and so on) for each task to focus efforts where they are most needed.
     
-
-<p id="gdcalert105" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image105.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert106">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image105.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 #### Review Task Activity
 
 This helps agents to understand the history of the task or case and the reason behind specific actions.
 
-**Task Monitor:**
-
+**Task Monitor**:
 
 * **Dashboard Monitor:** Check to visualize task statuses, outstanding items, and overall workload.
 
-
-<p id="gdcalert106" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image106.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert107">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image106.png "image_tooltip")
+    <img src="images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 
 * **Track Activity:** After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
