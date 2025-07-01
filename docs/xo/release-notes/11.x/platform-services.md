@@ -57,7 +57,9 @@ Key features
 * Multi-user messaging in a single API call.
 * JWT-based authentication for secure access.
 * Per-client rate limiting for system stability.
-* Granular logging for improved tracking and debugging.
+* Granular logging for improved tracking and debugging.  
+
+[Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
 <hr>
 

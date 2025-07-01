@@ -1,6 +1,6 @@
 # Proactive Notifications API v2
 
-The Proactive Notifications API V2 enables sending various types of messages to users via `IVR` and `Hangout` channels. 
+The Proactive Notifications API V2 enables sending various types of messages to users via `IVR`, `Hangout`, `Webhook` and `Whatsapp` channels. 
 
 Proactive notification includes:
 
@@ -226,6 +226,30 @@ Uses templates with optional parameter substitution.
   { "spaceId": "o7ZNt8AAAAE" }
 ]
 ```
+**whatsapp:**
+
+```
+{
+    "channel": "whatsapp",
+    "userIdentityType": "resolve",
+    "message": {
+        "type": "template",
+        "value": {
+            "type": "image",
+            "image": {
+                "link": "https://imagej.net/images/2D_Gel.jpg",
+                "caption": "Random Image"
+            }
+        }
+    },
+    "identities": [
+        {
+            "phoneNumber": "91xxxxxxx4"
+        }
+    ]
+}
+
+```
 
 ## Body Parameters
 
@@ -247,7 +271,8 @@ Uses templates with optional parameter substitution.
    </td>
    <td>Required
    </td>
-   <td>Platform to send message to (e.g., <code>ivr</code>, <code>hangouts</code>)
+   <td> Name of the channel for which notifications to be sent (e.g., <code>ivr</code>, <code>hangouts</code>, <code>whatsapp</code>)
+
    </td>
   </tr>
   <tr>
@@ -322,8 +347,8 @@ Uses templates with optional parameter substitution.
    </td>
    <td>Required
    </td>
-   <td>Identity key depending on the channel:- <code>ivr</code>: <code>email</code>- <code>hangouts</code>: <code>spaceId 
-</code><strong>Note:</strong> Other channels (e.g., <code>whatsapp</code>, <code>msteams</code>, <code>slack</code>) are not yet supported in public API v2.    
+   <td>Identity key depending on the channel:- <code>ivr</code>: <code>email</code>, <code>hangouts</code>: <code>spaceId, <code>whatsapp</code>: <code>phone number</code> 
+</code><strong>Note:</strong> Other channels (e.g., <code>msteams</code>, <code>slack</code>) are not yet supported in public API v2.    
    </td>
   </tr>
   <tr>
@@ -347,6 +372,22 @@ Uses templates with optional parameter substitution.
    </td>
   </tr>
 </table>
+
+**Schema Constraints**
+
+* `identities` array: 
+
+    * Minimum items: 1 
+
+    * Maximum items: 1000
+
+* `parameters` object:
+
+    * Maximum properties: 20
+
+    * Each value must be a string ≤ 200 characters
+
+* No additional properties are allowed at any level unless explicitly defined.
 
 ## Sample Response
 
