@@ -2,6 +2,7 @@
 
 The following tables list the APIs available for Contact Center AI, grouped by the functionality they address:
 
+* [Contact Center AI (CCAI) APIs](#contact-center-ai-ccai-apis)
 * [Analytics and Reporting APIs](#analytics-and-reporting-apis)
 * [Agent Creation APIs](#agent-creation-apis)
 * [Skills APIs](#skills-apis)
@@ -9,15 +10,22 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [Agent Group APIs](#agent-group-apis)
 * [Contacts Public APIs](#contacts-public-apis)
 * [Import/Export Data APIs](#importexport-data-apis)
-* [Call Recording API](#call-recording-api)
+* [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
+* [Queue APIs](#queue-apis)
+* [WFM APIs](#wfm-apis)
+* [Hours of Operation API](#hours-of-operation-api)
+* [Campaign Management APIs](#campaign-management-apis)
+* [SMS Campaigns](#sms-campaigns)
+* [Voice Campaigns](#voice-campaigns)
+* [Campaign Status](#campaign-status)
+* [Contact List Management](#contact-list-management)
+* [Voice Gateway (VG) APIs](#voice-gateway-vg-apis)
+* [Call Recording APIs](#call-recording-apis)
 * [Voicemail Recording API](#voicemail-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
-* [Transfer Conversation to a Specific Agent or Queue API](#transfer-conversation-to-a-specific-agent-or-queue-api)
-* [Queue AI APIs](#queue-ai-apis)
 * [Quality AI APIs](#quality-ai-apis)
-* [WFM APIs](#wfm-apis)
-* [Campaigns API](#campaigns-api)
-* [Hours of Operation API](#hours-of-operation-api)
+
+## Contact Center AI (CCAI) APIs
 
 ### Analytics and Reporting APIs
 
@@ -44,6 +52,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Check Agent Availability Status](../contact-center/check-agent-availability-status.md)                                            | To check the availability of agents based on specified skill Ids, queue Ids, and agent Ids.                                    | Configuration |
 
 ### Skills APIs
+
 | API                                                                                                   | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Create a Skill](../contact-center/create-a-skill.md)                                                                  | To add a skill with the given Stream Id and Skill Group ID.                                                                      | SmartAssist Analytics |
@@ -88,6 +97,88 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Export Data by Giving Details](../contact-center/export-data-by-giving-details.md)                                   | To export data with the given accountId and orgId.                                                   | SmartAssist Import and Export Feature |
 | [Export Data by Giving Details (v2)](../contact-center/export-data-by-giving-details-v2.md)                                   | To export data with the given accountId and orgId.                                                   | SmartAssist Import and Export Feature |
 
+### Transfer Conversation to a Specific Agent or Queue API
+
+| API                                                                                               | DESCRIPTION                                                                                                                      | ASSOCIATED APP SCOPE |
+|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| [Transfer Conversation to a Specific Agent](./transfer-conversation-to-a-specific-agent-or-queue.md)         | To transfer a conversation to a specific agent using the provided botSessionId and aId. It posts specific messages to the provided callbackUrl to indicate the success or failure of the conversation transfer. | Routing              |
+
+### Queue APIs
+
+| API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
+| [Create a Queue](../contact-center/create-a-queue.md)                                                               | To create a queue with the given streamId.                                                                   | Configuration        |
+| [Get a List of Queues](../contact-center/get-a-list-of-queues.md)                                                   | To get a list of queues with the given streamId.                                                             | Configuration        |
+| [Get a List of Agents or Queues](../contact-center/get-a-list-of-agents-or-queues.md)                               | To get all agents if you have queueIds and all the queues if you have agentIds.                               | Configuration        |
+| [Get a Specific Queue](../contact-center/get-a-specific-queue.md)                                                   | To get a specific queue with the given streamId and queueId.                                                 | Configuration        |
+| [Update a Specific Queue](../contact-center/update-a-specific-queue.md)                                             | To update a specific queue with the given streamId and queueId.                                               | Configuration        |
+| [Delete a Queue](../contact-center/delete-a-queue.md)                                                               | To delete a specific queue with the given streamId and queueId.                                               | Configuration        |
+
+### WFM APIs
+
+| API                                                                                           | Description                                                                                                                      | Associated App Scope |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| [Agents API](../contact-center/agents.md)                                | To get all agent details associated with an accountId.                                                                          | WFM Integration       |
+| [Queues API](../contact-center/queues.md)                                | To get the Queues/Skills associated with an accountId.                                                                          | WFM Integration       |
+| [Agent Activity API](../contact-center/agent-activity.md)                | To get the agent status in real-time or changes stacked every 30 seconds.                                                       | WFM Integration       |
+| [Contact Volume API](../contact-center/contact-volume.md)                | To retrieve call volume details associated with a specified collection point for a given interval, including fields mapped to specific field names relevant to the Workforce Management (WFM) client. | WFM Integration       |
+
+### Hours of Operation API
+
+| API                | Description                                                                                                                                          | Associated App Scope |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| [Hours of Operation](../contact-center/hours-of-operation.md) | To get the hours of operation by providing the orgId and queueId. | Configuration         |
+
+## Campaign Management APIs
+
+### SMS Campaigns
+
+| API | Description | Associated App Scope |
+|--------|------------------|---------------------------|
+| [Create SMS Campaign](../contact-center/create-sms-campaign.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
+| [Create SMS Campaign (Using Template)](../contact-center/create-sms-campaign-using-template.md) | Creates an SMS campaign using a predefined message template. | Campaign Management |
+| [Create SMS Campaign (Advanced Format)](../contact-center/create-sms-campaign-advanced-format.md) | Creates an SMS campaign with advanced formatting using a specified experience flow and contact list. | Campaign Management |
+| [Get SMS Campaign by ID](../contact-center/get-sms-campaign-by-id.md) | Retrieves full details of an SMS campaign using the campaign ID. | Campaign Management |
+| [Update SMS Campaign](../contact-center/update-sms-campaign.md) | Updates an existing SMS campaign with new format, contact lists, experience flow, or dialing strategy. | Campaign Management |
+| [Get All SMS Campaigns](../contact-center/get-all-sms-campaigns.md) | Retrieves all SMS campaigns associated with a specific account. | Campaign Management |
+| [Start SMS Campaign](../contact-center/start-sms-campaign.md) | Starts an SMS campaign using stream ID and campaign ID. | Campaign Management |
+| [Stop SMS Campaign](../contact-center/stop-sms-campaign.md) | Stops an active SMS campaign using stream ID and campaign ID. | Campaign Management |
+| [Delete SMS Campaign](../contact-center/delete-sms-campaign.md) | Deletes an active SMS campaign using stream ID and campaign ID. | Campaign Management |
+| [Send Outbound SMS](../contact-center/send-outbound-sms.md)  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
+
+### Voice Campaigns
+
+| API | Description | Associated App Scope |
+|--------|------------------|---------------------------|
+| [Create Voice Campaign - Agentless Mode](../contact-center/create-voice-campaign-agentless.md) | Creates a new outbound voice campaign with agentless dialing. | Campaign Management |
+| [Create Voice Campaign - Progressive Mode](../contact-center/create-voice-campaign-progressive.md) | Creates a voice campaign that routes answered calls to live agents using progressive dialing. | Campaign Management |
+| [Create Voice Campaign - Preview Mode](../contact-center/create-voice-campaign-preview.md) | Creates a voice campaign that lets agents preview contact info before calling. Routes answered calls to a queue. | Campaign Management |
+| [Update Voice Campaign](../contact-center/update-voice-campaign.md) | Updates the configuration of an existing voice campaign, including metadata, strategies, and schedules. | Campaign Management |
+| [Get Voice Campaign by ID](../contact-center/get-voice-campaign-by-id.md) | Fetches complete details of a voice campaign using campaign ID. | Campaign Management |
+| [Get All Voice Campaigns](../contact-center/get-all-voice-campaigns.md) | Retrieves all voice campaigns linked to a specific account. | Campaign Management |
+| [Start Voice Campaign](../contact-center/start-voice-campaign.md) | Starts an active voice campaign using stream ID and campaign ID. | Campaign Management |
+| [Stop Voice Campaign](../contact-center/stop-voice-campaign.md) | Stops an active voice campaign using stream ID and campaign ID. | Campaign Management |
+| [Delete Voice Campaign](../contact-center/delete-voice-campaign.md) | Deletes an active voice campaign using stream ID and campaign ID. | Campaign Management |
+
+### Campaign Status
+
+| API | Description | Associated App Scope |
+|--------|------------------|---------------------------|
+| [Get Campaign Status](../contact-center/get-campaign-status.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
+
+### Contact List Management
+
+| API | Description | Associated App Scope |
+|--------|------------------|---------------------------|
+| [Get All Campaign List Details](../contact-center/get-all-campaign-list-details.md) | Retrieves metadata for all contact lists under a specific account, filtered by type (call or SMS). | Campaign Management |
+| [Create Contact List](../contact-center/create-contact-list.md) | Creates a new contact list for use in passive voice campaigns. | Campaign Management |
+| [Update Contact List Name](../contact-center/update-contact-list-name.md) | Updates the name of a contact list associated with a campaign. | Campaign Management |
+| [Get Contact List Details](../contact-center/get-contact-list-details.md) | Retrieves full details of a specific contact list using its ID. | Campaign Management |
+| [Add Contacts to a Contact List](../contact-center/add-contacts-to-contact-list.md) | Adds one or more contacts to an existing contact list. | Campaign Management |
+| [Delete Contact List Details](../contact-center/delete-contact-list-details.md) | Deletes a contact list associated with a campaign. | Campaign Management |
+
+## Voice Gateway (VG) APIs
+
 ### Call Recording APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                                       | ASSOCIATED APP SCOPE |
@@ -108,47 +199,9 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------|
 | [Outbound Calling (Kore.ai VG)](./outbound-calling-vg.md)                                               | To trigger an outbound call and receive call status notifications.                                           | SmartAssist Dialout  |
 
-### Transfer Conversation to a Specific Agent or Queue API
-
-| API                                                                                               | DESCRIPTION                                                                                                                      | ASSOCIATED APP SCOPE |
-|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Transfer Conversation to a Specific Agent](./transfer-conversation-to-a-specific-agent-or-queue.md)         | To transfer a conversation to a specific agent using the provided botSessionId and aId. It posts specific messages to the provided callbackUrl to indicate the success or failure of the conversation transfer. | Routing              |
-
-### Queue AI APIs
-
-| API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
-|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
-| [Create a Queue](../contact-center/create-a-queue.md)                                                               | To create a queue with the given streamId.                                                                   | Configuration        |
-| [Get a List of Queues](../contact-center/get-a-list-of-queues.md)                                                   | To get a list of queues with the given streamId.                                                             | Configuration        |
-| [Get a List of Agents or Queues](../contact-center/get-a-list-of-agents-or-queues.md)                               | To get all agents if you have queueIds and all the queues if you have agentIds.                               | Configuration        |
-| [Get a Specific Queue](../contact-center/get-a-specific-queue.md)                                                   | To get a specific queue with the given streamId and queueId.                                                 | Configuration        |
-| [Update a Specific Queue](../contact-center/update-a-specific-queue.md)                                             | To update a specific queue with the given streamId and queueId.                                               | Configuration        |
-| [Delete a Queue](../contact-center/delete-a-queue.md)                                                               | To delete a specific queue with the given streamId and queueId.                                               | Configuration        |
-
-### Quality AI APIs
+## Quality AI APIs
 
 | API                                                                                               | DESCRIPTION                                                                                                  | ASSOCIATED APP SCOPE |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------|
 | [Raw Data API](../contact-center/qm-apis/raw-data-api.md)                                                               | Provides detailed Quality AI and Conversation Intelligence data, including quality metrics and analytics for each interaction.                                                                   | Configuration        |
 | [Auto QA Reporting API](../contact-center/qm-apis/auto-qa-reporting-api.md)                                                   |Provides interaction-level Auto QA scoring and metric qualification based on the associated Quality AI form.                | Configuration        |
-
-### WFM APIs
-
-| API                                                                                           | Description                                                                                                                      | Associated App Scope |
-|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [Agents API](../contact-center/agents.md)                                | To get all agent details associated with an accountId.                                                                          | WFM Integration       |
-| [Queues API](../contact-center/queues.md)                                | To get the Queues/Skills associated with an accountId.                                                                          | WFM Integration       |
-| [Agent Activity API](../contact-center/agent-activity.md)                | To get the agent status in real-time or changes stacked every 30 seconds.                                                       | WFM Integration       |
-| [Contact Volume API](../contact-center/contact-volume.md)                | To retrieve call volume details associated with a specified collection point for a given interval, including fields mapped to specific field names relevant to the Workforce Management (WFM) client. | WFM Integration       |
-
-### Campaigns API
-
-| API                | Description                                                                                                                                          | Associated App Scope |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [Send Outbound SMS](../contact-center/send-outbound-sms.md)  | This API enables sending outbound SMS messages through the platform's generic SMS channel. The capability can be integrated into applications or services to facilitate SMS communication with customers. | Outbound SMS          |
-
-### Hours of Operation API
-
-| API                | Description                                                                                                                                          | Associated App Scope |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [Hours of Operation](../contact-center/hours-of-operation.md) | To get the hours of operation by providing the orgId and queueId. | Configuration         |
