@@ -16,31 +16,6 @@ The Agent Platform now supports direct agent invocation through the new Preferre
 
 [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
 
-**Improved User Interface**
-
-The Agentic App interface has been redesigned to deliver a more consistent and informative user experience across all listing pages. These enhancements provide developers with essential information upfront, reducing navigation overhead and improving workflow efficiency.
-
-Key improvements
-
-* Enhanced listing pages - Consistent design across Agents, Tools, and Knowledge listings with comprehensive information displayed directly on list views.
-* Reduced navigation - Access critical details without drilling into individual items, streamlining the browsing experience.
-* Redesigned App Profile page - Improved layout and information architecture for better app overview and management.
-* Enhanced Configurations page - Optimized organization and presentation of configuration options. 
-
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
-
-**Enhanced Playground Experience**
-
-The simulate feature in the Agent platform has been transformed into Playground, featuring enhanced capabilities. This new experience provides developers and testers with a robust environment for building, debugging, and validating agent behavior more effectively.
-
-Key features
-
-* Chat History: View and manage past sessions to track interactions over time.
-* Resume Sessions: Resume previous conversations from where they were left off.
-* Improved user interface: Intuitive interface updates, including the ability to easily copy messages.
-* Clear agent identification in thought streaming.
-
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
 
 **Import/Export Enhancements**
 
@@ -50,7 +25,15 @@ The import/export feature now supports MCP server configurations and Memory Stor
 
 **Typeahead Support for Memory Access**
 
-The Agent Platform now includes intelligent type-ahead functionality across Code Tool and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
+The Agent Platform now includes type-ahead functionality across Code Tools and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
+
+
+**Improved User Interface**
+
+The Agentic App interface has been redesigned for consistent, informative listings, displaying essential information upfront to reduce navigation. Enhancements include streamlined Agent, Tools, and Knowledge listings, as well as improved App Profile and Configuration pages.
+
+The Simulate feature has been transformed into Playground with enhanced debugging and testing capabilities, including chat history management and the ability to resume previous sessions. The new interface offers improved usability, featuring easy message copying and clear agent identification during thought streaming.
+
 
 
 <font size="4">No-code and Pro-code Tools</font>
@@ -76,21 +59,21 @@ The Code Tools design page has been redesigned to streamline development workflo
 
 Key improvements
 
-* Object parameter type - Accept structured JSON input alongside existing string and number types.
-* Side-by-side layout - View parameters, code editor, and output simultaneously without scrolling.
-* Enhanced usability - Streamlined interface reduces context switching and accelerates development cycles.
+* Object parameter type: Accept structured JSON input alongside existing string and number types.
+* Side-by-side layout: View parameters, code editor, and output simultaneously without scrolling.
+* Enhanced usability: Streamlined interface reduces context switching and accelerates development cycles.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md)
 
 **MCP Tool Execution and Validation**
 
-The Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for full agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
+The Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for complete agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
 
 Key features
 
-* Direct tool execution - Test individual MCP tools immediately after configuration without creating full agents.
-* Dynamic input forms - Provide sample data through automatically generated parameter forms.
-* Real-time results - View execution output instantly.
+* Direct tool execution: Test individual MCP tools immediately after configuration without creating full agents.
+* Dynamic input forms: Provide sample data through automatically generated parameter forms.
+* Real-time results: View execution output instantly.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/configure-mcp-server.md)
 
@@ -98,7 +81,7 @@ Key features
 
 **AWS Bedrock Models Integration**
 
-Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to invoke the Bedrock models reliably.
+Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to reliably invoke the Bedrock models.
 
 Key benefits
 
@@ -108,12 +91,6 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-amazon-bedrock)
 
-**Export Evaluation Tables to CSV**
-
-Evaluation Studio now supports CSV export for evaluation tables from the three-dot menu, preserving all column data, scores, and footer metrics (e.g., pass%, fail%, avg, min, max).
-
-
-<font size="4">AI Safety, Security, and Governance</font>
 
 
 **Pre-authorize Integration using Basic Auth**
@@ -123,8 +100,13 @@ Agent Platform now supports Basic Authentication for pre-authorizing third-party
 Key benefits
 
 * Easy to implement using a secure API Key and Secret.
-* User-agnostic—it doesn’t maintain sessions or track user identity. Each request is treated independently.
+* User-agnostic - It doesn’t maintain sessions or track user identity. Each request is treated independently.
 * The same credentials remain valid until the connection expires, eliminating the need for re-authentication.
+
+
+**Export Evaluation Tables to CSV**
+
+Evaluation Studio now supports CSV export for evaluation tables from the three-dot menu, preserving all column data, scores, and footer metrics (e.g., pass%, fail%, avg, min, max).
 
 
 <font size="4">Other Improvements</font>
