@@ -14,7 +14,7 @@ This section guides you through the case configuration process, highlighting the
 
 * **[Priority](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#priority-configuration)**: Set up priority levels to determine the urgency and order where agents can address the corresponding cases and tasks.
 
-* **[User Management]**(https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues. [Learn More]
+* **[User Management](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}**: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues. [Learn More]
 
 By configuring these elements, you can create a case management system aligned with your specific workflows, improving agent productivity and enhancing the quality of customer service. 
 
@@ -540,7 +540,7 @@ Steps to add a new priority:
 
     e. Turn on the **Priority Status** toggle switch to make it available to agents. 
 
-3. Click **Save** to add the new priority. The new priority is listed on the **Priority** page and is set to **Active** by default.
+3. Click **Save** to add the new priority. The new priority is listed on the **Priority** page, and is set to **Active** by default.
 
 ### Tips for Priority Configuration
 
