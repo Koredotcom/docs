@@ -86,7 +86,7 @@ The following sections provide the setup process of the case management, enable 
 
     * **Automation Failure**: If automation fails, the conversation goes to Agent 1 or Agent 2.
 
-        * **Case Creation**: If Agent 1 creates a case, it is assigned to Agent 3 or Agent 4. [Learn more](#case-creation-process-67).
+        * **Case Creation**: If Agent 1 creates a case, it is assigned to Agent 3 or Agent 4. [Learn more](https://docs.kore.ai/xo/case%20management/manage-cases-and-tasks/?h=manage+case#create-a-case).
 
         * **Case Handling**: Agent 1 can close the conversation, but the case remains open for further action by the assigned agent.
 
@@ -94,9 +94,9 @@ The following sections provide the setup process of the case management, enable 
 
     Configure the following access controls (user management and role settings):
 
-    * **Manage Users:** See [Manage Users](https://docs.kore.ai/xo/user-management/manage-users/?h=manage+users){:target="_blank"} 
+    * **[Manage Users](https://docs.kore.ai/xo/user-management/manage-users/?h=manage+users){:target="_blank"}**
 
-    * **User Attributes:** See [User Attributes](https://docs.kore.ai/xo/user-management/manage-users/#attributes){:target="_blank"}
+    * **[User Attributes][User Attributes](https://docs.kore.ai/xo/user-management/manage-users/#attributes){:target="_blank"}**
 
 10. **Set Case Handling Capacity and Languages**
 
