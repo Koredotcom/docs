@@ -40,17 +40,17 @@ The following sections provide the setup process of the case management, enable 
 
 6. **Set Up Case Management Components**
 
-    * **Fields**: Create custom fields with different field formats as needed for your business (drop-downs, multi-selects, checkboxes, phone number, email, and URL).<span style="text-decoration:underline;"> [Learn more. ](#fields-configuration-12)</span>
+    * **[Fields](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#fields-configuration)**: Create custom fields with different field formats as needed for your business (drop-downs, multi-selects, checkboxes, phone number, email, and URL).
 
-    * **Statuses**: Create custom statuses under the status type based on business requirements. Add to the five default statuses as needed. [Learn more](#status-configuration-33). 
+    * **[Status](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#status-configuration)**: Create custom statuses under the status type based on business requirements. Add to the five default statuses as needed.  
 
-    * **Priorities**: Create custom priorities with values to automatically sort case severity to supplement the four default priorities. [Learn more](#priority-configuration-38). 
+    * **[Priority](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#priority-configuration)**: Create custom priorities with values to automatically sort case severity to supplement the four default priorities.  
 
-    * **Task Templates**: Create task templates to manage and automate tasks to support customers, including assignment options (unassigned, queue, individual agent, task creator). [Learn more](#task-templates-configuration-18)<span style="text-decoration:underline;">.</span>
+    *  **[Task Templates](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#task-templates-configuration)**: Create task templates to manage and automate tasks to support customers, including assignment options (unassigned, queue, individual agent, task creator). 
 
-    * **Additional Fields**: Add custom fields as needed from the custom fields that are necessary for a task. [Learn more](#fields-configuration-12)<span style="text-decoration:underline;">. </span>
+    * **[Additional Fields](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#add-fields)**: Add custom fields as needed from the custom fields that are necessary for a task. 
 
-    * **Case Templates**: Design case templates to help agents gather and reference information for various types of customer issues, including custom fields (name, description, and default assignment) and predefined tasks if required (unassigned, queue, individual agent, and case creator). [Learn more](#case-templates-configuration-25)<span style="text-decoration:underline;">.</span>
+    * **[Case Templates](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#case-templates-configuration)**: Design case templates to help agents gather and reference information for various types of customer issues, including custom fields (name, description, and default assignment) and predefined tasks if required (unassigned, queue, individual agent, and case creator). [Learn more](#case-templates-configuration-25)<span style="text-decoration:underline;">.</span>
 
 7. **Set up Case Layout**
 
@@ -60,9 +60,9 @@ The following sections provide the setup process of the case management, enable 
 
     Validate your configuration process using the following test scenarios.
 
-* **Email Channel**: 
+* **Email Channel**
 
-    * Ensure that all components of the Case Management system, from case creation to resolution, function correctly in the email channel.
+    * Ensure that all components of the Case Management system, from case creation to resolution, function correctly in the email channel. 
 
     * Ensure the Case Management system is properly integrated with the email system.
 
@@ -70,7 +70,7 @@ The following sections provide the setup process of the case management, enable 
 
     * Prepare templates for case creation and communication.  
 
-* **Automation Process**:
+* **Automation Process**
 
     * Admin creates a flow with a call to automation.
 
@@ -78,9 +78,9 @@ The following sections provide the setup process of the case management, enable 
 
     * Create a new queue named **Case Queue** and add Agents 3 and 4.
 
-    * Create a new case template with **Case Queue** as the default assignee.<span style="text-decoration:underline;"> [Learn more.](#case-templates-configuration-25)</span> 
+    * Create a new [case template]((https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#case-templates-configuration)) with **Case Queue** as the default assignee.
 
-* **Conversation Process**:
+* **Conversation Process**
 
     * **Send Email**: Process the conversation through the flow under the “default queue”.
 

@@ -463,11 +463,13 @@ Agent console displays essential information for agents using the Case Managemen
 
 Before managing cases and tasks, ensure the following prerequisites are completed:
 
-* Set up a Channel and Chat/Voice Bot with Customer Support dialogs. 
-* Customers must have the option to select an agent during Bot/Voice interactions or conversations.
+* Set up a Channel and Chat or Voice Bot with Customer Support dialogs. 
+* Customers must have the option to select an agent during Bot or Voice interactions or conversations.
 * The customer should select the agent transfer option to initiate agent interaction.
 
-## Create a case
+## Case Creation Process
+
+### Create a case
 
 The system creates cases based on the configuration defined in Case Templates. You can handle a customer case using two methods: Automated or On-Demand.
 
