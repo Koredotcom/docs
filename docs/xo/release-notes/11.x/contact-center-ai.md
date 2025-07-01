@@ -77,27 +77,27 @@ New status and reason values (for example, No Answer, Busy, Network Failure, Ans
 
 **Start and Stop Campaigns**
 
-This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/start-sms-campaign.md)
+This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
 
 **Campaign Status and Results**
 
-This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/get-campaign-status.md)
+This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-status)
 
 **Add and Retrieve Contacts in Contact Lists**
 
 These APIs enable the management of contacts in Contact Lists programmatically.
 
-* The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/add-contacts-to-contact-list.md)
+* The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields.
 * The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.  
-[Learn more:octicons-arrow-right-24:](../../apis/contact-center/get-contact-list-details.md)
+[Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
 
 **Create, Retrieve, and Delete Campaigns**
 
 Introduced APIs for complete Campaign lifecycle management. These APIs can be used to:
 
-* Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/create-sms-campaign.md)
-* Retrieve all stored properties of a campaign using its Campaign ID. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/get-sms-campaign-by-id.md)
-* Remove a campaign using its Campaign ID. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/delete-sms-campaign.md)
+* Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic.
+* Retrieve all stored properties of a campaign using its Campaign ID.
+* Remove a campaign using its Campaign ID. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
 
 These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types. Campaigns created via API remain fully accessible and manageable through the UI.
 
@@ -105,9 +105,9 @@ These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types
 
 Added support for managing Contact Lists via public APIs, including a new type: `"API-Passive"`. These APIs can be used to:
 
-* Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/create-contact-list.md)
-* Retrieve all metadata for contact lists (excluding contact data). [Learn more:octicons-arrow-right-24:](../../apis/contact-center/get-contact-list-details.md)
-* Delete a contact list along with all its contacts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/delete-contact-list-details.md)
+* Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`.
+* Retrieve all metadata for contact lists (excluding contact data).
+* Delete a contact list along with all its contacts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
 
 These APIs enable users to automate contact list creation and management without requiring the use of the UI.
 
