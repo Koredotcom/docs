@@ -13,7 +13,7 @@ Key features
 * End-to-End Pipeline Testing: Processes each utterance through the full retrieval and LLM workflow, mirroring real-world behavior to uncover issues static testing might miss.
 * Model Configuration Flexibility: Supports testing across different combinations of embedding models and LLMs to identify the most effective configuration for your app.
 * Granular Performance Insights: Measure accuracy, precision, recall, and F1 score across all conversation types, including Dialogs, FAQs, Knowledge, and Conversation Intents.
-* Lifecycle Support: Enables batch testing for both in-development and published apps, supporting validation at any stage of the deployment lifecycle.
+* Lifecycle Support: Enables batch testing for both in-development and published apps, including support for both Standard and Multi-App Routing, allowing validation at any stage of the deployment lifecycle.
 
 
 Supported Conversation Types
@@ -47,19 +47,23 @@ To access Batch Testing, navigate to **Automation AI** > **Virtual Assistant** >
 
 ## Step 1. Test Suite Creation
 
-To conduct a batch test, you must create your own test suites. You can create test suites in two ways: either by uploading a CSV or JSON file or manually creating them. Each test suite comprises multiple test cases, which include key fields such as user utterance, expected intent, and fulfillment type.
+To conduct a batch test, you must create your own test suites. You can create test suites in two ways: either by uploading a CSV or JSON file or manually creating them. Each test suite comprises multiple test cases, which include key fields such as user utterance, expected intent, linked app, and fulfillment type.
 
 
 ### Uploading a File
 
 This method enables you to add multiple test cases simultaneously. You can download the sample CSV or JSON file formats while creating the test suite.
 
+!!! note
+
+    In the case of the Multi-App Routing, you must enter the linked app name in addition to the utterance, fulfillment category, and intent.
+
 Follow these steps:
 
 
 
 1. Navigate to **Automation AI** > **Virtual Assistant** > **Testing** > **Regression Testing** > **Batch Testing**.
-2. Click **+New test suite**.
+2. Click **+New Test Suite**.
 3. Enter the test **Name** and **Description**.
 4. Click **Upload File**. Select the file to upload and click **Add to Suite**.
 5. Click **Create Suite**. The created test is displayed.
@@ -67,18 +71,26 @@ Follow these steps:
 
 ### Quick Entry
 
-Add one test case at a time using a form. The form includes mandatory fields like User Utterance, Fulfillment Type, and Expected Intent. You can review and edit the test case before adding it to the test suite. If the fulfillment type is answer generation, the expected intent is automatically selected as answer generation.
+Add one test case at a time using a form. The form includes mandatory fields such as User Utterance, Fulfillment Type, and Expected Intent. You can review and edit the test case before adding it to the test suite.
+
+* If the fulfillment type is answer generation, the expected intent is automatically selected as answer generation.
+* If the fulfillment type is multi-intent, you can add up to five intents and reorder them in the order of execution.
+* If the fulfillment type is Ambiguous Intent, you can add a minimum of 2 and a maximum of 5 intents.
+
 
 Follow these steps:
 
 
 
 1. Navigate to **Automation AI** > **Virtual Assistant** > **Testing** > **Regression Testing** > **Batch Testing**.
-2. Click **+New test suite**.
+2. Click **+New Test Suite**.
 3. Enter the test **Name** and **Description**.
 4. Click **Quick Entry**.
-5. Enter the **User Utterance**, select the **Fulfillment Category** and **Expected Intent**.
-6. Click **Save and add another** to the next test cases or click **Add to suit**.
+5. Based on your app type:
+    * Standard App: Enter the **User Utterance**, select the **Fulfillment Category**, and **Expected Intent**.
+    * Multi-App Routing: Enter the **User Utterance**, select the **Fulfillment Category**, **Linked app** and **Expected Intent**.  
+    <img src="../images/multi-app.png" alt="Batch Testing - DialogGPT" title="Select Linked App" style="border: 1px solid gray; zoom:50%;"/>
+6. Click **Save and add another** to the next test cases, or click **Add to Suit**.
 7. Click **Create Suite**. The created test is displayed.
 
 
