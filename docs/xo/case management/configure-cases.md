@@ -32,7 +32,7 @@ Steps to access fields:
 
     <img src="../images/config-fields.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
-2. Select **Fields** from the left navigation panel in Case Management. 
+2. Select **Fields** from the left navigation panel in case management. 
 
 3. The **Fields** page displays listing system fields and management options. 
 
@@ -170,15 +170,15 @@ Steps to create a new task template:
 
     #### Basic Information
 
-    A task is a form that back-office employees or agents use to complete work on a Case.
-
+    Using the task form, back-office employees or agents complete work on a case through tasks.
+    
     <img src="../images/new-task-template-basic-info.png" alt="New Task Template Basic Info" title="New Task Template Basic Info" style="border: 1px solid gray; zoom:70%;">
 
 1. Enter a **Name** for the task template that distinguishes it from others.
 
 2. Enter a brief **Description** about the task template for what it is used for and what tasks it includes.
 
-3. Based on your preferences, you can choose the following **Default Assignee** options provided:
+3. Based on your preferences, you can choose the following **Default Assignee** options provided.
 
     * **Unassigned**: By default, when a case is created with this configuration, it is not assigned to any individual.
 
@@ -420,7 +420,7 @@ There are two main categories of statuses:
 
 * **System Statuses**: You cannot edit the system-defined statuses, which are predefined.
 
-* **Custom Statuses**: Created by administrators to meet specific business needs, which you can edit, activate/deactivate, or delete as needed.
+* **Custom Statuses**: Created by administrators to meet specific business needs, which you can edit, activate or deactivate, or delete as needed.
 
 ### Access Status Configuration
 
@@ -458,7 +458,7 @@ Steps to add a new status:
 
         * **Closed**
 
-    3. Add a **Description** to provide context or explanation for the status's purpose (Optional).
+    3. Add a **Description** to provide context or explanation for the status's purpose (optional).
 
     4. Enable the **Status Settings** to make the status available for agents by clicking the toggle switch.
 
@@ -500,7 +500,7 @@ Steps to delete status:
 
 ## Priority Configuration
 
-Priority configuration in case management helps agents determine which cases and tasks need immediate attention. There are four priorities (Low, Medium, High, and Critical). The administrators can create custom priorities based on specific business requirements.
+Priority configuration in case management helps agents determine which cases and tasks need immediate attention. There are four priorities (**Low**, **Medium**, **High**, and **Critical**). The administrators can create custom priorities based on specific business requirements.
 
 There are two main categories of priorities: 
 
@@ -548,7 +548,7 @@ Steps to add a new priority:
 
 * Choose distinct colors for each priority level to make them easily distinguishable. 
 
-* Consider your business needs when creating custom priorities (for example, you might need an "**Emergency**" priority above "**Critical**).
+* Consider your business needs when creating custom priorities (for example, you might need an **Emergency** priority above **Critical**).
 
 ### Edit Priority
 
