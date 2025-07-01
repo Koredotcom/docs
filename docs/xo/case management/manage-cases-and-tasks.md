@@ -1,17 +1,14 @@
-# **Manage Cases and Tasks**
+# Manage Cases and Tasks
 
 Effectively managing cases and tasks is essential for agents to ensure timely resolutions and high customer satisfaction, from the moment cases and tasks are assigned until they are successfully resolved. 
-
 
 ## **Manage Cases**
 
 Managing cases involves a systematic approach to ensure that all aspects of a case are addressed efficiently and effectively.
 
-
 ## **Cases**
 
 A case is a formal record of a specific situation or problem that needs to be managed, addressed, or resolved. It refers to individual instances or records of an event, issue, or request that requires attention, tracking, and resolution.
-
 
 ### **Access Manage Cases **
 
