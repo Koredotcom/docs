@@ -202,7 +202,7 @@ Version 2:
 
 **Sample Request for specific call Ids**
 
-The “call Id” is the unique identifier for a voice call. The user can retrieve IVR voice conversation messages between a user and a bot for a specific call Id.
+The “call Id” is the unique identifier for a voice call. The user can retrieve IVR voice conversation messages between a user and an app for a specific call Id.
 
 ```json
 curl --location \

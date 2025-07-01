@@ -271,7 +271,7 @@ Uses templates with optional parameter substitution.
    </td>
    <td>Required
    </td>
-   <td> Name of the channel for which notifications to be sent (e.g., <code>ivr</code>, <code>hangouts</code>, <code>whatsapp</code>)
+   <td> Name of the channel for which notifications to be sent (e.g., <code>ivr</code>, <code>hangouts</code> and <code>whatsapp</code>)
 
    </td>
   </tr>
@@ -347,7 +347,7 @@ Uses templates with optional parameter substitution.
    </td>
    <td>Required
    </td>
-   <td>Identity key depending on the channel:- <code>ivr</code>: <code>email</code>, <code>hangouts</code>: <code>spaceId, <code>whatsapp</code>: <code>phone number</code> 
+   <td>Identity key depending on the channel:- <code>ivr</code>: <code>email</code>, <code>hangouts</code>: <code>spaceId, and <code>whatsapp</code>: <code>phone number</code> 
 </code><strong>Note:</strong> Other channels (e.g., <code>msteams</code>, <code>slack</code>) are not yet supported in public API v2.    
    </td>
   </tr>
