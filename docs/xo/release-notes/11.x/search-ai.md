@@ -10,7 +10,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Multi-Vector Search</font> 
 
-Search AI introduces Multi-vector Search that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
+Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
 
 For example, consider a document utilizing a dual-vector approach for information retrieval. One vector, generated from the document's content and title, captures detailed context. The other vector, derived from questions related to the content, anticipates user inquiries. By appropriately weighting these vectors, retrieval efficiency is significantly enhanced. This is because the vectors encompass various content aspects, such as title, content, and derived questions, resulting in improved alignment with diverse user queries.
 
@@ -26,7 +26,6 @@ Additional enhancements include:
 
 * **Markdown extraction support** for Hungarian, German, and Chinese, improving the accuracy of content parsing in these languages.
 * **Image-based extraction** and **Advanced HTML extraction** are now supported for German, enabling richer parsing of complex and visually structured documents.
-
 
 <font size="4">API Stage in Document Workbench</font>
 
@@ -44,11 +43,11 @@ With this enhancement, you can now include the following optional filter in the 
 
 Search AI introduces out-of-the-box connectors for the following platforms. These connectors enable seamless content ingestion from both cloud and self-hosted environments, expanding integration flexibility across enterprise systems.
 
-* Confluence Data Center
-* xMatters
-* Jira On-Prem
-* JFrog On-Prem
-* GitHub On-Prem
+* **Confluence Data Center**
+* **xMatters**
+* **Jira On-Prem**
+* **JFrog On-Prem**
+* **GitHub On-Prem**
 
 
 <font size="4">Enhancements to Existing Connectors</font>
