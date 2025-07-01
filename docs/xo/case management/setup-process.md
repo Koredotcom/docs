@@ -34,7 +34,7 @@ The following sections provide the setup process of the case management, enable 
 
     * **Send Invitations**: Email invitations to agents and supervisors.
 
-    * **Assign Roles**: Assign appropriate roles ([Learn more](https://docs.kore.ai/xo/user-management/role-management/)){:target="_blank"}, queues, and skills. [Learn more](https://docs.kore.ai/xo/user-management/manage-users/#queues-skills){:target="_blank"}.
+    * **Assign Roles**: Assign appropriate roles queues, and skills. [Learn more](https://docs.kore.ai/xo/user-management/manage-users/#queues-skills){:target="_blank"}.
 
     * **Case Capacity Limits**: Enable capacity limits for each agent as needed. [Learn more](https://docs.kore.ai/xo/user-management/manage-users/#chat-voice){:target="_blank"}.
 
@@ -117,6 +117,7 @@ The following sections provide the setup process of the case management, enable 
        <img src="../images/attribute-edit-cases.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
 
 5. Turn on the **Enable Case** toggle button to configure the **Maximum Case Handling Capacity** of the agent. 
+
     !!! Note
 
         Ensure that the maximum capacity for both **Case** and **Task** is limited to 15 each.
