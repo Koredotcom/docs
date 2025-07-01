@@ -94,15 +94,15 @@ The following sections provide the setup process of the case management, enable 
 
     Configure the following access controls (user management and role settings):
 
-    * **Manage Users:** See [Manage Users](https://docs.kore.ai/xo/user-management/manage-users/?h=manage+users){:target="_blank"}. 
+    * **Manage Users:** See [Manage Users](https://docs.kore.ai/xo/user-management/manage-users/?h=manage+users){:target="_blank"} 
 
-    * **User Attributes:** See [User Attributes](https://docs.kore.ai/xo/user-management/manage-users/#attributes){:target="_blank"}. 
+    * **User Attributes:** See [User Attributes](https://docs.kore.ai/xo/user-management/manage-users/#attributes){:target="_blank"}
 
 10. **Set Case Handling Capacity and Languages**
 
-    Steps for configuring case handling capacity and language settings:
-
-    1. Navigate to the **User Management**> **Manage Users**.
+    Steps for configuring case handling capacity and language settings: 
+    
+    1. Navigate to the **User Management** > **Manage Users**.
 
         <img src="../images/user-mgt.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
 
@@ -116,13 +116,13 @@ The following sections provide the setup process of the case management, enable 
 
        <img src="../images/attribute-edit-cases.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
 
-5. Turn on the **Enable Case** toggle button to configure the **Maximum Case Handling Capacity** of the agent.
-
+5. Turn on the **Enable Case** toggle button to configure the **Maximum Case Handling Capacity** of the agent. 
     !!! Note
 
-        Ensure that the maximum capacity for both **Case **and **Task **is limited to 15 each.
+        Ensure that the maximum capacity for both **Case** and **Task** is limited to 15 each.
 
 6. In the **Language Support**, select your desired language.
 
 7. Select the **Proficiency Level** against the supported language selected. [Learn more](https://docs.kore.ai/xo/app-settings/language-management/managing-languages-for-multilingual-vas/){:target="_blank"}.
+
 8. Click **Update Changes** to save your settings.
