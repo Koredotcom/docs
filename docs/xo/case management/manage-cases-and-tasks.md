@@ -114,7 +114,7 @@ A supervisor can view various cases created under the following menu items:
 
     !!! Note
 
-        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved **cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
+        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved** cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
 
     <img src="../images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
@@ -154,11 +154,9 @@ A supervisor can view various cases created under the following menu items:
 
         <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-
     * **Edit Comments**: Displays you to edit the entered comment related to the case.
        
        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
 
     * **Format**: Displays formatting icons to edit your email content, such as bold, italic, ordered list, and so on.
 
@@ -167,7 +165,6 @@ A supervisor can view various cases created under the following menu items:
     * **Events**: Displays the associated events related to the cases and tasks.
 
         <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
 
     * **Case Details**: Displays the information where the agent can view the following case details of a case, such as:
 
@@ -185,7 +182,6 @@ A supervisor can view various cases created under the following menu items:
            
             <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-
     * **More Information:** Displays the additional details about the case, such as:
 
         * **Last Updated by:** Displays the user name who has last updated the case.
@@ -202,11 +198,13 @@ A supervisor can view various cases created under the following menu items:
 
             <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-       **Note:** As an agent, you can manually update the case status based on progress or updates received from back office employees and other agents. For instance, you can create additional tasks to address any outstanding issues if the case is not marked as **Closed**.
+           !!! Note
+
+                As an agent, you can manually update the case status based on progress or updates received from back office employees and other agents. For instance, you can create additional tasks to address any outstanding issues if the case is not marked as **Closed**.
 
 ### Transfer or Update Cases
 
-The agent can transfer a case to another agent by selecting the **Assignee **from the dropdown list.
+The agent can transfer a case to another agent by selecting the **Assignee** from the dropdown list.
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
@@ -216,11 +214,13 @@ Under the case details section, select the **Resolve** from the status dropdown 
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard > My Cases > Closed**.
+When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard** > **My Cases** > **Closed**.
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-**Note:** You can view the status of all closed cases on the Dashboard and MANAGE CASES, see [Analyze Case Management](https://docs.google.com/document/u/0/d/1ndy96LGvktcgJhp1hhCaxLsX959EnPQ8TwOWGzZ4j0U/edit).
+    !!! Note
+
+        You can view the status of all closed cases on the Dashboard and MANAGE CASES, see [Analyze Case Management](https://docs.google.com/document/u/0/d/1ndy96LGvktcgJhp1hhCaxLsX959EnPQ8TwOWGzZ4j0U/edit).
 
    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
