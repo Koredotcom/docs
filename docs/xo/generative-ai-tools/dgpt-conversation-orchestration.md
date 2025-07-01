@@ -34,7 +34,7 @@ Use the Model Configurations card to select the models for Shortlisting Relevant
     * OpenAI GPT-4o mini
     * Azure OpenAI GPT-4o
     * Amazon Bedrock
-    * XO GPT – DialogGPT
+    * XO GPT - DialogGPT
   
 
 To configure the model and settings, click **Settings**. Select the model, adjust the settings if necessary, and click **Save**.
