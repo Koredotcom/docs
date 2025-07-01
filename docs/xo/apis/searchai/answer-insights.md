@@ -230,7 +230,7 @@ When invoking the **jobs API** for file export, the response contains a fileInfo
 }
 ```
 
-Refer to the **fileInfo** field in the response to get details of the exported file. The file can be downloaded from the **fileURL **in this field. The exported file contains the analytics data for the selected time frame in JSON format. It includes the details of the search query, generated answer along with the debug information including the relevant chunks, llm request and response parameters. 
+Refer to the **fileInfo** field in the response to get details of the exported file. The file can be downloaded from the **fileURL** in this field. The exported file contains the analytics data for the selected time frame in JSON format. It includes the details of the search query, generated answer along with the debug information including the relevant chunks, llm request and response parameters. 
 
 
 ### Exported JSON file Sample
