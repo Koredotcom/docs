@@ -4,7 +4,7 @@ The configure cases feature allows you to create cases for customer inquiries, i
 
 Enables administrators to configure the system to specific business needs through several key components:
 
-* **[Fields](#fields-configuration-12)**: Create and manage custom data fields that agents use to collect relevant information during case resolution.
+* **[Fields](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#fields-configuration)**: Create and manage custom data fields that agents use to collect relevant information during case resolution.
 
 * **[Task Templates](#task-templates-configuration-18)**: Develop standardized task sets to streamline management across various cases.
 
@@ -14,13 +14,15 @@ Enables administrators to configure the system to specific business needs throug
 
 * **[Priority](#priority-configuration-38)**: Set up priority levels to determine the urgency and order where agents can address the corresponding cases and tasks.
 
-* **[User Management]**: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues. [Learn More](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}. 
+* **[User Management]**[Learn More](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues.  
 
 By configuring the above elements, create a case management system aligned with your specific workflows to improve agent productivity and enhance customer service quality.
 
 ## Fields Configuration
 
-Fields are pieces of data that agents need to collect for a case. The system includes default required fields to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. Using the **Fields** section, you can create and manage these fields and use them to customize case templates.
+Fields are pieces of data that agents need to collect for a case. The system includes default required fields to create custom fields with different formats, such as dropdowns, checkboxes, phone numbers, emails, and URLs, based on your business needs. 
+
+Using the **Fields** section, you can create and manage these fields and use them to customize case templates.
 
 ### Access Fields
 
