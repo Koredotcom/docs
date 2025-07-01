@@ -54,7 +54,7 @@ The Platform now enhances agent transfers by sending a conversation summary of t
 
 **Call ID Support in the getMessage API**
 
-To improve access to bot-user conversation history for voice interactions, the `getMessage` API now accepts `callId` as an optional query parameter, in addition to the existing `sessionId`. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing.
+To improve access to bot-user conversation history for voice interactions, the `getMessage` API now accepts `callId` as an optional query parameter, in addition to the existing `sessionId`. It aims to reduce latency and infrastructure load for high-volume customers who retrieve conversational data for analysis and auditing.  [Learn more:octicons-arrow-right-24:](../../apis/automation/conversation-history.md)
 
 
 <hr>
