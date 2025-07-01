@@ -71,7 +71,9 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 To access a tool template, follow the steps below:
 
-1. Sign in to the Agent Platform.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
 2. Click **Tools** on the top menu to access the **Tools** dashboard.
 3. If you are adding your first tool, click **Tool templates**.
 <img src="../images/first-tool-teplate.png" alt="first tool" title="first tool" style="border: 1px solid gray; zoom:60%;">

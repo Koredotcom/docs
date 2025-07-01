@@ -34,7 +34,7 @@ The **Model Analytics Dashboard** is a comprehensive analysis and monitoring sol
 
 To access the **Model Analytics** dashboard, follow the steps below:
 
-1. Navigate to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Model Analytics** tab on the right-hand side screen.
 <img src="../images/model-analysis-dashboard-access.png" alt="model analytics dashboard" title="model analytics dashboard" style="border: 1px solid gray; zoom:75%;">

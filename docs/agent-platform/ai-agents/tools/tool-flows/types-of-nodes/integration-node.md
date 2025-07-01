@@ -36,24 +36,27 @@ To add a connection, click **+ Add Connection**. The system redirects to **Setti
 
 To add and configure the Integration node, follow the steps below:
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed. 
-<img src="../images/select-tools-tab.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.
-3. In the flow builder, click **Integration** > **+ New Integration** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **Integration** in the pop-up menu.
+2. Click the **Tools** tab, and select the tool to which you want to add the node. The Tool flow page is displayed.
+   <img src="../images/select-tools-tab.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
+
+3. Click **Go to flow** to edit the in-development version of the flow.
+4. In the flow builder, click **Integration** > **+ New Integration** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **Integration** in the pop-up menu.
 <img src="../images/add-int-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
 
-4. In the **Integration** window, either search for the required service or select from the listed options. [See](../../../../settings/integrations/about-integrations.md/#supported-integrations){:target="_blank"} the list of supported pre-built integrations.
+5. In the **Integration** window, either search for the required service or select from the listed options. [See](../../../../settings/integrations/about-integrations.md/#supported-integrations){:target="_blank"} the list of supported pre-built integrations.
 <img src="../images/integrations-list.png" alt="integrations list" title="integrations list" style="border: 1px solid gray; zoom:75%;">
 
-5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
+6. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
     <p>The node uses the service provider’s name by default. You can rename the node if needed.</p>
 </div>
 
-<ol start="6"><li>Enter or select inputs for the following fields:</li>
+<ol start="7"><li>Enter or select inputs for the following fields:</li>
 <ul><li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>Ahrefslinkbuilder</i>” (Only letters and numbers are allowed).</li>
 <li><b>Connection Name</b>: Select a connection from the listed options. The list includes all the active connections you have added and configured under <b>Settings</b> > <b>Integrations</b>.</li>
 <img src="../images/select-connection-name.png" alt="select connection" title="select connection" style="border: 1px solid gray; zoom:75%;"></ul>

@@ -8,7 +8,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/agent-platform_favicon.svg
+  favicon: images/Kore_logo_new.svg
   name: material
   custom_dir: overrides.en.agent-platform
   features:

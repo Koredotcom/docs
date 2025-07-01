@@ -24,18 +24,18 @@ You can choose to:
 
 To export an Agentic app:
 
-* Open the Agentic App.
-* Go to the Export/Import page.
-* Click on the Export button on the top right.
+1. Open the Agentic App.
+1. Go to the Export/Import page.
+1. Click on the Export button on the top right.
 
     <img src="../images/export-agent.png" alt="Export Agent" title="Export Agent" style="border: 0px solid gray; zoom:65%;">
 
-* Next, select the type of export you want. You can export the entire app, including agents and tools, or selectively export one or more agents. 
+1. Next, select the type of export you want. You can export the entire app, including agents and tools, or selectively export one or more agents. 
 
     <img src="../images/export-agent-app.png" alt="Export Agent App" title="Export Agent App" style="border: 0px solid gray; zoom:65%;">
 
-* For app export, select the versions of the apps and the agents you want to export and click Export App.
-* For exporting one or more agents, select the agents and the corresponding versions to be exported and click on Export Agent button at the bottom.
+1. For app export, select the versions of the apps and the agents you want to export and click Export App.
+1. For exporting one or more agents, select the agents and the corresponding versions to be exported and click on Export Agent button at the bottom.
 
     <img src="../images/export-two-agents.png" alt="Export two Agents" title="Export two Agents" style="border: 0px solid gray; zoom:65%;">
 

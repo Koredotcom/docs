@@ -1,99 +1,86 @@
-# Function Node - Automate Script Executions
+# Function Node - Automate Function Execution
 
-Function nodes let you write custom scripts using JavaScript or Python to process context variables or other variables used in the tool flow.
+A **Function** node lets you write and execute custom scripts using JavaScript or Python, or use custom functions within a script you have imported and deployed within the tools automation flow.
 
 ## Add and Configure a Function Node
 
-Setting up a Function node in a tool flow involves adding the node at the appropriate location in the flow and configuring various node properties.
+Setting up a Function node includes adding it at the appropriate location in the flow and configuring its properties.
 
 Steps to add and configure the node:
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool flow page is displayed. 
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.
+2. Click the **Tools** tab, and select the tool to which you want to add the node. The Tool flow page is displayed. 
 
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, drag the **Function** node from the Assets panel onto the canvas.)
-
-4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+3. Click **Go to flow** to edit the in-development version of the flow.
+4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, drag the **Function** node from the Assets panel onto the canvas.)
+5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.  
 <img src="./../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
-5. Enter or select the following information:
+6. Enter or select the following information:
 
-    * **Custom Name**: Enter an appropriate name for the node.
+    * **Node Name**: Enter an appropriate name for the node based on its functionality or purpose.
 
-    * **Define a Script**: You can define a script using Javascript or Python to process/parse the given input or the output of the previous node. Click anywhere in the **Define a Script** field to open the **Script Editor** dialog box.  
-    <img src="./../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
+    * Select one of the following options to define and execute a function within the node:
 
-        1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. You can use variables or context variables in the Script Editor. For example, to read an input variable, use the following syntax:
-            ~~~
-            context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
-            ~~~
-            To call a function, use the following syntax:
-            ~~~
-            context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>)
-            ~~~
+        * **Write Code**: Write a custom code in the built-in editor for the function you want to execute. [Learn more](../types-of-nodes/function-node.md/#using-write-code){:target="_blank"}.
+        * **Custom Function**: Use a custom function from an imported and deployed script. [Learn more](../types-of-nodes/function-node.md/#execute-a-custom-function){:target="_blank"}.
 
-            !!! note
-                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or numpy. [Learn more](./script-libraries.md).
+        For the above options, you can define a script in JavaScript or Python with specific logic, static or dynamic input arguments, and output values.
+    
+<ol start="7"><li>Click the <b>Connections</b> icon in the left navigation and select <b>Go to Node</b> for success and failure conditions. </li>
+<img src="./../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;"></ol>
 
-        2. You can use the Context input or output feature to use a variable from the previous node or when testing a function.
-            * **Context Input**: Add the required variable; dummy input values can be given to test the defined function.
-            * **Context Output**: Shows the results of the function from the given input.
-            * **Log**: Monitor the state of the function and view the values.
+* **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to an AI node to use the processed data from the Function node.
+* **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
-        3. Click **Run** to test the script. Once the script is resolved successfully, the results are displayed in the Log section.
-        4. Close the Script Editor.
+<ol start="8"><li>Finally, test the flow and fix any issues found.</li></ol>
 
-6. Click the **Connections** icon in the left navigation and select **Go to Node** for success and failure conditions.  
-<img src="./../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;">
-    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to an AI node to use the processed data from the Function node.
-    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
-
-7. Finally, test the flow and fix any issues found. 
 !!! failure "Standard Errors"
 
     You can see compilation and runtime errors, if any, during the execution of the script/node.
 
-## Test the Flow
+## Define and Execute a Function For The Node
 
-After adding and configuring the node as mentioned [here](https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/function-node/){:target="_blank"}, follow the steps below to test the flow:
+The node provides two options to define and execute its function:
 
-### Step 1: Define and Test the Function Code
+### Using Write Code
 
-To define the logic and flow of the script, follow the steps below:
+To write a custom function code from scratch (define its logic and flow), follow the steps below:
 
-1. In the **Define a Script** window, click the **Expand** icon to view and edit your code in the script editor.
+1. Select the **Write Code** option and click the **Expand** icon to open the script editor.
 <img src="../images/define-a-script-window.png" alt="define a script window" title="define a script window" style="border: 1px solid gray; zoom:80%;">
 
-2. Select the required coding format.
-<img src="../images/select-coding-format.png" alt="coding format" title="coding format" style="border: 1px solid gray; zoom:80%;">
+2. Follow the steps below to complete the process.
 
-3. Use [these](../types-of-nodes/function-node.md/#syntaxes-for-the-context-input){:target="_blank"} syntaxes to define the code in JavaScript or Python. You can add [static](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"} or [dynamic](../types-of-nodes/function-node.md/#define-dynamic-input-variables){:target="_blank"} input variables in the code to generate the output.
-<img src="../images/dynamic-context.png" alt="dynamic context" title="dynamic context" style="border: 1px solid gray; zoom:80%;">
+    * Select the required coding format in the script editor.
+      <img src="../images/select-coding-format.png" alt="coding format" title="coding format" style="border: 1px solid gray; zoom:80%;">
 
-<ol start="4"><li>Click <b>Run</b> in the script editor to test the code.</li>
-<img src="../images/run-script.png" alt="run script" title="run script" style="border: 1px solid gray; zoom:80%;"></ol>
+    * Use [these](../types-of-nodes/function-node.md/#syntaxes-for-the-context-input){:target="_blank"} syntaxes to define the code in JavaScript or Python. You can add [static](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"} or [dynamic](../types-of-nodes/function-node.md/#define-dynamic-input-variables){:target="_blank"} input variables in the code to generate the output.
+        <img src="../images/dynamic-context.png" alt="dynamic context" title="dynamic context" style="border: 1px solid gray; zoom:80%;">
+
+    * Click <b>Run</b> in the script editor to test the function.
+        <img src="../images/run-script.png" alt="run script" title="run script" style="border: 1px solid gray; zoom:80%;">
     
-The script editor has the following tabs representing the code components:
+    The script editor has the following tabs representing the code components:
 
-* **Context Input**: Displays the context input(s) fetched from the **Start** node or the static inputs in the code.
-<img src="../images/context-ip.png" alt="context input" title="context input" style="border: 1px solid gray; zoom:80%;">
+    <ul><li><b>Context Input</b>: Displays the context input(s) fetched from the <b>Start</b> node or the static inputs in the code.</li>
+    <img src="../images/context-ip.png" alt="context input" title="context input" style="border: 1px solid gray; zoom:80%;"></ul>
+    <ul><li><b>Context Output</b>: Displays the output generated by the script.</li>
+    <img src="../images/context-output.png" alt="context output" title="context output" style="border: 1px solid gray; zoom:80%;"></ul>
+    <ul><li><b>Log</b>: Displays the code execution log, including the output or error(s).</li>
+    <img src="../images/logs.png" alt="logs" title="logs" style="border: 1px solid gray; zoom:80%;"></ul>
 
-* **Context Output**: Displays the output generated by the script.
-<img src="../images/context-output.png" alt="context output" title="context output" style="border: 1px solid gray; zoom:80%;">
+#### Using Static or Dynamic Values in the Script
 
-* **Log**: Displays the code execution log, including the output or error(s).
-<img src="../images/logs.png" alt="logs" title="logs" style="border: 1px solid gray; zoom:80%;">
-
-### Using Static or Dynamic Values in the Script
-
-#### Define Static Input Variables
+##### Define Static Input Variables
 
 1. In the script editor, select the coding format from the dropdown.
 2. Define the input variables and their values as shown below.
 <img src="../images/static-code.png" alt="static code" title="static code" style="border: 1px solid gray; zoom:75%;">
 
-#### Define Dynamic Input Variables
+##### Define Dynamic Input Variables
 
 1. In the script editor, select the coding format from the dropdown.
 2. Define the input variables and define dynamic values using context variables in the [defined format](../types-of-nodes/function-node.md/#context-variables-for-dynamic-inputs){:target="_blank"}, as shown below.
@@ -106,7 +93,186 @@ The script editor has the following tabs representing the code components:
 
 <img src="../images/dynamic-inputs-python.png" alt="dynamic inputs py" title="dynamic inputs py" style="border: 1px solid gray; zoom:75%;">
 
-### Step 2: Test the Flow using Static or Dynamic Inputs
+#### Context Variables for Dynamic Inputs
+
+Before you [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
+
+#### Syntaxes for the Context Input
+
+**JavaScript**
+
+The recommended syntax to fetch dynamic variables using JS in the context input is: `{{context.steps.Start.variable-name}}` 
+
+For example, `context.steps.Start.Q3balance`
+
+**Python**
+
+The recommended syntax to fetch dynamic variables using Python in the context input is: `{{context["steps"]["Start"]["variable-name"]}}` 
+
+For example, `context["steps"]["Start"]["Q3balance"]`
+
+The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
+
+### Execute a Custom Function 
+
+Selecting **Custom Function** invokes a function from an imported and deployed script when running the node flow. The steps to set it up are summarized below:
+
+1. [Step 1: Select a Script](../types-of-nodes/function-node.md/#step-1-select-a-script){:target="_blank"}.
+2. [Step 2: Select a Function from the Script](../types-of-nodes/function-node.md/#step-2-select-a-function-from-the-script){:target="_blank"}.
+3. [Step 3: Map the Input Arguments.](../types-of-nodes/function-node.md/#step-3-map-input-arguments){:target="_blank"}.
+4. [Step 4: Test the Script and Function Configuration](../types-of-nodes/function-node.md/#step-4-test-the-script-and-function-configuration){:target="_blank"}.
+
+#### Step 1: Select a Script
+
+To select a custom script deployed in your account, follow the steps below:
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The deployed scripts are listed under <b>Settings</b> > <b>Manage custom scripts</b>. <a href="https://docs.kore.ai/agent-platform/settings/manage-custom-scripts/custom-scripts/" target="_blank">Learn more</a>.</p>
+</div>
+
+1. Select the **Custom function** option for the **Function** node.
+2. Select a deployed script from the list to invoke its function by specifying the **Script name**. 
+   <img src="../images/select-deployed-script.png" alt="select deployed script" title="select deployed script" style="border: 1px solid gray; zoom:75%;">
+
+   If no scripts are deployed, the following message is displayed.    
+
+   <img src="../images/no-scripts-deployed.png" alt="no scripts deployed" title="no scripts deployed" style="border: 1px solid gray; zoom:75%;">
+
+To deploy a custom script, follow the steps below:
+
+* Click **Deploy custom scripts**.
+* The system navigates to the **Settings** > **Manage custom scripts** page.
+* Follow the steps mentioned [here](../../../../settings/manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"} to deploy a custom script.
+
+   Once an existing or new script is deployed (after a project is imported), it appears in the **Script name** list for the **Function** node.
+
+#### Step 2: Select a Function from the Script
+
+To select a function the node must execute, follow the steps below:
+
+1.  Choose the function the node should invoke from the list for **Function name**.
+    <img src="../images/select-function.png" alt="select function" title="select function" style="border: 1px solid gray; zoom:75%;"> 
+
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p><ul><li>All the functions defined in the main file are automatically listed in the dropdown.</li>
+    <li>Only one function can be selected at a time.</li>
+    <li>Functions from undeployed or draft script versions cannot be selected. Only deployed scripts are supported.</li>
+    <li>You can look up a specific function using the <b>search</b> option.</li>
+    <img src="../images/search-function.png" alt="search function" title="search function" style="border: 1px solid gray; zoom:75%;"></ul></p>
+    </div>
+ 
+ 
+When you select a function, the **Input Arguments** section appears. Arguments are automatically detected from the script and filled in the UI for you if specified in the function. If not, you must add values for each input parameter defined in the function, as discussed below.
+
+#### Step 3: Map Input Arguments
+
+The next step is to map input arguments of the selected function to static or dynamic values, as discussed below.
+
+<div class="admonition note">
+<p class="admonition-title">Important</p>
+<p>By default, all arguments passed to the function are currently sent as '<i>string</i>'. If your function requires other data types, please handle the necessary conversions within your custom script. Support for input type validation and native data types will be available soon.</p>
+</div>
+
+**Key Considerations**
+
+* Input parameters of the function in the script’s main file are automatically detected and displayed as fields in the UI.
+* You can assign either static or dynamic values to the input fields using context variables. Use the format mentioned here for dynamic values.
+
+    **Static values**
+
+    Type the values in the text field.
+
+    <img src="../images/static-values.png" alt="static values" title="static values" style="border: 1px solid gray; zoom:75%;">
+
+    **Dynamic Values**
+
+    To map dynamic values, type the context object format and select the appropriate variable(s) from the suggestions, as shown in the example below.
+    <img src="../images/map-dynamic-values.png" alt="dynamic values" title="dynamic values" style="border: 1px solid gray; zoom:75%;">
+
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p><ul><li>When double curly braces “<code>{{</code>“ are typed in the value field, suggestions for context objects appear.</li>
+    <li>These suggestions list all context objects available for the flow in a list.</li>
+    <li>You can also search from the list to select.</li>
+    <li>Click <b>+ Add</b> to add more input arguments and values (key-value pair), and the <b>Delete</b> icon to remove. </li>
+    <img src="../images/add-and-delete.png" alt="add and delete" title="add and delete" style="border: 1px solid gray; zoom:75%;"></ul></p>
+    </div>
+
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>The <b>Add</b> button lets you dynamically pass arguments to your function. If the function doesn't support additional arguments, it will fail.</p>
+    </div>
+
+* Input argument mapping is required for deployment. You can test the function and tool, but can’t deploy until the mapping errors shown below are fixed. 
+ <img src="../images/input-validation.png" alt="input validation error" title="input validation error" style="border: 1px solid gray; zoom:75%;">
+ 
+#### Step 4: Test the Script and Function Configuration
+
+
+To test the custom function configuration, follow the steps below:
+
+1. Click the **Test** button in the **General Settings** panel.
+   
+     <img src="../images/click-test-button.png" alt="click test" title="click test" style="border: 1px solid gray; zoom:75%;">
+
+<ol start="2"><li>In the <b>Input</b> panel, enter values to test the code. Configured values appear by default, but you can edit or reset them as needed.</li>  
+<img src="../images/input-panel.png" alt="input panel" title="input panel" style="border: 1px solid gray; zoom:75%;">
+<li>Click <b>Execute</b> to run the function with the configured input arguments.</li></ol>
+
+
+### Results Panel
+
+In this example, for a Banking tool flow, the `appendCustomerName` function from the `GenerateFullName` script is executed with `firstName` and `lastName` as input arguments. The function combines them to generate the full name. After execution, the following details appear in the Results panel:
+
+**Input**
+
+All the configured input parameters and their values are displayed in this section.
+
+**Edit Input**
+
+To edit inputs for the function and re-execute tests, click **Edit input**.
+<img src="../images/edit-input.png" alt="edit input" title="edit input" style="border: 1px solid gray; zoom:75%;">
+ 
+**Output**
+
+From the Output API response, the **result** (of the function code) and **function run ID keys** from the container are shown in this section. The time taken to generate the output is also displayed. 
+
+Click the **Copy** icon to copy the output.
+
+**Success Scenario** 
+
+<img src="../images/success-scenario.png" alt="success scenario" title="success scenario" style="border: 1px solid gray; zoom:75%;">
+
+
+**Error Scenario**
+
+<img src="../images/error-scenario.png" alt="error scenario" title="error scenario" style="border: 1px solid gray; zoom:75%;">
+
+**Key Considerations**
+
+* Successful API calls return output values from the script.
+* The function’s **result key** value from the script is saved to the function node’s output (End node) as <code>{{context.steps.functionnodename.output}}</code>.
+* Errors are displayed in the panel if an API request fails. The error logs are also displayed.
+<img src="../images/function-error-logs.png" alt="error logs" title="error logs" style="border: 1px solid gray; zoom:75%;">
+
+* The function’s **error/stderr** value from the script is saved to the function node’s output (End node) as <code>{{context.steps.functionnodename.error}}</code>.
+
+**Logs**
+
+The **Logs** section displays success and error logs from function execution to support debugging.
+
+Values under the `stdout` and `stderr` keys are shown here.
+<img src="../images/logs-screen.png" alt="logs screen" title="logs screen" style="border: 1px solid gray; zoom:75%;">
+
+After testing the custom function, the final step is to run and test the complete flow. [Learn more](../types-of-nodes/function-node.md/#test-the-node-flow){:target="_blank"}.
+
+## Test the Node Flow 
+
+After adding and configuring the node as mentioned [here](../types-of-nodes/function-node.md/#add-and-configure-a-function-node){:target="_blank"}, follow the steps below to test the flow:
+
+### Step 1: Add Static or Dynamic Inputs
 
 ### Static Inputs
 
@@ -117,7 +283,7 @@ To run the flow for static inputs, follow the steps below:
 <p>In this case, you do not need to add input variables using the <b>Start</b> node.</p>
 </div>
 
-1. [Add/edit your script](../types-of-nodes/function-node.md/#step-1-define-and-test-the-function-code){:target="_blank"} in the editor by defining static variables. [Learn more](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"}.
+1. Manually enter the required static input arguments and their values in the script editor. [Learn more](../types-of-nodes/function-node.md/#define-static-input-variables){:target="_blank"}.
 2. Click the **Run Flow** button at the top-right corner of the flow builder.
 
 ### Dynamic Inputs
@@ -132,7 +298,7 @@ To run the flow for dynamic inputs, follow the steps below:
 <img src="../images/add-input-vars-function-node.png" alt="add input var" title="add input var" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Click <b>Save</b>.</li></ol>
 
-Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}.
+Once you define the input variables, you must [add the output variable(s)](../types-of-nodes/function-node.md/#step-2-add-the-output-variable){:target="_blank"} and [run the flow](../types-of-nodes/function-node.md/#step-3-run-the-tool-flow){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
@@ -140,7 +306,7 @@ Once you define the input variables, you must [add the output variable(s)](../ty
 <li>Once you run the node’s flow, the result gets stored in the output variable of the <b>Start</b> node. Additionally, this key is mapped to the <b>End</b> node, where you can define its value.</li>
 <img src="../images/output-variable-start-node.png" alt="end node key" title="end node key" style="border: 1px solid gray; zoom:75%;"></ul></p></div>
 
-### Add the Output Variable
+### Step 2: Add the Output Variable
 
 To define the output variable, follow the steps below:
 
@@ -151,9 +317,9 @@ To define the output variable, follow the steps below:
 <li>Click <b>Save</b>.</li>
 <img src="../images/save-output-variable-window.png" alt="save output variable" title="save output variable" style="border: 1px solid gray; zoom:75%;"></ol>
 
-### Run the Flow
+### Step 3: Run the Tool Flow
 
-To run and test the flow, follow the steps below:
+To run and test the tool flow, follow the steps below:
 
 1. Click the **Run Flow** button at the top-right corner of the flow builder.
 <img src="../images/run-flow-function-node.png" alt="run flow" title="run flow" style="border: 1px solid gray; zoom:75%;">  
@@ -179,24 +345,4 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 <p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
 </div>
 
-## Context Variables for Dynamic Inputs
-
-Before you [run the flow](../types-of-nodes/function-node.md/#run-the-flow){:target="_blank"}, provide clear instructions for the model to follow by [adding the input variable(s)](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"} using **context variables**. Context variables allow you to include dynamic values in the script that a node executes to generate its output. The JSON code editor supports both **JavaScript** and **Python** formats.
-
-
-## Syntaxes for the Context Input
-
-**JavaScript**
-
-The recommended syntax to fetch dynamic variables using JS in the context input is: `{{context.steps.Start.variable-name}}` 
-
-For example, `context.steps.Start.Q3balance`
-
-**Python**
-
-The recommended syntax to fetch dynamic variables using Python in the context input is: `{{context["steps"]["Start"]["variable-name"]}}` 
-
-For example, `context["steps"]["Start"]["Q3balance"]`
-
-The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md/#dynamic-inputs){:target="_blank"}.
 
