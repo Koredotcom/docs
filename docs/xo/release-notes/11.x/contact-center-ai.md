@@ -12,7 +12,8 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Real-Time Translation in Agent Console**
 
-Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center. [Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
+Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center.  
+[Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
 
 **Queue-Based Consult Call for Voice Channel**
 
@@ -70,32 +71,33 @@ Translation capabilities
 
 **Status Tracking for Campaign Outbound Calls**
 
-New status and reason values (for example, No Answer, Busy, Network Failure, Answer Machine Detected, Hang-ups) are extended to Campaign Outbound calls. These updates apply across the Interactions dashboard (list, detail, export), Reports (Detail and Segment), and APIs (Conversation List, Details, and Export). This ensures consistent reporting and visibility across all outbound call types.
+New status and reason values (for example, No Answer, Busy, Network Failure, Answer Machine Detected, Hang-ups) are extended to Campaign Outbound calls. These updates apply across the Interactions dashboard (list, detail, export), Reports (Detail and Segment), and APIs (Conversation List, Details, and Export). This ensures consistent reporting and visibility across all outbound call types. 
 
 <font size="4">API</font>
 
 **Start and Stop Campaigns**
 
-This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts.
+This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
 
 **Campaign Status and Results**
 
-This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts.
+This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-status)
 
 **Add and Retrieve Contacts in Contact Lists**
 
 These APIs enable the management of contacts in Contact Lists programmatically.
 
 * The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields.
-* The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.
+* The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.  
+[Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
 
 **Create, Retrieve, and Delete Campaigns**
 
 Introduced APIs for complete Campaign lifecycle management. These APIs can be used to:
 
 * Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic.
-* Retrieve all stored properties of a campaign using its Campaign ID. Learn more.
-* Remove a campaign using its Campaign ID.
+* Retrieve all stored properties of a campaign using its Campaign ID.
+* Remove a campaign using its Campaign ID. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
 
 These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types. Campaigns created via API remain fully accessible and manageable through the UI.
 
@@ -103,9 +105,9 @@ These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types
 
 Added support for managing Contact Lists via public APIs, including a new type: `"API-Passive"`. These APIs can be used to:
 
-* Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`. Learn more.
-* Retrieve all metadata for contact lists (excluding contact data). Learn more.
-* Delete a contact list along with all its contacts.
+* Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`.
+* Retrieve all metadata for contact lists (excluding contact data).
+* Delete a contact list along with all its contacts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
 
 These APIs enable users to automate contact list creation and management without requiring the use of the UI.
 
@@ -116,7 +118,8 @@ The Outbound Calling API has been enhanced to improve AMD handling and support c
 * AMD Parameter Support: All AMD detection variables (`amd_human_detected`, `amd_machine_detected`, `amd_tone_detected`, etc.) are now available in both the context object and notify URL payload for use in Bot Builder.
 * Greeting Message in Context: The detected greeting message is now passed in the context for use in bot flows.
 * `greetingCompletionTimeoutMs` Handling: The timeout now functions correctly, preventing message cutoffs after `amd_machine_detected`.
-* Custom Notify URL Headers: The Dialout API now supports custom headers in the notify URL, enabling customers to receive enriched event data.
+* Custom Notify URL Headers: The Dialout API now supports custom headers in the notify URL, enabling customers to receive enriched event data.  
+[Learn more:octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg.md)
 
 <hr>
 
@@ -1613,7 +1616,7 @@ Voice Gateway now integrates with AmiVoice, a Japanese Automatic Speech Recognit
  
 <hr>
 
-## v11.2 June 01, 2024
+## v11.2.0 June 01, 2024
 
 <u>Patch Release</u>
 

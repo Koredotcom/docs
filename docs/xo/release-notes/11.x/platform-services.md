@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Audit Logs for Agent Profile Updates**
 
-Enhanced the User Management audit logs to capture all agent profile-related actions, including create, update, delete, activate/deactivate, and role or privilege changes. Each log entry includes a timestamp, the user who performed the action, and the target user's details. The system also logs failed or unauthorized attempts. These updates improve traceability, support compliance, and ensure complete visibility into user management activities. Learn more.
+Enhanced the User Management audit logs to capture all agent profile-related actions, including create, update, delete, activate/deactivate, and role or privilege changes. Each log entry includes a timestamp, the user who performed the action, and the target user's details. The system also logs failed or unauthorized attempts. These updates improve traceability, support compliance, and ensure complete visibility into user management activities. [Learn more:octicons-arrow-right-24:](../../administration/analytics.md#export-options)
 
 **App-to-App Communication Enabled for New Apps**
 
@@ -57,7 +57,9 @@ Key features
 * Multi-user messaging in a single API call.
 * JWT-based authentication for secure access.
 * Per-client rate limiting for system stability.
-* Granular logging for improved tracking and debugging.
+* Granular logging for improved tracking and debugging.  
+
+[Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
 <hr>
 

@@ -93,9 +93,15 @@ curl --location --request POST \
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-         "version":"inDevelopment" 
+         "version":"inDevelopment",
+         "engine":"dgpt"
          }'
 ```
+!!! note
+
+    * If [engine = "regression" (or) empty] or engine is not provided, it will execute for ML Batch Testing.
+
+    * If engine is set to "dgpt", it will execute for Dialog GPT Batch Testing.
 
 ## Body Parameters
 
