@@ -32,6 +32,10 @@ This is displayed only if an external NLU is enabled. If the API call fails, it 
 <img src="../images/ktrace.png" alt="K-Traceid and X-Traceid" title="K-Traceid and X-Traceid" style="border: 1px solid gray;zoom:50%;"/>
 
 
+* Hover over the information icon to view the K-Traceid and X-Traceid for each user interaction. The K-Traceid helps track and debug activities. The X-Traceid is a unique identifier for each message, included in the platform logs.  
+<img src="../images/ktrace.png" alt="K-Traceid and X-Traceid" title="K-Traceid and X-Traceid" style="border: 1px solid gray;zoom:50%;"/>
+
+
 * Under **Session Context & Variables**, you can see the variables for intents and entities in detail as shown in the following screenshots.  
 <img src="../images/external-nlu-test-and-debug-img3.png" alt="Session Context & Variables" title="Session Context & Variables" style="border: 1px solid gray;zoom:50%;"/>  
   
