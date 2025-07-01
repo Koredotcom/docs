@@ -10,7 +10,7 @@ The case management dashboard provides role-specific insights to support effecti
 
 The following Process flow diagram describes the critical stages involved in the case management.
 
-<img src="../case management/images/process-flow-diagram.png" alt="Process Flow" title="Process Flow" style="border: 1px solid gray;zoom:50%;"/>
+<img src="images/process-flow-diagram.png" alt="Process Flow" title="Process Flow" style="border: 1px solid gray;zoom:50%;"/>
 
 The following are the key components of the process flow:
 

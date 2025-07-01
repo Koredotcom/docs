@@ -2,18 +2,6 @@
 
 Agents can effectively manage cases and tasks to ensure timely resolutions and high customer satisfaction—from the moment they receive the assignments until they resolve them successfully.
 
-<<<<<<< HEAD
-## **Manage Cases**
-
-Managing cases involves a systematic approach to ensure that all aspects of a case are addressed efficiently and effectively.
-
-## **Cases**
-
-A case is a formal record of a specific situation or problem that needs to be managed, addressed, or resolved. It refers to individual instances or records of an event, issue, or request that requires attention, tracking, and resolution.
-
-### **Access Manage Cases **
-=======
-
 ## Manage Cases
 
 Managing cases involves a systematic approach to ensure that all aspects of a case are addressed efficiently and effectively.
@@ -22,197 +10,141 @@ Managing cases involves a systematic approach to ensure that all aspects of a ca
 
 A case is a formal record of a specific situation or problem that needs to be managed, addressed, or resolved. It refers to individual instances or records of an event, issue, or request that requires attention, tracking, and resolution.
 
-
 ### Access Manage Cases
->>>>>>> 3f75380c66b126da65cabfca9de55ddd66b6677b
 
-This section displays the overview of all cases that an agent has efficiently handled and resolved customer issues. To access manage cases, navigate to **Contact Center AI** > **Case Management **> **Manage Cases **> **Cases**.
+This section displays the overview of all cases that an agent has efficiently handled and resolved customer issues. 
 
+Access manage cases by navigating to **Contact Center AI** > **Case Management**> **Manage Cases**> **Cases**.
 
-
-<p id="gdcalert66" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image66.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert67">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image66.png "image_tooltip")
-
+<img src="images/accessing-cases.png" alt="Cases" title="Cases" style="border: 1px solid gray; zoom:70%;">
 
 Each case in the system includes the following details:
 
-
 * **ID:** Displays a unique identifier ID of a case or service request.
+
 * **Title**: Displays a brief title describing the service request. 
+
 * **Customer**: Displays the name of the customer who requested the case.
+
 * **Channels**: Displays the channel name through which the request is made (Web or Mobile Client).
+
 * **Status**: Displays the current state of the case.
+
 * **Priority**: Displays the priority level of the case (Critical, High, Medium, Low).
+
 * **Last Updated**: Displays the last updated date and time of the case.
+
 * **ETA**: Displays the estimated due date. It is calculated based on the due date and system date. If it is overdue, then it is due today or the target date.
+
 * **Assignee**: Displays the name of the agent to whom the case is assigned (not applicable for Unassigned, My Cases, and Closed).
 
 The users can access the additional menu items for the Cases:
 
 * **My Cases**: Cases assigned to the agent or back office employee.
-* **My Tasks**: Tasks assigned to the agent or back office employee.
-* **Closed**: Closed cases.
-* **Search Cases**: Enables searching for specific cases based on field values or content (for example, case ID, status, priority, keywords in case descriptions or notes).
 
+* **My Tasks**: Tasks assigned to the agent or back office employee.
+
+* **Closed**: Closed cases.
+
+* **Search Cases**: Enables searching for specific cases based on field values or content (for example, case ID, status, priority, keywords in case descriptions or notes).
 
 ### Create Cases (Outside the Agent Console)
 
 To create a new case:
 
-1. Navigate to **Contact Center AI > Case Management > Manage Cases > Cases**. The unresolved cases page displays.
+1. Access cases by navigating to **Contact Center AI** > **Case Management** > **Manage Cases** > **Cases**. The unresolved cases page displays.
     
-
-<p id="gdcalert67" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image67.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert68">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image67.png "image_tooltip")
-
+    <img src="images/manage-cases-new-case.png" alt="Create Cases" title="Create Cases" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **+ New Case**. the New Case dialog box is displayed with a default Case Number assigned.
-    
 
-<p id="gdcalert68" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image68.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert69">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image68.png "image_tooltip")
+    <img src="images/new-case-managecase.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **Requested by** field, enter the name of the customer.
+
 4. Choose a **channel** type from the drop-down list.
+
 5. In the voice, select the customer's **phone number** and **Country** from the drop-down list.
+
 6. In the Web/Mobile Client, enter customer’s **email address**.
+
 5. Select the case template from the **Case Type** drop-down list.
+
 6. Select a **Due Date** to complete the case.
+
 7. In the description, enter the conversation summary of the issue or service request.
+
 8. Write a **Case title** based on the issue raised by the customer.
+
 9. Select the **(Critical/High/Medium/Low)** from the priority level drop-down list. By default, the Status is set as Open.
+
 11. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent based on the case type assignment rules.
 
-**Note**: You must fill all the fields marked with a red asterisk (*).
+    !!! Note
 
+        You must fill all the fields marked with a red asterisk (*).
 
 ### View Cases
 
 A supervisor can view various cases created under the following menu items:
 
-
 * **Unresolved**: Cases that are still active (work-in-progress) and not yet resolved or closed.
 
-
-<p id="gdcalert69" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image69.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert70">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image69.png "image_tooltip")
-
+    <img src="images/unresolved-cases.png" alt="Unresolved" title="Unresolved" style="border: 1px solid gray; zoom:70%;">
 
 * **Unassigned**: Cases that are identified but not yet assigned to a case manager or team member.
 
-
-<p id="gdcalert70" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image70.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert71">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image70.png "image_tooltip")
-
+    <img src="images/unassigned-cases.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;">
 
 * **All Cases**: Displays a comprehensive view of all cases within the system, regardless of their status.
 
-
-<p id="gdcalert71" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image71.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert72">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image71.png "image_tooltip")
-
+    <img src="images/manage-all-cases.png" alt="All Cases" title="All Cases" style="border: 1px solid gray; zoom:70%;">
 
 * **My Cases**: Cases that are assigned to the agent or back office employee.
 
-
-<p id="gdcalert72" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image72.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert73">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image72.png "image_tooltip")
-
+    <img src="images/all-cases-my-cases.png" alt="My Cases" title="My Cases" style="border: 1px solid gray; zoom:70%;">
 
 * **Closed**: Cases that are completed and closed.
     
-
-<p id="gdcalert73" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image73.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert74">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image73.png "image_tooltip")
-
+    <img src="images/manage-all-cases-closed.png" alt="Closed" title="Closed" style="border: 1px solid gray; zoom:70%;">
 
 * **Search Cases**: Search for cases based on various field values (for example, case ID, status, priority).
 
+    <img src="images/search-cases.png" alt="Search Cases" title="Search Cases" style="border: 1px solid gray; zoom:70%;">
 
-<p id="gdcalert74" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image74.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert75">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    !!! Note
 
+        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved **cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
 
-![alt_text](images/image74.png "image_tooltip")
+    <img src="images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
-
-**Note**: The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved **cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
-
-
-<p id="gdcalert75" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image75.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert76">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image75.png "image_tooltip")
-
-
-The following is one example of an **Unresolved **Case page details that includes:
-
+    The following is one example of an **Unresolved** Case page details that includes:
 
 * **Description**: Displays a summary of the service request issue.
 
-
-<p id="gdcalert76" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image76.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert77">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image76.png "image_tooltip")
-
+    <img src="images/case-details-desc.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
 * **Tasks**: Displays the number of tasks created against a case assigned to an agent, which includes the unique task ID, task name, agent name, task status, and task priority level. 
+
     *  **Add New Task:** Allows you to add new tasks related to a case.
 
-
-<p id="gdcalert77" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image77.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert78">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image77.png "image_tooltip")
-
+        <img src="images/add-comments.png" alt="Case Details" title="Case Details" style="border: 1px solid gray; zoom:70%;">
 
     * **Custom:** This message appears when the **Custom Task** checkbox option is enabled for agents about a case while creating **Case Templates**. 
-* **Activity**: Shows the specific actions taken to manage a case.
 
-    * **Add Comments**: Shows the comment box related to an activity entered by the supervisor or agent.
+    * **Activity**: Shows the specific actions taken to manage a case.
 
-        
+    * **Add Comments**: Shows the comment box related to an activity entered by the supervisor or agent.        
 
-<p id="gdcalert78" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image78.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert79">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image78.png "image_tooltip")
-
+        <img src="images/add-comments.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Add Comment and Send as Email:** Allows you to add a comment and send as an email (along with the email address) before saving it to the comment.
 
-        
-
-<p id="gdcalert79" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image79.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert80">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image79.png "image_tooltip")
-
+        <img src="images/activity-comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Email:** Displays the email and standard response template to add the required details of the case.
 
-        
-
-<p id="gdcalert80" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image80.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert81">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image80.png "image_tooltip")
-
+        <img src="images/save-send-email.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **File attachment:** Displays the image or file attachment icons to support the case when you click the attachment icon.
 
