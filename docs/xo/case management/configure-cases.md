@@ -14,7 +14,7 @@ Enables administrators to configure the system to specific business needs throug
 
 * **[Priority](#priority-configuration-38)**: Set up priority levels to determine the urgency and order where agents can address the corresponding cases and tasks.
 
-* **[User Management]**: Add agents, assign roles, and set capacity limits for channels and cases. Configure skills and manage agent queues. [Learn More](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}. 
+* **[User Management]**: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues. [Learn More](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}. 
 
 By configuring the above elements, create a case management system aligned with your specific workflows to improve agent productivity and enhance customer service quality.
 

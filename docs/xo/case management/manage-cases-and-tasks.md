@@ -62,13 +62,13 @@ To create a new case:
 
 3. In the **Requested by** field, enter the name of the customer.
 
-4. Choose a **channel** type from the drop-down list.
+4. Choose a **channel** type from the dropdown list.
 
-5. In the voice, select the customer's **phone number** and **Country** from the drop-down list.
+5. In the voice, select the customer's **phone number** and **Country** from the dropdown list.
 
 6. In the Web/Mobile Client, enter customer’s **email address**.
 
-5. Select the case template from the **Case Type** drop-down list.
+5. Select the case template from the **Case Type** dropdown list.
 
 6. Select a **Due Date** to complete the case.
 
@@ -76,7 +76,7 @@ To create a new case:
 
 8. Write a **Case title** based on the issue raised by the customer.
 
-9. Select the **(Critical/High/Medium/Low)** from the priority level drop-down list. By default, the Status is set as Open.
+9. Select the **(Critical/High/Medium/Low)** from the priority level dropdown list. By default, the Status is set as Open.
 
 11. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent based on the case type assignment rules.
 
@@ -126,11 +126,11 @@ A supervisor can view various cases created under the following menu items:
 
 * **Tasks**: Displays the number of tasks created against a case assigned to an agent, which includes the unique task ID, task name, agent name, task status, and task priority level. 
 
-    *  **Add New Task:** Allows you to add new tasks related to a case.
+    *  **Add New Task**: Allows you to add new tasks related to a case.
 
         <img src="../images//case-task.png" alt="Case Details" title="Case Details" style="border: 1px solid gray; zoom:70%;">
 
-    * **Custom:** This message appears when the **Custom Task** checkbox option is enabled for agents about a case while creating **Case Templates**. 
+    * **Custom**: This message appears when the **Custom Task** checkbox option is enabled for agents about a case while creating **Case Templates**. 
 
     * **Activity**: Shows the specific actions taken to manage a case.
 
@@ -138,23 +138,22 @@ A supervisor can view various cases created under the following menu items:
 
         <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-    * **Add Comment and Send as Email:** Allows you to add a comment and send as an email (along with the email address) before saving it to the comment.
+    * **Add Comment and Send as Email**: Allows you to add a comment and send as an email (along with the email address) before saving it to the comment.
 
         <img src="../images/activity-comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-    * **Email:** Displays the email and standard response template to add the required details of the case.
+    * **Email**: Displays the email and standard response template to add the required details of the case.
 
         <img src="../images/save-send-email.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-    * **File attachment:** Displays the image or file attachment icons to support the case when you click the attachment icon.
-
+    * **File attachment**: Displays the image or file attachment icons to support the case when you click the attachment icon.
         
         <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
+    * **Standard Responses**: Displays the predefined text signatures to quickly select and send to the customers.
 
-    * **Standard Responses:** Displays the predefined text signatures to quickly select and send to the customers.
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-        <p id="gdcalert82" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image82.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert83">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     * **Edit Comments**: Displays you to edit the entered comment related to the case.
        
@@ -170,19 +169,19 @@ A supervisor can view various cases created under the following menu items:
         <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 
-    * **Case Details:** Displays the information where the agent can view the following case details of a case, such as:
+    * **Case Details**: Displays the information where the agent can view the following case details of a case, such as:
 
-        * **Status:** Displays the current status of the case.
+        * **Status**: Displays the current status of the case.
 
-        * **Priority:** Displays the priority level of the case.
+        * **Priority**: Displays the priority level of the case.
 
-        * **Assignee:** Displays the name of the agent that the case is assigned to or handled by.
+        * **Assignee**: Displays the name of the agent that the case is assigned to or handled by.
 
-        * **Reporter:** Displays the name of the user who has assigned the case.
+        * **Reporter**: Displays the name of the user who has assigned the case.
 
-        * **Customer:** Displays the customer's name.
+        * **Customer**: Displays the customer's name.
 
-        * **Due Date:** Displays the date and time when the case is due.
+        * **Due Date** Displays the date and time when the case is due.
            
             <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
@@ -207,13 +206,13 @@ A supervisor can view various cases created under the following menu items:
 
 ### Transfer or Update Cases
 
-The agent can transfer a case to another agent by selecting the **Assignee **from the drop-down list.
+The agent can transfer a case to another agent by selecting the **Assignee **from the dropdown list.
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Update or Resolve Case Status
 
-Under the case details section, select the **Resolve** from the status drop-down list.
+Under the case details section, select the **Resolve** from the status dropdown list.
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
@@ -327,7 +326,7 @@ Steps to **Add New Task**:
  
     <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-3. Select the Task Type for the related case from the drop-down list provided.
+3. Select the Task Type for the related case from the dropdown list provided.
 
 4. Select a **Due Date** to complete the task.
 
@@ -335,7 +334,7 @@ Steps to **Add New Task**:
 
 6. Enter a case **Title** based on the issue raised by the customer.
 
-7. Select the task **Priority (Critical, High, Medium, Low)** from the drop-down list.
+7. Select the task **Priority (Critical, High, Medium, Low)** from the dropdown list.
 8. By default, the **Status** is set to **Open**.
 
 9. Click **Save**. A success message of the task creation is displayed, and a new custom task is created and assigned to the agent.
@@ -400,7 +399,7 @@ The above page includes the following list of items:
 
 #### Transfer Task
 
-An agent can transfer a task to another agent by selecting the Assignee from the drop-down.
+An agent can transfer a task to another agent by selecting the Assignee from the dropdown.
 
 **Task Assignment**
 
@@ -420,70 +419,45 @@ This helps agents to understand the history of the task or case and the reason b
 
 * **Dashboard Monitor:** Check to visualize task statuses, outstanding items, and overall workload.
 
-    <img src="images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Track Activity:** After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
 
 Steps to View Task **Activity**:
 
 1. Click the **Expand** icon in the **Activity** section to view the activity related to an Event.	
+
 2. Click the **Comments** tab to view/add comments.
 
-<p id="gdcalert107" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image107.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert108">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image107.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**.
 
-
-<p id="gdcalert108" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image108.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert109">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image108.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 4. You can edit, delete, or add supported image files related to the task activity addressed.
+
 5. Click the **Events** tab to view all the events of a case that includes changes in status, updates, or actions taken by agents.
 
-<p id="gdcalert109" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image109.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert110">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image109.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 After tasks are completed, ensure that all the issues of the customers are addressed. All comments and events are filled with appropriate details created against each task. This plays a crucial role in tracking the progress of all communication made by the agents and ensuring that all relevant information is captured throughout the case lifecycle for future reference. 
 
-
 #### Update Task Status 
 
-Under the Task Details section, select the **Resolve** from the status drop-down list.
+Under the Task Details section, select the **Resolve** from the status dropdown list.
 
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-
-<p id="gdcalert110" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image110.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert111">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image110.png "image_tooltip")
-
-
-**Task Closure:**
+**Task Closure**:
 
 **Note:** Change each task’s status from 'Resolved' to 'Closed' once you complete all required actions. After completing all review processes, you can view the task status—such as Closed, Open, or Resolved—from the Agent **Dashboard > My Tasks > Closed**.
 
-
-<p id="gdcalert111" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image111.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert112">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image111.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Console
 
 Agent console displays essential information for agents using the Case Management Console, focusing on the initiation of customer interactions, case creation processes, and managing cases and tasks. It streamlines the case management workflow, ensuring quick response times and effective issue resolution.
-
 
 ### Prerequisites
 
@@ -492,7 +466,6 @@ Before managing cases and tasks, ensure the following prerequisites are complete
 * Set up a Channel and Chat/Voice Bot with Customer Support dialogs. 
 * Customers must have the option to select an agent during Bot/Voice interactions or conversations.
 * The customer should select the agent transfer option to initiate agent interaction.
-
 
 ## Create a case
 
@@ -504,16 +477,15 @@ The process of automated case creation are configured using public APIs for chan
 
 **Note:** When automated case creation is enabled, every qualified conversation automatically derives the case data, and thus, a case is created.
 
-
 ####  On demand
 
 On-demand refers to the live conversation with a customer through any channel (email, chat, or voice). The agent reviews the customer's issue or query and creates a case accordingly. Agents and Supervisors can create cases in the following ways:
 
 * [Offline Conversation](#offline-conversation-67)
+
 * [Live Conversation](#live-conversation-70)
 
 **Note:** Administrators can enable the on demand feature in the "**Manage Cases**" section and assign it to a specific agent instead of enabling it for everyone.
-
 
 ### Offline Conversation
 
@@ -522,8 +494,8 @@ Agents and supervisors can manually create cases based on information that are n
 The agents can create a case using the following processes: 
 
 * [Agent Console](#new-case-creation-68)
-* [Manage Cases ](#manage-cases-43)
 
+* [Manage Cases ](#manage-cases-43)
 
 ### Create a New Case
 
@@ -531,74 +503,62 @@ To create a new case:
 
 1. Navigate to **Contact Center AI > Agent Console**. The Agent Console displays.	
 
-<p id="gdcalert112" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image112.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert113">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image112.png "image_tooltip")
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+** icon, and then click **Create Case**. The New Case dialog box is displayed with a Case Number assigned along with the form.
 
-<p id="gdcalert113" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image113.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert114">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image113.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. In the Requested by field, enter the Name of the customer who has requested to create a new case, for an Issue, Inquiry, Complaint, or a Service request.
-4. Select a communication channel from the **Channels drop-down list (Voice**/**Web**/**Mobile Client)**.
-    * **Voice:** Select the Phone Number from the drop-down list, and add the selected country phone number that a customer belongs to.
-    * **Web/Mobile Client:** Enter the **Customer’s Email **address.
-5. Select the appropriate case template from the **Case Type** drop-down list, and complete it by capturing the details about the customer's issue or query.
-6. Enter the case **Title** based on the issue raised by the customer.
-7. Enter the case **Description** based on the conversation summary.
-8. Select the **Due Date** for the case.
-9. Select the case **Priority (Critical, High, Medium, Low)** from the drop-down list.
-10. By default, the **Status** is set to **Open**.
-11. Select the appropriate options in the **Sample** field to support the new case.
-12. Click **Save**. A success message is displayed, and a new case is created. **Note:** The created case gets assigned to agents based on the case type assignment rules.
 
+4. Select a communication channel from the **Channels dropdown list (Voice**/**Web**/**Mobile Client)**.
+
+    * **Voice**: Select the Phone Number from the dropdown list, and add the selected country phone number that a customer belongs to.
+
+    * **Web/Mobile Client**: Enter the **Customer’s Email** address.
+
+5. Select the appropriate case template from the **Case Type** dropdown list, and complete it by capturing the details about the customer's issue or query.
+
+6. Enter the case **Title** based on the issue raised by the customer.
+
+7. Enter the case **Description** based on the conversation summary.
+
+8. Select the **Due Date** for the case.
+
+9. Select the case **Priority (Critical, High, Medium, Low)** from the dropdown list.
+
+10. By default, the **Status** is set to **Open**.
+
+11. Select the appropriate options in the **Sample** field to support the new case.
+
+12. Click **Save**. A success message is displayed, and a new case is created. 
+
+**Note:** The created case gets assigned to agents based on the case type assignment rules.
 
 ### Live Conversation
 
 Agents create and track cases during real-time interactions via email, voice, or chat, enabling them to address customer issues promptly while the conversation is ongoing.
 
-
 ### Agent Transfer
 
 When a customer requests an agent, the system transfers the conversation by initiating a transfer workflow.
 
-
-<p id="gdcalert115" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image115.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert116">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image115.png "image_tooltip")
-
+ <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Notification Alert**
 
     The agent receives a notification alert in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/).
     
-
-<p id="gdcalert116" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image116.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert117">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image116.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Identify the Issue or Inquiry**
 
 Once the system notifies the agent, the agent reviews the conversation and identifies the customer's issue or inquiry using the basic information the customer provides.
 
-
     **Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example, "Refrigerator Cooling Issue”, the agent suggests troubleshooting steps based on the customer details received.
 
-
-<p id="gdcalert117" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image117.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert118">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image117.png "image_tooltip")
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
     
-
 * **Follow-up Questions**
 
     To further troubleshoot, the agent requires additional details from the customer that includes:
@@ -607,66 +567,40 @@ Once the system notifies the agent, the agent reviews the conversation and ident
 
     * **Create a New Case**: If additional information or follow-up is required, the agent can create a new case by clicking the New Case icon, using the details gathered from the customer.
 
-        
-
-<p id="gdcalert118" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image118.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert119">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image118.png "image_tooltip")
-
+     <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Creation via Live Interaction Pane
 
 To create a new case through live interaction:
 
-1. Click the **New Case**icon. The **New Case** dialog box displays with a case number along with the form.
+1. Click the **New Case** icon. The **New Case** dialog box displays with a case number along with the form.
 
-<p id="gdcalert119" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image119.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert120">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
+2. Select the appropriate case template from the **Case Type** dropdown list, and capture the details of the customer's issue or query to complete it.
 
-![alt_text](images/image119.png "image_tooltip")
-    
-
-<p id="gdcalert120" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image120.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert121">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image120.png "image_tooltip")
-
-2. Select the appropriate case template from the **Case Type** drop-down list, and capture the details of the customer's issue or query to complete it.
 3. Enter the case **Title** based on the issue raised by the customer.
+
 4. Enter the case **Description** based on the conversation summary. 
+
 5. Select the **Due Date** for the case.
-6. Select the case **Priority (Critical, High, Medium, Low)** from the drop-down list. By default, the **Status** is set to **Open**. 
+
+6. Select the case **Priority (Critical, High, Medium, Low)** from the dropdown list. By default, the **Status** is set to **Open**. 
+
 7. Select the appropriate options in the **Sample** field to support the new case.
-8. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent.
-    
 
-<p id="gdcalert122" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image122.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert123">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+8. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent.    
 
-
-![alt_text](images/image122.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Notification Alert
-
-
 
 * **Alert Notification for Agent:** The system notifies the agent as soon as a case is assigned to them. 
 
 **Tip:** Click the bell notification icon to view all previous notifications. 
 
-
-<p id="gdcalert123" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image123.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert124">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image123.png "image_tooltip")
+<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
         
-
-<p id="gdcalert124" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image124.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert125">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image124.png "image_tooltip")
-
 
 ### Case Creation During a Voice Call
 
@@ -674,26 +608,17 @@ To create a new case during the voice call:
 
 1. Click the **New Case** iconto automatically open a case form that includes all required conversation details, such as the transcript and relevant customer information.
 
+2. Select the appropriate case template from the **Case Type** dropdown list. The template is displayed with the **Assigned to**, **Title**, and **Description** details.
 
-<p id="gdcalert125" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image125.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert126">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
+3. Select the **(Critical, High, Medium, Low)** from the Priority dropdown list. By default, the **Status** is set to **Open**.
 
-![alt_text](images/image125.png "image_tooltip")
+4. From the **Account Type** dropdown list, select the type of account associated with the case.
 
+5. From the **Product Type** dropdown list, select the type or category of the product (or service) related to the case.
 
-2. Select the appropriate case template from the **Case Type** drop-down list. The template is displayed with the **Assigned to**, **Title**, and **Description** details.
-
-
-<p id="gdcalert126" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image126.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert127">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image126.png "image_tooltip")
-
-3. Select the **(Critical, High, Medium, Low)** from the Priority drop-down list. By default, the **Status** is set to **Open**.
-4. From the **Account Type** drop-down list, select the type of account associated with the case.
-5. From the **Product Type** drop-down list, select the type or category of the product (or service) related to the case.
-6. Click **Save **to submit the case.
-
+6. Click **Save** to submit the case.
 
 ### Case Creation via Email
 
@@ -703,68 +628,35 @@ To create a case via email:
 
 1. Navigate to **Contact Center AI > Flows & Channels > Digital**. 
 
-
-<p id="gdcalert127" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image127.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert128">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image127.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Email** to create a new email domain. The created domain appears.
-
     
-<p id="gdcalert128" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image128.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert129">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image128.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **New Email Address** to register an email address for the domain. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/#create-a-kore-domain-email-address).
 
-
-<p id="gdcalert129" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image129.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert130">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image129.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 4. Attach a **Flow Experience** to your **Custom** or **Kore domain Email Address**. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#attach-a-flow-to-a-kore-domain-email-address).
+
 5. Publish your Custom or Kore domain Email Address. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#publish-kore-domain-email-addresses).
+
 6. Compose an **Email** from your mailbox with the required information and click **Send**. The agent receives an email transfer acceptance response and initiates the customer interaction.
-
     
-<p id="gdcalert130" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image130.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert131">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image130.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **Reply** to gather information about the issue by interacting with the customer.
 
-
-<p id="gdcalert132" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image132.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert133">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image132.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 8. Click the **New Case** icon to register a new case or service request. ([Learn more](#new-case-creation-68)).
 
-
-<p id="gdcalert133" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image133.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert134">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image133.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 9. Use the **Transfer** option to forward the **Email** conversation to another agent.
 
-
-<p id="gdcalert134" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image134.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert135">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image134.png "image_tooltip")
-
+    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 10. Select **End** to close the conversation after you register or address the issue.
 
