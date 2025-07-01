@@ -476,7 +476,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 1. Click **Add product** under the Products section on the left navigation bar.
 
-    **Note:** Note that the **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
+    **Note:** The **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
     <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">
 
 2. Now, click the **Settings** tab of Facebook Login for Business.  
@@ -510,8 +510,9 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 #### Step 5: Verify the Webhook URL and Token
 
-1. From the **XO Platform Bot builder Configuration Page**, copy the **URL** and **Token**.
-   **Note:** Kore recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
+1. From the **XO Platform Bot builder Configuration Page**, copy the **URL** and **Token**.  
+
+    **Note:** Kore recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
    <img src="../images/verify-call-back.png" alt="verify-call-back" title="verify-call-back" style="border: 1px solid gray; zoom:70%;">
 
 2. Paste them in the **Callback URL** and **Verify token** respectively of the **Configuration** section under the **WhatsApp** section in the left navigation bar.  
@@ -522,6 +523,10 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
     !!! note:
         
-        Kore recommends you to select the latest version of the messaging app while subscribing.
+         Kore recommends you to select the latest version of the messaging app while subscribing.
         
     <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
+
+!!!note
+
+      Enable Proactive Notifications (Applicable for all messaging partners) to send relevant updates to the users without requiring them to initiate interaction with the app first.  

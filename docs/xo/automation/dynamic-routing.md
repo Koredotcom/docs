@@ -36,21 +36,20 @@ When an app is linked, the parent app generates an index of the dialogs and FAQs
 
 Once you link apps in the Automation Node, they remain associated with other flows. As a result, each parent app supports only one specific combination of linked apps, ensuring consistent configuration and functionality.
 
+When a session is initiated through the Parent App, the API receives complete context, including details from both the Parent App and its Linked Apps. This is the expected and intended behaviour.  
+
+However, if the session is initiated directly with a Linked App, the Parent App remains unaware of this session. Since the API in the Parent App does not have the context of the Linked App, these details cannot be extracted. APIs configured at the Parent App level do not automatically capture interactions that have been explicitly initiated at the Linked App level.
 
 ### App Indexes
 
 The Dynamic Routing maintains two key indexes:
 
-
-
 * **Configured App Index**: This index represents the app's in-development version. It is created when apps are first linked and updated using "Sync Updates" after making changes.
 * **Published App Index**: It represents the live, user-facing version of the app. It is created when the parent app is published and automatically updated when linked apps are published.
-
 
 ### DialogGPT
 
 DialogGPT is an advanced Intent Detection and Conversation Management module that uses techniques like embedding-based retrieval and Generative AI models. Its key capabilities include:
-
 
 
 * Training-free intent detection.

@@ -200,7 +200,17 @@ Version 2:
             }'
 ```
 
+**Sample Request for specific call Ids**
 
+The “call Id” is the unique identifier for a voice call. The user can retrieve IVR voice conversation messages between a user and an app for a specific call Id.
+
+```json
+curl --location \
+ 'https://{{host}}/api/public/bot/{{botId}}/getMessages?limit=50&dateTo=2025-06-26&callId={{callId}}&dateFrom=2025-06-23&channelType={{channelType}}' \
+--header 'Content-Type: application/json' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' 
+
+```
 
 ## Request Query Parameters
 
@@ -670,8 +680,52 @@ Default direction is forward.
              ]
  }
 ```
+**Sample Response for specific call Ids:**
 
-
+```json
+{
+  "total": 9,
+  "moreAvailable": false,
+  "icon": "https://platform.korebots.com/api/getMediaStream/market/f-b1894f7b-ffc8-52bd-b4c9-efe326c7xxxx.png?n=1413421346&s=ImNqUEFLcGJFdE5ZSmN6WEdQaTFUN3Q3U1VGZGpBeElWNWRoSzdOd0c2dVE9Ig$$",
+  "messages": [
+    {
+      "type": "outgoing",
+      "text": "Hi how can i help",
+      "timestamp": "2025-06-26T06:26:36.237Z"
+    },
+    {
+      "type": "incoming",
+      "text": "Help.",
+      "timestamp": "2025-06-26T06:26:44.961Z"
+    },
+    {
+      "type": "outgoing",
+      "text": "Here are the tasks I can perform for you. \n a Book Flight \n b Order Food \n",
+      "timestamp": "2025-06-26T06:26:45.302Z"
+    },
+    {
+      "type": "incoming",
+      "text": "Order food.",
+      "timestamp": "2025-06-26T06:27:26.062Z"
+    },
+    {
+      "type": "outgoing",
+      "text": "Channel Level Standard Timeout Prompt",
+      "timestamp": "2025-06-26T06:27:26.065Z"
+    },
+    {
+      "type": "outgoing",
+      "text": "Please provide your order",
+      "timestamp": "2025-06-26T06:27:26.817Z"
+    },
+    {
+      "type": "incoming",
+      "text": "Register",
+      "timestamp": "2025-06-26T06:28:52.424Z"
+    }
+  ]
+}
+```
 
 ## Response Body Parameters
 

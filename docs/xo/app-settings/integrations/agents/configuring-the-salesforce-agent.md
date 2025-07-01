@@ -128,10 +128,10 @@ To retrieve the Button ID, follow these steps:
    
 
 4. Click the Configurations tab and enter the following credentials for the Salesforce Agent:
-    1. **Live Agent URL**: The live agent URL endpoint for the Salesforce, which was copied in step 2.
-    2. **Organization ID**: The Organization ID for the Salesforce, which was copied in step 3.
-    3. **Deployment ID**: The Deployment ID for the Salesforce, which was copied in step 4.
-    4. **Button ID**: The Button ID for the Salesforce, which was copied in step 5.
+    1. **Live Agent URL**: The live agent URL endpoint for the Salesforce, copied before.
+    2. **Organization ID**: The Organization ID for the Salesforce, copied before.
+    3. **Deployment ID**: The Deployment ID for the Salesforce, copied before.
+    4. **Button ID**: The Button ID for the Salesforce, copied before.
 
     <img src="../images/configuring-the-salesforce-agent-img11.png" alt="Agent credentials" title="Agent credentials" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -141,11 +141,8 @@ To retrieve the Button ID, follow these steps:
     
         This option is available only when multiple agents are configured for your VA.
 
-7. You can customize the channel mapping by clicking the **Manage** link, as shown below:
 
-    <img src="../images/configuring-the-salesforce-agent-img12.png" alt="customize the channel mapping" title="customize the channel mapping" style="border: 1px solid gray;zoom:80%;"/>
-
-8. Click Manage to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img13.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -265,9 +262,9 @@ Under Company Information, locate the field Salesforce.com Organization ID.
    
 
 4. On the Configurations tab, select **Messaging for In-App and Web(MIAW)** and enter the following credentials for the Salesforce Agent:
-    * **Organization ID**: The Organization ID for Salesforce, which was previously copied.
-    * **Organization Base URL**: The Deployment ID for Salesforce, which was previously copied.
-    * **Developer Name**: The Button ID for Salesforce, which was previously copied.  
+    * **Organization ID**: The Organization ID for Salesforce, copied before.
+    * **Organization Base URL**: The Deployment ID for Salesforce, copied before.
+    * **Developer Name**: The Salesforce developers, copied before.  
     <img src="../images/miaw-metadata9.png" alt="Agent credentials" title="Agent credentials" style="border: 1px solid gray;zoom:80%;"/>
 
 6. If you want to make Salesforce the default agent, enable the **Default Agent System for all bot channels** option.
@@ -276,9 +273,8 @@ Under Company Information, locate the field Salesforce.com Organization ID.
     
         This option is available only when multiple agents are configured for your VA.
 
-7. You can customize the channel mapping by clicking the **Manage**.
 
-8. Click Manage to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
     <img src="../images/miaw-map.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -444,7 +440,7 @@ Follow these steps:
 
 
 
-1. Log in to Platform and navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** > **Salesforce**.
+1. Log in to Platform and navigate to App Settings > Integrations > Agent Transfer > Chat > Salesforce.
 2. On the Configurations tab, select **Messaging for In-App and Web(MIAW)** and enter the following credentials for the Salesforce Agent:
     * **Organization ID**: The Organization ID for Salesforce, copied before.
     * **Organization Base URL**: The Deployment ID for Salesforce, copied before.
@@ -457,7 +453,7 @@ Follow these steps:
     <img src="../images/miaw-metadata9.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
 
-3. Click **Save**.
+3. Click Save.
 4. Go to the Dialogflow and insert a Script Node before the Agent Transfer Node.
 5. Use the sample script to configure the metadata to be transferred in the key-value pair. 
 
@@ -530,17 +526,17 @@ Follow these steps:
 Follow these steps: 
 
 
-1. Navigate to **Process Automation > Flows**.
-2. Locate and click the configured flow for the Messaging Channel, or create a new flow and configure it. 
+1. Navigate to Process Automation > Flows.
+2. Select the configured flow for the Messaging Channel, or create and configure a new one. 
    <img src="../images/miaw-metadata11.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
-3. In the Toolbox, click **New Resource**. Select the Resource Type, API Name, Data Type, and Availability Flow. Click **Done**.
+3. In the Toolbox, click New Resource. Select the Resource Type, API Name, Data Type, and Availability Flow. Click Done.
 
     !!! note
 
         Ensure the flow variable matches the API name of your custom Messaging Session field. This enables seamless metadata transfer from the Platform to Salesforce, providing agents with complete context. 
 
-4. Click **Update Records** and set the field values for the messaging session records.  
+4. Click Update Records and set the field values for the messaging session records.  
 <img src="../images/miaw-metadata4.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
-5. Save the updated record as a New version and then click **Activate**.
+5. Save the updated record as a New version and then click Activate.

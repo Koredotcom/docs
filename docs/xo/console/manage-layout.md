@@ -144,17 +144,22 @@ Steps to check your video device:
 
         If you don't see your video, select another camera. If the camera is not part of your computer, check your settings to ensure your system recognizes it.
 
-**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and hardware access through a loopback connection to our telephony infrastructure.
+**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and server reachability through a loopback connection to our telephony infrastructure.
 
-**Connectivity and Bandwidth Tests**: This test verifies hardware access and establishes a loopback connection to the telephony infrastructure to assess the client's network connectivity.
+**Connectivity, Bandwidth, and Server Reachability Tests**: Users can run a connectivity test to verify STUN/TURN results, ensuring their network supports real-time communication. They can also initiate a test call that sends a static audio stream and returns metrics such as jitter, packet loss, and MOS, helping to assess call reachability and audio quality.
 
-Steps to perform the connectivity and bandwidth tests:
+Administrators can view detailed test results to diagnose and resolve connectivity or audio issues efficiently.
 
-1. Click **Start Test**. The progress is displayed.  
-<img src="../images/start-test.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
+Steps to perform the connectivity, bandwidth, and server reachability tests:
 
-2. Once the test is completed, the Expected Call Quality is displayed along with detailed test results. You can copy the result by clicking Copy Results.  
-<img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
+1. Click **Start Test**.  
+    <img src="../images/start-tests.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:70%;">
+
+    The progress is displayed.  
+    <img src="../images/test-progress.png" alt="Test Progress" title="Test Progress" style="border: 1px solid gray; zoom:70%;">
+
+2. Once the test is completed, the detailed test results are displayed. You can copy the result by clicking **Copy Results**.  
+<img src="../images/test-result.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:70%;">
 
 ## Connection Handling
 
