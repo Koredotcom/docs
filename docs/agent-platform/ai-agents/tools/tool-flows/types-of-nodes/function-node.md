@@ -8,16 +8,17 @@ Setting up a Function node includes adding it at the appropriate location in the
 
 Steps to add and configure the node:
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool flow page is displayed. 
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.
+2. Click the **Tools** tab, and select the tool to which you want to add the node. The Tool flow page is displayed. 
 
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, drag the **Function** node from the Assets panel onto the canvas.)
-
-4. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.  
+3. Click **Go to flow** to edit the in-development version of the flow.
+4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, drag the **Function** node from the Assets panel onto the canvas.)
+5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.  
 <img src="./../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
-5. Enter or select the following information:
+6. Enter or select the following information:
 
     * **Node Name**: Enter an appropriate name for the node based on its functionality or purpose.
 
@@ -28,13 +29,13 @@ Steps to add and configure the node:
 
         For the above options, you can define a script in JavaScript or Python with specific logic, static or dynamic input arguments, and output values.
     
-<ol start="6"><li>Click the <b>Connections</b> icon in the left navigation and select <b>Go to Node</b> for success and failure conditions. </li>
+<ol start="7"><li>Click the <b>Connections</b> icon in the left navigation and select <b>Go to Node</b> for success and failure conditions. </li>
 <img src="./../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;"></ol>
 
 * **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to an AI node to use the processed data from the Function node.
 * **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
-<ol start="7"><li>Finally, test the flow and fix any issues found.</li></ol>
+<ol start="8"><li>Finally, test the flow and fix any issues found.</li></ol>
 
 !!! failure "Standard Errors"
 

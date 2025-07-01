@@ -972,12 +972,13 @@ This customization helps you focus on relevant audit logs, making it easier to t
 
 ### Steps to Add a Custom Filter
 
-1. Navigate to the **Audit Logs** dashboard.
-2. Click the **Filter** icon.
-3. Click **+Add Filter**.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console. 
+2. Navigate to **Monitoring** > **Audit Logs**  on the left menu.
+3. Click the **Filter** icon.
+4. Click **+Add Filter**.
 <img src="../images/add-filter-audit-logs.png" alt="add filter" title="audit logs" style="border: 1px solid gray; zoom:75%;">
 
-4. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
+5. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
 <img src="../images/select-filter-from-dropdown.png" alt="select filter" title="select filter" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -992,7 +993,7 @@ To view the logs for all the events except role creation, you must set the filte
 
 <img src="../images/view-all-logs.png" alt="view all logs" title="view all logs" style="border: 1px solid gray; zoom:75%;">
 
-5. Click **Apply**.
+<ol start="6"><li>Click <b>Apply</b>.</li></ol>
 
 All the log entries relevant to the applied filter(s) are displayed, as shown below.
 <img src="../images/log-entries.png" alt="log entries" title="log entries" style="border: 1px solid gray; zoom:75%;">

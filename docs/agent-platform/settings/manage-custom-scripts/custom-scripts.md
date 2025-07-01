@@ -41,9 +41,12 @@ The key steps in managing custom scripts are:
 
 To access the custom scripts wizard, follow the steps below:
 
-1. [Log in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/){:target="_blank"} to Agent Platform.
-2. [Access](../../administration/overview.md/#access-settings-console){:target="_blank"} the **Settings** console and click **Manage Custom Scripts** on the left menu.
-<img src="../images/access-manage-custom-scripts.png" alt="manage custom scripts" title="manage custom scripts" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top menu.
+3. Click **Manage Custom Scripts** on the left menu.
+   <img src="../images/access-manage-custom-scripts.png" alt="manage custom scripts" title="manage custom scripts" style="border: 1px solid gray; zoom:75%;">
 
 ## Import and Deploy a Custom Script
 

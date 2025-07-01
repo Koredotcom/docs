@@ -35,7 +35,7 @@ It also shows detailed user information, including name, email, role, and status
 
 ## Add a New User
 
-The  **Settings** Console provides two ways to add a new user to the system:
+The **Settings** Console provides two ways to add a new user to the system:
 
 * Email invitation
 * Import _.txt_ or _.csv_ file with user information in the predefined format.
@@ -69,11 +69,15 @@ The import feature allows administrators to add multiple users at once using .tx
 
 The steps mentioned below, allow you to import users' data from a designated file into Agent Platform.
 
-1. Navigate to **Users Management** > **Users** on the left menu.
-2. Click **Add New User**, and select **Import**.
-<img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
 
-3. Perform one of the following actions on the **Import Users** page:
+2. Click **Settings** on the top menu.
+3. Navigate to **Users Management** > **Users** on the left menu.
+4. Click **Add New User**, and select **Import**.
+   <img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+5. Perform one of the following actions on the **Import Users** page:
 
 * Click **Upload File**, then select and upload the user info file from your system.
 <img src="../images/click-upload-file.png" alt="click upload file" title="click upload file" style="border: 1px solid gray; zoom:75%;">

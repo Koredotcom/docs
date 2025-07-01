@@ -32,14 +32,18 @@ Push endpoints actively send data to the client, while poll endpoints require th
 
 Steps to deploy an tool:
 
-1. On the **Tools** tab, click the name of the tool that you want to deploy and then click **Tool endpoint** in the left navigation.
-2. The Tool endpoint page is displayed. Click **Deploy**.  
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+2. Click the **Tools** tab, and select the tool you want to deploy.
+3. Click **Tool endpoint** in the left menu.
+4. The Tool endpoint page is displayed. Click **Deploy**.  
 <img src="../images/agent_platform/tool_endpoint.png" alt="Deploy Button" title="Deploy Button" style="border: 1px solid gray; zoom:70%;">
 
-3. The tool is deployed and the **Sync** and **Async poll** endpoints are generated.  
+5. The tool is deployed and the **Sync** and **Async poll** endpoints are generated.  
 <img src="../images/new_endpoint.png" alt="Sync Async Poll" title="Sync Async Poll" style="border: 1px solid gray; zoom:70%;">
 
-4. If you want to generate an Async push endpoint for the tool, do the following:
+6. If you want to generate an Async push endpoint for the tool, do the following:
     1. Click the **Async push** tab and click **Enable**/**Settings**.  
     <img src="../images/enable-settings.png" alt="Enable/Settings" title="Enable/Settings" style="border: 1px solid gray; zoom:70%;">
 

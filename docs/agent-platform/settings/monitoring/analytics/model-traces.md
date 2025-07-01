@@ -47,7 +47,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 To access the **Model Traces**, follow the steps below:
 
-1. Navigate to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Model Traces**.
 3. If this is your first time accessing the feature, select the desired model from the dropdown menu shown below.
 <img src="../images/get-started-model-traces.png" alt="get started with model traces" title="get started with model traces" style="border: 1px solid gray; zoom:75%;">

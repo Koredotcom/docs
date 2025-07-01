@@ -4,19 +4,23 @@ Agent Platform seamlessly integrates with the Hugging Face platform, allowing yo
 
 **To integrate with your hugging face account, follow these steps**:
 
-1. Click the **Settings** icon on the top navigation bar of the application. The **Integrations** page is displayed.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top menu.
+2. Click **Integrations** on the left menu.
 
     <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **Hugging Face** option from the list of Integrations. The Hugging Face section is expanded.
+3. Click the **Hugging Face** option from the list of Integrations. The Hugging Face section is expanded.
 
     <img src="../images/add-hugging-face-connection.png" alt="Add Hugging Face Connection" title="Add Hugging Face Connection" style="border: 1px solid gray; zoom:80%;">
 
-1. Click **Add connection**. The **Hugging Face** dialog is displayed.
+4. Click **Add connection**. The **Hugging Face** dialog is displayed.
 
     <img src="../images/hugging-face-connection.png" alt="Hugging Face Connection" title="Hugging Face Connection" style="border: 1px solid gray; zoom:60%;">
 
-1. Enter the following details in the dialog to create a connection:
+5. Enter the following details in the dialog to create a connection:
     * Provide a **Connection name**.
     * Enter an **Access token** which is a unique identifier associated with your Hugging Face account.
 1. Click **Confirm** to create a connection.

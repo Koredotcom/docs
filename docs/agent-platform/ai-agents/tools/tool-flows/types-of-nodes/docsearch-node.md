@@ -69,7 +69,9 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in Agent Platform**
 
-1. [Sign in](../../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
 2. [Navigate](../../../settings/settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** console.
 3. Click **Integrations** on the left navigation menu.
 4. Scroll down to **Search AI** and click **Link an App**.

@@ -8,16 +8,18 @@ Account owners can invite users to collaborate on specific tools. Invited users 
 
 Steps to invite users to your Tool:
 
-1. Click **Tools** on the top navigation bar and click the specific tool to open it.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Sharing & Permission** in the left navigation bar. The page lists the existing collaborators, if any.  
+2. Click the **Tools** tab, and select the required tool.
+3. Click **Sharing & Permission** in the left navigation bar. The page lists the existing collaborators, if any.  
 <img src="../images/agent_platform/sharing_and_permission.png" alt="Sharing and Permissions" title="Sharing and Permissions" style="border: 1px solid gray; zoom:80%;">
 
-3. Click **Invite** to add users to your tool. The Invite Users dialog box is displayed.  
+4. Click **Invite** to add users to your tool. The Invite Users dialog box is displayed.  
 
     !!! note
 
         Only the account owners can view the Invite button and invite other users.    
 
-4. Enter users’ email addresses to invite them and click **Invite** to grant them access to collaborate on the Tool.  
+5. Enter users’ email addresses to invite them and click **Invite** to grant them access to collaborate on the Tool.  
 <img src="../images/invite-users.png" alt="Invite Users" title="Invite Users" style="border: 1px solid gray; zoom:80%;">
