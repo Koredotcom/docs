@@ -1,4 +1,4 @@
-# **Setup Process**
+# Setup Process
 
 The following sections provide the setup process of the case management, enable features, customize system registration, and configuration validation. 
 

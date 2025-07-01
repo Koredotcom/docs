@@ -92,9 +92,19 @@ curl --location --request POST \
          "fileName": "5ff70b47a664d31999d9202c",
          "fileType": "json",
          "importType": "update",
-         "name": "hgf"
+         "name": "hgf",
+         "engine": "dgpt"
         }'
 ```
+!!! note
+
+    * If [engine = "regression" (or) empty] or engine is not provided, it will execute for ML Batch Testing.
+
+    * If engine is set to "dgpt", it will execute for Dialog GPT Batch Testing.
+
+
+
+
 
 ## Body Parameters
 

@@ -4,13 +4,13 @@ XO v11 represents a significant evolution in the Kore.ai platform, offering tran
 
 ## Automation AI
 
-### Unified Conversation Session
+<font size="4">Unified Conversation Session</font>
 
 Earlier, integration with individual Kore.ai products like Bots Platform, SmartAssist, Search Assist, and Agent Assist relied on APIs or Webhooks. This resulted in disjointed conversations without a central session to track complete interactions.
 
 With XO11, conversations are now unified across modules, enabling seamless tracking of an end-to-end customer interaction within a single session. This streamlined approach enhances analytics, simplifies cross-module data retrieval, and improves workflow efficiency. 
 
-### Improved Dialog Builder Experience
+<font size="4">Improved Dialog Builder Experience</font>
 
 The new Dialog Builder v3 offers an intuitive, collaborative environment with features like infinite canvas, multi-user parallel collaboration, visual flow design, and no-code templates. This significantly reduces development time while improving the quality and maintainability of conversational flows.
 
@@ -28,11 +28,11 @@ Key Capabilities
 * **No Code Templates**: Configure templates in the UI without any code.
 * **Node Sequences**: Better organization of flows by grouping nodes into a sequence.
 
-### Advanced AI Capabilities
+<font size="4">Advanced AI Capabilities</font>
 
 DialogGPT and enhanced RAG (Retrieval-Augmented Generation) capabilities enable zero-training intent detection, contextual understanding, and intelligent conversation management. The new Agent Node with tool calling brings sophisticated LLM-powered interactions that can dynamically handle complex tasks and integrate with external systems.
 
-#### DialogGPT
+<font size="4">DialogGPT</font>
 
 DialogGPT introduces a new paradigm shift in Intent Detection and  Conversation Management. It addresses these challenges by leveraging advanced techniques like embedding-based retrieval combined with Generative AI models and improving intent detection and conversation handling with zero training.
 
@@ -47,7 +47,7 @@ Key Capabilities:
 
 With DialogGPT, businesses can overcome the limitations of traditional models, ensuring their virtual assistants provide a more accurate, responsive, and efficient user experience, all while simplifying the development process.
 
-#### Seamless Integration With Search Module - RAG Capabilities
+<font size="4">Seamless Integration With Search Module - RAG Capabilities</font>
 
 Powered by large language models (LLMs), Search AI provides accurate, context-aware answers, significantly improving the user experience. Integrate a variety of data sources—such as web crawlers, structured data, documents, catalogues, and knowledge repositories—to create a comprehensive answer index. Customize and enrich content to meet specific business needs and boost user engagement.
 
@@ -59,7 +59,7 @@ Key Capabilities
 * Manage the RAG pipeline.
 * Test the answers using the debug window.
 
-#### Agent Node with Tool Calling
+<font size="4">Agent Node with Tool Calling</font>
 
 The Agent Node lets you leverage LLMs and generative AI with Tool calling to create sophisticated and versatile bots capable of handling complex tasks and providing dynamic, data-driven interactions. With its streamlined entity collection, contextual intelligence, multilingual support, and integration with external systems, the node empowers platform users to deliver exceptional human-like conversational experiences to their employees and customers.
 
@@ -72,11 +72,11 @@ Key Capabilities
 * **Interaction with External Systems**: The introduction of tool calling expands the Agent Node's capabilities beyond text generation. It enables interaction with external systems and databases, facilitating real-time data retrieval, calculations, and system-specific operations. This integration allows for more dynamic and data-driven conversational experiences.
 * **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. The language model can dynamically decide whether to generate text or call a tool based on user input and ongoing conversation. The dynamic prompt adaptation ensures that the virtual assistant provides the most appropriate response or action at each step of the interaction.
 
-### Operational Efficiency
+<font size="4">Operational Efficiency</font>
 
 With features like Experience Flows for channel-specific welcome experiences, conditional FAQ answers, and an enhanced Marketplace with ready-to-use templates, XO v11 accelerates time-to-value while reducing the complexity of managing conversational AI applications. See the Feature Comparison table below for more information.
 
-#### Feature Comparison
+**Feature Comparison**
 
 The following section provides a summary of key differences between v10 and v11 versions of the XO Platform. 
 
