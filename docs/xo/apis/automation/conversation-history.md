@@ -636,7 +636,7 @@ Default direction is forward.
 ```
 
 
-**Sample Response from POST method:**
+**Sample Response from POST method**
 
 
 ```json
