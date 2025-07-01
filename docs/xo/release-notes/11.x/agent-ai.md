@@ -63,9 +63,6 @@ To improve data segmentation, streamline reporting, and support scalable data pi
 **SIPREC Transcription Trigger Enhancement**  
 SIPREC transcription now uses event-based triggers and starts only after the call connection is established. It excludes non-conversational audio, such as ringing tones and hold music, which reduces ASR costs, prevents timeouts, and improves efficiency.
 
-**Call Transcript Timestamps from Amazon Connect**  
-Salesforce Amazon Connect now includes accurate timestamps in call transcripts. This helps the Agent Coaching and Playbook modules deliver guidance at the right moments, both during and after the call.
-
 **Flag-based Agent AI SDK Integration with Genesys Cloud CX**  
 The Agent AI SDK is now integrated into the middleware using a flag-based approach, allowing customers to choose between iframe or SDK integration. Users selecting the SDK can customize their Agent AI experience, including UI changes, event listeners, and behavior.
 
