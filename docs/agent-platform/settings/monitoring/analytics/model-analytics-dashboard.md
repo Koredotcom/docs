@@ -34,12 +34,9 @@ The **Model Analytics Dashboard** is a comprehensive analysis and monitoring sol
 
 To access the **Model Analytics** dashboard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="navigate" title="navigate" style="border: 1px solid gray; zoom:75%;">
-
-2. Click **Settings** on the top menu. 
-3. On the left menu, select **Monitoring** > **Analytics**.
-4. Click the **Model Analytics** tab on the right-hand side screen.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+2. On the left menu, select **Monitoring** > **Analytics**.
+3. Click the **Model Analytics** tab on the right-hand side screen.
 <img src="../images/model-analysis-dashboard-access.png" alt="model analytics dashboard" title="model analytics dashboard" style="border: 1px solid gray; zoom:75%;">
 
 The system loads the **Model Analytics** dashboard with data for the last 7 days, which is the default time range selection. You can select the required period to generate data.

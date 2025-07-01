@@ -37,7 +37,7 @@ To initiate a tool creation journey through the import functionality, follow the
 3. Do one of the following based on your requirements:
 
 <ul><li>If you don't have any existing tools and want to create one by importing from another environment, click <b>Import Tool</b>.
-<img src="../images/agent_platform/tools_landing.png" alt="import tool" title="import tool" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/agent_platform/import_tool.png" alt="import tool" title="import tool" style="border: 1px solid gray; zoom:75%;"></li>
 <li>If you already have tools deployed, the following page is displayed. To import a tool, select the relevant tab on the <b>Tools</b> dashboard and click the <b>Import tool</b> icon.
 <img src="../images/agent_platform/import_tool.png" alt="click import tool" title="click import tool" style="border: 1px solid gray; zoom:75%;"></li></ul>
 

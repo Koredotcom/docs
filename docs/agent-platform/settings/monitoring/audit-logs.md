@@ -946,9 +946,8 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 To access and view audit logs, follow the steps below:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](../security-and-control/single-sign-on.md){:target="_blank"}.
-2. Navigate to the [Settings](../../administration/overview.md#access-settings-console){:target="_blank"} console.
-3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
+1. [Navigate](../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** console.
+2. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
 ## Dashboard Information

@@ -72,7 +72,7 @@ After fetching the Search AI application credentials, configuring the source, an
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. [Navigate](../../../settings/settings-overview.md/#access-settings-console){:target="_blank"} to the **Settings** console.
+2. Click **Settings** on the top menu.
 3. Click **Integrations** on the left navigation menu.
 4. Scroll down to **Search AI** and click **Link an App**.
 <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
