@@ -552,7 +552,7 @@ Steps to add a new priority:
 
 ### Edit Priority
 
-Steps to edit Custom priority cases:
+Steps to edit custom priority cases:
 
 1. On the **Priority** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the existing priority tasks. 
 
@@ -566,7 +566,7 @@ Steps to edit Custom priority cases:
 
 ### Delete Status
 
-Steps to delete the Custom priority status of cases:
+Steps to delete the custom priority status of cases:
 
 1. On the **Priority** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the existing status fields.     
 
