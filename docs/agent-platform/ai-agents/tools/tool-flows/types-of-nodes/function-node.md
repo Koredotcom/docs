@@ -183,6 +183,7 @@ The next step is to map input arguments of the selected function to static or dy
     **Static values**
 
     Type the values in the text field.
+
     <img src="../images/static-values.png" alt="static values" title="static values" style="border: 1px solid gray; zoom:75%;">
 
     **Dynamic Values**
@@ -213,10 +214,11 @@ The next step is to map input arguments of the selected function to static or dy
 To test the custom function configuration, follow the steps below:
 
 1. Click the **Test** button in the **General Settings** panel.
+   
    <img src="../images/click-test-button.png" alt="click test" title="click test" style="border: 1px solid gray; zoom:75%;">
 
-
 2. In the **Input** panel, enter values to test the code. Configured values appear by default, but you can edit or reset them as needed.
+  
   <img src="../images/input-panel.png" alt="input panel" title="input panel" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Execute** to run the function with the configured input arguments.
