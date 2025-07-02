@@ -504,6 +504,7 @@ nav:
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
         - Linked Services: agentai/configuration/linked-services.md
+        - Third Party Configuration: agentai/configuration/third-party-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
