@@ -50,7 +50,7 @@ The users can access the additional menu items for the Cases:
 
 ### Create Cases (Outside the Agent Console)
 
-To create a new case:
+Steps to create a new case:
 
 1. Access cases by navigating to **Contact Center AI** > **Case Management** > **Manage Cases** > **Cases**. The unresolved cases page displays.
     
@@ -64,19 +64,19 @@ To create a new case:
 
 4. Choose a **channel** type from the dropdown list.
 
-5. In the voice, select the customer's **phone number** and **Country** from the dropdown list.
+    * For the **Voice**, select the customer's **phone number** and **Country** from the dropdown list.
 
-6. In the Web/Mobile Client, enter customer’s **email address**.
+    * For the **Web/Mobile Client**, enter the customer’s **email address**.
 
-5. Select the case template from the **Case Type** dropdown list.
+5. Select the case template from the **Case Type** dropdown list to capture the details about the customer's issue or query.
 
 6. Select a **Due Date** to complete the case.
 
-7. In the description, enter the conversation summary of the issue or service request.
+7. In the description, enter a conversation summary of the issue or service request.
 
-8. Write a **Case title** based on the issue raised by the customer.
+8. Enter a **Title** for the case based on the issue raised by the customer.
 
-9. Select the **(Critical/High/Medium/Low)** from the priority level dropdown list. By default, the Status is set as Open.
+9. Select the **(Critical/High/Medium/Low)** from the **Priority** level dropdown list. By default, the Status is set as Open.
 
 11. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent based on the case type assignment rules.
 
@@ -110,15 +110,17 @@ A supervisor can view various cases created under the following menu items:
 
 * **Search Cases**: Search for cases based on various field values (for example, case ID, status, priority).
 
-    <img src="images/search-cases.png" alt="Search Cases" title="Search Cases" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/search-cases.png" alt="Search Cases" title="Search Cases" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
-        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved** cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
+        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. 
+        
+    By clicking any of the existing **Unresolved** cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
 
     <img src="../images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
-    The following is one example of an **Unresolved** Case page details that includes:
+    The following is one example of an **Unresolved** Case details that includes the following sections:
 
 * **Description**: Displays a summary of the service request issue.
 
@@ -136,7 +138,7 @@ A supervisor can view various cases created under the following menu items:
 
     * **Add Comments**: Shows the comment box related to an activity entered by the supervisor or agent.        
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/add-activity-comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Add Comment and Send as Email**: Allows you to add a comment and send as an email (along with the email address) before saving it to the comment.
 
@@ -144,27 +146,27 @@ A supervisor can view various cases created under the following menu items:
 
     * **Email**: Displays the email and standard response template to add the required details of the case.
 
-        <img src="../images/save-send-email.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/email-attachment.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">
 
-    * **File attachment**: Displays the image or file attachment icons to support the case when you click the attachment icon.
+    * **File Attachment**: Displays the image or file attachment icons to support the case when you click the attachment icon.
         
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/attached-file-cases.png" alt="File Attachment" title="File Attachment" style="border: 1px solid gray; zoom:70%;">
 
     * **Standard Responses**: Displays the predefined text signatures to quickly select and send to the customers.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/signature.png" alt="Standard Responses" title="Standard Responses" style="border: 1px solid gray; zoom:70%;">
 
     * **Edit Comments**: Displays you to edit the entered comment related to the case.
        
-       <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+       <img src="../images/view-comments.png" alt="Edit Comments" title="Edit Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Format**: Displays formatting icons to edit your email content, such as bold, italic, ordered list, and so on.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/comment-box-format.png" alt="Comment Box Format" title="Comment Box Format" style="border: 1px solid gray; zoom:70%;">
 
     * **Events**: Displays the associated events related to the cases and tasks.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/activity-events.png" alt="Event Activity" title="Event Activity" style="border: 1px solid gray; zoom:70%;">
 
     * **Case Details**: Displays the information where the agent can view the following case details of a case, such as:
 
@@ -180,7 +182,7 @@ A supervisor can view various cases created under the following menu items:
 
         * **Due Date** Displays the date and time when the case is due.
            
-            <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+            <img src="../images/case-details-status.png" alt="Case Details Status" title="Case Details Status" style="border: 1px solid gray; zoom:70%;">
 
     * **More Information:** Displays the additional details about the case, such as:
 
@@ -196,7 +198,7 @@ A supervisor can view various cases created under the following menu items:
 
         * **Channel:**: Displays the channel mode (Voice or Web/Mobile Client) of the case.
 
-            <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+            <img src="../images/more-info.png" alt="More Info" title="More Info" style="border: 1px solid gray; zoom:70%;">
 
            !!! Note
 
@@ -206,21 +208,19 @@ A supervisor can view various cases created under the following menu items:
 
 The agent can transfer a case to another agent by selecting the **Assignee** from the dropdown list.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/case-transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
 
 ### Update or Resolve Case Status
 
 Under the case details section, select the **Resolve** from the status dropdown list.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/resolved-case-update.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard** > **My Cases** > **Closed**.
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-    !!! Note
-
-        You can view the status of all closed cases on the Dashboard and MANAGE CASES, see [Analyze Case Management](https://docs.google.com/document/u/0/d/1ndy96LGvktcgJhp1hhCaxLsX959EnPQ8TwOWGzZ4j0U/edit).
+To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management] (https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks).
 
    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
