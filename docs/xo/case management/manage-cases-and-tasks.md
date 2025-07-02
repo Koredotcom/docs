@@ -583,15 +583,15 @@ Once the system notifies the agent, the agent reviews the conversation and ident
 
     * **Create a New Case**: If additional information or follow-up is required, the agent can create a new case by clicking the New Case icon, using the details gathered from the customer.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/create-new-case.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Creation via Live Interaction Pane
 
 To create a new case through live interaction:
 
-1. Click the **New Case** icon. The **New Case** dialog box displays with a case number along with the form.
+1. Click the **New Case** (<img src="../images/new-case-icon.png" style="zoom:100%;"></img>) icon. The **New Case** dialog box displays with a case number along with the form.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/basic-info.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the appropriate case template from the **Case Type** dropdown list, and capture the details of the customer's issue or query to complete it.
 
@@ -601,34 +601,35 @@ To create a new case through live interaction:
 
 5. Select the **Due Date** for the case.
 
-6. Select the case **Priority (Critical, High, Medium, Low)** from the dropdown list. By default, the **Status** is set to **Open**. 
+6. Select the case **Priority** (**Critical**, **High**, **Medium**, **Low**) from the dropdown list. By default, the **Status** is set to **Open**. 
 
 7. Select the appropriate options in the **Sample** field to support the new case.
 
 8. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent.    
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-number.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Notification Alert
 
 * **Alert Notification for Agent:** The system notifies the agent as soon as a case is assigned to them. 
 
-**Tip:** Click the bell notification icon to view all previous notifications. 
+* ** Click the bell notification (<img src="../images/bell-icon.png" style="zoom:100%;"></img>) icon to view all previous notifications. 
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-        
-
+    <img src="../images/previous-notify.png" alt="Previous Notifications" title="Previous Notifications" style="border: 1px solid gray; zoom:70%;">
+       
 ### Case Creation During a Voice Call
 
 To create a new case during the voice call:
 
-1. Click the **New Case** iconto automatically open a case form that includes all required conversation details, such as the transcript and relevant customer information.
+1. Click the New Case (<img src="../images/new-case-icon.png" style="zoom:100%;"></img>) icon shown on the voice call screen to open a case form that includes all required conversation details, such as the transcript and relevant customer information.
+
+    <img src="../images/voice-call.png" alt="Voice Call Screen" title="Voice Call Screen" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the appropriate case template from the **Case Type** dropdown list. The template is displayed with the **Assigned to**, **Title**, and **Description** details.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-template.png" alt="Case Template" title="Case Template" style="border: 1px solid gray; zoom:70%;">
 
-3. Select the **(Critical, High, Medium, Low)** from the Priority dropdown list. By default, the **Status** is set to **Open**.
+3. Select the (**Critical**, **High**, **Medium**, **Low**) from the Priority dropdown list. By default, the **Status** is set to **Open**.
 
 4. From the **Account Type** dropdown list, select the type of account associated with the case.
 
@@ -642,13 +643,13 @@ The agent can use this feature to create a case via email while interacting with
 
 To create a case via email:
 
-1. Navigate to **Contact Center AI > Flows & Channels > Digital**. 
+1. Navigate to **Contact Center AI** > **Flows & Channels** > **Digital**. 
 
     <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Email** to create a new email domain. The created domain appears.
     
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../case management/images/digital-email.config.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **New Email Address** to register an email address for the domain. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/#create-a-kore-domain-email-address).
 
