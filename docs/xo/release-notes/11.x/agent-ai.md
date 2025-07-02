@@ -8,8 +8,9 @@ This document provides information on the feature updates and enhancements intro
 
 <font size="4">Widget Enhancements</font>
 
-**Agentic Copilot Enhancements**  
+<a id="Agentic-Copilot-Enhancements"></a>
 
+**Agentic Copilot Enhancements** <br>
 Agentic Copilot now offers enhanced configuration features along with improved runtime capabilities. 
 
 Configuration Updates:  
@@ -31,7 +32,9 @@ Runtime Updates:
     * If the view does not auto-scroll to the latest message, an arrow icon appears in the bottom-right corner, indicating the number of Agentic messages stacked below.  
 * To regenerate a failed response, double-click the corresponding customer message.  
 
-**Adding Agent AI V3 Features to SDK**  
+<a id="V3-Features-to-SDK"></a>
+
+**Addition of Agent AI V3 Features to SDK** <br> 
 The following Agent AI v3 features have been added to the latest SDK:  
 
 * Custom Tab creation in the Agent AI widget.  
@@ -39,7 +42,9 @@ The following Agent AI v3 features have been added to the latest SDK:
 * Hover effect for dialogs.  
 * Agentic Copilot integration. 
 
-**Controlling Transcripts' Visibility for Transferred Agents**  
+<a id="Controlling-Transcripts-Visibility"></a>
+
+**Controlling Transcripts' Visibility for Transferred Agents** <br> 
 Agent-to-agent call transfers now limit transcript visibility to the current agent only, with control options via public APIs or agent entry/exit events, except in warm transfers and conference calls, where all participants can view shared transcripts. 
 
 The **Control Transcript Visibility between Agents** widget offers two options:  
@@ -47,7 +52,9 @@ The **Control Transcript Visibility between Agents** widget offers two options:
 * Use public APIs to control transcription via the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md) or  
 * Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits).
 
-**Support for Custom LLMs in Third-Party Agent Desktops for Disposition Summary Generation**  
+<a id="Custom-Disposition-Summary-Generation"></a>
+
+**Support for Custom LLMs in Third-Party Agent Desktops for Disposition Summary Generation** <br> 
 Third-party agent desktops can now generate Disposition Summaries using a custom LLM. To enable this, go to **Agent AI** > **Generative AI Tools** > **GenAI Features** > **All Products**, and select a model under the **Conversation Summary** section.
 
 **Embedded Agent AI App Supports Bot Configurations**  
@@ -60,8 +67,11 @@ To improve data segmentation, streamline reporting, and support scalable data pi
 
 <font size="4">Integration Enhancements</font>
 
-**SIPREC Transcription Trigger Enhancement**  
+<a id="SIPREC-Transcription-Trigger-Enhancement"></a> 
+
+**SIPREC Transcription Trigger Enhancement** <br>
 SIPREC transcription now uses event-based triggers and starts only after the call connection is established. It excludes non-conversational audio, such as ringing tones and hold music, which reduces ASR costs, prevents timeouts, and improves efficiency.
+
 
 **Flag-based Agent AI SDK Integration with Genesys Cloud CX**  
 The Agent AI SDK is now integrated into the middleware using a flag-based approach, allowing customers to choose between iframe or SDK integration. Users selecting the SDK can customize their Agent AI experience, including UI changes, event listeners, and behavior.
