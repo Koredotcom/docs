@@ -200,7 +200,7 @@ A supervisor can view various cases created under the following menu items:
 
             <img src="../images/more-info.png" alt="More Info" title="More Info" style="border: 1px solid gray; zoom:70%;">
 
-           !!! Note
+            !!! Note
 
                 As an agent, you can manually update the case status based on progress or updates received from back office employees and other agents. For instance, you can create additional tasks to address any outstanding issues if the case is not marked as **Closed**.
 
@@ -220,7 +220,7 @@ When the review processes are completed by the agent, the agent can view all the
 
 <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management] (https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks).
+To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management](https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks).
 
    <img src="../images/manage-all-cases-closed.png" alt="Managed Closed Cases" title="Managed Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
