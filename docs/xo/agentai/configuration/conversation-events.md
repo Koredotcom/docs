@@ -89,7 +89,10 @@ In this section, you can select what to run first between the dialog tasks and g
 2. Click to expand the **Priority Settings** section.
 3. Select the radio button **On-Connect Dialog Task** or **Greeting Messages**  
    <img src="../welcome-events-images/priority-settings-6.png" alt="priority-settings" title="priority-settings" style="border: 1px solid gray; zoom:80%;">  
-4. Click **Save**.
+4. Click **Save**. 
+
+    !!! note
+        If **Agentic Copilot** is enabled in **Widget Settings** > **Agent AI Channel Specific Settings**, the message *"Whenever Agentic Copilot is enabled, it will run after the configured Welcome Events"* appears in the **Priority Settings** section:  
 
 ## Exit Events
 Exit Events mark the end of a customer interaction. This section lets you configure a dialog task or a conversation summary to automatically run when the end-of-conversation event triggers.

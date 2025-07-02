@@ -50,7 +50,7 @@ The users can access the additional menu items for the Cases:
 
 ### Create Cases (Outside the Agent Console)
 
-To create a new case:
+Steps to create a new case:
 
 1. Access cases by navigating to **Contact Center AI** > **Case Management** > **Manage Cases** > **Cases**. The unresolved cases page displays.
     
@@ -64,19 +64,19 @@ To create a new case:
 
 4. Choose a **channel** type from the dropdown list.
 
-5. In the voice, select the customer's **phone number** and **Country** from the dropdown list.
+    * For the **Voice**, select the customer's **phone number** and **Country** from the dropdown list.
 
-6. In the Web/Mobile Client, enter customer’s **email address**.
+    * For the **Web/Mobile Client**, enter the customer’s **email address**.
 
-5. Select the case template from the **Case Type** dropdown list.
+5. Select the case template from the **Case Type** dropdown list to capture the details about the customer's issue or query.
 
 6. Select a **Due Date** to complete the case.
 
-7. In the description, enter the conversation summary of the issue or service request.
+7. In the description, enter a conversation summary of the issue or service request.
 
-8. Write a **Case title** based on the issue raised by the customer.
+8. Enter a **Title** for the case based on the issue raised by the customer.
 
-9. Select the **(Critical/High/Medium/Low)** from the priority level dropdown list. By default, the Status is set as Open.
+9. Select the **(Critical/High/Medium/Low)** from the **Priority** level dropdown list. By default, the Status is set as Open.
 
 11. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent based on the case type assignment rules.
 
@@ -110,15 +110,17 @@ A supervisor can view various cases created under the following menu items:
 
 * **Search Cases**: Search for cases based on various field values (for example, case ID, status, priority).
 
-    <img src="images/search-cases.png" alt="Search Cases" title="Search Cases" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/search-cases.png" alt="Search Cases" title="Search Cases" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
-        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. By clicking any of the existing **Unresolved **cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
+        The supervisor can set the capacity limit of each case in the system for specific agents. The cases remain in the queue until an agent is available. 
+        
+    By clicking any of the existing **Unresolved** cases, you can view the following sections of a Case, such as associated tasks, customer details, current status, and activity logs.
 
     <img src="../images/manage-task-details.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
-    The following is one example of an **Unresolved** Case page details that includes:
+    The following is one example of an **Unresolved** Case details that includes the following sections:
 
 * **Description**: Displays a summary of the service request issue.
 
@@ -136,7 +138,7 @@ A supervisor can view various cases created under the following menu items:
 
     * **Add Comments**: Shows the comment box related to an activity entered by the supervisor or agent.        
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/add-activity-comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Add Comment and Send as Email**: Allows you to add a comment and send as an email (along with the email address) before saving it to the comment.
 
@@ -144,30 +146,27 @@ A supervisor can view various cases created under the following menu items:
 
     * **Email**: Displays the email and standard response template to add the required details of the case.
 
-        <img src="../images/save-send-email.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/email-attachment.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">
 
-    * **File attachment**: Displays the image or file attachment icons to support the case when you click the attachment icon.
+    * **File Attachment**: Displays the image or file attachment icons to support the case when you click the attachment icon.
         
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/attached-file-cases.png" alt="File Attachment" title="File Attachment" style="border: 1px solid gray; zoom:70%;">
 
     * **Standard Responses**: Displays the predefined text signatures to quickly select and send to the customers.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
+        <img src="../images/signature.png" alt="Standard Responses" title="Standard Responses" style="border: 1px solid gray; zoom:70%;">
 
     * **Edit Comments**: Displays you to edit the entered comment related to the case.
        
-       <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
+       <img src="../images/view-comments.png" alt="Edit Comments" title="Edit Comments" style="border: 1px solid gray; zoom:70%;">
 
     * **Format**: Displays formatting icons to edit your email content, such as bold, italic, ordered list, and so on.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/comment-box-format.png" alt="Comment Box Format" title="Comment Box Format" style="border: 1px solid gray; zoom:70%;">
 
     * **Events**: Displays the associated events related to the cases and tasks.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
+        <img src="../images/activity-events.png" alt="Event Activity" title="Event Activity" style="border: 1px solid gray; zoom:70%;">
 
     * **Case Details**: Displays the information where the agent can view the following case details of a case, such as:
 
@@ -183,8 +182,7 @@ A supervisor can view various cases created under the following menu items:
 
         * **Due Date** Displays the date and time when the case is due.
            
-            <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
+            <img src="../images/case-details-status.png" alt="Case Details Status" title="Case Details Status" style="border: 1px solid gray; zoom:70%;">
 
     * **More Information:** Displays the additional details about the case, such as:
 
@@ -200,39 +198,41 @@ A supervisor can view various cases created under the following menu items:
 
         * **Channel:**: Displays the channel mode (Voice or Web/Mobile Client) of the case.
 
-            <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+            <img src="../images/more-info.png" alt="More Info" title="More Info" style="border: 1px solid gray; zoom:70%;">
 
-       **Note:** As an agent, you can manually update the case status based on progress or updates received from back office employees and other agents. For instance, you can create additional tasks to address any outstanding issues if the case is not marked as **Closed**.
+            !!! Note
+
+                As an agent, you can manually update the case status based on progress or updates received from back office employees and other agents. For instance, you can create additional tasks to address any outstanding issues if the case is not marked as **Closed**.
 
 ### Transfer or Update Cases
 
-The agent can transfer a case to another agent by selecting the **Assignee **from the dropdown list.
+The agent can transfer a case to another agent by selecting the **Assignee** from the dropdown list.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/case-transfer.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:70%;">
 
 ### Update or Resolve Case Status
 
 Under the case details section, select the **Resolve** from the status dropdown list.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/resolved-case-update.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard > My Cases > Closed**.
+When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard** > **My Cases** > **Closed**.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/closed-my-cases.png" alt="Closed Cases" title="Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
-**Note:** You can view the status of all closed cases on the Dashboard and MANAGE CASES, see [Analyze Case Management](https://docs.google.com/document/u/0/d/1ndy96LGvktcgJhp1hhCaxLsX959EnPQ8TwOWGzZ4j0U/edit).
+To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management](https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks){:target="_blank"}.
 
-   <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/manage-all-cases-closed.png" alt="Managed Closed Cases" title="Managed Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
 Ensure all required actions and activities associated with the task are completed and changed to resolve with a proper comment before closing the case.
        
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/resolved-case-update.png" alt="Resolved Cases" title="Resolved Cases" style="border: 1px solid gray; zoom:70%;">
 
 Review the case to ensure that all aspects of the requested issue are addressed and resolved satisfactorily. 
 
 Ensure all processes and tasks are completed before marking the case and all associated tasks as **Resolved**, and then change the status of the case to **Closed**.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/case-closed-status.png" alt="Closed Status" title="Closed Status" style="border: 1px solid gray; zoom:70%;">
 
 ## Manage Tasks
 
@@ -258,27 +258,29 @@ In this, you (agent) can do the following:
 
 * Create, edit, or delete tasks until the case is closed.
 
-**Note:** When a task is transferred to a new assigned agent or updated by the agent, all the task-related notification is sent by the system to the agent.
+    !!! Note
+
+        When a task is transferred to a new assigned agent or updated by the agent, all the task-related notification is sent by the system to the agent.
 
 #### Task Notifications
 
 Agents are notified through the case management system (Console) when any new tasks are assigned. 
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/task-notofications.png" alt="Task Notification" title="Task Notification" style="border: 1px solid gray; zoom:70%;">
 
 #### Access Tasks
 
 Select **Tasks** in the left navigation panel of Case Management. This page shows the overview of all tasks that an agent is handling related to a case, including planning, assigning, tracking, and completing the tasks to achieve the desired case outcomes.
 
-You can access Manage Tasks by navigating to **Contact Center AI > Case Management > Manage Cases > Tasks**.
+You can access Manage Tasks by navigating to **Contact Center AI** > **Case Management** > **Manage Cases** > **Tasks**.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/manage-cases-tasks.png" alt="Tasks" title="Tasks" style="border: 1px solid gray; zoom:70%;">
 
 Agent can view the following menu items for the **Tasks**:
 
 * **Unresolved**: Tasks that are still active (work-in-progress) and not yet resolved or closed. 
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/unresolved-tasks.png" alt="Unresolved Tasks" title="Unresolved Tasks" style="border: 1px solid gray; zoom:70%;">
 
     All the **Tasks** include the following list of items:
 
@@ -298,7 +300,9 @@ Agent can view the following menu items for the **Tasks**:
 
     * **Assignee**: Displays the name of the agent to whom the task is assigned. This option is not available for **Unresolved**, **Unassigned**, **All Tasks**, **My Tasks**, and **Closed**.
 
-**Note:** The agent can easily switch between custom tasks and task templates.
+        !!! Note
+
+            The agent can easily switch between custom tasks and task templates.
 
 * **My Tasks**: Tasks that are assigned to the agent or back office employee.
 
@@ -306,9 +310,11 @@ Agent can view the following menu items for the **Tasks**:
 
 * **Search Tasks**: Enables searching for specific tasks based on field values or content (for example, case ID, status, priority, keywords in task descriptions or notes).
 
-    **Note:** The agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
+    !!! Note
 
-A supervisor can view the following menu items for the tasks:
+        The agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
+
+    A supervisor can view the following menu items for the tasks:
 
 * **Unassigned**: Tasks that are identified and not assigned yet to a case manager or team member.
 
@@ -320,17 +326,17 @@ Steps to **Add New Task**:
 
 1. Click any of the cases from the **Tasks** page to create a new task.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-new-task.png" alt="Add New Task" title="Add New Task" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+ Add New Task**. By default, the New Task dialog box is displayed with a default Task Number assigned.	
  
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-task.png" alt="New Task" title="New Task" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the Task Type for the related case from the dropdown list provided.
 
 4. Select a **Due Date** to complete the task.
 
-5. Enter a case** Description** based on the conversation case summary.
+5. Enter a case **Description** based on the conversation case summary.
 
 6. Enter a case **Title** based on the issue raised by the customer.
 
@@ -339,9 +345,11 @@ Steps to **Add New Task**:
 
 9. Click **Save**. A success message of the task creation is displayed, and a new custom task is created and assigned to the agent.
 
-**Note:** All the red asterisk (*) marked fields are mandatory to fill up.
+    !!! Note
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        All the red asterisk (*) marked fields are mandatory to fill up.
+
+    <img src="../images/task-message-successful.png" alt="Task Creation Successful" title="Task Creation Successful" style="border: 1px solid gray; zoom:70%;">
 
 #### View Tasks Components
 
@@ -349,7 +357,7 @@ This page shows the task description, task details, current status, and activity
 
 Click any existing unresolved tasks to expand and view detailed information, and the following page appears.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/view-tasks.png" alt="View Tasks" title="View Tasks" style="border: 1px solid gray; zoom:70%;">
 
 The above page includes the following list of items:
 
@@ -367,7 +375,7 @@ The above page includes the following list of items:
 
     * **Events**: Displays the associated events to that activity.
 
-        <img src="images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/activity-associated-events.png" alt="Associated Activity" title="Associated Activity Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Task Details:** Displays the following task details information, such as:
 
@@ -383,7 +391,7 @@ The above page includes the following list of items:
 
     * **Sample**: Displays the sample documents attached for this task.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/task-details-items.png" alt="Task Details" title="Task Details" style="border: 1px solid gray; zoom:70%;">
 
 * **More Information**: Displays additional details about the task, such as:
 
@@ -393,9 +401,9 @@ The above page includes the following list of items:
 
     * **Created by**: Displays the user who has created the task.
 
-    * **Created On**: Displays the task request date and year that it is created.
+    * **Created On**: Displays the task request date and year that is created.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/more-info.png" alt="More Info" title="More Info" style="border: 1px solid gray; zoom:70%;">
 
 #### Transfer Task
 
@@ -405,11 +413,11 @@ An agent can transfer a task to another agent by selecting the Assignee from the
 
 * **Assignee Allocation**: Allotment of the task to the appropriate agent based on expertise, workload, and availability.
     
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/assignee-allocation.png" alt="Assignee Allocation" title="Assignee Allocation" style="border: 1px solid gray; zoom:70%;">
 
 * **Set Priorities**: Set priority levels (High, Medium, Low, Emergency, and so on) for each task to focus efforts where they are most needed.
     
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/set-priority.png" alt="Set Priorities" title="Set Priorities" style="border: 1px solid gray; zoom:70%;">
 
 #### Review Task Activity
 
@@ -419,7 +427,7 @@ This helps agents to understand the history of the task or case and the reason b
 
 * **Dashboard Monitor:** Check to visualize task statuses, outstanding items, and overall workload.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/task-monitor.png" alt="Dashboard Monitor" title="Dashboard Monitor" style="border: 1px solid gray; zoom:70%;">
 
 * **Track Activity:** After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
 
@@ -429,17 +437,17 @@ Steps to View Task **Activity**:
 
 2. Click the **Comments** tab to view/add comments.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/view-activity.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/resolved-issue.png" alt="View Comments" title="View Comments" style="border: 1px solid gray; zoom:70%;">
 
 4. You can edit, delete, or add supported image files related to the task activity addressed.
 
 5. Click the **Events** tab to view all the events of a case that includes changes in status, updates, or actions taken by agents.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/activity-events.png" alt="Events" title="Events" style="border: 1px solid gray; zoom:70%;">
 
 After tasks are completed, ensure that all the issues of the customers are addressed. All comments and events are filled with appropriate details created against each task. This plays a crucial role in tracking the progress of all communication made by the agents and ensuring that all relevant information is captured throughout the case lifecycle for future reference. 
 
@@ -447,13 +455,13 @@ After tasks are completed, ensure that all the issues of the customers are addre
 
 Under the Task Details section, select the **Resolve** from the status dropdown list.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/closed-task.png" alt="Update Task Status" title="Update Task Status" style="border: 1px solid gray; zoom:70%;">
 
 **Task Closure**:
 
 **Note:** Change each task’s status from 'Resolved' to 'Closed' once you complete all required actions. After completing all review processes, you can view the task status—such as Closed, Open, or Resolved—from the Agent **Dashboard > My Tasks > Closed**.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/my-tasks-closed.png" alt="Task Closure" title="Task Closure" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Console
 
@@ -463,11 +471,15 @@ Agent console displays essential information for agents using the Case Managemen
 
 Before managing cases and tasks, ensure the following prerequisites are completed:
 
-* Set up a Channel and Chat/Voice Bot with Customer Support dialogs. 
-* Customers must have the option to select an agent during Bot/Voice interactions or conversations.
+* Set up a Channel and Chat or Voice Bot with Customer Support dialogs. 
+
+* Customers must have the option to select an agent during Bot or Voice interactions or conversations.
+
 * The customer should select the agent transfer option to initiate agent interaction.
 
-## Create a case
+## Case Creation Process
+
+### Create a case
 
 The system creates cases based on the configuration defined in Case Templates. You can handle a customer case using two methods: Automated or On-Demand.
 
@@ -475,9 +487,11 @@ The system creates cases based on the configuration defined in Case Templates. Y
 
 The process of automated case creation are configured using public APIs for channels such as emails and voicemails. Use these public APIs to get case details, update case details, and delete case details. 
 
-**Note:** When automated case creation is enabled, every qualified conversation automatically derives the case data, and thus, a case is created.
+!!! Note
 
-####  On demand
+    When automated case creation is enabled, every qualified conversation automatically derives the case data, and thus, a case is created.
+
+#### On demand
 
 On-demand refers to the live conversation with a customer through any channel (email, chat, or voice). The agent reviews the customer's issue or query and creates a case accordingly. Agents and Supervisors can create cases in the following ways:
 
@@ -499,19 +513,19 @@ The agents can create a case using the following processes:
 
 ### Create a New Case
 
-To create a new case:
+Steps to create a new case:
 
-1. Navigate to **Contact Center AI > Agent Console**. The Agent Console displays.	
+1. Navigate to **Contact Center AI** > **Agent Console**. The Agent Console displays.	
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/console-page.png" alt="Agent Console" title="Agent Console" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+** icon, and then click **Create Case**. The New Case dialog box is displayed with a Case Number assigned along with the form.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/manage-new-case-unassigned.png" alt="Create Case" title="Create Case" style="border: 1px solid gray; zoom:70%;">
 
-3. In the Requested by field, enter the Name of the customer who has requested to create a new case, for an Issue, Inquiry, Complaint, or a Service request.
+3. In the **Requested by** field, enter the Name of the customer who has requested to create a new case, for an Issue, Inquiry, Complaint, or a Service request.
 
-4. Select a communication channel from the **Channels dropdown list (Voice**/**Web**/**Mobile Client)**.
+4. Select a communication channel from the **Channels dropdown list (Voice** or **Web** or **Mobile Client**).
 
     * **Voice**: Select the Phone Number from the dropdown list, and add the selected country phone number that a customer belongs to.
 
@@ -533,7 +547,9 @@ To create a new case:
 
 12. Click **Save**. A success message is displayed, and a new case is created. 
 
-**Note:** The created case gets assigned to agents based on the case type assignment rules.
+    !!! Note
+
+        The created case gets assigned to agents based on the case type assignment rules.
 
 ### Live Conversation
 
@@ -543,39 +559,39 @@ Agents create and track cases during real-time interactions via email, voice, or
 
 When a customer requests an agent, the system transfers the conversation by initiating a transfer workflow.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/ai-agent-transfer.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Notification Alert**
 
-    The agent receives a notification alert in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/).
+    The agent receives a notification alert in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/){:target="_blank"}.
     
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/agent-transfer.png" alt="Notification Alert" title="Notification Alert" style="border: 1px solid gray; zoom:70%;">
 
 * **Identify the Issue or Inquiry**
 
 Once the system notifies the agent, the agent reviews the conversation and identifies the customer's issue or inquiry using the basic information the customer provides.
 
-    **Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example, "Refrigerator Cooling Issue”, the agent suggests troubleshooting steps based on the customer details received.
+**Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example, "Refrigerator Cooling Issue”, the agent suggests troubleshooting steps based on the customer details received.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/basic-customer-info.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
     
 * **Follow-up Questions**
 
     To further troubleshoot, the agent requires additional details from the customer that includes:
 
-    * **Troubleshooting Questions:** The agent provides additional details to address the issues based on the use cases or queries raised. For example, the Brand Name, Model Number, Part Issue, Image of the Defective part, Sample [Attachments](https://docs.kore.ai/xo/console/interacting-with-customers/?h=attachment#sending-attachments-to-customers), [Agent Forms](https://docs.kore.ai/xo/contactcenter/configurations/agent-forms/configure-agent-forms/), [Add Link](https://docs.kore.ai/xo/console/interacting-with-customers/) (Web or Email address), and Create New Case.
+    * **Troubleshooting Questions:** The agent provides additional details to address the issues based on the use cases or queries raised. For example, the Brand Name, Model Number, Part Issue, Image of the Defective part, Sample [Attachments](https://docs.kore.ai/xo/console/interacting-with-customers/?h=attachment#sending-attachments-to-customers){:target="_blank"}, [Agent Forms](https://docs.kore.ai/xo/contactcenter/configurations/agent-forms/configure-agent-forms/){:target="_blank"}, [Add Link](https://docs.kore.ai/xo/console/interacting-with-customers/){:target="_blank"} (Web or Email address), and Create New Case.
 
     * **Create a New Case**: If additional information or follow-up is required, the agent can create a new case by clicking the New Case icon, using the details gathered from the customer.
 
-     <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/create-new-case.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Creation via Live Interaction Pane
 
 To create a new case through live interaction:
 
-1. Click the **New Case** icon. The **New Case** dialog box displays with a case number along with the form.
+1. Click the **New Case** (<img src="../images/new-case-icon.png" style="zoom:100%;"></img>) icon. The **New Case** dialog box displays with a case number along with the form.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/basic-info.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the appropriate case template from the **Case Type** dropdown list, and capture the details of the customer's issue or query to complete it.
 
@@ -585,34 +601,35 @@ To create a new case through live interaction:
 
 5. Select the **Due Date** for the case.
 
-6. Select the case **Priority (Critical, High, Medium, Low)** from the dropdown list. By default, the **Status** is set to **Open**. 
+6. Select the case **Priority** (**Critical**, **High**, **Medium**, **Low**) from the dropdown list. By default, the **Status** is set to **Open**. 
 
 7. Select the appropriate options in the **Sample** field to support the new case.
 
 8. Click **Save**. A success message is displayed, and a new case is created and assigned to an agent.    
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-number.png" alt="New Case" title="New Case" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Notification Alert
 
 * **Alert Notification for Agent:** The system notifies the agent as soon as a case is assigned to them. 
 
-**Tip:** Click the bell notification icon to view all previous notifications. 
+* ** Click the bell notification (<img src="../images/bell-icon.png" style="zoom:100%;"></img>) icon to view all previous notifications. 
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-        
-
+    <img src="../images/previous-notify.png" alt="Previous Notifications" title="Previous Notifications" style="border: 1px solid gray; zoom:70%;">
+       
 ### Case Creation During a Voice Call
 
 To create a new case during the voice call:
 
-1. Click the **New Case** iconto automatically open a case form that includes all required conversation details, such as the transcript and relevant customer information.
+1. Click the New Case (<img src="../images/new-case-icon.png" style="zoom:100%;"></img>) icon shown on the voice call screen to open a case form that includes all required conversation details, such as the transcript and relevant customer information.
+
+    <img src="../images/voice-call.png" alt="Voice Call Screen" title="Voice Call Screen" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the appropriate case template from the **Case Type** dropdown list. The template is displayed with the **Assigned to**, **Title**, and **Description** details.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-case-template.png" alt="Case Template" title="Case Template" style="border: 1px solid gray; zoom:70%;">
 
-3. Select the **(Critical, High, Medium, Low)** from the Priority dropdown list. By default, the **Status** is set to **Open**.
+3. Select the (**Critical**, **High**, **Medium**, **Low**) from the Priority dropdown list. By default, the **Status** is set to **Open**.
 
 4. From the **Account Type** dropdown list, select the type of account associated with the case.
 
@@ -626,37 +643,36 @@ The agent can use this feature to create a case via email while interacting with
 
 To create a case via email:
 
-1. Navigate to **Contact Center AI > Flows & Channels > Digital**. 
+1. Navigate to **Contact Center AI** > **Flows & Channels** > **Digital**. 
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/digital-navigation.png" alt="Digital" title="Digital" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Email** to create a new email domain. The created domain appears.
     
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/digital-email.png" alt="Domain Email" title="Domain Email" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **New Email Address** to register an email address for the domain. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/#create-a-kore-domain-email-address).
+3. Click **New Email Address** to register an email address for the domain. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/#create-a-kore-domain-email-address){:target="_blank"}.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/domain-email.png" alt="Domain Email" title="Domain Email" style="border: 1px solid gray; zoom:70%;">
 
-4. Attach a **Flow Experience** to your **Custom** or **Kore domain Email Address**. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#attach-a-flow-to-a-kore-domain-email-address).
+4. Attach a **Flow Experience** to your **Custom** or **Kore domain Email Address**. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#attach-a-flow-to-a-kore-domain-email-address){:target="_blank"}.
 
-5. Publish your Custom or Kore domain Email Address. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#publish-kore-domain-email-addresses).
+5. Publish your Custom or Kore domain Email Address. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#publish-kore-domain-email-addresses){:target="_blank"}.
 
 6. Compose an **Email** from your mailbox with the required information and click **Send**. The agent receives an email transfer acceptance response and initiates the customer interaction.
     
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customer-interaction.png" alt="Customer Interaction" title="Customer Interaction" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **Reply** to gather information about the issue by interacting with the customer.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customer-reply.png" alt="Customer Reply" title="Customer Reply" style="border: 1px solid gray; zoom:70%;">
 
-8. Click the **New Case** icon to register a new case or service request. ([Learn more](#new-case-creation-68)).
+8. Click the **New Case** (<img src="../images/new-case-icon.png" style="zoom:100%;"></img>) icon to register a new case or service request. ([Learn more](https://docsinternal-kore.github.io/docs/xo/case%20management/manage-cases-and-tasks/?h=offline+conversation#create-a-new-case)).
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/transfer-call.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 9. Use the **Transfer** option to forward the **Email** conversation to another agent.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/call-transfer.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 10. Select **End** to close the conversation after you register or address the issue.
-

@@ -1,6 +1,5 @@
 # XO GPT: DialogGPT Model
 
-<br>
 
 ## Introduction
 

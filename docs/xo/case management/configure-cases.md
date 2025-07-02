@@ -1,22 +1,22 @@
-# Configure Cases
+# Case Configuration
 
-The configure cases feature allows you to create cases for customer inquiries, issues, and complaints, enhancing communication between customers and your service team. This section walks you through the case configuration process.
+The Configure Cases feature empowers administrators to tailor the system for managing customer inquiries, issues, and complaints effectively. By creating and customizing cases, this functionality improves communication between customers and your service team, ensuring timely and organized resolution.
 
-Enables administrators to configure the system to specific business needs through several key components:
+This section guides you through the case configuration process, highlighting the key components that allow adaptation to your specific business needs.
 
 * **[Fields](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#fields-configuration)**: Create and manage custom data fields that agents use to collect relevant information during case resolution.
 
-* **[Task Templates](#task-templates-configuration-18)**: Develop standardized task sets to streamline management across various cases.
+* **[Task Templates](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#task-templates-configuration)**: Develop standardized task sets to streamline management across various cases.
 
-* **[Case Templates](#case-templates-configuration-25)**: Design customizable forms with predefined tasks to guide agents through common issues, improving consistency and efficiency.
+* **[Case Templates](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#case-templates-configuration)**: Design customizable forms with predefined tasks to guide agents through common issues, improving consistency and efficiency.
 
-* **[Status](#status-configuration-33)**: Define and manage case statuses to track the progress of cases throughout their lifecycle.
+* **[Status](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#status-configuration)**: Define and manage case statuses to track the progress of cases throughout their lifecycle.
 
-* **[Priority](#priority-configuration-38)**: Set up priority levels to determine the urgency and order where agents can address the corresponding cases and tasks.
+* **[Priority](https://docsinternal-kore.github.io/docs/xo/case%20management/configure-cases/?h=config+cases#priority-configuration)**: Set up priority levels to determine the urgency and order where agents can address the corresponding cases and tasks.
 
-* **[User Management]**[Learn More](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues.  
+* **[User Management](https://docs.kore.ai/xo/user-management/manage-users/?h=user+manage#user-management-section-features){:target="_blank"}**: Add agents, assign roles, and set capacity limits for  channels and cases. Configure skills and manage agent queues. 
 
-By configuring the above elements, create a case management system aligned with your specific workflows to improve agent productivity and enhance customer service quality.
+By configuring these elements, you can create a case management system aligned with your specific workflows, improving agent productivity and enhancing the quality of customer service. 
 
 ## Fields Configuration
 
@@ -32,7 +32,7 @@ Steps to access fields:
 
     <img src="../images/config-fields.png" alt="Fields" title="Fields" style="border: 1px solid gray; zoom:70%;">
 
-2. Select **Fields** from the left navigation panel in Case Management. 
+2. Select **Fields** from the left navigation panel in case management. 
 
 3. The **Fields** page displays listing system fields and management options. 
 
@@ -44,7 +44,7 @@ Steps to add a new field:
 
     <img src="../images/new-field-create.png" alt="New Field" title="New Field" style="border: 1px solid gray; zoom:70%;">
 
-2. On the **New Field** page, complete the **General Settings** sections sequence.
+2. On the **New Field** page, complete the **General Settings** section.
 
     <img src="../images/general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 
@@ -70,21 +70,21 @@ Steps to add a new field:
 
     <img src="../images/data-settings.png" alt="Data Settings" title="Data Settings" style="border: 1px solid gray; zoom:70%;">
 
+2. For the dropdown field format, click **Add Values** to enter and save values (enable the **Multi Select** if needed).  
+
     !!! Note
 
         For the **Number** field format, enter the value and press the Enter key.
 
-2. For the dropdown field format, click **Add Values** to enter and save values (enable the **Multi Select** if needed).  
-
 #### Validation Settings
 
-Validation Settings options vary by field format. ****Radio Button**, **Dropdown**, and **Checkbox** fields display the **Default Error Message** option, while other formats show only **Validate** and **Validation Rule**.
+Validation Settings options vary by field format. **Radio Button**, **Dropdown**, and **Checkbox** fields include a **Default Error Message** option, while other formats while other field types only display **Validate** and **Validation Rule** options. 
 
 <img src="../images/validation-settings.png" alt="Validation Settings" title="Validation Settings" style="border: 1px solid gray; zoom:70%;">
 
 1. In the **Default Error Message**, enter an **Error Message** to display if validation fails.
 
-2. From the **Validate** dropdown, select when validation should occur:
+2. From the **Validate** dropdown, select when validation should occur.
 
     1. Choose **On Blur** to validate when you leave the field.
 
@@ -92,25 +92,25 @@ Validation Settings options vary by field format. ****Radio Button**, **Dropdown
 
 3. Select **+Add Validation Rule** to set specific validation criteria.
 
-4. Click **Save** to add the new field after completing all sections. 
+4. Click **Save** to add the new field after completing all sections.
 
 ### Edit Fields
 
 Steps to edit fields:
 
-1. On the **Fields** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the Custom fields added. 
+1. On the **Fields** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the custom fields. 
 
     <img src="../images/edit-fields.png" alt="Edit Fields" title="Edit Fields" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
-    In the **Fields** section, only the custom fields are editable. The system fields are not editable. 
+        In the **Fields** section, only the custom fields are editable. The system fields are not editable. 
 
 2. Click **Edit** to open the edit **Field** page.
 
     <img src="../images/edit-field-page.png" alt="Edit Field Page" title="Edit Field Page" style="border: 1px solid gray; zoom:70%;">
 
-3. Modify the required fields in **General Settings**, **Data Settings**, and **Validation Settings**.
+3. Modify the required fields in the **General Settings**, **Data Settings**, and **Validation Settings**.
 
 4. Click **Save** to update your changes. 
 
@@ -128,7 +128,7 @@ Steps to delete fields:
 
     !!! Note
 
-    Deleting any fields affects the use case templates that are currently in use.
+        Deleting any fields affects the use case templates that are currently in use.
 
 ## Task Templates Configuration
 
@@ -136,7 +136,7 @@ A Task template is the layout presented to agents for a case. It allows the agen
 
 ### Access Task Templates
 
-Steps to access **Task Templates**:
+Steps to access task templates:
 
 Access case management **Task Templates** by navigating to **Contact Center AI** > **Case Management** > **Configuration**> **Task Templates**.
 
@@ -158,7 +158,7 @@ The **Task Templates** page displays the following items:
 
 ### Create New Task Templates
 
-In the **Task Templates**, you can create and apply a standardized set of tasks across multiple cases to simplify task management and to maintain consistency.
+In the **Task Templates**, you can create and apply a standardized set of tasks across multiple cases to simplify task management and maintain consistency.
 
 Steps to create a new task template:
 
@@ -166,25 +166,25 @@ Steps to create a new task template:
 
     <img src="../images/task-templates.png" alt="New Task Templates" title="New Task Templates" style="border: 1px solid gray; zoom:70%;">
 
-2. On the following **New Task Template** page, complete the **Basic Information** section sequence.
+2. On the following **New Task Template** page, complete the **Basic Information** section.
 
     #### Basic Information
 
-    A task is a form that back-office employees or agents use to complete work on a Case.
-
+    Using the task form, back-office employees or agents complete work on a case through tasks.
+    
     <img src="../images/new-task-template-basic-info.png" alt="New Task Template Basic Info" title="New Task Template Basic Info" style="border: 1px solid gray; zoom:70%;">
 
 1. Enter a **Name** for the task template that distinguishes it from others.
 
 2. Enter a brief **Description** about the task template for what it is used for and what tasks it includes.
 
-3. Based on your preferences, you can choose the following **Default Assignee** options provided:
+3. Based on your preferences, you can choose the following **Default Assignee** options provided.
 
     * **Unassigned**: By default, when a case is created with this configuration, it is not assigned to any individual.
 
         <img src="../images/default-assignee-unassigned.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;">
 
-    * **Queues**: As an administrator, you can create custom queues for agents to handle specific tasks, such as one contact center agents for conversations and another for back-office agents.
+    * **Queues**: As an administrator, you can create custom queues for different tasks. For example, one for contact center agents handling conversations and another for back-office agents.
 
         <img src="../images/default-assignee-queue.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:70%;">
 
@@ -202,11 +202,11 @@ Steps to create a new task template:
 
     !!! Note
 
-    The administrator configures the task assignment and escalation rules so that tasks are efficiently allocated to agents or back office employees upon agent case creation, ensuring the timely resolution of cases.
+        The administrator configures task assignment and escalation rules to ensure tasks are efficiently allocated to agents or back-office employees upon case creation, enabling timely case resolution
 
 #### Add Fields
 
-In the **Add Fields**, add more fields to ensure that agents provide data for specific information, and you can mark these fields as required or not.
+In the **Add Fields** section, add additional fields to ensure agents provide specific information. You can also mark these fields as required or optional.
 
 Steps to add fields:
 
@@ -216,7 +216,7 @@ Steps to add fields:
 
     !!! Note
 
-    Every task template must include an assignee, set to a default value of either a queue for an individual agent or an agent group.
+        You must assign every task template to a default assignee; either a queue, an individual agent, or an agent group.
 
 2. Click **Create** to finalize the task template.
 
@@ -226,11 +226,11 @@ Steps to add fields:
 
 Steps to edit new task:
 
-1. On the **Task Templates** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the Custom task template. 
+1. On the **Task Templates** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the custom task template. 
 
     <img src="../images/edit-task-template.png" alt="Edit Task Template" title="Edit Task Template" style="border: 1px solid gray; zoom:70%;">
 
-2. Select **Edit** to modify the basic information as required.
+2. Select **Edit** to modify the basic information.
 
     <img src="../images/edit-basic-info.png" alt="Edit Basic Info" title="Edit Basic Info" style="border: 1px solid gray; zoom:70%;">
 
@@ -244,7 +244,7 @@ Steps to edit new task:
 
 Steps to delete task template:
 
-1. On the **Task Templates** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the Custom task template. 
+1. On the **Task Templates** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the custom task template. 
 
 <img src="../images/delete-task-template.png" alt="Delete Task Template" title="Delete Task Template" style="border: 1px solid gray; zoom:70%;">
 
@@ -254,13 +254,13 @@ Steps to delete task template:
 
     !!! Note
 
-    Only administrators can deactivate cases and restrict agent access to case types. You cannot delete any cases as this affects associated templates that are currently in use.
+        Only administrators can deactivate cases and restrict agent access to case types. You cannot delete any cases as this affects associated templates that are currently in use.
 
 ## Case Templates Configuration
 
-Case templates are pre-designed forms that assist agents in gathering and organizing information for various customer issues. With this feature, you can create a template that includes a name, description, and default assignment (unassigned, queue, individual agent, or case creator). These templates have default fields, add custom fields to as needed. Additionally, you can define specific tasks to be completed within the case templates.
+Case templates are pre-designed forms that assist agents in gathering and organizing information for various customer issues. With this feature, you can create a template that includes a name, description, and default assignment (unassigned, queue, individual agent, or case creator). These templates have default fields to add custom fields as needed. You can also define specific tasks that agents must complete within each case template.
 
-As a user, you can view a list of all cases, including details of their active or inactive status, as created by the administrator. Apply filters or use search to find specific case types.
+As a user, you can view a list of all cases, including details of their active or inactive status, as created by the administrator. Use filters or the search function to locate specific case types.
 
 ### Access Case Templates
 
@@ -278,29 +278,29 @@ Steps to access case templates:
 
     * **Created by**: Displays the name of the administrator who created the template.
 
-    * **Status**: Displays the flows or dialogs status that are Draft or Published.
+    * **Status**: Displays the flows or dialogs status that are draft or published.
 
     * **Active**: By default, a case template remains in active mode. 
 
-    * If it is active and the administrator deactivates a case template, a warning message appears, indicating that agents cannot use it.
+        * If a case template is active and the administrator deactivates it, a warning message appears, indicating that agents can no longer use it.
 
-    * If it is inactive, agents cannot select or apply it to new cases, but the template remains in the system for future use.
+        * If the template is inactive, agents cannot select or apply it to new cases, but it remains in the system for future use.
 
     * **Search**: Allows searching for templates by name only.
 
 ### Creating a New Case Template
 
-Steps to create a new case template**:
+Steps to create a new case template:
 
 1. On the **Case Templates** page, click **+ New Case Template**. 
 
     <img src="../images/case-templates-creation.png" alt="New Case Template" title="New Case Template" style="border: 1px solid gray; zoom:70%;">
 
-2. In the **New Case** panel, complete the following sections in sequence.
+2. In the **New Case** panel, complete the **Basic Information** section.
 
     #### Basic Information
 
-    A case template is a form that agents see and refer to for different types of customer issues. It can be used to configure and manage the case effectively. 
+    Agents use a case template as a form to reference for different types of customer issues. Agents can use it to configure and manage cases effectively. 
 
     <img src="../images/new-case-basic-inf.png" alt="Basic Information" title="Basic Information" style="border: 1px solid gray; zoom:70%;">
 
@@ -312,13 +312,13 @@ Steps to create a new case template**:
 
     b. Enter a brief **Description** explaining the template's purpose.
 
-    c. Based on your preferences, choose the following **Default Assignee** options provided: 
+    c. Based on your preferences, choose a **Default Assignee** queues for individual agents based on your preferences. 
 
     * **Unassigned**: By default, the new case is not automatically assigned upon creation.
         
         <img src="../images/unassigned.png" alt="Unassigned" title="Unassigned" style="border: 1px solid gray; zoom:70%;"> 
             
-    * **Queues**: Administrators can create queues for specific agent groups and assign them to a particular case. Customize queues or use defaults, such as creating one for contact center agents and another for back office employees.
+    * **Queues**: Administrators can create queues for specific agent groups and assign them to particular cases. They can customize queues or use default ones, such as a queue for contact center agents and another for back-office employees.
 
         <img src="../images/new-case-queues.png" alt="Case Creator" title="Case Creator" style="border: 1px solid gray; zoom:70%;">
             
@@ -348,11 +348,11 @@ In Case Fields, add new fields to ensure that agents provide data for specific i
 
 Steps to add fields:
 
-1. Click **+ Add Fields** to include Custom fields.
+1. Click **+ Add Fields** to include custom fields.
 
     <img src="../images/add-case-fields.png" alt="Add Fields" title="Add Fields" style="border: 1px solid gray; zoom:70%;">
 
-2. For each field, specify:
+2. Specify the following fields:
 
     * **Field Name**: Specify the Field Name, such as Customer Name, Issue Description.
 
@@ -374,7 +374,7 @@ Task refers to a specific action or set of actions completed as part of managing
 
 2. Click **+ Add Task** from the **Add Task** menu to create a specific task for agents.
 
-3. Select the **Task Name** from the drop-down list provided.
+3. Select the **Task Name** from the dropdown list provided.
 
 4. Click **Create**. 
 
@@ -420,7 +420,7 @@ There are two main categories of statuses:
 
 * **System Statuses**: You cannot edit the system-defined statuses, which are predefined.
 
-* **Custom Statuses**: Created by administrators to meet specific business needs, which you can edit, activate/deactivate, or delete as needed.
+* **Custom Statuses**: Created by administrators to meet specific business needs, which you can edit, activate or deactivate, or delete as needed.
 
 ### Access Status Configuration
 
@@ -458,7 +458,7 @@ Steps to add a new status:
 
         * **Closed**
 
-    3. Add a **Description** to provide context or explanation for the status's purpose (Optional).
+    3. Add a **Description** to provide context or explanation for the status's purpose (optional).
 
     4. Enable the **Status Settings** to make the status available for agents by clicking the toggle switch.
 
@@ -500,7 +500,7 @@ Steps to delete status:
 
 ## Priority Configuration
 
-Priority configuration in case management helps agents determine which cases and tasks need immediate attention. There are four priorities (Low, Medium, High, and Critical). The administrators can create custom priorities based on specific business requirements.
+Priority configuration in case management helps agents determine which cases and tasks need immediate attention. There are four priorities (**Low**, **Medium**, **High**, and **Critical**). The administrators can create custom priorities based on specific business requirements.
 
 There are two main categories of priorities: 
 
@@ -540,7 +540,7 @@ Steps to add a new priority:
 
     e. Turn on the **Priority Status** toggle switch to make it available to agents. 
 
-3. Click **Save** to add the new priority. The new priority is listed on the **Priority** page and is set to **Active** by default.
+3. Click **Save** to add the new priority. The new priority is listed on the **Priority** page, and is set to **Active** by default.
 
 ### Tips for Priority Configuration
 
@@ -548,11 +548,11 @@ Steps to add a new priority:
 
 * Choose distinct colors for each priority level to make them easily distinguishable. 
 
-* Consider your business needs when creating custom priorities (for example, you might need an "**Emergency**" priority above "**Critical**).
+* Consider your business needs when creating custom priorities (for example, you might need an **Emergency** priority above **Critical**).
 
 ### Edit Priority
 
-Steps to edit Custom priority cases:
+Steps to edit custom priority cases:
 
 1. On the **Priority** page, click the three vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to edit the existing priority tasks. 
 
@@ -566,7 +566,7 @@ Steps to edit Custom priority cases:
 
 ### Delete Status
 
-Steps to delete the Custom priority status of cases:
+Steps to delete the custom priority status of cases:
 
 1. On the **Priority** page, click the vertical ellipsis (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) button to delete the existing status fields.     
 

@@ -14,6 +14,9 @@ Search AI introduces **Multi-Vector Search** that allows users to associate mult
 
 For example, consider a document utilizing a dual-vector approach for information retrieval. One vector, generated from the document's content and title, captures detailed context. The other vector, derived from questions related to the content, anticipates user inquiries. By appropriately weighting these vectors, retrieval efficiency is significantly enhanced. This is because the vectors encompass various content aspects, such as title, content, and derived questions, resulting in improved alignment with diverse user queries.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/index-configuration.md)
+
+
 <font size="4">Enhanced Multilingual Support</font>
 
 Search AI now supports over 100 languages, enabling a seamless multilingual experience across content ingestion, query understanding, and result delivery. Users can:
@@ -27,17 +30,23 @@ Additional enhancements include:
 * **Markdown extraction support** for Hungarian, German, and Chinese, improving the accuracy of content parsing in these languages.
 * **Image-based extraction** and **Advanced HTML extraction** are now supported for German, enabling richer parsing of complex and visually structured documents.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/language-support.md)
+
+
 <font size="4">API Stage in Document Workbench</font>
 
 Search AI now features a new **API stage** in the **Chunk Enrichment** process. This enhancement allows users to leverage external services for content transformation. Users can specify a custom POST API endpoint along with the necessary headers and request body to send chunks for enrichment. This integration facilitates seamless collaboration with third-party tools, enabling the classification, tagging, or enhancement of metadata for the chunks. 
 
-<font size="4">Enhanced Export API</font>
+<font size="4">Enhanced Insights Export API</font>
 
 The **Analytics Export Public API** now supports additional filtering parameters, providing more granular control over exported data. These new filters work in conjunction with the existing group and filter date-based keys to enable more targeted analytics exports.
 
 With this enhancement, you can now include the following optional filter in the API request payload:
 
 * **eventTypes**: Filter data by user feedback events such as 'thumbsUp' or 'thumbsDown'.
+
+[Learn more :octicons-arrow-right-24:](./../../apis/searchai/answer-insights.md)
+
 
 <font size="4">New Connector Support in Search AI </font>
 
@@ -49,6 +58,8 @@ Search AI introduces out-of-the-box connectors for the following platforms. Thes
 * **JFrog On-Prem**
 * **GitHub On-Prem**
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/connector-directory.md)
+
 
 <font size="4">Enhancements to Existing Connectors</font>
 
@@ -56,6 +67,8 @@ Search AI now offers improved capabilities through enhancements to existing conn
 
 * **Zoom Connector**: Added support for advanced filters to refine content retrieval.
 * **LumApps Connector**: Now supports fetching and indexing attachments, enhancing search coverage and relevance.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/connector-directory.md)
 
 <hr>
 

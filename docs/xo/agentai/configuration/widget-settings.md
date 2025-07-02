@@ -28,7 +28,9 @@ This section lets you set your preferences based on the channels. It has three c
 
 * **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My Bot, and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection. 
 
-* **Control Transcript Visibility between Agents** (for **Voice** channel): This feature restricts the transcript visibility to the time an agent joins a call. When enabled, transcripts from earlier parts of the conversation are not visible to the transferred agents.
+* **Control Transcript Visibility between Agents** (for Voice channel): This feature, available only for the Voice channel, restricts transcript visibility to the current agent. Visibility can be managed using public APIs or agent entry/exit events, except in warm transfers/conference calls where all participants can view shared transcripts. The following options are available: 
+    * **Use public APIs to control transcription**: Control transcript visibility through the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md). 
+    * **Use agent’s entry and exit events**: Control transcript visibility based on agent’s entry and exit events–transcripts become visible when an agent joins, and prior conversations are hidden once the previous agent exits. 
 
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
 
@@ -70,14 +72,19 @@ This section lets you set your preferences based on the channels. It has three c
     1. Select a language from the language list.
     2. Click the toggle to Enable/Disable the Agentic Copilot feature.
     3. Select an app from the **Select Agentic App** list.
-    4. Click to select the **Allow auto send Message** field.
-    5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 10 seconds. 
+    4. Click to select the **Allow auto send Message** option. Clearing this option cancels all unsent or new Agentic messages.  
+    5. Set the timer for the **Set message delay before auto send** field by using the slider. You can set a delay up to a maximum of 60 seconds. 
     <img src="../widget-settings-images/agentic-copilot-setting.png" alt="agentic-copilot-setting" title="agentic-copilot-setting" style="border: 1px solid gray; zoom:80%;"> 
 
-9. Select an option under the **Conversation Transfer** section.
-10. Enable or disable the **Auto Summarization** toggle.
-11. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
-12. Select or clear the **Submit** button under the **Auto Summarization** section.
+9. Turn the **toggle** on or off for **Control Transcript Visibility between Agents** (for Voice channel only), and select one of the following options: 
+    * Use public APIs to control transcription 
+    * Use agent’s entry and exit events 
+    <img src="../widget-settings-images/control-transcript-visibility.png" alt="control-transcript-visibility" title="control-transcript-visibility" style="border: 1px solid gray; zoom:80%;"> 
+
+10. Select an option under the **Conversation Transfer** section.
+11. Enable or disable the **Auto Summarization** toggle.
+12. Select a language for the **Auto Summarization** field. The selected app's language appears by default.
+13. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:
 
@@ -92,7 +99,7 @@ This section lets you set your preferences based on the channels. It has three c
         !!! note
             The summary customization through "Custom Dialog Task" feature works only for third-party agent desktops.
 
-13. Click **Save** to save your settings.
+14. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI General Settings

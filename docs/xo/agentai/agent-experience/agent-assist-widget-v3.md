@@ -80,7 +80,7 @@ The Assist tab is the primary interface for the agents. AgentAssist actively mon
 The Assist tab facilitates the following:
 
 * Guide agents through conversations by providing the best response suggestions.
-* Display Agentic Copilot messages.
+* Display Agentic Copilot messages. After the configured **Welcome Events** are executed, the message *"Agentic Copilot is actively listening to your conversation and ready to assist automatically."* is displayed. 
 * Automatic retrieval of information from knowledge base (KB) based on user intent.
 * Provide structured training and coaching to agents.
 * Run bot for customers based on customer-provided information.
@@ -108,6 +108,11 @@ The Assist tab features the following:
        * Click “Override” to discard the Agentic prompt and enter your own response manually.
        * To stop/resume the “auto send” function, click the “stop/resume” icon in the top-right corner of the Agent AI widget, next to the “pause/resume” icon.
        * To pause or resume the Agentic app function, click the “pause/resume” icon in the top-right corner of the Agent AI widget. 
+   * When the **Allow Auto Send Message** feature is enabled, the timer for each Agentic response starts only after the previous message is sent.  
+   * If the view doesn’t auto-scroll to the latest message, an **arrow** appears at the bottom-right, showing the number of stacked Agentic messages. Click the **arrow** to scroll to the latest messages.  
+   * To regenerate a failed Agentic response, double-click the corresponding customer message.
+   * If Agentic Copilot fails to send a response, the auto-send feature is disabled automatically.  
+   * For messages outside the app’s defined scope, Agentic indicates it is not trained to respond. 
 
 * **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
 * **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
