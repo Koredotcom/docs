@@ -124,7 +124,7 @@ Note:
 
 ## Content Filtering
 
-Jira Connector offers standard and advanced filters on the indexable content allowing users to choose specific set of searchable content. 
+Jira Connector provides standard and advanced filters for indexable content, enabling users to select a specific set of searchable content. 
 
 Go to **Manage Content** page and select the **Object Type** that defines the types of content to be ingested. All subsequent filter settings apply *only* to this chosen object type(s).
 
@@ -156,7 +156,7 @@ Choose from commonly used fields in the dropdown or enter any valid Jira field n
 
 **Filter Precedence & Scope**
 
-* **Advanced Filters override Standard Filters** whenever their criteria conflict. For instance if one project is selected in Standard Filter and an Advanced filter is set up using project key for another project, the project in advanced filter will be applied. 
+* **Advanced Filters override Standard Filters** whenever their criteria conflict. For instance if one project is selected in Standard Filter and an Advanced filter is set up using project key for another project, the project in the advanced filter will be applied. 
 * **Filters affect only the selected Object Type.** If an advanced filter is set up for issues whereas only dashboards are selected on Manage content page, the filter is ignored. Only results within the specified objects types are shown. 
 
 By selecting the Object Type first, then applying Standard Filters, and finally Advanced Filters, you can ensure that only the precise set of Jira content you need is ingested into Search AI.
