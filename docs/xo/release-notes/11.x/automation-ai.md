@@ -21,14 +21,13 @@ The Automation Node’s routing settings are now also available at Flow & Channe
 
 **Batch Testing Now Supports Multi-App Routing**
 
-The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed to multiple linked apps. [Learn more:octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
-
+The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed to multiple linked apps. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
 
 
 **Enhancement of Batch Testing Public APIs to support creation and management of test suites**
 
 As part of the ongoing Batch Testing support for DialogGPT, several enhancements are being introduced to the public APIs. These changes ensure compatibility with new test formats, support for Universal Bots (Multi-App Routing), and maintain flexibility to handle both NLP-based and DialogGPT-based applications.
-[Learn more: octicons-arrow-right-24:](../../apis/automation/batch-test-execution.md#sample-request)
+[Learn more :octicons-arrow-right-24:](../../apis/automation/batch-test-execution.md#sample-request)
 
 <font size="4">Agent Transfer</font>
 
