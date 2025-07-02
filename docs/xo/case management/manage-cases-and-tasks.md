@@ -218,9 +218,9 @@ Under the case details section, select the **Resolve** from the status dropdown 
 
 When the review processes are completed by the agent, the agent can view all the case statuses, including Closed, Open, Resolved, and so on, from the agent **Dashboard** > **My Cases** > **Closed**.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/closed-my-cases.png" alt="Closed Cases" title="Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
-To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management](https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks).
+To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management](https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks){:target="_blank"}.
 
    <img src="../images/manage-all-cases-closed.png" alt="Managed Closed Cases" title="Managed Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
@@ -391,7 +391,7 @@ The above page includes the following list of items:
 
     * **Sample**: Displays the sample documents attached for this task.
 
-        <img src="..images/task-details-items.png" alt="Task Details" title="Task Details" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/task-details-items.png" alt="Task Details" title="Task Details" style="border: 1px solid gray; zoom:70%;">
 
 * **More Information**: Displays additional details about the task, such as:
 
@@ -447,7 +447,7 @@ Steps to View Task **Activity**:
 
 5. Click the **Events** tab to view all the events of a case that includes changes in status, updates, or actions taken by agents.
 
- <img src="../case management/images/activity-events.png" alt="Events" title="Events" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/activity-events.png" alt="Events" title="Events" style="border: 1px solid gray; zoom:70%;">
 
 After tasks are completed, ensure that all the issues of the customers are addressed. All comments and events are filled with appropriate details created against each task. This plays a crucial role in tracking the progress of all communication made by the agents and ensuring that all relevant information is captured throughout the case lifecycle for future reference. 
 
@@ -579,7 +579,7 @@ Once the system notifies the agent, the agent reviews the conversation and ident
 
     To further troubleshoot, the agent requires additional details from the customer that includes:
 
-    * **Troubleshooting Questions:** The agent provides additional details to address the issues based on the use cases or queries raised. For example, the Brand Name, Model Number, Part Issue, Image of the Defective part, Sample [Attachments](https://docs.kore.ai/xo/console/interacting-with-customers/?h=attachment#sending-attachments-to-customers){:target="_blank"}., [Agent Forms](https://docs.kore.ai/xo/contactcenter/configurations/agent-forms/configure-agent-forms/){:target="_blank"}., [Add Link](https://docs.kore.ai/xo/console/interacting-with-customers/){:target="_blank"}. (Web or Email address), and Create New Case.
+    * **Troubleshooting Questions:** The agent provides additional details to address the issues based on the use cases or queries raised. For example, the Brand Name, Model Number, Part Issue, Image of the Defective part, Sample [Attachments](https://docs.kore.ai/xo/console/interacting-with-customers/?h=attachment#sending-attachments-to-customers){:target="_blank"}, [Agent Forms](https://docs.kore.ai/xo/contactcenter/configurations/agent-forms/configure-agent-forms/){:target="_blank"}, [Add Link](https://docs.kore.ai/xo/console/interacting-with-customers/){:target="_blank"} (Web or Email address), and Create New Case.
 
     * **Create a New Case**: If additional information or follow-up is required, the agent can create a new case by clicking the New Case icon, using the details gathered from the customer.
 
