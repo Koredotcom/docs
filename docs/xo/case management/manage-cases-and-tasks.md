@@ -222,17 +222,17 @@ When the review processes are completed by the agent, the agent can view all the
 
 To view the status of all closed cases on the Dashboard and Manage Cases, see [Analyze Case Management] (https://docsinternal-kore.github.io/docs/xo/case%20management/case-analysis-dashboard/?h=cases+and+tasks#analyze-cases-and-tasks).
 
-   <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+   <img src="../images/manage-all-cases-closed.png" alt="Managed Closed Cases" title="Managed Closed Cases" style="border: 1px solid gray; zoom:70%;">
 
 Ensure all required actions and activities associated with the task are completed and changed to resolve with a proper comment before closing the case.
        
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/resolved-case-update.png" alt="Resolved Cases" title="Resolved Cases" style="border: 1px solid gray; zoom:70%;">
 
 Review the case to ensure that all aspects of the requested issue are addressed and resolved satisfactorily. 
 
 Ensure all processes and tasks are completed before marking the case and all associated tasks as **Resolved**, and then change the status of the case to **Closed**.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/case-closed-status.png" alt="Closed Status" title="Closed Status" style="border: 1px solid gray; zoom:70%;">
 
 ## Manage Tasks
 
@@ -258,7 +258,9 @@ In this, you (agent) can do the following:
 
 * Create, edit, or delete tasks until the case is closed.
 
-**Note:** When a task is transferred to a new assigned agent or updated by the agent, all the task-related notification is sent by the system to the agent.
+    !!! Note
+
+        When a task is transferred to a new assigned agent or updated by the agent, all the task-related notification is sent by the system to the agent.
 
 #### Task Notifications
 
