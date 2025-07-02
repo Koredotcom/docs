@@ -1,6 +1,6 @@
 # Configuring the Salesforce Agent
 
-Salesforce is used for various needs of different teams in an organization, such as marketing, sales, commerce, service, and IT work as one from anywhere using the chat module. Kore.ai XO Platform’s Salesforce Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Salesforce.
+Salesforce is used for various needs of different teams in an organization, such as marketing, sales, commerce, service, and IT work as one from anywhere using the chat module. The Platform’s Salesforce Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Salesforce.
 
 Use the configuration steps below as general guidelines to enable the Salesforce Agent integration. You may notice minor differences based on the version of Salesforce you are using.
 
@@ -15,7 +15,7 @@ Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction fo
 
 ## Configuration
 
-The XO Platform supports the following Salesforce integration methods for agent transfer:
+The Platform supports the following Salesforce integration methods for agent transfer:
 
 
 * **Live Chat (Legacy)**: This method enables agent transfer using Salesforce’s traditional live chat interface. It suits users with existing Live Chat setups and offers real-time messaging between virtual assistants and human agents.
@@ -121,7 +121,7 @@ To retrieve the Button ID, follow these steps:
 
 #### Step 6: Enable the Salesforce Agent
 
-1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
+1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
 
@@ -153,7 +153,7 @@ To retrieve the Button ID, follow these steps:
 
 #### Execution
 
-This section helps you verify how the conversations from the Kore.ai XO Platform are being handed over to the Salesforce agent after enabling it.
+This section helps you verify how the conversations from the Platform are being handed over to the Salesforce agent after enabling it.
 
 To verify the data exchange between Kore.ai’s VA and Salesforce agent, follow these steps:
 
@@ -255,7 +255,7 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 
 #### Step 5: Enable the Salesforce Agent
 
-1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
+1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
 

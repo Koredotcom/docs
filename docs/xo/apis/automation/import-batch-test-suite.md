@@ -98,9 +98,10 @@ curl --location --request POST \
 ```
 !!! note
 
-    * If engine is set to "regression"  or left empty, the system will default to ML Batch Testing.
+    * If [engine = "regression" (or) empty] or engine is not provided, it will execute for ML Batch Testing.
 
-    * If engine is set to "dgpt", it will trigger Dialog GPT Batch Testing.
+    * If engine is set to "dgpt", it will execute for Dialog GPT Batch Testing.
+
 
 
 

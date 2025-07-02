@@ -4,7 +4,7 @@ SearchAI offers multilingual capabilities to enhance accessibility and deliver a
 
 * **Add and manage content** in multiple languages.
 * **Submit queries and receive responses** in supported languages.
-* **Get search results and answers**in the same language as the query
+* **Get search results and answers** in the same language as the query
 
 Note: SearchAI supports **100+ languages**, enabling global accessibility. **It can work with any language supported by the underlying LLM and vector generation model**, provided you use the **Text Extraction Strategy** and **Vector Retrieval** method.
 

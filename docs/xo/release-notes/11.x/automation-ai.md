@@ -13,15 +13,16 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Configurable Search AI Retrieval Settings**
 
-DialogGPT now allows users to configure chunk limits for Search AI retrieval, controlling the number of chunks sent to the language model for response generation. This feature optimizes token consumption and response times while providing precise control over the balance between context depth and performance. [Learn more:octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
+DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimises token consumption, while providing precise control over the balance between context depth and performance. [Learn more:octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
 
 **Enhanced Discoverability for Automation Node Settings**
 
 The Automation Node’s routing settings have been relocated to Flow & Channels > Automation Routing > Routing Modes for better accessibility and visibility. This streamlined navigation enables users to quickly configure key settings, including Autonomy Level (Orchestrated Autonomy or Full Autonomy), Automation AI options, Agentic App Configurations, Connection Rules, and Error Prompts. [Learn more:octicons-arrow-right-24:](../../flows/automation-routing.md)
 
-**Batch Testing Now Supports Multi-App Routing for Universal Apps**
+**Batch Testing Now Supports Multi-App Routing**
 
-The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed.
+The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed. [Learn more:octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
+
 
 
 **Enhancement of Batch Testing Public APIs to support creation and management of test suites**

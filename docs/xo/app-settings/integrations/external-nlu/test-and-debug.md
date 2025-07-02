@@ -32,6 +32,10 @@ This is displayed only if an external NLU is enabled. If the API call fails, it 
 <img src="../images/ktrace.png" alt="K-Traceid and X-Traceid" title="K-Traceid and X-Traceid" style="border: 1px solid gray;zoom:50%;"/>
 
 
+* Hover over the information icon to view the K-Traceid and X-Traceid for each user interaction. The K-Traceid helps track and debug activities. The X-Traceid is a unique identifier for each message, included in the platform logs.  
+<img src="../images/ktrace.png" alt="K-Traceid and X-Traceid" title="K-Traceid and X-Traceid" style="border: 1px solid gray;zoom:50%;"/>
+
+
 * Under **Session Context & Variables**, you can see the variables for intents and entities in detail as shown in the following screenshots.  
 <img src="../images/external-nlu-test-and-debug-img3.png" alt="Session Context & Variables" title="Session Context & Variables" style="border: 1px solid gray;zoom:50%;"/>  
   
@@ -59,7 +63,7 @@ See the following sections to understand more details.
 * If the intent is not detected by the external engine, the Kore.ai NLU engine acts as a fallback. So, in this case, the NLP analysis shows the analysis of intent detection results from our three engines along with the ranking and resolver. For more information, see [Ranking and Resolver](../../../automation/natural-language/training/ranking-and-resolver.md){:target="_blank"}.  
 <img src="../images/external-nlu-test-and-debug-img7.png" alt="Intent is not detected by an external engine" title="Intent is not detected by an external engine" style="border: 1px solid gray;zoom:50%;"/>
 
-* If the intent is detected by the external engine but cannot be mapped to any intent on the XO platform, even then the Kore.ai NLU engine acts as a fallback. In this case, the NLP analysis displays a relevant message along with the API response containing the detected Intents and parameters.  
+* If the intent is detected by the external engine but cannot be mapped to any intent on the platform, even then the Kore.ai NLU engine acts as a fallback. In this case, the NLP analysis displays a relevant message along with the API response containing the detected Intents and parameters.  
 <img src="../images/external-nlu-test-and-debug-img8.png" alt="Intent detected by external engine but cannot be mapped to any intent on platform" title="Intent detected by external engine but cannot be mapped to any intent on platform" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -136,7 +140,7 @@ This list describes the conversation behavior while using external NLU adapter:
 
         The Intent and entity mapping work based on a case insensitive comparison of the names defined on the two platforms.
 
-* For the entity identification to work properly, it is recommended to define the entity nodes in the same sequence on the XO Platform and the external engine.
+* For the entity identification to work properly, it is recommended to define the entity nodes in the same sequence on the Platform and the external engine.
 * If the external NLU fails to detect the entity, then as a fallback, an attempt is made to detect the same on the Kore.ai NLP engine.
 
 

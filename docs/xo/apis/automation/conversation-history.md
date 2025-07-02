@@ -202,9 +202,11 @@ Version 2:
 
 **Sample Request for specific call Ids**
 
+The “call Id” is the unique identifier for a voice call. The user can retrieve IVR voice conversation messages between a user and an app for a specific call Id.
+
 ```json
 curl --location \
- 'https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?limit=50&dateTo=2025-06-26&callId={{callId}}&dateFrom=2025-06-23&channelType={{channelType}}' \
+ 'https://{{host}}/api/public/bot/{{botId}}/getMessages?limit=50&dateTo=2025-06-26&callId={{callId}}&dateFrom=2025-06-23&channelType={{channelType}}' \
 --header 'Content-Type: application/json' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' 
 
@@ -634,7 +636,7 @@ Default direction is forward.
 ```
 
 
-**Sample Response from POST method:**
+**Sample Response from POST method**
 
 
 ```json
