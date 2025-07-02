@@ -93,11 +93,11 @@ Follow these steps to configure an Agentic Copilot app:
 <img src="../answers-configuration-images/agentic-copilot.png" alt="agentic-copilot" title="agentic-copilot" style="border: 1px solid gray; zoom:80%;"> 
 
 4. Enter the following information under the **App Information** section:
-    * **App Name**: Enter a name for the new app. For example, Travel Agent.
+    * **App Name**: Enter a name for the new app. For example, Travel Agent. The character limit is set to 50.
     * **Domain URL**: Enter the Agentic platform’s host URL. For example, [agent-platform.kore.ai](http://agent-platform.kore.ai).
     * **Environment**: Enter the environment name as configured in the “Environment” section of the Agentic Platform.
-    * **App ID of Agentic Platform**: Enter the Agentic app ID in use.
-    * **X-API Key**: Enter the API key as configured in the “API Keys” section of the Agentic Platform.
+    * **App ID**: Enter the Agentic app ID in use.
+    * **API Key**: Enter the API key as configured in the “API Keys” section of the Agentic Platform.
 5. Click **Test Connection & Save**. The configured app is saved and gets connected.  
 <img src="../answers-configuration-images/connect-agentic-app.png" alt="connect-agentic-app" title="connect-agentic-app" style="border: 1px solid gray; zoom:80%;"> 
 
@@ -108,3 +108,7 @@ In this section, you can delete a configured app. When deleted, the connected ap
 1. Click the “delete” button against a saved app.
 2. Click Delete on the confirmation screen.  
 <img src="../answers-configuration-images/delete-agentic-app.png" alt="delete-agentic-app" title="delete-agentic-app" style="border: 1px solid gray; zoom:80%;"> 
+
+    !!! note
+        You can't delete an in-use Agentic app—the delete button is disabled and a badge indicates the app is in use: 
+    <img src="../answers-configuration-images/linked-services.png" alt="linked-services" title="linked-services" style="border: 1px solid gray; zoom:80%;"> 
