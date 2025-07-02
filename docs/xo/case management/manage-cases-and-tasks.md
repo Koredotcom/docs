@@ -676,4 +676,3 @@ To create a case via email:
     <img src="../images/call-transfer.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 10. Select **End** to close the conversation after you register or address the issue.
-
