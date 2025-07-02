@@ -357,7 +357,7 @@ This page shows the task description, task details, current status, and activity
 
 Click any existing unresolved tasks to expand and view detailed information, and the following page appears.
 
-<img src="../images/view-tasks.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/view-tasks.png" alt="View Tasks" title="View Tasks" style="border: 1px solid gray; zoom:70%;">
 
 The above page includes the following list of items:
 
@@ -375,7 +375,7 @@ The above page includes the following list of items:
 
     * **Events**: Displays the associated events to that activity.
 
-        <img src="images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/activity-associated-events.png" alt="Associated Activity" title="Associated Activity Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Task Details:** Displays the following task details information, such as:
 
@@ -391,7 +391,7 @@ The above page includes the following list of items:
 
     * **Sample**: Displays the sample documents attached for this task.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="..images/task-details-items.png" alt="Task Details" title="Task Details" style="border: 1px solid gray; zoom:70%;">
 
 * **More Information**: Displays additional details about the task, such as:
 
@@ -401,9 +401,9 @@ The above page includes the following list of items:
 
     * **Created by**: Displays the user who has created the task.
 
-    * **Created On**: Displays the task request date and year that it is created.
+    * **Created On**: Displays the task request date and year that is created.
 
-        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/more-info.png" alt="More Info" title="More Info" style="border: 1px solid gray; zoom:70%;">
 
 #### Transfer Task
 
@@ -487,7 +487,7 @@ The process of automated case creation are configured using public APIs for chan
 
 **Note:** When automated case creation is enabled, every qualified conversation automatically derives the case data, and thus, a case is created.
 
-####  On demand
+#### On demand
 
 On-demand refers to the live conversation with a customer through any channel (email, chat, or voice). The agent reviews the customer's issue or query and creates a case accordingly. Agents and Supervisors can create cases in the following ways:
 
