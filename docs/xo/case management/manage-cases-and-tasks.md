@@ -266,21 +266,21 @@ In this, you (agent) can do the following:
 
 Agents are notified through the case management system (Console) when any new tasks are assigned. 
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/task-notofications.png" alt="Task Notification" title="Task Notification" style="border: 1px solid gray; zoom:70%;">
 
 #### Access Tasks
 
 Select **Tasks** in the left navigation panel of Case Management. This page shows the overview of all tasks that an agent is handling related to a case, including planning, assigning, tracking, and completing the tasks to achieve the desired case outcomes.
 
-You can access Manage Tasks by navigating to **Contact Center AI > Case Management > Manage Cases > Tasks**.
+You can access Manage Tasks by navigating to **Contact Center AI** > **Case Management** > **Manage Cases** > **Tasks**.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/manage-cases-tasks.png" alt="Tasks" title="Tasks" style="border: 1px solid gray; zoom:70%;">
 
 Agent can view the following menu items for the **Tasks**:
 
 * **Unresolved**: Tasks that are still active (work-in-progress) and not yet resolved or closed. 
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/unresolved-tasks.png" alt="Unresolved Tasks" title="Unresolved Tasks" style="border: 1px solid gray; zoom:70%;">
 
     All the **Tasks** include the following list of items:
 
@@ -300,7 +300,9 @@ Agent can view the following menu items for the **Tasks**:
 
     * **Assignee**: Displays the name of the agent to whom the task is assigned. This option is not available for **Unresolved**, **Unassigned**, **All Tasks**, **My Tasks**, and **Closed**.
 
-**Note:** The agent can easily switch between custom tasks and task templates.
+        !!! Note
+
+            The agent can easily switch between custom tasks and task templates.
 
 * **My Tasks**: Tasks that are assigned to the agent or back office employee.
 
@@ -308,9 +310,11 @@ Agent can view the following menu items for the **Tasks**:
 
 * **Search Tasks**: Enables searching for specific tasks based on field values or content (for example, case ID, status, priority, keywords in task descriptions or notes).
 
-    **Note:** The agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
+    !!! Note
 
-A supervisor can view the following menu items for the tasks:
+        The agent cannot create or edit tasks once a case is closed. The system prevents task creation if required fields are missing or invalid.
+
+    A supervisor can view the following menu items for the tasks:
 
 * **Unassigned**: Tasks that are identified and not assigned yet to a case manager or team member.
 
@@ -322,17 +326,17 @@ Steps to **Add New Task**:
 
 1. Click any of the cases from the **Tasks** page to create a new task.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/add-new-task.png" alt="Add New Task" title="Add New Task" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+ Add New Task**. By default, the New Task dialog box is displayed with a default Task Number assigned.	
  
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-task.png" alt="New Task" title="New Task" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the Task Type for the related case from the dropdown list provided.
 
 4. Select a **Due Date** to complete the task.
 
-5. Enter a case** Description** based on the conversation case summary.
+5. Enter a case **Description** based on the conversation case summary.
 
 6. Enter a case **Title** based on the issue raised by the customer.
 
@@ -341,9 +345,11 @@ Steps to **Add New Task**:
 
 9. Click **Save**. A success message of the task creation is displayed, and a new custom task is created and assigned to the agent.
 
-**Note:** All the red asterisk (*) marked fields are mandatory to fill up.
+    !!! Note
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        All the red asterisk (*) marked fields are mandatory to fill up.
+
+    <img src="../images/task-message-successful.png" alt="Task Creation Successful" title="Task Creation Successful" style="border: 1px solid gray; zoom:70%;">
 
 #### View Tasks Components
 
@@ -351,7 +357,7 @@ This page shows the task description, task details, current status, and activity
 
 Click any existing unresolved tasks to expand and view detailed information, and the following page appears.
 
-<img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/view-tasks.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 The above page includes the following list of items:
 
