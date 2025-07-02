@@ -13,20 +13,20 @@ This update includes enhancements and bug fixes. The key enhancements included i
 **Real-Time Translation in Agent Console**
 
 Real-time translation is now natively integrated into the Agent Console, eliminating the need for BotKit. This enhancement provides seamless multilingual support across the contact center.  
-[Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#translate-conversations-in-real-time)
 
 **Queue-Based Consult Call for Voice Channel**
 
-Agents can now initiate consult calls to a specific queue, allowing them to engage with available internal agents before taking further call-handling actions. This enhancement improves flexibility and maintains continuity in voice interactions. [Learn more:octicons-arrow-right-24:](../../console/interacting-with-customers.md#consult-call-to-a-queue-voice-channel-only)
+Agents can now initiate consult calls to a specific queue, allowing them to engage with available internal agents before taking further call-handling actions. This enhancement improves flexibility and maintains continuity in voice interactions. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#consult-call-to-a-queue-voice-channel-only)
 
 **Play Incoming Alerts Through Speaker**
 
-A new setting enables agents to route incoming interaction alerts (calls, consults, chats) through the computer speaker, even when headphones are connected, preventing missed alerts by allowing sound to play through external speakers when needed. [Learn more:octicons-arrow-right-24:](../../console/manage-layout.md#incoming-call-notification-from-speaker-when-headphones-are-connected)
+A new setting enables agents to route incoming interaction alerts (calls, consults, chats) through the computer speaker, even when headphones are connected, preventing missed alerts by allowing sound to play through external speakers when needed. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#incoming-call-notification-from-speaker-when-headphones-are-connected)
 
 **User Diagnostics: Connectivity and Server Reachability Testing**
 
 A Connectivity, Bandwidth, and Server Reachability Test is added under the *User Diagnostics → Connectivity* tab. This enhanced diagnostic test enhances visibility into media connectivity and voice quality by performing STUN/TURN checks and a loopback test call to the Voice Gateway server.  
-[Learn more:octicons-arrow-right-24:](../../console/manage-layout.md#agent-diagnostics)
+[Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#agent-diagnostics)
 
 **Fixed Issues With External Agent Consult Call Handling**
 
@@ -51,7 +51,7 @@ Key benefits:
 * Administrators and Supervisors can simplify routing when language is not required.
 * Supports use cases with external translation services.
 * Applies across all channels in real time.  
-[Learn more:octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
+[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
 
 <font size="4">Migration</font>
 
@@ -77,11 +77,11 @@ New status and reason values (for example, No Answer, Busy, Network Failure, Ans
 
 **Start and Stop Campaigns**
 
-This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
+This API enables users to programmatically start or stop campaigns using `either CampaignName` or `CampaignID`, with either the `Run` or `Stop` action. The API requires `AccountID` and `AppID` in the URL and returns the execution instance ID on success. Enables automation of campaign execution via backend scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
 
 **Campaign Status and Results**
 
-This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-status)
+This API enables users to retrieve the execution status (`active`, `paused`, `stopped`, or `completed`) or detailed result data for completed or stopped campaigns using account, app, campaign, and execution IDs. The results include per-contact data such as `phoneNumber`, `DialerOutcome`, `BotOutboundStatus`, and agent disposition codes. Supports automated campaign lifecycle tracking via background scripts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-status)
 
 **Add and Retrieve Contacts in Contact Lists**
 
@@ -89,7 +89,7 @@ These APIs enable the management of contacts in Contact Lists programmatically.
 
 * The `POST` API allows adding up to 100 contacts per call using `ContactListID`, supporting mapped and unmapped fields.
 * The `GET` API retrieves all contacts with pagination support (`skip`, `offset`, `hasMore`). Duplicate handling follows the list’s append-and-duplicate configuration, which is fixed at creation.  
-[Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
+[Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
 
 **Create, Retrieve, and Delete Campaigns**
 
@@ -97,7 +97,7 @@ Introduced APIs for complete Campaign lifecycle management. These APIs can be us
 
 * Create campaigns by specifying configuration such as channel, flow name, contact list, DNC list, priority, caller ID, and retry logic.
 * Retrieve all stored properties of a campaign using its Campaign ID.
-* Remove a campaign using its Campaign ID. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
+* Remove a campaign using its Campaign ID. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#campaign-management-apis)
 
 These APIs support both Agentless Voice and SMS (Simple/Advanced) campaign types. Campaigns created via API remain fully accessible and manageable through the UI.
 
@@ -107,7 +107,7 @@ Added support for managing Contact Lists via public APIs, including a new type: 
 
 * Create a contact list by specifying `Contact List Name`, `Type`, and `DuplicateCheck`.
 * Retrieve all metadata for contact lists (excluding contact data).
-* Delete a contact list along with all its contacts. [Learn more:octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
+* Delete a contact list along with all its contacts. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/contact-center-api-list.md#contact-list-management)
 
 These APIs enable users to automate contact list creation and management without requiring the use of the UI.
 
@@ -119,7 +119,7 @@ The Outbound Calling API has been enhanced to improve AMD handling and support c
 * Greeting Message in Context: The detected greeting message is now passed in the context for use in bot flows.
 * `greetingCompletionTimeoutMs` Handling: The timeout now functions correctly, preventing message cutoffs after `amd_machine_detected`.
 * Custom Notify URL Headers: The Dialout API now supports custom headers in the notify URL, enabling customers to receive enriched event data.  
-[Learn more:octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg.md)
+[Learn more :octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg.md)
 
 <hr>
 

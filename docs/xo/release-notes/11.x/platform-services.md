@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Audit Logs for Agent Profile Updates**
 
-Enhanced the User Management audit logs to capture all agent profile-related actions, including create, update, delete, activate/deactivate, and role or privilege changes. Each log entry includes a timestamp, the user who performed the action, and the target user's details. The system also logs failed or unauthorized attempts. These updates improve traceability, support compliance, and ensure complete visibility into user management activities. [Learn more:octicons-arrow-right-24:](../../administration/analytics.md#export-options)
+Enhanced the User Management audit logs to capture all agent profile-related actions, including create, update, delete, activate/deactivate, and role or privilege changes. Each log entry includes a timestamp, the user who performed the action, and the target user's details. The system also logs failed or unauthorized attempts. These updates improve traceability, support compliance, and ensure complete visibility into user management activities. [Learn more :octicons-arrow-right-24:](../../administration/analytics.md#export-options)
 
 **App-to-App Communication Enabled for New Apps**
 
@@ -29,7 +29,7 @@ Key benefits
 * Improves resource efficiency by provisioning phone numbers only when needed.
 * Simplifies the onboarding experience.  
 
-[Learn more:octicons-arrow-right-24:](../../getting-started/guided-onboarding.md)
+[Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md)
 
 
 <font size="4">Channels</font>
@@ -37,14 +37,14 @@ Key benefits
 **Retirement of Skype**
 
 Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform.  
-[Learn more:octicons-arrow-right-24:](../../channels/add-skype-channel.md)
+[Learn more :octicons-arrow-right-24:](../../channels/add-skype-channel.md)
 
 <font size="4">Rebranding</font>
 
 **Renaming of Platform Components**
 
 As part of the revised product strategy, the XO Platform is being repositioned as AI for Service, aligning it with the broader product suite (AI for Work and AI for Process). This change accurately reflects the platform’s core value proposition and enhances brand consistency across all products.  
-[Learn more:octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md)
+[Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md)
 
 <font size="4">APIs</font>
 
@@ -59,7 +59,7 @@ Key features
 * Per-client rate limiting for system stability.
 * Granular logging for improved tracking and debugging.  
 
-[Learn more:octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
+[Learn more :octicons-arrow-right-24:](../../apis/automation/proactive-notifications-v2.md)
 
 <hr>
 

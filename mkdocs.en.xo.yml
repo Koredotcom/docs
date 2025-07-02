@@ -342,6 +342,7 @@ nav:
                 - Freshservice: searchai/content-sources/connectors/freshservice.md
                 - Front: searchai/content-sources/connectors/front.md
                 - GitHub: searchai/content-sources/connectors/github.md
+                - GitHub On-Prem: searchai/content-sources/connectors/github-onprem.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
                 - Guru: searchai/content-sources/connectors/guru.md
@@ -350,6 +351,7 @@ nav:
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jenkins: searchai/content-sources/connectors/jenkins.md
                 - Jira: searchai/content-sources/connectors/jira.md
+                - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - LumApps: searchai/content-sources/connectors/lumapps.md
                 - Miro: searchai/content-sources/connectors/miro.md
@@ -357,6 +359,7 @@ nav:
                 - MS Teams: searchai/content-sources/connectors/msteams.md
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
+                - OpsGenie: searchai/content-sources/connectors/opsgenie.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
                 - PagerDuty: searchai/content-sources/connectors/pagerduty.md
                 - Re:amaze: searchai/content-sources/connectors/reamaze.md
@@ -367,11 +370,13 @@ nav:
                 - Shortcut: searchai/content-sources/connectors/shortcut.md
                 - Slab: searchai/content-sources/connectors/slab.md
                 - Slack: searchai/content-sources/connectors/slack.md
+                - Teamwork: searchai/content-sources/connectors/teamwork.md
                 - TestRail: searchai/content-sources/connectors/testrail.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - Workday: searchai/content-sources/connectors/workday.md
                 - Wrike: searchai/content-sources/connectors/wrike.md
+                - xMatters: searchai/content-sources/connectors/xmatters.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
                 - Zeplin: searchai/content-sources/connectors/zeplin.md
@@ -389,6 +394,7 @@ nav:
             - Field Mapping Stage: searchai/workbench/field-mapping.md
             - Custom Script: searchai/workbench/custom-script.md
             - Exclude Document: searchai/workbench/exclude-document.md
+            - API Stage: searchai/workbench/api-stage.md
             - Workbench Simulator: searchai/workbench/simulation.md
         - Vector Configuration: searchai/index-configuration.md
     - Configuration:
