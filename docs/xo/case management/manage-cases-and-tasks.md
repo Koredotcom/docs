@@ -413,11 +413,11 @@ An agent can transfer a task to another agent by selecting the Assignee from the
 
 * **Assignee Allocation**: Allotment of the task to the appropriate agent based on expertise, workload, and availability.
     
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/assignee-allocation.png" alt="Assignee Allocation" title="Assignee Allocation" style="border: 1px solid gray; zoom:70%;">
 
 * **Set Priorities**: Set priority levels (High, Medium, Low, Emergency, and so on) for each task to focus efforts where they are most needed.
     
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/set-priority.png" alt="Set Priorities" title="Set Priorities" style="border: 1px solid gray; zoom:70%;">
 
 #### Review Task Activity
 
@@ -427,7 +427,7 @@ This helps agents to understand the history of the task or case and the reason b
 
 * **Dashboard Monitor:** Check to visualize task statuses, outstanding items, and overall workload.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/task-monitor.png" alt="Dashboard Monitor" title="Dashboard Monitor" style="border: 1px solid gray; zoom:70%;">
 
 * **Track Activity:** After tasks are completed, collect the feedback through comments and event details to review the progress of each task.
 
@@ -437,17 +437,17 @@ Steps to View Task **Activity**:
 
 2. Click the **Comments** tab to view/add comments.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/view-activity.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/resolved-issue.png" alt="View Comments" title="View Comments" style="border: 1px solid gray; zoom:70%;">
 
 4. You can edit, delete, or add supported image files related to the task activity addressed.
 
 5. Click the **Events** tab to view all the events of a case that includes changes in status, updates, or actions taken by agents.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../case management/images/activity-events.png" alt="Events" title="Events" style="border: 1px solid gray; zoom:70%;">
 
 After tasks are completed, ensure that all the issues of the customers are addressed. All comments and events are filled with appropriate details created against each task. This plays a crucial role in tracking the progress of all communication made by the agents and ensuring that all relevant information is captured throughout the case lifecycle for future reference. 
 
@@ -455,13 +455,13 @@ After tasks are completed, ensure that all the issues of the customers are addre
 
 Under the Task Details section, select the **Resolve** from the status dropdown list.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/closed-task.png" alt="Update Task Status" title="Update Task Status" style="border: 1px solid gray; zoom:70%;">
 
 **Task Closure**:
 
 **Note:** Change each task’s status from 'Resolved' to 'Closed' once you complete all required actions. After completing all review processes, you can view the task status—such as Closed, Open, or Resolved—from the Agent **Dashboard > My Tasks > Closed**.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/my-tasks-closed.png" alt="Task Closure" title="Task Closure" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Console
 
@@ -472,7 +472,9 @@ Agent console displays essential information for agents using the Case Managemen
 Before managing cases and tasks, ensure the following prerequisites are completed:
 
 * Set up a Channel and Chat or Voice Bot with Customer Support dialogs. 
+
 * Customers must have the option to select an agent during Bot or Voice interactions or conversations.
+
 * The customer should select the agent transfer option to initiate agent interaction.
 
 ## Case Creation Process
@@ -485,7 +487,9 @@ The system creates cases based on the configuration defined in Case Templates. Y
 
 The process of automated case creation are configured using public APIs for channels such as emails and voicemails. Use these public APIs to get case details, update case details, and delete case details. 
 
-**Note:** When automated case creation is enabled, every qualified conversation automatically derives the case data, and thus, a case is created.
+!!! Note
+
+    When automated case creation is enabled, every qualified conversation automatically derives the case data, and thus, a case is created.
 
 #### On demand
 
@@ -509,19 +513,19 @@ The agents can create a case using the following processes:
 
 ### Create a New Case
 
-To create a new case:
+Steps to create a new case:
 
-1. Navigate to **Contact Center AI > Agent Console**. The Agent Console displays.	
+1. Navigate to **Contact Center AI** > **Agent Console**. The Agent Console displays.	
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/console-page.png" alt="Agent Console" title="Agent Console" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+** icon, and then click **Create Case**. The New Case dialog box is displayed with a Case Number assigned along with the form.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/manage-new-case-unassigned.png" alt="Create Case" title="Create Case" style="border: 1px solid gray; zoom:70%;">
 
-3. In the Requested by field, enter the Name of the customer who has requested to create a new case, for an Issue, Inquiry, Complaint, or a Service request.
+3. In the **Requested by** field, enter the Name of the customer who has requested to create a new case, for an Issue, Inquiry, Complaint, or a Service request.
 
-4. Select a communication channel from the **Channels dropdown list (Voice**/**Web**/**Mobile Client)**.
+4. Select a communication channel from the **Channels dropdown list (Voice** or **Web** or **Mobile Client**).
 
     * **Voice**: Select the Phone Number from the dropdown list, and add the selected country phone number that a customer belongs to.
 
@@ -543,7 +547,9 @@ To create a new case:
 
 12. Click **Save**. A success message is displayed, and a new case is created. 
 
-**Note:** The created case gets assigned to agents based on the case type assignment rules.
+    !!! Note
+
+        The created case gets assigned to agents based on the case type assignment rules.
 
 ### Live Conversation
 
@@ -553,31 +559,31 @@ Agents create and track cases during real-time interactions via email, voice, or
 
 When a customer requests an agent, the system transfers the conversation by initiating a transfer workflow.
 
- <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/ai-agent-transfer.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 * **Notification Alert**
 
-    The agent receives a notification alert in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/).
+    The agent receives a notification alert in the agent console while a conversation is transferred to an agent. [Learn more](https://docs.kore.ai/xo/console/managing-incoming-interactions/){:target="_blank"}.
     
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/agent-transfer.png" alt="Notification Alert" title="Notification Alert" style="border: 1px solid gray; zoom:70%;">
 
 * **Identify the Issue or Inquiry**
 
 Once the system notifies the agent, the agent reviews the conversation and identifies the customer's issue or inquiry using the basic information the customer provides.
 
-    **Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example, "Refrigerator Cooling Issue”, the agent suggests troubleshooting steps based on the customer details received.
+**Tip:** Based on the conversations, the agent provides relevant information to customers or suggests actions to resolve the issue. For example, "Refrigerator Cooling Issue”, the agent suggests troubleshooting steps based on the customer details received.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/basic-customer-info.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
     
 * **Follow-up Questions**
 
     To further troubleshoot, the agent requires additional details from the customer that includes:
 
-    * **Troubleshooting Questions:** The agent provides additional details to address the issues based on the use cases or queries raised. For example, the Brand Name, Model Number, Part Issue, Image of the Defective part, Sample [Attachments](https://docs.kore.ai/xo/console/interacting-with-customers/?h=attachment#sending-attachments-to-customers), [Agent Forms](https://docs.kore.ai/xo/contactcenter/configurations/agent-forms/configure-agent-forms/), [Add Link](https://docs.kore.ai/xo/console/interacting-with-customers/) (Web or Email address), and Create New Case.
+    * **Troubleshooting Questions:** The agent provides additional details to address the issues based on the use cases or queries raised. For example, the Brand Name, Model Number, Part Issue, Image of the Defective part, Sample [Attachments](https://docs.kore.ai/xo/console/interacting-with-customers/?h=attachment#sending-attachments-to-customers){:target="_blank"}., [Agent Forms](https://docs.kore.ai/xo/contactcenter/configurations/agent-forms/configure-agent-forms/){:target="_blank"}., [Add Link](https://docs.kore.ai/xo/console/interacting-with-customers/){:target="_blank"}. (Web or Email address), and Create New Case.
 
     * **Create a New Case**: If additional information or follow-up is required, the agent can create a new case by clicking the New Case icon, using the details gathered from the customer.
 
-     <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 ### Case Creation via Live Interaction Pane
 
