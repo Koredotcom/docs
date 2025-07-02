@@ -645,35 +645,35 @@ To create a case via email:
 
 1. Navigate to **Contact Center AI** > **Flows & Channels** > **Digital**. 
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/digital-navigation.png" alt="Digital" title="Digital" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Email** to create a new email domain. The created domain appears.
     
-    <img src="../case management/images/digital-email.config.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/digital-email.png" alt="Domain Email" title="Domain Email" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **New Email Address** to register an email address for the domain. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/#create-a-kore-domain-email-address).
+3. Click **New Email Address** to register an email address for the domain. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/#create-a-kore-domain-email-address){:target="_blank"}.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/domain-email.png" alt="Domain Email" title="Domain Email" style="border: 1px solid gray; zoom:70%;">
 
-4. Attach a **Flow Experience** to your **Custom** or **Kore domain Email Address**. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#attach-a-flow-to-a-kore-domain-email-address).
+4. Attach a **Flow Experience** to your **Custom** or **Kore domain Email Address**. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#attach-a-flow-to-a-kore-domain-email-address){:target="_blank"}.
 
-5. Publish your Custom or Kore domain Email Address. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#publish-kore-domain-email-addresses).
+5. Publish your Custom or Kore domain Email Address. [Learn More](https://docsinternal-kore.github.io/docs/xo/channels/add-email-channel/?h=add+email#publish-kore-domain-email-addresses){:target="_blank"}.
 
 6. Compose an **Email** from your mailbox with the required information and click **Send**. The agent receives an email transfer acceptance response and initiates the customer interaction.
     
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customer-interaction.png" alt="Customer Interaction" title="Customer Interaction" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **Reply** to gather information about the issue by interacting with the customer.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/customer-reply.png" alt="Customer Reply" title="Customer Reply" style="border: 1px solid gray; zoom:70%;">
 
-8. Click the **New Case** icon to register a new case or service request. ([Learn more](#new-case-creation-68)).
+8. Click the **New Case** (<img src="../images/new-case-icon.png" style="zoom:100%;"></img>) icon to register a new case or service request. ([Learn more](https://docsinternal-kore.github.io/docs/xo/case%20management/manage-cases-and-tasks/?h=offline+conversation#create-a-new-case)).
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/transfer-call.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 9. Use the **Transfer** option to forward the **Email** conversation to another agent.
 
-    <img src="../images//comment-box-format.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/call-transfer.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 10. Select **End** to close the conversation after you register or address the issue.
 
