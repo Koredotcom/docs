@@ -60,7 +60,7 @@ Steps:
 
 2. Click **Get Started**. The “Get Started with DialogGPT” screen is displayed.  
 <img src="../images/dgpt2.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
-<img src="../images/dgpt2.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
+
 
 3. In the Conversation Types, select the conversation type that you want DialogGPT. 
 
