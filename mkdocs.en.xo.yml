@@ -158,7 +158,7 @@ nav:
                 - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
                 - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
                 - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
+                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
                 - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
