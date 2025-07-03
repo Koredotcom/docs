@@ -539,4 +539,4 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 1. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with   the app first.
 2. Select “*Yes*” for **Enable Channel**.
 3. Click **Save**.  
-<img src="../channels/images/whatsapp25.png" alt="Enable_the_Channel" title="Enable_the_Channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp25.png" alt="Enable_the_Channel" title="Enable_the_Channel" style="border: 1px solid gray; zoom:70%;">
