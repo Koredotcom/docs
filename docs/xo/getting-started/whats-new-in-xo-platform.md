@@ -56,10 +56,10 @@ Key Search AI capabilities are summarized below.
 
 * **Smart Answer Generation**: Search AI uses Advanced RAG technologies to deliver accurate, context-aware answers by intelligently combining information retrieval and generative AI. It is built on an end-to-end process:
 
-**Content ingestion -> Extraction ->Indexing -> Retrieval -> Answer Generation.** 
+    **Content ingestion -> Extraction ->Indexing -> Retrieval -> Answer Generation.** 
 
-The platform efficiently ingests content from various sources, applies advanced extraction techniques to understand complex formats, and uses sophisticated indexing and retrieval methods to identify the most relevant information. This information is then passed to a Large Language Model to generate clear, human-like responses. Search AI supports flexible LLM integration, enabling enterprises to utilize built-in models, third-party providers (such as OpenAI or Azure), or even bring their custom or fine-tuned LLMs.
-To further enhance response quality, Search AI uses Agentic RAG Architecture to optimize query interpretation and retrieval. By combining autonomous agent capabilities with RAG, it can break down complex queries, retrieve targeted knowledge from specific sources, and generate highly contextual answers.
+    The platform efficiently ingests content from various sources, applies advanced extraction techniques to understand complex formats, and uses sophisticated indexing and retrieval methods to identify the most relevant information. This information is then passed to a Large Language Model to generate clear, human-like responses. Search AI supports flexible LLM integration, enabling enterprises to utilize built-in models, third-party providers (such as OpenAI or Azure), or even bring their custom or fine-tuned LLMs.
+    To further enhance response quality, Search AI uses Agentic RAG Architecture to optimize query interpretation and retrieval. By combining autonomous agent capabilities with RAG, it can break down complex queries, retrieve targeted knowledge from specific sources, and generate highly contextual answers.
 
 * **Expanded Connectivity and High-Speed Crawling**: Search AI provides a robust and flexible content ingestion framework that enables enterprises to integrate data from diverse sources seamlessly. This ensures quick access to accurate information and simplifies the discovery of relevant answers. 
     * **Connector Ecosystem**: Supports **60+ out-of-the-box connectors** to ingest structured content from popular CRMs, CMSs, cloud storage platforms, productivity suites, and collaboration tools like Salesforce, SharePoint, Google Drive, Confluence, and more.
