@@ -1754,7 +1754,7 @@ A new permission for Outbound Email is added in the Agent & Supervisor Experienc
 
 <font size="4">Campaigns</font>
 
-**#### **Schedule Voice Campaigns**
+**Schedule Voice Campaigns**
 
 Scheduling allows precise control over when your messages will be delivered. You can now seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#schedule-voice-campaigns)
 

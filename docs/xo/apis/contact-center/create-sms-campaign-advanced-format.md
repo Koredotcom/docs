@@ -13,15 +13,15 @@ Use this API to create an SMS campaign with advanced formatting using the specif
 
 | **Parameter** | **Description**                                                                              | **Type**         |
 |---------------|----------------------------------------------------------------------------------------------|------------------|
-| `host`        | Environment URL. For example: `https://platform.kore.ai`                                     | `string`, required |
-| `streamId`    | Bot ID or Stream ID. You can find this on the General Settings page of the bot.             | `string`, required |
+| `host`        | Environment URL. For example: `https://platform.kore.ai`                                     | string, required |
+| `streamId`    | Bot ID or Stream ID. You can find this on the General Settings page of the bot.             | string, required |
 
 ## Query Parameters
 
 | **Parameter**   | **Description**                                           | **Type**           |
 |------------------|-----------------------------------------------------------|--------------------|
-| `accountId`      | The unique ID associated with the account.                | `string`, required |
-| `campaignType`   | Type of campaign. Use `"sms"`.                            | `string`, required |
+| `accountId`      | The unique ID associated with the account.                | string, required |
+| `campaignType`   | Type of campaign. Use `"sms"`.                            | string, required |
 
 ## Sample Request
 
