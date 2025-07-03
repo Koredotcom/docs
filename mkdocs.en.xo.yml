@@ -509,6 +509,7 @@ nav:
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
+        - Custom LLM Model in GenAI: agentai/configuration/custom-llm-model-in-genai.md
         - Linked Services: agentai/configuration/linked-services.md
         - Third Party Configuration: agentai/configuration/third-party-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md

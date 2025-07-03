@@ -21,7 +21,7 @@ In this section, you can select a pre-configured dialog task and channel and cho
 
 #### Steps to Configure the On-Connect Dialog Task
 
-1. Sign in to **XO Platform**.
+1. Sign in to **AI for Service**.
 2. Click **Product Switcher** > **Agent AI**.  
    <img src="../welcome-events-images/select-agent-ai.png" alt="select-agent-ai" title="select-agent-ai" style="border: 1px solid gray; zoom:80%;">
 3. Click the **Agent AI** icon from the left menu.
@@ -101,7 +101,7 @@ Exit Events mark the end of a customer interaction. This section lets you config
 In this section, you can select a dialog task to run automatically once the exit event triggers.
 
 #### Steps to configure End of Conversation Dialog Task
-1. Sign in to **XO11**.
+1. Sign in to **AI for Service**.
 2. Go to **Agent AI** > **Configurations** > **Conversation Events**.
 3. Click **Exit Events**.  
    <img src="../welcome-events-images/exit-events.png" alt="exit-events" title="exit-events" style="border: 1px solid gray; zoom:80%;"> 
@@ -121,10 +121,10 @@ In this section, you can select a dialog task to run automatically once the exit
 9. Click **Save**.
 
 ### Conversation Summary
-In this section, you can select how to auto generate a conversation summary at the end of a conversation. You can select either the out-of-the-box (OOTB) Kore Summarization or the Custom Dialog Task model to generate the summary.
+In this section, you can select how to auto generate a conversation summary at the end of a conversation. You can select either the out-of-the-box (OOTB) Kore Summarization or the Custom Dialog Task model to generate the summary. Also, if you select OOTB you can either continue with the default Kore's model or create and select your own model.
 
 #### Steps to set Conversation Summary
-1. Sign in to **XO11**.
+1. Sign in to **AI for Service**.
 2. Go to **Agent AI** > **Configurations** > **Conversation Events**.
 3. Click **Exit Events**.
 4. Select a channel - **Chat**, **Voice**, or **Email**.
@@ -133,7 +133,8 @@ In this section, you can select how to auto generate a conversation summary at t
 
 6. Click **Yes, Proceed**.
 7. Select either **OOTB Kore Summarization** or **Custom Dialog Task**.
-    1. If you select **Custom Dialog Task**, select a dialog task from the **Select Dialog** dropdown list:  
+    1. If you select **OOTB Kore Summarization**, you can either continue with the default Kore's model or create and select your own custom model. To create your Custom LLM model, refer to [Custom LLM Model](./../../agentai/configuration/custom-llm-model-in-genai.md){:target="_blank"} and to select your model refer to [Select Your Model](./../../agentai/configuration/custom-llm-model-in-genai.md#steps-to-select-custom-model){:target="_blank"}. 
+    2. If you select **Custom Dialog Task**, select a dialog task from the **Select Dialog** dropdown list:  
     <img src="../welcome-events-images/conv-summ-dialog-selection.png" alt="conv-summ-dialog-selection" title="conv-summ-dialog-selection" style="border: 1px solid gray; zoom:80%;">  
 
 8. Select or clear the **Show Submit button** option.
