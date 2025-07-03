@@ -156,9 +156,9 @@ nav:
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
                 - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
-                - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
+                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
                 - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
+                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
                 - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
@@ -509,7 +509,9 @@ nav:
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
+        - Custom LLM Model in GenAI: agentai/configuration/custom-llm-model-in-genai.md
         - Linked Services: agentai/configuration/linked-services.md
+        - Third Party Configuration: agentai/configuration/third-party-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md

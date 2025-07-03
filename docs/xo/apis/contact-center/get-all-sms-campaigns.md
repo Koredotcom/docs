@@ -13,14 +13,14 @@ Use this API to retrieve all SMS campaign configurations associated with a speci
 
 | **Parameter** | **Description**                                                                                     | **Type**           |
 |---------------|-----------------------------------------------------------------------------------------------------|--------------------|
-| `host`        | Environment URL. For example: `https://platform.kore.ai`                                            | `string`, required |
-| `streamId`    | Bot ID or Stream ID. You can access it from the **General Settings** page of the bot.              | `string`, required |
+| `host`        | Environment URL. For example: `https://platform.kore.ai`                                            | string, required |
+| `streamId`    | Bot ID or Stream ID. You can access it from the **General Settings** page of the bot.              | string, required |
 
 ## Query Parameter
 
 | **Parameter** | **Description**                                 | **Type**           |
 |---------------|-------------------------------------------------|--------------------|
-| `accountId`   | The unique ID associated with the account.      | `string`, required |
+| `accountId`   | The unique ID associated with the account.      | string, required |
 
 ## Sample Request
 
@@ -433,19 +433,19 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 
 | **Parameter**                 | **Description**                                                        | **Type**   |
 |------------------------------|------------------------------------------------------------------------|------------|
-| `id`                         | Unique identifier for the campaign.                                    | `string`   |
-| `campaignInstanceId`         | Unique instance ID (only in some records).                             | `string`   |
-| `name`                       | Campaign name.                                                         | `string`   |
-| `description`                | Campaign description.                                                  | `string`   |
-| `status`                     | Campaign status (for example, `Ready`, `Stopped`).                     | `string`   |
-| `priority`                   | Campaign priority level. For example: 5.                               | `string`   |
-| `experienceFlow`             | Experience Flow ID (present in advanced format campaigns).             | `string`   |
-| `message.message`            | Base64 encoded message content.                                        | `string`   |
-| `message.templateId`         | Template ID (if message uses a template).                              | `string`   |
-| `schedule`                   | Contains schedule config (`isSchedulingEnabled`, `isRecurrenceEnabled`). | `object` |
-| `createdAt`                  | ISO timestamp when the campaign was created.                           | `string`   |
-| `updatedAt`                  | ISO timestamp of last campaign update.                                 | `string`   |
-| `campaignInstanceUpdatedAt`  | ISO timestamp of the campaign instance update.                         | `string`   |
-| `campaignExecutionType`      | Execution type (`NORMAL`, etc.).                                       | `string`   |
-| `contactLists`               | List of contact lists associated with the campaign.                    | `array`    |
-| `format`                     | Message format type (`simple` or `advanced`).                          | `string`   |
+| `id`                         | Unique identifier for the campaign.                                    | string   |
+| `campaignInstanceId`         | Unique instance ID (only in some records).                             | string   |
+| `name`                       | Campaign name.                                                         | string   |
+| `description`                | Campaign description.                                                  | string   |
+| `status`                     | Campaign status (for example, `Ready`, `Stopped`).                     | string   |
+| `priority`                   | Campaign priority level. For example: 5.                               | string   |
+| `experienceFlow`             | Experience Flow ID (present in advanced format campaigns).             | string   |
+| `message.message`            | Base64 encoded message content.                                        | string   |
+| `message.templateId`         | Template ID (if message uses a template).                              | string   |
+| `schedule`                   | Contains schedule config (`isSchedulingEnabled`, `isRecurrenceEnabled`). | object |
+| `createdAt`                  | ISO timestamp when the campaign was created.                           | string  |
+| `updatedAt`                  | ISO timestamp of last campaign update.                                 | string   |
+| `campaignInstanceUpdatedAt`  | ISO timestamp of the campaign instance update.                         | string   |
+| `campaignExecutionType`      | Execution type (`NORMAL`, etc.).                                       | string   |
+| `contactLists`               | List of contact lists associated with the campaign.                    | array    |
+| `format`                     | Message format type (`simple` or `advanced`).                          | string   |
