@@ -352,7 +352,8 @@ On the WhatsApp Business Messaging platform, follow the below steps:
 4. Provide the **Webhook URL** shared with the Karix support team.
 5. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
 6. Select **Yes** for **Enable Channel**.
-7. Click **Save**.
+7. Click **Save**.  
+
 <img src="../images/whatsapp24.png" alt="configure karix" title="configure karix" style="border: 1px solid gray; zoom:70%;">
 
 ## Adding the WhatsApp Channel using Netcore Application
