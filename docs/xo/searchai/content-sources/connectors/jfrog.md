@@ -47,9 +47,8 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 
 4. Under Scopes, select "admin" to assign administrator privileges.
 
-5. Click **Generate**, then **copy the token**.
-
-<img src="../connectors/images/jfrog/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
+5. Click **Generate**, then **copy the token**.  
+<img src="../images/jfrog/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
 
 ### JFrog Connector Configuration in Search AI
 
@@ -63,7 +62,7 @@ Ensure that the domain name is explicitly defined. For example: `http://jfrog-xx
 
 After entering all details, click **Connect** to validate access and proceed with the configuration.
 
-<img src="../connectors/images/jfrog/authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/jfrog/authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
 
 ## Content Ingestion
 
