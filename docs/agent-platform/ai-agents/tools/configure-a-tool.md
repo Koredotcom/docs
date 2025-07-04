@@ -11,7 +11,7 @@ Steps to enable and configure the asynchronous mode:
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab, and select the tool to modify its configuration. The Tool Flow page is displayed.
+2. Click the **Tools** tab on the top menu, and select the tool to modify its configuration. The Tool Flow page is displayed.
 3. Click **Configurations** in the left navigation and then click **Setup sync/async**.  
 <img src="../images/setup-sync-async.png" alt="Setup sync/async" title="Setup sync/async" style="border: 1px solid gray; zoom:60%;">
 

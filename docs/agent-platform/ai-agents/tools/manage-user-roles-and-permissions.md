@@ -11,7 +11,7 @@ Steps to invite users to your Tool:
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab, and select the required tool.
+2. Click the **Tools** tab on the top menu, and select the required tool.
 3. Click **Sharing & Permission** in the left navigation bar. The page lists the existing collaborators, if any.  
 <img src="../images/agent_platform/sharing_and_permission.png" alt="Sharing and Permissions" title="Sharing and Permissions" style="border: 1px solid gray; zoom:80%;">
 
