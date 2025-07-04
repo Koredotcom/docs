@@ -2,9 +2,10 @@
 
 Steps to access the tool monitor page:
 
-1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
-2. On the top navigation bar, click **Tools**.
-3. On the **All tools** page, click the desired tool.  
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+2. Click the **Tools** tab on the top menu, and select the tool you want to import. 
 
     Ensure that the status of the selected tool is ‘Deployed’. Tool monitoring is only available for tool deployed in production. Tools that are in debugging or design phases are not tracked here. 
 

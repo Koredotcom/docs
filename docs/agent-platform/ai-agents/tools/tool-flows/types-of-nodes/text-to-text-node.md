@@ -11,7 +11,7 @@ Setting up a <b>Text to Text</b> node in a tool flow involves adding the node at
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab, and select the tool to which you want to add the node. The Tool flow page is displayed.
+2. Click the **Tools** tab on the top menu, and select the tool to which you want to add the node. The Tool flow page is displayed.
 3. Click **Go to flow** to edit the in-development version of the flow.
 4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **AI** > **Text to Text** from the pop-up menu. Alternatively, drag the **Text to Text** node under **AI** from the Assets panel onto the canvas.
 5. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
