@@ -56,7 +56,7 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 On the Authentication page, provide the following details:
 
 * **Name**: Enter a unique name for this connector.
-* **API Key**: Enter the access token generated from your JFrog Artifactory account.
+* **API Key**: Enter the identity token generated from your JFrog Artifactory account.
 * **Host URL**: Enter the base URL of your JFrog Artifactory instance.
 
 Ensure that the domain name is explicitly defined. For example: `http://jfrog-xxxx/`
