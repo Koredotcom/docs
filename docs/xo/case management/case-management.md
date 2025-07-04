@@ -1,31 +1,30 @@
 # Case Management
 
-# Overview
+## Overview
+
+Case management is a systematic approach for efficiently tracking, managing, and resolving customer issues from initial contact to closure. This comprehensive platform solution streamlines the process through role-specific dashboard insights and structured workflows.
 
 This document helps you to configure Case Management in the XO11 Platform to efficiently track, manage, and resolve customer issues. 
 
-# Process Flow
+## Process Flow
 
-The case management dashboard provides role-specific insights to support effective operations and performance tracking across different user roles. 
-
-The following process flow diagram describes the critical stages involved in the case management.
-
+This process flow outlines the systematic approach to managing customer service cases from initial creation through final resolution and analysis. Each step ensures efficient handling of customer issues while maintaining quality service standards.  
 <img src="../images/process-flow-diagram.png" alt="Process Flow" title="Process Flow" style="border: 1px solid gray;zoom:50%;"/>
 
-Following are the key components of the process flow:
+**Phase description:**
 
-* **Customer Contact**: Customer contact to reach out for an issue that serves as the initial point of interaction. 
+* **Customer Creation:** The case creation process begins when a customer contacts the service team with an issue or request. Customer service representatives capture and document all relevant information during this initial interaction.
 
-* **Case Logging**: Record the customer's issue systematically in the system.
+* **Case Categorization:** Once a case is created, it moves into the categorization phase where the issue is analyzed and classified. Case managers and senior customer service staff review the documented information to determine the specific type of issue.
 
-* **Case Categorization**: Classify the issue by type and priority.
+* **Case Assignment:** The assignment phase focuses on matching cases with the most appropriate personnel for resolution. Team leads and case managers consider multiple factors when making assignment decisions.
 
-* **Case Assignment**: Route the case to an appropriate team member.
+* **Investigation and Diagnosis:** The investigation and diagnosis phase represents the analytical core of the case management process. Assigned agents conduct thorough investigations to understand the root cause of the customer's issue.
 
-* **Case Investigation**: Examine the issue in detail by the assigned team members.
+* **Resolution:** The resolution phase transforms the diagnostic findings into concrete action to solve the customer's problem. Assigned agents execute the approved resolution plan following established procedures.
 
-* **Case Resolution**: Develop and communicate a solution for customers by resolving the issue or service request.
+* **Customer Communication:** Effective customer communication serves as the bridge between internal case management activities and customer satisfaction. Representatives maintain regular contact with customers throughout the entire case lifecycle.
 
-* **Feedback Collection**: Gather customer inputs to drive continuous service improvement and customer satisfaction.
+* **Case Closure:** The case closure process ensures that resolved cases are properly finalized and documented before archiving. Assigned agents verify that all resolution steps have been completed successfully.
 
-* **Case Closure**: Finalize the case after ensuring customer satisfaction.
+* **Review and Analysis:** The review and analysis phase focuses on extracting valuable insights from completed cases to drive continuous improvement. Quality assurance teams and management regularly review closed cases.
