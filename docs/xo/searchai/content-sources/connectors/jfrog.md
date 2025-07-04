@@ -49,7 +49,7 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 
 5. Click **Generate**, then **copy the token**.
 
-<img src="../images/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
+<img src="identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
 
 ### JFrog Connector Configuration in Search AI
 
@@ -63,7 +63,7 @@ Ensure that the domain name is explicitly defined. For example: `http://jfrog-xx
 
 After entering all details, click **Connect** to validate access and proceed with the configuration.
 
-<img src="../images/authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
+<img src="authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
 
 ## Content Ingestion
 
@@ -83,4 +83,4 @@ Each artifact is processed as a distinct document in Search AI, with key fields:
 
 * In JFrog, each artifact is linked to a specific project via a unique **Project ID**.
 * This Project ID is stored in the **RACL field** of the ingested data from JFrog.
-* Associate users with the relevant Project ID using the **Permission Entity APIs**. Users added to these corresponding permission entities will gain access to data related to artifacts.
+* Associate users with the relevant Project ID using the [Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md). Users added to these corresponding permission entities will gain access to data related to artifacts.
