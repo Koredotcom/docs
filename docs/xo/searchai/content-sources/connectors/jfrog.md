@@ -49,7 +49,7 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 
 5. Click **Generate**, then **copy the token**.
 
-<img src="identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
+<img src="../connectors/images/jfrog/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
 
 ### JFrog Connector Configuration in Search AI
 
@@ -63,7 +63,7 @@ Ensure that the domain name is explicitly defined. For example: `http://jfrog-xx
 
 After entering all details, click **Connect** to validate access and proceed with the configuration.
 
-<img src="authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
+<img src="../connectors/images/jfrog/authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
 
 ## Content Ingestion
 
