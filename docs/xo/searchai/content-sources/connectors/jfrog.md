@@ -6,7 +6,6 @@ The connector enables Search AI to access JFrog repositories for indexing artifa
 
 ## JFrog Connector Specifications
 
-
 <table>
   <tr>
    <td><strong>Type of Repository</strong>
@@ -50,10 +49,7 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 
 5. Click **Generate**, then **copy the token**.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
 
 ### JFrog Connector Configuration in Search AI
 
@@ -67,10 +63,7 @@ Ensure that the domain name is explicitly defined. For example: `http://jfrog-xx
 
 After entering all details, click **Connect** to validate access and proceed with the configuration.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/authentication.png" alt="JFrog Connector Configuration in Search AI" title="Authentication page" style="border: 1px solid gray; zoom:75%;">
 
 ## Content Ingestion
 
