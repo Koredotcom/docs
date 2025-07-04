@@ -1,28 +1,30 @@
-# Exporting Agentic Apps
+# Export Agentic Apps
 
-The **Agent Apps Export** functionality allows users to easily download and export the configuration details of one or more agent applications. This feature provides a convenient way to back up, share, or migrate agent app setups across environments. By exporting agent apps, users can preserve important app configurations, agent definitions, and tool configurations in a standardized file format for future use. This simplifies the backup and recovery process, minimizing errors and speeding up the process.
+The Agent Apps Export functionality lets you download and export the configuration details of one or more agent applications. This feature provides a convenient way to back up, share, or migrate agent app setups across environments. By exporting agent apps, users can preserve important app configurations, agent definitions, and tool configurations in a standardized file format for future use. This simplifies the backup and recovery process, minimizing errors and speeding up the process.
 
-## Export Types
+## Export Options
 
-You can choose to:
+When exporting, choose one of the following options:
 
-* Export the **entire app** - App-level export includes data and configuration related to the entire application. This export is useful when you want to back up or migrate the complete app setup. It includes:
+* Export the entire app - App-level export includes data and configuration related to the entire application. This export is useful when you want to back up or migrate the complete app setup. It includes:
     * Application metadata
     * All configured agents
     * Tools and their configurations
     * Application-level configurations
     * MCP server configurations
     * Custom memory store definitions
-* Export **one or more individual agents**- Agent-level export is limited to one or more agents and includes details required to replicate or transfer that agent's functionality. It includes:
+* Export one or more individual agents- Agent-level export is limited to one or more agents and includes details required to replicate or transfer a specific agent's functionality. It includes:
     * Agent metadata and configuration
     * Tools used by the agent
     
-    Note that the tool configurations are part of the app-level export. 
+!!! note
+
+    The tool configurations are part of the app-level export. 
 
 
-## Steps to Export
+## Export App and Agents
 
-To export an Agentic app:
+To export an agentic app or an agent, follow these steps:
 
 1. Open the Agentic App.
 1. Go to the Export/Import page.
