@@ -8,12 +8,14 @@ You can set the sync/async mode configuration for the tool endpoint. If you chan
 
 Steps to enable and configure the asynchronous mode:
 
-1. On the **Tools** tab, click the tool you want to modify the configuration. The Tool Flow page is displayed.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Configurations** in the left navigation and then click **Setup sync/async**.  
+2. Click the **Tools** tab, and select the tool to modify its configuration. The Tool Flow page is displayed.
+3. Click **Configurations** in the left navigation and then click **Setup sync/async**.  
 <img src="../images/setup-sync-async.png" alt="Setup sync/async" title="Setup sync/async" style="border: 1px solid gray; zoom:60%;">
 
-3. The Sync/Async mode setup pop-up displays with async mode disabled by default.
+4. The Sync/Async mode setup pop-up displays with async mode disabled by default.
     * **Synchronous mode timeout**: The allowed range is 60 to 300 seconds (5 minutes). The default is 180 Seconds (3 minutes). The endpoint will trigger a timeout error if the request is not completed within the selected time frame.  
 <img src="../images/sync-mode-timeout.png" alt="Sync Mode Timeout" title="Sync Mode Timeout" style="border: 1px solid gray; zoom:70%;">
 
