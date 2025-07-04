@@ -88,7 +88,7 @@ Use the **Response** section to describe the set of results on which the Action 
 ![Response](images/businessrules/response.png "Response Parameter")
 
 
-You can see the list of available chunk fields from the [Chunk Browser.](/xo/searchai/chunk-browser/#view-chunk-details) 
+You can see the list of available chunk fields from the [Chunk Browser.](chunk-browser.md) 
 
 **Sample Business Rule**
 
