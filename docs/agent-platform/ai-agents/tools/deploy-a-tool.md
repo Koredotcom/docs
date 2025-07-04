@@ -28,9 +28,9 @@ Push endpoints actively send data to the client, while poll endpoints require th
 * The client is responsible for checking for new data rather than waiting for it to be pushed.
 * Useful for integrations where the client only needs to check for updates at specific intervals.
 
-## Deploy an Tool
+## Deploy a Tool
 
-Steps to deploy an tool:
+Steps to deploy a tool:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
