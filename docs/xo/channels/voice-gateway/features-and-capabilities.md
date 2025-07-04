@@ -1,14 +1,18 @@
-# SSML (Speech Synthesis Markup Language)
+# Features and Capabilities
+
+This section highlights additional features and capabilities of the Voice Gateway.
+
+## SSML (Speech Synthesis Markup Language)
 
 Using SSML allows developers to control aspects of speech synthesis such as pronunciation, volume, pitch, and rate of speech. Here's a guide on how to use SSML effectively:
 
-## Understanding SSML Basics
+### Understanding SSML Basics
 
 * SSML is an XML-based markup language used to control text-to-speech synthesis.
 * It provides tags to control various aspects of speech synthesis, including pronunciation, prosody, volume, and more.
 * SSML is supported by many speech synthesis systems, including Amazon Polly, Google Text-to-Speech, and others.
 
-## Basic SSML Tags
+### Basic SSML Tags
 
 * `&lt;speak>`: This is the root element of an SSML document and indicates the start and end of the speech content.
 * `&lt;break>`: Inserts a pause into the speech synthesis. You can specify the duration of the pause using the `time` attribute.
@@ -18,7 +22,7 @@ Using SSML allows developers to control aspects of speech synthesis such as pron
 * `&lt;say-as>`: Indicates how a particular piece of text should be pronounced, such as numbers, dates, or currency.
 * `&lt;audio>`: Embeds audio files into the speech output.
 
-## Using SSML in Code
+### Using SSML in Code
 
 When using SSML in your code, wrap the SSML markup within `&lt;speak>` tags.
 
@@ -38,9 +42,9 @@ Example:
 
 &lt;/speak>
 ````
-## Voice Tag Support
+### Voice Tag Support
 
-### Support For Voice Elements in SSML
+#### Support For Voice Elements in SSML
 
 In the speak tag, follow below-mentioned steps:
 

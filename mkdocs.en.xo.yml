@@ -156,9 +156,9 @@ nav:
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
                 - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
-                - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
+                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
                 - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
+                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
                 - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
@@ -350,6 +350,7 @@ nav:
                 - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jenkins: searchai/content-sources/connectors/jenkins.md
+                - Jfrog: searchai/content-sources/connectors/jfrog.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
@@ -501,6 +502,12 @@ nav:
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
           - Language Settings: quality-management/configure//langauge-settings.md
+    - Case Management:
+      - About Case Management: case management/case-management.md
+      - Setup Process: case management/setup-process.md    
+      - Configure Case: case management/configure-cases.md
+      - Manage Cases and Tasks: case management/manage-cases-and-tasks.md
+      - Case Analysis Dashboard: case management/case-analysis-dashboard.md
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -509,7 +516,9 @@ nav:
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
+        - Custom LLM Model in GenAI: agentai/configuration/custom-llm-model-in-genai.md
         - Linked Services: agentai/configuration/linked-services.md
+        - Third Party Configuration: agentai/configuration/third-party-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
@@ -533,6 +542,7 @@ nav:
       - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
+      - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md

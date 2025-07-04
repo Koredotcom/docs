@@ -50,34 +50,40 @@ Key Automation AI updates are summarized below.
 
 ### Search AI
 
-Kore.ai’s SearchAssist capabilities are now available under Search AI on the AI for Service platform. Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. Add multiple data sources for building your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. By combining Automation AI (Use Cases) and Search AI (Answers), businesses can create an exceptional, seamless conversational experience for their users.
+Search AI is an enterprise-grade platform that combines advanced search, retrieval, and generative AI to deliver accurate, context-aware answers across a wide range of content sources. It is designed to handle complex queries, unstructured data, and varied use cases with high precision and flexibility. It offers AI-driven search precision and flexible integration, making it ideal for enterprises seeking intelligent knowledge discovery and automation. By combining Automation AI (Use Cases) and Search AI (Answers), businesses can create an exceptional, seamless conversational experience for their users.
 
-Key Search AI (Answers) capabilities are summarized below. 
+Key Search AI capabilities are summarized below. 
 
-* **Content Extraction Strategies**: To generate answers using the source data, the ingested data is segmented into smaller segments or chunks to understand better, organize, and efficiently retrieve the most relevant set of data when required. Selecting the most appropriate strategy requires considering several factors, like the type of content, the embedding model to store chunks, the expected length and complexity of user queries and answers, etc.
+* **Smart Answer Generation**: Search AI uses Advanced RAG technologies to deliver accurate, context-aware answers by intelligently combining information retrieval and generative AI. It is built on an end-to-end process:
 
-    Search AI uses **Advanced RAG technologies** to deliver accurate, context-aware answers by intelligently combining information retrieval and generative AI. It is built on an end-to-end process: 
+    **Content ingestion -> Extraction ->Indexing -> Retrieval -> Answer Generation.** 
 
-    * **Chunk Browser**: The Chunk Browser provides a tool for observing the extracted chunks from the source data. It gives insight into the extraction process's output and enables subsequent actions like editing and rectifying the chunks. 
+    The platform efficiently ingests content from various sources, applies advanced extraction techniques to understand complex formats, and uses sophisticated indexing and retrieval methods to identify the most relevant information. This information is then passed to a Large Language Model to generate clear, human-like responses. Search AI supports flexible LLM integration, enabling enterprises to utilize built-in models, third-party providers (such as OpenAI or Azure), or even bring their custom or fine-tuned LLMs.
+    To further enhance response quality, Search AI uses Agentic RAG Architecture to optimize query interpretation and retrieval. By combining autonomous agent capabilities with RAG, it can break down complex queries, retrieve targeted knowledge from specific sources, and generate highly contextual answers.
 
-    * **Index Configuration**: Indexing is the process of generating vectors or embeddings from the extracted chunks and creating a knowledge Index that can be used to generate answers. Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into vectors. The XO platform supports various embedding models, such as MPNet, LaBSE, and e5, and allows you to choose a model according to your specific needs.  
-    <img src="../images/xo-platform-Index.png" alt="Index" title="Index" style="border: 1px solid gray; zoom:70%;">
+* **Expanded Connectivity and High-Speed Crawling**: Search AI provides a robust and flexible content ingestion framework that enables enterprises to integrate data from diverse sources seamlessly. This ensures quick access to accurate information and simplifies the discovery of relevant answers. 
+    * **Connector Ecosystem**: Supports **60+ out-of-the-box connectors** to ingest structured content from popular CRMs, CMSs, cloud storage platforms, productivity suites, and collaboration tools like Salesforce, SharePoint, Google Drive, Confluence, and more.
+    * **Web Content Integration**: Advanced **web crawling** capabilities designed to handle **complex site structures** and **dynamically loaded content**, ensuring reliable and efficient indexing of online information.
+    * **File & Folder Support**: Easily ingest files in various formats (PDF, DOCX, TXT, etc.) from local or cloud-based storage—ideal for processing structured and unstructured documents at scale.
 
-* **Answer Generation Strategies**: Search AI uses LLM to generate answers from the ingested chunks. The efficacy of the response depends on the Chunk Retrieval method and the Answer Generation configuration.
+* **Advanced Content Extraction**: Once ingested, Search AI offers a powerful and customizable extraction strategy framework that adapts to different content formats, structures, and enterprise needs. This ensures that meaningful data is extracted accurately and efficiently for search. Supported extraction strategies include:
+    * Text Extraction Model
+    * Layout Aware Extraction
+    * Advanced HTML Extraction
+    * Custom Extraction
+    * Markdown Extraction
+    * Image-Based Document Extraction
 
-    * **Chunk Retrieval Strategy**: Choose the preferred chunk retrieval strategy for retrieving answer chunks from the answer index for a given query. Search AI supports **Vector Retrieval**, which uses cosine similarity scores, and **Hybrid Retrieval**, which considers patterns and structures in the text. The choice between using vector retrieval and hybrid retrieval depends on various factors, including the nature of the data, the specific requirements of the application, and the available resources.  
-    <img src="../images/xo-platform-Chunk Retrieval.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+* **Flexible Content Enrichment**:Search AI features an intuitive and powerful enrichment framework through its Workbench tool, enabling teams to transform and refine extracted content before it is indexed. This is accomplished through a series of steps known as stages. The enrichment process is essential for ensuring high-quality, contextually rich data that drives accurate responses. The workbench can be used for Metadata injection, noise reduction, or custom business-specific updates. 
 
-       * **Vector Retrieval**: In this type of retrieval, we compute the cosine similarity between the query vector and each chunk vector at the time of query, and the resulting scores are used to filter and sort the results. The score ranges from 0 to 1, where 0 indicates no match, and 1 represents a complete match.
+* **Vector Generation**: Search AI includes a highly optimized vector generation pipeline to convert processed content into dense embeddings, enabling advanced semantic search and RAG workflows. 
+    * Generate high-quality, context-aware vector representations using advanced embedding models for accurate semantic retrieval.
+    * Leverage VDR embeddings to create vectors from image-based or visually structured documents.
+    * Configure which content fields are used for embedding, allowing flexible and targeted vectorization based on your data structure and retrieval needs.
 
-       * **Hybrid Retrieval**: In this type of retrieval, multiple approaches are used to find the most relevant chunk corresponding to the query.
-
-* **Answers Generation**: Configure the type of answers to be presented to the users:
-
-    * **Extractive Answers**: The topmost chunk retrieved in response to the user query is directly presented to the user as answers. The extractive answers are exact content retrieved from the chunks without any change in text.
-
-    * **Generative Answers**: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. Use the following fields to configure Generative Answers.  
-    <img src="../images/xo-platform-Generative Answers.png" alt="Generative Answer" title="Generative Answer" style="border: 1px solid gray; zoom:70%;">
+* **Advanced Content Retrieval**:Search AI provides powerful, intelligent retrieval capabilities, ensuring users receive the most relevant and context-aware responses. Key technologies include:
+    * Hybrid RAG: Utilizes a hybrid retrieval method based on RAG Fusion, combining multiple keyword and vector scores to significantly boost accuracy, relevance, and performance of search results.
+    *  Semantic-Powered Search: Replaces traditional keyword-based retrieval with semantic search, enabling the system to understand the intent and context behind a query. This provides deeper, more relevant results tailored to user needs.
 
 * **Search vs. Automation Setting**: You can either keep Automation First and Answers as a fallback or otherwise.  
 <img src="../images/xo-platform-Search vs. Automation Setting.png" alt="Search vs. Automation Setting" title="Search vs. Automation Setting" style="border: 1px solid gray; zoom:70%;">  
@@ -90,78 +96,46 @@ Key Search AI (Answers) capabilities are summarized below.
 
 Contact Center AI (previously SmartAssist) is now a part of AI for Service. You can now leverage Automation AI Use Cases and Search AI Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
 
-The key features and experience changes are summarized below.
+Key updates are summarized below.
 
-* **Experience Flows**:
+**Experience Flows**
 
-    * **Improved Experience Flows**: To reduce confusion, the OnConnect/Welcome Events have now been merged into the new Experience Flows. With XO v11, the logic typically written in these events can now be easily managed via experience flows.
+* OnConnect/Welcome Events merged into unified Experience Flows for streamlined logic management.
+* Revamped Flow Builder with intuitive interface similar to Dialog Builder for seamless transition.
+* Enhanced automation through merged Conversational Input and Run Automation Nodes into single "Automation" entity.
+* Deflect to Chat feature deprecated due to limited customer usage.
+* Improved workflow reduces confusion and simplifies bot invocation.
 
-    * **Updated Flow Builder**: The Flow Builder interface has been revamped to provide a smoother, more intuitive user experience. The interface is similar to the Dialog Builder, making the transition seamless and effortless.  
-    <img src="../images/xo-platform-Flow Builder.png" alt="Updated Flow Builders" title="Updated Flow Builder" style="border: 1px solid gray; zoom:70%;">
+**Publishing**: Centralized Publish Module ensures consistency and simplifies workflow management across all flows
 
-    * **Enhanced Automation**: Conversational Input and Run Automation Nodes Merged, Deflect to Chat Deprecated; the automation process is simplified by merging Conversational Input and Run Automation Nodes into a single entity: **Automation**. This consolidation streamlines bot invocation and aligns with usage patterns observed from existing customers and demo scenarios.  
-    <img src="../images/xo-platform-contact-center-Automation.png" alt="Automation" title="Automation" style="border: 1px solid gray; zoom:70%;">
+**Channels**
 
-        Deflect to Chat is no longer supported. This change is driven by the limited usage observed among customers, but we remain committed to addressing relevant needs and exploring adding support based on internal use cases.
+* Omni-channel Setup: Seamless integration of voice, chat, email, social media, and custom SDKs for unified customer experience
+* Voice Gateway: Kore.ai Voice Gateway enables natural language voice interactions for inbound calls
+* Selective Routing: Choose between automation or human assistance based on complexity, urgency, or preference
+* Digital Channels: Extended support for social platforms, enterprise messaging apps, and custom SDKs
+* 3rd Party Integration: Compatible with existing IVR systems to leverage current infrastructure
 
-    * **Centralized Publish Module**: To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.  
-    <img src="../images/xo-platform-Centralised-Publish-Module.png" alt="Centralized Publish Module" title="Centralized Publish Module" style="border: 1px solid gray; zoom:70%;">
+**User & Role Management**
 
-* **Channels**:
+* App-level user definitions with granular role-based access control.
+* Additional contact center attributes for enhanced customization.
+* Administrator/Admin role deprecated and seamlessly transitioned to custom roles with equivalent 
+permissions.
+* Improved permission management for specific requirements.
 
-    * **Omni-channel Setup**: With Contact Center AI, you can seamlessly integrate various channels, including voice, chat, email, social media, and custom SDKs, to provide a unified experience for your customers and ensure effortless omnichannel communication.  
-    <img src="../images/xo-platform-omnichannel-setup.png" alt="Omni-channel Setup" title="Omni-channel Setup" style="border: 1px solid gray; zoom:70%;">
+**Architecture**: Simplified bot architecture merges Instance and Automation bots into single entity (new accounts only; existing accounts maintain separate bots during migration)
 
-    * **Voice Gateway**: Expand your reach by enabling voice interactions through the Kore.ai Voice Gateway. It helps configure how Contact Center AI handles automation for inbound voice calls. Customers can engage with your contact center using natural language voice commands.
+**Campaigns Module**
 
-    * **Selective Routing**: One significant enhancement is the ability to selectively choose whether to direct customers to automation or human assistance. This feature empowers you to optimize customer journeys considering complexity, urgency, or preference.
+* Voice Campaigns: Personalized voice technology for targeted outreach with interactive experiences
+* Proactive Web Campaigns: Digital campaigns to increase visibility, generate leads, and build brand awareness
+* Create campaigns from scratch or use pre-defined templates for consistency and efficiency
+* List Management: Organize Contact Lists and maintain Do Not Contact (DNC) compliance
+* Dashboard: Comprehensive campaign overview showing active/inactive/completed status with drill-down insights
+* Settings: Configure maximum concurrent calls for optimal performance
 
-    * **Support for Digital Channels**: Our platform is extended to support digital channels such as social media platforms, enterprise messaging apps, and custom SDKs. This allows you to engage with customers wherever they are, enhancing accessibility and convenience.
-
-    * **Integration with 3rd Party IVR Systems**: Contact Center AI seamlessly integrates with third-party IVR systems, enabling you to leverage existing investments and infrastructure while benefiting from our advanced capabilities.
-
-* **Role and User Management**:
-
-    * **App Level User Definitions**: Users can be defined at the app level and assigned necessary roles, providing granular control over access and permissions.
-
-    * **Contact Center Attributes**: Additional contact center attributes can now be added under the Contact Center section, enhancing customization and tailoring the application to your specific requirements.
-
-    * **Administrator / Admin Role Deprecated**: The Administrator/Admin role is deprecated. Existing accounts will seamlessly transition to a new custom role with equivalent permissions on Contact Center AI, ensuring continuity and preserving access levels.
-
-* **Updated Bot Architecture**: Instance and Automation bots are merged into a single bot. New accounts will require managing only one bot. However, existing accounts that will be migrated will continue to have separate instance and automation bots.
-
-* **New Campaigns Module**: The new Campaigns module simplifies and enhances outbound efforts across voice and web channels. It offers tools for creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. This allows businesses to efficiently reach their audience, monitor campaign performance, and achieve their objectives with greater precision and effectiveness.
-
-    * **Voice Campaigns** :Use the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new voice campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.  
-    <img src="../images/xo-platform-voicecampaign.png" alt="Voice Campaigns" title="Voice Campaigns" style="border: 1px solid gray; zoom:70%;">
-
-    * **Proactive Web Campaigns**: Elevate your online presence with proactive web campaigns to promote your products, services, or brand. Utilizing digital channels, these campaigns are crafted to increase visibility, generate leads, and build brand awareness, ensuring measurable success.  
-    <img src="../images/xo-platform-proactive-web-campaign.png" alt="Proactive Web Campaigns" title="Proactive Web Campaigns" style="border: 1px solid gray; zoom:70%;">
-
-        You can create proactive web campaigns from scratch in various formats:  
-        <img src="../images/xo-platform-formats.png" alt="formats" title="formats" style="border: 1px solid gray; zoom:70%;">
-
-        You can also create proactive web campaigns using pre-defined templates. These templates save time and effort while ensuring consistency and brand identity. They are cost-effective, user-friendly, and offer flexibility for customization.  
-        <img src="../images/xo-platform-templates.png" alt="Templates" title="Templates" style="border: 1px solid gray; zoom:70%;">
-
-    * **List Management**: List management involves organizing and maintaining targeted Contact Lists for efficient outreach while adhering to Do Not Contact (DNC) regulations.
-
-        Managing Contact Lists:  
-        <img src="../images/xo-platform-managing-contact-list.png" alt="Managing Contact Lists" title="Managing Contact Lists" style="border: 1px solid gray; zoom:70%;">
-
-        Managing DNC Lists:  
-        <img src="../images/xo-platform-managing-DNC-List.png" alt="Managing DNC Lists" title="Managing DNC Lists" style="border: 1px solid gray; zoom:70%;">
-
-    * **Dashboard**: The campaign dashboard allows campaign managers to obtain an overview of all their campaigns, including their status—whether they're active, inactive, or completed. This centralized snapshot facilitates effortless monitoring and management.  
-    <img src="../images/xo-platform-cc-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray; zoom:70%;">
-
-        You can drill down individual campaigns to get detailed insights.  
-        <img src="../images/xo-platform-cc-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:70%;">
-
-    * **Settings**: The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
-    <img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;"> 
-    
-[Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
+[Learn more about Contact Center AI features :octicons-arrow-right-24:](../release-notes/11.x/contact-center-ai.md#v1100-march-30-2024)
 
 <hr>
 

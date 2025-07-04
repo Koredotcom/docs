@@ -19,7 +19,7 @@ DialogGPT now allows users to configure chunk limits for Search AI retrieval, en
 
 The Automation Node’s routing settings are now also available at Flow & Channels > Automation Routing > Routing Modes for better accessibility and visibility. This streamlined navigation not only enables users to view and configure settings at an Automation Node but also provides a complete view of the different routing modes - Default, DialogGPT, and Agentic App, used across the app. [Learn more :octicons-arrow-right-24:](../../flows/automation-routing.md)
 
-**Batch Testing Now Supports Multi-App Routing**
+**Batch Testing Now Supports Multi-app Routing**
 
 The Batch Testing feature now supports multi-app routing, enabling users to evaluate conversational flows that span across multiple linked Virtual Assistants (apps). This enhancement aligns batch testing with real-world scenarios where conversations are dynamically routed to multiple linked apps. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md)
 
@@ -33,13 +33,13 @@ As part of the ongoing Batch Testing support for DialogGPT, several enhancements
 
 **Salesforce MIAW Agent Integration Enhancements**
 
-The Salesforce MIAW Agent Integration has been updated with new features to enhance live support experiences. These improvements aim to better prepare agents, empower end-users, and ensure consistent brand communication.
+The Salesforce MIAW Agent Integration now includes features that enhance live support experiences. These enhancements help prepare agents, empower end-users, and maintain consistent brand communication.
 
-Key enhancements
+Key enhancements:
 
 * Metadata Transfer: Essential context, including usernames, conversation summaries, case IDs, and session details, are now automatically transferred from the Platform to the Salesforce Agent Console during agent handoffs. This provides agents with immediate access to relevant information, reducing the need for users to repeat details and thereby accelerating issue resolution.
 
-* User-Controlled Session End: End-users can now conclude live agent sessions using a configurable command. This provides users with more control over their experience and helps reduce unnecessary agent occupancy.
+* User-controlled Session End: End-users can now conclude live agent sessions using a configurable command. This provides users with more control over their experience and helps reduce unnecessary agent occupancy.
 
 * Customizable Standard Responses: Default system messages displayed during handoffs and live chats, including wait times, agent join alerts, and session closure prompts, can now be customized. This ensures a consistent, branded experience aligned with user expectations. 
 

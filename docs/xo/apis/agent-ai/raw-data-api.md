@@ -21,10 +21,11 @@ This updated version of the Raw Data API offers the following additional convers
 * Total number of words suggested for correction by the agent
 * Total number of auto-corrected words accepted by the agent
 * Conversation Summary existence and agents reading or scrolling through it.
+* Filters such as Agent ID, Channel, Session ID, and Conversation ID. 
 
 | **Field**        | **Value**                                                                                                                                                                                                                       |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Method           | GET                                                                                                                                                                                                                             |
+| Method           | GET, POST                    <br>**Note**: Use GET for complete data, POST for filtered data.                                                                                                                          |
 | Endpoint         | `https://{{host}}/agentassist/api/v1/public/{{streamid}}/v2/agentassistinteractions?from=YYYY-MM-DD-HH24:mm:SS&to=YYYY-MM-DD-HH24:mm:SS&offset=NNNNN&limit=0..100`                                                             |
 | Content Type     | application/json                                                                                                                                                                                                                |
 | Authorization    | auth: {{JWT}}<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token)                                                                                                              |
@@ -36,13 +37,23 @@ This updated version of the Raw Data API offers the following additional convers
 |---------------|----------------------------------------------------------------------------------|-------------|
 | `from`        | Start date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.      | Required    |
 | `to`          | End date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.        | Required    |
+|`conversationIds`|Array of conversation IDs to filter specific interactions.|Optional|
+|`sessionIds`|Array of session IDs to filter specific bot sessions.|Optional|
+|`channels`| Array of communication channels (e.g., `chat`, `voice`).|Optional|
+|`agentIds`|Array of agent IDs to filter interactions handled by specific agents.|Optional|
 
 ## **Sample Request**
 
 ```
-curl --location '{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-dcbbc63xxxxx/v2/agentassistinteractions?from=2024-07-10T06%3A49%3A45&to=2024-07-10T07%3A06%3A25' \
---header 'accountId: 65433af84e520234494xxxxx' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTE5ZjA0NzU0LWQ4MzQtNTgxOC04NzE0LWYyNGZlYzYxODgxNyJ9.DEVT2UGCTjryY_bDVGmun4-Vcp_R9-b0iRonWaB-xxx'
+curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-dcbbc63xxxxx/v2/agentassistinteractions?from=2024-07-10T06%3A49%3A45&to=2024-07-10T07%3A06%3A25' \
+--header 'accountId: {{accountId}}' \
+--header 'auth: {{authToken}}' \
+--header 'Content-Type: application/json' \
+--data '{
+  "conversationIds": ["{{conversationId}}"],
+  "sessionIds": ["{{sessionId}}"],
+  "channels": ["chat"],
+  "agentIds": ["{{agentId}}"]
 ```
 
 ### **Headers**

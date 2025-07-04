@@ -50,5 +50,5 @@ curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{str
 |-------------------|-------------------------------------------------------|----------|
 | `status`          | API call result. Value: `"success"` or `"failure"`.   | string   |
 | `data.id`         | Campaign ID.                                          | string   |
-| `data.status`     | Current campaign status (for example, Active, Stopped). | string |
-| `data.name`       | Campaign name.                                        | string   |
+| `data.status`     | Current campaign status (for example, `Active`, `Stopped`). | string |
+| `data.name`       | The campaign name.                                        | string   |
