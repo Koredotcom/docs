@@ -7,7 +7,7 @@ Agent Platform seamlessly integrates with the Hugging Face platform, allowing yo
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 2. Click **Integrations** on the left menu.
 
     <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">

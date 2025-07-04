@@ -68,7 +68,7 @@ To add and configure the node, follow the steps below:
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top menu, and select the tool to which you want to add the node. The Tool flow page is displayed.
+2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
    <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Go to flow** to edit the in-development version of the flow.     

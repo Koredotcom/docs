@@ -21,7 +21,7 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="nav user" title="nav user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 3. Navigate to **Users Management** > **Settings** on the left menu.
 4. Click the **Configure Directory** button in the **Configure sync with directory** section.
 <img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">

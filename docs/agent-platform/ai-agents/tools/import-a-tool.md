@@ -33,7 +33,7 @@ To initiate a tool creation journey through the import functionality, follow the
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top menu.
+2. Click the **Tools** tab on the top navigation bar.
 3. Do one of the following based on your requirements:
 
 <ul><li>If you don't have any existing tools and want to create one by importing from another environment, click <b>Import Tool</b>.
@@ -99,7 +99,7 @@ To import a tool as a version, follow the steps below:
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab on the top menu, and select the tool you want to import. 
+2. Click the **Tools** tab on the top navigation bar, and select the tool you want to import. 
 3. Click **Configurations** on the left menu.
 4. Scroll down to the **Import tool** section and click **Import**.
     <img src="../images/agent_platform/import_tool_config.png" alt="import tool configuration" title="import tool configuration" style="border: 1px solid gray; zoom:75%;">
