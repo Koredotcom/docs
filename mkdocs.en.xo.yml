@@ -352,6 +352,7 @@ nav:
                 - Jenkins: searchai/content-sources/connectors/jenkins.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
+                - Jfrog: searchai/content-sources/connectors/jfrog.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - LumApps: searchai/content-sources/connectors/lumapps.md
                 - Miro: searchai/content-sources/connectors/miro.md
