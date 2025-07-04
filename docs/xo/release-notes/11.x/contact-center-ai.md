@@ -1857,4 +1857,4 @@ The key features and experience changes are summarized below.
     * **Settings**: The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
     <img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;"> 
     
-[Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
+[Learn more about Contact Center AI features :octicons-arrow-right-24:](../../contactcenter/about-contact-center-ai.md)

@@ -96,7 +96,7 @@ Key Search AI capabilities are summarized below.
 
 Contact Center AI (previously SmartAssist) is now a part of AI for Service. You can now leverage Automation AI Use Cases and Search AI Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
 
-Key Updates:
+Key updates are summarized below.
 
 **Experience Flows**
 
