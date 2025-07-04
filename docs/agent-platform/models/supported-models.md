@@ -336,9 +336,10 @@ The supported models and their variants are given below:
 
 <li>stabilityai/stable-diffusion-2-1</li>
 
-<li>stable-diffusion-v1-5/stable-diffusion-v1-5
+<li>stable-diffusion-v1-5/stable-diffusion-v1-5</li>  
 
-(Stable Diffusion is available only in the text-to-image node, No Prompt Studio support.)</li>
+(Available only in the text-to-image node, No Prompt Studio support.)
+
 </ul>
    </td>
   </tr>
