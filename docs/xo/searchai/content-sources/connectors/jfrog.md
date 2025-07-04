@@ -39,7 +39,7 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 
 ### Create an Identity Token in JFrog
 
-1. Sign in to your <a href="http://jfrog-dev.kore.ai/ui/login" target="_blank">JFrog</a> Artifactory account.
+1. Sign in to your [JFrog](http://jfrog-dev.kore.ai/ui/login){:target="_blank"} Artifactory account.
 
 2. Go to your **User Profile** > **Identity Token**.
 
