@@ -48,7 +48,7 @@ Search AI integrates with JFrog via APIs.  To establish this connection, you nee
 4. Under Scopes, select "admin" to assign administrator privileges.
 
 5. Click **Generate**, then **copy the token**.  
-<img src="../images/jfrog/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/jfrog/identity-token.png" alt="Identity token in Jfrog" title="Identity token" style="border: 1px solid gray; zoom:65%;">
 
 ### JFrog Connector Configuration in Search AI
 
