@@ -535,7 +535,7 @@ nav:
       - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
-      - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
+
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
@@ -662,10 +662,11 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
-          - Kore Voice Automation:
+          - Voice Automation:
             - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
+            - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
