@@ -34,7 +34,7 @@ The system allows you to filter agent interaction data by selecting both preferr
 
 ## Analyze Cases and Tasks
 
-Provides options for supervisors to filter cases and tasks for review, assess, and monitor individual cases and tasks assigned. 
+Provides options for supervisors to filter cases and tasks for review, assess, and monitor individual cases and tasks assigned.
 
 ### Cases
 
