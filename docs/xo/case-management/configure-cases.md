@@ -171,9 +171,9 @@ To create a new task template:
     a. Click **+ Add Fields** to add **Custom** fields to the new task template.  
     <img src="../images/edit-add-fields.png" alt="Custom" title="Custom" style="border: 1px solid gray; zoom:70%;">
 
-        !!! Note
+    !!! note
 
-            You must assign every task template to a default assignee; either a queue, an individual agent, or an agent group.
+        You must assign every task template to a default assignee; either a queue, an individual agent, or an agent group.
 
     b. Click **Create** to finalize the task template.  
     <img src="../images/add-fields-create.png" alt="Create" title="Create" style="border: 1px solid gray; zoom:70%;">

@@ -28,9 +28,9 @@ The process of automated case creation are configured using public APIs for chan
 
 On-demand refers to the live conversation with a customer through any channel (email, chat, or voice). The agent reviews the customer's issue or query and creates a case accordingly. Agents and Supervisors can create cases in the following ways:
 
-* [Offline Conversation](#offline-conversation)
+* Offline Conversation
 
-* [Live Conversation](#live-conversation)
+* Live Conversation
 
 !!! Note
 
