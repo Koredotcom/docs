@@ -80,9 +80,9 @@ Steps to create a new case:
 
 12. Click **Save**. A success message is displayed, and a new case is created. 
 
-    !!! Note
+!!! Note
 
-        The created case gets assigned to agents based on the case type assignment rules.
+    The created case gets assigned to agents based on the case type assignment rules.
 
 ## Live Conversation
 
