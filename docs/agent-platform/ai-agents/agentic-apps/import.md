@@ -1,24 +1,24 @@
 # Import Agentic Apps
 
-The Agentic App Import feature enables users to transfer complete application configurations between environments. This capability facilitates reuse, sharing, and version management of agentic applications.
+The agentic app import feature enables users to transfer complete application configurations between environments. This feature facilitates reuse, sharing, and [version management](deployment/app-deployment.md#version-management){:target="_blank"} of agentic applications.
 
 ## Prerequisites
 
-* The Apps and agents can be imported from the JSON files in a standard format. 
+* You can import the apps and agents from the JSON files. 
 * The user must have import permissions. 
-* Currently, imports can be done only into existing applications. So to import an app, create a new app and use the import option to overwrite the app configuration.  
+* To import an app, create a new app. Then, use the import option to overwrite its configuration. Imports are only supported for existing apps. 
 
-## Steps to Import Apps and Agents
+## Import Apps and Agents
 
-To import Agentic Apps or agents in an agentic app, take the following steps. 
+To import apps or agents into an agentic app, follow these steps. 
 
-* Go to the Export/Import page under the Deploy section of the app. 
-* Go to the Import Logs tab.
-* Click the Import button.
+1. Go to the **Export / Import** page in the **Deploy** section of the app. 
+1. Go to the **Import Logs** tab.
+1. Select the **Import** option.
 
     <img src="../images/import-agent.png" alt="Import Agent" title="Import Agent" style="border: 1px solid gray; zoom:80%;">
 
-* Upload the config file to use for importing and click Proceed.
+1. Upload the JSON config file and select **Proceed**.
 
     <img src="../images/config-files.png" alt="Config file for importing" title="Config file for importing" style="border: 0px solid gray; zoom:65%;">
 
@@ -26,9 +26,9 @@ To import Agentic Apps or agents in an agentic app, take the following steps.
 
 !!! note
 
-    Importing a configuration will overwrite all existing settings in the target application.
+    Importing a configuration overwrites all existing settings in the target application.
 
-* The status of the import can also be seen under the Import Logs. 
+* You can view the import status in the Import Logs. 
 * Review and validate the imported apps or agents. 
 
 ### Key Considerations for Import
@@ -40,6 +40,6 @@ To import Agentic Apps or agents in an agentic app, take the following steps.
 * If valid, the platform creates the application with all components.
 * If invalid, the platform displays an appropriate error message and aborts the import.
 
-### Rollback for Failed Imports
+### Rollback of Failed Imports
 
-* If any part of the application import fails, appropriate error messages are shown and the platform rolls back all changes. Any components, tools, or agents created in the process are removed. The application either completely imports the file or fails to import it at all.
+* If an import fails, appropriate error messages are shown and the platform rolls back all changes. Any components, tools, or agents created in the process are removed. The application either completely imports the app or fails to import.
