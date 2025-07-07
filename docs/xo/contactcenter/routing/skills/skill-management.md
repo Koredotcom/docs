@@ -97,9 +97,9 @@ To delete a skill, follow these steps:
     5. Click the **Delete** button on the confirmation pop-up to confirm your choice.  
           <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
 
-     !!! Note
+          !!! Note
 
-          You cannot restore deleted skills. Please proceed with caution.
+               You cannot restore deleted skills. Please proceed with caution.
 
 ## Skill Groups
 
@@ -110,7 +110,7 @@ A **Skill Group** aggregates similar agent skills. For example, _Sales_ is a ski
 
 Steps to add a new skill group:
 
-1. Click the **+ New Skill Group** button;
+1. Click the **+ New Skill Group** button;  
 <img src="../images/new-skill-group-button.png" alt="New Skill GroupButton" title="New Skill Group Button" style="border: 1px solid gray; zoom:70%;">
 
 2. In the Add New Skill Group window, provide inputs for the following:
@@ -119,7 +119,7 @@ Steps to add a new skill group:
     3. Color: Associate a color to the group for easier identification. You can use Hex to choose a specific color, use the color picker or select from the preset color palette;
 
 3. Click **Create** to complete the process;  
-<img src="../images/create-new-skill-group.png" alt="Create Skill Group" title="Create Skill Group" style="border: 1px solid gray; zoom:70%;">
+     <img src="../images/create-new-skill-group.png" alt="Create Skill Group" title="Create Skill Group" style="border: 1px solid gray; zoom:70%;">
 
      !!! Note
 
@@ -160,6 +160,6 @@ Follow these steps to delete a Skill Group:
     3. Confirm your choice.  
           <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
 
-     !!! Note
+          !!! Note
 
-          You cannot restore deleted skill groups. Please proceed with caution.
+               You cannot restore deleted skill groups. Please proceed with caution.
