@@ -21,7 +21,7 @@ Configuration Updates:
 * On the Agentic Configurations > App Information page:  
     * The Agentic App Name field now has a 50-character limit.   
     * The App ID of the Agentic Platform is now renamed to App ID.  
-    * The X-Api Key has been renamed to API Key.  [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#agentic-configurations).  
+    * The X-Api Key has been renamed to API Key.  [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#agentic-configurations)  
 
 Runtime Updates:  
 
@@ -30,7 +30,7 @@ Runtime Updates:
 * When multiple Agentic responses are generated with the ‘Allow auto send Message’ option enabled:  
     * The timer for each message starts only after the previous message is sent.  
     * If the view does not auto-scroll to the latest message, an arrow icon appears in the bottom-right corner, indicating the number of Agentic messages stacked below.  
-* To regenerate a failed response, double-click the corresponding customer message.  [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab).  
+* To regenerate a failed response, double-click the corresponding customer message.  [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)  
 
 <a id="V3-Features-to-SDK"></a>
 
@@ -50,20 +50,20 @@ Agent-to-agent call transfers now limit transcript visibility to the current age
 The **Control Transcript Visibility between Agents** widget offers two options:  
 
 * Use public APIs to control transcription via the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md){:target="_blank"} or  
-* Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits). [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings).
+* Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits). [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)  
 
 <a id="Custom-Disposition-Summary-Generation"></a>
 
 **Support for Custom LLMs in Third-Party Agent Desktops for Disposition Summary Generation** <br> 
-Third-party agent desktops can now generate Disposition Summaries using a custom LLM. To enable this, go to **Agent AI** > **Generative AI Tools** > **GenAI Features** > **All Products**, and select a model under the **Conversation Summary** section. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/custom-llm-model-in-genai.md). 
+Third-party agent desktops can now generate Disposition Summaries using a custom LLM. To enable this, go to **Agent AI** > **Generative AI Tools** > **GenAI Features** > **All Products**, and select a model under the **Conversation Summary** section. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/custom-llm-model-in-genai.md)  
 
 **Embedded Agent AI App Supports Bot Configurations**  
-Users can manage bot configuration parameters (for example, QueueIdentifier, custom data) directly within the Third Party Configuration section of an embedded Agent AI app. This streamlines the process by dynamically generating iframe URLs for third-party CCaaS/CRM platforms, removing the necessity for a separate configuration on the third-party desktop. To set this up, go to **Agent AI** > **Configuration** > **System Setup** > **Third-Party Configuration**. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/third-party-configuration.md).
+Users can manage bot configuration parameters (for example, QueueIdentifier, custom data) directly within the Third Party Configuration section of an embedded Agent AI app. This streamlines the process by dynamically generating iframe URLs for third-party CCaaS/CRM platforms, removing the necessity for a separate configuration on the third-party desktop. To set this up, go to **Agent AI** > **Configuration** > **System Setup** > **Third-Party Configuration**. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/third-party-configuration.md)  
 
 <font size="4">API Enhancement</font>
 
 **New Filters for the Raw Data API**  
-To improve data segmentation, streamline reporting, and support scalable data pipelines, the Raw Data API now supports the following filters: Agent ID, Channel, Session ID, and Conversation ID filters. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/raw-data-api.md).
+To improve data segmentation, streamline reporting, and support scalable data pipelines, the Raw Data API now supports the following filters: Agent ID, Channel, Session ID, and Conversation ID filters. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/raw-data-api.md)  
 
 <font size="4">Integration Enhancements</font>
 

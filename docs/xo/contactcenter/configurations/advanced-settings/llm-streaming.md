@@ -24,9 +24,8 @@ Steps to enable LLM Streaming:
 
 LLM  streaming is enabled for the following TTS providers:
 
-1. PlayHT
-2. ElevenLabs
-3. Deepgram
+1. ElevenLabs
+2. Deepgram
 
 !!! Note
 

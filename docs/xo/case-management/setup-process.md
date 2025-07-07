@@ -2,9 +2,9 @@
 
 The following sections describe how to set up case management, enable features, customize system registration, and validate configuration. 
 
-1. **Sign Up the XO11 Platform**
+1. **Sign Up the AI for service (XO11) Platform Platform**
 
-    * **Sign Up:** Login to the XO11 Platform registration page and fill out the sign-up form with your email address. After you complete registration, the XO11 Platform automatically creates your workspace with default configurations. [Learn more](../getting-started/navigating-the-platform.md){:target="_blank"}.
+    Login to the AI for service (XO11) Platform Platform registration page and fill out the sign-up form with your email address. After you complete registration, the AI for service (XO11) Platform Platform automatically creates your workspace with default configurations. [Learn more](../getting-started/navigating-the-platform.md){:target="_blank"}.
 
 2. **Enable Case Management**
 
@@ -24,7 +24,9 @@ The following sections describe how to set up case management, enable features, 
     
     * **Customize:** Adjust operation hours to match your business schedule (for example, weekday hours or 24/7 hours of operation). [Learn more](../contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md/#hours-of-operation){:target="_blank"}.
 
-4. **Add Channels** To Configure your communication channels setup (Email, Chat, Voice), refer to [Learn more](../channels/adding-channels-to-your-bot.md){:target="_blank"}.
+4. **Add Channels** 
+
+    To Configure your communication channels setup (Email, Chat, Voice), refer to [Learn more](../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 
 5. **Invite Team Members**
 
@@ -47,9 +49,9 @@ The following sections describe how to set up case management, enable features, 
 
     * **[Status](./configure-cases.md#status-configuration):** Create custom statuses under the status type to meet your business requirements. You can add custom statuses to the five default statuses  
 
-    * **[Priority](./configure-cases.md#priority-configuration):** Create custom priorities with values to automatically sort case severity to supplement the four default priorities.  
+    * **[Priority](./case-management/configure-cases/#priority-configuration):** Create custom priorities with values to automatically sort case severity to supplement the four default priorities.  
 
-    *  **[Task Templates](configure-cases.md#task-templates-configuration):** You can create task templates to manage and automate customer support tasks. When you create a template, you can specify who should handle the task by choosing one of these assignment options:
+    *  **[Task Templates](./case-management.md/configure-cases/#task-templates-configuration):** You can create task templates to manage and automate customer support tasks. When you create a template, you can specify who should handle the task by choosing one of these assignment options:
 
         * Unassigned
         * Queue
@@ -58,7 +60,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **[Additional Fields](./configure-cases.md#case-templates-configuration):** Add the custom fields that your task requires. 
 
-    * **[Case Templates](configure-cases.md#case-templates-configuration):** Create case templates to help agents collect and reference information for different customer issues. Include the following elements:
+    * **[Case Templates](./configure-cases.md#case-templates-configuration):** Create case templates to help agents collect and reference information for different customer issues. Include the following elements:
 
         * Custom fields
 
@@ -81,7 +83,7 @@ The following sections describe how to set up case management, enable features, 
 
     Test your configuration process using the following scenarios.
 
-* **Email Channel**
+9. **Email Channel**
 
     * Verify that all Case Management system components function correctly in the email channel, from case creation through resolution. 
 
@@ -91,7 +93,7 @@ The following sections describe how to set up case management, enable features, 
 
     * Prepare templates for case creation and communication.  
 
-* **Automation Process**
+10. **Automation Process**
 
     * Create an automated flow.
 
@@ -101,7 +103,7 @@ The following sections describe how to set up case management, enable features, 
 
     * Create a new [case template](./configure-cases.md#case-templates-configuration) with **Case Queue** as the default assignee.
 
-* **Conversation Process**
+11. **Conversation Process**
 
     * **Send Email**: The system processes the conversation through the default queue flow.
 
@@ -111,7 +113,7 @@ The following sections describe how to set up case management, enable features, 
 
         * **Case Handling**: Agent 1 can close the conversation while the case remains open for the assigned agent to take further action.
 
-9. **Set up User Permissions**
+12. **Set up User Permissions**
 
     Configure the following access controls (user management and role settings):
 
@@ -119,29 +121,27 @@ The following sections describe how to set up case management, enable features, 
 
     * **[User Attributes](https://docs.kore.ai/xo/user-management/manage-users/#attributes){:target="_blank"}**
 
-10. **Configure case handling capacity and language settings**
+13. **Configure case handling capacity and language settings**
 
     To configure case handling capacity and language settings: 
     
     1. Go to **User Management > Manage Users**.  
     <img src="../images/user-mgt.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
 
-    2. In **Manage Users**, right-click the user you want to edit.  
+    2. In **Manage Users**, select the user the click on **three dots > right click > edit**.  
     <img src="../images/manage-users-edit.png" alt="Manage Users" title="Manage Users" style="border: 1px solid gray; zoom:70%;">
 
-    3. Select the three dot lines (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) icon, and select **Edit.**
-
-    4. On the **User Attributes** page, select **Cases**.  
+    3. On the **User Attributes** page, select **Cases**.  
     <img src="../images/attribute-edit-cases.png" alt="User Attributes" title="User Attributes" style="border: 1px solid gray; zoom:70%;">
 
-5. Turn on the **Enable Case** toggle button to configure the **Maximum Case Handling Capacity** of the agent. 
+14. Turn on the **Enable Case** toggle button to configure the **Maximum Case Handling Capacity** of the agent. 
 
     !!! Note
 
         Ensure that the maximum capacity for both **Case** and **Task** is limited to 15 each.
 
-6. In the **Language Support**, select your desired language.
+15. In the **Language Support**, select your desired language.
 
-7. Select the **Proficiency Level** against the supported language selected. [Learn more](https://docs.kore.ai/xo/app-settings/language-management/managing-languages-for-multilingual-vas/){:target="_blank"}.
+16. Select the **Proficiency Level** against the supported language selected. [Learn more](https://docs.kore.ai/xo/app-settings/language-management/managing-languages-for-multilingual-vas/){:target="_blank"}.
 
-8. Click **Update Changes**.
+17. Click **Update Changes**.
