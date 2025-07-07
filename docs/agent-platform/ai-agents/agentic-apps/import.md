@@ -22,7 +22,6 @@ To import apps or agents into an agentic app, follow these steps.
 
     <img src="../images/config-files.png" alt="Config file for importing" title="Config file for importing" style="border: 0px solid gray; zoom:65%;">
 
-* If the file format is correct and no errors are found, the application is configured using the JSON file.
 
 !!! note
 
