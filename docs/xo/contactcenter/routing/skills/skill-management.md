@@ -97,9 +97,9 @@ To delete a skill, follow these steps:
     5. Click the **Delete** button on the confirmation pop-up to confirm your choice.  
           <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
 
-     !!! Note
+!!! Note
 
-          You cannot restore deleted skills. Please proceed with caution.
+     You cannot restore deleted skills. Please proceed with caution.
 
 ## Skill Groups
 
@@ -160,6 +160,6 @@ Follow these steps to delete a Skill Group:
     3. Confirm your choice.  
           <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
 
-     !!! Note
+!!! Note
 
-          You cannot restore deleted skill groups. Please proceed with caution.
+     You cannot restore deleted skill groups. Please proceed with caution.
