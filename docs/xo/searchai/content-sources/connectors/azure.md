@@ -32,27 +32,27 @@ To enable an efficient and quick search of your content available in Azure Stora
 
 * Log in to the [Azure portal](https://portal.azure.com/#home) and go to Storage Accounts.
 
-![Azure Home ](../images/azure/azure-portal.png "Azure Home")
+![Azure Home ](images/azure/azure-portal.png "Azure Home")
 
 * Click on **Create** to create a new storage account.
 
-![Create Storage Account ](../images/azure/create-storage.png "Storage Account")
+![Create Storage Account ](images/azure/create-storage.png "Storage Account")
 
 * Fill in the required details for the project. You need to enter details related to security, access protocols, networking, encryption, etc. For a detailed description of the fields, [refer to this guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal). After entering and reviewing the fields, click **Create**.
 
-![Create Storage Account ](../images/azure/account-details.png "Storage Account")
+![Create Storage Account ](images/azure/account-details.png "Storage Account")
 
 * After the creation and deployment of the account are complete, click on **Go to resource**.
 
-![Resource Details ](../images/azure/resource-details.png "Resource Details")
+![Resource Details ](images/azure/resource-details.png "Resource Details")
 
 * This page gives you an overview of the storage account and allows you to perform basic operations on the account.
 
-![Account Overview ](../images/azure/account-overview.png "Account Overview")
+![Account Overview ](images/azure/account-overview.png "Account Overview")
 
 * From the left navigation menu, go to **Shared access signature** and generate a SAS key. To do so, enable the following settings and click on **Generate SAS and connection string** button at the bottom.  
 
-![Generate Connection String ](../images/azure/generate-sas.png "Connection String")
+![Generate Connection String ](images/azure/generate-sas.png "Connection String")
 
 Use the following minimum permissions:
 * **Allowed resource types**: Enable Service, Container & Object.

@@ -23,19 +23,18 @@ To manage the conversation types, click **Settings**, turn the toggle on/off to 
 
 ## Model Configurations
 
-The Model Configurations card lets you choose the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
+Use the Model Configurations card to select the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
 
-* **Shortlisting Relevant Chunks**: 
-The XO Platform supports **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding** models, with more options coming soon. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3
+* **Shortlisting Relevant Chunks**: The supported models are **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding**. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3.
 
+* **Maximum no. of Chunks to Shortlist (Knowledge from Search AI)**: Enter the maximum number of chunks to be shortlisted from Search AI. These chunks will be sent to the LLM for answer generation. The default value is 5. Click "[Go to Search AI](https://docs.kore.ai/xo/searchai/retrieval/)" to access the Search AI chunks retrieval settings.
 
-* **Conversation Management**: 
-The supported LLMs assist in detecting user intent and creating execution plans. You can configure advanced settings such as Temperature, Max Tokens, and Conversation History Length. The default settings are sufficient for most use cases. Support for major commercial models will be introduced in the coming months. However, you can always integrate your own model through the custom LLM integration option. Conversation Management currently supports the following LLMs:
+* **Conversation Management**: The supported LLMs help detect user intent and create execution plans. You can configure advanced settings such as Temperature, Max Tokens, and Conversation History Length. The default settings are sufficient for most use cases. Support for major commercial models will be introduced in the coming months. However, you can always integrate your own model through the custom LLM integration option. Conversation Management currently supports the following LLMs:
     * OpenAI GPT-4o
     * OpenAI GPT-4o mini
     * Azure OpenAI GPT-4o
     * Amazon Bedrock
-    * XO GPT – DialogGPT
+    * XO GPT - DialogGPT
   
 
 To configure the model and settings, click **Settings**. Select the model, adjust the settings if necessary, and click **Save**.

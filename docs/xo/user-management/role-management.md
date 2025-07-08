@@ -455,6 +455,22 @@ Access to the monitor tab for live interactions
    </td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -546,6 +562,14 @@ Access bot-driven interactions on the Monitor tab
    <td><strong>Agent Channel Selection for Incoming Interactions</strong>
    <br>
 Allow user to select their preferred channel for incoming interactions.
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
    </td>
    <td>Yes
    </td>
@@ -1095,6 +1119,22 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -1182,6 +1222,13 @@ Allow user to select their preferred channel for incoming interactions.
    </td>
 </tr>
 <tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   </td>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1198,7 +1245,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full
+   <td>None
    </td>
 </tr>
 <tr>
@@ -1694,6 +1741,22 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -1781,6 +1844,13 @@ Allow user to select their preferred channel for incoming interactions.
    </td>
 </tr>
 <tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>No
+   </td>
+<tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -1797,7 +1867,7 @@ Manage communication channels
    <br>
 Manage account-level billing preferences
    </td>
-   <td>Full
+   <td>None
    </td>
 </tr>
 <tr>
@@ -2305,6 +2375,22 @@ Access to the monitor tab for live interactions
    <td>Yes</td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -2391,6 +2477,13 @@ Allow user to select their preferred channel for incoming interactions.
    <td>Yes
    </td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   </td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -2920,6 +3013,22 @@ Access to the monitor tab for live interactions
    <td>No</td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -2974,7 +3083,7 @@ Users can make direct outward calls
    <br>
 Decide which queues are available for access in the Monitor
    </td>
-   <td>None</td>
+   <td>Self</td>
 </tr>
 <tr>
    <td><strong>Dashboard Content</strong>
@@ -3006,6 +3115,13 @@ Allow user to select their preferred channel for incoming interactions.
    <td>No
    </td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>No
+   </td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -3691,6 +3807,24 @@ Access to the monitor tab for live interactions
 No</td>
 </tr>
 <tr>
+   <td><strong>Request Supervisor Support</strong>
+   <br>
+Allow user to send request for supervisor support
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Receive Supervisor Support</strong>
+   <br>
+Allow user to receive request for supervisor support from an agent
+   </td>
+   <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
    <td><strong>Reports</strong>
    <br>
 Create, view, and run reports
@@ -3768,7 +3902,7 @@ Decide which queues are available for access in the Monitor
    </td>
    <td>All
    <br>
-Self
+Self</td>
 <br>
 None</td>
 </tr>
@@ -3808,6 +3942,14 @@ Allow user to select their preferred channel for incoming interactions.
    <br>
    No</td>
 </tr>
+<tr>
+   <td><strong>Manually Redact Sensitive Data</strong>
+   <br>
+Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
+   </td>
+   <td>Yes
+   <br>
+   No</td>
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>

@@ -2,6 +2,80 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.15.0 June 30, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Channels</font>
+
+**Video Call Support with Voice Gateway**
+
+Agents can initiate video calls during Chat sessions, enabling richer, face-to-face interactions with users accessing the platform via the Web SDK. Video calls are not recorded or stored to ensure compliance with applicable regulations. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#audio-and-video-calls-with-customers)
+
+<hr>
+
+## v11.14.1 June 14, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">SIP Trunk</font>
+
+**Wildcard Pattern Matching for DID Assignment**
+
+Wildcard pattern matching for DID assignment is now supported in SIP trunk configurations, streamlining large-scale deployments and reducing manual effort. Administrators can use patterns like `123*` to map multiple similar DIDs to SIP trunks and experience flows, eliminating the need to list each DID individually. Incoming calls are matched against these patterns, and the system triggers the associated experience flow. If multiple patterns match, the system selects the one with the most specific match (the highest number of matching digits). This enhancement improves routing accuracy and supports rapid, error-free configuration. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#steps-to-configure-sip-trunk)
+
+<hr>
+
+## v11.14.0 May 31, 2025
+
+<u> Minor Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Channels</font>
+
+**Repeat User Identification for Voice Channel**
+
+Repeat user identification is extended to the Voice Channel. This enhancement enables consistent recognition of returning users across all communication channels using predefined identifiers. It enhances routing accuracy and personalization in voice interactions while providing unified insights into user behavior for administrators, supervisors, and contact center operations teams. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#context-identify-returning-contact-center-ai-ccai-customers-within-24-hours)
+
+<font size="4">Call Control Parameters</font>
+
+**Support for ‘Speed’ Parameter in Elevenlabs TTS**
+
+The Elevenlabs Text to Speech (TTS) integration now supports the ‘speed’ parameter, allowing control over the speech playback rate. This enhancement enables adjusting the speaking speed for more natural and customized audio output. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#elevenlabs)
+
+<font size="4">Text to Speech (TTS)</font>
+
+**Added New Deepgram TTS Voices**
+
+Four new English voices—Helena, Electra, Thalia, and Vesta (a slower, senior-friendly option)—are now available in the Deepgram TTS integration. Bot developers can select any of these voices to enhance the user experience and tailor voice interactions to specific audience needs. These additions offer greater flexibility in voice customization, enhancing caller engagement.
+
+<font size="4">SIP Trunk Configuration</font>
+
+**Updated SIP Trunk Configuration for Agent AI with Third-Party Desktops**
+
+The updated SIP Trunk Configuration for Agent AI now provides easier integration with third-party agent desktops, such as Genesys, NICE, and Talkdesk. It offers two methods for accessing real-time audio streaming:
+
+* **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).  
+* **WebSockets Audio Streaming**: For cloud-native platforms (for example, Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment. 
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md/#sip-trunk-setup)
+
+**Enable Call Recordings via SIPREC for Third-Party Agent Desktops**
+
+You can now enable or disable call recordings for third-party Agent Desktop integrations in the “Configure SIP Trunk” page. These recorded calls can be accessed through a public API. To enable it, go to **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.
+
+<font size="4">Integration</font>
+
+**Voice Automation NiceCX (CX One) – SIP Integration with AI for Service**
+
+The Voice Automation NiceCX (CX One) – SIP Integration is now supported in AI for Service. [Learn more :octicons-arrow-right-24:](../../contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md)
+
+<hr>
+
 ## v11.13.1 May 17, 2025
 
 <u> Patch Release </u>
@@ -16,15 +90,15 @@ This update includes only bug fixes.
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### SIP Trunk
+<font size="4">SIP Trunk</font>
 
-#### SIP Header Format Preservation in Voice Automation Transfers
+**SIP Header Format Preservation in Voice Automation Transfers**
 
 Voice Gateway now preserves the original format of SIP header names (specifically User-to-User headers—UUI) when sending them back to third-party contact centers during inbound call transfers to Voice Automation. The change applies to SIP Refer and SIP Invite methods in UUI Data Settings, agentutils/voiceutils functions in Automation AI, and channel override templates.
 
-### Text to Speech (TTS)
+<font size="4">Text to Speech (TTS)</font>
 
-#### Support for Emma Voice in IVR Channel
+**Support for Emma Voice in IVR Channel**
 
 The IVR channel now supports additional Emma voice options under the Microsoft Azure TTS provider. Users can select the following voices at the Start Flow, the first node of the Start Flow, and Voice Preferences settings:
 
@@ -35,13 +109,13 @@ The IVR channel now supports additional Emma voice options under the Microsoft A
 
 This enhancement ensures greater flexibility and consistency in voice experience across IVR flows.
 
-#### LLM Streaming Support for Additional TTS Providers
+**LLM Streaming Support for Additional TTS Providers**
 
 LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/advanced-settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
 
-### Phone Numbers
+<font size="4">Phone Numbers</font>
 
-#### Auto-Deletion of Inactive Twilio Phone Numbers
+**Auto-Deletion of Inactive Twilio Phone Numbers**
 
 Twilio phone numbers with no inbound or outbound activity, including test flows, that have been inactive for over 90 days will be automatically deleted and removed from the UI across the Phone Number Purchase screen, Experience Flows, and Outbound Dialer Widget. If a deleted number receives an inbound call, the bot will play the message: “Can’t place the call right now, please try later.” A notification on the Phone Numbers page (visible only to Administrators and App Owners/App Developers) informs users of this policy. The page also includes updated text about auto-deletion, and eligible users will receive email notifications 7 days before and on the day of deletion.
 
@@ -53,9 +127,9 @@ Twilio phone numbers with no inbound or outbound activity, including test flows,
 
 This update includes enhancements and bug fixes. The key enhancement included in this release is summarized below.
 
-### SIP Trunk
+<font size="4">SIP Trunk</font>
 
-#### Accurate Caller Number in SIP Headers
+**Accurate Caller Number in SIP Headers**
 
 When a call is transferred to an agent from a third-party desktop, the caller number set in the script node is passed through SIP headers instead of the DID number. This ensures accurate caller identification on external agent tools. This enhancement is currently applicable only for Experience Flow-based call transfers. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
@@ -67,9 +141,9 @@ When a call is transferred to an agent from a third-party desktop, the caller nu
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
-### Call Control Parameters
+<font size="4">Call Control Parameters</font>
 
-#### New Call Control Parameters to Support Deepgram
+**New Call Control Parameters to Support Deepgram**
 
 New call control parameters have been added to improve transcription quality when Deepgram ASR is used. The parameters can be configured directly in the call control section of experience flows, allowing users greater control over transcription output.
 
@@ -79,24 +153,24 @@ New call control parameters have been added to improve transcription quality whe
 
 [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/call-control-parameters.md#common-asr-parameters)
 
-### Flows
+<font size="4">Flows</font>
 
-#### Configurable Answering Machine Detection (AMD) for Inbound Calls
+**Configurable Answering Machine Detection (AMD) for Inbound Calls**
 
 The Experience Flows now include an Answering Machine Detection (AMD) option ('Start Flow' → 'Answering Machine Detection (AMD)'), which can be selectively enabled for inbound calls. The flag helps reduce latency by preventing unnecessary AMD processing. When enabled, the system will detect answering machines in incoming calls and store the results in context variables that can be used in Dialog/Experience flows. This feature is only available for Voice Start Flows and includes a checkbox that allows users to automatically disconnect calls upon machine detection, streamlining call handling based on specific business requirements. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#answering-machine-detection)
 
-### Automatic Speech Recognition and Text-to-Speech
+<font size="4">Automatic Speech Recognition and Text-to-Speech</font>
 
-#### Updated TTS Selection for OpenAI TTS
+**Updated TTS Selection for OpenAI TTS**
 
 The text-to-speech provider name has been updated from "Whisper" to "OpenAI TTS" to improve clarity and align with the OpenAI brand. This change can be seen in three key areas of the platform: Start Flow, Voice Preferences, and the general settings of the Start Node. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences)
 
-#### Expanded Amazon Polly Voice Selection in TTS Dropdown
+**Expanded Amazon Polly Voice Selection in TTS Dropdown**
 
 When 'AWS Amazon Polly' is selected as the Text-to-Speech (TTS) engine, users can now access the full list of generative voices available for AWS Amazon Polly. These voices can be selected at the following locations:
 
 * Flows & Channels → Start Flows,
 * Start Node in a Start Flow,
-* Kore Voice Gateway → Voice Preferences → Manage
+* Voice Gateway → Voice Preferences → Manage
 
 <hr>

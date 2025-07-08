@@ -86,7 +86,7 @@ For example, double-click the "content" key in the JSON structure and click **Sa
 <img src="../images/responsepath.jpg" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
 
 10. The **Actual Response** and **Expected Response** are displayed. 
-    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
+    1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 12.
 
         **Note**: Both Actual Response and Expected Response are not editable.
         ![alt_text](images/prl(2).png  )

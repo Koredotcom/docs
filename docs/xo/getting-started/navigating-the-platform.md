@@ -20,7 +20,7 @@ The top menu available on the landing page provides access to the following opti
 4. **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
 5. **Profile** - Access the profile section, which allows you to reach the following features:
     * **Manage Profile** - View and edit your profile.
-    * **App Language** - Allows users to switch between supported languages like English, Japanese, and Korean for all user interface elements and content.
+    * **App Language** - Allows users to switch between supported languages like English, Japanese, German, and Korean for all user interface elements and content.
     * **Admin Console** – Access the Admin Console only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Logout**.
 
@@ -37,6 +37,11 @@ Within this area, you can:
 * Sort the list either ascending or descending by app name, last opened, creation date, date modified, and owner name.
 * Toggle between _Tile View_ or _List View_.
 * Create a New App or import an existing App.
+
+!!!note
+
+    By default, only three apps are displayed in the app list. To find a specific app, click "View All" or enter the app name in the search bar.
+
 
 ## Explore The XO Platform
 

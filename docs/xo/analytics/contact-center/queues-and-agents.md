@@ -4,7 +4,7 @@ The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performan
 
 **To view the Queues & Agents dashboard, follow the steps**:
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
+1. Click **Analytics** on the left navigation pane. The **Analytics** panel is displayed with the list of reports.
 
     <img src="../images/navigating-to-queues-agents-report.png" alt="Navigating to Queues Agents Report" title="Navigating to Queues Agents Report" style="border: 1px solid gray; zoom:80%;">
 

@@ -643,6 +643,23 @@ Disable
    <td>
    </td>
   </tr>
+  <tr bgcolor="#FAFAFA">
+   <td><a href="#resolve-sensitive-entity
+">Resolve Sensitive Entity
+</a>
+   </td>
+   <td>Once enabled, it validates and converts raw user input for sensitive entities into their canonical form before masking.
+   </td>
+   <td>FM
+   </td>
+   <td>Enable,
+<br>
+Disable (default)
+   </td>
+   <td>
+   </td>
+  </tr>
+  
 </table>
 
 ## **Machine Learning Engine Settings**
@@ -924,6 +941,10 @@ This is a **Custom** configuration. To enable, follow these steps:
 1. Click **Add Custom**
 2. Enter name as *FM_Manage_Account_Enabled*
 3. Enter the value as *enabled* or *disabled*
+
+### Resolve Sensitive Entity 
+
+Resolve Sensitive Entity ensures sensitive entity nodes are processed consistently with non-sensitive entities by validating and transforming raw user inputs into their canonical forms before masking. When enabled, an internal API retrieves the original unmasked user input from the context, validates it against the expected entity type (e.g., date, number, string), converts it into a standard format (e.g., "Dec 26 1991" to "1991-12-26"), and updates the context with the resolved value. This eliminates discrepancies during service calls and analytics caused by incorrect or unvalidated sensitive inputs.
 
 ## Spell Correction settings
 

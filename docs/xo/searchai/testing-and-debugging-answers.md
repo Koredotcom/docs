@@ -4,21 +4,21 @@ Search AI provides you with a simulator to test the performance and accuracy of 
 
 To test answers, go to the **Answer Configuration** page and click the **Test Answers** button. 
 
-![Testing Answers](../images/testing/test-answer-button.png "Testing Answers")
+![Testing Answers](images/testing/test-answer-button.png "Testing Answers")
 
 
 This presents a simulator. 
 
-![simulator](../images/testing/test-answers.png "Simulator")
+![simulator](images/testing/test-answers.png "Simulator")
 
 
 Enter a query to see the corresponding generated answer.
 
-![Generated Answer](../images/testing/answer.png "Generated Answer")
+![Generated Answer](images/testing/answer.png "Generated Answer")
 
 The simulator also provides a **debugger**. The debug option is enabled after the answer is generated for your search. Click the debug icon to get insights into the answer generation process.
 
-![Debugger](../images/testing/debug-option.png "Debugger")
+![Debugger](images/testing/debug-option.png "Debugger")
 
 The **Debugger** is displayed on the left of the preview widget. The debug information is available under the following tabs:
 
@@ -34,15 +34,15 @@ For each chunk in each of the lists, the similarity score for the chunk, the sou
 
 The prompt sent to the LLM model for answer generation is displayed in the bottom pane. A prompt consists of a set of instructions along with a few shot examples sent to the LLM model and enables it to generate desired results accurately.  You can use this section to verify if the prompt is defining the objective, tone of response, and format of the response properly. 
 
-![Prompts](../images/testing/prompts-tab.png "Prompts tab")
+![Prompts](images/testing/prompts-tab.png "Prompts tab")
 
 
 **Response**: This tab shows the results sent by the LLM back to the Search AI application in JSON format. It also provides performance statistics like the time taken in vector search for the query and the time taken in answer synthesis. 
 
-![Response](../images/testing/response-tab.png "Response tab")
+![Response](images/testing/response-tab.png "Response tab")
 
 
 To view all the information in JSON format, click the **JSON view** link.
 
-![JSON View](../images/testing/json-view.png "JSON View")
+![JSON View](images/testing/json-view.png "JSON View")
 

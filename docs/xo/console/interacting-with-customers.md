@@ -76,6 +76,7 @@ The following table lists scenarios with expected results in case of a network f
 | If the resend icon is clicked            | The message is sent again.                                                                                                      |
 | If the conversation is terminated        | The Resend icon does not appear.                                                                                                |
 | If the page is refreshed                 | The undelivered messages do not appear.                                                                                         |
+
 ## Audio and Video Calls with Customers
 
 Agents can request the customer for an audio or video call during the chat conversation if required. Clicking the **Audio** or **Video Call** icon initiates a call.  
@@ -83,7 +84,8 @@ Agents can request the customer for an audio or video call during the chat conve
 
 !!! Note
 
-    The initial interaction and the phone call interaction must be closed separately, with corresponding dispositions.
+    * Accounts using Voice Gateway and AudioCodes can access the video call option. 
+    * Agents must close the chat interaction and the audio/video call separately, each with its own disposition.
 
 ### Manual Outbound Call
 
@@ -205,13 +207,19 @@ Agents can initiate Consult calls, Conference calls, and Warm Transfer voice cal
 
 #### Consult Call
 
-Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call. Consult functionality will not be available if the conversation is being transferred to a queue.
+Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call.
 
 The agent chosen for consultation must be available and have zero load occupation. If an agent is brought in for consultation, their slots remain occupied throughout the consultation and conference call.
 
 During the consult call, the system automatically places the customer on hold, allowing internal agents to communicate with each other. All calls are recorded if recording is enabled. Calls can be transferred to external agents by pre-saving their phone numbers through an API.
 
 The initiating agent can switch to the original customer call if needed, and vice versa, using the Swap functionality. The initiating agent can merge the two calls, converting them into a conference call.
+
+##### Consult Call to a Queue (Voice Channel Only)
+
+The “Consult a Call to a Queue” allows agents handling voice calls to initiate a consult with an available agent from a selected queue. When the agent chooses a queue during the consult action, the system displays a list of agents who belong to that queue, are in “Available” status, and are not currently handling any assignments or active calls for that queue. The list appears in alphabetical order. The agent can select one agent from the list, after which a "Consult" button becomes available. Clicking this button initiates a consult call, which proceeds only if the chosen agent remains available at the time of connection.
+
+During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. Once the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
 
 #### Conference Call
 
@@ -265,9 +273,9 @@ Following the consult or conference call, the initiating agent can proceed with 
    <td>A conference call cannot be initiated during an ongoing consult call.
    </td>
    <td>When the agent and user are on call and the agent initiates a consult with the Supervisor:
-    a) If the consult is merged, then a conference is not allowed.
+    (a) If the consult is merged, then a conference is not allowed.
 <br>
-    b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
+    (b) If the Supervisor has dropped from the consult call, then the conference will be allowed.
    </td>
   </tr>
   <tr>
@@ -501,33 +509,57 @@ There are two ways to secure the agent form:
 
 1. The entire form is secured by turning on a toggle at [form creation](../contactcenter/configurations/agent-forms/configure-agent-forms.md#create-an-agent-form). In this case, the **view** icon appears to view masked data in the header with the agent form text.
 All headers are visible, and only submitted data is masked.  
-<img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
 
 2. Only specific fields are masked, retaining the redaction as per the configuration for that field. The data is unmasked when the agent clicks the unmask button.  
-<img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
 
 Steps to share an Agent Form:
 
 1. Click the **Agent Form** icon.  
-<img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/agent-form-icon.png" alt="Agent Form Icon" title="Agent Form Icon" style="border: 1px solid gray; zoom:60%;">
 
 2. Select the form and click **Send Form**.  
-<img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/select-form.png" alt="Select Form" title="Select Form Icon" style="border: 1px solid gray; zoom:60%;">
 
 3. The form is sent to the customer and the status of the form on the live interaction pane shows **Sent**.  
-<img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/form-sent.png" alt="Form Sent" title="Form Sent" style="border: 1px solid gray; zoom:70%;">
 
 4. A message is displayed on the console once the customer submits the form and the status of the form shows Filled. Clicking the form/View Form on the confirmation message displays the form.  
-<img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/filled-form-confirmation.png" alt="Form Filled" title="Form Filled" style="border: 1px solid gray; zoom:60%;">
 
 5. Click the **Unmask** icon to view the fields (applicable if mask is enabled during form creation).  
-<img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/masked-form.png" alt="Masked Form" title="Masked Form" style="border: 1px solid gray; zoom:70%;">
 
     The agent form fields are displayed.  
     <img src="../images/unmasked-details.png" alt="Unmasked Form" title="Unmasked Form" style="border: 1px solid gray; zoom:70%;">
 
     The demonstration below shows how you can share an agent form with a customer and view the filled form.  
     <img src="../images/agent-forms-demo.gif" alt="Agent Forms Demo" title="Agent Forms Demo" style="border: 1px solid gray; zoom:70%;">
+
+## Manual PII Redaction
+
+During live chat sessions, the manual redaction feature enables agents to remove or mask sensitive information, including Personally Identifiable Information (PII). This capability allows agents to respond immediately to accidental disclosures and helps prevent the storage or exposure of sensitive data, supporting compliance with data privacy regulations. Administrators can configure this functionality from [Permissions](../user-management/role-management.md#permissions).
+
+Steps to manually redact PII data:
+
+1. Highlight the text you want to redact. The **Redact Data** option appears.  
+    <img src="../images/highlight-text.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:70%;">
+2. Click **Redact Data**.  
+    <img src="../images/redact-data-button.png" alt="Redact Data Button" title="Redact Data Button" style="border: 1px solid gray; zoom:70%;">
+3. In the confirmation prompt, click **Redact Data** again.  
+    <img src="../images/confirmation.png" alt="Redact Data Confirmation" title="Redact Data Confirmation" style="border: 1px solid gray; zoom:70%;">  
+    The selected text is redacted.  
+    <img src="../images/redacted.png" alt="Redacted" title="Redacted" style="border: 1px solid gray; zoom:70%;">  
+    The following demonstration illustrates this process.  
+    <img src="../images/redact-data.gif" alt="redaction Demo" title="Redaction Demo" style="border: 1px solid gray; zoom:70%;">  
+
+!!! Note
+
+    * Agents can select and redact only one user message at a time. They can select multiple lines within that message.
+    * Manual redaction applies to all digital channels except email.
+    * This feature does not support redacting messages in the user's console.
+    * Redaction applies to plain text, even if the text is already redacted.
 
 ## Snooze
 
@@ -812,18 +844,6 @@ When a caller disconnects, agents can either call back or end the call. If an ag
 
 The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
 
-### Timer After Caller Disconnects a Voice Call
-
-When a caller disconnects, agents can either call back or end the call. If an agent does not take any action, a depleting timer prompts the agent to take action within a specified timeframe. By default, this feature is disabled for existing users. Administrators can enable this functionality from the [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#auto-logout--auto-close-conversation).
-
-**Timer when the caller disconnects the call**: A depleting timer is displayed on the live interaction pane, with options to end the call or call back.  
-<img src="../images/end-call.png" alt="End Call Button" title="End Call Button" style="border: 1px solid gray; zoom:80%;">  
-
-**Timer when the caller disconnects during a conference call**: A depleting timer is displayed on the live interaction pane, with options to close or rejoin the conference call.  
-<img src="../images/end-conference-call.png" alt="End Conference Call Button" title="End Conference Call Button" style="border: 1px solid gray; zoom:80%;">  
-
-The call transitions to After Call Work (ACW) at the end of the configured timeout duration.
-
 ### After Call Work (ACW)
 
 If ACW is enabled, then the conversations are managed based on the ACW configuration:
@@ -886,6 +906,22 @@ Dispositions can be assigned in two ways:
     * Optionally, type a **Description** of your reason for selecting the disposition.
     * Click **_Close_** to close the conversation.
 
+### Translate Conversations in Real Time
+
+Agents can translate conversations in real time on the live interaction pane. Administrators can enable this functionality from [Translation Configurations](../contactcenter/configurations/advanced-settings/translation-configurations.md).
+
+Steps to translate real-time conversations:
+
+1. Click the **Translate** button at the top right corner of the live interaction pane.  
+    <img src="../images/translate-option.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
+
+2. Select the language from the dropdown. Click **Mark as Default** to make it the default language for translation.  
+    <img src="../images/select-language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
+
+3. The conversation is translated into the selected language.  
+    <img src="../images/translated-conversation.png" alt="Translated Conversation" title="Translated Conversation" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../images/summary.png" alt="Summary" title="Summary" style="border: 1px solid gray; zoom:70%;">
+
 ## Information Provided to Agents and Customers During Live Interactions
 
 You can interact with customers within the **Live Interaction** area of the Agent Console.  
@@ -933,6 +969,27 @@ Do the following to enable the typing indicator for chat conversations:
     * Screen Sharing
 
     Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v2/9.3.11/docs/plugins/agent-desktop) for additional information on installing the plugin.
+
+## Request Supervisor Support
+
+Agents can send requests to the appropriate supervisors for assistance. The supervisor receives a notification and can take necessary actions to resolve the issue. Administrators can configure this functionality from [Permissions](../user-management/role-management.md#permissions)
+
+Steps to request supervisor assistance:
+
+1. Click the ellipsis (**⋮**) at the top right corner of the Live Interaction pane, and click **Request Supervisor Support**.  
+    <img src="../images/ellipsis-button.png" alt="Request Supervisor Support" title="Request Supervisor Support" style="border: 1px solid gray; zoom:70%;"> 
+
+2. The agent can request support from a specific supervisor or multiple supervisors. The supervisor list displays either all supervisors or only those assigned to the relevant skill.  
+    <img src="../images/supervisor-select.png" alt="Select Supervisor" title="Select Supervisor" style="border: 1px solid gray; zoom:70%;">
+
+3. A notification is displayed, and the request is sent to supervisors who are logged in to the platform and have their status set to Available.  
+    <img src="../images/success-message.png" alt="Success Message" title="Success Message" style="border: 1px solid gray; zoom:70%;">
+
+4. A notification is displayed to the supervisor. Supervisors can manage the notifications [Learn more](../console/manage-layout.md#notifications).  
+    <img src="../images/agents-page.png" alt="Supervisor Notification" title="Supervisor Notification" style="border: 1px solid gray; zoom:70%;">
+
+5. The Internal Chat window appears after accepting the agent’s request. The supervisor can support the agent on the internal chat.  
+    <img src="../images/supervisor-internal-chat.png" alt="Supervisor Internal Chat" title="Supervisor Internal Chat" style="border: 1px solid gray; zoom:70%;">
 
 ## Real Time Sentiment Capture
 

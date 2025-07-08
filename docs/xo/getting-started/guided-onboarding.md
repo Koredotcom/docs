@@ -19,7 +19,7 @@ After signing up, users are guided through the onboarding process as follows:
 
         If you want to add FAQs and upload documents for Answers generation, see the [best practices guide](./best-practices-faq-and-answer.md).        
 
-6. At the end of the journey, your app will be ready. **Finish and jump into XO**.  
+6. At the end of the journey, your app will be ready. **Launch Platform**.  
 <img src="../images/accplatform(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 **Related Links**

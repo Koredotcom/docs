@@ -136,5 +136,4 @@ The image below provides a high-level understanding of AI for Service capabiliti
 
 * [What's New in AI for Service (XO) v11](./whats-new-in-xo-platform.md)
 * [Key Differences Between v11 and v10](./key-differences-between-xo11-and-xo10.md)
-* [Current Limitations](../release-notes/current-limitations.md)
 * [Upgrade Journey: Migration Path for Existing Customers](./whats-new-in-xo-platform.md#migration-path-for-existing-customers-upgrade-journey)

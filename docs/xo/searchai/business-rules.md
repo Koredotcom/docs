@@ -23,7 +23,7 @@ Search AI allows you to define **Contextual Rules** that use the context informa
 Search AI offers a dedicated interface for managing business rules, allowing users to organize, monitor, and adjust rules as needed. You can manage the rules from the **Business Rules** page under the **Configuration** tab. 
 
 
-![Business Rules](../images/businessrules/home.png "business rules")
+![Business Rules](images/businessrules/home.png "business rules")
 
 
 If there are any existing rules, those rules are listed here on this page. 
@@ -32,12 +32,12 @@ If there are any existing rules, those rules are listed here on this page.
 
 Click the **+Contextual Rule** button to add a new rule. 
 
-![Add Business Rules](../images/businessrules/add-rule.png "Add business rules")
+![Add Business Rules](images/businessrules/add-rule.png "Add business rules")
 
 
 Defining a business rule involves specifying the **conditions** to trigger the rule and the **outcome** of the rule if the conditions are met.
 
-![New Business Rules](../images/businessrules/new-rule.png "New business rules")
+![New Business Rules](images/businessrules/new-rule.png "New business rules")
 
 Enter a **name** for the rule. 
 
@@ -85,10 +85,10 @@ The **Action** field can take the following values:
 
 Use the **Response** section to describe the set of results on which the Action is to be taken. This can be defined using any of the chunk fields and their corresponding values. For example, to take action on all the chunks where Chunk Title has the keyword ‘Confidential’, set the response parameters as: 
 
-![Response](../images/businessrules/response.png "Response Parameter")
+![Response](images/businessrules/response.png "Response Parameter")
 
 
-You can see the list of available chunk fields from the [Chunk Browser.](/xo/searchai/chunk-browser/#view-chunk-details) 
+You can see the list of available chunk fields from the [Chunk Browser.](chunk-browser.md) 
 
 **Sample Business Rule**
 
@@ -97,7 +97,7 @@ Consider that you want to control the access of certain information to only mana
 
 
 
-![Example](../images/businessrules/add-rule-example.png "Sample Business Rule")
+![Example](images/businessrules/add-rule-example.png "Sample Business Rule")
 
 
 !!! Note
@@ -105,14 +105,14 @@ Consider that you want to control the access of certain information to only mana
     * You can add any number of conditions to define the criteria for triggering the business rule. A logical AND operation is performed on the conditions defined. This implies that the business rule is triggered only when all the specified conditions are satisfied. 
     * You can add any number of outcomes as part of the business rule. A logical AND operation is performed on the outcomes defined. This implies that all the outcomes are applied when a business rule is triggered. 
     * The values provided in both the condition and outcome are case sensitive and work on entire word matching. For example, if the response is set as shown below, it will only affect chunks where title has the complete word in camel case as “Confidential” and will not work if it contains “confidential” or “confidentially”.
-    ![Response](../images/businessrules/response.png "Response Parameter")
+    ![Response](images/businessrules/response.png "Response Parameter")
 
 
 ## Activating /Deactivating a Business Rule
 
 Deactivating a business rule temporarily disables the rule. When a rule is disabled, it does not affect the answers in any way. To deactivate a rule, go to the list of rules and use the slider button to change the status. 
 
-![Disable Rule](../images/businessrules/disable-rule.png "Disable Rule")
+![Disable Rule](images/businessrules/disable-rule.png "Disable Rule")
 
 
 
@@ -126,4 +126,4 @@ To edit an existing rule, go to the list of rules under _Business Rules_ and sel
 To delete an existing rule, go to the details view of the rule and click the **Delete** button. 
 
 
-![Delete Rule](../images/businessrules/delete-rule.png "Delete Rule")
+![Delete Rule](images/businessrules/delete-rule.png "Delete Rule")
