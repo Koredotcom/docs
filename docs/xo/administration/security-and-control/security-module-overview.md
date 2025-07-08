@@ -24,9 +24,9 @@ BYOK allows enterprises to use their own **Customer Master Keys (CMKs)** to encr
 
 Steps to avail BYOK encryption:
 
-1. In the **Admin Console**, go to the **Enterprise Key** menu and click **Create Key **under** Bring Your Own Key**.
+1. In the **Admin Console**, go to the **Enterprise Key** menu and click **Create Key** under **Bring Your Own Key**.
 2. Select the Cloud Provider from the dropdown and enter the ARN or Key Vault URL of the **Customer Master Key (CMK)**.
-3. Enter the **Role ARN key/Tenant ID** depending on the cloud provider.
+3. Enter the **Role ARN key/Tenant ID** based on your cloud provider.
 4. Select an **Enforcement Date**. This is the date data will be encrypted using the provided customer key (CMK).  
 5. Once entered, users will be asked to **TEST** **Connection**.
 6. If the test is successful, the **NEXT** button will be enabled.  

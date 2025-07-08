@@ -792,6 +792,7 @@ nav:
         - Import User Data: administration/enrollment/importing-users-and-user-data.md
         - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
       - Security and Control:
+        - Security and Control Module Overview: administration/security-and-control/security-module-overview.md
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md
