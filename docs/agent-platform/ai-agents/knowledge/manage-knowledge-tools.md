@@ -37,7 +37,8 @@ This is used when linking the agentic application to a pre-existing Search AI ap
 
 **Steps**
 
-* On the **Knowledge** page, provide the configuration details of the Knowledge Tool.
+* Provide the configuration details of the Knowledge Tool.
+
   * **Knowledge Base Name** - Unique name used to identify the knowledge tool in the agentic application.
   * **Description** - A brief summary of the type of content included. This helps the agents understand when to use this knowledge base to retrieve information.
   * **Knowledge Sources** - Click **Link Knowledge Source** to view all the Search AI applications in the same workspace as that of the Agentic App which are accessible.

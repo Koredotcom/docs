@@ -19,13 +19,14 @@ The External Agents connected in the Agent platform must adhere to the Kore Agen
 
 Go to the app's **Overview** page. Click the edit icon at the top right of the App Profile section and enable **External Agents** as shown below. 
 
-![Enable External Agent](images/externalagents/enable-externalagent.png "Enable External Agent")
+![Enable External Agent](images/externalagents/enable-agent.png "Enable External Agent")
 
 ### Configuring the External Agent
 
-To configure an external agent, create a new agent in your Agentic app. Go to the **Agent Profile** page and under Advanced Settings, click on Connect with External Agent.
+To configure an external agent, create a new agent in your Agentic app. Go to the agent's Profile page and under Advanced Settings, enable External Agent and click on **Connect with External Agent** to configure it. 
 
-   <img src="../images/connect-with-external-agent.png" alt="Connect with External Agent" title="Connect with External Agent" style="border: 1px solid gray; zoom:80%;">
+![Enable External Agent](images/externalagents/enable-connection.png "Enable External Agent")
+
 
 Provide the following configuration details for the external agent and click **Save**.
 
@@ -40,9 +41,7 @@ Provide the following configuration details for the external agent and click **S
 
 Click on the Test button to initiate a sample request to the external agents and verify the connection and response format. 
 
-* **Asynchronous Integration** - This property specifies whether the response expected from the external agent is synchronous or asynchronous. If this field is enabled, the proxy agent shows a URL that can be used as a callback URL from the external agent.
 * **Timeout** - This property specifies the maximum duration (in seconds) the proxy agent will wait for a response from the external agent. If a response is not received within this specified time, the request is considered to have failed due to a timeout error.
-* **Debug Logs** - Click on View full debug logs to see the logs for the communication between the proxy agent and the external agent.
 
 ## Key Characteristics of the Proxy Agent
 
@@ -87,7 +86,7 @@ Following is the format of the request object sent from the Proxy agent to the e
   "stream": {           // Optional
     "enable": "string",
     "streamMode": "string" // Enum: "token" | "messages"
-  },
+  }
 }
 ```
 
@@ -96,9 +95,10 @@ Following is the format of the request object sent from the Proxy agent to the e
 * debug: This field enables debug mode in the external agent. Set the ‘enable’ field to true and debugMode to “thoughts”. If debugging is enabled, the response from the external agent is expected to include debug information. 
 * Stream: This field enables the streaming of the response from the external agent. Set the ‘enable’ field to true and set streamMode to one of the following: token or messages. The ‘streamMode’ refers to how **AI-generated responses are streamed back to the user**.
     * Token - Streams output **token-by-token**
-    * Messages - Streams **complete message chunks**.
+    * Messages - Streams **complete message chunks**. 
+    **Currently, only messages are supported.** 
 
-**Currently, only messages are supported.** 
+Learn More about the fields [here](../apis/agentic-apps/execute.md). 
 
 ### Response Format
 
