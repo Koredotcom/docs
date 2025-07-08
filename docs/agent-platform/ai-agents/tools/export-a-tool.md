@@ -24,18 +24,18 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. [Sign in](https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/){:target="_blank"} to your Agent Platform account. To enable and sign in via SSO, click [here](https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/){:target="_blank"}.
-2. Click **Tools** on the top menu.
-3. Select the relevant tab to view the tool.
-4. Click the required tool’s name to proceed further.
-5. Click **Configurations** on the left navigation menu.
-6. Scroll down to the **Export tool** section. By default, the currently deployed version is selected in the dropdown.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+2. Click the **Tools** tab on the top navigation bar, and select the tool you want to export. The Tool flow page is displayed. 
+3. Click **Configurations** on the left navigation menu.
+4. Scroll down to the **Export tool** section. By default, the currently deployed version is selected in the dropdown.
 <img src="../images/export-agent.png" alt="export agent" title="export agent" style="border: 1px solid gray; zoom:75%;">
 
-7. To change, click and choose another version from the list.
+5. To change, click and choose another version from the list.
 <img src="../images/choose-another-version.png" alt="change version" title="change version" style="border: 1px solid gray; zoom:75%;">
 
-8. Click the **Export** button.
+6. Click the **Export** button.
 
 The export process begins, and a success message is displayed after the tool validation is completed and the export process finishes.
 

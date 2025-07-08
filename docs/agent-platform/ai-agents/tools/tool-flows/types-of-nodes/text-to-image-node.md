@@ -65,19 +65,22 @@ To add and configure the node, follow the steps below:
 <p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a>.</p>
 </div>
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed.
-<img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.     
+2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
+   <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+
+3. Click **Go to flow** to edit the in-development version of the flow.     
 <img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;"> 
 
 
-3. In the flow builder, click the **+** icon for **Text to Image** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Text to Image**.
+4. In the flow builder, click the **+** icon for **Text to Image** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Text to Image**.
 <img src="../images/text-to-image-add-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;"> 
 
-4. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed. 
+5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed. 
 
-5. Enter or select the following **General Settings**:
+6. Enter or select the following **General Settings**:
 
     * **Node Name**: Enter an appropriate name for the node. For example, “*Christmasgreeting*.”
     * **Select Model**: Select the required variant of the Stable Diffusion model.
@@ -100,7 +103,7 @@ To add and configure the node, follow the steps below:
   </div>
 
 
-<ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</li>
+<ol start="7"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</li>
 <img src="../images/connection-text-to-image.png" alt="click connections" title="click connections" style="border: 1px solid gray; zoom:75%;"></ol>
 
 <ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
@@ -112,7 +115,7 @@ For the configured inputs, the following image is generated.
 <img src="../images/node-output-image.png" alt="output image" title="output image" style="border: 1px solid gray; zoom:75%;">
 </ul>
 
-<ol start="7"><li>Finally, <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol> 
+<ol start="8"><li>Finally, <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/#step-3-run-the-flow" target="_blank">Test the flow</a> and fix any issues found.</li></ol> 
 
 ## Configure and Test the Flow for the Node
 

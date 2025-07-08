@@ -119,11 +119,14 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 To access the **Settings** Console on Agent Platform, follow the steps below:
 
-1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to Agent Platform using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 
-The system redirects to the **Users** page under **Users Management** on the **Settings** console.
+   The system redirects to the **Users** page under **Users Management**.
+
+   <img src="../images/access-settings-menu.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
 ## Modules and Features
 

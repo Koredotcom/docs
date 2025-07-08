@@ -1,17 +1,18 @@
 # Import Agentic Apps
 
 The Agentic App Import feature enables users to transfer complete application configurations between environments. This capability facilitates the reuse, sharing, and version management of agentic applications.
+The agentic app import feature enables users to transfer complete application configurations between environments. This feature facilitates reuse, sharing, and [version management](deployment/app-deployment.md#version-management){:target="_blank"} of agentic applications.
 
 ## Prerequisites
 
-* The Apps and agents can be imported from the JSON files in a standard format. 
+* You can import the apps and agents from the JSON files. 
 * The user must have import permissions. 
 * Currently, imports can be done only into existing applications. To import an app, create a new app and use the import option to overwrite the app's configuration.  
 
 
 ## Steps to Import Apps and Agents
 
-To import Agentic Apps or agents in an agentic app, take the following steps. 
+To import apps or agents into an agentic app, follow these steps. 
 
 * Go to the **Export/Import** page under the **Deploy** section of the newly created app. 
 * Go to the **Import** tab. 

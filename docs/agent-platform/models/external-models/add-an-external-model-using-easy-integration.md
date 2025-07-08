@@ -46,7 +46,7 @@ You can easily connect Amazon Bedrock models to the Agent Platform using a guide
 
 !!! important
 
-    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS system (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Kore Agent Platform’s AWS principal (or a designated IAM role in a Kore AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md).
+    Customers must create an IAM role within their AWS account with the necessary permissions in their AWS account (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Kore Agent Platform’s AWS principal (or a designated IAM role in a Kore AWS account) to assume it. For more information, see [Configuring Amazon Bedrock models](./configuring-aws.md){:target="_blank"}.
 
 
 Steps to add Amazon Bedrock models using easy integration:
@@ -69,8 +69,7 @@ In the AWS Bedrock dialog, configure the following:
 * **Credentials**: 
     * **Identity Access Management (IAM) Role ARN**: Enter the full ARN of your IAM role that has permission to invoke Amazon Bedrock models. This role allows secure cross-account access following least-privilege principles.  
     For more information, see [Setting Up Credentials and Trust Policy (IAM Role & STS)](./configuring-aws.md#step-1-setting-up-credentials-and-trust-policy-iam-role--sts).
-    * **Amazon STS Link**: Provide the STS endpoint URL for the region where the IAM role resides.
-    * **Trusted Principal ARN (Kore Platform)**: Use the ARN provided by Kore to allow the platform to assume your role.
+    * **Trusted Principal ARN (Kore Platform)**: The ARN of the AWS IAM principal (from the Kore Platform) used to assume your IAM role. It’s pre-populated, read-only, and fetched securely — manual input is not required.
 
 * **Model Details**: 
     * **Model name:** Enter a custom name to identify this model internally within your workflows.
@@ -80,7 +79,7 @@ In the AWS Bedrock dialog, configure the following:
 * **Headers (Optional)**: Provide any additional information to include with the HTTP request. Use this if your model requires custom headers for configuration or authentication.  
 For example: "Content-Type": "application/json"
 
-* **Variables (Optional):** Define the input variables that will be used within your request payload. These are used to bind dynamic input values to your payload structure.  
+* **Variables:** In the Prompt Variables section, define any input variables that will be used within your request payload. These are used to bind dynamic input values to your payload structure.  
 For example: {{prompt}}, {{system.prompt}}
 
 * **Body**: Provide a sample JSON request body for invoking the model. Use the defined variable placeholders {{variableName}} (such as {{prompt}})  to bind input fields dynamically.
@@ -94,9 +93,9 @@ For example:
       }
       ```
 
-      **Note:** The structure of the request body should follow the model-specific API schema. Use only supported parameters for the selected Amazon Bedrock model.
+    **Note**: The structure of the request body should follow the model-specific API schema. Use only supported parameters for the selected Amazon Bedrock model.
 
-<font size="4">**3. Testing the Configuration**</font> 
+<font size="4">**3. Test the Configuration**</font> 
 
 * **Test Response**: Provide sample values for your variables and click **Test** to invoke the model and preview the response.
 * **Configure JSON Path**: Define JSON paths to extract relevant output fields (for example, response text, token usage) from the model response.

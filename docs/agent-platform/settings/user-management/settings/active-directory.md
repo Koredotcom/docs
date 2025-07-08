@@ -18,11 +18,15 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 ## Steps to Configure AD Sync 
 
-1. Navigate to **Users Management** > **Settings** on the **Settings** console.
-2. Click the **Configure Directory** button in the **Configure sync with directory** section.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="nav user" title="nav user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
+3. Navigate to **Users Management** > **Settings** on the left menu.
+4. Click the **Configure Directory** button in the **Configure sync with directory** section.
 <img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
 
-3. Complete the setup by following the steps below in the **Configure Directory** window:
+5. Complete the setup by following the steps below in the **Configure Directory** window:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

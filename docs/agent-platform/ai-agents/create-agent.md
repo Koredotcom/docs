@@ -3,7 +3,22 @@
 Setting up an agent involves defining its intended purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to govern its actions within specified boundaries.
 
 
-<img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 0px solid gray; zoom:65%;">
+<img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 1px solid gray; zoom:65%;">
+
+## Agents Page
+
+The **Agents** page displays all agents associated with the Agentic app as individual cards, providing clear visibility into each agent's connected tools and configuration status. It shows the total number of agents in the app.
+
+Key highlights
+
+* Each agent card shows the connected tools with identifiable icons.
+* Highlights **Proxy Agents** with an external icon and hover tooltips revealing connected apps.
+* Agents needing LLM configuration show a **Configure LLM** button for quick setup.
+* Displays the total agent count in the page header, with **Explore Marketplace** and **New Agent** options always visible.
+
+<img src="../images/agents-listing-page.png" alt="Agent Listing Page" title="Agent Listing Page" style="zoom:70%; border: 1px solid gray;">
+
+## Create an Agent
 
 To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. 
 

@@ -8,13 +8,13 @@ Setting up an API node in a tool flow involves adding the node at the appropriat
 
 Steps to add and configure the node:
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool Flow page is displayed. 
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.
-
-3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, drag the **API** node from the Assets panel onto the canvas.)
-
-4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed. 
+3. Click **Go to flow** to edit the in-development version of the flow.
+4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, drag the **API** node from the Assets panel onto the canvas.)
+5. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="./../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:60%;">
 
 **General Settings**

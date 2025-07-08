@@ -23,19 +23,22 @@ To add and configure the node, follow the steps below:
 <p>Before proceeding, you must add an external LLM to your account using either <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="https://docs.kore.ai/agent-platform/core-ai/models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API integration</a></p>
 </div>
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed.
-<img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.
+2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
+   <img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;">
+
+3. Click **Go to flow** to edit the in-development version of the flow.
 <img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;">   
 
-3. In the flow builder, click the **+** icon for **Image to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Image to text**.
+4. In the flow builder, click the **+** icon for **Image to Text** under **AI** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **AI** in the pop-up menu and click **Image to text**.
 <img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 1px solid gray; zoom:75%;">
 
-4. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
+5. Click the added node to open its properties dialog box. The **General Settings** for the node are displayed.
 <img src="../images/properties-panel-open.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;">
 
-5. Enter or select the following **General Settings**:
+6. Enter or select the following **General Settings**:
 
 <ul><li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”</li>
 <li>Select a model from the list of configured models.</li></ul>
@@ -63,7 +66,7 @@ To add and configure the node, follow the steps below:
     If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.  
     For more information about how the model parses the response and separates keys from the content body, see: [Structured Response Parsing and Context Sharing in Workflows](../perform-other-actions-on-the-flow-builder/model_response_parsing.md){:target="_blank"}.
 
-<ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
+<ol start="7"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
 <img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;"></li>
 <ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.</li></ul>

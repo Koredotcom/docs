@@ -4,13 +4,18 @@ You can generate an API key for a tool and share it with trusted users to enable
 
 Steps to create an API key for your tool:
 
-1.	Navigate to the **Tools** page and click **API keys** in the left panel.  
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+2. Click the **Tools** tab on the top navigation bar, and select the required tool from the list. 
+
+3. Click **API keys** in the left panel.  
 <img src="../images/create-new-api-key.png" alt="Create new API Key" title="Create new API Key" style="border: 1px solid gray; zoom:80%;">
 
-2. Click the **Create a new API** key button. The Create new API key dialog is displayed.  
+4. Click the **Create a new API** key button. The Create new API key dialog is displayed.  
 <img src="../images/generate-new-api-key.png" alt="Generate new API Key" title="Generate new API Key" style="border: 1px solid gray; zoom:60%;">
 
-3. Provide a descriptive name for the key and click **Generate key**. The newly generated API key is displayed in the dialog. Click **Copy and close** to save the key to your clipboard. You can now share this key with authorized users as needed.  
+5. Provide a descriptive name for the key and click **Generate key**. The newly generated API key is displayed in the dialog. Click **Copy and close** to save the key to your clipboard. You can now share this key with authorized users as needed.  
 <img src="../images/copy-and-close-api-key.png" alt="Copy and Close API Key" title="Copy and Close API Key" style="border: 1px solid gray; zoom:60%;">
 
     !!! note

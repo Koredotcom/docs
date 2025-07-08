@@ -92,7 +92,7 @@ To access the **Settings** Console on GALE, follow the steps below:
 
 1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials. To enable and sign in using SSO, click [here](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 <img src="../images/settings-menu.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
 
 The system redirects to the **Users** page under **Users Management** on the **Settings** console.

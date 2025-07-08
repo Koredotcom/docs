@@ -110,8 +110,13 @@ The supported models and their variants are given below:
 </tr>
    <td><strong>Amazon</strong>
    </td>
-   <td>amazon/MistralLite
-   </td>
+   <td>
+   <ul>
+
+<li>amazon/MistralLite</li>
+
+</ul>
+</td>
   </tr>
   <tr>
    <td><strong>Argilla</strong>
@@ -207,8 +212,12 @@ The supported models and their variants are given below:
   <tr>
    <td><strong>Helsinki-nlp</strong>
    </td>
-   <td>Helsinki-NLP/opus-mt-es-en
-   </td>
+   <td>
+   <ul>
+<li>Helsinki-NLP/opus-mt-es-en</li>
+
+</ul>
+</td>
   </tr>
   <tr>
    <td><strong>Huggingfaceh4</strong>
@@ -297,7 +306,10 @@ The supported models and their variants are given below:
   <tr>
    <td><strong>OpenAI</strong>
    </td>
-   <td>GPT2
+   <td>
+   <ul>
+<li>GPT2</li>
+</ul>
    </td>
   </tr>
   <tr>
@@ -320,17 +332,14 @@ The supported models and their variants are given below:
    <td>
 <ul>
 
-
 <li>stabilityai/stable-diffusion-xl-base-1.0</li>
 
 <li>stabilityai/stable-diffusion-2-1</li>
 
-<li>stable-diffusion-v1-5/stable-diffusion-v1-5
+<li>stable-diffusion-v1-5/stable-diffusion-v1-5</li>  
 
-<p>
-<strong>Note</strong>: </li>
-<li>Stable Diffusion is not available in the Prompt Studio.</li>
-<li>This variant is allowed only in the text-to-image node and no other node.</li>
+(Available only in the text-to-image node, No Prompt Studio support.)
+
 </ul>
    </td>
   </tr>
@@ -409,7 +418,11 @@ Here is the list of all the external models supported in Agent Platform:
 
 <li>claude-3-5-haiku-20241022</li>
 
-<li>Claude Sonnet Vision (Available only for the<strong> Image-to-tex</strong>t node, No <strong>Prompt Studio</strong> support).</li>
+<li>claude-sonnet-4-20250514</li>
+
+<li>claude-opus-4-20250514</li>
+
+<li>Claude Sonnet Vision (Available only for the Image-to-text node, No Prompt Studio support.)</li>
 </ul>
    </td>
   </tr>
@@ -426,6 +439,12 @@ Here is the list of all the external models supported in Agent Platform:
 <li>GPT-4o-Mini</li>
 
 <li>GPT-4o</li>
+
+<li>GPT-4.1</li>
+
+<li>GPT-4.1-mini</li>
+
+<li>GPT-4.5-preview</li>
 
 <li>O1-Mini</li>
 
@@ -462,6 +481,13 @@ Here is the list of all the external models supported in Agent Platform:
 <li>gemini-1.5-pro</li>
 
 <li>gemini-1.0-pro</li>
+
+<li>gemini-2.0-flash</li>
+
+<li>gemini-2.0-flashlite</li>
+
+<li>gemini-2.5-flash-preview-05-20</li>
+
 </ul>
    </td>
   </tr>
@@ -505,7 +531,7 @@ Here is the list of all the external models supported in Agent Platform:
 
 <li>Whisper-1</li>
 
-<li>Whisper (Available only for the <strong>Audio-to-text</strong> node, No <strong>Prompt Studio</strong> support.)</li>
+<li>Whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
 </ul>
    </td>
   </tr>

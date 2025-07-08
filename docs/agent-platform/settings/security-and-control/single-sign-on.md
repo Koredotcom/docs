@@ -69,9 +69,11 @@ Agent Platform supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your Agent Platform account.
-2. Click **Settings** on the top menu.
-3. Go to **Security & Control** > **Single Sign On** on the left navigation menu.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Settings** on the top navigation bar.
+3. Go to **Security & Control** > **Single Sign On** on the left menu.
 
 If you’re using this feature for the first time, the following screen appears.
 

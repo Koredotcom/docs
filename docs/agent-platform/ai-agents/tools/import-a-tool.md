@@ -30,12 +30,14 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 
 To initiate a tool creation journey through the import functionality, follow the steps below:
 
-1. [Sign in](../../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
-2. Click **Tools** on the top menu.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+2. Click the **Tools** tab on the top navigation bar.
 3. Do one of the following based on your requirements:
 
 <ul><li>If you don't have any existing tools and want to create one by importing from another environment, click <b>Import Tool</b>.
-<img src="../images/agent_platform/tools_landing.png" alt="import tool" title="import tool" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/agent_platform/import_tool.png" alt="import tool" title="import tool" style="border: 1px solid gray; zoom:75%;"></li>
 <li>If you already have tools deployed, the following page is displayed. To import a tool, select the relevant tab on the <b>Tools</b> dashboard and click the <b>Import tool</b> icon.
 <img src="../images/agent_platform/import_tool.png" alt="click import tool" title="click import tool" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
@@ -94,14 +96,15 @@ When you import an tool as a version, you must upload all the following files:
 
 To import a tool as a version, follow the steps below:
 
-1. [Sign in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
-2. Click **Tools** on the top menu.
-3. Click the tool in the listing to proceed further.
-4. Click **Configurations** on the left menu.
-5. Scroll down to the **Import tool** section and click **Import**.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+
+2. Click the **Tools** tab on the top navigation bar, and select the tool you want to import. 
+3. Click **Configurations** on the left menu.
+4. Scroll down to the **Import tool** section and click **Import**.
     <img src="../images/agent_platform/import_tool_config.png" alt="import tool configuration" title="import tool configuration" style="border: 1px solid gray; zoom:75%;">
 
-6. (Optional) In the following dialog, select the **Back up your current tool** option to preserve the data of the version being replaced.
+5. (Optional) In the following dialog, select the **Back up your current tool** option to preserve the data of the version being replaced.
 
     <img src="../images/agent_platform/backup_tool.png" alt="import confirmation" title="import confirmation" style="border: 1px solid gray; zoom:75%;">
 
@@ -111,7 +114,7 @@ To import a tool as a version, follow the steps below:
 
 If you choose not to back up/export the tool configurations, unselect the back-up option and proceed to the next step.
 
-<ol start="7"><li>Click <b>Import</b> in the confirmation dialog.</li>
+<ol start="6"><li>Click <b>Import</b> in the confirmation dialog.</li>
 <li>In the <b>Import Tool</b> window, upload the required JSON files and click <b>Import</b>.</li></ol>
 
 <div class="admonition note">

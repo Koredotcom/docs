@@ -2,6 +2,72 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.8 July 3, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Simplified App Creation Process**
+
+The Agent Platform has simplified the app creation process, making it faster and more user-friendly. Users can set up apps with fewer configurations upfront that capture only the essential information. This enhancement reduces the setup time and improves the overall onboarding experience.  
+
+**Updates to Agent Protocol**
+
+The Agent Platform now supports a **Universal Session Closure** API for consistent and reliable session management. It enables seamless session termination across integrations, addressing issues such as orphaned sessions and incomplete closures and ensuring a unified approach to managing session lifecycles.
+
+**Enhanced Document Upload Feature**
+
+The Document Upload feature has been enhanced to provide a smoother and more intuitive experience for sharing files in conversations. Users now benefit from more explicit error messages, a visual loading indicator during uploads, and better enforcement of upload restrictions.
+
+* Single File Upload Enforcement: The platform now allows only one file upload at a time, removing multi-file selection to align with one-at-a-time processing logic.
+* Improved error handling: Users receive clear, actionable messages in the chat interface when uploads fail due to issues such as the document exceeding the configured token limit or the file type not being supported.
+
+
+**Enhancements to the Import Feature**
+
+The Import/Export interface for Agentic Apps now lists all components involved in the app and clearly distinguishes between agent-linked and unlinked components. The interface uses visual indicators, including color-coded badges for tool types and proxy agent markers, to improve clarity and navigation. Additionally, upfront validation ensures smoother and more accurate imports, preventing configuration issues.
+
+**User Interface Enhancements**
+
+The Agentic App UI has been improved for better usability and visual appeal. Updates include a new list view for the Memory page, randomized icons and colors for agents and tools, and enhanced workspace identifiers in the landing page, making navigation and collaboration more intuitive for the users.
+
+<font size="4">No-code and Pro-code Tools</font>
+
+**Expanded Debug Panel View**
+
+The Debug Log panel in the Tool Flow builder now supports a fully expanded view. Users can view all nodes aligned on the left and click on each node to inspect inputs, outputs, and metrics side by side. Linked tool calls are also visible for easier debugging and traceability.
+
+<font size="4">AI Engineering Tools</font>
+
+**Expanded Model Support**
+
+Support for a broader range of models has been added, offering greater flexibility in building and evaluating AI workflows. All models above are available in Agentic Apps, Prompt Studio, Tools, and Evaluation Studio.
+
+* Azure OpenAI models: Added support for GPT-4.1, GPT-4.1-Mini, and GPT-4.5 preview.
+* Gemini 2.0 and 2.5 models: Added support for `gemini-2.0-flash`, `gemini-2.0-flash-lite`, and `gemini-2.5-flash-preview-05-20`. 
+* Anthropic Claude 4 models \
+    Added support for `claude-sonnet-4-20250514` and `claude-opus-4-20250514`. 
+
+
+<font size="4">Observability</font>
+
+
+**Monitoring Custom Scripts Across Runs and Logs**
+
+The Monitoring module now allows administrators to track custom script executions across deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently.
+
+
+<font size="4">Bug Fixes</font>
+
+
+**Vulnerability Fixes in Flow Service**
+
+Addressed multiple security vulnerabilities for risks such as RCE, authentication bypass, DoS, and XML signature verification issues. 
+
+<hr>
 
 ## v1.0.7 June 20, 2025
 
@@ -13,43 +79,27 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Preferred Agent Support**
 
-The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
+The Agent Platform now supports direct agent invocation through the new Preferred Agent capability in the Agent Protocol. External systems consuming Apps or agents can now call specific agents directly, bypassing the supervisor routing layer for improved performance. 
 
-**Improved User Interface**
+[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
 
-The Agentic App interface has been redesigned to deliver a more consistent and informative user experience across all listing pages. These enhancements provide developers with essential information upfront, reducing navigation overhead and improving workflow efficiency.
-
-Key improvements
-
-* Enhanced listing pages - Consistent design across Agents, Tools, and Knowledge listings with comprehensive information displayed directly on list views.
-* Reduced navigation - Access critical details without drilling into individual items, streamlining the browsing experience.
-* Redesigned App Profile page - Improved layout and information architecture for better app overview and management.
-* Enhanced Configurations page - Optimized organization and presentation of configuration options. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
-
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-interface-overview.md)
-
-**Enhanced Playground Experience**
-
-The simulate feature in the Agent platform has been transformed into Playground, featuring enhanced capabilities. This new experience provides developers and testers with a robust environment for building, debugging, and validating agent behavior more effectively.
-
-Key features
-
-* Chat History: View and manage past sessions to track interactions over time.
-* Resume Sessions: Resume previous conversations from where they were left off.
-* Improved user interface: Intuitive interface updates, including the ability to easily copy messages.
-* Clear agent identification in thought streaming.
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-testing.md)
 
 **Import/Export Enhancements**
 
 The import/export feature now supports MCP server configurations and Memory Stores. This enhancement enables users to include these elements during import and export, simplifying migrations and reducing manual work for more comprehensive deployments across various environments.
-
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/export.md)
 
 
 **Typeahead Support for Memory Access**
 
-The Agent Platform now includes intelligent type-ahead functionality across Code Tool and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
+The Agent Platform now includes type-ahead functionality across Code Tools and prompt editors, providing developers with contextual suggestions while they write. This enhancement streamlines variable referencing and reduces common development errors.
+
+
+**Improved User Interface**
+
+The Agentic App interface has been redesigned for consistent, informative listings, displaying essential information upfront to reduce navigation. Enhancements include streamlined Agent, Tools, and Knowledge listings, as well as improved App Profile and Configuration pages.
+
+The Simulate feature has been transformed into Playground with enhanced debugging and testing capabilities, including chat history management and the ability to resume previous sessions. The new interface offers improved usability, featuring easy message copying and clear agent identification during thought streaming.
 
 
 <font size="4">No-code and Pro-code Tools</font>
@@ -75,20 +125,21 @@ The Code Tools design page has been redesigned to streamline development workflo
 
 Key improvements
 
-* Object parameter type - Accept structured JSON input alongside existing string and number types.
-* Side-by-side layout - View parameters, code editor, and output simultaneously without scrolling.
-* Enhanced usability - Streamlined interface reduces context switching and accelerates development cycles.
+* Object parameter type: Accept structured JSON input alongside existing string and number types.
+* Side-by-side layout: View parameters, code editor, and output simultaneously without scrolling.
+* Enhanced usability: Streamlined interface reduces context switching and accelerates development cycles.
+
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md)
 
 **MCP Tool Execution and Validation**
 
-The Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for full agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
+The Agent Platform now enables direct testing of MCP tools during the design phase. Previously, developers could only view MCP tool definitions and had to wait for complete agent execution to test functionality. This enhancement allows immediate tool validation with sample data once the MCP servers are configured.
 
 Key features
 
-* Direct tool execution - Test individual MCP tools immediately after configuration without creating full agents.
-* Dynamic input forms - Provide sample data through automatically generated parameter forms.
-* Real-time results - View execution output instantly.
+* Direct tool execution: Test individual MCP tools immediately after configuration without creating full agents.
+* Dynamic input forms: Provide sample data through automatically generated parameter forms.
+* Real-time results: View execution output instantly.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/configure-mcp-server.md)
 
@@ -96,7 +147,7 @@ Key features
 
 **AWS Bedrock Models Integration**
 
-Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to invoke the Bedrock models reliably.
+Agent Platform now offers secure connections to Amazon Bedrock-hosted models. This integration uses role-based authentication via IAM Role ARN, Model ARN, and custom endpoints. A guided setup form simplifies configuration with built-in validation and testing. The Platform seamlessly manages credential refreshing by assuming an AWS role and fetching temporary credentials through STS to reliably invoke the Bedrock models.
 
 Key benefits
 
@@ -106,12 +157,6 @@ Key benefits
 
 [Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-amazon-bedrock)
 
-**Export Evaluation Tables to CSV**
-
-Evaluation Studio now supports CSV export for evaluation tables from the three-dot menu, preserving all column data, scores, and footer metrics (e.g., pass%, fail%, avg, min, max).
-
-
-<font size="4">AI Safety, Security, and Governance</font>
 
 
 **Pre-authorize Integration using Basic Auth**
@@ -121,8 +166,13 @@ Agent Platform now supports Basic Authentication for pre-authorizing third-party
 Key benefits
 
 * Easy to implement using a secure API Key and Secret.
-* User-agnostic—it doesn’t maintain sessions or track user identity. Each request is treated independently.
+* User-agnostic - It doesn’t maintain sessions or track user identity. Each request is treated independently.
 * The same credentials remain valid until the connection expires, eliminating the need for re-authentication.
+
+
+**Export Evaluation Tables to CSV**
+
+Evaluation Studio now supports CSV export for evaluation tables from the three-dot menu, preserving all column data, scores, and footer metrics (e.g., pass%, fail%, avg, min, max).
 
 
 <font size="4">Other Improvements</font>
@@ -156,13 +206,7 @@ The Function node now allows admins to configure and execute custom functions us
 
 Note: By default, all arguments passed to the function are currently sent as '*string*'. If your function requires other data types, please handle the necessary conversions within your custom script. Support for input type validation and native data types will be available soon.
 
-
-
-
 <hr>
-
-
-
 
 ## v1.0.6 June 5, 2025
 

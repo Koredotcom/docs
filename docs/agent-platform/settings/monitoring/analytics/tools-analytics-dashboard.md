@@ -33,7 +33,7 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 To access the **Tools Analytics** dashboard, follow the steps below:
 
-1. Navigate to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Tools Analytics** tab on the right-hand side screen.
 <img src="../images/agents-analytics-tab.png" alt="tools analytics tab" title="tools analytics tab" style="border: 1px solid gray; zoom:75%;">
