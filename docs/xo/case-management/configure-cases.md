@@ -168,17 +168,15 @@ To create a new task template:
 
 4. On the **Add Fields** page, complete the following **additional fields** section to ensure agents provide specific information. You can also mark these fields as required or optional:
 
-Steps to add fields:
+    a. Click **+ Add Fields** to add **Custom** fields to the new task template.  
+    <img src="../images/edit-add-fields.png" alt="Custom" title="Custom" style="border: 1px solid gray; zoom:70%;">
 
-1. Click **+ Add Fields** to add **Custom** fields to the new task template.  
-<img src="../images/edit-add-fields.png" alt="Custom" title="Custom" style="border: 1px solid gray; zoom:70%;">
-
-    !!! Note
+    !!! note
 
         You must assign every task template to a default assignee; either a queue, an individual agent, or an agent group.
 
-2. Click **Create** to finalize the task template.  
-<img src="../images/add-fields-create.png" alt="Create" title="Create" style="border: 1px solid gray; zoom:70%;">
+    b. Click **Create** to finalize the task template.  
+    <img src="../images/add-fields-create.png" alt="Create" title="Create" style="border: 1px solid gray; zoom:70%;">
 
 ### Edit Task Templates
 
@@ -198,11 +196,11 @@ To edit a new task:
 ### Delete Task Templates
 
 To delete a task template, on the **Task Templates** page, click the three dots (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) icon to delete the custom task template and click **Delete**.  
-<img src="../images/delete-task-template.png" alt="Delete Task Template" title="Delete Task Template" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-task-template.png" alt="Delete Task Template" title="Delete Task Template" style="border: 1px solid gray; zoom:70%;"> 
 
-    !!! Note
+!!! Note
 
-        Only administrators can deactivate cases and restrict agent access to case types. You cannot delete any cases as this affects associated templates that are currently in use.
+    Only administrators can deactivate cases and restrict agent access to case types. You cannot delete any cases as this affects associated templates that are currently in use.
 
 ## Case Templates Configuration
 
@@ -367,7 +365,7 @@ To add a new status:
 
 ### Edit Status
 
-To edit or delete a custom status:
+To edit a custom status:
 
 1. On the **Status** page, click the three dots (<img src="../images/ellipsis-icon.png" style="zoom:50%;"></img>) icon to edit the existing status tasks.  
 <img src="../images/edit-status-edit.png" alt="Status" title="Status" style="border: 1px solid gray; zoom:70%;">
@@ -448,7 +446,7 @@ To edit custom priority cases:
 
 3. Click **Save**.
 
-### Delete Status
+### Delete Priority
 
 To delete the custom priority status of cases:
 
