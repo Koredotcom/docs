@@ -2,6 +2,73 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
+## v1.0.8 July 3, 2025
+
+<u> Minor Release </u>
+
+This update includes new features, enhancements, and bug fixes summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Simplified App Creation Process**
+
+The Agent Platform has simplified the app creation process, making it faster and more user-friendly. Users can set up apps with fewer configurations upfront that capture only the essential information. This enhancement reduces the setup time and improves the overall onboarding experience.  
+
+**Updates to Agent Protocol**
+
+The Agent Platform now supports a **Universal Session Closure** API for consistent and reliable session management. It enables seamless session termination across integrations, addressing issues such as orphaned sessions and incomplete closures and ensuring a unified approach to managing session lifecycles.
+
+**Enhanced Document Upload Feature**
+
+The Document Upload feature has been enhanced to provide a smoother and more intuitive experience for sharing files in conversations. Users now benefit from more explicit error messages, a visual loading indicator during uploads, and better enforcement of upload restrictions.
+
+* Single File Upload Enforcement: The platform now allows only one file upload at a time, removing multi-file selection to align with one-at-a-time processing logic.
+* Improved error handling: Users receive clear, actionable messages in the chat interface when uploads fail due to issues such as the document exceeding the configured token limit or the file type not being supported.
+
+
+**Enhancements to the Import Feature**
+
+The Import/Export interface for Agentic Apps now lists all components involved in the app and clearly distinguishes between agent-linked and unlinked components. The interface uses visual indicators, including color-coded badges for tool types and proxy agent markers, to improve clarity and navigation. Additionally, upfront validation ensures smoother and more accurate imports, preventing configuration issues.
+
+**User Interface Enhancements**
+
+The Agentic App UI has been improved for better usability and visual appeal. Updates include a new list view for the Memory page, randomized icons and colors for agents and tools, and enhanced workspace identifiers in the landing page, making navigation and collaboration more intuitive for the users.
+
+<font size="4">No-code and Pro-code Tools</font>
+
+**Expanded Debug Panel View**
+
+The Debug Log panel in the Tool Flow builder now supports a fully expanded view. Users can view all nodes aligned on the left and click on each node to inspect inputs, outputs, and metrics side by side. Linked tool calls are also visible for easier debugging and traceability.
+
+<font size="4">AI Engineering Tools</font>
+
+**Expanded Model Support**
+
+Support for a broader range of models has been added, offering greater flexibility in building and evaluating AI workflows. All models above are available in Agentic Apps, Prompt Studio, Tools, and Evaluation Studio.
+
+* Azure OpenAI models: Added support for GPT-4.1, GPT-4.1-Mini, and GPT-4.5 preview.
+* Gemini 2.0 and 2.5 models: Added support for `gemini-2.0-flash`, `gemini-2.0-flash-lite`, and `gemini-2.5-flash-preview-05-20`. 
+* Anthropic Claude 4 models \
+    Added support for `claude-sonnet-4-20250514` and `claude-opus-4-20250514`. 
+
+
+<font size="4">Observability</font>
+
+
+**Monitoring Custom Scripts Across Runs and Logs**
+
+The Monitoring module now allows administrators to track custom script executions across deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently.
+
+
+<font size="4">Bug Fixes</font>
+
+
+**Vulnerability Fixes in Flow Service**
+
+Addressed multiple security vulnerabilities for risks such as RCE, authentication bypass, DoS, and XML signature verification issues. 
+
+<hr>
+
 ## v1.0.7 June 20, 2025
 
 <u> Minor Release </u>
@@ -33,7 +100,6 @@ The Agent Platform now includes type-ahead functionality across Code Tools and p
 The Agentic App interface has been redesigned for consistent, informative listings, displaying essential information upfront to reduce navigation. Enhancements include streamlined Agent, Tools, and Knowledge listings, as well as improved App Profile and Configuration pages.
 
 The Simulate feature has been transformed into Playground with enhanced debugging and testing capabilities, including chat history management and the ability to resume previous sessions. The new interface offers improved usability, featuring easy message copying and clear agent identification during thought streaming.
-
 
 
 <font size="4">No-code and Pro-code Tools</font>
