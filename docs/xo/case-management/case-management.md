@@ -9,7 +9,7 @@ This document helps you to configure Case Management in the XO11 Platform to eff
 ## Process Flow
 
 This process flow outlines the systematic approach to managing customer service cases from initial creation through final resolution and analysis. Each step ensures efficient handling of customer issues while maintaining quality service standards.  
-<img src="../images/process-flow-diagram.png" alt="Process Flow" title="Process Flow" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/process-flow-diagram.png" alt="Process Flow" title="Process Flow" style="border: 1px solid gray;zoom:70%;"/>
 
 **Phase description:**
 
