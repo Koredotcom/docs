@@ -19,7 +19,7 @@ Before setting up API Agents, ensure your system meets the following requirement
 
 **API Requirements**:
 
-* Standard REST APIs with JSON response format.
+* Standard REST APIs with JSON response format from Systems of Records (SOR).
 * Maximum response limit of 500 records per API call.
 * Stable API endpoints with consistent data schema.
 
