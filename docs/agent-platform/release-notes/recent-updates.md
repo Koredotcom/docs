@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Kore.ai Agent Platform releases.
 
-## v1.0.8 July 3, 2025
+## v1.0.8 July 7, 2025
 
 <u> Minor Release </u>
 
@@ -46,7 +46,7 @@ The Debug Log panel in the Tool Flow builder now supports a fully expanded view.
 
 Support for a broader range of models has been added, offering greater flexibility in building and evaluating AI workflows. All models above are available in Agentic Apps, Prompt Studio, Tools, and Evaluation Studio.
 
-* Azure OpenAI models: Added support for GPT-4.1, GPT-4.1-Mini, and GPT-4.5 preview.
+* Azure OpenAI models: Added support for `GPT-4.1`, `GPT-4.1-Mini`, and `GPT-4.5 preview`.
 * Gemini 2.0 and 2.5 models: Added support for `gemini-2.0-flash`, `gemini-2.0-flash-lite`, and `gemini-2.5-flash-preview-05-20`. 
 * Anthropic Claude 4 models \
     Added support for `claude-sonnet-4-20250514` and `claude-opus-4-20250514`. 
