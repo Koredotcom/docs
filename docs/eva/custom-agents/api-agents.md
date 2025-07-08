@@ -3,7 +3,7 @@
 
 API Agents builder is a powerful feature that allows users to build API agents and integrate them with their legacy systems using APIs and a no-code builder. API agent enable business users to interact seamlessly with their data through natural language queries.
 
-## Key Features 
+## Key Features
 
 * **Easy Setup**: Users can create API agent through a step-by-step wizard in the admin console.
 * **Flexible Configuration**: The tool supports various API types, authentication methods, and data processing options.
@@ -13,10 +13,27 @@ API Agents builder is a powerful feature that allows users to build API agents a
 * **Preview and Testing**: Users can view processed data and test their configurations before publishing.
 * **Sharing Options**: Agents can be shared with specific users, groups, or the entire organization.
 
-!!! note
+## Pre-requisites
 
-    Currently, API agent can handle a maximum of 500 records per API response and support only standard REST APIs.
+Before setting up API Agents, ensure your system meets the following requirements:
 
+**API Requirements**:
+
+* Standard REST APIs with JSON response format.
+* Maximum response limit of 500 records per API call.
+* Stable API endpoints with consistent data schema.
+
+**System of Records**: API Agents are specifically designed for integration with Systems of Records (SOR) that contain structured business data. These systems typically include:
+
+* Customer Relationship Management (CRM) platforms.
+* Enterprise Resource Planning (ERP) systems.
+* Human Resources Information Systems (HRIS).
+* Database management systems with REST API access.
+* Business applications with well-defined data models.
+
+**Data Structure**: Your API responses should contain data that can be effectively represented in tabular format, with clear field definitions and consistent data types across records.
+
+**Authentication**: Ensure you have the necessary API credentials and authentication methods supported by your target system.
 
 ## Create a API Agent
 
