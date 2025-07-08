@@ -243,6 +243,14 @@ Once a file is added to the includeFiles list, it remains associated with the se
     "enable": false, // Setting to false for non-streaming response.
     "streamMode": "tokens" 
   },
+  "metadata": { //
+   "userProfile": { //custom data
+     "userId": "user123",
+     "preferences": {...}
+   },
+   "chatHistory": [...],
+   "sourceSystem": "MyApp"
+   },
   "isAsync": false // Setting to false for synchronous execution
 }
 ```
