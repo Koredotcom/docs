@@ -7,6 +7,12 @@ Agentic Apps support two main types of memory:
 * **Session Meta Memory**: Default temporary memory for contextual data within a session. This is a default read-only system memory and cannot be directly updated by users. 
 * **Custom Memory Stores**: Persistent, user-defined stores that can be read and written to using code tools. The lifetime of the memory store varies as per the access type assigned to the store during creation. 
 
+## Memory Page
+
+The Memory page displays session meta memory and custom memory stores as individual cards, offering clear visibility into each store’s details and access type. It integrates the new memory functionality into existing workflows and shows the total number of memory stores in the app.
+
+<img src="../images/memory-page.png" alt="Memory Interface" title="Memory Interface" style="zoom:70%;">
+
 
 ## Creating Memory Stores
 
