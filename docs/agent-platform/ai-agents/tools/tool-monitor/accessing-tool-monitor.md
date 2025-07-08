@@ -2,7 +2,9 @@
 
 Steps to access the tool monitor page:
 
-1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
+1. Log in to your Agent Platform account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+   
 2. On the top navigation bar, click **Tools**.
 3. On the **All tools** page, click the desired tool.  
 

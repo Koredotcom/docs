@@ -22,14 +22,14 @@ Steps to add and configure the node:
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. On the **Tools** tab, click the name of the tool to which you want to add the node. The Tool flow page is displayed. 
-
-3. Click **Go to flow** to edit the in-development version of the flow.
-4. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Condition** from the pop-up menu. (Alternatively, drag the **Condition** node from the Assets panel onto the canvas.)
-5. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+2. Click **Tools** on the top navigation bar.
+3. Select the name of the tool to which you want to add the node. The Tool flow page is displayed. 
+4. Click **Go to flow** to edit the in-development version of the flow.
+5. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Condition** from the pop-up menu. (Alternatively, drag the **Condition** node from the Assets panel onto the canvas.)
+6. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="./../images/condition-node-settings-to-be-filled.png" alt="Condition Node Settings" title="Condition Node Settings" style="border: 1px solid gray; zoom:60%;">
 
-6. Enter or select the following information:
+7. Enter or select the following information:
     
     * **Custom Name**: Enter an appropriate name for the node.
     * **If/Else Condition**: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Node, Context, or Value.
@@ -51,7 +51,7 @@ Steps to add and configure the node:
         6. In the **ELSE** section, select the node you want to trigger if the IF condition fails.  
         <img src="./../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
 
-<ol start="7"><li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.</li></ol>
+<ol start="8"><li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.</li></ol>
 
 !!! failure "Standard Error"
 

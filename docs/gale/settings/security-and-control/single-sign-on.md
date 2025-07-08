@@ -70,7 +70,7 @@ GALE supports SSO for the following protocols and providers:
 To access the SSO feature, follow the steps below:
 
 1. [Sign in](../../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to your GALE account.
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 3. Go to **Security & Control** > **Single Sign On** on the left navigation menu.
 
 If you’re using this feature for the first time, the following screen appears.

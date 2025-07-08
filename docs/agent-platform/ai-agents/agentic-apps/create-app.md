@@ -20,16 +20,20 @@ Key highlights
 
 ## Steps to Create an Agentic App
 
-Creating an Agentic App consists of the following steps: 
+Creating an Agentic App broadly consists of the following steps: 
 
 ![Create App](images/steps-app-creation.png "Agentic App Creation")
 
 ### Step 1: Create an Agentic App
 
-1. Click on the **+New App** on the **Agentic Apps** page. The Get Started wizard is displayed.  
-![Create App](images/create-app-pw.png "Agentic App Creation")
+1. Sign in to the [Agent platform](https://agent-platform.kore.ai/auth/login){:target="_blank"} and go to **Autonomous Agents**.![Create App](images/createapp/home.png "Agentic App Creation")
 
-2. Enter or select the following details:
+2. Click on the **+New App** on the **Agentic Apps** page. This page also lists the existing apps in the workspace.  
+![Create App](images/createapp/list-apps.png "Agentic App Creation")
+
+2. Enter or select the following details: 
+![Create App](images/createapp/create-app.png "Agentic App Creation")
+
 
     * **Name**: Provide a name for the app that reflects its core function.
     * **Icon**: Select an icon for the app.
@@ -37,8 +41,14 @@ Creating an Agentic App consists of the following steps:
     * **AI Model**: Choose an appropriate model for the application.
 
 3. Click **Create App**.  
-Once the app is created, a prompt is displayed with the following options: Skip Agent Setup or Continue. If you are ready to set up the agents, click **Continue** and follow the next step.   
+Once the app is created, the app **overview** is displayed. Move to the next steps of configuring agents and tools. 
 
+For a completely configured app, the **Overview** section provides a structured summary of the app, including linked agents, tools, and knowledge bases, organized into four sections for easy navigation and usability.
+
+* **App Summary** displays essential app details with an **Edit** option for configuration changes.
+* **The Agents** section shows the autonomous agents of the app. The list displays information about the agents associated with the app, including their name, description, and linked tools. 
+* **The Tools** section lists the different types of tools associated with the agents in the Agentic app.
+* **The Knowledge** section displays knowledge bases associated with the Agentic app.
 ---
 
 ### Step 2: Define or Set Up Agents

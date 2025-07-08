@@ -26,7 +26,7 @@ To access the feature, follow the step belows:
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 3. Click **Integrations** on the left navigation menu.
 <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 

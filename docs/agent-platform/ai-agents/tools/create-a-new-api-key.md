@@ -7,7 +7,7 @@ Steps to create an API key for your tool:
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
    <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click the **Tools** tab, and select the required tool from the list. 
+2. Click the **Tools** tab on the top navigation bar, and select the required tool from the list. 
 
 3. Click **API keys** in the left panel.  
 <img src="../images/create-new-api-key.png" alt="Create new API Key" title="Create new API Key" style="border: 1px solid gray; zoom:80%;">

@@ -1,45 +1,60 @@
 # Import Agentic Apps
 
-The Agentic App Import feature enables users to transfer complete application configurations between environments. This capability facilitates reuse, sharing, and version management of agentic applications.
+The Agentic App Import feature enables users to transfer complete application configurations between environments. This capability facilitates the reuse, sharing, and version management of agentic applications.
+The agentic app import feature enables users to transfer complete application configurations between environments. This feature facilitates reuse, sharing, and [version management](deployment/app-deployment.md#version-management){:target="_blank"} of agentic applications.
 
 ## Prerequisites
 
-* The Apps and agents can be imported from the JSON files in a standard format. 
+* You can import the apps and agents from the JSON files. 
 * The user must have import permissions. 
-* Currently, imports can be done only into existing applications. So to import an app, create a new app and use the import option to overwrite the app configuration.  
+* Currently, imports can be done only into existing applications. To import an app, create a new app and use the import option to overwrite the app's configuration.  
+
 
 ## Steps to Import Apps and Agents
 
-To import Agentic Apps or agents in an agentic app, take the following steps. 
+To import apps or agents into an agentic app, follow these steps. 
 
-* Go to the Export/Import page under the Deploy section of the app. 
-* Go to the Import Logs tab.
-* Click the Import button.
+* Go to the **Export/Import** page under the **Deploy** section of the newly created app. 
+* Go to the **Import** tab. 
+* Click the **Import** button and upload the JSON file from which the application is to be imported.  Note that the file size cannot exceed 5MB.
 
-    <img src="../images/import-agent.png" alt="Import Agent" title="Import Agent" style="border: 1px solid gray; zoom:80%;">
+![alt_text](images/import/import-app.png "image_tooltip")
 
-* Upload the config file to use for importing and click Proceed.
+* Upload the config file to use for importing and click Proceed. 
 
-    <img src="../images/config-files.png" alt="Config file for importing" title="Config file for importing" style="border: 0px solid gray; zoom:65%;">
+![alt_text](images/import/import-file.png "image_tooltip")
 
-* If the file format is correct and no errors are found, the application is configured using the JSON file.
+* Review the app components before importing. Upon uploading the file, the page shows a summary of all the agentic app components in the JSON file:
+    * Agentic App Summary - Name and Description of the app. 
+    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page will help differentiate between the three types of tools. Note that the workflow tools are not exported with the app exports. They need to be exported individually. Hence, during import, workflow tools must be explicitly linked to the corresponding tools after they are imported. 
+    * Tools - a list of tools not associated with any of the agents is listed separately under Tools. 
+    * Knowledge tools associated with an app.
+    * MCP servers: Servers configured in the app. 
+    * Events configured in the app.
+    * User-defined Memory store configurations. 
 
-!!! note
+![alt_text](images/import/import.png "image_tooltip")
 
-    Importing a configuration will overwrite all existing settings in the target application.
+* If the file format is correct and no errors are found, the application is configured using the JSON file. 
+**Note:** Importing a configuration will overwrite all existing settings in the target application.
+* The status of the import can also be seen under the Import tab. 
+* Review and validate the imported apps and their components.
+* If there are any missing configurations found in the uploaded files, they are highlighted as errors in red and should be corrected before importing the application. 
 
-* The status of the import can also be seen under the Import Logs. 
-* Review and validate the imported apps or agents. 
+![alt_text](images/import/import-errors.png "image_tooltip")
+
+* If there are any linked workflow tools, you need to manually import them to the new app first. Then, during the app import process, link the workflow tools in the app to the already imported tools. 
+
+![alt_text](images/import/link.png "image_tooltip")
+
+
 
 ### Key Considerations for Import
 
-* The target application must already exist.
-* Any existing app configurations will be **overwritten during import**.
+* The target application must already exist. 
+* Any existing app configurations will be **overwritten during the import process process**. 
 * The system attempts to import components in the following order: **tools**, **agents**, and then **application configuration**.
 * The config file cannot exceed 5MB in size.
 * If valid, the platform creates the application with all components.
-* If invalid, the platform displays an appropriate error message and aborts the import.
-
-### Rollback for Failed Imports
-
-* If any part of the application import fails, appropriate error messages are shown and the platform rolls back all changes. Any components, tools, or agents created in the process are removed. The application either completely imports the file or fails to import it at all.
+* If invalid, the platform displays appropriate error messages, and the import can be completed only after the errors are resolved.
+* Partial imports are not supported.

@@ -9,7 +9,7 @@ Steps to access the Usage page:
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 3. On the left navigation pane, click **Billing** > **Usage**.
 
 The **Usage** dashboard appears as shown below.

@@ -72,7 +72,7 @@ After fetching the Search AI application credentials, configuring the source, an
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top menu.
+2. Click **Settings** on the top navigation bar.
 3. Click **Integrations** on the left navigation menu.
 4. Scroll down to **Search AI** and click **Link an App**.
 <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
@@ -100,21 +100,22 @@ Setting up a DocSearch node in an tool flow involves adding the node at the appr
 
 **Steps to add and configure the node**
 
-1. On the **Tools** tab, click the name of the tool to which you want to add the node. The **Tool Flow** page is displayed.
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Go to flow** to edit the in-development version of the flow.
-
-3. In the flow builder, click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
+2. Click the **Tools** tab on the top navigation bar, and select the tool to which you want to add the node. The **Tool Flow** page is displayed.
+3. Click **Go to flow** to edit the in-development version of the flow.
+4. In the flow builder, click **DocSearch** -> **+ New DocSearch** on the **Assets** panel. Alternatively, click **DocSearch** in the bottom panel.
 <img src="./../images/add-docsearch-node.png" alt="add doc search node" title="add doc search node" style="border: 1px solid gray; zoom:75%;">
 
-4. To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
+5. To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
 
     <img src="./../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
 
 Alternatively, click the node and change the value for **Node Name** in the configuration panel.
 <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="5"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
+<ol start="6"><li>Add the input for the <b>Query</b> field to capture the user's search query. 
 <p>To accept dynamic inputs, either configure an input variable in the <b>Start</b> node or use the <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/#adding-input-variables" target="_blank">Manage Input Variables</a> feature.</p>
 
 <p>You can also add plain text for hard-coded inputs like "<i>What does the Mckinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."</p>
@@ -128,7 +129,7 @@ Alternatively, click the node and change the value for **Node Name** in the conf
 
 To set up a new connection, click **+ New Connection**. This will redirect you to the Agent Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md/#step-2-link-the-search-ai-app-in-gale){:target="_blank"} to complete the integration.
 
-<ol start="7"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
+<ol start="8"><li>(Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code. <a href="https://docs.kore.ai/xo/apis/searchai/answer-generation/#body-parameters" target="_blank">Learn more</a>.
 <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 <div class="admonition note">

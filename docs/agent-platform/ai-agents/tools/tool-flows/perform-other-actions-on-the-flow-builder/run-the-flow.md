@@ -16,15 +16,11 @@ The output includes key information such as the start and end times, the total t
 2. On the top of the Run dialog, click the **Debug** icon to open the **Debug** log.  
     The debug log starts showing the output results as the flow executes.
 
-
-    <img src="./../images/debug-icon.png" alt="Debug Icon" title="Debug Icon" style="border: 1px solid gray; zoom:80%;">
-
     
 3. View flow success or failure:
     * Successful Flow: If the flow completes successfully, you can copy the output results using the Copy icon. The overall runtime flow, showing the total execution time, is also displayed for reference.
     * Flow Errors: If errors occur, an error message will be displayed. Additionally, the output key will appear empty, and the output will be shown in JSON format, indicating a failure within the flow.  
 
-    <img src="./../images/error-in-the-debug-report.png" alt="Error in the Debug Report" title="Error in the Debug Report" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -47,6 +43,12 @@ The debug log shows the following key details:
     * **Executed On**: The timestamp for when the node execution was completed.
     * **Total Time Taken**: The time it took for the node to complete execution.
     * **Tokens**: The token usage during execution (available only for AI nodes).
+
+For deeper analysis, users can expand the debug panel to full screen. This mode provides a cleaner layout and makes it easier to analyze flow behavior.
+
+* All nodes are aligned to the left for readability.
+* Clicking on any node reveals its input, output, and metrics in a side-by-side format.
+* Linked tool call details (for AI nodes) are also available in the same panel.
 
 ## Time Metrics for API and AI Nodes
 

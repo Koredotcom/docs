@@ -3,7 +3,7 @@
 Endpoints for managing conversational sessions with your Agentic App.
 
 
-## **Create a Session**
+## Create a Session
 
 Establishes a new conversation session for a specific user with the Agentic App. 
 
@@ -220,7 +220,7 @@ This event provides a URL that the user must visit to complete the authorization
 
 
 
-## **List Sessions**
+## List Sessions
 
 Lists sessions for the selected app and environment. Supports optional filters such as session ID, user reference, and date range.
 
@@ -408,3 +408,124 @@ Lists sessions for the selected app and environment. Supports optional filters s
 }
 ```
 
+
+
+## Terminate Session
+
+Terminates a given session.
+
+
+<table>
+  <tr>
+   <td>Method
+   </td>
+   <td>POST
+   </td>
+  </tr>
+  <tr>
+   <td>Endpoint
+   </td>
+   <td>/apps/&lt;AppID>/environments/&lt;EnvName>/sessions/terminate
+   </td>
+  </tr>
+  <tr>
+   <td>Content-type 
+   </td>
+   <td>application/json
+   </td>
+  </tr>
+  <tr>
+   <td>Authorization Header
+   </td>
+   <td>x-api-key: &lt;API-KEY>
+   </td>
+  </tr>
+</table>
+
+
+
+### Path Parameters
+
+
+<table>
+  <tr>
+   <td>Fields
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>AppID
+   </td>
+   <td>Unique Identifier for the app. 
+   </td>
+  </tr>
+  <tr>
+   <td>EnvName
+   </td>
+   <td>The name of the environment in which the application will run.
+   </td>
+  </tr>
+</table>
+
+
+
+### Request Parameters
+
+
+<table>
+  <tr>
+   <td>Fields
+   </td>
+   <td>Description
+   </td>
+   <td>Mandatory
+   </td>
+  </tr>
+  <tr>
+   <td>sessionIdentity
+   </td>
+   <td>Provide the sessionReference or sessionId to uniquely identify the session to be terminated.
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+</table>
+
+
+
+#### Sample Request
+
+
+```json
+{
+   "sessionIdentity": [
+    {
+      "type": "string",  // ["sessionReference", "sessionId"]
+      "value": "s-1232123"
+    }
+  ]
+}
+```
+
+
+
+#### Sample Response
+
+```json
+{
+  "status": "terminated",
+  "userReference": "string",
+  "sessionReference": "string",
+  "userId": "string",
+  "sessionId": "string",
+  "appId": "string",
+  "attachments": [
+    {
+      "fileId": "string",
+      "fileName": "string",
+      "fileType": "string",
+    },
+  ]
+}
+```
