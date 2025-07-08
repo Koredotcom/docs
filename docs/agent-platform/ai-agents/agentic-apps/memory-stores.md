@@ -11,7 +11,7 @@ Agentic Apps support two main types of memory:
 
 The Memory page displays session meta memory and custom memory stores as individual cards, offering clear visibility into each store’s details and access type. It integrates the new memory functionality into existing workflows and shows the total number of memory stores in the app.
 
-<img src="../images/memory-page.png" alt="Memory Interface" title="Memory Interface" style="zoom:70%;">
+<img src="../images/memory-page.png" alt="Memory Interface" title="Memory Interface" style="border: 1px solid gray; style=zoom:70%;">
 
 
 ## Creating Memory Stores
