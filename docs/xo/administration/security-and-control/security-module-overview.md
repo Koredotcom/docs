@@ -50,7 +50,7 @@ Using this option you can define apps and associate API scopes for accessing var
 1. Use the **New** button to create a new app.
 2. Select **+Create App** option from App drop-down.
 3. Once you enter a name, a **Client ID** and **Client Secret** would be generated which can be used to access the platform
-4. For each app created the following API Scopes can be assigned as per requirement
+4. For each app created the following API Scopes can be assigned as per requirement:
     1. **IntentIdentification** includes the scopes for Intent and Entity Detection;
     2. **Bot Definition** includes the scopes for Bot Import, Export and Creation;
     3. **Bot Publish** for Publish access;
