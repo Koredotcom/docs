@@ -149,11 +149,11 @@ There are **three types of tools** that agents can use.
 
 !!!abstract "Examples"
 
- * Weather API: Retrieves live weather updates.
- * Stock Market Tool: Fetches real-time stock prices.
- * Database Query Tool: Accesses structured data from a company’s database.
+    * Weather API: Retrieves live weather updates.
+    * Stock Market Tool: Fetches real-time stock prices.
+    * Database Query Tool: Accesses structured data from a company’s database.
 
-    For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md).
+For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md).
 
 * **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that cannot be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They are the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using **JavaScript or Python** code, allowing seamless integration and automation of complex workflows.
 
