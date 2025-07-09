@@ -1,340 +1,8 @@
-# Advanced Configuration and Customization
-
-This section delves into more advanced configurations and customization options for your Voice Gateway, including node-level settings and utility functions.
-
-## Utility Functions in Voice Gateway
-
-Voice Gateway offers two utility libraries to manage call handling and transfers - Agent Utils and Voice Utils. These utilities provide comprehensive control over call flows, including features like SIP transfers, audio control, DTMF handling, and custom header management. Together, they offer flexible options for implementing both complex agent-assisted scenarios and straightforward external transfers.
-
-### Agent Utils (SmartAssist/Contact Center Library)
-
-The `agentUtils` library allows you to dynamically modify call transfer properties through the bot builder (XO) before transferring the call to a human agent. It provides a wide range of options, including:
-
-* **Dynamic SIP Configuration**: Modify the SIP properties before transferring the call.
-* **Transfer Types**: Change the type of transfer (for example, Skill-based, SIP-based).
-* **User Information**: Update user-specific information before routing the call to the agent.
-
-With `agentUtils`, you can adjust SmartAssist properties directly from the bot, which is ideal when you need to fine-tune call transfers by modifying parameters like SIP URIs or transfer methods before sending the call to the Outer Source or SmartAssist agent desktop.
-
-**Agent Transfer Node in XO Platform (Used with agentUtils)**
-
-To apply changes made with `agentUtils`, you need to use the **Agent Transfer node** in the XO platform. The Agent Transfer node routes the call back to SmartAssist from the bot, and based on the type of transfer selected in SmartAssist (for example, External, SIP Transfer, SmartAssist Agent Desktop), the call will be appropriately routed.
-
-You can make this process **dynamic** by using `agentUtils` to modify transfer properties (such as SIP URI or transport type) before executing the Agent Transfer node.
-
-**Major Advantage**:  
-Unlike `voiceUtils`, the `agentUtils + Agent Transfer Node` flow **supports** **header encoding/decoding and user-to-user (UUI) data transfer**, which is critical when data needs to be passed securely and efficiently during the transfer process. This is one of the **key reasons** to prefer this method for complex call transfers that require encoded headers or UUI support.
-
-**Example Use Case**:  
-If you need to dynamically change the SIP transport type or update the SIP URI based on the user's session, `agentUtils` allows you to modify these properties via a script node in the bot builder. The Agent Transfer node will handle the actual routing to the SmartAssist platform. [Learn more](../../flows/node-types/utils.md#script-nodes-call-flows-agent-utils-and-usersessionutils).
-
-### Voice Utils (SmartAssist Library)
-
-The `voiceUtils` library is specifically for the SmartAssist Voice Gateway. It is used for transferring calls to external sources, such as SIP endpoints or phone numbers, **without involving the SmartAssist agent desktop**. This library supports functionalities like:
-
-* Hangup
-* Agent Transfer (via Invite and Refer)
-* Abort Prompt
-* Play and Pause Audio, etc
-
-In the case of agent transfers using `voiceUtils`, the call is directly routed to an external source (such as a SIP endpoint or a phone number), bypassing the SmartAssist platform. There is no interaction with the SmartAssist agent desktop, and it’s best used for scenarios where the call transfer needs to be completed externally.
-
-* **Transfer with Headers**: You can use `voiceUtils.invite()` and `voiceUtils.refer()` to transfer the call with custom headers. However, it is important to note that this does not support header encoding/decoding or user-to-user (UUI) data transfer.
-
-   **Example Use Case**:
-If you are transferring the call to an external SIP provider or a phone number directly, `voiceUtils` is the ideal choice. This quick method bypasses SmartAssist and is tailored for simple SIP or phone number transfers.
-
-### When to Use What
-
-* Use `agentUtils` + **Agent Transfer Node**:<br>
-This method should be used when **header encoding/decoding** or **user-to-user (UUI) data transfer** is required during the call transfer. It provides dynamic control over SmartAssist-specific properties (like SIP URIs or transport types) and ensures proper data handling for more complex call transfer scenarios involving the SmartAssist agent desktop.
-* Use `voiceUtils`:
-Use this method when you need to **transfer the call directly to an external source** like a SIP endpoint or phone number, **bypassing the SmartAssist platform**. It is best for simple transfers without the need for header encoding or UUI support.
-
-### VoiceUtils Helper Methods
-
-These functions can be used in the Channel Override template inside Java script sections. All functions can be executed in the Message Node.
-
-**General Syntax** - `print(utility function)`
-
-#### Hangup
-
-**Use Cases**:
-
-1. If you need to forcibly hang up the call from the bot during the flow or call.
-
-2. This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.
-
-   **Syntax**: `print(voiceUtils.hangup(message,headers,queueCommand))`
-
-   The message, headers, and queueCommand are optional parameters.
-
-   **Header syntax**:
-
-| **Options**    | **Description**                                                                                                     | **Type**  | **Required**        |
-|----------------|---------------------------------------------------------------------------------------------------------------------|-----------|----------------------|
-| message        | Message to play before Hangup.                                                                                      | String    | No                   |
-| Headers        | An object containing SIP headers to include in the BYE request.                                                     | Object    | No                   |
-| queueCommand   | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean   | No (Default: True)   |
-
-`````
-"headers": { \
-"X-Reason" : "maximum call duration exceeded" \
-}
-`````
-The system will first play the message, then hang up the call and transmit the headers.
-
-!!! Note
-
-    To skip the message and only send the headers, provide an empty string as the first argument.
-
-**Example**:
-
-```
-        1 With message and headers
-        var message = "Call completed";
-        var headers : {
-
-        	`"X-Reason"` `:` `"Call hangup from system side"`
-        }
-
-        print(voiceUtils.hangup(message,headers));
-
-        2 Without Message but containing headers
-          var message = "";
-          var headers = { "X-Reason" : "completed"}
-        print(voiceUtils.hangup(message,headers));
-```
-
-#### SIP Refer
-
-This function transfers the call to an external contact number (telephone number or SIP URI). After the transfer (Refer), the bot's call leg will disconnect.
-
-**Use Case:**
-
-Transfer the call to a third party using the utility in the message node with Run Automation from SmartAssist.
-
-message - Optional (Send Empty Message),  referTo - Required, headers - Optional
-
-**Syntax**: `print(voiceUtils.refer(message,ReferTo,headers,queueCommand))`
-
-| **Options**    | **Description**                                                                                                     | **Type**  | **Required**           |
-|----------------|---------------------------------------------------------------------------------------------------------------------|-----------|-------------------------|
-| message        | Play message before transferring a call to agent.                                                                  | String    | NA                      |
-| ReferTo        | A SIP URI or a phone number/user identifier.                                                                       | String    | Yes                     |
-| headers        | Additional SIP headers to include in the response.                                                                 | Object    | NA                      |
-| queueCommand   | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean   | NA (Default: True)      |
-
-**Example**:
-
-```
-1 Using all the options
-
-var message = "Transferring Call to xxxx number";
-var ReferTo = "+91xxxxxxxxxx";   // or sipUrl 
-
-var headers: {
-	"X-Reason" : "Call Received from ABC"
-}
-
-print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
-
-2 without Message and headers 
-
-var message = "";
-print(voiceUtils.refer(message,ReferTo));
-
-3 With QueueCommand
-  var message = "" , headers = {}, referTo = "sip:test@5060"
-print(voiceUtils.refer(message,ReferTo,headers,false));
-```
-
-#### SIP Invite
-
-The SIP Invite initiates a conference call. The bot's leg remains active after the call connects to the third party, and once the call with the third party ends, the bot's call will resume. The callerId and target fields are mandatory and should contain either a SIP URI or a phone number. To pass these values, provide an empty string for the message, followed by the callerId and target.
-
-**Syntax**: `print(voiceUtils.invite(message, callerId, target,headers,queueCommand))`
-
-| **Options**     | **Description**                                                                                                     | **Type**                                      | **Required**        |
-|------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------|
-| Message          | Message to play before transferring the call to a third party.                                                     | String                                         | No                   |
-| CallerId         | The inbound caller's phone number, which is displayed to the number that was dialed. The caller ID must be a valid E.164 number. | String containing phone number with country code (Bot Number) | Yes                  |
-| Target           | The target property specifies the call destinations.                                                              | String (SIP URI)                               | Yes                  |
-| Headers          | Additional SIP headers to include in the response.                                                                | Object                                         | NA                   |
-| QueueCommand     | If true, queue this command until previous commands are completed; otherwise, interrupt and flush all previous commands and execute this command immediately. | Boolean                                        | No (Default: True)   |
-
-**Example**:
-
-```
-let callerId = "+1901xxxx";
-let target = "sip:test.com:5060";
-let message = "SIP Invite Transfer"
-let headers = {
-"X-CallId" : "xxxxx"
-}
-print(voiceUtils.invite(message,callerId,target,headers))
-```
-
-#### AbortPrompt
-
-The abortPrompts event cancels all pending prompts sent before it was triggered. For example, if the bot sends an abortPrompts event right after sending three prompt messages, the first prompt will stop playing immediately, and the remaining two prompts will not play.
-
-**Use Case**:
-
-Killing the previous prompt with the current Message.
-
-**Syntax**: `print(voiceUtils.abortPrompt())`
-
-The “Message” parameter is Optional.
-
-| **Options** | **Descriptions**                                     | **Type** | **Required** |
-|-------------|------------------------------------------------------|----------|--------------|
-| Message     | Kill the previous command and play the configured message. | String   | NA           |
-
-
-!!! note
-
-    It supports .wav files and multiple messages also, but it should send as an array of messages.
-
-example - var message = [“[https://example.wav](https://example.wav)” , “welcome message”]
-
-**Example**:
-
-```
-var message = "Aborting the Previous Message",
-
-print(voiceUtils.abort(message))
-
-//without message
-print(voiceUtils.abortPrompt())
-```
-
-#### Send DTMF
-
-This function is used to send DTMF digits from the bot. The digits are sent as RTP payloads using RFC 2833.
-
-**Use Case**:
-
-When one bot interacts with another bot and tries to give DTMF Input.  
-
-| **Options** | **Type** | **Description**                                                             | **Required**            |
-|-------------|----------|------------------------------------------------------------------------------|--------------------------|
-| dtmf        | String   | A string containing a sequence of DTMF digits (0-9, *, #).                   | Yes                      |
-| duration    | Number   | The length of each digit, in milliseconds. Defaults to 500.                 | No (Default value: 500)  |
-
-**Example**:
-
-```
-let dtmf = "99865",
-let duration = 600
-
-print(voiceUtils.sendDTMF(dtmf,duration))
-```
-
-#### Pause and Play
-
-The pause command waits silently for a specified number of seconds. Play is Optional; If you pass the message, it will play after the pause.
-
-| **Options** | **Type**                                                                 | **Description**                                       | **Required** |
-|-------------|--------------------------------------------------------------------------|--------------------------------------------------------|--------------|
-| length      | number (seconds) — for example, `4`. Default is 3 seconds.               | Number of seconds to wait before continuing the app.   | Yes          |
-| message     | string or array of strings containing a URL and string. <br>Example: `["This is the message", "https://text.wav"]` | Play the message after executing the pause time.       | No           |
-
-**Example:**
-
-`\`
-`let` `length` `=` `4,`
-
-```
-let message = "After 4 second this message will play"
-print(voiceUtils.pauseAndPlay(length,message))
-```
-
-#### Play
-
-The play command is used to stream recorded audio to either a call or a text message.
-
-The message can be either a single string or an array of strings that includes both audio URLs and text messages.
-
-**Syntax**: `print(voiceUtils.play(message))`
-
-| **Option** | **Description**                            | **Type**                                                                 | **Required** |
-|------------|---------------------------------------------|--------------------------------------------------------------------------|--------------|
-| message    | To play text messages and audio URLs.       | `String` – Only message<br>`Array of strings` – Both audio URL and message. | Yes          |
-
-**Example**:
-
-```
-Let message = ["this is First message", "https://audiofiile.wav" , "this is second Message"]
-
- //  All three message will be played in Sequence WIse (Text Message -> Audio File -> Text Message)
-```
-
-#### Voicemails
-
-**Use Cases**: 
-
-1. When you need to configure voicemail settings and notifications for customer calls. 
-
-2. When you need to receive transcriptions of voicemail messages. 
-
-3. When you need to collect and process customer voicemail content with metadata.
-
-**Syntax**: `print(voiceUtils.voicemail(message, beepRequired, transcriptionRequired, notifyUrl, metaInfo))`
-
-**Header Syntax**:
-
-| **Options**             | **Description**                                                                 | **Type**   | **Required** |
-|--------------------------|----------------------------------------------------------------------------------|------------|--------------|
-| message                  | The message played to the customer before the voicemail recording starts.       | string     | Yes          |
-| beepRequired             | When true, plays a beep sound after the message to indicate the recording start. Default: false | boolean    | No           |
-| transcriptionRequired    | When true, generates text transcription of the voicemail. Default: false        | boolean    | No           |
-| notifyUrl                | Client endpoint URL where voicemail notifications will be sent.                 | string     | Yes          |
-| metaInfo                 | Additional metadata to include with the notification.                           | object     | No           |
-
-```
-"metaInfo": {
-    "sessionId": "session123",
-    "userId": "user456",
-    "auth_token": "YOUR_SECURE_TOKEN"
-}
-```
-
-**Example**:
-
-```
-var message = "Please leave your voicemail after beep and hang up the call";
-var beepRequired=true;
-var transcriptionRequired=true;
-var notifyUrl={
-    "url": "https://puma-singular-regularly.ngrok-free.app",
-    "headers": {
-        "auth":"YOUR_SECURE_TOKEN",
-        'Accept': "application/json",
-        'Content-Type': 'application/json'
-    }
-};
-var metaInfo={
-    "newVar":context.session.opts.streamId
-}
-print(voiceUtils.voicemail(message,beepRequired,transcriptionRequired,notifyUrl,metaInfo));
-```
-
-### Raw Packet (JavaScript Code)
-
- It is recommended to use those call controls or Inbuilt Utility Functions rather than overriding using Raw JavaScript Code.
-
-If the Call Control Parameter or Inbuilt Utility Function does not achieve something, then the developer can contact the Support Team.
-
-!!! note
-
-    The platform does not perform design-time validation of message overrides; they are passed as is, increasing the likelihood of errors.
-
-## Speech Customization (Call Control Parameters)
+# Speech Customization (Call Control Parameters)
 
 This section provides in-depth information on customizing speech behavior using call control parameters.
 
-### Introduction to Call Control Parameters
+## Introduction to Call Control Parameters
 
 Call control parameters are general-purpose parameters that can modify a call's behavior, including ASR/STT & TTS configurations.
 
@@ -351,19 +19,19 @@ You can apply Call Control Parameters at either the Session or Node level, offer
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
 * Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied.
 
-### Node Level Call Control
+## Node Level Call Control
 
 The call control section is Available In [Entity Node](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md)/[Message Node](../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md#ivr-properties)/[Confirmation Node](../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md#ivr-properties) > IVR Properties > Advanced Controls. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#configuring-grammar).  
 <img src="../images/node-level-call-control-parameters.png" alt="Node Level Call Control" title="Node Level Call Control" style="border: 1px solid gray; zoom:80%;">
 
-### Channel Level Call Control
+## Channel Level Call Control
 
 For information on configuring the Call Control Parameters at the channel level, refer to [Define the Call Control Parameters](../smart-assist-gateway.md#step-4-define-the-call-control-parameters).
 
-### Update/Modify Parameters
+## Update/Modify Parameters
 When updating language settings or modifying Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) parameters in Call Control Parameters, users can specify the updated field along with a minimal set of required parameters.
 
-For example, if a user has already configured the STT provider and language in the call control parameters and wants to add a new language, the system appends the new parameter while retaining the existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
+For example, if a user has already configured the STT provider and language in the call control parameters and wants to add a n../smart-assist-gateway.md#step-4-define-the-call-control-parameterse existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
 
 This behavior applies to Session-Level Call Control Parameters.
 
@@ -388,7 +56,7 @@ This behavior applies to Session-Level Call Control Parameters.
 
 In this scenario, the system retains the existing **sttProvider** and previously set **sttLanguage**, ensuring that only the new parameter is added without requiring users to re-enter unchanged values.
 
-### Supported Speech Engines (ASR/TTS)
+## Supported Speech Engines (ASR/TTS)
 
 Voice Gateway supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
 
@@ -403,9 +71,9 @@ Voice Gateway supports the following third-party service providers for ASR/TTS. 
 | Whisper              | Not Supported     | whisper           | Cloud                         |
 | Ami voice            | amivoice          |                   | Cloud                         |
 
-### Supported Call Control Parameters
+## Supported Call Control Parameters
 
-#### Provider Related Parameters
+### Provider Related Parameters
 
 Speech-to-text (STT) and text-to-speech (TTS) services interface with the user using a selected language (for example, English US, English UK, or German).
 
@@ -446,7 +114,7 @@ TTS services also use a selected voice (for example, female or male) to respond.
 | `voiceName`         | String   | All                   | Required for TTS output. The voice must align with `ttsLanguage`.                                                                           | `"voiceName": "en-AU-NatashaNeural"`<br>Example:<br>`json<br>{<br>  "ttsProvider": "microsoft",<br>  "ttsLanguage": "en-AU",<br>  "voiceName": "en-AU-NatashaNeural"<br>}` |
 | `enableSpeechInput` | Boolean  | All                   | When set to `false`, disables speech input and allows only DTMF input. Default is `true`. Use this only through the Call Control Parameter. | `"enableSpeechInput": false`                                                                                                                                               |
 
-#### Labels and Fallback Provider Related Parameters
+### Labels and Fallback Provider Related Parameters
 
 Label – Assign/Create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your application to specify which service to use.
 
@@ -533,7 +201,7 @@ Examples:
 | `ttsFallbackLanguage`  | String | Specifies fallback TTS language.                                                       | `en-US`             |
 | `ttsFallbackVoiceName` | String | Specifies fallback voice name for TTS.                                                 | `en-US-AmberNeural` |
 
-#### Continuous ASR Related Parameters
+### Continuous ASR Related Parameters
 
 Continuous ASR (Automatic Speech Recognition) allows the speech-to-text engine to handle user inputs like phone numbers or customer IDs that may include pauses between utterances. This improves recognition accuracy for digit or character strings.
 
@@ -554,11 +222,11 @@ Both `continuousASRTimeoutInMS` and `AzureSegmentationSilenceTimeout` apply at t
 | `continuousASRTimeoutInMS` | Number (milliseconds) | ALL   | Specifies the silence duration to wait after receiving a transcript before returning the result. If another transcript is received within this timeout, the input is merged and continued. | `5000` (5 seconds) |
 | `continuousASRDigits`      | Character (DTMF key)  | ALL   | Specifies a DTMF key that, if pressed, immediately ends the speech recognition process and returns the gathered input.                                                                     | `&`                |
 
-#### Barge-In Related Parameters
+### Barge-In Related Parameters
 
 Barge-In allows the Voice Gateway to detect and respond when a user interrupts the bot by speaking or entering DTMF digits while the bot is still responding. This enables quicker interactions by preventing users from waiting for the bot to finish speaking.
 
-!!! Note 
+!!! Note
 
     Barge-In applies at the node level.
 
@@ -568,11 +236,11 @@ Barge-In allows the Voice Gateway to detect and respond when a user interrupts t
 | `bargeInMinWordCount` | Number                   | ALL   | When barge-in is enabled, this defines the **minimum number of words** required to interrupt the bot's speech. Defaults to `1`. | `1`     |
 | `bargeInOnDTMF`       | Boolean (`true`/`false`) | ALL   | If `true`, DTMF input during bot speech interrupts playback, and the system starts collecting speech input.                     | `true`  |
 
-#### Timeout Related Parameters
+### Timeout Related Parameters
 
 These parameters control how long the Voice Gateway waits for user input (speech or DTMF).
 
-!!! Note 
+!!! Note
 
     All timeout-related parameters apply at the node level.
 
@@ -585,7 +253,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `dtmfCollectminDigits`           | Number                | ALL   | Minimum number of DTMF digits expected. Defaults to `1`.                                                                                          |                                |
 | `dtmfCollectnumDigits`           | Number                | ALL   | Exact number of DTMF digits to collect. The bot waits until this number is reached before processing.                                             |                                |
 
-### Common ASR Parameters
+## Common ASR Parameters
 
 | **Parameter**                     | **Type**              | **Supporting STT/TTS**      | **Description**                                                                                                                                                                   | **Example**                                                                                                                                            |
 | --------------------------------- | --------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -598,7 +266,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `vadVoiceMS`                      | Number (milliseconds) | ALL                         | Specifies how many milliseconds of detected speech are required before connecting to the cloud recognizer. Only applies if `vadEnable` is `true`.                                 |                                                                                                                                                        |
 | `vadMode`                         | Number (0–3)          | ALL                         | Determines the sensitivity of the voice activity detector. Lower values make it more sensitive. Only applies if `vadEnable` is `true`.                                            |
 
-#### Microsoft ASR
+### Microsoft ASR
 
 | **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / More Info** |
 |---------------|----------|-------------------------|------------------|--------------------------|
@@ -611,7 +279,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `requestSnr` | Boolean | — | If set to `true`, includes signal-to-noise ratio in the response. | — |
 | `outputFormat` | String (`simple`, `detailed`) | — | Sets the transcript detail level. Default: `simple`. | — |
 
-#### Google ASR
+### Google ASR
 
 | **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / Notes** |
 |---------------|----------|-------------------------|------------------|----------------------|
@@ -646,7 +314,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `awsPiiEntityTypes` | Array | — | List of Personally Identifiable Information (PII) entity types to detect (e.g., `["NAME", "EMAIL", "SSN"]`). | — |
 | `awsPiiIdentifyEntities` | Boolean | — | Indicates whether to detect and highlight PII in the transcript. | — |
 
-#### NVIDIA ASR
+### NVIDIA ASR
 
 | **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / Notes** |
 |---------------|----------|-------------------------|------------------|----------------------|
@@ -658,7 +326,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `nvidiaCustomConfiguration` | Object | — | Object containing key-value pairs for sending custom configuration to NVIDIA Riva. | — |
 | `nvidiaPunctuation` | Boolean | — | Indicates whether to include punctuation in the transcript output. | — |
 
-#### Deepgram ASR
+### Deepgram ASR
 
 | **Parameter**              | **Type**             | **Supporting STT/TTS** | **Description**                                                                                                                                                                                                                                                                                      | **Example / Notes**                      |
 |---------------------------|----------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
@@ -688,7 +356,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `deepgramFillerWords`     | Boolean              | —                       | Includes filler words such as "uh" or "um" in transcripts.                                                                                                                                                                                                                                           | —                                        |
 | `deepgramkeyterm`         | String               | —                       | Boosts recall accuracy for key terms or phrases. Improves Keyword Recall Rate (KRR) by up to 90%.                                                                                                                                                                                                   | —                                        |
 
-### Common TTS Parameters
+## Common TTS Parameters
 
 | Parameter        | Type                 | Supporting STT/ TTS                   | Description                                                                                                                                                                                                                       | Examples                                       |
 |------------------|----------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
@@ -699,7 +367,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | earlyMedia       | Boolean              | ALL                                   | The **Early Media** parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected.                                                                             |                                                |
 | ttsOptions       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It is used to tune the TTS.|                                                |
 
-#### TTS Options in Voice Gateway
+### TTS Options in Voice Gateway
 
 Voice Gateway now supports a `ttsOptions` parameter that allows bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
 
@@ -707,17 +375,17 @@ Voice Gateway now supports a `ttsOptions` parameter that allows bot developers t
 
     Each TTS provider will have its own set of customizable parameters. For more detailed information on the parameters they support, refer to their official websites.
 
-#### Structure of `ttsOptions`
+### Structure of `ttsOptions`
 
 The `ttsOptions` object contains provider-specific settings in a key-value format. Below are examples of different TTS providers:
 
-##### ElevenLabs
+#### ElevenLabs
 
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
 * `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/speech-synthesis/voice-settings).
 * `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values below 1 will slow down the speech, while values above 1 will speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
 
-##### PlayHT
+#### PlayHT
 
 * `quality`: Sets the quality of the audio output.
 * `speed`: Controls the playback speed.
@@ -733,7 +401,7 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
     `ttsOptions = {"voice_engine": "PlayDialog"}`  
     `voiceName = <respective voice name>` 
 
-##### Deepgram
+#### Deepgram
 
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Deepgram offers a few additional parameters that enhance customization:
 
@@ -744,7 +412,7 @@ Apart from generic parameters like `ttsLanguage` and `voiceName`, which are comm
 
 These parameters provide additional flexibility for developers to fine-tune the audio output to meet their specific needs. All these parameters will be set inside ttsOptions. [Learn more](https://developers.deepgram.com/docs/tts-rest).
 
-##### AWS
+#### AWS
 
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Aws offers a few additional parameters that enhance customization, like ttsEnhanceVoice, also known as an engine.
 
@@ -764,18 +432,18 @@ ttsOptions = {
 }
 ```
 
-### Common Use Cases for Call Control Parameters
+## Common Use Cases for Call Control Parameters
 
-#### Continuous ASR
+### Continuous ASR
 
 Continuous ASR (Automatic Speech Recognition) is a feature that allows Speech-to-Text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, are often spoken with pauses in between utterances. Two parameters to enable it are:
 
 | **Parameter**              | **Type**                         | **Supporting STT/TTS**                        | **Description**                                                                                                                                                                                                                                                                                                                                     |
 | -------------------------- | -------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `continuousASRTimeoutInMS` | Number (milliseconds)            | STT – Google, Microsoft<br>TTS – Not Required | Duration of silence (in milliseconds) to wait after receiving a transcript from the STT vendor before returning the result. If another transcript is received before this timeout, transcripts are combined and recognition continues. The combined result is returned after silence exceeds the timeout. <br><br>**Example:** `5000` for 5 seconds |
-| `continuousASRDigits`      | Digit (for example, `*`, `%`, `&`, `#`) | STT – Google, Microsoft<br>TTS – Not Required | A DTMF key that terminates the gather operation and returns the collected results immediately.  
+| `continuousASRDigits`      | Digit (for example, `*`, `%`, `&`, `#`) | STT – Google, Microsoft<br>TTS – Not Required | A DTMF key that terminates the gather operation and returns the collected results immediately.
 
-#### Handling Bot Delay
+### Handling Bot Delay
 
 If the bot takes time to respond to a message, you can configure Voice Gateway to take action.
 
@@ -787,7 +455,7 @@ The delay is only applied when Voice Gateway sends a response to the bot and is 
 If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
 
 By setting timeout properties, the following actions can be configured:
-
+../images/handle-bot-delay.png
 * Play a textual prompt to the user
 * Play an audio file to the user
 * Disconnect the call
@@ -818,7 +486,7 @@ Example:
 !!! Note
 
       `botNoInputSpeech` can contain multiple messages, including audio URLs.
-
+../images/message-node-paremeters.png
 Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://this)dummy.wav”,” this is third textual Message”].
 
 #### Handle Delay Between Two Message Nodes
@@ -841,10 +509,10 @@ To handle this scenario:
    `print(voiceUtils.abortPrompt(“Dummy message“))` → (The message parameter is optional).  
       <img src="../images/optional-message-parameter.png" alt="Optional Message Parameter" title="Optional Message Parameter" style="border: 1px solid gray; zoom:80%;">
 
-#### Barge-In Scenarios
+### Barge-In Scenarios
 
 The Barge-In feature controls KoreVG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
-
+../images/optional-message-parameter.png
 | **Parameter**                    | **Type**                                                                             | **Supporting STT/TTS**                           | **Description**                                                                                                               |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | `listenDuringPrompt`             | Boolean (true or false)<br>Similar to Barge-In                                       | STT – Google and Microsoft<br>TTS – Not Required | If `false`, the bot does not listen for user speech until the response finishes playing.<br>**Default:** `true`.              |
@@ -857,7 +525,7 @@ The Barge-In feature controls KoreVG behavior in scenarios where the user starts
 | `dtmfCollectnumDigits`           | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Exact number of DTMF digits to collect.                                                                                       |
 | `input`                          | Array of strings<br>Valid values: `['digits']`, `['speech']`, `['digits', 'speech']` | STT – Google and Microsoft<br>TTS – Not Required | Specifies allowed input types. <br>**Default:** `['digits']`.                                                                 |
 
-#### Language Detection
+### Language Detection
 
 In this setup, developers do not need to use DTMF or other methods to switch the bot's language. Instead, the bot will automatically detect the language based on the user's utterance.
 
@@ -866,7 +534,7 @@ For example, if a user speaks in English, the conversation will continue in Engl
 **Configuration Steps**:
 
 1. In Bot Builder (on the child bot), navigate to **Languages,** add a new language (for example, Spanish), and enable it.
-2. Select English as the default language from the language dropdown menu.
+2. Select English as the default language from the language dropdown menu.../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-virtual-assistant
 3. Create a new dialog titled "Language Detection" (or choose a suitable name).
 4. Inside this dialog, add an **entity node** to capture user intent input.
 5. Set the entity precedence to **'Intent over Entity'** in the advanced controls.
