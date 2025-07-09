@@ -157,10 +157,10 @@ nav:
               - Advanced Configuration and Customization:
                 - Utility Functions in Voice Gateway: channels/voice-gateway/utility-functions-in-voice-gateway.md
                 - Speech Customization (Call Control Parameters): channels/voice-gateway/speech-customization.md
-                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
-                - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
-                - Troubleshooting: channels/voice-gateway/troubleshooting.md
+              - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
+              - SIP Trunk: channels/voice-gateway/sip-trunk.md
+              - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
+              - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
