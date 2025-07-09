@@ -26,8 +26,6 @@ The call control section is Available In [Entity Node](../../automation/use-case
 
 ## Channel Level Call Control
 
-For information on configuring the Call Control Parameters at the channel level, refer to [Define the Call Control Parameters](../smart-assist-gateway.md#step-4-define-the-call-control-parameters).
-
 ## Update/Modify Parameters
 When updating language settings or modifying Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) parameters in Call Control Parameters, users can specify the updated field along with a minimal set of required parameters.
 
@@ -58,18 +56,7 @@ In this scenario, the system retains the existing **sttProvider** and previously
 
 ## Supported Speech Engines (ASR/TTS)
 
-Voice Gateway supports the following third-party service providers for ASR/TTS. [Learn more](https://docs.kore.ai/smartassist/configuration/support-for-third-party-asr-tts-and-voice-biometrics/).
-
-| **Speech Engine**    | **ASR Name**     | **TTS Name**    | **Supported Environment**     |
-|----------------------|------------------|------------------|-------------------------------|
-| Microsoft Azure      | microsoft         | microsoft         | On Premise, Cloud             |
-| Google               | google            | google            | On-Premise, Cloud             |
-| Nvidia (Riva)        | nvidia            | nvidia            | On-Premise                    |
-| Amazon (AWS)         | aws               | polly             | Cloud                         |
-| Deepgram             | deepgram          | deepgram          | Cloud                         |
-| Elevenlabs           | Not Supported     | elevenlabs        | Cloud                         |
-| Whisper              | Not Supported     | whisper           | Cloud                         |
-| Ami voice            | amivoice          |                   | Cloud                         |
+Voice Gateway supports several third-party service providers for ASR/TTS. [Learn more](../voice-gateway/third-party-asr-tts-support.md)
 
 ## Supported Call Control Parameters
 
