@@ -1,10 +1,10 @@
-# Create SMS Campaign API
+# Create SMS Campaign (Without SMS Template) API
 
-Use this API to create an SMS campaign with a “None” message format.
+Use this API to create an SMS campaign without a template.
 
 | **Method**        | POST |
 |-------------------|----------|
-| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}` |
+| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign?campaignType=sms` |
 | **Content-Type**  | `application/json` |
 | **Authorization** | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**     | Campaign Management |
@@ -14,33 +14,34 @@ Use this API to create an SMS campaign with a “None” message format.
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `streamIId` | `botId` or `streamId`. You can access it from the General Settings page of the bot. | string, required |
+| `IId` | The application ID. | string, required |
 
-## Query Parameters
+## Query Parameter
 
 | **Parameter**   | **Description**                         | **Type**         |
 |------------------|-----------------------------------------|------------------|
-| `accountId`     | The unique ID associated with the account. | string, required |
 | `campaignType`  | Type of Campaign. Use `"sms"`             | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}' \
+curl --location 'https://host/agentassist/api/v1/public/{{IID}}/campaign?campaignType=sms' \
 --header 'auth: <token>' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'Content-Type: application/json' \
 --data '{
-    "name": "SMS From API - With No Template - 1",
-    "description": "SMS From API - With No Template - 1",
+    "name": "Event Reminder SMS Campaign",
+    "description": "Sends a one-time message to remind users about an upcoming event. No template or personalization is used—just a plain, direct message.",
     "contactLists": [
-     "APIContctList"
+     "Renewal Due - May/June 2025"
     ],
     "campaignType": "sms",
     "priority": "5",
     "format": "simple",
     "message": {
         "templateId": "",
-        "message": "TWVzc2FnZSBmb3IgeW91ciB0YXJnZXRlZCBjdXN0b21lcg%3D%3D"
+        "message": "Hi, This is just reminder for upcoming event"
     },
     "dialingStrategy": {
         "callerId": {
@@ -81,14 +82,16 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
     "schedule": {
         "isSchedulingEnabled": false
     }
-}'
+}
 ```
 
-## Header
+## Headers
 
-| **Header** | **Description**                | **Required/Optional** |
-|------------|--------------------------------|------------------------|
-| `auth`     | JWT token for authentication.  | required               |
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Body Parameters
 
@@ -121,12 +124,12 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 ```
 {
     "status": "success",
-    "message": "Campaign SMS From API - With No Template - 1 creation in progress",
+    "message": "Campaign Event Reminder SMS Campaign creation in progress",
     "data": {
-        "_id": "cd-5a830c4d-c8a4-5ee3-8e98-c219ea86xxxx",
-        "name": "SMS From API - With No Template - 1",
-        "lname": "sms from api - with no template - 1",
-        "description": "SMS From API - With No Template - 1",
+        "_id": "cd-b124b013-95bd-5ff2-ad90-01b8f4eexxxx",
+        "name": "Event Reminder SMS Campaign",
+        "lname": "event reminder sms campaign",
+        "description": "Sends a one-time message to remind users about an upcoming event. No template or personalization is used—just a plain, direct message.",
         "status": "Ready",
         "priority": "5",
         "dialingStrategy": {
@@ -166,19 +169,18 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
             }
         },
         "message": {
-            "message": "TWVzc2FnZSBmb3IgeW91ciB0YXJnZXRlZCBjdXN0b21lcg%3D%3D"
+            "message": "Hi, This is just reminder for upcoming event"
         },
-        "totalMessagesSent": 0,
-        "direction": "simple",
-        "createdAt": "2025-06-26T06:37:13.780Z",
-        "updatedAt": "2025-06-26T06:37:13.780Z",
+        "createdAt": "2025-06-27T08:54:23.418Z",
+        "updatedAt": "2025-06-27T08:54:23.418Z",
         "schedule": {
             "isSchedulingEnabled": false
         },
         "contactLists": [
-            "APIContctList"
+            "Renewal Due - May/June 2025"
         ],
-        "enableMachineDetect": false
+        "enableMachineDetect": false,
+        "format": "simple"
     }
 }
 ```
@@ -213,3 +215,4 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 | `schedule.isSchedulingEnabled`                 | Indicates if scheduling is enabled for the campaign.         | boolean          |
 | `contactLists`                                 | List of contact list names used in the campaign.             | array            |
 | `enableMachineDetect`                          | Indicates if machine detection is enabled (not for SMS).     | boolean          |
+| `data.format`                     | Specifies the message format (for example, `simple`, `template`).                  | String  |

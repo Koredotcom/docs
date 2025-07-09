@@ -4,7 +4,7 @@ Use this API to retrieve the full details of a specific contact list using its I
 
 | **Method**   | GET |
 |--------------|-----|
-| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/contactList/{{contactListId}}?accountId={{accountId}}` |
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/contactList/{{contactListId}}` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
@@ -14,52 +14,64 @@ Use this API to retrieve the full details of a specific contact list using its I
 | **Parameter**   | **Description**                                                                 | **Type**          |
 |-----------------|----------------------------------------------------------------------------------|-------------------|
 | `host`          | Environment URL, for example, `https://platform.kore.ai`                         | string, required  |
-| `streamId`      | `botId` or `streamId`. You can access it from the General Settings page of the bot. | string, required  |
+| `IId`      | The application ID. | string, required  |
 | `contactListId` | Unique identifier of the contact list to update.                                 | string, required  |
-
-## Query Parameters
-
-| **Parameter** | **Description**                         | **Type**         |
-|---------------|------------------------------------------|------------------|
-| `accountId`   | The unique ID associated with the account. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/contactList/{{contactListId}}?accountId={{accountId}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/contactList/{{contactListId}}' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'auth: <token>'
+
 ```
+
+## Headers
+
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Sample Response
 
 ```
 {
-  "status": "success",
-  "message": "",
-  "data": {
-    "_id": "cl-4db9a03-07a3-4009-973a-b8940e81xxxx",
-    "name": "Contact list of Passive June 27",
-    "description": "contact list Description",
-    "totalRecordCount": 0,
-    "status": "Ready",
-    "mapping": {
-      "firstName": "firstName",
-      "lastName": "lastName",
-      "phoneNumber": "phoneNumber",
-      "timeZone": "timeZone",
-      "uniqueId": "uniqueId"
-    },
-    "isListInUse": false,
-    "listType": "call",
-    "campaignInUse": [],
-    "source": "passiveApi",
-    "apiConfigurations": {
-      "dataSyncMode": "allowDuplicates"
-    },
-    "files": [],
-    "createdAt": "2025-06-27T07:37:17.489Z",
-    "updatedAt": "2025-06-27T07:37:17.489Z"
-  }
+    "status": "success",
+    "message": "",
+    "data": {
+        "_id": "cl-c2ce382-2516-457e-8eb4-9847deecxxxx",
+        "isActive": true,
+        "orgId": "o-f8b351e7-f83a-51bd-bd42-d5d40861xxxx",
+        "name": "Renewal Due - August 2025",
+        "lname": "renewal due - august 2025",
+        "description": "This list contains customers with services expiring in July 2025. It includes contact details and subscription info to help agents provide tailored support during live calls.",
+        "totalRecordCount": 0,
+        "status": "Ready",
+        "createdBy": "u-eb5bbee1-6af9-5b9a-b471-03a3fe48xxxx",
+        "updatedBy": "u-eb5bbee1-6af9-5b9a-b471-03a3fe48xxxx",
+        "mapping": {
+            "firstName": "firstName",
+            "lastName": "lastName",
+            "phoneNumber": "phoneNumber",
+            "timeZone": "timeZone",
+            "uniqueId": "uniqueId"
+        },
+        "isListInUse": false,
+        "iId": "st-0603182c-7ffb-53c3-b307-47ca14b9xxxx",
+        "listType": "call",
+        "campaignInUse": [],
+        "accountId": "67777ce93e25326494e9xxxx",
+        "source": "passiveApiIntegration",
+        "apiConfigurations": {
+            "dataSyncMode": "allowDuplicates"
+        },
+        "files": [],
+        "createdAt": "2025-06-26T12:32:02.735Z",
+        "updatedAt": "2025-06-26T12:38:25.793Z"
+    }
 }
 ```
 
