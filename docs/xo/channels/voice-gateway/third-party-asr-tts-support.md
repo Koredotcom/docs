@@ -34,6 +34,6 @@ Kore supports the following third-party service providers for [TTS services](../
 
 Kore supports the following third-party service providers for voice biometrics:
 
-| ASR & TTS Vendor | Vendor Platform Description/Details (version) | On-Prem / Cloud | Comments            |
+| Voice Biometric Vendor | Voice Biometric Engine | On-Prem / Cloud | Comments            |
 |------------------|-----------------------------------------------|------------------|----------------------|
 | ID R&D           | [ID Voice](https://www.idrnd.ai/idvoice-verified-voice-biometrics-and-anti-spoofing/)                                       | –                | –                    |

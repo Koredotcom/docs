@@ -4,7 +4,7 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 
 | **Method**       | POST                                                                                                                                                         |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}`                                     |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?campaignType=voice`                                     |
 | **Content-Type** | `application/json`                                                                                                                                           |
 | **Authorization**| `auth: {{JWT}}`  <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                      |
 | **API Scope**    | Campaign Management                                                                                                                                          |
@@ -14,32 +14,33 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 | **Parameter** | **Description**                                                                                   | **Type**          |
 |---------------|---------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                          | string, required  |
-| `streamId`    | botId or streamId. You can access it from the General Settings page of the bot.                  | string, required  |
+| `botId`    | You can access it from the General Settings page of the bot.                  | string, required  |
 
-## Query Parameters
+## Query Parameter
 
 | **Parameter**   | **Description**                              | **Type**          |
 |------------------|----------------------------------------------|-------------------|
-| `accountId`      | The unique ID associated with the account.   | string, required  |
 | `campaignType`   | Type of Campaign. Use `sms`.                 | string, required  |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaigntype}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?campaignType=voice' \
 --header 'auth: <token>' \
 --header 'Content-Type: application/json' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --data '{
-    "name": "Voice From API- With Preview Dialing Mode- 2",
-    "description": "Voice From API - With Preview Dialing Mode and queue- 2",
+    "name": "Billing Reminder Voice Campaign",
+    "description": "Progressive dialing campaign to remind customers about upcoming bill payments. Connects to an agent if available, else plays a recorded message",
     "contactLists": [
-        "APIContctList"
+        "Recent Buyers - Q2 2025"
     ],
     "priority": "5",
     "dialingMode": "Preview",
     "dialingStrategy": {
         "callerId": {
-            "phoneNumber": "+1765432101"
+            "phoneNumber": "+181234567"
         },
         "callingHours": {
             "frequency": "WEEKLY",
@@ -73,19 +74,27 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
             ]
         },
         "dialingOrder": "FIFO",
-        "maxAttemptsPerRecord": 1,
-        "defaultRetryPeriod": 1,
-        "maxRingTime": 21
+        "maxAttemptsPerRecord": 3,
+        "defaultRetryPeriod": 10,
+        "maxRingTime": 30
     },
     "schedule": {
         "isSchedulingEnabled": false
     },
     "queue_name": "Default Queue",
     "enableMachineDetect": false,
-    "maxSkips": 3,
+    "maxSkips": 1,
     "campaignType": "voice"
 }'
 ```
+
+## Headers
+
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Body Parameters
 
