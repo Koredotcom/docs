@@ -1,0 +1,23 @@
+# API Scopes
+
+Using this option you can define apps and associate API scopes for accessing various platform features.
+
+1. Use the **New** button to create a new app.
+2. Select **+Create App** option from App drop-down.
+3. Once you enter a name, a **Client ID** and **Client Secret** would be generated which can be used to access the platform
+4. For each app created the following API Scopes can be assigned as per requirement:
+    1. **IntentIdentification** includes the scopes for Intent and Entity Detection;
+    2. **Bot Definition** includes the scopes for Bot Import, Export and Creation;
+    3. **Bot Publish** for Publish access;
+    4. **Test & Train** to include permissions to Train ML  and FAQ, Utterances Import & Export;
+    5. **Logs** to include retrieval capablity of Bot Audit and Admin Console Audit Logs;
+    6. **Profile Management** to get access to Role Management APIs and to Delete User Data;
+    7. **Bot Analytics** to be able to retrieve Chat History and Bot conversation Sessions
+    8. **User Management** scope to manage users;
+    9. **Custom Reports** scope to retrieve the data associated with custom widgets and reports;
+    10. **ManageKnowledgeGraph** scope to export and manage the complete definition of the Knowledge Graph;
+    11. **Channel Management** to create and update channels;
+    12. **BotKit** to configure the botkit and agent transfer;
+    13. **Master Admin** – assign this scope to get the list of sample bot.
+
+5. Once created these apps can be used from within the Bot Builder Platform or externally to access various features by invoking the corresponding public API ([see here for list](../../apis/automation/api-list.md){:target="_blank"}).

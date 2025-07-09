@@ -794,6 +794,9 @@ nav:
       - Security and Control:
         - Security and Control Module Overview: administration/security-and-control/security-module-overview.md
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
+        - Kore.ai Connector: administration/kore-ai-connector.md
+        - Enterprise Key: administration/security-and-control/enterprise-key.md
+        - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md
       - Cloud Connector: administration/kore-ai-connector.md
