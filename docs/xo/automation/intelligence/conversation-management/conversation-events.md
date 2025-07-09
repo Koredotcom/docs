@@ -84,7 +84,7 @@ These events trigger on receiving **_opt-in_** or **_opt-out_** requests from us
 
 ## Repeat Bot Response Event
 
-The **Repeat Bot Response** event is triggered to repeat the last bot response when certain predefined or custom-trained utterances are detected in voice channels such as IVR, Audiocodes, or Twilio Voice. 
+The **Repeat Bot Response** event is triggered to repeat the last bot response when certain predefined or custom-trained utterances are detected in voice channels such as IVR, Audiocodes, Twilio Voice and SmartAssist Gateway. 
 
 To enable this event, the developer must define the context object as a precondition for triggering the event. This context object contains the specific set of utterances that should be recognized to repeat the bot’s most recent or last response.
 
@@ -163,9 +163,11 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 
 **Steps to Enable the Repeat Bot Response Event**
 
-1. Navigate to **Conversation Intelligence > Events**.
-2. Turn on the toggle to enable the to enable the **Repeat Bot Response Event**.
+1. Navigate to **Conversation Intelligence > Events**.  
 <img src="../images/repeat-bot-responses-toggle.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
+
+2. Click **Repeat Bot Response Event** to configure it. .
+<img src="../images/savg11.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Manage Utterance** to review the pre-trained utterances that are added to the VA by default.
 <img src="../images/manage-utterances-event.png" alt="manage utterances" title="manage utterances" style="border: 1px solid gray; zoom:75%;">
@@ -175,17 +177,17 @@ The developer uses the **Repeat Bot Response** to allow you to repeat the respon
 
 5. Once Utterances are trained, you can add the following preconditions:
 
-    * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, or Twilio Voice.
+    * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, Twilio Voice or SmartAssist Gateway.
     * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md){target="_blank"} article.
-    <img src="../images/channels-and context-tags.png" alt="channels and context tags" title="channels and context tags" style="border: 1px solid gray; zoom:75%;">
+    
  
-!!!note
+!!! note
 
     The context tags are added to trigger the repeat bot responses whenever the dialog task with that particular context is executed. For example, when a book a flight dialog task is executed, then the context tag will trigger the repeat bot response event for that particular dialog task.
 
 <ol start="6"><li>Select the <b>Event Configuration</b> options to define how to repeat the response:</li>
 <ul><li><b>Repeat Only Last Bot Response</b> – By default, this option is selected with a filler message: "<i>Sure, I will repeat it for you.</i>"
-<img src="../images/repeat-bot-response-event.png" alt="repeat bot response event" title="repeat bot response event" style="border: 1px solid gray; zoom:75%;">
+
 
 You can edit or add the filler message for the repeat bot response event before it is triggered.
 <img src="../images/add-filler-message.png" alt="add filler message" title="add filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
@@ -194,10 +196,11 @@ You can edit or add the filler message for the repeat bot response event before 
 <img src="../images/add-filler-to-ivr.png" alt="add filler to ivr" title="add filler to ivr" style="border: 1px solid gray; zoom:75%;">
 
 <ul><li>When the Repeat Bot Response event is triggered, these filler messages are used in the IVR channel conversation before repeating the response.
-<img src="../images/use-filler-message.png" alt="use filler message" title="use filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
+</li></ul>
 
-<ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.</li></ul>   
-<img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;">  
+<ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.  
+<img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;"></li></ul>   
+  
 
 <li>Click <b>Enable Now</b> to define the Advanced NLU Settings for the <b>LLM and Generative</b> model and enable the Repeat Responses feature.</li></ul></ol>
 

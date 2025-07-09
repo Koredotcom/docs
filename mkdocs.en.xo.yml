@@ -60,8 +60,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">feedback form<a>.
+            Thanks for your feedback!
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -149,18 +148,17 @@ nav:
             - Set Queue: flows/node-types/set-queue.md
             - Split: flows/node-types/split.md
             - Script Nodes, Call Flows, Agent Utils, and userSessionUtils: flows/node-types/utils.md
+        - Automation Routing: flows/automation-routing.md
         - Channels:
           - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
             - Voice Gateway: 
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
               - Advanced Topics:
-                - Call Control Parameters: channels/voice-gateway/call-control-parameters.md
-                - Speech Synthesis Markup Language (SSML): channels/voice-gateway/ssml.md
-                - Utility Functions: channels/voice-gateway/utility-functions.md
-                - Common Scenarios: channels/voice-gateway/common-configuration-scenarios.md
+                - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
+                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
                 - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - IPs, Ports, and Protocols: channels/voice-gateway/ips-ports-protocols.md
+                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
                 - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
@@ -168,20 +166,21 @@ nav:
               - AudioCodes: channels/ivr-audio-codes.md
               - IVR: channels/IVR-integration.md
       - Glossary: getting-started/glossary/concepts-and-terminology.md      
-    - Release Notes:
+    - Release Updates:
       - Release Communication: release-notes/release-communications.md
-      - What's New:
-        - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
-        - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
-        - Migration Path XO v10 to v11: getting-started/migration-path-xo10-to-xo11.md
-        - Current Limitations: release-notes/current-limitations.md  
-      - Recent Updates:
+      - What's New in AI for Service: getting-started/whats-new-in-xo-platform.md        
+      - Release Notes:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
-        - Platform Services: release-notes/11.x/platform-services.md 
-        - Voice Gateway: release-notes/11.x/voice-gateway.md  
+        - Voice Gateway: release-notes/11.x/voice-gateway.md
+        - Platform Services: release-notes/11.x/platform-services.md          
+      - Upgrade Guides:
+        - Benefits of XO v11: getting-started/benefits-xo11.md
+        - Automation AI: getting-started/migration-path-xo10-to-xo11.md
+        - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
+        - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md       
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
@@ -285,11 +284,14 @@ nav:
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
       - Test (Talk to Bot): automation/testing/talk-to-bot.md
-      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
-      - Regression Testing: 
-        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: automation/testing/regression-testing/batch-testing.md
-        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
+      - DialogGPT based Apps:
+        - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
+      - NLP based Apps:
+        - Utterance Testing - NLP: automation/testing/testing-your-bot-with-nlp.md 
+        - Regression Testing: 
+          - Health and Monitoring - NLP: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
+          - Batch Testing - NLP: automation/testing/regression-testing/batch-testing.md
+          - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
@@ -340,6 +342,7 @@ nav:
                 - Freshservice: searchai/content-sources/connectors/freshservice.md
                 - Front: searchai/content-sources/connectors/front.md
                 - GitHub: searchai/content-sources/connectors/github.md
+                - GitHub On-Prem: searchai/content-sources/connectors/github-onprem.md
                 - GitLab: searchai/content-sources/connectors/gitlab.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
                 - Guru: searchai/content-sources/connectors/guru.md
@@ -347,7 +350,9 @@ nav:
                 - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jenkins: searchai/content-sources/connectors/jenkins.md
+                - Jfrog: searchai/content-sources/connectors/jfrog.md
                 - Jira: searchai/content-sources/connectors/jira.md
+                - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
                 - LumApps: searchai/content-sources/connectors/lumapps.md
                 - Miro: searchai/content-sources/connectors/miro.md
@@ -355,6 +360,7 @@ nav:
                 - MS Teams: searchai/content-sources/connectors/msteams.md
                 - Notion: searchai/content-sources/connectors/notion.md
                 - OneDrive: searchai/content-sources/connectors/onedrive.md
+                - OpsGenie: searchai/content-sources/connectors/opsgenie.md
                 - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
                 - PagerDuty: searchai/content-sources/connectors/pagerduty.md
                 - Re:amaze: searchai/content-sources/connectors/reamaze.md
@@ -365,11 +371,13 @@ nav:
                 - Shortcut: searchai/content-sources/connectors/shortcut.md
                 - Slab: searchai/content-sources/connectors/slab.md
                 - Slack: searchai/content-sources/connectors/slack.md
+                - Teamwork: searchai/content-sources/connectors/teamwork.md
                 - TestRail: searchai/content-sources/connectors/testrail.md
                 - Trello: searchai/content-sources/connectors/trello.md
                 - WordPress: searchai/content-sources/connectors/wordpress.md
                 - Workday: searchai/content-sources/connectors/workday.md
                 - Wrike: searchai/content-sources/connectors/wrike.md
+                - xMatters: searchai/content-sources/connectors/xmatters.md
                 - YouTrack:  searchai/content-sources/connectors/youtrack.md
                 - Zendesk: searchai/content-sources/connectors/zendesk.md 
                 - Zeplin: searchai/content-sources/connectors/zeplin.md
@@ -387,6 +395,7 @@ nav:
             - Field Mapping Stage: searchai/workbench/field-mapping.md
             - Custom Script: searchai/workbench/custom-script.md
             - Exclude Document: searchai/workbench/exclude-document.md
+            - API Stage: searchai/workbench/api-stage.md
             - Workbench Simulator: searchai/workbench/simulation.md
         - Vector Configuration: searchai/index-configuration.md
     - Configuration:
@@ -426,7 +435,10 @@ nav:
         - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
         - LLM Based Conversation Summary: contactcenter/configurations/advanced-settings/llm-based-conversation-summary.md
         - LLM Streaming: contactcenter/configurations/advanced-settings/llm-streaming.md
-    - Flows and Routing:
+        - Translation Configurations: contactcenter/configurations/advanced-settings/translation-configurations.md
+        - Replace Customer Column Data With User ID: contactcenter/configurations/advanced-settings/replace-customer-column-data-with-user-id.md
+    - Performance Management:
+      - SLAs & Alerts: contactcenter/performance-management/slas-and-alerts.md
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
@@ -440,7 +452,7 @@ nav:
       - Interacting With Customers: console/interacting-with-customers.md
       - Additional Tools: console/additional-tools.md
       - Manage Layout: console/manage-layout.md
-      - Monitor: console/monitor-queues-agents-interactions-service-levels.md
+      - Monitor: console/monitor-queues-agents-and-interactions.md
     - Campaigns:  
       - About Campaigns: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
@@ -457,6 +469,9 @@ nav:
       - Getting Started:     
         - Setup Guide: quality-management/getting-started/setup-guide.md
         - Best Practices for Auto QA Configuration: quality-management/getting-started/best-practices-for-auto-qa-config.md      
+      - Quality Express:     
+        - Quality AI Express: quality-management/getting-started/quality-ai-express.md
+        - AWS S3 Connector Setup Guide: quality-management/getting-started/aws-s3-connector-setup-guide.md      
       - AI Assisted Manual Audit: quality-management/ai-assisted-manual-audit.md      
       - Analyze:
         - Dashboard:
@@ -487,6 +502,13 @@ nav:
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
           - Language Settings: quality-management/configure//langauge-settings.md
+    - Case Management:
+      - About Case Management: case-management/case-management.md
+      - Setup Process: case-management/setup-process.md   
+      - Configure Case: case-management/configure-cases.md
+      - Manage Cases and Tasks: case-management/manage-cases-and-tasks.md
+      - Agent Console: case-management/agent-console.md
+      - Case Analysis Dashboard: case-management/case-analysis-dashboard.md
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -495,7 +517,9 @@ nav:
       - FAQ: agentai/agent-experience/faq/agentai-faq.md
       - Configurations:
         - Conversation Events: agentai/configuration/conversation-events.md
-        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - Custom LLM Model in GenAI: agentai/configuration/custom-llm-model-in-genai.md
+        - Linked Services: agentai/configuration/linked-services.md
+        - Third Party Configuration: agentai/configuration/third-party-configuration.md
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
         - Feedback Settings: agentai/configuration/feedback-settings.md
         - Widget Theming Layout Customization: agentai/configuration/widget-theming-layout-customization.md
@@ -519,6 +543,7 @@ nav:
       - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
+
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
@@ -543,13 +568,18 @@ nav:
           - Model Building: generative-ai-tools/xogpt-model-specifications.md
           - Answer Generation Model: generative-ai-tools/xogpt-answer-generation-model.md
           - Conversation Summarization Model: generative-ai-tools/xogpt-conversation-summarization-model.md
+          - DialogGPT Model: generative-ai-tools/xogpt-dialoggpt-model.md
           - Response Rephrasing Model: generative-ai-tools/xogpt-response-rephrasing-model.md
           - User Query Paraphrasing Model: generative-ai-tools/xogpt-user-query-paraphrasing-model.md
         - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
       - Streaming Responses: generative-ai-tools/streaming-responses.md 
-    - GenAI Features: generative-ai-tools/genai-features.md
+    - GenAI Features: 
+      - About GenAI Features: generative-ai-tools/genai-features.md
+      - Automation AI - GenAI Features: generative-ai-tools/genai-features-automationai.md
+      - Search AI - GenAI Features: generative-ai-tools/genai-features-searchai.md
+      - Agent AI - GenAI Features: generative-ai-tools/genai-features-agentai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
       - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
@@ -640,9 +670,11 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
-          - Kore Voice Automation:
+          - Voice Automation:
             - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
+            - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
+            - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md

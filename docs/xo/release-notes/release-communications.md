@@ -1,6 +1,6 @@
 # AI for Service (XO) Release Communication
 
-AI for SErvice (XO) receives updates every fifteen days with new features, enhancements, and bug fixes. Release schedules may be adjusted during holidays.
+AI for Service (XO) receives updates every fifteen days with new features, enhancements, and bug fixes. Release schedules may be adjusted during holidays.
 
 ## Types of Release Information
 

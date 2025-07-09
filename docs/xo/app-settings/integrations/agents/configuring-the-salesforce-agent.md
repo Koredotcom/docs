@@ -1,6 +1,6 @@
 # Configuring the Salesforce Agent
 
-Salesforce is used for various needs of different teams in an organization, such as marketing, sales, commerce, service, and IT work as one from anywhere using the chat module. Kore.ai XO Platform’s Salesforce Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Salesforce.
+Salesforce is used for various needs of different teams in an organization, such as marketing, sales, commerce, service, and IT work as one from anywhere using the chat module. The Platform’s Salesforce Agent integration allows you to seamlessly hand off the virtual assistant conversations to your live agents on Salesforce.
 
 Use the configuration steps below as general guidelines to enable the Salesforce Agent integration. You may notice minor differences based on the version of Salesforce you are using.
 
@@ -15,7 +15,7 @@ Kore.ai’s Virtual Assistant (VA) serves as the central point of interaction fo
 
 ## Configuration
 
-The XO Platform supports the following Salesforce integration methods for agent transfer:
+The Platform supports the following Salesforce integration methods for agent transfer:
 
 
 * **Live Chat (Legacy)**: This method enables agent transfer using Salesforce’s traditional live chat interface. It suits users with existing Live Chat setups and offers real-time messaging between virtual assistants and human agents.
@@ -121,17 +121,17 @@ To retrieve the Button ID, follow these steps:
 
 #### Step 6: Enable the Salesforce Agent
 
-1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
+1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
 
    
 
 4. Click the Configurations tab and enter the following credentials for the Salesforce Agent:
-    1. **Live Agent URL**: The live agent URL endpoint for the Salesforce, which was copied in step 2.
-    2. **Organization ID**: The Organization ID for the Salesforce, which was copied in step 3.
-    3. **Deployment ID**: The Deployment ID for the Salesforce, which was copied in step 4.
-    4. **Button ID**: The Button ID for the Salesforce, which was copied in step 5.
+    1. **Live Agent URL**: The live agent URL endpoint for the Salesforce, copied before.
+    2. **Organization ID**: The Organization ID for the Salesforce, copied before.
+    3. **Deployment ID**: The Deployment ID for the Salesforce, copied before.
+    4. **Button ID**: The Button ID for the Salesforce, copied before.
 
     <img src="../images/configuring-the-salesforce-agent-img11.png" alt="Agent credentials" title="Agent credentials" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -141,11 +141,8 @@ To retrieve the Button ID, follow these steps:
     
         This option is available only when multiple agents are configured for your VA.
 
-7. You can customize the channel mapping by clicking the **Manage** link, as shown below:
 
-    <img src="../images/configuring-the-salesforce-agent-img12.png" alt="customize the channel mapping" title="customize the channel mapping" style="border: 1px solid gray;zoom:80%;"/>
-
-8. Click Manage to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img13.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
@@ -156,7 +153,7 @@ To retrieve the Button ID, follow these steps:
 
 #### Execution
 
-This section helps you verify how the conversations from the Kore.ai XO Platform are being handed over to the Salesforce agent after enabling it.
+This section helps you verify how the conversations from the Platform are being handed over to the Salesforce agent after enabling it.
 
 To verify the data exchange between Kore.ai’s VA and Salesforce agent, follow these steps:
 
@@ -254,3 +251,292 @@ Under Company Information, locate the field Salesforce.com Organization ID.
 7. Copy the Developer Name for future use.  
 <img src="../images/miaw3.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
 <img src="../images/miaw4.png" alt="Connection established between SF agent and user" title="Connection established between SF agent and user" style="border: 1px solid gray;zoom:80%;"/>
+
+
+#### Step 5: Enable the Salesforce Agent
+
+1. Log in to the Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
+2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** > **Chat** and click the **Salesforce**.
+
+   
+
+4. On the Configurations tab, select **Messaging for In-App and Web(MIAW)** and enter the following credentials for the Salesforce Agent:
+    * **Organization ID**: The Organization ID for Salesforce, copied before.
+    * **Organization Base URL**: The Deployment ID for Salesforce, copied before.
+    * **Developer Name**: The Salesforce developers, copied before.  
+    <img src="../images/miaw-metadata9.png" alt="Agent credentials" title="Agent credentials" style="border: 1px solid gray;zoom:80%;"/>
+
+6. If you want to make Salesforce the default agent, enable the **Default Agent System for all bot channels** option.
+
+    !!! Note
+    
+        This option is available only when multiple agents are configured for your VA.
+
+
+8. Click **Manage** to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
+
+    <img src="../images/miaw-map.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
+
+9. After mapping channels, click **Done**.
+10. Click **Save** to enable the Salesforce agent.
+11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
+
+
+
+
+
+## Additional Capabilities
+
+The Salesforce Agent integration supports metadata transfer for agent context, user-controlled session termination, and customizable system messages, ensuring faster resolutions and a consistent brand experience.
+
+
+### User-Controlled Session End
+
+Allow end-users to end live agent sessions using a configurable keyword set in the Script node. The platform displays this keyword during agent handoff, giving users more control over their interactions and helping reduce agent occupancy when the session is no longer needed.
+
+For example, in the following script, “endagentchat” is the keyword displayed to the end user to end the agent session.
+
+``` json
+let miawMetaInfo = {};
+miawMetaInfo.endChatShortHandCommand = "“endagentchat";
+context.session.BotUserSession.miawMetaInfo = miawMetaInfo;
+```
+
+### Customizable Standard Responses
+
+Customize system messages shown to end-users during agent handoff and live chat sessions, including wait time alerts, agent join messages, and session closure prompts. This ensures brand consistency and enhances clarity in user interactions.
+
+``` json
+{
+"en":{
+"lookingForAgentMessage": "Please hold while I find an available agent.",
+"agentJoinedMessage": "Agent joined the conversation.",
+"conversationClosedMessage": "Your session has ended, thanks for chatting with us.",
+"endChatFromUserInstruction": "To end agent conversation send endagentchat"
+},
+"ko":{
+"lookingForAgentMessage": "잠시만 기다려주세요. 대기열에 추가해드리겠습니다.",
+"agentJoinedMessage": "상담원이 대화에 참여했습니다.",
+"conversationClosedMessage": "대화가 종료되었습니다. 감사합니다.",
+"endChatFromUserInstruction": "상담원 대화를 종료하려면 endagentchat를 보내세요."
+},
+"es":{
+"lookingForAgentMessage": "Por favor, espere mientras busco un agente disponible.",
+"agentJoinedMessage": "El agente se ha unido a la conversación.",
+"conversationClosedMessage": "La conversación ha terminado. Gracias por chatear con nosotros.",
+"endChatFromUserInstruction": "Para terminar la conversación con el agente, envíe endagentchat"
+},
+"fr":{
+"lookingForAgentMessage": "Veuillez patienter pendant que je cherche un agente disponible.",
+"agentJoinedMessage": "L'agent a rejoint la conversation.",
+"conversationClosedMessage": "La conversation est terminée. Merci pour votre chat.",
+"endChatFromUserInstruction": "Pour terminer la conversation avec l'agent, envoyez endagentchat"
+},
+"de":{
+"lookingForAgentMessage": "Bitte warten, während ich einen verfügbaren Agenten finde.",
+"agentJoinedMessage": "Der Agent hat die Konversation beigetreten.",
+"conversationClosedMessage": "Die Konversation ist beendet. Vielen Dank für Ihren Chat.",
+"endChatFromUserInstruction": "Um die Konversation mit dem Agenten zu beenden, senden Sie endagentchat"
+},
+"ja":{
+"lookingForAgentMessage": "しばらくお待ちください。利用可能なエージェントを見つけています。",
+"agentJoinedMessage": "エージェントが会話に参加しました。",
+"conversationClosedMessage": "会話が終了しました。ありがとうございました。",
+"endChatFromUserInstruction": "エージェントとの会話を終了するには endagentchat を送信してください。"
+},
+"pl":{
+"lookingForAgentMessage": "Proszę poczekać, gdybym szukał dostępnego agenta.",
+"agentJoinedMessage": "Agent dołączył do rozmowy.",
+"conversationClosedMessage": "Rozmowa zakończona. Dziękujemy za czat.",
+"endChatFromUserInstruction": "Aby zakończyć rozmowę z agentem, wysyłaj endagentchat"
+},
+"ar":{
+"lookingForAgentMessage": "يرجى الإنتظار حتى أجد أحد المستخدمين المتاحين.",
+"agentJoinedMessage": "تم الانضمام إلى المحادثة.",
+"conversationClosedMessage": "تم إنهاء المحادثة. شكراً لك على الدردشة.",
+"endChatFromUserInstruction": "لإنهاء المحادثة مع الوكيل، قم بإرسال endagentchat"
+},
+"tr":{
+"lookingForAgentMessage": "Lütfen bekleyin, bir kullanılabilir aracı buluyorum.",
+"agentJoinedMessage": "Aracın konuşmaya katıldı.",
+"conversationClosedMessage": "Konuşma sona erdi. Teşşekkürler.",
+"endChatFromUserInstruction": "Aracın konuşmasını bitirmek için endagentchat gönderin."
+},
+"it":{
+"lookingForAgentMessage": "Per favore, attendi mentre cerco un agente disponibile.",
+"agentJoinedMessage": "L'agente si è unito alla conversazione.",
+"conversationClosedMessage": "La conversazione è terminata. Grazie per il chat.",
+"endChatFromUserInstruction": "Per terminare la conversazione con l'agente, invia endagentchat"
+},
+"pt":{
+"lookingForAgentMessage": "Por favor, espere enquanto procuro um agente disponível.",
+"agentJoinedMessage": "O agente entrou na conversa.",
+"conversationClosedMessage": "A conversa terminou. Obrigado pelo chat.",
+"endChatFromUserInstruction": "Para terminar a conversa com o agente, envie endagentchat"
+},
+"zh_cn":{
+"lookingForAgentMessage": "请稍等，我正在寻找可用的代理。",
+"agentJoinedMessage": "代理已加入对话。",
+"conversationClosedMessage": "对话结束。谢谢您的聊天。",
+"endChatFromUserInstruction": "为了结束与代理的对话，请发送 endagentchat"
+},
+"zh_tw":{
+"lookingForAgentMessage": "請稍等，我正在尋找可用的代理。",
+"agentJoinedMessage": "代理已加入對話。",
+"conversationClosedMessage": "對話結束。謝謝您的聊天。",
+"endChatFromUserInstruction": "為了結束與代理的對話，請發送 endagentchat"
+},
+"ca":{
+"lookingForAgentMessage": "Si us plau, espera mentre busco un agente disponible.",
+"agentJoinedMessage": "L'agent ha entrat en la conversació.",
+"conversationClosedMessage": "La conversació ha acabat. Gràcies pel chat.",
+"endChatFromUserInstruction": "Per acabar la conversació amb l'agent, envieu endagentchat"
+},
+"nl":{
+"lookingForAgentMessage": "Wacht even, ik zoek naar een beschikbare agent.",
+"agentJoinedMessage": "De agent is de conversatie binnengekomen.",
+"conversationClosedMessage": "De conversatie is afgerond. Bedankt voor het chatten.",
+"endChatFromUserInstruction": "Om de conversatie met de agent te beëindigen, stuur endagentchat"
+}
+}
+```
+
+### Pass Metadata or User Information to the Salesforce Agent System
+
+The platform automatically transfer comprehensive user context to Salesforce agents during handoffs, including usernames, case IDs, and other details. You can customize which metadata gets passed by configuring the script node before agent transfer. This seamless context sharing provides agents with complete conversation visibility, eliminating the need for users to repeat information and accelerating issue resolution.
+
+Sample Script:
+
+``` json
+let miawMetaInfo = {};
+miawMetaInfo.preChatInfo = {
+"Pincode": "500081",
+"City": "Hyderabad",
+"Country": "India"
+};
+context.session.BotUserSession.miawMetaInfo = miawMetaInfo;
+```
+
+Follow the steps to transfer the metadata and populate it on the Salesforce dashboard:
+
+* [Step 1: Configure Salesforce Agent in AI for Service](#step-1-configure-salesforce-agent-in-ai-for-service)
+
+* [Step 2: Update Messaging Session Object In Salesforce](#step-2-update-messaging-session-object-in-salesforce)
+
+* [Step 3: Map Custom Parameter In Salesforce](#step-3-map-custom-parameter-in-salesforce)
+
+* [Step 4: Add Pre-Chat Field in Embedded Service Deployment in Salesforce](#step-4-add-pre-chat-field-in-embedded-service-deployment-in-salesforce)
+
+* [Step 5: Create a Flow to Update Messaging Session in Salesforce](#step-5-create-a-flow-to-update-messaging-session-in-salesforce)
+
+
+
+
+
+#### Step 1: Configure Salesforce Agent in AI for Service
+
+Follow these steps: 
+
+
+
+1. Log in to Platform and navigate to App Settings > Integrations > Agent Transfer > Chat > Salesforce.
+2. On the Configurations tab, select **Messaging for In-App and Web(MIAW)** and enter the following credentials for the Salesforce Agent:
+    * **Organization ID**: The Organization ID for Salesforce, copied before.
+    * **Organization Base URL**: The Deployment ID for Salesforce, copied before.
+
+        !!! note
+
+            If your base URL is `koreaiinc.my.salesforce.com`, enter it as `https://koreaiinc.my.salesforce-srct.com`.
+
+    * **Developer Name**: The developer's name, copied before.  
+    <img src="../images/miaw-metadata9.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+
+3. Click Save.
+4. Go to the Dialogflow and insert a Script Node before the Agent Transfer Node.
+5. Use the sample script to configure the metadata to be transferred in the key-value pair. 
+
+
+
+#### Step 2: Update Messaging Session Object In Salesforce
+
+Follow these steps: 
+
+
+
+1. Log in to the Salesforce account.
+2. Navigate to Object Manager > Messaging Session > Fields & Relationships.
+3. Click New to create a custom field.
+4. Select the Data Type and click Next.
+5. Enter the Field Label, Length, and Field Name values. Click Next.  
+<img src="../images/miaw-metadata7.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+6. Check the Visibility and Ready-only check boxes as required. Click Next.  
+<img src="../images/miaw-metadata6.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+7. Click Save. Ensure to create a custom field for each field of metainfo.  
+<img src="../images/miaw-metadata8.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+
+
+#### Step 3:  Map Custom Parameter In Salesforce
+
+Follow these steps: 
+
+
+
+1. Navigate to Feature Settings > Service > Messaging > Messaging Settings.
+2. Locate and click on the Messaging Channel on which you want to map the custom parameter, for example, CustomClientTest.  
+<img src="../images/miaw-metadata2.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+3. In the Custom Parameter, click New map parameter.
+4. Enter Parameter Name, Parameter API Name, Channel Variable Name, Data Type, and Maximum Length. Click Save.  
+<img src="../images/miaw-metadata3.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+
+5. In Parameter Mappings, click New to add your custom parameter to the flow or agent task.
+6. Enter the Parameter and Flow Variable Name. Click Save.  
+<img src="../images/miaw-metadata10.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+7. Scroll to the top and click Active.
+
+
+#### Step 4: Add Pre-Chat Field in Embedded Service Deployment in Salesforce
+
+Follow these steps: 
+
+
+
+1. Navigate to Feature Settings > Service > Embedded Service > Embedded Service Deployments. The Embedded Service Deployment Settings page is displayed.
+2. Click the Messaging Channel and click Edit Pre-Chat.  
+<img src="../images/miaw-metadata12.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+3. In the Visible Pre-Chat Fields section, click Add. Select the field type to add the created field, which is available in the Hidden Pre-Chat Fields section.  
+<img src="../images/miaw-metadata1.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+4. Select the Field Type and Channel Variable Name. Click Save.  
+<img src="../images/miaw-metadata5.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+5. Once the field is added in the Visible Pre-Chat Fields section, you can optionally mark it as required. Scroll down and click Save.
+6. Click Pushish in the top right corner.
+
+
+#### Step 5: Create a Flow to Update Messaging Session in Salesforce
+
+Follow these steps: 
+
+
+1. Navigate to Process Automation > Flows.
+2. Select the configured flow for the Messaging Channel, or create and configure a new one. 
+   <img src="../images/miaw-metadata11.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+3. In the Toolbox, click New Resource. Select the Resource Type, API Name, Data Type, and Availability Flow. Click Done.
+
+    !!! note
+
+        Ensure the flow variable matches the API name of your custom Messaging Session field. This enables seamless metadata transfer from the Platform to Salesforce, providing agents with complete context. 
+
+4. Click Update Records and set the field values for the messaging session records.  
+<img src="../images/miaw-metadata4.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
+
+5. Save the updated record as a New version and then click Activate.

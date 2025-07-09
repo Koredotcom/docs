@@ -3,9 +3,9 @@ hide:
   - feedback
   - toc  
 ---
-# Key Differences Between XO v11 and v10
+# Key Differences Between AI for Service (XO) v11 and v10
 
-Key differences Between XO v11 and v10 are summarized below.
+Key differences are summarized below.
 
 ## Key Navigation Changes
 
@@ -89,8 +89,8 @@ All the configurations applicable across the app have been moved to a separate m
 ## Shared LLM & Generative Settings for All Products
 
 All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.
-[Learn more](../app-settings/generative-ai-tools/introduction.md#key-features)  
-<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
+[Learn more](../generative-ai-tools/introduction.md)  
+<img src="../images/ais-llm.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
 
 ## Global User Management
 
@@ -140,6 +140,5 @@ The platform offers different plans, and you can choose the plan for each produc
 
 ##### Related Links
 
-* [What's New in XO v11](./whats-new-in-xo-platform.md)
-* [Current Limitations](../release-notes/current-limitations.md)
+* [What's New in AI for Service (XO v11)](./whats-new-in-xo-platform.md)
 * [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)

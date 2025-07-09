@@ -19,6 +19,10 @@ Every interaction with the system creates valuable information. The Conversation
 
 * **Store full end user conversation data** saves complete conversation records (questions, responses, context) for review, troubleshooting, usage understanding, and system training.
 * **Do not store full end user conversation data** saves only basic interaction metadata (timestamps, user IDs, technical details), enhancing privacy while retaining operational records.
+     When enabled, this setting provides three flexible control levels for conversation data retention:
+     * **All Agents**: Applies no-storage policy universally across all agents, providing maximum privacy protection for sensitive environments.
+     * **All Agents Except Selected Agents**: Sets platform-wide privacy as default while allowing specific agents to retain conversation data for analytics or operational needs.
+     * **Only Selected Agents**: Applies no-storage policy exclusively to designated agents, ideal for compliance scenarios where certain agents handle regulated or sensitive data while maintaining standard retention for others.
 
 ### Data Retention Period
 

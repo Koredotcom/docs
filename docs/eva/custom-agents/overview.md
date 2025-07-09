@@ -16,4 +16,4 @@ Configurable AI agents designed for quick deployment and workflow integration wi
 
 * **Agentic Flow**: Allows multiple AI agents to execute sequentially in order to efficiently complete and automate complex operations. [Learn more](./agentic-flows.md).
 
-* **Autonomous Agent**: AI-powered solutions that utilize Kore’s Agent platform to autonomously manage complex tasks and workflows. [Learn more](./autonomous-agent.md).
+* **Autonomous Agent**: AI-powered solutions that utilize Agent platform to autonomously manage complex tasks and workflows. [Learn more](./autonomous-agent.md).

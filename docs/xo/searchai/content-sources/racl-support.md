@@ -8,7 +8,7 @@ Each file or knowledge base article has associated user access permissions. Duri
 
 Access control in SearchAI can be summarized with the following flowchart. 
 
-![Overview](../images/connectors/racl/overview1.png "RACL overview")
+![Overview](images/connectors/racl/overview1.png "RACL overview")
 
 
 The response to a query can vary depending on the end user’s identity.  Consider two users, where one can access the company’s policy documents and the other can only access the FAQs. If a policy description is requested, the first user will see the response generated from the policy document (assuming the best match to the query). On the other hand, since the second user cannot access the policy document, he will see the response generated from the FAQs (assuming the next best match). The response will differ in this case depending on the content of the two documents. 
@@ -42,7 +42,7 @@ The permissions for an item can be broadly categorized into the following types:
 ```
 
 2. **Group Permissions**- where the content specifies a group of users or a criteria that defines who can access it (for example, search-devteam@example.com).When the access information retrieved from the content refers to group permissions, SearchAI uses **Permission Entities**. A unique permission entity is created for each group or user criteria associated with the content. For example, if a Google Drive file is accessible to two individuals, “john.divi@kore.com”, “smitha.joseph@kore.com” and to all the members of the group “searchassisttest@gmail.com”, SearchAI will fetch the access list and store it in the indexed content. In this case, the first two entries are corresponding to the users, and the third is corresponding to the permission entity created for the group. 
-![Group Permissions](../images/connectors/racl/group-permissions.png "Group Permissions")
+![Group Permissions](images/connectors/racl/group-permissions.png "Group Permissions")
 Similarly, if a ServiceNow article gives access to two user criteria, SearchAI will create two permission entities corresponding to the user criteria. The article’s manager and owners will also be granted access. Hence, the sourceACL field will be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.
 ```json
 "sourceAcl": [
@@ -55,14 +55,14 @@ Similarly, if a ServiceNow article gives access to two user criteria, SearchAI w
 Note that the content and format of the permission entity can vary between connectors.
 
 3. **Public Access**: Where the content has no specific permissions associated with it and is accessible to all. In this case, no access control is required. The racl fields in the indexed content are set to *, as shown below. Any file indexed in this way will be accessible to all the users.
-![Public Access](../images/connectors/racl/public-access.png "public-access")
+![Public Access](images/connectors/racl/public-access.png "public-access")
 
 
 #### View Permission Information
 
 To view and verify the user permissions in the Answer Index, go to the **Browse page**, open the JSON view of a chunk corresponding to the file, and verify the contents of the sourceACL field. 
 
-![Chunk Viewer](../images/connectors/racl/chunk-viewer.png "Chunk Viewer")
+![Chunk Viewer](images/connectors/racl/chunk-viewer.png "Chunk Viewer")
 
 ### **Step 2: Verifying user identities**
 

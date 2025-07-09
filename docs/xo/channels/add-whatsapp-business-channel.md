@@ -53,9 +53,11 @@ Steps to configure **Infobip**:
 
         * **Username and Password**: The username and password of the **Infobip** account holder. Infobip’s API requires authentication and uses the basic authorization for sending and receiving messages over the API with these values.
         * **Webhook URL**: Copy the webhook URL provided in the configuration tab and update the same on the **Infobip developer portal** for Infobip to send the received messages from the subscriber (WhatsApp Business Messaging).
-        <img src="../images/whatsapp8.png" alt="infobib API" title="infobib API" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/whatsapp8.png" alt="infobib API" title="infobib API" style="border: 1px solid gray; zoom:70%;">  
 
-    * Select **Yes** to enable the **WhatsApp Business Messaging** channel.
+        * Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
+
+        * Select **Yes** to enable the **WhatsApp Business Messaging** channel.
     * Click **Save** to complete the integration setup.
     <img src="../images/whatsapp9.png" alt="save infobib configuration" title="save infobib configuration" style="border: 1px solid gray; zoom:70%;">
 
@@ -206,6 +208,7 @@ To set up the **Callback URL**, follow the steps below:
 
 10. Once the callback is set successfully on the Kore.ai XO Platform **WhatsApp Business Messaging** window, follow the steps below:
     * (Optional) Enable the **Associate an App** option, if required, and follow the configuration steps.
+    * Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
     * Select **YES** for the **Enable Channel** option.
     * Click **Save**.
 
@@ -347,8 +350,10 @@ On the WhatsApp Business Messaging platform, follow the below steps:
 2. Enter the **Phone Number** to map to the WhatsApp Business Messaging channel.
 3. Provide the **Account Key** you’ve received from the Karix support team.
 4. Provide the **Webhook URL** shared with the Karix support team.
-5. Select **Yes** for **Enable Channel**.
-6. Click **Save**.
+5. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
+6. Select **Yes** for **Enable Channel**.
+7. Click **Save**.  
+
 <img src="../images/whatsapp24.png" alt="configure karix" title="configure karix" style="border: 1px solid gray; zoom:70%;">
 
 ## Adding the WhatsApp Channel using Netcore Application
@@ -420,17 +425,17 @@ Finally, enable the channel on the XO Platform to start receiving WhatsApp messa
 2. Select *Netcore* for **Messaging Partner**.
 3. Add the registered WhatsApp Business Messaging phone number(s). A maximum of 20 numbers are allowed.
 4. Paste the API Key copied in step 6 [here](../channels/add-whatsapp-business-channel.md/#step-1-get-the-api-key){:target="_blank"}.
-5. Select “*Yes*” for **Enable Channel**.
-6. Click **Save**.
+5. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with   the app first.
+6. Select “*Yes*” for **Enable Channel**.
+7. Click **Save**.
 
     <img src="../images/enable-channel-netcore.png" alt="enable netcore" title="enable netcore" style="border: 1px solid gray; zoom:75%;">
-
 
 The **WhatsApp Business Messaging channel using Netcore** is enabled successfully.
 
 ## Adding the WhatsApp Channel Using Meta Cloud API
 
-This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account. 
+This integration uses Meta’s Cloud API for WhatsApp Business messaging that eliminates the need for third-party Business Solution Providers (BSPs) and enables businesses to access WhatsApp features directly through their Kore.ai account.
 
 To enable WhatsApp integration on the Kore.ai Platform, you must provide the WhatsApp phone number and API key in the Channel Configurations section and the Platform’s Webhook URL for the API callback in the CPaaS portal.
 
@@ -439,11 +444,6 @@ To enable WhatsApp integration on the Kore.ai Platform, you must provide the Wha
 - Seamless management of templates, catalogs, conversational flows, and payments.
 - Simplified account linking and configuration through Meta's developer platform.
 - Enhanced operational efficiency and customer satisfaction.
-
-### Prerequisites
-
-- Active WhatsApp Business account for your enterprise.
-- Active CPaSS account with WhatsApp enabled.
 
 ### Configuration Steps
 
@@ -482,7 +482,7 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 1. Click **Add product** under the Products section on the left navigation bar.
 
-    **Note:** Note that the **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
+    **Note:** The **Facebook Login for Business** is not available as default. Therefore, Kore recommends that you search for it to add under the My products section. Ignore, if it is already available.  
     <img src="../images/Products-add products.png" alt="Products-add products" title="Products-add products" style="border: 1px solid gray; zoom:70%;">
 
 2. Now, click the **Settings** tab of Facebook Login for Business.  
@@ -516,8 +516,9 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 
 #### Step 5: Verify the Webhook URL and Token
 
-1. From the **XO Platform Bot builder Configuration Page**, copy the **URL** and **Token**.
-   **Note:** Kore recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
+1. From the **XO Platform Bot builder Configuration Page**, copy the **URL** and **Token**.  
+
+    **Note:** Kore recommends you verify the Token and Callback URL by publishing your application. This ensures your token and URL is valid.  
    <img src="../images/verify-call-back.png" alt="verify-call-back" title="verify-call-back" style="border: 1px solid gray; zoom:70%;">
 
 2. Paste them in the **Callback URL** and **Verify token** respectively of the **Configuration** section under the **WhatsApp** section in the left navigation bar.  
@@ -526,8 +527,17 @@ To configure and enable WhatsApp Native integration via Cloud API, pursue the fo
 3. Click **Verify and save**.
 4. Now, from the Webhook fields, subscribe to the **messages** by enabling the toggle button.
 
-    !!! note: 
+!!!note
+
+     Kore recommends you to select the latest version of the messaging app while subscribing.
         
-        Kore recommends you to select the latest version of the messaging app while subscribing.
-        
-    <img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/Messages.png" alt="Messages" title="Messages" style="border: 1px solid gray; zoom:70%;">
+
+#### Step 6: Enable the Channel
+
+Finally, enable the channel on the XO Platform to start receiving WhatsApp messages by following the steps below:
+
+1. Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with   the app first.
+2. Select “*Yes*” for **Enable Channel**.
+3. Click **Save**.  
+<img src="../images/whatsapp25.png" alt="Enable_the_Channel" title="Enable_the_Channel" style="border: 1px solid gray; zoom:70%;">
