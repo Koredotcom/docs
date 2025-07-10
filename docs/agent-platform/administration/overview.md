@@ -8,7 +8,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
 6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
-7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, and [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}. 
+7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
 8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Levels of Users Management 
@@ -108,6 +108,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 - Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
+* Track custom script executions across runs and logs for deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
 
 **Security and Control**
 
@@ -266,6 +267,15 @@ The following modules and features are supported on the **Settings** Console:
 <li>Analyze hosting credits vs each successful/failed run to ensure optimal usage.</li>
    <li>Identify and isolate model runs with low response times for further investigation.</li>
    <li>Analyze requests, model outputs, response times, and sources to gain performance insights, diagnose errors, and optimize usage and experience.</li></ul></td>
+  </tr>
+          <tr>
+   <td><a href="https://docs.kore.ai/agent-platform/settings/monitoring/monitoring-custom-scripts/" target="_blank">Monitoring - Custom Scripts</a></td>
+   <td>Review and monitor key performance indicators for each internal or external script run that is executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
+      <td><ul><li>Select a single date or date range to view specific, time-based script performance metrics.</li>
+      <li>Analyze failed runs and identify failure patterns.</li>
+<li>Analyze each successful/failed run to ensure optimal usage.</li>
+   <li>Identify and isolate script runs with low response times for further investigation.</li>
+   <li>Analyze log-level data and troubleshoot script issues based on various log level and record-level metrics.</li></ul></td>
   </tr>
    <tr>
    <td><a href="https://docs.kore.ai/agent-platform/settings/security-and-control/single-sign-on/" target="_blank">Security and Control - Single Sign On</a></td>

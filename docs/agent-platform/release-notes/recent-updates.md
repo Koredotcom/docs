@@ -12,16 +12,12 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Simplified App Creation Process**
 
-The Agent Platform has simplified the app creation process, making it faster and more user-friendly. Users can set up apps with fewer configurations upfront that capture only the essential information. This enhancement reduces the setup time and improves the overall onboarding experience.  
-
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/create-app.md)
+The Agent Platform has simplified the app creation process, making it faster and more user-friendly. Users can set up apps with fewer configurations upfront that capture only the essential information. This enhancement reduces the setup time and improves the overall onboarding experience. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/create-app.md)
 
 
 **Updates to Agent Protocol**
 
-The Agent Platform now supports a **Universal Session Closure** API for consistent and reliable session management. It enables seamless session termination across integrations, addressing issues such as orphaned sessions and incomplete closures and ensuring a unified approach to managing session lifecycle.
-
-[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/sessions.md)
+The Agent Platform now supports a **Universal Session Closure** API for consistent and reliable session management. It enables seamless session termination across integrations, addressing issues such as orphaned sessions and incomplete closures and ensuring a unified approach to managing session lifecycle. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/sessions.md)
 
 
 **Enhanced Document Upload Feature**
@@ -34,11 +30,9 @@ The Document Upload feature has been enhanced to provide a smoother and more int
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/attachment-support.md)
 
 
-**Enhancements to the Import Feature**
+**Enhanced Import Feature**
 
-The Import/Export interface for Agentic Apps now lists all components involved in the app and clearly distinguishes between agent-linked and unlinked components. The interface uses visual indicators, including color-coded badges for tool types and proxy agent markers, to improve clarity and navigation. Additionally, upfront validation ensures smoother and more accurate imports, preventing configuration issues.
-
-[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/import.md)
+The Import/Export interface for Agentic Apps now lists all components involved in the app and clearly distinguishes between agent-linked and unlinked components. The interface uses visual indicators, including color-coded badges for tool types and proxy agent markers, to improve clarity and navigation. Additionally, upfront validation ensures smoother and more accurate imports, preventing configuration issues. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/import.md)
 
 
 **User Interface Enhancements**
@@ -55,24 +49,23 @@ The Debug Log panel in the Tool Flow builder now supports a fully expanded view.
 
 **Expanded Model Support**
 
-Support for a broader range of models has been added, offering greater flexibility in building and evaluating AI workflows. All models above are available in Agentic Apps, Prompt Studio, Tools, and Evaluation Studio.
+Support for a broader range of models has been added, offering greater flexibility in building and evaluating AI workflows. The models are supported in Agentic Apps, Prompt Studio, Tools, and Evaluation Studio.
 
 * Azure OpenAI models: Added support for `GPT-4.1`, `GPT-4.1-Mini`, and `GPT-4.5 preview`.
 * Gemini 2.0 and 2.5 models: Added support for `gemini-2.0-flash`, `gemini-2.0-flash-lite`, and `gemini-2.5-flash-preview-05-20`. 
-* Anthropic Claude 4 models \
-    Added support for `claude-sonnet-4-20250514` and `claude-opus-4-20250514`. 
+* Anthropic Claude 4 models: Added support for `claude-sonnet-4-20250514` and `claude-opus-4-20250514`. 
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 
 <font size="4">Observability</font>
 
-
 **Monitoring Custom Scripts Across Runs and Logs**
 
-The Monitoring module now allows administrators to track custom script executions across deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently.
+The Monitoring module now allows administrators to track custom script executions across deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more :octicons-arrow-right-24:](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}
 
 
-<font size="4">Bug Fixes</font>
-
+<font size="4">Bug Fix</font>
 
 **Vulnerability Fixes in Flow Service**
 
