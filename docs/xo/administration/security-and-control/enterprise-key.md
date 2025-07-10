@@ -72,17 +72,18 @@ Key benefits
 
 **5. Select Applications and Bots**
 
- 1. On the next screen, users will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.   
+ 1. On the next screen, you will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.   
  <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
 
  2. Review the list of all applications and bots in your workspace.
- 3. By default, all items are selected for CMK encryption.
- 4. Optionally deselect specific apps/bots to keep them on the default Kore.ai encryption.
- 5. Consider your security requirements when making selections.
+    
+    * By default, all items are selected for CMK encryption.
+    * Optionally deselect specific apps/bots to keep them on the default Kore.ai encryption.
+    * Consider your security requirements when making selections.
 
 **6. Complete Setup**: Click **Proceed** to finalize the configuration. 
     Your CMK will be added to the enterprise keys list. Encryption will begin on the specified enforcement date.
 
 !!!note
 
-    Users can modify the CMK (update the ARN and retest) until the Enforcement Date. After this date, they can only rotate the key or update the list of Apps/Bots encrypted with the CMK.
+    Admins can modify the CMK (update the ARN and retest) until the Enforcement Date. After this date, they can only rotate the key or update the list of Apps/Bots encrypted with the CMK.
