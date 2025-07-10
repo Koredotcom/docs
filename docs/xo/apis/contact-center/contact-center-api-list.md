@@ -136,7 +136,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
-| [Create SMS Campaign (Without SMS Template)](../create-sms-campaign-without-template.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
+| [Create SMS Campaign (Without SMS Template)](../contact-center/create-sms-campaign-without-template.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
 | [Create SMS Campaign (Using Template)](../contact-center/create-sms-campaign-using-template.md) | Creates an SMS campaign using a predefined message template. | Campaign Management |
 | [Create SMS Campaign (Advanced Format)](../contact-center/create-sms-campaign-advanced-format.md) | Creates an SMS campaign with advanced formatting using a specified experience flow and contact list. | Campaign Management |
 | [Get SMS Campaign by ID](../contact-center/get-sms-campaign-by-id.md) | Retrieves full details of an SMS campaign using the campaign ID. | Campaign Management |
@@ -169,14 +169,13 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
-| [Get All Campaigns](../get-all-campaigns.md) | Retrieves all campaigns associated with a specific account. | Campaign Management |
+| [Get All Campaigns](../contact-center/get-all-campaigns.md) | Retrieves all campaigns associated with a specific account. | Campaign Management |
 
 ### Contact List Management
 
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
-| [Get All Campaign List Details](../contact-center/get-all-campaign-list-details.md) | Retrieves metadata for all contact lists under a specific account, filtered by type (call or SMS). | Campaign Management |
-| [Get All Contact Details - Voice Campaigns](../contact-center/get-all-contact-details-voice-campaigns.md) | Retrieves metadata for all contact lists under a specific account, filtered by type (call or SMS). | Campaign Management |
+| [Get All Contact Details - Voice Campaigns](../contact-center/get-all-contact-details-voice-campaigns.md) | Retrieves metadata for all contact lists under a specific account, filtered by type. | Campaign Management |
 | [Create Contact List](../contact-center/create-contact-list.md) | Creates a new contact list for use in passive voice campaigns. | Campaign Management |
 | [Update Contact List](../contact-center/update-contact-list.md) | Updates the name of a contact list associated with a campaign. | Campaign Management |
 | [Get Contact List Details](../contact-center/get-contact-list-details.md) | Retrieves full details of a specific contact list using its ID. | Campaign Management |
