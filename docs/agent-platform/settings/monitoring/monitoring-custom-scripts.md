@@ -15,8 +15,8 @@ Monitoring custom script runs and logs offers the following benefits:
 
 ## Key Features
 
-* **Column Filters** enable you to view specific records by setting a column value or combining multiple filters using logical operators. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#filter-model-traces-by-columns){:target="_blank"}.
-* **Time-based filters** provide a comprehensive view of the selected script’s performance across runs/logs for a specific past date or date range. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#time-based-filters){:target="_blank"}.
+* **Column Filters** enable you to view specific records by setting a column value or combining multiple filters using logical operators. [Learn more](../monitoring/monitoring-custom-scripts.md/#filter-data-by-columns){:target="_blank"}.
+* **Time-based filters** provide a comprehensive view of the selected script’s performance across runs/logs for a specific past date or date range. [Learn more](../monitoring/monitoring-custom-scripts.md/#time-based-filters){:target="_blank"}.
 * **Search** lets you look up a specific script run(s) using the *Run ID* and other *String* type column values for runs and logs.
 
 <table>
@@ -80,9 +80,9 @@ Monitoring custom script runs and logs offers the following benefits:
 * Scripts that are currently being deployed in the script wizard (under **Settings** > **Manage Custom Scripts** section) are marked as **In Progress**.
    <img src="../images/in-progress-deployments.png" alt="in progress" title="in progress" style="border: 1px solid gray; zoom:75%;">
 
-* The **Metrics Summary** showcases the key performance metrics of the selected custom script across all executed runs. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#performance-metrics-summary){:target="_blank"}.
+* The **Metrics Summary** showcases the key performance metrics of the selected custom script across all executed runs. [Learn more](../monitoring/monitoring-custom-scripts.md/#performance-metrics-summary){:target="_blank"}.
 * The **table view** summarizes key metadata for successful, failed, and in-progress runs of the selected script, providing quick insights and enabling the monitoring of run-specific response times, analysis of the source and its type, viewing of failed runs and their failure rate, and detailed review of run logs.
-* Click on each script run record to see the record-level view of the log based on the **Run ID**. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#traces-input-output-and-metadata){:target="_blank"}.
+* Click on each script run record to see the record-level view of the log based on the **Run ID**. [Learn more](../monitoring/monitoring-custom-scripts.md/#record-view-log-specific-view-for-a-run){:target="_blank"}.
 * Click the **Sort** filter in the following columns to view the data in ascending or descending order by execution date:
     * **Executed on** (All Runs section)
          <img src="../images/executed-on.png" alt="executed on" title="executed on" style="border: 1px solid gray; zoom:75%;">
@@ -141,7 +141,7 @@ To access the feature, follow the steps below:
 * At least one custom script must be deployed and executed through an API call or an API/Function node to make this feature available.
 * If no custom script has been deployed and executed, or if it has been deployed but not yet executed, the following message is displayed. 
    
-   <img src="../images/no-data-to-display.png" alt="no data" title="no data" style="border: 1px solid gray; zoom:75%;">
+      <img src="../images/no-data-to-display.png" alt="no data" title="no data" style="border: 1px solid gray; zoom:75%;">
 
 * If a previously deployed and executed script is undeployed, only the existing run-level and log data remain accessible. No new runs or logs will be generated unless the script is redeployed and executed again. 
  
@@ -165,8 +165,8 @@ This feature provides a centralized view of actionable insights into run-level a
 The key features for customizing the data in the page include:
 
 * **Script Name Filter**: Use this to select and view data for a specific script you want to monitor. You can also choose another deployed and executed script from the list to view its metrics and logs.
-* **Time Selection Filter**: Required to analyze script runs data for a specific period in the past or current day. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#time-based-filters){:target="_blank"}.
-* **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis of runs and logs. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#filter-model-traces-by-columns){:target="_blank"}.
+* **Time Selection Filter**: Required to analyze script runs data for a specific period in the past or current day. [Learn more](../monitoring/monitoring-custom-scripts.md/#time-based-filters){:target="_blank"}.
+* **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis of runs and logs. [Learn more](../monitoring/monitoring-custom-scripts.md/#filter-data-by-columns){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -409,7 +409,7 @@ Time selection is available for the past and current period, including the ones 
 
 ### Steps to Set Time Range
 
-1. [Navigate](https://docs.kore.ai/agent-platform/settings/monitoring/analytics/model-traces/#access-model-traces){:target="_blank"} to the **Monitoring Custom Scripts** feature.
+1. [Navigate](../monitoring/monitoring-custom-scripts.md/#access-monitoring-custom-scripts){:target="_blank"} to the **Monitoring Custom Scripts** feature.
 2. Click the time selection dropdown.
    <img src="../images/time-selection-dropdown.png" alt="time selection" title="time selection" style="border: 1px solid gray; zoom:75%;">
 
@@ -500,7 +500,7 @@ Adding multiple filter levels enhances the visibility of runs/logs on the UI. Yo
 
    <img src="../images/logical-operators.png" alt="logical operators" title="logical operators" style="border: 1px solid gray; zoom:75%;">
 
-3. Follow **Steps 5 to 6** mentioned [here](../monitoring/monitoring-custom-scripts.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+<ol start="3"><li>Follow <b>Steps 5 to 6</b> mentioned <a href="https://docs.kore.ai/agent-platform/settings/monitoring/monitoring-custom-scripts/#steps-to-add-a-custom-filter" target="_blank">here</a>.</li></ol>
 
 The matched entries are displayed in the UI.
 
@@ -548,12 +548,12 @@ With features such as keyboard navigation (e.g., J/K to switch records), copy-to
 2. In the **All Runs** section, click the record you want to view.
 3. The record view page is displayed with the following information: 
 
-* Run ID
-* Log-specific information, including the *Log ID*, *Log level*, *Log message*, and *timestamp*. [Learn more](../monitoring/monitoring-custom-scripts.md/#log-level-metadata){:target="_blank"}.
-* JSON editors that display the script’s input and the function’s output, respectively. 
-* Navigation buttons.
+    * Run ID
+    * Log-specific information, including the *Log ID*, *Log level*, *Log message*, and *timestamp*. [Learn more](../monitoring/monitoring-custom-scripts.md/#log-level-metadata){:target="_blank"}.
+    * JSON editors that display the script’s input and the function’s output, respectively. 
+    * Navigation buttons.
 
-  <img src="../images/record-view.png" alt="record view" title="record view" style="border: 1px solid gray; zoom:75%;">
+       <img src="../images/record-view.png" alt="record view" title="record view" style="border: 1px solid gray; zoom:75%;">
 
 ## Enhanced Logging for gVisor Monitoring
 
@@ -562,7 +562,7 @@ The Agent Platform offers two convenient logging options to help you effectively
 **Key Considerations**
 
 * When using **default logging** (e.g., `print()` in Python or `console.log()` in JavaScript), logs appear in the **Logs** section only after the script execution completes (success or failure).
-* C**ustom logging** with the `korelogger` library enables real-time log streaming where logs are populated in the table as they're generated.
+* **Custom logging** with the `korelogger` library enables real-time log streaming where logs are populated in the table as they're generated.
 * We recommend using `korelogger` for its log-level control and immediate log visibility, which significantly improves monitoring and debugging efficiency.
 
 
@@ -608,7 +608,7 @@ Additionally, the same logs are also captured in stdout in the following format:
 <p class="admonition-title">Note</p>
 <p>The above log format can be modified as required.</p></div>
 
-A sample script and its output, which uses the ‘korelogger’ library in Python, are given below:
+A sample script and its output, which uses the `korelogger` library in Python, are given below:
 
 **Script**
 
