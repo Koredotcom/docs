@@ -71,7 +71,7 @@ This date determines when your CMK will start encrypting data. Plan this date ca
 **4. Test Connection**
 
 * Click **TEST Connection** to verify the configuration.
-The system will validate Key accessibility, Proper permissions, and Authentication credentials.  If the test is successful, the **NEXT** button will be enabled.
+The system will validate Key accessibility, Proper permissions, and Authentication credentials.  If the test is successful, the **Next** button will be enabled.
 
 
 **5. Select Applications and Bots**
