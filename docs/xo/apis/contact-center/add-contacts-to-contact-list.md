@@ -4,7 +4,7 @@ Use this API to add one or more contacts to an existing contact list.
 
 | **Method**    | POST |
 |---------------|------|
-| **Endpoint**  | `https://{{host}}/api/1.1/public/{{streamId}}/campaign/contactList/addContacts?accountId={{accountId}}` |
+| **Endpoint**  | `https://{{host}}/api/1.1/public/{{IID}}/campaign/contactList/addContacts` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`  <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
@@ -14,39 +14,31 @@ Use this API to add one or more contacts to an existing contact list.
 | **Parameter** | **Description** | **Type** |
 |---------------|----------------|----------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `streamId`    | botId or streamId. You can access it from the General Settings page of the bot. | string, required |
-
-## Query Parameter
-
-| **Parameter** | **Description**                            | **Type**         |
-|---------------|--------------------------------------------|------------------|
-| `accountId`   | The unique ID associated with the account. | string, required |
+| `IId`    | The application ID. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/api/1.1/public/{{streamId}}/campaign/contactList/addContacts?accountId={{accountId}}' \
+curl --location 'https://{{host}}/api/1.1/public/{{IID}}/campaign/contactList/addContacts' \
 --header 'auth: <token>' \
---header 'iid: st-eb9fd8be-e88c-5ab0-908d-8da48793xxxx' \
---header 'accountId: 6818bd1c713e9c3db50bxxxx' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'Content-Type: application/json' \
---data-raw '{
-    "contact_list_name": "Contact list of Passive June 27",
+--data '{
+    "contact_list_name": "Renewal Due - July 2025",
     "data": [{
-        "phoneNumber": "9122333445566",
-        "first name": "John",
-        "last name": "Doe",
-        "email": "john.doe@abc.com"
+        "phoneNumber": "9122333445566"
     }]
 }'
 ```
 
 ## Headers
 
-| **Header**   | **Description**                                                                 | **Required/Optional** |
-|--------------|----------------------------------------------------------------------------------|------------------------|
-| `iid`        | Stream or application ID. For example, `st-eb9fd8be-e88c-5ab0-908d-8da48793xxxx` | required               |
-| `accountId`  | The unique ID associated with the account.                                       | string, required       |
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Body Parameter
 
@@ -58,8 +50,7 @@ curl --location 'https://{{host}}/api/1.1/public/{{streamId}}/campaign/contactLi
 
 ```
 {
-    "status": "success",
-    "message": "Contacts queued for addition."
+    "message": "Adding contacts to public list is in progress"
 }
 ```
 

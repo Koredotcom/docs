@@ -4,7 +4,7 @@ Use this API to create an SMS campaign using a predefined message template.
 
 | **Method**        | POST                                                                                                                                                    |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}`                                |
+| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign?campaignType=sms`                                |
 | **Content-Type**  | `application/json`                                                                                                                                       |
 | **Authorization** | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**     | Campaign Management                                                                                                                                      |
@@ -14,32 +14,34 @@ Use this API to create an SMS campaign using a predefined message template.
 | **Parameter** | **Description**                                                                | **Type**         |
 |---------------|--------------------------------------------------------------------------------|------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                      | string, required |
-| `streamId`    | botId or streamId. You can access it from the General Settings page of the bot. | string, required |
+| `IId`    | the application ID| string, required |
 
 ## Query Parameters
 
 | **Parameter**   | **Description**                                | **Type**         |
 |------------------|------------------------------------------------|------------------|
-| `accountId`      | The unique ID associated with the account.     | string, required |
 | `campaignType`   | Type of Campaign. Use `"sms"`.                 | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType={{campaignType}}' \
+curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign?campaignType=sms' \
 --header 'auth: <token>' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494exxxx' \
+--header 'Content-Type: application/json' \
 --data '{
-    "name": "SMS From API - With a Message Template - 1",
-    "description": "SMS From API - With a Message Template - 1",
+    "name": "Billing Alert Template Campaign",
+    "description": "Uses a pre-approved message template to alert customers about pending bills. Includes dynamic fields for customer name, due date, and bill amount",
     "contactLists": [
-     "APIContctList"
+     "Renewal Due - May/June 2025"
     ],
     "campaignType": "sms",
     "priority": "5",
     "format": "simple",
     "message": {
-        "templateId": "cmt-88fcd16f-bdb2-4d4d-8a2c-0324c7f9xxxx",
-        "message": "R3JlZXRpbmdzLCAhIFdlJ3JlIHRocmlsbGVkIHRvIGhhdmUgeW91IGpvaW4gdXMuIEFjY2VzcyBvdXIgdG9wIHRocmVlIGJlZ2lubmVyJ3MgdGlwcyBieSBjbGlja2luZyBvbiB0aGlzIGxpbms6IGh0dHBzOi8veW91cndlYnNpdGUuY29tL3RpcHMuIElmIHlvdSBoYXZlIGFueSBpbnF1aXJpZXMsIGRvbid0IGhlc2l0YXRlIHRvIHNlbmQgdXMgYSByZXBseSByaWdodCBoZXJlLg%3D%3D"
+        "template_name": "Payment Reminder Template",
+        "message": "VGhpcyBpcyBhIHJlbWluZGVyIHRoYXQgeW91ciBwYXltZW50IGlzIGR1ZSBzb29uLiBQbGVhc2UgY29tcGxldGUgdGhlIHBheW1lbnQgb24gdGltZSB0byBhdm9pZCBhbnkgc2VydmljZSBpbnRlcnJ1cHRpb24uIFZpc2l0IHlvdXIgYWNjb3VudCB0byBwYXkgbm93Lg%3D%3D"
     },
     "dialingStrategy": {
         "callerId": {
@@ -83,11 +85,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 }'
 ```
 
-## Header
+## Headers
 
-| **Header** | **Description**                | **Required/Optional** |
-|------------|--------------------------------|------------------------|
-| `auth`     | JWT token for authentication.  | required               |
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Body Parameters
 
@@ -120,17 +124,17 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 ```
 {
     "status": "success",
-    "message": "Campaign SMS From API - With a Message Template - 1 creation in progress",
+    "message": "Campaign Billing Alert Template Campaign creation in progress",
     "data": {
-        "_id": "cd-eef4b45f-d7b6-5855-9fc2-4d4c6811xxxx",
-        "name": "SMS From API - With a Message Template - 1",
-        "lname": "sms from api - with a message template - 1",
-        "description": "SMS From API - With a Message Template - 1",
+        "_id": "cd-d6824984-fb9c-513f-b7aa-25c355fdxxxx",
+        "name": "Billing Alert Template Campaign",
+        "lname": "billing alert template campaign",
+        "description": "Uses a pre-approved message template to alert customers about pending bills. Includes dynamic fields for customer name, due date, and bill amount",
         "status": "Ready",
         "priority": "5",
         "dialingStrategy": {
             "callerId": {
-                "phoneNumber": "+919876543210
+                "phoneNumber": "+919876543210"
             },
             "callingHours": {
                 "frequency": "WEEKLY",
@@ -165,19 +169,20 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
             }
         },
         "message": {
-            "message": "R3JlZXRpbmdzLCAhIFdlJ3JlIHRocmlsbGVkIHRvIGhhdmUgeW91IGpvaW4gdXMuIEFjY2VzcyBvdXIgdG9wIHRocmVlIGJlZ2lubmVyJ3MgdGlwcyBieSBjbGlja2luZyBvbiB0aGlzIGxpbms6IGh0dHBzOi8veW91cndlYnNpdGUuY29tL3RpcHMuIElmIHlvdSBoYXZlIGFueSBpbnF1aXJpZXMsIGRvbid0IGhlc2l0YXRlIHRvIHNlbmQgdXMgYSByZXBseSByaWdodCBoZXJlLg%3D%3D"
+            "template_name": "Payment Reminder Template",
+            "message": "PHA%2BVGhpcyBpcyBhIDxzdHJvbmc%2BcmVtaW5kZXI8L3N0cm9uZz4gdGhhdCB5b3VyIHBheW1lbnQgaXMgZHVlIHNvb24uIFBsZWFzZSBjb21wbGV0ZSB0aGUgcGF5bWVudCBvbiB0aW1lIHRvIGF2b2lkIGFueSBzZXJ2aWNlIGludGVycnVwdGlvbi4gVmlzaXQgeW91ciBhY2NvdW50IHRvIHBheSBub3cuPC9wPg%3D%3D",
+            "templateId": "cmt-152aa8a4-81a6-591e-aff3-d5645dafxxxx"
         },
-        "totalMessagesSent": 0,
-        "direction": "simple",
-        "createdAt": "2025-06-26T07:27:55.419Z",
-        "updatedAt": "2025-06-26T07:27:55.419Z",
+        "createdAt": "2025-06-27T08:48:57.215Z",
+        "updatedAt": "2025-06-27T08:48:57.215Z",
         "schedule": {
             "isSchedulingEnabled": false
         },
         "contactLists": [
-            "APIContctList"
+            "Renewal Due - May/June 2025"
         ],
-        "enableMachineDetect": false
+        "enableMachineDetect": false,
+        "format": "simple"
     }
 }
 ```
@@ -212,3 +217,4 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaig
 | `schedule.isSchedulingEnabled`               | Indicates if scheduling is enabled for the campaign.                  | boolean          |
 | `contactLists`                               | List of contact list names used in the campaign.                      | array            |
 | `enableMachineDetect`                        | Indicates if machine detection is enabled (not applicable for sms).   | boolean          |
+| `data.format`                     | Specifies the message format (for example, `simple`, `template`).                  | String  |

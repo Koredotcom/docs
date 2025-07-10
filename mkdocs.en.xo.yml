@@ -154,12 +154,13 @@ nav:
           - Voice:
             - Voice Gateway: 
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
-              - Advanced Topics:
-                - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
-                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
-                - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
-                - Troubleshooting: channels/voice-gateway/troubleshooting.md
+              - Advanced Configuration and Customization:
+                - Utility Functions in Voice Gateway: channels/voice-gateway/utility-functions-in-voice-gateway.md
+                - Speech Customization (Call Control Parameters): channels/voice-gateway/speech-customization.md
+              - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
+              - SIP Trunk: channels/voice-gateway/sip-trunk.md
+              - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
+              - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -350,6 +351,7 @@ nav:
                 - Hive: searchai/content-sources/connectors/hive.md
                 - HubSpot: searchai/content-sources/connectors/hubspot.md
                 - Jenkins: searchai/content-sources/connectors/jenkins.md
+                - Jfrog: searchai/content-sources/connectors/jfrog.md
                 - Jira: searchai/content-sources/connectors/jira.md
                 - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
                 - JSON Connector: searchai/content-sources/connectors/json.md
@@ -501,6 +503,13 @@ nav:
           - Conversation Intelligence: quality-management/configure/conversation-intelligence.md
           - Quality AI Genenal Settings: quality-management/configure/quality-ai-general-settings.md
           - Language Settings: quality-management/configure//langauge-settings.md
+    - Case Management:
+      - About Case Management: case-management/case-management.md
+      - Setup Process: case-management/setup-process.md   
+      - Configure Case: case-management/configure-cases.md
+      - Manage Cases and Tasks: case-management/manage-cases-and-tasks.md
+      - Agent Console: case-management/agent-console.md
+      - Case Analysis Dashboard: case-management/case-analysis-dashboard.md
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -535,7 +544,6 @@ nav:
       - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
-      - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
@@ -662,10 +670,11 @@ nav:
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
       - Contact Center:
-          - Kore Voice Automation:
+          - Voice Automation:
             - Talkdesk: contactcenter/integrations/talkdesk/kore-iva-integration-with-talkdesk.md
             - Zoom: contactcenter/integrations/voice-automation-with-zoom-cc/kore-voice-automation-with-zoom-contact-center.md
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
+            - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
@@ -783,9 +792,12 @@ nav:
         - Import User Data: administration/enrollment/importing-users-and-user-data.md
         - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
       - Security and Control:
+        - Security and Control Module Overview: administration/security-and-control/security-module-overview.md
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
+        - Kore.ai Connector: administration/kore-ai-connector.md
+        - Enterprise Key: administration/security-and-control/enterprise-key.md
+        - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md
-      - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
       - Billing: administration/billing.md

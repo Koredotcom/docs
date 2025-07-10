@@ -61,7 +61,7 @@ The following are the Conversation Languages supported by the Platform:
 </tr>
 <tr>
 <td>Albanian  – sq</td>
-<td>Italian – if</td>
+<td>Italian – it</td>
 <td>Samoan – sm</td>
 </tr>
 <tr>
