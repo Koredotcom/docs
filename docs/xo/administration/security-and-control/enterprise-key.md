@@ -47,14 +47,14 @@ BYOK empowers enterprises to use their own Customer Master Keys (CMKs) for encry
 ### Implementation Steps
 
 
-#### **1. Initiate BYOK Setup**
+**1. Initiate BYOK Setup**
 
 * On the Admin Console, navigate to the **Enterprise Key** menu.
 * Click **Create Key** under the "Bring Your Own Key" section.  
 <img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
 
 
-#### **2. Configure Cloud Provider Details**
+**2. Configure Cloud Provider Details**
 
 * Select your **Cloud Provider** from the dropdown menu
 * Enter the appropriate key identifier:
@@ -64,18 +64,18 @@ BYOK empowers enterprises to use their own Customer Master Keys (CMKs) for encry
     * **For AWS**: Role ARN
     * **For Azure**: Tenant ID
 
-#### **3. Set Enforcement Date**
+**3. Set Enforcement Date**
 
 * Choose an **Enforcement Date** for when the encryption will begin.
 This date determines when your CMK will start encrypting data. Plan this date carefully to ensure a smooth transition.
 
-#### **4. Test Connection**
+**4. Test Connection**
 
 * Click **TEST Connection** to verify the configuration.
 The system will validate Key accessibility, Proper permissions, and Authentication credentials.  If the test is successful, the **NEXT** button will be enabled.
 
 
-#### **5. Select Applications and Bots**
+**5. Select Applications and Bots**
 
 On the next screen, users will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.   
 <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
@@ -85,7 +85,7 @@ On the next screen, users will see a list of all **Apps/Bots** in the workspace 
 * Optionally deselect specific apps/bots to keep them on the default Kore.ai encryption.
 * Consider your security requirements when making selections.
 
-#### **6. Complete Setup**
+**6. Complete Setup**
 
 * Click **Proceed** to finalize the configuration.
 * Your CMK will be added to the enterprise keys list.
