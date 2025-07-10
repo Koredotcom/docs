@@ -16,15 +16,13 @@ Use the following parameters to control your application's behavior.
 
 This configuration is used when users upload documents during interactions as contextual data. Click on **Modify Configuration** to configure the following file upload restrictions. 
 
-
-
 * **File Limit**: Maximum number of files a user can upload. This can take a maximum value of **10.**
 * **Max File Size**: Maximum size of each file, up to **10 MB**. 
 * **Max Tokens**: Specifies the maximum combined size of all uploaded files, measured in tokens. This value can be set up to **160,000 tokens**. If the total token size of all files exceeds this threshold, files may be partially processed.
 
     **Note**: This limit is also constrained by the token limit of the underlying LLM. The platform uses the lower value between the specified Max Tokens and 80% of the LLM’s maximum token limit. If the specified Max Tokens exceeds the LLM’s capacity, the LLM limit takes precedence, and this value is ignored.
 
-
+Learn more about [Attachment Support in User Interactions](../attachment-support.md).
 
 ### Thought Streaming
 
@@ -38,7 +36,9 @@ The following configurations are **only** applicable to the **Playground.**
 
 ### Document Upload
 
-Enable this option to allow users to upload documents during interactions in the Playground. These documents are used as **contextual data** during the conversation. When enabled, the **Attachment Configuration** settings are applied to the uploaded documents. [Learn More](../attachment-support.md). 
+Enable this option to allow users to upload documents during interactions in the Playground. These documents are used as **contextual data** during the conversation. When enabled, the **Attachment Configuration** settings are applied to the uploaded documents. 
+
+For more information, see [Attachment Support in User Interactions](../attachment-support.md). 
 
 
 ### Thought Streaming
