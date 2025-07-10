@@ -18,6 +18,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 * [SMS Campaigns](#sms-campaigns)
 * [Voice Campaigns](#voice-campaigns)
 * [Campaign Status](#campaign-status)
+* [Campaign Details](#campaign-details)
 * [Contact List Management](#contact-list-management)
 * [Voice Gateway (VG) APIs](#voice-gateway-vg-apis)
 * [Call Recording APIs](#call-recording-apis)
