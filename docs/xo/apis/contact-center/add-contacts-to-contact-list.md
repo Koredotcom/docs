@@ -14,7 +14,7 @@ Use this API to add one or more contacts to an existing contact list.
 | **Parameter** | **Description** | **Type** |
 |---------------|----------------|----------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId`    | The application ID. | string, required |
+| `IId`    | The Application ID. | string, required |
 
 ## Sample Request
 
@@ -58,5 +58,4 @@ curl --location 'https://{{host}}/api/1.1/public/{{IID}}/campaign/contactList/ad
 
 | **Parameter** | **Description**                               | **Type** |
 |---------------|-----------------------------------------------|----------|
-| `status`      | Indicates the status. Value: `"success"`      | string   |
 | `message`     | Success message. Indicates queued operation.  | string   |

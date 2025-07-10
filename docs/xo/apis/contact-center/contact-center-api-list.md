@@ -135,12 +135,11 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
-| [Create SMS Campaign Without SMS Template](../contact-center/create-sms-campaign.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
+| [Create SMS Campaign (Without SMS Template)](../create-sms-campaign-without-template.md) | Creates an SMS campaign with a “None” message format. | Campaign Management |
 | [Create SMS Campaign (Using Template)](../contact-center/create-sms-campaign-using-template.md) | Creates an SMS campaign using a predefined message template. | Campaign Management |
 | [Create SMS Campaign (Advanced Format)](../contact-center/create-sms-campaign-advanced-format.md) | Creates an SMS campaign with advanced formatting using a specified experience flow and contact list. | Campaign Management |
 | [Get SMS Campaign by ID](../contact-center/get-sms-campaign-by-id.md) | Retrieves full details of an SMS campaign using the campaign ID. | Campaign Management |
 | [Update SMS Campaign](../contact-center/update-sms-campaign.md) | Updates an existing SMS campaign with new format, contact lists, experience flow, or dialing strategy. | Campaign Management |
-| [Get All SMS Campaigns](../contact-center/get-all-sms-campaigns.md) | Retrieves all SMS campaigns associated with a specific account. | Campaign Management |
 | [Start SMS Campaign](../contact-center/start-sms-campaign.md) | Starts an SMS campaign using stream ID and campaign ID. | Campaign Management |
 | [Stop SMS Campaign](../contact-center/stop-sms-campaign.md) | Stops an active SMS campaign using stream ID and campaign ID. | Campaign Management |
 | [Delete SMS Campaign](../contact-center/delete-sms-campaign.md) | Deletes an active SMS campaign using stream ID and campaign ID. | Campaign Management |
@@ -155,7 +154,6 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Create Voice Campaign - Preview Mode](../contact-center/create-voice-campaign-preview.md) | Creates a voice campaign that lets agents preview contact info before calling. Routes answered calls to a queue. | Campaign Management |
 | [Update Voice Campaign](../contact-center/update-voice-campaign.md) | Updates the configuration of an existing voice campaign, including metadata, strategies, and schedules. | Campaign Management |
 | [Get Voice Campaign by ID](../contact-center/get-voice-campaign-by-id.md) | Fetches complete details of a voice campaign using campaign ID. | Campaign Management |
-| [Get All Voice Campaigns](../contact-center/get-all-voice-campaigns.md) | Retrieves all voice campaigns linked to a specific account. | Campaign Management |
 | [Start Voice Campaign](../contact-center/start-voice-campaign.md) | Starts an active voice campaign using stream ID and campaign ID. | Campaign Management |
 | [Stop Voice Campaign](../contact-center/stop-voice-campaign.md) | Stops an active voice campaign using stream ID and campaign ID. | Campaign Management |
 | [Delete Voice Campaign](../contact-center/delete-voice-campaign.md) | Deletes an active voice campaign using stream ID and campaign ID. | Campaign Management |
@@ -165,6 +163,12 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | API | Description | Associated App Scope |
 |--------|------------------|---------------------------|
 | [Get Campaign Status](../contact-center/get-campaign-status.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
+
+### Campaign Details
+
+| API | Description | Associated App Scope |
+|--------|------------------|---------------------------|
+| [Get All Campaigns](../get-all-campaigns.md) | Retrieves all campaigns associated with a specific account. | Campaign Management |
 
 ### Contact List Management
 

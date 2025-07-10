@@ -14,7 +14,7 @@ Use this API to create a new contact list for use in passive voice campaigns.
 | **Parameter** | **Description**                                                                                     | **Type**          |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                            | string, required  |
-| `IId`    | The application ID.            | string, required  |
+| `IId`    | The Application ID.            | string, required  |
 
 ## Sample Request
 

@@ -14,7 +14,7 @@ Use this API to create an SMS campaign using a predefined message template.
 | **Parameter** | **Description**                                                                | **Type**         |
 |---------------|--------------------------------------------------------------------------------|------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                      | string, required |
-| `IId`    | the application ID| string, required |
+| `IId`    | the Application ID| string, required |
 
 ## Query Parameters
 
@@ -217,4 +217,4 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign?cam
 | `schedule.isSchedulingEnabled`               | Indicates if scheduling is enabled for the campaign.                  | boolean          |
 | `contactLists`                               | List of contact list names used in the campaign.                      | array            |
 | `enableMachineDetect`                        | Indicates if machine detection is enabled (not applicable for sms).   | boolean          |
-| `data.format`                     | Specifies the message format (for example, `simple`, `template`).                  | String  |
+| `data.format`                     | Specifies the message format (for example, `simple`).                  | string  |

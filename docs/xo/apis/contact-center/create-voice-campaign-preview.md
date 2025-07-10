@@ -4,7 +4,7 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 
 | **Method**       | POST                                                                                                                                                         |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?campaignType=voice`                                     |
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{IId}}/campaign?campaignType=voice`                                     |
 | **Content-Type** | `application/json`                                                                                                                                           |
 | **Authorization**| `auth: {{JWT}}`  <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                      |
 | **API Scope**    | Campaign Management                                                                                                                                          |
@@ -14,7 +14,7 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 | **Parameter** | **Description**                                                                                   | **Type**          |
 |---------------|---------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                          | string, required  |
-| `botId`    | You can access it from the General Settings page of the bot.                  | string, required  |
+| `IId`    | The Application ID.                  | string, required  |
 
 ## Query Parameter
 

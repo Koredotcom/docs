@@ -14,7 +14,7 @@ Use this API to start an active SMS campaign for a given stream ID and campaign 
 | **Parameter** | **Description**                                                                                     | **Type**          |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                            | string, required  |
-| `IId`    | The application ID.                    | string, required  |
+| `IId`    | The Application ID.                    | string, required  |
 | `campaignId`  | Unique identifier of the campaign to trigger.                                                      | string, required  |
 
 ## Query Parameters

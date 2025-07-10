@@ -14,7 +14,7 @@ Use this API to update a specific contact list associated with a campaign.
 | **Parameter**     | **Description**                                                                  | **Type**          |
 |------------------|----------------------------------------------------------------------------------|-------------------|
 | `host`           | Environment URL, for example, `https://platform.kore.ai`                         | string, required  |
-| `IId`       | The application ID. | string, required  |
+| `IId`       | The Application ID. | string, required  |
 | `contactListId`  | Unique identifier of the contact list to update.                                 | string, required  |
 
 ## Sample Request
@@ -31,7 +31,6 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/con
     "source": "passiveApiIntegration",
     "allowDuplicates": true
 }'
-
 ```
 
 ## Headers
@@ -75,14 +74,14 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/con
 
 | **Parameter**                          | **Description**                                                  | **Type**   |
 |------------------------------------|--------------------------------------------------------------|--------|
-| `status`                           | Indicates the success or failure of the API call.            | String |
-| `message`                          | Message confirming the update operation.                     | String |
-| `data`                             | Contains details of the updated contact list.                | Object |
-| `data.contactListId`              | Unique identifier of the contact list.                       | String |
-| `data.body`                        | Object with updated metadata of the contact list.            | Object |
-| `data.body.name`                   | Name of the contact list.                                    | String |
-| `data.body.orgId`                 | Unique identifier of the organization.                       | String |
-| `data.body.iId`                   | Instance ID associated with the request context.             | String |
-| `data.body.listType`              | Type of the list (for example, `call`, `sms`).                      | String |
-| `data.body.accountId`             | Identifier of the account to which the list belongs.         | String |
-| `data.body.updatedBy`             | Identifier of the user who performed the update.             | String |
+| `status`                           | Indicates the success or failure of the API call.            | string |
+| `message`                          | Message confirming the update operation.                     | string |
+| `data`                             | Contains details of the updated contact list.                | object |
+| `data.contactListId`              | Unique identifier of the contact list.                       | string |
+| `data.body`                        | Object with updated metadata of the contact list.            | object |
+| `data.body.name`                   | Name of the contact list.                                    | string |
+| `data.body.orgId`                 | Unique identifier of the organization.                       | string |
+| `data.body.iId`                   | Instance ID associated with the request context.             | string |
+| `data.body.listType`              | Type of the list (for example, `call`, `sms`).                      | string |
+| `data.body.accountId`             | Identifier of the account to which the list belongs.         | string |
+| `data.body.updatedBy`             | Identifier of the user who performed the update.             | string |

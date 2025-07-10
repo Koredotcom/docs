@@ -14,7 +14,7 @@ Use this API to delete an existing contact list associated with a campaign.
 | **Parameter**    | **Description**                                                                 | **Type**         |
 |------------------|----------------------------------------------------------------------------------|------------------|
 | `host`           | Environment URL, for example, `https://platform.kore.ai`                         | string, required |
-| `IId`       | The application ID. | string, required |
+| `IId`       | The Application ID. | string, required |
 | `contactListId`  | Unique identifier of the contact list to update.                                 | string, required |
 
 ## Sample Request
@@ -77,35 +77,35 @@ curl --location --request DELETE 'https://{{host}}/agentassist/api/v1/public/{{I
 
 ## Response Body Parameters
 
-| Parameter                            | Description                                                                 | Type    |
+| **Parameter**                            | **Description**                                                                 | **Type**    |
 |--------------------------------------|-----------------------------------------------------------------------------|---------|
-| `status`                             | Indicates whether the API call was successful.                             | String  |
-| `message`                            | Describes the outcome of the delete operation.                             | String  |
-| `data`                               | Object containing the details of the deleted contact list.                 | Object  |
-| `data._id`                           | Unique identifier of the contact list.                                     | String  |
-| `data.isActive`                      | Indicates if the contact list was active before deletion.                  | Boolean |
-| `data.orgId`                         | Identifier of the organization to which the contact list belongs.          | String  |
-| `data.name`                          | Display name of the contact list.                                          | String  |
-| `data.lname`                         | Lowercase version of the contact list name.                                | String  |
-| `data.description`                   | Description of the contact list and its purpose.                           | String  |
-| `data.totalRecordCount`             | Number of contacts in the list.                                            | Number  |
-| `data.status`                        | Status of the contact list (for example, `Ready`).                                | String  |
-| `data.createdBy`                     | ID of the user who created the list.                                       | String  |
-| `data.updatedBy`                     | ID of the user who last updated the list.                                  | String  |
-| `data.mapping`                       | Object defining how contact fields are mapped.                             | Object  |
-| `data.mapping.firstName`            | Field mapping for the contact's first name.                                | String  |
-| `data.mapping.lastName`             | Field mapping for the contact's last name.                                 | String  |
-| `data.mapping.phoneNumber`          | Field mapping for the contact's phone number.                              | String  |
-| `data.mapping.timeZone`             | Field mapping for the contact's timezone.                                  | String  |
-| `data.mapping.uniqueId`             | Field mapping for the contact's unique identifier.                         | String  |
-| `data.isListInUse`                  | Indicates if the list was actively used in campaigns before deletion.      | Boolean |
-| `data.iId`                           | Internal ID associated with the contact list.                              | String  |
-| `data.listType`                      | Type of list (`call`, `sms`, etc.).                                        | String  |
-| `data.campaignInUse`                | List of campaign IDs currently associated with the contact list.           | Array   |
-| `data.accountId`                    | Identifier of the account owning the contact list.                         | String  |
-| `data.source`                        | Source of the list data (`passiveApiIntegration`, `upload`, etc.).         | String  |
-| `data.apiConfigurations`            | Object that defines API data sync configurations.                          | Object  |
-| `data.apiConfigurations.dataSyncMode` | Sync mode for contact data (for example, `allowDuplicates`).                    | String  |
-| `data.files`                         | List of file objects uploaded with the contact list.                       | Array   |
-| `data.createdAt`                     | ISO timestamp when the list was created.                                   | String  |
-| `data.updatedAt`                     | ISO timestamp of the last update made to the list.                         | String  |
+| `status`                             | Indicates whether the API call was successful.                             | string  |
+| `message`                            | Describes the outcome of the delete operation.                             | string  |
+| `data`                               | Object containing the details of the deleted contact list.                 | object  |
+| `data._id`                           | Unique identifier of the contact list.                                     | string  |
+| `data.isActive`                      | Indicates if the contact list was active before deletion.                  | boolean |
+| `data.orgId`                         | Identifier of the organization to which the contact list belongs.          | string  |
+| `data.name`                          | Display name of the contact list.                                          | string  |
+| `data.lname`                         | Lowercase version of the contact list name.                                | string  |
+| `data.description`                   | Description of the contact list and its purpose.                           | string  |
+| `data.totalRecordCount`             | Number of contacts in the list.                                            | number  |
+| `data.status`                        | Status of the contact list (for example, `Ready`).                                | string  |
+| `data.createdBy`                     | ID of the user who created the list.                                       | string  |
+| `data.updatedBy`                     | ID of the user who last updated the list.                                  | string  |
+| `data.mapping`                       | Object defining how contact fields are mapped.                             | object  |
+| `data.mapping.firstName`            | Field mapping for the contact's first name.                                | string  |
+| `data.mapping.lastName`             | Field mapping for the contact's last name.                                 | string  |
+| `data.mapping.phoneNumber`          | Field mapping for the contact's phone number.                              | string  |
+| `data.mapping.timeZone`             | Field mapping for the contact's timezone.                                  | string  |
+| `data.mapping.uniqueId`             | Field mapping for the contact's unique identifier.                         | string  |
+| `data.isListInUse`                  | Indicates if the list was actively used in campaigns before deletion.      | boolean |
+| `data.iId`                           | Internal ID associated with the contact list.                              | string  |
+| `data.listType`                      | Type of list (`call`, `sms`, etc.).                                        | string  |
+| `data.campaignInUse`                | List of campaign IDs currently associated with the contact list.           | array   |
+| `data.accountId`                    | Identifier of the account owning the contact list.                         | string  |
+| `data.source`                        | Source of the list data (`passiveApiIntegration`, `upload`, etc.).         | string  |
+| `data.apiConfigurations`            | Object that defines API data sync configurations.                          | object  |
+| `data.apiConfigurations.dataSyncMode` | Sync mode for contact data (for example, `allowDuplicates`).                    | string  |
+| `data.files`                         | List of file objects uploaded with the contact list.                       |array   |
+| `data.createdAt`                     | ISO timestamp when the list was created.                                   | string  |
+| `data.updatedAt`                     | ISO timestamp of the last update made to the list.                         | string  |
