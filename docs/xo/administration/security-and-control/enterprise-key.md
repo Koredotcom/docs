@@ -31,8 +31,7 @@ To generate a new enterprise data encryption key:
 1. Navigate to the **Enterprise Key** page in the **Security & Control** module.  
 <img src="../images/bac-enterprise-key.png" alt="Enterprise key" title="Enterprise key" style="border: 1px solid gray;zoom:70%;"/>
 
-2. Click the **Refresh** button.
-3. The system will generate and apply a new encryption key immediately.
+2. Click the **Refresh** button. The system will generate and apply a new encryption key immediately.
 
 ## Bring Your Own Key (BYOK)
 
@@ -50,8 +49,8 @@ Key benefits
 
 **1. Initiate BYOK Setup**
 
- 1. On the Admin Console, navigate to the **Enterprise Key** menu.
- 2. Click **Create Key** under the **Bring Your Own Key** section.  
+  1. On the Admin Console, navigate to the **Enterprise Key** menu.
+  2. Click **Create Key** under the **Bring Your Own Key** section.  
 <img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
 
 **2. Configure Cloud Provider Details**
@@ -64,15 +63,11 @@ Key benefits
      * **For AWS**: Role ARN
      * **For Azure**: Tenant ID
 
-**3. Set Enforcement Date**
-
- 1. Choose an **Enforcement Date** for when the encryption will begin.
+**3. Set Enforcement Date**: Choose an **Enforcement Date** for when the encryption will begin.
    This date determines when your CMK will start encrypting data. Plan this date carefully to ensure a smooth transition.
 
-**4. Test Connection**
- 
- 1. Click **TEST Connection** to verify the configuration.
-   The system will validate Key accessibility, Proper permissions, and Authentication credentials.  If the test is successful, the **Next** button will be enabled.
+**4. Test Connection**: Click **TEST Connection** to verify the configuration. 
+    The system will validate Key accessibility, Proper permissions, and Authentication credentials.  If the test is successful, the **Next** button will be enabled.
 
 
 **5. Select Applications and Bots**
@@ -85,9 +80,7 @@ Key benefits
  4. Optionally deselect specific apps/bots to keep them on the default Kore.ai encryption.
  5. Consider your security requirements when making selections.
 
-**6. Complete Setup**
-
- 1. Click **Proceed** to finalize the configuration. 
+**6. Complete Setup**: Click **Proceed** to finalize the configuration. 
     Your CMK will be added to the enterprise keys list. Encryption will begin on the specified enforcement date.
 
 !!!note
