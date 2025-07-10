@@ -4,7 +4,7 @@ Use this API to create a new outbound voice campaign with agentless dialing mode
 
 | **Method**        | POST                                                                                                                                                                                                                        |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?campaignType=voice`                                                                                                     |
+| **Endpoint**      | `https://{{host}}/agentassist/api/v1/public/{{IId}}/campaign?campaignType=voice`                                                                                                     |
 | **Content-Type**  | `application/json`                                                                                                                                                                                                            |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                                                                                 |
 | **API Scope**     | Campaign Management                                                                                                                                                                                                           |
@@ -14,7 +14,7 @@ Use this API to create a new outbound voice campaign with agentless dialing mode
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `botId` | You can access it from the General Settings page of the bot. | string, required |
+| `IId` | The Application ID. | string, required |
 
 ## Query Parameter
 
@@ -118,7 +118,6 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?c
 | `maxSkips`                                       | Max number of record skips allowed per agent.                    | number, optional      |
 | `campaignType`                                   | Must be `"voice"`.                                               | string, required      |
 
-
 ## Sample Response
 
 ```
@@ -133,7 +132,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?c
         "dialingMode": "Agentless",
         "dialingStrategy": {
             "callerId": {
-                "phoneNumber": "+1512345678"
+                "phoneNumber": "+15123456789"
             },
             "callingHours": {
                 "frequency": "WEEKLY",
@@ -186,35 +185,33 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{botId}}/campaign?c
 
 ## Response Body Parameters
 
-### Response Parameters
-
-| Parameter                                              | Description                                                                 | Type                    |
+| **Parameter**                                              | **Description**                                                                 | **Type**                    |
 |--------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------|
-| `status`                                               | Indicates the overall response status. Example: `"success"`                | String                  |
-| `message`                                              | Descriptive message about the result.                                      | String                  |
-| `data`                                                 | Contains the campaign configuration details.                               | Object                  |
-| `data.name`                                            | Display name of the campaign.                                              | String                  |
-| `data.lname`                                           | Lowercase name of the campaign, used internally.                           | String                  |
-| `data.description`                                     | Description of the campaign purpose and functionality.                     | String                  |
-| `data.priority`                                        | Campaign priority level.                                                   | String                  |
-| `data.dialingMode`                                     | Dialing mode used for the campaign. Example: `"Agentless"`                | String                  |
-| `data.dialingStrategy`                                 | Defines dialing strategy configuration.                                    | Object                  |
-| `data.dialingStrategy.callerId.phoneNumber`            | Caller ID phone number used for outbound calls.                            | String                  |
-| `data.dialingStrategy.callingHours`                    | Defines the allowed calling hours and schedule.                            | Object                  |
-| `data.dialingStrategy.callingHours.frequency`          | Calling frequency. Example: `"WEEKLY"`                                     | String                  |
-| `data.dialingStrategy.callingHours.days`               | Daily schedules with start/end time and day.                               | Array of Object         |
-| `data.dialingStrategy.callingHours.days[].start`       | Start time of calling window.                                              | String (hh:mm AM/PM)    |
-| `data.dialingStrategy.callingHours.days[].end`         | End time of calling window.                                                | String (hh:mm AM/PM)    |
-| `data.dialingStrategy.callingHours.days[].day`         | Day of the week. Example: `"MO"`, `"TU"`                                   | String (2-letter)       |
-| `data.dialingStrategy.callingHours.timezone`           | Timezone used for the calling schedule. Example: `"Asia/Kolkata"`         | String                  |
-| `data.dialingStrategy.dialingOrder`                    | Order in which records are dialed. Example: `"FIFO"`                       | String                  |
-| `data.dialingStrategy.maxAttemptsPerRecord`            | Maximum retry attempts for each record.                                    | Integer                 |
-| `data.dialingStrategy.defaultRetryPeriod`              | Default wait time between retries.                                         | Integer (minutes)       |
-| `data.dialingStrategy.maxRingTime`                     | Maximum ring time before hanging up.                                       | Integer (seconds)       |
-| `data.experienceFlow`                                  | Identifier of the experience flow used for automation.                     | String                  |
-| `data.status`                                          | Current state of the campaign. Example: `"Preparing"`                      | String                  |
-| `data.createdAt`                                       | Campaign creation timestamp.                                               | String (ISO 8601)       |
-| `data.updatedAt`                                       | Last updated timestamp.                                                    | String (ISO 8601)       |
-| `data.id`                                              | Unique identifier for the campaign.                                        | String                  |
-| `data.contactLists`                                    | Names of associated contact lists.                                         | Array of String         |
-| `data.enableMachineDetect`                             | Indicates whether machine detection is enabled.                            | Boolean                 |
+| `status`                                               | Indicates the overall response status. Example: `"success"`                | string                  |
+| `message`                                              | Descriptive message about the result.                                      | string                  |
+| `data`                                                 | Contains the campaign configuration details.                               | object                  |
+| `data.name`                                            | Display name of the campaign.                                              | string                  |
+| `data.lname`                                           | Lowercase name of the campaign, used internally.                           | string                  |
+| `data.description`                                     | Description of the campaign purpose and functionality.                     | string                  |
+| `data.priority`                                        | Campaign priority level.                                                   | string                  |
+| `data.dialingMode`                                     | Dialing mode used for the campaign. Example: `"Agentless"`                | string                  |
+| `data.dialingStrategy`                                 | Defines dialing strategy configuration.                                    | object                  |
+| `data.dialingStrategy.callerId.phoneNumber`            | Caller ID phone number used for outbound calls.                            | string                  |
+| `data.dialingStrategy.callingHours`                    | Defines the allowed calling hours and schedule.                            | object                  |
+| `data.dialingStrategy.callingHours.frequency`          | Calling frequency. Example: `"WEEKLY"`                                     | string                  |
+| `data.dialingStrategy.callingHours.days`               | Daily schedules with start/end time and day.                               | array of object         |
+| `data.dialingStrategy.callingHours.days[].start`       | Start time of calling window.  (hh:mm AM/PM)                                             | string    |
+| `data.dialingStrategy.callingHours.days[].end`         | End time of calling window. (hh:mm AM/PM)                                               | string     |
+| `data.dialingStrategy.callingHours.days[].day`         | Day of the week. (2-letter) Example: `"MO"`, `"TU"`                                   | string        |
+| `data.dialingStrategy.callingHours.timezone`           | Timezone used for the calling schedule. Example: `"Asia/Kolkata"`         | string                  |
+| `data.dialingStrategy.dialingOrder`                    | Order in which records are dialed. Example: `"FIFO"`                       | string                  |
+| `data.dialingStrategy.maxAttemptsPerRecord`            | Maximum retry attempts for each record.                                    | integer                 |
+| `data.dialingStrategy.defaultRetryPeriod`              | Default wait time between retries. (minutes)                                        | integer        |
+| `data.dialingStrategy.maxRingTime`                     | Maximum ring time before hanging up. (seconds)                                      | integer        |
+| `data.experienceFlow`                                  | Identifier of the experience flow used for automation.                     | string                  |
+| `data.status`                                          | Current state of the campaign. Example: `"Preparing"`                      | string                  |
+| `data.createdAt`                                       | Campaign creation timestamp. (ISO 8601)                                               | string       |
+| `data.updatedAt`                                       | Last updated timestamp. (ISO 8601)                                                     | string      |
+| `data.id`                                              | Unique identifier for the campaign.                                        | string                  |
+| `data.contactLists`                                    | Names of associated contact lists.                                         | array of string         |
+| `data.enableMachineDetect`                             | Indicates whether machine detection is enabled.                            | boolean                 |
