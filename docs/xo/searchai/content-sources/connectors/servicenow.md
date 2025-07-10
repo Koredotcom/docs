@@ -17,7 +17,7 @@ You can connect to the ServiceNow application to enable users to fetch query res
    </td>
    <td>
     <ul>
-      <li>Knowledge Articles</li>
+      <li>Published Knowledge Articles</li>
       <li>Incidents</li>
       <li>Catalog Items</li>
     </ul>
@@ -42,7 +42,8 @@ To configure the ServiceNow connector, follow the steps listed below.
 
 ## **Step 1: Configure an OAuth endpoint in ServiceNow**
 
-If you are using **Basic authentication**, you can skip this step. To use **OAuth 2.0** for authentication, set up an OAuth endpoint in your ServiceNow instance. Refer to[ this documentation](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) for step-by-step instructions to do the same. Use one of the following Redirect URLs as per your region and deployment. 
+If you are using **Basic authentication**, you can skip this step. To use **OAuth 2.0** for authentication, set up an OAuth endpoint in your ServiceNow instance. Refer to[ this documentation](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) for step-by-step instructions to do the same. Use one of the following Redirect URLs as per your region and deployment.
+
 * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
 * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
 * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
@@ -62,7 +63,7 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
 
 * **Host URL**: Host of your ServiceNow instance
 
-Click the **Connect** button to initiate authorization with the application. After the connection is established, go to the **Configurations** tab and click **Sync Now** to ingest content to the application.
+Click the **Connect** button to initiate authorization with the application. After the connection is established, go to the **Configurations** tab and click **Sync Now** to ingest content to the application. By default, upon sync, the connector ingests **published knowledge articles, incidents and catalog items** from the ServiceNow instance. 
 
 ## Advanced Filters
 
@@ -100,11 +101,11 @@ In ServiceNow, user access to knowledge base articles can be defined in three wa
 
 1. Owners of the Knowledgebase
 2. Managers of the Knowledgebase
-3. User Criteria with specific access permissions (Can Read and Can Contribute) \
+3. User Criteria with specific access permissions (Can Read and Can Contribute)
 
 ![User criteria](images/servicenow/racl/user-criteria.png "User criteria")
 
-User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc. \
+User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc.
 ![Individual Users](images/servicenow/racl/users-in-user-criteria.png "Individual Users")
 
 **Handling User Permissions in SearchAI**
@@ -112,7 +113,7 @@ User Criteria in ServiceNow is a method to group users based on specific conditi
 By default, SearchAI grants access to the following:
 
 * **Owners** of the Knowledgebase – This list of owners will be added directly in the racl field in the indexed content.
-* **Managers**of the Knowledgebase – This list of managers will be added directly in the racl field of the indexed content.
+* **Managers** of the Knowledgebase – This list of managers will be added directly in the racl field of the indexed content.
 * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
@@ -226,7 +227,7 @@ Catalog items in ServiceNow can be accessed based on the following configuration
     * Roles assigned to a catalog item determine access. Users with the assigned role(s) will have access to the catalog item.
     * A **permission entity** is created using the **role ID** for each role associated with the catalog item.
 2. **ACL based Access**
-    * Users who have access to the **Catalog Items Table **through **Access Control List (ACL) configuration**.
+    * Users who have access to the **Catalog Items Table** through **Access Control List (ACL) configuration**.
     * For each ACL rule, a **permission entity** is created to associate users with the rule.
 3. **User Criteria**
     * User criteria defined for a catalog item specify which users or groups can access it.
