@@ -298,6 +298,7 @@ nav:
         - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
+      - Custom Scripts: settings/monitoring/monitoring-custom-scripts.md
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md

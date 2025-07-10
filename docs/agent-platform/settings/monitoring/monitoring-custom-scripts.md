@@ -349,7 +349,7 @@ This section displays a dynamic table with the following log-level data:
 
 <li><strong>Warning</strong> – Warning message</li>
 
-<li><strong>Error</strong> - Execution error. <a href="">Learn more</a> about the supported logging options for the gVisor service.</li>
+<li><strong>Error</strong> - Execution error. <a href="https://docs.kore.ai/agent-platform/settings/monitoring/monitoring-custom-scripts/#enhanced-logging-for-gvisor-monitoring">Learn more</a> about the supported logging options for the gVisor service.</li>
 </ul>
    </td>
   </tr>
