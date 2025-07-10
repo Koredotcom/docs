@@ -28,7 +28,7 @@ The encryption key follows a regular rotation schedule to maintain security:
 
 To generate a new enterprise data encryption key:
 
-1. Navigate to the Enterprise Key page in the Security & Control module.  
+1. Navigate to the **Enterprise Key** page in the **Security & Control** module.  
 <img src="../images/bac-enterprise-key.png" alt="Enterprise key" title="Enterprise key" style="border: 1px solid gray;zoom:70%;"/>
 
 2. Click the **Refresh** button.
@@ -50,13 +50,12 @@ BYOK empowers enterprises to use their own Customer Master Keys (CMKs) for encry
 **1. Initiate BYOK Setup**
 
 * On the Admin Console, navigate to the **Enterprise Key** menu.
-* Click **Create Key** under the "Bring Your Own Key" section.  
+* Click **Create Key** under the **Bring Your Own Key** section.  
 <img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
-
 
 **2. Configure Cloud Provider Details**
 
-* Select your **Cloud Provider** from the dropdown menu
+* Select your **Cloud Provider** from the dropdown menu.
 * Enter the appropriate key identifier:
     * **For AWS**: ARN (Amazon Resource Name) of your CMK
     * **For Azure**: Key Vault URL
@@ -77,7 +76,7 @@ The system will validate Key accessibility, Proper permissions, and Authenticati
 
 **5. Select Applications and Bots**
 
-On the next screen, users will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.   
+* On the next screen, users will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.   
 <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
 
 * Review the list of all applications and bots in your workspace.
