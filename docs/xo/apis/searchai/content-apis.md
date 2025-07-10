@@ -39,7 +39,7 @@ This API returns the content requested.
   </tr>
 </table>
 
-## **Query Parameters**
+### Query Parameters
 
 <table>
   <tr>
@@ -70,7 +70,7 @@ This API returns the content requested.
 
 
 
-## **Sample Response**
+### Sample Response
 
 ```json
  {
@@ -155,7 +155,7 @@ This API deletes specific content from the SearchAI application. Deleting the co
 
 
 
-## **Query Parameters**
+### Query Parameters
 
 
 <table>
@@ -179,7 +179,7 @@ This API deletes specific content from the SearchAI application. Deleting the co
 
 
 
-## **Request Parameters**
+### Request Parameters
 
 
 <table>
@@ -213,7 +213,7 @@ This API deletes specific content from the SearchAI application. Deleting the co
 
 
 
-## **Response Parameters**
+### Response Parameters
 
 
 <table>
@@ -272,7 +272,7 @@ This API is used to fetch specific content from the SearchAI application based o
 
 
 
-## **Query Parameters**
+### Query Parameters
 
 <table>
   <tr>
@@ -293,7 +293,7 @@ This API is used to fetch specific content from the SearchAI application based o
   </tr>
 </table>
 
-## **Request Parameters**
+### Request Parameters
 
 <table>
   <tr>
@@ -340,7 +340,7 @@ Similarly, if
   </tr>
 </table>
 
-## **Sample Request**
+### Sample Request
 
 ```json
 {
@@ -352,7 +352,7 @@ Similarly, if
 }
 ```
 
-## **Sample Response**
+### Sample Response
 
 ```json
 {

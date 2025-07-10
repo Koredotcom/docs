@@ -154,12 +154,13 @@ nav:
           - Voice:
             - Voice Gateway: 
               - Configure Voice Gateway: channels/voice-gateway/configure-voice-gateway.md
-              - Advanced Topics:
-                - Advanced Configuration and Customization: channels/voice-gateway/advanced-configuration-and-customization.md
-                - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
-                - SIP Trunk: channels/voice-gateway/sip-trunk.md
-                - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
-                - Troubleshooting: channels/voice-gateway/troubleshooting.md
+              - Advanced Configuration and Customization:
+                - Utility Functions in Voice Gateway: channels/voice-gateway/utility-functions-in-voice-gateway.md
+                - Speech Customization (Call Control Parameters): channels/voice-gateway/speech-customization.md
+              - Features and Capabilities: channels/voice-gateway/features-and-capabilities.md
+              - SIP Trunk: channels/voice-gateway/sip-trunk.md
+              - Deployment and Operations: channels/voice-gateway/deployment-and-operations.md
+              - Troubleshooting: channels/voice-gateway/troubleshooting.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -543,8 +544,6 @@ nav:
       - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
       - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
-      - Amazon Connect with Agent AI Voice via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
-
     - Agent AI Web SDK:
       - Introduction: agentai/integration/AgentAI-webSDK/introduction.md
       - Customize SDK: agentai/integration/AgentAI-webSDK/customize-your-sdk.md
@@ -795,8 +794,10 @@ nav:
       - Security and Control:
         - Security and Control Module Overview: administration/security-and-control/security-module-overview.md
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
+        - Kore.ai Connector: administration/kore-ai-connector.md
+        - Enterprise Key: administration/security-and-control/enterprise-key.md
+        - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md
-      - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
       - Billing: administration/billing.md

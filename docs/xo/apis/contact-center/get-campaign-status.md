@@ -4,7 +4,7 @@ Retrieves the current status of a specific campaign using its campaign ID. Use t
 
 | **Method**         | POST |
 |--------------------|-----------|
-| **Endpoint**       | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/{{CampaignId}}/status?accountId={{accountId}}&view=status` |
+| **Endpoint**       | `https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/{{campaignId}}/status?view=status` |
 | **Content-Type**   | `application/json` |
 | **Authorization**  | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope**      | Campaign Management |
@@ -14,22 +14,31 @@ Retrieves the current status of a specific campaign using its campaign ID. Use t
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `streamIId` | `botId` or `streamId`. You can access it from the General Settings page of the bot. | string, required |
+| `IId` | The Application ID. | string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
-## Query Parameters
+## Query Parameter
 
 | **Parameter** | **Description** | **Type** |
 |---------------|------------------|----------|
-| `accountId` | The unique ID associated with the account. | string, required |
 | `view` | Value must be `status` to retrieve status only. | string, optional |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/campaign/{{CampaignId}}/status?accountId={{accountId}}&view=status' \
+curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{IID}}/campaign/{{campaignId}}/status?view=status' \
+--header 'iid: st-0603182c-7ffb-53c3-b307-47ca14b9xxxx' \
+--header 'accountId: 67777ce93e25326494e9xxxx' \
 --header 'auth: <token>'
 ```
+
+## Headers
+
+| **Header** | **Description**                   | **Required/Optional** |
+|------------|-----------------------------------|------------------------|
+| `auth`     | JWT token for authentication.     | required               |
+| `iid`     | The Application Id.     | required               |
+| `accountId`     | The Account Id.     | required               |
 
 ## Sample Response
 
