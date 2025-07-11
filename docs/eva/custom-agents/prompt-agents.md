@@ -88,30 +88,26 @@ etc.![](images/source_gpt.png)
 To configure user input, follow the steps outlined below:
 
 1.  Click on the **+Add context**.
-    ![](images/add_context_gpt.png)
-
 2.  Enter context name and any placeholder text in the **placeholder text**
     field if required. The placeholder text will appear in the form field before the end user provides input.
     ![](images/context_field_gpt.png)
 
 3.  Select the **Field type** from the list for each field. You can select a
-    single-line, multiline, single-select, multi-select, number, file upload, or
-    URL based on the fields.![](images/content_field_type_gpt.png)
+    single-line, multiline or file upload on the fields.
+    ![](images/content_field_type_gpt.png)
 
 4.  Click the mandatory toggle button ON if you want the field to be mandatory
     and click **Done**.
 
-5.  In the parameter section,  parameter fields are prepopulated based on the agent’s purpose. Enter parameter details and click on  **+ Add field** if
-    required.![](images/add_field_gpt.png)
+5.  In the parameter section,  parameter fields are prepopulated based on the agent’s purpose. Enter parameter details and click on  **+ Add field** if required.
+![](images/add_field_gpt.png)
 
 6.  Enter a name and any text in the **placeholder text** field and in **Description**, enter a detailed description of the field to ensure automated field population when the LLM processes natural language queries and matches entities to their corresponding fields.
 
     For example, if you need a field that captures organizational departments, rather just naming it as *Division*, include a description explaining that this field accepts internal department names, helping the LLM identify the department name from the user's query and pre-populate it in the *Division* field.  
-    ![](images/placeholder_text_gpt.png)
 
 7.  Select the **Field type** from the list for each field. You can select a
-    single-line, multiline, single-select, multi-select, number, file upload, or
-    URL based on the fields.![](images/parameter_field_gpt.png)
+    single-line, multiline, single-select, multi-select, number, file upload on the fields.
 
 8.  Toggle the **Allow Upload Files** or **Allow URL Content** option to ON to
     enable file uploads or retrieval from URLs. This option is available only
@@ -149,12 +145,11 @@ To configure user input, follow the steps outlined below:
 A default prompt is automatically generated based on the purpose defined earlier
 and can be customized using variables. For example, if the purpose is "Job
 Finder," the default prompt might include, “Company Name, Job Title,
-Responsibilities etc”![](images/prompt.png)
+Responsibilities etc”.
 
 Enable the Show to users toggle button to show this prompt to the user. Once you click the toggle button to ON, you can select whether you want it in **Read-only** or **Editable**.
 
-![](images/prompt_gpt.png)
-
+![](images/prompt.prompt.png)
 
 #### <a id="multiprompt">Multiprompt</a>
 
@@ -163,23 +158,14 @@ For a multi-prompt setup within the agent builder, users can generate multiple p
 To add another prompt, click on the **+ Add another prompt** button. You can rename prompts and use drag-and-drop to reorder them. Click on the **Generate prompt** button to
 generate a prompt based on your form’s purpose and field values.
 
-![](images/multiprompt.png)
-
 Once you add multiple prompts, the prompt option will appear under the prompt selector.
 
 1.  Click on the edit option or anywhere within the prompt area to expand it and view the available options
-    ![](images/prompt_selector.png)
-
 2.  For the prompt selector, you can edit field name and any placeholder text in
-    the **placeholder text** field if
-    required![](images/prompt_placeholder_text.png)
-
-    Note: The Mandatory toggle field is enabled by default and cannot be modified by the user
-
+    the **placeholder text** field if required. The Mandatory toggle field is enabled by default and cannot be modified by the user
 3.  The prompt options display a list of all the prompts created, allowing you
     to drag and drop them to change their order.
-
-4.  Click **Done**![](images/drag_prompt.png)
+4.  Click **Done**.
 
 #### <a id="multiresponse">Multi Response</a>
 
@@ -193,14 +179,24 @@ To allow users to generate multiple responses,
 
 3. Click **Continue** to move to the next step.
 
-### <a id="preview">Step 3: Preview</a>
+### <a id="preview">Step 3: Business Rules</a>
+
+Set rules for entity selection and responses based on keywords.
+
+The rule fills entities in a query when specific keywords are detected. Set rules to determine which entities to populate based on criteria.
+
+You have options to set either an Entity Rule or Answering Rule.
+
+![](images/Business_Rule.png)
+
+### <a id="preview">Step 4: Preview</a>
 
 In the **Preview** section, a list of sample queries are displayed. If needed,
 you can add additional queries by clicking the **+ Add Query** button. Once
 you're ready, click **Continue** to proceed to the next
 step.![](images/preview.png)
 
-### <a id="publish">Step 4: Publish Prompt Agent</a>
+### <a id="publish">Step 5: Publish Prompt Agent</a>
 
 Publish your agent and define access permissions and enablement.
 
