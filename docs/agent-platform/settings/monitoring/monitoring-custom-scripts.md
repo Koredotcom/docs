@@ -34,11 +34,9 @@
 * **Status Indicators**:
     * Green labels for successful runs.
     * Red labels for failed runs.
-     <img src="../images/status-scripts.png" alt="status scripts" title="status scripts" style="border: 1px solid gray; zoom:75%;">
-
     * "*In Progress*" for currently deploying scripts
 
-      <img src="../images/in-progress-deployments.png" alt="in progress" title="in progress" style="border: 1px solid gray; zoom:75%;">
+        <img src="../images/in-progress-deployments.png" alt="in progress" title="in progress" style="border: 1px solid gray; zoom:75%;">
 
 * **Navigation**: Use arrow buttons or keyboard shortcuts (<code>K</code> for previous, <code>J</code> for next) to navigate records.
     <img src="../images/keyboard-shortcuts.png" alt="keyboard shortcuts" title="keyboard shortcuts" style="border: 1px solid gray; zoom:75%;">
@@ -81,8 +79,7 @@ To access the feature, follow the steps below:
 
 * At least one custom script must be deployed and executed via API call or API/Function node.
 * If no custom script has been deployed and executed, or if it has been deployed but not yet executed, the following message is displayed. 
-   
-  <img src="../images/no-data-to-display.png" alt="no data" title="no data" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/no-data-to-display.png" alt="no data" title="no data" style="border: 1px solid gray; zoom:75%;">
 
 * If a previously deployed and executed script is undeployed, only the existing run-level and log data remain accessible. No new runs or logs will be generated unless the script is redeployed and executed again. 
  
@@ -232,7 +229,7 @@ This section displays a dynamic table with the following log-level data:
   <tr>
    <td ><strong>Log level</strong>
    </td>
-   <td>Stdout, Stderr, Info, Debug, Warning, or Error. <a href="https://docs.kore.ai/agent-platform/settings/monitoring/monitoring-custom-scripts/#enhanced-logging-for-gvisor-monitoring">Learn more</a> about the supported logging options for the gVisor service.</td>
+   <td>Stdout, Stderr, Info, Debug, Warning, or Error. <a href="https://docs.kore.ai/agent-platform/settings/monitoring/monitoring-custom-scripts/#enhanced-logging-for-gvisor-monitoring" target="_blank">Learn more</a> about the supported logging options for the gVisor service.</td>
   </tr>
   <tr>
    <td><strong>Log Message</strong>
