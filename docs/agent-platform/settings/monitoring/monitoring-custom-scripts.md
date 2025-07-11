@@ -437,7 +437,9 @@ The current date or date range selection is retained until you change it.
 
 ## Filter Data by Columns
 
-You can narrow down the information displayed for custom script runs and logs by applying **custom column filters**. This functionality is similar to the **Filter** in the Audit Logs feature. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/audit-logs/#filter-audit-logs){:target="_blank"}. Additionally, the filter for custom scripts includes the **"contains"** operator, which matches results that include a specific keyword or value you enter. For example, the following image depicts checking if the **Log message** contains the string “*Adding*.”  
+You can narrow down the information displayed for custom script runs and logs by applying **custom column filters**. This functionality is similar to the **Filter** in the Audit Logs feature. [Learn more](https://docs.kore.ai/agent-platform/settings/monitoring/audit-logs/#filter-audit-logs){:target="_blank"}. 
+
+Additionally, the filter for custom scripts includes the **contains** operator, which matches results that include a specific keyword or value you enter. For example, the following image depicts checking if the **Log message** contains the string “*Adding*.”  
  
 <img src="../images/contains-adding.png" alt="contains adding" title="contains adding" style="border: 1px solid gray; zoom:75%;">
 
