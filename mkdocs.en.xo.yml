@@ -792,7 +792,6 @@ nav:
         - Import User Data: administration/enrollment/importing-users-and-user-data.md
         - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
       - Security and Control:
-        - Security and Control Module Overview: administration/security-and-control/security-module-overview.md
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
         - Kore.ai Connector: administration/kore-ai-connector.md
         - Enterprise Key: administration/security-and-control/enterprise-key.md
