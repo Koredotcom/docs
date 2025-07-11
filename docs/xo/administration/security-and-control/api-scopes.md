@@ -1,4 +1,4 @@
-# Manage API Scopes for App
+# Manage API Scopes for Apps
 
 API Scopes define the level of access and control that an app has over various features and services within the platform. By creating apps and assigning appropriate scopes, developers and administrators can securely manage how different components of the platform are accessed and interacted with via public APIs.
 
@@ -12,7 +12,7 @@ To begin using API scopes:
 1. **Create an App**
     * Click the  **New** button to create a new app.
     * Select the **+Create App** option from the App drop-down.
-    * Enter an app name. Once submitted, a **Client ID** and **Client Secret** are generated    automatically.
+    * Enter an App Name. Once submitted, a **Client ID** and **Client Secret** are generated    automatically.
     * These credentials are used to authenticate API requests made by the app. 
 
 2. **Assign API Scopes**
@@ -21,7 +21,7 @@ To begin using API scopes:
 
 <img src="../images/api-scope.png" alt="API Scopes" title="API-Scopes" style="border: 1px solid gray;zoom:70%;"/>
 
-### Supported API Scopes
+## Supported API Scopes
 
 The following API scopes are available for this feature.
 
